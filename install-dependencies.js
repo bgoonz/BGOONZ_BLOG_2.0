@@ -5,7 +5,6 @@ const {
 } = require( 'child_process' );
 const path = require( 'path' );
 const root = process.cwd();
-
 // eslint-disable-next-line func-style
 function npmInstall( cwd ) {
   return new Promise( ( resolve ) => {
@@ -15,7 +14,6 @@ function npmInstall( cwd ) {
     childProcess.on( 'exit', resolve );
   } );
 }
-
 // eslint-disable-next-line func-style
 async function install() {
   const base = path.resolve( root );
@@ -28,10 +26,8 @@ async function install() {
     .map( ( folder ) => path.resolve( base, folder.name ) )
     .concat( [ base ] )
     .map( ( dep ) => npmInstall( dep ) );
-
   await Promise.all( deps );
   // eslint-disable-next-line no-console
   console.log( 'Done!' );
 }
-
 install();

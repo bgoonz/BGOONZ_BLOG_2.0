@@ -590,8 +590,8 @@ data type into another, these rules can be quite surprising.
 What does this have to do with comparison? JavaScript has two kind of comparison
 operators:
 
--   **Loose comparison** (`a == b`, `a != b`)
--   **Strict comparison** (`a === b`, `a !== b`)
+- **Loose comparison** (`a == b`, `a != b`)
+- **Strict comparison** (`a === b`, `a !== b`)
 
 The difference is that _loose_ comparison will _convert both values_ to the same
 data type if they are of different data types. _Strict_ comparison immediately
@@ -796,9 +796,9 @@ undefined.
 The difference between those two is subtle and is best explained by how to use
 them:
 
--   `undefined` is the value JavaScript itself uses to indicate the absence of a
+- `undefined` is the value JavaScript itself uses to indicate the absence of a
     value.
--   `null` is the value the engineer should use to indicate the absence of a
+- `null` is the value the engineer should use to indicate the absence of a
     value.
 
 Examples:
@@ -895,8 +895,8 @@ source.indexOf('undefined') === -1,
 
 Properties of objects can be accessed in two ways:
 
--   **Dot notation** (`obj.prop`)
--   **Bracket notation** (`obj["prop"]`)
+- **Dot notation** (`obj.prop`)
+- **Bracket notation** (`obj["prop"]`)
 
 You should always prefer dot notation, unless you _have_ to use bracket notation.
 This could be if the property name is not a valid identifier or if it comes from
@@ -995,10 +995,10 @@ value will always be converted to a **string**.
 
 ES2015 adds two extensions to object values and object literals:
 
--   _Symbols_ are can be used as property names. They are not converted to
+- _Symbols_ are can be used as property names. They are not converted to
     strings.
 
--   Object literals can contain _[computed property names][computed properties]_:
+- Object literals can contain _[computed property names][computed properties]_:
     ```js
     var foo = 42;
     var obj = {
@@ -1425,13 +1425,13 @@ Similar to arrays, function objects also have a dedicated prototype,
 JavaScript provides the same control structures known from other C-like
 languages:
 
--   `if (...) { ... } else if (...) { ... } else { ... }`
+- `if (...) { ... } else if (...) { ... } else { ... }`
 
--   `while (...) { ... }` and `do { ... } while (...)`
+- `while (...) { ... }` and `do { ... } while (...)`
 
--   `for (...; ...; ...) { ... }`
+- `for (...; ...; ...) { ... }`
 
--   `switch (...) { case ...: ... }`
+- `switch (...) { case ...: ... }`
 
 Additionally, JavaScript provides the `for...in` loop to iterate over properties
 of objects:
@@ -1507,27 +1507,27 @@ return JSON.stringify(x) === JSON.stringify({foo: 'bar'});
 
 ## title: Resources
 
--   [MDN JavaScript Guide][mdn], [Eloquent JavaScript][eloquent] &mdash; basic
+- [MDN JavaScript Guide][mdn], [Eloquent JavaScript][eloquent] &mdash; basic
     JavaScript introduction.
 
--   [You don't know JS][ydkjs] &mdash; another JavaScript introduction, more
+- [You don't know JS][ydkjs] &mdash; another JavaScript introduction, more
     focus on advanced concepts and technical details
 
--   [ECMAScript 5 specification][ecma] &mdash; only if you _really_ like
+- [ECMAScript 5 specification][ecma] &mdash; only if you _really_ like
     JavaScript.
 
--   [ECMAScript 2015 specification][es2015]
+- [ECMAScript 2015 specification][es2015]
 
--   [quirksmode.org - JavaScript][quirksmode] &mdash; basic introduction and
+- [quirksmode.org - JavaScript][quirksmode] &mdash; basic introduction and
     excellent explanation of event handling.
 
--   [Learning Advanced JavaScript][lajs] &mdash; "strange" JavaScript concepts
+- [Learning Advanced JavaScript][lajs] &mdash; "strange" JavaScript concepts
     explored.
 
--   [jsFiddle][] &mdash; an online "editor" to quickly prototype JavaScript
+- [jsFiddle][] &mdash; an online "editor" to quickly prototype JavaScript
     examples (with HTML, CSS and a selection of JS libraries).
 
--   [Learn how to **debug** JavaScript][debug] &mdash; knowing how to debug a
+- [Learn how to **debug** JavaScript][debug] &mdash; knowing how to debug a
     program written in a specific language is as as important as knowing the
     language itself.
 
@@ -1640,7 +1640,7 @@ tip-username-profile: https://github.com/loverajoel
 tip-tldr: Inserting an item into an existing array is a daily common task. You can add elements to the end of an array using push, to the beginning using unshift, or to the middle using splice.
 tip-writer-support: https://www.coinbase.com/loverajoel
 
--   /en/insert-item-inside-an-array/
+- /en/insert-item-inside-an-array/
 
 # Inserting an item into an existing array
 
@@ -1818,7 +1818,7 @@ tip-username: AlbertoFuente
 tip-username-profile: https://github.com/AlbertoFuente
 tip-tldr: How can we improve and make a more efficient nested `if` statement in javascript?
 
--   /en/improve-nested-conditionals/
+- /en/improve-nested-conditionals/
 
 How can we improve and make a more efficient nested `if` statement in javascript?
 
@@ -1917,7 +1917,7 @@ tip-username-profile: https://github.com/loverajoel
 tip-tldr: Javascript has a native method **sort** that allows sorting arrays. Doing a simple `array.sort()` will treat each array entry as a string and sort it alphabetically. But when you try order an array of non ASCII characters you will obtain a strange result.
 tip-writer-support: https://www.coinbase.com/loverajoel
 
--   /en/sorting-strings-with-accented-characters/
+- /en/sorting-strings-with-accented-characters/
 
 Javascript has a native method **[sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)** that allows sorting arrays. Doing a simple `array.sort()` will treat each array entry as a string and sort it alphabetically. Also you can provide your [own custom sorting](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#Parameters) function.
 
@@ -1968,8 +1968,8 @@ Fortunately, there are two ways to overcome this behavior [localeCompare](https:
 // ["Wann", "wäre", "Woche", "wöchentlich"]
 ```
 
--   For each method you can customize the location.
--   According to [Firefox](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare#Performance) Intl.Collator is faster when comparing large numbers of strings.
+- For each method you can customize the location.
+- According to [Firefox](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare#Performance) Intl.Collator is faster when comparing large numbers of strings.
 
 So when you are working with arrays of strings in a language other than English, remember to use this method to avoid unexpected sorting.
 
@@ -1980,19 +1980,19 @@ tip-username-profile: https://github.com/loverajoel
 tip-tldr: Understanding the differences between `undefined` and `null`.
 tip-writer-support: https://www.coinbase.com/loverajoel
 
--   /en/differences-between-undefined-and-null/
+- /en/differences-between-undefined-and-null/
 
--   `undefined` means a variable has not been declared, or has been declared but has not yet been assigned a value
--   `null` is an assignment value that means "no value"
--   Javascript sets unassigned variables with a default value of `undefined`
--   Javascript never sets a value to `null`. It is used by programmers to indicate that a `var` has no value.
--   `undefined` is not valid in JSON while `null` is
--   `undefined` typeof is `undefined`
--   `null` typeof is an `object`. [Why?](http://www.2ality.com/2013/10/typeof-null.html)
--   Both are primitives
--   Both are [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)
+- `undefined` means a variable has not been declared, or has been declared but has not yet been assigned a value
+- `null` is an assignment value that means "no value"
+- Javascript sets unassigned variables with a default value of `undefined`
+- Javascript never sets a value to `null`. It is used by programmers to indicate that a `var` has no value.
+- `undefined` is not valid in JSON while `null` is
+- `undefined` typeof is `undefined`
+- `null` typeof is an `object`. [Why?](http://www.2ality.com/2013/10/typeof-null.html)
+- Both are primitives
+- Both are [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)
     (`Boolean(undefined) // false`, `Boolean(null) // false`)
--   You can know if a variable is [undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)
+- You can know if a variable is [undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)
 
     ```javascript
     typeof variable === 'undefined';
@@ -2005,7 +2005,7 @@ tip-writer-support: https://www.coinbase.com/loverajoel
   variable === null
 ````
 
--   The **equality** operator considers them equal, but the **identity** doesn't
+- The **equality** operator considers them equal, but the **identity** doesn't
 
     ```javascript
     null == undefined; // true
@@ -2023,7 +2023,7 @@ tip-username: mattfxyz
 tip-username-profile: https://twitter.com/mattfxyz
 tip-tldr: Rather than writing separate methods to handle an array and a single element parameter, write your functions so they can handle both. This is similar to how some of jQuery's functions work (`css` will modify everything matched by the selector).
 
--   /en/writing-a-single-method-for-arrays-and-a-single-element/
+- /en/writing-a-single-method-for-arrays-and-a-single-element/
 
 Rather than writing separate methods to handle an array and a single element parameter, write your functions so they can handle both. This is similar to how some of jQuery's functions work (`css` will modify everything matched by the selector).
 
@@ -2055,7 +2055,7 @@ tip-username: nainslie
 tip-username-profile: https://twitter.com/nat5an
 tip-tldr: Strict-mode JavaScript makes it easier for the developer to write "secure" JavaScript.
 
--   /en/use-strict-and-get-lazy/
+- /en/use-strict-and-get-lazy/
 
 Strict-mode JavaScript makes it easier for the developer to write "secure" JavaScript.
 
@@ -2089,23 +2089,23 @@ function f2() {
 
 By including this directive in a JavaScript file or function, we will direct the JavaScript engine to execute in strict mode which disables a bunch of behaviors that are usually undesirable in larger JavaScript projects. Among other things, strict mode changes the following behaviors:
 
--   Variables can only be introduced when they are preceded with "var"
--   Attempting to write to read-only properties generates a noisy error
--   You have to call constructors with the "new" keyword
--   "this" is not implicitly bound to the global object
--   Very limited use of eval() allowed
--   Protects you from using reserved words or future reserved words as variable names
+- Variables can only be introduced when they are preceded with "var"
+- Attempting to write to read-only properties generates a noisy error
+- You have to call constructors with the "new" keyword
+- "this" is not implicitly bound to the global object
+- Very limited use of eval() allowed
+- Protects you from using reserved words or future reserved words as variable names
 
 Strict mode is great for new projects, but can be challenging to introduce into older projects that don't already use it in most places. It also can be problematic if your build chain concatenates all your js files into one big file, as this may cause all files to execute in strict mode.
 
 It is not a statement, but a literal expression, ignored by earlier versions of JavaScript.
 Strict mode is supported in:
 
--   Internet Explorer from version 10.
--   Firefox from version 4.
--   Chrome from version 13.
--   Safari from version 5.1.
--   Opera from version 12.
+- Internet Explorer from version 10.
+- Firefox from version 4.
+- Chrome from version 13.
+- Safari from version 5.1.
+- Opera from version 12.
 
 [See MDN for a fuller description of strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode).
 
@@ -2115,7 +2115,7 @@ tip-username: Tevko
 tip-username-profile: https://twitter.com/tevko
 tip-tldr: Here's a quick, safe, and reusable way to convert a node list into an array of DOM elements.
 
--   /en/converting-a-node-list-to-an-array/
+- /en/converting-a-node-list-to-an-array/
 
 The `querySelectorAll` method returns an array-like object called a node list. These data structures are referred to as "Array-like", because they appear as an array, but can not be used with array methods like `map` and `forEach`. Here's a quick, safe, and reusable way to convert a node list into an array of DOM elements:
 
@@ -2169,7 +2169,7 @@ tip-username: JakeRawr
 tip-username-profile: https://github.com/JakeRawr
 tip-tldr: As of ES6, JS now has template strings as an alternative to the classic end quotes strings.
 
--   /en/template-strings/
+- /en/template-strings/
 
 As of ES6, JS now has template strings as an alternative to the classic end quotes strings.
 
@@ -2212,7 +2212,7 @@ tip-username-profile: https://www.twitter.com/loverajoel
 tip-tldr: These are ways to check if a property is present in an object.
 tip-writer-support: https://www.coinbase.com/loverajoel
 
--   /en/check-if-a-property-is-in-a-object/
+- /en/check-if-a-property-is-in-a-object/
 
 When you have to check if a property is present in an [object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects), you probably are doing something like this:
 
@@ -2312,7 +2312,7 @@ tip-username: Avraam Mavridis
 tip-username-profile: https://github.com/AvraamMavridis
 tip-tldr: In many programming languages the parameters of a function are by default mandatory and the developer has to explicitly define that a parameter is optional.
 
--   /en/pseudomandatory-parameters-in-es6-functions/
+- /en/pseudomandatory-parameters-in-es6-functions/
 
 In many programming languages the parameters of a function are by default mandatory and the developer has to explicitly define that a parameter is optional. In Javascript, every parameter is optional, but we can enforce this behavior without messing with the actual body of a function, taking advantage of [**es6's default values for parameters**] (http://exploringjs.com/es6/ch_parameter-handling.html#sec_parameter-default-values) feature.
 
@@ -2335,7 +2335,7 @@ tip-username: manmadareddy
 tip-username-profile: https://twitter.com/manmadareddy
 tip-tldr: For quickly measuring performance of a javascript block, we can use the console functions like `console.time(label)` and `console.timeEnd(label)`
 
--   /en/tip-to-measure-performance-of-a-javascript-block/
+- /en/tip-to-measure-performance-of-a-javascript-block/
 
 For quickly measuring performance of a javascript block, we can use the console functions like
 [`console.time(label)`](https://developer.chrome.com/devtools/docs/console-api#consoletimelabel) and [`console.timeEnd(label)`](https://developer.chrome.com/devtools/docs/console-api#consoletimeendlabel)
@@ -2366,14 +2366,14 @@ tip-username: pklinger
 tip-username-profile: https://github.com/pklinger/
 tip-tldr: Introduced as a new feature in ES6, fat arrow functions may come as a handy tool to write more code in fewer lines
 
--   /en/fat-arrow-functions/
+- /en/fat-arrow-functions/
 
 Introduced as a new feature in ES6, fat arrow functions may come as a handy tool to write more code in fewer lines. The name comes from its syntax, `=>`, which is a 'fat arrow', as compared to a thin arrow `->`. Some programmers might already know this type of function from different languages such as Haskell, as 'lambda expressions', or as 'anonymous functions'. It is called anonymous, as these arrow functions do not have a descriptive function name.
 
 ### What are the benefits?
 
--   Syntax: fewer LOC; no more typing `function` keyword over and over again
--   Semantics: capturing the keyword `this` from the surrounding context
+- Syntax: fewer LOC; no more typing `function` keyword over and over again
+- Semantics: capturing the keyword `this` from the surrounding context
 
 ### Simple syntax example
 
@@ -2468,7 +2468,7 @@ tip-username: jhogoforbroke
 tip-username-profile: https://twitter.com/jhogoforbroke
 tip-tldr: JavaScript by default does not have a contains method. And for checking existence of a substring in a string or an item in an array you may do this.
 
--   /en/even-simpler-way-of-using-indexof-as-a-contains-clause/
+- /en/even-simpler-way-of-using-indexof-as-a-contains-clause/
 
 JavaScript by default does not have a contains method. And for checking existence of a substring in a string or an item in an array you may do this:
 
@@ -2543,7 +2543,7 @@ tip-username: minhazav
 tip-username-profile: https://twitter.com/minhazav
 tip-tldr: By default you cannot pass arguments to a callback function, but you can take advantage of the closure scope in Javascript to pass arguments to callback functions.
 
--   /en/passing-arguments-to-callback-functions/
+- /en/passing-arguments-to-callback-functions/
 
 By default you cannot pass arguments to a callback function. For example:
 
@@ -2593,7 +2593,7 @@ tip-username: odsdq
 tip-username-profile: https://twitter.com/odsdq
 tip-tldr: In node, you can tell your program to do two different things depending on whether the code is run from `require('./something.js')` or `node something.js`. This is useful if you want to interact with one of your modules independently.
 
--   /en/nodejs-run-a-module-if-it-is-not-required/
+- /en/nodejs-run-a-module-if-it-is-not-required/
 
 In node, you can tell your program to do two different things depending on whether the code is run from `require('./something.js')` or `node something.js`. This is useful if you want to interact with one of your modules independently.
 
@@ -2617,7 +2617,7 @@ tip-username: pklinger
 tip-username-profile: https://github.com/pklinger
 tip-tldr: .`~~X` is usually a faster `Math.trunc(X)`, but can also make your code do nasty things.
 
--   /en/rounding-the-fast-way/
+- /en/rounding-the-fast-way/
 
 This tip is about performance...with a hidden price tag.
 
@@ -2735,7 +2735,7 @@ tip-username: gogainda
 tip-username-profile: https://twitter.com/gogainda
 tip-tldr: Suppose you have a couple of variables with unknown types and you want to concatenate them in a string. To be sure that the arithmetical operation is not be applied during concatenation, use concat
 
--   /en/safe-string-concatenation/
+- /en/safe-string-concatenation/
 
 Suppose you have a couple of variables with unknown types and you want to concatenate them in a string. To be sure that the arithmetical operation is not be applied during concatenation, use `concat`:
 
@@ -2767,7 +2767,7 @@ tip-username: WakeskaterX
 tip-username-profile: https://twitter.com/WakeStudio
 tip-tldr: When creating functions on an object in Object Oriented Javascript, returning the object in the function will enable you to chain functions together.
 
--   /en/return-objects-to-enable-chaining-of-functions/
+- /en/return-objects-to-enable-chaining-of-functions/
 
 When creating functions on an object in Object Oriented Javascript, returning the object in the function will enable you to chain functions together.
 
@@ -2796,7 +2796,7 @@ tip-username: 0xmtn
 tip-username-profile: https://github.com/0xmtn/
 tip-tldr: Fisher-Yates Shuffling it's an algorithm to shuffle an array.
 
--   /en/shuffle-an-array/
+- /en/shuffle-an-array/
 
 This snippet here uses [Fisher-Yates Shuffling](https://www.wikiwand.com/en/Fisher%E2%80%93Yates_shuffle) Algorithm to shuffle a given array.
 
@@ -2828,7 +2828,7 @@ tip-username: microlv
 tip-username-profile: https://github.com/microlv
 tip-tldr: In JavaScript when you want to empty an array, there are a lot ways, but this is the most performant.
 
--   /en/two-ways-to-empty-an-array/
+- /en/two-ways-to-empty-an-array/
 
 You define an array and want to empty its contents.
 Usually, you would do it like this:
@@ -2856,10 +2856,10 @@ function empty() {
 empty();
 ```
 
--   `list = []` assigns a reference to a new array to a variable, while any other references are unaffected.
+- `list = []` assigns a reference to a new array to a variable, while any other references are unaffected.
     which means that references to the contents of the previous array are still kept in memory, leading to memory leaks.
 
--   `list.length = 0` deletes everything in the array, which does hit other references.
+- `list.length = 0` deletes everything in the array, which does hit other references.
 
 In other words, if you have two references to the same array (`a = [1,2,3]; a2 = a;`), and you delete the array's contents using `list.length = 0`, both references (a and a2) will now point to the same empty array. (So don't use this technique if you don't want a2 to hold an empty array!)
 
@@ -2886,7 +2886,7 @@ tip-username: sonnyt
 tip-username-profile: http://twitter.com/sonnyt
 tip-tldr: Converting strings to numbers is extremely common. The easiest and fastest way to achieve that would be using the + operator.
 
--   /en/converting-to-number-fast-way/
+- /en/converting-to-number-fast-way/
 
 Converting strings to numbers is extremely common. The easiest and fastest ([jsPerf](https://jsperf.com/number-vs-parseint-vs-plus/29)) way to achieve that would be using the `+` (plus) operator.
 
@@ -2910,7 +2910,7 @@ tip-username: bhaskarmelkani
 tip-username-profile: https://www.twitter.com/bhaskarmelkani
 tip-tldr: The `==` (or `!=`) operator performs an automatic type conversion if needed. The `===` (or `!==`) operator will not perform any conversion. It compares the value and the type, which could be considered faster ([jsPref](http://jsperf.com/strictcompare)) than `==`.
 
--   /en/use*===\_instead_of*==/
+- /en/use*===\_instead_of*==/
 
 The `==` (or `!=`) operator performs an automatic type conversion if needed. The `===` (or `!==`) operator will not perform any conversion. It compares the value and the type, which could be considered faster ([jsPref](http://jsperf.com/strictcompare)) than `==`.
 
@@ -2935,7 +2935,7 @@ tip-username: rishantagarwal
 tip-username-profile: https://github.com/rishantagarwal
 tip-tldr: Called as "Iffy" ( IIFE - immediately invoked function expression) is an anonymous function expression that is immediately invoked and has some important uses in Javascript.
 
--   /en/Using-immediately-invoked-function-expression/
+- /en/Using-immediately-invoked-function-expression/
 
 Called as "Iffy" ( IIFE - immediately invoked function expression) is an anonymous function expression that is immediately invoked and has some important uses in Javascript.
 
@@ -2976,7 +2976,7 @@ tip-tldr: You may have a big list of names you need to filter in order to remove
 
 c
 
--   /en/filtering-and-sorting-a-list-of-strings/
+- /en/filtering-and-sorting-a-list-of-strings/
 
 You may have a big list of names you need to filter in order to remove duplicates and sort them alphabetically.
 
@@ -3212,7 +3212,7 @@ tip-username: bhaskarmelkani
 tip-username-profile: https://www.twitter.com/bhaskarmelkani
 tip-tldr: Short-circuit evaluation says, the second argument is executed or evaluated only if the first argument does not suffice to determine the value of the expression, when the first argument of the AND `&&` function evaluates to false, the overall value must be false, and when the first argument of the OR `||` function evaluates to true, the overall value must be true.
 
--   /en/short-circuit-evaluation-in-js/
+- /en/short-circuit-evaluation-in-js/
 
 [Short-circuit evaluation](https://en.wikipedia.org/wiki/Short-circuit_evaluation) says, the second argument is executed or evaluated only if the first argument does not suffice to determine the value of the expression: when the first argument of the AND (`&&`) function evaluates to false, the overall value must be false; and when the first argument of the OR (`||`) function evaluates to true, the overall value must be true.
 
@@ -3288,7 +3288,7 @@ tip-username: bhaskarmelkani
 tip-username-profile: https://www.twitter.com/bhaskarmelkani
 tip-tldr: Currying and partial application are two ways of transforming a function into another function with a generally smaller arity.
 
--   /en/curry-vs-partial-application/
+- /en/curry-vs-partial-application/
 
 **Currying**
 
@@ -3395,7 +3395,7 @@ tip-username: hingsir
 tip-username-profile: https://github.com/hingsir
 tip-tldr: Fibonacci sequence is very familiar to everybody. we can write the following function in 20 seconds.it works, but not efficient. it did lots of duplicate computing works, we can cache its previously computed results to speed it up.
 
--   /en/speed-up-recursive-functions-with-memoization/
+- /en/speed-up-recursive-functions-with-memoization/
 
 Fibonacci sequence is very familiar to everybody. We can write the following function in 20 seconds.
 
@@ -3449,7 +3449,7 @@ fibonacci = memoize(fibonacci);
 
 we can use `memoize()` in many other situations
 
--   GCD(Greatest Common Divisor)
+- GCD(Greatest Common Divisor)
 
 ```js
 var gcd = memoize(function (a, b) {
@@ -3461,7 +3461,7 @@ var gcd = memoize(function (a, b) {
 gcd(27, 183); //=> 3
 ```
 
--   Factorial calculation
+- Factorial calculation
 
 ```js
 var factorial = memoize(function (n) {
@@ -3472,8 +3472,8 @@ factorial(5); //=> 120
 
 Learn more about memoization:
 
--   [Memoization - Wikipedia](https://en.wikipedia.org/wiki/Memoization)
--   [Implementing Memoization in JavaScript](https://www.sitepoint.com/implementing-memoization-in-javascript/)
+- [Memoization - Wikipedia](https://en.wikipedia.org/wiki/Memoization)
+- [Implementing Memoization in JavaScript](https://www.sitepoint.com/implementing-memoization-in-javascript/)
 
 title: Converting truthy/falsy values to boolean
 tip-number: 30
@@ -3481,7 +3481,7 @@ tip-username: hakhag
 tip-username-profile: https://github.com/hakhag
 tip-tldr: Logical operators are a core part of JavaScript, here you can see a a way you always get a true or false no matter what was given to it.
 
--   /en/converting-truthy-falsy-values-to-boolean/
+- /en/converting-truthy-falsy-values-to-boolean/
 
 You can convert a [truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy) or [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy) value to true boolean with the `!!` operator.
 
@@ -3504,7 +3504,7 @@ tip-username: berkana
 tip-username-profile: https://github.com/berkana
 tip-tldr: Within JavaScript functions, the variable name `arguments` lets you access all of the arguments passed to the function. `arguments` is an _array-like object_; `arguments` can be accessed using array notation, and it has the _length_ property, but it doesn't have many of the built-in methods that arrays have such as `filter` and `map` and `forEach`. Because of this, it is a fairly common practice to convert `arguments` into an array using the following snipet
 
--   /en/avoid-modifying-or-passing-arguments-into-other-functions-it-kills-optimization/
+- /en/avoid-modifying-or-passing-arguments-into-other-functions-it-kills-optimization/
 
 ###Background
 
@@ -3544,7 +3544,7 @@ tip-username-profile: https://twitter.com/loverajoel
 tip-tldr: An Object it is an unordered collection of properties... that means that if you are trying to save ordered data inside an Object, you have to review it because properties order in objects are not guaranteed.
 tip-writer-support: https://www.coinbase.com/loverajoel
 
--   /en/map-to-the-rescue-adding-order-to-object-properties/
+- /en/map-to-the-rescue-adding-order-to-object-properties/
 
 ## Object properties order
 
@@ -3614,7 +3614,7 @@ tip-username: SarjuHansaliya
 tip-username-profile: https://github.com/SarjuHansaliya
 tip-tldr: Compact one-liners that generate ordinal sequence arrays
 
--   /en/create-range-0...n-easily-using-one-line/
+- /en/create-range-0...n-easily-using-one-line/
 
 Here are two compact code sequences to generate the `N`-element array `[0, 1, ..., N-1]`:
 
@@ -3676,7 +3676,7 @@ tip-username: madmantalking
 tip-username-profile: https://github.com/madmantalking
 tip-tldr: You may run into problems while implementing asynchronous loops.
 
--   /en/implementing-asynchronous-loops/
+- /en/implementing-asynchronous-loops/
 
 Let's try out writing an asynchronous function which prints the value of the loop index every second.
 
@@ -3769,7 +3769,7 @@ tip-username: hsleonis
 tip-username-profile: https://github.com/hsleonis
 tip-tldr: Assigning is very common. Sometimes typing becomes time consuming for us 'Lazy programmers'. So, we can use some tricks to help us and make our code cleaner and simpler.
 
--   /en/assignment-shorthands/
+- /en/assignment-shorthands/
 
 Assigning is very common. Sometimes typing becomes time consuming for us 'Lazy programmers'.
 So, we can use some tricks to help us and make our code cleaner and simpler.
@@ -3890,7 +3890,7 @@ tip-username: beyondns
 tip-username-profile: https://github.com/beyondns
 tip-tldr: When you develop extensions to existent sites it's not so easy to play with DOM 'cause of modern dynamic javascript.
 
--   /en/observe-dom-changes/
+- /en/observe-dom-changes/
 
 [MutationObserver](https://developer.mozilla.org/en/docs/Web/API/MutationObserver) is a solution to listen DOM changes and do what you want to do with elements when they changed. In following example there is some emulation of dynamic content loading with help of timers, after first "target" element creation goes "subTarget".
 In extension code firstly rootObserver works till targetElement appearance then elementObserver starts. This cascading observing helps finally get moment when subTargetElement found.
@@ -3950,7 +3950,7 @@ tip-username: danillouz
 tip-username-profile: https://www.twitter.com/danillouz
 tip-tldr: How to remove duplicate elements, of different data types, from an Array.
 
--   /en/deduplicate-an-array/
+- /en/deduplicate-an-array/
 
 # Primitives
 
@@ -4057,19 +4057,19 @@ console.log(deduped); // [ {a: 1}, [1, 2], 1, '1' ]
 
 ## Methods
 
--   [`filter`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
--   [`indexOf`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf)
--   [`from`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/from)
--   [`JSON.stringify`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify)
+- [`filter`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+- [`indexOf`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf)
+- [`from`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/from)
+- [`JSON.stringify`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify)
 
 ## ES2015
 
--   [arrow functions](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
--   [Sets](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)
+- [arrow functions](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+- [Sets](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)
 
 ## Stack overflow
 
--   [remove duplicates from array](http://stackoverflow.com/questions/9229645/remove-duplicates-from-javascript-array/9229821#9229821)
+- [remove duplicates from array](http://stackoverflow.com/questions/9229645/remove-duplicates-from-javascript-array/9229821#9229821)
 
 title: Flattening multidimensional Arrays in JavaScript
 tip-number: 38
@@ -4078,7 +4078,7 @@ tip-username-profile: https://www.twitter.com/loverajoel
 tip-tldr: Three different solutions to merge multidimensional array into a single array.
 tip-writer-support: https://www.coinbase.com/loverajoel
 
--   /en/flattening-multidimensional-arrays-in-javascript/
+- /en/flattening-multidimensional-arrays-in-javascript/
 
 These are the three known ways to merge multidimensional array into a single array.
 
@@ -4153,7 +4153,7 @@ tip-username: mallowigi
 tip-username-profile: https://github.com/mallowigi
 tip-tldr: How to add private properties, getters and setters to objects.
 
--   /en/advanced-properties/
+- /en/advanced-properties/
 
 It is possible to configure object properties in Javascript for example to set properties to be pseudo-private or readonly. This feature is available since ECMAScript 5.1, therefore supported by all recent browsers.
 
@@ -4187,10 +4187,10 @@ Object.defineProperties(dest, {
 
 where options include the following attributes:
 
--   _value_: if the property is not a getter (see below), value is a mandatory attribute. `{a: 12}` === `Object.defineProperty(obj, 'a', {value: 12})`
--   _writable_: set the property as readonly. Note that if the property is a nested objects, its properties are still editable.
--   _enumerable_: set the property as hidden. That means that `for ... of` loops and `stringify` will not include the property in their result, but the property is still there. Note: That doesn't mean that the property is private! It can still be accessible from the outside, it just means that it won't be printed.
--   _configurable_: set the property as non modifiable, e.g. protected from deletion or redefinition. Again, if the property is a nested object, its properties are still configurable.
+- _value_: if the property is not a getter (see below), value is a mandatory attribute. `{a: 12}` === `Object.defineProperty(obj, 'a', {value: 12})`
+- _writable_: set the property as readonly. Note that if the property is a nested objects, its properties are still editable.
+- _enumerable_: set the property as hidden. That means that `for ... of` loops and `stringify` will not include the property in their result, but the property is still there. Note: That doesn't mean that the property is private! It can still be accessible from the outside, it just means that it won't be printed.
+- _configurable_: set the property as non modifiable, e.g. protected from deletion or redefinition. Again, if the property is a nested object, its properties are still configurable.
 
 So in order to create a private constant property, you can define it like so:
 
@@ -4256,8 +4256,8 @@ If you define a getter without a setter and still try to set a value, you will g
 
 ### Links
 
--   [defineProperty](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty)
--   [Defining properties in JavaScript](http://bdadam.com/blog/defining-properties-in-javascript.html)
+- [defineProperty](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty)
+- [Defining properties in JavaScript](http://bdadam.com/blog/defining-properties-in-javascript.html)
 
 title: Using JSON.Stringify
 tip-number: 40
@@ -4265,7 +4265,7 @@ tip-username: vamshisuram
 tip-username-profile: https://github.com/vamshisuram
 tip-tldr: Create string from selected properties of JSON object.
 
--   /en/using-json-stringify/
+- /en/using-json-stringify/
 
 Let's say there is an object with properties "prop1", "prop2", "prop3".
 We can pass **additional params** to **JSON.stringify** to selectively write properties of the object to string like:
@@ -4323,7 +4323,7 @@ tip-username: soyuka
 tip-username-profile: https://github.com/soyuka
 tip-tldr: Calculate the average and median from array values
 
--   /en/array-average-and-median/
+- /en/array-average-and-median/
 
 The following examples will be based on the following array:
 
@@ -4333,9 +4333,9 @@ let values = [2, 56, 3, 41, 0, 4, 100, 23];
 
 To get the average, we have to sum up numbers and then divide by the number of values. Steps are:
 
--   get the array length
--   sum up values
--   get the average (`sum/length`)
+- get the array length
+- sum up values
+- get the average (`sum/length`)
 
 ```javascript
 let values = [2, 56, 3, 41, 0, 4, 100, 23];
@@ -4356,8 +4356,8 @@ values /= count;
 
 Now, to get the median steps are:
 
--   sort the array
--   get the arethmic mean of the middle values
+- sort the array
+- get the arethmic mean of the middle values
 
 ```javascript
 let values = [2, 56, 3, 41, 0, 4, 100, 23];
@@ -4383,7 +4383,7 @@ tip-username: emars
 tip-username-profile: https://twitter.com/marseltov
 tip-tldr: Freeze the builtin prototypes.
 
--   /en/preventing-unapply-attacks/
+- /en/preventing-unapply-attacks/
 
 By overriding the builtin prototypes, external code can cause code to break by rewriting code to expose and change bound arguments. This can be an issue that seriously breaks applications that works by using polyfill es5 methods.
 
@@ -4434,7 +4434,7 @@ tip-username: dislick
 tip-username-profile: https://github.com/dislick
 tip-tldr: Did you know that you can use destructuring in function parameters?
 
--   /en/use-destructuring-in-function-parameters/
+- /en/use-destructuring-in-function-parameters/
 
 I am sure many of you are already familiar with the [ES6 Destructuring Assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment). Did you know that you can also use it in function parameters?
 
@@ -4528,7 +4528,7 @@ tip-username: bmkmanoj
 tip-username-profile: https://github.com/bmkmanoj
 tip-tldr: JavaScript technically only passes by value for both primitives and object (or reference) types. In case of reference types the reference value itself is passed by value.
 
--   /en/know-the-passing-mechanism/
+- /en/know-the-passing-mechanism/
 
 JavaScript is pass-by-value, technically. It is neither pass-by-value nor pass-by-reference, going by the truest sense of these terms. To understand this passing mechanism, take a look at the following two example code snippets and the explanations.
 
@@ -4587,7 +4587,7 @@ tip-username-profile: https://www.twitter.com/loverajoel
 tip-tldr: Ways to use the built-in functions Math.max() and Math.min() with arrays of numbers
 tip-writer-support: https://www.coinbase.com/loverajoel
 
--   /en/calculate-the-max-min-value-from-an-array/
+- /en/calculate-the-max-min-value-from-an-array/
 
 The built-in functions [Math.max()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max) and [Math.min()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min) find the maximum and minimum value of the arguments, respectively.
 
@@ -4625,7 +4625,7 @@ tip-username-profile: https://www.twitter.com/loverajoel
 tip-tldr: The cross-browser way to check if the document has loaded in pure JavaScript
 tip-writer-support: https://www.coinbase.com/loverajoel
 
--   /en/detect-document-ready-in-pure-js/
+- /en/detect-document-ready-in-pure-js/
 
 The cross-browser way to check if the document has loaded in pure JavaScript is using [`readyState`](https://developer.mozilla.org/en-US/docs/Web/API/Document/readyState).
 
@@ -4664,7 +4664,7 @@ tip-username: adaniloff
 tip-username-profile: https://github.com/adaniloff
 tip-tldr: Understand and work with declarations.
 
--   /en/basics-declarations/
+- /en/basics-declarations/
 
 Below, different ways to declare variables in JavaScript.
 Comments and console.log should be enough to explain what's happening here:
@@ -4746,7 +4746,7 @@ tip-username: darul75
 tip-username-profile: https://twitter.com/darul75
 tip-tldr: Some reminders about using `reduce()`
 
--   /en/reminders-about-reduce-function-usage/
+- /en/reminders-about-reduce-function-usage/
 
 As written in documentation the `reduce()` method applies a function against an accumulator and each value of the array (from left-to-right) to reduce it to a single value.
 
@@ -4754,8 +4754,8 @@ As written in documentation the `reduce()` method applies a function against an 
 
 [reduce()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce) function accepts 2 parameters (M: mandatory, O: optional):
 
--   (M) a callback **reducer function** to be applied that deals with a pair of previous (result of previous computation) and next element until end of the list.
--   (O) an **initial value** to be used as the first argument to the first call of the callback.
+- (M) a callback **reducer function** to be applied that deals with a pair of previous (result of previous computation) and next element until end of the list.
+- (O) an **initial value** to be used as the first argument to the first call of the callback.
 
 So let's see a common usage and later a more sophisticated one.
 
@@ -4818,8 +4818,8 @@ var reducers = {
 
 Then, we create a new swiss knife function
 
--   responsible for applying each partial reduce functions.
--   that will return a new callback reducer function
+- responsible for applying each partial reduce functions.
+- that will return a new callback reducer function
 
 ```javascript
 var combineTotalPriceReducers = function (reducers) {
@@ -4860,7 +4860,7 @@ tip-username: nmrony
 tip-username-profile: https://github.com/nmrony
 tip-tldr: In Javascript you can easily get the unix timestamp
 
--   /en/extract-unix-timestamp-easily/
+- /en/extract-unix-timestamp-easily/
 
 We frequently need to calculate with unix timestamp. There are several ways to grab the timestamp. For current unix timestamp easiest and fastest way is
 
@@ -4899,11 +4899,11 @@ const timestamp = Math.floor(dateTime / 1000);
 
 Under the hood the runtime calls `valueOf` method of the `Date` object. Then the unary `+` operator calls `toNumber()` with that returned value. For detailed explanation please check the following links
 
--   [Date.prototype.valueOf](http://es5.github.io/#x15.9.5.8)
--   [Unary + operator](http://es5.github.io/#x11.4.6)
--   [toNumber()](http://es5.github.io/#x9.3)
--   [Date Javascript MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
--   [Date.parse()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/parse)
+- [Date.prototype.valueOf](http://es5.github.io/#x15.9.5.8)
+- [Unary + operator](http://es5.github.io/#x11.4.6)
+- [toNumber()](http://es5.github.io/#x9.3)
+- [Date Javascript MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
+- [Date.parse()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/parse)
 
 title: Helpful Console Logging Tricks
 tip-number: 50
@@ -4911,7 +4911,7 @@ tip-username: zackhall
 tip-username-profile: https://twitter.com/zthall
 tip-tldr: Helpful logging techniques using coercion and conditonal breakpoints.
 
--   /en/helpful-console-log-hacks/
+- /en/helpful-console-log-hacks/
 
 ## Using conditional breakpoints to log data
 
@@ -4939,13 +4939,13 @@ tip-username: octopitus
 tip-username-profile: https://github.com/octopitus
 tip-tldr: An elegant and easy way to handle DOM events
 
--   /en/DOM-event-listening-made-easy/
+- /en/DOM-event-listening-made-easy/
 
 Many of us are still doing these things:
 
--   `element.addEventListener('type', obj.method.bind(obj))`
--   `element.addEventListener('type', function (event) {})`
--   `element.addEventListener('type', (event) => {})`
+- `element.addEventListener('type', obj.method.bind(obj))`
+- `element.addEventListener('type', function (event) {})`
+- `element.addEventListener('type', (event) => {})`
 
 The above examples all create new anonymous event handlers that can't be removed when no longer needed. This may cause performance problems or unexpected logic bugs, when handlers that you no longer need still get accidentally triggered through unexpected user interactions or [event bubbling](http://www.javascripter.net/faq/eventbubbling.htm).
 
@@ -5010,7 +5010,7 @@ tip-username: Morklympious
 tip-username-profile: https://github.com/morklympious
 tip-tldr: Understand what gets returned when using new vs. not using new.
 
--   /en/return-values-with-the-new-operator/
+- /en/return-values-with-the-new-operator/
 
 You're going to run into some instances where you'll be using `new` to allocate new objects in JavaScript. It's going to blow your mind unless you read this tip to understand what's happening behind the scenes.
 
@@ -5094,7 +5094,7 @@ tip-username: richzw
 tip-username-profile: https://github.com/richzw
 tip-tldr: How to get the file extension more efficiently?
 
--   /en/get-file-extension/
+- /en/get-file-extension/
 
 categories: - en - javascript
 
@@ -5147,9 +5147,9 @@ console.log(getFileExtension3('filename.with.many.dots.ext')); // 'ext'
 
 _How does it works?_
 
--   [String.lastIndexOf()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/lastIndexOf) method returns the last occurrence of the specified value (`'.'` in this case). Returns `-1` if the value is not found.
--   The return values of `lastIndexOf` for parameter `'filename'` and `'.hiddenfile'` are `-1` and `0` respectively. [Zero-fill right shift operator (>>>)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators#%3E%3E%3E_%28Zero-fill_right_shift%29) will transform `-1` to `4294967295` and `-2` to `4294967294`, here is one trick to insure the filename unchanged in those edge cases.
--   [String.prototype.slice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice) extracts file extension from the index that was calculated above. If the index is more than the length of the filename, the result is `""`.
+- [String.lastIndexOf()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/lastIndexOf) method returns the last occurrence of the specified value (`'.'` in this case). Returns `-1` if the value is not found.
+- The return values of `lastIndexOf` for parameter `'filename'` and `'.hiddenfile'` are `-1` and `0` respectively. [Zero-fill right shift operator (>>>)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators#%3E%3E%3E_%28Zero-fill_right_shift%29) will transform `-1` to `4294967295` and `-2` to `4294967294`, here is one trick to insure the filename unchanged in those edge cases.
+- [String.prototype.slice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice) extracts file extension from the index that was calculated above. If the index is more than the length of the filename, the result is `""`.
 
 ### Comparison
 
@@ -5175,7 +5175,7 @@ tip-username: alphashuro
 tip-username-profile: https://github.com/alphashuro
 tip-tldr: You can make function arguments and callback optional
 
--   /en/use-optional-arguments/
+- /en/use-optional-arguments/
 
 categories: - en - javascript
 
@@ -5264,7 +5264,7 @@ tip-username: jamet-julien
 tip-username-profile: https://github.com/jamet-julien
 tip-tldr: Sometimes, we need to loop endlessly over an array of items, like a carousel of images or an audio playlist. Here's how to take an array and give it "looping powers”
 
--   /en/make-easy-loop-on-array/
+- /en/make-easy-loop-on-array/
 
 categories: - en - javascript
 
@@ -5371,7 +5371,7 @@ tip-username-profile: https://twitter.com/loverajoel
 tip-tldr: This week I had to create a common "Copy to Clipboard" button, I've never created one before and I want to share how I made it.
 tip-writer-support: https://www.coinbase.com/loverajoel
 
--   /en/copy-to-clipboard/
+- /en/copy-to-clipboard/
 
 categories: - en - javascript
 
@@ -5400,7 +5400,7 @@ tip-username: bhaskarmelkani
 tip-username-profile: https://www.twitter.com/bhaskarmelkani
 tip-tldr: When placed in an expression, it evaluates every expression from left to right and returns the last one.
 
--   /en/comma-operaton-in-js/
+- /en/comma-operaton-in-js/
 
 categories: - en - javascript
 
@@ -5458,7 +5458,7 @@ Output:-
 'c';
 ```
 
--   Note: The comma(`,`) operator has the lowest priority of all javascript operators, so without the parenthesis the expression would become: `(x = a()), b(), c();`.
+- Note: The comma(`,`) operator has the lowest priority of all javascript operators, so without the parenthesis the expression would become: `(x = a()), b(), c();`.
 
 ##### Playground
 
@@ -5472,7 +5472,7 @@ tip-username: vamshisuram
 tip-username-profile: https://github.com/vamshisuram
 tip-tldr: A common task for us is iterate over a list looking for a value or values, but we can't return from inside a loop so we will have to iterate the whole array, even if the item we search is the first in the list, in this tip we will see how to short circuit with `.some` and `.every`.
 
--   /en/break-continue-loop-functional/
+- /en/break-continue-loop-functional/
 
 categories: - en - javascript
 
@@ -5557,7 +5557,7 @@ tip-username: richzw
 tip-username-profile: https://github.com/richzw
 tip-tldr: In this tip, I will introduce the block-scope difference between keyword var and let. Should I replace var by let? let's take a look
 
--   /en/keyword-var-vs-let/
+- /en/keyword-var-vs-let/
 
 categories: - en - javascript
 
@@ -5565,8 +5565,8 @@ categories: - en - javascript
 
 ### Overview
 
--   The scope of a variable defined with `var` is function scope or declared outside any function, global.
--   The scope of a variable defined with `let` is block scope.
+- The scope of a variable defined with `var` is function scope or declared outside any function, global.
+- The scope of a variable defined with `let` is block scope.
 
 ```js
 function varvslet() {
@@ -5591,7 +5591,7 @@ function varvslet() {
 
 ### Difference Details
 
--   Variable Hoisting
+- Variable Hoisting
 
     `let` will not hoist to the entire scope of the block they appear in. By contrast, `var` could hoist as below.
 
@@ -5607,7 +5607,7 @@ function varvslet() {
 }
 ```
 
--   Closure in Loop
+- Closure in Loop
 
     `let` in the loop can re-binds it to each iteration of the loop, making sure to re-assign it the value from the end of the previous loop iteration, so it can be used to avoid issue with closures.
 
@@ -5637,8 +5637,8 @@ for (let i = 0; i < 5; ++i) {
 
 ### `let` compatibility
 
--   In server side, such as Node.js, you can safely use the `let` statement now.
--   In client side, through a transpiler (like [Traceur](https://github.com/google/traceur-compiler)), you can safely use the `let` statement. Otherwise, please consider the browser support [here](http://caniuse.com/#search=let)
+- In server side, such as Node.js, you can safely use the `let` statement now.
+- In client side, through a transpiler (like [Traceur](https://github.com/google/traceur-compiler)), you can safely use the `let` statement. Otherwise, please consider the browser support [here](http://caniuse.com/#search=let)
 
 ### Playground
 
@@ -5648,9 +5648,9 @@ for (let i = 0; i < 5; ++i) {
 
 ### More info
 
--   [Let keyword vs var keyword](http://stackoverflow.com/questions/762011/let-keyword-vs-var-keyword)
--   [For and against let](https://davidwalsh.name/for-and-against-let)
--   [Explanation of `let` and block scoping with for loops](http://stackoverflow.com/questions/30899612/explanation-of-let-and-block-scoping-with-for-loops/30900289#30900289).
+- [Let keyword vs var keyword](http://stackoverflow.com/questions/762011/let-keyword-vs-var-keyword)
+- [For and against let](https://davidwalsh.name/for-and-against-let)
+- [Explanation of `let` and block scoping with for loops](http://stackoverflow.com/questions/30899612/explanation-of-let-and-block-scoping-with-for-loops/30900289#30900289).
 
 title: Three useful hacks
 tip-number: 60
@@ -5658,7 +5658,7 @@ tip-username: leandrosimoes
 tip-username-profile: https://github.com/leandrosimoes
 tip-tldr: Three very useful and syntax sugar hacks to speed up your development.
 
--   /en/three-useful-hacks/
+- /en/three-useful-hacks/
 
 categories: - en - javascript
 
@@ -5717,7 +5717,7 @@ tip-username: loverajoel
 tip-username-profile: https://github.com/loverajoel
 tip-tldr: Understanding how to use `Bind` method with objects and functions in JavaScript
 
--   /en/binding-objects-to-functions/
+- /en/binding-objects-to-functions/
 
 categories: - en - javascript
 
@@ -5984,21 +5984,21 @@ factorial function.
 For the sake of completeness, let's look at how this executes for
 `n = 6`:
 
--   factorial(6)
-    -   6 \* factorial(5)
-        -   5 \* factorial (4)
-            -   4 \* factorial(3)
-                -   3 \* factorial(2)
-                    -   2 \* factorial(1)
-                        -   1 \* factorial(0)
-                            -   1
-                        -   (resuming previous execution) 1 \* 1 = 1
-                    -   (resuming...) 2 \* 1 = 2
-                -   (...) 3 \* 2 = 6
-            -   ... 4 \* 6 = 24
-        -   5 \* 24 = 120
-    -   6 \* 120 = 720
--   factorial(6) = 720
+- factorial(6)
+    - 6 \* factorial(5)
+        - 5 \* factorial (4)
+            - 4 \* factorial(3)
+                - 3 \* factorial(2)
+                    - 2 \* factorial(1)
+                        - 1 \* factorial(0)
+                            - 1
+                        - (resuming previous execution) 1 \* 1 = 1
+                    - (resuming...) 2 \* 1 = 2
+                - (...) 3 \* 2 = 6
+            - ... 4 \* 6 = 24
+        - 5 \* 24 = 120
+    - 6 \* 120 = 720
+- factorial(6) = 720
 
 Now, we must be very cautious as to what's happening so we can understand
 what is to come next.
@@ -6042,23 +6042,23 @@ function factorial(n) {
 
 Let's take a look at how this gets executed:
 
--   factorial(6)
-    -   inner anonymous function (iaf) gets called with (n = 6, res = 1)
-        -   iaf(5, 1 \* 6)
-            -   iaf(4, 6 \* 5)
-                -   iaf(3, 30 \* 4)
-                    -   iaf(2, 120 \* 3)
-                        -   iaf(1, 360 \* 2)
-                            -   iaf(0, 720)
-                                -   720
-                            -   720
-                        -   720
-                    -   720
-                -   720
-            -   720
-        -   720
-    -   iaf (6, 1) = 720
--   factorial(6) = 720
+- factorial(6)
+    - inner anonymous function (iaf) gets called with (n = 6, res = 1)
+        - iaf(5, 1 \* 6)
+            - iaf(4, 6 \* 5)
+                - iaf(3, 30 \* 4)
+                    - iaf(2, 120 \* 3)
+                        - iaf(1, 360 \* 2)
+                            - iaf(0, 720)
+                                - 720
+                            - 720
+                        - 720
+                    - 720
+                - 720
+            - 720
+        - 720
+    - iaf (6, 1) = 720
+- factorial(6) = 720
 
 You might notice that we didn't need to perform any calculation after unwinding
 the stack. We just returned a value. But, according to our rules, we had to save
@@ -6069,15 +6069,15 @@ Scheme it's mandatory for such chains to be optimized with tail call
 optimization. This ensures that our stack is not filled with unnecessary frames.
 Our previous calculation would look, thus, this way:
 
--   factorial(6)
--   iaf(6, 1)
--   iaf(5, 6)
--   iaf(4, 30)
--   iaf(3, 120)
--   iaf(2, 360)
--   iaf(1, 720)
--   iaf(0, 720)
--   720
+- factorial(6)
+- iaf(6, 1)
+- iaf(5, 6)
+- iaf(4, 30)
+- iaf(3, 120)
+- iaf(2, 360)
+- iaf(1, 720)
+- iaf(0, 720)
+- 720
 
 Which in turns, looks an awfully lot like
 
@@ -6668,8 +6668,8 @@ for(key in cleanMap){
 
 ## Notes:
 
--   Object.create() was introduced in ES5: [Compatibility](http://kangax.github.io/compat-table/es5/)
--   ES6 introduced some new structures: [Map](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Map), [WeakMap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap), [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set) and [Weak Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet)
+- Object.create() was introduced in ES5: [Compatibility](http://kangax.github.io/compat-table/es5/)
+- ES6 introduced some new structures: [Map](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Map), [WeakMap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap), [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set) and [Weak Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet)
 
 title: Creating immutable objects in native JavaScript
 tip-number: 74
@@ -6832,9 +6832,9 @@ console.log(multiply(1)(2)(3));
 
 ### Further readings:
 
--   [Currying in JavaScript](https://dev.to/suprabhasupi/currying-in-javascript-1k3l)
--   [Lodash curry](https://lodash.com/docs/#curry)
--   [JavaScript currying](http://zetcode.com/javascript/currying/)
+- [Currying in JavaScript](https://dev.to/suprabhasupi/currying-in-javascript-1k3l)
+- [Lodash curry](https://lodash.com/docs/#curry)
+- [JavaScript currying](http://zetcode.com/javascript/currying/)
 
 title: What is the Temporal Dead Zone?
 tip-number: 76
@@ -7041,8 +7041,8 @@ The JavaScript language is intended to be used within some larger environment, b
 
 JavaScript documentation of core language features (pure [ECMAScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Language_Resources), for the most part) includes the following:
 
--   The [JavaScript guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
--   The [JavaScript reference](index)
+- The [JavaScript guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
+- The [JavaScript reference](index)
 
 If you are new to JavaScript, start with the [guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide). Once you have a firm grasp of the fundamentals, you can use the [reference](index) to get more details on individual objects and language constructs.
 
@@ -7073,9 +7073,9 @@ Chapter about JavaScript version history.
 
 ### More reference pages
 
--   [Deprecated and obsolete features](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Deprecated_and_obsolete_features)
--   [Lexical grammar](lexical_grammar)
--   [Data types and data structures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
+- [Deprecated and obsolete features](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Deprecated_and_obsolete_features)
+- [Lexical grammar](lexical_grammar)
+- [Data types and data structures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/About" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/About</a>
 
@@ -7152,11 +7152,11 @@ Passing an empty object, an array with more than one member, a non-numeric strin
 
 ## See also
 
--   [`Math.ceil()`](ceil)
--   [`Math.floor()`](floor)
--   [`Math.round()`](round)
--   [`Math.sign()`](sign)
--   [`Math.trunc()`](trunc)
+- [`Math.ceil()`](ceil)
+- [`Math.floor()`](floor)
+- [`Math.round()`](round)
+- [`Math.sign()`](sign)
+- [`Math.trunc()`](trunc)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -7235,12 +7235,12 @@ For values less than -1 or greater than 1, `Math.acos()` returns [`NaN`](../nan)
 
 ## See also
 
--   [`Math.asin()`](asin)
--   [`Math.atan()`](atan)
--   [`Math.atan2()`](atan2)
--   [`Math.cos()`](cos)
--   [`Math.sin()`](sin)
--   [`Math.tan()`](tan)
+- [`Math.asin()`](asin)
+- [`Math.atan()`](atan)
+- [`Math.atan2()`](atan2)
+- [`Math.cos()`](cos)
+- [`Math.sin()`](sin)
+- [`Math.tan()`](tan)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -7324,11 +7324,11 @@ No
 
 ## See also
 
--   [`Math.asinh()`](asinh)
--   [`Math.atanh()`](atanh)
--   [`Math.cosh()`](cosh)
--   [`Math.sinh()`](sinh)
--   [`Math.tanh()`](tanh)
+- [`Math.asinh()`](asinh)
+- [`Math.atanh()`](atanh)
+- [`Math.cosh()`](cosh)
+- [`Math.sinh()`](sinh)
+- [`Math.tanh()`](tanh)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -7359,8 +7359,8 @@ The old value at the given position (`typedArray[index]`).
 
 ### Exceptions
 
--   Throws a [`TypeError`](../typeerror), if `typedArray` is not one of the allowed integer types.
--   Throws a [`RangeError`](../rangeerror), if `index` is out of bounds in the `typedArray`.
+- Throws a [`TypeError`](../typeerror), if `typedArray` is not one of the allowed integer types.
+- Throws a [`RangeError`](../rangeerror), if `index` is out of bounds in the `typedArray`.
 
 ## Examples
 
@@ -7435,8 +7435,8 @@ Chrome disabled `SharedArrayBuffer` on January 5, 2018 to help reduce the effica
 
 ## See also
 
--   [`Atomics`](../atomics)
--   [`Atomics.sub()`](sub)
+- [`Atomics`](../atomics)
+- [`Atomics.sub()`](sub)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics/add" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics/add</a>
 
@@ -7507,15 +7507,15 @@ The addition operator (`+`) produces the sum of numeric operands or string conca
 
 ## See also
 
--   [Subtraction operator](subtraction)
--   [Division operator](division)
--   [Multiplication operator](multiplication)
--   [Remainder operator](remainder)
--   [Exponentiation operator](exponentiation)
--   [Increment operator](increment)
--   [Decrement operator](decrement)
--   [Unary negation operator](unary_negation)
--   [Unary plus operator](unary_plus)
+- [Subtraction operator](subtraction)
+- [Division operator](division)
+- [Multiplication operator](multiplication)
+- [Remainder operator](remainder)
+- [Exponentiation operator](exponentiation)
+- [Increment operator](increment)
+- [Decrement operator](decrement)
+- [Unary negation operator](unary_negation)
+- [Unary plus operator](unary_plus)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -7625,8 +7625,8 @@ No
 
 ## See also
 
--   [`Error`](error)
--   [`Promise.any`](promise/any)
+- [`Error`](error)
+- [`Promise.any`](promise/any)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AggregateError" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AggregateError</a>
 
@@ -7645,9 +7645,9 @@ An [iterable](../../iteration_protocols#the_iterable_protocol) object such as an
 
 ### Return value
 
--   An **already resolved** [`Promise`](../promise) if the iterable passed is empty.
--   An **asynchronously resolved** [`Promise`](../promise) if the iterable passed contains no promises. Note, Google Chrome 58 returns an **already resolved** promise in this case.
--   A **pending** [`Promise`](../promise) in all other cases. This returned promise is then resolved/rejected **asynchronously** (as soon as the stack is empty) when all the promises in the given iterable have resolved, or if any of the promises reject. See the example about "Asynchronicity or synchronicity of Promise.all" below. Returned values will be in order of the Promises passed, regardless of completion order.
+- An **already resolved** [`Promise`](../promise) if the iterable passed is empty.
+- An **asynchronously resolved** [`Promise`](../promise) if the iterable passed contains no promises. Note, Google Chrome 58 returns an **already resolved** promise in this case.
+- A **pending** [`Promise`](../promise) in all other cases. This returned promise is then resolved/rejected **asynchronously** (as soon as the stack is empty) when all the promises in the given iterable have resolved, or if any of the promises reject. See the example about "Asynchronicity or synchronicity of Promise.all" below. Returned values will be in order of the Promises passed, regardless of completion order.
 
 ## Description
 
@@ -7659,8 +7659,8 @@ This method can be useful for aggregating the results of multiple promises. It i
 
 The returned promise is fulfilled with an array containing **all** the resolved values (including non-promise values) in the iterable passed as the argument.
 
--   If an empty iterable is passed, then the promise returned by this method is fulfilled synchronously. The resolved value is an empty array.
--   If a nonempty _iterable_ is passed, and **all** of the promises fulfill, or are not promises, then the promise returned by this method is fulfilled asynchronously.
+- If an empty iterable is passed, then the promise returned by this method is fulfilled synchronously. The resolved value is an empty array.
+- If a nonempty _iterable_ is passed, and **all** of the promises fulfill, or are not promises, then the promise returned by this method is fulfilled asynchronously.
 
 ### Rejection
 
@@ -7845,8 +7845,8 @@ No
 
 ## See also
 
--   [`Promise`](../promise)
--   [`Promise.race()`](race)
+- [`Promise`](../promise)
+- [`Promise.race()`](race)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -7931,11 +7931,11 @@ No
 
 ## See also
 
--   [Promises](https://developer.mozilla.org/en-US/docs/Archive/Add-ons/Techniques/Promises)
--   [Using promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
--   [Graceful asynchronous programming with promises](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Promises)
--   [`Promise`](../promise)
--   [`Promise.all()`](all)
+- [Promises](https://developer.mozilla.org/en-US/docs/Archive/Add-ons/Techniques/Promises)
+- [Using promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
+- [Graceful asynchronous programming with promises](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Promises)
+- [`Promise`](../promise)
+- [`Promise.all()`](all)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -7973,8 +7973,8 @@ Or, alternatively, you can set a header to your JavaScript file:
 
 ## See also
 
--   [How to use a source map - Firefox Tools documentation](https://developer.mozilla.org/en-US/docs/Tools/Debugger/How_to/Use_a_source_map)
--   [Introduction to source maps - HTML5 rocks](https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/)
+- [How to use a source map - Firefox Tools documentation](https://developer.mozilla.org/en-US/docs/Tools/Debugger/How_to/Use_a_source_map)
+- [Introduction to source maps - HTML5 rocks](https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Already_has_pragma" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Already_has_pragma</a>
 
@@ -8054,7 +8054,7 @@ No
 
 ## See also
 
--   [`String.prototype.link()`](link)
+- [`String.prototype.link()`](link)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -8085,8 +8085,8 @@ The old value at the given position (`typedArray[index]`).
 
 ### Exceptions
 
--   Throws a [`TypeError`](../typeerror), if `typedArray` is not one of the allowed integer types.
--   Throws a [`RangeError`](../rangeerror), if `index` is out of bounds in the `typedArray`.
+- Throws a [`TypeError`](../typeerror), if `typedArray` is not one of the allowed integer types.
+- Throws a [`RangeError`](../rangeerror), if `index` is out of bounds in the `typedArray`.
 
 ## Description
 
@@ -8175,9 +8175,9 @@ Chrome disabled `SharedArrayBuffer` on January 5, 2018 to help reduce the effica
 
 ## See also
 
--   [`Atomics`](../atomics)
--   [`Atomics.or()`](or)
--   [`Atomics.xor()`](xor)
+- [`Atomics`](../atomics)
+- [`Atomics.or()`](or)
+- [`Atomics.xor()`](xor)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics/and" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics/and</a>
 
@@ -8196,9 +8196,9 @@ An [iterable](../../iteration_protocols#the_iterable_protocol) object, such as a
 
 ### Return value
 
--   An **already rejected** [`Promise`](../promise) if the iterable passed is empty.
--   An **asynchronously resolved** [`Promise`](../promise) if the iterable passed contains no promises.
--   A **pending** [`Promise`](../promise) in all other cases. This returned promise is then resolved/rejected **asynchronously** (as soon as the stack is empty) when any of the promises in the given iterable resolve, or if all the promises have rejected.
+- An **already rejected** [`Promise`](../promise) if the iterable passed is empty.
+- An **asynchronously resolved** [`Promise`](../promise) if the iterable passed contains no promises.
+- A **pending** [`Promise`](../promise) in all other cases. This returned promise is then resolved/rejected **asynchronously** (as soon as the stack is empty) when any of the promises in the given iterable resolve, or if all the promises have rejected.
 
 ## Description
 
@@ -8210,13 +8210,13 @@ Also, unlike [`Promise.race()`](race), which returns the first _settled_ value (
 
 The returned promise is fulfilled with **the first** resolved value (or non-promise value) in the iterable passed as the argument, whether or not the other promises have rejected.
 
--   If a nonempty _iterable_ is passed, and **any** of the promises fulfill, or are not promises, then the promise returned by this method is fulfilled asynchronously.
+- If a nonempty _iterable_ is passed, and **any** of the promises fulfill, or are not promises, then the promise returned by this method is fulfilled asynchronously.
 
 ### Rejection
 
 If all of the passed-in promises reject, `Promise.any` asynchronously rejects with an [`AggregateError`](../aggregateerror) object, which extends [`Error`](../error), and contains an `errors` property with an array of rejection values.
 
--   If an empty iterable is passed, then the promise returned by this method is rejected synchronously. The rejected reason is an `AggregateError` object whose `errors` property is an empty array.
+- If an empty iterable is passed, then the promise returned by this method is rejected synchronously. The rejected reason is an `AggregateError` object whose `errors` property is an empty array.
 
 ## Examples
 
@@ -8317,10 +8317,10 @@ No
 
 ## See also
 
--   [`Promise`](../promise)
--   [`Promise.allSettled()`](allsettled)
--   [`Promise.all()`](all)
--   [`Promise.race()`](race)
+- [`Promise`](../promise)
+- [`Promise.allSettled()`](allsettled)
+- [`Promise.all()`](all)
+- [`Promise.race()`](race)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -8749,8 +8749,8 @@ No
 
 ## See also
 
--   [`Function`](../global_objects/function)
--   [Rest parameters](rest_parameters)
+- [`Function`](../global_objects/function)
+- [Rest parameters](rest_parameters)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments</a>
 
@@ -9183,7 +9183,7 @@ The argument of [`Array.prototype.sort()`](../global_objects/array/sort) is expe
 
 ## See also
 
--   [`Array.prototype.sort()`](../global_objects/array/sort)
+- [`Array.prototype.sort()`](../global_objects/array/sort)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Array_sort_argument" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Array_sort_argument</a>
 
@@ -9398,9 +9398,9 @@ No
 
 ## See also
 
--   [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
--   [`SharedArrayBuffer`](sharedarraybuffer)
--   [RangeError: invalid array length](../errors/invalid_array_length)
+- [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
+- [`SharedArrayBuffer`](sharedarraybuffer)
+- [RangeError: invalid array length](../errors/invalid_array_length)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer</a>
 
@@ -9410,11 +9410,11 @@ An **arrow function expression** is a compact alternative to a traditional [func
 
 **Differences & Limitations:**
 
--   Does not have its own bindings to `this` or `super`, and should not be used as `methods`.
--   Does not have `arguments`, or `new.target` keywords.
--   Not suitable for `call`, `apply` and [`bind`](../global_objects/function/bind) methods, which generally rely on establishing a [scope](https://developer.mozilla.org/en-US/docs/Glossary/Scope).
--   Can not be used as [constructors](https://developer.mozilla.org/en-US/docs/Glossary/Constructor).
--   Can not use `yield`, within its body.
+- Does not have its own bindings to `this` or `super`, and should not be used as `methods`.
+- Does not have `arguments`, or `new.target` keywords.
+- Not suitable for `call`, `apply` and [`bind`](../global_objects/function/bind) methods, which generally rely on establishing a [scope](https://developer.mozilla.org/en-US/docs/Glossary/Scope).
+- Can not be used as [constructors](https://developer.mozilla.org/en-US/docs/Glossary/Constructor).
+- Can not use `yield`, within its body.
 
 ### Comparing traditional functions to arrow functions
 
@@ -9883,7 +9883,7 @@ No
 
 ## See also
 
--   ["ES6 In Depth: Arrow functions" on hacks.mozilla.org](https://hacks.mozilla.org/2015/06/es6-in-depth-arrow-functions/)
+- ["ES6 In Depth: Arrow functions" on hacks.mozilla.org](https://hacks.mozilla.org/2015/06/es6-in-depth-arrow-functions/)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions</a>
 
@@ -9960,12 +9960,12 @@ For values less than -1 or greater than 1, `Math.asin()` returns [`NaN`](../nan)
 
 ## See also
 
--   [`Math.acos()`](acos)
--   [`Math.atan()`](atan)
--   [`Math.atan2()`](atan2)
--   [`Math.cos()`](cos)
--   [`Math.sin()`](sin)
--   [`Math.tan()`](tan)
+- [`Math.acos()`](acos)
+- [`Math.atan()`](atan)
+- [`Math.atan2()`](atan2)
+- [`Math.cos()`](cos)
+- [`Math.sin()`](sin)
+- [`Math.tan()`](tan)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -10056,11 +10056,11 @@ No
 
 ## See also
 
--   [`Math.acosh()`](acosh)
--   [`Math.atanh()`](atanh)
--   [`Math.cosh()`](cosh)
--   [`Math.sinh()`](sinh)
--   [`Math.tanh()`](tanh)
+- [`Math.acosh()`](acosh)
+- [`Math.atanh()`](atanh)
+- [`Math.cosh()`](cosh)
+- [`Math.sinh()`](sinh)
+- [`Math.tanh()`](tanh)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -10136,8 +10136,8 @@ No
 
 ## See also
 
--   [`BigInt`](../bigint)
--   [`BigInt.asUintN()`](asuintn)
+- [`BigInt`](../bigint)
+- [`BigInt.asUintN()`](asuintn)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt/asIntN" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt/asIntN</a>
 
@@ -10399,9 +10399,9 @@ No
 
 ## See also
 
--   [`Object.defineProperties()`](defineproperties)
--   [Enumerability and ownership of properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
--   [Spread in object literals](../../operators/spread_syntax#spread_in_object_literals)
+- [`Object.defineProperties()`](defineproperties)
+- [Enumerability and ownership of properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
+- [Spread in object literals](../../operators/spread_syntax#spread_in_object_literals)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -10477,8 +10477,8 @@ No
 
 ## See also
 
--   [`BigInt`](../bigint)
--   [`BigInt.asIntN()`](asintn)
+- [`BigInt`](../bigint)
+- [`BigInt.asIntN()`](asintn)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt/asUintN" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt/asUintN</a>
 
@@ -10771,10 +10771,10 @@ No
 
 ## See also
 
--   [`async function expression`](../operators/async_function)
--   [`AsyncFunction`](../global_objects/asyncfunction) object
--   [`await`](../operators/await)
--   ["Decorating Async Javascript Functions" on "innolitics.com"](https://innolitics.com/10x/javascript-decorators-for-promise-returning-functions/)
+- [`async function expression`](../operators/async_function)
+- [`AsyncFunction`](../global_objects/asyncfunction) object
+- [`await`](../operators/await)
+- ["Decorating Async Javascript Functions" on "innolitics.com"](https://innolitics.com/10x/javascript-decorators-for-promise-returning-functions/)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -10873,12 +10873,12 @@ No
 
 ## See also
 
--   [async function function](../statements/async_function)
--   [async function expression](../operators/async_function)
--   [`Function`](function)
--   [function statement](../statements/function)
--   [function expression](../operators/function)
--   [Functions and function scope](../functions)
+- [async function function](../statements/async_function)
+- [async function expression](../operators/async_function)
+- [`Function`](function)
+- [function statement](../statements/function)
+- [function expression](../operators/function)
+- [Functions and function scope](../functions)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AsyncFunction" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AsyncFunction</a>
 
@@ -10969,8 +10969,8 @@ No
 
 ## See also
 
--   [Iteration protocols](../../iteration_protocols)
--   [for await... of](../../statements/for-await...of)
+- [Iteration protocols](../../iteration_protocols)
+- [for await... of](../../statements/for-await...of)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -11113,12 +11113,12 @@ Note that you may want to avoid using **±**`Infinity` for stylistic reasons. In
 
 ## See also
 
--   [`Math.acos()`](acos)
--   [`Math.asin()`](asin)
--   [`Math.atan2()`](atan2)
--   [`Math.cos()`](cos)
--   [`Math.sin()`](sin)
--   [`Math.tan()`](tan)
+- [`Math.acos()`](acos)
+- [`Math.asin()`](asin)
+- [`Math.atan2()`](atan2)
+- [`Math.cos()`](cos)
+- [`Math.sin()`](sin)
+- [`Math.tan()`](tan)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -11208,12 +11208,12 @@ Because `atan2()` is a static method of `Math`, you always use it as `Math.atan2
 
 ## See also
 
--   [`Math.acos()`](acos)
--   [`Math.asin()`](asin)
--   [`Math.atan()`](atan)
--   [`Math.cos()`](cos)
--   [`Math.sin()`](sin)
--   [`Math.tan()`](tan)
+- [`Math.acos()`](acos)
+- [`Math.asin()`](asin)
+- [`Math.atan()`](atan)
+- [`Math.cos()`](cos)
+- [`Math.sin()`](sin)
+- [`Math.tan()`](tan)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -11298,11 +11298,11 @@ No
 
 ## See also
 
--   [`Math.acosh()`](acosh)
--   [`Math.asinh()`](asinh)
--   [`Math.cosh()`](cosh)
--   [`Math.sinh()`](sinh)
--   [`Math.tanh()`](tanh)
+- [`Math.acosh()`](acosh)
+- [`Math.asinh()`](asinh)
+- [`Math.cosh()`](cosh)
+- [`Math.sinh()`](sinh)
+- [`Math.tanh()`](tanh)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -12175,12 +12175,12 @@ Chrome disabled `SharedArrayBuffer` on January 5, 2018 to help reduce the effica
 
 ## See also
 
--   [`ArrayBuffer`](arraybuffer)
--   [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
--   [Web Workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API)
--   [parlib-simple](https://github.com/lars-t-hansen/parlib-simple) - a simple library providing synchronization and work distribution abstractions.
--   [Shared Memory - a brief tutorial](https://github.com/tc39/ecmascript_sharedmem/blob/master/TUTORIAL.md)
--   [A Taste of JavaScript's New Parallel Primitives - Mozilla Hacks](https://hacks.mozilla.org/2016/05/a-taste-of-javascripts-new-parallel-primitives/)
+- [`ArrayBuffer`](arraybuffer)
+- [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
+- [Web Workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API)
+- [parlib-simple](https://github.com/lars-t-hansen/parlib-simple) - a simple library providing synchronization and work distribution abstractions.
+- [Shared Memory - a brief tutorial](https://github.com/tc39/ecmascript_sharedmem/blob/master/TUTORIAL.md)
+- [A Taste of JavaScript's New Parallel Primitives - Mozilla Hacks](https://hacks.mozilla.org/2016/05/a-taste-of-javascripts-new-parallel-primitives/)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics</a>
 
@@ -12326,8 +12326,8 @@ Use a leading zero followed by the letter "o";
 
 ## See also
 
--   [Lexical grammar](../lexical_grammar#octal)
--   [SyntaxError: "0"-prefixed octal literals and octal escape seq. are deprecated](deprecated_octal)
+- [Lexical grammar](../lexical_grammar#octal)
+- [SyntaxError: "0"-prefixed octal literals and octal escape seq. are deprecated](deprecated_octal)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Bad_octal" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Bad_octal</a>
 
@@ -12353,10 +12353,10 @@ Why is this parameter's value limited to 36? A radix that is larger than 10 uses
 
 The most common radixes:
 
--   2 for [binary numbers](https://en.wikipedia.org/wiki/Binary_number),
--   8 for [octal numbers](https://en.wikipedia.org/wiki/Octal),
--   10 for [decimal numbers](https://en.wikipedia.org/wiki/Decimal),
--   16 for [hexadecimal numbers](https://en.wikipedia.org/wiki/Hexadecimal).
+- 2 for [binary numbers](https://en.wikipedia.org/wiki/Binary_number),
+- 8 for [octal numbers](https://en.wikipedia.org/wiki/Octal),
+- 10 for [decimal numbers](https://en.wikipedia.org/wiki/Decimal),
+- 16 for [hexadecimal numbers](https://en.wikipedia.org/wiki/Hexadecimal).
 
 ## Examples
 
@@ -12378,8 +12378,8 @@ The most common radixes:
 
 ## See also
 
--   [`Number.prototype.toString()`](../global_objects/number/tostring)
--   [`BigInt.prototype.toString()`](../global_objects/bigint/tostring)
+- [`Number.prototype.toString()`](../global_objects/number/tostring)
+- [`BigInt.prototype.toString()`](../global_objects/bigint/tostring)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Bad_radix" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Bad_radix</a>
 
@@ -12443,8 +12443,8 @@ See the table above for the six valid regular expression flags that are allowed 
 
 ## See also
 
--   [Regular expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
--   [XRegEx flags](https://xregexp.com/flags/) - regular expression library that provides four new flags (`n`, `s`, `x`, `A`)
+- [Regular expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
+- [XRegEx flags](https://xregexp.com/flags/) - regular expression library that provides four new flags (`n`, `s`, `x`, `A`)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Bad_regexp_flag" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Bad_regexp_flag</a>
 
@@ -12494,8 +12494,8 @@ The curly brackets look correct at a first glance, but this code snippet is miss
 
 ## See also
 
--   `return`
--   `yield`
+- `return`
+- `yield`
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Bad_return_or_yield" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Bad_return_or_yield</a>
 
@@ -12570,7 +12570,7 @@ No
 
 ## See also
 
--   [`Intl.Locale`](../locale)
+- [`Intl.Locale`](../locale)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/baseName" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/baseName</a>
 
@@ -12647,8 +12647,8 @@ With the [`element.style`](https://developer.mozilla.org/en-US/docs/Web/API/Elem
 
 ## See also
 
--   [`String.prototype.fontsize()`](fontsize)
--   [`String.prototype.small()`](small)
+- [`String.prototype.fontsize()`](fontsize)
+- [`String.prototype.small()`](small)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -12789,9 +12789,9 @@ Note that comparisons with `Object`-wrapped BigInt values act as with other obje
 
 A BigInt value behaves like a Number value in cases where:
 
--   it is converted to a [`Boolean`](boolean): via the [`Boolean`](boolean) function;
--   when used with [logical operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators) `||`, `&&`, and `!`; or
--   within a conditional test like an [`if`](../statements/if...else) statement.
+- it is converted to a [`Boolean`](boolean): via the [`Boolean`](boolean) function;
+- when used with [logical operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators) `||`, `&&`, and `!`; or
+- within a conditional test like an [`if`](../statements/if...else) statement.
 
 <!-- -->
 
@@ -12851,8 +12851,8 @@ Returns this BigInt value. Overrides the [`Object.prototype.valueOf()`](object/v
 
 Because coercing between Number values and BigInt values can lead to loss of precision, the following are recommended:
 
--   Only use a BigInt value when values greater than 2<sup>53</sup> are reasonably expected.
--   Don't coerce between BigInt values and Number values.
+- Only use a BigInt value when values greater than 2<sup>53</sup> are reasonably expected.
+- Don't coerce between BigInt values and Number values.
 
 ### Cryptography
 
@@ -13091,8 +13091,8 @@ No
 
 ## See also
 
--   [`Number`](number)
--   [`Number.MAX_SAFE_INTEGER`](number/max_safe_integer)
+- [`Number`](number)
+- [`Number.MAX_SAFE_INTEGER`](number/max_safe_integer)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt</a>
 
@@ -13305,9 +13305,9 @@ No
 
 ## See also
 
--   [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
--   [`BigUint64Array`](biguint64array)
--   [`DataView`](dataview)
+- [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
+- [`BigUint64Array`](biguint64array)
+- [`DataView`](dataview)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt64Array" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt64Array</a>
 
@@ -13520,9 +13520,9 @@ No
 
 ## See also
 
--   [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
--   [`BigInt64Array`](bigint64array)
--   [`DataView`](dataview)
+- [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
+- [`BigInt64Array`](bigint64array)
+- [`DataView`](dataview)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigUint64Array" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigUint64Array</a>
 
@@ -13806,11 +13806,11 @@ You can partially work around this by inserting the following code at the beginn
 
 Some of the many differences (there may well be others, as this list does not seriously attempt to be exhaustive) between this algorithm and the specified algorithm are:
 
--   The partial implementation relies on [`Array.prototype.slice()`](../array/slice), [`Array.prototype.concat()`](../array/concat), [`Function.prototype.call()`](call) and [`Function.prototype.apply()`](apply), built-in methods to have their original values.
--   The partial implementation creates functions that do not have immutable "poison pill" [`caller`](caller) and `arguments` properties that throw a [`TypeError`](../typeerror) upon get, set, or deletion. (This could be added if the implementation supports [`Object.defineProperty`](../object/defineproperty), or partially implemented \[without throw-on-delete behavior\] if the implementation supports the [`__defineGetter__`](../object/__definegetter__) and [`__defineSetter__`](../object/__definesetter__) extensions.)
--   The partial implementation creates functions that have a `prototype` property. (Proper bound functions have none.)
--   The partial implementation creates bound functions whose [`length`](length) property does not agree with that mandated by ECMA-262: it creates functions with `length` of `0`. A full implementation—depending on the length of the target function and the number of pre-specified arguments—may return a non-zero length.
--   The partial implementation creates bound functions whose [`name`](name) property is not derived from the original function name. According to ECMA-262, name of the returned bound function should be "bound " + name of target function (note the space character).
+- The partial implementation relies on [`Array.prototype.slice()`](../array/slice), [`Array.prototype.concat()`](../array/concat), [`Function.prototype.call()`](call) and [`Function.prototype.apply()`](apply), built-in methods to have their original values.
+- The partial implementation creates functions that do not have immutable "poison pill" [`caller`](caller) and `arguments` properties that throw a [`TypeError`](../typeerror) upon get, set, or deletion. (This could be added if the implementation supports [`Object.defineProperty`](../object/defineproperty), or partially implemented \[without throw-on-delete behavior\] if the implementation supports the [`__defineGetter__`](../object/__definegetter__) and [`__defineSetter__`](../object/__definesetter__) extensions.)
+- The partial implementation creates functions that have a `prototype` property. (Proper bound functions have none.)
+- The partial implementation creates bound functions whose [`length`](length) property does not agree with that mandated by ECMA-262: it creates functions with `length` of `0`. A full implementation—depending on the length of the target function and the number of pre-specified arguments—may return a non-zero length.
+- The partial implementation creates bound functions whose [`name`](name) property is not derived from the original function name. According to ECMA-262, name of the returned bound function should be "bound " + name of target function (note the space character).
 
 If you choose to use this partial implementation, **you must not rely on those cases where behavior deviates from ECMA-262, 5<sup>th</sup> edition!** Thankfully, these deviations from the specification rarely (if ever) come up in most coding situations. If you do not understand any of the deviations from the specification above, then it is safe in this particular case to not worry about these noncompliant deviation details.
 
@@ -13851,9 +13851,9 @@ If you choose to use this partial implementation, **you must not rely on those c
 
 ## See also
 
--   [`Function.prototype.apply()`](apply)
--   [`Function.prototype.call()`](call)
--   [Functions](../../functions)
+- [`Function.prototype.apply()`](apply)
+- [`Function.prototype.call()`](call)
+- [Functions](../../functions)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind</a>
 
@@ -13930,8 +13930,8 @@ Bitwise ANDing any number `x` with `0` yields `0`.
 
 ## See also
 
--   [Bitwise operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#bitwise)
--   [Bitwise AND assignment operator](bitwise_and_assignment)
+- [Bitwise operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#bitwise)
+- [Bitwise AND assignment operator](bitwise_and_assignment)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -13990,8 +13990,8 @@ The bitwise AND assignment operator (`&=`) uses the binary representation of bot
 
 ## See also
 
--   [Assignment operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#assignment)
--   [Bitwise AND operator](bitwise_and)
+- [Assignment operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#assignment)
+- [Bitwise AND operator](bitwise_and)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -14071,7 +14071,7 @@ Note that due to using 32-bit representation for numbers both `~-1` and `~429496
 
 ## See also
 
--   [Bitwise operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#bitwise)
+- [Bitwise operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#bitwise)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -14152,8 +14152,8 @@ Bitwise ORing any number `x` with `0` yields `x`.
 
 ## See also
 
--   [Bitwise operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#bitwise)
--   [Bitwise OR assignment operator](bitwise_or_assignment)
+- [Bitwise operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#bitwise)
+- [Bitwise OR assignment operator](bitwise_or_assignment)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -14214,9 +14214,9 @@ The bitwise OR assignment operator (`|=`) uses the binary representation of both
 
 ## See also
 
--   [Assignment operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#assignment)
--   [Bitwise OR operator](bitwise_or)
--   [Logical OR assignment (`||=`)](logical_or_assignment)
+- [Assignment operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#assignment)
+- [Bitwise OR operator](bitwise_or)
+- [Logical OR assignment (`||=`)](logical_or_assignment)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -14297,8 +14297,8 @@ Bitwise XORing any number `x` with `0` yields `x`.
 
 ## See also
 
--   [Bitwise operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#bitwise)
--   [Bitwise XOR assignment operator](bitwise_xor_assignment)
+- [Bitwise operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#bitwise)
+- [Bitwise XOR assignment operator](bitwise_xor_assignment)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -14364,8 +14364,8 @@ The bitwise XOR assignment operator (`^=`) uses the binary representation of bot
 
 ## See also
 
--   [Assignment operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#assignment)
--   [Bitwise XOR operator](bitwise_xor)
+- [Assignment operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#assignment)
+- [Bitwise XOR operator](bitwise_xor)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -14441,9 +14441,9 @@ The following example uses string methods to change the formatting of a string:
 
 ## See also
 
--   [`String.prototype.bold()`](bold)
--   [`String.prototype.italics()`](italics)
--   [`String.prototype.strike()`](strike)
+- [`String.prototype.bold()`](bold)
+- [`String.prototype.italics()`](italics)
+- [`String.prototype.strike()`](strike)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -14554,9 +14554,9 @@ In [strict mode](../strict_mode), starting with ES2015, functions inside blocks 
 
 ## See also
 
--   [`while`](while)
--   [`if...else`](if...else)
--   [`let`](let)
+- [`while`](while)
+- [`if...else`](if...else)
+- [`let`](let)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -14630,9 +14630,9 @@ The following example uses string methods to change the formatting of a string:
 
 ## See also
 
--   [`String.prototype.blink()`](blink)
--   [`String.prototype.italics()`](italics)
--   [`String.prototype.strike()`](strike)
+- [`String.prototype.blink()`](blink)
+- [`String.prototype.italics()`](italics)
+- [`String.prototype.strike()`](strike)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -14852,9 +14852,9 @@ No
 
 ## See also
 
--   [Boolean](https://developer.mozilla.org/en-US/docs/Glossary/Boolean)
--   [Boolean primitives](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#boolean_type)
--   [Boolean data type (Wikipedia)](https://en.wikipedia.org/wiki/Boolean_data_type)
+- [Boolean](https://developer.mozilla.org/en-US/docs/Glossary/Boolean)
+- [Boolean primitives](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#boolean_type)
+- [Boolean data type (Wikipedia)](https://en.wikipedia.org/wiki/Boolean_data_type)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean</a>
 
@@ -15001,9 +15001,9 @@ The following code also uses `break` statements with labeled blocks, but generat
 
 ## See also
 
--   [`continue`](continue)
--   [label](label)
--   [`switch`](switch)
+- [`continue`](continue)
+- [label](label)
+- [`switch`](switch)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -15068,9 +15068,9 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 
 ## See also
 
--   [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
--   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
--   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
+- [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
+- [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
+- [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -15160,7 +15160,7 @@ Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy
 
 ## See also
 
--   [`SharedArrayBuffer`](../sharedarraybuffer)
+- [`SharedArrayBuffer`](../sharedarraybuffer)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -15221,8 +15221,8 @@ The `byteOffset` property is an accessor property whose set accessor function is
 
 ## See also
 
--   [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
--   [`TypedArray`](../typedarray)
+- [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
+- [`TypedArray`](../typedarray)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -15299,8 +15299,8 @@ no
 
 ## See also
 
--   [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
--   [`TypedArray`](../typedarray)
+- [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
+- [`TypedArray`](../typedarray)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -15369,8 +15369,8 @@ No
 
 ## See also
 
--   [`Intl.Locale`](../locale)
--   [Unicode Calendar Identifiers](https://www.unicode.org/reports/tr35/#UnicodeCalendarIdentifier)
+- [`Intl.Locale`](../locale)
+- [Unicode Calendar Identifiers](https://www.unicode.org/reports/tr35/#UnicodeCalendarIdentifier)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/calendar" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/calendar</a>
 
@@ -15535,9 +15535,9 @@ In the example below, we invoke the `display` function without passing the first
 
 ## See also
 
--   [`Function.prototype.bind()`](bind)
--   [`Function.prototype.apply()`](apply)
--   [Introduction to Object-Oriented JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects)
+- [`Function.prototype.bind()`](bind)
+- [`Function.prototype.apply()`](apply)
+- [Introduction to Object-Oriented JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call</a>
 
@@ -15593,9 +15593,9 @@ This issue can also happen when providing a function that is stored as a propert
 
 ## See also
 
--   [`Function.prototype.call()`](../global_objects/function/call)
--   [`Function.prototype.apply()`](../global_objects/function/apply)
--   [`Function.prototype.bind()`](../global_objects/function/bind)
+- [`Function.prototype.call()`](../global_objects/function/call)
+- [`Function.prototype.apply()`](../global_objects/function/apply)
+- [`Function.prototype.bind()`](../global_objects/function/bind)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Called_on_incompatible_type" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Called_on_incompatible_type</a>
 
@@ -15658,9 +15658,9 @@ ECMAScript 3 resolved these issues by allowing named function expressions. For e
 
 This has numerous benefits:
 
--   the function can be called like any other from inside your code
--   it does not create a variable in the outer scope ([except for IE 8 and below](https://kangax.github.io/nfe/#example_1_function_expression_identifier_leaks_into_an_enclosing_scope))
--   it has better performance than accessing the arguments object
+- the function can be called like any other from inside your code
+- it does not create a variable in the outer scope ([except for IE 8 and below](https://kangax.github.io/nfe/#example_1_function_expression_identifier_leaks_into_an_enclosing_scope))
+- it has better performance than accessing the arguments object
 
 Another feature that was deprecated was `arguments.callee.caller`, or more specifically `Function.caller`. Why is this? Well, at any point in time you can find the deepest caller of any function on the stack, and as I said above looking at the call stack has one single major effect: it makes a large number of optimizations impossible, or much more difficult. For example, if you cannot guarantee that a function `f` will not call an unknown function, it is not possible to inline `f`. Basically it means that any call site that may have been trivially inlinable accumulates a large number of guards:
 
@@ -15735,7 +15735,7 @@ However, in a case like the following, there are not alternatives to `arguments.
 
 ## See also
 
--   [`Function`](../../global_objects/function)
+- [`Function`](../../global_objects/function)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments/callee" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments/callee</a>
 
@@ -15828,8 +15828,8 @@ The following code checks the value a function's `caller` property.
 
 ## See also
 
--   [`Function.name`](name)
--   [`arguments`](../../functions/arguments)
+- [`Function.name`](name)
+- [`arguments`](../../functions/arguments)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/caller" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/caller</a>
 
@@ -15881,7 +15881,7 @@ To change "foo" inside the if statement, you need to remove the `let` that cause
 
 ## See also
 
--   [Temporal Dead Zone and errors with let](../statements/let#temporal_dead_zone_and_errors_with_let)
+- [Temporal Dead Zone and errors with let](../statements/let#temporal_dead_zone_and_errors_with_let)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Cant_access_lexical_declaration_before_init" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Cant_access_lexical_declaration_before_init</a>
 
@@ -15931,8 +15931,8 @@ To fix null pointer to `undefined` or `null` values, you can use the [typeof](..
 
 ## See also
 
--   [`undefined`](../global_objects/undefined)
--   [`null`](../global_objects/null)
+- [`undefined`](../global_objects/undefined)
+- [`null`](../global_objects/null)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Cant_access_property" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Cant_access_property</a>
 
@@ -15976,8 +15976,8 @@ Either fix the code to prevent the [primitive](https://developer.mozilla.org/en-
 
 ## See also
 
--   [`Strict_mode`](../strict_mode)
--   [primitive](https://developer.mozilla.org/en-US/docs/Glossary/Primitive)
+- [`Strict_mode`](../strict_mode)
+- [primitive](https://developer.mozilla.org/en-US/docs/Glossary/Primitive)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Cant_assign_to_property" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Cant_assign_to_property</a>
 
@@ -16034,7 +16034,7 @@ To fix this error, you will either need to remove the call to [`Object.preventEx
 
 ## See also
 
--   [`Object.preventExtensions()`](../global_objects/object/preventextensions)
+- [`Object.preventExtensions()`](../global_objects/object/preventextensions)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Cant_define_property_object_not_extensible" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Cant_define_property_object_not_extensible</a>
 
@@ -16084,9 +16084,9 @@ There are also a few non-configurable properties built into JavaScript. Maybe yo
 
 ## See also
 
--   [delete operator](../operators/delete)
--   [`Object.defineProperty()`](../global_objects/object/defineproperty)
--   [`Object.freeze()`](../global_objects/object/freeze)
+- [delete operator](../operators/delete)
+- [`Object.defineProperty()`](../global_objects/object/defineproperty)
+- [`Object.freeze()`](../global_objects/object/freeze)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Cant_delete" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Cant_delete</a>
 
@@ -16128,8 +16128,8 @@ You will need to set the "foo" property to configurable, if you intend to redefi
 
 ## See also
 
--   [\[\[Configurable\]\]](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#properties)
--   [`Object.defineProperty()`](../global_objects/object/defineproperty)
+- [\[\[Configurable\]\]](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#properties)
+- [`Object.defineProperty()`](../global_objects/object/defineproperty)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Cant_redefine_property" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Cant_redefine_property</a>
 
@@ -16198,8 +16198,8 @@ No
 
 ## See also
 
--   [`Intl.Locale`](../locale)
--   [Unicode case first collation spec](https://github.com/unicode-org/cldr/blob/master/common/bcp47/collation.xml#L49)
+- [`Intl.Locale`](../locale)
+- [Unicode case first collation spec](https://github.com/unicode-org/cldr/blob/master/common/bcp47/collation.xml#L49)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/caseFirst" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/caseFirst</a>
 
@@ -16377,8 +16377,8 @@ No
 
 ## See also
 
--   [`Promise`](../promise)
--   [`Promise.prototype.then()`](then)
+- [`Promise`](../promise)
+- [`Promise.prototype.then()`](then)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -16469,8 +16469,8 @@ No
 
 ## See also
 
--   [`Math.pow()`](pow)
--   [`Math.sqrt()`](sqrt)
+- [`Math.pow()`](pow)
+- [`Math.sqrt()`](sqrt)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -16618,11 +16618,11 @@ The following example shows example usage of `Math.ceil()`.
 
 ## See also
 
--   [`Math.abs()`](abs)
--   [`Math.floor()`](floor)
--   [`Math.round()`](round)
--   [`Math.sign()`](sign)
--   [`Math.trunc()`](trunc)
+- [`Math.abs()`](abs)
+- [`Math.floor()`](floor)
+- [`Math.round()`](round)
+- [`Math.sign()`](sign)
+- [`Math.trunc()`](trunc)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -16853,13 +16853,13 @@ While the previous example may be more useful for programs that must support non
 
 ## See also
 
--   [`String.prototype.indexOf()`](indexof)
--   [`String.prototype.lastIndexOf()`](lastindexof)
--   [`String.prototype.charCodeAt()`](charcodeat)
--   [`String.prototype.codePointAt()`](codepointat)
--   [`String.prototype.split()`](split)
--   [`String.fromCodePoint()`](fromcodepoint)
--   [JavaScript has a Unicode problem - Mathias Bynens](https://mathiasbynens.be/notes/javascript-unicode)
+- [`String.prototype.indexOf()`](indexof)
+- [`String.prototype.lastIndexOf()`](lastindexof)
+- [`String.prototype.charCodeAt()`](charcodeat)
+- [`String.prototype.codePointAt()`](codepointat)
+- [`String.prototype.split()`](split)
+- [`String.fromCodePoint()`](fromcodepoint)
+- [JavaScript has a Unicode problem - Mathias Bynens](https://mathiasbynens.be/notes/javascript-unicode)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -17013,10 +17013,10 @@ This version might be used in for loops and the like when it is unknown whether 
 
 ## See also
 
--   [`String.fromCharCode()`](fromcharcode)
--   [`String.prototype.charAt()`](charat)
--   [`String.fromCodePoint()`](fromcodepoint)
--   [`String.prototype.codePointAt()`](codepointat)
+- [`String.fromCharCode()`](fromcharcode)
+- [`String.prototype.charAt()`](charat)
+- [`String.fromCodePoint()`](fromcodepoint)
+- [`String.prototype.codePointAt()`](codepointat)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -17040,8 +17040,8 @@ A class expression has a similar syntax to a [class declaration (statement)](../
 
 There are several differences between class expressions and [class statements](../statements/class), however:
 
--   Class expressions may omit the class name ("binding identifier"), which is not possible with [class statements](../statements/class).
--   Class expressions allow you to redefine (re-declare) classes **without throwing** a [`SyntaxError`](../global_objects/syntaxerror). This is not the case with [class statements](../statements/class).
+- Class expressions may omit the class name ("binding identifier"), which is not possible with [class statements](../statements/class).
+- Class expressions allow you to redefine (re-declare) classes **without throwing** a [`SyntaxError`](../global_objects/syntaxerror). This is not the case with [class statements](../statements/class).
 
 The `constructor` method is optional. Classes generated with class expressions will always respond to [`typeof`](typeof) with the value "`function`".
 
@@ -17123,9 +17123,9 @@ No
 
 ## See also
 
--   [function expression](function)
--   [class declaration](../statements/class)
--   [Classes](../classes)
+- [function expression](function)
+- [class declaration](../statements/class)
+- [Classes](../classes)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -17840,14 +17840,14 @@ No
 
 ## See also
 
--   Functions
--   [class declaration](statements/class)
--   [class expression](operators/class)
--   [Public class fields](classes/public_class_fields)
--   [Private class fields](classes/private_class_fields)
--   [`super`](operators/super)
--   [Blog post: "ES6 In Depth: Classes"](https://hacks.mozilla.org/2015/07/es6-in-depth-classes/)
--   [Fields and public/private class properties proposal (stage 3)](https://github.com/tc39/proposal-class-fields)
+- Functions
+- [class declaration](statements/class)
+- [class expression](operators/class)
+- [Public class fields](classes/public_class_fields)
+- [Private class fields](classes/private_class_fields)
+- [`super`](operators/super)
+- [Blog post: "ES6 In Depth: Classes"](https://hacks.mozilla.org/2015/07/es6-in-depth-classes/)
+- [Fields and public/private class properties proposal (stage 3)](https://github.com/tc39/proposal-class-fields)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes</a>
 
@@ -17914,8 +17914,8 @@ The `clear()` method removes all elements from a `Set` object.
 
 ## See also
 
--   [`Set`](../set)
--   [`Set.prototype.delete()`](delete)
+- [`Set`](../set)
+- [`Set.prototype.delete()`](delete)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -18090,8 +18090,8 @@ No
 
 ## See also
 
--   [`Math`](../math)
--   [`Math.imul`](imul)
+- [`Math`](../math)
+- [`Math.imul`](imul)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -18228,10 +18228,10 @@ No
 
 ## See also
 
--   [`String.fromCodePoint()`](fromcodepoint)
--   [`String.fromCharCode()`](fromcharcode)
--   [`String.prototype.charCodeAt()`](charcodeat)
--   [`String.prototype.charAt()`](charat)
+- [`String.fromCodePoint()`](fromcodepoint)
+- [`String.fromCharCode()`](fromcharcode)
+- [`String.prototype.charCodeAt()`](charcodeat)
+- [`String.prototype.charAt()`](charat)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -18304,7 +18304,7 @@ No
 
 ## See also
 
--   [`Intl.Locale`](../locale)
+- [`Intl.Locale`](../locale)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/collation" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/collation</a>
 
@@ -18348,10 +18348,10 @@ Whether the comparison is for sorting or for searching for matching strings. Pos
 `sensitivity`  
 Which differences in the strings should lead to non-zero result values. Possible values are:
 
--   "`base`": Only strings that differ in base letters compare as unequal. Examples: a ≠ b, a = á, a = A.
--   "`accent`": Only strings that differ in base letters or accents and other diacritic marks compare as unequal. Examples: a ≠ b, a ≠ á, a = A.
--   "`case`": Only strings that differ in base letters or case compare as unequal. Examples: a ≠ b, a = á, a ≠ A.
--   "`variant`": Strings that differ in base letters, accents and other diacritic marks, or case compare as unequal. Other differences may also be taken into consideration. Examples: a ≠ b, a ≠ á, a ≠ A.
+- "`base`": Only strings that differ in base letters compare as unequal. Examples: a ≠ b, a = á, a = A.
+- "`accent`": Only strings that differ in base letters or accents and other diacritic marks compare as unequal. Examples: a ≠ b, a ≠ á, a = A.
+- "`case`": Only strings that differ in base letters or case compare as unequal. Examples: a ≠ b, a = á, a ≠ A.
+- "`variant`": Strings that differ in base letters, accents and other diacritic marks, or case compare as unequal. Other differences may also be taken into consideration. Examples: a ≠ b, a ≠ á, a ≠ A.
 
 The default is "`variant`" for usage "`sort`"; it's locale dependent for usage "`search`".
 
@@ -18472,8 +18472,8 @@ No
 
 ## See also
 
--   [`Intl.Collator`](../collator)
--   [`Intl`](../../intl)
+- [`Intl.Collator`](../collator)
+- [`Intl`](../../intl)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Collator/Collator" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Collator/Collator</a>
 
@@ -18525,9 +18525,9 @@ No
 
 ## See also
 
--   [`Error.prototype.stack`](stack)
--   [`Error.prototype.lineNumber`](linenumber)
--   [`Error.prototype.fileName`](filename)
+- [`Error.prototype.stack`](stack)
+- [`Error.prototype.lineNumber`](linenumber)
+- [`Error.prototype.fileName`](filename)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error/columnNumber" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error/columnNumber</a>
 
@@ -18616,7 +18616,7 @@ Another example that one could make with comma operator is processing before ret
 
 ## See also
 
--   [`for` loop](../statements/for)
+- [`for` loop](../statements/for)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -18698,8 +18698,8 @@ Use the `compare` getter function for finding matching strings in arrays:
 
 ## See also
 
--   [`Intl.Collator`](../collator)
--   [`String.prototype.localeCompare()`](../../string/localecompare)
+- [`Intl.Collator`](../collator)
+- [`String.prototype.localeCompare()`](../../string/localecompare)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Collator/compare" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Collator/compare</a>
 
@@ -18731,8 +18731,8 @@ The old value at the given position (`typedArray[index]`).
 
 ### Exceptions
 
--   Throws a [`TypeError`](../typeerror), if `typedArray` is not one of the allowed integer types.
--   Throws a [`RangeError`](../rangeerror), if `index` is out of bounds in the `typedArray`.
+- Throws a [`TypeError`](../typeerror), if `typedArray` is not one of the allowed integer types.
+- Throws a [`RangeError`](../rangeerror), if `index` is out of bounds in the `typedArray`.
 
 ## Examples
 
@@ -18808,8 +18808,8 @@ Chrome disabled `SharedArrayBuffer` on January 5, 2018 to help reduce the effica
 
 ## See also
 
--   [`Atomics`](../atomics)
--   [`Atomics.exchange()`](exchange)
+- [`Atomics`](../atomics)
+- [`Atomics.exchange()`](exchange)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics/compareExchange" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics/compareExchange</a>
 
@@ -18844,8 +18844,8 @@ A `Promise` that resolves to a [`WebAssembly.Module`](module) object representin
 
 ### Exceptions
 
--   If `bufferSource` is not a [typed array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays), a [`TypeError`](../typeerror) is thrown.
--   If compilation fails, the promise rejects with a [`WebAssembly.CompileError`](compileerror).
+- If `bufferSource` is not a [typed array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays), a [`TypeError`](../typeerror) is thrown.
+- If compilation fails, the promise rejects with a [`WebAssembly.CompileError`](compileerror).
 
 ## Examples
 
@@ -18904,9 +18904,9 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 
 ## See also
 
--   [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
--   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
--   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
+- [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
+- [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
+- [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -19039,9 +19039,9 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 
 ## See also
 
--   [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
--   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
--   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
+- [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
+- [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
+- [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -19066,8 +19066,8 @@ A `Promise` that resolves to a [`WebAssembly.Module`](module) object representin
 
 ### Exceptions
 
--   If `bufferSource` is not a [typed array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays), a [`TypeError`](../typeerror) is thrown.
--   If compilation fails, the promise rejects with a [`WebAssembly.CompileError`](compileerror).
+- If `bufferSource` is not a [typed array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays), a [`TypeError`](../typeerror) is thrown.
+- If compilation fails, the promise rejects with a [`WebAssembly.CompileError`](compileerror).
 
 ## Examples
 
@@ -19118,9 +19118,9 @@ No
 
 ## See also
 
--   [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
--   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
--   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
+- [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
+- [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
+- [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -19152,8 +19152,8 @@ The `concat` method creates a new array consisting of the elements in the object
 
 The `concat` method does not alter `this` or any of the arrays provided as arguments but instead returns a shallow copy that contains copies of the same elements combined from the original arrays. Elements of the original arrays are copied into the new array as follows:
 
--   Object references (and not the actual object): `concat` copies object references into the new array. Both the original and new array refer to the same object. That is, if a referenced object is modified, the changes are visible to both the new and original arrays. This includes elements of array arguments that are also arrays.
--   Data types such as strings, numbers and booleans (not [`String`](../string), [`Number`](../number), and [`Boolean`](../boolean) objects): `concat` copies the values of strings and numbers into the new array.
+- Object references (and not the actual object): `concat` copies object references into the new array. Both the original and new array refer to the same object. That is, if a referenced object is modified, the changes are visible to both the new and original arrays. This includes elements of array arguments that are also arrays.
+- Data types such as strings, numbers and booleans (not [`String`](../string), [`Number`](../number), and [`Boolean`](../boolean) objects): `concat` copies the values of strings and numbers into the new array.
 
 **Note:** Concatenating array(s)/value(s) will leave the originals untouched. Furthermore, any operation on the new array (except operations on elements which are object references) will have no effect on the original arrays, and vice versa.
 
@@ -19246,11 +19246,11 @@ The following code concatenates nested arrays and demonstrates retention of refe
 
 ## See also
 
--   [`push`](push) / [`pop`](pop) — add/remove elements from the end of the array
--   [`unshift`](unshift) / [`shift`](shift) — add/remove elements from the beginning of the array
--   [`splice`](splice) — add/remove elements from the specified location of the array
--   [`String.prototype.concat()`](../string/concat)
--   [`Symbol.isConcatSpreadable`](../symbol/isconcatspreadable) - control flattening.
+- [`push`](push) / [`pop`](pop) — add/remove elements from the end of the array
+- [`unshift`](unshift) / [`shift`](shift) — add/remove elements from the beginning of the array
+- [`splice`](splice) — add/remove elements from the specified location of the array
+- [`String.prototype.concat()`](../string/concat)
+- [`Symbol.isConcatSpreadable`](../symbol/isconcatspreadable) - control flattening.
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat</a>
 
@@ -19352,11 +19352,11 @@ The ternary operator is right-associative, which means it can be "chained" in th
 
 ## See also
 
--   [if statement](../statements/if...else)
--   [Nullish coalescing operator](nullish_coalescing_operator)
--   [Optional chaining](optional_chaining)
--   [Making decisions in your code — conditionals](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals)
--   [Expressions and operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators)
+- [if statement](../statements/if...else)
+- [Nullish coalescing operator](nullish_coalescing_operator)
+- [Optional chaining](optional_chaining)
+- [Making decisions in your code — conditionals](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals)
+- [Expressions and operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -19505,9 +19505,9 @@ const also works on objects and arrays.
 
 ## See also
 
--   [`var`](var)
--   [`let`](let)
--   [Constants in the JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#constants)
+- [`var`](var)
+- [`let`](let)
+- [Constants in the JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#constants)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -19661,9 +19661,9 @@ No
 
 ## See also
 
--   [`Reflect`](../reflect)
--   [`new`](../../operators/new)
--   `new.target`
+- [`Reflect`](../reflect)
+- [`new`](../../operators/new)
+- `new.target`
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -19880,9 +19880,9 @@ or assign parent constructor identifier to a separate property on the Child cons
 
 ## See also
 
--   [Class declaration](../../statements/class)
--   [Class constructor](../../classes/constructor)
--   Glossary: [constructor](https://developer.mozilla.org/en-US/docs/Glossary/Constructor)
+- [Class declaration](../../statements/class)
+- [Class constructor](../../classes/constructor)
+- Glossary: [constructor](https://developer.mozilla.org/en-US/docs/Glossary/Constructor)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -19903,11 +19903,11 @@ Identifier associated with the label of the statement.
 
 In contrast to the [`break`](break) statement, `continue` does not terminate the execution of the loop entirely: instead,
 
--   In a [`while`](while) loop, it jumps back to the condition.
+- In a [`while`](while) loop, it jumps back to the condition.
 
 <!-- -->
 
--   In a [`for`](for) loop, it jumps to the update expression.
+- In a [`for`](for) loop, it jumps to the update expression.
 
 The `continue` statement can include an optional label that allows the program to jump to the next iteration of a labeled loop statement instead of the current loop. In this case, the `continue` statement needs to be nested within this labeled statement.
 
@@ -20020,8 +20020,8 @@ Output:
 
 ## See also
 
--   [`break`](break)
--   [label](label)
+- [`break`](break)
+- [label](label)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -20130,8 +20130,8 @@ No
 
 ## See also
 
--   [A polyfill](https://github.com/behnammodi/polyfill/blob/master/array.polyfill.js)
--   [`Array`](../array)
+- [A polyfill](https://github.com/behnammodi/polyfill/blob/master/array.polyfill.js)
+- [`Array`](../array)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/copyWithin" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/copyWithin</a>
 
@@ -20203,12 +20203,12 @@ Because `cos()` is a static method of `Math`, you always use it as `Math.cos()`,
 
 ## See also
 
--   [`Math.acos()`](acos)
--   [`Math.asin()`](asin)
--   [`Math.atan()`](atan)
--   [`Math.atan2()`](atan2)
--   [`Math.sin()`](sin)
--   [`Math.tan()`](tan)
+- [`Math.acos()`](acos)
+- [`Math.asin()`](asin)
+- [`Math.atan()`](atan)
+- [`Math.atan2()`](atan2)
+- [`Math.sin()`](sin)
+- [`Math.tan()`](tan)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -20295,11 +20295,11 @@ No
 
 ## See also
 
--   [`Math.acosh()`](acosh)
--   [`Math.asinh()`](asinh)
--   [`Math.atanh()`](atanh)
--   [`Math.sinh()`](sinh)
--   [`Math.tanh()`](tanh)
+- [`Math.acosh()`](acosh)
+- [`Math.asinh()`](asinh)
+- [`Math.atanh()`](atanh)
+- [`Math.sinh()`](sinh)
+- [`Math.tanh()`](tanh)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -20330,8 +20330,8 @@ A new object with the specified prototype object and properties.
 
 The `proto` parameter has to be either
 
--   [`null`](../null) or
--   an [`Object`](../object) excluding [primitive wrapper objects](https://developer.mozilla.org/en-US/docs/Glossary/Primitive#primitive_wrapper_objects_in_javascript).
+- [`null`](../null) or
+- an [`Object`](../object) excluding [primitive wrapper objects](https://developer.mozilla.org/en-US/docs/Glossary/Primitive#primitive_wrapper_objects_in_javascript).
 
 If `proto` is neither of these a [`TypeError`](../typeerror) is thrown.
 
@@ -20671,11 +20671,11 @@ If you wish to inherit from multiple objects, then mixins are a possibility.
 
 ## See also
 
--   [`Object.defineProperty()`](defineproperty)
--   [`Object.defineProperties()`](defineproperties)
--   [`Object.prototype.isPrototypeOf()`](isprototypeof)
--   [`Reflect.construct()`](../reflect/construct)
--   John Resig's post on [getPrototypeOf()](http://ejohn.org/blog/objectgetprototypeof/)
+- [`Object.defineProperty()`](defineproperty)
+- [`Object.defineProperties()`](defineproperties)
+- [`Object.prototype.isPrototypeOf()`](isprototypeof)
+- [`Reflect.construct()`](../reflect/construct)
+- John Resig's post on [getPrototypeOf()](http://ejohn.org/blog/objectgetprototypeof/)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -20771,9 +20771,9 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 
 ## See also
 
--   [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
--   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
--   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
+- [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
+- [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
+- [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -20833,8 +20833,8 @@ The snippet below illustrates how to find and filter (thus causing data loss) a 
 
 ## See also
 
--   [`JSON.stringify`](../global_objects/json/stringify)
--   [cycle.js](https://github.com/douglascrockford/JSON-js/blob/master/cycle.js) - Introduces two functions, `JSON.decycle` and `JSON.retrocycle`, which makes it possible to encode and decode cyclical structures and dags into an extended and retrocompatible JSON format.
+- [`JSON.stringify`](../global_objects/json/stringify)
+- [cycle.js](https://github.com/douglascrockford/JSON-js/blob/master/cycle.js) - Introduces two functions, `JSON.decycle` and `JSON.retrocycle`, which makes it possible to encode and decode cyclical structures and dags into an extended and retrocompatible JSON format.
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Cyclic_object_value" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Cyclic_object_value</a>
 
@@ -21633,9 +21633,9 @@ No
 
 ## See also
 
--   [jDataView](https://github.com/jDataView/jDataView): JavaScript library that polyfills and extends the `DataView` API to all browsers and Node.js.
--   [`ArrayBuffer`](arraybuffer)
--   [`SharedArrayBuffer`](sharedarraybuffer)
+- [jDataView](https://github.com/jDataView/jDataView): JavaScript library that polyfills and extends the `DataView` API to all browsers and Node.js.
+- [`ArrayBuffer`](arraybuffer)
+- [`SharedArrayBuffer`](sharedarraybuffer)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView</a>
 
@@ -23291,7 +23291,7 @@ No
 
 ## See also
 
--   [`Date()`](date/date) constructor
+- [`Date()`](date/date) constructor
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date</a>
 
@@ -23325,20 +23325,20 @@ An object with some or all of the following properties:
 `dateStyle`  
 The date formatting style to use when calling `format()`. Possible values include:
 
--   "`full`"
--   "`long`"
--   "`medium`"
--   "`short`"
+- "`full`"
+- "`long`"
+- "`medium`"
+- "`short`"
 
 **Note:** `dateStyle` can be used with `timeStyle`, but not with other options (e.g. `weekday`, `hour`, `month`, etc.).
 
 `timeStyle`  
 The time formatting style to use when calling `format()`. Possible values include:
 
--   "`full`"
--   "`long`"
--   "`medium`"
--   "`short`"
+- "`full`"
+- "`long`"
+- "`medium`"
+- "`short`"
 
 **Note:** `timeStyle` can be used with `dateStyle`, but not with other options (e.g. `weekday`, `hour`, `month`, etc.).
 
@@ -23368,50 +23368,50 @@ The format matching algorithm to use. Possible values are "`basic`" and "`best f
 
 The following properties describe the date-time components to use in formatted output, and their desired representations. Implementations are required to support at least the following subsets:
 
--   `weekday`, `year`, `month`, `day`, `hour`, `minute`, `second`
--   `weekday`, `year`, `month`, `day`
--   `year`, `month`, `day`
--   `year`, `month`
--   `month`, `day`
--   `hour`, `minute`, `second`
--   `hour`, `minute`
+- `weekday`, `year`, `month`, `day`, `hour`, `minute`, `second`
+- `weekday`, `year`, `month`, `day`
+- `year`, `month`, `day`
+- `year`, `month`
+- `month`, `day`
+- `hour`, `minute`, `second`
+- `hour`, `minute`
 
 Implementations may support other subsets, and requests will be negotiated against all available subset-representation combinations to find the best match. Two algorithms are available for this negotiation and selected by the `formatMatcher` property: A [fully specified "`basic`" algorithm](https://www.ecma-international.org/ecma-402/1.0/#BasicFormatMatcher) and an implementation-dependent "`best fit`" algorithm.
 
 `weekday`  
 The representation of the weekday. Possible values are:
 
--   "`long`" (e.g., `Thursday`)
--   "`short`" (e.g., `Thu`)
--   "`narrow`" (e.g., `T`). Two weekdays may have the same narrow style for some locales (e.g. `Tuesday`'s narrow style is also `T`).
+- "`long`" (e.g., `Thursday`)
+- "`short`" (e.g., `Thu`)
+- "`narrow`" (e.g., `T`). Two weekdays may have the same narrow style for some locales (e.g. `Tuesday`'s narrow style is also `T`).
 
 `era`  
 The representation of the era. Possible values are:
 
--   "`long`" (e.g., `Anno Domini`)
--   "`short`" (e.g., `AD`)
--   "`narrow`" (e.g., `A`)
+- "`long`" (e.g., `Anno Domini`)
+- "`short`" (e.g., `AD`)
+- "`narrow`" (e.g., `A`)
 
 `year`  
 The representation of the year. Possible values are:
 
--   "`numeric`" (e.g., `2012`)
--   "`2-digit`" (e.g., `12`)
+- "`numeric`" (e.g., `2012`)
+- "`2-digit`" (e.g., `12`)
 
 `month`  
 The representation of the month. Possible values are:
 
--   "`numeric`" (e.g., `2`)
--   "`2-digit`" (e.g., `02`)
--   "`long`" (e.g., `March`)
--   "`short`" (e.g., `Mar`)
--   "`narrow`" (e.g., `M`). Two months may have the same narrow style for some locales (e.g. `May`'s narrow style is also `M`).
+- "`numeric`" (e.g., `2`)
+- "`2-digit`" (e.g., `02`)
+- "`long`" (e.g., `March`)
+- "`short`" (e.g., `Mar`)
+- "`narrow`" (e.g., `M`). Two months may have the same narrow style for some locales (e.g. `May`'s narrow style is also `M`).
 
 `day`  
 The representation of the day. Possible values are:
 
--   "`numeric`" (e.g., `1`)
--   "`2-digit`" (e.g., `01`)
+- "`numeric`" (e.g., `1`)
+- "`2-digit`" (e.g., `01`)
 
 `hour`  
 The representation of the hour. Possible values are "`numeric`", "`2-digit`".
@@ -23425,16 +23425,16 @@ The representation of the second. Possible values are "`numeric`", "`2-digit`".
 `fractionalSecondDigits`  
 The number of digits used to represent fractions of a second (any additional digits are truncated). Possible values are:
 
--   `0` (Fractional part dropped.)
--   `1` (Fractional part represented as 1 digit. For example, 736 is formatted as `7`.)
--   `2` (Fractional part represented as 2 digits. For example, 736 is formatted as `73`.)
--   `3` (Fractional part represented as 3 digits. For example, 736 is formatted as `736`.)
+- `0` (Fractional part dropped.)
+- `1` (Fractional part represented as 1 digit. For example, 736 is formatted as `7`.)
+- `2` (Fractional part represented as 2 digits. For example, 736 is formatted as `73`.)
+- `3` (Fractional part represented as 3 digits. For example, 736 is formatted as `736`.)
 
 `timeZoneName`  
 The representation of the time zone name. Possible values are:
 
--   "`long`" (e.g., `British Summer Time`)
--   "`short`" (e.g., `GMT+1`)
+- "`long`" (e.g., `British Summer Time`)
+- "`short`" (e.g., `GMT+1`)
 
 The default value for each date-time component property is [`undefined`](../../undefined), but if all component properties are [`undefined`](../../undefined), then `year`, `month`, and `day` are assumed to be "`numeric`".
 
@@ -23634,8 +23634,8 @@ No
 
 ## See also
 
--   [`Intl.DateTimeFormat`](../datetimeformat)
--   [`Intl`](../../intl)
+- [`Intl.DateTimeFormat`](../datetimeformat)
+- [`Intl`](../../intl)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat</a>
 
@@ -23676,10 +23676,10 @@ Unprivileged code has no access to Component.utils and might just be able catch 
 
 ## See also
 
--   [What does "can't access dead object” mean?](https://blog.mozilla.org/addons/2012/09/12/what-does-cant-access-dead-object-mean/)
--   [Common causes of memory leaks in extensions](https://developer.mozilla.org/en-US/docs/Extensions/Common_causes_of_memory_leaks_in_extensions)
--   [Components.utils](https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XPCOM/Language_Bindings/Components.utils)
--   [Zombie Compartments](https://developer.mozilla.org/en-US/docs/Mozilla/Zombie_compartments)
+- [What does "can't access dead object” mean?](https://blog.mozilla.org/addons/2012/09/12/what-does-cant-access-dead-object-mean/)
+- [Common causes of memory leaks in extensions](https://developer.mozilla.org/en-US/docs/Extensions/Common_causes_of_memory_leaks_in_extensions)
+- [Components.utils](https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XPCOM/Language_Bindings/Components.utils)
+- [Zombie Compartments](https://developer.mozilla.org/en-US/docs/Mozilla/Zombie_compartments)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Dead_object" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Dead_object</a>
 
@@ -23741,8 +23741,8 @@ When the debugger is invoked, execution is paused at the `debugger` statement. I
 
 ## See also
 
--   [Debugging JavaScript](https://developer.mozilla.org/en-US/docs/Mozilla/Debugging/Debugging_JavaScript)
--   [The Debugger in the Firefox Developer Tools](https://developer.mozilla.org/en-US/docs/Tools/Debugger)
+- [Debugging JavaScript](https://developer.mozilla.org/en-US/docs/Mozilla/Debugging/Debugging_JavaScript)
+- [The Debugger in the Firefox Developer Tools](https://developer.mozilla.org/en-US/docs/Tools/Debugger)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -23825,9 +23825,9 @@ Replaces each escape sequence in the encoded URI with the character that it repr
 
 ## See also
 
--   [`decodeURIComponent()`](decodeuricomponent)
--   [`encodeURI()`](encodeuri)
--   [`encodeURIComponent()`](encodeuricomponent)
+- [`decodeURIComponent()`](decodeuricomponent)
+- [`encodeURI()`](encodeuri)
+- [`encodeURIComponent()`](encodeuricomponent)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURI" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURI</a>
 
@@ -23919,9 +23919,9 @@ decodeURIComponent cannot be used directly to parse query parameters from a URL.
 
 ## See also
 
--   [`decodeURI`](decodeuri)
--   [`encodeURI`](encodeuri)
--   [`encodeURIComponent`](encodeuricomponent)
+- [`decodeURI`](decodeuri)
+- [`encodeURI`](encodeuri)
+- [`encodeURIComponent`](encodeuricomponent)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent</a>
 
@@ -23992,15 +23992,15 @@ If used prefix, with operator before operand (for example, `--x`), the decrement
 
 ## See also
 
--   [Addition operator](addition)
--   [Subtraction operator](subtraction)
--   [Division operator](division)
--   [Multiplication operator](multiplication)
--   [Remainder operator](remainder)
--   [Exponentiation operator](exponentiation)
--   [Increment operator](increment)
--   [Unary negation operator](unary_negation)
--   [Unary plus operator](unary_plus)
+- [Addition operator](addition)
+- [Subtraction operator](subtraction)
+- [Division operator](division)
+- [Multiplication operator](multiplication)
+- [Remainder operator](remainder)
+- [Exponentiation operator](exponentiation)
+- [Increment operator](increment)
+- [Unary negation operator](unary_negation)
+- [Unary plus operator](unary_plus)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -24271,7 +24271,7 @@ No
 
 ## See also
 
--   [Original proposal at ecmascript.org](http://wiki.ecmascript.org/doku.php?id=harmony:parameter_default_values)
+- [Original proposal at ecmascript.org](http://wiki.ecmascript.org/doku.php?id=harmony:parameter_default_values)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters</a>
 
@@ -24444,9 +24444,9 @@ Assuming a pristine execution environment with all names and properties referrin
 
 ## See also
 
--   [`Object.defineProperty()`](defineproperty)
--   [`Object.keys()`](keys)
--   [Enumerability and ownership of properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
+- [`Object.defineProperty()`](defineproperty)
+- [`Object.keys()`](keys)
+- [Enumerability and ownership of properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -24912,9 +24912,9 @@ Only Internet Explorer 9 and later, and Firefox 23 and later, appear to fully an
 
 Internet Explorer 8 implemented a `Object.defineProperty()` method that could [only be used on DOM objects](https://msdn.microsoft.com/en-us/library/dd229916%28VS.85%29.aspx). A few things need to be noted:
 
--   Trying to use `Object.defineProperty()` on native objects throws an error.
--   Property attributes must be set to some values. The `configurable`, `enumerable` and `writable` attributes should all be set to `true` for data descriptor and `true` for `configurable`, `false` for `enumerable` for accessor descriptor.(?) Any attempt to provide other value(?) will result in an error being thrown.
--   Reconfiguring a property requires first deleting the property. If the property isn't deleted, it stays as it was before the reconfiguration attempt.
+- Trying to use `Object.defineProperty()` on native objects throws an error.
+- Property attributes must be set to some values. The `configurable`, `enumerable` and `writable` attributes should all be set to `true` for data descriptor and `true` for `configurable`, `false` for `enumerable` for accessor descriptor.(?) Any attempt to provide other value(?) will result in an error being thrown.
+- Reconfiguring a property requires first deleting the property. If the property isn't deleted, it stays as it was before the reconfiguration attempt.
 
 ### Chrome 37 (and below) specific notes
 
@@ -24922,16 +24922,16 @@ Chrome 37 (and below) has a [bug](https://bugs.chromium.org/p/v8/issues/detail?i
 
 ## See also
 
--   [Enumerability and ownership of properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
--   [`Object.defineProperties()`](defineproperties)
--   [`Object.propertyIsEnumerable()`](propertyisenumerable)
--   [`Object.getOwnPropertyDescriptor()`](getownpropertydescriptor)
--   <span class="page-not-created">`Object.prototype.watch()`</span>
--   <span class="page-not-created">`Object.prototype.unwatch()`</span>
--   [`get`](../../functions/get)
--   [`set`](../../functions/set)
--   [`Object.create()`](create)
--   [`Reflect.defineProperty()`](../reflect/defineproperty)
+- [Enumerability and ownership of properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
+- [`Object.defineProperties()`](defineproperties)
+- [`Object.propertyIsEnumerable()`](propertyisenumerable)
+- [`Object.getOwnPropertyDescriptor()`](getownpropertydescriptor)
+- <span class="page-not-created">`Object.prototype.watch()`</span>
+- <span class="page-not-created">`Object.prototype.unwatch()`</span>
+- [`get`](../../functions/get)
+- [`set`](../../functions/set)
+- [`Object.create()`](create)
+- [`Reflect.defineProperty()`](../reflect/defineproperty)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -24974,13 +24974,13 @@ The `delete` operator removes a given property from an object. On successful del
 
 However, it is important to consider the following scenarios:
 
--   If the property which you are trying to delete does not exist, `delete` will not have any effect and will return `true`.
--   If a property with the same name exists on the object's prototype chain, then, after deletion, the object will use the property from the prototype chain (in other words, `delete` only has an effect on own properties).
--   Any property declared with [`var`](../statements/var) cannot be deleted from the global scope or from a function's scope.
-    -   As such, `delete` cannot delete any functions in the global scope (whether this is part from a function definition or a function expression).
-    -   Functions which are part of an object (apart from the global scope) can be deleted with `delete`.
--   Any property declared with [`let`](../statements/let) or [`const`](../statements/const) cannot be deleted from the scope within which they were defined.
--   Non-configurable properties cannot be removed. This includes properties of built-in objects like [`Math`](../global_objects/math), [`Array`](../global_objects/array), [`Object`](../global_objects/object) and properties that are created as non-configurable with methods like [`Object.defineProperty()`](../global_objects/object/defineproperty).
+- If the property which you are trying to delete does not exist, `delete` will not have any effect and will return `true`.
+- If a property with the same name exists on the object's prototype chain, then, after deletion, the object will use the property from the prototype chain (in other words, `delete` only has an effect on own properties).
+- Any property declared with [`var`](../statements/var) cannot be deleted from the global scope or from a function's scope.
+    - As such, `delete` cannot delete any functions in the global scope (whether this is part from a function definition or a function expression).
+    - Functions which are part of an object (apart from the global scope) can be deleted with `delete`.
+- Any property declared with [`let`](../statements/let) or [`const`](../statements/const) cannot be deleted from the scope within which they were defined.
+- Non-configurable properties cannot be removed. This includes properties of built-in objects like [`Math`](../global_objects/math), [`Array`](../global_objects/array), [`Object`](../global_objects/object) and properties that are created as non-configurable with methods like [`Object.defineProperty()`](../global_objects/object/defineproperty).
 
 The following snippet gives a simple example:
 
@@ -25189,9 +25189,9 @@ If instead, you want to remove an array element by changing the contents of the 
 
 ## See also
 
--   [In depth analysis on delete](http://perfectionkills.com/understanding-delete/)
--   [`Reflect.deleteProperty()`](../global_objects/reflect/deleteproperty)
--   [`Map.prototype.delete()`](../global_objects/map/delete)
+- [In depth analysis on delete](http://perfectionkills.com/understanding-delete/)
+- [`Reflect.deleteProperty()`](../global_objects/reflect/deleteproperty)
+- [`Map.prototype.delete()`](../global_objects/map/delete)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -25252,9 +25252,9 @@ To free the contents of a variable, you can set it to [`null`](../global_objects
 
 ## See also
 
--   `delete`
--   [Memory management](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management)
--   [TypeError: property "x" is non-configurable and can't be deleted](cant_delete)
+- `delete`
+- [Memory management](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management)
+- [TypeError: property "x" is non-configurable and can't be deleted](cant_delete)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Delete_in_strict_mode" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Delete_in_strict_mode</a>
 
@@ -25291,14 +25291,14 @@ The `handler.deleteProperty()` method is a trap for the [`delete`](../../../oper
 
 This trap can intercept these operations:
 
--   Property deletion: `delete proxy[foo]` and `delete proxy.foo`
--   [`Reflect.deleteProperty()`](../../reflect/deleteproperty)
+- Property deletion: `delete proxy[foo]` and `delete proxy.foo`
+- [`Reflect.deleteProperty()`](../../reflect/deleteproperty)
 
 ### Invariants
 
 If the following invariants are violated, the proxy will throw a [`TypeError`](../../typeerror):
 
--   A property cannot be deleted, if it exists as a non-configurable own property of the target object.
+- A property cannot be deleted, if it exists as a non-configurable own property of the target object.
 
 ## Examples
 
@@ -25367,10 +25367,10 @@ No
 
 ## See also
 
--   [`Proxy`](../../proxy)
--   [`handler`](../proxy)
--   [`delete`](../../../operators/delete) operator
--   [`Reflect.deleteProperty()`](../../reflect/deleteproperty)
+- [`Proxy`](../../proxy)
+- [`handler`](../proxy)
+- [`delete`](../../../operators/delete) operator
+- [`Reflect.deleteProperty()`](../../reflect/deleteproperty)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -25436,10 +25436,10 @@ In [strict mode](../strict_mode), the [`Function.caller`](../global_objects/func
 
 ## See also
 
--   [Deprecated and obsolete features](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Deprecated_and_obsolete_features)
--   [Strict mode](../strict_mode)
--   [`Function.arguments`](../global_objects/function/arguments)
--   [`Function.caller`](../global_objects/function/caller) and `arguments.callee.caller`
+- [Deprecated and obsolete features](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Deprecated_and_obsolete_features)
+- [Strict mode](../strict_mode)
+- [`Function.arguments`](../global_objects/function/arguments)
+- [`Function.caller`](../global_objects/function/caller) and `arguments.callee.caller`
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Deprecated_caller_or_arguments_usage" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Deprecated_caller_or_arguments_usage</a>
 
@@ -25505,9 +25505,9 @@ With ES2015 [method definitions](../functions/method_definitions), this can be c
 
 ## See also
 
--   [Expression closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Expression_closures)
--   [Arrow functions](../functions/arrow_functions)
--   [Method definitions](../functions/method_definitions)
+- [Expression closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Expression_closures)
+- [Arrow functions](../functions/arrow_functions)
+- [Method definitions](../functions/method_definitions)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Deprecated_expression_closures" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Deprecated_expression_closures</a>
 
@@ -25562,8 +25562,8 @@ For octal escape sequences, you can use hexadecimal escape sequences instead:
 
 ## See also
 
--   [Lexical grammar](../lexical_grammar#octal)
--   [Warning: 08/09 is not a legal ECMA-262 octal constant](bad_octal)
+- [Lexical grammar](../lexical_grammar#octal)
+- [Warning: 08/09 is not a legal ECMA-262 octal constant](bad_octal)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Deprecated_octal" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Deprecated_octal</a>
 
@@ -25609,9 +25609,9 @@ Or, alternatively, you can set a [`SourceMap`](https://developer.mozilla.org/en-
 
 ## See also
 
--   [How to use a source map - Firefox Tools documentation](https://developer.mozilla.org/en-US/docs/Tools/Debugger/How_to/Use_a_source_map)
--   [Introduction to source maps - HTML5 rocks](https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/)
--   [`SourceMap`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/SourceMap)
+- [How to use a source map - Firefox Tools documentation](https://developer.mozilla.org/en-US/docs/Tools/Debugger/How_to/Use_a_source_map)
+- [Introduction to source maps - HTML5 rocks](https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/)
+- [`SourceMap`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/SourceMap)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Deprecated_source_map_pragma" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Deprecated_source_map_pragma</a>
 
@@ -25705,7 +25705,7 @@ The following is a shim to provide support to non-supporting browsers:
 
 ## See also
 
--   [`String`](../global_objects/string)
+- [`String`](../global_objects/string)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Deprecated_String_generics" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Deprecated_String_generics</a>
 
@@ -25784,9 +25784,9 @@ Can be converted to:
 
 ## See also
 
--   <span class="page-not-created">`Date.prototype.toLocaleFormat`</span>
--   [`Date.prototype.toLocaleDateString`](../global_objects/date/tolocaledatestring)
--   [`Intl.DateTimeFormat`](../global_objects/intl/datetimeformat)
+- <span class="page-not-created">`Date.prototype.toLocaleFormat`</span>
+- [`Date.prototype.toLocaleDateString`](../global_objects/date/tolocaledatestring)
+- [`Intl.DateTimeFormat`](../global_objects/intl/datetimeformat)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Deprecated_toLocaleFormat" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Deprecated_toLocaleFormat</a>
 
@@ -25858,8 +25858,8 @@ No support for an undefined description.
 
 ## See also
 
--   [`Symbol.prototype.toString()`](tostring)
--   Polyfill: <https://npmjs.com/symbol.prototype.description>
+- [`Symbol.prototype.toString()`](tostring)
+- Polyfill: <https://npmjs.com/symbol.prototype.description>
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -26087,8 +26087,8 @@ A variable can be assigned a default, in the case that the value unpacked from t
 
 A property can be both
 
--   Unpacked from an object and assigned to a variable with a different name.
--   Assigned a default value in case the unpacked value is `undefined`.
+- Unpacked from an object and assigned to a variable with a different name.
+- Assigned a default value in case the unpacked value is `undefined`.
 
 <!-- -->
 
@@ -26363,8 +26363,8 @@ No
 
 ## See also
 
--   [Assignment operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Assignment_operators)
--   ["ES6 in Depth: Destructuring" on hacks.mozilla.org](https://hacks.mozilla.org/2015/05/es6-in-depth-destructuring/)
+- [Assignment operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Assignment_operators)
+- ["ES6 in Depth: Destructuring" on hacks.mozilla.org](https://hacks.mozilla.org/2015/05/es6-in-depth-destructuring/)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -26466,7 +26466,7 @@ No
 
 ## See also
 
--   [`Function.name`](name)
+- [`Function.name`](name)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/displayName" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/displayName</a>
 
@@ -26708,7 +26708,7 @@ No
 
 ## See also
 
--   [`Intl`](../intl)
+- [`Intl`](../intl)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DisplayNames" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DisplayNames</a>
 
@@ -26773,15 +26773,15 @@ The division operator (`/`) produces the quotient of its operands where the left
 
 ## See also
 
--   [Addition operator](addition)
--   [Subtraction operator](subtraction)
--   [Multiplication operator](multiplication)
--   [Remainder operator](remainder)
--   [Exponentiation operator](exponentiation)
--   [Increment operator](increment)
--   [Decrement operator](decrement)
--   [Unary negation operator](unary_negation)
--   [Unary plus operator](unary_plus)
+- [Addition operator](addition)
+- [Subtraction operator](subtraction)
+- [Multiplication operator](multiplication)
+- [Remainder operator](remainder)
+- [Exponentiation operator](exponentiation)
+- [Increment operator](increment)
+- [Decrement operator](decrement)
+- [Unary negation operator](unary_negation)
+- [Unary plus operator](unary_plus)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -26855,8 +26855,8 @@ In the following example, the `do...while` loop iterates at least once and reite
 
 ## See also
 
--   [`while`](while)
--   [`for`](for)
+- [`while`](while)
+- [`for`](for)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -26884,10 +26884,10 @@ yes
 
 The value of `dotAll` is a [`Boolean`](../boolean) and `true` if the "`s`" flag was used; otherwise, `false`. The "`s`" flag indicates that the dot special character ("`.`") should additionally match the following line terminator ("newline") characters in a string, which it would not match otherwise:
 
--   U+000A LINE FEED (LF) ("`\n`")
--   U+000D CARRIAGE RETURN (CR) ("`\r`")
--   U+2028 LINE SEPARATOR
--   U+2029 PARAGRAPH SEPARATOR
+- U+000A LINE FEED (LF) ("`\n`")
+- U+000D CARRIAGE RETURN (CR) ("`\r`")
+- U+2028 LINE SEPARATOR
+- U+2029 PARAGRAPH SEPARATOR
 
 This effectively means the dot will match any character on the Unicode Basic Multilingual Plane (BMP). To allow it to match astral characters, the "`u`" (unicode) flag should be used. Using both flags in conjunction allows the dot to match any Unicode character, without exceptions.
 
@@ -26949,14 +26949,14 @@ No
 
 ## See also
 
--   [`RegExp.lastIndex`](lastindex)
--   [`RegExp.prototype.global`](global)
--   [`RegExp.prototype.hasIndices`](hasindices)
--   [`RegExp.prototype.ignoreCase`](ignorecase)
--   [`RegExp.prototype.multiline`](multiline)
--   [`RegExp.prototype.source`](source)
--   [`RegExp.prototype.sticky`](sticky)
--   [`RegExp.prototype.unicode`](unicode)
+- [`RegExp.lastIndex`](lastindex)
+- [`RegExp.prototype.global`](global)
+- [`RegExp.prototype.hasIndices`](hasindices)
+- [`RegExp.prototype.ignoreCase`](ignorecase)
+- [`RegExp.prototype.multiline`](multiline)
+- [`RegExp.prototype.source`](source)
+- [`RegExp.prototype.sticky`](sticky)
+- [`RegExp.prototype.unicode`](unicode)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -27033,9 +27033,9 @@ The following function returns e:
 
 ## See also
 
--   [`Math.exp()`](exp)
--   [`Math.log()`](log)
--   [`Math.log1p()`](log1p)
+- [`Math.exp()`](exp)
+- [`Math.log()`](log)
+- [`Math.log1p()`](log1p)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -27128,7 +27128,7 @@ If `three` is `true`, nothing will happen, `four` does not matter, and also the 
 
 ## See also
 
--   [`Block statement`](block)
+- [`Block statement`](block)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -27241,9 +27241,9 @@ If one wishes to follow the more recent [RFC3986](https://datatracker.ietf.org/d
 
 ## See also
 
--   [`decodeURI()`](decodeuri)
--   [`encodeURIComponent()`](encodeuricomponent)
--   [`decodeURIComponent()`](decodeuricomponent)
+- [`decodeURI()`](decodeuri)
+- [`encodeURIComponent()`](encodeuricomponent)
+- [`decodeURIComponent()`](decodeuricomponent)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURI" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURI</a>
 
@@ -27385,9 +27385,9 @@ The following example provides the special encoding required within UTF-8 [`Cont
 
 ## See also
 
--   [`decodeURI`](decodeuri)
--   [`encodeURI`](encodeuri)
--   [`decodeURIComponent`](decodeuricomponent)
+- [`decodeURI`](decodeuri)
+- [`encodeURI`](encodeuri)
+- [`decodeURIComponent`](decodeuricomponent)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent</a>
 
@@ -27474,10 +27474,10 @@ No
 
 ## See also
 
--   [`String.prototype.startsWith()`](startswith)
--   [`String.prototype.includes()`](includes)
--   [`String.prototype.indexOf()`](indexof)
--   [`String.prototype.lastIndexOf()`](lastindexof)
+- [`String.prototype.startsWith()`](startswith)
+- [`String.prototype.includes()`](includes)
+- [`String.prototype.indexOf()`](indexof)
+- [`String.prototype.lastIndexOf()`](lastindexof)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -27510,9 +27510,9 @@ An array of the given object's own enumerable string-keyed property `[key, value
 
 To add compatible `Object.entries()` support in older environments that do not natively support it, you can use any of the following:
 
--   a demonstration implementation of `Object.entries` in the [tc39/proposal-object-values-entries](https://github.com/tc39/proposal-object-values-entries) (if you don't need any support for IE);
--   a polyfill in the [es-shims/Object.entries](https://github.com/es-shims/Object.entries) repositories;
--   or, you can use the simple, ready-to-deploy polyfill listed below:
+- a demonstration implementation of `Object.entries` in the [tc39/proposal-object-values-entries](https://github.com/tc39/proposal-object-values-entries) (if you don't need any support for IE);
+- a polyfill in the [es-shims/Object.entries](https://github.com/es-shims/Object.entries) repositories;
+- or, you can use the simple, ready-to-deploy polyfill listed below:
 
 <!-- -->
 
@@ -27615,16 +27615,16 @@ No
 
 ## See also
 
--   [Enumerability and ownership of properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
--   [`Object.keys()`](keys)
--   [`Object.values()`](values)
--   [`Object.prototype.propertyIsEnumerable()`](propertyisenumerable)
--   [`Object.create()`](create)
--   [`Object.fromEntries()`](fromentries)
--   [`Object.getOwnPropertyNames()`](getownpropertynames)
--   [`Map.prototype.entries()`](../map/entries)
--   [`Map.prototype.keys()`](../map/keys)
--   [`Map.prototype.values()`](../map/values)
+- [Enumerability and ownership of properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
+- [`Object.keys()`](keys)
+- [`Object.values()`](values)
+- [`Object.prototype.propertyIsEnumerable()`](propertyisenumerable)
+- [`Object.create()`](create)
+- [`Object.fromEntries()`](fromentries)
+- [`Object.getOwnPropertyNames()`](getownpropertynames)
+- [`Map.prototype.entries()`](../map/entries)
+- [`Map.prototype.keys()`](../map/keys)
+- [`Map.prototype.values()`](../map/values)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -27704,7 +27704,7 @@ No
 
 ## See also
 
--   The [`Number`](../number) object it belongs to
+- The [`Number`](../number) object it belongs to
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -27750,8 +27750,8 @@ Otherwise, you probably meant to use a comparison operator (e.g. `==` or `===`):
 
 ## See also
 
--   `if...else`
--   [Comparison operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators)
+- `if...else`
+- [Comparison operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Equal_as_assign" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Equal_as_assign</a>
 
@@ -27767,16 +27767,16 @@ The equality operator (`==`) checks whether its two operands are equal, returnin
 
 The equality operators (`==` and `!=`) use the [Abstract Equality Comparison Algorithm](https://www.ecma-international.org/ecma-262/5.1/#sec-11.9.3) to compare two operands. This can be roughly summarised as follows:
 
--   If the operands are both objects, return `true` only if both operands reference the same object.
--   If one operand is `null` and the other is `undefined`, return `true`.
--   If the operands are of different types, try to convert them to the same type before comparing:
-    -   When comparing a number to a string, try to convert the string to a numeric value.
-    -   If one of the operands is `Boolean`, convert the Boolean operand to 1 if it is `true` and +0 if it is `false`.
-    -   If one of the operands is an object and the other is a number or a string, try to convert the object to a primitive using the object's `valueOf()` and `toString()` methods.
--   If the operands have the same type, they are compared as follows:
-    -   `String`: return `true` only if both operands have the same characters in the same order.
-    -   `Number`: return `true` only if both operands have the same value. `+0` and `-0` are treated as the same value. If either operand is `NaN`, return `false`.
-    -   `Boolean`: return `true` only if operands are both `true` or both `false`.
+- If the operands are both objects, return `true` only if both operands reference the same object.
+- If one operand is `null` and the other is `undefined`, return `true`.
+- If the operands are of different types, try to convert them to the same type before comparing:
+    - When comparing a number to a string, try to convert the string to a numeric value.
+    - If one of the operands is `Boolean`, convert the Boolean operand to 1 if it is `true` and +0 if it is `false`.
+    - If one of the operands is an object and the other is a number or a string, try to convert the object to a primitive using the object's `valueOf()` and `toString()` methods.
+- If the operands have the same type, they are compared as follows:
+    - `String`: return `true` only if both operands have the same characters in the same order.
+    - `Number`: return `true` only if both operands have the same value. `+0` and `-0` are treated as the same value. If either operand is `NaN`, return `false`.
+    - `Boolean`: return `true` only if operands are both `true` or both `false`.
 
 The most notable difference between this operator and the [strict equality](strict_equality) (`===`) operator is that the strict equality operator does not attempt type conversion. Instead, the strict equality operator always considers operands of different types to be different.
 
@@ -27867,9 +27867,9 @@ Note that strings constructed using `new String()` are objects. If you compare o
 
 ## See also
 
--   [Inequality operator](inequality)
--   [Strict equality operator](strict_equality)
--   [Strict inequality operator](strict_inequality)
+- [Inequality operator](inequality)
+- [Strict equality operator](strict_equality)
+- [Strict inequality operator](strict_inequality)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -28326,8 +28326,8 @@ No
 
 ## See also
 
--   [`throw`](../statements/throw)
--   [`try...catch`](../statements/try...catch)
+- [`throw`](../statements/throw)
+- [`try...catch`](../statements/try...catch)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error</a>
 
@@ -28343,84 +28343,84 @@ For a beginner's introductory tutorial on fixing JavaScript errors, see [What we
 
 In this list, each page is listed by name (the type of error) and message (a more detailed human-readable error message). Together, these two properties provide a starting point toward understanding and resolving the error. For more information, follow the links below!
 
--   [Error: Permission denied to access property "x"](errors/property_access_denied)
--   [InternalError: too much recursion](errors/too_much_recursion)
--   [RangeError: argument is not a valid code point](errors/not_a_codepoint)
--   [RangeError: invalid array length](errors/invalid_array_length)
--   [RangeError: invalid date](errors/invalid_date)
--   [RangeError: precision is out of range](errors/precision_range)
--   [RangeError: radix must be an integer](errors/bad_radix)
--   [RangeError: repeat count must be less than infinity](errors/resulting_string_too_large)
--   [RangeError: repeat count must be non-negative](errors/negative_repetition_count)
--   [ReferenceError: "x" is not defined](errors/not_defined)
--   [ReferenceError: assignment to undeclared variable "x"](errors/undeclared_var)
--   [ReferenceError: can't access lexical declaration\`X' before initialization](errors/cant_access_lexical_declaration_before_init)
--   [ReferenceError: deprecated caller or arguments usage](errors/deprecated_caller_or_arguments_usage)
--   [ReferenceError: invalid assignment left-hand side](errors/invalid_assignment_left-hand_side)
--   [ReferenceError: reference to undefined property "x"](errors/undefined_prop)
--   [SyntaxError: "0"-prefixed octal literals and octal escape seq. are deprecated](errors/deprecated_octal)
--   [SyntaxError: "use strict" not allowed in function with non-simple parameters](errors/strict_non_simple_params)
--   [SyntaxError: "x" is a reserved identifier](errors/reserved_identifier)
--   [SyntaxError: JSON.parse: bad parsing](errors/json_bad_parse)
--   [SyntaxError: Malformed formal parameter](errors/malformed_formal_parameter)
--   [SyntaxError: Unexpected '\#' used outside of class body](errors/hash_outside_class)
--   [SyntaxError: Unexpected token](errors/unexpected_token)
--   [SyntaxError: Using //@ to indicate sourceURL pragmas is deprecated. Use //\# instead](errors/deprecated_source_map_pragma)
--   [SyntaxError: a declaration in the head of a for-of loop can't have an initializer](errors/invalid_for-of_initializer)
--   [SyntaxError: applying the 'delete' operator to an unqualified name is deprecated](errors/delete_in_strict_mode)
--   [SyntaxError: for-in loop head declarations may not have initializers](errors/invalid_for-in_initializer)
--   [SyntaxError: function statement requires a name](errors/unnamed_function_statement)
--   [SyntaxError: identifier starts immediately after numeric literal](errors/identifier_after_number)
--   [SyntaxError: illegal character](errors/illegal_character)
--   [SyntaxError: invalid regular expression flag "x"](errors/bad_regexp_flag)
--   [SyntaxError: missing ) after argument list](errors/missing_parenthesis_after_argument_list)
--   [SyntaxError: missing ) after condition](errors/missing_parenthesis_after_condition)
--   [SyntaxError: missing : after property id](errors/missing_colon_after_property_id)
--   [SyntaxError: missing ; before statement](errors/missing_semicolon_before_statement)
--   [SyntaxError: missing = in const declaration](errors/missing_initializer_in_const)
--   [SyntaxError: missing \] after element list](errors/missing_bracket_after_list)
--   [SyntaxError: missing formal parameter](errors/missing_formal_parameter)
--   [SyntaxError: missing name after . operator](errors/missing_name_after_dot_operator)
--   [SyntaxError: missing variable name](errors/no_variable_name)
--   [SyntaxError: missing } after function body](errors/missing_curly_after_function_body)
--   [SyntaxError: missing } after property list](errors/missing_curly_after_property_list)
--   [SyntaxError: redeclaration of formal parameter "x"](errors/redeclared_parameter)
--   [SyntaxError: return not in function](errors/bad_return_or_yield)
--   [SyntaxError: test for equality (==) mistyped as assignment (=)?](errors/equal_as_assign)
--   [SyntaxError: unterminated string literal](errors/unterminated_string_literal)
--   [TypeError: "x" has no properties](errors/no_properties)
--   [TypeError: "x" is (not) "y"](errors/unexpected_type)
--   [TypeError: "x" is not a constructor](errors/not_a_constructor)
--   [TypeError: "x" is not a function](errors/not_a_function)
--   [TypeError: "x" is not a non-null object](errors/no_non-null_object)
--   [TypeError: "x" is read-only](errors/read-only)
--   [TypeError: 'x' is not iterable](errors/is_not_iterable)
--   [TypeError: More arguments needed](errors/more_arguments_needed)
--   [TypeError: Reduce of empty array with no initial value](errors/reduce_of_empty_array_with_no_initial_value)
--   [TypeError: X.prototype.y called on incompatible type](errors/called_on_incompatible_type)
--   [TypeError: can't access dead object](errors/dead_object)
--   [TypeError: can't access property "x" of "y"](errors/cant_access_property)
--   [TypeError: can't assign to property "x" on "y": not an object](errors/cant_assign_to_property)
--   [TypeError: can't define property "x": "obj" is not extensible](errors/cant_define_property_object_not_extensible)
--   [TypeError: can't delete non-configurable array element](errors/non_configurable_array_element)
--   [TypeError: can't redefine non-configurable property "x"](errors/cant_redefine_property)
--   [TypeError: cannot use 'in' operator to search for 'x' in 'y'](errors/in_operator_no_object)
--   [TypeError: cyclic object value](errors/cyclic_object_value)
--   [TypeError: invalid 'instanceof' operand 'x'](errors/invalid_right_hand_side_instanceof_operand)
--   [TypeError: invalid Array.prototype.sort argument](errors/array_sort_argument)
--   [TypeError: invalid arguments](errors/typed_array_invalid_arguments)
--   [TypeError: invalid assignment to const "x"](errors/invalid_const_assignment)
--   [TypeError: property "x" is non-configurable and can't be deleted](errors/cant_delete)
--   [TypeError: setting getter-only property "x"](errors/getter_only)
--   [TypeError: variable "x" redeclares argument](errors/var_hides_argument)
--   [URIError: malformed URI sequence](errors/malformed_uri)
--   [Warning: 08/09 is not a legal ECMA-262 octal constant](errors/bad_octal)
--   [Warning: -file- is being assigned a //\# sourceMappingURL, but already has one](errors/already_has_pragma)
--   [Warning: Date.prototype.toLocaleFormat is deprecated](errors/deprecated_tolocaleformat)
--   [Warning: JavaScript 1.6's for-each-in loops are deprecated](errors/for-each-in_loops_are_deprecated)
--   [Warning: String.x is deprecated; use String.prototype.x instead](errors/deprecated_string_generics)
--   [Warning: expression closures are deprecated](errors/deprecated_expression_closures)
--   [Warning: unreachable code after return statement](errors/stmt_after_return)
+- [Error: Permission denied to access property "x"](errors/property_access_denied)
+- [InternalError: too much recursion](errors/too_much_recursion)
+- [RangeError: argument is not a valid code point](errors/not_a_codepoint)
+- [RangeError: invalid array length](errors/invalid_array_length)
+- [RangeError: invalid date](errors/invalid_date)
+- [RangeError: precision is out of range](errors/precision_range)
+- [RangeError: radix must be an integer](errors/bad_radix)
+- [RangeError: repeat count must be less than infinity](errors/resulting_string_too_large)
+- [RangeError: repeat count must be non-negative](errors/negative_repetition_count)
+- [ReferenceError: "x" is not defined](errors/not_defined)
+- [ReferenceError: assignment to undeclared variable "x"](errors/undeclared_var)
+- [ReferenceError: can't access lexical declaration\`X' before initialization](errors/cant_access_lexical_declaration_before_init)
+- [ReferenceError: deprecated caller or arguments usage](errors/deprecated_caller_or_arguments_usage)
+- [ReferenceError: invalid assignment left-hand side](errors/invalid_assignment_left-hand_side)
+- [ReferenceError: reference to undefined property "x"](errors/undefined_prop)
+- [SyntaxError: "0"-prefixed octal literals and octal escape seq. are deprecated](errors/deprecated_octal)
+- [SyntaxError: "use strict" not allowed in function with non-simple parameters](errors/strict_non_simple_params)
+- [SyntaxError: "x" is a reserved identifier](errors/reserved_identifier)
+- [SyntaxError: JSON.parse: bad parsing](errors/json_bad_parse)
+- [SyntaxError: Malformed formal parameter](errors/malformed_formal_parameter)
+- [SyntaxError: Unexpected '\#' used outside of class body](errors/hash_outside_class)
+- [SyntaxError: Unexpected token](errors/unexpected_token)
+- [SyntaxError: Using //@ to indicate sourceURL pragmas is deprecated. Use //\# instead](errors/deprecated_source_map_pragma)
+- [SyntaxError: a declaration in the head of a for-of loop can't have an initializer](errors/invalid_for-of_initializer)
+- [SyntaxError: applying the 'delete' operator to an unqualified name is deprecated](errors/delete_in_strict_mode)
+- [SyntaxError: for-in loop head declarations may not have initializers](errors/invalid_for-in_initializer)
+- [SyntaxError: function statement requires a name](errors/unnamed_function_statement)
+- [SyntaxError: identifier starts immediately after numeric literal](errors/identifier_after_number)
+- [SyntaxError: illegal character](errors/illegal_character)
+- [SyntaxError: invalid regular expression flag "x"](errors/bad_regexp_flag)
+- [SyntaxError: missing ) after argument list](errors/missing_parenthesis_after_argument_list)
+- [SyntaxError: missing ) after condition](errors/missing_parenthesis_after_condition)
+- [SyntaxError: missing : after property id](errors/missing_colon_after_property_id)
+- [SyntaxError: missing ; before statement](errors/missing_semicolon_before_statement)
+- [SyntaxError: missing = in const declaration](errors/missing_initializer_in_const)
+- [SyntaxError: missing \] after element list](errors/missing_bracket_after_list)
+- [SyntaxError: missing formal parameter](errors/missing_formal_parameter)
+- [SyntaxError: missing name after . operator](errors/missing_name_after_dot_operator)
+- [SyntaxError: missing variable name](errors/no_variable_name)
+- [SyntaxError: missing } after function body](errors/missing_curly_after_function_body)
+- [SyntaxError: missing } after property list](errors/missing_curly_after_property_list)
+- [SyntaxError: redeclaration of formal parameter "x"](errors/redeclared_parameter)
+- [SyntaxError: return not in function](errors/bad_return_or_yield)
+- [SyntaxError: test for equality (==) mistyped as assignment (=)?](errors/equal_as_assign)
+- [SyntaxError: unterminated string literal](errors/unterminated_string_literal)
+- [TypeError: "x" has no properties](errors/no_properties)
+- [TypeError: "x" is (not) "y"](errors/unexpected_type)
+- [TypeError: "x" is not a constructor](errors/not_a_constructor)
+- [TypeError: "x" is not a function](errors/not_a_function)
+- [TypeError: "x" is not a non-null object](errors/no_non-null_object)
+- [TypeError: "x" is read-only](errors/read-only)
+- [TypeError: 'x' is not iterable](errors/is_not_iterable)
+- [TypeError: More arguments needed](errors/more_arguments_needed)
+- [TypeError: Reduce of empty array with no initial value](errors/reduce_of_empty_array_with_no_initial_value)
+- [TypeError: X.prototype.y called on incompatible type](errors/called_on_incompatible_type)
+- [TypeError: can't access dead object](errors/dead_object)
+- [TypeError: can't access property "x" of "y"](errors/cant_access_property)
+- [TypeError: can't assign to property "x" on "y": not an object](errors/cant_assign_to_property)
+- [TypeError: can't define property "x": "obj" is not extensible](errors/cant_define_property_object_not_extensible)
+- [TypeError: can't delete non-configurable array element](errors/non_configurable_array_element)
+- [TypeError: can't redefine non-configurable property "x"](errors/cant_redefine_property)
+- [TypeError: cannot use 'in' operator to search for 'x' in 'y'](errors/in_operator_no_object)
+- [TypeError: cyclic object value](errors/cyclic_object_value)
+- [TypeError: invalid 'instanceof' operand 'x'](errors/invalid_right_hand_side_instanceof_operand)
+- [TypeError: invalid Array.prototype.sort argument](errors/array_sort_argument)
+- [TypeError: invalid arguments](errors/typed_array_invalid_arguments)
+- [TypeError: invalid assignment to const "x"](errors/invalid_const_assignment)
+- [TypeError: property "x" is non-configurable and can't be deleted](errors/cant_delete)
+- [TypeError: setting getter-only property "x"](errors/getter_only)
+- [TypeError: variable "x" redeclares argument](errors/var_hides_argument)
+- [URIError: malformed URI sequence](errors/malformed_uri)
+- [Warning: 08/09 is not a legal ECMA-262 octal constant](errors/bad_octal)
+- [Warning: -file- is being assigned a //\# sourceMappingURL, but already has one](errors/already_has_pragma)
+- [Warning: Date.prototype.toLocaleFormat is deprecated](errors/deprecated_tolocaleformat)
+- [Warning: JavaScript 1.6's for-each-in loops are deprecated](errors/for-each-in_loops_are_deprecated)
+- [Warning: String.x is deprecated; use String.prototype.x instead](errors/deprecated_string_generics)
+- [Warning: expression closures are deprecated](errors/deprecated_expression_closures)
+- [Warning: unreachable code after return statement](errors/stmt_after_return)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors</a>
 
@@ -28532,10 +28532,10 @@ In a related circumstance, what if you actually wanted your `Date()` function to
 
 The code above may seem inefficiently slow because of the triple nested function, but let's analyze the benefits of the above efficient method:
 
--   It allows the code in the string passed to `runCodeWithDateFunction()` to be minified.
--   Function call overhead is minimal, making the far smaller code size well worth the benefit
--   `Function()` more easily allows your code to utilize the performance buttering `"use strict";`
--   The code does not use `eval()`, making it orders of magnitude faster than otherwise.
+- It allows the code in the string passed to `runCodeWithDateFunction()` to be minified.
+- Function call overhead is minimal, making the far smaller code size well worth the benefit
+- `Function()` more easily allows your code to utilize the performance buttering `"use strict";`
+- The code does not use `eval()`, making it orders of magnitude faster than otherwise.
 
 Lastly, let's examine minification. With using `Function()` as shown above, you can minify the code string passed to `runCodeWithDateFunction()` far more efficiently because the function arguments names can be minified too as seen in the minified code below.
 
@@ -28701,9 +28701,9 @@ If you define multiple values then the last value is returned.
 
 ## See also
 
--   [`uneval()`](uneval)
--   [Property accessors](../operators/property_accessors)
--   [WebExtensions: Using eval in content scripts](<https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Content_scripts#using_eval()_in_content_scripts>)
+- [`uneval()`](uneval)
+- [Property accessors](../operators/property_accessors)
+- [WebExtensions: Using eval in content scripts](<https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Content_scripts#using_eval()_in_content_scripts>)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval</a>
 
@@ -28815,8 +28815,8 @@ Stack trace. Inherited from [`Error`](error).
 
 ## See also
 
--   [`Error`](error)
--   [`eval()`](eval)
+- [`Error`](error)
+- [`eval()`](eval)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError</a>
 
@@ -29059,10 +29059,10 @@ The following examples tests the behavior of the `every` method when the array i
 
 ## See also
 
--   [`Array.prototype.forEach()`](foreach)
--   [`Array.prototype.some()`](some)
--   [`Array.prototype.find()`](find)
--   [`TypedArray.prototype.every()`](../typedarray/every)
+- [`Array.prototype.forEach()`](foreach)
+- [`Array.prototype.some()`](some)
+- [`Array.prototype.find()`](find)
+- [`TypedArray.prototype.every()`](../typedarray/every)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every</a>
 
@@ -29091,8 +29091,8 @@ The old value at the given position (`typedArray[index]`).
 
 ### Exceptions
 
--   Throws a [`TypeError`](../typeerror), if `typedArray` is not one of the allowed integer types.
--   Throws a [`RangeError`](../rangeerror), if `index` is out of bounds in the `typedArray`.
+- Throws a [`TypeError`](../typeerror), if `typedArray` is not one of the allowed integer types.
+- Throws a [`RangeError`](../rangeerror), if `index` is out of bounds in the `typedArray`.
 
 ## Examples
 
@@ -29167,8 +29167,8 @@ Chrome disabled `SharedArrayBuffer` on January 5, 2018 to help reduce the effica
 
 ## See also
 
--   [`Atomics`](../atomics)
--   [`Atomics.compareExchange()`](compareexchange)
+- [`Atomics`](../atomics)
+- [`Atomics.compareExchange()`](compareexchange)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics/exchange" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics/exchange</a>
 
@@ -29292,8 +29292,8 @@ This will log a message containing `'hello world!'`.
 
 ## See also
 
--   [Regular Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) chapter in the [JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
--   [`RegExp`](../regexp)
+- [Regular Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) chapter in the [JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
+- [`RegExp`](../regexp)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -29363,13 +29363,13 @@ Because `exp()` is a static method of `Math`, you always use it as `Math.exp()`,
 
 ## See also
 
--   [`Math.E`](e)
--   [`Math.expm1()`](expm1)
--   [`Math.log()`](log)
--   [`Math.log10()`](log10)
--   [`Math.log1p()`](log1p)
--   [`Math.log2()`](log2)
--   [`Math.pow()`](pow)
+- [`Math.E`](e)
+- [`Math.expm1()`](expm1)
+- [`Math.log()`](log)
+- [`Math.log10()`](log10)
+- [`Math.log1p()`](log1p)
+- [`Math.log2()`](log2)
+- [`Math.pow()`](pow)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -29439,13 +29439,13 @@ No
 
 ## See also
 
--   [`Math.E`](e)
--   [`Math.exp()`](exp)
--   [`Math.log()`](log)
--   [`Math.log10()`](log10)
--   [`Math.log1p()`](log1p)
--   [`Math.log2()`](log2)
--   [`Math.pow()`](pow)
+- [`Math.E`](e)
+- [`Math.exp()`](exp)
+- [`Math.log()`](log)
+- [`Math.log10()`](log10)
+- [`Math.log1p()`](log1p)
+- [`Math.log2()`](log2)
+- [`Math.pow()`](pow)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -29537,15 +29537,15 @@ No
 
 ## See also
 
--   [Addition operator](addition)
--   [Subtraction operator](subtraction)
--   [Division operator](division)
--   [Multiplication operator](multiplication)
--   [Remainder operator](remainder)
--   [Increment operator](increment)
--   [Decrement operator](decrement)
--   [Unary negation operator](unary_negation)
--   [Unary plus operator](unary_plus)
+- [Addition operator](addition)
+- [Subtraction operator](subtraction)
+- [Division operator](division)
+- [Multiplication operator](multiplication)
+- [Remainder operator](remainder)
+- [Increment operator](increment)
+- [Decrement operator](decrement)
+- [Unary negation operator](unary_negation)
+- [Unary plus operator](unary_plus)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -29709,8 +29709,8 @@ Then in the top-level module included in your HTML page, we could have:
 
 It is important to note the following:
 
--   You need to include this script in your HTML with a [`<script>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script) element of type="module", so that it gets recognized as a module and dealt with appropriately.
--   You can't run JS modules via a `file://` URL — you'll get [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) errors. You need to run it via an HTTP server.
+- You need to include this script in your HTML with a [`<script>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script) element of type="module", so that it gets recognized as a module and dealt with appropriately.
+- You can't run JS modules via a `file://` URL — you'll get [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) errors. You need to run it via an HTTP server.
 
 ### Using the default export
 
@@ -29731,10 +29731,10 @@ Then, in another script, it is straightforward to import the default export:
 
 Let's take an example where we have the following hierarchy:
 
--   `childModule1.js`: exporting `myFunction` and `myVariable`
--   `childModule2.js`: exporting `myClass`
--   `parentModule.js`: acting as an aggregator (and doing nothing else)
--   top level module: consuming the exports of `parentModule.js`
+- `childModule1.js`: exporting `myFunction` and `myVariable`
+- `childModule2.js`: exporting `myClass`
+- `parentModule.js`: acting as an aggregator (and doing nothing else)
+- top level module: consuming the exports of `parentModule.js`
 
 This is what it would look like using code snippets:
 
@@ -29857,11 +29857,11 @@ No
 
 ## See also
 
--   [`import`](import)
--   [JavaScript modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) guide
--   [ES6 in Depth: Modules](https://hacks.mozilla.org/2015/08/es6-in-depth-modules/), Hacks blog post by Jason Orendorff
--   [ES modules: A cartoon deep-dive](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/), Hacks blog post by Lin Clark
--   [Axel Rauschmayer's book: "Exploring JS: Modules"](https://exploringjs.com/es6/ch_modules.html)
+- [`import`](import)
+- [JavaScript modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) guide
+- [ES6 in Depth: Modules](https://hacks.mozilla.org/2015/08/es6-in-depth-modules/), Hacks blog post by Jason Orendorff
+- [ES modules: A cartoon deep-dive](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/), Hacks blog post by Lin Clark
+- [Axel Rauschmayer's book: "Exploring JS: Modules"](https://exploringjs.com/es6/ch_modules.html)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -29966,9 +29966,9 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 
 ## See also
 
--   [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
--   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
--   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
+- [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
+- [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
+- [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -30088,10 +30088,10 @@ Strict mode is required.
 
 ## See also
 
--   [Classes](../classes)
--   [constructor](constructor)
--   [super](../operators/super)
--   [Anurag Majumdar - Super & Extends in JavaScript](https://medium.com/beginners-guide-to-mobile-web-development/super-and-extends-in-javascript-es6-understanding-the-tough-parts-6120372d3420)
+- [Classes](../classes)
+- [constructor](constructor)
+- [super](../operators/super)
+- [Anurag Majumdar - Super & Extends in JavaScript](https://medium.com/beginners-guide-to-mobile-web-development/super-and-extends-in-javascript-es6-understanding-the-tough-parts-6120372d3420)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/extends" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/extends</a>
 
@@ -30147,9 +30147,9 @@ No
 
 ## See also
 
--   [`Error.prototype.stack`](stack)
--   [`Error.prototype.columnNumber`](columnnumber)
--   [`Error.prototype.lineNumber`](linenumber)
+- [`Error.prototype.stack`](stack)
+- [`Error.prototype.columnNumber`](columnnumber)
+- [`Error.prototype.lineNumber`](linenumber)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error/fileName" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error/fileName</a>
 
@@ -30180,11 +30180,11 @@ The modified array, filled with `value`.
 
 ## Description
 
--   If `start` is negative, it is treated as `array.length + start`.
--   If `end` is negative, it is treated as `array.length + end`.
--   `fill` is intentionally generic: it does not require that its `this` value be an `Array` object.
--   `fill` is a mutator method: it will change the array itself and return it, not a copy of it.
--   If the first parameter is an object, each slot in the array will reference that object.
+- If `start` is negative, it is treated as `array.length + start`.
+- If `end` is negative, it is treated as `array.length + end`.
+- `fill` is intentionally generic: it does not require that its `this` value be an `Array` object.
+- `fill` is a mutator method: it will change the array itself and return it, not a copy of it.
+- If the first parameter is an object, each slot in the array will reference that object.
 
 ## Polyfill
 
@@ -30302,8 +30302,8 @@ No
 
 ## See also
 
--   [`Array`](../array)
--   [`TypedArray.prototype.fill()`](../typedarray/fill)
+- [`Array`](../array)
+- [`TypedArray.prototype.fill()`](../typedarray/fill)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill</a>
 
@@ -30582,11 +30582,11 @@ The following examples tests the behavior of the `filter` method when the array 
 
 ## See also
 
--   [`Array.prototype.forEach()`](foreach)
--   [`Array.prototype.every()`](every)
--   [`Array.prototype.some()`](some)
--   [`Array.prototype.reduce()`](reduce)
--   [`Array.prototype.find()`](find)
+- [`Array.prototype.forEach()`](foreach)
+- [`Array.prototype.every()`](every)
+- [`Array.prototype.some()`](some)
+- [`Array.prototype.reduce()`](reduce)
+- [`Array.prototype.find()`](find)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter</a>
 
@@ -30619,10 +30619,10 @@ The `finally()` method can be useful if you want to do some processing or cleanu
 
 The `finally()` method is very similar to calling `.then(onFinally, onFinally)` however there are a couple of differences:
 
--   When creating a function inline, you can pass it once, instead of being forced to either declare it twice, or create a variable for it
--   A `finally` callback will not receive any argument, since there's no reliable means of determining if the promise was fulfilled or rejected. This use case is for precisely when you _do not care_ about the rejection reason, or the fulfillment value, and so there's no need to provide it. So for example:
-    -   Unlike `Promise.resolve(2).then(() => {}, () => {})` (which will be resolved with `undefined`), `Promise.resolve(2).finally(() => {})` will be resolved with `2`.
-    -   Similarly, unlike `Promise.reject(3).then(() => {}, () => {})` (which will be fulfilled with `undefined`), `Promise.reject(3).finally(() => {})` will be rejected with `3`.
+- When creating a function inline, you can pass it once, instead of being forced to either declare it twice, or create a variable for it
+- A `finally` callback will not receive any argument, since there's no reliable means of determining if the promise was fulfilled or rejected. This use case is for precisely when you _do not care_ about the rejection reason, or the fulfillment value, and so there's no need to provide it. So for example:
+    - Unlike `Promise.resolve(2).then(() => {}, () => {})` (which will be resolved with `undefined`), `Promise.resolve(2).finally(() => {})` will be resolved with `2`.
+    - Similarly, unlike `Promise.reject(3).then(() => {}, () => {})` (which will be fulfilled with `undefined`), `Promise.reject(3).finally(() => {})` will be rejected with `3`.
 
 **Note:** A `throw` (or returning a rejected promise) in the `finally` callback will reject the new promise with the rejection reason specified when calling `throw`.
 
@@ -30678,9 +30678,9 @@ No
 
 ## See also
 
--   [`Promise`](../promise)
--   [`Promise.prototype.then()`](then)
--   [`Promise.prototype.catch()`](catch)
+- [`Promise`](../promise)
+- [`Promise.prototype.then()`](then)
+- [`Promise.prototype.catch()`](catch)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -30690,10 +30690,10 @@ Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later
 
 The `find()` method returns the value of the first element in the provided array that satisfies the provided testing function. If no values satisfy the testing function, [`undefined`](../undefined) is returned.
 
--   If you need the **index** of the found element in the array, use [`findIndex()`](findindex).
--   If you need to find the **index of a value**, use [`Array.prototype.indexOf()`](indexof). (It's similar to [`findIndex()`](findindex), but checks each element for equality with the value instead of using a testing function.)
--   If you need to find if a value **exists** in an array, use [`Array.prototype.includes()`](includes). Again, it checks each element for equality with the value instead of using a testing function.
--   If you need to find if any element satisfies the provided testing function, use [`Array.prototype.some()`](some).
+- If you need the **index** of the found element in the array, use [`findIndex()`](findindex).
+- If you need to find the **index of a value**, use [`Array.prototype.indexOf()`](indexof). (It's similar to [`findIndex()`](findindex), but checks each element for equality with the value instead of using a testing function.)
+- If you need to find if a value **exists** in an array, use [`Array.prototype.includes()`](includes). Again, it checks each element for equality with the value instead of using a testing function.
+- If you need to find if any element satisfies the provided testing function, use [`Array.prototype.some()`](some).
 
 ## Syntax
 
@@ -30743,9 +30743,9 @@ If a `thisArg` parameter is provided to `find`, it will be used as the `this` va
 
 The `find` method does not mutate the array on which it is called, but the function provided to `callbackFn` can. If so, the elements processed by `find` are set _before_ the first invocation of `callbackFn`. Therefore:
 
--   `callbackFn` will not visit any elements added to the array after the call to `find` begins.
--   If an existing, yet-unvisited element of the array is changed by `callbackFn`, its value passed to the `callbackFn` will be the value at the time `find` visits that element's index.
--   Elements that are [`deleted`](../../operators/delete) are still visited.
+- `callbackFn` will not visit any elements added to the array after the call to `find` begins.
+- If an existing, yet-unvisited element of the array is changed by `callbackFn`, its value passed to the `callbackFn` will be the value at the time `find` visits that element's index.
+- Elements that are [`deleted`](../../operators/delete) are still visited.
 
 ## Examples
 
@@ -30858,11 +30858,11 @@ No
 
 ## See also
 
--   [`Array.prototype.findIndex()`](findindex) - find and return an index
--   [`Array.prototype.includes()`](includes) - test whether a value exists in the array
--   [`Array.prototype.filter()`](filter) - remove all non-matching elements
--   [`Array.prototype.every()`](every) - test all elements
--   [`Array.prototype.some()`](some) - test until one element matches
+- [`Array.prototype.findIndex()`](findindex) - find and return an index
+- [`Array.prototype.includes()`](includes) - test whether a value exists in the array
+- [`Array.prototype.filter()`](filter) - remove all non-matching elements
+- [`Array.prototype.every()`](every) - test all elements
+- [`Array.prototype.some()`](some) - test until one element matches
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find</a>
 
@@ -31015,8 +31015,8 @@ No
 
 ## See also
 
--   [`TypedArray.prototype.find()`](find)
--   [`TypedArray.prototype.indexOf()`](indexof)
+- [`TypedArray.prototype.find()`](find)
+- [`TypedArray.prototype.indexOf()`](indexof)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -31086,9 +31086,9 @@ The following example uses the `fixed` method to change the formatting of a stri
 
 ## See also
 
--   [`String.prototype.bold()`](bold)
--   [`String.prototype.italics()`](italics)
--   [`String.prototype.strike()`](strike)
+- [`String.prototype.bold()`](bold)
+- [`String.prototype.italics()`](italics)
+- [`String.prototype.strike()`](strike)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -31169,7 +31169,7 @@ No
 
 ## See also
 
--   [`RegExp.prototype.source`](source)
+- [`RegExp.prototype.source`](source)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -31329,11 +31329,11 @@ No
 
 ## See also
 
--   [`Array.prototype.flatMap()`](flatmap)
--   [`Array.prototype.map()`](map)
--   [`Array.prototype.reduce()`](reduce)
--   [`Array.prototype.concat()`](concat)
--   [A polyfill](https://github.com/behnammodi/polyfill/blob/master/array.polyfill.js)
+- [`Array.prototype.flatMap()`](flatmap)
+- [`Array.prototype.map()`](map)
+- [`Array.prototype.reduce()`](reduce)
+- [`Array.prototype.concat()`](concat)
+- [A polyfill](https://github.com/behnammodi/polyfill/blob/master/array.polyfill.js)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat</a>
 
@@ -31479,11 +31479,11 @@ No
 
 ## See also
 
--   [`Array.prototype.flat()`](flat)
--   [`Array.prototype.map()`](map)
--   [`Array.prototype.reduce()`](reduce)
--   [`Array.prototype.concat()`](concat)
--   [A polyfill](https://github.com/behnammodi/polyfill/blob/master/array.polyfill.js)
+- [`Array.prototype.flat()`](flat)
+- [`Array.prototype.map()`](map)
+- [`Array.prototype.reduce()`](reduce)
+- [`Array.prototype.concat()`](concat)
+- [A polyfill](https://github.com/behnammodi/polyfill/blob/master/array.polyfill.js)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flatMap" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flatMap</a>
 
@@ -31696,9 +31696,9 @@ Returns a new `Array Iterator` object that contains the values for each index in
 
 ## See also
 
--   [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
--   [`ArrayBuffer`](arraybuffer)
--   [`DataView`](dataview)
+- [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
+- [`ArrayBuffer`](arraybuffer)
+- [`DataView`](dataview)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array</a>
 
@@ -31911,9 +31911,9 @@ Returns a new `Array Iterator` object that contains the values for each index in
 
 ## See also
 
--   [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
--   [`ArrayBuffer`](arraybuffer)
--   [`DataView`](dataview)
+- [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
+- [`ArrayBuffer`](arraybuffer)
+- [`DataView`](dataview)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array</a>
 
@@ -32041,11 +32041,11 @@ Because `floor()` is a static method of `Math`, you always use it as `Math.floor
 
 ## See also
 
--   [`Math.abs()`](abs)
--   [`Math.ceil()`](ceil)
--   [`Math.round()`](round)
--   [`Math.sign()`](sign)
--   [`Math.trunc()`](trunc)
+- [`Math.abs()`](abs)
+- [`Math.ceil()`](ceil)
+- [`Math.round()`](round)
+- [`Math.sign()`](sign)
+- [`Math.trunc()`](trunc)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -32131,7 +32131,7 @@ With the [`element.style`](https://developer.mozilla.org/en-US/docs/Web/API/Elem
 
 ## See also
 
--   [`String.prototype.fontsize()`](fontsize)
+- [`String.prototype.fontsize()`](fontsize)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -32215,8 +32215,8 @@ With the [`element.style`](https://developer.mozilla.org/en-US/docs/Web/API/Elem
 
 ## See also
 
--   [`String.prototype.big()`](big)
--   [`String.prototype.small()`](small)
+- [`String.prototype.big()`](big)
+- [`String.prototype.small()`](small)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -32458,8 +32458,8 @@ No
 
 ## See also
 
--   [`Symbol.asyncIterator`](../global_objects/symbol/asynciterator)
--   [`for...of`](for...of)
+- [`Symbol.asyncIterator`](../global_objects/symbol/asynciterator)
+- [`for...of`](for...of)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -32611,9 +32611,9 @@ Or, using [`for...of`](../statements/for...of) (ES2015) and [`Object.entries`](.
 
 ## See also
 
--   [`for...of`](../statements/for...of)
--   [`Object.values`](../global_objects/object/values)
--   [`Object.entries`](../global_objects/object/entries)
+- [`for...of`](../statements/for...of)
+- [`Object.values`](../global_objects/object/values)
+- [`Object.entries`](../global_objects/object/entries)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/For-each-in_loops_are_deprecated" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/For-each-in_loops_are_deprecated</a>
 
@@ -32753,14 +32753,14 @@ Other engines such as v8 (Chrome), Chakra (IE/Edge), and JSC (WebKit/Safari) are
 
 ## See also
 
--   [`for...of`](for...of) - a similar statement that iterates over the property _values_
--   <span class="page-not-created">`for each...in`</span> - a similar but deprecated statement that iterates over the values of an object's properties, rather than the property names themselves
--   [`for`](for)
--   [Iterators and Generator functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators) (usable with `for...of` syntax)
--   [Enumerability and ownership of properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
--   [`Object.getOwnPropertyNames()`](../global_objects/object/getownpropertynames)
--   [`Object.prototype.hasOwnProperty()`](../global_objects/object/hasownproperty)
--   [`Array.prototype.forEach()`](../global_objects/array/foreach)
+- [`for...of`](for...of) - a similar statement that iterates over the property _values_
+- <span class="page-not-created">`for each...in`</span> - a similar but deprecated statement that iterates over the values of an object's properties, rather than the property names themselves
+- [`for`](for)
+- [Iterators and Generator functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators) (usable with `for...of` syntax)
+- [Enumerability and ownership of properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
+- [`Object.getOwnPropertyNames()`](../global_objects/object/getownpropertynames)
+- [`Object.prototype.hasOwnProperty()`](../global_objects/object/hasownproperty)
+- [`Array.prototype.forEach()`](../global_objects/array/foreach)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -33114,9 +33114,9 @@ No
 
 ## See also
 
--   [`Array.prototype.forEach()`](../global_objects/array/foreach)
--   [`Map.prototype.forEach()`](../global_objects/map/foreach)
--   [`Object.entries()`](../global_objects/object/entries) - Useful when using `for...of` over an object.
+- [`Array.prototype.forEach()`](../global_objects/array/foreach)
+- [`Map.prototype.forEach()`](../global_objects/map/foreach)
+- [`Object.entries()`](../global_objects/object/entries) - Useful when using `for...of` over an object.
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -33254,13 +33254,13 @@ The following `for` cycle calculates the offset position of a node in the `final
 
 ## See also
 
--   [empty statement](empty)
--   [`break`](break)
--   [`continue`](continue)
--   [`while`](while)
--   [`do...while`](do...while)
--   [`for...in`](for...in)
--   [`for...of`](for...of)
+- [empty statement](empty)
+- [`break`](break)
+- [`continue`](continue)
+- [`while`](while)
+- [`do...while`](do...while)
+- [`for...in`](for...in)
+- [`for...of`](for...of)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -33330,12 +33330,12 @@ The range of elements processed by `forEach()` is set before the first invocatio
 
 Early termination may be accomplished with:
 
--   A simple [for](../../statements/for) loop
--   A [for...of](../../statements/for...of) / [for...in](../../statements/for...in) loops
--   [`Array.prototype.every()`](every)
--   [`Array.prototype.some()`](some)
--   [`Array.prototype.find()`](find)
--   [`Array.prototype.findIndex()`](findindex)
+- A simple [for](../../statements/for) loop
+- A [for...of](../../statements/for...of) / [for...in](../../statements/for...in) loops
+- [`Array.prototype.every()`](every)
+- [`Array.prototype.some()`](some)
+- [`Array.prototype.find()`](find)
+- [`Array.prototype.findIndex()`](findindex)
 
 Array methods: [`every()`](every), [`some()`](some), [`find()`](find), and [`findIndex()`](findindex) test the array elements with a predicate returning a truthy value to determine if further iteration is required.
 
@@ -33601,14 +33601,14 @@ The following example is only here for learning purpose. If you want to flatten 
 
 ## See also
 
--   [`Array.prototype.find()`](find)
--   [`Array.prototype.findIndex()`](findindex)
--   [`Array.prototype.map()`](map)
--   [`Array.prototype.filter()`](filter)
--   [`Array.prototype.every()`](every)
--   [`Array.prototype.some()`](some)
--   [`Map.prototype.forEach()`](../map/foreach)
--   [`Set.prototype.forEach()`](../set/foreach)
+- [`Array.prototype.find()`](find)
+- [`Array.prototype.findIndex()`](findindex)
+- [`Array.prototype.map()`](map)
+- [`Array.prototype.filter()`](filter)
+- [`Array.prototype.every()`](every)
+- [`Array.prototype.some()`](some)
+- [`Map.prototype.forEach()`](../map/foreach)
+- [`Set.prototype.forEach()`](../set/foreach)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach</a>
 
@@ -33708,10 +33708,10 @@ For this reason you cannot expect to be able to compare the results of `format()
 
 ## See also
 
--   [`Intl.DateTimeFormat`](../datetimeformat)
--   [`Date.prototype.toLocaleString()`](../../date/tolocalestring)
--   [`Date.prototype.toLocaleDateString()`](../../date/tolocaledatestring)
--   [`Date.prototype.toLocaleTimeString()`](../../date/tolocaletimestring)
+- [`Intl.DateTimeFormat`](../datetimeformat)
+- [`Date.prototype.toLocaleString()`](../../date/tolocalestring)
+- [`Date.prototype.toLocaleDateString()`](../../date/tolocaledatestring)
+- [`Date.prototype.toLocaleTimeString()`](../../date/tolocaletimestring)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/format" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/format</a>
 
@@ -33797,7 +33797,7 @@ No
 
 ## See also
 
--   [`Intl.DateTimeFormat`](../datetimeformat)
+- [`Intl.DateTimeFormat`](../datetimeformat)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/formatRange" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/formatRange</a>
 
@@ -33877,8 +33877,8 @@ No
 
 ## See also
 
--   <span class="page-not-created">`Intl.DateTimeFormat.prototype.formatRange()`</span>
--   [`Intl.DateTimeFormat`](../datetimeformat)
+- <span class="page-not-created">`Intl.DateTimeFormat.prototype.formatRange()`</span>
+- [`Intl.DateTimeFormat`](../datetimeformat)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/formatRangeToParts" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/formatRangeToParts</a>
 
@@ -34128,11 +34128,11 @@ Before version 71, `formatToParts()` returned an object with an incorrectly case
 
 ## See also
 
--   [`Intl.DateTimeFormat`](../datetimeformat)
--   [`Intl.DateTimeFormat.prototype.format()`](format)
--   [`Date.prototype.toLocaleString()`](../../date/tolocalestring)
--   [`Date.prototype.toLocaleDateString()`](../../date/tolocaledatestring)
--   [`Date.prototype.toLocaleTimeString()`](../../date/tolocaletimestring)
+- [`Intl.DateTimeFormat`](../datetimeformat)
+- [`Intl.DateTimeFormat.prototype.format()`](format)
+- [`Date.prototype.toLocaleString()`](../../date/tolocalestring)
+- [`Date.prototype.toLocaleDateString()`](../../date/tolocaledatestring)
+- [`Date.prototype.toLocaleTimeString()`](../../date/tolocaletimestring)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/formatToParts" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/formatToParts</a>
 
@@ -34358,11 +34358,11 @@ To make an object immutable, recursively freeze each property which is of type o
 
 ## See also
 
--   [`Object.isFrozen()`](isfrozen)
--   [`Object.preventExtensions()`](preventextensions)
--   [`Object.isExtensible()`](isextensible)
--   [`Object.seal()`](seal)
--   [`Object.isSealed()`](issealed)
+- [`Object.isFrozen()`](isfrozen)
+- [`Object.preventExtensions()`](preventextensions)
+- [`Object.isExtensible()`](isextensible)
+- [`Object.seal()`](seal)
+- [`Object.isSealed()`](issealed)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -34408,8 +34408,8 @@ A new [`Array`](../array) instance.
 
 `Array.from()` lets you create `Array`s from:
 
--   array-like objects (objects with a `length` property and indexed elements); or
--   [iterable objects](../../iteration_protocols) (objects such as [`Map`](../map) and [`Set`](../set)).
+- array-like objects (objects with a `length` property and indexed elements); or
+- [iterable objects](../../iteration_protocols) (objects such as [`Map`](../map) and [`Set`](../set)).
 
 `Array.from()` has an optional parameter `mapFn`, which allows you to execute a [`map()`](map) function on each element of the array being created.
 
@@ -34677,9 +34677,9 @@ In addition, since true iterables cannot be polyfilled, this implementation does
 
 ## See also
 
--   [`Array`](../array)
--   [`Array.prototype.map()`](map)
--   [`TypedArray.from()`](../typedarray/from)
+- [`Array`](../array)
+- [`Array.prototype.map()`](map)
+- [`TypedArray.from()`](../typedarray/from)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from</a>
 
@@ -34769,10 +34769,10 @@ Supplementary characters, in UTF-16, require two code units (i.e. a surrogate pa
 
 ## See also
 
--   [`String.fromCodePoint()`](fromcodepoint)
--   [`String.prototype.charAt()`](charat)
--   [`String.prototype.charCodeAt()`](charcodeat)
--   [`String.prototype.codePointAt()`](codepointat)
+- [`String.fromCodePoint()`](fromcodepoint)
+- [`String.prototype.charAt()`](charat)
+- [`String.prototype.charCodeAt()`](charcodeat)
+- [`String.prototype.codePointAt()`](codepointat)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -34799,7 +34799,7 @@ A string created by using the specified sequence of code points.
 
 ### Exceptions
 
--   A [`RangeError`](../../errors/not_a_codepoint) is thrown if an invalid Unicode code point is given (e.g. `"RangeError: NaN is not a valid code point"`).
+- A [`RangeError`](../../errors/not_a_codepoint) is thrown if an invalid Unicode code point is given (e.g. `"RangeError: NaN is not a valid code point"`).
 
 ## Description
 
@@ -34917,10 +34917,10 @@ No
 
 ## See also
 
--   [`String.fromCharCode()`](fromcharcode)
--   [`String.prototype.charAt()`](charat)
--   [`String.prototype.codePointAt()`](codepointat)
--   [`String.prototype.charCodeAt()`](charcodeat)
+- [`String.fromCharCode()`](fromcharcode)
+- [`String.prototype.charAt()`](charat)
+- [`String.prototype.codePointAt()`](codepointat)
+- [`String.prototype.charCodeAt()`](charcodeat)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -35016,12 +35016,12 @@ No
 
 ## See also
 
--   [`Object.entries()`](entries)
--   [`Object.keys()`](keys)
--   [`Object.values()`](values)
--   [`Map.prototype.entries()`](../map/entries)
--   [`Map.prototype.keys()`](../map/keys)
--   [`Map.prototype.values()`](../map/values)
+- [`Object.entries()`](entries)
+- [`Object.keys()`](keys)
+- [`Object.values()`](values)
+- [`Map.prototype.entries()`](../map/entries)
+- [`Map.prototype.keys()`](../map/keys)
+- [`Map.prototype.values()`](../map/values)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -35140,7 +35140,7 @@ No
 
 ## See also
 
--   [`Math.round()`](round)
+- [`Math.round()`](round)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -35450,20 +35450,20 @@ No
 
 ## See also
 
--   [`function*`](../operators/function*) expression
--   [`GeneratorFunction`](../global_objects/generatorfunction) object
--   [Iteration protocols](../iteration_protocols)
--   [`yield`](../operators/yield)
--   [`yield*`](../operators/yield*)
--   [`Function`](../global_objects/function) object
--   [`function`](function) declaration
--   [`function`](../operators/function) expression
--   [Functions and function scope](../functions)
--   Other web resources:
-    -   [Regenerator](https://facebook.github.io/regenerator/) an ES2015 generator compiler to ES5
-    -   [Forbes Lindesay: Promises and Generators: control flow utopia -- JSConf EU 2013](https://www.youtube.com/watch?v=qbKWsbJ76-s)
-    -   [Task.js](https://github.com/mozilla/task.js)
-    -   [Iterating generators asynchronously](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/async%20%26%20performance/ch4.md#iterating-generators-asynchronously)
+- [`function*`](../operators/function*) expression
+- [`GeneratorFunction`](../global_objects/generatorfunction) object
+- [Iteration protocols](../iteration_protocols)
+- [`yield`](../operators/yield)
+- [`yield*`](../operators/yield*)
+- [`Function`](../global_objects/function) object
+- [`function`](function) declaration
+- [`function`](../operators/function) expression
+- [Functions and function scope](../functions)
+- Other web resources:
+    - [Regenerator](https://facebook.github.io/regenerator/) an ES2015 generator compiler to ES5
+    - [Forbes Lindesay: Promises and Generators: control flow utopia -- JSConf EU 2013](https://www.youtube.com/watch?v=qbKWsbJ76-s)
+    - [Task.js](https://github.com/mozilla/task.js)
+    - [Iterating generators asynchronously](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/async%20%26%20performance/ch4.md#iterating-generators-asynchronously)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -35636,15 +35636,15 @@ No
 
 ## See also
 
--   [Arrow functions](../functions/arrow_functions)
--   [Functions and function scope](../functions)
--   [`Function`](../global_objects/function)
--   [`function`](../statements/function) statement
--   [`function*`](../statements/function*) statement
--   [`function*`](function*) expression
--   [`GeneratorFunction`](../global_objects/generatorfunction)
--   [async function](../statements/async_function)
--   [async function expression](async_function)
+- [Arrow functions](../functions/arrow_functions)
+- [Functions and function scope](../functions)
+- [`Function`](../global_objects/function)
+- [`function`](../statements/function) statement
+- [`function*`](../statements/function*) statement
+- [`function*`](function*) expression
+- [`GeneratorFunction`](../global_objects/generatorfunction)
+- [async function](../statements/async_function)
+- [async function expression](async_function)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -35856,10 +35856,10 @@ The rest parameter syntax allows representing an indefinite number of arguments 
 
 You can refer to a function's arguments within the function by using the `arguments` object. See [arguments](functions/arguments).
 
--   `arguments`: An array-like object containing the arguments passed to the currently executing function.
--   `arguments.callee` : The currently executing function.
--   `arguments.caller` : The function that invoked the currently executing function.
--   `arguments.length`: The number of arguments passed to the function.
+- `arguments`: An array-like object containing the arguments passed to the currently executing function.
+- `arguments.callee` : The currently executing function.
+- `arguments.caller` : The function that invoked the currently executing function.
+- `arguments.length`: The number of arguments passed to the function.
 
 ## Defining method functions
 
@@ -35986,8 +35986,8 @@ It should be noted, however, that function expressions and function declarations
 
 A function declaration is very easily (and often unintentionally) turned into a function expression. A function declaration ceases to be one when it either:
 
--   becomes part of an expression
--   is no longer a "source element" of a function or the script itself. A "source element" is a non-nested statement in the script or a function body:
+- becomes part of an expression
+- is no longer a "source element" of a function or the script itself. A "source element" is a non-nested statement in the script or a function body:
 
 <!-- -->
 
@@ -36358,20 +36358,20 @@ No
 
 ## See also
 
--   [`function statement`](statements/function)
--   [`function expression`](operators/function)
--   [`function* statement`](statements/function*)
--   [`function* expression`](operators/function*)
--   [`Function`](global_objects/function)
--   [`GeneratorFunction`](global_objects/generatorfunction)
--   [`Arrow functions`](functions/arrow_functions)
--   [`Default parameters`](functions/default_parameters)
--   [`Rest parameters`](functions/rest_parameters)
--   [`Arguments object`](functions/arguments)
--   [`getter`](functions/get)
--   [`setter`](functions/set)
--   [`Method definitions`](functions/method_definitions)
--   Functions and function scope
+- [`function statement`](statements/function)
+- [`function expression`](operators/function)
+- [`function* statement`](statements/function*)
+- [`function* expression`](operators/function*)
+- [`Function`](global_objects/function)
+- [`GeneratorFunction`](global_objects/generatorfunction)
+- [`Arrow functions`](functions/arrow_functions)
+- [`Default parameters`](functions/default_parameters)
+- [`Rest parameters`](functions/rest_parameters)
+- [`Arguments object`](functions/arguments)
+- [`getter`](functions/get)
+- [`setter`](functions/set)
+- [`Method definitions`](functions/method_definitions)
+- Functions and function scope
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions</a>
 
@@ -36540,10 +36540,10 @@ No
 
 ## See also
 
--   [`function*`](../statements/function*)
--   [`function*` expression](../operators/function*)
--   [`GeneratorFunction`](generatorfunction)
--   [The Iterator protocol](../iteration_protocols)
+- [`function*`](../statements/function*)
+- [`function*` expression](../operators/function*)
+- [`GeneratorFunction`](generatorfunction)
+- [The Iterator protocol](../iteration_protocols)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator</a>
 
@@ -36627,12 +36627,12 @@ No
 
 ## See also
 
--   [function\* function](../statements/function*)
--   [function\* expression](../operators/function*)
--   [`Function`](function)
--   [function statement](../statements/function)
--   [function expression](../operators/function)
--   [Functions and function scope](../functions)
+- [function\* function](../statements/function*)
+- [function\* expression](../operators/function*)
+- [`Function`](function)
+- [function statement](../statements/function)
+- [function expression](../operators/function)
+- [Functions and function scope](../functions)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction</a>
 
@@ -36661,9 +36661,9 @@ It is not possible to simultaneously have a getter bound to a property and have 
 
 Note the following when working with the `get` syntax:
 
--   It can have an identifier which is either a number or a string;
--   It must have exactly zero parameters (see [Incompatible ES5 change: literal getter and setter functions must now have exactly zero or one arguments](https://whereswalden.com/2010/08/22/incompatible-es5-change-literal-getter-and-setter-functions-must-now-have-exactly-zero-or-one-arguments/) for more information);
--   It must not appear in an object literal with another `get` or with a data entry for the same property (`{ get x() { }, get x() { } }` and `{ x: ..., get x() { } }` are forbidden).
+- It can have an identifier which is either a number or a string;
+- It must have exactly zero parameters (see [Incompatible ES5 change: literal getter and setter functions must now have exactly zero or one arguments](https://whereswalden.com/2010/08/22/incompatible-es5-change-literal-getter-and-setter-functions-must-now-have-exactly-zero-or-one-arguments/) for more information);
+- It must not appear in an object literal with another `get` or with a data entry for the same property (`{ get x() { }, get x() { } }` and `{ x: ..., get x() { } }` are forbidden).
 
 ## Examples
 
@@ -36714,9 +36714,9 @@ Getters give you a way to _define_ a property of an object, but they do not _cal
 
 An additional optimization technique to lazify or delay the calculation of a property value and cache it for later access are **smart (or "[memoized](https://en.wikipedia.org/wiki/Memoization)") getters**. The value is calculated the first time the getter is called, and is then cached so subsequent accesses return the cached value without recalculating it. This is useful in the following situations:
 
--   If the calculation of a property value is expensive (takes much RAM or CPU time, spawns worker threads, retrieves remote file, etc).
--   If the value isn't needed just now. It will be used later, or in some case it's not used at all.
--   If it's used, it will be accessed several times, and there is no need to re-calculate that value will never be changed or shouldn't be re-calculated.
+- If the calculation of a property value is expensive (takes much RAM or CPU time, spawns worker threads, retrieves remote file, etc).
+- If the value isn't needed just now. It will be used later, or in some case it's not used at all.
+- If it's used, it will be accessed several times, and there is no need to re-calculate that value will never be changed or shouldn't be re-calculated.
 
 **Note:** This means that you shouldn't write a lazy getter for a property whose value you expect to change, because if the getter is lazy then it will not recalculate the value.
 
@@ -36818,12 +36818,12 @@ No
 
 ## See also
 
--   [setter](set)
--   [`delete`](../operators/delete)
--   [`Object.defineProperty()`](../global_objects/object/defineproperty)
--   [`__defineGetter__`](../global_objects/object/__definegetter__)
--   [`__defineSetter__`](../global_objects/object/__definesetter__)
--   [Defining Getters and Setters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects#defining_getters_and_setters) in JavaScript Guide
+- [setter](set)
+- [`delete`](../operators/delete)
+- [`Object.defineProperty()`](../global_objects/object/defineproperty)
+- [`__defineGetter__`](../global_objects/object/__definegetter__)
+- [`__defineSetter__`](../global_objects/object/__definesetter__)
+- [Defining Getters and Setters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects#defining_getters_and_setters) in JavaScript Guide
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get</a>
 
@@ -36900,9 +36900,9 @@ No
 
 ## See also
 
--   [`DataView`](../dataview)
--   [`ArrayBuffer`](../arraybuffer)
--   [`BigInt`](../bigint)
+- [`DataView`](../dataview)
+- [`ArrayBuffer`](../arraybuffer)
+- [`BigInt`](../bigint)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/getBigInt64" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/getBigInt64</a>
 
@@ -36979,9 +36979,9 @@ No
 
 ## See also
 
--   [`DataView`](../dataview)
--   [`ArrayBuffer`](../arraybuffer)
--   [`BigInt`](../bigint)
+- [`DataView`](../dataview)
+- [`ArrayBuffer`](../arraybuffer)
+- [`BigInt`](../bigint)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/getBigUint64" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/getBigUint64</a>
 
@@ -37051,9 +37051,9 @@ No
 
 ## See also
 
--   [`Intl.NumberFormat.supportedLocalesOf()`](numberformat/supportedlocalesof)
--   [`Intl.DateTimeFormat.supportedLocalesOf()`](datetimeformat/supportedlocalesof)
--   [`Intl.Collator.supportedLocalesOf()`](collator/supportedlocalesof)
+- [`Intl.NumberFormat.supportedLocalesOf()`](numberformat/supportedlocalesof)
+- [`Intl.DateTimeFormat.supportedLocalesOf()`](datetimeformat/supportedlocalesof)
+- [`Intl.Collator.supportedLocalesOf()`](collator/supportedlocalesof)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/getCanonicalLocales" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/getCanonicalLocales</a>
 
@@ -37115,9 +37115,9 @@ The second statement below assigns the value 25 to the variable `day`, based on 
 
 ## See also
 
--   [`Date.prototype.getUTCDate()`](getutcdate)
--   [`Date.prototype.getUTCDay()`](getutcday)
--   [`Date.prototype.setDate()`](setdate)
+- [`Date.prototype.getUTCDate()`](getutcdate)
+- [`Date.prototype.getUTCDay()`](getutcday)
+- [`Date.prototype.setDate()`](setdate)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getDate" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getDate</a>
 
@@ -37187,9 +37187,9 @@ The second statement below assigns the value 1 to `weekday`, based on the value 
 
 ## See also
 
--   [`Date.prototype.getUTCDate()`](getutcdate)
--   [`Date.prototype.getUTCDay()`](getutcday)
--   [`Date.prototype.setDate()`](setdate)
+- [`Date.prototype.getUTCDate()`](getutcdate)
+- [`Date.prototype.getUTCDay()`](getutcday)
+- [`Date.prototype.setDate()`](setdate)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getDay" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getDay</a>
 
@@ -37266,8 +37266,8 @@ There is no alignment constraint; multi-byte values may be fetched from any offs
 
 ## See also
 
--   [`DataView`](../dataview)
--   [`ArrayBuffer`](../arraybuffer)
+- [`DataView`](../dataview)
+- [`ArrayBuffer`](../arraybuffer)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/getFloat32" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/getFloat32</a>
 
@@ -37344,8 +37344,8 @@ There is no alignment constraint; multi-byte values may be fetched from any offs
 
 ## See also
 
--   [`DataView`](../dataview)
--   [`ArrayBuffer`](../arraybuffer)
+- [`DataView`](../dataview)
+- [`ArrayBuffer`](../arraybuffer)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/getFloat64" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/getFloat64</a>
 
@@ -37411,9 +37411,9 @@ The following example assigns the four-digit value of the current year to the va
 
 ## See also
 
--   [`Date.prototype.getUTCFullYear()`](getutcfullyear)
--   [`Date.prototype.setFullYear()`](setfullyear)
--   [`Date.prototype.getYear()`](getyear)
+- [`Date.prototype.getUTCFullYear()`](getutcfullyear)
+- [`Date.prototype.setFullYear()`](setfullyear)
+- [`Date.prototype.getYear()`](getyear)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getFullYear" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getFullYear</a>
 
@@ -37475,8 +37475,8 @@ The second statement below assigns the value 23 to the variable `hours`, based o
 
 ## See also
 
--   [`Date.prototype.getUTCHours()`](getutchours)
--   [`Date.prototype.setHours()`](sethours)
+- [`Date.prototype.getUTCHours()`](getutchours)
+- [`Date.prototype.setHours()`](sethours)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getHours" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getHours</a>
 
@@ -37553,8 +37553,8 @@ There is no alignment constraint; multi-byte values may be fetched from any offs
 
 ## See also
 
--   [`DataView`](../dataview)
--   [`ArrayBuffer`](../arraybuffer)
+- [`DataView`](../dataview)
+- [`ArrayBuffer`](../arraybuffer)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/getInt16" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/getInt16</a>
 
@@ -37631,8 +37631,8 @@ There is no alignment constraint; multi-byte values may be fetched from any offs
 
 ## See also
 
--   [`DataView`](../dataview)
--   [`ArrayBuffer`](../arraybuffer)
+- [`DataView`](../dataview)
+- [`ArrayBuffer`](../arraybuffer)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/getInt32" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/getInt32</a>
 
@@ -37705,8 +37705,8 @@ There is no alignment constraint; multi-byte values may be fetched from any offs
 
 ## See also
 
--   [`DataView`](../dataview)
--   [`ArrayBuffer`](../arraybuffer)
+- [`DataView`](../dataview)
+- [`ArrayBuffer`](../arraybuffer)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/getInt8" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/getInt8</a>
 
@@ -37766,8 +37766,8 @@ The following example assigns the milliseconds portion of the current time to th
 
 ## See also
 
--   [`Date.prototype.getUTCMilliseconds()`](getutcmilliseconds)
--   [`Date.prototype.setMilliseconds()`](setmilliseconds)
+- [`Date.prototype.getUTCMilliseconds()`](getutcmilliseconds)
+- [`Date.prototype.setMilliseconds()`](setmilliseconds)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getMilliseconds" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getMilliseconds</a>
 
@@ -37829,8 +37829,8 @@ The second statement below assigns the value 15 to the variable `minutes`, based
 
 ## See also
 
--   [`Date.prototype.getUTCMinutes()`](getutcminutes)
--   [`Date.prototype.setMinutes()`](setminutes)
+- [`Date.prototype.getUTCMinutes()`](getutcminutes)
+- [`Date.prototype.setMinutes()`](setminutes)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getMinutes" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getMinutes</a>
 
@@ -37900,8 +37900,8 @@ The second statement below assigns the value 11 to the variable `month`, based o
 
 ## See also
 
--   [`Date.prototype.getUTCMonth()`](getutcmonth)
--   [`Date.prototype.setMonth()`](setmonth)
+- [`Date.prototype.getUTCMonth()`](getutcmonth)
+- [`Date.prototype.setMonth()`](setmonth)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getMonth" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getMonth</a>
 
@@ -38050,8 +38050,8 @@ In Internet Explorer 8, this was only supported on DOM objects and with some non
 
 ## See also
 
--   [`Object.defineProperty()`](defineproperty)
--   [`Reflect.getOwnPropertyDescriptor()`](../reflect/getownpropertydescriptor)
+- [`Object.defineProperty()`](defineproperty)
+- [`Reflect.getOwnPropertyDescriptor()`](../reflect/getownpropertydescriptor)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -38160,9 +38160,9 @@ No
 
 ## See also
 
--   [`Object.getOwnPropertyDescriptor()`](getownpropertydescriptor)
--   [`Object.defineProperty()`](defineproperty)
--   [Polyfill](https://github.com/tc39/proposal-object-getownpropertydescriptors)
+- [`Object.getOwnPropertyDescriptor()`](getownpropertydescriptor)
+- [`Object.defineProperty()`](defineproperty)
+- [Polyfill](https://github.com/tc39/proposal-object-getownpropertydescriptors)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -38309,12 +38309,12 @@ This uses the [`Array.prototype.filter()`](../array/filter) function to remove t
 
 ## See also
 
--   [Enumerability and ownership of properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
--   [`Object.prototype.hasOwnProperty()`](hasownproperty)
--   [`Object.prototype.propertyIsEnumerable()`](propertyisenumerable)
--   [`Object.create()`](create)
--   [`Object.keys()`](keys)
--   [`Array.forEach()`](../array/foreach)
+- [Enumerability and ownership of properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
+- [`Object.prototype.hasOwnProperty()`](hasownproperty)
+- [`Object.prototype.propertyIsEnumerable()`](propertyisenumerable)
+- [`Object.create()`](create)
+- [`Object.keys()`](keys)
+- [`Array.forEach()`](../array/foreach)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -38395,8 +38395,8 @@ No
 
 ## See also
 
--   [`Object.getOwnPropertyNames()`](getownpropertynames)
--   [`Symbol`](../symbol)
+- [`Object.getOwnPropertyNames()`](getownpropertynames)
+- [`Symbol`](../symbol)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -38431,18 +38431,18 @@ The `getPrototypeOf()` method must return an object or `null`.
 
 This trap can intercept these operations:
 
--   [`Object.getPrototypeOf()`](../../object/getprototypeof)
--   [`Reflect.getPrototypeOf()`](../../reflect/getprototypeof)
--   [`__proto__`](../../object/proto)
--   [`Object.prototype.isPrototypeOf()`](../../object/isprototypeof)
--   [`instanceof`](../../../operators/instanceof)
+- [`Object.getPrototypeOf()`](../../object/getprototypeof)
+- [`Reflect.getPrototypeOf()`](../../reflect/getprototypeof)
+- [`__proto__`](../../object/proto)
+- [`Object.prototype.isPrototypeOf()`](../../object/isprototypeof)
+- [`instanceof`](../../../operators/instanceof)
 
 ### Invariants
 
 If the following invariants are violated, the proxy will throw a [`TypeError`](../../typeerror):
 
--   `getPrototypeOf()` method must return an object or `null`.
--   If `target` is not extensible, `Object.getPrototypeOf(proxy)` method must return the same value as `Object.getPrototypeOf(target)`.
+- `getPrototypeOf()` method must return an object or `null`.
+- If `target` is not extensible, `Object.getPrototypeOf(proxy)` method must return the same value as `Object.getPrototypeOf(target)`.
 
 ## Examples
 
@@ -38530,10 +38530,10 @@ No
 
 ## See also
 
--   [`Proxy`](../../proxy)
--   [`handler`](../proxy)
--   [`Object.getPrototypeOf()`](../../object/getprototypeof)
--   [`Reflect.getPrototypeOf()`](../../reflect/getprototypeof)
+- [`Proxy`](../../proxy)
+- [`handler`](../proxy)
+- [`Object.getPrototypeOf()`](../../object/getprototypeof)
+- [`Reflect.getPrototypeOf()`](../../reflect/getprototypeof)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -38597,8 +38597,8 @@ The second statement below assigns the value 30 to the variable `seconds`, based
 
 ## See also
 
--   [`Date.prototype.getUTCSeconds()`](getutcseconds)
--   [`Date.prototype.setSeconds()`](setseconds)
+- [`Date.prototype.getUTCSeconds()`](getutcseconds)
+- [`Date.prototype.setSeconds()`](setseconds)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getSeconds" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getSeconds</a>
 
@@ -38674,8 +38674,8 @@ To fix this error, you will either need to remove line 16, where there is an att
 
 ## See also
 
--   [`Object.defineProperty()`](../global_objects/object/defineproperty)
--   [`Object.defineProperties()`](../global_objects/object/defineproperties)
+- [`Object.defineProperty()`](../global_objects/object/defineproperty)
+- [`Object.defineProperties()`](../global_objects/object/defineproperties)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Getter_only" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Getter_only</a>
 
@@ -38777,9 +38777,9 @@ Subtracting two subsequent `getTime()` calls on newly generated [`Date`](../date
 
 ## See also
 
--   [`Date.prototype.setTime()`](settime)
--   [`Date.prototype.valueOf()`](valueof)
--   [`Date.now()`](now)
+- [`Date.prototype.setTime()`](settime)
+- [`Date.prototype.valueOf()`](valueof)
+- [`Date.now()`](now)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime</a>
 
@@ -38811,8 +38811,8 @@ In a time zone that annually shifts in and out of Daylight Saving Time (DST), th
 
 Consider a given local time zone and a date date1 that are both in DST, and consider minutes, the number of minutes returned by calling `date1.getTimezoneOffset()`; then:
 
--   If the local time zone is currently in DST, but a given date date2 is _not_ in DST, then the number of minutes returned by `date2.getTimezoneOffset()` is minutes ± 60.
--   If the local time zone is _not_ currently in DST, but a given date date3 is in DST, then the number of minutes returned by `date3.getTimezoneOffset()` is minutes ± 60.
+- If the local time zone is currently in DST, but a given date date2 is _not_ in DST, then the number of minutes returned by `date2.getTimezoneOffset()` is minutes ± 60.
+- If the local time zone is _not_ currently in DST, but a given date date3 is in DST, then the number of minutes returned by `date3.getTimezoneOffset()` is minutes ± 60.
 
 In a time zone that doesn't annually shift in and out of Daylight Saving Time (DST), the number of minutes returned by calling `getTimezoneOffset()` always returns the same number of minutes, regardless of the date instance it's called from.
 
@@ -38863,7 +38863,7 @@ In a time zone that doesn't annually shift in and out of Daylight Saving Time (D
 
 ## See also
 
--   [`Date`](../date)
+- [`Date`](../date)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTimezoneOffset" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTimezoneOffset</a>
 
@@ -38940,8 +38940,8 @@ There is no alignment constraint; multi-byte values may be fetched from any offs
 
 ## See also
 
--   [`DataView`](../dataview)
--   [`ArrayBuffer`](../arraybuffer)
+- [`DataView`](../dataview)
+- [`ArrayBuffer`](../arraybuffer)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/getUint16" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/getUint16</a>
 
@@ -39018,8 +39018,8 @@ There is no alignment constraint; multi-byte values may be fetched from any offs
 
 ## See also
 
--   [`DataView`](../dataview)
--   [`ArrayBuffer`](../arraybuffer)
+- [`DataView`](../dataview)
+- [`ArrayBuffer`](../arraybuffer)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/getUint32" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/getUint32</a>
 
@@ -39092,8 +39092,8 @@ There is no alignment constraint; multi-byte values may be fetched from any offs
 
 ## See also
 
--   [`DataView`](../dataview)
--   [`ArrayBuffer`](../arraybuffer)
+- [`DataView`](../dataview)
+- [`ArrayBuffer`](../arraybuffer)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/getUint8" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/getUint8</a>
 
@@ -39153,9 +39153,9 @@ The following example assigns the day of month of the current date to the variab
 
 ## See also
 
--   [`Date.prototype.getUTCDate()`](getutcdate)
--   [`Date.prototype.getDay()`](getday)
--   [`Date.prototype.setUTCDate()`](setutcdate)
+- [`Date.prototype.getUTCDate()`](getutcdate)
+- [`Date.prototype.getDay()`](getday)
+- [`Date.prototype.setUTCDate()`](setutcdate)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCDate" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCDate</a>
 
@@ -39215,9 +39215,9 @@ The following example assigns the weekday portion of the current date to the var
 
 ## See also
 
--   [`Date.prototype.getUTCDate()`](getutcdate)
--   [`Date.prototype.getDay()`](getday)
--   [`Date.prototype.setUTCDate()`](setutcdate)
+- [`Date.prototype.getUTCDate()`](getutcdate)
+- [`Date.prototype.getDay()`](getday)
+- [`Date.prototype.setUTCDate()`](setutcdate)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCDay" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCDay</a>
 
@@ -39281,8 +39281,8 @@ The following example assigns the four-digit value of the current year to the va
 
 ## See also
 
--   [`Date.prototype.getFullYear()`](getfullyear)
--   [`Date.prototype.setFullYear()`](setfullyear)
+- [`Date.prototype.getFullYear()`](getfullyear)
+- [`Date.prototype.setFullYear()`](setfullyear)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCFullYear" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCFullYear</a>
 
@@ -39342,8 +39342,8 @@ The following example assigns the hours portion of the current time to the varia
 
 ## See also
 
--   [`Date.prototype.getHours()`](gethours)
--   [`Date.prototype.setUTCHours()`](setutchours)
+- [`Date.prototype.getHours()`](gethours)
+- [`Date.prototype.setUTCHours()`](setutchours)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCHours" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCHours</a>
 
@@ -39405,8 +39405,8 @@ The following example assigns the milliseconds portion of the current time to th
 
 ## See also
 
--   [`Date.prototype.getMilliseconds()`](getmilliseconds)
--   [`Date.prototype.setUTCMilliseconds()`](setutcmilliseconds)
+- [`Date.prototype.getMilliseconds()`](getmilliseconds)
+- [`Date.prototype.setUTCMilliseconds()`](setutcmilliseconds)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCMilliseconds" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCMilliseconds</a>
 
@@ -39466,8 +39466,8 @@ The following example assigns the minutes portion of the current time to the var
 
 ## See also
 
--   [`Date.prototype.getMinutes()`](getminutes)
--   [`Date.prototype.setUTCMinutes()`](setutcminutes)
+- [`Date.prototype.getMinutes()`](getminutes)
+- [`Date.prototype.setUTCMinutes()`](setutcminutes)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCMinutes" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCMinutes</a>
 
@@ -39527,8 +39527,8 @@ The following example assigns the month portion of the current date to the varia
 
 ## See also
 
--   [`Date.prototype.getMonth()`](getmonth)
--   [`Date.prototype.setUTCMonth()`](setutcmonth)
+- [`Date.prototype.getMonth()`](getmonth)
+- [`Date.prototype.setUTCMonth()`](setutcmonth)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCMonth" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCMonth</a>
 
@@ -39588,8 +39588,8 @@ The following example assigns the seconds portion of the current time to the var
 
 ## See also
 
--   [`Date.prototype.getSeconds()`](getseconds)
--   [`Date.prototype.setUTCSeconds()`](setutcseconds)
+- [`Date.prototype.getSeconds()`](getseconds)
+- [`Date.prototype.setUTCSeconds()`](setutcseconds)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCSeconds" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCSeconds</a>
 
@@ -39611,9 +39611,9 @@ A number representing the year of the given date, according to local time, minus
 
 ## Description
 
--   For years greater than or equal to 2000, the value returned by `getYear()` is 100 or greater. For example, if the year is 2026, `getYear()` returns 126.
--   For years between and including 1900 and 1999, the value returned by `getYear()` is between 0 and 99. For example, if the year is 1976, `getYear()` returns 76.
--   For years less than 1900, the value returned by `getYear()` is less than 0. For example, if the year is 1800, `getYear()` returns -100.
+- For years greater than or equal to 2000, the value returned by `getYear()` is 100 or greater. For example, if the year is 2026, `getYear()` returns 126.
+- For years between and including 1900 and 1999, the value returned by `getYear()` is between 0 and 99. For example, if the year is 1976, `getYear()` returns 76.
+- For years less than 1900, the value returned by `getYear()` is less than 0. For example, if the year is 1800, `getYear()` returns -100.
 
 To take into account years before and after 2000, you should use [`getFullYear()`](getfullyear) instead of `getYear()` so that the year is specified in full.
 
@@ -39623,8 +39623,8 @@ To take into account years before and after 2000, you should use [`getFullYear()
 
 The `getYear()` method returns either a 2-digit or 4-digit year:
 
--   For years between and including 1900 and 1999, the value returned by `getYear()` is the year minus 1900. For example, if the year is 1976, the value returned is 76.
--   For years less than 1900 or greater than 1999, the value returned by `getYear()` is the four-digit year. For example, if the year is 1856, the value returned is 1856. If the year is 2026, the value returned is 2026.
+- For years between and including 1900 and 1999, the value returned by `getYear()` is the year minus 1900. For example, if the year is 1976, the value returned is 76.
+- For years less than 1900 or greater than 1999, the value returned by `getYear()` is the four-digit year. For example, if the year is 1856, the value returned is 1856. If the year is 2026, the value returned is 2026.
 
 ## Examples
 
@@ -39692,9 +39692,9 @@ The third statement assigns the value 95 to the variable `year`, representing th
 
 ## See also
 
--   [`Date.prototype.getFullYear()`](getfullyear)
--   [`Date.prototype.getUTCFullYear()`](getutcfullyear)
--   [`Date.prototype.setYear()`](setyear)
+- [`Date.prototype.getFullYear()`](getfullyear)
+- [`Date.prototype.getUTCFullYear()`](getutcfullyear)
+- [`Date.prototype.setYear()`](setyear)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getYear" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getYear</a>
 
@@ -39711,8 +39711,8 @@ A `WebAssembly.Global()` constructor creates a new `Global` object representing 
 _descriptor_  
 A `GlobalDescriptor` dictionary object, which contains two properties:
 
--   `value`: A [`USVString`](https://developer.mozilla.org/en-US/docs/Web/API/USVString) representing the data type of the global. This can be one of `i32`, `i64`, `f32`, and `f64`. USVString corresponds to the set of all possible sequences of unicode scalar values. USVString maps to a String when returned in JavaScript; it's generally only used for APIs that perform text processing and need a string of unicode scalar values to operate on. USVString is equivalent to DOMString except for not allowing unpaired surrogate codepoints. Unpaired surrogate codepoints present in USVString are converted by the browser to Unicode 'replacement character' U+FFFD, (�).
--   `mutable`: A boolean value that determines whether the global is mutable or not. By default, this is `false`.
+- `value`: A [`USVString`](https://developer.mozilla.org/en-US/docs/Web/API/USVString) representing the data type of the global. This can be one of `i32`, `i64`, `f32`, and `f64`. USVString corresponds to the set of all possible sequences of unicode scalar values. USVString maps to a String when returned in JavaScript; it's generally only used for APIs that perform text processing and need a string of unicode scalar values to operate on. USVString is equivalent to DOMString except for not allowing unpaired surrogate codepoints. Unpaired surrogate codepoints present in USVString are converted by the browser to Unicode 'replacement character' U+FFFD, (�).
+- `mutable`: A boolean value that determines whether the global is mutable or not. By default, this is `false`.
 
 _value_  
 The value the variable contains. This can be any value, as long as its type matches the variable's data type. If no value is specified, a typed 0 value is used, as specified by the [`DefaultValue` algorithm](https://webassembly.github.io/spec/js-api/#defaultvalue).
@@ -39785,10 +39785,10 @@ No
 
 ## See also
 
--   [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
--   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
--   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
--   [Import/Export mutable globals proposal](https://github.com/WebAssembly/mutable-global/blob/master/proposals/mutable-global/Overview.md)
+- [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
+- [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
+- [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
+- [Import/Export mutable globals proposal](https://github.com/WebAssembly/mutable-global/blob/master/proposals/mutable-global/Overview.md)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -39887,7 +39887,7 @@ No
 
 ## See also
 
--   [`this`](../operators/this)
+- [`this`](../operators/this)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/globalThis" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/globalThis</a>
 
@@ -39986,9 +39986,9 @@ The operands are compared using the [Abstract Relational Comparison](https://tc3
 
 ## See also
 
--   [Greater than or equal operator](greater_than_or_equal)
--   [Less than operator](less_than)
--   [Less than or equal operator](less_than_or_equal)
+- [Greater than or equal operator](greater_than_or_equal)
+- [Less than operator](less_than)
+- [Less than or equal operator](less_than_or_equal)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -40088,9 +40088,9 @@ The operands are compared using the [Abstract Relational Comparison](https://tc3
 
 ## See also
 
--   [Greater than operator](greater_than)
--   [Less than operator](less_than)
--   [Less than or equal operator](less_than_or_equal)
+- [Greater than operator](greater_than)
+- [Less than operator](less_than)
+- [Less than or equal operator](less_than_or_equal)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -40165,9 +40165,9 @@ Overriding multiplication and division first, then addition and subtraction to e
 
 ## See also
 
--   [Operator precedence](operator_precedence)
--   [`delete`](delete)
--   [`typeof`](typeof)
+- [Operator precedence](operator_precedence)
+- [`delete`](delete)
+- [`typeof`](typeof)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -40246,9 +40246,9 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 
 ## See also
 
--   [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
--   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
--   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
+- [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
+- [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
+- [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -40287,17 +40287,17 @@ The `handler.has()` method is a trap for the [`in`](../../../operators/in) opera
 
 This trap can intercept these operations:
 
--   Property query: `foo in proxy`
--   Inherited property query: `foo in Object.create(proxy)`
--   `with` check: `with(proxy) { (foo); }`
--   [`Reflect.has()`](../../reflect/has)
+- Property query: `foo in proxy`
+- Inherited property query: `foo in Object.create(proxy)`
+- `with` check: `with(proxy) { (foo); }`
+- [`Reflect.has()`](../../reflect/has)
 
 ### Invariants
 
 If the following invariants are violated, the proxy will throw a [`TypeError`](../../typeerror):
 
--   A property cannot be reported as non-existent, if it exists as a non-configurable own property of the target object.
--   A property cannot be reported as non-existent, if it exists as an own property of the target object and the target object is not extensible.
+- A property cannot be reported as non-existent, if it exists as a non-configurable own property of the target object.
+- A property cannot be reported as non-existent, if it exists as an own property of the target object and the target object is not extensible.
 
 ## Examples
 
@@ -40363,10 +40363,10 @@ No
 
 ## See also
 
--   [`Proxy`](../../proxy)
--   [`handler`](../proxy)
--   [`in`](../../../operators/in) operator
--   [`Reflect.has()`](../../reflect/has)
+- [`Proxy`](../../proxy)
+- [`handler`](../proxy)
+- [`in`](../../../operators/in) operator
+- [`Reflect.has()`](../../reflect/has)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -40423,7 +40423,7 @@ This can be fixed by moving the private field back into the class
 
 ## See also
 
--   [`SyntaxError`](../global_objects/syntaxerror)
+- [`SyntaxError`](../global_objects/syntaxerror)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Hash_outside_class" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Hash_outside_class</a>
 
@@ -40537,15 +40537,15 @@ No
 
 ## See also
 
--   [`RegExp.lastIndex`](lastindex)
--   [`RegExp.prototype.exec()`](exec)
--   [`RegExp.prototype.dotAll`](dotall)
--   [`RegExp.prototype.global`](global)
--   [`RegExp.prototype.ignoreCase`](ignorecase)
--   [`RegExp.prototype.multiline`](multiline)
--   [`RegExp.prototype.source`](source)
--   [`RegExp.prototype.sticky`](sticky)
--   [`RegExp.prototype.unicode`](unicode)
+- [`RegExp.lastIndex`](lastindex)
+- [`RegExp.prototype.exec()`](exec)
+- [`RegExp.prototype.dotAll`](dotall)
+- [`RegExp.prototype.global`](global)
+- [`RegExp.prototype.ignoreCase`](ignorecase)
+- [`RegExp.prototype.multiline`](multiline)
+- [`RegExp.prototype.source`](source)
+- [`RegExp.prototype.sticky`](sticky)
+- [`RegExp.prototype.unicode`](unicode)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -40635,7 +40635,7 @@ No
 
 ## See also
 
--   [`instanceof`](../../operators/instanceof)
+- [`instanceof`](../../operators/instanceof)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -40769,11 +40769,11 @@ Note that in the last case there are no newly created objects.
 
 ## See also
 
--   [Enumerability and ownership of properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
--   [`Object.getOwnPropertyNames()`](getownpropertynames)
--   [`for...in`](../../statements/for...in)
--   [`in`](../../operators/in)
--   [JavaScript Guide: Inheritance revisited](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
+- [Enumerability and ownership of properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
+- [`Object.getOwnPropertyNames()`](getownpropertynames)
+- [`for...in`](../../statements/for...in)
+- [`in`](../../operators/in)
+- [JavaScript Guide: Inheritance revisited](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -40844,8 +40844,8 @@ No
 
 ## See also
 
--   [`Intl.Locale`](../locale)
--   [Unicode Hour Cycle extension key spec](https://www.unicode.org/reports/tr35/#UnicodeHourCycleIdentifier)
+- [`Intl.Locale`](../locale)
+- [Unicode Hour Cycle extension key spec](https://www.unicode.org/reports/tr35/#UnicodeHourCycleIdentifier)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/hourCycle" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/hourCycle</a>
 
@@ -40967,9 +40967,9 @@ No
 
 ## See also
 
--   [`Math.abs()`](abs)
--   [`Math.pow()`](pow)
--   [`Math.sqrt()`](sqrt)
+- [`Math.abs()`](abs)
+- [`Math.pow()`](pow)
+- [`Math.sqrt()`](sqrt)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -41017,8 +41017,8 @@ You will need to rename your variable to avoid the leading number.
 
 ## See also
 
--   [Lexical grammar](../lexical_grammar)
--   [Variables](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#variables) in the [JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
+- [Lexical grammar](../lexical_grammar)
+- [Variables](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#variables) in the [JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Identifier_after_number" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Identifier_after_number</a>
 
@@ -41153,9 +41153,9 @@ If you need to use an assignment in a conditional expression, a common practice 
 
 ## See also
 
--   [`block`](block)
--   [`switch`](switch)
--   [Conditional operator](../operators/conditional_operator)
+- [`block`](block)
+- [`switch`](switch)
+- [Conditional operator](../operators/conditional_operator)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -41254,14 +41254,14 @@ You cannot change this property directly.
 
 ## See also
 
--   [`RegExp.lastIndex`](lastindex)
--   [`RegExp.prototype.dotAll`](dotall)
--   [`RegExp.prototype.global`](global)
--   [`RegExp.prototype.hasIndices`](hasindices)
--   [`RegExp.prototype.multiline`](multiline)
--   [`RegExp.prototype.source`](source)
--   [`RegExp.prototype.sticky`](sticky)
--   [`RegExp.prototype.unicode`](unicode)
+- [`RegExp.lastIndex`](lastindex)
+- [`RegExp.prototype.dotAll`](dotall)
+- [`RegExp.prototype.global`](global)
+- [`RegExp.prototype.hasIndices`](hasindices)
+- [`RegExp.prototype.multiline`](multiline)
+- [`RegExp.prototype.source`](source)
+- [`RegExp.prototype.sticky`](sticky)
+- [`RegExp.prototype.unicode`](unicode)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -41332,7 +41332,7 @@ When inspecting this code in an editor like Vim, you can see that there is actua
 
 ## See also
 
--   [Lexical grammar](../lexical_grammar)
+- [Lexical grammar](../lexical_grammar)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Illegal_character" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Illegal_character</a>
 
@@ -41464,11 +41464,11 @@ When importing a default export with [dynamic imports](#dynamic_imports), it wor
 
 The standard import syntax is static and will always result in all code in the imported module being evaluated at load time. In situations where you wish to load a module conditionally or on demand, you can use a dynamic import instead. The following are some reasons why you might need to use dynamic import:
 
--   When importing statically significantly slows the loading of your code and there is a low likelihood that you will need the code you are importing, or you will not need it until a later time.
--   When importing statically significantly increases your program's memory usage and there is a low likelihood that you will need the code you are importing.
--   When the module you are importing does not exist at load time
--   When the import specifier string needs to be constructed dynamically. (Static import only supports static specifiers.)
--   When the module being imported has side effects, and you do not want those side effects unless some condition is true. (It is recommended not to have any side effects in a module, but you sometimes cannot control this in your module dependencies.)
+- When importing statically significantly slows the loading of your code and there is a low likelihood that you will need the code you are importing, or you will not need it until a later time.
+- When importing statically significantly increases your program's memory usage and there is a low likelihood that you will need the code you are importing.
+- When the module you are importing does not exist at load time
+- When the import specifier string needs to be constructed dynamically. (Static import only supports static specifiers.)
+- When the module being imported has side effects, and you do not want those side effects unless some condition is true. (It is recommended not to have any side effects in a module, but you sometimes cannot control this in your module dependencies.)
 
 Use dynamic import only when necessary. The static form is preferable for loading initial dependencies, and can benefit more readily from static analysis tools and [tree shaking](https://developer.mozilla.org/en-US/docs/Glossary/Tree_shaking).
 
@@ -41633,13 +41633,13 @@ No
 
 ## See also
 
--   [`export`](export)
--   [`import.meta`](import.meta)
--   Limin Zhu, Brian Terlson and Microsoft Edge Team: [Previewing ES6 Modules and more from ES2015, ES2016 and beyond](https://blogs.windows.com/msedgedev/2016/05/17/es6-modules-and-beyond/)
--   Hacks blog post by Jason Orendorff: [ES6 in Depth: Modules](https://hacks.mozilla.org/2015/08/es6-in-depth-modules/)
--   Hacks blog post by Lin Clark: [ES modules: A cartoon deep-dive](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/)
--   Axel Rauschmayer's book: ["Exploring JS: Modules"](https://exploringjs.com/es6/ch_modules.html)
--   The Modern JavaScript Tutorial(javascript.info): [Export and Import](https://javascript.info/import-export)
+- [`export`](export)
+- [`import.meta`](import.meta)
+- Limin Zhu, Brian Terlson and Microsoft Edge Team: [Previewing ES6 Modules and more from ES2015, ES2016 and beyond](https://blogs.windows.com/msedgedev/2016/05/17/es6-modules-and-beyond/)
+- Hacks blog post by Jason Orendorff: [ES6 in Depth: Modules](https://hacks.mozilla.org/2015/08/es6-in-depth-modules/)
+- Hacks blog post by Lin Clark: [ES modules: A cartoon deep-dive](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/)
+- Axel Rauschmayer's book: ["Exploring JS: Modules"](https://exploringjs.com/es6/ch_modules.html)
+- The Modern JavaScript Tutorial(javascript.info): [Export and Import](https://javascript.info/import-export)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -41736,8 +41736,8 @@ No
 
 ## See also
 
--   [`import`](import)
--   [`export`](export)
+- [`import`](import)
+- [`export`](export)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -41819,9 +41819,9 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 
 ## See also
 
--   [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
--   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
--   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
+- [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
+- [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
+- [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -41930,7 +41930,7 @@ No
 
 ## See also
 
--   [Emscripten](https://en.wikipedia.org/wiki/Emscripten)
+- [Emscripten](https://en.wikipedia.org/wiki/Emscripten)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -42058,11 +42058,11 @@ The `in` operator returns `true` for properties in the prototype chain. (If you 
 
 ## See also
 
--   `for...in`
--   `delete`
--   [`Object.prototype.hasOwnProperty()`](../global_objects/object/hasownproperty)
--   [`Reflect.has()`](../global_objects/reflect/has)
--   [Enumerability and ownership of properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
+- `for...in`
+- `delete`
+- [`Object.prototype.hasOwnProperty()`](../global_objects/object/hasownproperty)
+- [`Reflect.has()`](../global_objects/reflect/has)
+- [Enumerability and ownership of properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -42127,7 +42127,7 @@ Be careful when using the `in` operator to search in [`Array`](../global_objects
 
 ## See also
 
--   [`in` operator](../operators/in)
+- [`in` operator](../operators/in)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/in_operator_no_object" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/in_operator_no_object</a>
 
@@ -42240,11 +42240,11 @@ No
 
 ## See also
 
--   [`TypedArray.prototype.includes()`](../typedarray/includes)
--   [`String.prototype.includes()`](../string/includes)
--   [`Array.prototype.indexOf()`](indexof)
--   [`Array.prototype.find()`](find)
--   [`Array.prototype.findIndex()`](findindex)
+- [`TypedArray.prototype.includes()`](../typedarray/includes)
+- [`String.prototype.includes()`](../string/includes)
+- [`Array.prototype.indexOf()`](indexof)
+- [`Array.prototype.find()`](find)
+- [`Array.prototype.findIndex()`](findindex)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes</a>
 
@@ -42315,15 +42315,15 @@ If used prefix, with operator before operand (for example, `++x`), the increment
 
 ## See also
 
--   [Addition operator](addition)
--   [Subtraction operator](subtraction)
--   [Division operator](division)
--   [Multiplication operator](multiplication)
--   [Remainder operator](remainder)
--   [Exponentiation operator](exponentiation)
--   [Decrement operator](decrement)
--   [Unary negation operator](unary_negation)
--   [Unary plus operator](unary_plus)
+- [Addition operator](addition)
+- [Subtraction operator](subtraction)
+- [Division operator](division)
+- [Multiplication operator](multiplication)
+- [Remainder operator](remainder)
+- [Exponentiation operator](exponentiation)
+- [Decrement operator](decrement)
+- [Unary negation operator](unary_negation)
+- [Unary plus operator](unary_plus)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -42339,120 +42339,120 @@ This part of the JavaScript section on MDN serves as a repository of facts about
 
 ### Value properties
 
--   [`Infinity`](global_objects/infinity)
--   [`NaN`](global_objects/nan)
--   [`undefined`](global_objects/undefined)
--   [`globalThis`](global_objects/globalthis)
+- [`Infinity`](global_objects/infinity)
+- [`NaN`](global_objects/nan)
+- [`undefined`](global_objects/undefined)
+- [`globalThis`](global_objects/globalthis)
 
 ### Function properties
 
--   [`eval()`](global_objects/eval)
--   [`isFinite()`](global_objects/isfinite)
--   [`isNaN()`](global_objects/isnan)
--   [`parseFloat()`](global_objects/parsefloat)
--   [`parseInt()`](global_objects/parseint)
--   [`decodeURI()`](global_objects/decodeuri)
--   [`decodeURIComponent()`](global_objects/decodeuricomponent)
--   [`encodeURI()`](global_objects/encodeuri)
--   [`encodeURIComponent()`](global_objects/encodeuricomponent)
+- [`eval()`](global_objects/eval)
+- [`isFinite()`](global_objects/isfinite)
+- [`isNaN()`](global_objects/isnan)
+- [`parseFloat()`](global_objects/parsefloat)
+- [`parseInt()`](global_objects/parseint)
+- [`decodeURI()`](global_objects/decodeuri)
+- [`decodeURIComponent()`](global_objects/decodeuricomponent)
+- [`encodeURI()`](global_objects/encodeuri)
+- [`encodeURIComponent()`](global_objects/encodeuricomponent)
 
 ### Fundamental objects
 
--   [`Object`](global_objects/object)
--   [`Function`](global_objects/function)
--   [`Boolean`](global_objects/boolean)
--   [`Symbol`](global_objects/symbol)
+- [`Object`](global_objects/object)
+- [`Function`](global_objects/function)
+- [`Boolean`](global_objects/boolean)
+- [`Symbol`](global_objects/symbol)
 
 ### Error objects
 
--   [`Error`](global_objects/error)
--   [`AggregateError`](global_objects/aggregateerror)
--   [`EvalError`](global_objects/evalerror)
--   [`InternalError`](global_objects/internalerror)
--   [`RangeError`](global_objects/rangeerror)
--   [`ReferenceError`](global_objects/referenceerror)
--   [`SyntaxError`](global_objects/syntaxerror)
--   [`TypeError`](global_objects/typeerror)
--   [`URIError`](global_objects/urierror)
+- [`Error`](global_objects/error)
+- [`AggregateError`](global_objects/aggregateerror)
+- [`EvalError`](global_objects/evalerror)
+- [`InternalError`](global_objects/internalerror)
+- [`RangeError`](global_objects/rangeerror)
+- [`ReferenceError`](global_objects/referenceerror)
+- [`SyntaxError`](global_objects/syntaxerror)
+- [`TypeError`](global_objects/typeerror)
+- [`URIError`](global_objects/urierror)
 
 ### Numbers & dates
 
--   [`Number`](global_objects/number)
--   [`BigInt`](global_objects/bigint)
--   [`Math`](global_objects/math)
--   [`Date`](global_objects/date)
+- [`Number`](global_objects/number)
+- [`BigInt`](global_objects/bigint)
+- [`Math`](global_objects/math)
+- [`Date`](global_objects/date)
 
 ### Text processing
 
--   [`String`](global_objects/string)
--   [`RegExp`](global_objects/regexp)
+- [`String`](global_objects/string)
+- [`RegExp`](global_objects/regexp)
 
 ### Indexed Collections
 
--   [`Array`](global_objects/array)
--   [`Int8Array`](global_objects/int8array)
--   [`Uint8Array`](global_objects/uint8array)
--   [`Uint8ClampedArray`](global_objects/uint8clampedarray)
--   [`Int16Array`](global_objects/int16array)
--   [`Uint16Array`](global_objects/uint16array)
--   [`Int32Array`](global_objects/int32array)
--   [`Uint32Array`](global_objects/uint32array)
--   [`Float32Array`](global_objects/float32array)
--   [`Float64Array`](global_objects/float64array)
--   [`BigInt64Array`](global_objects/bigint64array)
--   [`BigUint64Array`](global_objects/biguint64array)
+- [`Array`](global_objects/array)
+- [`Int8Array`](global_objects/int8array)
+- [`Uint8Array`](global_objects/uint8array)
+- [`Uint8ClampedArray`](global_objects/uint8clampedarray)
+- [`Int16Array`](global_objects/int16array)
+- [`Uint16Array`](global_objects/uint16array)
+- [`Int32Array`](global_objects/int32array)
+- [`Uint32Array`](global_objects/uint32array)
+- [`Float32Array`](global_objects/float32array)
+- [`Float64Array`](global_objects/float64array)
+- [`BigInt64Array`](global_objects/bigint64array)
+- [`BigUint64Array`](global_objects/biguint64array)
 
 ### Keyed collections
 
--   [`Map`](global_objects/map)
--   [`Set`](global_objects/set)
--   [`WeakMap`](global_objects/weakmap)
--   [`WeakSet`](global_objects/weakset)
+- [`Map`](global_objects/map)
+- [`Set`](global_objects/set)
+- [`WeakMap`](global_objects/weakmap)
+- [`WeakSet`](global_objects/weakset)
 
 ### Structured data
 
--   [`ArrayBuffer`](global_objects/arraybuffer)
--   [`SharedArrayBuffer`](global_objects/sharedarraybuffer)
--   [`Atomics`](global_objects/atomics)
--   [`DataView`](global_objects/dataview)
--   [`JSON`](global_objects/json)
+- [`ArrayBuffer`](global_objects/arraybuffer)
+- [`SharedArrayBuffer`](global_objects/sharedarraybuffer)
+- [`Atomics`](global_objects/atomics)
+- [`DataView`](global_objects/dataview)
+- [`JSON`](global_objects/json)
 
 ### Control abstraction
 
--   [`GeneratorFunction`](global_objects/generatorfunction)
--   <span class="page-not-created">`AsyncGeneratorFunction`</span>
--   [`Generator`](global_objects/generator)
--   <span class="page-not-created">`AsyncGenerator`</span>
--   [`AsyncFunction`](global_objects/asyncfunction)
--   [`Promise`](global_objects/promise)
+- [`GeneratorFunction`](global_objects/generatorfunction)
+- <span class="page-not-created">`AsyncGeneratorFunction`</span>
+- [`Generator`](global_objects/generator)
+- <span class="page-not-created">`AsyncGenerator`</span>
+- [`AsyncFunction`](global_objects/asyncfunction)
+- [`Promise`](global_objects/promise)
 
 ### Reflection
 
--   [`Reflect`](global_objects/reflect)
--   [`Proxy`](global_objects/proxy)
+- [`Reflect`](global_objects/reflect)
+- [`Proxy`](global_objects/proxy)
 
 ### Internationalization
 
--   [`Intl`](global_objects/intl)
--   [`Intl.Collator`](global_objects/intl/collator)
--   [`Intl.DateTimeFormat`](global_objects/intl/datetimeformat)
--   [`Intl.DisplayNames`](global_objects/intl/displaynames)
--   [`Intl.ListFormat`](global_objects/intl/listformat)
--   [`Intl.Locale`](global_objects/intl/locale)
--   [`Intl.NumberFormat`](global_objects/intl/numberformat)
--   [`Intl.PluralRules`](global_objects/intl/pluralrules)
--   [`Intl.RelativeTimeFormat`](global_objects/intl/relativetimeformat)
+- [`Intl`](global_objects/intl)
+- [`Intl.Collator`](global_objects/intl/collator)
+- [`Intl.DateTimeFormat`](global_objects/intl/datetimeformat)
+- [`Intl.DisplayNames`](global_objects/intl/displaynames)
+- [`Intl.ListFormat`](global_objects/intl/listformat)
+- [`Intl.Locale`](global_objects/intl/locale)
+- [`Intl.NumberFormat`](global_objects/intl/numberformat)
+- [`Intl.PluralRules`](global_objects/intl/pluralrules)
+- [`Intl.RelativeTimeFormat`](global_objects/intl/relativetimeformat)
 
 ### WebAssembly
 
--   [`WebAssembly`](global_objects/webassembly)
--   [`WebAssembly.Module`](global_objects/webassembly/module)
--   [`WebAssembly.Instance`](global_objects/webassembly/instance)
--   [`WebAssembly.Memory`](global_objects/webassembly/memory)
--   [`WebAssembly.Table`](global_objects/webassembly/table)
--   [`WebAssembly.CompileError`](global_objects/webassembly/compileerror)
--   [`WebAssembly.LinkError`](global_objects/webassembly/linkerror)
--   [`WebAssembly.RuntimeError`](global_objects/webassembly/runtimeerror)
+- [`WebAssembly`](global_objects/webassembly)
+- [`WebAssembly.Module`](global_objects/webassembly/module)
+- [`WebAssembly.Instance`](global_objects/webassembly/instance)
+- [`WebAssembly.Memory`](global_objects/webassembly/memory)
+- [`WebAssembly.Table`](global_objects/webassembly/table)
+- [`WebAssembly.CompileError`](global_objects/webassembly/compileerror)
+- [`WebAssembly.LinkError`](global_objects/webassembly/linkerror)
+- [`WebAssembly.RuntimeError`](global_objects/webassembly/runtimeerror)
 
 ## Statements
 
@@ -42460,46 +42460,46 @@ This part of the JavaScript section on MDN serves as a repository of facts about
 
 ### Control flow
 
--   [`Block`](statements/block)
--   [`break`](statements/break)
--   [`continue`](statements/continue)
--   [`Empty`](statements/empty)
--   [`if...else`](statements/if...else)
--   [`switch`](statements/switch)
--   [`throw`](statements/throw)
--   [`try...catch`](statements/try...catch)
+- [`Block`](statements/block)
+- [`break`](statements/break)
+- [`continue`](statements/continue)
+- [`Empty`](statements/empty)
+- [`if...else`](statements/if...else)
+- [`switch`](statements/switch)
+- [`throw`](statements/throw)
+- [`try...catch`](statements/try...catch)
 
 ### Declarations
 
--   [`var`](statements/var)
--   [`let`](statements/let)
--   [`const`](statements/const)
+- [`var`](statements/var)
+- [`let`](statements/let)
+- [`const`](statements/const)
 
 ### Functions and classes
 
--   [`function`](statements/function)
--   [`function*`](statements/function*)
--   [`async function`](statements/async_function)
--   [`return`](statements/return)
--   [`class`](statements/class)
+- [`function`](statements/function)
+- [`function*`](statements/function*)
+- [`async function`](statements/async_function)
+- [`return`](statements/return)
+- [`class`](statements/class)
 
 ### Iterations
 
--   [`do...while`](statements/do...while)
--   [`for`](statements/for)
--   <span class="page-not-created">`for each...in`</span>
--   [`for...in`](statements/for...in)
--   [`for...of`](statements/for...of)
--   [`for await...of`](statements/for-await...of)
--   [`while`](statements/while)
+- [`do...while`](statements/do...while)
+- [`for`](statements/for)
+- <span class="page-not-created">`for each...in`</span>
+- [`for...in`](statements/for...in)
+- [`for...of`](statements/for...of)
+- [`for await...of`](statements/for-await...of)
+- [`while`](statements/while)
 
 ### Other
 
--   [`debugger`](statements/debugger)
--   [`export`](statements/export)
--   [`import`](statements/import)
--   [`label`](statements/label)
--   [`with`](statements/with)
+- [`debugger`](statements/debugger)
+- [`export`](statements/export)
+- [`import`](statements/import)
+- [`label`](statements/label)
+- [`with`](statements/with)
 
 ## Expressions and operators
 
@@ -42507,125 +42507,125 @@ This part of the JavaScript section on MDN serves as a repository of facts about
 
 ### Primary expressions
 
--   [`this`](operators/this)
--   [`function`](operators/function)
--   [`class`](operators/class)
--   [`function*`](operators/function*)
--   [`yield`](operators/yield)
--   [`yield*`](operators/yield*)
--   [`async function`](operators/async_function)
--   [`await`](operators/await)
--   [`[]`](global_objects/array)
--   [`{}`](operators/object_initializer)
--   [`/ab+c/i`](global_objects/regexp)
--   [`( )`](operators/grouping)
--   [`null`](global_objects/null)
+- [`this`](operators/this)
+- [`function`](operators/function)
+- [`class`](operators/class)
+- [`function*`](operators/function*)
+- [`yield`](operators/yield)
+- [`yield*`](operators/yield*)
+- [`async function`](operators/async_function)
+- [`await`](operators/await)
+- [`[]`](global_objects/array)
+- [`{}`](operators/object_initializer)
+- [`/ab+c/i`](global_objects/regexp)
+- [`( )`](operators/grouping)
+- [`null`](global_objects/null)
 
 ### Left-hand-side expressions
 
--   [Property accessors](operators/property_accessors)
--   [Optional chaining](operators/optional_chaining)
--   [`new`](operators/new)
--   [`new.target`](operators/new.target)
--   [`import.meta`](statements/import.meta)
--   [`super`](operators/super)
--   [`...obj`](operators/spread_syntax)
+- [Property accessors](operators/property_accessors)
+- [Optional chaining](operators/optional_chaining)
+- [`new`](operators/new)
+- [`new.target`](operators/new.target)
+- [`import.meta`](statements/import.meta)
+- [`super`](operators/super)
+- [`...obj`](operators/spread_syntax)
 
 ### Increment & decrement
 
--   [`A++`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#increment)
--   [`A--`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#decrement)
--   [`++A`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#increment)
--   [`--A`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#decrement)
+- [`A++`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#increment)
+- [`A--`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#decrement)
+- [`++A`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#increment)
+- [`--A`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#decrement)
 
 ### Unary operators
 
--   [`delete`](operators/delete)
--   [`void`](operators/void)
--   [`typeof`](operators/typeof)
--   [`+`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#unary_plus)
--   [`-`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#unary_negation)
--   [`~`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#bitwise_not)
--   [`!`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#logical_not)
+- [`delete`](operators/delete)
+- [`void`](operators/void)
+- [`typeof`](operators/typeof)
+- [`+`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#unary_plus)
+- [`-`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#unary_negation)
+- [`~`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#bitwise_not)
+- [`!`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#logical_not)
 
 ### Arithmetic operators
 
--   [`+`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#addition)
--   [`-`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#subtraction)
--   [`/`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#division)
--   [`*`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#multiplication)
--   [`%`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#remainder)
--   [`**`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#exponentiation)
+- [`+`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#addition)
+- [`-`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#subtraction)
+- [`/`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#division)
+- [`*`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#multiplication)
+- [`%`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#remainder)
+- [`**`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#exponentiation)
 
 ### Relational operators
 
--   [`in`](operators/in)
--   [`instanceof`](operators/instanceof)
--   [`<`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#less_than_operator)
--   [`>`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#greater_than_operator)
--   [`<=`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#less_than_or_equal_operator)
--   [`>=`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#greater_than_or_equal_operator)
+- [`in`](operators/in)
+- [`instanceof`](operators/instanceof)
+- [`<`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#less_than_operator)
+- [`>`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#greater_than_operator)
+- [`<=`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#less_than_or_equal_operator)
+- [`>=`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#greater_than_or_equal_operator)
 
 ### Equality operators
 
--   [`==`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#equality)
--   [`!=`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#inequality)
--   [`===`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#identity)
--   [`!==`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#nonidentity)
+- [`==`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#equality)
+- [`!=`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#inequality)
+- [`===`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#identity)
+- [`!==`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#nonidentity)
 
 ### Bitwise shift operators
 
--   [`<<`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#left_shift)
--   [`>>`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#right_shift)
--   [`>>>`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#unsigned_right_shift)
+- [`<<`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#left_shift)
+- [`>>`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#right_shift)
+- [`>>>`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#unsigned_right_shift)
 
 ### Binary bitwise operators
 
--   [`&`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#bitwise_and)
--   [`|`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#bitwise_or)
--   [`^`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#bitwise_xor)
+- [`&`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#bitwise_and)
+- [`|`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#bitwise_or)
+- [`^`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#bitwise_xor)
 
 ### Binary logical operators
 
--   [`&&`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#logical_and)
--   [`||`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#logical_or)
+- [`&&`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#logical_and)
+- [`||`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#logical_or)
 
 ### Conditional (ternary) operator
 
--   [`(condition ? ifTrue : ifFalse)`](operators/conditional_operator)
+- [`(condition ? ifTrue : ifFalse)`](operators/conditional_operator)
 
 ### Assignment operators
 
--   [`=`](#)
--   [`*=`](#)
--   [`/=`](#)
--   [`%=`](#)
--   [`+=`](#)
--   [`-=`](#)
--   [`<<=`](#)
--   [`>>=`](#)
--   [`>>>=`](#)
--   [`&=`](#)
--   [`^=`](#)
--   [`|=`](#)
--   [`[a, b] = [1, 2]`](operators/destructuring_assignment)
--   [`{a, b} = {a:1, b:2}`](operators/destructuring_assignment)
+- [`=`](#)
+- [`*=`](#)
+- [`/=`](#)
+- [`%=`](#)
+- [`+=`](#)
+- [`-=`](#)
+- [`<<=`](#)
+- [`>>=`](#)
+- [`>>>=`](#)
+- [`&=`](#)
+- [`^=`](#)
+- [`|=`](#)
+- [`[a, b] = [1, 2]`](operators/destructuring_assignment)
+- [`{a, b} = {a:1, b:2}`](operators/destructuring_assignment)
 
 ## Functions
 
 This chapter documents how to work with JavaScript functions to develop your applications.
 
--   [`arguments`](functions/arguments)
--   [Arrow functions](functions/arrow_functions)
--   [Default parameters](functions/default_parameters)
--   [Rest parameters](functions/rest_parameters)
+- [`arguments`](functions/arguments)
+- [Arrow functions](functions/arrow_functions)
+- [Default parameters](functions/default_parameters)
+- [Rest parameters](functions/rest_parameters)
 
 ## Additional reference pages
 
--   [Lexical grammar](lexical_grammar)
--   [Data types and data structures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
--   [Strict mode](strict_mode)
--   [Deprecated features](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Deprecated_and_obsolete_features)
+- [Lexical grammar](lexical_grammar)
+- [Data types and data structures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
+- [Strict mode](strict_mode)
+- [Deprecated features](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Deprecated_and_obsolete_features)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference</a>
 
@@ -42826,9 +42826,9 @@ However, if you are more interested in all the little technical bits defined by 
 
 ## See also
 
--   [`Array.prototype.lastIndexOf()`](lastindexof)
--   [`TypedArray.prototype.indexOf()`](../typedarray/indexof)
--   [`String.prototype.indexOf()`](../string/indexof)
+- [`Array.prototype.lastIndexOf()`](lastindexof)
+- [`TypedArray.prototype.indexOf()`](../typedarray/indexof)
+- [`String.prototype.indexOf()`](../string/indexof)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf</a>
 
@@ -42927,9 +42927,9 @@ To prevent this, and require that different types are considered to be different
 
 ## See also
 
--   [Equality operator](equality)
--   [Strict equality operator](strict_equality)
--   [Strict inequality operator](strict_inequality)
+- [Equality operator](equality)
+- [Strict equality operator](strict_equality)
+- [Strict inequality operator](strict_inequality)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -43009,9 +43009,9 @@ As defined by the ECMAScript 5 specification, `Infinity` is read-only (implement
 
 ## See also
 
--   [`Number.NEGATIVE_INFINITY`](number/negative_infinity)
--   [`Number.POSITIVE_INFINITY`](number/positive_infinity)
--   [`Number.isFinite`](number/isfinite)
+- [`Number.NEGATIVE_INFINITY`](number/negative_infinity)
+- [`Number.POSITIVE_INFINITY`](number/positive_infinity)
+- [`Number.isFinite`](number/isfinite)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity</a>
 
@@ -43165,9 +43165,9 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 
 ## See also
 
--   [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
--   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
--   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
+- [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
+- [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
+- [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -43352,9 +43352,9 @@ This will always be `false`. (`!mycar` will be evaluated before `instanceof`, so
 
 ## See also
 
--   `typeof`
--   [`Symbol.hasInstance`](../global_objects/symbol/hasinstance)
--   [`Object.prototype.isPrototypeOf`](../global_objects/object/isprototypeof)
+- `typeof`
+- [`Symbol.hasInstance`](../global_objects/symbol/hasinstance)
+- [`Object.prototype.isPrototypeOf`](../global_objects/object/isprototypeof)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -43364,8 +43364,8 @@ Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later
 
 The `WebAssembly.instantiate()` function allows you to compile and instantiate WebAssembly code. This function has two overloads:
 
--   The primary overload takes the WebAssembly binary code, in the form of a [typed array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays) or [`ArrayBuffer`](../arraybuffer), and performs both compilation and instantiation in one step. The returned `Promise` resolves to both a compiled [`WebAssembly.Module`](module) and its first [`WebAssembly.Instance`](instance).
--   The secondary overload takes an already-compiled [`WebAssembly.Module`](module) and returns a `Promise` that resolves to an `Instance` of that `Module`. This overload is useful if the `Module` has already been compiled.
+- The primary overload takes the WebAssembly binary code, in the form of a [typed array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays) or [`ArrayBuffer`](../arraybuffer), and performs both compilation and instantiation in one step. The returned `Promise` resolves to both a compiled [`WebAssembly.Module`](module) and its first [`WebAssembly.Instance`](instance).
+- The secondary overload takes an already-compiled [`WebAssembly.Module`](module) and returns a `Promise` that resolves to an `Instance` of that `Module`. This overload is useful if the `Module` has already been compiled.
 
 **Warning:** This method is not the most efficient way of fetching and instantiating wasm modules. If at all possible, you should use the newer [`WebAssembly.instantiateStreaming()`](instantiatestreaming) method instead, which fetches, compiles, and instantiates a module all in one step, directly from the raw bytecode, so doesn't require conversion to an [`ArrayBuffer`](../arraybuffer).
 
@@ -43387,13 +43387,13 @@ An object containing the values to be imported into the newly-created `Instance`
 
 A `Promise` that resolves to a `ResultObject` which contains two fields:
 
--   `module`: A [`WebAssembly.Module`](module) object representing the compiled WebAssembly module. This `Module` can be instantiated again, shared via [`postMessage()`](https://developer.mozilla.org/en-US/docs/Web/API/Worker/postMessage) or [cached in IndexedDB](https://developer.mozilla.org/en-US/docs/WebAssembly/Caching_modules).
--   `instance`: A [`WebAssembly.Instance`](instance) object that contains all the [Exported WebAssembly functions](https://developer.mozilla.org/en-US/docs/WebAssembly/Exported_functions).
+- `module`: A [`WebAssembly.Module`](module) object representing the compiled WebAssembly module. This `Module` can be instantiated again, shared via [`postMessage()`](https://developer.mozilla.org/en-US/docs/Web/API/Worker/postMessage) or [cached in IndexedDB](https://developer.mozilla.org/en-US/docs/WebAssembly/Caching_modules).
+- `instance`: A [`WebAssembly.Instance`](instance) object that contains all the [Exported WebAssembly functions](https://developer.mozilla.org/en-US/docs/WebAssembly/Exported_functions).
 
 #### Exceptions
 
--   If either of the parameters are not of the correct type or structure, a [`TypeError`](../typeerror) is thrown.
--   If the operation fails, the promise rejects with a [`WebAssembly.CompileError`](compileerror), [`WebAssembly.LinkError`](linkerror), or [`WebAssembly.RuntimeError`](runtimeerror), depending on the cause of the failure.
+- If either of the parameters are not of the correct type or structure, a [`TypeError`](../typeerror) is thrown.
+- If the operation fails, the promise rejects with a [`WebAssembly.CompileError`](compileerror), [`WebAssembly.LinkError`](linkerror), or [`WebAssembly.RuntimeError`](runtimeerror), depending on the cause of the failure.
 
 ### Secondary overload — taking a module object instance
 
@@ -43413,8 +43413,8 @@ A `Promise` that resolves to an [`WebAssembly.Instance`](instance) object.
 
 #### Exceptions
 
--   If either of the parameters are not of the correct type or structure, a [`TypeError`](../typeerror) is thrown.
--   If the operation fails, the promise rejects with a [`WebAssembly.CompileError`](compileerror), [`WebAssembly.LinkError`](linkerror), or [`WebAssembly.RuntimeError`](runtimeerror), depending on the cause of the failure.
+- If either of the parameters are not of the correct type or structure, a [`TypeError`](../typeerror) is thrown.
+- If the operation fails, the promise rejects with a [`WebAssembly.CompileError`](compileerror), [`WebAssembly.LinkError`](linkerror), or [`WebAssembly.RuntimeError`](runtimeerror), depending on the cause of the failure.
 
 ## Examples
 
@@ -43511,9 +43511,9 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 
 ## See also
 
--   [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
--   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
--   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
+- [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
+- [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
+- [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -43539,13 +43539,13 @@ An object containing the values to be imported into the newly-created `Instance`
 
 A `Promise` that resolves to a `ResultObject` which contains two fields:
 
--   `module`: A [`WebAssembly.Module`](module) object representing the compiled WebAssembly module. This `Module` can be instantiated again or shared via [postMessage()](https://developer.mozilla.org/en-US/docs/Web/API/Worker/postMessage).
--   `instance`: A [`WebAssembly.Instance`](instance) object that contains all the [Exported WebAssembly functions](https://developer.mozilla.org/en-US/docs/WebAssembly/Exported_functions).
+- `module`: A [`WebAssembly.Module`](module) object representing the compiled WebAssembly module. This `Module` can be instantiated again or shared via [postMessage()](https://developer.mozilla.org/en-US/docs/Web/API/Worker/postMessage).
+- `instance`: A [`WebAssembly.Instance`](instance) object that contains all the [Exported WebAssembly functions](https://developer.mozilla.org/en-US/docs/WebAssembly/Exported_functions).
 
 ### Exceptions
 
--   If either of the parameters are not of the correct type or structure, a [`TypeError`](../typeerror) is thrown.
--   If the operation fails, the promise rejects with a [`WebAssembly.CompileError`](compileerror), [`WebAssembly.LinkError`](linkerror), or [`WebAssembly.RuntimeError`](runtimeerror), depending on the cause of the failure.
+- If either of the parameters are not of the correct type or structure, a [`TypeError`](../typeerror) is thrown.
+- If the operation fails, the promise rejects with a [`WebAssembly.CompileError`](compileerror), [`WebAssembly.LinkError`](linkerror), or [`WebAssembly.RuntimeError`](runtimeerror), depending on the cause of the failure.
 
 ## Examples
 
@@ -43597,9 +43597,9 @@ No
 
 ## See also
 
--   [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
--   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
--   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
+- [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
+- [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
+- [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -43814,9 +43814,9 @@ Returns a new **array iterator object that contains the values for each index in
 
 ## See also
 
--   **[JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)**
--   **[`ArrayBuffer`](arraybuffer)**
--   **[`DataView`](dataview)**
+- **[JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)**
+- **[`ArrayBuffer`](arraybuffer)**
+- **[`DataView`](dataview)**
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array</a>
 
@@ -44001,9 +44001,9 @@ Starting with ECMAScript 2015, `Int32Array` constructors require to be construct
 
 ## See also
 
--   [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
--   [`ArrayBuffer`](arraybuffer)
--   [`DataView`](dataview)
+- [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
+- [`ArrayBuffer`](arraybuffer)
+- [`DataView`](dataview)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array</a>
 
@@ -44216,9 +44216,9 @@ Returns a new _array iterator_ object that contains the values for each index in
 
 ## See also
 
--   [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
--   [`ArrayBuffer`](arraybuffer)
--   [`DataView`](dataview)
+- [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
+- [`ArrayBuffer`](arraybuffer)
+- [`DataView`](dataview)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array</a>
 
@@ -44232,10 +44232,10 @@ The `InternalError` indicates an error that occurred internally in the JavaScrip
 
 Example cases are mostly when something is too large, e.g.:
 
--   "too many switch cases",
--   "too many parentheses in regular expression",
--   "array initializer too large",
--   "too much recursion".
+- "too many switch cases",
+- "too many parentheses in regular expression",
+- "array initializer too large",
+- "too much recursion".
 
 ## Constructor
 
@@ -44348,8 +44348,8 @@ No
 
 ## See also
 
--   [`Error`](error)
--   [InternalError: too much recursion](../errors/too_much_recursion)
+- [`Error`](error)
+- [InternalError: too much recursion](../errors/too_much_recursion)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError</a>
 
@@ -44396,9 +44396,9 @@ The internationalization constructors as well as several language sensitive meth
 
 The `locales` argument is used to determine the locale used in a given operation. The JavaScript implementation examines `locales`, and then computes a locale it understands that comes closest to satisfying the expressed preference. `locales` may be:
 
--   `undefined` (or omitted): The implementation's default locale will be used.
--   A locale: A locale identifier or an `Intl.Locale` object that wraps a locale identifier.
--   A list of locales: Any other value, that will be converted into an object and then treated as an array of locales.
+- `undefined` (or omitted): The implementation's default locale will be used.
+- A locale: A locale identifier or an `Intl.Locale` object that wraps a locale identifier.
+- A list of locales: Any other value, that will be converted into an object and then treated as an array of locales.
 
 In the latter two cases, the actual locale used is the best-supported locale determined by [locale negotiation](#locale_negotiation).
 
@@ -44413,21 +44413,21 @@ A locale identifier is a string that consists of:
 
 ...with all present subtags and sequences separated by hyphens. Locale identifiers are case-insensitive ASCII. However, it's conventional to use title case (first letter capitalized, successive letters lower case) for script subtags, upper case for region subtags, and lower case for everything else. For example:
 
--   "`hi`": Hindi (language)
--   "`de-AT`": German (language) as used in Austria (region)
--   "`zh-Hans-CN`": Chinese (language) written in simplified characters (script) as used in China (region)
--   "`en-emodeng`": English (language) in the "Early modern English" dialect (variant)
+- "`hi`": Hindi (language)
+- "`de-AT`": German (language) as used in Austria (region)
+- "`zh-Hans-CN`": Chinese (language) written in simplified characters (script) as used in China (region)
+- "`en-emodeng`": English (language) in the "Early modern English" dialect (variant)
 
 Subtags identifying languages, scripts, regions (including countries), and (rarely used) variants are registered in the [IANA Language Subtag Registry](https://www.iana.org/assignments/language-subtag-registry). This registry is periodically updated over time, and implementations may not always be up to date, so don't rely too much on subtags being universally supported.
 
 BCP 47 extension sequences consist of a single digit or letter (other than `"x"`) and one or more two- to eight-letter or digit subtags separated by hyphens. Only one sequence is permitted for each digit or letter: "`de-a-foo-a-foo`" is invalid. BCP 47 extension subtags are defined in the [Unicode CLDR Project](https://github.com/unicode-org/cldr/tree/master/common/bcp47). Currently only two extensions have defined semantics:
 
--   The `"u"` (Unicode) extension can be used to request additional customization of [`Intl/Collator`](intl/collator), [`Intl/NumberFormat`](intl/numberformat), or [`Intl/DateTimeFormat`](intl/datetimeformat) objects. Examples:
-    -   "`de-DE-u-co-phonebk`": Use the phonebook variant of the German sort order, which interprets umlauted vowels as corresponding character pairs: ä → ae, ö → oe, ü → ue.
-    -   "`th-TH-u-nu-thai`": Use Thai digits (๐, ๑, ๒, ๓, ๔, ๕, ๖, ๗, ๘, ๙) in number formatting.
-    -   "`ja-JP-u-ca-japanese`": Use the Japanese calendar in date and time formatting, so that 2013 is expressed as the year 25 of the Heisei period, or 平成 25.
-    -   "`en-GB-u-ca-islamic`": use British English with the Islamic (Hijri) calendar, where the Gregorian date 14 October, 2017 is the Hijri date 24 Muharram, 1439.
--   The `"t"` (transformed) extension indicates transformed content: for example, text that was translated from another locale. No `Intl` functionality currently considers the `"t"` extension. However, this extension sometimes contains a nested locale (with no extensions): for example, the transformed extension in "`de-t-en`" contains the locale identifier for English. If a nested locale is present, it must be a valid locale identifier. For example, because "`en-emodeng-emodeng`" is invalid (because it contains a duplicate `emodeng` variant subtag), "`de-t-en-emodeng-emodeng`" is also invalid.
+- The `"u"` (Unicode) extension can be used to request additional customization of [`Intl/Collator`](intl/collator), [`Intl/NumberFormat`](intl/numberformat), or [`Intl/DateTimeFormat`](intl/datetimeformat) objects. Examples:
+    - "`de-DE-u-co-phonebk`": Use the phonebook variant of the German sort order, which interprets umlauted vowels as corresponding character pairs: ä → ae, ö → oe, ü → ue.
+    - "`th-TH-u-nu-thai`": Use Thai digits (๐, ๑, ๒, ๓, ๔, ๕, ๖, ๗, ๘, ๙) in number formatting.
+    - "`ja-JP-u-ca-japanese`": Use the Japanese calendar in date and time formatting, so that 2013 is expressed as the year 25 of the Heisei period, or 平成 25.
+    - "`en-GB-u-ca-islamic`": use British English with the Islamic (Hijri) calendar, where the Gregorian date 14 October, 2017 is the Hijri date 24 Muharram, 1439.
+- The `"t"` (transformed) extension indicates transformed content: for example, text that was translated from another locale. No `Intl` functionality currently considers the `"t"` extension. However, this extension sometimes contains a nested locale (with no extensions): for example, the transformed extension in "`de-t-en`" contains the locale identifier for English. If a nested locale is present, it must be a valid locale identifier. For example, because "`en-emodeng-emodeng`" is invalid (because it contains a duplicate `emodeng` variant subtag), "`de-t-en-emodeng-emodeng`" is also invalid.
 
 Finally, a private-use extension sequence using the letter `"x"` may appear, followed by one or more one- to eight-letter or digit subtags separated by hyphens. This allows applications to encode information for their own private use, that will be ignored by all `Intl` operations.
 
@@ -44759,21 +44759,21 @@ No
 
 ## See also
 
--   Introduction: [The ECMAScript Internationalization API](https://norbertlindenberg.com/2012/12/ecmascript-internationalization-api/index.html)
--   Constructors
-    -   [`Intl.Collator`](intl/collator)
-    -   [`Intl.DateTimeFormat`](intl/datetimeformat)
-    -   [`Intl.ListFormat`](intl/listformat)
-    -   [`Intl.NumberFormat`](intl/numberformat)
-    -   [`Intl.PluralRules`](intl/pluralrules)
-    -   [`Intl.RelativeTimeFormat`](intl/relativetimeformat)
-    -   [`Intl.Locale`](intl/locale)
--   Methods
-    -   [`String.prototype.localeCompare()`](string/localecompare)
-    -   [`Number.prototype.toLocaleString()`](number/tolocalestring)
-    -   [`Date.prototype.toLocaleString()`](date/tolocalestring)
-    -   [`Date.prototype.toLocaleDateString()`](date/tolocaledatestring)
-    -   [`Date.prototype.toLocaleTimeString()`](date/tolocaletimestring)
+- Introduction: [The ECMAScript Internationalization API](https://norbertlindenberg.com/2012/12/ecmascript-internationalization-api/index.html)
+- Constructors
+    - [`Intl.Collator`](intl/collator)
+    - [`Intl.DateTimeFormat`](intl/datetimeformat)
+    - [`Intl.ListFormat`](intl/listformat)
+    - [`Intl.NumberFormat`](intl/numberformat)
+    - [`Intl.PluralRules`](intl/pluralrules)
+    - [`Intl.RelativeTimeFormat`](intl/relativetimeformat)
+    - [`Intl.Locale`](intl/locale)
+- Methods
+    - [`String.prototype.localeCompare()`](string/localecompare)
+    - [`Number.prototype.toLocaleString()`](number/tolocalestring)
+    - [`Date.prototype.toLocaleString()`](date/tolocalestring)
+    - [`Date.prototype.toLocaleDateString()`](date/tolocaledatestring)
+    - [`Date.prototype.toLocaleTimeString()`](date/tolocaletimestring)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl</a>
 
@@ -44799,10 +44799,10 @@ The maximum allowed array length depends on the platform, browser and browser ve
 
 An invalid array length might appear in these situations:
 
--   Creating an [`Array`](../global_objects/array) or [`ArrayBuffer`](../global_objects/arraybuffer) with a negative length, or setting a negative value for the [`Array.length`](../global_objects/array/length) property.
--   Creating an [`Array`](../global_objects/array) or setting the [`Array.length`](../global_objects/array/length) property greater than 2GB-1 (2^32-1).
--   Creating an [`ArrayBuffer`](../global_objects/arraybuffer) that is bigger than 2GB-1 (2^32-1) on a 32-bit system or 8GB (2^33) on a 64-bit system.
--   Before Firefox 89: Creating an [`ArrayBuffer`](../global_objects/arraybuffer) that is bigger than 2GB-1 (2^32-1).
+- Creating an [`Array`](../global_objects/array) or [`ArrayBuffer`](../global_objects/arraybuffer) with a negative length, or setting a negative value for the [`Array.length`](../global_objects/array/length) property.
+- Creating an [`Array`](../global_objects/array) or setting the [`Array.length`](../global_objects/array/length) property greater than 2GB-1 (2^32-1).
+- Creating an [`ArrayBuffer`](../global_objects/arraybuffer) that is bigger than 2GB-1 (2^32-1) on a 32-bit system or 8GB (2^33) on a 64-bit system.
+- Before Firefox 89: Creating an [`ArrayBuffer`](../global_objects/arraybuffer) that is bigger than 2GB-1 (2^32-1).
 
 If you are creating an `Array`, using the constructor, you probably want to use the literal notation instead, as the first argument is interpreted as the length of the `Array`.
 
@@ -44842,9 +44842,9 @@ Otherwise, you might want to clamp the length before setting the length property
 
 ## See also
 
--   [`Array`](../global_objects/array)
--   [`Array.length`](../global_objects/array/length)
--   [`ArrayBuffer`](../global_objects/arraybuffer)
+- [`Array`](../global_objects/array)
+- [`Array.length`](../global_objects/array/length)
+- [`ArrayBuffer`](../global_objects/arraybuffer)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Invalid_array_length" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Invalid_array_length</a>
 
@@ -44890,8 +44890,8 @@ In the `if` statement, you want to use a comparison operator ("=="), and for the
 
 ## See also
 
--   [Assignment operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#assignment_operators)
--   [Comparison operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators)
+- [Assignment operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#assignment_operators)
+- [Comparison operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Invalid_assignment_left-hand_side" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Invalid_assignment_left-hand_side</a>
 
@@ -44971,9 +44971,9 @@ But you can mutate the properties in a variable:
 
 ## See also
 
--   `const`
--   `let`
--   `var`
+- `const`
+- `let`
+- `var`
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Invalid_const_assignment" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Invalid_const_assignment</a>
 
@@ -45019,9 +45019,9 @@ For more details, see the [`Date.parse()`](../global_objects/date/parse) documen
 
 ## See also
 
--   [`Date`](../global_objects/date)
--   [`Date.prototype.parse()`](../global_objects/date/parse)
--   [`Date.prototype.toISOString()`](../global_objects/date/toisostring)
+- [`Date`](../global_objects/date)
+- [`Date.prototype.parse()`](../global_objects/date/parse)
+- [`Date.prototype.toISOString()`](../global_objects/date/toisostring)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Invalid_date" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Invalid_date</a>
 
@@ -45083,9 +45083,9 @@ The for...in loop [shouldn't be used for Array iteration](../statements/for...in
 
 ## See also
 
--   `for...in`
--   `for...of` - also disallows an initializer in both strict and non-strict mode.
--   `for` - preferred for array iteration, allows to define an initializer.
+- `for...in`
+- `for...of` - also disallows an initializer in both strict and non-strict mode.
+- `for` - preferred for array iteration, allows to define an initializer.
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Invalid_for-in_initializer" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Invalid_for-in_initializer</a>
 
@@ -45136,9 +45136,9 @@ You need to remove the initializer (`value = 50`) in the head of the `for-of` lo
 
 ## See also
 
--   `for...of`
--   `for...in` - disallows an initializer in strict mode as well ([SyntaxError: for-in loop head declarations may not have initializers](invalid_for-in_initializer))
--   `for` - allows to define an initializer when iterating.
+- `for...of`
+- `for...in` - disallows an initializer in strict mode as well ([SyntaxError: for-in loop head declarations may not have initializers](invalid_for-in_initializer))
+- `for` - allows to define an initializer when iterating.
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Invalid_for-of_initializer" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Invalid_for-of_initializer</a>
 
@@ -45189,8 +45189,8 @@ To fix these errors, you will either need to replace the [`instanceof` operator]
 
 ## See also
 
--   [`instanceof` operator](../operators/instanceof)
--   [`typeof` operator](../operators/typeof)
+- [`instanceof` operator](../operators/instanceof)
+- [`typeof` operator](../operators/typeof)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/invalid_right_hand_side_instanceof_operand" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/invalid_right_hand_side_instanceof_operand</a>
 
@@ -45218,16 +45218,16 @@ A [`Boolean`](../boolean) indicating whether or not the two arguments are the sa
 
 `Object.is()` determines whether two values are [the same value](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness). Two values are the same if one of the following holds:
 
--   both [`undefined`](../undefined)
--   both [`null`](../null)
--   both `true` or both `false`
--   both strings of the same length with the same characters in the same order
--   both the same object (meaning both values reference the same object in memory)
--   both numbers and
-    -   both `+0`
-    -   both `-0`
-    -   both [`NaN`](../nan)
-    -   or both non-zero and both not [`NaN`](../nan) and both have the same value
+- both [`undefined`](../undefined)
+- both [`null`](../null)
+- both `true` or both `false`
+- both strings of the same length with the same characters in the same order
+- both the same object (meaning both values reference the same object in memory)
+- both numbers and
+    - both `+0`
+    - both `-0`
+    - both [`NaN`](../nan)
+    - or both non-zero and both not [`NaN`](../nan) and both have the same value
 
 This is _not_ the same as being equal according to the [`==`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#equality) operator. The `==` operator applies various coercions to both sides (if they are not the same Type) before testing for equality (resulting in such behavior as `"" == false` being `true`), but `Object.is` doesn't coerce either value.
 
@@ -45317,7 +45317,7 @@ No
 
 ## See also
 
--   [Equality comparisons and sameness](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness) — a comparison of all three built-in sameness facilities
+- [Equality comparisons and sameness](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness) — a comparison of all three built-in sameness facilities
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -45426,12 +45426,12 @@ Here is a correct implementation:
 
 ## See also
 
--   [iterable protocol](../iteration_protocols#the_iterable_protocol)
--   [`Object.keys`](../global_objects/object/keys)
--   [`Object.entries`](../global_objects/object/entries)
--   [`Map`](../global_objects/map)
--   [generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators#generators)
--   [for…of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#for...of_statement)
+- [iterable protocol](../iteration_protocols#the_iterable_protocol)
+- [`Object.keys`](../global_objects/object/keys)
+- [`Object.entries`](../global_objects/object/entries)
+- [`Map`](../global_objects/map)
+- [generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators#generators)
+- [for…of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#for...of_statement)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/is_not_iterable" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/is_not_iterable</a>
 
@@ -45537,8 +45537,8 @@ When checking for `Array` instance, `Array.isArray` is preferred over `instanceo
 
 ## See also
 
--   [A polyfill](https://github.com/behnammodi/polyfill/blob/master/array.polyfill.js)
--   [`Array`](../array)
+- [A polyfill](https://github.com/behnammodi/polyfill/blob/master/array.polyfill.js)
+- [`Array`](../array)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray</a>
 
@@ -45550,8 +45550,8 @@ The `Symbol.isConcatSpreadable` well-known symbol is used to configure if an obj
 
 The `@@isConcatSpreadable` symbol (`Symbol.isConcatSpreadable`) can be defined as an own or inherited property and its value is a boolean. It can control behavior for arrays and array-like objects:
 
--   For array objects, the default behavior is to spread (flatten) elements. `Symbol.isConcatSpreadable` can avoid flattening in these cases.
--   For array-like objects, the default behavior is no spreading or flattening. `Symbol.isConcatSpreadable` can force flattening in these cases.
+- For array objects, the default behavior is to spread (flatten) elements. `Symbol.isConcatSpreadable` can avoid flattening in these cases.
+- For array-like objects, the default behavior is no spreading or flattening. `Symbol.isConcatSpreadable` can force flattening in these cases.
 
 Property attributes of `Symbol.isConcatSpreadable`
 
@@ -45642,7 +45642,7 @@ No
 
 ## See also
 
--   [`Array.prototype.concat()`](../array/concat)
+- [`Array.prototype.concat()`](../array/concat)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -45740,8 +45740,8 @@ No
 
 ## See also
 
--   [`Reflect`](../reflect)
--   [`Object.isExtensible()`](../object/isextensible)
+- [`Reflect`](../reflect)
+- [`Object.isExtensible()`](../object/isextensible)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -45825,8 +45825,8 @@ No
 
 ## See also
 
--   The [`Number`](../number) object it belongs to.
--   The global function [`isFinite`](../isfinite).
+- The [`Number`](../number) object it belongs to.
+- The global function [`isFinite`](../isfinite).
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -45984,11 +45984,11 @@ In ES5, if the argument to this method is not an object (a primitive), then it w
 
 ## See also
 
--   [`Object.freeze()`](freeze)
--   [`Object.preventExtensions()`](preventextensions)
--   [`Object.isExtensible()`](isextensible)
--   [`Object.seal()`](seal)
--   [`Object.isSealed()`](issealed)
+- [`Object.freeze()`](freeze)
+- [`Object.preventExtensions()`](preventextensions)
+- [`Object.isExtensible()`](isextensible)
+- [`Object.seal()`](seal)
+- [`Object.isSealed()`](issealed)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -46082,7 +46082,7 @@ No
 
 ## See also
 
--   The [`Number`](../number) object it belongs to.
+- The [`Number`](../number) object it belongs to.
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -46181,7 +46181,7 @@ Chrome disabled `SharedArrayBuffer` on January 5, 2018 to help reduce the effica
 
 ## See also
 
--   [`Atomics`](../atomics)
+- [`Atomics`](../atomics)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics/isLockFree" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics/isLockFree</a>
 
@@ -46294,8 +46294,8 @@ You can use this, for example, to test whether an argument to a function is arit
 
 ## See also
 
--   [`NaN`](nan)
--   [`Number.isNaN()`](number/isnan)
+- [`NaN`](nan)
+- [`Number.isNaN()`](number/isnan)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN</a>
 
@@ -46400,10 +46400,10 @@ For example, to execute some code that's only safe to run if a `baz` object has 
 
 ## See also
 
--   [`instanceof`](../../operators/instanceof)
--   [`Object.getPrototypeOf()`](getprototypeof)
--   [`Object.setPrototypeOf()`](setprototypeof)
--   [`Object/proto`](proto)
+- [`instanceof`](../../operators/instanceof)
+- [`Object.getPrototypeOf()`](getprototypeof)
+- [`Object.setPrototypeOf()`](setprototypeof)
+- [`Object/proto`](proto)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -46415,8 +46415,8 @@ The `Number.isSafeInteger()` method determines whether the provided value is a n
 
 A safe integer is an integer that
 
--   can be exactly represented as an IEEE-754 double precision number, and
--   whose IEEE-754 representation cannot be the result of rounding any other integer to fit the IEEE-754 representation.
+- can be exactly represented as an IEEE-754 double precision number, and
+- whose IEEE-754 representation cannot be the result of rounding any other integer to fit the IEEE-754 representation.
 
 For example, `253 - 1` is a safe integer: it can be exactly represented, and no other integer rounds to it under any IEEE-754 rounding mode. In contrast, `253` is _not_ a safe integer: it can be exactly represented in IEEE-754, but the integer `253 + 1` can't be directly represented in IEEE-754 but instead rounds to `253` under round-to-nearest and round-to-zero rounding. The safe integers consist of all integers from `-(253 - 1)` inclusive to `253 - 1` inclusive (± `9007199254740991` or ± 9,007,199,254,740,991).
 
@@ -46491,10 +46491,10 @@ No
 
 ## See also
 
--   The [`Number`](../number) object it belongs to.
--   [`Number.MIN_SAFE_INTEGER`](min_safe_integer)
--   [`Number.MAX_SAFE_INTEGER`](max_safe_integer)
--   [`BigInt`](../bigint)
+- The [`Number`](../number) object it belongs to.
+- [`Number.MIN_SAFE_INTEGER`](min_safe_integer)
+- [`Number.MAX_SAFE_INTEGER`](max_safe_integer)
+- [`BigInt`](../bigint)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -46614,11 +46614,11 @@ In ES5, if the argument to this method is not an object (a primitive), then it w
 
 ## See also
 
--   [`Object.seal()`](seal)
--   [`Object.preventExtensions()`](preventextensions)
--   [`Object.isExtensible()`](isextensible)
--   [`Object.freeze()`](freeze)
--   [`Object.isFrozen()`](isfrozen)
+- [`Object.seal()`](seal)
+- [`Object.preventExtensions()`](preventextensions)
+- [`Object.isExtensible()`](isextensible)
+- [`Object.freeze()`](freeze)
+- [`Object.isFrozen()`](isfrozen)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -46695,7 +46695,7 @@ The value to be checked.
 
 ## See also
 
--   [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
+- [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer/isView" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer/isView</a>
 
@@ -46766,9 +46766,9 @@ The following example uses string methods to change the formatting of a string:
 
 ## See also
 
--   [`String.prototype.blink()`](blink)
--   [`String.prototype.bold()`](bold)
--   [`String.prototype.strike()`](strike)
+- [`String.prototype.blink()`](blink)
+- [`String.prototype.bold()`](bold)
+- [`String.prototype.strike()`](strike)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -46883,10 +46883,10 @@ You can make your own iterables like this:
 
 There are many APIs that accept iterables. Some examples include:
 
--   [`new Map([iterable])`](global_objects/map)
--   [`new WeakMap([iterable])`](global_objects/weakmap)
--   [`new Set([iterable])`](global_objects/set)
--   [`new WeakSet([iterable])`](global_objects/weakset)
+- [`new Map([iterable])`](global_objects/map)
+- [`new WeakMap([iterable])`](global_objects/weakmap)
+- [`new Set([iterable])`](global_objects/set)
+- [`new WeakSet([iterable])`](global_objects/weakset)
 
 <!-- -->
 
@@ -46911,9 +46911,9 @@ There are many APIs that accept iterables. Some examples include:
 
 #### See also
 
--   [`Promise.all(iterable)`](global_objects/promise/all)
--   [`Promise.race(iterable)`](global_objects/promise/race)
--   [`Array.from(iterable)`](global_objects/array/from)
+- [`Promise.all(iterable)`](global_objects/promise/all)
+- [`Promise.race(iterable)`](global_objects/promise/race)
+- [`Array.from(iterable)`](global_objects/array/from)
 
 ### Syntaxes expecting iterables
 
@@ -47079,8 +47079,8 @@ A [generator object](global_objects/generator) is _both_ iterator and iterable:
 
 ## See also
 
--   [the `function*` documentation](statements/function*)
--   [Iteration in the ECMAScript specification](https://tc39.es/ecma262/#sec-iteration)
+- [the `function*` documentation](statements/function*)
+- [Iteration in the ECMAScript specification](https://tc39.es/ecma262/#sec-iteration)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols</a>
 
@@ -47094,11 +47094,11 @@ Whenever an object needs to be iterated (such as at the beginning of a `for..of`
 
 Some built-in types have a default iteration behavior, while other types (such as [`Object`](../object)) do not. The built-in types with a `@@iterator` method are:
 
--   [`Array.prototype[@@iterator]()`](../array/@@iterator)
--   [`TypedArray.prototype[@@iterator]()`](../typedarray/@@iterator)
--   [`String.prototype[@@iterator]()`](../string/@@iterator)
--   [`Map.prototype[@@iterator]()`](../map/@@iterator)
--   [`Set.prototype[@@iterator]()`](../set/@@iterator)
+- [`Array.prototype[@@iterator]()`](../array/@@iterator)
+- [`TypedArray.prototype[@@iterator]()`](../typedarray/@@iterator)
+- [`String.prototype[@@iterator]()`](../string/@@iterator)
+- [`Map.prototype[@@iterator]()`](../map/@@iterator)
+- [`Set.prototype[@@iterator]()`](../set/@@iterator)
 
 See also [Iteration protocols](../../iteration_protocols) for more information.
 
@@ -47193,12 +47193,12 @@ No
 
 ## See also
 
--   [Iteration protocols](../../iteration_protocols)
--   [`Array.prototype[@@iterator]()`](../array/@@iterator)
--   [`TypedArray.prototype[@@iterator]()`](../typedarray/@@iterator)
--   [`String.prototype[@@iterator]()`](../string/@@iterator)
--   [`Map.prototype[@@iterator]()`](../map/@@iterator)
--   [`Set.prototype[@@iterator]()`](../set/@@iterator)
+- [Iteration protocols](../../iteration_protocols)
+- [`Array.prototype[@@iterator]()`](../array/@@iterator)
+- [`TypedArray.prototype[@@iterator]()`](../typedarray/@@iterator)
+- [`String.prototype[@@iterator]()`](../string/@@iterator)
+- [`Map.prototype[@@iterator]()`](../map/@@iterator)
+- [`Set.prototype[@@iterator]()`](../set/@@iterator)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -47286,9 +47286,9 @@ The following example joins array-like object (`arguments`), by calling [`Functi
 
 ## See also
 
--   [`String.prototype.split()`](../string/split)
--   [`Array.prototype.toString()`](tostring)
--   [`TypedArray.prototype.join()`](../typedarray/join)
+- [`String.prototype.split()`](../string/split)
+- [`Array.prototype.toString()`](tostring)
+- [`TypedArray.prototype.join()`](../typedarray/join)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join</a>
 
@@ -47515,11 +47515,11 @@ No
 
 ## See also
 
--   [`Date.prototype.toJSON()`](date/tojson)
--   [JSON Diff](http://www.jsondiff.com/) checker
--   [JSON Beautifier/editor](https://jsonbeautifier.org/)
--   [JSON Parser](http://jsonparser.org/)
--   [JSON Validator](https://tools.learningcontainer.com/json-validator/)
+- [`Date.prototype.toJSON()`](date/tojson)
+- [JSON Diff](http://www.jsondiff.com/) checker
+- [JSON Beautifier/editor](https://jsonbeautifier.org/)
+- [JSON Parser](http://jsonparser.org/)
+- [JSON Validator](https://tools.learningcontainer.com/json-validator/)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON</a>
 
@@ -47617,9 +47617,9 @@ Instead write just 1 without a zero and use at least one digit after a decimal p
 
 ## See also
 
--   [`JSON`](../global_objects/json)
--   [`JSON.parse()`](../global_objects/json/parse)
--   [`JSON.stringify()`](../global_objects/json/stringify)
+- [`JSON`](../global_objects/json)
+- [`JSON.parse()`](../global_objects/json/parse)
+- [`JSON.stringify()`](../global_objects/json/stringify)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/JSON_bad_parse" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/JSON_bad_parse</a>
 
@@ -47689,7 +47689,7 @@ No
 
 ## See also
 
--   [`Symbol.for()`](for)
+- [`Symbol.for()`](for)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -47840,12 +47840,12 @@ For a simple Browser Polyfill, see [Javascript - Object.keys Browser Compatibili
 
 ## See also
 
--   [Enumerability and ownership of properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
--   [`Object.prototype.propertyIsEnumerable()`](propertyisenumerable)
--   [`Object.create()`](create)
--   [`Object.getOwnPropertyNames()`](getownpropertynames)
--   [`Object.values()`](values)
--   [`Object.entries()`](entries)
+- [Enumerability and ownership of properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
+- [`Object.prototype.propertyIsEnumerable()`](propertyisenumerable)
+- [`Object.create()`](create)
+- [`Object.getOwnPropertyNames()`](getownpropertynames)
+- [`Object.values()`](values)
+- [`Object.entries()`](entries)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -48026,8 +48026,8 @@ In [strict mode](../strict_mode) code, however, this will throw a [`SyntaxError`
 
 ## See also
 
--   [`break`](break)
--   [`continue`](continue)
+- [`break`](break)
+- [`continue`](continue)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -48094,8 +48094,8 @@ No
 
 ## See also
 
--   [`Intl.Locale`](../locale)
--   [Unicode language subtag specification](https://www.unicode.org/reports/tr35/#unicode_language_subtag_validity)
+- [`Intl.Locale`](../locale)
+- [Unicode language subtag specification](https://www.unicode.org/reports/tr35/#unicode_language_subtag_validity)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/language" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/language</a>
 
@@ -48123,10 +48123,10 @@ no
 
 This property is set only if the regular expression instance used the `g` flag to indicate a global search, or the `y` flag to indicate a sticky search. The following rules apply:
 
--   If `lastIndex` is greater than the length of the string, [`test()`](test) and [`exec()`](exec) fail, then `lastIndex` is set to 0.
--   If `lastIndex` is equal to or less than the length of the string and if the regular expression matches the empty string, then the regular expression matches input starting from `lastIndex`.
--   If `lastIndex` is equal to the length of the string and if the regular expression does not match the empty string, then the regular expression mismatches input, and `lastIndex` is reset to 0.
--   Otherwise, `lastIndex` is set to the next position following the most recent match.
+- If `lastIndex` is greater than the length of the string, [`test()`](test) and [`exec()`](exec) fail, then `lastIndex` is set to 0.
+- If `lastIndex` is equal to or less than the length of the string and if the regular expression matches the empty string, then the regular expression matches input starting from `lastIndex`.
+- If `lastIndex` is equal to the length of the string and if the regular expression does not match the empty string, then the regular expression mismatches input, and `lastIndex` is reset to 0.
+- Otherwise, `lastIndex` is set to the next position following the most recent match.
 
 ## Examples
 
@@ -48183,14 +48183,14 @@ Returns `["", undefined]`, an empty array whose zeroth element is the match stri
 
 ## See also
 
--   [`RegExp.prototype.dotAll`](dotall)
--   [`RegExp.prototype.global`](global)
--   [`RegExp.prototype.hasIndices`](hasindices)
--   [`RegExp.prototype.ignoreCase`](ignorecase)
--   [`RegExp.prototype.multiline`](multiline)
--   [`RegExp.prototype.source`](source)
--   [`RegExp.prototype.sticky`](sticky)
--   [`RegExp.prototype.unicode`](unicode)
+- [`RegExp.prototype.dotAll`](dotall)
+- [`RegExp.prototype.global`](global)
+- [`RegExp.prototype.hasIndices`](hasindices)
+- [`RegExp.prototype.ignoreCase`](ignorecase)
+- [`RegExp.prototype.multiline`](multiline)
+- [`RegExp.prototype.source`](source)
+- [`RegExp.prototype.sticky`](sticky)
+- [`RegExp.prototype.unicode`](unicode)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -48331,8 +48331,8 @@ Again, note that this implementation aims for absolute compatibility with `lastI
 
 ## See also
 
--   [`Array.prototype.indexOf()`](indexof)
--   [`TypedArray.prototype.lastIndexOf()`](../typedarray/lastindexof)
+- [`Array.prototype.indexOf()`](indexof)
+- [`TypedArray.prototype.lastIndexOf()`](../typedarray/lastindexof)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/lastIndexOf" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/lastIndexOf</a>
 
@@ -48400,8 +48400,8 @@ So e.g.: `9 << 3` translates to: `9 * (2 ** 3) = 9 * (8) = 72`.
 
 ## See also
 
--   [Bitwise operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#bitwise)
--   [Left shift assignment operator](left_shift_assignment)
+- [Bitwise operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#bitwise)
+- [Left shift assignment operator](left_shift_assignment)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -48461,8 +48461,8 @@ The left shift assignment operator (`<<=`) moves the specified amount of bits to
 
 ## See also
 
--   [Assignment operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#assignment)
--   [Left shift operator](left_shift)
+- [Assignment operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#assignment)
+- [Left shift operator](left_shift)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -48518,9 +48518,9 @@ Configurable
 
 no
 
--   `Writable`: If this attribute set to `false`, the value of the property cannot be changed.
--   `Configurable`: If this attribute set to `false`, any attempts to delete the property or change its attributes (`Writable`, `Configurable`, or `Enumerable`) will fail.
--   `Enumerable`: If this attribute set to `true`, the property will be iterated over during [for](../../statements/for) or [for..in](../../statements/for...in) loops.
+- `Writable`: If this attribute set to `false`, the value of the property cannot be changed.
+- `Configurable`: If this attribute set to `false`, any attempts to delete the property or change its attributes (`Writable`, `Configurable`, or `Enumerable`) will fail.
+- `Enumerable`: If this attribute set to `true`, the property will be iterated over during [for](../../statements/for) or [for..in](../../statements/for...in) loops.
 
 ## Examples
 
@@ -48589,8 +48589,8 @@ The following example shortens the array `numbers` to a length of 3 if the curre
 
 ## See also
 
--   [`Array`](../array)
--   [RangeError: invalid array length](../../errors/invalid_array_length)
+- [`Array`](../array)
+- [RangeError: invalid array length](../../errors/invalid_array_length)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length</a>
 
@@ -48606,15 +48606,15 @@ The less than operator (`<`) returns `true` if the left operand is less than the
 
 The operands are compared using the [Abstract Relational Comparison](https://tc39.es/ecma262/#sec-abstract-relational-comparison) algorithm, which is roughly summarised below:
 
--   First, objects are converted to primitives using `Symbol.ToPrimitive` with the `hint` parameter be `'number'`.
--   If both values are strings, they are compared as strings, based on the values of the Unicode code points they contain.
--   Otherwise JavaScript attempts to convert non-numeric types to numeric values:
-    -   Boolean values `true` and `false` are converted to 1 and 0 respectively.
-    -   `null` is converted to 0.
-    -   `undefined` is converted to `NaN`.
-    -   Strings are converted based on the values they contain, and are converted as `NaN` if they do not contain numeric values.
--   If either value is `NaN`, the operator returns `false`.
--   Otherwise the values are compared as numeric values.
+- First, objects are converted to primitives using `Symbol.ToPrimitive` with the `hint` parameter be `'number'`.
+- If both values are strings, they are compared as strings, based on the values of the Unicode code points they contain.
+- Otherwise JavaScript attempts to convert non-numeric types to numeric values:
+    - Boolean values `true` and `false` are converted to 1 and 0 respectively.
+    - `null` is converted to 0.
+    - `undefined` is converted to `NaN`.
+    - Strings are converted based on the values they contain, and are converted as `NaN` if they do not contain numeric values.
+- If either value is `NaN`, the operator returns `false`.
+- Otherwise the values are compared as numeric values.
 
 ## Examples
 
@@ -48699,9 +48699,9 @@ The operands are compared using the [Abstract Relational Comparison](https://tc3
 
 ## See also
 
--   [Greater than operator](greater_than)
--   [Greater than or equal operator](greater_than_or_equal)
--   [Less than or equal operator](less_than_or_equal)
+- [Greater than operator](greater_than)
+- [Greater than or equal operator](greater_than_or_equal)
+- [Less than or equal operator](less_than_or_equal)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -48801,9 +48801,9 @@ The operands are compared using the [Abstract Relational Comparison](https://tc3
 
 ## See also
 
--   [Greater than operator](greater_than)
--   [Greater than or equal operator](greater_than_or_equal)
--   [Less than operator](less_than)
+- [Greater than operator](greater_than)
+- [Greater than or equal operator](greater_than_or_equal)
+- [Less than operator](less_than)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -49115,13 +49115,13 @@ Support outside of [strict mode](https://developer.mozilla.org/docs/Web/JavaScri
 
 ## See also
 
--   [`var`](var)
--   [`const`](const)
--   [ES6 In Depth: `let` and `const`](https://hacks.mozilla.org/2015/07/es6-in-depth-let-and-const/)
--   [Breaking changes in `let` and `const` in Firefox 44](https://blog.mozilla.org/addons/2015/10/14/breaking-changes-let-const-firefox-nightly-44/)
--   [You Don't Know JS: Scope & Closures: Chapter 3: Function vs. Block Scope](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/scope%20%26%20closures/ch3.md)
--   [StackOverflow: What is the Temporal Dead Zone](https://stackoverflow.com/a/33198850/1125029)?
--   [StackOverflow: What is the difference between using `let` and `var`?](https://stackoverflow.com/questions/762011/whats-the-difference-between-using-let-and-var-to-declare-a-variable)
+- [`var`](var)
+- [`const`](const)
+- [ES6 In Depth: `let` and `const`](https://hacks.mozilla.org/2015/07/es6-in-depth-let-and-const/)
+- [Breaking changes in `let` and `const` in Firefox 44](https://blog.mozilla.org/addons/2015/10/14/breaking-changes-let-const-firefox-nightly-44/)
+- [You Don't Know JS: Scope & Closures: Chapter 3: Function vs. Block Scope](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/scope%20%26%20closures/ch3.md)
+- [StackOverflow: What is the Temporal Dead Zone](https://stackoverflow.com/a/33198850/1125029)?
+- [StackOverflow: What is the difference between using `let` and `var`?](https://stackoverflow.com/questions/762011/whats-the-difference-between-using-let-and-var-to-declare-a-variable)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -49222,39 +49222,39 @@ You must only use the `#!` comment style to specify a JavaScript interpreter. In
 
 ### Reserved keywords as of ECMAScript 2015
 
--   [`break`](statements/break)
--   [`case`](statements/switch)
--   [`catch`](statements/try...catch)
--   [`class`](statements/class)
--   [`const`](statements/const)
--   [`continue`](statements/continue)
--   [`debugger`](statements/debugger)
--   [`default`](statements/switch)
--   [`delete`](operators/delete)
--   [`do`](statements/do...while)
--   [`else`](statements/if...else)
--   [`export`](statements/export)
--   [`extends`](statements/class)
--   [`finally`](statements/try...catch)
--   [`for`](statements/for)
--   [`function`](statements/function)
--   [`if`](statements/if...else)
--   [`import`](statements/import)
--   [`in`](operators/in)
--   [`instanceof`](operators/instanceof)
--   [`new`](operators/new)
--   [`return`](statements/return)
--   [`super`](operators/super)
--   [`switch`](statements/switch)
--   [`this`](operators/this)
--   [`throw`](statements/throw)
--   [`try`](statements/try...catch)
--   [`typeof`](operators/typeof)
--   [`var`](statements/var)
--   [`void`](operators/void)
--   [`while`](statements/while)
--   [`with`](statements/with)
--   [`yield`](operators/yield)
+- [`break`](statements/break)
+- [`case`](statements/switch)
+- [`catch`](statements/try...catch)
+- [`class`](statements/class)
+- [`const`](statements/const)
+- [`continue`](statements/continue)
+- [`debugger`](statements/debugger)
+- [`default`](statements/switch)
+- [`delete`](operators/delete)
+- [`do`](statements/do...while)
+- [`else`](statements/if...else)
+- [`export`](statements/export)
+- [`extends`](statements/class)
+- [`finally`](statements/try...catch)
+- [`for`](statements/for)
+- [`function`](statements/function)
+- [`if`](statements/if...else)
+- [`import`](statements/import)
+- [`in`](operators/in)
+- [`instanceof`](operators/instanceof)
+- [`new`](operators/new)
+- [`return`](statements/return)
+- [`super`](operators/super)
+- [`switch`](statements/switch)
+- [`this`](operators/this)
+- [`throw`](statements/throw)
+- [`try`](statements/try...catch)
+- [`typeof`](operators/typeof)
+- [`var`](statements/var)
+- [`void`](operators/void)
+- [`while`](statements/while)
+- [`with`](statements/with)
+- [`yield`](operators/yield)
 
 ### Future reserved keywords
 
@@ -49262,44 +49262,44 @@ The following are reserved as future keywords by the ECMAScript specification. T
 
 These are always reserved:
 
--   `enum`
+- `enum`
 
 The following are only reserved when they are found in strict mode code:
 
--   `implements`
--   `interface`
--   [`let`](statements/let)
--   `package`
--   `private`
--   `protected`
--   `public`
--   `static`
--   [`yield`](operators/yield)
+- `implements`
+- `interface`
+- [`let`](statements/let)
+- `package`
+- `private`
+- `protected`
+- `public`
+- `static`
+- [`yield`](operators/yield)
 
 The following are only reserved when they are found in module code:
 
--   `await`
+- `await`
 
 #### Future reserved keywords in older standards
 
 The following are reserved as future keywords by older ECMAScript specifications (ECMAScript 1 till 3).
 
--   `abstract`
--   `boolean`
--   `byte`
--   `char`
--   `double`
--   `final`
--   `float`
--   `goto`
--   `int`
--   `long`
--   `native`
--   `short`
--   `synchronized`
--   `throws`
--   `transient`
--   `volatile`
+- `abstract`
+- `boolean`
+- `byte`
+- `char`
+- `double`
+- `final`
+- `float`
+- `goto`
+- `int`
+- `long`
+- `native`
+- `short`
+- `synchronized`
+- `throws`
+- `transient`
+- `volatile`
 
 Additionally, the literals `null`, `true`, and `false` cannot be used as identifiers in ECMAScript.
 
@@ -49319,9 +49319,9 @@ On the other hand the following is illegal because it's an _Identifier_, which i
 
 A few identifiers have a special meaning in some contexts without being keywords of any kind. They include:
 
--   [`arguments`](functions/arguments)
--   [`get`](functions/get)
--   [`set`](functions/set)
+- [`arguments`](functions/arguments)
+- [`get`](functions/get)
+- [`set`](functions/set)
 
 ## Literals
 
@@ -49465,9 +49465,9 @@ See also [`Array`](global_objects/array) for more information.
 
 A string literal is zero or more Unicode code points enclosed in single or double quotes. Unicode code points may also be represented by an escape sequence. All code points may appear literally in a string literal except for these closing quote code points:
 
--   U+005C \\ (backslash),
--   U+000D &lt;CR&gt;,
--   and U+000A &lt;LF&gt;.
+- U+005C \\ (backslash),
+- U+000D &lt;CR&gt;,
+- and U+000A &lt;LF&gt;.
 
 Prior to the [proposal to make all JSON text valid ECMA-262](https://github.com/tc39/proposal-json-superset), U+2028 &lt;LS&gt; and U+2029 &lt;PS&gt;, were also disallowed from appearing unescaped in string literals.
 
@@ -49529,13 +49529,13 @@ See also [template strings](template_literals) for more information.
 
 Some [JavaScript statements](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements) must be terminated with semicolons and are therefore affected by automatic semicolon insertion (ASI):
 
--   Empty statement
--   `let`, `const`, variable statement
--   `import`, `export`, module declaration
--   Expression statement
--   `debugger`
--   `continue`, `break`, `throw`
--   `return`
+- Empty statement
+- `let`, `const`, variable statement
+- `import`, `export`, module declaration
+- Expression statement
+- `debugger`
+- `continue`, `break`, `throw`
+- `return`
 
 The ECMAScript specification mentions [three rules of semicolon insertion](https://tc39.github.io/ecma262/#sec-rules-of-automatic-semicolon-insertion).
 
@@ -49563,12 +49563,12 @@ Here `++` is not treated as a [postfix operator](https://developer.mozilla.org/e
 
 3. A semicolon is inserted at the end, when a statement with restricted productions in the grammar is followed by a line terminator. These statements with "no LineTerminator here" rules are:
 
--   PostfixExpressions (`++` and `--`)
--   `continue`
--   `break`
--   `return`
--   `yield`, `yield*`
--   `module`
+- PostfixExpressions (`++` and `--`)
+- `continue`
+- `break`
+- `return`
+- `yield`, `yield*`
+- `module`
 
 <!-- -->
 
@@ -50031,12 +50031,12 @@ No
 
 ## See also
 
--   [Jeff Walden: Binary and octal numbers](https://whereswalden.com/2013/08/12/micro-feature-from-es6-now-in-firefox-aurora-and-nightly-binary-and-octal-numbers/)
--   [Mathias Bynens: JavaScript character escape sequences](https://mathiasbynens.be/notes/javascript-escapes)
--   [`Boolean`](global_objects/boolean)
--   [`Number`](global_objects/number)
--   [`RegExp`](global_objects/regexp)
--   [`String`](global_objects/string)
+- [Jeff Walden: Binary and octal numbers](https://whereswalden.com/2013/08/12/micro-feature-from-es6-now-in-firefox-aurora-and-nightly-binary-and-octal-numbers/)
+- [Mathias Bynens: JavaScript character escape sequences](https://mathiasbynens.be/notes/javascript-escapes)
+- [`Boolean`](global_objects/boolean)
+- [`Number`](global_objects/number)
+- [`RegExp`](global_objects/regexp)
+- [`String`](global_objects/string)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar</a>
 
@@ -50098,9 +50098,9 @@ No
 
 ## See also
 
--   [`Error.prototype.stack`](stack)
--   [`Error.prototype.columnNumber`](columnnumber)
--   [`Error.prototype.fileName`](filename)
+- [`Error.prototype.stack`](stack)
+- [`Error.prototype.columnNumber`](columnnumber)
+- [`Error.prototype.fileName`](filename)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error/lineNumber" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error/lineNumber</a>
 
@@ -50178,7 +50178,7 @@ The following example displays the word "MDN" as a hypertext link that returns t
 
 ## See also
 
--   [`String.prototype.anchor()`](anchor)
+- [`String.prototype.anchor()`](anchor)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -50311,9 +50311,9 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 
 ## See also
 
--   [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
--   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
--   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
+- [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
+- [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
+- [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -50540,7 +50540,7 @@ No
 
 ## See also
 
--   [`Intl`](../intl)
+- [`Intl`](../intl)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/ListFormat" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/ListFormat</a>
 
@@ -50615,9 +50615,9 @@ The following function returns the natural log of 10:
 
 ## See also
 
--   [`Math.exp()`](exp)
--   [`Math.log()`](log)
--   [`Math.log10()`](log10)
+- [`Math.exp()`](exp)
+- [`Math.log()`](log)
+- [`Math.log10()`](log10)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -50694,9 +50694,9 @@ The following function returns the natural log of 2:
 
 ## See also
 
--   [`Math.exp()`](exp)
--   [`Math.log()`](log)
--   [`Math.log2()`](log2)
+- [`Math.exp()`](exp)
+- [`Math.log()`](log)
+- [`Math.log2()`](log2)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -50724,8 +50724,8 @@ The value at the given position (`typedArray[index]`).
 
 ### Exceptions
 
--   Throws a [`TypeError`](../typeerror), if `typedArray` is not one of the allowed integer types.
--   Throws a [`RangeError`](../rangeerror), if `index` is out of bounds in the `typedArray`.
+- Throws a [`TypeError`](../typeerror), if `typedArray` is not one of the allowed integer types.
+- Throws a [`RangeError`](../rangeerror), if `index` is out of bounds in the `typedArray`.
 
 ## Examples
 
@@ -50800,8 +50800,8 @@ Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy
 
 ## See also
 
--   [`Atomics`](../atomics)
--   [`Atomics.store()`](store)
+- [`Atomics`](../atomics)
+- [`Atomics.store()`](store)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics/load" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics/load</a>
 
@@ -51277,9 +51277,9 @@ No
 
 ## See also
 
--   [`Intl`](../intl)
--   [The Intl.Locale Polyfill](https://formatjs.io/docs/polyfills/intl-locale)
--   [Unicode locale identifiers spec](https://www.unicode.org/reports/tr35/#Canonical_Unicode_Locale_Identifiers)
+- [`Intl`](../intl)
+- [The Intl.Locale Polyfill](https://formatjs.io/docs/polyfills/intl-locale)
+- [Unicode locale identifiers spec](https://www.unicode.org/reports/tr35/#Canonical_Unicode_Locale_Identifiers)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale</a>
 
@@ -51313,9 +51313,9 @@ A **negative** number if `referenceStr` occurs before `compareString`; **positiv
 
 Returns an integer indicating whether the `referenceStr` comes before, after or is equivalent to the `compareString`.
 
--   Negative when the `referenceStr` occurs before `compareString`
--   Positive when the `referenceStr` occurs after `compareString`
--   Returns `0` if they are equivalent
+- Negative when the `referenceStr` occurs before `compareString`
+- Positive when the `referenceStr` occurs after `compareString`
+- Returns `0` if they are equivalent
 
 **Warning:** Do not rely on exact return values of `-1` or `1`!
 
@@ -51479,7 +51479,7 @@ No
 
 ## See also
 
--   [`Intl.Collator`](../intl/collator)
+- [`Intl.Collator`](../intl/collator)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -51570,11 +51570,11 @@ If you run `getBaseLog(10, 1000)` it returns `2.9999999999999996` due to floatin
 
 ## See also
 
--   [`Math.exp()`](exp)
--   [`Math.log1p()`](log1p)
--   [`Math.log10()`](log10)
--   [`Math.log2()`](log2)
--   [`Math.pow()`](pow)
+- [`Math.exp()`](exp)
+- [`Math.log1p()`](log1p)
+- [`Math.log10()`](log10)
+- [`Math.log2()`](log2)
+- [`Math.pow()`](pow)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -51660,11 +51660,11 @@ No
 
 ## See also
 
--   [`Math.exp()`](exp)
--   [`Math.log()`](log)
--   [`Math.log1p()`](log1p)
--   [`Math.log2()`](log2)
--   [`Math.pow()`](pow)
+- [`Math.exp()`](exp)
+- [`Math.log()`](log)
+- [`Math.log1p()`](log1p)
+- [`Math.log2()`](log2)
+- [`Math.pow()`](pow)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -51741,9 +51741,9 @@ The following function returns the base 10 logarithm of e:
 
 ## See also
 
--   [`Math.exp()`](exp)
--   [`Math.log()`](log)
--   [`Math.log10()`](log10)
+- [`Math.exp()`](exp)
+- [`Math.log()`](log)
+- [`Math.log10()`](log10)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -51822,12 +51822,12 @@ No
 
 ## See also
 
--   [`Math.exp()`](exp)
--   [`Math.log()`](log)
--   [`Math.expm1()`](expm1)
--   [`Math.log10()`](log10)
--   [`Math.log2()`](log2)
--   [`Math.pow()`](pow)
+- [`Math.exp()`](exp)
+- [`Math.log()`](log)
+- [`Math.expm1()`](expm1)
+- [`Math.log10()`](log10)
+- [`Math.log2()`](log2)
+- [`Math.pow()`](pow)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -51914,11 +51914,11 @@ No
 
 ## See also
 
--   [`Math.exp()`](exp)
--   [`Math.log()`](log)
--   [`Math.log10()`](log10)
--   [`Math.log1p()`](log1p)
--   [`Math.pow()`](pow)
+- [`Math.exp()`](exp)
+- [`Math.log()`](log)
+- [`Math.log10()`](log10)
+- [`Math.log1p()`](log1p)
+- [`Math.pow()`](pow)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -51995,9 +51995,9 @@ The following function returns the base 2 logarithm of e:
 
 ## See also
 
--   [`Math.exp()`](exp)
--   [`Math.log()`](log)
--   [`Math.log2()`](log2)
+- [`Math.exp()`](exp)
+- [`Math.log()`](log)
+- [`Math.log2()`](log2)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -52019,11 +52019,11 @@ If a value can be converted to `true`, the value is so-called [truthy](https://d
 
 Examples of expressions that can be converted to false are:
 
--   `null`;
--   `NaN`;
--   `0`;
--   empty string (`""` or `''` or ` `` `);
--   `undefined`.
+- `null`;
+- `NaN`;
+- `0`;
+- empty string (`""` or `''` or ` `` `);
+- `undefined`.
 
 Even though the `&&` operator can be used with operands that are not Boolean values, it can still be considered a boolean operator since its return value can always be converted to a [boolean primitive](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#boolean_type). To explicitly convert its return value (or any expression in general) to the corresponding boolean value, use a double [NOT operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#logical_not) or the [`Boolean`](../global_objects/boolean/boolean) constructor.
 
@@ -52134,9 +52134,9 @@ is always equal to:
 
 ## See also
 
--   [`Boolean`](../global_objects/boolean)
--   [Truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy)
--   [Falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)
+- [`Boolean`](../global_objects/boolean)
+- [Truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy)
+- [Falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -52158,11 +52158,11 @@ If a value can be converted to `true`, the value is so-called [truthy](https://d
 
 Examples of expressions that can be converted to false are:
 
--   `null`;
--   `NaN`;
--   `0`;
--   empty string (`""` or `''` or ` `` `);
--   `undefined`.
+- `null`;
+- `NaN`;
+- `0`;
+- empty string (`""` or `''` or ` `` `);
+- `undefined`.
 
 Even though the `!` operator can be used with operands that are not Boolean values, it can still be considered a boolean operator since its return value can always be converted to a [boolean primitive](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#boolean_type). To explicitly convert its return value (or any expression in general) to the corresponding boolean value, use a double [NOT operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#logical_not) or the [`Boolean`](../global_objects/boolean/boolean) constructor.
 
@@ -52235,9 +52235,9 @@ is always equal to:
 
 ## See also
 
--   [`Boolean`](../global_objects/boolean)
--   [Truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy)
--   [Falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)
+- [`Boolean`](../global_objects/boolean)
+- [Truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy)
+- [Falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -52259,11 +52259,11 @@ If a value can be converted to `true`, the value is so-called [truthy](https://d
 
 Examples of expressions that can be converted to false are:
 
--   `null`;
--   `NaN`;
--   `0`;
--   empty string (`""` or `''` or ` `` `);
--   `undefined`.
+- `null`;
+- `NaN`;
+- `0`;
+- empty string (`""` or `''` or ` `` `);
+- `undefined`.
 
 Even though the `||` operator can be used with operands that are not Boolean values, it can still be considered a boolean operator since its return value can always be converted to a [boolean primitive](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#boolean_type). To explicitly convert its return value (or any expression in general) to the corresponding boolean value, use a double [NOT operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#logical_not) or the [`Boolean`](../global_objects/boolean/boolean) constructor.
 
@@ -52377,10 +52377,10 @@ is always equal to:
 
 ## See also
 
--   [The nullish coalescing operator (`??`)](nullish_coalescing_operator)
--   [`Boolean`](../global_objects/boolean)
--   [Truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy)
--   [Falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)
+- [The nullish coalescing operator (`??`)](nullish_coalescing_operator)
+- [`Boolean`](../global_objects/boolean)
+- [Truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy)
+- [Falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -52463,12 +52463,12 @@ No
 
 ## See also
 
--   [Logical OR (||)](logical_or)
--   [The nullish coalescing operator (`??`)](nullish_coalescing_operator)
--   [Bitwise OR assignment (`|=`)](bitwise_or_assignment)
--   [`Boolean`](../global_objects/boolean)
--   [Truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy)
--   [Falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)
+- [Logical OR (||)](logical_or)
+- [The nullish coalescing operator (`??`)](nullish_coalescing_operator)
+- [Bitwise OR assignment (`|=`)](bitwise_or_assignment)
+- [`Boolean`](../global_objects/boolean)
+- [Truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy)
+- [Falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -52521,9 +52521,9 @@ Admittedly the wording in the error message is slightly strange. "Formal paramet
 
 ## See also
 
--   `Function()`
--   [About functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
--   [_Frankenstein_ by Mary Wollstonecraft Shelley, full e-text](https://www.gutenberg.org/ebooks/84) ("Cursed (although I curse myself) be the hands that formed you! You have made me wretched beyond expression. You have left me no power to consider whether I am just to you or not. Begone! Relieve me from the sight of your detested form.")
+- `Function()`
+- [About functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
+- [_Frankenstein_ by Mary Wollstonecraft Shelley, full e-text](https://www.gutenberg.org/ebooks/84) ("Cursed (although I curse myself) be the hands that formed you! You have made me wretched beyond expression. You have left me no power to consider whether I am just to you or not. Begone! Relieve me from the sight of your detested form.")
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Malformed_formal_parameter" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Malformed_formal_parameter</a>
 
@@ -52576,11 +52576,11 @@ With proper input, this should usually look like something like this:
 
 ## See also
 
--   [`URIError`](../global_objects/urierror)
--   [`decodeURI`](../global_objects/decodeuri)
--   [`encodeURI`](../global_objects/encodeuri)
--   [`encodeURIComponent`](../global_objects/encodeuricomponent)
--   [`decodeURIComponent`](../global_objects/decodeuricomponent)
+- [`URIError`](../global_objects/urierror)
+- [`decodeURI`](../global_objects/decodeuri)
+- [`encodeURI`](../global_objects/encodeuri)
+- [`encodeURIComponent`](../global_objects/encodeuricomponent)
+- [`decodeURIComponent`](../global_objects/decodeuricomponent)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Malformed_URI" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Malformed_URI</a>
 
@@ -52594,9 +52594,9 @@ A `Map` object iterates its elements in insertion order — a [`for...of`](../st
 
 ### Key equality
 
--   Key equality is based on the [`sameValueZero`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness#same-value-zero_equality) algorithm.
--   [`NaN`](nan) is considered the same as `NaN` (even though `NaN !== NaN`) and all other values are considered equal according to the semantics of the `===` operator.
--   In the current ECMAScript specification, `-0` and `+0` are considered equal, although this was not so in earlier drafts. See _"Value equality for -0 and 0"_ in the [Browser compatibility](#browser_compatibility) table for details.
+- Key equality is based on the [`sameValueZero`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness#same-value-zero_equality) algorithm.
+- [`NaN`](nan) is considered the same as `NaN` (even though `NaN !== NaN`) and all other values are considered equal according to the semantics of the `===` operator.
+- In the current ECMAScript specification, `-0` and `+0` are considered equal, although this was not so in earlier drafts. See _"Value equality for -0 and 0"_ in the [Browser compatibility](#browser_compatibility) table for details.
 
 ### Objects vs. Maps
 
@@ -53289,9 +53289,9 @@ No
 
 ## See also
 
--   [`Set`](set)
--   [`WeakMap`](weakmap)
--   [`WeakSet`](weakset)
+- [`Set`](set)
+- [`WeakMap`](weakmap)
+- [`WeakSet`](weakset)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map</a>
 
@@ -53316,8 +53316,8 @@ If you don't give any parameter and use the `match()` method directly, you will 
 
 An [`Array`](../array) whose contents depend on the presence or absence of the global (`g`) flag, or [`null`](../null) if no matches are found.
 
--   If the `g` flag is used, all results matching the complete regular expression will be returned, but capturing groups will not.
--   if the `g` flag is not used, only the first complete match and its related capturing groups are returned. In this case, the returned item will have additional properties as described below.
+- If the `g` flag is used, all results matching the complete regular expression will be returned, but capturing groups will not.
+- if the `g` flag is not used, only the first complete match and its related capturing groups are returned. In this case, the returned item will have additional properties as described below.
 
 #### Additional properties
 
@@ -53338,9 +53338,9 @@ If the regular expression does not include the `g` flag, `str.match()` will retu
 
 ### Other methods
 
--   If you need to know if a string matches a regular expression [`RegExp`](../regexp), use [`RegExp.test()`](../regexp/test).
--   If you only want the first match found, you might want to use [`RegExp.exec()`](../regexp/exec) instead.
--   If you want to obtain capture groups and the global flag is set, you need to use [`RegExp.exec()`](../regexp/exec) or [`String.prototype.matchAll()`](matchall) instead.
+- If you need to know if a string matches a regular expression [`RegExp`](../regexp), use [`RegExp.test()`](../regexp/test).
+- If you only want the first match found, you might want to use [`RegExp.exec()`](../regexp/exec) instead.
+- If you want to obtain capture groups and the global flag is set, you need to use [`RegExp.exec()`](../regexp/exec) or [`String.prototype.matchAll()`](matchall) instead.
 
 ## Examples
 
@@ -53450,10 +53450,10 @@ If it is a positive number with a positive sign, `RegExp()` will ignore the posi
 
 ## See also
 
--   [`String.prototype.matchAll()`](matchall)
--   [`RegExp`](../regexp)
--   [`RegExp.prototype.exec()`](../regexp/exec)
--   [`RegExp.prototype.test()`](../regexp/test)
+- [`String.prototype.matchAll()`](matchall)
+- [`RegExp`](../regexp)
+- [`RegExp.prototype.exec()`](../regexp/exec)
+- [`RegExp.prototype.test()`](../regexp/test)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -53588,12 +53588,12 @@ No
 
 ## See also
 
--   [`String.prototype.match()`](match)
--   [Using regular expressions in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
--   [Capturing groups](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Groups_and_Ranges)
--   [`RegExp`](../regexp)
--   [`RegExp.prototype.exec()`](../regexp/exec)
--   [`RegExp.prototype.test()`](../regexp/test)
+- [`String.prototype.match()`](match)
+- [Using regular expressions in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
+- [Capturing groups](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Groups_and_Ranges)
+- [`RegExp`](../regexp)
+- [`RegExp.prototype.exec()`](../regexp/exec)
+- [`RegExp.prototype.test()`](../regexp/test)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -54912,7 +54912,7 @@ No
 
 ## See also
 
--   [`Number`](number)
+- [`Number`](number)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math</a>
 
@@ -55009,7 +55009,7 @@ However, both spread (`...`) and `apply` will either fail or return the wrong re
 
 ## See also
 
--   [`Math.min()`](min)
+- [`Math.min()`](min)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -55098,9 +55098,9 @@ No
 
 ## See also
 
--   [`Number.MIN_SAFE_INTEGER`](min_safe_integer)
--   [`Number.isSafeInteger()`](issafeinteger)
--   [`BigInt`](../bigint)
+- [`Number.MIN_SAFE_INTEGER`](min_safe_integer)
+- [`Number.isSafeInteger()`](issafeinteger)
+- [`BigInt`](../bigint)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -55177,8 +55177,8 @@ The following code multiplies two numeric values. If the result is less than or 
 
 ## See also
 
--   [`Number.MIN_VALUE`](min_value)
--   The [`Number`](../number) object it belongs to
+- [`Number.MIN_VALUE`](min_value)
+- The [`Number`](../number) object it belongs to
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -55252,9 +55252,9 @@ No
 
 ## See also
 
--   [`Intl.Locale`](../locale)
--   [`Intl.Locale.baseName`](basename)
--   [Unicode's Likely Subtags spec](https://www.unicode.org/reports/tr35/#Likely_Subtags)
+- [`Intl.Locale`](../locale)
+- [`Intl.Locale.baseName`](basename)
+- [Unicode's Likely Subtags spec](https://www.unicode.org/reports/tr35/#Likely_Subtags)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/maximize" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/maximize</a>
 
@@ -55444,9 +55444,9 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 
 ## See also
 
--   [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
--   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
--   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
+- [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
+- [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
+- [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -55505,8 +55505,8 @@ By default, the `message` property is an empty string, but this behavior can be 
 
 ## See also
 
--   [`Error.prototype.name`](name)
--   [`Error.prototype.toString()`](tostring)
+- [`Error.prototype.name`](name)
+- [`Error.prototype.toString()`](tostring)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error/message" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error/message</a>
 
@@ -55565,8 +55565,8 @@ You are now able to shorten this to:
 
 When doing so:
 
--   The asterisk (`*`) in the shorthand syntax must be _before_ the generator property name. (That is, `* g(){}` will work, but `g *(){}` will not.)
--   Non-generator method definitions cannot contain the `yield` keyword. This means that [legacy generator functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/Legacy_generator_function) won't work either, and will throw a [`SyntaxError`](../global_objects/syntaxerror). Always use `yield` in conjunction with the asterisk (`*`).
+- The asterisk (`*`) in the shorthand syntax must be _before_ the generator property name. (That is, `* g(){}` will work, but `g *(){}` will not.)
+- Non-generator method definitions cannot contain the `yield` keyword. This means that [legacy generator functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/Legacy_generator_function) won't work either, and will throw a [`SyntaxError`](../global_objects/syntaxerror). Always use `yield` in conjunction with the asterisk (`*`).
 
 <!-- -->
 
@@ -55792,9 +55792,9 @@ No
 
 ## See also
 
--   `get`
--   `set`
--   [Lexical grammar](../lexical_grammar)
+- `get`
+- `set`
+- [Lexical grammar](../lexical_grammar)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions</a>
 
@@ -55886,7 +55886,7 @@ may be written as this
 
 ## See also
 
--   [`Math.max()`](max)
+- [`Math.max()`](max)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -55960,9 +55960,9 @@ No
 
 ## See also
 
--   [`Number.MAX_SAFE_INTEGER`](max_safe_integer)
--   [`Number.isSafeInteger()`](issafeinteger)
--   [`BigInt`](../bigint)
+- [`Number.MAX_SAFE_INTEGER`](max_safe_integer)
+- [`Number.isSafeInteger()`](issafeinteger)
+- [`BigInt`](../bigint)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -56039,7 +56039,7 @@ The following code divides two numeric values. If the result is greater than or 
 
 ## See also
 
--   [`Number.MAX_VALUE`](max_value)
+- [`Number.MAX_VALUE`](max_value)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -56114,8 +56114,8 @@ No
 
 ## See also
 
--   [`Intl.Locale`](../locale)
--   [`Intl.Locale.baseName`](basename)
+- [`Intl.Locale`](../locale)
+- [`Intl.Locale.baseName`](basename)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/minimize" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/minimize</a>
 
@@ -56163,7 +56163,7 @@ Correct would be:
 
 ## See also
 
--   [`Array`](../global_objects/array)
+- [`Array`](../global_objects/array)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Missing_bracket_after_list" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Missing_bracket_after_list</a>
 
@@ -56228,7 +56228,7 @@ Put the expression in brackets `[]`:
 
 ## See also
 
--   [Object initializer](../operators/object_initializer)
+- [Object initializer](../operators/object_initializer)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Missing_colon_after_property_id" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Missing_colon_after_property_id</a>
 
@@ -56286,7 +56286,7 @@ Oftentimes, indenting differently or double checking indentation helps to spot t
 
 ## See also
 
--   [Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
+- [Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Missing_curly_after_function_body" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Missing_curly_after_function_body</a>
 
@@ -56329,7 +56329,7 @@ Correct would be:
 
 ## See also
 
--   [Object initializer](../operators/object_initializer)
+- [Object initializer](../operators/object_initializer)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Missing_curly_after_property_list" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Missing_curly_after_property_list</a>
 
@@ -56396,9 +56396,9 @@ You can then call these functions with the arguments you like:
 
 ## See also
 
--   Other errors regarding formal parameters:
-    -   [SyntaxError: Malformed formal parameter](malformed_formal_parameter)
-    -   [SyntaxError: redeclaration of formal parameter "x"](redeclared_parameter)
+- Other errors regarding formal parameters:
+    - [SyntaxError: Malformed formal parameter](malformed_formal_parameter)
+    - [SyntaxError: redeclaration of formal parameter "x"](redeclared_parameter)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Missing_formal_parameter" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Missing_formal_parameter</a>
 
@@ -56447,9 +56447,9 @@ Do not use `const` if you weren't meaning to declare a constant. Maybe you meant
 
 ## See also
 
--   `const`
--   `let`
--   `var`
+- `const`
+- `let`
+- `var`
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Missing_initializer_in_const" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Missing_initializer_in_const</a>
 
@@ -56507,7 +56507,7 @@ Instead you need to use a plus sign for concatenation:
 
 ## See also
 
--   [Property accessors](../operators/property_accessors)
+- [Property accessors](../operators/property_accessors)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Missing_name_after_dot_operator" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Missing_name_after_dot_operator</a>
 
@@ -56552,7 +56552,7 @@ Here JavaScript thinks that you meant to have `);` inside the string and ignores
 
 ## See also
 
--   [Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
+- [Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Missing_parenthesis_after_argument_list" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Missing_parenthesis_after_argument_list</a>
 
@@ -56613,9 +56613,9 @@ Instead you need to use a correct [comparison operator](https://developer.mozill
 
 ## See also
 
--   `if...else`
--   [Comparison operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators)
--   [Making decisions in your code — conditionals](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals)
+- `if...else`
+- [Comparison operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators)
+- [Making decisions in your code — conditionals](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Missing_parenthesis_after_condition" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Missing_parenthesis_after_condition</a>
 
@@ -56686,8 +56686,8 @@ Instead, use `function` instead of `def`:
 
 ## See also
 
--   [Automatic semicolon insertion (ASI)](../lexical_grammar#automatic_semicolon_insertion)
--   [JavaScript statements](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements)
+- [Automatic semicolon insertion (ASI)](../lexical_grammar#automatic_semicolon_insertion)
+- [JavaScript statements](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Missing_semicolon_before_statement" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Missing_semicolon_before_statement</a>
 
@@ -56902,9 +56902,9 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 
 ## See also
 
--   [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
--   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
--   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
+- [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
+- [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
+- [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -56949,7 +56949,7 @@ You can fix this by setting [`null`](../global_objects/null) as the prototype, f
 
 ## See also
 
--   [Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
+- [Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/More_arguments_needed" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/More_arguments_needed</a>
 
@@ -57046,14 +57046,14 @@ You cannot change this property directly.
 
 ## See also
 
--   [`RegExp.lastIndex`](lastindex)
--   [`RegExp.prototype.dotAll`](dotall)
--   [`RegExp.prototype.global`](global)
--   [`RegExp.prototype.hasIndices`](hasindices)
--   [`RegExp.prototype.ignoreCase`](ignorecase)
--   [`RegExp.prototype.source`](source)
--   [`RegExp.prototype.sticky`](sticky)
--   [`RegExp.prototype.unicode`](unicode)
+- [`RegExp.lastIndex`](lastindex)
+- [`RegExp.prototype.dotAll`](dotall)
+- [`RegExp.prototype.global`](global)
+- [`RegExp.prototype.hasIndices`](hasindices)
+- [`RegExp.prototype.ignoreCase`](ignorecase)
+- [`RegExp.prototype.source`](source)
+- [`RegExp.prototype.sticky`](sticky)
+- [`RegExp.prototype.unicode`](unicode)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -57118,15 +57118,15 @@ The multiplication operator (`*`) produces the product of the operands.
 
 ## See also
 
--   [Addition operator](addition)
--   [Subtraction operator](subtraction)
--   [Division operator](division)
--   [Remainder operator](remainder)
--   [Exponentiation operator](exponentiation)
--   [Increment operator](increment)
--   [Decrement operator](decrement)
--   [Unary negation operator](unary_negation)
--   [Unary plus operator](unary_plus)
+- [Addition operator](addition)
+- [Subtraction operator](subtraction)
+- [Division operator](division)
+- [Remainder operator](remainder)
+- [Exponentiation operator](exponentiation)
+- [Increment operator](increment)
+- [Decrement operator](decrement)
+- [Unary negation operator](unary_negation)
+- [Unary plus operator](unary_plus)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -57401,7 +57401,7 @@ No
 
 ## See also
 
--   [`Function`](../function)
+- [`Function`](../function)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/name" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/name</a>
 
@@ -57431,11 +57431,11 @@ The initial value of `NaN` is Not-A-Number — the same as the value of [`Number
 
 There are five different types of operations that return `NaN`:
 
--   Number cannot be parsed (e.g. `parseInt("blabla")` or `Number(undefined)`)
--   Math operation where the result is not a real number (e.g. `Math.sqrt(-1)`)
--   Operand of an argument is `NaN` (e.g. `7 ** NaN`)
--   Indeterminate form (e.g. `0 * Infinity`, or `undefined + undefined`)
--   Any operation that involves a string and is not an addition operation (e.g. `"foo" / 3`)
+- Number cannot be parsed (e.g. `parseInt("blabla")` or `Number(undefined)`)
+- Math operation where the result is not a real number (e.g. `Math.sqrt(-1)`)
+- Operand of an argument is `NaN` (e.g. `7 ** NaN`)
+- Indeterminate form (e.g. `0 * Infinity`, or `undefined + undefined`)
+- Any operation that involves a string and is not an addition operation (e.g. `"foo" / 3`)
 
 ## Examples
 
@@ -57501,9 +57501,9 @@ Additionally, some array methods cannot find `NaN`, while others can.
 
 ## See also
 
--   [`Number.NaN`](number/nan)
--   [`Number.isNaN()`](number/isnan)
--   [`isNaN()`](isnan)
+- [`Number.NaN`](number/nan)
+- [`Number.isNaN()`](number/isnan)
+- [`isNaN()`](isnan)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN</a>
 
@@ -57531,15 +57531,15 @@ The value of `Number.NEGATIVE_INFINITY` is the same as the negative value of the
 
 This value behaves slightly differently than mathematical infinity:
 
--   Any positive value, including [`POSITIVE_INFINITY`](positive_infinity), multiplied by `NEGATIVE_INFINITY` is `NEGATIVE_INFINITY`.
--   Any negative value, including `NEGATIVE_INFINITY`, multiplied by `NEGATIVE_INFINITY` is [`POSITIVE_INFINITY`](positive_infinity).
--   Any positive value divided by `NEGATIVE_INFINITY` is negative zero.
--   Any negative value divided by `NEGATIVE_INFINITY` is positive zero.
--   Zero multiplied by `NEGATIVE_INFINITY` is [`NaN`](../nan).
--   [`NaN`](../nan) multiplied by `NEGATIVE_INFINITY` is [`NaN`](../nan).
--   `NEGATIVE_INFINITY`, divided by any negative value except `NEGATIVE_INFINITY`, is [`POSITIVE_INFINITY`](positive_infinity).
--   `NEGATIVE_INFINITY`, divided by any positive value except [`POSITIVE_INFINITY`](positive_infinity), is `NEGATIVE_INFINITY`.
--   `NEGATIVE_INFINITY`, divided by either `NEGATIVE_INFINITY` or [`POSITIVE_INFINITY`](positive_infinity), is [`NaN`](../nan).
+- Any positive value, including [`POSITIVE_INFINITY`](positive_infinity), multiplied by `NEGATIVE_INFINITY` is `NEGATIVE_INFINITY`.
+- Any negative value, including `NEGATIVE_INFINITY`, multiplied by `NEGATIVE_INFINITY` is [`POSITIVE_INFINITY`](positive_infinity).
+- Any positive value divided by `NEGATIVE_INFINITY` is negative zero.
+- Any negative value divided by `NEGATIVE_INFINITY` is positive zero.
+- Zero multiplied by `NEGATIVE_INFINITY` is [`NaN`](../nan).
+- [`NaN`](../nan) multiplied by `NEGATIVE_INFINITY` is [`NaN`](../nan).
+- `NEGATIVE_INFINITY`, divided by any negative value except `NEGATIVE_INFINITY`, is [`POSITIVE_INFINITY`](positive_infinity).
+- `NEGATIVE_INFINITY`, divided by any positive value except [`POSITIVE_INFINITY`](positive_infinity), is `NEGATIVE_INFINITY`.
+- `NEGATIVE_INFINITY`, divided by either `NEGATIVE_INFINITY` or [`POSITIVE_INFINITY`](positive_infinity), is [`NaN`](../nan).
 
 You might use the `Number.NEGATIVE_INFINITY` property to indicate an error condition that returns a finite number in case of success. Note, however, that [`isFinite`](../isfinite) would be more appropriate in such a case.
 
@@ -57592,10 +57592,10 @@ In the following example, the variable `smallNumber` is assigned a value that is
 
 ## See also
 
--   [`Number.POSITIVE_INFINITY`](positive_infinity)
--   [`Number.isFinite()`](isfinite)
--   [`Infinity`](../infinity)
--   [`isFinite()`](../isfinite)
+- [`Number.POSITIVE_INFINITY`](positive_infinity)
+- [`Number.isFinite()`](isfinite)
+- [`Infinity`](../infinity)
+- [`isFinite()`](../isfinite)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -57634,7 +57634,7 @@ The [`String.prototype.repeat()`](../global_objects/string/repeat) method has be
 
 ## See also
 
--   [`String.prototype.repeat()`](../global_objects/string/repeat)
+- [`String.prototype.repeat()`](../global_objects/string/repeat)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Negative_repetition_count" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Negative_repetition_count</a>
 
@@ -57801,9 +57801,9 @@ Instead of passing a literal string or integer value when creating the new objec
 
 ## See also
 
--   [`Function`](../global_objects/function)
--   [`Reflect.construct()`](../global_objects/reflect/construct)
--   [`Object`](../global_objects/object)
+- [`Function`](../global_objects/function)
+- [`Reflect.construct()`](../global_objects/reflect/construct)
+- [`Object`](../global_objects/object)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -57901,10 +57901,10 @@ No
 
 ## See also
 
--   [Functions](../functions)
--   [Classes](../classes)
--   `new`
--   `this`
+- [Functions](../functions)
+- [Classes](../classes)
+- `new`
+- `this`
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -58067,8 +58067,8 @@ No
 
 ## See also
 
--   [`function*`](../../statements/function*)
--   [Iterators and generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators)
+- [`function*`](../../statements/function*)
+- [Iterators and generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator/next" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator/next</a>
 
@@ -58122,9 +58122,9 @@ Use objects instead:
 
 ## See also
 
--   [`Object.create()`](../global_objects/object/create)
--   [`Object.defineProperty()`](../global_objects/object/defineproperty), [`Object.defineProperties()`](../global_objects/object/defineproperties)
--   [`WeakMap`](../global_objects/weakmap), [`WeakSet`](../global_objects/weakset)
+- [`Object.create()`](../global_objects/object/create)
+- [`Object.defineProperty()`](../global_objects/object/defineproperty), [`Object.defineProperties()`](../global_objects/object/defineproperties)
+- [`WeakMap`](../global_objects/weakmap), [`WeakSet`](../global_objects/weakset)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/No_non-null_object" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/No_non-null_object</a>
 
@@ -58158,8 +58158,8 @@ Both, [`null`](../global_objects/null) and [`undefined`](../global_objects/undef
 
 ## See also
 
--   [`null`](../global_objects/null)
--   [`undefined`](../global_objects/undefined)
+- [`null`](../global_objects/null)
+- [`undefined`](../global_objects/undefined)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/No_properties" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/No_properties</a>
 
@@ -58180,7 +58180,7 @@ The JavaScript exception "missing variable name" occurs way too often as naming 
 
 A variable is missing a name. This is likely due to a syntax error in your code. Probably a comma is wrong somewhere or you struggled with coming up with a name. Totally understandable! Naming things is so hard.
 
--   Check to ensure the previous lines / declaration does not end with a comma instead of a semi-colon.
+- Check to ensure the previous lines / declaration does not end with a comma instead of a semi-colon.
 
 ## Examples
 
@@ -58232,9 +58232,9 @@ This would be correct:
 
 ## See also
 
--   [Good variable names](https://wiki.c2.com/?GoodVariableNames)
--   [`var`](../statements/var)
--   [Variable declarations in the JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#declarations)
+- [Good variable names](https://wiki.c2.com/?GoodVariableNames)
+- [`var`](../statements/var)
+- [Variable declarations in the JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#declarations)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/No_variable_name" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/No_variable_name</a>
 
@@ -58302,10 +58302,10 @@ You either need to remove the [`Object.seal()`](../global_objects/object/seal) c
 
 ## See also
 
--   [\[\[Configurable\]\]](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#properties)
--   [`Array.length`](../global_objects/array/length)
--   [`Object.defineProperty()`](../global_objects/object/defineproperty)
--   [`Object.seal()`](../global_objects/object/seal)
+- [\[\[Configurable\]\]](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#properties)
+- [`Array.length`](../global_objects/array/length)
+- [`Object.defineProperty()`](../global_objects/object/defineproperty)
+- [`Object.seal()`](../global_objects/object/seal)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Non_configurable_array_element" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Non_configurable_array_element</a>
 
@@ -58350,8 +58350,8 @@ A [`RangeError`](../rangeerror) is thrown if `form` isn't one of the values spec
 
 Unicode assigns a unique numerical value, called a _code point_, to each character. For example, the code point for `"A"` is given as U+0041. However, sometimes more than one code point, or sequence of code points, can represent the same abstract character — the character `"ñ"` for example can be represented by either of:
 
--   The single code point U+00F1.
--   The code point for `"n"` (U+006E) followed by the code point for the combining tilde (U+0303).
+- The single code point U+00F1.
+- The code point for `"n"` (U+006E) followed by the code point for the combining tilde (U+0303).
 
 <!-- -->
 
@@ -58413,8 +58413,8 @@ All canonically equivalent sequences are also compatible, but not vice versa.
 
 For example:
 
--   the code point U+FB00 represents the [ligature](https://developer.mozilla.org/en-US/docs/Glossary/Ligature) `"ﬀ"`. It is compatible with two consecutive U+0066 code points (`"ff"`).
--   the code point U+24B9 represents the symbol `"Ⓓ"`. It is compatible with the U+0044 code point (`"D"`).
+- the code point U+FB00 represents the [ligature](https://developer.mozilla.org/en-US/docs/Glossary/Ligature) `"ﬀ"`. It is compatible with two consecutive U+0066 code points (`"ff"`).
+- the code point U+24B9 represents the symbol `"Ⓓ"`. It is compatible with the U+0044 code point (`"D"`).
 
 In some respects (such as sorting) they should be treated as equivalent—and in some (such as visual appearance) they should not, so they are not canonically equivalent.
 
@@ -58543,8 +58543,8 @@ No
 
 ## See also
 
--   [Unicode Standard Annex \#15, Unicode Normalization Forms](https://www.unicode.org/reports/tr15/)
--   [Unicode equivalence](https://en.wikipedia.org/wiki/Unicode_equivalence)
+- [Unicode Standard Annex \#15, Unicode Normalization Forms](https://www.unicode.org/reports/tr15/)
+- [Unicode equivalence](https://en.wikipedia.org/wiki/Unicode_equivalence)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -58591,7 +58591,7 @@ A [code point](https://en.wikipedia.org/wiki/Code_point) is a value in the Unico
 
 ## See also
 
--   [`String.fromCodePoint()`](../global_objects/string/fromcodepoint)
+- [`String.fromCodePoint()`](../global_objects/string/fromcodepoint)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Not_a_codepoint" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Not_a_codepoint</a>
 
@@ -58674,8 +58674,8 @@ Instead, use the [Promise.resolve()](../global_objects/promise/resolve) or [Prom
 
 ## See also
 
--   [constructor](https://developer.mozilla.org/en-US/docs/Glossary/Constructor)
--   [`new` operator](../operators/new)
+- [constructor](https://developer.mozilla.org/en-US/docs/Glossary/Constructor)
+- [`new` operator](../operators/new)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Not_a_constructor" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Not_a_constructor</a>
 
@@ -58700,10 +58700,10 @@ Maybe there is a typo in the function name? Maybe the object you are calling the
 
 There are many built-in functions in need of a (callback) function. You will have to provide a function in order to have these methods working properly:
 
--   When working with [`Array`](../global_objects/array) or [`TypedArray`](../global_objects/typedarray) objects:
-    -   [`Array.prototype.every()`](../global_objects/array/every), [`Array.prototype.some()`](../global_objects/array/some), [`Array.prototype.forEach()`](../global_objects/array/foreach), [`Array.prototype.map()`](../global_objects/array/map), [`Array.prototype.filter()`](../global_objects/array/filter), [`Array.prototype.reduce()`](../global_objects/array/reduce), [`Array.prototype.reduceRight()`](../global_objects/array/reduceright), [`Array.prototype.find()`](../global_objects/array/find)
--   When working with [`Map`](../global_objects/map) and [`Set`](../global_objects/set) objects:
-    -   [`Map.prototype.forEach()`](../global_objects/map/foreach) and [`Set.prototype.forEach()`](../global_objects/set/foreach)
+- When working with [`Array`](../global_objects/array) or [`TypedArray`](../global_objects/typedarray) objects:
+    - [`Array.prototype.every()`](../global_objects/array/every), [`Array.prototype.some()`](../global_objects/array/some), [`Array.prototype.forEach()`](../global_objects/array/foreach), [`Array.prototype.map()`](../global_objects/array/map), [`Array.prototype.filter()`](../global_objects/array/filter), [`Array.prototype.reduce()`](../global_objects/array/reduce), [`Array.prototype.reduceRight()`](../global_objects/array/reduceright), [`Array.prototype.find()`](../global_objects/array/find)
+- When working with [`Map`](../global_objects/map) and [`Set`](../global_objects/set) objects:
+    - [`Map.prototype.forEach()`](../global_objects/map/foreach) and [`Set.prototype.forEach()`](../global_objects/set/foreach)
 
 ## Examples
 
@@ -58820,7 +58820,7 @@ The correct import usage (`App.js`):
 
 ## See also
 
--   [Functions](../functions)
+- [Functions](../functions)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Not_a_function" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Not_a_function</a>
 
@@ -58878,9 +58878,9 @@ However, a function can access all variables and functions defined inside the sc
 
 ## See also
 
--   [Scope](https://developer.mozilla.org/en-US/docs/Glossary/Scope)
--   [Declaring variables in the JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#declaring_variables)
--   [Function scope in the JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions#function_scope)
+- [Scope](https://developer.mozilla.org/en-US/docs/Glossary/Scope)
+- [Declaring variables in the JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#declaring_variables)
+- [Function scope in the JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions#function_scope)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Not_defined" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Not_defined</a>
 
@@ -58908,13 +58908,13 @@ The number of sleeping agents to notify. Defaults to [`+Infinity`](../infinity).
 
 ### Return value
 
--   Returns the number of woken up agents.
--   Returns `0`, if a non-shared [`ArrayBuffer`](../arraybuffer) object is used.
+- Returns the number of woken up agents.
+- Returns `0`, if a non-shared [`ArrayBuffer`](../arraybuffer) object is used.
 
 ### Exceptions
 
--   Throws a [`TypeError`](../typeerror), if `typedArray` is not a [`Int32Array`](../int32array).
--   Throws a [`RangeError`](../rangeerror), if `index` is out of bounds in the `typedArray`.
+- Throws a [`TypeError`](../typeerror), if `typedArray` is not a [`Int32Array`](../int32array).
+- Throws a [`RangeError`](../rangeerror), if `index` is out of bounds in the `typedArray`.
 
 ## Examples
 
@@ -59041,8 +59041,8 @@ Chrome disabled `SharedArrayBuffer` on January 5, 2018 to help reduce the effica
 
 ## See also
 
--   [`Atomics`](../atomics)
--   [`Atomics.wait()`](wait)
+- [`Atomics`](../atomics)
+- [`Atomics.wait()`](wait)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics/notify" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics/notify</a>
 
@@ -59156,8 +59156,8 @@ Samsung Internet
 
 ## See also
 
--   [`Performance.now()`](https://developer.mozilla.org/en-US/docs/Web/API/Performance/now) — provides timestamps with sub-millisecond resolution for use in measuring web page performance
--   [`console.time()`](https://developer.mozilla.org/en-US/docs/Web/API/Console/time) / [`console.timeEnd()`](https://developer.mozilla.org/en-US/docs/Web/API/Console/timeEnd)
+- [`Performance.now()`](https://developer.mozilla.org/en-US/docs/Web/API/Performance/now) — provides timestamps with sub-millisecond resolution for use in measuring web page performance
+- [`console.time()`](https://developer.mozilla.org/en-US/docs/Web/API/Console/time) / [`console.timeEnd()`](https://developer.mozilla.org/en-US/docs/Web/API/Console/timeEnd)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/now" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/now</a>
 
@@ -59261,9 +59261,9 @@ Samsung Internet
 
 ## See also
 
--   [`undefined`](undefined)
--   [`NaN`](nan)
--   [`void operator`](../operators/void)
+- [`undefined`](undefined)
+- [`NaN`](nan)
+- [`void operator`](../operators/void)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null</a>
 
@@ -59428,9 +59428,9 @@ No
 
 ## See also
 
--   [The optional chaining operator](optional_chaining)
--   [The logical OR (`||`) operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#logical_or_2)
--   [Default parameters in functions](../functions/default_parameters)
+- [The optional chaining operator](optional_chaining)
+- [The logical OR (`||`) operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#logical_or_2)
+- [Default parameters in functions](../functions/default_parameters)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -60233,10 +60233,10 @@ No
 
 ## See also
 
--   [`NaN`](nan)
--   <span class="page-not-created">`Arithmetic operators`</span>
--   The [`Math`](math) global object
--   Integers with arbitrary precision: [`BigInt`](bigint)
+- [`NaN`](nan)
+- <span class="page-not-created">`Arithmetic operators`</span>
+- The [`Math`](math) global object
+- Integers with arbitrary precision: [`BigInt`](bigint)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number</a>
 
@@ -60270,10 +60270,10 @@ The currency to use in currency formatting. Possible values are the ISO 4217 cur
 `currencyDisplay`  
 How to display the currency in currency formatting. Possible values are:
 
--   "`symbol`" to use a localized currency symbol such as €, this is the default value,
--   "`narrowSymbol`" to use a narrow format symbol ("$100" rather than "US$100"),
--   "`code`" to use the ISO currency code,
--   "`name`" to use a localized currency name such as "`dollar`",
+- "`symbol`" to use a localized currency symbol such as €, this is the default value,
+- "`narrowSymbol`" to use a narrow format symbol ("$100" rather than "US$100"),
+- "`code`" to use the ISO currency code,
+- "`name`" to use a localized currency name such as "`dollar`",
 
 `currencySign`  
 In many locales, accounting format means to wrap the number with parentheses instead of appending a minus sign. You can enable this formatting by setting the `currencySign` option to "`accounting`". The default value is "`standard`".
@@ -60284,10 +60284,10 @@ The locale matching algorithm to use. Possible values are "`lookup`" and "`best 
 `notation`  
 The formatting that should be displayed for the number, the defaults is "`standard`"
 
--   "`standard`" plain number formatting
--   "`scientific`" return the order-of-magnitude for formatted number.
--   "`engineering`" return the exponent of ten when divisible by three
--   "`compact`" string representing exponent, defaults is using the "short" form.
+- "`standard`" plain number formatting
+- "`scientific`" return the order-of-magnitude for formatted number.
+- "`engineering`" return the exponent of ten when divisible by three
+- "`compact`" string representing exponent, defaults is using the "short" form.
 
 `numberingSystem`  
 Numbering System. Possible values include: "`arab`", "`arabext`", " `bali`", "`beng`", "`deva`", "`fullwide`", " `gujr`", "`guru`", "`hanidec`", "`khmr`", " `knda`", "`laoo`", "`latn`", "`limb`", "`mlym`", " `mong`", "`mymr`", "`orya`", "`tamldec`", " `telu`", "`thai`", "`tibt`".
@@ -60295,18 +60295,18 @@ Numbering System. Possible values include: "`arab`", "`arabext`", " `bali`", "`b
 `signDisplay`  
 When to display the sign for the number; defaults to "`auto`"
 
--   "`auto`" sign display for negative numbers only
--   "`never`" never display sign
--   "`always`" always display sign
--   "`exceptZero`" sign display for positive and negative numbers, but not zero
+- "`auto`" sign display for negative numbers only
+- "`never`" never display sign
+- "`always`" always display sign
+- "`exceptZero`" sign display for positive and negative numbers, but not zero
 
 `style`  
 The formatting style to use , the default is "`decimal`".
 
--   "`decimal`" for plain number formatting.
--   "`currency`" for currency formatting.
--   "`percent`" for percent formatting
--   "`unit`" for unit formatting
+- "`decimal`" for plain number formatting.
+- "`currency`" for currency formatting.
+- "`percent`" for percent formatting
+- "`unit`" for unit formatting
 
 `unit`  
 The unit to use in `unit` formatting, Possible values are core unit identifiers, defined in [UTS \#35, Part 2, Section 6](https://unicode.org/reports/tr35/tr35-general.html#Unit_Elements). A [subset](https://tc39.es/proposal-unified-intl-numberformat/section6/locales-currencies-tz_proposed_out.html#sec-issanctionedsimpleunitidentifier) of units from the [full list](https://github.com/unicode-org/cldr/blob/master/common/validity/unit.xml) was selected for use in ECMAScript. Pairs of simple units can be concatenated with "`-per-`" to make a compound unit. There is no default value; if the `style` is "`unit`", the `unit` property must be provided.
@@ -60314,9 +60314,9 @@ The unit to use in `unit` formatting, Possible values are core unit identifiers,
 `unitDisplay`  
 The unit formatting style to use in `unit` formatting, the defaults is "`short`".
 
--   "`long`" (e.g., `16 litres`)
--   "`short`" (e.g., `16 l`)
--   "`narrow`" (e.g., `16l`)
+- "`long`" (e.g., `16 litres`)
+- "`short`" (e.g., `16 l`)
+- "`narrow`" (e.g., `16l`)
 
 `useGrouping`  
 Whether to use grouping separators, such as thousands separators or thousand/lakh/crore separators. Possible values are true and false; the default is true.
@@ -60699,8 +60699,8 @@ No
 
 ## See also
 
--   [`Intl.NumberFormat`](../numberformat)
--   [`Intl`](../../intl)
+- [`Intl.NumberFormat`](../numberformat)
+- [`Intl`](../../intl)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/NumberFormat" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/NumberFormat</a>
 
@@ -60795,8 +60795,8 @@ No
 
 ## See also
 
--   [`Intl.Locale`](../locale)
--   [Details on the standard Unicode numeral systems](https://github.com/unicode-org/cldr/blob/master/common/supplemental/numberingSystems.xml)
+- [`Intl.Locale`](../locale)
+- [Details on the standard Unicode numeral systems](https://github.com/unicode-org/cldr/blob/master/common/supplemental/numberingSystems.xml)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/numberingSystem" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/numberingSystem</a>
 
@@ -60889,7 +60889,7 @@ No
 
 ## See also
 
--   [`Intl.Locale`](../locale)
+- [`Intl.Locale`](../locale)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/numeric" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/numeric</a>
 
@@ -60905,9 +60905,9 @@ Changes to the `Object` prototype object are seen by **all** objects through pro
 
 The `Object` constructor creates an object wrapper for the given value.
 
--   If the value is [`null`](null) or [`undefined`](undefined), it will create and return an empty object.
--   Otherwise, it will return an object of a Type that corresponds to the given value.
--   If the value is an object already, it will return the value.
+- If the value is [`null`](null) or [`undefined`](undefined), it will create and return an empty object.
+- Otherwise, it will return an object of a Type that corresponds to the given value.
+- If the value is an object already, it will return the value.
 
 When called in a non-constructor context, `Object` behaves identically to `new Object()`.
 
@@ -62134,7 +62134,7 @@ No
 
 ## See also
 
--   [Object initializer](../operators/object_initializer)
+- [Object initializer](../operators/object_initializer)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object</a>
 
@@ -62184,11 +62184,11 @@ An object initializer is an expression that describes the initialization of an [
 
 The object literal notation is not the same as the **J**ava**S**cript **O**bject **N**otation ([JSON](https://developer.mozilla.org/en-US/docs/Glossary/JSON)). Although they look similar, there are differences between them:
 
--   JSON permits _only_ property definition using `"property": value` syntax. The property name must be double-quoted, and the definition cannot be a shorthand.
--   In JSON the values can only be strings, numbers, arrays, `true`, `false`, `null`, or another (JSON) object.
--   A function value (see "Methods" below) can not be assigned to a value in JSON.
--   Objects like [`Date`](../global_objects/date) will be a string after [`JSON.parse()`](../global_objects/json/parse).
--   [`JSON.parse()`](../global_objects/json/parse) will reject computed property names and an error will be thrown.
+- JSON permits _only_ property definition using `"property": value` syntax. The property name must be double-quoted, and the definition cannot be a shorthand.
+- In JSON the values can only be strings, numbers, arrays, `true`, `false`, `null`, or another (JSON) object.
+- A function value (see "Methods" below) can not be assigned to a value in JSON.
+- Objects like [`Date`](../global_objects/date) will be a string after [`JSON.parse()`](../global_objects/json/parse).
+- [`JSON.parse()`](../global_objects/json/parse) will reject computed property names and an error will be thrown.
 
 ## Examples
 
@@ -62554,10 +62554,10 @@ No
 
 ## See also
 
--   [Property accessors](property_accessors)
--   `get` / `set`
--   [Method definitions](../functions/method_definitions)
--   [Lexical grammar](../lexical_grammar)
+- [Property accessors](property_accessors)
+- `get` / `set`
+- [Method definitions](../functions/method_definitions)
+- [Lexical grammar](../lexical_grammar)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -62573,17 +62573,17 @@ The `TypedArray.of()` method creates a new [typed array](../typedarray#typedarra
 
 Where `TypedArray` is one of:
 
--   [`Int8Array`](../int8array)
--   [`Uint8Array`](../uint8array)
--   [`Uint8ClampedArray`](../uint8clampedarray)
--   [`Int16Array`](../int16array)
--   [`Uint16Array`](../uint16array)
--   [`Int32Array`](../int32array)
--   [`Uint32Array`](../uint32array)
--   [`Float32Array`](../float32array)
--   [`Float64Array`](../float64array)
--   [`BigInt64Array`](../bigint64array)
--   [`BigUint64Array`](../biguint64array)
+- [`Int8Array`](../int8array)
+- [`Uint8Array`](../uint8array)
+- [`Uint8ClampedArray`](../uint8clampedarray)
+- [`Int16Array`](../int16array)
+- [`Uint16Array`](../uint16array)
+- [`Int32Array`](../int32array)
+- [`Uint32Array`](../uint32array)
+- [`Float32Array`](../float32array)
+- [`Float64Array`](../float64array)
+- [`BigInt64Array`](../bigint64array)
+- [`BigUint64Array`](../biguint64array)
 
 ### Parameters
 
@@ -62598,8 +62598,8 @@ A new [`TypedArray`](../typedarray) instance.
 
 Some subtle distinctions between [`Array.of()`](../array/of) and `TypedArray.of()`:
 
--   If the `this` value passed to `TypedArray.of()` is not a constructor, `TypedArray.of()` will throw a [`TypeError`](../typeerror), where `Array.of()` defaults to creating a new [`Array`](../array).
--   `TypedArray.of()` uses `[[Put]]` where `Array.of()` uses `[[DefineProperty]]`. Hence, when working with [`Proxy`](../proxy) objects, it calls [`handler.set`](../proxy/proxy/set) to create new elements rather than [`handler.defineProperty()`](../proxy/proxy/defineproperty).
+- If the `this` value passed to `TypedArray.of()` is not a constructor, `TypedArray.of()` will throw a [`TypeError`](../typeerror), where `Array.of()` defaults to creating a new [`Array`](../array).
+- `TypedArray.of()` uses `[[Put]]` where `Array.of()` uses `[[DefineProperty]]`. Hence, when working with [`Proxy`](../proxy) objects, it calls [`handler.set`](../proxy/proxy/set) to create new elements rather than [`handler.defineProperty()`](../proxy/proxy/defineproperty).
 
 ## Examples
 
@@ -62675,8 +62675,8 @@ No
 
 ## See also
 
--   [`TypedArray.from()`](from)
--   [`Array.of()`](../array/of)
+- [`TypedArray.from()`](from)
+- [`Array.of()`](../array/of)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -63323,7 +63323,7 @@ No
 
 ## See also
 
--   The [Nullish Coalescing Operator](nullish_coalescing_operator)
+- The [Nullish Coalescing Operator](nullish_coalescing_operator)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -63354,8 +63354,8 @@ The old value at the given position (`typedArray[index]`).
 
 ### Exceptions
 
--   Throws a [`TypeError`](../typeerror), if `typedArray` is not one of the allowed integer types.
--   Throws a [`RangeError`](../rangeerror), if `index` is out of bounds in the `typedArray`.
+- Throws a [`TypeError`](../typeerror), if `typedArray` is not one of the allowed integer types.
+- Throws a [`RangeError`](../rangeerror), if `index` is out of bounds in the `typedArray`.
 
 ## Description
 
@@ -63474,9 +63474,9 @@ Chrome disabled `SharedArrayBuffer` on January 5, 2018 to help reduce the effica
 
 ## See also
 
--   [`Atomics`](../atomics)
--   [`Atomics.and()`](and)
--   [`Atomics.xor()`](xor)
+- [`Atomics`](../atomics)
+- [`Atomics.and()`](and)
+- [`Atomics.xor()`](xor)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics/or" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics/or</a>
 
@@ -63510,19 +63510,19 @@ The `handler.ownKeys()` method is a trap for [`Reflect.ownKeys()`](../../reflect
 
 This trap can intercept these operations:
 
--   [`Object.getOwnPropertyNames()`](../../object/getownpropertynames)
--   [`Object.getOwnPropertySymbols()`](../../object/getownpropertysymbols)
--   [`Object.keys()`](../../object/keys)
--   [`Reflect.ownKeys()`](../../reflect/ownkeys)
+- [`Object.getOwnPropertyNames()`](../../object/getownpropertynames)
+- [`Object.getOwnPropertySymbols()`](../../object/getownpropertysymbols)
+- [`Object.keys()`](../../object/keys)
+- [`Reflect.ownKeys()`](../../reflect/ownkeys)
 
 ### Invariants
 
 If the following invariants are violated, the proxy will throw a [`TypeError`](../../typeerror):
 
--   The result of `ownKeys()` must be an array.
--   The type of each array element is either a [`String`](../../string) or a [`Symbol`](../../symbol).
--   The result List must contain the keys of all non-configurable own properties of the target object.
--   If the target object is not extensible, then the result List must contain all the keys of the own properties of the target object and no other values.
+- The result of `ownKeys()` must be an array.
+- The type of each array element is either a [`String`](../../string) or a [`Symbol`](../../symbol).
+- The result List must contain the keys of all non-configurable own properties of the target object.
+- If the target object is not extensible, then the result List must contain all the keys of the own properties of the target object and no other values.
 
 ## Examples
 
@@ -63629,10 +63629,10 @@ In Firefox 42, the implementation got updated to reflect the final ES2015 specif
 
 ## See also
 
--   [`Proxy`](../../proxy)
--   [`handler`](../proxy)
--   [`Object.getOwnPropertyNames()`](../../object/getownpropertynames)
--   [`Reflect.ownKeys()`](../../reflect/ownkeys)
+- [`Proxy`](../../proxy)
+- [`handler`](../proxy)
+- [`Object.getOwnPropertyNames()`](../../object/getownpropertynames)
+- [`Reflect.ownKeys()`](../../reflect/ownkeys)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -63733,8 +63733,8 @@ No
 
 ## See also
 
--   [`String.prototype.padStart()`](padstart)
--   [A polyfill](https://github.com/behnammodi/polyfill/blob/master/string.polyfill.js)
+- [`String.prototype.padStart()`](padstart)
+- [A polyfill](https://github.com/behnammodi/polyfill/blob/master/string.polyfill.js)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -63848,8 +63848,8 @@ No
 
 ## See also
 
--   [`String.prototype.padEnd()`](padend)
--   [A polyfill](https://github.com/behnammodi/polyfill/blob/master/string.polyfill.js)
+- [`String.prototype.padEnd()`](padend)
+- [A polyfill](https://github.com/behnammodi/polyfill/blob/master/string.polyfill.js)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -64074,12 +64074,12 @@ Samsung Internet
 
 ### Compatibility notes
 
--   Firefox 49 changed the parsing of 2-digit years to be aligned with the Google Chrome browser instead of Internet Explorer. Now, 2-digit years that are less than `50` are parsed as 21<sup>st</sup> century years. For example, `04/16/17`, previously parsed as April 16, 1917, will be April 16, 2017 now. To avoid any interoperability issues or ambiguous years, it is recommended to use the ISO 8601 format like "`2017-04-16`" ([bug 1265136](https://bugzilla.mozilla.org/show_bug.cgi?id=1265136)).
--   Google Chrome will accept a numerical string as a valid `dateString` parameter. This means that, for instance, while `!!Date.parse("42")` evaluates to `false` in Firefox, it evaluates to `true` in Google Chrome because "`42`" is interpreted as January 1<sup>st</sup>, 2042.
+- Firefox 49 changed the parsing of 2-digit years to be aligned with the Google Chrome browser instead of Internet Explorer. Now, 2-digit years that are less than `50` are parsed as 21<sup>st</sup> century years. For example, `04/16/17`, previously parsed as April 16, 1917, will be April 16, 2017 now. To avoid any interoperability issues or ambiguous years, it is recommended to use the ISO 8601 format like "`2017-04-16`" ([bug 1265136](https://bugzilla.mozilla.org/show_bug.cgi?id=1265136)).
+- Google Chrome will accept a numerical string as a valid `dateString` parameter. This means that, for instance, while `!!Date.parse("42")` evaluates to `false` in Firefox, it evaluates to `true` in Google Chrome because "`42`" is interpreted as January 1<sup>st</sup>, 2042.
 
 ## See also
 
--   [`Date.UTC()`](utc)
+- [`Date.UTC()`](utc)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/parse" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/parse</a>
 
@@ -64106,12 +64106,12 @@ Or [`NaN`](nan) when the first non-whitespace character cannot be converted to a
 
 `parseFloat` is a function property of the global object.
 
--   If `parseFloat` encounters a character other than a plus sign (`+`), minus sign (`-` U+002D HYPHEN-MINUS), numeral (`0`-`9`), decimal point (`.`), or exponent (`e` or `E`), it returns the value up to that character, ignoring the invalid character and characters following it.
--   A _second_ decimal point also stops parsing (characters up to that point will still be parsed).
--   Leading and trailing spaces in the argument are ignored.
--   If the argument's first character can't be converted to a number (it's not any of the above characters), `parseFloat` returns [`NaN`](nan).
--   `parseFloat` can also parse and return [`Infinity`](infinity).
--   `parseFloat` converts [`BigInt`](bigint) syntax to [`Numbers`](number), losing precision. This happens because the trailing `n` character is discarded.
+- If `parseFloat` encounters a character other than a plus sign (`+`), minus sign (`-` U+002D HYPHEN-MINUS), numeral (`0`-`9`), decimal point (`.`), or exponent (`e` or `E`), it returns the value up to that character, ignoring the invalid character and characters following it.
+- A _second_ decimal point also stops parsing (characters up to that point will still be parsed).
+- Leading and trailing spaces in the argument are ignored.
+- If the argument's first character can't be converted to a number (it's not any of the above characters), `parseFloat` returns [`NaN`](nan).
+- `parseFloat` can also parse and return [`Infinity`](infinity).
+- `parseFloat` converts [`BigInt`](bigint) syntax to [`Numbers`](number), losing precision. This happens because the trailing `n` character is discarded.
 
 Consider [`Number(value)`](number) for stricter parsing, which converts to [`NaN`](nan) for arguments with invalid characters anywhere.
 
@@ -64209,11 +64209,11 @@ Samsung Internet
 
 ## See also
 
--   [`parseInt()`](parseint)
--   [`Number.parseFloat()`](number/parsefloat)
--   [`Number.parseInt()`](number/parseint)
--   [`Number.toFixed()`](number/tofixed)
--   [`isNaN()`](isnan)
+- [`parseInt()`](parseint)
+- [`Number.parseFloat()`](number/parsefloat)
+- [`Number.parseInt()`](number/parseint)
+- [`Number.toFixed()`](number/tofixed)
+- [`isNaN()`](isnan)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat</a>
 
@@ -64242,8 +64242,8 @@ An integer parsed from the given `string`.
 
 Or [`NaN`](nan) when
 
--   the `radix` is smaller than `2` or bigger than `36`, or
--   the first non-whitespace character cannot be converted to a number.
+- the `radix` is smaller than `2` or bigger than `36`, or
+- the first non-whitespace character cannot be converted to a number.
 
 ## Description
 
@@ -64481,12 +64481,12 @@ Samsung Internet
 
 ## See also
 
--   [`parseFloat()`](parsefloat)
--   [`Number.parseFloat()`](number/parsefloat)
--   [`Number.parseInt()`](number/parseint)
--   [`isNaN()`](isnan)
--   [`Number.toString()`](number/tostring)
--   [`Object.valueOf`](object/valueof)
+- [`parseFloat()`](parsefloat)
+- [`Number.parseFloat()`](number/parsefloat)
+- [`Number.parseInt()`](number/parseint)
+- [`isNaN()`](isnan)
+- [`Number.toString()`](number/tostring)
+- [`Object.valueOf`](object/valueof)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt</a>
 
@@ -64591,7 +64591,7 @@ Samsung Internet
 
 ## See also
 
--   [`Math`](../math)
+- [`Math`](../math)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -64611,8 +64611,8 @@ As a baseline requirement, documents will need to be in a [secure context](https
 
 For top-level documents, two headers will need to be set:
 
--   [`Cross-Origin-Opener-Policy`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cross-Origin-Opener-Policy) with `same-origin` as value (protects your origin from attackers)
--   [`Cross-Origin-Embedder-Policy`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cross-Origin-Embedder-Policy) with `require-corp` as value (protects victims from your origin)
+- [`Cross-Origin-Opener-Policy`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cross-Origin-Opener-Policy) with `same-origin` as value (protects your origin from attackers)
+- [`Cross-Origin-Embedder-Policy`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cross-Origin-Embedder-Policy) with `require-corp` as value (protects victims from your origin)
 
 With these two headers set, `postMessage()` will no longer throw for `SharedArrayBuffer` objects and shared memory across threads is therefore available.
 
@@ -64624,10 +64624,10 @@ Note that the [`Cross-Origin-Opener-Policy`](https://developer.mozilla.org/en-US
 
 As a result of this newly required environment, there are a couple API implications:
 
--   The `Atomics` object is always available.
--   `SharedArrayBuffer` objects are in principle always available, but unfortunately the constructor on the global object is hidden, unless the two headers mentioned above are set, for compatibility with web content. There is hope that this restriction can be removed in the future. `WebAssembly.Memory` can still be used to get an instance.
--   Unless the two headers mentioned above are set, the various `postMessage()` APIs will throw for `SharedArrayBuffer` objects. If they are set, `postMessage()` on `Window` objects and dedicated workers will function and allow for memory sharing.
--   To avoid having to check whether `postMessage()` throws, [`self.crossOriginIsolated`](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/crossOriginIsolated) is being standardized (a getter that returns a boolean; `true` if the headers are set), available in window and worker contexts.
+- The `Atomics` object is always available.
+- `SharedArrayBuffer` objects are in principle always available, but unfortunately the constructor on the global object is hidden, unless the two headers mentioned above are set, for compatibility with web content. There is hope that this restriction can be removed in the future. `WebAssembly.Memory` can still be used to get an instance.
+- Unless the two headers mentioned above are set, the various `postMessage()` APIs will throw for `SharedArrayBuffer` objects. If they are set, `postMessage()` on `Window` objects and dedicated workers will function and allow for memory sharing.
+- To avoid having to check whether `postMessage()` throws, [`self.crossOriginIsolated`](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/crossOriginIsolated) is being standardized (a getter that returns a boolean; `true` if the headers are set), available in window and worker contexts.
 
 ## WebAssembly Shared Memory
 
@@ -64637,11 +64637,11 @@ The WebAssembly Threads proposal also defines a new set of [atomic](https://gith
 
 ## Further reading
 
--   [COOP and COEP explained](https://docs.google.com/document/d/1zDlfvfTJ_9e8Jdc8ehuV4zMEu9ySMCiTGMS9y0GU92k/edit).
--   `Cross-Origin-Opener-Policy`: [whatwg/html issue \#3740](https://github.com/whatwg/html/issues/3740), [draft specification](https://gist.github.com/annevk/6f2dd8c79c77123f39797f6bdac43f3e).
--   `Cross-Origin-Embedder-Policy`: [whatwg/html issue \#4175](https://github.com/whatwg/html/issues/4175), [draft specification](https://mikewest.github.io/corpp/).
--   `Cross-Origin-Resource-Policy`: [standardized in Fetch](https://fetch.spec.whatwg.org/#cross-origin-resource-policy-header), new `cross-origin` value is part of the `Cross-Origin-Embedder-Policy` effort.
--   `postMessage()` changes and [`self.crossOriginIsolated`](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/crossOriginIsolated): [whatwg/html issue \#4732](https://github.com/whatwg/html/issues/4732), [whatwg/html issue \#4872](https://github.com/whatwg/html/issues/4872), [draft specification](https://github.com/whatwg/html/pull/4734).
+- [COOP and COEP explained](https://docs.google.com/document/d/1zDlfvfTJ_9e8Jdc8ehuV4zMEu9ySMCiTGMS9y0GU92k/edit).
+- `Cross-Origin-Opener-Policy`: [whatwg/html issue \#3740](https://github.com/whatwg/html/issues/3740), [draft specification](https://gist.github.com/annevk/6f2dd8c79c77123f39797f6bdac43f3e).
+- `Cross-Origin-Embedder-Policy`: [whatwg/html issue \#4175](https://github.com/whatwg/html/issues/4175), [draft specification](https://mikewest.github.io/corpp/).
+- `Cross-Origin-Resource-Policy`: [standardized in Fetch](https://fetch.spec.whatwg.org/#cross-origin-resource-policy-header), new `cross-origin` value is part of the `Cross-Origin-Embedder-Policy` effort.
+- `postMessage()` changes and [`self.crossOriginIsolated`](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/crossOriginIsolated): [whatwg/html issue \#4732](https://github.com/whatwg/html/issues/4732), [whatwg/html issue \#4872](https://github.com/whatwg/html/issues/4872), [draft specification](https://github.com/whatwg/html/pull/4734).
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -64671,8 +64671,8 @@ The locale matching algorithm to use. Possible values are "`lookup`" and "`best 
 `type`  
 The type to use. Possible values are:
 
--   "`cardinal`" for cardinal numbers (refering to the quantity of things). This is the default value.
--   "`ordinal`" for ordinal number (refering to the ordering or ranking of things, e.g. "1st", "2nd", "3rd" in English).
+- "`cardinal`" for cardinal numbers (refering to the quantity of things). This is the default value.
+- "`ordinal`" for ordinal number (refering to the ordering or ranking of things, e.g. "1st", "2nd", "3rd" in English).
 
 The following properties fall into two groups: `minimumIntegerDigits`, `minimumFractionDigits`, and `maximumFractionDigits` in one group, `minimumSignificantDigits` and `maximumSignificantDigits` in the other. If at least one property from the second group is defined, then the first group is ignored.
 
@@ -64792,8 +64792,8 @@ No
 
 ## See also
 
--   [`Intl.PluralRules`](../pluralrules)
--   [`Intl`](../../intl)
+- [`Intl.PluralRules`](../pluralrules)
+- [`Intl`](../../intl)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/PluralRules/PluralRules" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/PluralRules/PluralRules</a>
 
@@ -64910,11 +64910,11 @@ Samsung Internet
 
 ## See also
 
--   [`Array.prototype.push()`](push)
--   [`Array.prototype.shift()`](shift)
--   [`Array.prototype.unshift()`](unshift)
--   [`Array.prototype.concat()`](concat)
--   [`Array.prototype.splice()`](splice)
+- [`Array.prototype.push()`](push)
+- [`Array.prototype.shift()`](shift)
+- [`Array.prototype.unshift()`](unshift)
+- [`Array.prototype.concat()`](concat)
+- [`Array.prototype.splice()`](splice)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop</a>
 
@@ -64942,15 +64942,15 @@ The value of `Number.POSITIVE_INFINITY` is the same as the value of the global o
 
 This value behaves slightly differently than mathematical infinity:
 
--   Any positive value, including `POSITIVE_INFINITY`, multiplied by `POSITIVE_INFINITY` is `POSITIVE_INFINITY`.
--   Any negative value, including [`NEGATIVE_INFINITY`](negative_infinity), multiplied by `POSITIVE_INFINITY` is [`NEGATIVE_INFINITY`](negative_infinity).
--   Any positive number divided by `POSITIVE_INFINITY` is positive Zero.
--   Any negative number divided by `POSITIVE_INFINITY` is negative Zero.
--   Zero multiplied by `POSITIVE_INFINITY` is [`NaN`](../nan).
--   [`NaN`](../nan) multiplied by `POSITIVE_INFINITY` is [`NaN`](../nan).
--   `POSITIVE_INFINITY`, divided by any negative value except [`NEGATIVE_INFINITY`](negative_infinity), is [`NEGATIVE_INFINITY`](negative_infinity).
--   `POSITIVE_INFINITY`, divided by any positive value except `POSITIVE_INFINITY`, is `POSITIVE_INFINITY`.
--   `POSITIVE_INFINITY`, divided by either [`NEGATIVE_INFINITY`](negative_infinity) or `POSITIVE_INFINITY`, is [`NaN`](../nan).
+- Any positive value, including `POSITIVE_INFINITY`, multiplied by `POSITIVE_INFINITY` is `POSITIVE_INFINITY`.
+- Any negative value, including [`NEGATIVE_INFINITY`](negative_infinity), multiplied by `POSITIVE_INFINITY` is [`NEGATIVE_INFINITY`](negative_infinity).
+- Any positive number divided by `POSITIVE_INFINITY` is positive Zero.
+- Any negative number divided by `POSITIVE_INFINITY` is negative Zero.
+- Zero multiplied by `POSITIVE_INFINITY` is [`NaN`](../nan).
+- [`NaN`](../nan) multiplied by `POSITIVE_INFINITY` is [`NaN`](../nan).
+- `POSITIVE_INFINITY`, divided by any negative value except [`NEGATIVE_INFINITY`](negative_infinity), is [`NEGATIVE_INFINITY`](negative_infinity).
+- `POSITIVE_INFINITY`, divided by any positive value except `POSITIVE_INFINITY`, is `POSITIVE_INFINITY`.
+- `POSITIVE_INFINITY`, divided by either [`NEGATIVE_INFINITY`](negative_infinity) or `POSITIVE_INFINITY`, is [`NaN`](../nan).
 
 You might use the `Number.POSITIVE_INFINITY` property to indicate an error condition that returns a finite number in case of success. Note, however, that [`isFinite`](../isfinite) would be more appropriate in such a case.
 
@@ -65033,10 +65033,10 @@ Samsung Internet
 
 ## See also
 
--   [`Number.NEGATIVE_INFINITY`](negative_infinity)
--   [`Number.isFinite()`](isfinite)
--   [`Infinity`](../infinity)
--   [`isFinite()`](../isfinite)
+- [`Number.NEGATIVE_INFINITY`](negative_infinity)
+- [`Number.isFinite()`](isfinite)
+- [`Infinity`](../infinity)
+- [`isFinite()`](../isfinite)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -65158,11 +65158,11 @@ Samsung Internet
 
 ## See also
 
--   [`Math.cbrt()`](cbrt)
--   [`Math.exp()`](exp)
--   [`Math.log()`](log)
--   [`Math.sqrt()`](sqrt)
--   [Exponentiation operator](../../operators/exponentiation)
+- [`Math.cbrt()`](cbrt)
+- [`Math.exp()`](exp)
+- [`Math.log()`](log)
+- [`Math.sqrt()`](sqrt)
+- [Exponentiation operator](../../operators/exponentiation)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -65189,9 +65189,9 @@ The JavaScript exception "precision is out of range" occurs when a number that's
 
 There was an out of range precision argument in one of these methods:
 
--   [`Number.prototype.toExponential()`](../global_objects/number/toexponential)
--   [`Number.prototype.toFixed()`](../global_objects/number/tofixed)
--   [`Number.prototype.toPrecision()`](../global_objects/number/toprecision)
+- [`Number.prototype.toExponential()`](../global_objects/number/toexponential)
+- [`Number.prototype.toFixed()`](../global_objects/number/tofixed)
+- [`Number.prototype.toPrecision()`](../global_objects/number/toprecision)
 
 The allowed range for these methods is usually between 0 and 20 (or 21). However, the ECMAScript specification allows to extend this range.
 
@@ -65224,9 +65224,9 @@ The allowed range for these methods is usually between 0 and 20 (or 21). However
 
 ## See also
 
--   [`Number.prototype.toExponential()`](../global_objects/number/toexponential)
--   [`Number.prototype.toFixed()`](../global_objects/number/tofixed)
--   [`Number.prototype.toPrecision()`](../global_objects/number/toprecision)
+- [`Number.prototype.toExponential()`](../global_objects/number/toexponential)
+- [`Number.prototype.toFixed()`](../global_objects/number/tofixed)
+- [`Number.prototype.toPrecision()`](../global_objects/number/toprecision)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Precision_range" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Precision_range</a>
 
@@ -65399,12 +65399,12 @@ Samsung Internet
 
 ## See also
 
--   [`Object.isExtensible()`](isextensible)
--   [`Object.seal()`](seal)
--   [`Object.isSealed()`](issealed)
--   [`Object.freeze()`](freeze)
--   [`Object.isFrozen()`](isfrozen)
--   [`Reflect.preventExtensions()`](../reflect/preventextensions)
+- [`Object.isExtensible()`](isextensible)
+- [`Object.seal()`](seal)
+- [`Object.isSealed()`](issealed)
+- [`Object.freeze()`](freeze)
+- [`Object.isFrozen()`](isfrozen)
+- [`Reflect.preventExtensions()`](../reflect/preventextensions)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -65644,10 +65644,10 @@ No
 
 ## See also
 
--   [Public class fields](public_class_fields)
--   [Public and private class fields](https://v8.dev/features/class-fields) article at the v8.dev site.
--   [Class field declarations for JavaScript](https://github.com/tc39/proposal-class-fields#class-field-declarations-for-javascript) explainer, by the [Public and private instance fields](https://github.com/tc39/proposal-class-fields) authors
--   [The Semantics of All JS Class Elements](https://rfrn.org/~shu/2018/05/02/the-semantics-of-all-js-class-elements.html)
+- [Public class fields](public_class_fields)
+- [Public and private class fields](https://v8.dev/features/class-fields) article at the v8.dev site.
+- [Class field declarations for JavaScript](https://github.com/tc39/proposal-class-fields#class-field-declarations-for-javascript) explainer, by the [Public and private instance fields](https://github.com/tc39/proposal-class-fields) authors
+- [The Semantics of All JS Class Elements](https://rfrn.org/~shu/2018/05/02/the-semantics-of-all-js-class-elements.html)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_class_fields" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_class_fields</a>
 
@@ -65665,9 +65665,9 @@ A `Promise` is a proxy for a value not necessarily known when the promise is cre
 
 A `Promise` is in one of these states:
 
--   _pending_: initial state, neither fulfilled nor rejected.
--   _fulfilled_: meaning that the operation was completed successfully.
--   _rejected_: meaning that the operation failed.
+- _pending_: initial state, neither fulfilled nor rejected.
+- _fulfilled_: meaning that the operation was completed successfully.
+- _rejected_: meaning that the operation failed.
 
 A pending promise can either be _fulfilled_ with a value or _rejected_ with a reason (error). When either of these options happens, the associated handlers queued up by a promise's `then` method are called. If the promise has already been fulfilled or rejected when a corresponding handler is attached, the handler will be called, so there is no race condition between an asynchronous operation completing and its handlers being attached.
 
@@ -66375,18 +66375,18 @@ No
 
 ## See also
 
--   [Using promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
--   [Promises/A+ specification](https://promisesaplus.com/)
--   [Venkatraman.R - JS Promise (Part 1, Basics)](https://medium.com/@ramsunvtech/promises-of-promise-part-1-53f769245a53)
--   [Venkatraman.R - JS Promise (Part 2 - Using Q.js, When.js and RSVP.js)](https://medium.com/@ramsunvtech/js-promise-part-2-q-js-when-js-and-rsvp-js-af596232525c#.dzlqh6ski)
--   [Venkatraman.R - Tools for Promises Unit Testing](https://tech.io/playgrounds/11107/tools-for-promises-unittesting/introduction)
--   [Jake Archibald: JavaScript Promises: There and Back Again](https://www.html5rocks.com/en/tutorials/es6/promises/)
--   [Domenic Denicola: Callbacks, Promises, and Coroutines - Asynchronous Programming Patterns in JavaScript](https://de.slideshare.net/domenicdenicola/callbacks-promises-and-coroutines-oh-my-the-evolution-of-asynchronicity-in-javascript)
--   [Matt Greer: JavaScript Promises ... In Wicked Detail](https://www.mattgreer.org/articles/promises-in-wicked-detail/)
--   [Forbes Lindesay: promisejs.org](https://www.promisejs.org/)
--   [Speed-polyfill to polyfill both promise availability and promise performance.](https://github.com/anonyco/SPromiseMeSpeedJS/blob/master/README.md)
--   [Promise polyfill](https://github.com/jakearchibald/es6-promise/)
--   [Udacity: JavaScript Promises](https://www.udacity.com/course/javascript-promises--ud898)
+- [Using promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
+- [Promises/A+ specification](https://promisesaplus.com/)
+- [Venkatraman.R - JS Promise (Part 1, Basics)](https://medium.com/@ramsunvtech/promises-of-promise-part-1-53f769245a53)
+- [Venkatraman.R - JS Promise (Part 2 - Using Q.js, When.js and RSVP.js)](https://medium.com/@ramsunvtech/js-promise-part-2-q-js-when-js-and-rsvp-js-af596232525c#.dzlqh6ski)
+- [Venkatraman.R - Tools for Promises Unit Testing](https://tech.io/playgrounds/11107/tools-for-promises-unittesting/introduction)
+- [Jake Archibald: JavaScript Promises: There and Back Again](https://www.html5rocks.com/en/tutorials/es6/promises/)
+- [Domenic Denicola: Callbacks, Promises, and Coroutines - Asynchronous Programming Patterns in JavaScript](https://de.slideshare.net/domenicdenicola/callbacks-promises-and-coroutines-oh-my-the-evolution-of-asynchronicity-in-javascript)
+- [Matt Greer: JavaScript Promises ... In Wicked Detail](https://www.mattgreer.org/articles/promises-in-wicked-detail/)
+- [Forbes Lindesay: promisejs.org](https://www.promisejs.org/)
+- [Speed-polyfill to polyfill both promise availability and promise performance.](https://github.com/anonyco/SPromiseMeSpeedJS/blob/master/README.md)
+- [Promise polyfill](https://github.com/jakearchibald/es6-promise/)
+- [Udacity: JavaScript Promises](https://www.udacity.com/course/javascript-promises--ud898)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise</a>
 
@@ -66426,8 +66426,8 @@ There was attempt to access an object for which you have no permission. This is 
 
 ## See also
 
--   [`<iframe>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe)
--   [Same-origin policy](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy)
+- [`<iframe>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe)
+- [Same-origin policy](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Property_access_denied" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Property_access_denied</a>
 
@@ -66596,9 +66596,9 @@ Samsung Internet
 
 ## See also
 
--   [`Object`](../global_objects/object)
--   [`Object.defineProperty()`](../global_objects/object/defineproperty)
--   [Optional chaining](optional_chaining)
+- [`Object`](../global_objects/object)
+- [`Object.defineProperty()`](../global_objects/object/defineproperty)
+- [Optional chaining](optional_chaining)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -66754,10 +66754,10 @@ Samsung Internet
 
 ## See also
 
--   [Enumerability and ownership of properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
--   [`for...in`](../../statements/for...in)
--   [`Object.keys()`](keys)
--   [`Object.defineProperty()`](defineproperty)
+- [Enumerability and ownership of properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
+- [`for...in`](../../statements/for...in)
+- [`Object.keys()`](keys)
+- [`Object.defineProperty()`](defineproperty)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -66916,9 +66916,9 @@ Samsung Internet
 
 ## See also
 
--   [`Object.prototype.isPrototypeOf()`](isprototypeof)
--   [`Object.getPrototypeOf()`](getprototypeof)
--   [`Object.setPrototypeOf()`](setprototypeof)
+- [`Object.prototype.isPrototypeOf()`](isprototypeof)
+- [`Object.getPrototypeOf()`](getprototypeof)
+- [`Object.setPrototypeOf()`](setprototypeof)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -66932,8 +66932,8 @@ The `Proxy` object enables you to create a proxy for another object, which can i
 
 A `Proxy` is created with two parameters:
 
--   `target`: the original object which you want to proxy
--   `handler`: an object that defines which operations will be intercepted and how to redefine intercepted operations.
+- `target`: the original object which you want to proxy
+- `handler`: an object that defines which operations will be intercepted and how to redefine intercepted operations.
 
 For example, this code defines a simple target with just two properties, and an even simpler handler with no properties:
 
@@ -67440,11 +67440,11 @@ No
 
 ## See also
 
--   ["Proxies are awesome" Brendan Eich presentation at JSConf](https://www.youtube.com/watch?v=sClk6aB_CPk) ([slides](https://www.slideshare.net/BrendanEich/metaprog-5303821))
--   [ECMAScript Harmony Proxy proposal page](http://wiki.ecmascript.org/doku.php?id=harmony:proxies) and [ECMAScript Harmony proxy semantics page](http://wiki.ecmascript.org/doku.php?id=harmony:proxies_semantics)
--   [Tutorial on proxies](https://web.archive.org/web/20171007221059/http://soft.vub.ac.be/~tvcutsem/proxies/)
--   [SpiderMonkey specific Old Proxy API](https://developer.mozilla.org/en-US/docs/JavaScript/Old_Proxy_API)
--   <span class="page-not-created">`Object.watch()`</span> is a non-standard feature, but has been supported in Gecko for a long time.
+- ["Proxies are awesome" Brendan Eich presentation at JSConf](https://www.youtube.com/watch?v=sClk6aB_CPk) ([slides](https://www.slideshare.net/BrendanEich/metaprog-5303821))
+- [ECMAScript Harmony Proxy proposal page](http://wiki.ecmascript.org/doku.php?id=harmony:proxies) and [ECMAScript Harmony proxy semantics page](http://wiki.ecmascript.org/doku.php?id=harmony:proxies_semantics)
+- [Tutorial on proxies](https://web.archive.org/web/20171007221059/http://soft.vub.ac.be/~tvcutsem/proxies/)
+- [SpiderMonkey specific Old Proxy API](https://developer.mozilla.org/en-US/docs/JavaScript/Old_Proxy_API)
+- <span class="page-not-created">`Object.watch()`</span> is a non-standard feature, but has been supported in Gecko for a long time.
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy</a>
 
@@ -67745,9 +67745,9 @@ No
 
 ## See also
 
--   [Public and private class fields](https://v8.dev/features/class-fields) article at the v8.dev site.
--   [Class field declarations for JavaScript](https://github.com/tc39/proposal-class-fields#class-field-declarations-for-javascript) explainer, by the [Public and private instance fields](https://github.com/tc39/proposal-class-fields) authors
--   [The Semantics of All JS Class Elements](https://rfrn.org/~shu/2018/05/02/the-semantics-of-all-js-class-elements.html)
+- [Public and private class fields](https://v8.dev/features/class-fields) article at the v8.dev site.
+- [Class field declarations for JavaScript](https://github.com/tc39/proposal-class-fields#class-field-declarations-for-javascript) explainer, by the [Public and private instance fields](https://github.com/tc39/proposal-class-fields) authors
+- [The Semantics of All JS Class Elements](https://rfrn.org/~shu/2018/05/02/the-semantics-of-all-js-class-elements.html)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Public_class_fields" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Public_class_fields</a>
 
@@ -67894,10 +67894,10 @@ Samsung Internet
 
 ## See also
 
--   [`Array.prototype.pop()`](pop)
--   [`Array.prototype.shift()`](shift)
--   [`Array.prototype.unshift()`](unshift)
--   [`Array.prototype.concat()`](concat)
+- [`Array.prototype.pop()`](pop)
+- [`Array.prototype.shift()`](shift)
+- [`Array.prototype.unshift()`](unshift)
+- [`Array.prototype.concat()`](concat)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push</a>
 
@@ -68138,8 +68138,8 @@ No
 
 ## See also
 
--   [`Promise`](../promise)
--   [`Promise.all()`](all)
+- [`Promise`](../promise)
+- [`Promise.all()`](all)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -68264,7 +68264,7 @@ Samsung Internet
 
 ## See also
 
--   [`window.crypto.getRandomValues()`](https://developer.mozilla.org/en-US/docs/Web/API/Crypto/getRandomValues)
+- [`window.crypto.getRandomValues()`](https://developer.mozilla.org/en-US/docs/Web/API/Crypto/getRandomValues)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -68280,9 +68280,9 @@ A `RangeError` is thrown when trying to pass a value as an argument to a functio
 
 This can be encountered when:
 
--   passing a value that is not one of the allowed string values to [`String.prototype.normalize()`](string/normalize), or
--   when attempting to create an array of an illegal length with the [`Array`](array) constructor, or
--   when passing bad values to the numeric methods [`Number.prototype.toExponential()`](number/toexponential), [`Number.prototype.toFixed()`](number/tofixed) or [`Number.prototype.toPrecision()`](number/toprecision).
+- passing a value that is not one of the allowed string values to [`String.prototype.normalize()`](string/normalize), or
+- when attempting to create an array of an illegal length with the [`Array`](array) constructor, or
+- when passing bad values to the numeric methods [`Number.prototype.toExponential()`](number/toexponential), [`Number.prototype.toFixed()`](number/tofixed) or [`Number.prototype.toPrecision()`](number/toprecision).
 
 ## Constructor
 
@@ -68446,12 +68446,12 @@ Samsung Internet
 
 ## See also
 
--   [`Error`](error)
--   [`Array`](array)
--   [`Number.toExponential()`](number/toexponential)
--   [`Number.toFixed()`](number/tofixed)
--   [`Number.toPrecision()`](number/toprecision)
--   [`String.prototype.normalize()`](string/normalize)
+- [`Error`](error)
+- [`Array`](array)
+- [`Number.toExponential()`](number/toexponential)
+- [`Number.toFixed()`](number/tofixed)
+- [`Number.toPrecision()`](number/toprecision)
+- [`String.prototype.normalize()`](string/normalize)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError</a>
 
@@ -68593,9 +68593,9 @@ No
 
 ## See also
 
--   [Template literals](../../template_literals)
--   [`String`](../string)
--   [Lexical grammar](../../lexical_grammar)
+- [Template literals](../../template_literals)
+- [`String`](../string)
+- [Lexical grammar](../../lexical_grammar)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -68665,8 +68665,8 @@ The global variable `undefined` is also read-only, so you can't silence the infa
 
 ## See also
 
--   [`Object.defineProperty()`](../global_objects/object/defineproperty)
--   [`Object.freeze()`](../global_objects/object/freeze)
+- [`Object.defineProperty()`](../global_objects/object/defineproperty)
+- [`Object.freeze()`](../global_objects/object/freeze)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Read-only" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Read-only</a>
 
@@ -68712,10 +68712,10 @@ If you want to change the value of "arg" in the function body, you can do so, bu
 
 ## See also
 
--   [`let`](../statements/let)
--   [`const`](../statements/const)
--   [`var`](../statements/var)
--   [Declaring variables](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#declarations) in the [JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
+- [`let`](../statements/let)
+- [`const`](../statements/const)
+- [`var`](../statements/var)
+- [Declaring variables](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#declarations) in the [JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Redeclared_parameter" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Redeclared_parameter</a>
 
@@ -69214,7 +69214,7 @@ Samsung Internet
 
 ## See also
 
--   [`Array.prototype.reduceRight()`](reduceright)
+- [`Array.prototype.reduceRight()`](reduceright)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce</a>
 
@@ -69234,8 +69234,8 @@ The JavaScript exception "reduce of empty array with no initial value" occurs wh
 
 In JavaScript, there are several reduce functions:
 
--   [`Array.prototype.reduce()`](../global_objects/array/reduce), [`Array.prototype.reduceRight()`](../global_objects/array/reduceright) and
--   [`TypedArray.prototype.reduce()`](../global_objects/typedarray/reduce), [`TypedArray.prototype.reduceRight()`](../global_objects/typedarray/reduceright)).
+- [`Array.prototype.reduce()`](../global_objects/array/reduce), [`Array.prototype.reduceRight()`](../global_objects/array/reduceright) and
+- [`TypedArray.prototype.reduce()`](../global_objects/typedarray/reduce), [`TypedArray.prototype.reduceRight()`](../global_objects/typedarray/reduceright)).
 
 These functions optionally take an `initialValue` (which will be used as the first argument to the first call of the `callback`). However, if no initial value is provided, it will use the first element of the [`Array`](../global_objects/array) or [`TypedArray`](../global_objects/typedarray) as the initial value. This error is raised when an empty array is provided because no initial value can be returned in that case.
 
@@ -69282,14 +69282,14 @@ Another way would be to handle the empty case, either before calling `reduce`, o
 
 ## See also
 
--   [`Array.prototype.reduce()`](../global_objects/array/reduce)
--   [`Array.prototype.reduceRight()`](../global_objects/array/reduceright)
--   [`TypedArray.prototype.reduce()`](../global_objects/typedarray/reduce)
--   [`TypedArray.prototype.reduceRight()`](../global_objects/typedarray/reduceright)
--   [`Array`](../global_objects/array)
--   [`TypedArray`](../global_objects/typedarray)
--   [`Array.prototype.filter()`](../global_objects/array/filter)
--   [`TypedArray.prototype.filter()`](../global_objects/typedarray/filter)
+- [`Array.prototype.reduce()`](../global_objects/array/reduce)
+- [`Array.prototype.reduceRight()`](../global_objects/array/reduceright)
+- [`TypedArray.prototype.reduce()`](../global_objects/typedarray/reduce)
+- [`TypedArray.prototype.reduceRight()`](../global_objects/typedarray/reduceright)
+- [`Array`](../global_objects/array)
+- [`TypedArray`](../global_objects/typedarray)
+- [`Array.prototype.filter()`](../global_objects/array/filter)
+- [`TypedArray.prototype.filter()`](../global_objects/typedarray/filter)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Reduce_of_empty_array_with_no_initial_value" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Reduce_of_empty_array_with_no_initial_value</a>
 
@@ -69566,7 +69566,7 @@ Samsung Internet
 
 ## See also
 
--   [`Array.prototype.reduce()`](reduce)
+- [`Array.prototype.reduce()`](reduce)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/ReduceRight" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/ReduceRight</a>
 
@@ -69720,7 +69720,7 @@ Samsung Internet
 
 ## See also
 
--   [`Error`](error)
+- [`Error`](error)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError</a>
 
@@ -70208,8 +70208,8 @@ No
 
 ## See also
 
--   The [`Proxy`](proxy) global object.
--   The [`handler`](proxy/proxy) object.
+- The [`Proxy`](proxy) global object.
+- The [`handler`](proxy/proxy) object.
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect</a>
 
@@ -70225,8 +70225,8 @@ For an introduction to regular expressions, read the [Regular Expressions chapte
 
 There are two ways to create a `RegExp` object: a _literal notation_ and a _constructor_.
 
--   **The literal notation's** parameters are enclosed between slashes and do not use quotation marks.
--   **The constructor function's** parameters are not enclosed between slashes but do use quotation marks.
+- **The literal notation's** parameters are enclosed between slashes and do not use quotation marks.
+- **The constructor function's** parameters are not enclosed between slashes but do use quotation marks.
 
 The following three expressions create the same regular expression object:
 
@@ -71309,10 +71309,10 @@ Note that due to web compatibility, `RegExp.$N` will still return an empty strin
 
 ## See also
 
--   [Regular Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) chapter in the [JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
--   [`String.prototype.match()`](string/match)
--   [`String.prototype.replace()`](string/replace)
--   [`String.prototype.split()`](string/split)
+- [Regular Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) chapter in the [JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
+- [`String.prototype.match()`](string/match)
+- [`String.prototype.replace()`](string/replace)
+- [`String.prototype.split()`](string/split)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp</a>
 
@@ -71407,8 +71407,8 @@ No
 
 ## See also
 
--   [`Intl.Locale`](../locale)
--   [Unicode region chart](https://www.unicode.org/cldr/charts/latest/supplemental/territory_containment_un_m_49.html)
+- [`Intl.Locale`](../locale)
+- [Unicode region chart](https://www.unicode.org/cldr/charts/latest/supplemental/territory_containment_un_m_49.html)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/region" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/region</a>
 
@@ -71508,7 +71508,7 @@ No
 
 ## See also
 
--   [`Promise`](../promise)
+- [`Promise`](../promise)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -71775,8 +71775,8 @@ No
 
 ## See also
 
--   [`Intl`](../intl)
--   [The Intl.RelativeTimeFormat API](https://developers.google.com/web/updates/2018/10/intl-relativetimeformat)
+- [`Intl`](../intl)
+- [The Intl.RelativeTimeFormat API](https://developers.google.com/web/updates/2018/10/intl-relativetimeformat)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/RelativeTimeFormat" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/RelativeTimeFormat</a>
 
@@ -71881,15 +71881,15 @@ Samsung Internet
 
 ## See also
 
--   [Addition operator](addition)
--   [Subtraction operator](subtraction)
--   [Division operator](division)
--   [Multiplication operator](multiplication)
--   [Exponentiation operator](exponentiation)
--   [Increment operator](increment)
--   [Decrement operator](decrement)
--   [Unary negation operator](unary_negation)
--   [Unary plus operator](unary_plus)
+- [Addition operator](addition)
+- [Subtraction operator](subtraction)
+- [Division operator](division)
+- [Multiplication operator](multiplication)
+- [Exponentiation operator](exponentiation)
+- [Increment operator](increment)
+- [Decrement operator](decrement)
+- [Unary negation operator](unary_negation)
+- [Unary plus operator](unary_plus)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -71914,8 +71914,8 @@ A new string containing the specified number of copies of the given string.
 
 ### Exceptions
 
--   [`RangeError`](../../errors/negative_repetition_count): repeat count must be non-negative.
--   [`RangeError`](../../errors/resulting_string_too_large): repeat count must be less than infinity and not overflow maximum string size.
+- [`RangeError`](../../errors/negative_repetition_count): repeat count must be non-negative.
+- [`RangeError`](../../errors/resulting_string_too_large): repeat count must be less than infinity and not overflow maximum string size.
 
 ## Examples
 
@@ -72040,7 +72040,7 @@ No
 
 ## See also
 
--   [`String.prototype.concat()`](concat)
+- [`String.prototype.concat()`](concat)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -72252,10 +72252,10 @@ A replacement function as second argument is not supported.
 
 ## See also
 
--   [`String.prototype.replaceAll()`](replaceall)
--   [`String.prototype.match()`](match)
--   [`RegExp.prototype.exec()`](../regexp/exec)
--   [`RegExp.prototype.test()`](../regexp/test)
+- [`String.prototype.replaceAll()`](replaceall)
+- [`String.prototype.match()`](match)
+- [`RegExp.prototype.exec()`](../regexp/exec)
+- [`RegExp.prototype.test()`](../regexp/test)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -72401,10 +72401,10 @@ No
 
 ## See also
 
--   [`String.prototype.replace()`](replace)
--   [`String.prototype.match()`](match)
--   [`RegExp.prototype.exec()`](../regexp/exec)
--   [`RegExp.prototype.test()`](../regexp/test)
+- [`String.prototype.replace()`](replace)
+- [`String.prototype.match()`](match)
+- [`RegExp.prototype.exec()`](../regexp/exec)
+- [`RegExp.prototype.test()`](../regexp/test)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -72428,18 +72428,18 @@ The JavaScript exception "_variable_ is a reserved identifier" occurs when [rese
 
 [Reserved keywords](../lexical_grammar#keywords) will throw in if they are used as identifiers. These are reserved in strict mode and sloppy mode:
 
--   `enum`
+- `enum`
 
 The following are only reserved when they are found in strict mode code:
 
--   `implements`
--   `interface`
--   [`let`](../statements/let)
--   `package`
--   `private`
--   `protected`
--   `public`
--   `static`
+- `implements`
+- `interface`
+- [`let`](../statements/let)
+- `package`
+- `private`
+- `protected`
+- `public`
+- `static`
 
 ## Examples
 
@@ -72473,7 +72473,7 @@ If you are using an older browser that does not yet implement `let` or `class`, 
 
 ## See also
 
--   [Good variable names](https://wiki.c2.com/?GoodVariableNames)
+- [Good variable names](https://wiki.c2.com/?GoodVariableNames)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Reserved_identifier" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Reserved_identifier</a>
 
@@ -72637,7 +72637,7 @@ No
 
 ## See also
 
--   [`Promise`](../promise)
+- [`Promise`](../promise)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -72775,7 +72775,7 @@ Samsung Internet
 
 ## See also
 
--   [`Intl.NumberFormat`](../numberformat)
+- [`Intl.NumberFormat`](../numberformat)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/resolvedOptions" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/resolvedOptions</a>
 
@@ -72822,9 +72822,9 @@ The rest parameter must be the last parameter in the function definition.
 
 There are three main differences between rest parameters and the [`arguments`](arguments) object:
 
--   The `arguments` object is **not a real array**, while rest parameters are [`Array`](../global_objects/array) instances, meaning methods like [`sort`](../global_objects/array/sort), [`map`](../global_objects/array/map), [`forEach`](../global_objects/array/foreach) or [`pop`](../global_objects/array/pop) can be applied on it directly;
--   The `arguments` object has additional functionality specific to itself (like the `callee` property).
--   The `...restParam` bundles all the extra parameters into a single array, therefore it does not contain any named argument defined **before** the `...restParam`. Whereas the `arguments` object contains all of the parameters -- including all of the stuff in the `...restParam` -- **un**bundled.
+- The `arguments` object is **not a real array**, while rest parameters are [`Array`](../global_objects/array) instances, meaning methods like [`sort`](../global_objects/array/sort), [`map`](../global_objects/array/map), [`forEach`](../global_objects/array/foreach) or [`pop`](../global_objects/array/pop) can be applied on it directly;
+- The `arguments` object has additional functionality specific to itself (like the `callee` property).
+- The `...restParam` bundles all the extra parameters into a single array, therefore it does not contain any named argument defined **before** the `...restParam`. Whereas the `arguments` object contains all of the parameters -- including all of the stuff in the `...restParam` -- **un**bundled.
 
 ### From arguments to an array
 
@@ -73035,13 +73035,13 @@ No
 
 ## See also
 
--   [Spread syntax](../operators/spread_syntax) (also '`...`')
--   [Arguments object](arguments)
--   [Array](../global_objects/array)
--   [Functions](../functions)
--   [Original proposal at ecmascript.org](http://wiki.ecmascript.org/doku.php?id=harmony:rest_parameters)
--   [JavaScript arguments object and beyond](https://javascriptweblog.wordpress.com/2011/01/18/javascripts-arguments-object-and-beyond/)
--   [Destructuring assignment](../operators/destructuring_assignment)
+- [Spread syntax](../operators/spread_syntax) (also '`...`')
+- [Arguments object](arguments)
+- [Array](../global_objects/array)
+- [Functions](../functions)
+- [Original proposal at ecmascript.org](http://wiki.ecmascript.org/doku.php?id=harmony:rest_parameters)
+- [JavaScript arguments object and beyond](https://javascriptweblog.wordpress.com/2011/01/18/javascripts-arguments-object-and-beyond/)
+- [Destructuring assignment](../operators/destructuring_assignment)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters</a>
 
@@ -73081,7 +73081,7 @@ The resulting string can also not be larger than the maximum string size, which 
 
 ## See also
 
--   [`String.prototype.repeat()`](../global_objects/string/repeat)
+- [`String.prototype.repeat()`](../global_objects/string/repeat)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Resulting_string_too_large" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Resulting_string_too_large</a>
 
@@ -73244,8 +73244,8 @@ Samsung Internet
 
 ## See also
 
--   [Functions](../functions)
--   [Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
+- [Functions](../functions)
+- [Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -73360,9 +73360,9 @@ Samsung Internet
 
 ## See also
 
--   [`Array.prototype.join()`](join)
--   [`Array.prototype.sort()`](sort)
--   [`TypedArray.prototype.reverse()`](../typedarray/reverse)
+- [`Array.prototype.join()`](join)
+- [`Array.prototype.sort()`](sort)
+- [`TypedArray.prototype.reverse()`](../typedarray/reverse)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse</a>
 
@@ -73482,7 +73482,7 @@ No
 
 ## See also
 
--   [`Proxy`](../proxy)
+- [`Proxy`](../proxy)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -73584,8 +73584,8 @@ Samsung Internet
 
 ## See also
 
--   [Bitwise operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#bitwise)
--   [Right shift assignment operator](right_shift_assignment)
+- [Bitwise operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#bitwise)
+- [Right shift assignment operator](right_shift_assignment)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -73675,8 +73675,8 @@ Samsung Internet
 
 ## See also
 
--   [Assignment operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#assignment)
--   [Right shift operator](right_shift)
+- [Assignment operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#assignment)
+- [Right shift operator](right_shift)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -73780,13 +73780,13 @@ Samsung Internet
 
 ## See also
 
--   [`Number.toPrecision()`](../number/toprecision)
--   [`Number.toFixed()`](../number/tofixed)
--   [`Math.abs()`](abs)
--   [`Math.ceil()`](ceil)
--   [`Math.floor()`](floor)
--   [`Math.sign()`](sign)
--   [`Math.trunc()`](trunc)
+- [`Number.toPrecision()`](../number/toprecision)
+- [`Number.toFixed()`](../number/tofixed)
+- [`Math.abs()`](abs)
+- [`Math.ceil()`](ceil)
+- [`Math.floor()`](floor)
+- [`Math.sign()`](sign)
+- [`Math.trunc()`](trunc)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -73949,9 +73949,9 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 
 ## See also
 
--   [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
--   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
--   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
+- [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
+- [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
+- [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -74048,8 +74048,8 @@ No
 
 ## See also
 
--   [`Intl.Locale`](../locale)
--   [Unicode's script subtag specification](https://www.unicode.org/reports/tr35/#unicode_script_subtag_validity)
+- [`Intl.Locale`](../locale)
+- [Unicode's script subtag specification](https://www.unicode.org/reports/tr35/#unicode_script_subtag_validity)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/script" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/script</a>
 
@@ -74210,11 +74210,11 @@ Samsung Internet
 
 ## See also
 
--   [`Object.isSealed()`](issealed)
--   [`Object.preventExtensions()`](preventextensions)
--   [`Object.isExtensible()`](isextensible)
--   [`Object.freeze()`](freeze)
--   [`Object.isFrozen()`](isfrozen)
+- [`Object.isSealed()`](issealed)
+- [`Object.preventExtensions()`](preventextensions)
+- [`Object.isExtensible()`](isextensible)
+- [`Object.freeze()`](freeze)
+- [`Object.isFrozen()`](isfrozen)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -74348,9 +74348,9 @@ No
 
 ## See also
 
--   [Using regular expressions in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
--   [`String.prototype.match()`](match)
--   [`RegExp.prototype.exec()`](../regexp/exec)
+- [Using regular expressions in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
+- [`String.prototype.match()`](match)
+- [`RegExp.prototype.exec()`](../regexp/exec)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -74461,7 +74461,7 @@ No
 
 ## See also
 
--   [`Intl.PluralRules`](../pluralrules)
+- [`Intl.PluralRules`](../pluralrules)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/PluralRules/select" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/PluralRules/select</a>
 
@@ -75129,9 +75129,9 @@ No
 
 ## See also
 
--   [`Map`](map)
--   [`WeakMap`](weakmap)
--   [`WeakSet`](weakset)
+- [`Map`](map)
+- [`WeakMap`](weakmap)
+- [`WeakSet`](weakset)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set</a>
 
@@ -75238,9 +75238,9 @@ No
 
 ## See also
 
--   [`DataView`](../dataview)
--   [`ArrayBuffer`](../arraybuffer)
--   [`BigInt`](../bigint)
+- [`DataView`](../dataview)
+- [`ArrayBuffer`](../arraybuffer)
+- [`BigInt`](../bigint)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setBigInt64" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setBigInt64</a>
 
@@ -75347,9 +75347,9 @@ No
 
 ## See also
 
--   [`DataView`](../dataview)
--   [`ArrayBuffer`](../arraybuffer)
--   [`BigInt`](../bigint)
+- [`DataView`](../dataview)
+- [`ArrayBuffer`](../arraybuffer)
+- [`BigInt`](../bigint)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setBigUint64" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setBigUint64</a>
 
@@ -75457,8 +75457,8 @@ Samsung Internet
 
 ## See also
 
--   [`Date.prototype.getDate()`](getdate)
--   [`Date.prototype.setUTCDate()`](setutcdate)
+- [`Date.prototype.getDate()`](getdate)
+- [`Date.prototype.setUTCDate()`](setutcdate)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setDate" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setDate</a>
 
@@ -75565,8 +75565,8 @@ Samsung Internet
 
 ## See also
 
--   [`DataView`](../dataview)
--   [`ArrayBuffer`](../arraybuffer)
+- [`DataView`](../dataview)
+- [`ArrayBuffer`](../arraybuffer)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setFloat32" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setFloat32</a>
 
@@ -75673,8 +75673,8 @@ Samsung Internet
 
 ## See also
 
--   [`DataView`](../dataview)
--   [`ArrayBuffer`](../arraybuffer)
+- [`DataView`](../dataview)
+- [`ArrayBuffer`](../arraybuffer)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setFloat64" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setFloat64</a>
 
@@ -75781,9 +75781,9 @@ Samsung Internet
 
 ## See also
 
--   [`Date.prototype.getUTCFullYear()`](getutcfullyear)
--   [`Date.prototype.setUTCFullYear()`](setutcfullyear)
--   [`Date.prototype.setYear()`](setyear)
+- [`Date.prototype.getUTCFullYear()`](getutcfullyear)
+- [`Date.prototype.setUTCFullYear()`](setutcfullyear)
+- [`Date.prototype.setYear()`](setyear)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setFullYear" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setFullYear</a>
 
@@ -75894,8 +75894,8 @@ Samsung Internet
 
 ## See also
 
--   [`Date.prototype.getHours()`](gethours)
--   [`Date.prototype.setUTCHours()`](setutchours)
+- [`Date.prototype.getHours()`](gethours)
+- [`Date.prototype.setUTCHours()`](setutchours)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setHours" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setHours</a>
 
@@ -76002,8 +76002,8 @@ Samsung Internet
 
 ## See also
 
--   [`DataView`](../dataview)
--   [`ArrayBuffer`](../arraybuffer)
+- [`DataView`](../dataview)
+- [`ArrayBuffer`](../arraybuffer)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setInt16" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setInt16</a>
 
@@ -76110,8 +76110,8 @@ Samsung Internet
 
 ## See also
 
--   [`DataView`](../dataview)
--   [`ArrayBuffer`](../arraybuffer)
+- [`DataView`](../dataview)
+- [`ArrayBuffer`](../arraybuffer)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setInt32" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setInt32</a>
 
@@ -76214,8 +76214,8 @@ Samsung Internet
 
 ## See also
 
--   [`DataView`](../dataview)
--   [`ArrayBuffer`](../arraybuffer)
+- [`DataView`](../dataview)
+- [`ArrayBuffer`](../arraybuffer)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setInt8" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setInt8</a>
 
@@ -76312,8 +76312,8 @@ Samsung Internet
 
 ## See also
 
--   [`Date.prototype.getMilliseconds()`](getmilliseconds)
--   [`Date.prototype.setUTCMilliseconds()`](setutcmilliseconds)
+- [`Date.prototype.getMilliseconds()`](getmilliseconds)
+- [`Date.prototype.setUTCMilliseconds()`](setutcmilliseconds)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setMilliseconds" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setMilliseconds</a>
 
@@ -76420,8 +76420,8 @@ Samsung Internet
 
 ## See also
 
--   [`Date.prototype.getMinutes()`](getminutes)
--   [`Date.prototype.setUTCMinutes()`](setutcminutes)
+- [`Date.prototype.getMinutes()`](getminutes)
+- [`Date.prototype.setUTCMinutes()`](setutcminutes)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setMinutes" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setMinutes</a>
 
@@ -76531,8 +76531,8 @@ Samsung Internet
 
 ## See also
 
--   [`Date.prototype.getMonth()`](getmonth)
--   [`Date.prototype.setUTCMonth()`](setutcmonth)
+- [`Date.prototype.getMonth()`](getmonth)
+- [`Date.prototype.setUTCMonth()`](setutcmonth)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setMonth" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setMonth</a>
 
@@ -76764,10 +76764,10 @@ Samsung Internet
 
 ## See also
 
--   [`Reflect.setPrototypeOf()`](../reflect/setprototypeof)
--   [`Object.prototype.isPrototypeOf()`](isprototypeof)
--   [`Object.getPrototypeOf()`](getprototypeof)
--   [`Object.prototype.__proto__`](proto)
+- [`Reflect.setPrototypeOf()`](../reflect/setprototypeof)
+- [`Object.prototype.isPrototypeOf()`](isprototypeof)
+- [`Object.getPrototypeOf()`](getprototypeof)
+- [`Object.prototype.__proto__`](proto)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -76872,8 +76872,8 @@ Samsung Internet
 
 ## See also
 
--   [`Date.prototype.getSeconds()`](getseconds)
--   [`Date.prototype.setUTCSeconds()`](setutcseconds)
+- [`Date.prototype.getSeconds()`](getseconds)
+- [`Date.prototype.setUTCSeconds()`](setutcseconds)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setSeconds" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setSeconds</a>
 
@@ -76971,8 +76971,8 @@ Samsung Internet
 
 ## See also
 
--   [`Date.prototype.getTime()`](gettime)
--   [`Date.prototype.setUTCHours()`](setutchours)
+- [`Date.prototype.getTime()`](gettime)
+- [`Date.prototype.setUTCHours()`](setutchours)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setTime" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setTime</a>
 
@@ -77079,8 +77079,8 @@ Samsung Internet
 
 ## See also
 
--   [`DataView`](../dataview)
--   [`ArrayBuffer`](../arraybuffer)
+- [`DataView`](../dataview)
+- [`ArrayBuffer`](../arraybuffer)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setUint16" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setUint16</a>
 
@@ -77187,8 +77187,8 @@ Samsung Internet
 
 ## See also
 
--   [`DataView`](../dataview)
--   [`ArrayBuffer`](../arraybuffer)
+- [`DataView`](../dataview)
+- [`ArrayBuffer`](../arraybuffer)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setUint32" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setUint32</a>
 
@@ -77291,8 +77291,8 @@ Samsung Internet
 
 ## See also
 
--   [`DataView`](../dataview)
--   [`ArrayBuffer`](../arraybuffer)
+- [`DataView`](../dataview)
+- [`ArrayBuffer`](../arraybuffer)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setUint8" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setUint8</a>
 
@@ -77391,8 +77391,8 @@ Samsung Internet
 
 ## See also
 
--   [`Date.prototype.getUTCDate()`](getutcdate)
--   [`Date.prototype.setDate()`](setdate)
+- [`Date.prototype.getUTCDate()`](getutcdate)
+- [`Date.prototype.setDate()`](setdate)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCDate" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCDate</a>
 
@@ -77499,8 +77499,8 @@ Samsung Internet
 
 ## See also
 
--   [`Date.prototype.getUTCFullYear()`](getutcfullyear)
--   [`Date.prototype.setFullYear()`](setfullyear)
+- [`Date.prototype.getUTCFullYear()`](getutcfullyear)
+- [`Date.prototype.setFullYear()`](setfullyear)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCFullYear" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCFullYear</a>
 
@@ -77611,8 +77611,8 @@ Samsung Internet
 
 ## See also
 
--   [`Date.prototype.getUTCHours()`](getutchours)
--   [`Date.prototype.setHours()`](sethours)
+- [`Date.prototype.getUTCHours()`](getutchours)
+- [`Date.prototype.setHours()`](sethours)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCHours" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCHours</a>
 
@@ -77709,8 +77709,8 @@ Samsung Internet
 
 ## See also
 
--   [`Date.prototype.getUTCMilliseconds()`](getutcmilliseconds)
--   [`Date.prototype.setMilliseconds()`](setmilliseconds)
+- [`Date.prototype.getUTCMilliseconds()`](getutcmilliseconds)
+- [`Date.prototype.setMilliseconds()`](setmilliseconds)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCMilliseconds" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCMilliseconds</a>
 
@@ -77817,8 +77817,8 @@ Samsung Internet
 
 ## See also
 
--   [`Date.prototype.getUTCMinutes()`](getutcminutes)
--   [`Date.prototype.setMinutes()`](setminutes)
+- [`Date.prototype.getUTCMinutes()`](getutcminutes)
+- [`Date.prototype.setMinutes()`](setminutes)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCMinutes" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCMinutes</a>
 
@@ -77921,8 +77921,8 @@ Samsung Internet
 
 ## See also
 
--   [`Date.prototype.getUTCMonth()`](getutcmonth)
--   [`Date.prototype.setMonth()`](setmonth)
+- [`Date.prototype.getUTCMonth()`](getutcmonth)
+- [`Date.prototype.setMonth()`](setmonth)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCMonth" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCMonth</a>
 
@@ -78025,8 +78025,8 @@ Samsung Internet
 
 ## See also
 
--   [`Date.prototype.getUTCSeconds()`](getutcseconds)
--   [`Date.prototype.setSeconds()`](setseconds)
+- [`Date.prototype.getUTCSeconds()`](getutcseconds)
+- [`Date.prototype.setSeconds()`](setseconds)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCSeconds" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCSeconds</a>
 
@@ -78132,10 +78132,10 @@ Samsung Internet
 
 ## See also
 
--   [`Date.prototype.getFullYear()`](getfullyear)
--   [`Date.prototype.getUTCFullYear()`](getutcfullyear)
--   [`Date.prototype.setFullYear()`](setfullyear)
--   [`Date.prototype.setUTCFullYear()`](setutcfullyear)
+- [`Date.prototype.getFullYear()`](getfullyear)
+- [`Date.prototype.getUTCFullYear()`](getutcfullyear)
+- [`Date.prototype.setFullYear()`](setfullyear)
+- [`Date.prototype.setUTCFullYear()`](setutcfullyear)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setYear" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setYear</a>
 
@@ -78160,9 +78160,9 @@ Shared memory can be created and updated simultaneously in workers or the main t
 
 ### APIs which use SharedArrayBuffer objects
 
--   [`WebGLRenderingContext.bufferData()`](https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/bufferData)
--   [`WebGLRenderingContext.bufferSubData()`](https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/bufferSubData)
--   [`WebGL2RenderingContext.getBufferSubData()`](https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/getBufferSubData)
+- [`WebGLRenderingContext.bufferData()`](https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/bufferData)
+- [`WebGLRenderingContext.bufferSubData()`](https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/bufferSubData)
+- [`WebGL2RenderingContext.getBufferSubData()`](https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/getBufferSubData)
 
 ### Security requirements
 
@@ -78172,8 +78172,8 @@ As a baseline requirement, your document needs to be in a [secure context](https
 
 For top-level documents, two headers will need to be set to cross-origin isolate your site:
 
--   [`Cross-Origin-Opener-Policy`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cross-Origin-Opener-Policy) with `same-origin` as value (protects your origin from attackers)
--   [`Cross-Origin-Embedder-Policy`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cross-Origin-Embedder-Policy) with `require-corp` as value (protects victims from your origin)
+- [`Cross-Origin-Opener-Policy`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cross-Origin-Opener-Policy) with `same-origin` as value (protects your origin from attackers)
+- [`Cross-Origin-Embedder-Policy`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cross-Origin-Embedder-Policy) with `require-corp` as value (protects victims from your origin)
 
 <!-- -->
 
@@ -78515,13 +78515,13 @@ Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy
 
 ## See also
 
--   [`Atomics`](atomics)
--   [`ArrayBuffer`](arraybuffer)
--   [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
--   [Web Workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API)
--   [parlib-simple](https://github.com/lars-t-hansen/parlib-simple) - a simple library providing synchronization and work distribution abstractions.
--   [Shared Memory - a brief tutorial](https://github.com/tc39/ecmascript_sharedmem/blob/master/TUTORIAL.md)
--   [A Taste of JavaScript's New Parallel Primitives - Mozilla Hacks](https://hacks.mozilla.org/2016/05/a-taste-of-javascripts-new-parallel-primitives/)
+- [`Atomics`](atomics)
+- [`ArrayBuffer`](arraybuffer)
+- [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
+- [Web Workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API)
+- [parlib-simple](https://github.com/lars-t-hansen/parlib-simple) - a simple library providing synchronization and work distribution abstractions.
+- [Shared Memory - a brief tutorial](https://github.com/tc39/ecmascript_sharedmem/blob/master/TUTORIAL.md)
+- [A Taste of JavaScript's New Parallel Primitives - Mozilla Hacks](https://hacks.mozilla.org/2016/05/a-taste-of-javascripts-new-parallel-primitives/)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer</a>
 
@@ -78640,10 +78640,10 @@ Samsung Internet
 
 ## See also
 
--   [`Array.prototype.push()`](push)
--   [`Array.prototype.pop()`](pop)
--   [`Array.prototype.unshift()`](unshift)
--   [`Array.prototype.concat()`](concat)
+- [`Array.prototype.push()`](push)
+- [`Array.prototype.pop()`](pop)
+- [`Array.prototype.unshift()`](unshift)
+- [`Array.prototype.concat()`](concat)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift</a>
 
@@ -78664,11 +78664,11 @@ A number. If this argument is not a `number`, it is implicitly converted to one.
 
 A number representing the sign of the given argument:
 
--   If the argument is positive, returns `1`.
--   If the argument is negative, returns `-1`.
--   If the argument is positive zero, returns `0`.
--   If the argument is negative zero, returns `-0`.
--   Otherwise, [`NaN`](../nan) is returned.
+- If the argument is positive, returns `1`.
+- If the argument is negative, returns `-1`.
+- If the argument is positive zero, returns `0`.
+- If the argument is negative zero, returns `-0`.
+- Otherwise, [`NaN`](../nan) is returned.
 
 ## Description
 
@@ -78752,12 +78752,12 @@ No
 
 ## See also
 
--   [A polyfill](https://github.com/behnammodi/polyfill/blob/master/math.polyfill.js)
--   [`Math.abs()`](abs)
--   [`Math.ceil()`](ceil)
--   [`Math.floor()`](floor)
--   [`Math.round()`](round)
--   [`Math.trunc()`](trunc)
+- [A polyfill](https://github.com/behnammodi/polyfill/blob/master/math.polyfill.js)
+- [`Math.abs()`](abs)
+- [`Math.ceil()`](ceil)
+- [`Math.floor()`](floor)
+- [`Math.round()`](round)
+- [`Math.trunc()`](trunc)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -78860,12 +78860,12 @@ Samsung Internet
 
 ## See also
 
--   [`Math.acos()`](acos)
--   [`Math.asin()`](asin)
--   [`Math.atan()`](atan)
--   [`Math.atan2()`](atan2)
--   [`Math.cos()`](cos)
--   [`Math.tan()`](tan)
+- [`Math.acos()`](acos)
+- [`Math.asin()`](asin)
+- [`Math.atan()`](atan)
+- [`Math.atan2()`](atan2)
+- [`Math.cos()`](cos)
+- [`Math.tan()`](tan)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -78981,11 +78981,11 @@ No
 
 ## See also
 
--   [`Math.acosh()`](acosh)
--   [`Math.asinh()`](asinh)
--   [`Math.atanh()`](atanh)
--   [`Math.cosh()`](cosh)
--   [`Math.tanh()`](tanh)
+- [`Math.acosh()`](acosh)
+- [`Math.asinh()`](asinh)
+- [`Math.atanh()`](atanh)
+- [`Math.cosh()`](cosh)
+- [`Math.tanh()`](tanh)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -79079,7 +79079,7 @@ From Firefox 13 to Firefox 18, the `size` property was implemented as a `Map.pro
 
 ## See also
 
--   [`Map`](../map)
+- [`Map`](../map)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -79123,8 +79123,8 @@ A new array containing the extracted elements.
 
 `slice` does not alter the original array. It returns a shallow copy of elements from the original array. Elements of the original array are copied into the returned array as follows:
 
--   For object `slice` copies object references into the new array. Both the original and new array refer to the same object. If an object changes, the changes are visible to both the new and original arrays.
--   For strings, numbers and booleans (not [`String`](../string), [`Number`](../number) and [`Boolean`](../boolean) objects), `slice` copies the values into the new array. Changes to the string, number, or boolean in one array do not affect the other array.
+- For object `slice` copies object references into the new array. Both the original and new array refer to the same object. If an object changes, the changes are visible to both the new and original arrays.
+- For strings, numbers and booleans (not [`String`](../string), [`Number`](../number) and [`Boolean`](../boolean) objects), `slice` copies the values into the new array. Changes to the string, number, or boolean in one array do not affect the other array.
 
 If a new element is added to either array, the other array is not affected.
 
@@ -79261,9 +79261,9 @@ Samsung Internet
 
 ## See also
 
--   [`Array.prototype.splice()`](splice)
--   [`Function.prototype.call()`](../function/call)
--   [`Function.prototype.bind()`](../function/bind)
+- [`Array.prototype.splice()`](splice)
+- [`Function.prototype.call()`](../function/call)
+- [`Function.prototype.bind()`](../function/bind)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice</a>
 
@@ -79368,8 +79368,8 @@ Samsung Internet
 
 ## See also
 
--   [`String.prototype.fontsize()`](fontsize)
--   [`String.prototype.big()`](big)
+- [`String.prototype.fontsize()`](fontsize)
+- [`String.prototype.big()`](big)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -79596,10 +79596,10 @@ Samsung Internet
 
 ## See also
 
--   [`Array.prototype.every()`](every)
--   [`Array.prototype.forEach()`](foreach)
--   [`Array.prototype.find()`](find)
--   [`TypedArray.prototype.some()`](../typedarray/some)
+- [`Array.prototype.every()`](every)
+- [`Array.prototype.forEach()`](foreach)
+- [`Array.prototype.find()`](find)
+- [`TypedArray.prototype.some()`](../typedarray/some)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some</a>
 
@@ -79646,10 +79646,10 @@ If `compareFunction` is not supplied, all non-`undefined` array elements are sor
 
 If `compareFunction` is supplied, all non-`undefined` array elements are sorted according to the return value of the compare function (all `undefined` elements are sorted to the end of the array, with no call to `compareFunction`). If `a` and `b` are two elements being compared, then:
 
--   If `compareFunction(a, b)` returns less than 0, leave `a` and `b` unchanged.
--   If `compareFunction(a, b)` returns 0, leave `a` and `b` unchanged with respect to each other, but sorted with respect to all different elements. Note: the ECMAScript standard only started guaranteeing this behavior [in 2019](https://www.ecma-international.org/ecma-262/10.0/index.html#sec-intro), thus, older browsers may not respect this.
--   If `compareFunction(a, b)` returns greater than 0, sort `b` before `a`.
--   `compareFunction(a, b)` must always return the same value when given a specific pair of elements `a` and `b` as its two arguments. If inconsistent results are returned, then the sort order is undefined.
+- If `compareFunction(a, b)` returns less than 0, leave `a` and `b` unchanged.
+- If `compareFunction(a, b)` returns 0, leave `a` and `b` unchanged with respect to each other, but sorted with respect to all different elements. Note: the ECMAScript standard only started guaranteeing this behavior [in 2019](https://www.ecma-international.org/ecma-262/10.0/index.html#sec-intro), thus, older browsers may not respect this.
+- If `compareFunction(a, b)` returns greater than 0, sort `b` before `a`.
+- `compareFunction(a, b)` must always return the same value when given a specific pair of elements `a` and `b` as its two arguments. If inconsistent results are returned, then the sort order is undefined.
 
 So, the compare function has the following form:
 
@@ -79915,11 +79915,11 @@ No
 
 ## See also
 
--   [`Array.prototype.reverse()`](reverse)
--   [`String.prototype.localeCompare()`](../string/localecompare)
--   [About the stability of the algorithm used by V8 engine](https://v8.dev/blog/array-sort)
--   [V8 sort stability](https://v8.dev/features/stable-sort)
--   [Mathias Bynens' sort stability demo](https://mathiasbynens.be/demo/sort-stability)
+- [`Array.prototype.reverse()`](reverse)
+- [`String.prototype.localeCompare()`](../string/localecompare)
+- [About the stability of the algorithm used by V8 engine](https://v8.dev/blog/array-sort)
+- [V8 sort stability](https://v8.dev/features/stable-sort)
+- [Mathias Bynens' sort stability demo](https://mathiasbynens.be/demo/sort-stability)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort</a>
 
@@ -80101,7 +80101,7 @@ No
 
 ## See also
 
--   [`RegExp.prototype.flags`](flags)
+- [`RegExp.prototype.flags`](flags)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -80210,8 +80210,8 @@ No
 
 ## See also
 
--   [`Map[@@species]`](../map/@@species)
--   [`Set[@@species]`](../set/@@species)
+- [`Map[@@species]`](../map/@@species)
+- [`Set[@@species]`](../set/@@species)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -80392,9 +80392,9 @@ From Internet Explorer 5.5 through 8, all elements of the array will not be dele
 
 ## See also
 
--   [`push()`](push) / [`pop()`](pop)— add/remove elements from the end of the array
--   [`unshift()`](unshift) / [`shift()`](shift)— add/remove elements from the beginning of the array
--   [`concat()`](concat)— returns a new array comprised of this array joined with other array(s) and/or value(s)
+- [`push()`](push) / [`pop()`](pop)— add/remove elements from the end of the array
+- [`unshift()`](unshift) / [`shift()`](shift)— add/remove elements from the beginning of the array
+- [`concat()`](concat)— returns a new array comprised of this array joined with other array(s) and/or value(s)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice</a>
 
@@ -80413,19 +80413,19 @@ The `split()` method divides a [`String`](../string) into an ordered list of sub
 `separator` <span class="badge inline optional">Optional</span>  
 The pattern describing where each split should occur. The `separator` can be a simple string or it can be a [regular expression](../regexp).
 
--   The simplest case is when `separator` is just a single character; this is used to split a delimited string. For example, a string containing tab separated values (TSV) could be parsed by passing a tab character as the separator, like this: `myString.split("\t")`.
--   If `separator` contains multiple characters, that entire character sequence must be found in order to split.
--   If `separator` is omitted or does not occur in `str`, the returned array contains one element consisting of the entire string.
--   If `separator` appears at the beginning (or end) of the string, it still has the effect of splitting. The result is an empty (i.e. zero length) string, which appears at the first (or last) position of the returned array.
--   If `separator` is an empty string (`""`), `str` is converted to an array of each of its UTF-16 "characters".
+- The simplest case is when `separator` is just a single character; this is used to split a delimited string. For example, a string containing tab separated values (TSV) could be parsed by passing a tab character as the separator, like this: `myString.split("\t")`.
+- If `separator` contains multiple characters, that entire character sequence must be found in order to split.
+- If `separator` is omitted or does not occur in `str`, the returned array contains one element consisting of the entire string.
+- If `separator` appears at the beginning (or end) of the string, it still has the effect of splitting. The result is an empty (i.e. zero length) string, which appears at the first (or last) position of the returned array.
+- If `separator` is an empty string (`""`), `str` is converted to an array of each of its UTF-16 "characters".
 
 **Warning:** When the empty string (`""`) is used as a separator, the string is **not** split by _user-perceived characters_ ([grapheme clusters](https://unicode.org/reports/tr29/#Grapheme_Cluster_Boundaries)) or unicode characters (codepoints), but by UTF-16 codeunits. This destroys [surrogate pairs](https://unicode.org/faq/utf_bom.html#utf16-2). See ["How do you get a string to a character array in JavaScript?” on StackOverflow](https://stackoverflow.com/a/34717402).
 
 `limit` <span class="badge inline optional">Optional</span>  
 A non-negative integer specifying a limit on the number of substrings to be included in the array. If provided, splits the string at each occurrence of the specified `separator`, but stops when `limit` entries have been placed in the array. Any leftover text is not included in the array at all.
 
--   The array may contain fewer entries than `limit` if the end of the string is reached before the limit is reached.
--   If `limit` is `0`, `[]` is returned.
+- The array may contain fewer entries than `limit` if the end of the string is reached before the limit is reached.
+- If `limit` is `0`, `[]` is returned.
 
 ### Return value
 
@@ -80615,11 +80615,11 @@ Samsung Internet
 
 ## See also
 
--   [`String.prototype.charAt()`](charat)
--   [`String.prototype.indexOf()`](indexof)
--   [`String.prototype.lastIndexOf()`](lastindexof)
--   [`Array.prototype.join()`](../array/join)
--   [Using regular expressions in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
+- [`String.prototype.charAt()`](charat)
+- [`String.prototype.indexOf()`](indexof)
+- [`String.prototype.lastIndexOf()`](lastindexof)
+- [`Array.prototype.join()`](../array/join)
+- [Using regular expressions in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -80962,8 +80962,8 @@ No
 
 ## See also
 
--   [Rest parameters](../functions/rest_parameters) (also '`...`')
--   [`Function.prototype.apply()`](../global_objects/function/apply) (also '`...`')
+- [Rest parameters](../functions/rest_parameters) (also '`...`')
+- [`Function.prototype.apply()`](../global_objects/function/apply) (also '`...`')
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -81071,10 +81071,10 @@ Samsung Internet
 
 ## See also
 
--   [`Math.cbrt()`](cbrt)
--   [`Math.exp()`](exp)
--   [`Math.log()`](log)
--   [`Math.pow()`](pow)
+- [`Math.cbrt()`](cbrt)
+- [`Math.exp()`](exp)
+- [`Math.log()`](log)
+- [`Math.pow()`](pow)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -81181,8 +81181,8 @@ Samsung Internet
 
 ## See also
 
--   [`Math.pow()`](pow)
--   [`Math.sqrt()`](sqrt)
+- [`Math.pow()`](pow)
+- [`Math.sqrt()`](sqrt)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -81289,8 +81289,8 @@ Samsung Internet
 
 ## See also
 
--   [`Math.pow()`](pow)
--   [`Math.sqrt()`](sqrt)
+- [`Math.pow()`](pow)
+- [`Math.sqrt()`](sqrt)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -81453,10 +81453,10 @@ Samsung Internet
 
 ## See also
 
--   [Components.stack](https://developer.mozilla.org/en-US/docs/Components.stack)
--   External projects: [TraceKit](https://github.com/csnover/TraceKit/) and [javascript-stacktrace](https://github.com/eriwen/javascript-stacktrace)
--   MSDN: [archived error.stack docs](https://web.archive.org/web/20140210004225/https://msdn.microsoft.com/en-us/library/windows/apps/hh699850.aspx)
--   [Overview of the V8 JavaScript stack trace API](https://github.com/v8/v8/wiki/Stack%20Trace%20API)
+- [Components.stack](https://developer.mozilla.org/en-US/docs/Components.stack)
+- External projects: [TraceKit](https://github.com/csnover/TraceKit/) and [javascript-stacktrace](https://github.com/eriwen/javascript-stacktrace)
+- MSDN: [archived error.stack docs](https://web.archive.org/web/20140210004225/https://msdn.microsoft.com/en-us/library/windows/apps/hh699850.aspx)
+- [Overview of the V8 JavaScript stack trace API](https://github.com/v8/v8/wiki/Stack%20Trace%20API)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error/Stack" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error/Stack</a>
 
@@ -81576,10 +81576,10 @@ No
 
 ## See also
 
--   [`String.prototype.endsWith()`](endswith)
--   [`String.prototype.includes()`](includes)
--   [`String.prototype.indexOf()`](indexof)
--   [`String.prototype.lastIndexOf()`](lastindexof)
+- [`String.prototype.endsWith()`](endswith)
+- [`String.prototype.includes()`](includes)
+- [`String.prototype.indexOf()`](indexof)
+- [`String.prototype.lastIndexOf()`](lastindexof)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -81774,9 +81774,9 @@ Strict mode is required.
 
 ## See also
 
--   [`class` expression](../operators/class)
--   [`class` declaration](../statements/class)
--   [Classes](../classes)
+- [`class` expression](../operators/class)
+- [`class` declaration](../statements/class)
+- [Classes](../classes)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/static" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/static</a>
 
@@ -81952,14 +81952,14 @@ No
 
 ## See also
 
--   [`RegExp.lastIndex`](lastindex)
--   [`RegExp.prototype.dotAll`](dotall)
--   [`RegExp.prototype.global`](global)
--   [`RegExp.prototype.hasIndices`](hasindices)
--   [`RegExp.prototype.ignoreCase`](ignorecase)
--   [`RegExp.prototype.multiline`](multiline)
--   [`RegExp.prototype.source`](source)
--   [`RegExp.prototype.unicode`](unicode)
+- [`RegExp.lastIndex`](lastindex)
+- [`RegExp.prototype.dotAll`](dotall)
+- [`RegExp.prototype.global`](global)
+- [`RegExp.prototype.hasIndices`](hasindices)
+- [`RegExp.prototype.ignoreCase`](ignorecase)
+- [`RegExp.prototype.multiline`](multiline)
+- [`RegExp.prototype.source`](source)
+- [`RegExp.prototype.unicode`](unicode)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -81981,8 +81981,8 @@ Warning
 
 Unreachable code after a return statement might occur in these situations:
 
--   When using an expression after a [`return`](../statements/return) statement, or
--   when using a semicolon-less return statement but including an expression directly after.
+- When using an expression after a [`return`](../statements/return) statement, or
+- when using a semicolon-less return statement but including an expression directly after.
 
 When an expression exists after a valid `return` statement, a warning is given to indicate that the code after the `return` statement is unreachable, meaning it can never be run.
 
@@ -81990,10 +81990,10 @@ Why should I have semicolons after `return` statements? In the case of semicolon
 
 Warnings will not be shown for semicolon-less returns if these statements follow it:
 
--   [`throw`](../statements/throw)
--   [`break`](../statements/break)
--   [`var`](../statements/var)
--   [`function`](../statements/function)
+- [`throw`](../statements/throw)
+- [`break`](../statements/break)
+- [`var`](../statements/var)
+- [`function`](../statements/function)
 
 ## Examples
 
@@ -82026,7 +82026,7 @@ Warnings will not be shown for semicolon-less returns if these statements follow
 
 ## See also
 
--   [Automatic Semicolon Insertion](../statements/return#automatic_semicolon_insertion)
+- [Automatic Semicolon Insertion](../statements/return#automatic_semicolon_insertion)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Stmt_after_return" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Stmt_after_return</a>
 
@@ -82055,8 +82055,8 @@ The value that has been stored.
 
 ### Exceptions
 
--   Throws a [`TypeError`](../typeerror), if `typedArray` is not one of the allowed integer types.
--   Throws a [`RangeError`](../rangeerror), if `index` is out of bounds in the `typedArray`.
+- Throws a [`TypeError`](../typeerror), if `typedArray` is not one of the allowed integer types.
+- Throws a [`RangeError`](../rangeerror), if `index` is out of bounds in the `typedArray`.
 
 ## Examples
 
@@ -82160,8 +82160,8 @@ Chrome disabled `SharedArrayBuffer` on January 5, 2018 to help reduce the effica
 
 ## See also
 
--   [`Atomics`](../atomics)
--   [`Atomics.load()`](load)
+- [`Atomics`](../atomics)
+- [`Atomics.load()`](load)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics/store" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics/store</a>
 
@@ -82177,14 +82177,14 @@ The strict equality operator (`===`) checks whether its two operands are equal, 
 
 The strict equality operators (`===` and `!==`) use the [Strict Equality Comparison Algorithm](https://www.ecma-international.org/ecma-262/5.1/#sec-11.9.6) to compare two operands.
 
--   If the operands are of different types, return `false`.
--   If both operands are objects, return `true` only if they refer to the same object.
--   If both operands are `null` or both operands are `undefined`, return `true`.
--   If either operand is `NaN`, return `false`.
--   Otherwise, compare the two operand's values:
-    -   Numbers must have the same numeric values. `+0` and `-0` are considered to be the same value.
-    -   Strings must have the same characters in the same order.
-    -   Booleans must be both `true` or both `false`.
+- If the operands are of different types, return `false`.
+- If both operands are objects, return `true` only if they refer to the same object.
+- If both operands are `null` or both operands are `undefined`, return `true`.
+- If either operand is `NaN`, return `false`.
+- Otherwise, compare the two operand's values:
+    - Numbers must have the same numeric values. `+0` and `-0` are considered to be the same value.
+    - Strings must have the same characters in the same order.
+    - Booleans must be both `true` or both `false`.
 
 The most notable difference between this operator and the [equality](equality) (`==`) operator is that if the operands are of different types, the `==` operator attempts to convert them to the same type before comparing.
 
@@ -82289,9 +82289,9 @@ Samsung Internet
 
 ## See also
 
--   [Equality operator](equality)
--   [Inequality operator](inequality)
--   [Strict inequality operator](strict_inequality)
+- [Equality operator](equality)
+- [Inequality operator](inequality)
+- [Strict inequality operator](strict_inequality)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -82420,9 +82420,9 @@ Samsung Internet
 
 ## See also
 
--   [Equality operator](equality)
--   [Inequality operator](inequality)
--   [Strict equality operator](strict_equality)
+- [Equality operator](equality)
+- [Inequality operator](inequality)
+- [Strict equality operator](strict_equality)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -82738,15 +82738,15 @@ The major browsers now implement strict mode. However, don't blindly depend on i
 
 ## See also
 
--   [Strict Mode Code in the ECMAScript specification](https://tc39.es/ecma262/#sec-strict-mode-code)
--   [Where's Walden? » New ES5 strict mode support: now with poison pills!](https://whereswalden.com/2010/09/08/new-es5-strict-mode-support-now-with-poison-pills/)
--   [Where's Walden? » New ES5 strict mode requirement: function statements not at top level of a program or function are prohibited](https://whereswalden.com/2011/01/24/new-es5-strict-mode-requirement-function-statements-not-at-top-level-of-a-program-or-function-are-prohibited/)
--   [Where's Walden? » New ES5 strict mode support: new vars created by strict mode eval code are local to that code only](https://whereswalden.com/2011/01/10/new-es5-strict-mode-support-new-vars-created-by-strict-mode-eval-code-are-local-to-that-code-only/)
--   [JavaScript "use strict" tutorial for beginners.](http://qnimate.com/javascript-strict-mode-in-nutshell/)
--   [John Resig - ECMAScript 5 Strict Mode, JSON, and More](http://ejohn.org/blog/ecmascript-5-strict-mode-json-and-more/)
--   [ECMA-262-5 in detail. Chapter 2. Strict Mode.](http://dmitrysoshnikov.com/ecmascript/es5-chapter-2-strict-mode/)
--   [Strict mode compatibility table](https://kangax.github.io/compat-table/es5/#Strict_mode)
--   [Transitioning to strict mode](strict_mode/transitioning_to_strict_mode)
+- [Strict Mode Code in the ECMAScript specification](https://tc39.es/ecma262/#sec-strict-mode-code)
+- [Where's Walden? » New ES5 strict mode support: now with poison pills!](https://whereswalden.com/2010/09/08/new-es5-strict-mode-support-now-with-poison-pills/)
+- [Where's Walden? » New ES5 strict mode requirement: function statements not at top level of a program or function are prohibited](https://whereswalden.com/2011/01/24/new-es5-strict-mode-requirement-function-statements-not-at-top-level-of-a-program-or-function-are-prohibited/)
+- [Where's Walden? » New ES5 strict mode support: new vars created by strict mode eval code are local to that code only](https://whereswalden.com/2011/01/10/new-es5-strict-mode-support-new-vars-created-by-strict-mode-eval-code-are-local-to-that-code-only/)
+- [JavaScript "use strict" tutorial for beginners.](http://qnimate.com/javascript-strict-mode-in-nutshell/)
+- [John Resig - ECMAScript 5 Strict Mode, JSON, and More](http://ejohn.org/blog/ecmascript-5-strict-mode-json-and-more/)
+- [ECMA-262-5 in detail. Chapter 2. Strict Mode.](http://dmitrysoshnikov.com/ecmascript/es5-chapter-2-strict-mode/)
+- [Strict mode compatibility table](https://kangax.github.io/compat-table/es5/#Strict_mode)
+- [Transitioning to strict mode](strict_mode/transitioning_to_strict_mode)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode</a>
 
@@ -82775,9 +82775,9 @@ The JavaScript exception "`'use strict'` not allowed in function" occurs when a 
 
 A `"use strict"` directive is written at the top of a function that has one of the following parameters:
 
--   [Default parameters](../functions/default_parameters)
--   [Rest parameters](../functions/rest_parameters)
--   [Destructuring parameters](../operators/destructuring_assignment)
+- [Default parameters](../functions/default_parameters)
+- [Rest parameters](../functions/rest_parameters)
+- [Destructuring parameters](../operators/destructuring_assignment)
 
 A `"use strict"` directive is not allowed at the top of such functions per the ECMAScript specification.
 
@@ -82840,12 +82840,12 @@ This can be converted to the following expression:
 
 ## See also
 
--   [Strict mode](../strict_mode)
--   [function statement](../statements/function)
--   [function expression](../operators/function)
--   [Default parameters](../functions/default_parameters)
--   [Rest parameters](../functions/rest_parameters)
--   [Destructuring parameters](../operators/destructuring_assignment)
+- [Strict mode](../strict_mode)
+- [function statement](../statements/function)
+- [function expression](../operators/function)
+- [Default parameters](../functions/default_parameters)
+- [Rest parameters](../functions/rest_parameters)
+- [Destructuring parameters](../operators/destructuring_assignment)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Strict_Non_Simple_Params" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Strict_Non_Simple_Params</a>
 

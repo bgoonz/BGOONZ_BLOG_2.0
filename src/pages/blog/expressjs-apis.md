@@ -38,19 +38,19 @@ These kinds of databases are relational because a _relation_ is a mathematical i
 
 **Below are some basic facts about tables:**
 
--   Tables organize data in rows and columns.
+- Tables organize data in rows and columns.
+- 
+- Each row in a table represents one distinct record.
+- 
+- Each column represents a field or attribute t
+- 
+- Fields should have a descriptive name and a data type appropriate for the attribute it represents.
 
--   Each row in a table represents one distinct record.
+- Tables usually have more rows than columns.
 
--   Each column represents a field or attribute that is common to all the records.
+- Tables have primary keys that uniquely identify each row.
 
--   Fields should have a descriptive name and a data type appropriate for the attribute it represents.
-
--   Tables usually have more rows than columns.
-
--   Tables have primary keys that uniquely identify each row.
-
--   Foreign keys represent the relationships with other tables.
+- Foreign keys represent the relationships with other tables.
 
 ## **Overview**
 
@@ -64,15 +64,15 @@ It is declarative and concise, which means there is a lot less to learn to use i
 
 When learning SQL, it is helpful to understand that each command is designed for a different purpose. If we classify the commands by purpose, we'll end up with the following sub-categories of SQL:
 
--   **Data Definition Language (DDL)**: used to modify database objects. Some examples are: CREATE TABLE, ALTER TABLE, and DROP TABLE.
+- **Data Definition Language (DDL)**: used to modify database objects. Some examples are: CREATE TABLE, ALTER TABLE, and DROP TABLE.
+- 
+- **Data Manipulation Language (DML)**: used to manipulate the data stored in the database. Some examples are: INSERT, UPDATE, and DELETE.
+- 
+- **Data Query Language (DQL)**: used to ask questions about the data stored in the database. The most commonly used SQL command is SELECT, and it falls in this category.
 
--   **Data Manipulation Language (DML)**: used to manipulate the data stored in the database. Some examples are: INSERT, UPDATE, and DELETE.
+- **Data Control Language (DCL)**: used to manage database security and user's access to data. These commands fall into the realm of Database Administrators. Some examples are GRANT and REVOKE.
 
--   **Data Query Language (DQL)**: used to ask questions about the data stored in the database. The most commonly used SQL command is SELECT, and it falls in this category.
-
--   **Data Control Language (DCL)**: used to manage database security and user's access to data. These commands fall into the realm of Database Administrators. Some examples are GRANT and REVOKE.
-
--   **Transaction Control Commands**: used for managing groups of statements that must execute as a unit or not execute at all. Examples are COMMIT and ROLLBACK.
+- **Transaction Control Commands**: used for managing groups of statements that must execute as a unit or not execute at all. Examples are COMMIT and ROLLBACK.
 
 As a developer, you'll need to get familiar with DDL and become proficient using DML and DQL. This lesson will cover only DML and DQL commands.
 
@@ -288,11 +288,11 @@ For a look at schema design in SQLite Studio, follow along in the video above.
 
 When designing a single table, we need to ask three things:
 
--   What fields (or columns) are present?
+- What fields (or columns) are present?
+- 
+- What type of data do we expect for each field?
 
--   What type of data do we expect for each field?
-
--   Are there other restrictions needed for each column?
+- Are there other restrictions needed for each column?
 
 Looking at the following schema diagram for an accounts table, we can the answer to each other those questions:
 
@@ -308,15 +308,15 @@ However, this is one requirement every table should satisfy: a **primary key**. 
 
 Each field must also have a specified datatype. The datatype available depends on our DBMS. Some supported datatype in SQLite include:
 
--   **Null:** Missing or unknown information.
+- **Null:** Missing or unknown information.
+- 
+- **Integer:** Whole numbers.
+- 
+- **Real:** Any number, including decimals.
 
--   **Integer:** Whole numbers.
+- **Text:** Character data.
 
--   **Real:** Any number, including decimals.
-
--   **Text:** Character data.
-
--   **Blob:** a large binary object that can be used to store miscellaneous data.
+- **Blob:** a large binary object that can be used to store miscellaneous data.
 
 Any data inserted into the table must match the datatypes determined in schema design.
 
@@ -324,13 +324,13 @@ Any data inserted into the table must match the datatypes determined in schema d
 
 Beyond datatypes, we may add additional **constraints** on each field. Some examples include:
 
--   **Not Null:** The field cannot be left empty
+- **Not Null:** The field cannot be left empty
+- 
+- **Unique:** No two records can have the same value in this field
+- 
+- **Primary key:** - Indicates this field is the primary key. Both the not null and unique constraints will be enforced.
 
--   **Unique:** No two records can have the same value in this field
-
--   **Primary key:** - Indicates this field is the primary key. Both the not null and unique constraints will be enforced.
-
--   **Default:** - Sets a default value if none is provided.
+- **Default:** - Sets a default value if none is provided.
 
 As with data types, any data that does not satisfy the schema constraints will be rejected from the database.
 
@@ -538,19 +538,19 @@ We can use a JOIN to combine query data from multiple tables using a single SELE
 
 There are different types of joins; some are listed below:
 
--   inner joins.
+- inner joins.
+- 
+- outer joins.
+- 
+- left joins.
+- 
+- right joins.
 
--   outer joins.
+- cross joins.
 
--   left joins.
+- non-equality joins.
 
--   right joins.
-
--   cross joins.
-
--   non-equality joins.
-
--   self joins.
+- self joins.
 
 Using joins requires that the two tables of interest contain at least one field with shared information. For example, if a _departments_ table has an _id_ field, and an employee table has a _department_id_ field, and the values that exist in the _id_ column of the _departments_ table live in the _department_id_ field of the employee table, we can use those fields to join both tables like so:
 
@@ -580,13 +580,13 @@ JOIN keeps the base tables (structure and data) unchanged.
 
 # Join vs. Subquery
 
--   JOINs are faster than a subquery and it is very rare that the opposite.
+- JOINs are faster than a subquery and it is very rare that the opposite.
+- 
+- In JOINs the RDBMS calculates an execution plan, that can predict, what data should be loaded and how much it will take to processed and as a result this pro
+- 
+- A JOIN is checked conditions first and then put it into table and displays; where as a subquery take separate temp table internally and checking condition.
 
--   In JOINs the RDBMS calculates an execution plan, that can predict, what data should be loaded and how much it will take to processed and as a result this process save some times, unlike the subquery there is no pre-process calculation and run all the queries and load all their data to do the processing.
-
--   A JOIN is checked conditions first and then put it into table and displays; where as a subquery take separate temp table internally and checking condition.
-
--   When joins are using, there should be connection between two or more than two tables and each table has a relation with other while subquery means query inside another query, has no need to relation, it works on columns and conditions.
+- When joins are using, there should be connection between two or more than two tables and each table has a relation with other while subquery means query inside another query, has no need to relation, it works on columns and conditions.
 
 # SQL JOINS: EQUI JOIN and NON EQUI JOIN
 
@@ -676,15 +676,15 @@ With objects, we're used to _denormalized_ data, stored with ease of use and spe
 
 ### **Normalization Guidelines**
 
--   Each record has a primary key.
+- Each record has a primary key.
+- 
+- No fields are repeated.
+- 
+- All fields relate directly to the key data.
 
--   No fields are repeated.
+- Each field entry contains a single data point.
 
--   All fields relate directly to the key data.
-
--   Each field entry contains a single data point.
-
--   There are no redundant entries.
+- There are no redundant entries.
 
 ### **Denormalized Data**
 
@@ -722,11 +722,11 @@ What issues does the following table have?
 
 There are three types of relationships:
 
--   One to one.
+- One to one.
+- 
+- One to many.
 
--   One to many.
-
--   Many to many.
+- Many to many.
 
 Determining how data is related can provide a set of guidelines for table representation and guides the use of foreign keys to connect said tables.
 
@@ -750,11 +750,11 @@ The farm_id is the foreign key that links farms and projections together.
 
 Notes about one-to-one relationships:
 
--   The foreign key should always have a unique constraint to prevent duplicate entries. In the example above, we wouldn't want to allow multiple projections records for one farm.
+- The foreign key should always have a unique constraint to prevent duplicate entries. In the example above, we wouldn't want to allow multiple projections records for one farm.
+- 
+- The foreign key can be in either table. For example, we may have had a projection_id in the farms table instead. A good rule of thumb is to put the foreign key in whichever table is more auxiliary to the other.
 
--   The foreign key can be in either table. For example, we may have had a projection_id in the farms table instead. A good rule of thumb is to put the foreign key in whichever table is more auxiliary to the other.
-
--   You can represent one-to-one data in a single table _without_ creating anomalies. However, it is sometimes prudent to use two tables as shown above to keep separate concerns in separate tables.
+- You can represent one-to-one data in a single table _without_ creating anomalies. However, it is sometimes prudent to use two tables as shown above to keep separate concerns in separate tables.
 
 ### **One to Many Relationships**
 
@@ -764,11 +764,11 @@ This is called a **one-to-many** relationship.
 
 This is the most common type of relationship between entities. Some other examples:
 
--   One customer can have many orders.
+- One customer can have many orders.
+- 
+- One user can have many posts.
 
--   One user can have many posts.
-
--   One post can have many comments.
+- One post can have many comments.
 
 Manage this type of relationship by adding a foreign key on the "many" table of the relationship that points to the primary key on the "one" table. Consider the farms and ranchers tables.
 
@@ -784,9 +784,9 @@ If we want to track animals on a farm as well, we must explore the **many-to-man
 
 Some other examples:
 
--   an order can have many products and the same product will appear in many orders.
-
--   a book can have more than one author, and an author can write more than one book.
+- an order can have many products and the same product will appear in many orders.
+- 
+- a book can have more than one author, and an author can write more than one book.
 
 To model this relationship, we need to introduce an **intermediary table** that holds foreign keys that reference the primary key on the related tables. We now have a farms, animals, and farm_animals table.
 

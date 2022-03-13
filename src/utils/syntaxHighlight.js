@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components';
-
 const langTagColor = [
     {
         lang: `javascript`,
@@ -107,7 +106,6 @@ const langTagColor = [
         color: `gray`
     }
 ];
-
 const languageTags = langTagColor.map(
     ({ lang, tag, color }) =>
         `pre.grvsc-container[data-language="${lang}"]::before {
@@ -115,17 +113,14 @@ const languageTags = langTagColor.map(
         background: ${color};
       }`
 );
-
 export default createGlobalStyle`
   ${languageTags.join(`\n`)}
-
   pre.grvsc-container {
     position: relative;
     background: #050431;
     border-radius: 0.5em;
     line-height: 1.5em
   }
-
   pre.grvsc-container[data-language]::before {
     position: absolute;
     top: 0;
@@ -138,7 +133,6 @@ export default createGlobalStyle`
     border-radius: 0 0 0.2em 0.2em;
     color: black;
   }
-
   .gatsby-code-title {
     background: var(--color-orange-default);
     color: black;
@@ -151,14 +145,12 @@ export default createGlobalStyle`
     font-size: 0.8em;
     line-height: initial;
   }
-
   /* highlighted lines */
   :root {
     --grvsc-line-highlighted-background-color: rgba(255, 255, 255, 0.2); /* default unchanged */
     --grvsc-line-highlighted-border-color: var(--color-blue-lighter); /* default: rgba(255, 255, 255, 0.5) */
     --grvsc-line-highlighted-border-width: 0.3em; /* default: 2px */
   }
-
   /* inline code */
   :not(pre) > code {
     border-radius: 0.2em;

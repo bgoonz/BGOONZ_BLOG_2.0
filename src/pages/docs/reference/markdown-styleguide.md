@@ -1092,14 +1092,16 @@ improperly-indented code block (or similar) appears between two list items and
 ```text
 Code block
 ```
+````
 
 1. Second list
+
 ````
 
 The fix is to indent the code block so it becomes part of the preceding list
 item as intended:
 
-````markdown
+```markdown
 1. First list
 
     ```text
@@ -1589,13 +1591,16 @@ echo Hello world
 ```
 ````
 
-````
+```
+
+```
 
 To display a code block without syntax highlighting, use:
 
-```markdown
+````markdown
 ```text
 Plain text in a code block
+```
 ````
 
 ````
@@ -1900,9 +1905,11 @@ blocks do not match the configured code fence style:
 ```
 ````
 
+````
+
 ```ruby
 # Fenced code
-```
+````
 
 ````
 

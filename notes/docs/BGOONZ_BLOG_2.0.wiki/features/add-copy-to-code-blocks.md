@@ -157,10 +157,10 @@ Accessing the OS clipboard using browser JavaScript has been possible for severa
 
 Unfortunately, there are some problems:
 
--   clipboard access is synchronous, which has performance and security implications
--   support is patchy, especially on older versions of Safari on macOS and iOS
--   permissions access varies across browsers, and
--   the API could never be considered *elegant*
+- clipboard access is synchronous, which has performance and security implications
+- support is patchy, especially on older versions of Safari on macOS and iOS
+- permissions access varies across browsers, and
+- the API could never be considered *elegant*
 
 It's finally been superseded by a new [asynchronous Clipboard API](https://developer.mozilla.org/Web/API/Clipboard_API). It's new, and no browser supports all features, but it's easier to use and more robust.
 
@@ -169,9 +169,9 @@ Why Would an App Need to Access the Clipboard?
 
 As a developer, you'll know how the clipboard works and regularly use the following keyboard shortcuts:
 
--   `Ctrl` | `Cmd` + `C` to copy
--   `Ctrl` | `Cmd` + `X` to cut
--   `Ctrl` | `Cmd` + `V` to paste
+- `Ctrl` | `Cmd` + `C` to copy
+- `Ctrl` | `Cmd` + `X` to cut
+- `Ctrl` | `Cmd` + `V` to paste
 
 Those with less computing experience won't necessarily have that knowledge. They may also be using a touch-screen device where keyboard shortcuts aren't available. Offering easy-to-use cut and paste icons can be useful.
 
@@ -182,8 +182,8 @@ Clipboard Access is Dangerous!
 
 Accessing the clipboard programmatically raises several security concerns:
 
--   Users often copy passwords or private information so no page should be able to arbitrarily read clipboard data.
--   Pages should be restricted when adding data to the clipboard. A nefarious page could replace copied text with a dangerous command or even an executable file.
+- Users often copy passwords or private information so no page should be able to arbitrarily read clipboard data.
+- Pages should be restricted when adding data to the clipboard. A nefarious page could replace copied text with a dangerous command or even an executable file.
 
 To avoid potential issues, the Clipboard API can only be used on pages served over HTTPS (`localhost` is also permitted). When running in an iframe, the parent page must also grant `clipboard-read` and/or `clipboard-write` permissions:
 

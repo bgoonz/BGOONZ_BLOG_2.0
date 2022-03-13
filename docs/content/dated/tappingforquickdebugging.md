@@ -1,6 +1,5 @@
 tip-md-link: https://github.com/loverajoel/jstips/blob/master/_posts/en/javascript/2017-03-16-tapping-for-quick-debugging.md
 
-
 ---
 
 This little beastie here is tap. A really useful function for quick-debugging

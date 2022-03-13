@@ -252,11 +252,11 @@ Location: https://github.com/...
 
 When on a repository page, keyboard shortcuts allow you to navigate easily.
 
--   Pressing `t` will bring up a file explorer.
--   Pressing `w` will bring up the branch selector.
--   Pressing `s` will focus the search field for the current repository. Pressing ↓ to select the “All GitHub” option changes the field to search all of GitHub.
--   Pressing `l` will edit labels on existing Issues.
--   Pressing `y` **when looking at a file** (e.g., `https://github.com/tiimgreen/github-cheat-sheet/blob/master/README.md`) will change your URL to one which, in effect, freezes the page you are looking at. If this code changes, you will still be able to see what you saw at that current time.
+- Pressing `t` will bring up a file explorer.
+- Pressing `w` will bring up the branch selector.
+- Pressing `s` will focus the search field for the current repository. Pressing ↓ to select the “All GitHub” option changes the field to search all of GitHub.
+- Pressing `l` will edit labels on existing Issues.
+- Pressing `y` **when looking at a file** (e.g., `https://github.com/tiimgreen/github-cheat-sheet/blob/master/README.md`) will change your URL to one which, in effect, freezes the page you are looking at. If this code changes, you will still be able to see what you saw at that current time.
 
 To see all of the shortcuts for the current page press `?`:
 
@@ -492,13 +492,13 @@ In full Markdown documents **read-only** checklists can now be added using the f
   - [ ] Phobos
 ```
 
--   [ ] Mercury
--   [x] Venus
--   [x] Earth
-    -   [x] Moon
--   [x] Mars
-    -   [ ] Deimos
-    -   [ ] Phobos
+- [ ] Mercury
+- [x] Venus
+- [x] Earth
+- - [x] Moon
+- [x] Mars
+    - [ ] Deimos
+    - [ ] Phobos
 
 [_Read more about task lists in markdown documents._](https://github.com/blog/1825-task-lists-in-all-markdown-documents)
 
@@ -793,9 +793,9 @@ $ git checkout -
 
 Git Stripspace:
 
--   Strips trailing whitespace
--   Collapses newlines
--   Adds newline to end of file
+- Strips trailing whitespace
+- Collapses newlines
+- Adds newline to end of file
 
 A file must be passed when calling the command, e.g.:
 
@@ -870,10 +870,10 @@ $ git commit -m "Big-ass commit" --allow-empty
 
 Some use-cases for this (that make sense), include:
 
--   Annotating the start of a new bulk of work or a new feature.
--   Documenting when you make changes to the project that aren't code related.
--   Communicating with people using your repository.
--   The first commit of a repository: `git commit -m "Initial commit" --allow-empty`.
+- Annotating the start of a new bulk of work or a new feature.
+- Documenting when you make changes to the project that aren't code related.
+- Communicating with people using your repository.
+- The first commit of a repository: `git commit -m "Initial commit" --allow-empty`.
 
 ### Styled Git Status
 
@@ -953,8 +953,8 @@ _Press `q` to quit._
 
 You can also use multiple flags for more advanced search. For example:
 
--   `-e` The next parameter is the pattern (e.g., regex)
--   `--and`, `--or` and `--not` Combine multiple patterns.
+- `-e` The next parameter is the pattern (e.g., regex)
+- `--and`, `--or` and `--not` Combine multiple patterns.
 
 Use it like this:
 

@@ -2,7 +2,6 @@ import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 import { FooterDiv, PoweredBy, Icons } from './styles';
 import Rss from '../Rss';
-
 export default function Footer() {
     const { contentYaml } = useStaticQuery(graphql`
         {

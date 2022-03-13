@@ -18,27 +18,27 @@ See the [ES6 standard](http://www.ecma-international.org/ecma-262/6.0/) for full
 
 ES6 includes the following new features:
 
--   [arrows](#arrows)
--   [classes](#classes)
--   [enhanced object literals](#enhanced-object-literals)
--   [template strings](#template-strings)
--   [destructuring](#destructuring)
--   [default + rest + spread](#default--rest--spread)
--   [let + const](#let--const)
--   [iterators + for..of](#iterators--forof)
--   [generators](#generators)
--   [unicode](#unicode)
--   [modules](#modules)
--   [module loaders](#module-loaders)
--   [map + set + weakmap + weakset](#map--set--weakmap--weakset)
--   [proxies](#proxies)
--   [symbols](#symbols)
--   [subclassable built-ins](#subclassable-built-ins)
--   [promises](#promises)
--   [math + number + string + array + object APIs](#math--number--string--array--object-apis)
--   [binary and octal literals](#binary-and-octal-literals)
--   [reflect api](#reflect-api)
--   [tail calls](#tail-calls)
+- [arrows](#arrows)
+- [classes](#classes)
+- [enhanced object literals](#enhanced-object-literals)
+- [template strings](#template-strings)
+- [destructuring](#destructuring)
+- [default + rest + spread](#default--rest--spread)
+- [let + const](#let--const)
+- [iterators + for..of](#iterators--forof)
+- [generators](#generators)
+- [unicode](#unicode)
+- [modules](#modules)
+- [module loaders](#module-loaders)
+- [map + set + weakmap + weakset](#map--set--weakmap--weakset)
+- [proxies](#proxies)
+- [symbols](#symbols)
+- [subclassable built-ins](#subclassable-built-ins)
+- [promises](#promises)
+- [math + number + string + array + object APIs](#math--number--string--array--object-apis)
+- [binary and octal literals](#binary-and-octal-literals)
+- [reflect api](#reflect-api)
+- [tail calls](#tail-calls)
 
 ## ECMAScript 6 Features
 
@@ -388,11 +388,11 @@ More MDN info: [import statement](https://developer.mozilla.org/en-US/docs/Web/J
 
 Module loaders support:
 
--   Dynamic loading
--   State isolation
--   Global namespace isolation
--   Compilation hooks
--   Nested virtualization
+- Dynamic loading
+- State isolation
+- Global namespace isolation
+- Compilation hooks
+- Nested virtualization
 
 The default module loader can be configured, and new loaders can be constructed to evaluate and load code in isolated or constrained contexts.
 
@@ -532,8 +532,8 @@ In ES6, built-ins like `Array`, `Date` and DOM `Element`s can be subclassed.
 
 Object construction for a function named `Ctor` now uses two-phases (both virtually dispatched):
 
--   Call `Ctor[@@create]` to allocate the object, installing any special behavior
--   Invoke constructor on new instance to initialize
+- Call `Ctor[@@create]` to allocate the object, installing any special behavior
+- Invoke constructor on new instance to initialize
 
 The known `@@create` symbol is available via `Symbol.create`. Built-ins now expose their `@@create` explicitly.
 

@@ -1,4 +1,3 @@
-
 -   /en/tip-to-measure-performance-of-a-javascript-block/
 
 For quickly measuring performance of a javascript block, we can use the console functions like

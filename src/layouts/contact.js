@@ -5,8 +5,6 @@ import FormField from '../components/FormField';
 import Header from '../components/Header';
 import { Layout } from '../components/index';
 import { htmlToReact, markdownify } from '../utils';
-
-
 export default class Contact extends React.Component {
     render() {
         const data = _.get(this.props, 'data');
@@ -24,7 +22,6 @@ export default class Contact extends React.Component {
         const formHoneypotInputId = formId + '-honeypot';
         const formHoneypotLabelId = formId + '-honeypot-label';
         const formHoneypotName = formId + '-bot-field';
-
         return (
             <Layout page={page} config={config}>
                 <Header config={config} page={page} image={headerImage} />

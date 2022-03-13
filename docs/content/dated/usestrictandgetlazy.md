@@ -1,4 +1,3 @@
-
 -   /en/use-strict-and-get-lazy/
 
 Strict-mode JavaScript makes it easier for the developer to write "secure" JavaScript.

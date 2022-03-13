@@ -31,7 +31,7 @@ Enabled
 
 Build hooks give you a unique URL you can use to trigger a build.
 
--   **stackbit-build-hook**
+- **stackbit-build-hook**
 
     https://api.netlify.com/build\_hooks/609b2d9f66af5127803b19c3
 
@@ -43,7 +43,7 @@ Build hooks give you a unique URL you can use to trigger a build.
     curl -X POST -d {} https://api.netlify.com/build_hooks/609b2d9f66af5127803b19c3
     ```
 
--   **gitter**
+- **gitter**
 
     https://api.netlify.com/build\_hooks/61dccb6ed7c12040ccc2daef
 
@@ -83,7 +83,7 @@ Control the post processing and optimizations Netlify can do for you
 
 Inject analytics or other scripts into the HTML of your site.
 
--   before `</head>`
+- before `</head>`
 
     gtag-n-firebase
 
@@ -119,7 +119,7 @@ Inject analytics or other scripts into the HTML of your site.
     </script>
     ```
 
--   before `</body>`
+- before `</body>`
 
     gtag-in-body
 
@@ -130,7 +130,7 @@ Inject analytics or other scripts into the HTML of your site.
     <!-- End Google Tag Manager (noscript) -->
     ```
 
--   before `</head>`
+- before `</head>`
 
     original-analytics
 
@@ -162,7 +162,7 @@ Inject analytics or other scripts into the HTML of your site.
     <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     ```
 
--   before `</body>`
+- before `</body>`
 
     goback
 
@@ -173,7 +173,7 @@ Inject analytics or other scripts into the HTML of your site.
             echo "<a href='$url'></a>
     ```
 
--   before `</head>`
+- before `</head>`
 
     mdn-style
 
@@ -406,7 +406,7 @@ Inject analytics or other scripts into the HTML of your site.
     </style>
     ```
 
--   before `</head>`
+- before `</head>`
 
     algolia-head
 
@@ -427,7 +427,7 @@ Inject analytics or other scripts into the HTML of your site.
         </script>
     ```
 
--   before `</body>`
+- before `</body>`
 
     stackbit-widget
 
@@ -435,7 +435,7 @@ Inject analytics or other scripts into the HTML of your site.
     <script src="https://widget.stackbit.com/init.js" id="stackbit-widget-init" data-stackbit-project-id="609b2d7c71a5dd0016f36326"></script>
     ```
 
--   before `</body>`
+- before `</body>`
 
     addthis
 
@@ -444,7 +444,7 @@ Inject analytics or other scripts into the HTML of your site.
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946"></script>
     ```
 
--   before `</head>`
+- before `</head>`
 
     meta
 
@@ -476,7 +476,7 @@ Inject analytics or other scripts into the HTML of your site.
     <meta property="og:image" content="https://mugshotbot.com/m/DROicc16">
     ```
 
--   before `</body>`
+- before `</body>`
 
     search
 
@@ -497,7 +497,7 @@ Inject analytics or other scripts into the HTML of your site.
     </script>
     ```
 
--   before `</head>`
+- before `</head>`
 
     mailchimp
 
@@ -505,7 +505,7 @@ Inject analytics or other scripts into the HTML of your site.
     <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/a41d8352dc1deaf4533662699/28d2370bb66d456a5d6411971.js");</script>
     ```
 
--   before `</head>`
+- before `</head>`
 
     google-adds
 
@@ -525,7 +525,7 @@ Inject analytics or other scripts into the HTML of your site.
     </script>
     ```
 
--   before `</body>`
+- before `</body>`
 
     google-search
 
@@ -534,7 +534,7 @@ Inject analytics or other scripts into the HTML of your site.
     <div class="gcse-search"></div>
     ```
 
--   before `</head>`
+- before `</head>`
 
     gs-head-script
 
@@ -542,7 +542,7 @@ Inject analytics or other scripts into the HTML of your site.
     <script async src="https://cse.google.com/cse.js?cx=54896af6e2f16ea45"></script>
     ```
 
--   before `</head>`
+- before `</head>`
 
     jquery
 
@@ -551,7 +551,7 @@ Inject analytics or other scripts into the HTML of your site.
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
     ```
 
--   before `</body>`
+- before `</body>`
 
     search2
 
@@ -631,7 +631,7 @@ Inject analytics or other scripts into the HTML of your site.
     </div>
     ```
 
--   before `</head>`
+- before `</head>`
 
     blm
 
@@ -655,7 +655,7 @@ Inject analytics or other scripts into the HTML of your site.
     </script>
     ```
 
--   before `</head>`
+- before `</head>`
 
     netlify-identity
 
@@ -663,7 +663,7 @@ Inject analytics or other scripts into the HTML of your site.
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     ```
 
--   before `</head>`
+- before `</head>`
 
     netlify-identity
 
@@ -684,7 +684,7 @@ Inject analytics or other scripts into the HTML of your site.
     </script>
     ```
 
--   before `</head>`
+- before `</head>`
 
     search
 
@@ -703,7 +703,7 @@ Inject analytics or other scripts into the HTML of your site.
     }();</script>
     ```
 
--   before `</body>`
+- before `</body>`
 
     sb-search
 

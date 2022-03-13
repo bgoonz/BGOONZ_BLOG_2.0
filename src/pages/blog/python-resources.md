@@ -39,7 +39,7 @@ thumb_image_alt: python logo
 
 My favorite language for maintainability is Python. It has simple, clean syntax, object encapsulation, good library support, and optional named parameters.
 
--   Bram Cohen
+- Bram Cohen
 
 Article on basic web development setup… it is geared towards web but VSCode is an incredibly versitile editor and this stack really could suit just about anyone working in the field of computer science.
 
@@ -49,11 +49,11 @@ Article on basic web development setup… it is geared towards web but VSCode is
 
 [Python enables programs to be written compactly and readably. Programs written in Python are typically much shorter than equivalent C, C++, or Java programs, for several reasons:](https://docs.python.org/3/tutorial/appetite.html)
 
--   the high-level data types allow you to express complex operations in a single statement;
+- the high-level data types allow you to express complex operations in a single statement;
+- 
+- statement grouping is done by indentation instead of beginning and ending brackets;
 
--   statement grouping is done by indentation instead of beginning and ending brackets;
-
--   no variable or argument declarations are necessary.
+- no variable or argument declarations are necessary.
 
 ### Installing Python:
 
@@ -147,13 +147,13 @@ Instead of using the , in the print function, you can put a + to combine the var
 
 There are many operators in python:
 
--   \+
+- \+
+- 
+- \-
+- 
+- /
 
--   \-
-
--   /
-
--   \*
+- \*
     These operators are the same in most languages, and allow for addition, subtraction, division, and multiplicaiton.
     Now, we can look at a few more complicated ones:
 
@@ -188,17 +188,17 @@ The first number stands for how far in you go from the front, and the second sta
 
 Here is a list of functions/methods we will go over:
 
--   .strip()
+- .strip()
+- 
+- len()
+- 
+- .lower()
+- 
+- .upper()
 
--   len()
+- .replace()
 
--   .lower()
-
--   .upper()
-
--   .replace()
-
--   .split()
+- .split()
 
 ### New: Input()
 

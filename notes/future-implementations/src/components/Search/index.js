@@ -5,17 +5,13 @@ import { connectStateResults, Index, InstantSearch } from 'react-instantsearch-d
 import Hits from './Hits';
 import Input from './Input';
 import { HitsWrapper, PoweredBy, Root } from './styles';
-
 const Results = connectStateResults(
     ({ searching, searchState, searchResults: res }) =>
         (searching && <div>Searching...</div>) || (res?.nbHits === 0 && <div>No results for &apos;{searchState.query}&apos;</div>)
 );
-
 const Stats = connectStateResults(({ searchResults: res }) => res?.nbHits > 0 && `${res.nbHits} result${res.nbHits > 1 ? `s` : ``}`);
-
 const appId = process.env.GATSBY_ALGOLIA_APP_ID;
 const searchKey = process.env.GATSBY_ALGOLIA_SEARCH_KEY;
-
 export default function Search({ indices, collapse = true, size, ...rest }) {
     const ref = createRef();
     const [query, setQuery] = useState(``);

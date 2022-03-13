@@ -309,7 +309,6 @@ module.exports = class Stack {
             this.top = null;
             return this.items.pop();
 
-
 ```
 
 ---
@@ -368,7 +367,6 @@ module.exports = class Queue {
         this.items.push( element );
     }
 
-
 ```
 
 ---
@@ -414,7 +412,6 @@ Node.js
 
 ```js
 
-
 "use strict";
 const Node = require( './Node.js' );
 module.exports = class LinkedList {
@@ -442,7 +439,6 @@ module.exports = class LinkedList {
             process.stdout.write( String( temp.data ) );
             process.stdout.write( " -> " );
             temp = temp.nextElement;
-
 
 ```
 

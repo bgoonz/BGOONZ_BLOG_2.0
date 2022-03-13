@@ -12,14 +12,10 @@ const queryTemplate = (filters = ``, fields = ``) => `{
     }
   }
 }`;
-
 const processSlugs = (arr) =>
     arr.map(({ fileAbsolutePath: fap, ...rest }) => (fap.includes(`web/projects`) ? { ...rest, slug: `/web?project=${rest.title}` } : rest));
-
 const flatten = (arr) => arr.map(({ frontmatter, ...rest }) => ({ ...frontmatter, ...rest }));
-
 const settings = { attributesToSnippet: [`excerpt:20`] };
-
 const queries = [
     {
         query: queryTemplate(`fileAbsolutePath: {regex: "/pages/"}`),
@@ -34,5 +30,4 @@ const queries = [
         settings
     }
 ];
-
 module.exports = queries;

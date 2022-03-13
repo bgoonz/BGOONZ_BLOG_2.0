@@ -5,7 +5,8 @@ sections:
       type: section_hero
       title: 'I am a musician, electrical engineer & web developer'
       image: images/curious-europa.gif
-      content: "**Please note that this website is in development and is often broken!**\n\n[](https://www.vagrantup.com/)[![](https://img.icons8.com/color/96/000000/gmail.png)](mailto:bryan.guner@gmail.com)[![](https://img.icons8.com/color/96/000000/youtube.png)](https://www.linkedin.com/in/bryan-guner-046199128/)[![](https://img.icons8.com/color/96/000000/instagram-new.png)](https://www.instagram.com/bgoonz/?hl=en)[![](https://img.icons8.com/color/96/000000/pinterest--v1.png)](https://www.pinterest.com/bryanguner/\\_saved/)\n\n[ ](https://webpack.js.org/)[\_](https://www.adobe.com/products/xd.html)\n\n[![Netlify Status](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/bgoonz-blog/deploys)\n\n[![Bryans github activity graph](https://activity-graph.herokuapp.com/graph?username=bgoonz\\&custom_title=This%20is%20Bryans%20Activity\\&hide_border=true\\&theme=chartreuse-dark)](https://github.com/bgoonz/github-readme-activity-graph)\n\n![Jokes](https://readme-jokes.vercel.app/api)\n\n![Python](https://img.shields.io/badge/-Python-05122A?style=flat\\&logo=python) ![HTML](https://img.shields.io/badge/-HTML-05122A?style=flat\\&logo=HTML5) ![CSS](https://img.shields.io/badge/-CSS-05122A?style=flat\\&logo=CSS3\\&logoColor=1572B6) ![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat\\&logo=javascript)![React](https://img.shields.io/badge/-React-05122A?style=flat\\&logo=react) ![Node.js](https://img.shields.io/badge/-Node.js-05122A?style=flat\\&logo=node.js) \n\n![Visual Studio Code](https://img.shields.io/badge/-Visual%20Studio%20Code-05122A?style=flat\\&logo=visual-studio-code\\&logoColor=007ACC)![Docker](https://img.shields.io/badge/-Docker-05122A?style=flat\\&logo=Docker) ![MongoDB](https://img.shields.io/badge/-MongoDB-05122A?style=flat\\&logo=mongodb) ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-05122A?style=flat\\&logo=postgresql)\n\n![Git](https://img.shields.io/badge/-Git-05122A?style=flat\\&logo=git) ![GitHub](https://img.shields.io/badge/-GitHub-05122A?style=flat\\&logo=github) ![GitLab](https://img.shields.io/badge/-GitLab-05122A?style=flat\\&logo=gitlab)\n\n ![Markdown](https://img.shields.io/badge/-Markdown-05122A?style=flat\\&logo=markdown)\n"
+      content: 
+        '**Pleasenotethatthiswebsiteisindevelopmentandisoftenbroken!**\n\n[](https://www.vagrantup.com/)[![gmail](https://img.icons8.com/color/96/000000/gmail.png)](mailto:bryan.guner@gmail.com)[![](https://img.icons8.com/color/96/000000/youtube.png)][![linkedin](https://img.icons8.com/color/96/000000/linkedin.png)](https://www.linkedin.com/in/bryan-guner-046199128/)[![](https://img.icons8.com/color/96/000000/instagram-new.png)](https://www.instagram.com/bgoonz/?hl=en)[![](https://img.icons8.com/color/96/000000/pinterest--v1.png)](https://www.pinterest.com/bryanguner/\\_saved/)\n\n[](https://webpack.js.org/)[\_](https://www.adobe.com/products/xd.html)\n\n[![NetlifyStatus](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/bgoonz-blog/deploys)\n\n[![Bryansgithubactivitygraph](https://activity-graph.herokuapp.com/graph?username=bgoonz\\&custom_title=This%20is%20Bryans%20Activity\\&hide_border=true\\&theme=chartreuse-dark)](https://github.com/bgoonz/github-readme-activity-graph)\n\n![Jokes](https://readme-jokes.vercel.app/api)\n\n![Python](https://img.shields.io/badge/-Python-05122A?style=flat\\&logo=python)![HTML](https://img.shields.io/badge/-HTML-05122A?style=flat\\&logo=HTML5)![CSS](https://img.shields.io/badge/-CSS-05122A?style=flat\\&logo=CSS3\\&logoColor=1572B6)![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat\\&logo=javascript)![React](https://img.shields.io/badge/-React-05122A?style=flat\\&logo=react)![Node.js](https://img.shields.io/badge/-Node.js-05122A?style=flat\\&logo=node.js)\n\n![VisualStudioCode](https://img.shields.io/badge/-Visual%20Studio%20Code-05122A?style=flat\\&logo=visual-studio-code\\&logoColor=007ACC)![Docker](https://img.shields.io/badge/-Docker-05122A?style=flat\\&logo=Docker)![MongoDB](https://img.shields.io/badge/-MongoDB-05122A?style=flat\\&logo=mongodb)![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-05122A?style=flat\\&logo=postgresql)\n\n![Git](https://img.shields.io/badge/-Git-05122A?style=flat\\&logo=git)![GitHub](https://img.shields.io/badge/-GitHub-05122A?style=flat\\&logo=github)![GitLab](https://img.shields.io/badge/-GitLab-05122A?style=flat\\&logo=gitlab)\n\n![Markdown](https://img.shields.io/badge/-Markdown-05122A?style=flat\\&logo=markdown)'
       actions:
           - label: Contact
             url: 'https://sidebar-blog.netlify.app/contact/'
@@ -18,7 +19,8 @@ sections:
       type: section_grid
       col_number: three
       grid_items:
-          - content: |
+          - content: >-
+|
                 Memoization, Tabulation, and Sorting Algorithms by Example
                 Why is looking at runtime not a reliable method of calculating time
                 complexity?
@@ -30,7 +32,8 @@ sections:
             image: images/bigo.jpg
             title_url: >-
                 https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522
-          - content: |
+          - content: >-
+|
                 *Python has a built in help function that let's you see a description
                 of the source code without having to navigate to it… "-SickNasty …
                 Autor Unknown"  .*
@@ -44,7 +47,8 @@ sections:
             title_url: >-
                 https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb
             image: images/py.jpg
-          - content: ''
+          - content: >-
+
             actions:
                 - label: Learn More
                   url: /docs/tools
@@ -52,7 +56,7 @@ sections:
             title: Guitar Effects Triggering w DTW
             title_url: 'https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering'
             image: images/My Post.png
-          - title_url: 'https://bryanguner.medium.com/introductory-react-part-2-cda01615a186'
+          - title_url: 'https://bgoonz-blog.netlify.app/docs/react/demo/'
             image_alt: img of dtw
             content: |
                 As I learn to build web applications in React I will blog about it in
@@ -78,7 +82,7 @@ sections:
             actions: []
             type: grid_item
             title: Web Audio Daw
-            image: images/7a8bc98e902a2f6dea90386cdfb154c2.png
+            image: images/mihir.png
     - title: Current Interests
       section_id: interests
       subtitle: From github repositories to existential questions.
@@ -93,7 +97,7 @@ sections:
                 ## &#xA;
             actions: []
             type: grid_item
-            image: images/spectacular-turmeric.png
+            image: images/algolia.png
           - title: Convolutional Neural Networks
             title_url: >-
                 https://dev.to/bgoonz/everything-you-need-to-become-a-machine-learner-1cjp
@@ -116,16 +120,13 @@ sections:
             title_url: jamstack
             image_alt: jamstack
             content: >
-                > Why Jamstack Jamstack is the new standard architecture for the...
-                \*\* > *web. Using Git workflows and modern build tools, pre-rendered
-                content > is served to a CDN and made dynamic through APIs and
-                serverless > functions. Technologies in the stack include JavaScript
-                frameworks, > Static Site Generators, Headless CMSs, and CDNs.*
+             Why Jamstack Jamstack is the new standard architecture for the... \*\* > *web. Using Git workflows and modern build tools, pre-rendered content > is served to a CDN and made dynamic through APIs and serverless > functions. Technologies in the stack include JavaScript frameworks, > Static Site Generators, Headless CMSs, and CDNs.*
+
             actions: []
             type: grid_item
             image: images/jamstack.png
           - title: Asynchronous JavaScript
-            image_alt: lorem-ipsum
+            image_alt: image of
             content: "The term\_**asynchronous**\_refers to\_two or more objects or events\_**not**\_existing or happening at the same time (or multiple related things happening without waiting for the previous one to complete).\_In computing, the word \"asynchronous\" is used in two major contexts.\n\n"
             actions:
                 - label: Learn About Blocking Code
@@ -207,7 +208,7 @@ sections:
                   url: /showcase
                   style: secondary
             image_alt: portfolio of websites
-            image: images/portfolio-91689538.jpg
+            image: images/portfolio.jpg
     - title: Blog-Archive-And-Mini-Projects
       section_id: Mini Projects
       image_alt: showcase
@@ -224,37 +225,16 @@ sections:
       image_alt: animated gif
       image_position: right
       content: >
-          # ***What I've been working on lately:*** ## Web Dev Utilitiy Tools
-          <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"
-          class="block-content" width="100% width="1200px!important"
-          height="1000px!important"
-            src="https://web-dev-utility-tools-bgoonz.netlify.app/"
-           frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-            encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"
-          class="block-content" width="100% width="1200px!important"
-          height="1000px!important"
-            src="https://cheatsheets-42.netlify.app/"
-           frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-            encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"
-          class="block-content" width="100% width="1200px!important"
-          height="1000px!important"
-            src="https://bgoonz.github.io/fb-and-twitter-api-embeds/"
-           frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-            encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" class="block-content" width="100% width="1200px!important" height="1000px!important" src="https://web-dev-utility-tools-bgoonz.netlify.app/"  allowfullscreen></iframe>
+        <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" class="block-content" width="100% width="1200px!important" height="1000px!important" src="https://cheatsheets-42.netlify.app/"  allowfullscreen></iframe>
+        <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" class="block-content" width="100% width="1200px!important" height="1000px!important" src="https://bgoonz.github.io/fb-and-twitter-api-embeds/"  allowfullscreen></iframe>
       actions: []
       type: section_content
     - section_id: tools
-      image_alt: lorem-ipsum
+      image_alt: image of
       image_position: left
       content: >
-          ### To⬆️ol Showcase <iframe sandbox="allow-scripts" style="resize:both;
-          overflow:scroll;"    class="block-content" width="100%
-          width="1200px!important" height="1000px!important"
-            src="https://bgoonz.github.io/fb-and-twitter-api-embeds/"
-           frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-            encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    class="block-content" width="100% width="1200px!important" height="1000px!important" src="https://bgoonz.github.io/fb-and-twitter-api-embeds/"  allowfullscreen></iframe>
       actions: []
       type: section_content
       title: Tools Showcase

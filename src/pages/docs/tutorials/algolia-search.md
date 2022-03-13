@@ -19,7 +19,7 @@ template: docs
 
 <summary> <h5><b>➡️_____Click Here For Dropdown_____➡️</b><u>((⬇️<i>Selecting A Searc Engine (Jamstack Site)</i>⬇️))</u></h5></summary>
 
-### Search in the Jamstack World 
+### Search in the Jamstack World
 
 > ## Excerpt
 >
@@ -31,15 +31,13 @@ Before the internet started being more complex with various web apps and progres
 
 Today, in contrast to the built-in search feature, developers have the option to pick and choose the solution that does the job best for their use case. For many, a website search is often the first dynamic part they'll be adding to their new Jamstack project.
 
-
-
 Get the **exclusive Jamstack** web dev case studies (and more) in your mailbox!
 
 ## jamstack-search/#site-search-solutions-available-in-jamstack)Site search solutions available in Jamstack
 
 While the search-as-a-service market might not be as developed as some other markets, that in no way means that the solutions available aren't up to par. It's quite the opposite; they are excellent: it just comes down to which one is the right pick for you.
 
-### >  programmable-search-engine-by-google)Programmable Search Engine by Google
+### > programmable-search-engine-by-google)Programmable Search Engine by Google
 
 ![Programmable Search Engine by Google](./../../../../static/images/programmable-search-engine.png 'Programmable Search Engine by Google')
 
@@ -51,7 +49,7 @@ Features, pros, and cons:
 -   The free plan allows a lot of customization, but it also shows ads.
 -   Supports JSON API for REST-based access, but this is a paid-only option.
 
-### >  algolia)Algolia
+### > algolia)Algolia
 
 ![Algolia](https://bejamas.io/static/159d30d346ce2aa0aea26090311d87e0/f101e/algolia.png 'Algolia')
 
@@ -69,7 +67,7 @@ Features, pros, and cons:
 
 Our website search uses Algolia, just look at the 🔎 icon. We use [gatsby-plugin-Algolia](https://github.com/algolia/gatsby-plugin-algolia) to index our content during the build. On the frontend, we use _algoliasearch/lite_ and _react-instantsearch-dom_ which is Algolia react components that can be easily used with Gatsby.
 
-### >  elastic)Elastic
+### > elastic)Elastic
 
 ![Elastic](https://bejamas.io/static/291a7e4ebb746994ba3227e5301bcfcb/f101e/elastic.png 'Elastic')
 
@@ -88,7 +86,7 @@ Features, pros, and cons:
 -   Steep learning curve.
 -   The level of support depends on the plan you have.
 
-### >  cloudsh)CloudSh
+### > cloudsh)CloudSh
 
 ![CloudSh](https://bejamas.io/static/b1bafd64c59ccb00467d4aebbf1b9221/f101e/cloudsh.png 'CloudSh')
 
@@ -102,7 +100,7 @@ Features, pros, and cons:
 -   Simple to use and integrate with pre-made integration solutions for different static site generators.
 -   Analytics and on-demand indexing for all plans.Priority support for all except the Personal (basic) plan.
 
-### >  meilisearch)MeiliSearch
+### > meilisearch)MeiliSearch
 
 ![MeiliSearch](https://bejamas.io/static/3bae2afe922474ea1f451e0b08938909/f101e/meilisearch.png 'MeiliSearch')
 
@@ -148,7 +146,7 @@ Features, pros, and cons:
 -   Very simple and free.
 -   Great for small websites.
 
-### >  typesense)Typesense
+### > typesense)Typesense
 
 ![Typesense](https://bejamas.io/static/cd7fc7c7b8707f96a516ae7fc599fd3a/f101e/typesense.png 'Typesense')
 
@@ -167,12 +165,6 @@ If you're building a simple, static website, try CloduSh, Typesense, or Js-Searc
 
 </details>
 
-
-
-
-
-
-
 <br>
 <br>
 <br>
@@ -181,6 +173,7 @@ If you're building a simple, static website, try CloduSh, Typesense, or Js-Searc
 <br>
 
 ---
+
 ---
 
 <center>
@@ -196,11 +189,9 @@ If you're building a simple, static website, try CloduSh, Typesense, or Js-Searc
 <br>
 <br>
 
-
-
 <center>
 
-###  🔍Search is a common site requirement.🔎
+### 🔍Search is a common site requirement.🔎
 
 </center>
 
@@ -295,9 +286,6 @@ From the console run `gatsby develop` and then navigate to the page, which is ty
 
 ###### We're done!
 
-
-
-
 <br>
 <br>
 <br>
@@ -306,10 +294,13 @@ From the console run `gatsby develop` and then navigate to the page, which is ty
 <br>
 
 ---
+
 ---
-<center>|---------------------------------------🔥🔥🔥🔥🔥🔥🔥--------------------------------------|</center>
+
+## <center>|---------------------------------------🔥🔥🔥🔥🔥🔥🔥--------------------------------------|</center>
+
 ---
----
+
 ---
 
 <br>
@@ -318,8 +309,6 @@ From the console run `gatsby develop` and then navigate to the page, which is ty
 <br>
 <br>
 <br>
-
-
 
 ### Customizing the Output
 

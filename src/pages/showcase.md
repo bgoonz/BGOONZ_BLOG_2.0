@@ -58,7 +58,7 @@ sections:
                   type: action
           - title: Learning Redux
             title_url: 'https://learning-redux42.netlify.app/'
-            image_alt: lorem-ipsum
+            image_alt: image of
             content: >
                 ***React Redux provides a pair of custom React hooks that allow your
                 React components to interact with the Redux store.***
@@ -74,7 +74,7 @@ sections:
             image: images/best-birch.gif
           - title: Mihir-Beg-Music.com
             title_url: 'https://panoramic-eggplant-452e4.netlify.app/'
-            image: images/7a8bc98e902a2f6dea90386cdfb154c2.png
+            image: images/mihir.png
             content: |
                 Artist Showcase & Podcasting Site
             actions:
@@ -99,10 +99,10 @@ sections:
                   no_follow: false
                   type: action
             type: grid_item
-            image: images/21ecc2f26e2641c8e9aae5479481bbe2 (5).png
+            image: images/blog-form.png
           - title: Potluck Planner
             title_url: 'https://potluck-landing.netlify.app/'
-            image_alt: lorem-ipsum
+            image_alt: image of
             content: >+
                 ## Potluck Planner
                 If you have ever tried to organize a potluck through text messages,
@@ -132,7 +132,7 @@ sections:
             image: images/energetic-sunflower.png
           - title: Web Audio Workstation
             title_url: lorem-ipsum
-            image_alt: lorem-ipsum
+            image_alt: image of
             content: |+
                 Made using jQuery and Vanilla JS
             actions:

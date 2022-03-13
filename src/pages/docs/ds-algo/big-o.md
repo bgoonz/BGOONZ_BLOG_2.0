@@ -1387,7 +1387,7 @@ function factorial(n) {
     return n * factorial(n - 1); //*  n! = n * (n-1) *  (n-2) * (n-3) * ... * 1
 }
 factorial(5); //*5 * 4 * 3 * 2 * 1 = 120 <----expected
-//console.log( "factorial(5): ", factorial( 5 ) ); //-    factorial(5):  120
+//console.log( "factorial(5): ", factorial( 5 ) ); //-  factorial(5):  120
 /*
 Fibonacci numbers are the numbers such that every number in the series after the first two is the sum of the two preceding ones.
 The series starts with 1, 1. Example −1, 1, 2, 3, 5, 8, 13, 21, 34, ….

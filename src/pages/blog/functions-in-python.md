@@ -2,7 +2,7 @@
 title: Functions in Python
 subtitle: Functions in Python
 date: '2021-10-14'
-thumb_image_alt: lorem-ipsum
+thumb_image_alt: image of
 excerpt: wubalubadubdub
 seo:
     title: 'Functions in Python'

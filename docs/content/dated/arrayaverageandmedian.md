@@ -1,4 +1,3 @@
-
 -   /en/array-average-and-median/
 
 The following examples will be based on the following array:

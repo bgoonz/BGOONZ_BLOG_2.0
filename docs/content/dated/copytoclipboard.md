@@ -1,7 +1,6 @@
 tip-writer-support: https://www.coinbase.com/loverajoel
 
--   /en/copy-to-clipboard/
-
+- /en/copy-to-clipboard/
 
 ---
 

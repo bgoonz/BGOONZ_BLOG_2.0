@@ -456,14 +456,14 @@ Using the JSON operators, combined with traditional PostgreSQL aggregate functio
 
 Output:
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*4lEv2DgUk33FeUgo" class="graf-image" /></figure>-   <span id="946c">Total revenue per visitor:</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*4lEv2DgUk33FeUgo" class="graf-image" /></figure>- <span id="946c">Total revenue per visitor:</span>
 
 `SELECT visitor_id, SUM(CAST(properties->>'amount' AS integer)) AS total FROM events WHERE CAST(properties->>'amount' AS integer) > 0 GROUP BY visitor_id;`
 
 Output:
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*HxOS3CgwXBJ6A2FP" class="graf-image" /></figure>-   <span id="9850">Average screen resolution</span>
--   <span id="132f">`SELECT AVG(CAST(browser->'resolution'->>'x' AS integer)) AS width, AVG(CAST(browser->'resolution'->>'y' AS integer)) AS height FROM events;`</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*HxOS3CgwXBJ6A2FP" class="graf-image" /></figure>- <span id="9850">Average screen resolution</span>
+- <span id="132f">`SELECT AVG(CAST(browser->'resolution'->>'x' AS integer)) AS width, AVG(CAST(browser->'resolution'->>'y' AS integer)) AS height FROM events;`</span>
 
 Output:
 

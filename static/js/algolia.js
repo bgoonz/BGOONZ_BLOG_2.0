@@ -6,7 +6,6 @@ var t;
             var e = {
                 948: (e, t, r) => {
                     'use strict';
-
                     function n(e, t) {
                         var r = Object.keys(e);
                         if (Object.getOwnPropertySymbols) {
@@ -15,7 +14,6 @@ var t;
                         }
                         return r;
                     }
-
                     function u(e, t, r) {
                         return (
                             t in e
@@ -29,7 +27,6 @@ var t;
                             e
                         );
                     }
-
                     function o(e, t, r) {
                         var o = t.initialState;
                         return {
@@ -64,11 +61,9 @@ var t;
                             }
                         };
                     }
-
                     function i(e) {
                         return e.reduce((e, t) => e.concat(t), []);
                     }
-
                     function a(e, t) {
                         var r = Object.keys(e);
                         if (Object.getOwnPropertySymbols) {
@@ -77,7 +72,6 @@ var t;
                         }
                         return r;
                     }
-
                     function c(e) {
                         for (var t = 1; t < arguments.length; t++) {
                             var r = null != arguments[t] ? arguments[t] : {};
@@ -93,7 +87,6 @@ var t;
                         }
                         return e;
                     }
-
                     function l(e, t, r) {
                         return (
                             t in e
@@ -107,7 +100,6 @@ var t;
                             e
                         );
                     }
-
                     function s(e) {
                         return 0 === e.collections.length ? 0 : e.collections.reduce((e, t) => e + t.items.length, 0);
                     }
@@ -118,12 +110,10 @@ var t;
                             getAlgoliaResults: () => Lr
                         });
                     var p = 0;
-
                     function f() {
                         return 'autocomplete-'.concat(p++);
                     }
                     var d = () => {};
-
                     function m(e, t) {
                         var r = Object.keys(e);
                         if (Object.getOwnPropertySymbols) {
@@ -132,7 +122,6 @@ var t;
                         }
                         return r;
                     }
-
                     function v(e, t, r) {
                         return (
                             t in e
@@ -146,7 +135,6 @@ var t;
                             e
                         );
                     }
-
                     function h(e, t) {
                         var r = [];
                         return Promise.resolve(e(t)).then(
@@ -192,7 +180,6 @@ var t;
                             )
                         );
                     }
-
                     function D(e) {
                         return (
                             ((e) => {
@@ -222,13 +209,11 @@ var t;
                             })()
                         );
                     }
-
                     function y(e, t) {
                         (null == t || t > e.length) && (t = e.length);
                         for (var r = 0, n = new Array(t); r < t; r++) n[r] = e[r];
                         return n;
                     }
-
                     function g(e, t) {
                         var r = Object.keys(e);
                         if (Object.getOwnPropertySymbols) {
@@ -237,7 +222,6 @@ var t;
                         }
                         return r;
                     }
-
                     function b(e) {
                         for (var t = 1; t < arguments.length; t++) {
                             var r = null != arguments[t] ? arguments[t] : {};
@@ -253,7 +237,6 @@ var t;
                         }
                         return e;
                     }
-
                     function _(e, t, r) {
                         return (
                             t in e
@@ -267,7 +250,6 @@ var t;
                             e
                         );
                     }
-
                     function O(e, t) {
                         var r = Object.keys(e);
                         if (Object.getOwnPropertySymbols) {
@@ -276,7 +258,6 @@ var t;
                         }
                         return r;
                     }
-
                     function A(e) {
                         for (var t = 1; t < arguments.length; t++) {
                             var r = null != arguments[t] ? arguments[t] : {};
@@ -292,7 +273,6 @@ var t;
                         }
                         return e;
                     }
-
                     function E(e, t, r) {
                         return (
                             t in e
@@ -306,7 +286,6 @@ var t;
                             e
                         );
                     }
-
                     function C(e, t) {
                         var r = Object.keys(e);
                         if (Object.getOwnPropertySymbols) {
@@ -315,7 +294,6 @@ var t;
                         }
                         return r;
                     }
-
                     function F(e) {
                         for (var t = 1; t < arguments.length; t++) {
                             var r = null != arguments[t] ? arguments[t] : {};
@@ -331,7 +309,6 @@ var t;
                         }
                         return e;
                     }
-
                     function P(e, t, r) {
                         return (
                             t in e
@@ -345,7 +322,6 @@ var t;
                             e
                         );
                     }
-
                     function j(e) {
                         return (
                             ((e) => {
@@ -375,13 +351,11 @@ var t;
                             })()
                         );
                     }
-
                     function w(e, t) {
                         (null == t || t > e.length) && (t = e.length);
                         for (var r = 0, n = new Array(t); r < t; r++) n[r] = e[r];
                         return n;
                     }
-
                     function S(e, t) {
                         var r = Object.keys(e);
                         if (Object.getOwnPropertySymbols) {
@@ -390,7 +364,6 @@ var t;
                         }
                         return r;
                     }
-
                     function B(e) {
                         for (var t = 1; t < arguments.length; t++) {
                             var r = null != arguments[t] ? arguments[t] : {};
@@ -406,7 +379,6 @@ var t;
                         }
                         return e;
                     }
-
                     function I(e, t, r) {
                         return (
                             t in e
@@ -420,11 +392,9 @@ var t;
                             e
                         );
                     }
-
                     function k(e) {
                         return Boolean(e.execute);
                     }
-
                     function x(e, t) {
                         return (
                             (r = e),
@@ -447,7 +417,6 @@ var t;
                         );
                         var r;
                     }
-
                     function N(e) {
                         var t = e
                             .reduce((e, t) => {
@@ -481,7 +450,6 @@ var t;
                             });
                         return Promise.all(t).then((e) => i(e));
                     }
-
                     function T(e, t) {
                         return t.map((t) => {
                             var r = e.filter((e) => e.sourceId === t.sourceId),
@@ -523,7 +491,6 @@ var t;
                                                               : t.map((e) => ({
                                                                     label: e.value,
                                                                     count: e.count,
-
                                                                     _highlightResult: {
                                                                         label: {
                                                                             value: e.highlighted
@@ -552,7 +519,6 @@ var t;
                             );
                         });
                     }
-
                     function q(e) {
                         var t = ((e) => {
                             var t = e.collections
@@ -597,7 +563,6 @@ var t;
                         };
                     }
                     var R = ['event', 'nextState', 'props', 'query', 'refresh', 'store'];
-
                     function L(e, t) {
                         var r = Object.keys(e);
                         if (Object.getOwnPropertySymbols) {
@@ -606,7 +571,6 @@ var t;
                         }
                         return r;
                     }
-
                     function M(e) {
                         for (var t = 1; t < arguments.length; t++) {
                             var r = null != arguments[t] ? arguments[t] : {};
@@ -622,7 +586,6 @@ var t;
                         }
                         return e;
                     }
-
                     function U(e, t, r) {
                         return (
                             t in e
@@ -636,7 +599,6 @@ var t;
                             e
                         );
                     }
-
                     function H(e, t) {
                         if (null == e) return {};
                         var r,
@@ -668,7 +630,6 @@ var t;
                                 var t = ++W;
                                 return Promise.resolve(e).then((e) => (J && t < V ? J : ((V = t), (J = e), e)));
                             });
-
                     function z(e) {
                         var t = e.event,
                             r = e.nextState,
@@ -825,7 +786,6 @@ var t;
                         );
                     }
                     var K = ['event', 'props', 'refresh', 'store'];
-
                     function G(e, t) {
                         var r = Object.keys(e);
                         if (Object.getOwnPropertySymbols) {
@@ -834,7 +794,6 @@ var t;
                         }
                         return r;
                     }
-
                     function X(e) {
                         for (var t = 1; t < arguments.length; t++) {
                             var r = null != arguments[t] ? arguments[t] : {};
@@ -850,7 +809,6 @@ var t;
                         }
                         return e;
                     }
-
                     function Y(e, t, r) {
                         return (
                             t in e
@@ -864,7 +822,6 @@ var t;
                             e
                         );
                     }
-
                     function Z(e, t) {
                         if (null == e) return {};
                         var r,
@@ -889,7 +846,6 @@ var t;
                         re = ['inputElement'],
                         ne = ['inputElement', 'maxLength'],
                         ue = ['item', 'source'];
-
                     function oe(e, t) {
                         var r = Object.keys(e);
                         if (Object.getOwnPropertySymbols) {
@@ -898,7 +854,6 @@ var t;
                         }
                         return r;
                     }
-
                     function ie(e) {
                         for (var t = 1; t < arguments.length; t++) {
                             var r = null != arguments[t] ? arguments[t] : {};
@@ -914,7 +869,6 @@ var t;
                         }
                         return e;
                     }
-
                     function ae(e, t, r) {
                         return (
                             t in e
@@ -928,7 +882,6 @@ var t;
                             e
                         );
                     }
-
                     function ce(e, t) {
                         if (null == e) return {};
                         var r,
@@ -948,7 +901,6 @@ var t;
                         }
                         return u;
                     }
-
                     function le(e) {
                         var t = e.props,
                             r = e.refresh,
@@ -1407,7 +1359,6 @@ var t;
                                 version: se
                             }
                         ];
-
                     function fe(e, t) {
                         var r = Object.keys(e);
                         if (Object.getOwnPropertySymbols) {
@@ -1416,7 +1367,6 @@ var t;
                         }
                         return r;
                     }
-
                     function de(e) {
                         for (var t = 1; t < arguments.length; t++) {
                             var r = null != arguments[t] ? arguments[t] : {};
@@ -1432,7 +1382,6 @@ var t;
                         }
                         return e;
                     }
-
                     function me(e, t, r) {
                         return (
                             t in e
@@ -1446,7 +1395,6 @@ var t;
                             e
                         );
                     }
-
                     function ve(e) {
                         var t,
                             r,
@@ -1473,20 +1421,17 @@ var t;
                             ua: pe.concat((null === (u = i.__autocomplete_metadata) || void 0 === u ? void 0 : u.userAgents) || [])
                         };
                     }
-
                     function he(e) {
                         var t,
                             r = e.state;
                         return !1 === r.isOpen || null === r.activeItemId ? null : (null === (t = q(r)) || void 0 === t ? void 0 : t.itemInputValue) || null;
                     }
-
                     function De(e, t, r, n) {
                         if (!r) return null;
                         if (e < 0 && (null === t || (null !== n && 0 === t))) return r + e;
                         var u = (null === t ? -1 : t) + e;
                         return u <= -1 || u >= r ? (null === n ? null : 0) : u;
                     }
-
                     function ye(e, t) {
                         var r = Object.keys(e);
                         if (Object.getOwnPropertySymbols) {
@@ -1495,7 +1440,6 @@ var t;
                         }
                         return r;
                     }
-
                     function ge(e) {
                         for (var t = 1; t < arguments.length; t++) {
                             var r = null != arguments[t] ? arguments[t] : {};
@@ -1511,7 +1455,6 @@ var t;
                         }
                         return e;
                     }
-
                     function be(e, t, r) {
                         return (
                             t in e
@@ -1697,7 +1640,6 @@ var t;
                                 return 'The reducer action '.concat(JSON.stringify(t.type), ' is not supported.'), e;
                         }
                     };
-
                     function Oe(e, t) {
                         var r = Object.keys(e);
                         if (Object.getOwnPropertySymbols) {
@@ -1706,7 +1648,6 @@ var t;
                         }
                         return r;
                     }
-
                     function Ae(e) {
                         for (var t = 1; t < arguments.length; t++) {
                             var r = null != arguments[t] ? arguments[t] : {};
@@ -1722,7 +1663,6 @@ var t;
                         }
                         return e;
                     }
-
                     function Ee(e, t, r) {
                         return (
                             t in e
@@ -1736,7 +1676,6 @@ var t;
                             e
                         );
                     }
-
                     function Ce(e) {
                         var t = [],
                             r = ((e, t) => {
@@ -1923,7 +1862,6 @@ var t;
                                     u
                                 )
                             );
-
                         function l() {
                             return z(
                                 Ae(
@@ -1997,13 +1935,11 @@ var t;
                             )
                         );
                     }
-
                     function Fe(e) {
                         return {
                             current: e
                         };
                     }
-
                     function Pe(e, t) {
                         var r = void 0;
                         return function (...args) {
@@ -2059,15 +1995,12 @@ var t;
                                 t
                             );
                         };
-
                     function Be(e, t, r) {
                         e[t] = null === r ? '' : 'number' != typeof r ? r : r + 'px';
                     }
-
                     function Ie(e) {
                         this._listeners[e.type](e);
                     }
-
                     function ke(e, t, r) {
                         var n,
                             u,
@@ -2090,7 +2023,6 @@ var t;
                                   'dangerouslySetInnerHTML' !== t &&
                                   (null == r || (!1 === r && !/^ar/.test(t)) ? e.removeAttribute(t) : e.setAttribute(t, r));
                     }
-
                     function xe(e) {
                         switch (e) {
                             case 'onChange':
@@ -2099,16 +2031,13 @@ var t;
                                 return e;
                         }
                     }
-
                     function Ne(e, t) {
                         for (var r in t) ke(e, xe(r), t[r]);
                     }
-
                     function Te(e, t) {
                         for (var r in t) ('o' === r[0] && 'n' === r[1]) || ke(e, xe(r), t[r]);
                     }
                     var qe = ['children'];
-
                     function Re(e) {
                         return (
                             ((e) => {
@@ -2138,13 +2067,11 @@ var t;
                             })()
                         );
                     }
-
                     function Le(e, t) {
                         (null == t || t > e.length) && (t = e.length);
                         for (var r = 0, n = new Array(t); r < t; r++) n[r] = e[r];
                         return n;
                     }
-
                     function Me(e, t) {
                         if (null == e) return {};
                         var r,
@@ -2164,7 +2091,6 @@ var t;
                         }
                         return u;
                     }
-
                     function Ue(e) {
                         return (t, r) => {
                             var n = r.children,
@@ -2175,7 +2101,6 @@ var t;
                         };
                     }
                     var He = ['autocompleteScopeApi', 'environment', 'classNames', 'getInputProps', 'getInputPropsCore', 'onDetachedEscape', 'state'];
-
                     function We(e, t) {
                         var r = Object.keys(e);
                         if (Object.getOwnPropertySymbols) {
@@ -2184,7 +2109,6 @@ var t;
                         }
                         return r;
                     }
-
                     function Ve(e) {
                         for (var t = 1; t < arguments.length; t++) {
                             var r = null != arguments[t] ? arguments[t] : {};
@@ -2200,7 +2124,6 @@ var t;
                         }
                         return e;
                     }
-
                     function Je(e, t, r) {
                         return (
                             t in e
@@ -2214,7 +2137,6 @@ var t;
                             e
                         );
                     }
-
                     function Qe(e, t) {
                         if (null == e) return {};
                         var r,
@@ -2234,7 +2156,6 @@ var t;
                         }
                         return u;
                     }
-
                     function $e(e, t) {
                         var r = Object.keys(e);
                         if (Object.getOwnPropertySymbols) {
@@ -2243,7 +2164,6 @@ var t;
                         }
                         return r;
                     }
-
                     function ze(e) {
                         for (var t = 1; t < arguments.length; t++) {
                             var r = null != arguments[t] ? arguments[t] : {};
@@ -2259,7 +2179,6 @@ var t;
                         }
                         return e;
                     }
-
                     function Ke(e, t, r) {
                         return (
                             t in e
@@ -2273,7 +2192,6 @@ var t;
                             e
                         );
                     }
-
                     function Ge(e) {
                         var t = e.autocomplete,
                             r = e.autocompleteScopeApi,
@@ -2520,17 +2438,14 @@ var t;
                         tt = {},
                         rt = [],
                         nt = /acit|ex(?:s|g|n|p|$)|rph|grid|ows|mnc|ntw|ine[ch]|zoo|^ord|itera/i;
-
                     function ut(e, t) {
                         for (var r in t) e[r] = t[r];
                         return e;
                     }
-
                     function ot(e) {
                         var t = e.parentNode;
                         t && t.removeChild(e);
                     }
-
                     function it(e, t, r) {
                         var n,
                             u,
@@ -2543,7 +2458,6 @@ var t;
                             for (o in e.defaultProps) void 0 === a[o] && (a[o] = e.defaultProps[o]);
                         return at(e, a, n, u, null);
                     }
-
                     function at(e, t, r, n, u) {
                         var o = {
                             type: e,
@@ -2562,21 +2476,17 @@ var t;
                         };
                         return null != Xe.vnode && Xe.vnode(o), o;
                     }
-
                     function ct(e) {
                         return e.children;
                     }
-
                     function lt(e, t) {
                         (this.props = e), (this.context = t);
                     }
-
                     function st(e, t) {
                         if (null == t) return e.__ ? st(e.__, e.__.__k.indexOf(e) + 1) : null;
                         for (var r; t < e.__k.length; t++) if (null != (r = e.__k[t]) && null != r.__e) return r.__e;
                         return 'function' == typeof e.type ? st(e) : null;
                     }
-
                     function pt(e) {
                         var t, r;
                         if (null != (e = e.__) && null != e.__c) {
@@ -2588,11 +2498,9 @@ var t;
                             return pt(e);
                         }
                     }
-
                     function ft(e) {
                         ((!e.__d && (e.__d = !0) && Ye.push(e) && !dt.__r++) || et !== Xe.debounceRendering) && ((et = Xe.debounceRendering) || Ze)(dt);
                     }
-
                     function dt() {
                         for (var e; (dt.__r = Ye.length); )
                             (e = Ye.sort((e, t) => e.__v.__b - t.__v.__b)),
@@ -2609,7 +2517,6 @@ var t;
                                             u.__e != o && pt(u)));
                                 });
                     }
-
                     function mt(e, t, r, n, u, o, i, a, c, l) {
                         var s,
                             p,
@@ -2666,14 +2573,12 @@ var t;
                             null != D[s] && ('function' == typeof r.type && null != D[s].__e && D[s].__e == r.__d && (r.__d = st(n, s + 1)), Ct(D[s], D[s]));
                         if (h) for (s = 0; s < h.length; s++) Et(h[s], h[++s], h[++s]);
                     }
-
                     function vt(e, t, r) {
                         var n, u;
                         for (n = 0; n < e.__k.length; n++)
                             (u = e.__k[n]) && ((u.__ = e), (t = 'function' == typeof u.type ? vt(u, t, r) : ht(r, u, u, e.__k, u.__e, t)));
                         return t;
                     }
-
                     function ht(e, t, r, n, u, o) {
                         var i, a, c;
                         if (void 0 !== t.__d) (i = t.__d), (t.__d = void 0);
@@ -2685,11 +2590,9 @@ var t;
                             }
                         return void 0 !== i ? i : u.nextSibling;
                     }
-
                     function Dt(e, t, r) {
                         '-' === t[0] ? e.setProperty(t, r) : (e[t] = null == r ? '' : 'number' != typeof r || nt.test(t) ? r : r + 'px');
                     }
-
                     function yt(e, t, r, n, u) {
                         var o;
                         e: if ('style' === t)
@@ -2714,15 +2617,12 @@ var t;
                             'function' == typeof r || (null != r && (!1 !== r || ('a' === t[0] && 'r' === t[1])) ? e.setAttribute(t, r) : e.removeAttribute(t));
                         }
                     }
-
                     function gt(e) {
                         this.l[e.type + !1](Xe.event ? Xe.event(e) : e);
                     }
-
                     function bt(e) {
                         this.l[e.type + !0](Xe.event ? Xe.event(e) : e);
                     }
-
                     function _t(e, t, r, n, u, o, i, a, c) {
                         var l,
                             s,
@@ -2815,7 +2715,6 @@ var t;
                             (t.__v = null), (c || null != o) && ((t.__e = a), (t.__h = !!c), (o[o.indexOf(a)] = null)), Xe.__e(e, t, r);
                         }
                     }
-
                     function Ot(e, t) {
                         Xe.__c && Xe.__c(t, e),
                             e.some((t) => {
@@ -2830,7 +2729,6 @@ var t;
                                 }
                             });
                     }
-
                     function At(e, t, r, n, u, o, i, a) {
                         var c,
                             l,
@@ -2886,7 +2784,6 @@ var t;
                         }
                         return e;
                     }
-
                     function Et(e, t, r) {
                         try {
                             'function' == typeof e ? e(t) : (e.current = t);
@@ -2894,7 +2791,6 @@ var t;
                             Xe.__e(e, r);
                         }
                     }
-
                     function Ct(e, t, r) {
                         var n, u, o;
                         if (
@@ -2915,11 +2811,9 @@ var t;
                         if ((n = e.__k)) for (o = 0; o < n.length; o++) n[o] && Ct(n[o], t, r);
                         null != u && ot(u);
                     }
-
                     function Ft(e, t, r) {
                         return this.constructor(e, r);
                     }
-
                     function Pt(e, t, r) {
                         var n, u, o;
                         Xe.__ && Xe.__(e, t),
@@ -2938,7 +2832,6 @@ var t;
                             ),
                             Ot(o, e);
                     }
-
                     function jt(e, t) {
                         return t.reduce((e, t) => e && e[t], e);
                     }
@@ -2978,7 +2871,6 @@ var t;
                         (dt.__r = 0);
                     var wt = '__aa-highlight__',
                         St = '__/aa-highlight__';
-
                     function Bt(e) {
                         var t = e.highlightedValue.split(wt),
                             r = t.shift(),
@@ -3024,7 +2916,6 @@ var t;
                             n.get()
                         );
                     }
-
                     function It(e) {
                         return (
                             ((e) => {
@@ -3054,13 +2945,11 @@ var t;
                             })()
                         );
                     }
-
                     function kt(e, t) {
                         (null == t || t > e.length) && (t = e.length);
                         for (var r = 0, n = new Array(t); r < t; r++) n[r] = e[r];
                         return n;
                     }
-
                     function xt(e) {
                         var t = e.hit,
                             r = e.attribute,
@@ -3083,7 +2972,6 @@ var t;
                         Tt = new RegExp(/\w/i),
                         qt = /&(amp|quot|lt|gt|#39);/g,
                         Rt = RegExp(qt.source);
-
                     function Lt(e, t) {
                         var r,
                             n,
@@ -3093,7 +2981,6 @@ var t;
                             a = (null === (n = e[t - 1]) || void 0 === n ? void 0 : n.isHighlighted) || !0;
                         return Tt.test((u = o.value) && Rt.test(u) ? u.replace(qt, (e) => Nt[e]) : u) || a !== i ? o.isHighlighted : a;
                     }
-
                     function Mt(e, t) {
                         var r = Object.keys(e);
                         if (Object.getOwnPropertySymbols) {
@@ -3102,7 +2989,6 @@ var t;
                         }
                         return r;
                     }
-
                     function Ut(e) {
                         for (var t = 1; t < arguments.length; t++) {
                             var r = null != arguments[t] ? arguments[t] : {};
@@ -3118,7 +3004,6 @@ var t;
                         }
                         return e;
                     }
-
                     function Ht(e, t, r) {
                         return (
                             t in e
@@ -3132,7 +3017,6 @@ var t;
                             e
                         );
                     }
-
                     function Wt(e) {
                         return e.some((e) => e.isHighlighted)
                             ? e.map((t, r) =>
@@ -3154,7 +3038,6 @@ var t;
                                   )
                               );
                     }
-
                     function Vt(e) {
                         var t = e.createElement,
                             r = e.Fragment;
@@ -3185,7 +3068,6 @@ var t;
                             );
                         };
                     }
-
                     function Jt(e) {
                         return (
                             ((e) => {
@@ -3215,13 +3097,11 @@ var t;
                             })()
                         );
                     }
-
                     function Qt(e, t) {
                         (null == t || t > e.length) && (t = e.length);
                         for (var r = 0, n = new Array(t); r < t; r++) n[r] = e[r];
                         return n;
                     }
-
                     function $t(e) {
                         var t = e.hit,
                             r = e.attribute,
@@ -3234,7 +3114,6 @@ var t;
                             })
                         );
                     }
-
                     function zt(e) {
                         var t = e.createElement,
                             r = e.Fragment;
@@ -3265,7 +3144,6 @@ var t;
                             );
                         };
                     }
-
                     function Kt(e) {
                         var t = e.createElement,
                             r = e.Fragment;
@@ -3294,7 +3172,6 @@ var t;
                             );
                         };
                     }
-
                     function Gt(e, t) {
                         if ('string' == typeof t) {
                             var r = e.document.querySelector(t);
@@ -3302,7 +3179,6 @@ var t;
                         }
                         return t;
                     }
-
                     function Xt(...args) {
                         for (var e = args.length, t = new Array(e), r = 0; r < e; r++) t[r] = args[r];
                         return t.reduce(
@@ -3337,7 +3213,6 @@ var t;
                         'components',
                         'translations'
                     ];
-
                     function Zt(e, t) {
                         var r = Object.keys(e);
                         if (Object.getOwnPropertySymbols) {
@@ -3346,7 +3221,6 @@ var t;
                         }
                         return r;
                     }
-
                     function er(e) {
                         for (var t = 1; t < arguments.length; t++) {
                             var r = null != arguments[t] ? arguments[t] : {};
@@ -3362,7 +3236,6 @@ var t;
                         }
                         return e;
                     }
-
                     function tr(e, t, r) {
                         return (
                             t in e
@@ -3376,7 +3249,6 @@ var t;
                             e
                         );
                     }
-
                     function rr(e, t) {
                         if (null == e) return {};
                         var r,
@@ -3430,7 +3302,6 @@ var t;
                             createElement: it,
                             Fragment: ct
                         };
-
                     function ir(e) {
                         var t = e.panelPlacement,
                             r = e.container,
@@ -3470,7 +3341,6 @@ var t;
                                 throw new Error('[Autocomplete] The `panelPlacement` value '.concat(JSON.stringify(t), ' is not valid.'));
                         }
                     }
-
                     function ar(...args) {
                         return (ar =
                             Object.assign ||
@@ -3482,7 +3352,6 @@ var t;
                                 return e;
                             }).apply(this, args);
                     }
-
                     function cr(e, t) {
                         var r = Object.keys(e);
                         if (Object.getOwnPropertySymbols) {
@@ -3491,7 +3360,6 @@ var t;
                         }
                         return r;
                     }
-
                     function lr(e) {
                         for (var t = 1; t < arguments.length; t++) {
                             var r = null != arguments[t] ? arguments[t] : {};
@@ -3507,7 +3375,6 @@ var t;
                         }
                         return e;
                     }
-
                     function sr(e, t, r) {
                         return (
                             t in e
@@ -3527,7 +3394,6 @@ var t;
                             version: se
                         }
                     ];
-
                     function fr(e) {
                         return (
                             ((e) => {
@@ -3557,13 +3423,11 @@ var t;
                             })()
                         );
                     }
-
                     function dr(e, t) {
                         (null == t || t > e.length) && (t = e.length);
                         for (var r = 0, n = new Array(t); r < t; r++) n[r] = e[r];
                         return n;
                     }
-
                     function mr(e) {
                         return (mr =
                             'function' == typeof Symbol && 'symbol' == typeof Symbol.iterator
@@ -3571,7 +3435,6 @@ var t;
                                 : (e) => (e && 'function' == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? 'symbol' : typeof e))(e);
                     }
                     var vr = (e) => e && 'object' === mr(e) && '[object Object]' === Object.prototype.toString.call(e);
-
                     function hr(...args) {
                         for (var e = args.length, t = new Array(e), r = 0; r < e; r++) t[r] = args[r];
                         return t.reduce(
@@ -3586,7 +3449,6 @@ var t;
                             {}
                         );
                     }
-
                     function Dr(e, t) {
                         var r = Object.keys(e);
                         if (Object.getOwnPropertySymbols) {
@@ -3595,7 +3457,6 @@ var t;
                         }
                         return r;
                     }
-
                     function yr(e) {
                         for (var t = 1; t < arguments.length; t++) {
                             var r = null != arguments[t] ? arguments[t] : {};
@@ -3611,7 +3472,6 @@ var t;
                         }
                         return e;
                     }
-
                     function gr(e, t, r) {
                         return (
                             t in e
@@ -3625,13 +3485,11 @@ var t;
                             e
                         );
                     }
-
                     function br(e) {
                         var t,
                             r = (() => {
                                 var e = [],
                                     t = [];
-
                                 function r(r) {
                                     e.push(r);
                                     var n = r();
@@ -3871,7 +3729,6 @@ var t;
                                     translations: m.value.renderer.translations
                                 })
                             );
-
                         function _() {
                             Ne(b.value.panel, {
                                 style: v.value
@@ -3884,7 +3741,6 @@ var t;
                                       })
                             });
                         }
-
                         function O(e) {
                             D.current = e;
                             var t = {
@@ -4101,7 +3957,6 @@ var t;
                                     } else c.contains(i.panel) && c.removeChild(i.panel);
                                 })(r, t);
                         }
-
                         function A(...args) {
                             var e = args.length > 0 && void 0 !== args[0] ? args[0] : {};
                             u(),
@@ -4119,7 +3974,6 @@ var t;
                                     O(D.current);
                                 });
                         }
-
                         function E(e) {
                             requestAnimationFrame(() => {
                                 var t = m.value.core.environment.document.body.contains(b.value.detachedOverlay);
@@ -4209,11 +4063,9 @@ var t;
                             }),
                             n(() => {
                                 if (!v.value) return () => {};
-
                                 function e(e) {
                                     b.value.detachedContainer.classList.toggle('aa-DetachedContainer--modal', e);
                                 }
-
                                 function t(t) {
                                     e(t.matches);
                                 }
@@ -4242,7 +4094,6 @@ var t;
                             )
                         );
                     }
-
                     function _r(e, t) {
                         var r = Object.keys(e);
                         if (Object.getOwnPropertySymbols) {
@@ -4251,7 +4102,6 @@ var t;
                         }
                         return r;
                     }
-
                     function Or(e) {
                         for (var t = 1; t < arguments.length; t++) {
                             var r = null != arguments[t] ? arguments[t] : {};
@@ -4267,7 +4117,6 @@ var t;
                         }
                         return e;
                     }
-
                     function Ar(e, t, r) {
                         return (
                             t in e
@@ -4282,7 +4131,6 @@ var t;
                         );
                     }
                     var Er = ['params'];
-
                     function Cr(e, t) {
                         var r = Object.keys(e);
                         if (Object.getOwnPropertySymbols) {
@@ -4291,7 +4139,6 @@ var t;
                         }
                         return r;
                     }
-
                     function Fr(e) {
                         for (var t = 1; t < arguments.length; t++) {
                             var r = null != arguments[t] ? arguments[t] : {};
@@ -4307,7 +4154,6 @@ var t;
                         }
                         return e;
                     }
-
                     function Pr(e, t, r) {
                         return (
                             t in e
@@ -4321,7 +4167,6 @@ var t;
                             e
                         );
                     }
-
                     function jr(e, t) {
                         if (null == e) return {};
                         var r,
@@ -4341,7 +4186,6 @@ var t;
                         }
                         return u;
                     }
-
                     function wr(e) {
                         return (
                             ((e) => {
@@ -4371,13 +4215,11 @@ var t;
                             })()
                         );
                     }
-
                     function Sr(e, t) {
                         (null == t || t > e.length) && (t = e.length);
                         for (var r = 0, n = new Array(t); r < t; r++) n[r] = e[r];
                         return n;
                     }
-
                     function Br(e, t) {
                         var r = Object.keys(e);
                         if (Object.getOwnPropertySymbols) {
@@ -4386,7 +4228,6 @@ var t;
                         }
                         return r;
                     }
-
                     function Ir(e) {
                         for (var t = 1; t < arguments.length; t++) {
                             var r = null != arguments[t] ? arguments[t] : {};
@@ -4402,7 +4243,6 @@ var t;
                         }
                         return e;
                     }
-
                     function kr(e, t, r) {
                         return (
                             t in e
@@ -4487,7 +4327,6 @@ var t;
                             )
                         )
                     );
-
                     function Nr(e, t) {
                         var r = Object.keys(e);
                         if (Object.getOwnPropertySymbols) {
@@ -4496,7 +4335,6 @@ var t;
                         }
                         return r;
                     }
-
                     function Tr(e) {
                         for (var t = 1; t < arguments.length; t++) {
                             var r = null != arguments[t] ? arguments[t] : {};
@@ -4512,7 +4350,6 @@ var t;
                         }
                         return e;
                     }
-
                     function qr(e, t, r) {
                         return (
                             t in e
@@ -4526,7 +4363,6 @@ var t;
                             e
                         );
                     }
-
                     function Rr(e) {
                         var t = xr({
                                 transformResponse(e) {
@@ -4562,7 +4398,6 @@ var t;
                     /*! algoliasearch-lite.umd.js | 4.11.0 | © Algolia, inc. | https://github.com/algolia/algoliasearch-client-javascript */
                     e.exports = (() => {
                         'use strict';
-
                         function e(e, t, r) {
                             return (
                                 t in e
@@ -4576,7 +4411,6 @@ var t;
                                 e
                             );
                         }
-
                         function t(e, t) {
                             var r = Object.keys(e);
                             if (Object.getOwnPropertySymbols) {
@@ -4585,7 +4419,6 @@ var t;
                             }
                             return r;
                         }
-
                         function r(r) {
                             for (var n = 1; n < arguments.length; n++) {
                                 var u = null != arguments[n] ? arguments[n] : {};
@@ -4601,7 +4434,6 @@ var t;
                             }
                             return r;
                         }
-
                         function n(e, t) {
                             if (null == e) return {};
                             var r,
@@ -4622,7 +4454,6 @@ var t;
                             }
                             return u;
                         }
-
                         function u(e, t) {
                             return (
                                 ((e) => {
@@ -4657,7 +4488,6 @@ var t;
                                 })()
                             );
                         }
-
                         function o(e) {
                             return (
                                 ((e) => {
@@ -4674,7 +4504,6 @@ var t;
                                 })()
                             );
                         }
-
                         function i(e) {
                             var t,
                                 r = 'algoliasearch-client-js-'.concat(e.key),
@@ -4723,7 +4552,6 @@ var t;
                                 }
                             };
                         }
-
                         function a(e) {
                             var t = o(e.caches),
                                 r = t.shift();
@@ -4791,7 +4619,6 @@ var t;
                                       }
                                   };
                         }
-
                         function c(...args) {
                             var e =
                                     args.length > 0 && void 0 !== args[0]
@@ -4827,7 +4654,6 @@ var t;
                                 }
                             };
                         }
-
                         function l(e) {
                             for (var t = e.length - 1; t > 0; t--) {
                                 var r = Math.floor(Math.random() * (t + 1)),
@@ -4836,7 +4662,6 @@ var t;
                             }
                             return e;
                         }
-
                         function s(e, t) {
                             return t
                                 ? (Object.keys(t).forEach((r) => {
@@ -4845,7 +4670,6 @@ var t;
                                   e)
                                 : e;
                         }
-
                         function p(e) {
                             for (var t = arguments.length, r = new Array(t > 1 ? t - 1 : 0), n = 1; n < t; n++) r[n - 1] = arguments[n];
                             var u = 0;
@@ -4855,7 +4679,6 @@ var t;
                             WithinQueryParameters: 0,
                             WithinHeaders: 1
                         };
-
                         function d(e, t) {
                             var r = e || {},
                                 n = r.data || {};
@@ -4880,7 +4703,6 @@ var t;
                             v = 1,
                             h = 2,
                             D = 3;
-
                         function y(e) {
                             var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : v;
                             return r(
@@ -4892,7 +4714,6 @@ var t;
                                 }
                             );
                         }
-
                         function g(e) {
                             return 'string' == typeof e
                                 ? {
@@ -4908,7 +4729,6 @@ var t;
                         }
                         var b = 'GET',
                             _ = 'POST';
-
                         function O(e, t) {
                             return Promise.all(t.map((t) => e.get(t, () => Promise.resolve(y(t))))).then((e) => {
                                 var r = e.filter((e) => ((e) => e.status === v || Date.now() - e.lastUpdate > 12e4)(e)),
@@ -4922,7 +4742,6 @@ var t;
                                 };
                             });
                         }
-
                         function A(e, t, n, u) {
                             var i = [],
                                 a = ((e, t) => {
@@ -5049,7 +4868,6 @@ var t;
                                 };
                             return O(e.hostsCache, t).then((e) => d(o(e.statelessHosts).reverse(), e.getTimeout));
                         }
-
                         function E(e) {
                             var t = {
                                 value: 'Algolia for JavaScript ('.concat(e, ')'),
@@ -5060,7 +4878,6 @@ var t;
                             };
                             return t;
                         }
-
                         function C(e, t, r) {
                             var n = F(r),
                                 u = ''
@@ -5069,7 +4886,6 @@ var t;
                                     .concat('/' === t.charAt(0) ? t.substr(1) : t);
                             return n.length && (u += '?'.concat(n)), u;
                         }
-
                         function F(e) {
                             return Object.keys(e)
                                 .map((t) => {
@@ -5085,11 +4901,9 @@ var t;
                                 })
                                 .join('&');
                         }
-
                         function P(e) {
                             return e.map((e) => j(e));
                         }
-
                         function j(e) {
                             var t = e.request.headers['x-algolia-api-key']
                                 ? {
@@ -5344,7 +5158,6 @@ var t;
                             q = 1,
                             R = 2,
                             L = 3;
-
                         function M(e, t, n) {
                             var u,
                                 o = {
@@ -5459,7 +5272,6 @@ var t;
                 },
                 756: (e, t, r) => {
                     'use strict';
-
                     function n(e, t) {
                         var r = ('undefined' != typeof Symbol && e[Symbol.iterator]) || e['@@iterator'];
                         if (!r) {
@@ -5529,7 +5341,6 @@ var t;
                             }
                         };
                     }
-
                     function u(e, t) {
                         (null == t || t > e.length) && (t = e.length);
                         for (var r = 0, n = new Array(t); r < t; r++) n[r] = e[r];
@@ -5574,7 +5385,6 @@ var t;
                 },
                 369: function (e, t, r) {
                     'use strict';
-
                     function n(e, t) {
                         for (var r = 0; r < t.length; r++) {
                             var n = t[r];
@@ -5767,7 +5577,6 @@ var t;
                     }),
                         (t.templates = void 0);
                     var n = r(275);
-
                     function u(e, t) {
                         var r = [],
                             u = 0;
@@ -5791,7 +5600,6 @@ var t;
                         }
                         return r;
                     }
-
                     function o(e, t) {
                         var r,
                             u,
@@ -6009,17 +5817,14 @@ var t;
                         l = {},
                         s = [],
                         p = /acit|ex(?:s|g|n|p|$)|rph|grid|ows|mnc|ntw|ine[ch]|zoo|^ord|itera/i;
-
                     function f(e, t) {
                         for (var r in t) e[r] = t[r];
                         return e;
                     }
-
                     function d(e) {
                         var t = e.parentNode;
                         t && t.removeChild(e);
                     }
-
                     function m(e, t, r, n, i) {
                         var a = {
                             type: e,
@@ -6038,21 +5843,17 @@ var t;
                         };
                         return null == i && null != u.vnode && u.vnode(a), a;
                     }
-
                     function v(e) {
                         return e.children;
                     }
-
                     function h(e, t) {
                         (this.props = e), (this.context = t);
                     }
-
                     function D(e, t) {
                         if (null == t) return e.__ ? D(e.__, e.__.__k.indexOf(e) + 1) : null;
                         for (var r; t < e.__k.length; t++) if (null != (r = e.__k[t]) && null != r.__e) return r.__e;
                         return 'function' == typeof e.type ? D(e) : null;
                     }
-
                     function y(e) {
                         var t, r;
                         if (null != (e = e.__) && null != e.__c) {
@@ -6064,11 +5865,9 @@ var t;
                             return y(e);
                         }
                     }
-
                     function g(e) {
                         ((!e.__d && (e.__d = !0) && i.push(e) && !b.__r++) || c !== u.debounceRendering) && ((c = u.debounceRendering) || a)(b);
                     }
-
                     function b() {
                         for (var e; (b.__r = i.length); )
                             (e = i.sort((e, t) => e.__v.__b - t.__v.__b)),
@@ -6085,7 +5884,6 @@ var t;
                                             u.__e != o && y(u)));
                                 });
                     }
-
                     function _(e, t, r, n, u, o, i, a, c, p) {
                         var f,
                             d,
@@ -6140,13 +5938,11 @@ var t;
                             null != E[f] && ('function' == typeof r.type && null != E[f].__e && E[f].__e == r.__d && (r.__d = D(n, f + 1)), I(E[f], E[f]));
                         if (_) for (f = 0; f < _.length; f++) B(_[f], _[++f], _[++f]);
                     }
-
                     function O(e, t, r) {
                         for (var n, u = e.__k, o = 0; u && o < u.length; o++)
                             (n = u[o]) && ((n.__ = e), (t = 'function' == typeof n.type ? O(n, t, r) : A(r, n, n, u, n.__e, t)));
                         return t;
                     }
-
                     function A(e, t, r, n, u, o) {
                         var i, a, c;
                         if (void 0 !== t.__d) (i = t.__d), (t.__d = void 0);
@@ -6158,11 +5954,9 @@ var t;
                             }
                         return void 0 !== i ? i : u.nextSibling;
                     }
-
                     function E(e, t, r) {
                         '-' === t[0] ? e.setProperty(t, r) : (e[t] = null == r ? '' : 'number' != typeof r || p.test(t) ? r : r + 'px');
                     }
-
                     function C(e, t, r, n, u) {
                         var o;
                         e: if ('style' === t)
@@ -6187,15 +5981,12 @@ var t;
                             'function' == typeof r || (null != r && (!1 !== r || ('a' === t[0] && 'r' === t[1])) ? e.setAttribute(t, r) : e.removeAttribute(t));
                         }
                     }
-
                     function F(e) {
                         this.l[e.type + !1](u.event ? u.event(e) : e);
                     }
-
                     function P(e) {
                         this.l[e.type + !0](u.event ? u.event(e) : e);
                     }
-
                     function j(e, t, r, n, o, i, a, c, l) {
                         var s,
                             p,
@@ -6288,7 +6079,6 @@ var t;
                             (t.__v = null), (l || null != i) && ((t.__e = c), (t.__h = !!l), (i[i.indexOf(c)] = null)), u.__e(e, t, r);
                         }
                     }
-
                     function w(e, t) {
                         u.__c && u.__c(t, e),
                             e.some((t) => {
@@ -6303,7 +6093,6 @@ var t;
                                 }
                             });
                     }
-
                     function S(e, t, r, u, o, i, a, c) {
                         var s,
                             p,
@@ -6356,7 +6145,6 @@ var t;
                         }
                         return e;
                     }
-
                     function B(e, t, r) {
                         try {
                             'function' == typeof e ? e(t) : (e.current = t);
@@ -6364,7 +6152,6 @@ var t;
                             u.__e(e, r);
                         }
                     }
-
                     function I(e, t, r) {
                         var n, o;
                         if ((u.unmount && u.unmount(e), (n = e.ref) && ((n.current && n.current !== e.__e) || B(n, null, t)), null != (n = e.__c))) {
@@ -6379,7 +6166,6 @@ var t;
                         if ((n = e.__k)) for (o = 0; o < n.length; o++) n[o] && I(n[o], t, 'function' != typeof e.type);
                         r || null == e.__e || d(e.__e), (e.__e = e.__d = void 0);
                     }
-
                     function k(e, t, r) {
                         return this.constructor(e, r);
                     }
@@ -6419,7 +6205,6 @@ var t;
                         (a = 'function' == typeof Promise ? Promise.prototype.then.bind(Promise.resolve()) : setTimeout),
                         (b.__r = 0);
                     var x = 0;
-
                     function N(e, t, r, n, o) {
                         var i,
                             a,
@@ -6453,9 +6238,7 @@ var t;
                     );
                 }
             };
-
             var t = {};
-
             function r(n) {
                 var u = t[n];
                 if (void 0 !== u) return u.exports;

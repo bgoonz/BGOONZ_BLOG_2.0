@@ -1,4 +1,3 @@
-
 -   /en/converting-to-number-fast-way/
 
 Converting strings to numbers is extremely common. The easiest and fastest ([jsPerf](https://jsperf.com/number-vs-parseint-vs-plus/29)) way to achieve that would be using the `+` (plus) operator.

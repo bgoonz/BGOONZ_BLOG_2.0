@@ -48,11 +48,7 @@ We can't use the same approach when the elements are Objects, because Objects ar
 
 1 === 1 // true
 
-
-
 'a' === 'a' // true
-
-
 
 { a: 1 } === { a: 1 } // false
 
@@ -114,23 +110,23 @@ console.log(deduped); // [ {a: 1}, [1, 2], 1, '1' ]
 
 ### Methods
 
--   [`filter`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+- [`filter`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+- 
+- [`indexOf`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/
+- 
+- [`from`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/from)
 
--   [`indexOf`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf)
-
--   [`from`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/from)
-
--   [`JSON.stringify`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify)
+- [`JSON.stringify`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify)
 
 ### ES2015
 
--   [arrow functions](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
-
--   [Sets](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)
+- [arrow functions](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+- 
+- [Sets](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)
 
 ### Stack overflow
 
--   [remove duplicates from array](http://stackoverflow.com/questions/9229645/remove-duplicates-from-javascript-array/9229821#9229821)
+- [remove duplicates from array](http://stackoverflow.com/questions/9229645/remove-duplicates-from-javascript-array/9229821#9229821)
 
 ---
 
@@ -260,13 +256,13 @@ Object.defineProperties(dest, {
 
 where options include the following attributes:
 
--   _value_: if the property is not a getter (see below), value is a mandatory attribute. `{a: 12}` === `Object.defineProperty(obj, 'a', {value: 12})`
+- _value_: if the property is not a getter (see below), value is a mandatory attribute. `{a: 12}` === `Object.defineProperty(obj, 'a', {value: 12})`
+- 
+- _writable_: set the property as readonly. Note that if the property is a nested objects, its properties are still editable.
+- 
+- _enumerable_: set the property as hidden. That means that `for ... of` loops and `stringify` will not include the property in their result, but the property is still there. Note: That doesn't mean that the property is private! It can still be accessible from the outside, it just means that it won't be printed.
 
--   _writable_: set the property as readonly. Note that if the property is a nested objects, its properties are still editable.
-
--   _enumerable_: set the property as hidden. That means that `for ... of` loops and `stringify` will not include the property in their result, but the property is still there. Note: That doesn't mean that the property is private! It can still be accessible from the outside, it just means that it won't be printed.
-
--   _configurable_: set the property as non modifiable, e.g. protected from deletion or redefinition. Again, if the property is a nested object, its properties are still configurable.
+- _configurable_: set the property as non modifiable, e.g. protected from deletion or redefinition. Again, if the property is a nested object, its properties are still configurable.
 
 So in order to create a private constant property, you can define it like so:
 
@@ -278,19 +274,13 @@ Besides configuring properties, `defineProperty` allows us to define _dynamic pr
 
 ```js
 
-
-
 var obj = {
 
   getTypeFromExternal(): true // illegal in ES5.1
 
 }
 
-
-
 Object.defineProperty(obj, getTypeFromExternal(), {value: true}); // ok
-
-
 
 // For the example sake, ES6 introduced a new syntax:
 
@@ -310,8 +300,6 @@ function Foobar () {
 
   var _foo; //  true private property
 
-
-
   Object.defineProperty(obj, 'foo', {
 
     get: function () { return _foo; }
@@ -320,11 +308,7 @@ function Foobar () {
 
   });
 
-
-
 }
-
-
 
 var foobar = new Foobar();
 
@@ -358,9 +342,9 @@ If you define a getter without a setter and still try to set a value, you will g
 
 #### Links
 
--   [defineProperty](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty)
-
--   [Defining properties in JavaScript](http://bdadam.com/blog/defining-properties-in-javascript.html)
+- [defineProperty](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty)
+- 
+- [Defining properties in JavaScript](http://bdadam.com/blog/defining-properties-in-javascript.html)
 
 ---
 
@@ -444,11 +428,11 @@ let values = [2, 56, 3, 41, 0, 4, 100, 23];
 
 To get the average, we have to sum up numbers and then divide by the number of values. Steps are:
 
--   get the array length
+- get the array length
+- 
+- sum up values
 
--   sum up values
-
--   get the average (`sum/length`)
+- get the average (`sum/length`)
 
 ```javascript
 let values = [2, 56, 3, 41, 0, 4, 100, 23];
@@ -476,9 +460,9 @@ values /= count;
 
 Now, to get the median steps are:
 
--   sort the array
-
--   get the arethmic mean of the middle values
+- sort the array
+- 
+- get the arethmic mean of the middle values
 
 ```javascript
 let values = [2, 56, 3, 41, 0, 4, 100, 23];
@@ -937,9 +921,9 @@ As written in documentation the `reduce()` method applies a function against an 
 
 [reduce()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce) function accepts 2 parameters (M: mandatory, O: optional):
 
--   (M) a callback **reducer function** to be applied that deals with a pair of previous (result of previous computation) and next element until end of the list.
-
--   (O) an **initial value** to be used as the first argument to the first call of the callback.
+- (M) a callback **reducer function** to be applied that deals with a pair of previous (result of previous computation) and next element until end of the list.
+- 
+- (O) an **initial value** to be used as the first argument to the first call of the callback.
 
 So let's see a common usage and later a more sophisticated one.
 
@@ -1009,9 +993,9 @@ var reducers = {
 
 Then, we create a new swiss knife function
 
--   responsible for applying each partial reduce functions.
-
--   that will return a new callback reducer function
+- responsible for applying each partial reduce functions.
+- 
+- that will return a new callback reducer function
 
 ```javascript
 var combineTotalPriceReducers = function (reducers) {
@@ -1103,15 +1087,15 @@ const timestamp = Math.floor(dateTime / 1000);
 
 Under the hood the runtime calls `valueOf` method of the `Date` object. Then the unary `+` operator calls `toNumber()` with that returned value. For detailed explanation please check the following links
 
--   [Date.prototype.valueOf](http://es5.github.io/#x15.9.5.8)
+- [Date.prototype.valueOf](http://es5.github.io/#x15.9.5.8)
+- 
+- [Unary + operator](http://es5.github.io/#
+- 
+- [toNumber()](http://es5.github.io/#x9.3)
 
--   [Unary + operator](http://es5.github.io/#x11.4.6)
+- [Date Javascript MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
 
--   [toNumber()](http://es5.github.io/#x9.3)
-
--   [Date Javascript MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
-
--   [Date.parse()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/parse)
+- [Date.parse()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/parse)
 
 ---
 

@@ -119,10 +119,10 @@ In a related circumstance, what if you actually wanted your `Date()` function to
 
 The code above may seem inefficiently slow because of the triple nested function, but let's analyze the benefits of the above efficient method:
 
--   It allows the code in the string passed to `runCodeWithDateFunction()` to be minified.
--   Function call overhead is minimal, making the far smaller code size well worth the benefit
--   `Function()` more easily allows your code to utilize the performance buttering `"use strict";`
--   The code does not use `eval()`, making it orders of magnitude faster than otherwise.
+- It allows the code in the string passed to `runCodeWithDateFunction()` to be minified.
+- Function call overhead is minimal, making the far smaller code size well worth the benefit
+- `Function()` more easily allows your code to utilize the performance buttering `"use strict";`
+- The code does not use `eval()`, making it orders of magnitude faster than otherwise.
 
 Lastly, let's examine minification. With using `Function()` as shown above, you can minify the code string passed to `runCodeWithDateFunction()` far more efficiently because the function arguments names can be minified too as seen in the minified code below.
 

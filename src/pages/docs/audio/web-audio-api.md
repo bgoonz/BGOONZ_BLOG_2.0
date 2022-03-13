@@ -40,10 +40,10 @@ Each input or output is composed of one or more audio **channels,** which togeth
 
 Audio sources can be obtained in a number of ways:
 
--   Sound can be generated directly in JavaScript by an audio node (such as an oscillator).
--   Created from raw PCM data (the audio context has methods to decode supported audio formats).
--   Taken from HTML media elements (such as [`<video>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video) or [`<audio>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio)).
--   Taken directly from a [WebRTC](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API) [`MediaStream`](https://developer.mozilla.org/en-US/docs/Web/API/MediaStream) (such as a webcam or microphone).
+- Sound can be generated directly in JavaScript by an audio node (such as an oscillator).
+- Created from raw PCM data (the audio context has methods to decode supported audio formats).
+- Taken from HTML media elements (such as [`<video>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video) or [`<audio>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio)).
+- Taken directly from a [WebRTC](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API) [`MediaStream`](https://developer.mozilla.org/en-US/docs/Web/API/MediaStream) (such as a webcam or microphone).
 
 ## [Audio data: what's in a sample](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Basic_concepts_behind_Web_Audio_API#audio_data_whats_in_a_sample "Permalink to Audio data: what's in a sample")
 
@@ -61,8 +61,8 @@ The sample rate is the number of those samples (or frames, since all samples of 
 
 Let's look at a Mono and a Stereo audio buffer, each is one second long, and playing at 44100Hz:
 
--   The Mono buffer will have 44100 samples, and 44100 frames. The `length` property will be 44100.
--   The Stereo buffer will have 88200 samples, but still 44100 frames. The `length` property will still be 44100 since it's equal to the number of frames.
+- The Mono buffer will have 44100 samples, and 44100 frames. The `length` property will be 44100.
+- The Stereo buffer will have 88200 samples, but still 44100 frames. The `length` property will still be 44100 since it's equal to the number of frames.
 
 ![A diagram showing several frames in an audio buffer in a long line, each one containing two samples, as the buffer has two channels, it is stereo.](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Basic_concepts_behind_Web_Audio_API/sampleframe-english.png)
 

@@ -1,6 +1,5 @@
 const min = (width) => `only screen and (min-width: ${width}em)`;
 const max = (width) => `only screen and (max-width: ${width}em)`;
-
 // screen sizes in em units
 export const screens = {
     phone: 30,
@@ -10,7 +9,6 @@ export const screens = {
     laptop: 70,
     desktop: 100
 };
-
 export const mediaQueries = Object.entries(screens).reduce((acc, [key, val]) => {
     const Key = key[0].toUpperCase() + key.substr(1);
     // css query

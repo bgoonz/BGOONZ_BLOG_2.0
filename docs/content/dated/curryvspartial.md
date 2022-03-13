@@ -1,4 +1,3 @@
-
 -   /en/curry-vs-partial-application/
 
 **Currying**

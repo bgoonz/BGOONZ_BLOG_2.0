@@ -106,33 +106,33 @@ Here's a repo where I hoard resource lists!
 
 ## MOAR!
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*eEDATI6RAaEQw71I.jpg" class="graf-image" /></figure>-   <span id="84dc"><a href="https://bgoonz.github.io/about.html#ansible" class="markup--anchor markup--li-anchor">Ansible</a></span>
--   <span id="1d08"><a href="https://bgoonz.github.io/about.html#awesome-lists" class="markup--anchor markup--li-anchor">Awesome Lists</a></span>
--   <span id="958d"><a href="https://bgoonz.github.io/about.html#continious-integration" class="markup--anchor markup--li-anchor">CI/CD</a></span>
--   <span id="eee2"><a href="https://bgoonz.github.io/about.html#data-science" class="markup--anchor markup--li-anchor">Data Science</a></span>
--   <span id="efef"><a href="https://bgoonz.github.io/about.html#docker" class="markup--anchor markup--li-anchor">Docker</a></span>
--   <span id="069b"><a href="https://bgoonz.github.io/about.html#dynamodb" class="markup--anchor markup--li-anchor">DynamoDB</a></span>
--   <span id="49cc"><a href="https://bgoonz.github.io/about.html#elasticsearch" class="markup--anchor markup--li-anchor">Elasticsearch</a></span>
--   <span id="a53b"><a href="https://bgoonz.github.io/about.html#environment-setups" class="markup--anchor markup--li-anchor">Environment Setups</a></span>
--   <span id="e5a2"><a href="https://bgoonz.github.io/about.html#epic-github-repos" class="markup--anchor markup--li-anchor">Epic Github Repos</a></span>
--   <span id="3439"><a href="https://bgoonz.github.io/about.html#golang" class="markup--anchor markup--li-anchor">Golang</a></span>
--   <span id="4a3d"><a href="https://bgoonz.github.io/about.html#grafana" class="markup--anchor markup--li-anchor">Grafana</a></span>
--   <span id="7b62"><a href="https://bgoonz.github.io/about.html#great-blogs" class="markup--anchor markup--li-anchor">Great Blogs</a></span>
--   <span id="ad80"><a href="https://bgoonz.github.io/about.html#knowledge-base" class="markup--anchor markup--li-anchor">Knowledge Base</a></span>
--   <span id="227d"><a href="https://bgoonz.github.io/about.html#kubernetes" class="markup--anchor markup--li-anchor">Kubernetes</a></span>
--   <span id="6ceb"><a href="https://bgoonz.github.io/about.html#kubernetes-storage" class="markup--anchor markup--li-anchor">Kubernetes Storage</a></span>
--   <span id="97b6"><a href="https://bgoonz.github.io/about.html#machine-learning" class="markup--anchor markup--li-anchor">Machine Learning</a></span>
--   <span id="5b37"><a href="https://bgoonz.github.io/about.html#monitoring" class="markup--anchor markup--li-anchor">Monitoring</a></span>
--   <span id="c262"><a href="https://bgoonz.github.io/about.html#mongodb" class="markup--anchor markup--li-anchor">MongoDB</a></span>
--   <span id="5857"><a href="https://bgoonz.github.io/about.html#programming" class="markup--anchor markup--li-anchor">Programming</a></span>
--   <span id="60a1"><a href="https://bgoonz.github.io/about.html#queues" class="markup--anchor markup--li-anchor">Queues</a></span>
--   <span id="2694"><a href="https://bgoonz.github.io/about.html#self-hosting" class="markup--anchor markup--li-anchor">Self Hosting</a></span>
--   <span id="d4a4"><a href="https://bgoonz.github.io/about.html#email-server-setups" class="markup--anchor markup--li-anchor">Email Server Setups</a></span>
--   <span id="6309"><a href="https://bgoonz.github.io/about.html#mailscanner-server-setups" class="markup--anchor markup--li-anchor">Mailscanner Server Setups</a></span>
--   <span id="1c97"><a href="https://bgoonz.github.io/about.html#serverless" class="markup--anchor markup--li-anchor">Serverless</a></span>
--   <span id="bafa"><a href="https://bgoonz.github.io/about.html#sysadmin-references" class="markup--anchor markup--li-anchor">Sysadmin References</a></span>
--   <span id="5fc4"><a href="https://bgoonz.github.io/about.html#vpn" class="markup--anchor markup--li-anchor">VPN</a></span>
--   <span id="81ef"><a href="https://bgoonz.github.io/about.html#web-frameworks" class="markup--anchor markup--li-anchor">Web Frameworks</a></span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*eEDATI6RAaEQw71I.jpg" class="graf-image" /></figure>- <span id="84dc"><a href="https://bgoonz.github.io/about.html#ansible" class="markup--anchor markup--li-anchor">Ansible</a></span>
+- <span id="1d08"><a href="https://bgoonz.github.io/about.html#awesome-lists" class="markup--anchor markup--li-anchor">Awesome Lists</a></span>
+- <span id="958d"><a href="https://bgoonz.github.io/about.html#continious-integration" class="markup--anchor markup--li-anchor">CI/CD</a></span>
+- <span id="eee2"><a href="https://bgoonz.github.io/about.html#data-science" class="markup--anchor markup--li-anchor">Data Science</a></span>
+- <span id="efef"><a href="https://bgoonz.github.io/about.html#docker" class="markup--anchor markup--li-anchor">Docker</a></span>
+- <span id="069b"><a href="https://bgoonz.github.io/about.html#dynamodb" class="markup--anchor markup--li-anchor">DynamoDB</a></span>
+- <span id="49cc"><a href="https://bgoonz.github.io/about.html#elasticsearch" class="markup--anchor markup--li-anchor">Elasticsearch</a></span>
+- <span id="a53b"><a href="https://bgoonz.github.io/about.html#environment-setups" class="markup--anchor markup--li-anchor">Environment Setups</a></span>
+- <span id="e5a2"><a href="https://bgoonz.github.io/about.html#epic-github-repos" class="markup--anchor markup--li-anchor">Epic Github Repos</a></span>
+- <span id="3439"><a href="https://bgoonz.github.io/about.html#golang" class="markup--anchor markup--li-anchor">Golang</a></span>
+- <span id="4a3d"><a href="https://bgoonz.github.io/about.html#grafana" class="markup--anchor markup--li-anchor">Grafana</a></span>
+- <span id="7b62"><a href="https://bgoonz.github.io/about.html#great-blogs" class="markup--anchor markup--li-anchor">Great Blogs</a></span>
+- <span id="ad80"><a href="https://bgoonz.github.io/about.html#knowledge-base" class="markup--anchor markup--li-anchor">Knowledge Base</a></span>
+- <span id="227d"><a href="https://bgoonz.github.io/about.html#kubernetes" class="markup--anchor markup--li-anchor">Kubernetes</a></span>
+- <span id="6ceb"><a href="https://bgoonz.github.io/about.html#kubernetes-storage" class="markup--anchor markup--li-anchor">Kubernetes Storage</a></span>
+- <span id="97b6"><a href="https://bgoonz.github.io/about.html#machine-learning" class="markup--anchor markup--li-anchor">Machine Learning</a></span>
+- <span id="5b37"><a href="https://bgoonz.github.io/about.html#monitoring" class="markup--anchor markup--li-anchor">Monitoring</a></span>
+- <span id="c262"><a href="https://bgoonz.github.io/about.html#mongodb" class="markup--anchor markup--li-anchor">MongoDB</a></span>
+- <span id="5857"><a href="https://bgoonz.github.io/about.html#programming" class="markup--anchor markup--li-anchor">Programming</a></span>
+- <span id="60a1"><a href="https://bgoonz.github.io/about.html#queues" class="markup--anchor markup--li-anchor">Queues</a></span>
+- <span id="2694"><a href="https://bgoonz.github.io/about.html#self-hosting" class="markup--anchor markup--li-anchor">Self Hosting</a></span>
+- <span id="d4a4"><a href="https://bgoonz.github.io/about.html#email-server-setups" class="markup--anchor markup--li-anchor">Email Server Setups</a></span>
+- <span id="6309"><a href="https://bgoonz.github.io/about.html#mailscanner-server-setups" class="markup--anchor markup--li-anchor">Mailscanner Server Setups</a></span>
+- <span id="1c97"><a href="https://bgoonz.github.io/about.html#serverless" class="markup--anchor markup--li-anchor">Serverless</a></span>
+- <span id="bafa"><a href="https://bgoonz.github.io/about.html#sysadmin-references" class="markup--anchor markup--li-anchor">Sysadmin References</a></span>
+- <span id="5fc4"><a href="https://bgoonz.github.io/about.html#vpn" class="markup--anchor markup--li-anchor">VPN</a></span>
+- <span id="81ef"><a href="https://bgoonz.github.io/about.html#web-frameworks" class="markup--anchor markup--li-anchor">Web Frameworks</a></span>
 
 ### Ansible
 

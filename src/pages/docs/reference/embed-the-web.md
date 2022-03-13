@@ -116,9 +116,6 @@ let solutionEntry = htmlSolution;
 textarea.addEventListener('input', updateCode);
 window.addEventListener('load', updateCode);
 
-
-
-
 textarea.onkeydown = function(e){
   if (e.keyCode === 9) {
     e.preventDefault();
@@ -144,10 +141,7 @@ function insertAtCaret(text) {
   textarea.scrollTop = scrollPos;
 }
 
-
-
 textarea.onkeyup = function(){
-
 
   if(solution.value === 'Show solution') {
     userEntry = textarea.value;

@@ -1,4 +1,3 @@
-
 -   /en/shuffle-an-array/
 
 This snippet here uses [Fisher-Yates Shuffling](https://www.wikiwand.com/en/Fisher%E2%80%93Yates_shuffle) Algorithm to shuffle a given array.

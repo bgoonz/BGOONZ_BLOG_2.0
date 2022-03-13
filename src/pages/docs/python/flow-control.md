@@ -1,7 +1,7 @@
 ---
-title: lorem-ipsum
+title: Flow Control
 weight: 0
-excerpt: lorem-ipsum
+excerpt: These operators evaluate to True or False depending on the values you give them.
 seo:
     title: ''
     description: ''
@@ -14,10 +14,10 @@ template: docs
 
 ## Read It
 
--   [Website](https://www.pythoncheatsheet.org)
--   [Github](https://github.com/wilfredinni/python-cheatsheet)
--   [PDF](https://github.com/wilfredinni/Python-cheatsheet/raw/master/python_cheat_sheet.pdf)
--   [Jupyter Notebook](https://mybinder.org/v2/gh/wilfredinni/python-cheatsheet/master?filepath=jupyter_notebooks)
+- [Website](https://www.pythoncheatsheet.org)
+- [Github](https://github.com/wilfredinni/python-cheatsheet)
+- [PDF](https://github.com/wilfredinni/Python-cheatsheet/raw/master/python_cheat_sheet.pdf)
+- [Jupyter Notebook](https://mybinder.org/v2/gh/wilfredinni/python-cheatsheet/master?filepath=jupyter_notebooks)
 
 ## Flow Control
 

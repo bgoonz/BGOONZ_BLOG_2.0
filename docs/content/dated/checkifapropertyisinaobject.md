@@ -1,6 +1,6 @@
 tip-writer-support: https://www.coinbase.com/loverajoel
 
--   /en/check-if-a-property-is-in-a-object/
+- /en/check-if-a-property-is-in-a-object/
 
 When you have to check if a property is present in an [object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects), you probably are doing something like this:
 

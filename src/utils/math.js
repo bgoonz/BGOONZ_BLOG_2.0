@@ -4,7 +4,6 @@ export const range = (min, max, step = 1) => {
     while (min < max) arr.push((min += step) - step);
     return arr;
 };
-
 export const multivariateNormalDiag = (mu, sigma) => {
     if (mu.length !== sigma.length) throw new Error(`dimension mismatch in multivariateNormalDiag()`);
     const Z = ((2 * Math.PI) ** mu.length * sigma.reduce((a, b) => a * b)) ** -0.5;
@@ -14,7 +13,6 @@ export const multivariateNormalDiag = (mu, sigma) => {
         return Z * Math.exp(exp);
     };
 };
-
 // Compute the determinant of a regular JS array.
 // Adapted from https://stackoverflow.com/a/57696101.
 export const arrDet = (mat) => {

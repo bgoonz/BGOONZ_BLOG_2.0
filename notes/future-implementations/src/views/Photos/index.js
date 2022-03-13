@@ -5,14 +5,12 @@ import Masonry from 'components/Masonry';
 import Modal from 'components/Modal';
 import { Caption } from 'components/styles';
 import { Img, Thumbnail } from './styles';
-
 const ClusterIcon = (color) => `
   <svg fill="${color}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
     <circle cx="120" cy="120" opacity=".6" r="70" />
     <circle cx="120" cy="120" opacity=".4" r="95" />
     <circle cx="120" cy="120" opacity=".2" r="120" />
   </svg>`;
-
 function addMarkers(map, { photos, setModal }) {
     const markers = photos.map(({ caption, lat, lng }, index) => {
         const marker = new window.google.maps.Marker({
@@ -34,7 +32,6 @@ function addMarkers(map, { photos, setModal }) {
         }))
     });
 }
-
 export default function Photos({ tab, photos, modal, setModal }) {
     const currentPhoto = modal >= 0 && modal < photos.length && photos[modal];
     return (

@@ -1,12 +1,11 @@
-
 -   /en/fat-arrow-functions/
 
 Introduced as a new feature in ES6, fat arrow functions may come as a handy tool to write more code in fewer lines. The name comes from its syntax, `=>`, which is a 'fat arrow', as compared to a thin arrow `->`. Some programmers might already know this type of function from different languages such as Haskell, as 'lambda expressions', or as 'anonymous functions'. It is called anonymous, as these arrow functions do not have a descriptive function name.
 
 ### What are the benefits?
 
--   Syntax: fewer LOC; no more typing `function` keyword over and over again
--   Semantics: capturing the keyword `this` from the surrounding context
+- Syntax: fewer LOC; no more typing `function` keyword over and over again
+- Semantics: capturing the keyword `this` from the surrounding context
 
 ### Simple syntax example
 
@@ -19,7 +18,6 @@ param => expression
 // may also be written with parentheses
 // parentheses are required on multiple params
 (param1 [, param2]) => expression
-
 
 // using functions
 var arr = [5,3,2,9,1];

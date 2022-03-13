@@ -278,8 +278,8 @@ If you must include advanced options, consider placing them in a hidden menu tha
 
 The rise of smartphones and tablets has impacted UI best practices across the board, and that includes site search bars. Make sure your search box and button are large enough to see and be selected. [W3C](https://www.w3.org/TR/mobile-accessibility-mapping/#touch-target-size-and-spacing) provides two relevant accessibility guidelines:
 
--   Ensure that touch targets are at least 9 millimeters high by 9 millimeters wide.
--   Ensure that touch targets close to the minimum size are surrounded by a small amount of inactive space.
+- Ensure that touch targets are at least 9 millimeters high by 9 millimeters wide.
+- Ensure that touch targets close to the minimum size are surrounded by a small amount of inactive space.
 
 These guidelines apply to all touchscreen devices regardless of screen size.
 

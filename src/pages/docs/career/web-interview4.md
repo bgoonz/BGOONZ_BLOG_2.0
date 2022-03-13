@@ -40,11 +40,11 @@ console.log(funcVariable + '');
 
 Many of us are still doing these things:
 
--   `element.addEventListener('type', obj.method.bind(obj))`
+- `element.addEventListener('type', obj.method.bind(obj))`
+- 
+- `element.addEventListener('type', function (event) {})`
 
--   `element.addEventListener('type', function (event) {})`
-
--   `element.addEventListener('type', (event) => {})`
+- `element.addEventListener('type', (event) => {})`
 
 The above examples all create new anonymous event handlers that can't be removed when no longer needed. This may cause performance problems or unexpected logic bugs, when handlers that you no longer need still get accidentally triggered through unexpected user interactions or [event bubbling](http://www.javascripter.net/faq/eventbubbling.htm).
 
@@ -268,11 +268,11 @@ console.log(getFileExtension3('filename.with.many.dots.ext')); // 'ext'
 
 _How does it works?_
 
--   [String.lastIndexOf()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/lastIndexOf) method returns the last occurrence of the specified value (`'.'` in this case). Returns `-1` if the value is not found.
+- [String.lastIndexOf()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/lastIndexOf) method returns the last occurrence of the specified value (`'.'` in this case). Returns `-1` if the value is not found.
+- 
+- The return values of `lastIndexOf` for parameter `'filename'` and `'.hiddenfile'` are `-1` and `0` respectively. [Zero-fill right shift operator (>>>)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators#%3E%3E%3E_%28Zero-fill_right_shift%29) will transform `-1` to `4294967295` and `-2` to `4294967294`, here is one trick to insure the filename unchanged in those edge cases.
 
--   The return values of `lastIndexOf` for parameter `'filename'` and `'.hiddenfile'` are `-1` and `0` respectively. [Zero-fill right shift operator (>>>)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators#%3E%3E%3E_%28Zero-fill_right_shift%29) will transform `-1` to `4294967295` and `-2` to `4294967294`, here is one trick to insure the filename unchanged in those edge cases.
-
--   [String.prototype.slice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice) extracts file extension from the index that was calculated above. If the index is more than the length of the filename, the result is `""`.
+- [String.prototype.slice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice) extracts file extension from the index that was calculated above. If the index is more than the length of the filename, the result is `""`.
 
 #### Comparison
 
@@ -639,7 +639,7 @@ Output:-
 'c';
 ```
 
--   Note: The comma(`,`) operator has the lowest priority of all javascript operators, so without the parenthesis the expression would become: `(x = a()), b(), c();`.
+- Note: The comma(`,`) operator has the lowest priority of all javascript operators, so without the parenthesis the expression would become: `(x = a()), b(), c();`.
 
 **Playground**
 
@@ -745,9 +745,9 @@ Also there is `.every`, which can be used. We have to return the opposite boolea
 
 #### Overview
 
--   The scope of a variable defined with `var` is function scope or declared outside any function, global.
-
--   The scope of a variable defined with `let` is block scope.
+- The scope of a variable defined with `var` is function scope or declared outside any function, global.
+- 
+- The scope of a variable defined with `let` is block scope.
 
 ```js
 function varvslet() {
@@ -775,7 +775,7 @@ function varvslet() {
 
 #### Difference Details
 
--   Variable Hoisting
+- Variable Hoisting
 
     `let` will not hoist to the entire scope of the block they appear in. By contrast, `var` could hoist as below.
 
@@ -793,7 +793,7 @@ function varvslet() {
 }
 ```
 
--   Closure in Loop
+- Closure in Loop
 
     `let` in the loop can re-binds it to each iteration of the loop, making sure to re-assign it the value from the end of the previous loop iteration, so it can be used to avoid issue with closures.
 
@@ -823,9 +823,9 @@ for (let i = 0; i < 5; ++i) {
 
 #### `let` compatibility
 
--   In server side, such as Node.js, you can safely use the `let` statement now.
-
--   In client side, through a transpiler (like [Traceur](https://github.com/google/traceur-compiler)), you can safely use the `let` statement. Otherwise, please consider the browser support [here](http://caniuse.com/#search=let)
+- In server side, such as Node.js, you can safely use the `let` statement now.
+- 
+- In client side, through a transpiler (like [Traceur](https://github.com/google/traceur-compiler)), you can safely use the `let` statement. Otherwise, please consider the browser support [here](http://caniuse.com/#search=let)
 
 #### Playground
 
@@ -833,11 +833,11 @@ for (let i = 0; i < 5; ++i) {
 
 #### More info
 
--   [Let keyword vs var keyword](http://stackoverflow.com/questions/762011/let-keyword-vs-var-keyword)
+- [Let keyword vs var keyword](http://stackoverflow.com/questions/762011/let-keyword-vs-var-keyword)
+- 
+- [For and against let](https://davidwalsh.name/for-and-against-let)
 
--   [For and against let](https://davidwalsh.name/for-and-against-let)
-
--   [Explanation of `let` and block scoping with for loops](http://stackoverflow.com/questions/30899612/explanation-of-let-and-block-scoping-with-for-loops/30900289#30900289).
+- [Explanation of `let` and block scoping with for loops](http://stackoverflow.com/questions/30899612/explanation-of-let-and-block-scoping-with-for-loops/30900289#30900289).
 
 ---
 
@@ -999,11 +999,11 @@ Yes! We have perfectly implemented hack for websocket timeout problem.
 
 ## ```
 
--   en
+- en
+- 
+- javascript
 
--   javascript
-
-````
+```
 
 ---
 
@@ -1019,7 +1019,7 @@ JavaScript arrays are sparse in nature in that there are a lot of holes in them.
 
 [undefined, undefined, undefined, undefined]
 
-````
+```
 
 You may find that iterating over a sparse array to apply a certain transformation is hard.
 
@@ -1182,35 +1182,35 @@ The example shown above is but the most naive implementation of the factorial fu
 
 For the sake of completeness, let's look at how this executes for `n = 6`:
 
--   factorial(6)
+- factorial(6)
 
-    -   6 \* factorial(5)
+    - 6 \* factorial(5)
 
-        -   5 \* factorial (4)
+        - 5 \* factorial (4)
 
-            -   4 \* factorial(3)
+            - 4 \* factorial(3)
 
-                -   3 \* factorial(2)
+                - 3 \* factorial(2)
 
-                    -   2 \* factorial(1)
+                    - 2 \* factorial(1)
 
-                        -   1 \* factorial(0)
+                        - 1 \* factorial(0)
 
-                            -   1
+                            - 1
 
-                        -   (resuming previous execution) 1 \* 1 = 1
+                        - (resuming previous execution) 1 \* 1 = 1
 
-                    -   (resuming...) 2 \* 1 = 2
+                    - (resuming...) 2 \* 1 = 2
 
-                -   (...) 3 \* 2 = 6
+                - (...) 3 \* 2 = 6
 
-            -   ... 4 \* 6 = 24
+            - ... 4 \* 6 = 24
 
-        -   5 \* 24 = 120
+        - 5 \* 24 = 120
 
-    -   6 \* 120 = 720
+    - 6 \* 120 = 720
 
--   factorial(6) = 720
+- factorial(6) = 720
 
 Now, we must be very cautious as to what's happening so we can understand what is to come next.
 
@@ -1250,61 +1250,61 @@ function factorial(n) {
 
 Let's take a look at how this gets executed:
 
--   factorial(6)
+- factorial(6)
 
-    -   inner anonymous function (iaf) gets called with (n = 6, res = 1)
+    - inner anonymous function (iaf) gets called with (n = 6, res = 1)
 
-        -   iaf(5, 1 \* 6)
+        - iaf(5, 1 \* 6)
 
-            -   iaf(4, 6 \* 5)
+            - iaf(4, 6 \* 5)
 
-                -   iaf(3, 30 \* 4)
+                - iaf(3, 30 \* 4)
 
-                    -   iaf(2, 120 \* 3)
+                    - iaf(2, 120 \* 3)
 
-                        -   iaf(1, 360 \* 2)
+                        - iaf(1, 360 \* 2)
 
-                            -   iaf(0, 720)
+                            - iaf(0, 720)
 
-                                -   720
+                                - 720
 
-                            -   720
+                            - 720
 
-                        -   720
+                        - 720
 
-                    -   720
+                    - 720
 
-                -   720
+                - 720
 
-            -   720
+            - 720
 
-        -   720
+        - 720
 
-    -   iaf (6, 1) = 720
+    - iaf (6, 1) = 720
 
--   factorial(6) = 720
+- factorial(6) = 720
 
 You might notice that we didn't need to perform any calculation after unwinding the stack. We just returned a value. But, according to our rules, we had to save the state as a stack frame, even if it weren't of any use later in the chain.
 
 Our rules, however, are not applied to every language out there. In fact, in Scheme it's mandatory for such chains to be optimized with tail call optimization. This ensures that our stack is not filled with unnecessary frames. Our previous calculation would look, thus, this way:
 
--   factorial(6)
+- factorial(6)
+- 
+- iaf(6, 1)
+- 
+- iaf(5, 6)
+- 
+- iaf(4, 30)
+- 
+- iaf(3, 120)
 
--   iaf(6, 1)
+- iaf(2, 360)
 
--   iaf(5, 6)
+- iaf(1, 720)
 
--   iaf(4, 30)
+- iaf(0, 720)
 
--   iaf(3, 120)
-
--   iaf(2, 360)
-
--   iaf(1, 720)
-
--   iaf(0, 720)
-
--   720
+- 720
 
 Which in turns, looks an awfully lot like
 
@@ -1548,21 +1548,15 @@ const do_a_lot_of_processing = (data) => {
 
 }
 
-
-
 onmessage = (e) => {
 
     postMessage(do_a_lot_of_processing(e.data));
 
 }
 
-
-
 // main.js
 
 const myWorker = new Worker('my_worker.js');
-
-
 
 async function get_useful_data() {
 
@@ -1572,8 +1566,6 @@ async function get_useful_data() {
 
 }
 
-
-
 const show_data => (e) {
 
     const data = e.data;
@@ -1581,8 +1573,6 @@ const show_data => (e) {
     ...
 
 }
-
-
 
 myWorker.onmessage(show_data);
 
@@ -1850,19 +1840,11 @@ const dirtyMap = {};
 
 const cleanMap = Object.create(null);
 
-
-
 dirtyMap.constructor    // function Object() { [native code] }
-
-
 
 cleanMap.constructor    // undefined
 
-
-
 // Iterating maps
-
-
 
 const key;
 
@@ -1876,8 +1858,6 @@ for(key in dirtyMap){
 
 }
 
-
-
 for(key in cleanMap){
 
   console.log(key + " -> " + cleanMap[key]);    // No need to add extra checks, as the object will always be clean
@@ -1888,9 +1868,9 @@ for(key in cleanMap){
 
 ### Notes
 
--   Object.create() was introduced in ES5: [Compatibility](http://kangax.github.io/compat-table/es5/)
-
--   ES6 introduced some new structures: [Map](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Map), [WeakMap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap), [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set) and [Weak Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet)
+- Object.create() was introduced in ES5: [Compatibility](http://kangax.github.io/compat-table/es5/)
+- 
+- ES6 introduced some new structures: [Map](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Map), [WeakMap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap), [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set) and [Weak Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet)
 
 ---
 
@@ -1952,19 +1932,13 @@ Object.seal(myTesla);
 
 Object.isSealed(myTesla); // true
 
-
-
 myTesla.color = 'blue';
 
 console.log(myTesla.color); // undefined
 
-
-
 delete myTesla.batteryLife; // false
 
 console.log(myTesla.batteryLife); // 300
-
-
 
 Object.defineProperty(myTesla, 'batteryLife'); // TypeError: Cannot redefine property: batteryLife
 
@@ -1982,23 +1956,15 @@ Object.freeze(myTesla);
 
 Object.isFrozen(myTesla); // true
 
-
-
 myTesla.color = 'blue';
 
 console.log(myTesla.color); // undefined
-
-
 
 delete myTesla.batteryLife;
 
 console.log(myTesla.batteryLife); // 300
 
-
-
 Object.defineProperty(myTesla, 'batteryLife'); // TypeError: Cannot redefine property: batteryLife
-
-
 
 myTesla.batteryLife = 400;
 
@@ -2094,11 +2060,11 @@ console.log(multiply(1)(2)(3));
 
 #### Further readings
 
--   [Currying in JavaScript](https://dev.to/suprabhasupi/currying-in-javascript-1k3l)
+- [Currying in JavaScript](https://dev.to/suprabhasupi/currying-in-javascript-1k3l)
+- 
+- [Lodash curry](https://lodash.com/docs/#curry)
 
--   [Lodash curry](https://lodash.com/docs/#curry)
-
--   [JavaScript currying](http://zetcode.com/javascript/currying/)
+- [JavaScript currying](http://zetcode.com/javascript/currying/)
 
 ---
 
@@ -2151,8 +2117,6 @@ myFunc(); // Output: ReferenceError: greeting is not defined
 ```js
 
 const list = document.querySelector(".todo-list");
-
-
 
 list.addEventListener("click", e => {
 

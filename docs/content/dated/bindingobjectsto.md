@@ -1,6 +1,4 @@
-
 -   /en/binding-objects-to-functions/
-
 
 ---
 

@@ -1,7 +1,5 @@
 export const COLOR_MODE_KEY = `color-mode`;
-
 export const INITIAL_COLOR_MODE_CSS_PROP = `--initial-color-mode`;
-
 export const COLORS = {
     gray: {
         default: `#464849`,
@@ -30,9 +28,7 @@ export const COLORS = {
         light: `#00948f`
     }
 };
-
 const { gray, blue, orange } = COLORS;
-
 export const MODE_COLORS = {
     text: {
         light: `black`,
@@ -87,7 +83,6 @@ export const MODE_COLORS = {
         dark: orange.darkest
     }
 };
-
 export const typography = {
     fonts: `-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif`,
     // font sizes and line heights in em units

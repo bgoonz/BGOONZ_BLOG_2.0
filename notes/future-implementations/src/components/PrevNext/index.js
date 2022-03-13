@@ -2,7 +2,6 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { Img, PreviousNext, Thumbnail } from './styles';
-
 const PrevNext = ({ prev, next, label, slugPrefix = `` }) => (
     <PreviousNext>
         {prev && (
@@ -25,9 +24,7 @@ const PrevNext = ({ prev, next, label, slugPrefix = `` }) => (
         )}
     </PreviousNext>
 );
-
 export default PrevNext;
-
 PrevNext.propTypes = {
     label: PropTypes.string.isRequired
 };

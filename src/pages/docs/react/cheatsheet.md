@@ -23,15 +23,15 @@ template: docs
 
 React:
 
--   `<script src="https://unpkg.com/react@15/dist/react.js"></script>`
--   `$ npm install react --save`
--   `$ bower install react --save`
+- `<script src="https://unpkg.com/react@15/dist/react.js"></script>`
+- `$ npm install react --save`
+- `$ bower install react --save`
 
 React DOM:
 
--   `<script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>`
--   `$ npm install react-dom`
--   `$ bower install react-dom --save`
+- `<script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>`
+- `$ npm install react-dom`
+- `$ bower install react-dom --save`
 
 ## Rendering
 
@@ -102,9 +102,6 @@ class Link extends React.Component {
 
 ```sh
 
-
-
-
 npm install --save react       // declarative and flexible JavaScript library for building UI
 npm install --save react-dom   // serves as the entry point of the DOM-related rendering paths
 npm install --save prop-types  // runtime type checking for React props and similar objects
@@ -118,7 +115,6 @@ npm install --save prop-types  // runtime type checking for React props and simi
  * REACT
  * https://reactjs.org/docs/react-api.html
  * ******************************************************************************************* */
-
 
 // Create and return a new React element of the given type.
 // Code written with JSX will be converted to use React.createElement().
@@ -165,14 +161,12 @@ React.Children.toArray(children)
 // You can also use it with the shorthand <></> syntax.
 React.Fragment
 
-
 /* *******************************************************************************************
  * REACT.COMPONENT
  * React.Component is an abstract base class, so it rarely makes sense to refer to React.Component
  * directly. Instead, you will typically subclass it, and define at least a render() method.
  * https://reactjs.org/docs/react-component.html
  * ******************************************************************************************* */
-
 
 class Component extends React.Component {
   // Will be called before it is mounted
@@ -288,7 +282,6 @@ component = new Component();
 // Normally you should try to avoid all uses of forceUpdate() and only read from this.props and this.state in render().
 component.forceUpdate(callback)
 
-
 /* *******************************************************************************************
  * REACT.DOM
  * The react-dom package provides DOM-specific methods that can be used at the top level of
@@ -296,7 +289,6 @@ component.forceUpdate(callback)
  * Most of your components should not need to use this module.
  * https://reactjs.org/docs/react-dom.html
  * ******************************************************************************************* */
-
 
 // Render a React element into the DOM in the supplied container and return a reference
 // to the component (or returns null for stateless components).
@@ -321,13 +313,11 @@ ReactDOM.findDOMNode(component)
 // the hierarchy of the DOM component.
 ReactDOM.createPortal(child, container)
 
-
 /* *******************************************************************************************
  * REACTDOMSERVER
  * The ReactDOMServer object enables you to render components to static markup.
  * https://reactjs.org/docs/react-dom.html
  * ******************************************************************************************* */
-
 
 // Render a React element to its initial HTML. React will return an HTML string.
 // You can use this method to generate HTML on the server and send the markup down on the initial
@@ -350,12 +340,10 @@ ReactDOMServer.renderToNodeStream(element)
 // page generator, as stripping away the extra attributes can save some bytes.
 ReactDOMServer.renderToStaticNodeStream(element)
 
-
 /* *******************************************************************************************
  * TYPECHECKING WITH PROPTYPES
  * https://reactjs.org/docs/typechecking-with-proptypes.html
  * ******************************************************************************************* */
-
 
 import PropTypes from 'prop-types';
 
@@ -438,8 +426,6 @@ MyComponent.propTypes = {
   })
 };
 
-
-
 ```
 
 ---
@@ -450,9 +436,9 @@ MyComponent.propTypes = {
 
 ### Options (ES5)
 
--   `propTypes object`: Type validation in development mode
--   `getDefaultProps function()`: object of default props
--   `getInitialState function()`: object of the initial state
+- `propTypes object`: Type validation in development mode
+- `getDefaultProps function()`: object of default props
+- `getInitialState function()`: object of the initial state
 
 ES5:
 
@@ -536,13 +522,13 @@ Modern React lifecycle methods (v16+)
 
 Legacy Lifecycle Events:
 
--   `componentWillMount function()`
--   `componentDidMount function()`
--   `componentWillReceiveProps function(nextProps)`
--   `shouldComponentUpdate function(nextProps, nextState)-> bool`
--   `componentWillUpdate function(nextProps, nextState)`
--   `componentDidUpdate function(prevProps, prevState)`
--   `componentWillUnmount function()`
+- `componentWillMount function()`
+- `componentDidMount function()`
+- `componentWillReceiveProps function(nextProps)`
+- `shouldComponentUpdate function(nextProps, nextState)-> bool`
+- `componentWillUpdate function(nextProps, nextState)`
+- `componentDidUpdate function(prevProps, prevState)`
+- `componentWillUnmount function()`
 
 Sequence of lifecycle events:
 
@@ -552,36 +538,36 @@ Inspired by <http://react.tips>
 
 ## Special Props
 
--   `key`: Unique identifier for an element to turn arrays/lists into hashes for better performance, e.g., `key={id}`
--   `ref`: Reference to an element via `this.refs.NAME`, e.g., `ref="email"` will create `this.refs.email` DOM node or `ReactDOM.findDOMNode(this.refs.email)`
--   `style`: Accept an object of styles, instead of a string (immutable since v0.14), e.g., `style={{color: red}}`
--   `className`: the HTML `class` attribute, e.g., `className="btn"`
--   `htmlFor`: the HTML `for` attribute, e.g., `htmlFor="email"`
--   `dangerouslySetInnerHTML`: raw HTML by providing an object with the key `__html`
--   `children`: content of the element via `this.props.children`, e.g., `this.props.children[0]`
--   `data-NAME`: custom attribute, e.g., `data-tooltip-text="..."`
+- `key`: Unique identifier for an element to turn arrays/lists into hashes for better performance, e.g., `key={id}`
+- `ref`: Reference to an element via `this.refs.NAME`, e.g., `ref="email"` will create `this.refs.email` DOM node or `ReactDOM.findDOMNode(this.refs.email)`
+- `style`: Accept an object of styles, instead of a string (immutable since v0.14), e.g., `style={{color: red}}`
+- `className`: the HTML `class` attribute, e.g., `className="btn"`
+- `htmlFor`: the HTML `for` attribute, e.g., `htmlFor="email"`
+- `dangerouslySetInnerHTML`: raw HTML by providing an object with the key `__html`
+- `children`: content of the element via `this.props.children`, e.g., `this.props.children[0]`
+- `data-NAME`: custom attribute, e.g., `data-tooltip-text="..."`
 
 ## propTypes
 
 Types available under `React.PropTypes`:
 
--   `any`
--   `array`
--   `bool`
--   `element`
--   `func`
--   `node`
--   `number`
--   `object`
--   `string`
+- `any`
+- `array`
+- `bool`
+- `element`
+- `func`
+- `node`
+- `number`
+- `object`
+- `string`
 
 To make required, append `.isRequired`.
 
 More methods:
 
--   `instanceOf(constructor)`
--   `oneOf(['News', 'Photos'])`
--   `oneOfType([propType, propType])`
+- `instanceOf(constructor)`
+- `oneOf(['News', 'Photos'])`
+- `oneOfType([propType, propType])`
 
 ### Custom Validation
 
@@ -599,41 +585,41 @@ propTypes: {
 
 Properties:
 
--   `this.refs`: Lists components with a `ref` prop
--   `this.props`: Any props passed to an element (immutable)
--   `this.state`: State set by setState and getInitialState (muttable) — avoid setting state manually with `this.state=...`
--   `this.isMounted`: Flag whether the element has a corresponding DOM node or not
+- `this.refs`: Lists components with a `ref` prop
+- `this.props`: Any props passed to an element (immutable)
+- `this.state`: State set by setState and getInitialState (muttable) — avoid setting state manually with `this.state=...`
+- `this.isMounted`: Flag whether the element has a corresponding DOM node or not
 
 Methods:
 
--   `setState(changes)`: Change state (partially) to `this.state` and trigger re-render
--   `replaceState(newState)`: Replace `this.state` and trigger re-render
--   `forceUpdate()`: Trigger DOM re-render immediately
+- `setState(changes)`: Change state (partially) to `this.state` and trigger re-render
+- `replaceState(newState)`: Replace `this.state` and trigger re-render
+- `forceUpdate()`: Trigger DOM re-render immediately
 
 ## React Addons
 
 As npm modules:
 
--   [`react-addons-css-transition-group`](http://facebook.github.io/react/docs/animation.html)
--   [`react-addons-perf`](http://facebook.github.io/react/docs/perf.html)
--   [`react-addons-test-utils`](http://facebook.github.io/react/docs/test-utils.html)
--   [`react-addons-pure-render-mixin`](http://facebook.github.io/react/docs/pure-render-mixin.html)
--   [`react-addons-linked-state-mixin`](http://facebook.github.io/react/docs/two-way-binding-helpers.html)
--   `react-addons-clone-with-props`
--   `react-addons-create-fragment`
--   `react-addons-css-transition-group`
--   `react-addons-linked-state-mixin`
--   `react-addons-pure-render-mixin`
--   `react-addons-shallow-compare`
--   `react-addons-transition-group`
--   [`react-addons-update`](http://facebook.github.io/react/docs/update.html)
+- [`react-addons-css-transition-group`](http://facebook.github.io/react/docs/animation.html)
+- [`react-addons-perf`](http://facebook.github.io/react/docs/perf.html)
+- [`react-addons-test-utils`](http://facebook.github.io/react/docs/test-utils.html)
+- [`react-addons-pure-render-mixin`](http://facebook.github.io/react/docs/pure-render-mixin.html)
+- [`react-addons-linked-state-mixin`](http://facebook.github.io/react/docs/two-way-binding-helpers.html)
+- `react-addons-clone-with-props`
+- `react-addons-create-fragment`
+- `react-addons-css-transition-group`
+- `react-addons-linked-state-mixin`
+- `react-addons-pure-render-mixin`
+- `react-addons-shallow-compare`
+- `react-addons-transition-group`
+- [`react-addons-update`](http://facebook.github.io/react/docs/update.html)
 
 ## React Components
 
--   <https://github.com/brillout/awesome-react-components> and <http://devarchy.com/react-components>: List of React components
--   [Material-UI](http://www.material-ui.com): Material design React components
--   <http://react-toolbox.com>: Set of React components that implement Google Material Design specification
--   <https://js.coach>: Opinionated catalog of open source JS (mostly React) packages
--   <https://react.rocks>: Catalog of React components
--   <https://khan.github.io/react-components>: Khan Academy React components
--   <http://www.reactjsx.com>: Registry of React components
+- <https://github.com/brillout/awesome-react-components> and <http://devarchy.com/react-components>: List of React components
+- [Material-UI](http://www.material-ui.com): Material design React components
+- <http://react-toolbox.com>: Set of React components that implement Google Material Design specification
+- <https://js.coach>: Opinionated catalog of open source JS (mostly React) packages
+- <https://react.rocks>: Catalog of React components
+- <https://khan.github.io/react-components>: Khan Academy React components
+- <http://www.reactjsx.com>: Registry of React components

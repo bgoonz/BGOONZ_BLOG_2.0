@@ -2,24 +2,20 @@ import React from 'react';
 import { useTransition } from 'react-spring';
 import { useDarkMode } from 'hooks';
 import { Box, Div, Icons, Notification } from './styles';
-
 const modes = {
     light: [`Light Mode`, Icons.Sun, `dark`],
     dark: [`Dark Mode`, Icons.Moon, `auto`],
     auto: [`Auto`, Icons.SunMoon, `light`]
 };
-
 export default function DarkToggle({ size = `1em`, ...rest }) {
     const [colorMode, setColorMode] = useDarkMode();
     if (colorMode && ![`light`, `dark`, `auto`].includes(colorMode)) console.error(`Invalid color mode: ${colorMode}`);
-
     const transitions = useTransition(colorMode, null, {
         initial: null,
         from: { opacity: 0, transform: `translateX(100%)` },
         enter: { opacity: 1, transform: `translateX(0%)` },
         leave: { opacity: 0, transform: `translateX(-100%)` }
     });
-
     return (
         <Box {...rest}>
             {transitions.map(({ item, props: style, key }) => {

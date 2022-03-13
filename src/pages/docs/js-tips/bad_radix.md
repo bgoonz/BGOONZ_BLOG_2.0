@@ -33,10 +33,10 @@ Why is this parameter's value limited to 36? A radix that is larger than 10 uses
 
 The most common radixes:
 
--   2 for [binary numbers](https://en.wikipedia.org/wiki/Binary_number),
--   8 for [octal numbers](https://en.wikipedia.org/wiki/Octal),
--   10 for [decimal numbers](https://en.wikipedia.org/wiki/Decimal),
--   16 for [hexadecimal numbers](https://en.wikipedia.org/wiki/Hexadecimal).
+- 2 for [binary numbers](https://en.wikipedia.org/wiki/Binary_number),
+- 8 for [octal numbers](https://en.wikipedia.org/wiki/Octal),
+- 10 for [decimal numbers](https://en.wikipedia.org/wiki/Decimal),
+- 16 for [hexadecimal numbers](https://en.wikipedia.org/wiki/Hexadecimal).
 
 ## Examples
 

@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 import Project from './Project';
 import { Modal, ProjectGrid, Thumbnail } from './styles';
 import { useQueryParam } from 'hooks';
-
 export function ProjectList(props) {
     const { allMdx } = useStaticQuery(graphql`
         {
@@ -26,14 +25,10 @@ export function ProjectList(props) {
         }
     `);
     const { projects } = allMdx;
-
     const [urlProject, setUrlProject] = useQueryParam(`project`);
     const urlProjIdx = projects.map((p) => p.frontmatter.title).findIndex((title) => title === urlProject);
-
     const [modal, setModal] = useState(urlProjIdx);
-
     const project = modal >= 0 && modal < projects.length && projects[modal];
-
     const setter = (idx) => {
         setUrlProject(projects[idx]?.frontmatter.title ?? null);
         setModal(idx);

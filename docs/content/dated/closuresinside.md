@@ -1,5 +1,3 @@
-
-
 ---
 
 If you ever come across the likes of

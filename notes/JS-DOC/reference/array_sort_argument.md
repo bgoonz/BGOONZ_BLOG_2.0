@@ -33,6 +33,6 @@ The argument of [`Array.prototype.sort()`](../global_objects/array/sort) is expe
 
 ## See also
 
--   [`Array.prototype.sort()`](../global_objects/array/sort)
+- [`Array.prototype.sort()`](../global_objects/array/sort)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Array_sort_argument" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Array_sort_argument</a>

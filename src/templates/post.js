@@ -5,7 +5,6 @@ import moment from 'moment-strftime';
 import React from 'react';
 import { Layout } from '../components/index';
 import { htmlToReact, toStyleObj, withPrefix } from '../utils';
-
 // this minimal GraphQL query ensures that when 'gatsby develop' is running,
 // any changes to content files are reflected in browser
 export const query = graphql`
@@ -15,7 +14,6 @@ export const query = graphql`
         }
     }
 `;
-
 export default class Post extends React.Component {
     render() {
         return (

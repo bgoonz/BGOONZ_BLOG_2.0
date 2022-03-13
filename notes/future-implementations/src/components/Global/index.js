@@ -9,16 +9,13 @@ import Scroll from '../Scroll';
 import Seo from '../Seo';
 import { DocsGrid } from '../styles';
 import { GlobalStyle } from './styles';
-
 const components = { LazyPlot, DocsGrid };
-
 export const Providers = ({ children }) => (
     <MDXProvider components={components}>
         {children}
         <Scroll showBelow={1500} css="position: fixed; right: 1em; bottom: 1em;" />
     </MDXProvider>
 );
-
 export function PageComponents({ children, ...rest }) {
     const { site } = useStaticQuery(graphql`
         {

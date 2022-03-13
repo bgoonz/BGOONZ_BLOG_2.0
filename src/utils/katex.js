@@ -1,6 +1,5 @@
 // Run `rm .cache/api-runner-ssr.js` before calling
 // `gatsby develop` for changes in this file to take effect.
-
 const macros = {
     // Infinitesimal differential (used in derivatives and integrals)
     '\\dif': `\\mathrm d`,
@@ -33,7 +32,6 @@ const macros = {
     // Adaptive curly brackets
     '\\cbrkt': `\\mathopen{}\\left\\{#1\\right\\}\\mathclose{}`
 };
-
 for (let index = `A`.charCodeAt(); index <= `Z`.charCodeAt(); index++) {
     const letter = String.fromCharCode(index);
     // Caligraphic letters
@@ -41,5 +39,4 @@ for (let index = `A`.charCodeAt(); index <= `Z`.charCodeAt(); index++) {
     // Blackboard bold letters
     macros[`\\${letter}bb`] = `\\mathbb{${letter}}`;
 }
-
 module.exports = macros;

@@ -115,7 +115,7 @@ In most browsers, including Chrome and Firefox, the internal timer continues "ti
 
 So if you run the code above and don't dismiss the `alert` window for some time, then the next `alert` will be shown immediately as you do it. The actual interval between alerts will be shorter than 2 seconds.
 
-    ##  Nested setTimeout
+    ## Nested setTimeout
     <p class="mume-header " id="nested-settimeout"></p>
 
     There are two ways of running something regularly.

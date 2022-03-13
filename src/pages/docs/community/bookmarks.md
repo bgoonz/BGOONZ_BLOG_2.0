@@ -3,8 +3,8 @@ title: Bookmarks
 weight: 0
 excerpt: Bookmarks
 seo:
-    title: ''
-    description: ''
+    title: 'Bookmarks'
+    description: 'My chrome bookmars'
     robots: []
     extra: []
     type: stackbit_page_meta
@@ -17,21 +17,18 @@ template: docs
 
 <!-- code_chunk_output -->
 
-### Table Of Contents:
-
--   [Bookmarks](#bookmarks)
-    -   [Table Of Contents:](#table-of-contents)
-    -   [NORWEX](#norwex)
-    -   [RESOURCES](#resources)
-    -   [a/A](#aa)
-    -   [netlify](#netlify)
-    -   [PYTHON](#python)
-    -   [React-Redux](#react-redux)
-    -   [AMAZON](#amazon)
-    -   [GITHUB](#github)
-    -   [MISC](#misc)
-    -   [AMAZINGGGG](#amazingggg)
-    -   [free-stuff](#free-stuff)
+- [Bookmarks](#bookmarks)
+    - [NORWEX](#norwex)
+    - [RESOURCES](#resources)
+    - [a/A](#aa)
+    - [netlify](#netlify)
+    - [PYTHON](#python)
+    - [React-Redux](#react-redux)
+    - [AMAZON](#amazon)
+    - [GITHUB](#github)
+    - [MISC](#misc)
+    - [AMAZINGGGG](#amazingggg)
+    - [free-stuff](#free-stuff)
 
 <!-- /code_chunk_output -->
 

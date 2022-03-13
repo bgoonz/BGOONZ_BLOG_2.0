@@ -1,5 +1,3 @@
-
-
 ---
 
 # Hash maps without side effects

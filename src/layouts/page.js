@@ -4,8 +4,6 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import { Layout } from '../components/index';
 import { htmlToReact, markdownify } from '../utils';
-
-
 export default class Page extends React.Component {
     render() {
         const data = _.get(this.props, 'data');
@@ -16,7 +14,6 @@ export default class Page extends React.Component {
         const subtitle = _.get(page, 'subtitle');
         const headerImage = _.get(page, 'img_path') ? _.get(page, 'img_path') : _.get(header, 'background_img');
         const markdownContent = _.get(page, 'markdown_content');
-
         return (
             <Layout page={page} config={config}>
                 <Header config={config} page={page} image={headerImage} />

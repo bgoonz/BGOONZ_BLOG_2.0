@@ -1,4 +1,3 @@
-
 -   /en/return-values-with-the-new-operator/
 
 You're going to run into some instances where you'll be using `new` to allocate new objects in JavaScript. It's going to blow your mind unless you read this tip to understand what's happening behind the scenes.

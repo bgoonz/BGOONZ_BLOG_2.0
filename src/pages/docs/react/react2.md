@@ -464,8 +464,6 @@ children={props.children}
 );
 };
 
-
-
 <hr />
 
 ```js
@@ -582,8 +580,6 @@ role=&quot;alert&quot;
 )
 );
 };
-
-
 
 <hr />
 
@@ -714,8 +710,6 @@ className: `carousel-item${activeClass}`,
 );
 };
 
-
-
 <hr />
 
 ```js
@@ -778,8 +772,6 @@ aria-expanded={isCollapsed}
 &lt;/&gt;
 );
 };
-
-
 
 <hr />
 
@@ -1068,8 +1060,6 @@ drag ? &quot;filedrop drag&quot; : filename ? &quot;filedrop ready&quot; : &quot
 );
 };
 
-
-
 <hr />
 
 ```js
@@ -1251,8 +1241,6 @@ const Loader = ({ size }) =&gt; {
     &lt;/svg&gt;
   );
 };
-
-
 
 <hr />
 
@@ -1482,8 +1470,6 @@ return !isVisible ? null : (
 );
 };
 
-
-
 <hr />
 
 ```js
@@ -1694,8 +1680,6 @@ style={{
 );
 };
 
-
-
 <hr />
 
 ```js
@@ -1854,8 +1838,6 @@ marked={selection ? selection &gt;= i + 1 : rating &gt;= i + 1}
 );
 };
 
-
-
 <hr />
 
 ```js
@@ -1936,8 +1918,6 @@ key={`tab-content-${props.index}`}
 &lt;/div&gt;
 );
 };
-
-
 
 <hr />
 
@@ -2067,8 +2047,6 @@ const TagInput = ({ tags }) =&gt; {
   );
 };
 
-
-
 <hr />
 
 ```js
@@ -2160,8 +2138,6 @@ onChange={() =&gt; setIsToggleOn(!isToggleOn)}
 );
 };
 
-
-
 <hr />
 
 ```js
@@ -2227,8 +2203,6 @@ onMouseLeave={() =&gt; setShow(false)}
 &lt;/div&gt;
 );
 };
-
-
 
 <hr />
 
@@ -2346,8 +2320,6 @@ className={isToggled ? &quot;tree-element&quot; : &quot;tree-element collapsed&q
 &lt;/div&gt;
 );
 };
-
-
 
 <hr />
 

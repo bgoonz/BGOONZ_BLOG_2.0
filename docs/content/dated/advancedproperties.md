@@ -1,4 +1,3 @@
-
 -   /en/advanced-properties/
 
 It is possible to configure object properties in Javascript for example to set properties to be pseudo-private or readonly. This feature is available since ECMAScript 5.1, therefore supported by all recent browsers.

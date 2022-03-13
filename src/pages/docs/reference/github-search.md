@@ -52,8 +52,8 @@ See "[Searching on GitHub](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/e
 
 The Search API does not support queries that:
 
--   are longer than 256 characters (not including operators or qualifiers).
--   have more than five `AND`, `OR`, or `NOT` operators.
+- are longer than 256 characters (not including operators or qualifiers).
+- have more than five `AND`, `OR`, or `NOT` operators.
 
 These search queries will return a "Validation failed" error message.
 
@@ -87,9 +87,9 @@ This query searches for the keyword `addClass` within a file's contents. The que
 
 Due to the complexity of searching code, there are a few restrictions on how searches are performed:
 
--   Only the _default branch_ is considered. In most cases, this will be the `master` branch.
--   Only files smaller than 384 KB are searchable.
--   You must always include at least one search term when searching source code. For example, searching for [`language:go`](https://github.com/search?utf8=%E2%9C%93&q=language%3Ago&type=Code) is not valid, while [`amazing language:go`](https://github.com/search?utf8=%E2%9C%93&q=amazing+language%3Ago&type=Code) is.
+- Only the _default branch_ is considered. In most cases, this will be the `master` branch.
+- Only files smaller than 384 KB are searchable.
+- You must always include at least one search term when searching source code. For example, searching for [`language:go`](https://github.com/search?utf8=%E2%9C%93&q=language%3Ago&type=Code) is not valid, while [`amazing language:go`](https://github.com/search?utf8=%E2%9C%93&q=amazing+language%3Ago&type=Code) is.
 
     get /search/code
 
@@ -247,7 +247,7 @@ Default: `1` |
 
 #### Notes
 
--   [Works with GitHub Apps](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en/developers/apps)
+- [Works with GitHub Apps](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en/developers/apps)
 
 ---
 
@@ -460,7 +460,7 @@ Default: `1` |
 
 #### Notes
 
--   [Works with GitHub Apps](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en/developers/apps)
+- [Works with GitHub Apps](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en/developers/apps)
 
 #### Preview notice
 
@@ -662,7 +662,7 @@ Default: `1` |
 
 #### Notes
 
--   [Works with GitHub Apps](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en/developers/apps)
+- [Works with GitHub Apps](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en/developers/apps)
 
 ---
 
@@ -784,7 +784,7 @@ Default: `1` |
 
 #### Notes
 
--   [Works with GitHub Apps](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en/developers/apps)
+- [Works with GitHub Apps](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en/developers/apps)
 
 ---
 
@@ -983,7 +983,7 @@ Default: `1` |
 
 #### Notes
 
--   [Works with GitHub Apps](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en/developers/apps)
+- [Works with GitHub Apps](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en/developers/apps)
 
 #### Preview notice
 
@@ -1150,7 +1150,7 @@ Default: `1` |
 
 #### Notes
 
--   [Works with GitHub Apps](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en/developers/apps)
+- [Works with GitHub Apps](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en/developers/apps)
 
 #### Preview notice
 
@@ -1271,7 +1271,7 @@ Default: `1` |
 
 #### Notes
 
--   [Works with GitHub Apps](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en/developers/apps)
+- [Works with GitHub Apps](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en/developers/apps)
 
 ---
 

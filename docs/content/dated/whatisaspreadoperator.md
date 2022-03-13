@@ -1,5 +1,3 @@
-
-
 ---
 
 The spread operator in JavaScript is a useful syntax for adding elements to an array, combining arrays into one larger one, spreading an array inside the arguments of a function, and more.

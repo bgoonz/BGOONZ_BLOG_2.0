@@ -1,5 +1,3 @@
-
-
 ---
 
 A currying function is a function that takes multiple arguments and turns it into a sequence of functions having only one argument at a time.

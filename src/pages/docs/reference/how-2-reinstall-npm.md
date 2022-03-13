@@ -362,7 +362,7 @@ You can follow the following steps to update it using this method:
 
 -   On the Node.js download page, select either the LTS version or the latest current version.
 
-![](https://www.whitesourcesoftware.com/wp-content/media/2020/08/node-js-mac-windows.png)
+![node-js-mac-windows.png](https://www.whitesourcesoftware.com/wp-content/media/2020/08/node-js-mac-windows.png)
 
 -   Depending on your system, click either the Windows Installer option or the macOS installer option.
 

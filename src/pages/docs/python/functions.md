@@ -1,9 +1,9 @@
 ---
-title: lorem-ipsum
+title: Python Functions
 weight: 0
-excerpt: lorem-ipsum
+excerpt: When creating a function using the def statement, you can specify what the return value should be with a return statement. A return statement consists of the following
 seo:
-    title: ''
+    title: 'Python Functions'
     description: ''
     robots: []
     extra: []
@@ -21,9 +21,9 @@ def hello(name):
 
 When creating a function using the def statement, you can specify what the return value should be with a return statement. A return statement consists of the following:
 
--   The return keyword.
-
--   The value or expression that the function should return.
+- The return keyword.
+- 
+- The value or expression that the function should return.
 
 ```python
 import random
@@ -78,13 +78,13 @@ print('cats', 'dogs', 'mice', sep=',')
 
 ### Local and Global Scope
 
--   Code in the global scope cannot use any local variables.
+- Code in the global scope cannot use any local variables.
+- 
+- However, a local scope can access global variables.
+- 
+- Code in a function's local scope cannot use variables in any other local scope.
 
--   However, a local scope can access global variables.
-
--   Code in a function's local scope cannot use variables in any other local scope.
-
--   You can use the same name for different variables if they are in different scopes. That is, there can be a local variable named spam and a global variable also named spam.
+- You can use the same name for different variables if they are in different scopes. That is, there can be a local variable named spam and a global variable also named spam.
 
 ### The global Statement
 

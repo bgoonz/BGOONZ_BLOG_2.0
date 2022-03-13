@@ -205,12 +205,11 @@ template: docs
 
 ##### Gatsby Source Data
 
-````
+```
 <pre>
 ```javascript
 
-
-````
+```
 
 ```javascript
 const path = require('path');

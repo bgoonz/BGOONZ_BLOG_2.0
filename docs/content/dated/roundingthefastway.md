@@ -1,4 +1,3 @@
-
 -   /en/rounding-the-fast-way/
 
 This tip is about performance...with a hidden price tag.

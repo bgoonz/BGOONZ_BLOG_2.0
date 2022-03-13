@@ -1,5 +1,3 @@
-
-
 ---
 
 > JS shall have but one Thread (in the browser at least)

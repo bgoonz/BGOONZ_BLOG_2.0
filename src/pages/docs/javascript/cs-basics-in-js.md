@@ -174,7 +174,7 @@ MODULE.sub = (function () {
     let my = {};
     // ...
 
-######     return my;
+######   return my;
 })();
 ```
 
@@ -199,7 +199,7 @@ let UTIL = (function (parent, $) {
 
     // etc...
 
-######     return parent;
+######   return parent;
 })(UTIL || {}, jQuery);
 ```
 
@@ -273,7 +273,7 @@ let MODULE = (function (my) {
 
 })(MODULE || {});
 
-````
+```
 
 ### Tight Augmentation
 
@@ -289,7 +289,7 @@ let MODULE = (function (my) {
 
     return my;
 })(MODULE);
-````
+```
 
 ### Cloning and Inheritance
 
@@ -346,7 +346,7 @@ MODULE.sub = (function () {
     let my = {};
     // ...
 
-######     return my;
+######   return my;
 })();
 ```
 

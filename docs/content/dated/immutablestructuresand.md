@@ -1,5 +1,3 @@
-
-
 ---
 
 Object cloning is a tricky, full of edge-cases, endeavor. The reason is simple

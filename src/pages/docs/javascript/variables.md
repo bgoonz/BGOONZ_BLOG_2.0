@@ -10,8 +10,6 @@ seo:
 template: docs
 ---
 
-
-
 Variables are declared with the `var` keyword. JavaScript is
 _dynamically typed_ so every variable can hold a value of any data type.
 
@@ -121,22 +119,18 @@ at the beginning of it.
 
 [strict mode]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions_and_function_scope/Strict_mode
 
-
-
-
-
 JavaScript has _6_ data types. Five of those are so called _primitive_ data
 types:
 
--   Boolean
--   Number
--   String
--   Null
--   Undefined
+- Boolean
+- Number
+- String
+- Null
+- Undefined
 
 Everything else that is not a value of one of the above types is an
 
--   Object
+- Object
 
 As we will see in the following slides, objects belong to different kinds of
 "classes" of objects.

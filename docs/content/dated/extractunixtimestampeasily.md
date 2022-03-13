@@ -1,4 +1,3 @@
-
 -   /en/extract-unix-timestamp-easily/
 
 We frequently need to calculate with unix timestamp. There are several ways to grab the timestamp. For current unix timestamp easiest and fastest way is

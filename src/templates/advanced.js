@@ -2,7 +2,6 @@ import { graphql } from 'gatsby';
 import _ from 'lodash';
 import React from 'react';
 import components, { Layout } from '../components/index';
-
 // this minimal GraphQL query ensures that when 'gatsby develop' is running,
 // any changes to content files are reflected in browser
 export const query = graphql`
@@ -12,7 +11,6 @@ export const query = graphql`
         }
     }
 `;
-
 export default class Advanced extends React.Component {
     render() {
         return (

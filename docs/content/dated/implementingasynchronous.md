@@ -1,4 +1,3 @@
-
 -   /en/implementing-asynchronous-loops/
 
 Let's try out writing an asynchronous function which prints the value of the loop index every second.

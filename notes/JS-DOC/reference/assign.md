@@ -256,9 +256,9 @@ No
 
 ## See also
 
--   [`Object.defineProperties()`](defineproperties)
--   [Enumerability and ownership of properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
--   [Spread in object literals](../../operators/spread_syntax#spread_in_object_literals)
+- [`Object.defineProperties()`](defineproperties)
+- [Enumerability and ownership of properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
+- [Spread in object literals](../../operators/spread_syntax#spread_in_object_literals)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  

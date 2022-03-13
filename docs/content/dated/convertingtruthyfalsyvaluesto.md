@@ -1,4 +1,3 @@
-
 -   /en/converting-truthy-falsy-values-to-boolean/
 
 You can convert a [truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy) or [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy) value to true boolean with the `!!` operator.

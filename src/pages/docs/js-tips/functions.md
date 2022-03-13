@@ -217,10 +217,10 @@ The rest parameter syntax allows representing an indefinite number of arguments 
 
 You can refer to a function's arguments within the function by using the `arguments` object. See [arguments](functions/arguments).
 
--   `arguments`: An array-like object containing the arguments passed to the currently executing function.
--   `arguments.callee` : The currently executing function.
--   `arguments.caller` : The function that invoked the currently executing function.
--   `arguments.length`: The number of arguments passed to the function.
+- `arguments`: An array-like object containing the arguments passed to the currently executing function.
+- `arguments.callee` : The currently executing function.
+- `arguments.caller` : The function that invoked the currently executing function.
+- `arguments.length`: The number of arguments passed to the function.
 
 ## Defining method functions
 
@@ -347,8 +347,8 @@ It should be noted, however, that function expressions and function declarations
 
 A function declaration is very easily (and often unintentionally) turned into a function expression. A function declaration ceases to be one when it either:
 
--   becomes part of an expression
--   is no longer a "source element" of a function or the script itself. A "source element" is a non-nested statement in the script or a function body:
+- becomes part of an expression
+- is no longer a "source element" of a function or the script itself. A "source element" is a non-nested statement in the script or a function body:
 
 <!-- -->
 

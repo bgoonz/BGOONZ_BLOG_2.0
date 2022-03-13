@@ -1,4 +1,3 @@
-
 -   /en/helpful-console-log-hacks/
 
 ## Using conditional breakpoints to log data

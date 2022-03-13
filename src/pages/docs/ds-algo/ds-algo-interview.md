@@ -67,7 +67,7 @@ Big-Theta refers to the tight bound of time or space complexity of an algorithm.
 
 -   Optimal for indexing; bad at searching, inserting, and deleting (except at the end).
 -   **Linear arrays**, or one dimensional arrays, are the most basic.
-    -   Are static in size, meaning that they are declared with a fixed size.
+-   -   Are static in size, meaning that they are declared with a fixed size.
 -   **Dynamic arrays** are like one dimensional arrays, but have reserved space for additional elements.
     -   If a dynamic array is full, it copies its contents to a larger array.
 -   **Multi dimensional arrays** nested arrays that allow for multiple dimensions such as an array of arrays providing a 2 dimensional spacial representation via x, y coordinates.
@@ -1996,7 +1996,7 @@ With HTML5, web pages can store data locally within the user's browser. The data
 
 -   Data stored through `localStorage` is permanent: it does not expire and remains stored on the user's computer until a web app deletes it or the user asks the browser to delete it.
 -   `sessionStorage` has the same lifetime as the top-level window or browser tab in which the data got stored. When the tab is permanently closed, any data stored through `sessionStorage` is deleted.
-    **Differences between `localStorage` and `sessionStorage` regarding storage scope:** Both forms of storage are scoped to the document origin so that documents with different origins will never share the stored objects.
+-   **Differences between `localStorage` and `sessionStorage` regarding storage scope:** Both forms of storage are scoped to the document origin so
 -   `sessionStorage` is also scoped on a per-window basis. Two browser tabs with documents from the same origin have separate `sessionStorage` data.
 -   Unlike in `localStorage`, the same scripts from the same origin can't access each other's `sessionStorage` when opened in different tabs.
 
@@ -2941,9 +2941,9 @@ Generally, this concept is used in web applications to manage state. With most a
 
 -   An identifier for the resource. This is known as the endpoint or URL for the resource.
 -   The operation the server should perform on that resource in the form of an HTTP method or verb. The common HTTP methods are GET, POST, PUT, and DELETE.
-    Here is an example of the URL and HTTP method with a `posts` resource:
+-   Here is an example of the
 -   Reading: `/posts/` =\> GET
--   Creating: `/posts/new` =\> POST
+-   Creating: `/posts/new` =\> POS
 -   Updating: `/posts/:id` =\> PUT
 -   Destroying: `/posts/:id` =\> DELETE
 
