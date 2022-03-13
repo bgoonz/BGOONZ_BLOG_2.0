@@ -79,11 +79,17 @@ export default class Header extends React.Component {
                     </div>
                 </div>
                 <div>
+                    <div id="sb-search-example">
+                        <div className="sb-search-icon" id="myCustomSearchButtonID">
+                            <i className="sb-icon">🔎</i>
+                            <p>Search🔎</p>
+                        </div>
+                    </div>
                     <a className="github-corner" href="https://github.com/bgoonz/BGOONZ_BLOG_2.0" aria-label="View source on Github">
                         <svg
                             aria-hidden="true"
-                            width={40}
-                            height={40}
+                            width={30}
+                            height={30}
                             viewBox="0 0 250 250"
                             style={{
                                 zIndex: 100000,
@@ -91,7 +97,7 @@ export default class Header extends React.Component {
                                 color: '#fff',
                                 position: 'fixed',
                                 top: '0px',
-                                border: 0,
+                                border: 1,
                                 left: '0px',
                                 transform: 'scale(-1.5, 1.5)'
                             }}

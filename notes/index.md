@@ -158,7 +158,7 @@ sections:
                   new_window: true
                   no_follow: false
             type: grid_item
-            image: images/iter-c7508519.jpg
+            image: images/ iter.jpg
       type: section_grid
       title: Resume & Portfolio
       col_number: two

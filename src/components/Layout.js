@@ -1,10 +1,10 @@
+import _ from 'lodash';
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import _ from 'lodash';
-import { withPrefix, attribute } from '../utils';
 import '../sass/main.scss';
-import Header from './Header';
+import { attribute, withPrefix } from '../utils';
 import Footer from './Footer';
+import Header from './Header';
 export default class Body extends React.Component {
     render() {
         return (
