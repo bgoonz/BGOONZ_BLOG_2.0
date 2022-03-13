@@ -1,5 +1,3 @@
-
-
 ---
 
 `target` refers to the DOM element that triggers an event. Otherwise, `currentTarget` refers to the DOM element that the event listener is listening on.

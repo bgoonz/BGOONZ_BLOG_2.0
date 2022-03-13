@@ -1,6 +1,5 @@
 tip-md-link: https://github.com/loverajoel/jstips/blob/master/_posts/en/javascript/2017-03-29-recursion-iteration-and-tail-calls-in-js.md
 
-
 ---
 
 If you've been on the business for some time, you have, most likely,

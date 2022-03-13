@@ -1,4 +1,3 @@
-
 -   /en/assignment-shorthands/
 
 Assigning is very common. Sometimes typing becomes time consuming for us 'Lazy programmers'.

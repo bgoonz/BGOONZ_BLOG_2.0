@@ -1,4 +1,3 @@
-
 -   /en/using-json-stringify/
 
 Let's say there is an object with properties "prop1", "prop2", "prop3".

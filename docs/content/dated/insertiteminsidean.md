@@ -1,4 +1,3 @@
-
 tip-writer-support: https://www.coinbase.com/loverajoel
 
 -   /en/insert-item-inside-an-array/

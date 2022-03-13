@@ -1,4 +1,3 @@
-
 -   /en/create-range-0...n-easily-using-one-line/
 
 Here are two compact code sequences to generate the `N`-element array `[0, 1, ..., N-1]`:

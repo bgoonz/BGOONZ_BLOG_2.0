@@ -1,4 +1,3 @@
-
 -   /en/Using-immediately-invoked-function-expression/
 
 Called as "Iffy" ( IIFE - immediately invoked function expression) is an anonymous function expression that is immediately invoked and has some important uses in Javascript.

@@ -1,4 +1,3 @@
-
 -   /en/DOM-event-listening-made-easy/
 
 Many of us are still doing these things:

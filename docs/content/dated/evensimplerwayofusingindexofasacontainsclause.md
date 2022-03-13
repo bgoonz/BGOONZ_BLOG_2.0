@@ -1,4 +1,3 @@
-
 -   /en/even-simpler-way-of-using-indexof-as-a-contains-clause/
 
 JavaScript by default does not have a contains method. And for checking existence of a substring in a string or an item in an array you may do this:

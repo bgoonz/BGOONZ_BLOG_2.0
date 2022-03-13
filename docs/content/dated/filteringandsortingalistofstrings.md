@@ -1,4 +1,3 @@
-
 c
 
 -   /en/filtering-and-sorting-a-list-of-strings/

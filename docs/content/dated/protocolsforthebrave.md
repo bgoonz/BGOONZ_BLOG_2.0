@@ -1,5 +1,3 @@
-
-
 ---
 
 You might have heard about the old ways gaining hype recently, and we don't

@@ -1,5 +1,3 @@
-
-
 ---
 
 We all know that JavaScript is loosely typed and in some cases it fall behind specially when it comes to quality comparison with '==', comparing with '==' gives unexpected results due to whats called coercion or casting "converting one of the 2 operands to the other's type then compare".

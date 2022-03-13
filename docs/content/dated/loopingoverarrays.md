@@ -1,5 +1,3 @@
-
-
 ---
 
 # Looping over arrays

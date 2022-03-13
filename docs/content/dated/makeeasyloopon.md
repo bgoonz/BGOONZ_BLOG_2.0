@@ -1,6 +1,4 @@
-
 -   /en/make-easy-loop-on-array/
-
 
 ---
 

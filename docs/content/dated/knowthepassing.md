@@ -1,4 +1,3 @@
-
 -   /en/know-the-passing-mechanism/
 
 JavaScript is pass-by-value, technically. It is neither pass-by-value nor pass-by-reference, going by the truest sense of these terms. To understand this passing mechanism, take a look at the following two example code snippets and the explanations.

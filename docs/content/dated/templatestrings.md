@@ -1,4 +1,3 @@
-
 -   /en/template-strings/
 
 As of ES6, JS now has template strings as an alternative to the classic end quotes strings.

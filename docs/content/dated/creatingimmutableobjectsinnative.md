@@ -1,5 +1,3 @@
-
-
 ---
 
 # Creating immutable objects in native JavaScript

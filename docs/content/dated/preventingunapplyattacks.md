@@ -1,4 +1,3 @@
-
 -   /en/preventing-unapply-attacks/
 
 By overriding the builtin prototypes, external code can cause code to break by rewriting code to expose and change bound arguments. This can be an issue that seriously breaks applications that works by using polyfill es5 methods.

@@ -1,4 +1,3 @@
-
 -   /en/two-ways-to-empty-an-array/
 
 You define an array and want to empty its contents.

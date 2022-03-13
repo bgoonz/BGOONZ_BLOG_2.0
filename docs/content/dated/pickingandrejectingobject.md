@@ -1,5 +1,3 @@
-
-
 ---
 
 Sometimes we need to whitelist certain attributes from an object, say we've

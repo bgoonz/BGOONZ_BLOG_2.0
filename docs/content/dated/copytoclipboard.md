@@ -2,7 +2,6 @@ tip-writer-support: https://www.coinbase.com/loverajoel
 
 -   /en/copy-to-clipboard/
 
-
 ---
 
 This is a simple tip, this week I had to create a common "Copy to Clipboard" button, I've never created one before and I want to share how I made it.

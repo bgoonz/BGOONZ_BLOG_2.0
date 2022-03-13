@@ -1,4 +1,3 @@
-
 -   /en/use-destructuring-in-function-parameters/
 
 I am sure many of you are already familiar with the [ES6 Destructuring Assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment). Did you know that you can also use it in function parameters?

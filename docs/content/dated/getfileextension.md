@@ -1,6 +1,4 @@
-
 -   /en/get-file-extension/
-
 
 ---
 

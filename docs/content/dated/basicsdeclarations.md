@@ -1,4 +1,3 @@
-
 -   /en/basics-declarations/
 
 Below, different ways to declare variables in JavaScript.

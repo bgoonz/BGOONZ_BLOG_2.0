@@ -1,4 +1,3 @@
-
 -   /en/passing-arguments-to-callback-functions/
 
 By default you cannot pass arguments to a callback function. For example:
