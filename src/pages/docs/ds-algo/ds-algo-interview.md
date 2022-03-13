@@ -20,13 +20,13 @@ Asymptotic Notation is the hardware independent notation used to tell the time a
 
 The following are the Asymptotic rates of growth from best to worst:
 
-- constant growth - `O(1)` Runtime is constant and does not grow with `n`
-- logarithmic growth - `O(log n)` Runtime grows logarithmically in proportion to `n`
-- linear growth - `O(n)` Runtime grows directly in proportion to `n`
-- superlinear growth - `O(n log n)` Runtime grows in proportion _and_ logarithmically to `n`
-- polynomial growth - `O(n^c)` Runtime grows quicker than previous all based on `n`
-- exponential growth - `O(c^n)` Runtime grows even faster than polynomial growth based on `n`
-- factorial growth - `O(n!)` Runtime grows the fastest and becomes quickly unusable for even
+-   constant growth - `O(1)` Runtime is constant and does not grow with `n`
+-   logarithmic growth - `O(log n)` Runtime grows logarithmically in proportion to `n`
+-   linear growth - `O(n)` Runtime grows directly in proportion to `n`
+-   superlinear growth - `O(n log n)` Runtime grows in proportion _and_ logarithmically to `n`
+-   polynomial growth - `O(n^c)` Runtime grows quicker than previous all based on `n`
+-   exponential growth - `O(c^n)` Runtime grows even faster than polynomial growth based on `n`
+-   factorial growth - `O(n!)` Runtime grows the fastest and becomes quickly unusable for even
     small values of `n`
     [(source: Soumyadeep Debnath, _Analysis of Algorithms | Big-O analysis_)](https://www.geeksforgeeks.org/analysis-algorithms-big-o-analysis/)
     Visualized below; the x-axis representing input size and the y-axis representing complexity:
@@ -47,11 +47,11 @@ Big-Theta refers to the tight bound of time or space complexity of an algorithm.
 
 ### <span style="color:red;"> What you need to know
 
-- Big-O and Big-Theta are the most common and helpful notations
-- Big-O does _not_ mean Worst Case Scenario, Big-Theta does _not_ mean average case, and Big-Omega does _not_ mean Best Case Scenario. They only connote the algorithm's performance for a particular scenario, and all three can be used for any scenario.
-- Worst Case means given an unideal input, Average Case means given a typical input, Best case means a ideal input. Ex. Worst case means given an input the algorithm performs particularly bad, or best case an already sorted array for a sorting algorithm.
-- Best Case and Big Omega are generally not helpful since Best Cases are rare in the real world and lower bound might be very different than an upper bound.
-- Big-O isn't everything. On paper merge sort is faster than quick sort, but in practice quick sort is superior.
+-   Big-O and Big-Theta are the most common and helpful notations
+-   Big-O does _not_ mean Worst Case Scenario, Big-Theta does _not_ mean average case, and Big-Omega does _not_ mean Best Case Scenario. They only connote the algorithm's performance for a particular scenario, and all three can be used for any scenario.
+-   Worst Case means given an unideal input, Average Case means given a typical input, Best case means a ideal input. Ex. Worst case means given an input the algorithm performs particularly bad, or best case an already sorted array for a sorting algorithm.
+-   Best Case and Big Omega are generally not helpful since Best Cases are rare in the real world and lower bound might be very different than an upper bound.
+-   Big-O isn't everything. On paper merge sort is faster than quick sort, but in practice quick sort is superior.
 
 # <a id="data-structures"></a>Data Structures
 
@@ -59,102 +59,102 @@ Big-Theta refers to the tight bound of time or space complexity of an algorithm.
 
 ### <span style="color:red;"> Definition
 
-- Stores data elements based on an sequential, most commonly 0 based, index.
-- Based on [tuples](http://en.wikipedia.org/wiki/Tuple) from set theory.
-- They are one of the oldest, most commonly used data structures.
+-   Stores data elements based on an sequential, most commonly 0 based, index.
+-   Based on [tuples](http://en.wikipedia.org/wiki/Tuple) from set theory.
+-   They are one of the oldest, most commonly used data structures.
 
 ### <span style="color:red;"> What you need to know
 
-- Optimal for indexing; bad at searching, inserting, and deleting (except at the end).
-- **Linear arrays**, or one dimensional arrays, are the most basic.
-- - Are static in size, meaning that they are declared with a fixed size.
-- **Dynamic arrays** are like one dimensional arrays, but have reserved space for additional elements.
-    - If a dynamic array is full, it copies its contents to a larger array.
-- **Multi dimensional arrays** nested arrays that allow for multiple dimensions such as an array of arrays providing a 2 dimensional spacial representation via x, y coordinates.
+-   Optimal for indexing; bad at searching, inserting, and deleting (except at the end).
+-   **Linear arrays**, or one dimensional arrays, are the most basic.
+-   -   Are static in size, meaning that they are declared with a fixed size.
+-   **Dynamic arrays** are like one dimensional arrays, but have reserved space for additional elements.
+    -   If a dynamic array is full, it copies its contents to a larger array.
+-   **Multi dimensional arrays** nested arrays that allow for multiple dimensions such as an array of arrays providing a 2 dimensional spacial representation via x, y coordinates.
 
 ### <span style="color:red;"> Time Complexity
 
-- Indexing: Linear array: `O(1)`, Dynamic array: `O(1)`
-- Search: Linear array: `O(n)`, Dynamic array: `O(n)`
-- Optimized Search: Linear array: `O(log n)`, Dynamic array: `O(log n)`
-- Insertion: Linear array: n/a, Dynamic array: `O(n)`
+-   Indexing: Linear array: `O(1)`, Dynamic array: `O(1)`
+-   Search: Linear array: `O(n)`, Dynamic array: `O(n)`
+-   Optimized Search: Linear array: `O(log n)`, Dynamic array: `O(log n)`
+-   Insertion: Linear array: n/a, Dynamic array: `O(n)`
 
 ### <span style="color:red;"> <a id="linked-list"></a> Linked List
 
 ### <span style="color:red;"> Definition
 
-- Stores data with **nodes** that point to other nodes.
-    - Nodes, at its most basic it has one datum and one reference (another node).
-    - A linked list _chains_ nodes together by pointing one node's reference towards another node.
+-   Stores data with **nodes** that point to other nodes.
+    -   Nodes, at its most basic it has one datum and one reference (another node).
+    -   A linked list _chains_ nodes together by pointing one node's reference towards another node.
 
 ### <span style="color:red;"> What you need to know
 
-- Designed to optimize insertion and deletion, slow at indexing and searching.
-- **Doubly linked list** has nodes that also reference the previous node.
-- **Circularly linked list** is simple linked list whose **tail**, the last node, references the **head**, the first node.
-- **Stack**, commonly implemented with linked lists but can be made from arrays too.
-    - Stacks are **last in, first out** (LIFO) data structures.
-    - Made with a linked list by having the head be the only place for insertion and removal.
-- **Queues**, too can be implemented with a linked list or an array.
-    - Queues are a **first in, first out** (FIFO) data structure.
-    - Made with a doubly linked list that only removes from head and adds to tail.
+-   Designed to optimize insertion and deletion, slow at indexing and searching.
+-   **Doubly linked list** has nodes that also reference the previous node.
+-   **Circularly linked list** is simple linked list whose **tail**, the last node, references the **head**, the first node.
+-   **Stack**, commonly implemented with linked lists but can be made from arrays too.
+    -   Stacks are **last in, first out** (LIFO) data structures.
+    -   Made with a linked list by having the head be the only place for insertion and removal.
+-   **Queues**, too can be implemented with a linked list or an array.
+    -   Queues are a **first in, first out** (FIFO) data structure.
+    -   Made with a doubly linked list that only removes from head and adds to tail.
 
 ### <span style="color:red;"> Time Complexity
 
-- Indexing: Linked Lists: `O(n)`
-- Search: Linked Lists: `O(n)`
-- Optimized Search: Linked Lists: `O(n)`
-- Append: Linked Lists: `O(1)`
-- Prepend: Linked Lists: `O(1)`
-- Insertion: Linked Lists: `O(n)`
+-   Indexing: Linked Lists: `O(n)`
+-   Search: Linked Lists: `O(n)`
+-   Optimized Search: Linked Lists: `O(n)`
+-   Append: Linked Lists: `O(1)`
+-   Prepend: Linked Lists: `O(1)`
+-   Insertion: Linked Lists: `O(n)`
 
 ### <span style="color:red;"> <a id="hash"></a> Hash Table or Hash Map
 
 ### <span style="color:red;"> Definition
 
-- Stores data with key value pairs.
-- **Hash functions** accept a key and return an output unique only to that specific key.
-    - This is known as **hashing**, which is the concept that an input and an output have a one-to-one correspondence to map information.
-    - Hash functions return a unique address in memory for that data.
+-   Stores data with key value pairs.
+-   **Hash functions** accept a key and return an output unique only to that specific key.
+    -   This is known as **hashing**, which is the concept that an input and an output have a one-to-one correspondence to map information.
+    -   Hash functions return a unique address in memory for that data.
 
 ### <span style="color:red;"> What you need to know
 
-- Designed to optimize searching, insertion, and deletion.
-- **Hash collisions** are when a hash function returns the same output for two distinct inputs.
-    - All hash functions have this problem.
-    - This is often accommodated for by having the hash tables be very large.
-- Hashes are important for associative arrays and database indexing.
+-   Designed to optimize searching, insertion, and deletion.
+-   **Hash collisions** are when a hash function returns the same output for two distinct inputs.
+    -   All hash functions have this problem.
+    -   This is often accommodated for by having the hash tables be very large.
+-   Hashes are important for associative arrays and database indexing.
 
 ### <span style="color:red;"> Time Complexity
 
-- Indexing: Hash Tables: `O(1)`
-- Search: Hash Tables: `O(1)`
-- Insertion: Hash Tables: `O(1)`
+-   Indexing: Hash Tables: `O(1)`
+-   Search: Hash Tables: `O(1)`
+-   Insertion: Hash Tables: `O(1)`
 
 ### <span style="color:red;"> <a id="binary-tree"></a> Binary Tree
 
 ### <span style="color:red;"> Definition
 
-- Is a tree like data structure where every node has at most two children.
-    - There is one left and right child node.
+-   Is a tree like data structure where every node has at most two children.
+    -   There is one left and right child node.
 
 ### <span style="color:red;"> What you need to know
 
-- Designed to optimize searching and sorting.
-- A **degenerate tree** is an unbalanced tree, which if entirely one-sided, is essentially a linked list.
-- They are comparably simple to implement than other data structures.
-- Used to make **binary search trees**.
-    - A binary tree that uses comparable keys to assign which direction a child is.
-    - Left child has a key smaller than its parent node.
-    - Right child has a key greater than its parent node.
-    - There can be no duplicate node.
-    - Because of the above it is more likely to be used as a data structure than a binary tree.
+-   Designed to optimize searching and sorting.
+-   A **degenerate tree** is an unbalanced tree, which if entirely one-sided, is essentially a linked list.
+-   They are comparably simple to implement than other data structures.
+-   Used to make **binary search trees**.
+    -   A binary tree that uses comparable keys to assign which direction a child is.
+    -   Left child has a key smaller than its parent node.
+    -   Right child has a key greater than its parent node.
+    -   There can be no duplicate node.
+    -   Because of the above it is more likely to be used as a data structure than a binary tree.
 
 ### <span style="color:red;"> Time Complexity
 
-- Indexing: Binary Search Tree: `O(log n)`
-- Search: Binary Search Tree: `O(log n)`
-- Insertion: Binary Search Tree: `O(log n)`
+-   Indexing: Binary Search Tree: `O(log n)`
+-   Search: Binary Search Tree: `O(log n)`
+-   Insertion: Binary Search Tree: `O(log n)`
 
 # <a id="algorithms"></a> Algorithms
 
@@ -164,39 +164,39 @@ Big-Theta refers to the tight bound of time or space complexity of an algorithm.
 
 ### <span style="color:red;"> Definition
 
-- An algorithm that calls itself in its definition.
-    - **Recursive case** a conditional statement that is used to trigger the recursion.
-    - **Base case** a conditional statement that is used to break the recursion.
+-   An algorithm that calls itself in its definition.
+    -   **Recursive case** a conditional statement that is used to trigger the recursion.
+    -   **Base case** a conditional statement that is used to break the recursion.
 
 ### <span style="color:red;"> What you need to know
 
-- **Stack level too deep** and **stack overflow**.
-    - If you've seen either of these from a recursive algorithm, you messed up.
-    - It means that your base case was never triggered because it was faulty or the problem was so massive you ran out of alloted memory.
-    - Knowing whether or not you will reach a base case is integral to correctly using recursion.
-    - Often used in Depth First Search
+-   **Stack level too deep** and **stack overflow**.
+    -   If you've seen either of these from a recursive algorithm, you messed up.
+    -   It means that your base case was never triggered because it was faulty or the problem was so massive you ran out of alloted memory.
+    -   Knowing whether or not you will reach a base case is integral to correctly using recursion.
+    -   Often used in Depth First Search
 
 ### <span style="color:red;"> Iterative Algorithms
 
 ### <span style="color:red;"> Definition
 
-- An algorithm that is called repeatedly but for a finite number of times, each time being a single iteration.
-    - Often used to move incrementally through a data set.
+-   An algorithm that is called repeatedly but for a finite number of times, each time being a single iteration.
+    -   Often used to move incrementally through a data set.
 
 ### <span style="color:red;"> What you need to know
 
-- Generally you will see iteration as loops, for, while, and until statements.
-- Think of iteration as moving one at a time through a set.
-- Often used to move through an array.
+-   Generally you will see iteration as loops, for, while, and until statements.
+-   Think of iteration as moving one at a time through a set.
+-   Often used to move through an array.
 
 ### <span style="color:red;"> Recursion Vs. Iteration
 
-- The differences between recursion and iteration can be confusing to distinguish since both can be used to implement the other. But know that,
-    - Recursion is, usually, more expressive and easier to implement.
-    - Iteration uses less memory.
-- **Functional languages** tend to use recursion. (i.e. Haskell)
-- **Imperative languages** tend to use iteration. (i.e. Ruby)
-- Check out this [Stack Overflow post](http://stackoverflow.com/questions/19794739/what-is-the-difference-between-iteration-and-recursion) for more info.
+-   The differences between recursion and iteration can be confusing to distinguish since both can be used to implement the other. But know that,
+    -   Recursion is, usually, more expressive and easier to implement.
+    -   Iteration uses less memory.
+-   **Functional languages** tend to use recursion. (i.e. Haskell)
+-   **Imperative languages** tend to use iteration. (i.e. Ruby)
+-   Check out this [Stack Overflow post](http://stackoverflow.com/questions/19794739/what-is-the-difference-between-iteration-and-recursion) for more info.
 
 ### <span style="color:red;"> Pseudo Code of Moving Through an Array
 
@@ -215,19 +215,19 @@ Big-Theta refers to the tight bound of time or space complexity of an algorithm.
 
 ### <span style="color:red;"> Definition
 
-- An algorithm that, while executing, selects only the information that meets a certain criteria.
-- The general five components, taken from [Wikipedia](http://en.wikipedia.org/wiki/Greedy_algorithm#Specifics):
-    - A candidate set, from which a solution is created.
-    - A selection function, which chooses the best candidate to be added to the solution.
-    - A feasibility function, that is used to determine if a candidate can be used to contribute to a solution.
-    - An objective function, which assigns a value to a solution, or a partial solution.
-    - A solution function, which will indicate when we have discovered a complete solution.
+-   An algorithm that, while executing, selects only the information that meets a certain criteria.
+-   The general five components, taken from [Wikipedia](http://en.wikipedia.org/wiki/Greedy_algorithm#Specifics):
+    -   A candidate set, from which a solution is created.
+    -   A selection function, which chooses the best candidate to be added to the solution.
+    -   A feasibility function, that is used to determine if a candidate can be used to contribute to a solution.
+    -   An objective function, which assigns a value to a solution, or a partial solution.
+    -   A solution function, which will indicate when we have discovered a complete solution.
 
 ### <span style="color:red;"> What you need to know
 
-- Used to find the expedient, though non-optimal, solution for a given problem.
-- Generally used on sets of data where only a small proportion of the information evaluated meets the desired result.
-- Often a greedy algorithm can help reduce the Big O of an algorithm.
+-   Used to find the expedient, though non-optimal, solution for a given problem.
+-   Generally used on sets of data where only a small proportion of the information evaluated meets the desired result.
+-   Often a greedy algorithm can help reduce the Big O of an algorithm.
 
 ### <span style="color:red;"> Pseudo Code of a Greedy Algorithm to Find Largest Difference of any Two Numbers in an Array.
 
@@ -248,60 +248,60 @@ This algorithm never needed to compare all the differences to one another, savin
 
 ### <span style="color:red;"> Definition
 
-- An algorithm that searches a tree (or graph) by searching levels of the tree first, starting at the root.
-    - It finds every node on the same level, most often moving left to right.
-    - While doing this it tracks the children nodes of the nodes on the current level.
-    - When finished examining a level it moves to the left most node on the next level.
-    - The bottom-right most node is evaluated last (the node that is deepest and is farthest right of it's level).
+-   An algorithm that searches a tree (or graph) by searching levels of the tree first, starting at the root.
+    -   It finds every node on the same level, most often moving left to right.
+    -   While doing this it tracks the children nodes of the nodes on the current level.
+    -   When finished examining a level it moves to the left most node on the next level.
+    -   The bottom-right most node is evaluated last (the node that is deepest and is farthest right of it's level).
 
 ### <span style="color:red;"> What you need to know
 
-- Optimal for searching a tree that is wider than it is deep.
-- Uses a queue to store information about the tree while it traverses a tree.
-    - Because it uses a queue it is more memory intensive than **depth first search**.
-    - The queue uses more memory because it needs to stores pointers
+-   Optimal for searching a tree that is wider than it is deep.
+-   Uses a queue to store information about the tree while it traverses a tree.
+    -   Because it uses a queue it is more memory intensive than **depth first search**.
+    -   The queue uses more memory because it needs to stores pointers
 
 ### <span style="color:red;"> Time Complexity
 
-- Search: Breadth First Search: O(V + E)
-- E is number of edges
-- V is number of vertices
+-   Search: Breadth First Search: O(V + E)
+-   E is number of edges
+-   V is number of vertices
 
 ### <span style="color:red;"> <a id="depth-first-search"></a>Depth First Search
 
 ### <span style="color:red;"> Definition
 
-- An algorithm that searches a tree (or graph) by searching depth of the tree first, starting at the root.
-    - It traverses left down a tree until it cannot go further.
-    - Once it reaches the end of a branch it traverses back up trying the right child of nodes on that branch, and if possible left from the right children.
-    - When finished examining a branch it moves to the node right of the root then tries to go left on all it's children until it reaches the bottom.
-    - The right most node is evaluated last (the node that is right of all it's ancestors).
+-   An algorithm that searches a tree (or graph) by searching depth of the tree first, starting at the root.
+    -   It traverses left down a tree until it cannot go further.
+    -   Once it reaches the end of a branch it traverses back up trying the right child of nodes on that branch, and if possible left from the right children.
+    -   When finished examining a branch it moves to the node right of the root then tries to go left on all it's children until it reaches the bottom.
+    -   The right most node is evaluated last (the node that is right of all it's ancestors).
 
 ### <span style="color:red;"> What you need to know
 
-- Optimal for searching a tree that is deeper than it is wide.
-- Uses a stack to push nodes onto.
-    - Because a stack is LIFO it does not need to keep track of the nodes pointers and is therefore less memory intensive than breadth first search.
-    - Once it cannot go further left it begins evaluating the stack.
+-   Optimal for searching a tree that is deeper than it is wide.
+-   Uses a stack to push nodes onto.
+    -   Because a stack is LIFO it does not need to keep track of the nodes pointers and is therefore less memory intensive than breadth first search.
+    -   Once it cannot go further left it begins evaluating the stack.
 
 ### <span style="color:red;"> Time Complexity
 
-- Search: Depth First Search: O(|E| + |V|)
-- E is number of edges
-- V is number of vertices
+-   Search: Depth First Search: O(|E| + |V|)
+-   E is number of edges
+-   V is number of vertices
 
 ### <span style="color:red;"> Breadth First Search Vs. Depth First Search
 
-- The simple answer to this question is that it depends on the size and shape of the tree.
-    - For wide, shallow trees use Breadth First Search
-    - For deep, narrow trees use Depth First Search
+-   The simple answer to this question is that it depends on the size and shape of the tree.
+    -   For wide, shallow trees use Breadth First Search
+    -   For deep, narrow trees use Depth First Search
 
 ### <span style="color:red;"> Nuances
 
-- Because BFS uses queues to store information about the nodes and its children, it could use more memory than is available on your computer. (But you probably won't have to worry about this.)
-- If using a DFS on a tree that is very deep you might go unnecessarily deep in the search. See [xkcd](http://xkcd.com/761/) for more information.
-- Breadth First Search tends to be a looping algorithm.
-- Depth First Search tends to be a recursive algorithm.
+-   Because BFS uses queues to store information about the nodes and its children, it could use more memory than is available on your computer. (But you probably won't have to worry about this.)
+-   If using a DFS on a tree that is very deep you might go unnecessarily deep in the search. See [xkcd](http://xkcd.com/761/) for more information.
+-   Breadth First Search tends to be a looping algorithm.
+-   Depth First Search tends to be a recursive algorithm.
 
 ## <a id="sorting-algorithms"></a>Sorting Algorithms
 
@@ -309,29 +309,29 @@ This algorithm never needed to compare all the differences to one another, savin
 
 ### <span style="color:red;"> Definition
 
-- A comparison based sorting algorithm.
-    - Starts with the cursor on the left, iterating left to right
-    - Compares the left side to the right, looking for the smallest known item
-        - If the left is smaller than the item to the right it continues iterating
-        - If the left is bigger than the item to the right, the item on the right becomes the known smallest number
-        - Once it has checked all items, it moves the known smallest to the cursor and advances the cursor to the right and starts over
-    - As the algorithm processes the data set, it builds a fully sorted left side of the data until the entire data set is sorted
-- Changes the array in place.
+-   A comparison based sorting algorithm.
+    -   Starts with the cursor on the left, iterating left to right
+    -   Compares the left side to the right, looking for the smallest known item
+        -   If the left is smaller than the item to the right it continues iterating
+        -   If the left is bigger than the item to the right, the item on the right becomes the known smallest number
+        -   Once it has checked all items, it moves the known smallest to the cursor and advances the cursor to the right and starts over
+    -   As the algorithm processes the data set, it builds a fully sorted left side of the data until the entire data set is sorted
+-   Changes the array in place.
 
 ### <span style="color:red;"> What you need to know
 
-- Inefficient for large data sets.
-- Very simple to implement.
+-   Inefficient for large data sets.
+-   Very simple to implement.
 
 ### <span style="color:red;"> Time Complexity
 
-- Best Case Sort: Merge Sort: `O(n^2)`
-- Average Case Sort: Merge Sort: `O(n^2)`
-- Worst Case Sort: Merge Sort: `O(n^2)`
+-   Best Case Sort: Merge Sort: `O(n^2)`
+-   Average Case Sort: Merge Sort: `O(n^2)`
+-   Worst Case Sort: Merge Sort: `O(n^2)`
 
 ### <span style="color:red;"> Space Complexity
 
-- Worst Case: `O(1)`
+-   Worst Case: `O(1)`
 
 ### <span style="color:red;"> Visualization
 
@@ -342,26 +342,26 @@ This algorithm never needed to compare all the differences to one another, savin
 
 ### <span style="color:red;"> Definition
 
-- A comparison based sorting algorithm.
-    - Iterates left to right comparing the current cursor to the previous item.
-    - If the cursor is smaller than the item on the left it swaps positions and the cursor compares itself again to the left hand side until it is put in its sorted position.
-    - As the algorithm processes the data set, the left side becomes increasingly sorted until it is fully sorted.
-- Changes the array in place.
+-   A comparison based sorting algorithm.
+    -   Iterates left to right comparing the current cursor to the previous item.
+    -   If the cursor is smaller than the item on the left it swaps positions and the cursor compares itself again to the left hand side until it is put in its sorted position.
+    -   As the algorithm processes the data set, the left side becomes increasingly sorted until it is fully sorted.
+-   Changes the array in place.
 
 ### <span style="color:red;"> What you need to know
 
-- Inefficient for large data sets, but can be faster for than other algorithms for small ones.
-- Although it has an `O(n^2)`, in practice it slightly less since its comparison scheme only requires checking place if its smaller than its neighbor.
+-   Inefficient for large data sets, but can be faster for than other algorithms for small ones.
+-   Although it has an `O(n^2)`, in practice it slightly less since its comparison scheme only requires checking place if its smaller than its neighbor.
 
 ### <span style="color:red;"> Time Complexity
 
-- Best Case: `O(n)`
-- Average Case: `O(n^2)`
-- Worst Case: `O(n^2)`
+-   Best Case: `O(n)`
+-   Average Case: `O(n^2)`
+-   Worst Case: `O(n^2)`
 
 ### <span style="color:red;"> Space Complexity
 
-- Worst Case: `O(n)`
+-   Worst Case: `O(n)`
 
 ### <span style="color:red;"> Visualization
 
@@ -372,25 +372,25 @@ This algorithm never needed to compare all the differences to one another, savin
 
 ### <span style="color:red;"> Definition
 
-- A divide and conquer algorithm.
-    - Recursively divides entire array by half into subsets until the subset is one, the base case.
-    - Once the base case is reached results are returned and sorted ascending left to right.
-    - Recursive calls are returned and the sorts double in size until the entire array is sorted.
+-   A divide and conquer algorithm.
+    -   Recursively divides entire array by half into subsets until the subset is one, the base case.
+    -   Once the base case is reached results are returned and sorted ascending left to right.
+    -   Recursive calls are returned and the sorts double in size until the entire array is sorted.
 
 ### <span style="color:red;"> What you need to know
 
-- This is one of the fundamental sorting algorithms.
-- Know that it divides all the data into as small possible sets then compares them.
+-   This is one of the fundamental sorting algorithms.
+-   Know that it divides all the data into as small possible sets then compares them.
 
 ### <span style="color:red;"> Time Complexity
 
-- Worst Case: `O(n log n)`
-- Average Case: `O(n log n)`
-- Best Case: `O(n)`
+-   Worst Case: `O(n log n)`
+-   Average Case: `O(n log n)`
+-   Best Case: `O(n)`
 
 ### <span style="color:red;"> Space Complexity
 
-- Worst Case: `O(1)`
+-   Worst Case: `O(1)`
 
 ### <span style="color:red;"> Visualization
 
@@ -401,26 +401,26 @@ This algorithm never needed to compare all the differences to one another, savin
 
 ### <span style="color:red;"> Definition
 
-- A divide and conquer algorithm
-    - Partitions entire data set in half by selecting a random pivot element and putting all smaller elements to the left of the element and larger ones to the right.
-    - It repeats this process on the left side until it is comparing only two elements at which point the left side is sorted.
-    - When the left side is finished sorting it performs the same operation on the right side.
-- Computer architecture favors the quicksort process.
-- Changes the array in place.
+-   A divide and conquer algorithm
+    -   Partitions entire data set in half by selecting a random pivot element and putting all smaller elements to the left of the element and larger ones to the right.
+    -   It repeats this process on the left side until it is comparing only two elements at which point the left side is sorted.
+    -   When the left side is finished sorting it performs the same operation on the right side.
+-   Computer architecture favors the quicksort process.
+-   Changes the array in place.
 
 ### <span style="color:red;"> What you need to know
 
-- While it has the same Big O as (or worse in some cases) many other sorting algorithms it is often faster in practice than many other sorting algorithms, such as merge sort.
+-   While it has the same Big O as (or worse in some cases) many other sorting algorithms it is often faster in practice than many other sorting algorithms, such as merge sort.
 
 ### <span style="color:red;"> Time Complexity
 
-- Worst Case: `O(n^2)`
-- Average Case: `O(n log n)`
-- Best Case: `O(n log n)`
+-   Worst Case: `O(n^2)`
+-   Average Case: `O(n log n)`
+-   Best Case: `O(n log n)`
 
 ### <span style="color:red;"> Space Complexity
 
-- Worst Case: `O(log n)`
+-   Worst Case: `O(log n)`
 
 ### <span style="color:red;"> Visualization
 
@@ -429,9 +429,9 @@ This algorithm never needed to compare all the differences to one another, savin
 
 ### <span style="color:red;"> Merge Sort Vs. Quicksort
 
-- Quicksort is likely faster in practice, but merge sort is faster on paper.
-- Merge Sort divides the set into the smallest possible groups immediately then reconstructs the incrementally as it sorts the groupings.
-- Quicksort continually partitions the data set by a pivot, until the set is recursively sorted.
+-   Quicksort is likely faster in practice, but merge sort is faster on paper.
+-   Merge Sort divides the set into the smallest possible groups immediately then reconstructs the incrementally as it sorts the groupings.
+-   Quicksort continually partitions the data set by a pivot, until the set is recursively sorted.
 
 ## <a id="additional-resources"></a>Additional Resources
 
@@ -456,16 +456,16 @@ Credit: W3C's [ARIA 1.1 Combobox with Grid Popup Example](https://w3c.github.io/
 
 ### <span style="color:red;"> Don't forget:
 
-- Accessible Rich Internet Applications
-- Benefits people who use assistive technologies (AT)
-- Provides role, name, and state
-- Semantic HTML coupled with JavaScript
+-   Accessible Rich Internet Applications
+-   Benefits people who use assistive technologies (AT)
+-   Provides role, name, and state
+-   Semantic HTML coupled with JavaScript
 
 ### <span style="color:red;"> Additional links
 
-- [WAI-ARIA Overview](https://www.w3.org/WAI/standards-guidelines/aria/)
-- [WAI-ARIA Spec](https://www.w3.org/TR/wai-aria/)
-- [ARIA Serious? Eric Eggert presentation](https://youtu.be/4bH57rWPnYo)
+-   [WAI-ARIA Overview](https://www.w3.org/WAI/standards-guidelines/aria/)
+-   [WAI-ARIA Spec](https://www.w3.org/TR/wai-aria/)
+-   [ARIA Serious? Eric Eggert presentation](https://youtu.be/4bH57rWPnYo)
 
 ### <span style="color:red;"> What is the minimum recommended ratio of contrast between foreground text and background to comply with WCAG? Why does this matter?
 
@@ -475,14 +475,14 @@ Credit: W3C's [ARIA 1.1 Combobox with Grid Popup Example](https://w3c.github.io/
 
 ### <span style="color:red;"> Don't forget:
 
-- At least 4.5:1 contrast ratio between foreground text and background
-- Benefits people with low vision or color deficiencies
+-   At least 4.5:1 contrast ratio between foreground text and background
+-   Benefits people with low vision or color deficiencies
 
 ### <span style="color:red;"> Additional links
 
-- [Understanding SC 1.4.3](https://www.alaskawebdev.com/contact)
-- [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/)
-- [Contrast Ratio checker](https://contrast-ratio.com/#)
+-   [Understanding SC 1.4.3](https://www.alaskawebdev.com/contact)
+-   [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/)
+-   [Contrast Ratio checker](https://contrast-ratio.com/#)
 
 ### <span style="color:red;"> What are some of the tools available to test the accessibility of a website or web application?
 
@@ -491,22 +491,22 @@ Credit: W3C's [ARIA 1.1 Combobox with Grid Popup Example](https://w3c.github.io/
 There are multiple tools that can help you to find for accessibility issues in your website or application.
 Check for issues in your website:
 
-- Lighthouse from Google, it provides an option for accessibility testing, it will check for the compliance of different accessibility standards and give you an score with details on the different issues
-- Axe Coconut from DequeLabs, it is a Chrome extension that adds a tab in the Developer tools, it will check for accessibility issues and it will classify them by severity and suggest possible solutions
+-   Lighthouse from Google, it provides an option for accessibility testing, it will check for the compliance of different accessibility standards and give you an score with details on the different issues
+-   Axe Coconut from DequeLabs, it is a Chrome extension that adds a tab in the Developer tools, it will check for accessibility issues and it will classify them by severity and suggest possible solutions
     Check for issues in your code: \* Jest Axe, you can add unit tests for accessibility \* React Axe, test your React application with the axe-core accessibility testing library. Results will show in the Chrome DevTools console. \* eslint-plugin-jsx-a11y, pairing this plugin with an editor lint plugin, you can bake accessibility standards into your application in real-time.
     Check for individual issues: \* Color Contrast checkers \* Use a screen reader \* Use only keyboard to navigate your site
 
 ### <span style="color:red;"> Don't forget:
 
-- None of the tools will replace manual testing
-- Mention of different ways to test accessibility
+-   None of the tools will replace manual testing
+-   Mention of different ways to test accessibility
 
 ### <span style="color:red;"> Additional links
 
-- [Jest Axe](https://github.com/nickcolley/jest-axe)
-- [eslint-plugin-jsx-a11y](https://www.w3.org/TR/wai-aria/)
-- [React axe](https://github.com/dequelabs/react-axe)
-- [Accessibility Checklist](http://romeo.elsevier.com/accessibility_checklist/)
+-   [Jest Axe](https://github.com/nickcolley/jest-axe)
+-   [eslint-plugin-jsx-a11y](https://www.w3.org/TR/wai-aria/)
+-   [React axe](https://github.com/dequelabs/react-axe)
+-   [Accessibility Checklist](http://romeo.elsevier.com/accessibility_checklist/)
 
 ### <span style="color:red;"> What is the Accessibility Tree?
 
@@ -516,13 +516,13 @@ The Accessibility Tree is a structure produced by the browser's Accessibility AP
 
 ### <span style="color:red;"> Don't forget:
 
-- Tree structure exposing information to assistive technologies
-- Runs parallel to the DOM
-- Semantic HTML is essential in creating accessible experiences
+-   Tree structure exposing information to assistive technologies
+-   Runs parallel to the DOM
+-   Semantic HTML is essential in creating accessible experiences
 
 ### <span style="color:red;"> Additional links
 
-- [Accessibility APIs](https://www.smashingmagazine.com/2015/03/web-accessibility-with-accessibility-api/)
+-   [Accessibility APIs](https://www.smashingmagazine.com/2015/03/web-accessibility-with-accessibility-api/)
 
 ### <span style="color:red;"> What is the purpose of the `alt` attribute on images?
 
@@ -532,13 +532,13 @@ The `alt` attribute provides alternative information for an image if a user cann
 
 ### <span style="color:red;"> Don't forget:
 
-- Decorative images should have an empty `alt` attribute.
-- Web crawlers use `alt` tags to understand image content, so they are considered important for Search Engine Optimization (SEO).
-- Put the `.` at the end of `alt` tag to improve accessibility.
+-   Decorative images should have an empty `alt` attribute.
+-   Web crawlers use `alt` tags to understand image content, so they are considered important for Search Engine Optimization (SEO).
+-   Put the `.` at the end of `alt` tag to improve accessibility.
 
 ### <span style="color:red;"> Additional links
 
-- [A good basis for accessibility](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML)
+-   [A good basis for accessibility](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML)
 
 ### <span style="color:red;"> What are `defer` and `async` attributes on a `<script>` tag?
 
@@ -557,14 +557,14 @@ Note: both attributes must only be used if the script has a `src` attribute (i.e
 
 ### <span style="color:red;"> Don't forget:
 
-- Placing a `defer` script in the `<head>` allows the browser to download the script while the page is still parsing, and is therefore a better option than placing the script before the end of the body.
-- If the scripts rely on each other, use `defer`.
-- If the script is independent, use `async`.
-- Use `defer` if the DOM must be ready and the contents are not placed within a `DOMContentLoaded` listener.
+-   Placing a `defer` script in the `<head>` allows the browser to download the script while the page is still parsing, and is therefore a better option than placing the script before the end of the body.
+-   If the scripts rely on each other, use `defer`.
+-   If the script is independent, use `async`.
+-   Use `defer` if the DOM must be ready and the contents are not placed within a `DOMContentLoaded` listener.
 
 ### <span style="color:red;"> Additional links
 
-- [async vs defer attributes](http://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html)
+-   [async vs defer attributes](http://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html)
 
 ### <span style="color:red;"> What is an `async` function?
 
@@ -596,14 +596,14 @@ async function foo() {
 
 ### <span style="color:red;"> Don't forget:
 
-- `async` functions are just syntactic sugar on top of Promises.
-- They make asynchronous operations look like synchronous operations in your function.
-- They implicitly return a promise which resolves to whatever your `async` function returns, and reject to whatever your `async` function `throw`s.
+-   `async` functions are just syntactic sugar on top of Promises.
+-   They make asynchronous operations look like synchronous operations in your function.
+-   They implicitly return a promise which resolves to whatever your `async` function returns, and reject to whatever your `async` function `throw`s.
 
 ### <span style="color:red;"> Additional links
 
-- [MDN Docs - async function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)
-- [MDN Docs - await](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await)
+-   [MDN Docs - async function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)
+-   [MDN Docs - await](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await)
 
 ### <span style="color:red;"> Create a function `batches` that returns the maximum number of whole batches that can be cooked from a recipe.
 
@@ -681,11 +681,11 @@ These must be chained to the Element and never alone however, or there will be s
 
 ### <span style="color:red;"> Don't forget:
 
-- Alternative solutions to scope issues like CSS-in-JS
+-   Alternative solutions to scope issues like CSS-in-JS
 
 ### <span style="color:red;"> Additional links
 
-- [Writing clean and maintainable CSS](https://hackernoon.com/writing-clean-and-maintainable-css-using-bem-methodology-1dcbf810a664)
+-   [Writing clean and maintainable CSS](https://hackernoon.com/writing-clean-and-maintainable-css-using-bem-methodology-1dcbf810a664)
 
 ### <span style="color:red;"> What is Big O Notation?
 
@@ -701,7 +701,7 @@ In these examples, the base time is 1 element = `1ms`.
 arr[arr.length - 1];
 ```
 
-- 1000 elements = `1ms`
+-   1000 elements = `1ms`
     Constant time complexity. No matter how many elements the array has, it will theoretically take (excluding real-world variation) the same amount of time to execute.
 
 ### <span style="color:red;"> O(N)
@@ -710,7 +710,7 @@ arr[arr.length - 1];
 arr.filter(fn);
 ```
 
-- 1000 elements = `1000ms`
+-   1000 elements = `1000ms`
     Linear time complexity. The execution time will increase linearly with the number of elements the array has. If the array has 1000 elements and the function takes 1ms to execute, 7000 elements will take 7ms to execute. This is because the function must iterate through all elements of the array before returning a result.
 
 ### <span style="color:red;"> O([1, N])
@@ -719,7 +719,7 @@ arr.filter(fn);
 arr.some(fn);
 ```
 
-- 1000 elements = `1ms <= x <= 1000ms`
+-   1000 elements = `1ms <= x <= 1000ms`
     The execution time varies depending on the data supplied to the function, it may return very early or very late. The best case here is O(1) and the worst case is O(N).
 
 ### <span style="color:red;"> O(NlogN)
@@ -728,7 +728,7 @@ arr.some(fn);
 arr.sort(fn);
 ```
 
-- 1000 elements \~= `10000ms`
+-   1000 elements \~= `10000ms`
     Browsers usually implement the quicksort algorithm for the `sort()` method and the average time complexity of quicksort is O(NlgN). This is very efficient for large collections.
 
 ### <span style="color:red;"> O(N\^2)
@@ -741,7 +741,7 @@ for (let i = 0; i < arr.length; i++) {
 }
 ```
 
-- 1000 elements = `1000000ms`
+-   1000 elements = `1000000ms`
     The execution time rises quadratically with the number of elements. Usually the result of nesting loops.
 
 ### <span style="color:red;"> O(N!)
@@ -753,16 +753,16 @@ const permutations = (arr) => {
 };
 ```
 
-- 1000 elements = `Infinity` (practically) ms
+-   1000 elements = `Infinity` (practically) ms
     The execution time rises extremely fast with even just 1 addition to the array.
 
 ### <span style="color:red;"> Don't forget:
 
-- Be wary of nesting loops as execution time increases exponentially.
+-   Be wary of nesting loops as execution time increases exponentially.
 
 ### <span style="color:red;"> Additional links
 
-- [Big O Notation in JavaScript](https://medium.com/cesars-tech-insights/big-o-notation-javascript-25c79f50b19b)
+-   [Big O Notation in JavaScript](https://medium.com/cesars-tech-insights/big-o-notation-javascript-25c79f50b19b)
 
 ### <span style="color:red;"> Create a standalone function `bind` that is functionally equivalent to the method `Function.prototype.bind`.
 
@@ -798,14 +798,14 @@ However, it can cause problems when the website has been changed by developers b
 Cache busting is the process of forcing the browser to download the new files. This is done by naming the file something different to the old file.
 A common technique to force the browser to re-download the file is to append a query string to the end of the file.
 
-- `src="js/script.js"` =\> `src="js/script.js?v=2"`
+-   `src="js/script.js"` =\> `src="js/script.js?v=2"`
     The browser considers it a different file but prevents the need to change the file name.
 
 ### <span style="color:red;"> Don't forget:
 
 ### <span style="color:red;"> Additional links
 
-- [Strategies for cache-busting CSS](https://css-tricks.com/strategies-for-cache-busting-css/)
+-   [Strategies for cache-busting CSS](https://css-tricks.com/strategies-for-cache-busting-css/)
 
 ### <span style="color:red;"> How can you avoid callback hells?
 
@@ -841,19 +841,19 @@ async function asyncAwaitVersion() {
 
 There are lots of ways to solve the issue of callback hells:
 
-- Modularization: break callbacks into independent functions
-- Use a control flow library, like async
-- Use generators with Promises
-- Use async/await (from v7 on)
+-   Modularization: break callbacks into independent functions
+-   Use a control flow library, like async
+-   Use generators with Promises
+-   Use async/await (from v7 on)
 
 ### <span style="color:red;"> Don't forget:
 
-- As an efficient JavaScript developer, you have to avoid the constantly growing indentation level, produce clean and readable code and be able to handle complex flows.
+-   As an efficient JavaScript developer, you have to avoid the constantly growing indentation level, produce clean and readable code and be able to handle complex flows.
 
 ### <span style="color:red;"> Additional links
 
-- [Avoiding Callback Hell in Node.js](http://stackabuse.com/avoiding-callback-hell-in-node-js/)
-- [Asynchronous JavaScript: From Callback Hell to Async and Await](https://blog.hellojs.org/asynchronous-javascript-from-callback-hell-to-async-and-await-9b9ceb63c8e8)
+-   [Avoiding Callback Hell in Node.js](http://stackabuse.com/avoiding-callback-hell-in-node-js/)
+-   [Asynchronous JavaScript: From Callback Hell to Async and Await](https://blog.hellojs.org/asynchronous-javascript-from-callback-hell-to-async-and-await-9b9ceb63c8e8)
 
 ### <span style="color:red;"> What is the purpose of callback function as an argument of `setState`?
 
@@ -869,12 +869,12 @@ setState({ name: 'sudheer' }, () => {
 
 ### <span style="color:red;"> Don't forget:
 
-- The callback function is invoked after `setState` finishes and is used for any post action.
-- It is recommended to use lifecycle method rather this callback function.
+-   The callback function is invoked after `setState` finishes and is used for any post action.
+-   It is recommended to use lifecycle method rather this callback function.
 
 ### <span style="color:red;"> Additional links
 
-- [React docs on `setState`](https://reactjs.org/docs/react-component.html#setstate)
+-   [React docs on `setState`](https://reactjs.org/docs/react-component.html#setstate)
 
 ### <span style="color:red;"> Which is the preferred option between callback refs and findDOMNode()?
 
@@ -905,11 +905,11 @@ class MyComponent extends Component {
 
 ### <span style="color:red;"> Don't forget:
 
-- Callback refs are preferred over `findDOMNode()`.
+-   Callback refs are preferred over `findDOMNode()`.
 
 ### <span style="color:red;"> Additional links
 
-- [React docs on Refs and the DOM](https://reactjs.org/docs/refs-and-the-dom.html#exposing-dom-refs-to-parent-components)
+-   [React docs on Refs and the DOM](https://reactjs.org/docs/refs-and-the-dom.html#exposing-dom-refs-to-parent-components)
 
 ### <span style="color:red;"> What is a callback? Can you show an example using one?
 
@@ -940,12 +940,12 @@ map([1, 2, 3, 4, 5], (n) => n * 2); // [2, 4, 6, 8, 10]
 
 ### <span style="color:red;"> Don't forget:
 
-- Functions are first-class objects in JavaScript
-- Callbacks vs Promises
+-   Functions are first-class objects in JavaScript
+-   Callbacks vs Promises
 
 ### <span style="color:red;"> Additional links
 
-- [MDN docs for callbacks](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function)
+-   [MDN docs for callbacks](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function)
 
 ### <span style="color:red;"> What is the `children` prop?
 
@@ -968,12 +968,12 @@ function App() {
 
 ### <span style="color:red;"> Don't forget:
 
-- Children is a prop that allows components to be passed as data to other components.
-- The React API provides methods to work with this prop.
+-   Children is a prop that allows components to be passed as data to other components.
+-   The React API provides methods to work with this prop.
 
 ### <span style="color:red;"> Additional links
 
-- [React docs on Children](https://reactjs.org/docs/jsx-in-depth.html#children-in-jsx)
+-   [React docs on Children](https://reactjs.org/docs/jsx-in-depth.html#children-in-jsx)
 
 ### <span style="color:red;"> Why does React use `className` instead of `class` like in HTML?
 
@@ -1027,19 +1027,19 @@ const shallowClone = { ...obj };
 With this technique, prototypes are ignored. In addition, nested objects are not cloned, but rather their references get copied, so nested objects still refer to the same objects as the original. Deep-cloning is much more complex in order to effectively clone any type of object (Date, RegExp, Function, Set, etc) that may be nested within the object.
 Other alternatives include:
 
-- `JSON.parse(JSON.stringify(obj))` can be used to deep-clone a simple object, but it is CPU-intensive and only accepts valid JSON (therefore it strips functions and does not allow circular references).
-- `Object.assign({}, obj)` is another alternative.
-- `Object.keys(obj).reduce((acc, key) => (acc[key] = obj[key], acc), {})` is another more verbose alternative that shows the concept in greater depth.
+-   `JSON.parse(JSON.stringify(obj))` can be used to deep-clone a simple object, but it is CPU-intensive and only accepts valid JSON (therefore it strips functions and does not allow circular references).
+-   `Object.assign({}, obj)` is another alternative.
+-   `Object.keys(obj).reduce((acc, key) => (acc[key] = obj[key], acc), {})` is another more verbose alternative that shows the concept in greater depth.
 
 ### <span style="color:red;"> Don't forget:
 
-- JavaScript passes objects by reference, meaning that nested objects get their references copied, instead of their values.
-- The same method can be used to merge two objects.
+-   JavaScript passes objects by reference, meaning that nested objects get their references copied, instead of their values.
+-   The same method can be used to merge two objects.
 
 ### <span style="color:red;"> Additional links
 
-- [MDN docs for Object.assign()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
-- [Clone an object in vanilla JS](http://voidcanvas.com/clone-an-object-in-vanilla-js-in-depth/)
+-   [MDN docs for Object.assign()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
+-   [Clone an object in vanilla JS](http://voidcanvas.com/clone-an-object-in-vanilla-js-in-depth/)
 
 ### <span style="color:red;"> What is a closure? Can you give a useful example of one?
 
@@ -1047,23 +1047,23 @@ Other alternatives include:
 
 A closure is a function defined inside another function and has access to its lexical scope even when it is executing outside its lexical scope. The closure has access to variables in three scopes:
 
-- Variables declared in its own scope
-- Variables declared in the scope of the parent function
-- Variables declared in the global scope
+-   Variables declared in its own scope
+-   Variables declared in the scope of the parent function
+-   Variables declared in the global scope
     In JavaScript, all functions are closures because they have access to the outer scope, but most functions don't utilise the usefulness of closures: the persistence of state. Closures are also sometimes called stateful functions because of this.
     In addition, closures are the only way to store private data that can't be accessed from the outside in JavaScript. They are the key to the UMD (Universal Module Definition) pattern, which is frequently used in libraries that only expose a public API but keep the implementation details private, preventing name collisions with other libraries or the user's own code.
 
 ### <span style="color:red;"> Don't forget:
 
-- Closures are useful because they let you associate data with a function that operates on that data.
-- A closure can substitute an object with only a single method.
-- Closures can be used to emulate private properties and methods.
+-   Closures are useful because they let you associate data with a function that operates on that data.
+-   A closure can substitute an object with only a single method.
+-   Closures can be used to emulate private properties and methods.
 
 ### <span style="color:red;"> Additional links
 
-- [MDN docs for closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
-- [What is a closure](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-closure-b2f0d2152b36)
-- [I never understood JavaScript closures](https://medium.com/dailyjs/i-never-understood-javascript-closures-9663703368e8)
+-   [MDN docs for closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
+-   [What is a closure](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-closure-b2f0d2152b36)
+-   [I never understood JavaScript closures](https://medium.com/dailyjs/i-never-understood-javascript-closures-9663703368e8)
 
 ### <span style="color:red;"> How do you compare two objects in JavaScript?
 
@@ -1096,13 +1096,13 @@ function isDeepEqual(obj1, obj2, testPrototypes = false) {
 
 ### <span style="color:red;"> Don't forget:
 
-- Primitives like strings and numbers are compared by their value
-- Objects on the other hand are compared by their reference (location in memory)
+-   Primitives like strings and numbers are compared by their value
+-   Objects on the other hand are compared by their reference (location in memory)
 
 ### <span style="color:red;"> Additional links
 
-- [Object Equality in JavaScript](http://adripofjavascript.com/blog/drips/object-equality-in-javascript.html)
-- [Deep comparison between two values](https://30secondsofcode.org/object#equals)
+-   [Object Equality in JavaScript](http://adripofjavascript.com/blog/drips/object-equality-in-javascript.html)
+-   [Deep comparison between two values](https://30secondsofcode.org/object#equals)
 
 ### <span style="color:red;"> What is context?
 
@@ -1116,12 +1116,12 @@ const { Provider, Consumer } = React.createContext(defaultValue);
 
 ### <span style="color:red;"> Don't forget:
 
-- Context provides a way to pass data through a tree of React components, without having to manually pass props.
-- Context is designed to share data that is considered _global_ for a tree of React components.
+-   Context provides a way to pass data through a tree of React components, without having to manually pass props.
+-   Context is designed to share data that is considered _global_ for a tree of React components.
 
 ### <span style="color:red;"> Additional links
 
-- [React docs on Context](https://reactjs.org/docs/context.html)
+-   [React docs on Context](https://reactjs.org/docs/context.html)
 
 ### <span style="color:red;"> What is CORS?
 
@@ -1133,12 +1133,12 @@ For security reasons, browsers restrict cross-origin HTTP requests initiated by 
 
 ### <span style="color:red;"> Don't forget:
 
-- CORS behavior is not an error,  it's a security mechanism to protect users.
-- CORS is designed to prevent a malicious website that a user may unintentionally visit from making a request to a legitimate website to read their personal data or perform actions against their will.
+-   CORS behavior is not an error,  it's a security mechanism to protect users.
+-   CORS is designed to prevent a malicious website that a user may unintentionally visit from making a request to a legitimate website to read their personal data or perform actions against their will.
 
 ### <span style="color:red;"> Additional links
 
-- [MDN docs for CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
+-   [MDN docs for CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
 
 ### <span style="color:red;"> Describe the layout of the CSS Box Model and briefly describe each component.
 
@@ -1153,13 +1153,13 @@ alt text
 
 ### <span style="color:red;"> Don't forget:
 
-- This is a very common question asked during front-end interviews and while it may seem easy, it is critical you know it well!
-- Shows a solid understanding of spacing and the DOM
+-   This is a very common question asked during front-end interviews and while it may seem easy, it is critical you know it well!
+-   Shows a solid understanding of spacing and the DOM
 
 ### <span style="color:red;"> Additional links
 
-- [W3School's CSS Box Model Page](https://www.w3schools.com/Css/css_boxmodel.asp)
-- [Mozilla's Intro to the CSS Box Model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
+-   [W3School's CSS Box Model Page](https://www.w3schools.com/Css/css_boxmodel.asp)
+-   [Mozilla's Intro to the CSS Box Model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
 
 ### <span style="color:red;"> What are the advantages of using CSS preprocessors?
 
@@ -1169,12 +1169,12 @@ CSS preprocessors add useful functionality that native CSS does not have, and ge
 
 ### <span style="color:red;"> Don't forget:
 
-- They allow us to write more maintainable and scalable CSS
-- Some disadvantages of using CSS preprocessors (setup, re-compilation time can be slow etc.)
+-   They allow us to write more maintainable and scalable CSS
+-   Some disadvantages of using CSS preprocessors (setup, re-compilation time can be slow etc.)
 
 ### <span style="color:red;"> Additional links
 
-- [CSS Preprocessors](https://medium.com/@garyfagan/css-preprocessors-6f226fa16f27)
+-   [CSS Preprocessors](https://medium.com/@garyfagan/css-preprocessors-6f226fa16f27)
 
 ### <span style="color:red;"> What is the difference between '+' and '\~' sibling selectors?.
 
@@ -1202,8 +1202,8 @@ div + p {
 
 ### <span style="color:red;"> Additional links
 
-- [W3School's CSS Combinators Page](https://www.w3schools.com/css/css_combinators.asp)
-- [Mozilla's Combinators and groups of selectors page](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Combinators_and_multiple_selectors)
+-   [W3School's CSS Combinators Page](https://www.w3schools.com/css/css_combinators.asp)
+-   [Mozilla's Combinators and groups of selectors page](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Combinators_and_multiple_selectors)
 
 ### <span style="color:red;"> Can you describe how CSS specificity works?
 
@@ -1211,20 +1211,20 @@ div + p {
 
 Assuming the browser has already determined the set of rules for an element, each rule is assigned a matrix of values, which correspond to the following from highest to lowest specificity:
 
-- Inline rules (binary - 1 or 0)
-- Number of id selectors
-- Number of class, pseudo-class and attribute selectors
-- Number of tags and pseudo-element selectors
+-   Inline rules (binary - 1 or 0)
+-   Number of id selectors
+-   Number of class, pseudo-class and attribute selectors
+-   Number of tags and pseudo-element selectors
     When two selectors are compared, the comparison is made on a per-column basis (e.g. an id selector will always be higher than any amount of class selectors, as ids have higher specificity than classes). In cases of equal specificity between multiple rules, the rules that comes last in the page's style sheet is deemed more specific and therefore applied to the element.
 
 ### <span style="color:red;"> Don't forget:
 
-- Specificity matrix: [inline, id, class/pseudo-class/attribute, tag/pseudo-element]
-- In cases of equal specificity, last rule is applied
+-   Specificity matrix: [inline, id, class/pseudo-class/attribute, tag/pseudo-element]
+-   In cases of equal specificity, last rule is applied
 
 ### <span style="color:red;"> Additional links
 
-- [CSS Specificity](https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/)
+-   [CSS Specificity](https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/)
 
 ### <span style="color:red;"> What is debouncing?
 
@@ -1252,11 +1252,11 @@ window.addEventListere(
 
 ### <span style="color:red;"> Don't forget:
 
-- Common use case is to make API call only when user is finished typing while searching.
+-   Common use case is to make API call only when user is finished typing while searching.
 
 ### <span style="color:red;"> Additional links
 
-- [Debouncing explained](https://css-tricks.com/debouncing-throttling-explained-examples/)
+-   [Debouncing explained](https://css-tricks.com/debouncing-throttling-explained-examples/)
 
 ### <span style="color:red;"> What is the DOM?
 
@@ -1266,14 +1266,14 @@ The DOM (Document Object Model) is a cross-platform API that treats HTML and XML
 
 ### <span style="color:red;"> Don't forget:
 
-- The DOM was designed to be independent of any particular programming language, making the structural representation of the document available from a single, consistent API.
-- The DOM is constructed progressively in the browser as a page loads, which is why scripts are often placed at the bottom of a page, in the `<head>` with a `defer` attribute, or inside a `DOMContentLoaded` event listener. Scripts that manipulate DOM nodes should be run after the DOM has been constructed to avoid errors.
-- `document.getElementById()` and `document.querySelector()` are common functions for selecting DOM nodes.
-- Setting the `innerHTML` property to a new value runs the string through the HTML parser, offering an easy way to append dynamic HTML content to a node.
+-   The DOM was designed to be independent of any particular programming language, making the structural representation of the document available from a single, consistent API.
+-   The DOM is constructed progressively in the browser as a page loads, which is why scripts are often placed at the bottom of a page, in the `<head>` with a `defer` attribute, or inside a `DOMContentLoaded` event listener. Scripts that manipulate DOM nodes should be run after the DOM has been constructed to avoid errors.
+-   `document.getElementById()` and `document.querySelector()` are common functions for selecting DOM nodes.
+-   Setting the `innerHTML` property to a new value runs the string through the HTML parser, offering an easy way to append dynamic HTML content to a node.
 
 ### <span style="color:red;"> Additional links
 
-- [MDN docs for DOM](https://developer.mozilla.org/en-US/docs/DOM)
+-   [MDN docs for DOM](https://developer.mozilla.org/en-US/docs/DOM)
 
 ### <span style="color:red;"> What is the difference between the equality operators `==` and `===`?
 
@@ -1283,13 +1283,13 @@ Triple equals (`===`) checks for strict equality, which means both the type and 
 
 ### <span style="color:red;"> Don't forget:
 
-- Whenever possible, use triple equals to test equality because loose equality `==` can have unintuitive results.
-- Type coercion means the values are converted into the same type.
-- Mention of falsy values and their comparison.
+-   Whenever possible, use triple equals to test equality because loose equality `==` can have unintuitive results.
+-   Type coercion means the values are converted into the same type.
+-   Mention of falsy values and their comparison.
 
 ### <span style="color:red;"> Additional links
 
-- [MDN docs for comparison operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators)
+-   [MDN docs for comparison operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators)
 
 ### <span style="color:red;"> What is the difference between an element and a component in React?
 
@@ -1306,13 +1306,13 @@ const domNodeElement = <div />;
 
 ### <span style="color:red;"> Don't forget:
 
-- Elements are immutable, plain objects that describe the DOM nodes or components you want to render.
-- Components can be either classes or functions, that take props as an input and return an element tree as the output.
+-   Elements are immutable, plain objects that describe the DOM nodes or components you want to render.
+-   Components can be either classes or functions, that take props as an input and return an element tree as the output.
 
 ### <span style="color:red;"> Additional links
 
-- [React docs on Rendering Elements](https://reactjs.org/docs/rendering-elements.html)
-- [React docs on Components and Props](https://reactjs.org/docs/components-and-props.html)
+-   [React docs on Rendering Elements](https://reactjs.org/docs/rendering-elements.html)
+-   [React docs on Components and Props](https://reactjs.org/docs/components-and-props.html)
 
 ### <span style="color:red;"> What is the difference between `em` and `rem` units?
 
@@ -1320,17 +1320,17 @@ const domNodeElement = <div />;
 
 Both `em` and `rem` units are based on the `font-size` CSS property. The only difference is where they inherit their values from.
 
-- `em` units inherit their value from the `font-size` of the parent element
-- `rem` units inherit their value from the `font-size` of the root element (`html`)
+-   `em` units inherit their value from the `font-size` of the parent element
+-   `rem` units inherit their value from the `font-size` of the root element (`html`)
     In most browsers, the `font-size` of the root element is set to `16px` by default.
 
 ### <span style="color:red;"> Don't forget:
 
-- Benefits of using `em` and `rem` units
+-   Benefits of using `em` and `rem` units
 
 ### <span style="color:red;"> Additional links
 
-- [CSS units for font-size: px | em | rem](https://medium.com/code-better/css-units-for-font-size-px-em-rem-79f7e592bb97)
+-   [CSS units for font-size: px | em | rem](https://medium.com/code-better/css-units-for-font-size-px-em-rem-79f7e592bb97)
 
 ### <span style="color:red;"> What are error boundaries in React?
 
@@ -1367,7 +1367,7 @@ class ErrorBoundary extends React.Component {
 
 ### <span style="color:red;"> Don't forget:
 
-- Error boundaries only catch errors in the components below them in the tree. An error boundary can't catch an error within itself.
+-   Error boundaries only catch errors in the components below them in the tree. An error boundary can't catch an error within itself.
 
 ### <span style="color:red;"> Additional links
 
@@ -1381,8 +1381,8 @@ Event delegation is a technique of delegating events to a single common ancestor
 DOM events provide useful information about the element that initiated the event via `Event.target`. This allows the parent element to handle behavior as though the target element was listening to the event, rather than all children of the parent or the parent itself.
 This provides two main benefits:
 
-- It increases performance and reduces memory consumption by only needing to register a single event listener to handle potentially thousands of elements.
-- If elements are dynamically added to the parent, there is no need to register new event listeners for them.
+-   It increases performance and reduces memory consumption by only needing to register a single event listener to handle potentially thousands of elements.
+-   If elements are dynamically added to the parent, there is no need to register new event listeners for them.
     Instead of:
 
 ```js
@@ -1403,11 +1403,11 @@ document.addEventListener('click', (e) => {
 
 ### <span style="color:red;"> Don't forget:
 
-- The difference between event bubbling and capturing
+-   The difference between event bubbling and capturing
 
 ### <span style="color:red;"> Additional links
 
-- [Event Delegation](https://davidwalsh.name/event-delegate)
+-   [Event Delegation](https://davidwalsh.name/event-delegate)
 
 ### <span style="color:red;"> What is event-driven programming?
 
@@ -1440,14 +1440,14 @@ With this implementation, `on` is the way to _subscribe_ to an event, while `emi
 
 ### <span style="color:red;"> Don't forget:
 
-- Follows a publish-subscribe pattern.
-- Responds to events that occur by running any callback functions subscribed to the event.
-- Show how to create a simple pub-sub implementation with JavaScript.
+-   Follows a publish-subscribe pattern.
+-   Responds to events that occur by running any callback functions subscribed to the event.
+-   Show how to create a simple pub-sub implementation with JavaScript.
 
 ### <span style="color:red;"> Additional links
 
-- [MDN docs on Events and Handlers](https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Overview_of_Events_and_Handlers)
-- [Understanding Node.js event-driven architecture](https://medium.freecodecamp.org/understanding-node-js-event-driven-architecture-223292fcbc2d)
+-   [MDN docs on Events and Handlers](https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Overview_of_Events_and_Handlers)
+-   [Understanding Node.js event-driven architecture](https://medium.freecodecamp.org/understanding-node-js-event-driven-architecture-223292fcbc2d)
 
 ### <span style="color:red;"> What is the difference between an expression and a statement in JavaScript?
 
@@ -1455,9 +1455,9 @@ With this implementation, `on` is the way to _subscribe_ to an event, while `emi
 
 There are two main syntactic categories in JavaScript: expressions and statements. A third one is both together, referred to as an expression statement. They are roughly summarized as:
 
-- **Expression**: produces a value
-- **Statement**: performs an action
-- **Expression statement**: produces a value and performs an action
+-   **Expression**: produces a value
+-   **Statement**: performs an action
+-   **Expression statement**: produces a value and performs an action
     A general rule of thumb:
     > If you can print it or assign it to a variable, it's an expression. If you can't, it's a statement.
 
@@ -1507,11 +1507,11 @@ This is both an expression and a statement, because we are declaring a variable 
 
 ### <span style="color:red;"> Don't forget:
 
-- Function declarations vs function expressions
+-   Function declarations vs function expressions
 
 ### <span style="color:red;"> Additional links
 
-- [What is the difference between a statement and an expression?](https://stackoverflow.com/questions/12703214/javascript-difference-between-a-statement-and-an-expression)
+-   [What is the difference between a statement and an expression?](https://stackoverflow.com/questions/12703214/javascript-difference-between-a-statement-and-an-expression)
 
 ### <span style="color:red;"> What are truthy and falsy values in JavaScript?
 
@@ -1520,12 +1520,12 @@ This is both an expression and a statement, because we are declaring a variable 
 A value is either truthy or falsy depending on how it is evaluated in a Boolean context. Falsy means false-like and truthy means true-like. Essentially, they are values that are coerced to `true` or `false` when performing certain operations.
 There are 6 falsy values in JavaScript. They are:
 
-- `false`
-- `undefined`
-- `null`
-- `""` (empty string)
-- `NaN`
-- `0` (both `+0` and `-0`)
+-   `false`
+-   `undefined`
+-   `null`
+-   `""` (empty string)
+-   `NaN`
+-   `0` (both `+0` and `-0`)
     Every other value is considered truthy.
     A value's truthiness can be examined by passing it into the `Boolean` function.
 
@@ -1545,8 +1545,8 @@ There is a shortcut for this using the logical NOT `!` operator. Using `!` once 
 
 ### <span style="color:red;"> Additional links
 
-- [Truthy on MDN](https://developer.mozilla.org/en/docs/Glossary/Truthy)
-- [Falsy on MDN](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)
+-   [Truthy on MDN](https://developer.mozilla.org/en/docs/Glossary/Truthy)
+-   [Falsy on MDN](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)
 
 ### <span style="color:red;"> Generate an array, containing the Fibonacci sequence, up until the nth term.
 
@@ -1562,7 +1562,7 @@ const fibonacci = (n) => [...Array(n)].reduce((acc, val, i) => acc.concat(i > 1 
 
 ### <span style="color:red;"> Additional links
 
-- [Similar problem](https://github.com/Chalarangelo/30-seconds-of-code/blob/master/snippets_archive/fibonacciUntilNum.md)
+-   [Similar problem](https://github.com/Chalarangelo/30-seconds-of-code/blob/master/snippets_archive/fibonacciUntilNum.md)
 
 ### <span style="color:red;"> Given an array of words, write a method to output matching sets of anagrams.
 
@@ -1601,16 +1601,16 @@ for (const sortedWord in collectedAnagrams) {
 
 ### <span style="color:red;"> Don't forget:
 
-- Iterate the array
-- Alphabetize each word
-- Store alphabetize word as the key value in a groupedWords object with the original word as the value
-- Compare alphabetize words to object keys and add additional original words when matches are found
-- Iterate over the return object and output the values, when there is more then one. (single values mean no anagram )
+-   Iterate the array
+-   Alphabetize each word
+-   Store alphabetize word as the key value in a groupedWords object with the original word as the value
+-   Compare alphabetize words to object keys and add additional original words when matches are found
+-   Iterate over the return object and output the values, when there is more then one. (single values mean no anagram )
 
 ### <span style="color:red;"> Additional links
 
-- [Find The Anagrams Gist](https://gist.github.com/tinabme/fe6878f5cff42f60a537262503f9b765)
-- [isAnagram function implementation](https://www.30secondsofcode.org/snippet/isAnagram)
+-   [Find The Anagrams Gist](https://gist.github.com/tinabme/fe6878f5cff42f60a537262503f9b765)
+-   [isAnagram function implementation](https://www.30secondsofcode.org/snippet/isAnagram)
 
 ### <span style="color:red;"> Using flexbox, create a 3-column layout where each column takes up a `col-{n} / 12` ratio of the container.
 
@@ -1645,8 +1645,8 @@ Set the `.row` parent to `display: flex;` and use the `flex` shorthand property 
 
 ### <span style="color:red;"> Additional links
 
-- [MDN docs for basic concepts of flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
-- [A complete guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+-   [MDN docs for basic concepts of flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
+-   [A complete guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
 ### <span style="color:red;"> What does `0.1 + 0.2 === 0.3` evaluate to?
 
@@ -1667,12 +1667,12 @@ approxEqual(0.1 + 0.2, 0.3); // true
 
 ### <span style="color:red;"> Don't forget:
 
-- A simple solution to this problem
+-   A simple solution to this problem
 
 ### <span style="color:red;"> Additional links
 
-- [A simple helper function to check equality](https://github.com/Chalarangelo/30-seconds-of-code#approximatelyequal)
-- [Fix "0.1 + 0.2 = 0.300000004" in JavaScript](http://blog.blakesimpson.co.uk/read/61-fix-0-1-0-2-0-300000004-in-javascript)
+-   [A simple helper function to check equality](https://github.com/Chalarangelo/30-seconds-of-code#approximatelyequal)
+-   [Fix "0.1 + 0.2 = 0.300000004" in JavaScript](http://blog.blakesimpson.co.uk/read/61-fix-0-1-0-2-0-300000004-in-javascript)
 
 ### <span style="color:red;"> What is a focus ring? What is the correct solution to handle them?
 
@@ -1687,7 +1687,7 @@ The best solution is an upcoming pseudo-selector `:focus-visible` which can be p
 
 ### <span style="color:red;"> Additional links
 
-- [:focus-visible](https://css-tricks.com/focus-visible-and-backwards-compatibility/)
+-   [:focus-visible](https://css-tricks.com/focus-visible-and-backwards-compatibility/)
 
 ### <span style="color:red;"> What is the difference between the array methods `map()` and `forEach()`?
 
@@ -1697,14 +1697,14 @@ Both methods iterate through the elements of an array. `map()` maps each element
 
 ### <span style="color:red;"> Don't forget:
 
-- Use `forEach()` if you need to iterate over an array and cause mutations to the elements without needing to return values to generate a new array.
-- `map()` is the right choice to keep data immutable where each value of the original array is mapped to a new array.
+-   Use `forEach()` if you need to iterate over an array and cause mutations to the elements without needing to return values to generate a new array.
+-   `map()` is the right choice to keep data immutable where each value of the original array is mapped to a new array.
 
 ### <span style="color:red;"> Additional links
 
-- [MDN docs for forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
-- [MDN docs for map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
-- [JavaScript — Map vs. ForEach](https://codeburst.io/javascript-map-vs-foreach-f38111822c0f)
+-   [MDN docs for forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
+-   [MDN docs for map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+-   [JavaScript — Map vs. ForEach](https://codeburst.io/javascript-map-vs-foreach-f38111822c0f)
 
 ### <span style="color:red;"> What are fragments?
 
@@ -1736,11 +1736,11 @@ render() {
 
 ### <span style="color:red;"> Don't forget:
 
-- Fragments group multiple elements returned from a component, without adding a DOM element around them.
+-   Fragments group multiple elements returned from a component, without adding a DOM element around them.
 
 ### <span style="color:red;"> Additional links
 
-- [React docs on Fragments](https://reactjs.org/docs/fragments.html)
+-   [React docs on Fragments](https://reactjs.org/docs/fragments.html)
 
 ### <span style="color:red;"> What is functional programming?
 
@@ -1750,15 +1750,15 @@ Functional programming is a paradigm in which programs are built in a declarativ
 
 ### <span style="color:red;"> Don't forget:
 
-- Cleaner, more concise development experience
-- Simple function composition
-- Features of JavaScript that enable functional programming (`.map`, `.reduce` etc.)
-- JavaScript is multi-paradigm programming language (Object-Oriented Programming and Functional Programming live in harmony)
+-   Cleaner, more concise development experience
+-   Simple function composition
+-   Features of JavaScript that enable functional programming (`.map`, `.reduce` etc.)
+-   JavaScript is multi-paradigm programming language (Object-Oriented Programming and Functional Programming live in harmony)
 
 ### <span style="color:red;"> Additional links
 
-- [Javascript and Functional Programming: An Introduction](https://hackernoon.com/javascript-and-functional-programming-an-introduction-286aa625e26d)
-- [Master the JavaScript Interview: What is Functional Programming?](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0)
+-   [Javascript and Functional Programming: An Introduction](https://hackernoon.com/javascript-and-functional-programming-an-introduction-286aa625e26d)
+-   [Master the JavaScript Interview: What is Functional Programming?](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0)
 
 ### <span style="color:red;"> Describe your thoughts on how a single page web app should handle focus when changing routes
 
@@ -1781,14 +1781,14 @@ Unless focus is explicitly managed in the app, a scenario like this may happen:
 
 ### <span style="color:red;"> Don't forget:
 
-- Focus issues caused by client-side rendering, instead of server-side
-- Focus should not be left on elements no longer visible on the page
-- Challenges faced by screen reader users and users utilising keyboard navigation
-- Careful manual focus management required
+-   Focus issues caused by client-side rendering, instead of server-side
+-   Focus should not be left on elements no longer visible on the page
+-   Challenges faced by screen reader users and users utilising keyboard navigation
+-   Careful manual focus management required
 
 ### <span style="color:red;"> Additional links
 
-- [Handling Focus on Route Change: Up Your A11y](https://www.upyoura11y.com/handling-focus/)
+-   [Handling Focus on Route Change: Up Your A11y](https://www.upyoura11y.com/handling-focus/)
 
 ### <span style="color:red;"> What are higher-order components?
 
@@ -1802,7 +1802,7 @@ const EnhancedComponent = higherOrderComponent(WrappedComponent);
 
 ### <span style="color:red;"> Don't forget:
 
-- They can be used for state abstraction and manipulation, props manipulation, render high jacking, etc.
+-   They can be used for state abstraction and manipulation, props manipulation, render high jacking, etc.
 
 ### <span style="color:red;"> Additional links
 
@@ -1823,12 +1823,12 @@ Due to hoisting, the local variable `foo` is declared before the `console.log` m
 
 ### <span style="color:red;"> Don't forget:
 
-- Hoisting is JavaScript's default behavior of moving declarations to the top
-- Mention of `strict` mode
+-   Hoisting is JavaScript's default behavior of moving declarations to the top
+-   Mention of `strict` mode
 
 ### <span style="color:red;"> Additional links
 
-- [MDN docs for hoisting](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting)
+-   [MDN docs for hoisting](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting)
 
 ### <span style="color:red;"> How does hoisting work in JavaScript?
 
@@ -1872,13 +1872,13 @@ var myFunction = function () {
 
 ### <span style="color:red;"> Don't forget:
 
-- Hoisting is JavaScript's default behavior of moving declarations to the top
-- Functions declarations are hoisted before variable declarations
+-   Hoisting is JavaScript's default behavior of moving declarations to the top
+-   Functions declarations are hoisted before variable declarations
 
 ### <span style="color:red;"> Additional links
 
-- [MDN docs for hoisting](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting)
-- [Understanding Hoisting in JavaScript](https://scotch.io/tutorials/understanding-hoisting-in-javascript)
+-   [MDN docs for hoisting](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting)
+-   [Understanding Hoisting in JavaScript](https://scotch.io/tutorials/understanding-hoisting-in-javascript)
 
 ### <span style="color:red;"> Can a web page contain multiple `<header>` elements? What about `<footer>` elements?
 
@@ -1888,11 +1888,11 @@ Yes to both. The W3 documents state that the tags represent the header(`<header>
 
 ### <span style="color:red;"> Don't forget:
 
-- W3 recommends having as many as you want, but only 1 of each for each "section" of your page, i.e. body, section etc.
+-   W3 recommends having as many as you want, but only 1 of each for each "section" of your page, i.e. body, section etc.
 
 ### <span style="color:red;"> Additional links
 
-- [StackOverflow - Using header or footer tag twice](https://stackoverflow.com/questions/4837269/html5-using-header-or-footer-tag-twice?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa)
+-   [StackOverflow - Using header or footer tag twice](https://stackoverflow.com/questions/4837269/html5-using-header-or-footer-tag-twice?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa)
 
 ### <span style="color:red;"> Discuss the differences between an HTML specification and a browser's implementation thereof.
 
@@ -1903,13 +1903,13 @@ A browser is said to "support" a specification if it handles valid documents acc
 
 ### <span style="color:red;"> Don't forget:
 
-- `HTML5` defines some rules to follow for an invalid `HTML5` document (i.e., one that contains syntactical errors)
-- However, invalid documents may contain anything, so it's impossible for the specification to handle all possibilities comprehensively.
-- Thus, many decisions about how to handle malformed documents are left up to the browser.
+-   `HTML5` defines some rules to follow for an invalid `HTML5` document (i.e., one that contains syntactical errors)
+-   However, invalid documents may contain anything, so it's impossible for the specification to handle all possibilities comprehensively.
+-   Thus, many decisions about how to handle malformed documents are left up to the browser.
 
 ### <span style="color:red;"> Additional links
 
-- [HTML 5.2 WWW Specifications](https://www.w3.org/TR/html52/)
+-   [HTML 5.2 WWW Specifications](https://www.w3.org/TR/html52/)
 
 ### <span style="color:red;"> What is the difference between HTML and React event handling?
 
@@ -1942,11 +1942,11 @@ function handleClick(e) {
 
 ### <span style="color:red;"> Don't forget:
 
-- HTML uses lowercase, React uses camelCase.
+-   HTML uses lowercase, React uses camelCase.
 
 ### <span style="color:red;"> Additional links
 
-- [React docs on Handling Events](https://reactjs.org/docs/handling-events.html)
+-   [React docs on Handling Events](https://reactjs.org/docs/handling-events.html)
 
 ### <span style="color:red;"> What are some differences that XHTML has compared to HTML?
 
@@ -1954,38 +1954,38 @@ function handleClick(e) {
 
 Some of the key differences are:
 
-- An XHTML element must have an XHTML `<DOCTYPE>`
-- Attributes values must be enclosed in quotes
-- Attribute minimization is forbidden (e.g. one has to use `checked="checked"` instead of `checked`)
-- Elements must always be properly nested
-- Elements must always be closed
-- Special characters must be escaped
+-   An XHTML element must have an XHTML `<DOCTYPE>`
+-   Attributes values must be enclosed in quotes
+-   Attribute minimization is forbidden (e.g. one has to use `checked="checked"` instead of `checked`)
+-   Elements must always be properly nested
+-   Elements must always be closed
+-   Special characters must be escaped
 
 ### <span style="color:red;"> Don't forget:
 
-- Any element can be self-closed
-- Tags ands attributes are case-sensitive, usually lowercase
+-   Any element can be self-closed
+-   Tags ands attributes are case-sensitive, usually lowercase
 
 ### <span style="color:red;"> Additional links
 
-- [W3Schools docs for HTML and XHTML](https://www.w3schools.com/html/html_xhtml.asp)
+-   [W3Schools docs for HTML and XHTML](https://www.w3schools.com/html/html_xhtml.asp)
 
 ### <span style="color:red;"> Briefly describe the correct usage of the following HTML5 semantic elements: `<header>`, `<article>`,`<section>`, `<footer>`
 
 ### <span style="color:red;"> Answer
 
-- `<header>` is used to contain introductory and navigational information about a section of the page. This can include the section heading, the author's name, time and date of publication, table of contents, or other navigational information.
-- `<article>` is meant to house a self-contained composition that can logically be independently recreated outside of the page without losing its meaning. Individual blog posts or news stories are good examples.
-- `<section>` is a flexible container for holding content that shares a common informational theme or purpose.
-- `<footer>` is used to hold information that should appear at the end of a section of content and contain additional information about the section. Author's name, copyright information, and related links are typical examples of such content.
+-   `<header>` is used to contain introductory and navigational information about a section of the page. This can include the section heading, the author's name, time and date of publication, table of contents, or other navigational information.
+-   `<article>` is meant to house a self-contained composition that can logically be independently recreated outside of the page without losing its meaning. Individual blog posts or news stories are good examples.
+-   `<section>` is a flexible container for holding content that shares a common informational theme or purpose.
+-   `<footer>` is used to hold information that should appear at the end of a section of content and contain additional information about the section. Author's name, copyright information, and related links are typical examples of such content.
 
 ### <span style="color:red;"> Don't forget:
 
-- Other semantic elements are `<form>` and `<table>`
+-   Other semantic elements are `<form>` and `<table>`
 
 ### <span style="color:red;"> Additional links
 
-- [HTML 5 Semantic Elements](https://www.w3schools.com/html/html5_semantic_elements.asp)
+-   [HTML 5 Semantic Elements](https://www.w3schools.com/html/html5_semantic_elements.asp)
 
 ### <span style="color:red;"> What is HTML5 Web Storage? Explain `localStorage` and `sessionStorage`.
 
@@ -1994,21 +1994,21 @@ Some of the key differences are:
 With HTML5, web pages can store data locally within the user's browser. The data is stored in name/value pairs, and a web page can only access data stored by itself.
 **Differences between `localStorage` and `sessionStorage` regarding lifetime:**
 
-- Data stored through `localStorage` is permanent: it does not expire and remains stored on the user's computer until a web app deletes it or the user asks the browser to delete it.
-- `sessionStorage` has the same lifetime as the top-level window or browser tab in which the data got stored. When the tab is permanently closed, any data stored through `sessionStorage` is deleted.
-- **Differences between `localStorage` and `sessionStorage` regarding storage scope:** Both forms of storage are scoped to the document origin so 
-- `sessionStorage` is also scoped on a per-window basis. Two browser tabs with documents from the same origin have separate `sessionStorage` data.
-- Unlike in `localStorage`, the same scripts from the same origin can't access each other's `sessionStorage` when opened in different tabs.
+-   Data stored through `localStorage` is permanent: it does not expire and remains stored on the user's computer until a web app deletes it or the user asks the browser to delete it.
+-   `sessionStorage` has the same lifetime as the top-level window or browser tab in which the data got stored. When the tab is permanently closed, any data stored through `sessionStorage` is deleted.
+-   **Differences between `localStorage` and `sessionStorage` regarding storage scope:** Both forms of storage are scoped to the document origin so
+-   `sessionStorage` is also scoped on a per-window basis. Two browser tabs with documents from the same origin have separate `sessionStorage` data.
+-   Unlike in `localStorage`, the same scripts from the same origin can't access each other's `sessionStorage` when opened in different tabs.
 
 ### <span style="color:red;"> Don't forget:
 
-- Earlier, this was done with cookies.
-- The storage limit is far larger (at least 5MB) than with cookies and its faster.
-- The data is never transferred to the server and can only be used if the client specifically asks for it.
+-   Earlier, this was done with cookies.
+-   The storage limit is far larger (at least 5MB) than with cookies and its faster.
+-   The data is never transferred to the server and can only be used if the client specifically asks for it.
 
 ### <span style="color:red;"> Additional links
 
-- [W3Schools - HTML5 Webstorage](https://www.w3schools.com/html/html5_webstorage.asp)
+-   [W3Schools - HTML5 Webstorage](https://www.w3schools.com/html/html5_webstorage.asp)
 
 ### <span style="color:red;"> What is the reason for wrapping the entire contents of a JavaScript source file in a function that is immediately invoked?
 
@@ -2029,12 +2029,12 @@ myLibrary.publicMethod(); // 2
 
 ### <span style="color:red;"> Don't forget:
 
-- Used among many popular JavaScript libraries
-- Creates a private namespace
+-   Used among many popular JavaScript libraries
+-   Creates a private namespace
 
 ### <span style="color:red;"> Additional links
 
-- [MDN docs for closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
+-   [MDN docs for closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
 
 ### <span style="color:red;"> Explain the differences between imperative and declarative programming.
 
@@ -2042,8 +2042,8 @@ myLibrary.publicMethod(); // 2
 
 These two types of programming can roughly be summarized as:
 
-- Imperative: **how** to achieve something
-- Declarative: **what** should be achieved
+-   Imperative: **how** to achieve something
+-   Declarative: **what** should be achieved
     A common example of declarative programming is CSS. The developer specifies CSS properties that describe what something should look like rather than how to achieve it. The "how" is abstracted away by the browser.
     On the other hand, imperative programming involves the steps required to achieve something. In JavaScript, the differences can be contrasted like so:
 
@@ -2070,12 +2070,12 @@ We declare that the new array is mapped to a new one where each value is doubled
 
 ### <span style="color:red;"> Don't forget:
 
-- Declarative programming often works with functions and expressions. Imperative programming frequently uses statements and relies on low-level features that cause mutations, while declarative programming has a strong focus on abstraction and purity.
-- Declarative programming is more terse and easier to process at a glance.
+-   Declarative programming often works with functions and expressions. Imperative programming frequently uses statements and relies on low-level features that cause mutations, while declarative programming has a strong focus on abstraction and purity.
+-   Declarative programming is more terse and easier to process at a glance.
 
 ### <span style="color:red;"> Additional links
 
-- [Declarative vs Imperative Programming](https://codeburst.io/declarative-vs-imperative-programming-a8a7c93d9ad2)
+-   [Declarative vs Imperative Programming](https://codeburst.io/declarative-vs-imperative-programming-a8a7c93d9ad2)
 
 ### <span style="color:red;"> What are inline conditional expressions?
 
@@ -2112,7 +2112,7 @@ function App({ messages, isVisible }) {
 
 ### <span style="color:red;"> Additional links
 
-- [React docs on Conditional Rendering](https://reactjs.org/docs/conditional-rendering.html)
+-   [React docs on Conditional Rendering](https://reactjs.org/docs/conditional-rendering.html)
 
 ### <span style="color:red;"> What is a key? What are the benefits of using it in lists?
 
@@ -2124,18 +2124,18 @@ Keys are a special string attribute that helps React identify which items have b
 const todoItems = todos.map((todo) => <li key={todo.id}>{todo.text}</li>);
 ```
 
-- Using indexes as keys is not recommended if the order of items may change, as it might negatively impact performance and may cause issues with component state.
-- If you extract list items as a separate component then apply keys on the list component instead of the `<li>` tag.
+-   Using indexes as keys is not recommended if the order of items may change, as it might negatively impact performance and may cause issues with component state.
+-   If you extract list items as a separate component then apply keys on the list component instead of the `<li>` tag.
 
 ### <span style="color:red;"> Don't forget:
 
-- Keys give elements in a collection a stable identity and help React identify changes.
-- You should avoid using indexes as keys if the order of items may change.
-- You should lift the key up to the component, instead of the `<li>` element, if you extract list items as components.
+-   Keys give elements in a collection a stable identity and help React identify changes.
+-   You should avoid using indexes as keys if the order of items may change.
+-   You should lift the key up to the component, instead of the `<li>` element, if you extract list items as components.
 
 ### <span style="color:red;"> Additional links
 
-- [React docs on Lists and Keys](https://reactjs.org/docs/lists-and-keys.html)
+-   [React docs on Lists and Keys](https://reactjs.org/docs/lists-and-keys.html)
 
 ### <span style="color:red;"> What are landmark roles and how can they be useful?
 
@@ -2151,13 +2151,13 @@ For example,
 
 ### <span style="color:red;"> Don't forget:
 
-- Identify sections of a page
-- Assist users in navigating a page
+-   Identify sections of a page
+-   Assist users in navigating a page
 
 ### <span style="color:red;"> Additional links
 
-- [ARIA Landmark Roles](https://www.washington.edu/accessibility/web/landmarks/)
-- [Using ARIA landmarks to identify regions of a page](https://www.w3.org/WAI/GL/wiki/Using_ARIA_landmarks_to_identify_regions_of_a_page)
+-   [ARIA Landmark Roles](https://www.washington.edu/accessibility/web/landmarks/)
+-   [Using ARIA landmarks to identify regions of a page](https://www.w3.org/WAI/GL/wiki/Using_ARIA_landmarks_to_identify_regions_of_a_page)
 
 ### <span style="color:red;"> What is the difference between lexical scoping and dynamic scoping?
 
@@ -2167,13 +2167,13 @@ Lexical scoping refers to when the location of a function's definition determine
 
 ### <span style="color:red;"> Don't forget:
 
-- Lexical scoping is also known as static scoping.
-- Lexical scoping in JavaScript allows for the concept of closures.
-- Most languages use lexical scoping because it tends to promote source code that is more easily understood.
+-   Lexical scoping is also known as static scoping.
+-   Lexical scoping in JavaScript allows for the concept of closures.
+-   Most languages use lexical scoping because it tends to promote source code that is more easily understood.
 
 ### <span style="color:red;"> Additional links
 
-- [Mozilla Docs - Closures & Lexical Scoping](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
+-   [Mozilla Docs - Closures & Lexical Scoping](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
 
 ### <span style="color:red;"> What are the lifecycle methods in React?
 
@@ -2233,7 +2233,7 @@ const mask = (str, maskChar = '#') => str.slice(-4).padStart(str.length, maskCha
 
 ### <span style="color:red;"> Don't forget:
 
-- Short, one-line functional solutions to problems should be preferred provided they are efficient
+-   Short, one-line functional solutions to problems should be preferred provided they are efficient
 
 ### <span style="color:red;"> Additional links
 
@@ -2241,17 +2241,17 @@ const mask = (str, maskChar = '#') => str.slice(-4).padStart(str.length, maskCha
 
 ### <span style="color:red;"> Answer
 
-- `all`, which applies to all media type devices
-- `print`, which only applies to printers
-- `screen`, which only applies to screens (desktops, tablets, mobile etc.)
-- `speech`, which only applies to screenreaders
+-   `all`, which applies to all media type devices
+-   `print`, which only applies to printers
+-   `screen`, which only applies to screens (desktops, tablets, mobile etc.)
+-   `speech`, which only applies to screenreaders
 
 ### <span style="color:red;"> Don't forget:
 
 ### <span style="color:red;"> Additional links
 
-- [MDN docs for `@media` rule](https://developer.mozilla.org/en-US/docs/Web/CSS/@media)
-- [MDN docs for using media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)
+-   [MDN docs for `@media` rule](https://developer.mozilla.org/en-US/docs/Web/CSS/@media)
+-   [MDN docs for using media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)
 
 ### <span style="color:red;"> What is memoization?
 
@@ -2275,13 +2275,13 @@ const memoize = (fn) => {
 
 ### <span style="color:red;"> Don't forget:
 
-- The above technique returns a unary function even if the function can take multiple arguments.
-- The first function call will be slower than usual because of the overhead created by checking if a cached result exists and setting a result before returning the value.
-- Memoization increases performance on subsequent function calls but still needs to do work on the first call.
+-   The above technique returns a unary function even if the function can take multiple arguments.
+-   The first function call will be slower than usual because of the overhead created by checking if a cached result exists and setting a result before returning the value.
+-   Memoization increases performance on subsequent function calls but still needs to do work on the first call.
 
 ### <span style="color:red;"> Additional links
 
-- [Implementing memoization in JavaScript](https://www.sitepoint.com/implementing-memoization-in-javascript/)
+-   [Implementing memoization in JavaScript](https://www.sitepoint.com/implementing-memoization-in-javascript/)
 
 ### <span style="color:red;"> How do you ensure methods have the correct `this` context in React component classes?
 
@@ -2299,7 +2299,7 @@ handleClick() {
 }
 ```
 
-- The `bind` approach can be verbose and requires defining a `constructor`, so the new public class fields syntax is generally preferred:
+-   The `bind` approach can be verbose and requires defining a `constructor`, so the new public class fields syntax is generally preferred:
 
 ```js
 handleClick = () => {
@@ -2314,7 +2314,7 @@ render() {
 }
 ```
 
-- You can also use an inline arrow function, because lexical `this` (referring to the component instance) is preserved:
+-   You can also use an inline arrow function, because lexical `this` (referring to the component instance) is preserved:
 
 ```js
 <button onClick={(e) => this.handleClick(e)}>Click me</button>
@@ -2324,12 +2324,12 @@ Note that extra re-rendering can occur using this technique because a new functi
 
 ### <span style="color:red;"> Don't forget:
 
-- You can either bind methods to the component instance context in the constructor, use public class fields syntax, or use inline arrow functions.
+-   You can either bind methods to the component instance context in the constructor, use public class fields syntax, or use inline arrow functions.
 
 ### <span style="color:red;"> Additional links
 
-- [React docs on Handling Events](https://reactjs.org/docs/handling-events.html)
-- [React docs on Passing Functions to Components](https://reactjs.org/docs/faq-functions.html#how-do-i-bind-a-function-to-a-component-instance)
+-   [React docs on Handling Events](https://reactjs.org/docs/handling-events.html)
+-   [React docs on Passing Functions to Components](https://reactjs.org/docs/faq-functions.html#how-do-i-bind-a-function-to-a-component-instance)
 
 ### <span style="color:red;"> What is a MIME type and what is it used for?
 
@@ -2339,11 +2339,11 @@ Note that extra re-rendering can occur using this technique because a new functi
 
 ### <span style="color:red;"> Don't forget:
 
-- A `MIME type` actually has two parts: a type and a subtype that are separated by a slash (/). For example, the `MIME type` for Microsoft Word files is `application/msword` (i.e., type is application and the subtype is msword).
+-   A `MIME type` actually has two parts: a type and a subtype that are separated by a slash (/). For example, the `MIME type` for Microsoft Word files is `application/msword` (i.e., type is application and the subtype is msword).
 
 ### <span style="color:red;"> Additional links
 
-- [MIME Type - MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types)
+-   [MIME Type - MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types)
 
 ### <span style="color:red;"> Contrast mutable and immutable values, and mutating vs non-mutating methods.
 
@@ -2351,8 +2351,8 @@ Note that extra re-rendering can occur using this technique because a new functi
 
 The two terms can be contrasted as:
 
-- Mutable: subject to change
-- Immutable: cannot change
+-   Mutable: subject to change
+-   Immutable: cannot change
     In JavaScript, objects are mutable while primitive values are immutable. This means operations performed on objects can change the original reference in some way, while operations performed on a primitive value cannot change the original value.
     All `String.prototype` methods do not have an effect on the original string and return a new string. On the other hand, while some methods of `Array.prototype` do not mutate the original array reference and produce a fresh array, some cause mutations.
 
@@ -2366,11 +2366,11 @@ originalArray.concat(4); // returns a new array, does not mutate the original
 
 ### <span style="color:red;"> Don't forget:
 
-- List of mutating and non-mutating array methods
+-   List of mutating and non-mutating array methods
 
 ### <span style="color:red;"> Additional links
 
-- [Mutating vs non-mutating array methods](https://lorenstewart.me/2017/01/22/javascript-array-methods-mutating-vs-non-mutating/)
+-   [Mutating vs non-mutating array methods](https://lorenstewart.me/2017/01/22/javascript-array-methods-mutating-vs-non-mutating/)
 
 ### <span style="color:red;"> What is the only value not equal to itself in JavaScript?
 
@@ -2380,12 +2380,12 @@ originalArray.concat(4); // returns a new array, does not mutate the original
 
 ### <span style="color:red;"> Don't forget:
 
-- The difference between `isNaN()` and `Number.isNaN()`
-- `const isNaN = x => x !== x`
+-   The difference between `isNaN()` and `Number.isNaN()`
+-   `const isNaN = x => x !== x`
 
 ### <span style="color:red;"> Additional links
 
-- [MDN docs for `NaN`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN)
+-   [MDN docs for `NaN`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN)
 
 ### <span style="color:red;"> NodeJS often uses a callback pattern where if an error is encountered during execution, this error is passed as the first argument to the callback. What are the advantages of this pattern?
 
@@ -2405,9 +2405,9 @@ fs.readFile(filePath, function (err, data) {
 
 Advantages include:
 
-- Not needing to process data if there is no need to even reference it
-- Having a consistent API leads to more adoption
-- Ability to easily adapt a callback pattern that will lead to more maintainable code
+-   Not needing to process data if there is no need to even reference it
+-   Having a consistent API leads to more adoption
+-   Ability to easily adapt a callback pattern that will lead to more maintainable code
     As you can see from below example, the callback is called with null as its first argument if there is no error. However, if there is an error, you create an Error object, which then becomes the callback's only parameter. The callback function allows a user to easily know whether or not an error occurred.
     This practice is also called the _Node.js error convention_, and this kind of callback implementations are called _error-first callbacks_.
 
@@ -2439,12 +2439,12 @@ isTrue(true, callback);
 
 ### <span style="color:red;"> Don't forget:
 
-- This is just a convention. However, you should stick to it.
+-   This is just a convention. However, you should stick to it.
 
 ### <span style="color:red;"> Additional links
 
-- [The Node.js Way - Understanding Error-First Callbacks](http://fredkschott.com/post/2014/03/understanding-error-first-callbacks-in-node-js/)
-- [What are the error conventions?](https://docs.nodejitsu.com/articles/errors/what-are-the-error-conventions)
+-   [The Node.js Way - Understanding Error-First Callbacks](http://fredkschott.com/post/2014/03/understanding-error-first-callbacks-in-node-js/)
+-   [What are the error conventions?](https://docs.nodejitsu.com/articles/errors/what-are-the-error-conventions)
 
 ### <span style="color:red;"> What is the event loop in Node.js?
 
@@ -2454,11 +2454,11 @@ The event loop handles all async callbacks. Callbacks are queued in a loop, whil
 
 ### <span style="color:red;"> Don't forget:
 
-- The event loop allows Node.js to perform non-blocking I/O operations, despite the fact that JavaScript is single-threaded
+-   The event loop allows Node.js to perform non-blocking I/O operations, despite the fact that JavaScript is single-threaded
 
 ### <span style="color:red;"> Additional links
 
-- [Node.js docs on event loop, timers and process.nextTick()](https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/)
+-   [Node.js docs on event loop, timers and process.nextTick()](https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/)
 
 ### <span style="color:red;"> What is the difference between `null` and `undefined`?
 
@@ -2468,14 +2468,14 @@ In JavaScript, two values discretely represent nothing - `undefined` and `null`.
 
 ### <span style="color:red;"> Don't forget:
 
-- `typeof undefined` evaluates to `"undefined"`.
-- `typeof null` evaluates `"object"`. However, it is still a primitive value and this is considered an implementation bug in JavaScript.
-- `undefined == null` evaluates to `true`.
+-   `typeof undefined` evaluates to `"undefined"`.
+-   `typeof null` evaluates `"object"`. However, it is still a primitive value and this is considered an implementation bug in JavaScript.
+-   `undefined == null` evaluates to `true`.
 
 ### <span style="color:red;"> Additional links
 
-- [MDN docs for null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)
-- [MDN docs for undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)
+-   [MDN docs for null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)
+-   [MDN docs for undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)
 
 ### <span style="color:red;"> Describe the different ways to create an object. When should certain ways be preferred over others?
 
@@ -2557,8 +2557,8 @@ Object.create(personProto, {
 
 ### <span style="color:red;"> Don't forget:
 
-- Prototypes are objects that other objects inherit properties and methods from.
-- Factory functions offer private properties and methods through a closure but increase memory usage as a tradeoff, while classes do not have private properties or methods but reduce memory impact by reusing a single prototype object.
+-   Prototypes are objects that other objects inherit properties and methods from.
+-   Factory functions offer private properties and methods through a closure but increase memory usage as a tradeoff, while classes do not have private properties or methods but reduce memory impact by reusing a single prototype object.
 
 ### <span style="color:red;"> Additional links
 
@@ -2577,8 +2577,8 @@ myFunction('argument1', 'argument2');
 
 ### <span style="color:red;"> Don't forget:
 
-- `arguments` is an array-like object containing information about the arguments supplied to an invoked function.
-- `myFunction.length` describes the arity of a function (how many parameters it has, regardless of how many arguments it is supplied).
+-   `arguments` is an array-like object containing information about the arguments supplied to an invoked function.
+-   `myFunction.length` describes the arity of a function (how many parameters it has, regardless of how many arguments it is supplied).
 
 ### <span style="color:red;"> Additional links
 
@@ -2590,11 +2590,11 @@ JavaScript always passes by value. However, with objects, the value is a referen
 
 ### <span style="color:red;"> Don't forget:
 
-- Difference between pass-by-value and pass-by-reference
+-   Difference between pass-by-value and pass-by-reference
 
 ### <span style="color:red;"> Additional links
 
-- [JavaScript Value vs Reference](https://medium.com/dailyjs/back-to-roots-javascript-value-vs-reference-8fb69d587a18)
+-   [JavaScript Value vs Reference](https://medium.com/dailyjs/back-to-roots-javascript-value-vs-reference-8fb69d587a18)
 
 ### <span style="color:red;"> How do you pass an argument to an event handler or callback?
 
@@ -2611,7 +2611,7 @@ You can use an arrow function to wrap around an event handler and pass arguments
 
 ### <span style="color:red;"> Additional links
 
-- [React docs on Handling Events](https://reactjs.org/docs/handling-events.html)
+-   [React docs on Handling Events](https://reactjs.org/docs/handling-events.html)
 
 ### <span style="color:red;"> Create a function `pipe` that performs left-to-right function composition by returning a function that accepts one argument.
 
@@ -2636,11 +2636,11 @@ const pipe =
 
 ### <span style="color:red;"> Don't forget:
 
-- Function composition is the process of combining two or more functions to produce a new function.
+-   Function composition is the process of combining two or more functions to produce a new function.
 
 ### <span style="color:red;"> Additional links
 
-- [What is function composition?](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-function-composition-20dfb109a1a0)
+-   [What is function composition?](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-function-composition-20dfb109a1a0)
 
 ### <span style="color:red;"> What are portals in React?
 
@@ -2658,7 +2658,7 @@ The first argument (`child`) is any renderable React child, such as an element, 
 
 ### <span style="color:red;"> Additional links
 
-- [React docs on Portals](https://reactjs.org/docs/portals.html)
+-   [React docs on Portals](https://reactjs.org/docs/portals.html)
 
 ### <span style="color:red;"> What is the difference between the postfix `i++` and prefix `++i` increment operators?
 
@@ -2691,16 +2691,16 @@ let i = 0;
 
 A `Promise` is in one of these states:
 
-- pending: initial state, neither fulfilled nor rejected.
-- fulfilled: meaning that the operation completed successfully.
-- rejected: meaning that the operation failed.
+-   pending: initial state, neither fulfilled nor rejected.
+-   fulfilled: meaning that the operation completed successfully.
+-   rejected: meaning that the operation failed.
     A pending promise can either be fulfilled with a value, or rejected with a reason (error). When either of these options happens, the associated handlers queued up by a promise's then method are called.
 
 ### <span style="color:red;"> Don't forget:
 
 ### <span style="color:red;"> Additional links
 
-- [Official Web Docs - Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+-   [Official Web Docs - Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 
 ### <span style="color:red;"> What are Promises?
 
@@ -2720,11 +2720,11 @@ new Promise((resolve, reject) => {
 
 ### <span style="color:red;"> Don't forget:
 
-- Take a look into the other questions regarding `Promise`s!
+-   Take a look into the other questions regarding `Promise`s!
 
 ### <span style="color:red;"> Additional links
 
-- [Master the JavaScript Interview: What is a Promise?](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e772618)
+-   [Master the JavaScript Interview: What is a Promise?](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e772618)
 
 ### <span style="color:red;"> How to apply prop validation in React?
 
@@ -2751,8 +2751,8 @@ class User extends React.Component {
 
 ### <span style="color:red;"> Don't forget:
 
-- We can define custom `propTypes`
-- Using `propTypes` is not mandatory. However, it is a good practice and can reduce bugs.
+-   We can define custom `propTypes`
+-   Using `propTypes` is not mandatory. However, it is a good practice and can reduce bugs.
 
 ### <span style="color:red;"> Additional links
 
@@ -2767,7 +2767,7 @@ In the prototypal inheritance paradigm, object instances inherit directly from o
 
 ### <span style="color:red;"> Additional links
 
-- [MDN docs for inheritance and the prototype chain](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
+-   [MDN docs for inheritance and the prototype chain](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
 
 ### <span style="color:red;"> What is a pure function?
 
@@ -2775,8 +2775,8 @@ In the prototypal inheritance paradigm, object instances inherit directly from o
 
 A pure function is a function that satisfies these two conditions:
 
-- Given the same input, the function returns the same output.
-- The function doesn't cause side effects outside of the function's scope (i.e. mutate data outside the function or data supplied to the function).
+-   Given the same input, the function returns the same output.
+-   The function doesn't cause side effects outside of the function's scope (i.e. mutate data outside the function or data supplied to the function).
     Pure functions can mutate local data within the function as long as it satisfies the two conditions above.
 
 ### <span style="color:red;"> Pure
@@ -2797,13 +2797,13 @@ const c = (arr) => arr.sort((a, b) => a - b);
 
 ### <span style="color:red;"> Don't forget:
 
-- Pure functions are easier to reason about due to their reliability.
-- All functions should be pure unless explicitly causing a side effect (i.e. `setInnerHTML`).
-- If a function does not return a value, it is an indication that it is causing side effects.
+-   Pure functions are easier to reason about due to their reliability.
+-   All functions should be pure unless explicitly causing a side effect (i.e. `setInnerHTML`).
+-   If a function does not return a value, it is an indication that it is causing side effects.
 
 ### <span style="color:red;"> Additional links
 
-- [Pure functions in JavaScript](http://www.nicoespeon.com/en/2015/01/pure-functions-javascript/)
+-   [Pure functions in JavaScript](http://www.nicoespeon.com/en/2015/01/pure-functions-javascript/)
 
 ### <span style="color:red;"> How do you write comments inside a JSX tree in React?
 
@@ -2850,12 +2850,12 @@ In the above example, the base condition is met if `filter()` returns an empty a
 
 ### <span style="color:red;"> Don't forget:
 
-- Recursion is useful when working with data structures containing an unknown number of nested structures.
-- Recursion must have a base condition to be met that breaks out of the loop or it will call itself indefinitely.
+-   Recursion is useful when working with data structures containing an unknown number of nested structures.
+-   Recursion must have a base condition to be met that breaks out of the loop or it will call itself indefinitely.
 
 ### <span style="color:red;"> Additional links
 
-- [In plain English, what is recursion?](https://softwareengineering.stackexchange.com/questions/25052/in-plain-english-what-is-recursion)
+-   [In plain English, what is recursion?](https://softwareengineering.stackexchange.com/questions/25052/in-plain-english-what-is-recursion)
 
 ### <span style="color:red;"> What is the output of the following code?
 
@@ -2873,13 +2873,13 @@ The first `console.log` outputs `true` because JavaScript's compiler performs ty
 
 ### <span style="color:red;"> Don't forget:
 
-- JavaScript performs automatic type conversion
-- Objects are compared by reference
-- Primitives are compared by value
+-   JavaScript performs automatic type conversion
+-   Objects are compared by reference
+-   Primitives are compared by value
 
 ### <span style="color:red;"> Additional links
 
-- [JavaScript Value vs Reference](https://medium.com/dailyjs/back-to-roots-javascript-value-vs-reference-8fb69d587a18)
+-   [JavaScript Value vs Reference](https://medium.com/dailyjs/back-to-roots-javascript-value-vs-reference-8fb69d587a18)
 
 ### <span style="color:red;"> What are refs in React? When should they be used?
 
@@ -2887,9 +2887,9 @@ The first `console.log` outputs `true` because JavaScript's compiler performs ty
 
 Refs provide a way to access DOM nodes or React elements created in the render method. Refs should be used sparringly, but there are some good use cases for refs, such as:
 
-- Managing focus, text selection, or media playback.
-- Triggering imperative animations.
-- Integrating with third-party DOM libraries.
+-   Managing focus, text selection, or media playback.
+-   Triggering imperative animations.
+-   Integrating with third-party DOM libraries.
     Refs are created using `React.createRef()` method and attached to React elements via the `ref` attribute. In order to use refs throughout the component, assign the `ref` to the instance property within the constructor:
 
 ```js
@@ -2908,13 +2908,13 @@ Refs can also be used in functional components with the help of closures.
 
 ### <span style="color:red;"> Don't forget:
 
-- Refs are used to return a reference to an element.
-- Refs shouldn't be overused.
-- You can create a ref using `React.createRef()` and attach to elements via the `ref` attribute.
+-   Refs are used to return a reference to an element.
+-   Refs shouldn't be overused.
+-   You can create a ref using `React.createRef()` and attach to elements via the `ref` attribute.
 
 ### <span style="color:red;"> Additional links
 
-- [React docs on Refs and the DOM](https://reactjs.org/docs/refs-and-the-dom.html)
+-   [React docs on Refs and the DOM](https://reactjs.org/docs/refs-and-the-dom.html)
 
 ### <span style="color:red;"> Where and why is the `rel="noopener"` attribute used?
 
@@ -2924,13 +2924,13 @@ The `rel="noopener"` is an attribute used in `<a>` elements (hyperlinks). It pre
 
 ### <span style="color:red;"> Don't forget:
 
-- `rel="noopener"` is applied to hyperlinks.
-- `rel="noopener"` prevents opened links from manipulating the source page.
+-   `rel="noopener"` is applied to hyperlinks.
+-   `rel="noopener"` prevents opened links from manipulating the source page.
 
 ### <span style="color:red;"> Additional links
 
-- [Open external anchors using rel="noopener"](https://developers.google.com/web/tools/lighthouse/audits/noopener)
-- [About rel="noopener"](https://mathiasbynens.github.io/rel-noopener/)
+-   [Open external anchors using rel="noopener"](https://developers.google.com/web/tools/lighthouse/audits/noopener)
+-   [About rel="noopener"](https://mathiasbynens.github.io/rel-noopener/)
 
 ### <span style="color:red;"> What is REST?
 
@@ -2939,21 +2939,21 @@ The `rel="noopener"` is an attribute used in `<a>` elements (hyperlinks). It pre
 REST (REpresentational State Transfer) is a software design pattern for network architecture. A RESTful web application exposes data in the form of information about its resources.
 Generally, this concept is used in web applications to manage state. With most applications, there is a common theme of reading, creating, updating, and destroying data. Data is modularized into separate tables like `posts`, `users`, `comments`, and a RESTful API exposes access to this data with:
 
-- An identifier for the resource. This is known as the endpoint or URL for the resource.
-- The operation the server should perform on that resource in the form of an HTTP method or verb. The common HTTP methods are GET, POST, PUT, and DELETE.
-- Here is an example of the 
-- Reading: `/posts/` =\> GET
-- Creating: `/posts/new` =\> POS
-- Updating: `/posts/:id` =\> PUT
-- Destroying: `/posts/:id` =\> DELETE
+-   An identifier for the resource. This is known as the endpoint or URL for the resource.
+-   The operation the server should perform on that resource in the form of an HTTP method or verb. The common HTTP methods are GET, POST, PUT, and DELETE.
+-   Here is an example of the
+-   Reading: `/posts/` =\> GET
+-   Creating: `/posts/new` =\> POS
+-   Updating: `/posts/:id` =\> PUT
+-   Destroying: `/posts/:id` =\> DELETE
 
 ### <span style="color:red;"> Don't forget:
 
-- Alternatives to this pattern like GraphQL
+-   Alternatives to this pattern like GraphQL
 
 ### <span style="color:red;"> Additional links
 
-- [What is REST — A Simple Explanation for Beginners, Part 1: Introduction](https://medium.com/extend/what-is-rest-a-simple-explanation-for-beginners-part-1-introduction-b4a072f8740f)
+-   [What is REST — A Simple Explanation for Beginners, Part 1: Introduction](https://medium.com/extend/what-is-rest-a-simple-explanation-for-beginners-part-1-introduction-b4a072f8740f)
 
 ### <span style="color:red;"> What does the following function return?
 
@@ -2972,11 +2972,11 @@ Because of JavaScript's automatic semicolon insertion (ASI), the compiler places
 
 ### <span style="color:red;"> Don't forget:
 
-- Automatic semicolon placement can lead to time-consuming bugs
+-   Automatic semicolon placement can lead to time-consuming bugs
 
 ### <span style="color:red;"> Additional links
 
-- [Automatic semicolon insertion in JavaScript](http://2ality.com/2011/05/semicolon-insertion.html)
+-   [Automatic semicolon insertion in JavaScript](http://2ality.com/2011/05/semicolon-insertion.html)
     **Folders**
     [\<parent\>](../right.html)
     | **File** | **File** | **File** | **File** | **File** | **File** |
@@ -3049,8 +3049,8 @@ In the above cases, the interpreter does not insert a semicolon after `3`, and t
 
 ### <span style="color:red;"> Don't forget:
 
-- Semicolons are usually optional in JavaScript but have edge cases where they are required.
-- If you don't use semicolons, tools like Prettier will insert semicolons for you in the places where they are required on save in a text editor to prevent errors.
+-   Semicolons are usually optional in JavaScript but have edge cases where they are required.
+-   If you don't use semicolons, tools like Prettier will insert semicolons for you in the places where they are required on save in a text editor to prevent errors.
 
 ### <span style="color:red;"> Additional links
 
@@ -3111,11 +3111,11 @@ In the above case, if `e.target` is not or does not contain an element matching 
 
 ### <span style="color:red;"> Don't forget:
 
-- Logical operations do not produce a boolean unless the operand(s) evaluate to a boolean.
+-   Logical operations do not produce a boolean unless the operand(s) evaluate to a boolean.
 
 ### <span style="color:red;"> Additional links
 
-- [JavaScript: What is short-circuit evaluation?](https://codeburst.io/javascript-what-is-short-circuit-evaluation-ff22b2f5608c)
+-   [JavaScript: What is short-circuit evaluation?](https://codeburst.io/javascript-what-is-short-circuit-evaluation-ff22b2f5608c)
 
 ### <span style="color:red;"> What are the advantages of using CSS sprites and how are they utilized?
 
@@ -3128,11 +3128,11 @@ To utilize a spritesheet in CSS, one would use certain properties, such as `back
 
 ### <span style="color:red;"> Don't forget:
 
-- `background-image`, `background-position` and `background-size` can be used to utilize a spritesheet.
+-   `background-image`, `background-position` and `background-size` can be used to utilize a spritesheet.
 
 ### <span style="color:red;"> Additional links
 
-- [CSS Sprites explained by CSS Tricks](https://css-tricks.com/css-sprites/)
+-   [CSS Sprites explained by CSS Tricks](https://css-tricks.com/css-sprites/)
 
 ### <span style="color:red;"> What is a stateful component in React?
 
@@ -3160,13 +3160,13 @@ function App() {
 
 ### <span style="color:red;"> Don't forget:
 
-- Stateful components have internal state that they depend on.
-- Stateful components are class components or function components that use stateful Hooks.
-- Stateful components have their state initialized in the constructor or with `useState()`.
+-   Stateful components have internal state that they depend on.
+-   Stateful components are class components or function components that use stateful Hooks.
+-   Stateful components have their state initialized in the constructor or with `useState()`.
 
 ### <span style="color:red;"> Additional links
 
-- [React docs on State and Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)
+-   [React docs on State and Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)
 
 ### <span style="color:red;"> What is a stateless component?
 
@@ -3176,13 +3176,13 @@ A stateless component is a component whose behavior does not depend on its state
 
 ### <span style="color:red;"> Don't forget:
 
-- Stateless components are independent of their state.
-- Stateless components can be either class or functional components.
-- Stateless functional components avoid the `this` keyword altogether.
+-   Stateless components are independent of their state.
+-   Stateless components can be either class or functional components.
+-   Stateless functional components avoid the `this` keyword altogether.
 
 ### <span style="color:red;"> Additional links
 
-- [React docs on State and Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)
+-   [React docs on State and Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)
 
 ### <span style="color:red;"> Explain the difference between a static method and an instance method.
 
@@ -3206,11 +3206,11 @@ Array.push(arr, 4);
 
 ### <span style="color:red;"> Don't forget:
 
-- How to create static and instance methods with ES2015 class syntax
+-   How to create static and instance methods with ES2015 class syntax
 
 ### <span style="color:red;"> Additional links
 
-- [Classes on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
+-   [Classes on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
 
 ### <span style="color:red;"> What is the difference between synchronous and asynchronous code in JavaScript?
 
@@ -3222,8 +3222,8 @@ In JavaScript, all code is synchronous due to the single-threaded nature of it. 
 
 ### <span style="color:red;"> Don't forget:
 
-- JavaScript has a concurrency model based on an "event loop".
-- Functions like `alert` block the main thread so that no user input is registered until the user closes it.
+-   JavaScript has a concurrency model based on an "event loop".
+-   Functions like `alert` block the main thread so that no user input is registered until the user closes it.
 
 ### <span style="color:red;"> Additional links
 
@@ -3317,14 +3317,14 @@ obj.doubleArr(); // Uncaught TypeError: this.double is not a function
 
 ### <span style="color:red;"> Don't forget:
 
-- In non-strict mode, global `this` is the global object (`window` in browsers), while in strict mode global `this` is `undefined`.
-- `Function.prototype.call` and `Function.prototype.apply` set the `this` context of an executing function as the first argument, with `call` accepting a variadic number of arguments thereafter, and `apply` accepting an array as the second argument which are fed to the function in a variadic manner.
-- `Function.prototype.bind` returns a new function that enforces the `this` context as the first argument which cannot be changed by other functions.
-- If a function requires its `this` context to be changed based on how it is called, you must use the `function` keyword. Use arrow functions when you want `this` to be the surrounding (lexical) context.
+-   In non-strict mode, global `this` is the global object (`window` in browsers), while in strict mode global `this` is `undefined`.
+-   `Function.prototype.call` and `Function.prototype.apply` set the `this` context of an executing function as the first argument, with `call` accepting a variadic number of arguments thereafter, and `apply` accepting an array as the second argument which are fed to the function in a variadic manner.
+-   `Function.prototype.bind` returns a new function that enforces the `this` context as the first argument which cannot be changed by other functions.
+-   If a function requires its `this` context to be changed based on how it is called, you must use the `function` keyword. Use arrow functions when you want `this` to be the surrounding (lexical) context.
 
 ### <span style="color:red;"> Additional links
 
-- [`this` on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
+-   [`this` on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
 
 ### <span style="color:red;"> What does the following code evaluate to?
 
@@ -3341,7 +3341,7 @@ It evaluates to `"string"`.
 
 ### <span style="color:red;"> Additional links
 
-- [MDN docs for typeof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)
+-   [MDN docs for typeof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)
 
 ### <span style="color:red;"> What are JavaScript data types?
 
@@ -3351,14 +3351,14 @@ The latest ECMAScript standard defines seven data types, six of them being primi
 
 ### <span style="color:red;"> Don't forget:
 
-- Mention of newly added `Symbol` data type
-- `Array`, `Date` and `function` are all of type `object`
-- Functions in JavaScript are objects with the capability of being callable
+-   Mention of newly added `Symbol` data type
+-   `Array`, `Date` and `function` are all of type `object`
+-   Functions in JavaScript are objects with the capability of being callable
 
 ### <span style="color:red;"> Additional links
 
-- [MDN docs for data types and data structures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
-- [Understanding Data Types in JavaScript](https://www.digitalocean.com/community/tutorials/understanding-data-types-in-javascript)
+-   [MDN docs for data types and data structures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
+-   [Understanding Data Types in JavaScript](https://www.digitalocean.com/community/tutorials/understanding-data-types-in-javascript)
 
 ### <span style="color:red;"> What is the purpose of JavaScript UI libraries/frameworks like React, Vue, Angular, Hyperapp, etc?
 
@@ -3369,12 +3369,12 @@ When working with DOM manipulation libraries like jQuery, the data of an applica
 
 ### <span style="color:red;"> Don't forget:
 
-- The virtual DOM is a representation of the real DOM tree in the form of plain objects, which allows a library to write code as if the entire document is thrown away and rebuilt on each change, while the real DOM only updates what needs to be changed. Comparing the new virtual DOM against the previous one leads to high efficiency as changing real DOM nodes is costly compared to recalculating the virtual DOM.
-- JSX is an extension to JavaScript that provides XML-like syntax to create virtual DOM objects which is transformed to function calls by a transpiler. It simplifies control flow (if statements/ternary expressions) compared to tagged template literals.
+-   The virtual DOM is a representation of the real DOM tree in the form of plain objects, which allows a library to write code as if the entire document is thrown away and rebuilt on each change, while the real DOM only updates what needs to be changed. Comparing the new virtual DOM against the previous one leads to high efficiency as changing real DOM nodes is costly compared to recalculating the virtual DOM.
+-   JSX is an extension to JavaScript that provides XML-like syntax to create virtual DOM objects which is transformed to function calls by a transpiler. It simplifies control flow (if statements/ternary expressions) compared to tagged template literals.
 
 ### <span style="color:red;"> Additional links
 
-- [Virtual DOM in Hyperapp](https://github.com/hyperapp/hyperapp#view)
+-   [Virtual DOM in Hyperapp](https://github.com/hyperapp/hyperapp#view)
 
 ### <span style="color:red;"> What does `'use strict'` do and what are some of the key benefits to using it?
 
@@ -3382,22 +3382,22 @@ When working with DOM manipulation libraries like jQuery, the data of an applica
 
 Including `'use strict'` at the beginning of your JavaScript source file enables strict mode, which enforces more strict parsing and error handling of JavaScript code. It is considered a good practice and offers a lot of benefits, such as:
 
-- Easier debugging due to eliminating silent errors.
-- Disallows variable redefinition.
-- Prevents accidental global variables.
-- Oftentimes provides increased performance over identical code that is not running in strict mode.
-- Simplifies `eval()` and `arguments`.
-- Helps make JavaScript more secure.
+-   Easier debugging due to eliminating silent errors.
+-   Disallows variable redefinition.
+-   Prevents accidental global variables.
+-   Oftentimes provides increased performance over identical code that is not running in strict mode.
+-   Simplifies `eval()` and `arguments`.
+-   Helps make JavaScript more secure.
 
 ### <span style="color:red;"> Don't forget:
 
-- Eliminates `this` coercion, throwing an error when `this` references a value of `null` or `undefined`.
-- Throws an error on invalid usage of `delete`.
-- Prohibits some syntax likely to be defined in future versions of ECMAScript
+-   Eliminates `this` coercion, throwing an error when `this` references a value of `null` or `undefined`.
+-   Throws an error on invalid usage of `delete`.
+-   Prohibits some syntax likely to be defined in future versions of ECMAScript
 
 ### <span style="color:red;"> Additional links
 
-- [MDN docs for strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)
+-   [MDN docs for strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)
 
 ### <span style="color:red;"> What are the differences between `var`, `let`, `const` and no keyword statements?
 
@@ -3461,14 +3461,14 @@ myObject = 'hello'; // Error
 
 ### <span style="color:red;"> Don't forget:
 
-- All declarations are hoisted to the top of their scope.
-- However, with `let` and `const` there is a concept called the temporal dead zone (TDZ). While the declarations are still hoisted, there is a period between entering scope and being declared where they cannot be accessed.
-- Show a common issue with using `var` and how `let` can solve it, as well as a solution that keeps `var`.
-- `var` should be avoided whenever possible and prefer `const` as the default declaration statement for all variables unless they will be reassigned later, then use `let` if so.
+-   All declarations are hoisted to the top of their scope.
+-   However, with `let` and `const` there is a concept called the temporal dead zone (TDZ). While the declarations are still hoisted, there is a period between entering scope and being declared where they cannot be accessed.
+-   Show a common issue with using `var` and how `let` can solve it, as well as a solution that keeps `var`.
+-   `var` should be avoided whenever possible and prefer `const` as the default declaration statement for all variables unless they will be reassigned later, then use `let` if so.
 
 ### <span style="color:red;"> Additional links
 
-- [`let` vs `const`](https://wesbos.com/let-vs-const/)
+-   [`let` vs `const`](https://wesbos.com/let-vs-const/)
 
 ### <span style="color:red;"> What is a virtual DOM and why is it used in libraries/frameworks?
 
@@ -3515,11 +3515,11 @@ Once the changes between the old VDOM and new VDOM have been calculated by the d
 
 ### <span style="color:red;"> Don't forget:
 
-- Why accessing the DOM can be so costly.
+-   Why accessing the DOM can be so costly.
 
 ### <span style="color:red;"> Additional links
 
-- [The difference between Virtual DOM and DOM](http://reactkungfu.com/2015/10/the-difference-between-virtual-dom-and-dom/)
+-   [The difference between Virtual DOM and DOM](http://reactkungfu.com/2015/10/the-difference-between-virtual-dom-and-dom/)
 
 ### <span style="color:red;"> What is WCAG? What are the differences between A, AA, and AAA compliance?
 
@@ -3529,14 +3529,14 @@ WCAG stands for "Web Content Accessibility Guidelines". It is a standard describ
 
 ### <span style="color:red;"> Don't forget:
 
-- A guideline for making web content more accessible
-- 3 different levels (A, AA, and AAA) of compliance for each guideline
-- Governments are starting to require web content to meet a certain level of compliance by law
+-   A guideline for making web content more accessible
+-   3 different levels (A, AA, and AAA) of compliance for each guideline
+-   Governments are starting to require web content to meet a certain level of compliance by law
 
 ### <span style="color:red;"> Additional links
 
-- [Web Content Accessibility Guidelines (WCAG) Overview](https://www.w3.org/WAI/standards-guidelines/wcag/)
-- [How to Meet WCAG](https://www.w3.org/WAI/WCAG21/quickref/)
+-   [Web Content Accessibility Guidelines (WCAG) Overview](https://www.w3.org/WAI/standards-guidelines/wcag/)
+-   [How to Meet WCAG](https://www.w3.org/WAI/WCAG21/quickref/)
 
 ### <span style="color:red;"> What is a cross-site scripting attack (XSS) and how do you prevent it?
 
@@ -3545,18 +3545,18 @@ WCAG stands for "Web Content Accessibility Guidelines". It is a standard describ
 XSS refers to client-side code injection where the attacker injects malicious scripts into a legitimate website or web application. This is often achieved when the application does not validate user input and freely injects dynamic HTML content.
 For example, a comment system will be at risk if it does not validate or escape user input. If the comment contains unescaped HTML, the comment can inject a `<script>` tag into the website that other users will execute against their knowledge.
 
-- The malicious script has access to cookies which are often used to store session tokens. If an attacker can obtain a user's session cookie, they can impersonate the user.
-- The script can arbitrarily manipulate the DOM of the page the script is executing in, allowing the attacker to insert pieces of content that appear to be a real part of the website.
-- The script can use AJAX to send HTTP requests with arbitrary content to arbitrary destinations.
+-   The malicious script has access to cookies which are often used to store session tokens. If an attacker can obtain a user's session cookie, they can impersonate the user.
+-   The script can arbitrarily manipulate the DOM of the page the script is executing in, allowing the attacker to insert pieces of content that appear to be a real part of the website.
+-   The script can use AJAX to send HTTP requests with arbitrary content to arbitrary destinations.
 
 ### <span style="color:red;"> Don't forget:
 
-- On the client, using `textContent` instead of `innerHTML` prevents the browser from running the string through the HTML parser which would execute scripts in it.
-- On the server, escaping HTML tags will prevent the browser from parsing the user input as actual HTML and therefore won't execute the script.
+-   On the client, using `textContent` instead of `innerHTML` prevents the browser from running the string through the HTML parser which would execute scripts in it.
+-   On the server, escaping HTML tags will prevent the browser from parsing the user input as actual HTML and therefore won't execute the script.
 
 ### <span style="color:red;"> Additional links
 
-- [Cross-Site Scripting Attack (XSS)](https://www.acunetix.com/websitesecurity/cross-site-scripting/)
+-   [Cross-Site Scripting Attack (XSS)](https://www.acunetix.com/websitesecurity/cross-site-scripting/)
 
 ---
 

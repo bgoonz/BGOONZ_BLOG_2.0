@@ -63,10 +63,10 @@ See [preprocessing & context-specific optimizations](https://developers.google.c
 
 You should minify your HTML, CSS, and JavaScript resources:
 
-- To minify HTML, try [HTMLMinifier](https://github.com/kangax/html-minifier)
-- 
-- To minify CSS, try [CSSNano](https://github.com/ben-eb/cssnano) and [csso](https://github.com/css/csso).
+-   To minify HTML, try [HTMLMinifier](https://github.com/kangax/html-minifier)
+-
+-   To minify CSS, try [CSSNano](https://github.com/ben-eb/cssnano) and [csso](https://github.com/css/csso).
 
-- To minify JavaScript, try [UglifyJS](https://github.com/mishoo/UglifyJS2). The [Closure Compiler](https://developers.google.com/closure/compiler) is also [very effective](https://github.com/samccone/The-cost-of-transpiling-es2015-in-2016#summary-of-findings). You can create a build process that uses these tools to minify and rename the development files and save them to a production directory.
+-   To minify JavaScript, try [UglifyJS](https://github.com/mishoo/UglifyJS2). The [Closure Compiler](https://developers.google.com/closure/compiler) is also [very effective](https://github.com/samccone/The-cost-of-transpiling-es2015-in-2016#summary-of-findings). You can create a build process that uses these tools to minify and rename the development files and save them to a production directory.
 
 Alternatively, the [PageSpeed Module](https://developers.google.com/speed/pagespeed/module), integrates with an Apache or Nginx web server to automatically optimize your site, including resource minification.

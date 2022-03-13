@@ -174,7 +174,7 @@ MODULE.sub = (function () {
     let my = {};
     // ...
 
-######     return my;
+######   return my;
 })();
 ```
 
@@ -199,7 +199,7 @@ let UTIL = (function (parent, $) {
 
     // etc...
 
-######     return parent;
+######   return parent;
 })(UTIL || {}, jQuery);
 ```
 
@@ -346,7 +346,7 @@ MODULE.sub = (function () {
     let my = {};
     // ...
 
-######     return my;
+######   return my;
 })();
 ```
 

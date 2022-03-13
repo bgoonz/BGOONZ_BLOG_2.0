@@ -17,7 +17,7 @@ template: docs
 
 ## [**<ins>➡️📚🏠docs🏠📚⬅️</ins>**](https://bgoonz-blog.netlify.app/docs)
 
-###  [**readme</ins>**](https://bgoonz-blog.netlify.app/readme)
+### [**readme</ins>**](https://bgoonz-blog.netlify.app/readme)
 ### [**<ins>showcase</ins>**](https://bgoonz-blog.netlify.app/showcase)
 ##### [**<ins>🔏admin</ins>**](https://bgoonz-blog.netlify.app/admin)
 ##### [**<ins>🔏privacy-policy</ins>**](https://bgoonz-blog.netlify.app/privacy-policy)

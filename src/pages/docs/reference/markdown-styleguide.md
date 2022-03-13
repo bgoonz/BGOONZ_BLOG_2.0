@@ -158,20 +158,20 @@ This rule is triggered when the symbols used in the document for unordered
 list items do not match the configured unordered list style:
 
 ```markdown
-- Item 1
+-   Item 1
 
 *   Item 2
 
-- Item 3
+-   Item 3
 ```
 
 To fix this issue, use the configured style for list items throughout the
 document:
 
 ```markdown
-- Item 1
-- Item 2
-- Item 3
+-   Item 1
+-   Item 2
+-   Item 3
 ```
 
 The configured list style can be a specific symbol to use (asterisk, plus, dash),
@@ -183,12 +183,12 @@ indent uses asterisk, the middle indent uses plus, and the inner-most indent use
 dash:
 
 ```markdown
-- Item 1
-    - Item 2
-        - Item 3
-    - Item 4
-- Item 4
-    - Item 5
+-   Item 1
+    -   Item 2
+        -   Item 3
+    -   Item 4
+-   Item 4
+    -   Item 5
 ```
 
 Rationale: Consistent formatting makes it easier to understand a document.
@@ -207,20 +207,20 @@ This rule is triggered when list items are parsed as being at the same level,
 but don't have the same indentation:
 
 ```markdown
-- Item 1
-    - Nested Item 1
-    - Nested Item 2
-    - A misaligned item
+-   Item 1
+    -   Nested Item 1
+    -   Nested Item 2
+    -   A misaligned item
 ```
 
 Usually, this rule will be triggered because of a typo. Correct the indentation
 for the list to fix it:
 
 ```markdown
-- Item 1
-    - Nested Item 1
-    - Nested Item 2
-    - Nested Item 3
+-   Item 1
+    -   Nested Item 1
+    -   Nested Item 2
+    -   Nested Item 3
 ```
 
 Sequentially-ordered list markers are usually left-aligned such that all items
@@ -257,8 +257,8 @@ line:
 ```markdown
 Some text
 
-- List item
-- List item
+-   List item
+-   List item
 ```
 
 To fix, ensure that top-level list items are not indented:
@@ -266,8 +266,8 @@ To fix, ensure that top-level list items are not indented:
 ```markdown
 Some test
 
-- List item
-- List item
+-   List item
+-   List item
 ```
 
 Note: This rule is triggered for the following scenario because the unordered
@@ -278,8 +278,8 @@ instead.
 ```markdown
 1. List item
 
-- List item
-- List item
+-   List item
+-   List item
 
 1. List item
 ```
@@ -308,15 +308,15 @@ number of spaces (default: 2).
 Example:
 
 ```markdown
-- List item
-    - Nested list item indented by 3 spaces
+-   List item
+    -   Nested list item indented by 3 spaces
 ```
 
 Corrected Example:
 
 ```markdown
-- List item
-    - Nested list item indented by 2 spaces
+-   List item
+    -   Nested list item indented by 2 spaces
 ```
 
 Note: This rule applies to a sublist only if its parent lists are all also
@@ -380,7 +380,7 @@ but some parsers require it. Set the `list_item_empty_lines` parameter to `true`
 to allow this (even when `strict` is `true`):
 
 ```markdown
-- list item text
+-   list item text
     [2 spaces]
     list item text
 ```
@@ -1086,15 +1086,17 @@ improperly-indented code block (or similar) appears between two list items and
 
 <!-- markdownlint-disable code-fence-style -->
 
-```markdown
+````markdown
 1. First list
 
 ```text
 Code block
 ```
+````
 
 1. Second list
-```
+
+````
 
 The fix is to indent the code block so it becomes part of the preceding list
 item as intended:
@@ -1107,7 +1109,7 @@ item as intended:
     ```
 
 2. Still first list
-```
+````
 
 <!-- markdownlint-restore -->
 
@@ -1132,9 +1134,9 @@ The number of spaces checked for depends on the document style in use, but the
 default is 1 space after any list marker:
 
 ```markdown
-- Foo
-- Bar
-- Baz
+-   Foo
+-   Bar
+-   Baz
 
 1. Foo
 1. Bar
@@ -1158,19 +1160,19 @@ and unordered lists respectively) if there are multiple paragraphs of content
 inside the list:
 
 ```markdown
-- Foo
-- Bar
-- Baz
+-   Foo
+-   Bar
+-   Baz
 ```
 
 vs.
 
 ```markdown
-- Foo
+-   Foo
 
     Second paragraph
 
-- Bar
+-   Bar
 ```
 
 or
@@ -1264,8 +1266,8 @@ followed by a blank line:
 ```markdown
 Some text
 
-- Some
-- List
+-   Some
+-   List
 
 1. Some
 2. List
@@ -1278,8 +1280,8 @@ To fix this, ensure that all lists have a blank line both before and after
 ```markdown
 Some text
 
-- Some
-- List
+-   Some
+-   List
 
 1. Some
 2. List
@@ -1582,23 +1584,26 @@ echo Hello world
 
 To fix this, add a language specifier to the code block:
 
-```markdown
+````markdown
 ```bash
 #!/bin/bash
 echo Hello world
 ```
+````
+
 ```
 
 ```
 
 To display a code block without syntax highlighting, use:
 
-```markdown
+````markdown
 ```text
 Plain text in a code block
 ```
+````
 
-```
+````
 
 Rationale: Specifying a language improves content rendering by using the
 correct syntax highlighting for code. More information:
@@ -1619,7 +1624,7 @@ the first line in the file isn't a top-level (h1) heading:
 
 ```markdown
 This is a file without a heading
-```
+````
 
 To fix this, add a top-level heading to the beginning of the file:
 
@@ -1894,17 +1899,19 @@ Parameters: style ("consistent", "tilde", "backtick"; default "consistent")
 This rule is triggered when the symbols used in the document for fenced code
 blocks do not match the configured code fence style:
 
-```markdown
+````markdown
 ```ruby
 # Fenced code
 ```
-```
+````
+
+````
 
 ```ruby
 # Fenced code
-```
+````
 
-```
+````
 
 To fix this issue, use the configured code fence style throughout the
 document:
@@ -1912,7 +1919,7 @@ document:
 ```markdown
 ```ruby
 # Fenced code
-```
+````
 
 ```ruby
 # Fenced code

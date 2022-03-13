@@ -40,17 +40,15 @@ template: docs
 
 <p align="center">
   
-
 <h4 align="center">A passionate Web Developer, Electrical Engineer, Musician & Producer</h4>
 
 <img align="center" src="https://readme-jokes.vercel.app/api" stye="width:570; height:420;">
 
 <details>
 
-<summary><h3 align="center">Languages and Tools:</h3></summary>   
+<summary><h3 align="center">Languages and Tools:</h3></summary>
 
 <p align="left"> <a href="https://www.arduino.cc/" target="_blank"> <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="40" height="40"/> </a> <a href="https://aws.amazon.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/> </a> <a href="https://azure.microsoft.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="azure" width="40" height="40"/> </a> <a href="https://babeljs.io/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/babeljs/babeljs-icon.svg" alt="babel" width="40" height="40"/> </a> <a href="https://www.gnu.org/software/bash/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="40" height="40"/> </a> <a href="https://getbootstrap.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cpp/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://d3js.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/d3js/d3js-original.svg" alt="d3js" width="40" height="40"/> </a> <a href="https://www.docker.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> <a href="https://www.elastic.co" target="_blank"> <img src="https://www.vectorlogo.zone/logos/elastic/elastic-icon.svg" alt="elasticsearch" width="40" height="40"/> </a> <a href="https://emberjs.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/ember/ember-original-wordmark.svg" alt="ember" width="40" height="40"/> </a> <a href="https://expressjs.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/> </a> <a href="https://firebase.google.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> </a> <a href="https://www.gatsbyjs.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/gatsbyjs/gatsbyjs-icon.svg" alt="gatsby" width="40" height="40"/> </a> <a href="https://cloud.google.com" target="_blank"> <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="gcp" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://heroku.com" target="_blank"> <img src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg" alt="heroku" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://jekyllrb.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/jekyllrb/jekyllrb-icon.svg" alt="jekyll" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://mochajs.org" target="_blank"> <img src="https://www.vectorlogo.zone/logos/mochajs/mochajs-icon.svg" alt="mocha" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://nextjs.org/" target="_blank"> <img src="https://cdn.worldvectorlogo.com/logos/nextjs-3.svg" alt="nextjs" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://www.photoshop.com/en" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="photoshop" width="40" height="40"/> </a> <a href="https://www.postgresql.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a> <a href="https://postman.com" target="_blank"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a> <a href="https://pugjs.org" target="_blank"> <img src="https://cdn.worldvectorlogo.com/logos/pug.svg" alt="pug" width="40" height="40"/> </a> <a href="https://github.com/puppeteer/puppeteer" target="_blank"> <img src="https://www.vectorlogo.zone/logos/pptrdev/pptrdev-official.svg" alt="puppeteer" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://reactnative.dev/" target="_blank"> <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="40" height="40"/> </a> <a href="https://www.typescriptlang.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a> <a href="https://www.vagrantup.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/vagrantup/vagrantup-icon.svg" alt="vagrant" width="40" height="40"/> </a> <a href="https://webpack.js.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/d00d0969292a6569d45b06d3f350f463a0107b0d/icons/webpack/webpack-original-wordmark.svg" alt="webpack" width="40" height="40"/> </a> <a href="https://www.adobe.com/products/xd.html" target="_blank"> <img src="https://cdn.worldvectorlogo.com/logos/adobe-xd.svg" alt="xd" width="40" height="40"/> </a> <a href="https://zapier.com" target="_blank"> <img src="https://www.vectorlogo.zone/logos/zapier/zapier-icon.svg" alt="zapier" width="40" height="40"/> </a> </p>  
-  
   
 </details>  
   
@@ -74,19 +72,20 @@ template: docs
 
 <div align="center">
 </div>
+<p><a href="https://www.buymeacoffee.com/bgoonz"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="bgoonz" /></a></p><br><br>
 
 <details>
 
 <summary>About Me</summary>
 
 - 🔭 Contract Web Development **Duke Energy**
-- 
+-
 - 🌱 I'm currently learning **React/Redux, Python, Java, Express, jQuery**
-- 
-- 👯 I'm looking to collaborate on [Any web audio or open source educational tools.](https://goofy-e
-- 
+-
+- 👯 I'm looking to collaborate on [Any web audio or open source educational tools.](<https://goofy-e>
+-
 - 🤝 I'm looking for help with [L
-- 
+-
 - 👨‍💻 All of my projects are available at [https://bgoonz.github.io/](https://bgoonz.github.io/)
 
 - 📝 I regularly write articles on [medium](https://bryanguner.medium.com/) && [Web-Dev-Resource-Hub](https://web-dev-resource-hub.netlify.app/)
@@ -97,7 +96,7 @@ template: docs
 
 - ⚡ Fun fact **I played Bamboozle Music Festival at the Meadowlands Stadium Complex when I was 14.**
 
-### i really like music :headphones:
+### i really like music :headphones
 
 #### What's the most useful business-related book you've ever read?
 
@@ -167,23 +166,11 @@ Creating things that change my every day life.
 
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
 
----
 ---
 <center><h4>|-------------------------------🔥🔥🔥🔥🔥🔥🔥--------------------------------|</h4></center>
 
 ---
----
----
-
-<br>
-<br>
-<br>
-<br>
 <br>
 <br>
 
@@ -191,7 +178,7 @@ Creating things that change my every day life.
 <details>
 <summary><center><h4> Resume</h4></center> </summary>
 
-# ➤ Technical Skills:
+# ➤ Technical Skills
 
 | **Programming\*\*** Languages:\*\* | JavaScript ES-6, NodeJS, React, HTML5, CSS3, SCSS, Bash Shell, Excel, SQL, NoSQL, MATLAB, Python, C++ |
 | ---------------------------------- | ----------------------------------------------------------------------------------------------------- |
@@ -245,7 +232,7 @@ Creating things that change my every day life.
 
 # ➤ Education
 
-| **B.S. Electrical Engineering, TCNJ, ** Ewing NJ | 2014 - 2019 |
+| **B.S. Electrical Engineering, TCNJ,** Ewing NJ | 2014 - 2019 |
 | ------------------------------------------------ | ----------- |
 
 **Capstone Project - Team Lead**
@@ -260,23 +247,11 @@ Creating things that change my every day life.
 
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
 
----
 ---
 <center><h4>|-------------------------------🔥🔥🔥🔥🔥🔥🔥--------------------------------|</h4></center>
 
 ---
----
----
-
-<br>
-<br>
-<br>
-<br>
 <br>
 <br>
 
@@ -328,35 +303,22 @@ Creating things that change my every day life.
       <td>HTML, HTML5, CSS, CSS3, Javascript, jQuery</td>
       <td>add songs and play music, it also uses to store data in  INDEXEDB Database by which we can play songs, if we not clear the catch then song will remain stored in database.</td>
     </tr>
-    
+
   </tbody>
 
 <p align="center">
 
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
 
----
----
-<center><h4>|-------------------------------🔥🔥🔥🔥🔥🔥🔥--------------------------------|</h4></center>
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#github-gists)
----
----
----
 
-<br>
-<br>
-<br>
-<br>
+
 <br>
 <br>
 
 <div style=" border: 1px solid black">
-<img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/23b9b236-746e-409c-8e86-30b4385e3b72/hr1-raypham.gif" alt="hr-line" width="100%" height="22">
+
+
 </div>
 <hr>
 
@@ -364,7 +326,7 @@ Creating things that change my every day life.
 
 # [Learning React Blog](https://ecstatic-jang-593fd1.netlify.app/readme)
 
-#### React Repo:
+#### React Repo
 
 [React Repo](https://github.com/bgoonz/React-Practice)
 
@@ -373,7 +335,8 @@ Creating things that change my every day life.
 ## <a href="https://codesandbox.io/embed/zealous-microservice-ti7em?autoresize=1&expanddevtools=1&fontsize=14&hidenavigation=1&moduleview=1&theme=dark"   style="width:100%; height:20px; border:0; border-radius: 4px; overflow:hidden;" rel="React Todo">![Foo](https://codesandbox.io/static/img/play-codesandbox.svg)</a>
 
 <div style=" border: 1px solid black">
-<img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/23b9b236-746e-409c-8e86-30b4385e3b72/hr1-raypham.gif" alt="hr-line" width="100%" height="22">
+
+
 </div>
 
 # [react-documentation-site](https://documentation-site-react2-peitff669-bgoonz.vercel.app/)
@@ -381,7 +344,8 @@ Creating things that change my every day life.
 [![Edit magical-stallman-ov0d1](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/magical-stallman-ov0d1?autoresize=1&expanddevtools=1&fontsize=12&hidenavigation=1&moduleview=1&theme=dark)
 
 <div style=" border: 1px solid black">
-<img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/23b9b236-746e-409c-8e86-30b4385e3b72/hr1-raypham.gif" alt="hr-line" width="100%" height="22">
+
+
 </div>
 
 ---
@@ -392,11 +356,11 @@ Creating things that change my every day life.
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#weekly-quick-snips)
 
-## ➤ Weekly-Quick-Snips:
+## ➤ Weekly-Quick-Snips
 
 ---
 
-#### Snippet of the Day:
+#### Snippet of the Day
 
 ### replaceAll
 
@@ -430,7 +394,7 @@ const updatedStr = str.replaceAll('example', 'snippet'); //'this is a JSsnippets
 
 ---
 
-### Fibonacci in Python:
+### Fibonacci in Python
 
 ```py
 def fib_iter(n):
@@ -451,7 +415,16 @@ for i in range(10):
 
 ---
 
-#### Yesterday's Snippet of the day:
+
+
+## ➤ Github Gists
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#github-gists)
+
+
+## [Github Gists](https://bgoonzgist.netlify.app/)
+
+#### Yesterday's Snippet of the day
 
 ---
 
@@ -490,13 +463,12 @@ print(quicksort([9,8,7,6,5,4,3,2,1]))
   
   <summary>See Older Snippets!</summary>
   
-  
-  #### This Week's snippets: 
+#### This Week's snippets
   
   ---
   
-  
    >will replace any spaces in file names with an underscore!
+
 ```bash
  for file in *; do mv "$file" `echo $file | tr ' ' '_'` ; done
   ## TAKING IT A STEP FURTHER:
@@ -525,7 +497,7 @@ RecurseDirs "./"
 ```
 
  ---
- ### Copy to clipboard jQuerry
+### Copy to clipboard jQuerry
  > Language: Javascript/Jquery
 
 >In combination with the script tag :  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> , this snippet will add a copy to clipboard button to all of your embedded <code> blocks.
@@ -804,11 +776,7 @@ function longestCommonPrefix(strs) {
 
 <hr>
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#github-gists)
 
-# ➤ Github Gists
-
-## [Github Gists](https://bgoonzgist.netlify.app/)
 
 [list-of-my-websites](https://gist.github.com/bgoonz/659a9b81ac45453bedc0a1a36275b580)
 

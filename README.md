@@ -126,7 +126,7 @@ for i in *.html; do mv "$i" "${i%-*}.html"; done
 for i in *.*; do mv "$i" "${i%-*}.${i##*.}"; done
 
 ---
-##  Description: combine the contents of every file in the contaning directory.
+## Description: combine the contents of every file in the contaning directory.
 
 > Notes: this includes the contents of the file it's self...
 

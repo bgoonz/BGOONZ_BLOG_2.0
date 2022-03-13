@@ -103,7 +103,7 @@ Block quotes are callouts that are great for adding notes or warnings into docum
 
     markdown
 
-    > ###  Headers break on their own
+    > ### Headers break on their own
     > Note that headers don't need line continuation characters
     as they are block elements and automatically break. Only text
     lines require the double spaces for single line breaks.

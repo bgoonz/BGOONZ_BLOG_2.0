@@ -16,7 +16,7 @@
 ```sh
 #!/bin/bash
 
-##  SHORTCUTS and HISTORY
+## SHORTCUTS and HISTORY
 
 
 CTRL+A  # move to beginning of line
@@ -74,7 +74,7 @@ history   # shows command line history
 exit      # logs out of current session
 
 
-##  BASH BASICS
+## BASH BASICS
 
 
 env                 # displays all environment variables
@@ -89,7 +89,7 @@ which bash          # finds out which program is executed as 'bash' (default: /b
 clear               # clears content on window (hide displayed lines)
 
 
-##  FILE COMMANDS
+## FILE COMMANDS
 
 
 ls                            # lists your files in current directory, ls <dir> to print files in a specific directory
@@ -131,7 +131,7 @@ head -n file_name | tail +n   # Print nth line from file.
 head -y lines.txt | tail +x   # want to display all the lines from x to y. This includes the xth and yth lines.
 
 
-##  DIRECTORY COMMANDS
+## DIRECTORY COMMANDS
 
 
 mkdir <dirname>               # makes a new directory
@@ -147,7 +147,7 @@ cd ~                          # changes to home.
 cd -                        # changes to previous working directory
 
 
-##  SSH, SYSTEM INFO & NETWORK COMMANDS
+## SSH, SYSTEM INFO & NETWORK COMMANDS
 
 
 ssh user@host            # connects to host as user
@@ -185,7 +185,7 @@ wget <file>              # downloads file
 time <command>             # report time consumed by command execution
 
 
-##  VARIABLES
+## VARIABLES
 
 
 varname=value                # defines a variable
@@ -242,11 +242,11 @@ ${#varname}                  # returns the length of the value of the variable a
 $(UNIX command)              # command substitution: runs the command and returns standard output
 
 
-##  FUNCTIONS
+## FUNCTIONS
 
 
-##  The function refers to passed arguments by position (as if they were positional parameters), that is, $1, $2, and so forth.
-##  $@ is equal to "$1" "$2"... "$N", where N is the number of positional parameters. $# holds the number of positional parameters.
+## The function refers to passed arguments by position (as if they were positional parameters), that is, $1, $2, and so forth.
+## $@ is equal to "$1" "$2"... "$N", where N is the number of positional parameters. $# holds the number of positional parameters.
 
 function functname() {
   shell commands
@@ -256,7 +256,7 @@ unset -f functname  # deletes a function definition
 declare -f          # displays all defined functions in your login session
 
 
-##  FLOW CONTROLS
+## FLOW CONTROLS
 
 
 statement1 && statement2  # and operator
@@ -265,7 +265,7 @@ statement1 || statement2  # or operator
 -a                        # and operator inside a test conditional expression
 -o                        # or operator inside a test conditional expression
 
-##  STRINGS
+## STRINGS
 
 str1 == str2               # str1 matches str2
 str1 != str2               # str1 does not match str2
@@ -276,7 +276,7 @@ str1 \< str2               # str1 is sorted before str2
 -n str1                    # str1 is not null (has length greater than 0)
 -z str1                    # str1 is null (has length 0)
 
-##  FILES
+## FILES
 
 -a file                   # file exists or its compilation is successful
 -d file                   # file exists and is a directory
@@ -292,7 +292,7 @@ str1 \< str2               # str1 is sorted before str2
 file1 -nt file2           # file1 is newer than file2
 file1 -ot file2           # file1 is older than file2
 
-##  NUMBERS
+## NUMBERS
 
 -lt                       # less than
 -le                       # less than or equal
@@ -346,11 +346,11 @@ until condition; do
 done
 
 
-##  COMMAND-LINE PROCESSING CYCLE
+## COMMAND-LINE PROCESSING CYCLE
 
 
-##  The default order for command lookup is functions, followed by built-ins, with scripts and executables last.
-##  There are three built-ins that you can use to override this order: `command`, `builtin` and `enable`.
+## The default order for command lookup is functions, followed by built-ins, with scripts and executables last.
+## There are three built-ins that you can use to override this order: `command`, `builtin` and `enable`.
 
 command  # removes alias and function lookup. Only built-ins and commands found in the search path are executed
 builtin  # looks up only built-in commands, ignoring functions and commands found in PATH
@@ -359,7 +359,7 @@ enable   # enables and disables shell built-ins
 eval     # takes arguments and run them through the command-line processing steps all over again
 
 
-##  INPUT/OUTPUT REDIRECTORS
+## INPUT/OUTPUT REDIRECTORS
 
 
 cmd1|cmd2  # pipe; takes standard output of cmd1 as standard input to cmd2
@@ -386,12 +386,12 @@ n<&-     # closes the input from file descripor n
 |tee <file># output command to both terminal and a file (-a to append to file)
 
 
-##  PROCESS HANDLING
+## PROCESS HANDLING
 
 
-##  To suspend a job, type CTRL+Z while it is running. You can also suspend a job with CTRL+Y.
-##  This is slightly different from CTRL+Z in that the process is only stopped when it attempts to read input from terminal.
-##  Of course, to interrupt a job, type CTRL+C.
+## To suspend a job, type CTRL+Z while it is running. You can also suspend a job with CTRL+Y.
+## This is slightly different from CTRL+Z in that the process is only stopped when it attempts to read input from terminal.
+## Of course, to interrupt a job, type CTRL+C.
 
 myCommand &  # runs job in the background and prompts back the shell
 
@@ -426,14 +426,14 @@ pv                  # display progress bar for data handling commands. often use
 yes                 # give yes response everytime an input is requested from script/process
 
 
-##  TIPS & TRICKS
+## TIPS & TRICKS
 
 
-##  set an alias
+## set an alias
 cd; nano .bash_profile
 > alias gentlenode='ssh admin@gentlenode.com -p 3404'  # add your alias in .bash_profile
 
-##  to quickly go to a specific directory
+## to quickly go to a specific directory
 cd; nano .bashrc
 > shopt -s cdable_vars
 > export websites="/Users/mac/Documents/websites"
@@ -442,7 +442,7 @@ source .bashrc
 cd $websites
 
 
-##  DEBUGGING SHELL PROGRAMS
+## DEBUGGING SHELL PROGRAMS
 
 
 bash -n scriptname  # don't run commands; check for syntax errors only
@@ -468,7 +468,7 @@ function dbgtrap {
 }
 
 trap dbgtrap DEBUG  # causes the trap code to be executed before every statement in a function or script
-##  ...section of code in which the problem occurs...
+## ...section of code in which the problem occurs...
 trap - DEBUG  # turn off the DEBUG trap
 
 function returntrap {
@@ -478,13 +478,13 @@ function returntrap {
 trap returntrap RETURN  # is executed each time a shell function or a script executed with the . or source commands finishes executing
 
 
-##  COLORS AND BACKGROUNDS
+## COLORS AND BACKGROUNDS
 
-##  note: \e or \x1B also work instead of \033
-##  Reset
+## note: \e or \x1B also work instead of \033
+## Reset
 Color_Off='\033[0m' # Text Reset
 
-##  Regular Colors
+## Regular Colors
 Black='\033[0;30m'  # Black
 Red='\033[0;31m'    # Red
 Green='\033[0;32m'  # Green
@@ -494,7 +494,7 @@ Purple='\033[0;35m' # Purple
 Cyan='\033[0;36m'   # Cyan
 White='\033[0;97m'  # White
 
-##  Additional colors
+## Additional colors
 LGrey='\033[0;37m'  # Ligth Gray
 DGrey='\033[0;90m'  # Dark Gray
 LRed='\033[0;91m'   # Ligth Red
@@ -504,7 +504,7 @@ LBlue='\033[0;94m'  # Ligth Blue
 LPurple='\033[0;95m'# Light Purple
 LCyan='\033[0;96m'  # Ligth Cyan
 
-##  Bold
+## Bold
 BBlack='\033[1;30m' # Black
 BRed='\033[1;31m'   # Red
 BGreen='\033[1;32m' # Green
@@ -514,7 +514,7 @@ BPurple='\033[1;35m'# Purple
 BCyan='\033[1;36m'  # Cyan
 BWhite='\033[1;37m' # White
 
-##  Underline
+## Underline
 UBlack='\033[4;30m' # Black
 URed='\033[4;31m'   # Red
 UGreen='\033[4;32m' # Green
@@ -524,7 +524,7 @@ UPurple='\033[4;35m'# Purple
 UCyan='\033[4;36m'  # Cyan
 UWhite='\033[4;37m' # White
 
-##  Background
+## Background
 On_Black='\033[40m' # Black
 On_Red='\033[41m'   # Red
 On_Green='\033[42m' # Green
@@ -534,10 +534,10 @@ On_Purple='\033[45m'# Purple
 On_Cyan='\033[46m'  # Cyan
 On_White='\033[47m' # White
 
-##  Example of usage
+## Example of usage
 echo -e "${Green}This is GREEN text${Color_Off} and normal text"
 echo -e "${Red}${On_White}This is Red test on White background${Color_Off}"
-##  option -e is mandatory, it enable interpretation of backslash escapes
+## option -e is mandatory, it enable interpretation of backslash escapes
 printf "${Red} This is red \n"
 
 ```
@@ -1187,12 +1187,12 @@ zip -r $1.$TSTAMP.zip $1 -x "**.git/*" -x "**node_modules/*" `shift; echo $@;`
 
 printf "\nCreated: $1.$TSTAMP.zip\n"
 
-##  usage:
-##  - zipdir thedir
-##  - zip thedir -x "**anotherexcludedsubdir/*"    (important the double quotes to prevent glob expansion)
+## usage:
+## - zipdir thedir
+## - zip thedir -x "**anotherexcludedsubdir/*"    (important the double quotes to prevent glob expansion)
 
-##  if in windows/git-bash, add 'zip' command this way:
-##  https://stackoverflow.com/a/55749636/1482990
+## if in windows/git-bash, add 'zip' command this way:
+## https://stackoverflow.com/a/55749636/1482990
 
 ```
 
@@ -1227,7 +1227,7 @@ source doit.sh
 
 #!/bin/sh
 
-##  find ./ | grep -i "\.*$" >files
+## find ./ | grep -i "\.*$" >files
 find ./ | sed -E -e 's/([^ ]+[ ]+){8}//' | grep -i "\.*$">files
 listing="files"
 
@@ -1340,7 +1340,7 @@ cmd $listing --sort=extension >>$html
 
 #!/bin/sh
 
-##  find ./ | grep -i "\.*$" >files
+## find ./ | grep -i "\.*$" >files
 find ./ | sed -E -e 's/([^ ]+[ ]+){8}//' | grep -i "\.*$">files
 listing="files"
 
@@ -1467,19 +1467,19 @@ If you have any files that are not tracked by Git (e.g. uploaded user content), 
 ```sh
 
 git fetch --all
-##  Backup your current branch:
+## Backup your current branch:
 
 git branch backup-master
-##  Then, you have two options:
+## Then, you have two options:
 
 git reset --hard origin/master
-##  OR If you are on some other branch:
+## OR If you are on some other branch:
 
 git reset --hard origin/<branch_name>
-##  Explanation:
-##  git fetch downloads the latest from remote without trying to merge or rebase anything.
+## Explanation:
+## git fetch downloads the latest from remote without trying to merge or rebase anything.
 
-##  Then the git reset resets the master branch to what you just fetched. The --hard option changes all the files in your working tree to match the files in origin/master
+## Then the git reset resets the master branch to what you just fetched. The --hard option changes all the files in your working tree to match the files in origin/master
 git fetch --all
 git reset --hard origin/master
 
@@ -1589,7 +1589,7 @@ git reset --hard master@{"10 minutes ago"}
 ###### code
 
 ```sh
-##  Safe:
+## Safe:
 
  lebab --replace ./ --transform arrow
  lebab --replace ./ --transform arrow-return
@@ -1601,7 +1601,7 @@ git reset --hard master@{"10 minutes ago"}
  lebab --replace ./ --transform obj-shorthand
  lebab --replace ./ --transform multi-var
 
-##  ALL:
+## ALL:
 
 lebab --replace ./ --transform obj-method
 lebab --replace ./ --transform class

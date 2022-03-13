@@ -80,8 +80,8 @@ In the same light, frontend frameworks are simply a tool that can be employed to
 
 If you want to learn some more about web development right now, these articles may interest you:
 
-- [A Guide To The Best Web Development Bootcamps And How To Choose One](https://careerfoundry.com/en/blog/web-development/best-coding-bootcamps/)
-- 
-- [The Most In-Demand Web Developer Skills in 2021](https://careerfoundry.com/en/blog/web-development/in-demand-web-developer-skills/)
+-   [A Guide To The Best Web Development Bootcamps And How To Choose One](https://careerfoundry.com/en/blog/web-development/best-coding-bootcamps/)
+-
+-   [The Most In-Demand Web Developer Skills in 2021](https://careerfoundry.com/en/blog/web-development/in-demand-web-developer-skills/)
 
-- [5 Web Development Trends To Watch This Year](https://careerfoundry.com/en/blog/web-development/5-latest-trends-in-web-development/)
+-   [5 Web Development Trends To Watch This Year](https://careerfoundry.com/en/blog/web-development/5-latest-trends-in-web-development/)

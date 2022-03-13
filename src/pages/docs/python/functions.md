@@ -1,9 +1,9 @@
 ---
-title: lorem-ipsum
+title: Python Functions
 weight: 0
-excerpt: lorem-ipsum
+excerpt: When creating a function using the def statement, you can specify what the return value should be with a return statement. A return statement consists of the following
 seo:
-    title: ''
+    title: 'Python Functions'
     description: ''
     robots: []
     extra: []

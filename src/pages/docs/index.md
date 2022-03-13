@@ -33,7 +33,7 @@ excerpt: docs quick reference
 
 # Docs
 
-<h1>  Docs</h1>
+
 
 <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    class="inner" src="https://docs42.netlify.app/#C:/MY-WEB-DEV/__NEW_GIT/DOCS/docs-collection" height="800px" width="1000px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 
