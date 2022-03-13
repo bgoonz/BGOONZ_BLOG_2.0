@@ -564,7 +564,7 @@ Such functions are called ["pure"](https://en.wikipedia.org/wiki/Pure_function) 
 
 In contrast, this function is impure because it changes its own input:
 
-````js
+```js
 function withdraw(account, amount) {
   account.total -= amount;
 }
@@ -593,7 +593,7 @@ function tick() {
 
 setInterval(tick, 1000);
 
-````
+```
 
 **[Try it on CodePen](https://codepen.io/gaearon/pen/gwoJZk?editors=0010)**
 

@@ -35,7 +35,7 @@ From **Highest** to **Lowest** precedence:
 | //        | Integer division | `22 // 8 = 2`   |
 | /         | Division         | `22 / 8 = 2.75` |
 | \*        | Multiplication   | `3 * 3 = 9`     |
-| -       | Subtraction      | `5 - 2 = 3`     |
+| -         | Subtraction      | `5 - 2 = 3`     |
 | +         | Addition         | `2 + 2 = 4`     |
 
 Examples of expressions in the interactive shell:
@@ -508,9 +508,9 @@ def hello(name):
 
 When creating a function using the def statement, you can specify what the return value should be with a return statement. A return statement consists of the following:
 
-- The return keyword.
-- 
-- The value or expression that the function should return.
+-   The return keyword.
+-
+-   The value or expression that the function should return.
 
 ```python
 import random
@@ -565,13 +565,13 @@ print('cats', 'dogs', 'mice', sep=',')
 
 ### Local and Global Scope
 
-- Code in the global scope cannot use any local variables.
-- 
-- However, a local scope can access global variables.
-- 
-- Code in a function's local scope cannot use variables in any other local scope.
+-   Code in the global scope cannot use any local variables.
+-
+-   However, a local scope can access global variables.
+-
+-   Code in a function's local scope cannot use variables in any other local scope.
 
-- You can use the same name for different variables if they are in different scopes. That is, there can be a local variable named spam and a global variable also named spam.
+-   You can use the same name for different variables if they are in different scopes. That is, there can be a local variable named spam and a global variable also named spam.
 
 ### The global Statement
 
@@ -1816,11 +1816,11 @@ spam.isupper()
 
 ### The isX String Methods
 
-- **isalpha()** returns True if the string consists only of letters and is not blank.
-- **isalnum()** returns True if the string consists only of lettersand numbers and is not blank.
-- **isdecimal()** returns True if the string consists only ofnumeric characters and is not blank.
-- **isspace()** returns True if the string consists only of spaces,tabs, and new-lines and is not blank.
-- **istitle()** returns True if the string consists only of wordsthat begin with an uppercase letter followed by onlylowercase letters.
+-   **isalpha()** returns True if the string consists only of letters and is not blank.
+-   **isalnum()** returns True if the string consists only of lettersand numbers and is not blank.
+-   **isdecimal()** returns True if the string consists only ofnumeric characters and is not blank.
+-   **isspace()** returns True if the string consists only of spaces,tabs, and new-lines and is not blank.
+-   **istitle()** returns True if the string consists only of wordsthat begin with an uppercase letter followed by onlylowercase letters.
 
 ### The startswith and endswith String Methods
 
@@ -2225,9 +2225,9 @@ phone_num_regex.findall('Cell: 415-555-9999 Work: 212-555-0000')
 
 To summarize what the findall() method returns, remember the following:
 
-- When called on a regex with no groups, such as \d-\d\d\d-\d\d\d\d, the method findall() returns a list of ng matches, such as ['415-555-9999', '212-555-0000'].
-- 
-- When called on a regex that has groups, such as (\d\d\d)-d\d)-(\d\ d\d\d), the method findall() returns a list of es of strings (one string for each group), such as [('415', ', '9999'), ('212', '555', '0000')].
+-   When called on a regex with no groups, such as \d-\d\d\d-\d\d\d\d, the method findall() returns a list of ng matches, such as ['415-555-9999', '212-555-0000'].
+-
+-   When called on a regex that has groups, such as (\d\d\d)-d\d)-(\d\ d\d\d), the method findall() returns a list of es of strings (one string for each group), such as [('415', ', '9999'), ('212', '555', '0000')].
 
 ### Making Your Own Character Classes
 
@@ -2249,11 +2249,11 @@ consonant_regex.findall('Robocop eats baby food. BABY FOOD.')
 
 ### The Caret and Dollar Sign Characters
 
-- You can also use the caret symbol (^) at the start of a regex to indicate that a match must occur at the beginning of the searched text.
-- 
-- Likewise, you can put a dollar sign ($) at the end of the regex to indicate the string must end with this regex pattern.
+-   You can also use the caret symbol (^) at the start of a regex to indicate that a match must occur at the beginning of the searched text.
+-
+-   Likewise, you can put a dollar sign ($) at the end of the regex to indicate the string must end with this regex pattern.
 
-- And you can use the ^ and $ together to indicate that the entire string must match the regex—that is, it's not enough for a match to be made on some subset of the string.
+-   And you can use the ^ and $ together to indicate that the entire string must match the regex—that is, it's not enough for a match to be made on some subset of the string.
 
 The r'^Hello' regular expression string matches strings that begin with 'Hello':
 
@@ -2540,8 +2540,8 @@ And all is good :)
 
 There are two ways to specify a file path.
 
-- An absolute path, which always begins with the root folder
-- A relative path, which is relative to the program's current working directory
+-   An absolute path, which always begins with the root folder
+-   A relative path, which is relative to the program's current working directory
 
 There are also the dot (.) and dot-dot (..) folders. These are not real folders but special names that can be used in a path. A single period ("dot") for a folder name is shorthand for "this directory." Two periods ("dot-dot") means "the parent folder."
 
@@ -2842,11 +2842,11 @@ shutil.move('C:\\bacon.txt', 'C:\\eggs')
 
 ### Permanently Deleting Files and Folders
 
-- Calling os.unlink(path) or Path.unlink() will delete the file at path.
-- 
-- Calling os.rmdir(path) or Path.rmdir() will delete the folder at path. This folder must be empty of any files or folders.
+-   Calling os.unlink(path) or Path.unlink() will delete the file at path.
+-
+-   Calling os.rmdir(path) or Path.rmdir() will delete the folder at path. This folder must be empty of any files or folders.
 
-- Calling shutil.rmtree(path) will remove the folder at path, and all files and folders it contains will also be deleted.
+-   Calling shutil.rmtree(path) will remove the folder at path, and all files and folders it contains will also be deleted.
 
 ### Safe Deletes with the send2trash Module
 
@@ -3050,8 +3050,8 @@ It is a convinient choice for configuration files where human will have to edit.
 
 There are two main librairies allowing to access to YAML files:
 
-- [PyYaml](https://pypi.python.org/pypi/PyYAML)
-- [Ruamel.yaml](https://pypi.python.org/pypi/ruamel.yaml)
+-   [PyYaml](https://pypi.python.org/pypi/PyYAML)
+-   [Ruamel.yaml](https://pypi.python.org/pypi/ruamel.yaml)
 
 Install them using `pip install` in your virtual environment.
 
@@ -3092,9 +3092,9 @@ conf1 = anyconfig.load("/path/to/foo/conf.d/a.yml")
 
 Exceptions are raised with a raise statement. In code, a raise statement consists of the following:
 
-- The raise keyword
-- A call to the Exception() function
-- A string with a helpful error message passed to the Exception() function
+-   The raise keyword
+-   A call to the Exception() function
+-   A string with a helpful error message passed to the Exception() function
 
 ```python
 raise Exception('This is the error message.')
@@ -3150,10 +3150,10 @@ The 116 is the return value from the write() method, since 116 characters were w
 
 An assertion is a sanity check to make sure your code isn't doing something obviously wrong. These sanity checks are performed by assert statements. If the sanity check fails, then an AssertionError exception is raised. In code, an assert statement consists of the following:
 
-- The assert keyword
-- A condition (that is, an expression that evaluates to True or False)
-- A comma
-- A string to display when the condition is False
+-   The assert keyword
+-   A condition (that is, an expression that evaluates to True or False)
+-   A comma
+-   A string to display when the condition is False
 
 ```python
 pod_bay_door_status = 'open'

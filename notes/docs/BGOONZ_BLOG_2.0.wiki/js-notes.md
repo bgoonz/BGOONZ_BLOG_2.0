@@ -1998,12 +1998,12 @@ tip-writer-support: https://www.coinbase.com/loverajoel
     typeof variable === 'undefined';
     ```
 
-````
+```
 - You can check if a variable is [null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)
 
   ```javascript
   variable === null
-````
+```
 
 - The **equality** operator considers them equal, but the **identity** doesn't
 

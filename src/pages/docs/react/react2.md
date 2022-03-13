@@ -423,7 +423,7 @@ Exported from [Medium](https://medium.com) on May 23, 2021.
 
 </div>
 
-````js
+```js
 
 const AccordionItem = ({ label, isCollapsed, handleClick, children }) =&gt; {
   return (
@@ -480,7 +480,7 @@ ReactDOM.render(
   document.getElementById(&quot;root&quot;)
 );
 
-````
+```
 
 <hr />
 <p>Renders an alert component with <code>type</code> prop.</p>
@@ -545,7 +545,7 @@ ReactDOM.render(
 
 </div>
 
-````js
+```js
 
 const Alert = ({ isDefaultShown = false, timeout = 250, type, message }) =&gt; {
   const [isShown, setIsShown] = React.useState(isDefaultShown);
@@ -590,7 +590,7 @@ ReactDOM.render(
   document.getElementById(&quot;root&quot;)
 );
 
-````
+```
 
 <hr />
 <p>Renders a string as plaintext, with URLs converted to appropriate link elements.</p>
@@ -684,7 +684,7 @@ ReactDOM.render(
 
 </div>
 
-````js
+```js
 
 const Carousel = ({ carouselItems, ...rest }) =&gt; {
   const [active, setActive] = React.useState(0);
@@ -725,7 +725,7 @@ ReactDOM.render(
   document.getElementById(&quot;root&quot;)
 );
 
-````
+```
 
 <hr />
 <p>Renders a component with collapsible content.</p>
@@ -750,7 +750,7 @@ ReactDOM.render(
 
 </div>
 
-````js
+```js
 
 const Collapse = ({ collapsed, children }) =&gt; {
   const [isCollapsed, setIsCollapsed] = React.useState(collapsed);
@@ -785,7 +785,7 @@ ReactDOM.render(
   document.getElementById(&quot;root&quot;)
 );
 
-````
+```
 
 <hr />
 <p>Renders a controlled <code>&lt;input&gt;</code> element that uses a callback function to inform its parent about value updates.</p>
@@ -995,7 +995,7 @@ ReactDOM.render(&lt;DataTable data={people} /&gt;, document.getElementById(&quot
 
 </div>
 
-````js
+```js
 
 const FileDrop = ({ onDrop }) =&gt; {
   const [drag, setDrag] = React.useState(false);
@@ -1069,7 +1069,7 @@ ReactDOM.render(
   document.getElementById(&quot;root&quot;)
 );
 
-````
+```
 
 <hr />
 <p>Renders a textarea component with a character limit.</p>
@@ -1221,7 +1221,7 @@ ReactDOM.render(
 
 </div>
 
-````js
+```js
 
 const Loader = ({ size }) =&gt; {
   return (
@@ -1248,7 +1248,7 @@ const Loader = ({ size }) =&gt; {
 
 ReactDOM.render(&lt;Loader size={24} /&gt;, document.getElementById(&quot;root&quot;));
 
-````
+```
 
 <hr />
 <p>Renders a link formatted to send an email (<code>mailto:</code> link).</p>
@@ -1435,7 +1435,7 @@ ReactDOM.render(
 
 </div>
 
-````js
+```js
 
 const Modal = ({ isVisible = false, title, content, footer, onClose }) =&gt; {
   const keydownHandler = ({ key }) =&gt; {
@@ -1492,7 +1492,7 @@ const App = () =&gt; {
 
 ReactDOM.render(&lt;App /&gt;, document.getElementById(&quot;root&quot;));
 
-````
+```
 
 <hr />
 <p>Renders a checkbox list that uses a callback function to pass its selected value/values to the parent component.</p>
@@ -1638,7 +1638,7 @@ ReactDOM.render(&lt;PasswordRevealer /&gt;, document.getElementById(&quot;root&q
 
 </div>
 
-````js
+```js
 
 const RippleButton = ({ children, onClick }) =&gt; {
   const [coords, setCoords] = React.useState({ x: -1, y: -1 });
@@ -1689,7 +1689,7 @@ ReactDOM.render(
   document.getElementById(&quot;root&quot;)
 );
 
-````
+```
 
 <hr />
 <p>Renders an uncontrolled <code>&lt;select&gt;</code> element that uses a callback function to pass its value to the parent component.</p>
@@ -1799,7 +1799,7 @@ ReactDOM.render(
 
 </div>
 
-````js
+```js
 
 const Star = ({ marked, starId }) =&gt; {
   return (
@@ -1844,7 +1844,7 @@ marked={selection ? selection &gt;= i + 1 : rating &gt;= i + 1}
 
 ReactDOM.render(&lt;StarRating value={2} /&gt;, document.getElementById(&quot;root&quot;));
 
-````
+```
 
 <hr />
 <p>Renders a tabbed menu and view component.</p>
@@ -1881,7 +1881,7 @@ ReactDOM.render(&lt;StarRating value={2} /&gt;, document.getElementById(&quot;ro
 
 </div>
 
-````js
+```js
 
 const TabItem = (props) =&gt; &lt;div {...props} /&gt;;
 
@@ -1935,7 +1935,7 @@ ReactDOM.render(
   document.getElementById(&quot;root&quot;)
 );
 
-````
+```
 
 <hr />
 <p>Renders a tag input field.</p>
@@ -2010,7 +2010,7 @@ ReactDOM.render(
 
 </div>
 
-````js
+```js
 
 const TagInput = ({ tags }) =&gt; {
   const [tagData, setTagData] = React.useState(tags);
@@ -2056,7 +2056,7 @@ ReactDOM.render(
   document.getElementById(&quot;root&quot;)
 );
 
-````
+```
 
 <hr />
 <p>Renders an uncontrolled <code>&lt;textarea&gt;</code> element that uses a callback function to pass its value to the parent component.</p>
@@ -2121,7 +2121,7 @@ ReactDOM.render(
 
 </div>
 
-````js
+```js
 
 const Toggle = ({ defaultToggled = false }) =&gt; {
   const [isToggleOn, setIsToggleOn] = React.useState(defaultToggled);
@@ -2144,7 +2144,7 @@ onChange={() =&gt; setIsToggleOn(!isToggleOn)}
 
 ReactDOM.render(&lt;Toggle /&gt;, document.getElementById(&quot;root&quot;));
 
-````
+```
 
 <hr />
 <p>Renders a tooltip component.</p>
@@ -2182,7 +2182,7 @@ ReactDOM.render(&lt;Toggle /&gt;, document.getElementById(&quot;root&quot;));
 
 </div>
 
-````js
+```js
 
 const Tooltip = ({ children, text, ...rest }) =&gt; {
   const [show, setShow] = React.useState(false);
@@ -2215,7 +2215,7 @@ ReactDOM.render(
   document.getElementById(&quot;root&quot;)
 );
 
-````
+```
 
 <hr />
 <p>Renders a tree view of a JSON object or array with collapsible content.</p>
@@ -2270,7 +2270,7 @@ ReactDOM.render(
 
 </div>
 
-````js
+```js
 
 const TreeView = ({
   data,
@@ -2352,7 +2352,7 @@ ReactDOM.render(
   document.getElementById(&quot;root&quot;)
 );
 
-````
+```
 
 <hr />
 <p>Renders an uncontrolled <code>&lt;input&gt;</code> element that uses a callback function to inform its parent about value updates.</p>
