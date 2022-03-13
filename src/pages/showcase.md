@@ -13,7 +13,7 @@ sections:
       grid_items:
           - title: Git HTML PREVIEW
             title_url: 'https://github.com/bgoonz/GIT-HTML-PREVIEW-TOOL'
-            image: images/futuristic-mars.gif
+            image: images/git-preview.gif
             content: >
                 Preview html files by pasting their url into the search bar
                 **Access-Control-Allow-Origin Header When Site A tries to fetch
@@ -71,7 +71,7 @@ sections:
                   no_follow: false
                   type: action
             type: grid_item
-            image: images/best-birch.gif
+            image: images/redux-state.gif
           - title: Mihir-Beg-Music.com
             title_url: 'https://panoramic-eggplant-452e4.netlify.app/'
             image: images/mihir.png
@@ -129,7 +129,7 @@ sections:
                   no_follow: false
                   type: action
             type: grid_item
-            image: images/energetic-sunflower.png
+            image: images/zumzi-video-chat.png
           - title: Web Audio Workstation
             title_url: lorem-ipsum
             image_alt: image of
