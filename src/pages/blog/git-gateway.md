@@ -10,7 +10,7 @@ seo:
     robots: []
     extra: []
 template: post
-thumb_image: images/chrome_oKIMcC3StQ.png
+thumb_image: images/git-banner.png
 ---
 
 # Understanding Git Bash
