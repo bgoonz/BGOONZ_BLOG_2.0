@@ -1,8 +1,7 @@
 ---
 title: Recursion
 weight: 0
-excerpt: If you have been on the business for some time, you have, most likely,
-come across the definition of recursion
+excerpt: If you have been on the business for some time, you have, most likely, come across the definition of recursion
 seo:
   title: 'Recursion'
   description: 'If you have been on the business for some time, you have, most likely,
