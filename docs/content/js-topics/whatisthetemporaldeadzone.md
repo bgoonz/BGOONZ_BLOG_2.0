@@ -10,7 +10,12 @@ categories: - en - javascript
 
 Temporal Dead Zone is a JavaScript behavior while using variables declared using `let` and `const` keywords. Since the keywords are block-scoped, the variables declared these keywords could not be accessed before the declaration, and then you will have to witness where variables will be said to be `undefined`.
 
-```javascript
+---
+
+
+```js
+
+
 function myFunc() {
     console.log(greeting);
     var greeting = 'Hello World!';

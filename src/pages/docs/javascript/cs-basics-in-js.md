@@ -211,7 +211,7 @@ let UTIL = (function (parent, $) {
 
 ### Anonymous Closures
 
-```javascript
+```js
 (function () {
     // ... all vars and functions are in this scope only
     // still maintains access to all globals
@@ -220,7 +220,7 @@ let UTIL = (function (parent, $) {
 
 ### Global Import
 
-```javascript
+```js
 (function ($, YAHOO) {
     // now have access to globals jQuery (as $) and YAHOO in this code
 })(jQuery, YAHOO);
@@ -228,7 +228,7 @@ let UTIL = (function (parent, $) {
 
 ### Module Export
 
-```javascript
+```js
 let MODULE = (function () {
     let my = {},
         privateVariable = 1;
@@ -250,7 +250,7 @@ let MODULE = (function () {
 
 ### Augmentation
 
-```javascript
+```js
 let MODULE = (function (my) {
     my.anotherMethod = function () {
         // added method...
@@ -264,7 +264,7 @@ let MODULE = (function (my) {
 
 In this pattern, the let statement is always necessary. Note that the import will create the module if it does not already exist. This means you can use a tool like LABjs and load all of your module files in parallel, without needing to block.
 
-###### ```javascript
+###### ```js
 
 let MODULE = (function (my) {
 // add capabilities...
@@ -279,7 +279,7 @@ let MODULE = (function (my) {
 
 Here we've overridden MODULE.moduleMethod, but maintain a reference to the original method, if needed.
 
-###### ```javascript
+###### ```js
 let MODULE = (function (my) {
     let old_moduleMethod = my.moduleMethod;
 
@@ -293,7 +293,7 @@ let MODULE = (function (my) {
 
 ### Cloning and Inheritance
 
-```javascript
+```js
 let MODULE_TWO = (function (old) {
     let my = {},
         key;
@@ -315,7 +315,7 @@ let MODULE_TWO = (function (old) {
 
 ### Cross-File Private State
 
-```javascript
+```js
 let MODULE = (function (my) {
     let _private = (my._private = my._private || {}),
         _seal = (my._seal =
@@ -341,7 +341,7 @@ let MODULE = (function (my) {
 
 ### Sub-modules
 
-```javascript
+```js
 MODULE.sub = (function () {
     let my = {};
     // ...

@@ -3,7 +3,7 @@
 For quickly measuring performance of a javascript block, we can use the console functions like
 [`console.time(label)`](https://developer.chrome.com/devtools/docs/console-api#consoletimelabel) and [`console.timeEnd(label)`](https://developer.chrome.com/devtools/docs/console-api#consoletimeendlabel)
 
-```javascript
+```js
 console.time('Array initialize');
 var arr = new Array(100),
     len = arr.length,

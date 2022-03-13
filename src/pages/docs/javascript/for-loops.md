@@ -84,7 +84,12 @@ for (;;) {
 
 The following `for` cycle calculates the offset position of a node in the `final-expression` section, and therefore it does not require the use of a `statement` section, a semicolon is used instead.
 
+---
+
+
 ```js
+
+
 function showOffsetPos(sId) {
     var nLeft = 0,
         nTop = 0;
@@ -321,7 +326,12 @@ getResponseSize('https://jsonplaceholder.typicode.com/photos');
 
 `for await...of` loop also consumes sync iterables and generators. In that case it internally awaits emitted values before assign them to the loop control variable.
 
+---
+
+
 ```js
+
+
 function* generator() {
     yield 0;
     yield 1;
@@ -355,7 +365,12 @@ for (let numOrPromise of generator()) {
 
 **Note:** Be aware of yielding rejected promises from sync generator. In such case `for await...of` throws when consuming rejected promise and DOESN'T CALL `finally` blocks within that generator. This can be undesirable if you need to free some allocated resources with `try/finally`.
 
+---
+
+
 ```js
+
+
 function* generatorWithRejectedPromises() {
     try {
         yield 0;

@@ -18,7 +18,7 @@ template: docs
 
 Converting strings to numbers is extremely common. The easiest and fastest ([jsPerf](https://jsperf.com/number-vs-parseint-vs-plus/29)) way to achieve that would be using the `+` (plus) operator.
 
-```javascript
+```js
 var one = '1';
 
 var numberOne = +one; // Number 1
@@ -26,7 +26,7 @@ var numberOne = +one; // Number 1
 
 You can also use the `-` (minus) operator which type-converts the value into number but also negates it.
 
-```javascript
+```js
 var one = '1';
 
 var negativeNumberOne = -one; // Number -1
@@ -72,7 +72,7 @@ The `==` (or `!=`) operator performs an automatic type conversion if needed. The
 
 Called as "Iffy" ( IIFE - immediately invoked function expression) is an anonymous function expression that is immediately invoked and has some important uses in Javascript.
 
-```javascript
+```js
 (function () {
     // Do something​
 })();
@@ -84,7 +84,7 @@ The pair of parenthesis surrounding the anonymous function turns the anonymous f
 
 Similarly, we can even create a named, immediately invoked function expression:
 
-```javascript
+```js
 
 (someNamedFunction = function(msg) {
 
@@ -400,7 +400,12 @@ test || isFalse(); // Test is false.
 
 The logical OR could also be used to set a default value for function argument.
 
+---
+
+
 ```js
+
+
 function theSameOldFoo(name) {
     name = name || 'Bar';
 
@@ -462,7 +467,12 @@ f(3)(5)
 
 For example: Uncurried add()
 
-```javascript
+---
+
+
+```js
+
+
 function add(x, y) {
     return x + y;
 }
@@ -472,7 +482,12 @@ add(3, 5); // returns 8
 
 Curried add()
 
-```javascript
+---
+
+
+```js
+
+
 function addC(x) {
     return function (y) {
         return x + y;
@@ -490,7 +505,12 @@ curry: (X × Y → R) → (X → (Y → R))
 
 Javascript Code:
 
-```javascript
+---
+
+
+```js
+
+
 function curry(f) {
     return function (x) {
         return function (y) {
@@ -514,7 +534,12 @@ f' does the same as f, but only has to fill in the second parameter which is why
 
 For example: Binding the first argument of function add to 5 produces the function plus5.
 
-```javascript
+---
+
+
+```js
+
+
 function plus5(y) {
     return 5 + y;
 }
@@ -530,7 +555,12 @@ partApply : ((X × Y → R) × X) → (Y → R)
 
 Javascript Code:
 
-```javascript
+---
+
+
+```js
+
+
 function partApply(f, x) {
     return function (y) {
         return f(x, y);
@@ -996,7 +1026,7 @@ Assigning is very common. Sometimes typing becomes time consuming for us 'Lazy p
 
 This is the similar use of
 
-```javascript
+```js
 x += 23; // x = x + 23;
 
 y -= 15; // y = y - 15;
@@ -1023,7 +1053,7 @@ n = n - 1;
 
 There is a special `++` operator. It's best to explain it with an example:
 
-```javascript
+```js
 var a = 2;
 
 var b = a++;
@@ -1039,7 +1069,7 @@ The `a++` statement does this:
 
 But what if we wanted to increment the value first? It's simple:
 
-```javascript
+```js
 var a = 2;
 
 var b = ++a;
@@ -1055,7 +1085,7 @@ The `--` operator is similar, except it decrements the value.
 
 This is what we write on regular basis.
 
-```javascript
+```js
 var newValue;
 
 if (value > 10) newValue = 5;
@@ -1064,13 +1094,13 @@ else newValue = 2;
 
 We can user ternary operator to make it awesome:
 
-```javascript
+```js
 var newValue = value > 10 ? 5 : 2;
 ```
 
 #### Null, Undefined, Empty Checks
 
-```javascript
+```js
 if (variable1 !== null || variable1 !== undefined || variable1 !== '') {
     var variable2 = variable1;
 }
@@ -1078,7 +1108,7 @@ if (variable1 !== null || variable1 !== undefined || variable1 !== '') {
 
 Shorthand here:
 
-```javascript
+```js
 var variable2 = variable1 || '';
 ```
 
@@ -1088,7 +1118,7 @@ P.S.: If variable1 is a number, then first check if it is 0.
 
 Instead of using:
 
-```javascript
+```js
 var a = new Array();
 
 a[0] = 'myString1';
@@ -1098,7 +1128,7 @@ a[1] = 'myString2';
 
 Use this:
 
-```javascript
+```js
 var a = ['myString1', 'myString2'];
 ```
 
@@ -1106,7 +1136,7 @@ var a = ['myString1', 'myString2'];
 
 Instead of using:
 
-```javascript
+```js
 var skillSet = new Array();
 
 skillSet['Document language'] = 'HTML5';
@@ -1116,7 +1146,7 @@ skillSet['Styling language'] = 'CSS3';
 
 Use this:
 
-```javascript
+```js
 var skillSet = {
     'Document language': 'HTML5',
 

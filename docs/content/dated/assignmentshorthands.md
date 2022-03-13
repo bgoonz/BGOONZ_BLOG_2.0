@@ -5,7 +5,7 @@ So, we can use some tricks to help us and make our code cleaner and simpler.
 
 This is the similar use of
 
-```javascript
+```js
 x += 23; // x = x + 23;
 y -= 15; // y = y - 15;
 z *= 10; // z = z * 10;
@@ -23,7 +23,7 @@ n = n - 1;
 
 There is a special `++` operator. It's best to explain it with an example:
 
-```javascript
+```js
 var a = 2;
 var b = a++;
 // Now a is 3 and b is 2
@@ -36,7 +36,7 @@ The `a++` statement does this:
 
 But what if we wanted to increment the value first? It's simple:
 
-```javascript
+```js
 var a = 2;
 var b = ++a;
 // Now both a and b are 3
@@ -50,7 +50,7 @@ The `--` operator is similar, except it decrements the value.
 
 This is what we write on regular basis.
 
-```javascript
+```js
 var newValue;
 if (value > 10) newValue = 5;
 else newValue = 2;
@@ -58,13 +58,13 @@ else newValue = 2;
 
 We can user ternary operator to make it awesome:
 
-```javascript
+```js
 var newValue = value > 10 ? 5 : 2;
 ```
 
 ### Null, Undefined, Empty Checks
 
-```javascript
+```js
 if (variable1 !== null || variable1 !== undefined || variable1 !== '') {
     var variable2 = variable1;
 }
@@ -72,7 +72,7 @@ if (variable1 !== null || variable1 !== undefined || variable1 !== '') {
 
 Shorthand here:
 
-```javascript
+```js
 var variable2 = variable1 || '';
 ```
 
@@ -82,7 +82,7 @@ P.S.: If variable1 is a number, then first check if it is 0.
 
 Instead of using:
 
-```javascript
+```js
 var a = new Array();
 a[0] = 'myString1';
 a[1] = 'myString2';
@@ -90,7 +90,7 @@ a[1] = 'myString2';
 
 Use this:
 
-```javascript
+```js
 var a = ['myString1', 'myString2'];
 ```
 
@@ -98,7 +98,7 @@ var a = ['myString1', 'myString2'];
 
 Instead of using:
 
-```javascript
+```js
 var skillSet = new Array();
 skillSet['Document language'] = 'HTML5';
 skillSet['Styling language'] = 'CSS3';
@@ -106,7 +106,7 @@ skillSet['Styling language'] = 'CSS3';
 
 Use this:
 
-```javascript
+```js
 var skillSet = {
     'Document language': 'HTML5',
     'Styling language': 'CSS3'

@@ -4,7 +4,12 @@ You're going to run into some instances where you'll be using `new` to allocate 
 
 The `new` operator in JavaScript is an operator that, under reasonable circumstances, returns a new instance of an object. Let's say we have a constructor function:
 
+---
+
+
 ```js
+
+
 function Thing() {
     this.one = 1;
     this.two = 2;
@@ -23,7 +28,12 @@ myThing.two; // 2
 
 Now that you get that example, here's where things get a little bit wonky. Let's say I add something to the constructor function, a little SPICE:
 
+---
+
+
 ```js
+
+
 function Thing() {
     this.one = 1;
     this.two = 2;
@@ -47,7 +57,12 @@ Interestingly enough, we never actually see the five that we supposedly 'returne
 
 Let's return a non-primitive type instead, something like an object.
 
+---
+
+
 ```js
+
+
 function Thing() {
     this.one = 1;
     this.two = 2;

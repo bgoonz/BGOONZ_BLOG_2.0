@@ -18,7 +18,7 @@ Those are known methods, but it doesn't mean there isn't a more performant way. 
 
 Adding an element at the end of the array is easy with push(), but it can be done in different ways.
 
-```javascript
+```js
 var arr = [1, 2, 3, 4, 5];
 var arr2 = [];
 
@@ -48,7 +48,7 @@ Both first methods modify the original array. Don't believe me? Check the [jsper
 2. _arr.push(6);_ 40.19 % slower
 3. _arr2 = arr.concat([6]);_ 49.78 % slower
 
-```javascript
+```js
 Final victor
 
 1. arr[arr.length] = 6; // with an average of 5 632 856 ops/sec
@@ -88,7 +88,7 @@ Final victor
 2. _arr[arr.length] = 6;_ 0.80 % slower
 3. _arr2 = arr.concat([6]);_ 76.07 % slower
 
-```javascript
+```js
 Final victor
 
 1. arr[arr.length] = 6; // with an average of 42 345 449 ops/sec
@@ -100,7 +100,7 @@ Final victor
 
 Now if we are trying to add an item to the beginning of the array:
 
-```javascript
+```js
 var arr = [1, 2, 3, 4, 5];
 
 arr.unshift(0);
@@ -126,7 +126,7 @@ Here is a little more detail: unshift edits the original array; concat returns a
 1. _arr.unshift(0);_ // 3 250 184 ops/sec
 2. _[0].concat(arr);_ 33.67 % slower
 
-```javascript
+```js
 Final victor
 
 1. [0].concat(arr); // with an average of 4 972 622 ops/sec
@@ -160,7 +160,7 @@ Final victor
 1. _arr.unshift(0);_ // 12 356 477 ops/sec
 2. _[0].concat(arr);_ 15.17 % slower
 
-```javascript
+```js
 Final victor
 
 1. [0].concat(arr); // with an average of 6 032 573 ops/sec
@@ -171,7 +171,7 @@ Final victor
 
 Adding items in the middle of an array is easy with splice, and it's the most performant way to do it.
 
-```javascript
+```js
 var items = ['one', 'two', 'three', 'four'];
 items.splice(items.length / 2, 0, 'hello');
 ```

@@ -88,14 +88,14 @@ python program.py arg1 arg2 etc
 
 Single line:
 
-```javascript
+```js
 // Anything after two forward slashes is a comment
 print(2); // prints 2
 ```
 
 Multi-line comments:
 
-```javascript
+```js
 /* Anything between slash-star and
 star-slash is a comment */
 ```
@@ -129,7 +129,7 @@ print(2)
 
 Javascript ends statements with semicolons, usually at the end of the line. I can also be effectively used to put multiple statements on the same line, but this is rare.
 
-```javascript
+```js
 console.log("Hello, world!");
 
 let x = 10;
@@ -152,7 +152,7 @@ print(1); print(2)   # prints 1, then 2
 
 Whitespace has no special meaning. Blocks are declared with squirrely braces `{` and `}`.
 
-```javascript
+```js
 if (x == 2) {
   console.log("x must be 2");
 } else {
@@ -184,7 +184,12 @@ else:
 
 Define functions as follows:
 
-```javascript
+---
+
+
+```js
+
+
 function foobar(x, y, z) {
   console.log(x, y, z);
   return 12;
@@ -193,7 +198,7 @@ function foobar(x, y, z) {
 
 An alternate syntax for functions is growing increasingly common, called _arrow functions_:
 
-```javascript
+```js
 let hello = () => {
   console.log("hello");
   console.log("world");
@@ -280,7 +285,7 @@ The pre- and post-increment and decrement are notably absent.
 
 Variables are created upon use, but should be created with the `let` or `const` keywords.
 
-```javascript
+```js
 let x = 10;
 const y = 30;
 ```
@@ -299,7 +304,7 @@ x = 10
 
 #### JavaScript
 
-```javascript
+```js
 let a = 12; // number
 let b = 1.2; // number
 let c = "hello"; // string
@@ -311,21 +316,21 @@ let g = undefined; // undefined value
 
 Multi-line strings:
 
-```javascript
+```js
 let s = `this is a
 multi-line string`;
 ```
 
 Parameterized strings:
 
-```javascript
+```js
 let x = 12;
 console.log(`x is ${x}`); // prints "x is 12"
 ```
 
 JS is _weakly typed_ so it supports operations on multiple types of data at once.
 
-```javascript
+```js
 "2" + 4; // string "24"
 parseInt("2") + 4; // number 6
 Number("2") + 4; // number 6
@@ -374,7 +379,7 @@ Arrays are zero-based.
 
 Creating lists:
 
-```javascript
+```js
 let a1 = new Array(); // Empty array
 let a2 = new Array(10); // Array of 10 elements
 let a3 = []; // Empty array
@@ -384,7 +389,7 @@ let a5 = [1, 2, "b"]; // No problem
 
 Accessing:
 
-```javascript
+```js
 console.log(a4[1]); // prints 20
 
 a4[0] = 5; // change from 10 to 5
@@ -393,7 +398,7 @@ a4[20] = 99; // OK, makes a new element at index 20
 
 Length/number of elements:
 
-```javascript
+```js
 a4.length; // 3
 ```
 
@@ -483,7 +488,7 @@ _Objects_ hold data which can be found by a specific key called a _property_.
 
 Creation:
 
-```javascript
+```js
 let o1 = {}; // empty object
 let o2 = { x: 12 }; // one property
 let o3 = { y: "hello" }; // property quotes optional
@@ -498,7 +503,7 @@ let o4 = {
 
 Access:
 
-```javascript
+```js
 console.log(o2.x); // prints 12
 console.log(o4["foo"]); // prints hello
 ```
@@ -540,7 +545,7 @@ Dot notation does not work with Python dicts.
 
 Converting to different number bases:
 
-```javascript
+```js
 let x = 237;
 let x_binary = x.toString(2); // string '11101101'
 let x_hex = x.toString(16); // string 'ed'
@@ -548,14 +553,14 @@ let x_hex = x.toString(16); // string 'ed'
 
 Controlling floating point precision:
 
-```javascript
+```js
 let x = 3.1415926535;
 let y = x.toFixed(2); // string '3.14'
 ```
 
 Padding and justification:
 
-```javascript
+```js
 let s = "Hello!";
 let t = s.padStart(10, " "); // string '    Hello!'
 let u = s.padEnd(10, " "); // string 'Hello!    '
@@ -568,7 +573,7 @@ let v = s.padStart(10, "*"); // string '****Hello!'
 
 Parameterized strings:
 
-```javascript
+```js
 let x = 3.1415926;
 let y = "Hello";
 let z = 67;
@@ -595,7 +600,7 @@ Also see [printf-style String Formatting](https://docs.python.org/3/library/stdt
 
 Literal boolean values:
 
-```javascript
+```js
 x = true;
 y = false;
 ```
@@ -615,7 +620,7 @@ Boolean operators:
 
 The concept of strict equality/inequality applies to items that might normally be converted into a compatible type. The strict tests will consider if the types themselves are the same.
 
-```javascript
+```js
 0 == "0"; // true
 0 === "0"; // false
 
@@ -636,7 +641,7 @@ Logical operators:
 
 The not operator `!` can be used to test whether or not a value is "truthy".
 
-```javascript
+```js
 !0; // true
 !!0; // false
 !1; // false
@@ -647,7 +652,7 @@ The not operator `!` can be used to test whether or not a value is "truthy".
 
 Example:
 
-```javascript
+```js
 if (a == 2 && b !== "") {
   // Something complicated
 }
@@ -705,7 +710,7 @@ if a == 2 and b != "":
 
 C-style `for` loops:
 
-```javascript
+```js
 for (let i = 0; i < 10; i++) {
   console.log(i);
 }
@@ -713,7 +718,7 @@ for (let i = 0; i < 10; i++) {
 
 `for`-`in` loops iterate over the properties of an object or indexes of an array:
 
-```javascript
+```js
 a = [10, 20, 30];
 
 for (let i in a) {
@@ -731,7 +736,7 @@ for (let i in b) {
 
 `for`-`of` loops access the values within the array (as opposed to the indexes of the array):
 
-```javascript
+```js
 a = [10, 20, 30];
 
 for (let i of a) {
@@ -781,7 +786,7 @@ for i in b:
 
 C-style `while` and `do`-`while`:
 
-```javascript
+```js
 // Print 10 down to 0:
 
 let x = 10;
@@ -816,7 +821,7 @@ while x >= 0:
 
 JS can switch on various data types:
 
-```javascript
+```js
 switch (x) {
   case "foo":
     console.log("x is foo, all right");
@@ -861,7 +866,7 @@ funcs[x]()  # calls func2
 
 JS uses C-style `if` statements:
 
-```javascript
+```js
 if (x == 10) {
   console.log("x is 10");
 } else if (x == 20) {
@@ -892,7 +897,12 @@ The current object is referred to by `this`.
 
 Pre ES-2015, classes were created using functions. This is now outdated.
 
-```javascript
+---
+
+
+```js
+
+
 function Goat(color) {
   this.legs = 4;
   this.color = color;
@@ -903,7 +913,12 @@ g = new Goat("brown");
 
 JS uses prototypal inheritance. Pre ES-2015, this was explicit, and is also outdated:
 
-```javascript
+---
+
+
+```js
+
+
 function Creature(type) {
   this.type = type;
 }
@@ -923,7 +938,7 @@ g.jump(); // "I'm jumping! Yay!"
 
 Modern JS introduced the `class` keyword and a syntax more familiar to most other OOP languages. Note that the inheritance model is still prototypal inheritance; it's just that the details are hidden from the developer.
 
-```javascript
+```js
 class Creature {
   constructor(type) {
     this.type = type;

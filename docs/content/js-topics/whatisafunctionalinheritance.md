@@ -12,7 +12,7 @@ Functional inheritance is the process of inheriting features by applying an augm
 
 Functional mixins are composable factory functions that add properties and behaviors to objects like stations in an assembly line.
 
-```javascript
+```js
 // Base object constructor function
 function Animal(data) {
     var that = {}; // Create an empty object

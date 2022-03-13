@@ -4,7 +4,7 @@ tip-writer-support: https://www.coinbase.com/loverajoel
 
 When you have to check if a property is present in an [object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects), you probably are doing something like this:
 
-```javascript
+```js
 var myObject = {
   name: '@tips_js'
 };
@@ -17,7 +17,7 @@ That's ok, but you have to know that there are two native ways for this kind of 
 
 ### See the big Difference
 
-```javascript
+```js
 var myObject = {
     name: '@tips_js'
 };
@@ -33,7 +33,7 @@ Both differ in the depth at which they check the properties. In other words, `ha
 
 Here's another example:
 
-```javascript
+```js
 var myFunc = function () {
     this.name = '@tips_js';
 };

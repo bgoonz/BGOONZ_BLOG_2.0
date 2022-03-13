@@ -242,4 +242,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682" class="p-canonical">Canonical link</a>
 
-Exported from [Medium](https://medium.com) on August 6, 2021.
+ August 6, 2021.

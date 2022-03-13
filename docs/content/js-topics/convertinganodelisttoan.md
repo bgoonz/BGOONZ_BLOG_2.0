@@ -8,7 +8,7 @@ tip-tldr: Here's a quick, safe, and reusable way to convert a node list into an 
 
 The `querySelectorAll` method returns an array-like object called a node list. These data structures are referred to as "Array-like", because they appear as an array, but can not be used with array methods like `map` and `forEach`. Here's a quick, safe, and reusable way to convert a node list into an array of DOM elements:
 
-```javascript
+```js
 const nodelist = document.querySelectorAll('div');
 const nodelistToArray = Array.apply(null, nodelist);
 
@@ -25,7 +25,7 @@ The `apply` method is used to pass an array of arguments to a function with a gi
 
 Alternatively you can use `Array.prototype.slice` combined with `Function.prototype.call` or `Function.prototype.apply` passing the array-like object as the value of `this`:
 
-```javascript
+```js
 const nodelist = document.querySelectorAll('div');
 const nodelistToArray = Array.prototype.slice.call(nodelist); // or equivalently Array.prototype.slice.apply(nodelist);
 

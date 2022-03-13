@@ -8,7 +8,12 @@ tip-tldr: Fisher-Yates Shuffling it's an algorithm to shuffle an array.
 
 This snippet here uses [Fisher-Yates Shuffling](https://www.wikiwand.com/en/Fisher%E2%80%93Yates_shuffle) Algorithm to shuffle a given array.
 
-```javascript
+---
+
+
+```js
+
+
 function shuffle(arr) {
     var i, j, temp;
     for (i = arr.length - 1; i > 0; i--) {
@@ -23,7 +28,7 @@ function shuffle(arr) {
 
 An example:
 
-```javascript
+```js
 var a = [1, 2, 3, 4, 5, 6, 7, 8];
 var b = shuffle(a);
 console.log(b);

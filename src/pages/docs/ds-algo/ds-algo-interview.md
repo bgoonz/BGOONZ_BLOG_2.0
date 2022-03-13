@@ -766,7 +766,12 @@ const permutations = (arr) => {
 
 ### <span style="color:red;"> Create a standalone function `bind` that is functionally equivalent to the method `Function.prototype.bind`.
 
+---
+
+
 ```js
+
+
 function example() {
     console.log(this);
 }
@@ -918,7 +923,12 @@ class MyComponent extends Component {
 Callbacks are functions passed as an argument to another function to be executed once an event has occurred or a certain task is complete, often used in asynchronous code. Callback functions are invoked later by a piece of code but can be declared on initialization without being invoked.
 As an example, event listeners are asynchronous callbacks that are only executed when a specific event occurs.
 
+---
+
+
 ```js
+
+
 function onClick() {
     console.log('The user clicked on the page.');
 }
@@ -953,7 +963,12 @@ map([1, 2, 3, 4, 5], (n) => n * 2); // [2, 4, 6, 8, 10]
 
 `children` is part of the props object passed to components that allows components to be passed as data to other components, providing the ability to compose components cleanly. There are a number of methods available in the React API to work with this prop, such as `React.Children.map`, `React.Children.forEach`, `React.Children.count`, `React.Children.only` and `React.Children.toArray`. A simple usage example of the children prop is as follows:
 
+---
+
+
 ```js
+
+
 function GenericBox({ children }) {
     return <div className="container">{children}</div>;
 }
@@ -1073,7 +1088,12 @@ Even though two different objects can have the same properties with equal values
 In order to test if two objects are equal in structure, a helper function is required. It will iterate through the own properties of each object to test if they have the same values, including nested objects. Optionally, the prototypes of the objects may also be tested for equivalence by passing `true` as the 3rd argument.
 Note: this technique does not attempt to test equivalence of data structures other than plain objects, arrays, functions, dates and primitive values.
 
+---
+
+
 ```js
+
+
 function isDeepEqual(obj1, obj2, testPrototypes = false) {
     if (obj1 === obj2) {
         return true;
@@ -1933,7 +1953,12 @@ In HTML, `false` can be returned to prevent default behavior, whereas in React `
 <a href="#" onclick="console.log('The link was clicked.'); return false" />
 ```
 
+---
+
+
 ```js
+
+
 function handleClick(e) {
     e.preventDefault();
     console.log('The link was clicked.');
@@ -2084,7 +2109,12 @@ We declare that the new array is mapped to a new one where each value is doubled
 Since a JSX element tree is one large expression, you cannot embed statements inside. Conditional expressions act as a replacement for statements to use inside the tree.
 For example, this won't work:
 
+---
+
+
 ```js
+
+
 function App({ messages, isVisible }) {
     return (
         <div>
@@ -2097,7 +2127,12 @@ function App({ messages, isVisible }) {
 
 Logical AND `&&` and the ternary `? :` operator replace the `if`/`else` statements.
 
+---
+
+
 ```js
+
+
 function App({ messages, isVisible }) {
     return (
         <div>
@@ -2500,7 +2535,12 @@ person.birthday(); // person.age === 51
 
 Often used when you need to create multiple instances of an object, each with their own data that other instances of the class cannot affect. The `new` operator must be used before invoking the constructor or the global object will be mutated.
 
+---
+
+
 ```js
+
+
 function Person(name, age) {
     this.name = name;
     this.age = age;
@@ -2568,7 +2608,12 @@ Object.create(personProto, {
 
 Parameters are the variable names of the function definition, while arguments are the values given to a function when it is invoked.
 
+---
+
+
 ```js
+
+
 function myFunction(parameter1, parameter2) {
     console.log(arguments[0]); // "argument1"
 }
@@ -2811,7 +2856,10 @@ const c = (arr) => arr.sort((a, b) => a - b);
 
 Comments must be wrapped inside curly braces `{}` and use the `/* */` syntax.
 
+
 ```jsx
+
+
 const tree = (
     <div>
         {/* Comment */}
@@ -2957,7 +3005,12 @@ Generally, this concept is used in web applications to manage state. With most a
 
 ### <span style="color:red;"> What does the following function return?
 
+---
+
+
 ```js
+
+
 function greet() {
     return;
     {

@@ -45,7 +45,7 @@ For more detailed explanations, [see below](#regular-expressions-in-javascript)
 
 - Creating a new regular expression in JavaScript
 
-    ```javascript
+    ```js
     const regex = /pattern/;
     // const regex = new RegExp('pattern'); // can do this too
     ```
@@ -279,7 +279,7 @@ For more detailed explanations, [see below](#regular-expressions-in-javascript)
 
 - You can create a regular expression in JS with forward slashes, `/`
 
-    ```javascript
+    ```js
     const regex = /pattern/;
     // const regex = new RegExp('pattern'); // can do this too
     ```
@@ -289,7 +289,7 @@ For more detailed explanations, [see below](#regular-expressions-in-javascript)
 - returns `true` if there is a match between the regex and a string parameter,
     otherwise `false`
 
-    ```javascript
+    ```js
     const regex = /banana/;
     console.log(regex.test('this banana is plain')); // true
     console.log(regex.test('THIS BANANA IS mushy')); // false
@@ -298,7 +298,7 @@ For more detailed explanations, [see below](#regular-expressions-in-javascript)
 
 - Ignore cases:
 
-    ```javascript
+    ```js
     const regex = /banana/i; // 'i' at the end of the pattern ignores cases
     // const regex = new RegExp('banana', i);
     console.log(regex.test('this banana is plain')); // true
@@ -320,7 +320,7 @@ For more detailed explanations, [see below](#regular-expressions-in-javascript)
 
 - Regex that has a global search and ignores casing:
 
-    ```javascript
+    ```js
     const str = 'This banana is mushy. I do not like MUSHY bananas';
     const regex = /mushy/gi;
     console.log(str.replace(regex, 'green')); // 'This banana is green. I do not like green bananas'
@@ -329,7 +329,7 @@ For more detailed explanations, [see below](#regular-expressions-in-javascript)
 - Regex that has a global search and ignores casing with a function as second
     argument:
 
-    ```javascript
+    ```js
     const str = 'This banana is mushy. I do not like MUSHY bananas';
     const regex = /mushy/gi;
     let count = 0;
@@ -343,7 +343,7 @@ For more detailed explanations, [see below](#regular-expressions-in-javascript)
 
 - Regex that has no global search:
 
-    ```javascript
+    ```js
     const str = 'This banana is mushy. I do not like mushy bananas';
     const regex = /mushy/;
     console.log(str.replace(regex, 'green')); // 'This banana is green. I do not like green bananas'
@@ -351,7 +351,7 @@ For more detailed explanations, [see below](#regular-expressions-in-javascript)
 
 - Pattern as a string:
 
-    ```javascript
+    ```js
     const str = 'This banana is mushy. I do not like mushy bananas';
     const patternStr = 'mushy';
     console.log(str.replace(patternStr, 'green')); // 'This banana is green. I do not like mushy bananas'
@@ -359,7 +359,7 @@ For more detailed explanations, [see below](#regular-expressions-in-javascript)
 
 - Cool pattern matching with regex:
 
-    ```javascript
+    ```js
     const data = { name: 'Fido', age: 4, favToy: 'bone' };
     const regex = /%\w+%/g;
     const str = "My dog's name is %name%. He is %age% years old. His favorite toy is %favToy%.";

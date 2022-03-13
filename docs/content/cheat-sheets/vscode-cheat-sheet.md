@@ -105,7 +105,7 @@
 
 ### My Settings
 
-```javascript
+```js
 {
     // Controls the font size in pixels
     "editor.fontSize": 14,

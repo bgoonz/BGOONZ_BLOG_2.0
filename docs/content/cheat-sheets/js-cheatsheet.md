@@ -10,7 +10,7 @@ Creates an array by calling a specific function on each element present in the p
 
 #### Syntax
 
-```javascript
+```js
 array.map(function(currentValue)
 ```
 
@@ -30,7 +30,7 @@ Creates an array filled with all array elements that pass a test (provided as a 
 
 #### Syntax
 
-```javascript
+```js
 array.filter(function(currentValue)
 ```
 
@@ -44,7 +44,7 @@ Array containing all elements that pass the test else an empty array.
 
 #### Example
 
-```javascript
+```js
 let filtered = [112, 52, 0, -1, 944].filter(function (value) {
     return value > 0;
 });
@@ -64,7 +64,7 @@ reduces the array to a single value and executes provided function for each valu
 
 #### Syntax
 
-```javascript
+```js
 array.reduce( function(total, currentValue, currentIndex, arr), initialValue )
 ```
 
@@ -78,7 +78,7 @@ returns accumulated result fron the last call of the callback function.
 
 #### Example
 
-```javascript
+```js
 const array1 = [1, 2, 3, 4];
 const reducer = function (accumulator, currentValue) {
     return accumulator + currentValue;
@@ -102,7 +102,7 @@ Returns the selected elements in an array, as a new array object and selects the
 
 #### Syntax
 
-```javascript
+```js
 array.slice(start, end);
 ```
 
@@ -117,7 +117,7 @@ New array containing the selected elements.
 
 #### Example
 
-```javascript
+```js
 let arr = [1, 2, 3, 4, 5, 6];
 let new_arr = arr.slice(3);
 ```
@@ -137,7 +137,7 @@ Adds/removes items to/from an array, and returns the removed item(s).
 
 #### Syntax
 
-```javascript
+```js
 array.splice(index, howmany, item1, ....., itemX)
 ```
 
@@ -153,7 +153,7 @@ Array without the removed items.
 
 #### Example
 
-```javascript
+```js
 const languages = ['C++', 'Java', 'Html', 'Python', 'C'];
 // Add 'Julia' and 'Php' after removing 'Html'.
 const removed = languages.splice(2, 1, 'Julia', 'Php');
@@ -182,13 +182,13 @@ Used to add a single item to an array(or to add two or more arrays).
 
 #### Syntax
 
-```javascript
+```js
 array1.concat(item);
 ```
 
 _or_
 
-```javascript
+```js
 array1.concat(array2, array3, ..., arrayX)
 ```
 
@@ -202,7 +202,7 @@ Joined array
 
 #### Example
 
-```javascript
+```js
 const num1 = [1, 2, 3],
     num2 = [4, 5, 6],
     num3 = 7;
@@ -230,7 +230,7 @@ Returns the array as a string. The elementsare separated by a specified separato
 
 #### Syntax
 
-```javascript
+```js
 array.join(separator);
 ```
 
@@ -244,7 +244,7 @@ String, representing the array values, separated by the specified separator.
 
 #### Example
 
-```javascript
+```js
 const languages = ['C++', 'Java', 'Html', 'Python', 'C'];
 languages.join();
 languages.join('.');
@@ -267,7 +267,7 @@ Adds new items to the end of an array, and returns the new length.
 
 #### Syntax
 
-```javascript
+```js
 array.push(item1, item2, ..., itemX)
 ```
 
@@ -281,7 +281,7 @@ New length of the array.
 
 #### Example
 
-```javascript
+```js
 let arr = [1, 2, 3, 4, 5];
 console.log(arr.push(6, 7, 8));
 ```
@@ -301,7 +301,7 @@ Returns the value of the first element in an array that pass a test (provided as
 
 #### Syntax
 
-```javascript
+```js
 array.find(function(currentValue)
 ```
 
@@ -315,7 +315,7 @@ The array element value if any of the elements in the array pass the test, other
 
 #### Example
 
-```javascript
+```js
 let array = [1, 3, 5, 7, 9];
 const found = array.find(function (element) {
     return element > 4;
@@ -337,7 +337,7 @@ returns the position of the first occurrence of a specified value in a string.
 
 #### Syntax
 
-```javascript
+```js
 string.indexOf(searchvalue, start);
 ```
 
@@ -352,7 +352,7 @@ Number, representing the position where the specified searchvalue occurs for the
 
 #### Example
 
-```javascript
+```js
 console.log('Departed Train'.indexOf('Train'));
 ```
 
@@ -374,7 +374,7 @@ Extracts the characters in a string between "start" and "end", not including "en
 
 #### Syntax
 
-```javascript
+```js
 string.substring(start, end);
 ```
 
@@ -389,7 +389,7 @@ New string containing the extracted characters.
 
 #### Example
 
-```javascript
+```js
 // Taking a string as variable
 const string = 'JavaScriptCheatsheet';
 a = string.substring(0, 4);
@@ -424,7 +424,7 @@ Used to split a string into an array of substrings, and returns the new array.
 
 #### Syntax
 
-```javascript
+```js
 string.split(separator, limit);
 ```
 
@@ -439,7 +439,7 @@ Array containing splitted values.
 
 #### Example
 
-```javascript
+```js
 let str = 'It iS a great Day.';
 let array = str.split(' ');
 ```
@@ -468,7 +468,7 @@ A string, representing the value of a string converted to lowercase.
 
 #### Example
 
-```javascript
+```js
 const str = 'It iS a Great Day.';
 const string = str.toLowerCase();
 ```
@@ -487,7 +487,7 @@ Removes whitespace from both sides of a string.
 
 #### Syntax
 
-```javascript
+```js
 string.trim();
 ```
 
@@ -497,7 +497,7 @@ String, representing the string with removed whitespace from both ends
 
 #### Example
 
-```javascript
+```js
 const str = '     "JavaScript"      ';
 const st = str.trim();
 ```
@@ -516,7 +516,7 @@ Returns the character at the specified index in a string.
 
 #### Syntax:
 
-```javascript
+```js
 string.charAt(index);
 ```
 
@@ -526,7 +526,7 @@ String, representing the character at the specified index, or an empty string if
 
 #### Example:
 
-```javascript
+```js
 const str = 'JavaScript is object oriented language';
 console.log(str.charAt(9));
 ```
@@ -543,7 +543,7 @@ t
 
 #### Syntax
 
-```javascript
+```js
 for (var in object)
 {
    //code block to be executed
@@ -552,7 +552,7 @@ for (var in object)
 
 #### Example
 
-```javascript
+```js
 const array1 = ['a', 'b', 'c'];
 for (const element in array1) {
     console.log(element);
@@ -575,7 +575,7 @@ Loops through the values of an object.
 
 #### Syntax
 
-```javascript
+```js
 for (variable of object) {
     // code block to be executed
 }
@@ -583,7 +583,7 @@ for (variable of object) {
 
 #### Example
 
-```javascript
+```js
 const languages = { first: 'C', second: 'Java', third: 'Python', fourth: 'PHP', fifth: 'JavaScript' };
 // iterate through every property of the
 // object languages and print all of them
@@ -611,7 +611,7 @@ Traditional index-based loop as found in many languages.
 
 #### Syntax
 
-```javascript
+```js
 for (statement 1; statement 2; statement 3)
 {
  	// code block to be executed
@@ -620,7 +620,7 @@ for (statement 1; statement 2; statement 3)
 
 #### Example
 
-```javascript
+```js
 const i;
 for (i = 0; i < 10; i++)
 {
@@ -638,7 +638,7 @@ Calls a function once for each element in an array, in order.
 
 #### Syntax
 
-```javascript
+```js
 array.forEach(function(currentValue)
 ```
 
@@ -648,7 +648,7 @@ array.forEach(function(currentValue)
 
 #### Example:
 
-```javascript
+```js
 const items = [1, 29, 47];
 const copy = [];
 items.forEach(function (item) {

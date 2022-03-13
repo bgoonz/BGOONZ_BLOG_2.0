@@ -8,7 +8,7 @@ tip-tldr: How can we improve and make a more efficient nested `if` statement in 
 
 How can we improve and make a more efficient nested `if` statement in javascript?
 
-```javascript
+```js
 if (color) {
     if (color === 'black') {
         printBlackBackground();
@@ -26,7 +26,7 @@ if (color) {
 
 One way to improve the nested `if` statement would be using the `switch` statement. Although it is less verbose and is more ordered, it's not recommended to use it because it's so difficult to debug errors. Here's [why](https://toddmotto.com/deprecating-the-switch-statement-for-object-literals).
 
-```javascript
+```js
 switch (color) {
     case 'black':
         printBlackBackground();
@@ -48,7 +48,7 @@ switch (color) {
 But what if we have a conditional with several checks in each statement? In this case, if we want it less verbose and more ordered, we can use the conditional `switch`.
 If we pass `true` as a parameter to the `switch` statement, it allows us to put a conditional in each case.
 
-```javascript
+```js
 switch (true) {
     case typeof color === 'string' && color === 'black':
         printBlackBackground();
@@ -70,7 +70,12 @@ switch (true) {
 
 If refactoring is an option, we can try to simplify the functions themselves. For example instead of having a function for each background color we could have an function that takes the color as an argument.
 
-```javascript
+---
+
+
+```js
+
+
 function printBackground(color) {
     if (!color || typeof color !== 'string') {
         return; // Invalid color, return immediately
@@ -80,7 +85,7 @@ function printBackground(color) {
 
 But if refactoring is not an option, we must always avoid having several checks in every condition and avoid using `switch` as much as possible. We also must take into account that the most efficient way to do this is through an `object`.
 
-```javascript
+```js
 var colorObj = {
     black: printBlackBackground,
     red: printRedBackground,

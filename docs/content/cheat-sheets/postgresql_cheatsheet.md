@@ -231,10 +231,10 @@ Query data using the [`IN`](https://www.postgresqltutorial.com/postgresql-in/) `
 
 ```
 SELECT * FROM table_name
-WHERE column IN (value1, value2,...);
-```
+WHERE column IN (value1, value2,...); 
+```js
 
-Constrain the returned rows with the [`LIMIT`](https://www.postgresqltutorial.com/postgresql-limit/) clause:
+constrain the returned rows with the [`LIMIT`](https://www.postgresqltutorial.com/postgresql-limit/) clause:
 
 ```
 SELECT * FROM table_name

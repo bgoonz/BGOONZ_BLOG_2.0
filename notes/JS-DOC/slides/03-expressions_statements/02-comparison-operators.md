@@ -24,7 +24,7 @@ returns `false` if both values _don't have the same type_.
 
 Examples:
 
-```javascript
+```js
 '42' == 42; // true
 (('42' ===
     (42)[ // false

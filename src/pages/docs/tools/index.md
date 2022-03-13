@@ -65,19 +65,19 @@ template: docs
 <h1>   Number Base Converter  </h1>
 <br>
 <iframe  class="block-content" src="https://number-base-converter-react.vercel.app/" height="800px" style="width: 100%; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                                       
+
 <br>
 <br>
   <h1>  Text Tools </h1>
 <br>
-<iframe  class="block-content" src="https://devtools42.netlify.app/" height="800px" style="width: 100%; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>      
-        
+<iframe  class="block-content" src="https://devtools42.netlify.app/" height="800px" style="width: 100%; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 <br>
 <br>
   <h1>  Other Tools </h1>
 <br>
-<iframe  class="block-content" src="https://bgoonz.github.io/more-tools-textool-template-format/" height="800px" style="width: 100%; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>      
-           
+<iframe  class="block-content" src="https://bgoonz.github.io/more-tools-textool-template-format/" height="800px" style="width: 100%; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 <br>
 <br>
 <h1>  Awesome Search </h1>
@@ -161,16 +161,13 @@ template: docs
 <h1>                </h1>
 <br>
 <iframe  class="block-content" src="https://ds-algo-official.netlify.app/" height="800px" style="width: 100%;" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        
-        
-        
+
 <br>
 <br>
 <br>
 <h1>                </h1>
 <br>
-        
-        
+
  <iframe height="800" style="width: 100%;" scrolling="yes" title="Simple Typing Carousel " src="https://codepen.io/bgoonz/embed/ExZvGoZ?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/bgoonz/pen/ExZvGoZ">
   Simple Typing Carousel </a> by Bryan C Guner (<a href="https://codepen.io/bgoonz">@bgoonz</a>)

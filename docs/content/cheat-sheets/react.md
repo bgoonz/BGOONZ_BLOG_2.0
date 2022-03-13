@@ -128,8 +128,8 @@ class Component extends React.Component {
       active: true,
 
       // In rare cases, it's okay to initialize state based on props.
-      // This effectively “forks” the props and sets the state with the initial props.
-      // If you “fork” props by using them for state, you might also want to implement componentWillReceiveProps(nextProps)
+      // This effectively "forks" the props and sets the state with the initial props.
+      // If you "fork" props by using them for state, you might also want to implement componentWillReceiveProps(nextProps)
       // to keep the state up-to-date with them. But lifting state up is often easier and less bug-prone.
       color: props.initialColor
     };
@@ -1157,7 +1157,12 @@ Predictable State Container for JavaScript Apps
 
 Define a [Component](https://reactjs.org/docs/glossary.html#components) by declaring a function that returns a React [Element](#element).
 
+---
+
+
 ```js
+
+
 function Greeting() {
     return <div>Hi there!</div>;
 }
@@ -1167,7 +1172,12 @@ function Greeting() {
 
 Use curly braces to [embed expressions](https://reactjs.org/docs/introducing-jsx.html#embedding-expressions-in-jsx) in [JSX](https://reactjs.org/docs/glossary.html#jsx).
 
+---
+
+
 ```js
+
+
 function Greeting() {
     let name = 'chantastic';
 
@@ -1179,7 +1189,12 @@ function Greeting() {
 
 Take `props` as an argument to allow outside customizations of your Component.
 
+---
+
+
 ```js
+
+
 function Greeting(props) {
     return <div>Hi {props.name}!</div>;
 }
@@ -1189,7 +1204,12 @@ function Greeting(props) {
 
 Specify default values for `props` with `defaultProps`.
 
+---
+
+
 ```js
+
+
 function Greeting(props) {
     return <div>Hi {props.name}!</div>;
 }
@@ -1223,7 +1243,12 @@ let [first, second] = things;
 Destructuring assignment is used a lot in [function components](#function-component).\
 These component declarations below are equivalent.
 
+---
+
+
 ```js
+
+
 function Greeting(props) {
     return <div>Hi {props.name}!</div>;
 }
@@ -1236,7 +1261,12 @@ function Greeting({ name }) {
 There's a syntax for collecting remaining `props` into an object.\
 It's called [rest parameter syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters) and looks like this.
 
+---
+
+
 ```js
+
+
 function Greeting({ name, ...restProps }) {
     return <div>Hi {name}!</div>;
 }
@@ -1257,7 +1287,12 @@ It's a syntax for providing an object's properties as JSX attributes.
 Following the example from [Destructuring props](#destructuring-props),\
 We can **spread** `restProps` over our `<div>`.
 
+---
+
+
 ```js
+
+
 function Greeting({ name, ...restProps }) {
     return <div {...restProps}>Hi {name}!</div>;
 }
@@ -1273,7 +1308,12 @@ We can pass DOM attributes to `Greeting` and trust that they'll be passed throug
 Avoid forwarding non-DOM `props` to components.\
 Destructuring assignment is popular because it gives you a way to separate component-specific props from DOM/platform-specific attributes.
 
+---
+
+
 ```js
+
+
 function Greeting({ name, ...platformProps }) {
     return <div {...platformProps}>Hi {name}!</div>;
 }
@@ -1288,7 +1328,12 @@ Good abstractions allow for extension.
 
 Consider this component that uses a `class` attribute for style a `button`.
 
+---
+
+
 ```js
+
+
 function MyButton(props) {
     return <button className="btn" {...props} />;
 }
@@ -1307,7 +1352,12 @@ The `props.className` being spread is overriding the `className` in our componen
 
 We can change the order but now the `className` will **never** be anything but `btn`.
 
+---
+
+
 ```js
+
+
 function MyButton(props) {
     return <button {...props} className="btn" />;
 }
@@ -1316,7 +1366,12 @@ function MyButton(props) {
 We need to use destructuring assignment to get the incoming `className` and merge with the base `className`.\
 We can do this simply by adding all values to an array and joining them with a space.
 
+---
+
+
 ```js
+
+
 function MyButton({ className, ...props }) {
     let classNames = ['btn', className].join(' ');
 
@@ -1326,7 +1381,12 @@ function MyButton({ className, ...props }) {
 
 To guard from `undefined` showing up as a className, you could update your logic to filter out `falsy` values:
 
+---
+
+
 ```js
+
+
 function MyButton({ className, ...props }) {
     let classNames = ['btn', className].filter(Boolean).join(' ').trim();
 
@@ -1903,7 +1963,12 @@ You can put any valid [JavaScript expression](https://developer.mozilla.org/en-U
 
 > -   In the example below, we embed the result of calling a JavaScript function, `formatName(user)`, into an `<h1>` element.
 
+---
+
+
 ```js
+
+
 function formatName(user) {
     return user.firstName + ' ' + user.lastName;
 }
@@ -1934,7 +1999,12 @@ After compilation, JSX expressions become regular JavaScript function calls and 
 
 This means that you can use JSX inside of `if` statements and `for` loops, assign it to variables, accept it as arguments, and return it from functions:
 
+---
+
+
 ```js
+
+
 function getGreeting(user) {
     if (user) {
         return <h1>Hello, {formatName(user)}!</h1>;
@@ -2106,7 +2176,12 @@ With our knowledge so far, the only way to update the UI is to create a new elem
 
 Consider this ticking clock example:
 
+---
+
+
 ```js
+
+
 function tick() {
     const element = (
         <div>
@@ -2164,7 +2239,12 @@ Conceptually, components are like JavaScript functions. They accept arbitrary in
 
 The simplest way to define a component is to write a JavaScript function:
 
+---
+
+
 ```js
+
+
 function Welcome(props) {
     return <h1>Hello, {props.name}</h1>;
 }
@@ -2208,7 +2288,12 @@ const element = <Welcome name="Sara" />;
 
 ##### For example, this code renders "Hello, Sara" on the page:
 
+---
+
+
 ```js
+
+
 function Welcome(props) {
     return <h1>Hello, {props.name}</h1>;
 }
@@ -2242,7 +2327,12 @@ Components can refer to other components in their output. This lets us use the s
 
 ##### For example, we can create an `App` component that renders `Welcome` many times:
 
+---
+
+
 ```js
+
+
 function Welcome(props) {
     return <h1>Hello, {props.name}</h1>;
 }
@@ -2275,7 +2365,12 @@ Don't be afraid to split components into smaller components.
 
 ##### For example, consider this `Comment` component:
 
+---
+
+
 ```js
+
+
 function Comment(props) {
     return (
         <div className="Comment">
@@ -2300,7 +2395,12 @@ This component can be tricky to change because of all the nesting, and it is als
 
 First, we will extract `Avatar`:
 
+---
+
+
 ```js
+
+
 function Avatar(props) {
     return <img className="Avatar" src={props.user.avatarUrl} alt={props.user.name} />;
 }
@@ -2312,7 +2412,12 @@ function Avatar(props) {
 
 ##### We can now simplify `Comment` a tiny bit:
 
+---
+
+
 ```js
+
+
 function Comment(props) {
     return (
         <div className="Comment">
@@ -2332,7 +2437,12 @@ Next, we will extract a `UserInfo` component that renders an `Avatar` next to th
 
 This lets us simplify `Comment` even further:
 
+---
+
+
 ```js
+
+
 function Comment(props) {
     return (
         <div className="Comment">
@@ -2360,7 +2470,12 @@ Extracting components might seem like grunt work at first, but having a palette 
 
 Whether you declare a component [as a function or a class](https://reactjs.org/docs/components-and-props.html#function-and-class-components), it must never modify its own props. Consider this `sum` function:
 
+---
+
+
 ```js
+
+
 function sum(a, b) {
     return a + b;
 }
@@ -2370,7 +2485,12 @@ Such functions are called ["pure"](https://en.wikipedia.org/wiki/Pure_function) 
 
 > -   In contrast, this function is impure because it changes its own input:
 
+---
+
+
 ```js
+
+
 function withdraw(account, amount) {
     account.total -= amount;
 }
@@ -2394,7 +2514,12 @@ Of course, application UIs are dynamic and change over time. In the [next sectio
 
 Consider the ticking clock example from [one of the previous sections](https://reactjs.org/docs/rendering-elements.html#updating-the-rendered-element). In [Rendering Elements](https://reactjs.org/docs/rendering-elements.html#rendering-an-element-into-the-dom), we have only learned one way to update the UI. We call `ReactDOM.render()` to change the rendered output:
 
+---
+
+
 ```js
+
+
 function tick() {
     const element = (
         <div>
@@ -2414,7 +2539,12 @@ setInterval(tick, 1000);
 
 ##### We can start by encapsulating how the clock looks:
 
+---
+
+
 ```js
+
+
 function Clock(props) {
     return (
         <div>
@@ -2793,7 +2923,12 @@ A component may choose to pass its state down as props to its child components:
 
 -   The `FormattedDate` component would receive the `date` in its props and wouldn't know whether it came from the `Clock`'s state, from the `Clock`'s props, or was typed by hand:
 
+---
+
+
 ```js
+
+
 function FormattedDate(props) {
     return <h2>It is {props.date.toLocaleTimeString()}.</h2>;
 }
@@ -2809,7 +2944,12 @@ If you imagine a component tree as a waterfall of props, each component's state 
 
 To show that all components are truly isolated, we can create an `App` component that renders three `<Clock>`s:
 
+---
+
+
 ```js
+
+
 function App() {
     return (
         <div>
@@ -2865,7 +3005,12 @@ Another difference is that you cannot return `false` to prevent default behavior
 
 #### In React, this could instead be:
 
+---
+
+
 ```js
+
+
 function Form() {
     function handleSubmit(e) {
         e.preventDefault();
@@ -2973,7 +3118,12 @@ Conditional rendering in React works the same way conditions work in JavaScript.
 
 Consider these two components:
 
+---
+
+
 ```js
+
+
 function UserGreeting(props) {
     return <h1>Welcome back!</h1>;
 }
@@ -2985,7 +3135,12 @@ function GuestGreeting(props) {
 
 ##### We'll create a `Greeting` component that displays either of these components depending on whether a user is logged in:
 
+---
+
+
 ```js
+
+
 function Greeting(props) {
     const isLoggedIn = props.isLoggedIn;
     if (isLoggedIn) {
@@ -3016,7 +3171,12 @@ You can use variables to store elements. This can help you conditionally render 
 
 Consider these two new components representing Logout and Login buttons:
 
+---
+
+
 ```js
+
+
 function LoginButton(props) {
     return <button onClick={props.onClick}>Login</button>;
 }
@@ -3079,7 +3239,12 @@ While declaring a variable and using an `if` statement is a fine way to conditio
 
 You may [embed expressions in JSX](https://reactjs.org/docs/introducing-jsx.html#embedding-expressions-in-jsx) by wrapping them in curly braces. This includes the JavaScript logical `&&` operator. It can be handy for conditionally including an element:
 
+---
+
+
 ```js
+
+
 function Mailbox(props) {
     const unreadMessages = props.unreadMessages;
     return (
@@ -3152,7 +3317,12 @@ Just like in JavaScript, it is up to you to choose an appropriate style based on
 
 > -   In the example below, the `<WarningBanner />` is rendered depending on the value of the prop called `warn`. If the value of the prop is `false`, then the component does not render:
 
+---
+
+
 ```js
+
+
 function WarningBanner(props) {
     if (!props.warn) {
         return null;
@@ -3252,7 +3422,12 @@ Usually you would render lists inside a [component](https://reactjs.org/docs/com
 
 ##### We can refactor the previous example into a component that accepts an array of `numbers` and outputs a list of elements.
 
+---
+
+
 ```js
+
+
 function NumberList(props) {
     const numbers = props.numbers;
     const listItems = numbers.map((number) => <li>{number}</li>);
@@ -3267,7 +3442,12 @@ ReactDOM.render(<NumberList numbers={numbers} />, document.getElementById('root'
 
 Let's assign a `key` to our list items inside `numbers.map()` and fix the missing key issue.
 
+---
+
+
 ```js
+
+
 function NumberList(props) {
     const numbers = props.numbers;
     const listItems = numbers.map((number) => <li key={number.toString()}> {number}</li>);
@@ -3383,7 +3563,12 @@ A good rule of thumb is that elements inside the `map()` call need keys.
 
 Keys used within arrays should be unique among their siblings. However, they don't need to be globally unique. We can use the same keys when we produce two different arrays:
 
+---
+
+
 ```js
+
+
 function Blog(props) {
     const sidebar = (
         <ul>
@@ -3434,7 +3619,12 @@ const content = posts.map((post) => <Post key={post.id} id={post.id} title={post
 
 > -   In the examples above we declared a separate `listItems` variable and included it in JSX:
 
+---
+
+
 ```js
+
+
 function NumberList(props) {
     const numbers = props.numbers;
     const listItems = numbers.map((number) => <ListItem key={number.toString()} value={number} />);
@@ -3444,7 +3634,12 @@ function NumberList(props) {
 
 JSX allows [embedding any expression](https://reactjs.org/docs/introducing-jsx.html#embedding-expressions-in-jsx) in curly braces so we could inline the `map()` result:
 
+---
+
+
 ```js
+
+
 function NumberList(props) {
     const numbers = props.numbers;
     return (
@@ -3773,7 +3968,12 @@ If you're looking for a complete solution including validation, keeping track of
 
 ##### We will start with a component called `BoilingVerdict`. It accepts the `celsius` temperature as a prop, and prints whether it is enough to boil the water:
 
+---
+
+
 ```js
+
+
 function BoilingVerdict(props) {
     if (props.celsius >= 100) {
         return <p>The water would boil.</p>;
@@ -3874,7 +4074,12 @@ class Calculator extends React.Component {
 
 First, we will write two functions to convert from Celsius to Fahrenheit and back:
 
+---
+
+
 ```js
+
+
 function toCelsius(fahrenheit) {
     return ((fahrenheit - 32) * 5) / 9;
 }
@@ -3888,7 +4093,12 @@ function toFahrenheit(celsius) {
 
 It returns an empty string on an invalid `temperature`, and it keeps the output rounded to the third decimal place:
 
+---
+
+
 ```js
+
+
 function tryConvert(temperature, convert) {
     const input = parseFloat(temperature);
     if (Number.isNaN(input)) {
@@ -4084,7 +4294,12 @@ Some components don't know their children ahead of time. This is especially comm
 
 ##### We recommend that such components use the special `children` prop to pass children elements directly into their output:
 
+---
+
+
 ```js
+
+
 function FancyBorder(props) {
     return <div className={'FancyBorder FancyBorder-' + props.color}> {props.children} </div>;
 }
@@ -4092,7 +4307,12 @@ function FancyBorder(props) {
 
 -   This lets other components pass arbitrary children to them by nesting the JSX:
 
+---
+
+
 ```js
+
+
 function WelcomeDialog() {
     return (
         <FancyBorder color="blue">
@@ -4109,7 +4329,12 @@ Anything inside the `<FancyBorder>` JSX tag gets passed into the `FancyBorder` c
 
 While this is less common, sometimes you might need multiple "holes" in a component. In such cases you may come up with your own convention instead of using `children`:
 
+---
+
+
 ```js
+
+
 function SplitPane(props) {
   return (
     <div className="SplitPane">      <div className="SplitPane-left">        {props.left}      </div>      <div className="SplitPane-right">        {props.right}      </div>    </div>);
@@ -4137,7 +4362,12 @@ Sometimes we think about components as being "special cases" of other components
 
 > -   In React, this is also achieved by composition, where a more "specific" component renders a more "generic" one and configures it with props:
 
+---
+
+
 ```js
+
+
 function Dialog(props) {
     return (
         <FancyBorder color="blue">
@@ -4156,7 +4386,12 @@ function WelcomeDialog() {
 
 Composition works equally well for components defined as classes:
 
+---
+
+
 ```js
+
+
 function Dialog(props) {
     return (
         <FancyBorder color="blue">

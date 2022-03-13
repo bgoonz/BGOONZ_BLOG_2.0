@@ -33,7 +33,12 @@ element.addEventListener('click', function click(e) {
 
 A better approach:
 
+---
+
+
 ```js
+
+
 function handleEvent(eventName, { onElement, withCallback, useCapture = false } = {}, thisArg) {
     const element = onElement || document.documentElement;
 

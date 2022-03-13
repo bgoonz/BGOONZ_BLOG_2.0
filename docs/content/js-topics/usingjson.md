@@ -9,7 +9,7 @@ tip-tldr: Create string from selected properties of JSON object.
 Let's say there is an object with properties "prop1", "prop2", "prop3".
 We can pass **additional params** to **JSON.stringify** to selectively write properties of the object to string like:
 
-```javascript
+```js
 var obj = {
     prop1: 'value1',
     prop2: 'value2',
@@ -28,7 +28,12 @@ The **"str"** will contain only info on selected properties only.
 
 Instead of array we can pass a function also.
 
-```javascript
+---
+
+
+```js
+
+
 function selectedProperties(key, val) {
     // the first val will be the entire object, key is empty string
     if (!key) {
@@ -45,7 +50,7 @@ function selectedProperties(key, val) {
 
 The last optional param it takes is to modify the way it writes the object to string.
 
-```javascript
+```js
 var str = JSON.stringify(obj, selectedProperties, '\t\t');
 
 /* str output with double tabs in every line.

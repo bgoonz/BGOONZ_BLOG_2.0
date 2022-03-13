@@ -62,7 +62,7 @@ for (int i = 0; i < len; i++) {
 
 The result array can only be shorter. That is why we can build the array in-place with the new length.
 
-```javascript
+```js
 /**
  * @param {number[]} nums
  * @return {number}

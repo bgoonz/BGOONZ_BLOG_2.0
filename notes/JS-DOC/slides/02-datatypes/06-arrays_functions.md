@@ -10,7 +10,7 @@ other languages.
 
 JavaScript has a special syntax for creating arrays, `[value, value, ...]`:
 
-```javascript
+```js
 var arr = [1, 2];
 ```
 
@@ -44,7 +44,12 @@ which provides all the array methods, such as `.push`, `.map`, etc.
 Functions are the only kind of objects that are _callable_, and JavaScript
 also has a special syntax for defining them:
 
-```javascript
+---
+
+
+```js
+
+
 function foo() {
     console.log("I'm a function");
 }

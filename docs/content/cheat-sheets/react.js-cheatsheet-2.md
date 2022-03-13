@@ -4,14 +4,20 @@
 
 #### Components
 
+
 ```jsx
+
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 ```
 
 {: .-setup}
 
+
 ```jsx
+
+
 class Hello extends React.Component {
     render() {
         return <div className="message-box">Hello {this.props.name}</div>;
@@ -19,7 +25,10 @@ class Hello extends React.Component {
 }
 ```
 
+
 ```jsx
+
+
 const el = document.body;
 ReactDOM.render(<Hello name="John" />, el);
 ```
@@ -28,14 +37,20 @@ Use the [React.js jsfiddle](http://jsfiddle.net/reactjs/69z2wepo/) to start hack
 
 #### Import multiple exports
 
+
 ```jsx
+
+
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 ```
 
 {: .-setup}
 
+
 ```jsx
+
+
 class Hello extends Component {
   ...
 }
@@ -49,7 +64,10 @@ class Hello extends Component {
 
 {: .-setup}
 
+
 ```jsx
+
+
 render () {
   this.props.fullscreen
   const { fullscreen, autoplay } = this.props
@@ -65,18 +83,27 @@ See: [Properties](https://reactjs.org/docs/tutorial.html#using-props)
 
 #### States
 
+
 ```jsx
+
+
 constructor(props) {
   super(props)
   this.state = { username: undefined }
 }
 ```
 
+
 ```jsx
+
+
 this.setState({ username: 'rstacruz' });
 ```
 
+
 ```jsx
+
+
 render () {
   this.state.username
   const { username } = this.state
@@ -90,7 +117,10 @@ Use states (`this.state`) to manage dynamic data.
 
 With [Babel](https://babeljs.io) you can use [proposal-class-fields](https://github.com/tc39/proposal-class-fields) and get rid of constructor
 
+
 ```jsx
+
+
 class Hello extends Component {
   state = { username: undefined };
   ...
@@ -101,7 +131,10 @@ See: [States](https://reactjs.org/docs/tutorial.html#reactive-state)
 
 #### Nesting
 
+
 ```jsx
+
+
 class Info extends Component {
     render() {
         const { avatar, username } = this.props;
@@ -118,7 +151,10 @@ class Info extends Component {
 
 As of React v16.2.0, fragments can be used to return multiple children without adding extra wrapping nodes to the DOM.
 
+
 ```jsx
+
+
 import React, { Component, Fragment } from 'react';
 
 class Info extends Component {
@@ -143,7 +179,10 @@ See: [Composing Components](https://reactjs.org/docs/components-and-props.html#c
 
 #### Children
 
+
 ```jsx
+
+
 <AlertBox>
     <h1>You have pending notifications</h1>
 </AlertBox>
@@ -151,7 +190,10 @@ See: [Composing Components](https://reactjs.org/docs/components-and-props.html#c
 
 {: data-line="2"}
 
+
 ```jsx
+
+
 class AlertBox extends Component {
     render() {
         return <div className="alert-box">{this.props.children}</div>;
@@ -167,7 +209,10 @@ Children are passed as the `children` property.
 
 #### Setting default props
 
+
 ```jsx
+
+
 Hello.defaultProps = {
     color: 'blue'
 };
@@ -179,7 +224,10 @@ See: [defaultProps](https://reactjs.org/docs/react-component.html#defaultprops)
 
 #### Setting default state
 
+
 ```jsx
+
+
 class Hello extends Component {
     constructor(props) {
         super(props);
@@ -194,7 +242,10 @@ Set the default state in the `constructor()`.
 
 And without constructor using [Babel](https://babeljs.io) with [proposal-class-fields](https://github.com/tc39/proposal-class-fields).
 
+
 ```jsx
+
+
 class Hello extends Component {
     state = { visible: true }
   }
@@ -209,7 +260,10 @@ See: [Setting the default state](https://reactjs.org/docs/react-without-es6.html
 
 #### Functional components
 
+
 ```jsx
+
+
 function MyComponent({ name }) {
     return <div className="message-box">Hello {name}</div>;
 }
@@ -223,7 +277,10 @@ See: [Function and Class Components](https://reactjs.org/docs/components-and-pro
 
 #### Pure components
 
+
 ```jsx
+
+
 import React, {PureComponent} from 'react'
 
 class MessageBox extends PureComponent {
@@ -237,16 +294,25 @@ See: [Pure components](https://reactjs.org/docs/react-api.html#react.purecompone
 
 #### Component API
 
+
 ```jsx
+
+
 this.forceUpdate();
 ```
 
+
 ```jsx
+
+
 this.setState({ ... })
 this.setState(state => { ... })
 ```
 
+
 ```jsx
+
+
 this.state;
 this.props;
 ```
@@ -293,7 +359,10 @@ See: [Component specs](http://facebook.github.io/react/docs/component-specs.html
 
 #### State Hook
 
+
 ```jsx
+
+
 import React, { useState } from 'react';
 
 function Example() {
@@ -317,7 +386,10 @@ See: [Hooks at a Glance](https://reactjs.org/docs/hooks-overview.html)
 
 #### Declaring multiple state variables
 
+
 ```jsx
+
+
 function ExampleWithManyStates() {
     // Declare multiple state variables!
     const [age, setAge] = useState(42);
@@ -329,7 +401,10 @@ function ExampleWithManyStates() {
 
 #### Effect hook
 
+
 ```jsx
+
+
 import React, { useState, useEffect } from 'react';
 
 function Example() {
@@ -360,7 +435,10 @@ By default, React runs the effects after every render — including the first re
 
 **Define FriendStatus**
 
+
 ```jsx
+
+
 import React, { useState, useEffect } from 'react';
 
 function FriendStatus(props) {
@@ -386,11 +464,14 @@ function FriendStatus(props) {
 
 {: data-line="11,12,13,14"}
 
-Effects may also optionally specify how to "clean up” after them by returning a function.
+Effects may also optionally specify how to "clean up" after them by returning a function.
 
 **Use FriendStatus**
 
+
 ```jsx
+
+
 function FriendStatus(props) {
     const isOnline = useFriendStatus(props.friend.id);
 
@@ -439,7 +520,10 @@ Full details: [Additional Hooks](https://reactjs.org/docs/hooks-reference.html#a
 
 #### References
 
+
 ```jsx
+
+
 class MyComponent extends Component {
     render() {
         return (
@@ -463,7 +547,10 @@ See: [Refs and the DOM](https://reactjs.org/docs/refs-and-the-dom.html)
 
 #### DOM Events
 
+
 ```jsx
+
+
 class MyComponent extends Component {
     render() {
         <input type="text" value={this.state.value} onChange={(event) => this.onChange(event)} />;
@@ -491,7 +578,10 @@ See: [Events](https://reactjs.org/docs/events.html)
 
 {: .-setup}
 
+
 ```jsx
+
+
 class VideoPlayer extends Component {
     render() {
         return <VideoEmbed {...this.props} />;
@@ -505,17 +595,26 @@ See [Transferring props](http://facebook.github.io/react/docs/transferring-props
 
 #### Top-level API
 
+
 ```jsx
+
+
 React.createClass({ ... })
 React.isValidElement(c)
 ```
 
+
 ```jsx
+
+
 ReactDOM.render(<Component />, domnode, [callback]);
 ReactDOM.unmountComponentAtNode(domnode);
 ```
 
+
 ```jsx
+
+
 ReactDOMServer.renderToString(<Component />);
 ReactDOMServer.renderToStaticMarkup(<Component />);
 ```
@@ -530,12 +629,18 @@ See: [React top-level API](https://reactjs.org/docs/react-api.html)
 
 #### Style shorthand
 
+
 ```jsx
+
+
 const style = { height: 10 };
 return <div style={style}></div>;
 ```
 
+
 ```jsx
+
+
 return <div style={{ margin: 0, padding: 0 }}></div>;
 ```
 
@@ -543,7 +648,10 @@ See: [Inline styles](https://reactjs.org/tips/inline-styles.html)
 
 #### Inner HTML
 
+
 ```jsx
+
+
 function markdownify() {
     return '<p>...</p>';
 }
@@ -554,7 +662,10 @@ See: [Dangerously set innerHTML](https://reactjs.org/tips/dangerously-set-inner-
 
 #### Lists
 
+
 ```jsx
+
+
 class TodoList extends Component {
     render() {
         const { items } = this.props;
@@ -576,13 +687,19 @@ Always supply a `key` property.
 
 #### Conditionals
 
+
 ```jsx
+
+
 <Fragment>{showMyComponent ? <MyComponent /> : <OtherComponent />}</Fragment>
 ```
 
 #### Short-circuit evaluation
 
+
 ```jsx
+
+
 <Fragment>
     {showPopup && <Popup />}
     ...
@@ -728,7 +845,10 @@ See: [Typechecking with PropTypes](https://reactjs.org/docs/typechecking-with-pr
 
 #### Basic types
 
+
 ```jsx
+
+
 MyComponent.propTypes = {
     email: PropTypes.string,
     seats: PropTypes.number,
@@ -740,7 +860,10 @@ MyComponent.propTypes = {
 
 #### Required types
 
+
 ```jsx
+
+
 MyCo.propTypes = {
     name: PropTypes.string.isRequired
 };
@@ -748,7 +871,10 @@ MyCo.propTypes = {
 
 #### Elements
 
+
 ```jsx
+
+
 MyCo.propTypes = {
     // React element
     element: PropTypes.element,
@@ -760,7 +886,10 @@ MyCo.propTypes = {
 
 #### Enumerables (oneOf)
 
+
 ```jsx
+
+
 MyCo.propTypes = {
     direction: PropTypes.oneOf(['left', 'right'])
 };
@@ -768,7 +897,10 @@ MyCo.propTypes = {
 
 #### Arrays and objects
 
+
 ```jsx
+
+
 MyCo.propTypes = {
     list: PropTypes.array,
     ages: PropTypes.arrayOf(PropTypes.number),
@@ -778,7 +910,10 @@ MyCo.propTypes = {
 };
 ```
 
+
 ```jsx
+
+
 MyCo.propTypes = {
     user: PropTypes.shape({
         name: PropTypes.string,
@@ -791,7 +926,10 @@ Use `.array[Of]`, `.object[Of]`, `.instanceOf`, `.shape`.
 
 #### Custom validation
 
+
 ```jsx
+
+
 MyCo.propTypes = {
     customProp: (props, key, componentName) => {
         if (!/matchme/.test(props[key])) {

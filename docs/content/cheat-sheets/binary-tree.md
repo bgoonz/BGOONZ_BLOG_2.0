@@ -2,7 +2,7 @@
 
 ## Tree Nodes
 
-```javascript
+```js
 class TreeNode {
   constructor(val) {
     this.val = val;

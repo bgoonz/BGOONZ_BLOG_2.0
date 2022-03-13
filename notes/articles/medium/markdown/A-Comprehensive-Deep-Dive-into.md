@@ -630,6 +630,8 @@ History
     // Replacing the current URL (won't be tracked in history stack):
     const redirect = () => this.props.history.replace("/some/other/url");
 
+```
+
 ---
 
 ### Nested Routes
@@ -958,6 +960,8 @@ React Version
     // Render from the Virtual Dom to the Actual Dom
     ReactDOM.render(app, target);
 
+```
+
 ---
 
 ### Introduction to JSX
@@ -1154,6 +1158,8 @@ Simplifying the src folder
       </React.StrictMode>,
       document.getElementById("root")
     );
+
+```
 
 ---
 
@@ -3693,4 +3699,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/react-in-depth-1965dcde8d4f" class="p-canonical">Canonical link</a>
 
-Exported from [Medium](https://medium.com) on August 6, 2021.
+ August 6, 2021.

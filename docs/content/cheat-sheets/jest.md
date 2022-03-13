@@ -191,7 +191,10 @@ See: [Async tutorial](http://facebook.github.io/jest/docs/en/tutorial-async.html
 
 ### Snapshots
 
+
 ```jsx
+
+
 it('works', () => {
     const output = something();
     expect(output).toMatchSnapshot();
@@ -203,13 +206,19 @@ See: [Snapshot testing](http://facebook.github.io/jest/docs/en/snapshot-testing.
 
 ### React test renderer
 
+
 ```jsx
+
+
 import renderer from 'react-test-renderer';
 ```
 
 {: .-setup}
 
+
 ```jsx
+
+
 it('works', () => {
     const tree = renderer.create(<Link page="http://www.facebook.com">Facebook</Link>).toJSON();
 

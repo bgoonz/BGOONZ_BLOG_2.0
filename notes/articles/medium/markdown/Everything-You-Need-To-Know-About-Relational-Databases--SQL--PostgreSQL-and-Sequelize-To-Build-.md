@@ -895,6 +895,8 @@ We can get nested associations by having include point to an object that specifi
     }
     main();
 
+```
+
 ---
 
 ### Sequelize Cheatsheet
@@ -1282,4 +1284,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/everything-you-need-to-know-about-relational-databases-sql-postgresql-and-sequelize-to-build-8acb68284a98" class="p-canonical">Canonical link</a>
 
-Exported from [Medium](https://medium.com) on August 31, 2021.
+ August 31, 2021.

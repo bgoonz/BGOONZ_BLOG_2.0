@@ -6,7 +6,12 @@ This little beastie here is tap. A really useful function for quick-debugging
 chains of function calls, anonymous functions and, actually, whatever you just
 want to print.
 
-```javascript
+---
+
+
+```js
+
+
 function tap(x) {
     console.log(x);
     return x;
@@ -15,7 +20,7 @@ function tap(x) {
 
 Why would you use instead of good old `console.log`? Let me show you an example:
 
-```javascript
+```js
 bank_totals_by_client(bank_info(1, banks), table)
     .filter((c) => c.balance > 25000)
     .sort((c1, c2) => (c1.balance <= c2.balance ? 1 : -1))
@@ -25,7 +30,7 @@ bank_totals_by_client(bank_info(1, banks), table)
 Now, suppose you're getting nothing from this chain (possibly an error).
 Where is it failing? Maybe `bank_info` isn't returning anything, so we'll tap it:
 
-```javascript
+```js
 bank_totals_by_client(tap(bank_info(1, banks)), table);
 ```
 
@@ -35,14 +40,14 @@ therefore, bank_info isn't causing anything.
 
 We must then move on to the next chain, filter.
 
-```javascript
+```js
             .filter(c => tap(c).balance > 25000)
 ```
 
 Are we receiving any c's (clients actually)? If so, then bank_totals_by_client
 works alright. Maybe it's the condition within the filter?
 
-```javascript
+```js
             .filter(c => tap(c.balance > 25000))
 ```
 
@@ -51,7 +56,12 @@ that's why the function was returning nothing.
 
 ## (Bonus) A more advanced tap.
 
-```javascript
+---
+
+
+```js
+
+
 function tap(x, fn = (x) => x) {
     console.log(fn(x));
     return x;
@@ -64,6 +74,6 @@ property, perform a logical operation, etc. with our tapped object? Then we
 call old good tap with an extra argument, a function to be applied at the moment
 of tapping.
 
-```javascript
+```js
 tap(3, (x) => x + 2) === 3; // prints 5, but expression evaluates to true, why :-)?
 ```

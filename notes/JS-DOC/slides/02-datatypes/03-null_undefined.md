@@ -18,7 +18,7 @@ them:
 
 Examples:
 
-```javascript
+```js
 var foo; // no value is assigned, foo has the value undefined
 var bar = null; // bar is explicitly set to null
 console.log(foo); // logs "undefined"

@@ -40,7 +40,12 @@ test || isFalse(); // Test is false.
 
 The logical OR could also be used to set a default value for function argument.
 
+---
+
+
 ```js
+
+
 function theSameOldFoo(name) {
     name = name || 'Bar';
     console.log("My best friend's name is " + name);

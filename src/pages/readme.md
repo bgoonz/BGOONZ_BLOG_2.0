@@ -12289,8 +12289,8 @@ ReactNode
 Wrapped element
 
 #### Example
-
-```
+ 
+```js
 
 const React = require("react")
 
@@ -12351,8 +12351,8 @@ ReactNode
 Wrapped element
 
 #### Example
-
-```
+ 
+```js
 
 const React = require("react")
 

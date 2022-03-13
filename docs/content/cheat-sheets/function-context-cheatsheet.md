@@ -13,7 +13,7 @@
 
 -   Context of the function will be the object which the function is called on **UNLESS** binded
 
-```javascript
+```js
 const obj = {
     name: 'Example Object',
     unnamedFunc: function () {
@@ -42,13 +42,18 @@ unnamedFunc(); // Global context
     -   method-style: context is object that function is being called on
 -   calling `bind` on the function will return a function binded to the context of the `bind` argument
 
-```javascript
+---
+
+
+```js
+
+
 function namedFunc(params) {
     return 'named function';
 }
 ```
 
-```javascript
+```js
 // bindedNamedFunc will have the context of obj
 const bindedNamedFunc = namedFunc.bind(obj);
 ```
@@ -64,13 +69,13 @@ const bindedNamedFunc = namedFunc.bind(obj);
     -   method-style: context is object that function is being called on
 -   calling `bind` on the function will return a function binded to the context of the `bind` argument
 
-```javascript
+```js
 const unnamedFunc = function (params) {
     return 'unnamed function';
 };
 ```
 
-```javascript
+```js
 // bindedUnnamedFunc will have the context of obj
 const bindedUnnamedFunc = unnamedFunc.bind(obj);
 ```
@@ -84,7 +89,7 @@ const bindedUnnamedFunc = unnamedFunc.bind(obj);
 -   takes the context of where it's defined
 -   **CANNOT** be binded using `bind`
 
-```javascript
+```js
 const explicitFatArrow = (params) => {
     return 'explicit fat arrow function';
 };
@@ -103,15 +108,15 @@ const explicitFatArrow = (params) => {
 -   takes the context of where it's defined
 -   **CANNOT** be binded using `bind`
 
-```javascript
+```js
 const implicitFatArrow = (params) => 'implicit fat arrow function';
 ```
 
-```javascript
+```js
 const implicitFatArrow = (params) => 'implicit fat arrow function';
 ```
 
-```javascript
+```js
 const implicitFatArrow = (params) => ({
     function: 'implicit fat arrow'
 });

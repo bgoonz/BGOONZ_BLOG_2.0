@@ -12,7 +12,7 @@ template: docs
 
 Javascript has a native method **[sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)** that allows sorting arrays. Doing a simple `array.sort()` will treat each array entry as a string and sort it alphabetically. Also you can provide your [own custom sorting](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#Parameters) function.
 
-```javascript
+```js
 ['Shanghai', 'New York', 'Mumbai', 'Buenos Aires'].sort();
 // ["Buenos Aires", "Mumbai", "New York", "Shanghai"]
 ```
@@ -21,7 +21,7 @@ But when you try order an array of non ASCII characters like this `['é', 'a', '
 
 See the next example:
 
-```javascript
+```js
 // Spanish
 ['único', 'árbol', 'cosas', 'fútbol'].sort();
 // ["cosas", "fútbol", "árbol", "único"] // bad order
@@ -37,7 +37,7 @@ Fortunately, there are two ways to overcome this behavior [localeCompare](https:
 
 ### Using `localeCompare()`
 
-```javascript
+```js
 ['único', 'árbol', 'cosas', 'fútbol'].sort(function (a, b) {
     return a.localeCompare(b);
 });
@@ -51,7 +51,7 @@ Fortunately, there are two ways to overcome this behavior [localeCompare](https:
 
 ### Using `Intl.Collator()`
 
-```javascript
+```js
 ['único', 'árbol', 'cosas', 'fútbol'].sort(Intl.Collator().compare);
 // ["árbol", "cosas", "fútbol", "único"]
 

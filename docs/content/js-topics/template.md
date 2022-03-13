@@ -11,7 +11,7 @@ As of ES6, JS now has template strings as an alternative to the classic end quot
 Ex:
 Normal string
 
-```javascript
+```js
 var firstName = 'Jake';
 var lastName = 'Rawr';
 console.log('My name is ' + firstName + ' ' + lastName);
@@ -20,7 +20,7 @@ console.log('My name is ' + firstName + ' ' + lastName);
 
 Template String
 
-```javascript
+```js
 var firstName = 'Jake';
 var lastName = 'Rawr';
 console.log(`My name is ${firstName} ${lastName}`);
@@ -29,7 +29,7 @@ console.log(`My name is ${firstName} ${lastName}`);
 
 You can do multi-line strings without `\n`, perform simple logic (ie 2+3) or even use the [ternary operator](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Conditional_Operator) inside `${}` in template strings.
 
-```javascript
+```js
 var val1 = 1,
     val2 = 2;
 console.log(`${val1} is ${val1 < val2 ? 'less than' : 'greater than'} ${val2}`);

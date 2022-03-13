@@ -15,7 +15,7 @@ So let's see a common usage and later a more sophisticated one.
 
 We are on Amazon website (prices in $) and our caddy is quite full, let's compute total.
 
-```javascript
+```js
 // my current amazon caddy purchases
 var items = [{ price: 10 }, { price: 120 }, { price: 1000 }];
 
@@ -35,7 +35,7 @@ but we will see that later.
 
 Now, cool I received a discount coupon of 20$.
 
-```javascript
+```js
 var total = items.reduce(reducer, -20);
 
 console.log(total); // 1110
@@ -49,7 +49,7 @@ Idea behind is to separate reducer function into separate individual functions a
 
 To illustrate this, let's create a single object literal with some reducers function able to compute total prices in different currency $, €...
 
-```javascript
+```js
 var reducers = {
     totalInDollar: function (state, item) {
         // specific statements...
@@ -73,7 +73,7 @@ Then, we create a new swiss knife function
 -   responsible for applying each partial reduce functions.
 -   that will return a new callback reducer function
 
-```javascript
+```js
 var combineTotalPriceReducers = function (reducers) {
     return function (state, item) {
         return Object.keys(reducers).reduce(function (nextState, key) {
@@ -86,7 +86,7 @@ var combineTotalPriceReducers = function (reducers) {
 
 Now let's see how using it.
 
-```javascript
+```js
 var bigTotalPriceReducer = combineTotalPriceReducers(reducers);
 
 var initialState = { dollars: 0, euros: 0, yens: 0, pounds: 0 };

@@ -40,7 +40,7 @@ Stimulus.js controllers registered with StimulusReflex can use the `stimulate` m
 >Increment <%= @count %></a>
 ```
 
-```javascript
+```js
 // counter_controller.js
 import { Controller } from 'stimulus';
 import StimulusReflex from 'stimulus_reflex';
@@ -168,7 +168,7 @@ If a Reflex is called on a form element - or a child of that form element - then
 
 `stimulate()` method returns a promise
 
-```javascript
+```js
 this.stimulate('Comments#create')
     .then(() => this.doSomething())
     .catch(() => this.handleError());

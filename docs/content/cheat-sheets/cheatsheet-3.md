@@ -2411,9 +2411,9 @@ class Component extends React.Component {
 
 > In rare cases, it's okay to initialize state based on props.
 
-> This effectively "forks” the props and sets the state with the initial props.
+> This effectively "forks" the props and sets the state with the initial props.
 
-> If you "fork” props by using them for state, you might also want to implement componentWillReceiveProps(nextProps) to keep the state up-to-date with them. But lifting state up is often easier and less bug-prone.
+> If you "fork" props by using them for state, you might also want to implement componentWillReceiveProps(nextProps) to keep the state up-to-date with them. But lifting state up is often easier and less bug-prone.
 
 ```js
     color: props.initialColor
@@ -2431,7 +2431,10 @@ class Component extends React.Component {
 
 > You may optionally pass an object as the first argument to setState() instead of a function.
 
+
 ```jsx
+
+
 setState(updater[, callback]) { }
 ```
 

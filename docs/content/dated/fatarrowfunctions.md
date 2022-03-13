@@ -11,7 +11,7 @@ Introduced as a new feature in ES6, fat arrow functions may come as a handy tool
 
 Have a look at these two code snippets, which do the exact same job, and you will quickly understand what fat arrow functions do:
 
-```javascript
+```js
 // general syntax for fat arrow functions
 param => expression
 
@@ -38,7 +38,7 @@ As you can see, the fat arrow function in this case can save you time typing out
 
 There is another good reason to use fat arrow functions. There is the issue with the context of `this`. With arrow functions, you don't need to worry about `.bind(this)` or setting `that = this` anymore, as fat arrow functions pick the context of `this` from the lexical surrounding. Have a look at the next [example] (https://jsfiddle.net/pklinger/rw94oc11/):
 
-```javascript
+```js
 // globally defined this.i
 this.i = 100;
 

@@ -80,10 +80,10 @@ msg := "Hello"
 ### Constants
 
 ```go
-const Phi = 1.618
-```
+const Phi = 1.618 
+```js
 
-Constants can be character, string, boolean, or numeric values.
+constants can be character, string, boolean, or numeric values.
 
 See: [Constants](https://tour.golang.org/basics/15)
 

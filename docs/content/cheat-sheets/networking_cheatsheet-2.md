@@ -32,7 +32,7 @@ Networking
 ### Switch
 
 -   contains the MAC (media access control) address of all - connected devices
--   flood - send to ALL connected devices ”
+-   flood - send to ALL connected devices "
 -   forward - send to a particular device
 -   filter - drop data entirely
 

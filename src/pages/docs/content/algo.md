@@ -645,7 +645,12 @@ Access Search Insertion Deletion
 - O(n) O(n) O(n)
     > _The code_
 
+---
+
+
 ```js
+
+
 function Set() {
     this.values = [];
     this.numberOfValues = 0;
@@ -755,7 +760,12 @@ O(n) O(n) O(1) O(1)
 
 > _The code_
 
+---
+
+
 ```js
+
+
 function Node(data) {
     this.data = data;
     this.next = null;

@@ -61,7 +61,12 @@ fetch('/data.json', {
 fetch("/data.json").then(checkStatus);
 ```
 
+---
+
+
 ```js
+
+
 function checkStatus(res) {
   if (res.status >= 200 && res.status < 300) {
     return res;

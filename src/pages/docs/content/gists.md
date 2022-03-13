@@ -261,7 +261,12 @@ rPartSumsArr(arr1)=[ 1, 7, 12, 6, 5, 10 ]:  [ 10, 15, 21, 33, 40, 41 ]
 
 ### camel2Kabab.js
 
+---
+
+
 ```js
+
+
 function camelToKebab(value) {
     return value.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
 }
@@ -271,7 +276,12 @@ function camelToKebab(value) {
 
 ### camelCase.js
 
+---
+
+
 ```js
+
+
 function camel(str) {
     return str.replace(/(?:^\w|[A-Z]|\b\w|\s+)/g, function (match, index) {
         if (+match === 0) return ''; // or if (/\s+/.test(match)) for white spaces
@@ -284,7 +294,12 @@ function camel(str) {
 
 ### concatLinkedLists.js
 
+---
+
+
 ```js
+
+
 function addTwoNumbers(l1, l2) {
     let result = new ListNode(0);
     let currentNode = result;
@@ -341,7 +356,12 @@ console.log(isAlphaNumeric('!')); //false
 
 ### find-n-replace.js
 
+---
+
+
 ```js
+
+
 function replaceWords(str, before, after) {
     if (/^[A-Z]/.test(before)) {
         after = after[0].toUpperCase() + after.substring(1);
@@ -381,7 +401,12 @@ console.log(isWeekday(new Date(2021, 0, 10)));
 
 ### longest-common-prefix.js
 
+---
+
+
 ```js
+
+
 function longestCommonPrefix(strs) {
     let prefix = '';
     if (strs.length === 0) return prefix;

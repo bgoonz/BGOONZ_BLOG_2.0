@@ -90,7 +90,7 @@ If row == 1 or row == numRows, skip the odd columns.
 next_i = i + numRows + (numRows - 2), if col is even && (row == 1 || row == numRows)
 ```
 
-```javascript
+```js
 /**
  * @param {string} s
  * @param {number} numRows
