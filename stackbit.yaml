@@ -8,7 +8,8 @@ staticDir: static
 uploadDir: images
 dataDir: src/data
 pagesDir: src/pages
-pageLayoutKey: templatelogicFields:
+pageLayoutKey: template
+logicFields:
   - doc_sections.root_docs_path
   - doc_sections.sections
   - docs.weight
