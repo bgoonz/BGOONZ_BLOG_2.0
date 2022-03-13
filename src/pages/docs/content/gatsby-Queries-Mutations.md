@@ -81,7 +81,7 @@ render={data => (
 
 }
 
-`
+```
 
 By using `StaticQuery`, you can colocate a component with its data. It is no longer required to, say, pass data down from `Layout` to `Header`.
 
@@ -163,7 +163,7 @@ title: PropTypes.string.isRequired,
 
 }
 
-`
+```
 
 ## [](https://www.gatsbyjs.com/docs/how-to/querying-data/static-query/#how-staticquery-differs-from-page-query)How StaticQuery differs from page query
 
