@@ -1,20 +1,20 @@
 ---
 title: Web Dev Hub Home
 sections:
-  - section_id: Intro
-    type: section_hero
-    title: 'I am a musician, electrical engineer & web developer'
-    image: images/curious-europa.gif
-    content: >-
-            Pleasenotethatthiswebsiteisindevelopmentandisoftenbroken!**\n\n[](https://www.vagrantup.com/)[![gmail](https://img.icons8.com/color/96/000000/gmail.png)](mailto:bryan.guner@gmail.com)[![](https://img.icons8.com/color/96/000000/youtube.png)][![linkedin](https://img.icons8.com/color/96/000000/linkedin.png)](https://www.linkedin.com/in/bryan-guner-046199128/)[![](https://img.icons8.com/color/96/000000/instagram-new.png)](https://www.instagram.com/bgoonz/?hl=en)[![](https://img.icons8.com/color/96/000000/pinterest--v1.png)](https://www.pinterest.com/bryanguner/\\_saved/)\n\n[](https://webpack.js.org/)[\_](https://www.adobe.com/products/xd.html)\n\n[![NetlifyStatus](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/bgoonz-blog/deploys)\n\n[![Bryansgithubactivitygraph](https://activity-graph.herokuapp.com/graph?username=bgoonz\\&custom_title=This%20is%20Bryans%20Activity\\&hide_border=true\\&theme=chartreuse-dark)](https://github.com/bgoonz/github-readme-activity-graph)\n\n![Jokes](https://readme-jokes.vercel.app/api)\n\n![Python](https://img.shields.io/badge/-Python-05122A?style=flat\\&logo=python)![HTML](https://img.shields.io/badge/-HTML-05122A?style=flat\\&logo=HTML5)![CSS](https://img.shields.io/badge/-CSS-05122A?style=flat\\&logo=CSS3\\&logoColor=1572B6)![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat\\&logo=javascript)![React](https://img.shields.io/badge/-React-05122A?style=flat\\&logo=react)![Node.js](https://img.shields.io/badge/-Node.js-05122A?style=flat\\&logo=node.js)\n\n![VisualStudioCode](https://img.shields.io/badge/-Visual%20Studio%20Code-05122A?style=flat\\&logo=visual-studio-code\\&logoColor=007ACC)![Docker](https://img.shields.io/badge/-Docker-05122A?style=flat\\&logo=Docker)![MongoDB](https://img.shields.io/badge/-MongoDB-05122A?style=flat\\&logo=mongodb)![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-05122A?style=flat\\&logo=postgresql)\n\n![Git](https://img.shields.io/badge/-Git-05122A?style=flat\\&logo=git)![GitHub](https://img.shields.io/badge/-GitHub-05122A?style=flat\\&logo=github)![GitLab](https://img.shields.io/badge/-GitLab-05122A?style=flat\\&logo=gitlab)\n\n![Markdown](https://img.shields.io/badge/-Markdown-05122A?style=flat\\&logo=markdown)
-        actions:
-         - label: Contact
-        url: 'https://sidebar-blog.netlify.app/contact/'
-        style: secondary
-        icon_class: linkedin
-        new_window: true
-        no_follow: false
-        type: action
+    - section_id: Intro
+        type: section_hero
+        title: 'I am a musician, electrical engineer & web developer'
+        image: images/curious-europa.gif
+        content: >-
+                Pleasenotethatthiswebsiteisindevelopmentandisoftenbroken!**\n\n[](https://www.vagrantup.com/)[![gmail](https://img.icons8.com/color/96/000000/gmail.png)](mailto:bryan.guner@gmail.com)[![](https://img.icons8.com/color/96/000000/youtube.png)][![linkedin](https://img.icons8.com/color/96/000000/linkedin.png)](https://www.linkedin.com/in/bryan-guner-046199128/)[![](https://img.icons8.com/color/96/000000/instagram-new.png)](https://www.instagram.com/bgoonz/?hl=en)[![](https://img.icons8.com/color/96/000000/pinterest--v1.png)](https://www.pinterest.com/bryanguner/\\_saved/)\n\n[](https://webpack.js.org/)[\_](https://www.adobe.com/products/xd.html)\n\n[![NetlifyStatus](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/bgoonz-blog/deploys)\n\n[![Bryansgithubactivitygraph](https://activity-graph.herokuapp.com/graph?username=bgoonz\\&custom_title=This%20is%20Bryans%20Activity\\&hide_border=true\\&theme=chartreuse-dark)](https://github.com/bgoonz/github-readme-activity-graph)\n\n![Jokes](https://readme-jokes.vercel.app/api)\n\n![Python](https://img.shields.io/badge/-Python-05122A?style=flat\\&logo=python)![HTML](https://img.shields.io/badge/-HTML-05122A?style=flat\\&logo=HTML5)![CSS](https://img.shields.io/badge/-CSS-05122A?style=flat\\&logo=CSS3\\&logoColor=1572B6)![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat\\&logo=javascript)![React](https://img.shields.io/badge/-React-05122A?style=flat\\&logo=react)![Node.js](https://img.shields.io/badge/-Node.js-05122A?style=flat\\&logo=node.js)\n\n![VisualStudioCode](https://img.shields.io/badge/-Visual%20Studio%20Code-05122A?style=flat\\&logo=visual-studio-code\\&logoColor=007ACC)![Docker](https://img.shields.io/badge/-Docker-05122A?style=flat\\&logo=Docker)![MongoDB](https://img.shields.io/badge/-MongoDB-05122A?style=flat\\&logo=mongodb)![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-05122A?style=flat\\&logo=postgresql)\n\n![Git](https://img.shields.io/badge/-Git-05122A?style=flat\\&logo=git)![GitHub](https://img.shields.io/badge/-GitHub-05122A?style=flat\\&logo=github)![GitLab](https://img.shields.io/badge/-GitLab-05122A?style=flat\\&logo=gitlab)\n\n![Markdown](https://img.shields.io/badge/-Markdown-05122A?style=flat\\&logo=markdown)
+            actions:
+            - label: Contact
+            url: 'https://sidebar-blog.netlify.app/contact/'
+            style: secondary
+            icon_class: linkedin
+            new_window: true
+            no_follow: false
+            type: action
     - section_id: features
       type: section_grid
       col_number: three
@@ -33,7 +33,6 @@ sections:
             title_url: >-
                 https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522
           - content: >-
-|
                 *Python has a built in help function that let's you see a description
                 of the source code without having to navigate to it… "-SickNasty …
                 Autor Unknown"  .*
@@ -48,8 +47,8 @@ sections:
                 https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb
             image: images/py.jpg
           - content: >-
-            actions:
-                - label: Learn More
+                  https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb
+             - label: Learn More
                   url: /docs/tools
                   style: secondary
             title: Guitar Effects Triggering w DTW
@@ -231,15 +230,15 @@ sections:
     - section_id: tools
       image_alt: image of
       image_position: left
-      content: >
+    content: >
         <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    class="block-content" width="100% width="1200px!important" height="1000px!important" src="https://bgoonz.github.io/fb-and-twitter-api-embeds/"  allowfullscreen></iframe>
-      actions: []
+    actions: []
       type: section_content
       title: Tools Showcase
     - section_id: Web Audio DAW
       image_alt: medium
       image_position: left
-      actions:
+    actions:
           - label: Go To Web Audio Daw
             url: 'https://mihirbegmusiclab.netlify.app/'
             style: primary
@@ -287,10 +286,7 @@ seo:
           value: Web-Dev-Hub
           keyName: property
         - name: 'og:description'
-          value: |-
-              my resource sharing and blog site ... centered mostly on web development
-              and just a bit of audio production / generally nerdy things I find
-              interesting.
+          value: my resource sharing and blog site ... centered mostly on web development and just a bit of audio production / generally nerdy things I find interesting.
           keyName: property
         - name: 'og:image'
           value: images/code.png
