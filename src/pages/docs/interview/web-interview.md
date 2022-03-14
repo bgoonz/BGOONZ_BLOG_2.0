@@ -9,8 +9,14 @@ seo:
     extra: []
 template: docs
 ---
-
 ## Inserting an item into an existing array
+
+
+
+
+<iframe frameborder="0" width="100%" height="800px" src="https://replit.com/@bgoonz/interview-2?lite=true"></iframe>
+
+
 
 Inserting an item into an existing array is a daily common task. You can add elements to the end of an array using push, to the beginning using unshift, or to the middle using splice.
 
@@ -412,7 +418,7 @@ Fortunately, there are two ways to overcome this behavior [localeCompare](https:
 ```
 
 - For each method you can customize the location.
-- 
+-
 - According to [Firefox](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare#Performance) Intl.Collator is faster when comparing large numbers of strings.
 
 ### So when you are working with arrays of strings in a language other than English, remember to use this method to avoid unexpected sorting
@@ -424,15 +430,15 @@ Fortunately, there are two ways to overcome this behavior [localeCompare](https:
 ---
 
 - `undefined` means a variable has not been declared, or has been declared but has not yet been assigned a value
-- 
+-
 - `null` is an assignment value that means "no value"
-- 
+-
 - Javascript sets unassigned variables with a defau
-- 
+-
 - Javascript never sets a value to `null`. It is used by programmers to indicate that a
-- 
+-
 - `undefined` is not valid in JSON while `null` is
-- 
+-
 - `undefined` typeof is `undefined`
 
 - `null` typeof is an `object`. [Why?](http://www.2ality.com/2013/10/typeof-null.html)
@@ -565,11 +571,11 @@ function f2() {
 By including this directive in a JavaScript file or function, we will direct the JavaScript engine to execute in strict mode which disables a bunch of behaviors that are usually undesirable in larger JavaScript projects. Among other things, strict mode changes the following behaviors:
 
 - Variables can only be introduced when they are preceded with "var"
-- 
+-
 - Attempting to write to read-only properties generates
-- 
-- You have to call constructors with 
-- 
+-
+- You have to call constructors with
+-
 - "this" is not implicitly bound to the global object
 
 - Very limited use of eval() allowed
@@ -581,9 +587,9 @@ Strict mode is great for new projects, but can be challenging to introduce into 
 It is not a statement, but a literal expression, ignored by earlier versions of JavaScript. Strict mode is supported in:
 
 - Internet Explorer from version 10.
-- 
+-
 - Firefox from version 4.
-- 
+-
 - Chrome from version 13.
 
 - Safari from version 5.1.
@@ -895,7 +901,7 @@ Introduced as a new feature in ES6, fat arrow functions may come as a handy tool
 #### What are the benefits?
 
 - Syntax: fewer LOC; no more typing `function` keyword over and over again
-- 
+-
 - Semantics: capturing the keyword `this` from the surrounding context
 
 #### Simple syntax example
@@ -1479,7 +1485,7 @@ empty();
 ```
 
 - `list = []` assigns a reference to a new array to a variable, while any other references are unaffected. which means that references to the contents of the previous array are still kept in memory, leading to memory leaks.
-- 
+-
 - `list.length = 0` deletes everything in the array, which does hit other references.
 
 In other words, if you have two references to the same array (`a = [1,2,3]; a2 = a;`), and you delete the array's contents using `list.length = 0`, both references (a and a2) will now point to the same empty array. (So don't use this technique if you don't want a2 to hold an empty array!)
