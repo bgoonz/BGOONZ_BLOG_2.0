@@ -79,25 +79,25 @@ export default class Header extends React.Component {
                     </div>
                 </div>
                 <>
-                    <div>
+                <div>
 
-                        <div className="sb-content sb-hero">
-                            <div className="sb-search sb-hero">
-                                <div className="sb-input">
-                                    <input
-                                        className="sb-search-field"
+                    <div className="sb-content sb-hero">
+                        <div className="sb-search sb-hero">
+                            <div className="sb-input">
+                                <input
+                                    className="sb-search-field"
                                         name="pesquisa"
-                                        placeholder="Type your search..."
-                                        type="search"
-                                        autoComplete="off"
-                                        id="myCustomTextInputID"
-                                    />
-                                    <div className="sb-search-icon" id="myCustomSearchButtonID">🔎</div>
-                                </div>
+                                    placeholder="Type your search..."
+                                    type="search"
+                                    autoComplete="off"
+                                    id="myCustomTextInputID"
+                                />
+                                <div className="sb-search-icon" id="myCustomSearchButtonID">🔎</div>
                             </div>
                         </div>
                     </div>
-                </>
+                </div>
+ </>
                 <a className="github-corner" href="https://github.com/bgoonz/BGOONZ_BLOG_2.0" aria-label="View source on Github">
                     <svg
                         aria-hidden="true"
@@ -129,7 +129,6 @@ export default class Header extends React.Component {
                         ></path>
                     </svg>
                 </a>
-                </div>
                 </div>
             </header >
         );
