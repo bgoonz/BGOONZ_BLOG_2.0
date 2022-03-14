@@ -79,9 +79,15 @@ export default class Header extends React.Component {
                     </div>
                 </div>
                 <div>
-
+                    <div id="sb-search-example">
+                        <div className="sb-search-icon" id="myCustomSearchButtonID">
+                            <i className="sb-icon">🔎</i>
+                            <p>Search🔎</p>
+                        </div>
+                    </div>
+                    <div id="sb-search-input-example">
   <div className="sb-content sb-hero">
-                        <div className="sb-search sb-hero">
+    <div className="sb-search sb-hero">
       <div className="sb-input">
         <input
           className="sb-search-field"
