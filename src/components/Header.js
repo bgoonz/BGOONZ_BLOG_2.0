@@ -130,6 +130,7 @@ export default class Header extends React.Component {
                     </svg>
                 </a>
                 </div>
+                </div>
             </header >
         );
     }
