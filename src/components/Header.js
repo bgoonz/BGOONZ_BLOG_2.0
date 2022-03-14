@@ -97,7 +97,7 @@ export default class Header extends React.Component {
           autoComplete="off"
           id="myCustomTextInputID"
         />
-        <div className="sb-search-icon" id="myCustomSearchButtonID"></div>
+        <div className="sb-search-icon" id="myCustomSearchButtonID">🔎</div>
       </div>
     </div>
   </div>
