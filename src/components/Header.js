@@ -86,7 +86,7 @@ export default class Header extends React.Component {
                             <div className="sb-input">
                                 <input
                                     className="sb-search-field"
-                                    name="pesquisa"
+                                        name="pesquisa"
                                     placeholder="Type your search..."
                                     type="search"
                                     autoComplete="off"
