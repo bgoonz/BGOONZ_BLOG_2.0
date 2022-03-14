@@ -81,7 +81,7 @@ export default class Header extends React.Component {
                 <div>
 
   <div className="sb-content sb-hero">
-    <div className="sb-search sb-hero">
+                        <div className="sb-search sb-hero">
       <div className="sb-input">
         <input
           className="sb-search-field"
