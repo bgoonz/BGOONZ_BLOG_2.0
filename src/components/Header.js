@@ -94,7 +94,7 @@ export default class Header extends React.Component {
             id="myCustomTextInputID"
           />
           <div className="sb-search-icon" id="myCustomSearchButtonID">
-            <i className="sb-icon"></i>
+            <i className="sb-icon">🔎</i>
           </div>
         </div>
       </div>
