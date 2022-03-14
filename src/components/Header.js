@@ -85,6 +85,24 @@ export default class Header extends React.Component {
                             <p>Search🔎</p>
                         </div>
                     </div>
+                    <div id="sb-search-input-example">
+  <div className="sb-content sb-hero">
+    <div className="sb-search sb-hero">
+      <div className="sb-input">
+        <input
+          className="sb-search-field"
+          name="pesquisa"
+          placeholder="Type your search..."
+          type="search"
+          autoComplete="off"
+          id="myCustomTextInputID"
+        />
+        <div className="sb-search-icon" id="myCustomSearchButtonID"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
                     <a className="github-corner" href="https://github.com/bgoonz/BGOONZ_BLOG_2.0" aria-label="View source on Github">
                         <svg
                             aria-hidden="true"
