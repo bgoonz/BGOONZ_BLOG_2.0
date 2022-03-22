@@ -1,16 +1,16 @@
-var axios = require('axios');
+const axios = require( 'axios' );
 
-var config = {
+let config = {
     method: 'get',
     url: '{{host}}/v1/account',
     headers: {},
-    timeout: 2
+    timeout: 100
 };
 
-axios(config)
-    .then(function (response) {
-        console.log(JSON.stringify(response.data));
-    })
-    .catch(function (error) {
-        console.log(error);
-    });
+axios( config )
+    .then( function ( response ) {
+        console.log( JSON.stringify( response.data ) );
+    } )
+    .catch( function ( error ) {
+        console.log( error );
+    } );

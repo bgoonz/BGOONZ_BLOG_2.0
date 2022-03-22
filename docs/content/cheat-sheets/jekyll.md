@@ -170,7 +170,7 @@ endcase %}
 
 ### Includes (partials)
 
-```
+```html
 {% include header.html %}
 ```
 

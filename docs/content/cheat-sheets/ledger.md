@@ -8,13 +8,13 @@ weight: -5
 ### Basic usage
 
 ```bash
-$ ledger bal
-$ ledger reg
+ledger bal
+ledger reg
 ```
 
 ```bash
-$ ledger reg grocery  # show entries for 'grocery'
-$ ledger bal assets   # check if i'm broke
+ledger reg grocery  # show entries for 'grocery'
+ledger bal assets   # check if i'm broke
 ```
 
 ```bash
@@ -199,9 +199,9 @@ spec:
 ```
 
 ```bash
-$ ledger bal|reg --period "until aug"
-$ ledger bal|reg --period "last oct"
-$ ledger bal|reg --period "every week"
+ledger bal|reg --period "until aug"
+ledger bal|reg --period "last oct"
+ledger bal|reg --period "every week"
 ```
 
 {: .-setup}
@@ -209,7 +209,7 @@ $ ledger bal|reg --period "every week"
 ### Register
 
 ```bash
-$ ledger reg
+ledger reg
 ```
 
 {: .-setup}
