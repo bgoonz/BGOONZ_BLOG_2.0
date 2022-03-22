@@ -155,9 +155,9 @@ export default class Header extends React.Component {
             <
             input className = "sb-search-field"
             name = "pesquisa"
-            placeholder = "Type your search..."
+            placeholder = "Search for"
             type = "search"
-            autoComplete = "off"
+            autoComplete = "on"
             id = "myCustomTextInputID" /
             >
             <
