@@ -257,7 +257,7 @@ RSS feeds {{ page.categories }} {{ page.tags }} {{ page.path }} {{ page.dir }} {
 {: .-setup}
 
 | Filter        | Description |
-|---------------|-------------|
+| ------------- | ----------- |
 | `textilize`   | Textile     |
 | `markdownify` | Markdown    |
 | `jsonify`     | JSON        |
@@ -274,7 +274,7 @@ RSS feeds {{ page.categories }} {{ page.tags }} {{ page.path }} {{ page.dir }} {
 {: .-setup}
 
 | Filter                                     | Description        |
-|--------------------------------------------|--------------------|
+| ------------------------------------------ | ------------------ |
 | `where:` _"year", "2014"_                  |                    |
 | `where_exp:` _"item", "item.year >= 2014"_ |                    |
 | ---                                        | ---                |
@@ -305,7 +305,7 @@ RSS feeds {{ page.categories }} {{ page.tags }} {{ page.path }} {{ page.dir }} {
 {: .-setup}
 
 | Filter                             | Description |
-|------------------------------------|-------------|
+| ---------------------------------- | ----------- |
 | `default:` _'xxx'_                 |             |
 | ---                                | ---         |
 | `upcase`                           |             |
@@ -346,7 +346,7 @@ See: [String filters](http://docs.shopify.com/themes/liquid-documentation/filter
 {: .-setup}
 
 | Filter            | Description    |
-|-------------------|----------------|
+| ----------------- | -------------- |
 | `number_of_words` |                |
 | `slugify`         |                |
 | ---               | ---            |
@@ -363,7 +363,7 @@ See: [String filters](http://docs.shopify.com/themes/liquid-documentation/filter
 {: .-setup}
 
 | Filter            | Description |
-|-------------------|-------------|
+| ----------------- | ----------- |
 | `minus:` _2_      |             |
 | `plus:` _2_       |             |
 | `times:` _2_      |             |
