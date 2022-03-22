@@ -12,7 +12,7 @@ http -v example.org
 
 # Use Github API to post a comment on an issue with authentication:
 
-http -a USERNAME POST https://api.github.com/repos/jkbrzt/httpie/issues/83/comments body='HTTPie is awesome!'
+http -a USERNAME POST <https://api.github.com/repos/jkbrzt/httpie/issues/83/comments> body='HTTPie is awesome!'
 
 # Upload a file using redirected input:
 
@@ -68,7 +68,7 @@ http -f POST example.com/jobs name='John Smith' cv@~/Documents/cv.pdf
 
 # To set custom headers you can use the Header:Value notation:
 
-http example.org User-Agent:Bacon/1.0 'Cookie:valued-visitor=yes;foo=bar' X-Foo:Bar Referer:http://httpie.org/
+http example.org User-Agent:Bacon/1.0 'Cookie:valued-visitor=yes;foo=bar' X-Foo:Bar Referer:<http://httpie.org/>
 
 # Basic auth:
 
@@ -95,33 +95,33 @@ http httpbin.org/basic-auth/httpie/test
 
 # protocols):
 
-http --proxy=http:http://10.10.1.10:3128 --proxy=https:https://10.10.1.10:1080 example.org
+http --proxy=http:<http://10.10.1.10:3128> --proxy=https:<https://10.10.1.10:1080> example.org
 
 # With Basic authentication:
 
-http --proxy=http:http://user:pass@10.10.1.10:3128 example.org
+http --proxy=http:<http://user:pass@10.10.1.10:3128> example.org
 
 # To skip the HOST'S SSL CERTIFICATE VERIFICATION, you can pass
 
 # --verify=no (default is yes):
 
-http --verify=no https://example.org
+http --verify=no <https://example.org>
 
 # You can also use --verify=<CA_BUNDLE_PATH> to set a CUSTOM CA BUNDLE path:
 
-http --verify=/ssl/custom_ca_bundle https://example.org
+http --verify=/ssl/custom_ca_bundle <https://example.org>
 
 # To use a CLIENT SIDE CERTIFICATE for the SSL communication, you can pass
 
 # the path of the cert file with --cert:
 
-http --cert=client.pem https://example.org
+http --cert=client.pem <https://example.org>
 
 # If the PRIVATE KEY is not contained in the cert file you may pass the
 
 # path of the key file with --cert-key:
 
-http --cert=client.crt --cert-key=client.key https://example.org
+http --cert=client.crt --cert-key=client.key <https://example.org>
 
 # You can control what should be printed via several options:
 
@@ -173,7 +173,7 @@ echo '{"name": "John"}' | http PATCH example.com/person/1 X-API-Token:123
 
 # You can even pipe web services together using HTTPie:
 
-http GET https://api.github.com/repos/jkbrzt/httpie | http POST httpbin.org/post
+http GET <https://api.github.com/repos/jkbrzt/httpie> | http POST httpbin.org/post
 
 # You can use cat to enter multiline data on the terminal:
 
@@ -228,13 +228,13 @@ http --pretty=all --verbose example.org | less -R
 
 # body is being saved to a file.
 
-http --download https://github.com/jkbrzt/httpie/tarball/master
+http --download <https://github.com/jkbrzt/httpie/tarball/master>
 
 # You can also redirect the response body to another program while the
 
 # response headers and progress are still shown in the terminal:
 
-http -d https://github.com/jkbrzt/httpie/tarball/master | tar zxf -
+http -d <https://github.com/jkbrzt/httpie/tarball/master> | tar zxf -
 
 # If --output, -o is specified, you can resume a partial download using
 
@@ -248,13 +248,13 @@ http -dco file.zip example.org/file
 
 # Prettified streamed response:
 
-http --stream -f -a YOUR-TWITTER-NAME https://stream.twitter.com/1/statuses/filter.json track='Justin Bieber'
+http --stream -f -a YOUR-TWITTER-NAME <https://stream.twitter.com/1/statuses/filter.json> track='Justin Bieber'
 
 # Send each new tweet (JSON object) mentioning "Apple" to another
 
 # server as soon as it arrives from the Twitter streaming API:
 
-http --stream -f -a YOUR-TWITTER-NAME https://stream.twitter.com/1/statuses/filter.json track=Apple | while read tweet; do echo "$tweet" | http POST example.org/tweets ; done
+http --stream -f -a YOUR-TWITTER-NAME <https://stream.twitter.com/1/statuses/filter.json> track=Apple | while read tweet; do echo "$tweet" | http POST example.org/tweets ; done
 
 # Create a new session named user1 for example.org:
 
