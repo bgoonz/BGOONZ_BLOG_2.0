@@ -7,7 +7,7 @@ category: Ledger
 ### Query characters
 
 | Query           | Description |
-| --------------- | ----------- |
+|-----------------|-------------|
 | `@payee`        | Payee       |
 | `%tag`          | Tag         |
 | `=note`         | Note        |

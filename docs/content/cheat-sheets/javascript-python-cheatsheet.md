@@ -244,7 +244,7 @@ print(add(4, 5)) # prints 9
 #### JavaScript
 
 | Operator | Description                   |
-| -------- | ----------------------------- |
+|----------|-------------------------------|
 | `+`      | Addition                      |
 | `-`      | Subtraction                   |
 | `*`      | Multiplication                |
@@ -265,7 +265,7 @@ print(add(4, 5)) # prints 9
 The pre- and post-increment and decrement are notably absent.
 
 | Operator | Description               |
-| -------- | ------------------------- |
+|----------|---------------------------|
 | `+`      | Addition                  |
 | `-`      | Subtraction               |
 | `*`      | Multiplication            |
@@ -608,7 +608,7 @@ y = false;
 Boolean operators:
 
 | Operator | Definition            |
-| -------- | --------------------- |
+|----------|-----------------------|
 | `==`     | Equality              |
 | `!=`     | Inequality            |
 | `===`    | Strict equality       |
@@ -634,7 +634,7 @@ The concept of strict equality/inequality applies to items that might normally b
 Logical operators:
 
 | Operator | Description          |
-| -------- | -------------------- |
+|----------|----------------------|
 | `!`      | Logical inverse, not |
 | `&&`     | Logical AND          |
 | \`       | \`                   |
@@ -670,7 +670,7 @@ y = False
 Boolean operators:
 
 | Operator | Definition            |
-| -------- | --------------------- |
+|----------|-----------------------|
 | `==`     | Equality              |
 | `!=`     | Inequality            |
 | `<`      | Less than             |
@@ -681,7 +681,7 @@ Boolean operators:
 Logical operators:
 
 | Operator | Description          |
-| -------- | -------------------- |
+|----------|----------------------|
 | `not`    | Logical inverse, not |
 | `and`    | Logical AND          |
 | `or`     | Logical OR           |

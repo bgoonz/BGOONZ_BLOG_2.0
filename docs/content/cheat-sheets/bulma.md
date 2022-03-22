@@ -82,7 +82,7 @@ The following classes modify the **state**.
 The following classes modify the **font-size**
 
 | Class        | Font-size |
-| ------------ | --------- |
+|--------------|-----------|
 | `.is-size-1` | 3rem      |
 | `.is-size-2` | 2.5rem    |
 | `.is-size-3` | 2rem      |
@@ -94,7 +94,7 @@ The following classes modify the **font-size**
 The following classes **align** the text
 
 | Class                 | Alignment                             |
-| --------------------- | ------------------------------------- |
+|-----------------------|---------------------------------------|
 | `.has-text-centered`  | Makes the text **centered**           |
 | `.has-text-justified` | Makes the text **justified**          |
 | `.has-text-left`.     | Makes the text align to the **left**  |
@@ -103,7 +103,7 @@ The following classes **align** the text
 The following classes **transform** the text
 
 | Class             | Transformation                                                   |
-| ----------------- | ---------------------------------------------------------------- |
+|-------------------|------------------------------------------------------------------|
 | `.is-capitalized` | Transforms the **first character** of each word to **uppercase** |
 | `.is-lowercase`   | Transforms **all** characters to **lowercase**                   |
 | `.is-uppercase`   | Transforms **all** characters to **uppercase**                   |
