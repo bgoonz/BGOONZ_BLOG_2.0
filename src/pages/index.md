@@ -51,7 +51,7 @@ sections:
             style: secondary
         title: Guitar Effects Triggering w DTW
         title_url: 'https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering'
-        image: images/panoramic-owl.png
+        image: images/dtw.png
       - title_url: 'https://bryanguner.medium.com/introductory-react-part-2-cda01615a186'
         image_alt: img of dtw
         content: |
@@ -62,7 +62,7 @@ sections:
         actions: []
         type: grid_item
         title: Beginner Guide React
-        image: images/successful-panda.gif
+        image: images/react.gif
       - title_url: 'https://dev.to/bgoonz/scope-and-context-in-javascript-5cma'
         image_alt: img of react
         content: "Scope & Context in JS\n\nThe\_**scope**\_of a program in JavaScript is the set of variables that are available for use within the program. \n"
