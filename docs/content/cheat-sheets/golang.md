@@ -110,7 +110,7 @@ Example: github.com/spf13/cobra
 ## Basic Types
 
 |    Type    |               Set of Values                |                    Values                     |
-| :--------: | :----------------------------------------: | :-------------------------------------------: |
+|:----------:|:------------------------------------------:|:---------------------------------------------:|
 |    bool    |                  boolean                   |                  true/false                   |
 |   string   |            array of characters             |             needs to be inside ""             |
 |    int     |                  integers                  |             32 or 64 bit integer              |
@@ -178,36 +178,36 @@ const pi = 3.1415
 [Return to Summary](#summary)
 
 Arithmetic Operators
-| Symbol | Operation | Valid Types |
-|:---------:|:-------------:|:-------------:|
-| `+` | Sum | integers, floats, complex values, strings |
-| `-` | Difference | integers, floats, complex values |
-| `*` | Product | integers, floats, complex values |
-| `/` | Quotient | integers, floats, complex values |
-| `%` | Remainder | integers |
-| `&` | Bitwise AND | integers |
-| `|` | Bitwise OR | integers |
-| `^` | Bitwise XOR | integers |
-| `&^` | Bit clear (AND NOT) | integers |
-| `<<` | Left shift | integer << unsigned integer |
-| `>>` | Right shift | integer >> unsigned integer |
+| Symbol |      Operation      |                Valid Types                |
+|:------:|:-------------------:|:-----------------------------------------:|
+|  `+`   |         Sum         | integers, floats, complex values, strings |
+|  `-`   |     Difference      |     integers, floats, complex values      |
+|  `*`   |       Product       |     integers, floats, complex values      |
+|  `/`   |      Quotient       |     integers, floats, complex values      |
+|  `%`   |      Remainder      |                 integers                  |
+|  `&`   |     Bitwise AND     |                 integers                  |
+|  `|`   |     Bitwise OR      |                 integers                  |
+|  `^`   |     Bitwise XOR     |                 integers                  |
+|  `&^`  | Bit clear (AND NOT) |                 integers                  |
+|  `<<`  |     Left shift      |        integer << unsigned integer        |
+|  `>>`  |     Right shift     |        integer >> unsigned integer        |
 
 Comparison Operators
-| Symbol | Operation |
-|:---------:|:-------------:|
-| `==` | Equal |
-| `!=` | Not equal |
-| `<` | Less |
-| `<=` | Less or equal |
-| `>` | Greater |
-| `>=` | Greater or equal |
+| Symbol |    Operation     |
+|:------:|:----------------:|
+|  `==`  |      Equal       |
+|  `!=`  |    Not equal     |
+|  `<`   |       Less       |
+|  `<=`  |  Less or equal   |
+|  `>`   |     Greater      |
+|  `>=`  | Greater or equal |
 
 Logical Operators
-| Symbol | Operation |
-|:---------:|:-------------:|
-| `&&` | Conditional AND |
-| `||` | Conditional OR |
-| `!` | NOT |
+| Symbol |    Operation    |
+|:------:|:---------------:|
+|  `&&`  | Conditional AND |
+|  `||`  | Conditional OR  |
+|  `!`   |       NOT       |
 
 [Return to Summary](#summary)
 

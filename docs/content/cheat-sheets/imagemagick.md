@@ -8,7 +8,7 @@ intro: |
 ### Common options
 
 | Option              | Description                     |
-| ------------------- | ------------------------------- |
+|---------------------|---------------------------------|
 | `-resize 100x40`    | Resize to a dimension           |
 | `-crop 40x30+10+10` | (width)x(height)+(x)+y          |
 | `-crop 40x30-10-10` | (width)x(height)+(x)+y          |

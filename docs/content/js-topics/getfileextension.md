@@ -79,7 +79,7 @@ _How does it works?_
 ### Comparison
 
 | Solution                                  |                                          Paramters                                          |                                Results                                |
-| ----------------------------------------- | :-----------------------------------------------------------------------------------------: | :-------------------------------------------------------------------: |
+|-------------------------------------------|:-------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------:|
 | Solution 1: Regular Expression            | ''<br> 'filename' <br> 'filename.txt' <br> '.hiddenfile' <br> 'filename.with.many.dots.ext' | undefined <br> undefined <br> 'txt' <br> 'hiddenfile' <br> 'ext' <br> |
 | Solution 2: String `split`                | ''<br> 'filename' <br> 'filename.txt' <br> '.hiddenfile' <br> 'filename.with.many.dots.ext' |    '' <br> 'filename' <br> 'txt' <br> 'hiddenfile' <br> 'ext' <br>    |
 | Solution 3: String `slice`, `lastIndexOf` | ''<br> 'filename' <br> 'filename.txt' <br> '.hiddenfile' <br> 'filename.with.many.dots.ext' |             '' <br> '' <br> 'txt' <br> '' <br> 'ext' <br>             |
