@@ -5,7 +5,6 @@ import {
 } from '../utils';
 import ActionLink from './ActionLink';
 
-
 export default class Footer extends React.Component {
     render() {
         return ( <
@@ -13,12 +12,6 @@ export default class Footer extends React.Component {
             className = "site-footer outer" >
             <
             div >
-
-            <
-            br / >
-
-            <
-            br / >
             <
             table cellPadding = {
                 0
@@ -40,7 +33,6 @@ export default class Footer extends React.Component {
                     fontSize: '7.5pt'
                 }
             } >
-
             <
             table width = "95%"
             cellPadding = {
@@ -68,8 +60,7 @@ export default class Footer extends React.Component {
                     fontFamily: 'Arial, Helvetica, sans-serif',
                     fontSize: '7.5pt'
                 }
-            }
-            align = "left" >
+            } >
             <
             a target = "_blank"
             href = "https://search.freefind.com/siteindex.html?si=14588965" >
@@ -104,8 +95,9 @@ export default class Footer extends React.Component {
             /td> <
             /tr> <
             /tbody> <
-            /table> <
-            /center> <
+            /table>
+
+            <
             form style = {
                 {
                     margin: '0px',
@@ -188,9 +180,7 @@ export default class Footer extends React.Component {
                     color: 'transparent'
                 }
             } > freefind < /span> <
-            /a>
-
-            <
+            /a> <
             /td> <
             /tr> <
             /tbody> <
@@ -199,9 +189,15 @@ export default class Footer extends React.Component {
             href = "//pdfcrowd.com/url_to_pdf/?"
             onclick = "if(!this.p)href+='&url='+encodeURIComponent(location.href);this.p=1" >
             Save to PDF <
-            /a> <
-            /center> <
-            a aria - current = "page"
+            /a>
+
+            <
+            a style = {
+                {
+                    alignSelf: 'center'
+                }
+            }
+            aria - current = "page"
             className = "site-logo"
             href = "/" >
             <
