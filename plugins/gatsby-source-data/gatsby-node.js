@@ -8,7 +8,9 @@ const _ = require('lodash');
 const metadataFileName = `site-metadata.json`;
 
 const parsers = {
-    yaml: (data) => yaml.safeLoad(data, {schema: yaml.JSON_SCHEMA}),
+    yaml: (data) => yaml.safeLoad(data, {
+        schema: yaml.JSON_SCHEMA
+    }),
     json: (data) => JSON.parse(data)
 };
 
@@ -20,7 +22,9 @@ const supportedExtensions = {
 
 exports.sourceNodes = (props, pluginOptions = {}) => {
     const createContentDigest = props.createContentDigest;
-    const { createNode } = props.actions;
+    const {
+        createNode
+    } = props.actions;
     const reporter = props.reporter;
 
     if (!_.get(pluginOptions, 'path')) {
@@ -34,7 +38,12 @@ exports.sourceNodes = (props, pluginOptions = {}) => {
     reporter.info(`[gatsby-source-data] setup file watcher and create site data`);
 
     const dataPath = pluginOptions.path;
-    const createSiteDataFromFilesPartial = _.partial(createSiteDataFromFiles, { dataPath, createNode, createContentDigest, reporter });
+    const createSiteDataFromFilesPartial = _.partial(createSiteDataFromFiles, {
+        dataPath,
+        createNode,
+        createContentDigest,
+        reporter
+    });
     const watcher = chokidar.watch([dataPath, metadataFileName], {
         cwd: '.',
         ignoreInitial: true
@@ -43,10 +52,20 @@ exports.sourceNodes = (props, pluginOptions = {}) => {
     watcher.on('change', createSiteDataFromFilesPartial);
     watcher.on('unlink', createSiteDataFromFilesPartial);
 
-    return createSiteDataFromFiles({ dataPath, createNode, createContentDigest, reporter }, null);
+    return createSiteDataFromFiles({
+        dataPath,
+        createNode,
+        createContentDigest,
+        reporter
+    }, null);
 };
 
-async function createSiteDataFromFiles({ dataPath, createNode, createContentDigest, reporter }, changedFile) {
+async function createSiteDataFromFiles({
+    dataPath,
+    createNode,
+    createContentDigest,
+    reporter
+}, changedFile) {
     reporter.info(`[gatsby-source-data] create site data from files, updated path: ${changedFile}`);
     let dataFiles = [];
 
@@ -84,7 +103,9 @@ async function readDirRecursively(dir, options) {
         const filePath = path.join(dir, file);
         const stats = await fse.stat(filePath);
         if (stats.isDirectory()) {
-            return readDirRecursively(filePath, {rootDir});
+            return readDirRecursively(filePath, {
+                rootDir
+            });
         } else if (stats.isFile()) {
             return path.relative(rootDir, filePath);
         } else {
@@ -97,27 +118,27 @@ async function readDirRecursively(dir, options) {
 
 function convertDataFilesToJSON(dataFiles, dataDirPath, reporter) {
     let promises = _.map(dataFiles, filePath => {
-        const pathObject = path.parse(filePath);
-        const absFilePath = pathObject.base === metadataFileName ? metadataFileName : path.join(dataDirPath, filePath);
-        const relPath = pathObject.base === metadataFileName ? metadataFileName : filePath;
-        const relDir = pathObject.base === metadataFileName ? '' : pathObject.dir;
-        const ext = pathObject.ext.substring(1);
-        if (!_.has(supportedExtensions, ext)) {
-            return null;
-        }
-        return fse.readFile(absFilePath).then(data => {
-            const propPath = _.compact(relDir.split(path.sep).concat(pathObject.name));
-            const res = {};
-            try {
-                const parsedData = supportedExtensions[ext](data);
-                _.set(res, propPath, parsedData);
-            } catch (err) {
-                reporter.warn(`[gatsby-source-data] could not parse file: ${relPath}`);
+            const pathObject = path.parse(filePath);
+            const absFilePath = pathObject.base === metadataFileName ? metadataFileName : path.join(dataDirPath, filePath);
+            const relPath = pathObject.base === metadataFileName ? metadataFileName : filePath;
+            const relDir = pathObject.base === metadataFileName ? '' : pathObject.dir;
+            const ext = pathObject.ext.substring(1);
+            if (!_.has(supportedExtensions, ext)) {
+                return null;
             }
-            return res;
-        });
+            return fse.readFile(absFilePath).then(data => {
+                    const propPath = _.compact(relDir.split(path.sep).concat(pathObject.name));
+                    const res = {};
+                    try {
+                        const parsedData = supportedExtensions[ext](data);
+                        _.set(res, propPath, parsedData);
+                    } catch (err) {}
+                    reporter.warn(`[gatsby-source-data] could not parse file: ${relPath}`);
+                }
+                return res;
+            });
     });
-    return Promise.all(promises).then(results => {
-        return _.reduce(results, (data, res) => _.merge(data, res), {})
-    });
+return Promise.all(promises).then(results => {
+    return _.reduce(results, (data, res) => _.merge(data, res), {})
+});
 }

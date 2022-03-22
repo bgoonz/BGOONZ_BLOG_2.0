@@ -56,4 +56,8 @@ const validateCreditCard = (creditCardString) => {
     return true;
 };
 
-export { validateCreditCard };
+export {
+    validateCreditCard
+};
+validateCreditCard
+};

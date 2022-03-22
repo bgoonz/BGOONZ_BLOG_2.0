@@ -42,15 +42,16 @@ export function beadSort(sequence) {
             if (beadsCount) {
                 grid[row][col] = '*';
                 beadsCount--;
-            } else {
-                grid[row][col] = undefined;
-            }
+            } else {}
+            grid[row][col] = undefined;
         }
     }
+}
 
-    /* Finally, let's turn our Bead rows into their Respective Numbers */
-    return grid.map((beadArray) => {
-        const beadsArray = beadArray.filter((bead) => bead === '*');
-        return beadsArray.length;
-    });
+/* Finally, let's turn our Bead rows into their Respective Numbers */
+return grid.map((beadArray) => {
+    const beadsArray = beadArray.filter((bead) => bead === '*');
+    return beadsArray.length;
+});
+}
 }

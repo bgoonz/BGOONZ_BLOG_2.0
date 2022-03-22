@@ -40,7 +40,7 @@ echo "foo bar" >> /tmp/baz.list
 
 # To install list of packages from file:
 
-sport i $(< /tmp/baz.list)
+sport i $(</tmp/baz.list)
 
 # To check if package is installed:
 

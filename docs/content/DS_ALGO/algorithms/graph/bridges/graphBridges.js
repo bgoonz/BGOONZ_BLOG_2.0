@@ -4,7 +4,10 @@ import depthFirstSearch from '../depth-first-search/depthFirstSearch';
  * Helper class for visited vertex metadata.
  */
 class VisitMetadata {
-    constructor({ discoveryTime, lowDiscoveryTime }) {
+    constructor({
+        discoveryTime,
+        lowDiscoveryTime
+    }) {
         this.discoveryTime = discoveryTime;
         this.lowDiscoveryTime = lowDiscoveryTime;
     }
@@ -31,7 +34,9 @@ export default function graphBridges(graph) {
         /**
          * @param {GraphVertex} currentVertex
          */
-        enterVertex: ({ currentVertex }) => {
+        enterVertex: ({
+            currentVertex
+        }) => {
             // Tick discovery time.
             discoveryTime += 1;
 
@@ -45,7 +50,10 @@ export default function graphBridges(graph) {
          * @param {GraphVertex} currentVertex
          * @param {GraphVertex} previousVertex
          */
-        leaveVertex: ({ currentVertex, previousVertex }) => {
+        leaveVertex: ({
+            currentVertex,
+            previousVertex
+        }) => {
             if (previousVertex === null) {
                 // Don't do anything for the root vertex if it is already current (not previous one).
                 return;
@@ -84,7 +92,9 @@ export default function graphBridges(graph) {
                 bridges[bridge.getKey()] = bridge;
             }
         },
-        allowTraversal: ({ nextVertex }) => {
+        allowTraversal: ({
+            nextVertex
+        }) => {
             return !visitedSet[nextVertex.getKey()];
         }
     };
@@ -93,4 +103,15 @@ export default function graphBridges(graph) {
     depthFirstSearch(graph, startVertex, dfsCallbacks);
 
     return bridges;
+}
+}) => {
+    return !visitedSet[nextVertex.getKey()];
+}
+};
+
+// Do Depth First Search traversal over submitted graph.
+depthFirstSearch(graph, startVertex, dfsCallbacks);
+
+
+return bridges;
 }

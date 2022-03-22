@@ -235,7 +235,6 @@ MakerBadge.prototype = {
 
                     :
                     (i.setAttribute('style', 'visibility:visible;'), i.classList.add('isOpen'));
-
             });
 
     },

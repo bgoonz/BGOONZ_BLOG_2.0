@@ -45,15 +45,38 @@ describe('breadthFirstSearch', () => {
         expect(enterVertexCallback).toHaveBeenCalledTimes(8);
         expect(leaveVertexCallback).toHaveBeenCalledTimes(8);
 
-        const enterVertexParamsMap = [
-            { currentVertex: vertexA, previousVertex: null },
-            { currentVertex: vertexB, previousVertex: vertexA },
-            { currentVertex: vertexD, previousVertex: vertexB },
-            { currentVertex: vertexE, previousVertex: vertexD },
-            { currentVertex: vertexC, previousVertex: vertexE },
-            { currentVertex: vertexH, previousVertex: vertexC },
-            { currentVertex: vertexF, previousVertex: vertexH },
-            { currentVertex: vertexG, previousVertex: vertexF }
+        const enterVertexParamsMap = [{
+                currentVertex: vertexA,
+                previousVertex: null
+            },
+            {
+                currentVertex: vertexB,
+                previousVertex: vertexA
+            },
+            {
+                currentVertex: vertexD,
+                previousVertex: vertexB
+            },
+            {
+                currentVertex: vertexE,
+                previousVertex: vertexD
+            },
+            {
+                currentVertex: vertexC,
+                previousVertex: vertexE
+            },
+            {
+                currentVertex: vertexH,
+                previousVertex: vertexC
+            },
+            {
+                currentVertex: vertexF,
+                previousVertex: vertexH
+            },
+            {
+                currentVertex: vertexG,
+                previousVertex: vertexF
+            }
         ];
 
         for (let callIndex = 0; callIndex < graph.getAllVertices().length; callIndex += 1) {
@@ -62,15 +85,38 @@ describe('breadthFirstSearch', () => {
             expect(params.previousVertex).toEqual(enterVertexParamsMap[callIndex].previousVertex);
         }
 
-        const leaveVertexParamsMap = [
-            { currentVertex: vertexA, previousVertex: null },
-            { currentVertex: vertexB, previousVertex: vertexA },
-            { currentVertex: vertexD, previousVertex: vertexB },
-            { currentVertex: vertexE, previousVertex: vertexD },
-            { currentVertex: vertexC, previousVertex: vertexE },
-            { currentVertex: vertexH, previousVertex: vertexC },
-            { currentVertex: vertexF, previousVertex: vertexH },
-            { currentVertex: vertexG, previousVertex: vertexF }
+        const leaveVertexParamsMap = [{
+                currentVertex: vertexA,
+                previousVertex: null
+            },
+            {
+                currentVertex: vertexB,
+                previousVertex: vertexA
+            },
+            {
+                currentVertex: vertexD,
+                previousVertex: vertexB
+            },
+            {
+                currentVertex: vertexE,
+                previousVertex: vertexD
+            },
+            {
+                currentVertex: vertexC,
+                previousVertex: vertexE
+            },
+            {
+                currentVertex: vertexH,
+                previousVertex: vertexC
+            },
+            {
+                currentVertex: vertexF,
+                previousVertex: vertexH
+            },
+            {
+                currentVertex: vertexG,
+                previousVertex: vertexF
+            }
         ];
 
         for (let callIndex = 0; callIndex < graph.getAllVertices().length; callIndex += 1) {
@@ -113,7 +159,10 @@ describe('breadthFirstSearch', () => {
         breadthFirstSearch(graph, vertexA, {
             enterVertex: enterVertexCallback,
             leaveVertex: leaveVertexCallback,
-            allowTraversal: ({ currentVertex, nextVertex }) => {
+            allowTraversal: ({
+                currentVertex,
+                nextVertex
+            }) => {
                 return !(currentVertex === vertexA && nextVertex === vertexB);
             }
         });
@@ -121,14 +170,34 @@ describe('breadthFirstSearch', () => {
         expect(enterVertexCallback).toHaveBeenCalledTimes(7);
         expect(leaveVertexCallback).toHaveBeenCalledTimes(7);
 
-        const enterVertexParamsMap = [
-            { currentVertex: vertexA, previousVertex: null },
-            { currentVertex: vertexD, previousVertex: vertexA },
-            { currentVertex: vertexE, previousVertex: vertexD },
-            { currentVertex: vertexH, previousVertex: vertexE },
-            { currentVertex: vertexF, previousVertex: vertexH },
-            { currentVertex: vertexD, previousVertex: vertexF },
-            { currentVertex: vertexH, previousVertex: vertexD }
+        const enterVertexParamsMap = [{
+                currentVertex: vertexA,
+                previousVertex: null
+            },
+            {
+                currentVertex: vertexD,
+                previousVertex: vertexA
+            },
+            {
+                currentVertex: vertexE,
+                previousVertex: vertexD
+            },
+            {
+                currentVertex: vertexH,
+                previousVertex: vertexE
+            },
+            {
+                currentVertex: vertexF,
+                previousVertex: vertexH
+            },
+            {
+                currentVertex: vertexD,
+                previousVertex: vertexF
+            },
+            {
+                currentVertex: vertexH,
+                previousVertex: vertexD
+            }
         ];
 
         for (let callIndex = 0; callIndex < 7; callIndex += 1) {
@@ -137,14 +206,34 @@ describe('breadthFirstSearch', () => {
             expect(params.previousVertex).toEqual(enterVertexParamsMap[callIndex].previousVertex);
         }
 
-        const leaveVertexParamsMap = [
-            { currentVertex: vertexA, previousVertex: null },
-            { currentVertex: vertexD, previousVertex: vertexA },
-            { currentVertex: vertexE, previousVertex: vertexD },
-            { currentVertex: vertexH, previousVertex: vertexE },
-            { currentVertex: vertexF, previousVertex: vertexH },
-            { currentVertex: vertexD, previousVertex: vertexF },
-            { currentVertex: vertexH, previousVertex: vertexD }
+        const leaveVertexParamsMap = [{
+                currentVertex: vertexA,
+                previousVertex: null
+            },
+            {
+                currentVertex: vertexD,
+                previousVertex: vertexA
+            },
+            {
+                currentVertex: vertexE,
+                previousVertex: vertexD
+            },
+            {
+                currentVertex: vertexH,
+                previousVertex: vertexE
+            },
+            {
+                currentVertex: vertexF,
+                previousVertex: vertexH
+            },
+            {
+                currentVertex: vertexD,
+                previousVertex: vertexF
+            },
+            {
+                currentVertex: vertexH,
+                previousVertex: vertexD
+            }
         ];
 
         for (let callIndex = 0; callIndex < 7; callIndex += 1) {
@@ -153,4 +242,94 @@ describe('breadthFirstSearch', () => {
             expect(params.previousVertex).toEqual(leaveVertexParamsMap[callIndex].previousVertex);
         }
     });
+});
+
+// Traverse graph with enterVertex and leaveVertex callbacks.
+breadthFirstSearch(graph, vertexA, {
+    enterVertex: enterVertexCallback,
+    leaveVertex: leaveVertexCallback,
+    allowTraversal: ({
+        currentVertex,
+        nextVertex
+    }) => {
+        return !(currentVertex === vertexA && nextVertex === vertexB);
+    }
+});
+
+expect(enterVertexCallback).toHaveBeenCalledTimes(7);
+expect(leaveVertexCallback).toHaveBeenCalledTimes(7);
+
+const enterVertexParamsMap = [{
+        currentVertex: vertexA,
+        previousVertex: null
+    },
+    {
+        currentVertex: vertexD,
+        previousVertex: vertexA
+    },
+    {
+        currentVertex: vertexE,
+        previousVertex: vertexD
+    },
+    {
+        currentVertex: vertexH,
+        previousVertex: vertexE
+    },
+    {
+        currentVertex: vertexF,
+        previousVertex: vertexH
+    },
+    {
+        currentVertex: vertexD,
+        previousVertex: vertexF
+    },
+    {
+        currentVertex: vertexH,
+        previousVertex: vertexD
+    }
+];
+
+for (let callIndex = 0; callIndex < 7; callIndex += 1) {
+    const params = enterVertexCallback.mock.calls[callIndex][0];
+    expect(params.currentVertex).toEqual(enterVertexParamsMap[callIndex].currentVertex);
+    expect(params.previousVertex).toEqual(enterVertexParamsMap[callIndex].previousVertex);
+}
+
+const leaveVertexParamsMap = [{
+        currentVertex: vertexA,
+        previousVertex: null
+    },
+    {
+        currentVertex: vertexD,
+        previousVertex: vertexA
+    },
+    {
+        currentVertex: vertexE,
+        previousVertex: vertexD
+    },
+    {
+        currentVertex: vertexH,
+        previousVertex: vertexE
+    },
+    {
+        currentVertex: vertexF,
+        previousVertex: vertexH
+    },
+    {
+        currentVertex: vertexD,
+        previousVertex: vertexF
+    },
+    {
+        currentVertex: vertexH,
+        previousVertex: vertexD
+    }
+];
+
+for (let callIndex = 0; callIndex < 7; callIndex += 1) {
+    const params = leaveVertexCallback.mock.calls[callIndex][0];
+    expect(params.currentVertex).toEqual(leaveVertexParamsMap[callIndex].currentVertex);
+    expect(params.previousVertex).toEqual(leaveVertexParamsMap[callIndex].previousVertex);
+}
+
+});
 });

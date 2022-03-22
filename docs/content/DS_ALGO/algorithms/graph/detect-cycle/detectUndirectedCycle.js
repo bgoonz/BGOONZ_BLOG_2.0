@@ -16,7 +16,10 @@ export default function detectUndirectedCycle(graph) {
 
     // Callbacks for DFS traversing.
     const callbacks = {
-        allowTraversal: ({ currentVertex, nextVertex }) => {
+        allowTraversal: ({
+            currentVertex,
+            nextVertex
+        }) => {
             // Don't allow further traversal in case if cycle has been detected.
             if (cycle) {
                 return false;
@@ -28,7 +31,10 @@ export default function detectUndirectedCycle(graph) {
 
             return currentVertexParentKey !== nextVertex.getKey();
         },
-        enterVertex: ({ currentVertex, previousVertex }) => {
+        enterVertex: ({
+            currentVertex,
+            previousVertex
+        }) => {
             if (visitedVertices[currentVertex.getKey()]) {
                 // Compile cycle path based on parents of previous vertices.
                 cycle = {};
@@ -56,4 +62,9 @@ export default function detectUndirectedCycle(graph) {
     depthFirstSearch(graph, startVertex, callbacks);
 
     return cycle;
+} // Start DFS traversing.
+const startVertex = graph.getAllVertices()[0];
+depthFirstSearch(graph, startVertex, callbacks);
+
+return cycle;
 }

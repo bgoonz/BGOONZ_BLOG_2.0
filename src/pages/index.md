@@ -42,9 +42,9 @@ sections:
         image_alt: python
         title: Python Guide
         title_url: 'https://bgoonz-blog.netlify.app/docs/python/python-ds'
-        image: images/smiling-maple.png
+        image: images/python.png
       - content: |
-          <div id="search"></div> <div id="search" />
+          <div id="search"></div>
         actions:
           - label: Learn More
             url: /docs/tools
