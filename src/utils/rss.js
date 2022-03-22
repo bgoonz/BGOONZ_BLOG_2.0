@@ -11,27 +11,32 @@ module.exports = {
       }
     }
   }`,
-    setup: ({ query }) => query.site.meta,
-    feeds: [
-        {
-            serialize: ({ query }) => {
-                const { url } = query.site.meta;
-                return query.posts.nodes.map((post) => {
-                    const { slug } = post.frontmatter;
-                    return {
-                        ...post.frontmatter,
-                        description: post.excerpt,
-                        url: url + slug,
-                        guid: url + slug,
-                        custom_elements: [
-                            {
-                                'content:encoded': post.html
-                            }
-                        ]
-                    };
-                });
-            },
-            query: `{
+    setup: ({
+        query
+    }) => query.site.meta,
+    feeds: [{
+        serialize: ({
+            query
+        }) => {
+            const {
+                url
+            } = query.site.meta;
+            return query.posts.nodes.map((post) => {
+                const {
+                    slug
+                } = post.frontmatter;
+                return {
+                    ...post.frontmatter,
+                    description: post.excerpt,
+                    url: url + slug,
+                    guid: url + slug,
+                    custom_elements: [{
+                        'content:encoded': post.html
+                    }]
+                };
+            });
+        },
+        query: `{
         posts: allMdx(
           filter: { fileAbsolutePath: { regex: "/posts/" } }
           sort: { fields: frontmatter___date, order: DESC }
@@ -40,15 +45,13 @@ module.exports = {
             frontmatter {
               title
               slug
-              date(formatString: "MMM D, YYYY")
-            }
+              date(formatString: "MMM D, YYYY") }
             timeToRead
             excerpt(pruneLength: 300)
             html
           }
         }
       }`,
-            output: `/rss.xml`
-        }
-    ]
+        output: `/rss.xml`
+    }]
 };

@@ -72,5 +72,12 @@ export default function floydWarshall(graph) {
 
     // Shortest distance from x to y: distance[x][y].
     // Next vertex after x one in path from x to y: nextVertices[x][y].
-    return { distances, nextVertices };
+    return {
+        distances,
+        nextVertices
+    };
+}
+nextVertices
+};
+}
 }

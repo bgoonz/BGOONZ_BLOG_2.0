@@ -134,7 +134,10 @@ export default class LinkedList {
      * @param {function} [findParams.callback]
      * @return {LinkedListNode}
      */
-    find({ value = undefined, callback = undefined }) {
+    find({
+        value = undefined,
+        callback = undefined
+    }) {
         if (!this.head) {
             return null;
         }
@@ -179,96 +182,101 @@ export default class LinkedList {
         while (currentNode.next) {
             if (!currentNode.next.next) {
                 currentNode.next = null;
-            } else {
-                currentNode = currentNode.next;
-            }
-        }
-
-        this.tail = currentNode;
-
-        return deletedTail;
-    }
-
-    /**
-     * @return {LinkedListNode}
-     */
-    deleteHead() {
-        if (!this.head) {
-            return null;
-        }
-
-        const deletedHead = this.head;
-
-        if (this.head.next) {
-            this.head = this.head.next;
-        } else {
-            this.head = null;
-            this.tail = null;
-        }
-
-        return deletedHead;
-    }
-
-    /**
-     * @param {*[]} values - Array of values that need to be converted to linked list.
-     * @return {LinkedList}
-     */
-    fromArray(values) {
-        values.forEach((value) => this.append(value));
-
-        return this;
-    }
-
-    /**
-     * @return {LinkedListNode[]}
-     */
-    toArray() {
-        const nodes = [];
-
-        let currentNode = this.head;
-        while (currentNode) {
-            nodes.push(currentNode);
+            } else {}
             currentNode = currentNode.next;
         }
-
-        return nodes;
     }
 
-    /**
-     * @param {function} [callback]
-     * @return {string}
-     */
-    toString(callback) {
-        return this.toArray()
-            .map((node) => node.toString(callback))
-            .toString();
+    this.tail = currentNode;
+
+    return deletedTail;
+}
+
+/**
+ * @return {LinkedListNode}
+ */
+deleteHead() {
+    if (!this.head) {
+        return null;
     }
 
-    /**
-     * Reverse a linked list.
-     * @returns {LinkedList}
-     */
-    reverse() {
-        let currNode = this.head;
-        let prevNode = null;
-        let nextNode = null;
+    const deletedHead = this.head;
 
-        while (currNode) {
-            // Store next node.
-            nextNode = currNode.next;
-
-            // Change next node of the current node so it would link to previous node.
-            currNode.next = prevNode;
-
-            // Move prevNode and currNode nodes one step forward.
-            prevNode = currNode;
-            currNode = nextNode;
-        }
-
-        // Reset head and tail.
-        this.tail = this.head;
-        this.head = prevNode;
-
-        return this;
+    if (this.head.next) {
+        this.head = this.head.next;
+    } else {
+        this.head = null;
+        this.tail = null;
     }
+
+    return deletedHead;
+}
+
+/**
+ * @param {*[]} values - Array of values that need to be converted to linked list.
+ * @return {LinkedList}
+ */
+fromArray(values) {
+    values.forEach((value) => this.append(value));
+
+    return this;
+}
+
+/**
+ * @return {LinkedListNode[]}
+ */
+toArray() {
+    const nodes = [];
+
+    let currentNode = this.head;
+    while (currentNode) {
+        nodes.push(currentNode);
+        currentNode = currentNode.next;
+    }
+
+    return nodes;
+}
+
+/**
+ * @param {function} [callback]
+ * @return {string}
+ */
+toString(callback) {
+    return this.toArray()
+        .map((node) => node.toString(callback))
+        .toString();
+}
+
+/**
+ * Reverse a linked list.
+ * @returns {LinkedList}
+ */
+reverse() {
+    let currNode = this.head;
+    let prevNode = null;
+    let nextNode = null;
+
+    while (currNode) {
+        // Store next node.
+        nextNode = currNode.next;
+
+        // Change next node of the current node so it would link to previous node.
+        currNode.next = prevNode;
+
+        // Move prevNode and currNode nodes one step forward.
+        prevNode = currNode;
+        currNode = nextNode;
+    }
+
+    // Reset head and tail.
+    this.tail = this.head;
+    this.head = prevNode;
+
+    return this;
+}
+}
+
+return this;
+}
+
 }

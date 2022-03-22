@@ -53,12 +53,16 @@ class GraphUnweightedUndirectedAdjacencyList {
     }
 }
 
-export { GraphUnweightedUndirectedAdjacencyList };
+export {
+    GraphUnweightedUndirectedAdjacencyList
+};
 
 // Example
 
 // const graph = new GraphUnweightedUndirectedAdjacencyList()
 // graph.addEdge(1, 2) // Component 1
 // graph.addEdge(3, 4) // Component 2
+// graph.addEdge(3, 5) // Component 2
+// const components = graph.connectedComponents()
 // graph.addEdge(3, 5) // Component 2
 // const components = graph.connectedComponents()

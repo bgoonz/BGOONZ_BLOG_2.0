@@ -5,14 +5,14 @@ export function TopologicalSorter() {
     let finishingTimeList;
     let nextNode;
 
-    this.addOrder = function (nodeA, nodeB) {
+    this.addOrder = function(nodeA, nodeB) {
         nodeA = String(nodeA);
         nodeB = String(nodeB);
         graph[nodeA] = graph[nodeA] || [];
         graph[nodeA].push(nodeB);
     };
 
-    this.sortAndGetOrderedItems = function () {
+    this.sortAndGetOrderedItems = function() {
         isVisitedNode = Object.create(null);
         finishTimeCount = 0;
         finishingTimeList = [];
@@ -23,11 +23,11 @@ export function TopologicalSorter() {
             }
         }
 
-        finishingTimeList.sort(function (item1, item2) {
+        finishingTimeList.sort(function(item1, item2) {
             return item1.finishTime > item2.finishTime ? -1 : 1;
         });
 
-        return finishingTimeList.map(function (value) {
+        return finishingTimeList.map(function(value) {
             return value.node;
         });
     };

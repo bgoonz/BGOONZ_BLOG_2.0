@@ -147,177 +147,177 @@ export default class RedBlackTree extends BinarySearchTree {
         if (grandGrandParent) {
             if (grandParentNodeIsLeft) {
                 grandGrandParent.setLeft(parentNode);
-            } else {
-                grandGrandParent.setRight(parentNode);
-            }
-        } else {
-            // Make parent node a root
-            parentNode.parent = null;
+            } else {}
+            grandGrandParent.setRight(parentNode);
         }
-
-        // Swap colors of grandParentNode and parentNode.
-        this.swapNodeColors(parentNode, grandParentNode);
-
-        // Return new root node.
-        return parentNode;
+    } else {
+        // Make parent node a root
+        parentNode.parent = null;
     }
 
-    /**
-     * Left Right Case (p is left child of g and x is right child of p)
-     * @param {BinarySearchTreeNode|BinaryTreeNode} grandParentNode
-     * @return {BinarySearchTreeNode}
-     */
-    leftRightRotation(grandParentNode) {
-        // Memorize left and left-right nodes.
-        const parentNode = grandParentNode.left;
-        const childNode = parentNode.right;
+    // Swap colors of grandParentNode and parentNode.
+    this.swapNodeColors(parentNode, grandParentNode);
 
-        // We need to memorize child left node to prevent losing
-        // left child subtree. Later it will be re-assigned to
-        // parent's right sub-tree.
-        const childLeftNode = childNode.left;
+    // Return new root node.
+    return parentNode;
+}
 
-        // Make parentNode to be a left child of childNode node.
-        childNode.setLeft(parentNode);
+/**
+ * Left Right Case (p is left child of g and x is right child of p)
+ * @param {BinarySearchTreeNode|BinaryTreeNode} grandParentNode
+ * @return {BinarySearchTreeNode}
+ */
+leftRightRotation(grandParentNode) {
+    // Memorize left and left-right nodes.
+    const parentNode = grandParentNode.left;
+    const childNode = parentNode.right;
 
-        // Move child's left subtree to parent's right subtree.
-        parentNode.setRight(childLeftNode);
+    // We need to memorize child left node to prevent losing
+    // left child subtree. Later it will be re-assigned to
+    // parent's right sub-tree.
+    const childLeftNode = childNode.left;
 
-        // Put left-right node in place of left node.
-        grandParentNode.setLeft(childNode);
+    // Make parentNode to be a left child of childNode node.
+    childNode.setLeft(parentNode);
 
-        // Now we're ready to do left-left rotation.
-        return this.leftLeftRotation(grandParentNode);
+    // Move child's left subtree to parent's right subtree.
+    parentNode.setRight(childLeftNode);
+
+    // Put left-right node in place of left node.
+    grandParentNode.setLeft(childNode);
+
+    // Now we're ready to do left-left rotation.
+    return this.leftLeftRotation(grandParentNode);
+}
+
+/**
+ * Right Right Case (p is right child of g and x is right child of p)
+ * @param {BinarySearchTreeNode|BinaryTreeNode} grandParentNode
+ * @return {BinarySearchTreeNode}
+ */
+rightRightRotation(grandParentNode) {
+    // Memorize the parent of grand-parent node.
+    const grandGrandParent = grandParentNode.parent;
+
+    // Check what type of sibling is our grandParentNode is (left or right).
+    let grandParentNodeIsLeft;
+    if (grandGrandParent) {
+        grandParentNodeIsLeft = this.nodeComparator.equal(grandGrandParent.left, grandParentNode);
     }
 
-    /**
-     * Right Right Case (p is right child of g and x is right child of p)
-     * @param {BinarySearchTreeNode|BinaryTreeNode} grandParentNode
-     * @return {BinarySearchTreeNode}
-     */
-    rightRightRotation(grandParentNode) {
-        // Memorize the parent of grand-parent node.
-        const grandGrandParent = grandParentNode.parent;
+    // Memorize grandParentNode's right node.
+    const parentNode = grandParentNode.right;
 
-        // Check what type of sibling is our grandParentNode is (left or right).
-        let grandParentNodeIsLeft;
-        if (grandGrandParent) {
-            grandParentNodeIsLeft = this.nodeComparator.equal(grandGrandParent.left, grandParentNode);
-        }
+    // Memorize parent's left node since we're going to transfer it to
+    // grand parent's right subtree.
+    const parentLeftNode = parentNode.left;
 
-        // Memorize grandParentNode's right node.
-        const parentNode = grandParentNode.right;
+    // Make grandParentNode to be left child of parentNode.
+    parentNode.setLeft(grandParentNode);
 
-        // Memorize parent's left node since we're going to transfer it to
-        // grand parent's right subtree.
-        const parentLeftNode = parentNode.left;
+    // Transfer all left nodes from parent to right sub-tree of grandparent.
+    grandParentNode.setRight(parentLeftNode);
 
-        // Make grandParentNode to be left child of parentNode.
-        parentNode.setLeft(grandParentNode);
-
-        // Transfer all left nodes from parent to right sub-tree of grandparent.
-        grandParentNode.setRight(parentLeftNode);
-
-        // Put parentNode node in place of grandParentNode.
-        if (grandGrandParent) {
-            if (grandParentNodeIsLeft) {
-                grandGrandParent.setLeft(parentNode);
-            } else {
-                grandGrandParent.setRight(parentNode);
-            }
-        } else {
-            // Make parent node a root.
-            parentNode.parent = null;
-        }
-
-        // Swap colors of granParent and parent nodes.
-        this.swapNodeColors(parentNode, grandParentNode);
-
-        // Return new root node.
-        return parentNode;
+    // Put parentNode node in place of grandParentNode.
+    if (grandGrandParent) {
+        if (grandParentNodeIsLeft) {
+            grandGrandParent.setLeft(parentNode);
+        } else {}
+        grandGrandParent.setRight(parentNode);
     }
+} else {
+    // Make parent node a root.
+    parentNode.parent = null;
+}
 
-    /**
-     * Right Left Case (p is right child of g and x is left child of p)
-     * @param {BinarySearchTreeNode|BinaryTreeNode} grandParentNode
-     * @return {BinarySearchTreeNode}
-     */
-    rightLeftRotation(grandParentNode) {
-        // Memorize right and right-left nodes.
-        const parentNode = grandParentNode.right;
-        const childNode = parentNode.left;
+// Swap colors of granParent and parent nodes.
+this.swapNodeColors(parentNode, grandParentNode);
 
-        // We need to memorize child right node to prevent losing
-        // right child subtree. Later it will be re-assigned to
-        // parent's left sub-tree.
-        const childRightNode = childNode.right;
+// Return new root node.
+return parentNode;
+}
 
-        // Make parentNode to be a right child of childNode.
-        childNode.setRight(parentNode);
+/**
+ * Right Left Case (p is right child of g and x is left child of p)
+ * @param {BinarySearchTreeNode|BinaryTreeNode} grandParentNode
+ * @return {BinarySearchTreeNode}
+ */
+rightLeftRotation(grandParentNode) {
+    // Memorize right and right-left nodes.
+    const parentNode = grandParentNode.right;
+    const childNode = parentNode.left;
 
-        // Move child's right subtree to parent's left subtree.
-        parentNode.setLeft(childRightNode);
+    // We need to memorize child right node to prevent losing
+    // right child subtree. Later it will be re-assigned to
+    // parent's left sub-tree.
+    const childRightNode = childNode.right;
 
-        // Put childNode node in place of parentNode.
-        grandParentNode.setRight(childNode);
+    // Make parentNode to be a right child of childNode.
+    childNode.setRight(parentNode);
 
-        // Now we're ready to do right-right rotation.
-        return this.rightRightRotation(grandParentNode);
-    }
+    // Move child's right subtree to parent's left subtree.
+    parentNode.setLeft(childRightNode);
 
-    /**
-     * @param {BinarySearchTreeNode|BinaryTreeNode} node
-     * @return {BinarySearchTreeNode}
-     */
-    makeNodeRed(node) {
-        node.meta.set(COLOR_PROP_NAME, RED_BLACK_TREE_COLORS.red);
+    // Put childNode node in place of parentNode.
+    grandParentNode.setRight(childNode);
 
-        return node;
-    }
+    // Now we're ready to do right-right rotation.
+    return this.rightRightRotation(grandParentNode);
+}
 
-    /**
-     * @param {BinarySearchTreeNode|BinaryTreeNode} node
-     * @return {BinarySearchTreeNode}
-     */
-    makeNodeBlack(node) {
-        node.meta.set(COLOR_PROP_NAME, RED_BLACK_TREE_COLORS.black);
+/**
+ * @param {BinarySearchTreeNode|BinaryTreeNode} node
+ * @return {BinarySearchTreeNode}
+ */
+makeNodeRed(node) {
+    node.meta.set(COLOR_PROP_NAME, RED_BLACK_TREE_COLORS.red);
 
-        return node;
-    }
+    return node;
+}
 
-    /**
-     * @param {BinarySearchTreeNode|BinaryTreeNode} node
-     * @return {boolean}
-     */
-    isNodeRed(node) {
-        return node.meta.get(COLOR_PROP_NAME) === RED_BLACK_TREE_COLORS.red;
-    }
+/**
+ * @param {BinarySearchTreeNode|BinaryTreeNode} node
+ * @return {BinarySearchTreeNode}
+ */
+makeNodeBlack(node) {
+    node.meta.set(COLOR_PROP_NAME, RED_BLACK_TREE_COLORS.black);
 
-    /**
-     * @param {BinarySearchTreeNode|BinaryTreeNode} node
-     * @return {boolean}
-     */
-    isNodeBlack(node) {
-        return node.meta.get(COLOR_PROP_NAME) === RED_BLACK_TREE_COLORS.black;
-    }
+    return node;
+}
 
-    /**
-     * @param {BinarySearchTreeNode|BinaryTreeNode} node
-     * @return {boolean}
-     */
-    isNodeColored(node) {
-        return this.isNodeRed(node) || this.isNodeBlack(node);
-    }
+/**
+ * @param {BinarySearchTreeNode|BinaryTreeNode} node
+ * @return {boolean}
+ */
+isNodeRed(node) {
+    return node.meta.get(COLOR_PROP_NAME) === RED_BLACK_TREE_COLORS.red;
+}
 
-    /**
-     * @param {BinarySearchTreeNode|BinaryTreeNode} firstNode
-     * @param {BinarySearchTreeNode|BinaryTreeNode} secondNode
-     */
-    swapNodeColors(firstNode, secondNode) {
-        const firstColor = firstNode.meta.get(COLOR_PROP_NAME);
-        const secondColor = secondNode.meta.get(COLOR_PROP_NAME);
+/**
+ * @param {BinarySearchTreeNode|BinaryTreeNode} node
+ * @return {boolean}
+ */
+isNodeBlack(node) {
+    return node.meta.get(COLOR_PROP_NAME) === RED_BLACK_TREE_COLORS.black;
+}
 
-        firstNode.meta.set(COLOR_PROP_NAME, secondColor);
-        secondNode.meta.set(COLOR_PROP_NAME, firstColor);
-    }
+/**
+ * @param {BinarySearchTreeNode|BinaryTreeNode} node
+ * @return {boolean}
+ */
+isNodeColored(node) {
+    return this.isNodeRed(node) || this.isNodeBlack(node);
+}
+
+/**
+ * @param {BinarySearchTreeNode|BinaryTreeNode} firstNode
+ * @param {BinarySearchTreeNode|BinaryTreeNode} secondNode
+ */
+swapNodeColors(firstNode, secondNode) {
+    const firstColor = firstNode.meta.get(COLOR_PROP_NAME);
+    const secondColor = secondNode.meta.get(COLOR_PROP_NAME);
+
+    firstNode.meta.set(COLOR_PROP_NAME, secondColor);
+    secondNode.meta.set(COLOR_PROP_NAME, firstColor);
+}
 }

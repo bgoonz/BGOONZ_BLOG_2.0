@@ -53,7 +53,13 @@ function isCycle(adjacencyMatrix, verticesIndices, cycle) {
  * @param {GraphVertex[][]} cycles
  * @param {GraphVertex[]} cycle
  */
-function hamiltonianCycleRecursive({ adjacencyMatrix, vertices, verticesIndices, cycles, cycle }) {
+function hamiltonianCycleRecursive({
+    adjacencyMatrix,
+    vertices,
+    verticesIndices,
+    cycles,
+    cycle
+}) {
     // Clone cycle in order to prevent it from modification by other DFS branches.
     const currentCycle = [...cycle].map((vertex) => new GraphVertex(vertex.value));
 
@@ -125,4 +131,10 @@ export default function hamiltonianCycle(graph) {
 
     // Return found cycles.
     return cycles;
+}
+cycle
+});
+
+// Return found cycles.
+return cycles;
 }

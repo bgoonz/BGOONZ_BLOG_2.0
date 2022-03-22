@@ -117,7 +117,7 @@ There are two sub-folders:
 
 ---
 
-![zzumzi](https://github.com/bgoonz/zumzi-chat-messenger/blob/master/zumzi.PNG?raw=true)
+![zzumzi](https://github.com/bgoonz/zumzi-chat-messenger/blob/master/zumzi.png?raw=true)
 
 ```
 [.](.)<br>
@@ -214,7 +214,7 @@ There are two sub-folders:
 │ └── [./web/vendor](./web/vendor)
 │ ├── [./web/vendor/bootstrap.min.css](./web/vendor/bootstrap.min.css)
 │ └── [./web/vendor/bootstrap.min.js](./web/vendor/bootstrap.min.js)<br>
-└── [./zumzi-video-chat.PNG](./zumzi-video-chat.PNG)<br>
+└── [./zumzi-video-chat.png](./zumzi-video-chat.png)<br>
 ```
 
 ## Messenger

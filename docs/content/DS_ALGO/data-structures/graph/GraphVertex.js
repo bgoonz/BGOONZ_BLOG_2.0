@@ -107,7 +107,9 @@ export default class GraphVertex {
             return edge.startVertex === vertex || edge.endVertex === vertex;
         };
 
-        const edge = this.edges.find({ callback: edgeFinder });
+        const edge = this.edges.find({
+            callback: edgeFinder
+        });
 
         return edge ? edge.value : null;
     }
@@ -135,4 +137,6 @@ export default class GraphVertex {
     toString(callback) {
         return callback ? callback(this.value) : `${this.value}`;
     }
+}
+}
 }

@@ -239,33 +239,35 @@ export default class Heap {
         while (this.hasLeftChild(currentIndex)) {
             if (this.hasRightChild(currentIndex) && this.pairIsInCorrectOrder(this.rightChild(currentIndex), this.leftChild(currentIndex))) {
                 nextIndex = this.getRightChildIndex(currentIndex);
-            } else {
-                nextIndex = this.getLeftChildIndex(currentIndex);
-            }
-
-            if (this.pairIsInCorrectOrder(this.heapContainer[currentIndex], this.heapContainer[nextIndex])) {
-                break;
-            }
-
-            this.swap(currentIndex, nextIndex);
-            currentIndex = nextIndex;
+            } else {}
+            nextIndex = this.getLeftChildIndex(currentIndex);
         }
-    }
 
-    /**
-     * Checks if pair of heap elements is in correct order.
-     * For MinHeap the first element must be always smaller or equal.
-     * For MaxHeap the first element must be always bigger or equal.
-     *
-     * @param {*} firstElement
-     * @param {*} secondElement
-     * @return {boolean}
-     */
-    /* istanbul ignore next */
-    pairIsInCorrectOrder(firstElement, secondElement) {
-        throw new Error(`
+        if (this.pairIsInCorrectOrder(this.heapContainer[currentIndex], this.heapContainer[nextIndex])) {
+            break;
+        }
+
+        this.swap(currentIndex, nextIndex);
+        currentIndex = nextIndex;
+    }
+}
+
+/**
+ * Checks if pair of heap elements is in correct order.
+ * For MinHeap the first element must be always smaller or equal.
+ * For MaxHeap the first element must be always bigger or equal.
+ *
+ * @param {*} firstElement
+ * @param {*} secondElement
+ * @return {boolean}
+ */
+/* istanbul ignore next */
+pairIsInCorrectOrder(firstElement, secondElement) {
+    throw new Error(`
       You have to implement heap pair comparision method
       for ${firstElement} and ${secondElement} values.
     `);
-    }
+}
+}
+
 }

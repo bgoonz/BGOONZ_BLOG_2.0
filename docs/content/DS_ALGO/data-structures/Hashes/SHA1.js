@@ -69,11 +69,11 @@ function preProcess(message) {
     // 8 bits, and add 1
     let m =
         message
-            .split('')
-            .map((e) => e.charCodeAt(0))
-            .map((e) => e.toString(2))
-            .map((e) => pad(e, 8))
-            .join('') + '1';
+        .split('')
+        .map((e) => e.charCodeAt(0))
+        .map((e) => e.toString(2))
+        .map((e) => pad(e, 8))
+        .join('') + '1';
 
     // extend message by adding empty bits (0)
     while (m.length % 512 !== 448) {
@@ -107,7 +107,7 @@ function SHA1(message) {
     const bits = preProcess(message);
     const chunks = chunkify(bits, 512);
 
-    chunks.forEach(function (chunk, i) {
+    chunks.forEach(function(chunk, i) {
         // break each chunk into 16 32-bit words
         const words = chunkify(chunk, 32);
 
@@ -171,4 +171,11 @@ function SHA1(message) {
 }
 
 // export SHA1 function
-export { SHA1 };
+export {
+    SHA1
+};
+
+
+SH
+A1
+};

@@ -51,7 +51,10 @@ export default function fastFourierTransform(inputData, inverse = false) {
         });
 
         for (let blockStart = 0; blockStart < N; blockStart += blockLength) {
-            let phase = new ComplexNumber({ re: 1, im: 0 });
+            let phase = new ComplexNumber({
+                re: 1,
+                im: 0
+            });
 
             for (let signalId = blockStart; signalId < blockStart + blockLength / 2; signalId += 1) {
                 const component = output[signalId + blockLength / 2].multiply(phase);
@@ -74,4 +77,7 @@ export default function fastFourierTransform(inputData, inverse = false) {
     }
 
     return output;
+}
+
+return output;
 }

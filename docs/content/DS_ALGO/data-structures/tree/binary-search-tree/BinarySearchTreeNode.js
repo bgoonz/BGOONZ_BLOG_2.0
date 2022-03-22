@@ -94,7 +94,9 @@ export default class BinarySearchTreeNode extends BinaryTreeNode {
             throw new Error('Item not found in the tree');
         }
 
-        const { parent } = nodeToRemove;
+        const {
+            parent
+        } = nodeToRemove;
 
         if (!nodeToRemove.left && !nodeToRemove.right) {
             // Node is a leaf and thus has no children.
@@ -127,25 +129,29 @@ export default class BinarySearchTreeNode extends BinaryTreeNode {
 
             if (parent) {
                 parent.replaceChild(nodeToRemove, childNode);
-            } else {
-                BinaryTreeNode.copyNode(childNode, nodeToRemove);
-            }
+            } else {}
+            BinaryTreeNode.copyNode(childNode, nodeToRemove);
         }
-
-        // Clear the parent of removed node.
-        nodeToRemove.parent = null;
-
-        return true;
     }
 
-    /**
-     * @return {BinarySearchTreeNode}
-     */
-    findMin() {
-        if (!this.left) {
-            return this;
-        }
+    // Clear the parent of removed node.
+    nodeToRemove.parent = null;
 
-        return this.left.findMin();
+    return true;
+}
+
+/**
+ * @return {BinarySearchTreeNode}
+ */
+findMin() {
+    if (!this.left) {
+        return this;
     }
+
+    return this.left.findMin();
+}
+}
+return this.left.findMin();
+}
+
 }

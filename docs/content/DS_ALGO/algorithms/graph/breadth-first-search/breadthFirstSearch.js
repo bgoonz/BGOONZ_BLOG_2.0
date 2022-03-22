@@ -23,7 +23,9 @@ function initCallbacks(callbacks = {}) {
 
     const allowTraversalCallback = (() => {
         const seen = {};
-        return ({ nextVertex }) => {
+        return ({
+            nextVertex
+        }) => {
             if (!seen[nextVertex.getKey()]) {
                 seen[nextVertex.getKey()] = true;
                 return true;
@@ -56,18 +58,43 @@ export default function breadthFirstSearch(graph, startVertex, originalCallbacks
     // Traverse all vertices from the queue.
     while (!vertexQueue.isEmpty()) {
         const currentVertex = vertexQueue.dequeue();
-        callbacks.enterVertex({ currentVertex, previousVertex });
+        callbacks.enterVertex({
+            currentVertex,
+            previousVertex
+        });
 
         // Add all neighbors to the queue for future traversals.
         graph.getNeighbors(currentVertex).forEach((nextVertex) => {
-            if (callbacks.allowTraversal({ previousVertex, currentVertex, nextVertex })) {
+            if (callbacks.allowTraversal({
+                    previousVertex,
+                    currentVertex,
+                    nextVertex
+                })) {
                 vertexQueue.enqueue(nextVertex);
             }
         });
 
-        callbacks.leaveVertex({ currentVertex, previousVertex });
+        callbacks.leaveVertex({
+            currentVertex,
+            previousVertex
+        });
 
         // Memorize current vertex before next loop.
         previousVertex = currentVertex;
     }
+}
+}
+});
+
+callbacks.leaveVertex({
+    currentVertex,
+    previousVertex
+});
+
+// Memorize current vertex before next loop.
+previousVertex = currentVertex;
+
+
+
+}
 }

@@ -126,7 +126,10 @@ export default class DoublyLinkedList {
      * @param {function} [findParams.callback]
      * @return {DoublyLinkedListNode}
      */
-    find({ value = undefined, callback = undefined }) {
+    find({
+        value = undefined,
+        callback = undefined
+    }) {
         if (!this.head) {
             return null;
         }
@@ -262,4 +265,7 @@ export default class DoublyLinkedList {
 
         return this;
     }
+}
+return this;
+}
 }

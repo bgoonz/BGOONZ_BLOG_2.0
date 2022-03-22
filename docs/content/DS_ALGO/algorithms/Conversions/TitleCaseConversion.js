@@ -46,4 +46,8 @@ const titleCaseConversion = (inputString) => {
     return stringCollections.join(' ');
 };
 
-export { titleCaseConversion };
+export {
+    titleCaseConversion
+};
+titleCaseConversion
+};

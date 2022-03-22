@@ -29,22 +29,21 @@ export function quickSelectSearch(array, k) {
                 array[left] = array[right];
                 array[right] = tmp;
                 --right;
-            } else {
-                ++left;
-            }
-        }
-
-        if (array[left] > pivot) {
-            --left;
-        }
-
-        if (k <= left) {
-            to = left;
-        } else {
-            from = left + 1;
+            } else {}++left;
         }
     }
-    return array;
+
+    if (array[left] > pivot) {
+        --left;
+    }
+
+    if (k <= left) {
+        to = left;
+    } else {
+        from = left + 1;
+    }
+}
+return array;
 }
 
 /* ---------------------------------- Test ---------------------------------- */

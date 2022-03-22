@@ -4,7 +4,10 @@ import depthFirstSearch from '../depth-first-search/depthFirstSearch';
  * Helper class for visited vertex metadata.
  */
 class VisitMetadata {
-    constructor({ discoveryTime, lowDiscoveryTime }) {
+    constructor({
+        discoveryTime,
+        lowDiscoveryTime
+    }) {
         this.discoveryTime = discoveryTime;
         this.lowDiscoveryTime = lowDiscoveryTime;
         // We need this in order to check graph root node, whether it has two
@@ -37,7 +40,10 @@ export default function articulationPoints(graph) {
          * @param {GraphVertex} currentVertex
          * @param {GraphVertex} previousVertex
          */
-        enterVertex: ({ currentVertex, previousVertex }) => {
+        enterVertex: ({
+            currentVertex,
+            previousVertex
+        }) => {
             // Tick discovery time.
             discoveryTime += 1;
 
@@ -56,7 +62,10 @@ export default function articulationPoints(graph) {
          * @param {GraphVertex} currentVertex
          * @param {GraphVertex} previousVertex
          */
-        leaveVertex: ({ currentVertex, previousVertex }) => {
+        leaveVertex: ({
+            currentVertex,
+            previousVertex
+        }) => {
             if (previousVertex === null) {
                 // Don't do anything for the root vertex if it is already current (not previous one)
                 return;
@@ -99,7 +108,9 @@ export default function articulationPoints(graph) {
                 }
             }
         },
-        allowTraversal: ({ nextVertex }) => {
+        allowTraversal: ({
+            nextVertex
+        }) => {
             return !visitedSet[nextVertex.getKey()];
         }
     };
@@ -108,4 +119,18 @@ export default function articulationPoints(graph) {
     depthFirstSearch(graph, startVertex, dfsCallbacks);
 
     return articulationPointsSet;
+}
+nextVertex
+}) => {
+    return !visitedSet[nextVertex.getKey()];
+}
+};
+
+// Do Depth First Search traversal over submitted graph.
+depthFirstSearch(graph, startVertex, dfsCallbacks);
+
+
+
+
+return articulationPointsSet;
 }

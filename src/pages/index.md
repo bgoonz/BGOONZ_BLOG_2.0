@@ -42,9 +42,9 @@ sections:
         image_alt: python
         title: Python Guide
         title_url: 'https://bgoonz-blog.netlify.app/docs/python/python-ds'
-        image: images/smiling-maple.png
+        image: images/python.png
       - content: |
-          <div id="search"></div> <div id="search" />
+          <div id="search"></div>
         actions:
           - label: Learn More
             url: /docs/tools
@@ -100,10 +100,10 @@ sections:
         content: >
           Artificial neural networks, usually simply called neural networks, are
           computing systems vaguely inspired by the biological [neural
-          networks](https://github.com/tensorflow/tensorflow)![](/\_static/app-assets/neural.PNG)
+          networks](https://github.com/tensorflow/tensorflow)![](/\_static/app-assets/neural.png)
         actions: []
         type: grid_item
-        image: images/neural.PNG
+        image: images/neural.png
       - title: Jamstack
         title_url: jamstack
         image_alt: jamstack
@@ -237,7 +237,7 @@ sections:
     image_alt: lorem-ipsum
     image_position: left
     content: |
-      ![](images/static-server-5bf5ad2d.PNG)Tool Showcase
+      ![](images/static-server-5bf5ad2d.png)Tool Showcase
 
       https://bgoonz-blog.netlify.app/docs/tools/
     actions: []

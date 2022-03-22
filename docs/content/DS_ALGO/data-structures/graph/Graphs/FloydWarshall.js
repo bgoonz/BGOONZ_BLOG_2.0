@@ -23,7 +23,9 @@ const FloydWarshall = (dist) => {
     return dist;
 };
 
-export { FloydWarshall };
+export {
+    FloydWarshall
+};
 
 // For the following graph (edge weights are shown in brackets)
 //  4       1       dist[1][2] = dist[2][1] = 1
@@ -43,5 +45,7 @@ export { FloydWarshall };
 //       [1, 0, Infinity, Infinity],
 //       [2, Infinity, 0, 1],
 //       [Infinity, Infinity, 1, 0]
+//     ]
+//   )
 //     ]
 //   )

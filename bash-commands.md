@@ -547,7 +547,7 @@ printf "${Red} This is red \n"
 
 #### Find
 
-## To find files by case-insensitive extension (ex: .jpg, .JPG, .jpG)
+## To find files by case-insensitive extension (ex: .jpg, .jpg, .jpG)
 
 find . -iname "\*.jpg"
 
