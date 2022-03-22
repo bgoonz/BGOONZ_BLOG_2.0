@@ -14,7 +14,7 @@ template: post
 thumb_img_path: images/css-72a655a7.jpg
 ---
 
-# To find files by case-insensitive extension (ex: .jpg, .JPG, .jpG):
+# To find files by case-insensitive extension (ex: .jpg, .jpg, .jpG):
 
 find . -iname "\*.jpg"
 
