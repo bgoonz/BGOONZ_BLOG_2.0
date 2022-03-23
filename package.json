@@ -36,6 +36,6 @@
         "react-script-tag": "1.1.2",
         "rehype-react": "3.0.2",
         "sprintf-js": "1.1.2",
-        "pdfcrowd": "5.4.0"
+        "pdfcrowd":"5.4.0"
     }
 }
