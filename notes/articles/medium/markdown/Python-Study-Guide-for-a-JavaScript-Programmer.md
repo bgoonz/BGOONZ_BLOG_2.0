@@ -46,13 +46,13 @@ Here I will walk through a demo…. skip down below for more fundamental example
 
 ## Learn Redux
 
-<iframe class="block-content" src="https://learning-redux42.netlify.app/" height="100%" width="100%" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe  src="https://learning-redux42.netlify.app/" height="100%" width="100%" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 
 <script src="https://gist.github.com/bgoonz/0e9d7ba47f02d41d8cecfd23beecd2b1.js"></script>
 
-<iframe class="block-content" src="https://gist.github.com/bgoonz/0e9d7ba47f02d41d8cecfd23beecd2b1.js" height="100%" width="100%" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe  src="https://gist.github.com/bgoonz/0e9d7ba47f02d41d8cecfd23beecd2b1.js" height="100%" width="100%" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## ALL CODE
 

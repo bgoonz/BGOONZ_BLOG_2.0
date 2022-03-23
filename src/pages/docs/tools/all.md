@@ -13,7 +13,7 @@ template: docs
 
 # ALL
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://bgoonz-blog-v3-0.netlify.app/archive/" height="800px" width="1000px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://bgoonz-blog-v3-0.netlify.app/archive/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 <br>
@@ -21,7 +21,7 @@ template: docs
 <h1> Archive</h1>
 <br>
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://resourcerepo2.netlify.app/" height="800px" width="1000px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://resourcerepo2.netlify.app/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 <br>
@@ -45,7 +45,7 @@ template: docs
 <br>
 <br>
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://resourcerepo2.netlify.app/" height="800px" width="1000px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://resourcerepo2.netlify.app/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 <br>
@@ -89,7 +89,7 @@ template: docs
 <br>
 <br>
 <br>
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://archive.org/" height="800px" width="1000px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://archive.org/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
 <br>
 <br>
 <hr>
@@ -102,7 +102,7 @@ template: docs
 <br>
 <br>
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    class="inner" src="https://lambda-resources.netlify.app/" height="800px" width="1000px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    class="inner" src="https://lambda-resources.netlify.app/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 <br>
@@ -121,7 +121,7 @@ template: docs
 <br>
 <br>
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    class="inner" src="https://bgoonz.github.io/bass-station/" height="800px" width="1000px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    class="inner" src="https://bgoonz.github.io/bass-station/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 <br>
@@ -146,7 +146,7 @@ template: docs
 <br>
 <br>
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;" src="https://web-dev-interview-prep-quiz-website.netlify.app/" height="800px" width="1000px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;" src="https://web-dev-interview-prep-quiz-website.netlify.app/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 <br>
@@ -170,7 +170,7 @@ template: docs
 <br>
 <br>
 <br>
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://random-static-html-deploys.netlify.app/" height="800px" width="1000px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://random-static-html-deploys.netlify.app/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
 <br>
 <br>
 <br>
@@ -188,7 +188,7 @@ template: docs
 <br>
 <br>
 <br>
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://thealgorithms.netlify.app/" height="800px" width="1000px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://thealgorithms.netlify.app/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
 <br>
 <br>
 <br>
@@ -211,7 +211,7 @@ template: docs
 <br>
 <br>
 <br>
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://markdown-templates-42.netlify.app/" height="800px" width="1000px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://markdown-templates-42.netlify.app/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
 <br>
 <br>
 <br>
@@ -228,7 +228,7 @@ template: docs
 <br>
 <br>
 <br>
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://bgoonz.github.io/everything-curl/index.html" height="800px" width="1000px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://bgoonz.github.io/everything-curl/index.html" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
 <br>
 <br>
 <hr>
@@ -241,7 +241,7 @@ template: docs
 <br>
 <br>
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://devtools42.netlify.app/" height="800px" width="1000px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://devtools42.netlify.app/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 <br>
@@ -259,7 +259,7 @@ template: docs
 <br>
 <br>
 <br>
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://ternary42.netlify.app/" height="800px" width="1000px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://ternary42.netlify.app/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 <br>
@@ -278,7 +278,7 @@ template: docs
 <br>
 <br>
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://githtmlpreview.netlify.app/" height="800px" width="1000px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://githtmlpreview.netlify.app/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 <br>
@@ -297,7 +297,7 @@ template: docs
 <br>
 <br>
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;" src="https://fourm-builder-gui.netlify.app/" height="800px" width="1000px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;" src="https://fourm-builder-gui.netlify.app/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 <br>
@@ -312,7 +312,7 @@ template: docs
 <br>
 <br>
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;" src="https://codepen.io/bgoonz/embed/zYwLVmb?default-tab=html%2Cresult" height="800px" width="1000px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;" src="https://codepen.io/bgoonz/embed/zYwLVmb?default-tab=html%2Cresult" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 <br>
@@ -348,7 +348,7 @@ template: docs
 <br>
 <br>
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://web-dev-resource-hub.netlify.app/" height="800px" width="1000px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://web-dev-resource-hub.netlify.app/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
 <br>
 <br>
 <br>
@@ -362,7 +362,7 @@ template: docs
 <h1> Semvar Checker </h1>
 <br>
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://semvar-checker-tool-beta.vercel.app/" height="800px" width="1000px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://semvar-checker-tool-beta.vercel.app/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 <br>
@@ -377,7 +377,7 @@ template: docs
 <h1> Photo Editor   </h1>
 <br>
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://onlinephotoeditor.goonlinetools.com/" height="800px" width="1000px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://onlinephotoeditor.goonlinetools.com/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 <br>
@@ -391,7 +391,7 @@ template: docs
 <h1>  Github HTML Render from link </h1>
 <br>
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://githtmlpreview.netlify.app/" height="800px" width="1000px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://githtmlpreview.netlify.app/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 <br>
@@ -403,7 +403,7 @@ template: docs
 <h1> Form Builder GUI </h1>
 <br>
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;" src="https://fourm-builder-gui.netlify.app/" height="800px" width="1000px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;" src="https://fourm-builder-gui.netlify.app/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 <hr>
@@ -412,7 +412,7 @@ template: docs
 <h1> Border Builder </h1>
 <br>
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;" src="https://codepen.io/bgoonz/embed/zYwLVmb?default-tab=html%2Cresult" height="800px" width="1000px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;" src="https://codepen.io/bgoonz/embed/zYwLVmb?default-tab=html%2Cresult" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 <br>
@@ -431,7 +431,7 @@ template: docs
 <h1> Original Blog Site </h1>
 <br>
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://web-dev-resource-hub.netlify.app/" height="800px" width="1000px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://web-dev-resource-hub.netlify.app/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
 <br>
 <br>
 <hr>
@@ -443,7 +443,7 @@ template: docs
 
 <h1> Ternary Converter   </h1>
 <br>
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://ternary42.netlify.app/" height="800px" width="1000px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://ternary42.netlify.app/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 <br>
@@ -455,7 +455,7 @@ template: docs
 <br>
 <br>
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    height="800px" width="1000px" scrolling="yes" title="Dashed Border Generator" src="https://codepen.io/bgoonz/embed/preview/zYwLVmb?default-tab=result&editable=true&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    height="800px" width="1000px" scrolling="yes" title="Dashed Border Generator" src="https://codepen.io/bgoonz/embed/preview/zYwLVmb?default-tab=result&editable=true&theme-id=dark"   frameborder="yes" loading="lazy"  allowfullscreen="true">
   See the Pen <a href="https://codepen.io/bgoonz/pen/zYwLVmb">
   Dashed Border Generator</a> by Bryan C Guner (<a href="https://codepen.io/bgoonz">@bgoonz</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -470,27 +470,27 @@ template: docs
 
 <h1>   Paste To Markdown </h1>
 <br>
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://euangoddard.github.io/clipboard2markdown/" height="800px" width="1000px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://bgoonz.github.io/paste-2-markdown-web/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 <br>
 <h1>   Paste Excel Tabel To Markdown </h1>
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://codepen.io/bgoonz/embed/JjNaPpL?default-tab=result&theme-id=light" height="800px" width="1000px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://codepen.io/bgoonz/embed/JjNaPpL?default-tab=result&theme-id=light" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
 <br>
 <br>
 <br>
 <h1>Paste excel to HTML</h1>
 <br>
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://pedantic-wing-adbf82.netlify.app/" height="800px" width="1000px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://pedantic-wing-adbf82.netlify.app/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
 <br>
 
 <br>
 <br>
 <h1>   Markdown tools  </h1>
 <br>
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://random-static-html-deploys.netlify.app/markdow-tools-embed.html" height="800px" width="1000px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://random-static-html-deploys.netlify.app/markdow-tools-embed.html" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://drive.google.com/embeddedfolderview?id=1DHyQsPLziqSUODclplhnNX1eknzbZrL8#grid" height="800px" width="1000px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://drive.google.com/embeddedfolderview?id=1DHyQsPLziqSUODclplhnNX1eknzbZrL8#grid" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 <hr>
@@ -502,7 +502,7 @@ template: docs
 <h1> PDF Tools   </h1>
 <br>
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://pdf-tools-xi.vercel.app/" height="800px" width="1000px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://pdf-tools-xi.vercel.app/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 <hr>
@@ -511,7 +511,7 @@ template: docs
 <br>
 <h1>  React Calculator  </h1>
 <br>
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://react-calculator2.vercel.app/" width="1000px" height="800px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://react-calculator2.vercel.app/" width="1000px" height="800px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 <br>
@@ -522,26 +522,26 @@ template: docs
 <br>
 <h1>   Number Base Converter  </h1>
 <br>
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://number-base-converter-react.vercel.app/" width="1000px" height="800px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://number-base-converter-react.vercel.app/" width="1000px" height="800px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 <br>
   <h1>  Text Tools </h1>
 <br>
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://devtools42.netlify.app/" width="1000px" height="800px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://devtools42.netlify.app/" width="1000px" height="800px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
 
 <h1>   Paste excel to HTML</h1>
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://codepen.io/bgoonz/embed/JjNaPpL?default-tab=result&theme-id=light" width="1000px" height="800px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://codepen.io/bgoonz/embed/JjNaPpL?default-tab=result&theme-id=light" width="1000px" height="800px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
 <br>
 <br>
 <br>
 <h1>Awesome Search</h1>
 <br>
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://search-awesome.vercel.app/" width="1000px" height="800px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://search-awesome.vercel.app/" width="1000px" height="800px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 <br>
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://resourcerepo2.netlify.app/" width="1000px" height="800px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://resourcerepo2.netlify.app/" width="1000px" height="800px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
 <br>
 <br>
 <br>
@@ -549,7 +549,7 @@ template: docs
 <h1>  Github HTML Render from link </h1>
 <br>
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://githtmlpreview.netlify.app/" width="1000px" height="800px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://githtmlpreview.netlify.app/" width="1000px" height="800px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 <br>
@@ -561,14 +561,14 @@ template: docs
 <h1> Form Builder GUI </h1>
 <br>
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;" src="https://fourm-builder-gui.netlify.app/" width="1000px" height="800px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;" src="https://fourm-builder-gui.netlify.app/" width="1000px" height="800px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 <br>
 
 <h1>                </h1>
 <br>
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://ds-algo-official.netlify.app/"height="800px" width="1000px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://ds-algo-official.netlify.app/"height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 <br>
@@ -576,7 +576,7 @@ template: docs
 <h1>                </h1>
 <br>
 
- <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    width="1000px" height="800px" scrolling="yes" title="Simple Typing Carousel " src="https://codepen.io/bgoonz/embed/ExZvGoZ?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+ <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    width="1000px" height="800px" scrolling="yes" title="Simple Typing Carousel " src="https://codepen.io/bgoonz/embed/ExZvGoZ?default-tab=html%2Cresult"   frameborder="yes" loading="lazy"  allowfullscreen="true">
   See the Pen <a href="https://codepen.io/bgoonz/pen/ExZvGoZ">
   Simple Typing Carousel </a> by Bryan C Guner (<a href="https://codepen.io/bgoonz">@bgoonz</a>)
   on <a href="https://codepen.io">CodePen</a>.

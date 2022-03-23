@@ -201,7 +201,7 @@ export default class Footer extends React.Component {
             className = "site-logo"
             href = "/" >
             <
-            img src = "https://d33wubrfki0l68.cloudfront.net/e5662f0d4f3e7730aea1a0faf7ff09ea20184700/6ca0b/images/dgqlkqjtmk.png"
+            img src = "https://d33wubrfki0l68.cloudfront.net/e5662f0d4f3e7730aea1a0faf7ff09ea20184700/6ca0b/images/home-button.png"
             alt = "webdevhub logo" /
             >
             <

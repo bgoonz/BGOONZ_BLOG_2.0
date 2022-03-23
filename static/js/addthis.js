@@ -12313,7 +12313,7 @@ AddThis - v8.28.7 - 20201026;
                                     } else
                                         _ate.bro.msi ?
                                         ((t.innerHTML =
-                                                '<iframe title="AddThis | Facebook" frameborder="0" scrolling="no" allowTransparency="true" scrollbars="no"' +
+                                                '<iframe title="AddThis | Facebook" frameborder="0" scrolling="no"  scrollbars="no"' +
                                                 (_ate.bro.ie6 ? ' src="javascript:\'\'"' : '') +
                                                 '></iframe>'),
                                             (a = t.firstChild)) :
@@ -12422,7 +12422,7 @@ AddThis - v8.28.7 - 20201026;
                                             ((o.layout = '&layout=vertical'), (o.width = '49px'), (o.height = '59px')) :
                                             ((o.layout = ''), (o.width = '40px'), (o.height = '25px'));
                                         var s =
-                                            '<iframe title="AddThis | Pinterest" frameborder="0" role="presentation" scrolling="no" allowTransparency="true" scrollbars="no"' +
+                                            '<iframe title="AddThis | Pinterest" frameborder="0" role="presentation" scrolling="no"  scrollbars="no"' +
                                             (_ate.bro.ie6 ? ' src="javascript:\'\'"' : '') +
                                             ' style="width:' +
                                             o.width +
@@ -12654,7 +12654,7 @@ AddThis - v8.28.7 - 20201026;
                                             p)
                                     ) {
                                         var m =
-                                            '<iframe title="AddThis | Twitter" frameborder="0" role="presentation" scrolling="no" allowTransparency="true" scrollbars="no"' +
+                                            '<iframe title="AddThis | Twitter" frameborder="0" role="presentation" scrolling="no"  scrollbars="no"' +
                                             (_ate.bro.ie6 ? ' src="javascript:\'\'"' : '') +
                                             ' style="width:' +
                                             u +
@@ -12762,7 +12762,7 @@ AddThis - v8.28.7 - 20201026;
                                         i.height && (s = i.height),
                                         (n = _ate.util.toKV(i));
                                     var u =
-                                        '<iframe title="AddThis | LinkedIn Button" frameborder="0" role="presentation" scrolling="no" allowTransparency="true" scrollbars="no"' +
+                                        '<iframe title="AddThis | LinkedIn Button" frameborder="0" role="presentation" scrolling="no"  scrollbars="no"' +
                                         (_ate.bro.ie6 ? ' src="javascript:\'\'"' : '') +
                                         ' style="width:' +
                                         r +
