@@ -42,7 +42,7 @@ template: docs
 <br>
 
 <br>
-<iframe   src="https://random-static-html-deploys.netlify.app/markdow-tools-embed.html" height="800px" style="width: 100%; scrolling="yes"    loading="lazy"  allowfullscreen="true"></iframe>
+<iframe   src="https://random-static-html-deploys.netlify.app/markdow-tools-embed.html" height="800px" style="width: 100%; scrolling="yes" loading="lazy"  allowfullscreen="true"></iframe>
 
 <iframe src="https://drive.google.com/embeddedfolderview?id=1DHyQsPLziqSUODclplhnNX1eknzbZrL8#grid" style="width:100%; height:600px; border:0;"></iframe>
 
@@ -55,7 +55,7 @@ template: docs
 <h1> PDF Tools   </h1>
 <br>
 
-<iframe src="https://pdf-tools-xi.vercel.app/" height="1000px" width="1200px" scrolling="yes"    loading="lazy"  allowfullscreen="true"></iframe>
+<iframe src="https://pdf-tools-xi.vercel.app/" height="1000px" width="1200px" scrolling="yes" loading="lazy"  allowfullscreen="true"></iframe>
 
 <br>
 <hr>
@@ -67,30 +67,30 @@ template: docs
 <br>
 <h1>   Number Base Converter  </h1>
 <br>
-<iframe   src="https://number-base-converter-react.vercel.app/" height="800px" style="width: 100%; scrolling="yes"    loading="lazy"  allowfullscreen="true"></iframe>
+<iframe   src="https://number-base-converter-react.vercel.app/" height="800px" style="width: 100%; scrolling="yes" loading="lazy"  allowfullscreen="true"></iframe>
 
 <br>
 <br>
   <h1>  Text Tools </h1>
 <br>
-<iframe   src="https://devtools42.netlify.app/" height="800px" style="width: 100%; scrolling="yes"    loading="lazy"  allowfullscreen="true"></iframe>
+<iframe   src="https://devtools42.netlify.app/" height="800px" style="width: 100%; scrolling="yes" loading="lazy"  allowfullscreen="true"></iframe>
 
 <br>
 <br>
   <h1>  Other Tools </h1>
 <br>
-<iframe   src="https://bgoonz.github.io/more-tools-textool-template-format/" height="800px" style="width: 100%; scrolling="yes"    loading="lazy"  allowfullscreen="true"></iframe>
+<iframe   src="https://bgoonz.github.io/more-tools-textool-template-format/" height="800px" style="width: 100%; scrolling="yes" loading="lazy"  allowfullscreen="true"></iframe>
 
 <br>
 <br>
 <h1>  Awesome Search </h1>
-<iframe   src="https://codepen.io/bgoonz/embed/JjNaPpL?default-tab=result&theme-id=light" height="800px" style="width: 100%; scrolling="yes"    loading="lazy"  allowfullscreen="true"></iframe>
+<iframe   src="https://codepen.io/bgoonz/embed/JjNaPpL?default-tab=result&theme-id=light" height="800px" style="width: 100%; scrolling="yes" loading="lazy"  allowfullscreen="true"></iframe>
 <br>
 <br>
 <br>
 <h1>Paste excel to HTML</h1>
 <br>
-<iframe   src="https://pedantic-wing-adbf82.netlify.app/" height="800px" style="width: 100%; scrolling="yes"    loading="lazy"  allowfullscreen="true"></iframe>
+<iframe   src="https://pedantic-wing-adbf82.netlify.app/" height="800px" style="width: 100%; scrolling="yes" loading="lazy"  allowfullscreen="true"></iframe>
 <br>
 
 <h1>  Cloud Storage </h1>
@@ -104,14 +104,14 @@ template: docs
 <hr>
 <br>
 <br>
-<iframe   src="https://resourcerepo2.netlify.app/" height="800px" style="width: 100%; scrolling="yes"    loading="lazy"  allowfullscreen="true"></iframe>
+<iframe   src="https://resourcerepo2.netlify.app/" height="800px" style="width: 100%; scrolling="yes" loading="lazy"  allowfullscreen="true"></iframe>
 <br>
 <br>
 <br>
 <h1> Text Tools     </h1>
 <br>
 
-<iframe src="https://devtools42.netlify.app/" height="800px" style="width: 100%; scrolling="yes"    loading="lazy"  allowfullscreen="true"></iframe>
+<iframe src="https://devtools42.netlify.app/" height="800px" style="width: 100%; scrolling="yes" loading="lazy"  allowfullscreen="true"></iframe>
 
 <br>
 <hr>
@@ -121,7 +121,7 @@ template: docs
 
 <h1> Ternary Converter   </h1>
 <br>
-<iframe src="https://ternary42.netlify.app/" height="1000px" width="1200px" scrolling="yes"    loading="lazy"  allowfullscreen="true"></iframe>
+<iframe src="https://ternary42.netlify.app/" height="1000px" width="1200px" scrolling="yes" loading="lazy"  allowfullscreen="true"></iframe>
 
 <br>
 <hr>
@@ -132,7 +132,7 @@ template: docs
 <h1>  Github HTML Render from link </h1>
 <br>
 
-<iframe src="https://githtmlpreview.netlify.app/" height="800px" style="width: 100%; scrolling="yes"    loading="lazy"  allowfullscreen="true"></iframe>
+<iframe src="https://githtmlpreview.netlify.app/" height="800px" style="width: 100%; scrolling="yes" loading="lazy"  allowfullscreen="true"></iframe>
 
 <br>
 <hr>
@@ -143,13 +143,13 @@ template: docs
 <h1> Form Builder GUI </h1>
 <br>
 
-<iframe  src="https://fourm-builder-gui.netlify.app/" height="800px" style="width: 100%; scrolling="yes"    loading="lazy"  allowfullscreen="true"></iframe>
+<iframe  src="https://fourm-builder-gui.netlify.app/" height="800px" style="width: 100%; scrolling="yes" loading="lazy"  allowfullscreen="true"></iframe>
 
 <!-- <br>
 <h1> Border Builder </h1>
 <br>
 
-<iframe  src="https://random-static-html-deploys.netlify.app/web-speech-api-master/speak-easy-synthesis/index.html" height="800px" style="width: 100%; scrolling="yes"    loading="lazy"  allowfullscreen="true"></iframe>
+<iframe  src="https://random-static-html-deploys.netlify.app/web-speech-api-master/speak-easy-synthesis/index.html" height="800px" style="width: 100%; scrolling="yes" loading="lazy"  allowfullscreen="true"></iframe>
 
 <br>
 <hr>
@@ -163,7 +163,7 @@ template: docs
 
 <h1>                </h1>
 <br>
-<iframe   src="https://ds-algo-official.netlify.app/" height="800px" style="width: 100%;" scrolling="yes"    loading="lazy"  allowfullscreen="true"></iframe>
+<iframe   src="https://ds-algo-official.netlify.app/" height="800px" style="width: 100%;" scrolling="yes" loading="lazy"  allowfullscreen="true"></iframe>
 
 <br>
 <br>
