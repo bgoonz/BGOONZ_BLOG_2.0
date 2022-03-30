@@ -19,16 +19,14 @@ sections:
     col_number: three
     grid_items:
       - content: |
-      - title: Documentation
-        content: >-
-                Memoization, Tabulation, and Sorting Algorithms by Example
-                Why is looking at runtime not a reliable method of calculating time
-                complexity?
-            actions:
-                - label: Get Started
-                  url: 'https://bgoonz-blog.netlify.app/docs/data-structures/big-o/'
-                  style: secondary
-            title: A Quick Guide To Big O
+          Memoization, Tabulation, and Sorting Algorithms by Example
+          Why is looking at runtime not a reliable method of calculating time
+          complexity?
+        actions:
+          - label: View Post
+            url: /docs/ds-algo/big-o/
+            style: secondary
+        title: A Quick Guide To Big O
             image: images/bigo.jpg
             title_url: >-
                 https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522
