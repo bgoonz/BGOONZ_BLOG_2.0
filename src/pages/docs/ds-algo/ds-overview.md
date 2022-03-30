@@ -113,7 +113,7 @@ Nodes with linked child nodes are called internal nodes while those without chil
 
 These search operations are highly efficient, as its search duration is dependent not on the number of nodes but on the number of levels down the tree.
 
-![](https://www.educative.io/api/page/6094484883374080/image/download/4860454879887360)
+![height of tree](https://www.educative.io/api/page/6094484883374080/image/download/4860454879887360)
 
 This type of tree is defined by four strict rules:
 
@@ -152,9 +152,9 @@ Graphs are a relation-based data structure helpful for storing web-like relation
 
 In the above example, each circle is a vertex, and each line is an edge. If produced in writing, this structure would look like:
 
-_V = {a, b, c, d}_
+`V = {a, b, c, d}`
 
-_E = {ab, ac, bc, cd}_
+`E = {ab, ac, bc, cd}`
 
 While hard to visualize at first, this structure is invaluable in conveying relationship charts in textual form, anything from circuitry to train networks.
 
@@ -177,7 +177,7 @@ Disadvantages
 
 Hash tables are a complex data structure capable of storing large amounts of information and retrieving specific elements efficiently. This data structure relies on the concept of key/value pairs, where the "key" is a searched string and the "value" is the data paired with that key.
 
-![](https://www.educative.io/api/page/6094484883374080/image/download/6745911163092992) Each searched key is converted from its string form into a numerical value, called a hash, using a predefined hash function. This hash then points to a storage bucket -- a smaller subgroup within the table. It then searches the bucket for the originally entered key and returns the value associated with that key.
+![key value pair](https://www.educative.io/api/page/6094484883374080/image/download/6745911163092992) Each searched key is converted from its string form into a numerical value, called a hash, using a predefined hash function. This hash then points to a storage bucket -- a smaller subgroup within the table. It then searches the bucket for the originally entered key and returns the value associated with that key.
 
 Advantages
 
@@ -214,7 +214,7 @@ Problem statement: Implement a function `removeEven(arr)`, which takes an array 
 
 Input: An array of random integers
 
-```
+```txt
 [1,2,4,5,10,6,3]
 ```
 
@@ -229,7 +229,6 @@ There are two ways you could solve this coding problem in an interview. Let's di
 #### Solution #1: Doing it "by hand"
 
 ---
-
 
 ```js
 
@@ -252,7 +251,6 @@ This approach starts with the first element of the array. If that current elemen
 #### Solution #2: Using filter() and lambda function
 
 ---
-
 
 ```js
 
@@ -610,7 +608,6 @@ To solve this problem, we must min heapify all parent nodes. Take a look.
 
 ---
 
-
 ```js
 
 
@@ -635,7 +632,6 @@ function minHeapify(heap, index) {
 ---
 
 ---
-
 
 ```js
 

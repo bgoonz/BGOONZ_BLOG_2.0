@@ -12,7 +12,6 @@ template: docs
 
 # Data Structures
 
-
 <details>
 
 <summary>All Code From This Writeup</summary>
@@ -281,7 +280,6 @@ module.exports = {
 
 
 ```
-
 
 </details>
 ---
@@ -1486,8 +1484,8 @@ if (this.root === null) {
 - -^--^--^--^--^--^--^-
 - 1 2 3 4 5 6 7
 - This is how a binary tree works. Each node can have two children:
-  - Left: Less than parent node's value.
-  - Right: Greater than parent node's value.
+    - Left: Less than parent node's value.
+    - Right: Greater than parent node's value.
 - > Note: In order to make this work all values must be unique in the tree.
 - This makes the traversal to find a value very efficient. Say we're trying to
 - find the number 5 in our tree:
