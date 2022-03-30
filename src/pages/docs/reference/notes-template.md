@@ -675,7 +675,7 @@ Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar
 
 ## Video Embeds
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    width="560" height="315" src="https://www.youtube.com/embed/8uuFIi-ghPI"  allowfullscreen></iframe>
+<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);sandbox="allow-scripts" style="resize:both; overflow:scroll;"    width="560" height="315" src="https://www.youtube.com/embed/8uuFIi-ghPI"  allowfullscreen></iframe>
 
 ## Code Blocks
 

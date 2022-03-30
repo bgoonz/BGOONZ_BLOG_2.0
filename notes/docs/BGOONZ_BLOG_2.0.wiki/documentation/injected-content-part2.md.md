@@ -160,7 +160,7 @@ Inject analytics or other scripts into the HTML of your site.---
     <!-- End Google Tag Manager -->
     <!-- Google Tag Manager (noscript) -->
     <noscript
-        ><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR" height="0" width="0" style="display:none;visibility:hidden"></iframe
+        ><iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7); src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR" height="0" width="0" style="display:none;visibility:hidden"></iframe
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
 

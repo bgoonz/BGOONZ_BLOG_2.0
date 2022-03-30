@@ -12,7 +12,17 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
 }
-
+iframe{
+        overflow-y: scroll!important;
+        overflow-x: scroll!important;
+        border-radius:26px;
+        border: 3px solid gold;
+        height:1100px;
+        width:100%;
+        margin:auto;
+        text-align:center;
+        align-self:center;
+}
 mark,
 ins {
     background: $yellow-pale;

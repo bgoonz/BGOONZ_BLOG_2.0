@@ -1,4 +1,4 @@
-- ```
+ ```
     <!-- Insert makerbadge.js (download or use ☁️cloud version) -->
 
     <script type="text/javascript" src="https://makerbadge.s3.amazonaws.com/blmbadge.js"></script>
@@ -77,7 +77,7 @@
 
     ```
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
+    <noscript><iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7); src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     ```
@@ -144,7 +144,7 @@
     })(window,document,'script','dataLayer','GTM-5S5XXNR');</script>
     <!-- End Google Tag Manager -->
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
+    <noscript><iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7); src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
@@ -904,15 +904,15 @@ Set up outgoing webhooks to notify other services about deploys for your site. [
 
 Add notification
 
-- Post to https://api.stackbit.com/project/609b2d7c71a5dd0016f36326/webhook/netlify when deploy starts
+- Post to <https://api.stackbit.com/project/609b2d7c71a5dd0016f36326/webhook/netlify> when deploy starts
 
     Options
 
-- Post to https://api.stackbit.com/project/609b2d7c71a5dd0016f36326/webhook/netlify when deploy succeeds
+- Post to <https://api.stackbit.com/project/609b2d7c71a5dd0016f36326/webhook/netlify> when deploy succeeds
 
     Options
 
-- Post to https://api.stackbit.com/project/609b2d7c71a5dd0016f36326/webhook/netlify when deploy fails
+- Post to <https://api.stackbit.com/project/609b2d7c71a5dd0016f36326/webhook/netlify> when deploy fails
 
     Options
 

@@ -11518,7 +11518,7 @@ AddThis - v8.28.7 - 20201026;
                                 return t || m || !_atc._atf || _ate.bro.ie6 || _ate.bro.ie7 ?
                                     (_ate.bro.msi ?
                                         ((i.innerHTML =
-                                                '<iframe id="_atssh' +
+                                                '<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);id="_atssh' +
                                                 a +
                                                 '" width="1" height="1" title="AddThis utility frame" name="_atssh' +
                                                 a +
@@ -12313,7 +12313,7 @@ AddThis - v8.28.7 - 20201026;
                                     } else
                                         _ate.bro.msi ?
                                         ((t.innerHTML =
-                                                '<iframe title="AddThis | Facebook" frameborder="0" scrolling="no"  scrollbars="no"' +
+                                                '<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);title="AddThis | Facebook" frameborder="0" scrolling="no"  scrollbars="no"' +
                                                 (_ate.bro.ie6 ? ' src="javascript:\'\'"' : '') +
                                                 '></iframe>'),
                                             (a = t.firstChild)) :
@@ -12422,7 +12422,7 @@ AddThis - v8.28.7 - 20201026;
                                             ((o.layout = '&layout=vertical'), (o.width = '49px'), (o.height = '59px')) :
                                             ((o.layout = ''), (o.width = '40px'), (o.height = '25px'));
                                         var s =
-                                            '<iframe title="AddThis | Pinterest" frameborder="0" role="presentation" scrolling="no"  scrollbars="no"' +
+                                            '<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);title="AddThis | Pinterest" frameborder="0" role="presentation" scrolling="no"  scrollbars="no"' +
                                             (_ate.bro.ie6 ? ' src="javascript:\'\'"' : '') +
                                             ' style="width:' +
                                             o.width +
@@ -12654,7 +12654,7 @@ AddThis - v8.28.7 - 20201026;
                                             p)
                                     ) {
                                         var m =
-                                            '<iframe title="AddThis | Twitter" frameborder="0" role="presentation" scrolling="no"  scrollbars="no"' +
+                                            '<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);title="AddThis | Twitter" frameborder="0" role="presentation" scrolling="no"  scrollbars="no"' +
                                             (_ate.bro.ie6 ? ' src="javascript:\'\'"' : '') +
                                             ' style="width:' +
                                             u +
@@ -12762,7 +12762,7 @@ AddThis - v8.28.7 - 20201026;
                                         i.height && (s = i.height),
                                         (n = _ate.util.toKV(i));
                                     var u =
-                                        '<iframe title="AddThis | LinkedIn Button" frameborder="0" role="presentation" scrolling="no"  scrollbars="no"' +
+                                        '<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);title="AddThis | LinkedIn Button" frameborder="0" role="presentation" scrolling="no"  scrollbars="no"' +
                                         (_ate.bro.ie6 ? ' src="javascript:\'\'"' : '') +
                                         ' style="width:' +
                                         r +

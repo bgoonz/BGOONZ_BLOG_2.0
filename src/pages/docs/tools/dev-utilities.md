@@ -19,7 +19,7 @@ template: docs
 <h1> Search </h1>
 <br>
 
-<iframe src="https://www.algolia.com/interface-demos/6ed0c3de-f9e4-4cc8-a7b2-c6c7c979cc5e" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);" src="https://www.algolia.com/interface-demos/6ed0c3de-f9e4-4cc8-a7b2-c6c7c979cc5e" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" ></iframe>
 
 <br>
 <hr>
@@ -35,7 +35,7 @@ template: docs
 <h1> Photo Editor   </h1>
 <br>
 
-<iframe src="https://onlinephotoeditor.goonlinetools.com/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);" src="https://onlinephotoeditor.goonlinetools.com/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" ></iframe>
 
 <br>
 <hr>
@@ -45,7 +45,7 @@ template: docs
 <h1> PDF Tools   </h1>
 <br>
 
-<iframe src="https://pdf-tools-xi.vercel.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);" src="https://pdf-tools-xi.vercel.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" ></iframe>
 
 <br>
 <hr>
@@ -58,7 +58,7 @@ template: docs
 <h1> Text Tools     </h1>
 <br>
 
-<iframe src="https://bgoonz.github.io/Web_Utility_Tools/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);" src="https://bgoonz.github.io/Web_Utility_Tools/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" ></iframe>
 
 <br>
 <hr>
@@ -70,14 +70,14 @@ template: docs
 <h1> Ternary Converter   </h1>
 <br>
 
-<iframe height="1000px" width="1400px" scrolling="yes" src="https://ternary42.netlify.app/"  frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);height="1000px" width="1200px" scrolling="yes" src="https://ternary42.netlify.app/"  frameborder="no" loading="lazy" ></iframe>
 
 <br>
 <hr>
 <br>
 <br>
 
-<iframe height="1000px" width="1400px" scrolling="yes" title="Dashed Border Generator" src="https://codepen.io/bgoonz/embed/preview/zYwLVmb?default-tab=result&editable=true&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);height="1000px" width="1200px" scrolling="yes" title="Dashed Border Generator" src="https://codepen.io/bgoonz/embed/preview/zYwLVmb?default-tab=result&editable=true&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/bgoonz/pen/zYwLVmb">
   Dashed Border Generator</a> by Bryan C Guner (<a href="https://codepen.io/bgoonz">@bgoonz</a>)
   on <a href="https://codepen.io">CodePen</a>.

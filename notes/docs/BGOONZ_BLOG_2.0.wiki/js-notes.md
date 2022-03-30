@@ -66057,7 +66057,7 @@ If we change this so that the `<iframe>` in the document is listening to post me
 
     <!-- y.html -->
     <!DOCTYPE html>
-    <iframe src="x.html"></iframe>
+    <iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7); src="x.html"></iframe>
     <script>
       const bound = frames[0].postMessage.bind(frames[0], "some data", "*");
       Promise.resolve(undefined).then(bound);
@@ -66687,7 +66687,7 @@ There was attempt to access an object for which you have no permission. This is 
     <!DOCTYPE html>
     <html>
       <head>
-        <iframe id="myframe" src="http://www1.w3c-test.org/common/blank.html"></iframe>
+        <iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);id="myframe" src="http://www1.w3c-test.org/common/blank.html"></iframe>
         <script>
           onload = function() {
             console.log(frames[0].document);
