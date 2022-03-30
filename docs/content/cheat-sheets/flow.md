@@ -246,18 +246,18 @@ See: [Dynamic object keys](https://flow.org/en/docs/types/objects/#toc-objects-a
 | `number`        |                              |
 | `string`        |                              |
 | `void`          | undefined                    |
-| `null`          | null (but not undefined)     |
-| ---             | ---                          |
-| `{a: Number}`   | Object with a shape          |
-| `[any, number]` | Tuples (fixed-length arrays) |
-| ---             | ---                          |
-| `Array<T>`      |                              |
-| `Class<T>`      |                              |
-| `Function`      |                              |
-| `Object`        |                              |
-| ---             | ---                          |
-| `?number`       | Maybe (number, void, null)   |
-| `a              | b`                           | Union types |
+| `null`               | null (but not undefined)     |
+|----------------------|------------------------------|
+| `{a: Number}`        | Object with a shape          |
+| `[any, number]`      | Tuples (fixed-length arrays) |
+| ---                  | ---                          |
+| `Array<T>`           |                              |
+| `Class<T>`           |                              |
+| `Function`           |                              |
+| `Object`             |                              |
+| ---                  | ---                          |
+| `?number`            | Maybe (number, void, null)   |
+| `a              | b` | Union types                  |
 
 ### Enums
 

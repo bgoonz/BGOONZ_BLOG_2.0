@@ -4,6 +4,7 @@
 
 <summary> Bash Cheat Sheet (MY COMMANDS) </summary
 
+
 ## 99. Cheat Sheet
 
 ### Description
@@ -541,9 +542,16 @@ printf "${Red} This is red \n"
 
 ```
 
+
+
 </details>
 
+
+
 >
+
+
+
 
 #### Find
 
@@ -1484,7 +1492,6 @@ git reset --hard origin/master
 ### Description: To remove a submodule you need to
 
 > Notes:
----
 
 > Delete the relevant section from the .gitmodules file.
 > Stage the .gitmodules changes git add .gitmodules

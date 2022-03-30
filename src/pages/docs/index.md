@@ -35,11 +35,11 @@ excerpt: docs quick reference
 
 
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    class="inner" src="https://docs42.netlify.app/#C:/MY-WEB-DEV/__NEW_GIT/DOCS/docs-collection" height="800px" width="1000px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    class="inner" src="https://docs42.netlify.app/#C:/MY-WEB-DEV/__NEW_GIT/DOCS/docs-collection" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
 
 <h1>Gitpod Docs</h1>
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    class="inner" src="https://archive-42.github.io/my-docs-gitpod-html/" height="800px" width="1000px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    class="inner" src="https://archive-42.github.io/my-docs-gitpod-html/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
 
 ---
 

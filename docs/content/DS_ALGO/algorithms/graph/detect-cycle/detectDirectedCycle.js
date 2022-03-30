@@ -35,7 +35,10 @@ export default function detectDirectedCycle(graph) {
 
     // Describe BFS callbacks.
     const callbacks = {
-        enterVertex: ({ currentVertex, previousVertex }) => {
+        enterVertex: ({
+            currentVertex,
+            previousVertex
+        }) => {
             if (graySet[currentVertex.getKey()]) {
                 // If current vertex already in grey set it means that cycle is detected.
                 // Let's detect cycle path.
@@ -60,13 +63,17 @@ export default function detectDirectedCycle(graph) {
                 dfsParentMap[currentVertex.getKey()] = previousVertex;
             }
         },
-        leaveVertex: ({ currentVertex }) => {
+        leaveVertex: ({
+            currentVertex
+        }) => {
             // If all node's children has been visited let's remove it from gray set
             // and move it to the black set meaning that all its neighbors are visited.
             blackSet[currentVertex.getKey()] = currentVertex;
             delete graySet[currentVertex.getKey()];
         },
-        allowTraversal: ({ nextVertex }) => {
+        allowTraversal: ({
+            nextVertex
+        }) => {
             // If cycle was detected we must forbid all further traversing since it will
             // cause infinite traversal loop.
             if (cycle) {
@@ -90,4 +97,10 @@ export default function detectDirectedCycle(graph) {
     }
 
     return cycle;
+}
+// Do Depth First Search.
+depthFirstSearch(graph, startVertex, callbacks);
+}
+
+return cycle;
 }

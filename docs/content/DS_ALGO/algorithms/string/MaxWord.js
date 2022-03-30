@@ -27,17 +27,34 @@ const maxWord = (sentence = '') => {
     });
 
     const max = Object.keys(occurrences).reduce(
-        (n, word) => {
-            if (occurrences[word] > n.count) {
-                return { word, count: occurrences[word] };
-            } else {
+            (n, word) => {
+                if (occurrences[word] > n.count) {
+                    return {
+                        word,
+                        count: occurrences[word]
+                    };
+                } else {}
                 return n;
             }
         },
-        { word: '', count: 0 }
-    );
+        {
+            word: '',
+            count: 0
+        }
+);
 
-    return max.word;
+return max.word;
 };
 
-export { maxWord };
+export {
+    maxWord
+};
+}
+);
+
+return max.word;
+};
+
+export {
+    maxWord
+};

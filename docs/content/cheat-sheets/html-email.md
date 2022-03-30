@@ -24,7 +24,7 @@ category: HTML
 ### Properties to avoid
 
 | Property             | Where                   |
-| -------------------- | ----------------------- |
+|----------------------|-------------------------|
 | `position`           | (Outlook, Gmail, Yahoo) |
 | `display`            | (Outlook, Gmail)        |
 | `float`              | (Outlook)               |

@@ -30,4 +30,8 @@ const checkIfPatternExists = (text, pattern) => {
     }
 };
 
-export { checkIfPatternExists };
+export {
+    checkIfPatternExists
+};
+checkIfPatternExists
+};

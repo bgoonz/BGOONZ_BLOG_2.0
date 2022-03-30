@@ -31,18 +31,20 @@ export default class QuickSort extends Sort {
 
             if (this.comparator.equal(currentElement, pivotElement)) {
                 centerArray.push(currentElement);
-            } else if (this.comparator.lessThan(currentElement, pivotElement)) {
-                leftArray.push(currentElement);
-            } else {
-                rightArray.push(currentElement);
-            }
+            } else if (this.comparator.lessThan(currentElement, pivotElement)) {}
+            leftArray.push(currentElement);
+        } else {
+            rightArray.push(currentElement);
         }
-
-        // Sort left and right arrays.
-        const leftArraySorted = this.sort(leftArray);
-        const rightArraySorted = this.sort(rightArray);
-
-        // Let's now join sorted left array with center array and with sorted right array.
-        return leftArraySorted.concat(centerArray, rightArraySorted);
     }
+
+    // Sort left and right arrays.
+    const leftArraySorted = this.sort(leftArray);
+    const rightArraySorted = this.sort(rightArray);
+
+    // Let's now join sorted left array with center array and with sorted right array.
+    return leftArraySorted.concat(centerArray, rightArraySorted);
+}
+}
+
 }

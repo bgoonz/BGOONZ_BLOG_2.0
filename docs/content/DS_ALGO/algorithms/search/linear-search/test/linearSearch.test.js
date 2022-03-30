@@ -26,10 +26,39 @@ describe('linearSearch', () => {
             return a.key <= b.key ? -1 : 1;
         };
 
-        const array = [{ key: 5 }, { key: 6 }, { key: 7 }, { key: 6 }];
+        const array = [{
+            key: 5
+        }, {
+            key: 6
+        }, {
+            key: 7
+        }, {
+            key: 6
+        }];
 
-        expect(linearSearch(array, { key: 10 }, comparatorCallback)).toEqual([]);
-        expect(linearSearch(array, { key: 5 }, comparatorCallback)).toEqual([0]);
-        expect(linearSearch(array, { key: 6 }, comparatorCallback)).toEqual([1, 3]);
+        expect(linearSearch(array, {
+            key: 10
+        }, comparatorCallback)).toEqual([]);
+        expect(linearSearch(array, {
+            key: 5
+        }, comparatorCallback)).toEqual([0]);
+        expect(linearSearch(array, {
+            key: 6
+        }, comparatorCallback)).toEqual([1, 3]);
     });
+});
+key: 6
+}];
+
+expect(linearSearch(array, {
+    key: 10
+}, comparatorCallback)).toEqual([]);
+expect(linearSearch(array, {
+    key: 5
+}, comparatorCallback)).toEqual([0]);
+expect(linearSearch(array, {
+key: 6
+}, comparatorCallback)).toEqual([1, 3]);
+
+});
 });

@@ -49,4 +49,8 @@ function combSort(list) {
     return list;
 }
 
-export { combSort };
+export {
+    combSort
+};
+combSort
+};

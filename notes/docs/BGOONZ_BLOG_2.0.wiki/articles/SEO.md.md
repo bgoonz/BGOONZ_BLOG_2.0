@@ -132,7 +132,7 @@ Lang attribut of HTML element is missing.
 ALL LINKS\
 APPLE-TOUCH-ICON : [logo-circle.png](https://bgoonz-blog.netlify.app/logo-circle.png 'apple-touch-icon')\
 APPLE-TOUCH-ICON : [logo-canvas.png](https://instructure-uploads-pdx.s3.us-west-2.amazonaws.com/account_168550000000000001/attachments/537/logo-canvas.png 'apple-touch-icon')\
-ICON : [webdevhublogo2.PNG](https://bgoonz-blog.netlify.app/images/webdevhublogo2.PNG 'icon')\
+ICON : [webdevhublogo2.png](https://bgoonz-blog.netlify.app/images/webdevhublogo2.png 'icon')\
 PRECONNECT : https://fonts.gstatic.com\
 PREFETCH : component---src-templates-advanced-js-c66268766ef5c957450f.js\
 PREFETCH : component---src-templates-blog-js-36eb4fae1add87ca6010.js\
@@ -475,7 +475,7 @@ Title: /\
 ALT: neural networks\
 Title: /\
  |
-| [neural.PNG](https://bgoonz-blog.netlify.app/_static/app-assets/neural.PNG)\
+| [neural.png](https://bgoonz-blog.netlify.app/_static/app-assets/neural.png)\
 ALT: /\
 Title: /\
  |

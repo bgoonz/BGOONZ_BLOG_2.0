@@ -66,7 +66,7 @@ If we avoid cloning the prices array between recursive function calls and will u
 
 If we plot the prices array (i.e. `[7, 1, 5, 3, 6, 4]`) we may notice that the points of interest are the consecutive valleys and peaks
 
-![Peak Valley Approach](https://leetcode.com/media/original_images/122_maxprofit_1.PNG)
+![Peak Valley Approach](https://leetcode.com/media/original_images/122_maxprofit_1.png)
 
 _Image source: [LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/solution/)_
 
@@ -86,7 +86,7 @@ Except of the prices array itself the algorithm consumes the constant amount of 
 
 There is even simpler approach exists. Let's say we have the prices array which looks like this `[1, 7, 2, 3, 6, 7, 6, 7]`:
 
-![Simple One Pass](https://leetcode.com/media/original_images/122_maxprofit_2.PNG)
+![Simple One Pass](https://leetcode.com/media/original_images/122_maxprofit_2.png)
 
 _Image source: [LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/solution/)_
 

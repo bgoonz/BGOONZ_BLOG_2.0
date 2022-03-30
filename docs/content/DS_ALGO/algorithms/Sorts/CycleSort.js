@@ -56,4 +56,8 @@ function cycleSort(list) {
     return list;
 }
 
-export { cycleSort };
+export {
+    cycleSort
+};
+cycleSort
+};

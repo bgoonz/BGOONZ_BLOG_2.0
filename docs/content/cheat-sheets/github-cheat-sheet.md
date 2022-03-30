@@ -1,5 +1,5 @@
 ---
-cover: ../../.gitbook/assets/chrome_oKIMcC3StQ.png
+cover: ../../.gitbook/assets/git-banner.png
 coverY: 0
 ---
 

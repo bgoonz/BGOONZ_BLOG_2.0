@@ -31,41 +31,43 @@ export default function shortestCommonSupersequence(set1, set2) {
             if (!setOnHold1 && set1[setIndex1] !== lcs[lcsIndex]) {
                 supersequence.push(set1[setIndex1]);
                 setIndex1 += 1;
-            } else {
-                setOnHold1 = true;
-            }
-        }
-
-        // Add elements of the second set to supersequence in correct order.
-        if (setIndex2 < set2.length) {
-            if (!setOnHold2 && set2[setIndex2] !== lcs[lcsIndex]) {
-                supersequence.push(set2[setIndex2]);
-                setIndex2 += 1;
-            } else {
-                setOnHold2 = true;
-            }
-        }
-
-        // Add LCS element to the supersequence in correct order.
-        if (setOnHold1 && setOnHold2) {
-            supersequence.push(lcs[lcsIndex]);
-            lcsIndex += 1;
-            setIndex1 += 1;
-            setIndex2 += 1;
-            setOnHold1 = false;
-            setOnHold2 = false;
+            } else {}
+            setOnHold1 = true;
         }
     }
 
-    // Attach set1 leftovers.
-    if (setIndex1 < set1.length) {
-        supersequence = supersequence.concat(set1.slice(setIndex1));
-    }
-
-    // Attach set2 leftovers.
+    // Add elements of the second set to supersequence in correct order.
     if (setIndex2 < set2.length) {
-        supersequence = supersequence.concat(set2.slice(setIndex2));
+        if (!setOnHold2 && set2[setIndex2] !== lcs[lcsIndex]) {
+            supersequence.push(set2[setIndex2]);
+            setIndex2 += 1;
+        } else {}
+        setOnHold2 = true;
     }
+}
 
-    return supersequence;
+// Add LCS element to the supersequence in correct order.
+if (setOnHold1 && setOnHold2) {
+    supersequence.push(lcs[lcsIndex]);
+    lcsIndex += 1;
+    setIndex1 += 1;
+    setIndex2 += 1;
+    setOnHold1 = false;
+    setOnHold2 = false;
+}
+}
+
+// Attach set1 leftovers.
+if (setIndex1 < set1.length) {
+    supersequence = supersequence.concat(set1.slice(setIndex1));
+}
+
+// Attach set2 leftovers.
+if (setIndex2 < set2.length) {
+    supersequence = supersequence.concat(set2.slice(setIndex2));
+}
+
+return supersequence;
+}
+return supersequence;
 }
