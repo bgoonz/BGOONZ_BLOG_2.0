@@ -358,6 +358,8 @@ In this example, we use a fat arrow style function. Note that when we declare a 
 
     const jane = new Person("Jane");
 
+```
+
 ---
 
 # The Complete JavaScript Reference Guide

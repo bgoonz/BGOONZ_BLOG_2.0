@@ -404,7 +404,7 @@ Some text to show that the reference links can follow later.
 
 ## Images
 
-![](images/md-cheat-sheet-42411273.PNG)
+![](images/md-cheat-sheet-42411273.png)
 
 ```no-highlight
 Here's our logo (hover to see the title text):
@@ -442,7 +442,7 @@ Inline `code` has `back-ticks around` it.
 
 Blocks of code are either fenced by lines with three back-ticks <code>\`\`\`</code>, or are indented with four spaces. I recommend only using the fenced code blocks -- they're easier and only they support syntax highlighting.
 
-<pre lang="no-highlight"><code>```javascript
+<pre lang="no-highlight"><code>```js
 var s = "JavaScript syntax highlighting";
 alert(s);
 ```
@@ -458,7 +458,7 @@ But let's throw in a &lt;b&gt;tag&lt;/b&gt;.
 ```
 </code></pre>
 
-```javascript
+```js
 var s = 'JavaScript syntax highlighting';
 alert(s);
 ```
@@ -675,7 +675,7 @@ Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar
 
 ## Video Embeds
 
-<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);sandbox="allow-scripts" style="resize:both; overflow:scroll;"    width="560" height="315" src="https://www.youtube.com/embed/8uuFIi-ghPI"  allowfullscreen></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    width="560" height="315" src="https://www.youtube.com/embed/8uuFIi-ghPI"  allowfullscreen></iframe>
 
 ## Code Blocks
 
@@ -686,7 +686,7 @@ Blocks of code are either fenced by `lines with three back-ticks`, or are indent
       color:red;
     }
 
-```javascript
+```js
 window.$docsify = {
     coverpage: true,
 

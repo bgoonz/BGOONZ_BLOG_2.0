@@ -30,17 +30,14 @@ template: docs
 # ➤ Connect with me:
 
 <br>
-<img
-      src="https://qrickit.com/api/qr.php?d=BEGIN%3aVCARD%0d%0aVERSION%3a3.0%0d%0aN%3aGuner%3bBryan%0d%0aORG%3aWebDevHub%0d%0aEMAIL%3aBryanGuner%40email.com%0d%0aTEL%3bTYPE%3dCELL%3a5555555555%0d%0aTEL%3bTYPE%3dWORK%2cVOICE%3a5512545505%0d%0aURL%3ahttps%3A%2F%2Fbgoonzblog20master.gatsbyjs.io%2F%0d%0aEND%3aVCARD%0A&addtext=&txtcolor=000000&fgdcolor=000000&bgdcolor=FFFFFF&qrsize=100"
-    />
 <br>
 
-<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7); src="https://bgoonz.github.io/fb-and-twitter-api-embeds/"  id="social-embed"  width="1000px" ></iframe>
+<iframe  src="https://bgoonz.github.io/fb-and-twitter-api-embeds/"  id="social-embed"  width="1000px" ></iframe>
 
 <br>
 <br>
 
-<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);sandbox="allow-scripts" style="resize:both; overflow:scroll;"  src="https://discord.com/widget?id=739632674276245685&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"  src="https://discord.com/widget?id=739632674276245685&theme=dark" width="350" height="500"  frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 
 <br>
 <br>

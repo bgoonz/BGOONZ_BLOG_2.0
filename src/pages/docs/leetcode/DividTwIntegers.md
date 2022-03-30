@@ -47,7 +47,7 @@ Every decimal number can be represented as `a0*2^0 + a1*2^1 + a2*2^2 + ... + an*
 
 Replace multiplication and division with binary shifting.
 
-```javascript
+```js
 /**
  * @param {number} dividend
  * @param {number} divisor

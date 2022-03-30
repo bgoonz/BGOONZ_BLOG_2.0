@@ -1,10 +1,10 @@
 ---
 title: Callstack Visualizer
 weight: 0
-excerpt: The Call Stack tracks function calls. It is a LIFO stack of frames. Each frame represents a function call.
+excerpt: Callstack Visualizer
 seo:
-    title: 'Callstack Visualizer'
-    description: 'The Call Stack tracks function calls. It is a LIFO stack of frames. Each frame represents a function call.'
+    title: ''
+    description: ''
     robots: []
     extra: []
 template: docs
@@ -12,7 +12,7 @@ template: docs
 
 <script async src="//jsfiddle.net/bgoonz/tu3Lw57r/embed/result/dark/"></script>
 
-<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);sandbox="allow-scripts" style="resize:both; overflow:scroll;"    height="800px" width="1000px" scrolling="yes" title="Linear vs Binary Search" src="https://codepen.io/bgoonz/embed/MWbZoOa?default-tab=result&editable=true&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    height="800px" width="1000px" scrolling="yes" title="Linear vs Binary Search" src="https://codepen.io/bgoonz/embed/MWbZoOa?default-tab=result&editable=true&theme-id=light"   frameborder="yes" loading="lazy"  allowfullscreen="true">
   See the Pen <a href="https://codepen.io/bgoonz/pen/MWbZoOa">
   Linear vs Binary Search</a> by Bryan C Guner (<a href="https://codepen.io/bgoonz">@bgoonz</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -27,7 +27,7 @@ template: docs
 
 ## Callstack Visualizer
 
-<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://visualize-callstack-qdvyu8oyc-visualize42.vercel.app/" height="900px" width="100%">
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://visualize-callstack-qdvyu8oyc-visualize42.vercel.app/" height="900px" width="100%">
 </iframe>
 
 ###### About the Call Stack

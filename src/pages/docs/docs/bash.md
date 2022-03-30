@@ -604,7 +604,7 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/bash-commands-that-save-time-920fb6ab9d0a" class="p-canonical">Canonical link</a>
 
-Exported from [Medium](https://medium.com) on August 31, 2021.
+ August 31, 2021.
 
 # Resources:
 
@@ -1403,7 +1403,7 @@ echo '  </style>'
 
   echo "<ul>"
 
-  awk '{print "<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src=\""$1"\">","</iframe>"}' $listing
+  awk '{print "<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src=\""$1"\">","</iframe>"}' $listing
 
   # awk '{print "<li>"};
 

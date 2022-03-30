@@ -337,7 +337,12 @@ unction divide(a, b) {
 
 Can be written as this:
 
+---
+
+
 ```js
+
+
 function divide(a, b = 1) {
     return a / b;
 }

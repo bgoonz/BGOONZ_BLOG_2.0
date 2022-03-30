@@ -15,7 +15,12 @@ thumb_image: https://www.tutorialsteacher.com/Content/images/js/hoisting.png
 
 Understanding [hoisting](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var#var_hoisting) will help you organize your function scope. Just remember, variable declarations and function definitions are hoisted to the top. Variable definitions are not, even if you declare and define a variable on the same line. Also, a variable **declaration** lets the system know that the variable exists while **definition** assigns it a value.
 
-```javascript
+---
+
+
+```js
+
+
 function doTheThing() {
     // ReferenceError: notDeclared is not defined
     console.log(notDeclared);

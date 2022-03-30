@@ -27,7 +27,7 @@ template: docs
 
 #### Find:
 
-# To find files by case-insensitive extension (ex: .jpg, .JPG, .jpG):
+# To find files by case-insensitive extension (ex: .jpg, .jpg, .jpG):
 
 find . -iname "\*.jpg"
 
@@ -886,7 +886,7 @@ echo '  </style>'
 
   echo "<ul>"
 
-  awk '{print "<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src=\""$1"\">","</iframe>"}' $listing
+  awk '{print "<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src=\""$1"\">","</iframe>"}' $listing
 
   # awk '{print "<li>"};
 

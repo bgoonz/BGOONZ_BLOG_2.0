@@ -42,7 +42,7 @@ JavaScript specific optimization.
 
 Also, appending string is faster than prepending.
 
-```javascript
+```js
 /**
  * @param {string} digits
  * @return {string[]}
@@ -82,7 +82,7 @@ let letterCombinations = function (digits) {
 
 General recursive DFS solution.
 
-```javascript
+```js
 /**
  * @param {string} digits
  * @return {string[]}

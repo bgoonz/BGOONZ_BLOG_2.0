@@ -2959,7 +2959,7 @@ template: docs
 -   [✅] [_**Interactive Scenario: PostgreSQL Fundamentals: HashIndex**_](https://learning.oreilly.com/scenarios/postgresql-fundamentals-hash/9781098114381/)
 -   [✅] [_**Interactive Scenario: PostgreSQL Fundamentals: Block RangeIndex**_](https://learning.oreilly.com/scenarios/postgresql-fundamentals-block/9781098114398/)
 -   [✅] [_**Referred memberships -- Medium HelpCenter**_](https://help.medium.com/hc/en-us/articles/4405927192215?source=post_page-----4c5a06ac3507--------------------------------)
--   [✅] [_**Paste to Markdown**_](https://euangoddard.github.io/clipboard2markdown/)
+-   [✅] [_**Paste to Markdown**_](https://bgoonz.github.io/paste-2-markdown-web/)
 -   [✅] [_**Webflow - Bryan\'s SpectacularProject**_](https://webflow.com/design/bryans-spectacular-project-fae067)
 -   [✅] [_**Webflow - Section ScrollInteraction**_](https://preview.webflow.com/preview/section-scroll-interaction?utm_medium=preview_link&utm_source=showcase_slider&utm_content=section-scroll-interaction&preview=c958906377274cc9d25a9c596fb2983d)
 -   [✅] [_**ruby on rails - How to fix: error: \'\<filename\>\' does not have acommit checked out fatal: adding files failed when inputting \"git add.\" in command prompt - StackOverflow**_](https://stackoverflow.com/questions/56873278/how-to-fix-error-filename-does-not-have-a-commit-checked-out-fatal-adding)

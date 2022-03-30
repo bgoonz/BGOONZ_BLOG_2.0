@@ -26,16 +26,10 @@ template: docs
 <div align="center">
 
 <h1>Hi 👋, I'm Bryan</h1>
-
-<img align="center" 
-      src="https://qrickit.com/api/qr.php?d=BEGIN%3aVCARD%0d%0aVERSION%3a3.0%0d%0aN%3aGuner%3bBryan%0d%0aORG%3aWebDevHub%0d%0aEMAIL%3aBryanGuner%40email.com%0d%0aTEL%3bTYPE%3dCELL%3a5555555555%0d%0aTEL%3bTYPE%3dWORK%2cVOICE%3a5512545505%0d%0aURL%3ahttps%3A%2F%2Fbgoonzblog20master.gatsbyjs.io%2F%0d%0aEND%3aVCARD%0A&addtext=&txtcolor=000000&fgdcolor=000000&bgdcolor=FFFFFF&qrsize=100"
-    />
-  <br>
-  <br>
+  
 <img align="center"  src="https://github.com/bgoonz/bgoonz/blob/master/circle-small-sharp.png?raw=true?raw=true" ></img>
+## ➤ _📧_ [bryan.guner@gmail.com](📲) _☎️_ [551-254-5505](551-254-5505)
 
-<br>
-<br>
 ![Profile views](https://views.whatilearened.today/views/github/bgoonz/views.svg)[![Gitter](https://badges.gitter.im/bgoonz/community.svg)](https://gitter.im/bgoonz/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)[![hackmd-github-sync-badge](https://hackmd.io/5DeYj2oXTvGJ1-Xvp1Jo2Q/badge)](https://hackmd.io/5DeYj2oXTvGJ1-Xvp1Jo2Q)[![GitHub followers](https://img.shields.io/github/followers/bgoonz.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/bgoonz?tab=followers)
 
 ### [💻WEBSITE💻](https://bgoonz-blog.netlify.app/) ⇄ [Portfolio](https://bg-portfolio.netlify.app/) ⇄ [Recent Work](https://bgoonz.github.io/github-stats-website/) ⇄ [MY DOCS📚](https://bryan-guner.gitbook.io/my-docs/)
@@ -372,7 +366,7 @@ Creating things that change my every day life.
 
 the method string.replaceAll(search, replaceWith) replaces all appearances of search string with replaceWith.
 
-```javascript
+```js
 
 const str = 'this is a JSsnippets example';
 
@@ -637,7 +631,12 @@ rPartSumsArr(arr1)=[ 1, 7, 12, 6, 5, 10 ]:  [ 10, 15, 21, 33, 40, 41 ]
 
 ### camel2Kabab.js
 
+---
+
+
 ```js
+
+
 function camelToKebab(value) {
     return value.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
 }
@@ -647,7 +646,12 @@ function camelToKebab(value) {
 
 ### camelCase.js
 
+---
+
+
 ```js
+
+
 function camel(str) {
     return str.replace(/(?:^\w|[A-Z]|\b\w|\s+)/g, function (match, index) {
         if (+match === 0) return ''; // or if (/\s+/.test(match)) for white spaces
@@ -660,7 +664,12 @@ function camel(str) {
 
 ### concatLinkedLists.js
 
+---
+
+
 ```js
+
+
 function addTwoNumbers(l1, l2) {
     let result = new ListNode(0);
     let currentNode = result;
@@ -721,7 +730,12 @@ console.log(isAlphaNumeric('!')); //false
 
 ### find-n-replace.js
 
+---
+
+
 ```js
+
+
 function replaceWords(str, before, after) {
     if (/^[A-Z]/.test(before)) {
         after = after[0].toUpperCase() + after.substring(1);
@@ -761,7 +775,12 @@ console.log(isWeekday(new Date(2021, 0, 10)));
 
 ### longest-common-prefix.js
 
+---
+
+
 ```js
+
+
 function longestCommonPrefix(strs) {
     let prefix = '';
     if (strs.length === 0) return prefix;

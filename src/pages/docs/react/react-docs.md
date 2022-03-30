@@ -130,7 +130,12 @@ You can put any valid [JavaScript expression](https://developer.mozilla.org/en-U
 
 In the example below, we embed the result of calling a JavaScript function, `formatName(user)`, into an `<h1>` element.
 
+---
+
+
 ```js
+
+
 function formatName(user) {
     return user.firstName + ' ' + user.lastName;
 }
@@ -160,7 +165,12 @@ After compilation, JSX expressions become regular JavaScript function calls and 
 
 This means that you can use JSX inside of `if` statements and `for` loops, assign it to variables, accept it as arguments, and return it from functions:
 
+---
+
+
 ```js
+
+
 function getGreeting(user) {
     if (user) {
         return <h1>Hello, {formatName(user)}!</h1>;
@@ -311,7 +321,12 @@ With our knowledge so far, the only way to update the UI is to create a new elem
 
 Consider this ticking clock example:
 
+---
+
+
 ```js
+
+
 function tick() {
     const element = (
         <div>
@@ -364,7 +379,12 @@ Conceptually, components are like JavaScript functions. They accept arbitrary in
 
 The simplest way to define a component is to write a JavaScript function:
 
+---
+
+
 ```js
+
+
 function Welcome(props) {
     return <h1>Hello, {props.name}</h1>;
 }
@@ -407,7 +427,12 @@ When React sees an element representing a user-defined component, it passes JSX 
 
 For example, this code renders "Hello, Sara" on the page:
 
+---
+
+
 ```js
+
+
 function Welcome(props) {
     return <h1>Hello, {props.name}</h1>;
 }
@@ -438,7 +463,12 @@ Components can refer to other components in their output. This lets us use the s
 
 For example, we can create an `App` component that renders `Welcome` many times:
 
+---
+
+
 ```js
+
+
 function Welcome(props) {
     return <h1>Hello, {props.name}</h1>;
 }
@@ -470,7 +500,12 @@ Don't be afraid to split components into smaller components.
 
 For example, consider this `Comment` component:
 
+---
+
+
 ```js
+
+
 function Comment(props) {
     return (
         <div className="Comment">
@@ -495,7 +530,12 @@ This component can be tricky to change because of all the nesting, and it is als
 
 First, we will extract `Avatar`:
 
+---
+
+
 ```js
+
+
 function Avatar(props) {
     return <img className="Avatar" src={props.user.avatarUrl} alt={props.user.name} />;
 }
@@ -507,7 +547,12 @@ We recommend naming props from the component's own point of view rather than the
 
 We can now simplify `Comment` a tiny bit:
 
+---
+
+
 ```js
+
+
 function Comment(props) {
     return (
         <div className="Comment">
@@ -527,7 +572,12 @@ Next, we will extract a `UserInfo` component that renders an `Avatar` next to th
 
 This lets us simplify `Comment` even further:
 
+---
+
+
 ```js
+
+
 function Comment(props) {
     return (
         <div className="Comment">
@@ -554,7 +604,12 @@ Extracting components might seem like grunt work at first, but having a palette 
 
 Whether you declare a component [as a function or a class](https://reactjs.org/docs/components-and-props.html#function-and-class-components), it must never modify its own props. Consider this `sum` function:
 
+---
+
+
 ```js
+
+
 function sum(a, b) {
     return a + b;
 }
@@ -564,7 +619,12 @@ Such functions are called ["pure"](https://en.wikipedia.org/wiki/Pure_function) 
 
 In contrast, this function is impure because it changes its own input:
 
+---
+
+
 ```js
+
+
 function withdraw(account, amount) {
   account.total -= amount;
 }
@@ -585,7 +645,12 @@ This page introduces the concept of state and lifecycle in a React component. Yo
 
 Consider the ticking clock example from [one of the previous sections](https://reactjs.org/docs/rendering-elements.html#updating-the-rendered-element). In [Rendering Elements](https://reactjs.org/docs/rendering-elements.html#rendering-an-element-into-the-dom), we have only learned one way to update the UI. We call `ReactDOM.render()` to change the rendered output:
 
+---
+
+
 ```js
+
+
 function tick() {
   const element = (
     <div>      <h1>Hello, world!</h1>      <h2>It is {new Date().toLocaleTimeString()}.</h2>    </div>);
@@ -601,7 +666,12 @@ In this section, we will learn how to make the `Clock` component truly reusable 
 
 We can start by encapsulating how the clock looks:
 
+---
+
+
 ```js
+
+
 function Clock(props) {
     return (
         <div>
@@ -754,7 +824,7 @@ ReactDOM.render(<Clock />, document.getElementById('root'));
 
 [](https://codepen.io/bgoonz/pen/oNwgZbV?editors=0010)<https://codepen.io/bgoonz/pen/oNwgZbV?editors=0010>
 
-<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/KgQpJd?editors=0010" height="900px" width="100%"> </iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/KgQpJd?editors=0010" height="900px" width="100%"> </iframe>
 
 Next, we'll make the `Clock` set up its own timer and update itself every second.
 
@@ -850,7 +920,7 @@ ReactDOM.render(<Clock />, document.getElementById('root'));
 
 **[Try it on CodePen](https://codepen.io/gaearon/pen/amqdNA?editors=0010)**
 
-<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/amqdNA?editors=0010" height="900px" width="100%"> </iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/amqdNA?editors=0010" height="900px" width="100%"> </iframe>
 
 Now the clock ticks every second.
 
@@ -979,7 +1049,12 @@ A component may choose to pass its state down as props to its child components:
 
 The `FormattedDate` component would receive the `date` in its props and wouldn't know whether it came from the `Clock`'s state, from the `Clock`'s props, or was typed by hand:
 
+---
+
+
 ```js
+
+
 function FormattedDate(props) {
     return <h2>It is {props.date.toLocaleTimeString()}.</h2>;
 }
@@ -989,7 +1064,7 @@ function FormattedDate(props) {
 
 [](https://codepen.io/bgoonz/pen/GREgWEp?editors=0010)<https://codepen.io/bgoonz/pen/GREgWEp?editors=0010>
 
-<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/zKRqNB?editors=0010" height="900px" width="100%"> </iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/zKRqNB?editors=0010" height="900px" width="100%"> </iframe>
 
 This is commonly called a "top-down" or "unidirectional" data flow. Any state is always owned by some specific component, and any data or UI derived from that state can only affect components "below" them in the tree.
 
@@ -997,7 +1072,12 @@ If you imagine a component tree as a waterfall of props, each component's state 
 
 To show that all components are truly isolated, we can create an `App` component that renders three `<Clock>`s:
 
+---
+
+
 ```js
+
+
 function App() {
     return (
         <div>
@@ -1014,7 +1094,7 @@ ReactDOM.render(<App />, document.getElementById('root'));
 
 [](https://codepen.io/bgoonz/pen/YzQPZQK?editors=0010)<https://codepen.io/bgoonz/pen/YzQPZQK?editors=0010>
 
-<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/vXdGmd?editors=0010" height="900px" width="100%"> </iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/vXdGmd?editors=0010" height="900px" width="100%"> </iframe>
 
 Each `Clock` sets up its own timer and updates independently.
 
@@ -1052,7 +1132,12 @@ Another difference is that you cannot return `false` to prevent default behavior
 
 In React, this could instead be:
 
+---
+
+
 ```js
+
+
 function Form() {
     function handleSubmit(e) {
         e.preventDefault();
@@ -1098,7 +1183,7 @@ ReactDOM.render(
 
 **[Try it on CodePen](https://codepen.io/gaearon/pen/xEmzGg?editors=0010)**
 
-<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/xEmzGg?editors=0010" height="900px" width="100%"> </iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/xEmzGg?editors=0010" height="900px" width="100%"> </iframe>
 
 You have to be careful about the meaning of `this` in JSX callbacks. In JavaScript, class methods are not [bound](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_objects/Function/bind) by default. If you forget to bind `this.handleClick` and pass it to `onClick`, `this` will be `undefined` when the function is actually called.
 
@@ -1161,7 +1246,12 @@ Conditional rendering in React works the same way conditions work in JavaScript.
 
 Consider these two components:
 
+---
+
+
 ```js
+
+
 function UserGreeting(props) {
     return <h1>Welcome back!</h1>;
 }
@@ -1173,7 +1263,12 @@ function GuestGreeting(props) {
 
 We'll create a `Greeting` component that displays either of these components depending on whether a user is logged in:
 
+---
+
+
 ```js
+
+
 function Greeting(props) {
     const isLoggedIn = props.isLoggedIn;
     if (isLoggedIn) {
@@ -1192,7 +1287,7 @@ ReactDOM.render(
 
 [](https://codepen.io/bgoonz/pen/mdwyWmJ?editors=0011)<https://codepen.io/bgoonz/pen/mdwyWmJ?editors=0011>
 
-<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/ZpVxNq?editors=0011" height="900px" width="100%"> </iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/ZpVxNq?editors=0011" height="900px" width="100%"> </iframe>
 
 This example renders a different greeting depending on the value of `isLoggedIn` prop.
 
@@ -1205,7 +1300,12 @@ You can use variables to store elements. This can help you conditionally render 
 
 Consider these two new components representing Logout and Login buttons:
 
+---
+
+
 ```js
+
+
 function LoginButton(props) {
     return <button onClick={props.onClick}>Login</button>;
 }
@@ -1258,7 +1358,7 @@ ReactDOM.render(<LoginControl />, document.getElementById('root'));
 
 **[Try it on CodePen](https://codepen.io/gaearon/pen/QKzAgB?editors=0010)**
 
-<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/QKzAgB?editors=0010" height="900px" width="100%"> </iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/QKzAgB?editors=0010" height="900px" width="100%"> </iframe>
 
 While declaring a variable and using an `if` statement is a fine way to conditionally render a component, sometimes you might want to use a shorter syntax. There are a few ways to inline conditions in JSX, explained below.
 
@@ -1269,7 +1369,12 @@ While declaring a variable and using an `if` statement is a fine way to conditio
 
 You may [embed expressions in JSX](https://reactjs.org/docs/introducing-jsx.html#embedding-expressions-in-jsx) by wrapping them in curly braces. This includes the JavaScript logical `&&` operator. It can be handy for conditionally including an element:
 
+---
+
+
 ```js
+
+
 function Mailbox(props) {
     const unreadMessages = props.unreadMessages;
     return (
@@ -1288,7 +1393,7 @@ ReactDOM.render(<Mailbox unreadMessages={messages} />, document.getElementById('
 
 [](https://codepen.io/bgoonz/pen/VwWYppo?editors=0010)<https://codepen.io/bgoonz/pen/VwWYppo?editors=0010>
 
-<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/ozJddz?editors=0010" height="900px" width="100%"> </iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/ozJddz?editors=0010" height="900px" width="100%"> </iframe>
 
 It works because in JavaScript, `true && expression` always evaluates to `expression`, and `false && expression` always evaluates to `false`.
 
@@ -1342,7 +1447,12 @@ In rare cases you might want a component to hide itself even though it was rende
 
 In the example below, the `<WarningBanner />` is rendered depending on the value of the prop called `warn`. If the value of the prop is `false`, then the component does not render:
 
+---
+
+
 ```js
+
+
 function WarningBanner(props) {
     if (!props.warn) {
         return null;
@@ -1381,7 +1491,7 @@ ReactDOM.render(<Page />, document.getElementById('root'));
 
 **[Try it on CodePen](https://codepen.io/gaearon/pen/Xjoqwm?editors=0010)**
 
-<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/Xjoqwm?editors=0010" height="900px" width="100%"> </iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/Xjoqwm?editors=0010" height="900px" width="100%"> </iframe>
 
 Returning `null` from a component's `render` method does not affect the firing of the component's lifecycle methods. For instance `componentDidUpdate` will still be called.
 
@@ -1428,7 +1538,7 @@ ReactDOM.render(<ul>{listItems}</ul>, document.getElementById('root'));
 
 [](https://codepen.io/bgoonz/pen/eYRmvvr?editors=0011)<https://codepen.io/bgoonz/pen/eYRmvvr?editors=0011>
 
-<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/GjPyQr?editors=0011" height="900px" width="100%"> </iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/GjPyQr?editors=0011" height="900px" width="100%"> </iframe>
 
 This code displays a bullet list of numbers between 1 and 5.
 
@@ -1441,7 +1551,12 @@ Usually you would render lists inside a [component](https://reactjs.org/docs/com
 
 We can refactor the previous example into a component that accepts an array of `numbers` and outputs a list of elements.
 
+---
+
+
 ```js
+
+
 function NumberList(props) {
     const numbers = props.numbers;
     const listItems = numbers.map((number) => <li>{number}</li>);
@@ -1456,7 +1571,12 @@ When you run this code, you'll be given a warning that a key should be provided 
 
 Let's assign a `key` to our list items inside `numbers.map()` and fix the missing key issue.
 
+---
+
+
 ```js
+
+
 function NumberList(props) {
     const numbers = props.numbers;
     const listItems = numbers.map((number) => <li key={number.toString()}> {number}</li>);
@@ -1471,7 +1591,7 @@ ReactDOM.render(<NumberList numbers={numbers} />, document.getElementById('root'
 
 [](https://codepen.io/bgoonz/pen/yLXyMMP?editors=0011)<https://codepen.io/bgoonz/pen/yLXyMMP?editors=0011>
 
-<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/jrXYRR?editors=0011" height="900px" width="100%"> </iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/jrXYRR?editors=0011" height="900px" width="100%"> </iframe>
 
 ## Keys
 
@@ -1512,7 +1632,12 @@ For example, if you [extract](https://reactjs.org/docs/components-and-props.html
 
 **Example: Incorrect Key Usage**
 
+---
+
+
 ```js
+
+
 function ListItem(props) {
   const value = props.value;
   return (
@@ -1539,7 +1664,12 @@ ReactDOM.render(
 
 **Example: Correct Key Usage**
 
+---
+
+
 ```js
+
+
 function ListItem(props) {
   // Correct! There is no need to specify the key here:  return <li>{props.value}</li>;}
 
@@ -1562,7 +1692,7 @@ ReactDOM.render(
 
 **[Try it on CodePen](https://codepen.io/gaearon/pen/ZXeOGM?editors=0010)**
 
-<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/ZXeOGM?editors=0010" height="900px" width="100%"> </iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/ZXeOGM?editors=0010" height="900px" width="100%"> </iframe>
 
 A good rule of thumb is that elements inside the `map()` call need keys.
 
@@ -1573,7 +1703,12 @@ A good rule of thumb is that elements inside the `map()` call need keys.
 
 Keys used within arrays should be unique among their siblings. However, they don't need to be globally unique. We can use the same keys when we produce two different arrays:
 
+---
+
+
 ```js
+
+
 function Blog(props) {
     const sidebar = (
         <ul>
@@ -1608,7 +1743,7 @@ ReactDOM.render(<Blog posts={posts} />, document.getElementById('root'));
 
 [](https://codepen.io/bgoonz/pen/mdwyWWy?editors=0010)<https://codepen.io/bgoonz/pen/mdwyWWy?editors=0010>
 
-<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/NRZYGN?editors=0010" height="900px" width="100%"> </iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/NRZYGN?editors=0010" height="900px" width="100%"> </iframe>
 
 Keys serve as a hint to React but they don't get passed to your components. If you need the same value in your component, pass it explicitly as a prop with a different name:
 
@@ -1625,7 +1760,12 @@ With the example above, the `Post` component can read `props.id`, but not `props
 
 In the examples above we declared a separate `listItems` variable and included it in JSX:
 
+---
+
+
 ```js
+
+
 function NumberList(props) {
     const numbers = props.numbers;
     const listItems = numbers.map((number) => <ListItem key={number.toString()} value={number} />);
@@ -1635,7 +1775,12 @@ function NumberList(props) {
 
 JSX allows [embedding any expression](https://reactjs.org/docs/introducing-jsx.html#embedding-expressions-in-jsx) in curly braces so we could inline the `map()` result:
 
+---
+
+
 ```js
+
+
 function NumberList(props) {
     const numbers = props.numbers;
     return (
@@ -1653,7 +1798,7 @@ function NumberList(props) {
 
 [](https://codepen.io/bgoonz/pen/JjJoWEw?editors=0010)<https://codepen.io/bgoonz/pen/JjJoWEw?editors=0010>
 
-<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/BLvYrB?editors=0010" height="900px" width="100%"> </iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/BLvYrB?editors=0010" height="900px" width="100%"> </iframe>
 
 Sometimes this results in clearer code, but this style can also be abused. Like in JavaScript, it is up to you to decide whether it is worth extracting a variable for readability. Keep in mind that if the `map()` body is too nested, it might be a good time to [extract a component](https://reactjs.org/docs/components-and-props.html#extracting-components).
 
@@ -1723,7 +1868,7 @@ class NameForm extends React.Component {
 
 [](https://codepen.io/bgoonz/pen/rNwayjv?editors=0010)<https://codepen.io/bgoonz/pen/rNwayjv?editors=0010>
 
-<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/VmmPgp?editors=0010" height="900px" width="100%"> </iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/VmmPgp?editors=0010" height="900px" width="100%"> </iframe>
 
 Since the `value` attribute is set on our form element, the displayed value will always be `this.state.value`, making the React state the source of truth. Since `handleChange` runs on every keystroke to update the React state, the displayed value will update as the user types.
 
@@ -1826,7 +1971,7 @@ class FlavorForm extends React.Component {
 
 **[Try it on CodePen](https://codepen.io/gaearon/pen/JbbEzX?editors=0010)**
 
-<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/JbbEzX?editors=0010" height="900px" width="100%"> </iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/JbbEzX?editors=0010" height="900px" width="100%"> </iframe>
 
 Overall, this makes it so that `<input type="text">`, `<textarea>`, and `<select>` all work very similarly - they all accept a `value` attribute that you can use to implement a controlled component.
 
@@ -1891,7 +2036,7 @@ class Reservation extends React.Component {
 
 **[Try it on CodePen](https://codepen.io/gaearon/pen/wgedvV?editors=0010)**
 
-<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/wgedvV?editors=0010" height="900px" width="100%"> </iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/wgedvV?editors=0010" height="900px" width="100%"> </iframe>
 
 Note how we used the ES6 [computed property name](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Object_initializer#Computed_property_names) syntax to update the state key corresponding to the given input name:
 
@@ -1950,7 +2095,12 @@ In this section, we will create a temperature calculator that calculates whether
 
 We will start with a component called `BoilingVerdict`. It accepts the `celsius` temperature as a prop, and prints whether it is enough to boil the water:
 
+---
+
+
 ```js
+
+
 function BoilingVerdict(props) {
     if (props.celsius >= 100) {
         return <p>The water would boil.</p>;
@@ -1993,7 +2143,7 @@ class Calculator extends React.Component {
 
 [](https://codepen.io/bgoonz/pen/zYzxZoL?editors=0010)<https://codepen.io/bgoonz/pen/zYzxZoL?editors=0010>
 
-<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/ZXeOBm?editors=0010" height="900px" width="100%"> </iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/ZXeOBm?editors=0010" height="900px" width="100%"> </iframe>
 
 ## Adding a Second Input
 
@@ -2046,7 +2196,7 @@ class Calculator extends React.Component {
 
 [](https://codepen.io/bgoonz/pen/QWgwpGv?editors=0010)<https://codepen.io/bgoonz/pen/QWgwpGv?editors=0010>
 
-<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/jGBryx?editors=0010" height="900px" width="100%"> </iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/jGBryx?editors=0010" height="900px" width="100%"> </iframe>
 
 We have two inputs now, but when you enter the temperature in one of them, the other doesn't update. This contradicts our requirement: we want to keep them in sync.
 
@@ -2059,7 +2209,12 @@ We also can't display the `BoilingVerdict` from `Calculator`. The `Calculator` d
 
 First, we will write two functions to convert from Celsius to Fahrenheit and back:
 
+---
+
+
 ```js
+
+
 function toCelsius(fahrenheit) {
     return ((fahrenheit - 32) * 5) / 9;
 }
@@ -2073,7 +2228,12 @@ These two functions convert numbers. We will write another function that takes a
 
 It returns an empty string on an invalid `temperature`, and it keeps the output rounded to the third decimal place:
 
+---
+
+
 ```js
+
+
 function tryConvert(temperature, convert) {
     const input = parseFloat(temperature);
     if (Number.isNaN(input)) {
@@ -2221,7 +2381,7 @@ class Calculator extends React.Component {
 
 **[Try it on CodePen](https://codepen.io/gaearon/pen/WZpxpz?editors=0010)**
 
-<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/WZpxpz?editors=0010" height="900px" width="100%"> </iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/WZpxpz?editors=0010" height="900px" width="100%"> </iframe>
 
 Now, no matter which input you edit, `this.state.temperature` and `this.state.scale` in the `Calculator` get updated. One of the inputs gets the value as is, so any user input is preserved, and the other input value is always recalculated based on it.
 
@@ -2268,7 +2428,12 @@ Some components don't know their children ahead of time. This is especially comm
 
 We recommend that such components use the special `children` prop to pass children elements directly into their output:
 
+---
+
+
 ```js
+
+
 function FancyBorder(props) {
     return <div className={'FancyBorder FancyBorder-' + props.color}> {props.children} </div>;
 }
@@ -2276,7 +2441,12 @@ function FancyBorder(props) {
 
 This lets other components pass arbitrary children to them by nesting the JSX:
 
+---
+
+
 ```js
+
+
 function WelcomeDialog() {
     return (
         <FancyBorder color="blue">
@@ -2293,7 +2463,12 @@ Anything inside the `<FancyBorder>` JSX tag gets passed into the `FancyBorder` c
 
 While this is less common, sometimes you might need multiple "holes" in a component. In such cases you may come up with your own convention instead of using `children`:
 
+---
+
+
 ```js
+
+
 function SplitPane(props) {
   return (
     <div className="SplitPane">      <div className="SplitPane-left">        {props.left}      </div>      <div className="SplitPane-right">        {props.right}      </div>    </div>);
@@ -2321,7 +2496,12 @@ Sometimes we think about components as being "special cases" of other components
 
 In React, this is also achieved by composition, where a more "specific" component renders a more "generic" one and configures it with props:
 
+---
+
+
 ```js
+
+
 function Dialog(props) {
     return (
         <FancyBorder color="blue">
@@ -2340,7 +2520,12 @@ function WelcomeDialog() {
 
 Composition works equally well for components defined as classes:
 
+---
+
+
 ```js
+
+
 function Dialog(props) {
     return (
         <FancyBorder color="blue">
