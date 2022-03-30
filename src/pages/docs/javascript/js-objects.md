@@ -20,7 +20,7 @@ Objects are _key-value_ stores, more specifically _stringkey-value_ stores. The
 The syntax to create a plain object is `{key: value, ...}`, which is called an
 object literal. For example:
 
-```js
+```javascript
 var obj = {
     foo: 'bar',
     baz: 42

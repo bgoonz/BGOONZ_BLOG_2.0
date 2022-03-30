@@ -17,7 +17,7 @@ Variables can be declared without an initial value.
 
 Some example declarations:
 
-```js
+```javascript
 var foo;
 var bar = 42;
 var foo, bar, baz;
@@ -64,7 +64,7 @@ result in a syntax error.
 
 Examples:
 
-```js
+```javascript
 var π = 3.141;
 var _foo = π;
 var 0_bar = '...'; // Syntax error
@@ -76,7 +76,7 @@ var 0_bar = '...'; // Syntax error
 
 Trying to _read_ an _undeclared variable_ results in a runtime error:
 
-```js
+```javascript
 var foo;
 console.log(bar); // ReferenceError: bar is not defined.
 ```
@@ -84,12 +84,7 @@ console.log(bar); // ReferenceError: bar is not defined.
 However, _writing_ to an undeclared variable is valid by default. It will
 create an _implicit global variable_ and should thus be avoided:
 
----
-
-
-```js
-
-
+```javascript
 function foo() {
     bar = 42;
 }

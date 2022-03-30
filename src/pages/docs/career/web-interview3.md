@@ -14,7 +14,7 @@ template: docs
 
 If an Array only contains primitive values, we can deduplicate it by only using the [`filter`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) and [`indexOf`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf) methods.
 
-```js
+```javascript
 var deduped = [1, 1, 'a', 'a'].filter(function (el, i, arr) {
     return arr.indexOf(el) === i;
 });
@@ -26,7 +26,7 @@ console.log(deduped); // [ 1, 'a' ]
 
 We can write this in a more compact way using an [arrow function](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions).
 
-```js
+```javascript
 var deduped = [1, 1, 'a', 'a'].filter((el, i, arr) => arr.indexOf(el) === i);
 
 console.log(deduped); // [ 1, 'a' ]
@@ -34,7 +34,7 @@ console.log(deduped); // [ 1, 'a' ]
 
 But with the introduction of [Sets](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set) and the [`from`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/from) method, we can achieve the same result in a more concise way.
 
-```js
+```javascript
 var deduped = Array.from(new Set([1, 1, 'a', 'a']));
 
 console.log(deduped); // [ 1, 'a' ]
@@ -44,7 +44,7 @@ console.log(deduped); // [ 1, 'a' ]
 
 We can't use the same approach when the elements are Objects, because Objects are stored by reference and primitives are stored by value.
 
-```js
+```javascript
 
 1 === 1 // true
 
@@ -56,12 +56,7 @@ We can't use the same approach when the elements are Objects, because Objects ar
 
 Therefore we need to change our approach and use a hash table.
 
----
-
-
-```js
-
-
+```javascript
 function dedup(arr) {
     var hashTable = {};
 
@@ -81,7 +76,7 @@ console.log(deduped); // [ {a: 1}, [1, 2] ]
 
 Because a hash table in javascript is simply an `Object`, the keys will always be of the type `String`. This means that normally we can't distinguish between strings and numbers of the same value, i.e. `1` and `'1'`.
 
-```js
+```javascript
 var hashTable = {};
 
 hashTable[1] = true;
@@ -93,7 +88,7 @@ console.log(hashTable); // { '1': true }
 
 However, because we're using [`JSON.stringify`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify), keys that are of the type `String`, will be stored as an escaped string value, giving us unique keys in our `hashTable`.
 
-```js
+```javascript
 var hashTable = {};
 
 hashTable[JSON.stringify(1)] = true;
@@ -105,7 +100,7 @@ console.log(hashTable); // { '1': true, '\'1\'': true }
 
 This means duplicate elements of the same value, but of a different type, will still be deduplicated using the same implementation.
 
-```js
+```javascript
 var deduped = dedup([{ a: 1 }, { a: 1 }, [1, 2], [1, 2], 1, 1, '1', '1']);
 
 console.log(deduped); // [ {a: 1}, [1, 2], 1, '1' ]
@@ -361,7 +356,7 @@ If you define a getter without a setter and still try to set a value, you will g
 
 Let's say there is an object with properties "prop1", "prop2", "prop3". We can pass **additional params** to **JSON.stringify** to selectively write properties of the object to string like:
 
-```js
+```javascript
 var obj = {
     prop1: 'value1',
 
@@ -383,12 +378,7 @@ The **"str"** will contain only info on selected properties only.
 
 Instead of array we can pass a function also.
 
----
-
-
-```js
-
-
+```javascript
 function selectedProperties(key, val) {
     // the first val will be the entire object, key is empty string
 
@@ -406,7 +396,7 @@ function selectedProperties(key, val) {
 
 The last optional param it takes is to modify the way it writes the object to string.
 
-```js
+```javascript
 var str = JSON.stringify(obj, selectedProperties, '\t\t');
 
 /* str output with double tabs in every line.
@@ -432,7 +422,7 @@ var str = JSON.stringify(obj, selectedProperties, '\t\t');
 
 The following examples will be based on the following array:
 
-```js
+```javascript
 let values = [2, 56, 3, 41, 0, 4, 100, 23];
 ```
 
@@ -444,7 +434,7 @@ To get the average, we have to sum up numbers and then divide by the number of v
 
 - get the average (`sum/length`)
 
-```js
+```javascript
 let values = [2, 56, 3, 41, 0, 4, 100, 23];
 
 let sum = values.reduce((previous, current) => (current += previous));
@@ -456,7 +446,7 @@ let avg = sum / values.length;
 
 Or:
 
-```js
+```javascript
 let values = [2, 56, 3, 41, 0, 4, 100, 23];
 
 let count = values.length;
@@ -474,7 +464,7 @@ Now, to get the median steps are:
 - 
 - get the arethmic mean of the middle values
 
-```js
+```javascript
 let values = [2, 56, 3, 41, 0, 4, 100, 23];
 
 values.sort((a, b) => a - b);
@@ -490,7 +480,7 @@ let median = (values[lowMiddle] + values[highMiddle]) / 2;
 
 With a bitwise operator:
 
-```js
+```javascript
 let values = [2, 56, 3, 41, 0, 4, 100, 23];
 
 values.sort((a, b) => a - b);
@@ -941,7 +931,7 @@ So let's see a common usage and later a more sophisticated one.
 
 We are on Amazon website (prices in $) and our caddy is quite full, let's compute total.
 
-```js
+```javascript
 // my current amazon caddy purchases
 
 var items = [{ price: 10 }, { price: 120 }, { price: 1000 }];
@@ -963,7 +953,7 @@ Optional reduce function parameter was primitive integer type 0 in that first ca
 
 Now, cool I received a discount coupon of 20$.
 
-```js
+```javascript
 var total = items.reduce(reducer, -20);
 
 console.log(total); // 1110
@@ -977,7 +967,7 @@ Idea behind is to separate reducer function into separate individual functions a
 
 To illustrate this, let's create a single object literal with some reducers function able to compute total prices in different currency $, €...
 
-```js
+```javascript
 var reducers = {
     totalInDollar: function (state, item) {
         // specific statements...
@@ -1007,7 +997,7 @@ Then, we create a new swiss knife function
 - 
 - that will return a new callback reducer function
 
-```js
+```javascript
 var combineTotalPriceReducers = function (reducers) {
     return function (state, item) {
         return Object.keys(reducers).reduce(
@@ -1025,7 +1015,7 @@ var combineTotalPriceReducers = function (reducers) {
 
 Now let's see how using it.
 
-```js
+```javascript
 var bigTotalPriceReducer = combineTotalPriceReducers(reducers);
 
 var initialState = { dollars: 0, euros: 0, yens: 0, pounds: 0 };

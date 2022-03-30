@@ -404,7 +404,7 @@ Some text to show that the reference links can follow later.
 
 ## Images
 
-![](images/md-cheat-sheet-42411273.png)
+![](images/md-cheat-sheet-42411273.PNG)
 
 ```no-highlight
 Here's our logo (hover to see the title text):
@@ -442,7 +442,7 @@ Inline `code` has `back-ticks around` it.
 
 Blocks of code are either fenced by lines with three back-ticks <code>\`\`\`</code>, or are indented with four spaces. I recommend only using the fenced code blocks -- they're easier and only they support syntax highlighting.
 
-<pre lang="no-highlight"><code>```js
+<pre lang="no-highlight"><code>```javascript
 var s = "JavaScript syntax highlighting";
 alert(s);
 ```
@@ -458,7 +458,7 @@ But let's throw in a &lt;b&gt;tag&lt;/b&gt;.
 ```
 </code></pre>
 
-```js
+```javascript
 var s = 'JavaScript syntax highlighting';
 alert(s);
 ```
@@ -686,7 +686,7 @@ Blocks of code are either fenced by `lines with three back-ticks`, or are indent
       color:red;
     }
 
-```js
+```javascript
 window.$docsify = {
     coverpage: true,
 

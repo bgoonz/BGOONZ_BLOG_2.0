@@ -12,7 +12,7 @@ template: docs
 
 ### Question: How to get the file extension?
 
-```js
+```javascript
 var file1 = '50.xsl';
 var file2 = '30.doc';
 getFileExtension(file1); //returs xsl
@@ -25,12 +25,7 @@ function getFileExtension(filename) {
 
 ### Solution 1: Regular Expression
 
----
-
-
 ```js
-
-
 function getFileExtension1(filename) {
     return /[.]/.exec(filename) ? /[^.]+$/.exec(filename)[0] : undefined;
 }
@@ -38,12 +33,7 @@ function getFileExtension1(filename) {
 
 ### Solution 2: String `split` method
 
----
-
-
 ```js
-
-
 function getFileExtension2(filename) {
     return filename.split('.').pop();
 }
@@ -53,12 +43,7 @@ Those two solutions couldnot handle some edge cases, here is another more robust
 
 ### Solution3: String `slice`, `lastIndexOf` methods
 
----
-
-
 ```js
-
-
 function getFileExtension3(filename) {
     return filename.slice(((filename.lastIndexOf('.') - 1) >>> 0) + 2);
 }

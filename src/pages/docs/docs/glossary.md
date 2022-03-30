@@ -720,12 +720,7 @@ Here are the two possible methods.
 
 ### Solution #1 - escaping the string before encoding it
 
----
-
-
 ```js
-
-
 function utf8_to_b64(str) {
     return window.btoa(unescape(encodeURIComponent(str)));
 }
@@ -743,12 +738,7 @@ This solution has been proposed by [Johan Sundström](http://ecmanaut.blogspot.c
 
 Another possible solution without utilizing the now deprecated 'unescape' and 'escape' functions.
 
----
-
-
 ```js
-
-
 function b64EncodeUnicode(str) {
     return btoa(
         encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, function (match, p1) {
@@ -1443,12 +1433,7 @@ Cache-Control: no-cache
 
 ## Example
 
----
-
-
 ```js
-
-
 function greeting() {
     // [1] Some code here
     sayHi();
@@ -1518,12 +1503,7 @@ In summary, then, we start with an empty Call Stack. Whenever we invoke a functi
 
 Here is a quick example:
 
----
-
-
 ```js
-
-
 function greeting(name) {
     alert('Hello ' + name);
 }
@@ -2238,12 +2218,7 @@ function Overloaded(arg1, arg2, ..., argN){
 
 To call the constructor of the class in JavaScript, use a `new` operator to assign a new _glossary("object reference"_) to a _glossary("variable"_).
 
----
-
-
 ```js
-
-
 function Default() {}
 
 // A new reference of a Default object assigned to a
@@ -4090,12 +4065,7 @@ We assigned an **Anonymous Function** in a _glossary("Variable"_), then we used 
 
 ### JavaScript
 
----
-
-
 ```js
-
-
 function sayHello() {
     return 'Hello, ';
 }
@@ -4115,12 +4085,7 @@ We are passing our `sayHello()` function as an argument to the `greeting()` func
 
 ### JavaScript
 
----
-
-
 ```js
-
-
 function sayHello() {
     return function () {
         console.log('Hello!');
@@ -4153,12 +4118,7 @@ This way, it returns the `Hello!` message.
 
 ### 2- Using double parentheses
 
----
-
-
 ```js
-
-
 function sayHello() {
     return function () {
         console.log('Hello!');
@@ -4654,12 +4614,7 @@ const foo = () => {};
 
 An **inner function** is a function inside another function (`square` in this case). An **outer function** is a function containing a function (`addSquares` in this case):
 
----
-
-
 ```js
-
-
 function addSquares(a, b) {
     function square(x) {
         return x * x;
@@ -4675,12 +4630,7 @@ const addSquares = (a, b) => {
 
 A **recursive function** is a function that calls itself. See _Glossary("Recursion", "recursion"_).
 
----
-
-
 ```js
-
-
 function loop(x) {
     if (x >= 10) return;
     loop(x + 1);
@@ -4872,12 +4822,7 @@ foo: 'foobar';
 
 ### Access Global Functions
 
----
-
-
 ```js
-
-
 function greeting() {
     console.log('Hi!');
 }
@@ -5868,12 +5813,7 @@ The result of the code above is: "My cat's name is Tiger"
 
 Without hoisting you would _have_ to write the same code like this:
 
----
-
-
 ```js
-
-
 function catName(name) {
     console.log("My cat's name is " + name);
 }
@@ -8907,12 +8847,7 @@ These are not same origin because they use different ports:
 
 > A Proxy Auto-Configuration file (**PAC file**) is a file which contains a function, `FindProxyForURL()`, which is used by the browser to determine whether requests (including HTTP, HTTPS, and FTP) should go directly to the destination or if they need to be forwarded through a web proxy server.
 
----
-
-
 ```js
-
-
 function FindProxyForURL(url, host) {
     /* ... */
 }
@@ -9039,12 +8974,7 @@ Although browser page prediction and prediction services enable faster page load
 
 For example:
 
----
-
-
 ```js
-
-
 function example(parameter) {
     console.log(parameter); // Output = foo
 }
@@ -10944,12 +10874,7 @@ Some SCM systems include CVS, SVN, GIT.
 
 A **_glossary("function"_)** serves as a **closure** in _glossary("JavaScript"_), and thus creates a scope, so that (for example) a variable defined exclusively within the function cannot be accessed from outside the function or within other functions. For instance, the following is invalid:
 
----
-
-
 ```js
-
-
 function exampleFunction() {
     var x = 'declared inside function'; // x can only be used in exampleFunction
     console.log('Inside function');
@@ -14339,12 +14264,7 @@ Note also that if you wish to allow xml:base, you will need the [xml:base functi
 var href = getXmlBaseLink(/* XLink sans xml:base */ xinclude.getAttribute('href'), /* Element to query from */ xinclude);
 ```
 
----
-
-
 ```js
-
-
 function resolveXIncludes(docu) {
     // http://www.w3.org/TR/xinclude/#xml-included-items
     var xincludes = docu.getElementsByTagNameNS('http://www.w3.org/2001/XInclude', 'include');

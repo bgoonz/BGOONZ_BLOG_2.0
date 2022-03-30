@@ -348,12 +348,7 @@ console.log(obj2);
 
 #### 4. Use the obj\[key\] !== undefined pattern to check if a given variable that contains a key exists in an object
 
----
-
-
 ```js
-
-
 function doesKeyExist(obj, key) {
     // obj[key] !== undefined
     // or:
@@ -366,12 +361,7 @@ console.log(doesKeyExist(course, 'name')); // => false
 
 #### 5. Utilize Object.keys and Object.values in a function
 
----
-
-
 ```js
-
-
 function printKeys(object) {
     return Object.keys(object);
 }
@@ -394,12 +384,7 @@ console.log(Object.entries(player));
 
 #### 7. Define a function that utilizes ...rest syntax to accept an arbitrary number of arguments
 
----
-
-
 ```js
-
-
 function restSum(...otherNums) {
     let sum = 0;
     console.log(otherNums);
@@ -458,12 +443,7 @@ console.log(sisters);
 
 #### 11. Write a function that accepts a string as an argument and returns an object representing the count of each character in the array
 
----
-
-
 ```js
-
-
 function charCount(inputString) {
     let res = inputString.split('').reduce(function (accum, el) {
         if (el in accum) {
@@ -535,12 +515,7 @@ run();
 Notice that referencing `baz` from outside it's block results in JavaScript throwing a ReferenceError.
 Consider this `run` function, inside of which `foo` has `function scope`.
 
----
-
-
 ```js
-
-
 function run() {
     console.log(foo); // undefined
     var foo = 'Foo';
@@ -597,12 +572,7 @@ const returnValue = (val) => {
 
 #### 5. Given an arrow function, deduce the value of `this` without executing the code
 
----
-
-
 ```js
-
-
 function fDAdder(arr) {
     console.log(this);
     return arr.reduce((acc, ele) => {
@@ -655,12 +625,7 @@ logPokemon('sushi', 'algorithms'); // Pika Chu loves sushi and algorithms
 
 #### 9. Given a code snippet, identify what `this` refers to
 
----
-
-
 ```js
-
-
 function Person(name) {
     // this.name = name;
     // let that = this;

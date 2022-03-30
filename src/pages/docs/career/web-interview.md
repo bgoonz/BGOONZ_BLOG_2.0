@@ -9,14 +9,8 @@ seo:
     extra: []
 template: docs
 ---
+
 ## Inserting an item into an existing array
-
-
-
-
-<iframe frameborder="0" width="100%" height="800px" src="https://replit.com/@bgoonz/interview-2?lite=true"></iframe>
-
-
 
 Inserting an item into an existing array is a daily common task. You can add elements to the end of an array using push, to the beginning using unshift, or to the middle using splice.
 
@@ -26,7 +20,7 @@ Those are known methods, but it doesn't mean there isn't a more performant way. 
 
 Adding an element at the end of the array is easy with push(), but it can be done in different ways.
 
-```js
+```javascript
 var arr = [1, 2, 3, 4, 5];
 
 var arr2 = [];
@@ -64,7 +58,7 @@ Both first methods modify the original array. Don't believe me? Check the [jsper
 
 3. _arr2 = arr.concat(\[6]);_ 49.78 % slower
 
-```js
+```javascript
 
 Final victor
 
@@ -118,7 +112,7 @@ Final victor
 
 3. _arr2 = arr.concat(\[6]);_ 76.07 % slower
 
-```js
+```javascript
 
 Final victor
 
@@ -134,7 +128,7 @@ Final victor
 
 Now if we are trying to add an item to the beginning of the array:
 
-```js
+```javascript
 var arr = [1, 2, 3, 4, 5];
 
 arr.unshift(0);
@@ -164,7 +158,7 @@ Here is a little more detail: unshift edits the original array; concat returns a
 
 2. _\[0].concat(arr);_ 33.67 % slower
 
-```js
+```javascript
 
 Final victor
 
@@ -206,7 +200,7 @@ Final victor
 
 2. _\[0].concat(arr);_ 15.17 % slower
 
-```js
+```javascript
 
 Final victor
 
@@ -220,7 +214,7 @@ Final victor
 
 Adding items in the middle of an array is easy with splice, and it's the most performant way to do it.
 
-```js
+```javascript
 var items = ['one', 'two', 'three', 'four'];
 
 items.splice(items.length / 2, 0, 'hello');
@@ -238,7 +232,7 @@ I tried to run these tests in various Browsers and OS and the results were simil
 
 How can we improve and make a more efficient nested `if` statement in javascript?
 
-```js
+```javascript
 if (color) {
     if (color === 'black') {
         printBlackBackground();
@@ -256,7 +250,7 @@ if (color) {
 
 One way to improve the nested `if` statement would be using the `switch` statement. Although it is less verbose and is more ordered, it's not recommended to use it because it's so difficult to debug errors. Here's [why](https://toddmotto.com/deprecating-the-switch-statement-for-object-literals).
 
-```js
+```javascript
 switch (color) {
     case 'black':
         printBlackBackground();
@@ -285,7 +279,7 @@ switch (color) {
 
 But what if we have a conditional with several checks in each statement? In this case, if we want it less verbose and more ordered, we can use the conditional `switch`. If we pass `true` as a parameter to the `switch` statement, it allows us to put a conditional in each case.
 
-```js
+```javascript
 switch (true) {
     case typeof color === 'string' && color === 'black':
         printBlackBackground();
@@ -316,12 +310,7 @@ switch (true) {
 
 If refactoring is an option, we can try to simplify the functions themselves. For example instead of having a function for each background color we could have an function that takes the color as an argument.
 
----
-
-
-```js
-
-
+```javascript
 function printBackground(color) {
     if (!color || typeof color !== 'string') {
         return; // Invalid color, return immediately
@@ -331,7 +320,7 @@ function printBackground(color) {
 
 But if refactoring is not an option, we must always avoid having several checks in every condition and avoid using `switch` as much as possible. We also must take into account that the most efficient way to do this is through an `object`.
 
-```js
+```javascript
 var colorObj = {
     black: printBlackBackground,
 
@@ -361,7 +350,7 @@ Here you can find more information about [this](http://www.nicoespeon.com/en/201
 
 Javascript has a native method [**sort**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) that allows sorting arrays. Doing a simple `array.sort()` will treat each array entry as a string and sort it alphabetically. Also you can provide your [own custom sorting](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#Parameters) function.
 
-```js
+```javascript
 ['Shanghai', 'New York', 'Mumbai', 'Buenos Aires'].sort();
 
 // ["Buenos Aires", "Mumbai", "New York", "Shanghai"]
@@ -371,7 +360,7 @@ But when you try order an array of non ASCII characters like this `['é', 'a', '
 
 See the next example:
 
-```js
+```javascript
 // Spanish
 
 ['único', 'árbol', 'cosas', 'fútbol'].sort();
@@ -391,7 +380,7 @@ Fortunately, there are two ways to overcome this behavior [localeCompare](https:
 
 #### Using `localeCompare()`
 
-```js
+```javascript
 ['único', 'árbol', 'cosas', 'fútbol'].sort(function (a, b) {
     return a.localeCompare(b);
 });
@@ -407,7 +396,7 @@ Fortunately, there are two ways to overcome this behavior [localeCompare](https:
 
 #### Using `Intl.Collator()`
 
-```js
+```javascript
 ['único', 'árbol', 'cosas', 'fútbol'].sort(Intl.Collator().compare);
 
 // ["árbol", "cosas", "fútbol", "único"]
@@ -418,7 +407,7 @@ Fortunately, there are two ways to overcome this behavior [localeCompare](https:
 ```
 
 - For each method you can customize the location.
--
+- 
 - According to [Firefox](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare#Performance) Intl.Collator is faster when comparing large numbers of strings.
 
 ### So when you are working with arrays of strings in a language other than English, remember to use this method to avoid unexpected sorting
@@ -430,15 +419,15 @@ Fortunately, there are two ways to overcome this behavior [localeCompare](https:
 ---
 
 - `undefined` means a variable has not been declared, or has been declared but has not yet been assigned a value
--
+- 
 - `null` is an assignment value that means "no value"
--
+- 
 - Javascript sets unassigned variables with a defau
--
+- 
 - Javascript never sets a value to `null`. It is used by programmers to indicate that a
--
+- 
 - `undefined` is not valid in JSON while `null` is
--
+- 
 - `undefined` typeof is `undefined`
 
 - `null` typeof is an `object`. [Why?](http://www.2ality.com/2013/10/typeof-null.html)
@@ -449,7 +438,7 @@ Fortunately, there are two ways to overcome this behavior [localeCompare](https:
 
 - You can know if a variable is [undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)
 
-    ```js
+    ```javascript
     typeof variable === 'undefined';
     ```
 
@@ -457,7 +446,7 @@ Fortunately, there are two ways to overcome this behavior [localeCompare](https:
 
 - You can check if a variable is [null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)
 
-  ```js
+  ```javascript
 
   variable === null
 
@@ -465,7 +454,7 @@ Fortunately, there are two ways to overcome this behavior [localeCompare](https:
 
 - The **equality** operator considers them equal, but the **identity** doesn't
 
-    ```js
+    ```javascript
     null == undefined; // true
 
     null === undefined; // false
@@ -487,7 +476,7 @@ Rather than writing separate methods to handle an array and a single element par
 
 You just have to concat everything into an array first. `Array.concat` will accept an array or a single element.
 
-```js
+```javascript
 
 function printUpperCase(words) {
 
@@ -505,7 +494,7 @@ function printUpperCase(words) {
 
 `printUpperCase` is now ready to accept a single node or an array of nodes as its parameter. It also avoids the potential `TypeError` that would be thrown if no parameter was passed.
 
-```js
+```javascript
 printUpperCase('cactus');
 
 // => CACTUS
@@ -535,7 +524,7 @@ Programmers like to make the computer do the boring stuff for us, and automatica
 
 We add this directive either by adding it at the top of a js file:
 
-```js
+```javascript
 // Whole-script strict mode syntax
 
 'use strict';
@@ -545,12 +534,7 @@ var v = "Hi!  I'm a strict mode script!";
 
 or inside a function:
 
----
-
-
-```js
-
-
+```javascript
 function f() {
     // Function-level strict mode syntax
 
@@ -571,11 +555,11 @@ function f2() {
 By including this directive in a JavaScript file or function, we will direct the JavaScript engine to execute in strict mode which disables a bunch of behaviors that are usually undesirable in larger JavaScript projects. Among other things, strict mode changes the following behaviors:
 
 - Variables can only be introduced when they are preceded with "var"
--
+- 
 - Attempting to write to read-only properties generates
--
-- You have to call constructors with
--
+- 
+- You have to call constructors with 
+- 
 - "this" is not implicitly bound to the global object
 
 - Very limited use of eval() allowed
@@ -587,9 +571,9 @@ Strict mode is great for new projects, but can be challenging to introduce into 
 It is not a statement, but a literal expression, ignored by earlier versions of JavaScript. Strict mode is supported in:
 
 - Internet Explorer from version 10.
--
+- 
 - Firefox from version 4.
--
+- 
 - Chrome from version 13.
 
 - Safari from version 5.1.
@@ -606,7 +590,7 @@ It is not a statement, but a literal expression, ignored by earlier versions of 
 
 The `querySelectorAll` method returns an array-like object called a node list. These data structures are referred to as "Array-like", because they appear as an array, but can not be used with array methods like `map` and `forEach`. Here's a quick, safe, and reusable way to convert a node list into an array of DOM elements:
 
-```js
+```javascript
 
 const nodelist = document.querySelectorAll('div');
 
@@ -628,7 +612,7 @@ The `apply` method is used to pass an array of arguments to a function with a gi
 
 Alternatively you can use `Array.prototype.slice` combined with `Function.prototype.call` or `Function.prototype.apply` passing the array-like object as the value of `this`:
 
-```js
+```javascript
 
 const nodelist = document.querySelectorAll('div');
 
@@ -676,7 +660,7 @@ As of ES6, JS now has template strings as an alternative to the classic end quot
 
 Ex: Normal string
 
-```js
+```javascript
 var firstName = 'Jake';
 
 var lastName = 'Rawr';
@@ -688,7 +672,7 @@ console.log('My name is ' + firstName + ' ' + lastName);
 
 Template String
 
-```js
+```javascript
 var firstName = 'Jake';
 
 var lastName = 'Rawr';
@@ -700,7 +684,7 @@ console.log(`My name is ${firstName} ${lastName}`);
 
 You can do multi-line strings without , perform simple logic (ie 2+3) or even use the [ternary operator](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Conditional_Operator) inside `${}` in template strings.
 
-```js
+```javascript
 var val1 = 1,
     val2 = 2;
 
@@ -723,7 +707,7 @@ You may also want to [read](https://hacks.mozilla.org/2015/05/es6-in-depth-templ
 
 When you have to check if a property is present in an [object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects), you probably are doing something like this:
 
-```js
+```javascript
 
 var myObject = {
 
@@ -739,7 +723,7 @@ That's ok, but you have to know that there are two native ways for this kind of 
 
 #### See the big Difference
 
-```js
+```javascript
 var myObject = {
     name: '@tips_js'
 };
@@ -757,7 +741,7 @@ Both differ in the depth at which they check the properties. In other words, `ha
 
 Here's another example:
 
-```js
+```javascript
 var myFunc = function () {
     this.name = '@tips_js';
 };
@@ -783,12 +767,7 @@ Check the [live examples here](https://jsbin.com/tecoqa/edit?js,console)!
 
 Understanding [hoisting](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var#var_hoisting) will help you organize your function scope. Just remember, variable declarations and function definitions are hoisted to the top. Variable definitions are not, even if you declare and define a variable on the same line. Also, a variable **declaration** lets the system know that the variable exists while **definition** assigns it a value.
 
----
-
-
-```js
-
-
+```javascript
 function doTheThing() {
     // ReferenceError: notDeclared is not defined
 
@@ -846,7 +825,7 @@ To make things easier to read, declare all of your variables at the top of your 
 
 In many programming languages the parameters of a function are by default mandatory and the developer has to explicitly define that a parameter is optional. In Javascript, every parameter is optional, but we can enforce this behavior without messing with the actual body of a function, taking advantage of \[**es6's default values for parameters**] (http://exploringjs.com/es6/ch\_parameter-handling.html#sec\_parameter-default-values) feature.
 
-```js
+```javascript
 const _err = function (message) {
     throw new Error(message);
 };
@@ -868,7 +847,7 @@ getSum(undefined, 10); // throws Error, a is not defined
 
 For quickly measuring performance of a javascript block, we can use the console functions like [`console.time(label)`](https://developer.chrome.com/devtools/docs/console-api#consoletimelabel) and [`console.timeEnd(label)`](https://developer.chrome.com/devtools/docs/console-api#consoletimeendlabel)
 
-```js
+```javascript
 console.time('Array initialize');
 
 var arr = new Array(100),
@@ -901,14 +880,14 @@ Introduced as a new feature in ES6, fat arrow functions may come as a handy tool
 #### What are the benefits?
 
 - Syntax: fewer LOC; no more typing `function` keyword over and over again
--
+- 
 - Semantics: capturing the keyword `this` from the surrounding context
 
 #### Simple syntax example
 
 Have a look at these two code snippets, which do the exact same job, and you will quickly understand what fat arrow functions do:
 
-```js
+```javascript
 
 // general syntax for fat arrow functions
 
@@ -948,7 +927,7 @@ As you can see, the fat arrow function in this case can save you time typing out
 
 There is another good reason to use fat arrow functions. There is the issue with the context of `this`. With arrow functions, you don't need to worry about `.bind(this)` or setting `that = this` anymore, as fat arrow functions pick the context of `this` from the lexical surrounding. Have a look at the next \[example] (https://jsfiddle.net/pklinger/rw94oc11/):
 
-```js
+```javascript
 // globally defined this.i
 
 this.i = 100;
@@ -1031,7 +1010,7 @@ function CounterD() {
 
 JavaScript by default does not have a contains method. And for checking existence of a substring in a string or an item in an array you may do this:
 
-```js
+```javascript
 var someText = 'javascript rules';
 
 if (someText.indexOf('javascript') !== -1) {
@@ -1047,7 +1026,7 @@ But let's look at these [Expressjs](https://github.com/strongloop/express) code 
 
 [examples/mvc/lib/boot.js](https://github.com/strongloop/express/blob/2f8ac6726fa20ab5b4a05c112c886752868ac8ce/examples/mvc/lib/boot.js#L26)
 
-```js
+```javascript
 
 for (var key in obj) {
 
@@ -1059,7 +1038,7 @@ for (var key in obj) {
 
 [lib/utils.js](https://github.com/strongloop/express/blob/2f8ac6726fa20ab5b4a05c112c886752868ac8ce/lib/utils.js#L93)
 
-```js
+```javascript
 exports.normalizeType = function (type) {
     return ~type.indexOf('/') ? acceptParams(type) : { value: mime.lookup(type), params: {} };
 };
@@ -1067,7 +1046,7 @@ exports.normalizeType = function (type) {
 
 [examples/web-service/index.js](https://github.com/strongloop/express/blob/2f8ac6726fa20ab5b4a05c112c886752868ac8ce/examples/web-service/index.js#L35)
 
-```js
+```javascript
 // key is invalid
 
 if (!~apiKeys.indexOf(key)) return next(error(401, 'invalid api key'));
@@ -1077,7 +1056,7 @@ The gotcha is the [bitwise operator](https://developer.mozilla.org/en-US/docs/We
 
 It transforms `-1` into `0`, and `0` evaluates to `false` in JavaScript:
 
-```js
+```javascript
 var someText = 'text';
 
 !!~someText.indexOf('tex'); // someText contains "tex" - true
@@ -1093,13 +1072,13 @@ var someText = 'text';
 
 ES6 introduced the [includes() method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes) and you can use it to determine whether or not a string includes another string:
 
-```js
+```javascript
 'something'.includes('thing'); // true
 ```
 
 With ECMAScript 2016 (ES7) it is even possible to use these techniques with Arrays:
 
-```js
+```javascript
 !!~[1, 2, 3].indexOf(1); // true
 
 [1, 2, 3].includes(1); // true
@@ -1115,12 +1094,7 @@ With ECMAScript 2016 (ES7) it is even possible to use these techniques with Arra
 
 By default you cannot pass arguments to a callback function. For example:
 
----
-
-
 ```js
-
-
 function callback() {
     console.log('Hi human');
 }
@@ -1130,12 +1104,7 @@ document.getElementById('someelem').addEventListener('click', callback);
 
 You can take advantage of the closure scope in Javascript to pass arguments to callback functions. Check this example:
 
----
-
-
 ```js
-
-
 function callback(a, b) {
     return function () {
         console.log('sum = ', a + b);
@@ -1338,7 +1307,7 @@ Avoid where possible. Use sparingly otherwise.
 
 Suppose you have a couple of variables with unknown types and you want to concatenate them in a string. To be sure that the arithmetical operation is not be applied during concatenation, use `concat`:
 
-```js
+```javascript
 var one = 1;
 
 var two = 2;
@@ -1350,7 +1319,7 @@ var result = ''.concat(one, two, three); //"123"
 
 This way of concatenting does exactly what you'd expect. In contrast, concatenation with pluses might lead to unexpected results:
 
-```js
+```javascript
 var one = 1;
 
 var two = 2;
@@ -1372,12 +1341,7 @@ Speaking about performance, compared to the `join` [type](http://www.sitepoint.c
 
 When creating functions on an object in Object Oriented Javascript, returning the object in the function will enable you to chain functions together.
 
----
-
-
 ```js
-
-
 function Person(name) {
     this.name = name;
 
@@ -1409,12 +1373,7 @@ person.sayName().changeName('Timmy').sayName();
 
 This snippet here uses [Fisher-Yates Shuffling](https://www.wikiwand.com/en/Fisher%E2%80%93Yates_shuffle) Algorithm to shuffle a given array.
 
----
-
-
-```js
-
-
+```javascript
 function shuffle(arr) {
     var i, j, temp;
 
@@ -1434,7 +1393,7 @@ function shuffle(arr) {
 
 An example:
 
-```js
+```javascript
 var a = [1, 2, 3, 4, 5, 6, 7, 8];
 
 var b = shuffle(a);
@@ -1454,7 +1413,7 @@ console.log(b);
 
 You define an array and want to empty its contents. Usually, you would do it like this:
 
-```js
+```javascript
 // define Array
 
 var list = [1, 2, 3, 4];
@@ -1472,7 +1431,7 @@ But there is another way to empty an array that is more performant.
 
 You should use code like this:
 
-```js
+```javascript
 var list = [1, 2, 3, 4];
 
 function empty() {
@@ -1485,7 +1444,7 @@ empty();
 ```
 
 - `list = []` assigns a reference to a new array to a variable, while any other references are unaffected. which means that references to the contents of the previous array are still kept in memory, leading to memory leaks.
--
+- 
 - `list.length = 0` deletes everything in the array, which does hit other references.
 
 In other words, if you have two references to the same array (`a = [1,2,3]; a2 = a;`), and you delete the array's contents using `list.length = 0`, both references (a and a2) will now point to the same empty array. (So don't use this technique if you don't want a2 to hold an empty array!)

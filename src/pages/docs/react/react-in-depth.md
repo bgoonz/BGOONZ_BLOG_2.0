@@ -2598,8 +2598,6 @@ History
     // Replacing the current URL (won't be tracked in history stack):
     const redirect = () => this.props.history.replace("/some/other/url");
 
-```
-
 ---
 
 ### Nested Routes
@@ -2928,8 +2926,6 @@ React Version
     // Render from the Virtual Dom to the Actual Dom
     ReactDOM.render(app, target);
 
-```
-
 ---
 
 ### Introduction to JSX
@@ -3126,8 +3122,6 @@ Simplifying the src folder
       </React.StrictMode>,
       document.getElementById("root")
     );
-
-```
 
 ---
 
@@ -5335,10 +5329,7 @@ The `production` list specifies the browsers to target when creating a productio
 
 To experiment with this configuration option, let's add a class component to the project. Add a new folder named `class-component` to the `src` folder. Within that folder, add a file named `ClassComponent.js` containing the following code:
 
-
 ```jsx
-
-
 // ./src/class-component/ClassComponent.js
 
 import React from 'react';
@@ -5354,10 +5345,7 @@ export default ClassComponent;
 
 Don't forget to update your `App` component to render the new component:
 
-
 ```jsx
-
-
 // ./src/App.js
 
 import React from 'react';
@@ -5383,10 +5371,7 @@ export default App;
 
 Now run your application using `npm start`. Open your browser's developer tools and view the "Sources" for the current page. Expand the `localhost:3000` &gt; `static` &gt; `js` node on the left and select the `main.chunk.js` file. Press `CMD+F` on macOS or `CTRL+F` on Windows to search the file for "Class Component". Here's what the transpiled code looks like for the `ClassComponent` class:
 
-
 ```jsx
-
-
 class ClassComponent extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
     render() {
         return /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
@@ -5430,10 +5415,7 @@ Stop your application if it's currently running. Delete the `./node_modules/.cac
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*TKBUkpbL5aSm5PTQ" class="graf-image" /></figure>Now your ES2015 class component is being converted to a constructor function! Here's the transpiled code for reference:
 
-
 ```jsx
-
-
 let ClassComponent = /*#__PURE__*/ (function (_React$Component) {
     Object(
         _Users_jameschurchill_Documents_GitHub_Modular_Curriculum_content_react_redux_topics_react_builds_projects_exploring_react_builds_solution_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_2__[
@@ -5503,10 +5485,7 @@ Remember that environment variables need to be prefixed with `REACT_APP_` for Cr
 
     // ./src/App.js
 
-
 ```jsx
-
-
 import React from 'react';
 import HeadingA from './css-modules/HeadingA';
 import HeadingB from './css-modules/HeadingB';
@@ -5553,10 +5532,7 @@ If you expand the `localhost:3000` &gt; `static` &gt; `js` node on the left and 
 
 Here's a closer look at the relevant `React.createElement` method call:
 
-
 ```jsx
-
-
 /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
     'h1',
     {
@@ -5585,10 +5561,7 @@ To add React Router to the application, start by installing the `react-router-do
 
 Then update the `App` component to this code:
 
-
 ```jsx
-
-
 // ./src/App.js
 
 import React from 'react';
@@ -5721,4 +5694,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/react-in-depth-1965dcde8d4f" class="p-canonical">Canonical link</a>
 
- August 31, 2021.
+Exported from [Medium](https://medium.com) on August 31, 2021.

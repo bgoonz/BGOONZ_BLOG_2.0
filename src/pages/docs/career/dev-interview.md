@@ -3,89 +3,23 @@ title: Developer Interview Questions
 weight: 0
 excerpt: Developer Interview Questions
 seo:
-    title: 'Developer Interview Questions'
-    description: 'Interview Resources'
+    title: ''
+    description: ''
     robots: []
     extra: []
 template: docs
 ---
 
-
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"  height="800px" width="1000px"   src="https://replit.com/@bgoonz/interview-2#index.js"
+     style="border:0; border-radius: 4px; overflow:hidden;"
+     title="medium-articles"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
 
 ### Table of Contents
 
-
-- [Programming Languages/Frameworks/Platforms](#programming-languagesframeworksplatforms)
-  - [Android](#android)
-  - [AngularJS](#angularjs)
-  - [Angular](#angular)
-  - [BackboneJS](#backbonejs)
-  - [C++](#c)
-  - [C](#c-1)
-  - [C](#c-2)
-  - [.NET](#net)
-  - [Clojure](#clojure)
-  - [CSS](#css)
-  - [Cucumber](#cucumber)
-  - [Django](#django)
-  - [Docker](#docker)
-  - [EmberJS](#emberjs)
-  - [Erlang](#erlang)
-  - [Golang](#golang)
-  - [GraphQl](#graphql)
-  - [HTML](#html)
-  - [Ionic](#ionic)
-  - [iOS](#ios)
-  - [Java](#java)
-  - [JavaScript](#javascript)
-  - [jQuery](#jquery)
-  - [Front-end build tools](#front-end-build-tools)
-  - [KnockoutJS](#knockoutjs)
-  - [Less](#less)
-  - [Lisp](#lisp)
-  - [NodeJS](#nodejs)
-  - [Objective-C](#objective-c)
-  - [PHP](#php)
-  - [Python](#python)
-  - [Ruby on Rails](#ruby-on-rails)
-  - [ReactJS](#reactjs)
-  - [Ruby](#ruby)
-  - [Rust](#rust)
-  - [Sass](#sass)
-  - [Scala](#scala)
-  - [SharePoint](#sharepoint)
-  - [Shell](#shell)
-  - [Spark](#spark)
-  - [Swift](#swift)
-  - [Vue.js](#vuejs)
-  - [WordPress](#wordpress)
-  - [TypeScript](#typescript)
-- [Database technologies](#database-technologies)
-  - [Cassandra](#cassandra)
-  - [Microsoft Access](#microsoft-access)
-  - [MongoDB](#mongodb)
-  - [MySQL](#mysql)
-  - [Neo4j](#neo4j)
-  - [Oracle](#oracle)
-  - [Postgres](#postgres)
-  - [SQL](#sql)
-  - [SQLite](#sqlite)
-- [Caching technologies](#caching-technologies)
-  - [Memcached](#memcached)
-  - [Redis](#redis)
-- [OS](#os)
-  - [Linux](#linux)
-  - [Windows](#windows)
-- [DevOps](#devops)
-- [Algorithms](#algorithms)
-- [Blockchain](#blockchain)
-- [Coding exercises](#coding-exercises)
-- [Comprehensive lists](#comprehensive-lists)
-- [Design Patterns](#design-patterns)
-- [Data structures](#data-structures)
-- [Networks](#networks)
-- [Security](#security)
-- [Data Science](#data-science)
+- [Programming Languages/Frameworks/Platforms_](#programming-languagesframeworksplatforms)
 
     - [_Android_](#android)
     - [_AngularJS_](#angularjs)
@@ -223,7 +157,7 @@ template: docs
 - [9 Essential C Interview Questions with answers](https://www.toptal.com/c/interview-questions)
 - [Top C Interview Questions and Answers](https://www.interviewbit.com/c-interview-questions/)
 
-### C #
+### C#
 
 - [15 Essential C# Interview Question from Toptal](http://www.toptal.com/c-sharp/interview-questions)
 - [C# interview questions from dotnetfunda.com](http://www.dotnetfunda.com/interviews/cat/6/csharp)
@@ -568,7 +502,7 @@ template: docs
 
 - [28 MongoDB NoSQL Database Interview Questions and Answers](http://theprofessionalspoint.blogspot.com.by/2014/01/28-mongodb-nosql-database-interview.html)
 - [MongoDB frequently Asked Questions by expert members with experience in MongoDB These questions and answers will help you strengthen your technical skills, prepare for the new job test and quickly revise the concepts](http://www.globalguideline.com/interview_questions/Questions.php?sc=MongoDB)
--
+- 
 - [MongoDB Interview Questions from JavaTPointcom](http://www.javatpoint.com/mongodb-interview-questions)
 - [MongoDB Interview Questions that have been designed specially to get you acquainted with the nature of questions you may encounter during your interview for the subject of MongoDB](http://www.tutorialspoint.com/mongodb/mongodb_interview_questions.htm)
 - [Top 20 MongoDB interview questions from Career Guru](http://career.guru99.com/top-20-mongodb-interview-questions/)
@@ -667,7 +601,7 @@ template: docs
 - [Blockchain Interview Questions](https://mindmajix.com/blockchain-interview-questions)
 - [Top Blockchain Interview Questions](https://intellipaat.com/interview-question/blockchain-interview-questions/)
 - [Blockchain Developer Interview Questions and Answers](https://applicature.com/blog/blockchain-interview-questions)
-- [10 Essential Blockchain Interview Questions](https://www.toptal.com/blockchain/interview-questions)
+- [10 Essential Blockchain Interview Questions ](https://www.toptal.com/blockchain/interview-questions)
 - [Top 30 Blockchain Interview Questions - For Freshers to Experienced](https://data-flair.training/blogs/blockchain-interview-questions/)
 - [Most Frequently Asked Blockchain Interview Questions](https://www.digitalvidya.com/blog/blockchain-interview-questions/)
 

@@ -50,7 +50,7 @@ Coud you solve it without converting the integer to a string?
 
 Easy to write but slow since it generates an array.
 
-```js
+```javascript
 /**
  * @param {number} x
  * @return {boolean}
@@ -64,7 +64,7 @@ let isPalindrome = function (x) {
 
 A bit faster.
 
-```js
+```javascript
 /**
  * @param {number} x
  * @return {boolean}
@@ -84,7 +84,7 @@ let isPalindrome = function (x) {
 
 General solution. Combining [7. Reverse Integer](./007.%20Reverse%20Integer.md).
 
-```js
+```javascript
 /**
  * @param {number} x
  * @return {boolean}

@@ -35,12 +35,7 @@ const fellowshipOfTheRing = {
         - **The Function does not explicityly return a value**
         - **Within the body, the _this_ keyword references the newly created object**
 
----
-
-
 ```js
-
-
 function Book(title, series, author) {
     this.title = title;
     this.series = series;
@@ -52,12 +47,7 @@ function Book(title, series, author) {
 
 - We can invoke a constructor function using the **`new`** keyword.
 
----
-
-
 ```js
-
-
 function Book(title, series, author) {
     this.title = title;
     this.series = series;
@@ -107,12 +97,7 @@ console.log(fellowshipOfTheRing instanceof Book); // true
 *   **`Object.setPrototypeOf()`** and **`Object.getPrototypeOf()`** are just used to set a prototype of one object to another object; and also the verify a prototype.
     - **`proto`** : aka "dunder proto" is a property used to gain easy access to an object's prototype - it is widely supported by browsers but is considered deprecated.
 
----
-
-
 ```js
-
-
 function Book(title, series, author) {
     this.title = title;
     this.series = series;
@@ -230,12 +215,7 @@ console.log(bookTitles.join(', ')); // The Fellowship of the Ring, The Two Tower
 
 - If we go back to an example of how constructor functions also use static methods - we see that static methods are _defined directly on the constructor function_ - whereas instance methods need to be defined on the _prototype_ object.
 
----
-
-
 ```js
-
-
 function Book(title, series, author) {
     this.title = title;
     this.series = series;

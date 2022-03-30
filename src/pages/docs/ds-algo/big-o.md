@@ -225,12 +225,7 @@ Our memo object is _mapping_ out our arguments of factorial to it's return value
 1.  _When solving DP problems with Memoization, it is helpful to draw out the visual tree first._
 2.  _When you notice duplicate sub-tree's that means we can memoize._
 
----
-
-
 ```js
-
-
 function fastFib(n, memo = {}) {
     if (n in memo) return memo[n];
     if (n === 1 || n === 2) return 1;

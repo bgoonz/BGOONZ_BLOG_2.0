@@ -179,4 +179,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/my-favorite-vscode-themes-9bab65af3f0f" class="p-canonical">Canonical link</a>
 
- August 6, 2021.
+Exported from [Medium](https://medium.com) on August 6, 2021.

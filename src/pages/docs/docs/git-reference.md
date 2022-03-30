@@ -12,7 +12,7 @@ template: docs
 
 ## Git Reference
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://bgoonz.github.io/GIT_GUIDE_Bgoonz/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://bgoonz.github.io/GIT_GUIDE_Bgoonz/" height="800px" width="1000px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 <hr>

@@ -200,12 +200,7 @@ To start with, let's deal with fetching data from the network:
 
 Old APIs will be updated to use promises, if it's possible in a backwards compatible way. `XMLHttpRequest` is a prime candidate, but in the mean time let's write a simple function to make a GET request:
 
----
-
-
 ```js
-
-
 function get(url) {
     // Return a new promise.
     return new Promise(function (resolve, reject) {
@@ -310,12 +305,7 @@ get('story.json')
 
 In fact, we could make a `getJSON()` function really easily:
 
----
-
-
 ```js
-
-
 function getJSON(url) {
     return get(url).then(JSON.parse);
 }
@@ -506,12 +496,7 @@ document.querySelector('.spinner').style.display = 'none';
 
 You may want to `catch()` simply for logging purposes, without recovering from the error. To do this, just rethrow the error. We could do this in our `getJSON()` method:
 
----
-
-
 ```js
-
-
 function getJSON(url) {
     return get(url)
         .then(JSON.parse)

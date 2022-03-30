@@ -76,7 +76,7 @@ Explanation: The number "-91283472332" is out of the range of a 32-bit signed in
 
 #### ONE
 
-```js
+```javascript
 /**
  * @param {string} str
  * @return {number}
@@ -90,7 +90,7 @@ let myAtoi = function (str) {
 
 Looks like `Number()` is faster than `parseInt()`.
 
-```js
+```javascript
 /**
  * @param {string} str
  * @return {number}
@@ -104,7 +104,7 @@ let myAtoi = function (str) {
 
 General solution.
 
-```js
+```javascript
 /**
  * @param {string} str
  * @return {number}

@@ -61,13 +61,13 @@ improvement. Beat up the code instead!
 
 **Bad:**
 
-```js
+```javascript
 const yyyymmdstr = moment().format('YYYY/MM/DD');
 ```
 
 **Good:**
 
-```js
+```javascript
 const currentDate = moment().format('YYYY/MM/DD');
 ```
 
@@ -75,7 +75,7 @@ const currentDate = moment().format('YYYY/MM/DD');
 
 **Bad:**
 
-```js
+```javascript
 getUserInfo();
 getClientData();
 getCustomerRecord();
@@ -83,7 +83,7 @@ getCustomerRecord();
 
 **Good:**
 
-```js
+```javascript
 getUser();
 ```
 
@@ -99,14 +99,14 @@ can help identify unnamed constants.
 
 **Bad:**
 
-```js
+```javascript
 // What the heck is 86400000 for?
 setTimeout(blastOff, 86400000);
 ```
 
 **Good:**
 
-```js
+```javascript
 // Declare them as capitalized named constants.
 const MILLISECONDS_PER_DAY = 60 * 60 * 24 * 1000; //86400000;
 
@@ -117,7 +117,7 @@ setTimeout(blastOff, MILLISECONDS_PER_DAY);
 
 **Bad:**
 
-```js
+```javascript
 const address = 'One Infinite Loop, Cupertino 95014';
 const cityZipCodeRegex = /^[^,\\]+[,\\\s]+(.+?)\s*(\d{5})?$/;
 saveCityZipCode(address.match(cityZipCodeRegex)[1], address.match(cityZipCodeRegex)[2]);
@@ -125,7 +125,7 @@ saveCityZipCode(address.match(cityZipCodeRegex)[1], address.match(cityZipCodeReg
 
 **Good:**
 
-```js
+```javascript
 const address = 'One Infinite Loop, Cupertino 95014';
 const cityZipCodeRegex = /^[^,\\]+[,\\\s]+(.+?)\s*(\d{5})?$/;
 const [_, city, zipCode] = address.match(cityZipCodeRegex) || [];
@@ -138,7 +138,7 @@ Explicit is better than implicit.
 
 **Bad:**
 
-```js
+```javascript
 const locations = ['Austin', 'New York', 'San Francisco'];
 locations.forEach((l) => {
     doStuff();
@@ -153,7 +153,7 @@ locations.forEach((l) => {
 
 **Good:**
 
-```js
+```javascript
 const locations = ['Austin', 'New York', 'San Francisco'];
 locations.forEach((location) => {
     doStuff();
@@ -172,7 +172,7 @@ variable name.
 
 **Bad:**
 
-```js
+```javascript
 const Car = {
     carMake: 'Honda',
     carModel: 'Accord',
@@ -186,7 +186,7 @@ function paintCar(car, color) {
 
 **Good:**
 
-```js
+```javascript
 const Car = {
     make: 'Honda',
     model: 'Accord',
@@ -207,12 +207,7 @@ arguments. Other "falsy" values such as `''`, `""`, `false`, `null`, `0`, and
 
 **Bad:**
 
----
-
-
-```js
-
-
+```javascript
 function createMicrobrewery(name) {
     const breweryName = name || 'Hipster Brew Co.';
     // ...
@@ -221,12 +216,7 @@ function createMicrobrewery(name) {
 
 **Good:**
 
----
-
-
-```js
-
-
+```javascript
 function createMicrobrewery(name = 'Hipster Brew Co.') {
     // ...
 }
@@ -266,12 +256,7 @@ destructuring syntax. This has a few advantages:
 
 **Bad:**
 
----
-
-
-```js
-
-
+```javascript
 function createMenu(title, body, buttonText, cancellable) {
     // ...
 }
@@ -281,12 +266,7 @@ createMenu('Foo', 'Bar', 'Baz', true);
 
 **Good:**
 
----
-
-
-```js
-
-
+```javascript
 function createMenu({ title, body, buttonText, cancellable }) {
     // ...
 }
@@ -309,12 +289,7 @@ this guide other than this, you'll be ahead of many developers.
 
 **Bad:**
 
----
-
-
-```js
-
-
+```javascript
 function emailClients(clients) {
     clients.forEach((client) => {
         const clientRecord = database.lookup(client);
@@ -327,12 +302,7 @@ function emailClients(clients) {
 
 **Good:**
 
----
-
-
-```js
-
-
+```javascript
 function emailActiveClients(clients) {
     clients.filter(isActiveClient).forEach(email);
 }
@@ -347,12 +317,7 @@ function isActiveClient(client) {
 
 **Bad:**
 
----
-
-
-```js
-
-
+```javascript
 function addToDate(date, month) {
     // ...
 }
@@ -365,12 +330,7 @@ addToDate(date, 1);
 
 **Good:**
 
----
-
-
-```js
-
-
+```javascript
 function addMonthToDate(month, date) {
     // ...
 }
@@ -387,12 +347,7 @@ testing.
 
 **Bad:**
 
----
-
-
-```js
-
-
+```javascript
 function parseBetterJSAlternative(code) {
     const REGEXES = [
         // ...
@@ -419,12 +374,7 @@ function parseBetterJSAlternative(code) {
 
 **Good:**
 
----
-
-
-```js
-
-
+```javascript
 function parseBetterJSAlternative(code) {
     const tokens = tokenize(code);
     const syntaxTree = parse(tokens);
@@ -484,12 +434,7 @@ updating multiple places anytime you want to change one thing.
 
 **Bad:**
 
----
-
-
-```js
-
-
+```javascript
 function showDeveloperList(developers) {
     developers.forEach((developer) => {
         const expectedSalary = developer.calculateExpectedSalary();
@@ -523,12 +468,7 @@ function showManagerList(managers) {
 
 **Good:**
 
----
-
-
-```js
-
-
+```javascript
 function showEmployeeList(employees) {
     employees.forEach((employee) => {
         const expectedSalary = employee.calculateExpectedSalary();
@@ -557,7 +497,7 @@ function showEmployeeList(employees) {
 
 **Bad:**
 
-```js
+```javascript
 const menuConfig = {
     title: null,
     body: 'Bar',
@@ -577,7 +517,7 @@ createMenu(menuConfig);
 
 **Good:**
 
-```js
+```javascript
 const menuConfig = {
     title: 'Order',
     // User did not include 'body' key
@@ -609,12 +549,7 @@ Flags tell your user that this function does more than one thing. Functions shou
 
 **Bad:**
 
----
-
-
-```js
-
-
+```javascript
 function createFile(name, temp) {
     if (temp) {
         fs.create(`./temp/${name}`);
@@ -626,12 +561,7 @@ function createFile(name, temp) {
 
 **Good:**
 
----
-
-
-```js
-
-
+```javascript
 function createFile(name) {
     fs.create(name);
 }
@@ -660,7 +590,7 @@ be happier than the vast majority of other programmers.
 
 **Bad:**
 
-```js
+```javascript
 // Global variable referenced by following function.
 // If we had another function that used this name, now it'd be an array and it could break it.
 let name = 'Ryan McDermott';
@@ -676,12 +606,7 @@ console.log(name); // ['Ryan', 'McDermott'];
 
 **Good:**
 
----
-
-
-```js
-
-
+```javascript
 function splitIntoFirstAndLastName(name) {
     return name.split(' ');
 }
@@ -733,7 +658,7 @@ Two caveats to mention to this approach:
 
 **Bad:**
 
-```js
+```javascript
 const addItemToCart = (cart, item) => {
     cart.push({ item, date: Date.now() });
 };
@@ -741,7 +666,7 @@ const addItemToCart = (cart, item) => {
 
 **Good:**
 
-```js
+```javascript
 const addItemToCart = (cart, item) => {
     return [...cart, { item, date: Date.now() }];
 };
@@ -761,7 +686,7 @@ would be much better to just use ES2015/ES6 classes and simply extend the `Array
 
 **Bad:**
 
-```js
+```javascript
 Array.prototype.diff = function diff(comparisonArray) {
     const hash = new Set(comparisonArray);
     return this.filter((elem) => !hash.has(elem));
@@ -770,7 +695,7 @@ Array.prototype.diff = function diff(comparisonArray) {
 
 **Good:**
 
-```js
+```javascript
 class SuperArray extends Array {
     diff(comparisonArray) {
         const hash = new Set(comparisonArray);
@@ -787,7 +712,7 @@ Favor this style of programming when you can.
 
 **Bad:**
 
-```js
+```javascript
 const programmerOutput = [
     {
         name: 'Uncle Bobby',
@@ -816,7 +741,7 @@ for (let i = 0; i < programmerOutput.length; i++) {
 
 **Good:**
 
-```js
+```javascript
 const programmerOutput = [
     {
         name: 'Uncle Bobby',
@@ -843,7 +768,7 @@ const totalOutput = programmerOutput.reduce((totalLines, output) => totalLines +
 
 **Bad:**
 
-```js
+```javascript
 if (fsm.state === 'fetching' && isEmpty(listNode)) {
     // ...
 }
@@ -851,12 +776,7 @@ if (fsm.state === 'fetching' && isEmpty(listNode)) {
 
 **Good:**
 
----
-
-
-```js
-
-
+```javascript
 function shouldShowSpinner(fsm, listNode) {
     return fsm.state === 'fetching' && isEmpty(listNode);
 }
@@ -870,12 +790,7 @@ if (shouldShowSpinner(fsmInstance, listNodeInstance)) {
 
 **Bad:**
 
----
-
-
-```js
-
-
+```javascript
 function isDOMNodeNotPresent(node) {
     // ...
 }
@@ -887,12 +802,7 @@ if (!isDOMNodeNotPresent(node)) {
 
 **Good:**
 
----
-
-
-```js
-
-
+```javascript
 function isDOMNodePresent(node) {
     // ...
 }
@@ -915,7 +825,7 @@ just do one thing.
 
 **Bad:**
 
-```js
+```javascript
 class Airplane {
     // ...
     getCruisingAltitude() {
@@ -933,7 +843,7 @@ class Airplane {
 
 **Good:**
 
-```js
+```javascript
 class Airplane {
     // ...
 }
@@ -969,12 +879,7 @@ The first thing to consider is consistent APIs.
 
 **Bad:**
 
----
-
-
-```js
-
-
+```javascript
 function travelToTexas(vehicle) {
     if (vehicle instanceof Bicycle) {
         vehicle.pedal(this.currentLocation, new Location('texas'));
@@ -986,12 +891,7 @@ function travelToTexas(vehicle) {
 
 **Good:**
 
----
-
-
-```js
-
-
+```javascript
 function travelToTexas(vehicle) {
     vehicle.move(this.currentLocation, new Location('texas'));
 }
@@ -1011,12 +911,7 @@ TypeScript (which, like I said, is a great alternative!).
 
 **Bad:**
 
----
-
-
-```js
-
-
+```javascript
 function combine(val1, val2) {
     if ((typeof val1 === 'number' && typeof val2 === 'number') || (typeof val1 === 'string' && typeof val2 === 'string')) {
         return val1 + val2;
@@ -1028,12 +923,7 @@ function combine(val1, val2) {
 
 **Good:**
 
----
-
-
-```js
-
-
+```javascript
 function combine(val1, val2) {
     return val1 + val2;
 }
@@ -1049,7 +939,7 @@ they are fixed if they can be.
 
 **Bad:**
 
-```js
+```javascript
 // On old browsers, each iteration with uncached `list.length` would be costly
 // because of `list.length` recomputation. In modern browsers, this is optimized.
 for (let i = 0, len = list.length; i < len; i++) {
@@ -1059,7 +949,7 @@ for (let i = 0, len = list.length; i < len; i++) {
 
 **Good:**
 
-```js
+```javascript
 for (let i = 0; i < list.length; i++) {
     // ...
 }
@@ -1073,12 +963,7 @@ in your version history if you still need it.
 
 **Bad:**
 
----
-
-
-```js
-
-
+```javascript
 function oldRequestModule(url) {
     // ...
 }
@@ -1093,12 +978,7 @@ inventoryTracker('apples', req, 'www.inventory-awesome.io');
 
 **Good:**
 
----
-
-
-```js
-
-
+```javascript
 function newRequestModule(url) {
     // ...
 }
@@ -1125,12 +1005,7 @@ unorganized list of reasons why:
 
 **Bad:**
 
----
-
-
-```js
-
-
+```javascript
 function makeBankAccount() {
     // ...
 
@@ -1146,12 +1021,7 @@ account.balance = 100;
 
 **Good:**
 
----
-
-
-```js
-
-
+```javascript
 function makeBankAccount() {
     // this one is private
     let balance = 0;
@@ -1184,7 +1054,7 @@ This can be accomplished through closures (for ES5 and below).
 
 **Bad:**
 
-```js
+```javascript
 const Employee = function (name) {
     this.name = name;
 };
@@ -1201,12 +1071,7 @@ console.log(`Employee name: ${employee.getName()}`); // Employee name: undefined
 
 **Good:**
 
----
-
-
-```js
-
-
+```javascript
 function makeEmployee(name) {
     return {
         getName() {
@@ -1232,7 +1097,7 @@ classes until you find yourself needing larger and more complex objects.
 
 **Bad:**
 
-```js
+```javascript
 const Animal = function (age) {
     if (!(this instanceof Animal)) {
         throw new Error('Instantiate Animal with `new`');
@@ -1272,7 +1137,7 @@ Human.prototype.speak = function speak() {};
 
 **Good:**
 
-```js
+```javascript
 class Animal {
     constructor(age) {
         this.age = age;
@@ -1316,7 +1181,7 @@ and you can chain further class methods onto it.
 
 **Bad:**
 
-```js
+```javascript
 class Car {
     constructor(make, model, color) {
         this.make = make;
@@ -1348,7 +1213,7 @@ car.save();
 
 **Good:**
 
-```js
+```javascript
 class Car {
     constructor(make, model, color) {
         this.make = make;
@@ -1405,7 +1270,7 @@ makes more sense than composition:
 
 **Bad:**
 
-```js
+```javascript
 class Employee {
     constructor(name, email) {
         this.name = name;
@@ -1429,7 +1294,7 @@ class EmployeeTaxData extends Employee {
 
 **Good:**
 
-```js
+```javascript
 class EmployeeTaxData {
     constructor(ssn, salary) {
         this.ssn = ssn;
@@ -1467,7 +1332,7 @@ dependent modules in your codebase.
 
 **Bad:**
 
-```js
+```javascript
 class UserSettings {
     constructor(user) {
         this.user = user;
@@ -1487,7 +1352,7 @@ class UserSettings {
 
 **Good:**
 
-```js
+```javascript
 class UserAuth {
     constructor(user) {
         this.user = user;
@@ -1521,7 +1386,7 @@ add new functionalities without changing existing code.
 
 **Bad:**
 
-```js
+```javascript
 class AjaxAdapter extends Adapter {
     constructor() {
         super();
@@ -1565,7 +1430,7 @@ function makeHttpCall(url) {
 
 **Good:**
 
-```js
+```javascript
 class AjaxAdapter extends Adapter {
     constructor() {
         super();
@@ -1618,7 +1483,7 @@ get into trouble.
 
 **Bad:**
 
-```js
+```javascript
 class Rectangle {
     constructor() {
         this.width = 0;
@@ -1673,7 +1538,7 @@ renderLargeRectangles(rectangles);
 
 **Good:**
 
-```js
+```javascript
 class Shape {
     setColor(color) {
         // ...
@@ -1736,7 +1601,7 @@ all of the settings. Making them optional helps prevent having a
 
 **Bad:**
 
-```js
+```javascript
 class DOMTraverser {
     constructor(settings) {
         this.settings = settings;
@@ -1762,7 +1627,7 @@ const $ = new DOMTraverser({
 
 **Good:**
 
-```js
+```javascript
 class DOMTraverser {
     constructor(settings) {
         this.settings = settings;
@@ -1819,7 +1684,7 @@ example below, the implicit contract is that any Request module for an
 
 **Bad:**
 
-```js
+```javascript
 class InventoryRequester {
     constructor() {
         this.REQ_METHODS = ['HTTP'];
@@ -1852,7 +1717,7 @@ inventoryTracker.requestItems();
 
 **Good:**
 
-```js
+```javascript
 class InventoryTracker {
     constructor(items, requester) {
         this.items = items;
@@ -1913,7 +1778,7 @@ or refactoring an existing one.
 
 **Bad:**
 
-```js
+```javascript
 import assert from 'assert';
 
 describe('MomentJS', () => {
@@ -1937,7 +1802,7 @@ describe('MomentJS', () => {
 
 **Good:**
 
-```js
+```javascript
 import assert from 'assert';
 
 describe('MomentJS', () => {
@@ -1970,7 +1835,7 @@ Promises are a built-in global type. Use them!
 
 **Bad:**
 
-```js
+```javascript
 import { get } from 'request';
 import { writeFile } from 'fs';
 
@@ -1991,7 +1856,7 @@ get('https://en.wikipedia.org/wiki/Robert_Cecil_Martin', (requestErr, response, 
 
 **Good:**
 
-```js
+```javascript
 import { get } from 'request-promise';
 import { writeFile } from 'fs-extra';
 
@@ -2017,7 +1882,7 @@ today!
 
 **Bad:**
 
-```js
+```javascript
 import { get } from 'request-promise';
 import { writeFile } from 'fs-extra';
 
@@ -2035,7 +1900,7 @@ get('https://en.wikipedia.org/wiki/Robert_Cecil_Martin')
 
 **Good:**
 
-```js
+```javascript
 import { get } from 'request-promise';
 import { writeFile } from 'fs-extra';
 
@@ -2070,7 +1935,7 @@ or create a code path, for when it occurs.
 
 **Bad:**
 
-```js
+```javascript
 try {
     functionThatMightThrow();
 } catch (error) {
@@ -2080,7 +1945,7 @@ try {
 
 **Good:**
 
-```js
+```javascript
 try {
     functionThatMightThrow();
 } catch (error) {
@@ -2101,7 +1966,7 @@ from `try/catch`.
 
 **Bad:**
 
-```js
+```javascript
 getdata()
     .then((data) => {
         functionThatMightThrow(data);
@@ -2113,7 +1978,7 @@ getdata()
 
 **Good:**
 
-```js
+```javascript
 getdata()
     .then((data) => {
         functionThatMightThrow(data);
@@ -2148,7 +2013,7 @@ they want. The point is, no matter what you all choose, just be consistent.
 
 **Bad:**
 
-```js
+```javascript
 const DAYS_IN_WEEK = 7;
 const daysInMonth = 30;
 
@@ -2164,7 +2029,7 @@ class Alpaca {}
 
 **Good:**
 
-```js
+```javascript
 const DAYS_IN_WEEK = 7;
 const DAYS_IN_MONTH = 30;
 
@@ -2186,7 +2051,7 @@ top-to-bottom, like a newspaper. Because of this, make your code read that way.
 
 **Bad:**
 
-```js
+```javascript
 class PerformanceReview {
     constructor(employee) {
         this.employee = employee;
@@ -2226,7 +2091,7 @@ review.perfReview();
 
 **Good:**
 
-```js
+```javascript
 class PerformanceReview {
     constructor(employee) {
         this.employee = employee;
@@ -2272,12 +2137,7 @@ Comments are an apology, not a requirement. Good code _mostly_ documents itself.
 
 **Bad:**
 
----
-
-
-```js
-
-
+```javascript
 function hashIt(data) {
     // The hash
     let hash = 0;
@@ -2299,12 +2159,7 @@ function hashIt(data) {
 
 **Good:**
 
----
-
-
-```js
-
-
+```javascript
 function hashIt(data) {
     let hash = 0;
     const length = data.length;
@@ -2325,7 +2180,7 @@ Version control exists for a reason. Leave old code in your history.
 
 **Bad:**
 
-```js
+```javascript
 doStuff();
 // doOtherStuff();
 // doSomeMoreStuff();
@@ -2334,7 +2189,7 @@ doStuff();
 
 **Good:**
 
-```js
+```javascript
 doStuff();
 ```
 
@@ -2345,7 +2200,7 @@ and especially journal comments. Use `git log` to get history!
 
 **Bad:**
 
-```js
+```javascript
 /**
  * 2016-12-20: Removed monads, didn't understand them (RM)
  * 2016-10-01: Improved using special monads (JP)
@@ -2359,12 +2214,7 @@ function combine(a, b) {
 
 **Good:**
 
----
-
-
-```js
-
-
+```javascript
 function combine(a, b) {
     return a + b;
 }
@@ -2377,7 +2227,7 @@ proper indentation and formatting give the visual structure to your code.
 
 **Bad:**
 
-```js
+```javascript
 ////////////////////////////////////////////////////////////////////////////////
 // Scope Model Instantiation
 ////////////////////////////////////////////////////////////////////////////////
@@ -2396,7 +2246,7 @@ const actions = function () {
 
 **Good:**
 
-```js
+```javascript
 $scope.model = {
     menu: 'foo',
     nav: 'bar'

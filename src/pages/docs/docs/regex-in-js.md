@@ -355,4 +355,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/regular-expressions-4d8fb3eb146b" class="p-canonical">Canonical link</a>
 
- August 17, 2021.
+Exported from [Medium](https://medium.com) on August 17, 2021.

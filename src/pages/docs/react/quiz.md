@@ -44,10 +44,7 @@ Let's recap.
 
 It doesn't. Ultimately it's always up to the component to decide what to do with its children. For example, the `Button` implementation could completely ignore them and render something else:
 
-
 ```jsx
-
-
 function Button(props) {
     return <h1>I render whatever I want</h1>;
 }
@@ -55,10 +52,7 @@ function Button(props) {
 
 Interestingly, it could also render `children` multiple times:
 
-
 ```jsx
-
-
 function Button(props) {
     return (
         <div>
@@ -103,7 +97,7 @@ Of course, if you get a DOM node for the component via refs, you can do anything
 
 ### Q3. How do you fix the syntax error that results from running this code?
 
-```js
+```javascript
 const person =(firstName, lastName) =>
 {
   first: firstName,
@@ -128,7 +122,7 @@ console.log(person("Jill", "Wilson"))
 
 ### Q5. Using object literal enhancement, you can put values back into an object. When you log person to the console, what is the output?
 
-```js
+```javascript
 const name = 'Rachel';
 const age = 31;
 const person = { name, age };
@@ -149,7 +143,7 @@ console.log(person);
 
 ### Q7. To get the first item from the array ("cooking") using array destructuring, how do you adjust this line?
 
-```js
+```javascript
 const topics = ['cooking', 'art', 'history'];
 ```
 
@@ -167,7 +161,7 @@ const topics = ['cooking', 'art', 'history'];
 
 ### Q9. What should the console read when the following code is run?
 
-```js
+```javascript
 const [, , animal] = ['Horse', 'Mouse', 'Cat'];
 console.log(animal);
 ```
@@ -193,7 +187,7 @@ console.log(animal);
 
 ### 12. Which props from the props object is available to the component with the following syntax?
 
-```js
+```javascript
 <Message {...props} />
 ```
 
@@ -204,7 +198,7 @@ console.log(animal);
 
 ### 13. Consider the following code from React Router. What do you call :id in the path prop?
 
-```js
+```javascript
 <Route path="/:id" />
 ```
 
@@ -215,12 +209,7 @@ console.log(animal);
 
 ### 14. If you created a component called Dish and rendered it to the DOM, what type of element would be rendered?
 
----
-
-
-```js
-
-
+```javascript
 function Dish() {
     return <h1>Mac and Cheese</h1>;
 }
@@ -235,7 +224,7 @@ ReactDOM.render(<Dish />, document.getElementById('root'));
 
 ### 15. What does this React element look like given the following function? (Alternative: Given the following code, what does this React element look like?)
 
-```js
+```javascript
 React.createElement('h1', null, "What's happening?");
 ```
 
@@ -246,12 +235,7 @@ React.createElement('h1', null, "What's happening?");
 
 ### 16. What property do you need to add to the Suspense component in order to display a spinner or loading state?
 
----
-
-
-```js
-
-
+```javascript
 function MyComponent() {
     return (
         <Suspense>
@@ -270,7 +254,7 @@ function MyComponent() {
 
 ### 17. What do you call the message wrapped in curly braces below?
 
-```js
+```javascript
 const message = 'Hi there';
 const element = <p>{message}</p>;
 ```
@@ -296,7 +280,7 @@ const element = <p>{message}</p>;
 
 ### 20. What is the difference between the click behaviors of these two buttons (assuming that this.handleClick is bound correctly)?
 
-```js
+```javascript
 A. <button onClick={this.handleClick}>Click Me</button>
 B. <button onClick={event => this.handleClick(event)}>Click Me</button>
 ```
@@ -308,12 +292,7 @@ B. <button onClick={event => this.handleClick(event)}>Click Me</button>
 
 ### 21. How do you destructure the properties that are sent to the Dish component?
 
----
-
-
-```js
-
-
+```javascript
 function Dish(props) {
     return (
         <h1>
@@ -379,7 +358,7 @@ function Dish(props) {
 
 ### 29. You have written the following code but nothing is rendering. How do you fix this problem?
 
-```js
+```javascript
 const Heading = () => {
     <h1>Hello!</h1>;
 };
@@ -434,7 +413,7 @@ const Heading = () => {
 
 ### Q36. What is `[e.target.id]` called in the following code snippet?
 
-```js
+```javascript
 handleChange(e) {
   this.setState({ [e.target.id]: e.target.value })
 }
@@ -447,7 +426,7 @@ handleChange(e) {
 
 ### Q37. What is the name of this component?
 
-```js
+```javascript
 class Clock extends React.Component {
     render() {
         return <h1>Look at the time: {time}</h1>;
@@ -521,12 +500,7 @@ class clock extends React.Component {
 
 ### Q45. How do you invoke setDone only when component mounts, using hooks?
 
----
-
-
-```js
-
-
+```javascript
 function MyComponent(props) {
     const [done, setDone] = useState(false);
 
@@ -541,7 +515,7 @@ function MyComponent(props) {
 
 ### Q46. Which of the following click event handlers will allow you to pass the name of the person to be hugged?
 
-```js
+```javascript
 class Huggable extends React.Component {
   hug(id) {
     console.log("hugging " + id);
@@ -562,7 +536,7 @@ class Huggable extends React.Component {
 
 ### Q47. Currently, `handleClick` is being called instead of passed as a reference. How do you fix this?
 
-```js
+```javascript
 <button onClick={this.handleClick()}>Click this</button>
 ```
 
@@ -587,7 +561,7 @@ class Huggable extends React.Component {
 
 ### Q50. What will happen when this useEffect Hook is executed, assuming name is not already equal to John?
 
-```js
+```javascript
 useEffect(() => {
     setName('John');
 }, [name]);
@@ -607,7 +581,7 @@ useEffect(() => {
 
 ### Q52. You have created a new method in a class component called handleClick, but it is not working. Which code is missing?
 
-```js
+```javascript
 class Button extends React.Component{
 
   constructor(props) {
@@ -626,7 +600,7 @@ class Button extends React.Component{
 
 ### Q53. React does not render two sibling elements unless they are wrapped in a fragment. Below is one way to render a fragment. What is the shorthand for this?
 
-```js
+```javascript
 <React.Fragment>
     <h1>Our Staff</h1>
     <p>Our staff is available 9-5 to answer your questions</p>
@@ -635,7 +609,7 @@ class Button extends React.Component{
 
 -   [ ] A
 
-```js
+```javascript
 <...>
   <h1>Our Staff</h1>
   <p>Our staff is available 9-5 to answer your questions</p>
@@ -644,7 +618,7 @@ class Button extends React.Component{
 
 -   [ ] B
 
-```js
+```javascript
 <//>
   <h1>Our Staff</h1>
   <p>Our staff is available 9-5 to answer your questions</p>
@@ -653,7 +627,7 @@ class Button extends React.Component{
 
 -   \[✅] C
 
-```js
+```javascript
 <>
     <h1>Our Staff</h1>
     <p>Our staff is available 9-5 to answer your questions</p>
@@ -662,7 +636,7 @@ class Button extends React.Component{
 
 -   [ ] D
 
-```js
+```javascript
 <Frag>
     <h1>Our Staff</h1>
     <p>Our staff is available 9-5 to answer your questions</p>
@@ -671,7 +645,7 @@ class Button extends React.Component{
 
 ### Q54. If you wanted to display the count state value in the component, what do you need to add to the curly braces in the `h1`?
 
-```js
+```javascript
 class Ticker extends React.component {
     constructor(props) {
         super(props);
@@ -690,7 +664,7 @@ class Ticker extends React.component {
 
 ### Q55. Per the following code, when is the Hello component displayed?
 
-```js
+```javascript
 const greeting = isLoggedIn ? <Hello /> : null;
 ```
 
@@ -701,7 +675,7 @@ const greeting = isLoggedIn ? <Hello /> : null;
 
 ### Q56. In the following code block, what type is orderNumber?
 
-```js
+```javascript
 ReactDOM.render(<Message orderNumber="16" />, document.getElementById('root'));
 ```
 
@@ -712,7 +686,7 @@ ReactDOM.render(<Message orderNumber="16" />, document.getElementById('root'));
 
 ### Q57. You have added a style property to the `h1` but there is an unexpected token error when it runs. How do you fix this?
 
-```js
+```javascript
 const element = <h1 style={ backgroundColor: "blue" }>Hi</h1>;
 ```
 
@@ -730,7 +704,7 @@ const element = <h1 style={ backgroundColor: "blue" }>Hi</h1>;
 
 ### Q59. Consider the following component. What is the default color for the star?
 
-```js
+```javascript
 const Star = ({ selected = false }) => <Icon color={selected ? 'red' : 'grey'} />;
 ```
 
@@ -755,7 +729,7 @@ const Star = ({ selected = false }) => <Icon color={selected ? 'red' : 'grey'} /
 
 ### Q62.What is the difference between the click behaviors of these two buttons(assuming that this.handleClick is bound correctly)
 
-```js
+```javascript
   A. <button onClick=this.handleClick>Click Me</button>
   B. <button onClick={event => this.handleClick(event)}>Click Me</button>
 ```
@@ -767,7 +741,7 @@ const Star = ({ selected = false }) => <Icon color={selected ? 'red' : 'grey'} /
 
 ### Q63.What will happen when this useEffect Hook is executed, assuming name is not already equal to John?
 
-```js
+```javascript
 useEffect(() => {
     setName('John');
 }, [name]);
@@ -780,13 +754,13 @@ useEffect(() => {
 
 ### Q64. How would you add to this code, from React Router, to display a component called About?
 
-```js
+```javascript
 <Route path="/:id" />
 ```
 
 -   \[✅] A
 
-```js
+```javascript
 <Route path="/:id">
     {' '}
     <About />
@@ -795,19 +769,19 @@ useEffect(() => {
 
 -   [ ] B
 
-```js
+```javascript
 <Route path="/tid" about={Component} />
 ```
 
 -   [ ] C
 
-```js
+```javascript
 <Route path="/:id" route={About} />
 ```
 
 -   [ ] D
 
-```js
+```javascript
 <Route>
     <About path="/:id" />
 </Route>
@@ -815,13 +789,13 @@ useEffect(() => {
 
 ### Q65. Which class-based component is equivalent to this function component?
 
-```js
+```javascript
 const Greeting ({ name }) > <h1>Hello {name}!</h1>;
 ```
 
 -   [ ] A
 
-```js
+```javascript
 class Greeting extends React.Component {
     constructor() {
         return <h1>Hello {this.props.name}!</h1>;
@@ -831,7 +805,7 @@ class Greeting extends React.Component {
 
 -   [ ] B
 
-```js
+```javascript
 class Greeting extends React.Component {
   <h1>Hello {this.props.name}!</h1>;
 }
@@ -839,7 +813,7 @@ class Greeting extends React.Component {
 
 -   \[✅] C
 
-```js
+```javascript
 class Greeting extends React.Component {
     render() {
         return <h1>Hello {this.props.name}!</h1>;
@@ -849,7 +823,7 @@ class Greeting extends React.Component {
 
 -   [ ] D
 
-```js
+```javascript
 class Greeting extends React.Component {
     render({ name }) {
         return <h1>Hello {name}!</h1>;
@@ -859,7 +833,7 @@ class Greeting extends React.Component {
 
 ### Q66. Give the code below, what does the second argument that is sent to the render function describe?
 
-```js
+```javascript
 ReactDOM.render(
   <h1>Hi<h1>,
     document.getElementById('root')
@@ -880,7 +854,7 @@ ReactDOM.render(
 
 ### Q68. What is the first argument, `x`, that is sent to the `createElement` function?
 
-```js
+```javascript
 React.createElement(x, y, z);
 ```
 
@@ -891,7 +865,7 @@ React.createElement(x, y, z);
 
 ### Q69. Which class-based lifecycle method would be called at the same time as this effect Hook?
 
-```js
+```javascript
 useEffect(() => {
     // do things
 }, []);
@@ -904,7 +878,7 @@ useEffect(() => {
 
 ### Q70. Given the code below, what does the second argument that is sent to the render function describe?
 
-```js
+```javascript
 ReactDOM.render(<h1>Hi</h1>, document.getElementById('root'));
 ```
 
@@ -924,7 +898,7 @@ ReactDOM.render(<h1>Hi</h1>, document.getElementById('root'));
 
 ### Q72. What is the name of this component?
 
-```js
+```javascript
 class Comp extends React.Component {
     render() {
         return <h1>Look at the time: {time}</h1>;
@@ -941,7 +915,7 @@ This question might be an updated version of Q37.
 
 ### Q73. When using a portal, what is the first argument?
 
-```js
+```javascript
 ReactDOM.createPortal(x, y);
 ```
 
@@ -954,7 +928,7 @@ ReactDOM.createPortal(x, y);
 
 ### Q74. What is `setCount`?
 
-```js
+```javascript
 const [count, setCount] = useState(0);
 ```
 
@@ -967,7 +941,7 @@ const [count, setCount] = useState(0);
 
 ### Q75. What is the use of map function below?
 
-```js
+```javascript
 const database = [user1:{},user2:{},user3:{}];
 database.map((user)=><h1>user.data</h1>);
 ```
@@ -979,7 +953,7 @@ database.map((user)=><h1>user.data</h1>);
 
 ### Q76. Describe what is happening in this code?
 
-```js
+```javascript
 const { name: firstName } = person;
 ```
 
@@ -990,7 +964,7 @@ const { name: firstName } = person;
 
 ### Q77. What is wrong with this code?
 
-```js
+```javascript
 const MyComponent = ({ names }) => (
   <h1>Hello</h1>
   <p>Hello again</p>
@@ -1004,7 +978,7 @@ const MyComponent = ({ names }) => (
 
 ### Q78. When using a portal, what is the second argument?
 
-```js
+```javascript
 ReactDOM.createPortal(x, y);
 ```
 
@@ -1017,7 +991,7 @@ ReactDOM.createPortal(x, y);
 
 **tag?**
 
-```js
+```javascript
 const MyComponent = ({ children }) => (
   <h1>{children.length}</h1>
 );
@@ -1035,7 +1009,7 @@ const MyComponent = ({ children }) => (
 
 ## Q80. What is this pattern called?
 
-```js
+```javascript
 const [count, setCount] = useState(0);
 ```
 

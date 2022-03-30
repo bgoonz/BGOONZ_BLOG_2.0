@@ -27,7 +27,7 @@ template: docs
 
 #### Find:
 
-# To find files by case-insensitive extension (ex: .jpg, .jpg, .jpG):
+# To find files by case-insensitive extension (ex: .jpg, .JPG, .jpG):
 
 find . -iname "\*.jpg"
 

@@ -16,7 +16,7 @@ seo:
           value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
           keyName: property
         - name: 'og:image'
-          value: images/dtw-slideshow.gif
+          value: images/curious-europa.gif
           keyName: property
           relativeUrl: true
         - name: 'twitter:card'

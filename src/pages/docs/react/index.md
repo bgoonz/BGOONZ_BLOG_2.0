@@ -53,7 +53,7 @@ Here I will walk through a demo…. skip down below for more fundamental example
 
 ## Learn Redux:
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"     src="https://learning-redux42.netlify.app/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"   allowfullscreen></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    class="block-content" src="https://learning-redux42.netlify.app/" height="800px" width="1000px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"   allowfullscreen></iframe>
 
 ---
 
@@ -61,10 +61,7 @@ Here I will walk through a demo…. skip down below for more fundamental example
 
 ## ALL CODE:
 
-
 ```jsx
-
-
 
 ```
 

@@ -332,4 +332,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/postgresql-setup-for-windows-wsl-ubuntu-801672ab7089" class="p-canonical">Canonical link</a>
 
- August 6, 2021.
+Exported from [Medium](https://medium.com) on August 6, 2021.
