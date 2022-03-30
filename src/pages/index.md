@@ -214,18 +214,18 @@ sections:
       <iframe class="block-content" width="100%  width="1200px!important"
       height="1000px!important"
         src="https://web-dev-utility-tools-bgoonz.netlify.app/"
-       frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        clipboard-write;
+        encrypted-media; gyroscope; ></iframe>
       <iframe class="block-content" width="100%  width="1200px!important"
       height="1000px!important"
         src="https://cheatsheets-42.netlify.app/"
-       frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        clipboard-write;
+        encrypted-media; gyroscope; ></iframe>
       <iframe class="block-content" width="100%  width="1200px!important"
       height="1000px!important"
         src="https://bgoonz.github.io/fb-and-twitter-api-embeds/"
-       frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        clipboard-write;
+        encrypted-media; gyroscope; ></iframe>
     actions: []
     type: section_content
     image: images/cool annimation.gif

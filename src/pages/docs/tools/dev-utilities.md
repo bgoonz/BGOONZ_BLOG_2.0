@@ -19,7 +19,7 @@ template: docs
 <h1> Search </h1>
 <br>
 
-<iframe src="https://www.algolia.com/interface-demos/6ed0c3de-f9e4-4cc8-a7b2-c6c7c979cc5e" height="1000px" width="1400px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.algolia.com/interface-demos/6ed0c3de-f9e4-4cc8-a7b2-c6c7c979cc5e" height="1000px" width="1400px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"   ></iframe>
 
 <br>
 <hr>
@@ -35,7 +35,7 @@ template: docs
 <h1> Photo Editor   </h1>
 <br>
 
-<iframe src="https://onlinephotoeditor.goonlinetools.com/" height="1000px" width="1400px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://onlinephotoeditor.goonlinetools.com/" height="1000px" width="1400px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"   ></iframe>
 
 <br>
 <hr>
@@ -45,7 +45,7 @@ template: docs
 <h1> PDF Tools   </h1>
 <br>
 
-<iframe src="https://pdf-tools-xi.vercel.app/" height="1000px" width="1400px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://pdf-tools-xi.vercel.app/" height="1000px" width="1400px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"   ></iframe>
 
 <br>
 <hr>
@@ -58,7 +58,7 @@ template: docs
 <h1> Text Tools     </h1>
 <br>
 
-<iframe src="https://bgoonz.github.io/Web_Utility_Tools/" height="1000px" width="1400px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://bgoonz.github.io/Web_Utility_Tools/" height="1000px" width="1400px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"   ></iframe>
 
 <br>
 <hr>
@@ -70,7 +70,7 @@ template: docs
 <h1> Ternary Converter   </h1>
 <br>
 
-<iframe height="1000px" width="1400px" scrolling="yes" src="https://ternary42.netlify.app/"    frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe height="1000px" width="1400px" scrolling="yes" src="https://ternary42.netlify.app/"    frameborder="yes" loading="lazy"  allowfullscreen="true"   ></iframe>
 
 <br>
 <hr>
