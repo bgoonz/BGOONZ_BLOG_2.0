@@ -29,7 +29,7 @@
 
 ---
 
-![preview](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/screencapture-bgoonz-blog-netlify-app-2022-01-20-23_58_59.png?raw=true)
+![preview](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/blog-preview.png?raw=true)
 
   
   
