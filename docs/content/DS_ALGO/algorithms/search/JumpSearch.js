@@ -4,7 +4,6 @@
  * The asymptotic analysis of Jump Search is o(√n). Like the binary search, it needs to be sorted.
  * The advantage against binary search is that Jump Search traversed back only once.
  */
-
 const jumpSearch = (arr, value) => {
     const length = arr.length;
     let step = Math.floor(Math.sqrt(length));
@@ -16,7 +15,6 @@ const jumpSearch = (arr, value) => {
             return -1;
         }
     }
-
     const upperBound = Math.min(step, length);
     while (arr[lowerBound] < value) {
         lowerBound++;

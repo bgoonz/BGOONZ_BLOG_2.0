@@ -9,11 +9,8 @@ function octalToDecimal(num) {
     }
     return dec;
 }
-
 export { octalToDecimal };
-
 // > octalToDecimal(56)
 // 46
-
 // > octalToDecimal(2365)
 // 1269

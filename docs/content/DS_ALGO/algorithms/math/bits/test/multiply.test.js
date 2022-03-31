@@ -1,5 +1,4 @@
 import multiply from '../multiply';
-
 describe('multiply', () => {
     it('should multiply two numbers', () => {
         expect(multiply(0, 0)).toBe(0);

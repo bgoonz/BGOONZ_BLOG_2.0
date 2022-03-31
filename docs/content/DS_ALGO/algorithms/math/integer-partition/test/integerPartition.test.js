@@ -1,5 +1,4 @@
 import integerPartition from '../integerPartition';
-
 describe('integerPartition', () => {
     it('should partition the number', () => {
         expect(integerPartition(1)).toBe(1);

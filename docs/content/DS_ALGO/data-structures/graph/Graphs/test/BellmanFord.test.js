@@ -1,5 +1,4 @@
 import { BellmanFord } from '../BellmanFord.js';
-
 test('Test Case 1', () => {
     const V = 5;
     const E = 8;

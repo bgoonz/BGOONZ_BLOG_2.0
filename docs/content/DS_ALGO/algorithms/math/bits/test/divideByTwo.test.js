@@ -1,5 +1,4 @@
 import divideByTwo from '../divideByTwo';
-
 describe('divideByTwo', () => {
     it('should divide numbers by two using bitwise operations', () => {
         expect(divideByTwo(0)).toBe(0);

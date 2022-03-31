@@ -397,14 +397,14 @@ These dependencies are defined in **BGOONZ_BLOG_2.0**'s manifest files, such as 
 
 <img align="center" src="https://readme-jokes.vercel.app/api" stye="width:500; height:320;">
 
-</div>    
+</div>
 <div align="center">
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#_email_)
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=bgoonz&show_icons=true&locale=en" alt="bgoonz" /><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=bgoonz&" alt="bgoonz" /></p>
-  
- [![trophy](https://github-profile-trophy.vercel.app/?username=bgoonz&row=1)](https://github.com/bgoonz/github-profile-trophy) 
+
+ [![trophy](https://github-profile-trophy.vercel.app/?username=bgoonz&row=1)](https://github.com/bgoonz/github-profile-trophy)
  [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=bgoonz&layout=compact&hide=html,mathematica&langs_count=16)](https://github.com/bgoonz/github-readme-stats)
 |  |  |
 |:----------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -453,7 +453,7 @@ These dependencies are defined in **BGOONZ_BLOG_2.0**'s manifest files, such as 
 |
 
   <h3 align="left">Support:</h3><p><a href="https://www.buymeacoffee.com/bgoonz"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="bgoonz" /></a></p><br><br>
-  
+
 </div>
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#blog)
@@ -464,7 +464,7 @@ These dependencies are defined in **BGOONZ_BLOG_2.0**'s manifest files, such as 
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#projects)
 
-![skills](./skills.PNG)
+![skills](./skills.png)
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#projects)
 
@@ -585,14 +585,14 @@ Creating things that change my every day life.
 
 [![bgoonz's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=bgoonz)](https://github.com/bgoonz/github-readme-stats)
 
-![waka1](https://github.com/bgoonz/bgoonz/blob/master/langs.PNG)
+![waka1](https://github.com/bgoonz/bgoonz/blob/master/langs.png)
 
-![waka2](https://github.com/bgoonz/bgoonz/blob/master/waka.PNG)
+![waka2](https://github.com/bgoonz/bgoonz/blob/master/waka.png)
 
 </details>
 
 <details>
-  
+
 <summary>See More</summary>
 
 [wakatime](https://wakatime.com/@bgoonz)
@@ -720,7 +720,7 @@ Creating things that change my every day life.
       <td>HTML, HTML5, CSS, CSS3, Javascript, jQuery</td>
       <td>add songs and play music, it also uses to store data in  INDEXEDB Database by which we can play songs, if we not clear the catch then song will remain stored in database.</td>
     </tr>
-    
+
   </tbody>
 </table>
 
@@ -894,15 +894,15 @@ print(quicksort([9,8,7,6,5,4,3,2,1]))
 ---
 
 <details>
-  
+
   <summary>See Older Snippets!</summary>
-  
-  
-  #### This Week's snippets: 
-  
+
+
+  #### This Week's snippets:
+
   ---
-  
-  
+
+
    >will replace any spaces in file names with an underscore!
 ```bash
  for file in *; do mv "$file" `echo $file | tr ' ' '_'` ; done
@@ -1001,7 +1001,7 @@ console.log(isAppleDevice);
 ```js
 /*
  function named intersection(firstArr) that takes in an array and
-returns a function. 
+returns a function.
 When the function returned by intersection is invoked
 passing in an array (secondArr) it returns a new array containing the elements
 common to both firstArr and secondArr.

@@ -1,5 +1,4 @@
 import Stack from '../../../data-structures/stack/Stack';
-
 /**
  * @param {number} numberOfDiscs
  * @param {Stack} fromPole
@@ -15,7 +14,6 @@ function hanoiTowerRecursive({ numberOfDiscs, fromPole, withPole, toPole, moveCa
         toPole.push(disc);
     } else {
         // In case if there are more discs then move them recursively.
-
         // Expose the bottom disc on fromPole stack.
         hanoiTowerRecursive({
             numberOfDiscs: numberOfDiscs - 1,
@@ -24,7 +22,6 @@ function hanoiTowerRecursive({ numberOfDiscs, fromPole, withPole, toPole, moveCa
             toPole: withPole,
             moveCallback
         });
-
         // Move the disc that was exposed to its final destination.
         hanoiTowerRecursive({
             numberOfDiscs: 1,
@@ -33,7 +30,6 @@ function hanoiTowerRecursive({ numberOfDiscs, fromPole, withPole, toPole, moveCa
             toPole,
             moveCallback
         });
-
         // Move temporary tower from auxiliary pole to its final destination.
         hanoiTowerRecursive({
             numberOfDiscs: numberOfDiscs - 1,
@@ -44,7 +40,6 @@ function hanoiTowerRecursive({ numberOfDiscs, fromPole, withPole, toPole, moveCa
         });
     }
 }
-
 /**
  * @param {number} numberOfDiscs
  * @param {function(disc: number, fromPole: number[], toPole: number[])} moveCallback
@@ -56,12 +51,10 @@ export default function hanoiTower({ numberOfDiscs, moveCallback, fromPole = new
     // Each of three poles of Tower of Hanoi puzzle is represented as a stack
     // that might contain elements (discs). Each disc is represented as a number.
     // Larger discs have bigger number equivalent.
-
     // Let's create the discs and put them to the fromPole.
     for (let discSize = numberOfDiscs; discSize > 0; discSize -= 1) {
         fromPole.push(discSize);
     }
-
     hanoiTowerRecursive({
         numberOfDiscs,
         fromPole,

@@ -4,10 +4,8 @@
 // Module that replicates the SHA-256 Cryptographic Hash
 // function in Javascript.
 //= ===============================================================
-
 // main variables
 const CHAR_SIZE = 8;
-
 const K = [
     0x428a2f98, 0x71374491, 0xb5c0fbcf, 0xe9b5dba5, 0x3956c25b, 0x59f111f1, 0x923f82a4, 0xab1c5ed5, 0xd807aa98, 0x12835b01, 0x243185be, 0x550c7dc3, 0x72be5d74,
     0x80deb1fe, 0x9bdc06a7, 0xc19bf174, 0xe49b69c1, 0xefbe4786, 0x0fc19dc6, 0x240ca1cc, 0x2de92c6f, 0x4a7484aa, 0x5cb0a9dc, 0x76f988da, 0x983e5152, 0xa831c66d,
@@ -15,7 +13,6 @@ const K = [
     0x92722c85, 0xa2bfe8a1, 0xa81a664b, 0xc24b8b70, 0xc76c51a3, 0xd192e819, 0xd6990624, 0xf40e3585, 0x106aa070, 0x19a4c116, 0x1e376c08, 0x2748774c, 0x34b0bcb5,
     0x391c0cb3, 0x4ed8aa4a, 0x5b9cca4f, 0x682e6ff3, 0x748f82ee, 0x78a5636f, 0x84c87814, 0x8cc70208, 0x90befffa, 0xa4506ceb, 0xbef9a3f7, 0xc67178f2
 ];
-
 /**
  * Adds padding to binary/hex string representation
  *
@@ -33,7 +30,6 @@ function pad(str, bits) {
     }
     return res;
 }
-
 /**
  * Separates string into chunks of the same size
  *
@@ -51,7 +47,6 @@ function chunkify(str, size) {
     }
     return chunks;
 }
-
 /**
  * Rotates string representation of bits to th left
  *
@@ -65,7 +60,6 @@ function chunkify(str, size) {
 function rotateRight(bits, turns) {
     return bits.substr(bits.length - turns) + bits.substr(0, bits.length - turns);
 }
-
 /**
  * Pre-processes message to feed the algorithm loop
  *
@@ -82,21 +76,17 @@ function preProcess(message) {
             .map((e) => e.toString(2))
             .map((e) => pad(e, 8))
             .join('') + '1';
-
     // extend message by adding empty bits (0)
     while (m.length % 512 !== 448) {
         m += '0';
     }
-
     // length of message in binary, padded, and extended
     // to a 64 bit representation
     let ml = (message.length * CHAR_SIZE).toString(2);
     ml = pad(ml, 8);
     ml = '0'.repeat(64 - ml.length) + ml;
-
     return m + ml;
 }
-
 /**
  * Hashes message using SHA-256 Cryptographic Hash Function
  *
@@ -113,15 +103,12 @@ function SHA256(message) {
     let H5 = 0x9b05688c;
     let H6 = 0x1f83d9ab;
     let H7 = 0x5be0cd19;
-
     // pre-process message and split into 512 bit chunks
     const bits = preProcess(message);
     const chunks = chunkify(bits, 512);
-
     chunks.forEach(function (chunk, i) {
         // break each chunk into 16 32-bit words
         const words = chunkify(chunk, 32);
-
         // extend 16 32-bit words to 80 32-bit words
         for (let i = 16; i < 64; i++) {
             const W1 = words[i - 15];
@@ -135,10 +122,8 @@ function SHA256(message) {
             const val = parseInt(words[i - 16], 2) + S0 + parseInt(words[i - 7], 2) + S1;
             words[i] = pad((val >>> 0).toString(2), 32);
         }
-
         // initialize variables for this chunk
         let [a, b, c, d, e, f, g, h] = [H0, H1, H2, H3, H4, H5, H6, H7];
-
         for (let i = 0; i < 64; i++) {
             const S1 =
                 [6, 11, 25]
@@ -154,7 +139,6 @@ function SHA256(message) {
                     .reduce((acc, curr) => acc ^ curr, 0) >>> 0;
             const maj = ((a & b) ^ (a & c) ^ (b & c)) >>> 0;
             const temp2 = (S0 + maj) >>> 0;
-
             h = g;
             g = f;
             f = e;
@@ -164,7 +148,6 @@ function SHA256(message) {
             b = a;
             a = (temp1 + temp2) >>> 0;
         }
-
         // add values for this chunk to main hash variables (unsigned)
         H0 = (H0 + a) >>> 0;
         H1 = (H1 + b) >>> 0;
@@ -175,15 +158,12 @@ function SHA256(message) {
         H6 = (H6 + g) >>> 0;
         H7 = (H7 + h) >>> 0;
     });
-
     // combine hash values of main hash variables and return
     const HH = [H0, H1, H2, H3, H4, H5, H6, H7]
         .map((e) => e.toString(16))
         .map((e) => pad(e, 8))
         .join('');
-
     return HH;
 }
-
 // export SHA256 function
 export { SHA256 };

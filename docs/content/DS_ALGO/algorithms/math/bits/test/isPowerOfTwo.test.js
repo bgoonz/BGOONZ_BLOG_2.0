@@ -1,5 +1,4 @@
 import isPowerOfTwo from '../isPowerOfTwo';
-
 describe('isPowerOfTwo', () => {
     it('should detect if the number is power of two', () => {
         expect(isPowerOfTwo(1)).toBe(true);

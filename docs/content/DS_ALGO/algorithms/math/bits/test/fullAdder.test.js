@@ -1,5 +1,4 @@
 import fullAdder from '../fullAdder';
-
 describe('fullAdder', () => {
     it('should add up two numbers', () => {
         expect(fullAdder(0, 0)).toBe(0);

@@ -82,5 +82,4 @@ function UnionFind(n, key) {
         }
     }
 }
-
 export { UnionFind };

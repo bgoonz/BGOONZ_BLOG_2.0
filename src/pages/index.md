@@ -200,12 +200,8 @@ sections:
     image_alt: showcase
     image_position: left
     content: >-
-      <iframe src="https://random-static-html-deploys.netlify.app/"   
-      class="block-content" width="100%  width="1200px!important"
+          <iframe src="https://random-static-html-deploys.netlify.app" class="block-content" width="100%  width="1200px!important" height="1000px!important"></iframe>
 
-      height="1000px!important">
-
-      </iframe>
     actions: []
     type: section_content
   - title: Latest & Greatest
@@ -218,18 +214,18 @@ sections:
       <iframe class="block-content" width="100%  width="1200px!important"
       height="1000px!important"
         src="https://web-dev-utility-tools-bgoonz.netlify.app/"
-       frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        clipboard-write;
+        encrypted-media; gyroscope; ></iframe>
       <iframe class="block-content" width="100%  width="1200px!important"
       height="1000px!important"
         src="https://cheatsheets-42.netlify.app/"
-       frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        clipboard-write;
+        encrypted-media; gyroscope; ></iframe>
       <iframe class="block-content" width="100%  width="1200px!important"
       height="1000px!important"
         src="https://bgoonz.github.io/fb-and-twitter-api-embeds/"
-       frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        clipboard-write;
+        encrypted-media; gyroscope; ></iframe>
     actions: []
     type: section_content
     image: images/cool annimation.gif
@@ -238,7 +234,6 @@ sections:
     image_position: left
     content: |
       ![](images/static-server-5bf5ad2d.PNG)Tool Showcase
-
       https://bgoonz-blog.netlify.app/docs/tools/
     actions: []
     type: section_content

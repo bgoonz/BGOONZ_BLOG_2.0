@@ -1,6 +1,5 @@
 import BinaryTreeNode from '../BinaryTreeNode';
 import Comparator from '../../../utils/comparator/Comparator';
-
 export default class BinarySearchTreeNode extends BinaryTreeNode {
     /**
      * @param {*} [value] - node value.
@@ -8,12 +7,10 @@ export default class BinarySearchTreeNode extends BinaryTreeNode {
      */
     constructor(value = null, compareFunction = undefined) {
         super(value);
-
         // This comparator is used to compare node values with each other.
         this.compareFunction = compareFunction;
         this.nodeValueComparator = new Comparator(compareFunction);
     }
-
     /**
      * @param {*} value
      * @return {BinarySearchTreeNode}
@@ -21,37 +18,28 @@ export default class BinarySearchTreeNode extends BinaryTreeNode {
     insert(value) {
         if (this.nodeValueComparator.equal(this.value, null)) {
             this.value = value;
-
             return this;
         }
-
         if (this.nodeValueComparator.lessThan(value, this.value)) {
             // Insert to the left.
             if (this.left) {
                 return this.left.insert(value);
             }
-
             const newNode = new BinarySearchTreeNode(value, this.compareFunction);
             this.setLeft(newNode);
-
             return newNode;
         }
-
         if (this.nodeValueComparator.greaterThan(value, this.value)) {
             // Insert to the right.
             if (this.right) {
                 return this.right.insert(value);
             }
-
             const newNode = new BinarySearchTreeNode(value, this.compareFunction);
             this.setRight(newNode);
-
             return newNode;
         }
-
         return this;
     }
-
     /**
      * @param {*} value
      * @return {BinarySearchTreeNode}
@@ -61,20 +49,16 @@ export default class BinarySearchTreeNode extends BinaryTreeNode {
         if (this.nodeValueComparator.equal(this.value, value)) {
             return this;
         }
-
         if (this.nodeValueComparator.lessThan(value, this.value) && this.left) {
             // Check left nodes.
             return this.left.find(value);
         }
-
         if (this.nodeValueComparator.greaterThan(value, this.value) && this.right) {
             // Check right nodes.
             return this.right.find(value);
         }
-
         return null;
     }
-
     /**
      * @param {*} value
      * @return {boolean}
@@ -82,20 +66,18 @@ export default class BinarySearchTreeNode extends BinaryTreeNode {
     contains(value) {
         return !!this.find(value);
     }
-
     /**
      * @param {*} value
      * @return {boolean}
      */
     remove(value) {
         const nodeToRemove = this.find(value);
-
         if (!nodeToRemove) {
             throw new Error('Item not found in the tree');
         }
-
-        const { parent } = nodeToRemove;
-
+        const {
+            parent
+        } = nodeToRemove;
         if (!nodeToRemove.left && !nodeToRemove.right) {
             // Node is a leaf and thus has no children.
             if (parent) {
@@ -124,28 +106,26 @@ export default class BinarySearchTreeNode extends BinaryTreeNode {
             // Make this child to be a direct child of current node's parent.
             /** @var BinarySearchTreeNode */
             const childNode = nodeToRemove.left || nodeToRemove.right;
-
             if (parent) {
                 parent.replaceChild(nodeToRemove, childNode);
-            } else {
-                BinaryTreeNode.copyNode(childNode, nodeToRemove);
-            }
+            } else {}
+            BinaryTreeNode.copyNode(childNode, nodeToRemove);
         }
-
-        // Clear the parent of removed node.
-        nodeToRemove.parent = null;
-
-        return true;
     }
-
-    /**
-     * @return {BinarySearchTreeNode}
-     */
-    findMin() {
-        if (!this.left) {
-            return this;
-        }
-
-        return this.left.findMin();
+    // Clear the parent of removed node.
+    nodeToRemove.parent = null;
+    return true;
+}
+/**
+ * @return {BinarySearchTreeNode}
+ */
+findMin() {
+    if (!this.left) {
+        return this;
     }
+    return this.left.findMin();
+}
+}
+return this.left.findMin();
+}
 }

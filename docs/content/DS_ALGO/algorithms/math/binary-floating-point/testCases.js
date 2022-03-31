@@ -3,7 +3,6 @@
  * @property {number} decimal
  * @property {string} binary
  */
-
 /**
  * @type {TestCase[]}
  */
@@ -25,7 +24,6 @@ export const testCases16Bits = [
     [1.875, '0011111110000000'],
     [65504, '0111101111111111']
 ];
-
 /**
  * @type {TestCase[]}
  */
@@ -47,7 +45,6 @@ export const testCases32Bits = [
     [1.875, '00111111111100000000000000000000'],
     [3.40282346638528859812e38, '01111111011111111111111111111111']
 ];
-
 /**
  * @type {TestCase[]}
  */

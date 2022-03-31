@@ -15,7 +15,6 @@ function intToHex(num) {
     }
     return num;
 }
-
 function decimalToHex(num) {
     const hexOut = [];
     while (num > 15) {
@@ -24,5 +23,4 @@ function decimalToHex(num) {
     }
     return intToHex(num) + hexOut.join('');
 }
-
 export { decimalToHex };

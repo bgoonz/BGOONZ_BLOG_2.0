@@ -1,5 +1,4 @@
 import dpRainTerraces from '../dpRainTerraces';
-
 describe('dpRainTerraces', () => {
     it('should find the amount of water collected after raining', () => {
         expect(dpRainTerraces([1])).toBe(0);

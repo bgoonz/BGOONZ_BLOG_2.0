@@ -1,5 +1,4 @@
 import multiplyByTwo from '../multiplyByTwo';
-
 describe('multiplyByTwo', () => {
     it('should multiply numbers by two using bitwise operations', () => {
         expect(multiplyByTwo(0)).toBe(0);

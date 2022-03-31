@@ -4,7 +4,6 @@
  * element one by one from unsorted part; insert into the sorted part at
  * the correct position and expand sorted part one element at a time.
  */
-
 export function insertionSort(unsortedList) {
     const len = unsortedList.length;
     for (let i = 1; i < len; i++) {
@@ -20,7 +19,6 @@ export function insertionSort(unsortedList) {
         unsortedList[j + 1] = tmp;
     }
 }
-
 /**
  * @function insertionSortAlternativeImplementation
  * @description InsertionSort is a stable sorting algorithm
@@ -28,7 +26,6 @@ export function insertionSort(unsortedList) {
  * @return {Integer[]} - Sorted array
  * @see [InsertionSort](https://en.wikipedia.org/wiki/Quicksort)
  */
-
 /*
   * Big-O Analysis
       * Time Complexity
@@ -37,17 +34,14 @@ export function insertionSort(unsortedList) {
       * Space Complexity
         - O(1)
 */
-
 export function insertionSortAlternativeImplementation(array) {
     const length = array.length;
     if (length < 2) return array;
-
     for (let i = 1; i < length; i++) {
         // Take current element in array
         const currentItem = array[i];
         // Take index of previous element in array
         let j = i - 1;
-
         // While j >= 0 and previous element is greater than current element
         while (j >= 0 && array[j] > currentItem) {
             // Move previous, greater element towards the unsorted part

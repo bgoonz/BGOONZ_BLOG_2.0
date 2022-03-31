@@ -2,7 +2,6 @@
  * What is Pangram?
  * Pangram is a sentence that contains all the letters in the alphabet https://en.wikipedia.org/wiki/Pangram
  */
-
 /**
  * @function checkPangramRegex
  * @description - This function check pangram with the help of regex pattern
@@ -15,7 +14,6 @@ const checkPangramRegex = (string) => {
     if (typeof string !== 'string') {
         throw new TypeError('The given value is not a string');
     }
-
     /**
      * Match all 26 alphabets using regex, with the help of:
      * Capturing group - () -> Groups multiple tokens together and creates a capture group for extracting a substring or using a backreference.
@@ -27,7 +25,6 @@ const checkPangramRegex = (string) => {
      */
     return string.match(/([a-z])(?!.*\1)/gi).length === 26;
 };
-
 /**
  * @function checkPangramSet
  * @description - This function detect the pangram sentence by HashSet
@@ -38,17 +35,13 @@ const checkPangramSet = (string) => {
     if (typeof string !== 'string') {
         throw new TypeError('The given value is not a string');
     }
-
     const lettersSet = new Set();
-
     for (const letter of string.toUpperCase()) {
         if (/[A-Z]/.test(letter)) {
             // if the letter is a valid uppercase alphabet then the add method insert the letter to the HashSet
             lettersSet.add(letter);
         }
     }
-
     return lettersSet.size === 26;
 };
-
 export { checkPangramRegex, checkPangramSet };

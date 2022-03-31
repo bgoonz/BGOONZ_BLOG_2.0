@@ -8,7 +8,6 @@ const maxCharacter = (value) => {
     } else if (!value) {
         throw new Error('The param should be a valid string');
     }
-
     const occurrences = {};
     for (let i = 0; i < value.length; i++) {
         const char = value[i];
@@ -25,5 +24,4 @@ const maxCharacter = (value) => {
     });
     return maxCharacter;
 };
-
 export { maxCharacter };

@@ -1,5 +1,4 @@
 import { decimalToRoman } from '../DecimalToRoman';
-
 describe('decimalToRoman', () => {
     it('expects to return correct roman numeral of given number', () => {
         expect(decimalToRoman(34)).toBe('XXXIV');

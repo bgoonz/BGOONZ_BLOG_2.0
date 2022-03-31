@@ -9,16 +9,13 @@ export default function integerPartition(number) {
         .map(() => {
             return Array(number + 1).fill(null);
         });
-
     // Fill partition matrix with initial values.
-
     // Let's fill the first row that represents how many ways we would have
     // to combine the numbers 1, 2, 3, ..., n with number 0. We would have zero
     // ways obviously since with zero number we may form only zero.
     for (let numberIndex = 1; numberIndex <= number; numberIndex += 1) {
         partitionMatrix[0][numberIndex] = 0;
     }
-
     // Let's fill the first column. It represents the number of ways we can form
     // number zero out of numbers 0, 0 and 1, 0 and 1 and 2, 0 and 1 and 2 and 3, ...
     // Obviously there is only one way we could form number 0
@@ -26,7 +23,6 @@ export default function integerPartition(number) {
     for (let summandIndex = 0; summandIndex <= number; summandIndex += 1) {
         partitionMatrix[summandIndex][0] = 1;
     }
-
     // Now let's go through other possible options of how we could form number m out of
     // summands 0, 1, ..., m using Dynamic Programming approach.
     for (let summandIndex = 1; summandIndex <= number; summandIndex += 1) {
@@ -49,11 +45,9 @@ export default function integerPartition(number) {
                  */
                 const combosWithoutSummand = partitionMatrix[summandIndex - 1][numberIndex];
                 const combosWithSummand = partitionMatrix[summandIndex][numberIndex - summandIndex];
-
                 partitionMatrix[summandIndex][numberIndex] = combosWithoutSummand + combosWithSummand;
             }
         }
     }
-
     return partitionMatrix[number][number];
 }

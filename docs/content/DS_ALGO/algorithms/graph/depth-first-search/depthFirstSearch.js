@@ -9,19 +9,18 @@
  *
  * @property {function(vertices: Object)} [leaveVertex] - Called when DFS leaves the vertex.
  */
-
 /**
  * @param {Callbacks} [callbacks]
  * @returns {Callbacks}
  */
 function initCallbacks(callbacks = {}) {
     const initiatedCallback = callbacks;
-
     const stubCallback = () => {};
-
     const allowTraversalCallback = (() => {
         const seen = {};
-        return ({ nextVertex }) => {
+        return ({
+            nextVertex
+        }) => {
             if (!seen[nextVertex.getKey()]) {
                 seen[nextVertex.getKey()] = true;
                 return true;
@@ -29,14 +28,11 @@ function initCallbacks(callbacks = {}) {
             return false;
         };
     })();
-
     initiatedCallback.allowTraversal = callbacks.allowTraversal || allowTraversalCallback;
     initiatedCallback.enterVertex = callbacks.enterVertex || stubCallback;
     initiatedCallback.leaveVertex = callbacks.leaveVertex || stubCallback;
-
     return initiatedCallback;
 }
-
 /**
  * @param {Graph} graph
  * @param {GraphVertex} currentVertex
@@ -44,17 +40,24 @@ function initCallbacks(callbacks = {}) {
  * @param {Callbacks} callbacks
  */
 function depthFirstSearchRecursive(graph, currentVertex, previousVertex, callbacks) {
-    callbacks.enterVertex({ currentVertex, previousVertex });
-
+    callbacks.enterVertex({
+        currentVertex,
+        previousVertex
+    });
     graph.getNeighbors(currentVertex).forEach((nextVertex) => {
-        if (callbacks.allowTraversal({ previousVertex, currentVertex, nextVertex })) {
+        if (callbacks.allowTraversal({
+                previousVertex,
+                currentVertex,
+                nextVertex
+            })) {
             depthFirstSearchRecursive(graph, nextVertex, currentVertex, callbacks);
         }
     });
-
-    callbacks.leaveVertex({ currentVertex, previousVertex });
+    callbacks.leaveVertex({
+        currentVertex,
+        previousVertex
+    });
 }
-
 /**
  * @param {Graph} graph
  * @param {GraphVertex} startVertex
@@ -63,4 +66,16 @@ function depthFirstSearchRecursive(graph, currentVertex, previousVertex, callbac
 export default function depthFirstSearch(graph, startVertex, callbacks) {
     const previousVertex = null;
     depthFirstSearchRecursive(graph, startVertex, previousVertex, initCallbacks(callbacks));
+}
+});
+}
+/**
+ * @param {Graph} graph
+ * @param {GraphVertex} startVertex
+ * @param {Callbacks} [callbacks]
+ */
+export default function depthFirstSearch(graph, startVertex, callbacks) {
+    const previousVertex = null;
+    depthFirstSearchRecursive(graph, startVertex, previousVertex, initCallbacks(callbacks));
+}
 }

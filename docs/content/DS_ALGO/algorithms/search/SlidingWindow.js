@@ -19,7 +19,6 @@
  * @param {Int} num - An integer that displays the size of the window you want to check.
  * @returns {Int / Null} - Returns a total of N consecutive numbers or null
  */
-
 function slidingWindow(arr, num) {
     // Edge Case:
     // If the length of the array shorter than the window size (num) return null.
@@ -43,5 +42,4 @@ function slidingWindow(arr, num) {
     }
     return maxSum;
 }
-
 export { slidingWindow };

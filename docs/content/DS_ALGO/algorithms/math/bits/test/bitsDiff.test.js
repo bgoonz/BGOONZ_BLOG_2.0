@@ -1,5 +1,4 @@
 import bitsDiff from '../bitsDiff';
-
 describe('bitsDiff', () => {
     it('should calculate bits difference between two numbers', () => {
         expect(bitsDiff(0, 0)).toBe(0);

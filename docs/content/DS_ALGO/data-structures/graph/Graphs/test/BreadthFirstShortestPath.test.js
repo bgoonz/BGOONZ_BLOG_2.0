@@ -1,5 +1,4 @@
 import { breadthFirstShortestPath } from '../BreadthFirstShortestPath';
-
 describe('BreadthFirstShortestPath', () => {
     const graph = {
         A: ['B', 'D'],
@@ -16,10 +15,8 @@ describe('BreadthFirstShortestPath', () => {
         |     |
         v     v
   C --> D <-- E
-
   F --> G
   */
-
     it('should return the visited nodes', () => {
         expect(breadthFirstShortestPath(graph, 'C', 'E')).toEqual(['C', 'D', 'A', 'B', 'E']);
         expect(breadthFirstShortestPath(graph, 'E', 'B')).toEqual(['E', 'D', 'A', 'B']);

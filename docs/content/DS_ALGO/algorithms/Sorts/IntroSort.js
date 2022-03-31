@@ -28,7 +28,7 @@ function introsort(array, compare) {
      *  0 if a is equal to b
      *  1 if a greater than b
      */
-    const defaultComparator = function (x, y) {
+    const defaultComparator = function(x, y) {
         if (x === undefined && y === undefined) return 0;
         if (x === undefined) return 1;
         if (y === undefined) return -1;
@@ -45,7 +45,7 @@ function introsort(array, compare) {
      * @param {Object} obj
      * @returns {String} String representation of given object
      */
-    const toString = function (obj) {
+    const toString = function(obj) {
         if (obj === null) return 'null';
         if (typeof obj === 'boolean' || typeof obj === 'number') {
             return obj.toString();
@@ -74,8 +74,8 @@ function introsort(array, compare) {
      * implementation this is done through
      * [IIFE](https://en.wikipedia.org/wiki/Immediately_invoked_function_expression)
      */
-    return (function (array, comparator) {
-        const swap = function (index1, index2) {
+    return (function(array, comparator) {
+        const swap = function(index1, index2) {
             const temp = array[index1];
             array[index1] = array[index2];
             array[index2] = temp;
@@ -234,7 +234,6 @@ function introsort(array, compare) {
         }
     })(array, compare);
 }
-
 /**
  * @example Demo run of the sort routine
  * The data is randomly generated
@@ -246,7 +245,7 @@ function demo1() {
     const size = 1000000;
     let i = 0;
     let temp;
-    const c = function (a, b) {
+    const c = function(a, b) {
         return a - b;
     };
     for (i = 0; i < size; i++) {
@@ -267,7 +266,6 @@ function demo1() {
         return 'RIGHT:)';
     }
 }
-
 /**
  * @example Demo run of the sort routine
  * using the default compare function and
@@ -299,5 +297,12 @@ function demo2() {
         return 'Comparator Works Fine:)';
     }
 }
-
-export { introsort, demo1, demo2 };
+export {
+    introsort,
+    demo1,
+    demo2
+};
+introsort,
+demo1,
+demo2
+};

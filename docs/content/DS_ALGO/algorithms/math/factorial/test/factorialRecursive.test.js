@@ -1,5 +1,4 @@
 import factorialRecursive from '../factorialRecursive';
-
 describe('factorialRecursive', () => {
     it('should calculate factorial', () => {
         expect(factorialRecursive(0)).toBe(1);

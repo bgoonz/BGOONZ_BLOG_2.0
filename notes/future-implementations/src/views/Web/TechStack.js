@@ -1,8 +1,15 @@
 import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
-import { Grid } from 'components/styles';
+import {
+    graphql,
+    useStaticQuery
+} from 'gatsby';
+import {
+    Grid
+} from 'components/styles';
 export function TechStack() {
-    const { tech } = useStaticQuery(graphql`
+    const {
+        tech
+    } = useStaticQuery(graphql `
         {
             tech: allTechYaml {
                 nodes {
@@ -12,18 +19,38 @@ export function TechStack() {
                         src: publicURL
                         dataURI
                     }
-                }
-            }
+                } }
         }
     `);
-    return (
-        <Grid minWidth="5em" align="center">
-            {tech.nodes.map(({ title, url, logo }) => (
-                <a key={title} href={url} css="transition: 0.4s; :hover {transform: scale(1.05);}">
-                    <span css="font-size: 0.85em;">{title}</span>
-                    <img src={logo.dataURI || logo.src} alt={title} />
-                </a>
-            ))}
-        </Grid>
+    return ( <
+        Grid minWidth = "5em"
+        align = "center" > {
+            tech.nodes.map(({
+                title,
+                url,
+                logo
+            }) => ( <
+                a key = {
+                    title
+                }
+                href = {
+                    url
+                }
+                css = "transition: 0.4s; :hover {transform: scale(1.05);}" >
+                <
+                span css = "font-size: 0.85em;" > {
+                    title
+                } < /span> <
+                img src = {
+                    logo.dataURI || logo.src
+                }
+                alt = {
+                    title
+                }
+                /> <
+                /a>
+            ))
+        } <
+        /Grid>
     );
 }

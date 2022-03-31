@@ -1,5 +1,4 @@
 import euclideanAlgorithmIterative from '../euclideanAlgorithmIterative';
-
 describe('euclideanAlgorithmIterative', () => {
     it('should calculate GCD iteratively', () => {
         expect(euclideanAlgorithmIterative(0, 0)).toBe(0);

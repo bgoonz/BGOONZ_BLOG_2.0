@@ -1,5 +1,4 @@
 import isPowerOfTwo from '../../../algorithms/math/is-power-of-two/isPowerOfTwo';
-
 export default class SegmentTree {
     /**
      * @param {number[]} inputArray
@@ -10,13 +9,10 @@ export default class SegmentTree {
         this.inputArray = inputArray;
         this.operation = operation;
         this.operationFallback = operationFallback;
-
         // Init array representation of segment tree.
         this.segmentTree = this.initSegmentTree(this.inputArray);
-
         this.buildSegmentTree();
     }
-
     /**
      * @param {number[]} inputArray
      * @return {number[]}
@@ -24,7 +20,6 @@ export default class SegmentTree {
     initSegmentTree(inputArray) {
         let segmentTreeArrayLength;
         const inputArrayLength = inputArray.length;
-
         if (isPowerOfTwo(inputArrayLength)) {
             // If original array length is a power of two.
             segmentTreeArrayLength = 2 * inputArrayLength - 1;
@@ -38,10 +33,8 @@ export default class SegmentTree {
             const nextPowerOfTwoNumber = 2 ** nextPower;
             segmentTreeArrayLength = 2 * nextPowerOfTwoNumber - 1;
         }
-
         return new Array(segmentTreeArrayLength).fill(null);
     }
-
     /**
      * Build segment tree.
      */
@@ -51,7 +44,6 @@ export default class SegmentTree {
         const position = 0;
         this.buildTreeRecursively(leftIndex, rightIndex, position);
     }
-
     /**
      * Build segment tree recursively.
      *
@@ -68,19 +60,16 @@ export default class SegmentTree {
             this.segmentTree[position] = this.inputArray[leftInputIndex];
             return;
         }
-
         // Split input array on two halves and process them recursively.
         const middleIndex = Math.floor((leftInputIndex + rightInputIndex) / 2);
         // Process left half of the input array.
         this.buildTreeRecursively(leftInputIndex, middleIndex, this.getLeftChildIndex(position));
         // Process right half of the input array.
         this.buildTreeRecursively(middleIndex + 1, rightInputIndex, this.getRightChildIndex(position));
-
         // Once every tree leaf is not empty we're able to build tree bottom up using
         // provided operation function.
         this.segmentTree[position] = this.operation(this.segmentTree[this.getLeftChildIndex(position)], this.segmentTree[this.getRightChildIndex(position)]);
     }
-
     /**
      * Do range query on segment tree in context of this.operation function.
      *
@@ -92,10 +81,8 @@ export default class SegmentTree {
         const leftIndex = 0;
         const rightIndex = this.inputArray.length - 1;
         const position = 0;
-
         return this.rangeQueryRecursive(queryLeftIndex, queryRightIndex, leftIndex, rightIndex, position);
     }
-
     /**
      * Do range query on segment tree recursively in context of this.operation function.
      *
@@ -111,22 +98,16 @@ export default class SegmentTree {
             // Total overlap.
             return this.segmentTree[position];
         }
-
         if (queryLeftIndex > rightIndex || queryRightIndex < leftIndex) {
             // No overlap.
             return this.operationFallback;
         }
-
         // Partial overlap.
         const middleIndex = Math.floor((leftIndex + rightIndex) / 2);
-
         const leftOperationResult = this.rangeQueryRecursive(queryLeftIndex, queryRightIndex, leftIndex, middleIndex, this.getLeftChildIndex(position));
-
         const rightOperationResult = this.rangeQueryRecursive(queryLeftIndex, queryRightIndex, middleIndex + 1, rightIndex, this.getRightChildIndex(position));
-
         return this.operation(leftOperationResult, rightOperationResult);
     }
-
     /**
      * Left child index.
      * @param {number} parentIndex
@@ -135,7 +116,6 @@ export default class SegmentTree {
     getLeftChildIndex(parentIndex) {
         return 2 * parentIndex + 1;
     }
-
     /**
      * Right child index.
      * @param {number} parentIndex

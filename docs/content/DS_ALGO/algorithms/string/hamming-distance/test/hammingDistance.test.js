@@ -1,14 +1,11 @@
 import hammingDistance from '../hammingDistance';
-
 describe('hammingDistance', () => {
     it('should throw an error when trying to compare the strings of different lengths', () => {
         const compareStringsOfDifferentLength = () => {
             hammingDistance('a', 'aa');
         };
-
         expect(compareStringsOfDifferentLength).toThrowError();
     });
-
     it('should calculate difference between two strings', () => {
         expect(hammingDistance('a', 'a')).toBe(0);
         expect(hammingDistance('a', 'b')).toBe(1);

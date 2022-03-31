@@ -11,7 +11,6 @@ function euclideanGCDRecursive(first, second) {
         return euclideanGCDRecursive(second, first % second);
     }
 }
-
 function euclideanGCDIterative(first, second) {
     /*
     Calculates GCD of two numbers using Euclidean Iterative Algorithm
@@ -26,5 +25,4 @@ function euclideanGCDIterative(first, second) {
     }
     return first;
 }
-
 export { euclideanGCDIterative, euclideanGCDRecursive };

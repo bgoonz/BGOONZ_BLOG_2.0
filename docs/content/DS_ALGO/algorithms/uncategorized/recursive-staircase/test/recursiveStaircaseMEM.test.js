@@ -1,5 +1,4 @@
 import recursiveStaircaseMEM from '../recursiveStaircaseMEM';
-
 describe('recursiveStaircaseMEM', () => {
     it('should calculate number of variants using Brute Force with Memoization', () => {
         expect(recursiveStaircaseMEM(-1)).toBe(0);

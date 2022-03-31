@@ -13,7 +13,7 @@ sections:
       grid_items:
           - title: Git HTML PREVIEW
             title_url: 'https://github.com/bgoonz/GIT-HTML-PREVIEW-TOOL'
-            image: images/git-preview.gif
+            image: images/futuristic-mars.gif
             content: >
                 Preview html files by pasting their url into the search bar
                 **Access-Control-Allow-Origin Header When Site A tries to fetch
@@ -29,7 +29,7 @@ sections:
             image_alt: git html preview
           - title: Guitar Effects Automation Using Subsequence Dynamic Time Warping
             title_url: 'https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering'
-            image: images/dtw-slideshow.gif
+            image: images/curious-europa.gif
             content: >
                 **Modified subsequence dynamic time warping feature detection using
                 pure data implemented in python**
@@ -71,7 +71,7 @@ sections:
                   no_follow: false
                   type: action
             type: grid_item
-            image: images/redux-state.gif
+            image: images/best-birch.gif
           - title: Mihir-Beg-Music.com
             title_url: 'https://panoramic-eggplant-452e4.netlify.app/'
             image: images/mihir.png
@@ -129,7 +129,7 @@ sections:
                   no_follow: false
                   type: action
             type: grid_item
-            image: images/zumzi-video-chat.png
+            image: images/energetic-sunflower.png
           - title: Web Audio Workstation
             title_url: lorem-ipsum
             image_alt: image of

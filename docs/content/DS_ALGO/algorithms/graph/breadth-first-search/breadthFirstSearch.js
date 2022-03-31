@@ -1,5 +1,4 @@
 import Queue from '../../../data-structures/queue/Queue';
-
 /**
  * @typedef {Object} Callbacks
  *
@@ -11,19 +10,18 @@ import Queue from '../../../data-structures/queue/Queue';
  *
  * @property {function(vertices: Object)} [leaveVertex] - Called when BFS leaves the vertex.
  */
-
 /**
  * @param {Callbacks} [callbacks]
  * @returns {Callbacks}
  */
 function initCallbacks(callbacks = {}) {
     const initiatedCallback = callbacks;
-
     const stubCallback = () => {};
-
     const allowTraversalCallback = (() => {
         const seen = {};
-        return ({ nextVertex }) => {
+        return ({
+            nextVertex
+        }) => {
             if (!seen[nextVertex.getKey()]) {
                 seen[nextVertex.getKey()] = true;
                 return true;
@@ -31,14 +29,11 @@ function initCallbacks(callbacks = {}) {
             return false;
         };
     })();
-
     initiatedCallback.allowTraversal = callbacks.allowTraversal || allowTraversalCallback;
     initiatedCallback.enterVertex = callbacks.enterVertex || stubCallback;
     initiatedCallback.leaveVertex = callbacks.leaveVertex || stubCallback;
-
     return initiatedCallback;
 }
-
 /**
  * @param {Graph} graph
  * @param {GraphVertex} startVertex
@@ -47,27 +42,42 @@ function initCallbacks(callbacks = {}) {
 export default function breadthFirstSearch(graph, startVertex, originalCallbacks) {
     const callbacks = initCallbacks(originalCallbacks);
     const vertexQueue = new Queue();
-
     // Do initial queue setup.
     vertexQueue.enqueue(startVertex);
-
     let previousVertex = null;
-
     // Traverse all vertices from the queue.
     while (!vertexQueue.isEmpty()) {
         const currentVertex = vertexQueue.dequeue();
-        callbacks.enterVertex({ currentVertex, previousVertex });
-
+        callbacks.enterVertex({
+            currentVertex,
+            previousVertex
+        });
         // Add all neighbors to the queue for future traversals.
         graph.getNeighbors(currentVertex).forEach((nextVertex) => {
-            if (callbacks.allowTraversal({ previousVertex, currentVertex, nextVertex })) {
+            if (callbacks.allowTraversal({
+                    previousVertex,
+                    currentVertex,
+                    nextVertex
+                })) {
                 vertexQueue.enqueue(nextVertex);
             }
         });
-
-        callbacks.leaveVertex({ currentVertex, previousVertex });
-
+        callbacks.leaveVertex({
+            currentVertex,
+            previousVertex
+        });
         // Memorize current vertex before next loop.
         previousVertex = currentVertex;
     }
+}
+}
+});
+callbacks.leaveVertex({
+    currentVertex,
+    previousVertex
+});
+// Memorize current vertex before next loop.
+previousVertex = currentVertex;
+
+}
 }

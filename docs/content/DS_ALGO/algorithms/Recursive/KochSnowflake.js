@@ -12,14 +12,12 @@
  * (for a more detailed explanation and an implementation in the Processing language, see
  * https://natureofcode.com/book/chapter-8-fractals/ #84-the-koch-curve-and-the-arraylist-technique).
  */
-
 /** Class to handle the vector calculations. */
 export class Vector2 {
     constructor(x, y) {
         this.x = x;
         this.y = y;
     }
-
     /**
      * Vector addition
      *
@@ -31,7 +29,6 @@ export class Vector2 {
         const y = this.y + vector.y;
         return new Vector2(x, y);
     }
-
     /**
      * Vector subtraction
      *
@@ -43,7 +40,6 @@ export class Vector2 {
         const y = this.y - vector.y;
         return new Vector2(x, y);
     }
-
     /**
      * Vector scalar multiplication
      *
@@ -55,7 +51,6 @@ export class Vector2 {
         const y = this.y * scalar;
         return new Vector2(x, y);
     }
-
     /**
      * Vector rotation (see https://en.wikipedia.org/wiki/Rotation_matrix)
      *
@@ -71,7 +66,6 @@ export class Vector2 {
         return new Vector2(x, y);
     }
 }
-
 /**
  * Go through the number of iterations determined by the argument "steps".
  *
@@ -86,10 +80,8 @@ export function iterate(initialVectors, steps) {
     for (let i = 0; i < steps; i++) {
         vectors = iterationStep(vectors);
     }
-
     return vectors;
 }
-
 /**
  * Loops through each pair of adjacent vectors.
  *
@@ -110,7 +102,6 @@ function iterationStep(vectors) {
         newVectors.push(startVector.add(differenceVector).add(differenceVector.rotate(60)));
         newVectors.push(startVector.add(differenceVector.multiply(2)));
     }
-
     newVectors.push(vectors[vectors.length - 1]);
     return newVectors;
 }

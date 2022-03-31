@@ -1,11 +1,9 @@
 import LinkedList from '../linked-list/LinkedList';
-
 // Hash table size directly affects on the number of collisions.
 // The bigger the hash table size the less collisions you'll get.
 // For demonstrating purposes hash table size is small to show how collisions
 // are being handled.
 const defaultHashTableSize = 32;
-
 export default class HashTable {
     /**
      * @param {number} hashTableSize
@@ -15,11 +13,9 @@ export default class HashTable {
         this.buckets = Array(hashTableSize)
             .fill(null)
             .map(() => new LinkedList());
-
         // Just to keep track of all actual keys in a fast way.
         this.keys = {};
     }
-
     /**
      * Converts key string to hash number.
      *
@@ -38,11 +34,9 @@ export default class HashTable {
         // where charCodeAt(i) is the i-th character code of the key, n is the length of the key and
         // PRIME is just any prime number like 31.
         const hash = Array.from(key).reduce((hashAccumulator, keySymbol) => hashAccumulator + keySymbol.charCodeAt(0), 0);
-
         // Reduce hash number so it would fit hash table size.
         return hash % this.buckets.length;
     }
-
     /**
      * @param {string} key
      * @param {*} value
@@ -52,7 +46,6 @@ export default class HashTable {
         this.keys[key] = keyHash;
         const bucketLinkedList = this.buckets[keyHash];
         const node = bucketLinkedList.find({ callback: (nodeValue) => nodeValue.key === key });
-
         if (!node) {
             // Insert new node.
             bucketLinkedList.append({ key, value });
@@ -61,7 +54,6 @@ export default class HashTable {
             node.value.value = value;
         }
     }
-
     /**
      * @param {string} key
      * @return {*}
@@ -71,14 +63,11 @@ export default class HashTable {
         delete this.keys[key];
         const bucketLinkedList = this.buckets[keyHash];
         const node = bucketLinkedList.find({ callback: (nodeValue) => nodeValue.key === key });
-
         if (node) {
             return bucketLinkedList.delete(node.value);
         }
-
         return null;
     }
-
     /**
      * @param {string} key
      * @return {*}
@@ -86,10 +75,8 @@ export default class HashTable {
     get(key) {
         const bucketLinkedList = this.buckets[this.hash(key)];
         const node = bucketLinkedList.find({ callback: (nodeValue) => nodeValue.key === key });
-
         return node ? node.value.value : undefined;
     }
-
     /**
      * @param {string} key
      * @return {boolean}
@@ -97,14 +84,12 @@ export default class HashTable {
     has(key) {
         return Object.hasOwnProperty.call(this.keys, key);
     }
-
     /**
      * @return {string[]}
      */
     getKeys() {
         return Object.keys(this.keys);
     }
-
     /**
      * Gets the list of all the stored values in the hash table.
      *

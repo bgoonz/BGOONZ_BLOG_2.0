@@ -6,16 +6,12 @@
  * @example countVowels("ABCDE") => 2
  * @example countVowels("Hello") => 2
  */
-
 const countVowels = (str) => {
     if (typeof str !== 'string') {
         throw new TypeError('Input should be a string');
     }
-
     const vowelRegex = /[aeiou]/gi;
     const vowelsArray = str.match(vowelRegex) || [];
-
     return vowelsArray.length;
 };
-
 export { countVowels };

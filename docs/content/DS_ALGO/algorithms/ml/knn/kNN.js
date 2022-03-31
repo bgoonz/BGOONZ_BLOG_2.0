@@ -7,14 +7,11 @@
  * @param {number} k - number of nearest neighbors which will be taken into account (preferably odd)
  * @return {number} - the class of the point
  */
-
 import euclideanDistance from '../../math/euclidean-distance/euclideanDistance';
-
 export default function kNN(dataSet, labels, toClassify, k = 3) {
     if (!dataSet || !labels || !toClassify) {
         throw new Error('Either dataSet or labels or toClassify were not set');
     }
-
     // Calculate distance from toClassify to each point for all dimensions in dataSet.
     // Store distance and point's label into distances list.
     const distances = [];
@@ -24,7 +21,6 @@ export default function kNN(dataSet, labels, toClassify, k = 3) {
             label: labels[i]
         });
     }
-
     // Sort distances list (from closer point to further ones).
     // Take initial k values, count with class index
     const kNearest = distances
@@ -35,7 +31,6 @@ export default function kNN(dataSet, labels, toClassify, k = 3) {
             return a.dist < b.dist ? -1 : 1;
         })
         .slice(0, k);
-
     // Count the number of instances of each class in top k members.
     const labelsCounter = {};
     let topClass = 0;
@@ -51,7 +46,6 @@ export default function kNN(dataSet, labels, toClassify, k = 3) {
             topClass = kNearest[i].label;
         }
     }
-
     // Return the class with highest count.
     return topClass;
 }

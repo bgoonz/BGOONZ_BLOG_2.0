@@ -1,6 +1,5 @@
 import BinaryTreeNode from '../../../../data-structures/tree/BinaryTreeNode';
 import depthFirstSearch from '../depthFirstSearch';
-
 describe('depthFirstSearch', () => {
     it('should perform DFS operation on tree', () => {
         const nodeA = new BinaryTreeNode('A');
@@ -10,29 +9,22 @@ describe('depthFirstSearch', () => {
         const nodeE = new BinaryTreeNode('E');
         const nodeF = new BinaryTreeNode('F');
         const nodeG = new BinaryTreeNode('G');
-
         nodeA.setLeft(nodeB).setRight(nodeC);
         nodeB.setLeft(nodeD).setRight(nodeE);
         nodeC.setLeft(nodeF).setRight(nodeG);
-
         // In-order traversing.
         expect(nodeA.toString()).toBe('D,B,E,A,F,C,G');
-
         const enterNodeCallback = jest.fn();
         const leaveNodeCallback = jest.fn();
-
         // Traverse tree without callbacks first to check default ones.
         depthFirstSearch(nodeA);
-
         // Traverse tree with callbacks.
         depthFirstSearch(nodeA, {
             enterNode: enterNodeCallback,
             leaveNode: leaveNodeCallback
         });
-
         expect(enterNodeCallback).toHaveBeenCalledTimes(7);
         expect(leaveNodeCallback).toHaveBeenCalledTimes(7);
-
         // Check node entering.
         expect(enterNodeCallback.mock.calls[0][0].value).toEqual('A');
         expect(enterNodeCallback.mock.calls[1][0].value).toEqual('B');
@@ -41,7 +33,6 @@ describe('depthFirstSearch', () => {
         expect(enterNodeCallback.mock.calls[4][0].value).toEqual('C');
         expect(enterNodeCallback.mock.calls[5][0].value).toEqual('F');
         expect(enterNodeCallback.mock.calls[6][0].value).toEqual('G');
-
         // Check node leaving.
         expect(leaveNodeCallback.mock.calls[0][0].value).toEqual('D');
         expect(leaveNodeCallback.mock.calls[1][0].value).toEqual('E');
@@ -51,7 +42,6 @@ describe('depthFirstSearch', () => {
         expect(leaveNodeCallback.mock.calls[5][0].value).toEqual('C');
         expect(leaveNodeCallback.mock.calls[6][0].value).toEqual('A');
     });
-
     it('allow users to redefine node visiting logic', () => {
         const nodeA = new BinaryTreeNode('A');
         const nodeB = new BinaryTreeNode('B');
@@ -60,20 +50,15 @@ describe('depthFirstSearch', () => {
         const nodeE = new BinaryTreeNode('E');
         const nodeF = new BinaryTreeNode('F');
         const nodeG = new BinaryTreeNode('G');
-
         nodeA.setLeft(nodeB).setRight(nodeC);
         nodeB.setLeft(nodeD).setRight(nodeE);
         nodeC.setLeft(nodeF).setRight(nodeG);
-
         // In-order traversing.
         expect(nodeA.toString()).toBe('D,B,E,A,F,C,G');
-
         const enterNodeCallback = jest.fn();
         const leaveNodeCallback = jest.fn();
-
         // Traverse tree without callbacks first to check default ones.
         depthFirstSearch(nodeA);
-
         // Traverse tree with callbacks.
         depthFirstSearch(nodeA, {
             allowTraversal: (node, child) => {
@@ -83,16 +68,13 @@ describe('depthFirstSearch', () => {
             enterNode: enterNodeCallback,
             leaveNode: leaveNodeCallback
         });
-
         expect(enterNodeCallback).toHaveBeenCalledTimes(4);
         expect(leaveNodeCallback).toHaveBeenCalledTimes(4);
-
         // Check node entering.
         expect(enterNodeCallback.mock.calls[0][0].value).toEqual('A');
         expect(enterNodeCallback.mock.calls[1][0].value).toEqual('C');
         expect(enterNodeCallback.mock.calls[2][0].value).toEqual('F');
         expect(enterNodeCallback.mock.calls[3][0].value).toEqual('G');
-
         // Check node leaving.
         expect(leaveNodeCallback.mock.calls[0][0].value).toEqual('F');
         expect(leaveNodeCallback.mock.calls[1][0].value).toEqual('G');

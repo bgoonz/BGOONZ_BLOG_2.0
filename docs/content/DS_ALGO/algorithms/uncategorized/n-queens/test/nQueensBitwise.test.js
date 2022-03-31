@@ -1,5 +1,4 @@
 import nQueensBitwise from '../nQueensBitwise';
-
 describe('nQueensBitwise', () => {
     it('should have solutions for 4 to N queens', () => {
         expect(nQueensBitwise(4)).toBe(2);

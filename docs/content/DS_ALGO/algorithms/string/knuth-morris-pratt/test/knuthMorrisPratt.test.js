@@ -1,5 +1,4 @@
 import knuthMorrisPratt from '../knuthMorrisPratt';
-
 describe('knuthMorrisPratt', () => {
     it('should find word position in given text', () => {
         expect(knuthMorrisPratt('', '')).toBe(0);

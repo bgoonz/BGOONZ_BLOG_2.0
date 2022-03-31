@@ -1,5 +1,4 @@
 import { upper } from '../Upper';
-
 describe('Upper', () => {
     it('return uppercase strings', () => {
         expect(upper('hello')).toBe('HELLO');

@@ -1,5 +1,4 @@
 import leastCommonMultiple from '../leastCommonMultiple';
-
 describe('leastCommonMultiple', () => {
     it('should find least common multiple', () => {
         expect(leastCommonMultiple(0, 0)).toBe(0);

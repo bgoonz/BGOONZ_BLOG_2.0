@@ -1,5 +1,4 @@
 import { permutate } from '../PermutateString';
-
 describe('Permutate a string', () => {
     it('expects to throw an Error with an empty string', () => {
         expect(() => {

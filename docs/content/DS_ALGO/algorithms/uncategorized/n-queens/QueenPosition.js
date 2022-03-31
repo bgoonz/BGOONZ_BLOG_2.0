@@ -10,7 +10,6 @@ export default class QueenPosition {
         this.rowIndex = rowIndex;
         this.columnIndex = columnIndex;
     }
-
     /**
      * @return {number}
      */
@@ -21,7 +20,6 @@ export default class QueenPosition {
         // @see https://youtu.be/xouin83ebxE?t=1m59s
         return this.rowIndex - this.columnIndex;
     }
-
     /**
      * @return {number}
      */
@@ -32,7 +30,6 @@ export default class QueenPosition {
         // @see https://youtu.be/xouin83ebxE?t=1m59s
         return this.rowIndex + this.columnIndex;
     }
-
     toString() {
         return `${this.rowIndex},${this.columnIndex}`;
     }

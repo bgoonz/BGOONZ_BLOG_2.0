@@ -1,18 +1,15 @@
 import KMeans from '../kMeans';
-
 describe('kMeans', () => {
     it('should throw an error on invalid data', () => {
         expect(() => {
             KMeans();
         }).toThrowError('The data is empty');
     });
-
     it('should throw an error on inconsistent data', () => {
         expect(() => {
             KMeans([[1, 2], [1]], 2);
         }).toThrowError('Matrices have different shapes');
     });
-
     it('should find the nearest neighbour', () => {
         const data = [
             [1, 1],
@@ -26,7 +23,6 @@ describe('kMeans', () => {
         const k = 2;
         const expectedClusters = [0, 1, 0, 1, 1, 0, 1];
         expect(KMeans(data, k)).toEqual(expectedClusters);
-
         expect(
             KMeans(
                 [
@@ -38,7 +34,6 @@ describe('kMeans', () => {
             )
         ).toEqual([0, 0, 1]);
     });
-
     it('should find the clusters with equal distances', () => {
         const dataSet = [
             [0, 0],
@@ -49,7 +44,6 @@ describe('kMeans', () => {
         const expectedCluster = [0, 1, 2];
         expect(KMeans(dataSet, k)).toEqual(expectedCluster);
     });
-
     it('should find the nearest neighbour in 3D space', () => {
         const dataSet = [
             [0, 0, 0],

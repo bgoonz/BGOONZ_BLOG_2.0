@@ -1,6 +1,5 @@
 import fastFourierTransform from '../fastFourierTransform';
 import ComplexNumber from '../../complex-number/ComplexNumber';
-
 /**
  * @param {ComplexNumber[]} sequence1
  * @param {ComplexNumber[]} sequence2
@@ -11,50 +10,39 @@ function sequencesApproximatelyEqual(sequence1, sequence2, delta) {
     if (sequence1.length !== sequence2.length) {
         return false;
     }
-
     for (let numberIndex = 0; numberIndex < sequence1.length; numberIndex += 1) {
         if (Math.abs(sequence1[numberIndex].re - sequence2[numberIndex].re) > delta) {
             return false;
         }
-
         if (Math.abs(sequence1[numberIndex].im - sequence2[numberIndex].im) > delta) {
             return false;
         }
     }
-
     return true;
 }
-
 const delta = 1e-6;
-
 describe('fastFourierTransform', () => {
     it('should calculate the radix-2 discrete fourier transform #1', () => {
         const input = [new ComplexNumber({ re: 0, im: 0 })];
         const expectedOutput = [new ComplexNumber({ re: 0, im: 0 })];
         const output = fastFourierTransform(input);
         const invertedOutput = fastFourierTransform(output, true);
-
         expect(sequencesApproximatelyEqual(expectedOutput, output, delta)).toBe(true);
         expect(sequencesApproximatelyEqual(input, invertedOutput, delta)).toBe(true);
     });
-
     it('should calculate the radix-2 discrete fourier transform #2', () => {
         const input = [new ComplexNumber({ re: 1, im: 2 }), new ComplexNumber({ re: 2, im: 3 }), new ComplexNumber({ re: 8, im: 4 })];
-
         const expectedOutput = [
             new ComplexNumber({ re: 11, im: 9 }),
             new ComplexNumber({ re: -10, im: 0 }),
             new ComplexNumber({ re: 7, im: 3 }),
             new ComplexNumber({ re: -4, im: -4 })
         ];
-
         const output = fastFourierTransform(input);
         const invertedOutput = fastFourierTransform(output, true);
-
         expect(sequencesApproximatelyEqual(expectedOutput, output, delta)).toBe(true);
         expect(sequencesApproximatelyEqual(input, invertedOutput, delta)).toBe(true);
     });
-
     it('should calculate the radix-2 discrete fourier transform #3', () => {
         const input = [
             new ComplexNumber({ re: -83656.9359385182, im: 98724.08038374918 }),
@@ -68,7 +56,6 @@ describe('fastFourierTransform', () => {
             new ComplexNumber({ re: -22425.008561855735, im: -86284.24507370662 }),
             new ComplexNumber({ re: -39327.43830818355, im: 30611.949874562706 })
         ];
-
         const expectedOutput = [
             new ComplexNumber({ re: -203215.3322151, im: -100242.4827503 }),
             new ComplexNumber({ re: 99217.0805705, im: 270646.9331932 }),
@@ -87,10 +74,8 @@ describe('fastFourierTransform', () => {
             new ComplexNumber({ re: -173449.0825417, im: 146875.7724104 }),
             new ComplexNumber({ re: -179002.5662573, im: 239821.0124341 })
         ];
-
         const output = fastFourierTransform(input);
         const invertedOutput = fastFourierTransform(output, true);
-
         expect(sequencesApproximatelyEqual(expectedOutput, output, delta)).toBe(true);
         expect(sequencesApproximatelyEqual(input, invertedOutput, delta)).toBe(true);
     });

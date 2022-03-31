@@ -3,24 +3,20 @@ function solve(graph, s) {
     const solutions = {};
     solutions[s] = [];
     solutions[s].dist = 0;
-
     while (true) {
         let p = null;
         let neighbor = null;
         let dist = Infinity;
-
         for (const n in solutions) {
             if (!solutions[n]) {
                 continue;
             }
             const ndist = solutions[n].dist;
             const adj = graph[n];
-
             for (const a in adj) {
                 if (solutions[a]) {
                     continue;
                 }
-
                 const d = adj[a] + ndist;
                 if (d < dist) {
                     p = solutions[n];
@@ -29,26 +25,22 @@ function solve(graph, s) {
                 }
             }
         }
-
         // no more solutions
         if (dist === Infinity) {
             break;
         }
-
         // extend parent's solution path
         solutions[neighbor] = p.concat(neighbor);
         // extend parent's cost
         solutions[neighbor].dist = dist;
     }
-
     return solutions;
 }
-
-export { solve };
-
+export {
+    solve
+};
 // // create graph
 // const graph = {}
-
 // const layout = {
 //   R: ['2'],
 //   2: ['3', '4'],
@@ -66,7 +58,6 @@ export { solve };
 //   14: [],
 //   15: []
 // }
-
 // // convert uni-directional to bi-directional graph
 // let  graph = {
 //     a: {e:1, b:1, g:3},
@@ -78,7 +69,6 @@ export { solve };
 //     g: {a:3, f:1},
 //     h: {f:1}
 // };
-
 // for (const id in layout) {
 //   if (!graph[id]) { graph[id] = {} }
 //   layout[id].forEach(function (aid) {
@@ -87,15 +77,12 @@ export { solve };
 //     graph[aid][id] = 1
 //   })
 // }
-
 // // choose start node
 // const start = '10'
 // // get all solutions
 // const solutions = solve(graph, start)
-
 // // for s in solutions..
 // ' -> ' + s + ': [' + solutions[s].join(', ') + ']   (dist:' + solutions[s].dist + ')'
-
 // From '10' to
 //  -> 2: [7, 5, 4, 2]   (dist:4)
 //  -> 3: [7, 5, 4, 3]   (dist:4)
@@ -110,5 +97,7 @@ export { solve };
 //  -> 12: [7, 5, 11, 12]   (dist:4)
 //  -> 13: [7, 5, 4, 3, 13]   (dist:5)
 //  -> 14: [7, 5, 4, 3, 13, 14]   (dist:6)
+//  -> 15: [7, 5, 4, 3, 6, 15]   (dist:6)
+//  -> R: [7, 5, 4, 2, R]   (dist:5)
 //  -> 15: [7, 5, 4, 3, 6, 15]   (dist:6)
 //  -> R: [7, 5, 4, 2, R]   (dist:5)

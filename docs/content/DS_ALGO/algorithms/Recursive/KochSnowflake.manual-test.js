@@ -1,5 +1,4 @@
 import { Vector2, iterate } from './KochSnowflake';
-
 /**
  * Method to render the Koch snowflake to a canvas.
  *
@@ -11,7 +10,6 @@ function getKochSnowflake(canvasWidth = 600, steps = 5) {
     if (canvasWidth <= 0) {
         throw new Error('canvasWidth should be greater than zero');
     }
-
     const offsetX = canvasWidth / 10.0;
     const offsetY = canvasWidth / 3.7;
     const vector1 = new Vector2(offsetX, offsetY);
@@ -25,7 +23,6 @@ function getKochSnowflake(canvasWidth = 600, steps = 5) {
     const vectors = iterate(initialVectors, steps);
     return drawToCanvas(vectors, canvasWidth, canvasWidth);
 }
-
 /**
  * Utility-method to render the Koch snowflake to a canvas.
  *
@@ -38,7 +35,6 @@ function drawToCanvas(vectors, canvasWidth, canvasHeight) {
     const canvas = document.createElement('canvas');
     canvas.width = canvasWidth;
     canvas.height = canvasHeight;
-
     // Draw the edges
     const ctx = canvas.getContext('2d');
     ctx.beginPath();
@@ -47,10 +43,8 @@ function drawToCanvas(vectors, canvasWidth, canvasHeight) {
         ctx.lineTo(vectors[i].x, vectors[i].y);
     }
     ctx.stroke();
-
     return canvas;
 }
-
 // plot the results if the script is executed in a browser with a window-object
 if (typeof window !== 'undefined') {
     const canvas = getKochSnowflake();

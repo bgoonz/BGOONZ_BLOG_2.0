@@ -7,7 +7,6 @@ function buildPatternTable(word) {
     const patternTable = [0];
     let prefixIndex = 0;
     let suffixIndex = 1;
-
     while (suffixIndex < word.length) {
         if (word[prefixIndex] === word[suffixIndex]) {
             patternTable[suffixIndex] = prefixIndex + 1;
@@ -20,10 +19,8 @@ function buildPatternTable(word) {
             prefixIndex = patternTable[prefixIndex - 1];
         }
     }
-
     return patternTable;
 }
-
 /**
  * @param {string} text
  * @param {string} word
@@ -33,12 +30,9 @@ export default function knuthMorrisPratt(text, word) {
     if (word.length === 0) {
         return 0;
     }
-
     let textIndex = 0;
     let wordIndex = 0;
-
     const patternTable = buildPatternTable(word);
-
     while (textIndex < text.length) {
         if (text[textIndex] === word[wordIndex]) {
             // We've found a match.
@@ -54,6 +48,5 @@ export default function knuthMorrisPratt(text, word) {
             textIndex += 1;
         }
     }
-
     return -1;
 }

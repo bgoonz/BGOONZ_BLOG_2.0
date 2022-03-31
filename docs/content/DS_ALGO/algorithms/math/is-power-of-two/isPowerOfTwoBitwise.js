@@ -7,7 +7,6 @@ export default function isPowerOfTwoBitwise(number) {
     if (number < 1) {
         return false;
     }
-
     /*
      * Powers of two in binary look like this:
      * 1: 0001

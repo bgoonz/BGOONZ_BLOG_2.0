@@ -5,14 +5,12 @@
  *
  * Wikipedia: https://en.wikipedia.org/wiki/Flashsort
  */
-
 export function flashSort(arr) {
     let max = 0;
     let min = arr[0];
     const n = arr.length;
     const m = ~~(0.45 * n);
     const l = new Array(m);
-
     for (let i = 1; i < n; ++i) {
         if (arr[i] < min) {
             min = arr[i];
@@ -21,37 +19,29 @@ export function flashSort(arr) {
             max = i;
         }
     }
-
     if (min === arr[max]) {
         return arr;
     }
-
     const c1 = (m - 1) / (arr[max] - min);
-
     for (let k = 0; k < m; k++) {
         l[k] = 0;
     }
-
     for (let j = 0; j < n; ++j) {
         const k = ~~(c1 * (arr[j] - min));
         ++l[k];
     }
-
     for (let p = 1; p < m; ++p) {
         l[p] = l[p] + l[p - 1];
     }
-
     let hold = arr[max];
     arr[max] = arr[0];
     arr[0] = hold;
-
     // permutation
     let move = 0;
     let t;
     let flash;
     let j = 0;
     let k = m - 1;
-
     while (move < n - 1) {
         while (j > l[k] - 1) {
             ++j;
@@ -67,7 +57,6 @@ export function flashSort(arr) {
             ++move;
         }
     }
-
     // insertion
     for (j = 1; j < n; j++) {
         hold = arr[j];
@@ -79,7 +68,6 @@ export function flashSort(arr) {
     }
     return arr;
 }
-
 /**
  * Implementation of Flash Sort
  */

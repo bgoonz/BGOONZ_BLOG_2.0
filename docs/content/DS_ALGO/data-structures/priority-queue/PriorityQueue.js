@@ -1,21 +1,17 @@
 import MinHeap from '../heap/MinHeap';
 import Comparator from '../../utils/comparator/Comparator';
-
 // It is the same as min heap except that when comparing two elements
 // we take into account its priority instead of the element's value.
 export default class PriorityQueue extends MinHeap {
     constructor() {
         // Call MinHip constructor first.
         super();
-
         // Setup priorities map.
         this.priorities = new Map();
-
         // Use custom comparator for heap elements that will take element priority
         // instead of element value into account.
         this.compare = new Comparator(this.comparePriority.bind(this));
     }
-
     /**
      * Add item to the priority queue.
      * @param {*} item - item we're going to add to the queue.
@@ -27,7 +23,6 @@ export default class PriorityQueue extends MinHeap {
         super.add(item);
         return this;
     }
-
     /**
      * Remove item from priority queue.
      * @param {*} item - item we're going to remove.
@@ -39,7 +34,6 @@ export default class PriorityQueue extends MinHeap {
         this.priorities.delete(item);
         return this;
     }
-
     /**
      * Change priority of the item in a queue.
      * @param {*} item - item we're going to re-prioritize.
@@ -51,7 +45,6 @@ export default class PriorityQueue extends MinHeap {
         this.add(item, priority);
         return this;
     }
-
     /**
      * Find item by ite value.
      * @param {*} item
@@ -60,7 +53,6 @@ export default class PriorityQueue extends MinHeap {
     findByValue(item) {
         return this.find(item, new Comparator(this.compareValue));
     }
-
     /**
      * Check if item already exists in a queue.
      * @param {*} item
@@ -69,7 +61,6 @@ export default class PriorityQueue extends MinHeap {
     hasValue(item) {
         return this.findByValue(item).length > 0;
     }
-
     /**
      * Compares priorities of two items.
      * @param {*} a
@@ -82,7 +73,6 @@ export default class PriorityQueue extends MinHeap {
         }
         return this.priorities.get(a) < this.priorities.get(b) ? -1 : 1;
     }
-
     /**
      * Compares values of two items.
      * @param {*} a

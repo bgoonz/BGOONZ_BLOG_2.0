@@ -28,7 +28,7 @@ Once this library is installed, we can create a new file for our project, named 
 
 We can start the application by running `node app.js`. Then we can try it out at the following URL `http://localhost:3000`. At this point you should see the message `Hello World` in the browser.
 
-![](https://cdn-images-1.medium.com/max/800/0\*3FuViRnU9-PB5uqf.PNG)
+![](https://cdn-images-1.medium.com/max/800/0\*3FuViRnU9-PB5uqf.png)
 
 #### 2.) Version Control <a href="#5a4f" id="5a4f"></a>
 
@@ -38,23 +38,23 @@ The most popular version control system is [Git](https://git-scm.com) along with
 
 On GitHub, go ahead and create a new repository for your application, like this:
 
-![](https://cdn-images-1.medium.com/max/800/0\*pyHPJP0kjAV9sij1.PNG)
+![](https://cdn-images-1.medium.com/max/800/0\*pyHPJP0kjAV9sij1.png)
 
 To upload your local code into a repository, you need to run the commands that are listed on GitHub after you click `Create repository` button:
 
-![](https://cdn-images-1.medium.com/max/800/0\*C7nOWV7ygqTRdqcu.PNG)
+![](https://cdn-images-1.medium.com/max/800/0\*C7nOWV7ygqTRdqcu.png)
 
 **!** Before we do this, we must ignore some files. We want to upload to the repository only the code that we write, without the dependencies (the installed modules).
 
 For that, we need to create a new file `.gitignore` and inside it write the file that we want to ignore.
 
-![](https://cdn-images-1.medium.com/max/800/0\*T-9QyGzUdWvFuA-D.PNG)
+![](https://cdn-images-1.medium.com/max/800/0\*T-9QyGzUdWvFuA-D.png)
 
 Now, we can write the commands listed in the picture above (the one from GitHub).
 
 If you ran the commands correctly, then it'll be on your repository's page. If you refresh it you should see your files, except the one that you explicitly ignored, namely `node modules`.
 
-![](https://cdn-images-1.medium.com/max/800/0\*\_WzaY9T9A0FsvPgb.PNG)
+![](https://cdn-images-1.medium.com/max/800/0\*\_WzaY9T9A0FsvPgb.png)
 
 #### Step 3 — Link the repository with Heroku <a href="#f177" id="f177"></a>
 
@@ -62,19 +62,19 @@ At this step, we can link the repository from Github to our Heroku application.
 
 First, create a new application on Heroku and follow the steps listed on the platform.
 
-![](https://cdn-images-1.medium.com/max/800/0\*J9tMV455odrM00UJ.PNG)
+![](https://cdn-images-1.medium.com/max/800/0\*J9tMV455odrM00UJ.png)
 
 Once the application has been created, a window similar to this should appear:
 
-![](https://cdn-images-1.medium.com/max/800/0\*cowa0t6DgTqjUdjR.PNG)
+![](https://cdn-images-1.medium.com/max/800/0\*cowa0t6DgTqjUdjR.png)
 
 Now, if you look at the navigation at the top, you'll see `Overview`, `Resources`, `Deploy`, `Metrics` and so on. Be sure that `Deploy` is selected. Then on the second row, click on the GitHub icon.
 
-![](https://cdn-images-1.medium.com/max/800/0\*kAZI5kiisUiZ2Z9D.PNG)
+![](https://cdn-images-1.medium.com/max/800/0\*kAZI5kiisUiZ2Z9D.png)
 
 Search for the desired application, which is `demo-deploy-app-09` in our case. Then click `Connect`.
 
-![](https://cdn-images-1.medium.com/max/800/0\*T89joca8hXRO8UsL.PNG)
+![](https://cdn-images-1.medium.com/max/800/0\*T89joca8hXRO8UsL.png)
 
 Once the application is successfully connected with your Heroku account, you can click `Deploy Branch` to deploy your application.
 
@@ -82,13 +82,13 @@ If you want, you can also select the option `Enable Automatic Deploys` which wil
 
 Once the application has been deployed, you can click on View to open your application.
 
-![](https://cdn-images-1.medium.com/max/800/0\*9dBdxScA9\_dIEz1Q.PNG)
+![](https://cdn-images-1.medium.com/max/800/0\*9dBdxScA9\_dIEz1Q.png)
 
 #### Step 4 — Configure Heroku to properly run the application <a href="#3096" id="3096"></a>
 
 If you open the application at this point, you should see something like this:
 
-![](https://cdn-images-1.medium.com/max/800/0\*rMZ8aneIjG3nx211.PNG)
+![](https://cdn-images-1.medium.com/max/800/0\*rMZ8aneIjG3nx211.png)
 
 That's right, an error. That's because Heroku doesn't know how to start our application.
 

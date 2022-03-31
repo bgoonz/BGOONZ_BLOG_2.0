@@ -1,5 +1,4 @@
 import recursiveStaircaseIT from '../recursiveStaircaseIT';
-
 describe('recursiveStaircaseIT', () => {
     it('should calculate number of variants using Iterative solution', () => {
         expect(recursiveStaircaseIT(-1)).toBe(0);

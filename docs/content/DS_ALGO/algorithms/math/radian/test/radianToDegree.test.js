@@ -1,5 +1,4 @@
 import radianToDegree from '../radianToDegree';
-
 describe('radianToDegree', () => {
     it('should convert radian to degree', () => {
         expect(radianToDegree(0)).toBe(0);

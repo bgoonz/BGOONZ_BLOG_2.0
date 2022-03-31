@@ -11,7 +11,6 @@
  *
  * Ref: https://www.geeksforgeeks.org/luhn-algorithm/
  */
-
 const luhnValidation = (creditCardNumber) => {
     let validationSum = 0;
     creditCardNumber.split('').forEach((digit, index) => {
@@ -27,17 +26,13 @@ const luhnValidation = (creditCardNumber) => {
         }
         validationSum += currentDigit;
     });
-
     return validationSum % 10 === 0;
 };
-
 const validateCreditCard = (creditCardString) => {
     const validStartSubString = ['4', '5', '6', '37', '34', '35']; // Valid credit card numbers start with these numbers
-
     if (typeof creditCardString !== 'string') {
         throw new TypeError('The given value is not a string');
     }
-
     const errorMessage = `${creditCardString} is an invalid credit card number because `;
     if (isNaN(creditCardString)) {
         throw new TypeError(errorMessage + 'it has nonnumerical characters.');
@@ -52,8 +47,10 @@ const validateCreditCard = (creditCardString) => {
     if (!luhnValidation(creditCardString)) {
         throw new Error(errorMessage + 'it fails the Luhn check.');
     }
-
     return true;
 };
-
-export { validateCreditCard };
+export {
+    validateCreditCard
+};
+validateCreditCard
+};

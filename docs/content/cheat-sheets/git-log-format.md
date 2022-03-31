@@ -44,28 +44,28 @@ See the next tables on format variables.
 #### Commit
 
 | Variable | Description          |
-| -------- | -------------------- |
+|----------|----------------------|
 | `%H`     | commit hash          |
 | `%h`     | (abbrev) commit hash |
 
 #### Tree
 
 | Variable | Description        |
-| -------- | ------------------ |
+|----------|--------------------|
 | `%T`     | tree hash          |
 | `%t`     | (abbrev) tree hash |
 
 #### Parent
 
 | Variable | Description          |
-| -------- | -------------------- |
+|----------|----------------------|
 | `%P`     | parent hash          |
 | `%p`     | (abbrev) parent hash |
 
 ### Commit
 
 | Variable | Description                    |
-| -------- | ------------------------------ |
+|----------|--------------------------------|
 | `%s`     | commit subject                 |
 | `%f`     | commit subject, filename style |
 | `%b`     | commit body                    |
@@ -80,21 +80,21 @@ See the next tables on format variables.
 #### Name
 
 | Variable | Description                |
-| -------- | -------------------------- |
+|----------|----------------------------|
 | `%an`    | author                     |
 | `%aN`    | author, respecting mailmap |
 
 #### Email
 
 | Variable | Description                      |
-| -------- | -------------------------------- |
+|----------|----------------------------------|
 | `%ae`    | author email                     |
 | `%aE`    | author email, respecting mailmap |
 
 #### Date
 
 | Variable | Description                  |
-| -------- | ---------------------------- |
+|----------|------------------------------|
 | `%aD`    | author date (rfc2882)        |
 | `%ar`    | author date (relative)       |
 | `%at`    | author date (unix timestamp) |
@@ -105,21 +105,21 @@ See the next tables on format variables.
 #### Name
 
 | Variable | Description                        |
-| -------- | ---------------------------------- |
+|----------|------------------------------------|
 | `%cn`    | committer name                     |
 | `%cN`    | committer name, respecting mailmap |
 
 #### Email
 
 | Variable | Description                         |
-| -------- | ----------------------------------- |
+|----------|-------------------------------------|
 | `%ce`    | committer email                     |
 | `%cE`    | committer email, respecting mailmap |
 
 #### Date
 
 | Variable | Description                     |
-| -------- | ------------------------------- |
+|----------|---------------------------------|
 | `%cD`    | committer date (rfc2882)        |
 | `%cr`    | committer date (relative)       |
 | `%ct`    | committer date (unix timestamp) |

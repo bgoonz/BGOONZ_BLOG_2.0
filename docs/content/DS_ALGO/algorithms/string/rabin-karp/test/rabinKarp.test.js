@@ -1,5 +1,4 @@
 import rabinKarp from '../rabinKarp';
-
 describe('rabinKarp', () => {
     it('should find substring in a string', () => {
         expect(rabinKarp('', '')).toBe(0);
@@ -14,7 +13,6 @@ describe('rabinKarp', () => {
         expect(rabinKarp('abcxabcdabxaabaabaaaabcdabcdabcy', 'aabaabaaa')).toBe(11);
         expect(rabinKarp("^ !/'#'pp", " !/'#'pp")).toBe(1);
     });
-
     it('should work with bigger texts', () => {
         const text =
             'Lorem Ipsum is simply dummy text of the printing and ' +
@@ -27,14 +25,12 @@ describe('rabinKarp', () => {
             'containing Lorem Ipsum passages, and more recently with desktop' +
             'publishing software like Aldus PageMaker including versions of Lorem ' +
             'Ipsum.';
-
         expect(rabinKarp(text, 'Lorem')).toBe(0);
         expect(rabinKarp(text, 'versions')).toBe(549);
         expect(rabinKarp(text, 'versions of Lorem Ipsum.')).toBe(549);
         expect(rabinKarp(text, 'versions of Lorem Ipsum:')).toBe(-1);
         expect(rabinKarp(text, 'Lorem Ipsum passages, and more recently with')).toBe(446);
     });
-
     it('should work with UTF symbols', () => {
         expect(rabinKarp('a\u{ffff}', '\u{ffff}')).toBe(1);
         expect(rabinKarp('\u0000耀\u0000', '耀\u0000')).toBe(1);

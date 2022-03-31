@@ -4,10 +4,8 @@
 // Module that replicates the SHA-1 Cryptographic Hash
 // function in Javascript.
 //= ===============================================================
-
 // main variables
 const CHAR_SIZE = 8;
-
 /**
  * Adds padding to binary/hex string representation
  *
@@ -25,7 +23,6 @@ function pad(str, bits) {
     }
     return res;
 }
-
 /**
  * Separates string into chunks of the same size
  *
@@ -43,7 +40,6 @@ function chunkify(str, size) {
     }
     return chunks;
 }
-
 /**
  * Rotates string representation of bits to the left
  *
@@ -57,7 +53,6 @@ function chunkify(str, size) {
 function rotateLeft(bits, turns) {
     return bits.substr(turns) + bits.substr(0, turns);
 }
-
 /**
  * Pre-processes message to feed the algorithm loop
  *
@@ -69,26 +64,22 @@ function preProcess(message) {
     // 8 bits, and add 1
     let m =
         message
-            .split('')
-            .map((e) => e.charCodeAt(0))
-            .map((e) => e.toString(2))
-            .map((e) => pad(e, 8))
-            .join('') + '1';
-
+        .split('')
+        .map((e) => e.charCodeAt(0))
+        .map((e) => e.toString(2))
+        .map((e) => pad(e, 8))
+        .join('') + '1';
     // extend message by adding empty bits (0)
     while (m.length % 512 !== 448) {
         m += '0';
     }
-
     // length of message in binary, padded, and extended
     // to a 64 bit representation
     let ml = (message.length * CHAR_SIZE).toString(2);
     ml = pad(ml, 8);
     ml = '0'.repeat(64 - ml.length) + ml;
-
     return m + ml;
 }
-
 /**
  * Hashes message using SHA-1 Cryptographic Hash Function
  *
@@ -102,15 +93,12 @@ function SHA1(message) {
     let H2 = 0x98badcfe;
     let H3 = 0x10325476;
     let H4 = 0xc3d2e1f0;
-
     // pre-process message and split into 512 bit chunks
     const bits = preProcess(message);
     const chunks = chunkify(bits, 512);
-
-    chunks.forEach(function (chunk, i) {
+    chunks.forEach(function(chunk, i) {
         // break each chunk into 16 32-bit words
         const words = chunkify(chunk, 32);
-
         // extend 16 32-bit words to 80 32-bit words
         for (let i = 16; i < 80; i++) {
             const val = [words[i - 3], words[i - 8], words[i - 14], words[i - 16]].map((e) => parseInt(e, 2)).reduce((acc, curr) => curr ^ acc, 0);
@@ -119,10 +107,8 @@ function SHA1(message) {
             const word = rotateLeft(paddedBin, 1);
             words.push(word);
         }
-
         // initialize variables for this chunk
         let [a, b, c, d, e] = [H0, H1, H2, H3, H4];
-
         for (let i = 0; i < 80; i++) {
             let f, k;
             if (i < 20) {
@@ -140,7 +126,6 @@ function SHA1(message) {
             }
             // make sure f is unsigned
             f >>>= 0;
-
             const aRot = rotateLeft(pad(a.toString(2), 32), 5);
             const aInt = parseInt(aRot, 2) >>> 0;
             const wordInt = parseInt(words[i], 2) >>> 0;
@@ -152,7 +137,6 @@ function SHA1(message) {
             b = a >>> 0;
             a = t >>> 0;
         }
-
         // add values for this chunk to main hash variables (unsigned)
         H0 = (H0 + a) >>> 0;
         H1 = (H1 + b) >>> 0;
@@ -160,15 +144,18 @@ function SHA1(message) {
         H3 = (H3 + d) >>> 0;
         H4 = (H4 + e) >>> 0;
     });
-
     // combine hash values of main hash variables and return
     const HH = [H0, H1, H2, H3, H4]
         .map((e) => e.toString(16))
         .map((e) => pad(e, 8))
         .join('');
-
     return HH;
 }
-
 // export SHA1 function
-export { SHA1 };
+export {
+    SHA1
+};
+
+SH
+A1
+};

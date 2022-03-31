@@ -9,7 +9,6 @@
         and ‘A‘ has an ASCII value of 65 (97 - 32). The same applies to other
         characters.
 */
-
 /**
  * upperCaseConversion takes any case-style string and converts it to the uppercase-style string.
  * @param {string} inputString Any case style string
@@ -31,5 +30,4 @@ const upperCaseConversion = (inputString) => {
     // After modification, with the help of the join method, join all the characters and return them.
     return newString.join('');
 };
-
 export { upperCaseConversion };

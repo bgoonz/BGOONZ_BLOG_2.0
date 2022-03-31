@@ -2,10 +2,8 @@
     DateDayDifference Method
     ------------------------
     DateDayDifference method calculates the number of days between two dates.
-
     Algorithm & Explanation : https://ncalculators.com/time-date/date-difference-calculator.htm
 */
-
 // Internal method for make calculations easier
 const isLeap = (year) => {
     if (year % 400 === 0) return true;
@@ -18,7 +16,6 @@ const DateToDay = (dd, mm, yyyy) => {
         365 * (yyyy - 1) + (yyyy - 1) / 4 - (yyyy - 1) / 100 + (yyyy - 1) / 400 + dd + (367 * mm - 362) / 12 + (mm <= 2 ? 0 : isLeap(yyyy) ? -1 : -2)
     );
 };
-
 const DateDayDifference = (date1, date2) => {
     // firstly, check that both input are string or not.
     if (typeof date1 !== 'string' && typeof date2 !== 'string') {
@@ -43,7 +40,5 @@ const DateDayDifference = (date1, date2) => {
     }
     return Math.abs(DateToDay(secondDateDay, secondDateMonth, secondDateYear) - DateToDay(firstDateDay, firstDateMonth, firstDateYear));
 };
-
 // Example : DateDayDifference('17/08/2002', '10/10/2020') => 6630
-
 export { DateDayDifference };

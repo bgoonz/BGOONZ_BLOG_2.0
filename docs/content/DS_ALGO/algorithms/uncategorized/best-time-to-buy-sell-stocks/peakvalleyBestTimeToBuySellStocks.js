@@ -11,7 +11,6 @@ const peakvalleyBestTimeToBuySellStocks = (prices, visit = () => {}) => {
     let profit = 0;
     let low = prices[0];
     let high = prices[0];
-
     prices.slice(1).forEach((currentPrice) => {
         visit();
         if (currentPrice < high) {
@@ -24,12 +23,9 @@ const peakvalleyBestTimeToBuySellStocks = (prices, visit = () => {}) => {
             high = currentPrice;
         }
     });
-
     // In case if price went up during the last day
     // and we didn't have chance to sell inside the forEach loop.
     profit += high - low;
-
     return profit;
 };
-
 export default peakvalleyBestTimeToBuySellStocks;

@@ -1,5 +1,4 @@
 import { createPermutations } from '../CreatePermutations';
-
 describe('createPermutations', () => {
     it('expects to generate 6 different combinations', () => {
         const text = 'abc';
