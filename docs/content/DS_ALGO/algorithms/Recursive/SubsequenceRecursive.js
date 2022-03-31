@@ -18,7 +18,6 @@
  * https://en.wikipedia.org/wiki/Subsequence
  * https://en.wikipedia.org/wiki/Lexicographic_order
  */
-
 export const subsequence = (str, seq, low, output = []) => {
     if (low <= str.length && str.length !== 0) {
         output.push(seq);

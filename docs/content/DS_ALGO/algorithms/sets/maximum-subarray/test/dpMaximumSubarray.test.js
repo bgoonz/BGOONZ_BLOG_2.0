@@ -1,5 +1,4 @@
 import dpMaximumSubarray from '../dpMaximumSubarray';
-
 describe('dpMaximumSubarray', () => {
     it('should find maximum subarray using the dynamic programming algorithm', () => {
         expect(dpMaximumSubarray([])).toEqual([]);

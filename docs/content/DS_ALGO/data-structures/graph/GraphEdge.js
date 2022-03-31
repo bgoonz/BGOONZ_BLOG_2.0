@@ -9,17 +9,14 @@ export default class GraphEdge {
         this.endVertex = endVertex;
         this.weight = weight;
     }
-
     /**
      * @return {string}
      */
     getKey() {
         const startVertexKey = this.startVertex.getKey();
         const endVertexKey = this.endVertex.getKey();
-
         return `${startVertexKey}_${endVertexKey}`;
     }
-
     /**
      * @return {GraphEdge}
      */
@@ -27,10 +24,8 @@ export default class GraphEdge {
         const tmp = this.startVertex;
         this.startVertex = this.endVertex;
         this.endVertex = tmp;
-
         return this;
     }
-
     /**
      * @return {string}
      */

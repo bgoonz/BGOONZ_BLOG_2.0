@@ -1,5 +1,4 @@
 import multiplyUnsigned from '../multiplyUnsigned';
-
 describe('multiplyUnsigned', () => {
     it('should multiply two unsigned numbers', () => {
         expect(multiplyUnsigned(0, 2)).toBe(0);

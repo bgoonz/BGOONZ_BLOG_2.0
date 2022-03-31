@@ -1,7 +1,5 @@
 // CheckPascalCase method checks the given string is in PascalCase or not.
-
 // Problem Source & Explanation: https://www.theserverside.com/definition/Pascal-case
-
 /**
  * CheckPascalCase method returns true if the string in PascalCase, else return the false.
  * @param {String} VarName the name of the variable to check.
@@ -12,9 +10,7 @@ const CheckPascalCase = (VarName) => {
     if (typeof VarName !== 'string') {
         return new TypeError('Argument is not a string.');
     }
-
     const pat = /^[A-Z][A-Za-z]*$/;
     return pat.test(VarName);
 };
-
 export { CheckPascalCase };

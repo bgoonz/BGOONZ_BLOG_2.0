@@ -2,7 +2,6 @@ import _ from 'lodash';
 import React from 'react';
 import { htmlToReact } from '../utils';
 import ActionLink from './ActionLink';
-
 export default class Footer extends React.Component {
     render() {
         return (
@@ -10,7 +9,6 @@ export default class Footer extends React.Component {
                 <div>
                     <center>
                         <br />
-
                         <br />
                         <table cellPadding={0} cellSpacing={0} border={0}>
                             <tbody>

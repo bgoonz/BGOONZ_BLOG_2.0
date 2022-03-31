@@ -1,5 +1,4 @@
 import recursiveStaircaseBF from '../recursiveStaircaseBF';
-
 describe('recursiveStaircaseBF', () => {
     it('should calculate number of variants using Brute Force solution', () => {
         expect(recursiveStaircaseBF(-1)).toBe(0);

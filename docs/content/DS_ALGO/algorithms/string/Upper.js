@@ -10,12 +10,9 @@ const upper = (str) => {
     if (typeof str !== 'string') {
         throw new TypeError('Argument should be string');
     }
-
     return str.replace(/[a-z]/g, (_, indexOfLowerChar) => {
         const asciiCode = str.charCodeAt(indexOfLowerChar);
-
         return String.fromCharCode(asciiCode - 32);
     });
 };
-
 export { upper };

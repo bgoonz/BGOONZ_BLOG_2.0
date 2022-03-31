@@ -6,14 +6,10 @@ function decimalToBinary(num) {
     }
     return bin.join('');
 }
-
 export { decimalToBinary };
-
 // > decimalToBinary(2)
 // '10'
-
 // > decimalToBinary(7)
 // '111'
-
 // > decimalToBinary(35)
 // '100011'

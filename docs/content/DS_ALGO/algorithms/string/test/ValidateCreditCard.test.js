@@ -1,5 +1,4 @@
 import { validateCreditCard } from '../ValidateCreditCard';
-
 describe('Validate credit card number', () => {
     it('should throw error if card number is boolean', () => {
         const invalidCC = true;

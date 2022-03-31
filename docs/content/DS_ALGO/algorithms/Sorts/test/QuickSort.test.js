@@ -1,10 +1,8 @@
 import { quickSort } from '../QuickSort';
-
 describe('QuickSort', () => {
     it('should work for empty arrays', () => {
         expect(quickSort([])).toEqual([]);
     });
-
     it('should sort arrays correctly', () => {
         expect(quickSort([5, 4, 3, 10, 2, 1])).toEqual([1, 2, 3, 4, 5, 10]);
         expect(quickSort([5, 4])).toEqual([4, 5]);

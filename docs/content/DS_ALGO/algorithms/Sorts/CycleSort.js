@@ -7,7 +7,6 @@
  *
  * Wikipedia: https://en.wikipedia.org/wiki/Cycle_sort
  */
-
 /**
  * cycleSort takes an input array of numbers and returns the array sorted in increasing order.
  *
@@ -18,7 +17,6 @@ function cycleSort(list) {
     for (let cycleStart = 0; cycleStart < list.length; cycleStart++) {
         let value = list[cycleStart];
         let position = cycleStart;
-
         // search position
         for (let i = cycleStart + 1; i < list.length; i++) {
             if (list[i] < value) {
@@ -32,11 +30,9 @@ function cycleSort(list) {
         while (value === list[position]) {
             position++;
         }
-
         const oldValue = list[position];
         list[position] = value;
         value = oldValue;
-
         // rotate the rest
         while (position !== cycleStart) {
             position = cycleStart;
@@ -55,7 +51,6 @@ function cycleSort(list) {
     }
     return list;
 }
-
 export {
     cycleSort
 };

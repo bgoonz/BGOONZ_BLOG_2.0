@@ -9,7 +9,6 @@
  *  @see [Timsort](https://en.wikipedia.org/wiki/Timsort)
  *  @param {Array} array
  */
-
 const Timsort = (array) => {
     // Default size of a partition
     const RUN = 32;
@@ -26,14 +25,12 @@ const Timsort = (array) => {
         }
     }
 };
-
 /**
  * @function performs insertion sort on the partition
  * @param {Array} array array to be sorted
  * @param {Number} left left index of partition
  * @param {Number} right right index of partition
  */
-
 const InsertionSort = (array, left, right) => {
     for (let i = left + 1; i <= right; i++) {
         const key = array[i];
@@ -45,7 +42,6 @@ const InsertionSort = (array, left, right) => {
         array[j + 1] = key;
     }
 };
-
 /**
  * @function merges two sorted partitions
  * @param {Array} array array to be sorted
@@ -53,7 +49,6 @@ const InsertionSort = (array, left, right) => {
  * @param {Number} mid mid index of partition
  * @param {Number} right right index of partition
  */
-
 const Merge = (array, left, mid, right) => {
     if (mid >= right) return;
     const len1 = mid - left + 1;
@@ -83,7 +78,6 @@ const Merge = (array, left, mid, right) => {
         array[k++] = rarr[j++];
     }
 };
-
 /**
  * @example Test of Timsort functions.
  * Data is randomly generated.
@@ -110,5 +104,4 @@ const demo = () => {
         return 'FAULTY';
     }
 };
-
 export { Timsort, demo };

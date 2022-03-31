@@ -1,10 +1,8 @@
 import QueenPosition from '../QueenPosition';
-
 describe('QueenPosition', () => {
     it('should store queen position on chessboard', () => {
         const position1 = new QueenPosition(0, 0);
         const position2 = new QueenPosition(2, 1);
-
         expect(position2.columnIndex).toBe(1);
         expect(position2.rowIndex).toBe(2);
         expect(position1.leftDiagonal).toBe(0);

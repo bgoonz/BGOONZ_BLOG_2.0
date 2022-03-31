@@ -3,31 +3,26 @@ function getParentPosition(position) {
     // Get the parent node of the current node
     return Math.floor((position - 1) / 2);
 }
-
 function getChildrenPosition(position) {
     // Get the children nodes of the current node
     return [2 * position + 1, 2 * position + 2];
 }
-
 class PriorityQueue {
     // Priority Queue class using Minimum Binary Heap
     constructor() {
         this._heap = [];
         this.keys = {};
     }
-
     isEmpty() {
         // Checking if the heap is empty
         return this._heap.length === 0;
     }
-
     push(key, priority) {
         // Adding element to the queue (equivalent to add)
         this._heap.push([key, priority]);
         this.keys[key] = this._heap.length - 1;
         this._shiftUp(this.keys[key]);
     }
-
     pop() {
         // Removing the element with least priority (equivalent to extractMin)
         this._swap(0, this._heap.length - 1);
@@ -36,12 +31,10 @@ class PriorityQueue {
         this._shiftDown(0);
         return key;
     }
-
     contains(key) {
         // Check if a given key is present in the queue
         return key in this.keys;
     }
-
     update(key, priority) {
         // Update the priority of the given element (equivalent to decreaseKey)
         const currPos = this.keys[key];
@@ -60,14 +53,12 @@ class PriorityQueue {
         if (child2Pos < this._heap.length) {
             child2Priority = this._heap[child2Pos][1];
         }
-
         if (parentPos >= 0 && parentPriority > currPriority) {
             this._shiftUp(currPos);
         } else if (child2Pos < this._heap.length && (child1Priority < currPriority || child2Priority < currPriority)) {
             this._shiftDown(currPos);
         }
     }
-
     _shiftUp(position) {
         // Helper function to shift up a node to proper position (equivalent to bubbleUp)
         let currPos = position;
@@ -77,7 +68,6 @@ class PriorityQueue {
         if (parentPos >= 0) {
             parentPriority = this._heap[parentPos][1];
         }
-
         while (parentPos >= 0 && parentPriority > currPriority) {
             this._swap(currPos, parentPos);
             currPos = parentPos;
@@ -91,7 +81,6 @@ class PriorityQueue {
     }
     this.keys[this._heap[currPos][0]] = currPos;
 }
-
 _shiftDown(position) {
     // Helper function to shift down a node to proper position (equivalent to bubbleDown)
     let currPos = position;
@@ -109,7 +98,6 @@ _shiftDown(position) {
     } catch {
         return;
     }
-
     while (child2Pos < this._heap.length && (child1Priority < currPriority || child2Priority < currPriority)) {
         if (child1Priority < currPriority && child1Priority < child2Priority) {
             this._swap(child1Pos, currPos);
@@ -123,7 +111,6 @@ _shiftDown(position) {
             [child1Priority, child2Priority] = [this._heap[child1Pos][1], this._heap[child2Pos][1]];
         } catch (error) {} [child1Priority, child2Priority] = [Infinity, Infinity];
     }
-
     currPriority = this._heap[currPos][1];
 }
 this.keys[this._heap[currPos][0]] = currPos;
@@ -132,7 +119,6 @@ if (child1Pos < this._heap.length && child1Priority < currPriority) {
     this.keys[this._heap[child1Pos][0]] = child1Pos;
 }
 }
-
 _swap(position1, position2) {
     // Helper function to swap 2 nodes
     [this._heap[position1], this._heap[position2]] = [this._heap[position2], this._heap[position1]];
@@ -140,18 +126,15 @@ _swap(position1, position2) {
     this.keys[this._heap[position2][0]] = position2;
 }
 }
-
 class GraphWeightedUndirectedAdjacencyList {
     // Weighted Undirected Graph class
     constructor() {
         this.connections = {};
     }
-
     addNode(node) {
         // Function to add a node to the graph (connection represented by set)
         this.connections[node] = {};
     }
-
     addEdge(node1, node2, weight) {
         // Function to add an edge (adds the node too if they are not present in the graph)
         if (!(node1 in this.connections)) {
@@ -163,7 +146,6 @@ class GraphWeightedUndirectedAdjacencyList {
         this.connections[node1][node2] = weight;
         this.connections[node2][node1] = weight;
     }
-
     PrimMST(start) {
         // Prim's Algorithm to generate a Minimum Spanning Tree (MST) of a graph
         // Details: https://en.wikipedia.org/wiki/Prim%27s_algorithm
@@ -187,7 +169,6 @@ class GraphWeightedUndirectedAdjacencyList {
                 }
             });
         }
-
         // MST Generation from the 'parent' object
         const graph = new GraphWeightedUndirectedAdjacencyList();
         Object.keys(parent).forEach((node) => {
@@ -198,11 +179,9 @@ class GraphWeightedUndirectedAdjacencyList {
         return graph;
     }
 }
-
 export {
     GraphWeightedUndirectedAdjacencyList
 };
-
 // const graph = new GraphWeightedUndirectedAdjacencyList()
 // graph.addEdge(1, 2, 1)
 // graph.addEdge(2, 3, 2)

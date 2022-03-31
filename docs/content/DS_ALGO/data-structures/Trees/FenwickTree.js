@@ -3,7 +3,6 @@
  * Fedwick Tree Implementation in JavaScript
  * Fedwick Tree Implementation for finding prefix sum.
  */
-
 class FenwickTree {
     constructor(feneickArray, array, n) {
         for (let i = 1; i <= n; i++) {
@@ -13,7 +12,6 @@ class FenwickTree {
             this.update(feneickArray, n, i, array[i]);
         }
     }
-
     update(feneickArray, n, index, value) {
         index = index + 1;
         while (index <= n) {
@@ -21,7 +19,6 @@ class FenwickTree {
             index += index & -index;
         }
     }
-
     getPrefixSum(feneickArray, index) {
         let currSum = 0;
         index = index + 1;
@@ -29,7 +26,6 @@ class FenwickTree {
             currSum += feneickArray[index];
             index -= index & -index;
         }
-
         return currSum;
     }
 }

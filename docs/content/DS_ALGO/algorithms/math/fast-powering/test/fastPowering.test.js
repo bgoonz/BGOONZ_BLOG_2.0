@@ -1,5 +1,4 @@
 import fastPowering from '../fastPowering';
-
 describe('fastPowering', () => {
     it('should compute power in log(n) time', () => {
         expect(fastPowering(1, 1)).toBe(1);

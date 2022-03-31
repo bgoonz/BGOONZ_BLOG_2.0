@@ -1,5 +1,4 @@
 import fibonacciNth from '../fibonacciNth';
-
 describe('fibonacciNth', () => {
     it('should calculate fibonacci correctly', () => {
         expect(fibonacciNth(1)).toBe(1);

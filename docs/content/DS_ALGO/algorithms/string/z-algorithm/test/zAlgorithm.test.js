@@ -1,5 +1,4 @@
 import zAlgorithm from '../zAlgorithm';
-
 describe('zAlgorithm', () => {
     it('should find word positions in given text', () => {
         expect(zAlgorithm('abcbcglx', 'abca')).toEqual([]);

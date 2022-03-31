@@ -1,10 +1,8 @@
 import Sort from '../Sort';
-
 // Using charCode (a = 97, b = 98, etc), we can map characters to buckets from 0 - 25
 const BASE_CHAR_CODE = 97;
 const NUMBER_OF_POSSIBLE_DIGITS = 10;
 const ENGLISH_ALPHABET_LENGTH = 26;
-
 export default class RadixSort extends Sort {
     /**
      * @param {*[]} originalArray
@@ -13,24 +11,19 @@ export default class RadixSort extends Sort {
     sort(originalArray) {
         // Assumes all elements of array are of the same type
         const isArrayOfNumbers = this.isArrayOfNumbers(originalArray);
-
         let sortedArray = [...originalArray];
         const numPasses = this.determineNumPasses(sortedArray);
-
         for (let currentIndex = 0; currentIndex < numPasses; currentIndex += 1) {
             const buckets = isArrayOfNumbers ?
                 this.placeElementsInNumberBuckets(sortedArray, currentIndex) :
                 this.placeElementsInCharacterBuckets(sortedArray, currentIndex, numPasses);
-
             // Flatten buckets into sortedArray, and repeat at next index
             sortedArray = buckets.reduce((acc, val) => {
                 return [...acc, ...val];
             }, []);
         }
-
         return sortedArray;
     }
-
     /**
      * @param {*[]} array
      * @param {number} index
@@ -41,7 +34,6 @@ export default class RadixSort extends Sort {
         const modded = 10 ** (index + 1);
         const divided = 10 ** index;
         const buckets = this.createBuckets(NUMBER_OF_POSSIBLE_DIGITS);
-
         array.forEach((element) => {
             this.callbacks.visitingCallback(element);
             if (element < divided) {
@@ -56,10 +48,8 @@ export default class RadixSort extends Sort {
                 buckets[currentDigit].push(element);
             }
         });
-
         return buckets;
     }
-
     /**
      * @param {*[]} array
      * @param {number} index
@@ -68,16 +58,13 @@ export default class RadixSort extends Sort {
      */
     placeElementsInCharacterBuckets(array, index, numPasses) {
         const buckets = this.createBuckets(ENGLISH_ALPHABET_LENGTH);
-
         array.forEach((element) => {
             this.callbacks.visitingCallback(element);
             const currentBucket = this.getCharCodeOfElementAtIndex(element, index, numPasses);
             buckets[currentBucket].push(element);
         });
-
         return buckets;
     }
-
     /**
      * @param {string} element
      * @param {number} index
@@ -89,16 +76,13 @@ export default class RadixSort extends Sort {
         if (numPasses - index > element.length) {
             return ENGLISH_ALPHABET_LENGTH - 1;
         }
-
         /**
          * If each character has been organized, use first character to determine bucket,
          * otherwise iterate backwards through element
          */
         const charPos = index > element.length - 1 ? 0 : element.length - index - 1;
-
         return element.toLowerCase().charCodeAt(charPos) - BASE_CHAR_CODE;
     }
-
     /**
      * Number of passes is determined by the length of the longest element in the array.
      * For integers, this log10(num), and for strings, this would be the length of the string.
@@ -106,7 +90,6 @@ export default class RadixSort extends Sort {
     determineNumPasses(array) {
         return this.getLengthOfLongestElement(array);
     }
-
     /**
      * @param {*[]} array
      * @return {number}
@@ -115,12 +98,10 @@ export default class RadixSort extends Sort {
         if (this.isArrayOfNumbers(array)) {
             return Math.floor(Math.log10(Math.max(...array))) + 1;
         }
-
         return array.reduce((acc, val) => {
             return val.length > acc ? val.length : acc;
         }, -Infinity);
     }
-
     /**
      * @param {*[]} array
      * @return {boolean}
@@ -129,7 +110,6 @@ export default class RadixSort extends Sort {
         // Assumes all elements of array are of the same type
         return this.isNumber(array[0]);
     }
-
     /**
      * @param {number} numBuckets
      * @return {*[]}
@@ -141,7 +121,6 @@ export default class RadixSort extends Sort {
          */
         return new Array(numBuckets).fill(null).map(() => []);
     }
-
     /**
      * @param {*} element
      * @return {boolean}

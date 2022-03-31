@@ -1,12 +1,10 @@
 (function(sttc) {
         /*
-
  Copyright The Closure Library Authors.
  SPDX-License-Identifier: Apache-2.0
 */
         var aa;
         var ba;
-
         function ca(a) {
             var b = 0;
             return () =>
@@ -25,7 +23,6 @@
             a[b] = c.value;
             return a;
         };
-
     function ea(a) {
         a = [
             'object' == typeof globalThis && globalThis,
@@ -44,14 +41,12 @@
     var ha = 'function' === typeof Symbol && 'symbol' === typeof Symbol('x');
     var n = {};
     var ia = {};
-
     function p(a, b) {
         var c = ia[b];
         if (null == c) return a[b];
         c = a[c];
         return void 0 !== c ? c : a[b];
     }
-
     function ja(a, b, c) {
         if (b)
             a: {
@@ -90,7 +85,6 @@
                 if (this instanceof b) throw new TypeError('Symbol is not a constructor');
                 return new c(d + (f || '') + '_' + e++, f);
             }
-
             function c(f, g) {
                 this.h = f;
                 da(this, 'description', {
@@ -132,7 +126,6 @@
         },
         'es6'
     );
-
     function ka(a) {
         a = {
             next: a
@@ -142,11 +135,9 @@
         };
         return a;
     }
-
     function la(a) {
         return (a.raw = a);
     }
-
     function q(a) {
         var b = 'undefined' != typeof n.Symbol && p(n.Symbol, 'iterator') && a[p(n.Symbol, 'iterator')];
         return b ?
@@ -154,7 +145,6 @@
                 next: ca(a)
             };
     }
-
     function ma(a) {
         if (!(a instanceof Array)) {
             a = q(a);
@@ -196,7 +186,6 @@
             null;
     }
     var sa = oa;
-
     function u(a, b) {
         a.prototype = na(b.prototype);
         a.prototype.constructor = a;
@@ -210,7 +199,6 @@
                     } else a[c] = b[c];
         a.xb = b.prototype;
     }
-
     function ta(...args) {
         for (var a = Number(this), b = [], c = a; c < args.length; c++) b[c - a] = args[c];
         return b;
@@ -230,11 +218,9 @@
                     h.reject(k);
                 }
             }
-
             function c() {
                 this.h = null;
             }
-
             function d(g) {
                 return g instanceof b ?
                     g :
@@ -473,7 +459,6 @@
         },
         'es6'
     );
-
     function ua(a, b) {
         return Object.prototype.hasOwnProperty.call(a, b);
     }
@@ -487,9 +472,7 @@
                     for (var h; !(h = g.next()).done;)(h = h.value), this.set(h[0], h[1]);
                 }
             }
-
             function c() {}
-
             function d(g) {
                 var h = typeof g;
                 return ('object' === h && null !== g) || 'function' === h;
@@ -547,7 +530,6 @@
                 var h = {};
                 return (h.L = h.next = h.head = h);
             }
-
             function c(h, k) {
                 var l = h.h;
                 return ka(() => {
@@ -568,7 +550,6 @@
                     };
                 });
             }
-
             function d(h, k) {
                 var l = k && typeof k;
                 'object' == l || 'function' == l ? (f.has(k) ? (l = f.get(k)) : ((l = '' + ++g), f.set(k, l))) : (l = 'p_' + k);
@@ -591,7 +572,6 @@
                     u: void 0
                 };
             }
-
             function e(h) {
                 this.i = {};
                 this.h = b();
@@ -697,7 +677,6 @@
         },
         'es6'
     );
-
     function wa(a, b) {
         a instanceof String && (a += '');
         var c = 0;
@@ -856,29 +835,24 @@
         'es9'
     );
     var v = this || self;
-
     function ya(a) {
         a = a.split('.');
         for (var b = v, c = 0; c < a.length; c++)
             if (((b = b[a[c]]), null == b)) return null;
         return b;
     }
-
     function za(a) {
         var b = typeof a;
         return ('object' == b && null != a) || 'function' == b;
     }
-
     function Aa(a) {
         return (Object.prototype.hasOwnProperty.call(a, Ba) && a[Ba]) || (a[Ba] = ++Ca);
     }
     var Ba = 'closure_uid_' + ((1e9 * Math.random()) >>> 0);
     var Ca = 0;
-
     function Da(a, b, c) {
         return a.call.apply(a.bind, arguments);
     }
-
     function Ea(a, b, c) {
         if (!a) throw Error();
         if (2 < arguments.length) {
@@ -893,12 +867,10 @@
             return a.apply(b, args);
         };
     }
-
     function Fa(a, b, c) {
         Function.prototype.bind && -1 != Function.prototype.bind.toString().indexOf('native code') ? (Fa = Da) : (Fa = Ea);
         return Fa(...arguments);
     }
-
     function Ga(a, b) {
         var c = Array.prototype.slice.call(arguments, 1);
         return function(...args) {
@@ -907,7 +879,6 @@
             return a.apply(this, d);
         };
     }
-
     function Ha(a) {
         var b = ['__uspapi'];
         var c = v;
@@ -915,16 +886,13 @@
         for (var d; b.length && (d = b.shift());)
             b.length || void 0 === a ? (c[d] && c[d] !== Object.prototype[d] ? (c = c[d]) : (c = c[d] = {})) : (c[d] = a);
     }
-
     function Ia(a) {
         return a;
     }
     var Ja = new Date().getTime();
-
     function Ka(a) {
         return /^[\s\xa0]*([\s\S]*?)[\s\xa0]*$/.exec(a)[1];
     }
-
     function La(a, b) {
         var c = 0;
         a = Ka(String(a)).split('.');
@@ -946,7 +914,6 @@
         }
         return c;
     }
-
     function Ma(a, b) {
         return a < b ? -1 : a > b ? 1 : 0;
     }
@@ -961,19 +928,15 @@
         }
         Na = '';
     }
-
     function w(a) {
         return -1 != Na.indexOf(a);
     }
-
     function Qa() {
         return w('Trident') || w('MSIE');
     }
-
     function Ra() {
         return ((w('Chrome') || w('CriOS')) && !w('Edge')) || w('Silk');
     }
-
     function Sa(a) {
         var b = {};
         a.forEach((c) => {
@@ -981,7 +944,6 @@
         });
         return (c) => b[p(c, 'find').call(c, (d) => d in b)] || '';
     }
-
     function Ta() {
         var a = Na;
         if (Qa()) {
@@ -1029,11 +991,9 @@
             a(['Chrome', 'CriOS', 'HeadlessChrome']) :
             ((a = b[2]) && a[1]) || '';
     }
-
     function Ua(a, b) {
         for (var c = a.length, d = 'string' === typeof a ? a.split('') : a, e = 0; e < c; e++) e in d && b.call(void 0, d[e], e, a);
     }
-
     function Va(a, b) {
         for (var c = a.length, d = [], e = 0, f = 'string' === typeof a ? a.split('') : a, g = 0; g < c; g++)
             if (g in f) {
@@ -1042,18 +1002,15 @@
             }
         return d;
     }
-
     function Wa(a, b) {
         for (var c = a.length, d = Array(c), e = 'string' === typeof a ? a.split('') : a, f = 0; f < c; f++) f in e && (d[f] = b.call(void 0, e[f], f, a));
         return d;
     }
-
     function Xa(a, b) {
         for (var c = a.length, d = 'string' === typeof a ? a.split('') : a, e = 0; e < c; e++)
             if (e in d && b.call(void 0, d[e], e, a)) return !0;
         return !1;
     }
-
     function Ya(a, b) {
         a: {
             for (var c = a.length, d = 'string' === typeof a ? a.split('') : a, e = 0; e < c; e++)
@@ -1065,7 +1022,6 @@
         }
         return 0 > b ? null : 'string' === typeof a ? a.charAt(b) : a[b];
     }
-
     function Za(a, b) {
         a: {
             for (var c = 'string' === typeof a ? a.split('') : a, d = a.length - 1; 0 <= d; d--)
@@ -1077,7 +1033,6 @@
         }
         return 0 > b ? null : 'string' === typeof a ? a.charAt(b) : a[b];
     }
-
     function $a(a, b) {
         a: if ('string' === typeof a) a = 'string' !== typeof b || 1 != b.length ? -1 : a.indexOf(b, 0);
             else {
@@ -1090,7 +1045,6 @@
             }
         return 0 <= a;
     }
-
     function ab(a) {
         ab[' '](a);
         return a;
@@ -1101,7 +1055,6 @@
     var db = null;
     var eb = 'function' === typeof Uint8Array;
     var fb = 'function' === typeof n.Symbol && 'symbol' === typeof(0, n.Symbol)() ? (0, n.Symbol)(void 0) : void 0;
-
     function hb(a) {
         Object.isFrozen(a) ||
             (fb ?
@@ -1118,12 +1071,10 @@
                 }));
         return a;
     }
-
     function ib(a) {
         return null !== a && 'object' === typeof a && a.constructor === Object;
     }
     var jb;
-
     function kb(a) {
         switch (typeof a) {
             case 'number':
@@ -1171,11 +1122,9 @@
         }
         return a;
     }
-
     function lb(a, b) {
         if (null != a) return Array.isArray(a) || ib(a) ? mb(a, b) : b(a);
     }
-
     function mb(a, b) {
         if (Array.isArray(a)) {
             for (var c = Array(a.length), d = 0; d < a.length; d++) c[d] = lb(a[d], b);
@@ -1191,20 +1140,17 @@
         for (c in a) Object.prototype.hasOwnProperty.call(a, c) && (e[c] = lb(a[c], b));
         return e;
     }
-
     function nb(a) {
         a = kb(a);
         return Array.isArray(a) ? mb(a, nb) : a;
     }
     var ob;
-
     function pb(a, b) {
         ob = b;
         a = new a(b);
         ob = null;
         return a;
     }
-
     function y(a, b, c) {
         var d = ob;
         ob = null;
@@ -1232,16 +1178,13 @@
                 (rb(this), (d = this.j[a]) ? Array.isArray(d) && hb(d) : (this.j[a] = qb));
     }
     var qb = Object.freeze(hb([]));
-
     function rb(a) {
         var b = a.m + a.l;
         a.i[b] || (a.j = a.i[b] = {});
     }
-
     function z(a, b, c) {
         return -1 === b ? null : (void 0 === c ? 0 : c) || b >= a.m ? (a.j ? a.j[b] : void 0) : a.i[b + a.l];
     }
-
     function sb(a, b, c) {
         c = void 0 === c ? !1 : c;
         var d = z(a, b, c);
@@ -1249,43 +1192,35 @@
         d === qb && ((d = hb(d.slice())), A(a, b, d, c));
         return d;
     }
-
     function tb(a, b) {
         a = z(a, b);
         return null == a ? a : !!a;
     }
-
     function C(a, b, c) {
         a = z(a, b);
         return null == a ? c : a;
     }
-
     function D(a, b, c) {
         a = tb(a, b);
         return null == a ? (void 0 === c ? !1 : c) : a;
     }
-
     function ub(a, b, c) {
         a = z(a, b);
         a = null == a ? a : +a;
         return null == a ? (void 0 === c ? 0 : c) : a;
     }
-
     function A(a, b, c, d) {
         (void 0 === d ? 0 : d) || b >= a.m ? (rb(a), (a.j[b] = c)) : (a.i[b + a.l] = c);
         return a;
     }
-
     function vb(a, b, c) {
         0 !== c ? A(a, b, c) : A(a, b, void 0, !1);
         return a;
     }
-
     function wb(a, b, c, d) {
         (c = xb(a, c)) && c !== b && null != d && (a.h && c in a.h && (a.h[c] = void 0), A(a, c, void 0));
         return A(a, b, d);
     }
-
     function xb(a, b) {
         for (var c = 0, d = 0; d < b.length; d++) {
             var e = b[d];
@@ -1293,7 +1228,6 @@
         }
         return c;
     }
-
     function G(a, b, c) {
         if (-1 === c) return null;
         a.h || (a.h = {});
@@ -1304,7 +1238,6 @@
         b = new b(e);
         return (a.h[c] = b);
     }
-
     function H(a, b, c) {
         a.h || (a.h = {});
         var d = a.h[c];
@@ -1316,7 +1249,6 @@
         }
         return d;
     }
-
     function yb(a, b, c) {
         var d = zb;
         a.h || (a.h = {});
@@ -1324,7 +1256,6 @@
         a.h[b] = c;
         return wb(a, b, d, e);
     }
-
     function Ab(a, b, c) {
         var d = void 0 === d ? !1 : d;
         if (c) {
@@ -1339,11 +1270,9 @@
         var a = this.i;
         return jb ? a : mb(a, nb);
     };
-
     function Bb(a, b) {
         return kb(b);
     }
-
     function Cb(a) {
         jb = !0;
         try {
@@ -1352,54 +1281,44 @@
             jb = !1;
         }
     }
-
     function Db(a, b, c) {
         return xb(a, b) === c ? c : -1;
     }
-
     function Eb(a, b, c) {
         return C(a, b, void 0 === c ? '' : c);
     }
-
     function Fb(a, b, c) {
         return C(a, Db(a, c, b), 0);
     }
-
     function Gb(a, b, c, d) {
         return G(a, b, Db(a, d, c));
     }
-
     function Hb(a) {
         y.call(this, a, -1, Ib);
     }
     u(Hb, y);
-
     function Jb(a) {
         y.call(this, a);
     }
     u(Jb, y);
     var Ib = [2, 3];
-
     function Kb(a, b) {
         this.i = (a === Lb && b) || '';
         this.h = Mb;
     }
     var Mb = {};
     var Lb = {};
-
     function Nb(a, b) {
         var c = {};
         var d;
         for (d in a) b.call(void 0, a[d], d, a) && (c[d] = a[d]);
         return c;
     }
-
     function Ob(a, b) {
         for (var c in a)
             if (b.call(void 0, a[c], c, a)) return !0;
         return !1;
     }
-
     function Pb(a) {
         var b = {};
         var c;
@@ -1407,11 +1326,9 @@
         return b;
     }
     var Qb;
-
     function Rb(a, b) {
         this.h = b === Sb ? a : '';
     }
-
     function Tb(a, b) {
         a = Ub.exec(Vb(a).toString());
         var c = a[3] || '';
@@ -1420,13 +1337,11 @@
     Rb.prototype.toString = function() {
         return this.h + '';
     };
-
     function Vb(a) {
         return a instanceof Rb && a.constructor === Rb ? a.h : 'type_error:TrustedResourceUrl';
     }
     var Ub = /^([^?#]*)(\?[^#]*)?(#[\s\S]*)?/;
     var Sb = {};
-
     function Wb(a) {
         if (void 0 === Qb) {
             var b = null;
@@ -1447,7 +1362,6 @@
         a = (b = Qb) ? b.createScriptURL(a) : a;
         return new Rb(a, Sb);
     }
-
     function Xb(a, b, c) {
         if (null == c) return b;
         if ('string' === typeof c) return c ? a + encodeURIComponent(c) : '';
@@ -1463,17 +1377,14 @@
         return b;
     }
     /*
-
     SPDX-License-Identifier: Apache-2.0
     */
     var Yb = {};
-
     function Zb() {
         var a = 'undefined' !== typeof window ? window.trustedTypes : void 0;
         return null !== a && void 0 !== a ? a : null;
     }
     var $b;
-
     function ac() {
         var a;
         var b;
@@ -1502,9 +1413,7 @@
     }
     return $b;
 }
-
 function bc() {}
-
 function cc(a) {
     this.h = a;
 }
@@ -1512,35 +1421,29 @@ u(cc, bc);
 cc.prototype.toString = function() {
     return this.h.toString();
 };
-
 function dc(a) {
     var b;
     var c = null === (b = ac()) || void 0 === b ? void 0 : b.createScriptURL(a);
     return new cc(null !== c && void 0 !== c ? c : a, Yb);
 }
-
 function ec(a) {
     if (a instanceof cc) return a.h;
     throw Error('');
 }
-
 function fc(a) {
     var b = ta.apply(1, arguments);
     if (0 === b.length) return dc(a[0]);
     for (var c = [a[0]], d = 0; d < b.length; d++) c.push(encodeURIComponent(b[d])), c.push(a[d + 1]);
     return dc(c.join(''));
 }
-
 function gc(a) {
     return a instanceof bc ? ec(a) : Vb(a);
 }
-
 function hc(a) {
     return function(...args) {
         return !a.apply(this, args);
     };
 }
-
 function ic(a) {
     var b = !1;
     var c;
@@ -1549,7 +1452,6 @@ function ic(a) {
         return c;
     };
 }
-
 function jc(a) {
     var b = a;
     return () => {
@@ -1560,25 +1462,20 @@ function jc(a) {
         }
     };
 }
-
 function kc(a, b, c) {
     a.addEventListener && a.addEventListener(b, c, !1);
 }
-
 function lc(a, b) {
     a.removeEventListener && a.removeEventListener('message', b, !1);
 }
-
 function mc(a) {
     return String(a).replace(/\-([a-z])/g, (b, c) => c.toUpperCase());
 }
-
 function nc(a, b) {
     b = String(b);
     'application/xhtml+xml' === a.contentType && (b = b.toLowerCase());
     return a.createElement(b);
 }
-
 function oc(a) {
     this.h = a || v.document || document;
 }
@@ -1589,17 +1486,14 @@ oc.prototype.contains = (a, b) => {
     for (; b && a != b;) b = b.parentNode;
     return b == a;
 };
-
 function rc() {
     return !sc() && (w('iPod') || w('iPhone') || w('Android') || w('IEMobile'));
 }
-
 function sc() {
     return w('iPad') || (w('Android') && !w('Mobile')) || w('Silk');
 }
 var tc = RegExp('^(?:([^:/?#.]+):)?(?://(?:([^\\\\/?#]*)@)?([^\\\\/?#]*?)(?::([0-9]+))?(?=[\\\\/?#]|$))?([^?#]+)?(?:\\?([^#]*))?(?:#([\\s\\S]*))?$');
 var uc = /#|$/;
-
 function vc(a) {
     var b = a.search(uc);
     var c;
@@ -1618,7 +1512,6 @@ function vc(a) {
     c += 7;
     return decodeURIComponent(a.substr(c, d - c).replace(/\+/g, ' '));
 }
-
 function wc(a) {
     try {
         var b;
@@ -1636,7 +1529,6 @@ function wc(a) {
         return !1;
     }
 }
-
 function xc(a, b) {
     var c = yc('SCRIPT', a);
     c.src = gc(b);
@@ -1646,11 +1538,9 @@ function xc(a, b) {
     (d = e ? e.nonce || e.getAttribute('nonce') || '' : '') && c.setAttribute('nonce', d);
     return (a = a.getElementsByTagName('script')[0]) && a.parentNode ? (a.parentNode.insertBefore(c, a), c) : null;
 }
-
 function zc(a, b) {
     return b.getComputedStyle ? b.getComputedStyle(a, null) : a.currentStyle;
 }
-
 function Ac(a, b) {
     if (!Bc() && !Cc()) {
         var c = Math.random();
@@ -1658,7 +1548,6 @@ function Ac(a, b) {
     }
     return null;
 }
-
 function Dc() {
     if (!n.globalThis.crypto) return Math.random();
     try {
@@ -1669,12 +1558,10 @@ function Dc() {
         return Math.random();
     }
 }
-
 function Ec(a, b) {
     if (a)
         for (var c in a) Object.prototype.hasOwnProperty.call(a, c) && b.call(void 0, a[c], c, a);
 }
-
 function Fc(a) {
     var b = a.length;
     if (0 == b) return 0;
@@ -1682,7 +1569,6 @@ function Fc(a) {
     return 0 < c ? c : 4294967296 + c;
 }
 var Cc = ic(() => Xa(['Google Web Preview', 'Mediapartners-Google', 'Google-Read-Aloud', 'Google-Adwords'], Gc) || 1e-4 > Math.random());
-
 function Hc(a, b) {
     var c = -1;
     try {
@@ -1692,7 +1578,6 @@ function Hc(a, b) {
     }
     return 0 <= c && 1e3 > c ? c : null;
 }
-
 function Ic(a, b) {
     var c = Cc() ? null : Math.floor(1e3 * Dc());
     var d;
@@ -1711,21 +1596,17 @@ function Ic(a, b) {
     return d ? c : null;
 }
 var Bc = ic(() => Gc('MSIE'));
-
 function Gc(a) {
     return -1 != Na.indexOf(a);
 }
 var Jc = /^([0-9.]+)px$/;
 var Kc = /^(-?[0-9.]{1,30})$/;
-
 function Lc(a) {
     return Kc.test(a) && ((a = Number(a)), !isNaN(a)) ? a : null;
 }
-
 function I(a) {
     return (a = Jc.exec(a)) ? +a[1] : null;
 }
-
 function Mc(a, b) {
     for (var c = 0; 50 > c; ++c) {
         try {
@@ -1749,7 +1630,6 @@ function Mc(a, b) {
 return null;
 }
 var Nc = ic(() => (rc() ? 2 : sc() ? 1 : 0));
-
 function Oc(a) {
     Ec({
             display: 'none'
@@ -1760,7 +1640,6 @@ function Oc(a) {
     );
 }
 var Pc = [];
-
 function Qc() {
     var a = Pc;
     Pc = [];
@@ -1772,7 +1651,6 @@ function Qc() {
         } catch (c) {}
     }
 }
-
 function Rc(a, b) {
     b = void 0 === b ? window.document : b;
     0 != a.length &&
@@ -1790,7 +1668,6 @@ function Rc(a, b) {
             }
         });
 }
-
 function Sc(a) {
     if ('number' !== typeof a.goog_pvsid)
         try {
@@ -1801,14 +1678,12 @@ function Sc(a) {
         } catch (b) {}
     return Number(a.goog_pvsid) || -1;
 }
-
 function Tc(a) {
     var b = Uc;
     'complete' === b.readyState || 'interactive' === b.readyState ?
         (Pc.push(a), 1 == Pc.length && (n.Promise ? n.Promise.resolve().then(Qc) : window.setImmediate ? setImmediate(Qc) : setTimeout(Qc, 0))) :
         b.addEventListener('DOMContentLoaded', a);
 }
-
 function yc(a, b) {
     b = void 0 === b ? document : b;
     return b.createElement(String(a).toLowerCase());
@@ -1816,7 +1691,6 @@ function yc(a, b) {
 var Vc = null;
 var Uc = document;
 var J = window;
-
 function Wc(a) {
     a = void 0 === a ? v : a;
     var b = a.context || a.AMP_CONTEXT_DATA;
@@ -1829,18 +1703,15 @@ function Wc(a) {
     } catch (c) {}
     return null;
 }
-
 function Xc(a) {
     return (a = a || Wc()) ? (wc(a.master) ? a.master : null) : null;
 }
-
 function Yc(a, b) {
     a.google_image_requests || (a.google_image_requests = []);
     var c = yc('IMG', a.document);
     c.src = b;
     a.google_image_requests.push(c);
 }
-
 function Zc(a, b) {
     var c = 'https://pagead2.googlesyndication.com/pagead/gen_204?id=' + b;
     Ec(a, (d, e) => {
@@ -1848,7 +1719,6 @@ function Zc(a, b) {
     });
     $c(c);
 }
-
 function $c(a) {
     var b = window;
     b.fetch ?
@@ -1861,25 +1731,21 @@ function $c(a) {
         }) :
         Yc(b, a);
 }
-
 function ad(a) {
     return !(!a || !a.call) && 'function' === typeof a;
 }
-
 function bd(a) {
     var b = void 0 === b ? 1 : b;
     a = Xc(Wc(a)) || a;
     a.google_unique_id = (a.google_unique_id || 0) + b;
     return a.google_unique_id;
 }
-
 function cd(a) {
     a = a.google_unique_id;
     return 'number' === typeof a ? a : 0;
 }
 var dd = !!window.google_async_iframe_id;
 var ed = (dd && window.parent) || window;
-
 function fd() {
     if (dd && !wc(ed)) {
         0.01 > Math.random() &&
@@ -1896,7 +1762,6 @@ function fd() {
     }
     return ed;
 }
-
 function gd() {
     var a = void 0 === a ? J : a;
     if (!a) return !1;
@@ -1906,12 +1771,10 @@ function gd() {
         return !1;
     }
 }
-
 function hd(a) {
     a = a.top;
     return wc(a) ? a : null;
 }
-
 function id(a) {
     if (!a) return '';
     a = a.toLowerCase();
@@ -1919,7 +1782,6 @@ function id(a) {
     return a;
 }
 var jd = null;
-
 function kd(a, b) {
     b = void 0 === b ? [] : b;
     var c = !1;
@@ -1942,7 +1804,6 @@ function kd(a, b) {
             (a = Wb(a instanceof Kb && a.constructor === Kb && a.h === Mb ? a.i : 'type_error:Const')),
             xc(d, a));
 }
-
 function ld(a, b) {
     var c = void 0 === c ? {} : c;
     this.error = a;
@@ -1951,37 +1812,31 @@ function ld(a, b) {
     this.id = b.id || 'jserror';
     this.meta = c;
 }
-
 function md(a) {
     return !!(a.error && a.meta && a.id);
 }
 var nd = RegExp('^https?://(\\w|-)+\\.cdn\\.ampproject\\.(net|org)(\\?|/|$)');
-
 function od(a, b) {
     this.h = a;
     this.i = b;
 }
-
 function pd(a, b, c) {
     this.url = a;
     this.ba = b;
     this.Ia = !!c;
     this.depth = null;
 }
-
 function qd() {
     this.j = '&';
     this.i = {};
     this.l = 0;
     this.h = [];
 }
-
 function rd(a, b) {
     var c = {};
     c[a] = b;
     return [c];
 }
-
 function sd(a, b, c, d, e) {
     var f = [];
     Ec(a, (g, h) => {
@@ -1989,7 +1844,6 @@ function sd(a, b, c, d, e) {
     });
     return f.join(b);
 }
-
 function td(a, b, c, d, e) {
     if (null == a) return '';
     b = b || '&';
@@ -2003,7 +1857,6 @@ function td(a, b, c, d, e) {
     } else if ('object' == typeof a) return (e = e || 0), 2 > e ? encodeURIComponent(sd(a, b, c, d, e + 1)) : '...';
     return encodeURIComponent(String(a));
 }
-
 function ud(a, b) {
     var c = 'https://pagead2.googlesyndication.com' + b;
     var d = vd(a) - b.length;
@@ -2032,24 +1885,20 @@ function ud(a, b) {
     null != b && (a = e + 'trn=' + b);
     return c + a;
 }
-
 function vd(a) {
     var b = 1;
     var c;
     for (c in a.i) b = c.length > b ? c.length : b;
     return 3997 - b - a.j.length - 1;
 }
-
 function wd() {
     this.h = Math.random();
 }
-
 function xd() {
     var a = yd;
     var b = v.google_srt;
     0 <= b && 1 >= b && (a.h = b);
 }
-
 function zd(a, b, c, d, e) {
     if ((d ? a.h : Math.random()) < (e || 0.01))
         try {
@@ -2068,7 +1917,6 @@ function zd(a, b, c, d, e) {
         } catch (h) {}
 }
 var Ad = null;
-
 function Bd() {
     if (null === Ad) {
         Ad = '';
@@ -2087,17 +1935,14 @@ function Bd() {
     }
     return Ad;
 }
-
 function Cd() {
     var a = v.performance;
     return a && a.now && a.timing ? Math.floor(a.now() + a.timing.navigationStart) : Date.now();
 }
-
 function Dd() {
     var a = void 0 === a ? v : a;
     return (a = a.performance) && a.now ? a.now() : null;
 }
-
 function Ed(a, b) {
     var c = Dd() || Cd();
     this.label = a;
@@ -2114,7 +1959,6 @@ var Hd = ic(() => {
     if ((a = Gd))(a = Bd()), (a = !!a.indexOf && 0 <= a.indexOf('1337'));
     return a;
 });
-
 function Id() {
     this.events = [];
     this.i = v || v;
@@ -2122,7 +1966,6 @@ function Id() {
     v && ((v.google_js_reporting_queue = v.google_js_reporting_queue || []), (this.events = v.google_js_reporting_queue), (a = v.google_measure_js_timing));
     this.h = Hd() || (null != a ? a : 1 > Math.random());
 }
-
 function Jd(a) {
     a && Fd && Hd() && (Fd.clearMarks('goog_' + a.label + '_' + a.uniqueId + '_start'), Fd.clearMarks('goog_' + a.label + '_' + a.uniqueId + '_end'));
 }
@@ -2141,7 +1984,6 @@ Id.prototype.end = function(a) {
         !this.h || 2048 < this.events.length || this.events.push(a);
     }
 };
-
 function Kd() {
     var a = Ld;
     this.m = yd;
@@ -2307,7 +2149,6 @@ aa.I = function(a, b, c, d, e) {
     }
     return !0;
 };
-
 function Md(a) {
     var b = a.toString();
     a.name && -1 == b.indexOf(a.name) && (b += ': ' + a.name);
@@ -2322,7 +2163,6 @@ function Md(a) {
     }
     return b;
 }
-
 function K(a) {
     a = void 0 === a ? '' : a;
     var b = Error.call(this);
@@ -2333,23 +2173,18 @@ function K(a) {
     Error.captureStackTrace ? Error.captureStackTrace(this, K) : (this.stack = Error().stack || '');
 }
 u(K, Error);
-
 function Nd(a) {
     return null !== a && void 0 !== a;
 }
-
 function Od(a, b) {
     if (!b(a)) throw Error(String(a));
 }
-
 function Pd(a) {
     return 'string' === typeof a;
 }
-
 function Qd(a) {
     return void 0 === a;
 }
-
 function Rd(a) {
     y.call(this, a, -1, Sd);
 }
@@ -2367,11 +2202,9 @@ Vd = {
 var Wd = Vd.Ta;
 var Xd = Vd.Ua;
 var Yd = Vd.Va;
-
 function Zd(a) {
     return null != a ? !a : a;
 }
-
 function $d(a, b) {
     for (var c = !1, d = 0; d < a.length; d++) {
         var e = a[d]();
@@ -2380,7 +2213,6 @@ function $d(a, b) {
     }
     if (!c) return !b;
 }
-
 function ae(a, b) {
     var c = H(a, Rd, 2);
     if (!c.length) return be(a, b);
@@ -2394,7 +2226,6 @@ function ae(a, b) {
             return $d(c, !0);
     }
 }
-
 function be(a, b) {
     var c = xb(a, Td);
     a: {
@@ -2453,29 +2284,24 @@ function be(a, b) {
     }
 }
 }
-
 function ce(a, b) {
     return !a || !(!b || !ae(a, b));
 }
-
 function de(a) {
     y.call(this, a, -1, ee);
 }
 u(de, y);
 var ee = [4];
-
 function fe(a) {
     y.call(this, a);
 }
 u(fe, y);
-
 function ge(a) {
     y.call(this, a, -1, he);
 }
 u(ge, y);
 var he = [5];
 var ie = [1, 2, 3, 6, 7];
-
 function je(a) {
     a.ib(
         ...ma(
@@ -2486,7 +2312,6 @@ function je(a) {
         )
     );
 }
-
 function ke(a) {
     return function(...args) {
         var b = ta.apply(0, args);
@@ -2513,7 +2338,6 @@ var le = ke((a) => {
         )();
     return '[[' + b.join(',') + ']]';
 });
-
 function me(a, b) {
     if (n.globalThis.fetch)
         n.globalThis.fetch(a, {
@@ -2530,7 +2354,6 @@ function me(a, b) {
         c.send(b);
     }
 }
-
 function ne(a) {
     var b = void 0 === b ? me : b;
     this.l = void 0 === a ? 1e3 : a;
@@ -2552,12 +2375,10 @@ ne.prototype.ib = function(...args) {
         100 <= b.i.length ? (null !== b.h && clearTimeout(b.h), (b.h = setTimeout(c, 0))) : null === b.h && (b.h = setTimeout(c, b.l));
     })();
 };
-
 function oe(a) {
     y.call(this, a, -1, pe);
 }
 u(oe, y);
-
 function qe(a) {
     y.call(this, a);
 }
@@ -2565,26 +2386,22 @@ u(qe, y);
 qe.prototype.$ = function() {
     return C(this, 1, 0);
 };
-
 function re(a) {
     y.call(this, a);
 }
 u(re, y);
 var pe = [2, 4, 5];
 var se = [1, 2];
-
 function te(a) {
     y.call(this, a, -1, ue);
 }
 u(te, y);
-
 function ve(a) {
     y.call(this, a);
 }
 u(ve, y);
 var ue = [2, 3];
 var we = [1, 2, 3, 4];
-
 function xe(a) {
     y.call(this, a);
 }
@@ -2593,7 +2410,6 @@ xe.prototype.getTagSessionCorrelator = function() {
     return C(this, 2, 0);
 };
 var zb = [4, 5, 7];
-
 function ye(a, b, c) {
     var d = void 0 === d ? new ne(b) : d;
     this.i = a;
@@ -2602,7 +2418,6 @@ function ye(a, b, c) {
     this.h = [];
     this.l = 0 < this.i && Dc() < 1 / this.i;
 }
-
 function ze(a, b, c, d, e, f) {
     var g = new qe();
     b = vb(g, 1, b);
@@ -2623,7 +2438,6 @@ function ze(a, b, c, d, e, f) {
     a.h.push(c);
     100 < a.h.length && a.h.shift();
 }
-
 function Be(a, b, c, d) {
     if (a.m) {
         var e = new te();
@@ -2635,27 +2449,23 @@ function Be(a, b, c, d) {
         a.l && je(a.j, Ae(a, d));
     }
 }
-
 function Ae(a, b) {
     b = vb(b, 1, Date.now());
     var c = Sc(window);
     b = vb(b, 2, c);
     return vb(b, 6, a.i);
 }
-
 function L(a) {
     var b = 'qa';
     if (a.qa && a.hasOwnProperty(b)) return a.qa;
     b = new a();
     return (a.qa = b);
 }
-
 function Ce() {
     var a = {};
     this.h = ((a[Wd] = {}), (a[Xd] = {}), (a[Yd] = {}), a);
 }
 var De = /^true$/.test('false');
-
 function Ee(a, b) {
     switch (b) {
         case 1:
@@ -2670,7 +2480,6 @@ function Ee(a, b) {
             return null;
     }
 }
-
 function Fe(a, b) {
     if (!a) return null;
     switch (b) {
@@ -2696,7 +2505,6 @@ var Ge = ic(() => {
     } catch (b) {}
     return {};
 });
-
 function He(a, b, c, d) {
     var e = (d = void 0 === d ? 0 : d);
     var f;
@@ -2711,7 +2519,6 @@ function He(a, b, c, d) {
     a = Fe(b, a);
     return null != a ? a : c;
 }
-
 function Ke(a) {
     var b = L(Ce).h;
     if (b) {
@@ -2720,42 +2527,34 @@ function Ke(a) {
     }
     return G(a, de, 4);
 }
-
 function Ie() {
     this.h = {};
     this.l = [];
     this.j = {};
     this.i = {};
 }
-
 function Le(a, b, c) {
     return !!He(1, a, void 0 === b ? !1 : b, c);
 }
-
 function Me(a, b, c) {
     b = void 0 === b ? 0 : b;
     a = Number(He(2, a, b, c));
     return isNaN(a) ? b : a;
 }
-
 function Ne(a, b, c) {
     return He(3, a, void 0 === b ? '' : b, c);
 }
-
 function Oe(a, b, c) {
     b = void 0 === b ? [] : b;
     return He(6, a, b, c);
 }
-
 function Je(a) {
     return L(Ie).h[a] || (L(Ie).h[a] = {});
 }
-
 function Pe(a, b) {
     var c = Je(b);
     Ec(a, (d, e) => (c[e] = d));
 }
-
 function Qe(a, b, c, d, e) {
     e = void 0 === e ? !1 : e;
     var f = [];
@@ -2808,7 +2607,6 @@ function Qe(a, b, c, d, e) {
     });
     (f.length || g.length) && Be(c, f, g, null != d ? d : void 0);
 }
-
 function Re(a, b) {
     var c = Je(b);
     Ua(a, (d) => {
@@ -2817,15 +2615,12 @@ function Re(a, b) {
         (e = Ee(e, f)) && (c[e] || (c[e] = d));
     });
 }
-
 function Se() {
     return Wa(p(Object, 'keys').call(Object, L(Ie).h), (a) => Number(a));
 }
-
 function Te(a) {
     $a(L(Ie).l, a) || Pe(Je(4), a);
 }
-
 function M(a) {
     this.methodName = a;
 }
@@ -2845,18 +2640,15 @@ var ff = new M(11);
 var gf = new M(12);
 var hf = new M(13);
 var jf = new M(14);
-
 function N(a, b, c) {
     c.hasOwnProperty(a.methodName) ||
         Object.defineProperty(c, String(a.methodName), {
             value: b
         });
 }
-
 function kf(a, b, c) {
     return b[a.methodName] || c || (() => {});
 }
-
 function lf(a) {
     N($e, Le, a);
     N(af, Me, a);
@@ -2865,7 +2657,6 @@ function lf(a) {
     N(hf, Re, a);
     N(We, Te, a);
 }
-
 function mf(a) {
     N(
         Ze,
@@ -2906,21 +2697,18 @@ function mf(a) {
         a
     );
 }
-
 function nf(a) {
     a.hasOwnProperty('init-done') ||
         Object.defineProperty(a, 'init-done', {
             value: !0
         });
 }
-
 function of () {
     this.l = () => {};
     this.j = () => {};
     this.i = () => {};
     this.h = () => [];
 }
-
 function pf(a, b, c) {
     a.l = kf(Ue, b, () => {});
     a.i = (d) => {
@@ -2934,7 +2722,6 @@ function pf(a, b, c) {
 var yd;
 var qf;
 var Ld = new Id();
-
 function rf(a) {
     null != a && (v.google_measure_js_timing = a);
     v.google_measure_js_timing || ((a = Ld), (a.h = !1), a.events != a.i.google_js_reporting_queue && (Hd() && Ua(a.events, Jd), (a.events.length = 0)));
@@ -2952,28 +2739,23 @@ function rf(a) {
             rf();
         });
 })();
-
 function sf(a, b, c) {
     return qf.ma(a, b, c);
 }
-
 function tf(a, b) {
     return qf.La(a, b, void 0, void 0);
 }
-
 function uf(a, b, c) {
     var d = L( of ).h();
     !b.eid && d.length && (b.eid = d.toString());
     zd(yd, a, b, !0, c);
 }
-
 function vf(a) {
     return (b) => {
         null != b || (b = 'unnamed rejection');
         qf.I(a, b instanceof Error ? b : Error(b), void 0, void 0);
     };
 }
-
 function wf(a, b, c, d) {
     var e;
     md(b) ? (e = b.msg || Md(b.error)) : (e = Md(b));
@@ -2989,7 +2771,6 @@ var xf = {
     immersives: 4,
     list_view: 5
 };
-
 function yf() {
     this.wasPlaTagProcessed = !1;
     this.wasReactiveAdConfigReceived = {};
@@ -3003,32 +2784,27 @@ function yf() {
     this.messageValidationEnabled = !1;
     this.floatingAdsStacking = new zf();
 }
-
 function Af(a) {
     a.google_reactive_ads_global_state ?
         null == a.google_reactive_ads_global_state.floatingAdsStacking && (a.google_reactive_ads_global_state.floatingAdsStacking = new zf()) :
         (a.google_reactive_ads_global_state = new yf());
     return a.google_reactive_ads_global_state;
 }
-
 function zf() {
     this.maxZIndexRestrictions = {};
     this.nextRestrictionId = 0;
     this.maxZIndexListeners = [];
 }
-
 function Bf(a) {
     a = a.document;
     var b = {};
     a && (b = 'CSS1Compat' == a.compatMode ? a.documentElement : a.body);
     return b || {};
 }
-
 function Cf(a) {
     return Bf(a).clientWidth;
 }
 bb || !w('Safari') || Ra();
-
 function Df() {
     this.i = new If(this);
     this.h = 0;
@@ -3045,11 +2821,9 @@ Df.prototype.reject = function(a) {
     this.j = a;
     Kf(this.i);
 };
-
 function Jf(a) {
     if (0 != a.h) throw Error('Already resolved/rejected.');
 }
-
 function If(a) {
     this.h = a;
 }
@@ -3059,7 +2833,6 @@ If.prototype.then = function(a, b) {
     this.j = b;
     Kf(this);
 };
-
 function Kf(a) {
     switch (a.h.h) {
         case 0:
@@ -3074,7 +2847,6 @@ function Kf(a) {
             throw Error('Unhandled deferred state.');
     }
 }
-
 function Lf(a) {
     this.h = a.slice(0);
 }
@@ -3089,12 +2861,10 @@ Lf.prototype.add = function(a) {
     b.push(a);
     return new Lf(b);
 };
-
 function Mf(a, b) {
     for (var c = [], d = a.length, e = 0; e < d; e++) c.push(a[e]);
     c.forEach(b, void 0);
 }
-
 function Nf() {
     this.h = {};
     this.i = {};
@@ -3112,20 +2882,16 @@ Nf.prototype.clear = function() {
     this.h = {};
     this.i = {};
 };
-
 function Of(a) {
     return a instanceof Object ? String(Aa(a)) : a + '';
 }
-
 function Pf(a, b) {
     this.h = a;
     this.i = b;
 }
-
 function Qf(a) {
     return null != a.h ? a.h.value : null;
 }
-
 function Rf(a, b) {
     null != a.h && b(a.h.value);
     return a;
@@ -3133,12 +2899,10 @@ function Rf(a, b) {
 Pf.prototype.map = function(a) {
     return null != this.h ? ((a = a(this.h.value)), a instanceof Pf ? a : Sf(a)) : this;
 };
-
 function Tf(a, b) {
     null != a.h || b(a.i);
     return a;
 }
-
 function Sf(a) {
     return new Pf({
             value: a
@@ -3146,11 +2910,9 @@ function Sf(a) {
         null
     );
 }
-
 function Uf(a) {
     return new Pf(null, a);
 }
-
 function Vf(a) {
     try {
         return Sf(a());
@@ -3158,7 +2920,6 @@ function Vf(a) {
         return Uf(b);
     }
 }
-
 function Wf(a) {
     this.h = new Nf();
     if (a)
@@ -3170,7 +2931,6 @@ Wf.prototype.add = function(a) {
 Wf.prototype.contains = function(a) {
     return void 0 !== this.h.h[Of(a)];
 };
-
 function Xf() {
     this.h = new Nf();
 }
@@ -3179,7 +2939,6 @@ Xf.prototype.set = function(a, b) {
     c || ((c = new Wf()), this.h.set(a, c));
     c.add(b);
 };
-
 function Yf(a) {
     y.call(this, a, -1, Zf);
 }
@@ -3188,7 +2947,6 @@ Yf.prototype.getId = function() {
     return z(this, 3);
 };
 var Zf = [4];
-
 function $f(a) {
     var b = void 0 === a.Ea ? void 0 : a.Ea;
     var c = void 0 === a.ab ? void 0 : a.ab;
@@ -3198,7 +2956,6 @@ function $f(a) {
     this.j = d;
     this.i = c;
 }
-
 function ag(a) {
     var b = [];
     var c = a.l;
@@ -3230,13 +2987,11 @@ function ag(a) {
     });
     return b;
 }
-
 function bg(a) {
     a = a.h.slice(0).map(cg);
     a = JSON.stringify(a);
     return Fc(a);
 }
-
 function cg(a) {
     var b = {};
     null != z(a, 7) && (b.q = z(a, 7));
@@ -3244,7 +2999,6 @@ function cg(a) {
     null != z(a, 5) && (b.p = z(a, 5));
     return b;
 }
-
 function dg(a) {
     y.call(this, a);
 }
@@ -3252,12 +3006,10 @@ u(dg, y);
 dg.prototype.setLocation = function(a) {
     return A(this, 1, a);
 };
-
 function eg(a, b) {
     this.Ga = a;
     this.Ma = b;
 }
-
 function fg(a) {
     var b = [].slice.call(arguments).filter(hc((e) => null === e));
     if (!b.length) return null;
@@ -3269,7 +3021,6 @@ function fg(a) {
     });
     return new eg(c, d);
 }
-
 function gg(a) {
     switch (a) {
         case 1:
@@ -3292,7 +3043,6 @@ function gg(a) {
             return null;
     }
 }
-
 function hg(a) {
     if (null == a) a = null;
     else {
@@ -3312,12 +3062,10 @@ function hg(a) {
 }
 var ig = {};
 var jg = new eg(['google-auto-placed'], ((ig.google_reactive_ad_format = 40), (ig.google_tag_origin = 'qs'), ig));
-
 function kg(a) {
     y.call(this, a);
 }
 u(kg, y);
-
 function lg(a) {
     y.call(this, a);
 }
@@ -3325,93 +3073,76 @@ u(lg, y);
 lg.prototype.getName = function() {
     return z(this, 4);
 };
-
 function mg(a) {
     y.call(this, a);
 }
 u(mg, y);
-
 function ng(a) {
     y.call(this, a);
 }
 u(ng, y);
-
 function og(a) {
     y.call(this, a);
 }
 u(og, y);
 var pg = [1, 2, 3];
-
 function qg(a) {
     y.call(this, a);
 }
 u(qg, y);
-
 function rg(a) {
     y.call(this, a, -1, sg);
 }
 u(rg, y);
 var sg = [6, 7, 9, 10, 11];
-
 function tg(a) {
     y.call(this, a, -1, ug);
 }
 u(tg, y);
-
 function vg(a) {
     y.call(this, a);
 }
 u(vg, y);
-
 function wg(a) {
     y.call(this, a);
 }
 u(wg, y);
 var ug = [1];
 var xg = [1, 2];
-
 function yg(a) {
     y.call(this, a, -1, zg);
 }
 u(yg, y);
-
 function Ag(a) {
     y.call(this, a);
 }
 u(Ag, y);
-
 function Bg(a) {
     y.call(this, a, -1, Cg);
 }
 u(Bg, y);
-
 function Dg(a) {
     y.call(this, a);
 }
 u(Dg, y);
-
 function Eg(a) {
     y.call(this, a);
 }
 u(Eg, y);
-
 function Fg(a) {
     y.call(this, a);
 }
 u(Fg, y);
-
 function Gg(a) {
     y.call(this, a);
 }
 u(Gg, y);
 var zg = [1, 2, 5, 7];
 var Cg = [2, 5, 6, 11];
-
 function Hg(a) {
     y.call(this, a);
 }
 u(Hg, y);
-
 function Ig(a) {
     if (1 != a.nodeType) var b = !1;
     else if ((b = 'INS' == a.tagName))
@@ -3428,7 +3159,6 @@ function Ig(a) {
         }
     return b;
 }
-
 function Jg(a, b, c) {
     switch (c) {
         case 0:
@@ -3450,17 +3180,14 @@ function Jg(a, b, c) {
     }
     Ig(b) && (b.setAttribute('data-init-display', b.style.display), (b.style.display = 'block'));
 }
-
 function O(a, b) {
     this.h = a;
     this.defaultValue = void 0 === b ? !1 : b;
 }
-
 function P(a, b) {
     this.h = a;
     this.defaultValue = void 0 === b ? 0 : b;
 }
-
 function Kg(a, b) {
     b = void 0 === b ? [] : b;
     this.h = a;
@@ -3537,7 +3264,6 @@ var Nh = new Kg(1932, [
 ]);
 var Oh = new O(401243724);
 var Ph = new P(1935);
-
 function Qh() {
     var a = {};
     this.i = (b, c) => (null != a[b] ? a[b] : c);
@@ -3546,25 +3272,20 @@ function Qh() {
     this.h = (b, c) => (null != a[b] ? a[b] : c);
     this.m = () => {};
 }
-
 function Q(a) {
     return L(Qh).i(a.h, a.defaultValue);
 }
-
 function R(a) {
     return L(Qh).j(a.h, a.defaultValue);
 }
-
 function Rh() {
     return L(Qh).l(Og.h, Og.defaultValue);
 }
-
 function Sh(a, b, c) {
     function d(f) {
         f = Th(f);
         return null == f ? !1 : c > f;
     }
-
     function e(f) {
         f = Th(f);
         return null == f ? !1 : c < f;
@@ -3605,11 +3326,9 @@ function Sh(a, b, c) {
     }
     throw Error('Un-handled RelativePosition: ' + b);
 }
-
 function Th(a) {
     return a.hasOwnProperty('google-ama-order-assurance') ? a['google-ama-order-assurance'] : null;
 }
-
 function Uh(a, b) {
     return a && b(a) ? a : null;
 }
@@ -3618,7 +3337,6 @@ var Vh = {
     horizontal: 2,
     vertical: 4
 };
-
 function Wh(a, b) {
     do {
         var c = zc(a, b);
@@ -3626,7 +3344,6 @@ function Wh(a, b) {
     } while ((a = a.parentElement));
     return !0;
 }
-
 function Xh(a, b) {
     for (var c = ['width', 'height'], d = 0; d < c.length; d++) {
         var e = 'google_ad_' + c[d];
@@ -3637,15 +3354,12 @@ function Xh(a, b) {
         }
     }
 }
-
 function Yh(a, b) {
     return !((Kc.test(b.google_ad_width) || Jc.test(a.style.width)) && (Kc.test(b.google_ad_height) || Jc.test(a.style.height)));
 }
-
 function Zh(a, b) {
     return (a = $h(a, b)) ? a.y : 0;
 }
-
 function $h(a, b) {
     try {
         var c = b.document.documentElement.getBoundingClientRect();
@@ -3658,14 +3372,12 @@ function $h(a, b) {
         return null;
     }
 }
-
 function ai(a) {
     var b = 0;
     var c;
     for (c in Vh) - 1 != a.indexOf(c) && (b |= Vh[c]);
     return b;
 }
-
 function bi(a, b, c, d, e) {
     if (a.top != a) return hd(a) ? 3 : 16;
     if (!(488 > Cf(a))) return 4;
@@ -3687,7 +3399,6 @@ function bi(a, b, c, d, e) {
     }
     return a;
 }
-
 function ci(a, b, c, d) {
     var e = bi(b, c, a, 0.3, d);
     !0 !== e ?
@@ -3697,7 +3408,6 @@ function ci(a, b, c, d) {
         (a = 9);
     return a;
 }
-
 function di(a, b, c) {
     a = a.style;
     'rtl' == b
@@ -3709,7 +3419,6 @@ function di(a, b, c) {
         a.setProperty('margin-left', c, 'important') :
         (a.marginLeft = c);
 }
-
 function ei(a, b) {
     if (3 == b.nodeType) return /\S/.test(b.data);
     if (1 == b.nodeType) {
@@ -3721,12 +3430,10 @@ function ei(a, b) {
     }
     return !1;
 }
-
 function fi(a, b, c) {
     a = $h(b, a);
     return 'rtl' == c ? -a.x : a.x;
 }
-
 function gi(a, b) {
     var c;
     c = (c = b.parentElement) ? ((c = zc(c, a)) ? c.direction : '') : '';
@@ -3745,7 +3452,6 @@ function gi(a, b) {
         b.style.zIndex = 30;
     }
 }
-
 function S(a, b) {
     this.l = a;
     this.j = b;
@@ -3760,31 +3466,25 @@ S.prototype.h = function(a) {
     return 300 < a && 300 < this.j ? this.l : Math.min(1200, Math.round(a));
 };
 S.prototype.i = () => {};
-
 function hi(a, b, c, d) {
     d = void 0 === d ? (f) => f : d;
     var e;
     return (a.style && a.style[c] && d(a.style[c])) || ((e = zc(a, b)) && e[c] && d(e[c])) || null;
 }
-
 function ii(a) {
     return (b) => b.minWidth() <= a;
 }
-
 function ji(a, b, c, d) {
     var e = a && ki(c, b);
     var f = li(b, d);
     return (g) => !(e && g.height() >= f);
 }
-
 function mi(a) {
     return (b) => b.height() <= a;
 }
-
 function ki(a, b) {
     return Zh(a, b) < Bf(b).clientHeight - 100;
 }
-
 function ni(a, b) {
     var c = hi(b, a, 'height', I);
     if (c) return c;
@@ -3798,7 +3498,6 @@ function ni(a, b) {
     while ((b = b.parentElement) && 'HTML' != b.tagName);
     return c;
 }
-
 function li(a, b) {
     var c = 0 == cd(a);
     return b && c ? Math.max(250, (2 * Bf(a).clientHeight) / 3) : 250;
@@ -3823,7 +3522,6 @@ var oi =
         (T.google_max_ad_content_rating = !0),
         T);
 var pi = RegExp('(^| )adsbygoogle($| )');
-
 function qi(a, b) {
     for (var c = 0; c < b.length; c++) {
         var d = b[c];
@@ -3831,14 +3529,12 @@ function qi(a, b) {
         a[e] = d.value;
     }
 }
-
 function ri(a, b, c, d) {
     this.l = a;
     this.i = b;
     this.j = c;
     this.h = d;
 }
-
 function si(a, b) {
     var c = [];
     try {
@@ -3873,7 +3569,6 @@ ri.prototype.toString = function() {
         ignoreMode: this.h
     });
 };
-
 function ti(a, b) {
     if (null == a.h) return b;
     switch (a.h) {
@@ -3889,7 +3584,6 @@ function ti(a, b) {
             throw Error('Unknown ignore mode: ' + a.h);
     }
 }
-
 function ui(a) {
     var b = [];
     Mf(a.getElementsByTagName('p'), (c) => {
@@ -3897,7 +3591,6 @@ function ui(a) {
     });
     return b;
 }
-
 function vi(a) {
     if (3 == a.nodeType) return a.length;
     if (1 != a.nodeType || 'SCRIPT' == a.tagName) return 0;
@@ -3907,11 +3600,9 @@ function vi(a) {
     });
     return b;
 }
-
 function wi(a) {
     return 0 == a.length || isNaN(a[0]) ? a : '\\' + (30 + parseInt(a[0], 10)) + ' ' + a.substring(1);
 }
-
 function xi(a) {
     if (!a) return null;
     var b = z(a, 7);
@@ -3934,7 +3625,6 @@ var zi = {
     3: 3,
     0: 0
 };
-
 function yi(a) {
     return null == a ? a : zi[a];
 }
@@ -3944,16 +3634,13 @@ var Ai = {
     3: 2,
     4: 3
 };
-
 function Bi(a) {
     return (a.google_ama_state = a.google_ama_state || {});
 }
-
 function Ci(a) {
     a = Bi(a);
     return (a.optimization = a.optimization || {});
 }
-
 function Di(a) {
     switch (z(a, 8)) {
         case 1:
@@ -3978,7 +3665,6 @@ function Di(a) {
             return Uf(Error('Invalid type: ' + z(a, 8)));
     }
 }
-
 function Ei(a, b) {
     function c() {
         d.push({
@@ -4025,12 +3711,10 @@ function Ei(a, b) {
     }
     return d;
 }
-
 function Fi(a, b) {
     this.i = a;
     this.h = b;
 }
-
 function Gi(a, b) {
     var c = new Xf();
     var d = new Wf();
@@ -4060,7 +3744,6 @@ function Gi(a, b) {
     });
     return new Fi(c, d);
 }
-
 function Ii(a, b, c) {
     G(b, Yf, 1) &&
         (a = Ki(a, G(b, Yf, 1))) &&
@@ -4072,7 +3755,6 @@ function Ii(a, b, c) {
             c.set(d, 3);
         });
 }
-
 function Ji(a, b, c) {
     G(b, Yf, 1) &&
         (a = Ki(a, G(b, Yf, 1))) &&
@@ -4080,15 +3762,12 @@ function Ji(a, b, c) {
             c.add(Aa(d));
         });
 }
-
 function Hi(a, b) {
     return (a = Ki(a, b)) && 0 < a.length ? a[0] : null;
 }
-
 function Ki(a, b) {
     return (b = xi(b)) ? si(b, a) : null;
 }
-
 function Li(a, b) {
     if (!a) return !1;
     a = zc(a, b);
@@ -4096,16 +3775,13 @@ function Li(a, b) {
     a = a.cssFloat || a.styleFloat;
     return 'left' == a || 'right' == a;
 }
-
 function Mi(a) {
     for (a = a.previousSibling; a && 1 != a.nodeType;) a = a.previousSibling;
     return a ? a : null;
 }
-
 function Ni(a) {
     return !!a.nextSibling || (!!a.parentNode && Ni(a.parentNode));
 }
-
 function Oi(a) {
     var b = {};
     a &&
@@ -4114,7 +3790,6 @@ function Oi(a) {
         });
     return b;
 }
-
 function Pi(a, b, c, d, e) {
     this.h = a;
     this.A = b;
@@ -4124,7 +3799,6 @@ function Pi(a, b, c, d, e) {
     this.i = 0;
     this.l = !1;
 }
-
 function Qi(a, b) {
     if (a.l) return !0;
     a.l = !0;
@@ -4164,7 +3838,6 @@ function Qi(a, b) {
     kd(7, [!1, a.i, !1]);
     return !1;
 }
-
 function Ri(a, b, c, d) {
     if ((b && null != z(b, 4) && d[z(G(b, dg, 4), 2)]) || 1 != z(b, 8)) return null;
     d = G(b, Yf, 1);
@@ -4326,7 +3999,6 @@ function Ri(a, b, c, d) {
     }
     return B ? f : null;
 }
-
 function Si(a, b) {
     return Qf(
         Tf(Di(b).map(hg), (c) => {
@@ -4334,7 +4006,6 @@ function Si(a, b) {
         })
     );
 }
-
 function Ti(a) {
     if (Q(ah)) var b = null;
     else
@@ -4350,12 +4021,10 @@ try {
 }
 return c;
 }
-
 function Ui(a) {
     y.call(this, a);
 }
 u(Ui, y);
-
 function Vi(a) {
     try {
         var b = a.localStorage.getItem('google_auto_fc_cmp_setting') || null;
@@ -4365,22 +4034,18 @@ function Vi(a) {
     var c = b;
     return c ? Vf(() => pb(Ui, c ? JSON.parse(c) : null)) : Sf(null);
 }
-
 function Wi() {
     this.S = {};
 }
-
 function Xi() {
     if (Yi) return Yi;
     var a = Xc() || fd();
     var b = a.google_persistent_state_async;
     return null != b && 'object' == typeof b && null != b.S && 'object' == typeof b.S ? (Yi = b) : (a.google_persistent_state_async = Yi = new Wi());
 }
-
 function Zi(a) {
     return $i[a] || 'google_ps_' + a;
 }
-
 function aj(a, b, c) {
     b = Zi(b);
     a = a.S;
@@ -4390,7 +4055,6 @@ function aj(a, b, c) {
 var Yi = null;
 var bj = {};
 var $i = ((bj[8] = 'google_prev_ad_formats_by_region'), (bj[9] = 'google_prev_ad_slotnames_by_region'), bj);
-
 function cj(a) {
     this.h = a || {
         cookie: ''
@@ -4441,17 +4105,14 @@ cj.prototype.clear = function() {
             domain: void 0
         });
 };
-
 function dj(a) {
     y.call(this, a);
 }
 u(dj, y);
-
 function ej(a) {
     var b = new dj();
     return A(b, 5, a);
 }
-
 function fj() {
     this.v = this.v;
     this.D = this.D;
@@ -4461,7 +4122,6 @@ fj.prototype.j = function() {
     if (this.D)
         for (; this.D.length;) this.D.shift()();
 };
-
 function gj(a) {
     void 0 !== a.addtlConsent && 'string' !== typeof a.addtlConsent && (a.addtlConsent = void 0);
     void 0 !== a.gdprApplies && 'boolean' !== typeof a.gdprApplies && (a.gdprApplies = void 0);
@@ -4471,7 +4131,6 @@ function gj(a) {
         0 :
         3;
 }
-
 function hj(a, b) {
     b = void 0 === b ? 500 : b;
     fj.call(this);
@@ -4491,7 +4150,6 @@ hj.prototype.j = function() {
     delete this.i;
     fj.prototype.j.call(this);
 };
-
 function ij(a) {
     return 'function' === typeof a.h.__tcfapi || null != jj(a);
 }
@@ -4524,7 +4182,6 @@ hj.prototype.addEventListener = function(a) {
 hj.prototype.removeEventListener = function(a) {
     a && a.listenerId && kj(this, 'removeEventListener', null, a.listenerId);
 };
-
 function kj(a, b, c, d) {
     c || (c = () => {});
     if ('function' === typeof a.h.__tcfapi)(a = a.h.__tcfapi), a(b, 2, c, d);
@@ -4546,13 +4203,11 @@ function kj(a, b, c, d) {
                 ));
     } else c({}, !1);
 }
-
 function jj(a) {
     if (a.i) return a.i;
     a.i = Mc(a.h, '__tcfapiLocator');
     return a.i;
 }
-
 function lj(a) {
     a.l ||
         ((a.l = (b) => {
@@ -4563,7 +4218,6 @@ function lj(a) {
             }),
             kc(a.h, 'message', a.l));
 }
-
 function mj(a) {
     var b = a.ba;
     var c = a.Ra;
@@ -4581,7 +4235,6 @@ function mj(a) {
         .then((e) => e.map((f) => qj(b, f)))
         .then(d);
 }
-
 function nj(a) {
     var b = a.ba;
     var c = a.ka;
@@ -4610,11 +4263,9 @@ function nj(a) {
     c = Xi();
     return (c = aj(c, 24, void 0)) ? qj(b, pj(c)) : Uf(Error('tcunav'));
 }
-
 function oj(a, b) {
     return n.Promise.race([rj(), sj(a, b)]);
 }
-
 function rj() {
     return new n.Promise((a) => {
         var b = Xi();
@@ -4626,17 +4277,14 @@ function rj() {
         b.S[Zi(25)] = c;
     }).then(tj);
 }
-
 function sj(a, b) {
     return new n.Promise((c) => {
         a.setTimeout(c, b, Uf(Error('tcto')));
     });
 }
-
 function tj(a) {
     return a ? Sf(a) : Uf(Error('tcnull'));
 }
-
 function pj(a) {
     var b = void 0 === b ? !1 : b;
     if (!1 === a.gdprApplies) var c = !0;
@@ -4678,7 +4326,6 @@ function pj(a) {
     else a = !1;
     return ej(a);
 }
-
 function qj(a, b) {
     a: {
         a = void 0 === a ? window : a;
@@ -4691,11 +4338,9 @@ function qj(a, b) {
     }
     return (b = c) ? Sf(b) : Uf(Error('unav'));
 }
-
 function uj(a) {
     this.exception = a;
 }
-
 function vj(a, b, c) {
     this.j = a;
     this.h = b;
@@ -4719,7 +4364,6 @@ vj.prototype.l = function() {
         wj(this, a);
     }
 };
-
 function wj(a, b) {
     try {
         var c = a.i;
@@ -4732,29 +4376,24 @@ function wj(a, b) {
         a.i.reject(f);
     }
 }
-
 function xj(a) {
     y.call(this, a, -1, yj);
 }
 u(xj, y);
 var yj = [6];
-
 function zj(a) {
     y.call(this, a, -1, Aj);
 }
 u(zj, y);
-
 function Bj(a) {
     y.call(this, a);
 }
 u(Bj, y);
-
 function Cj(a) {
     y.call(this, a);
 }
 u(Cj, y);
 var Aj = [7];
-
 function Dj(a) {
     a = (a = new cj(a).get('FCCDCF', '')) ? a : null;
     try {
@@ -4763,7 +4402,6 @@ function Dj(a) {
         return null;
     }
 }
-
 function Ej(a) {
     function b() {
         if (!a.frames.__uspapiLocator)
@@ -4783,7 +4421,6 @@ function Ej(a) {
     var c = a.document;
     b();
 }
-
 function Fj(a) {
     this.h = a;
     this.i = a.document;
@@ -4791,12 +4428,10 @@ function Fj(a) {
     (a = Dj(this.i)) && G(a, Bj, 4);
     (a = Dj(this.i)) && G(a, Bj, 4);
 }
-
 function Gj() {
     var a = window;
     a.__uspapi || a.frames.__uspapiLocator || ((a = new Fj(a)), Hj(a));
 }
-
 function Hj(a) {
     !a.j ||
         a.h.__uspapi ||
@@ -4817,7 +4452,6 @@ Fj.prototype.l = function(a, b, c) {
             !0
         );
 };
-
 function Ij(a) {
     var b = /[a-zA-Z0-9._~-]/;
     var c = /%[89a-zA-Z]./;
@@ -4829,7 +4463,6 @@ function Ij(a) {
         return d.toUpperCase();
     });
 }
-
 function Jj(a) {
     for (var b = '', c = /[/%?&=]/, d = 0; d < a.length; ++d) {
         var e = a[d];
@@ -4837,7 +4470,6 @@ function Jj(a) {
     }
     return b;
 }
-
 function Kj(a, b) {
     a = Jj(Ij(a.location.pathname)).replace(/(^\/)|(\/$)/g, '');
     var c = Fc(a);
@@ -4857,7 +4489,6 @@ function Kj(a, b) {
         }) || null
     );
 }
-
 function Lj(a) {
     for (var b = {};;) {
         b[Fc(a)] = !0;
@@ -4867,12 +4498,10 @@ function Lj(a) {
 }
 var Mj = {};
 var Nj = ((Mj.google_ad_channel = !0), (Mj.google_ad_host = !0), Mj);
-
 function Oj(a, b) {
     a.location.href && a.location.href.substring && (b.url = a.location.href.substring(0, 200));
     uf('ama', b, 0.01);
 }
-
 function Pj(a) {
     var b = {};
     Ec(Nj, (c, d) => {
@@ -4880,16 +4509,13 @@ function Pj(a) {
     });
     return b;
 }
-
 function Qj(a) {
     a = G(a, Ag, 3);
     return !a || z(a, 1) <= Date.now() ? !1 : !0;
 }
-
 function Rj(a) {
     return (a = Ti(a)) ? (Qj(a) ? a : null) : null;
 }
-
 function Sj(a, b) {
     try {
         b.removeItem('google_ama_config');
@@ -4899,25 +4525,21 @@ function Sj(a, b) {
         });
     }
 }
-
 function Tj(a) {
     Oj(a, {
         atf: 1
     });
 }
-
 function Uj(a, b) {
     (a.google_ama_state = a.google_ama_state || {}).exception = b;
     Oj(a, {
         atf: 0
     });
 }
-
 function U(a) {
     a.google_ad_modifications || (a.google_ad_modifications = {});
     return a.google_ad_modifications;
 }
-
 function Vj(a) {
     a = U(a);
     var b = a.space_collapsing || 'none';
@@ -4928,30 +4550,25 @@ function Vj(a) {
         } :
         null;
 }
-
 function Wj(a, b) {
     a = U(a);
     a.tag_partners = a.tag_partners || [];
     a.tag_partners.push(b);
 }
-
 function Xj(a, b) {
     a = U(a);
     a.remove_ads_by_default = !0;
     a.space_collapsing = 'slot';
     a.ablation_viewport_offset = b;
 }
-
 function Yj(a) {
     U(J).allow_second_reactive_tag = a;
 }
-
 function Zj() {
     var a = U(window);
     a.afg_slotcar_vars || (a.afg_slotcar_vars = {});
     return a.afg_slotcar_vars;
 }
-
 function ak(a, b) {
     if (!a) return !1;
     a = a.hash;
@@ -4960,7 +4577,6 @@ function ak(a, b) {
     b = bk(b);
     return 'go' != b && -1 != a.indexOf(b) ? !0 : !1;
 }
-
 function bk(a) {
     var b = '';
     Ec(a.split('_'), (c) => {
@@ -4968,7 +4584,6 @@ function bk(a) {
     });
     return b;
 }
-
 function ck() {
     var a = this;
     this.promise = new n.Promise((b, c) => {
@@ -4976,26 +4591,22 @@ function ck() {
         a.reject = c;
     });
 }
-
 function dk() {
     var a = new ck();
     this.promise = a.promise;
     this.resolve = a.resolve;
 }
-
 function ek(a) {
     v.google_llp || (v.google_llp = {});
     var b = v.google_llp;
     b[7] || ((b[7] = new dk()), a && a());
     return b[7];
 }
-
 function fk(a) {
     return ek(() => {
         xc(v.document, a);
     }).promise;
 }
-
 function gk(a) {
     var b = {};
     return {
@@ -5003,7 +4614,6 @@ function gk(a) {
         google_ad_client: a
     };
 }
-
 function hk(a) {
     if (v.google_apltlad || v.top != v || !a.google_ad_client) return null;
     v.google_apltlad = !0;
@@ -5016,17 +4626,14 @@ function hk(a) {
     if ('google_ad_section' in a || 'google_ad_region' in a) c.google_ad_section = a.google_ad_section || a.google_ad_region;
     return b;
 }
-
 function ik(a) {
     return za(a.enable_page_level_ads) && 7 === a.enable_page_level_ads.google_pgb_reactive;
 }
-
 function jk(a, b) {
     this.h = v;
     this.j = a;
     this.i = b;
 }
-
 function kk(a) {
     mj({
         ba: a.h,
@@ -5037,7 +4644,6 @@ function kk(a) {
         }
     });
 }
-
 function lk(a, b) {
     Tf(
         Rf(b, (c) => {
@@ -5047,7 +4653,6 @@ function lk(a, b) {
         (c) => mk(c.message)
     );
 }
-
 function mk(a) {
     uf(
         'abg::amalserr', {
@@ -5059,7 +4664,6 @@ function mk(a) {
         0.01
     );
 }
-
 function nk(a, b, c) {
     if (!U(J).ama_ran_on_page) {
         var d = Rj(c);
@@ -5121,7 +4725,6 @@ function nk(a, b, c) {
         } else Sj(a, c);
     }
 }
-
 function ok(a, b, c) {
     a = a.style;
     a.border = 'none';
@@ -5141,7 +4744,6 @@ var pk = {
     '468x15': !0,
     '728x15': !0
 };
-
 function qk(a, b) {
     if (15 == b) {
         if (728 <= a) return 728;
@@ -5154,7 +4756,6 @@ function qk(a, b) {
     }
     return null;
 }
-
 function V(a, b, c, d) {
     d = void 0 === d ? !1 : d;
     S.call(this, a, b);
@@ -5168,12 +4769,10 @@ V.prototype.na = function() {
 V.prototype.i = function(a, b, c) {
     b.google_ad_resize || ((c.style.height = this.height() + 'px'), (b.rpe = !0));
 };
-
 function rk(a) {
     return (b) => !!(b.aa & a);
 }
 var sk = ab('script');
-
 function tk(a, b, c, d, e, f, g, h, k, l, m, r) {
     this.v = a;
     this.R = b;
@@ -5192,7 +4791,6 @@ function tk(a, b, c, d, e, f, g, h, k, l, m, r) {
 tk.prototype.size = function() {
     return this.R;
 };
-
 function uk(a, b, c) {
     null != a.aa && (c.google_responsive_formats = a.aa);
     null != a.O && (c.google_safe_for_responsive_override = a.O);
@@ -5259,15 +4857,11 @@ function uk(a, b, c) {
                 '</p>\n          </div>'));
 }
 /*
-
 Copyright 2019 The AMP HTML Authors. All Rights Reserved.
-
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
-
   http://www.apache.org/licenses/LICENSE-2.0
-
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS-IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -5307,7 +4901,6 @@ var Ak =
         (zk.pub_control_text = 100),
         (zk.pub_control_text_card = 150),
         zk);
-
 function Bk(a) {
     var b = 0;
     a.K && b++;
@@ -5350,7 +4943,6 @@ function Bk(a) {
         Ka: b
     };
 }
-
 function Ck(a) {
     return 1200 <= a ? {
             width: 1200,
@@ -5373,7 +4965,6 @@ function Ck(a) {
         };
 }
 var Dk = ['google_content_recommendation_ui_type', 'google_content_recommendation_columns_num', 'google_content_recommendation_rows_num'];
-
 function Ek(a, b) {
     S.call(this, a, b);
 }
@@ -5381,7 +4972,6 @@ u(Ek, S);
 Ek.prototype.h = function(a) {
     return Math.min(1200, Math.max(this.minWidth(), Math.round(a)));
 };
-
 function Fk(a, b) {
     Gk(a, b);
     if ('pedestal' == b.google_content_recommendation_ui_type) return new tk(9, new Ek(a, Math.floor(a * b.google_phwr)));
@@ -5416,7 +5006,6 @@ function Fk(a, b) {
     Hk(b, a);
     return new tk(9, new Ek(a.X, a.V));
 }
-
 function Ik(a, b) {
     Gk(a, b);
     var c = Bk({
@@ -5475,7 +5064,6 @@ function Ik(a, b) {
     Hk(b, a);
     return new tk(9, new Ek(a.X, a.V));
 }
-
 function Gk(a, b) {
     if (0 >= a)
         throw new K(
@@ -5486,13 +5074,11 @@ function Gk(a, b) {
             '. Please ensure to put this Matched Content slot into a non-zero width div container.'
         );
 }
-
 function Hk(a, b) {
     a.google_content_recommendation_ui_type = b.K;
     a.google_content_recommendation_columns_num = b.F;
     a.google_content_recommendation_rows_num = b.G;
 }
-
 function Jk(a, b) {
     S.call(this, a, b);
 }
@@ -5521,7 +5107,6 @@ var Kk = {
         return 420 >= a ? a / 1.2 : 460 >= a ? a / 1.91 + 130 : 800 >= a ? a / 4 : 200;
     }
 };
-
 function Lk(a, b) {
     S.call(this, a, b);
 }
@@ -5529,7 +5114,6 @@ u(Lk, S);
 Lk.prototype.h = function() {
     return Math.min(1200, this.minWidth());
 };
-
 function Mk(a, b, c, d, e) {
     var f = e.google_ad_layout || 'image-top';
     if ('in-article' == f) {
@@ -5589,7 +5173,6 @@ function Mk(a, b, c, d, e) {
     b = 'in-article' !== f || c || a !== b ? Math.ceil(d(a)) : Math.ceil(1.25 * d(a));
     return new tk(11, 'in-article' == f ? new Lk(a, b) : new S(a, b));
 }
-
 function Nk(a) {
     return (b) => {
         for (var c = a.length - 1; 0 <= c; --c)
@@ -5597,7 +5180,6 @@ function Nk(a) {
         return !0;
     };
 }
-
 function Ok(a, b) {
     for (var c = Pk.slice(0), d = c.length, e = null, f = 0; f < d; ++f) {
         var g = c[f];
@@ -5628,7 +5210,6 @@ var W = [
     new V(120, 120, 1, !0)
 ];
 var Pk = [W[6], W[12], W[3], W[0], W[7], W[14], W[1], W[8], W[10], W[4], W[15], W[2], W[11], W[5], W[13], W[9], W[16]];
-
 function Qk(a, b, c, d, e) {
     'false' == e.google_full_width_responsive ?
         (c = {
@@ -5661,7 +5242,6 @@ function Qk(a, b, c, d, e) {
             C: b
         };
 }
-
 function Sk(a, b, c, d, e) {
     var f = sf(247, () => Qk(a, b, c, d, e));
     var g = f.B;
@@ -5681,11 +5261,9 @@ function Sk(a, b, c, d, e) {
     x = hi(d, c, 'zIndex') || '';
     return new tk(t, g, r, null, m, f, h, E, B, l, k, x);
 }
-
 function Rk(a) {
     return 'auto' == a || /^((^|,) *(horizontal|vertical|rectangle) *)+$/.test(a);
 }
-
 function Tk(a, b, c, d, e, f) {
     b = 'auto' == b ? (0.25 >= a / Math.min(1200, Cf(c)) ? 4 : 3) : ai(b);
     var g = !1;
@@ -5755,7 +5333,6 @@ function Tk(a, b, c, d, e, f) {
         Ja: k
     };
 }
-
 function Uk(a, b) {
     if ('auto' == a) return 1;
     switch (b) {
@@ -5776,17 +5353,14 @@ function Uk(a, b) {
     }
     throw Error('bad mask');
 }
-
 function Wk(a, b, c, d, e) {
     var f = e.google_ad_height || hi(c, b, 'height', I);
     b = Mk(a, b, c, f, e).size();
     return b.minWidth() * b.height() > a * d.height() ? new V(b.minWidth(), b.height(), 1) : d;
 }
-
 function Vk(a) {
     return Q(rh) || (a.location && '#hffwroe2etoq' == a.location.hash);
 }
-
 function Xk(a, b, c, d, e) {
     var f;
     (f = Cf(b)) ?
@@ -5816,7 +5390,6 @@ function Xk(a, b, c, d, e) {
     a = Tk(f, 'auto', b, c, e, !0);
     return new tk(1, a.W, a.na, 2, !0, g, a.T);
 }
-
 function Yk(a, b) {
     var c = b.google_ad_format;
     if ('autorelaxed' == c) {
@@ -5840,7 +5413,6 @@ function Yk(a, b) {
     }
     if (27 === b.google_reactive_ad_format) return Zk(b), 1;
 }
-
 function $k(a, b, c, d, e) {
     e = b.offsetWidth || ((c.google_ad_resize || (void 0 === e ? !1 : e)) && hi(b, d, 'width', I)) || c.google_ad_width || 0;
     4 === a && ((c.google_ad_format = 'auto'), (a = 1));
@@ -5849,7 +5421,6 @@ function $k(a, b, c, d, e) {
     uk(f, e, c);
     1 != a && ((a = f.size().height()), (b.style.height = a + 'px'));
 }
-
 function al(a, b, c, d, e) {
     var f = d.google_ad_height || hi(c, e, 'height', I);
     switch (a) {
@@ -5870,12 +5441,10 @@ function al(a, b, c, d, e) {
             return Xk(b, e, c, f, d);
     }
 }
-
 function Zk(a) {
     a.google_ad_format = 'auto';
     a.armr = 3;
 }
-
 function bl(a, b) {
     var c = hd(b);
     if (c) {
@@ -5901,18 +5470,15 @@ var hl = la(['https://pagead2.googlesyndication.com/pagead/managed/js/adsense/',
 var il = la(['https://pagead2.googlesyndication.com/pagead/js/', '/', '/show_ads_impl_with_ama', '.js']);
 var jl = la(['https://pagead2.googlesyndication.com/pagead/managed/js/adsense/', '/show_ads_impl_instrumented', '.js']);
 var kl = la(['https://pagead2.googlesyndication.com/pagead/js/', '/', '/show_ads_impl_instrumented', '.js']);
-
 function ll(a) {
     y.call(this, a);
 }
 u(ll, y);
-
 function ml(a) {
     y.call(this, a, -1, nl);
 }
 u(ml, y);
 var nl = [1];
-
 function ol(a) {
     y.call(this, a, -1, pl);
 }
@@ -5924,7 +5490,6 @@ ol.prototype.$ = function() {
     return C(this, 7, 0);
 };
 var pl = [2];
-
 function ql(a) {
     y.call(this, a, -1, rl);
 }
@@ -5933,12 +5498,10 @@ ql.prototype.$ = function() {
     return C(this, 5, 0);
 };
 var rl = [2];
-
 function sl(a) {
     y.call(this, a, -1, tl);
 }
 u(sl, y);
-
 function ul(a) {
     y.call(this, a, -1, vl);
 }
@@ -5946,37 +5509,31 @@ u(ul, y);
 ul.prototype.$ = function() {
     return C(this, 1, 0);
 };
-
 function wl(a) {
     y.call(this, a);
 }
 u(wl, y);
 var tl = [1, 4, 2, 3];
 var vl = [2];
-
 function xl(a) {
     y.call(this, a);
 }
 u(xl, y);
 var yl = [13, 14];
 var zl = void 0;
-
 function Al() {
     Od(zl, Nd);
     return zl;
 }
-
 function Bl(a) {
     Od(zl, Qd);
     zl = a;
 }
-
 function Cl(a, b, c, d) {
     c = void 0 === c ? '' : c;
     d = void 0 === d ? null : d;
     return Dl(a, c, (e) => Xa(H(e, Jb, 2), (f) => z(f, 1) === b)) ? !0 : 1 === b ? El(c, d) : !1;
 }
-
 function El(a, b) {
     return b ?
         13 === xb(b, yl) ?
@@ -5986,34 +5543,28 @@ function El(a, b) {
         !1 :
         !1;
 }
-
 function Fl(a, b) {
     b = C(b, 18, 0); -
     1 !== b && (a.tmod = b);
 }
-
 function Gl(a) {
     var b = void 0 === b ? '' : b;
     var c = hd(J) || J;
     return Hl(c, a) ? !0 : Dl(J, b, (d) => Xa(sb(d, 3), (e) => e === a));
 }
-
 function Il(a) {
     return Dl(v, void 0 === a ? '' : a, () => !0);
 }
-
 function Hl(a, b) {
     a = (a = (a = a.location && a.location.hash) && a.match(/forced_clientside_labs=([\d,]+)/)) && a[1];
     return !!a && $a(a.split(','), b.toString());
 }
-
 function Dl(a, b, c) {
     a = hd(a) || a;
     var d = Jl(a);
     b && (b = id(String(b)));
     return Ob(d, (e, f) => Object.prototype.hasOwnProperty.call(d, f) && (!b || b === f) && c(e));
 }
-
 function Jl(a) {
     a = Kl(a);
     var b = {};
@@ -6025,7 +5576,6 @@ function Jl(a) {
     });
     return b;
 }
-
 function Kl(a) {
     return Q(Mg) ?
         ((a = nj({
@@ -6036,7 +5586,6 @@ function Kl(a) {
             a) :
         Ml(a.localStorage);
 }
-
 function Ml(a) {
     try {
         var b = a.getItem('google_adsense_settings');
@@ -6047,7 +5596,6 @@ function Ml(a) {
         return {};
     }
 }
-
 function Ll(a) {
     Q(Lg) &&
         uf(
@@ -6060,11 +5608,9 @@ function Ll(a) {
             0.01
         );
 }
-
 function Nl(a, b) {
     return a instanceof HTMLScriptElement && b.test(a.src) ? 0 : 1;
 }
-
 function Ol(a) {
     var b = J.document;
     if (b.currentScript) return Nl(b.currentScript, a);
@@ -6073,7 +5619,6 @@ function Ol(a) {
         if (0 === Nl(c.value, a)) return 0;
     return 1;
 }
-
 function Pl(a, b) {
     var c = {};
     var d = {};
@@ -6106,12 +5651,10 @@ function Pl(a, b) {
         f
     );
 }
-
 function Ql(a) {
     a = void 0 === a ? v : a;
     return a.ggeac || (a.ggeac = {});
 }
-
 function Rl(a, b) {
     try {
         var c = a.split('.');
@@ -6121,7 +5664,6 @@ function Rl(a, b) {
         if (typeof f === b) return f;
     } catch (g) {}
 }
-
 function Sl() {
     var a = {};
     this[Wd] =
@@ -6184,7 +5726,6 @@ function Sl() {
             a);
 }
 var Tl = [12, 13, 20];
-
 function Ul() {}
 Ul.prototype.init = function(a, b, c, d) {
     var e = this;
@@ -6209,7 +5750,6 @@ Ul.prototype.init = function(a, b, c, d) {
     this.i = c;
     return this;
 };
-
 function Vl(a, b, c) {
     var d = [];
     var e = Wl(a.l, b);
@@ -6235,13 +5775,11 @@ function Vl(a, b, c) {
     null == (l = a.i) || ze(l, b, c, d, k, 1);
     return d;
 }
-
 function Yl(a, b, c) {
     a.h[c] || (a.h[c] = []);
     a = a.h[c];
     $a(a, b) || a.push(b);
 }
-
 function Zl(a, b) {
     a.l.push(
         ...ma(
@@ -6252,7 +5790,6 @@ function Zl(a, b) {
         )
     );
 }
-
 function Xl(a, b, c, d) {
     var e = L(Ce).h;
     if (!ce(G(b, Rd, 3), e)) return null;
@@ -6298,7 +5835,6 @@ function Xl(a, b, c, d) {
     c = d.length * C(b, 1, 0);
     return (b = C(b, 4, 0)) ? bm(a, b, c, d) : am(a, d, c / 1e3);
 }
-
 function bm(a, b, c, d) {
     var e = null != a.m[b] ? a.m[b] : 1e3;
     if (0 >= e) return null;
@@ -6306,13 +5842,11 @@ function bm(a, b, c, d) {
     a.m[b] = d ? 0 : e - c;
     return d;
 }
-
 function am(a, b, c) {
     var d = a.j;
     var e = Ya(b, (f) => !!d[f.getId()]);
     return e ? e : a.D ? null : Ac(b, c);
 }
-
 function cm(a, b) {
     N(
         Ue,
@@ -6326,11 +5860,9 @@ function cm(a, b) {
     N(gf, (c) => Zl(a, c), b);
     N(Ve, (c, d) => Yl(a, c, d), b);
 }
-
 function Wl(a, b) {
     return ((a = Ya(a, (c) => c.$() == b)) && H(a, ql, 2)) || [];
 }
-
 function $l(a, b) {
     var c = H(a, ol, 2);
     var d = c.length;
@@ -6343,11 +5875,9 @@ function $l(a, b) {
     e = L(Ce).h;
     return !c || (e && !ce(G(c, Rd, 3), e)) ? null : c;
 }
-
 function dm() {
     this.h = () => {};
 }
-
 function em(a) {
     L(dm).h(a);
 }
@@ -6357,7 +5887,6 @@ var hm;
 var im;
 var jm;
 var km;
-
 function lm(a, b, c, d) {
     var e = 1;
     d = void 0 === d ? Ql() : d;
@@ -6388,7 +5917,6 @@ function lm(a, b, c, d) {
             em(L(Sl)),
             b && em(b));
 }
-
 function mm(a, b) {
     a = void 0 === a ? Ql() : a;
     b = void 0 === b ? 0 : b;
@@ -6400,7 +5928,6 @@ function mm(a, b) {
     L(dm).h = kf(jf, a);
     L(Qh).m();
 }
-
 function nm(a, b) {
     var c = L(Qh);
     c.i = (d, e) => kf($e, a, () => !1)(d, e, b);
@@ -6411,7 +5938,6 @@ function nm(a, b) {
         kf(We, a)(b);
     };
 }
-
 function om(a, b, c) {
     var d = U(a);
     if (d.plle) mm(Ql(a), 1);
@@ -6442,7 +5968,6 @@ function om(a, b, c) {
     ak(a.location, 'google_mc_lab') && L( of ).j(44738307);
 }
 }
-
 function pm(a) {
     qf.Oa((b) => {
         b.shv = String(a);
@@ -6453,7 +5978,6 @@ function pm(a) {
         b.eid = c.concat(d.eids).join(',');
     });
 }
-
 function qm(a) {
     var b = a.jb;
     return a.$a || ('dev' === b ? 'dev' : '');
@@ -6466,7 +5990,6 @@ var sm =
         (rm.google_pause_ad_requests = !0),
         (rm.google_user_agent_client_hint = !0),
         rm);
-
 function tm(a) {
     return (a = a.innerText || a.innerHTML) &&
         (a = a
@@ -6477,7 +6000,6 @@ function tm(a) {
         a[1] :
         null;
 }
-
 function um(a) {
     if ((a = a.innerText || a.innerHTML))
         if (
@@ -6487,7 +6009,6 @@ function um(a) {
             return a[1];
     return null;
 }
-
 function vm(a) {
     switch (a) {
         case 'true':
@@ -6510,7 +6031,6 @@ function vm(a) {
     }
 }
 var wm = 'undefined' === typeof sttc ? void 0 : sttc;
-
 function xm(a) {
     var b = qf;
     try {
@@ -6523,21 +6043,18 @@ function xm(a) {
     return new xl();
 }
 var ym = L(Qh).h(yh.h, yh.defaultValue);
-
 function zm() {
     var a = J.document;
     a = void 0 === a ? window.document : a;
     Rc(ym, a);
 }
 var Am = L(Qh).h(zh.h, zh.defaultValue);
-
 function Bm() {
     var a = J.document;
     a = void 0 === a ? window.document : a;
     Rc(Am, a);
 }
 var Cm = la(['https://pagead2.googlesyndication.com/pagead/js/err_rep.js']);
-
 function Dm() {
     this.h = null;
     this.j = !1;
@@ -6588,7 +6105,6 @@ aa.La = function(a, b, c, d) {
         return e.ma(a, () => b.apply(c, f), d);
     };
 };
-
 function Em(a, b, c) {
     var d = window;
     return function(...args) {
@@ -6615,21 +6131,17 @@ function Em(a, b, c) {
         return g;
     };
 }
-
 function Fm(a, b) {
     return Em(a, b, (c, d) => {
         new Dm().I(c, d);
     });
 }
-
 function Gm(a, b) {
     return null == b ? '&' + a + '=null' : '&' + a + '=' + Math.floor(b);
 }
-
 function Hm(a, b) {
     return '&' + a + '=' + b.toFixed(3);
 }
-
 function Im() {
     var a = new n.Set();
     try {
@@ -6638,12 +6150,10 @@ function Im() {
     } catch (e) {}
     return a;
 }
-
 function Jm(a) {
     a = a.id;
     return null != a && (Im().has(a) || p(a, 'startsWith').call(a, 'google_ads_iframe_') || p(a, 'startsWith').call(a, 'aswift'));
 }
-
 function Km(a, b, c) {
     if (!a.sources) return !1;
     var d = R(Dh);
@@ -6657,7 +6167,6 @@ function Km(a, b, c) {
     }
     return !1;
 }
-
 function Lm(a) {
     if (!a.sources) return 0;
     a = a.sources.filter((b) => b.previousRect && b.currentRect);
@@ -6668,22 +6177,18 @@ function Lm(a) {
     }
     return 0;
 }
-
 function Om(a) {
     return Pm(a, (b) => b.currentRect);
 }
-
 function Mm(a) {
     return Pm(a, (b) => b.previousRect);
 }
-
 function Pm(a, b) {
     return a.sources.reduce((c, d) => {
         d = b(d);
         return c ? (d && 0 !== d.width * d.height ? (d.top < c.top ? d : c) : c) : d;
     }, null);
 }
-
 function Qm() {
     fj.call(this);
     this.i = this.h = this.O = this.N = this.H = 0;
@@ -6698,7 +6203,6 @@ function Qm() {
     this.ea = () => {};
 }
 u(Qm, fj);
-
 function Rm() {
     var a = new Qm();
     if (Q(Ah) && !window.google_plmetrics && window.PerformanceObserver) {
@@ -6712,7 +6216,6 @@ function Rm() {
         Tm(a);
     }
 }
-
 function Sm(a) {
     a.l ||
         (a.l = new PerformanceObserver(
@@ -6752,7 +6255,6 @@ function Sm(a) {
         ));
     return a.l;
 }
-
 function Tm(a) {
     var b = Fm(641, () => {
         var f = document;
@@ -6782,7 +6284,6 @@ Qm.prototype.j = function() {
     fj.prototype.j.call(this);
     this.ea();
 };
-
 function Ym(a) {
     if (!a.ya) {
         a.ya = !0;
@@ -6817,14 +6318,12 @@ function Ym(a) {
         a.v || ((a.v = !0), a.j());
     }
 }
-
 function Nm(a, b, c) {
     if (0 === c) return !0;
     var d = Math.min(a.right, b.right) - Math.max(a.left, b.left);
     a = Math.min(a.bottom, b.bottom) - Math.max(a.top, b.top);
     return 0 >= d || 0 >= a ? !1 : (100 * d * a) / ((b.right - b.left) * (b.bottom - b.top)) >= c;
 }
-
 function Xm() {
     var a = [].concat(ma(document.getElementsByTagName('iframe'))).filter(Jm);
     var b = []
@@ -6838,12 +6337,10 @@ function Xm() {
 var Um = void 0;
 var Vm = void 0;
 var Wm = [];
-
 function Zm(a) {
     a = void 0 === a ? window : a;
     return !a.PeriodicSyncManager;
 }
-
 function $m() {
     var a = void 0 === a ? window : a;
     if ((!Zm(a) && Q(Hh)) || (Zm(a) && Q(Ih))) {
@@ -6877,7 +6374,6 @@ var Y = {
     }
 };
 var an = L(Qh).h(Nh.h, Nh.defaultValue);
-
 function bn(a) {
     a = void 0 === a ? !1 : a;
     fj.call(this);
@@ -6900,26 +6396,21 @@ function bn(a) {
     }
 }
 u(bn, fj);
-
 function cn() {
     var a = void 0 === a ? window.document : a;
     Rc(an, a);
 }
-
 function dn(a, b) {
     return Q(Lh) || (a && (Q(Oh) || '.google.de' != b)) || '.google.ch' === b || 'function' === typeof J.__tcfapi;
 }
-
 function Z(a, b, c) {
     var d = p(window.goog_tt_state, 'find').call(window.goog_tt_state, (e) => e.issuerOrigin === a);
     d && ((d.state = b), void 0 != c && (d.hasRedemptionRecord = c));
 }
-
 function en() {
     var a = window.goog_tt_state;
     return Array.isArray(a) && a.some((b) => 1 != b.state);
 }
-
 function fn() {
     var a = X.issuerOrigin + X.redemptionPath;
     var b = {
@@ -6941,7 +6432,6 @@ function fn() {
             c && 'NoModificationAllowedError' === c.name ? Z(X.issuerOrigin, 6, !0) : Z(X.issuerOrigin, 5);
         });
 }
-
 function gn() {
     var a = X.issuerOrigin + X.issuancePath;
     Z(X.issuerOrigin, 8);
@@ -6962,12 +6452,10 @@ function gn() {
             Z(X.issuerOrigin, 9);
         });
 }
-
 function hn() {
     Z(X.issuerOrigin, 13);
     return document.hasTrustToken(X.issuerOrigin).then((a) => (a ? fn() : gn()));
 }
-
 function jn() {
     Z(Y.issuerOrigin, 13);
     if (n.Promise) {
@@ -7112,7 +6600,6 @@ function jn() {
             });
     }
 }
-
 function kn(a) {
     if (document.hasTrustToken && !Q(Jh) && a.h) {
         if (en()) return window.goog_tt_promise;
@@ -7133,7 +6620,6 @@ function kn(a) {
     }
 }
 var ln = 'platform platformVersion architecture model uaFullVersion bitness'.split(' ');
-
 function mn() {
     return J.navigator && J.navigator.userAgentData && 'function' === typeof J.navigator.userAgentData.getHighEntropyValues ?
         J.navigator.userAgentData.getHighEntropyValues(ln).then((a) => {
@@ -7147,11 +6633,9 @@ function mn() {
         }) :
         null;
 }
-
 function nn(a, b) {
     b.google_ad_host || ((a = a.document.querySelector('meta[name="google-adsense-platform-account"]')) && (b.google_ad_host = a.getAttribute('content')));
 }
-
 function on(a, b, c) {
     c = void 0 === c ? '' : c;
     J.google_sa_impl && !J.document.getElementById('google_shimpl') && ((J.google_sa_queue = null), (J.google_sl_win = null), (J.google_sa_impl = null));
@@ -7162,7 +6646,6 @@ function on(a, b, c) {
             (a = qn(c, a, b)),
             (xc(J.document, a).id = 'google_shimpl'));
 }
-
 function pn(a) {
     var b = a.google_sa_queue;
     var c = b.shift();
@@ -7177,12 +6660,10 @@ function pn(a) {
             0
         );
 }
-
 function rn(a, b, c) {
     a.google_sa_queue = a.google_sa_queue || [];
     a.google_sa_impl ? c(b) : a.google_sa_queue.push(b);
 }
-
 function qn(a, b, c) {
     var d = Math.random() < R(lh) ? Wb(gc(b.lb).toString()) : null;
     b = D(c, 4) ? b.kb : b.mb;
@@ -7234,13 +6715,11 @@ function qn(a, b, c) {
     );
     return Tb(d, b);
 }
-
 function tn(a, b) {
     Ec(a, (c, d) => {
         void 0 === b[d] && (b[d] = c);
     });
 }
-
 function sn() {
     if (J.google_ad_client) return J.google_ad_client;
     var a = U(J).head_tag_slot_vars;
@@ -7273,7 +6752,6 @@ function sn() {
     } else a = '';
     return a ? a : '';
 }
-
 function un(a) {
     a: {
         for (var b = [v.top], c = [], d = 0, e;
@@ -7308,7 +6786,6 @@ function un(a) {
     c.style.display = 'none';
     return c;
 }
-
 function vn(a, b, c, d) {
     wn(a, b, c, d, (e, f) => {
         e = e.document;
@@ -7329,7 +6806,6 @@ function vn(a, b, c, d) {
         return e;
     });
 }
-
 function wn(a, b, c, d, e) {
     var f = e(a, b);
     xn(a, c, b);
@@ -7359,7 +6835,6 @@ function wn(a, b, c, d, e) {
         c
     );
 }
-
 function xn(a, b, c) {
     var d = c.google_ad_output;
     var e = c.google_ad_format;
@@ -7425,7 +6900,6 @@ function xn(a, b, c) {
         c.google_ad_dom_fingerprint = Fc(h + b.join()).toString();
     }
 }
-
 function yn() {
     var a = hd(v);
     a &&
@@ -7436,7 +6910,6 @@ function yn() {
                 debugCardRequested: !1
             }));
 }
-
 function zn(a) {
     cn();
     dn(Al(), Eb(a, 8)) ||
@@ -7452,7 +6925,6 @@ function zn(a) {
     Bm();
     zm();
 }
-
 function An(a, b) {
     switch (a) {
         case 'google_reactive_ad_format':
@@ -7463,7 +6935,6 @@ function An(a, b) {
             return b;
     }
 }
-
 function Bn(a, b) {
     if (a.getAttribute('src')) {
         var c = a.getAttribute('src') || '';
@@ -7479,7 +6950,6 @@ function Bn(a, b) {
         }
     }
 }
-
 function Cn(a) {
     if ((a = Wc(a)))
         switch (a.data && a.data.autoFormat) {
@@ -7492,7 +6962,6 @@ function Cn(a) {
         }
     else return 12;
 }
-
 function Dn(a, b, c, d) {
     Bn(a, b);
     if (c.document && c.document.body && !Yk(c, b) && !b.google_reactive_ad_format) {
@@ -7593,7 +7062,6 @@ function Dn(a, b, c, d) {
                 !0 !== a ? ((b.efwr = !1), (b.gfwrnwer = a)) : (b.efwr = !0));
     }
 }
-
 function En(a) {
     var b = window;
     var c = void 0 === c ? null : c;
@@ -7605,7 +7073,6 @@ function En(a) {
         }!e || 'sc-cnf' !== e.googMsgType || (c && /[:|%3A]javascript\(/i.test(d.data) && !c(e, d)) || a(e, d);
     });
 }
-
 function Fn(a, b) {
     b = void 0 === b ? 500 : b;
     fj.call(this);
@@ -7624,7 +7091,6 @@ Fn.prototype.j = function() {
     delete this.h;
     fj.prototype.j.call(this);
 };
-
 function Gn(a) {
     fj.call(this);
     this.h = a;
@@ -7636,16 +7102,13 @@ var Hn = null;
 var In = [];
 var Jn = new n.Map();
 var Kn = -1;
-
 function Ln(a) {
     return pi.test(a.className) && 'done' != a.dataset.adsbygoogleStatus;
 }
-
 function Mn(a, b, c) {
     a.dataset.adsbygoogleStatus = 'done';
     Nn(a, b, c);
 }
-
 function Nn(a, b, c) {
     var d = window;
     var e = fd();
@@ -7677,7 +7140,6 @@ function Nn(a, b, c) {
         });
     }
 }
-
 function On(a, b, c) {
     var d = b.google_reactive_ads_config;
     var e = 'string' === typeof a.className && RegExp('(\\W|^)adsbygoogle-noablate(\\W|$)').test(a.className);
@@ -7714,7 +7176,6 @@ function On(a, b, c) {
             ),
             !0);
 }
-
 function Pn(a) {
     var b = document.getElementsByTagName('INS');
     for (var c = 0, d = b[c]; c < b.length; d = b[++c]) {
@@ -7723,7 +7184,6 @@ function Pn(a) {
     }
     return null;
 }
-
 function Qn(a, b, c) {
     if (a && a.shift)
         for (var d = 20; 0 < a.length && 0 < d;) {
@@ -7737,7 +7197,6 @@ function Qn(a, b, c) {
             --d;
         }
 }
-
 function Sn() {
     var a = yc('INS');
     a.className = 'adsbygoogle';
@@ -7745,7 +7204,6 @@ function Sn() {
     Oc(a);
     return a;
 }
-
 function Tn(a, b) {
     var c = {};
     Ec(xf, (f, g) => {
@@ -7759,7 +7217,6 @@ function Tn(a, b) {
     e.google_pause_ad_requests = !!U(J).pause_ad_requests;
     Mn(d, e, b);
 }
-
 function Un(a, b) {
     function c() {
         return Tn(a, b);
@@ -7778,7 +7235,6 @@ function Un(a, b) {
         });
     }
 }
-
 function Rn(a, b, c) {
     var d = {};
     sf(
@@ -7793,14 +7249,12 @@ function Rn(a, b, c) {
         }
     );
 }
-
 function Wn(a) {
     delete a.google_checked_head;
     Ec(a, (b, c) => {
         oi[c] || (delete a[c], v.console.warn("AdSense head tag doesn't support " + c.replace('google', 'data').replace(/_/g, '-') + ' attribute.'));
     });
 }
-
 function Xn(a, b) {
     var c =
         J.document.querySelector('script[src*="/pagead/js/adsbygoogle.js?client="]:not([data-checked-head])') ||
@@ -7835,7 +7289,6 @@ function Xn(a, b) {
             });
     }
 }
-
 function Yn(a) {
     var b = U(window).head_tag_slot_vars;
     var c = a.getAttribute('src') || '';
@@ -7847,7 +7300,6 @@ function Yn(a) {
             b.google_ad_client
         );
 }
-
 function $n(a) {
     if ('object' === typeof a && null != a) {
         if ('string' === typeof a.type) return 2;
@@ -7855,7 +7307,6 @@ function $n(a) {
     }
     return 0;
 }
-
 function Vn(a, b, c, d) {
     if (null == a) throw new K('push() called with no parameters.');
     14 === xb(d, yl) && ao(a, sb(Gb(d, ml, 14, yl), 1), Eb(d, 2));
@@ -7919,7 +7370,6 @@ function Vn(a, b, c, d) {
     }
 }
 var io = !1;
-
 function ao(a, b, c) {
     Q(hh) &&
         !io &&
@@ -7934,11 +7384,9 @@ function ao(a, b, c) {
                 0.01
             ));
 }
-
 function co(a) {
     return a.google_ad_client ? a.google_ad_client : (a = a.params) && a.google_ad_client ? a.google_ad_client : '';
 }
-
 function eo() {
     if (Q(ch)) {
         var a = Vj(J);
@@ -7954,13 +7402,11 @@ function eo() {
         a || Xj(J, 1);
     }
 }
-
 function ho(a) {
     Tc(() => {
         Af(v).wasPlaTagProcessed || (v.adsbygoogle && v.adsbygoogle.push(a));
     });
 }
-
 function fo(a, b, c) {
     U(J).skip_next_reactive_tag ?
         (U(J).skip_next_reactive_tag = !1) :
@@ -7970,7 +7416,6 @@ function fo(a, b, c) {
             U(J).ama_ran_on_page || kk(new jk(a, c)),
             Un(a, b));
 }
-
 function go(a) {
     if (a) {
         if (!Ln(a) && (a.id ? (a = Pn(a.id)) : (a = null), !a)) throw new K("'element' has already been filled.");
@@ -7978,7 +7423,6 @@ function go(a) {
     } else if (((a = Pn()), !a)) throw new K('All ins elements in the DOM with class=adsbygoogle already have ads in them.');
     return a;
 }
-
 function jo() {
     var a = new hj(J);
     var b = new Fn(J);
@@ -8001,7 +7445,6 @@ function jo() {
         R(Ng)
     );
 }
-
 function ko(a) {
     a = {
         value: D(a, 16)
@@ -8011,11 +7454,9 @@ function ko(a) {
     a.frequency = b;
     uf('new_abg_tag', a, b);
 }
-
 function lo(a) {
     Xi().S[Zi(26)] = !!Number(a);
 }
-
 function mo(a) {
     Number(a) ?
         (U(J).pause_ad_requests = !0) :
@@ -8057,7 +7498,6 @@ function mo(a) {
             v.setTimeout(a, 0),
             v.setTimeout(a, 1e3));
 }
-
 function no(a) {
     uf(
         'adsenseGfpKnob', {
@@ -8079,11 +7519,9 @@ function no(a) {
     }
     J._gfp_a_ = a;
 }
-
 function oo(a) {
     ad(a) && window.setTimeout(a, 0);
 }
-
 function Zn(a, b) {
     ((ba = fk(
                 Tb(
@@ -8106,7 +7544,6 @@ function Zn(a, b) {
         });
     });
 }
-
 function po() {
     for (var a = q(p(Jn, 'keys').call(Jn)), b = a.next(); !b.done; b = a.next()) {
         b = b.value;
@@ -8131,7 +7568,6 @@ function po() {
                 })(a)
             ));
 }
-
 function bo(a) {
     var b = In.length;
     if (2 === $n(a) && 'preroll' === a.type && null != a.adBreakDone) {
@@ -9349,7 +8785,6 @@ SPDX-License-Identifier: Apache-2.0
             }
             Gb = '';
         }
-
         function Lb(a) {
             return -1 != Gb.indexOf(a);
         }
@@ -10011,7 +9446,6 @@ jQuery (c) 2005, 2012 jQuery Foundation, Inc. jquery.org/license. */
         for (var b, c = 0; c < arguments.length; c++) b = B(this, arguments[c]);
         return b;
     };
-
     function ed(a, b, c, d) {
         for (var e = 0; e < b(); e++) {
             var f = a(c(e));
@@ -10022,7 +9456,6 @@ jQuery (c) 2005, 2012 jQuery Foundation, Inc. jquery.org/license. */
             }
         }
     }
-
     function fd(a, b, c) {
         if ('string' === typeof b)
             return ed(
@@ -10130,7 +9563,6 @@ jQuery (c) 2005, 2012 jQuery Foundation, Inc. jquery.org/license. */
             c
         );
     };
-
     function jd(a, b, c) {
         if ('string' === typeof b)
             return ed(
@@ -10405,7 +9837,6 @@ jQuery (c) 2005, 2012 jQuery Foundation, Inc. jquery.org/license. */
         c(62, je);
         c(59, ke);
     };
-
     function ne(a) {
         if (
             a instanceof pa ||
@@ -10578,7 +10009,6 @@ var hf = function(a, b, c) {
     this.g = c;
 };
 la(hf, Error);
-
 function jf(a, b) {
     if (Ia(a)) {
         Object.defineProperty(a, 'context', {
@@ -10604,7 +10034,6 @@ var mf = () => (a, b) => {
     b && a.g.push(b);
     throw a;
 };
-
 function lf(a) {
     if (!a.length) return a;
     a.push({
@@ -10664,7 +10093,6 @@ var qf = {
 var rf = function() {
     this.g = {};
 };
-
 function sf(a, b, c, d) {
     if (a)
         for (var e = 0; e < a.length; e++) {
@@ -10678,7 +10106,6 @@ function sf(a, b, c, d) {
             if (!f) throw new hf(c, d, g);
         }
 }
-
 function tf(a, b, c) {
     return function(...args) {
         var d = args[0];
@@ -10721,7 +10148,6 @@ var wf = function() {
     });
 };
 var yf = (a) => xf.g[a] || (() => {});
-
 function uf(a, b) {
     var c = cf(a, b);
     c.vtp_permissionName = a;
@@ -10740,7 +10166,6 @@ function uf(a, b) {
         };
     }
 }
-
 function vf(a, b, c) {
     return new hf(a, b, c);
 }
@@ -10940,11 +10365,9 @@ var Q = (a, b, c) => {
         }
     }
 };
-
 function fg(a) {
     return '' + a;
 }
-
 function gg(a, b) {
     var c = [];
     return c;
@@ -10980,7 +10403,6 @@ var kg = function(a, b) {
     var d = new sb();
     return (d = ig('AssertThatSubject', c));
 };
-
 function lg(a) {
     return function(...args) {
         for (var b = [], c = this.g, d = 0; d < args.length; ++d) b.push(Ic(args[d], c));
@@ -11038,7 +10460,6 @@ wg.sstEnableAuid = !0;
 wg.enableGbraidUpdate = !0;
 wg.requireGtagUserDataTos = !0;
 wg.enableGlobalEventDeveloperIds = !1;
-
 function xg() {
     return Hc(wg);
 }
@@ -11126,12 +10547,10 @@ var Lg = (a, b, c) => {
     if (a.g.hasOwnProperty(b)) throw 'Attempting to add a private function with an existing API name: ' + b + '.';
     a.o[b] = Ea(c) ? hg(b, c) : ig(b, c);
 };
-
 function Kg(a, b) {
     var c = void 0;
     return c;
 }
-
 function Mg() {
     var a = {};
     return a;
@@ -11625,7 +11044,6 @@ var Kh = function() {
 };
 var Oh = (a) => Nh().o(a.g, a.defaultValue);
 var Ph = [];
-
 function Qh() {
     var a = Yb('google_tag_data', {});
     a.ics ||
@@ -11640,7 +11058,6 @@ function Qh() {
         });
     return a.ics;
 }
-
 function Rh(a, b, c, d, e, f) {
     var g = Qh();
     g.active = !0;
@@ -11668,7 +11085,6 @@ function Rh(a, b, c, d, e, f) {
         }
     }
 }
-
 function Sh(a, b) {
     var c = Qh();
     c.active = !0;
@@ -11681,21 +11097,18 @@ function Sh(a, b) {
         f.quiet ? ((f.quiet = !1), Vh(a)) : g !== d && Vh(a);
     }
 }
-
 function Th(a, b) {
     Ph.push({
         Ve: a,
         $i: b
     });
 }
-
 function Vh(a) {
     for (var b = 0; b < Ph.length; ++b) {
         var c = Ph[b];
         Ia(c.Ve) && -1 !== c.Ve.indexOf(a) && (c.dh = !0);
     }
 }
-
 function Uh(a) {
     for (var b = 0; b < Ph.length; ++b) {
         var c = Ph[b];
@@ -11752,11 +11165,8 @@ var di = (a, b) => {
             0 < g.length && ((f.Ve = g), a(f));
         });
 };
-
 function ei() {}
-
 function fi() {}
-
 function gi(a) {
     for (var b = [], c = 0; c < hi.length; c++) {
         var d = a(hi[c]);
@@ -11954,7 +11364,6 @@ var Mi = (a, b) => {
                 });
         }
     }
-
     function d(n, p, r, t) {
         var u = wi(n[p]);
         '' !== u &&
@@ -11964,7 +11373,6 @@ var Mi = (a, b) => {
                 index: t
             });
     }
-
     function e(n) {
         return (p) => {
             Ug(64);
@@ -12131,7 +11539,6 @@ var bj = (a) => {
 };
 var cj;
 var dj = !1;
-
 function ej() {
     dj = !0;
     cj = cj || {};
@@ -12286,7 +11693,6 @@ var wj = (a) => {
         var p = n.split('=')[0];
         return 0 > d.indexOf(p) ? n : p + '=0';
     }
-
     function c(n) {
         return n
             .split('&')
@@ -12594,7 +12000,6 @@ var Tj = (a, b, c) => {
     }
     return d;
 };
-
 function Uj(a) {
     return 'null' !== a.origin;
 }
@@ -12611,7 +12016,6 @@ var ak = (a, b, c, d, e) => {
         }
     }
 };
-
 function bk(a, b, c, d) {
     var e = Wj();
     var f = window;
@@ -12625,7 +12029,6 @@ var fk = (a, b, c, d) => {
         h[y] = x;
         return w + '; ' + y + '=' + x;
     }
-
     function f(w, y) {
         if (null == y) return delete h[y], w;
         h[y] = !0;
@@ -12670,7 +12073,6 @@ var gk = (a, b, c) => {
     c.domain || (c.domain = 'auto');
     return fk(a, b, c);
 };
-
 function Zj(a, b, c) {
     for (var d = [], e = [], f, g = 0; g < a.length; g++) {
         var h = a[g];
@@ -12679,7 +12081,6 @@ function Zj(a, b, c) {
     }
     return 0 < d.length ? d : e;
 }
-
 function Yj(a, b, c) {
     for (var d = [], e = Xj(a, void 0, void 0, c), f = 0; f < e.length; f++) {
         var g = e[f].split('.');
@@ -12750,7 +12151,6 @@ var lk = (a) => {
     '/' !== a[a.length - 1] && (a += '/');
     return a.split('/').length - 1;
 };
-
 function ok(a, b, c) {
     var d;
     var e = Number(null != a.mb ? a.mb : void 0);
@@ -12781,7 +12181,6 @@ var tk = (a, b) => {
         sk(c, a.path, a.domain);
     }
 };
-
 function sk(a, b, c) {
     var d = mk(a, b, c, pk, 'ad_storage');
     if (!d) return !1;
@@ -12789,7 +12188,6 @@ function sk(a, b, c) {
     5 === e.length ? ((qk[a] = e.slice(0, 2).join('.')), e.slice(2, 4).join('.')) : 3 === e.length ? e.slice(0, 2).join('.') : (qk[a] = d);
     return !0;
 }
-
 function rk(a) {
     return (a || '_gcl') + '_au';
 }
@@ -12806,7 +12204,6 @@ var uk = (a) => {
     b.sort((g, h) => h.timestamp - g.timestamp);
     return b;
 };
-
 function vk(a, b) {
     var c = uk(a);
     var d = {};
@@ -12826,12 +12223,10 @@ function vk(a, b) {
     }
     return d;
 }
-
 function wk() {
     for (var a = xk, b = {}, c = 0; c < a.length; ++c) b[a[c]] = c;
     return b;
 }
-
 function yk() {
     var a = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     a += a.toLowerCase() + '0123456789-_';
@@ -12839,7 +12234,6 @@ function yk() {
 }
 var xk;
 var zk;
-
 function Ak(a) {
     xk = xk || yk();
     zk = zk || wk();
@@ -12858,7 +12252,6 @@ function Ak(a) {
     }
     return b.join('');
 }
-
 function Bk(a) {
     function b(k) {
         for (; d < a.length;) {
@@ -12952,7 +12345,6 @@ var Kk = (a, b, c) => {
     }
     return e;
 };
-
 function Hk() {
     var a = Yb('google_tag_data', {});
     var b = a.gl;
@@ -12968,7 +12360,6 @@ var Mk = /^https?:\/\/([^\/]*?)\.?cdn\.ampproject\.org\/?(.*)/;
 var Nk = /^(?:www\.|m\.|amp\.)+/;
 var Ok = /\*?xp_[0-3]\*?/;
 var Pk = /([^?#]+)(\?[^#]*)?(#.*)?/;
-
 function Qk(a) {
     return new RegExp('(.*?)(^|&)' + a + '=([^&]*)&?(.*)');
 }
@@ -12988,7 +12379,6 @@ var Tk = (a, b) => {
     }
     return ['1', Sk(f), f].join('*');
 };
-
 function Sk(a, b) {
     var c = [
         m.navigator.userAgent,
@@ -13011,23 +12401,18 @@ function Sk(a, b) {
 }
 var Uk = {};
 var Rk = ((Uk[0] = () => 'BASELINE'), (Uk[1] = Vk), (Uk[2] = Wk), (Uk[3] = Xk), Uk);
-
 function Vk() {
     return 'CHECKSUM_EXP_DISABLED';
 }
-
 function Wk() {
     return 'CHECKSUM_EXP_DISABLED';
 }
-
 function Yk() {
     Wb.userAgentData && Wb.userAgentData.getHighEntropyValues(['architecture', 'model', 'bitness', 'platformVersion', 'uaFullVersion']).then(() => {});
 }
-
 function Xk() {
     return 'CHECKSUM_EXP_DISABLED';
 }
-
 function Zk() {
     return (a) => {
         var b = vj(m.location.href);
@@ -13121,7 +12506,6 @@ var $k = (a) => {
         }
     } catch (O) {}
 };
-
 function bl(a, b, c, d) {
     function e(p) {
         var r = p;
@@ -13148,7 +12532,6 @@ function bl(a, b, c, d) {
     d ? (k = '#' + e(k.substring(1))) : (h = '?' + e(h.substring(1)));
     return '' + g + h + k;
 }
-
 function cl(a, b) {
     var c = 'FORM' === (a.tagName || '').toUpperCase();
     var d = Kk(b, 1, c);
@@ -13182,14 +12565,12 @@ function cl(a, b) {
                 'string' == typeof t && bl(p, r, t, void 0);
             }
 }
-
 function el(a, b, c, d) {
     if (c.href) {
         var e = bl(a, b, c.href, void 0 === d ? !1 : d);
         Fb.test(e) && (c.href = e);
     }
 }
-
 function dl(a, b, c) {
     if (c && c.action) {
         var d = (c.method || '').toLowerCase();
@@ -13215,7 +12596,6 @@ function dl(a, b, c) {
         }
     }
 }
-
 function Fk(a) {
     try {
         var b;
@@ -13237,7 +12617,6 @@ function Fk(a) {
         }
     } catch (g) {}
 }
-
 function Gk(a) {
     try {
         if (a.action) {
@@ -13348,13 +12727,11 @@ var pl = (a) => {
     b.sort((r, t) => t.timestamp - r.timestamp);
     return tl(b);
 };
-
 function sl(a, b) {
     for (var c = {}, d = [], e = 0; e < a.length; e++)(c[a[e]] = !0), d.push(a[e]);
     for (var f = 0; f < b.length; f++) c[b[f]] || d.push(b[f]);
     return d;
 }
-
 function ul(a) {
     return a && 'string' == typeof a && a.match(kl) ? a : '_gcl';
 }
@@ -13412,7 +12789,6 @@ var yl = (a) => {
         xl(b, !1, a);
     });
 };
-
 function xl(a, b, c, d, e) {
     function f(w, y) {
         var x = zl(w, g);
@@ -13482,7 +12858,6 @@ var zl = (a, b) => {
     if (void 0 !== c) return b + c;
 };
 var Al = (a) => (0 !== Cl(a.split('.')).length ? 1e3 * (Number(a.split('.')[1]) || 0) : 0);
-
 function rl(a) {
     var b = Cl(a.split('.'));
     return 0 === b.length ?
@@ -13493,7 +12868,6 @@ function rl(a) {
             labels: b.slice(3)
         };
 }
-
 function Cl(a) {
     return 3 > a.length || ('GCL' !== a[0] && '1' !== a[0]) || !/^\d+$/.test(a[1]) || !ll.test(a[2]) ? [] : a;
 }
@@ -13537,7 +12911,6 @@ var El = (a, b) => {
         });
     }
 };
-
 function Fl(a, b) {
     for (var c = 0; c < b.length; ++c)
         if (a[b[c]]) return !0;
@@ -13563,7 +12936,6 @@ var Gl = (a) => {
         }
     }
 };
-
 function Hl(a, b) {
     var c = ul(b);
     var d = zl(a, c);
@@ -13571,7 +12943,6 @@ function Hl(a, b) {
     for (var e = pl(d), f = 0, g = 0; g < e.length; g++) f = Math.max(f, e[g].timestamp);
     return f;
 }
-
 function Il(a) {
     var b = 0;
     var c;
@@ -13582,7 +12953,6 @@ function Il(a) {
 var dm = !1;
 var em = 0;
 var fm = [];
-
 function gm(a) {
     if (!dm) {
         var b = H.createEventObject;
@@ -13598,7 +12968,6 @@ function gm(a) {
         };
     }
 }
-
 function hm() {
     if (!dm && 140 > em) {
         em++;
@@ -13700,7 +13069,6 @@ var sm = () => {
 var tm = {};
 var um = () => m.GoogleAnalyticsObject && m[m.GoogleAnalyticsObject];
 var vm = !1;
-
 function zm() {
     return m.GoogleAnalyticsObject || 'ga';
 }
@@ -13837,7 +13205,6 @@ var An = (a, b, c) => {
     }
 };
 var Bn = (a, b, c) => {};
-
 function Cn(a, b, c, d) {
     var e = Xe[a];
     var f = Dn(a, b, c, d);
@@ -13857,7 +13224,6 @@ function Cn(a, b, c, d) {
     }
     return f;
 }
-
 function Dn(a, b, c, d) {
     function e() {
         if (f[pe.si]) h();
@@ -13948,7 +13314,6 @@ function Dn(a, b, c, d) {
     }
     return e;
 }
-
 function En(a, b, c) {
     var d = [];
     var e = [];
@@ -13964,7 +13329,6 @@ function En(a, b, c) {
         }
     };
 }
-
 function Fn(a, b, c) {
     return (d, e) => {
         a.push(d);
@@ -13972,11 +13336,9 @@ function Fn(a, b, c) {
         c();
     };
 }
-
 function Gn(a) {
     a();
 }
-
 function Hn(a, b) {
     b();
 }
@@ -14019,7 +13381,6 @@ var Kn = (a, b) => {
     for (var u = 0; u < c.length; u++) c[u].execute();
     return 0 < c.length;
 };
-
 function Jn(a, b) {
     var c;
     var d = b.eh;
@@ -14034,7 +13395,6 @@ function Jn(a, b) {
     }
     return f;
 }
-
 function In(a, b) {
     if (!nn) return;
     var c = (d) => {
@@ -14086,20 +13446,17 @@ var Rn = (a) => {
     ('gtm.js' !== d && 'gtm.sync' !== d) || Am(J.J);
     return Qn(t, u);
 };
-
 function Mn(a) {
     return (b) => {
         nn && (Kc(b) || Bn(a, 'input', b));
     };
 }
-
 function On(a, b) {
     uh(a, 'event', 1);
     uh(a, 'ecommerce', 1);
     uh(a, 'gtm');
     uh(a, 'eventModel');
 }
-
 function Nn() {
     var a = {};
     a.event = th('event', 1);
@@ -14108,19 +13465,16 @@ function Nn() {
     a.eventModel = th('eventModel');
     return a;
 }
-
 function Pn(a) {
     for (var b = [], c = 0; c < a.length; c++) a[c] && Xg[String(Xe[c][pe.zb])] && (b[c] = !0);
     return b;
 }
-
 function Qn(a, b) {
     if (!b) return b;
     for (var c = 0; c < a.length; c++)
         if (a[c] && Xe[c] && !Yg[String(Xe[c][pe.zb])]) return !0;
     return !1;
 }
-
 function Sn(a, b) {
     if (a) {
         var c = '' + a;
@@ -14129,16 +13483,13 @@ function Sn(a, b) {
         return vj('' + c + b).href;
     }
 }
-
 function Tn(a, b) {
     return Un() ? Sn(a, b) : void 0;
 }
-
 function Un() {
     var a = !1;
     return a;
 }
-
 function Vn() {
     return !!J.zd && 'SGTM_TOKEN' !== J.zd.replaceAll('@@', '');
 }
@@ -14177,7 +13528,6 @@ var $n = (a) => {
     } else f = '';
     return f + d + J.yd + e;
 };
-
 function ao(a, b) {
     if ('' === a) return b;
     var c = Number(a);
@@ -14186,7 +13536,6 @@ function ao(a, b) {
 var bo = (a, b) => {
     a.addEventListener && a.addEventListener.call(a, 'message', b, !1);
 };
-
 function co() {
     return Lb('iPhone') && !Lb('iPod') && !Lb('iPad');
 }
@@ -14381,7 +13730,6 @@ var ro = {
 };
 var so = ao('', 550);
 var to = ao('', 500);
-
 function uo() {
     var a = Vg.tcf || {};
     return (Vg.tcf = a);
@@ -14461,13 +13809,11 @@ var Do = () => {
         }
     }
 };
-
 function Ao(a) {
     a.type = 'e';
     a.tcString = 'tcunavailable';
     qo && (a.Tc = Co());
 }
-
 function zo() {
     var a = {};
     var b = ((a.ad_storage = 'denied'), (a.wait_for_update = so), a);
@@ -14478,14 +13824,12 @@ var yo = () => {
     a = !0;
     return a;
 };
-
 function Co() {
     var a = {};
     var b;
     for (b in ro) ro.hasOwnProperty(b) && (a[b] = !0);
     return a;
 }
-
 function Bo(a) {
     var b = {};
     var c = ((b.ad_storage = a.Tc['1'] ? 'granted' : 'denied'), b);
@@ -14560,7 +13904,6 @@ var bp = (a) => {
     });
     return e;
 };
-
 function ap(a) {
     var b = [];
     var c;
@@ -14610,7 +13953,6 @@ var uq = () => {
 };
 var pr = !1;
 pr = !0;
-
 function qr() {
     var a = Vg;
     return (a.gcq = a.gcq || new rr());
@@ -14864,7 +14206,6 @@ Ir = !0;
 var Jr = !1;
 var Kr = !1;
 var Lr = 0;
-
 function Mr(a, b) {
     var c = {
         event: a
@@ -14872,7 +14213,6 @@ function Mr(a, b) {
     b && ((c.eventModel = Gc(b)), b[R.Rb] && (c.eventCallback = b[R.Rb]), b[R.hd] && (c.eventTimeout = b[R.hd]));
     return c;
 }
-
 function Nr(a) {
     a.hasOwnProperty('gtm.uniqueEventId') ||
         Object.defineProperty(a, 'gtm.uniqueEventId', {
@@ -14880,7 +14220,6 @@ function Nr(a) {
         });
     return a['gtm.uniqueEventId'];
 }
-
 function Or() {
     if (!Jr && !Vg.gtagRegistered) {
         Jr = Vg.gtagRegistered = !0;
@@ -15056,7 +14395,6 @@ var Sr = (a) => {
 };
 var Tr = !1;
 var Ur = [];
-
 function Vr() {
     if (!Tr) {
         Tr = !0;
@@ -15099,7 +14437,6 @@ var ss = (a, b) => {
         ++e === d && (g && (m.clearTimeout(g), (g = void 0)), f || (a(), (f = !0)));
     };
 };
-
 function ts(a) {
     var b = a._clear;
     Oa(a, (d, e) => {
@@ -15111,7 +14448,6 @@ function ts(a) {
     c || ((c = hh()), (a['gtm.uniqueEventId'] = c), rh('gtm.uniqueEventId', c));
     return Rn(a);
 }
-
 function us() {
     var a = ns[0];
     if (null == a || 'object' !== typeof a) return !1;
@@ -15122,7 +14458,6 @@ function us() {
     }
     return !1;
 }
-
 function vs() {
     for (var a = !1; !ps && 0 < ns.length;) {
         if (!os && us()) {
@@ -15191,7 +14526,6 @@ function vs() {
     }
     return !a;
 }
-
 function ws() {
     var b = vs();
     try {
@@ -15247,7 +14581,6 @@ var xs = () => {
     var a = !0;
     return a;
 };
-
 function zs(a) {
     if (null == a || 0 === a.length) return !1;
     var b = Number(a);
@@ -15403,7 +14736,6 @@ var qt = (a) => {
 var rt = (a, b, c) => {
     nn && (Kc(a) || Bn(c, b, a));
 };
-
 function Pt(a, b) {
     a = String(a);
     b = String(b);
@@ -15411,7 +14743,6 @@ function Pt(a, b) {
     return 0 <= c && a.indexOf(b, c) == c;
 }
 var Qt = new La();
-
 function Rt(a, b, c) {
     var d = c ? 'i' : void 0;
     try {
@@ -15423,7 +14754,6 @@ function Rt(a, b, c) {
         return !1;
     }
 }
-
 function St(a, b) {
     function c(g) {
         var h = vj(g);
@@ -15438,11 +14768,9 @@ function St(a, b) {
         if (d[f] !== e[f]) return !1;
     return !0;
 }
-
 function Tt(a) {
     return Ut(a) ? 1 : 0;
 }
-
 function Ut(a) {
     var b = a.arg0;
     var c = a.arg1;
@@ -15501,74 +14829,54 @@ function Ut(a) {
     }
     return !1;
 }
-
 function Vt(a, b) {
     var c = this;
 }
-
 function Wt(a, b, c) {}
-
 function Xt(a, b, c, d) {}
-
 function Yt(a) {}
-
 function bu(a) {}
 var cu = {};
 var du = [];
 var eu = {};
 var fu = 0;
 var gu = 0;
-
 function nu(a, b) {}
-
 function uu(a, b) {}
-
 function zu(a) {}
 var Au = {};
 var Bu = [];
 var Iu = (a, b) => {};
-
 function Pu(a, b) {}
 var Qu = /^\s*$/;
 var Ru;
 var Su = !1;
-
 function cv(a, b) {}
-
 function dv(a, b, c) {}
 var ev = ['www.youtube.com', 'www.youtube-nocookie.com'];
 var fv;
 var gv = !1;
 var hv = 0;
-
 function rv(a, b) {}
-
 function sv(a, b) {
     return !0;
 }
-
 function tv(a, b, c) {}
-
 function uv(a, b) {
     var c;
     return c;
 }
-
 function vv(a) {}
-
 function wv(a) {}
-
 function xv(a) {
     Q(G(this), ['listener:!Fn'], arguments);
     ug(this, 'process_dom_events', 'window', 'load');
     Wr(Ic(a));
 }
-
 function yv(a) {
     var b;
     return b;
 }
-
 function zv(a, b) {
     var c;
     var d = !1;
@@ -15576,33 +14884,27 @@ function zv(a, b) {
     void 0 === e && void 0 !== c && Ug(45);
     return e;
 }
-
 function Av(a) {
     var b;
     return b;
 }
-
 function Bv(a, b) {
     var c = null;
     var d = !1;
     return Hc(c, this.g, d);
 }
-
 function Cv(a) {
     var b;
     var g = !1;
     return Hc(b, this.g, g);
 }
-
 function Hv(a, b) {
     return b;
 }
-
 function Iv(a) {
     return !1;
 }
 var Jv;
-
 function Kv(a) {
     var b = !1;
     return b;
@@ -15611,61 +14913,49 @@ var Lv = (a) => {
     var b;
     return b;
 };
-
 function Mv(a, b) {
     b = void 0 === b ? !0 : b;
     var c;
     return c;
 }
-
 function Nv() {
     var a = [];
     return Hc(a);
 }
-
 function Ov(a) {
     var b = null;
     return b;
 }
-
 function Pv(a, b) {
     var c;
     return c;
 }
-
 function Qv(a, b) {
     var c;
     return c;
 }
-
 function Rv(a, b) {
     var c;
     return c;
 }
-
 function Sv(a) {
     var b = '';
     return b;
 }
-
 function Tv(a, b) {
     var c;
     return c;
 }
-
 function Uv(a) {
     var b = '';
     return b;
 }
-
 function Vv() {
     ug(this, 'get_user_agent');
     return m.navigator.userAgent;
 }
-
 function Wv(a, b) {}
 var Xv = {};
-
 function Yv(a, b, c, d, e, f) {
     f
         ?
@@ -15692,16 +14982,13 @@ function Yv(a, b, c, d, e, f) {
             )) :
         bc(a, c, d, b);
 }
-
 function Zv(a, b, c, d) {}
 var $v = Object.freeze({
     dl: 1,
     id: 1
 });
 var aw = {};
-
 function bw(a, b, c, d) {}
-
 function cw(a) {
     var b = !0;
     return b;
@@ -15718,57 +15005,44 @@ var ew = {
     removeItem(a) {}
 };
 var fw = ['textContent', 'value', 'tagName', 'children', 'childElementCount'];
-
 function gw(a) {
     var b;
     return b;
 }
-
 function hw() {}
-
 function iw(a, b) {
     var c;
     return c;
 }
-
 function jw(a) {
     var b = void 0;
     return b;
 }
-
 function kw(a, b) {
     var c = !1;
     return c;
 }
-
 function lw() {
     var a = '';
     return a;
 }
-
 function mw() {
     var a = '';
     return a;
 }
 var nw = Object.freeze(['config', 'event', 'get', 'set']);
-
 function ow(a, b, c) {}
-
 function pw() {}
-
 function qw(a, b, c, d) {
     d = void 0 === d ? !1 : d;
 }
-
 function rw(a, b, c) {}
-
 function sw(a, b, c, d) {
     var e = this;
     d = void 0 === d ? !0 : d;
     var f = !1;
     return f;
 }
-
 function tw(a) {
     Q(G(this), ['consentSettings:!DustMap'], arguments);
     for (var b = a.Ab(), c = b.length(), d = 0; d < c; d++) {
@@ -15777,11 +15051,9 @@ function tw(a) {
     }
     ii(Ic(a));
 }
-
 function uw(a, b, c) {
     return !1;
 }
-
 function vw(a, b, c) {
     Q(G(this), ['targetId:!string', 'name:!string', 'value:!*'], arguments);
     var d = fj(a) || {};
@@ -15790,7 +15062,6 @@ function vw(a, b, c) {
     dj || ej();
     cj[e] = d;
 }
-
 function ww(a, b, c) {}
 var xw = (a) => {
     for (var b = [], c = 0, d = 0; d < a.length; d++) {
@@ -15807,11 +15078,9 @@ var xw = (a) => {
     }
     return b;
 };
-
 function yw(a, b, c, d) {
     var e = this;
 }
-
 function zw(a, b, c) {}
 var Aw = {};
 var Bw = {};
@@ -15826,7 +15095,6 @@ var Cw = (a) => {
     var b;
     return b;
 };
-
 function Dw(a) {
     Q(G(this), ['consentSettings:!DustMap'], arguments);
     var b = Ic(a);
@@ -15943,7 +15211,6 @@ var Gw = () => {
     return (b, c, d) => {};
 };
 var Hw;
-
 function Iw() {
     var a = Hw;
     return (b, c, d) => {
@@ -15999,7 +15266,6 @@ function Iw() {
         return Ic(p);
     };
 }
-
 function Jw(a) {
     var b = a.gtmOnSuccess;
     var c = a.gtmOnFailure;
@@ -16012,7 +15278,6 @@ function Jw(a) {
             I(c);
         });
 }
-
 function Kw() {
     Hw.g.g.N = (a, b, c) => {
         Vg.SANDBOXED_JS_SEMAPHORE = Vg.SANDBOXED_JS_SEMAPHORE || 0;
@@ -16024,7 +15289,6 @@ function Kw() {
         }
     };
 }
-
 function Lw(a) {
     void 0 !== a &&
         Oa(a, (b, c) => {
@@ -16337,7 +15601,6 @@ l.Nj = function(a) {
 l.hh = function(a) {
     this.F = a;
 };
-
 function oy() {
     return (m.gaGlobal = m.gaGlobal || {});
 }
@@ -17260,7 +16523,6 @@ var Az = (a) => {
     a.td && (a.xg = b(a.Md('first_visit')));
     a.F && (a.zg = b(a.Md('session_start')));
 };
-
 function zz(a) {
     delete a.eventModel[R.Wb];
     Bz(a.eventModel);
@@ -17301,7 +16563,6 @@ var Iz = (a, b) => {
         Gz(a, c);
     });
 };
-
 function Gz(a, b) {
     var c = b.F;
     sr(a, (d, e, f, g) => {
@@ -17327,7 +16588,6 @@ var Y = {
     function a(k) {
         return k.target && k.target.location && k.target.location.href ? k.target.location.href : ft();
     }
-
     function b(k, n) {
         fc(k, 'hashchange', (p) => {
             var r = a(p);
@@ -17339,7 +16599,6 @@ var Y = {
             });
         });
     }
-
     function c(k, n) {
         fc(k, 'popstate', (p) => {
             var r = a(p);
@@ -17351,7 +16610,6 @@ var Y = {
             });
         });
     }
-
     function d(k, n, p) {
         var r = n.history;
         var t = r[k];
@@ -17368,7 +16626,6 @@ var Y = {
                 };
             } catch (u) {}
     }
-
     function e() {
         var k = {
             source: null,
@@ -17398,7 +16655,6 @@ var Y = {
             }
         };
     }
-
     function f(k, n) {
         var p = '' + n;
         if (g[p]) g[p].push(k);
@@ -17459,7 +16715,6 @@ var Y = {
             Object.keys(k('vert.pct')).length
         );
     }
-
     function b(x) {
         for (var z = [], A = x.split(','), C = 0; C < A.length; C++) {
             var E = Number(A[C]);
@@ -17468,7 +16723,6 @@ var Y = {
         }
         return z;
     }
-
     function c() {
         var x = 0;
         var z = 0;
@@ -17483,14 +16737,12 @@ var Y = {
             };
         };
     }
-
     function d() {
         u = V('self');
         q = u.document;
         v = q.scrollingElement || (q.body && q.body.parentNode);
         y = c();
     }
-
     function e(x, z, A, C) {
         var E = k(z);
         var D = {};
@@ -17521,7 +16773,6 @@ var Y = {
             };
         }
     }
-
     function f() {
         var x = y();
         var z = x.Xe;
@@ -17534,7 +16785,6 @@ var Y = {
         e(E, 'vert.pct', r.vd, t.wg);
         Hs('sdl', 'pending', !1);
     }
-
     function g() {
         var x = 250;
         var z = !1;
@@ -17551,7 +16801,6 @@ var Y = {
         };
         return D;
     }
-
     function h(x, z, A) {
         if (z) {
             var C = b(String(x));
@@ -17569,11 +16818,9 @@ var Y = {
             );
         }
     }
-
     function k(x) {
         return Js('sdl', x, {});
     }
-
     function n(x) {
         I(x.vtp_gtmOnSuccess);
         var z = x.vtp_uniqueTriggerId;
@@ -17739,14 +16986,12 @@ var Y = {
         var q = Math.round(1e9 * Math.random()) + '';
         return H.getElementById(q) ? a() : q;
     }
-
     function b(q, v) {
         if (!q) return !1;
         for (var w = 0; w < p.length; w++)
             if (0 <= q.indexOf('//' + p[w] + '/' + v)) return !0;
         return !1;
     }
-
     function c(q, v) {
         var w = q.getAttribute('src');
         if (b(w, 'embed/')) {
@@ -17770,7 +17015,6 @@ var Y = {
         }
         return !1;
     }
-
     function d(q, v) {
         if (!q.getAttribute('data-gtm-yt-inspected-' + v.Cf) && (q.setAttribute('data-gtm-yt-inspected-' + v.Cf, 'true'), c(q, v.Ic))) {
             q.id || (q.id = a());
@@ -17795,7 +17039,6 @@ var Y = {
                 });
         }
     }
-
     function e(q) {
         I(() => {
             function v() {
@@ -17806,11 +17049,9 @@ var Y = {
             Rs(v);
         });
     }
-
     function f(q, v) {
         var w;
         var y;
-
         function x() {
             P = bt(
                 () => ({
@@ -17828,7 +17069,6 @@ var Y = {
             Z = 1;
             return z;
         }
-
         function z(U) {
             switch (U) {
                 case r.PLAYING:
@@ -17846,7 +17086,6 @@ var Y = {
                     return z;
             }
         }
-
         function A() {
             ia = q.getCurrentTime();
             Da = et().getTime();
@@ -17854,7 +17093,6 @@ var Y = {
             M();
             return C;
         }
-
         function C(U) {
             var ka;
             switch (U) {
@@ -17874,7 +17112,6 @@ var Y = {
                     return C;
             }
         }
-
         function E(U) {
             switch (U) {
                 case r.ENDED:
@@ -17887,7 +17124,6 @@ var Y = {
                     return E;
             }
         }
-
         function D() {
             for (; y;) {
                 var U = w;
@@ -17897,13 +17133,10 @@ var Y = {
             v.Re && jt(P.createEvent('complete', 1));
             return x(r.UNSTARTED);
         }
-
         function F() {}
-
         function N() {
             y && (ct(y), (y = 0), (w = F));
         }
-
         function M() {
             if (O.length && 0 !== Z) {
                 var U = -1;
@@ -17948,7 +17181,6 @@ var Y = {
             }
         };
     }
-
     function g(q) {
         for (var v = q.split(','), w = v.length, y = [], x = 0; x < w; x++) {
             var z = parseInt(v[x], 10);
@@ -17957,7 +17189,6 @@ var Y = {
         y.sort((A, C) => A - C);
         return y;
     }
-
     function h(q) {
         for (var v = q.split(','), w = v.length, y = [], x = 0; x < w; x++) {
             var z = parseInt(v[x], 10);
@@ -17966,7 +17197,6 @@ var Y = {
         y.sort((A, C) => A - C);
         return y;
     }
-
     function k(q, v, w) {
         var y = q.map((A) => ({
             ca: A,
@@ -17984,7 +17214,6 @@ var Y = {
         z.sort((A, C) => A.ca - C.ca);
         return z;
     }
-
     function n(q) {
         var v = !!q.vtp_captureStart;
         var w = !!q.vtp_captureComplete;
@@ -18059,7 +17288,6 @@ var Y = {
         var w = u || vh(q, 'gtm');
         if (w) return w[v];
     }
-
     function b(u, q, v, w, y) {
         y || (y = 'element');
         var x = q + '.' + v;
@@ -18074,12 +17302,10 @@ var Y = {
         }
         return z;
     }
-
     function c(u, q, v, w) {
         var y = a(u, q, t[v]);
         return void 0 !== y ? y : w;
     }
-
     function d(u, q) {
         if (!u) return !1;
         var v = e(ft());
@@ -18109,12 +17335,10 @@ var Y = {
         }
         return !Ow(u, w);
     }
-
     function e(u) {
         n.test(u) || (u = 'http://' + u);
         return tj(vj(u), 'HOST', !0);
     }
-
     function f(u, q, v, w) {
         switch (u) {
             case 'SUBMIT_TEXT':
@@ -18138,7 +17362,6 @@ var Y = {
                 return w;
         }
     }
-
     function g(u) {
         switch (u.tagName.toLowerCase()) {
             case 'input':
@@ -18149,14 +17372,12 @@ var Y = {
                 return null;
         }
     }
-
     function h(u) {
         if ('form' === u.tagName.toLowerCase() && u.elements) {
             for (var q = 0, v = 0; v < u.elements.length; v++) Ms(u.elements[v]) && q++;
             return q;
         }
     }
-
     function k(u, q, v, w) {
         var y = a(u, q, 'interactedFormField');
         return (y && hc(y, v)) || w;
@@ -18259,11 +17480,9 @@ var Y = {
             } catch (g) {}
         return e;
     }
-
     function b(d) {
         return d.replace(/[.*+\-?^${}()|[\]\\]/g, '\\$&');
     }
-
     function c(d) {
         for (var e = [], f = 0; f < d.length; f++) {
             var g = d[f].matchValue;
@@ -18398,7 +17617,6 @@ var Y = {
         fc(c, 'click', e, !1);
         fc(c, 'auxclick', e, !1);
     }
-
     function b(c, d, e) {
         if (2 === c.which || c.ctrlKey || c.shiftKey || c.altKey || c.metaKey) return !1;
         var f = oc(d, 'href');
@@ -18446,13 +17664,11 @@ Jz.callback = (a) => {
 };
 Jz.bootstrap = 0;
 Jz._spx = !1;
-
 function Kz() {
     Vg[J.J] = Jz;
     db(gh, Y.h);
     bf = qf;
 }
-
 function Lz() {
     var a = !1;
     a && qm('INIT');
@@ -18583,7 +17799,6 @@ function Lz() {
 })(Lz);
 })();
 window.dataLayer = window.dataLayer || [];
-
 function gtag(...args) {
     dataLayer.push(args);
 }
@@ -18591,13 +17806,11 @@ gtag('js', new Date());
 gtag('config', 'G-4W5MG3DG4T');
 (function(sttc) {
         /*
-
 Copyright The Closure Library Authors.
 SPDX-License-Identifier: Apache-2.0
 */
         var aa;
         var ba;
-
         function ca(a) {
             var b = 0;
             return () =>
@@ -18616,7 +17829,6 @@ SPDX-License-Identifier: Apache-2.0
                 a[b] = c.value;
                 return a;
             };
-
         function ea(a) {
             a = [
                 'object' == typeof globalThis && globalThis,
@@ -18635,14 +17847,12 @@ SPDX-License-Identifier: Apache-2.0
         var ha = 'function' === typeof Symbol && 'symbol' === typeof Symbol('x');
         var n = {};
         var ia = {};
-
         function p(a, b) {
             var c = ia[b];
             if (null == c) return a[b];
             c = a[c];
             return void 0 !== c ? c : a[b];
         }
-
         function ja(a, b, c) {
             if (b)
                 a: {
@@ -18681,7 +17891,6 @@ SPDX-License-Identifier: Apache-2.0
                     if (this instanceof b) throw new TypeError('Symbol is not a constructor');
                     return new c(d + (f || '') + '_' + e++, f);
                 }
-
                 function c(f, g) {
                     this.h = f;
                     da(this, 'description', {
@@ -18724,7 +17933,6 @@ SPDX-License-Identifier: Apache-2.0
             },
             'es6'
         );
-
         function ka(a) {
             a = {
                 next: a
@@ -18734,11 +17942,9 @@ SPDX-License-Identifier: Apache-2.0
             };
             return a;
         }
-
         function la(a) {
             return (a.raw = a);
         }
-
         function q(a) {
             var b = 'undefined' != typeof n.Symbol && p(n.Symbol, 'iterator') && a[p(n.Symbol, 'iterator')];
             return b ?
@@ -18746,7 +17952,6 @@ SPDX-License-Identifier: Apache-2.0
                     next: ca(a)
                 };
         }
-
         function ma(a) {
             if (!(a instanceof Array)) {
                 a = q(a);
@@ -18788,7 +17993,6 @@ SPDX-License-Identifier: Apache-2.0
                 null;
         }
         var sa = oa;
-
         function u(a, b) {
             a.prototype = na(b.prototype);
             a.prototype.constructor = a;
@@ -18802,7 +18006,6 @@ SPDX-License-Identifier: Apache-2.0
                         } else a[c] = b[c];
             a.xb = b.prototype;
         }
-
         function ta(...args) {
             for (var a = Number(this), b = [], c = a; c < args.length; c++) b[c - a] = args[c];
             return b;
@@ -18822,11 +18025,9 @@ SPDX-License-Identifier: Apache-2.0
                         h.reject(k);
                     }
                 }
-
                 function c() {
                     this.h = null;
                 }
-
                 function d(g) {
                     return g instanceof b ?
                         g :
@@ -19066,7 +18267,6 @@ SPDX-License-Identifier: Apache-2.0
             },
             'es6'
         );
-
         function ua(a, b) {
             return Object.prototype.hasOwnProperty.call(a, b);
         }
@@ -19080,9 +18280,7 @@ SPDX-License-Identifier: Apache-2.0
                         for (var h; !(h = g.next()).done;)(h = h.value), this.set(h[0], h[1]);
                     }
                 }
-
                 function c() {}
-
                 function d(g) {
                     var h = typeof g;
                     return ('object' === h && null !== g) || 'function' === h;
@@ -19141,7 +18339,6 @@ SPDX-License-Identifier: Apache-2.0
                     var h = {};
                     return (h.L = h.next = h.head = h);
                 }
-
                 function c(h, k) {
                     var l = h.h;
                     return ka(() => {
@@ -19162,7 +18359,6 @@ SPDX-License-Identifier: Apache-2.0
                         };
                     });
                 }
-
                 function d(h, k) {
                     var l = k && typeof k;
                     'object' == l || 'function' == l ? (f.has(k) ? (l = f.get(k)) : ((l = '' + ++g), f.set(k, l))) : (l = 'p_' + k);
@@ -19185,7 +18381,6 @@ SPDX-License-Identifier: Apache-2.0
                         u: void 0
                     };
                 }
-
                 function e(h) {
                     this.i = {};
                     this.h = b();
@@ -19291,7 +18486,6 @@ SPDX-License-Identifier: Apache-2.0
             },
             'es6'
         );
-
         function wa(a, b) {
             a instanceof String && (a += '');
             var c = 0;
@@ -19457,29 +18651,24 @@ SPDX-License-Identifier: Apache-2.0
             'es9'
         );
         var v = this || self;
-
         function ya(a) {
             a = a.split('.');
             for (var b = v, c = 0; c < a.length; c++)
                 if (((b = b[a[c]]), null == b)) return null;
             return b;
         }
-
         function za(a) {
             var b = typeof a;
             return ('object' == b && null != a) || 'function' == b;
         }
-
         function Aa(a) {
             return (Object.prototype.hasOwnProperty.call(a, Ba) && a[Ba]) || (a[Ba] = ++Ca);
         }
         var Ba = 'closure_uid_' + ((1e9 * Math.random()) >>> 0);
         var Ca = 0;
-
         function Da(a, b, c) {
             return a.call.apply(a.bind, arguments);
         }
-
         function Ea(a, b, c) {
             if (!a) throw Error();
             if (2 < arguments.length) {
@@ -19494,12 +18683,10 @@ SPDX-License-Identifier: Apache-2.0
                 return a.apply(b, args);
             };
         }
-
         function Fa(a, b, c) {
             Function.prototype.bind && -1 != Function.prototype.bind.toString().indexOf('native code') ? (Fa = Da) : (Fa = Ea);
             return Fa(...arguments);
         }
-
         function Ga(a, b) {
             var c = Array.prototype.slice.call(arguments, 1);
             return function(...args) {
@@ -19508,7 +18695,6 @@ SPDX-License-Identifier: Apache-2.0
                 return a.apply(this, d);
             };
         }
-
         function Ha(a) {
             var b = ['__uspapi'];
             var c = v;
@@ -19516,16 +18702,13 @@ SPDX-License-Identifier: Apache-2.0
             for (var d; b.length && (d = b.shift());)
                 b.length || void 0 === a ? (c[d] && c[d] !== Object.prototype[d] ? (c = c[d]) : (c = c[d] = {})) : (c[d] = a);
         }
-
         function Ia(a) {
             return a;
         }
         var Ja = new Date().getTime();
-
         function Ka(a) {
             return /^[\s\xa0]*([\s\S]*?)[\s\xa0]*$/.exec(a)[1];
         }
-
         function La(a, b) {
             var c = 0;
             a = Ka(String(a)).split('.');
@@ -19547,7 +18730,6 @@ SPDX-License-Identifier: Apache-2.0
             }
             return c;
         }
-
         function Ma(a, b) {
             return a < b ? -1 : a > b ? 1 : 0;
         }
@@ -19563,19 +18745,15 @@ SPDX-License-Identifier: Apache-2.0
             }
             Na = '';
         }
-
         function w(a) {
             return -1 != Na.indexOf(a);
         }
-
         function Qa() {
             return w('Trident') || w('MSIE');
         }
-
         function Ra() {
             return ((w('Chrome') || w('CriOS')) && !w('Edge')) || w('Silk');
         }
-
         function Sa(a) {
             var b = {};
             a.forEach((c) => {
@@ -19583,7 +18761,6 @@ SPDX-License-Identifier: Apache-2.0
             });
             return (c) => b[p(c, 'find').call(c, (d) => d in b)] || '';
         }
-
         function Ta() {
             var a = Na;
             if (Qa()) {
@@ -19631,11 +18808,9 @@ SPDX-License-Identifier: Apache-2.0
                 a(['Chrome', 'CriOS', 'HeadlessChrome']) :
                 ((a = b[2]) && a[1]) || '';
         }
-
         function Ua(a, b) {
             for (var c = a.length, d = 'string' === typeof a ? a.split('') : a, e = 0; e < c; e++) e in d && b.call(void 0, d[e], e, a);
         }
-
         function Va(a, b) {
             for (var c = a.length, d = [], e = 0, f = 'string' === typeof a ? a.split('') : a, g = 0; g < c; g++)
                 if (g in f) {
@@ -19644,18 +18819,15 @@ SPDX-License-Identifier: Apache-2.0
                 }
             return d;
         }
-
         function Wa(a, b) {
             for (var c = a.length, d = Array(c), e = 'string' === typeof a ? a.split('') : a, f = 0; f < c; f++) f in e && (d[f] = b.call(void 0, e[f], f, a));
             return d;
         }
-
         function Xa(a, b) {
             for (var c = a.length, d = 'string' === typeof a ? a.split('') : a, e = 0; e < c; e++)
                 if (e in d && b.call(void 0, d[e], e, a)) return !0;
             return !1;
         }
-
         function Ya(a, b) {
             a: {
                 for (var c = a.length, d = 'string' === typeof a ? a.split('') : a, e = 0; e < c; e++)
@@ -19667,7 +18839,6 @@ SPDX-License-Identifier: Apache-2.0
             }
             return 0 > b ? null : 'string' === typeof a ? a.charAt(b) : a[b];
         }
-
         function Za(a, b) {
             a: {
                 for (var c = 'string' === typeof a ? a.split('') : a, d = a.length - 1; 0 <= d; d--)
@@ -19679,7 +18850,6 @@ SPDX-License-Identifier: Apache-2.0
             }
             return 0 > b ? null : 'string' === typeof a ? a.charAt(b) : a[b];
         }
-
         function $a(a, b) {
             a: if ('string' === typeof a) a = 'string' !== typeof b || 1 != b.length ? -1 : a.indexOf(b, 0);
                 else {
@@ -19692,7 +18862,6 @@ SPDX-License-Identifier: Apache-2.0
                 }
             return 0 <= a;
         }
-
         function ab(a) {
             ab[' '](a);
             return a;
@@ -19706,7 +18875,6 @@ SPDX-License-Identifier: Apache-2.0
         var db = null;
         var eb = 'function' === typeof Uint8Array;
         var fb = 'function' === typeof n.Symbol && 'symbol' === typeof(0, n.Symbol)() ? (0, n.Symbol)(void 0) : void 0;
-
         function hb(a) {
             Object.isFrozen(a) ||
                 (fb ?
@@ -19723,12 +18891,10 @@ SPDX-License-Identifier: Apache-2.0
                     }));
             return a;
         }
-
         function ib(a) {
             return null !== a && 'object' === typeof a && a.constructor === Object;
         }
         var jb;
-
         function kb(a) {
             switch (typeof a) {
                 case 'number':
@@ -19776,11 +18942,9 @@ SPDX-License-Identifier: Apache-2.0
             }
             return a;
         }
-
         function lb(a, b) {
             if (null != a) return Array.isArray(a) || ib(a) ? mb(a, b) : b(a);
         }
-
         function mb(a, b) {
             if (Array.isArray(a)) {
                 for (var c = Array(a.length), d = 0; d < a.length; d++) c[d] = lb(a[d], b);
@@ -19796,20 +18960,17 @@ SPDX-License-Identifier: Apache-2.0
             for (c in a) Object.prototype.hasOwnProperty.call(a, c) && (e[c] = lb(a[c], b));
             return e;
         }
-
         function nb(a) {
             a = kb(a);
             return Array.isArray(a) ? mb(a, nb) : a;
         }
         var ob;
-
         function pb(a, b) {
             ob = b;
             a = new a(b);
             ob = null;
             return a;
         }
-
         function y(a, b, c) {
             var d = ob;
             ob = null;
@@ -19837,16 +18998,13 @@ SPDX-License-Identifier: Apache-2.0
                     (rb(this), (d = this.j[a]) ? Array.isArray(d) && hb(d) : (this.j[a] = qb));
         }
         var qb = Object.freeze(hb([]));
-
         function rb(a) {
             var b = a.m + a.l;
             a.i[b] || (a.j = a.i[b] = {});
         }
-
         function z(a, b, c) {
             return -1 === b ? null : (void 0 === c ? 0 : c) || b >= a.m ? (a.j ? a.j[b] : void 0) : a.i[b + a.l];
         }
-
         function sb(a, b, c) {
             c = void 0 === c ? !1 : c;
             var d = z(a, b, c);
@@ -19854,43 +19012,35 @@ SPDX-License-Identifier: Apache-2.0
             d === qb && ((d = hb(d.slice())), A(a, b, d, c));
             return d;
         }
-
         function tb(a, b) {
             a = z(a, b);
             return null == a ? a : !!a;
         }
-
         function C(a, b, c) {
             a = z(a, b);
             return null == a ? c : a;
         }
-
         function D(a, b, c) {
             a = tb(a, b);
             return null == a ? (void 0 === c ? !1 : c) : a;
         }
-
         function ub(a, b, c) {
             a = z(a, b);
             a = null == a ? a : +a;
             return null == a ? (void 0 === c ? 0 : c) : a;
         }
-
         function A(a, b, c, d) {
             (void 0 === d ? 0 : d) || b >= a.m ? (rb(a), (a.j[b] = c)) : (a.i[b + a.l] = c);
             return a;
         }
-
         function vb(a, b, c) {
             0 !== c ? A(a, b, c) : A(a, b, void 0, !1);
             return a;
         }
-
         function wb(a, b, c, d) {
             (c = xb(a, c)) && c !== b && null != d && (a.h && c in a.h && (a.h[c] = void 0), A(a, c, void 0));
             return A(a, b, d);
         }
-
         function xb(a, b) {
             for (var c = 0, d = 0; d < b.length; d++) {
                 var e = b[d];
@@ -19898,7 +19048,6 @@ SPDX-License-Identifier: Apache-2.0
             }
             return c;
         }
-
         function G(a, b, c) {
             if (-1 === c) return null;
             a.h || (a.h = {});
@@ -19909,7 +19058,6 @@ SPDX-License-Identifier: Apache-2.0
             b = new b(e);
             return (a.h[c] = b);
         }
-
         function H(a, b, c) {
             a.h || (a.h = {});
             var d = a.h[c];
@@ -19921,7 +19069,6 @@ SPDX-License-Identifier: Apache-2.0
             }
             return d;
         }
-
         function yb(a, b, c) {
             var d = zb;
             a.h || (a.h = {});
@@ -19929,7 +19076,6 @@ SPDX-License-Identifier: Apache-2.0
             a.h[b] = c;
             return wb(a, b, d, e);
         }
-
         function Ab(a, b, c) {
             var d = void 0 === d ? !1 : d;
             if (c) {
@@ -19944,11 +19090,9 @@ SPDX-License-Identifier: Apache-2.0
             var a = this.i;
             return jb ? a : mb(a, nb);
         };
-
         function Bb(a, b) {
             return kb(b);
         }
-
         function Cb(a) {
             jb = !0;
             try {
@@ -19957,54 +19101,44 @@ SPDX-License-Identifier: Apache-2.0
             jb = !1;
         }
     }
-
     function Db(a, b, c) {
         return xb(a, b) === c ? c : -1;
     }
-
     function Eb(a, b, c) {
         return C(a, b, void 0 === c ? '' : c);
     }
-
     function Fb(a, b, c) {
         return C(a, Db(a, c, b), 0);
     }
-
     function Gb(a, b, c, d) {
         return G(a, b, Db(a, d, c));
     }
-
     function Hb(a) {
         y.call(this, a, -1, Ib);
     }
     u(Hb, y);
-
     function Jb(a) {
         y.call(this, a);
     }
     u(Jb, y);
     var Ib = [2, 3];
-
     function Kb(a, b) {
         this.i = (a === Lb && b) || '';
         this.h = Mb;
     }
     var Mb = {};
     var Lb = {};
-
     function Nb(a, b) {
         var c = {};
         var d;
         for (d in a) b.call(void 0, a[d], d, a) && (c[d] = a[d]);
         return c;
     }
-
     function Ob(a, b) {
         for (var c in a)
             if (b.call(void 0, a[c], c, a)) return !0;
         return !1;
     }
-
     function Pb(a) {
         var b = {};
         var c;
@@ -20012,11 +19146,9 @@ SPDX-License-Identifier: Apache-2.0
         return b;
     }
     var Qb;
-
     function Rb(a, b) {
         this.h = b === Sb ? a : '';
     }
-
     function Tb(a, b) {
         a = Ub.exec(Vb(a).toString());
         var c = a[3] || '';
@@ -20025,13 +19157,11 @@ SPDX-License-Identifier: Apache-2.0
     Rb.prototype.toString = function() {
         return this.h + '';
     };
-
     function Vb(a) {
         return a instanceof Rb && a.constructor === Rb ? a.h : 'type_error:TrustedResourceUrl';
     }
     var Ub = /^([^?#]*)(\?[^#]*)?(#[\s\S]*)?/;
     var Sb = {};
-
     function Wb(a) {
         if (void 0 === Qb) {
             var b = null;
@@ -20052,7 +19182,6 @@ SPDX-License-Identifier: Apache-2.0
         a = (b = Qb) ? b.createScriptURL(a) : a;
         return new Rb(a, Sb);
     }
-
     function Xb(a, b, c) {
         if (null == c) return b;
         if ('string' === typeof c) return c ? a + encodeURIComponent(c) : '';
@@ -20068,17 +19197,14 @@ SPDX-License-Identifier: Apache-2.0
         return b;
     }
     /*
-
     SPDX-License-Identifier: Apache-2.0
     */
     var Yb = {};
-
     function Zb() {
         var a = 'undefined' !== typeof window ? window.trustedTypes : void 0;
         return null !== a && void 0 !== a ? a : null;
     }
     var $b;
-
     function ac() {
         var a;
         var b;
@@ -20107,44 +19233,36 @@ SPDX-License-Identifier: Apache-2.0
             }
         return $b;
     }
-
     function bc() {}
-
     function cc(a) {
         this.h = a;
     }
     u(cc, bc); cc.prototype.toString = function() {
         return this.h.toString();
     };
-
     function dc(a) {
         var b;
         var c = null === (b = ac()) || void 0 === b ? void 0 : b.createScriptURL(a);
         return new cc(null !== c && void 0 !== c ? c : a, Yb);
     }
-
     function ec(a) {
         if (a instanceof cc) return a.h;
         throw Error('');
     }
-
     function fc(a) {
         var b = ta.apply(1, arguments);
         if (0 === b.length) return dc(a[0]);
         for (var c = [a[0]], d = 0; d < b.length; d++) c.push(encodeURIComponent(b[d])), c.push(a[d + 1]);
         return dc(c.join(''));
     }
-
     function gc(a) {
         return a instanceof bc ? ec(a) : Vb(a);
     }
-
     function hc(a) {
         return function(...args) {
             return !a.apply(this, args);
         };
     }
-
     function ic(a) {
         var b = !1;
         var c;
@@ -20153,7 +19271,6 @@ SPDX-License-Identifier: Apache-2.0
             return c;
         };
     }
-
     function jc(a) {
         var b = a;
         return () => {
@@ -20164,25 +19281,20 @@ SPDX-License-Identifier: Apache-2.0
             }
         };
     }
-
     function kc(a, b, c) {
         a.addEventListener && a.addEventListener(b, c, !1);
     }
-
     function lc(a, b) {
         a.removeEventListener && a.removeEventListener('message', b, !1);
     }
-
     function mc(a) {
         return String(a).replace(/\-([a-z])/g, (b, c) => c.toUpperCase());
     }
-
     function nc(a, b) {
         b = String(b);
         'application/xhtml+xml' === a.contentType && (b = b.toLowerCase());
         return a.createElement(b);
     }
-
     function oc(a) {
         this.h = a || v.document || document;
     }
@@ -20193,17 +19305,14 @@ SPDX-License-Identifier: Apache-2.0
         for (; b && a != b;) b = b.parentNode;
         return b == a;
     };
-
     function rc() {
         return !sc() && (w('iPod') || w('iPhone') || w('Android') || w('IEMobile'));
     }
-
     function sc() {
         return w('iPad') || (w('Android') && !w('Mobile')) || w('Silk');
     }
     var tc = RegExp('^(?:([^:/?#.]+):)?(?://(?:([^\\\\/?#]*)@)?([^\\\\/?#]*?)(?::([0-9]+))?(?=[\\\\/?#]|$))?([^?#]+)?(?:\\?([^#]*))?(?:#([\\s\\S]*))?$');
     var uc = /#|$/;
-
     function vc(a) {
         var b = a.search(uc);
         var c;
@@ -20222,7 +19331,6 @@ SPDX-License-Identifier: Apache-2.0
         c += 7;
         return decodeURIComponent(a.substr(c, d - c).replace(/\+/g, ' '));
     }
-
     function wc(a) {
         try {
             var b;
@@ -20240,7 +19348,6 @@ SPDX-License-Identifier: Apache-2.0
         return !1;
     }
 }
-
 function xc(a, b) {
     var c = yc('SCRIPT', a);
     c.src = gc(b);
@@ -20250,11 +19357,9 @@ function xc(a, b) {
     (d = e ? e.nonce || e.getAttribute('nonce') || '' : '') && c.setAttribute('nonce', d);
     return (a = a.getElementsByTagName('script')[0]) && a.parentNode ? (a.parentNode.insertBefore(c, a), c) : null;
 }
-
 function zc(a, b) {
     return b.getComputedStyle ? b.getComputedStyle(a, null) : a.currentStyle;
 }
-
 function Ac(a, b) {
     if (!Bc() && !Cc()) {
         var c = Math.random();
@@ -20262,7 +19367,6 @@ function Ac(a, b) {
     }
     return null;
 }
-
 function Dc() {
     if (!n.globalThis.crypto) return Math.random();
     try {
@@ -20273,12 +19377,10 @@ function Dc() {
     return Math.random();
 }
 }
-
 function Ec(a, b) {
     if (a)
         for (var c in a) Object.prototype.hasOwnProperty.call(a, c) && b.call(void 0, a[c], c, a);
 }
-
 function Fc(a) {
     var b = a.length;
     if (0 == b) return 0;
@@ -20286,7 +19388,6 @@ function Fc(a) {
     return 0 < c ? c : 4294967296 + c;
 }
 var Cc = ic(() => Xa(['Google Web Preview', 'Mediapartners-Google', 'Google-Read-Aloud', 'Google-Adwords'], Gc) || 1e-4 > Math.random());
-
 function Hc(a, b) {
     var c = -1;
     try {
@@ -20296,7 +19397,6 @@ function Hc(a, b) {
 }
 return 0 <= c && 1e3 > c ? c : null;
 }
-
 function Ic(a, b) {
     var c = Cc() ? null : Math.floor(1e3 * Dc());
     var d;
@@ -20315,21 +19415,17 @@ function Ic(a, b) {
     return d ? c : null;
 }
 var Bc = ic(() => Gc('MSIE'));
-
 function Gc(a) {
     return -1 != Na.indexOf(a);
 }
 var Jc = /^([0-9.]+)px$/;
 var Kc = /^(-?[0-9.]{1,30})$/;
-
 function Lc(a) {
     return Kc.test(a) && ((a = Number(a)), !isNaN(a)) ? a : null;
 }
-
 function I(a) {
     return (a = Jc.exec(a)) ? +a[1] : null;
 }
-
 function Mc(a, b) {
     for (var c = 0; 50 > c; ++c) {
         try {
@@ -20353,7 +19449,6 @@ function Mc(a, b) {
     return null;
 }
 var Nc = ic(() => (rc() ? 2 : sc() ? 1 : 0));
-
 function Oc(a) {
     Ec({
             display: 'none'
@@ -20364,7 +19459,6 @@ function Oc(a) {
     );
 }
 var Pc = [];
-
 function Qc() {
     var a = Pc;
     Pc = [];
@@ -20376,7 +19470,6 @@ function Qc() {
         } catch (c) {}
     }
 }
-
 function Rc(a, b) {
     b = void 0 === b ? window.document : b;
     0 != a.length &&
@@ -20394,7 +19487,6 @@ function Rc(a, b) {
             }
         });
 }
-
 function Sc(a) {
     if ('number' !== typeof a.goog_pvsid)
         try {
@@ -20405,14 +19497,12 @@ function Sc(a) {
         } catch (b) {}
     return Number(a.goog_pvsid) || -1;
 }
-
 function Tc(a) {
     var b = Uc;
     'complete' === b.readyState || 'interactive' === b.readyState ?
         (Pc.push(a), 1 == Pc.length && (n.Promise ? n.Promise.resolve().then(Qc) : window.setImmediate ? setImmediate(Qc) : setTimeout(Qc, 0))) :
         b.addEventListener('DOMContentLoaded', a);
 }
-
 function yc(a, b) {
     b = void 0 === b ? document : b;
     return b.createElement(String(a).toLowerCase());
@@ -20420,7 +19510,6 @@ function yc(a, b) {
 var Vc = null;
 var Uc = document;
 var J = window;
-
 function Wc(a) {
     a = void 0 === a ? v : a;
     var b = a.context || a.AMP_CONTEXT_DATA;
@@ -20433,18 +19522,15 @@ function Wc(a) {
     } catch (c) {}
     return null;
 }
-
 function Xc(a) {
     return (a = a || Wc()) ? (wc(a.master) ? a.master : null) : null;
 }
-
 function Yc(a, b) {
     a.google_image_requests || (a.google_image_requests = []);
     var c = yc('IMG', a.document);
     c.src = b;
     a.google_image_requests.push(c);
 }
-
 function Zc(a, b) {
     var c = 'https://pagead2.googlesyndication.com/pagead/gen_204?id=' + b;
     Ec(a, (d, e) => {
@@ -20452,7 +19538,6 @@ function Zc(a, b) {
     });
     $c(c);
 }
-
 function $c(a) {
     var b = window;
     b.fetch ?
@@ -20465,25 +19550,21 @@ function $c(a) {
         }) :
         Yc(b, a);
 }
-
 function ad(a) {
     return !(!a || !a.call) && 'function' === typeof a;
 }
-
 function bd(a) {
     var b = void 0 === b ? 1 : b;
     a = Xc(Wc(a)) || a;
     a.google_unique_id = (a.google_unique_id || 0) + b;
     return a.google_unique_id;
 }
-
 function cd(a) {
     a = a.google_unique_id;
     return 'number' === typeof a ? a : 0;
 }
 var dd = !!window.google_async_iframe_id;
 var ed = (dd && window.parent) || window;
-
 function fd() {
     if (dd && !wc(ed)) {
         0.01 > Math.random() &&
@@ -20500,7 +19581,6 @@ function fd() {
     }
     return ed;
 }
-
 function gd() {
     var a = void 0 === a ? J : a;
     if (!a) return !1;
@@ -20510,12 +19590,10 @@ function gd() {
     return !1;
 }
 }
-
 function hd(a) {
     a = a.top;
     return wc(a) ? a : null;
 }
-
 function id(a) {
     if (!a) return '';
     a = a.toLowerCase();
@@ -20523,7 +19601,6 @@ function id(a) {
     return a;
 }
 var jd = null;
-
 function kd(a, b) {
     b = void 0 === b ? [] : b;
     var c = !1;
@@ -20546,7 +19623,6 @@ function kd(a, b) {
             (a = Wb(a instanceof Kb && a.constructor === Kb && a.h === Mb ? a.i : 'type_error:Const')),
             xc(d, a));
 }
-
 function ld(a, b) {
     var c = void 0 === c ? {} : c;
     this.error = a;
@@ -20555,37 +19631,31 @@ function ld(a, b) {
     this.id = b.id || 'jserror';
     this.meta = c;
 }
-
 function md(a) {
     return !!(a.error && a.meta && a.id);
 }
 var nd = RegExp('^https?://(\\w|-)+\\.cdn\\.ampproject\\.(net|org)(\\?|/|$)');
-
 function od(a, b) {
     this.h = a;
     this.i = b;
 }
-
 function pd(a, b, c) {
     this.url = a;
     this.ba = b;
     this.Ia = !!c;
     this.depth = null;
 }
-
 function qd() {
     this.j = '&';
     this.i = {};
     this.l = 0;
     this.h = [];
 }
-
 function rd(a, b) {
     var c = {};
     c[a] = b;
     return [c];
 }
-
 function sd(a, b, c, d, e) {
     var f = [];
     Ec(a, (g, h) => {
@@ -20593,7 +19663,6 @@ function sd(a, b, c, d, e) {
     });
     return f.join(b);
 }
-
 function td(a, b, c, d, e) {
     if (null == a) return '';
     b = b || '&';
@@ -20607,7 +19676,6 @@ function td(a, b, c, d, e) {
     } else if ('object' == typeof a) return (e = e || 0), 2 > e ? encodeURIComponent(sd(a, b, c, d, e + 1)) : '...';
     return encodeURIComponent(String(a));
 }
-
 function ud(a, b) {
     var c = 'https://pagead2.googlesyndication.com' + b;
     var d = vd(a) - b.length;
@@ -20636,24 +19704,20 @@ function ud(a, b) {
     null != b && (a = e + 'trn=' + b);
     return c + a;
 }
-
 function vd(a) {
     var b = 1;
     var c;
     for (c in a.i) b = c.length > b ? c.length : b;
     return 3997 - b - a.j.length - 1;
 }
-
 function wd() {
     this.h = Math.random();
 }
-
 function xd() {
     var a = yd;
     var b = v.google_srt;
     0 <= b && 1 >= b && (a.h = b);
 }
-
 function zd(a, b, c, d, e) {
     if ((d ? a.h : Math.random()) < (e || 0.01))
         try {
@@ -20672,7 +19736,6 @@ function zd(a, b, c, d, e) {
         } catch (h) {}
 }
 var Ad = null;
-
 function Bd() {
     if (null === Ad) {
         Ad = '';
@@ -20691,17 +19754,14 @@ function Bd() {
     }
     return Ad;
 }
-
 function Cd() {
     var a = v.performance;
     return a && a.now && a.timing ? Math.floor(a.now() + a.timing.navigationStart) : Date.now();
 }
-
 function Dd() {
     var a = void 0 === a ? v : a;
     return (a = a.performance) && a.now ? a.now() : null;
 }
-
 function Ed(a, b) {
     var c = Dd() || Cd();
     this.label = a;
@@ -20718,7 +19778,6 @@ var Hd = ic(() => {
     if ((a = Gd))(a = Bd()), (a = !!a.indexOf && 0 <= a.indexOf('1337'));
     return a;
 });
-
 function Id() {
     this.events = [];
     this.i = v || v;
@@ -20726,7 +19785,6 @@ function Id() {
     v && ((v.google_js_reporting_queue = v.google_js_reporting_queue || []), (this.events = v.google_js_reporting_queue), (a = v.google_measure_js_timing));
     this.h = Hd() || (null != a ? a : 1 > Math.random());
 }
-
 function Jd(a) {
     a && Fd && Hd() && (Fd.clearMarks('goog_' + a.label + '_' + a.uniqueId + '_start'), Fd.clearMarks('goog_' + a.label + '_' + a.uniqueId + '_end'));
 }
@@ -20745,7 +19803,6 @@ Id.prototype.end = function(a) {
         !this.h || 2048 < this.events.length || this.events.push(a);
     }
 };
-
 function Kd() {
     var a = Ld;
     this.m = yd;
@@ -20911,7 +19968,6 @@ aa.I = function(a, b, c, d, e) {
     }
     return !0;
 };
-
 function Md(a) {
     var b = a.toString();
     a.name && -1 == b.indexOf(a.name) && (b += ': ' + a.name);
@@ -20926,7 +19982,6 @@ function Md(a) {
     }
     return b;
 }
-
 function K(a) {
     a = void 0 === a ? '' : a;
     var b = Error.call(this);
@@ -20937,23 +19992,18 @@ function K(a) {
     Error.captureStackTrace ? Error.captureStackTrace(this, K) : (this.stack = Error().stack || '');
 }
 u(K, Error);
-
 function Nd(a) {
     return null !== a && void 0 !== a;
 }
-
 function Od(a, b) {
     if (!b(a)) throw Error(String(a));
 }
-
 function Pd(a) {
     return 'string' === typeof a;
 }
-
 function Qd(a) {
     return void 0 === a;
 }
-
 function Rd(a) {
     y.call(this, a, -1, Sd);
 }
@@ -20971,11 +20021,9 @@ Vd = {
 var Wd = Vd.Ta;
 var Xd = Vd.Ua;
 var Yd = Vd.Va;
-
 function Zd(a) {
     return null != a ? !a : a;
 }
-
 function $d(a, b) {
     for (var c = !1, d = 0; d < a.length; d++) {
         var e = a[d]();
@@ -20984,7 +20032,6 @@ function $d(a, b) {
     }
     if (!c) return !b;
 }
-
 function ae(a, b) {
     var c = H(a, Rd, 2);
     if (!c.length) return be(a, b);
@@ -20998,7 +20045,6 @@ function ae(a, b) {
             return $d(c, !0);
     }
 }
-
 function be(a, b) {
     var c = xb(a, Td);
     a: {
@@ -21057,29 +20103,24 @@ function be(a, b) {
         }
     }
 }
-
 function ce(a, b) {
     return !a || !(!b || !ae(a, b));
 }
-
 function de(a) {
     y.call(this, a, -1, ee);
 }
 u(de, y);
 var ee = [4];
-
 function fe(a) {
     y.call(this, a);
 }
 u(fe, y);
-
 function ge(a) {
     y.call(this, a, -1, he);
 }
 u(ge, y);
 var he = [5];
 var ie = [1, 2, 3, 6, 7];
-
 function je(a) {
     a.ib(
         ...ma(
@@ -21090,7 +20131,6 @@ function je(a) {
         )
     );
 }
-
 function ke(a) {
     return function(...args) {
         var b = ta.apply(0, args);
@@ -21117,7 +20157,6 @@ var le = ke((a) => {
         )();
     return '[[' + b.join(',') + ']]';
 });
-
 function me(a, b) {
     if (n.globalThis.fetch)
         n.globalThis.fetch(a, {
@@ -21134,7 +20173,6 @@ function me(a, b) {
         c.send(b);
     }
 }
-
 function ne(a) {
     var b = void 0 === b ? me : b;
     this.l = void 0 === a ? 1e3 : a;
@@ -21156,12 +20194,10 @@ ne.prototype.ib = function(...args) {
         100 <= b.i.length ? (null !== b.h && clearTimeout(b.h), (b.h = setTimeout(c, 0))) : null === b.h && (b.h = setTimeout(c, b.l));
     })();
 };
-
 function oe(a) {
     y.call(this, a, -1, pe);
 }
 u(oe, y);
-
 function qe(a) {
     y.call(this, a);
 }
@@ -21169,26 +20205,22 @@ u(qe, y);
 qe.prototype.$ = function() {
     return C(this, 1, 0);
 };
-
 function re(a) {
     y.call(this, a);
 }
 u(re, y);
 var pe = [2, 4, 5];
 var se = [1, 2];
-
 function te(a) {
     y.call(this, a, -1, ue);
 }
 u(te, y);
-
 function ve(a) {
     y.call(this, a);
 }
 u(ve, y);
 var ue = [2, 3];
 var we = [1, 2, 3, 4];
-
 function xe(a) {
     y.call(this, a);
 }
@@ -21197,7 +20229,6 @@ xe.prototype.getTagSessionCorrelator = function() {
     return C(this, 2, 0);
 };
 var zb = [4, 5, 7];
-
 function ye(a, b, c) {
     var d = void 0 === d ? new ne(b) : d;
     this.i = a;
@@ -21206,7 +20237,6 @@ function ye(a, b, c) {
     this.h = [];
     this.l = 0 < this.i && Dc() < 1 / this.i;
 }
-
 function ze(a, b, c, d, e, f) {
     var g = new qe();
     b = vb(g, 1, b);
@@ -21227,7 +20257,6 @@ function ze(a, b, c, d, e, f) {
     a.h.push(c);
     100 < a.h.length && a.h.shift();
 }
-
 function Be(a, b, c, d) {
     if (a.m) {
         var e = new te();
@@ -21239,27 +20268,23 @@ function Be(a, b, c, d) {
         a.l && je(a.j, Ae(a, d));
     }
 }
-
 function Ae(a, b) {
     b = vb(b, 1, Date.now());
     var c = Sc(window);
     b = vb(b, 2, c);
     return vb(b, 6, a.i);
 }
-
 function L(a) {
     var b = 'qa';
     if (a.qa && a.hasOwnProperty(b)) return a.qa;
     b = new a();
     return (a.qa = b);
 }
-
 function Ce() {
     var a = {};
     this.h = ((a[Wd] = {}), (a[Xd] = {}), (a[Yd] = {}), a);
 }
 var De = /^true$/.test('false');
-
 function Ee(a, b) {
     switch (b) {
         case 1:
@@ -21274,7 +20299,6 @@ function Ee(a, b) {
             return null;
     }
 }
-
 function Fe(a, b) {
     if (!a) return null;
     switch (b) {
@@ -21300,7 +20324,6 @@ var Ge = ic(() => {
     } catch (b) {}
     return {};
 });
-
 function He(a, b, c, d) {
     var e = (d = void 0 === d ? 0 : d);
     var f;
@@ -21315,7 +20338,6 @@ function He(a, b, c, d) {
     a = Fe(b, a);
     return null != a ? a : c;
 }
-
 function Ke(a) {
     var b = L(Ce).h;
     if (b) {
@@ -21324,42 +20346,34 @@ function Ke(a) {
     }
     return G(a, de, 4);
 }
-
 function Ie() {
     this.h = {};
     this.l = [];
     this.j = {};
     this.i = {};
 }
-
 function Le(a, b, c) {
     return !!He(1, a, void 0 === b ? !1 : b, c);
 }
-
 function Me(a, b, c) {
     b = void 0 === b ? 0 : b;
     a = Number(He(2, a, b, c));
     return isNaN(a) ? b : a;
 }
-
 function Ne(a, b, c) {
     return He(3, a, void 0 === b ? '' : b, c);
 }
-
 function Oe(a, b, c) {
     b = void 0 === b ? [] : b;
     return He(6, a, b, c);
 }
-
 function Je(a) {
     return L(Ie).h[a] || (L(Ie).h[a] = {});
 }
-
 function Pe(a, b) {
     var c = Je(b);
     Ec(a, (d, e) => (c[e] = d));
 }
-
 function Qe(a, b, c, d, e) {
     e = void 0 === e ? !1 : e;
     var f = [];
@@ -21412,7 +20426,6 @@ function Qe(a, b, c, d, e) {
     });
     (f.length || g.length) && Be(c, f, g, null != d ? d : void 0);
 }
-
 function Re(a, b) {
     var c = Je(b);
     Ua(a, (d) => {
@@ -21421,15 +20434,12 @@ function Re(a, b) {
         (e = Ee(e, f)) && (c[e] || (c[e] = d));
     });
 }
-
 function Se() {
     return Wa(p(Object, 'keys').call(Object, L(Ie).h), (a) => Number(a));
 }
-
 function Te(a) {
     $a(L(Ie).l, a) || Pe(Je(4), a);
 }
-
 function M(a) {
     this.methodName = a;
 }
@@ -21449,18 +20459,15 @@ var ff = new M(11);
 var gf = new M(12);
 var hf = new M(13);
 var jf = new M(14);
-
 function N(a, b, c) {
     c.hasOwnProperty(a.methodName) ||
         Object.defineProperty(c, String(a.methodName), {
             value: b
         });
 }
-
 function kf(a, b, c) {
     return b[a.methodName] || c || (() => {});
 }
-
 function lf(a) {
     N($e, Le, a);
     N(af, Me, a);
@@ -21469,7 +20476,6 @@ function lf(a) {
     N(hf, Re, a);
     N(We, Te, a);
 }
-
 function mf(a) {
     N(
         Ze,
@@ -21510,21 +20516,18 @@ function mf(a) {
         a
     );
 }
-
 function nf(a) {
     a.hasOwnProperty('init-done') ||
         Object.defineProperty(a, 'init-done', {
             value: !0
         });
 }
-
 function of () {
     this.l = () => {};
     this.j = () => {};
     this.i = () => {};
     this.h = () => [];
 }
-
 function pf(a, b, c) {
     a.l = kf(Ue, b, () => {});
     a.i = (d) => {
@@ -21538,7 +20541,6 @@ function pf(a, b, c) {
 var yd;
 var qf;
 var Ld = new Id();
-
 function rf(a) {
     null != a && (v.google_measure_js_timing = a);
     v.google_measure_js_timing || ((a = Ld), (a.h = !1), a.events != a.i.google_js_reporting_queue && (Hd() && Ua(a.events, Jd), (a.events.length = 0)));
@@ -21556,28 +20558,23 @@ function rf(a) {
             rf();
         });
 })();
-
 function sf(a, b, c) {
     return qf.ma(a, b, c);
 }
-
 function tf(a, b) {
     return qf.La(a, b, void 0, void 0);
 }
-
 function uf(a, b, c) {
     var d = L( of ).h();
     !b.eid && d.length && (b.eid = d.toString());
     zd(yd, a, b, !0, c);
 }
-
 function vf(a) {
     return (b) => {
         null != b || (b = 'unnamed rejection');
         qf.I(a, b instanceof Error ? b : Error(b), void 0, void 0);
     };
 }
-
 function wf(a, b, c, d) {
     var e;
     md(b) ? (e = b.msg || Md(b.error)) : (e = Md(b));
@@ -21593,7 +20590,6 @@ var xf = {
     immersives: 4,
     list_view: 5
 };
-
 function yf() {
     this.wasPlaTagProcessed = !1;
     this.wasReactiveAdConfigReceived = {};
@@ -21607,32 +20603,27 @@ function yf() {
     this.messageValidationEnabled = !1;
     this.floatingAdsStacking = new zf();
 }
-
 function Af(a) {
     a.google_reactive_ads_global_state ?
         null == a.google_reactive_ads_global_state.floatingAdsStacking && (a.google_reactive_ads_global_state.floatingAdsStacking = new zf()) :
         (a.google_reactive_ads_global_state = new yf());
     return a.google_reactive_ads_global_state;
 }
-
 function zf() {
     this.maxZIndexRestrictions = {};
     this.nextRestrictionId = 0;
     this.maxZIndexListeners = [];
 }
-
 function Bf(a) {
     a = a.document;
     var b = {};
     a && (b = 'CSS1Compat' == a.compatMode ? a.documentElement : a.body);
     return b || {};
 }
-
 function Cf(a) {
     return Bf(a).clientWidth;
 }
 bb || !w('Safari') || Ra();
-
 function Df() {
     this.i = new If(this);
     this.h = 0;
@@ -21649,11 +20640,9 @@ Df.prototype.reject = function(a) {
     this.j = a;
     Kf(this.i);
 };
-
 function Jf(a) {
     if (0 != a.h) throw Error('Already resolved/rejected.');
 }
-
 function If(a) {
     this.h = a;
 }
@@ -21663,7 +20652,6 @@ If.prototype.then = function(a, b) {
     this.j = b;
     Kf(this);
 };
-
 function Kf(a) {
     switch (a.h.h) {
         case 0:
@@ -21678,7 +20666,6 @@ function Kf(a) {
             throw Error('Unhandled deferred state.');
     }
 }
-
 function Lf(a) {
     this.h = a.slice(0);
 }
@@ -21693,12 +20680,10 @@ Lf.prototype.add = function(a) {
     b.push(a);
     return new Lf(b);
 };
-
 function Mf(a, b) {
     for (var c = [], d = a.length, e = 0; e < d; e++) c.push(a[e]);
     c.forEach(b, void 0);
 }
-
 function Nf() {
     this.h = {};
     this.i = {};
@@ -21716,20 +20701,16 @@ Nf.prototype.clear = function() {
     this.h = {};
     this.i = {};
 };
-
 function Of(a) {
     return a instanceof Object ? String(Aa(a)) : a + '';
 }
-
 function Pf(a, b) {
     this.h = a;
     this.i = b;
 }
-
 function Qf(a) {
     return null != a.h ? a.h.value : null;
 }
-
 function Rf(a, b) {
     null != a.h && b(a.h.value);
     return a;
@@ -21737,12 +20718,10 @@ function Rf(a, b) {
 Pf.prototype.map = function(a) {
     return null != this.h ? ((a = a(this.h.value)), a instanceof Pf ? a : Sf(a)) : this;
 };
-
 function Tf(a, b) {
     null != a.h || b(a.i);
     return a;
 }
-
 function Sf(a) {
     return new Pf({
             value: a
@@ -21750,11 +20729,9 @@ function Sf(a) {
         null
     );
 }
-
 function Uf(a) {
     return new Pf(null, a);
 }
-
 function Vf(a) {
     try {
         return Sf(a());
@@ -21762,7 +20739,6 @@ function Vf(a) {
     return Uf(b);
 }
 }
-
 function Wf(a) {
     this.h = new Nf();
     if (a)
@@ -21774,7 +20750,6 @@ Wf.prototype.add = function(a) {
 Wf.prototype.contains = function(a) {
     return void 0 !== this.h.h[Of(a)];
 };
-
 function Xf() {
     this.h = new Nf();
 }
@@ -21783,7 +20758,6 @@ Xf.prototype.set = function(a, b) {
     c || ((c = new Wf()), this.h.set(a, c));
     c.add(b);
 };
-
 function Yf(a) {
     y.call(this, a, -1, Zf);
 }
@@ -21792,7 +20766,6 @@ Yf.prototype.getId = function() {
     return z(this, 3);
 };
 var Zf = [4];
-
 function $f(a) {
     var b = void 0 === a.Ea ? void 0 : a.Ea;
     var c = void 0 === a.ab ? void 0 : a.ab;
@@ -21802,7 +20775,6 @@ function $f(a) {
     this.j = d;
     this.i = c;
 }
-
 function ag(a) {
     var b = [];
     var c = a.l;
@@ -21834,13 +20806,11 @@ function ag(a) {
     });
     return b;
 }
-
 function bg(a) {
     a = a.h.slice(0).map(cg);
     a = JSON.stringify(a);
     return Fc(a);
 }
-
 function cg(a) {
     var b = {};
     null != z(a, 7) && (b.q = z(a, 7));
@@ -21848,7 +20818,6 @@ function cg(a) {
     null != z(a, 5) && (b.p = z(a, 5));
     return b;
 }
-
 function dg(a) {
     y.call(this, a);
 }
@@ -21856,12 +20825,10 @@ u(dg, y);
 dg.prototype.setLocation = function(a) {
     return A(this, 1, a);
 };
-
 function eg(a, b) {
     this.Ga = a;
     this.Ma = b;
 }
-
 function fg(a) {
     var b = [].slice.call(arguments).filter(hc((e) => null === e));
     if (!b.length) return null;
@@ -21873,7 +20840,6 @@ function fg(a) {
     });
     return new eg(c, d);
 }
-
 function gg(a) {
     switch (a) {
         case 1:
@@ -21896,7 +20862,6 @@ function gg(a) {
             return null;
     }
 }
-
 function hg(a) {
     if (null == a) a = null;
     else {
@@ -21916,12 +20881,10 @@ function hg(a) {
 }
 var ig = {};
 var jg = new eg(['google-auto-placed'], ((ig.google_reactive_ad_format = 40), (ig.google_tag_origin = 'qs'), ig));
-
 function kg(a) {
     y.call(this, a);
 }
 u(kg, y);
-
 function lg(a) {
     y.call(this, a);
 }
@@ -21929,93 +20892,76 @@ u(lg, y);
 lg.prototype.getName = function() {
     return z(this, 4);
 };
-
 function mg(a) {
     y.call(this, a);
 }
 u(mg, y);
-
 function ng(a) {
     y.call(this, a);
 }
 u(ng, y);
-
 function og(a) {
     y.call(this, a);
 }
 u(og, y);
 var pg = [1, 2, 3];
-
 function qg(a) {
     y.call(this, a);
 }
 u(qg, y);
-
 function rg(a) {
     y.call(this, a, -1, sg);
 }
 u(rg, y);
 var sg = [6, 7, 9, 10, 11];
-
 function tg(a) {
     y.call(this, a, -1, ug);
 }
 u(tg, y);
-
 function vg(a) {
     y.call(this, a);
 }
 u(vg, y);
-
 function wg(a) {
     y.call(this, a);
 }
 u(wg, y);
 var ug = [1];
 var xg = [1, 2];
-
 function yg(a) {
     y.call(this, a, -1, zg);
 }
 u(yg, y);
-
 function Ag(a) {
     y.call(this, a);
 }
 u(Ag, y);
-
 function Bg(a) {
     y.call(this, a, -1, Cg);
 }
 u(Bg, y);
-
 function Dg(a) {
     y.call(this, a);
 }
 u(Dg, y);
-
 function Eg(a) {
     y.call(this, a);
 }
 u(Eg, y);
-
 function Fg(a) {
     y.call(this, a);
 }
 u(Fg, y);
-
 function Gg(a) {
     y.call(this, a);
 }
 u(Gg, y);
 var zg = [1, 2, 5, 7];
 var Cg = [2, 5, 6, 11];
-
 function Hg(a) {
     y.call(this, a);
 }
 u(Hg, y);
-
 function Ig(a) {
     if (1 != a.nodeType) var b = !1;
     else if ((b = 'INS' == a.tagName))
@@ -22032,7 +20978,6 @@ function Ig(a) {
         }
     return b;
 }
-
 function Jg(a, b, c) {
     switch (c) {
         case 0:
@@ -22054,17 +20999,14 @@ function Jg(a, b, c) {
     }
     Ig(b) && (b.setAttribute('data-init-display', b.style.display), (b.style.display = 'block'));
 }
-
 function O(a, b) {
     this.h = a;
     this.defaultValue = void 0 === b ? !1 : b;
 }
-
 function P(a, b) {
     this.h = a;
     this.defaultValue = void 0 === b ? 0 : b;
 }
-
 function Kg(a, b) {
     b = void 0 === b ? [] : b;
     this.h = a;
@@ -22141,7 +21083,6 @@ var Nh = new Kg(1932, [
 ]);
 var Oh = new O(401243724);
 var Ph = new P(1935);
-
 function Qh() {
     var a = {};
     this.i = (b, c) => (null != a[b] ? a[b] : c);
@@ -22150,25 +21091,20 @@ function Qh() {
     this.h = (b, c) => (null != a[b] ? a[b] : c);
     this.m = () => {};
 }
-
 function Q(a) {
     return L(Qh).i(a.h, a.defaultValue);
 }
-
 function R(a) {
     return L(Qh).j(a.h, a.defaultValue);
 }
-
 function Rh() {
     return L(Qh).l(Og.h, Og.defaultValue);
 }
-
 function Sh(a, b, c) {
     function d(f) {
         f = Th(f);
         return null == f ? !1 : c > f;
     }
-
     function e(f) {
         f = Th(f);
         return null == f ? !1 : c < f;
@@ -22209,11 +21145,9 @@ function Sh(a, b, c) {
     }
     throw Error('Un-handled RelativePosition: ' + b);
 }
-
 function Th(a) {
     return a.hasOwnProperty('google-ama-order-assurance') ? a['google-ama-order-assurance'] : null;
 }
-
 function Uh(a, b) {
     return a && b(a) ? a : null;
 }
@@ -22222,7 +21156,6 @@ var Vh = {
     horizontal: 2,
     vertical: 4
 };
-
 function Wh(a, b) {
     do {
         var c = zc(a, b);
@@ -22230,7 +21163,6 @@ function Wh(a, b) {
     } while ((a = a.parentElement));
     return !0;
 }
-
 function Xh(a, b) {
     for (var c = ['width', 'height'], d = 0; d < c.length; d++) {
         var e = 'google_ad_' + c[d];
@@ -22241,15 +21173,12 @@ function Xh(a, b) {
         }
     }
 }
-
 function Yh(a, b) {
     return !((Kc.test(b.google_ad_width) || Jc.test(a.style.width)) && (Kc.test(b.google_ad_height) || Jc.test(a.style.height)));
 }
-
 function Zh(a, b) {
     return (a = $h(a, b)) ? a.y : 0;
 }
-
 function $h(a, b) {
     try {
         var c = b.document.documentElement.getBoundingClientRect();
@@ -22262,14 +21191,12 @@ function $h(a, b) {
     return null;
 }
 }
-
 function ai(a) {
     var b = 0;
     var c;
     for (c in Vh) - 1 != a.indexOf(c) && (b |= Vh[c]);
     return b;
 }
-
 function bi(a, b, c, d, e) {
     if (a.top != a) return hd(a) ? 3 : 16;
     if (!(488 > Cf(a))) return 4;
@@ -22291,7 +21218,6 @@ function bi(a, b, c, d, e) {
     }
     return a;
 }
-
 function ci(a, b, c, d) {
     var e = bi(b, c, a, 0.3, d);
     !0 !== e ?
@@ -22301,7 +21227,6 @@ function ci(a, b, c, d) {
         (a = 9);
     return a;
 }
-
 function di(a, b, c) {
     a = a.style;
     'rtl' == b
@@ -22313,7 +21238,6 @@ function di(a, b, c) {
         a.setProperty('margin-left', c, 'important') :
         (a.marginLeft = c);
 }
-
 function ei(a, b) {
     if (3 == b.nodeType) return /\S/.test(b.data);
     if (1 == b.nodeType) {
@@ -22325,12 +21249,10 @@ function ei(a, b) {
     }
     return !1;
 }
-
 function fi(a, b, c) {
     a = $h(b, a);
     return 'rtl' == c ? -a.x : a.x;
 }
-
 function gi(a, b) {
     var c;
     c = (c = b.parentElement) ? ((c = zc(c, a)) ? c.direction : '') : '';
@@ -22349,7 +21271,6 @@ function gi(a, b) {
         b.style.zIndex = 30;
     }
 }
-
 function S(a, b) {
     this.l = a;
     this.j = b;
@@ -22364,31 +21285,25 @@ S.prototype.h = function(a) {
     return 300 < a && 300 < this.j ? this.l : Math.min(1200, Math.round(a));
 };
 S.prototype.i = () => {};
-
 function hi(a, b, c, d) {
     d = void 0 === d ? (f) => f : d;
     var e;
     return (a.style && a.style[c] && d(a.style[c])) || ((e = zc(a, b)) && e[c] && d(e[c])) || null;
 }
-
 function ii(a) {
     return (b) => b.minWidth() <= a;
 }
-
 function ji(a, b, c, d) {
     var e = a && ki(c, b);
     var f = li(b, d);
     return (g) => !(e && g.height() >= f);
 }
-
 function mi(a) {
     return (b) => b.height() <= a;
 }
-
 function ki(a, b) {
     return Zh(a, b) < Bf(b).clientHeight - 100;
 }
-
 function ni(a, b) {
     var c = hi(b, a, 'height', I);
     if (c) return c;
@@ -22402,7 +21317,6 @@ function ni(a, b) {
     while ((b = b.parentElement) && 'HTML' != b.tagName);
     return c;
 }
-
 function li(a, b) {
     var c = 0 == cd(a);
     return b && c ? Math.max(250, (2 * Bf(a).clientHeight) / 3) : 250;
@@ -22427,7 +21341,6 @@ var oi =
         (T.google_max_ad_content_rating = !0),
         T);
 var pi = RegExp('(^| )adsbygoogle($| )');
-
 function qi(a, b) {
     for (var c = 0; c < b.length; c++) {
         var d = b[c];
@@ -22435,14 +21348,12 @@ function qi(a, b) {
         a[e] = d.value;
     }
 }
-
 function ri(a, b, c, d) {
     this.l = a;
     this.i = b;
     this.j = c;
     this.h = d;
 }
-
 function si(a, b) {
     var c = [];
     try {
@@ -22477,7 +21388,6 @@ ri.prototype.toString = function() {
         ignoreMode: this.h
     });
 };
-
 function ti(a, b) {
     if (null == a.h) return b;
     switch (a.h) {
@@ -22493,7 +21403,6 @@ function ti(a, b) {
             throw Error('Unknown ignore mode: ' + a.h);
     }
 }
-
 function ui(a) {
     var b = [];
     Mf(a.getElementsByTagName('p'), (c) => {
@@ -22501,7 +21410,6 @@ function ui(a) {
     });
     return b;
 }
-
 function vi(a) {
     if (3 == a.nodeType) return a.length;
     if (1 != a.nodeType || 'SCRIPT' == a.tagName) return 0;
@@ -22511,11 +21419,9 @@ function vi(a) {
     });
     return b;
 }
-
 function wi(a) {
     return 0 == a.length || isNaN(a[0]) ? a : '\\' + (30 + parseInt(a[0], 10)) + ' ' + a.substring(1);
 }
-
 function xi(a) {
     if (!a) return null;
     var b = z(a, 7);
@@ -22538,7 +21444,6 @@ var zi = {
     3: 3,
     0: 0
 };
-
 function yi(a) {
     return null == a ? a : zi[a];
 }
@@ -22548,16 +21453,13 @@ var Ai = {
     3: 2,
     4: 3
 };
-
 function Bi(a) {
     return (a.google_ama_state = a.google_ama_state || {});
 }
-
 function Ci(a) {
     a = Bi(a);
     return (a.optimization = a.optimization || {});
 }
-
 function Di(a) {
     switch (z(a, 8)) {
         case 1:
@@ -22582,7 +21484,6 @@ function Di(a) {
             return Uf(Error('Invalid type: ' + z(a, 8)));
     }
 }
-
 function Ei(a, b) {
     function c() {
         d.push({
@@ -22629,12 +21530,10 @@ function Ei(a, b) {
     }
     return d;
 }
-
 function Fi(a, b) {
     this.i = a;
     this.h = b;
 }
-
 function Gi(a, b) {
     var c = new Xf();
     var d = new Wf();
@@ -22664,7 +21563,6 @@ function Gi(a, b) {
     });
     return new Fi(c, d);
 }
-
 function Ii(a, b, c) {
     G(b, Yf, 1) &&
         (a = Ki(a, G(b, Yf, 1))) &&
@@ -22676,7 +21574,6 @@ function Ii(a, b, c) {
             c.set(d, 3);
         });
 }
-
 function Ji(a, b, c) {
     G(b, Yf, 1) &&
         (a = Ki(a, G(b, Yf, 1))) &&
@@ -22684,15 +21581,12 @@ function Ji(a, b, c) {
             c.add(Aa(d));
         });
 }
-
 function Hi(a, b) {
     return (a = Ki(a, b)) && 0 < a.length ? a[0] : null;
 }
-
 function Ki(a, b) {
     return (b = xi(b)) ? si(b, a) : null;
 }
-
 function Li(a, b) {
     if (!a) return !1;
     a = zc(a, b);
@@ -22700,16 +21594,13 @@ function Li(a, b) {
     a = a.cssFloat || a.styleFloat;
     return 'left' == a || 'right' == a;
 }
-
 function Mi(a) {
     for (a = a.previousSibling; a && 1 != a.nodeType;) a = a.previousSibling;
     return a ? a : null;
 }
-
 function Ni(a) {
     return !!a.nextSibling || (!!a.parentNode && Ni(a.parentNode));
 }
-
 function Oi(a) {
     var b = {};
     a &&
@@ -22718,7 +21609,6 @@ function Oi(a) {
         });
     return b;
 }
-
 function Pi(a, b, c, d, e) {
     this.h = a;
     this.A = b;
@@ -22728,7 +21618,6 @@ function Pi(a, b, c, d, e) {
     this.i = 0;
     this.l = !1;
 }
-
 function Qi(a, b) {
     if (a.l) return !0;
     a.l = !0;
@@ -22768,7 +21657,6 @@ for (e = 0; e < c.length; e++) {
 kd(7, [!1, a.i, !1]);
 return !1;
 }
-
 function Ri(a, b, c, d) {
     if ((b && null != z(b, 4) && d[z(G(b, dg, 4), 2)]) || 1 != z(b, 8)) return null;
     d = G(b, Yf, 1);
@@ -22930,7 +21818,6 @@ function Ri(a, b, c, d) {
     }
     return B ? f : null;
 }
-
 function Si(a, b) {
     return Qf(
         Tf(Di(b).map(hg), (c) => {
@@ -22938,7 +21825,6 @@ function Si(a, b) {
         })
     );
 }
-
 function Ti(a) {
     if (Q(ah)) var b = null;
     else
@@ -22954,12 +21840,10 @@ function Ti(a) {
 }
 return c;
 }
-
 function Ui(a) {
     y.call(this, a);
 }
 u(Ui, y);
-
 function Vi(a) {
     try {
         var b = a.localStorage.getItem('google_auto_fc_cmp_setting') || null;
@@ -22969,22 +21853,18 @@ function Vi(a) {
 var c = b;
 return c ? Vf(() => pb(Ui, c ? JSON.parse(c) : null)) : Sf(null);
 }
-
 function Wi() {
     this.S = {};
 }
-
 function Xi() {
     if (Yi) return Yi;
     var a = Xc() || fd();
     var b = a.google_persistent_state_async;
     return null != b && 'object' == typeof b && null != b.S && 'object' == typeof b.S ? (Yi = b) : (a.google_persistent_state_async = Yi = new Wi());
 }
-
 function Zi(a) {
     return $i[a] || 'google_ps_' + a;
 }
-
 function aj(a, b, c) {
     b = Zi(b);
     a = a.S;
@@ -22994,7 +21874,6 @@ function aj(a, b, c) {
 var Yi = null;
 var bj = {};
 var $i = ((bj[8] = 'google_prev_ad_formats_by_region'), (bj[9] = 'google_prev_ad_slotnames_by_region'), bj);
-
 function cj(a) {
     this.h = a || {
         cookie: ''
@@ -23045,17 +21924,14 @@ cj.prototype.clear = function() {
             domain: void 0
         });
 };
-
 function dj(a) {
     y.call(this, a);
 }
 u(dj, y);
-
 function ej(a) {
     var b = new dj();
     return A(b, 5, a);
 }
-
 function fj() {
     this.v = this.v;
     this.D = this.D;
@@ -23065,7 +21941,6 @@ fj.prototype.j = function() {
     if (this.D)
         for (; this.D.length;) this.D.shift()();
 };
-
 function gj(a) {
     void 0 !== a.addtlConsent && 'string' !== typeof a.addtlConsent && (a.addtlConsent = void 0);
     void 0 !== a.gdprApplies && 'boolean' !== typeof a.gdprApplies && (a.gdprApplies = void 0);
@@ -23075,7 +21950,6 @@ function gj(a) {
         0 :
         3;
 }
-
 function hj(a, b) {
     b = void 0 === b ? 500 : b;
     fj.call(this);
@@ -23095,7 +21969,6 @@ hj.prototype.j = function() {
     delete this.i;
     fj.prototype.j.call(this);
 };
-
 function ij(a) {
     return 'function' === typeof a.h.__tcfapi || null != jj(a);
 }
@@ -23127,7 +22000,6 @@ hj.prototype.addEventListener = function(a) {
 hj.prototype.removeEventListener = function(a) {
     a && a.listenerId && kj(this, 'removeEventListener', null, a.listenerId);
 };
-
 function kj(a, b, c, d) {
     c || (c = () => {});
     if ('function' === typeof a.h.__tcfapi)(a = a.h.__tcfapi), a(b, 2, c, d);
@@ -23149,13 +22021,11 @@ function kj(a, b, c, d) {
                 ));
     } else c({}, !1);
 }
-
 function jj(a) {
     if (a.i) return a.i;
     a.i = Mc(a.h, '__tcfapiLocator');
     return a.i;
 }
-
 function lj(a) {
     a.l ||
         ((a.l = (b) => {
@@ -23166,7 +22036,6 @@ function lj(a) {
             }),
             kc(a.h, 'message', a.l));
 }
-
 function mj(a) {
     var b = a.ba;
     var c = a.Ra;
@@ -23184,7 +22053,6 @@ function mj(a) {
         .then((e) => e.map((f) => qj(b, f)))
         .then(d);
 }
-
 function nj(a) {
     var b = a.ba;
     var c = a.ka;
@@ -23213,11 +22081,9 @@ function nj(a) {
     c = Xi();
     return (c = aj(c, 24, void 0)) ? qj(b, pj(c)) : Uf(Error('tcunav'));
 }
-
 function oj(a, b) {
     return n.Promise.race([rj(), sj(a, b)]);
 }
-
 function rj() {
     return new n.Promise((a) => {
         var b = Xi();
@@ -23229,17 +22095,14 @@ function rj() {
         b.S[Zi(25)] = c;
     }).then(tj);
 }
-
 function sj(a, b) {
     return new n.Promise((c) => {
         a.setTimeout(c, b, Uf(Error('tcto')));
     });
 }
-
 function tj(a) {
     return a ? Sf(a) : Uf(Error('tcnull'));
 }
-
 function pj(a) {
     var b = void 0 === b ? !1 : b;
     if (!1 === a.gdprApplies) var c = !0;
@@ -23281,7 +22144,6 @@ function pj(a) {
     else a = !1;
     return ej(a);
 }
-
 function qj(a, b) {
     a: {
         a = void 0 === a ? window : a;
@@ -23294,11 +22156,9 @@ function qj(a, b) {
     }
     return (b = c) ? Sf(b) : Uf(Error('unav'));
 }
-
 function uj(a) {
     this.exception = a;
 }
-
 function vj(a, b, c) {
     this.j = a;
     this.h = b;
@@ -23322,7 +22182,6 @@ vj.prototype.l = function() {
     wj(this, a);
 }
 };
-
 function wj(a, b) {
     try {
         var c = a.i;
@@ -23335,29 +22194,24 @@ function wj(a, b) {
     a.i.reject(f);
 }
 }
-
 function xj(a) {
     y.call(this, a, -1, yj);
 }
 u(xj, y);
 var yj = [6];
-
 function zj(a) {
     y.call(this, a, -1, Aj);
 }
 u(zj, y);
-
 function Bj(a) {
     y.call(this, a);
 }
 u(Bj, y);
-
 function Cj(a) {
     y.call(this, a);
 }
 u(Cj, y);
 var Aj = [7];
-
 function Dj(a) {
     a = (a = new cj(a).get('FCCDCF', '')) ? a : null;
     try {
@@ -23366,7 +22220,6 @@ function Dj(a) {
     return null;
 }
 }
-
 function Ej(a) {
     function b() {
         if (!a.frames.__uspapiLocator)
@@ -23386,7 +22239,6 @@ function Ej(a) {
     var c = a.document;
     b();
 }
-
 function Fj(a) {
     this.h = a;
     this.i = a.document;
@@ -23394,12 +22246,10 @@ function Fj(a) {
     (a = Dj(this.i)) && G(a, Bj, 4);
     (a = Dj(this.i)) && G(a, Bj, 4);
 }
-
 function Gj() {
     var a = window;
     a.__uspapi || a.frames.__uspapiLocator || ((a = new Fj(a)), Hj(a));
 }
-
 function Hj(a) {
     !a.j ||
         a.h.__uspapi ||
@@ -23420,7 +22270,6 @@ Fj.prototype.l = function(a, b, c) {
             !0
         );
 };
-
 function Ij(a) {
     var b = /[a-zA-Z0-9._~-]/;
     var c = /%[89a-zA-Z]./;
@@ -23432,7 +22281,6 @@ function Ij(a) {
         return d.toUpperCase();
     });
 }
-
 function Jj(a) {
     for (var b = '', c = /[/%?&=]/, d = 0; d < a.length; ++d) {
         var e = a[d];
@@ -23440,7 +22288,6 @@ function Jj(a) {
     }
     return b;
 }
-
 function Kj(a, b) {
     a = Jj(Ij(a.location.pathname)).replace(/(^\/)|(\/$)/g, '');
     var c = Fc(a);
@@ -23460,7 +22307,6 @@ function Kj(a, b) {
         }) || null
     );
 }
-
 function Lj(a) {
     for (var b = {};;) {
         b[Fc(a)] = !0;
@@ -23470,12 +22316,10 @@ function Lj(a) {
 }
 var Mj = {};
 var Nj = ((Mj.google_ad_channel = !0), (Mj.google_ad_host = !0), Mj);
-
 function Oj(a, b) {
     a.location.href && a.location.href.substring && (b.url = a.location.href.substring(0, 200));
     uf('ama', b, 0.01);
 }
-
 function Pj(a) {
     var b = {};
     Ec(Nj, (c, d) => {
@@ -23483,16 +22327,13 @@ function Pj(a) {
     });
     return b;
 }
-
 function Qj(a) {
     a = G(a, Ag, 3);
     return !a || z(a, 1) <= Date.now() ? !1 : !0;
 }
-
 function Rj(a) {
     return (a = Ti(a)) ? (Qj(a) ? a : null) : null;
 }
-
 function Sj(a, b) {
     try {
         b.removeItem('google_ama_config');
@@ -23502,25 +22343,21 @@ function Sj(a, b) {
         });
     }
 }
-
 function Tj(a) {
     Oj(a, {
         atf: 1
     });
 }
-
 function Uj(a, b) {
     (a.google_ama_state = a.google_ama_state || {}).exception = b;
     Oj(a, {
         atf: 0
     });
 }
-
 function U(a) {
     a.google_ad_modifications || (a.google_ad_modifications = {});
     return a.google_ad_modifications;
 }
-
 function Vj(a) {
     a = U(a);
     var b = a.space_collapsing || 'none';
@@ -23531,30 +22368,25 @@ function Vj(a) {
         } :
         null;
 }
-
 function Wj(a, b) {
     a = U(a);
     a.tag_partners = a.tag_partners || [];
     a.tag_partners.push(b);
 }
-
 function Xj(a, b) {
     a = U(a);
     a.remove_ads_by_default = !0;
     a.space_collapsing = 'slot';
     a.ablation_viewport_offset = b;
 }
-
 function Yj(a) {
     U(J).allow_second_reactive_tag = a;
 }
-
 function Zj() {
     var a = U(window);
     a.afg_slotcar_vars || (a.afg_slotcar_vars = {});
     return a.afg_slotcar_vars;
 }
-
 function ak(a, b) {
     if (!a) return !1;
     a = a.hash;
@@ -23563,7 +22395,6 @@ function ak(a, b) {
     b = bk(b);
     return 'go' != b && -1 != a.indexOf(b) ? !0 : !1;
 }
-
 function bk(a) {
     var b = '';
     Ec(a.split('_'), (c) => {
@@ -23571,7 +22402,6 @@ function bk(a) {
     });
     return b;
 }
-
 function ck() {
     var a = this;
     this.promise = new n.Promise((b, c) => {
@@ -23579,26 +22409,22 @@ function ck() {
         a.reject = c;
     });
 }
-
 function dk() {
     var a = new ck();
     this.promise = a.promise;
     this.resolve = a.resolve;
 }
-
 function ek(a) {
     v.google_llp || (v.google_llp = {});
     var b = v.google_llp;
     b[7] || ((b[7] = new dk()), a && a());
     return b[7];
 }
-
 function fk(a) {
     return ek(() => {
         xc(v.document, a);
     }).promise;
 }
-
 function gk(a) {
     var b = {};
     return {
@@ -23606,7 +22432,6 @@ function gk(a) {
         google_ad_client: a
     };
 }
-
 function hk(a) {
     if (v.google_apltlad || v.top != v || !a.google_ad_client) return null;
     v.google_apltlad = !0;
@@ -23619,17 +22444,14 @@ function hk(a) {
     if ('google_ad_section' in a || 'google_ad_region' in a) c.google_ad_section = a.google_ad_section || a.google_ad_region;
     return b;
 }
-
 function ik(a) {
     return za(a.enable_page_level_ads) && 7 === a.enable_page_level_ads.google_pgb_reactive;
 }
-
 function jk(a, b) {
     this.h = v;
     this.j = a;
     this.i = b;
 }
-
 function kk(a) {
     mj({
         ba: a.h,
@@ -23640,7 +22462,6 @@ function kk(a) {
         }
     });
 }
-
 function lk(a, b) {
     Tf(
         Rf(b, (c) => {
@@ -23650,7 +22471,6 @@ function lk(a, b) {
         (c) => mk(c.message)
     );
 }
-
 function mk(a) {
     uf(
         'abg::amalserr', {
@@ -23662,7 +22482,6 @@ function mk(a) {
         0.01
     );
 }
-
 function nk(a, b, c) {
     if (!U(J).ama_ran_on_page) {
         var d = Rj(c);
@@ -23724,7 +22543,6 @@ function nk(a, b, c) {
         } else Sj(a, c);
     }
 }
-
 function ok(a, b, c) {
     a = a.style;
     a.border = 'none';
@@ -23744,7 +22562,6 @@ var pk = {
     '468x15': !0,
     '728x15': !0
 };
-
 function qk(a, b) {
     if (15 == b) {
         if (728 <= a) return 728;
@@ -23757,7 +22574,6 @@ function qk(a, b) {
     }
     return null;
 }
-
 function V(a, b, c, d) {
     d = void 0 === d ? !1 : d;
     S.call(this, a, b);
@@ -23771,12 +22587,10 @@ V.prototype.na = function() {
 V.prototype.i = function(a, b, c) {
     b.google_ad_resize || ((c.style.height = this.height() + 'px'), (b.rpe = !0));
 };
-
 function rk(a) {
     return (b) => !!(b.aa & a);
 }
 var sk = ab('script');
-
 function tk(a, b, c, d, e, f, g, h, k, l, m, r) {
     this.v = a;
     this.R = b;
@@ -23795,7 +22609,6 @@ function tk(a, b, c, d, e, f, g, h, k, l, m, r) {
 tk.prototype.size = function() {
     return this.R;
 };
-
 function uk(a, b, c) {
     null != a.aa && (c.google_responsive_formats = a.aa);
     null != a.O && (c.google_safe_for_responsive_override = a.O);
@@ -23862,15 +22675,11 @@ function uk(a, b, c) {
                 '</p>\n          </div>'));
 }
 /*
-
 Copyright 2019 The AMP HTML Authors. All Rights Reserved.
-
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
-
 http://www.apache.org/licenses/LICENSE-2.0
-
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS-IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -23910,7 +22719,6 @@ var Ak =
         (zk.pub_control_text = 100),
         (zk.pub_control_text_card = 150),
         zk);
-
 function Bk(a) {
     var b = 0;
     a.K && b++;
@@ -23953,7 +22761,6 @@ function Bk(a) {
         Ka: b
     };
 }
-
 function Ck(a) {
     return 1200 <= a ? {
             width: 1200,
@@ -23976,7 +22783,6 @@ function Ck(a) {
         };
 }
 var Dk = ['google_content_recommendation_ui_type', 'google_content_recommendation_columns_num', 'google_content_recommendation_rows_num'];
-
 function Ek(a, b) {
     S.call(this, a, b);
 }
@@ -23984,7 +22790,6 @@ u(Ek, S);
 Ek.prototype.h = function(a) {
     return Math.min(1200, Math.max(this.minWidth(), Math.round(a)));
 };
-
 function Fk(a, b) {
     Gk(a, b);
     if ('pedestal' == b.google_content_recommendation_ui_type) return new tk(9, new Ek(a, Math.floor(a * b.google_phwr)));
@@ -24019,7 +22824,6 @@ function Fk(a, b) {
     Hk(b, a);
     return new tk(9, new Ek(a.X, a.V));
 }
-
 function Ik(a, b) {
     Gk(a, b);
     var c = Bk({
@@ -24078,7 +22882,6 @@ function Ik(a, b) {
     Hk(b, a);
     return new tk(9, new Ek(a.X, a.V));
 }
-
 function Gk(a, b) {
     if (0 >= a)
         throw new K(
@@ -24089,13 +22892,11 @@ function Gk(a, b) {
             '. Please ensure to put this Matched Content slot into a non-zero width div container.'
         );
 }
-
 function Hk(a, b) {
     a.google_content_recommendation_ui_type = b.K;
     a.google_content_recommendation_columns_num = b.F;
     a.google_content_recommendation_rows_num = b.G;
 }
-
 function Jk(a, b) {
     S.call(this, a, b);
 }
@@ -24124,7 +22925,6 @@ var Kk = {
         return 420 >= a ? a / 1.2 : 460 >= a ? a / 1.91 + 130 : 800 >= a ? a / 4 : 200;
     }
 };
-
 function Lk(a, b) {
     S.call(this, a, b);
 }
@@ -24132,7 +22932,6 @@ u(Lk, S);
 Lk.prototype.h = function() {
     return Math.min(1200, this.minWidth());
 };
-
 function Mk(a, b, c, d, e) {
     var f = e.google_ad_layout || 'image-top';
     if ('in-article' == f) {
@@ -24192,7 +22991,6 @@ function Mk(a, b, c, d, e) {
     b = 'in-article' !== f || c || a !== b ? Math.ceil(d(a)) : Math.ceil(1.25 * d(a));
     return new tk(11, 'in-article' == f ? new Lk(a, b) : new S(a, b));
 }
-
 function Nk(a) {
     return (b) => {
         for (var c = a.length - 1; 0 <= c; --c)
@@ -24200,7 +22998,6 @@ function Nk(a) {
         return !0;
     };
 }
-
 function Ok(a, b) {
     for (var c = Pk.slice(0), d = c.length, e = null, f = 0; f < d; ++f) {
         var g = c[f];
@@ -24231,7 +23028,6 @@ var W = [
     new V(120, 120, 1, !0)
 ];
 var Pk = [W[6], W[12], W[3], W[0], W[7], W[14], W[1], W[8], W[10], W[4], W[15], W[2], W[11], W[5], W[13], W[9], W[16]];
-
 function Qk(a, b, c, d, e) {
     'false' == e.google_full_width_responsive ?
         (c = {
@@ -24264,7 +23060,6 @@ function Qk(a, b, c, d, e) {
             C: b
         };
 }
-
 function Sk(a, b, c, d, e) {
     var f = sf(247, () => Qk(a, b, c, d, e));
     var g = f.B;
@@ -24284,11 +23079,9 @@ function Sk(a, b, c, d, e) {
     x = hi(d, c, 'zIndex') || '';
     return new tk(t, g, r, null, m, f, h, E, B, l, k, x);
 }
-
 function Rk(a) {
     return 'auto' == a || /^((^|,) *(horizontal|vertical|rectangle) *)+$/.test(a);
 }
-
 function Tk(a, b, c, d, e, f) {
     b = 'auto' == b ? (0.25 >= a / Math.min(1200, Cf(c)) ? 4 : 3) : ai(b);
     var g = !1;
@@ -24358,7 +23151,6 @@ function Tk(a, b, c, d, e, f) {
         Ja: k
     };
 }
-
 function Uk(a, b) {
     if ('auto' == a) return 1;
     switch (b) {
@@ -24379,17 +23171,14 @@ function Uk(a, b) {
     }
     throw Error('bad mask');
 }
-
 function Wk(a, b, c, d, e) {
     var f = e.google_ad_height || hi(c, b, 'height', I);
     b = Mk(a, b, c, f, e).size();
     return b.minWidth() * b.height() > a * d.height() ? new V(b.minWidth(), b.height(), 1) : d;
 }
-
 function Vk(a) {
     return Q(rh) || (a.location && '#hffwroe2etoq' == a.location.hash);
 }
-
 function Xk(a, b, c, d, e) {
     var f;
     (f = Cf(b)) ?
@@ -24419,7 +23208,6 @@ function Xk(a, b, c, d, e) {
     a = Tk(f, 'auto', b, c, e, !0);
     return new tk(1, a.W, a.na, 2, !0, g, a.T);
 }
-
 function Yk(a, b) {
     var c = b.google_ad_format;
     if ('autorelaxed' == c) {
@@ -24443,7 +23231,6 @@ function Yk(a, b) {
     }
     if (27 === b.google_reactive_ad_format) return Zk(b), 1;
 }
-
 function $k(a, b, c, d, e) {
     e = b.offsetWidth || ((c.google_ad_resize || (void 0 === e ? !1 : e)) && hi(b, d, 'width', I)) || c.google_ad_width || 0;
     4 === a && ((c.google_ad_format = 'auto'), (a = 1));
@@ -24452,7 +23239,6 @@ function $k(a, b, c, d, e) {
     uk(f, e, c);
     1 != a && ((a = f.size().height()), (b.style.height = a + 'px'));
 }
-
 function al(a, b, c, d, e) {
     var f = d.google_ad_height || hi(c, e, 'height', I);
     switch (a) {
@@ -24473,12 +23259,10 @@ function al(a, b, c, d, e) {
             return Xk(b, e, c, f, d);
     }
 }
-
 function Zk(a) {
     a.google_ad_format = 'auto';
     a.armr = 3;
 }
-
 function bl(a, b) {
     var c = hd(b);
     if (c) {
@@ -24504,18 +23288,15 @@ var hl = la(['https://pagead2.googlesyndication.com/pagead/managed/js/adsense/',
 var il = la(['https://pagead2.googlesyndication.com/pagead/js/', '/', '/show_ads_impl_with_ama', '.js']);
 var jl = la(['https://pagead2.googlesyndication.com/pagead/managed/js/adsense/', '/show_ads_impl_instrumented', '.js']);
 var kl = la(['https://pagead2.googlesyndication.com/pagead/js/', '/', '/show_ads_impl_instrumented', '.js']);
-
 function ll(a) {
     y.call(this, a);
 }
 u(ll, y);
-
 function ml(a) {
     y.call(this, a, -1, nl);
 }
 u(ml, y);
 var nl = [1];
-
 function ol(a) {
     y.call(this, a, -1, pl);
 }
@@ -24527,7 +23308,6 @@ ol.prototype.$ = function() {
     return C(this, 7, 0);
 };
 var pl = [2];
-
 function ql(a) {
     y.call(this, a, -1, rl);
 }
@@ -24536,12 +23316,10 @@ ql.prototype.$ = function() {
     return C(this, 5, 0);
 };
 var rl = [2];
-
 function sl(a) {
     y.call(this, a, -1, tl);
 }
 u(sl, y);
-
 function ul(a) {
     y.call(this, a, -1, vl);
 }
@@ -24549,37 +23327,31 @@ u(ul, y);
 ul.prototype.$ = function() {
     return C(this, 1, 0);
 };
-
 function wl(a) {
     y.call(this, a);
 }
 u(wl, y);
 var tl = [1, 4, 2, 3];
 var vl = [2];
-
 function xl(a) {
     y.call(this, a);
 }
 u(xl, y);
 var yl = [13, 14];
 var zl = void 0;
-
 function Al() {
     Od(zl, Nd);
     return zl;
 }
-
 function Bl(a) {
     Od(zl, Qd);
     zl = a;
 }
-
 function Cl(a, b, c, d) {
     c = void 0 === c ? '' : c;
     d = void 0 === d ? null : d;
     return Dl(a, c, (e) => Xa(H(e, Jb, 2), (f) => z(f, 1) === b)) ? !0 : 1 === b ? El(c, d) : !1;
 }
-
 function El(a, b) {
     return b ?
         13 === xb(b, yl) ?
@@ -24589,34 +23361,28 @@ function El(a, b) {
         !1 :
         !1;
 }
-
 function Fl(a, b) {
     b = C(b, 18, 0); -
     1 !== b && (a.tmod = b);
 }
-
 function Gl(a) {
     var b = void 0 === b ? '' : b;
     var c = hd(J) || J;
     return Hl(c, a) ? !0 : Dl(J, b, (d) => Xa(sb(d, 3), (e) => e === a));
 }
-
 function Il(a) {
     return Dl(v, void 0 === a ? '' : a, () => !0);
 }
-
 function Hl(a, b) {
     a = (a = (a = a.location && a.location.hash) && a.match(/forced_clientside_labs=([\d,]+)/)) && a[1];
     return !!a && $a(a.split(','), b.toString());
 }
-
 function Dl(a, b, c) {
     a = hd(a) || a;
     var d = Jl(a);
     b && (b = id(String(b)));
     return Ob(d, (e, f) => Object.prototype.hasOwnProperty.call(d, f) && (!b || b === f) && c(e));
 }
-
 function Jl(a) {
     a = Kl(a);
     var b = {};
@@ -24628,7 +23394,6 @@ function Jl(a) {
     });
     return b;
 }
-
 function Kl(a) {
     return Q(Mg) ?
         ((a = nj({
@@ -24639,7 +23404,6 @@ function Kl(a) {
             a) :
         Ml(a.localStorage);
 }
-
 function Ml(a) {
     try {
         var b = a.getItem('google_adsense_settings');
@@ -24650,7 +23414,6 @@ function Ml(a) {
     return {};
 }
 }
-
 function Ll(a) {
     Q(Lg) &&
         uf(
@@ -24663,11 +23426,9 @@ function Ll(a) {
             0.01
         );
 }
-
 function Nl(a, b) {
     return a instanceof HTMLScriptElement && b.test(a.src) ? 0 : 1;
 }
-
 function Ol(a) {
     var b = J.document;
     if (b.currentScript) return Nl(b.currentScript, a);
@@ -24676,7 +23437,6 @@ function Ol(a) {
         if (0 === Nl(c.value, a)) return 0;
     return 1;
 }
-
 function Pl(a, b) {
     var c = {};
     var d = {};
@@ -24709,12 +23469,10 @@ function Pl(a, b) {
         f
     );
 }
-
 function Ql(a) {
     a = void 0 === a ? v : a;
     return a.ggeac || (a.ggeac = {});
 }
-
 function Rl(a, b) {
     try {
         var c = a.split('.');
@@ -24724,7 +23482,6 @@ function Rl(a, b) {
         if (typeof f === b) return f;
     } catch (g) {}
 }
-
 function Sl() {
     var a = {};
     this[Wd] =
@@ -24787,7 +23544,6 @@ function Sl() {
             a);
 }
 var Tl = [12, 13, 20];
-
 function Ul() {}
 Ul.prototype.init = function(a, b, c, d) {
     var e = this;
@@ -24812,7 +23568,6 @@ Ul.prototype.init = function(a, b, c, d) {
     this.i = c;
     return this;
 };
-
 function Vl(a, b, c) {
     var d = [];
     var e = Wl(a.l, b);
@@ -24838,13 +23593,11 @@ function Vl(a, b, c) {
     null == (l = a.i) || ze(l, b, c, d, k, 1);
     return d;
 }
-
 function Yl(a, b, c) {
     a.h[c] || (a.h[c] = []);
     a = a.h[c];
     $a(a, b) || a.push(b);
 }
-
 function Zl(a, b) {
     a.l.push(
         ...ma(
@@ -24855,7 +23608,6 @@ function Zl(a, b) {
         )
     );
 }
-
 function Xl(a, b, c, d) {
     var e = L(Ce).h;
     if (!ce(G(b, Rd, 3), e)) return null;
@@ -24901,7 +23653,6 @@ function Xl(a, b, c, d) {
     c = d.length * C(b, 1, 0);
     return (b = C(b, 4, 0)) ? bm(a, b, c, d) : am(a, d, c / 1e3);
 }
-
 function bm(a, b, c, d) {
     var e = null != a.m[b] ? a.m[b] : 1e3;
     if (0 >= e) return null;
@@ -24909,13 +23660,11 @@ function bm(a, b, c, d) {
     a.m[b] = d ? 0 : e - c;
     return d;
 }
-
 function am(a, b, c) {
     var d = a.j;
     var e = Ya(b, (f) => !!d[f.getId()]);
     return e ? e : a.D ? null : Ac(b, c);
 }
-
 function cm(a, b) {
     N(
         Ue,
@@ -24929,11 +23678,9 @@ function cm(a, b) {
     N(gf, (c) => Zl(a, c), b);
     N(Ve, (c, d) => Yl(a, c, d), b);
 }
-
 function Wl(a, b) {
     return ((a = Ya(a, (c) => c.$() == b)) && H(a, ql, 2)) || [];
 }
-
 function $l(a, b) {
     var c = H(a, ol, 2);
     var d = c.length;
@@ -24946,11 +23693,9 @@ function $l(a, b) {
     e = L(Ce).h;
     return !c || (e && !ce(G(c, Rd, 3), e)) ? null : c;
 }
-
 function dm() {
     this.h = () => {};
 }
-
 function em(a) {
     L(dm).h(a);
 }
@@ -24960,7 +23705,6 @@ var hm;
 var im;
 var jm;
 var km;
-
 function lm(a, b, c, d) {
     var e = 1;
     d = void 0 === d ? Ql() : d;
@@ -24991,7 +23735,6 @@ function lm(a, b, c, d) {
             em(L(Sl)),
             b && em(b));
 }
-
 function mm(a, b) {
     a = void 0 === a ? Ql() : a;
     b = void 0 === b ? 0 : b;
@@ -25003,7 +23746,6 @@ function mm(a, b) {
     L(dm).h = kf(jf, a);
     L(Qh).m();
 }
-
 function nm(a, b) {
     var c = L(Qh);
     c.i = (d, e) => kf($e, a, () => !1)(d, e, b);
@@ -25014,7 +23756,6 @@ function nm(a, b) {
         kf(We, a)(b);
     };
 }
-
 function om(a, b, c) {
     var d = U(a);
     if (d.plle) mm(Ql(a), 1);
@@ -25045,7 +23786,6 @@ function om(a, b, c) {
         ak(a.location, 'google_mc_lab') && L( of ).j(44738307);
     }
 }
-
 function pm(a) {
     qf.Oa((b) => {
         b.shv = String(a);
@@ -25056,7 +23796,6 @@ function pm(a) {
         b.eid = c.concat(d.eids).join(',');
     });
 }
-
 function qm(a) {
     var b = a.jb;
     return a.$a || ('dev' === b ? 'dev' : '');
@@ -25069,7 +23808,6 @@ var sm =
         (rm.google_pause_ad_requests = !0),
         (rm.google_user_agent_client_hint = !0),
         rm);
-
 function tm(a) {
     return (a = a.innerText || a.innerHTML) &&
         (a = a
@@ -25080,7 +23818,6 @@ function tm(a) {
         a[1] :
         null;
 }
-
 function um(a) {
     if ((a = a.innerText || a.innerHTML))
         if (
@@ -25090,7 +23827,6 @@ function um(a) {
             return a[1];
     return null;
 }
-
 function vm(a) {
     switch (a) {
         case 'true':
@@ -25113,7 +23849,6 @@ function vm(a) {
     }
 }
 var wm = 'undefined' === typeof sttc ? void 0 : sttc;
-
 function xm(a) {
     var b = qf;
     try {
@@ -25126,21 +23861,18 @@ function xm(a) {
     return new xl();
 }
 var ym = L(Qh).h(yh.h, yh.defaultValue);
-
 function zm() {
     var a = J.document;
     a = void 0 === a ? window.document : a;
     Rc(ym, a);
 }
 var Am = L(Qh).h(zh.h, zh.defaultValue);
-
 function Bm() {
     var a = J.document;
     a = void 0 === a ? window.document : a;
     Rc(Am, a);
 }
 var Cm = la(['https://pagead2.googlesyndication.com/pagead/js/err_rep.js']);
-
 function Dm() {
     this.h = null;
     this.j = !1;
@@ -25191,7 +23923,6 @@ aa.La = function(a, b, c, d) {
         return e.ma(a, () => b.apply(c, f), d);
     };
 };
-
 function Em(a, b, c) {
     var d = window;
     return function(...args) {
@@ -25218,21 +23949,17 @@ function Em(a, b, c) {
         return g;
     };
 }
-
 function Fm(a, b) {
     return Em(a, b, (c, d) => {
         new Dm().I(c, d);
     });
 }
-
 function Gm(a, b) {
     return null == b ? '&' + a + '=null' : '&' + a + '=' + Math.floor(b);
 }
-
 function Hm(a, b) {
     return '&' + a + '=' + b.toFixed(3);
 }
-
 function Im() {
     var a = new n.Set();
     try {
@@ -25241,12 +23968,10 @@ function Im() {
     } catch (e) {}
     return a;
 }
-
 function Jm(a) {
     a = a.id;
     return null != a && (Im().has(a) || p(a, 'startsWith').call(a, 'google_ads_iframe_') || p(a, 'startsWith').call(a, 'aswift'));
 }
-
 function Km(a, b, c) {
     if (!a.sources) return !1;
     var d = R(Dh);
@@ -25260,7 +23985,6 @@ function Km(a, b, c) {
     }
     return !1;
 }
-
 function Lm(a) {
     if (!a.sources) return 0;
     a = a.sources.filter((b) => b.previousRect && b.currentRect);
@@ -25271,22 +23995,18 @@ function Lm(a) {
     }
     return 0;
 }
-
 function Om(a) {
     return Pm(a, (b) => b.currentRect);
 }
-
 function Mm(a) {
     return Pm(a, (b) => b.previousRect);
 }
-
 function Pm(a, b) {
     return a.sources.reduce((c, d) => {
         d = b(d);
         return c ? (d && 0 !== d.width * d.height ? (d.top < c.top ? d : c) : c) : d;
     }, null);
 }
-
 function Qm() {
     fj.call(this);
     this.i = this.h = this.O = this.N = this.H = 0;
@@ -25301,7 +24021,6 @@ function Qm() {
     this.ea = () => {};
 }
 u(Qm, fj);
-
 function Rm() {
     var a = new Qm();
     if (Q(Ah) && !window.google_plmetrics && window.PerformanceObserver) {
@@ -25315,7 +24034,6 @@ function Rm() {
         Tm(a);
     }
 }
-
 function Sm(a) {
     a.l ||
         (a.l = new PerformanceObserver(
@@ -25355,7 +24073,6 @@ function Sm(a) {
         ));
     return a.l;
 }
-
 function Tm(a) {
     var b = Fm(641, () => {
         var f = document;
@@ -25385,7 +24102,6 @@ Qm.prototype.j = function() {
     fj.prototype.j.call(this);
     this.ea();
 };
-
 function Ym(a) {
     if (!a.ya) {
         a.ya = !0;
@@ -25420,14 +24136,12 @@ function Ym(a) {
         a.v || ((a.v = !0), a.j());
     }
 }
-
 function Nm(a, b, c) {
     if (0 === c) return !0;
     var d = Math.min(a.right, b.right) - Math.max(a.left, b.left);
     a = Math.min(a.bottom, b.bottom) - Math.max(a.top, b.top);
     return 0 >= d || 0 >= a ? !1 : (100 * d * a) / ((b.right - b.left) * (b.bottom - b.top)) >= c;
 }
-
 function Xm() {
     var a = [].concat(ma(document.getElementsByTagName('iframe'))).filter(Jm);
     var b = []
@@ -25441,12 +24155,10 @@ function Xm() {
 var Um = void 0;
 var Vm = void 0;
 var Wm = [];
-
 function Zm(a) {
     a = void 0 === a ? window : a;
     return !a.PeriodicSyncManager;
 }
-
 function $m() {
     var a = void 0 === a ? window : a;
     if ((!Zm(a) && Q(Hh)) || (Zm(a) && Q(Ih))) {
@@ -25480,7 +24192,6 @@ var Y = {
     }
 };
 var an = L(Qh).h(Nh.h, Nh.defaultValue);
-
 function bn(a) {
     a = void 0 === a ? !1 : a;
     fj.call(this);
@@ -25503,26 +24214,21 @@ function bn(a) {
     }
 }
 u(bn, fj);
-
 function cn() {
     var a = void 0 === a ? window.document : a;
     Rc(an, a);
 }
-
 function dn(a, b) {
     return Q(Lh) || (a && (Q(Oh) || '.google.de' != b)) || '.google.ch' === b || 'function' === typeof J.__tcfapi;
 }
-
 function Z(a, b, c) {
     var d = p(window.goog_tt_state, 'find').call(window.goog_tt_state, (e) => e.issuerOrigin === a);
     d && ((d.state = b), void 0 != c && (d.hasRedemptionRecord = c));
 }
-
 function en() {
     var a = window.goog_tt_state;
     return Array.isArray(a) && a.some((b) => 1 != b.state);
 }
-
 function fn() {
     var a = X.issuerOrigin + X.redemptionPath;
     var b = {
@@ -25544,7 +24250,6 @@ function fn() {
             c && 'NoModificationAllowedError' === c.name ? Z(X.issuerOrigin, 6, !0) : Z(X.issuerOrigin, 5);
         });
 }
-
 function gn() {
     var a = X.issuerOrigin + X.issuancePath;
     Z(X.issuerOrigin, 8);
@@ -25565,12 +24270,10 @@ function gn() {
             Z(X.issuerOrigin, 9);
         });
 }
-
 function hn() {
     Z(X.issuerOrigin, 13);
     return document.hasTrustToken(X.issuerOrigin).then((a) => (a ? fn() : gn()));
 }
-
 function jn() {
     Z(Y.issuerOrigin, 13);
     if (n.Promise) {
@@ -25715,7 +24418,6 @@ function jn() {
             });
     }
 }
-
 function kn(a) {
     if (document.hasTrustToken && !Q(Jh) && a.h) {
         if (en()) return window.goog_tt_promise;
@@ -25736,7 +24438,6 @@ function kn(a) {
     }
 }
 var ln = 'platform platformVersion architecture model uaFullVersion bitness'.split(' ');
-
 function mn() {
     return J.navigator && J.navigator.userAgentData && 'function' === typeof J.navigator.userAgentData.getHighEntropyValues ?
         J.navigator.userAgentData.getHighEntropyValues(ln).then((a) => {
@@ -25750,11 +24451,9 @@ function mn() {
         }) :
         null;
 }
-
 function nn(a, b) {
     b.google_ad_host || ((a = a.document.querySelector('meta[name="google-adsense-platform-account"]')) && (b.google_ad_host = a.getAttribute('content')));
 }
-
 function on(a, b, c) {
     c = void 0 === c ? '' : c;
     J.google_sa_impl && !J.document.getElementById('google_shimpl') && ((J.google_sa_queue = null), (J.google_sl_win = null), (J.google_sa_impl = null));
@@ -25765,7 +24464,6 @@ function on(a, b, c) {
             (a = qn(c, a, b)),
             (xc(J.document, a).id = 'google_shimpl'));
 }
-
 function pn(a) {
     var b = a.google_sa_queue;
     var c = b.shift();
@@ -25780,12 +24478,10 @@ function pn(a) {
             0
         );
 }
-
 function rn(a, b, c) {
     a.google_sa_queue = a.google_sa_queue || [];
     a.google_sa_impl ? c(b) : a.google_sa_queue.push(b);
 }
-
 function qn(a, b, c) {
     var d = Math.random() < R(lh) ? Wb(gc(b.lb).toString()) : null;
     b = D(c, 4) ? b.kb : b.mb;
@@ -25837,13 +24533,11 @@ function qn(a, b, c) {
     );
     return Tb(d, b);
 }
-
 function tn(a, b) {
     Ec(a, (c, d) => {
         void 0 === b[d] && (b[d] = c);
     });
 }
-
 function sn() {
     if (J.google_ad_client) return J.google_ad_client;
     var a = U(J).head_tag_slot_vars;
@@ -25876,7 +24570,6 @@ function sn() {
     } else a = '';
     return a ? a : '';
 }
-
 function un(a) {
     a: {
         for (var b = [v.top], c = [], d = 0, e;
@@ -25911,7 +24604,6 @@ function un(a) {
     c.style.display = 'none';
     return c;
 }
-
 function vn(a, b, c, d) {
     wn(a, b, c, d, (e, f) => {
         e = e.document;
@@ -25932,7 +24624,6 @@ function vn(a, b, c, d) {
         return e;
     });
 }
-
 function wn(a, b, c, d, e) {
     var f = e(a, b);
     xn(a, c, b);
@@ -25962,7 +24653,6 @@ function wn(a, b, c, d, e) {
         c
     );
 }
-
 function xn(a, b, c) {
     var d = c.google_ad_output;
     var e = c.google_ad_format;
@@ -26028,7 +24718,6 @@ function xn(a, b, c) {
         c.google_ad_dom_fingerprint = Fc(h + b.join()).toString();
     }
 }
-
 function yn() {
     var a = hd(v);
     a &&
@@ -26039,7 +24728,6 @@ function yn() {
                 debugCardRequested: !1
             }));
 }
-
 function zn(a) {
     cn();
     dn(Al(), Eb(a, 8)) ||
@@ -26055,7 +24743,6 @@ function zn(a) {
     Bm();
     zm();
 }
-
 function An(a, b) {
     switch (a) {
         case 'google_reactive_ad_format':
@@ -26066,7 +24753,6 @@ function An(a, b) {
             return b;
     }
 }
-
 function Bn(a, b) {
     if (a.getAttribute('src')) {
         var c = a.getAttribute('src') || '';
@@ -26082,7 +24768,6 @@ function Bn(a, b) {
         }
     }
 }
-
 function Cn(a) {
     if ((a = Wc(a)))
         switch (a.data && a.data.autoFormat) {
@@ -26095,7 +24780,6 @@ function Cn(a) {
         }
     else return 12;
 }
-
 function Dn(a, b, c, d) {
     Bn(a, b);
     if (c.document && c.document.body && !Yk(c, b) && !b.google_reactive_ad_format) {
@@ -26196,7 +24880,6 @@ function Dn(a, b, c, d) {
                 !0 !== a ? ((b.efwr = !1), (b.gfwrnwer = a)) : (b.efwr = !0));
     }
 }
-
 function En(a) {
     var b = window;
     var c = void 0 === c ? null : c;
@@ -26208,7 +24891,6 @@ function En(a) {
         }!e || 'sc-cnf' !== e.googMsgType || (c && /[:|%3A]javascript\(/i.test(d.data) && !c(e, d)) || a(e, d);
     });
 }
-
 function Fn(a, b) {
     b = void 0 === b ? 500 : b;
     fj.call(this);
@@ -26227,7 +24909,6 @@ Fn.prototype.j = function() {
     delete this.h;
     fj.prototype.j.call(this);
 };
-
 function Gn(a) {
     fj.call(this);
     this.h = a;
@@ -26239,16 +24920,13 @@ var Hn = null;
 var In = [];
 var Jn = new n.Map();
 var Kn = -1;
-
 function Ln(a) {
     return pi.test(a.className) && 'done' != a.dataset.adsbygoogleStatus;
 }
-
 function Mn(a, b, c) {
     a.dataset.adsbygoogleStatus = 'done';
     Nn(a, b, c);
 }
-
 function Nn(a, b, c) {
     var d = window;
     var e = fd();
@@ -26280,7 +24958,6 @@ function Nn(a, b, c) {
         });
     }
 }
-
 function On(a, b, c) {
     var d = b.google_reactive_ads_config;
     var e = 'string' === typeof a.className && RegExp('(\\W|^)adsbygoogle-noablate(\\W|$)').test(a.className);
@@ -26317,7 +24994,6 @@ function On(a, b, c) {
             ),
             !0);
 }
-
 function Pn(a) {
     var b = document.getElementsByTagName('INS');
     for (var c = 0, d = b[c]; c < b.length; d = b[++c]) {
@@ -26326,7 +25002,6 @@ function Pn(a) {
     }
     return null;
 }
-
 function Qn(a, b, c) {
     if (a && a.shift)
         for (var d = 20; 0 < a.length && 0 < d;) {
@@ -26340,7 +25015,6 @@ function Qn(a, b, c) {
             --d;
         }
 }
-
 function Sn() {
     var a = yc('INS');
     a.className = 'adsbygoogle';
@@ -26348,7 +25022,6 @@ function Sn() {
     Oc(a);
     return a;
 }
-
 function Tn(a, b) {
     var c = {};
     Ec(xf, (f, g) => {
@@ -26362,7 +25035,6 @@ function Tn(a, b) {
     e.google_pause_ad_requests = !!U(J).pause_ad_requests;
     Mn(d, e, b);
 }
-
 function Un(a, b) {
     function c() {
         return Tn(a, b);
@@ -26381,7 +25053,6 @@ function Un(a, b) {
         });
     }
 }
-
 function Rn(a, b, c) {
     var d = {};
     sf(
@@ -26396,14 +25067,12 @@ function Rn(a, b, c) {
         }
     );
 }
-
 function Wn(a) {
     delete a.google_checked_head;
     Ec(a, (b, c) => {
         oi[c] || (delete a[c], v.console.warn("AdSense head tag doesn't support " + c.replace('google', 'data').replace(/_/g, '-') + ' attribute.'));
     });
 }
-
 function Xn(a, b) {
     var c =
         J.document.querySelector('script[src*="/pagead/js/adsbygoogle.js?client="]:not([data-checked-head])') ||
@@ -26438,7 +25107,6 @@ function Xn(a, b) {
             });
     }
 }
-
 function Yn(a) {
     var b = U(window).head_tag_slot_vars;
     var c = a.getAttribute('src') || '';
@@ -26450,7 +25118,6 @@ function Yn(a) {
             b.google_ad_client
         );
 }
-
 function $n(a) {
     if ('object' === typeof a && null != a) {
         if ('string' === typeof a.type) return 2;
@@ -26458,7 +25125,6 @@ function $n(a) {
     }
     return 0;
 }
-
 function Vn(a, b, c, d) {
     if (null == a) throw new K('push() called with no parameters.');
     14 === xb(d, yl) && ao(a, sb(Gb(d, ml, 14, yl), 1), Eb(d, 2));
@@ -26522,7 +25188,6 @@ function Vn(a, b, c, d) {
     }
 }
 var io = !1;
-
 function ao(a, b, c) {
     Q(hh) &&
         !io &&
@@ -26537,11 +25202,9 @@ function ao(a, b, c) {
                 0.01
             ));
 }
-
 function co(a) {
     return a.google_ad_client ? a.google_ad_client : (a = a.params) && a.google_ad_client ? a.google_ad_client : '';
 }
-
 function eo() {
     if (Q(ch)) {
         var a = Vj(J);
@@ -26557,13 +25220,11 @@ function eo() {
         a || Xj(J, 1);
     }
 }
-
 function ho(a) {
     Tc(() => {
         Af(v).wasPlaTagProcessed || (v.adsbygoogle && v.adsbygoogle.push(a));
     });
 }
-
 function fo(a, b, c) {
     U(J).skip_next_reactive_tag ?
         (U(J).skip_next_reactive_tag = !1) :
@@ -26573,7 +25234,6 @@ function fo(a, b, c) {
             U(J).ama_ran_on_page || kk(new jk(a, c)),
             Un(a, b));
 }
-
 function go(a) {
     if (a) {
         if (!Ln(a) && (a.id ? (a = Pn(a.id)) : (a = null), !a)) throw new K("'element' has already been filled.");
@@ -26581,7 +25241,6 @@ function go(a) {
     } else if (((a = Pn()), !a)) throw new K('All ins elements in the DOM with class=adsbygoogle already have ads in them.');
     return a;
 }
-
 function jo() {
     var a = new hj(J);
     var b = new Fn(J);
@@ -26604,7 +25263,6 @@ function jo() {
         R(Ng)
     );
 }
-
 function ko(a) {
     a = {
         value: D(a, 16)
@@ -26614,11 +25272,9 @@ function ko(a) {
     a.frequency = b;
     uf('new_abg_tag', a, b);
 }
-
 function lo(a) {
     Xi().S[Zi(26)] = !!Number(a);
 }
-
 function mo(a) {
     Number(a) ?
         (U(J).pause_ad_requests = !0) :
@@ -26660,7 +25316,6 @@ function mo(a) {
             v.setTimeout(a, 0),
             v.setTimeout(a, 1e3));
 }
-
 function no(a) {
     uf(
         'adsenseGfpKnob', {
@@ -26682,11 +25337,9 @@ function no(a) {
     }
     J._gfp_a_ = a;
 }
-
 function oo(a) {
     ad(a) && window.setTimeout(a, 0);
 }
-
 function Zn(a, b) {
     ((ba = fk(
                 Tb(
@@ -26709,7 +25362,6 @@ function Zn(a, b) {
         });
     });
 }
-
 function po() {
     for (var a = q(p(Jn, 'keys').call(Jn)), b = a.next(); !b.done; b = a.next()) {
         b = b.value;
@@ -26734,7 +25386,6 @@ function po() {
                 })(a)
             ));
 }
-
 function bo(a) {
     var b = In.length;
     if (2 === $n(a) && 'preroll' === a.type && null != a.adBreakDone) {
@@ -26846,21 +25497,17 @@ function bo(a) {
 this,
 '[2019,"r20211111","r20190131",null,[],null,null,null,null,null,[],[[[1082,null,null,[1]],[null,62,null,[null,0.001]],[383,null,null,[1]],[null,1126,null,[null,5000]],[null,1010,null,[null,1]],[null,1114,null,[null,1]],[null,1116,null,[null,300]],[null,1117,null,[null,100]],[null,1115,null,[null,1]],[null,1017,null,[null,-1]],[1021,null,null,[1]],[null,66,null,[null,-1]],[null,65,null,[null,-1]],[1064,null,null,[1]],[null,1041,null,[null,50]],[1042,null,null,[1]],[1040,null,null,[1]],[1096,null,null,[1]],[1089,null,null,[1]],[1097,null,null,[1]],[1100,null,null,[1]],[1109,null,null,[1]],[1102,null,null,[1]],[205,null,null,[1]],[null,29,null,[null,2]],[null,30,null,[null,3]],[null,1056,null,[null,3000]],[null,1057,null,[null,650]],[1101,null,null,[1]],[1036,null,null,[1]],[1051,null,null,[1]],[325,null,null,[1]],[1007,null,null,[1]],[null,1008,null,[null,2]],[null,1085,null,[null,5]],[null,63,null,[null,30]],[null,1080,null,[null,5]],[1055,null,null,[1]],[1054,null,null,[1]],[null,1027,null,[null,10]],[null,57,null,[null,120]],[null,1079,null,[null,5]],[null,1050,null,[null,30]],[null,58,null,[null,120]],[null,64,null,[null,300]],[1118,null,null,[1]],[230,null,null,[1]],[1124,null,null,[1]],[null,null,null,[null,null,null,["A8FHS1NmdCwGqD9DwOicnHHY+y27kdWfxKa0YHSGDfv0CSpDKRHTQdQmZVPDUdaFWUsxdgVxlwAd6o+dhJykPA0AAACWeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9","A8zdXi6dr1hwXEUjQrYiyYQGlU3557y5QWDnN0Lwgj9ePt66XMEvNkVWOEOWPd7TP9sBQ25X0Q15Lr1Nn4oGFQkAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9","A4/Htern2udN9w3yJK9QgWQxQFruxOXsXL7cW60DyCl0EZFGCSme/J33Q/WzF7bBkVvhEWDlcBiUyZaim5CpFQwAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"]],null,1934],[1903,null,null,[1]],[1953,null,null,[1]],[1938,null,null,[1]],[null,1929,null,[null,50]],[1956,null,null,[1]],[379841917,null,null,[1]],[null,null,null,[null,null,null,["AxujKG9INjsZ8/gUq8+dTruNvk7RjZQ1oFhhgQbcTJKDnZfbzSTE81wvC2Hzaf3TW4avA76LTZEMdiedF1vIbA4AAABueyJvcmlnaW4iOiJodHRwczovL2ltYXNkay5nb29nbGVhcGlzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=","Azuce85ORtSnWe1MZDTv68qpaW3iHyfL9YbLRy0cwcCZwVnePnOmkUJlG8HGikmOwhZU22dElCcfrfX2HhrBPAkAAAB7eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9","A16nvcdeoOAqrJcmjLRpl1I6f3McDD8EfofAYTt/P/H4/AWwB99nxiPp6kA0fXoiZav908Z8etuL16laFPUdfQsAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9","AxBHdr0J44vFBQtZUqX9sjiqf5yWZ/OcHRcRMN3H9TH+t90V/j3ENW6C8+igBZFXMJ7G3Pr8Dd13632aLng42wgAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9","A88BWHFjcawUfKU3lIejLoryXoyjooBXLgWmGh+hNcqMK44cugvsI5YZbNarYvi3roc1fYbHA1AVbhAtuHZflgEAAAB2eyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IlRydXN0VG9rZW5zIiwiZXhwaXJ5IjoxNjUyNzc0NDAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="]],null,1932],[null,397907552,null,[null,500]],[396382471,null,null,[1]],[393546021,null,null,[1]]],[[10,[[1,[[21066108],[21066109,[[316,null,null,[1]]]]],null,null,null,34,18,1],[1,[[21066110],[21066111,[[316,null,null,[1]]]]],null,null,null,34,18,1],[1,[[42530528],[42530529,[[368,null,null,[1]]]],[42530530,[[369,null,null,[1]],[368,null,null,[1]]]]]],[1,[[42530887,[[290,null,null,[1]]]],[42530888,[[290,null,null,[1]]]],[42530889,[[290,null,null,[1]]]],[42530890,[[290,null,null,[1]]]],[42530891,[[290,null,null,[1]]]],[42530892,[[290,null,null,[1]]]],[42530893,[[290,null,null,[1]]]]],null,null,null,53],[1,[[44719338],[44719339,[[334,null,null,[1]],[null,54,null,[null,100]],[null,66,null,[null,10]],[null,65,null,[null,1000]]]]]],[10,[[44750773],[44750774,[[1087,null,null,[1]]]]],null,null,null,57],[10,[[44753738,[[290,null,null,[]]]],[44753739,[[null,1072,null,[null,0.5]],[290,null,null,[]]]],[44753740,[[null,1072,null,[null,0.75]],[290,null,null,[]]]],[44753741,[[null,1072,null,[null,0.9]],[290,null,null,[]]]],[44753742,[[null,1072,null,[null,1]],[290,null,null,[]]]],[44753743,[[null,1072,null,[null,1.01]],[290,null,null,[]]]]],null,null,null,53,null,200],[10,[[44752536,[[1122,null,null,[1]],[1033,null,null,[1]]]],[44753656],[44753657,[[1033,null,null,[1]]]],[44753658,[[1033,null,null,[1]]]],[44753659,[[1033,null,null,[1]]]]]],[null,[[44755592],[44755593,[[1033,null,null,[1]]]],[44755594,[[1033,null,null,[1]]]],[44755653,[[1033,null,null,[1]]]]]],[50,[[44754331],[44754332,[[1090,null,null,[1]]]]]],[20,[[182982000,[[218,null,null,[1]]],[1,[[12,null,null,null,2,null,"\\\\.wiki(dogs|how)(-fun)?\\\\."]]]],[182982100,[[217,null,null,[1]]],[1,[[12,null,null,null,2,null,"\\\\.wiki(dogs|how)(-fun)?\\\\."]]]]],null,null,null,36,8,1],[20,[[182982200,null,[1,[[12,null,null,null,2,null,"\\\\.wiki(dogs|how)(-fun)?\\\\."]]]],[182982300,null,[1,[[12,null,null,null,2,null,"\\\\.wiki(dogs|how)(-fun)?\\\\."]]]]],null,null,null,36,8,1],[10,[[182984000,null,[4,null,23,null,null,null,null,["1"]]],[182984100,[[218,null,null,[1]]],[4,null,23,null,null,null,null,["1"]]]],null,null,null,37,10,1],[10,[[182984200,null,[4,null,23,null,null,null,null,["1"]]],[182984300,null,[4,null,23,null,null,null,null,["1"]]]],null,null,null,37,10,1],[10,[[21066428],[21066429]]],[10,[[21066430],[21066431],[21066432],[21066433]],null,null,null,44,22],[10,[[21066434],[21066435]],null,null,null,44,null,500],[null,[[31062369],[31062370,[[380254521,null,null,[1]]]]],null,null,null,56],[50,[[31062422],[31062423,[[381914117,null,null,[1]]]]]],[100,[[31062937],[31062938,[[1095,null,null,[1]]]]]],[1,[[31063331,[[null,1103,null,[null,31063331]],[1121,null,null,[1]]]],[31063332,[[null,1103,null,[null,31063332]],[1121,null,null,[1]],[1120,null,null,[1]]]],[31063333,[[null,1103,null,[null,31063333]],[null,1114,null,[null,0.9]],[null,1104,null,[null,100]],[null,1115,null,[null,0.8]],[1121,null,null,[1]],[1120,null,null,[1]]]],[44754313,[[null,1103,null,[null,44754313]],[null,1114,null,[null,0.9]],[null,1104,null,[null,100]],[null,1115,null,[null,0.8]],[1121,null,null,[1]],[null,1119,null,[null,100]],[1120,null,null,[1]]]],[44754314,[[null,1103,null,[null,44754314]],[null,1114,null,[null,0.9]],[null,1104,null,[null,100]],[null,1115,null,[null,0.8]],[1121,null,null,[1]],[null,1119,null,[null,500]],[1120,null,null,[1]]]],[44754315,[[null,1103,null,[null,44754315]],[null,1114,null,[null,0.9]],[null,1104,null,[null,100]],[null,1115,null,[null,0.8]],[1121,null,null,[1]],[null,1119,null,[null,1000]],[1120,null,null,[1]]]],[44755514,[[null,1103,null,[null,44755514]],[null,1114,null,[null,0.9]],[null,1108,null,[null,10]],[null,1115,null,[null,0.8]],[1121,null,null,[1]],[1120,null,null,[1]]]],[44755515,[[null,1103,null,[null,44755515]],[null,1114,null,[null,0.9]],[null,1106,null,[null,10]],[null,1115,null,[null,0.8]],[1121,null,null,[1]],[1120,null,null,[1]]]],[44755516,[[null,1103,null,[null,44755516]],[null,1114,null,[null,0.9]],[null,1107,null,[null,10]],[null,1115,null,[null,0.8]],[1121,null,null,[1]],[1120,null,null,[1]]]],[44755517,[[null,1103,null,[null,44755517]],[null,1114,null,[null,0.9]],[null,1105,null,[null,10]],[null,1115,null,[null,0.8]],[1121,null,null,[1]],[1120,null,null,[1]]]]]],[10,[[31063693],[31063694,[[null,57,null,[null,30]]]],[31063695,[[null,57,null,[null,60]]]],[31063696,[[null,57,null,[null,90]]]]]],[100,[[31063735],[31063736,[[1053,null,null,[1]]]]]],[50,[[31063737],[31063738,[[1096,null,null,[]]]]]],[1000,[[31063759,[[null,null,14,[null,null,"31063759"]]],[6,null,null,null,6,null,"31063759"]],[31063760,[[null,null,14,[null,null,"31063760"]]],[6,null,null,null,6,null,"31063760"]]],[4,null,55]],[1000,[[31063781,[[null,null,14,[null,null,"31063781"]]],[6,null,null,null,6,null,"31063781"]],[31063782,[[null,null,14,[null,null,"31063782"]]],[6,null,null,null,6,null,"31063782"]]],[4,null,55]],[100,[[31063792],[31063793,[[1125,null,null,[1]]]]]],[1000,[[31063796,[[null,null,14,[null,null,"31063796"]]],[6,null,null,null,6,null,"31063796"]],[31063797,[[null,null,14,[null,null,"31063797"]]],[6,null,null,null,6,null,"31063797"]]],[4,null,55]],[1,[[44736076],[44736077,[[null,1046,null,[null,0.1]]]]]],[null,[[44754319,[[null,1103,null,[null,44754319]]]],[44754320,[[null,1103,null,[null,44754320]],[1120,null,null,[1]]]],[44754321,[[null,1103,null,[null,44754321]],[null,1114,null,[null,0.9]],[null,1104,null,[null,100]],[null,1115,null,[null,0.8]],[1120,null,null,[1]]]],[44754322,[[null,1103,null,[null,44754322]],[null,1114,null,[null,0.9]],[null,1108,null,[null,10]],[null,1115,null,[null,0.8]],[1120,null,null,[1]]]],[44754323,[[null,1103,null,[null,44754323]],[null,1114,null,[null,0.9]],[null,1106,null,[null,10]],[null,1115,null,[null,0.8]],[1120,null,null,[1]]]],[44754324,[[null,1103,null,[null,44754324]],[null,1114,null,[null,0.9]],[null,1107,null,[null,10]],[null,1115,null,[null,0.8]],[1120,null,null,[1]]]],[44754325,[[null,1103,null,[null,44754325]],[null,1114,null,[null,0.9]],[null,1105,null,[null,10]],[null,1115,null,[null,0.8]],[1120,null,null,[1]]]]]],[10,[[44755656],[44755657]]],[150,[[31061760],[31061761,[[null,1032,null,[null,200],[[[12,null,null,null,4,null,"Android",["navigator.userAgent"]],[null,500]]]]]],[31062202,[[null,1032,null,[null,200],[[[12,null,null,null,4,null,"Android",["navigator.userAgent"]],[null,500]]]]]],[31063202,[[null,1032,null,[null,200],[[[12,null,null,null,4,null,"Android",["navigator.userAgent"]],[null,500]]]]]],[44753753,[[null,1032,null,[null,200],[[[12,null,null,null,4,null,"Android",["navigator.userAgent"]],[null,500]]]]]]],[3,[[4,null,8,null,null,null,null,["gmaSdk.getQueryInfo"]],[4,null,8,null,null,null,null,["webkit.messageHandlers.getGmaQueryInfo.postMessage"]],[4,null,8,null,null,null,null,["webkit.messageHandlers.getGmaSig.postMessage"]]]]],[10,[[31063221],[31063222,[[1954,null,null,[1]]]]]]]],[20,[[50,[[31062930],[31062931,[[380025941,null,null,[1]]]]],null,null,null,null,null,101,null,102]]],[17,[[10,[[31060047]],null,null,null,44,null,900],[10,[[31060048],[31060049]],null,null,null,null,null,null,null,101],[10,[[31060566]]]]],[11,[[500,[[31063741,null,[4,null,8,null,null,null,null,["top.frames.google_ads_top_frame"]]],[31063742,[[null,1044,null,[null,200]]],[4,null,8,null,null,null,null,["top.frames.google_ads_top_frame"]]]]]]],[12,[[1,[[31061828],[31061829,[[null,1032,null,[null,200],[[[12,null,null,null,4,null,"Android",["navigator.userAgent"]],[null,500]]]],[360245597,null,null,[1]],[null,494,null,[null,5000],[[[12,null,null,null,4,null,"Android",["navigator.userAgent"]],[null,5500]]]],[null,517,null,[null,1]]]]]],[20,[[21065724],[21065725,[[203,null,null,[1]]]]],[4,null,9,null,null,null,null,["LayoutShift"]]],[50,[[31060006,null,[2,[[12,null,null,null,4,null,"Android",["navigator.userAgent"]],[12,null,null,null,4,null,"Chrome/(89|9\\\\d|\\\\d{3,})",["navigator.userAgent"]],[4,null,9,null,null,null,null,["window.PeriodicSyncManager"]]]]],[31060007,[[1928,null,null,[1]]],[2,[[12,null,null,null,4,null,"Android",["navigator.userAgent"]],[12,null,null,null,4,null,"Chrome/(89|9\\\\d|\\\\d{3,})",["navigator.userAgent"]],[4,null,9,null,null,null,null,["window.PeriodicSyncManager"]]]]]]],[10,[[31060032],[31060033,[[1928,null,null,[1]]]]]],[10,[[31061690],[31061691,[[83,null,null,[1]],[84,null,null,[1]]]]]],[1,[[31063122]],[4,null,61]],[1,[[31063150]],[4,null,63]],[50,[[31063182],[31063183,[[1956,null,null,[1]]]]]],[1,[[31063244],[31063245,[[392736476,null,null,[1]]]]]],[50,[[31063246],[31063247,[[392736476,null,null,[1]],[null,406149835,null,[null,0.01]]]]],[2,[[12,null,null,null,4,null,"Chrome/(9[3456789]|\\\\d{3,})",["navigator.userAgent"]],[4,null,9,null,null,null,null,["window.PeriodicSyncManager"]]]]],[50,[[44748552],[44748553,[[1948,null,null,[1]]]]]]]],[13,[[1,[[31062554,null,[2,[[6,null,null,3,null,0],[12,null,null,null,4,null,"Chrome/(9[23456789]|\\\\d{3,})",["navigator.userAgent"]]]]],[31062555,[[395842139,null,null,[1]]],[2,[[6,null,null,3,null,0],[12,null,null,null,4,null,"Chrome/(9[23456789]|\\\\d{3,})",["navigator.userAgent"]]]]]]],[1000,[[21067496]],[4,null,9,null,null,null,null,["document.hasTrustToken"]]],[1000,[[31060475,null,[2,[[1,[[4,null,9,null,null,null,null,["window.PeriodicSyncManager"]]]],[12,null,null,null,4,null,"Android",["navigator.userAgent"]]]]]]],[500,[[31061692],[31061693,[[77,null,null,[1]],[78,null,null,[1]],[85,null,null,[1]],[80,null,null,[1]],[76,null,null,[1]]]]],[4,null,6,null,null,null,null,["31061691"]]],[1,[[31062890],[31062891,[[397841828,null,null,[1]]]]]],[1,[[31062946]],[4,null,27,null,null,null,null,["document.prerendering"]]],[1,[[31062947]],[1,[[4,null,27,null,null,null,null,["document.prerendering"]]]]]]]],null,null,[0.001,"1000",1,"1000"]],[],null,null,null,null,706409994]'
 ));
-
 function dn(a, b) {
     return Q(Lh) || (a && (Q(Oh) || '.google.de' != b)) || '.google.ch' === b || 'function' === typeof J.__tcfapi;
 }
-
 function Z(a, b, c) {
     var d = p(window.goog_tt_state, 'find').call(window.goog_tt_state, (e) => e.issuerOrigin === a);
     d && ((d.state = b), void 0 != c && (d.hasRedemptionRecord = c));
 }
-
 function en() {
     var a = window.goog_tt_state;
     return Array.isArray(a) && a.some((b) => 1 != b.state);
 }
-
 function fn() {
     var a = X.issuerOrigin + X.redemptionPath;
     var b = {
@@ -26882,7 +25529,6 @@ function fn() {
             c && 'NoModificationAllowedError' === c.name ? Z(X.issuerOrigin, 6, !0) : Z(X.issuerOrigin, 5);
         });
 }
-
 function gn() {
     var a = X.issuerOrigin + X.issuancePath;
     Z(X.issuerOrigin, 8);
@@ -26903,12 +25549,10 @@ function gn() {
             Z(X.issuerOrigin, 9);
         });
 }
-
 function hn() {
     Z(X.issuerOrigin, 13);
     return document.hasTrustToken(X.issuerOrigin).then((a) => (a ? fn() : gn()));
 }
-
 function jn() {
     Z(Y.issuerOrigin, 13);
     if (n.Promise) {
@@ -27053,7 +25697,6 @@ function jn() {
             });
     }
 }
-
 function kn(a) {
     if (document.hasTrustToken && !Q(Jh) && a.h) {
         if (en()) return window.goog_tt_promise;
@@ -27074,7 +25717,6 @@ function kn(a) {
     }
 }
 var ln = 'platform platformVersion architecture model uaFullVersion bitness'.split(' ');
-
 function mn() {
     return J.navigator && J.navigator.userAgentData && 'function' === typeof J.navigator.userAgentData.getHighEntropyValues ?
         J.navigator.userAgentData.getHighEntropyValues(ln).then((a) => {
@@ -27088,11 +25730,9 @@ function mn() {
         }) :
         null;
 }
-
 function nn(a, b) {
     b.google_ad_host || ((a = a.document.querySelector('meta[name="google-adsense-platform-account"]')) && (b.google_ad_host = a.getAttribute('content')));
 }
-
 function on(a, b, c) {
     c = void 0 === c ? '' : c;
     J.google_sa_impl && !J.document.getElementById('google_shimpl') && ((J.google_sa_queue = null), (J.google_sl_win = null), (J.google_sa_impl = null));
@@ -27103,7 +25743,6 @@ function on(a, b, c) {
             (a = qn(c, a, b)),
             (xc(J.document, a).id = 'google_shimpl'));
 }
-
 function pn(a) {
     var b = a.google_sa_queue;
     var c = b.shift();
@@ -27118,12 +25757,10 @@ function pn(a) {
             0
         );
 }
-
 function rn(a, b, c) {
     a.google_sa_queue = a.google_sa_queue || [];
     a.google_sa_impl ? c(b) : a.google_sa_queue.push(b);
 }
-
 function qn(a, b, c) {
     var d = Math.random() < R(lh) ? Wb(gc(b.lb).toString()) : null;
     b = D(c, 4) ? b.kb : b.mb;
@@ -27175,13 +25812,11 @@ function qn(a, b, c) {
     );
     return Tb(d, b);
 }
-
 function tn(a, b) {
     Ec(a, (c, d) => {
         void 0 === b[d] && (b[d] = c);
     });
 }
-
 function sn() {
     if (J.google_ad_client) return J.google_ad_client;
     var a = U(J).head_tag_slot_vars;
@@ -27214,7 +25849,6 @@ function sn() {
     } else a = '';
     return a ? a : '';
 }
-
 function un(a) {
     a: {
         for (var b = [v.top], c = [], d = 0, e;
@@ -27249,7 +25883,6 @@ function un(a) {
     c.style.display = 'none';
     return c;
 }
-
 function vn(a, b, c, d) {
     wn(a, b, c, d, (e, f) => {
         e = e.document;
@@ -27270,7 +25903,6 @@ function vn(a, b, c, d) {
         return e;
     });
 }
-
 function wn(a, b, c, d, e) {
     var f = e(a, b);
     xn(a, c, b);
@@ -27300,7 +25932,6 @@ function wn(a, b, c, d, e) {
         c
     );
 }
-
 function xn(a, b, c) {
     var d = c.google_ad_output;
     var e = c.google_ad_format;
@@ -27366,7 +25997,6 @@ function xn(a, b, c) {
         c.google_ad_dom_fingerprint = Fc(h + b.join()).toString();
     }
 }
-
 function yn() {
     var a = hd(v);
     a &&
@@ -27377,7 +26007,6 @@ function yn() {
                 debugCardRequested: !1
             }));
 }
-
 function zn(a) {
     cn();
     dn(Al(), Eb(a, 8)) ||
@@ -27393,7 +26022,6 @@ function zn(a) {
     Bm();
     zm();
 }
-
 function An(a, b) {
     switch (a) {
         case 'google_reactive_ad_format':
@@ -27404,7 +26032,6 @@ function An(a, b) {
             return b;
     }
 }
-
 function Bn(a, b) {
     if (a.getAttribute('src')) {
         var c = a.getAttribute('src') || '';
@@ -27420,7 +26047,6 @@ function Bn(a, b) {
         }
     }
 }
-
 function Cn(a) {
     if ((a = Wc(a)))
         switch (a.data && a.data.autoFormat) {
@@ -27433,7 +26059,6 @@ function Cn(a) {
         }
     else return 12;
 }
-
 function Dn(a, b, c, d) {
     Bn(a, b);
     if (c.document && c.document.body && !Yk(c, b) && !b.google_reactive_ad_format) {
@@ -27534,7 +26159,6 @@ function Dn(a, b, c, d) {
                 !0 !== a ? ((b.efwr = !1), (b.gfwrnwer = a)) : (b.efwr = !0));
     }
 }
-
 function En(a) {
     var b = window;
     var c = void 0 === c ? null : c;
@@ -27546,7 +26170,6 @@ function En(a) {
         }!e || 'sc-cnf' !== e.googMsgType || (c && /[:|%3A]javascript\(/i.test(d.data) && !c(e, d)) || a(e, d);
     });
 }
-
 function Fn(a, b) {
     b = void 0 === b ? 500 : b;
     fj.call(this);
@@ -27565,7 +26188,6 @@ Fn.prototype.j = function() {
     delete this.h;
     fj.prototype.j.call(this);
 };
-
 function Gn(a) {
     fj.call(this);
     this.h = a;
@@ -27577,16 +26199,13 @@ var Hn = null;
 var In = [];
 var Jn = new n.Map();
 var Kn = -1;
-
 function Ln(a) {
     return pi.test(a.className) && 'done' != a.dataset.adsbygoogleStatus;
 }
-
 function Mn(a, b, c) {
     a.dataset.adsbygoogleStatus = 'done';
     Nn(a, b, c);
 }
-
 function Nn(a, b, c) {
     var d = window;
     var e = fd();
@@ -27618,7 +26237,6 @@ function Nn(a, b, c) {
         });
     }
 }
-
 function On(a, b, c) {
     var d = b.google_reactive_ads_config;
     var e = 'string' === typeof a.className && RegExp('(\\W|^)adsbygoogle-noablate(\\W|$)').test(a.className);
@@ -27655,7 +26273,6 @@ function On(a, b, c) {
             ),
             !0);
 }
-
 function Pn(a) {
     var b = document.getElementsByTagName('INS');
     for (var c = 0, d = b[c]; c < b.length; d = b[++c]) {
@@ -27664,7 +26281,6 @@ function Pn(a) {
     }
     return null;
 }
-
 function Qn(a, b, c) {
     if (a && a.shift)
         for (var d = 20; 0 < a.length && 0 < d;) {
@@ -27678,7 +26294,6 @@ function Qn(a, b, c) {
             --d;
         }
 }
-
 function Sn() {
     var a = yc('INS');
     a.className = 'adsbygoogle';
@@ -27686,7 +26301,6 @@ function Sn() {
     Oc(a);
     return a;
 }
-
 function Tn(a, b) {
     var c = {};
     Ec(xf, (f, g) => {
@@ -27700,7 +26314,6 @@ function Tn(a, b) {
     e.google_pause_ad_requests = !!U(J).pause_ad_requests;
     Mn(d, e, b);
 }
-
 function Un(a, b) {
     function c() {
         return Tn(a, b);
@@ -27719,7 +26332,6 @@ function Un(a, b) {
         });
     }
 }
-
 function Rn(a, b, c) {
     var d = {};
     sf(
@@ -27734,14 +26346,12 @@ function Rn(a, b, c) {
         }
     );
 }
-
 function Wn(a) {
     delete a.google_checked_head;
     Ec(a, (b, c) => {
         oi[c] || (delete a[c], v.console.warn("AdSense head tag doesn't support " + c.replace('google', 'data').replace(/_/g, '-') + ' attribute.'));
     });
 }
-
 function Xn(a, b) {
     var c =
         J.document.querySelector('script[src*="/pagead/js/adsbygoogle.js?client="]:not([data-checked-head])') ||
@@ -27776,7 +26386,6 @@ function Xn(a, b) {
             });
     }
 }
-
 function Yn(a) {
     var b = U(window).head_tag_slot_vars;
     var c = a.getAttribute('src') || '';
@@ -27788,7 +26397,6 @@ function Yn(a) {
             b.google_ad_client
         );
 }
-
 function $n(a) {
     if ('object' === typeof a && null != a) {
         if ('string' === typeof a.type) return 2;
@@ -27796,7 +26404,6 @@ function $n(a) {
     }
     return 0;
 }
-
 function Vn(a, b, c, d) {
     if (null == a) throw new K('push() called with no parameters.');
     14 === xb(d, yl) && ao(a, sb(Gb(d, ml, 14, yl), 1), Eb(d, 2));
@@ -27860,7 +26467,6 @@ function Vn(a, b, c, d) {
     }
 }
 var io = !1;
-
 function ao(a, b, c) {
     Q(hh) &&
         !io &&
@@ -27875,11 +26481,9 @@ function ao(a, b, c) {
                 0.01
             ));
 }
-
 function co(a) {
     return a.google_ad_client ? a.google_ad_client : (a = a.params) && a.google_ad_client ? a.google_ad_client : '';
 }
-
 function eo() {
     if (Q(ch)) {
         var a = Vj(J);
@@ -27895,13 +26499,11 @@ function eo() {
         a || Xj(J, 1);
     }
 }
-
 function ho(a) {
     Tc(() => {
         Af(v).wasPlaTagProcessed || (v.adsbygoogle && v.adsbygoogle.push(a));
     });
 }
-
 function fo(a, b, c) {
     U(J).skip_next_reactive_tag ?
         (U(J).skip_next_reactive_tag = !1) :
@@ -27911,7 +26513,6 @@ function fo(a, b, c) {
             U(J).ama_ran_on_page || kk(new jk(a, c)),
             Un(a, b));
 }
-
 function go(a) {
     if (a) {
         if (!Ln(a) && (a.id ? (a = Pn(a.id)) : (a = null), !a)) throw new K("'element' has already been filled.");
@@ -27919,7 +26520,6 @@ function go(a) {
     } else if (((a = Pn()), !a)) throw new K('All ins elements in the DOM with class=adsbygoogle already have ads in them.');
     return a;
 }
-
 function jo() {
     var a = new hj(J);
     var b = new Fn(J);
@@ -27942,7 +26542,6 @@ function jo() {
         R(Ng)
     );
 }
-
 function ko(a) {
     a = {
         value: D(a, 16)
@@ -27952,11 +26551,9 @@ function ko(a) {
     a.frequency = b;
     uf('new_abg_tag', a, b);
 }
-
 function lo(a) {
     Xi().S[Zi(26)] = !!Number(a);
 }
-
 function mo(a) {
     Number(a) ?
         (U(J).pause_ad_requests = !0) :
@@ -27998,7 +26595,6 @@ function mo(a) {
             v.setTimeout(a, 0),
             v.setTimeout(a, 1e3));
 }
-
 function no(a) {
     uf(
         'adsenseGfpKnob', {
@@ -28020,11 +26616,9 @@ function no(a) {
     }
     J._gfp_a_ = a;
 }
-
 function oo(a) {
     ad(a) && window.setTimeout(a, 0);
 }
-
 function Zn(a, b) {
     ((ba = fk(
                 Tb(
@@ -28047,7 +26641,6 @@ function Zn(a, b) {
         });
     });
 }
-
 function po() {
     for (var a = q(p(Jn, 'keys').call(Jn)), b = a.next(); !b.done; b = a.next()) {
         b = b.value;
@@ -28072,7 +26665,6 @@ function po() {
                 })(a)
             ));
 }
-
 function bo(a) {
     var b = In.length;
     if (2 === $n(a) && 'preroll' === a.type && null != a.adBreakDone) {
@@ -28184,21 +26776,17 @@ function bo(a) {
 this,
 '[2019,"r20211111","r20190131",null,[],null,null,null,null,null,[],[[[1082,null,null,[1]],[null,62,null,[null,0.001]],[383,null,null,[1]],[null,1126,null,[null,5000]],[null,1010,null,[null,1]],[null,1114,null,[null,1]],[null,1116,null,[null,300]],[null,1117,null,[null,100]],[null,1115,null,[null,1]],[null,1017,null,[null,-1]],[1021,null,null,[1]],[null,66,null,[null,-1]],[null,65,null,[null,-1]],[1064,null,null,[1]],[null,1041,null,[null,50]],[1042,null,null,[1]],[1040,null,null,[1]],[1096,null,null,[1]],[1089,null,null,[1]],[1097,null,null,[1]],[1100,null,null,[1]],[1109,null,null,[1]],[1102,null,null,[1]],[205,null,null,[1]],[null,29,null,[null,2]],[null,30,null,[null,3]],[null,1056,null,[null,3000]],[null,1057,null,[null,650]],[1101,null,null,[1]],[1036,null,null,[1]],[1051,null,null,[1]],[325,null,null,[1]],[1007,null,null,[1]],[null,1008,null,[null,2]],[null,1085,null,[null,5]],[null,63,null,[null,30]],[null,1080,null,[null,5]],[1055,null,null,[1]],[1054,null,null,[1]],[null,1027,null,[null,10]],[null,57,null,[null,120]],[null,1079,null,[null,5]],[null,1050,null,[null,30]],[null,58,null,[null,120]],[null,64,null,[null,300]],[1118,null,null,[1]],[230,null,null,[1]],[1124,null,null,[1]],[null,null,null,[null,null,null,["A8FHS1NmdCwGqD9DwOicnHHY+y27kdWfxKa0YHSGDfv0CSpDKRHTQdQmZVPDUdaFWUsxdgVxlwAd6o+dhJykPA0AAACWeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9","A8zdXi6dr1hwXEUjQrYiyYQGlU3557y5QWDnN0Lwgj9ePt66XMEvNkVWOEOWPd7TP9sBQ25X0Q15Lr1Nn4oGFQkAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9","A4/Htern2udN9w3yJK9QgWQxQFruxOXsXL7cW60DyCl0EZFGCSme/J33Q/WzF7bBkVvhEWDlcBiUyZaim5CpFQwAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"]],null,1934],[1903,null,null,[1]],[1953,null,null,[1]],[1938,null,null,[1]],[null,1929,null,[null,50]],[1956,null,null,[1]],[379841917,null,null,[1]],[null,null,null,[null,null,null,["AxujKG9INjsZ8/gUq8+dTruNvk7RjZQ1oFhhgQbcTJKDnZfbzSTE81wvC2Hzaf3TW4avA76LTZEMdiedF1vIbA4AAABueyJvcmlnaW4iOiJodHRwczovL2ltYXNkay5nb29nbGVhcGlzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=","Azuce85ORtSnWe1MZDTv68qpaW3iHyfL9YbLRy0cwcCZwVnePnOmkUJlG8HGikmOwhZU22dElCcfrfX2HhrBPAkAAAB7eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9","A16nvcdeoOAqrJcmjLRpl1I6f3McDD8EfofAYTt/P/H4/AWwB99nxiPp6kA0fXoiZav908Z8etuL16laFPUdfQsAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9","AxBHdr0J44vFBQtZUqX9sjiqf5yWZ/OcHRcRMN3H9TH+t90V/j3ENW6C8+igBZFXMJ7G3Pr8Dd13632aLng42wgAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9","A88BWHFjcawUfKU3lIejLoryXoyjooBXLgWmGh+hNcqMK44cugvsI5YZbNarYvi3roc1fYbHA1AVbhAtuHZflgEAAAB2eyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IlRydXN0VG9rZW5zIiwiZXhwaXJ5IjoxNjUyNzc0NDAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="]],null,1932],[null,397907552,null,[null,500]],[396382471,null,null,[1]],[393546021,null,null,[1]]],[[10,[[1,[[21066108],[21066109,[[316,null,null,[1]]]]],null,null,null,34,18,1],[1,[[21066110],[21066111,[[316,null,null,[1]]]]],null,null,null,34,18,1],[1,[[42530528],[42530529,[[368,null,null,[1]]]],[42530530,[[369,null,null,[1]],[368,null,null,[1]]]]]],[1,[[42530887,[[290,null,null,[1]]]],[42530888,[[290,null,null,[1]]]],[42530889,[[290,null,null,[1]]]],[42530890,[[290,null,null,[1]]]],[42530891,[[290,null,null,[1]]]],[42530892,[[290,null,null,[1]]]],[42530893,[[290,null,null,[1]]]]],null,null,null,53],[1,[[44719338],[44719339,[[334,null,null,[1]],[null,54,null,[null,100]],[null,66,null,[null,10]],[null,65,null,[null,1000]]]]]],[10,[[44750773],[44750774,[[1087,null,null,[1]]]]],null,null,null,57],[10,[[44753738,[[290,null,null,[]]]],[44753739,[[null,1072,null,[null,0.5]],[290,null,null,[]]]],[44753740,[[null,1072,null,[null,0.75]],[290,null,null,[]]]],[44753741,[[null,1072,null,[null,0.9]],[290,null,null,[]]]],[44753742,[[null,1072,null,[null,1]],[290,null,null,[]]]],[44753743,[[null,1072,null,[null,1.01]],[290,null,null,[]]]]],null,null,null,53,null,200],[10,[[44752536,[[1122,null,null,[1]],[1033,null,null,[1]]]],[44753656],[44753657,[[1033,null,null,[1]]]],[44753658,[[1033,null,null,[1]]]],[44753659,[[1033,null,null,[1]]]]]],[null,[[44755592],[44755593,[[1033,null,null,[1]]]],[44755594,[[1033,null,null,[1]]]],[44755653,[[1033,null,null,[1]]]]]],[50,[[44754331],[44754332,[[1090,null,null,[1]]]]]],[20,[[182982000,[[218,null,null,[1]]],[1,[[12,null,null,null,2,null,"\\\\.wiki(dogs|how)(-fun)?\\\\."]]]],[182982100,[[217,null,null,[1]]],[1,[[12,null,null,null,2,null,"\\\\.wiki(dogs|how)(-fun)?\\\\."]]]]],null,null,null,36,8,1],[20,[[182982200,null,[1,[[12,null,null,null,2,null,"\\\\.wiki(dogs|how)(-fun)?\\\\."]]]],[182982300,null,[1,[[12,null,null,null,2,null,"\\\\.wiki(dogs|how)(-fun)?\\\\."]]]]],null,null,null,36,8,1],[10,[[182984000,null,[4,null,23,null,null,null,null,["1"]]],[182984100,[[218,null,null,[1]]],[4,null,23,null,null,null,null,["1"]]]],null,null,null,37,10,1],[10,[[182984200,null,[4,null,23,null,null,null,null,["1"]]],[182984300,null,[4,null,23,null,null,null,null,["1"]]]],null,null,null,37,10,1],[10,[[21066428],[21066429]]],[10,[[21066430],[21066431],[21066432],[21066433]],null,null,null,44,22],[10,[[21066434],[21066435]],null,null,null,44,null,500],[null,[[31062369],[31062370,[[380254521,null,null,[1]]]]],null,null,null,56],[50,[[31062422],[31062423,[[381914117,null,null,[1]]]]]],[100,[[31062937],[31062938,[[1095,null,null,[1]]]]]],[1,[[31063331,[[null,1103,null,[null,31063331]],[1121,null,null,[1]]]],[31063332,[[null,1103,null,[null,31063332]],[1121,null,null,[1]],[1120,null,null,[1]]]],[31063333,[[null,1103,null,[null,31063333]],[null,1114,null,[null,0.9]],[null,1104,null,[null,100]],[null,1115,null,[null,0.8]],[1121,null,null,[1]],[1120,null,null,[1]]]],[44754313,[[null,1103,null,[null,44754313]],[null,1114,null,[null,0.9]],[null,1104,null,[null,100]],[null,1115,null,[null,0.8]],[1121,null,null,[1]],[null,1119,null,[null,100]],[1120,null,null,[1]]]],[44754314,[[null,1103,null,[null,44754314]],[null,1114,null,[null,0.9]],[null,1104,null,[null,100]],[null,1115,null,[null,0.8]],[1121,null,null,[1]],[null,1119,null,[null,500]],[1120,null,null,[1]]]],[44754315,[[null,1103,null,[null,44754315]],[null,1114,null,[null,0.9]],[null,1104,null,[null,100]],[null,1115,null,[null,0.8]],[1121,null,null,[1]],[null,1119,null,[null,1000]],[1120,null,null,[1]]]],[44755514,[[null,1103,null,[null,44755514]],[null,1114,null,[null,0.9]],[null,1108,null,[null,10]],[null,1115,null,[null,0.8]],[1121,null,null,[1]],[1120,null,null,[1]]]],[44755515,[[null,1103,null,[null,44755515]],[null,1114,null,[null,0.9]],[null,1106,null,[null,10]],[null,1115,null,[null,0.8]],[1121,null,null,[1]],[1120,null,null,[1]]]],[44755516,[[null,1103,null,[null,44755516]],[null,1114,null,[null,0.9]],[null,1107,null,[null,10]],[null,1115,null,[null,0.8]],[1121,null,null,[1]],[1120,null,null,[1]]]],[44755517,[[null,1103,null,[null,44755517]],[null,1114,null,[null,0.9]],[null,1105,null,[null,10]],[null,1115,null,[null,0.8]],[1121,null,null,[1]],[1120,null,null,[1]]]]]],[10,[[31063693],[31063694,[[null,57,null,[null,30]]]],[31063695,[[null,57,null,[null,60]]]],[31063696,[[null,57,null,[null,90]]]]]],[100,[[31063735],[31063736,[[1053,null,null,[1]]]]]],[50,[[31063737],[31063738,[[1096,null,null,[]]]]]],[1000,[[31063759,[[null,null,14,[null,null,"31063759"]]],[6,null,null,null,6,null,"31063759"]],[31063760,[[null,null,14,[null,null,"31063760"]]],[6,null,null,null,6,null,"31063760"]]],[4,null,55]],[1000,[[31063781,[[null,null,14,[null,null,"31063781"]]],[6,null,null,null,6,null,"31063781"]],[31063782,[[null,null,14,[null,null,"31063782"]]],[6,null,null,null,6,null,"31063782"]]],[4,null,55]],[100,[[31063792],[31063793,[[1125,null,null,[1]]]]]],[1000,[[31063796,[[null,null,14,[null,null,"31063796"]]],[6,null,null,null,6,null,"31063796"]],[31063797,[[null,null,14,[null,null,"31063797"]]],[6,null,null,null,6,null,"31063797"]]],[4,null,55]],[1,[[44736076],[44736077,[[null,1046,null,[null,0.1]]]]]],[null,[[44754319,[[null,1103,null,[null,44754319]]]],[44754320,[[null,1103,null,[null,44754320]],[1120,null,null,[1]]]],[44754321,[[null,1103,null,[null,44754321]],[null,1114,null,[null,0.9]],[null,1104,null,[null,100]],[null,1115,null,[null,0.8]],[1120,null,null,[1]]]],[44754322,[[null,1103,null,[null,44754322]],[null,1114,null,[null,0.9]],[null,1108,null,[null,10]],[null,1115,null,[null,0.8]],[1120,null,null,[1]]]],[44754323,[[null,1103,null,[null,44754323]],[null,1114,null,[null,0.9]],[null,1106,null,[null,10]],[null,1115,null,[null,0.8]],[1120,null,null,[1]]]],[44754324,[[null,1103,null,[null,44754324]],[null,1114,null,[null,0.9]],[null,1107,null,[null,10]],[null,1115,null,[null,0.8]],[1120,null,null,[1]]]],[44754325,[[null,1103,null,[null,44754325]],[null,1114,null,[null,0.9]],[null,1105,null,[null,10]],[null,1115,null,[null,0.8]],[1120,null,null,[1]]]]]],[10,[[44755656],[44755657]]],[150,[[31061760],[31061761,[[null,1032,null,[null,200],[[[12,null,null,null,4,null,"Android",["navigator.userAgent"]],[null,500]]]]]],[31062202,[[null,1032,null,[null,200],[[[12,null,null,null,4,null,"Android",["navigator.userAgent"]],[null,500]]]]]],[31063202,[[null,1032,null,[null,200],[[[12,null,null,null,4,null,"Android",["navigator.userAgent"]],[null,500]]]]]],[44753753,[[null,1032,null,[null,200],[[[12,null,null,null,4,null,"Android",["navigator.userAgent"]],[null,500]]]]]]],[3,[[4,null,8,null,null,null,null,["gmaSdk.getQueryInfo"]],[4,null,8,null,null,null,null,["webkit.messageHandlers.getGmaQueryInfo.postMessage"]],[4,null,8,null,null,null,null,["webkit.messageHandlers.getGmaSig.postMessage"]]]]],[10,[[31063221],[31063222,[[1954,null,null,[1]]]]]]]],[20,[[50,[[31062930],[31062931,[[380025941,null,null,[1]]]]],null,null,null,null,null,101,null,102]]],[17,[[10,[[31060047]],null,null,null,44,null,900],[10,[[31060048],[31060049]],null,null,null,null,null,null,null,101],[10,[[31060566]]]]],[11,[[500,[[31063741,null,[4,null,8,null,null,null,null,["top.frames.google_ads_top_frame"]]],[31063742,[[null,1044,null,[null,200]]],[4,null,8,null,null,null,null,["top.frames.google_ads_top_frame"]]]]]]],[12,[[1,[[31061828],[31061829,[[null,1032,null,[null,200],[[[12,null,null,null,4,null,"Android",["navigator.userAgent"]],[null,500]]]],[360245597,null,null,[1]],[null,494,null,[null,5000],[[[12,null,null,null,4,null,"Android",["navigator.userAgent"]],[null,5500]]]],[null,517,null,[null,1]]]]]],[20,[[21065724],[21065725,[[203,null,null,[1]]]]],[4,null,9,null,null,null,null,["LayoutShift"]]],[50,[[31060006,null,[2,[[12,null,null,null,4,null,"Android",["navigator.userAgent"]],[12,null,null,null,4,null,"Chrome/(89|9\\\\d|\\\\d{3,})",["navigator.userAgent"]],[4,null,9,null,null,null,null,["window.PeriodicSyncManager"]]]]],[31060007,[[1928,null,null,[1]]],[2,[[12,null,null,null,4,null,"Android",["navigator.userAgent"]],[12,null,null,null,4,null,"Chrome/(89|9\\\\d|\\\\d{3,})",["navigator.userAgent"]],[4,null,9,null,null,null,null,["window.PeriodicSyncManager"]]]]]]],[10,[[31060032],[31060033,[[1928,null,null,[1]]]]]],[10,[[31061690],[31061691,[[83,null,null,[1]],[84,null,null,[1]]]]]],[1,[[31063122]],[4,null,61]],[1,[[31063150]],[4,null,63]],[50,[[31063182],[31063183,[[1956,null,null,[1]]]]]],[1,[[31063244],[31063245,[[392736476,null,null,[1]]]]]],[50,[[31063246],[31063247,[[392736476,null,null,[1]],[null,406149835,null,[null,0.01]]]]],[2,[[12,null,null,null,4,null,"Chrome/(9[3456789]|\\\\d{3,})",["navigator.userAgent"]],[4,null,9,null,null,null,null,["window.PeriodicSyncManager"]]]]],[50,[[44748552],[44748553,[[1948,null,null,[1]]]]]]]],[13,[[1,[[31062554,null,[2,[[6,null,null,3,null,0],[12,null,null,null,4,null,"Chrome/(9[23456789]|\\\\d{3,})",["navigator.userAgent"]]]]],[31062555,[[395842139,null,null,[1]]],[2,[[6,null,null,3,null,0],[12,null,null,null,4,null,"Chrome/(9[23456789]|\\\\d{3,})",["navigator.userAgent"]]]]]]],[1000,[[21067496]],[4,null,9,null,null,null,null,["document.hasTrustToken"]]],[1000,[[31060475,null,[2,[[1,[[4,null,9,null,null,null,null,["window.PeriodicSyncManager"]]]],[12,null,null,null,4,null,"Android",["navigator.userAgent"]]]]]]],[500,[[31061692],[31061693,[[77,null,null,[1]],[78,null,null,[1]],[85,null,null,[1]],[80,null,null,[1]],[76,null,null,[1]]]]],[4,null,6,null,null,null,null,["31061691"]]],[1,[[31062890],[31062891,[[397841828,null,null,[1]]]]]],[1,[[31062946]],[4,null,27,null,null,null,null,["document.prerendering"]]],[1,[[31062947]],[1,[[4,null,27,null,null,null,null,["document.prerendering"]]]]]]]],null,null,[0.001,"1000",1,"1000"]],[],null,null,null,null,706409994]'
 ));
-
 function dn(a, b) {
     return Q(Lh) || (a && (Q(Oh) || '.google.de' != b)) || '.google.ch' === b || 'function' === typeof J.__tcfapi;
 }
-
 function Z(a, b, c) {
     var d = p(window.goog_tt_state, 'find').call(window.goog_tt_state, (e) => e.issuerOrigin === a);
     d && ((d.state = b), void 0 != c && (d.hasRedemptionRecord = c));
 }
-
 function en() {
     var a = window.goog_tt_state;
     return Array.isArray(a) && a.some((b) => 1 != b.state);
 }
-
 function fn() {
     var a = X.issuerOrigin + X.redemptionPath;
     var b = {
@@ -28220,7 +26808,6 @@ function fn() {
             c && 'NoModificationAllowedError' === c.name ? Z(X.issuerOrigin, 6, !0) : Z(X.issuerOrigin, 5);
         });
 }
-
 function gn() {
     var a = X.issuerOrigin + X.issuancePath;
     Z(X.issuerOrigin, 8);
@@ -28241,12 +26828,10 @@ function gn() {
             Z(X.issuerOrigin, 9);
         });
 }
-
 function hn() {
     Z(X.issuerOrigin, 13);
     return document.hasTrustToken(X.issuerOrigin).then((a) => (a ? fn() : gn()));
 }
-
 function jn() {
     Z(Y.issuerOrigin, 13);
     if (n.Promise) {
@@ -28391,7 +26976,6 @@ function jn() {
             });
     }
 }
-
 function kn(a) {
     if (document.hasTrustToken && !Q(Jh) && a.h) {
         if (en()) return window.goog_tt_promise;
@@ -28412,7 +26996,6 @@ function kn(a) {
     }
 }
 var ln = 'platform platformVersion architecture model uaFullVersion bitness'.split(' ');
-
 function mn() {
     return J.navigator && J.navigator.userAgentData && 'function' === typeof J.navigator.userAgentData.getHighEntropyValues ?
         J.navigator.userAgentData.getHighEntropyValues(ln).then((a) => {
@@ -28426,11 +27009,9 @@ function mn() {
         }) :
         null;
 }
-
 function nn(a, b) {
     b.google_ad_host || ((a = a.document.querySelector('meta[name="google-adsense-platform-account"]')) && (b.google_ad_host = a.getAttribute('content')));
 }
-
 function on(a, b, c) {
     c = void 0 === c ? '' : c;
     J.google_sa_impl && !J.document.getElementById('google_shimpl') && ((J.google_sa_queue = null), (J.google_sl_win = null), (J.google_sa_impl = null));
@@ -28441,7 +27022,6 @@ function on(a, b, c) {
             (a = qn(c, a, b)),
             (xc(J.document, a).id = 'google_shimpl'));
 }
-
 function pn(a) {
     var b = a.google_sa_queue;
     var c = b.shift();
@@ -28456,12 +27036,10 @@ function pn(a) {
             0
         );
 }
-
 function rn(a, b, c) {
     a.google_sa_queue = a.google_sa_queue || [];
     a.google_sa_impl ? c(b) : a.google_sa_queue.push(b);
 }
-
 function qn(a, b, c) {
     var d = Math.random() < R(lh) ? Wb(gc(b.lb).toString()) : null;
     b = D(c, 4) ? b.kb : b.mb;
@@ -28513,13 +27091,11 @@ function qn(a, b, c) {
     );
     return Tb(d, b);
 }
-
 function tn(a, b) {
     Ec(a, (c, d) => {
         void 0 === b[d] && (b[d] = c);
     });
 }
-
 function sn() {
     if (J.google_ad_client) return J.google_ad_client;
     var a = U(J).head_tag_slot_vars;
@@ -28552,7 +27128,6 @@ function sn() {
     } else a = '';
     return a ? a : '';
 }
-
 function un(a) {
     a: {
         for (var b = [v.top], c = [], d = 0, e;
@@ -28587,7 +27162,6 @@ function un(a) {
     c.style.display = 'none';
     return c;
 }
-
 function vn(a, b, c, d) {
     wn(a, b, c, d, (e, f) => {
         e = e.document;
@@ -28608,7 +27182,6 @@ function vn(a, b, c, d) {
         return e;
     });
 }
-
 function wn(a, b, c, d, e) {
     var f = e(a, b);
     xn(a, c, b);
@@ -28638,7 +27211,6 @@ function wn(a, b, c, d, e) {
         c
     );
 }
-
 function xn(a, b, c) {
     var d = c.google_ad_output;
     var e = c.google_ad_format;
@@ -28704,7 +27276,6 @@ function xn(a, b, c) {
         c.google_ad_dom_fingerprint = Fc(h + b.join()).toString();
     }
 }
-
 function yn() {
     var a = hd(v);
     a &&
@@ -28715,7 +27286,6 @@ function yn() {
                 debugCardRequested: !1
             }));
 }
-
 function zn(a) {
     cn();
     dn(Al(), Eb(a, 8)) ||
@@ -28731,7 +27301,6 @@ function zn(a) {
     Bm();
     zm();
 }
-
 function An(a, b) {
     switch (a) {
         case 'google_reactive_ad_format':
@@ -28742,7 +27311,6 @@ function An(a, b) {
             return b;
     }
 }
-
 function Bn(a, b) {
     if (a.getAttribute('src')) {
         var c = a.getAttribute('src') || '';
@@ -28758,7 +27326,6 @@ function Bn(a, b) {
         }
     }
 }
-
 function Cn(a) {
     if ((a = Wc(a)))
         switch (a.data && a.data.autoFormat) {
@@ -28771,7 +27338,6 @@ function Cn(a) {
         }
     else return 12;
 }
-
 function Dn(a, b, c, d) {
     Bn(a, b);
     if (c.document && c.document.body && !Yk(c, b) && !b.google_reactive_ad_format) {
@@ -28872,7 +27438,6 @@ function Dn(a, b, c, d) {
                 !0 !== a ? ((b.efwr = !1), (b.gfwrnwer = a)) : (b.efwr = !0));
     }
 }
-
 function En(a) {
     var b = window;
     var c = void 0 === c ? null : c;
@@ -28884,7 +27449,6 @@ function En(a) {
         }!e || 'sc-cnf' !== e.googMsgType || (c && /[:|%3A]javascript\(/i.test(d.data) && !c(e, d)) || a(e, d);
     });
 }
-
 function Fn(a, b) {
     b = void 0 === b ? 500 : b;
     fj.call(this);
@@ -28903,7 +27467,6 @@ Fn.prototype.j = function() {
     delete this.h;
     fj.prototype.j.call(this);
 };
-
 function Gn(a) {
     fj.call(this);
     this.h = a;
@@ -28915,16 +27478,13 @@ var Hn = null;
 var In = [];
 var Jn = new n.Map();
 var Kn = -1;
-
 function Ln(a) {
     return pi.test(a.className) && 'done' != a.dataset.adsbygoogleStatus;
 }
-
 function Mn(a, b, c) {
     a.dataset.adsbygoogleStatus = 'done';
     Nn(a, b, c);
 }
-
 function Nn(a, b, c) {
     var d = window;
     var e = fd();
@@ -28956,7 +27516,6 @@ function Nn(a, b, c) {
         });
     }
 }
-
 function On(a, b, c) {
     var d = b.google_reactive_ads_config;
     var e = 'string' === typeof a.className && RegExp('(\\W|^)adsbygoogle-noablate(\\W|$)').test(a.className);
@@ -28993,7 +27552,6 @@ function On(a, b, c) {
             ),
             !0);
 }
-
 function Pn(a) {
     var b = document.getElementsByTagName('INS');
     for (var c = 0, d = b[c]; c < b.length; d = b[++c]) {
@@ -29002,7 +27560,6 @@ function Pn(a) {
     }
     return null;
 }
-
 function Qn(a, b, c) {
     if (a && a.shift)
         for (var d = 20; 0 < a.length && 0 < d;) {
@@ -29016,7 +27573,6 @@ function Qn(a, b, c) {
             --d;
         }
 }
-
 function Sn() {
     var a = yc('INS');
     a.className = 'adsbygoogle';
@@ -29024,7 +27580,6 @@ function Sn() {
     Oc(a);
     return a;
 }
-
 function Tn(a, b) {
     var c = {};
     Ec(xf, (f, g) => {
@@ -29038,7 +27593,6 @@ function Tn(a, b) {
     e.google_pause_ad_requests = !!U(J).pause_ad_requests;
     Mn(d, e, b);
 }
-
 function Un(a, b) {
     function c() {
         return Tn(a, b);
@@ -29057,7 +27611,6 @@ function Un(a, b) {
         });
     }
 }
-
 function Rn(a, b, c) {
     var d = {};
     sf(
@@ -29072,14 +27625,12 @@ function Rn(a, b, c) {
         }
     );
 }
-
 function Wn(a) {
     delete a.google_checked_head;
     Ec(a, (b, c) => {
         oi[c] || (delete a[c], v.console.warn("AdSense head tag doesn't support " + c.replace('google', 'data').replace(/_/g, '-') + ' attribute.'));
     });
 }
-
 function Xn(a, b) {
     var c =
         J.document.querySelector('script[src*="/pagead/js/adsbygoogle.js?client="]:not([data-checked-head])') ||
@@ -29114,7 +27665,6 @@ function Xn(a, b) {
             });
     }
 }
-
 function Yn(a) {
     var b = U(window).head_tag_slot_vars;
     var c = a.getAttribute('src') || '';
@@ -29126,7 +27676,6 @@ function Yn(a) {
             b.google_ad_client
         );
 }
-
 function $n(a) {
     if ('object' === typeof a && null != a) {
         if ('string' === typeof a.type) return 2;
@@ -29134,7 +27683,6 @@ function $n(a) {
     }
     return 0;
 }
-
 function Vn(a, b, c, d) {
     if (null == a) throw new K('push() called with no parameters.');
     14 === xb(d, yl) && ao(a, sb(Gb(d, ml, 14, yl), 1), Eb(d, 2));
@@ -29198,7 +27746,6 @@ function Vn(a, b, c, d) {
     }
 }
 var io = !1;
-
 function ao(a, b, c) {
     Q(hh) &&
         !io &&
@@ -29213,11 +27760,9 @@ function ao(a, b, c) {
                 0.01
             ));
 }
-
 function co(a) {
     return a.google_ad_client ? a.google_ad_client : (a = a.params) && a.google_ad_client ? a.google_ad_client : '';
 }
-
 function eo() {
     if (Q(ch)) {
         var a = Vj(J);
@@ -29233,13 +27778,11 @@ function eo() {
     a || Xj(J, 1);
 }
 }
-
 function ho(a) {
     Tc(() => {
         Af(v).wasPlaTagProcessed || (v.adsbygoogle && v.adsbygoogle.push(a));
     });
 }
-
 function fo(a, b, c) {
     U(J).skip_next_reactive_tag ?
         (U(J).skip_next_reactive_tag = !1) :
@@ -29249,7 +27792,6 @@ function fo(a, b, c) {
             U(J).ama_ran_on_page || kk(new jk(a, c)),
             Un(a, b));
 }
-
 function go(a) {
     if (a) {
         if (!Ln(a) && (a.id ? (a = Pn(a.id)) : (a = null), !a)) throw new K("'element' has already been filled.");
@@ -29257,7 +27799,6 @@ function go(a) {
     } else if (((a = Pn()), !a)) throw new K('All ins elements in the DOM with class=adsbygoogle already have ads in them.');
     return a;
 }
-
 function jo() {
     var a = new hj(J);
     var b = new Fn(J);
@@ -29280,7 +27821,6 @@ function jo() {
         R(Ng)
     );
 }
-
 function ko(a) {
     a = {
         value: D(a, 16)
@@ -29290,11 +27830,9 @@ function ko(a) {
     a.frequency = b;
     uf('new_abg_tag', a, b);
 }
-
 function lo(a) {
     Xi().S[Zi(26)] = !!Number(a);
 }
-
 function mo(a) {
     Number(a) ?
         (U(J).pause_ad_requests = !0) :
@@ -29336,7 +27874,6 @@ function mo(a) {
             v.setTimeout(a, 0),
             v.setTimeout(a, 1e3));
 }
-
 function no(a) {
     uf(
         'adsenseGfpKnob', {
@@ -29358,11 +27895,9 @@ function no(a) {
     }
     J._gfp_a_ = a;
 }
-
 function oo(a) {
     ad(a) && window.setTimeout(a, 0);
 }
-
 function Zn(a, b) {
     ((ba = fk(
                 Tb(
@@ -29385,7 +27920,6 @@ function Zn(a, b) {
         });
     });
 }
-
 function po() {
     for (var a = q(p(Jn, 'keys').call(Jn)), b = a.next(); !b.done; b = a.next()) {
         b = b.value;
@@ -29410,7 +27944,6 @@ function po() {
                 })(a)
             ));
 }
-
 function bo(a) {
     var b = In.length;
     if (2 === $n(a) && 'preroll' === a.type && null != a.adBreakDone) {

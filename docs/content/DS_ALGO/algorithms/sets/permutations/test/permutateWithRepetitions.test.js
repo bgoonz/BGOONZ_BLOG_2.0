@@ -1,10 +1,8 @@
 import permutateWithRepetitions from '../permutateWithRepetitions';
-
 describe('permutateWithRepetitions', () => {
     it('should permutate string with repetition', () => {
         const permutations1 = permutateWithRepetitions(['A']);
         expect(permutations1).toEqual([['A']]);
-
         const permutations2 = permutateWithRepetitions(['A', 'B']);
         expect(permutations2).toEqual([
             ['A', 'A'],
@@ -12,7 +10,6 @@ describe('permutateWithRepetitions', () => {
             ['B', 'A'],
             ['B', 'B']
         ]);
-
         const permutations3 = permutateWithRepetitions(['A', 'B', 'C']);
         expect(permutations3).toEqual([
             ['A', 'A', 'A'],
@@ -43,7 +40,6 @@ describe('permutateWithRepetitions', () => {
             ['C', 'C', 'B'],
             ['C', 'C', 'C']
         ]);
-
         const permutations4 = permutateWithRepetitions(['A', 'B', 'C', 'D']);
         expect(permutations4.length).toBe(4 * 4 * 4 * 4);
     });

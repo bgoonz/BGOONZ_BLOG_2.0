@@ -1,6 +1,5 @@
 import { testCases16Bits, testCases32Bits, testCases64Bits } from '../testCases';
 import { bitsToFloat16, bitsToFloat32, bitsToFloat64 } from '../bitsToFloat';
-
 describe('bitsToFloat16', () => {
     it('should convert floating point binary bits to floating point decimal number', () => {
         for (let testCaseIndex = 0; testCaseIndex < testCases16Bits.length; testCaseIndex += 1) {
@@ -10,7 +9,6 @@ describe('bitsToFloat16', () => {
         }
     });
 });
-
 describe('bitsToFloat32', () => {
     it('should convert floating point binary bits to floating point decimal number', () => {
         for (let testCaseIndex = 0; testCaseIndex < testCases32Bits.length; testCaseIndex += 1) {
@@ -20,7 +18,6 @@ describe('bitsToFloat32', () => {
         }
     });
 });
-
 describe('bitsToFloat64', () => {
     it('should convert floating point binary bits to floating point decimal number', () => {
         for (let testCaseIndex = 0; testCaseIndex < testCases64Bits.length; testCaseIndex += 1) {

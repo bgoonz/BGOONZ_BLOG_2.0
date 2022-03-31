@@ -1,5 +1,4 @@
 import Sort from '../Sort';
-
 export default class QuickSortInPlace extends Sort {
     /** Sorting in place avoids unnecessary use of additional memory, but modifies input array.
      *
@@ -15,7 +14,6 @@ export default class QuickSortInPlace extends Sort {
     sort(originalArray, inputLowIndex = 0, inputHighIndex = originalArray.length - 1, recursiveCall = false) {
         // Copies array on initial call, and then sorts in place.
         const array = recursiveCall ? originalArray : [...originalArray];
-
         /**
          * The partitionArray() operates on the subarray between lowIndex and highIndex, inclusive.
          * It arbitrarily chooses the last element in the subarray as the pivot.
@@ -38,11 +36,9 @@ export default class QuickSortInPlace extends Sort {
                 array[leftIndex] = array[rightIndex];
                 array[rightIndex] = temp;
             };
-
             const pivot = array[highIndex];
             // visitingCallback is used for time-complexity analysis.
             this.callbacks.visitingCallback(pivot);
-
             let partitionIndex = lowIndex;
             for (let currentIndex = lowIndex; currentIndex < highIndex; currentIndex += 1) {
                 if (this.comparator.lessThan(array[currentIndex], pivot)) {
@@ -50,16 +46,13 @@ export default class QuickSortInPlace extends Sort {
                     partitionIndex += 1;
                 }
             }
-
             // The element at the partitionIndex is guaranteed to be greater than or equal to pivot.
             // All elements to the left of partitionIndex are guaranteed to be less than pivot.
             // Swapping the pivot with the partitionIndex therefore places the pivot in its
             // final sorted position.
             swap(partitionIndex, highIndex);
-
             return partitionIndex;
         };
-
         // Base case is when low and high converge.
         if (inputLowIndex < inputHighIndex) {
             const partitionIndex = partitionArray(inputLowIndex, inputHighIndex);
@@ -67,7 +60,6 @@ export default class QuickSortInPlace extends Sort {
             this.sort(array, inputLowIndex, partitionIndex - 1, RECURSIVE_CALL);
             this.sort(array, partitionIndex + 1, inputHighIndex, RECURSIVE_CALL);
         }
-
         return array;
     }
 }

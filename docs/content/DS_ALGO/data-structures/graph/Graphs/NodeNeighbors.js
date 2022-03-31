@@ -1,11 +1,9 @@
 // https://en.wikipedia.org/wiki/Neighbourhood_(graph_theory)
-
 class Graph {
     // Generic graph: the algorithm works regardless of direction or weight
     constructor() {
         this.edges = [];
     }
-
     addEdge(node1, node2) {
         // Adding edges to the graph
         this.edges.push({
@@ -13,7 +11,6 @@ class Graph {
             node2
         });
     }
-
     nodeNeighbors(node) {
         // Returns an array with all of the node neighbors
         const neighbors = new Set();
@@ -29,11 +26,9 @@ class Graph {
     return neighbors;
 }
 }
-
 export {
     Graph
 };
-
 // const graph = new Graph()
 // graph.addEdge(1, 2)
 // graph.addEdge(2, 3)

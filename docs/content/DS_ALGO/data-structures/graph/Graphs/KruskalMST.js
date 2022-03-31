@@ -6,19 +6,16 @@ class DisjointSetTreeNode {
         this.rank = 0;
     }
 }
-
 class DisjointSetTree {
     // Disjoint Set DataStructure
     constructor() {
         // map to from node name to the node object
         this.map = {};
     }
-
     makeSet(x) {
         // Function to create a new set with x as its member
         this.map[x] = new DisjointSetTreeNode(x);
     }
-
     findSet(x) {
         // Function to find the set x belongs to (with path-compression)
         if (this.map[x] !== this.map[x].parent) {
@@ -26,12 +23,10 @@ class DisjointSetTree {
         }
         return this.map[x].parent;
     }
-
     union(x, y) {
         // Function to merge 2 disjoint sets
         this.link(this.findSet(x), this.findSet(y));
     }
-
     link(x, y) {
         // Helper function for union operation
         if (x.rank > y.rank) {
@@ -44,20 +39,17 @@ class DisjointSetTree {
         }
     }
 }
-
 class GraphWeightedUndirectedAdjacencyList {
     // Weighted Undirected Graph class
     constructor() {
         this.connections = {};
         this.nodes = 0;
     }
-
     addNode(node) {
         // Function to add a node to the graph (connection represented by set)
         this.connections[node] = {};
         this.nodes += 1;
     }
-
     addEdge(node1, node2, weight) {
         // Function to add an edge (adds the node too if they are not present in the graph)
         if (!(node1 in this.connections)) {
@@ -69,7 +61,6 @@ class GraphWeightedUndirectedAdjacencyList {
         this.connections[node1][node2] = weight;
         this.connections[node2][node1] = weight;
     }
-
     KruskalMST() {
         // Kruskal's Algorithm to generate a Minimum Spanning Tree (MST) of a graph
         // Details: https://en.wikipedia.org/wiki/Kruskal%27s_algorithm
@@ -104,11 +95,9 @@ class GraphWeightedUndirectedAdjacencyList {
         return graph;
     }
 }
-
 export {
     GraphWeightedUndirectedAdjacencyList
 };
-
 // const graph = new GraphWeightedUndirectedAdjacencyList()
 // graph.addEdge(1, 2, 1)
 // graph.addEdge(2, 3, 2)

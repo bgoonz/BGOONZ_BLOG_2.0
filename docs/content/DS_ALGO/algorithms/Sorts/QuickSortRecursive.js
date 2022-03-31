@@ -3,7 +3,6 @@
     lots of different implementations but the "recursive" or "Partition in place"
     is one of the most efficient implementations below we have discussed how to
     implement it.
-
     Partition in place => "in place" Partition in place indicates that we
     do not need any other space to store the auxiliary array and the term
     "partition" denotes that we split the list into two parts one is less
@@ -11,10 +10,8 @@
     process recursively and breaks the problem into sub-problems and makes
     it singular so that the behavior or "divide and conquer" get involved
     too.
-
     Problem & Source of Explanation => https://www.cs.auckland.ac.nz/software/AlgAnim/qsort1a.html
 */
-
 /**
  * Partition in place QuickSort.
  * @param {number[]} inputList list of values.
@@ -34,7 +31,6 @@ const quickSort = (inputList, low, high) => {
     }
     return inputList;
 };
-
 /**
  * Partition In Place method.
  * @param {number[]} partitionList list for partitioning.
@@ -55,5 +51,4 @@ const partition = (partitionList, low, high) => {
     [partitionList[pIndex], partitionList[high]] = [partitionList[high], partitionList[pIndex]];
     return pIndex;
 };
-
 export { quickSort };

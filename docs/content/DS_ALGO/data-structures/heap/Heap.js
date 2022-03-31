@@ -1,5 +1,4 @@
 import Comparator from '../../utils/comparator/Comparator';
-
 /**
  * Parent class for Min and Max Heaps.
  */
@@ -12,12 +11,10 @@ export default class Heap {
         if (new.target === Heap) {
             throw new TypeError('Cannot construct Heap instance directly');
         }
-
         // Array representation of the heap.
         this.heapContainer = [];
         this.compare = new Comparator(comparatorFunction);
     }
-
     /**
      * @param {number} parentIndex
      * @return {number}
@@ -25,7 +22,6 @@ export default class Heap {
     getLeftChildIndex(parentIndex) {
         return 2 * parentIndex + 1;
     }
-
     /**
      * @param {number} parentIndex
      * @return {number}
@@ -33,7 +29,6 @@ export default class Heap {
     getRightChildIndex(parentIndex) {
         return 2 * parentIndex + 2;
     }
-
     /**
      * @param {number} childIndex
      * @return {number}
@@ -41,7 +36,6 @@ export default class Heap {
     getParentIndex(childIndex) {
         return Math.floor((childIndex - 1) / 2);
     }
-
     /**
      * @param {number} childIndex
      * @return {boolean}
@@ -49,7 +43,6 @@ export default class Heap {
     hasParent(childIndex) {
         return this.getParentIndex(childIndex) >= 0;
     }
-
     /**
      * @param {number} parentIndex
      * @return {boolean}
@@ -57,7 +50,6 @@ export default class Heap {
     hasLeftChild(parentIndex) {
         return this.getLeftChildIndex(parentIndex) < this.heapContainer.length;
     }
-
     /**
      * @param {number} parentIndex
      * @return {boolean}
@@ -65,7 +57,6 @@ export default class Heap {
     hasRightChild(parentIndex) {
         return this.getRightChildIndex(parentIndex) < this.heapContainer.length;
     }
-
     /**
      * @param {number} parentIndex
      * @return {*}
@@ -73,7 +64,6 @@ export default class Heap {
     leftChild(parentIndex) {
         return this.heapContainer[this.getLeftChildIndex(parentIndex)];
     }
-
     /**
      * @param {number} parentIndex
      * @return {*}
@@ -81,7 +71,6 @@ export default class Heap {
     rightChild(parentIndex) {
         return this.heapContainer[this.getRightChildIndex(parentIndex)];
     }
-
     /**
      * @param {number} childIndex
      * @return {*}
@@ -89,7 +78,6 @@ export default class Heap {
     parent(childIndex) {
         return this.heapContainer[this.getParentIndex(childIndex)];
     }
-
     /**
      * @param {number} indexOne
      * @param {number} indexTwo
@@ -99,7 +87,6 @@ export default class Heap {
         this.heapContainer[indexTwo] = this.heapContainer[indexOne];
         this.heapContainer[indexOne] = tmp;
     }
-
     /**
      * @return {*}
      */
@@ -107,10 +94,8 @@ export default class Heap {
         if (this.heapContainer.length === 0) {
             return null;
         }
-
         return this.heapContainer[0];
     }
-
     /**
      * @return {*}
      */
@@ -118,20 +103,15 @@ export default class Heap {
         if (this.heapContainer.length === 0) {
             return null;
         }
-
         if (this.heapContainer.length === 1) {
             return this.heapContainer.pop();
         }
-
         const item = this.heapContainer[0];
-
         // Move the last element from the end to the head.
         this.heapContainer[0] = this.heapContainer.pop();
         this.heapifyDown();
-
         return item;
     }
-
     /**
      * @param {*} item
      * @return {Heap}
@@ -141,7 +121,6 @@ export default class Heap {
         this.heapifyUp();
         return this;
     }
-
     /**
      * @param {*} item
      * @param {Comparator} [comparator]
@@ -150,12 +129,10 @@ export default class Heap {
     remove(item, comparator = this.compare) {
         // Find number of items to remove.
         const numberOfItemsToRemove = this.find(item, comparator).length;
-
         for (let iteration = 0; iteration < numberOfItemsToRemove; iteration += 1) {
             // We need to find item index to remove each time after removal since
             // indices are being changed after each heapify process.
             const indexToRemove = this.find(item, comparator).pop();
-
             // If we need to remove last child in the heap then just remove it.
             // There is no need to heapify the heap afterwards.
             if (indexToRemove === this.heapContainer.length - 1) {
@@ -163,10 +140,8 @@ export default class Heap {
             } else {
                 // Move last element in heap to the vacant (removed) position.
                 this.heapContainer[indexToRemove] = this.heapContainer.pop();
-
                 // Get parent.
                 const parentItem = this.parent(indexToRemove);
-
                 // If there is no parent or parent is in correct order with the node
                 // we're going to delete then heapify down. Otherwise heapify up.
                 if (this.hasLeftChild(indexToRemove) && (!parentItem || this.pairIsInCorrectOrder(parentItem, this.heapContainer[indexToRemove]))) {
@@ -176,10 +151,8 @@ export default class Heap {
                 }
             }
         }
-
         return this;
     }
-
     /**
      * @param {*} item
      * @param {Comparator} [comparator]
@@ -187,30 +160,25 @@ export default class Heap {
      */
     find(item, comparator = this.compare) {
         const foundItemIndices = [];
-
         for (let itemIndex = 0; itemIndex < this.heapContainer.length; itemIndex += 1) {
             if (comparator.equal(item, this.heapContainer[itemIndex])) {
                 foundItemIndices.push(itemIndex);
             }
         }
-
         return foundItemIndices;
     }
-
     /**
      * @return {boolean}
      */
     isEmpty() {
         return !this.heapContainer.length;
     }
-
     /**
      * @return {string}
      */
     toString() {
         return this.heapContainer.toString();
     }
-
     /**
      * @param {number} [customStartIndex]
      */
@@ -219,13 +187,11 @@ export default class Heap {
         // in the heap container and lift it up until it is in the correct
         // order with respect to its parent element.
         let currentIndex = customStartIndex || this.heapContainer.length - 1;
-
         while (this.hasParent(currentIndex) && !this.pairIsInCorrectOrder(this.parent(currentIndex), this.heapContainer[currentIndex])) {
             this.swap(currentIndex, this.getParentIndex(currentIndex));
             currentIndex = this.getParentIndex(currentIndex);
         }
     }
-
     /**
      * @param {number} [customStartIndex]
      */
@@ -235,23 +201,19 @@ export default class Heap {
         // Do the same for next children after swap.
         let currentIndex = customStartIndex;
         let nextIndex = null;
-
         while (this.hasLeftChild(currentIndex)) {
             if (this.hasRightChild(currentIndex) && this.pairIsInCorrectOrder(this.rightChild(currentIndex), this.leftChild(currentIndex))) {
                 nextIndex = this.getRightChildIndex(currentIndex);
             } else {}
             nextIndex = this.getLeftChildIndex(currentIndex);
         }
-
         if (this.pairIsInCorrectOrder(this.heapContainer[currentIndex], this.heapContainer[nextIndex])) {
             break;
         }
-
         this.swap(currentIndex, nextIndex);
         currentIndex = nextIndex;
     }
 }
-
 /**
  * Checks if pair of heap elements is in correct order.
  * For MinHeap the first element must be always smaller or equal.
@@ -269,5 +231,4 @@ pairIsInCorrectOrder(firstElement, secondElement) {
     `);
 }
 }
-
 }

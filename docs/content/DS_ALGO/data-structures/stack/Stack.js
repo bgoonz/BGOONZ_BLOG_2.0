@@ -1,5 +1,4 @@
 import LinkedList from '../linked-list/LinkedList';
-
 export default class Stack {
     constructor() {
         // We're going to implement Stack based on LinkedList since these
@@ -7,7 +6,6 @@ export default class Stack {
         // with prepend/deleteHead operations of LinkedList.
         this.linkedList = new LinkedList();
     }
-
     /**
      * @return {boolean}
      */
@@ -15,7 +13,6 @@ export default class Stack {
         // The stack is empty if its linked list doesn't have a head.
         return !this.linkedList.head;
     }
-
     /**
      * @return {*}
      */
@@ -24,11 +21,9 @@ export default class Stack {
             // If the linked list is empty then there is nothing to peek from.
             return null;
         }
-
         // Just read the value from the start of linked list without deleting it.
         return this.linkedList.head.value;
     }
-
     /**
      * @param {*} value
      */
@@ -37,7 +32,6 @@ export default class Stack {
         // the new value at the start of the linked list.
         this.linkedList.prepend(value);
     }
-
     /**
      * @return {*}
      */
@@ -47,14 +41,12 @@ export default class Stack {
         const removedHead = this.linkedList.deleteHead();
         return removedHead ? removedHead.value : null;
     }
-
     /**
      * @return {*[]}
      */
     toArray() {
         return this.linkedList.toArray().map((linkedListNode) => linkedListNode.value);
     }
-
     /**
      * @param {function} [callback]
      * @return {string}

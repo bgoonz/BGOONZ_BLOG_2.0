@@ -3,7 +3,6 @@
  * @callback traversalCallback
  * @param {*} nodeValue
  */
-
 /**
  * @param {LinkedListNode} node
  * @param {traversalCallback} callback
@@ -14,7 +13,6 @@ function reverseTraversalRecursive(node, callback) {
         callback(node.value);
     }
 }
-
 /**
  * @param {LinkedList} linkedList
  * @param {traversalCallback} callback

@@ -2,7 +2,6 @@
  * Sequence of 0s and 1s.
  * @typedef {number[]} Bits
  */
-
 /**
  * @typedef {{
  *   signBitsCount: number,
@@ -10,7 +9,6 @@
  *   fractionBitsCount: number,
  * }} PrecisionConfig
  */
-
 /**
  * @typedef {{
  *   half: PrecisionConfig,
@@ -18,7 +16,6 @@
  *   double: PrecisionConfig
  * }} PrecisionConfigs
  */
-
 /**
  * ┌───────────────── sign bit
  * │   ┌───────────── exponent bits
@@ -48,7 +45,6 @@ const precisionConfigs = {
         fractionBitsCount: 52
     }
 };
-
 /**
  * Converts the binary representation of the floating point number to decimal float number.
  *
@@ -58,10 +54,8 @@ const precisionConfigs = {
  */
 function bitsToFloat(bits, precisionConfig) {
     const { signBitsCount, exponentBitsCount } = precisionConfig;
-
     // Figuring out the sign.
     const sign = (-1) ** bits[0]; // -1^1 = -1, -1^0 = 1
-
     // Calculating the exponent value.
     const exponentBias = 2 ** (exponentBitsCount - 1) - 1;
     const exponentBits = bits.slice(signBitsCount, signBitsCount + exponentBitsCount);
@@ -70,18 +64,15 @@ function bitsToFloat(bits, precisionConfig) {
         return exponentSoFar + currentBit * bitPowerOfTwo;
     }, 0);
     const exponent = exponentUnbiased - exponentBias;
-
     // Calculating the fraction value.
     const fractionBits = bits.slice(signBitsCount + exponentBitsCount);
     const fraction = fractionBits.reduce((fractionSoFar, currentBit, bitIndex) => {
         const bitPowerOfTwo = 2 ** -(bitIndex + 1);
         return fractionSoFar + currentBit * bitPowerOfTwo;
     }, 0);
-
     // Putting all parts together to calculate the final number.
     return sign * 2 ** exponent * (1 + fraction);
 }
-
 /**
  *  Converts the 16-bit binary representation of the floating point number to decimal float number.
  *
@@ -91,7 +82,6 @@ function bitsToFloat(bits, precisionConfig) {
 export function bitsToFloat16(bits) {
     return bitsToFloat(bits, precisionConfigs.half);
 }
-
 /**
  * Converts the 32-bit binary representation of the floating point number to decimal float number.
  *
@@ -101,7 +91,6 @@ export function bitsToFloat16(bits) {
 export function bitsToFloat32(bits) {
     return bitsToFloat(bits, precisionConfigs.single);
 }
-
 /**
  * Converts the 64-bit binary representation of the floating point number to decimal float number.
  *

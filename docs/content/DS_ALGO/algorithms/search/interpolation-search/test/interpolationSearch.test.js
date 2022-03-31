@@ -1,5 +1,4 @@
 import interpolationSearch from '../interpolationSearch';
-
 describe('interpolationSearch', () => {
     it('should search elements in sorted array of numbers', () => {
         expect(interpolationSearch([], 1)).toBe(-1);

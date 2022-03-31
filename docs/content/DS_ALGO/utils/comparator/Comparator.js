@@ -7,7 +7,6 @@ export default class Comparator {
     constructor(compareFunction) {
         this.compare = compareFunction || Comparator.defaultCompareFunction;
     }
-
     /**
      * Default comparison function. It just assumes that "a" and "b" are strings or numbers.
      * @param {(string|number)} a
@@ -18,10 +17,8 @@ export default class Comparator {
         if (a === b) {
             return 0;
         }
-
         return a < b ? -1 : 1;
     }
-
     /**
      * Checks if two variables are equal.
      * @param {*} a
@@ -31,7 +28,6 @@ export default class Comparator {
     equal(a, b) {
         return this.compare(a, b) === 0;
     }
-
     /**
      * Checks if variable "a" is less than "b".
      * @param {*} a
@@ -41,7 +37,6 @@ export default class Comparator {
     lessThan(a, b) {
         return this.compare(a, b) < 0;
     }
-
     /**
      * Checks if variable "a" is greater than "b".
      * @param {*} a
@@ -51,7 +46,6 @@ export default class Comparator {
     greaterThan(a, b) {
         return this.compare(a, b) > 0;
     }
-
     /**
      * Checks if variable "a" is less than or equal to "b".
      * @param {*} a
@@ -61,7 +55,6 @@ export default class Comparator {
     lessThanOrEqual(a, b) {
         return this.lessThan(a, b) || this.equal(a, b);
     }
-
     /**
      * Checks if variable "a" is greater than or equal to "b".
      * @param {*} a
@@ -71,7 +64,6 @@ export default class Comparator {
     greaterThanOrEqual(a, b) {
         return this.greaterThan(a, b) || this.equal(a, b);
     }
-
     /**
      * Reverses the comparison order.
      */

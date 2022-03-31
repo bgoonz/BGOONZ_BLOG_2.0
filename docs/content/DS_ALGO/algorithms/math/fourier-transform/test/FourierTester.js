@@ -1,5 +1,4 @@
 import ComplexNumber from '../../complex-number/ComplexNumber';
-
 export const fourierTestCases = [{
         input: [{
             amplitude: 1
@@ -408,7 +407,6 @@ export const fourierTestCases = [{
         ]
     }
 ];
-
 export default class FourierTester {
     /**
      * @param {function} fourierTransform
@@ -419,20 +417,16 @@ export default class FourierTester {
                 input,
                 output: expectedOutput
             } = testCase;
-
             // Try to split input signal into sequence of pure sinusoids.
             const formattedInput = input.map((sample) => sample.amplitude);
             const currentOutput = fourierTransform(formattedInput);
-
             // Check the signal has been split into proper amount of sub-signals.
             expect(currentOutput.length).toBeGreaterThanOrEqual(formattedInput.length);
-
             // Now go through all the signals and check their frequency, amplitude and phase.
             expectedOutput.forEach((expectedSignal, frequency) => {
                 // Get template data we want to test against.
                 const currentSignal = currentOutput[frequency];
                 const currentPolarSignal = currentSignal.getPolarForm(false);
-
                 // Check all signal parameters.
                 expect(frequency).toBe(expectedSignal.frequency);
                 expect(currentSignal.re).toBeCloseTo(expectedSignal.re, 4);
@@ -442,7 +436,6 @@ export default class FourierTester {
             });
         });
     }
-
     /**
      * @param {function} inverseFourierTransform
      */
@@ -452,7 +445,6 @@ export default class FourierTester {
                 input: expectedOutput,
                 output: inputFrequencies
             } = testCase;
-
             // Try to join frequencies into time signal.
             const formattedInput = inputFrequencies.map((frequency) => {
                 return new ComplexNumber({
@@ -461,15 +453,12 @@ export default class FourierTester {
                 });
             });
             const currentOutput = inverseFourierTransform(formattedInput);
-
             // Check the signal has been combined of proper amount of time samples.
             expect(currentOutput.length).toBeLessThanOrEqual(formattedInput.length);
-
             // Now go through all the amplitudes and check their values.
             expectedOutput.forEach((expectedAmplitudes, timer) => {
                 // Get template data we want to test against.
                 const currentAmplitude = currentOutput[timer];
-
                 // Check if current amplitude is close enough to the calculated one.
                 expect(currentAmplitude).toBeCloseTo(expectedAmplitudes.amplitude, 4);
             });
@@ -483,7 +472,6 @@ phase: -134.99999,
 ]
 }
 ];
-
 export default class FourierTester {
     /**
      * @param {function} fourierTransform
@@ -494,20 +482,16 @@ export default class FourierTester {
                 input,
                 output: expectedOutput
             } = testCase;
-
             // Try to split input signal into sequence of pure sinusoids.
             const formattedInput = input.map((sample) => sample.amplitude);
             const currentOutput = fourierTransform(formattedInput);
-
             // Check the signal has been split into proper amount of sub-signals.
             expect(currentOutput.length).toBeGreaterThanOrEqual(formattedInput.length);
-
             // Now go through all the signals and check their frequency, amplitude and phase.
             expectedOutput.forEach((expectedSignal, frequency) => {
                 // Get template data we want to test against.
                 const currentSignal = currentOutput[frequency];
                 const currentPolarSignal = currentSignal.getPolarForm(false);
-
                 // Check all signal parameters.
                 expect(frequency).toBe(expectedSignal.frequency);
                 expect(currentSignal.re).toBeCloseTo(expectedSignal.re, 4);
@@ -517,7 +501,6 @@ export default class FourierTester {
             });
         });
     }
-
     /**
      * @param {function} inverseFourierTransform
      */
@@ -527,7 +510,6 @@ export default class FourierTester {
                 input: expectedOutput,
                 output: inputFrequencies
             } = testCase;
-
             // Try to join frequencies into time signal.
             const formattedInput = inputFrequencies.map((frequency) => {
                 return new ComplexNumber({
@@ -536,15 +518,12 @@ export default class FourierTester {
                 });
             });
             const currentOutput = inverseFourierTransform(formattedInput);
-
             // Check the signal has been combined of proper amount of time samples.
             expect(currentOutput.length).toBeLessThanOrEqual(formattedInput.length);
-
             // Now go through all the amplitudes and check their values.
             expectedOutput.forEach((expectedAmplitudes, timer) => {
                 // Get template data we want to test against.
                 const currentAmplitude = currentOutput[timer];
-
                 // Check if current amplitude is close enough to the calculated one.
                 expect(currentAmplitude).toBeCloseTo(expectedAmplitudes.amplitude, 4);
             });

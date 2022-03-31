@@ -2,7 +2,6 @@ import GraphVertex from '../../../../data-structures/graph/GraphVertex';
 import GraphEdge from '../../../../data-structures/graph/GraphEdge';
 import Graph from '../../../../data-structures/graph/Graph';
 import bellmanFord from '../bellmanFord';
-
 describe('bellmanFord', () => {
     it('should find minimum paths to all vertices for undirected graph', () => {
         const vertexA = new GraphVertex('A');
@@ -13,7 +12,6 @@ describe('bellmanFord', () => {
         const vertexF = new GraphVertex('F');
         const vertexG = new GraphVertex('G');
         const vertexH = new GraphVertex('H');
-
         const edgeAB = new GraphEdge(vertexA, vertexB, 4);
         const edgeAE = new GraphEdge(vertexA, vertexE, 7);
         const edgeAC = new GraphEdge(vertexA, vertexC, 3);
@@ -26,7 +24,6 @@ describe('bellmanFord', () => {
         const edgeDF = new GraphEdge(vertexD, vertexF, 2);
         const edgeFG = new GraphEdge(vertexF, vertexG, 3);
         const edgeEG = new GraphEdge(vertexE, vertexG, 5);
-
         const graph = new Graph();
         graph
             .addVertex(vertexH)
@@ -42,9 +39,7 @@ describe('bellmanFord', () => {
             .addEdge(edgeDF)
             .addEdge(edgeFG)
             .addEdge(edgeEG);
-
         const { distances, previousVertices } = bellmanFord(graph, vertexA);
-
         expect(distances).toEqual({
             H: Infinity,
             A: 0,
@@ -55,7 +50,6 @@ describe('bellmanFord', () => {
             G: 12,
             F: 11
         });
-
         expect(previousVertices.F.getKey()).toBe('D');
         expect(previousVertices.D.getKey()).toBe('B');
         expect(previousVertices.B.getKey()).toBe('A');
@@ -64,7 +58,6 @@ describe('bellmanFord', () => {
         expect(previousVertices.A).toBeNull();
         expect(previousVertices.H).toBeNull();
     });
-
     it('should find minimum paths to all vertices for directed graph with negative edge weights', () => {
         const vertexS = new GraphVertex('S');
         const vertexE = new GraphVertex('E');
@@ -73,7 +66,6 @@ describe('bellmanFord', () => {
         const vertexB = new GraphVertex('B');
         const vertexC = new GraphVertex('C');
         const vertexH = new GraphVertex('H');
-
         const edgeSE = new GraphEdge(vertexS, vertexE, 8);
         const edgeSA = new GraphEdge(vertexS, vertexA, 10);
         const edgeED = new GraphEdge(vertexE, vertexD, 1);
@@ -82,7 +74,6 @@ describe('bellmanFord', () => {
         const edgeAC = new GraphEdge(vertexA, vertexC, 2);
         const edgeCB = new GraphEdge(vertexC, vertexB, -2);
         const edgeBA = new GraphEdge(vertexB, vertexA, 1);
-
         const graph = new Graph(true);
         graph
             .addVertex(vertexH)
@@ -94,9 +85,7 @@ describe('bellmanFord', () => {
             .addEdge(edgeAC)
             .addEdge(edgeCB)
             .addEdge(edgeBA);
-
         const { distances, previousVertices } = bellmanFord(graph, vertexS);
-
         expect(distances).toEqual({
             H: Infinity,
             S: 0,
@@ -106,7 +95,6 @@ describe('bellmanFord', () => {
             D: 9,
             E: 8
         });
-
         expect(previousVertices.H).toBeNull();
         expect(previousVertices.S).toBeNull();
         expect(previousVertices.B.getKey()).toBe('C');

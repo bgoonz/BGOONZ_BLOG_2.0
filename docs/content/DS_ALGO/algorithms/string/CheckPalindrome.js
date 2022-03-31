@@ -13,5 +13,4 @@ const checkPalindrome = (str) => {
     const reversed = [...str].reverse().join('');
     return str === reversed ? 'Palindrome' : 'Not a Palindrome';
 };
-
 export { checkPalindrome };

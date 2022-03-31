@@ -1,5 +1,4 @@
 import dcMaximumSubarray from '../dcMaximumSubarraySum';
-
 describe('dcMaximumSubarraySum', () => {
     it('should find maximum subarray sum using the divide and conquer algorithm', () => {
         expect(dcMaximumSubarray([])).toEqual(-Infinity);

@@ -1,5 +1,4 @@
 import factorial from '../factorial';
-
 describe('factorial', () => {
     it('should calculate factorial', () => {
         expect(factorial(0)).toBe(1);

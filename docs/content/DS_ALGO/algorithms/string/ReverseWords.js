@@ -12,5 +12,4 @@ const reverseWords = (str) => {
     // ["JS", "Love", "I"] => "JS Love I"
     return reversedWords.join(' ');
 };
-
 export { reverseWords };

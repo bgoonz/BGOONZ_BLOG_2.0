@@ -18,12 +18,10 @@
  * We define a function fibonacciSearch() that takes an array of numbers,
  * the item (number) to be searched for and the length of the items in the array
  ****************************************************************************/
-
 export const fibonacciSearch = (arr, x, n) => {
     let fib2 = 0; // (K-2)'th Fibonacci Number
     let fib1 = 1; // (K-1)'th Fibonacci Number.
     let fibK = fib2 + fib1; // Kth Fibonacci
-
     /* We want to store the smallest fibonacci number smaller such that
     number is greater than or equal to n, we use fibK for this */
     while (fibK < n) {
@@ -33,14 +31,11 @@ export const fibonacciSearch = (arr, x, n) => {
     }
     //  This marks the eliminated range from front
     let offset = -1;
-
     /* while there are elements to be checked. We compare arr[fib2] with x.
     When fibM becomes 1, fib2 becomes 0 */
-
     while (fibK > 1) {
         // Check if fibK is a valid location
         const i = Math.min(offset + fib2, n - 1);
-
         /*  If x is greater than the value at
       index fib2, Partition the subarray array
       from offset to i */
@@ -61,7 +56,6 @@ export const fibonacciSearch = (arr, x, n) => {
             return i;
         }
     }
-
     //    comparing the last element with x */
     if (fib1 && arr[offset + 1] === x) {
         return offset + 1;
@@ -69,7 +63,6 @@ export const fibonacciSearch = (arr, x, n) => {
     //    element not found. return -1
     return -1;
 };
-
 // Example
 // const myArray = [10, 22, 35, 40, 45, 50, 80, 82, 85, 90, 100]
 // const n = myArray.length

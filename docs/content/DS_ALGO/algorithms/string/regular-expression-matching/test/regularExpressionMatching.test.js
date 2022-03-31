@@ -1,5 +1,4 @@
 import regularExpressionMatching from '../regularExpressionMatching';
-
 describe('regularExpressionMatching', () => {
     it('should match regular expressions in a string', () => {
         expect(regularExpressionMatching('', '')).toBe(true);
@@ -19,7 +18,6 @@ describe('regularExpressionMatching', () => {
         expect(regularExpressionMatching('aab', 'c*a*b*')).toBe(true);
         expect(regularExpressionMatching('mississippi', 'mis*is*.p*.')).toBe(true);
         expect(regularExpressionMatching('ab', '.*')).toBe(true);
-
         expect(regularExpressionMatching('', 'a')).toBe(false);
         expect(regularExpressionMatching('a', '')).toBe(false);
         expect(regularExpressionMatching('aab', 'aa')).toBe(false);

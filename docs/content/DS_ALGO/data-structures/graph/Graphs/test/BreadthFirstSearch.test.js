@@ -1,5 +1,4 @@
 import { breadthFirstSearch } from '../BreadthFirstSearch';
-
 describe('BreadthFirstSearch', () => {
     const graph = {
         A: ['B', 'D'],
@@ -16,10 +15,8 @@ describe('BreadthFirstSearch', () => {
         |     |
         v     v
   C --> D <-- E
-
   F --> G
   */
-
     it('should return the visited nodes', () => {
         expect(Array.from(breadthFirstSearch(graph, 'C'))).toEqual(['C', 'D', 'A', 'B', 'E']);
         expect(Array.from(breadthFirstSearch(graph, 'A'))).toEqual(['A', 'B', 'D', 'E']);

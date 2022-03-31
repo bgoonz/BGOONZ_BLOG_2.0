@@ -1,5 +1,4 @@
 import countSetBits from './countSetBits';
-
 /**
  * Counts the number of bits that need to be change in order
  * to convert numberA to numberB.

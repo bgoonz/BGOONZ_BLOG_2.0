@@ -4,7 +4,6 @@
     does not capitalize some words, such as very short words like "a" or "is", but for the purposes of this function, a general approach
     is taken where all words are capitalized regardless of length.
 */
-
 /**
  * The titleCaseConversion function converts a string into a title case string.
  * @param {string} inputString The input string which can have any types of letter casing.
@@ -45,7 +44,6 @@ const titleCaseConversion = (inputString) => {
     // Convert all words in a string and return it.
     return stringCollections.join(' ');
 };
-
 export {
     titleCaseConversion
 };

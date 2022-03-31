@@ -1,5 +1,4 @@
 import fibonacci from '../fibonacci';
-
 describe('fibonacci', () => {
     it('should calculate fibonacci correctly', () => {
         expect(fibonacci(1)).toEqual([1]);

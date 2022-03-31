@@ -37,14 +37,10 @@ const convertArbitraryBase = (stringInBaseOne, baseOneCharacters, baseTwoCharact
     const baseTwoZero = baseTwoCharacters.charAt(0);
     return stringInBaseTwo.replace(new RegExp(`^${baseTwoZero}+`), '');
 };
-
 export { convertArbitraryBase };
-
 // > convertArbitraryBase('98', '0123456789', '01234567')
 // '142'
-
 // > convertArbitraryBase('98', '0123456789', 'abcdefgh')
 // 'bec'
-
 // > convertArbitraryBase('129', '0123456789', '01234567')
 // '201'

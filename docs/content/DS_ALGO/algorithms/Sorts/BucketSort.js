@@ -36,13 +36,11 @@ export function bucketSort(list, size) {
     }
     // how many buckets we need
     const count = Math.floor((max - min) / size) + 1;
-
     // create buckets
     const buckets = [];
     for (let iCount = 0; iCount < count; iCount++) {
         buckets.push([]);
     }
-
     // bucket fill
     for (let iBucket = 0; iBucket < list.length; iBucket++) {
         const key = Math.floor((list[iBucket] - min) / size);

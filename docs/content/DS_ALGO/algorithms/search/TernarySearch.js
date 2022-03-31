@@ -10,13 +10,11 @@
  *
  * Reference: https://www.geeksforgeeks.org/ternary-search/
  */
-
 function ternarySearchRecursive(arr, key, low = 0, high = arr.length - 1) {
     if (high >= low) {
         // find the mid1 and mid2
         const mid1 = Math.floor(low + (high - low) / 3);
         const mid2 = Math.floor(high - (high - low) / 3);
-
         // check if key is found at any mid
         if (arr[mid1] === key) {
             // return index of key if found
@@ -26,7 +24,6 @@ function ternarySearchRecursive(arr, key, low = 0, high = arr.length - 1) {
             // return index of key if found
             return mid2;
         }
-
         // since the key is not found at mid,
         // check in which region it is present
         // and repeat the Search operation
@@ -46,13 +43,11 @@ function ternarySearchRecursive(arr, key, low = 0, high = arr.length - 1) {
         return -1;
     }
 }
-
 function ternarySearchIterative(arr, key, low = 0, high = arr.length - 1) {
     while (high >= low) {
         // find the mid1 and mid2
         const mid1 = Math.floor(low + (high - low) / 3);
         const mid2 = Math.floor(high - (high - low) / 3);
-
         // check if key is found at any mid
         if (arr[mid1] === key) {
             // return index of key if found
@@ -62,7 +57,6 @@ function ternarySearchIterative(arr, key, low = 0, high = arr.length - 1) {
             // return index of key if found
             return mid2;
         }
-
         // since the key is not found at mid,
         // check in which region it is present
         // and repeat the Search operation
@@ -82,5 +76,4 @@ function ternarySearchIterative(arr, key, low = 0, high = arr.length - 1) {
     // the key was not found
     return -1;
 }
-
 export { ternarySearchRecursive, ternarySearchIterative };

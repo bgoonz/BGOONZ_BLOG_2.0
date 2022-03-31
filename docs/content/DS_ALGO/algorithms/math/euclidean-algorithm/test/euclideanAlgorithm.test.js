@@ -1,5 +1,4 @@
 import euclideanAlgorithm from '../euclideanAlgorithm';
-
 describe('euclideanAlgorithm', () => {
     it('should calculate GCD recursively', () => {
         expect(euclideanAlgorithm(0, 0)).toBe(0);

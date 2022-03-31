@@ -1,5 +1,4 @@
 import { approximatelyEqualHsv, hsvToRgb, rgbToHsv } from '../RgbHsvConversion';
-
 describe('hsvToRgb', () => {
     // Expected RGB-values taken from https://www.rapidtables.com/convert/color/hsv-to-rgb.html
     it('should calculate the correct RGB values', () => {
@@ -15,7 +14,6 @@ describe('hsvToRgb', () => {
         expect(hsvToRgb(330, 0.75, 0.5)).toEqual([128, 32, 80]);
     });
 });
-
 describe('rgbToHsv', () => {
     // "approximatelyEqualHsv" needed because of small deviations due to rounding for the RGB-values
     it('should calculate the correct HSV values', () => {

@@ -3,13 +3,10 @@
     because we know that if the time is in 'AM' value it means they only want
     some changes on hours and minutes and if the time in 'PM' it means the only
     want some changes in hour value.
-
     Input Format -> 07:05:45PM
     Output Format -> 19:05:45
-
     Problem & Explanation Source : https://www.mathsisfun.com/time.html
 */
-
 /**
  * RailwayTimeConversion method converts normalized time string to Railway time string.
  * @param {String} timeString Normalized time string.
@@ -39,5 +36,4 @@ const RailwayTimeConversion = (timeString) => {
         }
     }
 };
-
 export { RailwayTimeConversion };

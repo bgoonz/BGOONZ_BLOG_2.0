@@ -7,7 +7,6 @@ export default function isPowerOfTwo(number) {
     if (number < 1) {
         return false;
     }
-
     // Let's find out if we can divide the number by two
     // many times without remainder.
     let dividedNumber = number;
@@ -17,9 +16,7 @@ export default function isPowerOfTwo(number) {
             // couldn't be a result of power of two.
             return false;
         }
-
         dividedNumber /= 2;
     }
-
     return true;
 }

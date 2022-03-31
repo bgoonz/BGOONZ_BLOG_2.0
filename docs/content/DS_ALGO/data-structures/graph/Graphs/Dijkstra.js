@@ -5,7 +5,6 @@
  * It is used to find the shortest path.
  * It uses graph data structure.
  */
-
 function createGraph(V, E) {
     // V - Number of vertices in graph
     // E - Number of edges in graph (u,v,w)
@@ -19,13 +18,11 @@ function createGraph(V, E) {
     }
     return adjList;
 }
-
 function djikstra(graph, V, src) {
     const vis = Array(V).fill(0);
     const dist = [];
     for (let i = 0; i < V; i++) dist.push([10000, -1]);
     dist[src][0] = 0;
-
     for (let i = 0; i < V - 1; i++) {
         let mn = -1;
         for (let j = 0; j < V; j++) {
@@ -33,7 +30,6 @@ function djikstra(graph, V, src) {
                 if (mn === -1 || dist[j][0] < dist[mn][0]) mn = j;
             }
         }
-
         vis[mn] = 1;
         for (let j = 0; j < graph[mn].length; j++) {
             const edge = graph[mn][j];
@@ -43,15 +39,12 @@ function djikstra(graph, V, src) {
             }
         }
     }
-
     return dist;
 }
-
 export {
     createGraph,
     djikstra
 };
-
 // const V = 9
 // const E = [
 //   [0, 1, 4],
@@ -69,16 +62,13 @@ export {
 //   [3, 4, 9],
 //   [4, 5, 10]
 // ]
-
 // const graph = createGraph(V, E)
 // const distances = djikstra(graph, V, 0)
-
 /**
  * The first value in the array determines the minimum distance and the
  * second value represents the parent node from which the minimum distance has been calculated
  */
 * The first value in the array determines the minimum distance and the *
     second value represents the parent node from which the minimum distance has been calculated *
-
 
     / /

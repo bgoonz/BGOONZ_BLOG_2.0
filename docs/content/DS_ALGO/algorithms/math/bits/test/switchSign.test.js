@@ -1,5 +1,4 @@
 import switchSign from '../switchSign';
-
 describe('switchSign', () => {
     it('should switch the sign of the number using twos complement approach', () => {
         expect(switchSign(0)).toBe(0);

@@ -12,7 +12,6 @@
  * - https://byjus.com/maths/decimal-to-binary/
  *
  */
-
 export const binaryEquivalent = (num) => {
     if (num === 0 || num === 1) {
         return String(num);

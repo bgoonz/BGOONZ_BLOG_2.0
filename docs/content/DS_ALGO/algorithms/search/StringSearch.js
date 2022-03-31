@@ -1,7 +1,6 @@
 /*
  * String Search
  */
-
 function makeTable(str) {
     // create a table of size equal to the length of `str`
     // table[i] will store the prefix of the longest prefix of the substring str[0..i]
@@ -9,7 +8,6 @@ function makeTable(str) {
     let maxPrefix = 0;
     // the longest prefix of the substring str[0] has length
     table[0] = 0;
-
     // for the substrings the following substrings, we have two cases
     for (let i = 1; i < str.length; i++) {
         // case 1. the current character doesn't match the last character of the longest prefix
@@ -33,13 +31,11 @@ function makeTable(str) {
     }
     return table;
 }
-
 // Find all the words that matches in a given string `str`
 export function stringSearch(str, word) {
     // find the prefix table in O(n)
     const prefixes = makeTable(word);
     const matches = [];
-
     // `j` is the index in `P`
     let j = 0;
     // `i` is the index in `S`
@@ -76,8 +72,6 @@ export function stringSearch(str, word) {
             }
         }
     }
-
     return matches;
 }
-
 // stringSearch('Hello search the position of me', 'pos')

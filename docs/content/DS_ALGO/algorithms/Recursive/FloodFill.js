@@ -8,7 +8,6 @@
  * (description adapted from https://en.wikipedia.org/wiki/Flood_fill)
  * @see https://www.techiedelight.com/flood-fill-algorithm/
  */
-
 const neighbors = [
     [-1, -1],
     [-1, 0],
@@ -19,7 +18,6 @@ const neighbors = [
     [1, 0],
     [1, 1]
 ];
-
 /**
  * Implements the flood fill algorithm through a breadth-first approach using a queue.
  *
@@ -32,15 +30,12 @@ export function breadthFirstSearch(rgbData, location, targetColor, replacementCo
     if (location[0] < 0 || location[0] >= rgbData.length || location[1] < 0 || location[1] >= rgbData[0].length) {
         throw new Error('location should point to a pixel within the rgbData');
     }
-
     const queue = [];
     queue.push(location);
-
     while (queue.length > 0) {
         breadthFirstFill(rgbData, location, targetColor, replacementColor, queue);
     }
 }
-
 /**
  * Implements the flood fill algorithm through a depth-first approach using recursion.
  *
@@ -53,10 +48,8 @@ export function depthFirstSearch(rgbData, location, targetColor, replacementColo
     if (location[0] < 0 || location[0] >= rgbData.length || location[1] < 0 || location[1] >= rgbData[0].length) {
         throw new Error('location should point to a pixel within the rgbData');
     }
-
     depthFirstFill(rgbData, location, targetColor, replacementColor);
 }
-
 /**
  * Utility-function to implement the breadth-first loop.
  *
@@ -69,10 +62,8 @@ export function depthFirstSearch(rgbData, location, targetColor, replacementColo
 function breadthFirstFill(rgbData, location, targetColor, replacementColor, queue) {
     const currentLocation = queue[0];
     queue.shift();
-
     if (rgbData[currentLocation[0]][currentLocation[1]] === targetColor) {
         rgbData[currentLocation[0]][currentLocation[1]] = replacementColor;
-
         for (let i = 0; i < neighbors.length; i++) {
             const x = currentLocation[0] + neighbors[i][0];
             const y = currentLocation[1] + neighbors[i][1];
@@ -82,7 +73,6 @@ function breadthFirstFill(rgbData, location, targetColor, replacementColor, queu
         }
     }
 }
-
 /**
  * Utility-function to implement the depth-first loop.
  *
@@ -94,7 +84,6 @@ function breadthFirstFill(rgbData, location, targetColor, replacementColor, queu
 function depthFirstFill(rgbData, location, targetColor, replacementColor) {
     if (rgbData[location[0]][location[1]] === targetColor) {
         rgbData[location[0]][location[1]] = replacementColor;
-
         for (let i = 0; i < neighbors.length; i++) {
             const x = location[0] + neighbors[i][0];
             const y = location[1] + neighbors[i][1];

@@ -8,20 +8,14 @@ function decimalToOctal(num) {
     }
     return oct;
 }
-
 export { decimalToOctal };
-
 // > decimalToOctal(2)
 // 2
-
 // > decimalToOctal(8)
 // 10
-
 // > decimalToOctal(65)
 // 101
-
 // > decimalToOctal(216)
 // 330
-
 // > decimalToOctal(512)
 // 1000

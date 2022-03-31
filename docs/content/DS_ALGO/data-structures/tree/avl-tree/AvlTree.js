@@ -1,5 +1,4 @@
 import BinarySearchTree from '../binary-search-tree/BinarySearchTree';
-
 export default class AvlTree extends BinarySearchTree {
     /**
      * @param {*} value
@@ -7,7 +6,6 @@ export default class AvlTree extends BinarySearchTree {
     insert(value) {
         // Do the normal BST insert.
         super.insert(value);
-
         // Let's move up to the root and check balance factors along the way.
         let currentNode = this.root.find(value);
         while (currentNode) {
@@ -15,7 +13,6 @@ export default class AvlTree extends BinarySearchTree {
             currentNode = currentNode.parent;
         }
     }
-
     /**
      * @param {*} value
      * @return {boolean}
@@ -23,11 +20,9 @@ export default class AvlTree extends BinarySearchTree {
     remove(value) {
         // Do standard BST removal.
         super.remove(value);
-
         // Balance the tree starting from the root node.
         this.balance(this.root);
     }
-
     /**
      * @param {BinarySearchTreeNode} node
      */
@@ -53,7 +48,6 @@ export default class AvlTree extends BinarySearchTree {
             }
         }
     }
-
     /**
      * @param {BinarySearchTreeNode} rootNode
      */
@@ -61,7 +55,6 @@ export default class AvlTree extends BinarySearchTree {
         // Detach left node from root node.
         const leftNode = rootNode.left;
         rootNode.setLeft(null);
-
         // Make left node to be a child of rootNode's parent.
         if (rootNode.parent) {
             rootNode.parent.setLeft(leftNode);
@@ -69,17 +62,14 @@ export default class AvlTree extends BinarySearchTree {
             // If root node is root then make left node to be a new root.
             this.root = leftNode;
         }
-
         // If left node has a right child then detach it and
         // attach it as a left child for rootNode.
         if (leftNode.right) {
             rootNode.setLeft(leftNode.right);
         }
-
         // Attach rootNode to the right of leftNode.
         leftNode.setRight(rootNode);
     }
-
     /**
      * @param {BinarySearchTreeNode} rootNode
      */
@@ -87,27 +77,21 @@ export default class AvlTree extends BinarySearchTree {
         // Detach left node from rootNode since it is going to be replaced.
         const leftNode = rootNode.left;
         rootNode.setLeft(null);
-
         // Detach right node from leftNode.
         const leftRightNode = leftNode.right;
         leftNode.setRight(null);
-
         // Preserve leftRightNode's left subtree.
         if (leftRightNode.left) {
             leftNode.setRight(leftRightNode.left);
             leftRightNode.setLeft(null);
         }
-
         // Attach leftRightNode to the rootNode.
         rootNode.setLeft(leftRightNode);
-
         // Attach leftNode as left node for leftRight node.
         leftRightNode.setLeft(leftNode);
-
         // Do left-left rotation.
         this.rotateLeftLeft(rootNode);
     }
-
     /**
      * @param {BinarySearchTreeNode} rootNode
      */
@@ -115,26 +99,20 @@ export default class AvlTree extends BinarySearchTree {
         // Detach right node from rootNode since it is going to be replaced.
         const rightNode = rootNode.right;
         rootNode.setRight(null);
-
         // Detach left node from rightNode.
         const rightLeftNode = rightNode.left;
         rightNode.setLeft(null);
-
         if (rightLeftNode.right) {
             rightNode.setLeft(rightLeftNode.right);
             rightLeftNode.setRight(null);
         }
-
         // Attach rightLeftNode to the rootNode.
         rootNode.setRight(rightLeftNode);
-
         // Attach rightNode as right node for rightLeft node.
         rightLeftNode.setRight(rightNode);
-
         // Do right-right rotation.
         this.rotateRightRight(rootNode);
     }
-
     /**
      * @param {BinarySearchTreeNode} rootNode
      */
@@ -142,7 +120,6 @@ export default class AvlTree extends BinarySearchTree {
         // Detach right node from root node.
         const rightNode = rootNode.right;
         rootNode.setRight(null);
-
         // Make right node to be a child of rootNode's parent.
         if (rootNode.parent) {
             rootNode.parent.setRight(rightNode);
@@ -150,13 +127,11 @@ export default class AvlTree extends BinarySearchTree {
             // If root node is root then make right node to be a new root.
             this.root = rightNode;
         }
-
         // If right node has a left child then detach it and
         // attach it as a right child for rootNode.
         if (rightNode.left) {
             rootNode.setRight(rightNode.left);
         }
-
         // Attach rootNode to the left of rightNode.
         rightNode.setLeft(rootNode);
     }

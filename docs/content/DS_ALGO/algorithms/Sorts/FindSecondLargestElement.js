@@ -8,18 +8,14 @@
  * Resources:
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set
  */
-
 const secondLargestElement = (array) => {
     const largestElement = Math.max(...array);
     let element = 0;
-
     for (let i = 0; i < array.length; i++) {
         if (element < array[i] && array[i] !== largestElement) {
             element = array[i];
         }
     }
-
     return element;
 };
-
 export { secondLargestElement };

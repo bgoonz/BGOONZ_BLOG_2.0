@@ -18,7 +18,6 @@
         l = function(a) {
             return a;
         };
-
     function m(a) {
         if (Error.captureStackTrace) Error.captureStackTrace(this, m);
         else {
@@ -153,15 +152,12 @@
                 }, !0) :
                 b && b());
     };
-
     function ca(a) {
         return 'function' === typeof a ? a : 'string' === typeof a && 'function' === typeof window[a] ? window[a] : null;
     }
-
     function M() {
         return !(window.__gcse && window.__gcse.plainStyle);
     }
-
     function N(a) {
         var b = document.createElement('link');
         b.type = 'text/css';

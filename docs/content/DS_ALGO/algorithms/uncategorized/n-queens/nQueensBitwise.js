@@ -14,27 +14,23 @@
 function nQueensBitwiseRecursive(boardSize, leftDiagonal = 0, column = 0, rightDiagonal = 0, solutionsCount = 0) {
     // Keeps track of the number of valid solutions.
     let currentSolutionsCount = solutionsCount;
-
     // Helps to identify valid solutions.
     // isDone simply has a bit sequence with 1 for every entry up to the Nth. For example,
     // when N=5, done will equal 11111. The "isDone" variable simply allows us to not worry about any
     // bits beyond the Nth.
     const isDone = 2 ** boardSize - 1;
-
     // All columns are occupied (i.e. 0b1111 for boardSize = 4), so the solution must be complete.
     // Since the algorithm never places a queen illegally (ie. when it can attack or be attacked),
     // we know that if all the columns have been filled, we must have a valid solution.
     if (column === isDone) {
         return currentSolutionsCount + 1;
     }
-
     // Gets a bit sequence with "1"s wherever there is an open "slot".
     // All that's happening here is we're taking col, ld, and rd, and if any of the columns are
     // "under attack", we mark that column as 0 in poss, basically meaning "we can't put a queen in
     // this column". Thus all bits position in poss that are '1's are available for placing
     // queen there.
     let availablePositions = ~(leftDiagonal | rightDiagonal | column);
-
     // Loops as long as there is a valid place to put another queen.
     // For N=4 the isDone=0b1111. Then if availablePositions=0b0000 (which would mean that all places
     // are under threatening) we must stop trying to place a queen.
@@ -47,7 +43,6 @@ function nQueensBitwiseRecursive(boardSize, leftDiagonal = 0, column = 0, rightD
         // availablePositions = 0b01100
         // firstAvailablePosition = 100
         const firstAvailablePosition = availablePositions & -availablePositions;
-
         // This line just marks that position in the current row as being "taken" by flipping that
         // column in availablePositions to zero. This way, when the while loop continues, we'll know
         // not to try that location again.
@@ -57,7 +52,6 @@ function nQueensBitwiseRecursive(boardSize, leftDiagonal = 0, column = 0, rightD
         // firstAvailablePosition = 0b10
         // 0b0110 - 0b10 = 0b0100
         availablePositions -= firstAvailablePosition;
-
         /*
          * The operators >> 1 and 1 << simply move all the bits in a bit sequence one digit to the
          * right or left, respectively. So calling (rd|bit)<<1 simply says: combine rd and bit with
@@ -81,10 +75,8 @@ function nQueensBitwiseRecursive(boardSize, leftDiagonal = 0, column = 0, rightD
             solutionsCount
         );
     }
-
     return currentSolutionsCount;
 }
-
 /**
  * @param {number} boardSize - Size of the squared chess board.
  * @return {number} - Number of possible solutions.

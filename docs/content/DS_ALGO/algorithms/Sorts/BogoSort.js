@@ -10,7 +10,6 @@ export function isSorted(array) {
     }
     return true;
 }
-
 /**
  * Shuffles the given array randomly in place.
  */
@@ -22,7 +21,6 @@ function shuffle(array) {
         array[m] = n;
     }
 }
-
 /**
  * Implementation of the bogosort algorithm.
  *

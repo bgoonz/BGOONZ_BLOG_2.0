@@ -1,5 +1,4 @@
 import getBit from './getBit';
-
 /**
  * Add two numbers using only binary operators.
  *
@@ -37,7 +36,6 @@ import getBit from './getBit';
 export default function fullAdder(a, b) {
     let result = 0;
     let carry = 0;
-
     // The operands of all bitwise operators are converted to signed
     // 32-bit integers in two's complement format.
     // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators#Signed_32-bit_integers
@@ -45,26 +43,21 @@ export default function fullAdder(a, b) {
         const ai = getBit(a, i);
         const bi = getBit(b, i);
         const carryIn = carry;
-
         // Calculate binary Ai + Bi without carry (half adder)
         // See Table(1) rows 1 - 4: Si = Ai ^ Bi
         const aiPlusBi = ai ^ bi;
-
         // Calculate ith bit of the result by adding the carry bit to Ai + Bi
         // For Table(1) rows 5 - 8 carryIn = 1: Si = Ai ^ Bi ^ 1, flip the bit
         // Fpr Table(1) rows 1 - 4 carryIn = 0: Si = Ai ^ Bi ^ 0, a no-op.
         const bitSum = aiPlusBi ^ carryIn;
-
         // Carry out one to the next most-significant stage
         // when at least one of these is true:
         // 1) Table(1) rows 6, 7: one of Ai OR Bi is 1 AND carryIn = 1
         // 2) Table(1) rows 4, 8: Both Ai AND Bi are 1
         const carryOut = (aiPlusBi & carryIn) | (ai & bi);
         carry = carryOut;
-
         // Set ith least significant bit of the result to bitSum.
         result |= bitSum << i;
     }
-
     return result;
 }

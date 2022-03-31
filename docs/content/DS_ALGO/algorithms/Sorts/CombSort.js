@@ -15,7 +15,6 @@
  *
  * Wikipedia: https://en.wikipedia.org/wiki/Comb_sort
  */
-
 /**
  * combSort returns an array of numbers sorted in increasing order.
  *
@@ -30,14 +29,11 @@ function combSort(list) {
     let gap = list.length;
     let isSwapped = true;
     let i = 0;
-
     while (gap > 1 || isSwapped) {
         // Update the gap value for a next comb
         gap = parseInt(parseFloat(gap) / shrink, 10);
-
         isSwapped = false;
         i = 0;
-
         while (gap + i < list.length) {
             if (list[i] > list[i + gap]) {
                 [list[i], list[i + gap]] = [list[i + gap], list[i]];
@@ -48,7 +44,6 @@ function combSort(list) {
     }
     return list;
 }
-
 export {
     combSort
 };

@@ -10,7 +10,6 @@ export default class DisjointSetItem {
         this.parent = null;
         this.children = {};
     }
-
     /**
      * @return {*}
      */
@@ -19,25 +18,21 @@ export default class DisjointSetItem {
         if (this.keyCallback) {
             return this.keyCallback(this.value);
         }
-
         // Otherwise use value as a key by default.
         return this.value;
     }
-
     /**
      * @return {DisjointSetItem}
      */
     getRoot() {
         return this.isRoot() ? this : this.parent.getRoot();
     }
-
     /**
      * @return {boolean}
      */
     isRoot() {
         return this.parent === null;
     }
-
     /**
      * Rank basically means the number of all ancestors.
      *
@@ -47,28 +42,22 @@ export default class DisjointSetItem {
         if (this.getChildren().length === 0) {
             return 0;
         }
-
         let rank = 0;
-
         /** @var {DisjointSetItem} child */
         this.getChildren().forEach((child) => {
             // Count child itself.
             rank += 1;
-
             // Also add all children of current child.
             rank += child.getRank();
         });
-
         return rank;
     }
-
     /**
      * @return {DisjointSetItem[]}
      */
     getChildren() {
         return Object.values(this.children);
     }
-
     /**
      * @param {DisjointSetItem} parentItem
      * @param {boolean} forceSettingParentChild
@@ -79,10 +68,8 @@ export default class DisjointSetItem {
         if (forceSettingParentChild) {
             parentItem.addChild(this);
         }
-
         return this;
     }
-
     /**
      * @param {DisjointSetItem} childItem
      * @return {DisjointSetItem}
@@ -90,7 +77,6 @@ export default class DisjointSetItem {
     addChild(childItem) {
         this.children[childItem.getKey()] = childItem;
         childItem.setParent(this, false);
-
         return this;
     }
 }

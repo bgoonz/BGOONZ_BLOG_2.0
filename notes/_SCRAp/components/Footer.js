@@ -4,7 +4,6 @@ import {
     htmlToReact
 } from '../utils';
 import ActionLink from './ActionLink';
-
 export default class Footer extends React.Component {
     render() {
         return ( <
@@ -96,7 +95,6 @@ export default class Footer extends React.Component {
             /tr> <
             /tbody> <
             /table>
-
             <
             form style = {
                 {
@@ -190,7 +188,6 @@ export default class Footer extends React.Component {
             onclick = "if(!this.p)href+='&url='+encodeURIComponent(location.href);this.p=1" >
             Save to PDF <
             /a>
-
             <
             a style = {
                 {

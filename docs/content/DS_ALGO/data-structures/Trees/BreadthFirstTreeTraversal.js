@@ -2,7 +2,6 @@
   Breadth First Tree Traversal or level order traversal implementation in javascript
   Author: @GerardUbuntu
 */
-
 class Node {
     constructor(data) {
         this.data = data;
@@ -10,13 +9,11 @@ class Node {
         this.right = null;
     }
 }
-
 class BinaryTree {
     constructor() {
         this.root = null;
         this.traversal = [];
     }
-
     breadthFirst() {
         const h = this.getHeight(this.root);
         for (let i = 0; i !== h; i++) {
@@ -24,7 +21,6 @@ class BinaryTree {
         }
         return this.traversal;
     }
-
     // Computing the height of the tree
     getHeight(node) {
         if (node === null) {
@@ -34,7 +30,6 @@ class BinaryTree {
         const rheight = this.getHeight(node.right);
         return lheight > rheight ? lheight + 1 : rheight + 1;
     }
-
     traverseLevel(node, levelRemaining) {
         if (node === null) {
             return;
@@ -47,5 +42,4 @@ class BinaryTree {
         }
     }
 }
-
 export { BinaryTree, Node };

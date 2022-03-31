@@ -3,36 +3,27 @@
  * DFS Algorithm implementation in JavaScript
  * DFS Algorithm for traversing or searching graph data structures.
  */
-
 function traverseDFS(root) {
     const stack = [root];
     const res = [];
-
     while (stack.length) {
         const curr = stack.pop();
         res.push(curr.key);
-
         if (curr.right) {
             stack.push(curr.right);
         }
-
         if (curr.left) {
             stack.push(curr.left);
         }
     }
-
     return res.reverse();
 }
-
 function searchDFS(tree, value) {
     const stack = [];
-
     stack.push(tree[0]);
-
     while (stack.length !== 0) {
         for (let i = 0; i < stack.length; i++) {
             const node = stack.pop();
-
             if (node.value === value) {
                 return node;
             }
@@ -46,7 +37,6 @@ function searchDFS(tree, value) {
     }
     return null;
 }
-
 const tree = [{
         value: 6,
         left: 1,
@@ -98,12 +88,9 @@ const tree = [{
         right: null
     }
 ];
-
 searchDFS(tree, 9);
 searchDFS(tree, 10);
-
 traverseDFS(6);
-
 //            6
 //           / \
 //          5   7
@@ -133,12 +120,9 @@ left: 7,
     right: null
 }
 ];
-
 searchDFS(tree, 9);
 searchDFS(tree, 10);
-
 traverseDFS(6);
-
 //            6
 //           / \
 //          5   7

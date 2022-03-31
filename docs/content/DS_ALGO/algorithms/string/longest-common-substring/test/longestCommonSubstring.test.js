@@ -1,5 +1,4 @@
 import longestCommonSubstring from '../longestCommonSubstring';
-
 describe('longestCommonSubstring', () => {
     it('should find longest common substring between two strings', () => {
         expect(longestCommonSubstring('', '')).toBe('');
@@ -14,7 +13,6 @@ describe('longestCommonSubstring', () => {
             )
         ).toBe('Algorithms and data structures ');
     });
-
     it('should handle unicode correctly', () => {
         expect(longestCommonSubstring('𐌵𐌵**ABC', '𐌵𐌵--ABC')).toBe('ABC');
         expect(longestCommonSubstring('𐌵𐌵**A', '𐌵𐌵--A')).toBe('𐌵𐌵');

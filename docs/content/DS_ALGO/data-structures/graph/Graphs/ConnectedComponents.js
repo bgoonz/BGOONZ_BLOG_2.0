@@ -3,12 +3,10 @@ class GraphUnweightedUndirectedAdjacencyList {
     constructor() {
         this.connections = {};
     }
-
     addNode(node) {
         // Function to add a node to the graph (connection represented by set)
         this.connections[node] = new Set();
     }
-
     addEdge(node1, node2) {
         // Function to add an edge (adds the node too if they are not present in the graph)
         if (!(node1 in this.connections)) {
@@ -20,10 +18,8 @@ class GraphUnweightedUndirectedAdjacencyList {
         this.connections[node1].add(node2);
         this.connections[node2].add(node1);
     }
-
     DFSComponent(components, node, visited) {
         // Helper function to populate the visited set with the nodes in each component
-
         // adding the first visited node in the component to the array
         components.push(node);
         const stack = [node];
@@ -38,7 +34,6 @@ class GraphUnweightedUndirectedAdjacencyList {
             }
         }
     }
-
     connectedComponents() {
         // Function to generate the Connected Components
         // Result is an array containing 1 node from each component
@@ -52,13 +47,10 @@ class GraphUnweightedUndirectedAdjacencyList {
         return components;
     }
 }
-
 export {
     GraphUnweightedUndirectedAdjacencyList
 };
-
 // Example
-
 // const graph = new GraphUnweightedUndirectedAdjacencyList()
 // graph.addEdge(1, 2) // Component 1
 // graph.addEdge(3, 4) // Component 2

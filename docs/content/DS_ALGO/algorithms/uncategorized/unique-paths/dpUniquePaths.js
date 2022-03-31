@@ -12,7 +12,6 @@ export default function dpUniquePaths(width, height) {
         .map(() => {
             return Array(width).fill(0);
         });
-
     // Base case.
     // There is only one way of getting to board[0][any] and
     // there is also only one way of getting to board[any][0].
@@ -25,7 +24,6 @@ export default function dpUniquePaths(width, height) {
             }
         }
     }
-
     // Now, since we have this restriction of moving only to the right
     // and down we might say that number of unique paths to the current
     // cell is a sum of numbers of unique paths to the cell above the
@@ -37,6 +35,5 @@ export default function dpUniquePaths(width, height) {
             board[rowIndex][columnIndex] = uniquesFromTop + uniquesFromLeft;
         }
     }
-
     return board[height - 1][width - 1];
 }

@@ -4,7 +4,6 @@
  * @typedef {number[]} Shape
  * @typedef {number[]} CellIndices
  */
-
 /**
  * Gets the matrix's shape.
  *
@@ -20,7 +19,6 @@ export const shape = (m) => {
     }
     return shapes;
 };
-
 /**
  * Checks if matrix has a correct type.
  *
@@ -32,7 +30,6 @@ const validateType = (m) => {
         throw new Error('Invalid matrix format');
     }
 };
-
 /**
  * Checks if matrix is two dimensional.
  *
@@ -46,7 +43,6 @@ const validate2D = (m) => {
         throw new Error('Matrix is not of 2D shape');
     }
 };
-
 /**
  * Validates that matrices are of the same shape.
  *
@@ -57,21 +53,17 @@ const validate2D = (m) => {
 export const validateSameShape = (a, b) => {
     validateType(a);
     validateType(b);
-
     const aShape = shape(a);
     const bShape = shape(b);
-
     if (aShape.length !== bShape.length) {
         throw new Error('Matrices have different dimensions');
     }
-
     while (aShape.length && bShape.length) {
         if (aShape.pop() !== bShape.pop()) {
             throw new Error('Matrices have different shapes');
         }
     }
 };
-
 /**
  * Generates the matrix of specific shape with specific values.
  *
@@ -99,10 +91,8 @@ export const generate = (mShape, fill) => {
         }
         return m;
     };
-
     return generateRecursively(mShape, []);
 };
-
 /**
  * Generates the matrix of zeros of specified shape.
  *
@@ -112,7 +102,6 @@ export const generate = (mShape, fill) => {
 export const zeros = (mShape) => {
     return generate(mShape, () => 0);
 };
-
 /**
  * @param {Matrix} a
  * @param {Matrix} b
@@ -123,18 +112,15 @@ export const dot = (a, b) => {
     // Validate inputs.
     validate2D(a);
     validate2D(b);
-
     // Check dimensions.
     const aShape = shape(a);
     const bShape = shape(b);
     if (aShape[1] !== bShape[0]) {
         throw new Error('Matrices have incompatible shape for multiplication');
     }
-
     // Perform matrix multiplication.
     const outputShape = [aShape[0], bShape[1]];
     const c = zeros(outputShape);
-
     for (let bCol = 0; bCol < b[0].length; bCol += 1) {
         for (let aRow = 0; aRow < a.length; aRow += 1) {
             let cellSum = 0;
@@ -144,10 +130,8 @@ export const dot = (a, b) => {
             c[aRow][bCol] = cellSum;
         }
     }
-
     return c;
 };
-
 /**
  * Transposes the matrix.
  *
@@ -166,7 +150,6 @@ export const t = (m) => {
     }
     return transposed;
 };
-
 /**
  * Traverses the matrix.
  *
@@ -183,7 +166,6 @@ export const walk = (m, visit) => {
      */
     const recWalk = (recM, cellIndices) => {
         const recMShape = shape(recM);
-
         if (recMShape.length === 1) {
             for (let i = 0; i < recM.length; i += 1) {
                 visit([...cellIndices, i], recM[i]);
@@ -193,10 +175,8 @@ export const walk = (m, visit) => {
             recWalk(recM[i], [...cellIndices, i]);
         }
     };
-
     recWalk(m, []);
 };
-
 /**
  * Gets the matrix cell value at specific index.
  *
@@ -215,7 +195,6 @@ export const getCellAtIndex = (m, cellIndices) => {
     // At this moment the cell variable points to the array at the last needed dimension.
     return cell[cellIndices[cellIndices.length - 1]];
 };
-
 /**
  * Update the matrix cell at specific index.
  *
@@ -234,7 +213,6 @@ export const updateCellAtIndex = (m, cellIndices, cellValue) => {
     // At this moment the cell variable points to the array at the last needed dimension.
     cell[cellIndices[cellIndices.length - 1]] = cellValue;
 };
-
 /**
  * Adds two matrices element-wise.
  *
@@ -245,19 +223,15 @@ export const updateCellAtIndex = (m, cellIndices, cellValue) => {
 export const add = (a, b) => {
     validateSameShape(a, b);
     const result = zeros(shape(a));
-
     walk(a, (cellIndices, cellValue) => {
         updateCellAtIndex(result, cellIndices, cellValue);
     });
-
     walk(b, (cellIndices, cellValue) => {
         const currentCellValue = getCellAtIndex(result, cellIndices);
         updateCellAtIndex(result, cellIndices, currentCellValue + cellValue);
     });
-
     return result;
 };
-
 /**
  * Multiplies two matrices element-wise.
  *
@@ -268,19 +242,15 @@ export const add = (a, b) => {
 export const mul = (a, b) => {
     validateSameShape(a, b);
     const result = zeros(shape(a));
-
     walk(a, (cellIndices, cellValue) => {
         updateCellAtIndex(result, cellIndices, cellValue);
     });
-
     walk(b, (cellIndices, cellValue) => {
         const currentCellValue = getCellAtIndex(result, cellIndices);
         updateCellAtIndex(result, cellIndices, currentCellValue * cellValue);
     });
-
     return result;
 };
-
 /**
  * Subtract two matrices element-wise.
  *
@@ -291,15 +261,12 @@ export const mul = (a, b) => {
 export const sub = (a, b) => {
     validateSameShape(a, b);
     const result = zeros(shape(a));
-
     walk(a, (cellIndices, cellValue) => {
         updateCellAtIndex(result, cellIndices, cellValue);
     });
-
     walk(b, (cellIndices, cellValue) => {
         const currentCellValue = getCellAtIndex(result, cellIndices);
         updateCellAtIndex(result, cellIndices, currentCellValue - cellValue);
     });
-
     return result;
 };
