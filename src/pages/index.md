@@ -42,16 +42,16 @@ sections:
         image_alt: python
         title: Python Guide
         title_url: 'https://bgoonz-blog.netlify.app/docs/python/python-ds'
-        image: images/smiling-maple.png
+        image: images/python-language.jpg
       - content: |
-          <div id="search"></div> <div id="search" />
+          <iframe class="block-content" width="100%  width="1200px!important" height="1000px!important" src="https://rss.app/embed/v1/wall/WHCMA322pJEQ58et" frameborder="0"></iframe>
         actions:
           - label: Learn More
             url: /docs/tools
             style: secondary
         title: Guitar Effects Triggering w DTW
         title_url: 'https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering'
-        image: images/panoramic-owl.png
+        image: images/dtw-algo.jpg
       - title_url: 'https://bryanguner.medium.com/introductory-react-part-2-cda01615a186'
         image_alt: img of dtw
         content: |
@@ -201,7 +201,7 @@ sections:
     image_position: left
     content: >-
           <iframe src="https://random-static-html-deploys.netlify.app" class="block-content" width="100%  width="1200px!important" height="1000px!important"></iframe>
-          <iframe class="block-content" width="100%  width="1200px!important" height="1000px!important" src="https://rss.app/embed/v1/wall/WHCMA322pJEQ58et" frameborder="0"></iframe>
+
 
     actions: []
     type: section_content
