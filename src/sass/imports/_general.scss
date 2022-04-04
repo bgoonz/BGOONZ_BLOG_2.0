@@ -38,7 +38,6 @@ iframe {
     border-radius: 15px;
 }
 
-
 mark,
 ins {
     background: $yellow-pale;
@@ -67,7 +66,7 @@ pre {
     }
 }
 
-:not(pre)>code {
+:not(pre) > code {
     background: $gray-200;
     border-radius: $border-radius-sm;
     color: $gray-600;
@@ -185,8 +184,8 @@ ol {
     padding: 0 0 0 1.5em;
 }
 
-li>ul,
-li>ol {
+li > ul,
+li > ol {
     margin-bottom: 0;
 }
 
@@ -329,7 +328,7 @@ pre:first-child {
     margin-top: 0;
 }
 
-:not(pre)>code {
+:not(pre) > code {
     background: #ecedf2;
     border-radius: 3px;
     color: #424b5f;
@@ -389,8 +388,8 @@ ol {
     padding: 0 0 0 1.5em;
 }
 
-li>ol,
-li>ul {
+li > ol,
+li > ul {
     margin-bottom: 0;
 }
 
