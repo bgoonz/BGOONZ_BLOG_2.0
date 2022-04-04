@@ -5,8 +5,9 @@ import CtaButtons from './CtaButtons';
 export default class SectionCta extends React.Component {
     render() {
         let section = _.guseEffect(() => {
-  () => {};
-});et(this.props, 'section', null);
+            () => {};
+        });
+        et(this.props, 'section', null);
         return (
             <section id={_.get(section, 'section_id', null)} className="block block-cta outer">
                 <div className="inner">
