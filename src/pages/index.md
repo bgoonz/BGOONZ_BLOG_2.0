@@ -44,7 +44,6 @@ sections:
         title_url: 'https://bgoonz-blog.netlify.app/docs/python/python-ds'
         image: images/python-language.jpg
       - content: |
-          <iframe class="block-content" width="100%  width="1200px!important" height="1000px!important" src="https://rss.app/embed/v1/wall/WHCMA322pJEQ58et" frameborder="0"></iframe>
         actions:
           - label: Learn More
             url: /docs/tools
@@ -200,9 +199,7 @@ sections:
     image_alt: showcase
     image_position: left
     content: >-
-          <iframe src="https://random-static-html-deploys.netlify.app" class="block-content" width="100%  width="1200px!important" height="1000px!important"></iframe>
-
-
+          <iframe class="block-content" width="100%  width="1200px!important" height="1000px!important" src="https://rss.app/embed/v1/wall/WHCMA322pJEQ58et" frameborder="0"></iframe>
     actions: []
     type: section_content
   - title: Latest & Greatest
@@ -217,6 +214,7 @@ sections:
         src="https://web-dev-utility-tools-bgoonz.netlify.app/"
         clipboard-write;
         encrypted-media; gyroscope; ></iframe>
+      <iframe src="https://random-static-html-deploys.netlify.app" class="block-content" width="100%  width="1200px!important" height="1000px!important"></iframe>
       <iframe class="block-content" width="100%  width="1200px!important"
       height="1000px!important"
         src="https://cheatsheets-42.netlify.app/"
