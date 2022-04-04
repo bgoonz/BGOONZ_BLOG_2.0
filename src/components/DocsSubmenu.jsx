@@ -10,12 +10,12 @@ export default class DocsSubmenu extends React.Component {
                 {_.map(child_pages, (child_page, child_page_idx) => {
                     return (
                         <li
-                            key={ child_page_idx }
-                            className={ classNames( 'docs-menu-item', {
-                                current: _.get( page, 'url', null ) === _.get( child_page, 'url', null )
-                            } ) }
+                            key={child_page_idx}
+                            className={classNames('docs-menu-item', {
+                                current: _.get(page, 'url', null) === _.get(child_page, 'url', null)
+                            })}
                         >
-                            <Link to={ withPrefix( _.get( child_page, 'url', null ) ) }>{ _.get( child_page, 'frontmatter.title', null ) }</Link>
+                            <Link to={withPrefix(_.get(child_page, 'url', null))}>{_.get(child_page, 'frontmatter.title', null)}</Link>
                         </li>
                     );
                 })}
