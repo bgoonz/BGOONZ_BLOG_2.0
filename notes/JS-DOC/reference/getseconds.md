@@ -1,8 +1,10 @@
-# Date.prototype.getSeconds()
+Date.prototype.getSeconds()
+===========================
 
 The `getSeconds()` method returns the seconds in the specified date according to local time.
 
-## Syntax
+Syntax
+------
 
     getSeconds()
 
@@ -10,7 +12,8 @@ The `getSeconds()` method returns the seconds in the specified date according to
 
 An integer number, between 0 and 59, representing the seconds in the given date according to local time.
 
-## Examples
+Examples
+--------
 
 ### Using getSeconds()
 
@@ -21,12 +24,11 @@ The second statement below assigns the value 30 to the variable `seconds`, based
 
     console.log(seconds); // 30
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getseconds">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-date.prototype.getseconds</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-date.prototype.getseconds</span></td></tr></tbody></table>
 
 `getSeconds`
 
@@ -54,7 +56,8 @@ The second statement below assigns the value 30 to the variable `seconds`, based
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`Date.prototype.getUTCSeconds()`](getutcseconds)
 -   [`Date.prototype.setSeconds()`](setseconds)

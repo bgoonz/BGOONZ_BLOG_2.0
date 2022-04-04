@@ -1,16 +1,20 @@
-# Less than or equal (&lt;=)
+Less than or equal (&lt;=)
+==========================
 
 The less than or equal operator (`<=`) returns `true` if the left operand is less than or equal to the right operand, and `false` otherwise.
 
-## Syntax
+Syntax
+------
 
      x <= y
 
-## Description
+Description
+-----------
 
 The operands are compared using the [Abstract Relational Comparison](https://tc39.es/ecma262/#sec-abstract-relational-comparison) algorithm. See the documentation for the [Less than](less_than) operator for a summary of this algorithm.
 
-## Examples
+Examples
+--------
 
 ### String to string comparison
 
@@ -57,12 +61,11 @@ The operands are compared using the [Abstract Relational Comparison](https://tc3
     console.log(3 <= NaN);       // false
     console.log(NaN <= 3);       // false
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-relational-operators">ECMAScript (ECMA-262) 
-<br/>
-
-<span class="small">The definition of 'Relational operators' in that specification.</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript (ECMA-262)<br />
+</p><span class="small">The definition of ‘Relational operators’ in that specification.</span></td></tr></tbody></table>
 
 `Less_than_or_equal`
 
@@ -90,12 +93,12 @@ The operands are compared using the [Abstract Relational Comparison](https://tc3
 
 1.0
 
-## See also
+See also
+--------
 
 -   [Greater than operator](greater_than)
 -   [Greater than or equal operator](greater_than_or_equal)
 -   [Less than operator](less_than)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Less_than_or_equal" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Less_than_or_equal</a>

@@ -1,8 +1,10 @@
-# String.prototype.trim()
+String.prototype.trim()
+=======================
 
 The `trim()` method removes whitespace from both ends of a string. Whitespace in this context is all the whitespace characters (space, tab, no-break space, etc.) and all the line terminator characters (LF, CR, etc.).
 
-## Syntax
+Syntax
+------
 
     trim()
 
@@ -14,9 +16,10 @@ If neither the beginning or end of `str` has any whitespace, a new string is sti
 
 To return a new string with whitespace trimmed from just one end, use [`trimStart()`](trimstart) or [`trimEnd()`](trimend).
 
-## Polyfill
+Polyfill
+--------
 
-Running the following code before any other code will create `trim()` if it's not natively available.
+Running the following code before any other code will create `trim()` if it’s not natively available.
 
     if (!String.prototype.trim) {
       String.prototype.trim = function () {
@@ -24,7 +27,8 @@ Running the following code before any other code will create `trim()` if it's no
       };
     }
 
-## Examples
+Examples
+--------
 
 ### Using `trim()`
 
@@ -33,14 +37,14 @@ The following example displays the lowercase string `'foo'`:
     var orig = '   foo  ';
     console.log(orig.trim()); // 'foo'
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.trim">ECMAScript (ECMA-262) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript (ECMA-262)<br />
+</p><span class="small">The definition of ‘String.prototype.trim’ in that specification.</span></td></tr></tbody></table>
 
-<span class="small">The definition of 'String.prototype.trim' in that specification.</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -96,11 +100,11 @@ Samsung Internet
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`String.prototype.trimStart()`](trimstart)
 -   [`String.prototype.trimEnd()`](trimend)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim</a>

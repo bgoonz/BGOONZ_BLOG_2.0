@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>new.target</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="new.target">new.target</h1>
+<p>The <code>new.target</code> pseudo-property lets you detect whether a function or constructor was called using the <a href="new">new</a> operator. In constructors and functions invoked using the <a href="new">new</a> operator, <code>new.target</code> returns a reference to the constructor or function. In normal function calls, <code>new.target</code> is <a href="../global_objects/undefined"><code>undefined</code></a>.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>new.target</code></pre>
+<h2 id="description">Description</h2>
+<p>The <code>new.target</code> syntax consists of the keyword <code>new</code>, a dot, and the identifier <code>target</code>. Normally, the left-hand side of the dot is the object on which property access is performed, but here, <code>new</code> is not an object.</p>
+<p>The <code>new.target</code> pseudo-property is available in all functions.</p>
+<p>In class constructors, it refers to the constructed class.</p>
+<p>In ordinary functions, it refers to the function itself, assuming it was invoked via the <a href="new">new</a> operator; otherwise <code>new.target</code> is <a href="../global_objects/undefined"><code>undefined</code></a>.</p>
+<p>In <a href="../functions/arrow_functions">arrow functions</a>, <code>new.target</code> is inherited from the surrounding scope.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="new.target-in-function-calls">new.target in function calls</h3>
+<p>In normal function calls (as opposed to constructor function calls), <code>new.target</code> is <a href="../global_objects/undefined"><code>undefined</code></a>. This lets you detect whether a function was called with <a href="new">new</a> as a constructor.</p>
+<pre><code>function Foo() {
+  if (!new.target) { throw &#39;Foo() must be called with new&#39; }
+  console.log(&#39;Foo instantiated with new&#39;)
+}
+
+new Foo()  // logs &quot;Foo instantiated with new&quot;
+Foo()      // throws &quot;Foo() must be called with new&quot;</code></pre>
+<h3 id="new.target-in-constructors">new.target in constructors</h3>
+<p>In class constructors, <code>new.target</code> refers to the constructor that was directly invoked by <code>new</code>. This is also the case if the constructor is in a parent class and was delegated from a child constructor.</p>
+<pre><code>class A {
+  constructor() {
+    console.log(new.target.name)
+  }
+}
+
+class B extends A { constructor() { super() } }
+
+let a = new A()  // logs &quot;A&quot;
+let b = new B()  // logs &quot;B&quot;
+
+class C { constructor() { console.log(new.target)  } }
+class D extends C { constructor() { super()  } }
+
+let c = new C()  // logs class C{constructor(){console.log(new.target);}}
+let d = new D()  // logs class D extends C{constructor(){super();}}</code></pre>
+<p>Thus from the above example of class <code>C</code> and <code>D</code>, it seems that <code>new.target</code> points to the class definition of class which is initialized. For example, when <code>d</code> was initialized using <code>new D()</code>, the class definition of <code>D</code> was printed; and similarly, in case of <code>c</code>, the class <code>C</code> was printed.</p>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-built-in-function-objects">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-built-in-function-objects</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>new.target</code></p>
+<p>46</p>
+<p>13</p>
+<p>41</p>
+<p>No</p>
+<p>33</p>
+<p>11</p>
+<p>46</p>
+<p>46</p>
+<p>41</p>
+<p>33</p>
+<p>11</p>
+<p>5.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../functions">Functions</a></li>
+<li><a href="../classes">Classes</a></li>
+<li><code>new</code></li>
+<li><code>this</code></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new.target" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new.target</a></p>
+</body>
+</html>

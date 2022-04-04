@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>loadash</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<p>/*</p>
+<p>_.get( object, path, [ defaultValue ] ) source npm package</p>
+<p>Gets the value at path of object.If the resolved value is undefined, the defaultValue is returned in its place.</p>
+<p>Since 3.7 .0</p>
+<p>Arguments object( Object ): The object to query. path( Array | string ): The path of the property to get. <a href="*">defaultValue</a>: The value returned for undefined resolved values. Returns ( * ): Returns the resolved value.</p>
+<p>Example var object = { ‘a’: [ { ‘b’: { ‘c’: 3 } } ] }; <em>.get( object, ‘a[0].b.c’ ); </em>.get( object, [ ‘a’, ‘0’, ‘b’, ‘c’ ] ); _.get( object, ‘a.b.c’, ‘default’ ); Try in REPL</p>
+<p>_.has( object, path ) source npm package</p>
+<p>Checks if path is a direct property of object.</p>
+<p>Since 0.1 .0</p>
+<p>Arguments object( Object ): The object to query. path( Array | string ): The path to check. Returns ( boolean ): Returns true if path exists, else false.</p>
+<p>Example var object = { ‘a’: { ‘b’: 2 } }; var other = <em>.create( { ‘a’: </em>.create( { ‘b’: 2 } ) } ); <em>.has( object, ‘a’ ); </em>.has( object, ‘a.b’ ); <em>.has( object, [ ‘a’, ‘b’ ] ); </em>.has( other, ‘a’ ); */</p>
+</body>
+</html>

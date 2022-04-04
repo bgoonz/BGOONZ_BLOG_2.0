@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>byteoffset</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="typedarray.prototype.byteoffset">TypedArray.prototype.byteOffset</h1>
+<p>The <code>byteOffset</code> accessor property represents the offset (in bytes) of a typed array from the start of its <a href="../arraybuffer"><code>ArrayBuffer</code></a>.</p>
+<h2 id="description">Description</h2>
+<p>The <code>byteOffset</code> property is an accessor property whose set accessor function is <code>undefined</code>, meaning that you can only read this property. The value is established when a <em>TypedArray</em> is constructed and cannot be changed. <em>TypedArray</em> is one of the <a href="../typedarray#typedarray_objects">TypedArray objects</a>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-the-byteoffset-property">Using the byteOffset property</h3>
+<pre><code>var buffer = new ArrayBuffer(8);
+
+var uint8 = new Uint8Array(buffer);
+uint8.byteOffset; // 0 (no offset specified)
+
+var uint8 = new Uint8Array(buffer, 3);
+uint8.byteOffset; // 3 (as specified when constructing Uint8Array)</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="#">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-get-%typedarray%.prototype.byteoffset</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>byteOffset</code></p>
+<p>7</p>
+<p>14</p>
+<p>4</p>
+<p>10</p>
+<p>11.6</p>
+<p>5.1</p>
+<p>4</p>
+<p>18</p>
+<p>4</p>
+<p>12</p>
+<p>4.2</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays">JavaScript typed arrays</a></li>
+<li><a href="../typedarray"><code>TypedArray</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/byteOffset" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/byteOffset</a></p>
+</body>
+</html>

@@ -1,4 +1,5 @@
-# String.prototype.fixed()
+String.prototype.fixed()
+========================
 
 **Deprecated**
 
@@ -6,7 +7,8 @@ This feature is no longer recommended. Though some browsers might still support 
 
 The `fixed()` method creates a [`<tt>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tt) HTML element that causes a string to be displayed in fixed-pitch font.
 
-## Syntax
+Syntax
+------
 
     fixed()
 
@@ -14,11 +16,13 @@ The `fixed()` method creates a [`<tt>`](https://developer.mozilla.org/en-US/docs
 
 A string representing a [`<tt>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tt) HTML element.
 
-## Description
+Description
+-----------
 
-The `fixed()` method embeds a string in a `<tt>` element: "`<tt>str</tt>`".
+The `fixed()` method embeds a string in a `<tt>` element: “`<tt>str</tt>`”.
 
-## Examples
+Examples
+--------
 
 ### Using fixed()
 
@@ -27,12 +31,11 @@ The following example uses the `fixed` method to change the formatting of a stri
     var worldString = 'Hello, world';
     console.log(worldString.fixed()); // "<tt>Hello, world</tt>"
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.fixed">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-string.prototype.fixed</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-string.prototype.fixed</span></td></tr></tbody></table>
 
 `fixed`
 
@@ -60,12 +63,12 @@ The following example uses the `fixed` method to change the formatting of a stri
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`String.prototype.bold()`](bold)
 -   [`String.prototype.italics()`](italics)
 -   [`String.prototype.strike()`](strike)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fixed" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fixed</a>

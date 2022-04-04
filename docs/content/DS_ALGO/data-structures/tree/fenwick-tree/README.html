@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="fenwick-tree-binary-indexed-tree">Fenwick Tree / Binary Indexed Tree</h1>
+<p>A <strong>Fenwick tree</strong> or <strong>binary indexed tree</strong> is a data structure that can efficiently update elements and calculate prefix sums in a table of numbers.</p>
+<p>When compared with a flat array of numbers, the Fenwick tree achieves a much better balance between two operations: element update and prefix sum calculation. In a flat array of <code>n</code> numbers, you can either store the elements, or the prefix sums. In the first case, computing prefix sums requires linear time; in the second case, updating the array elements requires linear time (in both cases, the other operation can be performed in constant time). Fenwick trees allow both operations to be performed in <code>O(log n)</code> time. This is achieved by representing the numbers as a tree, where the value of each node is the sum of the numbers in that subtree. The tree structure allows operations to be performed using only <code>O(log n)</code> node accesses.</p>
+<h2 id="implementation-notes">Implementation Notes</h2>
+<p>Binary Indexed Tree is represented as an array. Each node of Binary Indexed Tree stores sum of some elements of given array. Size of Binary Indexed Tree is equal to <code>n</code> where <code>n</code> is size of input array. In current implementation we have used size as <code>n+1</code> for ease of implementation. All the indexes are 1-based.</p>
+<figure>
+<img src="https://www.geeksforgeeks.org/wp-content/uploads/BITSum.png" alt="Binary Indexed Tree" /><figcaption>Binary Indexed Tree</figcaption>
+</figure>
+<p>On the picture below you may see animated example of creation of binary indexed tree for the array <code>[1, 2, 3, 4, 5]</code> by inserting one by one.</p>
+<figure>
+<img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/BITDemo.gif" alt="Fenwick Tree" /><figcaption>Fenwick Tree</figcaption>
+</figure>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Fenwick_tree">Wikipedia</a></li>
+<li><a href="https://www.geeksforgeeks.org/binary-indexed-tree-or-fenwick-tree-2/">GeeksForGeeks</a></li>
+<li><a href="https://www.youtube.com/watch?v=CWDQJGaN1gY&amp;index=18&amp;t=0s&amp;list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8">YouTube</a></li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>tolocaleuppercase</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="string.prototype.tolocaleuppercase">String.prototype.toLocaleUpperCase()</h1>
+<p>The <code>toLocaleUpperCase()</code> method returns the calling string value converted to upper case, according to any locale-specific case mappings.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>toLocaleUpperCase()
+toLocaleUpperCase(locale)
+toLocaleUpperCase([locale1, locale2, ...])</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>locale</code> <span class="badge inline optional">Optional</span><br />
+The <code>locale</code> parameter indicates the locale to be used to convert to upper case according to any locale-specific case mappings. If multiple locales are given in an <a href="../array"><code>Array</code></a>, the <a href="https://tc39.github.io/ecma402/#sec-bestavailablelocale">best available locale</a> is used. The default locale is the host environment’s current locale.</p>
+<h3 id="return-value">Return value</h3>
+<p>A new string representing the calling string converted to upper case, according to any locale-specific case mappings.</p>
+<h3 id="exceptions">Exceptions</h3>
+<ul>
+<li>A <a href="../rangeerror"><code>RangeError</code></a> (“invalid language tag: xx_yy”) is thrown if a <code>locale</code> argument isn’t a valid language tag.</li>
+<li>A <a href="../typeerror"><code>TypeError</code></a> (“invalid element in locales argument”) is thrown if an array element isn’t of type string.</li>
+</ul>
+<h2 id="description">Description</h2>
+<p>The <code>toLocaleUpperCase()</code> method returns the value of the string converted to upper case according to any locale-specific case mappings. <code>toLocaleUpperCase()</code> does not affect the value of the string itself. In most cases, this will produce the same result as <a href="touppercase"><code>toUpperCase()</code></a>, but for some locales, such as Turkish, whose case mappings do not follow the default case mappings in Unicode, there may be a different result.</p>
+<p>Also notice that conversion is not necessarily a 1:1 character mapping, as some characters might result in two (or even more) characters when transformed to upper-case. Therefore the length of the result string can differ from the input length. This also implies that the conversion is not stable, so i.E. the following can return <code>false</code>:<br />
+<code>x.toLocaleLowerCase() === x.toLocaleUpperCase().toLocaleLowerCase()</code></p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-tolocaleuppercase">Using toLocaleUpperCase()</h3>
+<pre><code>&#39;alphabet&#39;.toLocaleUpperCase(); // &#39;ALPHABET&#39;
+
+&#39;Gesäß&#39;.toLocaleUpperCase(); // &#39;GESÄSS&#39;
+
+&#39;i\u0307&#39;.toLocaleUpperCase(&#39;lt-LT&#39;); // &#39;I&#39;
+
+let locales = [&#39;lt&#39;, &#39;LT&#39;, &#39;lt-LT&#39;, &#39;lt-u-co-phonebk&#39;, &#39;lt-x-lietuva&#39;];
+&#39;i\u0307&#39;.toLocaleUpperCase(locales); // &#39;I&#39;</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-string.prototype.tolocaleuppercase">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-string.prototype.tolocaleuppercase</span></a>
+</td>
+</tr>
+<tr class="even">
+<td>
+<p><a href="https://tc39.es/ecma402/#sup-string.prototype.tolocaleuppercase">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) <br/></p>
+<span class="small">#sup-string.prototype.tolocaleuppercase</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>toLocaleUpperCase</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>5.5</p>
+<p>4</p>
+<p>1.3</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>locale</code></p>
+<p>58</p>
+<p>12</p>
+<p>55</p>
+<p>6</p>
+<p>45</p>
+<p>10</p>
+<p>58</p>
+<p>58</p>
+<p>55</p>
+<p>42</p>
+<p>10</p>
+<p>7.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="tolocalelowercase"><code>String.prototype.toLocaleLowerCase()</code></a></li>
+<li><a href="tolowercase"><code>String.prototype.toLowerCase()</code></a></li>
+<li><a href="touppercase"><code>String.prototype.toUpperCase()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLocaleUpperCase" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLocaleUpperCase</a></p>
+</body>
+</html>

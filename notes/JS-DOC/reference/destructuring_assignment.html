@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>destructuring_assignment</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="destructuring-assignment">Destructuring assignment</h1>
+<p>The <strong>destructuring assignment</strong> syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>let a, b, rest;
+[a, b] = [10, 20];
+console.log(a); // 10
+console.log(b); // 20
+
+[a, b, ...rest] = [10, 20, 30, 40, 50];
+console.log(a); // 10
+console.log(b); // 20
+console.log(rest); // [30, 40, 50]
+
+({ a, b } = { a: 10, b: 20 });
+console.log(a); // 10
+console.log(b); // 20
+
+// Stage 4(finished) proposal
+({a, b, ...rest} = {a: 10, b: 20, c: 30, d: 40});
+console.log(a); // 10
+console.log(b); // 20
+console.log(rest); // {c: 30, d: 40}</code></pre>
+<h2 id="description">Description</h2>
+<p>The object and array literal expressions provide an easy way to create <em>ad hoc</em> packages of data.</p>
+<pre><code>const x = [1, 2, 3, 4, 5];</code></pre>
+<p>The destructuring assignment uses similar syntax, but on the left-hand side of the assignment to define what values to unpack from the sourced variable.</p>
+<pre><code>const x = [1, 2, 3, 4, 5];
+const [y, z] = x;
+console.log(y); // 1
+console.log(z); // 2</code></pre>
+<p>Similarly, you can destructure arrays on the left-hand side of the assignment</p>
+<pre><code>const [firstElement, secondElement] = list;
+// is equivalent to:
+// const firstElement = list[0];
+// const secondElement = list[1];</code></pre>
+<p>This capability is similar to features present in languages such as Perl and Python.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="array-destructuring">Array destructuring</h3>
+<h4 id="basic-variable-assignment">Basic variable assignment</h4>
+<pre><code>const foo = [&#39;one&#39;, &#39;two&#39;, &#39;three&#39;];
+
+const [red, yellow, green] = foo;
+console.log(red); // &quot;one&quot;
+console.log(yellow); // &quot;two&quot;
+console.log(green); // &quot;three&quot;</code></pre>
+<h4 id="assignment-separate-from-declaration">Assignment separate from declaration</h4>
+<p>A variable can be assigned its value via destructuring, separate from the variable’s declaration.</p>
+<pre><code>let a, b;
+
+[a, b] = [1, 2];
+console.log(a); // 1
+console.log(b); // 2</code></pre>
+<h4 id="default-values">Default values</h4>
+<p>A variable can be assigned a default, in the case that the value unpacked from the array is <code>undefined</code>.</p>
+<pre><code>let a, b;
+
+[a=5, b=7] = [1];
+console.log(a); // 1
+console.log(b); // 7</code></pre>
+<h4 id="swapping-variables">Swapping variables</h4>
+<p>Two variables values can be swapped in one destructuring expression.</p>
+<p>Without destructuring assignment, swapping two values requires a temporary variable (or, in some low-level languages, the <a href="https://en.wikipedia.org/wiki/XOR_swap_algorithm">XOR-swap trick</a>).</p>
+<pre><code>let a = 1;
+let b = 3;
+
+[a, b] = [b, a];
+console.log(a); // 3
+console.log(b); // 1
+
+const arr = [1,2,3];
+[arr[2], arr[1]] = [arr[1], arr[2]];
+console.log(arr); // [1,3,2]</code></pre>
+<h4 id="parsing-an-array-returned-from-a-function">Parsing an array returned from a function</h4>
+<p>It’s always been possible to return an array from a function. Destructuring can make working with an array return value more concise.</p>
+<p>In this example, <code>f()</code> returns the values <code>[1, 2]</code> as its output, which can be parsed in a single line with destructuring.</p>
+<pre><code>function f() {
+  return [1, 2];
+}
+
+let a, b;
+[a, b] = f();
+console.log(a); // 1
+console.log(b); // 2</code></pre>
+<h4 id="ignoring-some-returned-values">Ignoring some returned values</h4>
+<p>You can ignore return values that you’re not interested in:</p>
+<pre><code>function f() {
+  return [1, 2, 3];
+}
+
+const [a, , b] = f();
+console.log(a); // 1
+console.log(b); // 3
+
+const [c] = f();
+console.log(c); // 1</code></pre>
+<p>You can also ignore all returned values:</p>
+<pre><code>[,,] = f();</code></pre>
+<h4 id="assigning-the-rest-of-an-array-to-a-variable">Assigning the rest of an array to a variable</h4>
+<p>When destructuring an array, you can unpack and assign the remaining part of it to a variable using the rest pattern:</p>
+<pre><code>const [a, ...b] = [1, 2, 3];
+console.log(a); // 1
+console.log(b); // [2, 3]</code></pre>
+<p>Be aware that a <a href="../global_objects/syntaxerror"><code>SyntaxError</code></a> will be thrown if a trailing comma is used on the right-hand side of a rest element:</p>
+<pre><code>const [a, ...b,] = [1, 2, 3];
+
+// SyntaxError: rest element may not have a trailing comma
+// Always consider using rest operator as the last element</code></pre>
+<h4 id="unpacking-values-from-a-regular-expression-match">Unpacking values from a regular expression match</h4>
+<p>When the regular expression <code>exec()</code> method finds a match, it returns an array containing first the entire matched portion of the string and then the portions of the string that matched each parenthesized group in the regular expression. Destructuring assignment allows you to unpack the parts out of this array easily, ignoring the full match if it is not needed.</p>
+<pre><code>function parseProtocol(url) {
+  const parsedURL = /^(\w+)\:\/\/([^\/]+)\/(.*)$/.exec(url);
+  if (!parsedURL) {
+    return false;
+  }
+  console.log(parsedURL);
+  // [&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript&quot;,
+      &quot;https&quot;, &quot;developer.mozilla.org&quot;, &quot;en-US/docs/Web/JavaScript&quot;]
+
+  const [, protocol, fullhost, fullpath] = parsedURL;
+  return protocol;
+}
+
+console.log(parseProtocol(&#39;https://developer.mozilla.org/en-US/docs/Web/JavaScript&#39;));
+// &quot;https&quot;</code></pre>
+<h3 id="object-destructuring">Object destructuring</h3>
+<h4 id="basic-assignment">Basic assignment</h4>
+<pre><code>const user = {
+    id: 42,
+    is_verified: true
+};
+
+const {id, is_verified} = user;
+
+console.log(id); // 42
+console.log(is_verified); // true</code></pre>
+<h4 id="assignment-without-declaration">Assignment without declaration</h4>
+<p>A variable can be assigned its value with destructuring separate from its declaration.</p>
+<pre><code>let a, b;
+
+({a, b} = {a: 1, b: 2});</code></pre>
+<p><strong>Note:</strong> The parentheses <code>( ... )</code> around the assignment statement are required when using object literal destructuring assignment without a declaration.</p>
+<p><code>{a, b} = {a: 1, b: 2}</code> is not valid stand-alone syntax, as the <code>{a, b}</code> on the left-hand side is considered a block and not an object literal.</p>
+<p>However, <code>({a, b} = {a: 1, b: 2})</code> is valid, as is <code>const {a, b} = {a: 1, b: 2}</code></p>
+<p>Your <code>( ... )</code> expression needs to be preceded by a semicolon or it may be used to execute a function on the previous line.</p>
+<h4 id="assigning-to-new-variable-names">Assigning to new variable names</h4>
+<p>A property can be unpacked from an object and assigned to a variable with a different name than the object property.</p>
+<pre><code>const o = {p: 42, q: true};
+const {p: foo, q: bar} = o;
+
+console.log(foo); // 42
+console.log(bar); // true</code></pre>
+<p>Here, for example, <code>const {p: foo} = o</code> takes from the object <code>o</code> the property named <code>p</code> and assigns it to a local variable named <code>foo</code>.</p>
+<h4 id="default-values-1">Default values</h4>
+<p>A variable can be assigned a default, in the case that the value unpacked from the object is <code>undefined</code>.</p>
+<pre><code>const {a = 10, b = 5} = {a: 3};
+
+console.log(a); // 3
+console.log(b); // 5</code></pre>
+<h4 id="assigning-to-new-variables-names-and-providing-default-values">Assigning to new variables names and providing default values</h4>
+<p>A property can be both</p>
+<ul>
+<li>Unpacked from an object and assigned to a variable with a different name.</li>
+<li>Assigned a default value in case the unpacked value is <code>undefined</code>.</li>
+</ul>
+<!-- -->
+<pre><code>const {a: aa = 10, b: bb = 5} = {a: 3};
+
+console.log(aa); // 3
+console.log(bb); // 5</code></pre>
+<h4 id="unpacking-fields-from-objects-passed-as-a-function-parameter">Unpacking fields from objects passed as a function parameter</h4>
+<pre><code>const user = {
+  id: 42,
+  displayName: &#39;jdoe&#39;,
+  fullName: {
+    firstName: &#39;John&#39;,
+    lastName: &#39;Doe&#39;
+  }
+};
+
+function userId({id}) {
+  return id;
+}
+
+function whois({displayName, fullName: {firstName: name}}) {
+  return `${displayName} is ${name}`;
+}
+
+console.log(userId(user)); // 42
+console.log(whois(user));  // &quot;jdoe is John&quot;</code></pre>
+<p>This unpacks the <code>id</code>, <code>displayName</code> and <code>firstName</code> from the user object and prints them.</p>
+<h4 id="setting-a-function-parameters-default-value">Setting a function parameter’s default value</h4>
+<pre><code>function drawChart({size = &#39;big&#39;, coords = {x: 0, y: 0}, radius = 25} = {}) {
+  console.log(size, coords, radius);
+  // do some chart drawing
+}
+
+drawChart({
+  coords: {x: 18, y: 30},
+  radius: 30
+});</code></pre>
+<p><strong>Note:</strong> In the function signature for <code>drawChart</code> above, the destructured left-hand side is assigned to an empty object literal on the right-hand side: <code>{size = 'big', coords = {x: 0, y: 0}, radius = 25} = {}</code>. You could have also written the function without the right-hand side assignment. However, if you leave out the right-hand side assignment, the function will look for at least one argument to be supplied when invoked, whereas in its current form, you can call <code>drawChart()</code> without supplying any parameters. The current design is useful if you want to be able to call the function without supplying any parameters, the other can be useful when you want to ensure an object is passed to the function.</p>
+<h4 id="nested-object-and-array-destructuring">Nested object and array destructuring</h4>
+<pre><code>const metadata = {
+  title: &#39;Scratchpad&#39;,
+  translations: [
+    {
+      locale: &#39;de&#39;,
+      localization_tags: [],
+      last_edit: &#39;2014-04-14T08:43:37&#39;,
+      url: &#39;/de/docs/Tools/Scratchpad&#39;,
+      title: &#39;JavaScript-Umgebung&#39;
+    }
+  ],
+  url: &#39;/en-US/docs/Tools/Scratchpad&#39;
+};
+
+let {
+  title: englishTitle, // rename
+  translations: [
+    {
+       title: localeTitle, // rename
+    },
+  ],
+} = metadata;
+
+console.log(englishTitle); // &quot;Scratchpad&quot;
+console.log(localeTitle);  // &quot;JavaScript-Umgebung&quot;</code></pre>
+<h4 id="for-of-iteration-and-destructuring">For of iteration and destructuring</h4>
+<pre><code>const people = [
+  {
+    name: &#39;Mike Smith&#39;,
+    family: {
+      mother: &#39;Jane Smith&#39;,
+      father: &#39;Harry Smith&#39;,
+      sister: &#39;Samantha Smith&#39;
+    },
+    age: 35
+  },
+  {
+    name: &#39;Tom Jones&#39;,
+    family: {
+      mother: &#39;Norah Jones&#39;,
+      father: &#39;Richard Jones&#39;,
+      brother: &#39;Howard Jones&#39;
+    },
+    age: 25
+  }
+];
+
+for (const {name: n, family: {father: f}} of people) {
+  console.log(&#39;Name: &#39; + n + &#39;, Father: &#39; + f);
+}
+
+// &quot;Name: Mike Smith, Father: Harry Smith&quot;
+// &quot;Name: Tom Jones, Father: Richard Jones&quot;</code></pre>
+<h4 id="computed-object-property-names-and-destructuring">Computed object property names and destructuring</h4>
+<p>Computed property names, like on <a href="object_initializer#computed_property_names">object literals</a>, can be used with destructuring.</p>
+<pre><code>let key = &#39;z&#39;;
+let {[key]: foo} = {z: &#39;bar&#39;};
+
+console.log(foo); // &quot;bar&quot;</code></pre>
+<h4 id="rest-in-object-destructuring">Rest in Object Destructuring</h4>
+<p>The <a href="https://github.com/tc39/proposal-object-rest-spread">Rest/Spread Properties for ECMAScript</a> proposal (stage 4) adds the <a href="../functions/rest_parameters">rest</a> syntax to destructuring. Rest properties collect the remaining own enumerable property keys that are not already picked off by the destructuring pattern.</p>
+<pre><code>let {a, b, ...rest} = {a: 10, b: 20, c: 30, d: 40}
+a; // 10
+b; // 20
+rest; // { c: 30, d: 40 }</code></pre>
+<h4 id="invalid-javascript-identifier-as-a-property-name">Invalid JavaScript identifier as a property name</h4>
+<p>Destructuring can be used with property names that are not valid JavaScript <a href="https://developer.mozilla.org/en-US/docs/Glossary/Identifier">identifiers</a> by providing an alternative identifier that is valid.</p>
+<pre><code>const foo = { &#39;fizz-buzz&#39;: true };
+const { &#39;fizz-buzz&#39;: fizzBuzz } = foo;
+
+console.log(fizzBuzz); // &quot;true&quot;</code></pre>
+<h4 id="combined-array-and-object-destructuring">Combined Array and Object Destructuring</h4>
+<p>Array and Object destructuring can be combined. Say you want the third element in the array <code>props</code> below, and then you want the <code>name</code> property in the object, you can do the following:</p>
+<pre><code>const props = [
+  { id: 1, name: &#39;Fizz&#39;},
+  { id: 2, name: &#39;Buzz&#39;},
+  { id: 3, name: &#39;FizzBuzz&#39;}
+];
+
+const [,, { name }] = props;
+
+console.log(name); // &quot;FizzBuzz&quot;</code></pre>
+<h4 id="the-prototype-chain-is-looked-up-when-the-object-is-deconstructed">The prototype chain is looked up when the object is deconstructed</h4>
+<p>When deconstructing an object, if a property is not accessed in itself, it will continue to look up along the prototype chain.</p>
+<pre><code>let obj = {self: &#39;123&#39;};
+obj.__proto__.prot = &#39;456&#39;;
+const {self, prot} = obj;
+// self &quot;123&quot;
+// prot &quot;456&quot; (Access to the prototype chain)</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-destructuring-assignment">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-destructuring-assignment</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>Destructuring_assignment</code></p>
+<p>49</p>
+<p>14</p>
+<p>41</p>
+<p>Firefox provided a non-standard destructuring implementation from Firefox 2 to 40.</p>
+<p>No</p>
+<p>36</p>
+<p>8</p>
+<p>49</p>
+<p>49</p>
+<p>41</p>
+<p>Firefox provided a non-standard destructuring implementation from Firefox 2 to 40.</p>
+<p>36</p>
+<p>8</p>
+<p>5.0</p>
+<p><code>computed_property_names</code></p>
+<p>49</p>
+<p>14</p>
+<p>41</p>
+<p>No</p>
+<p>36</p>
+<p>10</p>
+<p>49</p>
+<p>49</p>
+<p>41</p>
+<p>36</p>
+<p>10</p>
+<p>5.0</p>
+<p><code>rest_in_arrays</code></p>
+<p>49</p>
+<p>16</p>
+<p>14</p>
+<p>41</p>
+<p>No</p>
+<p>36</p>
+<p>9.1</p>
+<p>49</p>
+<p>49</p>
+<p>41</p>
+<p>36</p>
+<p>9.3</p>
+<p>5.0</p>
+<p><code>rest_in_objects</code></p>
+<p>60</p>
+<p>79</p>
+<p>55</p>
+<p>No</p>
+<p>47</p>
+<p>11.1</p>
+<p>60</p>
+<p>60</p>
+<p>55</p>
+<p>44</p>
+<p>11.3</p>
+<p>8.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Assignment_operators">Assignment operators</a></li>
+<li><a href="https://hacks.mozilla.org/2015/05/es6-in-depth-destructuring/">“ES6 in Depth: Destructuring” on hacks.mozilla.org</a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment</a></p>
+</body>
+</html>

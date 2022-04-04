@@ -1,12 +1,14 @@
-# DataView
+DataView
+========
 
-The `DataView` view provides a low-level interface for reading and writing multiple number types in a binary [`ArrayBuffer`](arraybuffer), without having to care about the platform's [endianness](https://developer.mozilla.org/en-US/docs/Glossary/Endianness).
+The `DataView` view provides a low-level interface for reading and writing multiple number types in a binary [`ArrayBuffer`](arraybuffer), without having to care about the platform’s [endianness](https://developer.mozilla.org/en-US/docs/Glossary/Endianness).
 
-## Description
+Description
+-----------
 
 ### Endianness
 
-Multi-byte number formats are represented in memory differently depending on machine architecture — see [Endianness](https://developer.mozilla.org/en-US/docs/Glossary/Endianness) for an explanation. `DataView` accessors provide explicit control of how data is accessed, regardless of the executing computer's endianness.
+Multi-byte number formats are represented in memory differently depending on machine architecture — see [Endianness](https://developer.mozilla.org/en-US/docs/Glossary/Endianness) for an explanation. `DataView` accessors provide explicit control of how data is accessed, regardless of the executing computer’s endianness.
 
     var littleEndian = (function() {
       var buffer = new ArrayBuffer(2);
@@ -18,7 +20,7 @@ Multi-byte number formats are represented in memory differently depending on mac
 
 ### 64-bit Integer Values
 
-Some browsers don't have support for [`DataView.prototype.setBigInt64()`](dataview/setbigint64) and [`DataView.prototype.setBigUint64()`](dataview/setbiguint64). So to enable 64-bit operations in your code that will work across browsers, you could implement your own `getUint64()` function, to obtain values with precision up to [`Number.MAX_SAFE_INTEGER`](number/max_safe_integer) — which could suffice for certain cases.
+Some browsers don’t have support for [`DataView.prototype.setBigInt64()`](dataview/setbigint64) and [`DataView.prototype.setBigUint64()`](dataview/setbiguint64). So to enable 64-bit operations in your code that will work across browsers, you could implement your own `getUint64()` function, to obtain values with precision up to [`Number.MAX_SAFE_INTEGER`](number/max_safe_integer) — which could suffice for certain cases.
 
     function getUint64(dataview, byteOffset, littleEndian) {
       // split 64-bit number into two 32-bit (4-byte) parts
@@ -46,12 +48,14 @@ Alternatively, if you need full 64-bit range, you can create a [`BigInt`](bigint
       return littleEndian ? (right<<bigThirtyTwo)|left : (left<<bigThirtyTwo)|right;
     }
 
-## Constructor
+Constructor
+-----------
 
 [`DataView()`](dataview/dataview)  
 Creates a new `DataView` object.
 
-## Instance properties
+Instance properties
+-------------------
 
 [`DataView.prototype.buffer`](dataview/buffer)  
 The [`ArrayBuffer`](arraybuffer) referenced by this view. Fixed at construction time and thus **read only.**
@@ -62,7 +66,8 @@ The length (in bytes) of this view from the start of its [`ArrayBuffer`](arraybu
 [`DataView.prototype.byteOffset`](dataview/byteoffset)  
 The offset (in bytes) of this view from the start of its [`ArrayBuffer`](arraybuffer). Fixed at construction time and thus **read only.**
 
-## Instance methods
+Instance methods
+----------------
 
 [`DataView.prototype.getInt8()`](dataview/getint8)  
 Gets a signed 8-bit integer (byte) at the specified byte offset from the start of the view.
@@ -124,7 +129,8 @@ Stores a signed 64-bit integer (long long) value at the specified byte offset fr
 [`DataView.prototype.setBigUint64()`](dataview/setbiguint64)  
 Stores an unsigned 64-bit integer (unsigned long long) value at the specified byte offset from the start of the view.
 
-## Examples
+Examples
+--------
 
 ### Using DataView
 
@@ -134,12 +140,11 @@ Stores an unsigned 64-bit integer (unsigned long long) value at the specified by
     view.setInt16(1, 42);
     view.getInt16(1); // 42
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview-objects">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-dataview-objects</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-dataview-objects</span></td></tr></tbody></table>
 
 `DataView`
 
@@ -791,7 +796,8 @@ No
 
 1.0
 
-## See also
+See also
+--------
 
 -   [jDataView](https://github.com/jDataView/jDataView): JavaScript library that polyfills and extends the `DataView` API to all browsers and Node.js.
 -   [`ArrayBuffer`](arraybuffer)

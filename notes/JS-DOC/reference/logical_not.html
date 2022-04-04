@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>logical_not</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="logical-not">Logical NOT (!)</h1>
+<p>The logical NOT (<code>!</code>) operator (logical complement, negation) takes truth to falsity and vice versa. It is typically used with <a href="../global_objects/boolean"><code>Boolean</code></a> (logical) values. When used with non-Boolean values, it returns <code>false</code> if its single operand can be converted to <code>true</code>; otherwise, returns <code>true</code>.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>!expr</code></pre>
+<h2 id="description">Description</h2>
+<p>Returns <code>false</code> if its single operand can be converted to <code>true</code>; otherwise, returns <code>true</code>.</p>
+<p>If a value can be converted to <code>true</code>, the value is so-called <a href="https://developer.mozilla.org/en-US/docs/Glossary/Truthy">truthy</a>. If a value can be converted to <code>false</code>, the value is so-called <a href="https://developer.mozilla.org/en-US/docs/Glossary/Falsy">falsy</a>.</p>
+<p>Examples of expressions that can be converted to false are:</p>
+<ul>
+<li><code>null</code>;</li>
+<li><code>NaN</code>;</li>
+<li><code>0</code>;</li>
+<li>empty string (<code>""</code> or <code>''</code> or <code>``</code>);</li>
+<li><code>undefined</code>.</li>
+</ul>
+<p>Even though the <code>!</code> operator can be used with operands that are not Boolean values, it can still be considered a boolean operator since its return value can always be converted to a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#boolean_type">boolean primitive</a>. To explicitly convert its return value (or any expression in general) to the corresponding boolean value, use a double <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#logical_not">NOT operator</a> or the <a href="../global_objects/boolean/boolean"><code>Boolean</code></a> constructor.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-not">Using NOT</h3>
+<p>The following code shows examples of the <code>!</code> (logical NOT) operator.</p>
+<pre><code>n1 = !true               // !t returns false
+n2 = !false              // !f returns true
+n3 = !&#39;&#39;                 // !f returns true
+n4 = !&#39;Cat&#39;              // !t returns false</code></pre>
+<h3 id="double-not">Double NOT (<code>!!</code>)</h3>
+<p>It is possible to use a couple of NOT operators in series to explicitly force the conversion of any value to the corresponding <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#boolean_type">boolean primitive</a>. The conversion is based on the “truthyness” or “falsyness” of the value (see <a href="https://developer.mozilla.org/en-US/docs/Glossary/Truthy">truthy</a> and <a href="https://developer.mozilla.org/en-US/docs/Glossary/Falsy">falsy</a>).</p>
+<p>The same conversion can be done through the <a href="../global_objects/boolean/boolean"><code>Boolean</code></a> function.</p>
+<pre><code>n1 = !!true                   // !!truthy returns true
+n2 = !!{}                     // !!truthy returns true: any object is truthy...
+n3 = !!(new Boolean(false))   // ...even Boolean objects with a false .valueOf()!
+n4 = !!false                  // !!falsy returns false
+n5 = !!&quot;&quot;                     // !!falsy returns false
+n6 = !!Boolean(false)         // !!falsy returns false</code></pre>
+<h3 id="converting-between-nots">Converting between NOTs</h3>
+<p>The following operation involving <strong>booleans</strong>:</p>
+<pre><code>!!bCondition</code></pre>
+<p>is always equal to:</p>
+<pre><code>bCondition</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-logical-not-operator">ECMAScript (ECMA-262) <br/></p>
+<span class="small">The definition of ‘Logical NOT expression’ in that specification.</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>Logical_NOT</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../global_objects/boolean"><code>Boolean</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Truthy">Truthy</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Falsy">Falsy</a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_NOT" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_NOT</a></p>
+</body>
+</html>

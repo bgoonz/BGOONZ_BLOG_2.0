@@ -1,19 +1,24 @@
-# To trash foo and bar:
+To trash foo and bar:
+=====================
 
 trash foo bar
 
-# To trash "foo bar":
+To trash “foo bar”:
+===================
 
-trash foo\ bar
+trash foo bar
 
-# To list files in trash:
+To list files in trash:
+=======================
 
-trash -v --list
+trash -v –list
 
-# To restore foo from trash:
+To restore foo from trash:
+==========================
 
-trash --restore foo
+trash –restore foo
 
-# To empty trash:
+To empty trash:
+===============
 
-trash --empty
+trash –empty

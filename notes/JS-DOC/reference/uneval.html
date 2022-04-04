@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>uneval</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="uneval">uneval()</h1>
+<p><strong>Non-standard</strong></p>
+<p>This feature is non-standard and is not on a standards track. Do not use it on production sites facing the Web: it will not work for every user. There may also be large incompatibilities between implementations and the behavior may change in the future.</p>
+<p><strong>Deprecated</strong></p>
+<p>This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see the <a href="#browser_compatibility">compatibility table</a> at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time.</p>
+<p>The <code>uneval()</code> function creates a string representation of the source code of an Object.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>uneval(object)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>object</code><br />
+A JavaScript expression or statement.</p>
+<h3 id="return-value">Return value</h3>
+<p>A string representing the source code of <code>object</code>.</p>
+<p><strong>Note:</strong> This will <em>not</em> return a JSON representation of <code>object</code>.</p>
+<h2 id="description">Description</h2>
+<p><code>uneval()</code> is a top-level function and is not associated with any object.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-uneval">Using uneval</h3>
+<pre><code>var a = 1;
+uneval(a); // returns a String containing 1
+
+var b = &#39;1&#39;;
+uneval(b); // returns a String containing &quot;1&quot;
+
+uneval(function foo() {}); // returns &quot;(function foo(){})&quot;
+
+var a = uneval(function foo() { return &#39;hi&#39;; });
+var foo = eval(a);
+foo(); // returns &quot;hi&quot;</code></pre>
+<h2 id="specifications">Specifications</h2>
+<p><span class="pl-s">Not part of any standard.</span></p>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>uneval</code></p>
+<p>No</p>
+<p>No</p>
+<p>1-74</p>
+<p>Starting in Firefox 74, <code>uneval()</code> is no longer available for use by web content. It is still allowed for internal and privileged code.</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>4</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="eval"><code>eval()</code></a></li>
+<li><a href="json/stringify"><code>JSON.stringify()</code></a></li>
+<li><a href="json/parse"><code>JSON.parse()</code></a></li>
+<li><a href="object/tosource"><code>Object.toSource()</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/uneval" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/uneval</a></p>
+</body>
+</html>

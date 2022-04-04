@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>ssh-keygen</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="to-generate-an-ssh-key">To generate an SSH key:</h1>
+<p>ssh-keygen -t rsa</p>
+<h1 id="to-generate-a-4096-bit-ssh-key">To generate a 4096-bit SSH key:</h1>
+<p>ssh-keygen -t rsa -b 4096</p>
+<h1 id="to-generate-a-fidou2f-token-backed-key">To generate a FIDO/U2F token-backed key:</h1>
+<p>ssh-keygen -t ed25519-sk</p>
+<h1 id="to-generate-a-fido2-resident-key">To generate a FIDO2 resident key:</h1>
+<p>ssh-keygen -t ed25519-sk -O resident</p>
+<h1 id="to-update-a-passphrase-on-a-key">To update a passphrase on a key:</h1>
+<p>ssh-keygen -p -P <old-passphrase> -N <new-passphrase> -f <keyfile></p>
+<h1 id="to-remove-a-passphrase-on-a-key">To remove a passphrase on a key:</h1>
+<p>ssh-keygen -p -P <old-passphrase> -N ’’ -f <keyfile></p>
+<h1 id="to-generate-a-4096-bit-rsa-key-with-a-passphase-and-comment-containing-the-user-and-hostname">To generate a 4096 bit RSA key with a passphase and comment containing the user and hostname:</h1>
+<p>ssh-keygen -t rsa -b 4096 -C “<span class="math inline"><em>U</em><em>S</em><em>E</em><em>R</em>@</span>HOSTNAME” -P <passphrase></p>
+<h1 id="to-print-the-fingerprint-of-a-public-key">To print the fingerprint of a public key:</h1>
+<p>ssh-keygen -lf <keyfile></p>
+<h1 id="to-print-the-github-style-md5-fingerprint-of-a-public-key">To print the Github-style (MD5) fingerprint of a public key:</h1>
+<p>ssh-keygen -E md5 -lf <keyfile></p>
+<h1 id="to-download-resident-keys-from-a-fido2-authenticator-to-the-current-directory">To download resident keys from a FIDO2 authenticator to the current directory:</h1>
+<p>ssh-keygen -K</p>
+<h1 id="to-view-the-public-key-associated-with-a-private-key">To view the public key associated with a private key:</h1>
+<p>ssh-keygen -y -f <private-key-file> &gt; <public-key-file> ssh-keygen -y -f ~/.ssh/private-key &gt; ~/.ssh/public-key.pub</p>
+</body>
+</html>

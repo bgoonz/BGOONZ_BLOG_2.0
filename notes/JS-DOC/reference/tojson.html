@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>tojson</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="date.prototype.tojson">Date.prototype.toJSON()</h1>
+<p>The <code>toJSON()</code> method returns a string representation of the <a href="../date"><code>Date</code></a> object.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>toJSON()</code></pre>
+<h3 id="return-value">Return value</h3>
+<p>A string representation of the given date.</p>
+<h2 id="description">Description</h2>
+<p><a href="../date"><code>Date</code></a> instances refer to a specific point in time. Calling <code>toJSON()</code> returns a string (using <a href="toisostring"><code>toISOString()</code></a>) representing the <a href="../date"><code>Date</code></a> object’s value. This method is generally intended to, by default, usefully serialize <a href="../date"><code>Date</code></a> objects during <a href="https://developer.mozilla.org/en-US/docs/Glossary/JSON">JSON</a> serialization.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-tojson">Using toJSON()</h3>
+<pre><code>var jsonDate = (new Date()).toJSON();
+var backToDate = new Date(jsonDate);
+
+console.log(jsonDate); //2015-10-26T07:46:36.611Z</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-date.prototype.tojson">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-date.prototype.tojson</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>toJSON</code></p>
+<p>3</p>
+<p>12</p>
+<p>1</p>
+<p>8</p>
+<p>10.5</p>
+<p>5</p>
+<p>≤37</p>
+<p>18</p>
+<p>4</p>
+<p>11</p>
+<p>4.2</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="tolocaledatestring"><code>Date.prototype.toLocaleDateString()</code></a></li>
+<li><a href="totimestring"><code>Date.prototype.toTimeString()</code></a></li>
+<li><a href="toutcstring"><code>Date.prototype.toUTCString()</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toJSON" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toJSON</a></p>
+</body>
+</html>

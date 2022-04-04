@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>aggregateerror</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="aggregateerror">AggregateError</h1>
+<p>The <code>AggregateError</code> object represents an error when several errors need to be wrapped in a single error. It is thrown when multiple errors need to be reported by an operation, for example by <a href="promise/any"><code>Promise.any()</code></a>, when all promises passed to it reject.</p>
+<h2 id="constructor">Constructor</h2>
+<p><a href="aggregateerror/aggregateerror"><code>AggregateError()</code></a><br />
+Creates a new <code>AggregateError</code> object.</p>
+<h2 id="instance-properties">Instance properties</h2>
+<p><a href="error/message"><code>AggregateError.prototype.message</code></a><br />
+Error message, defaults to <code>""</code>.</p>
+<p><a href="error/name"><code>AggregateError.prototype.name</code></a><br />
+Error name, defaults to <code>AggregateError</code>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="catching-an-aggregateerror">Catching an AggregateError</h3>
+<pre><code>Promise.any([
+  Promise.reject(new Error(&quot;some error&quot;)),
+]).catch(e =&gt; {
+  console.log(e instanceof AggregateError); // true
+  console.log(e.message);                   // &quot;All Promises rejected&quot;
+  console.log(e.name);                      // &quot;AggregateError&quot;
+  console.log(e.errors);                    // [ Error: &quot;some error&quot; ]
+});</code></pre>
+<h3 id="creating-an-aggregateerror">Creating an AggregateError</h3>
+<pre><code>try {
+  throw new AggregateError([
+    new Error(&quot;some error&quot;),
+  ], &#39;Hello&#39;);
+} catch (e) {
+  console.log(e instanceof AggregateError); // true
+  console.log(e.message);                   // &quot;Hello&quot;
+  console.log(e.name);                      // &quot;AggregateError&quot;
+  console.log(e.errors);                    // [ Error: &quot;some error&quot; ]
+}</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-aggregate-error-objects">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-aggregate-error-objects</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>AggregateError</code></p>
+<p>85</p>
+<p>85</p>
+<p>79</p>
+<p>No</p>
+<p>No</p>
+<p>14</p>
+<p>85</p>
+<p>85</p>
+<p>79</p>
+<p>No</p>
+<p>14</p>
+<p>No</p>
+<p><code>AggregateError</code></p>
+<p>85</p>
+<p>85</p>
+<p>79</p>
+<p>No</p>
+<p>No</p>
+<p>14</p>
+<p>85</p>
+<p>85</p>
+<p>79</p>
+<p>No</p>
+<p>14</p>
+<p>No</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="error"><code>Error</code></a></li>
+<li><a href="promise/any"><code>Promise.any</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AggregateError" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AggregateError</a></p>
+</body>
+</html>

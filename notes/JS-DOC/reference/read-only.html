@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>read-only</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="typeerror-x-is-read-only">TypeError: “x” is read-only</h1>
+<p>The JavaScript <a href="../strict_mode">strict mode</a>-only exception “is read-only” occurs when a global variable or object property that was assigned to is a read-only property.</p>
+<h2 id="message">Message</h2>
+<pre><code>TypeError: Assignment to read-only properties is not allowed in strict mode (Edge)
+TypeError: &quot;x&quot; is read-only (Firefox)
+TypeError: 0 is read-only (Firefox)
+TypeError: Cannot assign to read only property &#39;x&#39; of #&lt;Object&gt; (Chrome)
+TypeError: Cannot assign to read only property &#39;0&#39; of [object Array] (Chrome)</code></pre>
+<h2 id="error-type">Error type</h2>
+<p><a href="../global_objects/typeerror"><code>TypeError</code></a></p>
+<h2 id="what-went-wrong">What went wrong?</h2>
+<p>The global variable or object property that was assigned to is a read-only property. (Technically, it is a <a href="../global_objects/object/defineproperty#writable_attribute">non-writable data property</a>.)</p>
+<p>This error happens only in <a href="../strict_mode">strict mode code</a>. In non-strict code, the assignment is silently ignored.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="invalid-cases">Invalid cases</h3>
+<p>Read-only properties are not super common, but they can be created using <a href="../global_objects/object/defineproperty"><code>Object.defineProperty()</code></a> or <a href="../global_objects/object/freeze"><code>Object.freeze()</code></a>.</p>
+<pre><code>&#39;use strict&#39;;
+var obj = Object.freeze({name: &#39;Elsa&#39;, score: 157});
+obj.score = 0;  // TypeError
+
+&#39;use strict&#39;;
+Object.defineProperty(this, &#39;LUNG_COUNT&#39;, {value: 2, writable: false});
+LUNG_COUNT = 3;  // TypeError
+
+&#39;use strict&#39;;
+var frozenArray = Object.freeze([0, 1, 2]);
+frozenArray[0]++;  // TypeError</code></pre>
+<p>There are also a few read-only properties built into JavaScript. Maybe you tried to redefine a mathematical constant.</p>
+<pre><code>&#39;use strict&#39;;
+Math.PI = 4;  // TypeError</code></pre>
+<p>Sorry, you can’t do that.</p>
+<p>The global variable <code>undefined</code> is also read-only, so you can’t silence the infamous “undefined is not a function” error by doing this:</p>
+<pre><code>&#39;use strict&#39;;
+undefined = function() {};  // TypeError: &quot;undefined&quot; is read-only</code></pre>
+<h3 id="valid-cases">Valid cases</h3>
+<pre><code>&#39;use strict&#39;;
+var obj = Object.freeze({name: &#39;Score&#39;, points: 157});
+obj = {name: obj.name, points: 0};   // replacing it with a new object works
+
+&#39;use strict&#39;;
+var LUNG_COUNT = 2;  // a `var` works, because it&#39;s not read-only
+LUNG_COUNT = 3;  // ok (anatomically unlikely, though)</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../global_objects/object/defineproperty"><code>Object.defineProperty()</code></a></li>
+<li><a href="../global_objects/object/freeze"><code>Object.freeze()</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Read-only" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Read-only</a></p>
+</body>
+</html>

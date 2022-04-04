@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>lvm</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="pv---physical-volume-disc-eg.-devsda">PV - physical volume (disc); eg. /dev/sda</h1>
+<h1 id="vg---volume-group-eg.-vg0">VG - volume group; eg. vg0</h1>
+<h1 id="lv---logical-volume-eg.-root">LV - logical volume; eg. root</h1>
+<h1 id="create-pv">Create PV</h1>
+<p>pvcreate /dev/sda</p>
+<h1 id="display-info-about-pv">Display info about PV</h1>
+<p>pvdisplay /dev/sda</p>
+<h1 id="create-vg">Create VG</h1>
+<p>vgcreate vg0 /dev/sda</p>
+<h1 id="display-info-about-vg">Display info about VG</h1>
+<p>vgdispay vg0</p>
+<h1 id="add-pv-to-vg-pv-must-be-created-before">Add PV to VG, PV must be created before</h1>
+<p>vgextend vg0 /dev/sdb</p>
+<h1 id="remove-pv-from-vg">Remove PV from VG</h1>
+<p>pvmove /dev/sdb # Move data from PV vgreduce data /dev/sdb</p>
+<h1 id="deactivate-vg-do-this-when-you-want-to-physically-remove-device">Deactivate VG, do this when you want to physically remove device</h1>
+<p>vgchange –activate n vg0</p>
+<h1 id="create-lv">Create LV</h1>
+<p>lvcreate –name root –size 8G vg0</p>
+<h1 id="extend-lv-size">Extend LV size</h1>
+<p>lvextend –size 16G vg0/root</p>
+<h1 id="reduce-lv-size-fs-must-be-resized-first">Reduce LV size, FS must be resized first!</h1>
+<p>lvreduce –size 8G vg0/root</p>
+<h1 id="remove-lv">Remove LV</h1>
+<p>lvremove vg0/root</p>
+<h1 id="create-mirrored-lv-raid1">Create mirrored LV (RAID1)</h1>
+<p>lvcreate –name root –size 8G –mirrors 1 data vg0</p>
+<h1 id="mirror-logs-are-stored-on-third-device-by-default---if-you-dont-have-3-or">Mirror logs are stored on third device by default - if you don’t have 3 or</h1>
+<h1 id="more-devices-in-vg-add-mirrorlog-core-to-store-logs-in-memory">more devices in VG add ‘–mirrorlog core’ to store logs in memory</h1>
+<h1 id="enable-mirroring-on-existing-lv">Enable mirroring on existing LV</h1>
+<p>lvconvert –mirrors 1 vg0/root</p>
+<h1 id="create-stripped-lv-raid0">Create stripped LV (RAID0)</h1>
+<p>lvcreate –name root –size 8G –stripes 2 –stripesize 4 vg0</p>
+<p>#Exclusive Activation of a Volume Group in a Cluster #Link –&gt; https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/High_Availability_Add-On_Administration/s1-exclusiveactive-HAAA.html 1&gt; vgs –noheadings -o vg_name 2&gt; volume_list = [ “rhel_root”, “rhel_home” ] 3&gt; dracut -H -f /boot/initramfs-$(uname -r).img $(uname -r) 4&gt; Reboot the node 5&gt; uname -r to verify the correct initrd image</p>
+</body>
+</html>

@@ -1,112 +1,75 @@
----
-title: Travis.yml
-category: Devops
-
-prism_languages: [yaml]
-intro: |
-    Quick reference for [Travis CI](https://travis-ci.org) yaml configuration. See [official documentation](https://docs.travis-ci.com/user/customizing-the-build/).
----
-
-## Reference
+Reference
+---------
 
 {:.-three-column}
 
 ### Node.js
 
-```yaml
-language: node_js
-node_js:
-    - '4'
-```
+    language: node_js
+    node_js:
+        - '4'
 
 Defaults install to `npm install`, and defaults test to `npm test`.
 
 ### Ruby
 
-```yaml
-language: ruby
-rvm:
-    - 2.0.0
-    - 1.9.3
-    - 1.8.7
-```
+    language: ruby
+    rvm:
+        - 2.0.0
+        - 1.9.3
+        - 1.8.7
 
 Defaults install to `bundle install`, defaults test to `rake`.
 
 ### Build lifecycle
 
-| Lifecycle                          |
-| ---------------------------------- |
-| `before_install`                   |
-| `install`                          |
-| ---                                |
-| `before_script`                    |
-| `script`                           |
-| ---                                |
-| `after_success` or `after_failure` |
-| `after_script`                     |
-| ---                                |
-| `before_deploy` (optional)         |
-| `deploy` (optional)                |
-| `after_deploy` (optional)          |
+<table><thead><tr class="header"><th>Lifecycle</th></tr></thead><tbody><tr class="odd"><td><code>before_install</code></td></tr><tr class="even"><td><code>install</code></td></tr><tr class="odd"><td>—</td></tr><tr class="even"><td><code>before_script</code></td></tr><tr class="odd"><td><code>script</code></td></tr><tr class="even"><td>—</td></tr><tr class="odd"><td><code>after_success</code> or <code>after_failure</code></td></tr><tr class="even"><td><code>after_script</code></td></tr><tr class="odd"><td>—</td></tr><tr class="even"><td><code>before_deploy</code> (optional)</td></tr><tr class="odd"><td><code>deploy</code> (optional)</td></tr><tr class="even"><td><code>after_deploy</code> (optional)</td></tr></tbody></table>
 
 ### Branches
 
-```yaml
-branches:
-    except: ['..']
-    only: ['master']
-```
+    branches:
+        except: ['..']
+        only: ['master']
 
 ### Environment vars
 
-```yaml
-env:
-    - 'rack=master'
-    - 'rack=1.3.4'
-```
+    env:
+        - 'rack=master'
+        - 'rack=1.3.4'
 
 ### Custom test command
 
-```yaml
-script: make test
-before_script: make pretest
-after_script:  make clean
+    script: make test
+    before_script: make pretest
+    after_script:  make clean
 
-before_script:
-  - make pretest1
-  - make pretest2
-```
+    before_script:
+      - make pretest1
+      - make pretest2
 
 ### Branches
 
-```yaml
-branches:
-    except:
-        - legacy
+    branches:
+        except:
+            - legacy
 
-    only:
-        - gh-pages
-        - /^deploy/
-```
+        only:
+            - gh-pages
+            - /^deploy/
 
 ### Apt packages
 
-```yaml
-before_install:
-    - sudo apt-get update -q
-    - sudo apt-get install gcc-4.8 -y
-```
+    before_install:
+        - sudo apt-get update -q
+        - sudo apt-get install gcc-4.8 -y
 
-<https://docs.travis-ci.com/user/installing-dependencies/>
+<a href="https://docs.travis-ci.com/user/installing-dependencies/" class="uri">https://docs.travis-ci.com/user/installing-dependencies/</a>
 
 ### Etc
 
-```yaml
-gemfile:
-    - gemfiles/Gemfile.rails-2.3.x
-    - gemfiles/Gemfile.rails-3.0.x
-```
+    gemfile:
+        - gemfiles/Gemfile.rails-2.3.x
+        - gemfiles/Gemfile.rails-3.0.x
 
 ### References
 

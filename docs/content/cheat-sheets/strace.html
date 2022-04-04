@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>strace</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="to-strace-a-command">To strace a command:</h1>
+<p>strace <command></p>
+<h1 id="to-save-the-trace-to-a-file">To save the trace to a file:</h1>
+<p>strace -o <outfile> <command></p>
+<h1 id="to-follow-only-the-open-system-call">To follow only the open() system call:</h1>
+<p>strace -e trace=open <command></p>
+<h1 id="to-follow-all-the-system-calls-which-open-a-file">To follow all the system calls which open a file:</h1>
+<p>strace -e trace=file <command></p>
+<h1 id="to-follow-all-the-system-calls-associated-with-process-management">To follow all the system calls associated with process management:</h1>
+<p>strace -e trace=process <command></p>
+<h1 id="to-follow-child-processes-as-they-are-created">To follow child processes as they are created:</h1>
+<p>strace -f <command></p>
+<h1 id="to-count-time-calls-and-errors-for-each-system-call">To count time, calls and errors for each system call:</h1>
+<p>strace -c <command></p>
+<h1 id="to-trace-a-running-process-multiple-pids-can-be-specified">To trace a running process (multiple PIDs can be specified):</h1>
+<p>strace -p <pid></p>
+</body>
+</html>

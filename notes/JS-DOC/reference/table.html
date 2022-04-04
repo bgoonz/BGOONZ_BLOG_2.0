@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>table</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="webassembly.table">WebAssembly.Table</h1>
+<p>The <code>WebAssembly.Table()</code> object is a JavaScript wrapper object — an array-like structure representing a WebAssembly Table, which stores function references. A table created by JavaScript or in WebAssembly code will be accessible and mutable from both JavaScript and WebAssembly.</p>
+<p><strong>Note:</strong> Tables can currently only store function references, but this will likely be expanded in the future.</p>
+<h2 id="constructor">Constructor</h2>
+<p><a href="table/table"><code>WebAssembly.Table()</code></a><br />
+Creates a new <code>Table</code> object.</p>
+<h2 id="instance-properties">Instance properties</h2>
+<p><a href="table/length"><code>Table.prototype.length</code></a><br />
+Returns the length of the table, i.e. the number of elements.</p>
+<h2 id="instance-methods">Instance methods</h2>
+<p><a href="table/get"><code>Table.prototype.get()</code></a><br />
+Accessor function — gets the element stored at a given index.</p>
+<p><a href="table/grow"><code>Table.prototype.grow()</code></a><br />
+Increases the size of the Table instance by a specified number of elements.</p>
+<p><a href="table/set"><code>Table.prototype.set()</code></a><br />
+Sets an element stored at a given index to a given value.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="creating-a-new-webassembly-table-instance">Creating a new WebAssembly Table instance</h3>
+<p>The following example (see table2.html <a href="https://github.com/mdn/webassembly-examples/blob/master/js-api-examples/table2.html">source code</a> and <a href="https://mdn.github.io/webassembly-examples/js-api-examples/table2.html">live version</a>) creates a new WebAssembly Table instance with an initial size of 2 elements. We then print out the table length and contents of the two indexes (retrieved via <a href="table/get"><code>Table.prototype.get()</code></a> to show that the length is two and both elements are <a href="../null"><code>null</code></a>.</p>
+<pre><code>var tbl = new WebAssembly.Table({initial:2, element:&quot;anyfunc&quot;});
+console.log(tbl.length);  // &quot;2&quot;
+console.log(tbl.get(0));  // &quot;null&quot;
+console.log(tbl.get(1));  // &quot;null&quot;</code></pre>
+<p>We then create an import object that contains the table:</p>
+<pre><code>var importObj = {
+  js: {
+    tbl:tbl
+  }
+};</code></pre>
+<p>Finally, we load and instantiate a wasm module (table2.wasm) using the <a href="instantiatestreaming"><code>WebAssembly.instantiateStreaming()</code></a> method. The table2.wasm module contains two functions (one that returns 42 and another that returns 83) and stores both into elements 0 and 1 of the imported table (see <a href="https://github.com/mdn/webassembly-examples/blob/master/js-api-examples/table2.wat">text representation</a>). So after instantiation, the table still has length 2, but the elements now contain callable <a href="https://developer.mozilla.org/en-US/docs/WebAssembly/Exported_functions">Exported WebAssembly Functions</a> which we can call from JS.</p>
+<pre><code>WebAssembly.instantiateStreaming(fetch(&#39;table2.wasm&#39;), importObject)
+.then(function(obj) {
+  console.log(tbl.length);
+  console.log(tbl.get(0)());
+  console.log(tbl.get(1)());
+});</code></pre>
+<p>Note how you’ve got to include a second function invocation operator at the end of the accessor to actually invoke the referenced function and log the value stored inside it (e.g. <code>get(0)()</code> rather than <code>get(0)</code>) .</p>
+<p>This example shows that we’re creating and accessing the table from JavaScript, but the same table is visible and callable inside the wasm instance too.</p>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://webassembly.github.io/spec/js-api/#tables">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) <br/></p>
+<span class="small">#tables</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>Table</code></p>
+<p>57</p>
+<p>16</p>
+<p>52</p>
+<p>Disabled in the Firefox 52 Extended Support Release (ESR).</p>
+<p>No</p>
+<p>44</p>
+<p>11</p>
+<p>57</p>
+<p>57</p>
+<p>52</p>
+<p>Disabled in the Firefox 52 Extended Support Release (ESR).</p>
+<p>43</p>
+<p>11</p>
+<p>7.0</p>
+<p><code>Table</code></p>
+<p>57</p>
+<p>16</p>
+<p>52</p>
+<p>Disabled in the Firefox 52 Extended Support Release (ESR).</p>
+<p>No</p>
+<p>44</p>
+<p>11</p>
+<p>57</p>
+<p>57</p>
+<p>52</p>
+<p>Disabled in the Firefox 52 Extended Support Release (ESR).</p>
+<p>43</p>
+<p>11</p>
+<p>7.0</p>
+<p><code>get</code></p>
+<p>57</p>
+<p>16</p>
+<p>52</p>
+<p>Disabled in the Firefox 52 Extended Support Release (ESR).</p>
+<p>No</p>
+<p>44</p>
+<p>11</p>
+<p>57</p>
+<p>57</p>
+<p>52</p>
+<p>Disabled in the Firefox 52 Extended Support Release (ESR).</p>
+<p>43</p>
+<p>11</p>
+<p>7.0</p>
+<p><code>grow</code></p>
+<p>57</p>
+<p>16</p>
+<p>52</p>
+<p>Disabled in the Firefox 52 Extended Support Release (ESR).</p>
+<p>No</p>
+<p>44</p>
+<p>11</p>
+<p>57</p>
+<p>57</p>
+<p>52</p>
+<p>Disabled in the Firefox 52 Extended Support Release (ESR).</p>
+<p>43</p>
+<p>11</p>
+<p>7.0</p>
+<p><code>length</code></p>
+<p>57</p>
+<p>16</p>
+<p>52</p>
+<p>Disabled in the Firefox 52 Extended Support Release (ESR).</p>
+<p>No</p>
+<p>44</p>
+<p>11</p>
+<p>57</p>
+<p>57</p>
+<p>52</p>
+<p>Disabled in the Firefox 52 Extended Support Release (ESR).</p>
+<p>43</p>
+<p>11</p>
+<p>7.0</p>
+<p><code>set</code></p>
+<p>57</p>
+<p>16</p>
+<p>52</p>
+<p>Disabled in the Firefox 52 Extended Support Release (ESR).</p>
+<p>No</p>
+<p>44</p>
+<p>11</p>
+<p>57</p>
+<p>57</p>
+<p>52</p>
+<p>Disabled in the Firefox 52 Extended Support Release (ESR).</p>
+<p>43</p>
+<p>11</p>
+<p>7.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/WebAssembly">WebAssembly</a> overview page</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts">WebAssembly concepts</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API">Using the WebAssembly JavaScript API</a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Table" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Table</a></p>
+</body>
+</html>

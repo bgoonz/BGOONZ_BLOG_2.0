@@ -1,4 +1,5 @@
-# Bash Shortcuts Cheat Sheet
+Bash Shortcuts Cheat Sheet
+==========================
 
 -   Ctrl + C Terminate the command
 -   Ctrl + Z Suspend the command

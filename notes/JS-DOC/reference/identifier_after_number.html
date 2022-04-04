@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>identifier_after_number</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="syntaxerror-identifier-starts-immediately-after-numeric-literal">SyntaxError: identifier starts immediately after numeric literal</h1>
+<p>The JavaScript exception “identifier starts immediately after numeric literal” occurs when an identifier started with a digit. Identifiers can only start with a letter, underscore (_), or dollar sign ($).</p>
+<h2 id="message">Message</h2>
+<pre><code>SyntaxError: Unexpected identifier after numeric literal (Edge)
+SyntaxError: identifier starts immediately after numeric literal (Firefox)
+SyntaxError: Unexpected number (Chrome)</code></pre>
+<h2 id="error-type">Error type</h2>
+<p><a href="../global_objects/syntaxerror"><code>SyntaxError</code></a></p>
+<h2 id="what-went-wrong">What went wrong?</h2>
+<p>The names of variables, called <a href="https://developer.mozilla.org/en-US/docs/Glossary/Identifier">identifiers</a>, conform to certain rules, which your code must adhere to!</p>
+<p>A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($). They can’t start with a digit! Only subsequent characters can be digits (0-9).</p>
+<h2 id="examples">Examples</h2>
+<h3 id="variable-names-starting-with-numeric-literals">Variable names starting with numeric literals</h3>
+<p>Variable names can’t start with numbers in JavaScript. The following fails:</p>
+<pre><code>var 1life = &#39;foo&#39;;
+// SyntaxError: identifier starts immediately after numeric literal
+
+var foo = 1life;
+// SyntaxError: identifier starts immediately after numeric literal
+
+alert(1.foo);
+// SyntaxError: identifier starts immediately after numeric literal</code></pre>
+<p>You will need to rename your variable to avoid the leading number.</p>
+<pre><code>var life1 = &#39;foo&#39;;
+var foo = life1;</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../lexical_grammar">Lexical grammar</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#variables">Variables</a> in the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">JavaScript Guide</a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Identifier_after_number" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Identifier_after_number</a></p>
+</body>
+</html>

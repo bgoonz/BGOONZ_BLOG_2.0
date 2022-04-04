@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>new</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="new-operator">new operator</h1>
+<p>The <code>new</code> lets developers create an instance of a user-defined object type or of one of the built-in object types that has a constructor function.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>new constructor[([arguments])]</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>constructor</code><br />
+A class or function that specifies the type of the object instance.</p>
+<p><code>arguments</code><br />
+A list of values that the <code>constructor</code> will be called with.</p>
+<h2 id="description">Description</h2>
+<p>The <code>new</code> keyword does the following things:</p>
+<ol type="1">
+<li>Creates a blank, plain JavaScript object.</li>
+<li><p>Adds a property to the new object (<code>__proto__</code>) that links to the constructor function’s prototype object <strong>Note:</strong> Properties/objects added to the construction function prototype are therefore accessible to all instances created from the constructor function (using <code>new</code>).</p></li>
+<li>Binds the newly created object instance as the <code>this</code> context (i.e. all references to <code>this</code> in the constructor function now refer to the object created in the first step).</li>
+<li><p>Returns <code>this</code> if the function doesn’t return an object.</p></li>
+</ol>
+<p>Creating a user-defined object requires two steps:</p>
+<ol type="1">
+<li><p>Define the object type by writing a function that specifies its name and properties. For example, a constructor function to create an object <code>Foo</code>might look like this:</p>
+<pre><code>function Foo(bar1, bar2) {
+      this.bar1 = bar1;
+      this.bar2 = bar2;
+    }</code></pre></li>
+<li><p>Create an instance of the object with <code>new</code>.</p>
+<pre><code>var myFoo = new Foo(&#39;Bar 1&#39;, 2021);</code></pre></li>
+</ol>
+<p><strong>Note:</strong> An object can have a property that is itself another object. See the examples below.</p>
+<p>When the code <code>new Foo(...)</code> is executed, the following things happen:</p>
+<ol type="1">
+<li>A new object is created, inheriting from <code>Foo.prototype</code>.</li>
+<li>The constructor function <code>Foo</code> is called with the specified arguments, and with <code>this</code> bound to the newly created object. <code>new Foo</code> is equivalent to <code>new Foo()</code>, i.e. if no argument list is specified, <code>Foo</code> is called without arguments.</li>
+<li>The object (not null, false, 3.1415 or other primitive types) returned by the constructor function becomes the result of the whole <code>new</code> expression. If the constructor function doesn’t explicitly return an object, the object created in step 1 is used instead (normally constructors don’t return a value, but they can choose to do so if they want to override the normal object creation process).</li>
+</ol>
+<p>You can always add a property to a previously defined object instance. For example, the statement <code>car1.color = "black"</code> adds a property <code>color</code> to <code>car1</code>, and assigns it a value of “<code>black</code>”.</p>
+<p>However, this does not affect any other objects. To add the new property to all objects of the same type, you must add the property to the definition of the <code>Car</code> object type.</p>
+<p>You can add a shared property to a previously defined object type by using the <code>Function.prototype</code> property. This defines a property that is shared by all objects created with that function, rather than by just one instance of the object type. The following code adds a color property with value <code>"original color"</code> to all objects of type <code>Car</code>, and then overwrites that value with the string “<code>black</code>” only in the instance object <code>car1</code>. For more information, see <a href="../global_objects/function">prototype</a>.</p>
+<pre><code>function Car() {}
+car1 = new Car();
+car2 = new Car();
+
+console.log(car1.color);    // undefined
+
+Car.prototype.color = &#39;original color&#39;;
+console.log(car1.color);    // &#39;original color&#39;
+
+car1.color = &#39;black&#39;;
+console.log(car1.color);    // &#39;black&#39;
+
+console.log(Object.getPrototypeOf(car1).color); // &#39;original color&#39;
+console.log(Object.getPrototypeOf(car2).color); // &#39;original color&#39;
+console.log(car1.color);   // &#39;black&#39;
+console.log(car2.color);   // &#39;original color&#39;</code></pre>
+<p><strong>Note:</strong> While the constructor function can be invoked like any regular function (i.e. without the <code>new</code> operator), in this case a new Object is not created and the value of <code>this</code> is also different.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="object-type-and-object-instance">Object type and object instance</h3>
+<p>Suppose you want to create an object type for cars. You want this type of object to be called <code>Car</code>, and you want it to have properties for make, model, and year. To do this, you would write the following function:</p>
+<pre><code>function Car(make, model, year) {
+  this.make = make;
+  this.model = model;
+  this.year = year;
+}</code></pre>
+<p>Now you can create an object called <code>myCar</code> as follows:</p>
+<pre><code>var myCar = new Car(&#39;Eagle&#39;, &#39;Talon TSi&#39;, 1993);</code></pre>
+<p>This statement creates <code>myCar</code> and assigns it the specified values for its properties. Then the value of <code>myCar.make</code> is the string “Eagle”, <code>myCar.year</code> is the integer 1993, and so on.</p>
+<p>You can create any number of <code>car</code> objects by calls to <code>new</code>. For example:</p>
+<pre><code>var kensCar = new Car(&#39;Nissan&#39;, &#39;300ZX&#39;, 1992);</code></pre>
+<h3 id="object-property-that-is-itself-another-object">Object property that is itself another object</h3>
+<p>Suppose you define an object called <code>Person</code> as follows:</p>
+<pre><code>function Person(name, age, sex) {
+  this.name = name;
+  this.age = age;
+  this.sex = sex;
+}</code></pre>
+<p>And then instantiate two new <code>Person</code> objects as follows:</p>
+<pre><code>var rand = new Person(&#39;Rand McNally&#39;, 33, &#39;M&#39;);
+var ken = new Person(&#39;Ken Jones&#39;, 39, &#39;M&#39;);</code></pre>
+<p>Then you can rewrite the definition of <code>Car</code> to include an <code>owner</code> property that takes a <code>Person</code> object, as follows:</p>
+<pre><code>function Car(make, model, year, owner) {
+  this.make = make;
+  this.model = model;
+  this.year = year;
+  this.owner = owner;
+}</code></pre>
+<p>To instantiate the new objects, you then use the following:</p>
+<pre><code>var car1 = new Car(&#39;Eagle&#39;, &#39;Talon TSi&#39;, 1993, rand);
+var car2 = new Car(&#39;Nissan&#39;, &#39;300ZX&#39;, 1992, ken);</code></pre>
+<p>Instead of passing a literal string or integer value when creating the new objects, the above statements pass the objects <code>rand</code> and <code>ken</code> as the parameters for the owners. To find out the name of the owner of <code>car2</code>, you can access the following property:</p>
+<pre><code>car2.owner.name</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-new-operator">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-new-operator</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>new</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../global_objects/function"><code>Function</code></a></li>
+<li><a href="../global_objects/reflect/construct"><code>Reflect.construct()</code></a></li>
+<li><a href="../global_objects/object"><code>Object</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new</a></p>
+</body>
+</html>

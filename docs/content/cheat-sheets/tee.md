@@ -1,11 +1,14 @@
-# To tee stdout to <outfile>:
+To tee stdout to :
+==================
 
-ls | tee <outfile>
+ls | tee
 
-# To tee stdout and append to <outfile>:
+To tee stdout and append to :
+=============================
 
-ls | tee -a <outfile>
+ls | tee -a
 
-# To tee stdout to the terminal, and also pipe it into another program for further processing:
+To tee stdout to the terminal, and also pipe it into another program for further processing:
+============================================================================================
 
-ls | tee /dev/tty | xargs printf "\033[1;34m%s\033[m\n"
+ls | tee /dev/tty | xargs printf “\\033\[1;34m%s\\033\[m”

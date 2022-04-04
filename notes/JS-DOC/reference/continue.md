@@ -1,15 +1,18 @@
-# continue
+continue
+========
 
 The `continue` terminates execution of the statements in the current iteration of the current or labeled loop, and continues execution of the loop with the next iteration.
 
-## Syntax
+Syntax
+------
 
     continue [label];
 
 `label`  
 Identifier associated with the label of the statement.
 
-## Description
+Description
+-----------
 
 In contrast to the [`break`](break) statement, `continue` does not terminate the execution of the loop entirely: instead,
 
@@ -21,7 +24,8 @@ In contrast to the [`break`](break) statement, `continue` does not terminate the
 
 The `continue` statement can include an optional label that allows the program to jump to the next iteration of a labeled loop statement instead of the current loop. In this case, the `continue` statement needs to be nested within this labeled statement.
 
-## Examples
+Examples
+--------
 
 ### Using continue with while
 
@@ -95,12 +99,11 @@ Output:
     i = 4
     j = 4
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-continue-statement">ECMAScript (ECMA-262) 
-<br/>
-
-<span class="small">The definition of 'Continue statement' in that specification.</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript (ECMA-262)<br />
+</p><span class="small">The definition of ‘Continue statement’ in that specification.</span></td></tr></tbody></table>
 
 `continue`
 
@@ -128,11 +131,11 @@ Output:
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`break`](break)
 -   [label](label)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/continue" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/continue</a>

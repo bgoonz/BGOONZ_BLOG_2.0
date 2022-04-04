@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>charat</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="string.prototype.charat">String.prototype.charAt()</h1>
+<p>The <a href="../string"><code>String</code></a> object’s <code>charAt()</code> method returns a new string consisting of the single UTF-16 code unit located at the specified offset into the string.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>charAt(index)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>index</code><br />
+An integer between <code>0</code> and <code>str.length - 1</code>. If the <code>index</code> cannot be converted to the integer or no <code>index</code> is provided, the default is <code>0</code>, so the first character of <code>str</code> is returned.</p>
+<h3 id="return-value">Return value</h3>
+<p>A string representing the character (exactly one UTF-16 code unit) at the specified <code>index</code>. If <code>index</code> is out of range, <code>charAt()</code> returns an empty string.</p>
+<h2 id="description">Description</h2>
+<p>Characters in a string are indexed from left to right. The index of the first character is <code>0</code>, and the index of the last character—in a string called <code>stringName</code>—is <code>stringName.length - 1</code>. If the <code>index</code> you supply is out of this range, JavaScript returns an empty string.</p>
+<p>If no <code>index</code> is provided to <code>charAt()</code>, the default is <code>0</code>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="displaying-characters-at-different-locations-in-a-string">Displaying characters at different locations in a string</h3>
+<p>The following example displays characters at different locations in the string “<code>Brave new world</code>”:</p>
+<pre><code>var anyString = &#39;Brave new world&#39;;
+console.log(&quot;The character at index 0   is &#39;&quot; + anyString.charAt()   + &quot;&#39;&quot;);
+// No index was provided, used 0 as default
+
+console.log(&quot;The character at index 0   is &#39;&quot; + anyString.charAt(0)   + &quot;&#39;&quot;);
+console.log(&quot;The character at index 1   is &#39;&quot; + anyString.charAt(1)   + &quot;&#39;&quot;);
+console.log(&quot;The character at index 2   is &#39;&quot; + anyString.charAt(2)   + &quot;&#39;&quot;);
+console.log(&quot;The character at index 3   is &#39;&quot; + anyString.charAt(3)   + &quot;&#39;&quot;);
+console.log(&quot;The character at index 4   is &#39;&quot; + anyString.charAt(4)   + &quot;&#39;&quot;);
+console.log(&quot;The character at index 999 is &#39;&quot; + anyString.charAt(999) + &quot;&#39;&quot;);</code></pre>
+<p>These lines display the following:</p>
+<pre><code>The character at index 0   is &#39;B&#39;
+
+The character at index 0   is &#39;B&#39;
+The character at index 1   is &#39;r&#39;
+The character at index 2   is &#39;a&#39;
+The character at index 3   is &#39;v&#39;
+The character at index 4   is &#39;e&#39;
+The character at index 999 is &#39;&#39;</code></pre>
+<h3 id="getting-whole-characters">Getting whole characters</h3>
+<p>The following provides a means of ensuring that going through a string loop always provides a whole character, even if the string contains characters that are not in the Basic Multi-lingual Plane.</p>
+<pre><code>var str = &#39;A \uD87E\uDC04 Z&#39;; // We could also use a non-BMP character directly
+for (var i = 0, chr; i &lt; str.length; i++) {
+  if ((chr = getWholeChar(str, i)) === false) {
+    continue;
+  }
+  // Adapt this line at the top of each loop, passing in the whole string and
+  // the current iteration and returning a variable to represent the
+  // individual character
+
+  console.log(chr);
+}
+
+function getWholeChar(str, i) {
+  var code = str.charCodeAt(i);
+
+  if (Number.isNaN(code)) {
+    return &#39;&#39;; // Position not found
+  }
+  if (code &lt; 0xD800 || code &gt; 0xDFFF) {
+    return str.charAt(i);
+  }
+
+  // High surrogate (could change last hex to 0xDB7F to treat high private
+  // surrogates as single characters)
+  if (0xD800 &lt;= code &amp;&amp; code &lt;= 0xDBFF) {
+    if (str.length &lt;= (i + 1)) {
+      throw &#39;High surrogate without following low surrogate&#39;;
+    }
+    var next = str.charCodeAt(i + 1);
+      if (0xDC00 &gt; next || next &gt; 0xDFFF) {
+        throw &#39;High surrogate without following low surrogate&#39;;
+      }
+      return str.charAt(i) + str.charAt(i + 1);
+  }
+  // Low surrogate (0xDC00 &lt;= code &amp;&amp; code &lt;= 0xDFFF)
+  if (i === 0) {
+    throw &#39;Low surrogate without preceding high surrogate&#39;;
+  }
+  var prev = str.charCodeAt(i - 1);
+
+  // (could change last hex to 0xDB7F to treat high private
+  // surrogates as single characters)
+  if (0xD800 &gt; prev || prev &gt; 0xDBFF) {
+    throw &#39;Low surrogate without preceding high surrogate&#39;;
+  }
+  // We can pass over low surrogates now as the second component
+  // in a pair which we have already processed
+  return false;
+}</code></pre>
+<p>In an ECMAScript 2016 environment which allows destructured assignment, the following is a more succinct and somewhat more flexible alternative in that it does increment for an incrementing variable automatically (if the character warrants it in being a surrogate pair).</p>
+<pre><code>let str = &#39;A\uD87E\uDC04Z&#39;  // We could also use a non-BMP character directly
+for (let i = 0, chr; i &lt; str.length; i++) {
+  [chr, i] = getWholeCharAndI(str, i)
+
+  // Adapt this line at the top of each loop, passing in the whole string and
+  // the current iteration and returning an array with the individual character
+  // and &#39;i&#39; value (only changed if a surrogate pair)
+
+  console.log(chr)
+}
+
+function getWholeCharAndI(str, i) {
+  let code = str.charCodeAt(i)
+
+  if (Number.isNaN(code)) {
+    return &#39;&#39;  // Position not found
+  }
+  if (code &lt; 0xD800 || code &gt; 0xDFFF) {
+    return [str.charAt(i), i]  // Normal character, keeping &#39;i&#39; the same
+  }
+
+  // High surrogate (could change last hex to 0xDB7F to treat high private
+  // surrogates as single characters)
+  if (0xD800 &lt;= code &amp;&amp; code &lt;= 0xDBFF) {
+    if (str.length &lt;= (i + 1)) {
+      throw &#39;High surrogate without following low surrogate&#39;
+    }
+    let next = str.charCodeAt(i + 1)
+      if (0xDC00 &gt; next || next &gt; 0xDFFF) {
+        throw &#39;High surrogate without following low surrogate&#39;
+      }
+      return [str.charAt(i) + str.charAt(i + 1), i + 1]
+  }
+
+  // Low surrogate (0xDC00 &lt;= code &amp;&amp; code &lt;= 0xDFFF)
+  if (i === 0) {
+    throw &#39;Low surrogate without preceding high surrogate&#39;
+  }
+
+  let prev = str.charCodeAt(i - 1)
+
+  // (could change last hex to 0xDB7F to treat high private surrogates
+  // as single characters)
+  if (0xD800 &gt; prev || prev &gt; 0xDBFF) {
+    throw &#39;Low surrogate without preceding high surrogate&#39;
+  }
+
+  // Return the next character instead (and increment)
+  return [str.charAt(i + 1), i + 1]
+}</code></pre>
+<h3 id="fixing-charat-to-support-non-basic-multilingual-plane-bmp-characters">Fixing charAt() to support non-Basic-Multilingual-Plane (BMP) characters</h3>
+<p>While the previous example may be more useful for programs that must support non-BMP characters (since it does not require the caller to know where any non-BMP character might appear), in the event that one <em>does</em> wish, in choosing a character by index, to treat the surrogate pairs within a string as the single characters they represent, one can use the following:</p>
+<pre><code>function fixedCharAt(str, idx) {
+  let ret = &#39;&#39;
+  str += &#39;&#39;
+  let end = str.length
+
+  let surrogatePairs = /[\uD800-\uDBFF][\uDC00-\uDFFF]/g
+  while ((surrogatePairs.exec(str)) != null) {
+    let lastIdx = surrogatePairs.lastIndex
+    if (lastIdx - 2 &lt; idx) {
+      idx++
+    } else {
+      break
+    }
+  }
+
+  if (idx &gt;= end || idx &lt; 0) {
+    return &#39;&#39;
+  }
+
+  ret += str.charAt(idx)
+
+  if (/[\uD800-\uDBFF]/.test(ret) &amp;&amp; /[\uDC00-\uDFFF]/.test(str.charAt(idx + 1))) {
+    // Go one further, since one of the &quot;characters&quot; is part of a surrogate pair
+    ret += str.charAt(idx + 1)
+  }
+  return ret
+}</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-string.prototype.charat">ECMAScript (ECMA-262) <br/></p>
+<span class="small">The definition of ‘String.prototype.charAt’ in that specification.</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>charAt</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="indexof"><code>String.prototype.indexOf()</code></a></li>
+<li><a href="lastindexof"><code>String.prototype.lastIndexOf()</code></a></li>
+<li><a href="charcodeat"><code>String.prototype.charCodeAt()</code></a></li>
+<li><a href="codepointat"><code>String.prototype.codePointAt()</code></a></li>
+<li><a href="split"><code>String.prototype.split()</code></a></li>
+<li><a href="fromcodepoint"><code>String.fromCodePoint()</code></a></li>
+<li><a href="https://mathiasbynens.be/notes/javascript-unicode">JavaScript has a Unicode problem - Mathias Bynens</a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charAt" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charAt</a></p>
+</body>
+</html>

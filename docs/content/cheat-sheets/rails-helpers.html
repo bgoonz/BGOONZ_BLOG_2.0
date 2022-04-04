@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Helpers</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Helpers</h1>
+</header>
+<h3 id="date">Date</h3>
+<pre><code>distance_of_time_in_words(Time.now, project.end_date) #=&gt; 3 hours
+distance_of_time_in_words_to_now(project.end_date)    #=&gt; 3 hours
+
+time_ago_in_words 3.minutes.ago #=&gt; &quot;3 minutes&quot;</code></pre>
+<h3 id="numbers">Numbers</h3>
+<pre><code>number_to_currency 20.33
+number_to_currency 20.33, precision: 0
+number_with_precision 3.14159, precision: 2
+number_to_percentage 32       #=&gt; &quot;32%&quot;
+number_with_delimiter 2048    #=&gt; &quot;2,048&quot;
+number_to_human 12000000      #=&gt; &quot;12 million&quot;
+number_to_human_size 12000000 #=&gt; &quot;12 MB&quot;
+number_to_phone &quot;5551234&quot;     #=&gt; &quot;555-1234&quot;</code></pre>
+<h3 id="cache">Cache</h3>
+<pre><code>&lt;% cache project do %&gt;
+&lt;% cache [project, current_user] do %&gt;
+
+&lt;% cache_if admin?, project do %&gt;
+&lt;% cache_unless admin?, project do %&gt;</code></pre>
+<h3 id="tags">Tags</h3>
+<pre><code>tag(&quot;br&quot;)
+tag(&quot;img&quot;, src: &quot;image.jpg&quot;)
+content_tag(:p, &quot;Hello&quot;)</code></pre>
+<h3 id="time-select">Time select</h3>
+<pre><code># Creates a time select tag that, when POSTed, will be stored in the article
+# variable in the sunrise attribute.
+time_select &quot;article&quot;, &quot;start_time&quot;
+
+# All options are optional
+time_select &quot;article&quot;, &quot;start_time&quot;, \
+  include_seconds: true,
+  minute_step: 15,
+  prompt: true,
+  prompt: { hour: &quot;Choose hr&quot;, minute: &quot;Choose min&quot;, second: &quot;Choose sec&quot; },
+  ampm: true
+
+# For dates (all options are optional)
+date_select &quot;article&quot;, &quot;written_on&quot;, \
+  start_year: 1995,
+  use_month_numbers: true,
+  discard_day: true,
+  include_blank: true,
+  order: [:day, :month, :year],
+  default: 3.days.from_now,
+  default: { day: 20 },
+  prompt: { day: &#39;Select day&#39;, month: &#39;Select month&#39;, year: &#39;Select year&#39; }</code></pre>
+<h3 id="time-tag">Time tag</h3>
+<pre><code>time_tag Date.today
+#=&gt; &#39;&lt;time datetime=&quot;2010-11-04&quot;&gt;November 04, 2010&lt;%rtime&gt;&#39;
+
+time_tag Time.now
+#=&gt; &#39;&lt;time datetime=&quot;2010-11-04T17:55:45+01:00&quot;&gt;November 04, 2010 17:55&lt;/time&gt;&#39;
+
+time_tag Date.yesterday, &#39;Yesterday&#39;
+#=&gt; &#39;&lt;time datetime=&quot;2010-11-03&quot;&gt;Yesterday&lt;%rtime&gt;&#39;
+
+time_tag Date.today, pubdate: true
+#=&gt; &#39;&lt;time datetime=&quot;2010-11-04&quot; pubdate=&quot;pubdate&quot;&gt;November 04, 2010&lt;/time&gt;&#39;
+
+time_tag Date.today, \
+  format: :short_date # (en.time.formats.short_date)</code></pre>
+<h3 id="files">Files</h3>
+<pre><code>= form_for @post, multipart: true do |f|
+  = f.file_field :picture</code></pre>
+<h3 id="i18n">i18n</h3>
+<pre><code>t(&#39;folders&#39;)
+t(&#39;folders.save&#39;)
+
+l(Time.now)
+
+t(&#39;x_files&#39;, count: files.count)
+# files:
+#    one: &#39;one file&#39;
+#    other: &#39;%{count} files&#39;</code></pre>
+<h3 id="references">References</h3>
+<pre><code>* http://api.rubyonrails.org/classes/ActionView/Helpers.html</code></pre>
+</body>
+</html>

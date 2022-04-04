@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>nan</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="nan">NaN</h1>
+<p>The global <code>NaN</code> property is a value representing Not-A-Number.</p>
+<p>Property attributes of <code>NaN</code></p>
+<p>Writable</p>
+<p>no</p>
+<p>Enumerable</p>
+<p>no</p>
+<p>Configurable</p>
+<p>no</p>
+<h2 id="description">Description</h2>
+<p><code>NaN</code> is a property of the <em>global object</em>. In other words, it is a variable in global scope.</p>
+<p>The initial value of <code>NaN</code> is Not-A-Number — the same as the value of <a href="number/nan"><code>Number.NaN</code></a>. In modern browsers, <code>NaN</code> is a non-configurable, non-writable property. Even when this is not the case, avoid overriding it. It is rather rare to use <code>NaN</code> in a program.</p>
+<p>There are five different types of operations that return <code>NaN</code>:</p>
+<ul>
+<li>Number cannot be parsed (e.g. <code>parseInt("blabla")</code> or <code>Number(undefined)</code>)</li>
+<li>Math operation where the result is not a real number (e.g. <code>Math.sqrt(-1)</code>)</li>
+<li>Operand of an argument is <code>NaN</code> (e.g. <code>7 ** NaN</code>)</li>
+<li>Indeterminate form (e.g. <code>0 * Infinity</code>, or <code>undefined + undefined</code>)</li>
+<li>Any operation that involves a string and is not an addition operation (e.g. <code>"foo" / 3</code>)</li>
+</ul>
+<h2 id="examples">Examples</h2>
+<h3 id="testing-against-nan">Testing against NaN</h3>
+<p><code>NaN</code> compares unequal (via <code>==</code>, <code>!=</code>, <code>===</code>, and <code>!==</code>) to any other value – including to another <code>NaN</code> value. Use <a href="number/isnan"><code>Number.isNaN()</code></a> or <a href="isnan"><code>isNaN()</code></a> to most clearly determine whether a value is <code>NaN</code>. Or perform a self-comparison: <code>NaN</code>, and only <code>NaN</code>, will compare unequal to itself.</p>
+<pre><code>NaN === NaN;        // false
+Number.NaN === NaN; // false
+isNaN(NaN);         // true
+isNaN(Number.NaN);  // true
+Number.isNaN(NaN);  // true
+
+function valueIsNaN(v) { return v !== v; }
+valueIsNaN(1);          // false
+valueIsNaN(NaN);        // true
+valueIsNaN(Number.NaN); // true</code></pre>
+<p>However, do note the difference between <code>isNaN()</code> and <code>Number.isNaN()</code>: the former will return <code>true</code> if the value is currently <code>NaN</code>, or if it is going to be <code>NaN</code> after it is coerced to a number, while the latter will return <code>true</code> only if the value is currently <code>NaN</code>:</p>
+<pre><code>isNaN(&#39;hello world&#39;);        // true
+Number.isNaN(&#39;hello world&#39;); // false</code></pre>
+<p>Additionally, some array methods cannot find <code>NaN</code>, while others can.</p>
+<pre><code>let arr = [2, 4, NaN, 12];
+arr.indexOf(NaN);                      // -1 (false)
+arr.includes(NaN);                     // true
+arr.findIndex(n =&gt; Number.isNaN(n));   // 2</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-value-properties-of-the-global-object-nan">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-value-properties-of-the-global-object-nan</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>NaN</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>4</p>
+<p>4</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="number/nan"><code>Number.NaN</code></a></li>
+<li><a href="number/isnan"><code>Number.isNaN()</code></a></li>
+<li><a href="isnan"><code>isNaN()</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN</a></p>
+</body>
+</html>

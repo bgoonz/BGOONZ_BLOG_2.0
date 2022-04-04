@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>species</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="symbol.species">Symbol.species</h1>
+<p>The well-known symbol <code>Symbol.species</code> specifies a function-valued property that the constructor function uses to create derived objects.</p>
+<h2 id="description">Description</h2>
+<p>The <code>species</code> accessor property allows subclasses to override the default constructor for objects.</p>
+<p>Property attributes of <code>Symbol.species</code></p>
+<p>Writable</p>
+<p>no</p>
+<p>Enumerable</p>
+<p>no</p>
+<p>Configurable</p>
+<p>no</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-species">Using species</h3>
+<p>You might want to return <a href="../array"><code>Array</code></a> objects in your derived array class <code>MyArray</code>. For example, when using methods such as <a href="../array/map"><code>map()</code></a> that return the default constructor, you want these methods to return a parent <code>Array</code> object, instead of the <code>MyArray</code> object. The <code>species</code> symbol lets you do this:</p>
+<pre><code>class MyArray extends Array {
+  // Overwrite species to the parent Array constructor
+  static get [Symbol.species]() { return Array; }
+}
+let a = new MyArray(1,2,3);
+let mapped = a.map(x =&gt; x * x);
+
+console.log(mapped instanceof MyArray); // false
+console.log(mapped instanceof Array);   // true</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-symbol.species">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-symbol.species</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>species</code></p>
+<p>51</p>
+<p>13</p>
+<p>41</p>
+<p>No</p>
+<p>38</p>
+<p>10</p>
+<p>51</p>
+<p>51</p>
+<p>41</p>
+<p>41</p>
+<p>10</p>
+<p>5.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../map/@@species"><code>Map[@@species]</code></a></li>
+<li><a href="../set/@@species"><code>Set[@@species]</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/species" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/species</a></p>
+</body>
+</html>

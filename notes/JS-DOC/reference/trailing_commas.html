@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>trailing_commas</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="trailing-commas">Trailing commas</h1>
+<p><strong>Trailing commas</strong> (sometimes called “final commas”) can be useful when adding new elements, parameters, or properties to JavaScript code. If you want to add a new property, you can add a new line without modifying the previously last line if that line already uses a trailing comma. This makes version-control diffs cleaner and editing code might be less troublesome.</p>
+<p>JavaScript has allowed trailing commas in array literals since the beginning, and later added them to object literals (ECMAScript 5) and most recently (ECMAScript 2017) to function parameters.</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Glossary/JSON">JSON</a>, however, disallows trailing commas.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>,</code></pre>
+<h2 id="examples">Examples</h2>
+<h3 id="trailing-commas-in-literals">Trailing commas in literals</h3>
+<h4 id="arrays">Arrays</h4>
+<p>JavaScript ignores trailing commas in arrays:</p>
+<pre><code>var arr = [
+  1,
+  2,
+  3,
+];
+
+arr; // [1, 2, 3]
+arr.length; // 3</code></pre>
+<p>If more than one trailing comma is used, an elision (or hole) is produced. An array with holes is called <em>sparse</em> (a <em>dense</em> array has no holes). When iterating arrays for example with <a href="global_objects/array/foreach"><code>Array.prototype.forEach()</code></a> or <a href="global_objects/array/map"><code>Array.prototype.map()</code></a>, array holes are skipped.</p>
+<pre><code>var arr = [1, 2, 3,,,];
+arr.length; // 5</code></pre>
+<h4 id="objects">Objects</h4>
+<p>Starting with ECMAScript 5, trailing commas in object literals are legal as well:</p>
+<pre><code>var object = {
+  foo: &quot;bar&quot;,
+  baz: &quot;qwerty&quot;,
+  age: 42,
+};</code></pre>
+<h3 id="trailing-commas-in-functions">Trailing commas in functions</h3>
+<p>ECMAScript 2017 allows trailing commas in function parameter lists.</p>
+<h4 id="parameter-definitions">Parameter definitions</h4>
+<p>The following function definition pairs are legal and equivalent to each other. Trailing commas don’t affect the <code>length</code> property of function declarations or their <code>arguments</code> object.</p>
+<pre><code>function f(p) {}
+function f(p,) {}
+
+(p) =&gt; {};
+(p,) =&gt; {};</code></pre>
+<p>The trailing comma also works with <a href="functions/method_definitions">method definitions</a> for classes or objects:</p>
+<pre><code>class C {
+  one(a,) {}
+  two(a, b,) {}
+}
+
+var obj = {
+  one(a,) {},
+  two(a, b,) {},
+};</code></pre>
+<h4 id="function-calls">Function calls</h4>
+<p>The following function invocation pairs are legal and equivalent to each other.</p>
+<pre><code>f(p);
+f(p,);
+
+Math.max(10, 20);
+Math.max(10, 20,);</code></pre>
+<h4 id="illegal-trailing-commas">Illegal trailing commas</h4>
+<p>Function parameter definitions or function invocations only containing a comma will throw a <a href="global_objects/syntaxerror"><code>SyntaxError</code></a>. Furthermore, when using a <a href="functions/rest_parameters">rest parameters</a>, trailing commas are not allowed:</p>
+<pre><code>function f(,) {} // SyntaxError: missing formal parameter
+(,) =&gt; {};       // SyntaxError: expected expression, got &#39;,&#39;
+f(,)             // SyntaxError: expected expression, got &#39;,&#39;
+
+function f(...p,) {} // SyntaxError: parameter after rest parameter
+(...p,) =&gt; {}        // SyntaxError: expected closing parenthesis, got &#39;,&#39;</code></pre>
+<h3 id="trailing-commas-in-destructuring">Trailing commas in destructuring</h3>
+<p>A trailing comma is also allowed on the left-hand side when using <a href="operators/destructuring_assignment">destructuring assignment</a>:</p>
+<pre><code>// array destructuring with trailing comma
+[a, b,] = [1, 2];
+
+// object destructuring with trailing comma
+var o = {
+  p: 42,
+  q: true,
+};
+var {p, q,} = o;</code></pre>
+<p>Again, when using a rest element, a <a href="global_objects/syntaxerror"><code>SyntaxError</code></a> will be thrown:</p>
+<pre><code>var [a, ...b,] = [1, 2, 3];
+// SyntaxError: rest element may not have a trailing comma</code></pre>
+<h3 id="trailing-commas-in-json">Trailing commas in JSON</h3>
+<p>Trailing commas in objects were only introduced in ECMAScript 5. As JSON is based on JavaScript’s syntax prior to ES5, <strong>trailing commas are not allowed in JSON</strong>.</p>
+<p>Both lines will throw a <code>SyntaxError</code>:</p>
+<pre><code>JSON.parse(&#39;[1, 2, 3, 4, ]&#39;);
+JSON.parse(&#39;{&quot;foo&quot; : 1, }&#39;);
+// SyntaxError JSON.parse: unexpected character
+// at line 1 column 14 of the JSON data</code></pre>
+<p>Omit the trailing commas to parse the JSON correctly:</p>
+<pre><code>JSON.parse(&#39;[1, 2, 3, 4 ]&#39;);
+JSON.parse(&#39;{&quot;foo&quot; : 1 }&#39;);</code></pre>
+<h2 id="specifications">Specifications</h2>
+<p><strong>No specification found</strong></p>
+<p>No specification data found for <code>javascript.grammar.trailing_commas</code>.<br />
+<a href="#on-github">Check for problems with this page</a> or contribute a missing <code>spec_url</code> to <a href="https://github.com/mdn/browser-compat-data">mdn/browser-compat-data</a>. Also make sure the specification is included in <a href="https://github.com/w3c/browser-specs">w3c/browser-specs</a>.</p>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>Trailing_commas</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>9</p>
+<p>9.5</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>trailing_commas_in_functions</code></p>
+<p>58</p>
+<p>14</p>
+<p>52</p>
+<p>No</p>
+<p>45</p>
+<p>10</p>
+<p>58</p>
+<p>58</p>
+<p>52</p>
+<p>43</p>
+<p>10</p>
+<p>7.0</p>
+<p><code>trailing_commas_in_object_literals</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>9</p>
+<p>9.5</p>
+<p>3</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li>Initial ECMAScript proposal: <a href="https://github.com/tc39/proposal-trailing-function-commas">trailing function commas</a> by Jeff Morrison</li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Trailing_commas" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Trailing_commas</a></p>
+</body>
+</html>

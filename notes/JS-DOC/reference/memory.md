@@ -1,25 +1,30 @@
-# WebAssembly.Memory
+WebAssembly.Memory
+==================
 
 The `WebAssembly.Memory` object is a resizable [`ArrayBuffer`](../arraybuffer) or `SharedArrayBuffer` that holds the raw bytes of memory accessed by a WebAssembly `Instance`.
 
 A memory created by JavaScript or in WebAssembly code will be accessible and mutable from both JavaScript and WebAssembly.
 
-## Constructor
+Constructor
+-----------
 
 [`WebAssembly.Memory()`](memory/memory)  
 Creates a new `Memory` object.
 
-## Instance properties
+Instance properties
+-------------------
 
 [`Memory.prototype.buffer`](memory/buffer)  
 An accessor property that returns the buffer contained in the memory.
 
-## Instance methods
+Instance methods
+----------------
 
 [`Memory.prototype.grow()`](memory/grow)  
 Increases the size of the memory instance by a specified number of WebAssembly pages (each one is 64KB in size).
 
-## Examples
+Examples
+--------
 
 ### Creating a new Memory object
 
@@ -49,18 +54,17 @@ The second way to get a WebAssembly.Memory object is to have it exported by a We
 
 ### Creating a shared memory
 
-By default, WebAssembly memories are unshared. You can create a [shared memory](https://developer.mozilla.org/en-US/docs/WebAssembly/Understanding_the_text_format#shared_memories) by passing `shared: true` in the constructor's initialization object:
+By default, WebAssembly memories are unshared. You can create a [shared memory](https://developer.mozilla.org/en-US/docs/WebAssembly/Understanding_the_text_format#shared_memories) by passing `shared: true` in the constructor’s initialization object:
 
     let memory = new WebAssembly.Memory({initial:10, maximum:100, shared: true});
 
-This memory's `buffer` property will return a `SharedArrayBuffer`.
+This memory’s `buffer` property will return a `SharedArrayBuffer`.
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#memories">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
-<br/>
-
-<span class="small">#memories</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>WebAssembly JavaScript Interface (WebAssembly JavaScript Interface)<br />
+</p><span class="small">#memories</span></td></tr></tbody></table>
 
 `Memory`
 
@@ -182,12 +186,12 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 
 7.0
 
-## See also
+See also
+--------
 
 -   [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
 -   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Memory" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Memory</a>

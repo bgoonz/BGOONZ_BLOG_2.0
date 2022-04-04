@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="unique-paths-problem">Unique Paths Problem</h1>
+<p>A robot is located at the top-left corner of a <code>m x n</code> grid (marked ‘Start’ in the diagram below).</p>
+<p>The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked ‘Finish’ in the diagram below).</p>
+<p>How many possible unique paths are there?</p>
+<figure>
+<img src="https://leetcode.com/static/images/problemset/robot_maze.png" alt="Unique Paths" /><figcaption>Unique Paths</figcaption>
+</figure>
+<h2 id="examples">Examples</h2>
+<p><strong>Example #1</strong></p>
+<pre><code>Input: m = 3, n = 2
+Output: 3
+Explanation:
+From the top-left corner, there are a total of 3 ways to reach the bottom-right corner:
+1. Right -&gt; Right -&gt; Down
+2. Right -&gt; Down -&gt; Right
+3. Down -&gt; Right -&gt; Right</code></pre>
+<p><strong>Example #2</strong></p>
+<pre><code>Input: m = 7, n = 3
+Output: 28</code></pre>
+<h2 id="algorithms">Algorithms</h2>
+<h3 id="backtracking">Backtracking</h3>
+<p>First thought that might came to mind is that we need to build a decision tree where <code>D</code> means moving down and <code>R</code> means moving right. For example in case of boars <code>width = 3</code> and <code>height = 2</code> we will have the following decision tree:</p>
+<pre><code>                START
+                /   \
+               D     R
+             /     /   \
+           R      D      R
+         /      /         \
+        R      R            D
+
+       END    END          END</code></pre>
+<p>We can see three unique branches here that is the answer to our problem.</p>
+<p><strong>Time Complexity</strong>: <code>O(2 ^ n)</code> - roughly in worst case with square board of size <code>n</code>.</p>
+<p><strong>Auxiliary Space Complexity</strong>: <code>O(m + n)</code> - since we need to store current path with positions.</p>
+<h3 id="dynamic-programming">Dynamic Programming</h3>
+<p>Let’s treat <code>BOARD[i][j]</code> as our sub-problem.</p>
+<p>Since we have restriction of moving only to the right and down we might say that number of unique paths to the current cell is a sum of numbers of unique paths to the cell above the current one and to the cell to the left of current one.</p>
+<pre><code>BOARD[i][j] = BOARD[i - 1][j] + BOARD[i][j - 1]; // since we can only move down or right.</code></pre>
+<p>Base cases are:</p>
+<pre><code>BOARD[0][any] = 1; // only one way to reach any top slot.
+BOARD[any][0] = 1; // only one way to reach any slot in the leftmost column.</code></pre>
+<p>For the board <code>3 x 2</code> our dynamic programming matrix will look like:</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;"></th>
+<th style="text-align: center;">0</th>
+<th style="text-align: center;">1</th>
+<th style="text-align: center;">1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>1</strong></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">3</td>
+</tr>
+</tbody>
+</table>
+<p>Each cell contains the number of unique paths to it. We need the bottom right one with number <code>3</code>.</p>
+<p><strong>Time Complexity</strong>: <code>O(m * n)</code> - since we’re going through each cell of the DP matrix.</p>
+<p><strong>Auxiliary Space Complexity</strong>: <code>O(m * n)</code> - since we need to have DP matrix.</p>
+<h3 id="pascals-triangle-based">Pascal’s Triangle Based</h3>
+<p>This question is actually another form of Pascal Triangle.</p>
+<p>The corner of this rectangle is at <code>m + n - 2</code> line, and at <code>min(m, n) - 1</code> position of the Pascal’s Triangle.</p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://leetcode.com/problems/unique-paths/description/">LeetCode</a></li>
+</ul>
+</body>
+</html>

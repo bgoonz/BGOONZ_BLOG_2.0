@@ -1,8 +1,7 @@
-# authentication-strategies.js
+authentication-strategies.js
+============================
 
 > GitHub API authentication strategies for Browsers, Node.js, and Deno
-
-<!-- toc -->
 
 -   [authentication-strategies.js](#authentication-strategiesjs)
     -   [Official Authentication Strategies](#official-authentication-strategies)
@@ -24,9 +23,8 @@
     -   [Create your own Octokit authentication strategy module](#create-your-own-octokit-authentication-strategy-module)
     -   [License](#license)
 
-<!-- tocstop -->
-
-## Official Authentication Strategies
+Official Authentication Strategies
+----------------------------------
 
 ### Personal Access Token authentication
 
@@ -36,39 +34,35 @@ The simplest authentication strategy requires a user to create a personal access
 
 `@octokit/auth-token` is the default authentication strategy built into [`@octokit/core`](https://github.com/octokit/core.js/#authentication)
 
-```js
-const auth = createTokenAuth('1234567890abcdef1234567890abcdef12345678');
-const { token } = await auth();
-```
+    const auth = createTokenAuth('1234567890abcdef1234567890abcdef12345678');
+    const { token } = await auth();
 
 ### GitHub App or installation authentication
 
-**Module**: [`@octokit/auth-app`](https://github.com/octokit/auth-app.js#readme)
-**SDK**: [`@octokit/app`](https://github.com/octokit/app.js#readme)
+**Module**: [`@octokit/auth-app`](https://github.com/octokit/auth-app.js#readme) **SDK**: [`@octokit/app`](https://github.com/octokit/app.js#readme)
 
 A GitHub app has four different means of authentication.
 
-1. **It can authenticate as itself** using a JWT (JSON Web Token) derived from the app ID and a private key. JWT authentication is required to iterate through installations and repositories, use the marketplace APIs, or to create installation access tokens.
-2. **It can authenticate as an installation** using an installation access tokens. GitHub apps can be actors like GitHub users. They can create issues, manage teams, and much more. Installing a GitHub app grants access to a GitHub user account or organization, and either all or selected repositories. The installation inherits the app's permissions at this point, they will not be altered if the app's permissions change until the user/organization account owner accepts the new permissions. Installation access tokens expire after 1h, and they can be created with a subset of the installations permissions and accessible repositories.
-3. **It can authenticate as OAuth App** using Basic Authentication derived from the client ID and a client secret. Basic authentication is required to create, reset, refresh, scope, and delete OAuth user authentication tokens. See also [OAuth App authentication](#oauth-app-authentication)
-4. **It can authenticate as user** using an OAuth user-to-server access token. A user-to-server token authenticates as both a user and the app/installation. It can be created using the [OAuth web flow](https://developer.github.com/apps/building-oauth-apps/authorizing-oauth-apps/#web-application-flow) or [OAuth Device flow](https://docs.github.com/en/developers/apps/authorizing-oauth-apps#device-flow). See also [OAuth user authentication](#oauth-user-authentication)
+1.  **It can authenticate as itself** using a JWT (JSON Web Token) derived from the app ID and a private key. JWT authentication is required to iterate through installations and repositories, use the marketplace APIs, or to create installation access tokens.
+2.  **It can authenticate as an installation** using an installation access tokens. GitHub apps can be actors like GitHub users. They can create issues, manage teams, and much more. Installing a GitHub app grants access to a GitHub user account or organization, and either all or selected repositories. The installation inherits the app’s permissions at this point, they will not be altered if the app’s permissions change until the user/organization account owner accepts the new permissions. Installation access tokens expire after 1h, and they can be created with a subset of the installations permissions and accessible repositories.
+3.  **It can authenticate as OAuth App** using Basic Authentication derived from the client ID and a client secret. Basic authentication is required to create, reset, refresh, scope, and delete OAuth user authentication tokens. See also [OAuth App authentication](#oauth-app-authentication)
+4.  **It can authenticate as user** using an OAuth user-to-server access token. A user-to-server token authenticates as both a user and the app/installation. It can be created using the [OAuth web flow](https://developer.github.com/apps/building-oauth-apps/authorizing-oauth-apps/#web-application-flow) or [OAuth Device flow](https://docs.github.com/en/developers/apps/authorizing-oauth-apps#device-flow). See also [OAuth user authentication](#oauth-user-authentication)
 
 ### OAuth app authentication
 
-**Module**: [`@octokit/auth-oauth-app`](https://github.com/octokit/auth-oauth-app.js#readme)
-**SDK**: [`@octokit/oauth-app`](https://github.com/octokit/oauth-app.js#readme)
+**Module**: [`@octokit/auth-oauth-app`](https://github.com/octokit/auth-oauth-app.js#readme) **SDK**: [`@octokit/oauth-app`](https://github.com/octokit/oauth-app.js#readme)
 
 An OAuth app has two different means of authentication.
 
-3. **It can authenticate as OAuth App** using Basic Authentication derived from the client ID and a client secret. Basic authentication is required to create, reset, refresh, scope, and delete OAuth user authentication tokens.
-4. **It can authenticate as user** using an OAuth user-to-server access token. A user-to-server token authenticates as both a user and the app/installation. It can be created using the [OAuth web flow](https://developer.github.com/apps/building-oauth-apps/authorizing-oauth-apps/#web-application-flow) or [OAuth Device flow](https://docs.github.com/en/developers/apps/authorizing-oauth-apps#device-flow). See also [OAuth user authentication](#oauth-user-authentication)
+1.  **It can authenticate as OAuth App** using Basic Authentication derived from the client ID and a client secret. Basic authentication is required to create, reset, refresh, scope, and delete OAuth user authentication tokens.
+2.  **It can authenticate as user** using an OAuth user-to-server access token. A user-to-server token authenticates as both a user and the app/installation. It can be created using the [OAuth web flow](https://developer.github.com/apps/building-oauth-apps/authorizing-oauth-apps/#web-application-flow) or [OAuth Device flow](https://docs.github.com/en/developers/apps/authorizing-oauth-apps#device-flow). See also [OAuth user authentication](#oauth-user-authentication)
 
 There are differences between [OAuth Apps](https://docs.github.com/en/developers/apps/building-oauth-apps) and the OAuth features from [GitHub Apps](https://docs.github.com/en/developers/apps/building-github-apps):
 
 -   OAuth apps support scopes. Different scopes can be set each time a user-access token is created. They cannot be limited globally for the OAuth app.
--   GitHub apps have permissions. The are set when the app is registered. The app cannot access any repository until it is installed by a user. The installation inherits the app's permissions at the time of the installation. Permission changes need to be approved by the user.
+-   GitHub apps have permissions. The are set when the app is registered. The app cannot access any repository until it is installed by a user. The installation inherits the app’s permissions at the time of the installation. Permission changes need to be approved by the user.
 -   OAuth apps create OAuth user access tokens which have work the same on all repositories
--   GitHub apps create OAuth user-to-server access tokens which inher both the app's user permissions as well as each installation's repository and user/organization permissions.
+-   GitHub apps create OAuth user-to-server access tokens which inher both the app’s user permissions as well as each installation’s repository and user/organization permissions.
 -   GitHub apps can enable expiration for its user-to-server access tokens. OAuth apps do not have such a feature.
 
 ### OAuth user authentication
@@ -79,11 +73,11 @@ OAuth user authentication be created by both OAuth Apps and GitHub Apps. OAuth A
 
 There are differences between [OAuth Apps](https://docs.github.com/en/developers/apps/building-oauth-apps) and the OAuth features from [GitHub Apps](https://docs.github.com/en/developers/apps/building-github-apps), see the list in [OAuth app authentication](#oauth-app-authentication).
 
-**Important:** `@octokit/auth-oauth-user` requires your app's `client_secret`, which must not be exposed to users. If you are looking for an OAuth user authentication strategy that can be used on a client (browser, IoT, CLI), see [OAUth user client authentication](#oauth-user-client-authentication) or [Device authentication](#device-authentication)
+**Important:** `@octokit/auth-oauth-user` requires your app’s `client_secret`, which must not be exposed to users. If you are looking for an OAuth user authentication strategy that can be used on a client (browser, IoT, CLI), see [OAUth user client authentication](#oauth-user-client-authentication) or [Device authentication](#device-authentication)
 
 ### OAuth user client authentication
 
-🚧 TBD, see https://github.com/octokit/auth-oauth-user-client.js#readme
+🚧 TBD, see https://github.com/octokit/auth-oauth-user-client.js\#readme
 
 ### Device authentication
 
@@ -97,14 +91,14 @@ There are differences between [OAuth Apps](https://docs.github.com/en/developers
 
 ### GitHub Action authentication
 
-**Module**: [`@octokit/auth-action`](https://github.com/octokit/auth-action.js#readme)
-**SDK**: [`@octokit/action`](https://github.com/octokit/action.js#readme)
+**Module**: [`@octokit/auth-action`](https://github.com/octokit/auth-action.js#readme) **SDK**: [`@octokit/action`](https://github.com/octokit/action.js#readme)
 
 GitHub actions provide a [`secrets.GITHUB_TOKEN`](https://docs.github.com/en/actions/reference/environment-variables#default-environment-variables) variable which can be used to authenticate scripts run as part of a GitHub Action workflow.
 
 Technically, `secrets.GITHUB_TOKEN` is an installation access token that has all repository permissions but only access to the current repositories. It expires after 6h or when the current workflow step is completed. It cannot be renewed as the app ID and private key credentials are not exposed.
 
-## Other Strategies
+Other Strategies
+----------------
 
 ### unauthenticated
 
@@ -116,7 +110,7 @@ This authentication strategy is useful to provide a helpful error message when n
 
 **Module**: [`@octokit/auth-callback`](https://github.com/octokit/auth-callback.js#readme)
 
-This authentication strategy accepts a single `{ callback }` startegy option which returns either a falsy value or the string for a valid token. It's great for single-page web applications where a user can sign in/sign out without the need to re-instantiate a new `octokit` instance each time.
+This authentication strategy accepts a single `{ callback }` startegy option which returns either a falsy value or the string for a valid token. It’s great for single-page web applications where a user can sign in/sign out without the need to re-instantiate a new `octokit` instance each time.
 
 ### .netrc
 
@@ -126,41 +120,36 @@ Similar to [token authentication](#personal-access-token-authentication), but re
 
 Example
 
-```js
-// expects a personal access token to be set as `login` in the `~/.netrc` file for `api.github.com`
-const { createNetrcAuth } = require('octokit-netrc-auth');
-const auth = createNetrcAuth();
-const { token } = await auth();
-```
+    // expects a personal access token to be set as `login` in the `~/.netrc` file for `api.github.com`
+    const { createNetrcAuth } = require('octokit-netrc-auth');
+    const auth = createNetrcAuth();
+    const { token } = await auth();
 
 See [octokit-auth-netrc](https://github.com/travi/octokit-auth-netrc) for more details.
 
-## How authentication strategies work
+How authentication strategies work
+----------------------------------
 
 All authentication strategies implement the same interface
 
-```js
-const auth = authenticationStrategy(strategyOptions);
-const authentication = await auth(authOptions);
-auth.hook(request, route, parameters);
-```
+    const auth = authenticationStrategy(strategyOptions);
+    const authentication = await auth(authOptions);
+    auth.hook(request, route, parameters);
 
 It can be used with an `Octokit` constructor by setting the `authStrategy` and `auth` constructor options. `auth.hook` is automatically applied to all requests sent by the `octokit` instance.
 
-```js
-const octokit = new Octokit({
-    authStrategy: authenticationStrategy,
-    auth: strategyOptions
-});
+    const octokit = new Octokit({
+        authStrategy: authenticationStrategy,
+        auth: strategyOptions
+    });
 
-const authentication = await octokit.auth(authOptions);
-```
+    const authentication = await octokit.auth(authOptions);
 
 This interface an auth strategy to hook into a request lifecycle, implement request retries if necessary or transparent on-demand authentication creation.
 
 For example, when implementing a GitHub App which acts on webhook events, a pre-authenticated `octokit` instance should be provided to the event handler. But an installation access token should not be created until a request is sent in that event handler.
 
-In other cases, tokens might be invalid due to out-of-sync time between GitHub's API servers and yours. The time difference can be detected and corrected with an additional request.
+In other cases, tokens might be invalid due to out-of-sync time between GitHub’s API servers and yours. The time difference can be detected and corrected with an additional request.
 
 ### `authenticationStrategy(strategyOptions)`
 
@@ -174,57 +163,51 @@ The `auth` interface is an asynchronous function which accepts `authOptions` and
 
 In some cases, `auth(authOptions)` needs to resolve with another `auth` interface, or `octokit.auth(authOptions)` with another `octokit` instance. For example, when using the GitHub App authentication strategy ([`@octokit/auth-app`](https://github.com/octokit/auth-app.js/#readme)), the auth interface has an internal state that caches the installation access tokens it created for reusability
 
-```js
-const appOctokit = new Octokit({
-  authStrategy: createAppAuth
-  auth: { appId, privateKey }
-})
+    const appOctokit = new Octokit({
+      authStrategy: createAppAuth
+      auth: { appId, privateKey }
+    })
 
-const installationAuthentication = appOctokit.auth({
-  type: "installation",
-  installationId
-})
-```
+    const installationAuthentication = appOctokit.auth({
+      type: "installation",
+      installationId
+    })
 
 This internal state would get lost if a separate `octokit` instance would be created for an installation
 
-```js
-const appOctokit = new Octokit({
-    authStrategy: createAppAuth,
-    auth: { appId, privateKey }
-});
+    const appOctokit = new Octokit({
+        authStrategy: createAppAuth,
+        auth: { appId, privateKey }
+    });
 
-const installationOctokit = new Octokit({
-    authStrategy: createAppAuth,
-    auth: { appId, privateKey, installationId }
-});
-```
+    const installationOctokit = new Octokit({
+        authStrategy: createAppAuth,
+        auth: { appId, privateKey, installationId }
+    });
 
 Instead, `installationOctokit` can be created from `appOctokit.auth`, and both can share the cached installation access tokens
 
-```js
-const appOctokit = new Octokit({
-    authStrategy: createAppAuth,
-    auth: { appId, privateKey }
-});
+    const appOctokit = new Octokit({
+        authStrategy: createAppAuth,
+        auth: { appId, privateKey }
+    });
 
-const installationOctokit = appOctokit.auth({
-    type: 'installation',
-    installationId,
-    factory: ({ octokitOptions, ...auth }) => new Octokit({ ...octokitOptions, auth })
-});
-```
+    const installationOctokit = appOctokit.auth({
+        type: 'installation',
+        installationId,
+        factory: ({ octokitOptions, ...auth }) => new Octokit({ ...octokitOptions, auth })
+    });
 
-## Create your own Octokit authentication strategy module
+Create your own Octokit authentication strategy module
+------------------------------------------------------
 
 Use [`create-octokit-project`](https://github.com/octokit/create-octokit-project.js/), follow instructions, and send a pull request to add your own strategy to this README
 
-```
-npm init octokit-project
-```
+    npm init octokit-project
 
 ![Screenshot of a terminall running npm init octokit-project](assets/create-octokit-project.png)
 
-## License
+License
+-------
 
 MIT

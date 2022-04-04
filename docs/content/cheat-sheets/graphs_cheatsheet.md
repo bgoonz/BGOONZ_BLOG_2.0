@@ -1,14 +1,13 @@
-# graphs_cheatsheet
+graphs\_cheatsheet
+==================
 
-```
-class TreeNode {
-  constructor(val) {
-    this.val = val;
-    this.left = null;
-    this.right = null;
-  }
-}
-```
+    class TreeNode {
+      constructor(val) {
+        this.val = val;
+        this.left = null;
+        this.right = null;
+      }
+    }
 
 implement a queue
 
@@ -22,33 +21,35 @@ l.subtree, r.subtree, node
 
 BST Definition
 
-1. l. subtree contains values < root
-2. r. subtree contains values >= to the root
-3. l. & r. subtree are BST
+1.  1.  subtree contains values &lt; root
 
-insert: log(n)\
+2.  1.  subtree contains values &gt;= to the root
+
+3.  1.  & r. subtree are BST
+
+insert: log(n)  
 search: log(n)
 
 -   Using a node implementation with iteration:
 
-```
-function depthFirstIter(node) {
-    let visited = new Set();
-    let stack = [ node ];
+<!-- -->
 
-    while (stack.length) {
-        let node = stack.pop();
+    function depthFirstIter(node) {
+        let visited = new Set();
+        let stack = [ node ];
 
-
-        if (visited.has(node.val)) continue;
+        while (stack.length) {
+            let node = stack.pop();
 
 
-
-        console.log(node.val);
-        visited.add(node.val);
+            if (visited.has(node.val)) continue;
 
 
-        stack.push(...node.neighbors);
+
+            console.log(node.val);
+            visited.add(node.val);
+
+
+            stack.push(...node.neighbors);
+        }
     }
-}
-```

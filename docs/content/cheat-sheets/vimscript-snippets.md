@@ -1,8 +1,3 @@
----
-title: Vimscript snippets
-category: Vim
----
-
 ### Bind function to key and command
 
     command! YoFunctionHere call s:YoFunctionHere()
@@ -19,7 +14,8 @@ category: Vim
 
     if globpath(&rtp, "plugin/commentary.vim") != ""
 
-## Autoload
+Autoload
+--------
 
     " autoload/hello.vim
     if exists("g:hello_loaded") | finish | endif
@@ -30,7 +26,8 @@ category: Vim
 
     " calling hello#method() will load only if autoload()
 
-## Misc
+Misc
+----
 
 ### Version check
 

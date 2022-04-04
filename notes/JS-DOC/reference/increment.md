@@ -1,18 +1,22 @@
-# Increment (++)
+Increment (++)
+==============
 
 The increment operator (`++`) increments (adds one to) its operand and returns a value.
 
-## Syntax
+Syntax
+------
 
     Operator: x++ or ++x
 
-## Description
+Description
+-----------
 
 If used postfix, with operator after operand (for example, `x++`), the increment operator increments and returns the value before incrementing.
 
 If used prefix, with operator before operand (for example, `++x`), the increment operator increments and returns the value after incrementing.
 
-## Examples
+Examples
+--------
 
 ### Postfix increment
 
@@ -30,12 +34,11 @@ If used prefix, with operator before operand (for example, `++x`), the increment
     // a = 3
     // b = 3
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-postfix-increment-operator">ECMAScript (ECMA-262) 
-<br/>
-
-<span class="small">The definition of 'Increment operator' in that specification.</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript (ECMA-262)<br />
+</p><span class="small">The definition of ‘Increment operator’ in that specification.</span></td></tr></tbody></table>
 
 `Increment`
 
@@ -63,7 +66,8 @@ If used prefix, with operator before operand (for example, `++x`), the increment
 
 1.0
 
-## See also
+See also
+--------
 
 -   [Addition operator](addition)
 -   [Subtraction operator](subtraction)
@@ -75,6 +79,5 @@ If used prefix, with operator before operand (for example, `++x`), the increment
 -   [Unary negation operator](unary_negation)
 -   [Unary plus operator](unary_plus)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment</a>

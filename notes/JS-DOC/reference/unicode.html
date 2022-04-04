@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>unicode</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="regexp.prototype.unicode">RegExp.prototype.unicode</h1>
+<p>The <code>unicode</code> property indicates whether or not the “<code>u</code>” flag is used with a regular expression. <code>unicode</code> is a read-only property of an individual regular expression instance.</p>
+<p>Property attributes of <code>RegExp.prototype.unicode</code></p>
+<p>Writable</p>
+<p>no</p>
+<p>Enumerable</p>
+<p>no</p>
+<p>Configurable</p>
+<p>yes</p>
+<h2 id="description">Description</h2>
+<p>The value of <code>unicode</code> is a <a href="../boolean"><code>Boolean</code></a> and <code>true</code> if the “<code>u</code>” flag was used; otherwise <code>false</code>. The “<code>u</code>” flag enables various Unicode-related features. With the “u” flag, any Unicode code point escapes will be interpreted as such, for example.</p>
+<p>You cannot change this property directly. It is read-only.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-the-unicode-property">Using the unicode property</h3>
+<pre><code>var regex = new RegExp(&#39;\u{61}&#39;, &#39;u&#39;);
+
+console.log(regex.unicode); // true</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-get-regexp.prototype.unicode">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-get-regexp.prototype.unicode</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>unicode</code></p>
+<p>50</p>
+<p>12</p>
+<p>Case folding is implemented in version 13</p>
+<p>46</p>
+<p>No</p>
+<p>37</p>
+<p>10</p>
+<p>50</p>
+<p>50</p>
+<p>46</p>
+<p>37</p>
+<p>10</p>
+<p>5.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="lastindex"><code>RegExp.lastIndex</code></a></li>
+<li><a href="dotall"><code>RegExp.prototype.dotAll</code></a></li>
+<li><a href="global"><code>RegExp.prototype.global</code></a></li>
+<li><a href="hasindices"><code>RegExp.prototype.hasIndices</code></a></li>
+<li><a href="ignorecase"><code>RegExp.prototype.ignoreCase</code></a></li>
+<li><a href="multiline"><code>RegExp.prototype.multiline</code></a></li>
+<li><a href="source"><code>RegExp.prototype.source</code></a></li>
+<li><a href="sticky"><code>RegExp.prototype.sticky</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/unicode" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/unicode</a></p>
+</body>
+</html>

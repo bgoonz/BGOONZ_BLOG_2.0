@@ -1,8 +1,10 @@
-# Atomics.compareExchange()
+Atomics.compareExchange()
+=========================
 
-The static ` Atomics``.compareExchange() ` method exchanges a given replacement value at a given position in the array, if a given expected value equals the old value. It returns the old value at that position whether it was equal to the expected value or not. This atomic operation guarantees that no other write happens until the modified value is written back.
+The static ``` Atomics``.compareExchange() ``` method exchanges a given replacement value at a given position in the array, if a given expected value equals the old value. It returns the old value at that position whether it was equal to the expected value or not. This atomic operation guarantees that no other write happens until the modified value is written back.
 
-## Syntax
+Syntax
+------
 
     Atomics.compareExchange(typedArray, index, expectedValue, replacementValue)
 
@@ -29,7 +31,8 @@ The old value at the given position (`typedArray[index]`).
 -   Throws a [`TypeError`](../typeerror), if `typedArray` is not one of the allowed integer types.
 -   Throws a [`RangeError`](../rangeerror), if `index` is out of bounds in the `typedArray`.
 
-## Examples
+Examples
+--------
 
 ### Using compareExchange()
 
@@ -40,12 +43,11 @@ The old value at the given position (`typedArray[index]`).
     Atomics.compareExchange(ta, 0, 7, 12); // returns 7, the old value
     Atomics.load(ta, 0); // 12
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-atomics.compareexchange">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-atomics.compareexchange</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-atomics.compareexchange</span></td></tr></tbody></table>
 
 `compareExchange`
 
@@ -101,7 +103,8 @@ No
 
 Chrome disabled `SharedArrayBuffer` on January 5, 2018 to help reduce the efficacy of [speculative side-channel attacks](https://www.chromium.org/Home/chromium-security/ssca). This is intended as a temporary measure until other mitigations are in place.
 
-## See also
+See also
+--------
 
 -   [`Atomics`](../atomics)
 -   [`Atomics.exchange()`](exchange)

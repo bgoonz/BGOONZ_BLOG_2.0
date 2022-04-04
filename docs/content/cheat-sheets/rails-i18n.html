@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>i18n</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">i18n</h1>
+</header>
+<div class="sourceCode" id="cb1"><pre class="sourceCode rb"><code class="sourceCode ruby"><a class="sourceLine" id="cb1-1" title="1">t(<span class="st">&#39;my.messages.hello&#39;</span>)</a>
+<a class="sourceLine" id="cb1-2" title="2"></a>
+<a class="sourceLine" id="cb1-3" title="3"><span class="co"># same as &#39;my.messages.hello&#39;</span></a>
+<a class="sourceLine" id="cb1-4" title="4">t(<span class="st">:hello</span>, <span class="st">scope: &#39;my.messages&#39;</span>)</a>
+<a class="sourceLine" id="cb1-5" title="5">t(<span class="st">:hello</span>, <span class="st">scope: </span>[<span class="st">:my</span>, <span class="st">:messages</span>])</a>
+<a class="sourceLine" id="cb1-6" title="6"></a>
+<a class="sourceLine" id="cb1-7" title="7">t(<span class="st">&#39;my.messages.hello&#39;</span>, <span class="st">default: &quot;Hello&quot;</span>)</a></code></pre></div>
+<p>{:.light}</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode yml"><code class="sourceCode yaml"><a class="sourceLine" id="cb2-1" title="1"><span class="fu">en:</span></a>
+<a class="sourceLine" id="cb2-2" title="2">    <span class="fu">my:</span></a>
+<a class="sourceLine" id="cb2-3" title="3">        <span class="fu">messages:</span></a>
+<a class="sourceLine" id="cb2-4" title="4">            <span class="fu">hello:</span><span class="at"> </span><span class="st">&#39;Hello&#39;</span></a></code></pre></div>
+<h3 id="interpolation">Interpolation</h3>
+<div class="sourceCode" id="cb3"><pre class="sourceCode rb"><code class="sourceCode ruby"><a class="sourceLine" id="cb3-1" title="1">t(<span class="st">&#39;hello&#39;</span>, <span class="st">name: &quot;John&quot;</span>)</a></code></pre></div>
+<p>{:.light}</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode yml"><code class="sourceCode yaml"><a class="sourceLine" id="cb4-1" title="1"><span class="fu">hello:</span><span class="at"> </span><span class="st">&#39;Hello %{name}&#39;</span></a></code></pre></div>
+<h3 id="lazy-lookup">Lazy lookup</h3>
+<div class="sourceCode" id="cb5"><pre class="sourceCode rb"><code class="sourceCode ruby"><a class="sourceLine" id="cb5-1" title="1"><span class="co"># from the &#39;books/index&#39; view</span></a>
+<a class="sourceLine" id="cb5-2" title="2">t(<span class="st">&#39;.title&#39;</span>)</a></code></pre></div>
+<p>{:.light}</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode yml"><code class="sourceCode yaml"><a class="sourceLine" id="cb6-1" title="1"><span class="fu">en:</span></a>
+<a class="sourceLine" id="cb6-2" title="2">    <span class="fu">books:</span></a>
+<a class="sourceLine" id="cb6-3" title="3">        <span class="fu">index:</span></a>
+<a class="sourceLine" id="cb6-4" title="4">            <span class="fu">title:</span><span class="at"> </span><span class="st">&#39;Título&#39;</span></a></code></pre></div>
+<h3 id="plural">Plural</h3>
+<div class="sourceCode" id="cb7"><pre class="sourceCode rb"><code class="sourceCode ruby"><a class="sourceLine" id="cb7-1" title="1">t(<span class="st">:inbox</span>, <span class="st">count: </span><span class="dv">1</span>)  <span class="co">#=&gt; &#39;one message&#39;</span></a>
+<a class="sourceLine" id="cb7-2" title="2">t(<span class="st">:inbox</span>, <span class="st">count: </span><span class="dv">2</span>)  <span class="co">#=&gt; &#39;2 messages&#39;</span></a></code></pre></div>
+<p>{:.light}</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode yml"><code class="sourceCode yaml"><a class="sourceLine" id="cb8-1" title="1"><span class="fu">inbox:</span></a>
+<a class="sourceLine" id="cb8-2" title="2">  <span class="fu">one:</span><span class="at"> </span><span class="st">&#39;one message&#39;</span><span class="er">,</span></a>
+<a class="sourceLine" id="cb8-3" title="3">  <span class="fu">other:</span><span class="at"> </span><span class="st">&#39;%{count} messages&#39;</span></a></code></pre></div>
+<h2 id="localizing">Localizing</h2>
+<h3 id="time">Time</h3>
+<div class="sourceCode" id="cb9"><pre class="sourceCode rb"><code class="sourceCode ruby"><a class="sourceLine" id="cb9-1" title="1">l(<span class="dt">Time</span>.now)</a>
+<a class="sourceLine" id="cb9-2" title="2">l(<span class="dt">Time</span>.now, format: <span class="st">:short</span>)</a></code></pre></div>
+<p>{:.light}</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode yml"><code class="sourceCode yaml"><a class="sourceLine" id="cb10-1" title="1"><span class="fu">en:</span></a>
+<a class="sourceLine" id="cb10-2" title="2">    <span class="fu">time:</span></a>
+<a class="sourceLine" id="cb10-3" title="3">        <span class="fu">formats:</span></a>
+<a class="sourceLine" id="cb10-4" title="4">            <span class="fu">default:</span><span class="at"> </span><span class="st">&#39;%a, %d %b %Y %H:%M:%S %z&#39;</span></a>
+<a class="sourceLine" id="cb10-5" title="5">            <span class="fu">long:</span><span class="at"> </span><span class="st">&#39;%B %d, %Y %H:%M&#39;</span></a>
+<a class="sourceLine" id="cb10-6" title="6">            <span class="fu">short:</span><span class="at"> </span><span class="st">&#39;%d %b %H:%M&#39;</span></a></code></pre></div>
+<h3 id="date">Date</h3>
+<div class="sourceCode" id="cb11"><pre class="sourceCode rb"><code class="sourceCode ruby"><a class="sourceLine" id="cb11-1" title="1">l(<span class="dt">Date</span>.today)</a></code></pre></div>
+<p>{:.light}</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode yml"><code class="sourceCode yaml"><a class="sourceLine" id="cb12-1" title="1"><span class="fu">en:</span></a>
+<a class="sourceLine" id="cb12-2" title="2">    <span class="fu">date:</span></a>
+<a class="sourceLine" id="cb12-3" title="3">        <span class="fu">formats:</span></a>
+<a class="sourceLine" id="cb12-4" title="4">            <span class="fu">default:</span><span class="at"> </span><span class="st">&#39;%Y-%m-%d&#39;</span> <span class="co"># 2015-06-25</span></a>
+<a class="sourceLine" id="cb12-5" title="5">            <span class="fu">long:</span><span class="at"> </span><span class="st">&#39;%B %d, %Y&#39;</span> <span class="co"># June 25, 2015</span></a>
+<a class="sourceLine" id="cb12-6" title="6">            <span class="fu">short:</span><span class="at"> </span><span class="st">&#39;%b %d&#39;</span> <span class="co"># Jun 25</span></a></code></pre></div>
+<h2 id="activerecord">ActiveRecord</h2>
+<h3 id="model-names">Model names</h3>
+<div class="sourceCode" id="cb13"><pre class="sourceCode rb"><code class="sourceCode ruby"><a class="sourceLine" id="cb13-1" title="1"><span class="dt">User</span>.model_name.human            <span class="co">#=&gt; &quot;User&quot;</span></a>
+<a class="sourceLine" id="cb13-2" title="2"><span class="dt">Child</span>.model_name.human(<span class="st">count: </span><span class="dv">2</span>) <span class="co">#=&gt; &quot;Children&quot;</span></a></code></pre></div>
+<p>{:.light}</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode yml"><code class="sourceCode yaml"><a class="sourceLine" id="cb14-1" title="1"><span class="fu">en:</span></a>
+<a class="sourceLine" id="cb14-2" title="2">    <span class="fu">activerecord:</span></a>
+<a class="sourceLine" id="cb14-3" title="3">        <span class="fu">models:</span></a>
+<a class="sourceLine" id="cb14-4" title="4">            <span class="fu">user:</span><span class="at"> </span><span class="st">&#39;User&#39;</span></a>
+<a class="sourceLine" id="cb14-5" title="5">            <span class="fu">child:</span></a>
+<a class="sourceLine" id="cb14-6" title="6">                <span class="fu">one:</span><span class="at"> </span><span class="st">&#39;Child&#39;</span></a>
+<a class="sourceLine" id="cb14-7" title="7">                <span class="fu">other:</span><span class="at"> </span><span class="st">&#39;Children&#39;</span></a></code></pre></div>
+<h3 id="attributes">Attributes</h3>
+<div class="sourceCode" id="cb15"><pre class="sourceCode rb"><code class="sourceCode ruby"><a class="sourceLine" id="cb15-1" title="1"><span class="dt">User</span>.human_attribute_for <span class="st">:name</span>   <span class="co">#=&gt; &quot;Name&quot;</span></a></code></pre></div>
+<p>{:.light}</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode yml"><code class="sourceCode yaml"><a class="sourceLine" id="cb16-1" title="1"><span class="fu">en:</span></a>
+<a class="sourceLine" id="cb16-2" title="2">    <span class="fu">activerecord:</span></a>
+<a class="sourceLine" id="cb16-3" title="3">        <span class="fu">attributes:</span></a>
+<a class="sourceLine" id="cb16-4" title="4">            <span class="fu">user:</span></a>
+<a class="sourceLine" id="cb16-5" title="5">                <span class="co"># activerecord.attributes.&lt;model&gt;.&lt;field&gt;</span></a>
+<a class="sourceLine" id="cb16-6" title="6">                <span class="fu">name:</span><span class="at"> </span><span class="st">&#39;Name&#39;</span></a>
+<a class="sourceLine" id="cb16-7" title="7">                <span class="fu">email:</span><span class="at"> </span><span class="st">&#39;Email&#39;</span></a></code></pre></div>
+<h3 id="error-messages">Error messages</h3>
+<div class="sourceCode" id="cb17"><pre class="sourceCode rb"><code class="sourceCode ruby"><a class="sourceLine" id="cb17-1" title="1">error_messages_for(...)</a></code></pre></div>
+<p>{:.light}</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode yml"><code class="sourceCode yaml"><a class="sourceLine" id="cb18-1" title="1"><span class="fu">activerecord:</span></a>
+<a class="sourceLine" id="cb18-2" title="2">    <span class="fu">errors:</span></a>
+<a class="sourceLine" id="cb18-3" title="3">        <span class="fu">models:</span></a>
+<a class="sourceLine" id="cb18-4" title="4">            <span class="fu">venue:</span></a>
+<a class="sourceLine" id="cb18-5" title="5">                <span class="fu">attributes:</span></a>
+<a class="sourceLine" id="cb18-6" title="6">                    <span class="fu">name:</span></a>
+<a class="sourceLine" id="cb18-7" title="7">                        <span class="fu">blank:</span><span class="at"> </span><span class="st">&#39;Please enter a name.&#39;</span></a></code></pre></div>
+<p>Possible scopes (in order):</p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode yml"><code class="sourceCode yaml"><a class="sourceLine" id="cb19-1" title="1">activerecord.errors.models.<span class="kw">[</span>model_name<span class="kw">]</span>.attributes.<span class="kw">[</span>attribute_name<span class="kw">]</span>.<span class="kw">[</span>error<span class="kw">]</span></a>
+<a class="sourceLine" id="cb19-2" title="2">activerecord.errors.models.<span class="kw">[</span>model_name<span class="kw">]</span>.<span class="kw">[</span>error<span class="kw">]</span></a>
+<a class="sourceLine" id="cb19-3" title="3">activerecord.errors.messages.<span class="kw">[</span>error<span class="kw">]</span></a>
+<a class="sourceLine" id="cb19-4" title="4">errors.attributes.<span class="kw">[</span>attribute_name<span class="kw">]</span>.<span class="kw">[</span>error<span class="kw">]</span></a>
+<a class="sourceLine" id="cb19-5" title="5">errors.messages.<span class="kw">[</span>error<span class="kw">]</span></a></code></pre></div>
+<p>Where <code>[error]</code> can be:</p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode yml"><code class="sourceCode yaml"><a class="sourceLine" id="cb20-1" title="1">validates</a>
+<a class="sourceLine" id="cb20-2" title="2">confirmation - :confirmation</a>
+<a class="sourceLine" id="cb20-3" title="3">acceptance   - :accepted</a>
+<a class="sourceLine" id="cb20-4" title="4">presence     - :blank</a>
+<a class="sourceLine" id="cb20-5" title="5">length       - :too_short (%<span class="kw">{</span>count<span class="kw">}</span>)</a>
+<a class="sourceLine" id="cb20-6" title="6">length       - :too_long (%<span class="kw">{</span>count<span class="kw">}</span>)</a>
+<a class="sourceLine" id="cb20-7" title="7">length       - :wrong_length (%<span class="kw">{</span>count<span class="kw">}</span>)</a>
+<a class="sourceLine" id="cb20-8" title="8">uniqueness   - :taken</a>
+<a class="sourceLine" id="cb20-9" title="9">format       - :invalid</a>
+<a class="sourceLine" id="cb20-10" title="10">numericality - :not_a_number</a></code></pre></div>
+<h3 id="form-labels">Form labels</h3>
+<div class="sourceCode" id="cb21"><pre class="sourceCode rb"><code class="sourceCode ruby"><a class="sourceLine" id="cb21-1" title="1">form_for <span class="ot">@post</span> <span class="kw">do</span></a>
+<a class="sourceLine" id="cb21-2" title="2">  f.label <span class="st">:body</span></a></code></pre></div>
+<p>{:.light}</p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode yml"><code class="sourceCode yaml"><a class="sourceLine" id="cb22-1" title="1"><span class="fu">helpers:</span></a>
+<a class="sourceLine" id="cb22-2" title="2">    <span class="co"># helpers.label.&lt;model&gt;.&lt;field&gt;</span></a>
+<a class="sourceLine" id="cb22-3" title="3">    <span class="fu">label:</span></a>
+<a class="sourceLine" id="cb22-4" title="4">        <span class="fu">post:</span></a>
+<a class="sourceLine" id="cb22-5" title="5">            <span class="fu">body:</span><span class="at"> </span><span class="st">&#39;Your body text&#39;</span></a></code></pre></div>
+<h3 id="submit-buttons">Submit buttons</h3>
+<div class="sourceCode" id="cb23"><pre class="sourceCode rb"><code class="sourceCode ruby"><a class="sourceLine" id="cb23-1" title="1">form_for <span class="ot">@post</span> <span class="kw">do</span></a>
+<a class="sourceLine" id="cb23-2" title="2">  f.submit</a></code></pre></div>
+<p>{:.light}</p>
+<div class="sourceCode" id="cb24"><pre class="sourceCode yml"><code class="sourceCode yaml"><a class="sourceLine" id="cb24-1" title="1"><span class="fu">helpers:</span></a>
+<a class="sourceLine" id="cb24-2" title="2">    <span class="fu">submit:</span></a>
+<a class="sourceLine" id="cb24-3" title="3">        <span class="co"># helpers.submit.&lt;action&gt;</span></a>
+<a class="sourceLine" id="cb24-4" title="4">        <span class="fu">create:</span><span class="at"> </span><span class="st">&#39;Create a %{model}&#39;</span></a>
+<a class="sourceLine" id="cb24-5" title="5">        <span class="fu">update:</span><span class="at"> </span><span class="st">&#39;Confirm changes to %{model}&#39;</span></a>
+<a class="sourceLine" id="cb24-6" title="6"></a>
+<a class="sourceLine" id="cb24-7" title="7">        <span class="co"># helpers.submit.&lt;model&gt;.&lt;action&gt;</span></a>
+<a class="sourceLine" id="cb24-8" title="8">        <span class="fu">article:</span></a>
+<a class="sourceLine" id="cb24-9" title="9">            <span class="fu">create:</span><span class="at"> </span><span class="st">&#39;Publish article&#39;</span></a>
+<a class="sourceLine" id="cb24-10" title="10">            <span class="fu">update:</span><span class="at"> </span><span class="st">&#39;Update article&#39;</span></a></code></pre></div>
+<h2 id="numbers">Numbers</h2>
+<div class="sourceCode" id="cb25"><pre class="sourceCode rb"><code class="sourceCode ruby"><a class="sourceLine" id="cb25-1" title="1">number_to_delimited(<span class="dv">2000</span>)             <span class="co">#=&gt; &quot;2,000&quot;</span></a>
+<a class="sourceLine" id="cb25-2" title="2">number_to_currency(<span class="fl">12.3</span>)              <span class="co">#=&gt; &quot;$12.30&quot;</span></a>
+<a class="sourceLine" id="cb25-3" title="3">number_to_percentage(<span class="fl">0.3</span>)             <span class="co">#=&gt; &quot;30%&quot;</span></a>
+<a class="sourceLine" id="cb25-4" title="4">number_to_rounded(<span class="fl">3.14</span>, <span class="st">precision: </span><span class="dv">0</span>) <span class="co">#=&gt; &quot;3&quot;</span></a>
+<a class="sourceLine" id="cb25-5" title="5">number_to_human(<span class="dv">12_000</span>)               <span class="co">#=&gt; &quot;12 Thousand&quot;</span></a>
+<a class="sourceLine" id="cb25-6" title="6">number_to_human_size(<span class="dv">12345</span>)           <span class="co">#=&gt; &quot;12.3 kb&quot;</span></a></code></pre></div>
+<p>{:.light}</p>
+<h3 id="delimited">Delimited</h3>
+<div class="sourceCode" id="cb26"><pre class="sourceCode rb"><code class="sourceCode ruby"><a class="sourceLine" id="cb26-1" title="1">number_to_delimited(n)</a></code></pre></div>
+<p>{:.light}</p>
+<div class="sourceCode" id="cb27"><pre class="sourceCode yml"><code class="sourceCode yaml"><a class="sourceLine" id="cb27-1" title="1"><span class="fu">number:</span></a>
+<a class="sourceLine" id="cb27-2" title="2">    <span class="fu">format:</span></a>
+<a class="sourceLine" id="cb27-3" title="3">        <span class="fu">separator:</span><span class="at"> </span><span class="st">&#39;.&#39;</span></a>
+<a class="sourceLine" id="cb27-4" title="4">        <span class="fu">delimiter:</span><span class="at"> </span><span class="st">&#39;,&#39;</span></a>
+<a class="sourceLine" id="cb27-5" title="5">        <span class="fu">precision:</span><span class="at"> </span><span class="dv">3</span></a>
+<a class="sourceLine" id="cb27-6" title="6">        <span class="fu">significant:</span><span class="at"> </span><span class="ch">false</span></a>
+<a class="sourceLine" id="cb27-7" title="7">        <span class="fu">strip_insignificant_zeroes:</span><span class="at"> </span><span class="ch">false</span></a></code></pre></div>
+<h3 id="currencies">Currencies</h3>
+<div class="sourceCode" id="cb28"><pre class="sourceCode rb"><code class="sourceCode ruby"><a class="sourceLine" id="cb28-1" title="1">number_to_currency(n)</a></code></pre></div>
+<p>{:.light}</p>
+<div class="sourceCode" id="cb29"><pre class="sourceCode yml"><code class="sourceCode yaml"><a class="sourceLine" id="cb29-1" title="1"><span class="fu">number:</span></a>
+<a class="sourceLine" id="cb29-2" title="2">    <span class="fu">currency:</span></a>
+<a class="sourceLine" id="cb29-3" title="3">        <span class="fu">format:</span></a>
+<a class="sourceLine" id="cb29-4" title="4">            <span class="fu">format:</span><span class="at"> </span><span class="st">&#39;%u%n&#39;</span> <span class="co"># %u = unit, %n = number</span></a>
+<a class="sourceLine" id="cb29-5" title="5">            <span class="fu">unit:</span><span class="at"> </span><span class="st">&#39;$&#39;</span></a>
+<a class="sourceLine" id="cb29-6" title="6">            <span class="fu">separator:</span><span class="at"> </span><span class="st">&#39;.&#39;</span></a>
+<a class="sourceLine" id="cb29-7" title="7">            <span class="fu">delimiter:</span><span class="at"> </span><span class="st">&#39;,&#39;</span></a>
+<a class="sourceLine" id="cb29-8" title="8">            <span class="fu">precision:</span><span class="at"> </span><span class="dv">3</span></a>
+<a class="sourceLine" id="cb29-9" title="9">            <span class="co"># (see number.format)</span></a></code></pre></div>
+<h3 id="percentage">Percentage</h3>
+<div class="sourceCode" id="cb30"><pre class="sourceCode rb"><code class="sourceCode ruby"><a class="sourceLine" id="cb30-1" title="1">number_to_percentage(n)</a></code></pre></div>
+<p>{:.light}</p>
+<div class="sourceCode" id="cb31"><pre class="sourceCode yml"><code class="sourceCode yaml"><a class="sourceLine" id="cb31-1" title="1"><span class="fu">number:</span></a>
+<a class="sourceLine" id="cb31-2" title="2">    <span class="fu">percentage:</span></a>
+<a class="sourceLine" id="cb31-3" title="3">        <span class="fu">format:</span></a>
+<a class="sourceLine" id="cb31-4" title="4">            <span class="fu">format:</span><span class="at"> </span><span class="st">&#39;%n%&#39;</span></a>
+<a class="sourceLine" id="cb31-5" title="5">            <span class="co"># (see number.format)</span></a></code></pre></div>
+<h2 id="programmatic-access">Programmatic access</h2>
+<div class="sourceCode" id="cb32"><pre class="sourceCode rb"><code class="sourceCode ruby"><a class="sourceLine" id="cb32-1" title="1"><span class="dt">I18n</span>.backend.store_translations <span class="st">:en</span>, <span class="st">ok: &quot;Ok&quot;</span></a>
+<a class="sourceLine" id="cb32-2" title="2"><span class="dt">I18n</span>.locale = <span class="st">:en</span></a>
+<a class="sourceLine" id="cb32-3" title="3"><span class="dt">I18n</span>.default_locale = <span class="st">:en</span></a>
+<a class="sourceLine" id="cb32-4" title="4"></a>
+<a class="sourceLine" id="cb32-5" title="5"><span class="dt">I18n</span>.available_locales</a>
+<a class="sourceLine" id="cb32-6" title="6"></a>
+<a class="sourceLine" id="cb32-7" title="7"><span class="dt">I18n</span>.translate <span class="st">:ok</span>   <span class="co"># aka, I18n.t</span></a>
+<a class="sourceLine" id="cb32-8" title="8"><span class="dt">I18n</span>.localize date   <span class="co"># aka, I18n.l</span></a></code></pre></div>
+<p>{:.light}</p>
+<h2 id="reference">Reference</h2>
+<ul>
+<li>http://guides.rubyonrails.org/i18n.html</li>
+<li>http://rails-i18n.org/wiki</li>
+<li>https://github.com/svenfuchs/i18n</li>
+<li>https://github.com/svenfuchs/rails-i18n/blob/master/rails/locale/en.yml</li>
+</ul>
+</body>
+</html>

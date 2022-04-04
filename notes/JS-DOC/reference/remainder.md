@@ -1,14 +1,17 @@
-# Remainder (%)
+Remainder (%)
+=============
 
 The remainder operator (`%`) returns the remainder left over when one operand is divided by a second operand. It always takes the sign of the dividend.
 
-Note that while in most languages, '%' is a remainder operator, in some (e.g. [Python, Perl](https://en.wikipedia.org/wiki/Modulo_operation#In_programming_languages)) it is a modulo operator. For positive values, the two are equivalent, but when the dividend and divisor are of different signs, they give different results. To obtain a modulo in JavaScript, in place of `a % n`, use `((a % n ) + n ) % n`.
+Note that while in most languages, ‘%’ is a remainder operator, in some (e.g. [Python, Perl](https://en.wikipedia.org/wiki/Modulo_operation#In_programming_languages)) it is a modulo operator. For positive values, the two are equivalent, but when the dividend and divisor are of different signs, they give different results. To obtain a modulo in JavaScript, in place of `a % n`, use `((a % n ) + n ) % n`.
 
-## Syntax
+Syntax
+------
 
     Operator: var1 % var2
 
-## Examples
+Examples
+--------
 
 ### Remainder with positive dividend
 
@@ -34,14 +37,14 @@ Note that while in most languages, '%' is a remainder operator, in some (e.g. [P
     Infinity % 0 // NaN
     Infinity % Infinity // NaN
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-multiplicative-operators">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-multiplicative-operators</span></td></tr></tbody></table>
 
-<span class="small">#sec-multiplicative-operators</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -97,7 +100,8 @@ Samsung Internet
 
 1.0
 
-## See also
+See also
+--------
 
 -   [Addition operator](addition)
 -   [Subtraction operator](subtraction)
@@ -109,6 +113,5 @@ Samsung Internet
 -   [Unary negation operator](unary_negation)
 -   [Unary plus operator](unary_plus)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder</a>

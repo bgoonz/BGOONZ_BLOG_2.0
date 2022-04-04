@@ -1,8 +1,10 @@
-# Date.prototype.setUTCMinutes()
+Date.prototype.setUTCMinutes()
+==============================
 
 The `setUTCMinutes()` method sets the minutes for a specified date according to universal time.
 
-## Syntax
+Syntax
+------
 
     setUTCMinutes(minutesValue)
     setUTCMinutes(minutesValue, secondsValue)
@@ -23,27 +25,29 @@ Optional. A number between 0 and 999, representing the milliseconds. If you spec
 
 The number of milliseconds between 1 January 1970 00:00:00 UTC and the updated date.
 
-## Description
+Description
+-----------
 
 If you do not specify the `secondsValue` and `msValue` parameters, the values returned from [`getUTCSeconds()`](getutcseconds) and [`getUTCMilliseconds()`](getutcmilliseconds) methods are used.
 
 If a parameter you specify is outside of the expected range, `setUTCMinutes()` attempts to update the date information in the [`Date`](../date) object accordingly. For example, if you use 100 for `secondsValue`, the minutes will be incremented by 1 (`minutesValue + 1`), and 40 will be used for seconds.
 
-## Examples
+Examples
+--------
 
 ### Using setUTCMinutes()
 
     var theBigDay = new Date();
     theBigDay.setUTCMinutes(43);
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setutcminutes">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-date.prototype.setutcminutes</span></td></tr></tbody></table>
 
-<span class="small">#sec-date.prototype.setutcminutes</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -99,7 +103,8 @@ Samsung Internet
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`Date.prototype.getUTCMinutes()`](getutcminutes)
 -   [`Date.prototype.setMinutes()`](setminutes)

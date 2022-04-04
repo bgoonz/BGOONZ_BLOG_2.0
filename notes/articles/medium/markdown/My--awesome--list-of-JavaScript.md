@@ -1,18 +1,19 @@
-# My 'awesome' list of JavaScript resources
+My ‘awesome’ list of JavaScript resources
+=========================================
 
-Everyone's seen the 'Awesome' lists on GitHub… and they are indeed awesome… so today I am going to attempt to curate my own…
+Everyone’s seen the ‘Awesome’ lists on GitHub… and they are indeed awesome… so today I am going to attempt to curate my own…
 
----
+------------------------------------------------------------------------
 
-### My 'awesome' list of JavaScript resources
+### My ‘awesome’ list of JavaScript resources
 
-#### Everyone's seen the 'Awesome' lists on GitHub… and they are indeed awesome… so today I am going to attempt to curate my own…
+#### Everyone’s seen the ‘Awesome’ lists on GitHub… and they are indeed awesome… so today I am going to attempt to curate my own…
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*3pwY-HRi2sjgBBJ0eISwqw.png" class="graf-image" /></figure><a href="https://github.com/topics/awesome" class="markup--anchor markup--blockquote-anchor"><strong>https://github.com/topics/awesome</strong></a>
 
 -   <span id="174b"><a href="http://dmitrysoshnikov.com/ecmascript/javascript-the-core-2nd-edition/" class="markup--anchor markup--li-anchor">JavaScript. The Core</a></span>
 -   <span id="f3b6"><a href="https://javascript.info/" class="markup--anchor markup--li-anchor">Modern JavaScript Tutorial</a> (<a href="https://news.ycombinator.com/item?id=25333350" class="markup--anchor markup--li-anchor">HN</a>)</span>
--   <span id="211c"><a href="https://github.com/getify/You-Dont-Know-JS" class="markup--anchor markup--li-anchor">You don't know JS books</a></span>
+-   <span id="211c"><a href="https://github.com/getify/You-Dont-Know-JS" class="markup--anchor markup--li-anchor">You don’t know JS books</a></span>
 -   <span id="e742"><a href="https://jgthms.com/javascript-in-14-minutes/" class="markup--anchor markup--li-anchor">JS in 14 minutes</a></span>
 -   <span id="6415"><a href="https://risingstars.js.org/2017/en/" class="markup--anchor markup--li-anchor">2017 JavaScript Rising Stars</a></span>
 -   <span id="eed7"><a href="https://github.com/lukehoban/es6features" class="markup--anchor markup--li-anchor">ES6 features</a></span>
@@ -22,7 +23,7 @@ Everyone's seen the 'Awesome' lists on GitHub… and they are indeed awesome… 
 -   <span id="c6dc"><a href="https://github.com/trekhleb/javascript-algorithms" class="markup--anchor markup--li-anchor">JavaScript Algorithms</a> — Algorithms and data structures implemented in JavaScript with explanations and links to further readings.</span>
 -   <span id="b6b7"><a href="http://es6-features.org/" class="markup--anchor markup--li-anchor">EC6 Features</a></span>
 -   <span id="a5e3"><a href="https://github.com/ryanmcdermott/clean-code-javascript" class="markup--anchor markup--li-anchor">Clean Code concepts adapted for JavaScript</a></span>
--   <span id="29b5"><a href="https://news.ycombinator.com/item?id=17324538" class="markup--anchor markup--li-anchor">Ask HN: "Expert Level" JavaScript questions?</a></span>
+-   <span id="29b5"><a href="https://news.ycombinator.com/item?id=17324538" class="markup--anchor markup--li-anchor">Ask HN: “Expert Level” JavaScript questions?</a></span>
 -   <span id="a0ae"><a href="https://stackoverflow.com/questions/2800964/benefits-of-prototypal-inheritance-over-classical/16872315#16872315" class="markup--anchor markup--li-anchor">Benefits of prototypal inheritance over classical?</a></span>
 -   <span id="f8c3"><a href="https://github.com/nathan/pax" class="markup--anchor markup--li-anchor">Pax</a> — Fastest JavaScript bundler in the galaxy.</span>
 -   <span id="e63e"><a href="https://www.youtube.com/watch?v=8aGhZQkoFbQ" class="markup--anchor markup--li-anchor">Philip Roberts: What the heck is the event loop anyway? (2014)</a></span>
@@ -36,7 +37,7 @@ Everyone's seen the 'Awesome' lists on GitHub… and they are indeed awesome… 
 -   <span id="76c4"><a href="https://wallabyjs.com/docs/" class="markup--anchor markup--li-anchor">WallabyJS</a> — Integrated continuous testing tool for JavaScript.</span>
 -   <span id="dd41"><a href="http://es6-features.org/" class="markup--anchor markup--li-anchor">ES6 features</a></span>
 -   <span id="274e"><a href="https://www.youtube.com/watch?v=i5R7giitymk" class="markup--anchor markup--li-anchor">The State of JavaScript — The State of the Web (2018)</a></span>
--   <span id="33da"><a href="http://jamesknelson.com/es6-the-bits-youll-actually-use/" class="markup--anchor markup--li-anchor">A Quick Tour Of ES6 (Or, The Bits You'll Actually Use)</a></span>
+-   <span id="33da"><a href="http://jamesknelson.com/es6-the-bits-youll-actually-use/" class="markup--anchor markup--li-anchor">A Quick Tour Of ES6 (Or, The Bits You’ll Actually Use)</a></span>
 -   <span id="0bca"><a href="https://medium.com/@felixrieseberg/javascript-on-the-desktop-fast-and-slow-2b744dfb8b55" class="markup--anchor markup--li-anchor">JavaScript on the Desktop, Fast and Slow (2018)</a></span>
 -   <span id="c9be"><a href="https://github.com/metagrover/ES6-for-humans" class="markup--anchor markup--li-anchor">ES6 for humans</a></span>
 -   <span id="fc6b"><a href="https://github.com/leonardomso/33-js-concepts" class="markup--anchor markup--li-anchor">33 concepts every JavaScript developer should know</a></span>
@@ -51,10 +52,10 @@ Everyone's seen the 'Awesome' lists on GitHub… and they are indeed awesome… 
 -   <span id="5b6f"><a href="https://github.com/getify/Functional-Light-JS" class="markup--anchor markup--li-anchor">Pragmatic, balanced FP in JavaScript book</a></span>
 -   <span id="78c8"><a href="https://github.com/pikapkg/pack" class="markup--anchor markup--li-anchor">Pack</a> — Helps you build amazing packages without the hassle.</span>
 -   <span id="215c"><a href="https://mafinto.sh/blog/learning-javascript.html" class="markup--anchor markup--li-anchor">Learning JavaScript (2016)</a></span>
--   <span id="390e"><a href="https://github.com/pikapkg/web" class="markup--anchor markup--li-anchor">@pika/web</a> — Install npm dependencies that run directly in the browser. No Browserify, Webpack or import maps required.</span>
+-   <span id="390e"><a href="https://github.com/pikapkg/web" class="markup--anchor markup--li-anchor"><span class="citation" data-cites="pika/web">@pika/web</span></a> — Install npm dependencies that run directly in the browser. No Browserify, Webpack or import maps required.</span>
 -   <span id="525a"><a href="https://github.com/alangpierce/sucrase" class="markup--anchor markup--li-anchor">Sucrase</a> — Super-fast alternative to Babel for when you can target modern JS runtimes.</span>
 -   <span id="51ea"><a href="https://github.com/airbnb/javascript" class="markup--anchor markup--li-anchor">Airbnb JavaScript Style Guide</a></span>
--   <span id="ecaa"><a href="https://github.com/twhite96/js-dev-reads" class="markup--anchor markup--li-anchor">JavaScript Developer's Reading List</a> — List of hand-picked books and articles for JavaScript developers.</span>
+-   <span id="ecaa"><a href="https://github.com/twhite96/js-dev-reads" class="markup--anchor markup--li-anchor">JavaScript Developer’s Reading List</a> — List of hand-picked books and articles for JavaScript developers.</span>
 -   <span id="2efc"><a href="https://github.com/bevacqua/promisees" class="markup--anchor markup--li-anchor">Promisees</a> — Promise visualization playground for the adventurous.</span>
 -   <span id="20c0"><a href="https://github.com/sindresorhus/promise-fun" class="markup--anchor markup--li-anchor">promise-fun</a> — Promise packages, patterns, chat, and tutorials.</span>
 -   <span id="bfb4"><a href="https://github.com/lukejacksonn/perflink" class="markup--anchor markup--li-anchor">Perflink</a> — JavaScript performance benchmarks that you can share via URL.</span>
@@ -181,7 +182,7 @@ Everyone's seen the 'Awesome' lists on GitHub… and they are indeed awesome… 
 -   <span id="5d1a"><a href="https://twitter.com/Madisonkanna/status/1274424134139666432" class="markup--anchor markup--li-anchor">JS fundamentals and resources to learn them (2020)</a></span>
 -   <span id="69b6"><a href="https://jvns.ca/blog/2020/06/19/a-little-bit-of-plain-javascript-can-do-a-lot/" class="markup--anchor markup--li-anchor">A little bit of plain JavaScript can do a lot (2020)</a> (<a href="https://lobste.rs/s/6umqjn/little_bit_plain_javascript_can_do_lot" class="markup--anchor markup--li-anchor">Lobsters</a>) (<a href="https://news.ycombinator.com/item?id=23578319" class="markup--anchor markup--li-anchor">HN</a>)</span>
 -   <span id="6a84"><a href="https://kyleshevlin.com/memoization" class="markup--anchor markup--li-anchor">Memoization: What, Why, and How (2020)</a></span>
--   <span id="5a73"><a href="https://formidable.com/blog/2020/publish-npm-packages/" class="markup--anchor markup--li-anchor">An Open Source Maintainer's Guide to Publishing npm Packages (2020)</a></span>
+-   <span id="5a73"><a href="https://formidable.com/blog/2020/publish-npm-packages/" class="markup--anchor markup--li-anchor">An Open Source Maintainer’s Guide to Publishing npm Packages (2020)</a></span>
 -   <span id="7c06"><a href="https://molily.de/robust-javascript/" class="markup--anchor markup--li-anchor">Robust Client-Side JavaScript (2020)</a> (<a href="https://news.ycombinator.com/item?id=23612184" class="markup--anchor markup--li-anchor">HN</a>)</span>
 -   <span id="675e"><a href="https://npm.anvaka.com/#!/" class="markup--anchor markup--li-anchor">Visualization of npm dependencies</a></span>
 -   <span id="dd10"><a href="https://sivers.org/learn-js" class="markup--anchor markup--li-anchor">How to Learn JavaScript</a> (<a href="https://news.ycombinator.com/item?id=23659531" class="markup--anchor markup--li-anchor">HN</a>)</span>
@@ -189,7 +190,7 @@ Everyone's seen the 'Awesome' lists on GitHub… and they are indeed awesome… 
 -   <span id="7dac"><a href="https://jsconf.com/" class="markup--anchor markup--li-anchor">JSConf</a> — Conferences for the JavaScript Community.</span>
 -   <span id="6c16"><a href="https://samsaccone.com/posts/history-of-promises.html" class="markup--anchor markup--li-anchor">The history of Promises</a></span>
 -   <span id="caaf"><a href="https://www.skypack.dev/" class="markup--anchor markup--li-anchor">Skypack</a> — New kind of JavaScript delivery network. (<a href="https://news.ycombinator.com/item?id=23825798" class="markup--anchor markup--li-anchor">HN</a>) (<a href="https://www.skypack.dev/blog/2020/10/introducing-skypack-discover/" class="markup--anchor markup--li-anchor">Introducing Skypack Discover</a>) (<a href="https://docs.skypack.dev/" class="markup--anchor markup--li-anchor">Docs</a>)</span>
--   <span id="9b02"><a href="https://openbase.io/" class="markup--anchor markup--li-anchor">Openbase</a> — Help developers choose the right JS package for any task — through user reviews and insights about packages' popularity, reliability, activity and more. (<a href="https://news.ycombinator.com/item?id=23833441" class="markup--anchor markup--li-anchor">HN</a>)</span>
+-   <span id="9b02"><a href="https://openbase.io/" class="markup--anchor markup--li-anchor">Openbase</a> — Help developers choose the right JS package for any task — through user reviews and insights about packages’ popularity, reliability, activity and more. (<a href="https://news.ycombinator.com/item?id=23833441" class="markup--anchor markup--li-anchor">HN</a>)</span>
 -   <span id="7a1d"><a href="https://github.com/bashojs/basho" class="markup--anchor markup--li-anchor">Basho</a> — Shell Automation with Plain JavaScript. (<a href="https://bashojs.org/" class="markup--anchor markup--li-anchor">Docs</a>)</span>
 -   <span id="e78e"><a href="https://gist.github.com/jesstelford/9a35d20a2aa044df8bf241e00d7bc2d0" class="markup--anchor markup--li-anchor">What is the JS Event Loop and Call Stack?</a></span>
 -   <span id="010d"><a href="https://gist.github.com/jesstelford/bbb30b983bddaa6e5fef2eb867d37678" class="markup--anchor markup--li-anchor">Starving the Event Loop with microtasks</a></span>
@@ -205,7 +206,7 @@ Everyone's seen the 'Awesome' lists on GitHub… and they are indeed awesome… 
 -   <span id="9d33"><a href="https://github.com/elsaland/elsa" class="markup--anchor markup--li-anchor">Elsa</a> — Minimal, fast and secure QuickJS wrapper written in Go. (<a href="https://news.ycombinator.com/item?id=24626655" class="markup--anchor markup--li-anchor">HN</a>)</span>
 -   <span id="edda"><a href="https://github.com/theduke/quickjs-rs" class="markup--anchor markup--li-anchor">quickjs-rs</a> — Rust wrapper for QuickJS.</span>
 -   <span id="f6eb"><a href="https://github.com/RDambrosio016/RSLint" class="markup--anchor markup--li-anchor">RSLint</a> — JavaScript linter written in Rust designed to be as fast as possible, customizable, and easy to use.</span>
--   <span id="8963"><a href="https://www.youtube.com/playlist?list=PLlrxD0HtieHhW0NCG7M536uHGOtJ95Ut2" class="markup--anchor markup--li-anchor">Beginner's Series to: JavaScript by Microsoft</a> (<a href="https://github.com/microsoft/beginners-intro-javascript-node" class="markup--anchor markup--li-anchor">Code</a>)</span>
+-   <span id="8963"><a href="https://www.youtube.com/playlist?list=PLlrxD0HtieHhW0NCG7M536uHGOtJ95Ut2" class="markup--anchor markup--li-anchor">Beginner’s Series to: JavaScript by Microsoft</a> (<a href="https://github.com/microsoft/beginners-intro-javascript-node" class="markup--anchor markup--li-anchor">Code</a>)</span>
 -   <span id="6121"><a href="https://shkspr.mobi/blog/2020/10/please-stop-using-cdns-for-external-javascript-libraries/" class="markup--anchor markup--li-anchor">Please stop using CDNs for external Javascript libraries (2020)</a> (<a href="https://lobste.rs/s/mpznhm/please_stop_using_cdns_for_external" class="markup--anchor markup--li-anchor">Lobsters</a>) (<a href="https://news.ycombinator.com/item?id=24745194" class="markup--anchor markup--li-anchor">HN</a>)</span>
 -   <span id="b998"><a href="https://github.com/pikapkg/esm-hmr" class="markup--anchor markup--li-anchor">ESM Hot Module Replacement (ESM-HMR) Spec</a></span>
 -   <span id="371d"><a href="https://github.com/marvinhagemeister/esbuild-js" class="markup--anchor markup--li-anchor">esbuild-js</a> — es-build implemented in JS.</span>
@@ -227,7 +228,7 @@ Everyone's seen the 'Awesome' lists on GitHub… and they are indeed awesome… 
 -   <span id="9f6b"><a href="https://github.com/caderek/benny" class="markup--anchor markup--li-anchor">Benny</a> — Dead simple benchmarking framework for JS/TS libs.</span>
 -   <span id="def2"><a href="https://11sigma.com/blog/functional-programming-in-js-part-i-composition" class="markup--anchor markup--li-anchor">Functional Programming in JS — Composition (Currying, Lodash and Ramda) (2020)</a></span>
 -   <span id="4421"><a href="https://www.taniarascia.com/javascript-modules-import-export/" class="markup--anchor markup--li-anchor">Understanding Modules, Import and Export in JavaScript (2020)</a></span>
--   <span id="c4c2"><a href="https://github.com/sindresorhus/meta/issues/7" class="markup--anchor markup--li-anchor">Intent to stop using 'null' in my JS code</a> (<a href="https://news.ycombinator.com/item?id=24956156" class="markup--anchor markup--li-anchor">HN</a>)</span>
+-   <span id="c4c2"><a href="https://github.com/sindresorhus/meta/issues/7" class="markup--anchor markup--li-anchor">Intent to stop using ‘null’ in my JS code</a> (<a href="https://news.ycombinator.com/item?id=24956156" class="markup--anchor markup--li-anchor">HN</a>)</span>
 -   <span id="80c6"><a href="https://dmitripavlutin.com/javascript-prototypal-inheritance/" class="markup--anchor markup--li-anchor">What Makes JavaScript JavaScript? Prototypal Inheritance (2020)</a></span>
 -   <span id="07aa"><a href="https://github.com/antfu/ni" class="markup--anchor markup--li-anchor">ni</a> — Use the right package manager. Detect whether to use npm/yarn/pnpm.</span>
 -   <span id="ad0d"><a href="https://pitayan.com/posts/modernest-lib-hello-world/" class="markup--anchor markup--li-anchor">Making a modern JS library in 2020</a></span>
@@ -244,7 +245,7 @@ Everyone's seen the 'Awesome' lists on GitHub… and they are indeed awesome… 
 -   <span id="c08d">​<a href="https://estimator.dev/" class="markup--anchor markup--li-anchor">EStimator.dev</a> — Calculate the size and performance impact of switching to modern JavaScript syntax. (<a href="https://github.com/GoogleChromeLabs/estimator.dev" class="markup--anchor markup--li-anchor">Code</a>)</span>
 -   <span id="75d9">​<a href="https://web.dev/publish-modern-javascript/" class="markup--anchor markup--li-anchor">Publish, ship, and install modern JavaScript for faster applications (2020)</a>​</span>
 -   <span id="ca35">​<a href="https://github.com/mikeal/ipjs" class="markup--anchor markup--li-anchor">Universal JavaScript Build and Packaging</a>​</span>
--   <span id="9312">​<a href="https://mrale.ph/blog/2018/02/03/maybe-you-dont-need-rust-to-speed-up-your-js.html" class="markup--anchor markup--li-anchor">Maybe you don't need Rust and WASM to speed up your JS (2018)</a>​</span>
+-   <span id="9312">​<a href="https://mrale.ph/blog/2018/02/03/maybe-you-dont-need-rust-to-speed-up-your-js.html" class="markup--anchor markup--li-anchor">Maybe you don’t need Rust and WASM to speed up your JS (2018)</a>​</span>
 -   <span id="7a8a">​<a href="https://github.com/microsoft/lage" class="markup--anchor markup--li-anchor">lage</a> — Task runner in JS monorepos. (<a href="https://microsoft.github.io/lage/" class="markup--anchor markup--li-anchor">Web</a>)</span>
 -   <span id="4194">​<a href="https://github.com/google/module-server" class="markup--anchor markup--li-anchor">Module Server</a> — System for efficient serving of CommonJS modules to web browsers.</span>
 -   <span id="1ded">​<a href="https://blog.sessionstack.com/how-javascript-works-exceptions-best-practices-for-synchronous-and-asynchronous-environments-39f66b59f012" class="markup--anchor markup--li-anchor">How JavaScript works: exceptions + best practices for synchronous and asynchronous code (2021)</a>​</span>
@@ -267,22 +268,19 @@ Everyone's seen the 'Awesome' lists on GitHub… and they are indeed awesome… 
 
 If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong>
-<br/>
+**bgoonz’s gists**  
 
-<em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…*gist.github.com<a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong>
-<br/>
+**bgoonz — Overview**  
 
-<em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…*github.com<a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 Or checkout my personal resource Site:
 
-<a href="https://web-dev-resource-hub.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://web-dev-resource-hub.netlify.app/"><strong>Web-Dev-Hub</strong>
-<br/>
+**Web-Dev-Hub**  
 
-<em>Edit description</em>web-dev-resource-hub.netlify.app</a><a href="https://web-dev-resource-hub.netlify.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
+*Edit description*web-dev-resource-hub.netlify.app<a href="https://web-dev-resource-hub.netlify.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [March 18, 2021](https://medium.com/p/243255451e74).
 

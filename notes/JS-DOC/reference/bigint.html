@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>bigint</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="bigint">BigInt</h1>
+<p><code>BigInt</code> is a built-in object whose constructor returns a <code>bigint</code> <a href="https://developer.mozilla.org/en-US/docs/Glossary/Primitive">primitive</a> — also called a <strong>BigInt value</strong>, or sometimes just a <strong>BigInt</strong> — to represent whole numbers larger than 2<sup>53</sup> - 1 (<a href="number/max_safe_integer"><code>Number.MAX_SAFE_INTEGER</code></a>), which is the largest number JavaScript can represent with a <code>number</code> <a href="https://developer.mozilla.org/en-US/docs/Glossary/Primitive">primitive</a> (or <em>Number value</em>). BigInt values can be used for arbitrarily large integers.</p>
+<h2 id="description">Description</h2>
+<p>A <strong>BigInt value</strong>, also sometimes just called a <strong>BigInt</strong>, is a <code>bigint</code> <a href="https://developer.mozilla.org/en-US/docs/Glossary/Primitive">primitive</a>, created by appending <code>n</code> to the end of an integer literal, or by calling the <a href="bigint/bigint"><code>BigInt()</code></a> constructor (but without the <code>new</code> operator) and giving it an integer value or string value.</p>
+<pre><code>const previouslyMaxSafeInteger = 9007199254740991n
+
+const alsoHuge = BigInt(9007199254740991)
+// ↪ 9007199254740991n
+
+const hugeString = BigInt(&quot;9007199254740991&quot;)
+// ↪ 9007199254740991n
+
+const hugeHex = BigInt(&quot;0x1fffffffffffff&quot;)
+// ↪ 9007199254740991n
+
+const hugeOctal = BigInt(&quot;0o377777777777777777&quot;)
+// ↪ 9007199254740991n
+
+const hugeBin = BigInt(&quot;0b11111111111111111111111111111111111111111111111111111&quot;)
+// ↪ 9007199254740991n</code></pre>
+<p>BigInt values are similar to Number values in some ways, but also differ in a few key matters: A BigInt value cannot be used with methods in the built-in <a href="math"><code>Math</code></a> object and cannot be mixed with a Number value in operations; they must be coerced to the same type. Be careful coercing values back and forth, however, as the precision of a BigInt value may be lost when it is coerced to a Number value.</p>
+<h3 id="type-information">Type information</h3>
+<p>When tested against <code>typeof</code>, a BigInt value (<code>bigint</code> primitive) will give “<code>bigint</code>”:</p>
+<pre><code>typeof 1n === &#39;bigint&#39;           // true
+typeof BigInt(&#39;1&#39;) === &#39;bigint&#39;  // true</code></pre>
+<p>A BigInt value can also be wrapped in an <code>Object</code>:</p>
+<pre><code>typeof Object(1n) === &#39;object&#39;  // true</code></pre>
+<h3 id="operators">Operators</h3>
+<p>The following operators may be used with BigInt values or object-wrapped BigInt values:</p>
+<pre><code>+ * - % **</code></pre>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators">Bitwise operators</a> are supported as well, except <code>&gt;&gt;&gt;</code> (zero-fill right shift), as every BigInt value is signed.</p>
+<p>Also unsupported is the unary operator (<code>+</code>), <a href="https://github.com/tc39/proposal-bigint/blob/master/ADVANCED.md#dont-break-asmjs">in order to not break asm.js</a>.</p>
+<pre><code>const previousMaxSafe = BigInt(Number.MAX_SAFE_INTEGER)
+// ↪ 9007199254740991n
+
+const maxPlusOne = previousMaxSafe + 1n
+// ↪ 9007199254740992n
+
+const theFuture = previousMaxSafe + 2n
+// ↪ 9007199254740993n, this works now!
+
+const multi = previousMaxSafe * 2n
+// ↪ 18014398509481982n
+
+const subtr = multi - 10n
+// ↪ 18014398509481972n
+
+const mod = multi % 10n
+// ↪ 2n
+
+const bigN = 2n ** 54n
+// ↪ 18014398509481984n
+
+bigN * -1n
+// ↪ -18014398509481984n</code></pre>
+<p>The <code>/</code> operator also works as expected with whole numbers — but operations with a fractional result will be truncated when used with a BigInt value — they won’t return any fractional digits.</p>
+<pre><code>const expected = 4n / 2n
+// ↪ 2n
+
+const truncated = 5n / 2n
+// ↪ 2n, not 2.5n</code></pre>
+<h3 id="comparisons">Comparisons</h3>
+<p>A BigInt value is not strictly equal to a Number value, but it <em>is</em> loosely so:</p>
+<pre><code>0n === 0
+// ↪ false
+
+0n == 0
+// ↪ true</code></pre>
+<p>A Number value and a BigInt value may be compared as usual:</p>
+<pre><code>1n &lt; 2
+// ↪ true
+
+2n &gt; 1
+// ↪ true
+
+2 &gt; 2
+// ↪ false
+
+2n &gt; 2
+// ↪ false
+
+2n &gt;= 2
+// ↪ true</code></pre>
+<p>BigInt values and Number values may be mixed in arrays and sorted:</p>
+<pre><code>const mixed = [4n, 6, -12n, 10, 4, 0, 0n]
+// ↪  [4n, 6, -12n, 10, 4, 0, 0n]
+
+mixed.sort() // default sorting behavior
+// ↪  [ -12n, 0, 0n, 10, 4n, 4, 6 ]
+
+mixed.sort((a, b) =&gt; a - b)
+// won&#39;t work since subtraction will not work with mixed types
+// TypeError: can&#39;t convert BigInt value to Number value
+
+// sort with an appropriate numeric comparator
+mixed.sort((a, b) =&gt; (a &lt; b) ? -1 : ((a &gt; b) ? 1 : 0))
+// ↪  [ -12n, 0, 0n, 4n, 4, 6, 10 ]</code></pre>
+<p>Note that comparisons with <code>Object</code>-wrapped BigInt values act as with other objects, only indicating equality when the same object instance is compared:</p>
+<pre><code>0n === Object(0n)          // false
+Object(0n) === Object(0n)  // false
+
+const o = Object(0n)
+o === o                    // true</code></pre>
+<h3 id="conditionals">Conditionals</h3>
+<p>A BigInt value behaves like a Number value in cases where:</p>
+<ul>
+<li>it is converted to a <a href="boolean"><code>Boolean</code></a>: via the <a href="boolean"><code>Boolean</code></a> function;</li>
+<li>when used with <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators">logical operators</a> <code>||</code>, <code>&amp;&amp;</code>, and <code>!</code>; or</li>
+<li>within a conditional test like an <a href="../statements/if...else"><code>if</code></a> statement.</li>
+</ul>
+<!-- -->
+<pre><code>if (0n) {
+  console.log(&#39;Hello from the if!&#39;)
+} else {
+  console.log(&#39;Hello from the else!&#39;)
+}
+
+// ↪ &quot;Hello from the else!&quot;
+
+0n || 12n
+// ↪ 12n
+
+0n &amp;&amp; 12n
+// ↪ 0n
+
+Boolean(0n)
+// ↪ false
+
+Boolean(12n)
+// ↪ true
+
+!12n
+// ↪ false
+
+!0n
+// ↪ true</code></pre>
+<h2 id="constructor">Constructor</h2>
+<p><a href="bigint/bigint"><code>BigInt()</code></a><br />
+Creates a new BigInt value.</p>
+<h2 id="static-methods">Static methods</h2>
+<p><a href="bigint/asintn"><code>BigInt.asIntN()</code></a><br />
+Clamps a BigInt value to a signed integer value, and returns that value.</p>
+<p><a href="bigint/asuintn"><code>BigInt.asUintN()</code></a><br />
+Clamps a BigInt value to an unsigned integer value, and returns that value.</p>
+<h2 id="instance-methods">Instance methods</h2>
+<p><a href="bigint/tolocalestring"><code>BigInt.prototype.toLocaleString()</code></a><br />
+Returns a string with a language-sensitive representation of this BigInt value. Overrides the <a href="object/tolocalestring"><code>Object.prototype.toLocaleString()</code></a> method.</p>
+<p><a href="bigint/tostring"><code>BigInt.prototype.toString()</code></a><br />
+Returns a string representing this BigInt value in the specified radix (base). Overrides the <a href="object/tostring"><code>Object.prototype.toString()</code></a> method.</p>
+<p><a href="bigint/valueof"><code>BigInt.prototype.valueOf()</code></a><br />
+Returns this BigInt value. Overrides the <a href="object/valueof"><code>Object.prototype.valueOf()</code></a> method.</p>
+<h2 id="usage-recommendations">Usage recommendations</h2>
+<h3 id="coercion">Coercion</h3>
+<p>Because coercing between Number values and BigInt values can lead to loss of precision, the following are recommended:</p>
+<ul>
+<li>Only use a BigInt value when values greater than 2<sup>53</sup> are reasonably expected.</li>
+<li>Don’t coerce between BigInt values and Number values.</li>
+</ul>
+<h3 id="cryptography">Cryptography</h3>
+<p>The operations supported on BigInt values are not constant-time. BigInt values are therefore <a href="https://www.chosenplaintext.ca/articles/beginners-guide-constant-time-cryptography.html">unsuitable for use in cryptography</a>.</p>
+<h3 id="use-within-json">Use within JSON</h3>
+<p>Using <a href="json/stringify"><code>JSON.stringify()</code></a> with any BigInt value will raise a <code>TypeError</code>, as BigInt values aren’t serialized in JSON by default. However, you can implement your own <code>toJSON</code> method:</p>
+<pre><code>BigInt.prototype.toJSON = function() { return this.toString()  }</code></pre>
+<p>Instead of throwing, <code>JSON.stringify</code> now produces a string like this:</p>
+<pre><code>JSON.stringify(BigInt(1))
+// &#39;&quot;1&quot;&#39;</code></pre>
+<h2 id="examples">Examples</h2>
+<h3 id="calculating-primes">Calculating Primes</h3>
+<pre><code>// Returns true if the passed BigInt value is a prime number
+function isPrime(p) {
+  for (let i = 2n; i * i &lt;= p; i++) {
+    if (p % i === 0n) return false;
+  }
+  return true
+}
+
+// Takes a BigInt value as an argument, returns nth prime number as a BigInt value
+function nthPrime(nth) {
+  let maybePrime = 2n
+  let prime = 0n
+
+  while (nth &gt;= 0n) {
+    if (isPrime(maybePrime)) {
+      nth--
+      prime = maybePrime
+    }
+    maybePrime++
+  }
+
+  return prime
+}
+
+nthPrime(20n)
+// ↪ 73n</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-bigint-objects">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-bigint-objects</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>BigInt</code></p>
+<p>67</p>
+<p>79</p>
+<p>68</p>
+<p>No</p>
+<p>54</p>
+<p>14</p>
+<p>67</p>
+<p>67</p>
+<p>68</p>
+<p>48</p>
+<p>14</p>
+<p>9.0</p>
+<p><code>BigInt</code></p>
+<p>67</p>
+<p>79</p>
+<p>68</p>
+<p>No</p>
+<p>54</p>
+<p>14</p>
+<p>67</p>
+<p>67</p>
+<p>68</p>
+<p>48</p>
+<p>14</p>
+<p>9.0</p>
+<p><code>asIntN</code></p>
+<p>67</p>
+<p>79</p>
+<p>68</p>
+<p>No</p>
+<p>54</p>
+<p>14</p>
+<p>67</p>
+<p>67</p>
+<p>68</p>
+<p>48</p>
+<p>14</p>
+<p>9.0</p>
+<p><code>asUintN</code></p>
+<p>67</p>
+<p>79</p>
+<p>68</p>
+<p>No</p>
+<p>54</p>
+<p>14</p>
+<p>67</p>
+<p>67</p>
+<p>68</p>
+<p>48</p>
+<p>14</p>
+<p>9.0</p>
+<p><code>toLocaleString</code></p>
+<p>67</p>
+<p>79</p>
+<p>68</p>
+<p>No</p>
+<p>54</p>
+<p>14</p>
+<p>67</p>
+<p>67</p>
+<p>68</p>
+<p>48</p>
+<p>14</p>
+<p>9.0</p>
+<p><code>toString</code></p>
+<p>67</p>
+<p>79</p>
+<p>68</p>
+<p>No</p>
+<p>54</p>
+<p>14</p>
+<p>67</p>
+<p>67</p>
+<p>68</p>
+<p>48</p>
+<p>14</p>
+<p>9.0</p>
+<p><code>valueOf</code></p>
+<p>67</p>
+<p>79</p>
+<p>68</p>
+<p>No</p>
+<p>54</p>
+<p>14</p>
+<p>67</p>
+<p>67</p>
+<p>68</p>
+<p>48</p>
+<p>14</p>
+<p>9.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="number"><code>Number</code></a></li>
+<li><a href="number/max_safe_integer"><code>Number.MAX_SAFE_INTEGER</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt</a></p>
+</body>
+</html>

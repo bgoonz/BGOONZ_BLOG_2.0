@@ -1,8 +1,10 @@
-# String.prototype.startsWith()
+String.prototype.startsWith()
+=============================
 
 The `startsWith()` method determines whether a string begins with the characters of a specified string, returning `true` or `false` as appropriate.
 
-## Syntax
+Syntax
+------
 
     startsWith(searchString)
     startsWith(searchString, position)
@@ -19,11 +21,13 @@ The position in this string at which to begin searching for `searchString`. Defa
 
 `true` if the given characters are found at the beginning of the string; otherwise, `false`.
 
-## Description
+Description
+-----------
 
 This method lets you determine whether or not a string begins with another string. This method is case-sensitive.
 
-## Examples
+Examples
+--------
 
 ### Using startsWith()
 
@@ -34,7 +38,8 @@ This method lets you determine whether or not a string begins with another strin
     console.log(str.startsWith('not to be'))      // false
     console.log(str.startsWith('not to be', 10))  // true
 
-## Polyfill
+Polyfill
+--------
 
 This method has been added to the ECMAScript 2015 specification and may not be available in all JavaScript implementations yet. However, you can polyfill `String.prototype.startsWith()` with the following snippet:
 
@@ -49,14 +54,14 @@ This method has been added to the ECMAScript 2015 specification and may not be a
 
 A more robust (fully ES2015 specification compliant), but less performant and compact, Polyfill is available [on GitHub by Mathias Bynens](https://github.com/mathiasbynens/String.prototype.startsWith).
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.startswith">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-string.prototype.startswith</span></td></tr></tbody></table>
 
-<span class="small">#sec-string.prototype.startswith</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -112,13 +117,13 @@ No
 
 3.0
 
-## See also
+See also
+--------
 
 -   [`String.prototype.endsWith()`](endswith)
 -   [`String.prototype.includes()`](includes)
 -   [`String.prototype.indexOf()`](indexof)
 -   [`String.prototype.lastIndexOf()`](lastindexof)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith</a>

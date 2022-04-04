@@ -1,13 +1,17 @@
-# To clear the contents from <file>:
+To clear the contents from :
+============================
 
-truncate -s 0 <file>
+truncate -s 0
 
-# To truncate <file> to 100 bytes:
+To truncate to 100 bytes:
+=========================
 
-truncate -s 100 <file>
+truncate -s 100
 
-# To truncate <file> to 100 KB:
+To truncate to 100 KB:
+======================
 
-truncate -s 100K <file>
+truncate -s 100K
 
-# (M, G, T, P, E, Z, and Y may be used in place of "K" as required.)
+(M, G, T, P, E, Z, and Y may be used in place of “K” as required.)
+==================================================================

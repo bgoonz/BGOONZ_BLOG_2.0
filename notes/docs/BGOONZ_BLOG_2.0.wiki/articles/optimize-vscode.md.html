@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>optimize-vscode.md</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="vs-code-performance---how-to-optimize-visual-studio-code-and-choose-the-best-extensions">VS Code Performance - How to Optimize Visual Studio Code and Choose the “Best” Extensions</h1>
+<blockquote>
+<h2 id="excerpt">Excerpt</h2>
+<p>Visual Studio Code (VS Code) is designed to be lightweight. It has a tight set of core features, and you can add extra features through extensions. But performance will inevitably be affected as your collection of extensions grows. Do you evaluate the performance of an extension before installing it? What</p>
+</blockquote>
+<hr />
+<p>Visual Studio Code (VS Code) is designed to be lightweight. It has a tight set of core features, and you can add extra features through extensions.</p>
+<p>But performance will inevitably be affected as your collection of extensions grows.</p>
+<p>Do you evaluate the performance of an extension before installing it? What do you do if the startup of VS Code grows? From the absence of people writing about this topic, I guess people don’t know.</p>
+<p>In this article, I will explain the factors that affect the performance of an extension. I will also grade the performance of some popular extensions. Then I will outline how you can audit the performance of your existing extension suite, and give some general performance tips.</p>
+<h2 id="minimum-hardware-and-software-requirements">Minimum hardware and software requirements</h2>
+<p>Before we get into extensions, let’s talk briefly about what the minimum requirements for running VS Code are.</p>
+<p>A computer bought in the last few years with modest specifications should be able to run VS Code without any issues.</p>
+<h3 id="hardware">Hardware</h3>
+<p>The minimum hardware I recommend is:</p>
+<ul>
+<li>1.6 GHz or faster processor;</li>
+<li>At least 1 GB of RAM;</li>
+<li>At least 200MB Disk Space.</li>
+</ul>
+<h3 id="operating-systems">Operating Systems</h3>
+<p>VS Code has been tested on the following Operating Systems:</p>
+<ul>
+<li>OS X Yosemite and later.</li>
+<li>Windows 7 (with .NET Framework 4.5.2), 8.0, 8.1 and 10 (32-bit and 64-bit).</li>
+<li>Linux (Debian): Ubuntu Desktop 14.04, Debian 7.</li>
+<li>Linux (Red Hat): Red Hat Enterprise Linux 7, CentOS 7, Fedora 23.</li>
+</ul>
+<h3 id="unofficial-community-builds-for-raspberry-pi-and-chromebooks">Unofficial community builds for Raspberry Pi and Chromebooks</h3>
+<p>Jay Rodgers released an open-source project that performs <a href="http://code.headmelted.com/">nightly builds of VS Code for Raspberry Pi and Chromebooks</a>.</p>
+<blockquote>
+<p>I’ve maintained the project for a few years now and it has expanded from providing binaries for Pi to providing support and tools to get VS Code running on low-end ARM devices that might not otherwise support it like Chromebooks (which make up about 60% of the devices in schools now).</p>
+</blockquote>
+<p>If you want to try it out for yourself, you can follow the instructions he has laid out. He’s done a lot of work to make it as straightforward as possible.</p>
+<h2 id="not-all-extensions-are-created-equal">Not all extensions are created equal</h2>
+<p><img src="https://www.freecodecamp.org/news/content/images/2020/10/blind-judgment.jpg" alt="extension inequality parody" /><br />
+Edit of “Blindfolded Lady Justice” by <a href="https://unsplash.com/@tingeyinjurylawfirm?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Tingey Injury Law Firm</a> on <a href="https://unsplash.com/s/photos/equal?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></p>
+<p>Extensions are loaded and unloaded under different conditions. The author of the extension decides this. This is specified through <em>Activation Events</em>, which we will discuss later.</p>
+<p>There is no feedback in the editor indicating if an extension is active or not. So how do we know when an extension is active?</p>
+<p>Most extensions are written in TypeScript, but they can also be written in JavaScript. Extensions can include Node modules as dependencies.</p>
+<p>You can bundle and minify your source files into a single file if you wish. The <a href="https://code.visualstudio.com/api/working-with-extensions/bundling-extension">VS Code Docs</a> recommends doing this to improve loading times, but many extensions don’t do this. These choices affect their performance.</p>
+<p>Extensions are mostly open source side projects written by developers. The quality of the code will vary. The maintenance of the code will vary.</p>
+<p>Extensions written by Microsoft are not immune to these shortcomings, but they are less likely to suffer from them.</p>
+<h2 id="criteria-for-selecting-an-extension">Criteria for selecting an extension</h2>
+<p>Most lists of extensions talk about the cool features, and little else. If something is fire, please tell me a bit about the fuel and fumes also. ???</p>
+<p>Some of the criteria that I suggest involves looking at source code. Don’t be put off by that. To gather the key facts only takes a couple of minutes. I will show you how!</p>
+<ol type="1">
+<li><p><strong>Is the feature I need available in VS Code already?</strong></p>
+<p>I demonstrated that you don’t need many popular extensions in an article <a href="https://roboleary.net/vscode/2020/08/05/dont-need-extensions.html">“VS Code: you don’t need that extension”</a>. You can consult the <a href="https://code.visualstudio.com/Docs">VS Code docs</a> to check on a particular feature.</p></li>
+<li><p><strong>Does the extension have the features I need?</strong></p>
+<p>Consult the extension page on Visual Studio Marketplace to find this out.</p></li>
+<li><p><strong>When is an extension loaded and active?</strong></p>
+<p>I’ll discuss this in detail in the section <a href="https://www.freecodecamp.org/news/optimize-vscode-performance-best-extensions/#activation-events">Activation Events</a>. You need to check the <em>package.json</em> of the source code to find this out in advance.</p>
+<p>You can run the <strong>Developer: Startup Performance</strong> command to see the Activation Events of installed extensions. I discuss this further in the section <a href="https://www.freecodecamp.org/news/optimize-vscode-performance-best-extensions/#how-to-audit-performance">How to audit performance.</a></p></li>
+<li><p><strong>Are resources optimized?</strong></p>
+<p>You need to check the source code to see if it uses a bundler. You can check the <em>package.json</em> to see if the <em>scripts</em> section has a pre-build step for bundling.</p>
+<p>The VSIX extension file is a compressed archive of files for the code and the listing in the marketplace. Developers often include unnecessary files. There is a <em>.vscodeignore</em> file to exclude files.</p>
+<p>The number of files that the VSIX contains has an impact on the cold activation time. The cold activation time is the first run of the extension after you install it. It tends to be slower than other times. I guess this is because the VSIX is uncompressed and cached.</p>
+<p>This is what the <a href="https://marketplace.visualstudio.com/items?itemName=octref.vetur">Vetur</a> extension looks like when you open it in <a href="https://www.7-zip.org/">7Zip</a>.</p></li>
+</ol>
+<figure>
+<img src="https://www.freecodecamp.org/news/content/images/2020/10/vetur-7zip.png" alt="vetur VSIX opened in 7zip" /><figcaption>vetur VSIX opened in 7zip</figcaption>
+</figure>
+<ol start="5" type="1">
+<li><p><strong>Have there been any performance issues reported recently, which are unresolved?</strong></p>
+<p>You can uncover these by auditing the performance of the extension. You need to check the issues on the Git repo also.</p></li>
+<li><p><strong>Does the code have tests?</strong></p>
+<p>The extension is going to be more susceptible to bugs without tests. You need to check the source code to see if there are tests.</p></li>
+<li><p><strong>Is it actively maintained?</strong></p>
+<p>The <em>Project Details</em> section of the extension page gives an overview of the activity of the public Git repo. In some cases, an extension may be “done”, so maintenance is not an important consideration.</p></li>
+</ol>
+<figure>
+<img src="https://www.freecodecamp.org/news/content/images/2020/10/marketplace-maintenance.png" alt="Marktetplace Page Project Details" /><figcaption>Marktetplace Page Project Details</figcaption>
+</figure>
+<h2 id="activation-events">Activation Events</h2>
+<p>Activation Events are events that trigger the activation of an extension. They define the conditions for loading and unloading an extension.</p>
+<p>The author of an extension declares this in the <code>activationEvents</code> field of the <code>package.json</code> (<a href="https://code.visualstudio.com/api/references/extension-manifest">Extension Manifest</a>).</p>
+<p>There are a range of Activation Events to choose from. An extension can listen to many Activation Events to yield a more specific scope.</p>
+<p>This is a Sequence Diagram of what happens when you launch VS Code. It gives you an idea of the chronology of events that occur, which affect when you can interact with the editor and use certain extensions.</p>
+<p><a href="https://cdn.imgpaste.net/2020/10/19/IDOqm.png"><img src="https://www.freecodecamp.org/news/content/images/2020/10/activation-events-2.svg" alt="launching VS Code" /></a></p>
+<p>Now, I will go through the most important Activation Events. I will start with the widest scope, and continue until I reach the narrowest scope.</p>
+<h3 id="startup-event">Startup event</h3>
+<p>The <code>*</code> Activation Event will activate an extension when VS Code starts up. These extensions will <strong>always be active</strong>. This impacts the startup time of VS Code.</p>
+<pre><code>&quot;activationEvents&quot;: [
+    &quot;*&quot;
+]</code></pre>
+<p>The VS Code docs gives the following advice:</p>
+<blockquote>
+<p>To ensure a great end user experience, please use this activation event in your extension only when no other activation events combination works in your use-case.</p>
+</blockquote>
+<p>In my opinion, there has to be a special case to grant an extension this scope. It is preferable to use at least <code>onStartUpFinished</code>.</p>
+<p><strong>Popular Extensions with this Activation Event</strong>: <a href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint">ES Lint</a> (11M installs), <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Live Server</a> (7.4 installs), <a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens">GitLens</a> (6.5M installs), <a href="https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify">Beautify</a> (5.4M installs), <a href="https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer">Bracket Pair Colorizer</a> (3.6M installs), <a href="https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory">Git History</a> (2.9M installs), <a href="https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync">Settings Sync</a> (2M installs), <a href="https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow">indent-rainbow</a> (1.1M installs).</p>
+<h3 id="onstartupfinished-event">onStartupFinished event</h3>
+<p>This extension will be activated <strong>sometime after VS Code starts up</strong>. This is like the <code>*</code> activation event, but it will not slow down VS Code’s startup.</p>
+<pre><code>&quot;activationEvents&quot;: [
+    &quot;onStartupFinished&quot;
+]</code></pre>
+<p><strong>Popular Extensions with this Activation Event</strong>: <a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode">Prettier</a> (8.5M installs).</p>
+<h3 id="onlanguage-event">onLanguage event</h3>
+<p>This extension will be activated whenever a file of a certain language is opened.</p>
+<pre><code>&quot;activationEvents&quot;: [
+    &quot;onLanguage:json&quot;,
+    &quot;onLanguage:markdown&quot;,
+    &quot;onLanguage:typescript&quot;
+]</code></pre>
+<p>The <code>onLanguage</code> event takes a <a href="https://code.visualstudio.com/docs/languages/identifiers">language identifier</a> value. You can declare as many languages as you wish.</p>
+<p><strong>Popular Extensions with this Activation Event</strong>: Most extensions in the <a href="https://marketplace.visualstudio.com/search?target=VSCode&amp;category=Programming%20Languages&amp;sortBy=Installs">“Programming Languages” category</a> in the Visual Studio Code Marketplace have an <em>onLanguage</em> entry along with other Activation Events, <a href="https://marketplace.visualstudio.com/items?itemName=octref.vetur">Vetur</a> (5.6M installs - active for <em>Vue</em> only), <a href="https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml">YAML</a> (4.3M installs - active for <em>YAML</em> only), <a href="https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments">Better Comments</a> (1.1M installs - active for supported languages only).</p>
+<h3 id="workspacecontains-event">workspaceContains event</h3>
+<p>This extension will be activated whenever you open a folder that contains at least one file that matches a glob pattern.</p>
+<pre><code>&quot;activationEvents&quot;: [
+    &quot;workspaceContains:**/package.json&quot;
+]</code></pre>
+<h3 id="oncommand-event">onCommand event</h3>
+<p>This extension will be activated whenever you invoke a command.</p>
+<pre><code>&quot;activationEvents&quot;: [
+        &quot;onCommand:vscode-docker.compose.down&quot;,
+        &quot;onCommand:vscode-docker.compose.restart&quot;,
+        &quot;onCommand:vscode-docker.compose.up&quot;,
+        ...
+]</code></pre>
+<h3 id="other-activation-events">Other Activation Events</h3>
+<p>You can read the <a href="https://code.visualstudio.com/api/references/activation-events">full list of Activation Events</a> in the reference docs.</p>
+<h3 id="do-extensions-set-a-specific-scope-consistently">Do extensions set a specific scope consistently?</h3>
+<p>No!</p>
+<p>Too many extensions use the <code>*</code> Activation Event.</p>
+<p>This is how I would grade the scope definition of some of the extensions I have used:</p>
+<ul>
+<li><strong>The Good</strong>: <a href="https://marketplace.visualstudio.com/items?itemName=octref.vetur">Vetur</a>, <a href="https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml">YAML</a>, <a href="https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments">Better Comments</a>.</li>
+<li><strong>The Bad</strong>:
+<ul>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode">Prettier</a>: It would be better to only target the languages it supports.</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one">Markdown All in One</a>: It is active when a markdown file is open, or the workspace contains a README.md. The latter seems unnecessary to me.</li>
+</ul></li>
+<li><strong>The Ugly</strong>: All extensions with the <code>*</code> <em>Activation Event</em> mentioned above.</li>
+</ul>
+<h2 id="what-impact-can-bundling-have-on-an-extensions-performance">What impact can bundling have on an extension’s performance?</h2>
+<p><img src="https://www.freecodecamp.org/news/content/images/2020/10/burger-bundle.jpg" alt="bundling a burger" /><br />
+Edit of untitled photo by <a href="https://unsplash.com/@pablomerchanm?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Pablo Merchán Montes</a> on <a href="https://unsplash.com/s/photos/burger?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></p>
+<p>It can make a big impact!</p>
+<p>John Papa speaks about this in his article “<a href="https://dev.to/azure/is-your-vs-code-extension-slow-heres-how-to-speed-it-up-4d66">Is Your VS Code Extension Slow? Here’s How to Speed it Up!</a>”.</p>
+<p>He reveals the results of an overhaul of 2 of Microsoft’s extensions:</p>
+<ol type="1">
+<li><a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account&amp;wt.mc_id=devto-blog-jopapa">Azure Account</a>: Bundling reduced activation time by 50%. The extension size was reduced from 6.2MB to 840KB through bundling and excluding more files (in the <em>.vscodeignore</em> file).</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker&amp;wt.mc_id=devto-blog-jopapa">Docker</a>: Bundling reduced activation time from 3.5 seconds to under 2 seconds. Also, a consideration is the cold activation time, which tends to be slower than other times (warm activation time). The cold activation time went from a whopping 20 seconds to 2 seconds.</li>
+</ol>
+<p>You can improve your favourite extension by raising this issue with the author of an extension. The <a href="https://code.visualstudio.com/api/working-with-extensions/bundling-extension">Bundling Extensions User Guide</a> explains how.</p>
+<h2 id="how-to-audit-performance">How to audit performance</h2>
+<p>You can run the <strong>Developer: Show Running Extensions</strong> command to get the basic stats about the running extensions. It sorts the extensions from longest to shortest activation time. The time is titled “Startup Activation” if the extension is loaded on startup.</p>
+<p>As you can see from the screenshot, it also gives warnings about performance issues.</p>
+<figure>
+<img src="https://www.freecodecamp.org/news/content/images/2020/10/running-extensions.png" alt="running extensions" /><figcaption>running extensions</figcaption>
+</figure>
+<p>As mentioned previously, it is worth noting that the cold activation time (the first time an extension is run) and warm activation time (second run and later) can vary by a lot. For this reason, you should base typical performance of an extension on a second run.</p>
+<p>You can audit the startup performance by running the <strong>Developer: Startup Performance</strong> command. It opens a document with detailed stats about topics such as: system info, performance marks, extension activation stats, loader stats for modules, and more.</p>
+<figure>
+<img src="https://www.freecodecamp.org/news/content/images/2020/10/startup-performance1.png" alt="startup performance system info" /><figcaption>startup performance system info</figcaption>
+</figure>
+<p>The results are specific to the current project and any open files when you execute the command.</p>
+<p>The <em>Extension Activation Stats</em> section gives a more detailed overview of extension performance. It is very useful for seeing the <em>Activation Events</em> without needing to check the source code of an extension.</p>
+<figure>
+<img src="https://www.freecodecamp.org/news/content/images/2020/10/startup-performance.png" alt="startup performance" /><figcaption>startup performance</figcaption>
+</figure>
+<p>You can see that VS Code loads its own “core” extensions for Git, Emmet, and a few others on startup also. ? You don’t want the list of extensions loading on startup to get too long!</p>
+<h2 id="scorecard-for-some-of-the-most-popular-extensions">Scorecard for some of the most popular extensions</h2>
+<p>I am focusing on extensions that I have used myself here. I don’t want to speculate on extensions I haven’t really used.</p>
+<h3 id="eslint">ESLint</h3>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint">ESLint</a> is the most popular static analysis tool for JavaScript and TypeScript. It highlights problems in the editor with red squiggly lines.</p>
+<ul>
+<li><strong>Author</strong>: Microsoft.</li>
+<li><strong>Number of installs</strong>: 11 million.</li>
+<li><strong>Marketplace Rating:</strong> 4.3/5 (156).</li>
+<li><strong>Core features</strong>: Reporting syntax problems. Ability to automatically fix some problems.</li>
+<li><strong>Activation Events</strong>: On startup (<code>*</code>). It may be changed to <code>onStartupFinished</code> in the next release. See <a href="https://github.com/microsoft/vscode-eslint/issues/1068">this open issue</a> for explanation of why this choice was made.</li>
+<li><strong>Are resources optimized</strong>: Yes.</li>
+<li><strong>File size</strong>: 133KB.</li>
+<li><strong>Activation time on my system</strong>: 39ms.</li>
+<li><strong>Test suite</strong>: Appears to be very basic. Just a minor test of glob patterns.</li>
+<li><strong>Actively maintained</strong>: Yes.</li>
+<li><strong>Alternative extensions:</strong> <a href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.jshint">JS Hint</a>, <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin">TS Lint</a>.</li>
+</ul>
+<p>ESLint is a solid extension. The performance is excellent.</p>
+<p>It is disappointing that it is loaded on startup. If this bothers you, you can try <a href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.jshint">JS Hint</a> (written by the same developer) for JavaScript, and <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin">TS Lint</a> for TypeScript. Or you can fork the project and change it yourself!</p>
+<p>It is actively maintained. It does not have a significant test suite.</p>
+<p><strong>Score: 8/10</strong></p>
+<h3 id="prettier---code-formatter">Prettier - Code Formatter</h3>
+<p><a href="https://prettier.io/">Prettier</a> is an opinionated code formatter. It currently supports the following languages: JavaScript, TypeScript, Flow, JSX, JSON, CSS, SCSS, Less, HTML, Vue, Angular, GraphQL, Markdown, YAML.</p>
+<ul>
+<li><strong>Author</strong>: Prettier.</li>
+<li><strong>Number of installs</strong>: 8.5 million.</li>
+<li><strong>Marketplace Rating:</strong> 3.8/5 (204).</li>
+<li><strong>Core features</strong>: Formatting code.</li>
+<li><strong>Activation Events</strong>: <code>onStartupFinished</code>.</li>
+<li><strong>Are resources optimized</strong>: Yes.</li>
+<li><strong>File size</strong>: 2.1MB.</li>
+<li><strong>Activation time on my system</strong>: 286ms.</li>
+<li><strong>Test suite</strong>: Yes. Coverage looks decent.</li>
+<li><strong>Actively maintained</strong>: Yes.</li>
+<li><strong>Alternative extensions:</strong> <a href="https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify">Beautify</a>.</li>
+</ul>
+<p>Prettier does a great job at simplifying code formatting.</p>
+<p>The performance is fine, but maybe it could be improved. It is on the slower side of the activation spectrum.</p>
+<p>The activation scope is very wide. It would be preferable to target the supported languages only. I encountered an issue with Markdown formatting, so I do not use to format Markdown currently. These are things that can be changed easily.</p>
+<p><strong>Score: 7.5/10.</strong></p>
+<h3 id="live-server">Live Server</h3>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Live Server</a> launches a local development server to give a live preview of your HTML and SVG files.</p>
+<ul>
+<li><strong>Author</strong>: Retwick Dey.</li>
+<li><strong>Number of installs</strong>: 7.5 million.</li>
+<li><strong>Marketplace Rating:</strong> 4.5/5 (269).</li>
+<li><strong>Core features</strong>: HTML and SVG live preview.</li>
+<li><strong>Activation Events</strong>: On startup (<code>*</code>).</li>
+<li><strong>Are resources optimized</strong>: No.</li>
+<li><strong>File size</strong>: 2.5MB.</li>
+<li><strong>Activation time on my system</strong>: 2513ms.</li>
+<li><strong>Test suite</strong>: Yes. Basic tests.</li>
+<li><strong>Actively maintained</strong>: No. Last commit was a year ago. The author of the extension is looking for a new maintainer.</li>
+<li><strong>Alternative extensions:</strong> I haven’t found one!</li>
+</ul>
+<p>When it works, it is a convenient extension to use.</p>
+<p>The performance is poor and it is no longer maintained.</p>
+<p>I would recommend becoming the maintainer and whipping it into shape. Or finding another extension for the job.</p>
+<p><strong>Score: 5/10.</strong></p>
+<h3 id="gitlens">GitLens</h3>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens">GitLens</a> helps visualize code authorship and explore Git repositories.</p>
+<ul>
+<li><strong>Author</strong>: Eric Amodio.</li>
+<li><strong>Number of installs</strong>: 6.5 million.</li>
+<li><strong>Marketplace Rating:</strong> 4.86/5 (387)</li>
+<li><strong>Core features</strong>: Visualization of code authorship at a glance. Rich sidebar views of git repos.</li>
+<li><strong>Activation Events</strong>: On startup (<code>*</code>).</li>
+<li><strong>Are resources optimized</strong>: Yes.</li>
+<li><strong>File size</strong>: 1.5MB.</li>
+<li><strong>Activation time on my system</strong>: 35ms.</li>
+<li><strong>Test suite</strong>: No.</li>
+<li><strong>Actively maintained</strong>: Yes, but recent activity is low. Last commit was 4 months ago.</li>
+<li><strong>Alternative extensions:</strong> None.</li>
+</ul>
+<p>GitLens is a good idea and can be helpful for gaining insights into a codebase.</p>
+<p>It is well-written and the performance is excellent.</p>
+<p>I have only used the extension of the blame annotations, but there are a lot of features and configuration options (135 individual settings!).</p>
+<p>There are settings to enable each of the features, which is a very good approach. You can toggle the codelens on and off easily.</p>
+<p>There has been a lull in activity recently. I don’t know if that is a temporary situation or not. So, it’s hard to tell how well the extensions will be supported in future. The author has details for supporting him.</p>
+<p><strong>Score: 9/10.</strong></p>
+<h3 id="vetur">Vetur</h3>
+<p>Vue language support.</p>
+<ul>
+<li><strong>Author</strong>: Pine Wu.</li>
+<li><strong>Number of installs</strong>: 5.6 million.</li>
+<li><strong>Marketplace Rating:</strong> 4.5/5 (117)</li>
+<li><strong>Core features</strong>: Syntax highlighting. Intellisense. Code Formatting.</li>
+<li><strong>Activation Events</strong>: <code>onLanguage: vue</code>.</li>
+<li><strong>Are resources optimized</strong>: No.</li>
+<li><strong>File size</strong>: 70.6 MB.</li>
+<li><strong>Activation time on my system</strong>: 252ms. However, the “Finish Activate” stat is 3943ms!</li>
+<li><strong>Test suite</strong>: Yes.</li>
+<li><strong>Actively maintained</strong>: Yes.</li>
+<li><strong>Alternative extensions:</strong> No obvious alternative. Formatting can be done with Prettier.</li>
+</ul>
+<p>Vetur is the go-to extension for developing Vue apps in VS Code.</p>
+<p>The syntax highlighting, intellisense, and hover references are great to have for Vue development.</p>
+<p>The size of the extension is HUGE.</p>
+<p>The performance is a bit erratic. It takes at least 4 seconds on my machine to finish activation, which is a lot longer than the built-in <em>JavaScript Language Features</em>. There is also a noticeable delay for autocompletion of JavaScript syntax.</p>
+<p>The Developers are working on bundling the extension at the moment in <a href="https://github.com/vuejs/vetur/pull/2301">this issue</a>, so hopefully there will be an improvement in the performance soon. ?</p>
+<p><strong>Score: 7/10.</strong></p>
+<h3 id="settings-sync">Settings Sync</h3>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync">Settings Sync</a> synchronize settings using GitHub Gist.</p>
+<ul>
+<li><strong>Author</strong>: Shan Khan.</li>
+<li><strong>Number of installs</strong>: 2 million.</li>
+<li><strong>Marketplace Rating:</strong> 4.61/5 (638)</li>
+<li><strong>Core features</strong>: Sync settings.</li>
+<li><strong>Activation Events</strong>: On startup (<code>*</code>).</li>
+<li><strong>Are resources optimized</strong>: Yes.</li>
+<li><strong>File size</strong>: 1.2 MB.</li>
+<li><strong>Activation time on my system</strong>: 2513ms.</li>
+<li><strong>Test suite</strong>: Yes.</li>
+<li><strong>Actively maintained</strong>: No. Last commit was 1 year ago.</li>
+<li><strong>Alternative extensions:</strong> This is a <a href="https://code.visualstudio.com/docs/editor/settings-sync">built-in feature in VS Code</a>.</li>
+</ul>
+<p>This was a standout extension. Syncing your complete editor setup across machines is super useful.</p>
+<p>Since July 2020, the same functionality is a built-in feature in VS Code for this very thing. The main difference is that this extension saves your settings to a gist, which you have the option to share with others too.</p>
+<p>The activation time is quite slow. Is it justifiably slow? It’s hard to tell.</p>
+<p>My guess is that the built-in feature will do a better job eventually as it has the backing of Microsoft. The extension appears to be no longer supported.</p>
+<p><strong>Score: 8/10.</strong></p>
+<h3 id="markdown-all-in-one">Markdown All in One</h3>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one">Markdown All in One</a> fulfills a lot of your markdown needs.</p>
+<ul>
+<li><strong>Author</strong>: Yu Zhang.</li>
+<li><strong>Number of installs</strong>: 1.7 million.</li>
+<li><strong>Marketplace Rating:</strong> 4.8/5 (90)</li>
+<li><strong>Core features</strong>: Toggle-style editing. Table of contents.</li>
+<li><strong>Activation Events</strong>: <code>onLanguage: markdown</code>, <code>onCommand: markdown.extension.printToHtmlBatch</code>, <code>workspaceContains: README.md</code>.</li>
+<li><strong>Are resources optimized</strong>: Yes.</li>
+<li><strong>File size</strong>: 4.1 MB.</li>
+<li><strong>Activation time on my system</strong>: 195ms.</li>
+<li><strong>Test suite</strong>: Yes.</li>
+<li><strong>Actively maintained</strong>: Yes.</li>
+<li><strong>Alternative extensions:</strong> <a href="https://marketplace.visualstudio.com/items?itemName=robole.marky-markdown">Marky Markdown</a>.</li>
+</ul>
+<p>It is a solid extension and the performance is excellent.</p>
+<p>It has too many features for my taste. For many people it is appealing to have everything they may want in a single extension.</p>
+<p>The Activation Event <code>workspaceContains: README.md</code> seems an unnecessary inclusion to me. Most of my projects have a README, but I seldom edit them. So for me this is like having the extension always active.</p>
+<p>The logic for the table of contents is a bit usual. It had some problems with false positives in the past. I don’t know if that has been ironed out completely.</p>
+<p>The file size of the extension can be reduced by excluding the README screenshots from the extension package.</p>
+<p><strong>Score: 8/10.</strong></p>
+<h2 id="general-performance-tips">General Performance Tips</h2>
+<h3 id="use-a-64-bit-os">Use a 64-bit OS</h3>
+<p>If you upgrade to a 64-bit version of an OS, you can expand the amount of virtual memory (VM) available to VS Code from 2 GB to 4 GB.</p>
+<p>This enables VS Code to handle significantly larger workloads when VM is required.</p>
+<h3 id="disable-restoration-of-project-state-on-startup">Disable restoration of project state on startup</h3>
+<p>VS Code automatically restores the project state from the previous session. This can prolong the times it takes to load a project.</p>
+<p>You can disable some of the restore settings to speed up the loading time:</p>
+<ul>
+<li><code>Workbench › Editor: Restore View State</code>: Enabled by default.</li>
+<li><code>Files: Restore Undo Stack</code>: Enabled by default.</li>
+<li><code>Workbench: Startup Editor</code>: Controls which editor is shown at startup. The default is <code>welcome page</code>. You can set this to <code>none</code> to prevent any editor appearing on startup.</li>
+</ul>
+<h3 id="disable-expensive-features-that-impact-editing-performance">Disable expensive features that impact editing performance</h3>
+<ul>
+<li><strong>Minimap</strong>: <code>Editor › Minimap: Enabled</code>. Enabled by default.</li>
+<li><strong>Word wrap</strong>: <code>Editor: Word Wrap</code>. Disabled by default.</li>
+<li><strong>CodeLens</strong>: <code>Editor: CodeLens</code>. Enabled by default.</li>
+<li><strong>Format on Save</strong>: <code>Editor: Format On Save</code>. Disabled by default.</li>
+<li><strong>Format on Paste</strong>: <code>Editor: Format On Paste</code>. Disabled by default.</li>
+</ul>
+<h3 id="disable-extensions-for-a-workspace">Disable extensions for a workspace</h3>
+<p>You can disable an extension for a workspace (project).</p>
+<figure>
+<img src="https://www.freecodecamp.org/news/content/images/2020/10/disable-extension-workspace.png" alt="disable extension for workspace" /><figcaption>disable extension for workspace</figcaption>
+</figure>
+<p>You are most likely going to want to do this for extensions that run always. For a Java project, you are not going to need ESLint!</p>
+<p>You can take the opposite approach also. You can disable an extension globally, and only enable it for a select number of projects.</p>
+<h3 id="create-extension-sets">Create extension sets</h3>
+<p>You can specify an alternate directory for extensions from the command-line as below.</p>
+<pre><code>code --extensions-dir &lt;dir&gt;</code></pre>
+<p>So, if you want to use different sets of extensions, you can. You can add a desktop shortcut for this, or an alias to run this regularly from the command-line.</p>
+<p>One thing to keep in mind is syncing. If you sync your extensions between machines, you may want to exclude extensions from the sync. Otherwise, you may mess up your folder by mistake when you switch.</p>
+<p>Ideally, you should not need to do this.</p>
+<h3 id="disable-all-extensions-for-a-session">Disable all extensions for a session</h3>
+<p>You can start VS Code with all user extensions disabled from the command-line. Zen mode plus plus!</p>
+<pre><code>code --disable-extensions</code></pre>
+<h2 id="troubleshooting-performance-issues">Troubleshooting performance issues</h2>
+<h3 id="experiencing-slowness-or-a-blank-screen">Experiencing slowness or a blank screen</h3>
+<p>VS Code has trouble with GPU (graphics processing unit) hardware acceleration on some systems. You can see if this is the case by disabling GPU acceleration.</p>
+<pre><code>code --disable-gpu</code></pre>
+<p>To set this permanently, do the following:</p>
+<ul>
+<li>Open the Command Palette (Ctrl+Shift+P).</li>
+<li>Run the <strong>Preferences: Configure Runtime Arguments</strong> command.</li>
+<li>This command will open a <code>argv.json</code> file to configure runtime arguments. You might see some default arguments there already.</li>
+<li>Add <code>"disable-hardware-acceleration": true</code>.</li>
+<li>Restart VS Code.</li>
+</ul>
+<h3 id="installation-appears-to-be-corrupt-with-unsupported-message">Installation appears to be corrupt with [Unsupported] message</h3>
+<p>VS Code does a background check when it starts up to check if you’ve changed any of its source files. If this is the case, you’ll see the <strong>[Unsupported]</strong> text in the title bar.</p>
+<p>One cause of this issue can be anti-virus software. VS Code could have been mistakenly quarantined, or had files removed by the anti-virus software (see issue <a href="https://github.com/microsoft/vscode/issues/94858">#94858</a>). Check your anti-virus software settings to prevent this.</p>
+<p>To solve this situation you can <a href="https://code.visualstudio.com/download">reinstall VS Code</a>. This will replace the modified files and silence the warning.</p>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>youtube-dl</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="to-download-a-video-in-720p-mp4">To download a video in 720p MP4:</h1>
+<p>youtube-dl -f 22 example.com/watch?v=id</p>
+<h1 id="to-download-a-video-in-720p-mp4-or-webm-or-flv">To download a video in 720p MP4 or WebM or FLV:</h1>
+<p>youtube-dl -f 22/45/120</p>
+<h1 id="to-list-all-available-formats-of-a-video">To list all available formats of a video:</h1>
+<p>youtube-dl -F example.com/watch?v=id</p>
+<h1 id="to-download-a-video-to-uploaderdatetitle.ext">To download a video to /<span class="math inline"><em>u</em><em>p</em><em>l</em><em>o</em><em>a</em><em>d</em><em>e</em><em>r</em>/</span>date/<span class="math inline"><em>t</em><em>i</em><em>t</em><em>l</em><em>e</em>.</span>ext:</h1>
+<p>youtube-dl -o ‘%(uploader)s/%(date)s/%(title)s.%(ext)s’ example.com/watch?v=id</p>
+<h1 id="to-download-a-video-playlist-starting-from-a-certain-video">To download a video playlist starting from a certain video:</h1>
+<p>youtube-dl –playlist-start 5 example.com/watch?v=id&amp;list=listid</p>
+<h1 id="to-simulate-a-download-with-youtube-dl">To simulate a download with youtube-dl:</h1>
+<p>youtube-dl -s example.com/watch?v=id</p>
+<h1 id="to-download-audio-in-mp3-format-with-best-quality-available">To download audio in mp3 format with best quality available</h1>
+<p>youtube-dl –extract-audio –audio-format mp3 –audio-quality 0 example.com/watch?v=id</p>
+<h1 id="for-all-video-formats-see-link-below-unfold-comparison-of-youtube-media-encoding-options">For all video formats see link below (unfold “Comparison of YouTube media encoding options”)</h1>
+<h1 id="httpsen.wikipedia.orgwindex.phptitleyoutubeoldid723160791quality_and_formats">https://en.wikipedia.org/w/index.php?title=YouTube&amp;oldid=723160791#Quality_and_formats</h1>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>sticky</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="regexp.prototype.sticky">RegExp.prototype.sticky</h1>
+<p>The <code>sticky</code> property reflects whether or not the search is sticky (searches in strings only from the index indicated by the <a href="lastindex"><code>lastIndex</code></a> property of this regular expression). <code>sticky</code> is a read-only property of an individual regular expression object.</p>
+<p>Property attributes of <code>RegExp.prototype.sticky</code></p>
+<p>Writable</p>
+<p>no</p>
+<p>Enumerable</p>
+<p>no</p>
+<p>Configurable</p>
+<p>yes</p>
+<h2 id="description">Description</h2>
+<p>The value of <code>sticky</code> is a <a href="../boolean"><code>Boolean</code></a> and true if the “<code>y</code>” flag was used; otherwise, false. The “<code>y</code>” flag indicates that it matches only from the index indicated by the <a href="lastindex"><code>lastIndex</code></a> property of this regular expression in the target string (and does not attempt to match from any later indexes). A regular expression defined as both <code>sticky</code> and <code>global</code> ignores the <code>global</code> flag.</p>
+<p>You cannot change this property directly. It is read-only.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-a-regular-expression-with-the-sticky-flag">Using a regular expression with the sticky flag</h3>
+<pre><code>var str = &#39;#foo#&#39;;
+var regex = /foo/y;
+
+regex.lastIndex = 1;
+regex.test(str); // true
+regex.lastIndex = 5;
+regex.test(str); // false (lastIndex is taken into account with sticky flag)
+regex.lastIndex; // 0 (reset after match failure)</code></pre>
+<h3 id="anchored-sticky-flag">Anchored sticky flag</h3>
+<p>For several versions, Firefox’s SpiderMonkey engine had <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=773687">a bug</a> with regard to the <code>^</code> assertion and the sticky flag which allowed expressions starting with the <code>^</code> assertion and using the sticky flag to match when they shouldn’t. The bug was introduced some time after Firefox 3.6 (which had the sticky flag but not the bug) and fixed in 2015. Perhaps because of the bug, the ES2015 specification <a href="https://www.ecma-international.org/ecma-262/7.0/index.html#sec-assertion">specifically calls out</a> the fact that:</p>
+<blockquote>
+<p>When the <code>y</code> flag is used with a pattern, ^ always matches only at the beginning of the input, or (if <code>multiline</code> is <code>true</code>) at the beginning of a line.</p>
+</blockquote>
+<p>Examples of correct behavior:</p>
+<pre><code>var regex = /^foo/y;
+regex.lastIndex = 2;
+regex.test(&#39;..foo&#39;);   // false - index 2 is not the beginning of the string
+
+var regex2 = /^foo/my;
+regex2.lastIndex = 2;
+regex2.test(&#39;..foo&#39;);  // false - index 2 is not the beginning of the string or line
+regex2.lastIndex = 2;
+regex2.test(&#39;.\nfoo&#39;); // true - index 2 is the beginning of a line</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-get-regexp.prototype.sticky">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-get-regexp.prototype.sticky</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>sticky</code></p>
+<p>49</p>
+<p>13</p>
+<p>3</p>
+<p>No</p>
+<p>36</p>
+<p>10</p>
+<p>49</p>
+<p>49</p>
+<p>4</p>
+<p>36</p>
+<p>10</p>
+<p>5.0</p>
+<p><code>anchored_sticky_flag</code></p>
+<p>49</p>
+<p>13</p>
+<p>44</p>
+<p>No</p>
+<p>36</p>
+<p>10</p>
+<p>49</p>
+<p>49</p>
+<p>44</p>
+<p>36</p>
+<p>10</p>
+<p>5.0</p>
+<p><code>prototype_accessor</code></p>
+<p>49</p>
+<p>13</p>
+<p>38</p>
+<p>No</p>
+<p>36</p>
+<p>10</p>
+<p>49</p>
+<p>49</p>
+<p>38</p>
+<p>36</p>
+<p>10</p>
+<p>5.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="lastindex"><code>RegExp.lastIndex</code></a></li>
+<li><a href="dotall"><code>RegExp.prototype.dotAll</code></a></li>
+<li><a href="global"><code>RegExp.prototype.global</code></a></li>
+<li><a href="hasindices"><code>RegExp.prototype.hasIndices</code></a></li>
+<li><a href="ignorecase"><code>RegExp.prototype.ignoreCase</code></a></li>
+<li><a href="multiline"><code>RegExp.prototype.multiline</code></a></li>
+<li><a href="source"><code>RegExp.prototype.source</code></a></li>
+<li><a href="unicode"><code>RegExp.prototype.unicode</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/sticky" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/sticky</a></p>
+</body>
+</html>

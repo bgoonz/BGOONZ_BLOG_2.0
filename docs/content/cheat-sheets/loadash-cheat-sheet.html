@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>loadash-cheat-sheet</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="loadash-cheat-sheet">LOADASH Cheat Sheet</h1>
+<h2 id="lodash-cheatsheet">Lodash cheatsheet</h2>
+<blockquote>
+<h4 id="excerpt">Excerpt</h4>
+<p>This is not a complete list. · One-page guide to Lodash</p>
+</blockquote>
+<hr />
+<h3 id="collections">#Collections</h3>
+<h4 id="finding">Finding</h4>
+<pre><code>_.filter(list, (n) =&gt; n % 2)
+_.find(list, (n) =&gt; n % 2)
+_.findLast(list, ...)</code></pre>
+<p>Works for both arrays and objects.</p>
+<h4 id="accessing">Accessing</h4>
+<pre><code>_.at([ abcd ], 0)
+_.at([ abcd ], [ 0, 1 ])</code></pre>
+<h4 id="setget">Set/get</h4>
+<pre><code>_.set(object, &#39;users[0].name&#39;, value)
+_.get(object, &#39;users[0].name&#39;)
+_.get(object, [&#39;users&#39;, 0, &#39;name&#39;])</code></pre>
+<h4 id="iteration">Iteration</h4>
+<pre><code>_.forEach(list, (item, i) =&gt; ...)
+_.forEachRight(list, ...)
+
+_.map(list, ...)</code></pre>
+<pre><code>_.every(users, (u) =&gt; u.active)
+_.any(users, ...)</code></pre>
+<h3 id="array">#Array</h3>
+<h4 id="arrays">Arrays</h4>
+<pre><code>_.chunk([ abcd ], 2)
+_.compact(list)
+
+_.fill(Array(4), &#39;x&#39;)
+_.flatten
+_.flattenDeep</code></pre>
+<h4 id="filtering">Filtering</h4>
+<pre><code>_.drop([ abcdef ], 2)
+_.dropRight([ abcdef ], 2)
+_.take([ abcdef ], 2)
+_.takeRight([ abcdef ], 2)
+_.slice([ abcdef ], 2, 4)</code></pre>
+<pre><code>_.initial([ abcdef ])
+_.rest([ abcdef ])</code></pre>
+<pre><code>_.dropWhile(list, &#39;active&#39;)
+_.dropWhile(list, &#39;active&#39;, true)
+_.dropWhile(list, { active: true })
+_.dropWhile(list, (n) =&gt; ...)
+_.dropRightWhile(list, ...)</code></pre>
+<pre><code>_.without([ abcde ], b)</code></pre>
+<pre><code>_.remove(list, (n) =&gt; n % 2)</code></pre>
+<h4 id="accessing-1">Accessing</h4>
+<pre><code>_.first([ abcdef ])
+_.last([ abcdef ])</code></pre>
+<h4 id="sets">Sets</h4>
+<pre><code>_.uniq()
+_.difference([ abc ], [ bc ])
+_.intersection([ abc ], [ bcd ])
+_.union([ abc ], [ bcd ])</code></pre>
+<pre><code>Array#concat()</code></pre>
+<h4 id="indexes">Indexes</h4>
+<pre><code>_.findIndex(list, fn)
+_.findLastIndex(list, fn)</code></pre>
+<pre><code>_.sortedIndex(list, val)
+_.sortedLastIndex(list, val)</code></pre>
+<pre><code>_.indexOf(list, val)</code></pre>
+<h3 id="functions">#Functions</h3>
+<h4 id="currying">Currying</h4>
+<pre><code>greet = (greeting, name) =&gt; `${greeting}, ${name}!`</code></pre>
+<pre><code>fn = _.partial(fn, &#39;hi&#39;)
+fn(&#39;joe&#39;)
+
+fn = _.partial(fn, &#39;joe&#39;)
+fn(&#39;yo&#39;)</code></pre>
+<pre><code>_.curry(greet)(&#39;hi&#39;)
+_.curryRight(greet)(&#39;joe&#39;)</code></pre>
+<h3 id="decorating-functions">#Decorating functions</h3>
+<h4 id="throttling">Throttling</h4>
+<pre><code>_.throttle(fn)
+_.debounce(fn)</code></pre>
+<h4 id="limiting">Limiting</h4>
+<pre><code>_.before(5, fn)
+_.after(5, fn)
+_.once(fn)</code></pre>
+<h4 id="etc">Etc</h4>
+<pre><code>_.wrap(_.escape, (name) =&gt; `hi ${name}`)
+
+_.delay(fn, 2000)
+
+_.negate(fn)
+
+_.memoize(fn)
+_.memoize(fn, ...)</code></pre>
+<h3 id="strings">#Strings</h3>
+<h4 id="capitalization">Capitalization</h4>
+<pre><code>_.capitalize(&#39;hello world&#39;)
+_.startCase(&#39;hello_world&#39;)
+_.snakeCase(&#39;hello world&#39;)
+_.kebabCase(&#39;hello world&#39;)
+_.camelCase(&#39;hello world&#39;)</code></pre>
+<h4 id="padding">Padding</h4>
+<pre><code>_.pad(&#39;abc&#39;, 3)
+_.pad(&#39;abc&#39;, 8)
+_.pad(&#39;abc&#39;, 8, &#39;_-&#39;)
+_.padStart(&#39;abc&#39;, 3)
+_.padStart(&#39;abc&#39;, 6)
+_.padStart(&#39;abc&#39;, 6, &#39;_-&#39;)
+_.padEnd(&#39;abc&#39;, 3)
+_.padEnd(&#39;abc&#39;, 6)
+_.padEnd(&#39;abc&#39;, 6, &#39;_-&#39;)</code></pre>
+<h4 id="trim">Trim</h4>
+<pre><code>_.trim(&#39;  str  &#39;)
+_.trimLeft(&#39;  str  &#39;)
+_.trimRight(&#39;  str  &#39;)</code></pre>
+<h4 id="etc-1">Etc</h4>
+<pre><code>_.repeat(&#39;-&#39;, 2)
+_.deburr(&#39;déjà vu&#39;)
+_.trunc(&#39;hello world&#39;, 5)</code></pre>
+<pre><code>_.startsWith(&#39;abc&#39;, &#39;a&#39;)
+_.endsWith(&#39;abc&#39;, &#39;c&#39;)</code></pre>
+<h3 id="objects">#Objects</h3>
+<h4 id="keys-and-values">Keys and values</h4>
+<pre><code>_.keys(obj)
+_.values(obj)</code></pre>
+<h3 id="chaining">#Chaining</h3>
+<h4 id="chain-and-value">Chain and value</h4>
+<pre><code>_([1, 2, 3])
+  .reduce((total, n) =&gt; total + n)
+  .map((n) =&gt; n * n)
+  .tap(console.log)
+  .thru((n) =&gt; n.reverse())
+  .value()</code></pre>
+</body>
+</html>

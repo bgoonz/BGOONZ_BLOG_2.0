@@ -1,8 +1,10 @@
-# Array.prototype.fill()
+Array.prototype.fill()
+======================
 
 The `fill()` method changes all elements in an array to a static value, from a start index (default `0`) to an end index (default `array.length`). It returns the modified array.
 
-## Syntax
+Syntax
+------
 
     fill(value)
     fill(value, start)
@@ -23,7 +25,8 @@ End index, default `arr.length`.
 
 The modified array, filled with `value`.
 
-## Description
+Description
+-----------
 
 -   If `start` is negative, it is treated as `array.length + start`.
 -   If `end` is negative, it is treated as `array.length + end`.
@@ -31,7 +34,8 @@ The modified array, filled with `value`.
 -   `fill` is a mutator method: it will change the array itself and return it, not a copy of it.
 -   If the first parameter is an object, each slot in the array will reference that object.
 
-## Polyfill
+Polyfill
+--------
 
     if (!Array.prototype.fill) {
       Object.defineProperty(Array.prototype, 'fill', {
@@ -78,9 +82,10 @@ The modified array, filled with `value`.
       });
     }
 
-If you need to support truly obsolete JavaScript engines that don't support [`Object.defineProperty`](../object/defineproperty), it's best not to polyfill `Array.prototype` methods at all, as you can't make them non-enumerable.
+If you need to support truly obsolete JavaScript engines that don’t support [`Object.defineProperty`](../object/defineproperty), it’s best not to polyfill `Array.prototype` methods at all, as you can’t make them non-enumerable.
 
-## Examples
+Examples
+--------
 
 ### Using fill
 
@@ -101,7 +106,7 @@ If you need to support truly obsolete JavaScript engines that don't support [`Ob
 
 ### Using fill() to create a matrix of all 1
 
-This example shows how to create a matrix of all 1, like the _ones()_ function of Octave or MATLAB.
+This example shows how to create a matrix of all 1, like the *ones()* function of Octave or MATLAB.
 
     const arr = new Array(3);
     for (let i=0; i<arr.length; i++) {
@@ -112,12 +117,11 @@ This example shows how to create a matrix of all 1, like the _ones()_ function o
     console.log(arr[1][0]); // 1
     console.log(arr[2][0]); // 1
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.fill">ECMAScript (ECMA-262) 
-<br/>
-
-<span class="small">The definition of 'Array.prototype.fill' in that specification.</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript (ECMA-262)<br />
+</p><span class="small">The definition of ‘Array.prototype.fill’ in that specification.</span></td></tr></tbody></table>
 
 `fill`
 
@@ -145,7 +149,8 @@ No
 
 5.0
 
-## See also
+See also
+--------
 
 -   [`Array`](../array)
 -   [`TypedArray.prototype.fill()`](../typedarray/fill)

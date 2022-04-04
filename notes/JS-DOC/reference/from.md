@@ -1,8 +1,10 @@
-# Array.from()
+Array.from()
+============
 
 The `Array.from()` static method creates a new, shallow-copied `Array` instance from an array-like or iterable object.
 
-## Syntax
+Syntax
+------
 
     // Arrow function
     Array.from(arrayLike, (currentValue) => { ... } )
@@ -34,7 +36,8 @@ Value to use as `this` when executing `mapFn`.
 
 A new [`Array`](../array) instance.
 
-## Description
+Description
+-----------
 
 `Array.from()` lets you create `Array`s from:
 
@@ -51,9 +54,10 @@ except that it does not create an intermediate array.
 
 The `length` property of the `from()` method is `1`.
 
-In ES2015, the class syntax allows sub-classing of both built-in and user-defined classes. As a result, static methods such as `Array.from()` are "inherited" by subclasses of `Array`, and create new instances _of the subclass_, not `Array`.
+In ES2015, the class syntax allows sub-classing of both built-in and user-defined classes. As a result, static methods such as `Array.from()` are “inherited” by subclasses of `Array`, and create new instances *of the subclass*, not `Array`.
 
-## Examples
+Examples
+--------
 
 ### Array from a `String`
 
@@ -126,12 +130,11 @@ In ES2015, the class syntax allows sub-classing of both built-in and user-define
     range('A'.charCodeAt(0), 'Z'.charCodeAt(0), 1).map(x => String.fromCharCode(x));
     // ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th><th>Initial publication</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.from">ECMAScript (ECMA-262) 
-<br/>
-
-<span class="small">The definition of 'Array.from' in that specification.</span></a></td><td>ECMAScript 2015</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th>Specification</th><th>Initial publication</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript (ECMA-262)<br />
+</p><span class="small">The definition of ‘Array.from’ in that specification.</span></td><td>ECMAScript 2015</td></tr></tbody></table>
 
 `from`
 
@@ -159,11 +162,12 @@ No
 
 5.0
 
-## Polyfill
+Polyfill
+--------
 
 `Array.from()` was added to the ECMA-262 standard in the 6<sup>th</sup> Edition (ES2015). As such, it may not be present in other implementations of the standard.
 
-You can work around this by inserting the following code at the beginning of your scripts, allowing use of `Array.from()` in implementations that don't natively support it.
+You can work around this by inserting the following code at the beginning of your scripts, allowing use of `Array.from()` in implementations that don’t natively support it.
 
 **Note:** This algorithm is exactly as specified in ECMA-262 6<sup>th</sup> Edition (assuming `Object` and `TypeError` have their original values and that `callback.call()` evaluates to the original value of [`Function.prototype.call()`](../function/call)).
 
@@ -305,7 +309,8 @@ In addition, since true iterables cannot be polyfilled, this implementation does
         })();
     }
 
-## See also
+See also
+--------
 
 -   [`Array`](../array)
 -   [`Array.prototype.map()`](map)

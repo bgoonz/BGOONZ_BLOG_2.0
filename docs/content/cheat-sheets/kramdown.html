@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Kramdown</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Kramdown</h1>
+</header>
+<h3 id="configuration">Configuration</h3>
+<ul>
+<li><code>parse_block_html</code> - process kramdown syntax inside blocks</li>
+<li><code>parse_span_html</code> - process kramdown syntax inside inlines</li>
+<li><p><code>html_to_native</code> - convert html elements to native elements</p>
+<p>{::options parse_block_html=“true” /}</p></li>
+</ul>
+<p>For the GFM parser:</p>
+<ul>
+<li><code>hard_wrap</code></li>
+</ul>
+<p>http://kramdown.gettalong.org/parser/gfm.html</p>
+<h3 id="for-jekyll-gh-pages">For jekyll (gh-pages)</h3>
+<pre><code># _config.yml
+markdown: kramdown
+kramdown:
+  input: GFM</code></pre>
+<h3 id="footnotes-kramdown">Footnotes (Kramdown)</h3>
+<pre><code>This is some text.[^1]. Other text.[^footnote].
+
+[^1]: Some *crazy* footnote definition.</code></pre>
+<h3 id="abbreviations-kramdown">Abbreviations (Kramdown)</h3>
+<pre><code>This is some text not written in HTML but in another language!
+
+*[another language]: It&#39;s called Markdown
+*[HTML]: HyperTextMarkupLanguage</code></pre>
+<h3 id="classes-and-ids-kramdown">Classes and IDs (Kramdown)</h3>
+<pre><code>A simple paragraph with an ID attribute.
+{: #para-one}
+
+&gt; A blockquote with a title
+{:title=&quot;The blockquote title&quot;}
+{: #myid}
+
+* {:.cls} This item has the class &quot;cls&quot;
+
+{:.ruby}
+    Some code here</code></pre>
+<h3 id="references">References</h3>
+<ul>
+<li>http://kramdown.gettalong.org/syntax.html</li>
+<li>http://kramdown.gettalong.org/parser/kramdown.html</li>
+</ul>
+</body>
+</html>

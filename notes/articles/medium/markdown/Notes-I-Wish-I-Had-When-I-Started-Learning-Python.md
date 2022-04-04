@@ -1,16 +1,15 @@
-# Notes I Wish I Had When I Started Learning Python
+Notes I Wish I Had When I Started Learning Python
+=================================================
 
 Plus resources for learning data structures and algorithms in python at the bottom of this article!
 
----
+------------------------------------------------------------------------
 
 ### Notes I Wish I Had When I Started Learning Python
 
 #### Plus resources for learning data structures and algorithms in python at the bottom of this article!
 
-<figure><img src="https://cdn-images-1.medium.com/max/1200/0*8zBTnh_6r7agz9wz.jpg" class="graf-image" /></figure>
-
-### Basics
+<figure><img src="https://cdn-images-1.medium.com/max/1200/0*8zBTnh_6r7agz9wz.jpg" class="graf-image" /></figure>### Basics
 
 -   <span id="e168">**PEP8** : Python Enhancement Proposals, style-guide for Python.</span>
 -   <span id="22a7">`print` is the equivalent of `console.log`.</span>
@@ -26,9 +25,9 @@ Plus resources for learning data structures and algorithms in python at the bott
         """
         secretThing()
 
--   <span id="dcbc">Python has a built in help function that let's you see a description of the source code without having to navigate to it.</span>
+-   <span id="dcbc">Python has a built in help function that let’s you see a description of the source code without having to navigate to it.</span>
 
----
+------------------------------------------------------------------------
 
 ### Numbers
 
@@ -73,15 +72,15 @@ Plus resources for learning data structures and algorithms in python at the bott
     print(str(17.0) + ' and ' + str(17))        # => 17.0 and 17
 
 -   <span id="995c">The arithmetic operators are the same between JS and Python, with two additions:</span>
--   <span id="794f">"\*\*" : Double asterisk for exponent.</span>
--   <span id="dff1">"//" : Integer Division.</span>
+-   <span id="794f">“\*\*” : Double asterisk for exponent.</span>
+-   <span id="dff1">“//” : Integer Division.</span>
 -   <span id="658b">There are no spaces between math operations in Python.</span>
 -   <span id="d944">Integer Division gives the other part of the number from Module; it is a way to do round down numbers replacing `Math.floor()` in JS.</span>
 -   <span id="4180">There are no `++` and `--` in Python, the only shorthand operators are:</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*kq_3dH4n7wsmAy7u.png" class="graf-image" /></figure>
 
----
+------------------------------------------------------------------------
 
 ### Strings
 
@@ -110,7 +109,7 @@ Plus resources for learning data structures and algorithms in python at the bott
 
     print("Spaghetti"[-1]) # => i print("Spaghetti"[-4]) # => e
 
--   <span id="7a34">Python let's you use ranges</span>
+-   <span id="7a34">Python let’s you use ranges</span>
 
 <!-- -->
 
@@ -150,7 +149,7 @@ Plus resources for learning data structures and algorithms in python at the bott
     '''.count('the '))                # => 4
 
 -   <span id="1bbc">You can use `+` to concatenate strings, just like in JS.</span>
--   <span id="c0f6">You can also use "\*" to repeat strings or multiply strings.</span>
+-   <span id="c0f6">You can also use “\*” to repeat strings or multiply strings.</span>
 -   <span id="4d7f">Use the `format()` function to use placeholders in a string to input values later on.</span>
 
 <!-- -->
@@ -168,11 +167,11 @@ Plus resources for learning data structures and algorithms in python at the bott
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*BIsBBI09FpFa1ntJ.png" class="graf-image" /></figure>
 
----
+------------------------------------------------------------------------
 
 ### Variables and Expressions
 
--   <span id="42be">**Duck-Typing** : Programming Style which avoids checking an object's type to figure out what it can do.</span>
+-   <span id="42be">**Duck-Typing** : Programming Style which avoids checking an object’s type to figure out what it can do.</span>
 -   <span id="6b14">Duck Typing is the fundamental approach of Python.</span>
 -   <span id="929a">Assignment of a value automatically declares.</span>
 
@@ -202,19 +201,21 @@ Plus resources for learning data structures and algorithms in python at the bott
     a = 'seventeen'
     print(a)         # => seventeen
 
--   <span id="a5fe">`NaN` does not exist in Python, but you can 'create' it like so:  
+-   <span id="a5fe">`NaN` does not exist in Python, but you can ‘create’ it like so:  
     `print(float("nan"))`</span>
 -   <span id="8e6f">Python replaces `null` with `none`.</span>
 -   <span id="2ce7">`none` is an object and can be directly assigned to a variable.</span>
 -   <span id="d6aa">Using none is a convenient way to check to see why an action may not be operating correctly in your program.</span>
 
----
+------------------------------------------------------------------------
 
 ### Boolean Data Type
 
 -   <span id="cd4b">One of the biggest benefits of Python is that it reads more like English than JS does.</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*eNmuDtlv7vr6a3Wc.png" class="graf-image" /></figure># Logical AND
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*eNmuDtlv7vr6a3Wc.png" class="graf-image" /></figure>Logical AND
+===========
+
     print(True and True)    # => True
     print(True and False)   # => False
     print(False and False)  # => False
@@ -235,7 +236,7 @@ Plus resources for learning data structures and algorithms in python at the bott
 -   <span id="30b9">Empty Sequence or Collection.</span>
 -   <span id="29da">`True` and `False` must be capitalized</span>
 
----
+------------------------------------------------------------------------
 
 ### Comparison Operators
 
@@ -252,7 +253,7 @@ Plus resources for learning data structures and algorithms in python at the bott
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*nlYkqe_JubdBB2mv.png" class="graf-image" /></figure>
 
----
+------------------------------------------------------------------------
 
 ### Identity vs Equality
 
@@ -268,7 +269,7 @@ Plus resources for learning data structures and algorithms in python at the bott
 
 -   <span id="9344">In the Python community it is better to use `is` and `is not` over `==` or `!=`</span>
 
----
+------------------------------------------------------------------------
 
 ### If Statements
 
@@ -291,7 +292,7 @@ Plus resources for learning data structures and algorithms in python at the bott
 
 -   <span id="bbd3">Remember the order of `elif` statements matter.</span>
 
----
+------------------------------------------------------------------------
 
 ### While Statements
 
@@ -323,7 +324,7 @@ Plus resources for learning data structures and algorithms in python at the bott
         continue
       break
 
----
+------------------------------------------------------------------------
 
 ### Try/Except Statements
 
@@ -374,7 +375,7 @@ Plus resources for learning data structures and algorithms in python at the bott
     except ZeroDivisionError:
         pass
 
--   <span id="dd14">The `pass` method won't allow you to bypass every single error so you can chain an exception series like so:</span>
+-   <span id="dd14">The `pass` method won’t allow you to bypass every single error so you can chain an exception series like so:</span>
 
 <!-- -->
 
@@ -436,7 +437,7 @@ Plus resources for learning data structures and algorithms in python at the bott
     if hasattr(b, '__len__'):
         print(len(b))
 
----
+------------------------------------------------------------------------
 
 ### Pass
 
@@ -455,7 +456,7 @@ Plus resources for learning data structures and algorithms in python at the bott
     while True:
       pass
 
----
+------------------------------------------------------------------------
 
 ### Functions
 
@@ -507,7 +508,7 @@ Plus resources for learning data structures and algorithms in python at the bott
 
 `toUpper = lambda s: s.upper()`
 
----
+------------------------------------------------------------------------
 
 ### Notes
 
@@ -549,23 +550,23 @@ Plus resources for learning data structures and algorithms in python at the bott
             print('{0:{width}{base}}'.format(num, base=base, width=width), end=' ')
         print()
 
----
+------------------------------------------------------------------------
 
 ### Getting Input from the Command Line
 
 -   <span id="67f1">Python runs synchronously, all programs and processes will stop when listening for a user input.</span>
--   <span id="21d9">The `input` function shows a prompt to a user and waits for them to type 'ENTER'.</span>
+-   <span id="21d9">The `input` function shows a prompt to a user and waits for them to type ‘ENTER’.</span>
 
----
+------------------------------------------------------------------------
 
 ### Scripts vs Programs
 
 -   <span id="3d45">**Programming Script** : A set of code that runs in a linear fashion.</span>
--   <span id="126d">The largest difference between scripts and programs is the level of complexity and purpose. Programs typically have many UI's.</span>
+-   <span id="126d">The largest difference between scripts and programs is the level of complexity and purpose. Programs typically have many UI’s.</span>
 -   <span id="a0e0">Python can be used to display html, css, and JS.</span>
 -   <span id="1ffd">We will be using Python as an API (Application Programming Interface)</span>
 
----
+------------------------------------------------------------------------
 
 ### Structured Data
 
@@ -581,7 +582,7 @@ Plus resources for learning data structures and algorithms in python at the bott
 -   <span id="a86f">**Iterable** : Generic name for a sequence or collection; any object that can be iterated through.</span>
 -   <span id="bcb9">Can be mutable or immutable.</span>
 
----
+------------------------------------------------------------------------
 
 ### Built In Data Types
 
@@ -615,7 +616,7 @@ Plus resources for learning data structures and algorithms in python at the bott
     tuple([1,2,3])      # returns (1, 2, 3)
 
 -   <span id="2e5f">Think of tuples as constant variables.</span>
--   <span id="86a4">**Ranges** : A list of numbers which can't be changed; often used with `for` loops.</span>
+-   <span id="86a4">**Ranges** : A list of numbers which can’t be changed; often used with `for` loops.</span>
 -   <span id="04d3">Declared using one to three parameters.</span>
 
 1.  <span id="ac7e">**Start** : opt. default 0, first \# in sequence.</span>
@@ -644,10 +645,10 @@ Plus resources for learning data structures and algorithms in python at the bott
     b = dict(one=1, two=2, three=3)
     c = dict([('two', 2), ('one', 1), ('three', 3)])
 
-> _a, b, and c are all equal_
+> *a, b, and c are all equal*
 
 -   <span id="b63b">Declared with curly braces of the built in `dict()`</span>
--   <span id="40be">Benefit of dictionaries in Python is that it doesn't matter how it is defined, if the keys and values are the same the dictionaries are considered equal.</span>
+-   <span id="40be">Benefit of dictionaries in Python is that it doesn’t matter how it is defined, if the keys and values are the same the dictionaries are considered equal.</span>
 -   <span id="c7e7">Use the `in` operator to see if a key exists in a dictionary.</span>
 
 #### **Sets** : Unordered collection of distinct objects; objects that **need** to be hashable.
@@ -669,7 +670,7 @@ Plus resources for learning data structures and algorithms in python at the bott
     letters = set('abracadabra')
     print(letters)
 
----
+------------------------------------------------------------------------
 
 ### Built-In Functions
 
@@ -739,7 +740,7 @@ Plus resources for learning data structures and algorithms in python at the bott
     print(b - a)        # => {4, 6}
     print(a ^ b)        # => {1, 3, 4, 6}
 
----
+------------------------------------------------------------------------
 
 ### For Statements
 
@@ -838,7 +839,7 @@ Plus resources for learning data structures and algorithms in python at the bott
     for c in "abcdefg":
         print(c)
 
----
+------------------------------------------------------------------------
 
 ### More On Functions
 
@@ -888,7 +889,7 @@ Plus resources for learning data structures and algorithms in python at the bott
     def example2(arg_1, arg_2, *args, kw_1="shark", kw_2="blowfish", **kwargs):
       pass
 
----
+------------------------------------------------------------------------
 
 ### Importing in Python
 
@@ -901,7 +902,7 @@ Plus resources for learning data structures and algorithms in python at the bott
 -   <span id="e81a">**module** : Python code in a separate file.</span>
 -   <span id="cf63">**package** : Path to a directory that contains modules.</span>
 -   <span id="30ba">\***\*init**.py\*\* : Default file for a package.</span>
--   <span id="64a7">**submodule** : Another file in a module's folder.</span>
+-   <span id="64a7">**submodule** : Another file in a module’s folder.</span>
 -   <span id="6cd7">**function** : Function in a module.</span>
 -   <span id="95fe">A module can be any file but it is usually created by placing a special file `__init__.py` into a folder.</span>
 -   <span id="06e5">Try to avoid importing with wildcards in Python.</span>
@@ -918,7 +919,7 @@ Plus resources for learning data structures and algorithms in python at the bott
       urlopen,
     )
 
----
+------------------------------------------------------------------------
 
 ### Watching Out for Python 2
 
@@ -930,7 +931,7 @@ Plus resources for learning data structures and algorithms in python at the bott
 -   <span id="9716">`sets` were killed in favor of `set()` class.</span>
 -   <span id="e034">`print` was a statement in P2, but is a function in P3.</span>
 
----
+------------------------------------------------------------------------
 
 ### Classes In Python
 
@@ -980,7 +981,7 @@ Plus resources for learning data structures and algorithms in python at the bott
 **Dunder Methods**
 
 -   <span id="ec40">Double Underscore Methods, special built in functions that PY uses in certain ways.</span>
--   <span id="1e02">i.e. `__init__()` lets you make sure all relevant attributes are set to their proper values when an object is created from the class.</span>
+-   <span id="1e02">i.e. `__init__()` lets you make sure all relevant attributes are set to their proper values when an object is created from the class.</span>
 -   <span id="2936">The `self` keyword refers to the current object that you are working with.</span>
 -   <span id="da3f">Method is a function that is part of a class.</span>
 
@@ -1000,7 +1001,7 @@ Plus resources for learning data structures and algorithms in python at the bott
     bird.move_up_by(5)
     print(bird.y)
 
--   <span id="e971">_Use one leading underscore only for non-public methods and instance variables_</span>
+-   <span id="e971">*Use one leading underscore only for non-public methods and instance variables*</span>
 
 <!-- -->
 
@@ -1021,7 +1022,7 @@ Plus resources for learning data structures and algorithms in python at the bott
         def get_y(self):
             return self._y
 
--   <span id="9c5d">_All instance variables should be considered non-public_</span>
+-   <span id="9c5d">*All instance variables should be considered non-public*</span>
 -   <span id="9262">\***\*slots\*\*** : Dunder class variable used to reserve memory for the instance variables that you know will you will use.</span>
 
 <!-- -->
@@ -1071,7 +1072,7 @@ Plus resources for learning data structures and algorithms in python at the bott
         def __repr__(self):
             return f"<AngryBird ({self._x}, {self._y})>"
 
----
+------------------------------------------------------------------------
 
 ### Properties for Classes
 
@@ -1136,7 +1137,7 @@ Plus resources for learning data structures and algorithms in python at the bott
                 value = 0
             self._y = value
 
----
+------------------------------------------------------------------------
 
 ### List Comprehensions
 
@@ -1184,14 +1185,13 @@ Plus resources for learning data structures and algorithms in python at the bott
     #     [0, 1, 2, 3, 4]
     # ]
 
----
+------------------------------------------------------------------------
 
 ### My Blog:
 
-<a href="https://master--bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://master--bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong>
-<br/>
+**Web-Dev-Hub**  
 
-<em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>master--bgoonz-blog.netlify.app</a><a href="https://master--bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…*master–bgoonz-blog.netlify.app<a href="https://master--bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ### Python Data Structures & Algorithms Resources:
 
@@ -1320,7 +1320,7 @@ Plus resources for learning data structures and algorithms in python at the bott
 -   <span id="e36d"><a href="https://sahandsaba.com/combinatorial-generation-for-coding-interviews-in-python.html" class="markup--anchor markup--li-anchor">Combinatorics Algorithms for Coding Interviews (2018)</a></span>
 -   <span id="ac6d"><a href="https://github.com/ZoranPandovski/al-go-rithms" class="markup--anchor markup--li-anchor">Algorithms written in different programming languages</a> (<a href="https://zoranpandovski.github.io/al-go-rithms/" class="markup--anchor markup--li-anchor">Web</a>)</span>
 -   <span id="ca55"><a href="https://johnlekberg.com/blog/2020-10-25-seq-align.html" class="markup--anchor markup--li-anchor">Solving the Sequence Alignment problem in Python (2020)</a></span>
--   <span id="e21b"><a href="https://github.com/bingmann/sound-of-sorting" class="markup--anchor markup--li-anchor">The Sound of Sorting</a> — Visualization and "Audibilization" of Sorting Algorithms. (<a href="https://panthema.net/2013/sound-of-sorting/" class="markup--anchor markup--li-anchor">Web</a>)</span>
+-   <span id="e21b"><a href="https://github.com/bingmann/sound-of-sorting" class="markup--anchor markup--li-anchor">The Sound of Sorting</a> — Visualization and “Audibilization” of Sorting Algorithms. (<a href="https://panthema.net/2013/sound-of-sorting/" class="markup--anchor markup--li-anchor">Web</a>)</span>
 -   <span id="d619"><a href="https://danlark.org/2020/11/11/miniselect-practical-and-generic-selection-algorithms/" class="markup--anchor markup--li-anchor">Miniselect: Practical and Generic Selection Algorithms (2020)</a></span>
 -   <span id="0e30"><a href="https://chasewilson.dev/blog/slowest-quicksort/" class="markup--anchor markup--li-anchor">The Slowest Quicksort (2019)</a></span>
 -   <span id="9e0b"><a href="https://blog.sigplan.org/2020/11/17/functional-algorithm-design-part-0/" class="markup--anchor markup--li-anchor">Functional Algorithm Design (2020)</a></span>
@@ -1333,9 +1333,9 @@ Plus resources for learning data structures and algorithms in python at the bott
 ### Data Structures:
 
 -   <span id="b39d"><a href="https://github.com/floyernick/Data-Structures-and-Algorithms" class="markup--anchor markup--li-anchor">Data Structures and Algorithms implementation in Go</a></span>
--   <span id="1c2b"><a href="https://softwareengineering.stackexchange.com/questions/155639/which-algorithms-data-structures-should-i-recognize-and-know-by-name" class="markup--anchor markup--li-anchor">Which algorithms/data structures should I "recognize" and know by name?</a></span>
+-   <span id="1c2b"><a href="https://softwareengineering.stackexchange.com/questions/155639/which-algorithms-data-structures-should-i-recognize-and-know-by-name" class="markup--anchor markup--li-anchor">Which algorithms/data structures should I “recognize” and know by name?</a></span>
 -   <span id="8e46"><a href="https://xlinux.nist.gov/dads/" class="markup--anchor markup--li-anchor">Dictionary of Algorithms and Data Structures</a></span>
--   <span id="987b"><a href="https://g1thubhub.github.io/data-structure-zoo.html" class="markup--anchor markup--li-anchor">Phil's Data Structure Zoo</a></span>
+-   <span id="987b"><a href="https://g1thubhub.github.io/data-structure-zoo.html" class="markup--anchor markup--li-anchor">Phil’s Data Structure Zoo</a></span>
 -   <span id="617d"><a href="https://stratos.seas.harvard.edu/files/stratos/files/periodictabledatastructures.pdf" class="markup--anchor markup--li-anchor">The Periodic Table of Data Structures</a> (<a href="https://news.ycombinator.com/item?id=18314555" class="markup--anchor markup--li-anchor">HN</a>)</span>
 -   <span id="9160"><a href="https://www.cs.usfca.edu/~galles/visualization/Algorithms.html" class="markup--anchor markup--li-anchor">Data Structure Visualizations</a> (<a href="https://news.ycombinator.com/item?id=19082943" class="markup--anchor markup--li-anchor">HN</a>)</span>
 -   <span id="233a"><a href="http://blog.amynguyen.net/?p=853" class="markup--anchor markup--li-anchor">Data structures to name-drop when you want to sound smart in an interview</a></span>
@@ -1353,16 +1353,16 @@ Plus resources for learning data structures and algorithms in python at the bott
 -   <span id="3ae6"><a href="https://lampwww.epfl.ch/papers/idealhashtrees.pdf" class="markup--anchor markup--li-anchor">Ideal Hash Trees</a></span>
 -   <span id="4896"><a href="http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=0265C1992F573129BCC7D4AF7734DBF7?doi=10.1.1.592.5377&amp;rep=rep1&amp;type=pdf" class="markup--anchor markup--li-anchor">RRB-Trees: Efficient Immutable Vectors</a></span>
 -   <span id="0458"><a href="https://github.com/jdan/ocaml-data-structures" class="markup--anchor markup--li-anchor">Some data structures and algorithms written in OCaml</a></span>
--   <span id="499a"><a href="https://shachaf.net/w/b-trees" class="markup--anchor markup--li-anchor">Let's Invent B(+)-Trees</a> (<a href="https://news.ycombinator.com/item?id=23001831" class="markup--anchor markup--li-anchor">HN</a>)</span>
+-   <span id="499a"><a href="https://shachaf.net/w/b-trees" class="markup--anchor markup--li-anchor">Let’s Invent B(+)-Trees</a> (<a href="https://news.ycombinator.com/item?id=23001831" class="markup--anchor markup--li-anchor">HN</a>)</span>
 -   <span id="1b1e"><a href="https://github.com/hydro-project/anna" class="markup--anchor markup--li-anchor">Anna</a> — Low-latency, cloud-native KVS.</span>
 -   <span id="1700"><a href="https://www.aleksandra.codes/persistent-data-structures" class="markup--anchor markup--li-anchor">Persistent data structures thanks to recursive type aliases (2019)</a></span>
 -   <span id="1807"><a href="https://yetanotherdevblog.com/lsm/" class="markup--anchor markup--li-anchor">Log-Structured Merge-Trees (2020)</a></span>
 -   <span id="211e"><a href="https://sagi.io/bloom-filters-for-the-perplexed/" class="markup--anchor markup--li-anchor">Bloom Filters for the Perplexed (2017)</a></span>
 -   <span id="8456"><a href="https://yetanotherdevblog.com/bloom-filters/" class="markup--anchor markup--li-anchor">Understanding Bloom Filters (2020)</a></span>
--   <span id="efa8"><a href="https://yetanotherdevblog.com/dense-vs-sparse-indexes/" class="markup--anchor markup--li-anchor">Dense vs. Sparse Indexes (2020)</a></span>
+-   <span id="efa8"><a href="https://yetanotherdevblog.com/dense-vs-sparse-indexes/" class="markup--anchor markup--li-anchor">Dense vs. Sparse Indexes (2020)</a></span>
 -   <span id="cc53"><a href="https://www.techiedelight.com/list-of-problems/" class="markup--anchor markup--li-anchor">Data Structures and Algorithms Problems</a></span>
 -   <span id="4222"><a href="https://blog.pragmaticengineer.com/data-structures-and-algorithms-i-actually-used-day-to-day/" class="markup--anchor markup--li-anchor">Data Structures &amp; Algorithms I Actually Used Working at Tech Companies (2020)</a> (<a href="https://lobste.rs/s/n8tyip/data_structures_algorithms_i_actually" class="markup--anchor markup--li-anchor">Lobsters</a>) (<a href="https://news.ycombinator.com/item?id=23841491" class="markup--anchor markup--li-anchor">HN</a>)</span>
--   <span id="df7b"><a href="https://onatm.dev/2020/08/10/let-s-implement-a-bloom-filter/" class="markup--anchor markup--li-anchor">Let's implement a Bloom Filter (2020)</a> (<a href="https://news.ycombinator.com/item?id=24102617" class="markup--anchor markup--li-anchor">HN</a>)</span>
+-   <span id="df7b"><a href="https://onatm.dev/2020/08/10/let-s-implement-a-bloom-filter/" class="markup--anchor markup--li-anchor">Let’s implement a Bloom Filter (2020)</a> (<a href="https://news.ycombinator.com/item?id=24102617" class="markup--anchor markup--li-anchor">HN</a>)</span>
 -   <span id="009b"><a href="https://ourmachinery.com/post/data-structures-part-1-bulk-data/" class="markup--anchor markup--li-anchor">Data Structures Part 1: Bulk Data (2019)</a> (<a href="https://lobste.rs/s/t8mrxn/data_structures_part_1_bulk_data" class="markup--anchor markup--li-anchor">Lobsters</a>)</span>
 -   <span id="870d"><a href="https://www.freecodecamp.org/news/learn-all-about-data-structures-used-in-computer-science/" class="markup--anchor markup--li-anchor">Data Structures Explained</a></span>
 -   <span id="7553"><a href="https://rcoh.me/posts/cache-oblivious-datastructures/" class="markup--anchor markup--li-anchor">Introduction to Cache-Oblivious Data Structures (2018)</a></span>

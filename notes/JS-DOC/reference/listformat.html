@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>listformat</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="intl.listformat">Intl.ListFormat</h1>
+<p>The <code>Intl.ListFormat</code> object enables language-sensitive list formatting.</p>
+<h2 id="constructor">Constructor</h2>
+<p><a href="listformat/listformat"><code>Intl.ListFormat()</code></a><br />
+Creates a new <code>Intl.ListFormat</code> object.</p>
+<h2 id="static-methods">Static methods</h2>
+<p><a href="listformat/supportedlocalesof"><code>Intl.ListFormat.supportedLocalesOf()</code></a><br />
+Returns an array containing those of the provided locales that are supported without having to fall back to the runtime’s default locale.</p>
+<h2 id="instance-methods">Instance methods</h2>
+<p><a href="listformat/format"><code>Intl.ListFormat.prototype.format()</code></a><br />
+Returns a language-specific formatted string representing the elements of the list.</p>
+<p><a href="listformat/formattoparts"><code>Intl.ListFormat.prototype.formatToParts()</code></a><br />
+Returns an array of objects representing the different components that can be used to format a list of values in a locale-aware fashion.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-format">Using format</h3>
+<p>The following example shows how to create a List formatter using the English language.</p>
+<pre><code>const list = [&#39;Motorcycle&#39;, &#39;Bus&#39;, &#39;Car&#39;];
+
+ console.log(new Intl.ListFormat(&#39;en-GB&#39;, { style: &#39;long&#39;, type: &#39;conjunction&#39; }).format(list));
+// &gt; Motorcycle, Bus and Car
+
+ console.log(new Intl.ListFormat(&#39;en-GB&#39;, { style: &#39;short&#39;, type: &#39;disjunction&#39; }).format(list));
+// &gt; Motorcycle, Bus or Car
+
+ console.log(new Intl.ListFormat(&#39;en-GB&#39;, { style: &#39;narrow&#39;, type: &#39;unit&#39; }).format(list));
+// &gt; Motorcycle Bus Car</code></pre>
+<h3 id="using-formattoparts">Using formatToParts</h3>
+<p>The following example shows how to create a List formatter returning formatted parts</p>
+<pre><code>const list = [&#39;Motorcycle&#39;, &#39;Bus&#39;, &#39;Car&#39;];
+console.log(new Intl.ListFormat(&#39;en-GB&#39;, { style: &#39;long&#39;, type: &#39;conjunction&#39; }).formatToParts(list));
+
+// [ { &quot;type&quot;: &quot;element&quot;, &quot;value&quot;: &quot;Motorcycle&quot; },
+//   { &quot;type&quot;: &quot;literal&quot;, &quot;value&quot;: &quot;, &quot; },
+//   { &quot;type&quot;: &quot;element&quot;, &quot;value&quot;: &quot;Bus&quot; },
+//   { &quot;type&quot;: &quot;literal&quot;, &quot;value&quot;: &quot;, and &quot; },
+//   { &quot;type&quot;: &quot;element&quot;, &quot;value&quot;: &quot;Car&quot; } ];</code></pre>
+<h2 id="polyfill">Polyfill</h2>
+<p><a href="https://formatjs.io/docs/polyfills/intl-listformat">formatjs Intl.ListFormat polyfill</a></p>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma402/#listformat-objects">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) <br/></p>
+<span class="small">#listformat-objects</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>ListFormat</code></p>
+<p>72</p>
+<p>79</p>
+<p>78</p>
+<p>No</p>
+<p>60</p>
+<p>14.1</p>
+<p>72</p>
+<p>72</p>
+<p>79</p>
+<p>51</p>
+<p>14.5</p>
+<p>No</p>
+<p><code>ListFormat</code></p>
+<p>72</p>
+<p>79</p>
+<p>78</p>
+<p>No</p>
+<p>60</p>
+<p>14.1</p>
+<p>72</p>
+<p>72</p>
+<p>79</p>
+<p>51</p>
+<p>14.5</p>
+<p>No</p>
+<p><code>format</code></p>
+<p>72</p>
+<p>79</p>
+<p>78</p>
+<p>No</p>
+<p>60</p>
+<p>14.1</p>
+<p>72</p>
+<p>72</p>
+<p>79</p>
+<p>51</p>
+<p>14.5</p>
+<p>No</p>
+<p><code>formatToParts</code></p>
+<p>72</p>
+<p>79</p>
+<p>78</p>
+<p>No</p>
+<p>60</p>
+<p>14.1</p>
+<p>72</p>
+<p>72</p>
+<p>79</p>
+<p>51</p>
+<p>14.5</p>
+<p>No</p>
+<p><code>resolvedOptions</code></p>
+<p>72</p>
+<p>79</p>
+<p>78</p>
+<p>No</p>
+<p>60</p>
+<p>14.1</p>
+<p>72</p>
+<p>72</p>
+<p>79</p>
+<p>51</p>
+<p>14.5</p>
+<p>No</p>
+<p><code>supportedLocalesOf</code></p>
+<p>72</p>
+<p>79</p>
+<p>78</p>
+<p>No</p>
+<p>60</p>
+<p>14.1</p>
+<p>72</p>
+<p>72</p>
+<p>79</p>
+<p>51</p>
+<p>14.5</p>
+<p>No</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../intl"><code>Intl</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/ListFormat" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/ListFormat</a></p>
+</body>
+</html>

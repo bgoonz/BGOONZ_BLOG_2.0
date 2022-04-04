@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>toutcstring</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="date.prototype.toutcstring">Date.prototype.toUTCString()</h1>
+<p>The <code>toUTCString()</code> method converts a date to a string, using the UTC time zone.</p>
+<p>Based on <a href="https://datatracker.ietf.org/doc/html/rfc7231#section-7.1.1.1">rfc7231</a> and modified according to <a href="https://www.ecma-international.org/ecma-262/10.0/index.html#sec-date.prototype.toutcstring">ecma-262 toUTCString</a>, it can have negative values in the <a href="https://tc39.es/ecma262/#sec-date.prototype.toutcstring">2021 version</a></p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>toUTCString()</code></pre>
+<h3 id="return-value">Return value</h3>
+<p>A string representing the given date using the UTC time zone.</p>
+<h2 id="description">Description</h2>
+<p>The value returned by <code>toUTCString()</code> is a string in the form <code>Www, dd Mmm yyyy hh:mm:ss GMT</code>, Where:</p>
+<table>
+<thead>
+<tr class="header">
+<th>
+Format String
+</th>
+<th>
+Description
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<code>Www</code>
+</td>
+<td>
+Day of week, as three letters (e.g. Sun, Mon, …)
+</td>
+</tr>
+<tr class="even">
+<td>
+<code>dd</code>
+</td>
+<td>
+Day of month, as two digits with leading zero if required
+</td>
+</tr>
+<tr class="odd">
+<td>
+<code>Mmm</code>
+</td>
+<td>
+Month, as three letters (e.g. Jan, Feb, …)
+</td>
+</tr>
+<tr class="even">
+<td>
+<code>yyyy</code>
+</td>
+<td>
+Year, as four or more digits with leading zeroes if required
+</td>
+</tr>
+<tr class="odd">
+<td>
+<code>hh</code>
+</td>
+<td>
+Hour, as two digits with leading zero if required
+</td>
+</tr>
+<tr class="even">
+<td>
+<code>mm</code>
+</td>
+<td>
+Minute, as two digits with leading zero if required
+</td>
+</tr>
+<tr class="odd">
+<td>
+<code>ss</code>
+</td>
+<td>
+Seconds, as two digits with leading zero if required
+</td>
+</tr>
+</tbody>
+</table>
+<p>Prior to ECMAScript 2018, the format of the return value varied according to the platform. The most common return value was an RFC-1123 formatted date stamp, which is a slightly updated version of RFC-822 date stamps.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-toutcstring">Using toUTCString()</h3>
+<pre><code>let today = new Date(&#39;Wed, 14 Jun 2017 00:00:00 PDT&#39;);
+let UTCstring = today.toUTCString(); // Wed, 14 Jun 2017 07:00:00 GMT</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-date.prototype.toutcstring">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-date.prototype.toutcstring</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>toUTCString</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>4</p>
+<p>4</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="tolocalestring"><code>Date.prototype.toLocaleString()</code></a></li>
+<li><a href="todatestring"><code>Date.prototype.toDateString()</code></a></li>
+<li><a href="toisostring"><code>Date.prototype.toISOString()</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toUTCString" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toUTCString</a></p>
+</body>
+</html>

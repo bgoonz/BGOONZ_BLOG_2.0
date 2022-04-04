@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>object_initializer</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="object-initializer">Object initializer</h1>
+<p>Objects can be initialized using <a href="../global_objects/object/object"><code>new Object()</code></a>, <code>Object.create()</code>, or using the <em>literal</em> notation (<em>initializer</em> notation). An object initializer is a comma-delimited list of zero or more pairs of property names and associated values of an object, enclosed in curly braces (<code>{}</code>).</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>let o = {}
+let o = {a: &#39;foo&#39;, b: 42, c: {}}
+
+let a = &#39;foo&#39;, b = 42, c = {}
+let o = {a: a, b: b, c: c}
+
+let o = {
+  property: function (parameters) {},
+  get property() {},
+  set property(value) {}
+};</code></pre>
+<h3 id="new-notations-in-ecmascript-2015">New notations in ECMAScript 2015</h3>
+<p>Please see the compatibility table for support for these notations. In non-supporting environments, these notations will lead to syntax errors.</p>
+<pre><code>// Shorthand property names (ES2015)
+let a = &#39;foo&#39;, b = 42, c = {};
+let o = {a, b, c}
+
+// Shorthand method names (ES2015)
+let o = {
+  property(parameters) {}
+}
+
+// Computed property names (ES2015)
+let prop = &#39;foo&#39;;
+let o = {
+  [prop]: &#39;hey&#39;,
+  [&#39;b&#39; + &#39;ar&#39;]: &#39;there&#39;
+}</code></pre>
+<h2 id="description">Description</h2>
+<p>An object initializer is an expression that describes the initialization of an <a href="../global_objects/object"><code>Object</code></a>. Objects consist of <em>properties</em>, which are used to describe an object. The values of object properties can either contain <a href="https://developer.mozilla.org/en-US/docs/Glossary/Primitive">primitive</a> data types or other objects.</p>
+<h3 id="object-literal-notation-vs-json">Object literal notation vs JSON</h3>
+<p>The object literal notation is not the same as the <strong>J</strong>ava<strong>S</strong>cript <strong>O</strong>bject <strong>N</strong>otation (<a href="https://developer.mozilla.org/en-US/docs/Glossary/JSON">JSON</a>). Although they look similar, there are differences between them:</p>
+<ul>
+<li>JSON permits <em>only</em> property definition using <code>"property": value</code> syntax. The property name must be double-quoted, and the definition cannot be a shorthand.</li>
+<li>In JSON the values can only be strings, numbers, arrays, <code>true</code>, <code>false</code>, <code>null</code>, or another (JSON) object.</li>
+<li>A function value (see “Methods” below) can not be assigned to a value in JSON.</li>
+<li>Objects like <a href="../global_objects/date"><code>Date</code></a> will be a string after <a href="../global_objects/json/parse"><code>JSON.parse()</code></a>.</li>
+<li><a href="../global_objects/json/parse"><code>JSON.parse()</code></a> will reject computed property names and an error will be thrown.</li>
+</ul>
+<h2 id="examples">Examples</h2>
+<h3 id="creating-objects">Creating objects</h3>
+<p>An empty object with no properties can be created like this:</p>
+<pre><code>let object = {}</code></pre>
+<p>However, the advantage of the <em>literal</em> or <em>initializer</em> notation is, that you are able to quickly create objects with properties inside the curly braces. You notate a list of <code>key: value</code> pairs delimited by commas.</p>
+<p>The following code creates an object with three properties and the keys are <code>"foo"</code>, <code>"age"</code> and <code>"baz"</code>. The values of these keys are a string <code>"bar"</code>, the number <code>42</code>, and another object.</p>
+<pre><code>let object = {
+  foo: &#39;bar&#39;,
+  age: 42,
+  baz: {myProp: 12}
+}</code></pre>
+<h3 id="accessing-properties">Accessing properties</h3>
+<p>Once you have created an object, you might want to read or change them. Object properties can be accessed by using the dot notation or the bracket notation. (See <a href="property_accessors">property accessors</a> for detailed information.)</p>
+<pre><code>object.foo // &quot;bar&quot;
+object[&#39;age&#39;] // 42
+
+object.foo = &#39;baz&#39;</code></pre>
+<h3 id="property-definitions">Property definitions</h3>
+<p>We have already learned how to notate properties using the initializer syntax. Oftentimes, there are variables in your code that you would like to put into an object. You will see code like this:</p>
+<pre><code>let a = &#39;foo&#39;,
+    b = 42,
+    c = {};
+
+let o = {
+  a: a,
+  b: b,
+  c: c
+}</code></pre>
+<p>With ECMAScript 2015, there is a shorter notation available to achieve the same:</p>
+<pre><code>let a = &#39;foo&#39;,
+    b = 42,
+    c = {};
+
+// Shorthand property names (ES2015)
+let o = {a, b, c}
+
+// In other words,
+console.log((o.a === {a}.a)) // true</code></pre>
+<h4 id="duplicate-property-names">Duplicate property names</h4>
+<p>When using the same name for your properties, the second property will overwrite the first.</p>
+<pre><code>let a = {x: 1, x: 2}
+console.log(a) // {x: 2}</code></pre>
+<p>In ECMAScript 5 strict mode code, duplicate property names were considered a <a href="../global_objects/syntaxerror"><code>SyntaxError</code></a>. With the introduction of computed property names making duplication possible at runtime, ECMAScript 2015 has removed this restriction.</p>
+<pre><code>function haveES2015DuplicatePropertySemantics() {
+  &#39;use strict&#39;;
+  try {
+    ({prop: 1, prop: 2});
+
+    // No error thrown, duplicate property names allowed in strict mode
+    return true;
+  } catch(e) {
+    // Error thrown, duplicates prohibited in strict mode
+    return false;
+  }
+}</code></pre>
+<h3 id="method-definitions">Method definitions</h3>
+<p>A property of an object can also refer to a <a href="../functions">function</a> or a <a href="../functions/get">getter</a> or <a href="../functions/set">setter</a> method.</p>
+<pre><code>let o = {
+  property: function (parameters) {},
+  get property() {},
+  set property(value) {}
+}</code></pre>
+<p>In ECMAScript 2015, a shorthand notation is available, so that the keyword “<code>function</code>” is no longer necessary.</p>
+<pre><code>// Shorthand method names (ES2015)
+let o = {
+  property(parameters) {},
+}</code></pre>
+<p>In ECMAScript 2015, there is a way to concisely define properties whose values are generator functions:</p>
+<pre><code>let o = {
+  *generator() {
+    ...........
+  }
+};</code></pre>
+<p>Which is equivalent to this ES5-like notation (but note that ECMAScript 5 has no generators):</p>
+<pre><code>let o = {
+  generator: function* () {
+    ...........
+  }
+};</code></pre>
+<p>For more information and examples about methods, see <a href="../functions/method_definitions">method definitions</a>.</p>
+<h3 id="computed-property-names">Computed property names</h3>
+<p>Starting with ECMAScript 2015, the object initializer syntax also supports computed property names. That allows you to put an expression in brackets <code>[]</code>, that will be computed and used as the property name. This is reminiscent of the bracket notation of the <a href="property_accessors">property accessor</a> syntax, which you may have used to read and set properties already.</p>
+<p>Now you can use a similar syntax in object literals, too:</p>
+<pre><code>// Computed property names (ES2015)
+let i = 0
+let a = {
+  [&#39;foo&#39; + ++i]: i,
+  [&#39;foo&#39; + ++i]: i,
+  [&#39;foo&#39; + ++i]: i
+}
+
+console.log(a.foo1) // 1
+console.log(a.foo2) // 2
+console.log(a.foo3) // 3
+
+const items = [&quot;A&quot;,&quot;B&quot;,&quot;C&quot;];
+const obj = {
+[items]: &quot;Hello&quot;
+}
+console.log(obj); // A,B,C: &quot;Hello&quot;
+console.log(obj[&quot;A,B,C&quot;]) // &quot;Hello&quot;
+
+let param = &#39;size&#39;
+let config = {
+  [param]: 12,
+  [&#39;mobile&#39; + param.charAt(0).toUpperCase() + param.slice(1)]: 4
+}
+
+console.log(config) // {size: 12, mobileSize: 4}</code></pre>
+<h3 id="spread-properties">Spread properties</h3>
+<p>The <a href="https://github.com/tc39/proposal-object-rest-spread">Rest/Spread Properties for ECMAScript</a> proposal (stage 4) adds <a href="spread_syntax">spread</a> properties to object literals. It copies own enumerable properties from a provided object onto a new object.</p>
+<p>Shallow-cloning (excluding <code>prototype</code>) or merging objects is now possible using a shorter syntax than <a href="../global_objects/object/assign"><code>Object.assign()</code></a>.</p>
+<pre><code>let obj1 = { foo: &#39;bar&#39;, x: 42 }
+let obj2 = { foo: &#39;baz&#39;, y: 13 }
+
+let clonedObj = { ...obj1 }
+// Object { foo: &quot;bar&quot;, x: 42 }
+
+let mergedObj = { ...obj1, ...obj2 }
+// Object { foo: &quot;baz&quot;, x: 42, y: 13 }</code></pre>
+<p><strong>Warning:</strong> Note that <a href="../global_objects/object/assign"><code>Object.assign()</code></a> triggers <a href="../functions/set">setters</a>, whereas the spread operator doesn’t!</p>
+<h3 id="prototype-mutation">Prototype mutation</h3>
+<p>A property definition of the form <code>__proto__: value</code> or <code>"__proto__": value</code> does not create a property with the name <code>__proto__</code>. Instead, if the provided value is an object or <a href="../global_objects/null"><code>null</code></a>, it changes the <code>[[Prototype]]</code> of the created object to that value. (If the value is not an object or <code>null</code>, the object is not changed.)</p>
+<pre><code>let obj1 = {}
+assert(Object.getPrototypeOf(obj1) === Object.prototype)
+
+let obj2 = {__proto__: null}
+assert(Object.getPrototypeOf(obj2) === null)
+
+let protoObj = {}
+let obj3 = {&#39;__proto__&#39;: protoObj}
+assert(Object.getPrototypeOf(obj3) === protoObj)
+
+let obj4 = {__proto__: &#39;not an object or null&#39;}
+assert(Object.getPrototypeOf(obj4) === Object.prototype)
+assert(!obj4.hasOwnProperty(&#39;__proto__&#39;))</code></pre>
+<p>Only a single prototype mutation is permitted in an object literal. Multiple prototype mutations are a syntax error.</p>
+<p>Property definitions that do not use “colon” notation are not prototype mutations. They are property definitions that behave identically to similar definitions using any other name.</p>
+<pre><code>let __proto__ = &#39;variable&#39;
+
+let obj1 = {__proto__}
+assert(Object.getPrototypeOf(obj1) === Object.prototype)
+assert(obj1.hasOwnProperty(&#39;__proto__&#39;))
+assert(obj1.__proto__ === &#39;variable&#39;)
+
+let obj2 = {__proto__() { return &#39;hello&#39;; }}
+assert(obj2.__proto__() === &#39;hello&#39;)
+
+let obj3 = {[&#39;__prot&#39; + &#39;o__&#39;]: 17}
+assert(obj3.__proto__ === 17)</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-object-initializer">ECMAScript (ECMA-262) <br/></p>
+<span class="small">The definition of ‘Object Initializer’ in that specification.</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>Object_initializer</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>1</p>
+<p>4</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>computed_property_names</code></p>
+<p>47</p>
+<p>12</p>
+<p>34</p>
+<p>No</p>
+<p>34</p>
+<p>8</p>
+<p>47</p>
+<p>47</p>
+<p>34</p>
+<p>34</p>
+<p>8</p>
+<p>5.0</p>
+<p><code>shorthand_method_names</code></p>
+<p>47</p>
+<p>12</p>
+<p>34</p>
+<p>No</p>
+<p>34</p>
+<p>9</p>
+<p>47</p>
+<p>47</p>
+<p>34</p>
+<p>34</p>
+<p>9</p>
+<p>5.0</p>
+<p><code>shorthand_property_names</code></p>
+<p>47</p>
+<p>12</p>
+<p>33</p>
+<p>No</p>
+<p>34</p>
+<p>9</p>
+<p>47</p>
+<p>47</p>
+<p>33</p>
+<p>34</p>
+<p>9</p>
+<p>5.0</p>
+<p><code>spread_properties</code></p>
+<p>60</p>
+<p>79</p>
+<p>55</p>
+<p>No</p>
+<p>47</p>
+<p>11.1</p>
+<p>60</p>
+<p>60</p>
+<p>55</p>
+<p>44</p>
+<p>11.3</p>
+<p>8.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="property_accessors">Property accessors</a></li>
+<li><code>get</code> / <code>set</code></li>
+<li><a href="../functions/method_definitions">Method definitions</a></li>
+<li><a href="../lexical_grammar">Lexical grammar</a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer</a></p>
+</body>
+</html>

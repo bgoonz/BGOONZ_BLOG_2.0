@@ -1,43 +1,52 @@
----
-tags: [database]
----
+psql is the PostgreSQL terminal interface. The following commands were tested on version 9.5.
+=============================================================================================
 
-# psql is the PostgreSQL terminal interface. The following commands were tested on version 9.5.
+Connection options:
+===================
 
-# Connection options:
+-U username (if not specified current OS user is used).
+=======================================================
 
-# -U username (if not specified current OS user is used).
+-p port.
+========
 
-# -p port.
+-h server hostname/address.
+===========================
 
-# -h server hostname/address.
+Connect to a specific database:
+===============================
 
-# Connect to a specific database:
+psql -U -h -d
 
-psql -U <username> -h <host> -d <database>
+Get databases on a server:
+==========================
 
-# Get databases on a server:
+psql -U -h –list
 
-psql -U <username> -h <host> --list
+Execute sql query and save output to file:
+==========================================
 
-# Execute sql query and save output to file:
+psql -U -d -c ‘select \* from tableName;’ -o
 
-psql -U <username> -d <database> -c 'select \* from tableName;' -o <outfile>
+Execute query and get tabular html output:
+==========================================
 
-# Execute query and get tabular html output:
+psql -U -d -H -c ‘select \* from tableName;’
 
-psql -U <username> -d <database> -H -c 'select \* from tableName;'
+Execute query and save resulting rows to csv file:
+==================================================
 
-# Execute query and save resulting rows to csv file:
+(if column names in the first row are not needed, remove the word ‘header’)
+===========================================================================
 
-# (if column names in the first row are not needed, remove the word 'header')
+psql -U -d -c ‘copy (select \* from tableName) to stdout with csv header;’ -o
 
-psql -U <username> -d <database> -c 'copy (select \* from tableName) to stdout with csv header;' -o <outfile>
+Read commands from file:
+========================
 
-# Read commands from file:
+psql -f
 
-psql -f <outfile>
+Restore databases from file:
+============================
 
-# Restore databases from file:
-
-psql -f <outfile> <username>
+psql -f

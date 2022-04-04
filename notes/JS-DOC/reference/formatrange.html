@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>formatrange</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="intl.datetimeformat.prototype.formatrange">Intl.DateTimeFormat.prototype.formatRange()</h1>
+<p>The <code>Intl.DateTimeFormat.prototype.formatRange()</code> formats a date range in the most concise way based on the <code>locale</code> and <code>options</code> provided when instantiating <a href="../datetimeformat"><code>Intl.DateTimeFormat</code></a> object.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>formatRange(startDate, endDate)</code></pre>
+<h2 id="examples">Examples</h2>
+<h3 id="basic-formatrange-usage">Basic formatRange usage</h3>
+<p>This method receives two <a href="../../date"><code>Date</code></a>s and formats the date range in the most concise way based on the <code>locale</code> and <code>options</code> provided when instantiating <a href="../datetimeformat"><code>Intl.DateTimeFormat</code></a>.</p>
+<pre><code>let date1 = new Date(Date.UTC(2007, 0, 10, 10, 0, 0));
+let date2 = new Date(Date.UTC(2007, 0, 10, 11, 0, 0));
+let date3 = new Date(Date.UTC(2007, 0, 20, 10, 0, 0));
+// &gt; &#39;Wed, 10 Jan 2007 10:00:00 GMT&#39;
+// &gt; &#39;Wed, 10 Jan 2007 11:00:00 GMT&#39;
+// &gt; &#39;Sat, 20 Jan 2007 10:00:00 GMT&#39;
+
+let fmt1 = new Intl.DateTimeFormat(&quot;en&quot;, {
+    year: &#39;2-digit&#39;,
+    month: &#39;numeric&#39;,
+    day: &#39;numeric&#39;,
+    hour: &#39;numeric&#39;,
+    minute: &#39;numeric&#39;
+});
+console.log(fmt1.format(date1));
+console.log(fmt1.formatRange(date1, date2));
+console.log(fmt1.formatRange(date1, date3));
+// &gt; &#39;1/10/07, 10:00 AM&#39;
+// &gt; &#39;1/10/07, 10:00 - 11:00 AM&#39;
+// &gt; &#39;1/10/07, 10:00 AM - 1/20/07, 10:00 AM&#39;
+
+let fmt2 = new Intl.DateTimeFormat(&quot;en&quot;, {
+    year: &#39;numeric&#39;,
+    month: &#39;short&#39;,
+    day: &#39;numeric&#39;
+});
+console.log(fmt2.format(date1));
+console.log(fmt2.formatRange(date1, date2));
+console.log(fmt2.formatRange(date1, date3));
+// &gt; &#39;Jan 10, 2007&#39;
+// &gt; &#39;Jan 10, 2007&#39;
+// &gt; &#39;Jan 10 - 20, 2007&#39;</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma402/#sec-intl.datetimeformat.prototype.formatRange">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) <br/></p>
+<span class="small">#sec-intl.datetimeformat.prototype.formatRange</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>formatRange</code></p>
+<p>76</p>
+<p>79</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>14.1</p>
+<p>76</p>
+<p>76</p>
+<p>No</p>
+<p>54</p>
+<p>14.5</p>
+<p>No</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../datetimeformat"><code>Intl.DateTimeFormat</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/formatRange" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/formatRange</a></p>
+</body>
+</html>

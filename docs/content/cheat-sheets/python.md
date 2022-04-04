@@ -1,8 +1,3 @@
----
-title: Python
-category: Python
----
-
 ### Lists
 
     list = []
@@ -114,47 +109,38 @@ category: Python
     expr.match(...)
     expr.sub(...)
 
-## File manipulation
+File manipulation
+-----------------
 
 ### Reading
 
-```py
-file = open("hello.txt", "r") # open in read mode 'r'
-file.close()
-```
+    file = open("hello.txt", "r") # open in read mode 'r'
+    file.close()
 
-```py
-print(file.read())  # read the entire file and set the cursor at the end of file
-print file.readline() # Reading one line
-file.seek(0, 0) # place the cursor at the beggining of the file
-```
+    print(file.read())  # read the entire file and set the cursor at the end of file
+    print file.readline() # Reading one line
+    file.seek(0, 0) # place the cursor at the beggining of the file
 
 ### Writing (overwrite)
 
-```py
-file = open("hello.txt", "w") # open in write mode 'w'
-file.write("Hello World")
+    file = open("hello.txt", "w") # open in write mode 'w'
+    file.write("Hello World")
 
-text_lines = ["First line", "Second line", "Last line"]
-file.writelines(text_lines)
+    text_lines = ["First line", "Second line", "Last line"]
+    file.writelines(text_lines)
 
-file.close()
-```
+    file.close()
 
 ### Writing (append)
 
-```py
-file = open("Hello.txt", "a") # open in append mode
-file.write("Hello World again")
-file.close()
-```
+    file = open("Hello.txt", "a") # open in append mode
+    file.write("Hello World again")
+    file.close()
 
 ### Context manager
 
-```py
-with open("welcome.txt", "r") as file:
-    # 'file' refers directly to "welcome.txt"
-   data = file.read()
+    with open("welcome.txt", "r") as file:
+        # 'file' refers directly to "welcome.txt"
+       data = file.read()
 
-# It closes the file automatically at the end of scope, no need for `file.close()`.
-```
+    # It closes the file automatically at the end of scope, no need for `file.close()`.

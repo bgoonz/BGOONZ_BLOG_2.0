@@ -1,14 +1,16 @@
-# The arguments object
+The arguments object
+====================
 
 <span class="summary">`arguments` is an `Array`-like object accessible inside [functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) that contains the values of the arguments passed to that function.</span>
 
-## Description
+Description
+-----------
 
-**Note:** If you're writing ES6 compatible code, then [rest parameters](rest_parameters) should be preferred.
+**Note:** If you’re writing ES6 compatible code, then [rest parameters](rest_parameters) should be preferred.
 
-**Note:** "Array-like" means that `arguments` has a [`length`](arguments/length) property and properties indexed from zero, but it doesn't have [`Array`](../global_objects/array)'s built-in methods like [`forEach()`](../global_objects/array/foreach) or [`map()`](../global_objects/array/map). See [§Description](#description) for details.
+**Note:** “Array-like” means that `arguments` has a [`length`](arguments/length) property and properties indexed from zero, but it doesn’t have [`Array`](../global_objects/array)’s built-in methods like [`forEach()`](../global_objects/array/foreach) or [`map()`](../global_objects/array/map). See [§Description](#description) for details.
 
-The `arguments` object is a local variable available within all non-[arrow](arrow_functions) functions. You can refer to a function's arguments inside that function by using its `arguments` object. It has entries for each argument the function was called with, with the first entry's index at `0`.
+The `arguments` object is a local variable available within all non-[arrow](arrow_functions) functions. You can refer to a function’s arguments inside that function by using its `arguments` object. It has entries for each argument the function was called with, with the first entry’s index at `0`.
 
 For example, if a function is passed 3 arguments, you can access them as follows:
 
@@ -28,7 +30,7 @@ However, it can be converted to a real `Array`:
     // Using an array literal is shorter than above but allocates an empty array
     var args = [].slice.call(arguments);
 
-As you can do with any Array-like object, you can use ES2015's [`Array.from()`](../global_objects/array/from) method or [spread syntax](../operators/spread_syntax) to convert `arguments` to a real Array:
+As you can do with any Array-like object, you can use ES2015’s [`Array.from()`](../global_objects/array/from) method or [spread syntax](../operators/spread_syntax) to convert `arguments` to a real Array:
 
     let args = Array.from(arguments);
     // or
@@ -46,7 +48,7 @@ The `arguments` object is useful for functions called with more arguments than t
       return longest;
     }
 
-You can use [`arguments.length`](arguments/length) to count how many arguments the function was called with. If you instead want to count how many parameters a function is declared to accept, inspect that function's [`length`](../global_objects/function/length) property.
+You can use [`arguments.length`](arguments/length) to count how many arguments the function was called with. If you instead want to count how many parameters a function is declared to accept, inspect that function’s [`length`](../global_objects/function/length) property.
 
 ### Using typeof with arguments
 
@@ -58,7 +60,8 @@ The type of individual arguments can be determined by indexing `arguments`:
 
     console.log(typeof arguments[0]); // returns the type of the first argument
 
-## Properties
+Properties
+----------
 
 [`arguments.callee`](arguments/callee)  
 Reference to the currently executing function that the arguments belong to. Forbidden in strict mode.
@@ -69,11 +72,12 @@ The number of arguments that were passed to the function.
 [`arguments[@@iterator]`](arguments/@@iterator)  
 Returns a new [Array iterator](../global_objects/array/@@iterator) object that contains the values for each index in `arguments`.
 
-## Examples
+Examples
+--------
 
 ### Defining a function that concatenates several strings
 
-This example defines a function that concatenates several strings. The function's only formal argument is a string containing the characters that separate the items to concatenate.
+This example defines a function that concatenates several strings. The function’s only formal argument is a string containing the characters that separate the items to concatenate.
 
     function myConcat(separator) {
       let args = Array.prototype.slice.call(arguments, 1);
@@ -93,7 +97,7 @@ You can pass as many arguments as you like to this function. It returns a string
 
 ### Defining a function that creates HTML lists
 
-This example defines a function that creates a string containing HTML for a list. The only formal argument for the function is a string that is "`u`" if the list is to be [unordered (bulleted)](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul), or "`o`" if the list is to be [ordered (numbered)](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol). The function is defined as follows:
+This example defines a function that creates a string containing HTML for a list. The only formal argument for the function is a string that is “`u`” if the list is to be [unordered (bulleted)](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul), or “`o`” if the list is to be [ordered (numbered)](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol). The function is defined as follows:
 
     function list(type) {
       var html = '<' + type + 'l><li>';
@@ -166,12 +170,11 @@ And also:
     }
     func(); // undefined
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-arguments-exotic-objects">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-arguments-exotic-objects</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-arguments-exotic-objects</span></td></tr></tbody></table>
 
 `arguments`
 
@@ -277,9 +280,10 @@ No
 
 6.0
 
-## See also
+See also
+--------
 
-- [`Function`](../global_objects/function)
-- [Rest parameters](rest_parameters)
+-   [`Function`](../global_objects/function)
+-   [Rest parameters](rest_parameters)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments</a>

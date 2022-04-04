@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>description</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="symbol.prototype.description">Symbol.prototype.description</h1>
+<p>The read-only <code>description</code> property is a string returning the optional description of <a href="../symbol"><code>Symbol</code></a> objects.</p>
+<h2 id="description">Description</h2>
+<p><a href="../symbol"><code>Symbol</code></a> objects can be created with an optional description which can be used for debugging but not to access the symbol itself. The <code>Symbol.prototype.description</code> property can be used to read that description. It is different to <code>Symbol.prototype.toString()</code> as it does not contain the enclosing “<code>Symbol()</code>” string. See the examples.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-description">Using description</h3>
+<pre><code>Symbol(&#39;desc&#39;).toString();   // &quot;Symbol(desc)&quot;
+Symbol(&#39;desc&#39;).description;  // &quot;desc&quot;
+Symbol(&#39;&#39;).description;      // &quot;&quot;
+Symbol().description;        // undefined
+
+// well-known symbols
+Symbol.iterator.toString();  // &quot;Symbol(Symbol.iterator)&quot;
+Symbol.iterator.description; // &quot;Symbol.iterator&quot;
+
+// global symbols
+Symbol.for(&#39;foo&#39;).toString();  // &quot;Symbol(foo)&quot;
+Symbol.for(&#39;foo&#39;).description; // &quot;foo&quot;</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-symbol.prototype.description">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-symbol.prototype.description</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>description</code></p>
+<p>70</p>
+<p>79</p>
+<p>63</p>
+<p>No</p>
+<p>57</p>
+<p>12.1</p>
+<p>12</p>
+<p>No support for an undefined description.</p>
+<p>70</p>
+<p>70</p>
+<p>63</p>
+<p>49</p>
+<p>12.2</p>
+<p>12</p>
+<p>No support for an undefined description.</p>
+<p>10.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="tostring"><code>Symbol.prototype.toString()</code></a></li>
+<li>Polyfill: <a href="https://npmjs.com/symbol.prototype.description" class="uri">https://npmjs.com/symbol.prototype.description</a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/description" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/description</a></p>
+</body>
+</html>

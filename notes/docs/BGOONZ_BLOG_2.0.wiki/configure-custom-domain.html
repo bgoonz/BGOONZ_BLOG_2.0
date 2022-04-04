@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>configure-custom-domain</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="configure-external-dns-for-a-custom-domain">Configure external DNS for a custom domain</h1>
+<p>If you’ve assigned an externally registered domain to your site, and you don’t want to use <a href="https://docs.netlify.com/domains-https/netlify-dns/">Netlify DNS</a>, you need to configure your external DNS provider to point your domain to Netlify.</p>
+<p>To access customized details about the DNS records you need to configure, go to Site settings &gt; Domain management &gt; Custom domains and select Check DNS configuration next to the custom domain.</p>
+<figure>
+<img src="https://d33wubrfki0l68.cloudfront.net/171e5e78bfcbea0fec0c5e962483936792de9c1f/89809/images/domains-https-check-dns-configuration.png" alt="The link is between the domain name and the options menu." /><figcaption>The link is between the domain name and the options menu.</figcaption>
+</figure>
+<p>The next steps vary depending on the type of domain or subdomain.</p>
+<ul>
+<li>For a <a href="https://docs.netlify.com/domains-https/custom-domains/#definitions">subdomain</a> of a domain you own, such as <code>blog.petsofnetlify.com</code> or <code>www.petsofnetlify.com</code>, follow the directions below for <a href="https://docs.netlify.com/domains-https/custom-domains/configure-external-dns/#configure-a-subdomain">subdomain configuration</a>.</li>
+<li>For an <a href="https://docs.netlify.com/domains-https/custom-domains/#definitions">apex domain</a> with no subdomain, such as <code>petsofnetlify.com</code>, make sure to read our <a href="https://docs.netlify.com/domains-https/custom-domains/multiple-domains/#apex-domains-and-www-subdomains">advice about using apex domains</a>, then follow the directions below for <a href="https://docs.netlify.com/domains-https/custom-domains/configure-external-dns/#configure-an-apex-domain">apex domain configuration</a>.</li>
+</ul>
+<p>Special handling for apex and <code>www</code></p>
+<p>If you assign an apex domain or a <code>www</code> subdomain to your site, Netlify will automatically add <em>both</em> the apex domain and the <code>www</code> subdomain. For more information, visit the section on <a href="https://docs.netlify.com/domains-https/custom-domains/multiple-domains/#apex-domains-and-www-subdomains">apex domains and <code>www</code> subdomains</a>.</p>
+<h2 id="configure-a-subdomain"><a href="https://docs.netlify.com/domains-https/custom-domains/configure-external-dns/#configure-a-subdomain">#</a>Configure a subdomain</h2>
+<p>To point a subdomain such as <code>blog.petsofnetlify.com</code> or <code>www.petsofnetlify.com</code> to your site on Netlify, you must create a CNAME record with your DNS provider.</p>
+<p>For example, if your site’s domain is <code>blog.petsofnetlify.com</code> and your <a href="https://docs.netlify.com/domains-https/custom-domains/#definitions">Netlify subdomain</a> is <code>brave-curie-671954.netlify.app</code>:</p>
+<ol type="1">
+<li>Find your DNS provider’s DNS record settings for your apex domain, <code>petsofnetlify.com</code>.</li>
+<li>Add a CNAME record with your subdomain, <code>blog</code>, as the host.</li>
+<li>Point the record to your Netlify subdomain, <code>brave-curie-671954.netlify.app</code>.</li>
+<li>Save your settings. It may take a full day for the settings to propagate across the global Domain Name System.</li>
+</ol>
+<p>If your site uses the <code>www</code> subdomain, as in <code>www.petsofnetlify.com</code>, you will use the same procedure described above. However, you should also read about our <a href="https://docs.netlify.com/domains-https/custom-domains/multiple-domains/#apex-domains-and-www-subdomains">special handling for <code>www</code> subdomains</a>. This handling includes automatically adding the apex domain to your site, which requires an apex domain configuration as described below.</p>
+<h2 id="configure-an-apex-domain"><a href="https://docs.netlify.com/domains-https/custom-domains/configure-external-dns/#configure-an-apex-domain">#</a>Configure an apex domain</h2>
+<p>Unlike subdomains, apex domains don’t support CNAME records. You must configure your domain with a single-server A record. The A record points to a single server IP address, which means it can’t take advantage of direct DNS routing on a <a href="https://www.netlify.com/products/edge/">global CDN like Netlify’s</a>.</p>
+<p>Cloudflare exception</p>
+<p>If you use Cloudflare as your DNS provider, it supports a special record type that also works well on the bare domain - Flattened CNAME records. This record type is recommended for your bare domain. You’d set the same record value as for your subdomains, such as <code>brave-curie-671954.netlify.app</code>.</p>
+<ol type="1">
+<li>Find your DNS provider’s DNS record settings for your apex domain, such as <code>petsofnetlify.com</code>.</li>
+<li>Add an A record (or Flattened CNAME record for Cloudflare). Depending on your provider, leave the host field empty or enter <code>@</code>.</li>
+<li>Point the record to Netlify’s load balancer IP address: <code>75.2.60.5</code></li>
+<li>Save your settings. It may take a full day for the settings to propagate across the global Domain Name System.</li>
+</ol>
+<p>Special handling for apex domains</p>
+<p>If you assign an apex domain to your site, Netlify will automatically add a <code>www</code> subdomain for the domain as well. To find out how this affects your site configuration, visit the section on <a href="https://docs.netlify.com/domains-https/custom-domains/multiple-domains/#apex-domains-and-www-subdomains">apex domains and <code>www</code> subdomains</a>.</p>
+<h2 id="dns-record-propagation"><a href="https://docs.netlify.com/domains-https/custom-domains/configure-external-dns/#dns-record-propagation">#</a>DNS record propagation</h2>
+<p>Depending on your DNS provider, changes to DNS records can take several hours to propagate and take effect for the entire internet.</p>
+<p>If more than 24 hours have passed since you configured your DNS records, and your site is still not accessible at your custom domain, try our <a href="https://docs.netlify.com/domains-https/troubleshooting-tips/#dns-configuration">DNS troubleshooting tips</a>.</p>
+</body>
+</html>

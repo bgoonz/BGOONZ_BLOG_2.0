@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2022-01-03" />
+  <title>title</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">title</h1>
+<p class="subtitle">subtitle</p>
+<p class="date">2022-01-03</p>
+</header>
+<hr />
+<p>title: ES2015+ category: JavaScript</p>
+<p>tags: [Featured] weight: -10 intro: | A quick overview of new JavaScript features in ES2015, ES2016, ES2017, ES2018 and beyond.</p>
+<hr />
+<h3 id="block-scoping">Block scoping</h3>
+<h4 id="let">Let</h4>
+<hr />
+<div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">function</span> <span class="at">fn</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-2" title="2">    <span class="kw">let</span> x <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb1-3" title="3">    <span class="cf">if</span> (<span class="kw">true</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-4" title="4">        <span class="kw">let</span> x <span class="op">=</span> <span class="dv">1</span><span class="op">;</span> <span class="co">// only inside this `if`</span></a>
+<a class="sourceLine" id="cb1-5" title="5">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb1-6" title="6"><span class="op">}</span></a></code></pre></div>
+<p>{: data-line=“2,4”}</p>
+<h4 id="const">Const</h4>
+<div class="sourceCode" id="cb2"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">const</span> a <span class="op">=</span> <span class="dv">1</span><span class="op">;</span></a></code></pre></div>
+<p><code>let</code> is the new <code>var</code>. Constants work just like <code>let</code>, but can’t be reassigned. See: <a href="https://babeljs.io/learn-es2015/#let--const">Let and const</a></p>
+<h3 id="backtick-strings">Backtick strings</h3>
+<h4 id="interpolation">Interpolation</h4>
+<div class="sourceCode" id="cb3"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">const</span> message <span class="op">=</span> <span class="vs">`Hello </span><span class="sc">${</span>name<span class="sc">}</span><span class="vs">`</span><span class="op">;</span></a></code></pre></div>
+<h4 id="multiline-strings">Multiline strings</h4>
+<div class="sourceCode" id="cb4"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb4-1" title="1"><span class="kw">const</span> str <span class="op">=</span> <span class="vs">`</span></a>
+<a class="sourceLine" id="cb4-2" title="2"><span class="vs">hello</span></a>
+<a class="sourceLine" id="cb4-3" title="3"><span class="vs">world</span></a>
+<a class="sourceLine" id="cb4-4" title="4"><span class="vs">`</span><span class="op">;</span></a></code></pre></div>
+<p>Templates and multiline strings. See: <a href="https://babeljs.io/learn-es2015/#template-strings">Template strings</a></p>
+<h3 id="binary-and-octal-literals">Binary and octal literals</h3>
+<div class="sourceCode" id="cb5"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">let</span> bin <span class="op">=</span> <span class="bn">0b1010010</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb5-2" title="2"><span class="kw">let</span> oct <span class="op">=</span> <span class="bn">0o755</span><span class="op">;</span></a></code></pre></div>
+<p>See: <a href="https://babeljs.io/learn-es2015/#binary-and-octal-literals">Binary and octal literals</a></p>
+<h3 id="new-methods">New methods</h3>
+<h4 id="new-string-methods">New string methods</h4>
+<div class="sourceCode" id="cb6"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb6-1" title="1"><span class="st">&#39;hello&#39;</span>.<span class="at">repeat</span>(<span class="dv">3</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb6-2" title="2"><span class="st">&#39;hello&#39;</span>.<span class="at">includes</span>(<span class="st">&#39;ll&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb6-3" title="3"><span class="st">&#39;hello&#39;</span>.<span class="at">startsWith</span>(<span class="st">&#39;he&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb6-4" title="4"><span class="st">&#39;hello&#39;</span>.<span class="at">padStart</span>(<span class="dv">8</span>)<span class="op">;</span> <span class="co">// &quot;   hello&quot;</span></a>
+<a class="sourceLine" id="cb6-5" title="5"><span class="st">&#39;hello&#39;</span>.<span class="at">padEnd</span>(<span class="dv">8</span>)<span class="op">;</span> <span class="co">// &quot;hello   &quot;</span></a>
+<a class="sourceLine" id="cb6-6" title="6"><span class="st">&#39;hello&#39;</span>.<span class="at">padEnd</span>(<span class="dv">8</span><span class="op">,</span> <span class="st">&#39;!&#39;</span>)<span class="op">;</span> <span class="co">// hello!!!</span></a>
+<a class="sourceLine" id="cb6-7" title="7"><span class="st">&#39;</span><span class="sc">\u1E9B\u0323</span><span class="st">&#39;</span>.<span class="at">normalize</span>(<span class="st">&#39;NFC&#39;</span>)<span class="op">;</span></a></code></pre></div>
+<p>See: <a href="https://babeljs.io/learn-es2015/#math--number--string--object-apis">New methods</a></p>
+<h3 id="classes">Classes</h3>
+<div class="sourceCode" id="cb7"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb7-1" title="1"><span class="kw">class</span> Circle <span class="kw">extends</span> Shape <span class="op">{</span></a></code></pre></div>
+<h4 id="constructor">Constructor</h4>
+<div class="sourceCode" id="cb8"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb8-1" title="1">  <span class="at">constructor</span> (radius) <span class="op">{</span></a>
+<a class="sourceLine" id="cb8-2" title="2">    <span class="kw">this</span>.<span class="at">radius</span> <span class="op">=</span> radius</a>
+<a class="sourceLine" id="cb8-3" title="3">  <span class="op">}</span></a></code></pre></div>
+<p>{: data-line=“1”}</p>
+<h4 id="methods">Methods</h4>
+<div class="sourceCode" id="cb9"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb9-1" title="1">  <span class="at">getArea</span> () <span class="op">{</span></a>
+<a class="sourceLine" id="cb9-2" title="2">    <span class="cf">return</span> <span class="va">Math</span>.<span class="at">PI</span> <span class="op">*</span> <span class="dv">2</span> <span class="op">*</span> <span class="kw">this</span>.<span class="at">radius</span></a>
+<a class="sourceLine" id="cb9-3" title="3">  <span class="op">}</span></a></code></pre></div>
+<p>{: data-line=“1”}</p>
+<h4 id="calling-superclass-methods">Calling superclass methods</h4>
+<div class="sourceCode" id="cb10"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb10-1" title="1">  <span class="at">expand</span> (n) <span class="op">{</span></a>
+<a class="sourceLine" id="cb10-2" title="2">    <span class="cf">return</span> <span class="kw">super</span>.<span class="at">expand</span>(n) <span class="op">*</span> <span class="va">Math</span>.<span class="at">PI</span></a>
+<a class="sourceLine" id="cb10-3" title="3">  <span class="op">}</span></a></code></pre></div>
+<p>{: data-line=“2”}</p>
+<h4 id="static-methods">Static methods</h4>
+<div class="sourceCode" id="cb11"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb11-1" title="1">  <span class="kw">static</span> <span class="at">createFromDiameter</span>(diameter) <span class="op">{</span></a>
+<a class="sourceLine" id="cb11-2" title="2">    <span class="cf">return</span> <span class="kw">new</span> <span class="at">Circle</span>(diameter / <span class="dv">2</span>)</a>
+<a class="sourceLine" id="cb11-3" title="3">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb11-4" title="4">}</a></code></pre></div>
+<p>{: data-line=“1”}</p>
+<p>Syntactic sugar for prototypes. See: <a href="https://babeljs.io/learn-es2015/#classes">Classes</a></p>
+<h3 id="exponent-operator">Exponent operator</h3>
+<div class="sourceCode" id="cb12"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb12-1" title="1"><span class="kw">const</span> byte <span class="op">=</span> <span class="dv">2</span> <span class="op">**</span> <span class="dv">8</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb12-2" title="2"><span class="co">// Same as: Math.pow(2, 8)</span></a></code></pre></div>
+<p>{: data-line=“1”}</p>
+<h2 id="promises">Promises</h2>
+<h3 id="making-promises">Making promises</h3>
+<div class="sourceCode" id="cb13"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb13-1" title="1"><span class="kw">new</span> <span class="at">Promise</span>((resolve<span class="op">,</span> reject) <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb13-2" title="2">    <span class="cf">if</span> (ok) <span class="op">{</span></a>
+<a class="sourceLine" id="cb13-3" title="3">        <span class="at">resolve</span>(result)<span class="op">;</span></a>
+<a class="sourceLine" id="cb13-4" title="4">    <span class="op">}</span> <span class="cf">else</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb13-5" title="5">        <span class="at">reject</span>(error)<span class="op">;</span></a>
+<a class="sourceLine" id="cb13-6" title="6">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb13-7" title="7"><span class="op">}</span>)<span class="op">;</span></a></code></pre></div>
+<p>{: data-line=“1”}</p>
+<p>For asynchronous programming. See: <a href="https://babeljs.io/learn-es2015/#promises">Promises</a></p>
+<h3 id="using-promises">Using promises</h3>
+<div class="sourceCode" id="cb14"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb14-1" title="1">promise</a>
+<a class="sourceLine" id="cb14-2" title="2">  .<span class="at">then</span>((result) <span class="kw">=&gt;</span> <span class="op">{</span> ··· <span class="op">}</span>)</a>
+<a class="sourceLine" id="cb14-3" title="3">  .<span class="at">catch</span>((error) <span class="kw">=&gt;</span> <span class="op">{</span> ··· <span class="op">}</span>)</a></code></pre></div>
+<p>{: data-line=“2,3”}</p>
+<h3 id="using-promises-with-finally">Using promises with finally</h3>
+<div class="sourceCode" id="cb15"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb15-1" title="1">promise</a>
+<a class="sourceLine" id="cb15-2" title="2">  .<span class="at">then</span>((result) <span class="kw">=&gt;</span> <span class="op">{</span> ··· <span class="op">}</span>)</a>
+<a class="sourceLine" id="cb15-3" title="3">  .<span class="at">catch</span>((error) <span class="kw">=&gt;</span> <span class="op">{</span> ··· <span class="op">}</span>)</a>
+<a class="sourceLine" id="cb15-4" title="4">  .<span class="at">finally</span>(() <span class="kw">=&gt;</span> <span class="op">{</span> <span class="co">// logic independent of success/error })</span></a></code></pre></div>
+<p>{: data-line=“4”}</p>
+<p>The handler is called when the promise is fulfilled or rejected.</p>
+<h3 id="promise-functions">Promise functions</h3>
+<div class="sourceCode" id="cb16"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb16-1" title="1"><span class="va">Promise</span>.<span class="at">all</span>(···)</a>
+<a class="sourceLine" id="cb16-2" title="2"><span class="va">Promise</span>.<span class="at">race</span>(···)</a>
+<a class="sourceLine" id="cb16-3" title="3"><span class="va">Promise</span>.<span class="at">reject</span>(···)</a>
+<a class="sourceLine" id="cb16-4" title="4"><span class="va">Promise</span>.<span class="at">resolve</span>(···)</a></code></pre></div>
+<h3 id="async-await">Async-await</h3>
+<div class="sourceCode" id="cb17"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb17-1" title="1"><span class="kw">async</span> <span class="kw">function</span> <span class="at">run</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb17-2" title="2">    <span class="kw">const</span> user <span class="op">=</span> <span class="cf">await</span> <span class="at">getUser</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb17-3" title="3">    <span class="kw">const</span> tweets <span class="op">=</span> <span class="cf">await</span> <span class="at">getTweets</span>(user)<span class="op">;</span></a>
+<a class="sourceLine" id="cb17-4" title="4">    <span class="cf">return</span> [user<span class="op">,</span> tweets]<span class="op">;</span></a>
+<a class="sourceLine" id="cb17-5" title="5"><span class="op">}</span></a></code></pre></div>
+<p>{: data-line=“2,3”}</p>
+<p><code>async</code> functions are another way of using functions.</p>
+<p>See: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function">async function</a></p>
+<h2 id="destructuring">Destructuring</h2>
+<h3 id="destructuring-assignment">Destructuring assignment</h3>
+<h4 id="arrays">Arrays</h4>
+<div class="sourceCode" id="cb18"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb18-1" title="1"><span class="kw">const</span> [first<span class="op">,</span> last] <span class="op">=</span> [<span class="st">&#39;Nikola&#39;</span><span class="op">,</span> <span class="st">&#39;Tesla&#39;</span>]<span class="op">;</span></a></code></pre></div>
+<p>{: data-line=“1”}</p>
+<h4 id="objects">Objects</h4>
+<div class="sourceCode" id="cb19"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb19-1" title="1"><span class="kw">let</span> <span class="op">{</span> title<span class="op">,</span> author <span class="op">}</span> <span class="op">=</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb19-2" title="2">    <span class="dt">title</span><span class="op">:</span> <span class="st">&#39;The Silkworm&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb19-3" title="3">    <span class="dt">author</span><span class="op">:</span> <span class="st">&#39;R. Galbraith&#39;</span></a>
+<a class="sourceLine" id="cb19-4" title="4"><span class="op">};</span></a></code></pre></div>
+<p>{: data-line=“1”}</p>
+<p>Supports for matching arrays and objects. See: <a href="https://babeljs.io/learn-es2015/#destructuring">Destructuring</a></p>
+<h3 id="default-values">Default values</h3>
+<div class="sourceCode" id="cb20"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb20-1" title="1"><span class="kw">const</span> scores <span class="op">=</span> [<span class="dv">22</span><span class="op">,</span> <span class="dv">33</span>]<span class="op">;</span></a>
+<a class="sourceLine" id="cb20-2" title="2"><span class="kw">const</span> [math <span class="op">=</span> <span class="dv">50</span><span class="op">,</span> sci <span class="op">=</span> <span class="dv">50</span><span class="op">,</span> arts <span class="op">=</span> <span class="dv">50</span>] <span class="op">=</span> scores<span class="op">;</span></a></code></pre></div>
+<div class="sourceCode" id="cb21"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb21-1" title="1"><span class="co">// Result:</span></a>
+<a class="sourceLine" id="cb21-2" title="2"><span class="co">// math === 22, sci === 33, arts === 50</span></a></code></pre></div>
+<p>Default values can be assigned while destructuring arrays or objects.</p>
+<h3 id="function-arguments">Function arguments</h3>
+<hr />
+<div class="sourceCode" id="cb22"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb22-1" title="1"><span class="kw">function</span> <span class="at">greet</span>(<span class="op">{</span> name<span class="op">,</span> greeting <span class="op">}</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb22-2" title="2">    <span class="va">console</span>.<span class="at">log</span>(<span class="vs">`</span><span class="sc">${</span>greeting<span class="sc">}</span><span class="vs">, </span><span class="sc">${</span>name<span class="sc">}</span><span class="vs">!`</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb22-3" title="3"><span class="op">}</span></a></code></pre></div>
+<p>{: data-line=“1”}</p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb23-1" title="1"><span class="at">greet</span>(<span class="op">{</span> <span class="dt">name</span><span class="op">:</span> <span class="st">&#39;Larry&#39;</span><span class="op">,</span> <span class="dt">greeting</span><span class="op">:</span> <span class="st">&#39;Ahoy&#39;</span> <span class="op">}</span>)<span class="op">;</span></a></code></pre></div>
+<p>Destructuring of objects and arrays can also be done in function arguments.</p>
+<h3 id="default-values-1">Default values</h3>
+<hr />
+<div class="sourceCode" id="cb24"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb24-1" title="1"><span class="kw">function</span> <span class="at">greet</span>(<span class="op">{</span> name <span class="op">=</span> <span class="st">&#39;Rauno&#39;</span> <span class="op">}</span> <span class="op">=</span> <span class="op">{}</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-2" title="2">    <span class="va">console</span>.<span class="at">log</span>(<span class="vs">`Hi </span><span class="sc">${</span>name<span class="sc">}</span><span class="vs">!`</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-3" title="3"><span class="op">}</span></a></code></pre></div>
+<p>{: data-line=“1”}</p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb25-1" title="1"><span class="at">greet</span>()<span class="op">;</span> <span class="co">// Hi Rauno!</span></a>
+<a class="sourceLine" id="cb25-2" title="2"><span class="at">greet</span>(<span class="op">{</span> <span class="dt">name</span><span class="op">:</span> <span class="st">&#39;Larry&#39;</span> <span class="op">}</span>)<span class="op">;</span> <span class="co">// Hi Larry!</span></a></code></pre></div>
+<h3 id="reassigning-keys">Reassigning keys</h3>
+<hr />
+<div class="sourceCode" id="cb26"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb26-1" title="1"><span class="kw">function</span> <span class="at">printCoordinates</span>(<span class="op">{</span> <span class="dt">left</span><span class="op">:</span> x<span class="op">,</span> <span class="dt">top</span><span class="op">:</span> y <span class="op">}</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb26-2" title="2">    <span class="va">console</span>.<span class="at">log</span>(<span class="vs">`x: </span><span class="sc">${</span>x<span class="sc">}</span><span class="vs">, y: </span><span class="sc">${</span>y<span class="sc">}</span><span class="vs">`</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb26-3" title="3"><span class="op">}</span></a></code></pre></div>
+<p>{: data-line=“1”}</p>
+<div class="sourceCode" id="cb27"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb27-1" title="1"><span class="at">printCoordinates</span>(<span class="op">{</span> <span class="dt">left</span><span class="op">:</span> <span class="dv">25</span><span class="op">,</span> <span class="dt">top</span><span class="op">:</span> <span class="dv">90</span> <span class="op">}</span>)<span class="op">;</span></a></code></pre></div>
+<p>This example assigns <code>x</code> to the value of the <code>left</code> key.</p>
+<h3 id="loops">Loops</h3>
+<div class="sourceCode" id="cb28"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb28-1" title="1"><span class="cf">for</span> (<span class="kw">let</span> <span class="op">{</span>title<span class="op">,</span> artist<span class="op">}</span> <span class="kw">of</span> songs) <span class="op">{</span></a>
+<a class="sourceLine" id="cb28-2" title="2">  ···</a>
+<a class="sourceLine" id="cb28-3" title="3"><span class="op">}</span></a></code></pre></div>
+<p>{: data-line=“1”}</p>
+<p>The assignment expressions work in loops, too.</p>
+<h3 id="object-destructuring">Object destructuring</h3>
+<div class="sourceCode" id="cb29"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb29-1" title="1"><span class="kw">const</span> <span class="op">{</span> id<span class="op">,</span> ...<span class="at">detail</span> <span class="op">}</span> <span class="op">=</span> song<span class="op">;</span></a></code></pre></div>
+<p>{: data-line=“1”}</p>
+<p>Extract some keys individually and remaining keys in the object using rest (…) operator</p>
+<h2 id="spread">Spread</h2>
+<h3 id="object-spread">Object spread</h3>
+<h4 id="with-object-spread">with Object spread</h4>
+<div class="sourceCode" id="cb30"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb30-1" title="1"><span class="kw">const</span> options <span class="op">=</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb30-2" title="2">    ...<span class="at">defaults</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb30-3" title="3">    <span class="dt">visible</span><span class="op">:</span> <span class="kw">true</span></a>
+<a class="sourceLine" id="cb30-4" title="4"><span class="op">};</span></a></code></pre></div>
+<p>{: data-line=“2”}</p>
+<h4 id="without-object-spread">without Object spread</h4>
+<div class="sourceCode" id="cb31"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb31-1" title="1"><span class="kw">const</span> options <span class="op">=</span> <span class="va">Object</span>.<span class="at">assign</span>(<span class="op">{},</span> defaults<span class="op">,</span> <span class="op">{</span> <span class="dt">visible</span><span class="op">:</span> <span class="kw">true</span> <span class="op">}</span>)<span class="op">;</span></a></code></pre></div>
+<p>The Object spread operator lets you build new objects from other objects.</p>
+<p>See: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator">Object spread</a></p>
+<h3 id="array-spread">Array spread</h3>
+<h4 id="with-array-spread">with Array spread</h4>
+<div class="sourceCode" id="cb32"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb32-1" title="1"><span class="kw">const</span> users <span class="op">=</span> [...<span class="at">admins</span><span class="op">,</span> ...<span class="at">editors</span><span class="op">,</span> <span class="st">&#39;rstacruz&#39;</span>]<span class="op">;</span></a></code></pre></div>
+<p>{: data-line=“2,3”}</p>
+<h4 id="without-array-spread">without Array spread</h4>
+<div class="sourceCode" id="cb33"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb33-1" title="1"><span class="kw">const</span> users <span class="op">=</span> <span class="va">admins</span>.<span class="at">concat</span>(editors).<span class="at">concat</span>([<span class="st">&#39;rstacruz&#39;</span>])<span class="op">;</span></a></code></pre></div>
+<p>The spread operator lets you build new arrays in the same way.</p>
+<p>See: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator">Spread operator</a></p>
+<h2 id="functions">Functions</h2>
+<h3 id="function-arguments-1">Function arguments</h3>
+<h4 id="default-arguments">Default arguments</h4>
+<hr />
+<div class="sourceCode" id="cb34"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb34-1" title="1"><span class="kw">function</span> <span class="at">greet</span>(name <span class="op">=</span> <span class="st">&#39;Jerry&#39;</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb34-2" title="2">    <span class="cf">return</span> <span class="vs">`Hello </span><span class="sc">${</span>name<span class="sc">}</span><span class="vs">`</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb34-3" title="3"><span class="op">}</span></a></code></pre></div>
+<p>{: data-line=“1”}</p>
+<h4 id="rest-arguments">Rest arguments</h4>
+<hr />
+<div class="sourceCode" id="cb35"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb35-1" title="1"><span class="kw">function</span> <span class="at">fn</span>(x<span class="op">,</span> ...<span class="at">y</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb35-2" title="2">    <span class="co">// y is an Array</span></a>
+<a class="sourceLine" id="cb35-3" title="3">    <span class="cf">return</span> x <span class="op">*</span> <span class="va">y</span>.<span class="at">length</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb35-4" title="4"><span class="op">}</span></a></code></pre></div>
+<p>{: data-line=“1”}</p>
+<h4 id="spread-1">Spread</h4>
+<div class="sourceCode" id="cb36"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb36-1" title="1"><span class="at">fn</span>(...[<span class="dv">1</span><span class="op">,</span> <span class="dv">2</span><span class="op">,</span> <span class="dv">3</span>])<span class="op">;</span></a>
+<a class="sourceLine" id="cb36-2" title="2"><span class="co">// same as fn(1, 2, 3)</span></a></code></pre></div>
+<p>{: data-line=“1”}</p>
+<p>Default, rest, spread. See: <a href="https://babeljs.io/learn-es2015/#default--rest--spread">Function arguments</a></p>
+<h3 id="fat-arrows">Fat arrows</h3>
+<h4 id="fat-arrows-1">Fat arrows</h4>
+<div class="sourceCode" id="cb37"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb37-1" title="1"><span class="at">setTimeout</span>(() <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb37-2" title="2">  ···</a>
+<a class="sourceLine" id="cb37-3" title="3"><span class="op">}</span>)</a></code></pre></div>
+<p>{: data-line=“1”}</p>
+<h4 id="with-arguments">With arguments</h4>
+<div class="sourceCode" id="cb38"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb38-1" title="1"><span class="at">readFile</span>(<span class="st">&#39;text.txt&#39;</span><span class="op">,</span> (err<span class="op">,</span> data) <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb38-2" title="2">  ...</a>
+<a class="sourceLine" id="cb38-3" title="3"><span class="op">}</span>)</a></code></pre></div>
+<p>{: data-line=“1”}</p>
+<h4 id="implicit-return">Implicit return</h4>
+<div class="sourceCode" id="cb39"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb39-1" title="1"><span class="va">numbers</span>.<span class="at">map</span>((n) <span class="kw">=&gt;</span> n <span class="op">*</span> <span class="dv">2</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb39-2" title="2"><span class="co">// No curly braces = implicit return</span></a>
+<a class="sourceLine" id="cb39-3" title="3"><span class="co">// Same as: numbers.map(function (n) { return n * 2 })</span></a>
+<a class="sourceLine" id="cb39-4" title="4"><span class="va">numbers</span>.<span class="at">map</span>((n) <span class="kw">=&gt;</span> (<span class="op">{</span></a>
+<a class="sourceLine" id="cb39-5" title="5">    <span class="dt">result</span><span class="op">:</span> n <span class="op">*</span> <span class="dv">2</span></a>
+<a class="sourceLine" id="cb39-6" title="6"><span class="op">}</span>))<span class="op">;</span></a>
+<a class="sourceLine" id="cb39-7" title="7"><span class="co">// Implicitly returning objects requires parentheses around the object</span></a></code></pre></div>
+<p>{: data-line=“1,4,5,6”}</p>
+<p>Like functions but with <code>this</code> preserved. See: <a href="https://babeljs.io/learn-es2015/#arrows-and-lexical-this">Fat arrows</a></p>
+<h2 id="objects-1">Objects</h2>
+<h3 id="shorthand-syntax">Shorthand syntax</h3>
+<div class="sourceCode" id="cb40"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb40-1" title="1"><span class="va">module</span>.<span class="at">exports</span> <span class="op">=</span> <span class="op">{</span> hello<span class="op">,</span> bye <span class="op">};</span></a>
+<a class="sourceLine" id="cb40-2" title="2"><span class="co">// Same as: module.exports = { hello: hello, bye: bye }</span></a></code></pre></div>
+<p>See: <a href="https://babeljs.io/learn-es2015/#enhanced-object-literals">Object literal enhancements</a></p>
+<h3 id="methods-1">Methods</h3>
+<div class="sourceCode" id="cb41"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb41-1" title="1"><span class="kw">const</span> App <span class="op">=</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb41-2" title="2">    <span class="at">start</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb41-3" title="3">        <span class="va">console</span>.<span class="at">log</span>(<span class="st">&#39;running&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb41-4" title="4">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb41-5" title="5"><span class="op">};</span></a>
+<a class="sourceLine" id="cb41-6" title="6"><span class="co">// Same as: App = { start: function () {···} }</span></a></code></pre></div>
+<p>{: data-line=“2”}</p>
+<p>See: <a href="https://babeljs.io/learn-es2015/#enhanced-object-literals">Object literal enhancements</a></p>
+<h3 id="getters-and-setters">Getters and setters</h3>
+<div class="sourceCode" id="cb42"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb42-1" title="1"><span class="kw">const</span> App <span class="op">=</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb42-2" title="2">    get <span class="at">closed</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb42-3" title="3">        <span class="cf">return</span> <span class="kw">this</span>.<span class="at">status</span> <span class="op">===</span> <span class="st">&#39;closed&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb42-4" title="4">    <span class="op">},</span></a>
+<a class="sourceLine" id="cb42-5" title="5">    set <span class="at">closed</span>(value) <span class="op">{</span></a>
+<a class="sourceLine" id="cb42-6" title="6">        <span class="kw">this</span>.<span class="at">status</span> <span class="op">=</span> value <span class="op">?</span> <span class="st">&#39;closed&#39;</span> : <span class="st">&#39;open&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb42-7" title="7">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb42-8" title="8"><span class="op">};</span></a></code></pre></div>
+<p>{: data-line=“2,5”}</p>
+<p>See: <a href="https://babeljs.io/learn-es2015/#enhanced-object-literals">Object literal enhancements</a></p>
+<h3 id="computed-property-names">Computed property names</h3>
+<div class="sourceCode" id="cb43"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb43-1" title="1"><span class="kw">let</span> event <span class="op">=</span> <span class="st">&#39;click&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb43-2" title="2"><span class="kw">let</span> handlers <span class="op">=</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb43-3" title="3">    [<span class="vs">`on</span><span class="sc">${</span>event<span class="sc">}</span><span class="vs">`</span>]<span class="op">:</span> <span class="kw">true</span></a>
+<a class="sourceLine" id="cb43-4" title="4"><span class="op">};</span></a>
+<a class="sourceLine" id="cb43-5" title="5"><span class="co">// Same as: handlers = { &#39;onclick&#39;: true }</span></a></code></pre></div>
+<p>See: <a href="https://babeljs.io/learn-es2015/#enhanced-object-literals">Object literal enhancements</a></p>
+<h3 id="extract-values">Extract values</h3>
+<div class="sourceCode" id="cb44"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb44-1" title="1"><span class="kw">const</span> fatherJS <span class="op">=</span> <span class="op">{</span> <span class="dt">age</span><span class="op">:</span> <span class="dv">57</span><span class="op">,</span> <span class="dt">name</span><span class="op">:</span> <span class="st">&#39;Brendan Eich&#39;</span> <span class="op">};</span></a>
+<a class="sourceLine" id="cb44-2" title="2"></a>
+<a class="sourceLine" id="cb44-3" title="3"><span class="va">Object</span>.<span class="at">values</span>(fatherJS)<span class="op">;</span></a>
+<a class="sourceLine" id="cb44-4" title="4"><span class="co">// [57, &quot;Brendan Eich&quot;]</span></a>
+<a class="sourceLine" id="cb44-5" title="5"><span class="va">Object</span>.<span class="at">entries</span>(fatherJS)<span class="op">;</span></a>
+<a class="sourceLine" id="cb44-6" title="6"><span class="co">// [[&quot;age&quot;, 57], [&quot;name&quot;, &quot;Brendan Eich&quot;]]</span></a></code></pre></div>
+<p>{: data-line=“3,5”}</p>
+<h2 id="modules">Modules</h2>
+<h3 id="imports">Imports</h3>
+<div class="sourceCode" id="cb45"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb45-1" title="1"><span class="im">import</span> <span class="st">&#39;helpers&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb45-2" title="2"><span class="co">// aka: require(&#39;···&#39;)</span></a></code></pre></div>
+<div class="sourceCode" id="cb46"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb46-1" title="1"><span class="im">import</span> Express <span class="im">from</span> <span class="st">&#39;express&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb46-2" title="2"><span class="co">// aka: const Express = require(&#39;···&#39;).default || require(&#39;···&#39;)</span></a></code></pre></div>
+<div class="sourceCode" id="cb47"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb47-1" title="1"><span class="im">import</span> <span class="op">{</span> indent <span class="op">}</span> <span class="im">from</span> <span class="st">&#39;helpers&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb47-2" title="2"><span class="co">// aka: const indent = require(&#39;···&#39;).indent</span></a></code></pre></div>
+<div class="sourceCode" id="cb48"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb48-1" title="1"><span class="im">import</span> <span class="op">*</span> <span class="im">as</span> Helpers <span class="im">from</span> <span class="st">&#39;helpers&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb48-2" title="2"><span class="co">// aka: const Helpers = require(&#39;···&#39;)</span></a></code></pre></div>
+<div class="sourceCode" id="cb49"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb49-1" title="1"><span class="im">import</span> <span class="op">{</span> indentSpaces <span class="im">as</span> indent <span class="op">}</span> <span class="im">from</span> <span class="st">&#39;helpers&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb49-2" title="2"><span class="co">// aka: const indent = require(&#39;···&#39;).indentSpaces</span></a></code></pre></div>
+<p><code>import</code> is the new <code>require()</code>. See: <a href="https://babeljs.io/learn-es2015/#modules">Module imports</a></p>
+<h3 id="exports">Exports</h3>
+<div class="sourceCode" id="cb50"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb50-1" title="1"><span class="im">export</span> <span class="im">default</span> <span class="kw">function</span> () <span class="op">{</span> ··· <span class="op">}</span></a>
+<a class="sourceLine" id="cb50-2" title="2"><span class="co">// aka: module.exports.default = ···</span></a></code></pre></div>
+<div class="sourceCode" id="cb51"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb51-1" title="1"><span class="im">export</span> <span class="kw">function</span> <span class="at">mymethod</span> () <span class="op">{</span> ··· <span class="op">}</span></a>
+<a class="sourceLine" id="cb51-2" title="2"><span class="co">// aka: module.exports.mymethod = ···</span></a></code></pre></div>
+<div class="sourceCode" id="cb52"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb52-1" title="1"><span class="im">export</span> <span class="kw">const</span> pi <span class="op">=</span> <span class="fl">3.14159</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb52-2" title="2"><span class="co">// aka: module.exports.pi = ···</span></a></code></pre></div>
+<p><code>export</code> is the new <code>module.exports</code>. See: <a href="https://babeljs.io/learn-es2015/#modules">Module exports</a></p>
+<h2 id="generators">Generators</h2>
+<h3 id="generators-1">Generators</h3>
+<hr />
+<div class="sourceCode" id="cb53"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb53-1" title="1"><span class="kw">function</span><span class="op">*</span> <span class="at">idMaker</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb53-2" title="2">    <span class="kw">let</span> id <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb53-3" title="3">    <span class="cf">while</span> (<span class="kw">true</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb53-4" title="4">        <span class="kw">yield</span> id<span class="op">++;</span></a>
+<a class="sourceLine" id="cb53-5" title="5">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb53-6" title="6"><span class="op">}</span></a></code></pre></div>
+<div class="sourceCode" id="cb54"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb54-1" title="1"><span class="kw">let</span> gen <span class="op">=</span> <span class="at">idMaker</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb54-2" title="2"><span class="va">gen</span>.<span class="at">next</span>().<span class="at">value</span><span class="op">;</span> <span class="co">// → 0</span></a>
+<a class="sourceLine" id="cb54-3" title="3"><span class="va">gen</span>.<span class="at">next</span>().<span class="at">value</span><span class="op">;</span> <span class="co">// → 1</span></a>
+<a class="sourceLine" id="cb54-4" title="4"><span class="va">gen</span>.<span class="at">next</span>().<span class="at">value</span><span class="op">;</span> <span class="co">// → 2</span></a></code></pre></div>
+<p>It’s complicated. See: <a href="https://babeljs.io/learn-es2015/#generators">Generators</a></p>
+<h3 id="for..of-iteration">For..of iteration</h3>
+<div class="sourceCode" id="cb55"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb55-1" title="1"><span class="cf">for</span> (<span class="kw">let</span> i <span class="kw">of</span> iterable) <span class="op">{</span></a>
+<a class="sourceLine" id="cb55-2" title="2">  ···</a>
+<a class="sourceLine" id="cb55-3" title="3"><span class="op">}</span></a></code></pre></div>
+<p>For iterating through generators and arrays. See: <a href="https://babeljs.io/learn-es2015/#iterators--forof">For..of iteration</a></p>
+</body>
+</html>

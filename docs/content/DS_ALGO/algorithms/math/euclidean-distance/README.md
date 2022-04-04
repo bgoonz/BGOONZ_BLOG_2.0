@@ -1,10 +1,12 @@
-# Euclidean Distance
+Euclidean Distance
+==================
 
 In mathematics, the **Euclidean distance** between two points in Euclidean space is the length of a line segment between the two points. It can be calculated from the Cartesian coordinates of the points using the Pythagorean theorem, therefore occasionally being called the Pythagorean distance.
 
 ![Euclidean distance between two points](https://upload.wikimedia.org/wikipedia/commons/5/55/Euclidean_distance_2d.svg)
 
-## Distance formulas
+Distance formulas
+-----------------
 
 ### One dimension
 
@@ -30,7 +32,8 @@ In general, for points given by Cartesian coordinates in `n`-dimensional Euclide
 
 ![n-dimensional formula](https://wikimedia.org/api/rest_v1/media/math/render/svg/a0ef4fe055b2a51b4cca43a05e5d1cd93f758dcc)
 
-## References
+References
+----------
 
 -   [Euclidean Distance on MathIsFun](https://www.mathsisfun.com/algebra/distance-2-points.html)
 -   [Euclidean Distance on Wikipedia](https://en.wikipedia.org/wiki/Euclidean_distance)

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>pdftk</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="to-concatenate-all-pdf-files-into-one">To concatenate all pdf files into one:</h1>
+<p>pdftk *.pdf cat output all.pdf</p>
+<h1 id="to-concatenate-specific-pdf-files-into-one">To concatenate specific pdf files into one:</h1>
+<p>pdftk 1.pdf 2.pdf 3.pdf cat output 123.pdf</p>
+<h1 id="to-concatenate-pages-1-to-5-of-first.pdf-with-page-3-of-second.pdf">To concatenate pages 1 to 5 of first.pdf with page 3 of second.pdf:</h1>
+<p>pdftk A=fist.pdf B=second.pdf cat A1-5 B3 output new.pdf</p>
+</body>
+</html>

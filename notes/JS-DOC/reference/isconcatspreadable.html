@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>isconcatspreadable</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="symbol.isconcatspreadable">Symbol.isConcatSpreadable</h1>
+<p>The <code>Symbol.isConcatSpreadable</code> well-known symbol is used to configure if an object should be flattened to its array elements when using the <a href="../array/concat"><code>Array.prototype.concat()</code></a> method.</p>
+<h2 id="description">Description</h2>
+<p>The <code>@@isConcatSpreadable</code> symbol (<code>Symbol.isConcatSpreadable</code>) can be defined as an own or inherited property and its value is a boolean. It can control behavior for arrays and array-like objects:</p>
+<ul>
+<li>For array objects, the default behavior is to spread (flatten) elements. <code>Symbol.isConcatSpreadable</code> can avoid flattening in these cases.</li>
+<li>For array-like objects, the default behavior is no spreading or flattening. <code>Symbol.isConcatSpreadable</code> can force flattening in these cases.</li>
+</ul>
+<p>Property attributes of <code>Symbol.isConcatSpreadable</code></p>
+<p>Writable</p>
+<p>no</p>
+<p>Enumerable</p>
+<p>no</p>
+<p>Configurable</p>
+<p>no</p>
+<h2 id="examples">Examples</h2>
+<h3 id="arrays">Arrays</h3>
+<p>By default, <a href="../array/concat"><code>Array.prototype.concat()</code></a> spreads (flattens) arrays into its result:</p>
+<pre><code>let alpha = [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;],
+let numeric = [1, 2, 3]
+
+let alphaNumeric = alpha.concat(numeric)
+
+console.log(alphaNumeric)  // Result: [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, 1, 2, 3]</code></pre>
+<p>When setting <code>Symbol.isConcatSpreadable</code> to <code>false</code>, you can disable the default behavior:</p>
+<pre><code>let alpha = [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;],
+let numeric = [1, 2, 3]
+
+numeric[Symbol.isConcatSpreadable] = false
+let alphaNumeric = alpha.concat(numeric)
+
+console.log(alphaNumeric)  // Result: [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, [1, 2, 3] ]</code></pre>
+<h3 id="array-like-objects">Array-like objects</h3>
+<p>For array-like objects, the default is to not spread. <code>Symbol.isConcatSpreadable</code> needs to be set to <code>true</code> in order to get a flattened array:</p>
+<pre><code>let x = [1, 2, 3]
+
+let fakeArray = {
+  [Symbol.isConcatSpreadable]: true,
+  length: 2,
+  0: &#39;hello&#39;,
+  1: &#39;world&#39;
+}
+
+x.concat(fakeArray)  // [1, 2, 3, &quot;hello&quot;, &quot;world&quot;]</code></pre>
+<p><strong>Note:</strong> The <code>length</code> property is used to control the number of object properties to be added. In the above example, <code>length:2</code> indicates two properties has to be added.</p>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-symbol.isconcatspreadable">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-symbol.isconcatspreadable</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>isConcatSpreadable</code></p>
+<p>48</p>
+<p>15</p>
+<p>48</p>
+<p>No</p>
+<p>35</p>
+<p>10</p>
+<p>48</p>
+<p>48</p>
+<p>48</p>
+<p>35</p>
+<p>10</p>
+<p>5.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../array/concat"><code>Array.prototype.concat()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/isConcatSpreadable" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/isConcatSpreadable</a></p>
+</body>
+</html>

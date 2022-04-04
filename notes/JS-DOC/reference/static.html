@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>static</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="static">static</h1>
+<p>The <code>static</code> keyword defines a static method or property for a class. Neither static methods nor static properties can be called on instances of the class. Instead, they’re called on the class itself.</p>
+<p>Static methods are often utility functions, such as functions to create or clone objects, whereas static properties are useful for caches, fixed-configuration, or any other data you don’t need to be replicated across instances.</p>
+<p>Note that the examples throughout this article use <a href="public_class_fields">public class fields</a> (including static public class fields), which are not yet part of the ECMAScript specification, but are instead specified in a <a href="https://tc39.es/proposal-class-fields/">Public and private instance fields</a> proposal at <a href="https://tc39.es/">TC39</a>.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>static methodName() { ... }
+static propertyName [= value];</code></pre>
+<h2 id="examples">Examples</h2>
+<h3 id="using-static-members-in-classes">Using static members in classes</h3>
+<p>The following example demonstrates several things:</p>
+<ol type="1">
+<li>How a static member (method or property) is defined on a class.</li>
+<li>That a class with a static member can be sub-classed.</li>
+<li>How a static member can and cannot be called.</li>
+</ol>
+<!-- -->
+<pre><code>class Triple {
+  static customName = &#39;Tripler&#39;;
+  static description = &#39;I triple any number you provide&#39;;
+  static calculate(n = 1) {
+    return n * 3;
+  }
+}
+
+class SquaredTriple extends Triple {
+  static longDescription;
+  static description = &#39;I square the triple of any number you provide&#39;;
+  static calculate(n) {
+    return super.calculate(n) * super.calculate(n);
+  }
+}
+
+console.log(Triple.description);            // &#39;I triple any number you provide&#39;
+console.log(Triple.calculate());            // 3
+console.log(Triple.calculate(6));           // 18
+
+const tp = new Triple();
+
+console.log(SquaredTriple.calculate(3));    // 81 (not affected by parent&#39;s instantiation)
+console.log(SquaredTriple.description);     // &#39;I square the triple of any number you provide&#39;
+console.log(SquaredTriple.longDescription); // undefined
+console.log(SquaredTriple.customName);      // &#39;Tripler&#39;
+
+// This throws because calculate() is a static member, not an instance member.
+console.log(tp.calculate());                // &#39;tp.calculate is not a function&#39;</code></pre>
+<h3 id="calling-static-members-from-another-static-method">Calling static members from another static method</h3>
+<p>In order to call a static method or property within another static method of the same class, you can use the <code>this</code> keyword.</p>
+<pre><code>class StaticMethodCall {
+  static staticProperty = &#39;static property&#39;;
+  static staticMethod() {
+    return &#39;Static method and &#39; + this.staticProperty + &#39; has been called&#39;;
+  }
+  static anotherStaticMethod() {
+    return this.staticMethod() + &#39; from another static method&#39;;
+  }
+}
+StaticMethodCall.staticMethod();
+// &#39;Static method and static property has been called&#39;
+
+StaticMethodCall.anotherStaticMethod();
+// &#39;Static method and static property has been called from another static method&#39;</code></pre>
+<h3 id="calling-static-members-from-a-class-constructor-and-other-methods">Calling static members from a class constructor and other methods</h3>
+<p>Static members are not directly accessible using the <a href="../operators/this"><code>this</code></a> keyword from non-static methods. You need to call them using the class name: <code>CLASSNAME.STATIC_METHOD_NAME()</code> / <code>CLASSNAME.STATIC_PROPERTY_NAME</code> or by calling the method as a property of the <code>constructor</code>: <code>this.constructor.STATIC_METHOD_NAME()</code> / <code>this.constructor.STATIC_PROPERTY_NAME</code></p>
+<pre><code>class StaticMethodCall {
+  constructor() {
+    console.log(StaticMethodCall.staticProperty); // &#39;static property&#39;
+    console.log(this.constructor.staticProperty); // &#39;static property&#39;
+    console.log(StaticMethodCall.staticMethod()); // &#39;static method has been called.&#39;
+    console.log(this.constructor.staticMethod()); // &#39;static method has been called.&#39;
+  }
+
+  static staticProperty = &#39;static property&#39;;
+  static staticMethod() {
+    return &#39;static method has been called.&#39;;
+  }
+}</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-class-definitions">ECMAScript (ECMA-262) <br/></p>
+<span class="small">The definition of ‘Class definitions’ in that specification.</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>static</code></p>
+<p>49</p>
+<p>42-49</p>
+<p>Strict mode is required.</p>
+<p>42-49</p>
+<p>13</p>
+<p>45</p>
+<p>No</p>
+<p>36</p>
+<p>29-36</p>
+<p>Strict mode is required.</p>
+<p>29-36</p>
+<p>14.1</p>
+<p>49</p>
+<p>42-49</p>
+<p>Strict mode is required.</p>
+<p>49</p>
+<p>42-49</p>
+<p>Strict mode is required.</p>
+<p>42-49</p>
+<p>45</p>
+<p>36</p>
+<p>29-36</p>
+<p>Strict mode is required.</p>
+<p>29-36</p>
+<p>14.5</p>
+<p>5.0</p>
+<p>4.0-5.0</p>
+<p>Strict mode is required.</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../operators/class"><code>class</code> expression</a></li>
+<li><a href="../statements/class"><code>class</code> declaration</a></li>
+<li><a href="../classes">Classes</a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/static" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/static</a></p>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>pluralrules</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="intl.pluralrules-constructor">Intl.PluralRules() constructor</h1>
+<p>The <code>Intl.PluralRules()</code> constructor creates <a href="../pluralrules"><code>Intl.PluralRules</code></a> objects.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>new Intl.PluralRules()
+new Intl.PluralRules(locales)
+new Intl.PluralRules(locales, options)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>locales</code> <span class="badge inline optional">Optional</span><br />
+A string with a BCP 47 language tag, or an array of such strings. For the general form and interpretation of the <code>locales</code> argument, see the <a href="../../intl#locale_identification_and_negotiation">Intl</a> page.</p>
+<p><code>options</code> <span class="badge inline optional">Optional</span><br />
+An object with some or all of the following properties:</p>
+<p><code>localeMatcher</code><br />
+The locale matching algorithm to use. Possible values are “<code>lookup</code>” and “<code>best fit</code>”; the default is “<code>best fit</code>”. For information about this option, see the <a href="../../intl#locale_negotiation">Intl</a> page.</p>
+<p><code>type</code><br />
+The type to use. Possible values are:</p>
+<ul>
+<li>“<code>cardinal</code>” for cardinal numbers (refering to the quantity of things). This is the default value.</li>
+<li>“<code>ordinal</code>” for ordinal number (refering to the ordering or ranking of things, e.g. “1st”, “2nd”, “3rd” in English).</li>
+</ul>
+<p>The following properties fall into two groups: <code>minimumIntegerDigits</code>, <code>minimumFractionDigits</code>, and <code>maximumFractionDigits</code> in one group, <code>minimumSignificantDigits</code> and <code>maximumSignificantDigits</code> in the other. If at least one property from the second group is defined, then the first group is ignored.</p>
+<p><code>minimumIntegerDigits</code><br />
+The minimum number of integer digits to use. Possible values are from 1 to 21; the default is 1.</p>
+<p><code>minimumFractionDigits</code><br />
+The minimum number of fraction digits to use. Possible values are from 0 to 20; the default for plain number and percent formatting is 0; the default for currency formatting is the number of minor unit digits provided by the <a href="https://www.currency-iso.org/en/home/tables/table-a1.html">ISO 4217 currency code list</a> (2 if the list doesn’t provide that information).</p>
+<p><code>maximumFractionDigits</code><br />
+The maximum number of fraction digits to use. Possible values are from 0 to 20; the default for plain number formatting is the larger of <code>minimumFractionDigits</code> and 3; the default for currency formatting is the larger of <code>minimumFractionDigits</code> and the number of minor unit digits provided by the <a href="https://www.currency-iso.org/en/home/tables/table-a1.html">ISO 4217 currency code list</a> (2 if the list doesn’t provide that information); the default for percent formatting is the larger of <code>minimumFractionDigits</code> and 0.</p>
+<p><code>minimumSignificantDigits</code><br />
+The minimum number of significant digits to use. Possible values are from 1 to 21; the default is 1.</p>
+<p><code>maximumSignificantDigits</code><br />
+The maximum number of significant digits to use. Possible values are from 1 to 21; the default is 21.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="basic-usage">Basic usage</h3>
+<p>In basic use without specifying a locale, a formatted string in the default locale and with default options is returned. This is useful to distinguish between singular and plural forms, e.g. “dog” and “dogs”.</p>
+<pre><code>var pr = new Intl.PluralRules();
+
+pr.select(0);
+// → &#39;other&#39; if in US English locale
+
+pr.select(1);
+// → &#39;one&#39; if in US English locale
+
+pr.select(2);
+// → &#39;other&#39; if in US English locale</code></pre>
+<h3 id="using-options">Using options</h3>
+<p>The results can be customized using the <code>options</code> argument, which has one property called <code>type</code> which you can set to <code>ordinal</code>. This is useful to figure out the ordinal indicator, e.g. “1st”, “2nd”, “3rd”, “4th”, “42nd” and so forth.</p>
+<pre><code>var pr = new Intl.PluralRules(&#39;en-US&#39;, { type: &#39;ordinal&#39; });
+
+pr.select(0);
+// → &#39;other&#39;
+pr.select(1);
+// → &#39;one&#39;
+pr.select(2);
+// → &#39;two&#39;
+pr.select(3);
+// → &#39;few&#39;
+pr.select(4);
+// → &#39;other&#39;
+pr.select(42);
+// → &#39;two&#39;</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma402/#sec-intl-pluralrules-constructor">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) <br/></p>
+<span class="small">#sec-intl-pluralrules-constructor</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>PluralRules</code></p>
+<p>63</p>
+<p>18</p>
+<p>58</p>
+<p>No</p>
+<p>50</p>
+<p>13</p>
+<p>63</p>
+<p>63</p>
+<p>58</p>
+<p>46</p>
+<p>13</p>
+<p>8.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../pluralrules"><code>Intl.PluralRules</code></a></li>
+<li><a href="../../intl"><code>Intl</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/PluralRules/PluralRules" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/PluralRules/PluralRules</a></p>
+</body>
+</html>

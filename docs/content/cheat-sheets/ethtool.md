@@ -1,42 +1,34 @@
----
-title: title
-subtitle: subtitle
-date: '2022-01-03'
-thumb_img_alt: lorem-ipsum
-content_img_alt: lorem-ipsum
-excerpt: lorem-ipsum
-seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
-template: post
-thumb_img_path: images/css-72a655a7.jpg
----
+subtitle
 
----
+2022-01-03
 
-syntax: bash
-tags: [networking]
+------------------------------------------------------------------------
 
----
+syntax: bash tags: \[networking\]
 
-# To show statistics for the selected interface:
+------------------------------------------------------------------------
 
-ethtool -S <interface>
+To show statistics for the selected interface:
+==============================================
 
-# To show interface permanent address:
+ethtool -S
 
-ethotool -P <interface>
+To show interface permanent address:
+====================================
 
-# To set interface speed:
+ethotool -P
 
-ethtool -s <interface> [ speed %d ]
+To set interface speed:
+=======================
 
-# To set interface autonegotiation:
+ethtool -s \[ speed %d \]
 
-ethtool -s <interface> [ autoneg on|off ]
+To set interface autonegotiation:
+=================================
 
-# To get interface errors:
+ethtool -s \[ autoneg on|off \]
 
-ethtool -S <interface> | grep error
+To get interface errors:
+========================
+
+ethtool -S | grep error

@@ -1,8 +1,3 @@
----
-title: Vows
-category: JavaScript libraries
----
-
 -   [Vowsjs.org](http://vowsjs.org/)
 
 ### CoffeeScript usage

@@ -1,31 +1,34 @@
----
-tags: [compression]
----
+Perform a backup of two directories
+===================================
 
-# Perform a backup of two directories
+tarsnap -c -f /usr/home /other/stuff/to/backup
 
-tarsnap -c -f <archive-name> /usr/home /other/stuff/to/backup
+Print how much data would be uploaded
+=====================================
 
-# Print how much data would be uploaded
+tarsnap -c -f –dry-run –print-stats &lt;directories…&gt;
 
-tarsnap -c -f <archive-name> --dry-run --print-stats <directories...>
+Copy an archive (only accesses metadata)
+========================================
 
-# Copy an archive (only accesses metadata)
+tarsnap -c -f @@
 
-tarsnap -c -f <target-archive-name> @@<source-archive>
+List the archives
+=================
 
-# List the archives
+tarsnap –list-archives
 
-tarsnap --list-archives
+Delete an archive
+=================
 
-# Delete an archive
+tarsnap -d -f
 
-tarsnap -d -f <archive-name>
+List the files in an archive
+============================
 
-# List the files in an archive
+tarsnap -tv -f
 
-tarsnap -tv -f <archive-name>
+Restore two users’ home directories from an archive (use no leading slashes)
+============================================================================
 
-# Restore two users' home directories from an archive (use no leading slashes)
-
-tarsnap -x -f <archive-name> usr/home/alice usr/home/bob
+tarsnap -x -f usr/home/alice usr/home/bob

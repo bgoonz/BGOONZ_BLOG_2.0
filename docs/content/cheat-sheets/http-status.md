@@ -1,120 +1,47 @@
----
-title: HTTP Status
-category: API
-
-description: |
-    List of HTTP Status codes and links to description.
----
-
 ### Informational Responses
 
-| Code  | Name                | ?                                 |
-| ----- | ------------------- | --------------------------------- |
-| `100` | Continue            | [?](https://httpstatuses.com/100) |
-| `101` | Switching Protocols | [?](https://httpstatuses.com/101) |
+<table><thead><tr class="header"><th>Code</th><th>Name</th><th>?</th></tr></thead><tbody><tr class="odd"><td><code>100</code></td><td>Continue</td><td><a href="https://httpstatuses.com/100">?</a></td></tr><tr class="even"><td><code>101</code></td><td>Switching Protocols</td><td><a href="https://httpstatuses.com/101">?</a></td></tr></tbody></table>
 
 {: .xp}
 
 ### Success Responses
 
-| Code  | Name                        | ?                                 |
-| ----- | --------------------------- | --------------------------------- |
-| `200` | OK                          | [?](https://httpstatuses.com/200) |
-| `201` | Created                     | [?](https://httpstatuses.com/201) |
-| `202` | Accepted                    | [?](https://httpstatuses.com/202) |
-| `203` | Non-Authoritive Information | [?](https://httpstatuses.com/203) |
-| `204` | No Content                  | [?](https://httpstatuses.com/204) |
-| `205` | Reset Content               | [?](https://httpstatuses.com/205) |
-| `206` | Partial Content             | [?](https://httpstatuses.com/206) |
-| `226` | IM Used                     | [?](https://httpstatuses.com/226) |
+<table><thead><tr class="header"><th>Code</th><th>Name</th><th>?</th></tr></thead><tbody><tr class="odd"><td><code>200</code></td><td>OK</td><td><a href="https://httpstatuses.com/200">?</a></td></tr><tr class="even"><td><code>201</code></td><td>Created</td><td><a href="https://httpstatuses.com/201">?</a></td></tr><tr class="odd"><td><code>202</code></td><td>Accepted</td><td><a href="https://httpstatuses.com/202">?</a></td></tr><tr class="even"><td><code>203</code></td><td>Non-Authoritive Information</td><td><a href="https://httpstatuses.com/203">?</a></td></tr><tr class="odd"><td><code>204</code></td><td>No Content</td><td><a href="https://httpstatuses.com/204">?</a></td></tr><tr class="even"><td><code>205</code></td><td>Reset Content</td><td><a href="https://httpstatuses.com/205">?</a></td></tr><tr class="odd"><td><code>206</code></td><td>Partial Content</td><td><a href="https://httpstatuses.com/206">?</a></td></tr><tr class="even"><td><code>226</code></td><td>IM Used</td><td><a href="https://httpstatuses.com/226">?</a></td></tr></tbody></table>
 
 {: .xp}
 
 ### Redirection Responses
 
-| Code  | Name               | ?                                                |
-| ----- | ------------------ | ------------------------------------------------ |
-| `300` | Multiple Choices   | [?](https://httpstatuses.com/300)                |
-| `301` | Moved Permanently  | [?](https://httpstatuses.com/301)                |
-| `302` | Found              | [?](https://httpstatuses.com/302)                |
-| `303` | See Other          | [?](https://httpstatuses.com/303)                |
-| `304` | Not Modified       | [?](https://httpstatuses.com/304)                |
-| `305` | Use Proxy          | [?](https://httpstatuses.com/305)                |
-| `306` | _Switch Proxy_     | [?](https://httpstatusdogs.com/306-switch-proxy) |
-| `307` | Temporary Redirect | [?](https://httpstatuses.com/307)                |
-| `308` | Permanent Redirect | [?](https://httpstatuses.com/308)                |
+<table><thead><tr class="header"><th>Code</th><th>Name</th><th>?</th></tr></thead><tbody><tr class="odd"><td><code>300</code></td><td>Multiple Choices</td><td><a href="https://httpstatuses.com/300">?</a></td></tr><tr class="even"><td><code>301</code></td><td>Moved Permanently</td><td><a href="https://httpstatuses.com/301">?</a></td></tr><tr class="odd"><td><code>302</code></td><td>Found</td><td><a href="https://httpstatuses.com/302">?</a></td></tr><tr class="even"><td><code>303</code></td><td>See Other</td><td><a href="https://httpstatuses.com/303">?</a></td></tr><tr class="odd"><td><code>304</code></td><td>Not Modified</td><td><a href="https://httpstatuses.com/304">?</a></td></tr><tr class="even"><td><code>305</code></td><td>Use Proxy</td><td><a href="https://httpstatuses.com/305">?</a></td></tr><tr class="odd"><td><code>306</code></td><td><em>Switch Proxy</em></td><td><a href="https://httpstatusdogs.com/306-switch-proxy">?</a></td></tr><tr class="even"><td><code>307</code></td><td>Temporary Redirect</td><td><a href="https://httpstatuses.com/307">?</a></td></tr><tr class="odd"><td><code>308</code></td><td>Permanent Redirect</td><td><a href="https://httpstatuses.com/308">?</a></td></tr></tbody></table>
 
 {: .xp}
 
 ### Client Error Responses
 
-| Code  | Name                            | ?                                 |
-| ----- | ------------------------------- | --------------------------------- |
-| `400` | Bad Request                     | [?](https://httpstatuses.com/400) |
-| `401` | Unauthorized                    | [?](https://httpstatuses.com/401) |
-| `402` | Payment Required                | [?](https://httpstatuses.com/402) |
-| `403` | Forbidden                       | [?](https://httpstatuses.com/403) |
-| `404` | Not Found                       | [?](https://httpstatuses.com/404) |
-| `405` | Method Not Allowed              | [?](https://httpstatuses.com/405) |
-| `406` | Not Acceptable                  | [?](https://httpstatuses.com/406) |
-| `407` | Proxy Authentication Required   | [?](https://httpstatuses.com/407) |
-| `408` | Request Timeout                 | [?](https://httpstatuses.com/408) |
-| `409` | Conflict                        | [?](https://httpstatuses.com/409) |
-| `410` | Gone                            | [?](https://httpstatuses.com/410) |
-| `411` | Length Required                 | [?](https://httpstatuses.com/411) |
-| `412` | Precondition Failed             | [?](https://httpstatuses.com/412) |
-| `413` | Payload Too Large               | [?](https://httpstatuses.com/413) |
-| `414` | URI Too Long                    | [?](https://httpstatuses.com/414) |
-| `415` | Unsupported Media Type          | [?](https://httpstatuses.com/415) |
-| `416` | Range Not Satisfiable           | [?](https://httpstatuses.com/416) |
-| `417` | Expectation Failed              | [?](https://httpstatuses.com/417) |
-| `418` | I'm a teapot                    | [?](https://httpstatuses.com/418) |
-| `421` | Misdirected Request             | [?](https://httpstatuses.com/421) |
-| `426` | Upgrade Required                | [?](https://httpstatuses.com/426) |
-| `428` | Precondition Required           | [?](https://httpstatuses.com/428) |
-| `429` | Too Many Requests               | [?](https://httpstatuses.com/429) |
-| `431` | Request Header Fields Too Large | [?](https://httpstatuses.com/431) |
-| `451` | Unavailable For Legal Reasons   | [?](https://httpstatuses.com/451) |
+<table><thead><tr class="header"><th>Code</th><th>Name</th><th>?</th></tr></thead><tbody><tr class="odd"><td><code>400</code></td><td>Bad Request</td><td><a href="https://httpstatuses.com/400">?</a></td></tr><tr class="even"><td><code>401</code></td><td>Unauthorized</td><td><a href="https://httpstatuses.com/401">?</a></td></tr><tr class="odd"><td><code>402</code></td><td>Payment Required</td><td><a href="https://httpstatuses.com/402">?</a></td></tr><tr class="even"><td><code>403</code></td><td>Forbidden</td><td><a href="https://httpstatuses.com/403">?</a></td></tr><tr class="odd"><td><code>404</code></td><td>Not Found</td><td><a href="https://httpstatuses.com/404">?</a></td></tr><tr class="even"><td><code>405</code></td><td>Method Not Allowed</td><td><a href="https://httpstatuses.com/405">?</a></td></tr><tr class="odd"><td><code>406</code></td><td>Not Acceptable</td><td><a href="https://httpstatuses.com/406">?</a></td></tr><tr class="even"><td><code>407</code></td><td>Proxy Authentication Required</td><td><a href="https://httpstatuses.com/407">?</a></td></tr><tr class="odd"><td><code>408</code></td><td>Request Timeout</td><td><a href="https://httpstatuses.com/408">?</a></td></tr><tr class="even"><td><code>409</code></td><td>Conflict</td><td><a href="https://httpstatuses.com/409">?</a></td></tr><tr class="odd"><td><code>410</code></td><td>Gone</td><td><a href="https://httpstatuses.com/410">?</a></td></tr><tr class="even"><td><code>411</code></td><td>Length Required</td><td><a href="https://httpstatuses.com/411">?</a></td></tr><tr class="odd"><td><code>412</code></td><td>Precondition Failed</td><td><a href="https://httpstatuses.com/412">?</a></td></tr><tr class="even"><td><code>413</code></td><td>Payload Too Large</td><td><a href="https://httpstatuses.com/413">?</a></td></tr><tr class="odd"><td><code>414</code></td><td>URI Too Long</td><td><a href="https://httpstatuses.com/414">?</a></td></tr><tr class="even"><td><code>415</code></td><td>Unsupported Media Type</td><td><a href="https://httpstatuses.com/415">?</a></td></tr><tr class="odd"><td><code>416</code></td><td>Range Not Satisfiable</td><td><a href="https://httpstatuses.com/416">?</a></td></tr><tr class="even"><td><code>417</code></td><td>Expectation Failed</td><td><a href="https://httpstatuses.com/417">?</a></td></tr><tr class="odd"><td><code>418</code></td><td>I’m a teapot</td><td><a href="https://httpstatuses.com/418">?</a></td></tr><tr class="even"><td><code>421</code></td><td>Misdirected Request</td><td><a href="https://httpstatuses.com/421">?</a></td></tr><tr class="odd"><td><code>426</code></td><td>Upgrade Required</td><td><a href="https://httpstatuses.com/426">?</a></td></tr><tr class="even"><td><code>428</code></td><td>Precondition Required</td><td><a href="https://httpstatuses.com/428">?</a></td></tr><tr class="odd"><td><code>429</code></td><td>Too Many Requests</td><td><a href="https://httpstatuses.com/429">?</a></td></tr><tr class="even"><td><code>431</code></td><td>Request Header Fields Too Large</td><td><a href="https://httpstatuses.com/431">?</a></td></tr><tr class="odd"><td><code>451</code></td><td>Unavailable For Legal Reasons</td><td><a href="https://httpstatuses.com/451">?</a></td></tr></tbody></table>
 
 {: .xp}
 
 ### Server Error Responses
 
-| Code  | Name                            | ?                                 |
-| ----- | ------------------------------- | --------------------------------- |
-| `500` | Internal Server Error           | [?](https://httpstatuses.com/500) |
-| `501` | Not Implemented                 | [?](https://httpstatuses.com/501) |
-| `502` | Bad Gateway                     | [?](https://httpstatuses.com/502) |
-| `503` | Service Unavailable             | [?](https://httpstatuses.com/503) |
-| `504` | Gateway Timeout                 | [?](https://httpstatuses.com/504) |
-| `505` | HTTP Version Not Supported      | [?](https://httpstatuses.com/505) |
-| `506` | Variant Also Negotiates         | [?](https://httpstatuses.com/506) |
-| `510` | Not Extended                    | [?](https://httpstatuses.com/510) |
-| `511` | Network Authentication Required | [?](https://httpstatuses.com/511) |
+<table><thead><tr class="header"><th>Code</th><th>Name</th><th>?</th></tr></thead><tbody><tr class="odd"><td><code>500</code></td><td>Internal Server Error</td><td><a href="https://httpstatuses.com/500">?</a></td></tr><tr class="even"><td><code>501</code></td><td>Not Implemented</td><td><a href="https://httpstatuses.com/501">?</a></td></tr><tr class="odd"><td><code>502</code></td><td>Bad Gateway</td><td><a href="https://httpstatuses.com/502">?</a></td></tr><tr class="even"><td><code>503</code></td><td>Service Unavailable</td><td><a href="https://httpstatuses.com/503">?</a></td></tr><tr class="odd"><td><code>504</code></td><td>Gateway Timeout</td><td><a href="https://httpstatuses.com/504">?</a></td></tr><tr class="even"><td><code>505</code></td><td>HTTP Version Not Supported</td><td><a href="https://httpstatuses.com/505">?</a></td></tr><tr class="odd"><td><code>506</code></td><td>Variant Also Negotiates</td><td><a href="https://httpstatuses.com/506">?</a></td></tr><tr class="even"><td><code>510</code></td><td>Not Extended</td><td><a href="https://httpstatuses.com/510">?</a></td></tr><tr class="odd"><td><code>511</code></td><td>Network Authentication Required</td><td><a href="https://httpstatuses.com/511">?</a></td></tr></tbody></table>
 
 {: .xp}
 
-## WebDAV Status Codes
+WebDAV Status Codes
+-------------------
 
 WebDAV is an extension of HTTP that allows clients to perform remote Web content authoring operations. It provides a framework for users to create, change and move documents on a server. It adds the following status codes on top of HTTP.
 
 [Read more.](https://en.wikipedia.org/wiki/WebDAV)
 
-| Code  | Name                 | ?                                                                |
-| ----- | -------------------- | ---------------------------------------------------------------- |
-| `102` | Processing           | [?](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#102) |
-| `207` | Multi-Status         | [?](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#207) |
-| `208` | Already Reported     | [?](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#208) |
-| `422` | Unprocessable Entity | [?](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#422) |
-| `423` | Locked               | [?](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#423) |
-| `424` | Failed Dependency    | [?](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#424) |
-| `507` | Insufficient Storage | [?](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#507) |
-| `508` | Loop Detected        | [?](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#508) |
+<table><thead><tr class="header"><th>Code</th><th>Name</th><th>?</th></tr></thead><tbody><tr class="odd"><td><code>102</code></td><td>Processing</td><td><a href="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#102">?</a></td></tr><tr class="even"><td><code>207</code></td><td>Multi-Status</td><td><a href="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#207">?</a></td></tr><tr class="odd"><td><code>208</code></td><td>Already Reported</td><td><a href="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#208">?</a></td></tr><tr class="even"><td><code>422</code></td><td>Unprocessable Entity</td><td><a href="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#422">?</a></td></tr><tr class="odd"><td><code>423</code></td><td>Locked</td><td><a href="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#423">?</a></td></tr><tr class="even"><td><code>424</code></td><td>Failed Dependency</td><td><a href="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#424">?</a></td></tr><tr class="odd"><td><code>507</code></td><td>Insufficient Storage</td><td><a href="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#507">?</a></td></tr><tr class="even"><td><code>508</code></td><td>Loop Detected</td><td><a href="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#508">?</a></td></tr></tbody></table>
 
 {: .xp}
 
-## Also see
+Also see
+--------
 
--   <https://en.wikipedia.org/wiki/List_of_HTTP_status_codes>
--   <https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html>
--   <https://httpstatuses.com/>
+-   <a href="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes" class="uri">https://en.wikipedia.org/wiki/List_of_HTTP_status_codes</a>
+-   <a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html" class="uri">https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html</a>
+-   <a href="https://httpstatuses.com/" class="uri">https://httpstatuses.com/</a>

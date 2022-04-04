@@ -1,21 +1,25 @@
-# Int8Array
+Int8Array
+=========
 
-The `Int8Array` typed array represents an array of twos-complement 8-bit signed integers. The contents are initialized to `0`. Once established, you can reference elements in the array using the object's methods, or using standard array index syntax (that is, using bracket notation).
+The `Int8Array` typed array represents an array of twos-complement 8-bit signed integers. The contents are initialized to `0`. Once established, you can reference elements in the array using the object’s methods, or using standard array index syntax (that is, using bracket notation).
 
-## Constructor
+Constructor
+-----------
 
 [`Int8Array()`](int8array/int8array)  
 Creates a new `Int8Array` object.
 
-## Static properties
+Static properties
+-----------------
 
 [`Int8Array.BYTES_PER_ELEMENT`](typedarray/bytes_per_element)  
 Returns a number value of the element size. `1` in the case of an `Int8Array`.
 
 [`Int8Array.name`](typedarray/name)  
-Returns the string value of the constructor name. In the case of the `Int8Array` type: "`Int8Array`".
+Returns the string value of the constructor name. In the case of the `Int8Array` type: “`Int8Array`”.
 
-## Static methods
+Static methods
+--------------
 
 [`Int8Array.from()`](typedarray/from)  
 Creates a new `Int8Array` from an array-like or iterable object. See also [`Array.from()`](array/from).
@@ -23,7 +27,8 @@ Creates a new `Int8Array` from an array-like or iterable object. See also [`Arra
 [`Int8Array.of()`](typedarray/of)  
 Creates a new `Int8Array` with a variable number of arguments. See also [`Array.of()`](array/of).
 
-## Instance properties
+Instance properties
+-------------------
 
 [`Int8Array.prototype.buffer`](typedarray/buffer)  
 Returns the [`ArrayBuffer`](arraybuffer) referenced by the `Int8Array`. Fixed at construction time and thus **read only**.
@@ -37,13 +42,14 @@ Returns the offset (in bytes) of the `Int8Array` from the start of its [`ArrayBu
 [`Int8Array.prototype.length`](typedarray/length)  
 Returns the number of elements held in the `Int8Array`. Fixed at construction time and thus **read only.**
 
-## Instance methods
+Instance methods
+----------------
 
 [`Int8Array.prototype.copyWithin()`](typedarray/copywithin)  
 Copies a sequence of array elements within the array. See also [`Array.prototype.copyWithin()`](array/copywithin).
 
 [`Int8Array.prototype.entries()`](typedarray/entries)  
-Returns a new _array iterator_ object that contains the key/value pairs for each index in the array. See also [`Array.prototype.entries()`](array/entries).
+Returns a new *array iterator* object that contains the key/value pairs for each index in the array. See also [`Array.prototype.entries()`](array/entries).
 
 [`Int8Array.prototype.every()`](typedarray/every)  
 Tests whether all elements in the array pass the test provided by a function. See also [`Array.prototype.every()`](array/every).
@@ -73,7 +79,7 @@ Returns the first (least) index of an element within the array equal to the spec
 Joins all elements of an array into a string. See also [`Array.prototype.join()`](array/join).
 
 [`Int8Array.prototype.keys()`](typedarray/keys)  
-Returns a new _array iterator_ that contains the keys for each index in the array. See also [`Array.prototype.keys()`](array/keys).
+Returns a new *array iterator* that contains the keys for each index in the array. See also [`Array.prototype.keys()`](array/keys).
 
 [`Int8Array.prototype.lastIndexOf()`](typedarray/lastindexof)  
 Returns the last (greatest) index of an element within the array equal to the specified value, or `-1` if none is found. See also [`Array.prototype.lastIndexOf()`](array/lastindexof).
@@ -106,7 +112,7 @@ Sorts the elements of an array in place and returns the array. See also [`Array.
 Returns a new `Int8Array` from the given start and end element index.
 
 [`Int8Array.prototype.values()`](typedarray/values)  
-Returns a new _array iterator_ object that contains the values for each index in the array. See also [`Array.prototype.values()`](array/values).
+Returns a new *array iterator* object that contains the values for each index in the array. See also [`Array.prototype.values()`](array/values).
 
 [`Int8Array.prototype.toLocaleString()`](typedarray/tolocalestring)  
 Returns a localized string representing the array and its elements. See also [`Array.prototype.toLocaleString()`](array/tolocalestring).
@@ -115,9 +121,10 @@ Returns a localized string representing the array and its elements. See also [`A
 Returns a string representing the array and its elements. See also [`Array.prototype.toString()`](array/tostring).
 
 [`Int8Array.prototype[@@iterator]()`](typedarray/@@iterator)  
-Returns a new _array iterator_ object that contains the values for each index in the array.
+Returns a new *array iterator* object that contains the values for each index in the array.
 
-## Examples
+Examples
+--------
 
 ### Different ways to create an Int8Array
 
@@ -146,38 +153,11 @@ Returns a new _array iterator_ object that contains the values for each index in
     var int8 = new Int8Array(iterable);
     // Int8Array[1, 2, 3]
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#table-49">ECMAScript (ECMA-262) 
-<br/>
-
-<span class="small">The definition of 'TypedArray constructors' in that specification.</span></a></td></tr></tbody></table>
-
-`Int8Array`
-
-7
-
-12
-
-4
-
-10
-
-11.6
-
-5.1
-
-4
-
-18
-
-4
-
-12
-
-4.2
-
-1.0
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript (ECMA-262)<br />
+</p><span class="small">The definition of ‘TypedArray constructors’ in that specification.</span></td></tr></tbody></table>
 
 `Int8Array`
 
@@ -205,7 +185,34 @@ Returns a new _array iterator_ object that contains the values for each index in
 
 1.0
 
-## See also
+`Int8Array`
+
+7
+
+12
+
+4
+
+10
+
+11.6
+
+5.1
+
+4
+
+18
+
+4
+
+12
+
+4.2
+
+1.0
+
+See also
+--------
 
 -   [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
 -   [`ArrayBuffer`](arraybuffer)

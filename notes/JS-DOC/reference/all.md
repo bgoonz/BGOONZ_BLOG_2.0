@@ -1,8 +1,10 @@
-# Promise.all()
+Promise.all()
+=============
 
-The `Promise.all()` method takes an iterable of promises as an input, and returns a single [`Promise`](../promise) that resolves to an array of the results of the input promises. This returned promise will resolve when all of the input's promises have resolved, or if the input iterable contains no promises. It rejects immediately upon any of the input promises rejecting or non-promises throwing an error, and will reject with this first rejection message / error.
+The `Promise.all()` method takes an iterable of promises as an input, and returns a single [`Promise`](../promise) that resolves to an array of the results of the input promises. This returned promise will resolve when all of the input’s promises have resolved, or if the input iterable contains no promises. It rejects immediately upon any of the input promises rejecting or non-promises throwing an error, and will reject with this first rejection message / error.
 
-## Syntax
+Syntax
+------
 
     Promise.all(iterable);
 
@@ -13,11 +15,12 @@ An [iterable](../../iteration_protocols#the_iterable_protocol) object such as an
 
 ### Return value
 
-- An **already resolved** [`Promise`](../promise) if the iterable passed is empty.
-- An **asynchronously resolved** [`Promise`](../promise) if the iterable passed contains no promises. Note, Google Chrome 58 returns an **already resolved** promise in this case.
-- A **pending** [`Promise`](../promise) in all other cases. This returned promise is then resolved/rejected **asynchronously** (as soon as the stack is empty) when all the promises in the given iterable have resolved, or if any of the promises reject. See the example about "Asynchronicity or synchronicity of Promise.all" below. Returned values will be in order of the Promises passed, regardless of completion order.
+-   An **already resolved** [`Promise`](../promise) if the iterable passed is empty.
+-   An **asynchronously resolved** [`Promise`](../promise) if the iterable passed contains no promises. Note, Google Chrome 58 returns an **already resolved** promise in this case.
+-   A **pending** [`Promise`](../promise) in all other cases. This returned promise is then resolved/rejected **asynchronously** (as soon as the stack is empty) when all the promises in the given iterable have resolved, or if any of the promises reject. See the example about “Asynchronicity or synchronicity of Promise.all” below. Returned values will be in order of the Promises passed, regardless of completion order.
 
-## Description
+Description
+-----------
 
 This method can be useful for aggregating the results of multiple promises. It is typically used when there are multiple related asynchronous tasks that the overall code relies on to work successfully — all of whom we want to fulfill before the code execution continues.
 
@@ -27,14 +30,15 @@ This method can be useful for aggregating the results of multiple promises. It i
 
 The returned promise is fulfilled with an array containing **all** the resolved values (including non-promise values) in the iterable passed as the argument.
 
-- If an empty iterable is passed, then the promise returned by this method is fulfilled synchronously. The resolved value is an empty array.
-- If a nonempty _iterable_ is passed, and **all** of the promises fulfill, or are not promises, then the promise returned by this method is fulfilled asynchronously.
+-   If an empty iterable is passed, then the promise returned by this method is fulfilled synchronously. The resolved value is an empty array.
+-   If a nonempty *iterable* is passed, and **all** of the promises fulfill, or are not promises, then the promise returned by this method is fulfilled asynchronously.
 
 ### Rejection
 
 If any of the passed-in promises reject, `Promise.all` asynchronously rejects with the value of the promise that rejected, whether or not the other promises have resolved.
 
-## Examples
+Examples
+--------
 
 ### Using `Promise.all`
 
@@ -178,12 +182,11 @@ It is possible to change this behavior by handling possible rejections:
       console.error(values[1]) // "Error: p2_immediate_rejection"
     })
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.all">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-promise.all</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-promise.all</span></td></tr></tbody></table>
 
 `all`
 
@@ -211,11 +214,11 @@ No
 
 2.0
 
-## See also
+See also
+--------
 
-- [`Promise`](../promise)
-- [`Promise.race()`](race)
+-   [`Promise`](../promise)
+-   [`Promise.race()`](race)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all</a>

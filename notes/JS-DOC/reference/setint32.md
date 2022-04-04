@@ -1,8 +1,10 @@
-# DataView.prototype.setInt32()
+DataView.prototype.setInt32()
+=============================
 
 The `setInt32()` method stores a signed 32-bit integer (long) value at the specified byte offset from the start of the [`DataView`](../dataview).
 
-## Syntax
+Syntax
+------
 
     setInt32(byteOffset, value)
     setInt32(byteOffset, value, littleEndian)
@@ -27,7 +29,8 @@ The value to set.
 [`RangeError`](../rangeerror)  
 Thrown if the `byteOffset` is set such as it would store beyond the end of the view.
 
-## Examples
+Examples
+--------
 
 ### Using the setInt32 method
 
@@ -36,14 +39,14 @@ Thrown if the `byteOffset` is set such as it would store beyond the end of the v
     dataview.setInt32(1, 3);
     dataview.getInt32(1); // 3
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.setint32">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-dataview.prototype.setint32</span></td></tr></tbody></table>
 
-<span class="small">#sec-dataview.prototype.setint32</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -99,7 +102,8 @@ Samsung Internet
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`DataView`](../dataview)
 -   [`ArrayBuffer`](../arraybuffer)

@@ -1,19 +1,15 @@
----
-title: Rails plugins
-category: Rails
----
-
-## Generate a plugin
+Generate a plugin
+-----------------
 
 Generate a Rails Engine plugin:
 
     rails plugin new myplugin --skip-bundle --full
 
-## Initializers
+Initializers
+------------
 
 -   [Rails::Railtie](http://edgeapi.rubyonrails.org/classes/Rails/Railtie.html)
--   [EngineYard blog
-    post](http://www.engineyard.com/blog/2010/extending-rails-3-with-railties/)
+-   [EngineYard blog post](http://www.engineyard.com/blog/2010/extending-rails-3-with-railties/)
 
 Subclass Railtie and provide an `initializer` method.
 
@@ -31,7 +27,8 @@ Subclass Railtie and provide an `initializer` method.
       end
     end
 
-## Custom routes
+Custom routes
+-------------
 
 -   [ActionDispatch::Routing::Mapper](http://api.rubyonrails.org/classes/ActionDispatch/Routing/Mapper.html)
 
@@ -59,7 +56,8 @@ Example with a block:
       constraints(constraint) { yield }
     end
 
-## Custom generators
+Custom generators
+-----------------
 
 -   [Guide: generators](http://guides.rubyonrails.org/generators.html)
 -   [ActiveRecord::Generators::Base](http://api.rubyonrails.org/classes/ActiveRecord/Generators/Base.html)
@@ -83,8 +81,7 @@ Example with a block:
 
 ### NamedBase
 
-Use `NamedBase` instead if you want to take an argument. It will be available as
-`file_name`.
+Use `NamedBase` instead if you want to take an argument. It will be available as `file_name`.
 
     class InitializerGenerator < Rails::Generators::Base
       def lol
@@ -111,7 +108,8 @@ When invoking `rails g XXX:YYY`:
 
     [rails/]generators/XXX/YYY_generator.rb
 
-## ActiveModel 'acts as'
+ActiveModel ‘acts as’
+---------------------
 
     # yaffle/lib/yaffle/acts_as_yaffle.rb
     module Yaffle

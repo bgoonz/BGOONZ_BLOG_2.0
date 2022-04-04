@@ -1,10 +1,12 @@
-# Template literals (Template strings)
+Template literals (Template strings)
+====================================
 
 Template literals are string literals allowing embedded expressions. You can use multi-line strings and string interpolation features with them.
 
-They were called "template strings" in prior editions of the ES2015 specification.
+They were called “template strings” in prior editions of the ES2015 specification.
 
-## Syntax
+Syntax
+------
 
     `string text`
 
@@ -15,13 +17,14 @@ They were called "template strings" in prior editions of the ES2015 specificatio
 
     tag`string text ${expression} string text`
 
-## Description
+Description
+-----------
 
 Template literals are enclosed by the backtick (\` \`) ([grave accent](https://en.wikipedia.org/wiki/Grave_accent)) character instead of double or single quotes.
 
 Template literals can contain placeholders. These are indicated by the dollar sign and curly braces (`${expression}`). The expressions in the placeholders and the text between the backticks (\` \`) get passed to a function.
 
-The default function just concatenates the parts into a single string. If there is an expression preceding the template literal (`tag` here), this is called a _tagged template_. In that case, the tag expression (usually a function) gets called with the template literal, which you can then manipulate before outputting.
+The default function just concatenates the parts into a single string. If there is an expression preceding the template literal (`tag` here), this is called a *tagged template*. In that case, the tag expression (usually a function) gets called with the template literal, which you can then manipulate before outputting.
 
 To escape a backtick in a template literal, put a backslash (`\`) before the backtick.
 
@@ -89,7 +92,7 @@ In ES2015 with nested template literals:
 
 ### Tagged templates
 
-A more advanced form of template literals are _tagged_ templates.
+A more advanced form of template literals are *tagged* templates.
 
 Tags allow you to parse template literals with a function. The first argument of a tag function contains an array of string values. The remaining arguments are related to the expressions.
 
@@ -121,7 +124,7 @@ The name of the function used for the tag can be whatever you want.
     console.log(output);
     // That Mike is a youngster.
 
-Tag functions don't even need to return a string!
+Tag functions don’t even need to return a string!
 
     function template(strings, ...keys) {
       return (function(...values) {
@@ -177,10 +180,10 @@ In addition, the [`String.raw()`](global_objects/string/raw) method exists to cr
 
 As of ECMAScript 2016, tagged templates conform to the rules of the following escape sequences:
 
--   Unicode escapes started by "`\u`", for example `\u00A9`
--   Unicode code point escapes indicated by "`\u{}`", for example `\u{2F804}`
--   Hexadecimal escapes started by "`\x`", for example `\xA9`
--   Octal literal escapes started by "`\0o`" and followed by one or more digits, for example `\0o251`
+-   Unicode escapes started by “`\u`”, for example `\u00A9`
+-   Unicode code point escapes indicated by “`\u{}`”, for example `\u{2F804}`
+-   Hexadecimal escapes started by “`\x`”, for example `\xA9`
+-   Octal literal escapes started by “`\0o`” and followed by one or more digits, for example `\0o251`
 
 This means that a tagged template like the following is problematic, because, per ECMAScript grammar, a parser looks for valid Unicode escape sequences, but finds malformed syntax:
 
@@ -192,7 +195,7 @@ This means that a tagged template like the following is problematic, because, pe
 
 Tagged templates should allow the embedding of languages (for example [DSLs](https://en.wikipedia.org/wiki/Domain-specific_language), or [LaTeX](https://en.wikipedia.org/wiki/LaTeX)), where other escapes sequences are common. The ECMAScript proposal [Template Literal Revision](https://tc39.github.io/proposal-template-literal-revision/) (Stage 4, to be integrated in the ECMAScript 2018 standard) removes the syntax restriction of ECMAScript escape sequences from tagged templates.
 
-However, illegal escape sequences must still be represented in the "cooked" representation. They will show up as [`undefined`](global_objects/undefined) element in the "cooked" array:
+However, illegal escape sequences must still be represented in the “cooked” representation. They will show up as [`undefined`](global_objects/undefined) element in the “cooked” array:
 
     function latex(str) {
       return { "cooked": str[0], "raw": str.raw[0] }
@@ -202,18 +205,18 @@ However, illegal escape sequences must still be represented in the "cooked" repr
 
     // { cooked: undefined, raw: "\\unicode" }
 
-Note that the escape sequence restriction is only dropped from _tagged_ templates—not from _untagged_ template literals:
+Note that the escape sequence restriction is only dropped from *tagged* templates—not from *untagged* template literals:
 
     let bad = `bad escape sequence: \unicode`;
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-template-literals">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-template-literals</span></td></tr></tbody></table>
 
-<span class="small">#sec-template-literals</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -295,12 +298,13 @@ No
 
 8.0
 
-## See also
+See also
+--------
 
 -   [`String`](global_objects/string)
 -   [`String.raw()`](global_objects/string/raw)
 -   [Lexical grammar](lexical_grammar)
 -   [Template-like strings in ES3 compatible syntax](https://gist.github.com/WebReflection/8f227532143e63649804)
--   ["ES6 in Depth: Template strings" on hacks.mozilla.org](https://hacks.mozilla.org/2015/05/es6-in-depth-template-strings-2/)
+-   [“ES6 in Depth: Template strings” on hacks.mozilla.org](https://hacks.mozilla.org/2015/05/es6-in-depth-template-strings-2/)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals</a>

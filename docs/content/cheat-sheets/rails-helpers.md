@@ -1,8 +1,3 @@
----
-title: Helpers
-category: Rails
----
-
 ### Date
 
     distance_of_time_in_words(Time.now, project.end_date) #=> 3 hours

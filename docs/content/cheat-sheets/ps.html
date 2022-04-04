@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>ps</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="to-list-every-process-on-the-system">To list every process on the system:</h1>
+<p>ps aux</p>
+<h1 id="to-list-a-process-tree">To list a process tree:</h1>
+<p>ps axjf</p>
+<h1 id="to-list-every-process-owned-by-foouser">To list every process owned by foouser:</h1>
+<p>ps -aufoouser</p>
+<h1 id="to-list-every-process-with-a-user-defined-format">To list every process with a user-defined format:</h1>
+<p>ps -eo pid,user,command</p>
+<h1 id="exclude-grep-from-your-grepped-output-of-ps.">Exclude grep from your grepped output of ps.</h1>
+<h1 id="add-to-the-first-letter.-ex-sshd---sshd">Add [] to the first letter. Ex: sshd -&gt; [s]shd</h1>
+<p>ps aux | grep ‘[h]ttpd’</p>
+</body>
+</html>

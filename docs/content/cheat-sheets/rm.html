@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>rm</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+# To remove all files and subdirs in
+<dir>
+<p>:</p>
+rm -rf
+<dir>
+<h1 id="to-ignore-non-existent-files">To ignore non-existent files:</h1>
+rm -f
+<dir>
+<h1 id="to-remove-a-file-with-this-inode">To remove a file with this inode:</h1>
+<p>find /tmp/ -inum 6666 -exec rm -i ‘{}’ ;</p>
+</body>
+</html>

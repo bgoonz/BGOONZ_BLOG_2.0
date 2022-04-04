@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>message</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="error.prototype.message">Error.prototype.message</h1>
+<p>The <code>message</code> property is a human-readable description of the error.</p>
+<h2 id="description">Description</h2>
+<p>This property contains a brief description of the error if one is available or has been set. <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey">SpiderMonkey</a> makes extensive use of the <code>message</code> property for exceptions. The <code>message</code> property combined with the <a href="name"><code>name</code></a> property is used by the <a href="tostring"><code>Error.prototype.toString()</code></a> method to create a string representation of the Error.</p>
+<p>By default, the <code>message</code> property is an empty string, but this behavior can be overridden for an instance by specifying a message as the first argument to the <a href="error"><code>Error</code></a> constructor.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="throwing-a-custom-error">Throwing a custom error</h3>
+<pre><code>var e = new Error(&#39;Could not parse input&#39;);
+// e.message is &#39;Could not parse input&#39;
+throw e;</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-error.prototype.message">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-error.prototype.message</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>message</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>6</p>
+<p>5</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="name"><code>Error.prototype.name</code></a></li>
+<li><a href="tostring"><code>Error.prototype.toString()</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error/message" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error/message</a></p>
+</body>
+</html>

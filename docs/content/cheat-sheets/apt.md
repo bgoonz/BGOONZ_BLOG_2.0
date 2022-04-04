@@ -1,51 +1,48 @@
----
-title: Ubuntu Commands
-subtitle: packaging
-date: '2022-01-03'
-thumb_img_alt: lorem-ipsum
-content_img_alt: lorem-ipsum
-excerpt: lorem-ipsum
-seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
-template: post
-thumb_img_path: images/css-72a655a7.jpg
----
+packaging
 
----
+2022-01-03
 
-## tags: []
+------------------------------------------------------------------------
 
-# To find packages matching <phrase>:
+tags: \[\]
+----------
 
-apt search <phrase>
+To find packages matching :
+===========================
 
-# To show information on a package:
+apt search
 
-apt show <package>
+To show information on a package:
+=================================
 
-# To fetch package list:
+apt show
+
+To fetch package list:
+======================
 
 apt update
 
-# To download and install updates without installing new package:
+To download and install updates without installing new package:
+===============================================================
 
 apt upgrade
 
-# To download and install the updates AND install new necessary packages:
+To download and install the updates AND install new necessary packages:
+=======================================================================
 
 apt dist-upgrade
 
-# To perform a full system upgrade:
+To perform a full system upgrade:
+=================================
 
 apt update && apt dist-upgrade
 
-# To install package(s):
+To install package(s):
+======================
 
-apt install <package>...
+apt install …
 
-# To uninstall package(s):
+To uninstall package(s):
+========================
 
-apt remove <package>...
+apt remove …

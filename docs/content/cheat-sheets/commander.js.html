@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2022-01-03" />
+  <title>title</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">title</h1>
+<p class="subtitle">subtitle</p>
+<p class="date">2022-01-03</p>
+</header>
+<hr />
+<p>title: Commander.js category: JavaScript libraries</p>
+<hr />
+<h3 id="initialize">Initialize</h3>
+<pre><code>var cli = require(&#39;commander&#39;);</code></pre>
+<h3 id="options">Options</h3>
+<pre><code>cli
+  .version(require(&#39;../package&#39;).version)
+  .usage(&#39;[options] &lt;command&gt;&#39;)
+  .option(&#39;-w, --words &lt;n&gt;&#39;, &#39;generate &lt;n&gt; words&#39;)
+  .option(&#39;-i, --interval &lt;n&gt;&#39;, &#39;interval [1000]&#39;, 1000)
+  .option(&#39;-s, --symbols&#39;, &#39;include symbols&#39;)
+  .parse(process.argv);</code></pre>
+<h3 id="help">Help</h3>
+<pre><code>.on(&#39;--help&#39;, function() {
+  console.log(&#39;&#39;);
+})</code></pre>
+<h3 id="commands">Commands</h3>
+<pre><code>cli.outputHelp();
+cli.args == [&quot;hello&quot;];</code></pre>
+<h3 id="other-useful-things">Other useful things</h3>
+<pre><code>process.exit(0);</code></pre>
+</body>
+</html>

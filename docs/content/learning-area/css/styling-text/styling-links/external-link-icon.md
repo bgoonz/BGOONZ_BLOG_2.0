@@ -1,0 +1,1 @@
+For more information on the weather, visit our [weather page](weather.html), look at [weather on Wikipedia](https://en.wikipedia.org/wiki/Weather), or check out [weather on Extreme Science](http://www.extremescience.com/weather.htm).

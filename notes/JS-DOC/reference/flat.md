@@ -1,8 +1,10 @@
-# Array.prototype.flat()
+Array.prototype.flat()
+======================
 
 The `flat()` method creates a new array with all sub-array elements concatenated into it recursively up to the specified depth.
 
-## Syntax
+Syntax
+------
 
     flat()
     flat(depth)
@@ -16,7 +18,8 @@ The depth level specifying how deep a nested array structure should be flattened
 
 A new array with the sub-array elements concatenated into it.
 
-## Alternatives
+Alternatives
+------------
 
 ### reduce and concat
 
@@ -89,7 +92,8 @@ A new array with the sub-array elements concatenated into it.
     const flattened = [...flatten(arr, Infinity)];
     // [1, 2, 3, 4, 5, 6]
 
-## Examples
+Examples
+--------
 
 ### Flattening nested arrays
 
@@ -117,12 +121,11 @@ The flat method removes empty slots in arrays:
     arr5.flat();
     // [1, 2, 4, 5]
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.flat">ECMAScript (ECMA-262) 
-<br/>
-
-<span class="small">The definition of 'Array.prototype.flat' in that specification.</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript (ECMA-262)<br />
+</p><span class="small">The definition of ‘Array.prototype.flat’ in that specification.</span></td></tr></tbody></table>
 
 `flat`
 
@@ -150,7 +153,8 @@ No
 
 10.0
 
-## See also
+See also
+--------
 
 -   [`Array.prototype.flatMap()`](flatmap)
 -   [`Array.prototype.map()`](map)

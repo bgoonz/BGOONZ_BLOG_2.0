@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2021-11-27" />
+  <title>Bash Cheatsheet</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Bash Cheatsheet</h1>
+<p class="subtitle">Cheat Sheet</p>
+<p class="date">2021-11-27</p>
+</header>
+<h2 id="bash-cheat-sheet">Bash Cheat Sheet:</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sh"><code class="sourceCode bash"><a class="sourceLine" id="cb1-1" title="1"><span class="co">#!/bin/bash</span></a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="co">##############################################################################</span></a>
+<a class="sourceLine" id="cb1-3" title="3"><span class="co"># SHORTCUTS and HISTORY</span></a>
+<a class="sourceLine" id="cb1-4" title="4"><span class="co">##############################################################################</span></a>
+<a class="sourceLine" id="cb1-5" title="5"></a>
+<a class="sourceLine" id="cb1-6" title="6"><span class="ex">CTRL+A</span>  <span class="co"># move to beginning of line</span></a>
+<a class="sourceLine" id="cb1-7" title="7"><span class="ex">CTRL+B</span>  <span class="co"># moves backward one character</span></a>
+<a class="sourceLine" id="cb1-8" title="8"><span class="ex">CTRL+C</span>  <span class="co"># halts the current command</span></a>
+<a class="sourceLine" id="cb1-9" title="9"><span class="ex">CTRL+D</span>  <span class="co"># deletes one character backward or logs out of current session, similar to exit</span></a>
+<a class="sourceLine" id="cb1-10" title="10"><span class="ex">CTRL+E</span>  <span class="co"># moves to end of line</span></a>
+<a class="sourceLine" id="cb1-11" title="11"><span class="ex">CTRL+F</span>  <span class="co"># moves forward one character</span></a>
+<a class="sourceLine" id="cb1-12" title="12"><span class="ex">CTRL+G</span>  <span class="co"># aborts the current editing command and ring the terminal bell</span></a>
+<a class="sourceLine" id="cb1-13" title="13"><span class="ex">CTRL+H</span>  <span class="co"># deletes one character under cursor (same as DELETE)</span></a>
+<a class="sourceLine" id="cb1-14" title="14"><span class="ex">CTRL+J</span>  <span class="co"># same as RETURN</span></a>
+<a class="sourceLine" id="cb1-15" title="15"><span class="ex">CTRL+K</span>  <span class="co"># deletes (kill) forward to end of line</span></a>
+<a class="sourceLine" id="cb1-16" title="16"><span class="ex">CTRL+L</span>  <span class="co"># clears screen and redisplay the line</span></a>
+<a class="sourceLine" id="cb1-17" title="17"><span class="ex">CTRL+M</span>  <span class="co"># same as RETURN</span></a>
+<a class="sourceLine" id="cb1-18" title="18"><span class="ex">CTRL+N</span>  <span class="co"># next line in command history</span></a>
+<a class="sourceLine" id="cb1-19" title="19"><span class="ex">CTRL+O</span>  <span class="co"># same as RETURN, then displays next line in history file</span></a>
+<a class="sourceLine" id="cb1-20" title="20"><span class="ex">CTRL+P</span>  <span class="co"># previous line in command history</span></a>
+<a class="sourceLine" id="cb1-21" title="21"><span class="ex">CTRL+R</span>  <span class="co"># searches backward</span></a>
+<a class="sourceLine" id="cb1-22" title="22"><span class="ex">CTRL+S</span>  <span class="co"># searches forward</span></a>
+<a class="sourceLine" id="cb1-23" title="23"><span class="ex">CTRL+T</span>  <span class="co"># transposes two characters</span></a>
+<a class="sourceLine" id="cb1-24" title="24"><span class="ex">CTRL+U</span>  <span class="co"># kills backward from point to the beginning of line</span></a>
+<a class="sourceLine" id="cb1-25" title="25"><span class="ex">CTRL+V</span>  <span class="co"># makes the next character typed verbatim</span></a>
+<a class="sourceLine" id="cb1-26" title="26"><span class="ex">CTRL+W</span>  <span class="co"># kills the word behind the cursor</span></a>
+<a class="sourceLine" id="cb1-27" title="27"><span class="ex">CTRL+X</span>  <span class="co"># lists the possible filename completions of the current word</span></a>
+<a class="sourceLine" id="cb1-28" title="28"><span class="ex">CTRL+Y</span>  <span class="co"># retrieves (yank) last item killed</span></a>
+<a class="sourceLine" id="cb1-29" title="29"><span class="ex">CTRL+Z</span>  <span class="co"># stops the current command, resume with fg in the foreground or bg in the background</span></a>
+<a class="sourceLine" id="cb1-30" title="30"></a>
+<a class="sourceLine" id="cb1-31" title="31"><span class="ex">ALT+B</span>   <span class="co"># moves backward one word</span></a>
+<a class="sourceLine" id="cb1-32" title="32"><span class="ex">ALT+D</span>   <span class="co"># deletes next word</span></a>
+<a class="sourceLine" id="cb1-33" title="33"><span class="ex">ALT+F</span>   <span class="co"># moves forward one word</span></a>
+<a class="sourceLine" id="cb1-34" title="34"><span class="ex">ALT+H</span>   <span class="co"># deletes one character backward</span></a>
+<a class="sourceLine" id="cb1-35" title="35"><span class="ex">ALT+T</span>   <span class="co"># transposes two words</span></a>
+<a class="sourceLine" id="cb1-36" title="36"><span class="ex">ALT+.</span>   <span class="co"># pastes last word from the last command. Pressing it repeatedly traverses through command history.</span></a>
+<a class="sourceLine" id="cb1-37" title="37"><span class="ex">ALT+U</span>   <span class="co"># capitalizes every character from the current cursor position to the end of the word</span></a>
+<a class="sourceLine" id="cb1-38" title="38"><span class="ex">ALT+L</span>   <span class="co"># uncapitalizes every character from the current cursor position to the end of the word</span></a>
+<a class="sourceLine" id="cb1-39" title="39"><span class="ex">ALT+C</span>   <span class="co"># capitalizes the letter under the cursor. The cursor then moves to the end of the word.</span></a>
+<a class="sourceLine" id="cb1-40" title="40"><span class="ex">ALT+R</span>   <span class="co"># reverts any changes to a command you&#39;ve pulled from your history if you&#39;ve edited it.</span></a>
+<a class="sourceLine" id="cb1-41" title="41"></a>
+<a class="sourceLine" id="cb1-42" title="42"><span class="ex">BACKSPACE</span>  <span class="co"># deletes one character backward</span></a>
+<a class="sourceLine" id="cb1-43" title="43"><span class="ex">DELETE</span>     <span class="co"># deletes one character under cursor</span></a>
+<a class="sourceLine" id="cb1-44" title="44"></a>
+<a class="sourceLine" id="cb1-45" title="45"><span class="bu">history</span>   <span class="co"># shows command line history</span></a>
+<a class="sourceLine" id="cb1-46" title="46">!!        <span class="co"># repeats the last command</span></a>
+<a class="sourceLine" id="cb1-47" title="47">!<span class="op">&lt;</span><span class="ex">n</span><span class="op">&gt;</span>      <span class="co"># refers to command line &#39;n&#39;</span></a>
+<a class="sourceLine" id="cb1-48" title="48">!<span class="op">&lt;</span><span class="ex">string</span><span class="op">&gt;</span> <span class="co"># refers to command starting with &#39;string&#39;</span></a>
+<a class="sourceLine" id="cb1-49" title="49"></a>
+<a class="sourceLine" id="cb1-50" title="50"><span class="bu">exit</span>      <span class="co"># logs out of current session</span></a>
+<a class="sourceLine" id="cb1-51" title="51"></a>
+<a class="sourceLine" id="cb1-52" title="52"><span class="co">##############################################################################</span></a>
+<a class="sourceLine" id="cb1-53" title="53"><span class="co"># BASH BASICS</span></a>
+<a class="sourceLine" id="cb1-54" title="54"><span class="co">##############################################################################</span></a>
+<a class="sourceLine" id="cb1-55" title="55"></a>
+<a class="sourceLine" id="cb1-56" title="56"><span class="fu">env</span>                 <span class="co"># displays all environment variables</span></a>
+<a class="sourceLine" id="cb1-57" title="57"></a>
+<a class="sourceLine" id="cb1-58" title="58"><span class="bu">echo</span> <span class="va">$SHELL</span>         <span class="co"># displays the shell you&#39;re using</span></a>
+<a class="sourceLine" id="cb1-59" title="59"><span class="bu">echo</span> <span class="va">$BASH_VERSION</span>  <span class="co"># displays bash version</span></a>
+<a class="sourceLine" id="cb1-60" title="60"></a>
+<a class="sourceLine" id="cb1-61" title="61"><span class="fu">bash</span>                <span class="co"># if you want to use bash (type exit to go back to your previously opened shell)</span></a>
+<a class="sourceLine" id="cb1-62" title="62"><span class="fu">whereis</span> bash        <span class="co"># locates the binary, source and manual-page for a command</span></a>
+<a class="sourceLine" id="cb1-63" title="63"><span class="fu">which</span> bash          <span class="co"># finds out which program is executed as &#39;bash&#39; (default: /bin/bash, can change across environments)</span></a>
+<a class="sourceLine" id="cb1-64" title="64"></a>
+<a class="sourceLine" id="cb1-65" title="65"><span class="fu">clear</span>               <span class="co"># clears content on window (hide displayed lines)</span></a>
+<a class="sourceLine" id="cb1-66" title="66"></a>
+<a class="sourceLine" id="cb1-67" title="67"><span class="co">##############################################################################</span></a>
+<a class="sourceLine" id="cb1-68" title="68"><span class="co"># FILE COMMANDS</span></a>
+<a class="sourceLine" id="cb1-69" title="69"><span class="co">##############################################################################</span></a>
+<a class="sourceLine" id="cb1-70" title="70"></a>
+<a class="sourceLine" id="cb1-71" title="71"><span class="fu">ls</span>                            <span class="co"># lists your files in current directory, ls &lt;dir&gt; to print files in a specific directory</span></a>
+<a class="sourceLine" id="cb1-72" title="72"><span class="fu">ls</span> -l                         <span class="co"># lists your files in &#39;long format&#39;, which contains the exact size of the file, who owns the file and who has the right to look at it, and when it was last modified</span></a>
+<a class="sourceLine" id="cb1-73" title="73"><span class="fu">ls</span> -a                         <span class="co"># lists all files in &#39;long format&#39;, including hidden files (name beginning with &#39;.&#39;)</span></a>
+<a class="sourceLine" id="cb1-74" title="74"><span class="fu">ln</span> -s <span class="op">&lt;</span>filename<span class="op">&gt;</span> <span class="op">&lt;</span>link<span class="op">&gt;</span>       <span class="co"># creates symbolic link to file</span></a>
+<a class="sourceLine" id="cb1-75" title="75"><span class="fu">touch</span> <span class="op">&lt;</span>filename<span class="op">&gt;</span>              <span class="co"># creates or updates (edit) your file</span></a>
+<a class="sourceLine" id="cb1-76" title="76"><span class="fu">cat</span> <span class="op">&lt;</span>filename<span class="op">&gt;</span>                <span class="co"># prints file raw content (will not be interpreted)</span></a>
+<a class="sourceLine" id="cb1-77" title="77"><span class="ex">any_command</span> <span class="op">&gt;</span> <span class="op">&lt;</span>filename<span class="op">&gt;</span>      <span class="co"># &#39;&gt;&#39; is used to perform redirections, it will set any_command&#39;s stdout to file instead of &quot;real stdout&quot; (generally /dev/stdout)</span></a>
+<a class="sourceLine" id="cb1-78" title="78"><span class="fu">more</span> <span class="op">&lt;</span>filename<span class="op">&gt;</span>               <span class="co"># shows the first part of a file (move with space and type q to quit)</span></a>
+<a class="sourceLine" id="cb1-79" title="79"><span class="fu">head</span> <span class="op">&lt;</span>filename<span class="op">&gt;</span>               <span class="co"># outputs the first lines of file (default: 10 lines)</span></a>
+<a class="sourceLine" id="cb1-80" title="80"><span class="fu">tail</span> <span class="op">&lt;</span>filename<span class="op">&gt;</span>               <span class="co"># outputs the last lines of file (useful with -f option) (default: 10 lines)</span></a>
+<a class="sourceLine" id="cb1-81" title="81"><span class="ex">vim</span> <span class="op">&lt;</span>filename<span class="op">&gt;</span>                <span class="co"># opens a file in VIM (VI iMproved) text editor, will create it if it doesn&#39;t exist</span></a>
+<a class="sourceLine" id="cb1-82" title="82"><span class="fu">mv</span> <span class="op">&lt;</span>filename1<span class="op">&gt;</span> <span class="op">&lt;</span>dest<span class="op">&gt;</span>         <span class="co"># moves a file to destination, behavior will change based on &#39;dest&#39; type (dir: file is placed into dir; file: file will replace dest (tip: useful for renaming))</span></a>
+<a class="sourceLine" id="cb1-83" title="83"><span class="fu">cp</span> <span class="op">&lt;</span>filename1<span class="op">&gt;</span> <span class="op">&lt;</span>dest<span class="op">&gt;</span>         <span class="co"># copies a file</span></a>
+<a class="sourceLine" id="cb1-84" title="84"><span class="fu">rm</span> <span class="op">&lt;</span>filename<span class="op">&gt;</span>                 <span class="co"># removes a file</span></a>
+<a class="sourceLine" id="cb1-85" title="85"><span class="fu">find</span> . -name <span class="op">&lt;</span>name<span class="op">&gt;</span> <span class="op">&lt;</span>type<span class="op">&gt;</span>    <span class="co"># searches for a file or a directory in the current directory and all its sub-directories by its name</span></a>
+<a class="sourceLine" id="cb1-86" title="86"><span class="fu">diff</span> <span class="op">&lt;</span>filename1<span class="op">&gt;</span> <span class="op">&lt;</span>filename2<span class="op">&gt;</span>  <span class="co"># compares files, and shows where they differ</span></a>
+<a class="sourceLine" id="cb1-87" title="87"><span class="fu">wc</span> <span class="op">&lt;</span>filename<span class="op">&gt;</span>                 <span class="co"># tells you how many lines, words and characters there are in a file. Use -lwc (lines, word, character) to ouput only 1 of those informations</span></a>
+<a class="sourceLine" id="cb1-88" title="88"><span class="fu">sort</span> <span class="op">&lt;</span>filename<span class="op">&gt;</span>               <span class="co"># sorts the contents of a text file line by line in alphabetical order, use -n for numeric sort and -r for reversing order.</span></a>
+<a class="sourceLine" id="cb1-89" title="89"><span class="fu">sort</span> -t -k <span class="op">&lt;</span>filename<span class="op">&gt;</span>         <span class="co"># sorts the contents on specific sort key field starting from 1, using the field separator t.</span></a>
+<a class="sourceLine" id="cb1-90" title="90"><span class="fu">chmod</span> -options <span class="op">&lt;</span>filename<span class="op">&gt;</span>     <span class="co"># lets you change the read, write, and execute permissions on your files (more infos: SUID, GUID)</span></a>
+<a class="sourceLine" id="cb1-91" title="91"><span class="fu">gzip</span> <span class="op">&lt;</span>filename<span class="op">&gt;</span>               <span class="co"># compresses files using gzip algorithm</span></a>
+<a class="sourceLine" id="cb1-92" title="92"><span class="fu">gunzip</span> <span class="op">&lt;</span>filename<span class="op">&gt;</span>             <span class="co"># uncompresses files compressed by gzip</span></a>
+<a class="sourceLine" id="cb1-93" title="93"><span class="ex">gzcat</span> <span class="op">&lt;</span>filename<span class="op">&gt;</span>              <span class="co"># lets you look at gzipped file without actually having to gunzip it</span></a>
+<a class="sourceLine" id="cb1-94" title="94"><span class="fu">lpr</span> <span class="op">&lt;</span>filename<span class="op">&gt;</span>                <span class="co"># prints the file</span></a>
+<a class="sourceLine" id="cb1-95" title="95"><span class="ex">lpq</span>                           <span class="co"># checks out the printer queue</span></a>
+<a class="sourceLine" id="cb1-96" title="96"><span class="ex">lprm</span> <span class="op">&lt;</span>jobnumber<span class="op">&gt;</span>              <span class="co"># removes something from the printer queue</span></a>
+<a class="sourceLine" id="cb1-97" title="97"><span class="ex">genscript</span>                     <span class="co"># converts plain text files into postscript for printing and gives you some options for formatting</span></a>
+<a class="sourceLine" id="cb1-98" title="98"><span class="ex">dvips</span> <span class="op">&lt;</span>filename<span class="op">&gt;</span>              <span class="co"># prints .dvi files (i.e. files produced by LaTeX)</span></a>
+<a class="sourceLine" id="cb1-99" title="99"><span class="fu">grep</span> <span class="op">&lt;</span>pattern<span class="op">&gt;</span> <span class="op">&lt;</span>filenames<span class="op">&gt;</span>    <span class="co"># looks for the string in the files</span></a>
+<a class="sourceLine" id="cb1-100" title="100"><span class="fu">grep</span> -r <span class="op">&lt;</span>pattern<span class="op">&gt;</span> <span class="op">&lt;</span>dir<span class="op">&gt;</span>       <span class="co"># search recursively for pattern in directory</span></a>
+<a class="sourceLine" id="cb1-101" title="101"><span class="fu">head</span> -n file_name <span class="kw">|</span> <span class="fu">tail</span> +n   <span class="co"># Print nth line from file.</span></a>
+<a class="sourceLine" id="cb1-102" title="102"><span class="fu">head</span> -y lines.txt <span class="kw">|</span> <span class="fu">tail</span> +x   <span class="co"># want to display all the lines from x to y. This includes the xth and yth lines.</span></a>
+<a class="sourceLine" id="cb1-103" title="103"></a>
+<a class="sourceLine" id="cb1-104" title="104"><span class="co">##############################################################################</span></a>
+<a class="sourceLine" id="cb1-105" title="105"><span class="co"># DIRECTORY COMMANDS</span></a>
+<a class="sourceLine" id="cb1-106" title="106"><span class="co">##############################################################################</span></a>
+<a class="sourceLine" id="cb1-107" title="107"></a>
+<a class="sourceLine" id="cb1-108" title="108"><span class="fu">mkdir</span> <span class="op">&lt;</span>dirname<span class="op">&gt;</span>               <span class="co"># makes a new directory</span></a>
+<a class="sourceLine" id="cb1-109" title="109"><span class="fu">rmdir</span> <span class="op">&lt;</span>dirname<span class="op">&gt;</span>               <span class="co"># remove an empty directory</span></a>
+<a class="sourceLine" id="cb1-110" title="110"><span class="fu">rmdir</span> -rf <span class="op">&lt;</span>dirname<span class="op">&gt;</span>           <span class="co"># remove a non-empty directory</span></a>
+<a class="sourceLine" id="cb1-111" title="111"><span class="fu">mv</span> <span class="op">&lt;</span>dir1<span class="op">&gt;</span> <span class="op">&lt;</span>dir2<span class="op">&gt;</span>              <span class="co"># rename a directory from &lt;dir1&gt; to &lt;dir2&gt;</span></a>
+<a class="sourceLine" id="cb1-112" title="112"><span class="bu">cd</span>                            <span class="co"># changes to home</span></a>
+<a class="sourceLine" id="cb1-113" title="113"><span class="bu">cd</span> ..                         <span class="co"># changes to the parent directory</span></a>
+<a class="sourceLine" id="cb1-114" title="114"><span class="bu">cd</span> <span class="op">&lt;</span>dirname<span class="op">&gt;</span>                  <span class="co"># changes directory</span></a>
+<a class="sourceLine" id="cb1-115" title="115"><span class="fu">cp</span> -r <span class="op">&lt;</span>dir1<span class="op">&gt;</span> <span class="op">&lt;</span>dir2<span class="op">&gt;</span>           <span class="co"># copy &lt;dir1&gt; into &lt;dir2&gt; including sub-directories</span></a>
+<a class="sourceLine" id="cb1-116" title="116"><span class="bu">pwd</span>                           <span class="co"># tells you where you currently are</span></a>
+<a class="sourceLine" id="cb1-117" title="117"><span class="bu">cd</span> ~                          <span class="co"># changes to home.</span></a>
+<a class="sourceLine" id="cb1-118" title="118"></a>
+<a class="sourceLine" id="cb1-119" title="119"><span class="co">##############################################################################</span></a>
+<a class="sourceLine" id="cb1-120" title="120"><span class="co"># SSH, SYSTEM INFO &amp; NETWORK COMMANDS</span></a>
+<a class="sourceLine" id="cb1-121" title="121"><span class="co">##############################################################################</span></a>
+<a class="sourceLine" id="cb1-122" title="122"></a>
+<a class="sourceLine" id="cb1-123" title="123"><span class="fu">ssh</span> user@host            <span class="co"># connects to host as user</span></a>
+<a class="sourceLine" id="cb1-124" title="124"><span class="fu">ssh</span> -p <span class="op">&lt;</span>port<span class="op">&gt;</span> user@host  <span class="co"># connects to host on specified port as user</span></a>
+<a class="sourceLine" id="cb1-125" title="125"><span class="ex">ssh-copy-id</span> user@host    <span class="co"># adds your ssh key to host for user to enable a keyed or passwordless login</span></a>
+<a class="sourceLine" id="cb1-126" title="126"></a>
+<a class="sourceLine" id="cb1-127" title="127"><span class="fu">whoami</span>                   <span class="co"># returns your username</span></a>
+<a class="sourceLine" id="cb1-128" title="128"><span class="fu">passwd</span>                   <span class="co"># lets you change your password</span></a>
+<a class="sourceLine" id="cb1-129" title="129"><span class="ex">quota</span> -v                 <span class="co"># shows what your disk quota is</span></a>
+<a class="sourceLine" id="cb1-130" title="130"><span class="fu">date</span>                     <span class="co"># shows the current date and time</span></a>
+<a class="sourceLine" id="cb1-131" title="131"><span class="fu">cal</span>                      <span class="co"># shows the month&#39;s calendar</span></a>
+<a class="sourceLine" id="cb1-132" title="132"><span class="fu">uptime</span>                   <span class="co"># shows current uptime</span></a>
+<a class="sourceLine" id="cb1-133" title="133"><span class="fu">w</span>                        <span class="co"># displays whois online</span></a>
+<a class="sourceLine" id="cb1-134" title="134"><span class="ex">finger</span> <span class="op">&lt;</span>user<span class="op">&gt;</span>            <span class="co"># displays information about user</span></a>
+<a class="sourceLine" id="cb1-135" title="135"><span class="fu">uname</span> -a                 <span class="co"># shows kernel information</span></a>
+<a class="sourceLine" id="cb1-136" title="136"><span class="fu">man</span> <span class="op">&lt;</span>command<span class="op">&gt;</span>            <span class="co"># shows the manual for specified command</span></a>
+<a class="sourceLine" id="cb1-137" title="137"><span class="fu">df</span>                       <span class="co"># shows disk usage</span></a>
+<a class="sourceLine" id="cb1-138" title="138"><span class="fu">du</span> <span class="op">&lt;</span>filename<span class="op">&gt;</span>            <span class="co"># shows the disk usage of the files and directories in filename (du -s give only a total)</span></a>
+<a class="sourceLine" id="cb1-139" title="139"><span class="fu">last</span> <span class="op">&lt;</span>yourUsername<span class="op">&gt;</span>      <span class="co"># lists your last logins</span></a>
+<a class="sourceLine" id="cb1-140" title="140"><span class="fu">ps</span> -u yourusername       <span class="co"># lists your processes</span></a>
+<a class="sourceLine" id="cb1-141" title="141"><span class="bu">kill</span> <span class="op">&lt;</span>PID<span class="op">&gt;</span>               <span class="co"># kills the processes with the ID you gave</span></a>
+<a class="sourceLine" id="cb1-142" title="142"><span class="fu">killall</span> <span class="op">&lt;</span>processname<span class="op">&gt;</span>    <span class="co"># kill all processes with the name</span></a>
+<a class="sourceLine" id="cb1-143" title="143"><span class="ex">top</span>                      <span class="co"># displays your currently active processes</span></a>
+<a class="sourceLine" id="cb1-144" title="144"><span class="ex">lsof</span>                     <span class="co"># lists open files</span></a>
+<a class="sourceLine" id="cb1-145" title="145"><span class="bu">bg</span>                       <span class="co"># lists stopped or background jobs ; resume a stopped job in the background</span></a>
+<a class="sourceLine" id="cb1-146" title="146"><span class="bu">fg</span>                       <span class="co"># brings the most recent job in the foreground</span></a>
+<a class="sourceLine" id="cb1-147" title="147"><span class="bu">fg</span> <span class="op">&lt;</span>job<span class="op">&gt;</span>                 <span class="co"># brings job to the foreground</span></a>
+<a class="sourceLine" id="cb1-148" title="148"></a>
+<a class="sourceLine" id="cb1-149" title="149"><span class="fu">ping</span> <span class="op">&lt;</span>host<span class="op">&gt;</span>              <span class="co"># pings host and outputs results</span></a>
+<a class="sourceLine" id="cb1-150" title="150"><span class="ex">whois</span> <span class="op">&lt;</span>domain<span class="op">&gt;</span>           <span class="co"># gets whois information for domain</span></a>
+<a class="sourceLine" id="cb1-151" title="151"><span class="ex">dig</span> <span class="op">&lt;</span>domain<span class="op">&gt;</span>             <span class="co"># gets DNS information for domain</span></a>
+<a class="sourceLine" id="cb1-152" title="152"><span class="ex">dig</span> -x <span class="op">&lt;</span>host<span class="op">&gt;</span>            <span class="co"># reverses lookup host</span></a>
+<a class="sourceLine" id="cb1-153" title="153"><span class="fu">wget</span> <span class="op">&lt;</span>file<span class="op">&gt;</span>              <span class="co"># downloads file</span></a>
+<a class="sourceLine" id="cb1-154" title="154"></a>
+<a class="sourceLine" id="cb1-155" title="155"><span class="co">##############################################################################</span></a>
+<a class="sourceLine" id="cb1-156" title="156"><span class="co"># VARIABLES</span></a>
+<a class="sourceLine" id="cb1-157" title="157"><span class="co">##############################################################################</span></a>
+<a class="sourceLine" id="cb1-158" title="158"></a>
+<a class="sourceLine" id="cb1-159" title="159"><span class="va">varname=</span>value                <span class="co"># defines a variable</span></a>
+<a class="sourceLine" id="cb1-160" title="160"><span class="va">varname=</span>value <span class="bu">command</span>        <span class="co"># defines a variable to be in the environment of a particular subprocess</span></a>
+<a class="sourceLine" id="cb1-161" title="161"><span class="bu">echo</span> <span class="va">$varname</span>                <span class="co"># checks a variable&#39;s value</span></a>
+<a class="sourceLine" id="cb1-162" title="162"><span class="bu">echo</span> <span class="va">$$</span>                      <span class="co"># prints process ID of the current shell</span></a>
+<a class="sourceLine" id="cb1-163" title="163"><span class="bu">echo</span> <span class="va">$!</span>                      <span class="co"># prints process ID of the most recently invoked background job</span></a>
+<a class="sourceLine" id="cb1-164" title="164"><span class="bu">echo</span> <span class="va">$?</span>                      <span class="co"># displays the exit status of the last command</span></a>
+<a class="sourceLine" id="cb1-165" title="165"><span class="bu">read</span> <span class="op">&lt;</span><span class="ex">varname</span><span class="op">&gt;</span>               <span class="co"># reads a string from the input and assigns it to a variable</span></a>
+<a class="sourceLine" id="cb1-166" title="166"><span class="bu">let</span> <span class="op">&lt;</span>varname<span class="op">&gt;</span> = <span class="op">&lt;</span>equation<span class="op">&gt;</span>   <span class="co"># performs mathematical calculation using operators like +, -, *, /, %</span></a>
+<a class="sourceLine" id="cb1-167" title="167"><span class="bu">export</span> <span class="va">VARNAME=</span>value         <span class="co"># defines an environment variable (will be available in subprocesses)</span></a>
+<a class="sourceLine" id="cb1-168" title="168"></a>
+<a class="sourceLine" id="cb1-169" title="169"><span class="va">array[0]=</span>valA                <span class="co"># how to define an array</span></a>
+<a class="sourceLine" id="cb1-170" title="170"><span class="va">array[1]=</span>valB</a>
+<a class="sourceLine" id="cb1-171" title="171"><span class="va">array[2]=</span>valC</a>
+<a class="sourceLine" id="cb1-172" title="172"><span class="va">array=([2]=</span>valC <span class="va">[0]=</span>valA <span class="va">[1]=</span>valB<span class="va">)</span>  <span class="co"># another way</span></a>
+<a class="sourceLine" id="cb1-173" title="173"><span class="va">array=(</span>valA valB valC<span class="va">)</span>              <span class="co"># and another</span></a>
+<a class="sourceLine" id="cb1-174" title="174"></a>
+<a class="sourceLine" id="cb1-175" title="175"><span class="va">${array[i]}</span>                  <span class="co"># displays array&#39;s value for this index. If no index is supplied, array element 0 is assumed</span></a>
+<a class="sourceLine" id="cb1-176" title="176">$<span class="dt">{#array[i]}</span>                 <span class="co"># to find out the length of any element in the array</span></a>
+<a class="sourceLine" id="cb1-177" title="177"><span class="va">${#array[@]}</span>                 <span class="co"># to find out how many values there are in the array</span></a>
+<a class="sourceLine" id="cb1-178" title="178"></a>
+<a class="sourceLine" id="cb1-179" title="179"><span class="bu">declare</span> -a                   <span class="co"># the variables are treated as arrays</span></a>
+<a class="sourceLine" id="cb1-180" title="180"><span class="bu">declare</span> -f                   <span class="co"># uses function names only</span></a>
+<a class="sourceLine" id="cb1-181" title="181"><span class="bu">declare</span> -F                   <span class="co"># displays function names without definitions</span></a>
+<a class="sourceLine" id="cb1-182" title="182"><span class="bu">declare</span> -i                   <span class="co"># the variables are treated as integers</span></a>
+<a class="sourceLine" id="cb1-183" title="183"><span class="bu">declare</span> -r                   <span class="co"># makes the variables read-only</span></a>
+<a class="sourceLine" id="cb1-184" title="184"><span class="bu">declare</span> -x                   <span class="co"># marks the variables for export via the environment</span></a>
+<a class="sourceLine" id="cb1-185" title="185"></a>
+<a class="sourceLine" id="cb1-186" title="186"><span class="va">${varname:-</span>word<span class="va">}</span>             <span class="co"># if varname exists and isn&#39;t null, return its value; otherwise return word</span></a>
+<a class="sourceLine" id="cb1-187" title="187"><span class="va">${varname:=</span>word<span class="va">}</span>             <span class="co"># if varname exists and isn&#39;t null, return its value; otherwise set it word and then return its value</span></a>
+<a class="sourceLine" id="cb1-188" title="188"><span class="va">${varname:?</span>message<span class="va">}</span>          <span class="co"># if varname exists and isn&#39;t null, return its value; otherwise print varname, followed by message and abort the current command or script</span></a>
+<a class="sourceLine" id="cb1-189" title="189"><span class="va">${varname:+</span>word<span class="va">}</span>             <span class="co"># if varname exists and isn&#39;t null, return word; otherwise return null</span></a>
+<a class="sourceLine" id="cb1-190" title="190"><span class="va">${varname:offset:length}</span>     <span class="co"># performs substring expansion. It returns the substring of $varname starting at offset and up to length characters</span></a>
+<a class="sourceLine" id="cb1-191" title="191"></a>
+<a class="sourceLine" id="cb1-192" title="192"><span class="va">${variable#</span>pattern<span class="va">}</span>          <span class="co"># if the pattern matches the beginning of the variable&#39;s value, delete the shortest part that matches and return the rest</span></a>
+<a class="sourceLine" id="cb1-193" title="193"><span class="va">${variable##</span>pattern<span class="va">}</span>         <span class="co"># if the pattern matches the beginning of the variable&#39;s value, delete the longest part that matches and return the rest</span></a>
+<a class="sourceLine" id="cb1-194" title="194"><span class="va">${variable%</span>pattern<span class="va">}</span>          <span class="co"># if the pattern matches the end of the variable&#39;s value, delete the shortest part that matches and return the rest</span></a>
+<a class="sourceLine" id="cb1-195" title="195"><span class="va">${variable%%</span>pattern<span class="va">}</span>         <span class="co"># if the pattern matches the end of the variable&#39;s value, delete the longest part that matches and return the rest</span></a>
+<a class="sourceLine" id="cb1-196" title="196"><span class="va">${variable/</span>pattern<span class="va">/</span>string<span class="va">}</span>   <span class="co"># the longest match to pattern in variable is replaced by string. Only the first match is replaced</span></a>
+<a class="sourceLine" id="cb1-197" title="197"><span class="va">${variable//</span>pattern<span class="va">/</span>string<span class="va">}</span>  <span class="co"># the longest match to pattern in variable is replaced by string. All matches are replaced</span></a>
+<a class="sourceLine" id="cb1-198" title="198"></a>
+<a class="sourceLine" id="cb1-199" title="199"><span class="va">${#varname}</span>                  <span class="co"># returns the length of the value of the variable as a character string</span></a>
+<a class="sourceLine" id="cb1-200" title="200"></a>
+<a class="sourceLine" id="cb1-201" title="201"><span class="ex">*</span>(patternlist)               <span class="co"># matches zero or more occurrences of the given patterns</span></a>
+<a class="sourceLine" id="cb1-202" title="202"><span class="ex">+</span>(patternlist)               <span class="co"># matches one or more occurrences of the given patterns</span></a>
+<a class="sourceLine" id="cb1-203" title="203"><span class="ex">?</span>(patternlist)               <span class="co"># matches zero or one occurrence of the given patterns</span></a>
+<a class="sourceLine" id="cb1-204" title="204"><span class="ex">@</span>(patternlist)               <span class="co"># matches exactly one of the given patterns</span></a>
+<a class="sourceLine" id="cb1-205" title="205">!<span class="kw">(</span><span class="ex">patternlist</span><span class="kw">)</span>               <span class="co"># matches anything except one of the given patterns</span></a>
+<a class="sourceLine" id="cb1-206" title="206"></a>
+<a class="sourceLine" id="cb1-207" title="207"><span class="va">$(</span><span class="ex">UNIX</span> command<span class="va">)</span>              <span class="co"># command substitution: runs the command and returns standard output</span></a>
+<a class="sourceLine" id="cb1-208" title="208"></a>
+<a class="sourceLine" id="cb1-209" title="209"><span class="co">##############################################################################</span></a>
+<a class="sourceLine" id="cb1-210" title="210"><span class="co"># FUNCTIONS</span></a>
+<a class="sourceLine" id="cb1-211" title="211"><span class="co">##############################################################################</span></a>
+<a class="sourceLine" id="cb1-212" title="212"></a>
+<a class="sourceLine" id="cb1-213" title="213"><span class="co"># The function refers to passed arguments by position (as if they were positional parameters), that is, $1, $2, and so forth.</span></a>
+<a class="sourceLine" id="cb1-214" title="214"><span class="co"># $@ is equal to &quot;$1&quot; &quot;$2&quot;... &quot;$N&quot;, where N is the number of positional parameters. $# holds the number of positional parameters.</span></a>
+<a class="sourceLine" id="cb1-215" title="215"></a>
+<a class="sourceLine" id="cb1-216" title="216"><span class="kw">function</span><span class="fu"> functname()</span> <span class="kw">{</span></a>
+<a class="sourceLine" id="cb1-217" title="217">  <span class="ex">shell</span> commands</a>
+<a class="sourceLine" id="cb1-218" title="218"><span class="kw">}</span></a>
+<a class="sourceLine" id="cb1-219" title="219"></a>
+<a class="sourceLine" id="cb1-220" title="220"><span class="bu">unset</span> -f <span class="va">functname</span>  <span class="co"># deletes a function definition</span></a>
+<a class="sourceLine" id="cb1-221" title="221"><span class="bu">declare</span> -f          <span class="co"># displays all defined functions in your login session</span></a>
+<a class="sourceLine" id="cb1-222" title="222"></a>
+<a class="sourceLine" id="cb1-223" title="223"><span class="co">##############################################################################</span></a>
+<a class="sourceLine" id="cb1-224" title="224"><span class="co"># FLOW CONTROLS</span></a>
+<a class="sourceLine" id="cb1-225" title="225"><span class="co">##############################################################################</span></a>
+<a class="sourceLine" id="cb1-226" title="226"></a>
+<a class="sourceLine" id="cb1-227" title="227"><span class="ex">statement1</span> <span class="kw">&amp;&amp;</span> <span class="ex">statement2</span>  <span class="co"># and operator</span></a>
+<a class="sourceLine" id="cb1-228" title="228"><span class="ex">statement1</span> <span class="kw">||</span> <span class="ex">statement2</span>  <span class="co"># or operator</span></a>
+<a class="sourceLine" id="cb1-229" title="229"></a>
+<a class="sourceLine" id="cb1-230" title="230"><span class="ex">-a</span>                        <span class="co"># and operator inside a test conditional expression</span></a>
+<a class="sourceLine" id="cb1-231" title="231"><span class="ex">-o</span>                        <span class="co"># or operator inside a test conditional expression</span></a>
+<a class="sourceLine" id="cb1-232" title="232"></a>
+<a class="sourceLine" id="cb1-233" title="233"><span class="co"># STRINGS</span></a>
+<a class="sourceLine" id="cb1-234" title="234"></a>
+<a class="sourceLine" id="cb1-235" title="235"><span class="ex">str1</span> == str2               <span class="co"># str1 matches str2</span></a>
+<a class="sourceLine" id="cb1-236" title="236"><span class="ex">str1</span> != str2               <span class="co"># str1 does not match str2</span></a>
+<a class="sourceLine" id="cb1-237" title="237"><span class="ex">str1</span> <span class="op">&lt;</span> str2                <span class="co"># str1 is less than str2 (alphabetically)</span></a>
+<a class="sourceLine" id="cb1-238" title="238"><span class="ex">str1</span> <span class="op">&gt;</span> str2                <span class="co"># str1 is greater than str2 (alphabetically)</span></a>
+<a class="sourceLine" id="cb1-239" title="239"><span class="ex">str1</span> <span class="dt">\&gt;</span> str2               <span class="co"># str1 is sorted after str2</span></a>
+<a class="sourceLine" id="cb1-240" title="240"><span class="ex">str1</span> <span class="dt">\&lt;</span> str2               <span class="co"># str1 is sorted before str2</span></a>
+<a class="sourceLine" id="cb1-241" title="241"><span class="ex">-n</span> str1                    <span class="co"># str1 is not null (has length greater than 0)</span></a>
+<a class="sourceLine" id="cb1-242" title="242"><span class="ex">-z</span> str1                    <span class="co"># str1 is null (has length 0)</span></a>
+<a class="sourceLine" id="cb1-243" title="243"></a>
+<a class="sourceLine" id="cb1-244" title="244"><span class="co"># FILES</span></a>
+<a class="sourceLine" id="cb1-245" title="245"></a>
+<a class="sourceLine" id="cb1-246" title="246"><span class="ex">-a</span> file                   <span class="co"># file exists or its compilation is successful</span></a>
+<a class="sourceLine" id="cb1-247" title="247"><span class="ex">-d</span> file                   <span class="co"># file exists and is a directory</span></a>
+<a class="sourceLine" id="cb1-248" title="248"><span class="ex">-e</span> file                   <span class="co"># file exists; same -a</span></a>
+<a class="sourceLine" id="cb1-249" title="249"><span class="ex">-f</span> file                   <span class="co"># file exists and is a regular file (i.e., not a directory or other special type of file)</span></a>
+<a class="sourceLine" id="cb1-250" title="250"><span class="ex">-r</span> file                   <span class="co"># you have read permission</span></a>
+<a class="sourceLine" id="cb1-251" title="251"><span class="ex">-s</span> file                   <span class="co"># file exists and is not empty</span></a>
+<a class="sourceLine" id="cb1-252" title="252"><span class="ex">-w</span> file                   <span class="co"># your have write permission</span></a>
+<a class="sourceLine" id="cb1-253" title="253"><span class="ex">-x</span> file                   <span class="co"># you have execute permission on file, or directory search permission if it is a directory</span></a>
+<a class="sourceLine" id="cb1-254" title="254"><span class="ex">-N</span> file                   <span class="co"># file was modified since it was last read</span></a>
+<a class="sourceLine" id="cb1-255" title="255"><span class="ex">-O</span> file                   <span class="co"># you own file</span></a>
+<a class="sourceLine" id="cb1-256" title="256"><span class="ex">-G</span> file                   <span class="co"># file&#39;s group ID matches yours (or one of yours, if you are in multiple groups)</span></a>
+<a class="sourceLine" id="cb1-257" title="257"><span class="ex">file1</span> -nt file2           <span class="co"># file1 is newer than file2</span></a>
+<a class="sourceLine" id="cb1-258" title="258"><span class="ex">file1</span> -ot file2           <span class="co"># file1 is older than file2</span></a>
+<a class="sourceLine" id="cb1-259" title="259"></a>
+<a class="sourceLine" id="cb1-260" title="260"><span class="co"># NUMBERS</span></a>
+<a class="sourceLine" id="cb1-261" title="261"></a>
+<a class="sourceLine" id="cb1-262" title="262"><span class="ex">-lt</span>                       <span class="co"># less than</span></a>
+<a class="sourceLine" id="cb1-263" title="263"><span class="ex">-le</span>                       <span class="co"># less than or equal</span></a>
+<a class="sourceLine" id="cb1-264" title="264"><span class="ex">-eq</span>                       <span class="co"># equal</span></a>
+<a class="sourceLine" id="cb1-265" title="265"><span class="ex">-ge</span>                       <span class="co"># greater than or equal</span></a>
+<a class="sourceLine" id="cb1-266" title="266"><span class="ex">-gt</span>                       <span class="co"># greater than</span></a>
+<a class="sourceLine" id="cb1-267" title="267"><span class="ex">-ne</span>                       <span class="co"># not equal</span></a>
+<a class="sourceLine" id="cb1-268" title="268"></a>
+<a class="sourceLine" id="cb1-269" title="269"><span class="kw">if</span> <span class="ex">condition</span></a>
+<a class="sourceLine" id="cb1-270" title="270"><span class="kw">then</span></a>
+<a class="sourceLine" id="cb1-271" title="271">  <span class="ex">statements</span></a>
+<a class="sourceLine" id="cb1-272" title="272">[<span class="ex">elif</span> condition</a>
+<a class="sourceLine" id="cb1-273" title="273">  <span class="kw">then</span> <span class="ex">statements...</span>]</a>
+<a class="sourceLine" id="cb1-274" title="274">[<span class="ex">else</span></a>
+<a class="sourceLine" id="cb1-275" title="275">  <span class="ex">statements</span>]</a>
+<a class="sourceLine" id="cb1-276" title="276"><span class="kw">fi</span></a>
+<a class="sourceLine" id="cb1-277" title="277"></a>
+<a class="sourceLine" id="cb1-278" title="278"><span class="kw">for</span> <span class="ex">x</span> in <span class="dt">{1..10}</span></a>
+<a class="sourceLine" id="cb1-279" title="279"><span class="kw">do</span></a>
+<a class="sourceLine" id="cb1-280" title="280">  <span class="ex">statements</span></a>
+<a class="sourceLine" id="cb1-281" title="281"><span class="kw">done</span></a>
+<a class="sourceLine" id="cb1-282" title="282"></a>
+<a class="sourceLine" id="cb1-283" title="283"><span class="kw">for</span> <span class="ex">name</span> [in list]</a>
+<a class="sourceLine" id="cb1-284" title="284"><span class="kw">do</span></a>
+<a class="sourceLine" id="cb1-285" title="285">  <span class="ex">statements</span> that can use <span class="va">$name</span></a>
+<a class="sourceLine" id="cb1-286" title="286"><span class="kw">done</span></a>
+<a class="sourceLine" id="cb1-287" title="287"></a>
+<a class="sourceLine" id="cb1-288" title="288"><span class="kw">for</span> <span class="kw">((</span> initialisation ; ending condition ; update <span class="kw">))</span></a>
+<a class="sourceLine" id="cb1-289" title="289"><span class="kw">do</span></a>
+<a class="sourceLine" id="cb1-290" title="290">  <span class="ex">statements...</span></a>
+<a class="sourceLine" id="cb1-291" title="291"><span class="kw">done</span></a>
+<a class="sourceLine" id="cb1-292" title="292"></a>
+<a class="sourceLine" id="cb1-293" title="293"><span class="kw">case</span> expression<span class="kw"> in</span></a>
+<a class="sourceLine" id="cb1-294" title="294">  pattern1 <span class="kw">)</span></a>
+<a class="sourceLine" id="cb1-295" title="295">    <span class="ex">statements</span> <span class="kw">;;</span></a>
+<a class="sourceLine" id="cb1-296" title="296">  <span class="ex">pattern2</span> )</a>
+<a class="sourceLine" id="cb1-297" title="297">    <span class="ex">statements</span> <span class="kw">;;</span></a>
+<a class="sourceLine" id="cb1-298" title="298"><span class="kw">esac</span></a>
+<a class="sourceLine" id="cb1-299" title="299"></a>
+<a class="sourceLine" id="cb1-300" title="300"><span class="kw">select</span> <span class="ex">name</span> [in list]</a>
+<a class="sourceLine" id="cb1-301" title="301"><span class="kw">do</span></a>
+<a class="sourceLine" id="cb1-302" title="302">  <span class="ex">statements</span> that can use <span class="va">$name</span></a>
+<a class="sourceLine" id="cb1-303" title="303"><span class="kw">done</span></a>
+<a class="sourceLine" id="cb1-304" title="304"></a>
+<a class="sourceLine" id="cb1-305" title="305"><span class="kw">while</span> <span class="ex">condition</span><span class="kw">;</span> <span class="kw">do</span></a>
+<a class="sourceLine" id="cb1-306" title="306">  <span class="ex">statements</span></a>
+<a class="sourceLine" id="cb1-307" title="307"><span class="kw">done</span></a>
+<a class="sourceLine" id="cb1-308" title="308"></a>
+<a class="sourceLine" id="cb1-309" title="309"><span class="kw">until</span> <span class="ex">condition</span><span class="kw">;</span> <span class="kw">do</span></a>
+<a class="sourceLine" id="cb1-310" title="310">  <span class="ex">statements</span></a>
+<a class="sourceLine" id="cb1-311" title="311"><span class="kw">done</span></a>
+<a class="sourceLine" id="cb1-312" title="312"></a>
+<a class="sourceLine" id="cb1-313" title="313"><span class="co">##############################################################################</span></a>
+<a class="sourceLine" id="cb1-314" title="314"><span class="co"># COMMAND-LINE PROCESSING CYCLE</span></a>
+<a class="sourceLine" id="cb1-315" title="315"><span class="co">##############################################################################</span></a>
+<a class="sourceLine" id="cb1-316" title="316"></a>
+<a class="sourceLine" id="cb1-317" title="317"><span class="co"># The default order for command lookup is functions, followed by built-ins, with scripts and executables last.</span></a>
+<a class="sourceLine" id="cb1-318" title="318"><span class="co"># There are three built-ins that you can use to override this order: `command`, `builtin` and `enable`.</span></a>
+<a class="sourceLine" id="cb1-319" title="319"></a>
+<a class="sourceLine" id="cb1-320" title="320"><span class="bu">command</span>  <span class="co"># removes alias and function lookup. Only built-ins and commands found in the search path are executed</span></a>
+<a class="sourceLine" id="cb1-321" title="321"><span class="bu">builtin</span>  <span class="co"># looks up only built-in commands, ignoring functions and commands found in PATH</span></a>
+<a class="sourceLine" id="cb1-322" title="322"><span class="bu">enable</span>   <span class="co"># enables and disables shell built-ins</span></a>
+<a class="sourceLine" id="cb1-323" title="323"></a>
+<a class="sourceLine" id="cb1-324" title="324"><span class="bu">eval</span>     <span class="co"># takes arguments and run them through the command-line processing steps all over again</span></a>
+<a class="sourceLine" id="cb1-325" title="325"></a>
+<a class="sourceLine" id="cb1-326" title="326"><span class="co">##############################################################################</span></a>
+<a class="sourceLine" id="cb1-327" title="327"><span class="co"># INPUT/OUTPUT REDIRECTORS</span></a>
+<a class="sourceLine" id="cb1-328" title="328"><span class="co">##############################################################################</span></a>
+<a class="sourceLine" id="cb1-329" title="329"></a>
+<a class="sourceLine" id="cb1-330" title="330"><span class="ex">cmd1</span><span class="kw">|</span><span class="ex">cmd2</span>  <span class="co"># pipe; takes standard output of cmd1 as standard input to cmd2</span></a>
+<a class="sourceLine" id="cb1-331" title="331"><span class="op">&lt;</span> <span class="fu">file</span>     <span class="co"># takes standard input from file</span></a>
+<a class="sourceLine" id="cb1-332" title="332"><span class="op">&gt;</span> <span class="fu">file</span>     <span class="co"># directs standard output to file</span></a>
+<a class="sourceLine" id="cb1-333" title="333"><span class="op">&gt;&gt;</span> <span class="fu">file</span>    <span class="co"># directs standard output to file; append to file if it already exists</span></a>
+<a class="sourceLine" id="cb1-334" title="334"><span class="op">&gt;</span><span class="kw">|</span><span class="fu">file</span>     <span class="co"># forces standard output to file even if noclobber is set</span></a>
+<a class="sourceLine" id="cb1-335" title="335"><span class="ex">n</span><span class="op">&gt;</span><span class="kw">|</span><span class="fu">file</span>    <span class="co"># forces output to file from file descriptor n even if noclobber is set</span></a>
+<a class="sourceLine" id="cb1-336" title="336"><span class="op">&lt;&gt;</span> <span class="fu">file</span>    <span class="co"># uses file as both standard input and standard output</span></a>
+<a class="sourceLine" id="cb1-337" title="337"><span class="ex">n</span><span class="op">&lt;&gt;</span>file    <span class="co"># uses file as both input and output for file descriptor n</span></a>
+<a class="sourceLine" id="cb1-338" title="338"><span class="ex">n</span><span class="op">&gt;</span>file     <span class="co"># directs file descriptor n to file</span></a>
+<a class="sourceLine" id="cb1-339" title="339"><span class="ex">n</span><span class="op">&lt;</span>file     <span class="co"># takes file descriptor n from file</span></a>
+<a class="sourceLine" id="cb1-340" title="340"><span class="ex">n</span><span class="op">&gt;&gt;</span>file    <span class="co"># directs file description n to file; append to file if it already exists</span></a>
+<a class="sourceLine" id="cb1-341" title="341"><span class="ex">n</span><span class="op">&gt;</span><span class="kw">&amp;</span>        <span class="co"># duplicates standard output to file descriptor n</span></a>
+<a class="sourceLine" id="cb1-342" title="342"><span class="ex">n</span><span class="op">&lt;</span><span class="kw">&amp;</span>        <span class="co"># duplicates standard input from file descriptor n</span></a>
+<a class="sourceLine" id="cb1-343" title="343"><span class="ex">n</span><span class="op">&gt;</span><span class="kw">&amp;</span><span class="ex">m</span>       <span class="co"># file descriptor n is made to be a copy of the output file descriptor</span></a>
+<a class="sourceLine" id="cb1-344" title="344"><span class="ex">n</span><span class="op">&lt;</span><span class="kw">&amp;</span><span class="ex">m</span>       <span class="co"># file descriptor n is made to be a copy of the input file descriptor</span></a>
+<a class="sourceLine" id="cb1-345" title="345"><span class="op">&amp;&gt;</span><span class="fu">file</span>     <span class="co"># directs standard output and standard error to file</span></a>
+<a class="sourceLine" id="cb1-346" title="346"><span class="op">&lt;</span><span class="kw">&amp;</span><span class="ex">-</span>        <span class="co"># closes the standard input</span></a>
+<a class="sourceLine" id="cb1-347" title="347"><span class="op">&gt;</span><span class="kw">&amp;</span><span class="ex">-</span>        <span class="co"># closes the standard output</span></a>
+<a class="sourceLine" id="cb1-348" title="348"><span class="ex">n</span><span class="op">&gt;</span><span class="kw">&amp;</span><span class="ex">-</span>       <span class="co"># closes the ouput from file descriptor n</span></a>
+<a class="sourceLine" id="cb1-349" title="349"><span class="ex">n</span><span class="op">&lt;</span><span class="kw">&amp;</span><span class="ex">-</span>       <span class="co"># closes the input from file descripor n</span></a>
+<a class="sourceLine" id="cb1-350" title="350"></a>
+<a class="sourceLine" id="cb1-351" title="351"><span class="co">##############################################################################</span></a>
+<a class="sourceLine" id="cb1-352" title="352"><span class="co"># PROCESS HANDLING</span></a>
+<a class="sourceLine" id="cb1-353" title="353"><span class="co">##############################################################################</span></a>
+<a class="sourceLine" id="cb1-354" title="354"></a>
+<a class="sourceLine" id="cb1-355" title="355"><span class="co"># To suspend a job, type CTRL+Z while it is running. You can also suspend a job with CTRL+Y.</span></a>
+<a class="sourceLine" id="cb1-356" title="356"><span class="co"># This is slightly different from CTRL+Z in that the process is only stopped when it attempts to read input from terminal.</span></a>
+<a class="sourceLine" id="cb1-357" title="357"><span class="co"># Of course, to interrupt a job, type CTRL+C.</span></a>
+<a class="sourceLine" id="cb1-358" title="358"></a>
+<a class="sourceLine" id="cb1-359" title="359"><span class="ex">myCommand</span> <span class="kw">&amp;</span>  <span class="co"># runs job in the background and prompts back the shell</span></a>
+<a class="sourceLine" id="cb1-360" title="360"></a>
+<a class="sourceLine" id="cb1-361" title="361"><span class="bu">jobs</span>         <span class="co"># lists all jobs (use with -l to see associated PID)</span></a>
+<a class="sourceLine" id="cb1-362" title="362"></a>
+<a class="sourceLine" id="cb1-363" title="363"><span class="bu">fg</span>           <span class="co"># brings a background job into the foreground</span></a>
+<a class="sourceLine" id="cb1-364" title="364"><span class="bu">fg</span> %+        <span class="co"># brings most recently invoked background job</span></a>
+<a class="sourceLine" id="cb1-365" title="365"><span class="bu">fg</span> %-        <span class="co"># brings second most recently invoked background job</span></a>
+<a class="sourceLine" id="cb1-366" title="366"><span class="bu">fg</span> %N        <span class="co"># brings job number N</span></a>
+<a class="sourceLine" id="cb1-367" title="367"><span class="bu">fg</span> %string   <span class="co"># brings job whose command begins with string</span></a>
+<a class="sourceLine" id="cb1-368" title="368"><span class="bu">fg</span> %?string  <span class="co"># brings job whose command contains string</span></a>
+<a class="sourceLine" id="cb1-369" title="369"></a>
+<a class="sourceLine" id="cb1-370" title="370"><span class="bu">kill</span> -l               <span class="co"># returns a list of all signals on the system, by name and number</span></a>
+<a class="sourceLine" id="cb1-371" title="371"><span class="bu">kill</span> PID              <span class="co"># terminates process with specified PID</span></a>
+<a class="sourceLine" id="cb1-372" title="372"><span class="bu">kill</span> -s SIGKILL 4500  <span class="co"># sends a signal to force or terminate the process</span></a>
+<a class="sourceLine" id="cb1-373" title="373"><span class="bu">kill</span> -15 913          <span class="co"># Ending PID 913 process with signal 15 (TERM)</span></a>
+<a class="sourceLine" id="cb1-374" title="374"><span class="bu">kill</span> %1               <span class="co"># Where %1 is the number of job as read from &#39;jobs&#39; command.</span></a>
+<a class="sourceLine" id="cb1-375" title="375"></a>
+<a class="sourceLine" id="cb1-376" title="376"><span class="fu">ps</span>           <span class="co"># prints a line of information about the current running login shell and any processes running under it</span></a>
+<a class="sourceLine" id="cb1-377" title="377"><span class="fu">ps</span> -a        <span class="co"># selects all processes with a tty except session leaders</span></a>
+<a class="sourceLine" id="cb1-378" title="378"></a>
+<a class="sourceLine" id="cb1-379" title="379"><span class="bu">trap</span> cmd sig1 sig2  <span class="co"># executes a command when a signal is received by the script</span></a>
+<a class="sourceLine" id="cb1-380" title="380"><span class="bu">trap</span> <span class="st">&quot;&quot;</span> sig1 sig2   <span class="co"># ignores that signals</span></a>
+<a class="sourceLine" id="cb1-381" title="381"><span class="bu">trap</span> - sig1 sig2    <span class="co"># resets the action taken when the signal is received to the default</span></a>
+<a class="sourceLine" id="cb1-382" title="382"></a>
+<a class="sourceLine" id="cb1-383" title="383"><span class="bu">disown</span> <span class="op">&lt;</span>PID<span class="kw">|</span><span class="ex">JID</span><span class="op">&gt;</span>    <span class="co"># removes the process from the list of jobs</span></a>
+<a class="sourceLine" id="cb1-384" title="384"></a>
+<a class="sourceLine" id="cb1-385" title="385"><span class="bu">wait</span>                <span class="co"># waits until all background jobs have finished</span></a>
+<a class="sourceLine" id="cb1-386" title="386"></a>
+<a class="sourceLine" id="cb1-387" title="387"><span class="co">##############################################################################</span></a>
+<a class="sourceLine" id="cb1-388" title="388"><span class="co"># TIPS &amp; TRICKS</span></a>
+<a class="sourceLine" id="cb1-389" title="389"><span class="co">##############################################################################</span></a>
+<a class="sourceLine" id="cb1-390" title="390"></a>
+<a class="sourceLine" id="cb1-391" title="391"><span class="co"># set an alias</span></a>
+<a class="sourceLine" id="cb1-392" title="392"><span class="bu">cd</span><span class="kw">;</span> <span class="fu">nano</span> .bash_profile</a>
+<a class="sourceLine" id="cb1-393" title="393"><span class="op">&gt;</span> <span class="bu">alias</span> gentlenode=<span class="st">&#39;ssh admin@gentlenode.com -p 3404&#39;</span>  <span class="co"># add your alias in .bash_profile</span></a>
+<a class="sourceLine" id="cb1-394" title="394"></a>
+<a class="sourceLine" id="cb1-395" title="395"><span class="co"># to quickly go to a specific directory</span></a>
+<a class="sourceLine" id="cb1-396" title="396"><span class="bu">cd</span><span class="kw">;</span> <span class="fu">nano</span> .bashrc</a>
+<a class="sourceLine" id="cb1-397" title="397"><span class="op">&gt;</span> <span class="bu">shopt</span> -s cdable_vars</a>
+<a class="sourceLine" id="cb1-398" title="398"><span class="op">&gt;</span> <span class="bu">export</span> <span class="va">websites=</span><span class="st">&quot;/Users/mac/Documents/websites&quot;</span></a>
+<a class="sourceLine" id="cb1-399" title="399"></a>
+<a class="sourceLine" id="cb1-400" title="400"><span class="bu">source</span> .bashrc</a>
+<a class="sourceLine" id="cb1-401" title="401"><span class="bu">cd</span> <span class="va">$websites</span></a>
+<a class="sourceLine" id="cb1-402" title="402"></a>
+<a class="sourceLine" id="cb1-403" title="403"><span class="co">##############################################################################</span></a>
+<a class="sourceLine" id="cb1-404" title="404"><span class="co"># DEBUGGING SHELL PROGRAMS</span></a>
+<a class="sourceLine" id="cb1-405" title="405"><span class="co">##############################################################################</span></a>
+<a class="sourceLine" id="cb1-406" title="406"></a>
+<a class="sourceLine" id="cb1-407" title="407"><span class="fu">bash</span> -n scriptname  <span class="co"># don&#39;t run commands; check for syntax errors only</span></a>
+<a class="sourceLine" id="cb1-408" title="408"><span class="kw">set</span> <span class="ex">-o</span> noexec       <span class="co"># alternative (set option in script)</span></a>
+<a class="sourceLine" id="cb1-409" title="409"></a>
+<a class="sourceLine" id="cb1-410" title="410"><span class="fu">bash</span> -v scriptname  <span class="co"># echo commands before running them</span></a>
+<a class="sourceLine" id="cb1-411" title="411"><span class="kw">set</span> <span class="ex">-o</span> verbose      <span class="co"># alternative (set option in script)</span></a>
+<a class="sourceLine" id="cb1-412" title="412"></a>
+<a class="sourceLine" id="cb1-413" title="413"><span class="fu">bash</span> -x scriptname  <span class="co"># echo commands after command-line processing</span></a>
+<a class="sourceLine" id="cb1-414" title="414"><span class="kw">set</span> <span class="ex">-o</span> xtrace       <span class="co"># alternative (set option in script)</span></a>
+<a class="sourceLine" id="cb1-415" title="415"></a>
+<a class="sourceLine" id="cb1-416" title="416"><span class="bu">trap</span> <span class="st">&#39;echo $varname&#39;</span> EXIT  <span class="co"># useful when you want to print out the values of variables at the point that your script exits</span></a>
+<a class="sourceLine" id="cb1-417" title="417"></a>
+<a class="sourceLine" id="cb1-418" title="418"><span class="kw">function</span><span class="fu"> errtrap</span> <span class="kw">{</span></a>
+<a class="sourceLine" id="cb1-419" title="419">  <span class="va">es=$?</span></a>
+<a class="sourceLine" id="cb1-420" title="420">  <span class="bu">echo</span> <span class="st">&quot;ERROR line </span><span class="va">$1</span><span class="st">: Command exited with status </span><span class="va">$es</span><span class="st">.&quot;</span></a>
+<a class="sourceLine" id="cb1-421" title="421"><span class="kw">}</span></a>
+<a class="sourceLine" id="cb1-422" title="422"></a>
+<a class="sourceLine" id="cb1-423" title="423"><span class="bu">trap</span> <span class="st">&#39;errtrap $LINENO&#39;</span> ERR  <span class="co"># is run whenever a command in the surrounding script or function exits with non-zero status</span></a>
+<a class="sourceLine" id="cb1-424" title="424"></a>
+<a class="sourceLine" id="cb1-425" title="425"><span class="kw">function</span><span class="fu"> dbgtrap</span> <span class="kw">{</span></a>
+<a class="sourceLine" id="cb1-426" title="426">  <span class="bu">echo</span> <span class="st">&quot;badvar is </span><span class="va">$badvar</span><span class="st">&quot;</span></a>
+<a class="sourceLine" id="cb1-427" title="427"><span class="kw">}</span></a>
+<a class="sourceLine" id="cb1-428" title="428"></a>
+<a class="sourceLine" id="cb1-429" title="429"><span class="bu">trap</span> dbgtrap DEBUG  <span class="co"># causes the trap code to be executed before every statement in a function or script</span></a>
+<a class="sourceLine" id="cb1-430" title="430"><span class="co"># ...section of code in which the problem occurs...</span></a>
+<a class="sourceLine" id="cb1-431" title="431"><span class="bu">trap</span> - DEBUG  <span class="co"># turn off the DEBUG trap</span></a>
+<a class="sourceLine" id="cb1-432" title="432"></a>
+<a class="sourceLine" id="cb1-433" title="433"><span class="kw">function</span><span class="fu"> returntrap</span> <span class="kw">{</span></a>
+<a class="sourceLine" id="cb1-434" title="434">  <span class="bu">echo</span> <span class="st">&quot;A return occurred&quot;</span></a>
+<a class="sourceLine" id="cb1-435" title="435"><span class="kw">}</span></a>
+<a class="sourceLine" id="cb1-436" title="436"></a>
+<a class="sourceLine" id="cb1-437" title="437"><span class="bu">trap</span> returntrap RETURN  <span class="co"># is executed each time a shell function or a script executed with the . or source commands finishes executing</span></a>
+<a class="sourceLine" id="cb1-438" title="438"></a>
+<a class="sourceLine" id="cb1-439" title="439"><span class="co">##############################################################################</span></a>
+<a class="sourceLine" id="cb1-440" title="440"><span class="co"># COLORS AND BACKGROUNDS</span></a>
+<a class="sourceLine" id="cb1-441" title="441"><span class="co">##############################################################################</span></a>
+<a class="sourceLine" id="cb1-442" title="442"></a>
+<a class="sourceLine" id="cb1-443" title="443"><span class="co"># Reset</span></a>
+<a class="sourceLine" id="cb1-444" title="444"><span class="va">Color_Off=</span><span class="st">&#39;\033[0m&#39;</span> <span class="co"># Text Reset</span></a>
+<a class="sourceLine" id="cb1-445" title="445"></a>
+<a class="sourceLine" id="cb1-446" title="446"><span class="co"># Regular Colors</span></a>
+<a class="sourceLine" id="cb1-447" title="447"><span class="va">Black=</span><span class="st">&#39;\033[0;30m&#39;</span>  <span class="co"># Black</span></a>
+<a class="sourceLine" id="cb1-448" title="448"><span class="va">Red=</span><span class="st">&#39;\033[0;31m&#39;</span>    <span class="co"># Red</span></a>
+<a class="sourceLine" id="cb1-449" title="449"><span class="va">Green=</span><span class="st">&#39;\033[0;32m&#39;</span>  <span class="co"># Green</span></a>
+<a class="sourceLine" id="cb1-450" title="450"><span class="va">Yellow=</span><span class="st">&#39;\033[0;33m&#39;</span> <span class="co"># Yellow</span></a>
+<a class="sourceLine" id="cb1-451" title="451"><span class="va">Blue=</span><span class="st">&#39;\033[0;34m&#39;</span>   <span class="co"># Blue</span></a>
+<a class="sourceLine" id="cb1-452" title="452"><span class="va">Purple=</span><span class="st">&#39;\033[0;35m&#39;</span> <span class="co"># Purple</span></a>
+<a class="sourceLine" id="cb1-453" title="453"><span class="va">Cyan=</span><span class="st">&#39;\033[0;36m&#39;</span>   <span class="co"># Cyan</span></a>
+<a class="sourceLine" id="cb1-454" title="454"><span class="va">White=</span><span class="st">&#39;\033[0;97m&#39;</span>  <span class="co"># White</span></a>
+<a class="sourceLine" id="cb1-455" title="455"></a>
+<a class="sourceLine" id="cb1-456" title="456"><span class="co"># Additional colors</span></a>
+<a class="sourceLine" id="cb1-457" title="457"><span class="va">LGrey=</span><span class="st">&#39;\033[0;37m&#39;</span>  <span class="co"># Ligth Gray</span></a>
+<a class="sourceLine" id="cb1-458" title="458"><span class="va">DGrey=</span><span class="st">&#39;\033[0;90m&#39;</span>  <span class="co"># Dark Gray</span></a>
+<a class="sourceLine" id="cb1-459" title="459"><span class="va">LRed=</span><span class="st">&#39;\033[0;91m&#39;</span>   <span class="co"># Ligth Red</span></a>
+<a class="sourceLine" id="cb1-460" title="460"><span class="va">LGreen=</span><span class="st">&#39;\033[0;92m&#39;</span> <span class="co"># Ligth Green</span></a>
+<a class="sourceLine" id="cb1-461" title="461"><span class="va">LYellow=</span><span class="st">&#39;\033[0;93m&#39;</span># <span class="ex">Ligth</span> Yellow</a>
+<a class="sourceLine" id="cb1-462" title="462"><span class="va">LBlue=</span><span class="st">&#39;\033[0;94m&#39;</span>  <span class="co"># Ligth Blue</span></a>
+<a class="sourceLine" id="cb1-463" title="463"><span class="va">LPurple=</span><span class="st">&#39;\033[0;95m&#39;</span># <span class="ex">Light</span> Purple</a>
+<a class="sourceLine" id="cb1-464" title="464"><span class="va">LCyan=</span><span class="st">&#39;\033[0;96m&#39;</span>  <span class="co"># Ligth Cyan</span></a>
+<a class="sourceLine" id="cb1-465" title="465"></a>
+<a class="sourceLine" id="cb1-466" title="466"><span class="co"># Bold</span></a>
+<a class="sourceLine" id="cb1-467" title="467"><span class="va">BBlack=</span><span class="st">&#39;\033[1;30m&#39;</span> <span class="co"># Black</span></a>
+<a class="sourceLine" id="cb1-468" title="468"><span class="va">BRed=</span><span class="st">&#39;\033[1;31m&#39;</span>   <span class="co"># Red</span></a>
+<a class="sourceLine" id="cb1-469" title="469"><span class="va">BGreen=</span><span class="st">&#39;\033[1;32m&#39;</span> <span class="co"># Green</span></a>
+<a class="sourceLine" id="cb1-470" title="470"><span class="va">BYellow=</span><span class="st">&#39;\033[1;33m&#39;</span># <span class="ex">Yellow</span></a>
+<a class="sourceLine" id="cb1-471" title="471"><span class="va">BBlue=</span><span class="st">&#39;\033[1;34m&#39;</span>  <span class="co"># Blue</span></a>
+<a class="sourceLine" id="cb1-472" title="472"><span class="va">BPurple=</span><span class="st">&#39;\033[1;35m&#39;</span># <span class="ex">Purple</span></a>
+<a class="sourceLine" id="cb1-473" title="473"><span class="va">BCyan=</span><span class="st">&#39;\033[1;36m&#39;</span>  <span class="co"># Cyan</span></a>
+<a class="sourceLine" id="cb1-474" title="474"><span class="va">BWhite=</span><span class="st">&#39;\033[1;37m&#39;</span> <span class="co"># White</span></a>
+<a class="sourceLine" id="cb1-475" title="475"></a>
+<a class="sourceLine" id="cb1-476" title="476"><span class="co"># Underline</span></a>
+<a class="sourceLine" id="cb1-477" title="477"><span class="va">UBlack=</span><span class="st">&#39;\033[4;30m&#39;</span> <span class="co"># Black</span></a>
+<a class="sourceLine" id="cb1-478" title="478"><span class="va">URed=</span><span class="st">&#39;\033[4;31m&#39;</span>   <span class="co"># Red</span></a>
+<a class="sourceLine" id="cb1-479" title="479"><span class="va">UGreen=</span><span class="st">&#39;\033[4;32m&#39;</span> <span class="co"># Green</span></a>
+<a class="sourceLine" id="cb1-480" title="480"><span class="va">UYellow=</span><span class="st">&#39;\033[4;33m&#39;</span># <span class="ex">Yellow</span></a>
+<a class="sourceLine" id="cb1-481" title="481"><span class="va">UBlue=</span><span class="st">&#39;\033[4;34m&#39;</span>  <span class="co"># Blue</span></a>
+<a class="sourceLine" id="cb1-482" title="482"><span class="va">UPurple=</span><span class="st">&#39;\033[4;35m&#39;</span># <span class="ex">Purple</span></a>
+<a class="sourceLine" id="cb1-483" title="483"><span class="va">UCyan=</span><span class="st">&#39;\033[4;36m&#39;</span>  <span class="co"># Cyan</span></a>
+<a class="sourceLine" id="cb1-484" title="484"><span class="va">UWhite=</span><span class="st">&#39;\033[4;37m&#39;</span> <span class="co"># White</span></a>
+<a class="sourceLine" id="cb1-485" title="485"></a>
+<a class="sourceLine" id="cb1-486" title="486"><span class="co"># Background</span></a>
+<a class="sourceLine" id="cb1-487" title="487"><span class="va">On_Black=</span><span class="st">&#39;\033[40m&#39;</span> <span class="co"># Black</span></a>
+<a class="sourceLine" id="cb1-488" title="488"><span class="va">On_Red=</span><span class="st">&#39;\033[41m&#39;</span>   <span class="co"># Red</span></a>
+<a class="sourceLine" id="cb1-489" title="489"><span class="va">On_Green=</span><span class="st">&#39;\033[42m&#39;</span> <span class="co"># Green</span></a>
+<a class="sourceLine" id="cb1-490" title="490"><span class="va">On_Yellow=</span><span class="st">&#39;\033[43m&#39;</span># <span class="ex">Yellow</span></a>
+<a class="sourceLine" id="cb1-491" title="491"><span class="va">On_Blue=</span><span class="st">&#39;\033[44m&#39;</span>  <span class="co"># Blue</span></a>
+<a class="sourceLine" id="cb1-492" title="492"><span class="va">On_Purple=</span><span class="st">&#39;\033[45m&#39;</span># <span class="ex">Purple</span></a>
+<a class="sourceLine" id="cb1-493" title="493"><span class="va">On_Cyan=</span><span class="st">&#39;\033[46m&#39;</span>  <span class="co"># Cyan</span></a>
+<a class="sourceLine" id="cb1-494" title="494"><span class="va">On_White=</span><span class="st">&#39;\033[47m&#39;</span> <span class="co"># White</span></a>
+<a class="sourceLine" id="cb1-495" title="495"></a>
+<a class="sourceLine" id="cb1-496" title="496"><span class="co"># Example of usage</span></a>
+<a class="sourceLine" id="cb1-497" title="497"><span class="bu">echo</span> -e <span class="st">&quot;</span><span class="va">${Green}</span><span class="st">This is GREEN text</span><span class="va">${Color_Off}</span><span class="st"> and normal text&quot;</span></a>
+<a class="sourceLine" id="cb1-498" title="498"><span class="bu">echo</span> -e <span class="st">&quot;</span><span class="va">${Red}${On_White}</span><span class="st">This is Red test on White background</span><span class="va">${Color_Off}</span><span class="st">&quot;</span></a>
+<a class="sourceLine" id="cb1-499" title="499"><span class="co"># option -e is mandatory, it enable interpretation of backslash escapes</span></a></code></pre></div>
+</body>
+</html>

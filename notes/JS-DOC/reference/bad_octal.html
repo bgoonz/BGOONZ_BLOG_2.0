@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>bad_octal</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="warning-0809-is-not-a-legal-ecma-262-octal-constant">Warning: 08/09 is not a legal ECMA-262 octal constant</h1>
+<p>The JavaScript warning “08 (or 09) is not a legal ECMA-262 octal constant” occurs when <code>08</code> or <code>09</code> number literals are used. They can’t be interpreted as an octal number.</p>
+<h2 id="message">Message</h2>
+<pre><code>Warning: SyntaxError: 08 is not a legal ECMA-262 octal constant.
+Warning: SyntaxError: 09 is not a legal ECMA-262 octal constant.</code></pre>
+<h2 id="error-type">Error type</h2>
+<p>Warning. JavaScript execution won’t be halted.</p>
+<h2 id="what-went-wrong">What went wrong?</h2>
+<p>Decimal literals can start with a zero (<code>0</code>) followed by another decimal digit, but If all digits after the leading <code>0</code> are smaller than 8, the number is interpreted as an octal number. Because this is not the case with <code>08</code> and <code>09</code>, JavaScript warns about it.</p>
+<p>Note that octal literals and octal escape sequences are deprecated and will present an additional deprecation warning. With ECMAScript 6 and later, the syntax uses a leading zero followed by a lowercase or uppercase Latin letter “O” (<code>0o</code> or <code>0O)</code>. See the page about <a href="../lexical_grammar#octal">lexical grammar</a> for more information.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="invalid-octal-numbers">Invalid octal numbers</h3>
+<pre><code>08;
+09;
+// SyntaxError: 08 is not a legal ECMA-262 octal constant
+// SyntaxError: &quot;0&quot;-prefixed octal literals and octal escape sequences
+// are deprecated</code></pre>
+<h3 id="valid-octal-numbers">Valid octal numbers</h3>
+<p>Use a leading zero followed by the letter “o”;</p>
+<pre><code>0O755;
+0o644;</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../lexical_grammar#octal">Lexical grammar</a></li>
+<li><a href="deprecated_octal">SyntaxError: “0”-prefixed octal literals and octal escape seq. are deprecated</a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Bad_octal" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Bad_octal</a></p>
+</body>
+</html>

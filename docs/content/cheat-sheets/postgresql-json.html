@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>PostgreSQL JSON</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">PostgreSQL JSON</h1>
+</header>
+<h2 id="operators">Operators</h2>
+<h3 id="accessors">Accessors</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sql"><code class="sourceCode sql"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">SELECT</span> <span class="op">*</span> <span class="kw">FROM</span> users <span class="kw">WHERE</span> <span class="kw">data</span><span class="op">-&gt;&gt;</span><span class="st">&#39;name&#39;</span> <span class="op">=</span> <span class="st">&#39;John&#39;</span>;</a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="kw">SELECT</span> <span class="kw">data</span><span class="op">-&gt;&gt;</span><span class="st">&#39;name&#39;</span> <span class="kw">AS</span> name <span class="kw">FROM</span> users;</a></code></pre></div>
+<p>{: .-setup}</p>
+<table>
+<thead>
+<tr class="header">
+<th>Operator</th>
+<th>Description</th>
+<th>Example</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>-&gt;</code> <em>int</em></td>
+<td>Get array element <code>2</code></td>
+<td><code>data-&gt;2</code></td>
+<td>JSON</td>
+</tr>
+<tr class="even">
+<td><code>-&gt;</code> <em>text</em></td>
+<td>Get object key <code>name</code></td>
+<td><code>data-&gt;'name'</code></td>
+<td>JSON</td>
+</tr>
+<tr class="odd">
+<td><code>#&gt;</code> <em>text[]</em></td>
+<td>Get keypath <code>a,b</code> (eg, <code>data.a.b</code>)</td>
+<td><code>data#&gt;'{a,b}'</code></td>
+<td>JSON</td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">-<br />
+<code>-&gt;&gt;</code> <em>int</em> | Get array element <code>2</code> | <code>data-&gt;&gt;2</code> | Text |<br />
+<code>-&gt;&gt;</code> <em>text</em> | Get object key <code>name</code> | <code>data-&gt;&gt;'name'</code> | Text |<br />
+<code>#&gt;&gt;</code> <em>text[]</em> | Get keypath <code>a,b</code> (eg, <code>data.a.b</code>) | <code>data#&gt;&gt;'{a,b}'</code> | Text |</div>
+<p>{: .-headers.-shortcuts}</p>
+<p><code>&gt;</code> returns JSON, <code>&gt;&gt;</code> returns text.</p>
+<h3 id="boolean-operators">Boolean operators</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode sql"><code class="sourceCode sql"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">SELECT</span> <span class="op">*</span> <span class="kw">FROM</span> users <span class="kw">WHERE</span> <span class="kw">data</span><span class="op">-&gt;</span>tags ? <span class="st">&#39;admin&#39;</span>;</a>
+<a class="sourceLine" id="cb2-2" title="2"><span class="kw">SELECT</span> <span class="kw">data</span><span class="op">-&gt;</span>tags ? <span class="st">&#39;admin&#39;</span> <span class="kw">AS</span> is_admin <span class="kw">FROM</span> users;</a></code></pre></div>
+<p>{: .-setup}</p>
+<table>
+<thead>
+<tr class="header">
+<th>Operator</th>
+<th>Description</th>
+<th>Example</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>?</code> <em>str</em></td>
+<td>Does <code>data</code> have key <code>name</code>?</td>
+<td><code>data ? 'name'</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>?            |</code> <em>text[]</em></td>
+<td>Does <code>data</code> have <code>a</code> or <code>b</code>?</td>
+<td><code>data ? | array['a','b']</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>?&amp;</code> <em>text[]</em></td>
+<td>Does <code>data</code> have <code>a</code> and <code>b</code>?</td>
+<td><code>data ?&amp; array['a','b']</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>@&gt;</code> <em>jsonb</em></td>
+<td>Does <code>left</code> include <code>right</code>?</td>
+<td><code>data @&gt; '{"b":2}'::jsonb</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>&lt;@</code> <em>jsonb</em></td>
+<td>Does <code>right</code> include <code>left</code>?</td>
+<td><code>data &lt;@ '{"a":1,"b":2}'::jsonb</code></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>{: .-headers.-shortcuts.-left-align}</p>
+<p>When <code>?</code>/<code>?|</code>/<code>?&amp;</code> works on objects, it checks keys; when it works on arrays, it checks for elements.</p>
+<h2 id="updating">Updating</h2>
+<h3 id="arrays-and-objects">Arrays and objects</h3>
+<div class="sourceCode" id="cb3"><pre class="sourceCode sql"><code class="sourceCode sql"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">UPDATE</span> users <span class="kw">SET</span> tags <span class="op">=</span> tags <span class="op">||</span> <span class="dt">array</span>[<span class="st">&#39;admin&#39;</span>];</a></code></pre></div>
+<p>{: .-setup}</p>
+<table>
+<thead>
+<tr class="header">
+<th>Operator</th>
+<th>Example</th>
+<th>Description</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>|                       |</code> <em>json</em></td>
+<td><code>data |     | array['a','b']</code></td>
+<td>Concatenate</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>-</code> <em>str</em></td>
+<td><code>data - 'a'</code></td>
+<td>Delete a key</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>-</code> <em>int</em></td>
+<td><code>data - 1</code></td>
+<td>Delete an array item</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>#-</code> <em>text[]</em></td>
+<td><code>data #- '{us,name}'</code></td>
+<td>Delete a path</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>{: .-headers.-shortcuts}</p>
+<p>Only available in PostgreSQL 9.5+.</p>
+<h3 id="jsonb_set">jsonb_set</h3>
+<div class="sourceCode" id="cb4"><pre class="sourceCode sql"><code class="sourceCode sql"><a class="sourceLine" id="cb4-1" title="1"><span class="kw">UPDATE</span> users <span class="kw">SET</span> <span class="kw">data</span> <span class="op">=</span> jsonb_set(<span class="kw">data</span>, <span class="st">&#39;{name}&#39;</span>, <span class="st">&#39;&quot;John&quot;&#39;</span>);</a></code></pre></div>
+<p>Only available in PostgreSQL 9.5+.</p>
+<h2 id="functions">Functions</h2>
+<h4 id="fnjson-json">fn(json) → json</h4>
+<div class="sourceCode" id="cb5"><pre class="sourceCode sql"><code class="sourceCode sql"><a class="sourceLine" id="cb5-1" title="1">jsonb_set(<span class="kw">data</span>, <span class="st">&#39;{path}&#39;</span>, <span class="fu">value</span>)</a>
+<a class="sourceLine" id="cb5-2" title="2">jsonb_strip_nulls(<span class="kw">data</span>)</a></code></pre></div>
+<h4 id="fn-json">fn(···) → json</h4>
+<div class="sourceCode" id="cb6"><pre class="sourceCode sql"><code class="sourceCode sql"><a class="sourceLine" id="cb6-1" title="1">to_json(<span class="ot">&quot;Hello&quot;</span>:<span class="ch">:text</span>)</a>
+<a class="sourceLine" id="cb6-2" title="2">array_to_json(<span class="st">&#39;{1,2}&#39;</span>:<span class="ch">:int</span>[])</a></code></pre></div>
+<h4 id="iteration">Iteration</h4>
+<div class="sourceCode" id="cb7"><pre class="sourceCode sql"><code class="sourceCode sql"><a class="sourceLine" id="cb7-1" title="1"><span class="kw">SELECT</span> <span class="op">*</span> <span class="kw">from</span> json_each(<span class="st">&#39;{&quot;a&quot;:1, &quot;b&quot;:2}&#39;</span>)</a>
+<a class="sourceLine" id="cb7-2" title="2"><span class="kw">SELECT</span> <span class="op">*</span> <span class="kw">from</span> json_each_text(<span class="st">&#39;{&quot;a&quot;:1, &quot;b&quot;:2}&#39;</span>)</a>
+<a class="sourceLine" id="cb7-3" title="3"><span class="co">-- key | value</span></a></code></pre></div>
+<p>This is an incomplete list, there’s way too many!</p>
+<p>See: <a href="https://www.postgresql.org/docs/9.5/static/functions-json.html">JSON functions</a></p>
+<h2 id="more-examples">More examples</h2>
+<ul>
+<li><code>'{"a":1}'::jsonb ? 'a'</code></li>
+<li><code>'["a"]'::jsonb ? 'a'</code></li>
+</ul>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://www.postgresql.org/docs/9.5/static/functions-json.html" class="uri">https://www.postgresql.org/docs/9.5/static/functions-json.html</a></li>
+<li><a href="https://www.postgresql.org/docs/9.5/static/datatype-json.html" class="uri">https://www.postgresql.org/docs/9.5/static/datatype-json.html</a></li>
+</ul>
+</body>
+</html>

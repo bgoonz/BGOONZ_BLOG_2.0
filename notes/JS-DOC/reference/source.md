@@ -1,6 +1,7 @@
-# RegExp.prototype.source
+RegExp.prototype.source
+=======================
 
-The `source` property returns a [`String`](../string) containing the source text of the regexp object, and it doesn't contain the two forward slashes on both sides and any flags.
+The `source` property returns a [`String`](../string) containing the source text of the regexp object, and it doesn’t contain the two forward slashes on both sides and any flags.
 
 Property attributes of `RegExp.prototype.source`
 
@@ -16,7 +17,8 @@ Configurable
 
 yes
 
-## Examples
+Examples
+--------
 
 ### Using source
 
@@ -26,21 +28,21 @@ yes
 
 ### Empty regular expressions and escaping
 
-Starting with ECMAScript 5, the `source` property no longer returns an empty string for empty regular expressions. Instead, the string `(?:)` is returned. In addition, line terminators (such as "\\n") are escaped now.
+Starting with ECMAScript 5, the `source` property no longer returns an empty string for empty regular expressions. Instead, the string `(?:)` is returned. In addition, line terminators (such as “\\n”) are escaped now.
 
     new RegExp().source; // "(?:)"
 
     new RegExp('\n').source === '\n';  // true, prior to ES5
     new RegExp('\n').source === '\\n'; // true, starting with ES5
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-get-regexp.prototype.source">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-get-regexp.prototype.source</span></td></tr></tbody></table>
 
-<span class="small">#sec-get-regexp.prototype.source</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -174,10 +176,10 @@ No
 
 5.0
 
-## See also
+See also
+--------
 
 -   [`RegExp.prototype.flags`](flags)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/source" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/source</a>

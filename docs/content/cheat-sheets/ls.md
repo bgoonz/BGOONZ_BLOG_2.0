@@ -1,23 +1,31 @@
-# To display everything in <dir>, excluding hidden files:
+\# To display everything in
 
-ls <dir>
+, excluding hidden files:
 
-# To display everything in <dir>, including hidden files:
+ls
 
-ls -a <dir>
+\# To display everything in
 
-# To display all files, along with the size (with unit suffixes) and timestamp
+, including hidden files:
 
-ls -lh <dir>
+ls -a
 
-# To display files, sorted by size:
+To display all files, along with the size (with unit suffixes) and timestamp
+============================================================================
 
-ls -S <dir>
+ls -lh
 
-# To display directories only:
+To display files, sorted by size:
+=================================
 
-ls -d \*/ <dir>
+ls -S
 
-# To display directories only, include hidden:
+To display directories only:
+============================
 
-ls -d ._/ _/ <dir>
+ls -d \*/
+
+To display directories only, include hidden:
+============================================
+
+ls -d .\_/ \_/

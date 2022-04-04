@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="is-a-power-of-two">Is a power of two</h1>
+<p>Given a positive integer, write a function to find if it is a power of two or not.</p>
+<p><strong>Naive solution</strong></p>
+<p>In naive solution we just keep dividing the number by two unless the number becomes <code>1</code> and every time we do so, we check that remainder after division is always <code>0</code>. Otherwise, the number can’t be a power of two.</p>
+<p><strong>Bitwise solution</strong></p>
+<p>Powers of two in binary form always have just one bit set. The only exception is with a signed integer (e.g. an 8-bit signed integer with a value of -128 looks like: <code>10000000</code>)</p>
+<pre><code>1: 0001
+2: 0010
+4: 0100
+8: 1000</code></pre>
+<p>So after checking that the number is greater than zero, we can use a bitwise hack to test that one and only one bit is set.</p>
+<pre><code>number &amp; (number - 1)</code></pre>
+<p>For example for number <code>8</code> that operations will look like:</p>
+<pre><code>  1000
+- 0001
+  ----
+  0111
+
+  1000
+&amp; 0111
+  ----
+  0000</code></pre>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/program-to-find-whether-a-no-is-power-of-two/">GeeksForGeeks</a></li>
+<li><a href="http://www.graphics.stanford.edu/~seander/bithacks.html#DetermineIfPowerOf2">Bitwise Solution on Stanford</a></li>
+<li><a href="https://www.youtube.com/watch?v=S9LJknZTyos&amp;t=0s&amp;list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8&amp;index=66">Binary number subtraction on YouTube</a></li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>yaourt</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="all-pacman-commands-are-working-the-same-way-with-yaourt.">All pacman commands are working the same way with yaourt.</h1>
+<h1 id="just-check-the-pacman-cheatsheet.">Just check the pacman cheatsheet.</h1>
+<h1 id="for-instance-to-install-a-package">For instance, to install a package:</h1>
+<p>pacman -S <package> yaourt -S <package></p>
+<h1 id="the-difference-is-that-yaourt-will-also-query-the-arch-user-repository">The difference is that yaourt will also query the Arch User Repository,</h1>
+<h1 id="and-if-appropriate-donwload-the-source-and-build-the-package-requested.">and if appropriate, donwload the source and build the package requested.</h1>
+<h1 id="here-are-the-commands-yaourt-provides-while-pacman-doesnt">Here are the commands yaourt provides while pacman doesn’t :</h1>
+<h1 id="to-search-for-and-install-it">To search for <package> and install it:</h1>
+<p>yaourt <package></p>
+<h1 id="to-update-the-local-package-base-and-upgrade-all-out-of-date-package">To update the local package base and upgrade all out of date package,</h1>
+<h1 id="including-the-ones-from-aur-and-the-packages-based-on-development-repos-git">including the ones from AUR and the packages based on development repos (git,</h1>
+<h1 id="svn-hg">svn, hg…)</h1>
+<p>yaourt -Suya –devel</p>
+<h1 id="for-all-of-the-above-commands-if-you-want-yaourt-to-stop-asking-constantly-for-confirmations">For all of the above commands, if you want yaourt to stop asking constantly for confirmations,</h1>
+<p>use the option –noconfirm</p>
+<h1 id="to-build-from-source">To build <package> from source:</h1>
+<p>yaourt -Sb <package></p>
+</body>
+</html>

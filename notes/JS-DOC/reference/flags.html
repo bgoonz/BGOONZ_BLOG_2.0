@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>flags</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="regexp.prototype.flags">RegExp.prototype.flags</h1>
+<p>The <code>flags</code> property returns a string consisting of the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#advanced_searching_with_flags_2">flags</a> of the current regular expression object.</p>
+<p>Property attributes of <code>RegExp.prototype.flags</code></p>
+<p>Writable</p>
+<p>no</p>
+<p>Enumerable</p>
+<p>no</p>
+<p>Configurable</p>
+<p>yes</p>
+<h2 id="description">Description</h2>
+<p>Flags in the <code>flags</code> property are sorted alphabetically (from left to right, e.g. <code>"gimsuy"</code>).</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-flags">Using flags</h3>
+<pre><code>/foo/ig.flags;   // &quot;gi&quot;
+/bar/myu.flags;  // &quot;muy&quot;</code></pre>
+<h2 id="polyfill">Polyfill</h2>
+<pre><code>if (RegExp.prototype.flags === undefined) {
+  Object.defineProperty(RegExp.prototype, &#39;flags&#39;, {
+    configurable: true,
+    get: function() {
+      return this.toString().match(/[gimsuy]*$/)[0];
+    }
+  });
+}</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-get-regexp.prototype.flags">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-get-regexp.prototype.flags</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>flags</code></p>
+<p>49</p>
+<p>79</p>
+<p>37</p>
+<p>No</p>
+<p>39</p>
+<p>9</p>
+<p>49</p>
+<p>49</p>
+<p>37</p>
+<p>41</p>
+<p>9</p>
+<p>5.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="source"><code>RegExp.prototype.source</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/flags" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/flags</a></p>
+</body>
+</html>

@@ -1,7 +1,9 @@
-# To get a list of PIDs matching <pattern>:
+To get a list of PIDs matching :
+================================
 
-pgrep <pattern>
+pgrep
 
-# To kill all PIDs matching <pattern>:
+To kill all PIDs matching :
+===========================
 
-pgrep -f <pattern> | xargs kill
+pgrep -f | xargs kill

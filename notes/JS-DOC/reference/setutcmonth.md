@@ -1,8 +1,10 @@
-# Date.prototype.setUTCMonth()
+Date.prototype.setUTCMonth()
+============================
 
 The `setUTCMonth()` method sets the month for a specified date according to universal time.
 
-## Syntax
+Syntax
+------
 
     setUTCMonth(monthValue)
     setUTCMonth(monthValue, dayValue)
@@ -19,27 +21,29 @@ Optional. An integer from 1 to 31, representing the day of the month.
 
 The number of milliseconds between 1 January 1970 00:00:00 UTC and the updated date.
 
-## Description
+Description
+-----------
 
 If you do not specify the `dayValue` parameter, the value returned from the [`getUTCDate()`](getutcdate) method is used.
 
 If a parameter you specify is outside of the expected range, `setUTCMonth()` attempts to update the date information in the [`Date`](../date) object accordingly. For example, if you use 15 for `monthValue`, the year will be incremented by 1, and 3 will be used for month.
 
-## Examples
+Examples
+--------
 
 ### Using setUTCMonth()
 
     var theBigDay = new Date();
     theBigDay.setUTCMonth(11);
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setutcmonth">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-date.prototype.setutcmonth</span></td></tr></tbody></table>
 
-<span class="small">#sec-date.prototype.setutcmonth</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -95,7 +99,8 @@ Samsung Internet
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`Date.prototype.getUTCMonth()`](getutcmonth)
 -   [`Date.prototype.setMonth()`](setmonth)

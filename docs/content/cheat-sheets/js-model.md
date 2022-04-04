@@ -1,83 +1,64 @@
-# js-model
+js-model
+========
 
 #### Example
 
-```bash
-Project = Model "project", ->
-  @extend
-    findByTitle: (title) -> ...
+    Project = Model "project", ->
+      @extend
+        findByTitle: (title) -> ...
 
-  @include
-    markAsDone: -> ...
+      @include
+        markAsDone: -> ...
 
-  # ActiveRecord::Base.include_root_in_json = false
-```
+      # ActiveRecord::Base.include_root_in_json = false
 
-```bash
-project = Project.find(1)
-project = Project.findByTitle("hello")
+    project = Project.find(1)
+    project = Project.findByTitle("hello")
 
-project.markAsDone()
-```
+    project.markAsDone()
 
 #### Persistence
 
-```bash
-Project "hi", ->
-  @persistence Model.REST, "/projects"
-  @persistence Model.localStorage
-```
+    Project "hi", ->
+      @persistence Model.REST, "/projects"
+      @persistence Model.localStorage
 
-```bash
-Project.load ->
-  # loaded
-```
+    Project.load ->
+      # loaded
 
 #### Attrs
 
-```bash
-project = new Project(name: "Hello")
+    project = new Project(name: "Hello")
 
-project.attr('name', "Hey")
-project.attr('name')
+    project.attr('name', "Hey")
+    project.attr('name')
 
-project.save()
-project.destroy()
-```
+    project.save()
+    project.destroy()
 
 #### Collection
 
-```bash
-Food.add(egg)
-Food.all()
-Food.select (food) -> ...
-Food.first()
-```
+    Food.add(egg)
+    Food.all()
+    Food.select (food) -> ...
+    Food.first()
 
-```bash
-Food.find(id)
-```
+    Food.find(id)
 
 #### Events
 
-```bash
-# Classes
-Project.bind "add", (obj) ->
-Project.bind "remove", (obj) ->
-```
+    # Classes
+    Project.bind "add", (obj) ->
+    Project.bind "remove", (obj) ->
 
-```bash
-# Instances
-project.bind "update", ->
-project.bind "destroy", ->
-```
+    # Instances
+    project.bind "update", ->
+    project.bind "destroy", ->
 
-```bash
-project.trigger "turn_blue"
-```
+    project.trigger "turn_blue"
 
 ### References
 
 {: .-one-column}
 
--   [http://benpickles.github.io/js-model/](http://benpickles.github.io/js-model/)
+-   <http://benpickles.github.io/js-model/>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2022-01-03" />
+  <title>title</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">title</h1>
+<p class="subtitle">subtitle</p>
+<p class="date">2022-01-03</p>
+</header>
+<hr />
+<p>title: Factory Bot category: Ruby libraries</p>
+<p>weight: -3 keywords:</p>
+<ul>
+<li>“FactoryBot.define do”</li>
+<li>“factory :user”</li>
+<li>“first_name ‘John’”</li>
+<li>‘sequence(:username) { |n| “user#{n}” }’ tags: [Featurable]</li>
+</ul>
+<hr />
+<h2 id="factories">Factories</h2>
+<h3 id="introduction">Introduction</h3>
+<p>{: .-intro}</p>
+<p><a href="http://www.rubydoc.info/gems/factory_bot/">Factory Bot</a> is a helper for writing factories for Ruby tests. It was previously known as Factory Girl. For older versions, use <code>FactoryGirl</code> instead of <code>FactoryBot</code>.</p>
+<ul>
+<li><a href="http://www.rubydoc.info/gems/factory_bot/">Factory Bot documentation</a> <em>(rubydoc.info)</em></li>
+<li><a href="https://github.com/thoughtbot/factory_bot/blob/master/GETTING_STARTED.md">Getting started</a> <em>(github.com)</em></li>
+<li><a href="https://github.com/thoughtbot/factory_bot">Source code</a> <em>(github.com)</em></li>
+</ul>
+<h3 id="defining-factories">Defining factories</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb1-1" title="1"><span class="dt">FactoryBot</span>.define <span class="kw">do</span></a>
+<a class="sourceLine" id="cb1-2" title="2">  factory <span class="st">:user</span> <span class="kw">do</span></a>
+<a class="sourceLine" id="cb1-3" title="3">    first_name { <span class="st">&#39;John&#39;</span> }</a>
+<a class="sourceLine" id="cb1-4" title="4">    last_name  { <span class="st">&#39;Doe&#39;</span> }</a>
+<a class="sourceLine" id="cb1-5" title="5">    birthdate  { <span class="dv">21</span>.years.ago }</a>
+<a class="sourceLine" id="cb1-6" title="6">    admin { <span class="dv">false</span> }</a>
+<a class="sourceLine" id="cb1-7" title="7"></a>
+<a class="sourceLine" id="cb1-8" title="8">    sequence(<span class="st">:username</span>) { |n| <span class="st">&quot;user</span><span class="ot">#{</span>n<span class="ot">}</span><span class="st">&quot;</span> }</a>
+<a class="sourceLine" id="cb1-9" title="9">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb1-10" title="10"><span class="kw">end</span></a></code></pre></div>
+<p>{: data-line=“2”}</p>
+<p>See: <a href="http://www.rubydoc.info/gems/factory_bot/file/GETTING_STARTED.md#Defining_factories">Defining factories</a></p>
+<h3 id="extra-options">Extra options</h3>
+<h4 id="custom-class-names">Custom class names</h4>
+<div class="sourceCode" id="cb2"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb2-1" title="1">factory <span class="st">:user</span>, <span class="kw">class</span>: <span class="st">&#39;User&#39;</span> <span class="kw">do</span></a>
+<a class="sourceLine" id="cb2-2" title="2">  ···</a>
+<a class="sourceLine" id="cb2-3" title="3"><span class="kw">end</span></a></code></pre></div>
+<h4 id="aliases">Aliases</h4>
+<div class="sourceCode" id="cb3"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb3-1" title="1">factory <span class="st">:user</span>, <span class="st">aliases: </span>[<span class="st">:author</span>] <span class="kw">do</span></a>
+<a class="sourceLine" id="cb3-2" title="2">  ···</a>
+<a class="sourceLine" id="cb3-3" title="3"><span class="kw">end</span></a></code></pre></div>
+<h3 id="using">Using</h3>
+<h4 id="build-a-model">Build a model</h4>
+<div class="sourceCode" id="cb4"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb4-1" title="1"><span class="dt">FactoryBot</span>.build(<span class="st">:user</span>)</a></code></pre></div>
+<h4 id="other-ways">Other ways</h4>
+<div class="sourceCode" id="cb5"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb5-1" title="1">build(<span class="st">:user</span>)           <span class="co"># → model (not saved)</span></a>
+<a class="sourceLine" id="cb5-2" title="2">create(<span class="st">:user</span>)          <span class="co"># → model (saved)</span></a>
+<a class="sourceLine" id="cb5-3" title="3">attributes_for(<span class="st">:user</span>)  <span class="co"># → hash</span></a>
+<a class="sourceLine" id="cb5-4" title="4">build_stubbed(<span class="st">:user</span>)   <span class="co"># stubbed out attributes</span></a></code></pre></div>
+<h4 id="with-options">With options</h4>
+<div class="sourceCode" id="cb6"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb6-1" title="1">build(<span class="st">:user</span>, <span class="st">name: &#39;John&#39;</span>)</a></code></pre></div>
+<h4 id="lists">Lists</h4>
+<div class="sourceCode" id="cb7"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb7-1" title="1">create_list(<span class="st">:user</span>, <span class="dv">3</span>)</a>
+<a class="sourceLine" id="cb7-2" title="2">build_list(<span class="st">:user</span>, <span class="dv">3</span>)</a></code></pre></div>
+<h2 id="associations">Associations</h2>
+<h3 id="defining">Defining</h3>
+<div class="sourceCode" id="cb8"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb8-1" title="1">factory <span class="st">:post</span> <span class="kw">do</span></a>
+<a class="sourceLine" id="cb8-2" title="2">  association <span class="st">:author</span>, <span class="st">factory: :user</span></a>
+<a class="sourceLine" id="cb8-3" title="3">  association <span class="st">:author</span>, <span class="st">factory: </span>[<span class="st">:user</span>, <span class="st">:admin</span>]</a>
+<a class="sourceLine" id="cb8-4" title="4"><span class="kw">end</span></a></code></pre></div>
+<p>{: data-line=“2,3”}</p>
+<h4 id="or">or</h4>
+<div class="sourceCode" id="cb9"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb9-1" title="1">factory <span class="st">:post</span> <span class="kw">do</span></a>
+<a class="sourceLine" id="cb9-2" title="2">  author  <span class="co"># assumes there&#39;s a factory :author</span></a>
+<a class="sourceLine" id="cb9-3" title="3"><span class="kw">end</span></a></code></pre></div>
+<h3 id="after-create-hooks">After-create hooks</h3>
+<div class="sourceCode" id="cb10"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb10-1" title="1">factory <span class="st">:post</span> <span class="kw">do</span></a>
+<a class="sourceLine" id="cb10-2" title="2">  after <span class="st">:create</span> <span class="kw">do</span> |post|</a>
+<a class="sourceLine" id="cb10-3" title="3">    create <span class="st">:theme</span>, <span class="st">post: </span>post             <span class="co"># has_one</span></a>
+<a class="sourceLine" id="cb10-4" title="4">    create_list <span class="st">:comment</span>, <span class="dv">3</span>, <span class="st">post: </span>post   <span class="co"># has_many</span></a>
+<a class="sourceLine" id="cb10-5" title="5">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb10-6" title="6"><span class="kw">end</span></a></code></pre></div>
+<p>{: data-line=“2”}</p>
+<h2 id="other-features">Other features</h2>
+<h3 id="traits">Traits</h3>
+<div class="sourceCode" id="cb11"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb11-1" title="1">factory <span class="st">:user</span> <span class="kw">do</span></a>
+<a class="sourceLine" id="cb11-2" title="2">  trait <span class="st">:admin</span> <span class="kw">do</span></a>
+<a class="sourceLine" id="cb11-3" title="3">    admin { <span class="dv">true</span> }</a>
+<a class="sourceLine" id="cb11-4" title="4">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb11-5" title="5"><span class="kw">end</span></a></code></pre></div>
+<p>{: data-line=“2,3,4”}</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb12-1" title="1">create <span class="st">:user</span>, <span class="st">:admin</span></a></code></pre></div>
+<p>Traits allow you to group attributes together. See: <a href="http://www.rubydoc.info/gems/factory_bot/file/GETTING_STARTED.md#Traits">Traits</a></p>
+<h3 id="nested-factories">Nested factories</h3>
+<div class="sourceCode" id="cb13"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb13-1" title="1">factory <span class="st">:user</span> <span class="kw">do</span></a>
+<a class="sourceLine" id="cb13-2" title="2">  first_name { <span class="st">&#39;John&#39;</span> }</a>
+<a class="sourceLine" id="cb13-3" title="3"></a>
+<a class="sourceLine" id="cb13-4" title="4">  factory <span class="st">:sample_user</span> <span class="kw">do</span></a>
+<a class="sourceLine" id="cb13-5" title="5">    first_name { <span class="dt">FFaker</span>::<span class="dt">Name</span>.first_name }</a>
+<a class="sourceLine" id="cb13-6" title="6">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb13-7" title="7"><span class="kw">end</span></a></code></pre></div>
+<p>{: data-line=“4,5,6”}</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb14-1" title="1">create <span class="st">:sample_user</span></a></code></pre></div>
+<p>See: <a href="http://www.rubydoc.info/gems/factory_bot/file/GETTING_STARTED.md#Inheritance">Inheritance</a></p>
+<h3 id="sub-factories">Sub-factories</h3>
+<div class="sourceCode" id="cb15"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb15-1" title="1">factory <span class="st">:user</span> <span class="kw">do</span></a>
+<a class="sourceLine" id="cb15-2" title="2">  ···</a>
+<a class="sourceLine" id="cb15-3" title="3"><span class="kw">end</span></a></code></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb16-1" title="1">factory <span class="st">:sample_user</span>, <span class="st">parent: :user</span> <span class="kw">do</span></a>
+<a class="sourceLine" id="cb16-2" title="2">  first_name { <span class="dt">FFaker</span>::<span class="dt">Name</span>.first_name }</a>
+<a class="sourceLine" id="cb16-3" title="3"><span class="kw">end</span></a></code></pre></div>
+<p>{: data-line=“1”}</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb17-1" title="1">create <span class="st">:sample_user</span></a></code></pre></div>
+<p>Works the same as nested factories.</p>
+<h3 id="options-transients">Options (transients)</h3>
+<div class="sourceCode" id="cb18"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb18-1" title="1">factory <span class="st">:user</span> <span class="kw">do</span></a>
+<a class="sourceLine" id="cb18-2" title="2">  transient <span class="kw">do</span></a>
+<a class="sourceLine" id="cb18-3" title="3">    upcased { <span class="dv">true</span> }</a>
+<a class="sourceLine" id="cb18-4" title="4">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb18-5" title="5"></a>
+<a class="sourceLine" id="cb18-6" title="6">  after <span class="st">:create</span> <span class="kw">do</span> |user, options|</a>
+<a class="sourceLine" id="cb18-7" title="7">    user.name.upcase! <span class="kw">if</span> options.upcased</a>
+<a class="sourceLine" id="cb18-8" title="8">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb18-9" title="9"><span class="kw">end</span></a></code></pre></div>
+<p>{: data-line=“2,3,4”}</p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb19-1" title="1">create(user, <span class="st">upcased: </span><span class="dv">true</span>)</a></code></pre></div>
+<p>Transient attributes will not get passed to the model, but will be available in after-create hooks. See: <a href="http://www.rubydoc.info/gems/factory_bot/file/GETTING_STARTED.md#Transient_Attributes">Transient attributes</a></p>
+<h3 id="paths">Paths</h3>
+<ul>
+<li>test/factories.rb</li>
+<li>spec/factories.rb</li>
+<li>test/factories/*.rb</li>
+<li>spec/factories/*.rb</li>
+</ul>
+<p>Place your factories in these locations. {: .-setup}</p>
+<h2 id="see-also">See also</h2>
+<p>{: .-one-column}</p>
+<ul>
+<li><a href="http://rubydoc.info/gems/factory_bot/file/GETTING_STARTED.md" class="uri">http://rubydoc.info/gems/factory_bot/file/GETTING_STARTED.md</a></li>
+</ul>
+</body>
+</html>

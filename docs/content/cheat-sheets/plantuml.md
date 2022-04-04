@@ -1,7 +1,3 @@
----
-title: PlantUML
----
-
 ### Format
 
     @startuml
@@ -11,7 +7,8 @@ title: PlantUML
 
     # plantuml file.uml && open file.png
 
-## Classes
+Classes
+-------
 
 -   http://plantuml.sourceforge.net/classes.html
 
@@ -85,7 +82,8 @@ title: PlantUML
 
     Car -- Client.Driver : owns >
 
-## Activities
+Activities
+----------
 
     (*) --> "First Activity"
     -->[You can put also labels] "Second Activity"

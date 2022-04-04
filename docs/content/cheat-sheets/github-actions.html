@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2022-01-03" />
+  <title>Github Actions</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Github Actions</h1>
+<p class="subtitle">Github Actions</p>
+<p class="date">2022-01-03</p>
+</header>
+<h1 id="github-actions">Github Actions</h1>
+<h2 id="introduction">Introduction</h2>
+<p><a href="https://github.com/features/actions">GitHub Actions</a> is a <a href="https://docs.github.com/en/actions/getting-started-with-github-actions/core-concepts-for-github-actions">CI/CD</a> service that runs on GitHub repos.</p>
+<p>Compared with Travis CI, GitHub Actions is:</p>
+<ul>
+<li><strong>Easier</strong></li>
+<li><strong>More flexible</strong></li>
+<li><strong>More powerful</strong></li>
+<li><strong>More secure</strong></li>
+</ul>
+<h2 id="workflows-and-actions">Workflows and actions</h2>
+<h3 id="getting-started">Getting started</h3>
+<ul>
+<li><strong><a href="https://docs.github.com/en/actions/getting-started-with-github-actions/core-concepts-for-github-actions">Workflows</a></strong> are YAML files stored in the <em>.github/workflows</em> directory of a repository.</li>
+<li>An <strong><a href="https://docs.github.com/en/actions/getting-started-with-github-actions/core-concepts-for-github-actions">Action</a></strong> is a package you can import and use in your <strong>workflow</strong>. GitHub provides an <strong><a href="https://github.com/marketplace?type=actions">Actions Marketplace</a></strong> to find actions to use in workflows.</li>
+<li>A <strong>job</strong> is a virtual machine that runs a series of <strong>steps</strong>. <strong>Jobs</strong> are parallelized by default, but <strong>steps</strong> are sequential by default.</li>
+<li><strong>To <a href="https://docs.github.com/en/actions/getting-started-with-github-actions">get started</a>:</strong>
+<ul>
+<li>Navigate to one of your repos</li>
+<li>Click the “Actions” tab.</li>
+<li>Select “New workflow”</li>
+<li>Choose one of the starter workflows. These templates come from <a href="https://github.com/actions/starter-workflows">actions/starter-workflows</a>.</li>
+</ul></li>
+<li>Workflows can be <a href="https://docs.github.com/en/actions/reference/events-that-trigger-workflows">triggered</a> by many different events from the GitHub API. The <code>workflow_dispatch</code> trigger allows workflows to be triggered manually, with optional input values that can be referenced in the workflow.</li>
+<li><p>GitHub provides a <a href="https://docs.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions">context and expression syntax</a> for programmatic control of workflows. For example:</p>
+<pre class="text"><code>echo ::set-output name=SPAM_STRING::${{ format(
+  &#39;Spam is short for {0} and is made from {1} by {2}&#39;,
+  &#39;spiced ham&#39;,
+  &#39;pork shoulder&#39;,
+  &#39;Hormel&#39;
+) }}</code></pre>
+<ul>
+<li>Command: <code>echo ::set-output name=ENV_NAME::value</code>, like <code>echo ::set-output name=COLOR::green</code></li>
+<li>Expression: <code>${{ }}</code></li>
+<li>Function:
+<ul>
+<li><code>contains('this is a demo', 'demo')</code> evaluates to Boolean <code>true</code></li>
+<li><code>format('Spam is short for {0} and is made from {1} by {2}', 'spiced ham', 'pork shoulder', 'Hormel')</code></li>
+</ul></li>
+</ul></li>
+</ul>
+<h3 id="example-workflow-with-one-job">Example workflow with one job</h3>
+<p>A workflow file might look like this:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode yml"><code class="sourceCode yaml"><a class="sourceLine" id="cb2-1" title="1"><span class="fu">name:</span><span class="at"> demo</span></a>
+<a class="sourceLine" id="cb2-2" title="2"></a>
+<a class="sourceLine" id="cb2-3" title="3"><span class="fu">on:</span></a>
+<a class="sourceLine" id="cb2-4" title="4">    <span class="fu">push:</span></a>
+<a class="sourceLine" id="cb2-5" title="5">        <span class="fu">branches:</span><span class="at"> </span><span class="kw">[</span>demo<span class="kw">]</span></a>
+<a class="sourceLine" id="cb2-6" title="6">    <span class="fu">pull_request:</span></a>
+<a class="sourceLine" id="cb2-7" title="7">    <span class="fu">workflow_dispatch:</span></a>
+<a class="sourceLine" id="cb2-8" title="8"></a>
+<a class="sourceLine" id="cb2-9" title="9"><span class="fu">env:</span></a>
+<a class="sourceLine" id="cb2-10" title="10">    <span class="fu">APP_NAME:</span><span class="at"> </span><span class="st">&#39;GitHub Actions demo workflow&#39;</span></a>
+<a class="sourceLine" id="cb2-11" title="11"></a>
+<a class="sourceLine" id="cb2-12" title="12"><span class="fu">jobs:</span></a>
+<a class="sourceLine" id="cb2-13" title="13">    <span class="fu">simple:</span></a>
+<a class="sourceLine" id="cb2-14" title="14">        <span class="fu">runs-on:</span><span class="at"> ubuntu-latest</span></a>
+<a class="sourceLine" id="cb2-15" title="15">        <span class="fu">steps:</span></a>
+<a class="sourceLine" id="cb2-16" title="16">            <span class="kw">-</span> <span class="fu">name:</span><span class="at"> Checkout repo</span></a>
+<a class="sourceLine" id="cb2-17" title="17">              <span class="fu">uses:</span><span class="at"> actions/checkout@v2</span></a>
+<a class="sourceLine" id="cb2-18" title="18">            <span class="kw">-</span> <span class="fu">name:</span><span class="at"> Verify the workspace context</span></a>
+<a class="sourceLine" id="cb2-19" title="19">              <span class="fu">run:</span><span class="at"> echo &#39;Workspace directory is ${{ github.workspace }}&#39;</span></a>
+<a class="sourceLine" id="cb2-20" title="20">            <span class="kw">-</span> <span class="fu">name:</span><span class="at"> Run a simple echo command with a pre-set environment variable</span></a>
+<a class="sourceLine" id="cb2-21" title="21">              <span class="fu">run:</span><span class="at"> echo &#39;Hello World, from ${{ env.APP_NAME }}&#39;</span></a>
+<a class="sourceLine" id="cb2-22" title="22">            <span class="kw">-</span> <span class="fu">name:</span><span class="at"> Set an environment variable using a multi-line string</span></a>
+<a class="sourceLine" id="cb2-23" title="23"><span class="fu">              run:</span> <span class="st">|</span></a>
+<a class="sourceLine" id="cb2-24" title="24">                  echo &quot;MULTI_LINE_STRING&lt;&lt;EOF&quot; &gt;&gt; $GITHUB_ENV</a>
+<a class="sourceLine" id="cb2-25" title="25">                  echo &quot;</a>
+<a class="sourceLine" id="cb2-26" title="26">                    Hello World!</a>
+<a class="sourceLine" id="cb2-27" title="27">                    Here&#39;s a</a>
+<a class="sourceLine" id="cb2-28" title="28">                    multi-line string.</a>
+<a class="sourceLine" id="cb2-29" title="29">                  &quot; &gt;&gt; $GITHUB_ENV</a>
+<a class="sourceLine" id="cb2-30" title="30">                  echo &quot;EOF&quot; &gt;&gt; $GITHUB_ENV</a>
+<a class="sourceLine" id="cb2-31" title="31">            <span class="kw">-</span> <span class="fu">name:</span><span class="at"> Check the environment variable from the previous step</span></a>
+<a class="sourceLine" id="cb2-32" title="32">              <span class="fu">run:</span><span class="at"> echo $MULTI_LINE_STRING</span></a>
+<a class="sourceLine" id="cb2-33" title="33">            <span class="kw">-</span> <span class="fu">name:</span><span class="at"> Set build environment based on Git branch name</span></a>
+<a class="sourceLine" id="cb2-34" title="34">              <span class="fu">if:</span><span class="at"> github.ref == &#39;refs/heads/demo&#39; || contains(env.APP_NAME, &#39;demo&#39;)</span></a>
+<a class="sourceLine" id="cb2-35" title="35">              <span class="fu">run:</span><span class="at"> echo &quot;BUILD_ENV=demo&quot; &gt;&gt; $GITHUB_ENV</span></a>
+<a class="sourceLine" id="cb2-36" title="36">            <span class="kw">-</span> <span class="fu">name:</span><span class="at"> Use the GitHub Actions format function to provide some details about Spam</span></a>
+<a class="sourceLine" id="cb2-37" title="37"><span class="fu">              run:</span> <span class="st">|</span></a>
+<a class="sourceLine" id="cb2-38" title="38">                  echo &quot;SPAM_STRING=${{ format(</a>
+<a class="sourceLine" id="cb2-39" title="39">                    &#39;Spam is short for {0} and is made from {1} by {2}&#39;,</a>
+<a class="sourceLine" id="cb2-40" title="40">                    &#39;spiced ham&#39;,</a>
+<a class="sourceLine" id="cb2-41" title="41">                    &#39;pork shoulder&#39;,</a>
+<a class="sourceLine" id="cb2-42" title="42">                    &#39;Hormel&#39;</a>
+<a class="sourceLine" id="cb2-43" title="43">                  ) }}&quot; &gt;&gt; $GITHUB_ENV</a>
+<a class="sourceLine" id="cb2-44" title="44">            <span class="kw">-</span> <span class="fu">name:</span><span class="at"> Run a multi-line shell script block</span></a>
+<a class="sourceLine" id="cb2-45" title="45"><span class="fu">              run:</span> <span class="st">|</span></a>
+<a class="sourceLine" id="cb2-46" title="46">                  echo &quot;</a>
+<a class="sourceLine" id="cb2-47" title="47">                  Hello World, from ${{ env.APP_NAME }}!</a>
+<a class="sourceLine" id="cb2-48" title="48">                  Add other actions to build,</a>
+<a class="sourceLine" id="cb2-49" title="49">                  test, and deploy your project.</a>
+<a class="sourceLine" id="cb2-50" title="50">                  &quot;</a>
+<a class="sourceLine" id="cb2-51" title="51">                  if [ &quot;$BUILD_ENV&quot; = &quot;demo&quot; ] || ${{ contains(env.APP_NAME, &#39;demo&#39;) }}; then</a>
+<a class="sourceLine" id="cb2-52" title="52">                    echo &quot;This is a demo.&quot;</a>
+<a class="sourceLine" id="cb2-53" title="53">                  elif [ &quot;$BUILD_ENV&quot; ]; then</a>
+<a class="sourceLine" id="cb2-54" title="54">                    echo &quot;BUILD_ENV=$BUILD_ENV&quot;</a>
+<a class="sourceLine" id="cb2-55" title="55">                  else</a>
+<a class="sourceLine" id="cb2-56" title="56">                    echo &quot;There isn&#39;t a BUILD_ENV variable set.&quot;</a>
+<a class="sourceLine" id="cb2-57" title="57">                  fi</a>
+<a class="sourceLine" id="cb2-58" title="58">                  echo &quot;Did you know that $SPAM_STRING?&quot;</a>
+<a class="sourceLine" id="cb2-59" title="59">            <span class="kw">-</span> <span class="fu">uses:</span><span class="at"> actions/setup-python@v2</span></a>
+<a class="sourceLine" id="cb2-60" title="60">              <span class="fu">with:</span></a>
+<a class="sourceLine" id="cb2-61" title="61">                  <span class="fu">python-version:</span><span class="at"> </span><span class="fl">3.8</span></a>
+<a class="sourceLine" id="cb2-62" title="62">            <span class="kw">-</span> <span class="fu">name:</span><span class="at"> Run a multi-line Python script block</span></a>
+<a class="sourceLine" id="cb2-63" title="63">              <span class="fu">shell:</span><span class="at"> python</span></a>
+<a class="sourceLine" id="cb2-64" title="64"><span class="fu">              run:</span> <span class="st">|</span></a>
+<a class="sourceLine" id="cb2-65" title="65">                  import os</a>
+<a class="sourceLine" id="cb2-66" title="66">                  import sys</a>
+<a class="sourceLine" id="cb2-67" title="67"></a>
+<a class="sourceLine" id="cb2-68" title="68">                  version = f&quot;{sys.version_info.major}.{sys.version_info.minor}&quot;</a>
+<a class="sourceLine" id="cb2-69" title="69">                  print(f&quot;Hello World, from Python {version} and ${{ env.APP_NAME }}!&quot;)</a>
+<a class="sourceLine" id="cb2-70" title="70">                  print(f&quot;Did you know that {os.getenv(&#39;SPAM_STRING&#39;, &#39;there is a SPAM_STRING&#39;)}?&quot;)</a>
+<a class="sourceLine" id="cb2-71" title="71">            <span class="kw">-</span> <span class="fu">name:</span><span class="at"> Run an external shell script</span></a>
+<a class="sourceLine" id="cb2-72" title="72">              <span class="fu">working-directory:</span><span class="at"> ./.github/workflows</span></a>
+<a class="sourceLine" id="cb2-73" title="73">              <span class="fu">run:</span><span class="at"> . github-actions-workflow-demo.sh</span></a>
+<a class="sourceLine" id="cb2-74" title="74">            <span class="kw">-</span> <span class="fu">name:</span><span class="at"> Run an external Python script</span></a>
+<a class="sourceLine" id="cb2-75" title="75">              <span class="fu">working-directory:</span><span class="at"> ./.github/workflows</span></a>
+<a class="sourceLine" id="cb2-76" title="76">              <span class="fu">run:</span><span class="at"> python github-actions-workflow-demo.py</span></a></code></pre></div>
+<h3 id="example-workflow-with-a-build-matrix">Example workflow with a build matrix</h3>
+<p><img src="https://gist.githubusercontent.com/br3ndonland/f9c753eb27381f97336aa21b8d932be6/raw/11a9ebb7b848aa016deaed4187541fd49fb30e21/images-features-matrix.png" alt="GitHub Actions Build Matrix from https://github.com/features/actions" width="800px"></p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode yml"><code class="sourceCode yaml"><a class="sourceLine" id="cb3-1" title="1"><span class="fu">name:</span><span class="at"> demo</span></a>
+<a class="sourceLine" id="cb3-2" title="2"></a>
+<a class="sourceLine" id="cb3-3" title="3"><span class="fu">on:</span></a>
+<a class="sourceLine" id="cb3-4" title="4">    <span class="fu">push:</span></a>
+<a class="sourceLine" id="cb3-5" title="5">        <span class="fu">branches:</span><span class="at"> </span><span class="kw">[</span>master<span class="kw">,</span> develop<span class="kw">]</span></a>
+<a class="sourceLine" id="cb3-6" title="6">    <span class="fu">pull_request:</span></a>
+<a class="sourceLine" id="cb3-7" title="7">    <span class="fu">workflow_dispatch:</span></a>
+<a class="sourceLine" id="cb3-8" title="8"></a>
+<a class="sourceLine" id="cb3-9" title="9"><span class="fu">env:</span></a>
+<a class="sourceLine" id="cb3-10" title="10">    <span class="fu">APP_NAME:</span><span class="at"> </span><span class="st">&#39;GitHub Actions sample workflow with build matrix&#39;</span></a>
+<a class="sourceLine" id="cb3-11" title="11"></a>
+<a class="sourceLine" id="cb3-12" title="12"><span class="fu">jobs:</span></a>
+<a class="sourceLine" id="cb3-13" title="13">    <span class="fu">matrix:</span></a>
+<a class="sourceLine" id="cb3-14" title="14">        <span class="fu">runs-on:</span><span class="at"> ${{ matrix.os }}</span></a>
+<a class="sourceLine" id="cb3-15" title="15">        <span class="fu">strategy:</span></a>
+<a class="sourceLine" id="cb3-16" title="16">            <span class="fu">matrix:</span></a>
+<a class="sourceLine" id="cb3-17" title="17">                <span class="fu">os:</span><span class="at"> </span><span class="kw">[</span>macOS-latest<span class="kw">,</span> ubuntu-latest<span class="kw">,</span> windows-latest<span class="kw">]</span></a>
+<a class="sourceLine" id="cb3-18" title="18">                <span class="fu">python-version:</span><span class="at"> </span><span class="kw">[</span><span class="fl">3.6</span><span class="kw">,</span> <span class="fl">3.7</span><span class="kw">,</span> <span class="fl">3.8</span><span class="kw">]</span></a>
+<a class="sourceLine" id="cb3-19" title="19">                <span class="fu">silly-word:</span><span class="at"> </span><span class="kw">[</span>foo<span class="kw">,</span> bar<span class="kw">,</span> baz<span class="kw">]</span></a>
+<a class="sourceLine" id="cb3-20" title="20">        <span class="fu">steps:</span></a>
+<a class="sourceLine" id="cb3-21" title="21">            <span class="kw">-</span> <span class="fu">uses:</span><span class="at"> actions/checkout@v2</span></a>
+<a class="sourceLine" id="cb3-22" title="22">            <span class="kw">-</span> <span class="fu">name:</span><span class="at"> Echo a silly word</span></a>
+<a class="sourceLine" id="cb3-23" title="23">              <span class="fu">run:</span><span class="at"> echo ${{ matrix.silly-word }}</span></a>
+<a class="sourceLine" id="cb3-24" title="24">            <span class="kw">-</span> <span class="fu">name:</span><span class="at"> Set up Python ${{ matrix.python-version }}</span></a>
+<a class="sourceLine" id="cb3-25" title="25">              <span class="fu">uses:</span><span class="at"> actions/setup-python@v2</span></a>
+<a class="sourceLine" id="cb3-26" title="26">              <span class="fu">with:</span></a>
+<a class="sourceLine" id="cb3-27" title="27">                  <span class="fu">python-version:</span><span class="at"> ${{ matrix.python-version }}</span></a>
+<a class="sourceLine" id="cb3-28" title="28">            <span class="kw">-</span> <span class="fu">name:</span><span class="at"> Run a multi-line Python script block</span></a>
+<a class="sourceLine" id="cb3-29" title="29">              <span class="fu">shell:</span><span class="at"> python</span></a>
+<a class="sourceLine" id="cb3-30" title="30"><span class="fu">              run:</span> <span class="st">|</span></a>
+<a class="sourceLine" id="cb3-31" title="31">                  import os</a>
+<a class="sourceLine" id="cb3-32" title="32">                  import sys</a>
+<a class="sourceLine" id="cb3-33" title="33"></a>
+<a class="sourceLine" id="cb3-34" title="34">                  version = f&quot;{sys.version_info.major}.{sys.version_info.minor}&quot;</a>
+<a class="sourceLine" id="cb3-35" title="35">                  print(f&quot;Hello World, from Python {version}, ${{ matrix.os }}, and ${{ matrix.silly-word }}!&quot;)</a></code></pre></div>
+<h3 id="output">Output</h3>
+<p>GitHub Actions provides output like this:</p>
+<p><img src="https://gist.githubusercontent.com/br3ndonland/f9c753eb27381f97336aa21b8d932be6/raw/3315059cbe4dad063328daf58f85ab1e7949eac9/images-annotated-workflow.png" alt="Annotated workflow image from https://docs.github.com/en/actions/configuring-and-managing-workflows/configuring-a-workflow" width="800px"></p>
+<p>You can see a demo workflow in <a href="https://github.com/br3ndonland/algorithms/actions?query=workflow%3Ademo">br3ndonland/algorithms</a>.</p>
+<h2 id="pro-tips">Pro tips</h2>
+<h3 id="general">General</h3>
+<ul>
+<li><strong>Steps</strong> in a <strong>job</strong> are sequential by default.</li>
+<li><strong>Jobs</strong> are parallelized by default, unless you control the order by using <code>needs</code>.</li>
+<li><strong>Action inputs and outputs</strong>: If you’re unclear on what you can do with an action, navigate to the GitHub repo for the action and look for a file called <em>action.yml</em>, like <a href="https://github.com/actions/checkout/blob/main/action.yml">this one in actions/checkout</a>. This file is a manifest declaring what the action can do.</li>
+<li><strong>Debugging</strong>: If you want more debugging information, add <code>ACTIONS_STEP_DEBUG</code> to your secrets parameter store.
+<ul>
+<li>Key: <code>ACTIONS_STEP_DEBUG</code></li>
+<li>Value: <code>true</code></li>
+</ul></li>
+</ul>
+<h3 id="secrets">Secrets</h3>
+<p><strong>Secrets</strong> is an encrypted parameter store (key:value store). The syntax is similar to environment variables.</p>
+<ul>
+<li><a href="https://docs.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets">GitHub Actions can use secrets</a>, so you don’t have to hard-code API keys and other credentials. Secrets are redacted from GitHub Actions logs.</li>
+<li>Each repo has a secrets store at <em>Settings -&gt; Secrets</em> (<code>https://github.com/org/repo/settings/secrets</code>)</li>
+<li>Each organization also has a secrets store that can be used in all the organization’s repos.</li>
+</ul>
+<h3 id="containers">Containers</h3>
+<ul>
+<li><a href="https://docs.github.com/en/actions/configuring-and-managing-workflows/using-databases-and-service-containers">Service containers</a> can be set up for test databases and other needs.</li>
+<li><a href="https://github.community/t/you-can-now-use-images-from-private-registries-in-job-and-service-containers/134952">GitHub Actions now allows service containers from private registries</a>.</li>
+<li>Users can create their own actions. For example, <a href="https://docs.github.com/en/actions/creating-actions/creating-a-docker-container-action">container actions</a> can run in Docker containers of your choosing. <a href="https://docs.github.com/en/actions/creating-actions/creating-a-composite-action">Action composition</a> can help reduce code duplication.</li>
+</ul>
+<h3 id="concurrency">Concurrency</h3>
+<ul>
+<li>GitHub Actions offers a <a href="https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#concurrency"><code>concurrency</code></a> key to control how many workflows are running at one time.</li>
+<li>Syntax examples:
+<ul>
+<li>To only allow one concurrent workflow per commit: <code>concurrency: ci-${{ github.ref }}</code></li>
+<li>To only allow one concurrent workflow per <a href="https://docs.github.com/en/actions/reference/environments">environment</a>, at the job level: <code>concurrency: ${{ environment.name }}</code></li>
+</ul></li>
+<li>Concurrency can be specified at the workflow level, or at the job level.
+<ul>
+<li>It’s most useful to specify concurrency at the job level, because outputs from earlier jobs in the workflow can be used (like <code>concurrency: ${{ needs.setup-job.outputs.ecs-deployment-group-name }}</code>). Unfortunately, job-level concurrency (<a href="https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#jobsjob_idconcurrency"><code>jobs.&lt;job_id&gt;.concurrency</code></a>) triggers runs out of order (earlier jobs run after later jobs), which is not very useful. The docs explain, “Note: When concurrency is specified at the job level, order is not guaranteed for jobs or runs that queue within 5 minutes of each other.”</li>
+<li>Concurrency can also be specified at the workflow level, using the name of the workflow (<code>concurrency: ${{ github.workflow }}</code>). This avoids triggering runs out of order, but could also result in canceled workflow runs. Only one run can be pending at a time, and each new run will cancel the previous pending run.</li>
+</ul></li>
+<li>A common use case for limiting concurrency is in deployments. For example, when deploying Docker containers to AWS ECS Fargate with CodeDeploy, the <a href="https://github.com/marketplace/actions/amazon-ecs-deploy-task-definition-action-for-github-actions">aws-actions/amazon-ecs-deploy-task-definition</a> step may error with <a href="https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_CreateDeployment.html"><code>DeploymentLimitExceededException</code></a>. The error message will look something like, “The Deployment Group already has an active Deployment.” Furthermore, if GitHub Actions workflows are canceled, the ECS Fargate CodeDeploy deployments are not necessarily also canceled. If another GitHub Actions run proceeds, the <code>DeploymentLimitExceededException</code> may still be seen.
+<ul>
+<li>One solution is to add the <code>force-new-deployment: true</code> setting to the <a href="https://github.com/marketplace/actions/amazon-ecs-deploy-task-definition-action-for-github-actions">aws-actions/amazon-ecs-deploy-task-definition</a> step, to ensure that a new deployment is triggered.</li>
+<li>It is possible to simply re-run any workflows that failed because of this error.</li>
+<li>It could also be helpful to limit concurrency to a single deployment to avoid errors.</li>
+</ul></li>
+<li>Overall, GitHub Actions concurrency has many limitations, and may not be useful at this point.</li>
+<li><em>Note: concurrency is in beta and the syntax may change.</em></li>
+</ul>
+<h3 id="chaining-workflows-together">Chaining workflows together</h3>
+<ul>
+<li>The <code>needs:</code> key helps chain <em>jobs within a workflow</em> together, but not <em>multiple workflows</em>.</li>
+<li><p>There’s a new <code>workflow_run</code> trigger that may help to chain workflows together. The <a href="https://docs.github.com/en/actions/reference/events-that-trigger-workflows#workflow_run">GitHub Actions docs</a> explain how to use it to chain workflows:</p>
+<blockquote>
+<p>To run a workflow job conditionally based on the result of the previous workflow run, you can use the <a href="https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idif"><code>jobs.&lt;job_id&gt;.if</code></a> or <a href="https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idstepsif"><code>jobs.&lt;job_id&gt;.steps[*].if</code></a> conditional combined with the <code>conclusion</code> of the previous run. For example:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode yml"><code class="sourceCode yaml"><a class="sourceLine" id="cb4-1" title="1"><span class="fu">on:</span></a>
+<a class="sourceLine" id="cb4-2" title="2">    <span class="fu">workflow_run:</span></a>
+<a class="sourceLine" id="cb4-3" title="3">        <span class="fu">workflows:</span><span class="at"> </span><span class="kw">[</span><span class="st">&#39;Build&#39;</span><span class="kw">]</span></a>
+<a class="sourceLine" id="cb4-4" title="4">        <span class="fu">types:</span><span class="at"> </span><span class="kw">[</span>completed<span class="kw">]</span></a>
+<a class="sourceLine" id="cb4-5" title="5"></a>
+<a class="sourceLine" id="cb4-6" title="6"><span class="fu">jobs:</span></a>
+<a class="sourceLine" id="cb4-7" title="7">    <span class="fu">on-success:</span></a>
+<a class="sourceLine" id="cb4-8" title="8">        <span class="fu">runs-on:</span><span class="at"> ubuntu-latest</span></a>
+<a class="sourceLine" id="cb4-9" title="9">        <span class="fu">if:</span><span class="at"> ${{ github.event.workflow_run.conclusion == &#39;success&#39; }}</span></a>
+<a class="sourceLine" id="cb4-10" title="10">        <span class="fu">steps:</span><span class="at"> ...</span></a>
+<a class="sourceLine" id="cb4-11" title="11">    <span class="fu">on-failure:</span></a>
+<a class="sourceLine" id="cb4-12" title="12">        <span class="fu">runs-on:</span><span class="at"> ubuntu-latest</span></a>
+<a class="sourceLine" id="cb4-13" title="13">        <span class="fu">if:</span><span class="at"> ${{ github.event.workflow_run.conclusion == &#39;failure&#39; }}</span></a>
+<a class="sourceLine" id="cb4-14" title="14">        <span class="fu">steps:</span><span class="at"> ...</span></a></code></pre></div>
+</blockquote></li>
+<li><p>GitHub has also introduced some features for <a href="https://docs.github.com/en/actions/learn-github-actions/reusing-workflows">reusable workflows</a>, including a new <code>workflow_call</code> trigger that allows entire workflows to be called directly. The called workflow must include <code>on: workflow_call</code>, with inputs that are referenced in the downstream workflow.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode yml"><code class="sourceCode yaml"><a class="sourceLine" id="cb5-1" title="1"><span class="co"># greeter.yml</span></a>
+<a class="sourceLine" id="cb5-2" title="2"><span class="fu">name:</span><span class="at"> Reusable workflow example</span></a>
+<a class="sourceLine" id="cb5-3" title="3"></a>
+<a class="sourceLine" id="cb5-4" title="4"><span class="fu">on:</span></a>
+<a class="sourceLine" id="cb5-5" title="5">    <span class="fu">workflow_call:</span></a>
+<a class="sourceLine" id="cb5-6" title="6">        <span class="fu">inputs:</span></a>
+<a class="sourceLine" id="cb5-7" title="7">            <span class="fu">username:</span></a>
+<a class="sourceLine" id="cb5-8" title="8">                <span class="fu">description:</span><span class="at"> Username for the workflow</span></a>
+<a class="sourceLine" id="cb5-9" title="9">                <span class="fu">required:</span><span class="at"> </span><span class="ch">true</span></a>
+<a class="sourceLine" id="cb5-10" title="10">                <span class="fu">type:</span><span class="at"> string</span></a>
+<a class="sourceLine" id="cb5-11" title="11">            <span class="fu">repo:</span></a>
+<a class="sourceLine" id="cb5-12" title="12"><span class="fu">                description:</span> <span class="st">&gt;</span></a>
+<a class="sourceLine" id="cb5-13" title="13">                    Repository to check out.</a>
+<a class="sourceLine" id="cb5-14" title="14">                    Include a personal access token (PAT) with repo scope for private repos.</a>
+<a class="sourceLine" id="cb5-15" title="15">                <span class="fu">required:</span><span class="at"> </span><span class="ch">true</span></a>
+<a class="sourceLine" id="cb5-16" title="16">                <span class="fu">type:</span><span class="at"> string</span></a>
+<a class="sourceLine" id="cb5-17" title="17">            <span class="fu">environment:</span></a>
+<a class="sourceLine" id="cb5-18" title="18">                <span class="fu">required:</span><span class="at"> </span><span class="ch">false</span></a>
+<a class="sourceLine" id="cb5-19" title="19">                <span class="fu">type:</span><span class="at"> string</span></a>
+<a class="sourceLine" id="cb5-20" title="20">                <span class="fu">default:</span><span class="at"> development</span></a>
+<a class="sourceLine" id="cb5-21" title="21">        <span class="fu">secrets:</span></a>
+<a class="sourceLine" id="cb5-22" title="22">            <span class="fu">personal-access-token:</span></a>
+<a class="sourceLine" id="cb5-23" title="23">                <span class="fu">description:</span><span class="at"> GitHub Personal Access Token (PAT) with necessary scopes</span></a>
+<a class="sourceLine" id="cb5-24" title="24">                <span class="fu">required:</span><span class="at"> </span><span class="ch">false</span></a>
+<a class="sourceLine" id="cb5-25" title="25"></a>
+<a class="sourceLine" id="cb5-26" title="26"><span class="fu">jobs:</span></a>
+<a class="sourceLine" id="cb5-27" title="27">    <span class="fu">greeter:</span></a>
+<a class="sourceLine" id="cb5-28" title="28">        <span class="fu">name:</span><span class="at"> Greet the user</span></a>
+<a class="sourceLine" id="cb5-29" title="29">        <span class="fu">runs-on:</span><span class="at"> ubuntu-latest</span></a>
+<a class="sourceLine" id="cb5-30" title="30">        <span class="fu">steps:</span></a>
+<a class="sourceLine" id="cb5-31" title="31">            <span class="fu">uses:</span><span class="at"> actions/checkout@v2</span></a>
+<a class="sourceLine" id="cb5-32" title="32">            <span class="fu">with:</span></a>
+<a class="sourceLine" id="cb5-33" title="33">                <span class="fu">repository:</span><span class="at"> ${{ inputs.repo }}</span></a>
+<a class="sourceLine" id="cb5-34" title="34">                <span class="fu">token:</span><span class="at"> ${{ secrets.personal-access-token }}</span></a>
+<a class="sourceLine" id="cb5-35" title="35"><span class="fu">            run:</span> <span class="st">|</span></a>
+<a class="sourceLine" id="cb5-36" title="36">                echo &#39;Hello, ${{ inputs.username }}!&#39; \</a>
+<a class="sourceLine" id="cb5-37" title="37">                  &#39;The repo ${{ inputs.repo }} was checked out.&#39; \</a>
+<a class="sourceLine" id="cb5-38" title="38">                  &#39;This is the ${{ inputs.environment }} environment.&#39;</a></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode yml"><code class="sourceCode yaml"><a class="sourceLine" id="cb6-1" title="1"><span class="fu">name:</span><span class="at"> Downstream workflow that uses the reusable workflow</span></a>
+<a class="sourceLine" id="cb6-2" title="2"></a>
+<a class="sourceLine" id="cb6-3" title="3"><span class="fu">on:</span></a>
+<a class="sourceLine" id="cb6-4" title="4">    <span class="fu">push:</span></a>
+<a class="sourceLine" id="cb6-5" title="5">    <span class="fu">pull_request:</span></a>
+<a class="sourceLine" id="cb6-6" title="6">    <span class="fu">workflow_dispatch:</span></a>
+<a class="sourceLine" id="cb6-7" title="7"></a>
+<a class="sourceLine" id="cb6-8" title="8"><span class="fu">jobs:</span></a>
+<a class="sourceLine" id="cb6-9" title="9">    <span class="fu">greet_me:</span></a>
+<a class="sourceLine" id="cb6-10" title="10">        <span class="fu">uses:</span><span class="at"> org/repo/.github/workflows/greeter.yml@main</span></a>
+<a class="sourceLine" id="cb6-11" title="11">        <span class="fu">with:</span></a>
+<a class="sourceLine" id="cb6-12" title="12">            <span class="fu">username:</span><span class="at"> Octocat</span></a>
+<a class="sourceLine" id="cb6-13" title="13">            <span class="fu">repo:</span><span class="at"> my-private-repo</span></a>
+<a class="sourceLine" id="cb6-14" title="14">            <span class="fu">personal-access-token:</span><span class="at"> ${{ secrets.MY_GITHUB_PAT }}</span></a></code></pre></div>
+<pre class="text"><code>Hello, Octocat! The repo my-private-repo was checked out. This is the development environment.</code></pre></li>
+</ul>
+<h3 id="error-handling">Error handling</h3>
+<ul>
+<li>Use <a href="https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#jobsjob_idstepscontinue-on-error"><code>continue-on-error: true</code> on a step</a> to continue the job if the step fails, and use <a href="https://docs.github.com/en/actions/learn-github-actions/contexts#steps-context"><code>if: steps.&lt;step_id&gt;.outcome == 'success'</code></a> to trigger downstream steps only if the step succeeds.</li>
+<li>Use <a href="https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#jobsjob_idcontinue-on-error"><code>continue-on-error: true</code> on a job</a> to continue to the next job if the current job fails, and use <a href="https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#jobsjob_id"><code>if: jobs.&lt;job_id&gt;.outcome == 'success'</code></a> to trigger downstream jobs only if the job succeeds.</li>
+</ul>
+<h3 id="environments">Environments</h3>
+<p>GitHub Actions offers <a href="https://docs.github.com/en/actions/reference/environments">environments</a>, which allow branch protection rules and secrets to be set individually for each environment (instead of for the repo as a whole). The way they’ve set up environments is a little confusing, and most of the functionality of environments can be implemented with other features like <code>strategy.matrix</code> or environment variables.</p>
+<p>Let’s look at a common use case that highlights the limitations of environments: deploying a service to multiple cloud regions. We’ll use two environments that map to Git branches, and two cloud regions for each environment.</p>
+<h4 id="setting-up-environments">Setting up environments</h4>
+<ol type="1">
+<li>In a GitHub repo’s settings, add an <strong><a href="https://docs.github.com/en/actions/reference/environments">environment</a></strong> for each combo of Git branch and AWS region. For example, for two Git branches and two AWS regions, the environment names could be:
+<ul>
+<li><code>development-us-east-1</code></li>
+<li><code>development-us-west-2</code></li>
+<li><code>production-us-east-1</code></li>
+<li><code>production-us-west-2</code></li>
+</ul></li>
+<li>In each environment’s <strong>environment protection rules</strong>, set the <strong>deployment branch</strong> to the corresponding Git branch:
+<ul>
+<li><code>development-us-east-1</code>: <code>develop</code></li>
+<li><code>development-us-west-2</code>: <code>develop</code></li>
+<li><code>production-us-east-1</code>: <code>main</code></li>
+<li><code>production-us-west-2</code>: <code>main</code></li>
+</ul></li>
+<li>In the <strong>environment secrets</strong> for each environment, set a secret with key <code>AWS_REGION</code> and value set to the corresponding AWS region. These aren’t necessarily sensitive credentials, but GitHub uses secrets for all key-value pairs. Examples:
+<ul>
+<li><code>development-us-east-1</code>: secret name: <code>AWS_REGION</code>, secret value: <code>us-east-1</code></li>
+<li><code>development-us-west-2</code>: secret name: <code>AWS_REGION</code>, secret value: <code>us-west-2</code></li>
+<li><code>production-us-east-1</code>: secret name: <code>AWS_REGION</code>, secret value: <code>us-east-1</code></li>
+<li><code>production-us-west-2</code>: secret name: <code>AWS_REGION</code>, secret value: <code>us-west-2</code></li>
+</ul></li>
+<li><strong><a href="https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idenvironment">Reference the environment name within GitHub Actions workflows</a></strong>, optionally limiting <strong><a href="https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#concurrency">workflow concurrency</a></strong> by each environment.</li>
+</ol>
+<h4 id="minimal-example">Minimal example</h4>
+<div class="sourceCode" id="cb8"><pre class="sourceCode yml"><code class="sourceCode yaml"><a class="sourceLine" id="cb8-1" title="1"><span class="fu">name:</span><span class="at"> multi-region environment example</span></a>
+<a class="sourceLine" id="cb8-2" title="2"></a>
+<a class="sourceLine" id="cb8-3" title="3"><span class="fu">on:</span></a>
+<a class="sourceLine" id="cb8-4" title="4">    <span class="fu">push:</span></a>
+<a class="sourceLine" id="cb8-5" title="5">        <span class="fu">branches:</span><span class="at"> </span><span class="kw">[</span>develop<span class="kw">,</span> main<span class="kw">]</span></a>
+<a class="sourceLine" id="cb8-6" title="6">    <span class="fu">workflow_dispatch:</span></a>
+<a class="sourceLine" id="cb8-7" title="7"></a>
+<a class="sourceLine" id="cb8-8" title="8"><span class="fu">jobs:</span></a>
+<a class="sourceLine" id="cb8-9" title="9">    <span class="fu">setup:</span></a>
+<a class="sourceLine" id="cb8-10" title="10">        <span class="fu">runs-on:</span><span class="at"> ubuntu-latest</span></a>
+<a class="sourceLine" id="cb8-11" title="11">        <span class="fu">outputs:</span></a>
+<a class="sourceLine" id="cb8-12" title="12">            <span class="fu">deploy-env:</span><span class="at"> ${{ steps.set-deploy-env.outputs.deploy-env }}</span></a>
+<a class="sourceLine" id="cb8-13" title="13">        <span class="fu">steps:</span></a>
+<a class="sourceLine" id="cb8-14" title="14">            <span class="kw">-</span> <span class="fu">uses:</span><span class="at"> actions/checkout@v2</span></a>
+<a class="sourceLine" id="cb8-15" title="15">            <span class="kw">-</span> <span class="fu">name:</span><span class="at"> Set deployment environment based on Git branch</span></a>
+<a class="sourceLine" id="cb8-16" title="16">              <span class="fu">id:</span><span class="at"> set-deploy-env</span></a>
+<a class="sourceLine" id="cb8-17" title="17"><span class="fu">              run:</span> <span class="st">|</span></a>
+<a class="sourceLine" id="cb8-18" title="18">                  if ${{ github.ref == &#39;refs/heads/main&#39; }} || ${{ startsWith(github.ref, &#39;refs/tags/&#39;) }}; then</a>
+<a class="sourceLine" id="cb8-19" title="19">                    DEPLOY_ENV=&quot;production&quot;</a>
+<a class="sourceLine" id="cb8-20" title="20">                  else</a>
+<a class="sourceLine" id="cb8-21" title="21">                    DEPLOY_ENV=&quot;development&quot;</a>
+<a class="sourceLine" id="cb8-22" title="22">                  fi</a>
+<a class="sourceLine" id="cb8-23" title="23">                  echo ::set-output name=deploy-env::$DEPLOY_ENV</a>
+<a class="sourceLine" id="cb8-24" title="24">    <span class="fu">deploy:</span></a>
+<a class="sourceLine" id="cb8-25" title="25">        <span class="fu">needs:</span><span class="at"> </span><span class="kw">[</span>setup<span class="kw">]</span></a>
+<a class="sourceLine" id="cb8-26" title="26">        <span class="fu">runs-on:</span><span class="at"> ubuntu-latest</span></a>
+<a class="sourceLine" id="cb8-27" title="27">        <span class="fu">strategy:</span></a>
+<a class="sourceLine" id="cb8-28" title="28">            <span class="fu">matrix:</span></a>
+<a class="sourceLine" id="cb8-29" title="29">                <span class="fu">aws-region:</span><span class="at"> </span><span class="kw">[</span>us-east<span class="dv">-1</span><span class="kw">,</span> us-west<span class="dv">-2</span><span class="kw">]</span></a>
+<a class="sourceLine" id="cb8-30" title="30">        <span class="fu">environment:</span></a>
+<a class="sourceLine" id="cb8-31" title="31">            <span class="fu">name:</span><span class="at"> ${{ needs.setup.outputs.deploy-env }}-${{ matrix.aws-region }}</span></a>
+<a class="sourceLine" id="cb8-32" title="32">        <span class="fu">concurrency:</span><span class="at"> ${{ environment.name }}</span></a>
+<a class="sourceLine" id="cb8-33" title="33">        <span class="fu">steps:</span></a>
+<a class="sourceLine" id="cb8-34" title="34">            <span class="kw">-</span> <span class="fu">uses:</span><span class="at"> aws-actions/configure-aws-credentials@v1</span></a>
+<a class="sourceLine" id="cb8-35" title="35">              <span class="fu">id:</span><span class="at"> aws-login</span></a>
+<a class="sourceLine" id="cb8-36" title="36">              <span class="fu">with:</span></a>
+<a class="sourceLine" id="cb8-37" title="37">                  <span class="fu">aws-region:</span><span class="at"> ${{ secrets.AWS_REGION }}</span></a>
+<a class="sourceLine" id="cb8-38" title="38">                  <span class="fu">aws-access-key-id:</span><span class="at"> ${{ secrets.AWS_ACCESS_KEY_ID }}</span></a>
+<a class="sourceLine" id="cb8-39" title="39">                  <span class="fu">aws-secret-access-key:</span><span class="at"> ${{ secrets.AWS_SECRET_ACCESS_KEY }}</span></a>
+<a class="sourceLine" id="cb8-40" title="40">            <span class="kw">-</span> <span class="fu">run:</span><span class="at"> echo &quot;This job will deploy to the environment named ${{ environment.name }}.&quot;</span></a></code></pre></div>
+<h4 id="limitations">Limitations</h4>
+<p>By the time you’ve done all the setup to actually specify the deployment environment and region, you already have the region you need, and the environment isn’t particularly useful. For example, in the <code>aws-login</code> step above, the <code>aws-region: ${{ secrets.AWS_REGION }}</code> value could be replaced by <code>aws-region: ${{ matrix.aws-region }}</code>. It would be more helpful to have an environment automatically apply to a Git branch or a workflow, and then be able to reference the configuration values within workflows automatically. It’s actually the opposite. You have to specify the environment from within the workflow, and then if the environment protection rules are met, you get access to the corresponding environment secrets.</p>
+<h3 id="vms-and-pricing">VMs and pricing</h3>
+<ul>
+<li><strong>VM info</strong>: The GitHub Actions runner <a href="https://docs.github.com/en/actions/reference/virtual-environments-for-github-hosted-runners">provisions virtual machines</a> with similar resources as <a href="https://aws.amazon.com/ec2/instance-types/">AWS EC2 <code>t2.large</code> instances</a>.
+<ul>
+<li>2-core CPU</li>
+<li>7 GB of RAM memory</li>
+<li>14 GB of SSD disk space</li>
+</ul></li>
+<li><p>GitHub Actions is free for open-source repos. Pricing for other repos only kicks in if you exceed the allotted build minutes.</p>
+<p><img src="https://gist.githubusercontent.com/br3ndonland/f9c753eb27381f97336aa21b8d932be6/raw/194dc0e4b8b02e29fe50477a48e0e07aa09408db/images-features-pricing.png" alt="GitHub Actions pricing info from https://github.com/features/actions" width="800px"></p></li>
+</ul>
+<h3 id="github-actions-and-poetry">GitHub Actions and Poetry</h3>
+<p><a href="https://python-poetry.org/">Poetry</a> is a useful tool for Python packaging and dependency management. The following set of tips was originally posted to <a href="https://github.com/python-poetry/poetry/issues/366#issuecomment-691412462">python-poetry/poetry#366</a>.</p>
+<h4 id="use-caching-to-speed-up-workflows">Use caching to speed up workflows</h4>
+<p>Use <a href="https://github.com/marketplace/actions/cache">actions/cache</a> with a variation on their <a href="https://github.com/actions/cache/blob/main/examples.md"><code>pip</code> cache example</a> to cache Poetry dependencies for faster installation.</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode yml"><code class="sourceCode yaml"><a class="sourceLine" id="cb9-1" title="1"><span class="kw">-</span> <span class="fu">name:</span><span class="at"> Set up Poetry cache for Python dependencies</span></a>
+<a class="sourceLine" id="cb9-2" title="2">  <span class="fu">uses:</span><span class="at"> actions/cache@v2</span></a>
+<a class="sourceLine" id="cb9-3" title="3">  <span class="fu">if:</span><span class="at"> startsWith(runner.os, &#39;Linux&#39;)</span></a>
+<a class="sourceLine" id="cb9-4" title="4">  <span class="fu">with:</span></a>
+<a class="sourceLine" id="cb9-5" title="5">      <span class="fu">path:</span><span class="at"> ~/.cache/pypoetry</span></a>
+<a class="sourceLine" id="cb9-6" title="6">      <span class="fu">key:</span><span class="at"> ${{ runner.os }}-poetry-${{ hashFiles(&#39;**/poetry.lock&#39;) }}</span></a>
+<a class="sourceLine" id="cb9-7" title="7">      <span class="fu">restore-keys:</span><span class="at"> ${{ runner.os }}-poetry-</span></a></code></pre></div>
+<h4 id="use-the-custom-installer">Use the custom installer</h4>
+<p>Installing Poetry via <code>pip</code> can lead to dependency conflicts, so the custom installer is recommended. The command listed in the <a href="https://python-poetry.org/docs/#installation">docs</a> exits in GitHub Actions with <code>127</code> (<a href="https://www.gnu.org/software/bash/manual/html_node/Exit-Status.html">not on <code>$PATH</code></a>).</p>
+<p>There are some additional modifications needed for GitHub Actions:</p>
+<ul>
+<li>Add <code>-y</code> to avoid prompts.</li>
+<li>Add Poetry to <a href="https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-commands-for-github-actions#environment-files"><code>$GITHUB_PATH</code></a> (note that the <code>::set-env</code> syntax has been <a href="https://github.blog/changelog/2020-10-01-github-actions-deprecating-set-env-and-add-path-commands/">deprecated</a>).</li>
+<li>Move <code>poetry install</code> to separate step to ensure Poetry is on <code>$GITHUB_PATH</code>.</li>
+</ul>
+<div class="sourceCode" id="cb10"><pre class="sourceCode yml"><code class="sourceCode yaml"><a class="sourceLine" id="cb10-1" title="1"><span class="kw">-</span> <span class="fu">name:</span><span class="at"> Install Poetry</span></a>
+<a class="sourceLine" id="cb10-2" title="2"><span class="fu">  run:</span> <span class="st">|</span></a>
+<a class="sourceLine" id="cb10-3" title="3">      curl -fsS -o get-poetry.py https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py</a>
+<a class="sourceLine" id="cb10-4" title="4">      python get-poetry.py -y</a>
+<a class="sourceLine" id="cb10-5" title="5">      echo &quot;$HOME/.poetry/bin&quot; &gt;&gt; $GITHUB_PATH</a>
+<a class="sourceLine" id="cb10-6" title="6"><span class="kw">-</span> <span class="fu">name:</span><span class="at"> Install dependencies</span></a>
+<a class="sourceLine" id="cb10-7" title="7">  <span class="fu">run:</span><span class="at"> poetry install --no-interaction</span></a></code></pre></div>
+<h4 id="use-environment-variables-for-config">Use environment variables for config</h4>
+<p>Poetry allows config from the <code>poetry config</code> command, or <a href="https://python-poetry.org/docs/configuration/#using-environment-variables">by environment variables</a>. Environment variables are a more dependable way to configure Poetry in CI.</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode yml"><code class="sourceCode yaml"><a class="sourceLine" id="cb11-1" title="1"><span class="fu">env:</span></a>
+<a class="sourceLine" id="cb11-2" title="2">    <span class="fu">POETRY_VIRTUALENVS_CREATE:</span><span class="at"> </span><span class="ch">false</span></a></code></pre></div>
+<h4 id="build-and-publish-in-one-step">Build and publish in one step</h4>
+<ul>
+<li><a href="https://pypi.org/help/#apitoken">Create a PyPI token</a>.</li>
+<li>Add it to the <a href="https://docs.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets">GitHub Secrets</a> store for the repo <em>(Settings -&gt; Secrets)</em>.</li>
+<li>Use the secret in your workflow with <code>${{ secrets.PYPI_TOKEN }}</code> (secret name is <code>PYPI_TOKEN</code> in this example, and username for PyPI tokens is <code>__token__</code>).</li>
+<li>Use <a href="https://python-poetry.org/docs/cli/#publish"><code>poetry publish --build</code></a> to build and publish in one step.</li>
+</ul>
+<div class="sourceCode" id="cb12"><pre class="sourceCode yml"><code class="sourceCode yaml"><a class="sourceLine" id="cb12-1" title="1"><span class="kw">-</span> <span class="fu">name:</span><span class="at"> Build Python package and publish to PyPI</span></a>
+<a class="sourceLine" id="cb12-2" title="2">  <span class="fu">if:</span><span class="at"> startsWith(github.ref, &#39;refs/tags/&#39;)</span></a>
+<a class="sourceLine" id="cb12-3" title="3">  <span class="fu">run:</span><span class="at"> poetry publish --build -u __token__ -p ${{ secrets.PYPI_TOKEN }}</span></a></code></pre></div>
+<p>That’s why they call it Poetry. Beautiful.</p>
+<h4 id="example-workflow">Example workflow</h4>
+<details>
+<p><summary><em>Expand this details element for an example workflow from <a href="https://github.com/br3ndonland/inboard">br3ndonland/inboard</a> that uses these tips.</em></summary></p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode yml"><code class="sourceCode yaml"><a class="sourceLine" id="cb13-1" title="1"><span class="fu">name:</span><span class="at"> builds</span></a>
+<a class="sourceLine" id="cb13-2" title="2"></a>
+<a class="sourceLine" id="cb13-3" title="3"><span class="fu">on:</span></a>
+<a class="sourceLine" id="cb13-4" title="4">    <span class="fu">push:</span></a>
+<a class="sourceLine" id="cb13-5" title="5">        <span class="fu">branches:</span><span class="at"> </span><span class="kw">[</span>develop<span class="kw">,</span> master<span class="kw">]</span></a>
+<a class="sourceLine" id="cb13-6" title="6">        <span class="fu">tags:</span></a>
+<a class="sourceLine" id="cb13-7" title="7">            <span class="kw">-</span> <span class="st">&#39;[0-9v]+.[0-9]+.[0-9a-z]+&#39;</span></a>
+<a class="sourceLine" id="cb13-8" title="8">    <span class="fu">workflow_dispatch:</span></a>
+<a class="sourceLine" id="cb13-9" title="9"></a>
+<a class="sourceLine" id="cb13-10" title="10"><span class="fu">jobs:</span></a>
+<a class="sourceLine" id="cb13-11" title="11">    <span class="fu">python:</span></a>
+<a class="sourceLine" id="cb13-12" title="12">        <span class="fu">runs-on:</span><span class="at"> ubuntu-latest</span></a>
+<a class="sourceLine" id="cb13-13" title="13">        <span class="fu">env:</span></a>
+<a class="sourceLine" id="cb13-14" title="14">            <span class="fu">POETRY_VIRTUALENVS_CREATE:</span><span class="at"> </span><span class="ch">false</span></a>
+<a class="sourceLine" id="cb13-15" title="15">        <span class="fu">steps:</span></a>
+<a class="sourceLine" id="cb13-16" title="16">            <span class="kw">-</span> <span class="fu">uses:</span><span class="at"> actions/checkout@v2</span></a>
+<a class="sourceLine" id="cb13-17" title="17">            <span class="kw">-</span> <span class="fu">uses:</span><span class="at"> actions/setup-python@v2</span></a>
+<a class="sourceLine" id="cb13-18" title="18">              <span class="fu">with:</span></a>
+<a class="sourceLine" id="cb13-19" title="19">                  <span class="fu">python-version:</span><span class="at"> </span><span class="fl">3.8</span></a>
+<a class="sourceLine" id="cb13-20" title="20">            <span class="kw">-</span> <span class="fu">name:</span><span class="at"> Set up Poetry cache for Python dependencies</span></a>
+<a class="sourceLine" id="cb13-21" title="21">              <span class="fu">uses:</span><span class="at"> actions/cache@v2</span></a>
+<a class="sourceLine" id="cb13-22" title="22">              <span class="fu">if:</span><span class="at"> startsWith(runner.os, &#39;Linux&#39;)</span></a>
+<a class="sourceLine" id="cb13-23" title="23">              <span class="fu">with:</span></a>
+<a class="sourceLine" id="cb13-24" title="24">                  <span class="fu">path:</span><span class="at"> ~/.cache/pypoetry</span></a>
+<a class="sourceLine" id="cb13-25" title="25">                  <span class="fu">key:</span><span class="at"> ${{ runner.os }}-poetry-${{ hashFiles(&#39;**/poetry.lock&#39;) }}</span></a>
+<a class="sourceLine" id="cb13-26" title="26">                  <span class="fu">restore-keys:</span><span class="at"> ${{ runner.os }}-poetry-</span></a>
+<a class="sourceLine" id="cb13-27" title="27">            <span class="kw">-</span> <span class="fu">name:</span><span class="at"> Set up pre-commit cache</span></a>
+<a class="sourceLine" id="cb13-28" title="28">              <span class="fu">uses:</span><span class="at"> actions/cache@v2</span></a>
+<a class="sourceLine" id="cb13-29" title="29">              <span class="fu">if:</span><span class="at"> startsWith(runner.os, &#39;Linux&#39;)</span></a>
+<a class="sourceLine" id="cb13-30" title="30">              <span class="fu">with:</span></a>
+<a class="sourceLine" id="cb13-31" title="31">                  <span class="fu">path:</span><span class="at"> ~/.cache/pre-commit</span></a>
+<a class="sourceLine" id="cb13-32" title="32">                  <span class="fu">key:</span><span class="at"> ${{ runner.os }}-pre-commit-${{ hashFiles(&#39;.pre-commit-config.yaml&#39;) }}</span></a>
+<a class="sourceLine" id="cb13-33" title="33">                  <span class="fu">restore-keys:</span><span class="at"> ${{ runner.os }}-pre-commit-</span></a>
+<a class="sourceLine" id="cb13-34" title="34">            <span class="kw">-</span> <span class="fu">name:</span><span class="at"> Install Poetry</span></a>
+<a class="sourceLine" id="cb13-35" title="35"><span class="fu">              run:</span> <span class="st">|</span></a>
+<a class="sourceLine" id="cb13-36" title="36">                  curl -fsS -o get-poetry.py https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py</a>
+<a class="sourceLine" id="cb13-37" title="37">                  python get-poetry.py -y</a>
+<a class="sourceLine" id="cb13-38" title="38">                  echo &quot;$HOME/.poetry/bin&quot; &gt;&gt; $GITHUB_PATH</a>
+<a class="sourceLine" id="cb13-39" title="39">            <span class="kw">-</span> <span class="fu">name:</span><span class="at"> Install dependencies</span></a>
+<a class="sourceLine" id="cb13-40" title="40">              <span class="fu">run:</span><span class="at"> poetry install --no-interaction -E fastapi</span></a>
+<a class="sourceLine" id="cb13-41" title="41">            <span class="kw">-</span> <span class="fu">name:</span><span class="at"> Run pre-commit hooks</span></a>
+<a class="sourceLine" id="cb13-42" title="42">              <span class="fu">run:</span><span class="at"> pre-commit run --all-files</span></a>
+<a class="sourceLine" id="cb13-43" title="43">            <span class="kw">-</span> <span class="fu">name:</span><span class="at"> Run unit tests</span></a>
+<a class="sourceLine" id="cb13-44" title="44">              <span class="fu">run:</span><span class="at"> pytest</span></a>
+<a class="sourceLine" id="cb13-45" title="45">            <span class="kw">-</span> <span class="fu">name:</span><span class="at"> Build Python package and publish to PyPI</span></a>
+<a class="sourceLine" id="cb13-46" title="46">              <span class="fu">if:</span><span class="at"> startsWith(github.ref, &#39;refs/tags/&#39;)</span></a>
+<a class="sourceLine" id="cb13-47" title="47">              <span class="fu">run:</span><span class="at"> poetry publish --build -u __token__ -p ${{ secrets.PYPI_TOKEN }}</span></a>
+<a class="sourceLine" id="cb13-48" title="48">    <span class="fu">docker:</span></a>
+<a class="sourceLine" id="cb13-49" title="49">        <span class="fu">runs-on:</span><span class="at"> ubuntu-latest</span></a>
+<a class="sourceLine" id="cb13-50" title="50">        <span class="fu">needs:</span><span class="at"> </span><span class="kw">[</span>python<span class="kw">]</span></a>
+<a class="sourceLine" id="cb13-51" title="51">        <span class="fu">steps:</span></a>
+<a class="sourceLine" id="cb13-52" title="52">            <span class="kw">-</span> <span class="fu">uses:</span><span class="at"> actions/checkout@v2</span></a>
+<a class="sourceLine" id="cb13-53" title="53">            <span class="kw">-</span> <span class="fu">name:</span><span class="at"> Log in to Docker registry</span></a>
+<a class="sourceLine" id="cb13-54" title="54">              <span class="fu">run:</span><span class="at"> docker login ghcr.io -u ${{ github.actor }} -p ${{ secrets.PAT_GHCR }}</span></a>
+<a class="sourceLine" id="cb13-55" title="55">            <span class="kw">-</span> <span class="fu">name:</span><span class="at"> Build Docker images</span></a>
+<a class="sourceLine" id="cb13-56" title="56"><span class="fu">              run:</span> <span class="st">|</span></a>
+<a class="sourceLine" id="cb13-57" title="57">                  docker build . --rm --target base -t ghcr.io/br3ndonland/inboard:base --cache-from python:3.8</a>
+<a class="sourceLine" id="cb13-58" title="58">                  docker build . --rm --target starlette -t ghcr.io/br3ndonland/inboard:starlette</a>
+<a class="sourceLine" id="cb13-59" title="59">                  docker build . --rm --target fastapi -t ghcr.io/br3ndonland/inboard:fastapi</a>
+<a class="sourceLine" id="cb13-60" title="60">            <span class="kw">-</span> <span class="fu">name:</span><span class="at"> Push Docker images to registry</span></a>
+<a class="sourceLine" id="cb13-61" title="61"><span class="fu">              run:</span> <span class="st">|</span></a>
+<a class="sourceLine" id="cb13-62" title="62">                  docker push ghcr.io/br3ndonland/inboard:base</a>
+<a class="sourceLine" id="cb13-63" title="63">                  docker push ghcr.io/br3ndonland/inboard:starlette</a>
+<a class="sourceLine" id="cb13-64" title="64">                  docker push ghcr.io/br3ndonland/inboard:fastapi</a>
+<a class="sourceLine" id="cb13-65" title="65">            <span class="kw">-</span> <span class="fu">name:</span><span class="at"> Add Git tag to Docker images</span></a>
+<a class="sourceLine" id="cb13-66" title="66">              <span class="fu">if:</span><span class="at"> startsWith(github.ref, &#39;refs/tags/&#39;)</span></a>
+<a class="sourceLine" id="cb13-67" title="67"><span class="fu">              run:</span> <span class="st">|</span></a>
+<a class="sourceLine" id="cb13-68" title="68">                  GIT_TAG=$(echo ${{ github.ref }} | cut -d / -f 3)</a>
+<a class="sourceLine" id="cb13-69" title="69">                  docker tag ghcr.io/br3ndonland/inboard:base ghcr.io/br3ndonland/inboard:base-&quot;$GIT_TAG&quot;</a>
+<a class="sourceLine" id="cb13-70" title="70">                  docker tag ghcr.io/br3ndonland/inboard:starlette ghcr.io/br3ndonland/inboard:starlette-&quot;$GIT_TAG&quot;</a>
+<a class="sourceLine" id="cb13-71" title="71">                  docker tag ghcr.io/br3ndonland/inboard:fastapi ghcr.io/br3ndonland/inboard:fastapi-&quot;$GIT_TAG&quot;</a>
+<a class="sourceLine" id="cb13-72" title="72">                  docker push ghcr.io/br3ndonland/inboard:base-&quot;$GIT_TAG&quot;</a>
+<a class="sourceLine" id="cb13-73" title="73">                  docker push ghcr.io/br3ndonland/inboard:starlette-&quot;$GIT_TAG&quot;</a>
+<a class="sourceLine" id="cb13-74" title="74">                  docker push ghcr.io/br3ndonland/inboard:fastapi-&quot;$GIT_TAG&quot;</a>
+<a class="sourceLine" id="cb13-75" title="75">            <span class="kw">-</span> <span class="fu">name:</span><span class="at"> Tag and push latest image</span></a>
+<a class="sourceLine" id="cb13-76" title="76"><span class="fu">              run:</span> <span class="st">|</span></a>
+<a class="sourceLine" id="cb13-77" title="77">                  docker tag ghcr.io/br3ndonland/inboard:fastapi ghcr.io/br3ndonland/inboard:latest</a>
+<a class="sourceLine" id="cb13-78" title="78">                  docker push ghcr.io/br3ndonland/inboard:latest</a></code></pre></div>
+</details>
+<h4 id="bonus-automated-dependency-updates-with-dependabot">Bonus: automated dependency updates with Dependabot</h4>
+<p>Dependabot now offers <a href="https://github.blog/2020-06-01-keep-all-your-packages-up-to-date-with-dependabot/">automated version updates</a>, with (preliminary) support for Poetry :tada:. If you have access to the Dependabot beta, set up <em>.github/dependabot.yml</em> as described in the <a href="https://docs.github.com/en/github/administering-a-repository/about-github-dependabot-version-updates">docs</a>:</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode yml"><code class="sourceCode yaml"><a class="sourceLine" id="cb14-1" title="1"><span class="fu">version:</span><span class="at"> </span><span class="dv">2</span></a>
+<a class="sourceLine" id="cb14-2" title="2"><span class="fu">updates:</span></a>
+<a class="sourceLine" id="cb14-3" title="3">    <span class="kw">-</span> <span class="fu">package-ecosystem:</span><span class="at"> </span><span class="st">&#39;github-actions&#39;</span></a>
+<a class="sourceLine" id="cb14-4" title="4">      <span class="fu">directory:</span><span class="at"> </span><span class="st">&#39;/&#39;</span></a>
+<a class="sourceLine" id="cb14-5" title="5">      <span class="fu">schedule:</span></a>
+<a class="sourceLine" id="cb14-6" title="6">          <span class="fu">interval:</span><span class="at"> </span><span class="st">&#39;weekly&#39;</span></a>
+<a class="sourceLine" id="cb14-7" title="7">    <span class="kw">-</span> <span class="fu">package-ecosystem:</span><span class="at"> </span><span class="st">&#39;pip&#39;</span></a>
+<a class="sourceLine" id="cb14-8" title="8">      <span class="fu">directory:</span><span class="at"> </span><span class="st">&#39;/&#39;</span></a>
+<a class="sourceLine" id="cb14-9" title="9">      <span class="fu">schedule:</span></a>
+<a class="sourceLine" id="cb14-10" title="10">          <span class="fu">interval:</span><span class="at"> </span><span class="st">&#39;weekly&#39;</span></a></code></pre></div>
+<p>Dependabot will now send you PRs when dependency updates are available. Although <code>package-ecosystem</code> must be set to <code>pip</code>, it will pick up the <em>pyproject.toml</em> and <em>poetry.lock</em>. Check the status of the repo at <em>Insights -&gt; Dependency graph -&gt; Dependabot</em>.</p>
+<h2 id="challenges">Challenges</h2>
+<h3 id="lacking-necessary-on-triggers">Lacking necessary <code>on:</code> triggers</h3>
+<p>There’s no PR merge trigger. There are two ways to implement this:</p>
+<ol type="1">
+<li><p>Use <code>pull_request:</code> <code>types: [closed]</code> as the event trigger and only run each job if the event payload contains <code>merged == 'true'</code>. See the <a href="https://docs.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions">context and expression syntax docs</a> for examples of how to use the event payload.</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode yml"><code class="sourceCode yaml"><a class="sourceLine" id="cb15-1" title="1"><span class="fu">name:</span><span class="at"> demo</span></a>
+<a class="sourceLine" id="cb15-2" title="2"><span class="fu">on:</span></a>
+<a class="sourceLine" id="cb15-3" title="3">    <span class="fu">pull_request:</span></a>
+<a class="sourceLine" id="cb15-4" title="4">        <span class="fu">types:</span><span class="at"> </span><span class="kw">[</span>closed<span class="kw">]</span></a>
+<a class="sourceLine" id="cb15-5" title="5">    <span class="co"># release:</span></a>
+<a class="sourceLine" id="cb15-6" title="6">    <span class="co">#   types: [published]</span></a>
+<a class="sourceLine" id="cb15-7" title="7"><span class="fu">jobs:</span></a>
+<a class="sourceLine" id="cb15-8" title="8">    <span class="fu">job1:</span></a>
+<a class="sourceLine" id="cb15-9" title="9">    <span class="co"># if: github.event.pull_request.merged == &#39;true&#39; || github.event.release.draft == &#39;false&#39;</span></a>
+<a class="sourceLine" id="cb15-10" title="10">    <span class="fu">if:</span><span class="at"> github.event.pull_request.merged == &#39;true&#39;</span></a>
+<a class="sourceLine" id="cb15-11" title="11">    <span class="fu">steps:</span></a>
+<a class="sourceLine" id="cb15-12" title="12">        <span class="kw">-</span> <span class="fu">name:</span><span class="at"> step1</span></a>
+<a class="sourceLine" id="cb15-13" title="13">          <span class="fu">run:</span><span class="at"> echo &#39;hello world&#39;</span></a></code></pre></div></li>
+<li><p>Set up a <code>repository_dispatch</code> or <code>workflow_dispatch</code> webhook and use that as the trigger. The method for this is unclear, and <a href="https://github.community/t/14470"><code>workflow_dispatch</code> events may only be read on the default branch</a>.</p></li>
+</ol>
+<p><strong>Inability to set environment variables per-trigger:</strong> It’s difficult to set environment variables per-trigger, such as based on which branch was checked out. There’s a top-level <code>env:</code> key, but it doesn’t allow expressions or separate <code>steps:</code>.</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode yaml"><code class="sourceCode yaml"><a class="sourceLine" id="cb16-1" title="1"><span class="fu">env:</span><span class="at"> </span><span class="co"># Can&#39;t do this</span></a>
+<a class="sourceLine" id="cb16-2" title="2">    <span class="kw">-</span> <span class="fu">name:</span><span class="at"> Set build environment to production if master branch is checked out</span></a>
+<a class="sourceLine" id="cb16-3" title="3">      <span class="fu">if:</span><span class="at"> contains(github.ref, &#39;master&#39;)</span></a>
+<a class="sourceLine" id="cb16-4" title="4">      <span class="fu">run:</span><span class="at"> echo &quot;BUILD_ENV=production&quot; &gt;&gt; $GITHUB_ENV</span></a>
+<a class="sourceLine" id="cb16-5" title="5">    <span class="kw">-</span> <span class="fu">name:</span><span class="at"> Set build environment to development if develop branch is checked out</span></a>
+<a class="sourceLine" id="cb16-6" title="6">      <span class="fu">if:</span><span class="at"> contains(github.ref, &#39;develop&#39;)</span></a>
+<a class="sourceLine" id="cb16-7" title="7">      <span class="fu">run:</span><span class="at"> echo &quot;BUILD_ENV=development&quot; &gt;&gt; $GITHUB_ENV</span></a>
+<a class="sourceLine" id="cb16-8" title="8">    <span class="kw">-</span> <span class="fu">name:</span><span class="at"> Set build environment to test otherwise</span></a>
+<a class="sourceLine" id="cb16-9" title="9">      <span class="fu">if:</span><span class="at"> ${{ !contains(github.ref, &#39;master&#39;) || !contains(github.ref, &#39;develop&#39;) }}</span></a>
+<a class="sourceLine" id="cb16-10" title="10">      <span class="fu">run:</span><span class="at"> echo &quot;BUILD_ENV=test&quot; &gt;&gt; $GITHUB_ENV</span></a></code></pre></div>
+<p>Furthermore, environment variables set to <code>$GITHUB_ENV</code> within a job are scoped to that job.</p>
+<p>The solution is to <a href="https://github.community/t/16277">use outputs instead of environment variables</a>. Set outputs from one job and read them in downstream jobs. Note that <em>step</em> outputs must also be set as <em>job</em> outputs in order to be passed to other workflows.</p>
+<h3 id="pr-merge-conflicts-blocking-workflow-runs">PR merge conflicts blocking workflow runs</h3>
+<ul>
+<li>If a PR has merge conflicts, GitHub Actions workflows may not run at all. See <a href="https://github.community/t/run-actions-on-pull-requests-with-merge-conflicts/17104/13">this GitHub community thread</a>.</li>
+<li><p>Try using <a href="https://docs.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#operators">equality operators</a> (<code>==</code> and <code>!=</code>) to check out the PR <code>HEAD</code> commit, instead of the default (the merge commit), as described in the <a href="https://github.com/actions/checkout">actions/checkout README</a>:</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode yml"><code class="sourceCode yaml"><a class="sourceLine" id="cb17-1" title="1"><span class="kw">-</span> <span class="fu">uses:</span><span class="at"> actions/checkout@v2</span></a>
+<a class="sourceLine" id="cb17-2" title="2">  <span class="fu">if:</span><span class="at"> ${{ github.event_name != &#39;pull_request&#39; }}</span></a>
+<a class="sourceLine" id="cb17-3" title="3"><span class="kw">-</span> <span class="fu">uses:</span><span class="at"> actions/checkout@v2</span></a>
+<a class="sourceLine" id="cb17-4" title="4">  <span class="fu">if:</span><span class="at"> ${{ github.event_name == &#39;pull_request&#39; }}</span></a>
+<a class="sourceLine" id="cb17-5" title="5">  <span class="fu">with:</span></a>
+<a class="sourceLine" id="cb17-6" title="6">      <span class="fu">ref:</span><span class="at"> ${{ github.event.pull_request.head.sha }}</span></a></code></pre></div></li>
+<li><p>If checking out the <code>HEAD</code> commit doesn’t work, you may need to resolve merge conflicts to continue.</p></li>
+</ul>
+<h3 id="understanding-context-and-expression-syntax">Understanding context and expression syntax</h3>
+<ul>
+<li>See the <a href="https://docs.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions">context and expression syntax docs</a></li>
+<li>In which context can I use which things?
+<ul>
+<li><em>Where can I define <code>env:</code>?</em></li>
+<li><em>Where can I define <code>defaults:</code>?</em></li>
+<li><em>Where can I add <code>if:</code>?</em></li>
+<li><em>When do I need <code>${{ }}</code> for expressions?</em> The <a href="https://docs.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions">docs</a> explain that <code>if:</code> conditionals are automatically evaluated as expressions, but it’s not always clear in other fields.</li>
+</ul></li>
+<li><a href="https://docs.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#object-filters">Object filters</a> seem like a useful corollary to <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/mappings-section-structure.html">CloudFormation mappings</a>, but there’s no explanation for how to set up object filters within workflows.</li>
+<li>There’s no concept of <code>if/elif/else</code>.</li>
+<li><p>Syntactic subtleties, such as the requirement for single quotes in some YAML fields:</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode yaml"><code class="sourceCode yaml"><a class="sourceLine" id="cb18-1" title="1"><span class="fu">jobs:</span></a>
+<a class="sourceLine" id="cb18-2" title="2">    <span class="fu">base:</span></a>
+<a class="sourceLine" id="cb18-3" title="3">        <span class="fu">runs-on:</span><span class="at"> ubuntu-latest</span></a>
+<a class="sourceLine" id="cb18-4" title="4">        <span class="fu">steps:</span></a>
+<a class="sourceLine" id="cb18-5" title="5">            <span class="co"># this works</span></a>
+<a class="sourceLine" id="cb18-6" title="6">            <span class="kw">-</span> <span class="fu">name:</span><span class="at"> Set build environment to production</span></a>
+<a class="sourceLine" id="cb18-7" title="7">              <span class="fu">if:</span><span class="at"> github.ref == &#39;refs/heads/master&#39;</span></a>
+<a class="sourceLine" id="cb18-8" title="8">              <span class="fu">run:</span><span class="at"> echo &quot;BUILD_ENV=production&quot; &gt;&gt; $GITHUB_ENV</span></a>
+<a class="sourceLine" id="cb18-9" title="9">            <span class="co"># this doesn&#39;t</span></a>
+<a class="sourceLine" id="cb18-10" title="10">            <span class="kw">-</span> <span class="fu">name:</span><span class="at"> Set build environment to production</span></a>
+<a class="sourceLine" id="cb18-11" title="11">              <span class="fu">if:</span><span class="at"> github.ref == &quot;refs/heads/master&quot;</span></a>
+<a class="sourceLine" id="cb18-12" title="12">              <span class="fu">run:</span><span class="at"> echo &quot;BUILD_ENV=production&quot; &gt;&gt; $GITHUB_ENV</span></a></code></pre></div></li>
+<li><code>github.ref</code> vs <code>github.base_ref</code>: Confusingly, <code>github.base_ref</code> appears to output different syntax than <code>github.ref</code>.
+<ul>
+<li><code>github.base_ref</code> returns just the branch name, like <code>develop</code>.</li>
+<li><code>github.ref</code> returns the full Git ref, like <code>refs/heads/develop</code>.</li>
+</ul></li>
+</ul>
+<h2 id="resources">Resources</h2>
+<ul>
+<li><strong>Overview</strong>
+<ul>
+<li><a href="https://resources.github.com/whitepapers/GitHub-Actions-Cheat-sheet/">GitHub Actions Cheat Sheet</a></li>
+<li><a href="https://docs.github.com/en/actions/getting-started-with-github-actions/core-concepts-for-github-actions">GitHub docs: Actions - Core concepts</a></li>
+<li><a href="https://docs.github.com/en/actions/configuring-and-managing-workflows">GitHub docs: Actions - Configuring and managing workflows</a></li>
+</ul></li>
+<li><strong>Workflow triggers</strong> (the <code>on:</code> section of YAML workflow files):
+<ul>
+<li><a href="https://docs.github.com/en/actions/reference/events-that-trigger-workflows">GitHub docs: Actions - Events that trigger workflows</a></li>
+<li><a href="https://github.blog/changelog/2020-07-06-github-actions-manual-triggers-with-workflow_dispatch/">GitHub Blog 20200706: GitHub Actions - Manual triggers with <code>workflow_dispatch</code></a></li>
+</ul></li>
+<li><strong>Workflow syntax</strong>
+<ul>
+<li><a href="https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions">GitHub docs: Actions - Workflow syntax reference</a></li>
+<li><a href="https://docs.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions">GitHub docs: Actions - Context and expression syntax</a> (syntax in double curly braces like <code>${{ github.repository }}</code>, and functions like <code>format()</code>)</li>
+<li><a href="https://docs.github.com/en/actions/reference/workflow-commands-for-github-actions">GitHub docs: Actions - Workflow commands for GitHub Actions</a> (shell commands you can perform within workflows, like <code>echo ::set-env name=COLOR::green</code>)</li>
+</ul></li>
+<li><strong>GitHub Actions + GitHub Container Registry</strong>
+<ul>
+<li><a href="https://github.blog/2020-09-01-introducing-github-container-registry/">GitHub Blog 20200901: Introducing GitHub Container Registry</a></li>
+<li><a href="https://docs.github.com/en/packages/getting-started-with-github-container-registry">GitHub docs: Getting started with GitHub Container Registry</a></li>
+</ul></li>
+<li><strong>Actions</strong>
+<ul>
+<li><a href="https://github.com/marketplace?type=actions">GitHub Actions Marketplace</a></li>
+<li><a href="https://github.com/actions/runner">actions/runner</a>: the runner for GitHub Actions</li>
+<li><a href="https://github.com/sdras/awesome-actions">sdras/awesome-actions</a></li>
+</ul></li>
+</ul>
+<h2 id="github-gist-notes">GitHub Gist notes <!-- omit in toc --></h2>
+<ul>
+<li>A <strong>Gist</strong> is actually a repository.</li>
+<li><p>To clone the Gist locally:</p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode sh"><code class="sourceCode bash"><a class="sourceLine" id="cb19-1" title="1"><span class="fu">git</span> clone git@gist.github.com:f9c753eb27381f97336aa21b8d932be6.git github-actions</a></code></pre></div></li>
+<li><strong>No subdirectories are allowed.</strong></li>
+<li>To add images to a Markdown file in a Gist:
+<ul>
+<li>Commit the image file (in the same directory, no sub-directories)</li>
+<li>Push the change to GitHub with <code>git push</code></li>
+<li>Click on the “raw” button next to the image</li>
+<li>Copy the URL</li>
+<li>Add the URL to an image tag in the Markdown file.</li>
+</ul></li>
+</ul>
+</body>
+</html>

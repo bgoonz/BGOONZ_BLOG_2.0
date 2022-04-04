@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>HTML meta tags</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">HTML meta tags</h1>
+</header>
+<h3 id="meta-tags">Meta tags</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">&lt;meta</span><span class="ot"> charset=</span><span class="st">&quot;utf-8&quot;</span> <span class="kw">/&gt;</span></a></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb2-1" title="1"><span class="co">&lt;!-- title --&gt;</span></a>
+<a class="sourceLine" id="cb2-2" title="2"><span class="kw">&lt;title&gt;</span>···<span class="kw">&lt;/title&gt;</span></a>
+<a class="sourceLine" id="cb2-3" title="3"><span class="kw">&lt;meta</span><span class="ot"> property=</span><span class="st">&quot;og:title&quot;</span><span class="ot"> content=</span><span class="st">&quot;···&quot;</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb2-4" title="4"><span class="kw">&lt;meta</span><span class="ot"> name=</span><span class="st">&quot;twitter:title&quot;</span><span class="ot"> content=</span><span class="st">&quot;···&quot;</span> <span class="kw">/&gt;</span></a></code></pre></div>
+<p>{: data-line=“2”}</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb3-1" title="1"><span class="co">&lt;!-- url --&gt;</span></a>
+<a class="sourceLine" id="cb3-2" title="2"><span class="kw">&lt;link</span><span class="ot"> rel=</span><span class="st">&quot;canonical&quot;</span><span class="ot"> href=</span><span class="st">&quot;http://···&quot;</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb3-3" title="3"><span class="kw">&lt;meta</span><span class="ot"> property=</span><span class="st">&quot;og:url&quot;</span><span class="ot"> content=</span><span class="st">&quot;http://···&quot;</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb3-4" title="4"><span class="kw">&lt;meta</span><span class="ot"> name=</span><span class="st">&quot;twitter:url&quot;</span><span class="ot"> content=</span><span class="st">&quot;http://···&quot;</span> <span class="kw">/&gt;</span></a></code></pre></div>
+<p>{: data-line=“2”}</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb4-1" title="1"><span class="co">&lt;!-- description --&gt;</span></a>
+<a class="sourceLine" id="cb4-2" title="2"><span class="kw">&lt;meta</span><span class="ot"> name=</span><span class="st">&quot;description&quot;</span><span class="ot"> content=</span><span class="st">&quot;···&quot;</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb4-3" title="3"><span class="kw">&lt;meta</span><span class="ot"> property=</span><span class="st">&quot;og:description&quot;</span><span class="ot"> content=</span><span class="st">&quot;···&quot;</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb4-4" title="4"><span class="kw">&lt;meta</span><span class="ot"> name=</span><span class="st">&quot;twitter:description&quot;</span><span class="ot"> content=</span><span class="st">&quot;···&quot;</span> <span class="kw">/&gt;</span></a></code></pre></div>
+<p>{: data-line=“2”}</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb5-1" title="1"><span class="co">&lt;!-- image --&gt;</span></a>
+<a class="sourceLine" id="cb5-2" title="2"><span class="kw">&lt;meta</span><span class="ot"> property=</span><span class="st">&quot;og:image&quot;</span><span class="ot"> content=</span><span class="st">&quot;http://···&quot;</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb5-3" title="3"><span class="kw">&lt;meta</span><span class="ot"> name=</span><span class="st">&quot;twitter:image&quot;</span><span class="ot"> content=</span><span class="st">&quot;http://···&quot;</span> <span class="kw">/&gt;</span></a></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb6-1" title="1"><span class="co">&lt;!-- ua --&gt;</span></a>
+<a class="sourceLine" id="cb6-2" title="2"><span class="kw">&lt;meta</span><span class="ot"> http-equiv=</span><span class="st">&quot;X-UA-Compatible&quot;</span><span class="ot"> content=</span><span class="st">&quot;IE=edge,chrome=1&quot;</span> <span class="kw">/&gt;</span></a></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb7-1" title="1"><span class="co">&lt;!-- viewport --&gt;</span></a>
+<a class="sourceLine" id="cb7-2" title="2"><span class="kw">&lt;meta</span><span class="ot"> name=</span><span class="st">&quot;viewport&quot;</span><span class="ot"> content=</span><span class="st">&quot;width=device-width&quot;</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb7-3" title="3"><span class="kw">&lt;meta</span><span class="ot"> name=</span><span class="st">&quot;viewport&quot;</span><span class="ot"> content=</span><span class="st">&quot;width=1024&quot;</span> <span class="kw">/&gt;</span></a></code></pre></div>
+<h3 id="more-opengraph">More opengraph</h3>
+<div class="sourceCode" id="cb8"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb8-1" title="1"><span class="kw">&lt;meta</span><span class="ot"> property=</span><span class="st">&quot;og:site_name&quot;</span><span class="ot"> content=</span><span class="st">&quot;···&quot;</span> <span class="kw">/&gt;</span> <span class="kw">&lt;meta</span><span class="ot"> property=</span><span class="st">&quot;og:type&quot;</span><span class="ot"> content=</span><span class="st">&quot;website&quot;</span> <span class="kw">/&gt;</span></a></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb9-1" title="1"><span class="kw">&lt;meta</span><span class="ot"> property=</span><span class="st">&quot;fb:app_id&quot;</span><span class="ot"> content=</span><span class="st">&quot;···&quot;</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb9-2" title="2"><span class="kw">&lt;meta</span><span class="ot"> property=</span><span class="st">&quot;fb:admins&quot;</span><span class="ot"> content=</span><span class="st">&quot;UID1,UID2&quot;</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb9-3" title="3"><span class="co">&lt;!-- ···unless there&#39;s app_id --&gt;</span></a></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb10-1" title="1"><span class="kw">&lt;meta</span><span class="ot"> property=</span><span class="st">&quot;og:audio&quot;</span><span class="ot"> content=</span><span class="st">&quot;http://···/theme.mp3&quot;</span> <span class="kw">/&gt;</span> <span class="kw">&lt;meta</span><span class="ot"> property=</span><span class="st">&quot;og:video&quot;</span><span class="ot"> content=</span><span class="st">&quot;http://···/trailer.swf&quot;</span> <span class="kw">/&gt;</span></a></code></pre></div>
+<p>See: <a href="https://developers.facebook.com/docs/opengraphprotocol/">OpenGraph protocol</a> <em>(developers.facebook.com)</em></p>
+<h3 id="opengraph-for-articles">Opengraph for articles</h3>
+<ul>
+<li><code>article:published_time</code></li>
+<li><code>article:modified_time</code></li>
+<li><code>article:expiration_time</code></li>
+<li><code>article:author</code></li>
+<li><code>article:section</code></li>
+<li><code>article:tag</code></li>
+</ul>
+<h3 id="apple-only">Apple-only</h3>
+<div class="sourceCode" id="cb11"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb11-1" title="1"><span class="kw">&lt;meta</span><span class="ot"> name=</span><span class="st">&quot;format-detection&quot;</span><span class="ot"> content=</span><span class="st">&quot;telephone=no&quot;</span> <span class="kw">/&gt;</span></a></code></pre></div>
+<h2 id="progressive-web-apps">Progressive web apps</h2>
+<h3 id="add-to-homescreen">Add to homescreen</h3>
+<div class="sourceCode" id="cb12"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb12-1" title="1"><span class="kw">&lt;meta</span><span class="ot"> name=</span><span class="st">&quot;mobile-web-app-capable&quot;</span><span class="ot"> content=</span><span class="st">&quot;yes&quot;</span> <span class="kw">/&gt;</span> <span class="kw">&lt;meta</span><span class="ot"> name=</span><span class="st">&quot;apple-mobile-web-app-capable&quot;</span><span class="ot"> content=</span><span class="st">&quot;yes&quot;</span> <span class="kw">/&gt;</span></a></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb13-1" title="1"><span class="kw">&lt;meta</span><span class="ot"> name=</span><span class="st">&quot;apple-mobile-web-app-status-bar-style&quot;</span><span class="ot"> content=</span><span class="st">&quot;black&quot;</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb13-2" title="2"><span class="co">&lt;!-- black | black-translucent | default --&gt;</span></a></code></pre></div>
+<h3 id="theme-color">Theme color</h3>
+<div class="sourceCode" id="cb14"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb14-1" title="1"><span class="kw">&lt;meta</span><span class="ot"> name=</span><span class="st">&quot;theme-color&quot;</span><span class="ot"> content=</span><span class="st">&quot;#ff00ff&quot;</span> <span class="kw">/&gt;</span></a></code></pre></div>
+<p>Android-only. See: <a href="https://developers.google.com/web/updates/2014/11/Support-for-theme-color-in-Chrome-39-for-Android">Theme color</a></p>
+<h3 id="manifest">Manifest</h3>
+<div class="sourceCode" id="cb15"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb15-1" title="1"><span class="kw">&lt;link</span><span class="ot"> rel=</span><span class="st">&quot;manifest&quot;</span><span class="ot"> href=</span><span class="st">&quot;/manifest.json&quot;</span> <span class="kw">/&gt;</span></a></code></pre></div>
+<p>Android-only. See: <a href="https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/">Manifest</a></p>
+<h3 id="icons">Icons</h3>
+<div class="sourceCode" id="cb16"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb16-1" title="1"><span class="co">&lt;!-- Minimal --&gt;</span></a>
+<a class="sourceLine" id="cb16-2" title="2"><span class="kw">&lt;link</span><span class="ot"> rel=</span><span class="st">&quot;icon&quot;</span><span class="ot"> type=</span><span class="st">&quot;image/png&quot;</span><span class="ot"> href=</span><span class="st">&quot;favicon@32.png&quot;</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb16-3" title="3"><span class="kw">&lt;link</span><span class="ot"> rel=</span><span class="st">&quot;icon&quot;</span><span class="ot"> sizes=</span><span class="st">&quot;192x192&quot;</span><span class="ot"> href=</span><span class="st">&quot;icon@192.png&quot;</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb16-4" title="4"><span class="kw">&lt;link</span><span class="ot"> rel=</span><span class="st">&quot;apple-touch-icon&quot;</span><span class="ot"> href=</span><span class="st">&quot;icon@152.png&quot;</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb16-5" title="5"><span class="kw">&lt;meta</span><span class="ot"> name=</span><span class="st">&quot;msapplication-square310x310logo&quot;</span><span class="ot"> content=</span><span class="st">&quot;icon@310.png&quot;</span> <span class="kw">/&gt;</span></a></code></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb17-1" title="1"><span class="co">&lt;!-- Apple --&gt;</span></a>
+<a class="sourceLine" id="cb17-2" title="2"><span class="kw">&lt;link</span><span class="ot"> rel=</span><span class="st">&quot;apple-touch-icon&quot;</span><span class="ot"> href=</span><span class="st">&quot;touch-icon-iphone.png&quot;</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb17-3" title="3"><span class="kw">&lt;link</span><span class="ot"> rel=</span><span class="st">&quot;apple-touch-icon&quot;</span><span class="ot"> sizes=</span><span class="st">&quot;76x76&quot;</span><span class="ot"> href=</span><span class="st">&quot;touch-icon-ipad.png&quot;</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb17-4" title="4"><span class="kw">&lt;link</span><span class="ot"> rel=</span><span class="st">&quot;apple-touch-icon&quot;</span><span class="ot"> sizes=</span><span class="st">&quot;120x120&quot;</span><span class="ot"> href=</span><span class="st">&quot;touch-icon-iphone-retina.png&quot;</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb17-5" title="5"><span class="kw">&lt;link</span><span class="ot"> rel=</span><span class="st">&quot;apple-touch-icon&quot;</span><span class="ot"> sizes=</span><span class="st">&quot;152x152&quot;</span><span class="ot"> href=</span><span class="st">&quot;touch-icon-ipad-retina.png&quot;</span> <span class="kw">/&gt;</span></a></code></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb18-1" title="1"><span class="co">&lt;!-- Microsoft --&gt;</span></a>
+<a class="sourceLine" id="cb18-2" title="2"><span class="kw">&lt;meta</span><span class="ot"> name=</span><span class="st">&quot;msapplication-square70x70logo&quot;</span><span class="ot"> content=</span><span class="st">&quot;icon_smalltile.png&quot;</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb18-3" title="3"><span class="kw">&lt;meta</span><span class="ot"> name=</span><span class="st">&quot;msapplication-square150x150logo&quot;</span><span class="ot"> content=</span><span class="st">&quot;icon_mediumtile.png&quot;</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb18-4" title="4"><span class="kw">&lt;meta</span><span class="ot"> name=</span><span class="st">&quot;msapplication-wide310x150logo&quot;</span><span class="ot"> content=</span><span class="st">&quot;icon_widetile.png&quot;</span> <span class="kw">/&gt;</span></a></code></pre></div>
+<p>Chrome on Android recommends <a href="https://developers.google.com/web/updates/2014/11/Support-for-theme-color-in-Chrome-39-for-Android">192x192</a>. See: <a href="https://developers.google.com/web/fundamentals/design-and-ui/browser-customization/">Icons</a></p>
+<h2 id="reference">Reference</h2>
+<p>{: .-one-column}</p>
+<ul>
+<li><a href="https://dev.twitter.com/cards" class="uri">https://dev.twitter.com/cards</a></li>
+<li><a href="https://developers.facebook.com/docs/opengraphprotocol/#types" class="uri">https://developers.facebook.com/docs/opengraphprotocol/#types</a> {: .-also-see}</li>
+</ul>
+</body>
+</html>

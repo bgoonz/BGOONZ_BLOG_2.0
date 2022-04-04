@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>public_class_fields</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="public-class-fields">Public class fields</h1>
+<p><strong>Note:</strong> This page describes experimental features.</p>
+<p>Both public and private field declarations are an <a href="https://github.com/tc39/proposal-class-fields">experimental feature (stage 3)</a> proposed at <a href="https://tc39.es/">TC39</a>, the JavaScript standards committee.</p>
+<p>Support in browsers is limited, but the feature can be used through a build step with systems like <a href="https://babeljs.io/">Babel</a>. See the <a href="#browser_compatibility">compat information</a> below.</p>
+<p>Both static and instance public fields are writable, enumerable, and configurable properties. As such, unlike their private counterparts, they participate in prototype inheritance.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>class ClassWithInstanceField {
+  instanceField = &#39;instance field&#39;
+}
+
+class ClassWithStaticField {
+  static staticField = &#39;static field&#39;
+}
+
+class ClassWithPublicInstanceMethod {
+  publicMethod() {
+    return &#39;hello world&#39;
+  }
+}</code></pre>
+<h2 id="examples">Examples</h2>
+<h3 id="public-static-fields">Public static fields</h3>
+<p>Public static fields are useful when you want a field to exist only once per class, not on every class instance you create. This is useful for caches, fixed-configuration, or any other data you don’t need to be replicated across instances.</p>
+<p>Public static fields are declared using the <code>static</code> keyword. They are added to the class constructor at the time of class evaluation using <a href="../global_objects/object/defineproperty"><code>Object.defineProperty()</code></a>. They are accessed again from the class constructor.</p>
+<pre><code>class ClassWithStaticField {
+  static staticField = &#39;static field&#39;
+}
+
+console.log(ClassWithStaticField.staticField)
+// expected output: &quot;static field&quot;</code></pre>
+<p>Fields without initializers are initialized to <code>undefined</code>.</p>
+<pre><code>class ClassWithStaticField {
+  static staticField
+}
+
+console.assert(ClassWithStaticField.hasOwnProperty(&#39;staticField&#39;))
+console.log(ClassWithStaticField.staticField)
+// expected output: &quot;undefined&quot;</code></pre>
+<p>Public static fields are not reinitialized on subclasses, but can be accessed via the prototype chain.</p>
+<pre><code>class ClassWithStaticField {
+  static baseStaticField = &#39;base field&#39;
+}
+
+class SubClassWithStaticField extends ClassWithStaticField {
+  static subStaticField = &#39;sub class field&#39;
+}
+
+console.log(SubClassWithStaticField.subStaticField)
+// expected output: &quot;sub class field&quot;
+
+console.log(SubClassWithStaticField.baseStaticField)
+// expected output: &quot;base field&quot;</code></pre>
+<p>When initializing fields, <code>this</code> refers to the class constructor. You can also reference it by name, and use <code>super</code> to get the superclass constructor (if one exists).</p>
+<pre><code>class ClassWithStaticField {
+  static baseStaticField = &#39;base static field&#39;
+  static anotherBaseStaticField = this.baseStaticField
+
+  static baseStaticMethod() { return &#39;base static method output&#39; }
+}
+
+class SubClassWithStaticField extends ClassWithStaticField {
+  static subStaticField = super.baseStaticMethod()
+}
+
+console.log(ClassWithStaticField.anotherBaseStaticField)
+// expected output: &quot;base static field&quot;
+
+console.log(SubClassWithStaticField.subStaticField)
+// expected output: &quot;base static method output&quot;</code></pre>
+<h3 id="public-instance-fields">Public instance fields</h3>
+<p>Public instance fields exist on every created instance of a class. By declaring a public field, you can ensure the field is always present, and the class definition is more self-documenting.</p>
+<p>Public instance fields are added with <a href="../global_objects/object/defineproperty"><code>Object.defineProperty()</code></a> either at construction time in the base class (before the constructor body runs), or just after <code>super()</code> returns in a subclass.</p>
+<pre><code>class ClassWithInstanceField {
+  instanceField = &#39;instance field&#39;
+}
+
+const instance = new ClassWithInstanceField()
+console.log(instance.instanceField)
+// expected output: &quot;instance field&quot;</code></pre>
+<p>Fields without initializers are initialized to <code>undefined</code>.</p>
+<pre><code>class ClassWithInstanceField {
+  instanceField
+}
+
+const instance = new ClassWithInstanceField()
+console.assert(instance.hasOwnProperty(&#39;instanceField&#39;))
+console.log(instance.instanceField)
+// expected output: &quot;undefined&quot;</code></pre>
+<p>Like properties, field names may be computed.</p>
+<pre><code>const PREFIX = &#39;prefix&#39;
+
+class ClassWithComputedFieldName {
+    [`${PREFIX}Field`] = &#39;prefixed field&#39;
+}
+
+const instance = new ClassWithComputedFieldName()
+console.log(instance.prefixField)
+// expected output: &quot;prefixed field&quot;</code></pre>
+<p>When initializing fields <code>this</code> refers to the class instance under construction. Just as in public instance methods, if you’re in a subclass you can access the superclass prototype using <code>super</code>.</p>
+<pre><code>class ClassWithInstanceField {
+  baseInstanceField = &#39;base field&#39;
+  anotherBaseInstanceField = this.baseInstanceField
+  baseInstanceMethod() { return &#39;base method output&#39; }
+}
+
+class SubClassWithInstanceField extends ClassWithInstanceField {
+  subInstanceField = super.baseInstanceMethod()
+}
+
+const base = new ClassWithInstanceField()
+const sub = new SubClassWithInstanceField()
+
+console.log(base.anotherBaseInstanceField)
+// expected output: &quot;base field&quot;
+
+console.log(sub.subInstanceField)
+// expected output: &quot;base method output&quot;</code></pre>
+<h3 id="public-methods">Public methods</h3>
+<h4 id="public-static-methods">Public static methods</h4>
+<p>The <code>static</code> keyword defines a static method for a class. Static methods aren’t called on instances of the class. Instead, they’re called on the class itself. These are often utility functions, such as functions to create or clone objects.</p>
+<pre><code>class ClassWithStaticMethod {
+  static staticMethod() {
+    return &#39;static method has been called.&#39;;
+  }
+}
+
+console.log(ClassWithStaticMethod.staticMethod());
+// expected output: &quot;static method has been called.&quot;</code></pre>
+<p>The static methods are added to the class constructor with <a href="../global_objects/object/defineproperty"><code>Object.defineProperty()</code></a> at class evaluation time. These methods are writable, non-enumerable, and configurable.</p>
+<h4 id="public-instance-methods">Public instance methods</h4>
+<p>As the name implies, public instance methods are methods available on class instances.</p>
+<pre><code>class ClassWithPublicInstanceMethod {
+  publicMethod() {
+    return &#39;hello world&#39;
+  }
+}
+
+const instance = new ClassWithPublicInstanceMethod()
+console.log(instance.publicMethod())
+// expected output: &quot;hello world&quot;</code></pre>
+<p>Public instance methods are added to the class prototype at the time of class evaluation using <a href="../global_objects/object/defineproperty"><code>Object.defineProperty()</code></a>. They are writable, non-enumerable, and configurable.</p>
+<p>You may make use of generator, async, and async generator functions.</p>
+<pre><code>class ClassWithFancyMethods {
+  *generatorMethod() { }
+  async asyncMethod() { }
+  async *asyncGeneratorMethod() { }
+}</code></pre>
+<p>Inside instance methods, <code>this</code> refers to the instance itself. In subclasses, <code>super</code> lets you access the superclass prototype, allowing you to call methods from the superclass.</p>
+<pre><code>class BaseClass {
+  msg = &#39;hello world&#39;
+  basePublicMethod() {
+    return this.msg
+  }
+}
+
+class SubClass extends BaseClass {
+  subPublicMethod() {
+    return super.basePublicMethod()
+  }
+}
+
+const instance = new SubClass()
+console.log(instance.subPublicMethod())
+// expected output: &quot;hello world&quot;</code></pre>
+<p>Getters and setters are special methods that bind to a class property and are called when that property is accessed or set. Use the <a href="../functions/get">get</a> and <a href="../functions/set">set</a> syntax to declare a public instance getter or setter.</p>
+<pre><code>class ClassWithGetSet {
+  #msg = &#39;hello world&#39;
+  get msg() {
+    return this.#msg
+  }
+  set msg(x) {
+    this.#msg = `hello ${x}`
+  }
+}
+
+const instance = new ClassWithGetSet()
+console.log(instance.msg)
+// expected output: &quot;hello world&quot;
+
+instance.msg = &#39;cake&#39;
+console.log(instance.msg)
+// expected output: &quot;hello cake&quot;</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/proposal-class-fields/#prod-FieldDefinition">Public and private instance fields proposal (Public and private instance fields proposal) <br/></p>
+<span class="small">#prod-FieldDefinition</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>Public_class_fields</code></p>
+<p>72</p>
+<p>79</p>
+<p>69</p>
+<p>No</p>
+<p>60</p>
+<p>14.1</p>
+<p>14-14.1</p>
+<p>Doesn’t support public static fields. See WebKit bug <a href="https://webkit.org/b/194095">194095</a>.</p>
+<p>72</p>
+<p>72</p>
+<p>79</p>
+<p>51</p>
+<p>14.5</p>
+<p>14-14.5</p>
+<p>Doesn’t support public static fields. See WebKit bug <a href="https://webkit.org/b/194095">194095</a>.</p>
+<p>No</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="https://v8.dev/features/class-fields">Public and private class fields</a> article at the v8.dev site.</li>
+<li><a href="https://github.com/tc39/proposal-class-fields#class-field-declarations-for-javascript">Class field declarations for JavaScript</a> explainer, by the <a href="https://github.com/tc39/proposal-class-fields">Public and private instance fields</a> authors</li>
+<li><a href="https://rfrn.org/~shu/2018/05/02/the-semantics-of-all-js-class-elements.html">The Semantics of All JS Class Elements</a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Public_class_fields" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Public_class_fields</a></p>
+</body>
+</html>

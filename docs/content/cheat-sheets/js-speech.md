@@ -1,27 +1,17 @@
----
-title: JavaScript speech synthesis
-category: JavaScript
-
-weight: -1
----
-
-## SpeechSynthesisUtterance
+SpeechSynthesisUtterance
+------------------------
 
 {: .-one-column}
 
----
+------------------------------------------------------------------------
 
-```js
-function speak(message) {
-    var msg = new SpeechSynthesisUtterance(message);
-    var voices = window.speechSynthesis.getVoices();
-    msg.voice = voices[0];
-    window.speechSynthesis.speak(msg);
-}
-```
+    function speak(message) {
+        var msg = new SpeechSynthesisUtterance(message);
+        var voices = window.speechSynthesis.getVoices();
+        msg.voice = voices[0];
+        window.speechSynthesis.speak(msg);
+    }
 
-```js
-speak('Hello, world');
-```
+    speak('Hello, world');
 
-See: [SpeechSynthesisUtterance](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesisUtterance) _(developer.mozilla.org)_
+See: [SpeechSynthesisUtterance](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesisUtterance) *(developer.mozilla.org)*

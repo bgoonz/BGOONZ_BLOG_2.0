@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>tofixed</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="number.prototype.tofixed">Number.prototype.toFixed()</h1>
+<p>The <code>toFixed()</code> method formats a number using fixed-point notation.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>toFixed()
+toFixed(digits)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>digits</code> <span class="badge inline optional">Optional</span><br />
+The number of digits to appear after the decimal point; this may be a value between <code>0</code> and <code>20</code>, inclusive, and implementations may optionally support a larger range of values. If this argument is omitted, it is treated as <code>0</code>.</p>
+<h3 id="return-value">Return value</h3>
+<p>A string representing the given number using fixed-point notation.</p>
+<h3 id="exceptions">Exceptions</h3>
+<p><a href="../rangeerror"><code>RangeError</code></a><br />
+If <code>digits</code> is too small or too large. Values between <code>0</code> and <code>100</code>, inclusive, will not cause a <a href="../rangeerror"><code>RangeError</code></a>. Implementations are allowed to support larger and smaller values as chosen.</p>
+<p><a href="../typeerror"><code>TypeError</code></a><br />
+If this method is invoked on an object that is not a <a href="../number"><code>Number</code></a>.</p>
+<h2 id="description">Description</h2>
+<p><code>toFixed()</code> returns a string representation of <code>numObj</code> that does not use exponential notation and has exactly <code>digits</code> digits after the decimal place. The number is rounded if necessary, and the fractional part is padded with zeros if necessary so that it has the specified length. If the absolute value of <code>numObj</code> is greater or equal to <code>1e+21</code>, this method calls <a href="tostring"><code>Number.prototype.toString()</code></a> and returns a string in exponential notation.</p>
+<p><strong>Warning:</strong> Floating point numbers cannot represent all decimals precisely in binary. This can lead to unexpected results, such as <code>0.1 + 0.2 === 0.3</code> returning <code>false</code> .</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-tofixed">Using toFixed</h3>
+<pre><code>let numObj = 12345.6789
+
+numObj.toFixed()       // Returns &#39;12346&#39;: note rounding, no fractional part
+numObj.toFixed(1)      // Returns &#39;12345.7&#39;: note rounding
+numObj.toFixed(6)      // Returns &#39;12345.678900&#39;: note added zeros
+(1.23e+20).toFixed(2)  // Returns &#39;123000000000000000000.00&#39;
+(1.23e-10).toFixed(2)  // Returns &#39;0.00&#39;
+2.34.toFixed(1)        // Returns &#39;2.3&#39;
+2.35.toFixed(1)        // Returns &#39;2.4&#39;. Note it rounds up
+2.55.toFixed(1)        // Returns &#39;2.5&#39;. Note it rounds down - see warning above
+-2.34.toFixed(1)       // Returns -2.3 (due to operator precedence, negative number literals don&#39;t return a string...)
+(-2.34).toFixed(1)     // Returns &#39;-2.3&#39;</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-number.prototype.tofixed">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-number.prototype.tofixed</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>toFixed</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>5.5</p>
+<p>7</p>
+<p>2</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="toexponential"><code>Number.prototype.toExponential()</code></a></li>
+<li><a href="toprecision"><code>Number.prototype.toPrecision()</code></a></li>
+<li><a href="tostring"><code>Number.prototype.toString()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed</a></p>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>xargs</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="to-find-all-file-name-ending-with-.pdf-and-remove-them">To Find all file name ending with .pdf and remove them</h1>
+<p>find -name *.pdf | xargs rm -rf</p>
+<h1 id="if-file-name-contains-spaces-you-should-use-this-instead">if file name contains spaces you should use this instead</h1>
+<p>find -name *.pdf | xargs -I{} rm -rf ‘{}’</p>
+<h1 id="will-show-every-.pdf-like">Will show every .pdf like:</h1>
+<h1 id="toto.pdf">&amp;toto.pdf=</h1>
+<h1 id="titi.pdf">&amp;titi.pdf=</h1>
+<h1 id="n1-one-file-by-one-file.--n2-2-files-by-2-files">-n1 =&gt; One file by one file. ( -n2 =&gt; 2 files by 2 files )</h1>
+<p>find -name *.pdf | xargs -I{} -n1 echo ‘&amp;{}=’</p>
+<h1 id="if-find-returns-no-result-do-not-run-rm">If find returns no result, do not run rm</h1>
+<h1 id="this-option-is-a-gnu-extension.">This option is a GNU extension.</h1>
+<p>find -name “*.pdf” | xargs –no-run-if-empty rm</p>
+</body>
+</html>

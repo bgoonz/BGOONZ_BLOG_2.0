@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>preventextensions</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="object.preventextensions">Object.preventExtensions()</h1>
+<p>The <code>Object.preventExtensions()</code> method prevents new properties from ever being added to an object (i.e. prevents future extensions to the object).</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>Object.preventExtensions(obj)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>obj</code><br />
+The object which should be made non-extensible.</p>
+<h3 id="return-value">Return value</h3>
+<p>The object being made non-extensible.</p>
+<h2 id="description">Description</h2>
+<p>An object is extensible if new properties can be added to it. <code>Object.preventExtensions()</code> marks an object as no longer extensible, so that it will never have properties beyond the ones it had at the time it was marked as non-extensible. Note that the properties of a non-extensible object, in general, may still be <em>deleted</em>. Attempting to add new properties to a non-extensible object will fail, either silently or by throwing a <a href="../typeerror"><code>TypeError</code></a> (most commonly, but not exclusively, when in <a href="../../strict_mode">strict mode</a>).</p>
+<p><code>Object.preventExtensions()</code> only prevents addition of own properties. Properties can still be added to the object prototype.</p>
+<p>This method makes the <code>[[prototype]]</code> of the target immutable; any <code>[[prototype]]</code> re-assignment will throw a <code>TypeError</code>. This behavior is specific to the internal <code>[[prototype]]</code> property, other properties of the target object will remain mutable.</p>
+<p>There is no way to make an object extensible again once it has been made non-extensible.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-object.preventextensions">Using Object.preventExtensions</h3>
+<pre><code>// Object.preventExtensions returns the object
+// being made non-extensible.
+var obj = {};
+var obj2 = Object.preventExtensions(obj);
+obj === obj2; // true
+
+// Objects are extensible by default.
+var empty = {};
+Object.isExtensible(empty); // === true
+
+// ...but that can be changed.
+Object.preventExtensions(empty);
+Object.isExtensible(empty); // === false
+
+// Object.defineProperty throws when adding
+// a new property to a non-extensible object.
+var nonExtensible = { removable: true };
+Object.preventExtensions(nonExtensible);
+Object.defineProperty(nonExtensible, &#39;new&#39;, {
+  value: 8675309
+}); // throws a TypeError
+
+// In strict mode, attempting to add new properties
+// to a non-extensible object throws a TypeError.
+function fail() {
+  &#39;use strict&#39;;
+  // throws a TypeError
+  nonExtensible.newProperty = &#39;FAIL&#39;;
+}
+fail();</code></pre>
+<p>A non-extensible object’s prototype is immutable:</p>
+<pre><code>var fixed = Object.preventExtensions({});
+// throws a &#39;TypeError&#39;.
+fixed.__proto__ = { oh: &#39;hai&#39; };</code></pre>
+<h3 id="non-object-coercion">Non-object coercion</h3>
+<p>In ES5, if the argument to this method is not an object (a primitive), then it will cause a <a href="../typeerror"><code>TypeError</code></a>. In ES2015, a non-object argument will be treated as if it was a non-extensible ordinary object, return it.</p>
+<pre><code>Object.preventExtensions(1);
+// TypeError: 1 is not an object (ES5 code)
+
+Object.preventExtensions(1);
+// 1                             (ES2015 code)</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-object.preventextensions">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-object.preventextensions</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>preventExtensions</code></p>
+<p>6</p>
+<p>12</p>
+<p>4</p>
+<p>9</p>
+<p>12</p>
+<p>5.1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>12</p>
+<p>6</p>
+<p>1.0</p>
+<p><code>ES2015_behavior</code></p>
+<p>44</p>
+<p>12</p>
+<p>35</p>
+<p>11</p>
+<p>31</p>
+<p>9</p>
+<p>44</p>
+<p>44</p>
+<p>35</p>
+<p>32</p>
+<p>9</p>
+<p>4.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="isextensible"><code>Object.isExtensible()</code></a></li>
+<li><a href="seal"><code>Object.seal()</code></a></li>
+<li><a href="issealed"><code>Object.isSealed()</code></a></li>
+<li><a href="freeze"><code>Object.freeze()</code></a></li>
+<li><a href="isfrozen"><code>Object.isFrozen()</code></a></li>
+<li><a href="../reflect/preventextensions"><code>Reflect.preventExtensions()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/preventExtensions" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/preventExtensions</a></p>
+</body>
+</html>

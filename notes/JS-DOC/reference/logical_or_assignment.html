@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>logical_or_assignment</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="logical-or-assignment">Logical OR assignment (||=)</h1>
+<p>The logical OR assignment (<code>x ||= y</code>) operator only assigns if <code>x</code> is <a href="https://developer.mozilla.org/en-US/docs/Glossary/Falsy">falsy</a>.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>expr1 ||= expr2</code></pre>
+<h2 id="description">Description</h2>
+<h3 id="short-circuit-evaluation">Short-circuit evaluation</h3>
+<p>The <a href="logical_or">logical OR</a> operator works like this:</p>
+<pre><code>x || y;
+// returns x when x is truthy
+// returns y when x is not truthy</code></pre>
+<p>The logical OR operator short-circuits: the second operand is only evaluated if the first operand doesn’t already determine the result.</p>
+<p>Logical OR assignment short-circuits as well, meaning it only performs an assignment if the logical operation would evaluate the right-hand side. In other words, <code>x ||= y</code> is equivalent to:</p>
+<pre><code>x || (x = y);</code></pre>
+<p>And not equivalent to the following which would always perform an assignment:</p>
+<pre><code>x = x || y;</code></pre>
+<p>Note that this behavior is different to mathematical and bitwise assignment operators.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="setting-default-content">Setting default content</h3>
+<p>If the “lyrics” element is empty, display a default value:</p>
+<pre><code>document.getElementById(&#39;lyrics&#39;).textContent ||= &#39;No lyrics.&#39;</code></pre>
+<p>Here the short-circuit is especially beneficial, since the element will not be updated unnecessarily and won’t cause unwanted side-effects such as additional parsing or rendering work, or loss of focus, etc.</p>
+<p>Note: Pay attention to the value returned by the API you’re checking against. If an empty string is returned (a <a href="https://developer.mozilla.org/en-US/docs/Glossary/Falsy">falsy</a> value), <code>||=</code> must be used, otherwise you want to use the <code>??=</code> operator (for <a href="../global_objects/null"><code>null</code></a> or <a href="../global_objects/undefined"><code>undefined</code></a> return values).</p>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-assignment-operators">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-assignment-operators</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>Logical_OR_assignment</code></p>
+<p>85</p>
+<p>85</p>
+<p>79</p>
+<p>No</p>
+<p>No</p>
+<p>14</p>
+<p>85</p>
+<p>85</p>
+<p>79</p>
+<p>No</p>
+<p>14</p>
+<p>No</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="logical_or">Logical OR (||)</a></li>
+<li><a href="nullish_coalescing_operator">The nullish coalescing operator (<code>??</code>)</a></li>
+<li><a href="bitwise_or_assignment">Bitwise OR assignment (<code>|=</code>)</a></li>
+<li><a href="../global_objects/boolean"><code>Boolean</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Truthy">Truthy</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Falsy">Falsy</a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR_assignment" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR_assignment</a></p>
+</body>
+</html>

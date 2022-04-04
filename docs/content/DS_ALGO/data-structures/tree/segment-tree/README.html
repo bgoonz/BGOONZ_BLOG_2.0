@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="segment-tree">Segment Tree</h1>
+<p>In computer science, a <strong>segment tree</strong> also known as a statistic tree is a tree data structure used for storing information about intervals, or segments. It allows querying which of the stored segments contain a given point. It is, in principle, a static structure; that is, it’s a structure that cannot be modified once it’s built. A similar data structure is the interval tree.</p>
+<p>A segment tree is a binary tree. The root of the tree represents the whole array. The two children of the root represent the first and second halves of the array. Similarly, the children of each node corresponds to the two halves of the array corresponding to the node.</p>
+<p>We build the tree bottom up, with the value of each node being the “minimum” (or any other function) of its children’s values. This will take <code>O(n log n)</code> time. The number of operations done is the height of the tree, which is <code>O(log n)</code>. To do range queries, each node splits the query into two parts, one sub-query for each child. If a query contains the whole subarray of a node, we can use the precomputed value at the node. Using this optimisation, we can prove that only <code>O(log n)</code> minimum operations are done.</p>
+<figure>
+<img src="https://www.geeksforgeeks.org/wp-content/uploads/RangeMinimumQuery.png" alt="Min Segment Tree" /><figcaption>Min Segment Tree</figcaption>
+</figure>
+<figure>
+<img src="https://www.geeksforgeeks.org/wp-content/uploads/segment-tree1.png" alt="Sum Segment Tree" /><figcaption>Sum Segment Tree</figcaption>
+</figure>
+<h2 id="application">Application</h2>
+<p>A segment tree is a data structure designed to perform certain array operations efficiently - especially those involving range queries.</p>
+<p>Applications of the segment tree are in the areas of computational geometry, and geographic information systems.</p>
+<p>Current implementation of Segment Tree implies that you may pass any binary (with two input params) function to it and thus you’re able to do range query for variety of functions. In tests you may find examples of doing <code>min</code>, <code>max</code> and <code>sum</code> range queries on SegmentTree.</p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Segment_tree">Wikipedia</a></li>
+<li><a href="https://www.youtube.com/watch?v=ZBHKZF5w4YU&amp;index=65&amp;list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8">YouTube</a></li>
+<li><a href="https://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/">GeeksForGeeks</a></li>
+</ul>
+</body>
+</html>

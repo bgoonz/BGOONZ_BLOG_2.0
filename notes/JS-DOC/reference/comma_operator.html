@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>comma_operator</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="comma-operator">Comma operator (,)</h1>
+<p>The <strong>comma operator</strong> (<code>,</code>) evaluates each of its operands (from left to right) and returns the value of the last operand. This lets you create a compound expression in which multiple expressions are evaluated, with the compound expression’s final value being the value of the rightmost of its member expressions. This is commonly used to provide multiple parameters to a <code>for</code> loop.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>expr1, expr2, expr3...</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>expr1</code>, <code>expr2</code>, <code>expr3</code>…<br />
+One or more expressions, the last of which is returned as the value of the compound expression.</p>
+<h2 id="usage-notes">Usage notes</h2>
+<p>You can use the comma operator when you want to include multiple expressions in a location that requires a single expression. The most common usage of this operator is to supply multiple parameters in a <code>for</code> loop.</p>
+<p>The comma operator is fully different from the comma within arrays, objects, and function arguments and parameters.</p>
+<h2 id="examples">Examples</h2>
+<p>If <code>a</code> is a 2-dimensional array with 10 elements on each side, the following code uses the comma operator to increment <code>i</code> and decrement <code>j</code> at once.</p>
+<p>The following code prints the values of the diagonal elements in the array:</p>
+<pre><code>for (var i = 0, j = 9; i &lt;= 9; i++, j--)
+  console.log(&#39;a[&#39; + i + &#39;][&#39; + j + &#39;] = &#39; + a[i][j]);</code></pre>
+<p>Note that the comma operators in assignments may appear not to have the normal effect of comma operators because they don’t exist within an expression. In the following example, <code>a</code> is set to the value of <code>b = 3</code> (which is 3), but the <code>c = 4</code> expression still evaluates and its result returned to console (i.e., 4). This is due to <a href="operator_precedence">operator precedence and associativity</a>.</p>
+<pre><code>var a, b, c;
+
+a = b = 3, c = 4; // Returns 4 in console
+console.log(a); // 3 (left-most)
+
+var x, y, z;
+
+x = (y = 5, z = 6); // Returns 6 in console
+console.log(x); // 6 (right-most)</code></pre>
+<h3 id="processing-and-then-returning">Processing and then returning</h3>
+<p>Another example that one could make with comma operator is processing before returning. As stated, only the last element will be returned but all others are going to be evaluated as well. So, one could do:</p>
+<pre><code>function myFunc() {
+  var x = 0;
+
+  return (x += 1, x); // the same as return ++x;
+}</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-comma-operator">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-comma-operator</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>Comma_Operator</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>4</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../statements/for"><code>for</code> loop</a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comma_Operator" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comma_Operator</a></p>
+</body>
+</html>

@@ -1,31 +1,35 @@
-# Intl.Locale
+Intl.Locale
+===========
 
 The `Intl.Locale` object is a standard built-in property of the Intl object that represents a Unicode locale identifier.
 
-## Description
+Description
+-----------
 
-The `Intl.Locale` object was created to allow for easier manipulation of Unicode locales. Unicode represents locales with a string, called a _locale identifier_. The locale identifier consists of a _language identifier_ and _extension tags_. Language identifiers are the core of the locale, consisting of _language_, _script_, and _region subtags_. Additional information about the locale is stored in the optional _extension tags_. Extension tags hold information about locale aspects such as calendar type, clock type, and numbering system type.
+The `Intl.Locale` object was created to allow for easier manipulation of Unicode locales. Unicode represents locales with a string, called a *locale identifier*. The locale identifier consists of a *language identifier* and *extension tags*. Language identifiers are the core of the locale, consisting of *language*, *script*, and *region subtags*. Additional information about the locale is stored in the optional *extension tags*. Extension tags hold information about locale aspects such as calendar type, clock type, and numbering system type.
 
 Traditionally, the Intl API used strings to represent locales, just as Unicode does. This is a simple and lightweight solution that works well. Adding a Locale class, however, adds ease of parsing and manipulating the language, script, and region, as well as extension tags.
 
-## Constructor
+Constructor
+-----------
 
 [`Intl.Locale()`](locale/locale)  
 Creates a new `Locale` object.
 
-## Instance properties
+Instance properties
+-------------------
 
 [`Intl.Locale.prototype.baseName`](locale/basename)  
 Returns basic, core information about the `Locale` in the form of a substring of the complete data string.
 
 [`Intl.Locale.prototype.calendar`](locale/calendar)  
-Returns the part of the `Locale` that indicates the Locale's calendar era.
+Returns the part of the `Locale` that indicates the Locale’s calendar era.
 
 [`Intl.Locale.prototype.caseFirst`](locale/casefirst)  
-Returns whether case is taken into account for the locale's collation rules.
+Returns whether case is taken into account for the locale’s collation rules.
 
 [`Intl.Locale.prototype.collation`](locale/collation)  
-Returns the collation type for the `Locale`, which is used to order strings according to the locale's rules.
+Returns the collation type for the `Locale`, which is used to order strings according to the locale’s rules.
 
 [`Intl.Locale.prototype.hourCycle`](locale/hourcycle)  
 Returns the time keeping format convention used by the locale.
@@ -45,7 +49,8 @@ Returns the region of the world (usually a country) associated with the locale.
 [`Intl.Locale.prototype.script`](locale/script)  
 Returns the script used for writing the particular language used in the locale.
 
-## Instance methods
+Instance methods
+----------------
 
 [`Intl.Locale.prototype.maximize()`](locale/maximize)  
 Gets the most likely values for the language, script, and region of the locale based on existing values.
@@ -54,9 +59,10 @@ Gets the most likely values for the language, script, and region of the locale b
 Gets the most likely values for the language, script, and region of the locale based on existing values.
 
 [`Intl.Locale.prototype.toString()`](locale/tostring)  
-Returns the Locale's full locale identifier string.
+Returns the Locale’s full locale identifier string.
 
-## Examples
+Examples
+--------
 
 ### Basic usage
 
@@ -71,12 +77,11 @@ The constructor also takes an optional configuration object argument, which can 
     let us12hour = new Intl.Locale("en-US", {hourCycle: "h12"});
     console.log(us12hour.hourCycle); // Prints "h12"
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#locale-objects">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
-<br/>
-
-<span class="small">#locale-objects</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Internationalization API Specification (ECMAScript Internationalization API)<br />
+</p><span class="small">#locale-objects</span></td></tr></tbody></table>
 
 `Locale`
 
@@ -468,7 +473,8 @@ No
 
 11.0
 
-## See also
+See also
+--------
 
 -   [`Intl`](../intl)
 -   [The Intl.Locale Polyfill](https://formatjs.io/docs/polyfills/intl-locale)

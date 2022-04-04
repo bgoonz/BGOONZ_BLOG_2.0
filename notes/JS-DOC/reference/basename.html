@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>basename</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="intl.locale.prototype.basename">Intl.Locale.prototype.baseName</h1>
+<p>The <code>Intl.Locale.prototype.baseName</code> property returns a substring of the <code>Locale</code>’s string representation, containing core information about the <code>Locale</code>.</p>
+<h2 id="description">Description</h2>
+<p>An <a href="../locale"><code>Intl.Locale</code></a> object represents a parsed local and options for that locale. The <code>baseName</code> property returns basic, core information about the Locale in the form of a substring of the complete data string. Specifically, the property returns the substring containing the language, and the script and region if available.</p>
+<p><code>baseName</code> returns the <code>language ["-" script] ["-" region] *("-" variant)</code> subsequence of the <a href="https://www.unicode.org/reports/tr35/#Identifiers">unicode_language_id grammar</a>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="basic-example">Basic Example</h3>
+<pre><code>let myLoc = new Intl.Locale(&quot;fr-Latn-CA&quot;); // Sets locale to Canadian French
+console.log(myLoc.toString()); // Prints out &quot;fr-Latn-CA-u-ca-gregory&quot;
+console.log(myLoc.baseName); // Prints out &quot;fr-Latn-CA&quot;</code></pre>
+<h3 id="example-with-options-in-the-input-string">Example with options in the input string</h3>
+<pre><code>// Sets language to Japanese, region to Japan,
+
+// calendar to Gregorian, hour cycle to 24 hours
+let japan = new Intl.Locale(&quot;ja-JP-u-ca-gregory-hc-24&quot;);
+console.log(japan.toString()); // Prints out &quot;ja-JP-u-ca-gregory-hc-h24&quot;
+console.log(japan.baseName); // Prints out &quot;ja-JP&quot;</code></pre>
+<h3 id="example-with-options-that-override-input-string">Example with options that override input string</h3>
+<pre><code>// Input string indicates language as Dutch and region as Belgium,
+
+// but options object overrides the region and sets it to the Netherlands
+let dutch = new Intl.Locale(&quot;nl-Latn-BE&quot;, {region: &quot;NL&quot;});
+
+console.log(dutch.baseName); // Prints out &quot;nl-Latn-NL&quot;</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.baseName">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) <br/></p>
+<span class="small">#sec-Intl.Locale.prototype.baseName</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>baseName</code></p>
+<p>74</p>
+<p>79</p>
+<p>75</p>
+<p>No</p>
+<p>62</p>
+<p>14</p>
+<p>74</p>
+<p>74</p>
+<p>79</p>
+<p>53</p>
+<p>14</p>
+<p>11.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../locale"><code>Intl.Locale</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/baseName" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/baseName</a></p>
+</body>
+</html>

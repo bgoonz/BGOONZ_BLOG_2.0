@@ -1,8 +1,3 @@
----
-title: fs
-category: Node.js
----
-
 ### Reading
 
     fs.readFile('file.txt', function(err, data) { .. });

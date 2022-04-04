@@ -1,8 +1,9 @@
-# Fundamental Concepts In Javascript
+Fundamental Concepts In Javascript
+==================================
 
 This is the stuff that comes up on interviews…
 
----
+------------------------------------------------------------------------
 
 ### Fundamental Concepts In Javascript
 
@@ -12,9 +13,7 @@ This is the stuff that comes up on interviews…
 
 ### Here are most of the below exercises!
 
-<figure><img src="https://cdn-images-1.medium.com/max/1200/1*99CR4DhBOCjuVCkkK-lLwg.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/1200/1*UKRWX0waAKW3M_ZWJgRUmA.jpeg" class="graf-image" /></figure>
-
--   <span id="1fd7">Label variables as either Primitive vs. Reference</span>
+<figure><img src="https://cdn-images-1.medium.com/max/1200/1*99CR4DhBOCjuVCkkK-lLwg.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/1200/1*UKRWX0waAKW3M_ZWJgRUmA.jpeg" class="graf-image" /></figure>-   <span id="1fd7">Label variables as either Primitive vs. Reference</span>
 -   <span id="de11">primitives: strings, booleans, numbers, null and undefined</span>
 -   <span id="c203">primitives are immutable</span>
 -   <span id="254c">refereces: objects (including arrays)</span>
@@ -53,7 +52,7 @@ This is the stuff that comes up on interviews…
 
 ### Callbacks Lesson Concepts
 
--   <span id="133e">Given multiple plausible reasons, identify why functions are called "First Class Objects" in JavaScript.</span>
+-   <span id="133e">Given multiple plausible reasons, identify why functions are called “First Class Objects” in JavaScript.</span>
 -   <span id="22a1">they can be stored in variables, passed as arguments to other functions, and serve as return value for a function</span>
 -   <span id="5b83">supports same basic operations as other types (strings, bools, numbers)</span>
 -   <span id="2419">higher-order functions take functions as arguments or return functions as values</span>
@@ -61,40 +60,40 @@ This is the stuff that comes up on interviews…
 -   <span id="7d16">what is this referring to?</span>
 -   <span id="e1c6">Write a function that takes in a value and two callbacks. The function should return the result of the callback that is greater.</span>
 
-#### Write a function, myMap, that takes in an array and a callback as arguments. The function should mimic the behavior of <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map" class="markup--anchor markup--h4-anchor">`Array#map`.</a>
+#### Write a function, myMap, that takes in an array and a callback as arguments. The function should mimic the behavior of <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map" class="markup--anchor markup--h4-anchor"><code>Array#map</code>.</a>
 
 ### Write a function, myFilter, that takes in an array and a callback as arguments. The function should mimic the behavior of `Array#filter`.
 
 ### Write a function, myEvery, that takes in an array and a callback as arguments. The function should mimic the behavior of `Array#every`.
 
----
+------------------------------------------------------------------------
 
 ### Scope Lesson Concepts
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*2WT03WQBOGKWH_9i.png" class="graf-image" /></figure>-   <span id="cd3f">Identify the difference between `const`, `let`, and `var` declarations</span>
 
-> `const` **_- cannot reassign variable, scoped to block_**
+> `const` ***- cannot reassign variable, scoped to block***
 
-> `let` **_- can reassign variable, scoped to block_**
+> `let` ***- can reassign variable, scoped to block***
 
-> `var` **_- outdated, may or may not be reassigned, scoped to function. can be not just reassigned, but also redeclared!_**
+> `var` ***- outdated, may or may not be reassigned, scoped to function. can be not just reassigned, but also redeclared!***
 
--   <span id="dc31">_a variable will always evaluate to the value it contains regardless of how it was declared_</span>
+-   <span id="dc31">*a variable will always evaluate to the value it contains regardless of how it was declared*</span>
 
 #### Explain the difference between `const`, `let`, and `var` declarations
 
-> `var` _is function scoped—so if you declare it anywhere in a function, the declaration_ **_(but not assignment…the fact that it exists is known to the javascript engine but the value assigned to it is a mystery until the code is run line by line!) is "hoisted"_** _so it will_ **_exist in memory as "undefined"_** _which is bad and unpredictable_
+> `var` *is function scoped—so if you declare it anywhere in a function, the declaration* ***(but not assignment…the fact that it exists is known to the javascript engine but the value assigned to it is a mystery until the code is run line by line!) is “hoisted”*** *so it will* ***exist in memory as “undefined”*** *which is bad and unpredictable*
 
-> `var` _will also allow you to redeclare a variable, while_ `let` _or_ `const` _will raise a syntax error. you shouldn't be able to do that!_
+> `var` *will also allow you to redeclare a variable, while* `let` *or* `const` *will raise a syntax error. you shouldn’t be able to do that!*
 
-#### `!!const` _won't let you reassign a variable!!_
+#### `!!const` *won’t let you reassign a variable!!*
 
-> _but if it points to a mutable object, you will still be able to change the value by mutating the object_
+> *but if it points to a mutable object, you will still be able to change the value by mutating the object*
 
 -   <span id="2e8a">**block-scoped variables allow new variables with the same name in new scopes**</span>
--   <span id="b7a6">block-scoped still performs hoisting of all variables within the block, but it doesn't **initialize to the value of** `undefined` **like** `var` **does,** so it throws a specific reference error if you try to access the value before it has been declared</span>
--   <span id="d64f">**if you do not use** `var` **or** `let` **or** `const` **when initializing, it will be declared as global—THIS IS BAD** _(pretend that's something you didn't even know you could do)_</span>
--   <span id="a6c4">if you assign a value without a declaration*(la la la la….I'm not listening)*, it exists in the global scope (so then it would be accessible by all outer scopes, so bad). however, there's no hoisting, so it doesn't exist in the scope until after the line is run.</span>
+-   <span id="b7a6">block-scoped still performs hoisting of all variables within the block, but it doesn’t **initialize to the value of** `undefined` **like** `var` **does,** so it throws a specific reference error if you try to access the value before it has been declared</span>
+-   <span id="d64f">**if you do not use** `var` **or** `let` **or** `const` **when initializing, it will be declared as global—THIS IS BAD** *(pretend that’s something you didn’t even know you could do)*</span>
+-   <span id="a6c4">if you assign a value without a declaration*(la la la la….I’m not listening)*, it exists in the global scope (so then it would be accessible by all outer scopes, so bad). however, there’s no hoisting, so it doesn’t exist in the scope until after the line is run.</span>
 
 ### Predict the evaluation of code that utilizes function scope, block scope, lexical scope, and scope chaining
 
@@ -119,17 +118,17 @@ This is the stuff that comes up on interviews…
 -   <span id="98d6">arrow functions are automatically bound to the context they were declared in.</span>
 -   <span id="c91b">unlike regular function which use the context they are invoked in (unless they have been bound using `Function#bind`).</span>
 -   <span id="66a9">if you implement an arrow function as a method in an object the context it will be bound to is NOT the object itself, but the global context.</span>
--   <span id="b6e8">so you can't use an arrow function to define a method directly</span>
+-   <span id="b6e8">so you can’t use an arrow function to define a method directly</span>
 
 ### Implement a closure and explain how the closure effects scope
 
-#### a closure is "the combination of a function and the lexical environment within which that function was declared"
+#### a closure is “the combination of a function and the lexical environment within which that function was declared”
 
--   <span id="bb50">**alternatively, "when an inner function uses or changes variables in an outer function"**</span>
+-   <span id="bb50">**alternatively, “when an inner function uses or changes variables in an outer function”**</span>
 -   <span id="87c8">closures have access to any variables within their own scope + scope of outer functions + global scope</span>
--   <span id="a9e4">the set of all these available variables is "lexical environemnt"</span>
+-   <span id="a9e4">the set of all these available variables is “lexical environemnt”</span>
 -   <span id="8562">closure keeps reference to all variables \*\* even if the outer function has returned</span>
--   <span id="0a13">Without a closure to access the variables of an outer function from within a call to an inner function the outer function 'closed' over …each function has a private mutable state that cannot be accessed externally</span>
+-   <span id="0a13">Without a closure to access the variables of an outer function from within a call to an inner function the outer function ‘closed’ over …each function has a private mutable state that cannot be accessed externally</span>
 -   <span id="2d6a">The inner function will maintain a reference to the scope in which it was declared.so it has access to variables that were initialized in any outer scope- even if that scope</span>
 -   <span id="d0d9">The inner function will maintain a reference to the scope in which it was declared.so it has access to variables that were initialized in any outer scope- even if that scope</span>
 
@@ -145,46 +144,46 @@ This is the stuff that comes up on interviews…
 
 -   <span id="e43c">when we use `this` in a method it refers to the object that the method is invoked on</span>
 -   <span id="568d">it will let you access other pieces of information from within that object, or even other methods</span>
--   <span id="3cc8">method style invocation — `object.method(args)` (e.g. built in examples like `Array#push`, or `String#toUpperCase`)</span>
+-   <span id="3cc8">method style invocation — `object.method(args)` (e.g. built in examples like `Array#push`, or `String#toUpperCase`)</span>
 -   <span id="e9b1">context is set every time we invoke a function</span>
 -   <span id="5423">function style invocation sets the context to the global object no matter what</span>
 -   <span id="31b8">being inside an object does not make the context that object! you still have to use method-style invocation</span>
 -   <span id="fa5a">Utilize the built in `Function#bind` on a callback to maintain the context of this</span>
 -   <span id="5e6d">when we call bind on a function, we get an exotic function back — so the context will always be the same for that new function</span>
 
-can also work with arguments, so you can have a version of a function with particular arguments and a particular context.the first arg will be the context aka the \`this\` you want it to use.the next arguments will be the functions arguments that you are binding — if you just want to bind it to those arguments in particular, you can use \`null\` as the first argument, so the context won 't be bound, just the arguments — Given a code snippet, identify what \`this\` refers to
+can also work with arguments, so you can have a version of a function with particular arguments and a particular context.the first arg will be the context aka the \`this\` you want it to use.the next arguments will be the functions arguments that you are binding — if you just want to bind it to those arguments in particular, you can use \`null\` as the first argument, so the context won ’t be bound, just the arguments — Given a code snippet, identify what \`this\` refers to
 
 > Important to recognize the difference between scope and context
 
--   <span id="a071">**scope works like a dictionary that has all the variables that are available within a given block, plus a pointer back the next outer scope(which itself has pointers to new scopes until you reach the global scope.so you can think about a whole given block 's scope as a kind of linked list of dictionaries) (also, this is not to say that scope is actually implemented in this way, that is just the schema that i can use to understand it)**</span>
+-   <span id="a071">**scope works like a dictionary that has all the variables that are available within a given block, plus a pointer back the next outer scope(which itself has pointers to new scopes until you reach the global scope.so you can think about a whole given block ’s scope as a kind of linked list of dictionaries) (also, this is not to say that scope is actually implemented in this way, that is just the schema that i can use to understand it)**</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*ATcQhZwwSH5EPFWk.gif" class="graf-image" /></figure>-   <span id="f933">**context refers to the value of the \`this\` keyword**</span>
 -   <span id="03e2">the keyword \`this\` exists in every function and it evaluates to the object that is currently invoking that function</span>
 -   <span id="7933">so the context is fairly straightforward when we talk about methods being called on specific objects</span>
--   <span id="f7bb">you could, however, call an object 's method on something other than that object, and then this would refer to the context where/how it was called, e.g.</span>
+-   <span id="f7bb">you could, however, call an object ’s method on something other than that object, and then this would refer to the context where/how it was called, e.g.</span>
 
 ### CALLING SOMETHING IN THE WRONG CONTEXT CAN MESS YOU UP!
 
--   <span id="1757">could throw an error if it expects this to have some other method or whatever that doesn't exist</span>
+-   <span id="1757">could throw an error if it expects this to have some other method or whatever that doesn’t exist</span>
 -   <span id="11b1">you could also overwrite values or assign values to exist in a space where they should not exist</span>
 -   <span id="e2bc">if you call a function as a callback, it will set `this` to be the outer function itself, even if the function you were calling is a method that was called on a particular object</span>
 
 we can use strict mode with `"use strict";` this will prevent you from accessing the global object with `this` in functions, so if you try to call `this` in the global context and change a value, you will get a type error, and the things you try to access will be undefined
 
 -   <span id="2d21">CALLING SOMETHING IN THE WRONG CONTEXT CAN MESS YOU UP!</span>
--   <span id="e8e4">could throw an error if it expects this to have some other method or whatever that doesn't exist</span>
+-   <span id="e8e4">could throw an error if it expects this to have some other method or whatever that doesn’t exist</span>
 -   <span id="b227">you could also overwrite values or assign values to exist in a space where they should not exist</span>
 -   <span id="a0a0">if you call a function as a callback, it will set `this` to be the outer function itself, even if the function you were calling is a method that was called on a particular object</span>
 
-> _we can use strict mode with_ `"use strict";` _this will prevent you from accessing the global object with_ `this` _in functions, so if you try to call_ `this` _in the global context and change a value, you will get a type error, and the things you try to access will be undefined_
+> *we can use strict mode with* `"use strict";` *this will prevent you from accessing the global object with* `this` *in functions, so if you try to call* `this` *in the global context and change a value, you will get a type error, and the things you try to access will be undefined*
 
 ### POJOs
 
 ### POJOs
 
-#### 1. Label variables as either Primitive vs. Reference
+#### 1. Label variables as either Primitive vs. Reference
 
-Javascript considers most data types to be 'primitive', these data types are immutable, and are passed by value. The more complex data types: Array and Object are mutable, are considered 'reference' data types, and are passed by reference.
+Javascript considers most data types to be ‘primitive’, these data types are immutable, and are passed by value. The more complex data types: Array and Object are mutable, are considered ‘reference’ data types, and are passed by reference.
 
 -   <span id="05bb">Boolean — Primitive</span>
 -   <span id="a5ab">Null — Primitive</span>
@@ -247,7 +246,7 @@ Javascript considers most data types to be 'primitive', these data types are imm
 
 Consider this `run` function, inside which `foo` and `bar` have `function scope` . `i` and `baz` are scoped to the block expression.
 
-Notice that referencing `baz` from outside it's block results in JavaScript throwing a ReferenceError.
+Notice that referencing `baz` from outside it’s block results in JavaScript throwing a ReferenceError.
 
 Consider this `run` function, inside of which `foo` has `function scope` .
 
@@ -267,7 +266,7 @@ Identically, we could write
 
 #### 5. Given an arrow function, deduce the value of `this` without executing the code
 
-If we use a function declaration style function, the `this` variable is set to the `global` object (i.e. `Object [global]` in Node. JS and `Window` in your browser).
+If we use a function declaration style function, the `this` variable is set to the `global` object (i.e. `Object [global]` in Node. JS and `Window` in your browser).
 
     const adder = (arr) => {
         console.log(this);
@@ -283,14 +282,11 @@ In this example, we use a fat arrow style function. Note that when we declare a 
 
 #### 9. Given a code snippet, identify what `this` refers to
 
-<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong>
-<br/>
+**Web-Dev-Hub**  
 
-<em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…*bgoonz-blog.netlify.app<a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*Ff29X3kTbA17Qgoz.jpg" class="graf-image" /></figure>
-
-By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [August 11, 2021](https://medium.com/p/8e093a665b04).
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*Ff29X3kTbA17Qgoz.jpg" class="graf-image" /></figure>By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [August 11, 2021](https://medium.com/p/8e093a665b04).
 
 <a href="https://medium.com/@bryanguner/fundamental-concepts-in-javascript-8e093a665b04" class="p-canonical">Canonical link</a>
 

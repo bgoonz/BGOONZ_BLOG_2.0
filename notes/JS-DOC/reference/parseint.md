@@ -1,8 +1,10 @@
-# parseInt()
+parseInt()
+==========
 
 The `parseInt()` function parses a string argument and returns an integer of the specified [radix](https://en.wikipedia.org/wiki/Radix) (the base in mathematical numeral systems).
 
-## Syntax
+Syntax
+------
 
     parseInt(string)
     parseInt(string, radix)
@@ -13,7 +15,7 @@ The `parseInt()` function parses a string argument and returns an integer of the
 The value to parse. If this argument is not a string, then it is converted to one using the `ToString` abstract operation. Leading [whitespace](https://developer.mozilla.org/en-US/docs/Glossary/Whitespace) in this argument is ignored.
 
 `radix` <span class="badge inline optional">Optional</span>  
-An integer between `2` and `36` that represents the _radix_ (the base in mathematical numeral systems) of the `string`. Be careful—this does **_not_** default to `10`! If the radix value is not of the `Number` type it will be coerced to a `Number`.
+An integer between `2` and `36` that represents the *radix* (the base in mathematical numeral systems) of the `string`. Be careful—this does ***not*** default to `10`! If the radix value is not of the `Number` type it will be coerced to a `Number`.
 
 **Warning:** The [description below](#description) explains in more detail what happens when `radix` is not provided.
 
@@ -26,7 +28,8 @@ Or [`NaN`](nan) when
 -   the `radix` is smaller than `2` or bigger than `36`, or
 -   the first non-whitespace character cannot be converted to a number.
 
-## Description
+Description
+-----------
 
 The `parseInt` function converts its first argument to a string, parses that string, then returns an integer or `NaN`.
 
@@ -36,13 +39,13 @@ For radices above `10`, letters of the English alphabet indicate numerals greate
 
 If `parseInt` encounters a character that is not a numeral in the specified `radix`, it ignores it and all succeeding characters and returns the integer value parsed up to that point. `parseInt` truncates numbers to integer values. Leading and trailing spaces are allowed.
 
-Because some numbers use the `e` character in their string representation (e.g. `6.022e23` for 6.022 × 10<sup>23</sup>), using `parseInt` to truncate numbers will produce unexpected results when used on very large or very small numbers. `parseInt` should _not_ be used as a substitute for [`Math.floor()`](math/floor).
+Because some numbers use the `e` character in their string representation (e.g. `6.022e23` for 6.022 × 10<sup>23</sup>), using `parseInt` to truncate numbers will produce unexpected results when used on very large or very small numbers. `parseInt` should *not* be used as a substitute for [`Math.floor()`](math/floor).
 
 `parseInt` understands exactly two signs: `+` for positive, and `-` for negative (since ECMAScript 1). It is done as an initial step in the parsing after whitespace is removed. If no signs are found, the algorithm moves to the following step; otherwise, it removes the sign and runs the number-parsing on the rest of the string.
 
 A value passed as the radix argument is coerced to a Number (if necessary), then if the value is 0, `NaN` or `Infinity` (undefined is coerced to `NaN`), JavaScript assumes the following:
 
-1.  If the input `string` begins with "`0x`" or "`0X`" (a zero, followed by lowercase or uppercase X), `radix` is assumed to be `16` and the rest of the string is parsed as a hexadecimal number.
+1.  If the input `string` begins with “`0x`” or “`0X`” (a zero, followed by lowercase or uppercase X), `radix` is assumed to be `16` and the rest of the string is parsed as a hexadecimal number.
 2.  If the input `string` begins with any other value, the radix is `10` (decimal).
 
 Else if the radix value (coerced if necessary) is not in range \[2, 36\] (inclusive) `parseInt` returns `NaN`.
@@ -53,11 +56,11 @@ For arithmetic purposes, the `NaN` value is not a number in any radix. You can c
 
 To convert a number to its string literal in a particular radix, use `thatNumber.toString(radix)`.
 
-**Warning:** `parseInt` converts a [`BigInt`](bigint) to a [`Number`](number) and loses precision in the process. This is because trailing non-numeric values, including "`n`", are discarded.
+**Warning:** `parseInt` converts a [`BigInt`](bigint) to a [`Number`](number) and loses precision in the process. This is because trailing non-numeric values, including “`n`”, are discarded.
 
 ### Octal interpretations with no radix
 
-Please note that following information doesn't apply to recent implementations as of 2021.
+Please note that following information doesn’t apply to recent implementations as of 2021.
 
 Although discouraged by ECMAScript 3, many ECMAScript 3 implementations had interpreted a numeric string beginning with a leading `0` as octal. The following might have had an octal result, or it might have had a decimal result.
 
@@ -92,7 +95,8 @@ Regular expressions can help:
     console.log(filterInt('hop1.61803398875'))   // NaN
     console.log(filterInt('1.61803398875'))      // NaN
 
-## Examples
+Examples
+--------
 
 ### Using parseInt
 
@@ -153,7 +157,7 @@ The following example returns `224`:
     parseInt('900719925474099267n')
     // 900719925474099300
 
-`parseInt` doesn't work with [numeric separators](../lexical_grammar#numeric_separators):
+`parseInt` doesn’t work with [numeric separators](../lexical_grammar#numeric_separators):
 
     parseInt('123_456')
     // 123
@@ -171,14 +175,14 @@ The radix is coerced to a `Number`:
     obj.valueOf = function() {return Infinity};
     parseInt('11', obj); // 11
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-parseint-string-radix">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-parseint-string-radix</span></td></tr></tbody></table>
 
-<span class="small">#sec-parseint-string-radix</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -260,7 +264,8 @@ Samsung Internet
 
 1.5
 
-## See also
+See also
+--------
 
 -   [`parseFloat()`](parsefloat)
 -   [`Number.parseFloat()`](number/parsefloat)

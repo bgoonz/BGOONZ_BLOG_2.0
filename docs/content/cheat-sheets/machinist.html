@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Machinist</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Machinist</h1>
+</header>
+<h3 id="installing">Installing</h3>
+<pre><code># Gemfile
+gem &#39;machinist&#39;, &#39;&gt;= 2.0.0.beta2&#39;, group: &#39;test&#39;
+
+# ~$ bundle
+# ~$ rails generate machinist:install</code></pre>
+<h3 id="building-objects">Building objects</h3>
+<pre><code>User.make
+
+# `make` builds it, and `make!` builds+saves it
+User.make!
+User.make! name: &quot;David&quot;
+User.make!(:admin)</code></pre>
+<h3 id="defining-blueprints">Defining blueprints</h3>
+<pre><code>User.blueprint do
+  name  { &quot;User #{sn}&quot; }
+  email { &quot;user-#{sn}@example.com&quot; }
+end
+
+User.blueprint(:admin) do
+  name  { &quot;Admin User #{sn}&quot; }
+  admin { true }
+end</code></pre>
+<h3 id="associations">Associations</h3>
+<pre><code>Post.blueprint do
+  author { User.make }
+
+  comments(3)    # Makes 3 comments (has_many / habtm)
+
+  author         # autodetect (Assumes there&#39;s User.blueprint)
+
+end</code></pre>
+<h3 id="references">References</h3>
+<ul>
+<li><a href="https://github.com/notahat/machinist">https://github.com/notahat/machinist</a></li>
+</ul>
+</body>
+</html>

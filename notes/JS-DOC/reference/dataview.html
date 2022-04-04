@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>dataview</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="dataview">DataView</h1>
+<p>The <code>DataView</code> view provides a low-level interface for reading and writing multiple number types in a binary <a href="arraybuffer"><code>ArrayBuffer</code></a>, without having to care about the platform’s <a href="https://developer.mozilla.org/en-US/docs/Glossary/Endianness">endianness</a>.</p>
+<h2 id="description">Description</h2>
+<h3 id="endianness">Endianness</h3>
+<p>Multi-byte number formats are represented in memory differently depending on machine architecture — see <a href="https://developer.mozilla.org/en-US/docs/Glossary/Endianness">Endianness</a> for an explanation. <code>DataView</code> accessors provide explicit control of how data is accessed, regardless of the executing computer’s endianness.</p>
+<pre><code>var littleEndian = (function() {
+  var buffer = new ArrayBuffer(2);
+  new DataView(buffer).setInt16(0, 256, true /* littleEndian */);
+  // Int16Array uses the platform&#39;s endianness.
+  return new Int16Array(buffer)[0] === 256;
+})();
+console.log(littleEndian); // true or false</code></pre>
+<h3 id="bit-integer-values">64-bit Integer Values</h3>
+<p>Some browsers don’t have support for <a href="dataview/setbigint64"><code>DataView.prototype.setBigInt64()</code></a> and <a href="dataview/setbiguint64"><code>DataView.prototype.setBigUint64()</code></a>. So to enable 64-bit operations in your code that will work across browsers, you could implement your own <code>getUint64()</code> function, to obtain values with precision up to <a href="number/max_safe_integer"><code>Number.MAX_SAFE_INTEGER</code></a> — which could suffice for certain cases.</p>
+<pre><code>function getUint64(dataview, byteOffset, littleEndian) {
+  // split 64-bit number into two 32-bit (4-byte) parts
+  const left =  dataview.getUint32(byteOffset, littleEndian);
+  const right = dataview.getUint32(byteOffset+4, littleEndian);
+
+  // combine the two 32-bit values
+  const combined = littleEndian? left + 2**32*right : 2**32*left + right;
+
+  if (!Number.isSafeInteger(combined))
+    console.warn(combined, &#39;exceeds MAX_SAFE_INTEGER. Precision may be lost&#39;);
+
+  return combined;
+}</code></pre>
+<p>Alternatively, if you need full 64-bit range, you can create a <a href="bigint"><code>BigInt</code></a>. Further, although native BigInts are much faster than user-land library equivalents, BigInts will always be much slower than 32-bit integers in JavaScript due to the nature of their variable size.</p>
+<pre><code>const BigInt = window.BigInt, bigThirtyTwo = BigInt(32), bigZero = BigInt(0);
+function getUint64BigInt(dataview, byteOffset, littleEndian) {
+  // split 64-bit number into two 32-bit (4-byte) parts
+  const left = BigInt(dataview.getUint32(byteOffset|0, !!littleEndian)&gt;&gt;&gt;0);
+  const right = BigInt(dataview.getUint32((byteOffset|0) + 4|0, !!littleEndian)&gt;&gt;&gt;0);
+
+  // combine the two 32-bit values and return
+  return littleEndian ? (right&lt;&lt;bigThirtyTwo)|left : (left&lt;&lt;bigThirtyTwo)|right;
+}</code></pre>
+<h2 id="constructor">Constructor</h2>
+<p><a href="dataview/dataview"><code>DataView()</code></a><br />
+Creates a new <code>DataView</code> object.</p>
+<h2 id="instance-properties">Instance properties</h2>
+<p><a href="dataview/buffer"><code>DataView.prototype.buffer</code></a><br />
+The <a href="arraybuffer"><code>ArrayBuffer</code></a> referenced by this view. Fixed at construction time and thus <strong>read only.</strong></p>
+<p><a href="dataview/bytelength"><code>DataView.prototype.byteLength</code></a><br />
+The length (in bytes) of this view from the start of its <a href="arraybuffer"><code>ArrayBuffer</code></a>. Fixed at construction time and thus <strong>read only.</strong></p>
+<p><a href="dataview/byteoffset"><code>DataView.prototype.byteOffset</code></a><br />
+The offset (in bytes) of this view from the start of its <a href="arraybuffer"><code>ArrayBuffer</code></a>. Fixed at construction time and thus <strong>read only.</strong></p>
+<h2 id="instance-methods">Instance methods</h2>
+<p><a href="dataview/getint8"><code>DataView.prototype.getInt8()</code></a><br />
+Gets a signed 8-bit integer (byte) at the specified byte offset from the start of the view.</p>
+<p><a href="dataview/getuint8"><code>DataView.prototype.getUint8()</code></a><br />
+Gets an unsigned 8-bit integer (unsigned byte) at the specified byte offset from the start of the view.</p>
+<p><a href="dataview/getint16"><code>DataView.prototype.getInt16()</code></a><br />
+Gets a signed 16-bit integer (short) at the specified byte offset from the start of the view.</p>
+<p><a href="dataview/getuint16"><code>DataView.prototype.getUint16()</code></a><br />
+Gets an unsigned 16-bit integer (unsigned short) at the specified byte offset from the start of the view.</p>
+<p><a href="dataview/getint32"><code>DataView.prototype.getInt32()</code></a><br />
+Gets a signed 32-bit integer (long) at the specified byte offset from the start of the view.</p>
+<p><a href="dataview/getuint32"><code>DataView.prototype.getUint32()</code></a><br />
+Gets an unsigned 32-bit integer (unsigned long) at the specified byte offset from the start of the view.</p>
+<p><a href="dataview/getfloat32"><code>DataView.prototype.getFloat32()</code></a><br />
+Gets a signed 32-bit float (float) at the specified byte offset from the start of the view.</p>
+<p><a href="dataview/getfloat64"><code>DataView.prototype.getFloat64()</code></a><br />
+Gets a signed 64-bit float (double) at the specified byte offset from the start of the view.</p>
+<p><a href="dataview/getbigint64"><code>DataView.prototype.getBigInt64()</code></a><br />
+Gets a signed 64-bit integer (long long) at the specified byte offset from the start of the view.</p>
+<p><a href="dataview/getbiguint64"><code>DataView.prototype.getBigUint64()</code></a><br />
+Gets an unsigned 64-bit integer (unsigned long long) at the specified byte offset from the start of the view.</p>
+<p><a href="dataview/setint8"><code>DataView.prototype.setInt8()</code></a><br />
+Stores a signed 8-bit integer (byte) value at the specified byte offset from the start of the view.</p>
+<p><a href="dataview/setuint8"><code>DataView.prototype.setUint8()</code></a><br />
+Stores an unsigned 8-bit integer (unsigned byte) value at the specified byte offset from the start of the view.</p>
+<p><a href="dataview/setint16"><code>DataView.prototype.setInt16()</code></a><br />
+Stores a signed 16-bit integer (short) value at the specified byte offset from the start of the view.</p>
+<p><a href="dataview/setuint16"><code>DataView.prototype.setUint16()</code></a><br />
+Stores an unsigned 16-bit integer (unsigned short) value at the specified byte offset from the start of the view.</p>
+<p><a href="dataview/setint32"><code>DataView.prototype.setInt32()</code></a><br />
+Stores a signed 32-bit integer (long) value at the specified byte offset from the start of the view.</p>
+<p><a href="dataview/setuint32"><code>DataView.prototype.setUint32()</code></a><br />
+Stores an unsigned 32-bit integer (unsigned long) value at the specified byte offset from the start of the view.</p>
+<p><a href="dataview/setfloat32"><code>DataView.prototype.setFloat32()</code></a><br />
+Stores a signed 32-bit float (float) value at the specified byte offset from the start of the view.</p>
+<p><a href="dataview/setfloat64"><code>DataView.prototype.setFloat64()</code></a><br />
+Stores a signed 64-bit float (double) value at the specified byte offset from the start of the view.</p>
+<p><a href="dataview/setbigint64"><code>DataView.prototype.setBigInt64()</code></a><br />
+Stores a signed 64-bit integer (long long) value at the specified byte offset from the start of the view.</p>
+<p><a href="dataview/setbiguint64"><code>DataView.prototype.setBigUint64()</code></a><br />
+Stores an unsigned 64-bit integer (unsigned long long) value at the specified byte offset from the start of the view.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-dataview">Using DataView</h3>
+<pre><code>var buffer = new ArrayBuffer(16);
+var view = new DataView(buffer, 0);
+
+view.setInt16(1, 42);
+view.getInt16(1); // 42</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-dataview-objects">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-dataview-objects</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>DataView</code></p>
+<p>9</p>
+<p>12</p>
+<p>15</p>
+<p>10</p>
+<p>12.1</p>
+<p>5.1</p>
+<p>4</p>
+<p>18</p>
+<p>15</p>
+<p>12.1</p>
+<p>4.2</p>
+<p>1.0</p>
+<p><code>DataView</code></p>
+<p>9</p>
+<p>12</p>
+<p>15</p>
+<p>10</p>
+<p>12.1</p>
+<p>5.1</p>
+<p>4</p>
+<p>18</p>
+<p>15</p>
+<p>12.1</p>
+<p>4.2</p>
+<p>1.0</p>
+<p><code>buffer</code></p>
+<p>9</p>
+<p>12</p>
+<p>15</p>
+<p>10</p>
+<p>12.1</p>
+<p>5.1</p>
+<p>4</p>
+<p>18</p>
+<p>15</p>
+<p>12.1</p>
+<p>4.2</p>
+<p>1.0</p>
+<p><code>byteLength</code></p>
+<p>9</p>
+<p>12</p>
+<p>15</p>
+<p>10</p>
+<p>12.1</p>
+<p>5.1</p>
+<p>4</p>
+<p>18</p>
+<p>15</p>
+<p>12.1</p>
+<p>4.2</p>
+<p>1.0</p>
+<p><code>byteOffset</code></p>
+<p>9</p>
+<p>12</p>
+<p>15</p>
+<p>10</p>
+<p>12.1</p>
+<p>5.1</p>
+<p>4</p>
+<p>18</p>
+<p>15</p>
+<p>12.1</p>
+<p>4.2</p>
+<p>1.0</p>
+<p><code>getBigInt64</code></p>
+<p>67</p>
+<p>79</p>
+<p>68</p>
+<p>No</p>
+<p>54</p>
+<p>No</p>
+<p>67</p>
+<p>67</p>
+<p>68</p>
+<p>48</p>
+<p>No</p>
+<p>9.0</p>
+<p><code>getBigUint64</code></p>
+<p>67</p>
+<p>79</p>
+<p>68</p>
+<p>No</p>
+<p>54</p>
+<p>No</p>
+<p>67</p>
+<p>67</p>
+<p>68</p>
+<p>48</p>
+<p>No</p>
+<p>9.0</p>
+<p><code>getFloat32</code></p>
+<p>9</p>
+<p>12</p>
+<p>15</p>
+<p>10</p>
+<p>12.1</p>
+<p>5.1</p>
+<p>4</p>
+<p>18</p>
+<p>15</p>
+<p>12.1</p>
+<p>4.2</p>
+<p>1.0</p>
+<p><code>getFloat64</code></p>
+<p>9</p>
+<p>12</p>
+<p>15</p>
+<p>10</p>
+<p>12.1</p>
+<p>5.1</p>
+<p>4</p>
+<p>18</p>
+<p>15</p>
+<p>12.1</p>
+<p>4.2</p>
+<p>1.0</p>
+<p><code>getInt16</code></p>
+<p>9</p>
+<p>12</p>
+<p>15</p>
+<p>10</p>
+<p>12.1</p>
+<p>5.1</p>
+<p>4</p>
+<p>18</p>
+<p>15</p>
+<p>12.1</p>
+<p>4.2</p>
+<p>1.0</p>
+<p><code>getInt32</code></p>
+<p>9</p>
+<p>12</p>
+<p>15</p>
+<p>10</p>
+<p>12.1</p>
+<p>5.1</p>
+<p>4</p>
+<p>18</p>
+<p>15</p>
+<p>12.1</p>
+<p>4.2</p>
+<p>1.0</p>
+<p><code>getInt8</code></p>
+<p>9</p>
+<p>12</p>
+<p>15</p>
+<p>10</p>
+<p>12.1</p>
+<p>5.1</p>
+<p>4</p>
+<p>18</p>
+<p>15</p>
+<p>12.1</p>
+<p>4.2</p>
+<p>1.0</p>
+<p><code>getUint16</code></p>
+<p>9</p>
+<p>12</p>
+<p>15</p>
+<p>10</p>
+<p>12.1</p>
+<p>5.1</p>
+<p>4</p>
+<p>18</p>
+<p>15</p>
+<p>12.1</p>
+<p>4.2</p>
+<p>1.0</p>
+<p><code>getUint32</code></p>
+<p>9</p>
+<p>12</p>
+<p>15</p>
+<p>10</p>
+<p>12.1</p>
+<p>5.1</p>
+<p>4</p>
+<p>18</p>
+<p>15</p>
+<p>12.1</p>
+<p>4.2</p>
+<p>1.0</p>
+<p><code>getUint8</code></p>
+<p>9</p>
+<p>12</p>
+<p>15</p>
+<p>10</p>
+<p>12.1</p>
+<p>5.1</p>
+<p>4</p>
+<p>18</p>
+<p>15</p>
+<p>12.1</p>
+<p>4.2</p>
+<p>1.0</p>
+<p><code>setBigInt64</code></p>
+<p>67</p>
+<p>79</p>
+<p>68</p>
+<p>No</p>
+<p>54</p>
+<p>No</p>
+<p>67</p>
+<p>67</p>
+<p>68</p>
+<p>48</p>
+<p>No</p>
+<p>9.0</p>
+<p><code>setBigUint64</code></p>
+<p>67</p>
+<p>79</p>
+<p>68</p>
+<p>No</p>
+<p>54</p>
+<p>No</p>
+<p>67</p>
+<p>67</p>
+<p>68</p>
+<p>48</p>
+<p>No</p>
+<p>9.0</p>
+<p><code>setFloat32</code></p>
+<p>9</p>
+<p>12</p>
+<p>15</p>
+<p>10</p>
+<p>12.1</p>
+<p>5.1</p>
+<p>4</p>
+<p>18</p>
+<p>15</p>
+<p>12.1</p>
+<p>4.2</p>
+<p>1.0</p>
+<p><code>setFloat64</code></p>
+<p>9</p>
+<p>12</p>
+<p>15</p>
+<p>10</p>
+<p>12.1</p>
+<p>5.1</p>
+<p>4</p>
+<p>18</p>
+<p>15</p>
+<p>12.1</p>
+<p>4.2</p>
+<p>1.0</p>
+<p><code>setInt16</code></p>
+<p>9</p>
+<p>12</p>
+<p>15</p>
+<p>10</p>
+<p>12.1</p>
+<p>5.1</p>
+<p>4</p>
+<p>18</p>
+<p>15</p>
+<p>12.1</p>
+<p>4.2</p>
+<p>1.0</p>
+<p><code>setInt32</code></p>
+<p>9</p>
+<p>12</p>
+<p>15</p>
+<p>10</p>
+<p>12.1</p>
+<p>5.1</p>
+<p>4</p>
+<p>18</p>
+<p>15</p>
+<p>12.1</p>
+<p>4.2</p>
+<p>1.0</p>
+<p><code>setInt8</code></p>
+<p>9</p>
+<p>12</p>
+<p>15</p>
+<p>10</p>
+<p>12.1</p>
+<p>5.1</p>
+<p>4</p>
+<p>18</p>
+<p>15</p>
+<p>12.1</p>
+<p>4.2</p>
+<p>1.0</p>
+<p><code>setUint16</code></p>
+<p>9</p>
+<p>12</p>
+<p>15</p>
+<p>10</p>
+<p>12.1</p>
+<p>5.1</p>
+<p>4</p>
+<p>18</p>
+<p>15</p>
+<p>12.1</p>
+<p>4.2</p>
+<p>1.0</p>
+<p><code>setUint32</code></p>
+<p>9</p>
+<p>12</p>
+<p>15</p>
+<p>10</p>
+<p>12.1</p>
+<p>5.1</p>
+<p>4</p>
+<p>18</p>
+<p>15</p>
+<p>12.1</p>
+<p>4.2</p>
+<p>1.0</p>
+<p><code>setUint8</code></p>
+<p>9</p>
+<p>12</p>
+<p>15</p>
+<p>10</p>
+<p>12.1</p>
+<p>5.1</p>
+<p>4</p>
+<p>18</p>
+<p>15</p>
+<p>12.1</p>
+<p>4.2</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="https://github.com/jDataView/jDataView">jDataView</a>: JavaScript library that polyfills and extends the <code>DataView</code> API to all browsers and Node.js.</li>
+<li><a href="arraybuffer"><code>ArrayBuffer</code></a></li>
+<li><a href="sharedarraybuffer"><code>SharedArrayBuffer</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView</a></p>
+</body>
+</html>

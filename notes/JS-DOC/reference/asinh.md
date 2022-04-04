@@ -1,10 +1,12 @@
-# Math.asinh()
+Math.asinh()
+============
 
 The `Math.asinh()` function returns the hyperbolic arcsine of a number, that is
 
-`Math.asinh` ` (``x``) ` = arsinh (_x_) = the unique *y* such that sinh (_y_) = *x*
+`Math.asinh` ``` (``x``) ``` = arsinh (*x*) = the unique *y* such that sinh (*y*) = *x*
 
-## Syntax
+Syntax
+------
 
     Math.asinh(x)
 
@@ -17,18 +19,21 @@ A number.
 
 The hyperbolic arcsine of the given number.
 
-## Description
+Description
+-----------
 
 Because `asinh()` is a static method of `Math`, you always use it as `Math.asinh()`, rather than as a method of a `Math` object you created (`Math` is not a constructor).
 
-## Examples
+Examples
+--------
 
 ### Using Math.asinh()
 
     Math.asinh(1);  // 0.881373587019543
     Math.asinh(0);  // 0
 
-## Polyfill
+Polyfill
+--------
 
 `Math.asinh` can be emulated with the following function:
 
@@ -48,12 +53,11 @@ Because `asinh()` is a static method of `Math`, you always use it as `Math.asinh
 
 `Math.log1p` may also have to be polyfilled; see [Math.log1p](log1p) for details.
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.asinh">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-math.asinh</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-math.asinh</span></td></tr></tbody></table>
 
 `asinh`
 
@@ -81,14 +85,14 @@ No
 
 3.0
 
-## See also
+See also
+--------
 
-- [`Math.acosh()`](acosh)
-- [`Math.atanh()`](atanh)
-- [`Math.cosh()`](cosh)
-- [`Math.sinh()`](sinh)
-- [`Math.tanh()`](tanh)
+-   [`Math.acosh()`](acosh)
+-   [`Math.atanh()`](atanh)
+-   [`Math.cosh()`](cosh)
+-   [`Math.sinh()`](sinh)
+-   [`Math.tanh()`](tanh)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/asinh" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/asinh</a>

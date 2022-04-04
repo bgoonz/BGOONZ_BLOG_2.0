@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>xmlto</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="to-convert-docbook-xml-to-pdf">To convert DocBook XML to PDF</h1>
+<p>xmlto pdf mydoc.xml</p>
+<h1 id="to-convert-docbook-xml-to-html">To convert DocBook XML to HTML</h1>
+<p>xmlto -o html-dir html mydoc.xml</p>
+<h1 id="to-convert-docbook-xml-to-single-html-file">To convert DocBook XML to single HTML file</h1>
+<p>xmlto html-nochunks mydoc.xml</p>
+<h1 id="to-modify-output-with-xsl-override">To modify output with XSL override</h1>
+<p>xmlto -m ulink.xsl pdf mydoc.xml</p>
+<h1 id="to-use-non-default-xsl">To use non-default xsl</h1>
+<p>xmlto -x mystylesheet.xsl pdf mydoc.xml</p>
+</body>
+</html>

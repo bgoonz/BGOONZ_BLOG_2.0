@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2022-01-03" />
+  <title>title</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">title</h1>
+<p class="subtitle">subtitle</p>
+<p class="date">2022-01-03</p>
+</header>
+<h1 id="create-a-key">Create a key</h1>
+<p>gpg –gen-key</p>
+<h1 id="show-keys">Show keys</h1>
+<p>To list a summary of all keys</p>
+<pre><code>gpg --list-keys</code></pre>
+<p>To show your public key</p>
+<pre><code>gpg --armor --export</code></pre>
+<p>To show the fingerprint for a key</p>
+<pre><code>gpg --fingerprint KEY_ID</code></pre>
+<h1 id="search-for-keys">Search for keys</h1>
+<p>gpg –search-keys ‘user@emailaddress.com’</p>
+<h1 id="to-encrypt-a-file">To Encrypt a File</h1>
+<p>gpg –encrypt –recipient ‘user@emailaddress.com’ example.txt</p>
+<h1 id="to-decrypt-a-file">To Decrypt a File</h1>
+<p>gpg –output example.txt –decrypt example.txt.gpg</p>
+<h1 id="export-keys">Export keys</h1>
+<p>gpg –output ~/public_key.txt –armor –export KEY_ID gpg –output ~/private_key.txt –armor –export-secret-key KEY_ID</p>
+<p>Where KEY_ID is the 8 character GPG key ID.</p>
+<p>Store these files to a safe location, such as a USB drive, then remove the private key file.</p>
+<pre><code>shred -zu ~/private_key.txt</code></pre>
+<h1 id="import-keys">Import keys</h1>
+<p>Retrieve the key files which you previously exported.</p>
+<pre><code>gpg --import ~/public_key.txt
+gpg --allow-secret-key-import --import ~/private_key.txt</code></pre>
+<p>Then delete the private key file.</p>
+<pre><code>shred -zu ~/private_key.txt</code></pre>
+<h1 id="revoke-a-key">Revoke a key</h1>
+<p>Create a revocation certificate.</p>
+<pre><code>gpg --output ~/revoke.asc --gen-revoke KEY_ID</code></pre>
+<p>Where KEY_ID is the 8 character GPG key ID.</p>
+<p>After creating the certificate import it.</p>
+<pre><code>gpg --import ~/revoke.asc</code></pre>
+<p>Then ensure that key servers know about the revokation.</p>
+<pre><code>gpg --send-keys KEY_ID</code></pre>
+<h1 id="signing-and-verifying-files">Signing and Verifying files</h1>
+<p>If you’re uploading files to launchpad you may also want to include a GPG signature file.</p>
+<pre><code>gpg -ba filename</code></pre>
+<p>or if you need to specify a particular key:</p>
+<pre><code>gpg --default-key &lt;key ID&gt; -ba filename</code></pre>
+<p>This then produces a file with a .asc extension which can be uploaded. If you need to set the default key more permanently then edit the file ~/.gnupg/gpg.conf and set the default-key parameter.</p>
+<p>To verify a downloaded file using its signature file.</p>
+<p>gpg –verify filename.asc</p>
+<h1 id="signing-public-keys">Signing Public Keys</h1>
+<p>Import the public key or retrieve it from a server.</p>
+<pre><code>gpg --keyserver &lt;keyserver&gt; --recv-keys &lt;Key_ID&gt;</code></pre>
+<p>Check its fingerprint against any previously stated value.</p>
+<pre><code>gpg --fingerprint &lt;Key_ID&gt;</code></pre>
+<p>Sign the key.</p>
+<pre><code>gpg --sign-key &lt;Key_ID&gt;</code></pre>
+<p>Upload the signed key to a server.</p>
+<pre><code>gpg --keyserver &lt;keyserver&gt; --send-key &lt;Key_ID&gt;</code></pre>
+<h1 id="change-the-email-address-associated-with-a-gpg-key">Change the email address associated with a GPG key</h1>
+<p>gpg –edit-key <key ID> adduid</p>
+<p>Enter the new name and email address. You can then list the addresses with:</p>
+<pre><code>list</code></pre>
+<p>If you want to delete a previous email address first select it:</p>
+<pre><code>uid &lt;list number&gt;</code></pre>
+<p>Then delete it with:</p>
+<pre><code>deluid</code></pre>
+<p>To finish type:</p>
+<pre><code>save</code></pre>
+<p>Publish the key to a server:</p>
+<pre><code>gpg --send-keys &lt;key ID&gt;</code></pre>
+<h1 id="creating-subkeys">Creating Subkeys</h1>
+<p>Subkeys can be useful if you don’t wish to have your main GPG key installed on multiple machines. In this way you can keep your master key safe and have subkeys with expiry periods or which may be separately revoked installed on various machines. This avoids generating entirely separate keys and so breaking any web of trust which has been established.</p>
+<pre><code>gpg --edit-key &lt;key ID&gt;</code></pre>
+<p>At the prompt type:</p>
+<pre><code>addkey</code></pre>
+<p>Choose RSA (sign only), 4096 bits and select an expiry period. Entropy will be gathered.</p>
+<p>At the prompt type:</p>
+<pre><code>save</code></pre>
+<p>You can also repeat the procedure, but selecting RSA (encrypt only). To remove the master key, leaving only the subkey/s in place:</p>
+<pre><code>gpg --export-secret-subkeys &lt;subkey ID&gt; &gt; subkeys
+gpg --export &lt;key ID&gt; &gt; pubkeys
+gpg --delete-secret-key &lt;key ID&gt;</code></pre>
+<p>Import the keys back.</p>
+<pre><code>gpg --import pubkeys subkeys</code></pre>
+<p>Verify the import.</p>
+<pre><code>gpg -K</code></pre>
+<p>Should show sec# instead of just sec.</p>
+<h1 id="high-quality-options-for-gpg-for-symmetric-secret-key-encryption">High-quality options for gpg for symmetric (secret key) encryption</h1>
+<p>This is what knowledgable people consider a good set of options for symmetric encryption with gpg to give you a high-quality result.</p>
+<p>gpg<br />
+–symmetric<br />
+–cipher-algo aes256<br />
+–digest-algo sha512<br />
+–cert-digest-algo sha512<br />
+–compress-algo none -z 0<br />
+–s2k-mode 3<br />
+–s2k-digest-algo sha512<br />
+–s2k-count 65011712<br />
+–force-mdc<br />
+–pinentry-mode loopback<br />
+–armor<br />
+–no-symkey-cache<br />
+–output somefile.gpg<br />
+somefile # to encrypt</p>
+<p>gpg<br />
+–decrypt<br />
+–pinentry-mode loopback<br />
+–armor<br />
+–output somefile.gpg<br />
+somefile # to decrypt</p>
+</body>
+</html>

@@ -1,8 +1,10 @@
-# Intl.DateTimeFormat.prototype.formatToParts()
+Intl.DateTimeFormat.prototype.formatToParts()
+=============================================
 
 The `Intl.DateTimeFormat.prototype.formatToParts()` method allows locale-aware formatting of strings produced by [`Intl.DateTimeFormat`](../datetimeformat) formatters.
 
-## Syntax
+Syntax
+------
 
     formatToParts(date)
 
@@ -15,7 +17,8 @@ The date to format.
 
 An [`Array`](../../array) of objects containing the formatted date in parts.
 
-## Description
+Description
+-----------
 
 The `formatToParts()` method is useful for custom formatting of date strings. It returns an [`Array`](../../array) of objects containing the locale-specific tokens from which it possible to build custom strings while preserving the locale-specific parts. The structure the `formatToParts()` method returns, looks like this:
 
@@ -27,52 +30,54 @@ The `formatToParts()` method is useful for custom formatting of date strings. It
 Possible types are the following:
 
 day  
-The string used for the day, for example "`17`".
+The string used for the day, for example “`17`”.
 
 dayPeriod  
-The string used for the day period, for example, "`AM`", "`PM`", "`in the morning`", or "`noon`"
+The string used for the day period, for example, “`AM`”, “`PM`”, “`in the morning`”, or “`noon`”
 
 era  
-The string used for the era, for example "`BC`" or "`AD`".
+The string used for the era, for example “`BC`” or “`AD`”.
 
 fractionalSecond  
-The string used for the fractional seconds, for example "`0`" or "`00`" or "`000`".
+The string used for the fractional seconds, for example “`0`” or “`00`” or “`000`”.
 
 hour  
-The string used for the hour, for example "`3`" or "`03`".
+The string used for the hour, for example “`3`” or “`03`”.
 
 literal  
-The string used for separating date and time values, for example "`/`", "`,`", "`o'clock`", "`de`", etc.
+The string used for separating date and time values, for example “`/`”, “`,`”, “`o'clock`”, “`de`”, etc.
 
 minute  
-The string used for the minute, for example "`00`".
+The string used for the minute, for example “`00`”.
 
 month  
-The string used for the month, for example "`12`".
+The string used for the month, for example “`12`”.
 
 relatedYear  
-The string used for the related 4-digit Gregorian year, in the event that the calendar's representation would be a yearName instead of a year, for example "`2019`".
+The string used for the related 4-digit Gregorian year, in the event that the calendar’s representation would be a yearName instead of a year, for example “`2019`”.
 
 second  
-The string used for the second, for example "`07`" or "`42`".
+The string used for the second, for example “`07`” or “`42`”.
 
 timeZoneName  
-The string used for the name of the time zone, for example "`UTC`".
+The string used for the name of the time zone, for example “`UTC`”.
 
 weekday  
-The string used for the weekday, for example "`M`", "`Monday`", or "`Montag`".
+The string used for the weekday, for example “`M`”, “`Monday`”, or “`Montag`”.
 
 year  
-The string used for the year, for example "`2012`" or "`96`".
+The string used for the year, for example “`2012`” or “`96`”.
 
 yearName  
-The string used for the yearName in relevant contexts, for example "`geng-zi`"
+The string used for the yearName in relevant contexts, for example “`geng-zi`”
 
-## Polyfill
+Polyfill
+--------
 
 A polyfill for this feature is available in the [proposal repository](https://github.com/zbraniecki/proposal-intl-formatToParts).
 
-## Examples
+Examples
+--------
 
 `DateTimeFormat` outputs localized, opaque strings that cannot be manipulated directly:
 
@@ -197,12 +202,11 @@ And `formatToParts`:
       { type: 'relatedYear', value: '2012' }
     ]
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.DateTimeFormat.prototype.formatToParts">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
-<br/>
-
-<span class="small">#sec-Intl.DateTimeFormat.prototype.formatToParts</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Internationalization API Specification (ECMAScript Internationalization API)<br />
+</p><span class="small">#sec-Intl.DateTimeFormat.prototype.formatToParts</span></td></tr></tbody></table>
 
 `formatToParts`
 
@@ -242,7 +246,8 @@ Before version 50, `formatToParts()` returned an object with an incorrectly case
 
 Before version 71, `formatToParts()` returned an object with an incorrectly cased type key of `dayperiod`. Version 71 and later use the specification defined `dayPeriod`. See [Chromium bug 865351](https://crbug.com/865351).
 
-## See also
+See also
+--------
 
 -   [`Intl.DateTimeFormat`](../datetimeformat)
 -   [`Intl.DateTimeFormat.prototype.format()`](format)

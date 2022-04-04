@@ -1,8 +1,10 @@
-# Error
+Error
+=====
 
 `Error` objects are thrown when runtime errors occur. The `Error` object can also be used as a base object for user-defined exceptions. See below for standard built-in error types.
 
-## Description
+Description
+-----------
 
 Runtime errors result in new `Error` objects being created and thrown.
 
@@ -31,20 +33,23 @@ Creates an instance representing an error that occurs when [`encodeURI()`](encod
 [`AggregateError`](aggregateerror)  
 Creates an instance representing several errors wrapped in a single error when multiple errors need to be reported by an operation, for example by [`Promise.any()`](promise/any).
 
-[`InternalError`](internalerror) <span class="icon non-standard" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img"> This API has not been standardized. </span>  
-Creates an instance representing an error that occurs when an internal error in the JavaScript engine is thrown. E.g. "too much recursion".
+[`InternalError`](internalerror) <span class="icon non-standard" data-viewbox="0 0 100 100" data-xmlns="http://www.w3.org/2000/svg" data-role="img"> This API has not been standardized. </span>  
+Creates an instance representing an error that occurs when an internal error in the JavaScript engine is thrown. E.g. “too much recursion”.
 
-## Constructor
+Constructor
+-----------
 
 [`Error()`](error/error)  
 Creates a new `Error` object.
 
-## Static methods
+Static methods
+--------------
 
 <span class="page-not-created">`Error.captureStackTrace()`</span>  
 A non-standard **V8** function that creates the [`stack`](error/stack) property on an Error instance.
 
-## Instance properties
+Instance properties
+-------------------
 
 [`Error.prototype.message`](error/message)  
 Error message.
@@ -70,12 +75,14 @@ A non-standard Mozilla property for the column number in the line that raised th
 [`Error.prototype.stack`](error/stack)  
 A non-standard Mozilla property for a stack trace.
 
-## Instance methods
+Instance methods
+----------------
 
 [`Error.prototype.toString()`](error/tostring)  
 Returns a string representing the specified object. Overrides the [`Object.prototype.toString()`](object/tostring) method.
 
-## Examples
+Examples
+--------
 
 ### Throwing a generic error
 
@@ -89,7 +96,7 @@ Usually you create an `Error` object with the intention of raising it using the 
 
 ### Handling a specific error
 
-You can choose to handle only specific error types by testing the error type with the error's [`constructor`](object/constructor) property or, if you're writing for modern JavaScript engines, [`instanceof`](../operators/instanceof) keyword:
+You can choose to handle only specific error types by testing the error type with the error’s [`constructor`](object/constructor) property or, if you’re writing for modern JavaScript engines, [`instanceof`](../operators/instanceof) keyword:
 
     try {
       foo.bar()
@@ -106,7 +113,7 @@ You can choose to handle only specific error types by testing the error type wit
 
 You might want to define your own error types deriving from `Error` to be able to `throw new MyError()` and use `instanceof MyError` to check the kind of error in the exception handler. This results in cleaner and more consistent error handling code.
 
-See ["What's a good way to extend Error in JavaScript?"](https://stackoverflow.com/questions/1382107/whats-a-good-way-to-extend-error-in-javascript) on StackOverflow for an in-depth discussion.
+See [“What’s a good way to extend Error in JavaScript?”](https://stackoverflow.com/questions/1382107/whats-a-good-way-to-extend-error-in-javascript) on StackOverflow for an in-depth discussion.
 
 #### ES6 Custom Error Class
 
@@ -178,12 +185,11 @@ See ["What's a good way to extend Error in JavaScript?"](https://stackoverflow.c
       console.error(e.message); //bazMessage
     }
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-error-objects">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-error-objects</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-error-objects</span></td></tr></tbody></table>
 
 `Error`
 
@@ -447,7 +453,8 @@ No
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`throw`](../statements/throw)
 -   [`try...catch`](../statements/try...catch)

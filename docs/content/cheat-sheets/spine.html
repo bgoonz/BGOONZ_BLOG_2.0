@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Spine</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Spine</h1>
+</header>
+<h2 id="models">Models</h2>
+<pre><code>class User extends Spine.Model
+  @configure &quot;User&quot;, &quot;name&quot;, &quot;address&quot;
+
+  fullName: -&gt;
+    [@first, @last].join &#39; &#39;</code></pre>
+<h3 id="javascript">JavaScript</h3>
+<pre><code>// Subclassing
+User = Spine.Model.sub()</code></pre>
+<h3 id="class-methods">Class methods</h3>
+<pre><code>.configure &#39;modelname&#39;, attributes...
+
+# Inheritance
+.include(Module)
+.extend(Module)
+
+.create(name: &quot;John&quot;)
+
+.count()
+
+# Events
+.on &#39;refresh change&#39;, (user) -&gt; ...
+.trigger &#39;event&#39;
+
+.change (user) -&gt; ...  # same as on(&#39;change&#39;)
+.fetch (user) -&gt; ...   # same as on(&#39;fetch&#39;)
+
+# JSON
+.toJSON()         # all records
+.fromJSON(json)   # from json string
+.fromForm(el)
+
+# Data
+.records     # Hash of instances
+.attributes  # array of attributes (from .configure)
+
+# Convenience
+.toString()  #=&gt; &quot;User&quot;
+
+# Find by ID
+.exists(1)
+.find(1)     # throws error
+
+# Find by something
+.select (u) u.name == &#39;bob&#39;
+.findByAttribute &#39;name&#39;, &#39;bob&#39;
+.findAllByAttribute &#39;name&#39;, &#39;bob&#39;
+
+.all()
+.slice(6, 13)  # cloned copies of instances
+
+# Iterating
+.each (user) -&gt;
+
+# Ends
+.first()
+.last()
+
+# Deleting
+.deleteAll()
+.destroyAll()
+.destroyAll({ ..options.. })
+.destroy(2)</code></pre>
+<h3 id="instance-methods">Instance methods</h3>
+<pre><code>user = new User();
+
+user
+.isNew()
+.exists()
+
+# Validation
+.isValid()
+.validate()    # validate = (-&gt; &quot;Name required&quot; unless @name)
+
+.attributes()  # hash of attr values
+.eql(other)    # equality check
+
+# Update
+.load(attrs)
+.reload()
+.fromForm(form)
+.updateAttribute(&quot;name&quot;, &quot;john&quot;)
+.updateAttributes(name: &quot;John&quot;)
+
+# Event
+.on &#39;event&#39;, -&gt; ...
+.trigger &#39;event&#39;
+
+# Retrieve
+.toJSON()
+
+# Persistence
+.save()
+
+.destroy()
+.dup()         # clone as unsaved</code></pre>
+<h3 id="mixins">Mixins</h3>
+<pre><code>class User extends Spine.Model
+  @include MyModule
+  @extend MyModule</code></pre>
+<h3 id="events">Events</h3>
+<pre><code>.on &#39;create&#39;
+.on &#39;update&#39;
+.on &#39;destroy&#39;
+
+.on &#39;save&#39;    # create / update
+.on &#39;change&#39;  # create / update / destroy
+
+.on &#39;refresh&#39;
+.on &#39;error&#39;    # validation error</code></pre>
+<h2 id="ajax">Ajax</h2>
+<pre><code>class User extends Spine.Model
+  @extend Spine.Model.Ajax
+
+  @url: &#39;/users&#39;
+  @url: -&gt; &#39;/users&#39;
+  scope: &#39;2013&#39;</code></pre>
+<h3 id="using">Using</h3>
+<pre><code>User.fetch()
+user = new User()
+
+user.url()            #=&gt; &quot;/users&quot;
+user.url(&#39;bands&#39;)     #=&gt; &quot;/users/bands&quot;
+
+user.scope = &#39;admin&#39;
+user.url()            #=&gt; &quot;/admin/users&quot;</code></pre>
+<h3 id="host">Host</h3>
+<pre><code>Spine.Model.host = &#39;http://endpoint&#39;</code></pre>
+<h3 id="ajax-mapping">Ajax mapping</h3>
+<pre><code>read    → GET    /collection
+create  → POST   /collection (201 created)
+update  → PUT    /collection/id
+destroy → DELETE /collection/id</code></pre>
+<h3 id="associations">Associations</h3>
+<pre><code>class Photo extends Spine.Model
+  @belongsTo &#39;album&#39;, &#39;Album&#39;          # window[&#39;Album&#39;]
+  @belongsTo &#39;album&#39;, &#39;models/album&#39;   # via require.js
+
+class Album
+  @hasMany &#39;photos&#39;, &#39;models/photo&#39;
+
+album.photos().all()
+album.photos().create(name: &quot;Vacation&quot;)
+album.photos().find(id)
+
+photo = Photo.create(album: album)
+photo.album()
+photo.album_id</code></pre>
+<h3 id="see">See</h3>
+<ul>
+<li>http://spinejs.com/api/index</li>
+<li>http://spinejs.com/api/models</li>
+<li>http://spinejs.com/docs/ajax</li>
+<li>http://spinejs.com/docs/relations</li>
+</ul>
+</body>
+</html>

@@ -1,43 +1,20 @@
----
-title: Imagemagick
-
-intro: |
-    A quick reference for common [Imagemagick](https://www.imagemagick.org) commands and switches.
----
-
 ### Common options
 
-| Option              | Description                     |
-| ------------------- | ------------------------------- |
-| `-resize 100x40`    | Resize to a dimension           |
-| `-crop 40x30+10+10` | (width)x(height)+(x)+y          |
-| `-crop 40x30-10-10` | (width)x(height)+(x)+y          |
-| `-flip`             | Vertical                        |
-| `-flop`             | Horizontal                      |
-| `-transpose`        | Flip vertical + rotate 90deg    |
-| `-transverse`       | Flip horizontal + rotate 270deg |
-| `-trim`             | Trim image edges                |
-| `-rotate 90`        | Rotate 90 degrees               |
+<table><thead><tr class="header"><th>Option</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>-resize 100x40</code></td><td>Resize to a dimension</td></tr><tr class="even"><td><code>-crop 40x30+10+10</code></td><td>(width)x(height)+(x)+y</td></tr><tr class="odd"><td><code>-crop 40x30-10-10</code></td><td>(width)x(height)+(x)+y</td></tr><tr class="even"><td><code>-flip</code></td><td>Vertical</td></tr><tr class="odd"><td><code>-flop</code></td><td>Horizontal</td></tr><tr class="even"><td><code>-transpose</code></td><td>Flip vertical + rotate 90deg</td></tr><tr class="odd"><td><code>-transverse</code></td><td>Flip horizontal + rotate 270deg</td></tr><tr class="even"><td><code>-trim</code></td><td>Trim image edges</td></tr><tr class="odd"><td><code>-rotate 90</code></td><td>Rotate 90 degrees</td></tr></tbody></table>
 
 ### Resize to fit
 
-```sh
-convert input.jpg -resize 80x80^ -gravity center -extent 80x80 icon.png
-```
+    convert input.jpg -resize 80x80^ -gravity center -extent 80x80 icon.png
 
 ### Convert all images to another format
 
-```sh
-mogrify -format jpg -quality 85 *.png
-```
+    mogrify -format jpg -quality 85 *.png
 
 ### Make a pdf
 
-```sh
-convert *.jpg hello.pdf
-```
+    convert *.jpg hello.pdf
 
 ### References
 
--   <http://www.noah.org/wiki/ImageMagick>
--   <https://www.imagemagick.org/>
+-   <a href="http://www.noah.org/wiki/ImageMagick" class="uri">http://www.noah.org/wiki/ImageMagick</a>
+-   <a href="https://www.imagemagick.org/" class="uri">https://www.imagemagick.org/</a>

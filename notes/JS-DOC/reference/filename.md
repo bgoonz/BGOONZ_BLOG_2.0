@@ -1,4 +1,5 @@
-# Error.prototype.fileName
+Error.prototype.fileName
+========================
 
 **Non-standard**
 
@@ -6,11 +7,13 @@ This feature is non-standard and is not on a standards track. Do not use it on p
 
 The `fileName` property contains the path to the file that raised this error.
 
-## Description
+Description
+-----------
 
-This non-standard property contains the path to the file that raised this error. If called from a debugger context, the Firefox Developer Tools for example, "debugger eval code" is returned.
+This non-standard property contains the path to the file that raised this error. If called from a debugger context, the Firefox Developer Tools for example, “debugger eval code” is returned.
 
-## Examples
+Examples
+--------
 
 ### Using fileName
 
@@ -18,7 +21,8 @@ This non-standard property contains the path to the file that raised this error.
     throw e;
     // e.fileName could look like "file:///C:/example.html"
 
-## Specifications
+Specifications
+--------------
 
 Not part of any standard.
 
@@ -48,7 +52,8 @@ No
 
 No
 
-## See also
+See also
+--------
 
 -   [`Error.prototype.stack`](stack)
 -   [`Error.prototype.columnNumber`](columnnumber)

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>compare</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="intl.collator.prototype.compare">Intl.Collator.prototype.compare()</h1>
+<p>The <code>Intl.Collator.prototype.compare()</code> method compares two strings according to the sort order of this <a href="../collator"><code>Intl/Collator</code></a> object.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>compare(string1, string2)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>string1</code><br />
+<code>string2</code><br />
+The strings to compare against each other.</p>
+<h2 id="description">Description</h2>
+<p>The <code>compare</code> getter function returns a number indicating how <code>string1</code> and <code>string2</code> compare to each other according to the sort order of this <a href="../collator"><code>Intl/Collator</code></a> object: a negative value if <code>string1</code> comes before <code>string2</code>; a positive value if <code>string1</code> comes after <code>string2</code>; 0 if they are considered equal.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-compare-for-array-sort">Using compare for array sort</h3>
+<p>Use the <code>compare</code> getter function for sorting arrays. Note that the function is bound to the collator from which it was obtained, so it can be passed directly to <a href="../../array/sort"><code>Array.prototype.sort()</code></a>.</p>
+<pre><code>var a = [&#39;Offenbach&#39;, &#39;Österreich&#39;, &#39;Odenwald&#39;];
+var collator = new Intl.Collator(&#39;de-u-co-phonebk&#39;);
+a.sort(collator.compare);
+console.log(a.join(&#39;, &#39;));
+// → &quot;Odenwald, Österreich, Offenbach&quot;</code></pre>
+<h3 id="using-compare-for-array-search">Using compare for array search</h3>
+<p>Use the <code>compare</code> getter function for finding matching strings in arrays:</p>
+<pre><code>var a = [&#39;Congrès&#39;, &#39;congres&#39;, &#39;Assemblée&#39;, &#39;poisson&#39;];
+var collator = new Intl.Collator(&#39;fr&#39;, { usage: &#39;search&#39;, sensitivity: &#39;base&#39; });
+var s = &#39;congres&#39;;
+var matches = a.filter(v =&gt; collator.compare(v, s) === 0);
+console.log(matches.join(&#39;, &#39;));
+// → &quot;Congrès, congres&quot;</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma402/#sec-intl.collator.prototype.compare">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) <br/></p>
+<span class="small">#sec-intl.collator.prototype.compare</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>compare</code></p>
+<p>24</p>
+<p>12</p>
+<p>29</p>
+<p>11</p>
+<p>15</p>
+<p>10</p>
+<p>4.4</p>
+<p>25</p>
+<p>56</p>
+<p>14</p>
+<p>10</p>
+<p>1.5</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../collator"><code>Intl.Collator</code></a></li>
+<li><a href="../../string/localecompare"><code>String.prototype.localeCompare()</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Collator/compare" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Collator/compare</a></p>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>in_operator_no_object</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="typeerror-cannot-use-in-operator-to-search-for-x-in-y">TypeError: cannot use ‘in’ operator to search for ‘x’ in ‘y’</h1>
+<p>The JavaScript exception “right-hand side of ‘in’ should be an object” occurs when the <a href="../operators/in"><code>in</code> operator</a> was used to search in strings, or in numbers, or other primitive types. It can only be used to check if a property is in an object.</p>
+<h2 id="message">Message</h2>
+<pre><code>TypeError: Invalid operand to &#39;in&#39; (Edge)
+TypeError: right-hand side of &#39;in&#39; should be an object, got &#39;x&#39; (Firefox)
+TypeError: cannot use &#39;in&#39; operator to search for &#39;x&#39; in &#39;y&#39; (Firefox, Chrome)</code></pre>
+<h2 id="error-type">Error type</h2>
+<p><a href="../global_objects/typeerror"><code>TypeError</code></a></p>
+<h2 id="what-went-wrong">What went wrong?</h2>
+<p>The <a href="../operators/in"><code>in</code> operator</a> can only be used to check if a property is in an object. You can’t search in strings, or in numbers, or other primitive types.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="searching-in-strings">Searching in strings</h3>
+<p>Unlike in other programming languages (e.g. Python), you can’t search in strings using the <a href="../operators/in"><code>in</code> operator</a>.</p>
+<pre><code>&quot;Hello&quot; in &quot;Hello World&quot;;
+// TypeError: cannot use &#39;in&#39; operator to search for &#39;Hello&#39; in &#39;Hello World&#39;</code></pre>
+<p>Instead you will need to use <a href="../global_objects/string/indexof"><code>String.prototype.indexOf()</code></a>, for example.</p>
+<pre><code>&quot;Hello World&quot;.indexOf(&quot;Hello&quot;) !== -1;
+// true</code></pre>
+<h3 id="the-operand-cant-be-null-or-undefined">The operand can’t be null or undefined</h3>
+<p>Make sure the object you are inspecting isn’t actually <a href="../global_objects/null"><code>null</code></a> or <a href="../global_objects/undefined"><code>undefined</code></a>.</p>
+<pre><code>var foo = null;
+&quot;bar&quot; in foo;
+// TypeError: cannot use &#39;in&#39; operator to search for &#39;bar&#39; in &#39;foo&#39; (Chrome)
+// TypeError: right-hand side of &#39;in&#39; should be an object, got null (Firefox)</code></pre>
+<p>The <code>in</code> operator always expects an object.</p>
+<pre><code>var foo = { baz: &quot;bar&quot; };
+&quot;bar&quot; in foo; // false
+
+&quot;PI&quot; in Math; // true
+&quot;pi&quot; in Math; // false</code></pre>
+<h3 id="searching-in-arrays">Searching in arrays</h3>
+<p>Be careful when using the <code>in</code> operator to search in <a href="../global_objects/array"><code>Array</code></a> objects. The <code>in</code> operator checks the index number, not the value at that index.</p>
+<pre><code>var trees = [&#39;redwood&#39;, &#39;bay&#39;, &#39;cedar&#39;, &#39;oak&#39;, &#39;maple&#39;];
+3 in trees; // true
+&quot;oak&quot; in trees; // false</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../operators/in"><code>in</code> operator</a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/in_operator_no_object" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/in_operator_no_object</a></p>
+</body>
+</html>

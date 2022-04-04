@@ -1,10 +1,12 @@
-# Atomics.wait()
+Atomics.wait()
+==============
 
-The static ` Atomics``.wait() ` method verifies that a given position in an [`Int32Array`](../int32array) still contains a given value and if so sleeps, awaiting a wakeup or a timeout. It returns a string which is either "`ok`", "`not-equal`", or "`timed-out`".
+The static ``` Atomics``.wait() ``` method verifies that a given position in an [`Int32Array`](../int32array) still contains a given value and if so sleeps, awaiting a wakeup or a timeout. It returns a string which is either “`ok`”, “`not-equal`”, or “`timed-out`”.
 
 **Note:** This operation only works with a shared [`Int32Array`](../int32array) and may not be allowed on the main thread.
 
-## Syntax
+Syntax
+------
 
     Atomics.wait(typedArray, index, value)
     Atomics.wait(typedArray, index, value, timeout)
@@ -25,14 +27,15 @@ Time to wait in milliseconds. [`Infinity`](../infinity), if no time is provided.
 
 ### Return value
 
-A string which is either "`ok`", "`not-equal`", or "`timed-out`".
+A string which is either “`ok`”, “`not-equal`”, or “`timed-out`”.
 
 ### Exceptions
 
 -   Throws a [`TypeError`](../typeerror), if `typedArray` is not a shared [`Int32Array`](../int32array).
 -   Throws a [`RangeError`](../rangeerror), if `index` is out of bounds in the `typedArray`.
 
-## Examples
+Examples
+--------
 
 ### Using wait()
 
@@ -52,14 +55,14 @@ A writing thread stores a new value and notifies the waiting thread once it has 
     Atomics.store(int32, 0, 123);
     Atomics.notify(int32, 0, 1);
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-atomics.wait">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-atomics.wait</span></td></tr></tbody></table>
 
-<span class="small">#sec-atomics.wait</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -151,7 +154,8 @@ No
 
 Chrome disabled `SharedArrayBuffer` on January 5, 2018 to help reduce the efficacy of [speculative side-channel attacks](https://www.chromium.org/Home/chromium-security/ssca). This is intended as a temporary measure until other mitigations are in place.
 
-## See also
+See also
+--------
 
 -   [`Atomics`](../atomics)
 -   [`Atomics.notify()`](notify)

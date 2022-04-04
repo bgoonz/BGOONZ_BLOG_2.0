@@ -1,4 +1,5 @@
-# Linked List Traversal
+Linked List Traversal
+=====================
 
 [中文](README.zh-CN.md)
 
@@ -10,12 +11,11 @@ For example for the following linked list:
 
 The order of traversal should be:
 
-```text
-12 → 99 → 37
-```
+    12 → 99 → 37
 
 The time complexity is `O(n)` because we visit every node only once.
 
-## Reference
+Reference
+---------
 
 -   [Wikipedia](https://en.wikipedia.org/wiki/Linked_list)

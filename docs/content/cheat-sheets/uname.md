@@ -1,41 +1,55 @@
-# To print all system information:
+To print all system information:
+================================
 
 uname -a
 
-# Linux system-hostname 3.2.0-4-amd64 #1 SMP Debian 3.2.32-1 x86_64 GNU/Linux
+Linux system-hostname 3.2.0-4-amd64 \#1 SMP Debian 3.2.32-1 x86\_64 GNU/Linux
+=============================================================================
 
-# To print the hostname:
+To print the hostname:
+======================
 
 uname -n
 
-# system-hostname
+system-hostname
+===============
 
-# To print the kernel release:
+To print the kernel release:
+============================
 
 uname -r
 
-# 3.2.0-4-amd64
+3.2.0-4-amd64
+=============
 
-# To print the kernel version, with more specific information:
+To print the kernel version, with more specific information:
+============================================================
 
 uname -v
 
-# #1 SMP Debian 3.2.32-1
+\#1 SMP Debian 3.2.32-1
+=======================
 
-# To print the hardware instruction set:
+To print the hardware instruction set:
+======================================
 
 uname -m
 
-# x86_64
+x86\_64
+=======
 
-# To print the kernel name:
+To print the kernel name:
+=========================
 
 uname -s
 
-# Linux
+Linux
+=====
 
-# To print the operating system:
+To print the operating system:
+==============================
 
 uname -o
 
-# GNU/Linux
+GNU/Linux
+=========

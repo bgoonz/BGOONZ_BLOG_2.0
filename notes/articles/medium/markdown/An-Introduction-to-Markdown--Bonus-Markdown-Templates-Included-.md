@@ -1,25 +1,25 @@
-# An Introduction to Markdown (Bonus Markdown Templates Included)
+An Introduction to Markdown (Bonus Markdown Templates Included)
+===============================================================
 
 Basic Syntax Guide
 
----
+------------------------------------------------------------------------
 
 ### An Introduction to Markdown (Bonus Markdown Templates Included)
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*oy6szzmI0FdRUiTd.png" class="graf-image" /></figure><a href="https://github.com/bgoonz/Markdown-Templates.git" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/Markdown-Templates.git"><strong>bgoonz/Markdown-Templates</strong> 
-<br/>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*oy6szzmI0FdRUiTd.png" class="graf-image" /></figure>**bgoonz/Markdown-Templates**  
 
-<em>One Paragraph of project description goes here These instructions will get you a copy of the project up and running on…</em>github.com</a><a href="https://github.com/bgoonz/Markdown-Templates.git" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*One Paragraph of project description goes here These instructions will get you a copy of the project up and running on…*github.com<a href="https://github.com/bgoonz/Markdown-Templates.git" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ### Basic Syntax Guide
 
-This topic is meant to give you a very basic overview of how Markdown works, showing only some of the most common operations you use most frequently. Keep in mind that you can also use the Edit menus to inject markdown using the toolbar, which serves as a great way to see how Markdown works. However, Markdown's greatest strength lies in its simplicity and keyboard friendly approach that lets you focus on writing your text and staying on the keyboard.
+This topic is meant to give you a very basic overview of how Markdown works, showing only some of the most common operations you use most frequently. Keep in mind that you can also use the Edit menus to inject markdown using the toolbar, which serves as a great way to see how Markdown works. However, Markdown’s greatest strength lies in its simplicity and keyboard friendly approach that lets you focus on writing your text and staying on the keyboard.
 
 ### What is Markdown
 
-Markdown is very easy to learn and get comfortable with due it's relatively small set of markup 'commands'. It uses already familiar syntax to represent common formatting operations. Markdown understands basic line breaks so you can generally just type text.
+Markdown is very easy to learn and get comfortable with due it’s relatively small set of markup ‘commands’. It uses already familiar syntax to represent common formatting operations. Markdown understands basic line breaks so you can generally just type text.
 
-Markdown also allows for raw HTML inside of a markdown document, so if you want to embed something more fancy than what Markdowns syntax can do you can always fall back to HTML. However to keep documents readable that's generally not recommended.
+Markdown also allows for raw HTML inside of a markdown document, so if you want to embed something more fancy than what Markdowns syntax can do you can always fall back to HTML. However to keep documents readable that’s generally not recommended.
 
 ### Basic Markdown Syntax
 
@@ -33,7 +33,7 @@ The following are a few examples of the most common things you are likely to do 
     This text *is italic*.
 
 This text is bold.  
-This text _is italic_.
+This text *is italic*.
 
 ### Header Text
 
@@ -72,7 +72,7 @@ By default Markdown adds paragraphs at double line breaks. Single line breaks by
 
 This line has a paragraph break at the end (empty line after).
 
-Theses two lines should display as a single line because there's no double space at the end.
+Theses two lines should display as a single line because there’s no double space at the end.
 
 The following line has a soft break at the end (two spaces at end)  
 This line should be following on the very next line.
@@ -108,9 +108,9 @@ Block quotes are callouts that are great for adding notes or warnings into docum
     as they are block elements and automatically break. Only text
     lines require the double spaces for single line breaks.
 
-> _Headers break on their own_
+> *Headers break on their own*
 
-> _Note that headers don't need line continuation characters as they are block elements and automatically break. Only text lines require the double spaces for single line breaks._
+> *Note that headers don’t need line continuation characters as they are block elements and automatically break. Only text lines require the double spaces for single line breaks.*
 
 ### Fontawesome Icons
 
@@ -132,7 +132,7 @@ You can also embed plain HTML markup into the page if you like. For example, if 
     <i class="fa fa-refresh fa-spin fa-lg"></i> Refresh Page
 
 This text can be embedded into Markdown:  
- Refresh Page
+Refresh Page
 
 ### Unordered Lists
 
@@ -148,7 +148,7 @@ This text can be embedded into Markdown:
 -   <span id="7904">Item 1</span>
 -   <span id="1cf1">Item 2</span>
 -   <span id="ded6">Item 3  
-     This text is part of the third item. Use two spaces at end of the the list item to break the line.</span>
+    This text is part of the third item. Use two spaces at end of the the list item to break the line.</span>
 
 A double line break, breaks out of the list.
 
@@ -256,19 +256,17 @@ which gives you:
 
 #### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz's gists · GitHub</a>
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz’s gists · GitHub</a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong>
-<br/>
+**bgoonz — Overview**  
 
-<em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…*github.com<a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 Or Checkout my personal Resource Site:
 
-<a href="https://goofy-euclid-1cd736.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://goofy-euclid-1cd736.netlify.app/"><strong>a/A-Student-Resources</strong>
-<br/>
+**a/A-Student-Resources**  
 
-<em>Edit description</em>goofy-euclid-1cd736.netlify.app</a><a href="https://goofy-euclid-1cd736.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Edit description*goofy-euclid-1cd736.netlify.app<a href="https://goofy-euclid-1cd736.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [March 8, 2021](https://medium.com/p/3497ce56de3).
 

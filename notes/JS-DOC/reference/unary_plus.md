@@ -1,16 +1,20 @@
-# Unary plus (+)
+Unary plus (+)
+==============
 
-The unary plus operator (`+`) precedes its operand and evaluates to its operand but attempts to convert it into a number, if it isn't already.
+The unary plus operator (`+`) precedes its operand and evaluates to its operand but attempts to convert it into a number, if it isn’t already.
 
-## Syntax
+Syntax
+------
 
     Operator: +x
 
-## Description
+Description
+-----------
 
 Although unary negation (`-`) also can convert non-numbers, unary plus is the fastest and preferred way of converting something into a number, because it does not perform any other operations on the number. It can convert string representations of integers and floats, as well as the non-string values `true`, `false`, and `null`. Integers in both decimal and hexadecimal (`0x`-prefixed) formats are supported. Negative numbers are supported (though not for hex). Using the operator on BigInt values throws a TypeError. If it cannot parse a particular value, it will evaluate to [`NaN`](../global_objects/nan).
 
-## Examples
+Examples
+--------
 
 ### Usage with numbers
 
@@ -30,14 +34,14 @@ Although unary negation (`-`) also can convert non-numbers, unary plus is the fa
     +function(val){ return val } // NaN
     +1n    // throws TypeError: Cannot convert BigInt value to number
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-unary-plus-operator">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-unary-plus-operator</span></td></tr></tbody></table>
 
-<span class="small">#sec-unary-plus-operator</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -93,7 +97,8 @@ Samsung Internet
 
 1.0
 
-## See also
+See also
+--------
 
 -   [Addition operator](addition)
 -   [Subtraction operator](subtraction)
@@ -105,6 +110,5 @@ Samsung Internet
 -   [Decrement operator](decrement)
 -   [Unary negation operator](unary_negation)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Unary_plus" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Unary_plus</a>

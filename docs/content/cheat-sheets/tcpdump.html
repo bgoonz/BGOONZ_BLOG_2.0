@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>tcpdump</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="tcpdump-is-a-packet-analyzer.-it-allows-the-user-to-intercept-and-display-tcpip">TCPDump is a packet analyzer. It allows the user to intercept and display TCP/IP</h1>
+<h1 id="and-other-packets-being-transmitted-or-received-over-a-network.-cf-wikipedia.">and other packets being transmitted or received over a network. (cf Wikipedia).</h1>
+<h1 id="note-173.194.40.120-google.com">Note: 173.194.40.120 =&gt; google.com</h1>
+<h1 id="intercepts-all-packets-on-eth0">Intercepts all packets on eth0</h1>
+<p>tcpdump -i eth0</p>
+<h1 id="intercepts-all-packets-fromto-173.194.40.120">Intercepts all packets from/to 173.194.40.120</h1>
+<p>tcpdump host 173.194.40.120</p>
+<h1 id="intercepts-all-packets-on-all-interfaces-from-to-173.194.40.120-port-80">Intercepts all packets on all interfaces from / to 173.194.40.120 port 80</h1>
+<h1 id="nn-disables-name-resolution-for-ip-addresses-and-port-numbers.">-nn =&gt; Disables name resolution for IP addresses and port numbers.</h1>
+<p>tcpdump -nn -i any host 173.194.40.120 and port 80</p>
+<h1 id="make-a-grep-on-tcpdump-ascii">Make a grep on tcpdump (ASCII)</h1>
+<h1 id="a-show-only-ascii-in-packets.">-A =&gt; Show only ASCII in packets.</h1>
+<h1 id="s0-by-default-tcpdump-only-captures-68-bytes.">-s0 =&gt; By default, tcpdump only captures 68 bytes.</h1>
+<p>tcpdump -i any -A host 173.194.40.120 and port 80 | grep ‘User-Agent’</p>
+<h1 id="with-ngrep">With ngrep</h1>
+<h1 id="d-eth0-to-force-eth0-else-ngrep-work-on-all-interfaces">-d eth0 =&gt; To force eth0 (else ngrep work on all interfaces)</h1>
+<h1 id="s0-force-ngrep-to-look-at-the-entire-packet.-default-snaplen-65536-bytes">-s0 =&gt; force ngrep to look at the entire packet. (Default snaplen: 65536 bytes)</h1>
+<p>ngrep ‘User-Agent’ host 173.194.40.120 and port 80</p>
+<h1 id="intercepts-all-packets-on-all-interfaces-from-to-8.8.8.8-or-173.194.40.127-on-port-80">Intercepts all packets on all interfaces from / to 8.8.8.8 or 173.194.40.127 on port 80</h1>
+<p>tcpdump ‘host ( 8.8.8.8 or 173.194.40.127 ) and port 80’ -i any</p>
+<h1 id="intercepts-all-packets-syn-and-fin-of-each-tcp-session.">Intercepts all packets SYN and FIN of each TCP session.</h1>
+<p>tcpdump ‘tcp[tcpflags] &amp; (tcp-syn|tcp-fin) != 0’</p>
+<h1 id="to-display-syn-and-fin-packets-of-each-tcp-session-to-a-host-that-is-not-on-our-network">To display SYN and FIN packets of each TCP session to a host that is not on our network</h1>
+<p>tcpdump ‘tcp[tcpflags] &amp; (tcp-syn|tcp-fin) != 0 and not src and dst net local_addr’</p>
+<h1 id="to-display-all-ipv4-http-packets-that-come-or-arrive-on-port-80-and-that-contain-only-data-no-syn-fin-no-no-packet-containing-an-ack">To display all IPv4 HTTP packets that come or arrive on port 80 and that contain only data (no SYN, FIN no, no packet containing an ACK)</h1>
+<p>tcpdump ‘tcp port 80 and (((ip[2:2] - ((ip[0]&amp;0xf)&lt;&lt;2)) - ((tcp[12]&amp;0xf0)&gt;&gt;2)) != 0)’</p>
+<h1 id="saving-captured-data">Saving captured data</h1>
+<p>tcpdump -w file.cap</p>
+<h1 id="reading-from-capture-file">Reading from capture file</h1>
+<p>tcpdump -r file.cap</p>
+<h1 id="show-content-in-hexa">Show content in hexa</h1>
+<h1 id="change--x-to--xx-show-extra-header-ethernet.">Change -x to -xx =&gt; show extra header (ethernet).</h1>
+<p>tcpdump -x</p>
+<h1 id="show-content-in-hexa-and-ascii">Show content in hexa and ASCII</h1>
+<h1 id="change--x-to--xx-show-extra-header-ethernet.-1">Change -X to -XX =&gt; show extra header (ethernet).</h1>
+<p>tcpdump -X</p>
+<h1 id="note-on-packet-maching">Note on packet maching:</h1>
+<h1 id="port-matching">Port matching:</h1>
+<h1 id="portrange-22-23">- portrange 22-23</h1>
+<h1 id="not-port-22">- not port 22</h1>
+<h1 id="port-ssh">- port ssh</h1>
+<h1 id="dst-port-22">- dst port 22</h1>
+<h1 id="src-port-22">- src port 22</h1>
+<h1 id="section"></h1>
+<h1 id="host-matching">Host matching:</h1>
+<h1 id="dst-host-8.8.8.8">- dst host 8.8.8.8</h1>
+<h1 id="not-dst-host-8.8.8.8">- not dst host 8.8.8.8</h1>
+<h1 id="src-net-67.207.148.0-mask-255.255.255.0">- src net 67.207.148.0 mask 255.255.255.0</h1>
+<h1 id="src-net-67.207.148.024">- src net 67.207.148.0/24</h1>
+</body>
+</html>

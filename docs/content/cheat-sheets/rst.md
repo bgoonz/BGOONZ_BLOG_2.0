@@ -1,8 +1,3 @@
----
-title: ReStructuredText
-category: Markup
----
-
 ### Comments
 
     .. @theme 2010

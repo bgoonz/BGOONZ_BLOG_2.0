@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>undefined</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="undefined">undefined</h1>
+<p>The global <code>undefined</code> property represents the primitive value <code>undefined</code>. It is one of JavaScript’s <a href="https://developer.mozilla.org/en-US/docs/Glossary/Primitive">primitive types</a>.</p>
+<p>Property attributes of <code>undefined</code></p>
+<p>Writable</p>
+<p>no</p>
+<p>Enumerable</p>
+<p>no</p>
+<p>Configurable</p>
+<p>no</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>undefined</code></pre>
+<h2 id="description">Description</h2>
+<p><code>undefined</code> is a property of the <em>global object</em>. That is, it is a variable in global scope. The initial value of <code>undefined</code> is the primitive value <code>undefined</code>.</p>
+<p>In modern browsers (JavaScript 1.8.5 / Firefox 4+), <code>undefined</code> is a non-configurable, non-writable property, per the ECMAScript 5 specification. (Even when this is not the case, avoid overriding it.)</p>
+<p>A variable that has not been assigned a value is of type <code>undefined</code>. A method or statement also returns <code>undefined</code> if the variable that is being evaluated does not have an assigned value. A function returns <code>undefined</code> if a value was not <a href="../statements/return"><code>returned</code></a>.</p>
+<p><strong>Note:</strong> While you can use <code>undefined</code> as an <a href="https://developer.mozilla.org/en-US/docs/Glossary/Identifier">identifier</a> (variable name) in any scope other than the global scope (because <code>undefined</code> is not a <a href="../lexical_grammar#keywords">reserved word</a>), doing so is a very bad idea that will make your code difficult to maintain and debug.</p>
+<pre><code>//  DON&#39;T DO THIS
+
+//  logs &quot;foo string&quot;
+(function() {
+  var undefined = &#39;foo&#39;;
+  console.log(undefined, typeof undefined);
+})();
+
+//  logs &quot;foo string&quot;
+(function(undefined) {
+  console.log(undefined, typeof undefined);
+})(&#39;foo&#39;);</code></pre>
+<h2 id="examples">Examples</h2>
+<h3 id="strict-equality-and-undefined">Strict equality and undefined</h3>
+<p>You can use <code>undefined</code> and the strict equality and inequality operators to determine whether a variable has a value. In the following code, the variable <code>x</code> is not initialized, and the <code>if</code> statement evaluates to true.</p>
+<pre><code>var x;
+if (x === undefined) {
+  // these statements execute
+}
+else {
+  // these statements do not execute
+}</code></pre>
+<p><strong>Note:</strong> The <em>strict equality</em> operator (as opposed to the <em>standard equality</em> operator) must be used here, because <code>x == undefined</code> also checks whether <code>x</code> is <code>null</code>, while strict equality doesn’t. This is because <code>null</code> is not equivalent to <code>undefined</code>.</p>
+<p>See <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators">comparison operators</a> for details.</p>
+<h3 id="typeof-operator-and-undefined">typeof operator and undefined</h3>
+<p>Alternatively, <a href="../operators/typeof"><code>typeof</code></a> can be used:</p>
+<pre><code>var x;
+if (typeof x === &#39;undefined&#39;) {
+   // these statements execute
+}</code></pre>
+<p>One reason to use <a href="../operators/typeof"><code>typeof</code></a> is that it does not throw an error if the variable has not been declared.</p>
+<pre><code>//  x has not been declared before
+if (typeof x === &#39;undefined&#39;) { //  evaluates to true without errors
+   //  these statements execute
+}
+
+if (x === undefined) { //  throws a ReferenceError
+
+}</code></pre>
+<p>However, there is another alternative. JavaScript is a statically scoped language, so knowing if a variable is declared can be read by seeing whether it is declared in an enclosing context.</p>
+<p>The global scope is bound to the <a href="globalthis">global object</a>, so checking the existence of a variable in the global context can be done by checking the existence of a property on the <em>global object</em>, using the <a href="../operators/in"><code>in</code></a> operator, for instance:</p>
+<pre><code>if (&#39;x&#39; in window) {
+  //  these statements execute only if x is defined globally
+}</code></pre>
+<h3 id="void-operator-and-undefined">void operator and undefined</h3>
+<p>The <a href="../operators/void"><code>void</code></a> operator is a third alternative.</p>
+<pre><code>var x;
+if (x === void 0) {
+  //  these statements execute
+}
+
+//  y has not been declared before
+if (y === void 0) {
+  //  throws Uncaught ReferenceError: y is not defined
+}</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-undefined">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-undefined</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>undefined</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>5.5</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li>JavaScript’s <a href="https://developer.mozilla.org/en-US/docs/Glossary/Primitive">primitive types</a></li>
+<li><a href="null"><code>null</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined</a></p>
+</body>
+</html>

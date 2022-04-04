@@ -1,7 +1,4 @@
----
-tags: [networking]
----
-
-# To Get all ipv6 neighbors via broadcast ping:
+To Get all ipv6 neighbors via broadcast ping:
+=============================================
 
 ping6 -I eth0 ff02::1

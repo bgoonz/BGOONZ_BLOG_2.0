@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>some</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="array.prototype.some">Array.prototype.some()</h1>
+<p>The <code>some()</code> method tests whether at least one element in the array passes the test implemented by the provided function. It returns true if, in the array, it finds an element for which the provided function returns true; otherwise it returns false. It doesn’t modify the array.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>// Arrow function
+some((element) =&gt; { ... } )
+some((element, index) =&gt; { ... } )
+some((element, index, array) =&gt; { ... } )
+
+// Callback function
+some(callbackFn)
+some(callbackFn, thisArg)
+
+// Inline callback function
+some(function callbackFn(element) { ... })
+some(function callbackFn(element, index) { ... })
+some(function callbackFn(element, index, array){ ... })
+some(function callbackFn(element, index, array) { ... }, thisArg)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>callback</code><br />
+A function to test for each element, taking three arguments:</p>
+<p><code>element</code><br />
+The current element being processed in the array.</p>
+<p><code>index</code><span class="badge inline optional">Optional</span><br />
+The index of the current element being processed in the array.</p>
+<p><code>array</code><span class="badge inline optional">Optional</span><br />
+The array <code>some()</code> was called upon.</p>
+<p><code>thisArg</code><span class="badge inline optional">Optional</span><br />
+A value to use as <code>this</code> when executing <code>callbackFn</code>.</p>
+<h3 id="return-value">Return value</h3>
+<p><code>true</code> if the callback function returns a <a href="https://developer.mozilla.org/en-US/docs/Glossary/Truthy">truthy</a> value for at least one element in the array. Otherwise, <code>false</code>.</p>
+<h2 id="description">Description</h2>
+<p>The <code>some()</code> method executes the <code>callbackFn</code> function once for each element present in the array until it finds the one where <code>callbackFn</code> returns a <em>truthy</em> value (a value that becomes true when converted to a Boolean). If such an element is found, <code>some()</code> immediately returns <code>true</code>. Otherwise, <code>some()</code> returns <code>false</code>. <code>callbackFn</code> is invoked only for indexes of the array with assigned values. It is not invoked for indexes which have been deleted or which have never been assigned values.</p>
+<p><code>callbackFn</code> is invoked with three arguments: the value of the element, the index of the element, and the Array object being traversed.</p>
+<p>If a <code>thisArg</code> parameter is provided to <code>some()</code>, it will be used as the callback’s <code>this</code> value. Otherwise, the value <a href="../undefined"><code>undefined</code></a> will be used as its <code>this</code> value. The <code>this</code> value ultimately observable by <code>callbackFn</code> is determined according to <a href="../../operators/this">the usual rules for determining the <code>this</code> seen by a function</a>.</p>
+<p><code>some()</code> does not mutate the array on which it is called.</p>
+<p>The range of elements processed by <code>some()</code> is set before the first invocation of <code>callbackFn</code>. Elements appended to the array after the call to <code>some()</code> begins will not be visited by <code>callbackFn</code>. If an existing, unvisited element of the array is changed by <code>callbackFn</code>, its value passed to the visiting <code>callbackFn</code> will be the value at the time that <code>some()</code> visits that element’s index. Elements that are deleted are not visited.</p>
+<p><strong>Note:</strong> Calling this method on an empty array returns <code>false</code> for any condition!</p>
+<h2 id="polyfill">Polyfill</h2>
+<p><code>some()</code> was added to the ECMA-262 standard in the 5<sup>th</sup> edition, and it may not be present in all implementations of the standard. You can work around this by inserting the following code at the beginning of your scripts, allowing use of <code>some()</code> in implementations which do not natively support it.</p>
+<p>This algorithm is exactly the one specified in ECMA-262, 5<sup>th</sup> edition, assuming <a href="../object"><code>Object</code></a> and <a href="../typeerror"><code>TypeError</code></a> have their original values and that <code>fun.call</code> evaluates to the original value of <a href="../function/call"><code>Function.prototype.call()</code></a>.</p>
+<pre><code>// Production steps of ECMA-262, Edition 5, 15.4.4.17
+// Reference: https://es5.github.io/#x15.4.4.17
+if (!Array.prototype.some) {
+  Array.prototype.some = function(fun, thisArg) {
+    &#39;use strict&#39;;
+
+    if (this == null) {
+      throw new TypeError(&#39;Array.prototype.some called on null or undefined&#39;);
+    }
+
+    if (typeof fun !== &#39;function&#39;) {
+      throw new TypeError();
+    }
+
+    var t = Object(this);
+    var len = t.length &gt;&gt;&gt; 0;
+
+    for (var i = 0; i &lt; len; i++) {
+      if (i in t &amp;&amp; fun.call(thisArg, t[i], i, t)) {
+        return true;
+      }
+    }
+
+    return false;
+  };
+}</code></pre>
+<h2 id="examples">Examples</h2>
+<h3 id="testing-value-of-array-elements">Testing value of array elements</h3>
+<p>The following example tests whether any element in the array is bigger than 10.</p>
+<pre><code>function isBiggerThan10(element, index, array) {
+  return element &gt; 10;
+}
+
+[2, 5, 8, 1, 4].some(isBiggerThan10);  // false
+[12, 5, 8, 1, 4].some(isBiggerThan10); // true</code></pre>
+<h3 id="testing-array-elements-using-arrow-functions">Testing array elements using arrow functions</h3>
+<p><a href="../../functions/arrow_functions">Arrow functions</a> provide a shorter syntax for the same test.</p>
+<pre><code>[2, 5, 8, 1, 4].some(x =&gt; x &gt; 10);  // false
+[12, 5, 8, 1, 4].some(x =&gt; x &gt; 10); // true</code></pre>
+<h3 id="checking-whether-a-value-exists-in-an-array">Checking whether a value exists in an array</h3>
+<p>To mimic the function of the <code>includes()</code> method, this custom function returns <code>true</code> if the element exists in the array:</p>
+<pre><code>const fruits = [&#39;apple&#39;, &#39;banana&#39;, &#39;mango&#39;, &#39;guava&#39;];
+
+function checkAvailability(arr, val) {
+  return arr.some(function(arrVal) {
+    return val === arrVal;
+  });
+}
+
+checkAvailability(fruits, &#39;kela&#39;);   // false
+checkAvailability(fruits, &#39;banana&#39;); // true</code></pre>
+<h3 id="checking-whether-a-value-exists-using-an-arrow-function">Checking whether a value exists using an arrow function</h3>
+<pre><code>const fruits = [&#39;apple&#39;, &#39;banana&#39;, &#39;mango&#39;, &#39;guava&#39;];
+
+function checkAvailability(arr, val) {
+  return arr.some(arrVal =&gt; val === arrVal);
+}
+
+checkAvailability(fruits, &#39;kela&#39;);   // false
+checkAvailability(fruits, &#39;banana&#39;); // true</code></pre>
+<h3 id="converting-any-value-to-boolean">Converting any value to Boolean</h3>
+<pre><code>const TRUTHY_VALUES = [true, &#39;true&#39;, 1];
+
+function getBoolean(value) {
+  &#39;use strict&#39;;
+
+  if (typeof value === &#39;string&#39;) {
+    value = value.toLowerCase().trim();
+  }
+
+  return TRUTHY_VALUES.some(function(t) {
+    return t === value;
+  });
+}
+
+getBoolean(false);   // false
+getBoolean(&#39;false&#39;); // false
+getBoolean(1);       // true
+getBoolean(&#39;true&#39;);  // true</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-array.prototype.some">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-array.prototype.some</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>some</code></p>
+<p>1</p>
+<p>12</p>
+<p>1.5</p>
+<p>9</p>
+<p>9.5</p>
+<p>3</p>
+<p>≤37</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="every"><code>Array.prototype.every()</code></a></li>
+<li><a href="foreach"><code>Array.prototype.forEach()</code></a></li>
+<li><a href="find"><code>Array.prototype.find()</code></a></li>
+<li><a href="../typedarray/some"><code>TypedArray.prototype.some()</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some</a></p>
+</body>
+</html>

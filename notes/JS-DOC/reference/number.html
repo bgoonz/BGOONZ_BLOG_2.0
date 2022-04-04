@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>number</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="number">Number</h1>
+<p><code>Number</code> is a <a href="https://developer.mozilla.org/en-US/docs/Glossary/Primitive#primitive_wrapper_objects_in_javascript">primitive wrapper object</a> used to represent and manipulate numbers like <code>37</code> or <code>-9.25</code>.</p>
+<p>The <code>Number</code> constructor contains constants and methods for working with numbers. Values of other types can be converted to numbers using the <code>Number()</code>.</p>
+<p>The JavaScript <strong>Number</strong> type is a <a href="https://en.wikipedia.org/wiki/Floating-point_arithmetic">double-precision 64-bit binary format IEEE 754</a> value, like <code>double</code> in Java or C#. This means it can represent fractional values, but there are some limits to what it can store. A Number only keeps about 17 decimal places of precision; arithmetic is subject to <a href="https://en.wikipedia.org/wiki/Floating-point_arithmetic#Representable_numbers,_conversion_and_rounding">rounding</a>. The largest value a Number can hold is about 1.8×10<sup>308</sup>. Numbers beyond that are replaced with the special Number constant <a href="infinity"><code>Infinity</code></a>.</p>
+<p>A number literal like <code>37</code> in JavaScript code is a floating-point value, not an integer. There is no separate integer type in common everyday use. (JavaScript now has a <a href="bigint"><code>BigInt</code></a> type, but it was not designed to replace Number for everyday uses. <code>37</code> is still a Number, not a BigInt.)</p>
+<p>Number may also be expressed in literal forms like <code>0b101</code>, <code>0o13</code>, <code>0x0A</code>. Learn more on numeric <a href="../lexical_grammar#numeric_literals">lexical grammar here</a>.</p>
+<h2 id="description">Description</h2>
+<p>When used as a function, <code>Number(value)</code> converts a string or other value to the Number type. If the value can’t be converted, it returns <a href="nan"><code>NaN</code></a>.</p>
+<h3 id="literal-syntax">Literal syntax</h3>
+<pre><code>123    // one-hundred twenty-three
+123.0  // same
+123 === 123.0  // true</code></pre>
+<h3 id="function-syntax">Function syntax</h3>
+<pre><code>Number(&#39;123&#39;)  // returns the number 123
+Number(&#39;123&#39;) === 123  // true
+
+Number(&quot;unicorn&quot;)  // NaN
+Number(undefined)  // NaN</code></pre>
+<h2 id="constructor">Constructor</h2>
+<p><a href="number/number"><code>Number()</code></a><br />
+Creates a new <code>Number</code> value.</p>
+<h2 id="static-properties">Static properties</h2>
+<p><a href="number/epsilon"><code>Number.EPSILON</code></a><br />
+The smallest interval between two representable numbers.</p>
+<p><a href="number/max_safe_integer"><code>Number.MAX_SAFE_INTEGER</code></a><br />
+The maximum safe integer in JavaScript (<code>253 - 1</code>).</p>
+<p><a href="number/max_value"><code>Number.MAX_VALUE</code></a><br />
+The largest positive representable number.</p>
+<p><a href="number/min_safe_integer"><code>Number.MIN_SAFE_INTEGER</code></a><br />
+The minimum safe integer in JavaScript (<code>-(253 - 1)</code>).</p>
+<p><a href="number/min_value"><code>Number.MIN_VALUE</code></a><br />
+The smallest positive representable number—that is, the positive number closest to zero (without actually being zero).</p>
+<p><a href="number/nan"><code>Number.NaN</code></a><br />
+Special “<strong>N</strong>ot <strong>a</strong> <strong>N</strong>umber” value.</p>
+<p><a href="number/negative_infinity"><code>Number.NEGATIVE_INFINITY</code></a><br />
+Special value representing negative infinity. Returned on overflow.</p>
+<p><a href="number/positive_infinity"><code>Number.POSITIVE_INFINITY</code></a><br />
+Special value representing infinity. Returned on overflow.</p>
+<p><a href="number"><code>Number.prototype</code></a><br />
+Allows the addition of properties to the <code>Number</code> object.</p>
+<h2 id="static-methods">Static methods</h2>
+<p><a href="number/isnan"><code>Number.isNaN()</code></a><br />
+Determine whether the passed value is <code>NaN</code>.</p>
+<p><a href="number/isfinite"><code>Number.isFinite()</code></a><br />
+Determine whether the passed value is a finite number.</p>
+<p><a href="number/isinteger"><code>Number.isInteger()</code></a><br />
+Determine whether the passed value is an integer.</p>
+<p><a href="number/issafeinteger"><code>Number.isSafeInteger()</code></a><br />
+Determine whether the passed value is a safe integer (number between <code>-(253 - 1)</code> and <code>253 - 1</code>).</p>
+<p><a href="number/parsefloat"><code>Number.parseFloat(string)</code></a><br />
+This is the same as the global <a href="parsefloat"><code>parseFloat()</code></a> function.</p>
+<p><a href="number/parseint"><code>Number.parseInt(string, [radix])</code></a><br />
+This is the same as the global <a href="parseint"><code>parseInt()</code></a> function.</p>
+<h2 id="instance-methods">Instance methods</h2>
+<p><a href="number/toexponential"><code>Number.prototype.toExponential(fractionDigits)</code></a><br />
+Returns a string representing the number in exponential notation.</p>
+<p><a href="number/tofixed"><code>Number.prototype.toFixed(digits)</code></a><br />
+Returns a string representing the number in fixed-point notation.</p>
+<p><a href="number/tolocalestring"><code>Number.prototype.toLocaleString([locales [, options]])</code></a><br />
+Returns a string with a language sensitive representation of this number. Overrides the <a href="object/tolocalestring"><code>Object.prototype.toLocaleString()</code></a> method.</p>
+<p><a href="number/toprecision"><code>Number.prototype.toPrecision(precision)</code></a><br />
+Returns a string representing the number to a specified precision in fixed-point or exponential notation.</p>
+<p><a href="number/tostring"><code>Number.prototype.toString([radix])</code></a><br />
+Returns a string representing the specified object in the specified radix (“base”). Overrides the <a href="object/tostring"><code>Object.prototype.toString()</code></a> method.</p>
+<p><a href="number/valueof"><code>Number.prototype.valueOf()</code></a><br />
+Returns the primitive value of the specified object. Overrides the <a href="object/valueof"><code>Object.prototype.valueOf()</code></a> method.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-the-number-object-to-assign-values-to-numeric-variables">Using the Number object to assign values to numeric variables</h3>
+<p>The following example uses the <code>Number</code> object’s properties to assign values to several numeric variables:</p>
+<pre><code>const biggestNum     = Number.MAX_VALUE
+const smallestNum    = Number.MIN_VALUE
+const infiniteNum    = Number.POSITIVE_INFINITY
+const negInfiniteNum = Number.NEGATIVE_INFINITY
+const notANum        = Number.NaN</code></pre>
+<h3 id="integer-range-for-number">Integer range for Number</h3>
+<p>The following example shows the minimum and maximum integer values that can be represented as <code>Number</code> object. (More details on this are described in the ECMAScript standard, chapter <em><a href="https://tc39.github.io/ecma262/#sec-ecmascript-language-types-number-type">6.1.6 The Number Type</a>.</em>)</p>
+<pre><code>const biggestInt  = Number.MAX_SAFE_INTEGER  //  (2**53 - 1) =&gt;  9007199254740991
+const smallestInt = Number.MIN_SAFE_INTEGER  // -(2**53 - 1) =&gt; -9007199254740991</code></pre>
+<p>When parsing data that has been serialized to JSON, integer values falling outside of this range can be expected to become corrupted when JSON parser coerces them to <code>Number</code> type.</p>
+<p>A possible workaround is to use <a href="string"><code>String</code></a> instead.</p>
+<p>Larger numbers can be represented using the <a href="bigint"><code>BigInt</code></a> type.</p>
+<h3 id="using-number-to-convert-a-date-object">Using Number to convert a Date object</h3>
+<p>The following example converts the <a href="date"><code>Date</code></a> object to a numerical value using <code>Number</code> as a function:</p>
+<pre><code>let d = new Date(&#39;December 17, 1995 03:24:00&#39;)
+console.log(Number(d))</code></pre>
+<p>This logs <code>819199440000</code>.</p>
+<h3 id="convert-numeric-strings-and-null-to-numbers">Convert numeric strings and null to numbers</h3>
+<pre><code>Number(&#39;123&#39;)     // 123
+Number(&#39;123&#39;) === 123 /// true
+Number(&#39;12.3&#39;)    // 12.3
+Number(&#39;12.00&#39;)   // 12
+Number(&#39;123e-1&#39;)  // 12.3
+Number(&#39;&#39;)        // 0
+Number(null)      // 0
+Number(&#39;0x11&#39;)    // 17
+Number(&#39;0b11&#39;)    // 3
+Number(&#39;0o11&#39;)    // 9
+Number(&#39;foo&#39;)     // NaN
+Number(&#39;100a&#39;)    // NaN
+Number(&#39;-Infinity&#39;) //-Infinity</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-number-objects">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-number-objects</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>Number</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>EPSILON</code></p>
+<p>34</p>
+<p>12</p>
+<p>25</p>
+<p>No</p>
+<p>21</p>
+<p>9</p>
+<p>≤37</p>
+<p>34</p>
+<p>25</p>
+<p>21</p>
+<p>9</p>
+<p>2.0</p>
+<p><code>MAX_SAFE_INTEGER</code></p>
+<p>34</p>
+<p>12</p>
+<p>31</p>
+<p>No</p>
+<p>21</p>
+<p>9</p>
+<p>≤37</p>
+<p>34</p>
+<p>31</p>
+<p>21</p>
+<p>9</p>
+<p>2.0</p>
+<p><code>MAX_VALUE</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>4</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>MIN_SAFE_INTEGER</code></p>
+<p>34</p>
+<p>12</p>
+<p>31</p>
+<p>No</p>
+<p>21</p>
+<p>9</p>
+<p>≤37</p>
+<p>34</p>
+<p>31</p>
+<p>21</p>
+<p>9</p>
+<p>2.0</p>
+<p><code>MIN_VALUE</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>4</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>NaN</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>4</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>NEGATIVE_INFINITY</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>4</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>Number</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>POSITIVE_INFINITY</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>4</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>isFinite</code></p>
+<p>19</p>
+<p>12</p>
+<p>16</p>
+<p>No</p>
+<p>15</p>
+<p>9</p>
+<p>≤37</p>
+<p>25</p>
+<p>16</p>
+<p>14</p>
+<p>9</p>
+<p>1.5</p>
+<p><code>isInteger</code></p>
+<p>34</p>
+<p>12</p>
+<p>16</p>
+<p>No</p>
+<p>21</p>
+<p>9</p>
+<p>≤37</p>
+<p>34</p>
+<p>16</p>
+<p>21</p>
+<p>9</p>
+<p>2.0</p>
+<p><code>isNaN</code></p>
+<p>25</p>
+<p>12</p>
+<p>15</p>
+<p>No</p>
+<p>15</p>
+<p>9</p>
+<p>≤37</p>
+<p>25</p>
+<p>15</p>
+<p>14</p>
+<p>9</p>
+<p>1.5</p>
+<p><code>isSafeInteger</code></p>
+<p>34</p>
+<p>12</p>
+<p>32</p>
+<p>No</p>
+<p>21</p>
+<p>10</p>
+<p>≤37</p>
+<p>34</p>
+<p>32</p>
+<p>21</p>
+<p>10</p>
+<p>2.0</p>
+<p><code>parseFloat</code></p>
+<p>34</p>
+<p>12</p>
+<p>25</p>
+<p>No</p>
+<p>21</p>
+<p>9</p>
+<p>≤37</p>
+<p>34</p>
+<p>25</p>
+<p>21</p>
+<p>9</p>
+<p>2.0</p>
+<p><code>parseInt</code></p>
+<p>34</p>
+<p>12</p>
+<p>25</p>
+<p>No</p>
+<p>21</p>
+<p>9</p>
+<p>≤37</p>
+<p>34</p>
+<p>25</p>
+<p>21</p>
+<p>9</p>
+<p>2.0</p>
+<p><code>toExponential</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>5.5</p>
+<p>7</p>
+<p>2</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>toFixed</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>5.5</p>
+<p>7</p>
+<p>2</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>toLocaleString</code></p>
+<p>1</p>
+<p>12</p>
+<p>Before Edge 18, numbers are rounded to 15 decimal digits. For example, <code>(1000000000000005).toLocaleString('en-US')</code> returns <code>"1,000,000,000,000,010"</code>.</p>
+<p>1</p>
+<p>5</p>
+<p>In Internet Explorer 11, numbers are rounded to 15 decimal digits. For example, <code>(1000000000000005).toLocaleString('en-US')</code> returns <code>"1,000,000,000,000,010"</code>.</p>
+<p>4</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>toPrecision</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>5.5</p>
+<p>7</p>
+<p>2</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>toSource</code></p>
+<p>No</p>
+<p>No</p>
+<p>1-74</p>
+<p>Starting in Firefox 74, <code>toSource()</code> is no longer available for use by web content. It is still allowed for internal and privileged code.</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>4</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p><code>toString</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>4</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>valueOf</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>4</p>
+<p>4</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="nan"><code>NaN</code></a></li>
+<li><span class="page-not-created"><code>Arithmetic operators</code></span></li>
+<li>The <a href="math"><code>Math</code></a> global object</li>
+<li>Integers with arbitrary precision: <a href="bigint"><code>BigInt</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number</a></p>
+</body>
+</html>

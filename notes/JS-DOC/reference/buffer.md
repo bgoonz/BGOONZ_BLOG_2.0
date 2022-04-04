@@ -1,8 +1,10 @@
-# WebAssembly.Memory.prototype.buffer
+WebAssembly.Memory.prototype.buffer
+===================================
 
 The `buffer` prototype property of the [`WebAssembly.Memory`](../memory) object returns the buffer contained in the memory.
 
-## Examples
+Examples
+--------
 
 ### Using buffer
 
@@ -18,12 +20,11 @@ The following example (see [memory.html](https://github.com/mdn/webassembly-exam
       console.log(sum);
     });
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#dom-memory-buffer">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
-<br/>
-
-<span class="small">#dom-memory-buffer</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>WebAssembly JavaScript Interface (WebAssembly JavaScript Interface)<br />
+</p><span class="small">#dom-memory-buffer</span></td></tr></tbody></table>
 
 `buffer`
 
@@ -55,12 +56,12 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 
 7.0
 
-## See also
+See also
+--------
 
 -   [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
 -   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Memory/buffer" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Memory/buffer</a>

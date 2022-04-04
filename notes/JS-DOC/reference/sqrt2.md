@@ -1,8 +1,10 @@
-# Math.SQRT2
+Math.SQRT2
+==========
 
 The `Math.SQRT2` property represents the square root of 2, approximately 1.414:
 
-$$\\mathtt{Math.SQRT2} = \\sqrt{2} \\approx 1.414$$
+  
+<span class="math display">$$\\\\mathtt{Math.SQRT2} = \\\\sqrt{2} \\\\approx 1.414$$</span>  
 
 Property attributes of `Math.SQRT2`
 
@@ -18,11 +20,13 @@ Configurable
 
 no
 
-## Description
+Description
+-----------
 
 Because `SQRT2` is a static property of `Math`, you always use it as `Math.SQRT2`, rather than as a property of a `Math` object you created (`Math` is not a constructor).
 
-## Examples
+Examples
+--------
 
 ### Using Math.SQRT2
 
@@ -34,14 +38,14 @@ The following function returns the square root of 2:
 
     getRoot2(); // 1.4142135623730951
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.sqrt2">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-math.sqrt2</span></td></tr></tbody></table>
 
-<span class="small">#sec-math.sqrt2</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -97,11 +101,11 @@ Samsung Internet
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`Math.pow()`](pow)
 -   [`Math.sqrt()`](sqrt)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/SQRT2" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/SQRT2</a>

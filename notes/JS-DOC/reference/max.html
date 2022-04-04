@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>max</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="math.max">Math.max()</h1>
+<p>The <code>Math.max()</code> function returns the largest of the zero or more numbers given as input parameters, or <a href="../nan"><code>NaN</code></a> if any parameter isn’t a number and can’t be converted into one.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>Math.max()
+Math.max(value0)
+Math.max(value0, value1)
+Math.max(value0, value1, ... , valueN)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>value1, value2, ...</code><br />
+Zero or more numbers among which the largest value will be selected and returned.</p>
+<h3 id="return-value">Return value</h3>
+<p>The largest of the given numbers. If any one or more of the parameters cannot be converted into a number, <a href="../nan"><code>NaN</code></a> is returned. The result is -<a href="../infinity"><code>Infinity</code></a> if no parameters are provided.</p>
+<h2 id="description">Description</h2>
+<p>Because <code>max()</code> is a static method of <code>Math</code>, you always use it as <code>Math.max()</code>, rather than as a method of a <code>Math</code> object you created (<code>Math</code> is not a constructor).</p>
+<p>If no arguments are given, the result is -<a href="../infinity"><code>Infinity</code></a>.</p>
+<p>If at least one of arguments cannot be converted to a number, the result is <a href="../nan"><code>NaN</code></a>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-math.max">Using Math.max()</h3>
+<pre><code>Math.max(10, 20);   //  20
+Math.max(-10, -20); // -10
+Math.max(-10, 20);  //  20</code></pre>
+<h3 id="getting-the-maximum-element-of-an-array">Getting the maximum element of an array</h3>
+<p><a href="../array/reduce"><code>Array.reduce()</code></a> can be used to find the maximum element in a numeric array, by comparing each value:</p>
+<pre><code>var arr = [1,2,3];
+var max = arr.reduce(function(a, b) {
+    return Math.max(a, b);
+});</code></pre>
+<p>The following function uses <a href="../function/apply"><code>Function.prototype.apply()</code></a> to get the maximum of an array. <code>getMaxOfArray([1, 2, 3])</code> is equivalent to <code>Math.max(1, 2, 3)</code>, but you can use <code>getMaxOfArray()</code> on programmatically constructed arrays. This should only be used for arrays with relatively few elements.</p>
+<pre><code>function getMaxOfArray(numArray) {
+  return Math.max.apply(null, numArray);
+}</code></pre>
+<p>The new <a href="../../operators/spread_syntax">spread operator</a> is a shorter way of writing the <code>apply</code> solution to get the maximum of an array:</p>
+<pre><code>var arr = [1, 2, 3];
+var max = Math.max(...arr);</code></pre>
+<p>However, both spread (<code>...</code>) and <code>apply</code> will either fail or return the wrong result if the array has too many elements, because they try to pass the array elements as function parameters. See <a href="../function/apply#using_apply_and_built-in_functions">Using apply and built-in functions</a> for more details. The <code>reduce</code> solution does not have this problem.</p>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-math.max">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-math.max</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>max</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="min"><code>Math.min()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max</a></p>
+</body>
+</html>

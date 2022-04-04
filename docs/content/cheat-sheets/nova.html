@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>nova</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="to-list-vms-on-current-tenant">To list VMs on current tenant:</h1>
+<p>nova list</p>
+<h1 id="to-list-vms-of-all-tenants-admin-user-only">To list VMs of all tenants (admin user only):</h1>
+<p>nova list –all-tenants</p>
+<h1 id="to-boot-a-vm-on-a-specific-host">To boot a VM on a specific host:</h1>
+<p>nova boot –nic net-id=<net_id><br />
+–image <image_id><br />
+–flavor <flavor><br />
+–availability-zone nova:<host_name> <vm_name></p>
+<h1 id="to-stop-a-server">To stop a server:</h1>
+<p>nova stop <server></p>
+<h1 id="to-start-a-server">To start a server:</h1>
+<p>nova start <server></p>
+<h1 id="to-attach-a-network-interface-to-a-specific-vm">To attach a network interface to a specific VM:</h1>
+<p>nova interface-attach –net-id <net_id> <server></p>
+</body>
+</html>

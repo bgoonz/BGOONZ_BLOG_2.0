@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>relativetimeformat</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="intl.relativetimeformat">Intl.RelativeTimeFormat</h1>
+<p>The <code>Intl.RelativeTimeFormat</code> object enables language-sensitive relative time formatting.</p>
+<h2 id="constructor">Constructor</h2>
+<p><a href="relativetimeformat/relativetimeformat"><code>Intl.RelativeTimeFormat()</code></a><br />
+Creates a new <code>Intl.RelativeTimeFormat</code> object.</p>
+<h2 id="static-methods">Static methods</h2>
+<p><a href="relativetimeformat/supportedlocalesof"><code>Intl.RelativeTimeFormat.supportedLocalesOf()</code></a><br />
+Returns an array containing those of the provided locales that are supported without having to fall back to the runtime’s default locale.</p>
+<h2 id="instance-methods">Instance methods</h2>
+<p><a href="relativetimeformat/format"><code>Intl.RelativeTimeFormat.prototype.format()</code></a><br />
+Formats a <code>value</code> and a <code>unit</code> according to the locale and formatting options of the given <a href="relativetimeformat"><code>Intl.RelativeTimeFormat</code></a> object.</p>
+<p><a href="relativetimeformat/formattoparts"><code>Intl.RelativeTimeFormat.prototype.formatToParts()</code></a><br />
+Returns an <a href="../array"><code>Array</code></a> of objects representing the relative time format in parts that can be used for custom locale-aware formatting.</p>
+<p><a href="relativetimeformat/resolvedoptions"><code>Intl.RelativeTimeFormat.prototype.resolvedOptions()</code></a><br />
+Returns a new object with properties reflecting the locale and formatting options computed during initialization of the object.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="basic-format-usage">Basic format usage</h3>
+<p>The following example shows how to use a relative time formatter for the English language.</p>
+<pre><code>// Create a relative time formatter in your locale
+// with default values explicitly passed in.
+const rtf = new Intl.RelativeTimeFormat(&quot;en&quot;, {
+    localeMatcher: &quot;best fit&quot;, // other values: &quot;lookup&quot;
+    numeric: &quot;always&quot;, // other values: &quot;auto&quot;
+    style: &quot;long&quot;, // other values: &quot;short&quot; or &quot;narrow&quot;
+});
+
+// Format relative time using negative value (-1).
+rtf.format(-1, &quot;day&quot;);
+// &gt; &quot;1 day ago&quot;
+
+// Format relative time using positive  value (1).
+rtf.format(1, &quot;day&quot;);
+// &gt; &quot;in 1 day&quot;</code></pre>
+<h3 id="using-formattoparts">Using formatToParts</h3>
+<p>The following example shows how to create a relative time formatter returning formatted parts</p>
+<pre><code>const rtf = new Intl.RelativeTimeFormat(&quot;en&quot;, { numeric: &quot;auto&quot; });
+
+// Format relative time using the day unit.
+rtf.formatToParts(-1, &quot;day&quot;);
+// &gt; [{ type: &quot;literal&quot;, value: &quot;yesterday&quot;}]
+
+rtf.formatToParts(100, &quot;day&quot;);
+// &gt; [{ type: &quot;literal&quot;, value: &quot;in &quot; },
+// &gt;  { type: &quot;integer&quot;, value: &quot;100&quot;, unit: &quot;day&quot; },
+// &gt;  { type: &quot;literal&quot;, value: &quot; days&quot; }]</code></pre>
+<h2 id="polyfill">Polyfill</h2>
+<p><a href="https://formatjs.io/docs/polyfills/intl-relativetimeformat">formatjs Intl.RelativeTimeFormat polyfill</a></p>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma402/#relativetimeformat-objects">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) <br/></p>
+<span class="small">#relativetimeformat-objects</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>RelativeTimeFormat</code></p>
+<p>71</p>
+<p>79</p>
+<p>65</p>
+<p>No</p>
+<p>58</p>
+<p>14</p>
+<p>71</p>
+<p>71</p>
+<p>65</p>
+<p>50</p>
+<p>14</p>
+<p>10.0</p>
+<p><code>RelativeTimeFormat</code></p>
+<p>71</p>
+<p>79</p>
+<p>65</p>
+<p>No</p>
+<p>58</p>
+<p>14</p>
+<p>71</p>
+<p>71</p>
+<p>65</p>
+<p>50</p>
+<p>14</p>
+<p>10.0</p>
+<p><code>format</code></p>
+<p>71</p>
+<p>79</p>
+<p>65</p>
+<p>No</p>
+<p>58</p>
+<p>14</p>
+<p>71</p>
+<p>71</p>
+<p>65</p>
+<p>50</p>
+<p>14</p>
+<p>10.0</p>
+<p><code>formatToParts</code></p>
+<p>71</p>
+<p>79</p>
+<p>70</p>
+<p>No</p>
+<p>58</p>
+<p>14</p>
+<p>71</p>
+<p>71</p>
+<p>79</p>
+<p>50</p>
+<p>14</p>
+<p>10.0</p>
+<p><code>resolvedOptions</code></p>
+<p>71</p>
+<p>79</p>
+<p>65</p>
+<p>No</p>
+<p>58</p>
+<p>14</p>
+<p>71</p>
+<p>71</p>
+<p>65</p>
+<p>50</p>
+<p>14</p>
+<p>10.0</p>
+<p><code>supportedLocalesOf</code></p>
+<p>71</p>
+<p>79</p>
+<p>65</p>
+<p>No</p>
+<p>58</p>
+<p>14</p>
+<p>71</p>
+<p>71</p>
+<p>65</p>
+<p>50</p>
+<p>14</p>
+<p>10.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../intl"><code>Intl</code></a></li>
+<li><a href="https://developers.google.com/web/updates/2018/10/intl-relativetimeformat">The Intl.RelativeTimeFormat API</a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/RelativeTimeFormat" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/RelativeTimeFormat</a></p>
+</body>
+</html>

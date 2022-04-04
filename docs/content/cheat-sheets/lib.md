@@ -1,31 +1,39 @@
-# To display available libraries:
+To display available libraries:
+===============================
 
 ldconfig -p
 
-# To update library resources:
+To update library resources:
+============================
 
 ldconfig
 
-# To display libraries and file location:
+To display libraries and file location:
+=======================================
 
 ldd
 
-# To libraries available to apps in real-time:
+To libraries available to apps in real-time:
+============================================
 
-"Dynamic Libraries" (.so.)
+“Dynamic Libraries” (.so.)
 
-# To libraries only available to apps when installed (imported):
+To libraries only available to apps when installed (imported):
+==============================================================
 
-"Static Libraries" (.a.)
+“Static Libraries” (.a.)
 
-# To standard (usual) library file location:
+To standard (usual) library file location:
+==========================================
 
 /lib
 
-# To sofware-accessible source for library info :
+To sofware-accessible source for library info :
+===============================================
 
-/etc/ld.so.cache # (binary)
+/etc/ld.so.cache \# (binary)
 
-# To human-readable source for library info:
+To human-readable source for library info:
+==========================================
 
-/etc/ld.so.conf # (points to /etc/ld.so.conf.d)
+/etc/ld.so.conf \# (points to /etc/ld.so.conf.d)

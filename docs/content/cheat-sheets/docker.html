@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2022-01-03" />
+  <title>title</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">title</h1>
+<p class="subtitle">subtitle</p>
+<p class="date">2022-01-03</p>
+</header>
+<h1 id="to-start-the-docker-daemon">To start the docker daemon:</h1>
+<p>docker -d</p>
+<h1 id="to-start-a-container-with-an-interactive-shell">To start a container with an interactive shell:</h1>
+<p>docker run -ti <image-name> /bin/bash</p>
+<h1 id="to-shell-into-a-running-container-docker-1.3">To “shell” into a running container (docker-1.3+):</h1>
+<p>docker exec -ti <container-name> bash</p>
+<h1 id="to-inspect-a-running-container">To inspect a running container:</h1>
+<p>docker inspect <container-name> (or <container-id>)</p>
+<h1 id="to-get-the-process-id-for-a-container">To get the process ID for a container:</h1>
+<p>docker inspect –format {{.State.Pid}} <container-name-or-id></p>
+<h1 id="to-list-and-pretty-print-the-current-mounted-volumes-for-a-container">To list (and pretty-print) the current mounted volumes for a container:</h1>
+<p>docker inspect –format=‘{{json .Volumes}}’ <container-id> | python -mjson.tool</p>
+<h1 id="to-copy-filesfolders-between-a-container-and-your-host">To copy files/folders between a container and your host:</h1>
+<p>docker cp foo.txt mycontainer:/foo.txt</p>
+<h1 id="to-list-currently-running-containers">To list currently running containers:</h1>
+<p>docker ps</p>
+<h1 id="to-list-all-containers">To list all containers:</h1>
+<p>docker ps -a</p>
+<h1 id="to-remove-all-stopped-containers">To remove all stopped containers:</h1>
+<p>docker rm $(docker ps -qa)</p>
+<h1 id="to-list-all-images">To list all images:</h1>
+<p>docker images</p>
+<h1 id="to-remove-all-untagged-images">To remove all untagged images:</h1>
+<p>docker rmi $(docker images | grep “^<none>” | awk “{print $3}”)</p>
+<h1 id="to-remove-all-volumes-not-used-by-at-least-one-container">To remove all volumes not used by at least one container:</h1>
+<p>docker volume prune</p>
+</body>
+</html>

@@ -1,8 +1,10 @@
-# String.prototype.substring()
+String.prototype.substring()
+============================
 
 The `substring()` method returns the part of the `string` between the start and end indexes, or to the end of the string.
 
-## Syntax
+Syntax
+------
 
     substring(indexStart)
     substring(indexStart, indexEnd)
@@ -19,9 +21,10 @@ The index of the first character to exclude from the returned substring.
 
 A new string containing the specified part of the given string.
 
-## Description
+Description
+-----------
 
-`substring()` extracts characters from `indexStart` up to _but not including_ `indexEnd`. In particular:
+`substring()` extracts characters from `indexStart` up to *but not including* `indexEnd`. In particular:
 
 -   If `indexEnd` is omitted, `substring()` extracts characters to the end of the string.
 -   If `indexStart` is equal to `indexEnd`, `substring()` returns an empty string.
@@ -31,7 +34,8 @@ Any argument value that is less than `0` or greater than `stringName.length` is 
 
 Any argument value that is [`NaN`](../nan) is treated as if it were `0`.
 
-## Examples
+Examples
+--------
 
 ### Using substring()
 
@@ -57,7 +61,7 @@ The following example uses `substring()` to display characters from the string `
 
 ### Using substring() with length property
 
-The following example uses the `substring()` method and [`length`](length) property to extract the last characters of a particular string. This method may be easier to remember, given that you don't need to know the starting and ending indices as you would in the above examples.
+The following example uses the `substring()` method and [`length`](length) property to extract the last characters of a particular string. This method may be easier to remember, given that you don’t need to know the starting and ending indices as you would in the above examples.
 
     // Displays 'illa' the last 4 characters
     let anyString = 'Mozilla'
@@ -71,7 +75,7 @@ The following example uses the `substring()` method and [`length`](length) prope
 
 ### The difference between substring() and substr()
 
-There's a subtle difference between the `substring()` and [`substr()`](substr) methods, so you should be careful not to get them confused.
+There’s a subtle difference between the `substring()` and [`substr()`](substr) methods, so you should be careful not to get them confused.
 
 The arguments of `substring()` represent the starting and ending indexes, while the arguments of `substr()` represent the starting index and the number of characters to include in the returned string.
 
@@ -119,7 +123,7 @@ The following example replaces a substring within a string. It will replace both
 
     replaceString('World', 'Web', 'Brave New World')
 
-Note that this can result in an infinite loop if `oldS` is itself a substring of `newS` — for example, if you attempted to replace '`World`' with '`OtherWorld`' here.
+Note that this can result in an infinite loop if `oldS` is itself a substring of `newS` — for example, if you attempted to replace ‘`World`’ with ‘`OtherWorld`’ here.
 
 A better method for replacing strings is as follows:
 
@@ -129,14 +133,14 @@ A better method for replacing strings is as follows:
 
 The code above serves as an example for substring operations. If you need to replace substrings, most of the time you will want to use [`String.prototype.replace()`](replace).
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.substring">ECMAScript (ECMA-262) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript (ECMA-262)<br />
+</p><span class="small">The definition of ‘String.prototype.substring’ in that specification.</span></td></tr></tbody></table>
 
-<span class="small">The definition of 'String.prototype.substring' in that specification.</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -192,11 +196,11 @@ Samsung Internet
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`String.prototype.substr()`](substr)
 -   [`String.prototype.slice()`](slice)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring</a>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>not_a_function</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="typeerror-x-is-not-a-function">TypeError: “x” is not a function</h1>
+<p>The JavaScript exception “is not a function” occurs when there was an attempt to call a value from a function, but the value is not actually a function.</p>
+<h2 id="message">Message</h2>
+<pre><code>TypeError: Object doesn&#39;t support property or method {x} (Edge)
+TypeError: &quot;x&quot; is not a function</code></pre>
+<h2 id="error-type">Error type</h2>
+<p><a href="../global_objects/typeerror"><code>TypeError</code></a></p>
+<h2 id="what-went-wrong">What went wrong?</h2>
+<p>It attempted to call a value from a function, but the value is not actually a function. Some code expects you to provide a function, but that didn’t happen.</p>
+<p>Maybe there is a typo in the function name? Maybe the object you are calling the method on does not have this function? For example, JavaScript <code>Objects</code> have no <code>map</code> function, but the JavaScript <code>Array</code> object does.</p>
+<p>There are many built-in functions in need of a (callback) function. You will have to provide a function in order to have these methods working properly:</p>
+<ul>
+<li>When working with <a href="../global_objects/array"><code>Array</code></a> or <a href="../global_objects/typedarray"><code>TypedArray</code></a> objects:
+<ul>
+<li><a href="../global_objects/array/every"><code>Array.prototype.every()</code></a>, <a href="../global_objects/array/some"><code>Array.prototype.some()</code></a>, <a href="../global_objects/array/foreach"><code>Array.prototype.forEach()</code></a>, <a href="../global_objects/array/map"><code>Array.prototype.map()</code></a>, <a href="../global_objects/array/filter"><code>Array.prototype.filter()</code></a>, <a href="../global_objects/array/reduce"><code>Array.prototype.reduce()</code></a>, <a href="../global_objects/array/reduceright"><code>Array.prototype.reduceRight()</code></a>, <a href="../global_objects/array/find"><code>Array.prototype.find()</code></a></li>
+</ul></li>
+<li>When working with <a href="../global_objects/map"><code>Map</code></a> and <a href="../global_objects/set"><code>Set</code></a> objects:
+<ul>
+<li><a href="../global_objects/map/foreach"><code>Map.prototype.forEach()</code></a> and <a href="../global_objects/set/foreach"><code>Set.prototype.forEach()</code></a></li>
+</ul></li>
+</ul>
+<h2 id="examples">Examples</h2>
+<h3 id="a-typo-in-the-function-name">A typo in the function name</h3>
+<p>In this case, which happens way too often, there is a typo in the method name:</p>
+<pre><code>let x = document.getElementByID(&#39;foo&#39;);
+// TypeError: document.getElementByID is not a function</code></pre>
+<p>The correct function name is <code>getElementById</code>:</p>
+<pre><code>let x = document.getElementById(&#39;foo&#39;);</code></pre>
+<h3 id="function-called-on-the-wrong-object">Function called on the wrong object</h3>
+<p>For certain methods, you have to provide a (callback) function and it will work on specific objects only. In this example, <a href="../global_objects/array/map"><code>Array.prototype.map()</code></a> is used, which will work with <a href="../global_objects/array"><code>Array</code></a> objects only.</p>
+<pre><code>let obj = {a: 13, b: 37, c: 42};
+
+obj.map(function(num) {
+  return num * 2;
+});
+
+// TypeError: obj.map is not a function</code></pre>
+<p>Use an array instead:</p>
+<pre><code>let numbers = [1, 4, 9];
+
+numbers.map(function(num) {
+  return num * 2;
+});
+
+// Array [2, 8, 18]</code></pre>
+<h3 id="function-shares-a-name-with-a-pre-existing-property">Function shares a name with a pre-existing property</h3>
+<p>Sometimes when making a class, you may have a property and a function with the same name. Upon calling the function, the compiler thinks that the function ceases to exist.</p>
+<pre><code>var Dog = function () {
+ this.age = 11;
+ this.color = &quot;black&quot;;
+ this.name = &quot;Ralph&quot;;
+ return this;
+}
+
+Dog.prototype.name = function(name) {
+ this.name = name;
+ return this;
+}
+
+var myNewDog = new Dog();
+myNewDog.name(&quot;Cassidy&quot;); //Uncaught TypeError: myNewDog.name is not a function</code></pre>
+<p>Use a different property name instead:</p>
+<pre><code>var Dog = function () {
+ this.age = 11;
+ this.color = &quot;black&quot;;
+ this.dogName = &quot;Ralph&quot;; //Using this.dogName instead of .name
+ return this;
+}
+
+Dog.prototype.name = function(name) {
+ this.dogName = name;
+ return this;
+}
+
+var myNewDog = new Dog();
+myNewDog.name(&quot;Cassidy&quot;); //Dog { age: 11, color: &#39;black&#39;, dogName: &#39;Cassidy&#39; }</code></pre>
+<h3 id="using-brackets-for-multiplication">Using brackets for multiplication</h3>
+<p>In math, you can write 2 × (3 + 5) as 2*(3 + 5) or just 2(3 + 5).</p>
+<p>Using the latter will throw an error:</p>
+<pre><code>const sixteen = 2(3 + 5);
+alert(&#39;2 x (3 + 5) is &#39; + String(sixteen));
+//Uncaught TypeError: 2 is not a function</code></pre>
+<p>You can correct the code by adding a <code>*</code> operator:</p>
+<pre><code>const sixteen = 2 * (3 + 5);
+alert(&#39;2 x (3 + 5) is &#39; + String(sixteen));
+//2 x (3 + 5) is 16</code></pre>
+<h3 id="import-the-exported-module-correctly">Import the exported module correctly</h3>
+<p>Ensure you are importing the module correctly.</p>
+<p>An example helpers library (<code>helpers.js</code>)</p>
+<pre><code>let helpers = function () { };
+
+helpers.groupBy = function (objectArray, property) {
+  return objectArray.reduce(function (acc, obj) {
+    var key = obj[property];
+    if (!acc[key]) {
+      acc[key] = [];
+    }
+    acc[key].push(obj);
+    return acc;
+  },
+{});
+}
+
+export default helpers;</code></pre>
+<p>The correct import usage (<code>App.js</code>):</p>
+<pre><code>import helpers from &#39;./helpers&#39;</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../functions">Functions</a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Not_a_function" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Not_a_function</a></p>
+</body>
+</html>

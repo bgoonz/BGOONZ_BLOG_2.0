@@ -1,25 +1,33 @@
-# To move a file from one place to another:
+To move a file from one place to another:
+=========================================
 
-mv <src> <dest>
+mv
 
-# To move a file from one place to another and automatically overwrite if the destination file exists:
+To move a file from one place to another and automatically overwrite if the destination file exists:
+====================================================================================================
 
-# (This will override any previous -i or -n args)
+(This will override any previous -i or -n args)
+===============================================
 
-mv -f <src> <dest>
+mv -f
 
-# To move a file from one place to another but ask before overwriting an existing file:
+To move a file from one place to another but ask before overwriting an existing file:
+=====================================================================================
 
-# (This will override any previous -f or -n args)
+(This will override any previous -f or -n args)
+===============================================
 
-mv -i <src> <dest>
+mv -i
 
-# To move a file from one place to another but never overwrite anything:
+To move a file from one place to another but never overwrite anything:
+======================================================================
 
-# (This will override any previous -f or -i args)
+(This will override any previous -f or -i args)
+===============================================
 
-mv -n <src> <dest>
+mv -n
 
-# To move listed file(s) to a directory
+To move listed file(s) to a directory
+=====================================
 
-mv -t <dest> <file>...
+mv -t …

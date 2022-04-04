@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>encodeuri</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="encodeuri">encodeURI()</h1>
+<p>The <code>encodeURI()</code> function encodes a <a href="https://developer.mozilla.org/en-US/docs/Glossary/URI">URI</a> by replacing each instance of certain characters by one, two, three, or four escape sequences representing the <a href="https://developer.mozilla.org/en-US/docs/Glossary/UTF-8">UTF-8</a> encoding of the character (will only be four escape sequences for characters composed of two “surrogate” characters).</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>encodeURI(URI)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>URI</code><br />
+A complete URI.</p>
+<h3 id="return-value">Return value</h3>
+<p>A new string representing the provided string encoded as a URI.</p>
+<h2 id="description">Description</h2>
+<p>The <code>encodeURI()</code> function does not encode characters that have special meaning (reserved characters) for a URI. The following example shows all the parts that a URI “scheme” can possibly contain. Note how certain characters are used to signify special meaning:</p>
+<pre><code>http://username:password@www.example.com:80/path/to/file.php?foo=316&amp;bar=this+has+spaces#anchor</code></pre>
+<p>Hence <code>encodeURI()</code> <strong>does not</strong> encode characters that are necessary to formulate a complete URI. Also, <code>encodeURI()</code> <strong>does not</strong> encode a few additional characters, known as “unreserved marks”, which do not have a reserved purpose but are allowed in a URI “as is”. (See <a href="https://www.ietf.org/rfc/rfc2396.txt">RFC2396)</a></p>
+<p><code>encodeURI()</code> escapes all characters <strong>except</strong>:</p>
+<pre><code>Not Escaped:
+
+    A-Z a-z 0-9 ; , / ? : @ &amp; = + $ - _ . ! ~ * &#39; ( ) #</code></pre>
+<h2 id="examples">Examples</h2>
+<h3 id="encodeuri-vs-encodeuricomponent">encodeURI vs encodeURIComponent</h3>
+<p><code>encodeURI()</code> differs from <a href="encodeuricomponent"><code>encodeURIComponent()</code></a> as follows:</p>
+<pre><code>var set1 = &quot;;,/?:@&amp;=+$#&quot;; // Reserved Characters
+var set2 = &quot;-_.!~*&#39;()&quot;;   // Unreserved Marks
+var set3 = &quot;ABC abc 123&quot;; // Alphanumeric Characters + Space
+
+console.log(encodeURI(set1)); // ;,/?:@&amp;=+$#
+console.log(encodeURI(set2)); // -_.!~*&#39;()
+console.log(encodeURI(set3)); // ABC%20abc%20123 (the space gets encoded as %20)
+
+console.log(encodeURIComponent(set1)); // %3B%2C%2F%3F%3A%40%26%3D%2B%24%23
+console.log(encodeURIComponent(set2)); // -_.!~*&#39;()
+console.log(encodeURIComponent(set3)); // ABC%20abc%20123 (the space gets encoded as %20)</code></pre>
+<p>Note that <code>encodeURI()</code> by itself <em>cannot</em> form proper HTTP <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET"><code>GET</code></a> and <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST"><code>POST</code></a> requests, such as for <a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest"><code>XMLHttpRequest</code></a>, because “<code>&amp;</code>”, “<code>+</code>”, and “<code>=</code>” are not encoded, which are treated as special characters in <code>GET</code> and <code>POST</code> requests. <code>encodeURIComponent()</code>, however, does encode these characters.</p>
+<h3 id="encoding-a-lone-high-surrogate-throws">Encoding a lone high surrogate throws</h3>
+<p>An <a href="urierror"><code>URIError</code></a> will be thrown if one attempts to encode a surrogate which is not part of a high-low pair, e.g.,</p>
+<pre><code>// high-low pair ok
+console.log(encodeURI(&#39;\uD800\uDFFF&#39;));
+
+// lone high surrogate throws &quot;URIError: malformed URI sequence&quot;
+console.log(encodeURI(&#39;\uD800&#39;));
+
+// lone low surrogate throws &quot;URIError: malformed URI sequence&quot;
+console.log(encodeURI(&#39;\uDFFF&#39;));</code></pre>
+<h3 id="encoding-for-ipv6">Encoding for IPv6</h3>
+<p>If one wishes to follow the more recent <a href="https://datatracker.ietf.org/doc/html/rfc3986">RFC3986</a> for URLs, which makes square brackets reserved (for <a href="https://developer.mozilla.org/en-US/docs/Glossary/IPv6">IPv6</a>) and thus not encoded when forming something which could be part of a URL (such as a host), the following code snippet may help:</p>
+<pre><code>function fixedEncodeURI(str) {
+    return encodeURI(str).replace(/%5B/g, &#39;[&#39;).replace(/%5D/g, &#39;]&#39;);
+}</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-encodeuri-uri">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-encodeuri-uri</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>encodeURI</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>5.5</p>
+<p>7</p>
+<p>1.1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="decodeuri"><code>decodeURI()</code></a></li>
+<li><a href="encodeuricomponent"><code>encodeURIComponent()</code></a></li>
+<li><a href="decodeuricomponent"><code>decodeURIComponent()</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURI" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURI</a></p>
+</body>
+</html>

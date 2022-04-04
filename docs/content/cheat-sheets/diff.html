@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2022-01-03" />
+  <title>title</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">title</h1>
+<p class="subtitle">subtitle</p>
+<p class="date">2022-01-03</p>
+</header>
+<h1 id="to-view-the-differences-between-two-files">To view the differences between two files:</h1>
+<p>diff -u <file-1> <file-2></p>
+<h1 id="to-view-the-differences-between-two-directories">To view the differences between two directories:</h1>
+<p>diff -ur <dir-1> <dir-2></p>
+<h1 id="to-ignore-whitespace">To ignore whitespace:</h1>
+<p>diff -ub <file-1> <file-2></p>
+<h1 id="to-ignore-blank-lines">To ignore blank lines:</h1>
+<p>diff -uB <file-1> <file-2></p>
+<h1 id="to-ignore-the-differences-between-uppercase-and-lowercase">To ignore the differences between uppercase and lowercase:</h1>
+<p>diff -ui <file-1> <file-2></p>
+<h1 id="to-report-whether-the-files-differ">To report whether the files differ:</h1>
+<p>diff -q <file-1> <file-2></p>
+<h1 id="to-report-whether-the-files-are-identical">To report whether the files are identical:</h1>
+<p>diff -s <file-1> <file-2></p>
+<h1 id="to-diff-the-output-of-two-commands-or-scripts">To diff the output of two commands or scripts:</h1>
+<p>diff &lt;(command1) &lt;(command2)</p>
+<h1 id="to-generate-a-patch-file-from-two-files">To generate a patch file from two files:</h1>
+<p>diff -Naur <file-1> <file-2> &gt; <patch-file></p>
+</body>
+</html>

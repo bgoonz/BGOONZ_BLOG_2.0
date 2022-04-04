@@ -1,19 +1,21 @@
-# All the Things You Can Do With GitHub API and Python
+All the Things You Can Do With GitHub API and Python
+====================================================
 
 > All the Things You Can Do With GitHub API and Python
 
 Most of us use GitHub every day either using CLI or its website. Sometimes however, you need to automate these same tasks like, for example creating Gist, querying repository analytics or just pulling, modifying and pushing new file. All these things and more can be done easily using [GitHub API](https://developer.github.com/v3/), and Python is here to help with that and make it even easier.
 
-## What We Will Need
+What We Will Need
+-----------------
 
-Before we start using GitHub API, we first need to generate personal access token that will allow us to authenticate against the API. We can get one at [https://github.com/settings/tokens](https://github.com/settings/tokens) by clicking on _Generate new token_. You will be asked to select scopes for the token. Which scopes you choose will determine what information and actions you will be able to perform against the API. You should be careful with the ones prefixed with `write:`, `delete:` and `admin:` as these might be quite destructive. You can find description of each scope in [docs here](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
+Before we start using GitHub API, we first need to generate personal access token that will allow us to authenticate against the API. We can get one at <https://github.com/settings/tokens> by clicking on *Generate new token*. You will be asked to select scopes for the token. Which scopes you choose will determine what information and actions you will be able to perform against the API. You should be careful with the ones prefixed with `write:`, `delete:` and `admin:` as these might be quite destructive. You can find description of each scope in [docs here](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
 
-Now that we have the token, let's test whether it actually works:
+Now that we have the token, let’s test whether it actually works:
 
     ~ $ GITHUB_TOKEN="..."
     ~ $ curl -H "Authorization: token $GITHUB_TOKEN" https://api.github.com/gists
 
-And here is the expected (trimmed) response showing list of my public _Gists_:
+And here is the expected (trimmed) response showing list of my public *Gists*:
 
     [
       {
@@ -38,17 +40,18 @@ And here is the expected (trimmed) response showing list of my public _Gists_:
       }
     ]
 
-## Doing It With Python
+Doing It With Python
+--------------------
 
-We have the personal token and we tested it with `cURL`, so now we can switch to doing the same thing in Python. We have two options here though. We can use raw requests or we can use [_PyGitHub_](https://github.com/PyGithub/PyGithub).
+We have the personal token and we tested it with `cURL`, so now we can switch to doing the same thing in Python. We have two options here though. We can use raw requests or we can use [*PyGitHub*](https://github.com/PyGithub/PyGithub).
 
-_PyGitHub_ exposes some of the GitHub API endpoints for most common operations like repository, issue or branch management. It can't be used for every single feature exposed through the GitHub API, so in the following sections, I will show mixture of _PyGitHub_ and _Requests_ calls depending on whether it can be done with _PyGitHub_ or not.
+*PyGitHub* exposes some of the GitHub API endpoints for most common operations like repository, issue or branch management. It can’t be used for every single feature exposed through the GitHub API, so in the following sections, I will show mixture of *PyGitHub* and *Requests* calls depending on whether it can be done with *PyGitHub* or not.
 
-First things first though - let's install both libraries (_PyGitHub_ and _Requests_) and see a simple example for both:
+First things first though - let’s install both libraries (*PyGitHub* and *Requests*) and see a simple example for both:
 
     ~ $ pip install PyGithub requests
 
-Example using _PyGitHub_:
+Example using *PyGitHub*:
 
     from github import Github
     import os
@@ -60,7 +63,7 @@ Example using _PyGitHub_:
     issues = repo.get_issues(state="open")
     pprint(issues.get_page(0))
 
-Example using _Requests_:
+Example using *Requests*:
 
     import requests
     import os
@@ -79,11 +82,11 @@ Example using _Requests_:
 
 Both snippets above use the same API endpoint to retrieve all open issues for specified repository.
 
-In both cases we start by taking GitHub token from environment variable. Next, in the example with using _PyGitHub_ we use the token to create instance of `GitHub` class, which is then used to get repository and query its issues in _open state_. The result is paginated list of issues, of which we print the first page.
+In both cases we start by taking GitHub token from environment variable. Next, in the example with using *PyGitHub* we use the token to create instance of `GitHub` class, which is then used to get repository and query its issues in *open state*. The result is paginated list of issues, of which we print the first page.
 
 In the example that uses raw HTTP request, we achieve the same result by building API URL from username and repository name and sending GET request to it containing `state` as body parameter and token as `Authorization` header. Only difference is that result is not paginated. Here is the result for both examples:
 
-First one being _PyGitHub_ output:
+First one being *PyGitHub* output:
 
     [Issue(title="configure_project script not working", number=10),
      Issue(title="Consider Flask-Rest", number=9),
@@ -114,9 +117,10 @@ Second, raw Python list of dictionaries (JSON):
       ...
     ]
 
-## Create an Issue
+Create an Issue
+---------------
 
-While on topic of issues, let's create one too, shall we?
+While on topic of issues, let’s create one too, shall we?
 
     g = Github(token)
     repo = g.get_repo("MartinHeinz/python-project-blueprint")
@@ -130,11 +134,12 @@ While on topic of issues, let's create one too, shall we?
     )
     pprint(i)
 
-This is one of the use cases, where _PyGitHub_ is very handy. We just need to get the repository, create issues against it and specify bunch of parameters. In the snippet above we use `title`, `body`, `assignee` and `labels` parameters, but you could also add milestone or more labels which are queried using their name.
+This is one of the use cases, where *PyGitHub* is very handy. We just need to get the repository, create issues against it and specify bunch of parameters. In the snippet above we use `title`, `body`, `assignee` and `labels` parameters, but you could also add milestone or more labels which are queried using their name.
 
-## Create a Gist
+Create a Gist
+-------------
 
-Another things we can create is GitHub _Gist_, this time using _Requests_:
+Another things we can create is GitHub *Gist*, this time using *Requests*:
 
     query_url = "https://api.github.com/gists"
     data = {
@@ -149,7 +154,7 @@ Another things we can create is GitHub _Gist_, this time using _Requests_:
     r = requests.post(query_url, headers=headers, data=json.dumps(data))
     pprint(r.json())
 
-The request for creating _Gists_ is pretty simple. In the POST request you need to specify whether the _Gist_ should be `public` or not, next you need to populate list of `files` that will be part of said _Gist_, where each _key_ is a file name and its `content` contains actual string content of the file. The code above uses `json.dumps()` to convert Python dictionary to JSON string to create request body and the usual _Authorization_ header.
+The request for creating *Gists* is pretty simple. In the POST request you need to specify whether the *Gist* should be `public` or not, next you need to populate list of `files` that will be part of said *Gist*, where each *key* is a file name and its `content` contains actual string content of the file. The code above uses `json.dumps()` to convert Python dictionary to JSON string to create request body and the usual *Authorization* header.
 
 Below you can see the relevant parts of the expected response:
 
@@ -170,11 +175,12 @@ Below you can see the relevant parts of the expected response:
      "url": "https://api.github.com/gists/383c6b450f892e169074a642a372e459"
     }
 
-After creating a _Gist_ you might want to do other things with it like update it, list commits, fork it or just fetch it. For all these operations there's a API endpoint listed in these [docs](https://developer.github.com/v3/gists/).
+After creating a *Gist* you might want to do other things with it like update it, list commits, fork it or just fetch it. For all these operations there’s a API endpoint listed in these [docs](https://developer.github.com/v3/gists/).
 
-## Programmatically Update File
+Programmatically Update File
+----------------------------
 
-One very practical, but quite complicated use case for using GitHub API, is programmatically fetching, modifying, committing and finally pushing some file to repository. Let's break this down and see an example:
+One very practical, but quite complicated use case for using GitHub API, is programmatically fetching, modifying, committing and finally pushing some file to repository. Let’s break this down and see an example:
 
     file_path = "requirements.txt"
     g = Github(token)
@@ -199,9 +205,10 @@ One very practical, but quite complicated use case for using GitHub API, is prog
 
     push(file_path, "Add pytest to dependencies.", data, "update-dependencies", update=True)
 
-Starting from the top, we get contents of a file using the usual repository reference, decode it to plain string and modify it. Next, in the `push` function, we create new branch originating from commit specified using `source.commit.sha`. Based on the `if` statement, we have 2 options update existing file or create new one. In case we're doing update, we first retrieve existing file to get its hash and path and then we perform the update using previously modified data (`content`), supplied `message`, `branch` and `author` object. If on the other hand we want to create a new file in the repository, then we just omit passing in the SHA of existing file and we're done.
+Starting from the top, we get contents of a file using the usual repository reference, decode it to plain string and modify it. Next, in the `push` function, we create new branch originating from commit specified using `source.commit.sha`. Based on the `if` statement, we have 2 options update existing file or create new one. In case we’re doing update, we first retrieve existing file to get its hash and path and then we perform the update using previously modified data (`content`), supplied `message`, `branch` and `author` object. If on the other hand we want to create a new file in the repository, then we just omit passing in the SHA of existing file and we’re done.
 
-## Analyzing Traffic
+Analyzing Traffic
+-----------------
 
 If you are more into data science and analytics you might find useful possibility of querying views/clones statistics from your repositories:
 
@@ -218,7 +225,7 @@ If you are more into data science and analytics you might find useful possibilit
     pprint(views)
     print(f"Repository had most views on {best_day[1]} with {best_day[0]} views")
 
-The code needed to retrieve the data from GiHub is really just one line for _clones_ and one line for _views_. Both the `clones` and `views` object contains `count`, `uniques` and `views` attributes. We use the first 2 in the print statements to show actual and unique clones and views respectively.
+The code needed to retrieve the data from GiHub is really just one line for *clones* and one line for *views*. Both the `clones` and `views` object contains `count`, `uniques` and `views` attributes. We use the first 2 in the print statements to show actual and unique clones and views respectively.
 
 The disgusting (beautiful) one liner after that iterates over list of `View` objects that contain view `count` for each day and respective `timestamp` which we extract into list of tuples. We then find tuple with maximum `count` and print its date and actual view count on last line. This gives us output shown below:
 
@@ -243,9 +250,10 @@ The disgusting (beautiful) one liner after that iterates over list of `View` obj
                View(uniques=14, timestamp=2020-05-12 00:00:00, count=96)]}
     Repository had most views on 2020-05-05 00:00:00 with 250 views
 
-## Rendering Markdown
+Rendering Markdown
+------------------
 
-This example uses GitHub API, but can be used for non-GitHub purposes. I'm talking about GitHub APIs ability to generate HTML from markdown text. This could be useful if you have website that can't render markdown directly, but rather you could use GitHub API to create HTML for you.
+This example uses GitHub API, but can be used for non-GitHub purposes. I’m talking about GitHub APIs ability to generate HTML from markdown text. This could be useful if you have website that can’t render markdown directly, but rather you could use GitHub API to create HTML for you.
 
     query_url = "https://api.github.com/markdown"
     data = {
@@ -257,14 +265,15 @@ This example uses GitHub API, but can be used for non-GitHub purposes. I'm talki
     pprint(r)
     pprint(r.text)
 
-Once again the query is quite simple. All we need to do is send the text to be rendered in `text` body parameter together with mode set to `markdown`. The example `text` above includes, `code` snippet, _italics_ and \*bold\* text and that's exactly what we get back in form of HTML:
+Once again the query is quite simple. All we need to do is send the text to be rendered in `text` body parameter together with mode set to `markdown`. The example `text` above includes, `code` snippet, *italics* and \*bold\* text and that’s exactly what we get back in form of HTML:
 
 Response:
 
     <Response [200]>
     '<p><code>code</code>, <em>italics</em>, <strong>bold</strong></p>\n'
 
-## Update Commit Status
+Update Commit Status
+--------------------
 
 You know these nice green check marks, yellow circles and ugly red crosses next to your commits that are added by CI tools? Do you want to change them (maybe just for fun, maybe as part of your own CI solution)? Of course you do. And there is API for that:
 
@@ -279,9 +288,9 @@ You know these nice green check marks, yellow circles and ugly red crosses next 
     )
     print(status)
 
-Surprisingly (for me) this obscure API endpoint is part of _PyGitHub_ library. To use it, we retrieve repo and its commit using commit hash. After that we create status for said commit, by describing its current state using parameters.
+Surprisingly (for me) this obscure API endpoint is part of *PyGitHub* library. To use it, we retrieve repo and its commit using commit hash. After that we create status for said commit, by describing its current state using parameters.
 
-There are 4 states we can specify, namely - `error`, `failure`, `pending`, or `success` - in this example I chose `success`. Next, the `target_url` is the URL to which the _Details_ link points. And as you probably noticed, the `description` and `context` are the other values shown in dialog box shown below.
+There are 4 states we can specify, namely - `error`, `failure`, `pending`, or `success` - in this example I chose `success`. Next, the `target_url` is the URL to which the *Details* link points. And as you probably noticed, the `description` and `context` are the other values shown in dialog box shown below.
 
 ![GitHub Status Check](https://dev-to-uploads.s3.amazonaws.com/i/cichfnimv8dmy0xtfyq0.png)
 
@@ -289,9 +298,10 @@ To be able to verify that status change actually went through, we receive `Commi
 
     CommitStatus(state="success", id=9617694889, context="Just testing...")
 
-## Adding Reactions to Issue Comments
+Adding Reactions to Issue Comments
+----------------------------------
 
-GitHub issue comments allow you to add various [reactions](https://developer.github.com/v3/reactions/#reaction-types) to them. So, maybe you want to add `+1`/`-1` to somebodies comment. Maybe just throw in some celebratory `hooray` emoji. If that's the case, then here's how you could do that in Python:
+GitHub issue comments allow you to add various [reactions](https://developer.github.com/v3/reactions/#reaction-types) to them. So, maybe you want to add `+1`/`-1` to somebodies comment. Maybe just throw in some celebratory `hooray` emoji. If that’s the case, then here’s how you could do that in Python:
 
     owner = "MartinHeinz"
     repo = "python-project-blueprint"
@@ -308,11 +318,11 @@ GitHub issue comments allow you to add various [reactions](https://developer.git
     pprint(r)
     pprint(r.json())
 
-To be able to create response, we will need the comment ID. It can be retrieved from API shown [here in docs](https://developer.github.com/v3/issues/comments/#list-comments-on-an-issue) or by clicking on the _three dots_ icon in upper right corner of issue comment and clicking _Copy Link_:
+To be able to create response, we will need the comment ID. It can be retrieved from API shown [here in docs](https://developer.github.com/v3/issues/comments/#list-comments-on-an-issue) or by clicking on the *three dots* icon in upper right corner of issue comment and clicking *Copy Link*:
 
 ![Comment ID](https://dev-to-uploads.s3.amazonaws.com/i/5yyiatip56qs1md0vx7l.png)
 
-With that we can insert `owner` username, `repo` name and this `comment_id` in the URL and emoji name (e.g. `hooray`) in the `content` body parameter. Additionally we need to also include `Accept` header, as this endpoint is part of developer preview.
+With that we can insert `owner` username, `repo` name and this `comment_id` in the URL and emoji name (e.g. `hooray`) in the `content` body parameter. Additionally we need to also include `Accept` header, as this endpoint is part of developer preview.
 
 The expected response here is either `201` which means that reaction was created or `200` in which case the reaction was already added previously.
 
@@ -326,8 +336,9 @@ And here is (trimmed) JSON response body, that we get back:
      "node_id": "MDg6UmVhY3Rpb243MTI1NjkxMw==",
      "user": {...}}
 
-## Conclusion
+Conclusion
+----------
 
-Playing with public APIs is great way to start a new project (e.g. CI tools, Repository traffic analytics, GitHub Bots) and GitHub API has a lot of data/content for such a thing. What I showed here is just a small sample. To explore full API see [docs here](https://developer.github.com/v3/) or if you don't feel like messing with the REST API, then check out [_PyGitHub_ Examples](https://pygithub.readthedocs.io/en/latest/examples.html).
+Playing with public APIs is great way to start a new project (e.g. CI tools, Repository traffic analytics, GitHub Bots) and GitHub API has a lot of data/content for such a thing. What I showed here is just a small sample. To explore full API see [docs here](https://developer.github.com/v3/) or if you don’t feel like messing with the REST API, then check out [*PyGitHub* Examples](https://pygithub.readthedocs.io/en/latest/examples.html).
 
 [Source](https://martinheinz.dev/blog/25)

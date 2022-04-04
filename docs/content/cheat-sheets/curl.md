@@ -1,71 +1,73 @@
----
-title: title
-subtitle: subtitle
-date: '2022-01-03'
-thumb_img_alt: lorem-ipsum
-content_img_alt: lorem-ipsum
-excerpt: lorem-ipsum
-seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
-template: post
-thumb_img_path: images/css-72a655a7.jpg
----
+subtitle
 
-# To download a file:
+2022-01-03
 
-curl <url>
+To download a file:
+===================
 
-# To download and rename a file:
+curl
 
-curl <url> -o <outfile>
+To download and rename a file:
+==============================
 
-# To download multiple files:
+curl -o
 
-curl -O <url> -O <url>
+To download multiple files:
+===========================
 
-# To download all sequentially numbered files (1-24):
+curl -O -O
 
-curl http://example.com/pic[1-24].jpg
+To download all sequentially numbered files (1-24):
+===================================================
 
-# To download a file and pass HTTP authentication:
+curl http://example.com/pic\[1-24\].jpg
 
-curl -u <username>:<password> <url>
+To download a file and pass HTTP authentication:
+================================================
 
-# To download a file with a proxy:
+curl -u :
 
-curl -x <proxy-host>:<port> <url>
+To download a file with a proxy:
+================================
 
-# To download a file over FTP:
+curl -x :
 
-curl -u <username>:<password> -O ftp://example.com/pub/file.zip
+To download a file over FTP:
+============================
 
-# To get an FTP directory listing:
+curl -u : -O ftp://example.com/pub/file.zip
+
+To get an FTP directory listing:
+================================
 
 curl ftp://username:password@example.com
 
-# To resume a previously failed download:
+To resume a previously failed download:
+=======================================
 
-curl -C - -o <partial-file> <url>
+curl -C - -o
 
-# To fetch only the HTTP headers from a response:
+To fetch only the HTTP headers from a response:
+===============================================
 
-curl -I <url>
+curl -I
 
-# To fetch your external IP and network info as JSON:
+To fetch your external IP and network info as JSON:
+===================================================
 
 curl http://ifconfig.me/all.json
 
-# To limit the rate of a download:
+To limit the rate of a download:
+================================
 
-curl --limit-rate 1000B -O <outfile>
+curl –limit-rate 1000B -O
 
-# To get your global IP:
+To get your global IP:
+======================
 
 curl httpbin.org/ip
 
-# To get only the HTTP status code:
+To get only the HTTP status code:
+=================================
 
-curl -o /dev/null -w '%{http_code}\n' -s -I URL
+curl -o /dev/null -w ‘%{http\_code}’ -s -I URL

@@ -1,8 +1,10 @@
-# Reflect.isExtensible()
+Reflect.isExtensible()
+======================
 
 The static `Reflect.isExtensible()` method determines if an object is extensible (whether it can have new properties added to it). It is similar to [`Object.isExtensible()`](../object/isextensible), but with some [differences](#difference_to_object.isextensible).
 
-## Syntax
+Syntax
+------
 
     Reflect.isExtensible(target)
 
@@ -19,11 +21,13 @@ A [`Boolean`](../boolean) indicating whether or not the target is extensible.
 
 A [`TypeError`](../typeerror), if `target` is not an [`Object`](../object).
 
-## Description
+Description
+-----------
 
 The `Reflect.isExtensible` method allows you determine if an object is extensible (whether it can have new properties added to it). It is the same method as [`Object.isExtensible()`](../object/isextensible).
 
-## Examples
+Examples
+--------
 
 ### Using Reflect.isExtensible()
 
@@ -55,12 +59,11 @@ If the `target` argument to this method is not an object (a primitive), then it 
     Object.isExtensible(1)
     // false
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-reflect.isextensible">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-reflect.isextensible</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-reflect.isextensible</span></td></tr></tbody></table>
 
 `isExtensible`
 
@@ -88,11 +91,11 @@ No
 
 5.0
 
-## See also
+See also
+--------
 
 -   [`Reflect`](../reflect)
 -   [`Object.isExtensible()`](../object/isextensible)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect/isExtensible" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect/isExtensible</a>

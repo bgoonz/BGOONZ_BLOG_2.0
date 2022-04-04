@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2022-01-03" />
+  <title>title</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">title</h1>
+<p class="subtitle">subtitle</p>
+<p class="date">2022-01-03</p>
+</header>
+<h1 id="read-in.pdf-select-pages-1-2-3-and-6-and-write-those-pages-to">Read in.pdf, select pages 1, 2, 3 and 6, and write those pages to</h1>
+<h1 id="out.pdf">out.pdf</h1>
+<p>cpdf in.pdf 1-3,6 -o out.pdf</p>
+<h1 id="select-the-even-pages-2-4-6-from-in.pdf-and-write-those-pages">Select the even pages (2, 4, 6…) from in.pdf and write those pages</h1>
+<h1 id="to-out.pdf">to out.pdf</h1>
+<p>cpdf in.pdf even -o out.pdf</p>
+<h1 id="using-and-to-perform-several-operations-in-order-here-merging-two">Using AND to perform several operations in order, here merging two</h1>
+<h1 id="files-together-and-adding-a-copyright-stamp-to-every-page.">files together and adding a copyright stamp to every page.</h1>
+<p>cpdf -merge in.pdf in2.pdf AND -add-text “Copyright 2014” -o out.pdf</p>
+<h1 id="read-control.txt-and-use-its-contents-as-the-command-line-arguments">Read control.txt and use its contents as the command line arguments</h1>
+<h1 id="for-cpdf.">for cpdf.</h1>
+<p>cpdf -control control.txt</p>
+<h1 id="merge-in.pdf-and-in2.pdf-into-one-document-writing-to-out.pdf.">Merge in.pdf and in2.pdf into one document, writing to out.pdf.</h1>
+<p>cpdf -merge in.pdf in2.pdf -o out.pdf</p>
+<h1 id="split-in.pdf-into-ten-page-chunks-writing-them-to-chunk001.pdf">Split in.pdf into ten-page chunks, writing them to Chunk001.pdf,</h1>
+<h1 id="chunk002.pdf-etc">Chunk002.pdf etc</h1>
+<p>cpdf -split in.pdf -o Chunk%%%.pdf -chunk 10</p>
+<h1 id="split-in.pdf-on-bookmark-boundaries-writing-each-to-a-file-whose">Split in.pdf on bookmark boundaries, writing each to a file whose</h1>
+<h1 id="name-is-the-bookmark-label">name is the bookmark label</h1>
+<p>cpdf -split-bookmarks 0 in.pdf -o <span class="citation" data-cites="N.pdf">@N.pdf</span></p>
+<h1 id="scale-both-the-dimensions-and-contents-of-in.pdf-by-a-factor-of-two">Scale both the dimensions and contents of in.pdf by a factor of two</h1>
+<h1 id="in-x-and-y-directions.">in x and y directions.</h1>
+<p>cpdf -scale-page “2 2” in.pdf -o out.pdf</p>
+<h1 id="scale-the-pages-in-in.pdf-to-fit-the-us-letter-page-size-writing-to">Scale the pages in in.pdf to fit the US Letter page size, writing to</h1>
+<h1 id="out.pdf-1">out.pdf</h1>
+<p>cpdf -scale-to-fit usletterportrait in.pdf -o out.pdf</p>
+<h1 id="shift-the-contents-of-the-page-by-26-pts-in-the-x-direction-and-18">Shift the contents of the page by 26 pts in the x direction, and 18</h1>
+<h1 id="millimetres-in-the-y-direction-writing-to-out.pdf">millimetres in the y direction, writing to out.pdf</h1>
+<p>cpdf -shift “26pt 18mm” in.pdf -o out.pdf</p>
+<h1 id="rotate-the-contents-of-the-pages-in-in.pdf-by-ninety-degrees-and">Rotate the contents of the pages in in.pdf by ninety degrees and</h1>
+<h1 id="write-to-out.pdf.">write to out.pdf.</h1>
+<p>cpdf -rotate-contents 90 in.pdf -o out.pdf</p>
+<h1 id="crop-the-pages-in-in.pdf-to-a-600-pts-by-400-pts-rectangle.">Crop the pages in in.pdf to a 600 pts by 400 pts rectangle.</h1>
+<p>cpdf -crop “0 0 600pt 400pt” in.pdf -o out.pdf</p>
+<h1 id="encrypt-using-128bit-pdf-encryption-using-the-owner-password-fred">Encrypt using 128bit PDF encryption using the owner password ‘fred’</h1>
+<h1 id="and-the-user-password-joe">and the user password ‘joe’</h1>
+<p>cpdf -encrypt 128bit fred joe in.pdf -o out.pdf</p>
+<h1 id="decrypt-using-the-owner-password-writing-to-out.pdf.">Decrypt using the owner password, writing to out.pdf.</h1>
+<p>cpdf -decrypt in.pdf owner=fred -o out.pdf</p>
+<h1 id="compress-the-data-streams-in-in.pdf-writing-the-result-to-out.pdf.">Compress the data streams in in.pdf, writing the result to out.pdf.</h1>
+<p>cpdf -compress in.pdf -o out.pdf</p>
+<h1 id="decompress-the-data-streams-in-in.pdf-writing-to-out.pdf.">Decompress the data streams in in.pdf, writing to out.pdf.</h1>
+<p>cpdf -decompress in.pdf -o out.pdf</p>
+<h1 id="list-the-bookmarks-in-in.pdf.-this-would-produce">List the bookmarks in in.pdf. This would produce:</h1>
+<p>cpdf -list-bookmarks in.pdf</p>
+<h1 id="outputs">Outputs:</h1>
+<h1 id="add-bookmarks-in-the-same-form-from-a-prepared-file-bookmarks.txt-to">Add bookmarks in the same form from a prepared file bookmarks.txt to</h1>
+<h1 id="in.pdf-writing-to-out.pdf.">in.pdf, writing to out.pdf.</h1>
+<p>cpdf -add-bookmarks bookmarks.txt in.pdf -o out.pdf</p>
+<h1 id="use-the-split-style-to-build-a-presentation-from-the-pdf-in.pdf">Use the Split style to build a presentation from the PDF in.pdf,</h1>
+<h1 id="each-slide-staying-10-seconds-on-screen-unless-manually-advanced.">each slide staying 10 seconds on screen unless manually advanced.</h1>
+<h1 id="the-first-page-being-a-title-does-not-move-on-automatically-and">The first page, being a title does not move on automatically, and</h1>
+<h1 id="has-no-transition-effect.">has no transition effect.</h1>
+<p>cpdf -presentation in.pdf 2-end -trans Split -duration 10 -o out.pdf</p>
+<h1 id="stamp-the-file-watermark.pdf-on-to-each-page-of-in.pdf-writing-the">Stamp the file watermark.pdf on to each page of in.pdf, writing the</h1>
+<h1 id="result-to-out.pdf.">result to out.pdf.</h1>
+<p>cpdf -stamp-on watermark.pdf in.pdf -o out.pdf</p>
+<h1 id="add-a-page-number-and-date-to-all-the-pages-in-in.pdf-using-the">Add a page number and date to all the pages in in.pdf using the</h1>
+<h1 id="courier-font-writing-to-out.pdf">Courier font, writing to out.pdf</h1>
+<p>cpdf -topleft 10 -font Courier -add-text “Page %Page%d-%m-%Y” in.pdf -o out.pdf</p>
+<h1 id="two-up-impose-the-file-in.pdf-writing-to-out.pdf">Two up impose the file in.pdf, writing to out.pdf</h1>
+<p>cpdf -twoup-stack in.pdf -o out.pdf</p>
+<h1 id="add-extra-blank-pages-after-pages-one-three-and-four-of-a-document.">Add extra blank pages after pages one, three and four of a document.</h1>
+<p>cpdf -pad-after 1,3,4 in.pdf -o out.pdf</p>
+<h1 id="list-the-annotations-in-a-file-in.pdf-to-standard-output.">List the annotations in a file in.pdf to standard output.</h1>
+<p>cpdf -list-annotations in.pdf</p>
+<h1 id="might-produce">Might Produce:</h1>
+<h1 id="annotation-text-content-1-annotation-text-content-2">– # Annotation text content 1 # – # – # Annotation text content 2</h1>
+<h1 id="section">–</h1>
+<h1 id="copy-the-annotations-from-from.pdf-to-in.pdf-writing-to-out.pdf.">Copy the annotations from from.pdf to in.pdf, writing to out.pdf.</h1>
+<p>cpdf -copy-annotations from.pdf in.pdf -o out.pdf</p>
+<h1 id="set-the-document-title-of-in.pdf.-writing-to-out.pdf.">Set the document title of in.pdf. writing to out.pdf.</h1>
+<p>cpdf -set-title “The New Title” in.pdf -o out.pdf</p>
+<h1 id="set-the-document-in.pdf-to-open-with-the-acrobat-viewers-toolbar">Set the document in.pdf to open with the Acrobat Viewer’s toolbar</h1>
+<h1 id="hidden-writing-to-out.pdf.">hidden, writing to out.pdf.</h1>
+<p>cpdf -hide-toolbar true in.pdf -o out.pdf</p>
+<h1 id="set-the-metadata-in-a-pdf-in.pdf-to-the-contents-of-the-file">Set the metadata in a PDF in.pdf to the contents of the file</h1>
+<h1 id="metadata.xml-and-write-the-output-to-out.pdf.">metadata.xml, and write the output to out.pdf.</h1>
+<p>cpdf -set-metadata metadata.xml in.pdf -o out.pdf</p>
+<h1 id="set-the-document-in.pdf-to-open-in-acrobat-viewer-showing-two">Set the document in.pdf to open in Acrobat Viewer showing two</h1>
+<h1 id="columns-of-pages-starting-on-the-right-putting-the-result-in">columns of pages, starting on the right, putting the result in</h1>
+<h1 id="out.pdf.">out.pdf.</h1>
+<p>cpdf -set-page-layout TwoColumnRight in.pdf -o out.pdf</p>
+<h1 id="set-the-document-in.pdf-to-open-in-acrobat-viewer-in-full-screen">Set the document in.pdf to open in Acrobat Viewer in full screen</h1>
+<h1 id="mode-putting-the-result-in-out.pdf.">mode, putting the result in out.pdf.</h1>
+<p>cpdf -set-page-mode FullScreen in.pdf -o out.pdf</p>
+<h1 id="attach-the-file-sheet.xls-to-in.pdf-writing-to-out.pdf.">Attach the file sheet.xls to in.pdf, writing to out.pdf.</h1>
+<p>cpdf -attach-file sheet.xls in.pdf -o out.pdf</p>
+<h1 id="remove-any-attachments-from-in.pdf-writing-to-out.pdf.">Remove any attachments from in.pdf, writing to out.pdf.</h1>
+<p>cpdf -remove-files in.pdf -o out.pdf</p>
+<h1 id="blacken-all-the-text-in-in.pdf-writing-to-out.pdf.">Blacken all the text in in.pdf, writing to out.pdf.</h1>
+<p>cpdf -blacktext in.pdf -o out.pdf</p>
+<h1 id="make-sure-all-lines-in-in.pdf-are-at-least-2-pts-wide-writing-to">Make sure all lines in in.pdf are at least 2 pts wide, writing to</h1>
+<h1 id="out.pdf.-1">out.pdf.</h1>
+<p>cpdf -thinlines 2pt in.pdf -o out.pdf</p>
+</body>
+</html>

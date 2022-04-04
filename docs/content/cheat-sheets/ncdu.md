@@ -1,15 +1,19 @@
-# To save results to <file>:
+To save results to :
+====================
 
-ncdu -o <file>
+ncdu -o
 
-# To read from <file>:
+To read from :
+==============
 
-ncdu -f <file>
+ncdu -f
 
-# To save results to a compressed file:
+To save results to a compressed file:
+=====================================
 
-ncdu -o- | gzip > <file>
+ncdu -o- | gzip &gt;
 
-# To read from a compressed file:
+To read from a compressed file:
+===============================
 
-zcat <file> | ncdu -f-
+zcat | ncdu -f-

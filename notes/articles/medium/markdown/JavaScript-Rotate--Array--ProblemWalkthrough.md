@@ -1,8 +1,9 @@
-# JavaScript Rotate (Array) ProblemWalkthrough
+JavaScript Rotate (Array) ProblemWalkthrough
+============================================
 
 Explanation for Rotate Right
 
----
+------------------------------------------------------------------------
 
 #### <a href="http://medium.com/codex" class="markup--anchor markup--h4-anchor">CODEX</a>
 
@@ -10,9 +11,7 @@ Explanation for Rotate Right
 
 ### Explanation for Rotate Right
 
-<figure><img src="https://cdn-images-1.medium.com/max/1200/0*3_vbGvHeWOgSTxk7.png" class="graf-image" /></figure>
-
-### Question
+<figure><img src="https://cdn-images-1.medium.com/max/1200/0*3_vbGvHeWOgSTxk7.png" class="graf-image" /></figure>### Question
 
 <span class="graf-dropCap">W</span>rite a function `rotateRight(array, num)` that takes in an array and a number as arguments.
 
@@ -23,7 +22,7 @@ Explanation for Rotate Right
 
 **HINT:** you can use <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice" class="markup--anchor markup--p-anchor">Array#slice</a> to create a copy of an array
 
----
+------------------------------------------------------------------------
 
 > JavaScript gives us four methods to add or remove items from the beginning or end of arrays:
 
@@ -65,16 +64,15 @@ Explanation for Rotate Right
 
 **We are being asked for two things:**
 
-1.  <span id="0000">To return an array with all the elements shifted over 'num' times.</span>
+1.  <span id="0000">To return an array with all the elements shifted over ‘num’ times.</span>
 2.  <span id="8d90">To `NOT` mutate the original array</span>
 
 **Step 1.**  
 We need to start the function and create a variable to hold a COPY of our input array.
 
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice"><strong>Array.prototype.slice()</strong>
-<br/>
+**Array.prototype.slice()**  
 
-<em>The slice() method returns a shallow copy of a portion of an array into a new array object selected from start to end…</em>developer.mozilla.org</a><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*The slice() method returns a shallow copy of a portion of an array into a new array object selected from start to end…*developer.mozilla.org<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 -   <span id="313d">We assign array.slice(0) to a variable called result.</span>
 -   <span id="6bdb">Slicing our input array simply creates a sliced copy of the data.</span>
@@ -93,9 +91,9 @@ We need to put some executable code within our for loop to be run during every c
 -   <span id="ab3a">`['a', 'b', 'c', 'd', 'e'];` (how it looks like at the start)</span>
 -   <span id="5fab">`['e', 'a', 'b', 'c', 'd'];` (after one run of the for loop)</span>
 -   <span id="e31e">`['d', 'e', 'a', 'b', 'c'];` (after second/last run of the for loop)</span>
--   <span id="aa2f">To accomplish this we first need to '`pop`' off or remove our last element.</span>
+-   <span id="aa2f">To accomplish this we first need to ‘`pop`’ off or remove our last element.</span>
 -   <span id="d19e">Two things happen when we use this built-in function.</span>
--   <span id="687c">Our copied array is mutated to lose it's last ele.</span>
+-   <span id="687c">Our copied array is mutated to lose it’s last ele.</span>
 -   <span id="392e">The removed element is stored in the variable we assigned to the function.</span>
 -   <span id="7c06">Our second step is to add it to the start of our array, to do this we can use `unshift`.</span>
 -   <span id="4a0f">By inputting the variable we are using to hold our removed element into the parameter of unshift we are adding our element to the front of the array.</span>
@@ -110,24 +108,21 @@ Now that our for loop has ended and our copied array looks just like how the ans
 
 ### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong>
-<br/>
+**bgoonz’s gists**  
 
-<em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…*gist.github.com<a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong>
-<br/>
+**bgoonz — Overview**  
 
-<em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…*github.com<a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ### Or Checkout my personal Resource Site:
 
 ### **==&gt;currently under development & very buggy**
 
-<a href="https://web-dev-resource-hub.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://web-dev-resource-hub.netlify.app/"><strong>a/A-Student-Resources</strong>
-<br/>
+**a/A-Student-Resources**  
 
-<em>Edit description</em>web-dev-resource-hub.netlify.app</a><a href="https://web-dev-resource-hub.netlify.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
+*Edit description*web-dev-resource-hub.netlify.app<a href="https://web-dev-resource-hub.netlify.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [March 14, 2021](https://medium.com/p/31deb19ebba1).
 

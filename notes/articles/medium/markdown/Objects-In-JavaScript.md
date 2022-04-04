@@ -1,8 +1,9 @@
-# Objects In JavaScript
+Objects In JavaScript
+=====================
 
 The object is a data structure that stores other data, similar to how an array stores elements.
 
----
+------------------------------------------------------------------------
 
 ### Objects In JavaScript
 
@@ -12,7 +13,7 @@ The object is a data structure that stores other data, similar to how an array s
 
 ### **The Object**
 
-In other programming languages, objects are referred to as, "dictionaries", "maps", or "associative arrays".
+In other programming languages, objects are referred to as, “dictionaries”, “maps”, or “associative arrays”.
 
 -   <span id="53af">Objects are indexed with `keys` instead of numbers.</span>
 -   <span id="2cc0">Order is not guaranteed within an Object.</span>
@@ -79,15 +80,15 @@ In other programming languages, objects are referred to as, "dictionaries", "map
             bark: "Bowowowowo"
         }
 
--   <span id="ec54">We can also use **dot notation** **"."** to access key/value pairs in an object.</span>
+-   <span id="ec54">We can also use **dot notation** **“.”** to access key/value pairs in an object.</span>
 -   <span id="cd22">One thing to note is that when using dot notation, we do not have to use string quotes as the key.</span>
 
 #### **Bracket Notation vs Dot Notation**
 
 **DotBracket**Easier To ReadYou can use variables as keys! Easier To Write b/c do not need Quotations. Okay to use variables and Strings that start with numbers.Cannot access with VariablesKeys cannot contain numbers as their first character
 
--   <span id="8f18">**When accessing object keys**: Bracket notation needs to refer to that key in quotations, dot notation doesn't.</span>
--   <span id="83be">**When accessing object keys via a variable**: Bracket notation can refer to that key w/o use of quotations, dot notation can't do this at all.</span>
+-   <span id="8f18">**When accessing object keys**: Bracket notation needs to refer to that key in quotations, dot notation doesn’t.</span>
+-   <span id="83be">**When accessing object keys via a variable**: Bracket notation can refer to that key w/o use of quotations, dot notation can’t do this at all.</span>
 
 <!-- -->
 
@@ -157,7 +158,7 @@ A `Method` is a function that belongs to an object. Every method is a function, 
 -   <span id="dd4b">`Object.keys()` : A method that allows us to iterate through keys, it accepts an obj as the argument and returns an array of the keys.</span>
 -   <span id="0d49">`Object.values()` : Method that accepts an object as the argument and returns an array of the values.</span>
 
-#### **Iterating through an Object's keys & values**
+#### **Iterating through an Object’s keys & values**
 
 -   <span id="b2aa">`Object.entries` : Method that accepts an object as the argument and returns an array of the \[key, value\] pairs within.</span>
 
@@ -194,13 +195,13 @@ So far we have learned about 6 different data types:
 
 #### **Utilizing Rest Parameters**
 
--   <span id="6379">`Rest Parameter Syntax` : Allows us to capture all of a function's incoming arguments into an array.</span>
+-   <span id="6379">`Rest Parameter Syntax` : Allows us to capture all of a function’s incoming arguments into an array.</span>
 -   <span id="0807">Only the last parameter can be a rest parameter.</span>
 
 #### **Utilizing Spread Syntax**
 
 -   <span id="71ff">**Spread Operator**: This allows us to break down a data type into the elements that make it up.</span>
--   <span id="6ef0">Takes a data type (i.e. array, obj) and spreads the values of that type where elements are expected.</span>
+-   <span id="6ef0">Takes a data type (i.e. array, obj) and spreads the values of that type where elements are expected.</span>
 -   <span id="15e5">Takes iterable data and spreads the elements of that type where arguments are expected.</span>
 
 <!-- -->
@@ -217,14 +218,13 @@ So far we have learned about 6 different data types:
 
 **With Objects**
 
----
+------------------------------------------------------------------------
 
 ### Learn More On My Blog:
 
-<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong>
-<br/>
+**Web-Dev-Hub**  
 
-<em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…*bgoonz-blog.netlify.app<a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [May 27, 2021](https://medium.com/p/b212486dade6).
 

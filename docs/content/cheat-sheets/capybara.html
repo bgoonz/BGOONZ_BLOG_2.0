@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2022-01-03" />
+  <title>title</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">title</h1>
+<p class="subtitle">subtitle</p>
+<p class="date">2022-01-03</p>
+</header>
+<hr />
+<p>title: Capybara category: Ruby libraries</p>
+<p>weight: -5 tags: [Featurable]</p>
+<hr />
+<h3 id="navigating">Navigating</h3>
+<pre><code>visit articles_path</code></pre>
+<h3 id="clicking-links-and-buttons">Clicking links and buttons</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb2-1" title="1">click_on <span class="st">&#39;Link Text&#39;</span></a>
+<a class="sourceLine" id="cb2-2" title="2">click_button</a>
+<a class="sourceLine" id="cb2-3" title="3">click_link</a></code></pre></div>
+<h3 id="interacting-with-forms">Interacting with forms</h3>
+<div class="sourceCode" id="cb3"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb3-1" title="1">attach_file <span class="st">&#39;Image&#39;</span>, <span class="st">&#39;/path/to/image.jpg&#39;</span></a>
+<a class="sourceLine" id="cb3-2" title="2">fill_in <span class="st">&#39;First Name&#39;</span>, <span class="st">with: &#39;John&#39;</span></a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb4-1" title="1">check <span class="st">&#39;A checkbox&#39;</span></a>
+<a class="sourceLine" id="cb4-2" title="2">uncheck <span class="st">&#39;A checkbox&#39;</span></a></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb5-1" title="1">choose <span class="st">&#39;A radio button&#39;</span></a></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb6-1" title="1">select <span class="st">&#39;Option&#39;</span>, <span class="st">from: &#39;Select box&#39;</span></a>
+<a class="sourceLine" id="cb6-2" title="2">unselect</a></code></pre></div>
+<h3 id="limiting">Limiting</h3>
+<div class="sourceCode" id="cb7"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb7-1" title="1">within <span class="st">&#39;.classname&#39;</span> <span class="kw">do</span></a>
+<a class="sourceLine" id="cb7-2" title="2">  click <span class="st">&#39;...&#39;</span></a>
+<a class="sourceLine" id="cb7-3" title="3"><span class="kw">end</span></a></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb8-1" title="1">within_fieldset <span class="st">:id</span> <span class="kw">do</span></a>
+<a class="sourceLine" id="cb8-2" title="2">  ...</a>
+<a class="sourceLine" id="cb8-3" title="3"><span class="kw">end</span></a></code></pre></div>
+<h2 id="querying">Querying</h2>
+<h3 id="predicates">Predicates</h3>
+<div class="sourceCode" id="cb9"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb9-1" title="1">page.has_css?(<span class="st">&#39;.button&#39;</span>)</a>
+<a class="sourceLine" id="cb9-2" title="2">expect(page).to have_css(<span class="st">&#39;.button&#39;</span>)</a>
+<a class="sourceLine" id="cb9-3" title="3">page.should have_css(<span class="st">&#39;.button&#39;</span>)</a></code></pre></div>
+<p>{: .-setup}</p>
+<table>
+<thead>
+<tr class="header">
+<th>Positive</th>
+<th>Negative</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>has_content?</code></td>
+<td><code>has_no_content?</code></td>
+</tr>
+<tr class="even">
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td><code>has_css?</code> <em>(selector)</em></td>
+<td><code>has_no_css?</code></td>
+</tr>
+<tr class="even">
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td><code>has_xpath?</code> <em>(path)</em></td>
+<td><code>has_no_xpath?</code></td>
+</tr>
+<tr class="even">
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td><code>has_link?</code> <em>(selector)</em></td>
+<td><code>has_no_link?</code></td>
+</tr>
+<tr class="even">
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td><code>has_button?</code> <em>(selector)</em></td>
+<td><code>has_no_button?</code></td>
+</tr>
+<tr class="even">
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td><code>has_field?</code> <em>(selector)</em></td>
+<td><code>has_no_field?</code></td>
+</tr>
+<tr class="even">
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td><code>has_checked_field?</code> <em>(selector)</em></td>
+<td><code>has_unchecked_field?</code></td>
+</tr>
+<tr class="even">
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td><code>has_table?</code> <em>(selector)</em></td>
+<td><code>has_no_table?</code></td>
+</tr>
+<tr class="even">
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td><code>has_select?</code> <em>(selector)</em></td>
+<td><code>has_no_select?</code></td>
+</tr>
+</tbody>
+</table>
+<p>{: .-headers.-left-align}</p>
+<p>In Rspec, these also map to matchers like <code>page.should have_content</code>.</p>
+<h3 id="selectors">Selectors</h3>
+<div class="sourceCode" id="cb10"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb10-1" title="1">expect(page).to have_button(<span class="st">&#39;Save&#39;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb11-1" title="1">expect(page).to have_button(<span class="st">&#39;#submit&#39;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb12-1" title="1">expect(page).to have_button(<span class="st">&#39;//[@id=&quot;submit&quot;]&#39;</span>)</a></code></pre></div>
+<p>The <code>selector</code> arguments can be text, CSS selector, or XPath expression.</p>
+<h3 id="rspec-assertions">RSpec assertions</h3>
+<div class="sourceCode" id="cb13"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb13-1" title="1">page.has_button?(<span class="st">&#39;Save&#39;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb14-1" title="1">expect(page).to have_no_button(<span class="st">&#39;Save&#39;</span>)</a></code></pre></div>
+<p>In RSpec, you can use <code>page.should</code> assertions.</p>
+<h3 id="about-negatives">About negatives</h3>
+<div class="sourceCode" id="cb15"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb15-1" title="1">expect(page).to have_no_button(<span class="st">&#39;Save&#39;</span>)   <span class="co"># OK</span></a></code></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb16-1" title="1">expect(page).not_to have_button(<span class="st">&#39;Save&#39;</span>)  <span class="co"># Bad</span></a></code></pre></div>
+<p>Use <code>should have_no_*</code> versions with RSpec matchers because <code>should_not have_*</code> doesn’t wait for a timeout from the driver.</p>
+<h2 id="rspec">RSpec</h2>
+<h3 id="matchers">Matchers</h3>
+<div class="sourceCode" id="cb17"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb17-1" title="1">expect(page).to \</a></code></pre></div>
+<p>{: .-setup}</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb18-1" title="1">  have_selector <span class="st">&#39;.blank-state&#39;</span></a>
+<a class="sourceLine" id="cb18-2" title="2">  have_selector <span class="st">&#39;h1#hola&#39;</span>, <span class="st">text: &#39;Welcome&#39;</span></a>
+<a class="sourceLine" id="cb18-3" title="3">  have_button <span class="st">&#39;Save&#39;</span></a>
+<a class="sourceLine" id="cb18-4" title="4">  have_checked_field <span class="st">&#39;#field&#39;</span></a>
+<a class="sourceLine" id="cb18-5" title="5">  have_unchecked_field</a>
+<a class="sourceLine" id="cb18-6" title="6">  have_css <span class="st">&#39;.class&#39;</span></a>
+<a class="sourceLine" id="cb18-7" title="7">  have_field <span class="st">&#39;#field&#39;</span></a>
+<a class="sourceLine" id="cb18-8" title="8">  have_table <span class="st">&#39;#table&#39;</span></a>
+<a class="sourceLine" id="cb18-9" title="9">  have_xpath <span class="st">&#39;//div&#39;</span></a></code></pre></div>
+<div class="sourceCode" id="cb19"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb19-1" title="1">  have_link <span class="st">&#39;Logout&#39;</span>, <span class="st">href: </span>logout_path</a></code></pre></div>
+<div class="sourceCode" id="cb20"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb20-1" title="1">  have_select <span class="st">&#39;Language&#39;</span>,</a>
+<a class="sourceLine" id="cb20-2" title="2">    <span class="st">selected: &#39;German&#39;</span></a>
+<a class="sourceLine" id="cb20-3" title="3">    <span class="st">options: </span>[<span class="st">&#39;Engish&#39;</span>, <span class="st">&#39;German&#39;</span>]</a>
+<a class="sourceLine" id="cb20-4" title="4">    <span class="st">with_options: </span>[<span class="st">&#39;Engish&#39;</span>, <span class="st">&#39;German&#39;</span>] <span class="co"># partial match</span></a></code></pre></div>
+<div class="sourceCode" id="cb21"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb21-1" title="1">  have_text <span class="st">&#39;Hello&#39;</span>,</a>
+<a class="sourceLine" id="cb21-2" title="2">    <span class="st">type: :visible</span> <span class="co"># or :all</span></a>
+<a class="sourceLine" id="cb21-3" title="3">    <span class="co"># alias: have_content</span></a></code></pre></div>
+<h3 id="common-options">Common options</h3>
+<p>All matchers have these options: {: .-setup}</p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb22-1" title="1">  <span class="st">text: &#39;welcome&#39;</span></a>
+<a class="sourceLine" id="cb22-2" title="2">  <span class="st">text: </span><span class="ot">/Hello/</span></a>
+<a class="sourceLine" id="cb22-3" title="3">  <span class="st">visible: </span><span class="dv">true</span></a>
+<a class="sourceLine" id="cb22-4" title="4">  <span class="st">count: </span><span class="dv">4</span></a>
+<a class="sourceLine" id="cb22-5" title="5">  <span class="st">between: </span><span class="dv">2</span>..<span class="dv">5</span></a>
+<a class="sourceLine" id="cb22-6" title="6">  <span class="st">minimum: </span><span class="dv">2</span></a>
+<a class="sourceLine" id="cb22-7" title="7">  <span class="st">maximum: </span><span class="dv">5</span></a>
+<a class="sourceLine" id="cb22-8" title="8">  <span class="st">wait: </span><span class="dv">10</span></a></code></pre></div>
+<h2 id="other-features">Other features</h2>
+<h3 id="finding">Finding</h3>
+<div class="sourceCode" id="cb23"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb23-1" title="1">find(selector)</a>
+<a class="sourceLine" id="cb23-2" title="2">find_button(selector)</a>
+<a class="sourceLine" id="cb23-3" title="3">find_by_id(id)</a>
+<a class="sourceLine" id="cb23-4" title="4">find_field(selector)</a>
+<a class="sourceLine" id="cb23-5" title="5">find_link(selector)</a>
+<a class="sourceLine" id="cb23-6" title="6">locate</a></code></pre></div>
+<h3 id="scoping">Scoping</h3>
+<div class="sourceCode" id="cb24"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb24-1" title="1">within <span class="st">&#39;#delivery&#39;</span> <span class="kw">do</span></a>
+<a class="sourceLine" id="cb24-2" title="2">  fill_in <span class="st">&#39;Street&#39;</span>, <span class="st">with: &#39;Hello&#39;</span></a>
+<a class="sourceLine" id="cb24-3" title="3"><span class="kw">end</span></a></code></pre></div>
+<div class="sourceCode" id="cb25"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb25-1" title="1">within <span class="st">:xpath</span>, <span class="st">&#39;//article&#39;</span></a>
+<a class="sourceLine" id="cb25-2" title="2">within_fieldset</a>
+<a class="sourceLine" id="cb25-3" title="3">within_table</a>
+<a class="sourceLine" id="cb25-4" title="4">within_frame</a>
+<a class="sourceLine" id="cb25-5" title="5">scope_to</a></code></pre></div>
+<div class="sourceCode" id="cb26"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb26-1" title="1">find(<span class="st">&#39;#x&#39;</span>).fill_in(<span class="st">&#39;Street&#39;</span>, <span class="st">with: &#39;Hello&#39;</span>)</a>
+<a class="sourceLine" id="cb26-2" title="2"><span class="co"># same as within</span></a></code></pre></div>
+<h3 id="scripting">Scripting</h3>
+<div class="sourceCode" id="cb27"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb27-1" title="1">execute_script(<span class="st">&#39;$(&quot;input&quot;).trigger(&quot;change&quot;)&#39;</span>)</a>
+<a class="sourceLine" id="cb27-2" title="2">evaluate_script(<span class="st">&#39;window.ga&#39;</span>)</a></code></pre></div>
+<p>Executes JavaScript.</p>
+<h3 id="debugging">Debugging</h3>
+<div class="sourceCode" id="cb28"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb28-1" title="1">save_and_open_page</a></code></pre></div>
+<p>Opens the webpage in your browser.</p>
+<h3 id="page">Page</h3>
+<div class="sourceCode" id="cb29"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb29-1" title="1">page</a>
+<a class="sourceLine" id="cb29-2" title="2">  .all(<span class="st">&#39;h3&#39;</span>)</a>
+<a class="sourceLine" id="cb29-3" title="3">  .body</a>
+<a class="sourceLine" id="cb29-4" title="4">  .html</a>
+<a class="sourceLine" id="cb29-5" title="5">  .source</a>
+<a class="sourceLine" id="cb29-6" title="6">  .current_host</a>
+<a class="sourceLine" id="cb29-7" title="7">  .current_path</a>
+<a class="sourceLine" id="cb29-8" title="8">  .current_url</a></code></pre></div>
+<h3 id="ajax">AJAX</h3>
+<div class="sourceCode" id="cb30"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb30-1" title="1">using_wait_time <span class="dv">10</span> <span class="kw">do</span></a>
+<a class="sourceLine" id="cb30-2" title="2">  ...</a>
+<a class="sourceLine" id="cb30-3" title="3"><span class="kw">end</span></a></code></pre></div>
+<h3 id="misc">Misc</h3>
+<pre><code>drag
+field_labeled</code></pre>
+<h3 id="page-object">Page object</h3>
+<div class="sourceCode" id="cb32"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb32-1" title="1">page.status_code == <span class="dv">200</span></a>
+<a class="sourceLine" id="cb32-2" title="2">page.response_headers</a></code></pre></div>
+<p>See: <a href="http://www.rubydoc.info/github/jnicklas/capybara/master/Capybara/Session" class="uri">http://www.rubydoc.info/github/jnicklas/capybara/master/Capybara/Session</a></p>
+<h3 id="poltergeist">Poltergeist</h3>
+<div class="sourceCode" id="cb33"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb33-1" title="1"><span class="dt">Capybara</span>.register_driver <span class="st">:poltergeist</span> <span class="kw">do</span> |app|</a>
+<a class="sourceLine" id="cb33-2" title="2">  <span class="dt">Capybara</span>::<span class="dt">Poltergeist</span>::<span class="dt">Driver</span>.new(app, <span class="st">:inspector</span> =&gt; <span class="dv">true</span>)</a>
+<a class="sourceLine" id="cb33-3" title="3"><span class="kw">end</span></a>
+<a class="sourceLine" id="cb33-4" title="4"><span class="dt">Capybara</span>.javascript_driver = <span class="st">:poltergeist</span></a></code></pre></div>
+<p>Use <a href="https://github.com/teampoltergeist/poltergeist">poltergeist</a> to integrate PhantomJS.</p>
+<h3 id="blacklist">Blacklist</h3>
+<div class="sourceCode" id="cb34"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb34-1" title="1">config.before <span class="st">:each</span>, <span class="st">:js</span> <span class="kw">do</span></a>
+<a class="sourceLine" id="cb34-2" title="2">  page.driver.browser.url_blacklist = [</a>
+<a class="sourceLine" id="cb34-3" title="3">    <span class="st">&#39;fonts.googleapis.com&#39;</span>,</a>
+<a class="sourceLine" id="cb34-4" title="4">    <span class="st">&#39;use.typekit.net&#39;</span>,</a>
+<a class="sourceLine" id="cb34-5" title="5">    <span class="st">&#39;f.vimeocdn.com&#39;</span>,</a>
+<a class="sourceLine" id="cb34-6" title="6">    <span class="st">&#39;player.vimeo.com&#39;</span>,</a>
+<a class="sourceLine" id="cb34-7" title="7">    <span class="st">&#39;www.googletagmanager.com&#39;</span></a>
+<a class="sourceLine" id="cb34-8" title="8">  ].flat_map { |domain| [ <span class="st">&quot;http://</span><span class="ot">#{</span>domain<span class="ot">}</span><span class="st">&quot;</span>, <span class="st">&quot;https://</span><span class="ot">#{</span>domain<span class="ot">}</span><span class="st">&quot;</span> ] }</a>
+<a class="sourceLine" id="cb34-9" title="9"><span class="kw">end</span></a></code></pre></div>
+<h3 id="debugging-1">Debugging</h3>
+<p>Enable <code>inspector: true</code> and then: {: .-setup}</p>
+<div class="sourceCode" id="cb35"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb35-1" title="1">page.driver.debug</a></code></pre></div>
+<p>To pause execution for a while:</p>
+<div class="sourceCode" id="cb36"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb36-1" title="1">page.driver.pause</a></code></pre></div>
+<h2 id="selenium">Selenium</h2>
+<h3 id="accepting-confirm-and-alert">Accepting confirm() and alert()</h3>
+<div class="sourceCode" id="cb37"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb37-1" title="1">accept_alert { ... }</a>
+<a class="sourceLine" id="cb37-2" title="2">dismiss_confirm { ... }</a>
+<a class="sourceLine" id="cb37-3" title="3">accept_prompt(<span class="st">with: &#39;hi&#39;</span>) { ... }</a></code></pre></div>
+<p>Alternatively:</p>
+<div class="sourceCode" id="cb38"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb38-1" title="1">page.driver.browser.switch_to.alert.accept</a></code></pre></div>
+<h3 id="updating-session">Updating session</h3>
+<div class="sourceCode" id="cb39"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb39-1" title="1">page.set_rack_session(<span class="st">foo: &#39;bar&#39;</span>)</a></code></pre></div>
+<h2 id="see-also">See also</h2>
+<p>{: .-one-column}</p>
+<ul>
+<li><a href="http://rubydoc.info/github/jnicklas/capybara/Capybara/RSpecMatchers" class="uri">http://rubydoc.info/github/jnicklas/capybara/Capybara/RSpecMatchers</a></li>
+<li><a href="http://www.rubydoc.info/github/jnicklas/capybara/master/Capybara/Node/Matchers" class="uri">http://www.rubydoc.info/github/jnicklas/capybara/master/Capybara/Node/Matchers</a></li>
+</ul>
+</body>
+</html>

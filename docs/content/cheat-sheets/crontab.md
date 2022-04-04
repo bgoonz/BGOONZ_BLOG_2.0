@@ -1,66 +1,66 @@
----
-title: title
-subtitle: subtitle
-date: '2022-01-03'
-thumb_img_alt: lorem-ipsum
-content_img_alt: lorem-ipsum
-excerpt: lorem-ipsum
-seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
-template: post
-thumb_img_path: images/css-72a655a7.jpg
----
+subtitle
 
----
+2022-01-03
 
-## tags: [job, scheduler, periodic]
+------------------------------------------------------------------------
 
-# set a shell
+tags: \[job, scheduler, periodic\]
+----------------------------------
+
+set a shell
+===========
 
 SHELL=/bin/bash
 
-# set a PATH
+set a PATH
+==========
 
 PATH=/usr/bin:/usr/sbin:/usr/local/bin
 
-# incorrect way of seeting PATH
+incorrect way of seeting PATH
+=============================
 
 PATH=$PATH:/do/not/do/this
 
-# crontab format
+crontab format
+==============
 
--   -   -   -   -   command_to_execute
+-   -   -   -   -   command\_to\_execute
 
----
+------------------------------------------------------------------------
 
-| | | | |
-| | | | +- day of week (0 - 7) (where sunday is 0 and 7)
-| | | +--- month (1 - 12)
-| | +----- day (1 - 31)
-| +------- hour (0 - 23)
-+--------- minute (0 - 59)
+| | | |  
+| | | +- day of week (0 - 7) (where sunday is 0 and 7)  
+| | +— month (1 - 12)  
+| +—– day (1 - 31)  
++——- hour (0 - 23)
 
-# example entries
++——— minute (0 - 59)
 
-# every 15 min
+example entries
+===============
 
-_/15 _ \* \* \* /home/user/command.sh
+every 15 min
+============
 
-# every midnight
+*/15* \* \* \* /home/user/command.sh
+
+every midnight
+==============
 
 0 0 \* \* \* /home/user/command.sh
 
-# every Saturday at 8:05 AM
+every Saturday at 8:05 AM
+=========================
 
 5 8 \* \* 6 /home/user/command.sh
 
-# compute your crontab periodicity format online
+compute your crontab periodicity format online
+==============================================
 
 https://crontab.guru/
 
-# be careful with % sign (percent), it has special meaning, see https://crontab.guru/ for explanation
+be careful with % sign (percent), it has special meaning, see https://crontab.guru/ for explanation
+===================================================================================================
 
-% signs must be escaped such as \%
+% signs must be escaped such as %

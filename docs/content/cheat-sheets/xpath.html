@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Xpath</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Xpath</h1>
+</header>
+<h2 id="testing">Testing</h2>
+<h3 id="xpath-test-bed">Xpath test bed</h3>
+<p>{: .-intro}</p>
+<p>Test queries in the Xpath test bed:</p>
+<ul>
+<li><a href="http://www.whitebeam.org/library/guide/TechNotes/xpathtestbed.rhtm">Xpath test bed</a> <em>(whitebeam.org)</em></li>
+</ul>
+<h3 id="browser-console">Browser console</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="at">$x</span>(<span class="st">&#39;//div&#39;</span>)<span class="op">;</span></a></code></pre></div>
+<p>Works in Firefox and Chrome.</p>
+<h2 id="selectors">Selectors</h2>
+<h3 id="descendant-selectors">Descendant selectors</h3>
+<table>
+<thead>
+<tr class="header">
+<th>CSS</th>
+<th>Xpath</th>
+<th>?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>h1</code></td>
+<td><code>//h1</code></td>
+<td><a href="#prefixes">?</a></td>
+</tr>
+<tr class="even">
+<td><code>div p</code></td>
+<td><code>//div//p</code></td>
+<td><a href="#axes">?</a></td>
+</tr>
+<tr class="odd">
+<td><code>ul &gt; li</code></td>
+<td><code>//ul/li</code></td>
+<td><a href="#axes">?</a></td>
+</tr>
+<tr class="even">
+<td><code>ul &gt; li &gt; a</code></td>
+<td><code>//ul/li/a</code></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>div &gt; *</code></td>
+<td><code>//div/*</code></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>—-</td>
+<td>—-</td>
+<td>–</td>
+</tr>
+<tr class="odd">
+<td><code>:root</code></td>
+<td><code>/</code></td>
+<td><a href="#prefixes">?</a></td>
+</tr>
+<tr class="even">
+<td><code>:root &gt; body</code></td>
+<td><code>/body</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>{: .xp}</p>
+<h3 id="attribute-selectors">Attribute selectors</h3>
+<table>
+<thead>
+<tr class="header">
+<th>CSS</th>
+<th>Xpath</th>
+<th>?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>#id</code></td>
+<td><code>//*[@id="id"]</code></td>
+<td><a href="#predicates">?</a></td>
+</tr>
+<tr class="even">
+<td><code>.class</code></td>
+<td><code>//*[@class="class"]</code> <em>…<a href="#class-check">kinda</a></em></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>input[type="submit"]</code></td>
+<td><code>//input[@type="submit"]</code></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>a#abc[for="xyz"]</code></td>
+<td><code>//a[@id="abc"][@for="xyz"]</code></td>
+<td><a href="#chaining-order">?</a></td>
+</tr>
+<tr class="odd">
+<td><code>a[rel]</code></td>
+<td><code>//a[@rel]</code></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>—-</td>
+<td>—-</td>
+<td>–</td>
+</tr>
+<tr class="odd">
+<td><code>a[href^='/']</code></td>
+<td><code>//a[starts-with(@href, '/')]</code></td>
+<td><a href="#string-functions">?</a></td>
+</tr>
+<tr class="even">
+<td><code>a[href$='pdf']</code></td>
+<td><code>//a[ends-with(@href, '.pdf')]</code></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>a[href*='://']</code></td>
+<td><code>//a[contains(@href, '://')]</code></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>a[rel~='help']</code></td>
+<td><code>//a[contains(@rel, 'help')]</code> <em>…<a href="#class-check">kinda</a></em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>{: .xp}</p>
+<h3 id="order-selectors">Order selectors</h3>
+<table>
+<thead>
+<tr class="header">
+<th>CSS</th>
+<th>Xpath</th>
+<th>?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>ul &gt; li:first-of-type</code></td>
+<td><code>//ul/li[1]</code></td>
+<td><a href="#indexing">?</a></td>
+</tr>
+<tr class="even">
+<td><code>ul &gt; li:nth-of-type(2)</code></td>
+<td><code>//ul/li[2]</code></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>ul &gt; li:last-of-type</code></td>
+<td><code>//ul/li[last()]</code></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>li#id:first-of-type</code></td>
+<td><code>//li[1][@id="id"]</code></td>
+<td><a href="#chaining-order">?</a></td>
+</tr>
+<tr class="odd">
+<td><code>a:first-child</code></td>
+<td><code>//*[1][name()="a"]</code></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>a:last-child</code></td>
+<td><code>//*[last()][name()="a"]</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>{: .xp}</p>
+<h3 id="siblings">Siblings</h3>
+<table>
+<thead>
+<tr class="header">
+<th>CSS</th>
+<th>Xpath</th>
+<th>?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>h1 ~ ul</code></td>
+<td><code>//h1/following-sibling::ul</code></td>
+<td><a href="#using-axes">?</a></td>
+</tr>
+<tr class="even">
+<td><code>h1 + ul</code></td>
+<td><code>//h1/following-sibling::ul[1]</code></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>h1 ~ #id</code></td>
+<td><code>//h1/following-sibling::[@id="id"]</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>{: .xp}</p>
+<h3 id="jquery">jQuery</h3>
+<table>
+<thead>
+<tr class="header">
+<th>CSS</th>
+<th>Xpath</th>
+<th>?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>$('ul &gt; li').parent()</code></td>
+<td><code>//ul/li/..</code></td>
+<td><a href="#other-axes">?</a></td>
+</tr>
+<tr class="even">
+<td><code>$('li').closest('section')</code></td>
+<td><code>//li/ancestor-or-self::section</code></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>$('a').attr('href')</code></td>
+<td><code>//a/@href</code></td>
+<td><a href="#steps">?</a></td>
+</tr>
+<tr class="even">
+<td><code>$('span').text()</code></td>
+<td><code>//span/text()</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>{: .xp}</p>
+<h3 id="other-things">Other things</h3>
+<table>
+<thead>
+<tr class="header">
+<th>CSS</th>
+<th>Xpath</th>
+<th>?</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>h1:not([id])</code></td>
+<td><code>//h1[not(@id)]</code></td>
+<td><a href="#boolean-functions">?</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Text match</td>
+<td><code>//button[text()="Submit"]</code></td>
+<td><a href="#operators">?</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Text match (substring)</td>
+<td><code>//button[contains(text(),"Go")]</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Arithmetic</td>
+<td><code>//product[@price &gt; 2.50]</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Has children</td>
+<td><code>//ul[*]</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Has children (specific)</td>
+<td><code>//ul[li]</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Or logic</td>
+<td><code>//a[@name or @href]</code></td>
+<td><a href="#operators">?</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Union (joins results)</td>
+<td><code>//a                              | //div</code></td>
+<td><a href="#unions">?</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>{: .xp}</p>
+<style>
+/* ensure tables align */
+table.xp {table-layout: fixed;}
+table.xp tr>:nth-child(1) {width: 35%;}
+table.xp tr>:nth-child(2) {width: auto;}
+table.xp tr>:nth-child(3) {width: 10%; text-align:right;}
+</style>
+<h3 id="class-check">Class check</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb2-1" title="1"><span class="ex">/</span>/<span class="ex">div</span>[contains(concat(<span class="st">&#39; &#39;</span>,normalize-space(@class),<span class="st">&#39; &#39;</span>),<span class="st">&#39; foobar &#39;</span>)]</a></code></pre></div>
+<p>Xpath doesn’t have the “check if part of space-separated list” operator, so this is the workaround (<a href="http://pivotallabs.com/xpath-css-class-matching/">source</a>).</p>
+<h2 id="expressions">Expressions</h2>
+<h3 id="steps-and-axes">Steps and axes</h3>
+<div class="line-block"><code>//</code> | <code>ul</code> | <code>/</code> | <code>a[@id='link']</code> |<br />
+Axis | Step | Axis | Step |</div>
+<p>{: .-css-breakdown}</p>
+<h3 id="prefixes">Prefixes</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Prefix</th>
+<th>Example</th>
+<th>What</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>//</code></td>
+<td><code>//hr[@class='edge']</code></td>
+<td>Anywhere</td>
+</tr>
+<tr class="even">
+<td><code>./</code></td>
+<td><code>./a</code></td>
+<td>Relative</td>
+</tr>
+<tr class="odd">
+<td><code>/</code></td>
+<td><code>/html/body/div</code></td>
+<td>Root</td>
+</tr>
+</tbody>
+</table>
+<p>{: .-headers}</p>
+<p>Begin your expression with any of these.</p>
+<h3 id="axes">Axes</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Axis</th>
+<th>Example</th>
+<th>What</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>/</code></td>
+<td><code>//ul/li/a</code></td>
+<td>Child</td>
+</tr>
+<tr class="even">
+<td><code>//</code></td>
+<td><code>//[@id="list"]//a</code></td>
+<td>Descendant</td>
+</tr>
+</tbody>
+</table>
+<p>{: .-headers}</p>
+<p>Separate your steps with <code>/</code>. Use two (<code>//</code>) if you don’t want to select direct children.</p>
+<h3 id="steps">Steps</h3>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb3-1" title="1"><span class="ex">//div</span></a>
+<a class="sourceLine" id="cb3-2" title="2"><span class="ex">/</span>/<span class="ex">div</span>[@name=<span class="st">&#39;box&#39;</span>]</a>
+<a class="sourceLine" id="cb3-3" title="3"><span class="ex">/</span>/[<span class="ex">@id</span>=<span class="st">&#39;link&#39;</span>]</a></code></pre></div>
+<p>A step may have an element name (<code>div</code>) and <a href="#predicate">predicates</a> (<code>[...]</code>). Both are optional. They can also be these other things:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb4-1" title="1"><span class="ex">//a</span>/<span class="fu">text()</span>     <span class="co">#=&gt; &quot;Go home&quot;</span></a>
+<a class="sourceLine" id="cb4-2" title="2"><span class="ex">//a/@href</span>      <span class="co">#=&gt; &quot;index.html&quot;</span></a>
+<a class="sourceLine" id="cb4-3" title="3"><span class="ex">//a/*</span>          <span class="co">#=&gt; All a&#39;s child elements</span></a></code></pre></div>
+<h2 id="predicates">Predicates</h2>
+<h3 id="predicates-1">Predicates</h3>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb5-1" title="1"><span class="ex">/</span>/<span class="ex">div</span>[true()]</a>
+<a class="sourceLine" id="cb5-2" title="2"><span class="ex">/</span>/<span class="ex">div</span>[@class=<span class="st">&quot;head&quot;</span>]</a>
+<a class="sourceLine" id="cb5-3" title="3"><span class="ex">/</span>/<span class="ex">div</span>[@class=<span class="st">&quot;head&quot;</span>][@id=<span class="st">&quot;top&quot;</span>]</a></code></pre></div>
+<p>Restricts a nodeset only if some condition is true. They can be chained.</p>
+<h3 id="operators">Operators</h3>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb6-1" title="1"><span class="co"># Comparison</span></a>
+<a class="sourceLine" id="cb6-2" title="2"><span class="ex">/</span>/<span class="ex">a</span>[@id = <span class="st">&quot;xyz&quot;</span>]</a>
+<a class="sourceLine" id="cb6-3" title="3"><span class="ex">/</span>/<span class="ex">a</span>[@id != <span class="st">&quot;xyz&quot;</span>]</a>
+<a class="sourceLine" id="cb6-4" title="4"><span class="ex">/</span>/<span class="ex">a</span>[@price <span class="op">&gt;</span> 25]</a></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb7-1" title="1"><span class="co"># Logic (and/or)</span></a>
+<a class="sourceLine" id="cb7-2" title="2"><span class="ex">/</span>/<span class="ex">div</span>[@id=<span class="st">&quot;head&quot;</span> and position()=<span class="ex">2</span>]</a>
+<a class="sourceLine" id="cb7-3" title="3"><span class="ex">/</span>/<span class="ex">div</span>[(x and y) <span class="ex">or</span> not(z)]</a></code></pre></div>
+<p>Use comparison and logic operators to make conditionals.</p>
+<h3 id="using-nodes">Using nodes</h3>
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb8-1" title="1"><span class="co"># Use them inside functions</span></a>
+<a class="sourceLine" id="cb8-2" title="2"><span class="ex">/</span>/<span class="ex">ul</span>[count(li) <span class="op">&gt;</span> <span class="ex">2</span>]</a>
+<a class="sourceLine" id="cb8-3" title="3"><span class="ex">/</span>/<span class="ex">ul</span>[count(li[@class=<span class="st">&#39;hide&#39;</span>]) <span class="op">&gt;</span> <span class="ex">0</span>]</a></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb9-1" title="1"><span class="co"># This returns `&lt;ul&gt;` that has a `&lt;li&gt;` child</span></a>
+<a class="sourceLine" id="cb9-2" title="2"><span class="ex">/</span>/<span class="ex">ul</span>[li]</a></code></pre></div>
+<p>You can use nodes inside predicates.</p>
+<h3 id="indexing">Indexing</h3>
+<div class="sourceCode" id="cb10"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb10-1" title="1"><span class="ex">/</span>/<span class="ex">a</span>[1]                  <span class="co"># first &lt;a&gt;</span></a>
+<a class="sourceLine" id="cb10-2" title="2"><span class="ex">/</span>/<span class="ex">a</span>[last()]             <span class="co"># last &lt;a&gt;</span></a>
+<a class="sourceLine" id="cb10-3" title="3"><span class="ex">//ol</span>/<span class="ex">li</span>[2]              <span class="co"># second &lt;li&gt;</span></a>
+<a class="sourceLine" id="cb10-4" title="4"><span class="ex">//ol</span>/<span class="ex">li</span>[position()=<span class="ex">2</span>]   <span class="co"># same as above</span></a>
+<a class="sourceLine" id="cb10-5" title="5"><span class="ex">//ol</span>/<span class="ex">li</span>[position()<span class="op">&gt;</span><span class="ex">1</span>]   <span class="co"># :not(:first-of-type)</span></a></code></pre></div>
+<p>Use <code>[]</code> with a number, or <code>last()</code> or <code>position()</code>.</p>
+<h3 id="chaining-order">Chaining order</h3>
+<div class="sourceCode" id="cb11"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb11-1" title="1"><span class="ex">a</span>[1][@href=<span class="st">&#39;/&#39;</span>]</a>
+<a class="sourceLine" id="cb11-2" title="2"><span class="ex">a</span>[@href=<span class="st">&#39;/&#39;</span>][1]</a></code></pre></div>
+<p>Order is significant, these two are different.</p>
+<h3 id="nesting-predicates">Nesting predicates</h3>
+<pre><code>//section[.//h1[@id=&#39;hi&#39;]]</code></pre>
+<p>This returns <code>&lt;section&gt;</code> if it has an <code>&lt;h1&gt;</code> descendant with <code>id='hi'</code>.</p>
+<h2 id="functions">Functions</h2>
+<h3 id="node-functions">Node functions</h3>
+<div class="sourceCode" id="cb13"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb13-1" title="1"><span class="fu">name()</span>                     <span class="co"># //[starts-with(name(), &#39;h&#39;)]</span></a>
+<a class="sourceLine" id="cb13-2" title="2"><span class="fu">text()</span>                     <span class="co"># //button[text()=&quot;Submit&quot;]</span></a>
+<a class="sourceLine" id="cb13-3" title="3">                           <span class="co"># //button/text()</span></a>
+<a class="sourceLine" id="cb13-4" title="4"><span class="ex">lang</span>(str)</a>
+<a class="sourceLine" id="cb13-5" title="5"><span class="fu">namespace-uri()</span></a></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb14-1" title="1"><span class="fu">count()</span>                    <span class="co"># //table[count(tr)=1]</span></a>
+<a class="sourceLine" id="cb14-2" title="2"><span class="fu">position()</span>                 <span class="co"># //ol/li[position()=2]</span></a></code></pre></div>
+<h3 id="boolean-functions">Boolean functions</h3>
+<div class="sourceCode" id="cb15"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb15-1" title="1"><span class="ex">not</span>(expr)                  <span class="co"># button[not(starts-with(text(),&quot;Submit&quot;))]</span></a></code></pre></div>
+<h3 id="string-functions">String functions</h3>
+<div class="sourceCode" id="cb16"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb16-1" title="1"><span class="fu">contains()</span>                 <span class="co"># font[contains(@class,&quot;head&quot;)]</span></a>
+<a class="sourceLine" id="cb16-2" title="2"><span class="fu">starts-with()</span>              <span class="co"># font[starts-with(@class,&quot;head&quot;)]</span></a>
+<a class="sourceLine" id="cb16-3" title="3"><span class="fu">ends-with()</span>                <span class="co"># font[ends-with(@class,&quot;head&quot;)]</span></a></code></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb17-1" title="1"><span class="ex">concat</span>(x,y)</a>
+<a class="sourceLine" id="cb17-2" title="2"><span class="ex">substring</span>(str, start, len)</a>
+<a class="sourceLine" id="cb17-3" title="3"><span class="ex">substring-before</span>(<span class="st">&quot;01/02&quot;</span>, <span class="st">&quot;/&quot;</span>)  <span class="co">#=&gt; 01</span></a>
+<a class="sourceLine" id="cb17-4" title="4"><span class="ex">substring-after</span>(<span class="st">&quot;01/02&quot;</span>, <span class="st">&quot;/&quot;</span>)   <span class="co">#=&gt; 02</span></a>
+<a class="sourceLine" id="cb17-5" title="5"><span class="fu">translate()</span></a>
+<a class="sourceLine" id="cb17-6" title="6"><span class="fu">normalize-space()</span></a>
+<a class="sourceLine" id="cb17-7" title="7"><span class="fu">string-length()</span></a></code></pre></div>
+<h3 id="type-conversion">Type conversion</h3>
+<div class="sourceCode" id="cb18"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb18-1" title="1"><span class="fu">string()</span></a>
+<a class="sourceLine" id="cb18-2" title="2"><span class="fu">number()</span></a>
+<a class="sourceLine" id="cb18-3" title="3"><span class="fu">boolean()</span></a></code></pre></div>
+<h2 id="axes-1">Axes</h2>
+<h3 id="using-axes">Using axes</h3>
+<div class="sourceCode" id="cb19"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb19-1" title="1"><span class="ex">//ul/li</span>                       <span class="co"># ul &gt; li</span></a>
+<a class="sourceLine" id="cb19-2" title="2"><span class="ex">//ul</span>/child::<span class="ex">li</span>                <span class="co"># ul &gt; li (same)</span></a>
+<a class="sourceLine" id="cb19-3" title="3"><span class="ex">//ul</span>/following-sibling::<span class="ex">li</span>    <span class="co"># ul ~ li</span></a>
+<a class="sourceLine" id="cb19-4" title="4"><span class="ex">//ul</span>/descendant-or-self::<span class="ex">li</span>   <span class="co"># ul li</span></a>
+<a class="sourceLine" id="cb19-5" title="5"><span class="ex">//ul</span>/ancestor-or-self::<span class="ex">li</span>     <span class="co"># $(&#39;ul&#39;).closest(&#39;li&#39;)</span></a></code></pre></div>
+<p>Steps of an expression are separated by <code>/</code>, usually used to pick child nodes. That’s not always true: you can specify a different “axis” with <code>::</code>.</p>
+<div class="line-block"><code>//</code> | <code>ul</code> | <code>/child::</code> | <code>li</code> |<br />
+Axis | Step | Axis | Step |</div>
+<p>{: .-css-breakdown}</p>
+<h3 id="child-axis">Child axis</h3>
+<div class="sourceCode" id="cb20"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb20-1" title="1"><span class="co"># both the same</span></a>
+<a class="sourceLine" id="cb20-2" title="2"><span class="ex">//ul/li/a</span></a>
+<a class="sourceLine" id="cb20-3" title="3"><span class="ex">/</span>/child::<span class="ex">ul</span>/child::<span class="ex">li</span>/child::<span class="ex">a</span></a></code></pre></div>
+<p><code>child::</code> is the default axis. This makes <code>//a/b/c</code> work.</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb21-1" title="1"><span class="co"># both the same</span></a>
+<a class="sourceLine" id="cb21-2" title="2"><span class="co"># this works because `child::li` is truthy, so the predicate succeeds</span></a>
+<a class="sourceLine" id="cb21-3" title="3"><span class="ex">/</span>/<span class="ex">ul</span>[li]</a>
+<a class="sourceLine" id="cb21-4" title="4"><span class="ex">/</span>/<span class="ex">ul</span>[child::li]</a></code></pre></div>
+<div class="sourceCode" id="cb22"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb22-1" title="1"><span class="co"># both the same</span></a>
+<a class="sourceLine" id="cb22-2" title="2"><span class="ex">/</span>/<span class="ex">ul</span>[count(li) <span class="op">&gt;</span> <span class="ex">2</span>]</a>
+<a class="sourceLine" id="cb22-3" title="3"><span class="ex">/</span>/<span class="ex">ul</span>[count(child::li) <span class="op">&gt;</span> <span class="ex">2</span>]</a></code></pre></div>
+<h3 id="descendant-or-self-axis">Descendant-or-self axis</h3>
+<div class="sourceCode" id="cb23"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb23-1" title="1"><span class="co"># both the same</span></a>
+<a class="sourceLine" id="cb23-2" title="2"><span class="ex">//div//h4</span></a>
+<a class="sourceLine" id="cb23-3" title="3"><span class="ex">//div</span>/descendant-or-self::<span class="ex">h4</span></a></code></pre></div>
+<p><code>//</code> is short for the <code>descendant-or-self::</code> axis.</p>
+<div class="sourceCode" id="cb24"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb24-1" title="1"><span class="co"># both the same</span></a>
+<a class="sourceLine" id="cb24-2" title="2"><span class="ex">//ul/</span>/[<span class="fu">last()</span>]</a>
+<a class="sourceLine" id="cb24-3" title="3"><span class="ex">//ul</span>/descendant-or-self::[<span class="fu">last()</span>]</a></code></pre></div>
+<h3 id="other-axes">Other axes</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Axis</th>
+<th>Abbrev</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>ancestor</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>ancestor-or-self</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td><code>attribute</code></td>
+<td><code>@</code></td>
+<td><code>@href</code> is short for <code>attribute::href</code></td>
+</tr>
+<tr class="odd">
+<td><code>child</code></td>
+<td></td>
+<td><code>div</code> is short for <code>child::div</code></td>
+</tr>
+<tr class="even">
+<td><code>descendant</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>descendant-or-self</code></td>
+<td><code>//</code></td>
+<td><code>//</code> is short for <code>/descendant-or-self::node()/</code></td>
+</tr>
+<tr class="even">
+<td><code>namespace</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td><code>self</code></td>
+<td><code>.</code></td>
+<td><code>.</code> is short for <code>self::node()</code></td>
+</tr>
+<tr class="odd">
+<td><code>parent</code></td>
+<td><code>..</code></td>
+<td><code>..</code> is short for <code>parent::node()</code></td>
+</tr>
+<tr class="even">
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td><code>following</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>following-sibling</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>preceding</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>preceding-sibling</code></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>{: .-headers}</p>
+<p>There are other axes you can use.</p>
+<h3 id="unions">Unions</h3>
+<div class="sourceCode" id="cb25"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb25-1" title="1"><span class="ex">//a</span> <span class="kw">|</span> <span class="ex">//span</span></a></code></pre></div>
+<p>Use <code>|</code> to join two expressions.</p>
+<h2 id="more-examples">More examples</h2>
+<h3 id="examples">Examples</h3>
+<div class="sourceCode" id="cb26"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb26-1" title="1"><span class="ex">//*</span>                 <span class="co"># all elements</span></a>
+<a class="sourceLine" id="cb26-2" title="2"><span class="ex">count</span>(//*)          <span class="co"># count all elements</span></a>
+<a class="sourceLine" id="cb26-3" title="3"><span class="kw">(</span><span class="ex">//h1</span><span class="kw">)</span>[<span class="ex">1</span>]/text()    <span class="co"># text of the first h1 heading</span></a>
+<a class="sourceLine" id="cb26-4" title="4"><span class="ex">/</span>/<span class="ex">li</span>[span]          <span class="co"># find a &lt;li&gt; with an &lt;span&gt; inside it</span></a>
+<a class="sourceLine" id="cb26-5" title="5">                    <span class="co"># ...expands to //li[child::span]</span></a>
+<a class="sourceLine" id="cb26-6" title="6"><span class="ex">//ul/li/..</span>          <span class="co"># use .. to select a parent</span></a></code></pre></div>
+<h3 id="find-a-parent">Find a parent</h3>
+<div class="sourceCode" id="cb27"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb27-1" title="1"><span class="ex">/</span>/<span class="ex">section</span>[h1[@id=<span class="st">&#39;section-name&#39;</span>]]</a></code></pre></div>
+<p>Finds a <code>&lt;section&gt;</code> that directly contains <code>h1#section-name</code></p>
+<div class="sourceCode" id="cb28"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb28-1" title="1"><span class="ex">/</span>/<span class="ex">section</span>[//h1[@id=<span class="st">&#39;section-name&#39;</span>]]</a></code></pre></div>
+<p>Finds a <code>&lt;section&gt;</code> that contains <code>h1#section-name</code>. (Same as above, but uses descendant-or-self instead of child)</p>
+<h3 id="closest">Closest</h3>
+<div class="sourceCode" id="cb29"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb29-1" title="1"><span class="ex">.</span>/ancestor-or-self::[<span class="ex">@class</span>=<span class="st">&quot;box&quot;</span>]</a></code></pre></div>
+<p>Works like jQuery’s <code>$().closest('.box')</code>.</p>
+<h3 id="attributes">Attributes</h3>
+<div class="sourceCode" id="cb30"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb30-1" title="1"><span class="ex">/</span>/<span class="ex">item</span>[@price <span class="op">&gt;</span> 2*@discount]</a></code></pre></div>
+<p>Finds <code>&lt;item&gt;</code> and check its attributes</p>
+<h2 id="references">References</h2>
+<p>{: .-one-column}</p>
+<ul>
+<li><a href="http://www.whitebeam.org/library/guide/TechNotes/xpathtestbed.rhtm">Xpath test bed</a> <em>(whitebeam.org)</em></li>
+</ul>
+</body>
+</html>

@@ -1,35 +1,39 @@
----
-tags: [database]
----
+To dump a database to a file (Note that your password will appear in your command history!):
+============================================================================================
 
-# To dump a database to a file (Note that your password will appear in your command history!):
+mysqldump -u -p &gt; db.sql
 
-mysqldump -u<username> -p<password> <database> > db.sql
+To dump a database to a file:
+=============================
 
-# To dump a database to a file:
+mysqldump -u -p &gt; db.sql
 
-mysqldump -u<username> -p <database> > db.sql
+To dump a database to a .tgz file (Note that your password will appear in your command history!):
+=================================================================================================
 
-# To dump a database to a .tgz file (Note that your password will appear in your command history!):
+mysqldump -u -p | gzip -9 &gt; db.sql
 
-mysqldump -u<username> -p<password> <database> | gzip -9 > db.sql
+To dump a database to a .tgz file:
+==================================
 
-# To dump a database to a .tgz file:
+mysqldump -u -p | gzip -9 &gt; db.sql
 
-mysqldump -u<username> -p <database> | gzip -9 > db.sql
+To dump all databases to a file (Note that your password will appear in your command history!):
+===============================================================================================
 
-# To dump all databases to a file (Note that your password will appear in your command history!):
+mysqldump -u -p –all-databases &gt; all-databases.sql
 
-mysqldump -u<username> -p<password> --all-databases > all-databases.sql
+To dump all databases to a file:
+================================
 
-# To dump all databases to a file:
+mysqldump -u -p –all-databases &gt; all-databases.sql
 
-mysqldump -u<username> -p --all-databases > all-databases.sql
+To export the database structure only:
+======================================
 
-# To export the database structure only:
+mysqldump –no-data -u -p &gt; dump\_file
 
-mysqldump --no-data -u<username> -p <database> > dump_file
+To export the database data only:
+=================================
 
-# To export the database data only:
-
-mysqldump --no-create-info -u<username> -p <database> > dump_file
+mysqldump –no-create-info -u -p &gt; dump\_file

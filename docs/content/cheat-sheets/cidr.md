@@ -1,35 +1,17 @@
----
-title: title
-subtitle: subtitle
-date: '2022-01-03'
-thumb_img_alt: lorem-ipsum
-content_img_alt: lorem-ipsum
-excerpt: lorem-ipsum
-seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
-template: post
-thumb_img_path: images/css-72a655a7.jpg
----
+subtitle
 
----
+2022-01-03
 
-title: CIDR
-category: Misc
+------------------------------------------------------------------------
 
----
+title: CIDR category: Misc
+
+------------------------------------------------------------------------
 
 ### CIDR ranges
 
-| Range           | First IP | Last IP        |
-| --------------- | -------- | -------------- |
-| **10.0.0.0/24** | 10.0.0.0 | 10.0.0.255     |
-| **10.0.0.0/16** | 10.0.0.0 | 10.0.255.255   |
-| **10.0.0.0/8**  | 10.0.0.0 | 10.255.255.255 |
-| **0.0.0.0/0**   | (all)    | (all)          |
+<table><thead><tr class="header"><th>Range</th><th>First IP</th><th>Last IP</th></tr></thead><tbody><tr class="odd"><td><strong>10.0.0.0/24</strong></td><td>10.0.0.0</td><td>10.0.0.255</td></tr><tr class="even"><td><strong>10.0.0.0/16</strong></td><td>10.0.0.0</td><td>10.0.255.255</td></tr><tr class="odd"><td><strong>10.0.0.0/8</strong></td><td>10.0.0.0</td><td>10.255.255.255</td></tr><tr class="even"><td><strong>0.0.0.0/0</strong></td><td>(all)</td><td>(all)</td></tr></tbody></table>
 
 ### Resources
 
--   [CIDR range calculator](http://ipaddressguide.com/cidr#range) _(ipaddressguide.com)_
+-   [CIDR range calculator](http://ipaddressguide.com/cidr#range) *(ipaddressguide.com)*

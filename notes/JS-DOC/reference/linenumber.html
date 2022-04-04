@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>linenumber</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="error.prototype.linenumber">Error.prototype.lineNumber</h1>
+<p><strong>Non-standard</strong></p>
+<p>This feature is non-standard and is not on a standards track. Do not use it on production sites facing the Web: it will not work for every user. There may also be large incompatibilities between implementations and the behavior may change in the future.</p>
+<p>The <code>lineNumber</code> property contains the line number in the file that raised this error.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-linenumber">Using lineNumber</h3>
+<pre><code>var e = new Error(&#39;Could not parse input&#39;);
+throw e;
+console.log(e.lineNumber) // 2</code></pre>
+<h3 id="alternative-example-using-error-event">Alternative example using error event</h3>
+<pre><code>window.addEventListener(&#39;error&#39;, function(e) {
+  console.log(e.lineNumber); // 5
+});
+var e = new Error(&#39;Could not parse input&#39;);
+throw e;</code></pre>
+<p>This is not a standard feature and lacks widespread support. See the browser compatibility table below.</p>
+<h2 id="specifications">Specifications</h2>
+<p>Not part of any standard.</p>
+<p><code>lineNumber</code></p>
+<p>No</p>
+<p>No</p>
+<p>1</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>4</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="stack"><code>Error.prototype.stack</code></a></li>
+<li><a href="columnnumber"><code>Error.prototype.columnNumber</code></a></li>
+<li><a href="filename"><code>Error.prototype.fileName</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error/lineNumber" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error/lineNumber</a></p>
+</body>
+</html>

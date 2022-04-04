@@ -1,12 +1,15 @@
-# Division (/)
+Division (/)
+============
 
 The division operator (`/`) produces the quotient of its operands where the left operand is the dividend and the right operand is the divisor.
 
-## Syntax
+Syntax
+------
 
     Operator: x / y
 
-## Examples
+Examples
+--------
 
 ### Basic division
 
@@ -24,12 +27,11 @@ The division operator (`/`) produces the quotient of its operands where the left
 
     2.0 / -0.0  // -Infinity
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-multiplicative-operators">ECMAScript (ECMA-262) 
-<br/>
-
-<span class="small">The definition of 'Division operator' in that specification.</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript (ECMA-262)<br />
+</p><span class="small">The definition of ‘Division operator’ in that specification.</span></td></tr></tbody></table>
 
 `Division`
 
@@ -57,7 +59,8 @@ The division operator (`/`) produces the quotient of its operands where the left
 
 1.0
 
-## See also
+See also
+--------
 
 -   [Addition operator](addition)
 -   [Subtraction operator](subtraction)
@@ -69,6 +72,5 @@ The division operator (`/`) produces the quotient of its operands where the left
 -   [Unary negation operator](unary_negation)
 -   [Unary plus operator](unary_plus)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Division" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Division</a>

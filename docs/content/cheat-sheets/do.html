@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2022-01-03" />
+  <title>title</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">title</h1>
+<p class="subtitle">subtitle</p>
+<p class="date">2022-01-03</p>
+</header>
+<hr />
+<p>title: Do gem category: Ruby libraries</p>
+<hr />
+<ul>
+<li><a href="https://github.com/DAddYE/do">DAddYE/do</a></li>
+</ul>
+<h3 id="connection">Connection</h3>
+<pre><code>server = DO::Server.new(&#39;srv1&#39;, &#39;srv1.domain.local&#39;, &#39;root&#39;, :key =&gt;
+    %w[srv1.pem]</code></pre>
+<h3 id="run">Run</h3>
+<pre><code>server.run &#39;uname&#39;
+# root@srv1 ~ # uname
+# Linux
+
+server.run &#39;uname&#39;, &#39;-a&#39;
+# root@srv1 ~ # uname -a
+# Linux srv1.lipsiasoft.net 2.6.18-194.32.1.el5  x86_64 x86_64 x86_64 GNU/Linux
+
+server.run &#39;mysqladmin -u root -p password &quot;oldone&quot;&#39;, &#39;newpassword&#39;
+# root@srv1 ~ # mysqladmin -u root -p password &#39;oldone&#39;
+# Enter password: oldone
+# mysqladmin: connect to server at &#39;localhost&#39; failed
+# error: &#39;Access denied for user &#39;root&#39;@&#39;localhost&#39; (using password: YES)&#39;</code></pre>
+<h3 id="files">Files</h3>
+<pre><code>server.exist?(&#39;~/.ssh&#39;)
+# root@srv1 ~ # test -e ~/.ssh &amp;&amp; echo True
+# =&gt; true
+
+server.read(&#39;/etc/redhat-release&#39;)
+# root@srv1 ~ # cat /etc/redhat-release
+# =&gt; &quot;CentOS release 5.5 (Final)&quot;</code></pre>
+<h3 id="uploaddownload">Upload/download</h3>
+<pre><code>server.upload &#39;/tmp/file&#39;, &#39;/tmp/foo&#39;
+# root@srv1 ~ # upload from &#39;/tmp/file&#39; to &#39;/tmp/foo&#39;
+
+server.download &#39;/tmp/foo&#39;, &#39;/tmp/file2&#39;
+# root@srv1 ~ # download from &#39;/tmp/foo&#39; to &#39;/tmp/file2&#39;</code></pre>
+<h3 id="replace">Replace</h3>
+<pre><code>server.replace :all, &#39;new content&#39;, &#39;/tmp/file&#39;
+# root@srv1 ~ # replace all in &#39;/tmp/foo&#39;
+
+server.read(&#39;/tmp/foo&#39;)
+# root@srv1 ~ # cat /tmp/foo
+# =&gt; &quot;new content&quot;</code></pre>
+<h3 id="replace-via-regex">Replace via regex</h3>
+<pre><code>server.replace /content$/, &#39;changed content&#39;, &#39;/tmp/foo&#39;
+# root@srv1 ~ # replace /content$/ in &#39;/tmp/foo&#39;
+
+server.read(&#39;/tmp/foo&#39;)
+# root@srv1 ~ # cat /tmp/foo
+# =&gt; &quot;new changed content&quot;</code></pre>
+<h3 id="append">Append</h3>
+<pre><code>server.append(&#39;appended&#39;, &#39;/tmp/foo&#39;)
+# root@srv1 ~ # append to &#39;bottom&#39; in &#39;/tmp/foo&#39;
+
+server.read(&#39;/tmp/foo&#39;)
+# root@srv1 ~ # cat /tmp/foo
+# =&gt; &quot;new changed contentappended&quot;</code></pre>
+<h3 id="append-to-top">Append to top</h3>
+<pre><code>server.append(&#39;---&#39;, &#39;/tmp/foo&#39;, :top)
+# root@srv1 ~ # append to &#39;top&#39; in &#39;/tmp/foo&#39;
+
+server.read(&#39;/tmp/foo&#39;)
+# root@srv1 ~ # cat /tmp/foo
+# =&gt; &quot;---new changed contentappended&quot;</code></pre>
+<h3 id="prompt">Prompt</h3>
+<pre><code>server.ask &quot;Please choose&quot;
+# root@srv1 ~ # Please choose: foo
+# =&gt; &quot;foo&quot;
+
+server.yes? &quot;Do you want to proceed&quot;
+# root@srv1 ~ # Do you want to proceed? (y/n): y
+# =&gt; 0
+
+server.wait
+# Press ENTER to continue...</code></pre>
+</body>
+</html>

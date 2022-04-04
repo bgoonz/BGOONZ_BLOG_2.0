@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="red-black-tree">Red-Black Tree</h1>
+<p>A <strong>red-black tree</strong> is a kind of self-balancing binary search tree in computer science. Each node of the binary tree has an extra bit, and that bit is often interpreted as the color (red or black) of the node. These color bits are used to ensure the tree remains approximately balanced during insertions and deletions.</p>
+<p>Balance is preserved by painting each node of the tree with one of two colors in a way that satisfies certain properties, which collectively constrain how unbalanced the tree can become in the worst case. When the tree is modified, the new tree is subsequently rearranged and repainted to restore the coloring properties. The properties are designed in such a way that this rearranging and recoloring can be performed efficiently.</p>
+<p>The balancing of the tree is not perfect, but it is good enough to allow it to guarantee searching in <code>O(log n)</code> time, where <code>n</code> is the total number of elements in the tree. The insertion and deletion operations, along with the tree rearrangement and recoloring, are also performed in <code>O(log n)</code> time.</p>
+<p>An example of a red-black tree:</p>
+<figure>
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Red-black_tree_example.svg" alt="red-black tree" /><figcaption>red-black tree</figcaption>
+</figure>
+<h2 id="properties">Properties</h2>
+<p>In addition to the requirements imposed on a binary search tree the following must be satisfied by a red-black tree:</p>
+<ul>
+<li>Each node is either red or black.</li>
+<li>The root is black. This rule is sometimes omitted. Since the root can always be changed from red to black, but not necessarily vice versa, this rule has little effect on analysis.</li>
+<li>All leaves (NIL) are black.</li>
+<li>If a node is red, then both its children are black.</li>
+<li>Every path from a given node to any of its descendant NIL nodes contains the same number of black nodes.</li>
+</ul>
+<p>Some definitions: the number of black nodes from the root to a node is the node’s <strong>black depth</strong>; the uniform number of black nodes in all paths from root to the leaves is called the <strong>black-height</strong> of the red-black tree.</p>
+<p>These constraints enforce a critical property of red-black trees: <em>the path from the root to the farthest leaf is no more than twice as long as the path from the root to the nearest leaf</em>. The result is that the tree is roughly height-balanced. Since operations such as inserting, deleting, and finding values require worst-case time proportional to the height of the tree, this theoretical upper bound on the height allows red-black trees to be efficient in the worst case, unlike ordinary binary search trees.</p>
+<h2 id="balancing-during-insertion">Balancing during insertion</h2>
+<h3 id="if-uncle-is-red">If uncle is RED</h3>
+<figure>
+<img src="https://www.geeksforgeeks.org/wp-content/uploads/redBlackCase2.png" alt="Red Black Tree Balancing" /><figcaption>Red Black Tree Balancing</figcaption>
+</figure>
+<h3 id="if-uncle-is-black">If uncle is BLACK</h3>
+<ul>
+<li>Left Left Case (<code>p</code> is left child of <code>g</code> and <code>x</code> is left child of <code>p</code>)</li>
+<li>Left Right Case (<code>p</code> is left child of <code>g</code> and <code>x</code> is right child of <code>p</code>)</li>
+<li>Right Right Case (<code>p</code> is right child of <code>g</code> and <code>x</code> is right child of <code>p</code>)</li>
+<li>Right Left Case (<code>p</code> is right child of <code>g</code> and <code>x</code> is left child of <code>p</code>)</li>
+</ul>
+<h4 id="left-left-case-see-g-p-and-x">Left Left Case (See g, p and x)</h4>
+<figure>
+<img src="https://www.geeksforgeeks.org/wp-content/uploads/redBlackCase3a1.png" alt="Red Black Tree Balancing" /><figcaption>Red Black Tree Balancing</figcaption>
+</figure>
+<h4 id="left-right-case-see-g-p-and-x">Left Right Case (See g, p and x)</h4>
+<figure>
+<img src="https://www.geeksforgeeks.org/wp-content/uploads/redBlackCase3b.png" alt="Red Black Tree Balancing" /><figcaption>Red Black Tree Balancing</figcaption>
+</figure>
+<h4 id="right-right-case-see-g-p-and-x">Right Right Case (See g, p and x)</h4>
+<figure>
+<img src="https://www.geeksforgeeks.org/wp-content/uploads/redBlackCase3c.png" alt="Red Black Tree Balancing" /><figcaption>Red Black Tree Balancing</figcaption>
+</figure>
+<h4 id="right-left-case-see-g-p-and-x">Right Left Case (See g, p and x)</h4>
+<figure>
+<img src="https://www.geeksforgeeks.org/wp-content/uploads/redBlackCase3d.png" alt="Red Black Tree Balancing" /><figcaption>Red Black Tree Balancing</figcaption>
+</figure>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Red%E2%80%93black_tree">Wikipedia</a></li>
+<li><a href="https://www.youtube.com/watch?v=UaLIHuR1t8Q&amp;list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8&amp;index=63">Red Black Tree Insertion by Tushar Roy (YouTube)</a></li>
+<li><a href="https://www.youtube.com/watch?v=CTvfzU_uNKE&amp;t=0s&amp;list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8&amp;index=64">Red Black Tree Deletion by Tushar Roy (YouTube)</a></li>
+<li><a href="https://www.geeksforgeeks.org/red-black-tree-set-2-insert/">Red Black Tree Insertion on GeeksForGeeks</a></li>
+<li><a href="https://www.cs.usfca.edu/~galles/visualization/RedBlack.html">Red Black Tree Interactive Visualisations</a></li>
+</ul>
+</body>
+</html>

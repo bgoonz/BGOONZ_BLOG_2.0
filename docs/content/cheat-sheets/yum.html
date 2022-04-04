@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>yum</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="to-install-the-latest-version-of-a-package">To install the latest version of a package:</h1>
+<p>yum install <package></p>
+<h1 id="to-perform-a-local-install">To perform a local install:</h1>
+<p>yum localinstall <package></p>
+<h1 id="to-remove-a-package">To remove a package:</h1>
+<p>yum remove <package></p>
+<h1 id="to-search-for-a-package">To search for a package:</h1>
+<p>yum search <package></p>
+<h1 id="to-find-what-package-installs-an-executable">To find what package installs an executable:</h1>
+<p>yum whatprovides <executable></p>
+<h1 id="to-find-the-dependencies-of-a-package">To find the dependencies of a package:</h1>
+<p>yum deplist <package></p>
+<h1 id="to-find-information-about-a-package">To find information about a package:</h1>
+<p>yum info <package></p>
+<h1 id="list-currently-enabled-repositories">List currently enabled repositories:</h1>
+<p>yum repolist</p>
+<h1 id="list-packages-matching">List packages matching <phrase>:</h1>
+<p>yum list <phrase></p>
+<h1 id="to-download-the-source-rpm-for-a-package">To download the source RPM for a package:</h1>
+<p>yumdownloader –source <package></p>
+<h1 id="you-have-to-install-yumdownloader-first-which-is-installed-by-the-yum-utils-package">(You have to install yumdownloader first, which is installed by the yum-utils package)</h1>
+</body>
+</html>

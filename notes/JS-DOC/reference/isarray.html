@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>isarray</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="array.isarray">Array.isArray()</h1>
+<p>The <code>Array.isArray()</code> method determines whether the passed value is an <a href="../array"><code>Array</code></a>.</p>
+<pre><code>Array.isArray([1, 2, 3]);  // true
+Array.isArray({foo: 123}); // false
+Array.isArray(&#39;foobar&#39;);   // false
+Array.isArray(undefined);  // false</code></pre>
+<h2 id="syntax">Syntax</h2>
+<pre><code>Array.isArray(value)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>value</code><br />
+The value to be checked.</p>
+<h3 id="return-value">Return value</h3>
+<p><code>true</code> if the value is an <a href="../array"><code>Array</code></a>; otherwise, <code>false</code>.</p>
+<h2 id="description">Description</h2>
+<p>If the value is an <a href="../array"><code>Array</code></a>, <code>true</code> is returned; otherwise, <code>false</code> is.</p>
+<p>See the article <a href="https://web.mit.edu/jwalden/www/isArray.html">“Determining with absolute accuracy whether or not a JavaScript object is an array”</a> for more details. Given a <a href="../typedarray"><code>TypedArray</code></a> instance, <code>false</code> is always returned.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-array.isarray">Using Array.isArray</h3>
+<pre><code>// all following calls return true
+Array.isArray([]);
+Array.isArray([1]);
+Array.isArray(new Array());
+Array.isArray(new Array(&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;));
+Array.isArray(new Array(3));
+// Little known fact: Array.prototype itself is an array:
+Array.isArray(Array.prototype);
+
+// all following calls return false
+Array.isArray();
+Array.isArray({});
+Array.isArray(null);
+Array.isArray(undefined);
+Array.isArray(17);
+Array.isArray(&#39;Array&#39;);
+Array.isArray(true);
+Array.isArray(false);
+Array.isArray(new Uint8Array(32));
+Array.isArray({ __proto__: Array.prototype });</code></pre>
+<h3 id="instanceof-vs-isarray"><code>instanceof</code> vs <code>isArray</code></h3>
+<p>When checking for <code>Array</code> instance, <code>Array.isArray</code> is preferred over <code>instanceof</code> because it works through <code>iframes</code>.</p>
+<pre><code>var iframe = document.createElement(&#39;iframe&#39;);
+document.body.appendChild(iframe);
+xArray = window.frames[window.frames.length-1].Array;
+var arr = new xArray(1,2,3); // [1,2,3]
+
+// Correctly checking for Array
+Array.isArray(arr);  // true
+// Considered harmful, because doesn&#39;t work through iframes
+arr instanceof Array; // false</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-array.isarray">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-array.isarray</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>isArray</code></p>
+<p>5</p>
+<p>12</p>
+<p>4</p>
+<p>9</p>
+<p>10.5</p>
+<p>5</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>14</p>
+<p>5</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="https://github.com/behnammodi/polyfill/blob/master/array.polyfill.js">A polyfill</a></li>
+<li><a href="../array"><code>Array</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray</a></p>
+</body>
+</html>

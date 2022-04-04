@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>injected-content-part2.md</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h3 id="snippet-injection"><a href="https://app.netlify.com/sites/bgoonz-blog/settings/deploys#snippet-injection">Snippet injection</a></h3>
+<p>Inject analytics or other scripts into the HTML of your site.—</p>
+<ul>
+<li><p>before <code>&lt;/body&gt;</code></p>
+<p>scroll2top</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">&lt;script</span><span class="ot"> src=</span><span class="st">&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js&quot;</span><span class="ot"> async defer</span><span class="kw">&gt;&lt;/script&gt;</span></a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="kw">&lt;script</span><span class="ot"> type=</span><span class="st">&quot;text/javascript&quot;</span><span class="kw">&gt;</span></a>
+<a class="sourceLine" id="cb1-3" title="3">    <span class="kw">function</span> <span class="at">hideLoader</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-4" title="4">        <span class="at">$</span>(<span class="st">&#39;#loading&#39;</span>).<span class="at">hide</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-5" title="5">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb1-6" title="6">    <span class="at">$</span>(window).<span class="at">ready</span>(hideLoader)<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-7" title="7">    <span class="co">// Strongly recommended: Hide loader after 20 seconds, even if the page hasn&#39;t finished loading</span></a>
+<a class="sourceLine" id="cb1-8" title="8">    <span class="at">setTimeout</span>(hideLoader<span class="op">,</span> <span class="dv">10</span> <span class="op">*</span> <span class="dv">1000</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-9" title="9">    <span class="at">$</span>(window).<span class="at">on</span>(<span class="st">&#39;beforeunload&#39;</span><span class="op">,</span> <span class="kw">function</span> () <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-10" title="10">        <span class="at">$</span>(window).<span class="at">scrollTop</span>(<span class="dv">0</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-11" title="11">    <span class="op">}</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-12" title="12"><span class="kw">&lt;/script&gt;</span></a>
+<a class="sourceLine" id="cb1-13" title="13"></a>
+<a class="sourceLine" id="cb1-14" title="14"><span class="kw">&lt;script&gt;</span></a>
+<a class="sourceLine" id="cb1-15" title="15">    <span class="at">$</span>(window).<span class="at">scroll</span>(<span class="kw">function</span> () <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-16" title="16">        <span class="at">$</span>(<span class="st">&#39;#back&#39;</span>)</a>
+<a class="sourceLine" id="cb1-17" title="17">            .<span class="at">stop</span>()</a>
+<a class="sourceLine" id="cb1-18" title="18">            .<span class="at">animate</span>(</a>
+<a class="sourceLine" id="cb1-19" title="19">                <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-20" title="20">                    <span class="dt">marginTop</span><span class="op">:</span> <span class="at">$</span>(window).<span class="at">scrollTop</span>() <span class="op">+</span> <span class="st">&#39;px&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-21" title="21">                    <span class="dt">marginLeft</span><span class="op">:</span> <span class="at">$</span>(window).<span class="at">scrollLeft</span>() <span class="op">+</span> <span class="st">&#39;px&#39;</span></a>
+<a class="sourceLine" id="cb1-22" title="22">                <span class="op">},</span></a>
+<a class="sourceLine" id="cb1-23" title="23">                <span class="st">&#39;slow&#39;</span></a>
+<a class="sourceLine" id="cb1-24" title="24">            )<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-25" title="25">    <span class="op">}</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-26" title="26"><span class="kw">&lt;/script&gt;</span></a></code></pre></div></li>
+</ul>
+<hr />
+<ul>
+<li><p>before <code>&lt;/body&gt;</code></p>
+<p>spotify</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">&lt;iframe</span></a>
+<a class="sourceLine" id="cb2-2" title="2"><span class="ot">    src=</span><span class="st">&quot;https://open.spotify.com/embed/playlist/2VojZ70yfWaSeVfY2gjwVC?theme=0&quot;</span></a>
+<a class="sourceLine" id="cb2-3" title="3"><span class="ot">    width=</span><span class="st">&quot;100%&quot;</span></a>
+<a class="sourceLine" id="cb2-4" title="4"><span class="ot">    height=</span><span class="st">&quot;80&quot;</span></a>
+<a class="sourceLine" id="cb2-5" title="5"><span class="ot">    style=</span><span class="st">&quot;   position: fixed;bottom: 50;right: 50;&quot;</span></a>
+<a class="sourceLine" id="cb2-6" title="6"><span class="ot">    frameborder=</span><span class="st">&quot;0&quot;</span></a>
+<a class="sourceLine" id="cb2-7" title="7"><span class="ot">    allowtransparency=</span><span class="st">&quot;true&quot;</span></a>
+<a class="sourceLine" id="cb2-8" title="8"><span class="ot">    allow=</span><span class="st">&quot;encrypted-media&quot;</span></a>
+<a class="sourceLine" id="cb2-9" title="9"><span class="kw">&gt;&lt;/iframe&gt;</span></a></code></pre></div></li>
+</ul>
+<hr />
+<ul>
+<li><p>before <code>&lt;/body&gt;</code></p>
+<p>scroll2-vanilla</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">&lt;script&gt;</span></a>
+<a class="sourceLine" id="cb3-2" title="2">    <span class="va">window</span>.<span class="at">addEventListener</span>(<span class="st">&#39;DOMContentLoaded&#39;</span><span class="op">,</span> (event) <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb3-3" title="3">        <span class="va">console</span>.<span class="at">log</span>(<span class="st">&#39;DOM fully loaded and parsed&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-4" title="4">        <span class="kw">const</span> scrollToTop <span class="op">=</span> () <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb3-5" title="5">            <span class="kw">const</span> c <span class="op">=</span> <span class="va">document</span>.<span class="va">documentElement</span>.<span class="at">scrollTop</span> <span class="op">||</span> <span class="va">document</span>.<span class="va">body</span>.<span class="at">scrollTop</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb3-6" title="6">            <span class="cf">if</span> (c <span class="op">&gt;</span> <span class="dv">0</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb3-7" title="7">                <span class="va">window</span>.<span class="at">requestAnimationFrame</span>(scrollToTop)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-8" title="8">                <span class="va">window</span>.<span class="at">scrollTo</span>(<span class="dv">0</span><span class="op">,</span> c <span class="op">-</span> c / <span class="dv">8</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-9" title="9">            <span class="op">}</span></a>
+<a class="sourceLine" id="cb3-10" title="10">        <span class="op">};</span></a>
+<a class="sourceLine" id="cb3-11" title="11">        <span class="at">scrollToTop</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-12" title="12">    <span class="op">}</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-13" title="13"><span class="kw">&lt;/script&gt;</span></a></code></pre></div></li>
+</ul>
+<hr />
+<ul>
+<li><p>before <code>&lt;/body&gt;</code></p>
+<p>blm</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb4-1" title="1"><span class="co">&lt;!-- Insert makerbadge.js (download or use ☁️cloud version) --&gt;</span></a>
+<a class="sourceLine" id="cb4-2" title="2"></a>
+<a class="sourceLine" id="cb4-3" title="3"><span class="kw">&lt;script</span><span class="ot"> type=</span><span class="st">&quot;text/javascript&quot;</span><span class="ot"> src=</span><span class="st">&quot;https://makerbadge.s3.amazonaws.com/blmbadge.js&quot;</span><span class="kw">&gt;&lt;/script&gt;</span></a>
+<a class="sourceLine" id="cb4-4" title="4"></a>
+<a class="sourceLine" id="cb4-5" title="5"><span class="co">&lt;!-- Initialise MakerBadge with options --&gt;</span></a>
+<a class="sourceLine" id="cb4-6" title="6"></a>
+<a class="sourceLine" id="cb4-7" title="7"><span class="kw">&lt;script&gt;</span></a>
+<a class="sourceLine" id="cb4-8" title="8">    <span class="va">BLMBadge</span>.<span class="at">init</span>(<span class="op">{</span></a>
+<a class="sourceLine" id="cb4-9" title="9">        <span class="dt">layout</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb4-10" title="10">        <span class="dt">theme</span><span class="op">:</span> <span class="st">&#39;dark&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb4-11" title="11">        <span class="dt">promoText</span><span class="op">:</span> <span class="st">&#39;Send a donation &#39;</span> <span class="op">+</span> <span class="va">String</span>.<span class="at">fromCodePoint</span>(<span class="bn">0x2192</span>)<span class="op">,</span></a>
+<a class="sourceLine" id="cb4-12" title="12">        <span class="dt">promoLink</span><span class="op">:</span> <span class="st">&#39;https://minnesotafreedomfund.org/&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb4-13" title="13">        <span class="dt">message</span><span class="op">:</span> <span class="st">&#39;To be silent is to be complicit. Black lives matter.&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb4-14" title="14">        <span class="dt">title</span><span class="op">:</span> <span class="st">&#39;#BlackLivesMatter&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb4-15" title="15">        <span class="dt">imageAlt</span><span class="op">:</span> <span class="st">&#39;Black Lives Matter Badge&#39;</span></a>
+<a class="sourceLine" id="cb4-16" title="16">    <span class="op">}</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-17" title="17"><span class="kw">&lt;/script&gt;</span></a></code></pre></div></li>
+</ul>
+<hr />
+<ul>
+<li><p>before <code>&lt;/head&gt;</code></p>
+<p>iframe-style</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">&lt;style&gt;</span></a>
+<a class="sourceLine" id="cb5-2" title="2"></a>
+<a class="sourceLine" id="cb5-3" title="3">    iframe{</a>
+<a class="sourceLine" id="cb5-4" title="4">    <span class="kw">overflow-y</span>: <span class="dv">scroll</span><span class="at">!important</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb5-5" title="5">    <span class="kw">overflow-x</span>: <span class="dv">scroll</span><span class="at">!important</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb5-6" title="6">    <span class="kw">border-radius</span>:<span class="dv">26</span><span class="dt">px</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb5-7" title="7">    <span class="kw">border</span>: <span class="dv">3</span><span class="dt">px</span> <span class="dv">solid</span> <span class="cn">gold</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb5-8" title="8">    <span class="kw">height</span>:<span class="dv">1100</span><span class="dt">px</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb5-9" title="9">    <span class="kw">width</span>:<span class="dv">100</span><span class="dt">%</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb5-10" title="10">    <span class="kw">margin</span>:<span class="bu">auto</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb5-11" title="11">    <span class="kw">text-align</span>:<span class="dv">center</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb5-12" title="12">    <span class="kw">align-self</span>:<span class="dv">center</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb5-13" title="13">&lt;/style<span class="op">&gt;</span></a></code></pre></div></li>
+</ul>
+<hr />
+<ul>
+<li><p>before <code>&lt;/body&gt;</code></p>
+<p>addThis</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb6-1" title="1"><span class="kw">&lt;script</span><span class="ot"> type=</span><span class="st">&quot;text/javascript&quot;</span><span class="ot"> src=</span><span class="st">&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946&quot;</span><span class="kw">&gt;&lt;/script&gt;</span></a>
+<a class="sourceLine" id="cb6-2" title="2"></a>
+<a class="sourceLine" id="cb6-3" title="3"><span class="co">&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt;</span></a>
+<a class="sourceLine" id="cb6-4" title="4"><span class="kw">&lt;script</span><span class="ot"> type=</span><span class="st">&quot;text/javascript&quot;</span><span class="ot"> src=</span><span class="st">&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946&quot;</span><span class="kw">&gt;&lt;/script&gt;</span></a></code></pre></div></li>
+</ul>
+<hr />
+<ul>
+<li><p>before <code>&lt;/head&gt;</code></p>
+<p>analytics-n-addsense</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb7-1" title="1"><span class="kw">&lt;script</span><span class="ot"> data-ad-client=</span><span class="st">&quot;ca-pub-7131725540181116&quot;</span><span class="ot"> async src=</span><span class="st">&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&quot;</span><span class="kw">&gt;&lt;/script&gt;</span></a>
+<a class="sourceLine" id="cb7-2" title="2"><span class="co">&lt;!-- Google Tag Manager --&gt;</span></a>
+<a class="sourceLine" id="cb7-3" title="3"><span class="kw">&lt;script&gt;</span></a>
+<a class="sourceLine" id="cb7-4" title="4">    (<span class="kw">function</span> (w<span class="op">,</span> d<span class="op">,</span> s<span class="op">,</span> l<span class="op">,</span> i) <span class="op">{</span></a>
+<a class="sourceLine" id="cb7-5" title="5">        w[l] <span class="op">=</span> w[l] <span class="op">||</span> []<span class="op">;</span></a>
+<a class="sourceLine" id="cb7-6" title="6">        w[l].<span class="at">push</span>(<span class="op">{</span> <span class="st">&#39;gtm.start&#39;</span><span class="op">:</span> <span class="kw">new</span> <span class="at">Date</span>().<span class="at">getTime</span>()<span class="op">,</span> <span class="dt">event</span><span class="op">:</span> <span class="st">&#39;gtm.js&#39;</span> <span class="op">}</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb7-7" title="7">        <span class="kw">var</span> f <span class="op">=</span> <span class="va">d</span>.<span class="at">getElementsByTagName</span>(s)[<span class="dv">0</span>]<span class="op">,</span></a>
+<a class="sourceLine" id="cb7-8" title="8">            j <span class="op">=</span> <span class="va">d</span>.<span class="at">createElement</span>(s)<span class="op">,</span></a>
+<a class="sourceLine" id="cb7-9" title="9">            dl <span class="op">=</span> l <span class="op">!=</span> <span class="st">&#39;dataLayer&#39;</span> <span class="op">?</span> <span class="st">&#39;&amp;l=&#39;</span> <span class="op">+</span> l : <span class="st">&#39;&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb7-10" title="10">        <span class="va">j</span>.<span class="at">async</span> <span class="op">=</span> <span class="kw">true</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb7-11" title="11">        <span class="va">j</span>.<span class="at">src</span> <span class="op">=</span> <span class="st">&#39;https://www.googletagmanager.com/gtm.js?id=&#39;</span> <span class="op">+</span> i <span class="op">+</span> dl<span class="op">;</span></a>
+<a class="sourceLine" id="cb7-12" title="12">        <span class="va">f</span>.<span class="va">parentNode</span>.<span class="at">insertBefore</span>(j<span class="op">,</span> f)<span class="op">;</span></a>
+<a class="sourceLine" id="cb7-13" title="13">    <span class="op">}</span>)(window<span class="op">,</span> document<span class="op">,</span> <span class="st">&#39;script&#39;</span><span class="op">,</span> <span class="st">&#39;dataLayer&#39;</span><span class="op">,</span> <span class="st">&#39;GTM-5S5XXNR&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb7-14" title="14"><span class="kw">&lt;/script&gt;</span></a>
+<a class="sourceLine" id="cb7-15" title="15"><span class="co">&lt;!-- End Google Tag Manager --&gt;</span></a>
+<a class="sourceLine" id="cb7-16" title="16"><span class="co">&lt;!-- Google Tag Manager (noscript) --&gt;</span></a>
+<a class="sourceLine" id="cb7-17" title="17"><span class="kw">&lt;noscript</span></a>
+<a class="sourceLine" id="cb7-18" title="18">    <span class="kw">&gt;&lt;iframe</span><span class="ot">  style=</span><span class="st">&quot;-webkit-transform:scale(0.7);-moz-transform-scale(0.7); src=&quot;</span><span class="er">https://www.googletagmanager.com/ns.html?id</span><span class="ot">=</span><span class="st">GTM-5S5XXNR</span><span class="er">&quot;</span><span class="ot"> height=</span><span class="st">&quot;0&quot;</span><span class="ot"> width=</span><span class="st">&quot;0&quot;</span><span class="ot"> style=</span><span class="st">&quot;display:none;visibility:hidden&quot;</span><span class="kw">&gt;&lt;/iframe</span></a>
+<a class="sourceLine" id="cb7-19" title="19"><span class="kw">&gt;&lt;/noscript&gt;</span></a>
+<a class="sourceLine" id="cb7-20" title="20"><span class="co">&lt;!-- End Google Tag Manager (noscript) --&gt;</span></a>
+<a class="sourceLine" id="cb7-21" title="21"></a>
+<a class="sourceLine" id="cb7-22" title="22"><span class="kw">&lt;meta</span><span class="ot"> name=</span><span class="st">&quot;google-site-verification&quot;</span><span class="ot"> content=</span><span class="st">&quot;W6SJ3S45yhnjzV6ISUMCTXl_QVX5woQZ7jO3bsahONQ&quot;</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb7-23" title="23"><span class="co">&lt;!-- Global site tag (gtag.js) - Google Analytics --&gt;</span></a>
+<a class="sourceLine" id="cb7-24" title="24"><span class="kw">&lt;script</span><span class="ot"> async src=</span><span class="st">&quot;https://www.googletagmanager.com/gtag/js?id=G-4W5MG3DG4T&quot;</span><span class="kw">&gt;&lt;/script&gt;</span></a>
+<a class="sourceLine" id="cb7-25" title="25"><span class="kw">&lt;script&gt;</span></a>
+<a class="sourceLine" id="cb7-26" title="26">    <span class="va">window</span>.<span class="at">dataLayer</span> <span class="op">=</span> <span class="va">window</span>.<span class="at">dataLayer</span> <span class="op">||</span> []<span class="op">;</span></a>
+<a class="sourceLine" id="cb7-27" title="27">    <span class="kw">function</span> <span class="at">gtag</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb7-28" title="28">        <span class="va">dataLayer</span>.<span class="at">push</span>(<span class="kw">arguments</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb7-29" title="29">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb7-30" title="30">    <span class="at">gtag</span>(<span class="st">&#39;js&#39;</span><span class="op">,</span> <span class="kw">new</span> <span class="at">Date</span>())<span class="op">;</span></a>
+<a class="sourceLine" id="cb7-31" title="31"></a>
+<a class="sourceLine" id="cb7-32" title="32">    <span class="at">gtag</span>(<span class="st">&#39;config&#39;</span><span class="op">,</span> <span class="st">&#39;G-4W5MG3DG4T&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb7-33" title="33"><span class="kw">&lt;/script&gt;</span></a>
+<a class="sourceLine" id="cb7-34" title="34"></a>
+<a class="sourceLine" id="cb7-35" title="35"><span class="kw">&lt;script</span><span class="ot"> data-ad-client=</span><span class="st">&quot;ca-pub-7131725540181116&quot;</span><span class="ot"> async src=</span><span class="st">&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&quot;</span><span class="kw">&gt;&lt;/script&gt;</span></a></code></pre></div></li>
+</ul>
+<hr />
+<ul>
+<li><p>before <code>&lt;/head&gt;</code></p>
+<p>netlify-oauth</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb8-1" title="1"><span class="co">&lt;!--- This example uses jQuery: --&gt;</span></a>
+<a class="sourceLine" id="cb8-2" title="2"><span class="kw">&lt;script</span><span class="ot"> src=</span><span class="st">&quot;https://code.jquery.com/jquery-1.11.2.js&quot;</span><span class="kw">&gt;&lt;/script&gt;</span></a>
+<a class="sourceLine" id="cb8-3" title="3"></a>
+<a class="sourceLine" id="cb8-4" title="4"><span class="co">&lt;!-- Make sure to include Nelify&#39;s authentication library --&gt;</span></a>
+<a class="sourceLine" id="cb8-5" title="5"><span class="co">&lt;!-- Also available via npm as netlify-auth-providers --&gt;</span></a>
+<a class="sourceLine" id="cb8-6" title="6"><span class="kw">&lt;script</span><span class="ot"> src=</span><span class="st">&quot;https://unpkg.com/netlify-auth-providers&quot;</span><span class="kw">&gt;&lt;/script&gt;</span></a>
+<a class="sourceLine" id="cb8-7" title="7"></a>
+<a class="sourceLine" id="cb8-8" title="8"><span class="kw">&lt;script&gt;</span></a>
+<a class="sourceLine" id="cb8-9" title="9">    <span class="at">$</span>(<span class="kw">function</span> () <span class="op">{</span></a>
+<a class="sourceLine" id="cb8-10" title="10">        <span class="at">$</span>(<span class="st">&#39;#login&#39;</span>).<span class="at">on</span>(<span class="st">&#39;click&#39;</span><span class="op">,</span> <span class="kw">function</span> (e) <span class="op">{</span></a>
+<a class="sourceLine" id="cb8-11" title="11">            <span class="va">e</span>.<span class="at">preventDefault</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb8-12" title="12">            <span class="kw">var</span> authenticator <span class="op">=</span> <span class="kw">new</span> <span class="va">netlify</span>.<span class="at">default</span>(<span class="op">{}</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb8-13" title="13">            <span class="va">authenticator</span>.<span class="at">authenticate</span>(<span class="op">{</span> <span class="dt">provider</span><span class="op">:</span> <span class="st">&#39;github&#39;</span><span class="op">,</span> <span class="dt">scope</span><span class="op">:</span> <span class="st">&#39;user&#39;</span> <span class="op">},</span> <span class="kw">function</span> (err<span class="op">,</span> data) <span class="op">{</span></a>
+<a class="sourceLine" id="cb8-14" title="14">                <span class="cf">if</span> (err) <span class="op">{</span></a>
+<a class="sourceLine" id="cb8-15" title="15">                    <span class="cf">return</span> <span class="at">$</span>(<span class="st">&#39;#output&#39;</span>).<span class="at">text</span>(<span class="st">&#39;Error Authenticating with GitHub: &#39;</span> <span class="op">+</span> err)<span class="op">;</span></a>
+<a class="sourceLine" id="cb8-16" title="16">                <span class="op">}</span></a>
+<a class="sourceLine" id="cb8-17" title="17">                <span class="at">$</span>(<span class="st">&#39;#output&#39;</span>).<span class="at">text</span>(<span class="st">&#39;Authenticated with GitHub. Access Token: &#39;</span> <span class="op">+</span> <span class="va">data</span>.<span class="at">token</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb8-18" title="18">            <span class="op">}</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb8-19" title="19">        <span class="op">}</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb8-20" title="20">    <span class="op">}</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb8-21" title="21"><span class="kw">&lt;/script&gt;</span></a></code></pre></div></li>
+</ul>
+<hr />
+<ul>
+<li><p>before <code>&lt;/body&gt;</code></p>
+<p>github-netlify-oauth</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb9-1" title="1"><span class="kw">&lt;h1&gt;</span>GitHub Auth Demo:<span class="kw">&lt;/h1&gt;</span></a>
+<a class="sourceLine" id="cb9-2" title="2"><span class="kw">&lt;p&gt;&lt;a</span><span class="ot"> href=</span><span class="st">&quot;#&quot;</span><span class="ot"> id=</span><span class="st">&quot;login&quot;</span><span class="kw">&gt;</span>Authenticate<span class="kw">&lt;/a&gt;&lt;/p&gt;</span></a>
+<a class="sourceLine" id="cb9-3" title="3"><span class="kw">&lt;p</span><span class="ot"> id=</span><span class="st">&quot;output&quot;</span><span class="kw">&gt;&lt;/p&gt;</span></a></code></pre></div></li>
+</ul>
+<hr />
+<ul>
+<li><p>before <code>&lt;/body&gt;</code></p>
+<p>content-authoring</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb10-1" title="1"><span class="kw">&lt;script</span><span class="ot"> src=</span><span class="st">&quot;https://unpkg.com/netlify-cms@beta/dist/netlify-cms.js&quot;</span><span class="kw">&gt;&lt;/script&gt;</span></a></code></pre></div></li>
+</ul>
+<hr />
+<ul>
+<li><p>before <code>&lt;/head&gt;</code></p>
+<p>Algolia-Search</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb11-1" title="1"><span class="kw">&lt;link</span><span class="ot"> rel=</span><span class="st">&quot;stylesheet&quot;</span><span class="ot"> href=</span><span class="st">&quot;https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css&quot;</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb11-2" title="2"><span class="kw">&lt;script</span><span class="ot"> type=</span><span class="st">&quot;text/javascript&quot;</span><span class="ot"> src=</span><span class="st">&quot;https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js&quot;</span><span class="kw">&gt;&lt;/script&gt;</span></a>
+<a class="sourceLine" id="cb11-3" title="3"><span class="kw">&lt;script</span><span class="ot"> type=</span><span class="st">&quot;text/javascript&quot;</span><span class="kw">&gt;</span></a>
+<a class="sourceLine" id="cb11-4" title="4">    <span class="at">algoliasearchNetlify</span>(<span class="op">{</span></a>
+<a class="sourceLine" id="cb11-5" title="5">        <span class="dt">appId</span><span class="op">:</span> <span class="st">&#39;BAGY237H21&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb11-6" title="6">        <span class="dt">apiKey</span><span class="op">:</span> <span class="st">&#39;5f5a2d1bb109c79803ca95250ca3496c&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb11-7" title="7">        <span class="dt">siteId</span><span class="op">:</span> <span class="st">&#39;a1b7ee1a-11a7-4bd2-a341-2260656e216f&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb11-8" title="8">        <span class="dt">branch</span><span class="op">:</span> <span class="st">&#39;master&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb11-9" title="9">        <span class="dt">selector</span><span class="op">:</span> <span class="st">&#39;div#search&#39;</span></a>
+<a class="sourceLine" id="cb11-10" title="10">    <span class="op">}</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb11-11" title="11"><span class="kw">&lt;/script&gt;</span></a></code></pre></div></li>
+</ul>
+<hr />
+<ul>
+<li><p>before <code>&lt;/body&gt;</code></p>
+<p>searcg</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb12-1" title="1"><span class="kw">&lt;br</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb12-2" title="2"><span class="kw">&lt;br</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb12-3" title="3"><span class="kw">&lt;br</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb12-4" title="4"><span class="kw">&lt;br</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb12-5" title="5"><span class="kw">&lt;br</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb12-6" title="6"><span class="kw">&lt;br</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb12-7" title="7"></a>
+<a class="sourceLine" id="cb12-8" title="8"><span class="kw">&lt;br</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb12-9" title="9"><span class="kw">&lt;br</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb12-10" title="10"><span class="kw">&lt;br</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb12-11" title="11"><span class="kw">&lt;br</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb12-12" title="12"><span class="kw">&lt;br</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb12-13" title="13"><span class="kw">&lt;br</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb12-14" title="14"><span class="kw">&lt;br</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb12-15" title="15"><span class="kw">&lt;br</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb12-16" title="16"><span class="kw">&lt;br</span> <span class="kw">/&gt;</span></a></code></pre></div></li>
+</ul>
+<hr />
+<ul>
+<li><p>before <code>&lt;/head&gt;</code></p>
+<p>algolia-search-cdn</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb13-1" title="1"><span class="kw">&lt;script</span><span class="ot"> src=</span><span class="st">&quot;https://cdn.jsdelivr.net/npm/algoliasearch@4.5.1/dist/algoliasearch-lite.umd.js&quot;</span><span class="kw">&gt;&lt;/script&gt;</span></a></code></pre></div></li>
+</ul>
+</body>
+</html>

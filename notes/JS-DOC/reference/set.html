@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>set</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="set">Set</h1>
+<p>The <code>Set</code> object lets you store unique values of any type, whether <a href="https://developer.mozilla.org/en-US/docs/Glossary/Primitive">primitive values</a> or object references.</p>
+<h2 id="description">Description</h2>
+<p><code>Set</code> objects are collections of values. You can iterate through the elements of a set in insertion order. A value in the <code>Set</code> <strong>may only occur once</strong>; it is unique in the <code>Set</code>’s collection.</p>
+<h3 id="value-equality">Value equality</h3>
+<p>Because each value in the <code>Set</code> has to be unique, the value equality will be checked. In an earlier version of ECMAScript specification, this was not based on the same algorithm as the one used in the <code>===</code> operator. Specifically, for <code>Set</code>s, <code>+0</code> (which is strictly equal to <code>-0</code>) and <code>-0</code> were different values. However, this was changed in the ECMAScript 2015 specification. See <em>“Key equality for -0 and 0”</em> in the <a href="#browser_compatibility">browser compatibility</a> table for details.</p>
+<p><a href="nan"><code>NaN</code></a> and <a href="undefined"><code>undefined</code></a> can also be stored in a Set. All <code>NaN</code> values are equated (i.e. <code>NaN</code> is considered the same as <code>NaN</code>, even though <code>NaN !== NaN</code>).</p>
+<h2 id="constructor">Constructor</h2>
+<p><a href="set/set"><code>Set()</code></a><br />
+Creates a new <code>Set</code> object.</p>
+<h2 id="static-properties">Static properties</h2>
+<p><a href="set/@@species"><code>get Set[@@species]</code></a><br />
+The constructor function that is used to create derived objects.</p>
+<h2 id="instance-properties">Instance properties</h2>
+<p><a href="set/size"><code>Set.prototype.size</code></a><br />
+Returns the number of values in the <code>Set</code> object.</p>
+<h2 id="instance-methods">Instance methods</h2>
+<p><a href="set/add"><code>Set.prototype.add(value)</code></a><br />
+Appends <code>value</code> to the <code>Set</code> object. Returns the <code>Set</code> object with added value.</p>
+<p><a href="set/clear"><code>Set.prototype.clear()</code></a><br />
+Removes all elements from the <code>Set</code> object.</p>
+<p><a href="set/delete"><code>Set.prototype.delete(value)</code></a><br />
+Removes the element associated to the <code>value</code> and returns a boolean asserting whether an element was successfully removed or not. <code>Set.prototype.has(value)</code> will return <code>false</code> afterwards.</p>
+<p><a href="set/has"><code>Set.prototype.has(value)</code></a><br />
+Returns a boolean asserting whether an element is present with the given value in the <code>Set</code> object or not.</p>
+<h3 id="iteration-methods">Iteration methods</h3>
+<p><a href="set/@@iterator"><code>Set.prototype[@@iterator]()</code></a><br />
+Returns a new iterator object that yields the <strong>values</strong> for each element in the <code>Set</code> object in insertion order.</p>
+<p><a href="set/values"><code>Set.prototype.keys()</code></a><br />
+Returns a new iterator object that yields the values for each element in the <code>Set</code> object in insertion order. (For Sets, this is the same as the <code>values()</code> method.)</p>
+<p><a href="set/values"><code>Set.prototype.values()</code></a><br />
+Returns a new iterator object that yields the <strong>values</strong> for each element in the <code>Set</code> object in insertion order. (For Sets, this is the same as the <code>keys()</code> method.)</p>
+<p><a href="set/entries"><code>Set.prototype.entries()</code></a><br />
+Returns a new iterator object that contains <code>[value, value]</code> for each element in the <code>Set</code> object, in insertion order.</p>
+<p>This is similar to the <a href="map"><code>Map</code></a> object, so that each entry’s <em>key</em> is the same as its <em>value</em> for a <code>Set</code>.</p>
+<p><a href="set/foreach"><code>Set.prototype.forEach(callbackFn[, thisArg])</code></a><br />
+Calls <code>callbackFn</code> once for each value present in the <code>Set</code> object, in insertion order. If a <code>thisArg</code> parameter is provided, it will be used as the <code>this</code> value for each invocation of <code>callbackFn</code>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-the-set-object">Using the Set object</h3>
+<pre><code>const mySet1 = new Set()
+
+mySet1.add(1)           // Set [ 1 ]
+mySet1.add(5)           // Set [ 1, 5 ]
+mySet1.add(5)           // Set [ 1, 5 ]
+mySet1.add(&#39;some text&#39;) // Set [ 1, 5, &#39;some text&#39; ]
+const o = {a: 1, b: 2}
+mySet1.add(o)
+
+mySet1.add({a: 1, b: 2})   // o is referencing a different object, so this is okay
+
+mySet1.has(1)              // true
+mySet1.has(3)              // false, since 3 has not been added to the set
+mySet1.has(5)              // true
+mySet1.has(Math.sqrt(25))  // true
+mySet1.has(&#39;Some Text&#39;.toLowerCase()) // true
+mySet1.has(o)       // true
+
+mySet1.size         // 5
+
+mySet1.delete(5)    // removes 5 from the set
+mySet1.has(5)       // false, 5 has been removed
+
+mySet1.size         // 4, since we just removed one value
+
+console.log(mySet1)
+// logs Set(4) [ 1, &quot;some text&quot;, {…}, {…} ] in Firefox
+// logs Set(4) { 1, &quot;some text&quot;, {…}, {…} } in Chrome</code></pre>
+<h3 id="iterating-sets">Iterating Sets</h3>
+<pre><code>// iterate over items in set
+// logs the items in the order: 1, &quot;some text&quot;, {&quot;a&quot;: 1, &quot;b&quot;: 2}, {&quot;a&quot;: 1, &quot;b&quot;: 2}
+for (let item of mySet1) console.log(item)
+
+// logs the items in the order: 1, &quot;some text&quot;, {&quot;a&quot;: 1, &quot;b&quot;: 2}, {&quot;a&quot;: 1, &quot;b&quot;: 2}
+for (let item of mySet1.keys()) console.log(item)
+
+// logs the items in the order: 1, &quot;some text&quot;, {&quot;a&quot;: 1, &quot;b&quot;: 2}, {&quot;a&quot;: 1, &quot;b&quot;: 2}
+for (let item of mySet1.values()) console.log(item)
+
+// logs the items in the order: 1, &quot;some text&quot;, {&quot;a&quot;: 1, &quot;b&quot;: 2}, {&quot;a&quot;: 1, &quot;b&quot;: 2}
+// (key and value are the same here)
+for (let [key, value] of mySet1.entries()) console.log(key)
+
+// convert Set object to an Array object, with Array.from
+const myArr = Array.from(mySet1) // [1, &quot;some text&quot;, {&quot;a&quot;: 1, &quot;b&quot;: 2}, {&quot;a&quot;: 1, &quot;b&quot;: 2}]
+
+// the following will also work if run in an HTML document
+mySet1.add(document.body)
+mySet1.has(document.querySelector(&#39;body&#39;)) // true
+
+// converting between Set and Array
+const mySet2 = new Set([1, 2, 3, 4])
+mySet2.size                    // 4
+[...mySet2]                    // [1, 2, 3, 4]
+
+// intersect can be simulated via
+const intersection = new Set([...mySet1].filter(x =&gt; mySet2.has(x)))
+
+// difference can be simulated via
+const difference = new Set([...mySet1].filter(x =&gt; !mySet2.has(x)))
+
+// Iterate set entries with forEach()
+mySet1.forEach(function(value) {
+  console.log(value)
+})
+
+// 1
+// 2
+// 3
+// 4</code></pre>
+<h3 id="implementing-basic-set-operations">Implementing basic set operations</h3>
+<pre><code>function isSuperset(set, subset) {
+    for (let elem of subset) {
+        if (!set.has(elem)) {
+            return false
+        }
+    }
+    return true
+}
+
+function union(setA, setB) {
+    let _union = new Set(setA)
+    for (let elem of setB) {
+        _union.add(elem)
+    }
+    return _union
+}
+
+function intersection(setA, setB) {
+    let _intersection = new Set()
+    for (let elem of setB) {
+        if (setA.has(elem)) {
+            _intersection.add(elem)
+        }
+    }
+    return _intersection
+}
+
+function symmetricDifference(setA, setB) {
+    let _difference = new Set(setA)
+    for (let elem of setB) {
+        if (_difference.has(elem)) {
+            _difference.delete(elem)
+        } else {
+            _difference.add(elem)
+        }
+    }
+    return _difference
+}
+
+function difference(setA, setB) {
+    let _difference = new Set(setA)
+    for (let elem of setB) {
+        _difference.delete(elem)
+    }
+    return _difference
+}
+
+// Examples
+const setA = new Set([1, 2, 3, 4])
+const setB = new Set([2, 3])
+const setC = new Set([3, 4, 5, 6])
+
+isSuperset(setA, setB)          // returns true
+union(setA, setC)               // returns Set {1, 2, 3, 4, 5, 6}
+intersection(setA, setC)        // returns Set {3, 4}
+symmetricDifference(setA, setC) // returns Set {1, 2, 5, 6}
+difference(setA, setC)          // returns Set {1, 2}</code></pre>
+<h3 id="relation-with-array-objects">Relation with Array objects</h3>
+<pre><code>let myArray = [&#39;value1&#39;, &#39;value2&#39;, &#39;value3&#39;]
+
+// Use the regular Set constructor to transform an Array into a Set
+let mySet = new Set(myArray)
+
+mySet.has(&#39;value1&#39;)     // returns true
+
+// Use the spread operator to transform a set into an Array.
+console.log([...mySet]) // Will show you exactly the same Array as myArray</code></pre>
+<h3 id="remove-duplicate-elements-from-the-array">Remove duplicate elements from the array</h3>
+<pre><code>// Use to remove duplicate elements from the array
+
+const numbers = [2,3,4,4,2,3,3,4,4,5,5,6,6,7,5,32,3,4,5]
+
+console.log([...new Set(numbers)])
+
+// [2, 3, 4, 5, 6, 7, 32]</code></pre>
+<h3 id="relation-with-strings">Relation with Strings</h3>
+<pre><code>let text = &#39;India&#39;
+
+const mySet = new Set(text)  // Set(5) {&#39;I&#39;, &#39;n&#39;, &#39;d&#39;, &#39;i&#39;, &#39;a&#39;}
+mySet.size  // 5
+
+//case sensitive &amp; duplicate ommision
+new Set(&quot;Firefox&quot;)  // Set(7) { &quot;F&quot;, &quot;i&quot;, &quot;r&quot;, &quot;e&quot;, &quot;f&quot;, &quot;o&quot;, &quot;x&quot; }
+new Set(&quot;firefox&quot;)  // Set(6) { &quot;f&quot;, &quot;i&quot;, &quot;r&quot;, &quot;e&quot;, &quot;o&quot;, &quot;x&quot; }</code></pre>
+<h3 id="use-set-to-ensure-the-uniqueness-of-a-list-of-values">Use Set to ensure the uniqueness of a list of values</h3>
+<pre><code>const array = Array
+  .from(document.querySelectorAll(&#39;[id]&#39;))
+  .map(function(e) {
+      return e.id
+  });
+
+const set = new Set(array);
+console.assert(set.size == array.length);</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-set-objects">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-set-objects</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>Set</code></p>
+<p>38</p>
+<p>12</p>
+<p>13</p>
+<p>11</p>
+<p>25</p>
+<p>8</p>
+<p>38</p>
+<p>38</p>
+<p>14</p>
+<p>25</p>
+<p>8</p>
+<p>3.0</p>
+<p><code>Set</code></p>
+<p>38</p>
+<p>12</p>
+<p>13</p>
+<p>11</p>
+<p>25</p>
+<p>8</p>
+<p>38</p>
+<p>38</p>
+<p>14</p>
+<p>25</p>
+<p>8</p>
+<p>3.0</p>
+<p><code>add</code></p>
+<p>38</p>
+<p>12</p>
+<p>13</p>
+<p>11</p>
+<p>Returns ‘undefined’ instead of the ‘Set’ object.</p>
+<p>25</p>
+<p>8</p>
+<p>38</p>
+<p>38</p>
+<p>14</p>
+<p>25</p>
+<p>8</p>
+<p>3.0</p>
+<p><code>clear</code></p>
+<p>38</p>
+<p>12</p>
+<p>19</p>
+<p>11</p>
+<p>25</p>
+<p>8</p>
+<p>38</p>
+<p>38</p>
+<p>19</p>
+<p>25</p>
+<p>8</p>
+<p>3.0</p>
+<p><code>delete</code></p>
+<p>38</p>
+<p>12</p>
+<p>13</p>
+<p>11</p>
+<p>25</p>
+<p>8</p>
+<p>38</p>
+<p>38</p>
+<p>14</p>
+<p>25</p>
+<p>8</p>
+<p>3.0</p>
+<p><code>entries</code></p>
+<p>38</p>
+<p>12</p>
+<p>24</p>
+<p>No</p>
+<p>25</p>
+<p>8</p>
+<p>38</p>
+<p>38</p>
+<p>24</p>
+<p>25</p>
+<p>8</p>
+<p>3.0</p>
+<p><code>forEach</code></p>
+<p>38</p>
+<p>12</p>
+<p>25</p>
+<p>11</p>
+<p>25</p>
+<p>8</p>
+<p>38</p>
+<p>38</p>
+<p>25</p>
+<p>25</p>
+<p>8</p>
+<p>3.0</p>
+<p><code>has</code></p>
+<p>38</p>
+<p>12</p>
+<p>13</p>
+<p>11</p>
+<p>25</p>
+<p>8</p>
+<p>38</p>
+<p>38</p>
+<p>14</p>
+<p>25</p>
+<p>8</p>
+<p>3.0</p>
+<p><code>key_equality_for_zeros</code></p>
+<p>38</p>
+<p>12</p>
+<p>29</p>
+<p>No</p>
+<p>25</p>
+<p>9</p>
+<p>38</p>
+<p>38</p>
+<p>29</p>
+<p>25</p>
+<p>9</p>
+<p>3.0</p>
+<p><code>size</code></p>
+<p>38</p>
+<p>12</p>
+<p>19</p>
+<p>From Firefox 13 to Firefox 18, the <code>size</code> property was implemented as a <code>Set.prototype.size()</code> method, this has been changed to a property in later versions conform to the ECMAScript 2015 specification.</p>
+<p>11</p>
+<p>25</p>
+<p>8</p>
+<p>38</p>
+<p>38</p>
+<p>19</p>
+<p>From Firefox 13 to Firefox 18, the <code>size</code> property was implemented as a <code>Set.prototype.size()</code> method, this has been changed to a property in later versions conform to the ECMAScript 2015 specification.</p>
+<p>25</p>
+<p>8</p>
+<p>3.0</p>
+<p><code>values</code></p>
+<p>38</p>
+<p>38</p>
+<p>12</p>
+<p>12</p>
+<p>24</p>
+<p>24</p>
+<p>No</p>
+<p>25</p>
+<p>25</p>
+<p>8</p>
+<p>8</p>
+<p>38</p>
+<p>38</p>
+<p>38</p>
+<p>38</p>
+<p>24</p>
+<p>24</p>
+<p>25</p>
+<p>25</p>
+<p>8</p>
+<p>8</p>
+<p>3.0</p>
+<p>3.0</p>
+<p><code>@@iterator</code></p>
+<p>43</p>
+<p>12</p>
+<p>36</p>
+<p>27-36</p>
+<p>A placeholder property named <code>@@iterator</code> is used.</p>
+<p>17-27</p>
+<p>A placeholder property named <code>iterator</code> is used.</p>
+<p>No</p>
+<p>30</p>
+<p>9</p>
+<p>43</p>
+<p>43</p>
+<p>36</p>
+<p>27-36</p>
+<p>A placeholder property named <code>@@iterator</code> is used.</p>
+<p>17-27</p>
+<p>A placeholder property named <code>iterator</code> is used.</p>
+<p>30</p>
+<p>9</p>
+<p>4.0</p>
+<p><code>@@species</code></p>
+<p>51</p>
+<p>13</p>
+<p>41</p>
+<p>No</p>
+<p>38</p>
+<p>10</p>
+<p>51</p>
+<p>51</p>
+<p>41</p>
+<p>41</p>
+<p>10</p>
+<p>5.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="map"><code>Map</code></a></li>
+<li><a href="weakmap"><code>WeakMap</code></a></li>
+<li><a href="weakset"><code>WeakSet</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set</a></p>
+</body>
+</html>

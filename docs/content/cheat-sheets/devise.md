@@ -1,27 +1,16 @@
----
-title: title
-subtitle: subtitle
-date: '2022-01-03'
-thumb_img_alt: lorem-ipsum
-content_img_alt: lorem-ipsum
-excerpt: lorem-ipsum
-seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
-template: post
-thumb_img_path: images/css-72a655a7.jpg
----
+subtitle
 
----
+2022-01-03
 
-## title: Devise
+------------------------------------------------------------------------
 
-[Devise](https://github.com/plataformatec/devise) is a flexible authentication
-gem.
+title: Devise
+-------------
 
-## Installation
+[Devise](https://github.com/plataformatec/devise) is a flexible authentication gem.
+
+Installation
+------------
 
 Rails 3: Add the following to your Gemfile
 
@@ -42,7 +31,8 @@ Generate devise for your model
 
     $ rails generate devise:views
 
-## Helpers
+Helpers
+-------
 
     user_signed_in?
     current_user
@@ -52,11 +42,13 @@ Generate devise for your model
     edit_user_registration_path (Edit registration)
     new_user_registration_path (Register new user)
 
-## Controller stuff
+Controller stuff
+----------------
 
     before_filter :authenticate_user!
 
-## Model
+Model
+-----
 
 ### Model options
 
@@ -81,7 +73,8 @@ Generate devise for your model
       t.timestamps
     end
 
-## Routing
+Routing
+-------
 
 ### Authenticated and unauthenticated routes
 
@@ -99,7 +92,7 @@ Generate devise for your model
       get 'sign_in', :to => 'devise/sessions#new'
     end
 
-### Devise_for magic
+### Devise\_for magic
 
     devise_for :users
 
@@ -119,7 +112,7 @@ Generate devise for your model
             user_confirmation GET  /users/confirmation(.:format)     {:controller=>"devise/confirmations", :action=>"show"}
                               POST /users/confirmation(.:format)     {:controller=>"devise/confirmations", :action=>"create"}
 
-### Customizing devise_for
+### Customizing devise\_for
 
     devise_for :users,
       :path => "usuarios",
@@ -132,7 +125,8 @@ Generate devise for your model
         :registration => 'register',
         :sign_up => 'cmon_let_me_in' }
 
-## Test helpers
+Test helpers
+------------
 
     include Devise::TestHelpers
     https://github.com/plataformatec/devise/blob/1094ba65aac1d37713f2cba71f9edad76b5ca274/lib/devise/test_helpers.rb

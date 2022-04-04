@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>undeclared_var</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="referenceerror-assignment-to-undeclared-variable-x">ReferenceError: assignment to undeclared variable “x”</h1>
+<p>The JavaScript <a href="../strict_mode">strict mode</a>-only exception “Assignment to undeclated variable” occurs when the value has been assigned to an undeclared variable.</p>
+<h2 id="message">Message</h2>
+<pre><code>ReferenceError: assignment to undeclared variable &quot;x&quot; (Firefox)
+ReferenceError: &quot;x&quot; is not defined (Chrome)
+ReferenceError: Variable undefined in strict mode (Edge)</code></pre>
+<h2 id="error-type">Error type</h2>
+<p><a href="../global_objects/referenceerror"><code>ReferenceError</code></a> warning in <a href="../strict_mode">strict mode</a> only.</p>
+<h2 id="what-went-wrong">What went wrong?</h2>
+<p>A value has been assigned to an undeclared variable. In other words, there was an assignment without the <code>var</code> keyword. There are some differences between declared and undeclared variables, which might lead to unexpected results and that’s why JavaScript presents an error in strict mode.</p>
+<p>Three things to note about declared and undeclared variables:</p>
+<ul>
+<li>Declared variables are constrained in the execution context in which they are declared. Undeclared variables are always global.</li>
+<li>Declared variables are created before any code is executed. Undeclared variables do not exist until the code assigning to them is executed.</li>
+<li>Declared variables are a non-configurable property of their execution context (function or global). Undeclared variables are configurable (e.g. can be deleted).</li>
+</ul>
+<p>For more details and examples, see the <code>var</code> reference page.</p>
+<p>Errors about undeclared variable assignments occur in <a href="../strict_mode">strict mode code</a> only. In non-strict code, they are silently ignored.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="invalid-cases">Invalid cases</h3>
+<p>In this case, the variable “bar” is an undeclared variable.</p>
+<pre><code>function foo() {
+  &#39;use strict&#39;;
+  bar = true;
+}
+foo(); // ReferenceError: assignment to undeclared variable bar</code></pre>
+<h3 id="valid-cases">Valid cases</h3>
+<p>To make “bar” a declared variable, you can add the <code>var</code> keyword in front of it.</p>
+<pre><code>function foo() {
+  &#39;use strict&#39;;
+  var bar = true;
+}
+foo();</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../strict_mode">Strict mode</a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Undeclared_var" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Undeclared_var</a></p>
+</body>
+</html>

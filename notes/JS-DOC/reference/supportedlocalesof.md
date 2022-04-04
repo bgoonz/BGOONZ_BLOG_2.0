@@ -1,8 +1,10 @@
-# Intl.RelativeTimeFormat.supportedLocalesOf()
+Intl.RelativeTimeFormat.supportedLocalesOf()
+============================================
 
-The `Intl.RelativeTimeFormat.supportedLocalesOf()` method returns an array containing those of the provided locales that are supported in date and time formatting without having to fall back to the runtime's default locale.
+The `Intl.RelativeTimeFormat.supportedLocalesOf()` method returns an array containing those of the provided locales that are supported in date and time formatting without having to fall back to the runtime’s default locale.
 
-## Syntax
+Syntax
+------
 
     Intl.RelativeTimeFormat.supportedLocalesOf(locales)
     Intl.RelativeTimeFormat.supportedLocalesOf(locales, options)
@@ -16,35 +18,37 @@ A string with a BCP 47 language tag, or an array of such strings. For the genera
 An object that may have the following property:
 
 `localeMatcher`  
-The locale matching algorithm to use. Possible values are "`lookup`" and "`best fit`"; the default is "`best fit`". For information about this option, see the [Intl](../../intl#locale_negotiation) page.
+The locale matching algorithm to use. Possible values are “`lookup`” and “`best fit`”; the default is “`best fit`”. For information about this option, see the [Intl](../../intl#locale_negotiation) page.
 
 ### Return value
 
-An array of strings representing a subset of the given locale tags that are supported in date and time formatting without having to fall back to the runtime's default locale.
+An array of strings representing a subset of the given locale tags that are supported in date and time formatting without having to fall back to the runtime’s default locale.
 
-## Description
+Description
+-----------
 
-Returns an array with a subset of the language tags provided in `locales`. The language tags returned are those for which the runtime supports a locale in date and time formatting that the locale matching algorithm used considers a match, so that it wouldn't have to fall back to the default locale.
+Returns an array with a subset of the language tags provided in `locales`. The language tags returned are those for which the runtime supports a locale in date and time formatting that the locale matching algorithm used considers a match, so that it wouldn’t have to fall back to the default locale.
 
-## Examples
+Examples
+--------
 
 ### Using supportedLocalesOf()
 
-Assuming a runtime that supports Indonesian and German but not Balinese in date and time formatting, `supportedLocalesOf` returns the Indonesian and German language tags unchanged, even though `pinyin` collation is neither relevant to date and time formatting nor used with Indonesian, and a specialized German for Indonesia is unlikely to be supported. Note the specification of the "`lookup`" algorithm here — a "`best fit`" matcher might decide that Indonesian is an adequate match for Balinese since most Balinese speakers also understand Indonesian, and therefore return the Balinese language tag as well.
+Assuming a runtime that supports Indonesian and German but not Balinese in date and time formatting, `supportedLocalesOf` returns the Indonesian and German language tags unchanged, even though `pinyin` collation is neither relevant to date and time formatting nor used with Indonesian, and a specialized German for Indonesia is unlikely to be supported. Note the specification of the “`lookup`” algorithm here — a “`best fit`” matcher might decide that Indonesian is an adequate match for Balinese since most Balinese speakers also understand Indonesian, and therefore return the Balinese language tag as well.
 
     const locales = ['ban', 'id-u-co-pinyin', 'de-ID'];
     const options = { localeMatcher: 'lookup' };
     console.log(Intl.RelativeTimeFormat.supportedLocalesOf(locales, options).join(', '));
     // → "id-u-co-pinyin, de-ID"
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.RelativeTimeFormat.supportedLocalesOf">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Internationalization API Specification (ECMAScript Internationalization API)<br />
+</p><span class="small">#sec-Intl.RelativeTimeFormat.supportedLocalesOf</span></td></tr></tbody></table>
 
-<span class="small">#sec-Intl.RelativeTimeFormat.supportedLocalesOf</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -100,7 +104,8 @@ No
 
 10.0
 
-## See also
+See also
+--------
 
 -   [`Intl.RelativeTimeFormat`](../relativetimeformat)
 

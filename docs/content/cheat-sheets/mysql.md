@@ -1,53 +1,59 @@
----
-tags: [database]
----
+To connect to a database:
+=========================
 
-# To connect to a database:
+mysql -h -u -p
 
-mysql -h <host> -u <username> -p
+To backup all databases:
+========================
 
-# To backup all databases:
+mysqldump –all-databases –all-routines -u -p &gt; ~/dump.sql
 
-mysqldump --all-databases --all-routines -u <username> -p > ~/dump.sql
+To restore all databases:
+=========================
 
-# To restore all databases:
+mysql -u -p &lt; ~/fulldump.sql
 
-mysql -u <username> -p < ~/fulldump.sql
+To create a database in utf8 charset:
+=====================================
 
-# To create a database in utf8 charset:
+CREATE DATABASE owa CHARACTER SET utf8 COLLATE utf8\_general\_ci;
 
-CREATE DATABASE owa CHARACTER SET utf8 COLLATE utf8_general_ci;
+To add a user and give rights on the given database:
+====================================================
 
-# To add a user and give rights on the given database:
+GRANT ALL PRIVILEGES ON database.\* TO ‘user’@‘localhost’IDENTIFIED BY ’password’ WITH GRANT OPTION;
 
-GRANT ALL PRIVILEGES ON database.\* TO 'user'@'localhost'IDENTIFIED BY 'password' WITH GRANT OPTION;
+To list the privileges granted to the account that you are using to connect to the server. Any of the 3 statements will work. :
+===============================================================================================================================
 
-# To list the privileges granted to the account that you are using to connect to the server. Any of the 3 statements will work. :
+SHOW GRANTS FOR CURRENT\_USER(); SHOW GRANTS; SHOW GRANTS FOR CURRENT\_USER;
 
-SHOW GRANTS FOR CURRENT_USER();
-SHOW GRANTS;
-SHOW GRANTS FOR CURRENT_USER;
+Basic SELECT Statement:
+=======================
 
-# Basic SELECT Statement:
+SELECT \* FROM tbl\_name;
 
-SELECT \* FROM tbl_name;
+Basic INSERT Statement:
+=======================
 
-# Basic INSERT Statement:
+INSERT INTO tbl\_name (col1,col2) VALUES(15,col1\*2);
 
-INSERT INTO tbl_name (col1,col2) VALUES(15,col1\*2);
+Basic UPDATE Statement:
+=======================
 
-# Basic UPDATE Statement:
+UPDATE tbl\_name SET col1 = “example”;
 
-UPDATE tbl_name SET col1 = "example";
+Basic DELETE Statement:
+=======================
 
-# Basic DELETE Statement:
+DELETE FROM tbl\_name WHERE user = ‘jcole’;
 
-DELETE FROM tbl_name WHERE user = 'jcole';
-
-# To check stored procedure:
+To check stored procedure:
+==========================
 
 SHOW PROCEDURE STATUS;
 
-# To check stored function:
+To check stored function:
+=========================
 
 SHOW FUNCTION STATUS;

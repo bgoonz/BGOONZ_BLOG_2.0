@@ -1,4 +1,5 @@
-# TypedArray.BYTES_PER_ELEMENT
+TypedArray.BYTES\_PER\_ELEMENT
+==============================
 
 The `TypedArray.BYTES_PER_ELEMENT` property represents the size in bytes of each element in an typed array.
 
@@ -16,13 +17,15 @@ Configurable
 
 no
 
-## Description
+Description
+-----------
 
 `TypedArray` objects differ from each other in the number of bytes per element and in the way the bytes are interpreted. The `BYTES_PER_ELEMENT` constant contains the number of bytes each element in the given `TypedArray` has.
 
-## Examples
+Examples
+--------
 
-### Using BYTES_PER_ELEMENT
+### Using BYTES\_PER\_ELEMENT
 
     Int8Array.BYTES_PER_ELEMENT;         // 1
     Uint8Array.BYTES_PER_ELEMENT;        // 1
@@ -34,12 +37,11 @@ no
     Float32Array.BYTES_PER_ELEMENT;      // 4
     Float64Array.BYTES_PER_ELEMENT;      // 8
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-typedarray.bytes_per_element">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-typedarray.bytes_per_element</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-typedarray.bytes_per_element</span></td></tr></tbody></table>
 
 `BYTES_PER_ELEMENT`
 
@@ -67,11 +69,11 @@ no
 
 1.0
 
-## See also
+See also
+--------
 
 -   [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
 -   [`TypedArray`](../typedarray)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/BYTES_PER_ELEMENT" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/BYTES_PER_ELEMENT</a>

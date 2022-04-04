@@ -1,14 +1,17 @@
-# Error.prototype.message
+Error.prototype.message
+=======================
 
 The `message` property is a human-readable description of the error.
 
-## Description
+Description
+-----------
 
 This property contains a brief description of the error if one is available or has been set. [SpiderMonkey](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey) makes extensive use of the `message` property for exceptions. The `message` property combined with the [`name`](name) property is used by the [`Error.prototype.toString()`](tostring) method to create a string representation of the Error.
 
 By default, the `message` property is an empty string, but this behavior can be overridden for an instance by specifying a message as the first argument to the [`Error`](error) constructor.
 
-## Examples
+Examples
+--------
 
 ### Throwing a custom error
 
@@ -16,12 +19,11 @@ By default, the `message` property is an empty string, but this behavior can be 
     // e.message is 'Could not parse input'
     throw e;
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-error.prototype.message">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-error.prototype.message</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-error.prototype.message</span></td></tr></tbody></table>
 
 `message`
 
@@ -49,7 +51,8 @@ By default, the `message` property is an empty string, but this behavior can be 
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`Error.prototype.name`](name)
 -   [`Error.prototype.toString()`](tostring)

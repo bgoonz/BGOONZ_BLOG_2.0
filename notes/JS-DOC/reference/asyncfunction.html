@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>asyncfunction</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="asyncfunction">AsyncFunction</h1>
+<p>The <code>AsyncFunction</code> creates a new <a href="../statements/async_function">async function</a> object. In JavaScript, every asynchronous function is actually an <code>AsyncFunction</code> object.</p>
+<p>Note that <code>AsyncFunction</code> is <em>not</em> a global object. It can be obtained with the following code:</p>
+<pre><code>Object.getPrototypeOf(async function(){}).constructor</code></pre>
+<h2 id="syntax">Syntax</h2>
+<pre><code>new AsyncFunction(arg0, functionBody)
+new AsyncFunction(arg0, arg1, functionBody)
+new AsyncFunction(arg0, arg1, ...argN, functionBody)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>arg1, arg2, ... argN</code><br />
+Names to be used by the function as formal argument names. Each must be a string that corresponds to a valid JavaScript identifier or a list of such strings separated with a comma; for example “<code>x</code>”, “<code>theValue</code>”, or “<code>a,b</code>”.</p>
+<p><code>functionBody</code><br />
+A string containing the JavaScript statements comprising the function definition.</p>
+<h2 id="description">Description</h2>
+<p><a href="../statements/async_function"><code>async function</code></a> objects created with the <code>AsyncFunction</code> constructor are parsed when the function is created. This is less efficient than declaring an async function with an <a href="../statements/async_function"><code>async function expression</code></a> and calling it within your code, because such functions are parsed with the rest of the code.</p>
+<p>All arguments passed to the function are treated as the names of the identifiers of the parameters in the function to be created, in the order in which they are passed.</p>
+<p><strong>Note:</strong> <a href="../statements/async_function">async functions</a> created with the <code>AsyncFunction</code> constructor do not create closures to their creation contexts; they are always created in the global scope.</p>
+<p>When running them, they will only be able to access their own local variables and global ones, not the ones from the scope in which the <code>AsyncFunction</code> constructor was called.</p>
+<p>This is different from using <a href="eval"><code>eval</code></a> with code for an async function expression.</p>
+<p>Invoking the <code>AsyncFunction</code> constructor as a function (without using the <code>new</code> operator) has the same effect as invoking it as a constructor.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="creating-an-async-function-from-an-asyncfunction-constructor">Creating an async function from an AsyncFunction() constructor</h3>
+<pre><code>function resolveAfter2Seconds(x) {
+  return new Promise(resolve =&gt; {
+    setTimeout(() =&gt; {
+      resolve(x);
+    }, 2000);
+  });
+}
+
+let AsyncFunction = Object.getPrototypeOf(async function(){}).constructor
+
+let a = new AsyncFunction(&#39;a&#39;,
+                          &#39;b&#39;,
+                          &#39;return await resolveAfter2Seconds(a) + await resolveAfter2Seconds(b);&#39;);
+
+a(10, 20).then(v =&gt; {
+  console.log(v); // prints 30 after 4 seconds
+});</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-async-function-objects">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-async-function-objects</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>AsyncFunction</code></p>
+<p>55</p>
+<p>15</p>
+<p>52</p>
+<p>No</p>
+<p>42</p>
+<p>10.1</p>
+<p>55</p>
+<p>55</p>
+<p>52</p>
+<p>42</p>
+<p>10.3</p>
+<p>6.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../statements/async_function">async function function</a></li>
+<li><a href="../operators/async_function">async function expression</a></li>
+<li><a href="function"><code>Function</code></a></li>
+<li><a href="../statements/function">function statement</a></li>
+<li><a href="../operators/function">function expression</a></li>
+<li><a href="../functions">Functions and function scope</a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AsyncFunction" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AsyncFunction</a></p>
+</body>
+</html>

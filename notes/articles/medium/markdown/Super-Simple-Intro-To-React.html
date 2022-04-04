@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Super-Simple-Intro-To-React</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="super-simple-intro-to-react">Super Simple Intro To React</h1>
+<p>This is a basic introduction for those who feel overwhelmed by the vast microcosm that is the React ecosystem!</p>
+<hr />
+<h3 id="super-simple-intro-to-react-1">Super Simple Intro To React</h3>
+<h4 id="this-is-a-basic-introduction-for-those-who-feel-overwhelmed-by-the-vast-microcosm-that-is-the-react-ecosystem">This is a basic introduction for those who feel overwhelmed by the vast microcosm that is the React ecosystem!</h4>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*3wl1cp6IklxaFuBi.gif" class="graf-image" />
+</figure>
+<h3 id="heres-a-sandbox-for-you-to-practice-with">Here’s a sandbox for you to practice with:</h3>
+<p><a href="https://codesandbox.io/s/intro-to-react-i72er" class="markup--anchor markup--p-anchor">https://codesandbox.io/s/intro-to-react-i72er</a></p>
+<p><a href="https://codesandbox.io/s/intro-to-react-i72er" class="markup--anchor markup--p-anchor">https://codesandbox.io/s/intro-to-react-i72er</a></p>
+<h3 id="introduction-to-react">Introduction to React</h3>
+<ul>
+<li><span id="714e">Simply a nice library that turns data into DOM.</span></li>
+<li><span id="dffd"><code>Tree Diffing</code> : Fast comparison and patching of data by comparing the current virtual DOM and new virtual DOM - updating only the pieces that change.</span></li>
+<li><span id="d53b"><code>It's just a tree with some fancy diffing</code></span></li>
+</ul>
+<h3 id="create-element">Create Element</h3>
+<p><strong>From JavaScript To DOM</strong></p>
+<ul>
+<li><span id="9d7c">The <code>React.createElement</code> function has the following form:</span></li>
+</ul>
+<!-- -->
+<pre><code>React.createElement(type, [props], [...children]);</code></pre>
+<ul>
+<li><span id="44e8"><code>Type</code> : Type of element to create, i.e. a string for an HTML element or a reference to a function or class that is a React component.</span></li>
+<li><span id="7359"><code>Props</code> : Object that contains data to render the element.</span></li>
+<li><span id="5990"><code>Children</code> : Children of the element, as many as you want.</span></li>
+</ul>
+<p><strong>Creating elements</strong></p>
+<ul>
+<li><span id="03dd">Our rendering goal:</span></li>
+</ul>
+<!-- -->
+<pre><code>&lt;ul&gt;
+  &lt;li class=&quot;selected&quot;&gt;
+    &lt;a href=&quot;/pets&quot;&gt;Pets&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;/owners&quot;&gt;Owners&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+<ul>
+<li><span id="57a5">There are five tags to create:</span></li>
+<li><span id="9d1c">One <code>ul</code></span></li>
+<li><span id="30d1">Two <code>li</code></span></li>
+<li><span id="dd2d">Two <code>a</code></span></li>
+</ul>
+<blockquote>
+<p>There are certain attributes we want to appear in the DOM for these tags as well:</p>
+</blockquote>
+<ul>
+<li><span id="1bce">Each <code>li</code> has a <code>class</code> (or <code>className</code> in React)</span></li>
+<li><span id="19af">Both <code>a</code> ele’s have <code>href</code> attributes</span></li>
+<li><span id="5dfe">Also keep in mind the parent child relationships happening between the tags.</span></li>
+<li><span id="cb9e"><code>ul</code> is the parent of both <code>li</code></span></li>
+<li><span id="7a63">Each <code>li</code> has an <code>a</code> element as a child</span></li>
+<li><span id="c0be">Each <code>a</code> has a <code>text content</code> child</span></li>
+</ul>
+<!-- -->
+<pre><code>React.createElement(
+  &quot;ul&quot;,
+  null,
+  React.createElement(
+    &quot;li&quot;,
+    { className: &quot;selected&quot; },
+    React.createElement(&quot;a&quot;, { href: &quot;/pets&quot; }, &quot;Pets&quot;)
+  ),
+  React.createElement(
+    &quot;li&quot;,
+    null,
+    React.createElement(&quot;a&quot;, { href: &quot;/owners&quot; }, &quot;Owners&quot;)
+  )
+);</code></pre>
+<p><strong>Converting to virtual DOM</strong></p>
+<ul>
+<li><span id="9df1">After you set up your <code>React.createElement</code>, you use <code>React.render</code> to take the value returned from cE and a DOM node to insert into the conversion of the real DOM.</span></li>
+</ul>
+<!-- -->
+<pre><code>// Put the element tree in a variable
+const navList = React.createElement(
+  &quot;ul&quot;,
+  null,
+  React.createElement(
+    &quot;li&quot;,
+    { className: &quot;selected&quot; },
+    React.createElement(&quot;a&quot;, { href: &quot;/pets&quot; }, &quot;Pets&quot;)
+  ),
+  React.createElement(
+    &quot;li&quot;,
+    null,
+    React.createElement(&quot;a&quot;, { href: &quot;/owners&quot; }, &quot;Owners&quot;)
+  )
+);
+
+// Get a DOM node for React to render to
+const mainElement = document.querySelector(&quot;main&quot;);
+
+// Give React the element tree and the target
+ReactDOM.render(navList, mainElement);</code></pre>
+<blockquote>
+<p>JS Code =&gt; Virtual DOM =&gt; Real Dom</p>
+</blockquote>
+<p><strong>Updates</strong></p>
+<ul>
+<li><span id="8e8f">If you call React.render a second or multiple times it just checks the existing Virtual DOM and it knows which smaller areas to change.</span></li>
+</ul>
+<p><strong>Thinking in Components</strong></p>
+<ul>
+<li><span id="fb8f">Components are pieces of reusable front-end pieces.</span></li>
+<li><span id="1f67">Components should be Single Responsibility Principle compliant.</span></li>
+</ul>
+<h3 id="create-element-1">Create Element</h3>
+<p><code>React.createElement Demo</code></p>
+<ul>
+<li><span id="3f55">Can import non-local dependencies with <code>import 'package-link'</code></span></li>
+</ul>
+<!-- -->
+<pre><code>const App = () =&gt; React.createElement(&quot;h1&quot;, null, &quot;Hello, Programmers!&quot;);
+
+const target = document.querySelector(&quot;main&quot;);
+const app = React.createElement(App, null);
+// Give React the element tree and the target
+ReactDOM.render(app, target);</code></pre>
+<ul>
+<li><span id="74b4">Remember when importing modules from other files you have to denote the file type in the import statement.</span></li>
+</ul>
+<p><strong>HTML Original</strong></p>
+<pre><code>&lt;section class=&quot;clue&quot;&gt;
+  &lt;h1 class=&quot;clue__title&quot;&gt;Clue$ 268530&lt;/h1&gt;
+  &lt;div class=&quot;clue__question&quot;&gt;
+      2009: I dreamed a Dream
+  &lt;/div&gt;
+  &lt;div class=&quot;clue__category&quot;&gt;
+      &lt;&lt;unparsed&gt;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;clue__amount&quot;&gt;
+      $800
+  &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+<p><strong>React Version</strong></p>
+<pre><code>const Clue = () =&gt;
+  React.createElement(
+    &quot;section&quot;,
+    { className: &quot;clue&quot; },
+    React.createElement(&quot;h1&quot;, { className: &quot;clue__title&quot; }, &quot;Title&quot;),
+    React.createElement(&quot;div&quot;, { className: &quot;clue__question&quot; }, &quot;?&quot;),
+    React.createElement(&quot;div&quot;, { className: &quot;clue__category&quot; }, &quot;Category&quot;),
+    React.createElement(&quot;div&quot;, { className: &quot;clue__amount&quot; }, &quot;$800&quot;)
+  );</code></pre>
+<ul>
+<li><span id="9fe5">Because <code>class</code> is a reserved keyword in JS, in React we can use <code>className</code> to assign a class to an element.</span></li>
+<li><span id="9cb2">Remember the data that goes into createElement: element type, data to pass into the element, and then children.</span></li>
+<li><span id="0021"><code>props</code> : Properties;</span></li>
+<li><span id="bf4e">To handle certain values that are initially undefined, we can use <code>defaultProps</code>.</span></li>
+</ul>
+<!-- -->
+<pre><code>Clue.defaultProps = {
+  category: {},
+};</code></pre>
+<ul>
+<li><span id="6dcb">You can change in the devTools Network tab the internet speed to check for values that may be undefined to hangle with defaultProps.</span></li>
+<li><span id="5608">If we fetch multiple pieces of data, we can render many things by using <code>map</code>.</span></li>
+<li><span id="3ad4">You need to assign a unique key to each of the clues.</span></li>
+<li><span id="8b0d">We need to keep track of them individually so that React can easily refer to a specific one if there is an issue.<br />
+<code>clue =&gt; { key:clue.id, ...clue }</code></span></li>
+</ul>
+<!-- -->
+<pre><code>const App = (props) =&gt;
+  React.createElement(
+    &quot;h1&quot;,
+    null,
+    props.clues.map((clue) =&gt;
+      React.createElement(Clue, { key: clue.id, ...clue })
+    )
+  );
+
+export default App;</code></pre>
+<ul>
+<li><span id="0eb5">Note: JSX is preferred over React.createElement;</span></li>
+</ul>
+<h3 id="notes-from-hello-programmer-exercise">Notes from Hello Programmer Exercise</h3>
+<ul>
+<li><span id="6f06">When you import modules from websites they must have CORs activated.</span></li>
+<li><span id="5934">These import statements, import <code>global variables</code>.</span></li>
+<li><span id="905d">When we want to move our code into production we need to change the imports into the production minified versions.</span></li>
+</ul>
+<!-- -->
+<pre><code>import &quot;https://unpkg.com/react@16/umd/react.production.min.js&quot;;
+import &quot;https://unpkg.com/react-dom@16.13.1/umd/react-dom.production.min.js&quot;;</code></pre>
+<ul>
+<li><span id="33ca">While we will never actually be creating full apps with just React.createElement =&gt; it is the enginer that is running under the hood!</span></li>
+</ul>
+<!-- -->
+<pre><code>import &quot;https://unpkg.com/react@16/umd/react.development.js&quot;;
+import &quot;https://unpkg.com/react-dom@16/umd/react-dom.development.js&quot;;
+
+const Links = () =&gt;
+  React.createElement(
+    &quot;ul&quot;,
+    { id: &quot;nav-links&quot; },
+    React.createElement(
+      &quot;li&quot;,
+      { className: &quot;is-selected&quot; },
+      React.createElement(&quot;a&quot;, { href: &quot;https://bgoonz-blog.netlify.app/&quot; }, &quot;BgoonzBlog2.0&quot;)
+    ),
+    React.createElement(
+      &quot;li&quot;,
+      null,
+      React.createElement(&quot;a&quot;, { href: &quot;https://github.com/bgoonz/&quot; }, &quot;Github&quot;)
+    )
+  );
+
+// Set up React Element: Type, Imported Data, Child (Child is Text in this Scenario)
+// HelloWorld is a function based component
+const HelloWorld = () =&gt; React.createElement(&quot;h1&quot;, null, &quot;Hello, Programmers&quot;);
+
+const AllTogether = () =&gt;
+  React.createElement(
+    &quot;div&quot;,
+    null,
+    React.createElement(HelloWorld, null),
+    React.createElement(Links, null)
+  );
+
+// Target the Element to append new Ele
+const target = document.querySelector(&quot;main&quot;);
+
+// Assign your &#39;App&#39; to your created Elements
+// We are creating an element from the HelloWorld function.
+const app = React.createElement(AllTogether, null);
+
+// Render from the Virtual Dom to the Actual Dom
+ReactDOM.render(app, target);</code></pre>
+<h3 id="introduction-to-jsx">Introduction to JSX</h3>
+<ul>
+<li><span id="f398"><code>JSX</code> : Javascript Extension, a new language created by React developers to have an easier way of interacting with the React API.</span></li>
+</ul>
+<p><strong>How to use JSX</strong></p>
+<ul>
+<li><span id="1e31">We will use <code>babel</code> to convert version of modern JS into an older version of JS.<br />
+<strong>React Create Element</strong></span></li>
+</ul>
+<!-- -->
+<pre><code>const ExampleComponent = (props) =&gt;
+  React.createElement(
+    React.Fragment,
+    null,
+    React.createElement(&quot;h1&quot;, null, &quot;Hello!&quot;),
+    React.createElement(&quot;img&quot;, { src: &quot;https://via.placeholder.com/150&quot; }),
+    React.createElement(&quot;a&quot;, { href: props.searchUrl }, props.searchText)
+  );</code></pre>
+<p><strong>JSX Version</strong></p>
+<pre><code>const ExampleComponent = (props) =&gt; (
+  &lt;React.Fragment&gt;
+    &lt;h1&gt;Hello!&lt;/h1&gt;
+    &lt;img src=&quot;https://via.placeholder.com/150&quot; /&gt;
+    &lt;a href={props.searchUrl}&gt;{props.searchText}&lt;/a&gt;
+  &lt;/React.Fragment&gt;
+);</code></pre>
+<ul>
+<li><span id="e8e0">Keep in mind that self closing tags in React must have a <code>forward slash</code> to close it.</span></li>
+</ul>
+<h3 id="properties-and-data"><strong>Properties and Data</strong></h3>
+<pre><code>&lt;img src=&quot;https://via.placeholder.com/150&quot; /&gt;;
+// becomes..
+React.createElement(&quot;img&quot;, { src: &quot;https://via.placeholder.com/150&quot; });
+// if we want to pass in data vs just a string literal
+&lt;a href={props.searchUrl}&gt;{props.searchText}&lt;/a&gt;;
+// so it becomes..
+React.createElement(&quot;a&quot;, { href: props.searchUrl }, props.searchText);
+// if you want the text search uppercase..
+&lt;a href={props.searchUrl}&gt;{props.searchText.toUpperCase()}&lt;/a&gt;;</code></pre>
+<ul>
+<li><span id="8780">Comments in JSX have the following syntax:</span></li>
+</ul>
+<!-- -->
+<pre><code>&lt;div&gt;
+  &lt;h2&gt;This is JSX&lt;/h2&gt;
+  {/* This is a comment in JSX */}
+&lt;/div&gt;</code></pre>
+<h4 id="property-names"><code>Property Names</code>:</h4>
+<ul>
+<li><span id="fcde"><code>checked</code> : Attribute of input components such as checkbox or radio, use it to set whether the component is checked or not.</span></li>
+<li><span id="ae4c"><code>className</code> : Used to specify a CSS class.</span></li>
+<li><span id="2d7b"><code>dangerouslySetInnerHTML</code> : React’s equivalent of innerHTML because it is risky to cross-site scripting attacks.</span></li>
+<li><span id="5f13"><code>htmlFor</code> : Because <code>for</code> is protected keyword, React elements use this instead.</span></li>
+<li><span id="5880"><code>onChange</code> : Event fired whenever a form field is changed.</span></li>
+<li><span id="fb2b"><code>style</code> : Accepts a JS object with camelCase properties rather than a CSS string.</span></li>
+<li><span id="8f1c"><code>value</code> : Supported by Input, Select, and TextArea components; use it to set the value of the component.</span></li>
+</ul>
+<blockquote>
+<p><strong><em>Note: React uses camel-case!!!</em></strong></p>
+</blockquote>
+<h4 id="the-jsx-semicolon-gotcha"><strong>The JSX semicolon gotcha</strong></h4>
+<ul>
+<li><span id="3d60">We wrap what want to return in parenthesis so JS doesn’t auto add semi-colons after every line and run the code incorrectly.</span></li>
+</ul>
+<!-- -->
+<pre><code>function App() {
+  return (
+    &lt;div&gt;
+      &lt;h1&gt;Hello!&lt;/h1&gt;
+      &lt;div&gt;Welcome to JSX.&lt;/div&gt;
+    &lt;/div&gt;
+  );
+}</code></pre>
+<h4 id="create-element-equivalent"><strong>create Element equivalent</strong></h4>
+<pre><code>is equivalent to
+
+function App() {
+  return (
+    React.createElement(
+      &#39;div&#39;,
+      null,
+      React.createElement(&#39;h1&#39;, null, &#39;Hello!&#39;),
+      React.createElement(&#39;div&#39;, null, &#39;Welcome to JSX.&#39;),
+    )
+  );
+}</code></pre>
+<ul>
+<li><span id="6898">Just remember if you decided to use the return keyword in a function to ‘return some JSX’, then make sure you wrap the JSX in parenthesis.</span></li>
+</ul>
+<hr />
+<p><code>npx create-react-app my-app</code></p>
+<ul>
+<li><span id="a3ca">Single line used to initiate a React application.</span></li>
+<li><span id="61c5">React has a great toolchain where you can see changes live as you’re editing your application.</span></li>
+<li><span id="4889">React errors will be rendered directly onto the browser window.</span></li>
+<li><span id="f917">A downside is that it installs a lot of bloat files.</span></li>
+<li><span id="bdd9">Examples of React create Element and JSX equivalent</span></li>
+</ul>
+<!-- -->
+<pre><code>React.createElement(
+  &quot;a&quot;,
+  {
+    className: &quot;active&quot;,
+    href: &quot;https://github.com/bgoonz/&quot;,
+  },
+  &quot;Github&quot;
+);
+// JSX Version
+&lt;a className=&quot;active&quot; href=&quot;https://github.com/bgoonz/&quot;&gt;
+  Github
+&lt;/a&gt;;
+
+React.createElement(
+  OwnerDetails,
+  {
+    owner: props.data.owner,
+    number: props.index + 1,
+  },
+  props.name
+);
+// JSX Version
+&lt;OwnerDetails owner={props.data.owner} number={props.index + 1}&gt;
+  {props.name}
+&lt;/OwnerDetails&gt;;</code></pre>
+<p><strong>More Complex JSX Example</strong></p>
+<pre><code>const BookPanel = (props) =&gt; {
+  &lt;section className=&quot;book&quot; id={`book-${props.id}`}&gt;
+    &lt;h1 className=&quot;book__title&quot;&gt;{props.title}&lt;/h1&gt;
+    &lt;img src={props.coverUrl} /&gt;
+    &lt;div className=&quot;book__desc&quot;&gt;{props.description}&lt;/div&gt;
+  &lt;/section&gt;;
+};</code></pre>
+<h3 id="my-blog">My Blog:</h3>
+<p><a href="https://master--bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://master--bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong> <br/></p>
+<p><em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>master–bgoonz-blog.netlify.app</a><a href="https://master--bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
+<h3 id="here-are-the-react-docs-in-one-markdown-file">Here are the React Docs In One Markdown File:</h3>
+<p><a href="https://gist.github.com/bgoonz/690d80b4f8ac5d359274d98cae87366a" class="markup--anchor markup--p-anchor">https://gist.github.com/bgoonz/690d80b4f8ac5d359274d98cae87366a</a></p>
+<p>By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on <a href="https://medium.com/p/5c78e4207b7f">August 22, 2021</a>.</p>
+<p><a href="https://medium.com/@bryanguner/super-simple-intro-to-react-5c78e4207b7f" class="p-canonical">Canonical link</a></p>
+<p>August 31, 2021.</p>
+</body>
+</html>

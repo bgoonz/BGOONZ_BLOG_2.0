@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>PSD.rb</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">PSD.rb</h1>
+</header>
+<h3 id="opening">Opening</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb1-1" title="1">psd = <span class="dt">PSD</span>.new(file, <span class="st">parse_layer_images: </span><span class="dv">true</span>)</a>
+<a class="sourceLine" id="cb1-2" title="2">psd.parse!</a></code></pre></div>
+<h3 id="traversing">Traversing</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb2-1" title="1"><span class="co"># Gets the root node.</span></a>
+<a class="sourceLine" id="cb2-2" title="2"><span class="co"># A #&lt;Node&gt; can be a Group or a Layer.</span></a>
+<a class="sourceLine" id="cb2-3" title="3">node = psd.tree</a></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb3-1" title="1">node.root</a>
+<a class="sourceLine" id="cb3-2" title="2">node.descendants</a>
+<a class="sourceLine" id="cb3-3" title="3">node.ancestors</a>
+<a class="sourceLine" id="cb3-4" title="4">node.siblings</a>
+<a class="sourceLine" id="cb3-5" title="5">node.subtree</a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb4-1" title="1">node.descendant_groups</a>
+<a class="sourceLine" id="cb4-2" title="2">node.descendant_layers</a></code></pre></div>
+<h3 id="layer-info">Layer info</h3>
+<div class="sourceCode" id="cb5"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb5-1" title="1">node.name   <span class="co">#=&gt; &quot;Layer 2&quot;</span></a></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb6-1" title="1">node.top    <span class="co">#=&gt; 3</span></a>
+<a class="sourceLine" id="cb6-2" title="2">node.left   <span class="co">#=&gt; 3</span></a>
+<a class="sourceLine" id="cb6-3" title="3">node.bottom</a>
+<a class="sourceLine" id="cb6-4" title="4">node.right</a></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb7-1" title="1"><span class="co"># Note: these are interchanged (?)</span></a>
+<a class="sourceLine" id="cb7-2" title="2">node.width</a>
+<a class="sourceLine" id="cb7-3" title="3">node.height</a></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb8-1" title="1">node.visible?</a>
+<a class="sourceLine" id="cb8-2" title="2">node.hidden?</a></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb9-1" title="1">node.layer?</a>
+<a class="sourceLine" id="cb9-2" title="2">node.group?</a></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb10-1" title="1">node.blending_mode  <span class="co">#=&gt; &quot;normal&quot;</span></a>
+<a class="sourceLine" id="cb10-2" title="2">node.opacity        <span class="co">#=&gt; 0..255</span></a>
+<a class="sourceLine" id="cb10-3" title="3">node.fill_opacity   <span class="co">#=&gt; 0..255</span></a></code></pre></div>
+<h3 id="layer-text">Layer text</h3>
+<div class="sourceCode" id="cb11"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb11-1" title="1">node.text                  <span class="co">#=&gt; (Hash)</span></a>
+<a class="sourceLine" id="cb11-2" title="2">node.text[<span class="st">:value</span>]          <span class="co">#=&gt; &quot;Text here&quot;</span></a>
+<a class="sourceLine" id="cb11-3" title="3">node.text[<span class="st">:font</span>][<span class="st">:name</span>]    <span class="co">#=&gt; &quot;Arial&quot;</span></a>
+<a class="sourceLine" id="cb11-4" title="4">node.text[<span class="st">:font</span>][<span class="st">:sizes</span>]   <span class="co">#=&gt; [6.9]</span></a>
+<a class="sourceLine" id="cb11-5" title="5">node.text[<span class="st">:font</span>][<span class="st">:colors</span>]  <span class="co">#=&gt; [[255,255,255,255]]</span></a>
+<a class="sourceLine" id="cb11-6" title="6">node.text[<span class="st">:font</span>][<span class="st">:css</span>]     <span class="co">#=&gt; &quot;font-family: ...;&quot;</span></a>
+<a class="sourceLine" id="cb11-7" title="7">node.text[<span class="st">:left</span>]           <span class="co">#=&gt; 3</span></a>
+<a class="sourceLine" id="cb11-8" title="8">node.text[<span class="st">:top</span>]</a>
+<a class="sourceLine" id="cb11-9" title="9">node.text[<span class="st">:right</span>]</a>
+<a class="sourceLine" id="cb11-10" title="10">node.text[<span class="st">:bottom</span>]</a>
+<a class="sourceLine" id="cb11-11" title="11">node.text[<span class="st">:transform</span>]      <span class="co">#=&gt; (Hash)</span></a></code></pre></div>
+<h3 id="layer-effects">Layer effects</h3>
+<div class="sourceCode" id="cb12"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb12-1" title="1">fx = node.info[<span class="st">:object_effects</span>]</a></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb13-1" title="1">fx.data[<span class="st">&#39;Scl &#39;</span>]   <span class="co"># ?</span></a>
+<a class="sourceLine" id="cb13-2" title="2">fx.data[<span class="st">&#39;GrFl&#39;</span>]   <span class="co"># Gradient fill</span></a></code></pre></div>
+<h3 id="layer-mask">Layer mask</h3>
+<div class="sourceCode" id="cb14"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb14-1" title="1">node.mask[<span class="st">&quot;mask_size&quot;</span>] == <span class="dv">0</span>    <span class="co"># No mask</span></a>
+<a class="sourceLine" id="cb14-2" title="2">node.mask[<span class="st">&quot;mask_size&quot;</span>] == <span class="dv">20</span>   <span class="co"># Has mask</span></a>
+<a class="sourceLine" id="cb14-3" title="3">node.mask[<span class="st">&quot;top&quot;</span>]</a>
+<a class="sourceLine" id="cb14-4" title="4">node.mask[<span class="st">&quot;left&quot;</span>]</a>
+<a class="sourceLine" id="cb14-5" title="5">node.mask[<span class="st">&quot;bottom&quot;</span>]</a>
+<a class="sourceLine" id="cb14-6" title="6">node.mask[<span class="st">&quot;right&quot;</span>]</a></code></pre></div>
+<h3 id="reference">Reference</h3>
+<ul>
+<li><a href="https://github.com/layervault/psd.rb">layervault/psd.rb</a> <em>(github.com)</em></li>
+</ul>
+</body>
+</html>

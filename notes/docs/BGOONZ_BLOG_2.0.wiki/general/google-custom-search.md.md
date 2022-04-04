@@ -1,10 +1,12 @@
-# Providing Structured Data | Programmable Search Engine
+Providing Structured Data | Programmable Search Engine
+======================================================
 
-> ## Excerpt
+> Excerpt
+> -------
 >
 > This page shows you how to add the structured data that search operators depend on.
 
----
+------------------------------------------------------------------------
 
 This page shows you how to add the structured data that search operators depend on.
 
@@ -22,11 +24,12 @@ Web pages are often filled with free form text, which is easy for humans to read
     -   [Using Microdata](https://developers.google.com/custom-search/docs/structured_data#microdata)
 4.  [Viewing Extracted Structured Data](https://developers.google.com/custom-search/docs/structured_data#preview_tool)
 
-## Overview
+Overview
+--------
 
-When you are reading a webpage that sells a DVD, you can quickly figure out what the title is, what reviewers thought of the film, and how they rated it. But a computer cannot do the same things, because it doesn't understand how the information is structured.
+When you are reading a webpage that sells a DVD, you can quickly figure out what the title is, what reviewers thought of the film, and how they rated it. But a computer cannot do the same things, because it doesn’t understand how the information is structured.
 
-For example, if the page has content about the DVD—along with recommendations for other items, ads from other stores, and comments from customers—then the page might have different prices for various things, not just for the DVD that is being sold. You can easily figure out the price for the DVD while dismissing the other prices, but the computer can't. Some sophisticated programs might find the prices in the webpage, but they cannot determine the rules for finding just the price of the DVD.
+For example, if the page has content about the DVD—along with recommendations for other items, ads from other stores, and comments from customers—then the page might have different prices for various things, not just for the DVD that is being sold. You can easily figure out the price for the DVD while dismissing the other prices, but the computer can’t. Some sophisticated programs might find the prices in the webpage, but they cannot determine the rules for finding just the price of the DVD.
 
 Structured data formats are rules that standardize the structure and content of the webpage. They are markup that you apply to text snippets so that computers can process their meaning or semantics. The markup does not change the formatting of your website, it just makes the metadata and text enclosed within the XHTML tags more meaningful to computers.
 
@@ -43,25 +46,28 @@ You can use one or a combination of formats that you prefer. Note that unlike Pr
 
 The following includes an idealized snippet of plain HTML from a review site:
 
-<div>  <div>  <h1>Pizza My Heart</h1>  </div>  <span>88%</span> like it <a href\="#reviews"\>See all 12 reviews</a>  <span>Under $10 per entree</span>  
-<div>
+Pizza My Heart
+==============
+
+88% like it &lt;a href=“\#reviews”&gt;See all 12 reviews Under $10 per entree  
 
 The following snippet shows the previous HTML code extended with a format called [microformats](https://developers.google.com/custom-search/docs/structured_data#microformats):
 
-<div class\="hreview-aggregate"\>  <div class\="vcard item"\>  <h1 class\="fn"\>Pizza My Heart</h1>  </div>  <span class\="rating average"\>88%</span> like it <a href\="#reviews"\>See all <span class\="count"\>12</span> reviews</a>  <span class\="pricerange"\>Under $10 per entree</span>  
-<div>
+&lt;div class=“hreview-aggregate”&gt; &lt;div class=“vcard item”&gt; &lt;h1 class=“fn”&gt;Pizza My Heart
+
+&lt;span class=“rating average”&gt;88% like it &lt;a href=“\#reviews”&gt;See all &lt;span class=“count”&gt;12 reviews &lt;span class=“pricerange”&gt;Under $10 per entree  
 
 The [Structured Data Testing Tool](http://www.google.com/webmasters/tools/richsnippets?view=cse&url=http://www.urbanspoon.com/r/6/765421/restaurant/Pizza-My-Heart-Santa-Cruz) shows the information Google Search extracts from this page:
 
-hreview\-aggregate  
- item hcard  
- fn \= Pizza My Heartrating  
- average (normalized to 5.0 scale) \= 4.5 average \= 88%pricerange \= Under $10 per entree  
-count \= 12
+hreview-aggregate  
+item hcard  
+fn = Pizza My Heartrating  
+average (normalized to 5.0 scale) = 4.5 average = 88%pricerange = Under $10 per entree  
+count = 12
 
 Programmable Search Engine uses a subset of the information available for Google Search; this subset is shown at the bottom of the testing tool page:
 
-review (source \= MICROFORMAT)ratingstars \= 4.5ratingcount \= 12pricerange \= Under $10 per entree
+review (source = MICROFORMAT)ratingstars = 4.5ratingcount = 12pricerange = Under $10 per entree
 
 By incorporating standard structured data formats into your webpages, you not only make the data available to Programmable Search Engine, but also for any service or tool that supports the same standard. Apply structured data to the most important information in the webpage, so you can present them directly in the results. For example, if you have a website selling Android devices, include structured data about the ratings, prices, availability, and whatnot. When your users search for the Android devices, they can see the ratings, prices, and availability at a glance.
 
@@ -69,7 +75,8 @@ So computers can now understand the types of data in the webpage. Now what? Comp
 
 [Back to top](https://developers.google.com/custom-search/docs/structured_data#top)
 
-## Providing Data to Programmable Search Engine
+Providing Data to Programmable Search Engine
+--------------------------------------------
 
 Google supports several kinds of data which are used primarily by Programmable Search Engine: Pagemaps, a subset of `<meta>` tags, and approximate page dates.
 
@@ -84,7 +91,7 @@ Unlike the other structured data formats described below, PageMaps does not requ
 Once you create a PageMap, you can submit it to Google using any of the following methods:
 
 -   [Add PageMap data directly to your HTML page.](https://developers.google.com/custom-search/docs/structured_data#addtopage) Google will discover the PageMap information when we crawl your site.
--   [Add PageMap data to a Sitemap](https://developers.google.com/custom-search/docs/structured_data#addtositemap), and submit that Sitemap for indexing. This is a good option if you don't want PageMap exposed in the HTML source code of your page.
+-   [Add PageMap data to a Sitemap](https://developers.google.com/custom-search/docs/structured_data#addtositemap), and submit that Sitemap for indexing. This is a good option if you don’t want PageMap exposed in the HTML source code of your page.
 
 ### PageMap tag definitions
 
@@ -118,48 +125,24 @@ Each DataObject contains one or more attributes.
 
 ### Add PageMap data directly to your HTML page
 
-Here's an example of PageMap data for a webpage about badminton:
+Here’s an example of PageMap data for a webpage about badminton:
 
-<html>  <head> ... <!--  
-  <PageMap>  
-     <DataObject type="document">  
-        <Attribute name="title">The Biomechanics of a Badminton  
-        Smash</Attribute>  
-        <Attribute name="author">Avelino T. Lim</Attribute>  
-        <Attribute name="description">The smash is the most  
-        explosive and aggressive stroke in Badminton. Elite athletes can  
-        generate shuttlecock velocities of up to 370 km/h. To perform the  
-        stroke, one must understand the biomechanics involved, from the body  
-        positioning to the wrist flexion. </Attribute>  
-        <Attribute name="page\_count">25</Attribute>  
-        <Attribute name="rating">4.5</Attribute>  
-        <Attribute name="last\_update">05/05/2009</Attribute>  
-     </DataObject>  
-     <DataObject type="thumbnail">  
-        <Attribute name="src" value="http://www.example.com/papers/sic.png" />  
-        <Attribute name="width" value="627" />  
-        <Attribute name="height" value="167" />  
-     </DataObject>  
-  </PageMap>  
-  -->  </head> ...</html>
+…
 
 ### Add PageMap data to a Sitemap
 
-If you don't want to include PageMap data in the HTML of your pages, you can add PageMap data to a Sitemap and submit that Sitemap via the [Search Console Sitemaps tool](https://search.google.com/search-console/sitemaps).
+If you don’t want to include PageMap data in the HTML of your pages, you can add PageMap data to a Sitemap and submit that Sitemap via the [Search Console Sitemaps tool](https://search.google.com/search-console/sitemaps).
 
-Here's an example of a Sitemap that includes PageMap information for two URLs: http://www.example.com/foo and http://www.example.com/bar.
+Here’s an example of a Sitemap that includes PageMap information for two URLs: http://www.example.com/foo and http://www.example.com/bar.
 
-<?xml version\="1.0" encoding\="UTF-8"?>
-
-<urlset xmlns\="http://www.sitemaps.org/schemas/sitemap/0.9"\> <url> <loc>http://www.example.com/foo</loc> <PageMap xmlns\="http://www.google.com/schemas/sitemap-pagemap/1.0"\> <DataObject type\="document" id\="hibachi"\> <Attribute name\="name"\>Dragon</Attribute> <Attribute name\="review"\>3.5</Attribute> </DataObject> </PageMap> </url> <url> <loc>http://www.example.com/bar</loc> <PageMap xmlns\="http://www.google.com/schemas/sitemap-pagemap/1.0"\> <DataObject type\="document" id\="biggreenegg"\> <Attribute name\="name"\>Ribs</Attribute> <Attribute name\="review"\>4.0</Attribute> </DataObject> </PageMap> </url>  
-</urlset>
+&lt;urlset xmlns=“http://www.sitemaps.org/schemas/sitemap/0.9”&gt; http://www.example.com/foo &lt;PageMap xmlns=“http://www.google.com/schemas/sitemap-pagemap/1.0”&gt; &lt;DataObject type=“document” id=“hibachi”&gt; &lt;Attribute name=“name”&gt;Dragon &lt;Attribute name=“review”&gt;3.5 http://www.example.com/bar &lt;PageMap xmlns=“http://www.google.com/schemas/sitemap-pagemap/1.0”&gt; &lt;DataObject type=“document” id=“biggreenegg”&gt; &lt;Attribute name=“name”&gt;Ribs &lt;Attribute name=“review”&gt;4.0  
 
 ### Parsing PageMap data
 
 Using the Programmable Search Element, custom attributes are returned in the richSnippet property of each result, can can be used with Search Element [Callbacks](https://developers.google.com/custom-search/docs/element#search-time-callbacks).
 
-<r n\="1"\> <u> http://www.xyz.com/business/vending\_machine.html </u> ... <t> In Italy, a Vending Machine Even Makes the <b>Pizza</b> </t> ... <s>The European vending machine industry has annual sales of about #33  
- billion, much of it coming from factories and offices.</s> ... <PageMap> <DataObject type\="image"\> <Attribute name\="image_src" value\="http://www.nytimes.com/images/2009/03/14/business/14vend.751.jpg"/> </DataObject> <DataObject type\="publication"\> <Attribute name\="author" value\="John Tagliabue"/> <Attribute name\="date" value\="March 14, 2009"/> <Attribute name\="category" value\="Business/World Business"/> </DataObject> </PageMap> ...</r>
+&lt;r n=“1”&gt; <span class="underline">http://www.xyz.com/business/vending\_machine.html</span> … In Italy, a Vending Machine Even Makes the **Pizza** … <s>The European vending machine industry has annual sales of about \#33  
+billion, much of it coming from factories and offices.</s> … &lt;DataObject type=“image”&gt; &lt;Attribute name=“image\_src” value=“http://www.nytimes.com/images/2009/03/14/business/14vend.751.jpg”/&gt; &lt;DataObject type=“publication”&gt; &lt;Attribute name=“author” value=“John Tagliabue”/&gt; &lt;Attribute name=“date” value=“March 14, 2009”/&gt; &lt;Attribute name=“category” value=“Business/World Business”/&gt; …
 
 [Back to top](https://developers.google.com/custom-search/docs/structured_data#top)
 
@@ -167,24 +150,24 @@ Using the Programmable Search Element, custom attributes are returned in the ric
 
 While PageMaps allow you to precisely specify the data you want for each page, sometimes you have a large amount of content which you do not want to annotate. Google extracts selected content from [META](http://www.w3.org/TR/1999/REC-html401-19991224/struct/global.html#h-7.4.4.2) tags of the form `<meta name="_KEY_" content="_VALUE_">`. We do not support variants of the META tag, such as the use of `property` instead of `name`.
 
-While we explicitly exclude common tags that are usually inserted programmatically by web authoring tools, such as `robots`, `description`, and `keywords`, rarer tags specific to your site will be extracted and put into a special data object of type `metatags`, which can be used with all of Custom Search's structured data features. For example, a `<meta>` tag of the form:
+While we explicitly exclude common tags that are usually inserted programmatically by web authoring tools, such as `robots`, `description`, and `keywords`, rarer tags specific to your site will be extracted and put into a special data object of type `metatags`, which can be used with all of Custom Search’s structured data features. For example, a `<meta>` tag of the form:
 
-<meta name\="pubdate" content\="20100101"\>
+&lt;meta name=“pubdate” content=“20100101”&gt;
 
 creates a PageMap DataObject which is returned in XML results like this:
 
-<r n\="1"\> ... <PageMap> <DataObject type\="metatags"\> <Attribute name\="pubdate" value\="20100101"/> </DataObject> </PageMap> ...</r>
+&lt;r n=“1”&gt; … &lt;DataObject type=“metatags”&gt; &lt;Attribute name=“pubdate” value=“20100101”/&gt; …
 
-The data in this automatically created PageMap can be used anywhere you can use data from a PageMap explicitly included in your page's content. For instance, it can be used with structured search operators like [Sort by Attribute](https://developers.google.com/custom-search/docs/structured_search#sort_by_attribute):
+The data in this automatically created PageMap can be used anywhere you can use data from a PageMap explicitly included in your page’s content. For instance, it can be used with structured search operators like [Sort by Attribute](https://developers.google.com/custom-search/docs/structured_search#sort_by_attribute):
 
 https://www.google.com/cse?cx=12345:example&q=oil+spill**&sort=metatags-pubdate**
 
 or with the [Programmable Search Element](https://developers.google.com/custom-search/docs/structured_search#structured_search_element):
 
-...
+…
 
-<div class\="gcse-search" sort\_by\="metatags-pubdate:d:s"\></div\>  
-...
+&lt;div class=“gcse-search” sort\_by=“metatags-pubdate:d:s”&gt;&lt;/div&gt;  
+…
 
 The `<meta>` tags excluded by Google include:
 
@@ -215,11 +198,11 @@ In addition to metadata which you explicitly specify on a page, Google also esti
 
 The following examples show the use of the page date with these operators:
 
-If you want to...
+If you want to…
 
-Send this URL...
+Send this URL…
 
-To learn more see...
+To learn more see…
 
 Sort results by date in descending order
 
@@ -245,13 +228,13 @@ Return results from January 1 to February 1 of 2010 (inclusive)
 
 [Restrict to Range](https://developers.google.com/custom-search/docs/structured_search#restrict_to_range)
 
-Google's estimate of the right date for a page is based on features such as the byline date of news articles or an explicitly specified date in the title of the document. If a page has poorly specified or inconsistent dates Google's estimate of the page date may not make sense, and your Programmable Search Engine may return results ordered in a way you do not expect.
+Google’s estimate of the right date for a page is based on features such as the byline date of news articles or an explicitly specified date in the title of the document. If a page has poorly specified or inconsistent dates Google’s estimate of the page date may not make sense, and your Programmable Search Engine may return results ordered in a way you do not expect.
 
 ### Formatting Dates
 
-A site may provide date information implicitly, relying on Google's estimated page date feature to detect dates embedded in the page URL, title or other features, or explicitly, by supplying a date in a structured data format. In either case, effective use of dates requires formatting the dates correctly.
+A site may provide date information implicitly, relying on Google’s estimated page date feature to detect dates embedded in the page URL, title or other features, or explicitly, by supplying a date in a structured data format. In either case, effective use of dates requires formatting the dates correctly.
 
-For Programmable Search Engine's [Sort by Attribute](https://developers.google.com/custom-search/docs/structured_search#sort_by_attribute), [Bias by Attribute](https://developers.google.com/custom-search/docs/structured_search#bias_by_attribute), [Restrict to Range](https://developers.google.com/custom-search/docs/structured_search#restrict_to_range) features, Google attempts to parse dates using both conventional date formatting and formal standards such as [ISO 8601](http://en.wikipedia.org/wiki/ISO_8601) and [IETF RFC 850](http://www.faqs.org/rfcs/rfc822.html). The following complete date formats are accepted:
+For Programmable Search Engine’s [Sort by Attribute](https://developers.google.com/custom-search/docs/structured_search#sort_by_attribute), [Bias by Attribute](https://developers.google.com/custom-search/docs/structured_search#bias_by_attribute), [Restrict to Range](https://developers.google.com/custom-search/docs/structured_search#restrict_to_range) features, Google attempts to parse dates using both conventional date formatting and formal standards such as [ISO 8601](http://en.wikipedia.org/wiki/ISO_8601) and [IETF RFC 850](http://www.faqs.org/rfcs/rfc822.html). The following complete date formats are accepted:
 
 Date Format
 
@@ -281,9 +264,10 @@ Google will attempt to parse variants of these date formats, such as `MM/DD/YYYY
 
 [Back to top](https://developers.google.com/custom-search/docs/structured_data#top)
 
-## Rich Snippets
+Rich Snippets
+-------------
 
-Google also extracts a variety of structured data from Microformats, RDFa and Microdata to be used in [rich snippets](http://googlewebmastercentral.blogspot.com/2009/05/introducing-rich-snippets.html), extended presentations of standard Google search results. A subset of this data is available for use in Programmable Search Engine's structured data operators—typically, the same data used in rich snippets. For example, if you have marked up your pages with the Microformat `hrecipe` standard, you could sort on the number of rating stars of the recipe with an operator like `&sort=recipe-ratingstars`. Google is continually extending the data it extracts and how much of this data is available for use in Programmable Search Engine; to see what data we currently extract, you can use the [Structured Data Testing Tool](https://developers.google.com/custom-search/docs/structured_data#preview_tool) in Search Console.
+Google also extracts a variety of structured data from Microformats, RDFa and Microdata to be used in [rich snippets](http://googlewebmastercentral.blogspot.com/2009/05/introducing-rich-snippets.html), extended presentations of standard Google search results. A subset of this data is available for use in Programmable Search Engine’s structured data operators—typically, the same data used in rich snippets. For example, if you have marked up your pages with the Microformat `hrecipe` standard, you could sort on the number of rating stars of the recipe with an operator like `&sort=recipe-ratingstars`. Google is continually extending the data it extracts and how much of this data is available for use in Programmable Search Engine; to see what data we currently extract, you can use the [Structured Data Testing Tool](https://developers.google.com/custom-search/docs/structured_data#preview_tool) in Search Console.
 
 [Back to top](https://developers.google.com/custom-search/docs/structured_data#top)
 
@@ -293,21 +277,27 @@ Google also extracts a variety of structured data from Microformats, RDFa and Mi
 
 The following includes a snippet of plain HTML code.
 
-<p><strong>Kevin Grendelzilla</strong></p>  
-<p>Technical writer at Google</p>  
-<p>555 Search Parkway</p>  
-<p>Googlelandia, CA 94043</p>
+**Kevin Grendelzilla**
+
+Technical writer at Google
+
+555 Search Parkway
+
+Googlelandia, CA 94043
 
 The following snippet shows the previous HTML code extended with microformats:
 
-<div **class\="vcard"**\>  <p><strong **class\="fn"**\>Kevin Grendelzilla</strong></p>  <p><span **class\="title"**\>Technical writer</span> at <span **class\="org"**\>Google</span></p>  <p><span **class\="adr"**\>  <span **class\="street-address"**\>555 Search Parkway</span>  <span **class\="locality"**\>Googlelandia</span>, <span **class\="region"**\>CA</span>  <span **class\="postcode"**\>94043</span>  </span></p>  
-</div>
+**Kevin Grendelzilla**
+
+<span **class\="title" **\="">Technical writer</span> at <span **class\="org" **\="">Google</span>
+
+<span **class\="adr" **\=""> <span **class\="street-address" **\="">555 Search Parkway</span> <span **class\="locality" **\="">Googlelandia</span>, <span **class\="region" **\="">CA</span> <span **class\="postcode" **\="">94043</span> </span>
 
 Google extracts a subset of this data, normalized and reorganized to correspond to how it would be displayed in rich snippets. This subset would be returned in XML results like this:
 
-<r n\="1"\> ... <PageMap> <DataObject type\="person"\> <Attribute name\="location" value\="Googlelandia"/> <Attribute name\="role" value\="Technical Writer"/> </DataObject> </PageMap> ...</r>
+&lt;r n=“1”&gt; … &lt;DataObject type=“person”&gt; &lt;Attribute name=“location” value=“Googlelandia”/&gt; &lt;Attribute name=“role” value=“Technical Writer”/&gt; …
 
-To see what Google extracts for a page, use the [Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool) in Google's Search Console site. The data Google extracts from pages is continually being extended, so check back periodically to see if the data you want has been made available. In the meantime, if you need custom data that does not correspond to a defined microformat, you can use [PageMaps](https://developers.google.com/custom-search/docs/structured_data#pagemaps).
+To see what Google extracts for a page, use the [Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool) in Google’s Search Console site. The data Google extracts from pages is continually being extended, so check back periodically to see if the data you want has been made available. In the meantime, if you need custom data that does not correspond to a defined microformat, you can use [PageMaps](https://developers.google.com/custom-search/docs/structured_data#pagemaps).
 
 To learn more about microformats, see the [structured data documentation](https://developers.google.com/search/docs/guides/intro-structured-data) and [microformats.org](http://microformats.org/get-started).
 
@@ -319,11 +309,19 @@ To learn more about microformats, see the [structured data documentation](https:
 
 The following includes a snippet of plain HTML code.
 
-<div>  <h3>5 Centimeters Per Second</h3>  <h4>Makoto Shinkai</h4> ...</div>
+### 5 Centimeters Per Second
+
+#### Makoto Shinkai
+
+…
 
 The following snippet shows the previous HTML code extended with RDFa:
 
-<div>  <h3 **property\="dc:title"**\>5 Centimeters Per Second</h3>  <h4 **property\="dc:maker"**\>Makoto Shinkai</h4> ...</div>
+&lt;h3 **property=“dc:title”**&gt;5 Centimeters Per Second
+
+#### Makoto Shinkai
+
+…
 
 To learn more about RDFa, see the [structured data documentation](https://developers.google.com/search/docs/guides/intro-structured-data). To learn more about defining an RDF schema, see the [RDF Primer](http://www.w3.org/TR/2004/REC-rdf-primer-20040210/#rdfschema).
 
@@ -333,17 +331,15 @@ To learn more about RDFa, see the [structured data documentation](https://develo
 
 HTML5, the latest revision of the language web pages are written in, defines a format called [microdata](https://www.w3.org/TR/microdata/) that incorporates the ideas of RDFa and Microformats directly into the HTML standard itself. Microdata uses simple attributes in HTML tags (often `span` or `div`) to assign brief and descriptive names to items and properties.
 
-Like RDFa and Microformats, Microdata's attributes help you specify that your content describes information of specific types, like reviews, people, information or events. For example, an person can have the properties name, nickname, url, title and affiliation. The following is an example of a short HTML block showing this basic contact information for Bob Smith:
+Like RDFa and Microformats, Microdata’s attributes help you specify that your content describes information of specific types, like reviews, people, information or events. For example, an person can have the properties name, nickname, url, title and affiliation. The following is an example of a short HTML block showing this basic contact information for Bob Smith:
 
-<div> My name is Bob Smith but people call me Smithy. Here is my home page: <a href\="http://www.example.com"\>www.example.com</a> I live in Albuquerque, NM and work as an engineer at ACME Corp.</div>
+My name is Bob Smith but people call me Smithy. Here is my home page: &lt;a href=“http://www.example.com”&gt;www.example.com I live in Albuquerque, NM and work as an engineer at ACME Corp.
 
-The following is the same HTML marked up with microdata. Note that in this example we use a property 'nickname' that is not yet officially part of schema.org. Custom Search is a good way to explore possible schema.org extensions locally before proposing them to the wider community.
+The following is the same HTML marked up with microdata. Note that in this example we use a property ‘nickname’ that is not yet officially part of schema.org. Custom Search is a good way to explore possible schema.org extensions locally before proposing them to the wider community.
 
-<div itemscope itemtype\="http://schema.org/Person"\> My name is <span itemprop\="name"\>Bob Smith</span> but people call me <span itemprop\="nickname"\>Smithy</span>.  
-  Here is my home page: <a href\="http://www.example.com" itemprop\="url"\>www.example.com</a> I live in Albuquerque, NM and work as an <span itemprop\="title"\>engineer</span> at <span itemprop\="affiliation"\>ACME Corp</span>.  
-</div>
+My name is <span itemprop\="name" \="">Bob Smith</span> but people call me <span itemprop\="nickname" \="">Smithy</span>. Here is my home page: www.example.com I live in Albuquerque, NM and work as an <span itemprop\="title" \="">engineer</span> at <span itemprop\="affiliation" \="">ACME Corp</span>.
 
-The first line of this example includes a HTML `div` tag with an `itemscope` attribute that indicates that `div` contains a microdata item. The `itemtype="http://schema.org/Person"` attribute on the same tag tells us this is a person. Each property of the person item is identified with the `itemprop` attribute; for example, `itemprop="name"` on the `span` tag describes the person's name. Note that you are not limited to `span` and `div`; the `itemprop="url"` tag is attached to an `a` (anchor) tag.
+The first line of this example includes a HTML `div` tag with an `itemscope` attribute that indicates that `div` contains a microdata item. The `itemtype="http://schema.org/Person"` attribute on the same tag tells us this is a person. Each property of the person item is identified with the `itemprop` attribute; for example, `itemprop="name"` on the `span` tag describes the person’s name. Note that you are not limited to `span` and `div`; the `itemprop="url"` tag is attached to an `a` (anchor) tag.
 
 To learn more about microdata, see the [structured data documentation](https://developers.google.com/search/docs/guides/intro-structured-data) and the [HTML Microdata](https://www.w3.org/TR/microdata/) standard.
 
@@ -351,48 +347,52 @@ To learn more about microdata, see the [structured data documentation](https://d
 
 After you have tagged your webpages with structured data, you can use the [Rich Snippets Testing Tool](http://www.google.com/webmasters/tools/richsnippets?view=cse) to view the structured data that can be extracted from the webpage. The tool provides two views: the first view shows the structured data that Google Search can extract from the page, while the second view shows what Programmable Search Engine can extract from the page.
 
-If you haven't tagged any of your webpages but would like to see what extracted structured data might look like, you can enter the URL of other websites. Popular sites that have review information or list of contacts are more likely to have structured data. If you see result snippets on Google search that looks similar to Figure 1, you can conclude that the webpage has structured data.
+If you haven’t tagged any of your webpages but would like to see what extracted structured data might look like, you can enter the URL of other websites. Popular sites that have review information or list of contacts are more likely to have structured data. If you see result snippets on Google search that looks similar to Figure 1, you can conclude that the webpage has structured data.
 
 **Figure 1:** Result snippet with rating, price range, and review.
 
 ![](https://developers.google.com/custom-search/images/snippets_rich_snippets_basic.png)
 
-Once you have found a page with structured data, you can view that page's source to see the structured data that site has implemented, or view that page in the Structured Data Testing Tool to see what data is extracted for Google Search rich snippets and Programmable Search Engine structured search. For example, consider the following snippet of HTML with structured data about a person implemented as microformats:
+Once you have found a page with structured data, you can view that page’s source to see the structured data that site has implemented, or view that page in the Structured Data Testing Tool to see what data is extracted for Google Search rich snippets and Programmable Search Engine structured search. For example, consider the following snippet of HTML with structured data about a person implemented as microformats:
 
-<div class\="vcard"\>  <h1 class\="fn"\>  <span class\="given-name"\>Godzilla</span>  <span class\="family-name"\>Gigantis</span>  </h1>  <span class\="title"\>Senior Giant Monster</span>, <span class\="adr"\>  <span class\="locality"\>Tokyo</span>  </span>  
-<div>
+&lt;div class=“vcard”&gt; &lt;h1 class=“fn”&gt; &lt;span class=“given-name”&gt;Godzilla &lt;span class=“family-name”&gt;Gigantis
+
+&lt;span class=“title”&gt;Senior Giant Monster, &lt;span class=“adr”&gt; &lt;span class=“locality”&gt;Tokyo  
 
 From a page with this markup, Google extracts the following data for use in rich snippets:
 
 hcard  
- fn \= Godzilla Gigantis n  
- family\-name \= Gigantis given\-name \= Godzilla adr  
- locality \= Tokyo title \= Senior Giant Monster
+fn = Godzilla Gigantis n  
+family-name = Gigantis given-name = Godzilla adr  
+locality = Tokyo title = Senior Giant Monster
 
 Programmable Search Engine extracts the following subset of that data for use in structured search:
 
-person (source \= MICROFORMAT) location \= Tokyo
+person (source = MICROFORMAT) location = Tokyo
 
 Thus, this tool allows you to view not only the structured data markup recognized for Google Search, but also the additional customized markup that we support in Programmable Search Engine. You can immediately see how your web page would be processed during indexing, and what metadata attributes would be returned in PageMaps in your Programmable Search Engine results. If there are any errors in your markup, you can fix them right away. Remember, you need to add the `&view=cse` parameter to the URL or click the checkbox to review the additional metadata extracted by Programmable Search Engine.
 
 [Back to top](https://developers.google.com/custom-search/docs/structured_data#top)
 
-## Exploring Other Features
+Exploring Other Features
+------------------------
 
 Structured data can be used in several Programmable Search Engine features including the following:
 
 -   If you want to learn more about using structured data in snippets, see [Customizing Your Result Snippets](https://developers.google.com/custom-search/docs/snippets).
 -   If you want to learn more about changing the order of your results, see [Structured Search](https://developers.google.com/custom-search/docs/structured_search).
 
----
+------------------------------------------------------------------------
 
-# Customizing Results Snippets | Programmable Search Engine
+Customizing Results Snippets | Programmable Search Engine
+=========================================================
 
-> ## Excerpt
+> Excerpt
+> -------
 >
 > This page describes how to customize the result snippets for your own website. To render your customized snippets, you must add structured data to your webpages.
 
----
+------------------------------------------------------------------------
 
 This page describes how to customize the result snippets for your own website. To render your customized snippets, you must add structured data to your webpages.
 
@@ -400,9 +400,10 @@ This page describes how to customize the result snippets for your own website. T
 2.  [Creating Rich Snippets with the Programmable Search Element](https://developers.google.com/custom-search/docs/snippets#creating_snippets)
 3.  [Exploring Other Features](https://developers.google.com/custom-search/docs/snippets#next)
 
-## Overview
+Overview
+--------
 
-Programmable Search Engine helps users find the right page by showing them a snippet—a small sample of content that gives search users an idea of what's in the webpage. To learn more about snippets, see the Webmaster Central [blog post](http://googlewebmastercentral.blogspot.com/2007/11/anatomy-of-search-result.html) on the anatomy of a search result. If you do not like the standard snippets created by the Programmable Search Engine algorithm, you can create your own snippets. You can showcase key information—such as image thumbnails, summaries, dates, authorship, ratings, and prices—directly in your snippets. Having the most relevant information in your search results makes the webpages in your site more compelling to your users.
+Programmable Search Engine helps users find the right page by showing them a snippet—a small sample of content that gives search users an idea of what’s in the webpage. To learn more about snippets, see the Webmaster Central [blog post](http://googlewebmastercentral.blogspot.com/2007/11/anatomy-of-search-result.html) on the anatomy of a search result. If you do not like the standard snippets created by the Programmable Search Engine algorithm, you can create your own snippets. You can showcase key information—such as image thumbnails, summaries, dates, authorship, ratings, and prices—directly in your snippets. Having the most relevant information in your search results makes the webpages in your site more compelling to your users.
 
 The following figures demonstrate various ways you can customize the snippets in your search results.
 
@@ -418,13 +419,14 @@ The following figures demonstrate various ways you can customize the snippets in
 
 ![](https://developers.google.com/custom-search/images/snippets_pagemap_docs.png)
 
-**Figure 4:** Richly formatted result snippet that provides multimedia access and buttons ("ADD TO CART").
+**Figure 4:** Richly formatted result snippet that provides multimedia access and buttons (“ADD TO CART”).
 
 ![](https://developers.google.com/custom-search/images/snippets_pagemap_songlist_fancy.png)
 
 [Back to top](https://developers.google.com/custom-search/docs/snippets#top)
 
-## Creating Rich Snippets with the Programmable Search Element
+Creating Rich Snippets with the Programmable Search Element
+-----------------------------------------------------------
 
 Essentially, creating rich snippets involves the following steps:
 
@@ -447,7 +449,8 @@ Structured data extraction is documented in more detail in the [Structured Data]
 
 [Back to top](https://developers.google.com/custom-search/docs/snippets#top)
 
-## Exploring Other Features
+Exploring Other Features
+------------------------
 
 Custom Snippets works well with several other Programmable Search Engine features:
 
@@ -455,17 +458,20 @@ Custom Snippets works well with several other Programmable Search Engine feature
 -   If you want to learn more about what structured data Google supports, see [Providing Structured Data](https://developers.google.com/custom-search/docs/structured_data).
 -   If you want to learn more about the Programmable Search Element, see [Programmable Search Element documentation](https://developers.google.com/custom-search/docs/element).
 
----
+------------------------------------------------------------------------
 
-# Filtering and sorting search results | Programmable Search Engine
+Filtering and sorting search results | Programmable Search Engine
+=================================================================
 
-> ## Excerpt
+> Excerpt
+> -------
 >
 > To help users get to the right pages on your site, Programmable Search Engine provides structured search operators that enable you to drill down into subsets of search results based on structured data found in your pages or the metadata associated with the images on your sites.
 
----
+------------------------------------------------------------------------
 
-## Overview
+Overview
+--------
 
 To help users get to the right pages on your site, Programmable Search Engine provides structured search operators that enable you to drill down into subsets of search results based on [structured data](https://developers.google.com/custom-search/docs/structured_data) found in your pages or the metadata associated with the images on your sites.
 
@@ -481,18 +487,19 @@ For **image search**, Google relies on both structured data on your pages and im
     -   [Filter by Attribute](https://developers.google.com/custom-search/docs/structured_search#image_filter_attribute)
 3.  [Structured Search in the Programmable Search Element](https://developers.google.com/custom-search/docs/structured_search#structured_search_element)
 
-## Web search
+Web search
+----------
 
 Unlike text, which is a free form sequence of words, structured data is logically organized into a set of objects with a set of attributes. Programmable Search Engine extracts a variety of structured data for use by structured search operators, including dates, authors, ratings and prices; this is the same data available for use in [custom snippets](https://developers.google.com/custom-search/docs/snippets). In addition, Programmable Search Engine supports structured data in any of the following formats:
 
 -   **[PageMap:](https://developers.google.com/custom-search/docs/structured_data#pagemaps)** A PageMap explicitly represents structured data as DataObjects with Attributes and values, encoded as an XML block embedded in a web page. Programmable Search Engine makes all well formed PageMap data available for structured search operators; it can also be used in [custom snippets](https://developers.google.com/custom-search/docs/snippets#creating_snippets).
 -   **[`meta` tags:](https://developers.google.com/custom-search/docs/structured_data#metags)** Google extracts selected content from `meta` tags of the form `<meta name="_NAME_" content="_VALUE_">`. A `meta` tag of the form `<meta name="pubdate" content="20100101">` can be used with a search operator of the form: `&sort=metatags-pubdate`.
 -   **[Page Dates:](https://developers.google.com/custom-search/docs/structured_data#page_dates)** Google estimates the date for a page based the URL, title, byline date and other features. This date can be used with the sort operator using the special structured data type `date`, as in `&sort=date`.
--   **[Rich Snippets Data:](https://developers.google.com/custom-search/docs/structured_data#rich_snippets)** Google also extracts a subset of the data from public standards like Microformats, RDFa and Microdata for use in Programmable Search Engine's structured data operators. For example, to sort pages marked up with the Microformat `hrecipe` standard based on their ratings, use `&sort=recipe-ratingstars`.
+-   **[Rich Snippets Data:](https://developers.google.com/custom-search/docs/structured_data#rich_snippets)** Google also extracts a subset of the data from public standards like Microformats, RDFa and Microdata for use in Programmable Search Engine’s structured data operators. For example, to sort pages marked up with the Microformat `hrecipe` standard based on their ratings, use `&sort=recipe-ratingstars`.
 
 [More information about providing structured data](https://developers.google.com/custom-search/docs/structured_data).
 
-If your pages include structured data, you can then apply Programmable Search Engine's structured search operators to restrict your searches to fields with particular data values, strictly sort by numerical values, bias towards certain values rather than sort, or even restrict to a given numerical range of values.
+If your pages include structured data, you can then apply Programmable Search Engine’s structured search operators to restrict your searches to fields with particular data values, strictly sort by numerical values, bias towards certain values rather than sort, or even restrict to a given numerical range of values.
 
 Programmable Search Engine supports the following search operators over structured data:
 
@@ -515,16 +522,11 @@ To filter by attribute, add a `more:pagemap:_TYPE_-_NAME_:_VALUE_` operator to a
 
 To see how the complete operator is constructed from structured data, recall the example we used earlier:
 
-\[halloween **more:pagemap:document\-author:lisamorton**\]
+\[halloween **more:pagemap:document-author:lisamorton**\]
 
 Breaking down the `more:pagemap:document-author:lisamorton` restriction in more detail, the `more:` operator is what Programmable Search Engine uses for refinement labels, the `pagemap:` part of the refinement tells us to refine results by specific attributes in the indexed PageMaps, and the remaining elements of the operator—`document-author` and `lisamorton`—specify the content the restriction drills down into. Recall the PageMap from the example:
 
-<PageMap>
-  <DataObject type="document">
-    <Attribute name="title">The Five Scariest Traditional Halloween Stories</Attribute>
-    <Attribute name="author">lisamorton</Attribute>
-  </DataObject>
-</PageMap>
+The Five Scariest Traditional Halloween Stories lisamorton
 
 The `document-author:` qualifier of the operator tells us to look for the DataObject with type `document` with an Attribute named `author`. This structured data key is followed by the value `lisamorton`, which must match exactly the value of the Attribute to be returned in a search containing this restriction.
 
@@ -532,15 +534,15 @@ The `document-author:` qualifier of the operator tells us to look for the DataOb
 
 When filtering by Attribute, you can create more complex filters (and shorter commands) by using a compact query. For instance, you could add the following PageMap for a URL:
 
-<pagemap> <DataObject type\="document"\> <Attribute name\="keywords"\>horror</Attribute> <Attribute name\="keywords"\>fiction</Attribute> <Attribute name\="keywords"\>Irish</Attribute> </DataObject> </pagemap> </page>
+&lt;DataObject type=“document”&gt; &lt;Attribute name=“keywords”&gt;horror &lt;Attribute name=“keywords”&gt;fiction &lt;Attribute name=“keywords”&gt;Irish
 
-To retrieve results for the query "Irish AND fiction", use the following:
+To retrieve results for the query “Irish AND fiction”, use the following:
 
 more:p:document-keywords:irish\*fiction
 
 This is equivalent to `more:pagemap:document-keywords:Irish more:pagemap:document-keywords:fiction`.
 
-To retrieve the results for "Irish AND (fiction OR horror)", use the following:
+To retrieve the results for “Irish AND (fiction OR horror)”, use the following:
 
 more:p:document-keywords:irish\*fiction,irish\*horror
 
@@ -552,43 +554,39 @@ You can also omit parts of the search operator. In the example above, note that 
 
 #### Drilling Into Tokenized Values Using Multiple Restrictions
 
-Attribute values which contain spaces, punctuation, or special characters are almost always split into separate tokens; for example, an attribute value of "Programmable Search Engine@google" would be split into three separate tokens, "custom", "search" and "google". This permits searches on a single word embedded in a larger sequence of words and punctuation, such as an production description. (Programmable Search Engine will extract up to 10 tokens per string, so if your attribute value contains more than 10 words, not all may be available for restricting results.) For example, the following PageMap includes a production description of [Programmable Search Engine](https://programmablesearchengine.googleblog.com//):
+Attribute values which contain spaces, punctuation, or special characters are almost always split into separate tokens; for example, an attribute value of “Programmable Search Engine@google” would be split into three separate tokens, “custom”, “search” and “google”. This permits searches on a single word embedded in a larger sequence of words and punctuation, such as an production description. (Programmable Search Engine will extract up to 10 tokens per string, so if your attribute value contains more than 10 words, not all may be available for restricting results.) For example, the following PageMap includes a production description of [Programmable Search Engine](https://programmablesearchengine.googleblog.com//):
 
-<PageMap>
-  <DataObject type="product">
-    <Attribute name="description">Programmable Search Engine provides customized search engines</Attribute>
-  </DataObject>
-</PageMap>
+Programmable Search Engine provides customized search engines
 
-The following restriction would find all pages with `product-description` attributes about "search":
+The following restriction would find all pages with `product-description` attributes about “search”:
 
-\[more:pagemap:product\-description:search\]
+\[more:pagemap:product-description:search\]
 
 To drill down more deeply, you can add other restrictions; for example, to get only pages that describe products of search engine, add the restrictions:
 
-\[more:pagemap:product\-description:search **more:pagemap:product\-description:engine**\]
+\[more:pagemap:product-description:search **more:pagemap:product-description:engine**\]
 
 The ordering of the `more:pagemap:` restrictions is not significant; tokens are extracted from an attribute value into an unordered set.
 
 These restrictions are combined by default with an AND; however, you could also combine them with an [OR operator](http://www.google.com/support/websearch/bin/answer.py?answer=136861) to get results that match either restrict. For example, the following is a search that would match content from either about search or game:
 
-\[more:pagemap:product\-description:search **OR** more:pagemap:product\-description:game\]
+\[more:pagemap:product-description:search **OR** more:pagemap:product-description:game\]
 
 One exception to tokenization is for attribute values which are URLs. Since tokens from URLs have marginal usefulness, we do not generate any token from attribute values which are valid URL.
 
-In certain cases—for example, when short tokens are frequently found together, Programmable Search Engine may combine them to create supertokens. For example, if the tokens "President" and "Obama" frequently appear next to each other, Programmable Search Engine may create the supertoken "president_obama". As a result, `[more:pagemap:leaders-name:president_obama]` will return the same results as `[more:pagemap:leaders-name:president **AND** more:pagemap:leaders-name:obama]`.
+In certain cases—for example, when short tokens are frequently found together, Programmable Search Engine may combine them to create supertokens. For example, if the tokens “President” and “Obama” frequently appear next to each other, Programmable Search Engine may create the supertoken “president\_obama”. As a result, `[more:pagemap:leaders-name:president_obama]` will return the same results as `[more:pagemap:leaders-name:president **AND** more:pagemap:leaders-name:obama]`.
 
-Another principal exception to tokenization based on punctuation is the forward slash '/' when it separates numbers. Attribute values of the form 'NUMBER/NUMBER' or 'NUMBER/NUMBER/NUMBER' are treated as single contiguous tokens; for example, '3.5/5.0' and '[09/23/2006](https://programmablesearchengine.googleblog.com//2009/10/three-birthday-candles-for-custom.html)' are treated as single tokens. For example, to search on an Attribute with a value of '2006/09/23', use the restrict:
+Another principal exception to tokenization based on punctuation is the forward slash ‘/’ when it separates numbers. Attribute values of the form ‘NUMBER/NUMBER’ or ‘NUMBER/NUMBER/NUMBER’ are treated as single contiguous tokens; for example, ‘3.5/5.0’ and ‘[09/23/2006](https://programmablesearchengine.googleblog.com//2009/10/three-birthday-candles-for-custom.html)’ are treated as single tokens. For example, to search on an Attribute with a value of ‘2006/09/23’, use the restrict:
 
-\[more:pagemap:birth\-date:2006/09/23\]
+\[more:pagemap:birth-date:2006/09/23\]
 
-Joining based on slashes only works when the forward slash is between numbers without spaces; spaces between the slash and the number will result in the creation of separate tokens. Furthermore, numbers joined by slashes must match exactly; the Filter by Attribute operator does not interpret these values as fractions or dates. Programmable Search Engine's other structured search operators, such as [Sort by Attribute](https://developers.google.com/custom-search/docs/structured_search#sort_by_attribute) and [Restrict to Range](https://developers.google.com/custom-search/docs/structured_search#restrict_to_range), do interpret these numbers as fractions and dates; see the documentation on [Providing Structured Data](https://developers.google.com/custom-search/docs/structured_data) for more details.
+Joining based on slashes only works when the forward slash is between numbers without spaces; spaces between the slash and the number will result in the creation of separate tokens. Furthermore, numbers joined by slashes must match exactly; the Filter by Attribute operator does not interpret these values as fractions or dates. Programmable Search Engine’s other structured search operators, such as [Sort by Attribute](https://developers.google.com/custom-search/docs/structured_search#sort_by_attribute) and [Restrict to Range](https://developers.google.com/custom-search/docs/structured_search#restrict_to_range), do interpret these numbers as fractions and dates; see the documentation on [Providing Structured Data](https://developers.google.com/custom-search/docs/structured_data) for more details.
 
 [Back to top](https://developers.google.com/custom-search/docs/structured_search#top)
 
 ### Sort by Attribute
 
-Sometimes it isn't enough to limit a search to a specific type of results; for example, in a search over restaurant reviews you might want the highest rated restaurants to appear at the top of the list. You can achieve this with Programmable Search Engine's sort by attribute feature, which changes the ordering of results based on the values of structured data attributes. Sorting is activated by adding a `&sort=_TYPE_-_NAME_:_DIRECTION_` URL parameter to the request URL to your Programmable Search Engine. Like structured search, sort by attribute depends on structured data on your pages; unlike structured search, however, sorting requires that the field has a numerical interpretation, such as numbers and dates.
+Sometimes it isn’t enough to limit a search to a specific type of results; for example, in a search over restaurant reviews you might want the highest rated restaurants to appear at the top of the list. You can achieve this with Programmable Search Engine’s sort by attribute feature, which changes the ordering of results based on the values of structured data attributes. Sorting is activated by adding a `&sort=_TYPE_-_NAME_:_DIRECTION_` URL parameter to the request URL to your Programmable Search Engine. Like structured search, sort by attribute depends on structured data on your pages; unlike structured search, however, sorting requires that the field has a numerical interpretation, such as numbers and dates.
 
 In its simplest form, you specify a structured data type based on a Data Object type and Attribute name in a PageMap and add it to the request URL as `&sort=_TYPE_-_NAME_`. For example, to sort by date on a page that represents its data as type `date` and name `sdate`, use the following syntax:
 
@@ -640,11 +638,12 @@ You can sort over one criterian and restrict by range over another. For example,
 
 https://www.google.com/cse?cx=12345:example&q=lebanese+restaurant**&sort=rating-stars,review-date:r:20101001:20101031**
 
-## Image search
+Image search
+------------
 
 When you enable Image search for your search engine, Google will display image results in a separate tab. You can enable image search by using the Programmable Search Engine control panel or by updating your context.xml file.
 
-Image Search relies on the information Google discovers when crawling your site. To improve how your images are displayed in search results (both in Programmable Search Engine and Google Web Search), it's a good idea to become familiar with Google's [image publishing guidelines](http://www.google.com/support/webmasters/bin/answer.py?answer=114016).
+Image Search relies on the information Google discovers when crawling your site. To improve how your images are displayed in search results (both in Programmable Search Engine and Google Web Search), it’s a good idea to become familiar with Google’s [image publishing guidelines](http://www.google.com/support/webmasters/bin/answer.py?answer=114016).
 
 ### Filter by image attribute
 
@@ -652,57 +651,45 @@ Like Web Search, Image Search search supports filtering on attributes such as `s
 
 [Back to top](https://developers.google.com/custom-search/docs/structured_search#top)
 
-## Structured Search in the Programmable Search Element
+Structured Search in the Programmable Search Element
+----------------------------------------------------
 
-Structured search features can also be used in conjunction with the Google Programmable Search Element. Just like with the operators expressed in the query or URL parameters, structured search in the element first requires that the pages you are searching over be marked up with the attributes you want to search by; then the Programmable Search Element's `sort` operator combined with `more:pagemap:` operators in the query will sort or restrict search results appropriately.
+Structured search features can also be used in conjunction with the Google Programmable Search Element. Just like with the operators expressed in the query or URL parameters, structured search in the element first requires that the pages you are searching over be marked up with the attributes you want to search by; then the Programmable Search Element’s `sort` operator combined with `more:pagemap:` operators in the query will sort or restrict search results appropriately.
 
 For example, SignOnSanDiego.com, a California news portal, uses the Programmable Search Element to render recent stories with photos in the results:
 
 > ![](https://developers.google.com/custom-search/images/signonsandiego.png)
 
-To ensure readers see not only the most relevant, but also timely news, SignOnSanDiego uses the Bias by Attribute with a "strong" weight towards recent publication dates. SignOnSanDiego implements these date attributes with PageMaps; one used by SignOnSanDiego looks like this:
-
-<!--
-  <PageMap>
-    <DataObject type="date">
-      <Attribute name="displaydate" value="Wednesday, August 25, 2010"/>
-      <Attribute name="sdate" value="20100825"/>
-    </DataObject>
-
-    <DataObject type="thumbnail">
-      <Attribute name="src" value="http://media.signonsandiego.com/img/photos/2010/08/25/635a63e9-f4a1-45aa-835a-ebee666b82e0news.ap.org\_t100.jpg"/>
-      <Attribute name="width" value="100"/>
-    </DataObject>
-  </PageMap>
-  -->
+To ensure readers see not only the most relevant, but also timely news, SignOnSanDiego uses the Bias by Attribute with a “strong” weight towards recent publication dates. SignOnSanDiego implements these date attributes with PageMaps; one used by SignOnSanDiego looks like this:
 
 To apply Sort by Attribute over this field, you set the `sort` option in the search code for the Programmable Search Element as shown below:
 
-...
+…
 
-<div class\="gcse-search" sort\_by\="date-sdate:d:s"\></div\>  
-...
+&lt;div class=“gcse-search” sort\_by=“date-sdate:d:s”&gt;&lt;/div&gt;  
+…
 
-Just like the URL `&sort=` parameter described above, the sort option in the Programmable Search Element `<div class="gcse-search" sort_by="date-sdate:d:s"></div>` takes a combined attribute name, like `date-sdate`, and several optional parameters separated by colons. In this case, SignOnSanDiego specified sorting in descending order `d` using the strong bias `s` flavor of the operator. If you don't provide qualifiers, the default is to use a descending order with a hard sort, just as it is in the URL operator case.
+Just like the URL `&sort=` parameter described above, the sort option in the Programmable Search Element `<div class="gcse-search" sort_by="date-sdate:d:s"></div>` takes a combined attribute name, like `date-sdate`, and several optional parameters separated by colons. In this case, SignOnSanDiego specified sorting in descending order `d` using the strong bias `s` flavor of the operator. If you don’t provide qualifiers, the default is to use a descending order with a hard sort, just as it is in the URL operator case.
 
 The sort option also enables the Restrict by Range feature. For example a site like SignOnSanDiego might enable users to search for articles published between August 25 and September 9 in 2010. To implement this, you can set the sort options to `date-sdate:r:20100825:20100907`. This again uses the combined attribute name `date-sdate`, but instead restricts to the range `r` of specified values `20100825:20100907`. As with the URL parameter, you can omit the upper or lower item of the range in the `sort` option of the Programmable Search Element.
 
-Another powerful feature of the sort option is that you can combine Sort by Attribute and Restrict by Range. You can combine multiple operators in the sort option using a comma. For example, to combine SignOnSanDiego's strong bias with the above date restrict, you would specify `date-sdate:d:s,date-sdate:r:20100825:20100907`. This feature can combine distinct attributes; for example, a movie review site might display the most highly rated movies released within the last week with the option `review-rating,release-date:r:20100907:`.
+Another powerful feature of the sort option is that you can combine Sort by Attribute and Restrict by Range. You can combine multiple operators in the sort option using a comma. For example, to combine SignOnSanDiego’s strong bias with the above date restrict, you would specify `date-sdate:d:s,date-sdate:r:20100825:20100907`. This feature can combine distinct attributes; for example, a movie review site might display the most highly rated movies released within the last week with the option `review-rating,release-date:r:20100907:`.
 
 Please refer to [this page](https://developers.google.com/custom-search/docs/element#supported_attributes) for all supported attributes.
 
 You can also use Filter by Attribute with the Programmable Search Element. For example, take our [earlier example](https://developers.google.com/custom-search/docs/structured_search#tokenization) with pages that had `linked-blog` attributes; to create a custom search control that only returned pages that linked to use the following code to inject a `more:pagemap:linked-blog:blogspot` operator into every query:
 
-...
+…
 
-<div class\="gcse-search" webSearchQueryAddition\="more:pagemap:linked-blog:blogspot"\></div\>  
-...
+&lt;div class=“gcse-search” webSearchQueryAddition=“more:pagemap:linked-blog:blogspot”&gt;&lt;/div&gt;  
+…
 
 This method is relatively inflexible because it adds a restriction to all queries issued from this control. To see other options, consult the documentation on the [Programmable Search Element](https://developers.google.com/custom-search/docs/element).
 
 [Back to top](https://developers.google.com/custom-search/docs/structured_search#top)
 
-## Exploring Other Features
+Exploring Other Features
+------------------------
 
 Structured search features are a powerful set of options that give you a great deal of control over your search application, allowing you to use custom attributes to order and restrict your search results in very powerful ways for your users. Structured search also works well with other Programmable Search Engine features such as custom result snippets. For more information:
 

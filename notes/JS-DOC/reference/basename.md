@@ -1,14 +1,17 @@
-# Intl.Locale.prototype.baseName
+Intl.Locale.prototype.baseName
+==============================
 
-The `Intl.Locale.prototype.baseName` property returns a substring of the `Locale`'s string representation, containing core information about the `Locale`.
+The `Intl.Locale.prototype.baseName` property returns a substring of the `Locale`’s string representation, containing core information about the `Locale`.
 
-## Description
+Description
+-----------
 
 An [`Intl.Locale`](../locale) object represents a parsed local and options for that locale. The `baseName` property returns basic, core information about the Locale in the form of a substring of the complete data string. Specifically, the property returns the substring containing the language, and the script and region if available.
 
-`baseName` returns the `language ["-" script] ["-" region] *("-" variant)` subsequence of the [unicode_language_id grammar](https://www.unicode.org/reports/tr35/#Identifiers).
+`baseName` returns the `language ["-" script] ["-" region] *("-" variant)` subsequence of the [unicode\_language\_id grammar](https://www.unicode.org/reports/tr35/#Identifiers).
 
-## Examples
+Examples
+--------
 
 ### Basic Example
 
@@ -34,12 +37,11 @@ An [`Intl.Locale`](../locale) object represents a parsed local and options for t
 
     console.log(dutch.baseName); // Prints out "nl-Latn-NL"
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.baseName">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
-<br/>
-
-<span class="small">#sec-Intl.Locale.prototype.baseName</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Internationalization API Specification (ECMAScript Internationalization API)<br />
+</p><span class="small">#sec-Intl.Locale.prototype.baseName</span></td></tr></tbody></table>
 
 `baseName`
 
@@ -67,7 +69,8 @@ No
 
 11.0
 
-## See also
+See also
+--------
 
 -   [`Intl.Locale`](../locale)
 

@@ -1,19 +1,16 @@
-# Combinations
+Combinations
+============
 
-When the order doesn't matter, it is a **Combination**.
+When the order doesn’t matter, it is a **Combination**.
 
 When the order **does** matter it is a **Permutation**.
 
-**"My fruit salad is a combination of apples, grapes and bananas"**
-We don't care what order the fruits are in, they could also be
-"bananas, grapes and apples" or "grapes, apples and bananas",
-its the same fruit salad.
+**“My fruit salad is a combination of apples, grapes and bananas”** We don’t care what order the fruits are in, they could also be “bananas, grapes and apples” or “grapes, apples and bananas”, its the same fruit salad.
 
-## Combinations without repetitions
+Combinations without repetitions
+--------------------------------
 
-This is how lotteries work. The numbers are drawn one at a
-time, and if we have the lucky numbers (no matter what order)
-we win!
+This is how lotteries work. The numbers are drawn one at a time, and if we have the lucky numbers (no matter what order) we win!
 
 No Repetition: such as lottery numbers `(2,14,15,27,30,33)`
 
@@ -21,22 +18,20 @@ No Repetition: such as lottery numbers `(2,14,15,27,30,33)`
 
 ![Formula](https://www.mathsisfun.com/combinatorics/images/combinations-no-repeat.png)
 
-where `n` is the number of things to choose from, and we choose `r` of them,
-no repetition, order doesn't matter.
+where `n` is the number of things to choose from, and we choose `r` of them, no repetition, order doesn’t matter.
 
-It is often called "n choose r" (such as "16 choose 3"). And is also known as the Binomial Coefficient.
+It is often called “n choose r” (such as “16 choose 3”). And is also known as the Binomial Coefficient.
 
-## Combinations with repetitions
+Combinations with repetitions
+-----------------------------
 
 Repetition is Allowed: such as coins in your pocket `(5,5,5,10,10)`
 
-Or let us say there are five flavours of ice cream:
-`banana`, `chocolate`, `lemon`, `strawberry` and `vanilla`.
+Or let us say there are five flavours of ice cream: `banana`, `chocolate`, `lemon`, `strawberry` and `vanilla`.
 
 We can have three scoops. How many variations will there be?
 
-Let's use letters for the flavours: `{b, c, l, s, v}`.
-Example selections include:
+Let’s use letters for the flavours: `{b, c, l, s, v}`. Example selections include:
 
 -   `{c, c, c}` (3 scoops of chocolate)
 -   `{b, l, v}` (one each of banana, lemon and vanilla)
@@ -46,11 +41,10 @@ Example selections include:
 
 ![Formula](https://www.mathsisfun.com/combinatorics/images/combinations-repeat.gif)
 
-Where `n` is the number of things to choose from, and we
-choose `r` of them. Repetition allowed,
-order doesn't matter.
+Where `n` is the number of things to choose from, and we choose `r` of them. Repetition allowed, order doesn’t matter.
 
-## Cheat Sheets
+Cheat Sheets
+------------
 
 Permutations cheat sheet
 
@@ -64,7 +58,8 @@ Permutations/combinations algorithm ideas.
 
 ![Algorithms Idea](https://cdn-images-1.medium.com/max/2000/1*vLsSsZMnesCFPCYTYMbxrQ.png)
 
-## References
+References
+----------
 
 -   [Math Is Fun](https://www.mathsisfun.com/combinatorics/combinations-permutations.html)
 -   [Permutations/combinations cheat sheets](https://medium.com/@trekhleb/permutations-combinations-algorithms-cheat-sheet-68c14879aba5)

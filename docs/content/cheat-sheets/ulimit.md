@@ -1,7 +1,9 @@
-# Report all current limits
+Report all current limits
+=========================
 
 ulimit -a
 
-# Unlimited file descriptors
+Unlimited file descriptors
+==========================
 
 ulimit -n unlimited

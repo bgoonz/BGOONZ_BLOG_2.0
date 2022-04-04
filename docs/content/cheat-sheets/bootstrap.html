@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>bootstrap</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="bootstrap">Bootstrap</h1>
+<h4 id="screen-sizes">Screen sizes</h4>
+<pre><code>         768          992                1200
+&#39;     &#39;     &#39;     &#39;     &#39;     &#39;     &#39;     &#39;     &#39;
+&lt;---------^------------^------------------^---------&gt;
+     xs         sm              md             lg
+   (phone)   (tablet)        (laptop)       (desktop)</code></pre>
+<p>Min:</p>
+<pre class="scss"><code>@media (min-width: @screen-sm-min) // &gt;= 768px (small tablet) @media (min-width: @screen-md-min) // &gt;= 992px (medium laptop) @media (min-width: @screen-lg-min); // &gt;= 1200px (large desktop)</code></pre>
+<p>Max:</p>
+<pre class="scss"><code>@media (max-width: @screen-xs-max) { // &lt; 768px (xsmall phone)
+@media (max-width: @screen-sm-max) { // &lt; 992px (small tablet)
+@media (max-width: @screen-md-max) { // &lt; 1200px (medium laptop)</code></pre>
+<h4 id="columns">Columns</h4>
+<pre class="scss"><code>.container
+.container-fluid</code></pre>
+<pre class="scss"><code>.col-xs-1
+.col-sm-1
+.col-md-1
+.col-lg-1
+.col-md-offset-1</code></pre>
+<p>Mixins:</p>
+<pre class="scss"><code>@include make-xs-column(12);
+@include make-sm-column(6);
+@include make-md-column(3);
+@include make-lg-column(3);</code></pre>
+<pre class="scss"><code>@include make-sm-column-offset(1);
+@include make-sm-column-push(1);
+@include make-sm-column-pull(1);</code></pre>
+<h4 id="utilities">Utilities</h4>
+<pre class="scss"><code>.pull-left
+.pull-right</code></pre>
+<pre class="scss"><code>.hidden-{xs,sm,md,lg}
+.visible-{xs,sm,md,lg}
+.visible-{xs,sm,md,lg,print}-{block,inline,inline-block}</code></pre>
+<pre class="scss"><code>.center-block  /* margin: auto */
+.clearfix
+.text-{center,left,right,justify,nowrap}
+.text-{lowercase,uppercase,capitalize}</code></pre>
+<pre class="scss"><code>.show
+.hidden</code></pre>
+<h4 id="modal">Modal</h4>
+<div class="sourceCode" id="cb12"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb12-1" title="1"><span class="kw">&lt;a</span><span class="ot"> data-toggle=</span><span class="st">&quot;modal&quot;</span><span class="ot"> data-target=</span><span class="st">&quot;#new&quot;</span><span class="kw">&gt;&lt;/a&gt;</span></a></code></pre></div>
+<pre class="haml"><code>#new.modal.fade(role=&#39;dialog&#39;)
+  .modal-dialog // .modal-lg, .modal-sm
+    .modal-content
+      .modal-header
+        %h4.modal-title hello
+        %button.close{type: &#39;button&#39;, data: { dismiss: &#39;modal&#39; }}
+          %span{&#39;aria-hidden&#39; =&gt; true}!= &quot;&amp;times;&quot;
+          %span.sr-only Close
+      .modal-body
+        ...
+      .modal-footer
+        ...</code></pre>
+<h4 id="modal-via-ajax-rails">Modal via ajax (Rails)</h4>
+<pre class="haml"><code>%button.btn{data: { |
+  toggle: &#39;modal&#39;, |
+  target: &#39;#chooseTheme&#39;, |
+  remote: &#39;/path/to/remote&#39;}
+  Change Theme</code></pre>
+<pre class="haml"><code>.modal.fade#chooseTheme
+  .modal-dialog.modal-xl
+    .modal-content
+      .modal-header
+        %h4.modal-title Choose a theme
+
+      .modal-body
+        .spinner-panel.-lg
+          %i</code></pre>
+<h4 id="tooltip">Tooltip</h4>
+<div class="sourceCode" id="cb16"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb16-1" title="1"><span class="kw">&lt;span</span><span class="ot"> data-toggle=</span><span class="st">&quot;tooltip&quot;</span><span class="ot"> title=</span><span class="st">&quot;tooltip&quot;</span><span class="ot"> data-placement=</span><span class="st">&quot;left|top|bottom|right&quot;</span><span class="kw">&gt;&lt;/span&gt;</span></a></code></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb17-1" title="1"><span class="at">$</span>(<span class="kw">function</span> () <span class="op">{</span></a>
+<a class="sourceLine" id="cb17-2" title="2">    <span class="at">$</span>(<span class="st">&#39;[data-toogle~=&quot;tooltip&quot;]&#39;</span>).<span class="at">tooltip</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb17-3" title="3"><span class="op">}</span>)<span class="op">;</span></a></code></pre></div>
+<h4 id="input-groups">Input groups</h4>
+<pre class="haml"><code>.input-group
+    input.form-control(type=&#39;text&#39;)
+    .input-group-addon years</code></pre>
+</body>
+</html>

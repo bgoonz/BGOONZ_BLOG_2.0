@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>react.js-cheatsheet-2</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="react.js-cheatsheet-2">React.js cheatsheet 2</h1>
+<h3 id="components">Components</h3>
+<h4 id="components-1">Components</h4>
+<pre class="jsx"><code>import React from &#39;react&#39;;
+import ReactDOM from &#39;react-dom&#39;;</code></pre>
+<p>{: .-setup}</p>
+<pre class="jsx"><code>class Hello extends React.Component {
+    render() {
+        return &lt;div className=&quot;message-box&quot;&gt;Hello {this.props.name}&lt;/div&gt;;
+    }
+}</code></pre>
+<pre class="jsx"><code>const el = document.body;
+ReactDOM.render(&lt;Hello name=&quot;John&quot; /&gt;, el);</code></pre>
+<p>Use the <a href="http://jsfiddle.net/reactjs/69z2wepo/">React.js jsfiddle</a> to start hacking. (or the unofficial <a href="http://jsbin.com/yafixat/edit?js,output">jsbin</a>)</p>
+<h4 id="import-multiple-exports">Import multiple exports</h4>
+<pre class="jsx"><code>import React, { Component } from &#39;react&#39;;
+import ReactDOM from &#39;react-dom&#39;;</code></pre>
+<p>{: .-setup}</p>
+<pre class="jsx"><code>
+
+class Hello extends Component {
+  ...
+}</code></pre>
+<h4 id="properties">Properties</h4>
+<div class="sourceCode" id="cb6"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb6-1" title="1"><span class="kw">&lt;video</span><span class="ot"> fullscreen=</span><span class="st">&quot;{true}&quot;</span><span class="ot"> autoplay=</span><span class="st">&quot;{false}&quot;</span> <span class="kw">/&gt;</span></a></code></pre></div>
+<p>{: .-setup}</p>
+<pre class="jsx"><code>
+
+render () {
+  this.props.fullscreen
+  const { fullscreen, autoplay } = this.props
+  ···
+}</code></pre>
+<p>{: data-line=“2,3”}</p>
+<p>Use <code>this.props</code> to access properties passed to the component.</p>
+<p>See: <a href="https://reactjs.org/docs/tutorial.html#using-props">Properties</a></p>
+<h4 id="states">States</h4>
+<pre class="jsx"><code>
+
+constructor(props) {
+  super(props)
+  this.state = { username: undefined }
+}</code></pre>
+<pre class="jsx"><code>this.setState({ username: &#39;rstacruz&#39; });</code></pre>
+<pre class="jsx"><code>
+
+render () {
+  this.state.username
+  const { username } = this.state
+  ···
+}</code></pre>
+<p>{: data-line=“2,3”}</p>
+<p>Use states (<code>this.state</code>) to manage dynamic data.</p>
+<p>With <a href="https://babeljs.io">Babel</a> you can use <a href="https://github.com/tc39/proposal-class-fields">proposal-class-fields</a> and get rid of constructor</p>
+<pre class="jsx"><code>
+
+class Hello extends Component {
+  state = { username: undefined };
+  ...
+}</code></pre>
+<p>See: <a href="https://reactjs.org/docs/tutorial.html#reactive-state">States</a></p>
+<h4 id="nesting">Nesting</h4>
+<pre class="jsx"><code>class Info extends Component {
+    render() {
+        const { avatar, username } = this.props;
+
+        return (
+            &lt;div&gt;
+                &lt;UserAvatar src={avatar} /&gt;
+                &lt;UserProfile username={username} /&gt;
+            &lt;/div&gt;
+        );
+    }
+}</code></pre>
+<p>As of React v16.2.0, fragments can be used to return multiple children without adding extra wrapping nodes to the DOM.</p>
+<pre class="jsx"><code>import React, { Component, Fragment } from &#39;react&#39;;
+
+class Info extends Component {
+    render() {
+        const { avatar, username } = this.props;
+
+        return (
+            &lt;Fragment&gt;
+                &lt;UserAvatar src={avatar} /&gt;
+                &lt;UserProfile username={username} /&gt;
+            &lt;/Fragment&gt;
+        );
+    }
+}</code></pre>
+<p>{: data-line=“5,6,7,8,9,10”}</p>
+<p>Nest components to separate concerns.</p>
+<p>See: <a href="https://reactjs.org/docs/components-and-props.html#composing-components">Composing Components</a></p>
+<h4 id="children">Children</h4>
+<pre class="jsx"><code>&lt;AlertBox&gt;
+    &lt;h1&gt;You have pending notifications&lt;/h1&gt;
+&lt;/AlertBox&gt;</code></pre>
+<p>{: data-line=“2”}</p>
+<pre class="jsx"><code>class AlertBox extends Component {
+    render() {
+        return &lt;div className=&quot;alert-box&quot;&gt;{this.props.children}&lt;/div&gt;;
+    }
+}</code></pre>
+<p>{: data-line=“4”}</p>
+<p>Children are passed as the <code>children</code> property.</p>
+<h3 id="defaults">Defaults</h3>
+<h4 id="setting-default-props">Setting default props</h4>
+<pre class="jsx"><code>Hello.defaultProps = {
+    color: &#39;blue&#39;
+};</code></pre>
+<p>{: data-line=“1”}</p>
+<p>See: <a href="https://reactjs.org/docs/react-component.html#defaultprops">defaultProps</a></p>
+<h4 id="setting-default-state">Setting default state</h4>
+<pre class="jsx"><code>class Hello extends Component {
+    constructor(props) {
+        super(props);
+        this.state = { visible: true };
+    }
+}</code></pre>
+<p>{: data-line=“4”}</p>
+<p>Set the default state in the <code>constructor()</code>.</p>
+<p>And without constructor using <a href="https://babeljs.io">Babel</a> with <a href="https://github.com/tc39/proposal-class-fields">proposal-class-fields</a>.</p>
+<pre class="jsx"><code>
+
+class Hello extends Component {
+    state = { visible: true }
+  }
+}</code></pre>
+<p>{: data-line=“2”}</p>
+<p>See: <a href="https://reactjs.org/docs/react-without-es6.html#setting-the-initial-state">Setting the default state</a></p>
+<h3 id="other-components">Other components</h3>
+<h4 id="functional-components">Functional components</h4>
+<pre class="jsx"><code>function MyComponent({ name }) {
+    return &lt;div className=&quot;message-box&quot;&gt;Hello {name}&lt;/div&gt;;
+}</code></pre>
+<p>{: data-line=“1”}</p>
+<p>Functional components have no state. Also, their <code>props</code> are passed as the first parameter to a function.</p>
+<p>See: <a href="https://reactjs.org/docs/components-and-props.html#functional-and-class-components">Function and Class Components</a></p>
+<h4 id="pure-components">Pure components</h4>
+<pre class="jsx"><code>
+
+import React, {PureComponent} from &#39;react&#39;
+
+class MessageBox extends PureComponent {
+  ···
+}</code></pre>
+<p>Performance-optimized version of <code>React.Component</code>. Doesn’t rerender if props/state hasn’t changed.</p>
+<p>See: <a href="https://reactjs.org/docs/react-api.html#react.purecomponent">Pure components</a></p>
+<h4 id="component-api">Component API</h4>
+<pre class="jsx"><code>this.forceUpdate();</code></pre>
+<pre class="jsx"><code>
+
+this.setState({ ... })
+this.setState(state =&gt; { ... })</code></pre>
+<pre class="jsx"><code>this.state;
+this.props;</code></pre>
+<p>These methods and properties are available for <code>Component</code> instances.</p>
+<p>See: <a href="http://facebook.github.io/react/docs/component-api.html">Component API</a></p>
+<h3 id="lifecycle">Lifecycle</h3>
+<p>{: .-two-column}</p>
+<h4 id="mounting">Mounting</h4>
+<table>
+<thead>
+<tr class="header">
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>constructor</code> <em>(props)</em></td>
+<td>Before rendering <a href="https://reactjs.org/docs/react-component.html#constructor">#</a></td>
+</tr>
+<tr class="even">
+<td><code>componentWillMount()</code></td>
+<td><em>Don’t use this</em> <a href="https://reactjs.org/docs/react-component.html#componentwillmount">#</a></td>
+</tr>
+<tr class="odd">
+<td><code>render()</code></td>
+<td>Render <a href="https://reactjs.org/docs/react-component.html#render">#</a></td>
+</tr>
+<tr class="even">
+<td><code>componentDidMount()</code></td>
+<td>After rendering (DOM available) <a href="https://reactjs.org/docs/react-component.html#componentdidmount">#</a></td>
+</tr>
+<tr class="odd">
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td><code>componentWillUnmount()</code></td>
+<td>Before DOM removal <a href="https://reactjs.org/docs/react-component.html#componentwillunmount">#</a></td>
+</tr>
+<tr class="odd">
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td><code>componentDidCatch()</code></td>
+<td>Catch errors (16+) <a href="https://reactjs.org/blog/2017/07/26/error-handling-in-react-16.html">#</a></td>
+</tr>
+</tbody>
+</table>
+<p>Set initial the state on <code>constructor()</code>. Add DOM event handlers, timers (etc) on <code>componentDidMount()</code>, then remove them on <code>componentWillUnmount()</code>.</p>
+<h4 id="updating">Updating</h4>
+<table>
+<colgroup>
+<col style="width: 51%" />
+<col style="width: 48%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>componentDidUpdate</code> <em>(prevProps, prevState, snapshot)</em></td>
+<td>Use <code>setState()</code> here, but remember to compare props</td>
+</tr>
+<tr class="even">
+<td><code>shouldComponentUpdate</code> <em>(newProps, newState)</em></td>
+<td>Skips <code>render()</code> if returns false</td>
+</tr>
+<tr class="odd">
+<td><code>render()</code></td>
+<td>Render</td>
+</tr>
+<tr class="even">
+<td><code>componentDidUpdate</code> <em>(prevProps, prevState)</em></td>
+<td>Operate on the DOM here</td>
+</tr>
+</tbody>
+</table>
+<p>Called when parents change properties and <code>.setState()</code>. These are not called for initial renders.</p>
+<p>See: <a href="http://facebook.github.io/react/docs/component-specs.html#updating-componentwillreceiveprops">Component specs</a></p>
+<h3 id="hooks-new">Hooks (New)</h3>
+<p>{: .-two-column}</p>
+<h4 id="state-hook">State Hook</h4>
+<pre class="jsx"><code>import React, { useState } from &#39;react&#39;;
+
+function Example() {
+    // Declare a new state variable, which we&#39;ll call &quot;count&quot;
+    const [count, setCount] = useState(0);
+
+    return (
+        &lt;div&gt;
+            &lt;p&gt;You clicked {count} times&lt;/p&gt;
+            &lt;button onClick={() =&gt; setCount(count + 1)}&gt;Click me&lt;/button&gt;
+        &lt;/div&gt;
+    );
+}</code></pre>
+<p>{: data-line=“5,10”}</p>
+<p>Hooks are a new addition in React 16.8.</p>
+<p>See: <a href="https://reactjs.org/docs/hooks-overview.html">Hooks at a Glance</a></p>
+<h4 id="declaring-multiple-state-variables">Declaring multiple state variables</h4>
+<pre class="jsx"><code>function ExampleWithManyStates() {
+    // Declare multiple state variables!
+    const [age, setAge] = useState(42);
+    const [fruit, setFruit] = useState(&#39;banana&#39;);
+    const [todos, setTodos] = useState([{ text: &#39;Learn Hooks&#39; }]);
+    // ...
+}</code></pre>
+<h4 id="effect-hook">Effect hook</h4>
+<pre class="jsx"><code>import React, { useState, useEffect } from &#39;react&#39;;
+
+function Example() {
+    const [count, setCount] = useState(0);
+
+    // Similar to componentDidMount and componentDidUpdate:
+    useEffect(() =&gt; {
+        // Update the document title using the browser API
+        document.title = `You clicked ${count} times`;
+    }, [count]);
+
+    return (
+        &lt;div&gt;
+            &lt;p&gt;You clicked {count} times&lt;/p&gt;
+            &lt;button onClick={() =&gt; setCount(count + 1)}&gt;Click me&lt;/button&gt;
+        &lt;/div&gt;
+    );
+}</code></pre>
+<p>{: data-line=“6,7,8,9,10”}</p>
+<p>If you’re familiar with React class lifecycle methods, you can think of <code>useEffect</code> Hook as <code>componentDidMount</code>, <code>componentDidUpdate</code>, and <code>componentWillUnmount</code> combined.</p>
+<p>By default, React runs the effects after every render — including the first render.</p>
+<h4 id="building-your-own-hooks">Building your own hooks</h4>
+<p><strong>Define FriendStatus</strong></p>
+<pre class="jsx"><code>import React, { useState, useEffect } from &#39;react&#39;;
+
+function FriendStatus(props) {
+    const [isOnline, setIsOnline] = useState(null);
+
+    useEffect(() =&gt; {
+        function handleStatusChange(status) {
+            setIsOnline(status.isOnline);
+        }
+
+        ChatAPI.subscribeToFriendStatus(props.friend.id, handleStatusChange);
+        return () =&gt; {
+            ChatAPI.unsubscribeFromFriendStatus(props.friend.id, handleStatusChange);
+        };
+    }, [props.friend.id]);
+
+    if (isOnline === null) {
+        return &#39;Loading...&#39;;
+    }
+    return isOnline ? &#39;Online&#39; : &#39;Offline&#39;;
+}</code></pre>
+<p>{: data-line=“11,12,13,14”}</p>
+<p>Effects may also optionally specify how to “clean up” after them by returning a function.</p>
+<p><strong>Use FriendStatus</strong></p>
+<pre class="jsx"><code>function FriendStatus(props) {
+    const isOnline = useFriendStatus(props.friend.id);
+
+    if (isOnline === null) {
+        return &#39;Loading...&#39;;
+    }
+    return isOnline ? &#39;Online&#39; : &#39;Offline&#39;;
+}</code></pre>
+<p>{: data-line=“2”}</p>
+<p>See: <a href="https://reactjs.org/docs/hooks-custom.html">Building Your Own Hooks</a></p>
+<h4 id="hooks-api-reference">Hooks API Reference</h4>
+<p>Also see: <a href="https://reactjs.org/docs/hooks-faq.html">Hooks FAQ</a></p>
+<p><strong>Basic Hooks</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Hook</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>useState</code><em>(initialState)</em></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>useEffect</code><em>(() =&gt; { … })</em></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>useContext</code><em>(MyContext)</em></td>
+<td>value returned from <code>React.createContext</code></td>
+</tr>
+</tbody>
+</table>
+<p>Full details: <a href="https://reactjs.org/docs/hooks-reference.html#basic-hooks">Basic Hooks</a></p>
+<p><strong>Additional Hooks</strong></p>
+<table>
+<colgroup>
+<col style="width: 36%" />
+<col style="width: 63%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Hook</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>useReducer</code><em>(reducer, initialArg, init)</em></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>useCallback</code><em>(() =&gt; { … })</em></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>useMemo</code><em>(() =&gt; { … })</em></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>useRef</code><em>(initialValue)</em></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>useImperativeHandle</code><em>(ref, () =&gt; { … })</em></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>useLayoutEffect</code></td>
+<td>identical to <code>useEffect</code>, but it fires synchronously after all DOM mutations</td>
+</tr>
+<tr class="odd">
+<td><code>useDebugValue</code><em>(value)</em></td>
+<td>display a label for custom hooks in React DevTools</td>
+</tr>
+</tbody>
+</table>
+<p>Full details: <a href="https://reactjs.org/docs/hooks-reference.html#additional-hooks">Additional Hooks</a></p>
+<h3 id="dom-nodes">DOM nodes</h3>
+<p>{: .-two-column}</p>
+<h4 id="references">References</h4>
+<pre class="jsx"><code>class MyComponent extends Component {
+    render() {
+        return (
+            &lt;div&gt;
+                &lt;input ref={(el) =&gt; (this.input = el)} /&gt;
+            &lt;/div&gt;
+        );
+    }
+
+    componentDidMount() {
+        this.input.focus();
+    }
+}</code></pre>
+<p>{: data-line=“4,9”}</p>
+<p>Allows access to DOM nodes.</p>
+<p>See: <a href="https://reactjs.org/docs/refs-and-the-dom.html">Refs and the DOM</a></p>
+<h4 id="dom-events">DOM Events</h4>
+<pre class="jsx"><code>class MyComponent extends Component {
+    render() {
+        &lt;input type=&quot;text&quot; value={this.state.value} onChange={(event) =&gt; this.onChange(event)} /&gt;;
+    }
+
+    onChange(event) {
+        this.setState({ value: event.target.value });
+    }
+}</code></pre>
+<p>{: data-line=“5,9”}</p>
+<p>Pass functions to attributes like <code>onChange</code>.</p>
+<p>See: <a href="https://reactjs.org/docs/events.html">Events</a></p>
+<h3 id="other-features">Other features</h3>
+<h4 id="transferring-props">Transferring props</h4>
+<div class="sourceCode" id="cb31"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb31-1" title="1"><span class="kw">&lt;VideoPlayer</span><span class="ot"> src=</span><span class="st">&quot;video.mp4&quot;</span> <span class="kw">/&gt;</span></a></code></pre></div>
+<p>{: .-setup}</p>
+<pre class="jsx"><code>class VideoPlayer extends Component {
+    render() {
+        return &lt;VideoEmbed {...this.props} /&gt;;
+    }
+}</code></pre>
+<p>Propagates <code>src="..."</code> down to the sub-component.</p>
+<p>See <a href="http://facebook.github.io/react/docs/transferring-props.html">Transferring props</a></p>
+<h4 id="top-level-api">Top-level API</h4>
+<pre class="jsx"><code>
+
+React.createClass({ ... })
+React.isValidElement(c)</code></pre>
+<pre class="jsx"><code>ReactDOM.render(&lt;Component /&gt;, domnode, [callback]);
+ReactDOM.unmountComponentAtNode(domnode);</code></pre>
+<pre class="jsx"><code>ReactDOMServer.renderToString(&lt;Component /&gt;);
+ReactDOMServer.renderToStaticMarkup(&lt;Component /&gt;);</code></pre>
+<p>There are more, but these are most common.</p>
+<p>See: <a href="https://reactjs.org/docs/react-api.html">React top-level API</a></p>
+<h3 id="jsx-patterns">JSX patterns</h3>
+<p>{: .-two-column}</p>
+<h4 id="style-shorthand">Style shorthand</h4>
+<pre class="jsx"><code>const style = { height: 10 };
+return &lt;div style={style}&gt;&lt;/div&gt;;</code></pre>
+<pre class="jsx"><code>return &lt;div style={{ margin: 0, padding: 0 }}&gt;&lt;/div&gt;;</code></pre>
+<p>See: <a href="https://reactjs.org/tips/inline-styles.html">Inline styles</a></p>
+<h4 id="inner-html">Inner HTML</h4>
+<pre class="jsx"><code>function markdownify() {
+    return &#39;&lt;p&gt;...&lt;/p&gt;&#39;;
+}
+&lt;div dangerouslySetInnerHTML={{ __html: markdownify() }} /&gt;;</code></pre>
+<p>See: <a href="https://reactjs.org/tips/dangerously-set-inner-html.html">Dangerously set innerHTML</a></p>
+<h4 id="lists">Lists</h4>
+<pre class="jsx"><code>class TodoList extends Component {
+    render() {
+        const { items } = this.props;
+
+        return (
+            &lt;ul&gt;
+                {items.map((item) =&gt; (
+                    &lt;TodoItem item={item} key={item.key} /&gt;
+                ))}
+            &lt;/ul&gt;
+        );
+    }
+}</code></pre>
+<p>{: data-line=“6,7”}</p>
+<p>Always supply a <code>key</code> property.</p>
+<h4 id="conditionals">Conditionals</h4>
+<pre class="jsx"><code>&lt;Fragment&gt;{showMyComponent ? &lt;MyComponent /&gt; : &lt;OtherComponent /&gt;}&lt;/Fragment&gt;</code></pre>
+<h4 id="short-circuit-evaluation">Short-circuit evaluation</h4>
+<pre class="jsx"><code>&lt;Fragment&gt;
+    {showPopup &amp;&amp; &lt;Popup /&gt;}
+    ...
+&lt;/Fragment&gt;</code></pre>
+<h3 id="new-features">New features</h3>
+<h4 id="returning-multiple-elements">Returning multiple elements</h4>
+<p>You can return multiple elements as arrays or fragments.</p>
+<p><strong>Arrays</strong></p>
+<div class="sourceCode" id="cb42"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb42-1" title="1"><span class="at">render</span> () <span class="op">{</span></a>
+<a class="sourceLine" id="cb42-2" title="2">  <span class="co">// Don&#39;t forget the keys!</span></a>
+<a class="sourceLine" id="cb42-3" title="3">  <span class="cf">return</span> [</a>
+<a class="sourceLine" id="cb42-4" title="4">    <span class="op">&lt;</span>li key<span class="op">=</span><span class="st">&quot;A&quot;</span><span class="op">&gt;</span>First item&lt;/li<span class="op">&gt;,</span></a>
+<a class="sourceLine" id="cb42-5" title="5">    <span class="op">&lt;</span>li key<span class="op">=</span><span class="st">&quot;B&quot;</span><span class="op">&gt;</span>Second item&lt;/li<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb42-6" title="6">  ]</a>
+<a class="sourceLine" id="cb42-7" title="7"><span class="op">}</span></a></code></pre></div>
+<p>{: data-line=“3,4,5,6”}</p>
+<p><strong>Fragments</strong></p>
+<div class="sourceCode" id="cb43"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb43-1" title="1"><span class="at">render</span> () <span class="op">{</span></a>
+<a class="sourceLine" id="cb43-2" title="2">  <span class="co">// Fragments don&#39;t require keys!</span></a>
+<a class="sourceLine" id="cb43-3" title="3">  <span class="cf">return</span> (</a>
+<a class="sourceLine" id="cb43-4" title="4">    <span class="op">&lt;</span>Fragment<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb43-5" title="5">      <span class="op">&lt;</span>li<span class="op">&gt;</span>First item&lt;/li<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb43-6" title="6">      <span class="op">&lt;</span>li<span class="op">&gt;</span>Second item&lt;/li<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb43-7" title="7">    &lt;/Fragment<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb43-8" title="8">  )</a>
+<a class="sourceLine" id="cb43-9" title="9"><span class="op">}</span></a></code></pre></div>
+<p>{: data-line=“3,4,5,6,7,8”}</p>
+<p>See: <a href="https://reactjs.org/blog/2017/09/26/react-v16.0.html#new-render-return-types-fragments-and-strings">Fragments and strings</a></p>
+<h4 id="returning-strings">Returning strings</h4>
+<div class="sourceCode" id="cb44"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb44-1" title="1"><span class="at">render</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb44-2" title="2">  <span class="cf">return</span> <span class="st">&#39;Look ma, no spans!&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb44-3" title="3"><span class="op">}</span></a></code></pre></div>
+<p>{: data-line=“2”}</p>
+<p>You can return just a string.</p>
+<p>See: <a href="https://reactjs.org/blog/2017/09/26/react-v16.0.html#new-render-return-types-fragments-and-strings">Fragments and strings</a></p>
+<h4 id="errors">Errors</h4>
+<div class="sourceCode" id="cb45"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb45-1" title="1"><span class="kw">class</span> MyComponent <span class="kw">extends</span> Component <span class="op">{</span></a>
+<a class="sourceLine" id="cb45-2" title="2">  ···</a>
+<a class="sourceLine" id="cb45-3" title="3">  <span class="at">componentDidCatch</span> (error<span class="op">,</span> info) <span class="op">{</span></a>
+<a class="sourceLine" id="cb45-4" title="4">    <span class="kw">this</span>.<span class="at">setState</span>(<span class="op">{</span> error <span class="op">}</span>)</a>
+<a class="sourceLine" id="cb45-5" title="5">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb45-6" title="6"><span class="op">}</span></a></code></pre></div>
+<p>{: data-line=“3,4,5”}</p>
+<p>Catch errors via <code>componentDidCatch</code>. (React 16+)</p>
+<p>See: <a href="https://reactjs.org/blog/2017/07/26/error-handling-in-react-16.html">Error handling in React 16</a></p>
+<h4 id="portals">Portals</h4>
+<div class="sourceCode" id="cb46"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb46-1" title="1"><span class="at">render</span> () <span class="op">{</span></a>
+<a class="sourceLine" id="cb46-2" title="2">  <span class="cf">return</span> <span class="va">React</span>.<span class="at">createPortal</span>(</a>
+<a class="sourceLine" id="cb46-3" title="3">    <span class="kw">this</span>.<span class="va">props</span>.<span class="at">children</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb46-4" title="4">    <span class="va">document</span>.<span class="at">getElementById</span>(<span class="st">&#39;menu&#39;</span>)</a>
+<a class="sourceLine" id="cb46-5" title="5">  )</a>
+<a class="sourceLine" id="cb46-6" title="6"><span class="op">}</span></a></code></pre></div>
+<p>{: data-line=“2,3,4,5”}</p>
+<p>This renders <code>this.props.children</code> into any location in the DOM.</p>
+<p>See: <a href="https://reactjs.org/docs/portals.html">Portals</a></p>
+<h4 id="hydration">Hydration</h4>
+<div class="sourceCode" id="cb47"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb47-1" title="1"><span class="kw">const</span> el <span class="op">=</span> <span class="va">document</span>.<span class="at">getElementById</span>(<span class="st">&#39;app&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb47-2" title="2"><span class="va">ReactDOM</span>.<span class="at">hydrate</span>(<span class="op">&lt;</span>App /<span class="op">&gt;,</span> el)<span class="op">;</span></a></code></pre></div>
+<p>{: data-line=“2”}</p>
+<p>Use <code>ReactDOM.hydrate</code> instead of using <code>ReactDOM.render</code> if you’re rendering over the output of <a href="https://reactjs.org/docs/react-dom-server.html">ReactDOMServer</a>.</p>
+<p>See: <a href="https://reactjs.org/docs/react-dom.html#hydrate">Hydrate</a></p>
+<h3 id="property-validation">Property validation</h3>
+<h4 id="proptypes">PropTypes</h4>
+<div class="sourceCode" id="cb48"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb48-1" title="1"><span class="im">import</span> PropTypes <span class="im">from</span> <span class="st">&#39;prop-types&#39;</span><span class="op">;</span></a></code></pre></div>
+<p>{: .-setup}</p>
+<p>See: <a href="https://reactjs.org/docs/typechecking-with-proptypes.html">Typechecking with PropTypes</a></p>
+<p>| <code>any</code> | Anything |</p>
+<p><strong>Basic</strong></p>
+<p>| <code>string</code> | | | <code>number</code> | | | <code>func</code> | Function | | <code>bool</code> | True or false |</p>
+<p><strong>Enum</strong></p>
+<p>| <code>oneOf</code><em>(any)</em> | Enum types | | <code>oneOfType</code><em>(type array)</em> | Union |</p>
+<p><strong>Array</strong></p>
+<p>| <code>array</code> | | | <code>arrayOf</code><em>(…)</em> | |</p>
+<p><strong>Object</strong></p>
+<p>| <code>object</code> | | | <code>objectOf</code><em>(…)</em> | Object with values of a certain type | | <code>instanceOf</code><em>(…)</em> | Instance of a class | | <code>shape</code><em>(…)</em> | |</p>
+<p><strong>Elements</strong></p>
+<p>| <code>element</code> | React element | | <code>node</code> | DOM node |</p>
+<p><strong>Required</strong></p>
+<p>| <code>(···).isRequired</code> | Required |</p>
+<h4 id="basic-types">Basic types</h4>
+<pre class="jsx"><code>MyComponent.propTypes = {
+    email: PropTypes.string,
+    seats: PropTypes.number,
+    callback: PropTypes.func,
+    isClosed: PropTypes.bool,
+    any: PropTypes.any
+};</code></pre>
+<h4 id="required-types">Required types</h4>
+<pre class="jsx"><code>MyCo.propTypes = {
+    name: PropTypes.string.isRequired
+};</code></pre>
+<h4 id="elements">Elements</h4>
+<pre class="jsx"><code>MyCo.propTypes = {
+    // React element
+    element: PropTypes.element,
+
+    // num, string, element, or an array of those
+    node: PropTypes.node
+};</code></pre>
+<h4 id="enumerables-oneof">Enumerables (oneOf)</h4>
+<pre class="jsx"><code>MyCo.propTypes = {
+    direction: PropTypes.oneOf([&#39;left&#39;, &#39;right&#39;])
+};</code></pre>
+<h4 id="arrays-and-objects">Arrays and objects</h4>
+<pre class="jsx"><code>MyCo.propTypes = {
+    list: PropTypes.array,
+    ages: PropTypes.arrayOf(PropTypes.number),
+    user: PropTypes.object,
+    user: PropTypes.objectOf(PropTypes.number),
+    message: PropTypes.instanceOf(Message)
+};</code></pre>
+<pre class="jsx"><code>MyCo.propTypes = {
+    user: PropTypes.shape({
+        name: PropTypes.string,
+        age: PropTypes.number
+    })
+};</code></pre>
+<p>Use <code>.array[Of]</code>, <code>.object[Of]</code>, <code>.instanceOf</code>, <code>.shape</code>.</p>
+<h4 id="custom-validation">Custom validation</h4>
+<pre class="jsx"><code>MyCo.propTypes = {
+    customProp: (props, key, componentName) =&gt; {
+        if (!/matchme/.test(props[key])) {
+            return new Error(&#39;Validation failed!&#39;);
+        }
+    }
+};</code></pre>
+<h3 id="also-see">Also see</h3>
+<ul>
+<li><a href="https://reactjs.org">React website</a> <em>(reactjs.org)</em></li>
+<li><a href="https://reactcheatsheet.com">React cheatsheet</a> <em>(reactcheatsheet.com)</em></li>
+<li><a href="https://github.com/enaqx/awesome-react">Awesome React</a> <em>(github.com)</em></li>
+<li>React v0.14 cheatsheet <em>Legacy version</em></li>
+</ul>
+</body>
+</html>

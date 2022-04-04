@@ -1,37 +1,24 @@
----
-title: Yaml
-category: Markup
-
-prism_languages: [yaml]
----
-
 ### Multiline strings
 
-```yaml
-Multiline: |
-    hello
-    world
-```
+    Multiline: |
+        hello
+        world
 
 ### Inheritance
 
-```yaml
-parent: &defaults
-    a: 2
-    b: 3
+    parent: &defaults
+        a: 2
+        b: 3
 
-child:
-    <<: *defaults
-    b: 4
-```
+    child:
+        <<: *defaults
+        b: 4
 
 ### Reference content
 
-```yaml
-values: &ref
-    - These values
-    - will be reused below
+    values: &ref
+        - These values
+        - will be reused below
 
-other_values:
-    <<: *ref
-```
+    other_values:
+        <<: *ref

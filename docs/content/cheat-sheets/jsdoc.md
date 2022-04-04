@@ -1,148 +1,112 @@
----
-title: Jsdoc
-category: JavaScript
-
-weight: -1
----
-
 ### Functions
 
-```js
-/**
- * This is a function.
- *
- * @param {string} n - A string param
- * @return {string} A good string
- *
- * @example
- *
- *     foo('hello')
- */
+    /**
+     * This is a function.
+     *
+     * @param {string} n - A string param
+     * @return {string} A good string
+     *
+     * @example
+     *
+     *     foo('hello')
+     */
 
-function foo(n) {
-    return n;
-}
-```
+    function foo(n) {
+        return n;
+    }
 
-See: <https://jsdoc.app/index.html>
+See: <a href="https://jsdoc.app/index.html" class="uri">https://jsdoc.app/index.html</a>
 
 ### Types
 
-| Type                            | Description                           |
-| ------------------------------- | ------------------------------------- | -------------- |
-| `@param {string=} n`            | Optional                              |
-| `@param {string} [n]`           | Optional                              |
-| `@param {(string                | number)} n`                           | Multiple types |
-| `@param {*} n`                  | Any type                              |
-| `@param {...string} n`          | Repeatable arguments                  |
-| `@param {string} [n="hi"]`      | Optional with default                 |
-| `@param {string[]} n`           | Array of strings                      |
-| `@return {Promise<string[]>} n` | Promise fulfilled by array of strings |
+<table><thead><tr class="header"><th>Type</th><th>Description</th><th></th></tr></thead><tbody><tr class="odd"><td><code>@param {string=} n</code></td><td>Optional</td><td></td></tr><tr class="even"><td><code>@param {string} [n]</code></td><td>Optional</td><td></td></tr><tr class="odd"><td><code>@param {(string                | number)} n</code></td><td>Multiple types</td><td></td></tr><tr class="even"><td><code>@param {*} n</code></td><td>Any type</td><td></td></tr><tr class="odd"><td><code>@param {...string} n</code></td><td>Repeatable arguments</td><td></td></tr><tr class="even"><td><code>@param {string} [n="hi"]</code></td><td>Optional with default</td><td></td></tr><tr class="odd"><td><code>@param {string[]} n</code></td><td>Array of strings</td><td></td></tr><tr class="even"><td><code>@return {Promise&lt;string[]&gt;} n</code></td><td>Promise fulfilled by array of strings</td><td></td></tr></tbody></table>
 
-See: <https://jsdoc.app/tags-type.html>
+See: <a href="https://jsdoc.app/tags-type.html" class="uri">https://jsdoc.app/tags-type.html</a>
 
 ### Variables
 
-```js
-/**
- * @type {number}
- */
-var FOO = 1;
-```
+    /**
+     * @type {number}
+     */
+    var FOO = 1;
 
-```js
-/**
- * @const {number}
- */
-const FOO = 1;
-```
+    /**
+     * @const {number}
+     */
+    const FOO = 1;
 
 ### Typedef
 
-```js
-/**
- * A song
- * @typedef {Object} Song
- * @property {string} title - The title
- * @property {string} artist - The artist
- * @property {number} year - The year
- */
-```
+    /**
+     * A song
+     * @typedef {Object} Song
+     * @property {string} title - The title
+     * @property {string} artist - The artist
+     * @property {number} year - The year
+     */
 
-```js
-/**
- * Plays a song
- * @param {Song} song - The {@link Song} to be played
- */
+    /**
+     * Plays a song
+     * @param {Song} song - The {@link Song} to be played
+     */
 
-function play(song) {}
-```
+    function play(song) {}
 
-See: <https://jsdoc.app/tags-typedef.html>
+See: <a href="https://jsdoc.app/tags-typedef.html" class="uri">https://jsdoc.app/tags-typedef.html</a>
 
 ### Typedef Shorthand
 
 {% raw %}
 
-```js
-/**
- * A song
- * @typedef {{title: string, artist: string, year: number}} Song
- */
-```
+    /**
+     * A song
+     * @typedef {{title: string, artist: string, year: number}} Song
+     */
 
 {% endraw %}
 
-```js
-/**
- * Plays a song
- * @param {Song} song - The {@link Song} to be played
- */
+    /**
+     * Plays a song
+     * @param {Song} song - The {@link Song} to be played
+     */
 
-function play(song) {}
-```
+    function play(song) {}
 
-See: <https://jsdoc.app/tags-typedef.html>
+See: <a href="https://jsdoc.app/tags-typedef.html" class="uri">https://jsdoc.app/tags-typedef.html</a>
 
 ### Importing types
 
-```js
-/**
- * @typedef {import('./Foo').default} Bar
- */
+    /**
+     * @typedef {import('./Foo').default} Bar
+     */
 
-/**
- * @param {Bar} x
- */
+    /**
+     * @param {Bar} x
+     */
 
-function test(x) {}
-```
+    function test(x) {}
 
 This syntax is [TypeScript-specific](https://github.com/Microsoft/TypeScript/wiki/JsDoc-support-in-JavaScript#import-types).
 
 ### Other keywords
 
-```js
-/**
- * @throws {FooException}
- * @private
- * @deprecated
- * @see
- *
- * @function
- * @class
- */
-```
+    /**
+     * @throws {FooException}
+     * @private
+     * @deprecated
+     * @see
+     *
+     * @function
+     * @class
+     */
 
-See the full list: <https://jsdoc.app/index.html#block-tags>
+See the full list: <a href="https://jsdoc.app/index.html#block-tags" class="uri">https://jsdoc.app/index.html#block-tags</a>
 
 ### Renaming
 
-```js
-/*
- * @alias Foo.bar
- * @name Foo.bar
- */
-```
+    /*
+     * @alias Foo.bar
+     * @name Foo.bar
+     */
 
-Prefer `alias` over `name`. See: <https://jsdoc.app/tags-alias.html>
+Prefer `alias` over `name`. See: <a href="https://jsdoc.app/tags-alias.html" class="uri">https://jsdoc.app/tags-alias.html</a>

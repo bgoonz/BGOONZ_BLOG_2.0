@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>missing_semicolon_before_statement</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="syntaxerror-missing-before-statement">SyntaxError: missing ; before statement</h1>
+<p>The JavaScript exception “missing ; before statement” occurs when there is a semicolon (<code>;</code>) missing somewhere and can’t be added by <a href="../lexical_grammar#automatic_semicolon_insertion">automatic semicolon insertion (ASI)</a>. You need to provide a semicolon, so that JavaScript can parse the source code correctly.</p>
+<h2 id="message">Message</h2>
+<pre><code>SyntaxError: Expected &#39;;&#39; (Edge)
+SyntaxError: missing ; before statement (Firefox)</code></pre>
+<h2 id="error-type">Error type</h2>
+<p><a href="../global_objects/syntaxerror"><code>SyntaxError</code></a>.</p>
+<h2 id="what-went-wrong">What went wrong?</h2>
+<p>There is a semicolon (<code>;</code>) missing somewhere. <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements">JavaScript statements</a> must be terminated with semicolons. Some of them are affected by <a href="../lexical_grammar#automatic_semicolon_insertion">automatic semicolon insertion (ASI)</a>, but in this case you need to provide a semicolon, so that JavaScript can parse the source code correctly.</p>
+<p>However, oftentimes, this error is only a consequence of another error, like not escaping strings properly, or using <code>var</code> wrongly. You might also have too many parenthesis somewhere. Carefully check the syntax when this error is thrown.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="unescaped-strings">Unescaped strings</h3>
+<p>This error can occur easily when not escaping strings properly and the JavaScript engine is expecting the end of your string already. For example:</p>
+<pre><code>var foo = &#39;Tom&#39;s bar&#39;;
+// SyntaxError: missing ; before statement</code></pre>
+<p>You can use double quotes, or escape the apostrophe:</p>
+<pre><code>var foo = &quot;Tom&#39;s bar&quot;;
+var foo = &#39;Tom\&#39;s bar&#39;;</code></pre>
+<h3 id="declaring-properties-with-var">Declaring properties with var</h3>
+<p>You <strong>cannot</strong> declare properties of an object or array with a <code>var</code> declaration.</p>
+<pre><code>var obj = {};
+var obj.foo = &#39;hi&#39;; // SyntaxError missing ; before statement
+
+var array = [];
+var array[0] = &#39;there&#39;; // SyntaxError missing ; before statement</code></pre>
+<p>Instead, omit the <code>var</code> keyword:</p>
+<pre><code>var obj = {};
+obj.foo = &#39;hi&#39;;
+
+var array = [];
+array[0] = &#39;there&#39;;</code></pre>
+<h3 id="bad-keywords">Bad keywords</h3>
+<p>If you come from another programming language, it is also common to use keywords that don’t mean the same or have no meaning at all in javaScript:</p>
+<pre><code>def print(info){
+  console.log(info);
+}; // SyntaxError missing ; before statement</code></pre>
+<p>Instead, use <code>function</code> instead of <code>def</code>:</p>
+<pre><code>function print(info){
+  console.log(info);
+};</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../lexical_grammar#automatic_semicolon_insertion">Automatic semicolon insertion (ASI)</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements">JavaScript statements</a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Missing_semicolon_before_statement" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Missing_semicolon_before_statement</a></p>
+</body>
+</html>

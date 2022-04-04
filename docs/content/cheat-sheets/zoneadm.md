@@ -1,28 +1,34 @@
-# To halt a zone:
+To halt a zone:
+===============
 
-zoneadm -z <zone> halt
+zoneadm -z halt
 
-# To delete a zone :
+To delete a zone :
+==================
 
-zoneadm -z <zone> halt
-zoneadm -z <zone> uninstall
+zoneadm -z halt zoneadm -z uninstall
 
-# To verify a zone:
+To verify a zone:
+=================
 
-zoneadm -z <zone> verify
+zoneadm -z verify
 
-# To install a zone:
+To install a zone:
+==================
 
-zoneadm -z <zone> install
+zoneadm -z install
 
-# To boot a zone:
+To boot a zone:
+===============
 
-zoneadm -z <zone> boot
+zoneadm -z boot
 
-# To reboot a zone:
+To reboot a zone:
+=================
 
-zoneadm -z <zone> reboot
+zoneadm -z reboot
 
-# To list zones:
+To list zones:
+==============
 
 zoneadm list -cv

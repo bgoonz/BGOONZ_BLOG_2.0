@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>the-queue-data-structure</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="the-queue-data-structure">The Queue data structure</h1>
+<blockquote>
+<p>The #data-structures series is a collection of posts about reimplemented data structures in JavaScript.</p>
+</blockquote>
+<h2 id="get-the-code-on-github">Get the code on Github</h2>
+<p>Of course, all the code can also be found on Github in the repository <a href="https://github.com/benoitvallon/computer-science-in-javascript/tree/master/data-structures-in-javascript">data-structures-in-javascript</a>.</p>
+<h2 id="definition">Definition</h2>
+<blockquote>
+<p>A Queue is a particular kind of abstract data type or collection in which the entities in the collection are kept in order and the principal operations are the addition of entities to the rear terminal position, known as enqueue, and removal of entities from the front terminal position, known as dequeue. This makes the Queue a First-In-First-Out (FIFO) data structure. In a FIFO data structure, the first element added to the Queue will be the first one to be removed. <strong>From</strong> <a href="https://en.wikipedia.org/wiki/Queue_(abstract_data_type)"><strong>Wikipedia</strong></a></p>
+</blockquote>
+<p>As for the Stack data structure, a peek operation is often added to the Queue data structure. It returns the value of the front element without dequeuing it.</p>
+<h2 id="complexity">Complexity</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Average</th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Access</td>
+<td>Search</td>
+<td>Insertion</td>
+<td>Deletion</td>
+</tr>
+<tr class="even">
+<td>O(n)</td>
+<td>O(n)</td>
+<td>O(1)</td>
+<td>O(n)</td>
+</tr>
+</tbody>
+</table>
+<p>To get a full overview of the time and space complexity of the Queue data structure, have a look to this excellent <a href="http://bigocheatsheet.com">Big O cheat sheet</a>.</p>
+<h2 id="the-code">The code</h2>
+<pre><code>function Queue() {
+  this.queue = [];
+}
+
+Queue.prototype.enqueue = function(value) {
+  this.queue.push(value);
+};
+Queue.prototype.dequeue = function() {
+  return this.queue.shift();
+};
+Queue.prototype.peek = function() {
+  return this.queue[0];
+};
+Queue.prototype.length = function() {
+  return this.queue.length;
+};
+Queue.prototype.print = function() {
+  console.log(this.queue.join(&#39; &#39;));
+};
+
+var queue = new Queue();
+queue.enqueue(1);
+queue.enqueue(2);
+queue.enqueue(3);
+queue.print(); // =&gt; 1 2 3
+console.log(&#39;length is 3:&#39;, queue.length()); // =&gt; 3
+console.log(&#39;peek is 1:&#39;, queue.peek()); // =&gt; 3
+console.log(&#39;dequeue is 1:&#39;, queue.dequeue()); // =&gt; 1
+queue.print(); // =&gt; 2 3
+console.log(&#39;dequeue is 2:&#39;, queue.dequeue());  // =&gt; 2
+console.log(&#39;length is 1:&#39;, queue.length()); // =&gt; 1
+console.log(&#39;dequeue is 3:&#39;, queue.dequeue()); // =&gt; 3
+queue.print(); // =&gt; &#39;&#39;
+console.log(&#39;peek is undefined:&#39;, queue.peek()); // =&gt; undefined
+console.log(&#39;dequeue is undefined:&#39;, queue.dequeue()); // =&gt; undefined</code></pre>
+<hr />
+<hr />
+<hr />
+<p><a href="http://blog.benoitvallon.com/data-structures-in-javascript/the-queue-data-structure/">Source</a></p>
+</body>
+</html>

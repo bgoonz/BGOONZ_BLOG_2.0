@@ -1,1 +1,2 @@
-# Asynchronous JavaScript Cheat Sheet
+Asynchronous JavaScript Cheat Sheet
+===================================

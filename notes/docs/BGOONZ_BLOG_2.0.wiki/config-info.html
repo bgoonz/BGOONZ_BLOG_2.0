@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>config-info</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<p>Build config validation — 1 info</p>
+<p><a href="https://docs.travis-ci.com/user/build-config-validation/"></a></p>
+<p>bgoonz/BGOONZ_BLOG_2.0:.travis.yml@0de6597</p>
+<pre><code>language: node_js
+
+os:
+  - linux
+  - osx
+
+node_js:
+  - &quot;node&quot;
+  - &quot;lts/*&quot;
+  - &quot;7&quot;
+  - &quot;8&quot;
+
+script:
+  - npm install
+</code></pre>
+<p>Build Config</p>
+<pre><code>{
+  &quot;language&quot;: &quot;node_js&quot;,
+  &quot;os&quot;: [
+    &quot;linux&quot;,
+    &quot;osx&quot;
+  ],
+  &quot;dist&quot;: &quot;xenial&quot;,
+  &quot;node_js&quot;: [
+    &quot;node&quot;,
+    &quot;lts/*&quot;,
+    &quot;7&quot;,
+    &quot;8&quot;
+  ],
+  &quot;script&quot;: [
+    &quot;npm install&quot;
+  ]
+}</code></pre>
+</body>
+</html>

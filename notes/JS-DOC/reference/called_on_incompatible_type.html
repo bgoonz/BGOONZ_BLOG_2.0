@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>called_on_incompatible_type</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="typeerror-x.prototype.y-called-on-incompatible-type">TypeError: X.prototype.y called on incompatible type</h1>
+<p>The JavaScript exception “called on incompatible target (or object)” occurs when a function (on a given object), is called with a <code>this</code> not corresponding to the type expected by the function.</p>
+<h2 id="message">Message</h2>
+<pre><code>TypeError: &#39;this&#39; is not a Set object (EdgE)
+TypeError: Function.prototype.toString called on incompatible object (Firefox)
+TypeError: Function.prototype.bind called on incompatible target (Firefox)
+TypeError: Method Set.prototype.add called on incompatible receiver undefined (Chrome)
+TypeError: Bind must be called on a function (Chrome)</code></pre>
+<h2 id="error-type">Error type</h2>
+<p><a href="../global_objects/typeerror"><code>TypeError</code></a></p>
+<h2 id="what-went-wrong">What went wrong?</h2>
+<p>When this error is thrown, a function (on a given object), is called with a <code>this</code> not corresponding to the type expected by the function.</p>
+<p>This issue can arise when using the <a href="../global_objects/function/call"><code>Function.prototype.call()</code></a> or <a href="../global_objects/function/apply"><code>Function.prototype.apply()</code></a> methods, and providing a <code>this</code> argument which does not have the expected type.</p>
+<p>This issue can also happen when providing a function that is stored as a property of an object as an argument to another function. In this case, the object that stores the function won’t be the <code>this</code> target of that function when it is called by the other function. To work-around this issue, you will either need to provide a lambda which is making the call, or use the <a href="../global_objects/function/bind"><code>Function.prototype.bind()</code></a> function to force the <code>this</code> argument to the expected object.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="invalid-cases">Invalid cases</h3>
+<pre><code>var mySet = new Set;
+[&#39;bar&#39;, &#39;baz&#39;].forEach(mySet.add);
+// mySet.add is a function, but &quot;mySet&quot; is not captured as this.
+
+var myFun = function () {
+  console.log(this);
+};
+[&#39;bar&#39;, &#39;baz&#39;].forEach(myFun.bind);
+// myFun.bind is a function, but &quot;myFun&quot; is not captured as this.</code></pre>
+<h3 id="valid-cases">Valid cases</h3>
+<pre><code>var mySet = new Set;
+[&#39;bar&#39;, &#39;baz&#39;].forEach(mySet.add.bind(mySet));
+// This works due to binding &quot;mySet&quot; as this.
+
+var myFun = function () {
+  console.log(this);
+};
+[&#39;bar&#39;, &#39;baz&#39;].forEach(x =&gt; myFun.bind(x));
+// This works using the &quot;bind&quot; function. It creates a lambda forwarding the argument.</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../global_objects/function/call"><code>Function.prototype.call()</code></a></li>
+<li><a href="../global_objects/function/apply"><code>Function.prototype.apply()</code></a></li>
+<li><a href="../global_objects/function/bind"><code>Function.prototype.bind()</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Called_on_incompatible_type" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Called_on_incompatible_type</a></p>
+</body>
+</html>

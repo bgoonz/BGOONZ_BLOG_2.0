@@ -1,9 +1,5 @@
----
-title: Rails
-category: Rails
----
-
-## Helpers
+Helpers
+-------
 
     class ApplicationController
       helper_method :logged_in?
@@ -44,7 +40,8 @@ category: Rails
     # radio_button, range_field, search_field, telephonen_field,
     # text_area, text_field, url_field
 
-## Controllers
+Controllers
+-----------
 
 http://apidock.com/rails/ActionController/Base
 
@@ -133,7 +130,8 @@ http://apidock.com/rails/ActionController/Base
     head :bad_request
     head :created, location: photo_path(@photo)
 
-## Layouts
+Layouts
+-------
 
     # app/views/layouts/application.html.erb
     <%= content_for?(:content) ? yield :content : yield %>

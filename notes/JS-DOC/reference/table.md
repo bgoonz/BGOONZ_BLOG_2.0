@@ -1,20 +1,24 @@
-# WebAssembly.Table
+WebAssembly.Table
+=================
 
 The `WebAssembly.Table()` object is a JavaScript wrapper object — an array-like structure representing a WebAssembly Table, which stores function references. A table created by JavaScript or in WebAssembly code will be accessible and mutable from both JavaScript and WebAssembly.
 
 **Note:** Tables can currently only store function references, but this will likely be expanded in the future.
 
-## Constructor
+Constructor
+-----------
 
 [`WebAssembly.Table()`](table/table)  
 Creates a new `Table` object.
 
-## Instance properties
+Instance properties
+-------------------
 
 [`Table.prototype.length`](table/length)  
-Returns the length of the table, i.e. the number of elements.
+Returns the length of the table, i.e. the number of elements.
 
-## Instance methods
+Instance methods
+----------------
 
 [`Table.prototype.get()`](table/get)  
 Accessor function — gets the element stored at a given index.
@@ -25,7 +29,8 @@ Increases the size of the Table instance by a specified number of elements.
 [`Table.prototype.set()`](table/set)  
 Sets an element stored at a given index to a given value.
 
-## Examples
+Examples
+--------
 
 ### Creating a new WebAssembly Table instance
 
@@ -53,18 +58,18 @@ Finally, we load and instantiate a wasm module (table2.wasm) using the [`WebAsse
       console.log(tbl.get(1)());
     });
 
-Note how you've got to include a second function invocation operator at the end of the accessor to actually invoke the referenced function and log the value stored inside it (e.g. `get(0)()` rather than `get(0)`) .
+Note how you’ve got to include a second function invocation operator at the end of the accessor to actually invoke the referenced function and log the value stored inside it (e.g. `get(0)()` rather than `get(0)`) .
 
-This example shows that we're creating and accessing the table from JavaScript, but the same table is visible and callable inside the wasm instance too.
+This example shows that we’re creating and accessing the table from JavaScript, but the same table is visible and callable inside the wasm instance too.
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#tables">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>WebAssembly JavaScript Interface (WebAssembly JavaScript Interface)<br />
+</p><span class="small">#tables</span></td></tr></tbody></table>
 
-<span class="small">#tables</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -274,12 +279,12 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 
 7.0
 
-## See also
+See also
+--------
 
 -   [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
 -   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Table" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Table</a>

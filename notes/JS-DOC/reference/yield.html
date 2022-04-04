@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>yield*</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="yield">yield*</h1>
+<p>The <code>yield*</code> is used to delegate to another <a href="../statements/function*"><code>generator</code></a> or iterable object.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code> yield* expression;</code></pre>
+<p><code>expression</code><br />
+The expression which returns an iterable object.</p>
+<h2 id="description">Description</h2>
+<p>The <code>yield*</code> expression iterates over the operand and <code>yield</code>s each value returned by it.</p>
+<p>The value of <code>yield*</code> expression itself is the value returned by that iterator when it’s closed (i.e., when <code>done</code> is <code>true</code>).</p>
+<h2 id="examples">Examples</h2>
+<h3 id="delegating-to-another-generator">Delegating to another generator</h3>
+<p>In following code, values yielded by <code>g1()</code> are returned from <code>next()</code> calls just like those which are yielded by <code>g2()</code>.</p>
+<pre><code>function* g1() {
+  yield 2;
+  yield 3;
+  yield 4;
+}
+
+function* g2() {
+  yield 1;
+  yield* g1();
+  yield 5;
+}
+
+const iterator = g2();
+
+console.log(iterator.next()); // {value: 1, done: false}
+console.log(iterator.next()); // {value: 2, done: false}
+console.log(iterator.next()); // {value: 3, done: false}
+console.log(iterator.next()); // {value: 4, done: false}
+console.log(iterator.next()); // {value: 5, done: false}
+console.log(iterator.next()); // {value: undefined, done: true}</code></pre>
+<h3 id="other-iterable-objects">Other Iterable objects</h3>
+<p>Besides generator objects, <code>yield*</code> can also <code>yield</code> other kinds of iterables (e.g., arrays, strings, or <a href="../functions/arguments"><code>arguments</code></a> objects).</p>
+<pre><code>function* g3() {
+  yield* [1, 2];
+  yield* &#39;34&#39;;
+  yield* Array.from(arguments);
+}
+
+const iterator = g3(5, 6);
+
+console.log(iterator.next()); // {value: 1, done: false}
+console.log(iterator.next()); // {value: 2, done: false}
+console.log(iterator.next()); // {value: &quot;3&quot;, done: false}
+console.log(iterator.next()); // {value: &quot;4&quot;, done: false}
+console.log(iterator.next()); // {value: 5, done: false}
+console.log(iterator.next()); // {value: 6, done: false}
+console.log(iterator.next()); // {value: undefined, done: true}</code></pre>
+<h3 id="the-value-of-yield-expression-itself">The value of <code>yield*</code> expression itself</h3>
+<p><code>yield*</code> is an expression, not a statement—so it evaluates to a value.</p>
+<pre><code>function* g4() {
+  yield* [1, 2, 3];
+  return &#39;foo&#39;;
+}
+
+function* g5() {
+  const g4ReturnValue = yield* g4();
+  console.log(g4ReturnValue) // &#39;foo&#39;
+  return g4ReturnValue;
+}
+
+const iterator = g5();
+
+console.log(iterator.next()); // {value: 1, done: false}
+console.log(iterator.next()); // {value: 2, done: false}
+console.log(iterator.next()); // {value: 3, done: false} done is false because g5 generator isn&#39;t finished, only g4
+console.log(iterator.next()); // {value: &#39;foo&#39;, done: true}</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-generator-function-definitions-runtime-semantics-evaluation">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-generator-function-definitions-runtime-semantics-evaluation</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>yield*</code></p>
+<p>39</p>
+<p>12</p>
+<p>27</p>
+<p>Starting with Firefox 33, the parsing of the <code>yield</code> expression has been updated to conform with the ES2015 specification.</p>
+<p>No</p>
+<p>26</p>
+<p>10</p>
+<p>39</p>
+<p>39</p>
+<p>27</p>
+<p>Starting with Firefox 33, the parsing of the <code>yield</code> expression has been updated to conform with the ES2015 specification.</p>
+<p>26</p>
+<p>10</p>
+<p>4.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../iteration_protocols">The Iterator protocol</a></li>
+<li><a href="../statements/function*"><code>function*</code></a></li>
+<li><a href="function*"><code>function* expression</code></a></li>
+<li><a href="yield"><code>yield</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/yield*" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/yield*</a></p>
+</body>
+</html>

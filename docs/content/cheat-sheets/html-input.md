@@ -1,49 +1,30 @@
----
-title: title
-subtitle: subtitle
-date: '2022-01-03'
-thumb_img_alt: lorem-ipsum
-content_img_alt: lorem-ipsum
-excerpt: lorem-ipsum
-seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
-template: post
-thumb_img_path: images/css-72a655a7.jpg
----
+subtitle
 
----
+2022-01-03
 
-title: Input tag
-category: HTML
+------------------------------------------------------------------------
+
+title: Input tag category: HTML
 
 weight: -3
 
----
+------------------------------------------------------------------------
 
 ### Input
 
-```html
- <input ...
-   disabled
-   required
-   checked
-```
+     <input ...
+       disabled
+       required
+       checked
 
-```html
-autofocus
-```
+    autofocus
 
-```html
-autocomplete='off'
-<!-- autocomplete -->
-autocompletetype='cc-exp' autocapitalize='off'
-<!-- for mobiles -->
-pattern='\d*'
-<!-- force numeric input in iOS -->
-```
+    autocomplete='off'
+    <!-- autocomplete -->
+    autocompletetype='cc-exp' autocapitalize='off'
+    <!-- for mobiles -->
+    pattern='\d*'
+    <!-- force numeric input in iOS -->
 
 ### Input types
 
@@ -54,78 +35,60 @@ pattern='\d*'
 -   **password**
 -   tel
 -   **text**
--   search
-    {: .-four-column}
+-   search {: .-four-column}
 
 #### Time
 
 -   date
--   time
-    {: .-four-column}
+-   time {: .-four-column}
 
 #### Time (not widely supported)
 
 -   month
 -   week
 -   datetime
--   datetime-local
-    {: .-four-column}
+-   datetime-local {: .-four-column}
 
 #### Etc
 
 -   **file**
 -   **radio**
--   **checkbox**
-    {: .-four-column}
+-   **checkbox** {: .-four-column}
 
 #### Buttons
 
 -   button
 -   reset
 -   submit
--   image
-    {: .-four-column}
+-   image {: .-four-column}
 
 #### Numeric
 
 -   number
--   range
-    {: .-four-column}
+-   range {: .-four-column}
 
-## Examples
+Examples
+--------
 
 ### Dates
 
-| Type          | Example             |
-| ------------- | ------------------- |
-| `type='date'` | <input type='date'> |
-| `type='time'` | <input type='time'> |
+<table><thead><tr class="header"><th>Type</th><th>Example</th></tr></thead><tbody><tr class="odd"><td><code>type='date'</code></td><td></td></tr><tr class="even"><td><code>type='time'</code></td><td></td></tr></tbody></table>
 
 ### Datetime
 
-| Type                    | Example                       |
-| ----------------------- | ----------------------------- |
-| `type='datetime'`       | <input type='datetime'>       |
-| `type='datetime-local'` | <input type='datetime-local'> |
+<table><thead><tr class="header"><th>Type</th><th>Example</th></tr></thead><tbody><tr class="odd"><td><code>type='datetime'</code></td><td></td></tr><tr class="even"><td><code>type='datetime-local'</code></td><td></td></tr></tbody></table>
 
 `datetime` and `datetime-local` fields are not widely supported.
 
 ### Numbers
 
-| Type            | Example               |
-| --------------- | --------------------- |
-| `type='number'` | <input type='number'> |
-| `type='range'`  | <input type='range'>  |
+<table><thead><tr class="header"><th>Type</th><th>Example</th></tr></thead><tbody><tr class="odd"><td><code>type='number'</code></td><td></td></tr><tr class="even"><td><code>type='range'</code></td><td></td></tr></tbody></table>
 
 ### Text
 
-| Type              | Example                 |
-| ----------------- | ----------------------- |
-| `type='text'`     | <input type='text'>     |
-| `type='password'` | <input type='password'> |
-| `type='search'`   | <input type='search'>   |
-| `type='tel'`      | <input type='tel'>      |
+<table><thead><tr class="header"><th>Type</th><th>Example</th></tr></thead><tbody><tr class="odd"><td><code>type='text'</code></td><td></td></tr><tr class="even"><td><code>type='password'</code></td><td></td></tr><tr class="odd"><td><code>type='search'</code></td><td></td></tr><tr class="even"><td><code>type='tel'</code></td><td></td></tr></tbody></table>
 
-## Also see
+Also see
+--------
 
--   <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input>
+-   <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input" class="uri">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input</a>

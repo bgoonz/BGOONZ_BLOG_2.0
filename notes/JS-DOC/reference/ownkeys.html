@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>ownkeys</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="handler.ownkeys">handler.ownKeys()</h1>
+<p>The <code>handler.ownKeys()</code> method is a trap for <a href="../../reflect/ownkeys"><code>Reflect.ownKeys()</code></a>.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>const p = new Proxy(target, {
+  ownKeys: function(target) {
+  }
+});</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p>The following parameter is passed to the <code>ownKeys()</code> method. <code>this</code> is bound to the handler.</p>
+<p><code>target</code><br />
+The target object.</p>
+<h3 id="return-value">Return value</h3>
+<p>The <code>ownKeys()</code> method must return an enumerable object.</p>
+<h2 id="description">Description</h2>
+<p>The <code>handler.ownKeys()</code> method is a trap for <a href="../../reflect/ownkeys"><code>Reflect.ownKeys()</code></a>.</p>
+<h3 id="interceptions">Interceptions</h3>
+<p>This trap can intercept these operations:</p>
+<ul>
+<li><a href="../../object/getownpropertynames"><code>Object.getOwnPropertyNames()</code></a></li>
+<li><a href="../../object/getownpropertysymbols"><code>Object.getOwnPropertySymbols()</code></a></li>
+<li><a href="../../object/keys"><code>Object.keys()</code></a></li>
+<li><a href="../../reflect/ownkeys"><code>Reflect.ownKeys()</code></a></li>
+</ul>
+<h3 id="invariants">Invariants</h3>
+<p>If the following invariants are violated, the proxy will throw a <a href="../../typeerror"><code>TypeError</code></a>:</p>
+<ul>
+<li>The result of <code>ownKeys()</code> must be an array.</li>
+<li>The type of each array element is either a <a href="../../string"><code>String</code></a> or a <a href="../../symbol"><code>Symbol</code></a>.</li>
+<li>The result List must contain the keys of all non-configurable own properties of the target object.</li>
+<li>If the target object is not extensible, then the result List must contain all the keys of the own properties of the target object and no other values.</li>
+</ul>
+<h2 id="examples">Examples</h2>
+<h3 id="trapping-of-getownpropertynames">Trapping of getOwnPropertyNames</h3>
+<p>The following code traps <a href="../../object/getownpropertynames"><code>Object.getOwnPropertyNames()</code></a>.</p>
+<pre><code>const p = new Proxy({}, {
+  ownKeys: function(target) {
+    console.log(&#39;called&#39;);
+    return [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;];
+  }
+});
+
+console.log(Object.getOwnPropertyNames(p)); // &quot;called&quot;
+                                            // [ &#39;a&#39;, &#39;b&#39;, &#39;c&#39; ]</code></pre>
+<p>The following code violates an invariant.</p>
+<pre><code>const obj = {};
+Object.defineProperty(obj, &#39;a&#39;, {
+  configurable: false,
+  enumerable: true,
+  value: 10 }
+);
+
+const p = new Proxy(obj, {
+  ownKeys: function(target) {
+    return [123, 12.5, true, false, undefined, null, {}, []];
+  }
+});
+
+console.log(Object.getOwnPropertyNames(p));
+
+// TypeError: proxy [[OwnPropertyKeys]] must return an array
+// with only string and symbol elements</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-proxy-object-internal-methods-and-internal-slots-ownpropertykeys">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-proxy-object-internal-methods-and-internal-slots-ownpropertykeys</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>ownKeys</code></p>
+<p>49</p>
+<p>12</p>
+<p>18</p>
+<p>In Firefox 42, the implementation got updated to reflect the final ES2015 specification: The result is now checked if it is an array and if the array elements are either of type string or of type symbol. Enumerating duplicate own property names is not a failure anymore.</p>
+<p>No</p>
+<p>36</p>
+<p>10</p>
+<p>49</p>
+<p>49</p>
+<p>18</p>
+<p>In Firefox 42, the implementation got updated to reflect the final ES2015 specification: The result is now checked if it is an array and if the array elements are either of type string or of type symbol. Enumerating duplicate own property names is not a failure anymore.</p>
+<p>36</p>
+<p>10</p>
+<p>5.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../../proxy"><code>Proxy</code></a></li>
+<li><a href="../proxy"><code>handler</code></a></li>
+<li><a href="../../object/getownpropertynames"><code>Object.getOwnPropertyNames()</code></a></li>
+<li><a href="../../reflect/ownkeys"><code>Reflect.ownKeys()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/ownKeys" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/ownKeys</a></p>
+</body>
+</html>

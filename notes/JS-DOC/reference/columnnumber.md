@@ -1,4 +1,5 @@
-# Error.prototype.columnNumber
+Error.prototype.columnNumber
+============================
 
 **Non-standard**
 
@@ -6,7 +7,8 @@ This feature is non-standard and is not on a standards track. Do not use it on p
 
 The `columnNumber` property contains the column number in the line of the file that raised this error.
 
-## Examples
+Examples
+--------
 
 ### Using columnNumber
 
@@ -14,7 +16,8 @@ The `columnNumber` property contains the column number in the line of the file t
     throw e;
     console.log(e.columnNumber) // 0
 
-## Specifications
+Specifications
+--------------
 
 Not part of any standard.
 
@@ -44,7 +47,8 @@ No
 
 No
 
-## See also
+See also
+--------
 
 -   [`Error.prototype.stack`](stack)
 -   [`Error.prototype.lineNumber`](linenumber)

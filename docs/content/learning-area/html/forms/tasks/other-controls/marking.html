@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>marking</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="other-controls-marking-guide">Other controls marking guide</h1>
+<p>The aim of the tasks is to demonstrate an understanding of the features covered in the <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Other_form_controls">Other form controls</a> lesson in Learn Web Development on MDN.</p>
+<h2 id="task-1">Task 1</h2>
+<p>In our first “other controls” assessment, we’ll get you to create a multi-line text input.</p>
+<ol type="1">
+<li>Create a basic multi-line text input. You should use a <code>&lt;textarea&gt;</code> element for this.</li>
+<li>Associate it semantically with the provided “Comment” label. Use the same value that the <code>for</code> attribute already has, for the <code>id</code> of the <code>&lt;textarea&gt;</code>.</li>
+<li>Give the input 35 columns, and 10 rows of space in which to add comments. The <code>cols</code> and <code>rows</code> attributes are what you need here.</li>
+<li>Give the comments a maximum length of 100 characters. This requires use of the <code>maxlength</code> attribute.</li>
+</ol>
+<p>The finished markup should look something like this:</p>
+<pre><code>&lt;form&gt;
+  &lt;h2&gt;Enter your comment&lt;/h2&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;label for=&quot;name&quot;&gt;Name:&lt;/label&gt;
+      &lt;input type=&quot;text&quot; name=&quot;name&quot; id=&quot;name&quot;&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;label for=&quot;comment&quot;&gt;Comment:&lt;/label&gt;
+      &lt;textarea id=&quot;comment&quot; name=&quot;comment&quot;
+                cols=&quot;35&quot; rows=&quot;10&quot;
+                maxlength=&quot;100&quot;&gt;Enter comment here&lt;/textarea&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;button&gt;Submit comment&lt;/button&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/form&gt;</code></pre>
+<h2 id="task-2">Task 2</h2>
+<p>Now it’s time to have a go at implementing a drop-down select menu, to allow a user to pick their favourite food from the choices provided.</p>
+<ol type="1">
+<li>Create your basic select box structure. You should use a <code>&lt;select&gt;</code> element for this, inside which you should nest an <code>&lt;option&gt;</code> element for each choice.</li>
+<li>Associate it semantically with the provided “Comment” label. Use the same value that the <code>for</code> attribute already has, for the <code>id</code> of the <code>&lt;select&gt;</code>.</li>
+<li>Inside the list, split the choices up into 2 subgroups — “mains” and “snacks”. To do this, you should use <code>&lt;optgroup&gt;</code> elements inside the main <code>&lt;select&gt;</code>, with appropriate <code>label</code> attributes.</li>
+</ol>
+<p>The finished markup should look something like this:</p>
+<pre><code>&lt;form&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;label for=&quot;food&quot;&gt;Pick your favorite food:&lt;/label&gt;
+      &lt;select name=&quot;food&quot; id=&quot;food&quot;&gt;
+        &lt;optgroup label=&quot;mains&quot;&gt;
+          &lt;option&gt;Salad&lt;/option&gt;
+          &lt;option&gt;Curry&lt;/option&gt;
+          &lt;option&gt;Pizza&lt;/option&gt;
+          &lt;option&gt;Fajitas&lt;/option&gt;
+        &lt;/optgroup&gt;
+        &lt;optgroup label=&quot;snacks&quot;&gt;
+          &lt;option&gt;Biscuits&lt;/option&gt;
+          &lt;option&gt;Crisps&lt;/option&gt;
+          &lt;option&gt;Fruit&lt;/option&gt;
+          &lt;option&gt;Breadsticks&lt;/option&gt;
+        &lt;/optgroup&gt;
+      &lt;/select&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;button&gt;Submit choice&lt;/button&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/form&gt;</code></pre>
+<h2 id="task-3">Task 3</h2>
+<p>In our final task of this set, we start with much the same list of food choices. However, this time we want to do things differently:</p>
+<ol type="1">
+<li>Create a basic text input that is semantically associated with the provided label. This is done as you’d expect — use a simple <code>&lt;input type="text"&gt;</code> with an <code>id</code> that maches the label’s <code>for</code> value.</li>
+<li>Put the food choices into a list that can be associated with a form input. For this, you need to wrap each option in an <code>&lt;option&gt;</code> element, and wrap the whole series of them in a <code>&lt;datalist&gt;</code> element.</li>
+<li>Associate the list with your text input, so that when you type characters, any of the list options that match the character sequence are given in a dropdown list as autocomplete suggestions. To do this, you need to give the <code>&lt;datalist&gt;</code> an <code>id</code>, and then given the <code>&lt;input&gt;</code> a <code>list</code> attribute whose value matches the <code>&lt;datalist&gt;</code>’s <code>id</code>.</li>
+</ol>
+<p>The finished markup should look something like this:</p>
+<pre><code>&lt;form&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;label for=&quot;food&quot;&gt;Enter your favorite food:&lt;/label&gt;
+      &lt;input type=&quot;text&quot; name=&quot;food&quot; id=&quot;food&quot; list=&quot;food-suggest&quot;&gt;
+      &lt;datalist id=&quot;food-suggest&quot;&gt;
+          &lt;option&gt;Salad&lt;/option&gt;
+          &lt;option&gt;Curry&lt;/option&gt;
+          &lt;option&gt;Pizza&lt;/option&gt;
+          &lt;option&gt;Fajitas&lt;/option&gt;
+          &lt;option&gt;Biscuits&lt;/option&gt;
+          &lt;option&gt;Crisps&lt;/option&gt;
+          &lt;option&gt;Fruit&lt;/option&gt;
+          &lt;option&gt;Breadsticks&lt;/option&gt;
+      &lt;/datalist&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;button&gt;Submit choice&lt;/button&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/form&gt;</code></pre>
+</body>
+</html>

@@ -1,18 +1,20 @@
-# Table of contents
+Table of contents
+=================
 
 -   [📋 Cheat Sheets](README.md)
     -   [Files](readme/files.md)
     -   [Terminal Cheat Sheet](readme/terminal-cheat-sheet.md)
     -   [Flexbox Cheat Sheet](readme/flexbox-cheat-sheet.md)
     -   [Common HTTP status codes Cheat Sheet](readme/common-http-status-codes-cheat-sheet.md)
-    -   [networking_cheatsheet](readme/networking_cheatsheet.md)
+    -   [networking\_cheatsheet](readme/networking_cheatsheet.md)
     -   [Regular Expressions Cheat Sheet](readme/regular-expressions-cheat-sheet.md)
     -   [REGEX units Cheat Sheet](readme/regex-units-cheat-sheet.md)
--   [bash_cheatsheet](bash_cheatsheet.md)
+-   [bash\_cheatsheet](bash_cheatsheet.md)
 -   [Google dork cheatsheet](google-dork-cheatsheet.md)
 -   [Cheatsheet-v2](cheatsheet-v2.md)
 
-## 🕸 💻 💻 Javascript
+🕸 💻 💻 Javascript
+----------------
 
 -   [JavaScript](javascript/javascript/README.md)
     -   [Javascript Python cheatsheet](javascript/javascript/javascript-python-cheatsheet.md)
@@ -36,7 +38,7 @@
         -   [React Patterns:](javascript/javascript/react/react-patterns-1.md)
     -   [⚖ Libraries & Frameworks](javascript/javascript/libraries-and-frameworks/README.md)
         -   [LOADASH Cheat Sheet](javascript/javascript/libraries-and-frameworks/loadash-cheat-sheet.md)
-        -   [sequelize_cheatsheet](javascript/javascript/libraries-and-frameworks/sequelize_cheatsheet.md)
+        -   [sequelize\_cheatsheet](javascript/javascript/libraries-and-frameworks/sequelize_cheatsheet.md)
         -   [Sequelize Cheatsheet](javascript/javascript/libraries-and-frameworks/sequelize-cheatsheet.md)
     -   [Node & Express](javascript/javascript/node-and-express/README.md)
         -   [ExpressJS Cheat Sheet](javascript/javascript/node-and-express/expressjs-cheat-sheet.md)
@@ -46,7 +48,8 @@
     -   [Function Context Cheatsheet](javascript/javascript/function-context-cheatsheet.md)
     -   [js-model](javascript/javascript/js-model.md)
 
-## 💻 CS-Concepts
+💻 CS-Concepts
+-------------
 
 -   [Computer Science Concepts](cs-concepts/computer-science-concepts/README.md)
     -   [Data Structures](data-structures/README.md)
@@ -56,20 +59,22 @@
         -   [Data Structures Cheat Sheet](data-structures/data-structures-cheat-sheet.md)
         -   [The Tree data structure](data-structures/the-tree-data-structure.md)
         -   [An Executable Data Structures Cheat Sheet for Interviews](cs-concepts/computer-science-concepts/data-structures/an-executable-data-structures-cheat-sheet-for-interviews.md)
-    -   [networking_cheatsheet](cs-concepts/computer-science-concepts/networking_cheatsheet.md)
+    -   [networking\_cheatsheet](cs-concepts/computer-science-concepts/networking_cheatsheet.md)
 
-## Tools
+Tools
+-----
 
 -   [🛠 Tools](tools/tools/README.md)
     -   [VSCODE Cheat Sheet](tools/tools/vscode-cheat-sheet.md)
     -   [Emmet](tools/tools/emmet.md)
 
-## 📼 Guides-Tutorials
+📼 Guides-Tutorials
+------------------
 
 -   [Tutorials](guides-tutorials/tutorials/README.md)
     -   [React.js](guides-tutorials/tutorials/react.js.md)
 
----
+------------------------------------------------------------------------
 
 -   [JavaScript Arrays](javascript-arrays.md)
 -   [editorconfig](editorconfig.md)
@@ -77,20 +82,23 @@
 -   [ES6 EXPORTS](es6-exports.md)
 -   [Flynn](flynn.md)
 
-## Github
+Github
+------
 
 -   [Github](github/github/README.md)
     -   [Github Cheat Sheet](github/github/github-cheat-sheet.md)
 -   [git log](git-log.md)
 -   [GITHUB Cheat Sheet](github/github-cheat-sheet/README.md)
     -   [An Executable Data Structures Cheat Sheet for Interviews](github/github-cheat-sheet/an-executable-data-structures-cheat-sheet-for-interviews.md)
-    -   [graphs_cheatsheet](github/github-cheat-sheet/graphs_cheatsheet.md)
+    -   [graphs\_cheatsheet](github/github-cheat-sheet/graphs_cheatsheet.md)
 
-## General
+General
+-------
 
 -   [General](general/general.md)
 
-## 👨💻 👨💻 💻 Programming Languages
+👨💻 👨💻 💻 Programming Languages
+-----------------------------
 
 -   [🐍 Python:](programming-languages/python/README.md)
     -   [Python](programming-languages/python/python/README.md)
@@ -98,15 +106,15 @@
     -   [Regex In Python](programming-languages/python/regex-in-python.md)
 -   [HTML](programming-languages/html.md)
 
----
+------------------------------------------------------------------------
 
 -   [EC2 API tools](ec2-api-tools/README.md)
     -   [MARKDOWN](ec2-api-tools/markdown.md)
     -   [🧘♂ PSQL](ec2-api-tools/psql/README.md)
         -   [POSTGRES](ec2-api-tools/psql/postgres.md)
-        -   [postgreSQL_cheatsheet](ec2-api-tools/psql/postgresql_cheatsheet.md)
+        -   [postgreSQL\_cheatsheet](ec2-api-tools/psql/postgresql_cheatsheet.md)
 -   [ES6 IMPORTS](es6-imports/README.md)
-    -   [bash_cheatsheet](es6-imports/bash_cheatsheet.md)
+    -   [bash\_cheatsheet](es6-imports/bash_cheatsheet.md)
     -   [cleancode](guides-tutorials/tutorials/cleancode.md)
     -   [🔨 Bash](es6-imports/bash/README.md)
         -   [Bash Cheat Sheet](es6-imports/bash/bash-cheat-sheet.md)
@@ -129,14 +137,15 @@
     -   [Typescript](es6-imports/typescript.md)
 -   [Computer Science Concepts](computer-science-concepts/README.md)
     -   [An Executable Data Structures Cheat Sheet for Interviews](computer-science-concepts/an-executable-data-structures-cheat-sheet-for-interviews.md)
-    -   [graphs_cheatsheet](computer-science-concepts/graphs_cheatsheet.md)
-    -   [networking_cheatsheet](computer-science-concepts/networking_cheatsheet.md)
+    -   [graphs\_cheatsheet](computer-science-concepts/graphs_cheatsheet.md)
+    -   [networking\_cheatsheet](computer-science-concepts/networking_cheatsheet.md)
     -   [Firebase](computer-science-concepts/firebase.md)
-    -   [networking_cheatsheet](computer-science-concepts/networking_cheatsheet-2.md)
+    -   [networking\_cheatsheet](computer-science-concepts/networking_cheatsheet-2.md)
     -   [🛐 Heroku Cheat Sheet](computer-science-concepts/heroku-cheat-sheet.md)
     -   [Binary Tree](computer-science-concepts/binary-tree.md)
 
-## 📚 Docs
+📚 Docs
+------
 
 -   [Docs](docs/docs/README.md)
     -   [editorconfig](docs/docs/editorconfig.md)
@@ -148,11 +157,11 @@
     -   [Binary Tree](docs/docs/binary-tree.md)
     -   [Python](docs/docs/python.md)
     -   [Contributor Covenant Code of Conduct](docs/docs/contributor-covenant-code-of-conduct.md)
-    -   [networking_cheatsheet](docs/docs/networking_cheatsheet.md)
+    -   [networking\_cheatsheet](docs/docs/networking_cheatsheet.md)
     -   [Common HTTP status codes Cheat Sheet](docs/docs/common-http-status-codes-cheat-sheet.md)
     -   [AWS CLI](docs/docs/aws-cli.md)
     -   [Linux](docs/docs/linux.md)
-    -   [networking_cheatsheet](docs/docs/networking_cheatsheet-1.md)
+    -   [networking\_cheatsheet](docs/docs/networking_cheatsheet-1.md)
     -   [React Patterns:](docs/docs/react-patterns.md)
     -   [MDN Web Docs Glossary: Definitions of Web-related terms \\| MDN](docs/docs/mdn-web-docs-glossary-definitions-of-web-related-terms-or-mdn.md)
     -   [JavaScript Arrays](docs/docs/javascript-arrays.md)

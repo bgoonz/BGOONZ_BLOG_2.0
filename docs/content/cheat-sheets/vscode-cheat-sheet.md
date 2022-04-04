@@ -1,6 +1,8 @@
-# VSCODE Cheat Sheet
+VSCODE Cheat Sheet
+==================
 
-## Visual Studio CheatSheet
+Visual Studio CheatSheet
+------------------------
 
 ### Shortcuts
 
@@ -60,7 +62,7 @@
 -   [`Better PHPUnit`](https://marketplace.visualstudio.com/items?itemName=calebporzio.better-phpunit): A better PHPUnit test runner.
 -   [`Laravel Artisan`](https://marketplace.visualstudio.com/items?itemName=ryannaddy.laravel-artisan): Laravel Artisan commands within Visual Studio Code.
 -   [`PHP CS Fixer`](https://marketplace.visualstudio.com/items?itemName=junstyle.php-cs-fixer): PHP CS Fixer extension for VS Code, php formatter, php code beautify tool.
--   [`PHP Doc Comment VSCode Plugin`](https://marketplace.visualstudio.com/items?itemName=rexshi.phpdoc-comment-vscode-plugin): Add phpdoc @param and @return tag for selected function signatures.
+-   [`PHP Doc Comment VSCode Plugin`](https://marketplace.visualstudio.com/items?itemName=rexshi.phpdoc-comment-vscode-plugin): Add phpdoc <span class="citation" data-cites="param">@param</span> and <span class="citation" data-cites="return">@return</span> tag for selected function signatures.
 -   [`PHP IntelliSense`](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-intellisense): Advanced Autocompletion and Refactoring support for PHP.
 
 #### Perl
@@ -105,98 +107,96 @@
 
 ### My Settings
 
-```js
-{
-    // Controls the font size in pixels
-    "editor.fontSize": 14,
+    {
+        // Controls the font size in pixels
+        "editor.fontSize": 14,
 
-    // Render vertical rulers after a certain number of
-    // monospace characters. Use multiple values for multiple
-    // rulers. No rulers are drawn if array is empty
-    "editor.rulers": [100],
+        // Render vertical rulers after a certain number of
+        // monospace characters. Use multiple values for multiple
+        // rulers. No rulers are drawn if array is empty
+        "editor.rulers": [100],
 
-    // The number of spaces a tab is equal to
-    "editor.tabSize": 2,
+        // The number of spaces a tab is equal to
+        "editor.tabSize": 2,
 
-    "[python]": {
-        "editor.tabSize": 4
-    },
+        "[python]": {
+            "editor.tabSize": 4
+        },
 
-    // Controls the line height
-    "editor.lineHeight": 22,
+        // Controls the line height
+        "editor.lineHeight": 22,
 
-    // Controls the font family
-    "editor.fontFamily": "Fira Code",
+        // Controls the font family
+        "editor.fontFamily": "Fira Code",
 
-    // Enables font ligatures
-    "editor.fontLigatures": true,
+        // Enables font ligatures
+        "editor.fontLigatures": true,
 
-    // Controls whether snippets are shown with other suggestions and how they are sorted.
-    "editor.snippetSuggestions": "top",
+        // Controls whether snippets are shown with other suggestions and how they are sorted.
+        "editor.snippetSuggestions": "top",
 
-    // Ignore extension recommendations
-    "extensions.ignoreRecommendations": false,
+        // Ignore extension recommendations
+        "extensions.ignoreRecommendations": false,
 
-    // Controls auto save of dirty files
-    "files.autoSave": "afterDelay",
+        // Controls auto save of dirty files
+        "files.autoSave": "afterDelay",
 
-    // Controls the delay in ms after which a dirty file is saved automatically
-    "files.autoSaveDelay": 1000,
+        // Controls the delay in ms after which a dirty file is saved automatically
+        "files.autoSaveDelay": 1000,
 
-    // Configure glob patterns for excluding files and folders
-    "files.exclude": {
-        ".yarn": true,
-        "**/*.pyc": true
-    },
+        // Configure glob patterns for excluding files and folders
+        "files.exclude": {
+            ".yarn": true,
+            "**/*.pyc": true
+        },
 
-    // Insert a final new line at the end of the file when saving it
-    "files.insertFinalNewline": true,
+        // Insert a final new line at the end of the file when saving it
+        "files.insertFinalNewline": true,
 
-    // Confirm before synchronizing git repositories
-    "git.confirmSync": false,
+        // Confirm before synchronizing git repositories
+        "git.confirmSync": false,
 
-    // Commit all changes when there are no staged changes
-    "git.enableSmartCommit": true,
+        // Commit all changes when there are no staged changes
+        "git.enableSmartCommit": true,
 
-    // Whether to lint Python files using pylint
-    "python.linting.pylintEnabled": false,
+        // Whether to lint Python files using pylint
+        "python.linting.pylintEnabled": false,
 
-    // Whether to lint Python files using flake8
-    "python.linting.flake8Enabled": true,
+        // Whether to lint Python files using flake8
+        "python.linting.flake8Enabled": true,
 
-    // Configure glob patterns for excluding files and folders in
-    // searches. Inherits all glob patterns from the files.exclude setting.
-    "search.exclude": {
-        "**/.git": true,
-        "**/.nuxt": true,
-        "**/build": true,
-        "**/data": true,
-        "**/dist": true,
-        "**/env": true
-    },
+        // Configure glob patterns for excluding files and folders in
+        // searches. Inherits all glob patterns from the files.exclude setting.
+        "search.exclude": {
+            "**/.git": true,
+            "**/.nuxt": true,
+            "**/build": true,
+            "**/data": true,
+            "**/dist": true,
+            "**/env": true
+        },
 
-    // Adjust the zoom level of the window. The original size is 0
-    // and each increment above (e.g. 1) or below (e.g. -1) represents
-    // zooming 20% larger or smaller. You can also enter decimals to
-    // adjust the zoom level with a finer granularity.
-    "window.zoomLevel": 0,
+        // Adjust the zoom level of the window. The original size is 0
+        // and each increment above (e.g. 1) or below (e.g. -1) represents
+        // zooming 20% larger or smaller. You can also enter decimals to
+        // adjust the zoom level with a finer granularity.
+        "window.zoomLevel": 0,
 
-    // Overrides colors from the currently selected color theme.
-    "workbench.colorCustomizations": {
-        "statusBar.background": "#8252be",
-        "statusBar.foreground": "#eeffff",
-        "titleBar.activeBackground": "#282b3c",
-        "titleBar.activeForeground": "#eeefff"
-    },
+        // Overrides colors from the currently selected color theme.
+        "workbench.colorCustomizations": {
+            "statusBar.background": "#8252be",
+            "statusBar.foreground": "#eeffff",
+            "titleBar.activeBackground": "#282b3c",
+            "titleBar.activeForeground": "#eeefff"
+        },
 
-    // Specifies the color theme used in the workbench
-    "workbench.colorTheme": "Material Palenight",
+        // Specifies the color theme used in the workbench
+        "workbench.colorTheme": "Material Palenight",
 
-    // Specifies the icon theme used in the workbench
-    "workbench.iconTheme": "material-icon-theme",
+        // Specifies the icon theme used in the workbench
+        "workbench.iconTheme": "material-icon-theme",
 
-    // Controls font aliasing method in the workbench
-    "workbench.fontAliasing": "antialiased",
-    "explorer.confirmDragAndDrop": false
-}
-```
+        // Controls font aliasing method in the workbench
+        "workbench.fontAliasing": "antialiased",
+        "explorer.confirmDragAndDrop": false
+    }

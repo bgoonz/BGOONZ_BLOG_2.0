@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>bad_return_or_yield</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="syntaxerror-return-not-in-function">SyntaxError: return not in function</h1>
+<p>The JavaScript exception “return (or yield) not in function” occurs when a <code>return</code> or <code>yield</code> statement is called outside of a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions">function</a>.</p>
+<h2 id="message">Message</h2>
+<pre><code>SyntaxError: &#39;return&#39; statement outside of function (Edge)
+SyntaxError: return not in function (Firefox)
+SyntaxError: yield not in function (Firefox)</code></pre>
+<h2 id="error-type">Error type</h2>
+<p><a href="../global_objects/syntaxerror"><code>SyntaxError</code></a>.</p>
+<h2 id="what-went-wrong">What went wrong?</h2>
+<p>A <code>return</code> or <code>yield</code> statement is called outside of a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions">function</a>. Maybe there are missing curly brackets somewhere? The <code>return</code> and <code>yield</code> statements must be in a function, because they end (or pause and resume) function execution and specify a value to be returned to the function caller.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="missing-curly-brackets">Missing curly brackets</h3>
+<pre><code>var cheer = function(score) {
+  if (score === 147)
+    return &#39;Maximum!&#39;;
+  };
+  if (score &gt; 100) {
+    return &#39;Century!&#39;;
+  }
+}
+
+// SyntaxError: return not in function</code></pre>
+<p>The curly brackets look correct at a first glance, but this code snippet is missing a <code>{</code> after the first <code>if</code> statement. Correct would be:</p>
+<pre><code>var cheer = function(score) {
+  if (score === 147) {
+    return &#39;Maximum!&#39;;
+  }
+  if (score &gt; 100) {
+    return &#39;Century!&#39;;
+  }
+};</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><code>return</code></li>
+<li><code>yield</code></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Bad_return_or_yield" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Bad_return_or_yield</a></p>
+</body>
+</html>

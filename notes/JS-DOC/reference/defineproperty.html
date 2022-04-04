@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>defineproperty</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="object.defineproperty">Object.defineProperty()</h1>
+<p>The static method <code>Object.defineProperty()</code> defines a new property directly on an object, or modifies an existing property on an object, and returns the object.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>Object.defineProperty(obj, prop, descriptor)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>obj</code><br />
+The object on which to define the property.</p>
+<p><code>prop</code><br />
+The name or <a href="../symbol"><code>Symbol</code></a> of the property to be defined or modified.</p>
+<p><code>descriptor</code><br />
+The descriptor for the property being defined or modified.</p>
+<h3 id="return-value">Return value</h3>
+<p>The object that was passed to the function.</p>
+<h2 id="description">Description</h2>
+<p>This method allows a precise addition to or modification of a property on an object. Normal property addition through assignment creates properties which show up during property enumeration (<a href="../../statements/for...in"><code>for...in</code></a> loop or <a href="keys"><code>Object.keys</code></a> method), whose values may be changed, and which may be <a href="../../operators/delete">deleted</a>. This method allows these extra details to be changed from their defaults. By default, values added using <code>Object.defineProperty()</code> are immutable and not enumerable.</p>
+<p>Property descriptors present in objects come in two main flavors: data descriptors and accessor descriptors. A <em>data descriptor</em> is a property that has a value, which may or may not be writable. An <em>accessor descriptor</em> is a property described by a getter-setter pair of functions. A descriptor must be one of these two flavors; it cannot be both.</p>
+<p>Both data and accessor descriptors are objects. They share the following optional keys (please note: the <strong>defaults</strong> mentioned here are in the case of defining properties using <code>Object.defineProperty()</code>):</p>
+<p><code>configurable</code><br />
+<code>true</code> if the type of this property descriptor may be changed and if the property may be deleted from the corresponding object.<br />
+<code>false</code></p>
+<p><code>enumerable</code><br />
+<code>true</code> if and only if this property shows up during enumeration of the properties on the corresponding object.<br />
+<code>false</code></p>
+<p>A <strong>data descriptor</strong> also has the following optional keys:</p>
+<p><code>value</code><br />
+The value associated with the property. Can be any valid JavaScript value (number, object, function, etc).<br />
+<strong>Defaults to <a href="../undefined"><code>undefined</code></a>.</strong></p>
+<p><code>writable</code><br />
+<code>true</code> if the value associated with the property may be changed with an <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#assignment_operators">assignment operator</a>.<br />
+<code>false</code></p>
+<p>An <strong>accessor descriptor</strong> also has the following optional keys:</p>
+<p><code>get</code><br />
+A function which serves as a getter for the property, or <a href="../undefined"><code>undefined</code></a> if there is no getter. When the property is accessed, this function is called without arguments and with <code>this</code> set to the object through which the property is accessed (this may not be the object on which the property is defined due to inheritance). The return value will be used as the value of the property.<br />
+<strong>Defaults to <a href="../undefined"><code>undefined</code></a>.</strong></p>
+<p><code>set</code><br />
+A function which serves as a setter for the property, or <a href="../undefined"><code>undefined</code></a> if there is no setter. When the property is assigned, this function is called with one argument (the value being assigned to the property) and with <code>this</code> set to the object through which the property is assigned.<br />
+<strong>Defaults to <a href="../undefined"><code>undefined</code></a>.</strong></p>
+<p>If a descriptor has neither of <code>value</code>, <code>writable</code>, <code>get</code> and <code>set</code> keys, it is treated as a data descriptor. If a descriptor has both [<code>value</code> or <code>writable</code>] and [<code>get</code> or <code>set</code>] keys, an exception is thrown.</p>
+<p>Bear in mind that these attributes are not necessarily the descriptor’s own properties. Inherited properties will be considered as well. In order to ensure these defaults are preserved, you might freeze the <a href="../object"><code>Object</code></a> upfront, specify all options explicitly, or point to <a href="../null"><code>null</code></a> with <a href="create"><code>Object.create(null)</code></a>.</p>
+<pre><code>// using __proto__
+var obj = {};
+var descriptor = Object.create(null); // no inherited properties
+descriptor.value = &#39;static&#39;;
+
+// not enumerable, not configurable, not writable as defaults
+Object.defineProperty(obj, &#39;key&#39;, descriptor);
+
+// being explicit
+Object.defineProperty(obj, &#39;key&#39;, {
+  enumerable: false,
+  configurable: false,
+  writable: false,
+  value: &#39;static&#39;
+});
+
+// recycling same object
+function withValue(value) {
+  var d = withValue.d || (
+    withValue.d = {
+      enumerable: false,
+      writable: false,
+      configurable: false,
+      value: value
+    }
+  );
+
+  // avoiding duplicate operation for assigning value
+  if (d.value !== value) d.value = value;
+
+  return d;
+}
+// ... and ...
+Object.defineProperty(obj, &#39;key&#39;, withValue(&#39;static&#39;));
+
+// if freeze is available, prevents adding or
+// removing the object prototype properties
+// (value, get, set, enumerable, writable, configurable)
+(Object.freeze || Object)(Object.prototype);</code></pre>
+<h2 id="examples">Examples</h2>
+<h3 id="creating-a-property">Creating a property</h3>
+<p>When the property specified doesn’t exist in the object, <code>Object.defineProperty()</code> creates a new property as described. Fields may be omitted from the descriptor, and default values for those fields are inputted.</p>
+<pre><code>var o = {}; // Creates a new object
+
+// Example of an object property added
+// with defineProperty with a data property descriptor
+Object.defineProperty(o, &#39;a&#39;, {
+  value: 37,
+  writable: true,
+  enumerable: true,
+  configurable: true
+});
+// &#39;a&#39; property exists in the o object and its value is 37
+
+// Example of an object property added
+// with defineProperty with an accessor property descriptor
+var bValue = 38;
+Object.defineProperty(o, &#39;b&#39;, {
+  // Using shorthand method names (ES2015 feature).
+  // This is equivalent to:
+  // get: function() { return bValue; },
+  // set: function(newValue) { bValue = newValue; },
+  get() { return bValue; },
+  set(newValue) { bValue = newValue; },
+  enumerable: true,
+  configurable: true
+});
+o.b; // 38
+// &#39;b&#39; property exists in the o object and its value is 38
+// The value of o.b is now always identical to bValue,
+// unless o.b is redefined
+
+// You cannot try to mix both:
+Object.defineProperty(o, &#39;conflict&#39;, {
+  value: 0x9f91102,
+  get() { return 0xdeadbeef; }
+});
+// throws a TypeError: value appears
+// only in data descriptors,
+// get appears only in accessor descriptors</code></pre>
+<h3 id="modifying-a-property">Modifying a property</h3>
+<p>When the property already exists, <code>Object.defineProperty()</code> attempts to modify the property according to the values in the descriptor and the object’s current configuration. If the old descriptor had its <code>configurable</code> attribute set to <code>false</code> the property is said to be “non-configurable”. It is not possible to change any attribute of a non-configurable accessor property. For data properties, it is possible to modify the value if the property is writable, and it is possible to change <code>writable</code> attribute from <code>true</code> to <code>false</code>. It is not possible to switch between data and accessor property types when the property is non-configurable.</p>
+<p>A <a href="../typeerror"><code>TypeError</code></a> is thrown when attempts are made to change non-configurable property attributes (except <code>value</code> and <code>writable</code>, if permitted) unless the current and new values are the same.</p>
+<h4 id="writable-attribute">Writable attribute</h4>
+<p>When the <code>writable</code> property attribute is set to <code>false</code>, the property is said to be “non-writable”. It cannot be reassigned.</p>
+<pre><code>var o = {}; // Creates a new object
+
+Object.defineProperty(o, &#39;a&#39;, {
+  value: 37,
+  writable: false
+});
+
+console.log(o.a); // logs 37
+o.a = 25; // No error thrown
+// (it would throw in strict mode,
+// even if the value had been the same)
+console.log(o.a); // logs 37. The assignment didn&#39;t work.
+
+// strict mode
+(function() {
+  &#39;use strict&#39;;
+  var o = {};
+  Object.defineProperty(o, &#39;b&#39;, {
+    value: 2,
+    writable: false
+  });
+  o.b = 3; // throws TypeError: &quot;b&quot; is read-only
+  return o.b; // returns 2 without the line above
+}());</code></pre>
+<p>As seen in the example, trying to write into the non-writable property doesn’t change it but doesn’t throw an error either.</p>
+<h4 id="enumerable-attribute">Enumerable attribute</h4>
+<p>The <code>enumerable</code> property attribute defines whether the property is picked by <a href="assign"><code>Object.assign()</code></a> or <a href="../../operators/spread_syntax">spread</a> operator. For non-<a href="../symbol"><code>Global_Objects/Symbol</code></a> properties it also defines whether it shows up in a <a href="../../statements/for...in"><code>for...in</code></a> loop and <a href="keys"><code>Object.keys()</code></a> or not.</p>
+<pre><code>var o = {};
+Object.defineProperty(o, &#39;a&#39;, {
+  value: 1,
+  enumerable: true
+});
+Object.defineProperty(o, &#39;b&#39;, {
+  value: 2,
+  enumerable: false
+});
+Object.defineProperty(o, &#39;c&#39;, {
+  value: 3
+}); // enumerable defaults to false
+o.d = 4; // enumerable defaults to true
+         // when creating a property by setting it
+Object.defineProperty(o, Symbol.for(&#39;e&#39;), {
+  value: 5,
+  enumerable: true
+});
+Object.defineProperty(o, Symbol.for(&#39;f&#39;), {
+  value: 6,
+  enumerable: false
+});
+
+for (var i in o) {
+  console.log(i);
+}
+// logs &#39;a&#39; and &#39;d&#39; (in undefined order)
+
+Object.keys(o); // [&#39;a&#39;, &#39;d&#39;]
+
+o.propertyIsEnumerable(&#39;a&#39;); // true
+o.propertyIsEnumerable(&#39;b&#39;); // false
+o.propertyIsEnumerable(&#39;c&#39;); // false
+o.propertyIsEnumerable(&#39;d&#39;); // true
+o.propertyIsEnumerable(Symbol.for(&#39;e&#39;)); // true
+o.propertyIsEnumerable(Symbol.for(&#39;f&#39;)); // false
+
+var p = { ...o }
+p.a // 1
+p.b // undefined
+p.c // undefined
+p.d // 4
+p[Symbol.for(&#39;e&#39;)] // 5
+p[Symbol.for(&#39;f&#39;)] // undefined</code></pre>
+<h4 id="configurable-attribute">Configurable attribute</h4>
+<p>The <code>configurable</code> attribute controls at the same time whether the property can be deleted from the object and whether its attributes (other than <code>value</code> and <code>writable</code>) can be changed.</p>
+<pre><code>var o = {};
+Object.defineProperty(o, &#39;a&#39;, {
+  get() { return 1; },
+  configurable: false
+});
+
+Object.defineProperty(o, &#39;a&#39;, {
+  configurable: true
+}); // throws a TypeError
+Object.defineProperty(o, &#39;a&#39;, {
+  enumerable: true
+}); // throws a TypeError
+Object.defineProperty(o, &#39;a&#39;, {
+  set() {}
+}); // throws a TypeError (set was undefined previously)
+Object.defineProperty(o, &#39;a&#39;, {
+  get() { return 1; }
+}); // throws a TypeError
+// (even though the new get does exactly the same thing)
+Object.defineProperty(o, &#39;a&#39;, {
+  value: 12
+}); // throws a TypeError // (&#39;value&#39; can be changed when &#39;configurable&#39; is false but not in this case due to &#39;get&#39; accessor)
+
+console.log(o.a); // logs 1
+delete o.a; // Nothing happens
+console.log(o.a); // logs 1</code></pre>
+<p>If the <code>configurable</code> attribute of <code>o.a</code> had been <code>true</code>, none of the errors would be thrown and the property would be deleted at the end.</p>
+<h3 id="adding-properties-and-default-values">Adding properties and default values</h3>
+<p>It is important to consider the way default values of attributes are applied. There is often a difference between using dot notation to assign a value and using <code>Object.defineProperty()</code>, as shown in the example below.</p>
+<pre><code>var o = {};
+
+o.a = 1;
+// is equivalent to:
+Object.defineProperty(o, &#39;a&#39;, {
+  value: 1,
+  writable: true,
+  configurable: true,
+  enumerable: true
+});
+
+// On the other hand,
+Object.defineProperty(o, &#39;a&#39;, { value: 1 });
+// is equivalent to:
+Object.defineProperty(o, &#39;a&#39;, {
+  value: 1,
+  writable: false,
+  configurable: false,
+  enumerable: false
+});</code></pre>
+<h3 id="custom-setters-and-getters">Custom Setters and Getters</h3>
+<p>The example below shows how to implement a self-archiving object. When <code>temperature</code> property is set, the <code>archive</code> array gets a log entry.</p>
+<pre><code>function Archiver() {
+  var temperature = null;
+  var archive = [];
+
+  Object.defineProperty(this, &#39;temperature&#39;, {
+    get() {
+      console.log(&#39;get!&#39;);
+      return temperature;
+    },
+    set(value) {
+      temperature = value;
+      archive.push({ val: temperature });
+    }
+  });
+
+  this.getArchive = function() { return archive; };
+}
+
+var arc = new Archiver();
+arc.temperature; // &#39;get!&#39;
+arc.temperature = 11;
+arc.temperature = 13;
+arc.getArchive(); // [{ val: 11 }, { val: 13 }]</code></pre>
+<p>In this example, a getter always returns the same value.</p>
+<pre><code>var pattern = {
+    get() {
+        return &#39;I always return this string, &#39; +
+               &#39;whatever you have assigned&#39;;
+    },
+    set() {
+        this.myname = &#39;this is my name string&#39;;
+    }
+};
+
+function TestDefineSetAndGet() {
+    Object.defineProperty(this, &#39;myproperty&#39;, pattern);
+}
+
+var instance = new TestDefineSetAndGet();
+instance.myproperty = &#39;test&#39;;
+console.log(instance.myproperty);
+// I always return this string, whatever you have assigned
+
+console.log(instance.myname); // this is my name string</code></pre>
+<h3 id="inheritance-of-properties">Inheritance of properties</h3>
+<p>If an accessor property is inherited, its <code>get</code> and <code>set</code> methods will be called when the property is accessed and modified on descendant objects. If these methods use a variable to store the value, this value will be shared by all objects.</p>
+<pre><code>function myclass() {
+}
+
+var value;
+Object.defineProperty(myclass.prototype, &quot;x&quot;, {
+  get() {
+    return value;
+  },
+  set(x) {
+    value = x;
+  }
+});
+
+var a = new myclass();
+var b = new myclass();
+a.x = 1;
+console.log(b.x); // 1</code></pre>
+<p>This can be fixed by storing the value in another property. In <code>get</code> and <code>set</code> methods, <code>this</code> points to the object which is used to access or modify the property.</p>
+<pre><code>function myclass() {
+}
+
+Object.defineProperty(myclass.prototype, &quot;x&quot;, {
+  get() {
+    return this.stored_x;
+  },
+  set(x) {
+    this.stored_x = x;
+  }
+});
+
+var a = new myclass();
+var b = new myclass();
+a.x = 1;
+console.log(b.x); // undefined</code></pre>
+<p>Unlike accessor properties, value properties are always set on the object itself, not on a prototype. However, if a non-writable value property is inherited, it still prevents from modifying the property on the object.</p>
+<pre><code>function myclass() {
+}
+
+myclass.prototype.x = 1;
+Object.defineProperty(myclass.prototype, &quot;y&quot;, {
+  writable: false,
+  value: 1
+});
+
+var a = new myclass();
+a.x = 2;
+console.log(a.x); // 2
+console.log(myclass.prototype.x); // 1
+a.y = 2; // Ignored, throws in strict mode
+console.log(a.y); // 1
+console.log(myclass.prototype.y); // 1</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-object.defineproperty">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-object.defineproperty</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>defineProperty</code></p>
+<p>5</p>
+<p>12</p>
+<p>4</p>
+<p>9</p>
+<p>8</p>
+<p>In Internet Explorer 8, this was only supported on DOM objects and with some non-standard behaviors. This was later fixed in Internet Explorer 9.</p>
+<p>11.6</p>
+<p>5.1</p>
+<p>Also supported in Safari 5, but not on DOM objects.</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>12</p>
+<p>6</p>
+<p>Also supported in Safari for iOS 4.2, but not on DOM objects.</p>
+<p>1.0</p>
+<h3 id="redefining-the-length-property-of-an-array-object">Redefining the <code>length</code> property of an <code>Array</code> object</h3>
+<p>It is possible to redefine the <a href="../array/length"><code>length</code></a> property of arrays, subject to the usual redefinition restrictions. (The <a href="../array/length"><code>length</code></a> property is initially non-configurable, non-enumerable, and writable. Thus on an unaltered array, it’s possible to change the <a href="../array/length"><code>length</code></a> property’s value or to make it non-writable. It is not allowed to change its enumerability or configurability, or if it is non-writable to change its value or writability.) However, not all browsers permit this redefinition.</p>
+<p>Firefox 4 through 22 will throw a <a href="../typeerror"><code>TypeError</code></a> on any attempt whatsoever (whether permitted or not) to redefine the <a href="../array/length"><code>length</code></a> property of an array.</p>
+<p>Versions of Chrome which implement <code>Object.defineProperty()</code> in some circumstances ignore a length value different from the array’s current <a href="../array/length"><code>length</code></a> property. In some circumstances changing writability seems to silently not work (and not throw an exception). Also, relatedly, some array-mutating methods like <a href="../array/push"><code>Array.prototype.push</code></a> don’t respect a non-writable length.</p>
+<p>Versions of Safari which implement <code>Object.defineProperty()</code> ignore a <code>length</code> value different from the array’s current <a href="../array/length"><code>length</code></a> property, and attempts to change writability execute without error but do not actually change the property’s writability.</p>
+<p>Only Internet Explorer 9 and later, and Firefox 23 and later, appear to fully and correctly implement redefinition of the <a href="../array/length"><code>length</code></a> property of arrays. For now, don’t rely on redefining the <a href="../array/length"><code>length</code></a> property of an array to either work, or to work in a particular manner. And even when you <em>can</em> rely on it, <a href="https://whereswalden.com/2013/08/05/new-in-firefox-23-the-length-property-of-an-array-can-be-made-non-writable-but-you-shouldnt-do-it/">there’s really no good reason to do so</a>.</p>
+<h3 id="internet-explorer-8-specific-notes">Internet Explorer 8 specific notes</h3>
+<p>Internet Explorer 8 implemented a <code>Object.defineProperty()</code> method that could <a href="https://msdn.microsoft.com/en-us/library/dd229916%28VS.85%29.aspx">only be used on DOM objects</a>. A few things need to be noted:</p>
+<ul>
+<li>Trying to use <code>Object.defineProperty()</code> on native objects throws an error.</li>
+<li>Property attributes must be set to some values. The <code>configurable</code>, <code>enumerable</code> and <code>writable</code> attributes should all be set to <code>true</code> for data descriptor and <code>true</code> for <code>configurable</code>, <code>false</code> for <code>enumerable</code> for accessor descriptor.(?) Any attempt to provide other value(?) will result in an error being thrown.</li>
+<li>Reconfiguring a property requires first deleting the property. If the property isn’t deleted, it stays as it was before the reconfiguration attempt.</li>
+</ul>
+<h3 id="chrome-37-and-below-specific-notes">Chrome 37 (and below) specific notes</h3>
+<p>Chrome 37 (and below) has a <a href="https://bugs.chromium.org/p/v8/issues/detail?id=3448">bug</a> where an attempt to define a “prototype” property, on a function, with <code>writable: false</code> doesn’t work as expected.</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties">Enumerability and ownership of properties</a></li>
+<li><a href="defineproperties"><code>Object.defineProperties()</code></a></li>
+<li><a href="propertyisenumerable"><code>Object.propertyIsEnumerable()</code></a></li>
+<li><a href="getownpropertydescriptor"><code>Object.getOwnPropertyDescriptor()</code></a></li>
+<li><span class="page-not-created"><code>Object.prototype.watch()</code></span></li>
+<li><span class="page-not-created"><code>Object.prototype.unwatch()</code></span></li>
+<li><a href="../../functions/get"><code>get</code></a></li>
+<li><a href="../../functions/set"><code>set</code></a></li>
+<li><a href="create"><code>Object.create()</code></a></li>
+<li><a href="../reflect/defineproperty"><code>Reflect.defineProperty()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty</a></p>
+</body>
+</html>

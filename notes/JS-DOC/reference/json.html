@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>json</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="json">JSON</h1>
+<p>The <code>JSON</code> object contains methods for parsing <a href="https://json.org/">JavaScript Object Notation</a> (<a href="https://developer.mozilla.org/en-US/docs/Glossary/JSON">JSON</a>) and converting values to JSON. It can’t be called or constructed, and aside from its two method properties, it has no interesting functionality of its own.</p>
+<h2 id="description">Description</h2>
+<h3 id="javascript-and-json-differences">JavaScript and JSON differences</h3>
+<p>JSON is a syntax for serializing objects, arrays, numbers, strings, booleans, and <a href="null"><code>null</code></a>. It is based upon JavaScript syntax but is distinct from it: some JavaScript is <em>not</em> JSON.</p>
+<p><strong>Objects and Arrays</strong><br />
+Property names must be double-quoted strings; <a href="../trailing_commas">trailing commas</a> are forbidden.</p>
+<p><strong>Numbers</strong><br />
+Leading zeros are prohibited. A decimal point must be followed by at least one digit. <code>NaN</code> and <code>Infinity</code> are unsupported.</p>
+<p><strong>Any JSON text is a valid JavaScript expression…</strong><br />
+…But only in JavaScript engines that have implemented the <a href="https://github.com/tc39/proposal-json-superset">proposal to make all JSON text valid ECMA-262</a>. In engines that haven’t implemented the proposal, U+2028 LINE SEPARATOR and U+2029 PARAGRAPH SEPARATOR are allowed in string literals and property keys in JSON; but their use in these features in JavaScript string literals is a <a href="syntaxerror"><code>SyntaxError</code></a>.</p>
+<p>Consider this example where <a href="json/parse"><code>JSON.parse()</code></a> parses the string as JSON and <a href="eval"><code>Global_Objects/eval</code></a> executes the string as JavaScript:</p>
+<pre><code>let code = &#39;&quot;\u2028\u2029&quot;&#39;
+JSON.parse(code)  // evaluates to &quot;\u2028\u2029&quot; in all engines
+eval(code)        // throws a SyntaxError in old engines</code></pre>
+<p>Other differences include allowing only double-quoted strings and having no provisions for <a href="undefined"><code>undefined</code></a> or comments. For those who wish to use a more human-friendly configuration format based on JSON, there is <a href="https://json5.org/">JSON5</a>, used by the Babel compiler, and the more commonly used <a href="https://en.wikipedia.org/wiki/YAML">YAML</a>.</p>
+<h3 id="full-json-syntax">Full JSON syntax</h3>
+<p>The full JSON syntax is as follows:</p>
+<pre><code>JSON = null
+    or true or false
+    or JSONNumber
+    or JSONString
+    or JSONObject
+    or JSONArray
+
+JSONNumber = - PositiveNumber
+          or PositiveNumber
+PositiveNumber = DecimalNumber
+              or DecimalNumber . Digits
+              or DecimalNumber . Digits ExponentPart
+              or DecimalNumber ExponentPart
+DecimalNumber = 0
+             or OneToNine Digits
+ExponentPart = e Exponent
+            or E Exponent
+Exponent = Digits
+        or + Digits
+        or - Digits
+Digits = Digit
+      or Digits Digit
+Digit = 0 through 9
+OneToNine = 1 through 9
+
+JSONString = &quot;&quot;
+          or &quot; StringCharacters &quot;
+StringCharacters = StringCharacter
+                or StringCharacters StringCharacter
+StringCharacter = any character
+                  except &quot; or \ or U+0000 through U+001F
+               or EscapeSequence
+EscapeSequence = \&quot; or \/ or \\ or \b or \f or \n or \r or \t
+              or \u HexDigit HexDigit HexDigit HexDigit
+HexDigit = 0 through 9
+        or A through F
+        or a through f
+
+JSONObject = { }
+          or { Members }
+Members = JSONString : JSON
+       or Members , JSONString : JSON
+
+JSONArray = [ ]
+         or [ ArrayElements ]
+ArrayElements = JSON
+             or ArrayElements , JSON</code></pre>
+<p>Insignificant <a href="https://developer.mozilla.org/en-US/docs/Glossary/Whitespace">whitespace</a> may be present anywhere except within a <code>JSONNumber</code> (numbers must contain no whitespace) or <code>JSONString</code> (where it is interpreted as the corresponding character in the string, or would cause an error). The tab character (<a href="https://unicode-table.com/en/0009/">U+0009</a>), carriage return (<a href="https://unicode-table.com/en/000D/">U+000D</a>), line feed (<a href="https://unicode-table.com/en/000A/">U+000A</a>), and space (<a href="https://unicode-table.com/en/0020/">U+0020</a>) characters are the only valid whitespace characters.</p>
+<h2 id="static-methods">Static methods</h2>
+<p><a href="json/parse"><code>JSON.parse(text[, reviver])</code></a><br />
+Parse the string <code>text</code> as JSON, optionally transform the produced value and its properties, and return the value. Any violations of the JSON syntax, including those pertaining to the differences between JavaScript and JSON, cause a <a href="syntaxerror"><code>SyntaxError</code></a> to be thrown. The <code>reviver</code> option allows for interpreting what the <code>replacer</code> has used to stand in for other datatypes.</p>
+<p><a href="json/stringify"><code>JSON.stringify(value[, replacer[, space]])</code></a><br />
+Return a JSON string corresponding to the specified value, optionally including only certain properties or replacing property values in a user-defined manner. By default, all instances of <a href="undefined"><code>undefined</code></a> are replaced with <a href="null"><code>null</code></a>, and other unsupported native data types are censored. The <code>replacer</code> option allows for specifying other behavior.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="example-json">Example JSON</h3>
+<pre><code>{
+  &quot;browsers&quot;: {
+    &quot;firefox&quot;: {
+      &quot;name&quot;: &quot;Firefox&quot;,
+      &quot;pref_url&quot;: &quot;about:config&quot;,
+      &quot;releases&quot;: {
+        &quot;1&quot;: {
+          &quot;release_date&quot;: &quot;2004-11-09&quot;,
+          &quot;status&quot;: &quot;retired&quot;,
+          &quot;engine&quot;: &quot;Gecko&quot;,
+          &quot;engine_version&quot;: &quot;1.7&quot;
+        }
+      }
+    }
+  }
+}</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-json-object">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-json-object</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>JSON</code></p>
+<p>3</p>
+<p>12</p>
+<p>3.5</p>
+<p>8</p>
+<p>10.5</p>
+<p>4</p>
+<p>≤37</p>
+<p>18</p>
+<p>4</p>
+<p>11</p>
+<p>4</p>
+<p>1.0</p>
+<p><code>json_superset</code></p>
+<p>66</p>
+<p>79</p>
+<p>62</p>
+<p>No</p>
+<p>53</p>
+<p>12</p>
+<p>66</p>
+<p>66</p>
+<p>62</p>
+<p>47</p>
+<p>12</p>
+<p>9.0</p>
+<p><code>parse</code></p>
+<p>3</p>
+<p>12</p>
+<p>3.5</p>
+<p>8</p>
+<p>10.5</p>
+<p>4</p>
+<p>≤37</p>
+<p>18</p>
+<p>4</p>
+<p>11</p>
+<p>4</p>
+<p>1.0</p>
+<p><code>stringify</code></p>
+<p>3</p>
+<p>12</p>
+<p>3.5</p>
+<p>8</p>
+<p>10.5</p>
+<p>4</p>
+<p>≤37</p>
+<p>18</p>
+<p>4</p>
+<p>11</p>
+<p>4</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="date/tojson"><code>Date.prototype.toJSON()</code></a></li>
+<li><a href="http://www.jsondiff.com/">JSON Diff</a> checker</li>
+<li><a href="https://jsonbeautifier.org/">JSON Beautifier/editor</a></li>
+<li><a href="http://jsonparser.org/">JSON Parser</a></li>
+<li><a href="https://tools.learningcontainer.com/json-validator/">JSON Validator</a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON</a></p>
+</body>
+</html>

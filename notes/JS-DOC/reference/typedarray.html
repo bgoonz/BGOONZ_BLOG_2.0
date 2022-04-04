@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>typedarray</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="typedarray">TypedArray</h1>
+<p>A <strong><em>TypedArray</em></strong> object describes an array-like view of an underlying <a href="arraybuffer">binary data buffer</a>. There is no global property named <code>TypedArray</code>, nor is there a directly visible <code>TypedArray</code> constructor. Instead, there are a number of different global properties, whose values are typed array constructors for specific element types, listed below. On the following pages you will find common properties and methods that can be used with any typed array containing elements of any type.</p>
+<h2 id="description">Description</h2>
+<p>ECMAScript 2015 defines a <code>TypedArray</code> constructor that serves as the <code>[[Prototype]]</code> of all <code>TypedArray</code> constructors. This constructor is not directly exposed: there is no global <code>%TypedArray%</code> or <code>TypedArray</code> property. It is only directly accessible through <code>Object.getPrototypeOf(Int8Array)</code> and similar. All <code>TypedArray</code>s constructors inherit common properties from the <code>%TypedArray%</code> constructor function. Additionally, all typed array prototypes (<code>TypedArray.prototype</code>) have <code>%TypedArray%.prototype</code> as their <code>[[Prototype]]</code>.</p>
+<p>The <code>%TypedArray%</code> constructor on its own is not particularly useful. Calling it or using it in a <code>new</code> expression will throw a <a href="typeerror"><code>TypeError</code></a>, except when used during object creation in JS engines that support subclassing. There are at present no such engines, so <code>%TypedArray%</code> is only useful to polyfill functions or properties onto all <code>TypedArray</code> constructors.</p>
+<p>When creating an instance of a <code>TypedArray</code> (e.g. <code>Int8Array</code>), an array buffer is created internally in memory or, if an <code>ArrayBuffer</code> object is given as constructor argument, then this is used instead. The buffer address is saved as an internal property of the instance and all the methods of <code>%TypedArray%.prototype</code>, i.e. set value and get value etc., operate on that array buffer address.</p>
+<h3 id="typedarray-objects">TypedArray objects</h3>
+<table>
+<thead>
+<tr class="header">
+<th>
+Type
+</th>
+<th>
+Value Range
+</th>
+<th>
+Size in bytes
+</th>
+<th>
+Description
+</th>
+<th>
+Web IDL type
+</th>
+<th>
+Equivalent C type
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="int8array"><code>Int8Array</code></a>
+</td>
+<td>
+<code>-128</code> to <code>127</code>
+</td>
+<td>
+1
+</td>
+<td>
+8-bit two’s complement signed integer
+</td>
+<td>
+<code>byte</code>
+</td>
+<td>
+<code>int8_t</code>
+</td>
+</tr>
+<tr class="even">
+<td>
+<a href="uint8array"><code>Uint8Array</code></a>
+</td>
+<td>
+<code>0</code> to <code>255</code>
+</td>
+<td>
+1
+</td>
+<td>
+8-bit unsigned integer
+</td>
+<td>
+<code>octet</code>
+</td>
+<td>
+<code>uint8_t</code>
+</td>
+</tr>
+<tr class="odd">
+<td>
+<a href="uint8clampedarray"><code>Uint8ClampedArray</code></a>
+</td>
+<td>
+<code>0</code> to <code>255</code>
+</td>
+<td>
+1
+</td>
+<td>
+8-bit unsigned integer (clamped)
+</td>
+<td>
+<code>octet</code>
+</td>
+<td>
+<code>uint8_t</code>
+</td>
+</tr>
+<tr class="even">
+<td>
+<a href="int16array"><code>Int16Array</code></a>
+</td>
+<td>
+<code>-32768</code> to <code>32767</code>
+</td>
+<td>
+2
+</td>
+<td>
+16-bit two’s complement signed integer
+</td>
+<td>
+<code>short</code>
+</td>
+<td>
+<code>int16_t</code>
+</td>
+</tr>
+<tr class="odd">
+<td>
+<a href="uint16array"><code>Uint16Array</code></a>
+</td>
+<td>
+<code>0</code> to <code>65535</code>
+</td>
+<td>
+2
+</td>
+<td>
+16-bit unsigned integer
+</td>
+<td>
+<code>unsigned short</code>
+</td>
+<td>
+<code>uint16_t</code>
+</td>
+</tr>
+<tr class="even">
+<td>
+<a href="int32array"><code>Int32Array</code></a>
+</td>
+<td>
+<code>-2147483648</code> to <code>2147483647</code>
+</td>
+<td>
+4
+</td>
+<td>
+32-bit two’s complement signed integer
+</td>
+<td>
+<code>long</code>
+</td>
+<td>
+<code>int32_t</code>
+</td>
+</tr>
+<tr class="odd">
+<td>
+<a href="uint32array"><code>Uint32Array</code></a>
+</td>
+<td>
+<code>0</code> to <code>4294967295</code>
+</td>
+<td>
+4
+</td>
+<td>
+32-bit unsigned integer
+</td>
+<td>
+<code>unsigned long</code>
+</td>
+<td>
+<code>uint32_t</code>
+</td>
+</tr>
+<tr class="even">
+<td>
+<a href="float32array"><code>Float32Array</code></a>
+</td>
+<td>
+<code>1.2</code>×<code>10-38</code> to <code>3.4</code>×<code>1038</code>
+</td>
+<td>
+4
+</td>
+<td>
+32-bit IEEE floating point number (7 significant digits e.g., <code>1.234567</code>)
+</td>
+<td>
+<code>unrestricted float</code>
+</td>
+<td>
+<code>float</code>
+</td>
+</tr>
+<tr class="odd">
+<td>
+<a href="float64array"><code>Float64Array</code></a>
+</td>
+<td>
+<code>5.0</code>×<code>10-324</code> to <code>1.8</code>×<code>10308</code>
+</td>
+<td>
+8
+</td>
+<td>
+64-bit IEEE floating point number (16 significant digits e.g., <code>1.23456789012345</code>)
+</td>
+<td>
+<code>unrestricted double</code>
+</td>
+<td>
+<code>double</code>
+</td>
+</tr>
+<tr class="even">
+<td>
+<a href="bigint64array"><code>BigInt64Array</code></a>
+</td>
+<td>
+<code>-263</code> to <code>263-1</code>
+</td>
+<td>
+8
+</td>
+<td>
+64-bit two’s complement signed integer
+</td>
+<td>
+<code>bigint</code>
+</td>
+<td>
+<code>int64_t (signed long long)</code>
+</td>
+</tr>
+<tr class="odd">
+<td>
+<a href="biguint64array"><code>BigUint64Array</code></a>
+</td>
+<td>
+<code>0</code> to <code>264-1</code>
+</td>
+<td>
+8
+</td>
+<td>
+64-bit unsigned integer
+</td>
+<td>
+<code>bigint</code>
+</td>
+<td>
+<code>uint64_t (unsigned long long)</code>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="constructor">Constructor</h2>
+<p>This object cannot be instantiated directly. Instead, you create an instance of an array of a particular type, such as a <a href="int8array"><code>Int8Array</code></a> or a <a href="bigint64array"><code>BigInt64Array</code></a>. These objects all have a common syntax for their constructors:</p>
+<pre><code>new TypedArray()
+new TypedArray(length)
+new TypedArray(typedArray)
+new TypedArray(object)
+
+new TypedArray(buffer)
+new TypedArray(buffer, byteOffset)
+new TypedArray(buffer, byteOffset, length)</code></pre>
+<p>Where TypedArray is a constructor for one of the concrete types.</p>
+<h3 id="parameters">Parameters</h3>
+<p><code>length</code><br />
+When called with a <code>length</code> argument, an internal array buffer is created in memory, of size <code>length</code> <em>multiplied by <code>BYTES_PER_ELEMENT</code></em> bytes, containing zeros.</p>
+<p><code>typedArray</code><br />
+When called with a <code>typedArray</code> argument, which can be an object of any of the typed array types (such as <code>Int32Array</code>), the <code>typedArray</code> gets copied into a new typed array. Each value in <code>typedArray</code> is converted to the corresponding type of the constructor before being copied into the new array. The length of the new typed array will be same as the length of the <code>typedArray</code> argument.</p>
+<p><code>object</code><br />
+When called with an <code>object</code> argument, a new typed array is created as if by the <code>TypedArray.from()</code> method.</p>
+<p><code>buffer</code>, <code>byteOffset</code>, <code>length</code><br />
+When called with a <code>buffer</code>, and optionally a <code>byteOffset</code> and a <code>length</code> argument, a new typed array view is created that views the specified <a href="arraybuffer"><code>ArrayBuffer</code></a>. The <code>byteOffset</code> and <code>length</code> parameters specify the memory range that will be exposed by the typed array view. If both are omitted, all of <code>buffer</code> is viewed; if only <code>length</code> is omitted, the remainder of <code>buffer</code> is viewed.</p>
+<h2 id="static-properties">Static properties</h2>
+<p><a href="typedarray/bytes_per_element"><code>TypedArray.BYTES_PER_ELEMENT</code></a><br />
+Returns a number value of the element size for the different <code>TypedArray</code> objects.</p>
+<p><a href="typedarray/name"><code>TypedArray.name</code></a><br />
+Returns the string value of the constructor name (e.g, “<code>Int8Array</code>”).</p>
+<p><a href="typedarray/@@species"><code>get TypedArray[@@species]</code></a><br />
+The constructor function used to create derived objects.</p>
+<p><a href="typedarray"><code>TypedArray.prototype</code></a><br />
+Prototype for <code>TypedArray</code> objects.</p>
+<h2 id="static-methods">Static methods</h2>
+<p><a href="typedarray/from"><code>TypedArray.from()</code></a><br />
+Creates a new <code>TypedArray</code> from an array-like or iterable object. See also <a href="array/from"><code>Array.from()</code></a>.</p>
+<p><a href="typedarray/of"><code>TypedArray.of()</code></a><br />
+Creates a new <code>TypedArray</code> with a variable number of arguments. See also <a href="array/of"><code>Array.of()</code></a>.</p>
+<h2 id="instance-properties">Instance properties</h2>
+<p><a href="typedarray/buffer"><code>TypedArray.prototype.buffer</code></a><br />
+Returns the <a href="arraybuffer"><code>ArrayBuffer</code></a> referenced by the typed array. Fixed at construction time and thus <strong>read only</strong>.</p>
+<p><a href="typedarray/bytelength"><code>TypedArray.prototype.byteLength</code></a><br />
+Returns the length (in bytes) of the typed array. Fixed at construction time and thus <strong>read only.</strong></p>
+<p><a href="typedarray/byteoffset"><code>TypedArray.prototype.byteOffset</code></a><br />
+Returns the offset (in bytes) of the typed array from the start of its <a href="arraybuffer"><code>ArrayBuffer</code></a>. Fixed at construction time and thus <strong>read only.</strong></p>
+<p><a href="typedarray/length"><code>TypedArray.prototype.length</code></a><br />
+Returns the number of elements held in the typed array. Fixed at construction time and thus <strong>read only.</strong></p>
+<h2 id="instance-methods">Instance methods</h2>
+<p><a href="typedarray/at"><code>TypedArray.prototype.at()</code></a><br />
+Takes an integer value and returns the item at that index. This method allows for negative integers, which count back from the last item.</p>
+<p><a href="typedarray/copywithin"><code>TypedArray.prototype.copyWithin()</code></a><br />
+Copies a sequence of array elements within the array. See also <a href="array/copywithin"><code>Array.prototype.copyWithin()</code></a>.</p>
+<p><a href="typedarray/entries"><code>TypedArray.prototype.entries()</code></a><br />
+Returns a new array iterator object that contains the key/value pairs for each index in the array. See also <a href="array/entries"><code>Array.prototype.entries()</code></a>.</p>
+<p><a href="typedarray/every"><code>TypedArray.prototype.every()</code></a><br />
+Tests whether all elements in the array pass the test provided by a function. See also <a href="array/every"><code>Array.prototype.every()</code></a>.</p>
+<p><a href="typedarray/fill"><code>TypedArray.prototype.fill()</code></a><br />
+Fills all the elements of an array from a start index to an end index with a static value. See also <a href="array/fill"><code>Array.prototype.fill()</code></a>.</p>
+<p><a href="typedarray/filter"><code>TypedArray.prototype.filter()</code></a><br />
+Creates a new array with all of the elements of this array for which the provided filtering function returns <code>true</code>. See also <a href="array/filter"><code>Array.prototype.filter()</code></a>.</p>
+<p><a href="typedarray/find"><code>TypedArray.prototype.find()</code></a><br />
+Returns the found value in the array, if an element in the array satisfies the provided testing function, or <code>undefined</code> if not found. See also <a href="array/find"><code>Array.prototype.find()</code></a>.</p>
+<p><a href="typedarray/findindex"><code>TypedArray.prototype.findIndex()</code></a><br />
+Returns the found index in the array, if an element in the array satisfies the provided testing function or <code>-1</code> if not found. See also <a href="array/findindex"><code>Array.prototype.findIndex()</code></a>.</p>
+<p><a href="typedarray/foreach"><code>TypedArray.prototype.forEach()</code></a><br />
+Calls a function for each element in the array. See also <a href="array/foreach"><code>Array.prototype.forEach()</code></a>.</p>
+<p><a href="typedarray/includes"><code>TypedArray.prototype.includes()</code></a><br />
+Determines whether a typed array includes a certain element, returning <code>true</code> or <code>false</code> as appropriate. See also <a href="array/includes"><code>Array.prototype.includes()</code></a>.</p>
+<p><a href="typedarray/indexof"><code>TypedArray.prototype.indexOf()</code></a><br />
+Returns the first (least) index of an element within the array equal to the specified value, or <code>-1</code> if none is found. See also <a href="array/indexof"><code>Array.prototype.indexOf()</code></a>.</p>
+<p><a href="typedarray/join"><code>TypedArray.prototype.join()</code></a><br />
+Joins all elements of an array into a string. See also <a href="array/join"><code>Array.prototype.join()</code></a>.</p>
+<p><a href="typedarray/keys"><code>TypedArray.prototype.keys()</code></a><br />
+Returns a new array iterator that contains the keys for each index in the array. See also <a href="array/keys"><code>Array.prototype.keys()</code></a>.</p>
+<p><a href="typedarray/lastindexof"><code>TypedArray.prototype.lastIndexOf()</code></a><br />
+Returns the last (greatest) index of an element within the array equal to the specified value, or <code>-1</code> if none is found. See also <a href="array/lastindexof"><code>Array.prototype.lastIndexOf()</code></a>.</p>
+<p><a href="typedarray/map"><code>TypedArray.prototype.map()</code></a><br />
+Creates a new array with the results of calling a provided function on every element in this array. See also <a href="array/map"><code>Array.prototype.map()</code></a>.</p>
+<p><a href="typedarray/reduce"><code>TypedArray.prototype.reduce()</code></a><br />
+Apply a function against an accumulator and each value of the array (from left-to-right) as to reduce it to a single value. See also <a href="array/reduce"><code>Array.prototype.reduce()</code></a>.</p>
+<p><a href="typedarray/reduceright"><code>TypedArray.prototype.reduceRight()</code></a><br />
+Apply a function against an accumulator and each value of the array (from right-to-left) as to reduce it to a single value. See also <a href="array/reduceright"><code>Array.prototype.reduceRight()</code></a>.</p>
+<p><a href="typedarray/reverse"><code>TypedArray.prototype.reverse()</code></a><br />
+Reverses the order of the elements of an array — the first becomes the last, and the last becomes the first. See also <a href="array/reverse"><code>Array.prototype.reverse()</code></a>.</p>
+<p><a href="typedarray/set"><code>TypedArray.prototype.set()</code></a><br />
+Stores multiple values in the typed array, reading input values from a specified array.</p>
+<p><a href="typedarray/slice"><code>TypedArray.prototype.slice()</code></a><br />
+Extracts a section of an array and returns a new array. See also <a href="array/slice"><code>Array.prototype.slice()</code></a>.</p>
+<p><a href="typedarray/some"><code>TypedArray.prototype.some()</code></a><br />
+Returns <code>true</code> if at least one element in this array satisfies the provided testing function. See also <a href="array/some"><code>Array.prototype.some()</code></a>.</p>
+<p><a href="typedarray/sort"><code>TypedArray.prototype.sort()</code></a><br />
+Sorts the elements of an array in place and returns the array. See also <a href="array/sort"><code>Array.prototype.sort()</code></a>.</p>
+<p><a href="typedarray/subarray"><code>TypedArray.prototype.subarray()</code></a><br />
+Returns a new <code>TypedArray</code> from the given start and end element index.</p>
+<p><a href="typedarray/values"><code>TypedArray.prototype.values()</code></a><br />
+Returns a new array iterator object that contains the values for each index in the array. See also <a href="array/values"><code>Array.prototype.values()</code></a>.</p>
+<p><a href="typedarray/tolocalestring"><code>TypedArray.prototype.toLocaleString()</code></a><br />
+Returns a localized string representing the array and its elements. See also <a href="array/tolocalestring"><code>Array.prototype.toLocaleString()</code></a>.</p>
+<p><a href="typedarray/tostring"><code>TypedArray.prototype.toString()</code></a><br />
+Returns a string representing the array and its elements. See also <a href="array/tostring"><code>Array.prototype.toString()</code></a>.</p>
+<p><a href="typedarray/@@iterator"><code>TypedArray.prototype[@@iterator]()</code></a><br />
+Returns a new array iterator object that contains the values for each index in the array.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="new-is-required">New is required</h3>
+<p>Starting with ECMAScript 2015, <code>TypedArray</code> constructors must be constructed with the <a href="../operators/new"><code>new</code></a> operator. Calling a <code>TypedArray</code> constructor as a function without <code>new</code> will throw a <a href="typeerror"><code>TypeError</code></a>.</p>
+<pre><code>var dv = Int8Array([1, 2, 3]);
+// TypeError: calling a builtin Int8Array constructor
+// without new is forbidden
+
+var dv = new Int8Array([1, 2, 3]);</code></pre>
+<h3 id="property-access">Property access</h3>
+<p>You can reference elements in the array using standard array index syntax (that is, using bracket notation). However, getting or setting indexed properties on typed arrays will not search in the prototype chain for this property, even when the indices are out of bound. Indexed properties will consult the <a href="arraybuffer"><code>ArrayBuffer</code></a> and will never look at object properties. You can still use named properties, just like with all objects.</p>
+<pre><code>// Setting and getting using standard array syntax
+var int16 = new Int16Array(2);
+int16[0] = 42;
+console.log(int16[0]); // 42
+
+// Indexed properties on prototypes are not consulted (Fx 25)
+Int8Array.prototype[20] = &#39;foo&#39;;
+(new Int8Array(32))[20]; // 0
+// even when out of bound
+Int8Array.prototype[20] = &#39;foo&#39;;
+(new Int8Array(8))[20]; // undefined
+// or with negative integers
+Int8Array.prototype[-1] = &#39;foo&#39;;
+(new Int8Array(8))[-1]; // undefined
+
+// Named properties are allowed, though (Fx 30)
+Int8Array.prototype.foo = &#39;bar&#39;;
+(new Int8Array(32)).foo; // &quot;bar&quot;</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-typedarray-objects">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-typedarray-objects</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>TypedArray</code></p>
+<p>7</p>
+<p>12</p>
+<p>4</p>
+<p>10</p>
+<p>11.6</p>
+<p>5.1</p>
+<p>4</p>
+<p>18</p>
+<p>4</p>
+<p>12</p>
+<p>4.2</p>
+<p>1.0</p>
+<p><code>BYTES_PER_ELEMENT</code></p>
+<p>7</p>
+<p>12</p>
+<p>4</p>
+<p>10</p>
+<p>11.6</p>
+<p>5.1</p>
+<p>4</p>
+<p>18</p>
+<p>4</p>
+<p>12</p>
+<p>4.2</p>
+<p>1.0</p>
+<p><code>at</code></p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p><code>buffer</code></p>
+<p>7</p>
+<p>14</p>
+<p>4</p>
+<p>10</p>
+<p>11.6</p>
+<p>5.1</p>
+<p>4</p>
+<p>18</p>
+<p>4</p>
+<p>12</p>
+<p>4.2</p>
+<p>1.0</p>
+<p><code>byteLength</code></p>
+<p>7</p>
+<p>14</p>
+<p>4</p>
+<p>10</p>
+<p>11.6</p>
+<p>5.1</p>
+<p>4</p>
+<p>18</p>
+<p>4</p>
+<p>12</p>
+<p>4.2</p>
+<p>1.0</p>
+<p><code>byteOffset</code></p>
+<p>7</p>
+<p>14</p>
+<p>4</p>
+<p>10</p>
+<p>11.6</p>
+<p>5.1</p>
+<p>4</p>
+<p>18</p>
+<p>4</p>
+<p>12</p>
+<p>4.2</p>
+<p>1.0</p>
+<p><code>constructor_without_arguments</code></p>
+<p>7</p>
+<p>12</p>
+<p>55</p>
+<p>10</p>
+<p>11.6</p>
+<p>5.1</p>
+<p>≤37</p>
+<p>18</p>
+<p>55</p>
+<p>12</p>
+<p>5</p>
+<p>1.0</p>
+<p><code>copyWithin</code></p>
+<p>45</p>
+<p>14</p>
+<p>34</p>
+<p>No</p>
+<p>36</p>
+<p>9.1</p>
+<p>No</p>
+<p>No</p>
+<p>34</p>
+<p>No</p>
+<p>9.3</p>
+<p>No</p>
+<p><code>entries</code></p>
+<p>45</p>
+<p>14</p>
+<p>37</p>
+<p>No</p>
+<p>36</p>
+<p>9.1</p>
+<p>No</p>
+<p>45</p>
+<p>37</p>
+<p>No</p>
+<p>9.3</p>
+<p>5.0</p>
+<p><code>every</code></p>
+<p>45</p>
+<p>14</p>
+<p>37</p>
+<p>No</p>
+<p>36</p>
+<p>9.1</p>
+<p>No</p>
+<p>45</p>
+<p>37</p>
+<p>No</p>
+<p>9.3</p>
+<p>5.0</p>
+<p><code>fill</code></p>
+<p>45</p>
+<p>14</p>
+<p>37</p>
+<p>No</p>
+<p>36</p>
+<p>9.1</p>
+<p>No</p>
+<p>45</p>
+<p>37</p>
+<p>No</p>
+<p>9.3</p>
+<p>5.0</p>
+<p><code>filter</code></p>
+<p>45</p>
+<p>14</p>
+<p>38</p>
+<p>No</p>
+<p>No</p>
+<p>9.1</p>
+<p>No</p>
+<p>45</p>
+<p>38</p>
+<p>No</p>
+<p>9.3</p>
+<p>5.0</p>
+<p><code>find</code></p>
+<p>45</p>
+<p>14</p>
+<p>37</p>
+<p>No</p>
+<p>32</p>
+<p>9.1</p>
+<p>45</p>
+<p>45</p>
+<p>37</p>
+<p>32</p>
+<p>9.3</p>
+<p>5.0</p>
+<p><code>findIndex</code></p>
+<p>45</p>
+<p>14</p>
+<p>37</p>
+<p>No</p>
+<p>32</p>
+<p>9.1</p>
+<p>45</p>
+<p>45</p>
+<p>37</p>
+<p>32</p>
+<p>9.3</p>
+<p>5.0</p>
+<p><code>forEach</code></p>
+<p>45</p>
+<p>14</p>
+<p>38</p>
+<p>No</p>
+<p>32</p>
+<p>10</p>
+<p>45</p>
+<p>45</p>
+<p>38</p>
+<p>32</p>
+<p>10</p>
+<p>5.0</p>
+<p><code>from</code></p>
+<p>45</p>
+<p>14</p>
+<p>38</p>
+<p>No</p>
+<p>No</p>
+<p>10</p>
+<p>No</p>
+<p>No</p>
+<p>38</p>
+<p>No</p>
+<p>10</p>
+<p>No</p>
+<p><code>includes</code></p>
+<p>47</p>
+<p>14</p>
+<p>43</p>
+<p>No</p>
+<p>34</p>
+<p>10</p>
+<p>No</p>
+<p>47</p>
+<p>43</p>
+<p>34</p>
+<p>10</p>
+<p>5.0</p>
+<p><code>index_properties_not_consulting_prototype</code></p>
+<p>7</p>
+<p>Negative integers are not considered as indexed properties and therefore return the value of the prototype property.</p>
+<p>12</p>
+<p>Negative integers are not considered as indexed properties and therefore return the value of the prototype property.</p>
+<p>25</p>
+<p>10</p>
+<p>Negative integers are not considered as indexed properties and therefore return the value of the prototype property.</p>
+<p>11.6</p>
+<p>Negative integers are not considered as indexed properties and therefore return the value of the prototype property.</p>
+<p>5.1</p>
+<p>Negative integers are not considered as indexed properties and therefore return the value of the prototype property.</p>
+<p>≤37</p>
+<p>Negative integers are not considered as indexed properties and therefore return the value of the prototype property.</p>
+<p>18</p>
+<p>Negative integers are not considered as indexed properties and therefore return the value of the prototype property.</p>
+<p>25</p>
+<p>12</p>
+<p>Negative integers are not considered as indexed properties and therefore return the value of the prototype property.</p>
+<p>5</p>
+<p>Negative integers are not considered as indexed properties and therefore return the value of the prototype property.</p>
+<p>1.0</p>
+<p>Negative integers are not considered as indexed properties and therefore return the value of the prototype property.</p>
+<p><code>indexOf</code></p>
+<p>45</p>
+<p>14</p>
+<p>37</p>
+<p>Starting with Firefox 47, this method will no longer return <code>-0</code>. For example, <code>new Uint8Array([0]).indexOf(0, -0)</code> will now always return <code>+0</code>.</p>
+<p>No</p>
+<p>32</p>
+<p>9.1</p>
+<p>No</p>
+<p>45</p>
+<p>37</p>
+<p>Starting with Firefox 47, this method will no longer return <code>-0</code>. For example, <code>new Uint8Array([0]).indexOf(0, -0)</code> will now always return <code>+0</code>.</p>
+<p>32</p>
+<p>9.3</p>
+<p>5.0</p>
+<p><code>iterable_in_constructor</code></p>
+<p>39</p>
+<p>14</p>
+<p>52</p>
+<p>No</p>
+<p>26</p>
+<p>10</p>
+<p>39</p>
+<p>39</p>
+<p>52</p>
+<p>26</p>
+<p>10</p>
+<p>4.0</p>
+<p><code>join</code></p>
+<p>45</p>
+<p>14</p>
+<p>37</p>
+<p>No</p>
+<p>32</p>
+<p>9.1</p>
+<p>45</p>
+<p>45</p>
+<p>37</p>
+<p>32</p>
+<p>9.3</p>
+<p>5.0</p>
+<p><code>keys</code></p>
+<p>38</p>
+<p>14</p>
+<p>37</p>
+<p>No</p>
+<p>25</p>
+<p>10</p>
+<p>38</p>
+<p>38</p>
+<p>37</p>
+<p>25</p>
+<p>10</p>
+<p>3.0</p>
+<p><code>lastIndexOf</code></p>
+<p>45</p>
+<p>14</p>
+<p>37</p>
+<p>Starting with Firefox 47, this method will no longer return <code>-0</code>. For example, <code>new Uint8Array([0]).lastIndexOf(0, -0)</code> will now always return <code>+0</code>.</p>
+<p>No</p>
+<p>32</p>
+<p>10</p>
+<p>45</p>
+<p>45</p>
+<p>37</p>
+<p>Starting with Firefox 47, this method will no longer return <code>-0</code>. For example, <code>new Uint8Array([0]).lastIndexOf(0, -0)</code> will now always return <code>+0</code>.</p>
+<p>32</p>
+<p>10</p>
+<p>5.0</p>
+<p><code>length</code></p>
+<p>7</p>
+<p>14</p>
+<p>4</p>
+<p>10</p>
+<p>11.6</p>
+<p>5.1</p>
+<p>4</p>
+<p>18</p>
+<p>4</p>
+<p>12</p>
+<p>4.2</p>
+<p>1.0</p>
+<p><code>map</code></p>
+<p>45</p>
+<p>14</p>
+<p>38</p>
+<p>No</p>
+<p>32</p>
+<p>9.1</p>
+<p>45</p>
+<p>45</p>
+<p>38</p>
+<p>32</p>
+<p>9.3</p>
+<p>5.0</p>
+<p><code>name</code></p>
+<p>7</p>
+<p>12</p>
+<p>4</p>
+<p>10</p>
+<p>11.6</p>
+<p>5.1</p>
+<p>4</p>
+<p>18</p>
+<p>4</p>
+<p>12</p>
+<p>4.2</p>
+<p>1.0</p>
+<p><code>named_properties</code></p>
+<p>7</p>
+<p>12</p>
+<p>30</p>
+<p>10</p>
+<p>11.6</p>
+<p>5.1</p>
+<p>≤37</p>
+<p>18</p>
+<p>30</p>
+<p>12</p>
+<p>5</p>
+<p>1.0</p>
+<p><code>new_required</code></p>
+<p>7</p>
+<p>14</p>
+<p>44</p>
+<p>No</p>
+<p>15</p>
+<p>5.1</p>
+<p>≤37</p>
+<p>18</p>
+<p>44</p>
+<p>14</p>
+<p>5</p>
+<p>1.0</p>
+<p><code>of</code></p>
+<p>45</p>
+<p>14</p>
+<p>38</p>
+<p>No</p>
+<p>No</p>
+<p>9.1</p>
+<p>No</p>
+<p>No</p>
+<p>38</p>
+<p>No</p>
+<p>9.3</p>
+<p>No</p>
+<p><code>reduce</code></p>
+<p>45</p>
+<p>14</p>
+<p>37</p>
+<p>No</p>
+<p>32</p>
+<p>10</p>
+<p>45</p>
+<p>45</p>
+<p>37</p>
+<p>No</p>
+<p>10</p>
+<p>5.0</p>
+<p><code>reduceRight</code></p>
+<p>45</p>
+<p>14</p>
+<p>37</p>
+<p>No</p>
+<p>32</p>
+<p>10</p>
+<p>45</p>
+<p>45</p>
+<p>37</p>
+<p>No</p>
+<p>10</p>
+<p>5.0</p>
+<p><code>reverse</code></p>
+<p>45</p>
+<p>14</p>
+<p>37</p>
+<p>No</p>
+<p>32</p>
+<p>10</p>
+<p>45</p>
+<p>45</p>
+<p>37</p>
+<p>No</p>
+<p>10</p>
+<p>5.0</p>
+<p><code>set</code></p>
+<p>7</p>
+<p>14</p>
+<p>4</p>
+<p>10</p>
+<p>11.6</p>
+<p>5.1</p>
+<p>4</p>
+<p>18</p>
+<p>4</p>
+<p>12</p>
+<p>4.2</p>
+<p>1.0</p>
+<p><code>slice</code></p>
+<p>45</p>
+<p>14</p>
+<p>38</p>
+<p>No</p>
+<p>32</p>
+<p>10</p>
+<p>45</p>
+<p>45</p>
+<p>38</p>
+<p>32</p>
+<p>10</p>
+<p>5.0</p>
+<p><code>some</code></p>
+<p>45</p>
+<p>14</p>
+<p>37</p>
+<p>No</p>
+<p>32</p>
+<p>10</p>
+<p>45</p>
+<p>45</p>
+<p>37</p>
+<p>No</p>
+<p>10</p>
+<p>5.0</p>
+<p><code>sort</code></p>
+<p>45</p>
+<p>14</p>
+<p>46</p>
+<p>No</p>
+<p>32</p>
+<p>10</p>
+<p>45</p>
+<p>45</p>
+<p>46</p>
+<p>32</p>
+<p>10</p>
+<p>5.0</p>
+<p><code>subarray</code></p>
+<p>7</p>
+<p>14</p>
+<p>4</p>
+<p>10</p>
+<p>11.6</p>
+<p>5.1</p>
+<p>4</p>
+<p>18</p>
+<p>4</p>
+<p>12</p>
+<p>4.2</p>
+<p>1.0</p>
+<p><code>toLocaleString</code></p>
+<p>7</p>
+<p>12</p>
+<p>51</p>
+<p>10</p>
+<p>11.6</p>
+<p>5.1</p>
+<p>≤37</p>
+<p>18</p>
+<p>51</p>
+<p>12</p>
+<p>5</p>
+<p>1.0</p>
+<p><code>toString</code></p>
+<p>7</p>
+<p>12</p>
+<p>51</p>
+<p>10</p>
+<p>11.6</p>
+<p>5.1</p>
+<p>≤37</p>
+<p>18</p>
+<p>51</p>
+<p>12</p>
+<p>5</p>
+<p>1.0</p>
+<p><code>values</code></p>
+<p>38</p>
+<p>14</p>
+<p>37</p>
+<p>No</p>
+<p>25</p>
+<p>10</p>
+<p>38</p>
+<p>38</p>
+<p>37</p>
+<p>25</p>
+<p>10</p>
+<p>3.0</p>
+<p><code>@@iterator</code></p>
+<p>38</p>
+<p>12</p>
+<p>36</p>
+<p>27-36</p>
+<p>A placeholder property named <code>@@iterator</code> is used.</p>
+<p>17-27</p>
+<p>A placeholder property named <code>iterator</code> is used.</p>
+<p>No</p>
+<p>25</p>
+<p>10</p>
+<p>38</p>
+<p>38</p>
+<p>36</p>
+<p>27-36</p>
+<p>A placeholder property named <code>@@iterator</code> is used.</p>
+<p>17-27</p>
+<p>A placeholder property named <code>iterator</code> is used.</p>
+<p>25</p>
+<p>10</p>
+<p>3.0</p>
+<p><code>@@species</code></p>
+<p>51</p>
+<p>13</p>
+<p>48</p>
+<p>No</p>
+<p>38</p>
+<p>10</p>
+<p>51</p>
+<p>51</p>
+<p>48</p>
+<p>41</p>
+<p>10</p>
+<p>5.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays">JavaScript typed arrays</a></li>
+<li><a href="arraybuffer"><code>ArrayBuffer</code></a></li>
+<li><a href="dataview"><code>DataView</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/TextDecoder">TextDecoder</a> — Helper that decode strings from numerical data</li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray</a></p>
+</body>
+</html>

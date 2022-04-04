@@ -1,10 +1,12 @@
-# Boolean
+Boolean
+=======
 
 The `Boolean` object is an object wrapper for a boolean value.
 
-## Description
+Description
+-----------
 
-The value passed as the first parameter is converted to a boolean value, if necessary. If the value is omitted or is `0`, `-0`, [`null`](null), `false`, [`NaN`](nan), [`undefined`](undefined), or the empty string (`""`), the object has an initial value of `false`. All other values, including any object, an empty array (`[]`), or the string "`false`", create an object with an initial value of `true`.
+The value passed as the first parameter is converted to a boolean value, if necessary. If the value is omitted or is `0`, `-0`, [`null`](null), `false`, [`NaN`](nan), [`undefined`](undefined), or the empty string (`""`), the object has an initial value of `false`. All other values, including any object, an empty array (`[]`), or the string “`false`”, create an object with an initial value of `true`.
 
 Do not confuse the [primitive](https://developer.mozilla.org/en-US/docs/Glossary/Primitive) `Boolean` values `true` and `false` with the `true` and `false` values of the `Boolean` object.
 
@@ -39,12 +41,14 @@ Do not use a `Boolean` object in place of a `Boolean` primitive.
 
 **Note:** When the non-standard property `document.all` is used as an argument for this constructor, the result is a `Boolean` object with the value `false`. This property is legacy and non-standard and should not be used.
 
-## Constructor
+Constructor
+-----------
 
 [`Boolean()`](boolean/boolean)  
 Creates a new `Boolean` object.
 
-## Instance methods
+Instance methods
+----------------
 
 [`Boolean.prototype.toString()`](boolean/tostring)  
 Returns a string of either `true` or `false` depending upon the value of the object. Overrides the [`Object.prototype.toString()`](object/tostring) method.
@@ -52,7 +56,8 @@ Returns a string of either `true` or `false` depending upon the value of the obj
 [`Boolean.prototype.valueOf()`](boolean/valueof)  
 Returns the primitive value of the [`Boolean`](boolean) object. Overrides the [`Object.prototype.valueOf()`](object/valueof) method.
 
-## Examples
+Examples
+--------
 
 ### Creating `Boolean` objects with an initial value of `false`
 
@@ -71,12 +76,11 @@ Returns the primitive value of the [`Boolean`](boolean) object. Overrides the [`
     var bArrayProto = new Boolean([]);
     var bObjProto = new Boolean({});
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-boolean-objects">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-boolean-objects</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-boolean-objects</span></td></tr></tbody></table>
 
 `Boolean`
 
@@ -210,7 +214,8 @@ No
 
 1.0
 
-## See also
+See also
+--------
 
 -   [Boolean](https://developer.mozilla.org/en-US/docs/Glossary/Boolean)
 -   [Boolean primitives](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#boolean_type)

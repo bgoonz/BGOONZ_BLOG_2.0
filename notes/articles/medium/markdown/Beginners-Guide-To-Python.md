@@ -1,8 +1,9 @@
-# Beginners Guide To Python
+Beginners Guide To Python
+=========================
 
 My favorite language for maintainability is Python. It has simple, clean syntax, object encapsulation, good library support, and optional…
 
----
+------------------------------------------------------------------------
 
 ### Beginners Guide To Python
 
@@ -12,44 +13,35 @@ My favorite language for maintainability is Python. It has simple, clean syntax,
 
 #### Article on basic web development setup… it is geared towards web but VSCode is an incredibly versatile editor and this stack really could suit just about anyone working in the field of computer science.
 
-<strong>A list of all of my articles to link to future posts</strong>
-<br/>
+**A list of all of my articles to link to future posts**  
 
-<em>You should probably skip this one… seriously it's just for internal use!</em><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*You should probably skip this one… seriously it’s just for internal use!*<a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://golden-lobe-519.notion.site/PYTHON-cb857bd3fa4b4940928842a94dce856d" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://golden-lobe-519.notion.site/PYTHON-cb857bd3fa4b4940928842a94dce856d"><strong>PYTHON</strong>
-<br/>
+**PYTHON**  
 
-<em>Keywords: \*\*\*and del for is raise assert elif from lambda return break else global not try class except if or while…</em>golden-lobe-519.notion.site</a><a href="https://golden-lobe-519.notion.site/PYTHON-cb857bd3fa4b4940928842a94dce856d" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Keywords: \*\*\*and del for is raise assert elif from lambda return break else global not try class except if or while…*golden-lobe-519.notion.site<a href="https://golden-lobe-519.notion.site/PYTHON-cb857bd3fa4b4940928842a94dce856d" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<figure><img src="https://cdn-images-1.medium.com/max/1200/1*per3wJrNyChrgJtUBySo1Q.png" class="graf-image" /></figure>
+<figure><img src="https://cdn-images-1.medium.com/max/1200/1*per3wJrNyChrgJtUBySo1Q.png" class="graf-image" /></figure>**Basic Web Development Environment Setup**  
 
-<a href="https://levelup.gitconnected.com/basic-web-development-environment-setup-9f36c3f15afe" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://levelup.gitconnected.com/basic-web-development-environment-setup-9f36c3f15afe"><strong>Basic Web Development Environment Setup</strong>
-<br/>
-
-<em>Windows Subsystem for Linux (WSL) and Ubuntu</em>levelup.gitconnected.com</a><a href="https://levelup.gitconnected.com/basic-web-development-environment-setup-9f36c3f15afe" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Windows Subsystem for Linux (WSL) and Ubuntu*levelup.gitconnected.com<a href="https://levelup.gitconnected.com/basic-web-development-environment-setup-9f36c3f15afe" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ### Related Articles:
 
-<a href="https://levelup.gitconnected.com/beginner-python-problems-solutions-dd631e9c3a9f" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://levelup.gitconnected.com/beginner-python-problems-solutions-dd631e9c3a9f"><strong>Python Problems &amp; Solutions For Beginners</strong>
-<br/>
+**Python Problems & Solutions For Beginners**  
 
-<em>Introduction to python taught through example problems. Solutions are included in embedded repl.it at the bottom of…</em>levelup.gitconnected.com</a><a href="https://levelup.gitconnected.com/beginner-python-problems-solutions-dd631e9c3a9f" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Introduction to python taught through example problems. Solutions are included in embedded repl.it at the bottom of…*levelup.gitconnected.com<a href="https://levelup.gitconnected.com/beginner-python-problems-solutions-dd631e9c3a9f" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://medium.com/webdevhub/notes-i-wish-i-had-when-i-started-learning-python-16ce4244be12" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/webdevhub/notes-i-wish-i-had-when-i-started-learning-python-16ce4244be12"><strong>Notes I Wish I Had When I Started Learning Python</strong>
-<br/>
+**Notes I Wish I Had When I Started Learning Python**  
 
-<em>Plus resources for learning data structures and algorithms in python at the bottom of this article!</em>medium.com</a><a href="https://medium.com/webdevhub/notes-i-wish-i-had-when-i-started-learning-python-16ce4244be12" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Plus resources for learning data structures and algorithms in python at the bottom of this article!*medium.com<a href="https://medium.com/webdevhub/notes-i-wish-i-had-when-i-started-learning-python-16ce4244be12" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://bryanguner.medium.com/getting-comfortable-with-python-1371581a4971" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/getting-comfortable-with-python-1371581a4971"><strong>Getting Comfortable With Python:</strong>
-<br/>
+**Getting Comfortable With Python:**  
 
-<em>An introduction by example</em><a href="https://bryanguner.medium.com/getting-comfortable-with-python-1371581a4971" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*An introduction by example*<a href="https://bryanguner.medium.com/getting-comfortable-with-python-1371581a4971" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb"><strong>Python Study Guide for a JavaScript Programmer</strong>
-<br/>
+**Python Study Guide for a JavaScript Programmer**  
 
-<em>A guide to commands in Python from what you know in JavaScript</em>levelup.gitconnected.com</a><a href="https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*A guide to commands in Python from what you know in JavaScript*levelup.gitconnected.com<a href="https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ### The Repository & Live Site Behind This Article:
 
@@ -73,7 +65,7 @@ To determine if your Windows computer already has Python 3:
 
 `python --version`
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*59V2ZNbyJfsdGR2N20PM7w.png" class="graf-image" /></figure>1.  <span id="e87f">Running `python --version` may not return a value, or may return an error message stating *'python' is not recognized as an internal or external command, operable program or batch file.* This indicates Python is not installed on your Windows system.</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*59V2ZNbyJfsdGR2N20PM7w.png" class="graf-image" /></figure>1.  <span id="e87f">Running `python --version` may not return a value, or may return an error message stating *‘python’ is not recognized as an internal or external command, operable program or batch file.* This indicates Python is not installed on your Windows system.</span>
 2.  <span id="7c04">If you see the word `Python` with a set of numbers separated by `.` characters, some version of Python is installed.</span>
 
 #### i.e.
@@ -86,7 +78,7 @@ To determine if your Windows computer already has Python 3:
 
 > Download Link: <a href="https://www.python.org/ftp/python/3.9.5/python-3.9.5-amd64.exe" class="markup--anchor markup--blockquote-anchor">https://www.python.org/ftp/python/3.9.5/python-3.9.5-amd64.exe</a>
 
----
+------------------------------------------------------------------------
 
 ### Python
 
@@ -98,7 +90,7 @@ To determine if your Windows computer already has Python 3:
 -   <span id="6434">We can run a python file by the following command in cmd(Windows) or shell(mac/linux).</span>
 -   <span id="b76b">`python <filename.py>`</span>
 
-#### By default, the python doesn't require any imports to run a python file.
+#### By default, the python doesn’t require any imports to run a python file.
 
 ### Create and execute a program
 
@@ -318,8 +310,8 @@ Python has two primitive loop commands:
 -   <span id="f32d">The range() function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and ends at a specified number.</span>
 -   <span id="b8d4">The range() function defaults to increment the sequence by 1, however it is possible to specify the increment value by adding a third parameter: range(2, 30, 3).</span>
 -   <span id="cca5">The else keyword in a for loop specifies a block of code to be executed when the loop is finished.  
-     A nested loop is a loop inside a loop.</span>
--   <span id="acbb">The "inner loop" will be executed one time for each iteration of the "outer loop":</span>
+    A nested loop is a loop inside a loop.</span>
+-   <span id="acbb">The “inner loop” will be executed one time for each iteration of the “outer loop”:</span>
 
 <!-- -->
 
@@ -350,7 +342,7 @@ Python has two primitive loop commands:
 -   <span id="89e4">Functions by default return `None`</span>
 -   <span id="7041">We can return any datatype.</span>
 
----
+------------------------------------------------------------------------
 
 ### Python Syntax
 
@@ -358,11 +350,11 @@ Python syntax was made for readability, and easy editing. For example, the pytho
 
 ### First Program
 
-Lets create a <a href="https://repl.it/languages/python3" class="markup--anchor markup--p-anchor">python 3</a> repl, and call it _Hello World_. Now you have a blank file called _main.py_. Now let us write our first line of code:
+Lets create a <a href="https://repl.it/languages/python3" class="markup--anchor markup--p-anchor">python 3</a> repl, and call it *Hello World*. Now you have a blank file called *main.py*. Now let us write our first line of code:
 
     print('Hello world!')
 
-> _Brian Kernighan actually wrote the first "Hello, World!" program as part of the documentation for the BCPL programming language developed by Martin Richards._
+> *Brian Kernighan actually wrote the first “Hello, World!” program as part of the documentation for the BCPL programming language developed by Martin Richards.*
 
 Now, press the run button, which obviously runs the code. If you are not using replit, this will not work. You should research how to run a file with your text editor.
 
@@ -393,9 +385,9 @@ If you have a huge comment, do **not** comment all the 350 lines, just put `'''`
 
 Unlike many other languages, there is no `var`, `let`, or `const` to declare a variable in python. You simply go `name = 'value'`.
 
-Remember, there is a difference between integers and strings. _Remember: String =_ `""`_._ To convert between these two, you can put an int in a `str()` function, and a string in a `int()` function. There is also a less used one, called a float. Mainly, these are integers with decimals. Change them using the `float()` command.
+Remember, there is a difference between integers and strings. *Remember: String =* `""`*.* To convert between these two, you can put an int in a `str()` function, and a string in a `int()` function. There is also a less used one, called a float. Mainly, these are integers with decimals. Change them using the `float()` command.
 
-<a href="https://repl.it/@bgoonz/second-scr?lite=true&amp;amp;referrer=https%3A%2F%2Fbryanguner.medium.com" class="markup--anchor markup--p-anchor">https://repl.it/@bgoonz/second-scr?lite=true&amp;amp;referrer=https%3A%2F%2F
+https://repl.it/<span class="citation" data-cites="bgoonz/second-scr?lite">@bgoonz/second-scr?lite</span>=true&amp;referrer=https%3A%2F%2F
 
     x = 5
     x = str(x)
@@ -413,8 +405,8 @@ There are many operators in python:
 -   <span id="a1b3">`-`</span>
 -   <span id="f09c">`/`</span>
 -   <span id="cd1e">`*`  
-     These operators are the same in most languages, and allow for addition, subtraction, division, and multiplicaiton.  
-     Now, we can look at a few more complicated ones:</span>
+    These operators are the same in most languages, and allow for addition, subtraction, division, and multiplicaiton.  
+    Now, we can look at a few more complicated ones:</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*oVIDxWdgJXoIt7CI.jpg" class="graf-image" /></figure>*simpleops.py*
 
@@ -426,7 +418,7 @@ There are many operators in python:
 
 You should already know everything shown above, as it is similar to other languages. If you continue down, you will see more complicated ones.
 
-_complexop.py_
+*complexop.py*
 
     a += 1
     a -= 1
@@ -445,13 +437,13 @@ If you really want to know about the others, view <a href="https://www.tutorials
 Like the title?  
 Anyways, a `'` and a `"` both indicate a string, but **do not combine them!**
 
-_quotes.py_
+*quotes.py*
 
     x = 'hello' # Good
     x = "hello" # Good
     x = "hello' # ERRORRR!!!
 
-_slicing.py_
+*slicing.py*
 
 ### String Slicing
 
@@ -477,16 +469,15 @@ Here is a list of functions/methods we will go over:
 -   <span id="a06d">`.replace()`</span>
 -   <span id="57b6">`.split()`</span>
 
-<a href="https://trinket.io/python3/2b693977e7" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://trinket.io/python3/2b693977e7"><strong>Put Python Anywhere on the Web</strong>
-<br/>
+**Put Python Anywhere on the Web**  
 
-<em>Python in the browser. No installation required.</em>trinket.io</a><a href="https://trinket.io/python3/2b693977e7" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
+*Python in the browser. No installation required.*trinket.io<a href="https://trinket.io/python3/2b693977e7" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
 ### New: Input()
 
 Input is a function that gathers input entered from the user in the command line. It takes one optional parameter, which is the users prompt.
 
-_inp.py_
+*inp.py*
 
     print('Type something: ')
     x = input()
@@ -494,18 +485,18 @@ _inp.py_
 
 If you wanted to make it smaller, and look neater to the user, you could do…
 
-_inp2.py_
+*inp2.py*
 
     print('Here is what you said: ', input('Type something: '))
 
 Running:  
-_inp.py_
+*inp.py*
 
     Type something:
     Hello World
     Here is what you said: Hello World
 
-_inp2.py_
+*inp2.py*
 
     Type something: Hello World
     Here is what you said: Hello World
@@ -514,20 +505,20 @@ _inp2.py_
 
 Python has created a lot of functions that are located in other .py files. You need to import these **modules** to gain access to the,, You may wonder why python did this. The purpose of separate modules is to make python faster. Instead of storing millions and millions of functions, , it only needs a few basic ones. To import a module, you must write `input <modulename>`. Do not add the .py extension to the file name. In this example , we will be using a python created module named random.
 
-_module.py_
+*module.py*
 
     import random
 
 Now, I have access to all functions in the random.py file. To access a specific function in the module, you would do `<module>.<function>`. For example:
 
-_module2.py_
+*module2.py*
 
     import random
     print(random.randint(3,5)) # Prints a random number between 3 and 5
 
-> _Pro Tip:  
-> Do_ `from random import randint` _to not have to do_ `random.randint()`_, just_ `randint()`_  
-> To import all functions from a module, you could do_ `from random import *`
+> *Pro Tip:  
+> Do* `from random import randint` *to not have to do* `random.randint()`*, just* `randint()`\_  
+> To import all functions from a module, you could do\_ `from random import *`
 
 ### New: Loops!
 
@@ -536,9 +527,9 @@ Loops allow you to repeat code over and over again. This is useful if you want t
 #### `for` Loop
 
 The for loop goes through a list of variables, making a seperate variable equal one of the list every time.  
-Let's say we wanted to create the example above.
+Let’s say we wanted to create the example above.
 
-_loop.py_
+*loop.py*
 
     from time import sleep
     for i in range(100):
@@ -547,7 +538,7 @@ _loop.py_
 
 This will print Hello with a .3 second delay 100 times. This is just one way to use it, but it is usually used like this:
 
-_loop2.py_
+*loop2.py*
 
     import time
     for number in range(100):
@@ -560,14 +551,14 @@ _loop2.py_
 
 The while loop runs the code while something stays true. You would put `while <expression>`. Every time the loop runs, it evaluates if the expression is True. It it is, it runs the code, if not it continues outside of the loop. For example:
 
-_while.py_
+*while.py*
 
     while True: # Runs forever
          print('Hello World!')
 
 Or you could do:
 
-_while2.py_
+*while2.py*
 
     import random
     position = '<placeholder>'
@@ -579,7 +570,7 @@ _while2.py_
 
 The if statement allows you to check if something is True. If so, it runs the code, if not, it continues on. It is kind of like a while loop, but it executes **only once**. An if statement is written:
 
-_if.py_
+*if.py*
 
     import random
     num = random.randint(1, 10)
@@ -592,7 +583,7 @@ _if.py_
 
 Now, you may think that it would be better if you could make it print only one message. Not as many that are True. You can do that with an `elif` statement:
 
-_elif.py_
+*elif.py*
 
     import random
     num = random.randint(1, 10)
@@ -603,7 +594,7 @@ _elif.py_
 
 Now, you may wonder how to run code if none work. Well, there is a simple statement called `else:`
 
-_else.py_
+*else.py*
 
     import random
     num = random.randint(1, 10)
@@ -621,7 +612,7 @@ It is quite tiring to type:
 
 Characters: 389
 
-_nofunc.py_
+*nofunc.py*
 
     import random
     print(random.randint(1, 9))
@@ -641,7 +632,7 @@ Now with functions, you can seriously lower the amount of characters:
 
 Characters: 254
 
-_functions.py_
+*functions.py*
 
     import random
     def r(t):
@@ -654,18 +645,18 @@ _functions.py_
     r('Hi')
     r('j')
 
----
+------------------------------------------------------------------------
 
 ### Project Based Learning:
 
 The following is a modified version of a tutorial posted By: <a href="https://replit.com/@InvisibleOne" class="markup--anchor markup--p-anchor">InvisibleOne</a>
 
-I would cite the original tutorial it's self but at the time of this writing I can no longer find it on his repl.it profile and so the only reference I have are my own notes from following the tutorial when I first found it.
+I would cite the original tutorial it’s self but at the time of this writing I can no longer find it on his repl.it profile and so the only reference I have are my own notes from following the tutorial when I first found it.
 
 ### 1. Adventure Story
 
 The first thing you need with an adventure story is a great storyline, something that is exciting and fun. The idea is, that at each pivotal point in the story, you give the player the opportunity to make a choice.  
-First things first, let's import the stuff that we need, like this:
+First things first, let’s import the stuff that we need, like this:
 
     import os   #very useful for clearing the screen
     import random
@@ -675,16 +666,16 @@ Now, we need some variables to hold some of the player data.
     name = input("Name Please:  ") #We'll use this to get the name from the user
     nickname = input("Nickname: ")
 
-Ok, now we have the player's name and nickname, let's welcome them to the game
+Ok, now we have the player’s name and nickname, let’s welcome them to the game
 
     print("Hello and welcome " + name)
 
-Now for the story. The most important part of all stories is the introduction, so let's print our introduction
+Now for the story. The most important part of all stories is the introduction, so let’s print our introduction
 
     print("Long ago, there was a magical meal known as Summuh and Spich Atip") #We can drop a line by making a new print statement, or we can use the escape code \n
     print("It was said that this meal had the power to save lives, restore peace, and stop evil\nBecuase it was so powerful, it was hidden away on a mountain that could not be climbed\nBut it's power brought unwanted attention, and a great war broke out.\nFinally, the leaders of the good side chose a single hero to go and find the Summah and Spich Atip, that hero was " + name + "\n so " + nickname + ' headed out to find this great power, and stop the war…')
 
-Now, we'll give the player their first choice
+Now, we’ll give the player their first choice
 
     print("After hiking through the wastelands for a long time, you come to a massive ravine, there is only a single way across\nA rickety old bridge, taking that could be very dangerous, but… maybe you could jump across?")
     choice1 = input("[1]  Take the bridge     [2] Try and jump over")
@@ -720,7 +711,7 @@ There you have it, a pretty simple choose your own ending story. You can make it
 
 ### 2. TEXT ENCODER
 
-Ever make secret messages as a kid? I used to. Anyways, here's the way you can make a program to encode messages! It's pretty simple. First things first, let's get the message the user wants to encode, we'll use input() for that:
+Ever make secret messages as a kid? I used to. Anyways, here’s the way you can make a program to encode messages! It’s pretty simple. First things first, let’s get the message the user wants to encode, we’ll use input() for that:
 
     message = input("Message you would like encoded: ")
 
@@ -743,7 +734,7 @@ Now we need to convert the characters into code, well do this with a for loop:
         out.append('2')
     #And we'll continue on though this with each letter of the alphabet
 
-Once we've encoded the text, we'll print it back for the user
+Once we’ve encoded the text, we’ll print it back for the user
 
     x = ' '.join(out)
     #this will turn out into a string that we can print
@@ -757,7 +748,7 @@ Number guessing games are fun and pretty simple, all you need are a few loops. T
 
     import random
 
-That is pretty simple. Now we'll make a list with the numbers were want available for the game
+That is pretty simple. Now we’ll make a list with the numbers were want available for the game
 
     num_list = [1,2,3,4,5,6,7,8,9,10]
 
@@ -765,7 +756,7 @@ Next, we get a random number from the list
 
     num = random.choice(num_list)
 
-Now, we need to ask the user for input, we'll to this with a while loop
+Now, we need to ask the user for input, we’ll to this with a while loop
 
     while True:
       # We could use guess = input("What do you think my number is?   "), but that would produce a string, and numbers are integers, so we'll convert the input into an integer
@@ -782,19 +773,19 @@ Have fun with this!
 
 ### 4. Notes
 
-Here is a more advanced project, but still pretty easy. This will be using a txt file to save some notes. The first thing we need to do is to create a txt file in your repl, name it 'notes.txt'  
-Now, to open a file in python we use open('filename', type) The type can be 'r' for read, or 'w' for write. There is another option, but we won't be using that here. Now, the first thing we are going to do is get what the user would like to save:
+Here is a more advanced project, but still pretty easy. This will be using a txt file to save some notes. The first thing we need to do is to create a txt file in your repl, name it ‘notes.txt’  
+Now, to open a file in python we use open(‘filename’, type) The type can be ‘r’ for read, or ‘w’ for write. There is another option, but we won’t be using that here. Now, the first thing we are going to do is get what the user would like to save:
 
     message = input("What would you like to save?")
 
-Now we'll open our file and save that text
+Now we’ll open our file and save that text
 
     o = open('notes.txt', 'w')
     o.write(message)
     #this next part is very important, you need to always remember to close your file or what you wrote to it won't be saved
     o.close()
 
-There we go, now the information is in the file. Next, we'll retrieve it
+There we go, now the information is in the file. Next, we’ll retrieve it
 
     read = open('notes.txt', 'r')
     out = read.read()
@@ -803,11 +794,11 @@ There we go, now the information is in the file. Next, we'll retrieve it
     # and now print what we read
     print(out)
 
-There we go, that's how you can open files and close files with python
+There we go, that’s how you can open files and close files with python
 
 ### 5. Random Dare Generator
 
-Who doesn't love a good dare? Here is a program that can generate random dares. The first thing we'll need to do is as always, import random. Then we'll make some lists of dares
+Who doesn’t love a good dare? Here is a program that can generate random dares. The first thing we’ll need to do is as always, import random. Then we’ll make some lists of dares
 
     import random
     list1 = ['jump on', 'sit on', 'rick roll on', 'stop on', 'swing on']
@@ -820,10 +811,9 @@ Who doesn't love a good dare? Here is a program that can generate random dares. 
 
 ### Discover More:
 
-<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong>
-<br/>
+**Web-Dev-Hub**  
 
-<em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…*bgoonz-blog.netlify.app<a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [June 4, 2021](https://medium.com/p/e5a59b5bb64d).
 

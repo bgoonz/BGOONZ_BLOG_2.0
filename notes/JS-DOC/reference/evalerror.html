@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>evalerror</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="evalerror">EvalError</h1>
+<p>The <code>EvalError</code> object indicates an error regarding the global <a href="eval"><code>eval()</code></a> function. This exception is not thrown by JavaScript anymore, however the <code>EvalError</code> object remains for compatibility.</p>
+<h2 id="constructor">Constructor</h2>
+<p><a href="evalerror/evalerror"><code>EvalError()</code></a><br />
+Creates a new <code>EvalError</code> object.</p>
+<h2 id="instance-properties">Instance properties</h2>
+<p><a href="error/message"><code>EvalError.prototype.message</code></a><br />
+Error message. Although ECMA-262 specifies that <a href="evalerror"><code>EvalError</code></a> should provide its own <code>message</code> property, in <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey">SpiderMonkey</a>, it inherits <a href="error/message"><code>Error.prototype.message</code></a>.</p>
+<p><a href="error/name"><code>EvalError.prototype.name</code></a><br />
+Error name. Inherited from <a href="error"><code>Error</code></a>.</p>
+<p><a href="error/filename"><code>EvalError.prototype.fileName</code></a><br />
+Path to file that raised this error. Inherited from <a href="error"><code>Error</code></a>.</p>
+<p><a href="error/linenumber"><code>EvalError.prototype.lineNumber</code></a><br />
+Line number in file that raised this error. Inherited from <a href="error"><code>Error</code></a>.</p>
+<p><a href="error/columnnumber"><code>EvalError.prototype.columnNumber</code></a><br />
+Column number in line that raised this error. Inherited from <a href="error"><code>Error</code></a>.</p>
+<p><a href="error/stack"><code>EvalError.prototype.stack</code></a><br />
+Stack trace. Inherited from <a href="error"><code>Error</code></a>.</p>
+<h2 id="examples">Examples</h2>
+<p><code>EvalError</code> is not used in the current ECMAScript specification and will thus not be thrown by the runtime. However, the object itself remains for backwards compatibility with earlier versions of the specification.</p>
+<h3 id="creating-an-evalerror">Creating an EvalError</h3>
+<pre><code>try {
+  throw new EvalError(&#39;Hello&#39;, &#39;someFile.js&#39;, 10);
+} catch (e) {
+  console.log(e instanceof EvalError); // true
+  console.log(e.message);              // &quot;Hello&quot;
+  console.log(e.name);                 // &quot;EvalError&quot;
+  console.log(e.fileName);             // &quot;someFile.js&quot;
+  console.log(e.lineNumber);           // 10
+  console.log(e.columnNumber);         // 0
+  console.log(e.stack);                // &quot;@Scratchpad/2:2:9\n&quot;
+}</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard-evalerror">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-native-error-types-used-in-this-standard-evalerror</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>EvalError</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>5.5</p>
+<p>5</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>EvalError</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>5.5</p>
+<p>5</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="error"><code>Error</code></a></li>
+<li><a href="eval"><code>eval()</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError</a></p>
+</body>
+</html>

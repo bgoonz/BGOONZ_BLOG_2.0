@@ -1,13 +1,16 @@
-# WebAssembly.Module
+WebAssembly.Module
+==================
 
 A `WebAssembly.Module` object contains stateless WebAssembly code that has already been compiled by the browser — this can be efficiently [shared with Workers](https://developer.mozilla.org/en-US/docs/Web/API/Worker/postMessage), and instantiated multiple times.
 
-## Constructor
+Constructor
+-----------
 
 [`WebAssembly.Module()`](module/module)  
 Creates a new `Module` object.
 
-## Static properties
+Static properties
+-----------------
 
 [`WebAssembly.Module.customSections()`](module/customsections)  
 Given a `Module` and string, returns a copy of the contents of all custom sections in the module with the given string name.
@@ -18,7 +21,8 @@ Given a `Module`, returns an array containing descriptions of all the declared e
 [`WebAssembly.Module.imports()`](module/imports)  
 Given a `Module`, returns an array containing descriptions of all the declared imports.
 
-## Examples
+Examples
+--------
 
 ### Sending a compiled module to a worker
 
@@ -50,12 +54,11 @@ In the worker (see `wasm_worker.js`) we define an import object for the module t
       });
     };
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#modules">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
-<br/>
-
-<span class="small">#modules</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>WebAssembly JavaScript Interface (WebAssembly JavaScript Interface)<br />
+</p><span class="small">#modules</span></td></tr></tbody></table>
 
 `Module`
 
@@ -207,12 +210,12 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 
 7.0
 
-## See also
+See also
+--------
 
 -   [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
 -   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Module" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Module</a>

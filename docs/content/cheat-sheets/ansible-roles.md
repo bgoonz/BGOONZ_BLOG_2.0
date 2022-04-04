@@ -1,25 +1,12 @@
----
-title: title
-subtitle: subtitle
-date: '2022-01-03'
-thumb_img_alt: lorem-ipsum
-content_img_alt: lorem-ipsum
-excerpt: lorem-ipsum
-seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
-template: post
-thumb_img_path: images/css-72a655a7.jpg
----
+subtitle
 
----
+2022-01-03
 
-title: Ansible roles
-category: Ansible
+------------------------------------------------------------------------
 
----
+title: Ansible roles category: Ansible
+
+------------------------------------------------------------------------
 
 ### Structure
 
@@ -36,4 +23,4 @@ category: Ansible
 
 ### References
 
--   http://www.ansibleworks.com/docs/playbooks_roles.html
+-   http://www.ansibleworks.com/docs/playbooks\_roles.html

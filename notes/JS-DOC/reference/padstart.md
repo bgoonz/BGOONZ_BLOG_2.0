@@ -1,8 +1,10 @@
-# String.prototype.padStart()
+String.prototype.padStart()
+===========================
 
 The `padStart()` method pads the current string with another string (multiple times, if needed) until the resulting string reaches the given length. The padding is applied from the start of the current string.
 
-## Syntax
+Syntax
+------
 
     padStart(targetLength)
     padStart(targetLength, padString)
@@ -19,7 +21,8 @@ The string to pad the current `str` with. If `padString` is too long to stay wit
 
 A [`String`](../string) of the specified `targetLength` with `padString` applied from the start.
 
-## Examples
+Examples
+--------
 
 ### Basic examples
 
@@ -41,14 +44,14 @@ A [`String`](../string) of the specified `targetLength` with `padString` applied
     console.log(leftFillNum(num, 5));
     // expected output: "00123"
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.padstart">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-string.prototype.padstart</span></td></tr></tbody></table>
 
-<span class="small">#sec-string.prototype.padstart</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -104,11 +107,11 @@ No
 
 7.0
 
-## See also
+See also
+--------
 
 -   [`String.prototype.padEnd()`](padend)
 -   [A polyfill](https://github.com/behnammodi/polyfill/blob/master/string.polyfill.js)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart</a>

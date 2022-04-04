@@ -1,8 +1,10 @@
-# Math.floor()
+Math.floor()
+============
 
 The `Math.floor()` function returns the largest integer less than or equal to a given number.
 
-## Syntax
+Syntax
+------
 
     Math.floor(x)
 
@@ -15,13 +17,15 @@ A number.
 
 A number representing the largest integer less than or equal to the specified number.
 
-## Description
+Description
+-----------
 
 Because `floor()` is a static method of `Math`, you always use it as `Math.floor()`, rather than as a method of a `Math` object you created (`Math` is not a constructor).
 
 **Note:** `Math.floor(null)` returns 0, not a [`NaN`](../nan).
 
-## Examples
+Examples
+--------
 
 ### Using Math.floor()
 
@@ -87,12 +91,11 @@ Because `floor()` is a static method of `Math`, you always use it as `Math.floor
     ceil10(-55.59, -1);   // -55.5
     ceil10(-59, 1);       // -50
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.floor">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-math.floor</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-math.floor</span></td></tr></tbody></table>
 
 `floor`
 
@@ -120,7 +123,8 @@ Because `floor()` is a static method of `Math`, you always use it as `Math.floor
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`Math.abs()`](abs)
 -   [`Math.ceil()`](ceil)
@@ -128,6 +132,5 @@ Because `floor()` is a static method of `Math`, you always use it as `Math.floor
 -   [`Math.sign()`](sign)
 -   [`Math.trunc()`](trunc)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor</a>

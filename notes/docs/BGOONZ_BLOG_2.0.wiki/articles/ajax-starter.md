@@ -1,17 +1,19 @@
-> ## Excerpt
+> Excerpt
+> -------
 >
-> Asynchronous JavaScript and XML, while not a technology in itself, is a term coined in 2005 by Jesse James Garrett, that describes a "new" approach to using a number of existing technologies together, including HTML or XHTML, CSS, JavaScript, DOM, XML, XSLT, and most importantly the XMLHttpRequest object.
-> When these technologies are combined in the Ajax model, web applications are able to make quick, incremental updates to the user interface without reloading the entire browser page. This makes the application faster and more responsive to user actions.
+> Asynchronous JavaScript and XML, while not a technology in itself, is a term coined in 2005 by Jesse James Garrett, that describes a “new” approach to using a number of existing technologies together, including HTML or XHTML, CSS, JavaScript, DOM, XML, XSLT, and most importantly the XMLHttpRequest object. When these technologies are combined in the Ajax model, web applications are able to make quick, incremental updates to the user interface without reloading the entire browser page. This makes the application faster and more responsive to user actions.
 
----
+------------------------------------------------------------------------
 
-## [Getting Started](https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX#getting_started 'Permalink to Getting Started')
+[Getting Started](https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX#getting_started "Permalink to Getting Started")
+-------------------------------------------------------------------------------------------------------------------------
 
-**Asynchronous JavaScript and XML**, while not a technology in itself, is a term coined in 2005 by Jesse James Garrett, that describes a "new" approach to using a number of existing technologies together, including [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) or [XHTML](https://developer.mozilla.org/en-US/docs/Glossary/XHTML), [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS), [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript), [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model), [XML](https://developer.mozilla.org/en-US/docs/Web/XML), [XSLT](https://developer.mozilla.org/en-US/docs/Web/XSLT), and most importantly the [`XMLHttpRequest`](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) object. When these technologies are combined in the Ajax model, web applications are able to make quick, incremental updates to the user interface without reloading the entire browser page. This makes the application faster and more responsive to user actions.
+**Asynchronous JavaScript and XML**, while not a technology in itself, is a term coined in 2005 by Jesse James Garrett, that describes a “new” approach to using a number of existing technologies together, including [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) or [XHTML](https://developer.mozilla.org/en-US/docs/Glossary/XHTML), [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS), [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript), [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model), [XML](https://developer.mozilla.org/en-US/docs/Web/XML), [XSLT](https://developer.mozilla.org/en-US/docs/Web/XSLT), and most importantly the [`XMLHttpRequest`](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) object. When these technologies are combined in the Ajax model, web applications are able to make quick, incremental updates to the user interface without reloading the entire browser page. This makes the application faster and more responsive to user actions.
 
 Although X in Ajax stands for XML, [JSON](https://developer.mozilla.org/en-US/docs/Glossary/JSON) is preferred over XML nowadays because of its many advantages such as being a part of JavaScript, thus being lighter in size. Both JSON and XML are used for packaging information in the Ajax model.
 
-## [Documentation](https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX#documentation 'Permalink to Documentation')
+[Documentation](https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX#documentation "Permalink to Documentation")
+-------------------------------------------------------------------------------------------------------------------
 
 [Getting Started](https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX/Getting_Started)
 
@@ -23,7 +25,7 @@ The [`XMLHttpRequest`](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpR
 
 -   [Analyzing and manipulating the response of the server](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest#handling_responses)
 -   [Monitoring the progress of a request](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest#monitoring_progress)
--   [Submitting forms and upload binary files](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest#submitting_forms_and_uploading_files) - in _pure_ Ajax, or using [`FormData`](https://developer.mozilla.org/en-US/docs/Web/API/FormData) objects
+-   [Submitting forms and upload binary files](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest#submitting_forms_and_uploading_files) - in *pure* Ajax, or using [`FormData`](https://developer.mozilla.org/en-US/docs/Web/API/FormData) objects
 -   Using Ajax within [Web workers](https://developer.mozilla.org/en-US/docs/Web/API/Worker)
 
 [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
@@ -32,11 +34,11 @@ The Fetch API provides an interface for fetching resources. It will seem familia
 
 [Server-sent events](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events)
 
-Traditionally, a web page has to send a request to the server to receive new data; that is, the page requests data from the server. With server-sent events, it's possible for a server to send new data to a web page at any time, by pushing messages to the web page. These incoming messages can be treated as _[Events](https://developer.mozilla.org/en-US/docs/Web/API/Event) + data_ inside the web page. See also: [Using server-sent events](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events).
+Traditionally, a web page has to send a request to the server to receive new data; that is, the page requests data from the server. With server-sent events, it’s possible for a server to send new data to a web page at any time, by pushing messages to the web page. These incoming messages can be treated as *[Events](https://developer.mozilla.org/en-US/docs/Web/API/Event) + data* inside the web page. See also: [Using server-sent events](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events).
 
-[_Pure-Ajax_ navigation example](https://developer.mozilla.org/en-US/docs/Web/API/History_API/Example)
+[*Pure-Ajax* navigation example](https://developer.mozilla.org/en-US/docs/Web/API/History_API/Example)
 
-This article provides a working (minimalist) example of a _pure-Ajax_ website composed only of three pages.
+This article provides a working (minimalist) example of a *pure-Ajax* website composed only of three pages.
 
 [Sending and Receiving Binary Data](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Sending_and_Receiving_Binary_Data)
 
@@ -56,10 +58,11 @@ XPath stands for **X**ML **Path** Language, it uses a non-XML syntax that provid
 
 [`FileReader`](https://developer.mozilla.org/en-US/docs/Web/API/FileReader) API
 
-The `FileReader` API lets web applications asynchronously read the contents of files (or raw data buffers) stored on the user's computer, using [`File`](https://developer.mozilla.org/en-US/docs/Web/API/File) or [`Blob`](https://developer.mozilla.org/en-US/docs/Web/API/Blob) objects to specify the file or data to read. File objects may be obtained from a [`FileList`](https://developer.mozilla.org/en-US/docs/Web/API/FileList) object returned as a result of a user selecting files using the [`<input>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) element, from a drag and drop operation's [`DataTransfer`](https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer) object, or from the `mozGetAsFile()` API on an [`HTMLCanvasElement`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement).
+The `FileReader` API lets web applications asynchronously read the contents of files (or raw data buffers) stored on the user’s computer, using [`File`](https://developer.mozilla.org/en-US/docs/Web/API/File) or [`Blob`](https://developer.mozilla.org/en-US/docs/Web/API/Blob) objects to specify the file or data to read. File objects may be obtained from a [`FileList`](https://developer.mozilla.org/en-US/docs/Web/API/FileList) object returned as a result of a user selecting files using the [`<input>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) element, from a drag and drop operation’s [`DataTransfer`](https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer) object, or from the `mozGetAsFile()` API on an [`HTMLCanvasElement`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement).
 
 [HTML in XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/HTML_in_XMLHttpRequest)
 
 The [XMLHttpRequest](https://xhr.spec.whatwg.org/) specification adds HTML parsing support to [`XMLHttpRequest`](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest), which originally supported only XML parsing. This feature allows Web apps to obtain an HTML resource as a parsed DOM using `XMLHttpRequest`.
 
-## [See also](https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX#see_also 'Permalink to See also')
+[See also](https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX#see_also "Permalink to See also")
+----------------------------------------------------------------------------------------------------

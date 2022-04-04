@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>tosource</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="object.prototype.tosource">Object.prototype.toSource()</h1>
+<p><strong>Deprecated</strong></p>
+<p>This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see the <a href="#browser_compatibility">compatibility table</a> at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time.</p>
+<p>The <code>toSource()</code> method returns a string representing the source code of the object.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>toSource()</code></pre>
+<h3 id="return-value">Return value</h3>
+<p>A string representing the source code of the object.</p>
+<h2 id="description">Description</h2>
+<p>The <code>toSource()</code> method returns the following values:</p>
+<ul>
+<li><p>For the built-in <a href="../object"><code>Object</code></a> object, <code>toSource()</code> returns the following string indicating that the source code is not available:</p>
+<pre><code>function Object() {
+    [native code]
+}</code></pre></li>
+<li><p>For instances of <a href="../object"><code>Object</code></a>, <code>toSource()</code> returns a string representing the source code.</p></li>
+</ul>
+<p>You can call <code>toSource()</code> while debugging to examine the contents of an object.</p>
+<h3 id="overriding-the-tosource-method">Overriding the toSource() method</h3>
+<p>It is safe for objects to override the <code>toSource()</code> method. For example:</p>
+<pre><code>function Person(name) {
+  this.name = name;
+}
+
+Person.prototype.toSource = function Person_toSource() {
+  return &#39;new Person(&#39; + uneval(this.name) + &#39;)&#39;;
+};
+
+console.log(new Person(&#39;Joe&#39;).toSource()); // ---&gt; new Person(&quot;Joe&quot;)</code></pre>
+<h3 id="built-in-tosource-methods">Built-in toSource() methods</h3>
+<p>Each core JavaScript type has its own <code>toSource()</code> method. These objects are:</p>
+<ul>
+<li><a href="../array/tosource"><code>Array.prototype.toSource()</code></a> — <a href="../array"><code>Array</code></a> object.</li>
+<li><a href="../boolean/tosource"><code>Boolean.prototype.toSource()</code></a> — <a href="../boolean"><code>Boolean</code></a> object.</li>
+<li><a href="../date/tosource"><code>Date.prototype.toSource()</code></a> — <a href="../date"><code>Date</code></a> object.</li>
+<li><a href="../function/tosource"><code>Function.prototype.toSource()</code></a> — <a href="../function"><code>Function</code></a> object.</li>
+<li><a href="../number/tosource"><code>Number.prototype.toSource()</code></a> — <a href="../number"><code>Number</code></a> object.</li>
+<li><a href="../regexp/tosource"><code>RegExp.prototype.toSource()</code></a> — <a href="../regexp"><code>RegExp</code></a> object.</li>
+<li><a href="../string/tosource"><code>String.prototype.toSource()</code></a> — <a href="../string"><code>String</code></a> object.</li>
+<li><a href="../symbol/tosource"><code>Symbol.prototype.toSource()</code></a> — <a href="../symbol"><code>Symbol</code></a> object.</li>
+<li><code>Math.toSource()</code> — Returns the String “Math”.</li>
+</ul>
+<h3 id="limitations-on-cyclical-objects">Limitations on cyclical objects</h3>
+<p>In the case of objects that contain references to themselves, e.g. a cyclically linked list or a tree that can be traversed both ways, <code>toSource()</code> will not recreate the self-reference, as of Firefox 24. For example:</p>
+<pre><code>var obj1 = {};
+var obj2 = { a: obj1 };
+obj1.b = obj2;
+
+console.log(&#39;Cyclical: &#39; + (obj1.b.a == obj1));
+
+var objSource = obj1.toSource(); // returns &quot;({b:{a:{}}})&quot;
+
+obj1 = eval(objSource);
+
+console.log(&#39;Cyclical: &#39; + (obj1.b.a == obj1));</code></pre>
+<p>If a cyclical structure is employed and <code>toSource()</code> is needed, the object must provide an override to <code>toSource()</code>, either using a reference to a constructor or providing an anonymous function.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-tosource">Using toSource()</h3>
+<p>The following code defines the <code>Dog</code> object type and creates <code>theDog</code>, an object of type <code>Dog</code>:</p>
+<pre><code>function Dog(name, breed, color, sex) {
+  this.name = name;
+  this.breed = breed;
+  this.color = color;
+  this.sex = sex;
+}
+
+theDog = new Dog(&#39;Gabby&#39;, &#39;Lab&#39;, &#39;chocolate&#39;, &#39;female&#39;);</code></pre>
+<p>Calling the <code>toSource()</code> method of <code>theDog</code> displays the JavaScript source that defines the object:</p>
+<pre><code>theDog.toSource();
+// returns ({name:&quot;Gabby&quot;, breed:&quot;Lab&quot;, color:&quot;chocolate&quot;, sex:&quot;female&quot;})</code></pre>
+<h2 id="specifications">Specifications</h2>
+<p>Not part of any standard.</p>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>toSource</code></p>
+<p>No</p>
+<p>No</p>
+<p>1-74</p>
+<p>Starting in Firefox 74, <code>toSource()</code> is no longer available for use by web content. It is still allowed for internal and privileged code.</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>4</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="tostring"><code>Object.prototype.toString()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toSource" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toSource</a></p>
+</body>
+</html>

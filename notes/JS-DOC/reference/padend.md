@@ -1,8 +1,10 @@
-# String.prototype.padEnd()
+String.prototype.padEnd()
+=========================
 
 The `padEnd()` method pads the current string with a given string (repeated, if needed) so that the resulting string reaches a given length. The padding is applied from the end of the current string.
 
-## Syntax
+Syntax
+------
 
     padEnd(targetLength)
     padEnd(targetLength, padString)
@@ -19,7 +21,8 @@ The string to pad the current `str` with. If `padString` is too long to stay wit
 
 A [`String`](../string) of the specified `targetLength` with the `padString` applied at the end of the current `str`.
 
-## Examples
+Examples
+--------
 
 ### Using padEnd
 
@@ -28,14 +31,14 @@ A [`String`](../string) of the specified `targetLength` with the `padString` app
     'abc'.padEnd(6, "123456"); // "abc123"
     'abc'.padEnd(1);           // "abc"
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.padend">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-string.prototype.padend</span></td></tr></tbody></table>
 
-<span class="small">#sec-string.prototype.padend</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -91,11 +94,11 @@ No
 
 7.0
 
-## See also
+See also
+--------
 
 -   [`String.prototype.padStart()`](padstart)
 -   [A polyfill](https://github.com/behnammodi/polyfill/blob/master/string.polyfill.js)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padEnd" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padEnd</a>

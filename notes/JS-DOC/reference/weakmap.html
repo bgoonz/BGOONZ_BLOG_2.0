@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>weakmap</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="weakmap">WeakMap</h1>
+<p>The <code>WeakMap</code> object is a collection of key/value pairs in which the keys are weakly referenced. The keys must be objects and the values can be arbitrary values.</p>
+<p>You can learn more about <code>WeakMap</code>s in the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Keyed_collections#weakmap_object">WeakMap object</a> guide (under <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Keyed_collections">Keyed collections</a>).</p>
+<h2 id="description">Description</h2>
+<p>Keys of WeakMaps are of the type <code>Object</code> only. <a href="https://developer.mozilla.org/en-US/docs/Glossary/Primitive">Primitive data types</a> as keys are not allowed (e.g. a <a href="symbol"><code>Symbol</code></a> can’t be a <code>WeakMap</code> key).</p>
+<h3 id="why-weakmap">Why <em>Weak</em>Map?</h3>
+<p>A map API <em>could</em> be implemented in JavaScript with two arrays (one for keys, one for values) shared by the four API methods. Setting elements on this map would involve pushing a key and value onto the end of each of those arrays simultaneously. As a result, the indices of the key and value would correspond to both arrays. Getting values from the map would involve iterating through all keys to find a match, then using the index of this match to retrieve the corresponding value from the array of values.</p>
+<p>Such an implementation would have two main inconveniences:</p>
+<ol type="1">
+<li>The first one is an <em>O(n)</em> set and search (n being the number of keys in the map) since both operations must iterate through the list of keys to find a matching value.</li>
+<li>The second inconvenience is a memory leak because the arrays ensure that references to each key and each value are maintained indefinitely. These references prevent the keys from being garbage collected, even if there are no other references to the object. This would also prevent the corresponding values from being garbage collected.</li>
+</ol>
+<p>By contrast, native <code>WeakMap</code>s hold “weak” references to key objects. As such native <code>WeakMap</code>s do not prevent garbage collection, which eventually removes references to the key object. “Weak” references also avoid preventing garbage collection of values in the map. <code>WeakMap</code>s can be particularly useful constructs when mapping keys to information about the key that is valuable <em>only if</em> the key has not been garbage collected.</p>
+<p><code>WeakMap</code> There is no method to obtain a list of the keys. If there was, the list would depend on the state of garbage collection, introducing non-determinism. If you want to have a list of keys, you should use a <a href="map"><code>Map</code></a>.</p>
+<h2 id="constructor">Constructor</h2>
+<p><a href="weakmap/weakmap"><code>WeakMap()</code></a><br />
+Creates a new <code>WeakMap</code> object.</p>
+<h2 id="instance-methods">Instance methods</h2>
+<p><a href="weakmap/delete"><code>WeakMap.prototype.delete(key)</code></a><br />
+Removes any value associated to the <code>key</code>. <code>WeakMap.prototype.has(key)</code> will return <code>false</code> afterwards.</p>
+<p><a href="weakmap/get"><code>WeakMap.prototype.get(key)</code></a><br />
+Returns the value associated to the <code>key</code>, or <code>undefined</code> if there is none.</p>
+<p><a href="weakmap/has"><code>WeakMap.prototype.has(key)</code></a><br />
+Returns a Boolean asserting whether a value has been associated to the <code>key</code> in the <code>WeakMap</code> object or not.</p>
+<p><a href="weakmap/set"><code>WeakMap.prototype.set(key, value)</code></a><br />
+Sets the <code>value</code> for the <code>key</code> in the <code>WeakMap</code> object. Returns the <code>WeakMap</code> object.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-weakmap">Using WeakMap</h3>
+<pre><code>const wm1 = new WeakMap(),
+      wm2 = new WeakMap(),
+      wm3 = new WeakMap();
+const o1 = {},
+      o2 = function() {},
+      o3 = window;
+
+wm1.set(o1, 37);
+wm1.set(o2, &#39;azerty&#39;);
+wm2.set(o1, o2); // a value can be anything, including an object or a function
+wm2.set(o3, undefined);
+wm2.set(wm1, wm2); // keys and values can be any objects. Even WeakMaps!
+
+wm1.get(o2); // &quot;azerty&quot;
+wm2.get(o2); // undefined, because there is no key for o2 on wm2
+wm2.get(o3); // undefined, because that is the set value
+
+wm1.has(o2); // true
+wm2.has(o2); // false
+wm2.has(o3); // true (even if the value itself is &#39;undefined&#39;)
+
+wm3.set(o1, 37);
+wm3.get(o1); // 37
+
+wm1.has(o1); // true
+wm1.delete(o1);
+wm1.has(o1); // false</code></pre>
+<h3 id="implementing-a-weakmap-like-class-with-a-.clear-method">Implementing a WeakMap-like class with a .clear() method</h3>
+<pre><code>class ClearableWeakMap {
+  constructor(init) {
+    this._wm = new WeakMap(init);
+  }
+  clear() {
+    this._wm = new WeakMap();
+  }
+  delete(k) {
+    return this._wm.delete(k);
+  }
+  get(k) {
+    return this._wm.get(k);
+  }
+  has(k) {
+    return this._wm.has(k);
+  }
+  set(k, v) {
+    this._wm.set(k, v);
+    return this;
+  }
+}</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-weakmap-objects">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-weakmap-objects</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>WeakMap</code></p>
+<p>36</p>
+<p>12</p>
+<p>6</p>
+<p>11</p>
+<p>23</p>
+<p>8</p>
+<p>37</p>
+<p>36</p>
+<p>6</p>
+<p>24</p>
+<p>8</p>
+<p>3.0</p>
+<p><code>WeakMap</code></p>
+<p>36</p>
+<p>12</p>
+<p>6</p>
+<p>11</p>
+<p>23</p>
+<p>8</p>
+<p>37</p>
+<p>36</p>
+<p>6</p>
+<p>24</p>
+<p>8</p>
+<p>3.0</p>
+<p><code>clear</code></p>
+<p>36-43</p>
+<p>No</p>
+<p>20-46</p>
+<p>11</p>
+<p>25-30</p>
+<p>8-9</p>
+<p>37-43</p>
+<p>36-43</p>
+<p>20-46</p>
+<p>25-30</p>
+<p>8-9</p>
+<p>3.0-4.0</p>
+<p><code>delete</code></p>
+<p>36</p>
+<p>12</p>
+<p>6</p>
+<p>Prior to Firefox 38, this method threw a <code>TypeError</code> when the key parameter was not an object. This has been fixed in version 38 and later to return <code>false</code> as per the ES2015 standard.</p>
+<p>11</p>
+<p>23</p>
+<p>8</p>
+<p>37</p>
+<p>36</p>
+<p>6</p>
+<p>Prior to Firefox 38, this method threw a <code>TypeError</code> when the key parameter was not an object. This has been fixed in version 38 and later to return <code>false</code> as per the ES2015 standard.</p>
+<p>24</p>
+<p>8</p>
+<p>3.0</p>
+<p><code>get</code></p>
+<p>36</p>
+<p>12</p>
+<p>6</p>
+<p>Prior to Firefox 38, this method threw a <code>TypeError</code> when the key parameter was not an object. However, the ES2015 specification specifies to return <code>undefined</code> instead. Furthermore, <code>WeakMap.prototype.get</code> accepted an optional second argument as a fallback value, which is not part of the standard. Both non-standard behaviors are removed in version 38 and higher.</p>
+<p>11</p>
+<p>23</p>
+<p>8</p>
+<p>37</p>
+<p>36</p>
+<p>6</p>
+<p>Prior to Firefox 38, this method threw a <code>TypeError</code> when the key parameter was not an object. However, the ES2015 specification specifies to return <code>undefined</code> instead. Furthermore, <code>WeakMap.prototype.get</code> accepted an optional second argument as a fallback value, which is not part of the standard. Both non-standard behaviors are removed in version 38 and higher.</p>
+<p>24</p>
+<p>8</p>
+<p>3.0</p>
+<p><code>has</code></p>
+<p>36</p>
+<p>12</p>
+<p>6</p>
+<p>Prior to Firefox 38, this method threw a <code>TypeError</code> when the key parameter was not an object. This has been fixed in version 38 and later to return <code>false</code> as per the ES2015 standard.</p>
+<p>11</p>
+<p>23</p>
+<p>8</p>
+<p>37</p>
+<p>36</p>
+<p>6</p>
+<p>Prior to Firefox 38, this method threw a <code>TypeError</code> when the key parameter was not an object. This has been fixed in version 38 and later to return <code>false</code> as per the ES2015 standard.</p>
+<p>24</p>
+<p>8</p>
+<p>3.0</p>
+<p><code>set</code></p>
+<p>36</p>
+<p>12</p>
+<p>6</p>
+<p>Prior to Firefox 38, this method threw a <code>TypeError</code> when the key parameter was not an object. This has been fixed in version 38 and later to return <code>false</code> as per the ES2015 standard.</p>
+<p>11</p>
+<p>Returns ‘undefined’ instead of the ‘Map’ object.</p>
+<p>23</p>
+<p>8</p>
+<p>37</p>
+<p>36</p>
+<p>6</p>
+<p>Prior to Firefox 38, this method threw a <code>TypeError</code> when the key parameter was not an object. This has been fixed in version 38 and later to return <code>false</code> as per the ES2015 standard.</p>
+<p>24</p>
+<p>8</p>
+<p>3.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Keyed_collections#weakmap_object"><code>WeakMap</code> in the JavaScript guide</a></li>
+<li><a href="https://fitzgeraldnick.com/weblog/53/">Hiding Implementation Details with ECMAScript 6 WeakMaps</a></li>
+<li><a href="map"><code>Map</code></a></li>
+<li><a href="set"><code>Set</code></a></li>
+<li><a href="weakset"><code>WeakSet</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap</a></p>
+</body>
+</html>

@@ -1,15 +1,19 @@
-# To sort a file:
+To sort a file:
+===============
 
-sort <file>
+sort
 
-# To sort a file by keeping only unique:
+To sort a file by keeping only unique:
+======================================
 
-sort -u <file>
+sort -u
 
-# To sort a file and reverse the result:
+To sort a file and reverse the result:
+======================================
 
-sort -r <file>
+sort -r
 
-# To sort a file randomly:
+To sort a file randomly:
+========================
 
-sort -R <file>
+sort -R

@@ -1,8 +1,10 @@
-# String.prototype.normalize()
+String.prototype.normalize()
+============================
 
 The `normalize()` method returns the Unicode Normalization Form of the string.
 
-## Syntax
+Syntax
+------
 
     normalize()
     normalize(form)
@@ -33,11 +35,12 @@ A string containing the Unicode Normalization Form of the given string.
 ### Errors thrown
 
 [`RangeError`](../rangeerror)  
-A [`RangeError`](../rangeerror) is thrown if `form` isn't one of the values specified above.
+A [`RangeError`](../rangeerror) is thrown if `form` isn’t one of the values specified above.
 
-## Description
+Description
+-----------
 
-Unicode assigns a unique numerical value, called a _code point_, to each character. For example, the code point for `"A"` is given as U+0041. However, sometimes more than one code point, or sequence of code points, can represent the same abstract character — the character `"ñ"` for example can be represented by either of:
+Unicode assigns a unique numerical value, called a *code point*, to each character. For example, the code point for `"A"` is given as U+0041. However, sometimes more than one code point, or sequence of code points, can represent the same abstract character — the character `"ñ"` for example can be represented by either of:
 
 -   The single code point U+00F1.
 -   The code point for `"n"` (U+006E) followed by the code point for the combining tilde (U+0303).
@@ -79,7 +82,7 @@ You can use `normalize()` using the `"NFD"` or `"NFC"` arguments to produce a fo
 
 #### Composed and decomposed forms
 
-Note that the length of the normalized form under `"NFD"` is `2`. That's because `"NFD"` gives you the **decomposed** version of the canonical form, in which single code points are split into multiple combining ones. The decomposed canonical form for `"ñ"` is `"\u006E\u0303"`.
+Note that the length of the normalized form under `"NFD"` is `2`. That’s because `"NFD"` gives you the **decomposed** version of the canonical form, in which single code points are split into multiple combining ones. The decomposed canonical form for `"ñ"` is `"\u006E\u0303"`.
 
 You can specify `"NFC"` to get the **composed** canonical form, in which multiple code points are replaced with single code points where possible. The composed canonical form for `"ñ"` is `"\u00F1"`:
 
@@ -127,11 +130,12 @@ You can use `normalize()` using the `"NFKD"` or `"NFKC"` arguments to produce a 
     console.log(string1.length);      // 2
     console.log(string2.length);      // 2
 
-When applying compatibility normalization it's important to consider what you intend to do with the strings, since the normalized form may not be appropriate for all applications. In the example above the normalization is appropriate for search, because it enables a user to find the string by searching for `"f"`. But it may not be appropriate for display, because the visual representation is different.
+When applying compatibility normalization it’s important to consider what you intend to do with the strings, since the normalized form may not be appropriate for all applications. In the example above the normalization is appropriate for search, because it enables a user to find the string by searching for `"f"`. But it may not be appropriate for display, because the visual representation is different.
 
 As with canonical normalization, you can ask for decomposed or composed compatible forms by passing `"NFKD"` or `"NFKC"`, respectively.
 
-## Examples
+Examples
+--------
 
 ### Using `normalize()`
 
@@ -167,14 +171,14 @@ As with canonical normalization, you can ask for decomposed or composed compatib
     // U+0307: COMBINING DOT ABOVE
     str.normalize('NFKD'); // '\u0073\u0323\u0307'
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.normalize">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-string.prototype.normalize</span></td></tr></tbody></table>
 
-<span class="small">#sec-string.prototype.normalize</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -230,11 +234,11 @@ No
 
 2.0
 
-## See also
+See also
+--------
 
 -   [Unicode Standard Annex \#15, Unicode Normalization Forms](https://www.unicode.org/reports/tr15/)
 -   [Unicode equivalence](https://en.wikipedia.org/wiki/Unicode_equivalence)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/normalize" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/normalize</a>

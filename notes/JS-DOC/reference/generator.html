@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>generator</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="generator">Generator</h1>
+<p>The <code>Generator</code> object is returned by a <a href="../statements/function*">generator function</a> and it conforms to both the <a href="../iteration_protocols#the_iterable_protocol">iterable protocol</a> and the <a href="../iteration_protocols#the_iterator_protocol">iterator protocol</a>.</p>
+<h2 id="constructor">Constructor</h2>
+<p>This object cannot be instantiated directly. Instead, a <code>Generator</code> instance can be returned from a <a href="../statements/function*">generator function</a>:</p>
+<pre><code>function* generator() {
+  yield 1;
+  yield 2;
+  yield 3;
+}
+
+const gen = generator(); // &quot;Generator { }&quot;
+
+console.log(gen.next().value); // 1
+console.log(generator().next().value); // 1
+console.log(generator().next().value); // 1</code></pre>
+<h2 id="instance-methods">Instance methods</h2>
+<p><a href="generator/next"><code>Generator.prototype.next()</code></a><br />
+Returns a value yielded by the <a href="../operators/yield"><code>yield</code></a> expression.</p>
+<p><a href="generator/return"><code>Generator.prototype.return()</code></a><br />
+Returns the given value and finishes the generator.</p>
+<p><a href="generator/throw"><code>Generator.prototype.throw()</code></a><br />
+Throws an error to a generator (also finishes the generator, unless caught from within that generator).</p>
+<h2 id="examples">Examples</h2>
+<h3 id="an-infinite-iterator">An infinite iterator</h3>
+<p>With a generator function, values are not evaluated until they are needed. Therefore a generator allows us to define a potentially infinite data structure.</p>
+<pre><code>function* infinite() {
+    let index = 0;
+
+    while (true) {
+        yield index++;
+    }
+}
+
+const generator = infinite(); // &quot;Generator { }&quot;
+
+console.log(generator.next().value); // 0
+console.log(generator.next().value); // 1
+console.log(generator.next().value); // 2
+// ...</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-generator-objects">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-generator-objects</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>Generator</code></p>
+<p>39</p>
+<p>13</p>
+<p>26</p>
+<p>No</p>
+<p>26</p>
+<p>10</p>
+<p>39</p>
+<p>39</p>
+<p>26</p>
+<p>26</p>
+<p>10</p>
+<p>4.0</p>
+<p><code>next</code></p>
+<p>39</p>
+<p>13</p>
+<p>26</p>
+<p>No</p>
+<p>26</p>
+<p>10</p>
+<p>39</p>
+<p>39</p>
+<p>26</p>
+<p>26</p>
+<p>10</p>
+<p>4.0</p>
+<p><code>return</code></p>
+<p>50</p>
+<p>13</p>
+<p>38</p>
+<p>No</p>
+<p>37</p>
+<p>10</p>
+<p>50</p>
+<p>50</p>
+<p>38</p>
+<p>37</p>
+<p>10</p>
+<p>5.0</p>
+<p><code>throw</code></p>
+<p>39</p>
+<p>13</p>
+<p>26</p>
+<p>No</p>
+<p>26</p>
+<p>10</p>
+<p>39</p>
+<p>39</p>
+<p>26</p>
+<p>26</p>
+<p>10</p>
+<p>4.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../statements/function*"><code>function*</code></a></li>
+<li><a href="../operators/function*"><code>function*</code> expression</a></li>
+<li><a href="generatorfunction"><code>GeneratorFunction</code></a></li>
+<li><a href="../iteration_protocols">The Iterator protocol</a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator</a></p>
+</body>
+</html>

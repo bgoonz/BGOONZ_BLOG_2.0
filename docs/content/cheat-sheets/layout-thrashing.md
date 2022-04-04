@@ -1,14 +1,5 @@
----
-title: Layout thrashing
-category: HTML
-
-description: ''
-weight: -1
-intro: |
-    These are CSS properties that will cause "layout thrashing". Avoid changing them to prevent bottlenecks in your UI performance.
----
-
-## Layout thrashing
+Layout thrashing
+----------------
 
 {: .-one-column}
 
@@ -37,16 +28,14 @@ intro: |
 -   scrollIntoViewIfNeeded
 -   scrollLeft
 -   scrollTop
--   scrollWidth
-    {: .-six-column}
+-   scrollWidth {: .-six-column}
 
 #### MouseEvent
 
 -   layerX
 -   layerY
 -   offsetX
--   offsetY
-    {: .-six-column}
+-   offsetY {: .-six-column}
 
 #### Window
 
@@ -54,14 +43,12 @@ intro: |
 -   scrollBy
 -   scrollTo
 -   scrollX
--   scrollY
-    {: .-six-column}
+-   scrollY {: .-six-column}
 
 #### Frame, Document & Image
 
 -   height
--   width
-    {: .-six-column}
+-   width {: .-six-column}
 
 #### jQuery
 
@@ -70,14 +57,14 @@ intro: |
 -   $.fn.position
 -   $.fn.scrollLeft
 -   $.fn.scrollTop
--   $.fn.css('...')
--   $.fn.text('...')
--   $(':hidden')
--   $(':contains')
-    {: .-six-column}
+-   $.fn.css(‘…’)
+-   $.fn.text(‘…’)
+-   $(‘:hidden’)
+-   $(‘:contains’) {: .-six-column}
 
-## Also see
+Also see
+--------
 
--   <http://www.kellegous.com/j/2013/01/26/layout-performance/>
--   <https://gist.github.com/desandro/4657744>
--   <http://stackoverflow.com/questions/17199958/why-does-setting-textcontent-cause-layout-thrashing>
+-   <a href="http://www.kellegous.com/j/2013/01/26/layout-performance/" class="uri">http://www.kellegous.com/j/2013/01/26/layout-performance/</a>
+-   <a href="https://gist.github.com/desandro/4657744" class="uri">https://gist.github.com/desandro/4657744</a>
+-   <a href="http://stackoverflow.com/questions/17199958/why-does-setting-textcontent-cause-layout-thrashing" class="uri">http://stackoverflow.com/questions/17199958/why-does-setting-textcontent-cause-layout-thrashing</a>

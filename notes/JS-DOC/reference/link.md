@@ -1,4 +1,5 @@
-# String.prototype.link()
+String.prototype.link()
+=======================
 
 **Deprecated**
 
@@ -6,7 +7,8 @@ This feature is no longer recommended. Though some browsers might still support 
 
 The `link()` method creates a string representing the code for an [`<a>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) HTML element to be used as a hypertext link to another URL.
 
-## Syntax
+Syntax
+------
 
     link(url)
 
@@ -19,17 +21,19 @@ Any string that specifies the `href` attribute of the `<a>` element; it should b
 
 A string containing an [`<a>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) HTML element.
 
-## Description
+Description
+-----------
 
 Use the `link()` method to create an HTML snippet for a hypertext link. The returned string can then be added to the document via [`document.write()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/write) or [`element.innerHTML`](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML).
 
 Links created with the `link()` method become elements in the `links` array of the `document` object. See [`document.links`](https://developer.mozilla.org/en-US/docs/Web/API/Document/links).
 
-## Examples
+Examples
+--------
 
 ### Using link()
 
-The following example displays the word "MDN" as a hypertext link that returns the user to the Mozilla Developer Network.
+The following example displays the word “MDN” as a hypertext link that returns the user to the Mozilla Developer Network.
 
     var hotText = 'MDN';
     var url = 'https://developer.mozilla.org/';
@@ -37,12 +41,11 @@ The following example displays the word "MDN" as a hypertext link that returns t
     console.log('Click to return to ' + hotText.link(url));
     // Click to return to <a href="https://developer.mozilla.org/">MDN</a>
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.link">ECMAScript (ECMA-262) 
-<br/>
-
-<span class="small">The definition of 'String.prototype.link' in that specification.</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript (ECMA-262)<br />
+</p><span class="small">The definition of ‘String.prototype.link’ in that specification.</span></td></tr></tbody></table>
 
 `link`
 
@@ -70,10 +73,10 @@ The following example displays the word "MDN" as a hypertext link that returns t
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`String.prototype.anchor()`](anchor)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/link" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/link</a>

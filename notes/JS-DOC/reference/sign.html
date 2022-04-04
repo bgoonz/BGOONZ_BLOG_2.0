@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>sign</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="math.sign">Math.sign()</h1>
+<p>The <code>Math.sign()</code> function returns either a <strong>positive</strong> or <strong>negative</strong> +/- 1, indicating the sign of a number passed into the argument. If the number passed into <code>Math.sign()</code> is 0, it will return a +/- 0. Note that if the number is positive, an explicit (+) will <strong>not</strong> be returned.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>Math.sign(x)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>x</code><br />
+A number. If this argument is not a <code>number</code>, it is implicitly converted to one.</p>
+<h3 id="return-value">Return value</h3>
+<p>A number representing the sign of the given argument:</p>
+<ul>
+<li>If the argument is positive, returns <code>1</code>.</li>
+<li>If the argument is negative, returns <code>-1</code>.</li>
+<li>If the argument is positive zero, returns <code>0</code>.</li>
+<li>If the argument is negative zero, returns <code>-0</code>.</li>
+<li>Otherwise, <a href="../nan"><code>NaN</code></a> is returned.</li>
+</ul>
+<h2 id="description">Description</h2>
+<p>Because <code>sign()</code> is a static method of <code>Math</code>, you always use it as <code>Math.sign()</code>, rather than as a method of a <code>Math</code> object you created (<code>Math</code> is not a constructor).</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-math.sign">Using Math.sign()</h3>
+<pre><code>Math.sign(3);     //  1
+Math.sign(-3);    // -1
+Math.sign(&#39;-3&#39;);  // -1
+Math.sign(0);     //  0
+Math.sign(-0);    // -0
+Math.sign(NaN);   // NaN
+Math.sign(&#39;foo&#39;); // NaN
+Math.sign();      // NaN</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-math.sign">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-math.sign</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>sign</code></p>
+<p>38</p>
+<p>12</p>
+<p>25</p>
+<p>No</p>
+<p>25</p>
+<p>9</p>
+<p>38</p>
+<p>38</p>
+<p>25</p>
+<p>25</p>
+<p>9</p>
+<p>3.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="https://github.com/behnammodi/polyfill/blob/master/math.polyfill.js">A polyfill</a></li>
+<li><a href="abs"><code>Math.abs()</code></a></li>
+<li><a href="ceil"><code>Math.ceil()</code></a></li>
+<li><a href="floor"><code>Math.floor()</code></a></li>
+<li><a href="round"><code>Math.round()</code></a></li>
+<li><a href="trunc"><code>Math.trunc()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sign" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sign</a></p>
+</body>
+</html>

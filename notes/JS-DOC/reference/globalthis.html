@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>globalthis</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="globalthis">globalThis</h1>
+<p>The global <code>globalThis</code> property contains the global <code>this</code> value, which is akin to the <a href="https://developer.mozilla.org/en-US/docs/Glossary/Global_object">global object</a>.</p>
+<p>Property attributes of <code>globalThis</code></p>
+<p>Writable</p>
+<p>yes</p>
+<p>Enumerable</p>
+<p>no</p>
+<p>Configurable</p>
+<p>yes</p>
+<h2 id="description">Description</h2>
+<p>Historically, accessing the global object has required different syntax in different JavaScript environments. On the web you can use <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/window"><code>window</code></a>, <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/self"><code>self</code></a>, or <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/frames"><code>frames</code></a> - but in <a href="https://developer.mozilla.org/en-US/docs/Web/API/Worker">Web Workers</a> only <code>self</code> will work. In Node.js none of these work, and you must instead use <code>global</code>.<br />
+The <code>this</code> keyword could be used inside functions running in non-strict mode, but <code>this</code> will be <code>undefined</code> in Modules and inside functions running in strict mode. You can also use <code>Function('return this')()</code>, but environments that disable <a href="eval"><code>eval()</code></a>, like <a href="https://developer.mozilla.org/en-US/docs/Glossary/CSP">CSP</a> in browsers, prevent use of <a href="function"><code>Function</code></a> in this way.</p>
+<p>The <code>globalThis</code> property provides a standard way of accessing the global <code>this</code> value (and hence the global object itself) across environments. Unlike similar properties such as <code>window</code> and <code>self</code>, it’s guaranteed to work in window and non-window contexts. In this way, you can access the global object in a consistent manner without having to know which environment the code is being run in. To help you remember the name, just remember that in global scope the <code>this</code> value is <code>globalThis</code>.</p>
+<h3 id="html-and-the-windowproxy">HTML and the WindowProxy</h3>
+<p>In many engines <code>globalThis</code> will be a reference to the actual global object, but in web browsers, due to iframe and cross-window security considerations, it references a <a href="proxy"><code>Proxy</code></a> around the actual global object (which you can’t directly access). This distinction is rarely relevant in common usage, but important to be aware of.</p>
+<h3 id="naming">Naming</h3>
+<p>Several other popular name choices such as <code>self</code> and <code>global</code> were removed from consideration because of their potential to break compatibility with existing code. See the <a href="https://github.com/tc39/proposal-global/blob/master/NAMING.md">language proposal’s “naming” document</a> for more details.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="search-for-the-global-across-environments">Search for the global across environments</h3>
+<p>Prior to <code>globalThis</code>, the only reliable cross-platform way to get the global object for an environment was <code>Function('return this')()</code>. However, this causes <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP">CSP</a> violations in some settings, so <a href="https://github.com/paulmillr/es6-shim">es6-shim</a> uses a check like this, for example:</p>
+<pre><code>var getGlobal = function () {
+  if (typeof self !== &#39;undefined&#39;) { return self; }
+  if (typeof window !== &#39;undefined&#39;) { return window; }
+  if (typeof global !== &#39;undefined&#39;) { return global; }
+  throw new Error(&#39;unable to locate global object&#39;);
+};
+
+var globals = getGlobal();
+
+if (typeof globals.setTimeout !== &#39;function&#39;) {
+  // no setTimeout in this environment!
+}</code></pre>
+<p>With <code>globalThis</code> available, the additional search for the global across environments is not necessary anymore:</p>
+<pre><code>if (typeof globalThis.setTimeout !== &#39;function&#39;) {
+  // no setTimeout in this environment!
+}</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-globalthis">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-globalthis</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>globalThis</code></p>
+<p>71</p>
+<p>79</p>
+<p>65</p>
+<p>No</p>
+<p>58</p>
+<p>12.1</p>
+<p>71</p>
+<p>71</p>
+<p>65</p>
+<p>50</p>
+<p>12.2</p>
+<p>10.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../operators/this"><code>this</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/globalThis" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/globalThis</a></p>
+</body>
+</html>

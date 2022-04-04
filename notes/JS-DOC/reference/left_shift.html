@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>left_shift</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="left-shift">Left shift (&lt;&lt;)</h1>
+<p>The <code>&lt;&lt;</code> shifts the first operand the specified number of bits to the left. Excess bits shifted off to the left are discarded. Zero bits are shifted in from the right.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>a &lt;&lt; b</code></pre>
+<h2 id="description">Description</h2>
+<p>This operator shifts the first operand the specified number of bits to the left. Excess bits shifted off to the left are discarded. Zero bits are shifted in from the right.</p>
+<p>For example, <code>9 &lt;&lt; 2</code> yields 36:</p>
+<pre><code>.    9 (base 10): 00000000000000000000000000001001 (base 2)
+                  --------------------------------
+9 &lt;&lt; 2 (base 10): 00000000000000000000000000100100 (base 2) = 36 (base 10)</code></pre>
+<p>Bitwise shifting any number <code>x</code> to the left by <code>y</code> bits yields <code>x * 2 ** y</code>.<br />
+So e.g.: <code>9 &lt;&lt; 3</code> translates to: <code>9 * (2 ** 3) = 9 * (8) = 72</code>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-left-shift">Using left shift</h3>
+<pre><code>9 &lt;&lt; 3; // 72
+
+// 9 * (2 ** 3) = 9 * (8) = 72</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-left-shift-operator">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-left-shift-operator</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>Left_shift</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#bitwise">Bitwise operators in the JS guide</a></li>
+<li><a href="left_shift_assignment">Left shift assignment operator</a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Left_shift" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Left_shift</a></p>
+</body>
+</html>

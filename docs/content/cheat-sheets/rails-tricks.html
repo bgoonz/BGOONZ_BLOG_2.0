@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Rails tricks</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Rails tricks</h1>
+</header>
+<p>in config/environments/development.rb:</p>
+<pre><code># Source maps for Sass
+config.sass.debug_info = true
+config.sass.line_comments = false
+
+# Don&#39;t break apart
+config.assets.debug = false</code></pre>
+<p>Partial locals</p>
+<pre><code>&lt;%= render &#39;article&#39;, full: true %&gt;
+&lt;%= render &#39;article&#39; %&gt;
+
+&lt;% if local_assigns[:full] %&gt;
+  ...
+&lt;% end %&gt;</code></pre>
+<p>HTML in i18n</p>
+<pre><code>en:
+  read_more_html: &quot;read &lt;b&gt;more&lt;/b&gt;...&quot;</code></pre>
+<p>Exception handling:</p>
+<pre><code># config/application.rb
+config.exceptions_app = self.routes
+
+get &#39;/404&#39;, to: &#39;errors#not_found&#39;
+get &#39;/500&#39;, to: &#39;errors#server_error&#39;
+
+class ErrorsController
+  def not_found
+    render status: :not_found
+  end
+ end</code></pre>
+<p>Rails updating:</p>
+<pre><code>rake rails:update</code></pre>
+<p>Distinct pluck:</p>
+<pre><code>Article.distinct.pluck(&#39;author&#39;)</code></pre>
+<p>Relation#merge</p>
+<pre><code>scope :with_drafts, -&gt; {
+  uniq.joins(:articles).merge(Article.draft)
+}</code></pre>
+<p>Order</p>
+<pre><code>scope :recent, -&gt; { order created_at: :desc }</code></pre>
+<p>Group by month</p>
+<pre><code>.group(&quot;to_char(created_at, &#39;YYYY-MM&#39;)&quot;)
+.group(&quot;to_char(created_at, &#39;YYYY-MM&#39;)&quot;).count</code></pre>
+</body>
+</html>

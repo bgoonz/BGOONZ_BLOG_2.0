@@ -1,15 +1,16 @@
-# A Quick Guide to Big-O Notation, Memoization, Tabulation, and Sorting
+A Quick Guide to Big-O Notation, Memoization, Tabulation, and Sorting
+=====================================================================
 
-## Curating Complexity: A Guide to Big-O Notation
+Curating Complexity: A Guide to Big-O Notation
+----------------------------------------------
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*yjlSk3T9c2_14in1.png" class="graf-image" /></figure>***Curating Complexity: A Guide to Big-O Notation***
 
----
+------------------------------------------------------------------------
 
-<a href="https://replit.com/@bgoonz/Medium-article-comp-complex" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://replit.com/@bgoonz/Medium-article-comp-complex"><strong>Medium-article-comp-complex</strong>
-<br/>
+**Medium-article-comp-complex**  
 
-**A Node.js repl by bgoonz**replit.com</a><a href="https://replit.com/@bgoonz/Medium-article-comp-complex" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+**A Node.js repl by bgoonz**replit.com<a href="https://replit.com/@bgoonz/Medium-article-comp-complex" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 -   <span id="b70f">Why is looking at runtime not a reliable method of calculating time complexity?</span>
 -   <span id="2b21">Not all computers are made equal( some may be stronger and therefore boost our runtime speed )</span>
@@ -17,10 +18,10 @@
 -   <span id="1cad">We also need to ask if our code remains performant if we increase the size of the input.</span>
 -   <span id="3cb7">The real question we need to answering is: `How does our performance scale?`.</span>
 
-### big 'O' notation
+### big ‘O’ notation
 
 -   <span id="9b21">Big O Notation is a tool for describing the efficiency of algorithms with respect to the size of the input arguments.</span>
--   <span id="c0e6">Since we use mathematical functions in Big-O, there are a few big picture ideas that we'll want to keep in mind:</span>
+-   <span id="c0e6">Since we use mathematical functions in Big-O, there are a few big picture ideas that we’ll want to keep in mind:</span>
 -   <span id="2e86">The function should be defined by the size of the input.</span>
 -   <span id="07b0">`Smaller` Big O is better (lower time complexity)</span>
 -   <span id="f1b0">Big O is used to describe the worst case scenario.</span>
@@ -29,7 +30,7 @@
 ### Simplifying Math Terms
 
 -   <span id="64a4">We can use the following rules to simplify the our Big O functions:</span>
--   <span id="a2c2">`Simplify Products` : If the function is a product of many terms, we drop the terms that don't depend on n.</span>
+-   <span id="a2c2">`Simplify Products` : If the function is a product of many terms, we drop the terms that don’t depend on n.</span>
 -   <span id="b058">`Simplify Sums` : If the function is a sum of many terms, we drop the non-dominant terms.</span>
 -   <span id="eb32">`n` : size of the input</span>
 -   <span id="c042">`T(f)` : unsimplified math function</span>
@@ -37,10 +38,10 @@
 
 `Putting it all together`
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*TT8uuv1x3nmGUw5rvtoZ8A.png" class="graf-image" /></figure>- <span id="d18b">First we apply the product rule to drop all constants.</span>
-- <span id="4335">Then we apply the sum rule to select the single most dominant term.</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*TT8uuv1x3nmGUw5rvtoZ8A.png" class="graf-image" /></figure>-   <span id="d18b">First we apply the product rule to drop all constants.</span>
+-   <span id="4335">Then we apply the sum rule to select the single most dominant term.</span>
 
----
+------------------------------------------------------------------------
 
 ### Complexity Classes
 
@@ -54,17 +55,17 @@ Common Complexity Classes
 
 #### `O(log(n)) Logarithmic`
 
-> **In most cases our hidden base of Logarithmic time is 2, log complexity algorithm's will typically display 'halving' the size of the input (like binary search!)**
+> **In most cases our hidden base of Logarithmic time is 2, log complexity algorithm’s will typically display ‘halving’ the size of the input (like binary search!)**
 
 #### `O(n) Linear`
 
-> **Linear algorithm's will access each item of the input "once".**
+> **Linear algorithm’s will access each item of the input “once”.**
 
 ### `O(nlog(n)) Log Linear Time`
 
 > **Combination of linear and logarithmic behavior, we will see features from both classes.**
 
-> Algorithm's that are log-linear will use **both recursion AND iteration.**
+> Algorithm’s that are log-linear will use **both recursion AND iteration.**
 
 ### `O(nc) Polynomial`
 
@@ -74,44 +75,44 @@ Common Complexity Classes
 
 > **C is now the number of recursive calls made in each stack frame.**
 
-> **Algorithm's with exponential time are VERY SLOW.**
+> **Algorithm’s with exponential time are VERY SLOW.**
 
----
+------------------------------------------------------------------------
 
 ### Memoization
 
 -   <span id="b3b0">Memoization : a design pattern used to reduce the overall number of calculations that can occur in algorithms that use recursive strategies to solve.</span>
--   <span id="2583">MZ stores the results of the sub-problems in some other data structure, so that we can avoid duplicate calculations and only 'solve' each problem once.</span>
+-   <span id="2583">MZ stores the results of the sub-problems in some other data structure, so that we can avoid duplicate calculations and only ‘solve’ each problem once.</span>
 -   <span id="65c9">Two features that comprise memoization:</span>
 
-1. <span id="b2d2">FUNCTION MUST BE RECURSIVE.</span>
-2. <span id="91a3">Our additional Data Structure is usually an object (we refer to it as our memo… or sometimes cache!)</span>
+1.  <span id="b2d2">FUNCTION MUST BE RECURSIVE.</span>
+2.  <span id="91a3">Our additional Data Structure is usually an object (we refer to it as our memo… or sometimes cache!)</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*4U79jBMjU2wKE_tyYcD_3A.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/1*Qh42KZgcCxmVt6WrTasCVw.png" class="graf-image" /></figure>### Memoizing Factorial
 
-Our memo object is _mapping_ out our arguments of factorial to it's return value.
+Our memo object is *mapping* out our arguments of factorial to it’s return value.
 
--   <span id="854a">Keep in mind we didn't improve the speed of our algorithm.</span>
+-   <span id="854a">Keep in mind we didn’t improve the speed of our algorithm.</span>
 
 ### Memoizing Fibonacci
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*2XaPj7UGKZYFjYhb" class="graf-image" /></figure>- <span id="5be6">Our time complexity for Fibonacci goes from O(2^n) to O(n) after applying memoization.</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*2XaPj7UGKZYFjYhb" class="graf-image" /></figure>-   <span id="5be6">Our time complexity for Fibonacci goes from O(2^n) to O(n) after applying memoization.</span>
 
 ### The Memoization Formula
 
-> _Rules:_
+> *Rules:*
 
-1. <span id="b3f0">_Write the unoptimized brute force recursion (make sure it works);_</span>
-2. <span id="b36e">_Add memo object as an additional argument ._</span>
-3. <span id="f81f">_Add a base case condition that returns the stored value if the function's argument is in the memo._</span>
-4. <span id="1b0f">_Before returning the result of the recursive case, store it in the memo as a value and make the function's argument it's key._</span>
+1.  <span id="b3f0">*Write the unoptimized brute force recursion (make sure it works);*</span>
+2.  <span id="b36e">*Add memo object as an additional argument .*</span>
+3.  <span id="f81f">*Add a base case condition that returns the stored value if the function’s argument is in the memo.*</span>
+4.  <span id="1b0f">*Before returning the result of the recursive case, store it in the memo as a value and make the function’s argument it’s key.*</span>
 
 #### Things to remember
 
-1. <span id="bc4a">_When solving DP problems with Memoization, it is helpful to draw out the visual tree first._</span>
-2. <span id="7bb1">_When you notice duplicate sub-tree's that means we can memoize._</span>
+1.  <span id="bc4a">*When solving DP problems with Memoization, it is helpful to draw out the visual tree first.*</span>
+2.  <span id="7bb1">*When you notice duplicate sub-tree’s that means we can memoize.*</span>
 
----
+------------------------------------------------------------------------
 
 ### Tabulation
 
@@ -120,38 +121,38 @@ Our memo object is _mapping_ out our arguments of factorial to it's return value
 > Use When:
 
 -   <span id="f5b0">**The function is iterative and not recursive.**</span>
--   <span id="015c">_The accompanying DS is usually an array._</span>
+-   <span id="015c">*The accompanying DS is usually an array.*</span>
 
 #### Steps for tabulation
 
--   <span id="8918">_Create a table array based off the size of the input._</span>
--   <span id="b4e7">_Initialize some values in the table to 'answer' the trivially small subproblem._</span>
--   <span id="072e">_Iterate through the array and fill in the remaining entries._</span>
--   <span id="192e">_Your final answer is usually the last entry in the table._</span>
+-   <span id="8918">*Create a table array based off the size of the input.*</span>
+-   <span id="b4e7">*Initialize some values in the table to ‘answer’ the trivially small subproblem.*</span>
+-   <span id="072e">*Iterate through the array and fill in the remaining entries.*</span>
+-   <span id="192e">*Your final answer is usually the last entry in the table.*</span>
 
----
+------------------------------------------------------------------------
 
 ### Memo and Tab Demo with Fibonacci
 
-> _Normal Recursive Fibonacci_
+> *Normal Recursive Fibonacci*
 
     function fibonacci(n) {
       if (n <= 2) return 1;
       return fibonacci(n - 1) + fibonacci(n - 2);
     }
 
-> _Memoization Fibonacci 1_
+> *Memoization Fibonacci 1*
 
-> _Memoization Fibonacci 2_
+> *Memoization Fibonacci 2*
 
-> _Tabulated Fibonacci_
+> *Tabulated Fibonacci*
 
 ### Example of Linear Search
 
--   <span id="84b2">_Worst Case Scenario: The term does not even exist in the array._</span>
--   <span id="30dc">_Meaning: If it doesn't exist then our for loop would run until the end therefore making our time complexity O(n)._</span>
+-   <span id="84b2">*Worst Case Scenario: The term does not even exist in the array.*</span>
+-   <span id="30dc">*Meaning: If it doesn’t exist then our for loop would run until the end therefore making our time complexity O(n).*</span>
 
----
+------------------------------------------------------------------------
 
 ### Sorting Algorithms
 
@@ -165,21 +166,21 @@ Our memo object is _mapping_ out our arguments of factorial to it's return value
 
 -   <span id="664f">Bubble Sort will always use the same amount of memory regardless of n.</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*Ck9aeGY-d5tbz7dT" class="graf-image" /></figure>- <span id="4115">The first major sorting algorithm one learns in introductory programming courses.</span>
-- <span id="ecd4">Gives an intro on how to convert unsorted data into sorted data.</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*Ck9aeGY-d5tbz7dT" class="graf-image" /></figure>-   <span id="4115">The first major sorting algorithm one learns in introductory programming courses.</span>
+-   <span id="ecd4">Gives an intro on how to convert unsorted data into sorted data.</span>
 
-> It's almost never used in production code because:
+> It’s almost never used in production code because:
 
--   <span id="3cb1">_It's not efficient_</span>
--   <span id="4eac">_It's not commonly used_</span>
--   <span id="d730">_There is stigma attached to it_</span>
--   <span id="8da7">`Bubbling Up`_: Term that infers that an item is in motion, moving in some direction, and has some final resting destination._</span>
--   <span id="8447">_Bubble sort, sorts an array of integers by bubbling the largest integer to the top._</span>
+-   <span id="3cb1">*It’s not efficient*</span>
+-   <span id="4eac">*It’s not commonly used*</span>
+-   <span id="d730">*There is stigma attached to it*</span>
+-   <span id="8da7">`Bubbling Up`*: Term that infers that an item is in motion, moving in some direction, and has some final resting destination.*</span>
+-   <span id="8447">*Bubble sort, sorts an array of integers by bubbling the largest integer to the top.*</span>
 
 <!-- -->
 
--   <span id="dcd2">_Worst Case & Best Case are always the same because it makes nested loops._</span>
--   <span id="9a6a">_Double for loops are polynomial time complexity or more specifically in this case Quadratic (Big O) of: O(n²)_</span>
+-   <span id="dcd2">*Worst Case & Best Case are always the same because it makes nested loops.*</span>
+-   <span id="9a6a">*Double for loops are polynomial time complexity or more specifically in this case Quadratic (Big O) of: O(n²)*</span>
 
 ### Selection Sort
 
@@ -191,15 +192,15 @@ Our memo object is _mapping_ out our arguments of factorial to it's return value
 
 -   <span id="45ae">Selection Sort will always use the same amount of memory regardless of n.</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*AByxtBjFrPVVYmyu" class="graf-image" /></figure>- <span id="c618">Selection sort organizes the smallest elements to the start of the array.</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*AByxtBjFrPVVYmyu" class="graf-image" /></figure>-   <span id="c618">Selection sort organizes the smallest elements to the start of the array.</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*GeYNxlRcbt2cf0rY" class="graf-image" /></figure>Summary of how Selection Sort should work:
 
-1. <span id="2277">_Set MIN to location 0_</span>
-2. <span id="c76c">_Search the minimum element in the list._</span>
-3. <span id="79d3">_Swap with value at location Min_</span>
-4. <span id="4ede">_Increment Min to point to next element._</span>
-5. <span id="a649">_Repeat until list is sorted._</span>
+1.  <span id="2277">*Set MIN to location 0*</span>
+2.  <span id="c76c">*Search the minimum element in the list.*</span>
+3.  <span id="79d3">*Swap with value at location Min*</span>
+4.  <span id="4ede">*Increment Min to point to next element.*</span>
+5.  <span id="a649">*Repeat until list is sorted.*</span>
 
 ### Insertion Sort
 
@@ -220,14 +221,14 @@ Our memo object is _mapping_ out our arguments of factorial to it's return value
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*GeU8YwwCoK8GiSTD" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*IxqGb72XDVDeeiMl" class="graf-image" /></figure>### Example of Merge Sort
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*HMCR--9niDt5zY6M" class="graf-image" /></figure>- <span id="48b4">**Merge sort is O(nlog(n)) time.**</span>
-- <span id="c598">*We need a function for merging and a function for sorting.*</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*HMCR--9niDt5zY6M" class="graf-image" /></figure>-   <span id="48b4">**Merge sort is O(nlog(n)) time.**</span>
+-   <span id="c598">*We need a function for merging and a function for sorting.*</span>
 
 > Steps:
 
-1. <span id="213f">_If there is only one element in the list, it is already sorted; return the array._</span>
-2. <span id="6214">_Otherwise, divide the list recursively into two halves until it can no longer be divided._</span>
-3. <span id="3cc8">_Merge the smallest lists into new list in a sorted order._</span>
+1.  <span id="213f">*If there is only one element in the list, it is already sorted; return the array.*</span>
+2.  <span id="6214">*Otherwise, divide the list recursively into two halves until it can no longer be divided.*</span>
+3.  <span id="3cc8">*Merge the smallest lists into new list in a sorted order.*</span>
 
 ### Quick Sort
 
@@ -251,11 +252,11 @@ Our memo object is _mapping_ out our arguments of factorial to it's return value
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*-naVYGTXzE2Yoali" class="graf-image" /></figure>*Recursive Solution*
 
-> _Min Max Solution_
+> *Min Max Solution*
 
--   <span id="6fb1">_Must be conducted on a sorted array._</span>
--   <span id="383b">_Binary search is logarithmic time, not exponential b/c n is cut down by two, not growing._</span>
--   <span id="c940">_Binary Search is part of Divide and Conquer._</span>
+-   <span id="6fb1">*Must be conducted on a sorted array.*</span>
+-   <span id="383b">*Binary search is logarithmic time, not exponential b/c n is cut down by two, not growing.*</span>
+-   <span id="c940">*Binary Search is part of Divide and Conquer.*</span>
 
 ### Insertion Sort
 
@@ -263,38 +264,34 @@ Our memo object is _mapping_ out our arguments of factorial to it's return value
 
 > Steps:
 
-1. <span id="8c1f">_If it is the first element, and it is already sorted; return 1._</span>
-2. <span id="1451">_Pick next element._</span>
-3. <span id="0f8b">_Compare with all elements in the sorted sub list_</span>
-4. <span id="4d78">_Shift all the elements in the sorted sub list that is greater than the value to be sorted._</span>
-5. <span id="9131">_Insert the value_</span>
-6. <span id="6c8a">_Repeat until list is sorted._</span>
+1.  <span id="8c1f">*If it is the first element, and it is already sorted; return 1.*</span>
+2.  <span id="1451">*Pick next element.*</span>
+3.  <span id="0f8b">*Compare with all elements in the sorted sub list*</span>
+4.  <span id="4d78">*Shift all the elements in the sorted sub list that is greater than the value to be sorted.*</span>
+5.  <span id="9131">*Insert the value*</span>
+6.  <span id="6c8a">*Repeat until list is sorted.*</span>
 
 ### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong>
-<br/>
+**bgoonz’s gists**  
 
-**Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…**gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+**Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…**gist.github.com<a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong>
-<br/>
+**bgoonz — Overview**  
 
-**Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…**github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+**Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…**github.com<a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ### Or Checkout my personal Resource Site
 
-<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong>
-<br/>
+**Web-Dev-Hub**  
 
-**Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…**bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+**Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…**bgoonz-blog.netlify.app<a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*VCmj_H9AHs41oC9Yx1hZFQ.png" class="graf-image" /></figure>### Discover More:
 
-<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong>
-<br/>
+**Web-Dev-Hub**  
 
-**Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…**bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+**Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…**bgoonz-blog.netlify.app<a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [February 27, 2021](https://medium.com/p/803ff193c522).
 

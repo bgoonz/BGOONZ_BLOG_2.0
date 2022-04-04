@@ -1,7 +1,9 @@
-# To kill a process gracefully:
+To kill a process gracefully:
+=============================
 
-kill -15 <pid>
+kill -15
 
-# To kill a process forcefully:
+To kill a process forcefully:
+=============================
 
-kill -9 <pid>
+kill -9

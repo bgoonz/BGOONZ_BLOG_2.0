@@ -1,27 +1,32 @@
-# SyntaxError: missing : after property id
+SyntaxError: missing : after property id
+========================================
 
-The JavaScript exception "missing : after property id" occurs when objects are created using the [object initializer](../operators/object_initializer) syntax. A colon (`:`) separates keys and values for the object's properties. Somehow, this colon is missing or misplaced.
+The JavaScript exception “missing : after property id” occurs when objects are created using the [object initializer](../operators/object_initializer) syntax. A colon (`:`) separates keys and values for the object’s properties. Somehow, this colon is missing or misplaced.
 
-## Message
+Message
+-------
 
     SyntaxError: Expected ':' (Edge)
     SyntaxError: missing : after property id (Firefox)
 
-## Error type
+Error type
+----------
 
 [`SyntaxError`](../global_objects/syntaxerror)
 
-## What went wrong?
+What went wrong?
+----------------
 
-When creating objects with the [object initializer](../operators/object_initializer) syntax, a colon (`:`) separates keys and values for the object's properties.
+When creating objects with the [object initializer](../operators/object_initializer) syntax, a colon (`:`) separates keys and values for the object’s properties.
 
     var obj = { propertyKey: 'value' };
 
-## Examples
+Examples
+--------
 
-### Colons vs. equal signs
+### Colons vs. equal signs
 
-This code fails, as the equal sign can't be used this way in this object initializer syntax.
+This code fails, as the equal sign can’t be used this way in this object initializer syntax.
 
     var obj = { propertyKey = 'value' };
     // SyntaxError: missing : after property id
@@ -37,7 +42,7 @@ Correct would be to use a colon, or to use square brackets to assign a new prope
 
 ### Empty properties
 
-You can't create empty properties like this:
+You can’t create empty properties like this:
 
     var obj = { propertyKey; };
     // SyntaxError: missing : after property id
@@ -48,7 +53,7 @@ If you need to define a property without a value, you might use [`null`](../glob
 
 ### Computed properties
 
-If you create a property key from an expression, you need to use square brackets. Otherwise the property name can't be computed:
+If you create a property key from an expression, you need to use square brackets. Otherwise the property name can’t be computed:
 
     var obj = { 'b'+'ar': 'foo' };
     // SyntaxError: missing : after property id
@@ -57,7 +62,8 @@ Put the expression in brackets `[]`:
 
     var obj = { ['b'+'ar']: 'foo' };
 
-## See also
+See also
+--------
 
 -   [Object initializer](../operators/object_initializer)
 

@@ -1,12 +1,15 @@
-# Map.prototype.size
+Map.prototype.size
+==================
 
 The `size` accessor property returns the number of elements in a [`Map`](../map) object.
 
-## Description
+Description
+-----------
 
 The value of `size` is an integer representing how many entries the `Map` object has. A set accessor function for `size` is `undefined`; you can not change this property.
 
-## Examples
+Examples
+--------
 
 ### Using size
 
@@ -17,14 +20,14 @@ The value of `size` is an integer representing how many entries the `Map` object
 
     myMap.size // 3
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-get-map.prototype.size">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-get-map.prototype.size</span></td></tr></tbody></table>
 
-<span class="small">#sec-get-map.prototype.size</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -84,10 +87,10 @@ From Firefox 13 to Firefox 18, the `size` property was implemented as a `Map.pro
 
 3.0
 
-## See also
+See also
+--------
 
 -   [`Map`](../map)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/size" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/size</a>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="prime-factors">Prime Factors</h1>
+<p><strong>Prime number</strong> is a whole number greater than <code>1</code> that <strong>cannot</strong> be made by multiplying other whole numbers. The first few prime numbers are: <code>2</code>, <code>3</code>, <code>5</code>, <code>7</code>, <code>11</code>, <code>13</code>, <code>17</code>, <code>19</code> and so on.</p>
+<p>If we <strong>can</strong> make it by multiplying other whole numbers it is a <strong>Composite Number</strong>.</p>
+<figure>
+<img src="https://www.mathsisfun.com/numbers/images/prime-composite.svg" alt="Composite numbers" /><figcaption>Composite numbers</figcaption>
+</figure>
+<p><em>Image source: <a href="https://www.mathsisfun.com/prime-factorization.html">Math is Fun</a></em></p>
+<p><strong>Prime factors</strong> are those <a href="https://en.wikipedia.org/wiki/Prime_number">prime numbers</a> which multiply together to give the original number. For example <code>39</code> will have prime factors of <code>3</code> and <code>13</code> which are also prime numbers. Another example is <code>15</code> whose prime factors are <code>3</code> and <code>5</code>.</p>
+<figure>
+<img src="https://www.mathsisfun.com/numbers/images/factor-2x3.svg" alt="Factors" /><figcaption>Factors</figcaption>
+</figure>
+<p><em>Image source: <a href="https://www.mathsisfun.com/prime-factorization.html">Math is Fun</a></em></p>
+<h2 id="finding-the-prime-factors-and-their-count-accurately">Finding the prime factors and their count accurately</h2>
+<p>The approach is to keep on dividing the natural number <code>n</code> by indexes from <code>i = 2</code> to <code>i = n</code> (by prime indexes only). The value of <code>n</code> is being overridden by <code>(n / i)</code> on each iteration.</p>
+<p>The time complexity till now is <code>O(n)</code> in the worst case scenario since the loop runs from index <code>i = 2</code> to <code>i = n</code>. This time complexity can be reduced from <code>O(n)</code> to <code>O(sqrt(n))</code>. The optimisation is achievable when loop runs from <code>i = 2</code> to <code>i = sqrt(n)</code>. Now, we go only till <code>O(sqrt(n))</code> because when <code>i</code> becomes greater than <code>sqrt(n)</code>, we have the confirmation that there is no index <code>i</code> left which can divide <code>n</code> completely other than <code>n</code> itself.</p>
+<h2 id="hardy-ramanujan-formula-for-approximate-calculation-of-prime-factor-count">Hardy-Ramanujan formula for approximate calculation of prime-factor count</h2>
+<p>In 1917, a theorem was formulated by G.H Hardy and Srinivasa Ramanujan which states that the normal order of the number <code>ω(n)</code> of distinct prime factors of a number <code>n</code> is <code>log(log(n))</code>.</p>
+<p>Roughly speaking, this means that most numbers have about this number of distinct prime factors.</p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://www.mathsisfun.com/prime-factorization.html">Prime numbers on Math is Fun</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Prime_number">Prime numbers on Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Hardy%E2%80%93Ramanujan_theorem">Hardy-Ramanujan theorem on Wikipedia</a></li>
+<li><a href="https://www.youtube.com/watch?v=6PDtgHhpCHo&amp;list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8&amp;index=82">Prime factorization of a number on Youtube</a></li>
+</ul>
+</body>
+</html>

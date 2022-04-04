@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="linked-list">Linked List</h1>
+<p>In computer science, a <strong>linked list</strong> is a linear collection of data elements, in which linear order is not given by their physical placement in memory. Instead, each element points to the next. It is a data structure consisting of a group of nodes which together represent a sequence. Under the simplest form, each node is composed of data and a reference (in other words, a link) to the next node in the sequence. This structure allows for efficient insertion or removal of elements from any position in the sequence during iteration. More complex variants add additional links, allowing efficient insertion or removal from arbitrary element references. A drawback of linked lists is that access time is linear (and difficult to pipeline). Faster access, such as random access, is not feasible. Arrays have better cache locality as compared to linked lists.</p>
+<figure>
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Singly-linked-list.svg" alt="Linked List" /><figcaption>Linked List</figcaption>
+</figure>
+<h2 id="pseudocode-for-basic-operations">Pseudocode for Basic Operations</h2>
+<h3 id="insert">Insert</h3>
+<pre class="text"><code>Add(value)
+  Pre: value is the value to add to the list
+  Post: value has been placed at the tail of the list
+  n ← node(value)
+  if head = ø
+    head ← n
+    tail ← n
+  else
+    tail.next ← n
+    tail ← n
+  end if
+end Add</code></pre>
+<pre class="text"><code>Prepend(value)
+ Pre: value is the value to add to the list
+ Post: value has been placed at the head of the list
+ n ← node(value)
+ n.next ← head
+ head ← n
+ if tail = ø
+   tail ← n
+ end
+end Prepend</code></pre>
+<h3 id="search">Search</h3>
+<pre class="text"><code>Contains(head, value)
+  Pre: head is the head node in the list
+       value is the value to search for
+  Post: the item is either in the linked list, true; otherwise false
+  n ← head
+  while n != ø and n.value != value
+    n ← n.next
+  end while
+  if n = ø
+    return false
+  end if
+  return true
+end Contains</code></pre>
+<h3 id="delete">Delete</h3>
+<pre class="text"><code>Remove(head, value)
+  Pre: head is the head node in the list
+       value is the value to remove from the list
+  Post: value is removed from the list, true, otherwise false
+  if head = ø
+    return false
+  end if
+  n ← head
+  if n.value = value
+    if head = tail
+      head ← ø
+      tail ← ø
+    else
+      head ← head.next
+    end if
+    return true
+  end if
+  while n.next != ø and n.next.value != value
+    n ← n.next
+  end while
+  if n.next != ø
+    if n.next = tail
+      tail ← n
+      tail.next = null
+    else
+      n.next ← n.next.next
+    end if
+    return true
+  end if
+  return false
+end Remove</code></pre>
+<h3 id="traverse">Traverse</h3>
+<pre class="text"><code>Traverse(head)
+  Pre: head is the head node in the list
+  Post: the items in the list have been traversed
+  n ← head
+  while n != ø
+    yield n.value
+    n ← n.next
+  end while
+end Traverse</code></pre>
+<h3 id="traverse-in-reverse">Traverse in Reverse</h3>
+<pre class="text"><code>ReverseTraversal(head, tail)
+  Pre: head and tail belong to the same list
+  Post: the items in the list have been traversed in reverse order
+  if tail != ø
+    curr ← tail
+    while curr != head
+      prev ← head
+      while prev.next != curr
+        prev ← prev.next
+      end while
+      yield curr.value
+      curr ← prev
+    end while
+   yield curr.value
+  end if
+end ReverseTraversal</code></pre>
+<h2 id="complexities">Complexities</h2>
+<h3 id="time-complexity">Time Complexity</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Access</th>
+<th style="text-align: center;">Search</th>
+<th style="text-align: center;">Insertion</th>
+<th style="text-align: center;">Deletion</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">O(n)</td>
+<td style="text-align: center;">O(n)</td>
+<td style="text-align: center;">O(1)</td>
+<td style="text-align: center;">O(n)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="space-complexity">Space Complexity</h3>
+<p>O(n)</p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Linked_list">Wikipedia</a></li>
+<li><a href="https://www.youtube.com/watch?v=njTh_OwMljA&amp;index=2&amp;t=1s&amp;list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8">YouTube</a></li>
+</ul>
+</body>
+</html>

@@ -1,8 +1,9 @@
-# Fundamental Data Structures In JavaScript
+Fundamental Data Structures In JavaScript
+=========================================
 
 Data structures in JavaScript
 
----
+------------------------------------------------------------------------
 
 #### <a href="http://medium.com/codex" class="markup--anchor markup--h4-anchor">CODEX</a>
 
@@ -10,21 +11,19 @@ Data structures in JavaScript
 
 ### Data structures in JavaScript
 
-<span class="graf-dropCap">H</span>ere's a website I created to practice data structures!
+<span class="graf-dropCap">H</span>ere’s a website I created to practice data structures!
 
-<a href="https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/"><strong>directory</strong>
-<br/>
+**directory**  
 
-<em>Edit description</em>ds-algo-official-c3dw6uapg-bgoonz.vercel.app</a><a href="https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
+*Edit description*ds-algo-official-c3dw6uapg-bgoonz.vercel.app<a href="https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
-<span class="graf-dropCap">H</span>ere's the repo that the website is built on:
+<span class="graf-dropCap">H</span>ere’s the repo that the website is built on:
 
-<a href="https://github.com/bgoonz/DS-ALGO-OFFICIAL" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/DS-ALGO-OFFICIAL"><strong>bgoonz/DS-ALGO-OFFICIAL</strong>
-<br/>
+**bgoonz/DS-ALGO-OFFICIAL**  
 
-<em>Navigation ####Author:Bryan Guner Big O notation is the language we use for talking about how long an algorithm takes…</em>github.com</a><a href="https://github.com/bgoonz/DS-ALGO-OFFICIAL" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Navigation \#\#\#\#Author:Bryan Guner Big O notation is the language we use for talking about how long an algorithm takes…*github.com<a href="https://github.com/bgoonz/DS-ALGO-OFFICIAL" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<span class="graf-dropCap">H</span>ere's a live code editor where you can mess with any of the examples…
+<span class="graf-dropCap">H</span>ere’s a live code editor where you can mess with any of the examples…
 
 ### Resources (article content below):
 
@@ -79,21 +78,21 @@ Data structures in JavaScript
 -   <span id="f3ec"><a href="http://www.infoarena.ro/training-path" class="markup--anchor markup--li-anchor">Infoarena training path</a> (RO)</span>
 -   <span id="ec93">Steven & Felix Halim — <a href="https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;Itemid=8&amp;category=118" class="markup--anchor markup--li-anchor">Increasing the Lower Bound of Programming Contests</a> (UVA Online Judge)</span>
 
-### **_space_**
+### ***space***
 
-> _The space complexity represents the memory consumption of a data structure. As for most of the things in life, you can't have it all, so it is with the data structures. You will generally need to trade some time for space or the other way around._
+> *The space complexity represents the memory consumption of a data structure. As for most of the things in life, you can’t have it all, so it is with the data structures. You will generally need to trade some time for space or the other way around.*
 
-### _time_
+### *time*
 
-> _The time complexity for a data structure is in general more diverse than its space complexity._
+> *The time complexity for a data structure is in general more diverse than its space complexity.*
 
-### _Several operations_
+### *Several operations*
 
-> _In contrary to algorithms, when you look at the time complexity for data structures you need to express it for several operations that you can do with data structures. It can be adding elements, deleting elements, accessing an element or even searching for an element._
+> *In contrary to algorithms, when you look at the time complexity for data structures you need to express it for several operations that you can do with data structures. It can be adding elements, deleting elements, accessing an element or even searching for an element.*
 
-### _Dependent on data_
+### *Dependent on data*
 
-> _Something that data structure and algorithms have in common when talking about time complexity is that they are both dealing with data. When you deal with data you become dependent on them and as a result the time complexity is also dependent of the data that you received. To solve this problem we talk about 3 different time complexity._
+> *Something that data structure and algorithms have in common when talking about time complexity is that they are both dealing with data. When you deal with data you become dependent on them and as a result the time complexity is also dependent of the data that you received. To solve this problem we talk about 3 different time complexity.*
 
 -   <span id="bc8d">**The best-case complexity: when the data looks the best**</span>
 -   <span id="8b06">**The worst-case complexity: when the data looks the worst**</span>
@@ -111,9 +110,9 @@ An Array data structure, or simply an Array, is a data structure consisting of a
 
 Arrays are among the oldest and most important data structures and are used by every program. They are also used to implement many other data structures.
 
-_Complexity_  
-_Average_  
-_Access Search Insertion Deletion_
+*Complexity*  
+*Average*  
+*Access Search Insertion Deletion*
 
 O(1) O(n) O(1) O(n)
 
@@ -123,25 +122,23 @@ O(1) O(n) O(1) O(n)
 
 2.  This could be useful for storing data that are required to be ordered, such as rankings or queues
 
-3.  In JavaScript, array's value could be mixed; meaning value of each index could be of different data, be it String, Number or even Objects
+3.  In JavaScript, array’s value could be mixed; meaning value of each index could be of different data, be it String, Number or even Objects
 
 ### 2. Objects
 
 Think of objects as a logical grouping of a bunch of properties.
 
-Properties could be some variable that it's storing or some methods that it's using.
+Properties could be some variable that it’s storing or some methods that it’s using.
 
 I also visualize an object as a table.
 
-The main difference is that object's "index" need not be numbers and is not necessarily sequenced.
+The main difference is that object’s “index” need not be numbers and is not necessarily sequenced.
 
-<figure><img src="https://cdn-images-1.medium.com/max/1200/1*KVZkD2zrgEa_47igW8Hq8g.png" class="graf-image" /></figure>
-
-### The Hash Table
+<figure><img src="https://cdn-images-1.medium.com/max/1200/1*KVZkD2zrgEa_47igW8Hq8g.png" class="graf-image" /></figure>### The Hash Table
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*avbxLAFocSV6vsl5.gif" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*3GJiRoLyEoZ_aIlO" class="graf-image" /></figure>### *Definition*
 
-> _A Hash Table (Hash Map) is a data structure used to implement an associative array, a structure that can map keys to values. A Hash Table uses a hash function to compute an index into an array of buckets or slots, from which the desired value can be found. From Wikipedia_
+> *A Hash Table (Hash Map) is a data structure used to implement an associative array, a structure that can map keys to values. A Hash Table uses a hash function to compute an index into an array of buckets or slots, from which the desired value can be found. From Wikipedia*
 
 Hash Tables are considered the more efficient data structure for lookup and for this reason, they are widely used.
 
@@ -151,7 +148,7 @@ Access Search Insertion Deletion
 
 -   <span id="f63f">O(1) O(1) O(1)</span>
 
-> _The code_
+> *The code*
 
 Note, here I am storing another object for every hash in my Hash Table.
 
@@ -159,11 +156,11 @@ Note, here I am storing another object for every hash in my Hash Table.
 
 ### Sets
 
-Sets are pretty much what it sounds like. It's the same intuition as Set in Mathematics. I visualize Sets as Venn Diagrams.
+Sets are pretty much what it sounds like. It’s the same intuition as Set in Mathematics. I visualize Sets as Venn Diagrams.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*AIQljh9p8Baw9TnE.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*gOE33ANZP2ujbjIG" class="graf-image" /></figure>### *Definition*
 
-> _A Set is an abstract data type that can store certain values, without any particular order, and no repeated values. It is a computer implementation of the mathematical concept of a finite Set. From Wikipedia_
+> *A Set is an abstract data type that can store certain values, without any particular order, and no repeated values. It is a computer implementation of the mathematical concept of a finite Set. From Wikipedia*
 
 The Set data structure is usually used to test whether elements belong to set of values. Rather then only containing elements, Sets are more used to perform operations on multiple values at once with methods such as union, intersect, etc…
 
@@ -173,13 +170,13 @@ Access Search Insertion Deletion
 
 -   <span id="daa6">O(n) O(n) O(n)</span>
 
-> _The code_
+> *The code*
 
 ### The Singly Linked List
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*fLs64rV-Xq19aVCA.gif" class="graf-image" /></figure>### *Definition*
 
-> _A Singly Linked List is a linear collection of data elements, called nodes pointing to the next node by means of pointer. It is a data structure consisting of a group of nodes which together represent a sequence. Under the simplest form, each node is composed of data and a reference (in other words, a link) to the next node in the sequence._
+> *A Singly Linked List is a linear collection of data elements, called nodes pointing to the next node by means of pointer. It is a data structure consisting of a group of nodes which together represent a sequence. Under the simplest form, each node is composed of data and a reference (in other words, a link) to the next node in the sequence.*
 
 Linked Lists are among the simplest and most common data structures because it allows for efficient insertion or removal of elements from any position in the sequence.
 
@@ -188,15 +185,15 @@ Average
 Access Search Insertion Deletion  
 O(n) O(n) O(1) O(1)
 
-> _The code_
+> *The code*
 
----
+------------------------------------------------------------------------
 
 ### The Doubly Linked List
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*TQXiR-L_itiG3WP-.gif" class="graf-image" /></figure>### *Definition*
 
-> _A Doubly Linked List is a linked data structure that consists of a set of sequentially linked records called nodes. Each node contains two fields, called links, that are references to the previous and to the next node in the sequence of nodes. From Wikipedia_
+> *A Doubly Linked List is a linked data structure that consists of a set of sequentially linked records called nodes. Each node contains two fields, called links, that are references to the previous and to the next node in the sequence of nodes. From Wikipedia*
 
 Having two node links allow traversal in either direction but adding or removing a node in a doubly linked list requires changing more links than the same operations on a Singly Linked List.
 
@@ -205,15 +202,13 @@ Average
 Access Search Insertion Deletion  
 O(n) O(n) O(1) O(1)
 
-> _The code_
+> *The code*
 
 ### The Stack
 
-<figure><img src="https://cdn-images-1.medium.com/max/1200/0*qsjYW-Lvfo22ecLE.gif" class="graf-image" /></figure>
+<figure><img src="https://cdn-images-1.medium.com/max/1200/0*qsjYW-Lvfo22ecLE.gif" class="graf-image" /></figure>### *Definition*
 
-### _Definition_
-
-> _A Stack is an abstract data type that serves as a collection of elements, with two principal operations: push, which adds an element to the collection, and pop, which removes the most recently added element that was not yet removed. The order in which elements come off a Stack gives rise to its alternative name, LIFO (for last in, first out). From Wikipedia_
+> *A Stack is an abstract data type that serves as a collection of elements, with two principal operations: push, which adds an element to the collection, and pop, which removes the most recently added element that was not yet removed. The order in which elements come off a Stack gives rise to its alternative name, LIFO (for last in, first out). From Wikipedia*
 
 A Stack often has a third method peek which allows to check the last pushed element without popping it.
 
@@ -222,13 +217,13 @@ Average
 Access Search Insertion Deletion  
 O(n) O(n) O(1) O(1)
 
-> _The code_
+> *The code*
 
 ### The Queue
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*YvfuX5tKP7-V0p7v.gif" class="graf-image" /></figure>### *Definition*
 
-> _A Queue is a particular kind of abstract data type or collection in which the entities in the collection are kept in order and the principal operations are the addition of entities to the rear terminal position, known as enqueue, and removal of entities from the front terminal position, known as dequeue. This makes the Queue a First-In-First-Out (FIFO) data structure. In a FIFO data structure, the first element added to the Queue will be the first one to be removed._
+> *A Queue is a particular kind of abstract data type or collection in which the entities in the collection are kept in order and the principal operations are the addition of entities to the rear terminal position, known as enqueue, and removal of entities from the front terminal position, known as dequeue. This makes the Queue a First-In-First-Out (FIFO) data structure. In a FIFO data structure, the first element added to the Queue will be the first one to be removed.*
 
 As for the Stack data structure, a peek operation is often added to the Queue data structure. It returns the value of the front element without dequeuing it.
 
@@ -237,13 +232,13 @@ Average
 Access Search Insertion Deletion  
 O(n) O(n) O(1) O(n)
 
-> _The code_
+> *The code*
 
 ### The Tree
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*yUiQ-NaPKeLQnN7n" class="graf-image" /></figure>### *Definition*
 
-> _A Tree is a widely used data structure that simulates a hierarchical tree structure, with a root value and subtrees of children with a parent node. A tree data structure can be defined recursively as a collection of nodes (starting at a root node), where each node is a data structure consisting of a value, together with a list of references to nodes (the "children"), with the constraints that no reference is duplicated, and none points to the root node. From Wikipedia_
+> *A Tree is a widely used data structure that simulates a hierarchical tree structure, with a root value and subtrees of children with a parent node. A tree data structure can be defined recursively as a collection of nodes (starting at a root node), where each node is a data structure consisting of a value, together with a list of references to nodes (the “children”), with the constraints that no reference is duplicated, and none points to the root node. From Wikipedia*
 
 Complexity  
 Average  
@@ -257,13 +252,13 @@ To get a full overview of the time and space complexity of the Tree data structu
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*q31mL1kjFWlIzw3l.gif" class="graf-image" /></figure>### *Definition*
 
-> _A Graph data structure consists of a finite (and possibly mutable) set of vertices or nodes or points, together with a set of unordered pairs of these vertices for an undirected Graph or a set of ordered pairs for a directed Graph. These pairs are known as edges, arcs, or lines for an undirected Graph and as arrows, directed edges, directed arcs, or directed lines for a directed Graph. The vertices may be part of the Graph structure, or may be external entities represented by integer indices or references._
+> *A Graph data structure consists of a finite (and possibly mutable) set of vertices or nodes or points, together with a set of unordered pairs of these vertices for an undirected Graph or a set of ordered pairs for a directed Graph. These pairs are known as edges, arcs, or lines for an undirected Graph and as arrows, directed edges, directed arcs, or directed lines for a directed Graph. The vertices may be part of the Graph structure, or may be external entities represented by integer indices or references.*
 
 -   <span id="f896">A graph is **any** collection of nodes and edges.</span>
 -   <span id="fbda">Much more relaxed in structure than a tree.</span>
--   <span id="5281">It doesn't need to have a root node (not every node needs to be accessible from a single node)</span>
+-   <span id="5281">It doesn’t need to have a root node (not every node needs to be accessible from a single node)</span>
 -   <span id="0c79">It can have cycles (a group of nodes whose paths begin and end at the same node)</span>
--   <span id="4afc">Cycles are not always "isolated", they can be one part of a larger graph. You can detect them by starting your search on a specific node and finding a path that takes you back to that same node.</span>
+-   <span id="4afc">Cycles are not always “isolated”, they can be one part of a larger graph. You can detect them by starting your search on a specific node and finding a path that takes you back to that same node.</span>
 -   <span id="8f45">Any number of edges may leave a given node</span>
 -   <span id="51cf">A Path is a sequence of nodes on a graph</span>
 
@@ -279,30 +274,27 @@ Adjacency matrix: Data are stored in a two-dimensional matrix, in which the rows
 
 Graph
 
-> _The code_
+> *The code*
 
----
+------------------------------------------------------------------------
 
 ### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong>
-<br/>
+**bgoonz’s gists**  
 
-<em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…*gist.github.com<a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong>
-<br/>
+**bgoonz — Overview**  
 
-<em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…*github.com<a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ### Or Checkout my personal Resource Site:
 
 ### Discover More:
 
-<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong>
-<br/>
+**Web-Dev-Hub**  
 
-<em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…*bgoonz-blog.netlify.app<a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [March 5, 2021](https://medium.com/p/8f9f709c15b4).
 

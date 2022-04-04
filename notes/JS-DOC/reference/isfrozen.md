@@ -1,8 +1,10 @@
-# Object.isFrozen()
+Object.isFrozen()
+=================
 
 The `Object.isFrozen()` determines if an object is [frozen](freeze).
 
-## Syntax
+Syntax
+------
 
     Object.isFrozen(obj)
 
@@ -15,11 +17,13 @@ The object which should be checked.
 
 A [`Boolean`](../boolean) indicating whether or not the given object is frozen.
 
-## Description
+Description
+-----------
 
 An object is frozen if and only if it is not [extensible](isextensible), all its properties are non-configurable, and all its data properties (that is, properties which are not accessor properties with getter or setter components) are non-writable.
 
-## Examples
+Examples
+--------
 
 ### Using Object.isFrozen
 
@@ -115,12 +119,11 @@ In ES5, if the argument to this method is not an object (a primitive), then it w
     Object.isFrozen(1);
     // true                          (ES2015 code)
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.isfrozen">ECMAScript (ECMA-262) 
-<br/>
-
-<span class="small">The definition of 'Object.isFrozen' in that specification.</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript (ECMA-262)<br />
+</p><span class="small">The definition of ‘Object.isFrozen’ in that specification.</span></td></tr></tbody></table>
 
 `isFrozen`
 
@@ -148,7 +151,8 @@ In ES5, if the argument to this method is not an object (a primitive), then it w
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`Object.freeze()`](freeze)
 -   [`Object.preventExtensions()`](preventextensions)
@@ -156,6 +160,5 @@ In ES5, if the argument to this method is not an object (a primitive), then it w
 -   [`Object.seal()`](seal)
 -   [`Object.isSealed()`](issealed)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/isFrozen" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/isFrozen</a>

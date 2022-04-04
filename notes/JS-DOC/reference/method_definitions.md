@@ -1,8 +1,10 @@
-# Method definitions
+Method definitions
+==================
 
-Starting with ECMAScript 2015, a shorter syntax for method definitions on objects initializers is introduced. It is a shorthand for a function assigned to the method's name.
+Starting with ECMAScript 2015, a shorter syntax for method definitions on objects initializers is introduced. It is a shorthand for a function assigned to the method’s name.
 
-## Syntax
+Syntax
+------
 
     const obj = {
       get property() {},
@@ -21,7 +23,8 @@ Starting with ECMAScript 2015, a shorter syntax for method definitions on object
       async* [generator]( parameters… ) {},
     };
 
-## Description
+Description
+-----------
 
 The shorthand syntax is similar to the [getter](get) and [setter](set) syntax introduced in ES5.
 
@@ -53,8 +56,8 @@ You are now able to shorten this to:
 
 When doing so:
 
--   The asterisk (`*`) in the shorthand syntax must be _before_ the generator property name. (That is, `* g(){}` will work, but `g *(){}` will not.)
--   Non-generator method definitions cannot contain the `yield` keyword. This means that [legacy generator functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/Legacy_generator_function) won't work either, and will throw a [`SyntaxError`](../global_objects/syntaxerror). Always use `yield` in conjunction with the asterisk (`*`).
+-   The asterisk (`*`) in the shorthand syntax must be *before* the generator property name. (That is, `* g(){}` will work, but `g *(){}` will not.)
+-   Non-generator method definitions cannot contain the `yield` keyword. This means that [legacy generator functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/Legacy_generator_function) won’t work either, and will throw a [`SyntaxError`](../global_objects/syntaxerror). Always use `yield` in conjunction with the asterisk (`*`).
 
 <!-- -->
 
@@ -135,7 +138,8 @@ Methods cannot be constructors! They will throw a [`TypeError`](../global_object
     }
     new objB.g       // TypeError: obj.g is not a constructor (changed in ES2016)
 
-## Examples
+Examples
+--------
 
 ### Simple test case
 
@@ -167,12 +171,11 @@ The shorthand syntax also supports computed property names.
     let name = 'foo'
     console.log(window[name]())  // 1
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-method-definitions">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-method-definitions</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-method-definitions</span></td></tr></tbody></table>
 
 `Method_definitions`
 
@@ -278,7 +281,8 @@ No
 
 4.0
 
-## See also
+See also
+--------
 
 -   `get`
 -   `set`

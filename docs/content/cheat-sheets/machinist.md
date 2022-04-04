@@ -1,8 +1,3 @@
----
-title: Machinist
-category: Ruby libraries
----
-
 ### Installing
 
     # Gemfile
@@ -45,4 +40,4 @@ category: Ruby libraries
 
 ### References
 
--   [https://github.com/notahat/machinist](https://github.com/notahat/machinist)
+-   <https://github.com/notahat/machinist>

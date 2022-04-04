@@ -1,10 +1,12 @@
-# Date.parse()
+Date.parse()
+============
 
-The `Date.parse()` method parses a string representation of a date, and returns the number of milliseconds since January 1, 1970, 00:00:00 UTC or `NaN` if the string is unrecognized or, in some cases, contains illegal date values (e.g. 2015-02-31).
+The `Date.parse()` method parses a string representation of a date, and returns the number of milliseconds since January 1, 1970, 00:00:00 UTC or `NaN` if the string is unrecognized or, in some cases, contains illegal date values (e.g. 2015-02-31).
 
 It is not recommended to use `Date.parse` as until ES5, parsing of strings was entirely implementation dependent. There are still many differences in how different hosts parse date strings, therefore date strings should be manually parsed (a library can help if many different formats are to be accommodated).
 
-## Syntax
+Syntax
+------
 
 Direct call:
 
@@ -21,11 +23,12 @@ A string representing [a simplification of the ISO 8601 calendar date extended f
 
 ### Return value
 
-A number representing the milliseconds elapsed since January 1, 1970, 00:00:00 UTC and the date obtained by parsing the given string representation of a date. If the argument doesn't represent a valid date, [`NaN`](../nan) is returned.
+A number representing the milliseconds elapsed since January 1, 1970, 00:00:00 UTC and the date obtained by parsing the given string representation of a date. If the argument doesn’t represent a valid date, [`NaN`](../nan) is returned.
 
-## Description
+Description
+-----------
 
-The `parse()` method takes a date string (such as "`2011-10-10T14:48:00`") and returns the number of milliseconds since January 1, 1970, 00:00:00 UTC.
+The `parse()` method takes a date string (such as “`2011-10-10T14:48:00`”) and returns the number of milliseconds since January 1, 1970, 00:00:00 UTC.
 
 This function is useful for setting date values based on string values, for example in conjunction with the [`setTime()`](settime) method and the [`Date`](../date) object.
 
@@ -33,7 +36,7 @@ This function is useful for setting date values based on string values, for exam
 
 The standard string representation of a date time string is a simplification of the ISO 8601 calendar date extended format. (See the section [Date Time String Format](https://tc39.github.io/ecma262/#sec-date-time-string-format) in the ECMAScript specification for more details.)
 
-For example, "`2011-10-10`" (_date-only_ form), "`2011-10-10T14:48:00`" (_date-time_ form), or "`2011-10-10T14:48:00.000+09:00`" (_date-time_ form with milliseconds and time zone) can be passed and will be parsed. When the time zone offset is absent, date-only forms are interpreted as a UTC time and date-time forms are interpreted as local time.
+For example, “`2011-10-10`” (*date-only* form), “`2011-10-10T14:48:00`” (*date-time* form), or “`2011-10-10T14:48:00.000+09:00`” (*date-time* form with milliseconds and time zone) can be passed and will be parsed. When the time zone offset is absent, date-only forms are interpreted as a UTC time and date-time forms are interpreted as local time.
 
 While time zone specifiers are used during date string parsing to interpret the argument, the value returned is always the number of milliseconds between January 1, 1970 00:00:00 UTC and the point in time represented by the argument or `NaN`.
 
@@ -58,7 +61,7 @@ However, if the string is recognized as an ISO format string and it contains inv
     new Date('2014-25-23').toISOString();
     // throws "RangeError: invalid date" in all ES5-compliant browsers
 
-SpiderMonkey's implementation-specific heuristic can be found in [`jsdate.cpp`](https://dxr.mozilla.org/mozilla-central/source/js/src/jsdate.cpp?rev=64553c483cd1#889). The string "`10 06 2014`" is an example of a non-conforming ISO format and thus falls back to a custom routine. See also this [rough outline](https://bugzilla.mozilla.org/show_bug.cgi?id=1023155#c6) on how the parsing works.
+SpiderMonkey’s implementation-specific heuristic can be found in [`jsdate.cpp`](https://dxr.mozilla.org/mozilla-central/source/js/src/jsdate.cpp?rev=64553c483cd1#889). The string “`10 06 2014`” is an example of a non-conforming ISO format and thus falls back to a custom routine. See also this [rough outline](https://bugzilla.mozilla.org/show_bug.cgi?id=1023155#c6) on how the parsing works.
 
     new Date('10 06 2014');
 
@@ -76,9 +79,10 @@ Other examples:
 
 **Note:** This section contains implementation-specific behavior that can be inconsistent across implementations.
 
-Given a non-standard date string of "`March 7, 2014`", `parse()` assumes a local time zone, but given a simplification of the ISO 8601 calendar date extended format such as "`2014-03-07`", it will assume a time zone of UTC (ES5 and ECMAScript 2015). Therefore [`Date`](../date) objects produced using those strings may represent different moments in time depending on the version of ECMAScript supported unless the system is set with a local time zone of UTC. This means that two date strings that appear equivalent may result in two different values depending on the format of the string that is being converted.
+Given a non-standard date string of “`March 7, 2014`”, `parse()` assumes a local time zone, but given a simplification of the ISO 8601 calendar date extended format such as “`2014-03-07`”, it will assume a time zone of UTC (ES5 and ECMAScript 2015). Therefore [`Date`](../date) objects produced using those strings may represent different moments in time depending on the version of ECMAScript supported unless the system is set with a local time zone of UTC. This means that two date strings that appear equivalent may result in two different values depending on the format of the string that is being converted.
 
-## Examples
+Examples
+--------
 
 ### Using `Date.parse()`
 
@@ -126,14 +130,14 @@ Returns `14400000` in time zone GMT-0400, and other values in other time zones, 
 
 Returns `14400000` no matter the local time zone as a time zone GMT (UTC) is provided.
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.parse">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-date.parse</span></td></tr></tbody></table>
 
-<span class="small">#sec-date.parse</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -217,10 +221,11 @@ Samsung Internet
 
 ### Compatibility notes
 
--   Firefox 49 changed the parsing of 2-digit years to be aligned with the Google Chrome browser instead of Internet Explorer. Now, 2-digit years that are less than `50` are parsed as 21<sup>st</sup> century years. For example, `04/16/17`, previously parsed as April 16, 1917, will be April 16, 2017 now. To avoid any interoperability issues or ambiguous years, it is recommended to use the ISO 8601 format like "`2017-04-16`" ([bug 1265136](https://bugzilla.mozilla.org/show_bug.cgi?id=1265136)).
--   Google Chrome will accept a numerical string as a valid `dateString` parameter. This means that, for instance, while `!!Date.parse("42")` evaluates to `false` in Firefox, it evaluates to `true` in Google Chrome because "`42`" is interpreted as January 1<sup>st</sup>, 2042.
+-   Firefox 49 changed the parsing of 2-digit years to be aligned with the Google Chrome browser instead of Internet Explorer. Now, 2-digit years that are less than `50` are parsed as 21<sup>st</sup> century years. For example, `04/16/17`, previously parsed as April 16, 1917, will be April 16, 2017 now. To avoid any interoperability issues or ambiguous years, it is recommended to use the ISO 8601 format like “`2017-04-16`” ([bug 1265136](https://bugzilla.mozilla.org/show_bug.cgi?id=1265136)).
+-   Google Chrome will accept a numerical string as a valid `dateString` parameter. This means that, for instance, while `!!Date.parse("42")` evaluates to `false` in Firefox, it evaluates to `true` in Google Chrome because “`42`” is interpreted as January 1<sup>st</sup>, 2042.
 
-## See also
+See also
+--------
 
 -   [`Date.UTC()`](utc)
 

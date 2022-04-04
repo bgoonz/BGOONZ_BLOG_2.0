@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>cyclic_object_value</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="typeerror-cyclic-object-value">TypeError: cyclic object value</h1>
+<p>The JavaScript exception “cyclic object value” occurs when object references were found in <a href="https://www.json.org/">JSON</a>. <a href="../global_objects/json/stringify"><code>JSON.stringify()</code></a> doesn’t try to solve them and fails accordingly.</p>
+<h2 id="message">Message</h2>
+<pre><code>TypeError: cyclic object value (Firefox)
+TypeError: Converting circular structure to JSON (Chrome and Opera)
+TypeError: Circular reference in value argument not supported (Edge)</code></pre>
+<h2 id="error-type">Error type</h2>
+<p><a href="../global_objects/typeerror"><code>TypeError</code></a></p>
+<h2 id="what-went-wrong">What went wrong?</h2>
+<p>The <a href="https://www.json.org/">JSON format</a> per se doesn’t support object references (although an <a href="https://datatracker.ietf.org/doc/html/draft-pbryan-zyp-json-ref-03">IETF draft exists</a>), hence <a href="../global_objects/json/stringify"><code>JSON.stringify()</code></a> doesn’t try to solve them and fails accordingly.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="circular-references">Circular references</h3>
+<p>In a circular structure like the following</p>
+<pre><code>var circularReference = {otherData: 123};
+circularReference.myself = circularReference;</code></pre>
+<p><a href="../global_objects/json/stringify"><code>JSON.stringify()</code></a> will fail</p>
+<pre><code>JSON.stringify(circularReference);
+// TypeError: cyclic object value</code></pre>
+<p>To serialize circular references you can use a library that supports them (e.g. <a href="https://github.com/douglascrockford/JSON-js/blob/master/cycle.js">cycle.js</a>) or implement a solution by yourself, which will require finding and replacing (or removing) the cyclic references by serializable values.</p>
+<p>The snippet below illustrates how to find and filter (thus causing data loss) a cyclic reference by using the <code>replacer</code> parameter of <a href="../global_objects/json/stringify"><code>JSON.stringify()</code></a>:</p>
+<pre><code>const getCircularReplacer = () =&gt; {
+  const seen = new WeakSet();
+  return (key, value) =&gt; {
+    if (typeof value === &quot;object&quot; &amp;&amp; value !== null) {
+      if (seen.has(value)) {
+        return;
+      }
+      seen.add(value);
+    }
+    return value;
+  };
+};
+
+JSON.stringify(circularReference, getCircularReplacer());
+// {&quot;otherData&quot;:123}</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../global_objects/json/stringify"><code>JSON.stringify</code></a></li>
+<li><a href="https://github.com/douglascrockford/JSON-js/blob/master/cycle.js">cycle.js</a> - Introduces two functions, <code>JSON.decycle</code> and <code>JSON.retrocycle</code>, which makes it possible to encode and decode cyclical structures and dags into an extended and retrocompatible JSON format.</li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Cyclic_object_value" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Cyclic_object_value</a></p>
+</body>
+</html>

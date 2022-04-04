@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>xxd</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="to-convert-binstring-to-hex">To convert bin/string to hex:</h1>
+<p>echo ‘42 is the solution’ | xxd -p</p>
+<h1 id="output-34322069732074686520736f6c7574696f6e0a">output: 34322069732074686520736f6c7574696f6e0a</h1>
+<h1 id="to-convert-hex-to-binstring">To convert hex to bin/string:</h1>
+<p>echo ‘34322069732074686520736f6c7574696f6e0a’ | xxd -r -p</p>
+<h1 id="output-42-is-the-solution">output: 42 is the solution</h1>
+</body>
+</html>

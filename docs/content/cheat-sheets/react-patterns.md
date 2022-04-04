@@ -1,1 +1,2 @@
-# React Patterns:
+React Patterns:
+===============

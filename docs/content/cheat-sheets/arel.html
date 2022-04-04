@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2022-01-03" />
+  <title>title</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">title</h1>
+<p class="subtitle">subtitle</p>
+<p class="date">2022-01-03</p>
+</header>
+<hr />
+<p>title: Arel category: Rails</p>
+<hr />
+<h3 id="tables">Tables</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode rb"><code class="sourceCode ruby"><a class="sourceLine" id="cb1-1" title="1">users = <span class="dt">Arel</span>::<span class="dt">Table</span>.new(<span class="st">:users</span>)</a>
+<a class="sourceLine" id="cb1-2" title="2">users = <span class="dt">User</span>.arel_table  <span class="co"># ActiveRecord model</span></a></code></pre></div>
+<h3 id="fields">Fields</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode rb"><code class="sourceCode ruby"><a class="sourceLine" id="cb2-1" title="1">users[<span class="st">:name</span>]</a>
+<a class="sourceLine" id="cb2-2" title="2">users[<span class="st">:id</span>]</a></code></pre></div>
+<h3 id="where-restriction"><code>where</code> (restriction)</h3>
+<div class="sourceCode" id="cb3"><pre class="sourceCode rb"><code class="sourceCode ruby"><a class="sourceLine" id="cb3-1" title="1">users.where(users[<span class="st">:name</span>].eq(<span class="st">&#39;amy&#39;</span>))</a>
+<a class="sourceLine" id="cb3-2" title="2"><span class="co"># SELECT * FROM users WHERE users.name = &#39;amy&#39;</span></a></code></pre></div>
+<h3 id="select-projection"><code>select</code> (projection)</h3>
+<div class="sourceCode" id="cb4"><pre class="sourceCode rb"><code class="sourceCode ruby"><a class="sourceLine" id="cb4-1" title="1">users.project(users[<span class="st">:id</span>])</a>
+<a class="sourceLine" id="cb4-2" title="2"><span class="co"># SELECT users.id FROM users</span></a></code></pre></div>
+<h3 id="join"><code>join</code></h3>
+<h4 id="basic-join">basic join</h4>
+<p>In ActiveRecord (without Arel), if <code>:photos</code> is the name of the association, use <code>joins</code></p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode rb"><code class="sourceCode ruby"><a class="sourceLine" id="cb5-1" title="1">users.joins(<span class="st">:photos</span>)</a></code></pre></div>
+<p>In Arel, if <code>photos</code> is defined as the Arel table,</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode rb"><code class="sourceCode ruby"><a class="sourceLine" id="cb6-1" title="1">photos = <span class="dt">Photo</span>.arel_table</a>
+<a class="sourceLine" id="cb6-2" title="2">users.join(photos)</a>
+<a class="sourceLine" id="cb6-3" title="3">users.join(photos, <span class="dt">Arel</span>::<span class="dt">Nodes</span>::<span class="dt">OuterJoin</span>).on(users[<span class="st">:id</span>].eq(photos[<span class="st">:user_id</span>]))</a></code></pre></div>
+<h4 id="join-with-conditions">join with conditions</h4>
+<div class="sourceCode" id="cb7"><pre class="sourceCode rb"><code class="sourceCode ruby"><a class="sourceLine" id="cb7-1" title="1">users.joins(<span class="st">:photos</span>).merge(<span class="dt">Photo</span>.where(<span class="st">published: </span><span class="dv">true</span>))</a></code></pre></div>
+<p>If the simpler version doesn’t help and you want to add more SQL statements to it:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode rb"><code class="sourceCode ruby"><a class="sourceLine" id="cb8-1" title="1">users.join(</a>
+<a class="sourceLine" id="cb8-2" title="2">   users.join(photos, <span class="dt">Arel</span>::<span class="dt">Nodes</span>::<span class="dt">OuterJoin</span>)</a>
+<a class="sourceLine" id="cb8-3" title="3">   .on(photos[<span class="st">:user_id</span>].eq(users[<span class="st">:id</span>]).and(photos[<span class="st">:published</span>].eq(<span class="dv">true</span>)))</a>
+<a class="sourceLine" id="cb8-4" title="4">)</a></code></pre></div>
+<h4 id="advanced-join">advanced join</h4>
+<p>multiple <code>joins</code> with the same table but different meanings and/or conditions</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode rb"><code class="sourceCode ruby"><a class="sourceLine" id="cb9-1" title="1">creators = <span class="dt">User</span>.arel_table.alias(<span class="st">&#39;creators&#39;</span>)</a>
+<a class="sourceLine" id="cb9-2" title="2">updaters = <span class="dt">User</span>.arel_table.alias(<span class="st">&#39;updaters&#39;</span>)</a>
+<a class="sourceLine" id="cb9-3" title="3">photos = <span class="dt">Photo</span>.arel_table</a>
+<a class="sourceLine" id="cb9-4" title="4"></a>
+<a class="sourceLine" id="cb9-5" title="5">photos_with_credits = photos</a>
+<a class="sourceLine" id="cb9-6" title="6">.join(photos.join(creators, <span class="dt">Arel</span>::<span class="dt">Nodes</span>::<span class="dt">OuterJoin</span>).on(photos[<span class="st">:created_by_id</span>].eq(creators[<span class="st">:id</span>])))</a>
+<a class="sourceLine" id="cb9-7" title="7">.join(photos.join(updaters, <span class="dt">Arel</span>::<span class="dt">Nodes</span>::<span class="dt">OuterJoin</span>).on(photos[<span class="st">:assigned_id</span>].eq(updaters[<span class="st">:id</span>])))</a>
+<a class="sourceLine" id="cb9-8" title="8">.project(photos[<span class="st">:name</span>], photos[<span class="st">:created_at</span>], creators[<span class="st">:name</span>].as(<span class="st">&#39;creator&#39;</span>), updaters[<span class="st">:name</span>].as(<span class="st">&#39;editor&#39;</span>))</a>
+<a class="sourceLine" id="cb9-9" title="9"></a>
+<a class="sourceLine" id="cb9-10" title="10">photos_with_credits.to_sql</a>
+<a class="sourceLine" id="cb9-11" title="11"><span class="co"># =&gt; &quot;SELECT `photos`.`name`, `photos`.`created_at`, `creators`.`name` AS creator, `updaters`.`name` AS editor FROM `photos` INNER JOIN (SELECT FROM `photos` LEFT OUTER JOIN `users` `creators` ON `photos`.`created_by_id` = `creators`.`id`) INNER JOIN (SELECT FROM `photos` LEFT OUTER JOIN `users` `updaters` ON `photos`.`updated_by_id` = `updaters`.`id`)&quot;</span></a>
+<a class="sourceLine" id="cb9-12" title="12"></a>
+<a class="sourceLine" id="cb9-13" title="13"><span class="co"># after the request is done, you can use the attributes you named</span></a>
+<a class="sourceLine" id="cb9-14" title="14"><span class="co"># it&#39;s as if every Photo record you got has &quot;creator&quot; and &quot;editor&quot; fields, containing creator name and editor name</span></a>
+<a class="sourceLine" id="cb9-15" title="15">photos_with_credits.map{|x|</a>
+<a class="sourceLine" id="cb9-16" title="16">  <span class="st">&quot;</span><span class="ot">#{</span>photo.name<span class="ot">}</span><span class="st"> - copyright </span><span class="ot">#{</span>photo.created_at.year<span class="ot">}</span><span class="st"> </span><span class="ot">#{</span>photo.creator<span class="ot">}</span><span class="st">, edited by </span><span class="ot">#{</span>photo.editor<span class="ot">}</span><span class="st">&quot;</span></a>
+<a class="sourceLine" id="cb9-17" title="17">}.join(<span class="st">&#39;; &#39;</span>)</a></code></pre></div>
+<h3 id="limit-offset"><code>limit</code> / <code>offset</code></h3>
+<div class="sourceCode" id="cb10"><pre class="sourceCode rb"><code class="sourceCode ruby"><a class="sourceLine" id="cb10-1" title="1">users.take(<span class="dv">5</span>) <span class="co"># =&gt; SELECT * FROM users LIMIT 5</span></a>
+<a class="sourceLine" id="cb10-2" title="2">users.skip(<span class="dv">4</span>) <span class="co"># =&gt; SELECT * FROM users OFFSET 4</span></a></code></pre></div>
+<h3 id="aggregates">Aggregates</h3>
+<div class="sourceCode" id="cb11"><pre class="sourceCode rb"><code class="sourceCode ruby"><a class="sourceLine" id="cb11-1" title="1">users.project(users[<span class="st">:age</span>].sum) <span class="co"># .average .minimum .maximum</span></a>
+<a class="sourceLine" id="cb11-2" title="2">users.project(users[<span class="st">:id</span>].count)</a>
+<a class="sourceLine" id="cb11-3" title="3">users.project(users[<span class="st">:id</span>].count.as(<span class="st">&#39;user_count&#39;</span>))</a></code></pre></div>
+<h3 id="order"><code>order</code></h3>
+<div class="sourceCode" id="cb12"><pre class="sourceCode rb"><code class="sourceCode ruby"><a class="sourceLine" id="cb12-1" title="1">users.order(users[<span class="st">:name</span>])</a>
+<a class="sourceLine" id="cb12-2" title="2">users.order(users[<span class="st">:name</span>], users[<span class="st">:age</span>].desc)</a>
+<a class="sourceLine" id="cb12-3" title="3">users.reorder(users[<span class="st">:age</span>])</a></code></pre></div>
+<h3 id="with-activerecord">With ActiveRecord</h3>
+<div class="sourceCode" id="cb13"><pre class="sourceCode rb"><code class="sourceCode ruby"><a class="sourceLine" id="cb13-1" title="1"><span class="dt">User</span>.arel_table</a>
+<a class="sourceLine" id="cb13-2" title="2"><span class="dt">User</span>.where(<span class="st">id: </span><span class="dv">1</span>).arel</a></code></pre></div>
+<h3 id="clean-code-with-arel">Clean code with arel</h3>
+<p>Most of the clever stuff should be in scopes, e.g. the code above could become:</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode rb"><code class="sourceCode ruby"><a class="sourceLine" id="cb14-1" title="1">photos_with_credits = <span class="dt">Photo</span>.with_creator.with_editor</a></code></pre></div>
+<p>You can store requests in variables then add SQL segments:</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode rb"><code class="sourceCode ruby"><a class="sourceLine" id="cb15-1" title="1">all_time      = photos_with_credits.count</a>
+<a class="sourceLine" id="cb15-2" title="2">this_month    = photos_with_credits.where(photos[<span class="st">:created_at</span>].gteq(<span class="dt">Date</span>.today.beginning_of_month))</a>
+<a class="sourceLine" id="cb15-3" title="3">recent_photos = photos_with_credits.where(photos[<span class="st">:created_at</span>].gteq(<span class="dt">Date</span>.today.beginning_of_month)).limit(<span class="dv">5</span>)</a></code></pre></div>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a href="http://github.com/rails/arel" class="uri">http://github.com/rails/arel</a></li>
+</ul>
+</body>
+</html>

@@ -1,8 +1,10 @@
-# BigInt.asIntN()
+BigInt.asIntN()
+===============
 
 The `BigInt.asIntN` static method clamps a BigInt value to a signed integer value, and returns that value.
 
-## Syntax
+Syntax
+------
 
     BigInt.asIntN(bits, bigint);
 
@@ -18,7 +20,8 @@ The BigInt value to clamp to fit into the supplied bits.
 
 The value of `bigint` modulo 2<sup>`bits`</sup>, as a signed integer.
 
-## Examples
+Examples
+--------
 
 ### Staying in 64-bit ranges
 
@@ -33,12 +36,11 @@ The `BigInt.asIntN()` method can be useful to stay in the range of 64-bit arithm
     // ↪ -9223372036854775808n
     // negative because of overflow
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-bigint.asintn">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-bigint.asintn</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-bigint.asintn</span></td></tr></tbody></table>
 
 `asIntN`
 
@@ -66,9 +68,10 @@ No
 
 9.0
 
-## See also
+See also
+--------
 
-- [`BigInt`](../bigint)
-- [`BigInt.asUintN()`](asuintn)
+-   [`BigInt`](../bigint)
+-   [`BigInt.asUintN()`](asuintn)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt/asIntN" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt/asIntN</a>

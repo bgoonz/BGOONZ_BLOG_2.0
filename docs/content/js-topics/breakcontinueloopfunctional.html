@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>breakcontinueloopfunctional</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<p>title: Breaking or continuing loop in functional programming tip-number: 58 tip-username: vamshisuram tip-username-profile: https://github.com/vamshisuram tip-tldr: A common task for us is iterate over a list looking for a value or values, but we can’t return from inside a loop so we will have to iterate the whole array, even if the item we search is the first in the list, in this tip we will see how to short circuit with <code>.some</code> and <code>.every</code>.</p>
+<ul>
+<li>/en/break-continue-loop-functional/</li>
+</ul>
+<p>categories: - en - javascript</p>
+<hr />
+<p>A common requirement of iteration is cancelation. Using <code>for</code> loops we can <code>break</code> to end iteration early.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">const</span> a <span class="op">=</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">1</span><span class="op">,</span> <span class="dv">2</span><span class="op">,</span> <span class="dv">3</span><span class="op">,</span> <span class="dv">4</span>]<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="cf">for</span> (<span class="kw">var</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> <span class="va">a</span>.<span class="at">length</span><span class="op">;</span> i<span class="op">++</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-3" title="3">    <span class="cf">if</span> (a[i] <span class="op">===</span> <span class="dv">2</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-4" title="4">        <span class="cf">break</span><span class="op">;</span> <span class="co">// stop the loop</span></a>
+<a class="sourceLine" id="cb1-5" title="5">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb1-6" title="6">    <span class="va">console</span>.<span class="at">log</span>(a[i])<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-7" title="7"><span class="op">}</span></a>
+<a class="sourceLine" id="cb1-8" title="8"><span class="co">//&gt; 0, 1</span></a></code></pre></div>
+<p>Another common requirement is to close over our variables.</p>
+<p>A quick approach is to use <code>.forEach</code> but then we lack the ability to <code>break</code>. In this situation the closest we get is <code>continue</code> functionality through <code>return</code>.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1">[<span class="dv">0</span><span class="op">,</span> <span class="dv">1</span><span class="op">,</span> <span class="dv">2</span><span class="op">,</span> <span class="dv">3</span><span class="op">,</span> <span class="dv">4</span>].<span class="at">forEach</span>(<span class="kw">function</span> (val<span class="op">,</span> i) <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-2" title="2">    <span class="cf">if</span> (val <span class="op">===</span> <span class="dv">2</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-3" title="3">        <span class="co">// how do we stop?</span></a>
+<a class="sourceLine" id="cb2-4" title="4">        <span class="cf">return</span> <span class="kw">true</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-5" title="5">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb2-6" title="6">    <span class="va">console</span>.<span class="at">log</span>(val)<span class="op">;</span> <span class="co">// your code</span></a>
+<a class="sourceLine" id="cb2-7" title="7"><span class="op">}</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-8" title="8"><span class="co">//&gt; 0, 1, 3, 4</span></a></code></pre></div>
+<p>The <code>.some</code> is a method on Array prototype. It tests whether some element in the array passes the test implemented by the provided function. If any value is returning true, then it stops executing. Here is a <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/some">MDN link</a> for more details.</p>
+<p>An example quoted from that link</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">const</span> isBiggerThan10 <span class="op">=</span> (numb) <span class="kw">=&gt;</span> numb <span class="op">&gt;</span> <span class="dv">10</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb3-2" title="2"></a>
+<a class="sourceLine" id="cb3-3" title="3">[<span class="dv">2</span><span class="op">,</span> <span class="dv">5</span><span class="op">,</span> <span class="dv">8</span><span class="op">,</span> <span class="dv">1</span><span class="op">,</span> <span class="dv">4</span>].<span class="at">some</span>(isBiggerThan10)<span class="op">;</span> <span class="co">// false</span></a>
+<a class="sourceLine" id="cb3-4" title="4">[<span class="dv">12</span><span class="op">,</span> <span class="dv">5</span><span class="op">,</span> <span class="dv">8</span><span class="op">,</span> <span class="dv">1</span><span class="op">,</span> <span class="dv">4</span>].<span class="at">some</span>(isBiggerThan10)<span class="op">;</span> <span class="co">// true</span></a></code></pre></div>
+<p>Using <code>.some</code> we get iteration functionally similar to <code>.forEach</code> but with the ability to <code>break</code> through <code>return</code> instead.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb4-1" title="1">[<span class="dv">0</span><span class="op">,</span> <span class="dv">1</span><span class="op">,</span> <span class="dv">2</span><span class="op">,</span> <span class="dv">3</span><span class="op">,</span> <span class="dv">4</span>].<span class="at">some</span>(<span class="kw">function</span> (val<span class="op">,</span> i) <span class="op">{</span></a>
+<a class="sourceLine" id="cb4-2" title="2">    <span class="cf">if</span> (val <span class="op">===</span> <span class="dv">2</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb4-3" title="3">        <span class="cf">return</span> <span class="kw">true</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb4-4" title="4">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb4-5" title="5">    <span class="va">console</span>.<span class="at">log</span>(val)<span class="op">;</span> <span class="co">// your code</span></a>
+<a class="sourceLine" id="cb4-6" title="6"><span class="op">}</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-7" title="7"><span class="co">//&gt; 0, 1</span></a></code></pre></div>
+<p>You keep returning <code>false</code> to make it <code>continue</code> to next item. When you return <code>true</code>, the loop will <code>break</code> and <code>a.some(..)</code> will <code>return</code> <code>true</code>.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb5-1" title="1"><span class="co">// Array contains 2</span></a>
+<a class="sourceLine" id="cb5-2" title="2"><span class="kw">const</span> isTwoPresent <span class="op">=</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">1</span><span class="op">,</span> <span class="dv">2</span><span class="op">,</span> <span class="dv">3</span><span class="op">,</span> <span class="dv">4</span>].<span class="at">some</span>(<span class="kw">function</span> (val<span class="op">,</span> i) <span class="op">{</span></a>
+<a class="sourceLine" id="cb5-3" title="3">    <span class="cf">if</span> (val <span class="op">===</span> <span class="dv">2</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb5-4" title="4">        <span class="cf">return</span> <span class="kw">true</span><span class="op">;</span> <span class="co">// break</span></a>
+<a class="sourceLine" id="cb5-5" title="5">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb5-6" title="6"><span class="op">}</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-7" title="7"><span class="va">console</span>.<span class="at">log</span>(isTwoPresent)<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-8" title="8"><span class="co">//&gt; true</span></a></code></pre></div>
+<p>Also there is <code>.every</code>, which can be used. We have to return the opposite boolean compared to <code>.some</code>.</p>
+<h5 id="playground">Playground</h5>
+<div>
+<a class="jsbin-embed" href="http://jsbin.com/jopeji/embed?js,console">JS Bin on jsbin.com</a>
+<script src="http://static.jsbin.com/js/embed.min.js?3.39.11"></script>
+</div>
+</body>
+</html>

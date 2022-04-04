@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>isinteger</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="number.isinteger">Number.isInteger()</h1>
+<p>The <code>Number.isInteger()</code> method determines whether the passed value is an integer.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>Number.isInteger(value)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>value</code><br />
+The value to be tested for being an integer.</p>
+<h3 id="return-value">Return value</h3>
+<p>A <a href="../boolean"><code>Boolean</code></a> indicating whether or not the given value is an integer.</p>
+<h2 id="description">Description</h2>
+<p>If the target value is an integer, return <code>true</code>, otherwise return <code>false</code>. If the value is <a href="../nan"><code>NaN</code></a> or <a href="../infinity"><code>Infinity</code></a>, return <code>false</code>. The method will also return <code>true</code> for floating point numbers that can be represented as integer.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-isinteger">Using isInteger</h3>
+<pre><code>Number.isInteger(0);         // true
+Number.isInteger(1);         // true
+Number.isInteger(-100000);   // true
+Number.isInteger(99999999999999999999999); // true
+
+Number.isInteger(0.1);       // false
+Number.isInteger(Math.PI);   // false
+
+Number.isInteger(NaN);       // false
+Number.isInteger(Infinity);  // false
+Number.isInteger(-Infinity); // false
+Number.isInteger(&#39;10&#39;);      // false
+Number.isInteger(true);      // false
+Number.isInteger(false);     // false
+Number.isInteger([1]);       // false
+
+Number.isInteger(5.0);       // true
+Number.isInteger(5.000000000000001); // false
+Number.isInteger(5.0000000000000001); // true</code></pre>
+<h2 id="polyfill">Polyfill</h2>
+<pre><code>Number.isInteger = Number.isInteger || function(value) {
+  return typeof value === &#39;number&#39; &amp;&amp;
+    isFinite(value) &amp;&amp;
+    Math.floor(value) === value;
+};</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-number.isinteger">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-number.isinteger</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>isInteger</code></p>
+<p>34</p>
+<p>12</p>
+<p>16</p>
+<p>No</p>
+<p>21</p>
+<p>9</p>
+<p>≤37</p>
+<p>34</p>
+<p>16</p>
+<p>21</p>
+<p>9</p>
+<p>2.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li>The <a href="../number"><code>Number</code></a> object it belongs to.</li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isInteger" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isInteger</a></p>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>getownpropertydescriptor</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="object.getownpropertydescriptor">Object.getOwnPropertyDescriptor()</h1>
+<p>The <code>Object.getOwnPropertyDescriptor()</code> method returns an object describing the configuration of a specific property on a given object (that is, one directly present on an object and not in the object’s prototype chain). The object returned is mutable but mutating it has no effect on the original property’s configuration.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>Object.getOwnPropertyDescriptor(obj, prop)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>obj</code><br />
+The object in which to look for the property.</p>
+<p><code>prop</code><br />
+The name or <a href="../symbol"><code>Symbol</code></a> of the property whose description is to be retrieved.</p>
+<h3 id="return-value">Return value</h3>
+<p>A property descriptor of the given property if it exists on the object, <a href="../undefined"><code>undefined</code></a> otherwise.</p>
+<h2 id="description">Description</h2>
+<p>This method permits examination of the precise description of a property. A property in JavaScript consists of either a string-valued name or a <a href="../symbol"><code>Symbol</code></a> and a property descriptor. Further information about property descriptor types and their attributes can be found in <a href="defineproperty"><code>Object.defineProperty()</code></a>.</p>
+<p>A property descriptor is a record with some of the following attributes:</p>
+<p><code>value</code><br />
+The value associated with the property (data descriptors only).</p>
+<p><code>writable</code><br />
+<code>true</code> if and only if the value associated with the property may be changed (data descriptors only).</p>
+<p><code>get</code><br />
+A function which serves as a getter for the property, or <a href="../undefined"><code>undefined</code></a> if there is no getter (accessor descriptors only).</p>
+<p><code>set</code><br />
+A function which serves as a setter for the property, or <a href="../undefined"><code>undefined</code></a> if there is no setter (accessor descriptors only).</p>
+<p><code>configurable</code><br />
+<code>true</code> if and only if the type of this property descriptor may be changed and if the property may be deleted from the corresponding object.</p>
+<p><code>enumerable</code><br />
+<code>true</code> if and only if this property shows up during enumeration of the properties on the corresponding object.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-object.getownpropertydescriptor">Using Object.getOwnPropertyDescriptor</h3>
+<pre><code>var o, d;
+
+o = { get foo() { return 17; } };
+d = Object.getOwnPropertyDescriptor(o, &#39;foo&#39;);
+// d is {
+//   configurable: true,
+//   enumerable: true,
+//   get: /*the getter function*/,
+//   set: undefined
+// }
+
+o = { bar: 42 };
+d = Object.getOwnPropertyDescriptor(o, &#39;bar&#39;);
+// d is {
+//   configurable: true,
+//   enumerable: true,
+//   value: 42,
+//   writable: true
+// }
+
+o = { [Symbol.for(&#39;baz&#39;)]: 73 }
+d = Object.getOwnPropertyDescriptor(o, Symbol.for(&#39;baz&#39;));
+// d is {
+//   configurable: true,
+//   enumerable: true,
+//   value: 73,
+//   writable: true
+// }
+
+o = {};
+Object.defineProperty(o, &#39;qux&#39;, {
+  value: 8675309,
+  writable: false,
+  enumerable: false
+});
+d = Object.getOwnPropertyDescriptor(o, &#39;qux&#39;);
+// d is {
+//   value: 8675309,
+//   writable: false,
+//   enumerable: false,
+//   configurable: false
+// }</code></pre>
+<h3 id="non-object-coercion">Non-object coercion</h3>
+<p>In ES5, if the first argument to this method is not an object (a primitive), then it will cause a <a href="../typeerror"><code>TypeError</code></a>. In ES2015, a non-object first argument will be coerced to an object at first.</p>
+<pre><code>Object.getOwnPropertyDescriptor(&#39;foo&#39;, 0);
+// TypeError: &quot;foo&quot; is not an object  // ES5 code
+
+Object.getOwnPropertyDescriptor(&#39;foo&#39;, 0);
+// Object returned by ES2015 code: {
+//   configurable: false,
+//   enumerable: true,
+//   value: &quot;f&quot;,
+//   writable: false
+// }</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-object.getownpropertydescriptor">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-object.getownpropertydescriptor</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>getOwnPropertyDescriptor</code></p>
+<p>5</p>
+<p>12</p>
+<p>4</p>
+<p>9</p>
+<p>8</p>
+<p>In Internet Explorer 8, this was only supported on DOM objects and with some non-standard behaviors. This was later fixed in Internet Explorer 9.</p>
+<p>12</p>
+<p>5</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>12</p>
+<p>5</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="defineproperty"><code>Object.defineProperty()</code></a></li>
+<li><a href="../reflect/getownpropertydescriptor"><code>Reflect.getOwnPropertyDescriptor()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptor" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptor</a></p>
+</body>
+</html>

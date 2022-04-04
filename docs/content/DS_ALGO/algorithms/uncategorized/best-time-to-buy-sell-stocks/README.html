@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="best-time-to-buy-and-sell-stock">Best Time to Buy and Sell Stock</h1>
+<h2 id="task-description">Task Description</h2>
+<p>Say you have an array prices for which the <code>i</code>-th element is the price of a given stock on day <code>i</code>.</p>
+<p>Find the maximum profit. You may complete as many transactions as you like (i.e., buy one and sell one share of the stock multiple times).</p>
+<blockquote>
+<p>Note: You may not engage in multiple transactions at the same time (i.e., you must sell the stock before you buy again).</p>
+</blockquote>
+<p><strong>Example #1</strong></p>
+<pre><code>Input: [7, 1, 5, 3, 6, 4]
+Output: 7</code></pre>
+<p><em>Explanation:</em> Buy on day <code>2</code> (<code>price = 1</code>) and sell on day <code>3</code> (<code>price = 5</code>), <code>profit = 5-1 = 4</code>. Then buy on day <code>4</code> (<code>price = 3</code>) and sell on day <code>5</code> (<code>price = 6</code>), <code>profit = 6-3 = 3</code>.</p>
+<p><strong>Example #2</strong></p>
+<pre><code>Input: [1, 2, 3, 4, 5]
+Output: 4</code></pre>
+<p><em>Explanation:</em> Buy on day <code>1</code> (<code>price = 1</code>) and sell on day <code>5</code> (<code>price = 5</code>), <code>profit = 5-1 = 4</code>. Note that you cannot buy on day 1, buy on day 2 and sell them later, as you are engaging multiple transactions at the same time. You must sell before buying again.</p>
+<p><strong>Example #3</strong></p>
+<pre><code>Input: [7, 6, 4, 3, 1]
+Output: 0</code></pre>
+<p><em>Explanation:</em> In this case, no transaction is done, i.e. max <code>profit = 0</code>.</p>
+<h2 id="possible-solutions">Possible Solutions</h2>
+<h3 id="divide-and-conquer-approach-o2n">Divide and conquer approach <code>O(2^n)</code></h3>
+<p>We may try <strong>all</strong> combinations of buying and selling and find out the most profitable one by applying <em>divide and conquer approach</em>.</p>
+<p>Let’s say we have an array of prices <code>[7, 6, 4, 3, 1]</code> and we’re on the <em>1st</em> day of trading (at the very beginning of the array). At this point we may say that the overall maximum profit would be the <em>maximum</em> of two following values:</p>
+<ol type="1">
+<li><em>Option 1: Keep the money</em> → profit would equal to the profit from buying/selling the rest of the stocks → <code>keepProfit = profit([6, 4, 3, 1])</code>.</li>
+<li><em>Option 2: Buy/sell at current price</em> → profit in this case would equal to the profit from buying/selling the rest of the stocks plus (or minus, depending on whether we’re selling or buying) the current stock price → <code>buySellProfit = -7 + profit([6, 4, 3, 1])</code>.</li>
+</ol>
+<p>The overall profit would be equal to → <code>overalProfit = Max(keepProfit, buySellProfit)</code>.</p>
+<p>As you can see the <code>profit([6, 4, 3, 1])</code> task is being solved in the same recursive manner.</p>
+<blockquote>
+<p>See the full code example in <a href="dqBestTimeToBuySellStocks.js">dqBestTimeToBuySellStocks.js</a></p>
+</blockquote>
+<h4 id="time-complexity">Time Complexity</h4>
+<p>As you may see, every recursive call will produce <em>2</em> more recursive branches. The depth of the recursion will be <code>n</code> (size of prices array) and thus, the time complexity will equal to <code>O(2^n)</code>.</p>
+<p>As you may see, this is very inefficient. For example for just <code>20</code> prices the number of recursive calls will be somewhere close to <code>2M</code>!</p>
+<h4 id="additional-space-complexity">Additional Space Complexity</h4>
+<p>If we avoid cloning the prices array between recursive function calls and will use the array pointer then additional space complexity will be proportional to the depth of the recursion: <code>O(n)</code></p>
+<h2 id="peak-valley-approach-on">Peak Valley Approach <code>O(n)</code></h2>
+<p>If we plot the prices array (i.e. <code>[7, 1, 5, 3, 6, 4]</code>) we may notice that the points of interest are the consecutive valleys and peaks</p>
+<figure>
+<img src="https://leetcode.com/media/original_images/122_maxprofit_1.png" alt="Peak Valley Approach" /><figcaption>Peak Valley Approach</figcaption>
+</figure>
+<p><em>Image source: <a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/solution/">LeetCode</a></em></p>
+<p>So, if we will track the growing price and will sell the stocks immediately <em>before</em> the price goes down we’ll get the maximum profit (remember, we bought the stock in the valley at its low price).</p>
+<blockquote>
+<p>See the full code example in <a href="peakvalleyBestTimeToBuySellStocks.js">peakvalleyBestTimeToBuySellStocks.js</a></p>
+</blockquote>
+<h4 id="time-complexity-1">Time Complexity</h4>
+<p>Since the algorithm requires only one pass through the prices array, the time complexity would equal <code>O(n)</code>.</p>
+<h4 id="additional-space-complexity-1">Additional Space Complexity</h4>
+<p>Except of the prices array itself the algorithm consumes the constant amount of memory. Thus, additional space complexity is <code>O(1)</code>.</p>
+<h2 id="accumulator-approach-on">Accumulator Approach <code>O(n)</code></h2>
+<p>There is even simpler approach exists. Let’s say we have the prices array which looks like this <code>[1, 7, 2, 3, 6, 7, 6, 7]</code>:</p>
+<figure>
+<img src="https://leetcode.com/media/original_images/122_maxprofit_2.png" alt="Simple One Pass" /><figcaption>Simple One Pass</figcaption>
+</figure>
+<p><em>Image source: <a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/solution/">LeetCode</a></em></p>
+<p>You may notice, that we don’t even need to keep tracking of a constantly growing price. Instead, we may simply add the price difference for <em>all growing segments</em> of the chart which eventually sums up to the highest possible profit,</p>
+<blockquote>
+<p>See the full code example in <a href="accumulatorBestTimeToBuySellStocks.js">accumulatorBestTimeToBuySellStocks.js</a></p>
+</blockquote>
+<h4 id="time-complexity-2">Time Complexity</h4>
+<p>Since the algorithm requires only one pass through the prices array, the time complexity would equal <code>O(n)</code>.</p>
+<h4 id="additional-space-complexity-2">Additional Space Complexity</h4>
+<p>Except of the prices array itself the algorithm consumes the constant amount of memory. Thus, additional space complexity is <code>O(1)</code>.</p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/">Best Time to Buy and Sell Stock on LeetCode</a></li>
+</ul>
+</body>
+</html>

@@ -1,33 +1,15 @@
----
-title: rTorrent
-category: CLI
-
-intro: |
-    [rTorrent](https://rakshasa.github.io/rtorrent/) is a command-line torrent application. Here are some shortcut keys.
----
-
-## Shortcuts
+Shortcuts
+---------
 
 ### Global
 
-| `^q` | Quit |
+`^q` | Quit |
+
 {: .-shortcuts}
 
 ### Main view
 
-| Shortcut    | Description                       |
-| ----------- | --------------------------------- |
-| `bksp`      | Add torrent                       |
-| ---         | ---                               |
-| `->`        | View download                     |
-| ---         | ---                               |
-| `1` _-_ `7` | Change view                       |
-| ---         | ---                               |
-| `^S`        | Start download                    |
-| `^D`        | Stop download (or remove stopped) |
-| `^K`        | Close a torrent                   |
-| ---         | ---                               |
-| `+` _/_ `-` | Change priority                   |
+<table><thead><tr class="header"><th>Shortcut</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>bksp</code></td><td>Add torrent</td></tr><tr class="even"><td>—</td><td>—</td></tr><tr class="odd"><td><code>-&gt;</code></td><td>View download</td></tr><tr class="even"><td>—</td><td>—</td></tr><tr class="odd"><td><code>1</code> <em>-</em> <code>7</code></td><td>Change view</td></tr><tr class="even"><td>—</td><td>—</td></tr><tr class="odd"><td><code>^S</code></td><td>Start download</td></tr><tr class="even"><td><code>^D</code></td><td>Stop download (or remove stopped)</td></tr><tr class="odd"><td><code>^K</code></td><td>Close a torrent</td></tr><tr class="even"><td>—</td><td>—</td></tr><tr class="odd"><td><code>+</code> <em>/</em> <code>-</code></td><td>Change priority</td></tr></tbody></table>
 
 {: .-shortcuts}
 
@@ -35,29 +17,34 @@ intro: |
 
 #### Upload
 
-| `a` _/_ `s` _/_ `d` | Increase upload throttle by 1/5/50 KB |
-| `z` _/_ `x` _/_ `c` | Decrease upload throttle by 1/5/50 KB |
+`a` */* `s` */* `d` | Increase upload throttle by 1/5/50 KB |  
+`z` */* `x` */* `c` | Decrease upload throttle by 1/5/50 KB |
+
 {: .-shortcuts}
 
 #### Download
 
-| `A` _/_ `S` _/_ `D` | Increase download throttle by 1/5/50 KB |
-| `Z` _/_ `X` _/_ `C` | Decrease download throttle by 1/5/50 KB |
+`A` */* `S` */* `D` | Increase download throttle by 1/5/50 KB |  
+`Z` */* `X` */* `C` | Decrease download throttle by 1/5/50 KB |
+
 {: .-shortcuts}
 
 ### Download view
 
-| `1` _/_ `2` | Adjust max uploads |
-| `3` _/_ `4` | Adjust min peers |
-| `5` _/_ `6` | Adjust max peers |
+`1` */* `2` | Adjust max uploads |  
+`3` */* `4` | Adjust min peers |  
+`5` */* `6` | Adjust max peers |
+
 {: .-shortcuts}
 
 ### File list view
 
-| `space` | Change priority |
+`space` | Change priority |
+
 {: .-shortcuts}
 
-## Also see
+Also see
+--------
 
--   [rTorrent website](https://rakshasa.github.io/rtorrent/) _(rakshasa.github.io)_
--   [rTorrent wiki](https://github.com/rakshasa/rtorrent/wiki) _(github.com)_
+-   [rTorrent website](https://rakshasa.github.io/rtorrent/) *(rakshasa.github.io)*
+-   [rTorrent wiki](https://github.com/rakshasa/rtorrent/wiki) *(github.com)*

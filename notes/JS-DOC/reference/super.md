@@ -1,23 +1,27 @@
-# super
+super
+=====
 
-The **super** keyword is used to access and call functions on an object's parent.
+The **super** keyword is used to access and call functions on an object’s parent.
 
 The `super.prop` and `super[expr]` expressions are valid in any [method definition](../functions/method_definitions) in both [classes](../classes) and [object literals](object_initializer).
 
-## Syntax
+Syntax
+------
 
     super([arguments]); // calls the parent constructor.
     super.functionOnParent([arguments]);
 
-## Description
+Description
+-----------
 
 When used in a constructor, the `super` keyword appears alone and must be used before the `this` keyword is used. The `super` keyword can also be used to call functions on a parent object.
 
-## Examples
+Examples
+--------
 
 ### Using `super` in classes
 
-This code snippet is taken from the [classes sample](https://github.com/GoogleChrome/samples/blob/gh-pages/classes-es6/index.html) ([live demo](https://googlechrome.github.io/samples/classes-es6/index.html)). Here `super()` is called to avoid duplicating the constructor parts' that are common between `Rectangle` and `Square`.
+This code snippet is taken from the [classes sample](https://github.com/GoogleChrome/samples/blob/gh-pages/classes-es6/index.html) ([live demo](https://googlechrome.github.io/samples/classes-es6/index.html)). Here `super()` is called to avoid duplicating the constructor parts’ that are common between `Rectangle` and `Square`.
 
     class Rectangle {
       constructor(height, width) {
@@ -69,7 +73,7 @@ You are also able to call super on [static](../classes/static) methods.
 
 ### Deleting super properties will throw an error
 
-You cannot use the [delete operator](delete) and `super.prop` or `super[expr]` to delete a parent class' property, it will throw a [`ReferenceError`](../global_objects/referenceerror).
+You cannot use the [delete operator](delete) and `super.prop` or `super[expr]` to delete a parent class’ property, it will throw a [`ReferenceError`](../global_objects/referenceerror).
 
     class Base {
       foo() {}
@@ -84,7 +88,7 @@ You cannot use the [delete operator](delete) and `super.prop` or `super[expr]` t
 
 ### `super.prop` cannot overwrite non-writable properties
 
-When defining non-writable properties with e.g. [`Object.defineProperty`](../global_objects/object/defineproperty), `super` cannot overwrite the value of the property.
+When defining non-writable properties with e.g. [`Object.defineProperty`](../global_objects/object/defineproperty), `super` cannot overwrite the value of the property.
 
     class X {
       constructor() {
@@ -111,7 +115,7 @@ When defining non-writable properties with e.g. [`Object.defineProperty`](../glo
 
 ### Using `super.prop` in object literals
 
-Super can also be used in the [object initializer / literal](object_initializer) notation. In this example, two objects define a method. In the second object, `super` calls the first object's method. This works with the help of [`Object.setPrototypeOf()`](../global_objects/object/setprototypeof) with which we are able to set the prototype of `obj2` to `obj1`, so that `super` is able to find `method1` on `obj1`.
+Super can also be used in the [object initializer / literal](object_initializer) notation. In this example, two objects define a method. In the second object, `super` calls the first object’s method. This works with the help of [`Object.setPrototypeOf()`](../global_objects/object/setprototypeof) with which we are able to set the prototype of `obj2` to `obj1`, so that `super` is able to find `method1` on `obj1`.
 
     var obj1 = {
       method1() {
@@ -128,14 +132,14 @@ Super can also be used in the [object initializer / literal](object_initializer)
     Object.setPrototypeOf(obj2, obj1);
     obj2.method2(); // logs "method 1"
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-super-keyword">ECMAScript (ECMA-262) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript (ECMA-262)<br />
+</p><span class="small">The definition of ‘super’ in that specification.</span></td></tr></tbody></table>
 
-<span class="small">The definition of 'super' in that specification.</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -191,10 +195,10 @@ No
 
 4.0
 
-## See also
+See also
+--------
 
 -   [Classes](../classes)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super</a>

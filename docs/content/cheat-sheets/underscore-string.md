@@ -1,8 +1,3 @@
----
-title: Underscore-string
-category: JavaScript libraries
----
-
 ### Usage
 
     // Use it like so:

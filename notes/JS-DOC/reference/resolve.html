@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>resolve</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="promise.resolve">Promise.resolve()</h1>
+<p>The <code>Promise.resolve()</code> method returns a <a href="../promise"><code>Promise</code></a> object that is resolved with a given value. If the value is a promise, that promise is returned; if the value is a thenable (i.e. has a <a href="then"><code>"then" method</code></a>), the returned promise will “follow” that thenable, adopting its eventual state; otherwise the returned promise will be fulfilled with the value. This function flattens nested layers of promise-like objects (e.g. a promise that resolves to a promise that resolves to something) into a single layer.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>Promise.resolve(value);</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>value</code><br />
+Argument to be resolved by this <code>Promise</code>. Can also be a <code>Promise</code> or a thenable to resolve.</p>
+<h3 id="return-value">Return value</h3>
+<p>A <a href="../promise"><code>Promise</code></a> that is resolved with the given value, or the promise passed as value, if the value was a promise object.</p>
+<h2 id="description">Description</h2>
+<p>The static <code>Promise.resolve</code> function returns a <code>Promise</code> that is resolved.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-the-static-promise.resolve-method">Using the static Promise.resolve method</h3>
+<pre><code>Promise.resolve(&#39;Success&#39;).then(function(value) {
+  console.log(value); // &quot;Success&quot;
+}, function(value) {
+  // not called
+});</code></pre>
+<h3 id="resolving-an-array">Resolving an array</h3>
+<pre><code>var p = Promise.resolve([1,2,3]);
+p.then(function(v) {
+  console.log(v[0]); // 1
+});</code></pre>
+<h3 id="resolving-another-promise">Resolving another Promise</h3>
+<pre><code>var original = Promise.resolve(33);
+var cast = Promise.resolve(original);
+cast.then(function(value) {
+  console.log(&#39;value: &#39; + value);
+});
+console.log(&#39;original === cast ? &#39; + (original === cast));
+
+// logs, in order:
+// original === cast ? true
+// value: 33</code></pre>
+<p>The inverted order of the logs is due to the fact that the <code>then</code> handlers are called asynchronously. See how <code>then</code> works <a href="then#return_value">here</a>.</p>
+<h3 id="resolving-thenables-and-throwing-errors">Resolving thenables and throwing Errors</h3>
+<pre><code>// Resolving a thenable object
+var p1 = Promise.resolve({
+  then: function(onFulfill, onReject) { onFulfill(&#39;fulfilled!&#39;); }
+});
+console.log(p1 instanceof Promise) // true, object casted to a Promise
+
+p1.then(function(v) {
+    console.log(v); // &quot;fulfilled!&quot;
+  }, function(e) {
+    // not called
+});
+
+// Thenable throws before callback
+// Promise rejects
+var thenable = { then: function(resolve) {
+  throw new TypeError(&#39;Throwing&#39;);
+  resolve(&#39;Resolving&#39;);
+}};
+
+var p2 = Promise.resolve(thenable);
+p2.then(function(v) {
+  // not called
+}, function(e) {
+  console.error(e); // TypeError: Throwing
+});
+
+// Thenable throws after callback
+// Promise resolves
+var thenable = { then: function(resolve) {
+  resolve(&#39;Resolving&#39;);
+  throw new TypeError(&#39;Throwing&#39;);
+}};
+
+var p3 = Promise.resolve(thenable);
+p3.then(function(v) {
+  console.log(v); // &quot;Resolving&quot;
+}, function(e) {
+  // not called
+});</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-promise.resolve">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-promise.resolve</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>resolve</code></p>
+<p>32</p>
+<p>12</p>
+<p>29</p>
+<p>No</p>
+<p>19</p>
+<p>8</p>
+<p>4.4.3</p>
+<p>32</p>
+<p>29</p>
+<p>19</p>
+<p>8</p>
+<p>2.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../promise"><code>Promise</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/resolve" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/resolve</a></p>
+</body>
+</html>

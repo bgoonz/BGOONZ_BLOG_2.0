@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>nullish_coalescing_operator</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="nullish-coalescing-operator">Nullish coalescing operator (??)</h1>
+<p>The <code>??</code> is a logical operator that returns its right-hand side operand when its left-hand side operand is <a href="../global_objects/null"><code>null</code></a> or <a href="../global_objects/undefined"><code>undefined</code></a>, and otherwise returns its left-hand side operand.</p>
+<p>This can be contrasted with the <a href="logical_or">logical OR (<code>||</code>) operator</a>, which returns the right-hand side operand if the left operand is <em>any</em> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#description">falsy</a>value, not only <code>null</code> or <code>undefined</code>. In other words, if you use <code>||</code> to provide some default value to another variable <code>foo</code>, you may encounter unexpected behaviors if you consider some falsy values as usable (e.g., <code>''</code> or <code>0</code>). See below for more examples.</p>
+<p>The nullish coalescing operator has the fifth-lowest <a href="operator_precedence">operator precedence</a>, directly lower than <code>||</code> and directly higher than the <a href="conditional_operator">conditional (ternary) operator</a>.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>leftExpr ?? rightExpr</code></pre>
+<h2 id="examples">Examples</h2>
+<h3 id="using-the-nullish-coalescing-operator">Using the nullish coalescing operator</h3>
+<p>In this example, we will provide default values but keep values other than <code>null</code> or <code>undefined</code>.</p>
+<pre><code>const nullValue = null;
+const emptyText = &quot;&quot;; // falsy
+const someNumber = 42;
+
+const valA = nullValue ?? &quot;default for A&quot;;
+const valB = emptyText ?? &quot;default for B&quot;;
+const valC = someNumber ?? 0;
+
+console.log(valA); // &quot;default for A&quot;
+console.log(valB); // &quot;&quot; (as the empty string is not null or undefined)
+console.log(valC); // 42</code></pre>
+<h3 id="assigning-a-default-value-to-a-variable">Assigning a default value to a variable</h3>
+<p>Earlier, when one wanted to assign a default value to a variable, a common pattern was to use the logical OR operator (<code>||</code>):</p>
+<pre><code>let foo;
+
+//  foo is never assigned any value so it is still undefined
+let someDummyText = foo || &#39;Hello!&#39;;</code></pre>
+<p>However, due to <code>||</code> being a boolean logical operator, the left hand-side operand was coerced to a boolean for the evaluation and any <em>falsy</em> value (<code>0</code>, <code>''</code>, <code>NaN</code>, <code>null</code>, <code>undefined</code>) was not returned. This behavior may cause unexpected consequences if you consider <code>0</code>, <code>''</code>, or <code>NaN</code> as valid values.</p>
+<pre><code>let count = 0;
+let text = &quot;&quot;;
+
+let qty = count || 42;
+let message = text || &quot;hi!&quot;;
+console.log(qty);     // 42 and not 0
+console.log(message); // &quot;hi!&quot; and not &quot;&quot;</code></pre>
+<p>The nullish coalescing operator avoids this pitfall by only returning the second operand when the first one evaluates to either <code>null</code> or <code>undefined</code> (but no other falsy values):</p>
+<pre><code>let myText = &#39;&#39;; // An empty string (which is also a falsy value)
+
+let notFalsyText = myText || &#39;Hello world&#39;;
+console.log(notFalsyText); // Hello world
+
+let preservingFalsy = myText ?? &#39;Hi neighborhood&#39;;
+console.log(preservingFalsy); // &#39;&#39; (as myText is neither undefined nor null)</code></pre>
+<h3 id="short-circuiting">Short-circuiting</h3>
+<p>Like the OR and AND logical operators, the right-hand side expression is not evaluated if the left-hand side proves to be neither <code>null</code> nor <code>undefined</code>.</p>
+<pre><code>function A() { console.log(&#39;A was called&#39;); return undefined;}
+function B() { console.log(&#39;B was called&#39;); return false;}
+function C() { console.log(&#39;C was called&#39;); return &quot;foo&quot;;}
+
+console.log( A() ?? C() );
+// logs &quot;A was called&quot; then &quot;C was called&quot; and then &quot;foo&quot;
+// as A() returned undefined so both expressions are evaluated
+
+console.log( B() ?? C() );
+// logs &quot;B was called&quot; then &quot;false&quot;
+// as B() returned false (and not null or undefined), the right
+// hand side expression was not evaluated</code></pre>
+<h3 id="no-chaining-with-and-or-or-operators">No chaining with AND or OR operators</h3>
+<p>It is not possible to combine both the AND (<code>&amp;&amp;</code>) and OR operators (<code>||</code>) directly with <code>??</code>. A <code>SyntaxError</code> will be thrown in such cases.</p>
+<pre><code>null || undefined ?? &quot;foo&quot;; // raises a SyntaxError
+true || undefined ?? &quot;foo&quot;; // raises a SyntaxError</code></pre>
+<p>However, providing parenthesis to explicitly indicate precedence is correct:</p>
+<pre><code>(null || undefined) ?? &quot;foo&quot;; // returns &quot;foo&quot;</code></pre>
+<h3 id="relationship-with-the-optional-chaining-operator-.">Relationship with the optional chaining operator (<code>?.</code>)</h3>
+<p>The nullish coalescing operator treats <code>undefined</code> and <code>null</code> as specific values and so does the <a href="optional_chaining">optional chaining operator (<code>?.</code>)</a> which is useful to access a property of an object which may be <code>null</code> or <code>undefined</code>.</p>
+<pre><code>let foo = { someFooProp: &quot;hi&quot; };
+
+console.log(foo.someFooProp?.toUpperCase() ?? &quot;not available&quot;); // &quot;HI&quot;
+console.log(foo.someBarProp?.toUpperCase() ?? &quot;not available&quot;); // &quot;not available&quot;</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#prod-CoalesceExpression">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#prod-CoalesceExpression</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>Nullish_coalescing_operator</code></p>
+<p>80</p>
+<p>80</p>
+<p>72</p>
+<p>No</p>
+<p>67</p>
+<p>13.1</p>
+<p>80</p>
+<p>80</p>
+<p>79</p>
+<p>No</p>
+<p>13.4</p>
+<p>No</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="optional_chaining">The optional chaining operator</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#logical_or_2">The logical OR (<code>||</code>) operator</a></li>
+<li><a href="../functions/default_parameters">Default parameters in functions</a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator</a></p>
+</body>
+</html>

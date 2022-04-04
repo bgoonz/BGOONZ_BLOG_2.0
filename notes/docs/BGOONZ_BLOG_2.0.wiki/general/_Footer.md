@@ -22,7 +22,8 @@
 
 -   [Google Analytics Report](https://datastudio.google.com/reporting/d0496ad8-b6be-469d-9708-3ec88b05e2b4)
 
-## Wiki Nav:
+Wiki Nav:
+---------
 
 -   [Home](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)
 
@@ -112,7 +113,7 @@
 
 -   [sourcecode.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/sourcecode.md)
 
--   [STABLE_POINTS.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/STABLE_POINTS.md)
+-   [STABLE\_POINTS.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/STABLE_POINTS.md)
 
 -   [stack overflow site search.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/stack-overflow-site-search.md)
 

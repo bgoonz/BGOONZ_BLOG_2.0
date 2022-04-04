@@ -1,8 +1,10 @@
-# Object.getOwnPropertyDescriptor()
+Object.getOwnPropertyDescriptor()
+=================================
 
-The `Object.getOwnPropertyDescriptor()` method returns an object describing the configuration of a specific property on a given object (that is, one directly present on an object and not in the object's prototype chain). The object returned is mutable but mutating it has no effect on the original property's configuration.
+The `Object.getOwnPropertyDescriptor()` method returns an object describing the configuration of a specific property on a given object (that is, one directly present on an object and not in the object’s prototype chain). The object returned is mutable but mutating it has no effect on the original property’s configuration.
 
-## Syntax
+Syntax
+------
 
     Object.getOwnPropertyDescriptor(obj, prop)
 
@@ -18,7 +20,8 @@ The name or [`Symbol`](../symbol) of the property whose description is to be ret
 
 A property descriptor of the given property if it exists on the object, [`undefined`](../undefined) otherwise.
 
-## Description
+Description
+-----------
 
 This method permits examination of the precise description of a property. A property in JavaScript consists of either a string-valued name or a [`Symbol`](../symbol) and a property descriptor. Further information about property descriptor types and their attributes can be found in [`Object.defineProperty()`](defineproperty).
 
@@ -42,7 +45,8 @@ A function which serves as a setter for the property, or [`undefined`](../undefi
 `enumerable`  
 `true` if and only if this property shows up during enumeration of the properties on the corresponding object.
 
-## Examples
+Examples
+--------
 
 ### Using Object.getOwnPropertyDescriptor
 
@@ -104,12 +108,11 @@ In ES5, if the first argument to this method is not an object (a primitive), the
     //   writable: false
     // }
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.getownpropertydescriptor">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-object.getownpropertydescriptor</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-object.getownpropertydescriptor</span></td></tr></tbody></table>
 
 `getOwnPropertyDescriptor`
 
@@ -141,11 +144,11 @@ In Internet Explorer 8, this was only supported on DOM objects and with some non
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`Object.defineProperty()`](defineproperty)
 -   [`Reflect.getOwnPropertyDescriptor()`](../reflect/getownpropertydescriptor)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptor" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptor</a>

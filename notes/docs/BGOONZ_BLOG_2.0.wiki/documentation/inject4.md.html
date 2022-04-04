@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>inject4.md</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h2 id="post-processing"><a href="https://app.netlify.com/sites/bgoonz-blog/settings/deploys#post-processing">Post processing</a></h2>
+<p>Control the post processing and optimizations Netlify can do for you</p>
+<h3 id="snippet-injection"><a href="https://app.netlify.com/sites/bgoonz-blog/settings/deploys#snippet-injection">Snippet injection</a></h3>
+<p>Inject analytics or other scripts into the HTML of your site.</p>
+<ul>
+<li><p>before <code>&lt;/body&gt;</code></p>
+<p>blm</p>
+<pre><code>&lt;!-- Insert makerbadge.js (download or use ☁️cloud version) --&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://makerbadge.s3.amazonaws.com/blmbadge.js&quot;&gt;&lt;/script&gt;
+
+&lt;!-- Initialise MakerBadge with options --&gt;
+
+&lt;script&gt;
+  BLMBadge.init({
+       layout:1,
+       theme:&#39;dark&#39;,
+       promoText : &#39;Send a donation &#39;+String.fromCodePoint(0x2192),
+       promoLink : &#39;https://minnesotafreedomfund.org/&#39;,
+       message : &#39;To be silent is to be complicit. Black lives matter.&#39;,
+       title : &#39;#BlackLivesMatter&#39;,
+       imageAlt: &quot;Black Lives Matter Badge&quot;
+})
+&lt;/script&gt;</code></pre>
+<p>Remove</p></li>
+<li><p>before <code>&lt;/body&gt;</code></p>
+<p>addthis</p>
+<pre><code>&lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946&quot;&gt;&lt;/script&gt;
+
+&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946&quot;&gt;&lt;/script&gt;</code></pre>
+<p>Remove</p></li>
+<li><p>before <code>&lt;/head&gt;</code></p>
+<p>gtag-n-firebase</p>
+<pre><code>&lt;!-- Google Tag Manager --&gt;
+&lt;script&gt;(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({&#39;gtm.start&#39;:
+new Date().getTime(),event:&#39;gtm.js&#39;});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!=&#39;dataLayer&#39;?&#39;&amp;l=&#39;+l:&#39;&#39;;j.async=true;j.src=
+&#39;https://www.googletagmanager.com/gtm.js?id=&#39;+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,&#39;script&#39;,&#39;dataLayer&#39;,&#39;GTM-5S5XXNR&#39;);&lt;/script&gt;
+&lt;!-- End Google Tag Manager --&gt;
+&lt;!--FIREBASE-----------------------------------------------------------------------&gt;
+&lt;!-- The core Firebase JS SDK is always required and must be listed first --&gt;
+&lt;script src=&quot;/__/firebase/8.8.1/firebase-app.js&quot;&gt;&lt;/script&gt;
+
+&lt;!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries --&gt;
+&lt;script src=&quot;/__/firebase/8.8.1/firebase-analytics.js&quot;&gt;&lt;/script&gt;
+
+&lt;!-- Initialize Firebase --&gt;
+&lt;script src=&quot;/__/firebase/init.js&quot;&gt;&lt;/script&gt;
+
+&lt;!--Google Tag-----------------------------------------------------------------------&gt;
+
+&lt;!-- Global site tag (gtag.js) - Google Analytics --&gt;
+&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-M9B63M34E1&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag(&#39;js&#39;, new Date());
+
+  gtag(&#39;config&#39;, &#39;G-M9B63M34E1&#39;);
+&lt;/script&gt;</code></pre>
+<p>Remove</p></li>
+<li><p>before <code>&lt;/body&gt;</code></p>
+<p>gtag-in-body</p>
+<pre><code>&lt;!-- Google Tag Manager (noscript) --&gt;
+&lt;noscript&gt;&lt;iframe  style=&quot;-webkit-transform:scale(0.7);-moz-transform-scale(0.7); src=&quot;https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR&quot;
+height=&quot;0&quot; width=&quot;0&quot; style=&quot;display:none;visibility:hidden&quot;&gt;&lt;/iframe&gt;&lt;/noscript&gt;
+&lt;!-- End Google Tag Manager (noscript) --&gt;</code></pre>
+<p>Remove</p></li>
+<li><p>before <code>&lt;/head&gt;</code></p>
+<p>scroll-2-top</p>
+<pre><code>&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js&quot; async defer&gt;
+
+  &lt;/script&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+    function hideLoader() {
+      $( &#39;#loading&#39; ).hide();
+    }
+    $( window ).ready( hideLoader );
+    // Strongly recommended: Hide loader after 20 seconds, even if the page hasn&#39;t finished loading
+    setTimeout( hideLoader, 10 * 1000 );
+    $( window ).on( &#39;beforeunload&#39;, function () {
+      $( window ).scrollTop( 0 );
+    } );
+  &lt;/script&gt;
+
+  &lt;script&gt;
+    $( window ).scroll( function () {
+      $( &quot;#back&quot; ).stop().animate( {
+        &quot;marginTop&quot;: ( $( window ).scrollTop() ) + &quot;px&quot;,
+        &quot;marginLeft&quot;: ( $( window ).scrollLeft() ) + &quot;px&quot;
+      }, &quot;slow&quot; );
+    } );
+  &lt;/script&gt;
+&lt;script&gt;
+        window.addEventListener( &#39;DOMContentLoaded&#39;, ( event ) =&gt; {
+          console.log( &#39;DOM fully loaded and parsed&#39; );
+          const scrollToTop = () =&gt; {
+            const c = document.documentElement.scrollTop || document.body.scrollTop;
+            if ( c &gt; 0 ) {
+              window.requestAnimationFrame( scrollToTop );
+              window.scrollTo( 0, c - c / 8 );
+            }
+          };
+          scrollToTop();
+        } );
+
+      &lt;/script&gt;</code></pre>
+<p>Remove</p></li>
+<li><p>before <code>&lt;/head&gt;</code></p>
+<p>original-analytics</p>
+<pre><code>&lt;script data-ad-client=&quot;ca-pub-7131725540181116&quot; async src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&quot;&gt;&lt;/script&gt;
+&lt;!-- Google Tag Manager --&gt;
+&lt;script&gt;(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({&#39;gtm.start&#39;:
+new Date().getTime(),event:&#39;gtm.js&#39;});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!=&#39;dataLayer&#39;?&#39;&amp;l=&#39;+l:&#39;&#39;;j.async=true;j.src=
+&#39;https://www.googletagmanager.com/gtm.js?id=&#39;+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,&#39;script&#39;,&#39;dataLayer&#39;,&#39;GTM-5S5XXNR&#39;);&lt;/script&gt;
+&lt;!-- End Google Tag Manager --&gt;
+&lt;!-- Google Tag Manager (noscript) --&gt;
+&lt;noscript&gt;&lt;iframe  style=&quot;-webkit-transform:scale(0.7);-moz-transform-scale(0.7); src=&quot;https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR&quot;
+height=&quot;0&quot; width=&quot;0&quot; style=&quot;display:none;visibility:hidden&quot;&gt;&lt;/iframe&gt;&lt;/noscript&gt;
+&lt;!-- End Google Tag Manager (noscript) --&gt;
+
+&lt;meta name=&quot;google-site-verification&quot; content=&quot;W6SJ3S45yhnjzV6ISUMCTXl_QVX5woQZ7jO3bsahONQ&quot; /&gt;
+&lt;!-- Global site tag (gtag.js) - Google Analytics --&gt;
+&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-4W5MG3DG4T&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag(&#39;js&#39;, new Date());
+
+  gtag(&#39;config&#39;, &#39;G-4W5MG3DG4T&#39;);
+&lt;/script&gt;
+
+&lt;script data-ad-client=&quot;ca-pub-7131725540181116&quot; async src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&quot;&gt;&lt;/script&gt;</code></pre>
+<p>Remove</p></li>
+<li><p>before <code>&lt;/body&gt;</code></p>
+<p>goback</p>
+<pre><code>&lt;input type=&quot;button&quot; style=&quot;position: fixed;top: 10px;right: 10px;width:80px;color:white;font-weight:bold;background-color:rgba(0, 0, 0, 0.856); border-radius:15px;&quot; value=&quot;Go Back&quot; onclick=&quot;history.back(-1)&quot; /&gt;
+      &lt;?php
+        $url = htmlspecialchars($_SERVER[&#39;HTTP_REFERER&#39;]);
+        echo &quot;&lt;a href=&#39;$url&#39;&gt;&lt;/a&gt;</code></pre>
+<p>Remove</p></li>
+<li><p>before <code>&lt;/head&gt;</code></p>
+<p>mdn-style</p>
+<pre><code>&lt;style&gt;blockquote,
+body,
+dd,
+dl,
+figcaption,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+li,
+ol[class],
+p,
+ul[class] {
+  margin: 0
+}
+
+body {
+  min-height: 110vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.6
+}
+
+article&gt;*+* {
+  margin-top: 1em
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit
+}
+
+@media(prefers-reduced-motion:reduce) {
+  * {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important
+  }
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: arial, x-locale-body, sans-serif;
+  letter-spacing: -.0027777778rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 100%;
+  line-height: 1.75
+}
+
+img {
+  height: auto
+}
+
+@font-face {
+  font-display: swap;
+  font-family: zillaslab;
+  font-style: normal;
+  font-weight: 700;
+  src: url(/static/media/ZillaSlab-Bold.subset.0beac26b.woff2) format(&quot;woff2&quot;), url(/static/media/ZillaSlab-Bold.subset.72026b3c.woff) format(&quot;woff&quot;)
+}
+
+@font-face {
+  font-display: swap;
+  font-family: zillaslab;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/static/media/ZillaSlab-Regular.subset.ce3a756d.woff2) format(&quot;woff2&quot;), url(/static/media/ZillaSlab-Regular.subset.7e4c05c9.woff) format(&quot;woff&quot;)
+}
+
+h1,
+h2,
+h3 {
+  font-family: zillaslab, palatino, &quot;Palatino Linotype&quot;, serif;
+  line-height: 1.2
+}
+
+h1 {
+  font-size: 1.802rem
+}
+
+@media (min-width:47.9385em) {
+  h1 {
+    font-size: 3.052rem
+  }
+}
+
+h2 {
+  font-size: 1.602rem
+}
+
+@media (min-width:47.9385em) {
+  h2 {
+    font-size: 2.441rem
+  }
+}
+
+h3 {
+  font-size: 1.424rem;
+
+  font-family: zillaslab, palatino, &quot;Palatino Linotype&quot;, serif;
+  font-weight: 400;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  padding: 0 6px;
+  margin: 24px 0
+}
+
+@media (min-width:47.9385em) {
+  h3 {
+    font-size: 1.953rem
+  }
+}
+
+h4 {
+  font-size: 1.266rem
+}
+
+@media (min-width:47.9385em) {
+  h4 {
+    font-size: 1.563rem
+  }
+}
+
+h5 {
+  font-size: 1.125rem
+}
+
+@media (min-width:47.9385em) {
+  h5 {
+    font-size: 1.25rem
+  }
+}
+
+p {
+  margin-bottom: 24px
+}
+
+a:link,
+a:visited {
+
+  text-decoration: none
+}
+
+a:link:active,
+a:link:focus,
+a:link:hover,
+a:visited:active,
+a:visited:focus,
+a:visited:hover {
+  text-decoration: underline
+}
+
+blockquote {
+  max-width: 45rem;
+  max-width: 85ch;
+  font-size: 1.125rem;
+  font-family: zillaslab, palatino, &quot;Palatino Linotype&quot;, serif;
+  font-weight: 400;
+  margin-bottom: 24px
+}
+
+@media (min-width:47.9385em) {
+  blockquote {
+    font-size: 1.25rem
+  }
+}
+
+blockquote:after,
+blockquote:before {
+  background-image: linear-gradient(90deg, #00356a, #83d0f2);
+  content: &quot;&quot;;
+  display: block;
+  height: 5px;
+  margin-bottom: 12px
+}
+
+blockquote:after {
+  margin-top: 12px
+}
+
+blockquote p:last-of-type {
+  margin-bottom: 0
+}
+
+a {
+
+  text-decoration: none
+}
+
+a:focus,
+a:hover {
+  text-decoration: underline
+}
+
+a code {
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none
+}
+
+dl dt {
+  font-weight: 700
+}
+
+dl dd {
+  margin: 0 24px 24px
+}
+
+&lt;/style&gt;</code></pre>
+<p>Remove</p></li>
+<li><p>before <code>&lt;/head&gt;</code></p>
+<p>meta</p>
+<pre><code>&lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;link rel=&quot;apple-touch-icon&quot; href=&quot;logo-circle.png&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+  &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;HTML&quot;&gt;
+  &lt;meta name=&quot;Author&quot; content=&quot;Bryan Guner&quot;&gt;
+  &lt;meta name=&quot;keywords&quot; content=&quot;HTML, Meta Tags, Metadata&quot;&gt;
+  &lt;meta name=&quot;description&quot; content=&quot;Learning about Web Development.&quot;&gt;
+  &lt;link type=&quot;image/x-icon&quot; href=&quot;./favicon.ico&quot; rel=&quot;shortcut icon&quot;&gt;
+  &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=us-ascii&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, shrink-to-fit=no&quot;&gt;
+  &lt;meta name=&quot;twitter:card&quot; content=&quot;summary&quot;&gt;
+  &lt;meta name=&quot;twitter:site&quot; content=&quot;@bgoonz&quot;&gt;
+  &lt;meta name=&quot;twitter:creator&quot; content=&quot;@bgoonz&quot;&gt;
+  &lt;meta name=&quot;twitter:image:src&quot; content=&quot;/logo-circle.png&quot;&gt;
+  &lt;meta name=&quot;twitter:title&quot; content=&quot;Web Development Resource Hub Bryan Guner&quot;&gt;
+  &lt;meta name=&quot;twitter:description&quot; content=&quot;The new home of my blog resource sharing website.&quot;&gt;
+  &lt;link
+    href=&quot;https://instructure-uploads-pdx.s3.us-west-2.amazonaws.com/account_168550000000000001/attachments/537/logo-canvas.png&quot;
+    rel=&quot;apple-touch-icon&quot;&gt;
+  &lt;link type=&quot;text/css&quot; href=&quot;https://fonts.googleapis.com/css?family=Raleway:200,100,400&quot; rel=&quot;stylesheet&quot;&gt;</code></pre>
+<p>Remove</p></li>
+<li><p>before <code>&lt;/body&gt;</code></p>
+<p>prism2body</p>
+<pre><code>&lt;script&gt;
+/* PrismJS 1.24.1
+https://prismjs.com/download.html#themes=prism-twilight&amp;languages=markup+css+clike+javascript */
+var _self=&quot;undefined&quot;!=typeof window?window:&quot;undefined&quot;!=typeof WorkerGlobalScope&amp;&amp;self instanceof WorkerGlobalScope?self:{},Prism=function(u){var c=/\blang(?:uage)?-([\w-]+)\b/i,n=0,e={},M={manual:u.Prism&amp;&amp;u.Prism.manual,disableWorkerMessageHandler:u.Prism&amp;&amp;u.Prism.disableWorkerMessageHandler,util:{encode:function e(n){return n instanceof W?new W(n.type,e(n.content),n.alias):Array.isArray(n)?n.map(e):n.replace(/&amp;/g,&quot;&amp;amp;&quot;).replace(/&lt;/g,&quot;&amp;lt;&quot;).replace(/\u00a0/g,&quot; &quot;)},type:function(e){return Object.prototype.toString.call(e).slice(8,-1)},objId:function(e){return e.__id||Object.defineProperty(e,&quot;__id&quot;,{value:++n}),e.__id},clone:function t(e,r){var a,n;switch(r=r||{},M.util.type(e)){case&quot;Object&quot;:if(n=M.util.objId(e),r[n])return r[n];for(var i in a={},r[n]=a,e)e.hasOwnProperty(i)&amp;&amp;(a[i]=t(e[i],r));return a;case&quot;Array&quot;:return n=M.util.objId(e),r[n]?r[n]:(a=[],r[n]=a,e.forEach(function(e,n){a[n]=t(e,r)}),a);default:return e}},getLanguage:function(e){for(;e&amp;&amp;!c.test(e.className);)e=e.parentElement;return e?(e.className.match(c)||[,&quot;none&quot;])[1].toLowerCase():&quot;none&quot;},currentScript:function(){if(&quot;undefined&quot;==typeof document)return null;if(&quot;currentScript&quot;in document)return document.currentScript;try{throw new Error}catch(e){var n=(/at [^(\r\n]*\((.*):.+:.+\)$/i.exec(e.stack)||[])[1];if(n){var t=document.getElementsByTagName(&quot;script&quot;);for(var r in t)if(t[r].src==n)return t[r]}return null}},isActive:function(e,n,t){for(var r=&quot;no-&quot;+n;e;){var a=e.classList;if(a.contains(n))return!0;if(a.contains(r))return!1;e=e.parentElement}return!!t}},languages:{plain:e,plaintext:e,text:e,txt:e,extend:function(e,n){var t=M.util.clone(M.languages[e]);for(var r in n)t[r]=n[r];return t},insertBefore:function(t,e,n,r){var a=(r=r||M.languages)[t],i={};for(var l in a)if(a.hasOwnProperty(l)){if(l==e)for(var o in n)n.hasOwnProperty(o)&amp;&amp;(i[o]=n[o]);n.hasOwnProperty(l)||(i[l]=a[l])}var s=r[t];return r[t]=i,M.languages.DFS(M.languages,function(e,n){n===s&amp;&amp;e!=t&amp;&amp;(this[e]=i)}),i},DFS:function e(n,t,r,a){a=a||{};var i=M.util.objId;for(var l in n)if(n.hasOwnProperty(l)){t.call(n,l,n[l],r||l);var o=n[l],s=M.util.type(o);&quot;Object&quot;!==s||a[i(o)]?&quot;Array&quot;!==s||a[i(o)]||(a[i(o)]=!0,e(o,t,l,a)):(a[i(o)]=!0,e(o,t,null,a))}}},plugins:{},highlightAll:function(e,n){M.highlightAllUnder(document,e,n)},highlightAllUnder:function(e,n,t){var r={callback:t,container:e,selector:&#39;code[class*=&quot;language-&quot;], [class*=&quot;language-&quot;] code, code[class*=&quot;lang-&quot;], [class*=&quot;lang-&quot;] code&#39;};M.hooks.run(&quot;before-highlightall&quot;,r),r.elements=Array.prototype.slice.apply(r.container.querySelectorAll(r.selector)),M.hooks.run(&quot;before-all-elements-highlight&quot;,r);for(var a,i=0;a=r.elements[i++];)M.highlightElement(a,!0===n,r.callback)},highlightElement:function(e,n,t){var r=M.util.getLanguage(e),a=M.languages[r];e.className=e.className.replace(c,&quot;&quot;).replace(/\s+/g,&quot; &quot;)+&quot; language-&quot;+r;var i=e.parentElement;i&amp;&amp;&quot;pre&quot;===i.nodeName.toLowerCase()&amp;&amp;(i.className=i.className.replace(c,&quot;&quot;).replace(/\s+/g,&quot; &quot;)+&quot; language-&quot;+r);var l={element:e,language:r,grammar:a,code:e.textContent};function o(e){l.highlightedCode=e,M.hooks.run(&quot;before-insert&quot;,l),l.element.innerHTML=l.highlightedCode,M.hooks.run(&quot;after-highlight&quot;,l),M.hooks.run(&quot;complete&quot;,l),t&amp;&amp;t.call(l.element)}if(M.hooks.run(&quot;before-sanity-check&quot;,l),(i=l.element.parentElement)&amp;&amp;&quot;pre&quot;===i.nodeName.toLowerCase()&amp;&amp;!i.hasAttribute(&quot;tabindex&quot;)&amp;&amp;i.setAttribute(&quot;tabindex&quot;,&quot;0&quot;),!l.code)return M.hooks.run(&quot;complete&quot;,l),void(t&amp;&amp;t.call(l.element));if(M.hooks.run(&quot;before-highlight&quot;,l),l.grammar)if(n&amp;&amp;u.Worker){var s=new Worker(M.filename);s.onmessage=function(e){o(e.data)},s.postMessage(JSON.stringify({language:l.language,code:l.code,immediateClose:!0}))}else o(M.highlight(l.code,l.grammar,l.language));else o(M.util.encode(l.code))},highlight:function(e,n,t){var r={code:e,grammar:n,language:t};return M.hooks.run(&quot;before-tokenize&quot;,r),r.tokens=M.tokenize(r.code,r.grammar),M.hooks.run(&quot;after-tokenize&quot;,r),W.stringify(M.util.encode(r.tokens),r.language)},tokenize:function(e,n){var t=n.rest;if(t){for(var r in t)n[r]=t[r];delete n.rest}var a=new i;return I(a,a.head,e),function e(n,t,r,a,i,l){for(var o in r)if(r.hasOwnProperty(o)&amp;&amp;r[o]){var s=r[o];s=Array.isArray(s)?s:[s];for(var u=0;u&lt;s.length;++u){if(l&amp;&amp;l.cause==o+&quot;,&quot;+u)return;var c=s[u],g=c.inside,f=!!c.lookbehind,h=!!c.greedy,d=c.alias;if(h&amp;&amp;!c.pattern.global){var p=c.pattern.toString().match(/[imsuy]*$/)[0];c.pattern=RegExp(c.pattern.source,p+&quot;g&quot;)}for(var v=c.pattern||c,m=a.next,y=i;m!==t.tail&amp;&amp;!(l&amp;&amp;y&gt;=l.reach);y+=m.value.length,m=m.next){var b=m.value;if(t.length&gt;n.length)return;if(!(b instanceof W)){var k,x=1;if(h){if(!(k=z(v,y,n,f)))break;var w=k.index,A=k.index+k[0].length,P=y;for(P+=m.value.length;P&lt;=w;)m=m.next,P+=m.value.length;if(P-=m.value.length,y=P,m.value instanceof W)continue;for(var E=m;E!==t.tail&amp;&amp;(P&lt;A||&quot;string&quot;==typeof E.value);E=E.next)x++,P+=E.value.length;x--,b=n.slice(y,P),k.index-=y}else if(!(k=z(v,0,b,f)))continue;var w=k.index,S=k[0],O=b.slice(0,w),L=b.slice(w+S.length),N=y+b.length;l&amp;&amp;N&gt;l.reach&amp;&amp;(l.reach=N);var j=m.prev;O&amp;&amp;(j=I(t,j,O),y+=O.length),q(t,j,x);var C=new W(o,g?M.tokenize(S,g):S,d,S);if(m=I(t,j,C),L&amp;&amp;I(t,m,L),1&lt;x){var _={cause:o+&quot;,&quot;+u,reach:N};e(n,t,r,m.prev,y,_),l&amp;&amp;_.reach&gt;l.reach&amp;&amp;(l.reach=_.reach)}}}}}}(e,a,n,a.head,0),function(e){var n=[],t=e.head.next;for(;t!==e.tail;)n.push(t.value),t=t.next;return n}(a)},hooks:{all:{},add:function(e,n){var t=M.hooks.all;t[e]=t[e]||[],t[e].push(n)},run:function(e,n){var t=M.hooks.all[e];if(t&amp;&amp;t.length)for(var r,a=0;r=t[a++];)r(n)}},Token:W};function W(e,n,t,r){this.type=e,this.content=n,this.alias=t,this.length=0|(r||&quot;&quot;).length}function z(e,n,t,r){e.lastIndex=n;var a=e.exec(t);if(a&amp;&amp;r&amp;&amp;a[1]){var i=a[1].length;a.index+=i,a[0]=a[0].slice(i)}return a}function i(){var e={value:null,prev:null,next:null},n={value:null,prev:e,next:null};e.next=n,this.head=e,this.tail=n,this.length=0}function I(e,n,t){var r=n.next,a={value:t,prev:n,next:r};return n.next=a,r.prev=a,e.length++,a}function q(e,n,t){for(var r=n.next,a=0;a&lt;t&amp;&amp;r!==e.tail;a++)r=r.next;(n.next=r).prev=n,e.length-=a}if(u.Prism=M,W.stringify=function n(e,t){if(&quot;string&quot;==typeof e)return e;if(Array.isArray(e)){var r=&quot;&quot;;return e.forEach(function(e){r+=n(e,t)}),r}var a={type:e.type,content:n(e.content,t),tag:&quot;span&quot;,classes:[&quot;token&quot;,e.type],attributes:{},language:t},i=e.alias;i&amp;&amp;(Array.isArray(i)?Array.prototype.push.apply(a.classes,i):a.classes.push(i)),M.hooks.run(&quot;wrap&quot;,a);var l=&quot;&quot;;for(var o in a.attributes)l+=&quot; &quot;+o+&#39;=&quot;&#39;+(a.attributes[o]||&quot;&quot;).replace(/&quot;/g,&quot;&amp;quot;&quot;)+&#39;&quot;&#39;;return&quot;&lt;&quot;+a.tag+&#39; class=&quot;&#39;+a.classes.join(&quot; &quot;)+&#39;&quot;&#39;+l+&quot;&gt;&quot;+a.content+&quot;&lt;/&quot;+a.tag+&quot;&gt;&quot;},!u.document)return u.addEventListener&amp;&amp;(M.disableWorkerMessageHandler||u.addEventListener(&quot;message&quot;,function(e){var n=JSON.parse(e.data),t=n.language,r=n.code,a=n.immediateClose;u.postMessage(M.highlight(r,M.languages[t],t)),a&amp;&amp;u.close()},!1)),M;var t=M.util.currentScript();function r(){M.manual||M.highlightAll()}if(t&amp;&amp;(M.filename=t.src,t.hasAttribute(&quot;data-manual&quot;)&amp;&amp;(M.manual=!0)),!M.manual){var a=document.readyState;&quot;loading&quot;===a||&quot;interactive&quot;===a&amp;&amp;t&amp;&amp;t.defer?document.addEventListener(&quot;DOMContentLoaded&quot;,r):window.requestAnimationFrame?window.requestAnimationFrame(r):window.setTimeout(r,16)}return M}(_self);&quot;undefined&quot;!=typeof module&amp;&amp;module.exports&amp;&amp;(module.exports=Prism),&quot;undefined&quot;!=typeof global&amp;&amp;(global.Prism=Prism);
+Prism.languages.markup={comment:/&lt;!--[\s\S]*?--&gt;/,prolog:/&lt;\?[\s\S]+?\?&gt;/,doctype:{pattern:/&lt;!DOCTYPE(?:[^&gt;&quot;&#39;[\]]|&quot;[^&quot;]*&quot;|&#39;[^&#39;]*&#39;)+(?:\[(?:[^&lt;&quot;&#39;\]]|&quot;[^&quot;]*&quot;|&#39;[^&#39;]*&#39;|&lt;(?!!--)|&lt;!--(?:[^-]|-(?!-&gt;))*--&gt;)*\]\s*)?&gt;/i,greedy:!0,inside:{&quot;internal-subset&quot;:{pattern:/(^[^\[]*\[)[\s\S]+(?=\]&gt;$)/,lookbehind:!0,greedy:!0,inside:null},string:{pattern:/&quot;[^&quot;]*&quot;|&#39;[^&#39;]*&#39;/,greedy:!0},punctuation:/^&lt;!|&gt;$|[[\]]/,&quot;doctype-tag&quot;:/^DOCTYPE/,name:/[^\s&lt;&gt;&#39;&quot;]+/}},cdata:/&lt;!\[CDATA\[[\s\S]*?\]\]&gt;/i,tag:{pattern:/&lt;\/?(?!\d)[^\s&gt;\/=$&lt;%]+(?:\s(?:\s*[^\s&gt;\/=]+(?:\s*=\s*(?:&quot;[^&quot;]*&quot;|&#39;[^&#39;]*&#39;|[^\s&#39;&quot;&gt;=]+(?=[\s&gt;]))|(?=[\s/&gt;])))+)?\s*\/?&gt;/,greedy:!0,inside:{tag:{pattern:/^&lt;\/?[^\s&gt;\/]+/,inside:{punctuation:/^&lt;\/?/,namespace:/^[^\s&gt;\/:]+:/}},&quot;special-attr&quot;:[],&quot;attr-value&quot;:{pattern:/=\s*(?:&quot;[^&quot;]*&quot;|&#39;[^&#39;]*&#39;|[^\s&#39;&quot;&gt;=]+)/,inside:{punctuation:[{pattern:/^=/,alias:&quot;attr-equals&quot;},/&quot;|&#39;/]}},punctuation:/\/?&gt;/,&quot;attr-name&quot;:{pattern:/[^\s&gt;\/]+/,inside:{namespace:/^[^\s&gt;\/:]+:/}}}},entity:[{pattern:/&amp;[\da-z]{1,8};/i,alias:&quot;named-entity&quot;},/&amp;#x?[\da-f]{1,8};/i]},Prism.languages.markup.tag.inside[&quot;attr-value&quot;].inside.entity=Prism.languages.markup.entity,Prism.languages.markup.doctype.inside[&quot;internal-subset&quot;].inside=Prism.languages.markup,Prism.hooks.add(&quot;wrap&quot;,function(a){&quot;entity&quot;===a.type&amp;&amp;(a.attributes.title=a.content.replace(/&amp;amp;/,&quot;&amp;&quot;))}),Object.defineProperty(Prism.languages.markup.tag,&quot;addInlined&quot;,{value:function(a,e){var s={};s[&quot;language-&quot;+e]={pattern:/(^&lt;!\[CDATA\[)[\s\S]+?(?=\]\]&gt;$)/i,lookbehind:!0,inside:Prism.languages[e]},s.cdata=/^&lt;!\[CDATA\[|\]\]&gt;$/i;var t={&quot;included-cdata&quot;:{pattern:/&lt;!\[CDATA\[[\s\S]*?\]\]&gt;/i,inside:s}};t[&quot;language-&quot;+e]={pattern:/[\s\S]+/,inside:Prism.languages[e]};var n={};n[a]={pattern:RegExp(&quot;(&lt;__[^&gt;]*&gt;)(?:&lt;!\\[CDATA\\[(?:[^\\]]|\\](?!\\]&gt;))*\\]\\]&gt;|(?!&lt;!\\[CDATA\\[)[^])*?(?=&lt;/__&gt;)&quot;.replace(/__/g,function(){return a}),&quot;i&quot;),lookbehind:!0,greedy:!0,inside:t},Prism.languages.insertBefore(&quot;markup&quot;,&quot;cdata&quot;,n)}}),Object.defineProperty(Prism.languages.markup.tag,&quot;addAttribute&quot;,{value:function(a,e){Prism.languages.markup.tag.inside[&quot;special-attr&quot;].push({pattern:RegExp(&quot;(^|[\&quot;&#39;\\s])(?:&quot;+a+&quot;)\\s*=\\s*(?:\&quot;[^\&quot;]*\&quot;|&#39;[^&#39;]*&#39;|[^\\s&#39;\&quot;&gt;=]+(?=[\\s&gt;]))&quot;,&quot;i&quot;),lookbehind:!0,inside:{&quot;attr-name&quot;:/^[^\s=]+/,&quot;attr-value&quot;:{pattern:/=[\s\S]+/,inside:{value:{pattern:/(^=\s*([&quot;&#39;]|(?![&quot;&#39;])))\S[\s\S]*(?=\2$)/,lookbehind:!0,alias:[e,&quot;language-&quot;+e],inside:Prism.languages[e]},punctuation:[{pattern:/^=/,alias:&quot;attr-equals&quot;},/&quot;|&#39;/]}}}})}}),Prism.languages.html=Prism.languages.markup,Prism.languages.mathml=Prism.languages.markup,Prism.languages.svg=Prism.languages.markup,Prism.languages.xml=Prism.languages.extend(&quot;markup&quot;,{}),Prism.languages.ssml=Prism.languages.xml,Prism.languages.atom=Prism.languages.xml,Prism.languages.rss=Prism.languages.xml;
+!function(s){var e=/(?:&quot;(?:\\(?:\r\n|[\s\S])|[^&quot;\\\r\n])*&quot;|&#39;(?:\\(?:\r\n|[\s\S])|[^&#39;\\\r\n])*&#39;)/;s.languages.css={comment:/\/\*[\s\S]*?\*\//,atrule:{pattern:/@[\w-](?:[^;{\s]|\s+(?![\s{]))*(?:;|(?=\s*\{))/,inside:{rule:/^@[\w-]+/,&quot;selector-function-argument&quot;:{pattern:/(\bselector\s*\(\s*(?![\s)]))(?:[^()\s]|\s+(?![\s)])|\((?:[^()]|\([^()]*\))*\))+(?=\s*\))/,lookbehind:!0,alias:&quot;selector&quot;},keyword:{pattern:/(^|[^\w-])(?:and|not|only|or)(?![\w-])/,lookbehind:!0}}},url:{pattern:RegExp(&quot;\\burl\\((?:&quot;+e.source+&quot;|(?:[^\\\\\r\n()\&quot;&#39;]|\\\\[^])*)\\)&quot;,&quot;i&quot;),greedy:!0,inside:{function:/^url/i,punctuation:/^\(|\)$/,string:{pattern:RegExp(&quot;^&quot;+e.source+&quot;$&quot;),alias:&quot;url&quot;}}},selector:{pattern:RegExp(&quot;(^|[{}\\s])[^{}\\s](?:[^{};\&quot;&#39;\\s]|\\s+(?![\\s{])|&quot;+e.source+&quot;)*(?=\\s*\\{)&quot;),lookbehind:!0},string:{pattern:e,greedy:!0},property:{pattern:/(^|[^-\w\xA0-\uFFFF])(?!\s)[-_a-z\xA0-\uFFFF](?:(?!\s)[-\w\xA0-\uFFFF])*(?=\s*:)/i,lookbehind:!0},important:/!important\b/i,function:{pattern:/(^|[^-a-z0-9])[-a-z0-9]+(?=\()/i,lookbehind:!0},punctuation:/[(){};:,]/},s.languages.css.atrule.inside.rest=s.languages.css;var t=s.languages.markup;t&amp;&amp;(t.tag.addInlined(&quot;style&quot;,&quot;css&quot;),t.tag.addAttribute(&quot;style&quot;,&quot;css&quot;))}(Prism);
+Prism.languages.clike={comment:[{pattern:/(^|[^\\])\/\*[\s\S]*?(?:\*\/|$)/,lookbehind:!0,greedy:!0},{pattern:/(^|[^\\:])\/\/.*/,lookbehind:!0,greedy:!0}],string:{pattern:/([&quot;&#39;])(?:\\(?:\r\n|[\s\S])|(?!\1)[^\\\r\n])*\1/,greedy:!0},&quot;class-name&quot;:{pattern:/(\b(?:class|interface|extends|implements|trait|instanceof|new)\s+|\bcatch\s+\()[\w.\\]+/i,lookbehind:!0,inside:{punctuation:/[.\\]/}},keyword:/\b(?:if|else|while|do|for|return|in|instanceof|function|new|try|throw|catch|finally|null|break|continue)\b/,boolean:/\b(?:true|false)\b/,function:/\b\w+(?=\()/,number:/\b0x[\da-f]+\b|(?:\b\d+(?:\.\d*)?|\B\.\d+)(?:e[+-]?\d+)?/i,operator:/[&lt;&gt;]=?|[!=]=?=?|--?|\+\+?|&amp;&amp;?|\|\|?|[?*/~^%]/,punctuation:/[{}[\];(),.:]/};
+Prism.languages.javascript=Prism.languages.extend(&quot;clike&quot;,{&quot;class-name&quot;:[Prism.languages.clike[&quot;class-name&quot;],{pattern:/(^|[^$\w\xA0-\uFFFF])(?!\s)[_$A-Z\xA0-\uFFFF](?:(?!\s)[$\w\xA0-\uFFFF])*(?=\.(?:prototype|constructor))/,lookbehind:!0}],keyword:[{pattern:/((?:^|\})\s*)catch\b/,lookbehind:!0},{pattern:/(^|[^.]|\.\.\.\s*)\b(?:as|assert(?=\s*\{)|async(?=\s*(?:function\b|\(|[$\w\xA0-\uFFFF]|$))|await|break|case|class|const|continue|debugger|default|delete|do|else|enum|export|extends|finally(?=\s*(?:\{|$))|for|from(?=\s*(?:[&#39;&quot;]|$))|function|(?:get|set)(?=\s*(?:[#\[$\w\xA0-\uFFFF]|$))|if|implements|import|in|instanceof|interface|let|new|null|of|package|private|protected|public|return|static|super|switch|this|throw|try|typeof|undefined|var|void|while|with|yield)\b/,lookbehind:!0}],function:/#?(?!\s)[_$a-zA-Z\xA0-\uFFFF](?:(?!\s)[$\w\xA0-\uFFFF])*(?=\s*(?:\.\s*(?:apply|bind|call)\s*)?\()/,number:/\b(?:(?:0[xX](?:[\dA-Fa-f](?:_[\dA-Fa-f])?)+|0[bB](?:[01](?:_[01])?)+|0[oO](?:[0-7](?:_[0-7])?)+)n?|(?:\d(?:_\d)?)+n|NaN|Infinity)\b|(?:\b(?:\d(?:_\d)?)+\.?(?:\d(?:_\d)?)*|\B\.(?:\d(?:_\d)?)+)(?:[Ee][+-]?(?:\d(?:_\d)?)+)?/,operator:/--|\+\+|\*\*=?|=&gt;|&amp;&amp;=?|\|\|=?|[!=]==|&lt;&lt;=?|&gt;&gt;&gt;?=?|[-+*/%&amp;|^!=&lt;&gt;]=?|\.{3}|\?\?=?|\?\.?|[~:]/}),Prism.languages.javascript[&quot;class-name&quot;][0].pattern=/(\b(?:class|interface|extends|implements|instanceof|new)\s+)[\w.\\]+/,Prism.languages.insertBefore(&quot;javascript&quot;,&quot;keyword&quot;,{regex:{pattern:/((?:^|[^$\w\xA0-\uFFFF.&quot;&#39;\])\s]|\b(?:return|yield))\s*)\/(?:\[(?:[^\]\\\r\n]|\\.)*\]|\\.|[^/\\\[\r\n])+\/[dgimyus]{0,7}(?=(?:\s|\/\*(?:[^*]|\*(?!\/))*\*\/)*(?:$|[\r\n,.;:})\]]|\/\/))/,lookbehind:!0,greedy:!0,inside:{&quot;regex-source&quot;:{pattern:/^(\/)[\s\S]+(?=\/[a-z]*$)/,lookbehind:!0,alias:&quot;language-regex&quot;,inside:Prism.languages.regex},&quot;regex-delimiter&quot;:/^\/|\/$/,&quot;regex-flags&quot;:/^[a-z]+$/}},&quot;function-variable&quot;:{pattern:/#?(?!\s)[_$a-zA-Z\xA0-\uFFFF](?:(?!\s)[$\w\xA0-\uFFFF])*(?=\s*[=:]\s*(?:async\s*)?(?:\bfunction\b|(?:\((?:[^()]|\([^()]*\))*\)|(?!\s)[_$a-zA-Z\xA0-\uFFFF](?:(?!\s)[$\w\xA0-\uFFFF])*)\s*=&gt;))/,alias:&quot;function&quot;},parameter:[{pattern:/(function(?:\s+(?!\s)[_$a-zA-Z\xA0-\uFFFF](?:(?!\s)[$\w\xA0-\uFFFF])*)?\s*\(\s*)(?!\s)(?:[^()\s]|\s+(?![\s)])|\([^()]*\))+(?=\s*\))/,lookbehind:!0,inside:Prism.languages.javascript},{pattern:/(^|[^$\w\xA0-\uFFFF])(?!\s)[_$a-z\xA0-\uFFFF](?:(?!\s)[$\w\xA0-\uFFFF])*(?=\s*=&gt;)/i,lookbehind:!0,inside:Prism.languages.javascript},{pattern:/(\(\s*)(?!\s)(?:[^()\s]|\s+(?![\s)])|\([^()]*\))+(?=\s*\)\s*=&gt;)/,lookbehind:!0,inside:Prism.languages.javascript},{pattern:/((?:\b|\s|^)(?!(?:as|async|await|break|case|catch|class|const|continue|debugger|default|delete|do|else|enum|export|extends|finally|for|from|function|get|if|implements|import|in|instanceof|interface|let|new|null|of|package|private|protected|public|return|set|static|super|switch|this|throw|try|typeof|undefined|var|void|while|with|yield)(?![$\w\xA0-\uFFFF]))(?:(?!\s)[_$a-zA-Z\xA0-\uFFFF](?:(?!\s)[$\w\xA0-\uFFFF])*\s*)\(\s*|\]\s*\(\s*)(?!\s)(?:[^()\s]|\s+(?![\s)])|\([^()]*\))+(?=\s*\)\s*\{)/,lookbehind:!0,inside:Prism.languages.javascript}],constant:/\b[A-Z](?:[A-Z_]|\dx?)*\b/}),Prism.languages.insertBefore(&quot;javascript&quot;,&quot;string&quot;,{hashbang:{pattern:/^#!.*/,greedy:!0,alias:&quot;comment&quot;},&quot;template-string&quot;:{pattern:/`(?:\\[\s\S]|\$\{(?:[^{}]|\{(?:[^{}]|\{[^}]*\})*\})+\}|(?!\$\{)[^\\`])*`/,greedy:!0,inside:{&quot;template-punctuation&quot;:{pattern:/^`|`$/,alias:&quot;string&quot;},interpolation:{pattern:/((?:^|[^\\])(?:\\{2})*)\$\{(?:[^{}]|\{(?:[^{}]|\{[^}]*\})*\})+\}/,lookbehind:!0,inside:{&quot;interpolation-punctuation&quot;:{pattern:/^\$\{|\}$/,alias:&quot;punctuation&quot;},rest:Prism.languages.javascript}},string:/[\s\S]+/}}}),Prism.languages.markup&amp;&amp;(Prism.languages.markup.tag.addInlined(&quot;script&quot;,&quot;javascript&quot;),Prism.languages.markup.tag.addAttribute(&quot;on(?:abort|blur|change|click|composition(?:end|start|update)|dblclick|error|focus(?:in|out)?|key(?:down|up)|load|mouse(?:down|enter|leave|move|out|over|up)|reset|resize|scroll|select|slotchange|submit|unload|wheel)&quot;,&quot;javascript&quot;)),Prism.languages.js=Prism.languages.javascript;
+
+&lt;/script&gt;</code></pre>
+<p>Remove</p></li>
+<li><p>before <code>&lt;/head&gt;</code></p>
+<p>meta</p>
+<pre><code>&lt;meta name=&quot;google-site-verification&quot; content=&quot;q5W83EYchlVTyA-iYRE4ElQGcbD_vukQF0NKW12N3qU&quot; /&gt;</code></pre>
+<p>Remove</p></li>
+<li><p>before <code>&lt;/body&gt;</code></p>
+<p>tawk-widget</p>
+<pre><code>&lt;!--Start of Tawk.to Script--&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement(&quot;script&quot;),s0=document.getElementsByTagName(&quot;script&quot;)[0];
+s1.async=true;
+s1.src=&#39;https://embed.tawk.to/613041ecd6e7610a49b3326a/1fei8314t&#39;;
+s1.charset=&#39;UTF-8&#39;;
+s1.setAttribute(&#39;crossorigin&#39;,&#39;*&#39;);
+s0.parentNode.insertBefore(s1,s0);
+})();
+&lt;/script&gt;
+&lt;!--End of Tawk.to Script--&gt;</code></pre>
+<p>Remove</p></li>
+<li><p>before <code>&lt;/head&gt;</code></p>
+<p>hubspot</p>
+<pre><code>&lt;!--[if lte IE 8]&gt;
+&lt;script charset=&quot;utf-8&quot; type=&quot;text/javascript&quot; src=&quot;//js.hsforms.net/forms/v2-legacy.js&quot;&gt;&lt;/script&gt;
+&lt;![endif]--&gt;
+&lt;script charset=&quot;utf-8&quot; type=&quot;text/javascript&quot; src=&quot;//js.hsforms.net/forms/v2.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+  hbspt.forms.create({
+    region: &quot;na1&quot;,
+    portalId: &quot;20684171&quot;,
+    formId: &quot;8fae351b-d575-47eb-a789-27f6a6b2c9d1&quot;
+});
+&lt;/script&gt;</code></pre>
+<p>Remove</p></li>
+<li><p>before <code>&lt;/head&gt;</code></p>
+<p>hubspot-analytics</p>
+<pre><code>&lt;!-- Start of HubSpot Embed Code --&gt;
+&lt;script type=&quot;text/javascript&quot; id=&quot;hs-script-loader&quot; async defer src=&quot;//js.hs-scripts.com/20684171.js&quot;&gt;&lt;/script&gt;
+&lt;!-- End of HubSpot Embed Code --&gt;</code></pre>
+<p>Remove</p></li>
+<li><p>before <code>&lt;/body&gt;</code></p>
+<p>typeform</p>
+<pre><code>&lt;div data-tf-popover=&quot;zL20wTbS&quot; data-tf-custom-icon=&quot;https://images.typeform.com/images/bDK2t34aaS3Z&quot; data-tf-button-color=&quot;#00183E&quot; data-tf-notification-days=&quot;7&quot; data-tf-chat style=&quot;all:unset;&quot;&gt;&lt;/div&gt;&lt;script src=&quot;//embed.typeform.com/next/embed.js&quot;&gt;&lt;/script&gt;</code></pre>
+<p>Remove</p></li>
+</ul>
+<p><a href="https://www.netlify.com/docs/inject-analytics-snippets">Learn more about snippet injection in the docs</a></p>
+<p>Add snippet</p>
+<h3 id="asset-optimization"><a href="https://app.netlify.com/sites/bgoonz-blog/settings/deploys#asset-optimization">Asset optimization</a></h3>
+<p>URLs</p>
+<p>Pretty URLs</p>
+<p>CSS</p>
+<p>Bundle &amp; Minify</p>
+<p>JS</p>
+<p>Bundle &amp; Minify</p>
+<p>Images</p>
+<p>Lossless compression</p>
+<p>Edit settings</p>
+<h3 id="prerendering"><a href="https://app.netlify.com/sites/bgoonz-blog/settings/deploys#prerendering">Prerendering</a></h3>
+<p>Beta</p>
+<p>Prerendering enabled with Netlify</p>
+<p>Edit settings</p>
+<h3 id="form-detection"><a href="https://app.netlify.com/sites/bgoonz-blog/settings/deploys#form-detection">Form detection</a></h3>
+<p>With each deploy, Netlify scans new and changed HTML files for forms to enable handling submissions. If you’re not using Netlify Forms, you can disable form detection to speed up deploy time.</p>
+<p><a href="https://docs.netlify.com/site-deploys/post-processing/form-detection/">Learn more about form detection in the docs</a></p>
+<p>Edit settings</p>
+<h2 id="deploy-notifications"><a href="https://app.netlify.com/sites/bgoonz-blog/settings/deploys#deploy-notifications">Deploy notifications</a></h2>
+<p>Set up outgoing webhooks to notify other services about deploys for your site. <a href="https://www.netlify.com/docs/webhooks/#outgoing-webhooks-and-notifications">Learn more</a></p>
+<h3 id="outgoing-notifications"><a href="https://app.netlify.com/sites/bgoonz-blog/settings/deploys#outgoing-notifications">Outgoing notifications</a></h3>
+<p>Add notification</p>
+<ul>
+<li><p>Post to https://api.stackbit.com/project/609b2d7c71a5dd0016f36326/webhook/netlify when deploy starts</p>
+<p>Options</p></li>
+<li><p>Post to https://api.stackbit.com/project/609b2d7c71a5dd0016f36326/webhook/netlify when deploy succeeds</p>
+<p>Options</p></li>
+<li><p>Post to https://api.stackbit.com/project/609b2d7c71a5dd0016f36326/webhook/netlify when deploy fails</p>
+<p>Options</p></li>
+<li><p>Add rich details to commits when Deploy Preview starts</p>
+<p>Options</p></li>
+<li><p>Add rich details to commits when Deploy Preview succeeds</p>
+<p>Options</p></li>
+<li><p>Add rich details to commits when Deploy Preview fails</p>
+<p>Options</p></li>
+<li><p>Email bryan.guner@gmail.com when deploy request is pending</p>
+<p>Options</p></li>
+<li><p>Email bryan.guner@gmail.com when deploy request is accepted</p>
+<p>Options</p></li>
+<li><p>Email bryan.guner@gmail.com when deploy request is rejected</p>
+<p>Options</p></li>
+<li><a href="https://www.netlify.com/docs/">Docs</a></li>
+<li><a href="https://www.netlify.com/pricing/">Pricing</a></li>
+<li><a href="https://www.netlify.com/support">Support</a></li>
+<li><a href="https://www.netlify.com/news/">News</a></li>
+<li><p><a href="https://www.netlify.com/tos/">Terms</a></p></li>
+</ul>
+<p>© 2021 Netlify</p>
+</body>
+</html>

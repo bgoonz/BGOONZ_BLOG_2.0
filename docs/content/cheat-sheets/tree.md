@@ -1,15 +1,20 @@
-# To display a recursive directory tree:
+To display a recursive directory tree:
+======================================
 
 tree
 
-# To make tree output contents from <dir>:
+\# To make tree output contents from
 
-tree <dir>
+:
 
-# To make tree omit any empty directories from the output:
+tree
 
-tree --prune
+To make tree omit any empty directories from the output:
+========================================================
 
-# To list directories only (`-d`), and at a max depth of two levels (`-L`):
+tree –prune
+
+To list directories only (`-d`), and at a max depth of two levels (`-L`):
+=========================================================================
 
 tree -d -L 2

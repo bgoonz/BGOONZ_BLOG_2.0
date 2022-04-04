@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>roundingthefastway</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<p>title: Truncating the fast (but risky) way tip-number: 18 tip-username: pklinger tip-username-profile: https://github.com/pklinger tip-tldr: .<code>~~X</code> is usually a faster <code>Math.trunc(X)</code>, but can also make your code do nasty things.</p>
+<ul>
+<li>/en/rounding-the-fast-way/</li>
+</ul>
+<p>This tip is about performance…with a hidden price tag.</p>
+<p>Have you ever come across the <a href="http://stackoverflow.com/questions/5971645/what-is-the-double-tilde-operator-in-javascript">double tilde <code>~~</code> operator</a>? It’s also often called the “double bitwise NOT” operator. You can often use it as a faster substitute for <code>Math.trunc()</code>. Why is that?</p>
+<p>One bitwise shift <code>~</code> first truncates <code>input</code> to 32 bits, then transforms it into <code>-(input+1)</code>. The double bitwise shift therefore transforms the input into <code>-(-(input + 1)+1)</code> making it a great tool to round towards zero. For numeric input, it therefore mimics <code>Math.trunc()</code>. On failure, <code>0</code> is returned, which might come in handy sometimes instead of <code>Math.trunc()</code>, which returns <code>NaN</code> on failure.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="co">// single ~</span></a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="va">console</span>.<span class="at">log</span>(<span class="op">~</span><span class="dv">1337</span>)<span class="op">;</span> <span class="co">// -1338</span></a>
+<a class="sourceLine" id="cb1-3" title="3"></a>
+<a class="sourceLine" id="cb1-4" title="4"><span class="co">// numeric input</span></a>
+<a class="sourceLine" id="cb1-5" title="5"><span class="va">console</span>.<span class="at">log</span>(<span class="op">~~</span><span class="fl">47.11</span>)<span class="op">;</span> <span class="co">// -&gt; 47</span></a>
+<a class="sourceLine" id="cb1-6" title="6"><span class="va">console</span>.<span class="at">log</span>(<span class="op">~~</span><span class="fl">1.9999</span>)<span class="op">;</span> <span class="co">// -&gt; 1</span></a>
+<a class="sourceLine" id="cb1-7" title="7"><span class="va">console</span>.<span class="at">log</span>(<span class="op">~~</span><span class="dv">3</span>)<span class="op">;</span> <span class="co">// -&gt; 3</span></a></code></pre></div>
+<p>However, while <code>~~</code> is probably a better performer, experienced programmers often stick with <code>Math.trunc()</code> instead. To understand why, here’s a clinical view on this operator.</p>
+<h3 id="indications">INDICATIONS</h3>
+<h5 id="when-every-cpu-cycle-counts">When every CPU cycle counts</h5>
+<p><code>~~</code> is probably faster than <code>Math.trunc()</code> across the board, though you should <a href="https://jsperf.com/jsfvsbitnot/10">test that assumption</a> on whichever platforms matter to you. Also, you’d generally have to perform millions of such operations to have any visible impact at run time.</p>
+<h5 id="when-code-clarity-is-not-a-concern">When code clarity is not a concern</h5>
+<p>If you’re trying to confuse others, or get maximum utility from your minifier/uglifier, this is a relatively cheap way to do it.</p>
+<h3 id="contraindications">CONTRAINDICATIONS</h3>
+<h5 id="when-your-code-needs-to-be-maintained">When your code needs to be maintained</h5>
+<p>Code clarity is of great importance in the long term, whether you work in a team, contribute to public code repos, or fly solo. As <a href="http://c2.com/cgi/wiki?CodeForTheMaintainer">the oft-quoted saying</a> goes:</p>
+<blockquote>
+<p>Always code as if the person who ends up maintaining your code is a violent psychopath who knows where you live.</p>
+</blockquote>
+<p>For a solo programmer, that psychopath is inevitably “you in six months”.</p>
+<h5 id="when-you-forget-that-always-rounds-to-zero">When you forget that <code>~~</code> always rounds to zero</h5>
+<p>Newbie programmers may fixate on the cleverness of <code>~~</code>, forgetting the significance of “just drop the fractional portion of this number”. This can easily lead to <strong>fencepost errors</strong> (a.k.a. “off-by-one”) when transforming floats to array indices or related ordinal values, where a different kind of fractional rounding may actually be called for. (Lack of code clarity usually contributes to this problem.)</p>
+<p>For instance, if you’re counting numbers on a “nearest integer” basis, you should use <code>Math.round()</code> instead of <code>~~</code>, but programmer laziness and the impact of <strong><em>10 whole characters saved per use</em></strong> on human fingers often triumph over cold logic, leading to incorrect results.</p>
+<p>In contrast, the very names of the <code>Math.xyz()</code> functions clearly communicate their effect, reducing the probability of accidental errors.</p>
+<h5 id="when-dealing-with-large-magnitude-numbers">When dealing with large-magnitude numbers</h5>
+<p>Because <code>~</code> first does a 32-bit conversion, <code>~~</code> results in bogus values around ±2.15 billion. If you don’t properly range-check your input, a user could trigger unexpected behavior when the transformed value ends up being a great distance from the original:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1">a <span class="op">=</span> <span class="fl">2147483647.123</span><span class="op">;</span> <span class="co">// maximum positive 32-bit integer, plus a bit more</span></a>
+<a class="sourceLine" id="cb2-2" title="2"><span class="va">console</span>.<span class="at">log</span>(<span class="op">~~</span>a)<span class="op">;</span> <span class="co">// -&gt;  2147483647     (ok)</span></a>
+<a class="sourceLine" id="cb2-3" title="3">a <span class="op">+=</span> <span class="dv">10000</span><span class="op">;</span> <span class="co">// -&gt;  2147493647.123 (ok)</span></a>
+<a class="sourceLine" id="cb2-4" title="4"><span class="va">console</span>.<span class="at">log</span>(<span class="op">~~</span>a)<span class="op">;</span> <span class="co">// -&gt; -2147483648     (huh?)</span></a></code></pre></div>
+<p>One particularly vulnerable area involves dealing with Unix epoch timestamps (measured in seconds from 1 Jan 1970 00:00:00 UTC). A quick way to get such values is:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb3-1" title="1">epoch_int <span class="op">=</span> <span class="op">~~</span>(<span class="op">+</span><span class="kw">new</span> <span class="at">Date</span>() / <span class="dv">1000</span>)<span class="op">;</span> <span class="co">// Date() epochs in milliseconds, so we scale accordingly</span></a></code></pre></div>
+<p>However, when dealing with timestamps after 19 Jan 2038 03:14:07 UTC (sometimes called the <strong>Y2038 limit</strong>), this breaks horribly:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb4-1" title="1"><span class="co">// epoch timestamp for 1 Jan 2040 00:00:00.123 UTC</span></a>
+<a class="sourceLine" id="cb4-2" title="2">epoch <span class="op">=</span> <span class="op">+</span><span class="kw">new</span> <span class="at">Date</span>(<span class="st">&#39;2040-01-01&#39;</span>) / <span class="dv">1000</span> <span class="op">+</span> <span class="fl">0.123</span><span class="op">;</span> <span class="co">// -&gt;  2208988800.123</span></a>
+<a class="sourceLine" id="cb4-3" title="3"></a>
+<a class="sourceLine" id="cb4-4" title="4"><span class="co">// back to the future!</span></a>
+<a class="sourceLine" id="cb4-5" title="5">epoch_int <span class="op">=</span> <span class="op">~~</span>epoch<span class="op">;</span> <span class="co">// -&gt; -2085978496</span></a>
+<a class="sourceLine" id="cb4-6" title="6"><span class="va">console</span>.<span class="at">log</span>(<span class="kw">new</span> <span class="at">Date</span>(epoch_int <span class="op">*</span> <span class="dv">1000</span>))<span class="op">;</span> <span class="co">// -&gt;  Wed Nov 25 1903 17:31:44 UTC</span></a>
+<a class="sourceLine" id="cb4-7" title="7"></a>
+<a class="sourceLine" id="cb4-8" title="8"><span class="co">// that was fun, now let&#39;s get real</span></a>
+<a class="sourceLine" id="cb4-9" title="9">epoch_flr <span class="op">=</span> <span class="va">Math</span>.<span class="at">floor</span>(epoch)<span class="op">;</span> <span class="co">// -&gt;  2208988800</span></a>
+<a class="sourceLine" id="cb4-10" title="10"><span class="va">console</span>.<span class="at">log</span>(<span class="kw">new</span> <span class="at">Date</span>(epoch_flr <span class="op">*</span> <span class="dv">1000</span>))<span class="op">;</span> <span class="co">// -&gt;  Sun Jan 01 2040 00:00:00 UTC</span></a></code></pre></div>
+<h5 id="when-the-original-input-wasnt-sanitized">When the original input wasn’t sanitized</h5>
+<p>Because <code>~~</code> transforms every non-number into <code>0</code>:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb5-1" title="1"><span class="va">console</span>.<span class="at">log</span>(<span class="op">~~</span>[])<span class="op">;</span> <span class="co">// -&gt; 0</span></a>
+<a class="sourceLine" id="cb5-2" title="2"><span class="va">console</span>.<span class="at">log</span>(<span class="op">~~</span><span class="kw">NaN</span>)<span class="op">;</span> <span class="co">// -&gt; 0</span></a>
+<a class="sourceLine" id="cb5-3" title="3"><span class="va">console</span>.<span class="at">log</span>(<span class="op">~~</span><span class="kw">null</span>)<span class="op">;</span> <span class="co">// -&gt; 0</span></a></code></pre></div>
+<p>some programmers treat it as alternative to proper input validation. However, this can lead to strange logic bugs down the line, since you’re no longer distinguishing between invalid inputs and actual <code>0</code> values. This is therefore <em>not</em> a recommended practice.</p>
+<h5 id="when-so-many-people-think-x-math.floorx">When so many people think <code>~~X == Math.floor(X)</code></h5>
+<p>Most people who write about “double bitwise NOT” incorrectly equate it with <code>Math.floor()</code> for some reason. If you can’t write about it accurately, odds are good you’ll eventually misuse it.</p>
+<p>Others are more careful to mention <code>Math.floor()</code> for positive inputs and <code>Math.ceil()</code> for negative ones, but that forces you to stop and think about the values you’re dealing with. This defeats the purpose of <code>~~</code> as a handy no-gotchas shortcut.</p>
+<h3 id="dosage">DOSAGE</h3>
+<p>Avoid where possible. Use sparingly otherwise.</p>
+<h3 id="administration">ADMINISTRATION</h3>
+<ol type="1">
+<li>Apply cautiously.</li>
+<li>Sanitize values before applying.</li>
+<li>Carefully document relevant assumptions about the values being transformed.</li>
+<li>Review code to deal with, at minimum:
+<ul>
+<li>logic bugs where invalid inputs are instead passed to other code modules as valid <code>0</code> values</li>
+<li>range errors on transformed inputs</li>
+<li>fencepost errors due to incorrect rounding direction</li>
+</ul></li>
+</ol>
+</body>
+</html>

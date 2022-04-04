@@ -1,25 +1,29 @@
-# Object.keys()
+Object.keys()
+=============
 
-The `Object.keys()` method returns an array of a given object's own enumerable property **names**, iterated in the same order that a normal loop would.
+The `Object.keys()` method returns an array of a given object’s own enumerable property **names**, iterated in the same order that a normal loop would.
 
-## Syntax
+Syntax
+------
 
     Object.keys(obj)
 
 ### Parameters
 
 `obj`  
-The object of which the enumerable's own properties are to be returned.
+The object of which the enumerable’s own properties are to be returned.
 
 ### Return value
 
 An array of strings that represent all the enumerable properties of the given object.
 
-## Description
+Description
+-----------
 
 `Object.keys()` returns an array whose elements are strings corresponding to the enumerable properties found directly upon `object`. The ordering of the properties is the same as that given by looping over the properties of the object manually.
 
-## Examples
+Examples
+--------
 
 ### Using Object.keys
 
@@ -44,7 +48,7 @@ An array of strings that represent all the enumerable properties of the given ob
     myObj.foo = 1;
     console.log(Object.keys(myObj)); // console: ['foo']
 
-If you want _all_ properties—including non-enumerables—see [`Object.getOwnPropertyNames()`](getownpropertynames).
+If you want *all* properties—including non-enumerables—see [`Object.getOwnPropertyNames()`](getownpropertynames).
 
 ### Non-object coercion
 
@@ -58,7 +62,8 @@ From ES2015 onwards, a non-object argument will be coerced to an object.
     // In ES2015+
     Object.keys('foo');  // ["0", "1", "2"]
 
-## Polyfill
+Polyfill
+--------
 
 To add compatible `Object.keys` support in older environments that do not natively support it, copy the following snippet:
 
@@ -108,12 +113,11 @@ Please note that the above code includes non-enumerable keys in IE7 (and maybe I
 
 For a simple Browser Polyfill, see [Javascript - Object.keys Browser Compatibility](https://tokenposts.blogspot.com.au/2012/04/javascript-objectkeys-browser.html).
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.keys">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-object.keys</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-object.keys</span></td></tr></tbody></table>
 
 `keys`
 
@@ -141,7 +145,8 @@ For a simple Browser Polyfill, see [Javascript - Object.keys Browser Compatibili
 
 1.0
 
-## See also
+See also
+--------
 
 -   [Enumerability and ownership of properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
 -   [`Object.prototype.propertyIsEnumerable()`](propertyisenumerable)
@@ -150,6 +155,5 @@ For a simple Browser Polyfill, see [Javascript - Object.keys Browser Compatibili
 -   [`Object.values()`](values)
 -   [`Object.entries()`](entries)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys</a>

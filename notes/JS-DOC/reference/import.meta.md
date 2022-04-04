@@ -1,18 +1,22 @@
-# import.meta
+import.meta
+===========
 
-The `import.meta` object exposes context-specific metadata to a JavaScript module. It contains information about the module, like the module's URL.
+The `import.meta` object exposes context-specific metadata to a JavaScript module. It contains information about the module, like the module’s URL.
 
-## Syntax
+Syntax
+------
 
     import.meta
 
-## Description
+Description
+-----------
 
 The syntax consists of the keyword [`import`](import), a dot, and the identifier `meta`. Normally the left-hand side of the dot is the object on which property access is performed, but here `import` is not really an object.
 
 The `import.meta` object is created by the ECMAScript implementation, with a [`null`](../global_objects/null) prototype. The object is extensible, and its properties are writable, configurable, and enumerable.
 
-## Examples
+Examples
+--------
 
 ### Using import.meta
 
@@ -51,15 +55,12 @@ Note that while Node.js will pass on query parameters (or the hash) as in the la
 
 Such file-specific argument passing may be complementary to that used in the application-wide `location.href` (with query strings or hash added after the HTML file path) (or on Node.js, through `process.argv`).
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#prod-ImportMeta">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#prod-ImportMeta</span></a></td></tr><tr class="even"><td><a href="https://html.spec.whatwg.org/multipage/webappapis.html#hostgetimportmetaproperties">HTML Standard (HTML)
-<br/>
-
-<span class="small">#hostgetimportmetaproperties</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#prod-ImportMeta</span></td></tr><tr class="even"><td><p>HTML Standard (HTML)<br />
+</p><span class="small">#hostgetimportmetaproperties</span></td></tr></tbody></table>
 
 `import.meta`
 
@@ -87,11 +88,11 @@ No
 
 9.0
 
-## See also
+See also
+--------
 
 -   [`import`](import)
 -   [`export`](export)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import.meta" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import.meta</a>

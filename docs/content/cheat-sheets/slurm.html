@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>slurm</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="to-submit-a-new-job">To submit a new job:</h1>
+<p>sbatch job.sh</p>
+<h1 id="to-list-all-jobs-for-a-user">To list all jobs for a user:</h1>
+<p>squeue -u <user></p>
+<h1 id="to-cancel-a-job-by-id-or-name">To cancel a job by id or name:</h1>
+<p>scancel <job-id> scancel –name <job-name></p>
+<h1 id="to-list-all-information-for-a-job">To list all information for a job:</h1>
+<p>scontrol show jobid -dd <job-id></p>
+<h1 id="to-status-info-for-currently-running-job">To status info for currently running job:</h1>
+<p>sstat –format=AveCPU,AvePages,AveRSS,AveVMSize,JobID -j <job-id> –allsteps</p>
+</body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>typeof</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="typeof">typeof</h1>
+<p>The <code>typeof</code> operator returns a string indicating the type of the unevaluated operand.</p>
+<h2 id="syntax">Syntax</h2>
+<p>The <code>typeof</code> operator is followed by its operand:</p>
+<pre><code>typeof operand
+typeof(operand)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>operand</code><br />
+An expression representing the object or <a href="https://developer.mozilla.org/en-US/docs/Glossary/Primitive">primitive</a> whose type is to be returned.</p>
+<h2 id="description">Description</h2>
+<p>The following table summarizes the possible return values of <code>typeof</code>. For more information about types and primitives, see also the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures">JavaScript data structure</a> page.</p>
+<table>
+<thead>
+<tr class="header">
+<th>
+Type
+</th>
+<th>
+Result
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://developer.mozilla.org/en-US/docs/Glossary/undefined">Undefined</a>
+</td>
+<td>
+<code>“undefined”</code>
+</td>
+</tr>
+<tr class="even">
+<td>
+<a href="https://developer.mozilla.org/en-US/docs/Glossary/Null">Null</a>
+</td>
+<td>
+<code>“object”</code> (see <a href="#typeof_null">below</a>)
+</td>
+</tr>
+<tr class="odd">
+<td>
+<a href="https://developer.mozilla.org/en-US/docs/Glossary/Boolean">Boolean</a>
+</td>
+<td>
+<code>“boolean”</code>
+</td>
+</tr>
+<tr class="even">
+<td>
+<a href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+<td>
+<code>“number”</code>
+</td>
+</tr>
+<tr class="odd">
+<td>
+<a href="https://developer.mozilla.org/en-US/docs/Glossary/BigInt">BigInt</a> (new in ECMAScript 2020)
+</td>
+<td>
+<code>“bigint”</code>
+</td>
+</tr>
+<tr class="even">
+<td>
+<a href="https://developer.mozilla.org/en-US/docs/Glossary/String">String</a>
+</td>
+<td>
+<code>“string”</code>
+</td>
+</tr>
+<tr class="odd">
+<td>
+<a href="https://developer.mozilla.org/en-US/docs/Glossary/Symbol">Symbol</a> (new in ECMAScript 2015)
+</td>
+<td>
+<code>“symbol”</code>
+</td>
+</tr>
+<tr class="even">
+<td>
+<a href="https://developer.mozilla.org/en-US/docs/Glossary/Function">Function</a> object (implements [[Call]] in ECMA-262 terms)
+</td>
+<td>
+<code>“function”</code>
+</td>
+</tr>
+<tr class="odd">
+<td>
+Any other object
+</td>
+<td>
+<code>“object”</code>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note:</strong> ECMAScript 2019 and older permitted implementations to have <code>typeof</code> return any implementation-defined string value for non-callable non-standard exotic objects.</p>
+<p>The only known browser to have actually taken advantage of this is old Internet Explorer (see <a href="#ie-specific_notes">below</a>).</p>
+<h2 id="examples">Examples</h2>
+<h3 id="basic-usage">Basic usage</h3>
+<pre><code>// Numbers
+typeof 37 === &#39;number&#39;;
+typeof 3.14 === &#39;number&#39;;
+typeof(42) === &#39;number&#39;;
+typeof Math.LN2 === &#39;number&#39;;
+typeof Infinity === &#39;number&#39;;
+typeof NaN === &#39;number&#39;; // Despite being &quot;Not-A-Number&quot;
+typeof Number(&#39;1&#39;) === &#39;number&#39;;      // Number tries to parse things into numbers
+typeof Number(&#39;shoe&#39;) === &#39;number&#39;;   // including values that cannot be type coerced to a number
+
+typeof 42n === &#39;bigint&#39;;
+
+// Strings
+typeof &#39;&#39; === &#39;string&#39;;
+typeof &#39;bla&#39; === &#39;string&#39;;
+typeof `template literal` === &#39;string&#39;;
+typeof &#39;1&#39; === &#39;string&#39;; // note that a number within a string is still typeof string
+typeof (typeof 1) === &#39;string&#39;; // typeof always returns a string
+typeof String(1) === &#39;string&#39;; // String converts anything into a string, safer than toString
+
+// Booleans
+typeof true === &#39;boolean&#39;;
+typeof false === &#39;boolean&#39;;
+typeof Boolean(1) === &#39;boolean&#39;; // Boolean() will convert values based on if they&#39;re truthy or falsy
+typeof !!(1) === &#39;boolean&#39;; // two calls of the ! (logical NOT) operator are equivalent to Boolean()
+
+// Symbols
+typeof Symbol() === &#39;symbol&#39;
+typeof Symbol(&#39;foo&#39;) === &#39;symbol&#39;
+typeof Symbol.iterator === &#39;symbol&#39;
+
+// Undefined
+typeof undefined === &#39;undefined&#39;;
+typeof declaredButUndefinedVariable === &#39;undefined&#39;;
+typeof undeclaredVariable === &#39;undefined&#39;;
+
+// Objects
+typeof {a: 1} === &#39;object&#39;;
+
+// use Array.isArray or Object.prototype.toString.call
+// to differentiate regular objects from arrays
+typeof [1, 2, 4] === &#39;object&#39;;
+
+typeof new Date() === &#39;object&#39;;
+typeof /regex/ === &#39;object&#39;; // See Regular expressions section for historical results
+
+// The following are confusing, dangerous, and wasteful. Avoid them.
+typeof new Boolean(true) === &#39;object&#39;;
+typeof new Number(1) === &#39;object&#39;;
+typeof new String(&#39;abc&#39;) === &#39;object&#39;;
+
+// Functions
+typeof function() {} === &#39;function&#39;;
+typeof class C {} === &#39;function&#39;;
+typeof Math.sin === &#39;function&#39;;</code></pre>
+<h3 id="typeof-null"><code>typeof null</code></h3>
+<pre><code>// This stands since the beginning of JavaScript
+typeof null === &#39;object&#39;;</code></pre>
+<p>In the first implementation of JavaScript, JavaScript values were represented as a type tag and a value. The type tag for objects was <code>0</code>. <code>null</code> was represented as the NULL pointer (<code>0x00</code> in most platforms). Consequently, <code>null</code> had <code>0</code> as type tag, hence the <code>typeof</code> return value <code>"object"</code>. (<a href="https://www.2ality.com/2013/10/typeof-null.html">reference</a>)</p>
+<p>A fix was proposed for ECMAScript (via an opt-in), but <a href="https://web.archive.org/web/20160331031419/http://wiki.ecmascript.org:80/doku.php?id=harmony:typeof_null">was rejected</a>. It would have resulted in <code>typeof null === 'null'</code>.</p>
+<h3 id="using-new-operator">Using <code>new</code> operator</h3>
+<pre><code>// All constructor functions, with the exception of the Function constructor, will always be typeof &#39;object&#39;
+let str = new String(&#39;String&#39;);
+let num = new Number(100);
+
+typeof str; // It will return &#39;object&#39;
+typeof num; // It will return &#39;object&#39;
+
+let func = new Function();
+
+typeof func; // It will return &#39;function&#39;</code></pre>
+<h3 id="need-for-parentheses-in-syntax">Need for parentheses in Syntax</h3>
+<pre><code>// Parentheses can be used for determining the data type of expressions.
+let iData = 99;
+
+typeof iData + &#39; Wisen&#39;; // &#39;number Wisen&#39;
+typeof (iData + &#39; Wisen&#39;); // &#39;string&#39;</code></pre>
+<h3 id="regular-expressions">Regular expressions</h3>
+<p>Callable regular expressions were a non-standard addition in some browsers.</p>
+<pre><code>typeof /s/ === &#39;function&#39;; // Chrome 1-12 Non-conform to ECMAScript 5.1
+typeof /s/ === &#39;object&#39;;   // Firefox 5+  Conform to ECMAScript 5.1</code></pre>
+<h3 id="errors">Errors</h3>
+<p>Before ECMAScript 2015, <code>typeof</code> was always guaranteed to return a string for any operand it was supplied with. Even with undeclared identifiers, <code>typeof</code> will return <code>'undefined'</code>. Using <code>typeof</code> could never generate an error.</p>
+<p>But with the addition of block-scoped <a href="../statements/let"><code>let</code></a> and <a href="../statements/const"><code>Statements/const</code></a> using <code>typeof</code> on <code>let</code> and <code>const</code> variables (or using <code>typeof</code> on a <code>class</code>) in a block before they are declared will throw a <a href="../global_objects/referenceerror"><code>ReferenceError</code></a>. Block scoped variables are in a “<a href="../statements/let#the_temporal_dead_zone_and_typeof">temporal dead zone</a>” from the start of the block until the initialization is processed, during which, it will throw an error if accessed.</p>
+<pre><code>typeof undeclaredVariable === &#39;undefined&#39;;
+
+typeof newLetVariable; // ReferenceError
+typeof newConstVariable; // ReferenceError
+typeof newClass; // ReferenceError
+
+let newLetVariable;
+const newConstVariable = &#39;hello&#39;;
+class newClass{};</code></pre>
+<h3 id="exceptions">Exceptions</h3>
+<p>All current browsers expose a non-standard host object <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/all"><code>document.all</code></a> with type <code>undefined</code>.</p>
+<pre><code>typeof document.all === &#39;undefined&#39;;</code></pre>
+<p>Although the specification allows custom type tags for non-standard exotic objects, it requires those type tags to be different from the predefined ones. The case of <code>document.all</code> having type <code>'undefined'</code> is classified in the web standards as a “willful violation” of the original ECMA JavaScript standard.</p>
+<h3 id="real-world-usage">Real-world usage</h3>
+<p><code>typeof</code> is very useful, but it’s not as versatile as might be required. For example, <code>typeof([])</code> , is <code>'object'</code>, as well as <code>typeof(new Date())</code>, <code>typeof(/abc/)</code>, etc.</p>
+<p>For greater specificity in checking types, a <code>typeof</code> wrapper for usage in production-level code would be as follows (provided <code>obj</code> exists):</p>
+<pre><code>  function type(obj, fullClass) {
+
+    // get toPrototypeString() of obj (handles all types)
+    // Early JS environments return &#39;[object Object]&#39; for null, so it&#39;s best to directly check for it.
+    if (fullClass) {
+        return (obj === null) ? &#39;[object Null]&#39; : Object.prototype.toString.call(obj);
+    }
+    if (obj == null) { return (obj + &#39;&#39;).toLowerCase(); } // implicit toString() conversion
+
+    var deepType = Object.prototype.toString.call(obj).slice(8,-1).toLowerCase();
+    if (deepType === &#39;generatorfunction&#39;) { return &#39;function&#39; }
+
+    // Prevent overspecificity (for example, [object HTMLDivElement], etc).
+    // Account for functionish Regexp (Android &lt;=2.3), functionish &lt;object&gt; element (Chrome &lt;=57, Firefox &lt;=52), etc.
+    // String.prototype.match is universally supported.
+
+    return deepType.match(/^(array|bigint|date|error|function|generator|regexp|symbol)$/) ? deepType :
+       (typeof obj === &#39;object&#39; || typeof obj === &#39;function&#39;) ? &#39;object&#39; : typeof obj;
+  }</code></pre>
+<p>For checking non-existent variables that would otherwise throw a <a href="../global_objects/referenceerror"><code>ReferenceError</code></a>, use <code>typeof nonExistentVar === 'undefined'</code>.</p>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-typeof-operator">ECMAScript (ECMA-262) <br/></p>
+<span class="small">The definition of ‘The typeof Operator’ in that specification.</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>typeof</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h3 id="ie-specific-notes">IE-specific notes</h3>
+<p>On IE 6, 7, and 8 a lot of host objects are objects and not functions. For example:</p>
+<pre><code>typeof alert === &#39;object&#39;</code></pre>
+<p>Some non-standard IE properties return other values (<a href="https://github.com/tc39/ecma262/issues/1440#issuecomment-461963872">tc39/ecma262#1440 (comment)</a>):</p>
+<pre><code>typeof window.external.AddSearchProvider === &quot;unknown&quot;;
+typeof window.external.IsSearchProviderInstalled === &quot;unknown&quot;;</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="instanceof"><code>instanceof</code></a></li>
+<li><a href="https://github.com/tc39/ecma262/issues/668"><code>document.all</code> willful violation of the standard</a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof</a></p>
+</body>
+</html>

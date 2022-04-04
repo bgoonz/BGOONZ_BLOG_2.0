@@ -1,8 +1,9 @@
-# BASH CHEAT SHEET
+BASH CHEAT SHEET
+================
 
 My Bash Cheatsheet Index:
 
----
+------------------------------------------------------------------------
 
 ### BASH CHEAT SHEET
 

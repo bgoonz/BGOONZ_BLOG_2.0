@@ -1,4 +1,5 @@
-# String.prototype.sup()
+String.prototype.sup()
+======================
 
 **Deprecated**
 
@@ -6,7 +7,8 @@ This feature is no longer recommended. Though some browsers might still support 
 
 The `sup()` method creates a [`<sup>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup) HTML element that causes a string to be displayed as superscript.
 
-## Syntax
+Syntax
+------
 
     sup()
 
@@ -14,11 +16,13 @@ The `sup()` method creates a [`<sup>`](https://developer.mozilla.org/en-US/docs/
 
 A string containing a [`<sup>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup) HTML element.
 
-## Description
+Description
+-----------
 
-The `sup()` method embeds a string in a `<sup>` element: "`<sup>str</sup>`".
+The `sup()` method embeds a string in a `<sup>` element: “`<sup>str</sup>`”.
 
-## Examples
+Examples
+--------
 
 ### Using sub() and sup() methods
 
@@ -33,14 +37,14 @@ The following example uses the [`sub()`](sub) and `sup()` methods to format a st
     console.log('This is what a ' + subText.sub() + ' looks like.');
     // "This is what a <sub>subscript</sub> looks like."
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.sup">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-string.prototype.sup</span></td></tr></tbody></table>
 
-<span class="small">#sec-string.prototype.sup</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -96,10 +100,10 @@ Samsung Internet
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`String.prototype.sub()`](sub)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/sup" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/sup</a>

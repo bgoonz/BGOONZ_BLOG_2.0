@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>is_not_iterable</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="typeerror-x-is-not-iterable">TypeError: ‘x’ is not iterable</h1>
+<p>The JavaScript exception “is not iterable” occurs when the value which is given as the right hand-side of <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#for...of_statement">for…of</a> or as argument of a function such as <a href="../global_objects/promise/all"><code>Promise.all</code></a> or <a href="../global_objects/typedarray/from"><code>TypedArray.from</code></a>, is not an <a href="../iteration_protocols">iterable object</a>.</p>
+<h2 id="message">Message</h2>
+<pre><code>TypeError: &#39;x&#39; is not iterable (Firefox, Chrome)
+TypeError: &#39;x&#39; is not a function or its return value is not iterable (Chrome)</code></pre>
+<h2 id="error-type">Error type</h2>
+<p><a href="../global_objects/typeerror"><code>TypeError</code></a></p>
+<h2 id="what-went-wrong">What went wrong?</h2>
+<p>The value which is given as the right hand-side of <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#for...of_statement">for…of</a> or as argument of a function such as <a href="../global_objects/promise/all"><code>Promise.all</code></a> or <a href="../global_objects/typedarray/from"><code>TypedArray.from</code></a>, is not an <a href="../iteration_protocols">iterable object</a>. An iterable can be a built-in iterable type such as <a href="../global_objects/array"><code>Array</code></a>, <a href="../global_objects/string"><code>String</code></a> or <a href="../global_objects/map"><code>Map</code></a>, a generator result, or an object implementing the <a href="../iteration_protocols#the_iterable_protocol">iterable protocol</a>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="iterating-over-object-properties">Iterating over Object properties</h3>
+<p>In JavaScript, <a href="../global_objects/object"><code>Object</code></a>s are not iterable unless they implement the <a href="../iteration_protocols#the_iterable_protocol">iterable protocol</a>. Therefore, you cannot use <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#for...of_statement">for…of</a> to iterate over the properties of an object.</p>
+<pre><code>var obj = { &#39;France&#39;: &#39;Paris&#39;, &#39;England&#39;: &#39;London&#39; };
+for (let p of obj) { // TypeError: obj is not iterable
+    // …
+}</code></pre>
+<p>Instead you have to use <a href="../global_objects/object/keys"><code>Object.keys</code></a> or <a href="../global_objects/object/entries"><code>Object.entries</code></a>, to iterate over the properties or entries of an object.</p>
+<pre><code>var obj = { &#39;France&#39;: &#39;Paris&#39;, &#39;England&#39;: &#39;London&#39; };
+// Iterate over the property names:
+for (let country of Object.keys(obj)) {
+    var capital = obj[country];
+    console.log(country, capital);
+}
+
+for (const [country, capital] of Object.entries(obj))
+    console.log(country, capital);</code></pre>
+<p>Another option for this use case might be to use a <a href="../global_objects/map"><code>Map</code></a>:</p>
+<pre><code>var map = new Map;
+map.set(&#39;France&#39;, &#39;Paris&#39;);
+map.set(&#39;England&#39;, &#39;London&#39;);
+// Iterate over the property names:
+for (let country of map.keys()) {
+    let capital = map[country];
+    console.log(country, capital);
+}
+
+for (let capital of map.values())
+    console.log(capital);
+
+for (const [country, capital] of map.entries())
+    console.log(country, capital);</code></pre>
+<h3 id="iterating-over-a-generator">Iterating over a generator</h3>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators#generators">Generators</a> are functions you call to produce an iterable object.</p>
+<pre><code>function* generate(a, b) {
+  yield a;
+  yield b;
+}
+
+for (let x of generate) // TypeError: generate is not iterable
+    console.log(x);</code></pre>
+<p>When they are not called, the <a href="../global_objects/function"><code>Function</code></a> object corresponding to the generator is callable, but not iterable. Calling a generator produces an iterable object which will iterate over the values yielded during the execution of the generator.</p>
+<pre><code>function* generate(a, b) {
+    yield a;
+    yield b;
+}
+
+for (let x of generate(1,2))
+    console.log(x);</code></pre>
+<h3 id="iterating-over-a-custom-iterable">Iterating over a custom iterable</h3>
+<p>Custom iterables can be created by implementing the <a href="../global_objects/symbol/iterator"><code>Symbol.iterator</code></a> method. You must be certain that your iterator method returns an object which is an iterator, which is to say it must have a next method.</p>
+<pre><code>const myEmptyIterable = {
+    [Symbol.iterator]() {
+        return [] // [] is iterable, but it is not an iterator -- it has no next method.
+    }
+}
+
+Array.from(myEmptyIterable);  // TypeError: myEmptyIterable is not iterable</code></pre>
+<p>Here is a correct implementation:</p>
+<pre><code>const myEmptyIterable = {
+    [Symbol.iterator]() {
+        return [][Symbol.iterator]()
+    }
+}
+
+Array.from(myEmptyIterable);  // []</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../iteration_protocols#the_iterable_protocol">iterable protocol</a></li>
+<li><a href="../global_objects/object/keys"><code>Object.keys</code></a></li>
+<li><a href="../global_objects/object/entries"><code>Object.entries</code></a></li>
+<li><a href="../global_objects/map"><code>Map</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators#generators">generators</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#for...of_statement">for…of</a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/is_not_iterable" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/is_not_iterable</a></p>
+</body>
+</html>

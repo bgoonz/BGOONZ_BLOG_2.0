@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>ssh-copy-id</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="to-copy-a-key-to-a-remote-host">To copy a key to a remote host:</h1>
+<p>ssh-copy-id <user>@<host></p>
+<h1 id="to-copy-a-key-to-a-remote-host-on-a-non-standard-port">To copy a key to a remote host on a non-standard port:</h1>
+<p>ssh-copy-id <user>@<host> -p 2222</p>
+<h1 id="to-copy-a-key-to-a-remote-host-on-a-non-standard-port-with-non-standard-ssh-key">To copy a key to a remote host on a non-standard port with non-standard ssh key:</h1>
+<p>ssh-copy-id ~/.ssh/otherkey “username@host -p 2222”</p>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="k-means-algorithm">k-Means Algorithm</h1>
+<p>The <strong>k-Means algorithm</strong> is an unsupervised Machine Learning algorithm. It’s a clustering algorithm, which groups the sample data on the basis of similarity between dimensions of vectors.</p>
+<p>In k-Means classification, the output is a set of classes assigned to each vector. Each cluster location is continuously optimized in order to get the accurate locations of each cluster such that they represent each group clearly.</p>
+<p>The idea is to calculate the similarity between cluster location and data vectors, and reassign clusters based on it. <a href="https://github.com/trekhleb/javascript-algorithms/tree/master/src/algorithms/math/euclidean-distance">Euclidean distance</a> is used mostly for this task.</p>
+<figure>
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Euclidean_distance_2d.svg" alt="Euclidean distance between two points" /><figcaption>Euclidean distance between two points</figcaption>
+</figure>
+<p><em>Image source: <a href="https://en.wikipedia.org/wiki/Euclidean_distance">Wikipedia</a></em></p>
+<p>The algorithm is as follows:</p>
+<ol type="1">
+<li>Check for errors like invalid/inconsistent data</li>
+<li>Initialize the <code>k</code> cluster locations with initial/random <code>k</code> points</li>
+<li>Calculate the distance of each data point from each cluster</li>
+<li>Assign the cluster label of each data point equal to that of the cluster at its minimum distance</li>
+<li>Calculate the centroid of each cluster based on the data points it contains</li>
+<li>Repeat each of the above steps until the centroid locations are varying</li>
+</ol>
+<p>Here is a visualization of k-Means clustering for better understanding:</p>
+<figure>
+<img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/K-means_convergence.gif" alt="KNN Visualization 1" /><figcaption>KNN Visualization 1</figcaption>
+</figure>
+<p><em>Image source: <a href="https://en.wikipedia.org/wiki/K-means_clustering">Wikipedia</a></em></p>
+<p>The centroids are moving continuously in order to create better distinction between the different set of data points. As we can see, after a few iterations, the difference in centroids is quite low between iterations. For example between iterations <code>13</code> and <code>14</code> the difference is quite small because there the optimizer is tuning boundary cases.</p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/K-means_clustering">k-Means neighbors algorithm on Wikipedia</a></li>
+</ul>
+</body>
+</html>

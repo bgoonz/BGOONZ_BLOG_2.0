@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="keywords" content="<span class="citation" data-cites="Component">@Component</span>, <span class="citation" data-cites="Prop">@Prop</span>(), <span class="citation" data-cites="State">@State</span>(), render(), componentWillLoad(), componentWillUpdate(), Templating, Lifecycle" />
+  <title>Stencil</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Stencil</h1>
+</header>
+<h2 id="quick-start-guide">Quick-start guide</h2>
+<h3 id="getting-started">Getting started</h3>
+<h4 id="javascript">JavaScript</h4>
+<div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="im">import</span> <span class="op">{</span> Component<span class="op">,</span> Prop<span class="op">,</span> State <span class="op">}</span> <span class="im">from</span> <span class="st">&#39;@stencil/core&#39;</span></a>
+<a class="sourceLine" id="cb1-2" title="2"></a>
+<a class="sourceLine" id="cb1-3" title="3">@<span class="at">Component</span>(<span class="op">{</span></a>
+<a class="sourceLine" id="cb1-4" title="4">  <span class="dt">tag</span><span class="op">:</span> <span class="st">&#39;my-component&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-5" title="5">  <span class="dt">styleUrl</span><span class="op">:</span> <span class="st">&#39;my-component.scss&#39;</span></a>
+<a class="sourceLine" id="cb1-6" title="6"><span class="op">}</span>)</a>
+<a class="sourceLine" id="cb1-7" title="7"><span class="im">export</span> <span class="kw">class</span> MyComponent <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-8" title="8">  @<span class="at">Prop</span>() <span class="dt">name</span><span class="op">:</span> string</a>
+<a class="sourceLine" id="cb1-9" title="9">  @<span class="at">State</span>() <span class="dt">isVisible</span><span class="op">:</span> boolean <span class="op">=</span> <span class="kw">true</span></a>
+<a class="sourceLine" id="cb1-10" title="10"></a>
+<a class="sourceLine" id="cb1-11" title="11">  <span class="at">render</span> () <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-12" title="12">    <span class="cf">return</span> <span class="op">&lt;</span>p<span class="op">&gt;</span>I am <span class="op">{</span><span class="kw">this</span>.<span class="at">name</span><span class="op">}!</span>&lt;/p<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb1-13" title="13">    )</a>
+<a class="sourceLine" id="cb1-14" title="14">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb1-15" title="15"><span class="op">}</span></a></code></pre></div>
+<h4 id="html">HTML</h4>
+<div class="sourceCode" id="cb2"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">&lt;my-component</span><span class="ot"> name=</span><span class="st">&quot;Groot&quot;</span> <span class="kw">/&gt;</span></a></code></pre></div>
+<p>That’s the same example in the <a href="https://github.com/ionic-team/stencil">Readme</a>, that’s as simple as you can get! Just use <code>&lt;my-component&gt;</code> like you would use any other HTML tag.</p>
+<h3 id="dom-events">DOM events</h3>
+<div class="sourceCode" id="cb3"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb3-1" title="1"><span class="im">export</span> <span class="kw">class</span> MyComponent <span class="op">{</span></a>
+<a class="sourceLine" id="cb3-2" title="2">    <span class="at">render</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb3-3" title="3">        <span class="cf">return</span> <span class="op">&lt;</span>input onChange<span class="op">={</span>(<span class="dt">event</span><span class="op">:</span> UIEvent) <span class="kw">=&gt;</span> <span class="kw">this</span>.<span class="at">inputChanged</span>(event)<span class="op">}</span> /&gt;<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-4" title="4">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb3-5" title="5"></a>
+<a class="sourceLine" id="cb3-6" title="6">    <span class="at">inputChanged</span>(event) <span class="op">{</span></a>
+<a class="sourceLine" id="cb3-7" title="7">        <span class="va">console</span>.<span class="at">log</span>(<span class="st">&#39;input changed:&#39;</span><span class="op">,</span> <span class="va">event</span>.<span class="va">target</span>.<span class="at">value</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-8" title="8">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb3-9" title="9"><span class="op">}</span></a></code></pre></div>
+<p>{: data-line=“5,10,11”}</p>
+<p>Stencil uses DOM events.</p>
+<p>See: <a href="https://stenciljs.com/docs/templating/#handling-user-input">Handling user input</a></p>
+<h3 id="multiple-children">Multiple children</h3>
+<div class="sourceCode" id="cb4"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb4-1" title="1"><span class="at">render</span> () <span class="op">{</span></a>
+<a class="sourceLine" id="cb4-2" title="2">  <span class="cf">return</span> [</a>
+<a class="sourceLine" id="cb4-3" title="3">    <span class="op">&lt;</span>h1<span class="op">&gt;</span>Hello there&lt;/h1<span class="op">&gt;,</span></a>
+<a class="sourceLine" id="cb4-4" title="4">    <span class="op">&lt;</span>p<span class="op">&gt;</span>This component returns multiple nodes&lt;/p<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb4-5" title="5">  ]</a>
+<a class="sourceLine" id="cb4-6" title="6"><span class="op">}</span></a></code></pre></div>
+<p>{: data-line=“3,4”}</p>
+<p><code>render()</code> can return an array of elements.</p>
+<p>See: <a href="https://stenciljs.com/docs/templating#complex-template-content">Complex template content</a></p>
+<h2 id="state">State</h2>
+<h3 id="managing-state">Managing state</h3>
+<div class="sourceCode" id="cb5"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb5-1" title="1"><span class="im">export</span> <span class="kw">class</span> MyComponent <span class="op">{</span></a>
+<a class="sourceLine" id="cb5-2" title="2">    @<span class="at">State</span>() <span class="dt">isVisible</span><span class="op">:</span> boolean<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-3" title="3"></a>
+<a class="sourceLine" id="cb5-4" title="4">    <span class="at">show</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb5-5" title="5">        <span class="kw">this</span>.<span class="at">isVisible</span> <span class="op">=</span> <span class="kw">true</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb5-6" title="6">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb5-7" title="7"><span class="op">}</span></a></code></pre></div>
+<p>{: data-line=“4,5”}</p>
+<p>Just do assignments. You can’t do mutations though, see next section.</p>
+<p>See: <a href="https://stenciljs.com/docs/decorators#managing-component-state">Managing component state</a></p>
+<h3 id="updating-arrays-and-objects">Updating arrays and objects</h3>
+<h4 id="bad">✗ Bad</h4>
+<div class="sourceCode" id="cb6"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb6-1" title="1"><span class="kw">this</span>.<span class="va">names</span>.<span class="at">push</span>(<span class="st">&#39;Larry&#39;</span>)<span class="op">;</span> <span class="co">// ⚠️</span></a>
+<a class="sourceLine" id="cb6-2" title="2"><span class="kw">this</span>.<span class="va">options</span>.<span class="at">show</span> <span class="op">=</span> <span class="kw">true</span><span class="op">;</span> <span class="co">// ⚠️</span></a></code></pre></div>
+<h4 id="ok">✓ OK</h4>
+<div class="sourceCode" id="cb7"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb7-1" title="1"><span class="kw">this</span>.<span class="at">names</span> <span class="op">=</span> [...<span class="va">this</span>.<span class="at">names</span><span class="op">,</span> <span class="st">&#39;Larry&#39;</span>]<span class="op">;</span></a>
+<a class="sourceLine" id="cb7-2" title="2"><span class="kw">this</span>.<span class="at">options</span> <span class="op">=</span> <span class="op">{</span> ...<span class="va">this</span>.<span class="at">options</span><span class="op">,</span> <span class="dt">show</span><span class="op">:</span> <span class="kw">true</span> <span class="op">};</span></a></code></pre></div>
+<p>Mutable operations such as <code>push()</code> won’t work. You’ll need to assign a new copy.</p>
+<p>See: <a href="https://stenciljs.com/docs/reactive-data/#updating-arrays">Updating arrays</a></p>
+<h2 id="slots">Slots</h2>
+<h3 id="using-slot">Using slot</h3>
+<div class="sourceCode" id="cb8"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb8-1" title="1"><span class="kw">&lt;my-component&gt;</span></a>
+<a class="sourceLine" id="cb8-2" title="2">    <span class="kw">&lt;span&gt;</span>Hello, friends<span class="kw">&lt;/span&gt;</span></a>
+<a class="sourceLine" id="cb8-3" title="3"><span class="kw">&lt;/my-component&gt;</span></a></code></pre></div>
+<p>{: data-line=“2”}</p>
+<h4 id="component">Component</h4>
+<div class="sourceCode" id="cb9"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb9-1" title="1"><span class="at">render</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb9-2" title="2">  <span class="cf">return</span> <span class="op">&lt;</span>h1<span class="op">&gt;&lt;</span>slot /<span class="op">&gt;</span>&lt;/h1<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb9-3" title="3"><span class="op">}</span></a></code></pre></div>
+<p>{: data-line=“2”}</p>
+<p>You can pass JSX/HTML as child elements. Use the <code>slot</code> tag to use them inside your component.</p>
+<p>See: <a href="https://stenciljs.com/docs/templating#slots">Slots</a></p>
+<h3 id="multiple-slots">Multiple slots</h3>
+<div class="sourceCode" id="cb10"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb10-1" title="1"><span class="kw">&lt;my-component&gt;</span></a>
+<a class="sourceLine" id="cb10-2" title="2">    <span class="kw">&lt;p</span><span class="ot"> slot=</span><span class="st">&quot;my-header&quot;</span><span class="kw">&gt;</span>Hello<span class="kw">&lt;/p&gt;</span></a>
+<a class="sourceLine" id="cb10-3" title="3">    <span class="kw">&lt;p</span><span class="ot"> slot=</span><span class="st">&quot;my-footer&quot;</span><span class="kw">&gt;</span>Thanks<span class="kw">&lt;/p&gt;</span></a>
+<a class="sourceLine" id="cb10-4" title="4"><span class="kw">&lt;/my-component&gt;</span></a></code></pre></div>
+<p>{: data-line=“2,3”}</p>
+<h4 id="component-1">Component</h4>
+<div class="sourceCode" id="cb11"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb11-1" title="1"><span class="at">render</span> () <span class="op">{</span></a>
+<a class="sourceLine" id="cb11-2" title="2">  <span class="cf">return</span> <span class="op">&lt;</span>div<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb11-3" title="3">    <span class="op">&lt;</span>header<span class="op">&gt;&lt;</span>slot name<span class="op">=</span><span class="st">&#39;my-header&#39;</span> /&gt;&lt;/header<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb11-4" title="4">    <span class="op">&lt;</span>footer<span class="op">&gt;&lt;</span>slot name<span class="op">=</span><span class="st">&#39;my-footer&#39;</span> /&gt;&lt;/footer<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb11-5" title="5">  &lt;/div<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb11-6" title="6"><span class="op">}</span></a></code></pre></div>
+<p>{: data-line=“3,4”}</p>
+<p>See: <a href="https://stenciljs.com/docs/templating#slots">Slots</a></p>
+<h2 id="lifecycle">Lifecycle</h2>
+<h3 id="lifecycle-hooks">Lifecycle hooks</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Event</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>componentWillLoad()</code></td>
+<td>Before rendering</td>
+</tr>
+<tr class="even">
+<td><code>componentDidLoad()</code></td>
+<td>After rendering</td>
+</tr>
+<tr class="odd">
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td><code>componentWillUpdate()</code></td>
+<td>Before updating</td>
+</tr>
+<tr class="odd">
+<td><code>componentDidUpdate()</code></td>
+<td>After updating</td>
+</tr>
+<tr class="even">
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td><code>componentDidUnload()</code></td>
+<td>After unmounting</td>
+</tr>
+</tbody>
+</table>
+<p>See: <a href="https://stenciljs.com/docs/component-lifecycle">Component lifecycle</a></p>
+<h3 id="example">Example</h3>
+<div class="sourceCode" id="cb12"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb12-1" title="1"><span class="im">export</span> <span class="kw">class</span> MyComponent <span class="op">{</span></a>
+<a class="sourceLine" id="cb12-2" title="2">    <span class="at">componentWillUpdate</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb12-3" title="3">        <span class="va">console</span>.<span class="at">log</span>(<span class="st">&#39;updating&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb12-4" title="4">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb12-5" title="5"><span class="op">}</span></a></code></pre></div>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://stenciljs.com/docs/">Stencil docs</a> <em>(stenciljs.com)</em></li>
+</ul>
+</body>
+</html>

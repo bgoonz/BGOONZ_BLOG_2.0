@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>cant_access_property</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="typeerror-cant-access-property-x-of-y">TypeError: can’t access property “x” of “y”</h1>
+<p>The JavaScript exception “can’t access property” occurs when property access was operated on <a href="../global_objects/undefined"><code>undefined</code></a> or <a href="../global_objects/null"><code>null</code></a> values.</p>
+<h2 id="message">Message</h2>
+<pre><code>TypeError: Unable to get property {x} of undefined or null reference (Edge)
+TypeError: can&#39;t access property {x} of {y} (Firefox)
+TypeError: {y} is undefined, can&#39;t access property {x} of it (Firefox)
+TypeError: {y} is null, can&#39;t access property {x} of it (Firefox)
+
+Examples:
+TypeError: x is undefined, can&#39;t access property &quot;prop&quot; of it
+TypeError: x is null, can&#39;t access property &quot;prop&quot; of it
+TypeError: can&#39;t access property &quot;prop&quot; of undefined
+TypeError: can&#39;t access property &quot;prop&quot; of null</code></pre>
+<h2 id="error-type">Error type</h2>
+<p><a href="../global_objects/typeerror"><code>TypeError</code></a>.</p>
+<h2 id="what-went-wrong">What went wrong?</h2>
+<p>The property access was operated on <a href="../global_objects/undefined"><code>undefined</code></a> or <a href="../global_objects/null"><code>null</code></a> value.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="invalid-cases">Invalid cases</h3>
+<pre><code>// undefined and null cases on which the substring method won&#39;t work
+var foo = undefined;
+foo.substring(1); // TypeError: x is undefined, can&#39;t access property &quot;substring&quot; of it
+
+var foo = null;
+foo.substring(1); // TypeError: x is null, can&#39;t access property &quot;substring&quot; of it</code></pre>
+<h3 id="fixing-the-issue">Fixing the issue</h3>
+<p>To fix null pointer to <code>undefined</code> or <code>null</code> values, you can use the <a href="../operators/typeof">typeof</a> operator, for example.</p>
+<pre><code>if (typeof foo !== &#39;undefined&#39;) {
+  // Now we know that foo is defined, we are good to go.
+}</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../global_objects/undefined"><code>undefined</code></a></li>
+<li><a href="../global_objects/null"><code>null</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Cant_access_property" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Cant_access_property</a></p>
+</body>
+</html>

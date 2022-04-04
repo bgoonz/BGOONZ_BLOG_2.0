@@ -1,8 +1,10 @@
-# String.prototype.trimEnd()
+String.prototype.trimEnd()
+==========================
 
 The `trimEnd()` method removes whitespace from the end of a string. `trimRight()` is an alias of this method.
 
-## Syntax
+Syntax
+------
 
     trimEnd()
 
@@ -20,7 +22,8 @@ For consistency with functions like [`String.prototype.padEnd`](padend) the stan
 
     String.prototype.trimRight.name === "trimEnd";
 
-## Examples
+Examples
+--------
 
 ### Using trimEnd()
 
@@ -34,14 +37,14 @@ The following example displays the lowercase string `' foo'`:
     console.log(str.length); // 6
     console.log(str);        // '   foo'
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.trimend">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-string.prototype.trimend</span></td></tr></tbody></table>
 
-<span class="small">#sec-string.prototype.trimend</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -113,11 +116,11 @@ No
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`String.prototype.trim()`](trim)
 -   [`String.prototype.trimStart()`](trimstart)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trimEnd" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trimEnd</a>

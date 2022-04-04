@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>link</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="string.prototype.link">String.prototype.link()</h1>
+<p><strong>Deprecated</strong></p>
+<p>This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see the <a href="#browser_compatibility">compatibility table</a> at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time.</p>
+<p>The <code>link()</code> method creates a string representing the code for an <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a"><code>&lt;a&gt;</code></a> HTML element to be used as a hypertext link to another URL.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>link(url)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>url</code><br />
+Any string that specifies the <code>href</code> attribute of the <code>&lt;a&gt;</code> element; it should be a valid URL (relative or absolute), with any <code>&amp;</code> characters escaped as <code>&amp;amp;</code>, and any <code>"</code> characters escaped as <code>&amp;quot;</code>.</p>
+<h3 id="return-value">Return value</h3>
+<p>A string containing an <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a"><code>&lt;a&gt;</code></a> HTML element.</p>
+<h2 id="description">Description</h2>
+<p>Use the <code>link()</code> method to create an HTML snippet for a hypertext link. The returned string can then be added to the document via <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/write"><code>document.write()</code></a> or <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML"><code>element.innerHTML</code></a>.</p>
+<p>Links created with the <code>link()</code> method become elements in the <code>links</code> array of the <code>document</code> object. See <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/links"><code>document.links</code></a>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-link">Using link()</h3>
+<p>The following example displays the word “MDN” as a hypertext link that returns the user to the Mozilla Developer Network.</p>
+<pre><code>var hotText = &#39;MDN&#39;;
+var url = &#39;https://developer.mozilla.org/&#39;;
+
+console.log(&#39;Click to return to &#39; + hotText.link(url));
+// Click to return to &lt;a href=&quot;https://developer.mozilla.org/&quot;&gt;MDN&lt;/a&gt;</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-string.prototype.link">ECMAScript (ECMA-262) <br/></p>
+<span class="small">The definition of ‘String.prototype.link’ in that specification.</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>link</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="anchor"><code>String.prototype.anchor()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/link" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/link</a></p>
+</body>
+</html>

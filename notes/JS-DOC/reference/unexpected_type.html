@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>unexpected_type</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="typeerror-x-is-not-y">TypeError: “x” is (not) “y”</h1>
+<p>The JavaScript exception “<em>x</em> is (not) <em>y</em>” occurs when there was an unexpected type. Oftentimes, unexpected <a href="../global_objects/undefined"><code>undefined</code></a> or <a href="../global_objects/null"><code>null</code></a> values.</p>
+<h2 id="message">Message</h2>
+<pre><code>TypeError: Unable to get property {x} of undefined or null reference (Edge)
+TypeError: &quot;x&quot; is (not) &quot;y&quot; (Firefox)
+
+Examples:
+TypeError: &quot;x&quot; is undefined
+TypeError: &quot;x&quot; is null
+TypeError: &quot;undefined&quot; is not an object
+TypeError: &quot;x&quot; is not an object or null
+TypeError: &quot;x&quot; is not a symbol</code></pre>
+<h2 id="error-type">Error type</h2>
+<p><a href="../global_objects/typeerror"><code>TypeError</code></a>.</p>
+<h2 id="what-went-wrong">What went wrong?</h2>
+<p>There was an unexpected type. This occurs oftentimes with <a href="../global_objects/undefined"><code>undefined</code></a> or <a href="../global_objects/null"><code>null</code></a> values.</p>
+<p>Also, certain methods, such as <a href="../global_objects/object/create"><code>Object.create()</code></a> or <a href="../global_objects/symbol/keyfor"><code>Symbol.keyFor()</code></a>, require a specific type, that must be provided.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="invalid-cases">Invalid cases</h3>
+<pre><code>// undefined and null cases on which the substring method won&#39;t work
+var foo = undefined;
+foo.substring(1); // TypeError: foo is undefined
+
+var foo = null;
+foo.substring(1); // TypeError: foo is null
+
+// Certain methods might require a specific type
+var foo = {}
+Symbol.keyFor(foo); // TypeError: foo is not a symbol
+
+var foo = &#39;bar&#39;
+Object.create(foo); // TypeError: &quot;foo&quot; is not an object or null</code></pre>
+<h3 id="fixing-the-issue">Fixing the issue</h3>
+<p>To fix null pointer to <code>undefined</code> values, you can use the <a href="../operators/typeof">typeof</a> operator, for example.</p>
+<pre><code>if (foo !== undefined) {
+  // Now we know that foo is defined, we are good to go.
+}
+
+if (typeof foo !== &#39;undefined&#39;) {
+  // The same good idea, but don&#39;t use this implementation - it can bring problems
+  // because of the confusion between truly undefined and undeclared variables.
+}</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../global_objects/undefined"><code>undefined</code></a></li>
+<li><a href="../global_objects/null"><code>null</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Unexpected_type" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Unexpected_type</a></p>
+</body>
+</html>

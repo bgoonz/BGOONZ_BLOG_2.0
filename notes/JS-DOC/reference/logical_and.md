@@ -1,12 +1,15 @@
-# Logical AND (&&)
+Logical AND (&&)
+================
 
 The logical AND (`&&`) operator (logical conjunction) for a set of operands is true if and only if all of its operands are true. It is typically used with [`Boolean`](../global_objects/boolean) (logical) values. When it is, it returns a Boolean value. However, the `&&` operator actually returns the value of one of the specified operands, so if this operator is used with non-Boolean values, it will return a non-Boolean value.
 
-## Syntax
+Syntax
+------
 
     expr1 && expr2
 
-## Description
+Description
+-----------
 
 If `expr1` can be converted to `true`, returns `expr2`; else, returns `expr1`.
 
@@ -17,14 +20,14 @@ Examples of expressions that can be converted to false are:
 -   `null`;
 -   `NaN`;
 -   `0`;
--   empty string (`""` or `''` or ` `` `);
+-   empty string (`""` or `''` or ``` `` ```);
 -   `undefined`.
 
 Even though the `&&` operator can be used with operands that are not Boolean values, it can still be considered a boolean operator since its return value can always be converted to a [boolean primitive](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#boolean_type). To explicitly convert its return value (or any expression in general) to the corresponding boolean value, use a double [NOT operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#logical_not) or the [`Boolean`](../global_objects/boolean/boolean) constructor.
 
 ### Short-circuit evaluation
 
-The logical AND expression is evaluated left to right, it is tested for possible "short-circuit" evaluation using the following rule:
+The logical AND expression is evaluated left to right, it is tested for possible “short-circuit” evaluation using the following rule:
 
 `(some falsy expression) && expr` is short-circuit evaluated to the falsy expression;
 
@@ -44,7 +47,8 @@ The following expressions might seem equivalent, but they are not, because the `
     true || false && false      // returns true, because && is executed first
     (true || false) && false    // returns false, because operator precedence cannot apply
 
-## Examples
+Examples
+--------
 
 ### Using AND
 
@@ -94,12 +98,11 @@ is always equal to:
 
     bCondition1 || bCondition2 && bCondition3
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#prod-LogicalANDExpression">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#prod-LogicalANDExpression</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#prod-LogicalANDExpression</span></td></tr></tbody></table>
 
 `Logical_AND`
 
@@ -127,12 +130,12 @@ is always equal to:
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`Boolean`](../global_objects/boolean)
 -   [Truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy)
 -   [Falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND</a>

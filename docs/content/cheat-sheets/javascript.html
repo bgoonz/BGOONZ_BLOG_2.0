@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2016-08-22" />
+  <title>JavaScript Cheat Sheet</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">JavaScript Cheat Sheet</h1>
+<p class="date">2016-08-22</p>
+</header>
+<h2 id="background">Background:</h2>
+<h1 id="the-beginners-guide-to-javascript">The Beginner’s Guide To JavaScript</h1>
+<p>Part 1</p>
+<hr />
+<h3 id="the-beginners-guide-to-javascript-1">The Beginner’s Guide To JavaScript</h3>
+<h4 id="part-1">Part 1</h4>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/1200/1*Cg0j-L4ZHN7_5g2In-K-Ew.png" class="graf-image" />
+</figure>
+<h3 id="how-to-learn-effectively">How to learn effectively</h3>
+<p><strong>Learning</strong>: The acquisition of skills and the ability to apply them in the future.</p>
+<p><strong>What makes an Effective learner?</strong></p>
+<ul>
+<li><span id="8498">They are active listeners.</span></li>
+<li><span id="bc0a">They are engaged with the material.</span></li>
+<li><span id="99d3">They are receptive of feedback.</span></li>
+<li><span id="b615">They are open to difficulty.</span></li>
+</ul>
+<p><strong>Why do active learning techniques feel difficult?</strong></p>
+<ul>
+<li><span id="9a75">It feels difficult because you are constantly receiving feedback, and so you are constantly adapting and perfecting the material.</span></li>
+</ul>
+<p><strong>Desirable Difficulty</strong></p>
+<ul>
+<li><span id="3c8a">The skills we wish to obtain is often a difficult one.</span></li>
+<li><span id="a83e">We want challenging but possible lessons based on current level of skill.</span></li>
+</ul>
+<p><strong>Effective learners space their practice</strong></p>
+<ul>
+<li><span id="a7b3">Consistent effort &gt; cramming =&gt; for <strong>durable knowledge</strong></span></li>
+</ul>
+<hr />
+<h4 id="heres-a-repl-to-practice-with">Here’s a REPL to practice with:</h4>
+<p><a href="https://replit.com/@bgoonz/lambda-prep#README.html" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://replit.com/@bgoonz/lambda-prep#README.html"><strong>lambda-prep</strong><br /> <em>pre-course-work</em>replit.com</a><a href="https://replit.com/@bgoonz/lambda-prep#README.html" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
+<hr />
+<p><a href="https://lambda-prep.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://lambda-prep.netlify.app/"><strong>INTRO@JSWEB</strong><br /> <em>Resource-sharing-hub</em>lambda-prep.netlify.app</a><a href="https://lambda-prep.netlify.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a></p>
+<hr />
+<h3 id="hello-world">Hello World</h3>
+<ul>
+<li><span id="d452"><strong>console.log</strong> : command used to print something onto the screen.</span></li>
+<li><span id="99ad"><strong>syntax</strong> : the exact arrangement of the symbols, characters, and keywords in our code.</span></li>
+<li><span id="a287"><strong>//</strong> : notation for creating a code comment in JS.</span></li>
+<li><span id="e2e6"><strong>code comment</strong> : useful for annotating pieces of code to explain how something works, ignored by computer.</span></li>
+</ul>
+<blockquote>
+<p><strong><em>“Simplicity is prerequisite for reliability.” — Edsger W. Dijkstra</em></strong></p>
+</blockquote>
+<hr />
+<h3 id="the-number-data-type">The Number Data Type</h3>
+<p>The <strong>number</strong> data type in JS is used to represent any numerical values, including integers and decimal numbers.</p>
+<p><strong>Basic Arithmetic Operators</strong></p>
+<p>Operators are the symbols that perform particular operations.</p>
+<ul>
+<li><span id="b0ed"><strong>+</strong> (addition)</span></li>
+<li><span id="53d9"><strong>-</strong> (subtraction)</span></li>
+<li><span id="93f2"><strong>asterisk</strong> (multiplication)</span></li>
+<li><span id="92d8"><strong>/</strong> (division)</span></li>
+<li><span id="21c1"><strong>%</strong> (modulo)</span></li>
+</ul>
+<p>JS evaluates more complex expressions using the general math order of operations aka PEMDAS.</p>
+<ul>
+<li><span id="d1a4"><strong>PEMDAS</strong> : Parentheses, Exponents, Multiplication, Division, Modulo, Addition, Subtraction.</span></li>
+<li><span id="81a2"><em>To force a specific order of operation, use the group operator ( ) around a part of the expression.</em></span></li>
+</ul>
+<p><strong>Modulo</strong> : Very useful operation to check divisibility of numbers, check for even &amp; odd, whether a number is prime, and much more! <em>(Discrete Math concept, circular problems can be solved with modulo)</em></p>
+<ul>
+<li><span id="20ad">Whenever you have a smaller number % a larger number, the answer will just be the initial small number.</span></li>
+<li><span id="2fbf"><code>console.log(7 % 10); // =&gt; 7;</code></span></li>
+</ul>
+<hr />
+<h3 id="the-string-data-type">The String Data Type</h3>
+<p>The <strong>string</strong> data type is a primitive data type that used to represent textual data.</p>
+<ul>
+<li><span id="310e">can be wrapped by either <strong>single</strong> or <strong>double</strong> quotation marks, <em>best to choose one and stick with it for consistency</em>.</span></li>
+<li><span id="664c">If your string contains quotation marks inside, can layer single or double quotation marks to allow it to work.</span></li>
+<li><span id="46e7"><code>"That's a great string"; (valid)</code></span></li>
+<li><span id="4667"><code>'Shakespeare wrote, "To be or not to be"'; (valid)</code></span></li>
+<li><span id="9674"><code>'That's a bad string'; (invalid)</code></span></li>
+<li><span id="74cb">Alt. way to add other quotes within strings is to use template literals.</span></li>
+<li><span id="caf5"><code>`This is a temp'l'ate literal ${function}` // use ${} to invoke functions within.</code></span></li>
+<li><span id="9144"><strong>.length</strong> : property that can be appended to data to return the length.</span></li>
+<li><span id="afa8">empty strings have a length of zero.</span></li>
+<li><span id="69ac"><strong>indices</strong> : indexes of data that begin at 0, can call upon index by using the bracket notation [ ].</span></li>
+</ul>
+<p><code>console.log("bootcamp"[0]); // =&gt; "b"</code></p>
+<p><code>console.log("bootcamp"[10]); // =&gt; "undefined"</code></p>
+<p><code>console.log("boots"[1 * 2]); // =&gt; "o"</code></p>
+<p><code>console.log("boots"["boot".length - 1]); // =&gt; "t"</code></p>
+<ul>
+<li><span id="cb8b">we can pass expressions through the brackets as well since JS always evaluates expressions first.</span></li>
+<li><span id="a30f">The index of the last character of a string is always one less than it’s length.</span></li>
+<li><span id="3080"><strong>indexOf()</strong> : method used to find the first index of a given character within a string.</span></li>
+<li><span id="442d"><code>console.log("bagel".indexOf("b")); // =&gt; 0 console.log("bagel".indexOf("z")); // =&gt; -1</code></span></li>
+<li><span id="7ddd">if the character inside the indexOf() search does not exist in the string, the output will be -1.</span></li>
+<li><span id="7e6a">the indexOf() search will return the first instanced index of the the char in the string.</span></li>
+<li><span id="8729"><strong>concatenate</strong> : word to describe joining strings together into a single string.</span></li>
+</ul>
+<hr />
+<h3 id="the-boolean-data-type">The Boolean Data Type</h3>
+<p>The <strong>boolean</strong> data type is the simplest data type since there are only two values: <strong>true</strong> and <strong>false</strong>.</p>
+<ul>
+<li><span id="fcde"><strong>Logical Operators</strong> (B<em>oolean Operators</em>) are used to establish logic in our code.</span></li>
+<li><span id="bd34"><strong>!</strong> (not) : reverses a boolean value.</span></li>
+<li><span id="bdba"><code>console.log(!true); // =&gt; false console.log(!!false); // =&gt; false</code></span></li>
+<li><span id="cc27"><strong>&amp;&amp;</strong> (and) <strong>Truth Table</strong></span></li>
+</ul>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*Aw4iCm7-FQ7znEcBVH3FTw.png" class="graf-image" />
+</figure>
+<ul>
+<li><span id="a087"><strong>Logical Order of Operations</strong> : JS will evaluate !, then &amp;&amp;, then ||.</span></li>
+<li><span id="295f"><strong>De Morgan’s Law</strong> : Common mistake in boolean logic is incorrectly distributing ! across parentheses.</span></li>
+<li><span id="7400"><code>!(A || B) === !A &amp;&amp; !B; !(A &amp;&amp; B) === !A || !B;</code></span></li>
+<li><span id="26c2">In summary, to correctly distribute ! across parentheses we must also flip the operation within.</span></li>
+<li><span id="a8c1"><strong>Short-Circuit Evaluation</strong> : Because JS evalutes from left to right, expressions can “short-circuit”. For example if we have true on the left of an || logical comparison, it will stop evaluating and yield true instead of wasting resources on processing the rest of the statement.</span></li>
+<li><span id="58a3"><code>console.log(true || !false); // =&gt; stops after it sees "true ||"</code></span></li>
+</ul>
+<hr />
+<h3 id="comparison-operators">Comparison Operators</h3>
+<p>All comparison operators will result in a boolean output.</p>
+<p><strong>The relative comparators</strong></p>
+<ul>
+<li><span id="0e52"><strong>&gt;</strong> (greater than)</span></li>
+<li><span id="f979"><strong>&lt;</strong> (less than)</span></li>
+<li><span id="73da"><strong>&gt;=</strong> (greater than or equal to)</span></li>
+<li><span id="1620"><strong>&lt;=</strong> (less than or equal to)</span></li>
+<li><span id="fb41"><strong>===</strong> (equal to)</span></li>
+<li><span id="0fd1"><strong>!==</strong> (not equal to)</span></li>
+</ul>
+<blockquote>
+<p><em>Fun Fact: “a” &lt; “b” is considered valid JS Code because string comparisons are compared lexicographically (meaning dictionary order), so “a” is less than “b” because it appears earlier!</em></p>
+</blockquote>
+<blockquote>
+<p><em>If there is ever a standstill comparison of two string lexicographically (i.e. app vs apple) the comparison will deem the shorter string lesser.</em></p>
+</blockquote>
+<p><strong>Difference between == and ===</strong></p>
+<ul>
+<li><span id="8cc0"><strong>===</strong> : Strict Equality, will only return true if the two comparisons are entirely the same.</span></li>
+<li><span id="b25c"><strong>==</strong> : Loose Equality, will return true even if the values are of a different type, due to coercion. (Avoid using this)</span></li>
+</ul>
+<hr />
+<h3 id="variables">Variables</h3>
+<p>Variables are used to store information to be referenced and manipulated in a program.</p>
+<ul>
+<li><span id="e2b7">We initialize a variable by using the <strong>let</strong> keyword and a <strong>=</strong> single equals sign (assignment operator).</span></li>
+<li><span id="e03b"><code>let bootcamp = "Lambda"; console.log(bootcamp); // "Lambda"</code></span></li>
+<li><span id="2e71">JS variable names can contain any alphanumeric characters, underscores, or dollar signs (cannot being with a number).</span></li>
+<li><span id="6ab7">If you do not declare a value for a variable, undefined is automatically set.</span></li>
+<li><span id="0c6f"><code>let bootcamp; console.log(bootcamp); // undefined</code></span></li>
+<li><span id="1f9a">We can change the value of a previously declared variable (let, not const) by re-assigning it another value.</span></li>
+<li><span id="9e00"><strong>let</strong> is the updated version of <strong>var</strong>; there are some differences in terms of hoisting and global/block scope — will be covered later in the course (common interview question!)</span></li>
+</ul>
+<p><strong>Assignment Shorthand</strong></p>
+<pre><code>let num = 0;
+num += 10; // same as num = num + 10
+num -= 2; // same as num = num - 2
+num /= 4; // same as num = num / 4
+num *= 7; // same as num = num * 7</code></pre>
+<ul>
+<li><span id="ab22">In general, any nonsensical arithmetic will result in <strong>NaN</strong> ; usually operations that include undefined.</span></li>
+<li><span id="22c2"><strong>declaration</strong> : process of simply introducing a variable name.</span></li>
+<li><span id="caeb"><strong>initialization</strong> : process of both declaring and assigning a variable on the same line.</span></li>
+</ul>
+<hr />
+<h3 id="functions">Functions</h3>
+<p>A function is a procedure of code that will run when called. Functions are used so that we do not have to rewrite code to do the same thing over and over. (Think of them as ‘subprograms’)</p>
+<ul>
+<li><span id="4c89"><strong>Function Declaration</strong> : Process when we first initially write our function.</span></li>
+<li><span id="d3fe">Includes three things:</span></li>
+<li><span id="b57c">Name of the function.</span></li>
+<li><span id="dfea">A list of <em>parameters</em> ()</span></li>
+<li><span id="da88">The code to execute {}</span></li>
+<li><span id="8eb3"><strong>Function Calls</strong> : We can call upon our function whenever and wherever* we want. (*wherever is only after the initial declaration)</span></li>
+<li><span id="cb1d">JS evaluates code top down, left to right.</span></li>
+<li><span id="9cb4">When we execute a declared function later on in our program we refer to this as <strong>invoking</strong> our function.</span></li>
+<li><span id="fde3">Every function in JS returns undefined unless otherwise specified.</span></li>
+<li><span id="059e">When we hit a <strong>return</strong> statement in a function we immediately exit the function and return to where we called the function.</span></li>
+<li><span id="d906">When naming functions in JS always use camelCase and name it something appropriate. &gt; Greate code reads like English and almost explains itself. Think: Elegant, readable, and maintainable!</span></li>
+</ul>
+<hr />
+<h3 id="parameters-and-arguments">Parameters and Arguments</h3>
+<ul>
+<li><span id="eb19"><strong>Parameters</strong> : Comma seperated variables specified as part of a function’s declaration.</span></li>
+<li><span id="6abb"><strong>Arguments</strong> : Values passed to the function when it is invoked.</span></li>
+<li><span id="ab31"><em>If the number of arguments passed during a function invocation is different than the number of parameters listed, it will still work.</em></span></li>
+<li><span id="12ee">However, is there are not enough arguments provided for parameters our function will likely yield <strong>Nan</strong>.</span></li>
+</ul>
+<hr />
+<h1 id="cheat-sheet">Cheat Sheet:</h1>
+<div class="sourceCode" id="cb2"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"></a>
+<a class="sourceLine" id="cb2-2" title="2"><span class="co">// Single-line comments start with two slashes.</span></a>
+<a class="sourceLine" id="cb2-3" title="3"><span class="co">/* Multiline comments start with slash-star,</span></a>
+<a class="sourceLine" id="cb2-4" title="4"><span class="co">   and end with star-slash */</span></a>
+<a class="sourceLine" id="cb2-5" title="5"></a>
+<a class="sourceLine" id="cb2-6" title="6"><span class="co">// Statements can be terminated by ;</span></a>
+<a class="sourceLine" id="cb2-7" title="7"><span class="at">doStuff</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-8" title="8"></a>
+<a class="sourceLine" id="cb2-9" title="9"><span class="co">// ... but they don&#39;t have to be, as semicolons are automatically inserted</span></a>
+<a class="sourceLine" id="cb2-10" title="10"><span class="co">// wherever there&#39;s a newline, except in certain cases.</span></a>
+<a class="sourceLine" id="cb2-11" title="11"><span class="at">doStuff</span>()</a>
+<a class="sourceLine" id="cb2-12" title="12"></a>
+<a class="sourceLine" id="cb2-13" title="13"><span class="co">// Because those cases can cause unexpected results, we&#39;ll keep on using</span></a>
+<a class="sourceLine" id="cb2-14" title="14"><span class="co">// semicolons in this guide.</span></a>
+<a class="sourceLine" id="cb2-15" title="15"></a>
+<a class="sourceLine" id="cb2-16" title="16"><span class="co">///////////////////////////////////</span></a>
+<a class="sourceLine" id="cb2-17" title="17"><span class="co">// 1. Numbers, Strings and Operators</span></a>
+<a class="sourceLine" id="cb2-18" title="18"></a>
+<a class="sourceLine" id="cb2-19" title="19"><span class="co">// JavaScript has one number type (which is a 64-bit IEEE 754 double).</span></a>
+<a class="sourceLine" id="cb2-20" title="20"><span class="co">// Doubles have a 52-bit mantissa, which is enough to store integers</span></a>
+<a class="sourceLine" id="cb2-21" title="21"><span class="co">// up to about 9✕10¹⁵ precisely.</span></a>
+<a class="sourceLine" id="cb2-22" title="22"><span class="dv">3</span><span class="op">;</span> <span class="co">// = 3</span></a>
+<a class="sourceLine" id="cb2-23" title="23"><span class="fl">1.5</span><span class="op">;</span> <span class="co">// = 1.5</span></a>
+<a class="sourceLine" id="cb2-24" title="24"></a>
+<a class="sourceLine" id="cb2-25" title="25"><span class="co">// Some basic arithmetic works as you&#39;d expect.</span></a>
+<a class="sourceLine" id="cb2-26" title="26"><span class="dv">1</span> <span class="op">+</span> <span class="dv">1</span><span class="op">;</span> <span class="co">// = 2</span></a>
+<a class="sourceLine" id="cb2-27" title="27"><span class="fl">0.1</span> <span class="op">+</span> <span class="fl">0.2</span><span class="op">;</span> <span class="co">// = 0.30000000000000004</span></a>
+<a class="sourceLine" id="cb2-28" title="28"><span class="dv">8</span> <span class="op">-</span> <span class="dv">1</span><span class="op">;</span> <span class="co">// = 7</span></a>
+<a class="sourceLine" id="cb2-29" title="29"><span class="dv">10</span> <span class="op">*</span> <span class="dv">2</span><span class="op">;</span> <span class="co">// = 20</span></a>
+<a class="sourceLine" id="cb2-30" title="30"><span class="dv">35</span> / <span class="dv">5</span><span class="op">;</span> <span class="co">// = 7</span></a>
+<a class="sourceLine" id="cb2-31" title="31"></a>
+<a class="sourceLine" id="cb2-32" title="32"><span class="co">// Including uneven division.</span></a>
+<a class="sourceLine" id="cb2-33" title="33"><span class="dv">5</span> / <span class="dv">2</span><span class="op">;</span> <span class="co">// = 2.5</span></a>
+<a class="sourceLine" id="cb2-34" title="34"></a>
+<a class="sourceLine" id="cb2-35" title="35"><span class="co">// And modulo division.</span></a>
+<a class="sourceLine" id="cb2-36" title="36"><span class="dv">10</span> <span class="op">%</span> <span class="dv">2</span><span class="op">;</span> <span class="co">// = 0</span></a>
+<a class="sourceLine" id="cb2-37" title="37"><span class="dv">30</span> <span class="op">%</span> <span class="dv">4</span><span class="op">;</span> <span class="co">// = 2</span></a>
+<a class="sourceLine" id="cb2-38" title="38"><span class="fl">18.5</span> <span class="op">%</span> <span class="dv">7</span><span class="op">;</span> <span class="co">// = 4.5</span></a>
+<a class="sourceLine" id="cb2-39" title="39"></a>
+<a class="sourceLine" id="cb2-40" title="40"><span class="co">// Bitwise operations also work; when you perform a bitwise operation your float</span></a>
+<a class="sourceLine" id="cb2-41" title="41"><span class="co">// is converted to a signed int *up to* 32 bits.</span></a>
+<a class="sourceLine" id="cb2-42" title="42"><span class="dv">1</span> <span class="op">&lt;&lt;</span> <span class="dv">2</span><span class="op">;</span> <span class="co">// = 4</span></a>
+<a class="sourceLine" id="cb2-43" title="43"></a>
+<a class="sourceLine" id="cb2-44" title="44"><span class="co">// Precedence is enforced with parentheses.</span></a>
+<a class="sourceLine" id="cb2-45" title="45">(<span class="dv">1</span> <span class="op">+</span> <span class="dv">3</span>) <span class="op">*</span> <span class="dv">2</span><span class="op">;</span> <span class="co">// = 8</span></a>
+<a class="sourceLine" id="cb2-46" title="46"></a>
+<a class="sourceLine" id="cb2-47" title="47"><span class="co">// There are three special not-a-real-number values:</span></a>
+<a class="sourceLine" id="cb2-48" title="48"><span class="kw">Infinity</span><span class="op">;</span> <span class="co">// result of e.g. 1/0</span></a>
+<a class="sourceLine" id="cb2-49" title="49"><span class="op">-</span><span class="kw">Infinity</span><span class="op">;</span> <span class="co">// result of e.g. -1/0</span></a>
+<a class="sourceLine" id="cb2-50" title="50"><span class="kw">NaN</span><span class="op">;</span> <span class="co">// result of e.g. 0/0, stands for &#39;Not a Number&#39;</span></a>
+<a class="sourceLine" id="cb2-51" title="51"></a>
+<a class="sourceLine" id="cb2-52" title="52"><span class="co">// There&#39;s also a boolean type.</span></a>
+<a class="sourceLine" id="cb2-53" title="53"><span class="kw">true</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-54" title="54"><span class="kw">false</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-55" title="55"></a>
+<a class="sourceLine" id="cb2-56" title="56"><span class="co">// Strings are created with &#39; or &quot;.</span></a>
+<a class="sourceLine" id="cb2-57" title="57"><span class="st">&#39;abc&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-58" title="58"><span class="st">&quot;Hello, world&quot;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-59" title="59"></a>
+<a class="sourceLine" id="cb2-60" title="60"><span class="co">// Negation uses the ! symbol</span></a>
+<a class="sourceLine" id="cb2-61" title="61"><span class="op">!</span><span class="kw">true</span><span class="op">;</span> <span class="co">// = false</span></a>
+<a class="sourceLine" id="cb2-62" title="62"><span class="op">!</span><span class="kw">false</span><span class="op">;</span> <span class="co">// = true</span></a>
+<a class="sourceLine" id="cb2-63" title="63"></a>
+<a class="sourceLine" id="cb2-64" title="64"><span class="co">// Equality is ===</span></a>
+<a class="sourceLine" id="cb2-65" title="65"><span class="dv">1</span> <span class="op">===</span> <span class="dv">1</span><span class="op">;</span> <span class="co">// = true</span></a>
+<a class="sourceLine" id="cb2-66" title="66"><span class="dv">2</span> <span class="op">===</span> <span class="dv">1</span><span class="op">;</span> <span class="co">// = false</span></a>
+<a class="sourceLine" id="cb2-67" title="67"></a>
+<a class="sourceLine" id="cb2-68" title="68"><span class="co">// Inequality is !==</span></a>
+<a class="sourceLine" id="cb2-69" title="69"><span class="dv">1</span> <span class="op">!==</span> <span class="dv">1</span><span class="op">;</span> <span class="co">// = false</span></a>
+<a class="sourceLine" id="cb2-70" title="70"><span class="dv">2</span> <span class="op">!==</span> <span class="dv">1</span><span class="op">;</span> <span class="co">// = true</span></a>
+<a class="sourceLine" id="cb2-71" title="71"></a>
+<a class="sourceLine" id="cb2-72" title="72"><span class="co">// More comparisons</span></a>
+<a class="sourceLine" id="cb2-73" title="73"><span class="dv">1</span> <span class="op">&lt;</span> <span class="dv">10</span><span class="op">;</span> <span class="co">// = true</span></a>
+<a class="sourceLine" id="cb2-74" title="74"><span class="dv">1</span> <span class="op">&gt;</span> <span class="dv">10</span><span class="op">;</span> <span class="co">// = false</span></a>
+<a class="sourceLine" id="cb2-75" title="75"><span class="dv">2</span> <span class="op">&lt;=</span> <span class="dv">2</span><span class="op">;</span> <span class="co">// = true</span></a>
+<a class="sourceLine" id="cb2-76" title="76"><span class="dv">2</span> <span class="op">&gt;=</span> <span class="dv">2</span><span class="op">;</span> <span class="co">// = true</span></a>
+<a class="sourceLine" id="cb2-77" title="77"></a>
+<a class="sourceLine" id="cb2-78" title="78"><span class="co">// Strings are concatenated with +</span></a>
+<a class="sourceLine" id="cb2-79" title="79"><span class="st">&quot;Hello &quot;</span> <span class="op">+</span> <span class="st">&quot;world!&quot;</span><span class="op">;</span> <span class="co">// = &quot;Hello world!&quot;</span></a>
+<a class="sourceLine" id="cb2-80" title="80"></a>
+<a class="sourceLine" id="cb2-81" title="81"><span class="co">// ... which works with more than just strings</span></a>
+<a class="sourceLine" id="cb2-82" title="82"><span class="st">&quot;1, 2, &quot;</span> <span class="op">+</span> <span class="dv">3</span><span class="op">;</span> <span class="co">// = &quot;1, 2, 3&quot;</span></a>
+<a class="sourceLine" id="cb2-83" title="83"><span class="st">&quot;Hello &quot;</span> <span class="op">+</span> [<span class="st">&quot;world&quot;</span><span class="op">,</span> <span class="st">&quot;!&quot;</span>]<span class="op">;</span> <span class="co">// = &quot;Hello world,!&quot;</span></a>
+<a class="sourceLine" id="cb2-84" title="84"></a>
+<a class="sourceLine" id="cb2-85" title="85"><span class="co">// and are compared with &lt; and &gt;</span></a>
+<a class="sourceLine" id="cb2-86" title="86"><span class="st">&quot;a&quot;</span> <span class="op">&lt;</span> <span class="st">&quot;b&quot;</span><span class="op">;</span> <span class="co">// = true</span></a>
+<a class="sourceLine" id="cb2-87" title="87"></a>
+<a class="sourceLine" id="cb2-88" title="88"><span class="co">// Type coercion is performed for comparisons with double equals...</span></a>
+<a class="sourceLine" id="cb2-89" title="89"><span class="st">&quot;5&quot;</span> <span class="op">==</span> <span class="dv">5</span><span class="op">;</span> <span class="co">// = true</span></a>
+<a class="sourceLine" id="cb2-90" title="90"><span class="kw">null</span> <span class="op">==</span> <span class="kw">undefined</span><span class="op">;</span> <span class="co">// = true</span></a>
+<a class="sourceLine" id="cb2-91" title="91"></a>
+<a class="sourceLine" id="cb2-92" title="92"><span class="co">// ...unless you use ===</span></a>
+<a class="sourceLine" id="cb2-93" title="93"><span class="st">&quot;5&quot;</span> <span class="op">===</span> <span class="dv">5</span><span class="op">;</span> <span class="co">// = false</span></a>
+<a class="sourceLine" id="cb2-94" title="94"><span class="kw">null</span> <span class="op">===</span> <span class="kw">undefined</span><span class="op">;</span> <span class="co">// = false</span></a>
+<a class="sourceLine" id="cb2-95" title="95"></a>
+<a class="sourceLine" id="cb2-96" title="96"><span class="co">// ...which can result in some weird behaviour...</span></a>
+<a class="sourceLine" id="cb2-97" title="97"><span class="dv">13</span> <span class="op">+</span> <span class="op">!</span><span class="dv">0</span><span class="op">;</span> <span class="co">// 14</span></a>
+<a class="sourceLine" id="cb2-98" title="98"><span class="st">&quot;13&quot;</span> <span class="op">+</span> <span class="op">!</span><span class="dv">0</span><span class="op">;</span> <span class="co">// &#39;13true&#39;</span></a>
+<a class="sourceLine" id="cb2-99" title="99"></a>
+<a class="sourceLine" id="cb2-100" title="100"><span class="co">// You can access characters in a string with `charAt`</span></a>
+<a class="sourceLine" id="cb2-101" title="101"><span class="st">&quot;This is a string&quot;</span>.<span class="at">charAt</span>(<span class="dv">0</span>)<span class="op">;</span>  <span class="co">// = &#39;T&#39;</span></a>
+<a class="sourceLine" id="cb2-102" title="102"></a>
+<a class="sourceLine" id="cb2-103" title="103"><span class="co">// ...or use `substring` to get larger pieces.</span></a>
+<a class="sourceLine" id="cb2-104" title="104"><span class="st">&quot;Hello world&quot;</span>.<span class="at">substring</span>(<span class="dv">0</span><span class="op">,</span> <span class="dv">5</span>)<span class="op">;</span> <span class="co">// = &quot;Hello&quot;</span></a>
+<a class="sourceLine" id="cb2-105" title="105"></a>
+<a class="sourceLine" id="cb2-106" title="106"><span class="co">// `length` is a property, so don&#39;t use ().</span></a>
+<a class="sourceLine" id="cb2-107" title="107"><span class="st">&quot;Hello&quot;</span>.<span class="at">length</span><span class="op">;</span> <span class="co">// = 5</span></a>
+<a class="sourceLine" id="cb2-108" title="108"></a>
+<a class="sourceLine" id="cb2-109" title="109"><span class="co">// There&#39;s also `null` and `undefined`.</span></a>
+<a class="sourceLine" id="cb2-110" title="110"><span class="kw">null</span><span class="op">;</span>      <span class="co">// used to indicate a deliberate non-value</span></a>
+<a class="sourceLine" id="cb2-111" title="111"><span class="kw">undefined</span><span class="op">;</span> <span class="co">// used to indicate a value is not currently present (although</span></a>
+<a class="sourceLine" id="cb2-112" title="112">           <span class="co">// `undefined` is actually a value itself)</span></a>
+<a class="sourceLine" id="cb2-113" title="113"></a>
+<a class="sourceLine" id="cb2-114" title="114"><span class="co">// false, null, undefined, NaN, 0 and &quot;&quot; are falsy; everything else is truthy.</span></a>
+<a class="sourceLine" id="cb2-115" title="115"><span class="co">// Note that 0 is falsy and &quot;0&quot; is truthy, even though 0 == &quot;0&quot;.</span></a>
+<a class="sourceLine" id="cb2-116" title="116"></a>
+<a class="sourceLine" id="cb2-117" title="117"><span class="co">///////////////////////////////////</span></a>
+<a class="sourceLine" id="cb2-118" title="118"><span class="co">// 2. Variables, Arrays and Objects</span></a>
+<a class="sourceLine" id="cb2-119" title="119"></a>
+<a class="sourceLine" id="cb2-120" title="120"><span class="co">// Variables are declared with the `var` keyword. JavaScript is dynamically</span></a>
+<a class="sourceLine" id="cb2-121" title="121"><span class="co">// typed, so you don&#39;t need to specify type. Assignment uses a single `=`</span></a>
+<a class="sourceLine" id="cb2-122" title="122"><span class="co">// character.</span></a>
+<a class="sourceLine" id="cb2-123" title="123"><span class="kw">var</span> someVar <span class="op">=</span> <span class="dv">5</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-124" title="124"></a>
+<a class="sourceLine" id="cb2-125" title="125"><span class="co">// If you leave the var keyword off, you won&#39;t get an error...</span></a>
+<a class="sourceLine" id="cb2-126" title="126">someOtherVar <span class="op">=</span> <span class="dv">10</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-127" title="127"></a>
+<a class="sourceLine" id="cb2-128" title="128"><span class="co">// ...but your variable will be created in the global scope, not in the scope</span></a>
+<a class="sourceLine" id="cb2-129" title="129"><span class="co">// you defined it in.</span></a>
+<a class="sourceLine" id="cb2-130" title="130"></a>
+<a class="sourceLine" id="cb2-131" title="131"><span class="co">// Variables declared without being assigned to are set to undefined.</span></a>
+<a class="sourceLine" id="cb2-132" title="132"><span class="kw">var</span> someThirdVar<span class="op">;</span> <span class="co">// = undefined</span></a>
+<a class="sourceLine" id="cb2-133" title="133"></a>
+<a class="sourceLine" id="cb2-134" title="134"><span class="co">// If you want to declare a couple of variables, then you could use a comma</span></a>
+<a class="sourceLine" id="cb2-135" title="135"><span class="co">// separator</span></a>
+<a class="sourceLine" id="cb2-136" title="136"><span class="kw">var</span> someFourthVar <span class="op">=</span> <span class="dv">2</span><span class="op">,</span> someFifthVar <span class="op">=</span> <span class="dv">4</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-137" title="137"></a>
+<a class="sourceLine" id="cb2-138" title="138"><span class="co">// There&#39;s shorthand for performing math operations on variables:</span></a>
+<a class="sourceLine" id="cb2-139" title="139">someVar <span class="op">+=</span> <span class="dv">5</span><span class="op">;</span> <span class="co">// equivalent to someVar = someVar + 5; someVar is 10 now</span></a>
+<a class="sourceLine" id="cb2-140" title="140">someVar <span class="op">*=</span> <span class="dv">10</span><span class="op">;</span> <span class="co">// now someVar is 100</span></a>
+<a class="sourceLine" id="cb2-141" title="141"></a>
+<a class="sourceLine" id="cb2-142" title="142"><span class="co">// and an even-shorter-hand for adding or subtracting 1</span></a>
+<a class="sourceLine" id="cb2-143" title="143">someVar<span class="op">++;</span> <span class="co">// now someVar is 101</span></a>
+<a class="sourceLine" id="cb2-144" title="144">someVar<span class="op">--;</span> <span class="co">// back to 100</span></a>
+<a class="sourceLine" id="cb2-145" title="145"></a>
+<a class="sourceLine" id="cb2-146" title="146"><span class="co">// Arrays are ordered lists of values, of any type.</span></a>
+<a class="sourceLine" id="cb2-147" title="147"><span class="kw">var</span> myArray <span class="op">=</span> [<span class="st">&quot;Hello&quot;</span><span class="op">,</span> <span class="dv">45</span><span class="op">,</span> <span class="kw">true</span>]<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-148" title="148"></a>
+<a class="sourceLine" id="cb2-149" title="149"><span class="co">// Their members can be accessed using the square-brackets subscript syntax.</span></a>
+<a class="sourceLine" id="cb2-150" title="150"><span class="co">// Array indices start at zero.</span></a>
+<a class="sourceLine" id="cb2-151" title="151">myArray[<span class="dv">1</span>]<span class="op">;</span> <span class="co">// = 45</span></a>
+<a class="sourceLine" id="cb2-152" title="152"></a>
+<a class="sourceLine" id="cb2-153" title="153"><span class="co">// Arrays are mutable and of variable length.</span></a>
+<a class="sourceLine" id="cb2-154" title="154"><span class="va">myArray</span>.<span class="at">push</span>(<span class="st">&quot;World&quot;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-155" title="155"><span class="va">myArray</span>.<span class="at">length</span><span class="op">;</span> <span class="co">// = 4</span></a>
+<a class="sourceLine" id="cb2-156" title="156"></a>
+<a class="sourceLine" id="cb2-157" title="157"><span class="co">// Add/Modify at specific index</span></a>
+<a class="sourceLine" id="cb2-158" title="158">myArray[<span class="dv">3</span>] <span class="op">=</span> <span class="st">&quot;Hello&quot;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-159" title="159"></a>
+<a class="sourceLine" id="cb2-160" title="160"><span class="co">// Add and remove element from front or back end of an array</span></a>
+<a class="sourceLine" id="cb2-161" title="161"><span class="va">myArray</span>.<span class="at">unshift</span>(<span class="dv">3</span>)<span class="op">;</span> <span class="co">// Add as the first element</span></a>
+<a class="sourceLine" id="cb2-162" title="162">someVar <span class="op">=</span> <span class="va">myArray</span>.<span class="at">shift</span>()<span class="op">;</span> <span class="co">// Remove first element and return it</span></a>
+<a class="sourceLine" id="cb2-163" title="163"><span class="va">myArray</span>.<span class="at">push</span>(<span class="dv">3</span>)<span class="op">;</span> <span class="co">// Add as the last element</span></a>
+<a class="sourceLine" id="cb2-164" title="164">someVar <span class="op">=</span> <span class="va">myArray</span>.<span class="at">pop</span>()<span class="op">;</span> <span class="co">// Remove last element and return it</span></a>
+<a class="sourceLine" id="cb2-165" title="165"></a>
+<a class="sourceLine" id="cb2-166" title="166"><span class="co">// Join all elements of an array with semicolon</span></a>
+<a class="sourceLine" id="cb2-167" title="167"><span class="kw">var</span> myArray0 <span class="op">=</span> [<span class="dv">32</span><span class="op">,</span><span class="kw">false</span><span class="op">,</span><span class="st">&quot;js&quot;</span><span class="op">,</span><span class="dv">12</span><span class="op">,</span><span class="dv">56</span><span class="op">,</span><span class="dv">90</span>]<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-168" title="168"><span class="va">myArray0</span>.<span class="at">join</span>(<span class="st">&quot;;&quot;</span>) <span class="co">// = &quot;32;false;js;12;56;90&quot;</span></a>
+<a class="sourceLine" id="cb2-169" title="169"></a>
+<a class="sourceLine" id="cb2-170" title="170"><span class="co">// Get subarray of elements from index 1 (include) to 4 (exclude)</span></a>
+<a class="sourceLine" id="cb2-171" title="171"><span class="va">myArray0</span>.<span class="at">slice</span>(<span class="dv">1</span><span class="op">,</span><span class="dv">4</span>)<span class="op">;</span> <span class="co">// = [false,&quot;js&quot;,12]</span></a>
+<a class="sourceLine" id="cb2-172" title="172"></a>
+<a class="sourceLine" id="cb2-173" title="173"><span class="co">// Remove 4 elements starting from index 2, and insert there strings</span></a>
+<a class="sourceLine" id="cb2-174" title="174"><span class="co">// &quot;hi&quot;,&quot;wr&quot; and &quot;ld&quot;; return removed subarray</span></a>
+<a class="sourceLine" id="cb2-175" title="175"><span class="va">myArray0</span>.<span class="at">splice</span>(<span class="dv">2</span><span class="op">,</span><span class="dv">4</span><span class="op">,</span><span class="st">&quot;hi&quot;</span><span class="op">,</span><span class="st">&quot;wr&quot;</span><span class="op">,</span><span class="st">&quot;ld&quot;</span>)<span class="op">;</span> <span class="co">// = [&quot;js&quot;,12,56,90]</span></a>
+<a class="sourceLine" id="cb2-176" title="176"><span class="co">// myArray0 === [32,false,&quot;hi&quot;,&quot;wr&quot;,&quot;ld&quot;]</span></a>
+<a class="sourceLine" id="cb2-177" title="177"></a>
+<a class="sourceLine" id="cb2-178" title="178"><span class="co">// JavaScript&#39;s objects are equivalent to &quot;dictionaries&quot; or &quot;maps&quot; in other</span></a>
+<a class="sourceLine" id="cb2-179" title="179"><span class="co">// languages: an unordered collection of key-value pairs.</span></a>
+<a class="sourceLine" id="cb2-180" title="180"><span class="kw">var</span> myObj <span class="op">=</span> <span class="op">{</span><span class="dt">key1</span><span class="op">:</span> <span class="st">&quot;Hello&quot;</span><span class="op">,</span> <span class="dt">key2</span><span class="op">:</span> <span class="st">&quot;World&quot;</span><span class="op">};</span></a>
+<a class="sourceLine" id="cb2-181" title="181"></a>
+<a class="sourceLine" id="cb2-182" title="182"><span class="co">// Keys are strings, but quotes aren&#39;t required if they&#39;re a valid</span></a>
+<a class="sourceLine" id="cb2-183" title="183"><span class="co">// JavaScript identifier. Values can be any type.</span></a>
+<a class="sourceLine" id="cb2-184" title="184"><span class="kw">var</span> myObj <span class="op">=</span> <span class="op">{</span><span class="dt">myKey</span><span class="op">:</span> <span class="st">&quot;myValue&quot;</span><span class="op">,</span> <span class="st">&quot;my other key&quot;</span><span class="op">:</span> <span class="dv">4</span><span class="op">};</span></a>
+<a class="sourceLine" id="cb2-185" title="185"></a>
+<a class="sourceLine" id="cb2-186" title="186"><span class="co">// Object attributes can also be accessed using the subscript syntax,</span></a>
+<a class="sourceLine" id="cb2-187" title="187">myObj[<span class="st">&quot;my other key&quot;</span>]<span class="op">;</span> <span class="co">// = 4</span></a>
+<a class="sourceLine" id="cb2-188" title="188"></a>
+<a class="sourceLine" id="cb2-189" title="189"><span class="co">// ... or using the dot syntax, provided the key is a valid identifier.</span></a>
+<a class="sourceLine" id="cb2-190" title="190"><span class="va">myObj</span>.<span class="at">myKey</span><span class="op">;</span> <span class="co">// = &quot;myValue&quot;</span></a>
+<a class="sourceLine" id="cb2-191" title="191"></a>
+<a class="sourceLine" id="cb2-192" title="192"><span class="co">// Objects are mutable; values can be changed and new keys added.</span></a>
+<a class="sourceLine" id="cb2-193" title="193"><span class="va">myObj</span>.<span class="at">myThirdKey</span> <span class="op">=</span> <span class="kw">true</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-194" title="194"></a>
+<a class="sourceLine" id="cb2-195" title="195"><span class="co">// If you try to access a value that&#39;s not yet set, you&#39;ll get undefined.</span></a>
+<a class="sourceLine" id="cb2-196" title="196"><span class="va">myObj</span>.<span class="at">myFourthKey</span><span class="op">;</span> <span class="co">// = undefined</span></a>
+<a class="sourceLine" id="cb2-197" title="197"></a>
+<a class="sourceLine" id="cb2-198" title="198"><span class="co">///////////////////////////////////</span></a>
+<a class="sourceLine" id="cb2-199" title="199"><span class="co">// 3. Logic and Control Structures</span></a>
+<a class="sourceLine" id="cb2-200" title="200"></a>
+<a class="sourceLine" id="cb2-201" title="201"><span class="co">// The `if` structure works as you&#39;d expect.</span></a>
+<a class="sourceLine" id="cb2-202" title="202"><span class="kw">var</span> count <span class="op">=</span> <span class="dv">1</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-203" title="203"><span class="cf">if</span> (count <span class="op">==</span> <span class="dv">3</span>)<span class="op">{</span></a>
+<a class="sourceLine" id="cb2-204" title="204">    <span class="co">// evaluated if count is 3</span></a>
+<a class="sourceLine" id="cb2-205" title="205"><span class="op">}</span> <span class="cf">else</span> <span class="cf">if</span> (count <span class="op">==</span> <span class="dv">4</span>)<span class="op">{</span></a>
+<a class="sourceLine" id="cb2-206" title="206">    <span class="co">// evaluated if count is 4</span></a>
+<a class="sourceLine" id="cb2-207" title="207"><span class="op">}</span> <span class="cf">else</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-208" title="208">    <span class="co">// evaluated if it&#39;s not either 3 or 4</span></a>
+<a class="sourceLine" id="cb2-209" title="209"><span class="op">}</span></a>
+<a class="sourceLine" id="cb2-210" title="210"></a>
+<a class="sourceLine" id="cb2-211" title="211"><span class="co">// As does `while`.</span></a>
+<a class="sourceLine" id="cb2-212" title="212"><span class="cf">while</span> (<span class="kw">true</span>)<span class="op">{</span></a>
+<a class="sourceLine" id="cb2-213" title="213">    <span class="co">// An infinite loop!</span></a>
+<a class="sourceLine" id="cb2-214" title="214"><span class="op">}</span></a>
+<a class="sourceLine" id="cb2-215" title="215"></a>
+<a class="sourceLine" id="cb2-216" title="216"><span class="co">// Do-while loops are like while loops, except they always run at least once.</span></a>
+<a class="sourceLine" id="cb2-217" title="217"><span class="kw">var</span> input<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-218" title="218"><span class="cf">do</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-219" title="219">    input <span class="op">=</span> <span class="at">getInput</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-220" title="220"><span class="op">}</span> <span class="cf">while</span> (<span class="op">!</span><span class="at">isValid</span>(input))<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-221" title="221"></a>
+<a class="sourceLine" id="cb2-222" title="222"><span class="co">// The `for` loop is the same as C and Java:</span></a>
+<a class="sourceLine" id="cb2-223" title="223"><span class="co">// initialization; continue condition; iteration.</span></a>
+<a class="sourceLine" id="cb2-224" title="224"><span class="cf">for</span> (<span class="kw">var</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> <span class="dv">5</span><span class="op">;</span> i<span class="op">++</span>)<span class="op">{</span></a>
+<a class="sourceLine" id="cb2-225" title="225">    <span class="co">// will run 5 times</span></a>
+<a class="sourceLine" id="cb2-226" title="226"><span class="op">}</span></a>
+<a class="sourceLine" id="cb2-227" title="227"></a>
+<a class="sourceLine" id="cb2-228" title="228"><span class="co">// Breaking out of labeled loops is similar to Java</span></a>
+<a class="sourceLine" id="cb2-229" title="229">outer<span class="op">:</span></a>
+<a class="sourceLine" id="cb2-230" title="230"><span class="cf">for</span> (<span class="kw">var</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> <span class="dv">10</span><span class="op">;</span> i<span class="op">++</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-231" title="231">    <span class="cf">for</span> (<span class="kw">var</span> j <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> j <span class="op">&lt;</span> <span class="dv">10</span><span class="op">;</span> j<span class="op">++</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-232" title="232">        <span class="cf">if</span> (i <span class="op">==</span> <span class="dv">5</span> <span class="op">&amp;&amp;</span> j <span class="op">==</span><span class="dv">5</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-233" title="233">            <span class="cf">break</span> outer<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-234" title="234">            <span class="co">// breaks out of outer loop instead of only the inner one</span></a>
+<a class="sourceLine" id="cb2-235" title="235">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb2-236" title="236">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb2-237" title="237"><span class="op">}</span></a>
+<a class="sourceLine" id="cb2-238" title="238"></a>
+<a class="sourceLine" id="cb2-239" title="239"><span class="co">// The for/in statement allows iteration over properties of an object.</span></a>
+<a class="sourceLine" id="cb2-240" title="240"><span class="kw">var</span> description <span class="op">=</span> <span class="st">&quot;&quot;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-241" title="241"><span class="kw">var</span> person <span class="op">=</span> <span class="op">{</span><span class="dt">fname</span><span class="op">:</span><span class="st">&quot;Paul&quot;</span><span class="op">,</span> <span class="dt">lname</span><span class="op">:</span><span class="st">&quot;Ken&quot;</span><span class="op">,</span> <span class="dt">age</span><span class="op">:</span><span class="dv">18</span><span class="op">};</span></a>
+<a class="sourceLine" id="cb2-242" title="242"><span class="cf">for</span> (<span class="kw">var</span> x <span class="kw">in</span> person)<span class="op">{</span></a>
+<a class="sourceLine" id="cb2-243" title="243">    description <span class="op">+=</span> person[x] <span class="op">+</span> <span class="st">&quot; &quot;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-244" title="244"><span class="op">}</span> <span class="co">// description = &#39;Paul Ken 18 &#39;</span></a>
+<a class="sourceLine" id="cb2-245" title="245"></a>
+<a class="sourceLine" id="cb2-246" title="246"><span class="co">// The for/of statement allows iteration over iterable objects (including the built-in String,</span></a>
+<a class="sourceLine" id="cb2-247" title="247"><span class="co">// Array, e.g. the Array-like arguments or NodeList objects, TypedArray, Map and Set,</span></a>
+<a class="sourceLine" id="cb2-248" title="248"><span class="co">// and user-defined iterables).</span></a>
+<a class="sourceLine" id="cb2-249" title="249"><span class="kw">var</span> myPets <span class="op">=</span> <span class="st">&quot;&quot;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-250" title="250"><span class="kw">var</span> pets <span class="op">=</span> [<span class="st">&quot;cat&quot;</span><span class="op">,</span> <span class="st">&quot;dog&quot;</span><span class="op">,</span> <span class="st">&quot;hamster&quot;</span><span class="op">,</span> <span class="st">&quot;hedgehog&quot;</span>]<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-251" title="251"><span class="cf">for</span> (<span class="kw">var</span> pet <span class="kw">of</span> pets)<span class="op">{</span></a>
+<a class="sourceLine" id="cb2-252" title="252">    myPets <span class="op">+=</span> pet <span class="op">+</span> <span class="st">&quot; &quot;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-253" title="253"><span class="op">}</span> <span class="co">// myPets = &#39;cat dog hamster hedgehog &#39;</span></a>
+<a class="sourceLine" id="cb2-254" title="254"></a>
+<a class="sourceLine" id="cb2-255" title="255"><span class="co">// &amp;&amp; is logical and, || is logical or</span></a>
+<a class="sourceLine" id="cb2-256" title="256"><span class="cf">if</span> (<span class="va">house</span>.<span class="at">size</span> <span class="op">==</span> <span class="st">&quot;big&quot;</span> <span class="op">&amp;&amp;</span> <span class="va">house</span>.<span class="at">colour</span> <span class="op">==</span> <span class="st">&quot;blue&quot;</span>)<span class="op">{</span></a>
+<a class="sourceLine" id="cb2-257" title="257">    <span class="va">house</span>.<span class="at">contains</span> <span class="op">=</span> <span class="st">&quot;bear&quot;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-258" title="258"><span class="op">}</span></a>
+<a class="sourceLine" id="cb2-259" title="259"><span class="cf">if</span> (colour <span class="op">==</span> <span class="st">&quot;red&quot;</span> <span class="op">||</span> colour <span class="op">==</span> <span class="st">&quot;blue&quot;</span>)<span class="op">{</span></a>
+<a class="sourceLine" id="cb2-260" title="260">    <span class="co">// colour is either red or blue</span></a>
+<a class="sourceLine" id="cb2-261" title="261"><span class="op">}</span></a>
+<a class="sourceLine" id="cb2-262" title="262"></a>
+<a class="sourceLine" id="cb2-263" title="263"><span class="co">// &amp;&amp; and || &quot;short circuit&quot;, which is useful for setting default values.</span></a>
+<a class="sourceLine" id="cb2-264" title="264"><span class="kw">var</span> name <span class="op">=</span> otherName <span class="op">||</span> <span class="st">&quot;default&quot;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-265" title="265"></a>
+<a class="sourceLine" id="cb2-266" title="266"><span class="co">// The `switch` statement checks for equality with `===`.</span></a>
+<a class="sourceLine" id="cb2-267" title="267"><span class="co">// Use &#39;break&#39; after each case</span></a>
+<a class="sourceLine" id="cb2-268" title="268"><span class="co">// or the cases after the correct one will be executed too.</span></a>
+<a class="sourceLine" id="cb2-269" title="269">grade <span class="op">=</span> <span class="st">&#39;B&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-270" title="270"><span class="cf">switch</span> (grade) <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-271" title="271">  <span class="cf">case</span> <span class="st">&#39;A&#39;</span><span class="op">:</span></a>
+<a class="sourceLine" id="cb2-272" title="272">    <span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;Great job&quot;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-273" title="273">    <span class="cf">break</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-274" title="274">  <span class="cf">case</span> <span class="st">&#39;B&#39;</span><span class="op">:</span></a>
+<a class="sourceLine" id="cb2-275" title="275">    <span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;OK job&quot;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-276" title="276">    <span class="cf">break</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-277" title="277">  <span class="cf">case</span> <span class="st">&#39;C&#39;</span><span class="op">:</span></a>
+<a class="sourceLine" id="cb2-278" title="278">    <span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;You can do better&quot;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-279" title="279">    <span class="cf">break</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-280" title="280">  <span class="cf">default</span><span class="op">:</span></a>
+<a class="sourceLine" id="cb2-281" title="281">    <span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;Oy vey&quot;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-282" title="282">    <span class="cf">break</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-283" title="283"><span class="op">}</span></a>
+<a class="sourceLine" id="cb2-284" title="284"></a>
+<a class="sourceLine" id="cb2-285" title="285"><span class="co">///////////////////////////////////</span></a>
+<a class="sourceLine" id="cb2-286" title="286"><span class="co">// 4. Functions, Scope and Closures</span></a>
+<a class="sourceLine" id="cb2-287" title="287"></a>
+<a class="sourceLine" id="cb2-288" title="288"><span class="co">// JavaScript functions are declared with the `function` keyword.</span></a>
+<a class="sourceLine" id="cb2-289" title="289"><span class="kw">function</span> <span class="at">myFunction</span>(thing)<span class="op">{</span></a>
+<a class="sourceLine" id="cb2-290" title="290">    <span class="cf">return</span> <span class="va">thing</span>.<span class="at">toUpperCase</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-291" title="291"><span class="op">}</span></a>
+<a class="sourceLine" id="cb2-292" title="292"><span class="at">myFunction</span>(<span class="st">&quot;foo&quot;</span>)<span class="op">;</span> <span class="co">// = &quot;FOO&quot;</span></a>
+<a class="sourceLine" id="cb2-293" title="293"></a>
+<a class="sourceLine" id="cb2-294" title="294"><span class="co">// Note that the value to be returned must start on the same line as the</span></a>
+<a class="sourceLine" id="cb2-295" title="295"><span class="co">// `return` keyword, otherwise you&#39;ll always return `undefined` due to</span></a>
+<a class="sourceLine" id="cb2-296" title="296"><span class="co">// automatic semicolon insertion. Watch out for this when using Allman style.</span></a>
+<a class="sourceLine" id="cb2-297" title="297"><span class="kw">function</span> <span class="at">myFunction</span>()<span class="op">{</span></a>
+<a class="sourceLine" id="cb2-298" title="298">    <span class="cf">return</span> <span class="co">// &lt;- semicolon automatically inserted here</span></a>
+<a class="sourceLine" id="cb2-299" title="299">    <span class="op">{</span><span class="dt">thisIsAn</span><span class="op">:</span> <span class="st">&#39;object literal&#39;</span><span class="op">};</span></a>
+<a class="sourceLine" id="cb2-300" title="300"><span class="op">}</span></a>
+<a class="sourceLine" id="cb2-301" title="301"><span class="at">myFunction</span>()<span class="op">;</span> <span class="co">// = undefined</span></a>
+<a class="sourceLine" id="cb2-302" title="302"></a>
+<a class="sourceLine" id="cb2-303" title="303"><span class="co">// JavaScript functions are first class objects, so they can be reassigned to</span></a>
+<a class="sourceLine" id="cb2-304" title="304"><span class="co">// different variable names and passed to other functions as arguments - for</span></a>
+<a class="sourceLine" id="cb2-305" title="305"><span class="co">// example, when supplying an event handler:</span></a>
+<a class="sourceLine" id="cb2-306" title="306"><span class="kw">function</span> <span class="at">myFunction</span>()<span class="op">{</span></a>
+<a class="sourceLine" id="cb2-307" title="307">    <span class="co">// this code will be called in 5 seconds&#39; time</span></a>
+<a class="sourceLine" id="cb2-308" title="308"><span class="op">}</span></a>
+<a class="sourceLine" id="cb2-309" title="309"><span class="at">setTimeout</span>(myFunction<span class="op">,</span> <span class="dv">5000</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-310" title="310"><span class="co">// Note: setTimeout isn&#39;t part of the JS language, but is provided by browsers</span></a>
+<a class="sourceLine" id="cb2-311" title="311"><span class="co">// and Node.js.</span></a>
+<a class="sourceLine" id="cb2-312" title="312"></a>
+<a class="sourceLine" id="cb2-313" title="313"><span class="co">// Another function provided by browsers is setInterval</span></a>
+<a class="sourceLine" id="cb2-314" title="314"><span class="kw">function</span> <span class="at">myFunction</span>()<span class="op">{</span></a>
+<a class="sourceLine" id="cb2-315" title="315">    <span class="co">// this code will be called every 5 seconds</span></a>
+<a class="sourceLine" id="cb2-316" title="316"><span class="op">}</span></a>
+<a class="sourceLine" id="cb2-317" title="317"><span class="at">setInterval</span>(myFunction<span class="op">,</span> <span class="dv">5000</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-318" title="318"></a>
+<a class="sourceLine" id="cb2-319" title="319"><span class="co">// Function objects don&#39;t even have to be declared with a name - you can write</span></a>
+<a class="sourceLine" id="cb2-320" title="320"><span class="co">// an anonymous function definition directly into the arguments of another.</span></a>
+<a class="sourceLine" id="cb2-321" title="321"><span class="at">setTimeout</span>(<span class="kw">function</span>()<span class="op">{</span></a>
+<a class="sourceLine" id="cb2-322" title="322">    <span class="co">// this code will be called in 5 seconds&#39; time</span></a>
+<a class="sourceLine" id="cb2-323" title="323"><span class="op">},</span> <span class="dv">5000</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-324" title="324"></a>
+<a class="sourceLine" id="cb2-325" title="325"><span class="co">// JavaScript has function scope; functions get their own scope but other blocks</span></a>
+<a class="sourceLine" id="cb2-326" title="326"><span class="co">// do not.</span></a>
+<a class="sourceLine" id="cb2-327" title="327"><span class="cf">if</span> (<span class="kw">true</span>)<span class="op">{</span></a>
+<a class="sourceLine" id="cb2-328" title="328">    <span class="kw">var</span> i <span class="op">=</span> <span class="dv">5</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-329" title="329"><span class="op">}</span></a>
+<a class="sourceLine" id="cb2-330" title="330">i<span class="op">;</span> <span class="co">// = 5 - not undefined as you&#39;d expect in a block-scoped language</span></a>
+<a class="sourceLine" id="cb2-331" title="331"></a>
+<a class="sourceLine" id="cb2-332" title="332"><span class="co">// This has led to a common pattern of &quot;immediately-executing anonymous</span></a>
+<a class="sourceLine" id="cb2-333" title="333"><span class="co">// functions&quot;, which prevent temporary variables from leaking into the global</span></a>
+<a class="sourceLine" id="cb2-334" title="334"><span class="co">// scope.</span></a>
+<a class="sourceLine" id="cb2-335" title="335">(<span class="kw">function</span>()<span class="op">{</span></a>
+<a class="sourceLine" id="cb2-336" title="336">    <span class="kw">var</span> temporary <span class="op">=</span> <span class="dv">5</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-337" title="337">    <span class="co">// We can access the global scope by assigning to the &quot;global object&quot;, which</span></a>
+<a class="sourceLine" id="cb2-338" title="338">    <span class="co">// in a web browser is always `window`. The global object may have a</span></a>
+<a class="sourceLine" id="cb2-339" title="339">    <span class="co">// different name in non-browser environments such as Node.js.</span></a>
+<a class="sourceLine" id="cb2-340" title="340">    <span class="va">window</span>.<span class="at">permanent</span> <span class="op">=</span> <span class="dv">10</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-341" title="341"><span class="op">}</span>)()<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-342" title="342">temporary<span class="op">;</span> <span class="co">// raises ReferenceError</span></a>
+<a class="sourceLine" id="cb2-343" title="343">permanent<span class="op">;</span> <span class="co">// = 10</span></a>
+<a class="sourceLine" id="cb2-344" title="344"></a>
+<a class="sourceLine" id="cb2-345" title="345"><span class="co">// One of JavaScript&#39;s most powerful features is closures. If a function is</span></a>
+<a class="sourceLine" id="cb2-346" title="346"><span class="co">// defined inside another function, the inner function has access to all the</span></a>
+<a class="sourceLine" id="cb2-347" title="347"><span class="co">// outer function&#39;s variables, even after the outer function exits.</span></a>
+<a class="sourceLine" id="cb2-348" title="348"><span class="kw">function</span> <span class="at">sayHelloInFiveSeconds</span>(name)<span class="op">{</span></a>
+<a class="sourceLine" id="cb2-349" title="349">    <span class="kw">var</span> prompt <span class="op">=</span> <span class="st">&quot;Hello, &quot;</span> <span class="op">+</span> name <span class="op">+</span> <span class="st">&quot;!&quot;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-350" title="350">    <span class="co">// Inner functions are put in the local scope by default, as if they were</span></a>
+<a class="sourceLine" id="cb2-351" title="351">    <span class="co">// declared with `var`.</span></a>
+<a class="sourceLine" id="cb2-352" title="352">    <span class="kw">function</span> <span class="at">inner</span>()<span class="op">{</span></a>
+<a class="sourceLine" id="cb2-353" title="353">        <span class="at">alert</span>(prompt)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-354" title="354">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb2-355" title="355">    <span class="at">setTimeout</span>(inner<span class="op">,</span> <span class="dv">5000</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-356" title="356">    <span class="co">// setTimeout is asynchronous, so the sayHelloInFiveSeconds function will</span></a>
+<a class="sourceLine" id="cb2-357" title="357">    <span class="co">// exit immediately, and setTimeout will call inner afterwards. However,</span></a>
+<a class="sourceLine" id="cb2-358" title="358">    <span class="co">// because inner is &quot;closed over&quot; sayHelloInFiveSeconds, inner still has</span></a>
+<a class="sourceLine" id="cb2-359" title="359">    <span class="co">// access to the `prompt` variable when it is finally called.</span></a>
+<a class="sourceLine" id="cb2-360" title="360"><span class="op">}</span></a>
+<a class="sourceLine" id="cb2-361" title="361"><span class="at">sayHelloInFiveSeconds</span>(<span class="st">&quot;Adam&quot;</span>)<span class="op">;</span> <span class="co">// will open a popup with &quot;Hello, Adam!&quot; in 5s</span></a>
+<a class="sourceLine" id="cb2-362" title="362"></a>
+<a class="sourceLine" id="cb2-363" title="363"><span class="co">///////////////////////////////////</span></a>
+<a class="sourceLine" id="cb2-364" title="364"><span class="co">// 5. More about Objects; Constructors and Prototypes</span></a>
+<a class="sourceLine" id="cb2-365" title="365"></a>
+<a class="sourceLine" id="cb2-366" title="366"><span class="co">// Objects can contain functions.</span></a>
+<a class="sourceLine" id="cb2-367" title="367"><span class="kw">var</span> myObj <span class="op">=</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-368" title="368">    <span class="dt">myFunc</span><span class="op">:</span> <span class="kw">function</span>()<span class="op">{</span></a>
+<a class="sourceLine" id="cb2-369" title="369">        <span class="cf">return</span> <span class="st">&quot;Hello world!&quot;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-370" title="370">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb2-371" title="371"><span class="op">};</span></a>
+<a class="sourceLine" id="cb2-372" title="372"><span class="va">myObj</span>.<span class="at">myFunc</span>()<span class="op">;</span> <span class="co">// = &quot;Hello world!&quot;</span></a>
+<a class="sourceLine" id="cb2-373" title="373"></a>
+<a class="sourceLine" id="cb2-374" title="374"><span class="co">// When functions attached to an object are called, they can access the object</span></a>
+<a class="sourceLine" id="cb2-375" title="375"><span class="co">// they&#39;re attached to using the `this` keyword.</span></a>
+<a class="sourceLine" id="cb2-376" title="376">myObj <span class="op">=</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-377" title="377">    <span class="dt">myString</span><span class="op">:</span> <span class="st">&quot;Hello world!&quot;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb2-378" title="378">    <span class="dt">myFunc</span><span class="op">:</span> <span class="kw">function</span>()<span class="op">{</span></a>
+<a class="sourceLine" id="cb2-379" title="379">        <span class="cf">return</span> <span class="kw">this</span>.<span class="at">myString</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-380" title="380">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb2-381" title="381"><span class="op">};</span></a>
+<a class="sourceLine" id="cb2-382" title="382"><span class="va">myObj</span>.<span class="at">myFunc</span>()<span class="op">;</span> <span class="co">// = &quot;Hello world!&quot;</span></a>
+<a class="sourceLine" id="cb2-383" title="383"></a>
+<a class="sourceLine" id="cb2-384" title="384"><span class="co">// What this is set to has to do with how the function is called, not where</span></a>
+<a class="sourceLine" id="cb2-385" title="385"><span class="co">// it&#39;s defined. So, our function doesn&#39;t work if it isn&#39;t called in the</span></a>
+<a class="sourceLine" id="cb2-386" title="386"><span class="co">// context of the object.</span></a>
+<a class="sourceLine" id="cb2-387" title="387"><span class="kw">var</span> myFunc <span class="op">=</span> <span class="va">myObj</span>.<span class="at">myFunc</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-388" title="388"><span class="at">myFunc</span>()<span class="op">;</span> <span class="co">// = undefined</span></a>
+<a class="sourceLine" id="cb2-389" title="389"></a>
+<a class="sourceLine" id="cb2-390" title="390"><span class="co">// Inversely, a function can be assigned to the object and gain access to it</span></a>
+<a class="sourceLine" id="cb2-391" title="391"><span class="co">// through `this`, even if it wasn&#39;t attached when it was defined.</span></a>
+<a class="sourceLine" id="cb2-392" title="392"><span class="kw">var</span> myOtherFunc <span class="op">=</span> <span class="kw">function</span>()<span class="op">{</span></a>
+<a class="sourceLine" id="cb2-393" title="393">    <span class="cf">return</span> <span class="kw">this</span>.<span class="va">myString</span>.<span class="at">toUpperCase</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-394" title="394"><span class="op">};</span></a>
+<a class="sourceLine" id="cb2-395" title="395"><span class="va">myObj</span>.<span class="at">myOtherFunc</span> <span class="op">=</span> myOtherFunc<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-396" title="396"><span class="va">myObj</span>.<span class="at">myOtherFunc</span>()<span class="op">;</span> <span class="co">// = &quot;HELLO WORLD!&quot;</span></a>
+<a class="sourceLine" id="cb2-397" title="397"></a>
+<a class="sourceLine" id="cb2-398" title="398"><span class="co">// We can also specify a context for a function to execute in when we invoke it</span></a>
+<a class="sourceLine" id="cb2-399" title="399"><span class="co">// using `call` or `apply`.</span></a>
+<a class="sourceLine" id="cb2-400" title="400"></a>
+<a class="sourceLine" id="cb2-401" title="401"><span class="kw">var</span> anotherFunc <span class="op">=</span> <span class="kw">function</span>(s)<span class="op">{</span></a>
+<a class="sourceLine" id="cb2-402" title="402">    <span class="cf">return</span> <span class="kw">this</span>.<span class="at">myString</span> <span class="op">+</span> s<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-403" title="403"><span class="op">};</span></a>
+<a class="sourceLine" id="cb2-404" title="404"><span class="va">anotherFunc</span>.<span class="at">call</span>(myObj<span class="op">,</span> <span class="st">&quot; And Hello Moon!&quot;</span>)<span class="op">;</span> <span class="co">// = &quot;Hello World! And Hello Moon!&quot;</span></a>
+<a class="sourceLine" id="cb2-405" title="405"></a>
+<a class="sourceLine" id="cb2-406" title="406"><span class="co">// The `apply` function is nearly identical, but takes an array for an argument</span></a>
+<a class="sourceLine" id="cb2-407" title="407"><span class="co">// list.</span></a>
+<a class="sourceLine" id="cb2-408" title="408"></a>
+<a class="sourceLine" id="cb2-409" title="409"><span class="va">anotherFunc</span>.<span class="at">apply</span>(myObj<span class="op">,</span> [<span class="st">&quot; And Hello Sun!&quot;</span>])<span class="op">;</span> <span class="co">// = &quot;Hello World! And Hello Sun!&quot;</span></a>
+<a class="sourceLine" id="cb2-410" title="410"></a>
+<a class="sourceLine" id="cb2-411" title="411"><span class="co">// This is useful when working with a function that accepts a sequence of</span></a>
+<a class="sourceLine" id="cb2-412" title="412"><span class="co">// arguments and you want to pass an array.</span></a>
+<a class="sourceLine" id="cb2-413" title="413"></a>
+<a class="sourceLine" id="cb2-414" title="414"><span class="va">Math</span>.<span class="at">min</span>(<span class="dv">42</span><span class="op">,</span> <span class="dv">6</span><span class="op">,</span> <span class="dv">27</span>)<span class="op">;</span> <span class="co">// = 6</span></a>
+<a class="sourceLine" id="cb2-415" title="415"><span class="va">Math</span>.<span class="at">min</span>([<span class="dv">42</span><span class="op">,</span> <span class="dv">6</span><span class="op">,</span> <span class="dv">27</span>])<span class="op">;</span> <span class="co">// = NaN (uh-oh!)</span></a>
+<a class="sourceLine" id="cb2-416" title="416"><span class="va">Math</span>.<span class="va">min</span>.<span class="at">apply</span>(Math<span class="op">,</span> [<span class="dv">42</span><span class="op">,</span> <span class="dv">6</span><span class="op">,</span> <span class="dv">27</span>])<span class="op">;</span> <span class="co">// = 6</span></a>
+<a class="sourceLine" id="cb2-417" title="417"></a>
+<a class="sourceLine" id="cb2-418" title="418"><span class="co">// But, `call` and `apply` are only temporary. When we want it to stick, we can</span></a>
+<a class="sourceLine" id="cb2-419" title="419"><span class="co">// use `bind`.</span></a>
+<a class="sourceLine" id="cb2-420" title="420"></a>
+<a class="sourceLine" id="cb2-421" title="421"><span class="kw">var</span> boundFunc <span class="op">=</span> <span class="va">anotherFunc</span>.<span class="at">bind</span>(myObj)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-422" title="422"><span class="at">boundFunc</span>(<span class="st">&quot; And Hello Saturn!&quot;</span>)<span class="op">;</span> <span class="co">// = &quot;Hello World! And Hello Saturn!&quot;</span></a>
+<a class="sourceLine" id="cb2-423" title="423"></a>
+<a class="sourceLine" id="cb2-424" title="424"><span class="co">// `bind` can also be used to partially apply (curry) a function.</span></a>
+<a class="sourceLine" id="cb2-425" title="425"></a>
+<a class="sourceLine" id="cb2-426" title="426"><span class="kw">var</span> product <span class="op">=</span> <span class="kw">function</span>(a<span class="op">,</span> b)<span class="op">{</span> <span class="cf">return</span> a <span class="op">*</span> b<span class="op">;</span> <span class="op">};</span></a>
+<a class="sourceLine" id="cb2-427" title="427"><span class="kw">var</span> doubler <span class="op">=</span> <span class="va">product</span>.<span class="at">bind</span>(<span class="kw">this</span><span class="op">,</span> <span class="dv">2</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-428" title="428"><span class="at">doubler</span>(<span class="dv">8</span>)<span class="op">;</span> <span class="co">// = 16</span></a>
+<a class="sourceLine" id="cb2-429" title="429"></a>
+<a class="sourceLine" id="cb2-430" title="430"><span class="co">// When you call a function with the `new` keyword, a new object is created, and</span></a>
+<a class="sourceLine" id="cb2-431" title="431"><span class="co">// made available to the function via the `this` keyword. Functions designed to be</span></a>
+<a class="sourceLine" id="cb2-432" title="432"><span class="co">// called like that are called constructors.</span></a>
+<a class="sourceLine" id="cb2-433" title="433"></a>
+<a class="sourceLine" id="cb2-434" title="434"><span class="kw">var</span> MyConstructor <span class="op">=</span> <span class="kw">function</span>()<span class="op">{</span></a>
+<a class="sourceLine" id="cb2-435" title="435">    <span class="kw">this</span>.<span class="at">myNumber</span> <span class="op">=</span> <span class="dv">5</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-436" title="436"><span class="op">};</span></a>
+<a class="sourceLine" id="cb2-437" title="437">myNewObj <span class="op">=</span> <span class="kw">new</span> <span class="at">MyConstructor</span>()<span class="op">;</span> <span class="co">// = {myNumber: 5}</span></a>
+<a class="sourceLine" id="cb2-438" title="438"><span class="va">myNewObj</span>.<span class="at">myNumber</span><span class="op">;</span> <span class="co">// = 5</span></a>
+<a class="sourceLine" id="cb2-439" title="439"></a>
+<a class="sourceLine" id="cb2-440" title="440"><span class="co">// Unlike most other popular object-oriented languages, JavaScript has no</span></a>
+<a class="sourceLine" id="cb2-441" title="441"><span class="co">// concept of &#39;instances&#39; created from &#39;class&#39; blueprints; instead, JavaScript</span></a>
+<a class="sourceLine" id="cb2-442" title="442"><span class="co">// combines instantiation and inheritance into a single concept: a &#39;prototype&#39;.</span></a>
+<a class="sourceLine" id="cb2-443" title="443"></a>
+<a class="sourceLine" id="cb2-444" title="444"><span class="co">// Every JavaScript object has a &#39;prototype&#39;. When you go to access a property</span></a>
+<a class="sourceLine" id="cb2-445" title="445"><span class="co">// on an object that doesn&#39;t exist on the actual object, the interpreter will</span></a>
+<a class="sourceLine" id="cb2-446" title="446"><span class="co">// look at its prototype.</span></a>
+<a class="sourceLine" id="cb2-447" title="447"></a>
+<a class="sourceLine" id="cb2-448" title="448"><span class="co">// Some JS implementations let you access an object&#39;s prototype on the magic</span></a>
+<a class="sourceLine" id="cb2-449" title="449"><span class="co">// property `__proto__`. While this is useful for explaining prototypes it&#39;s not</span></a>
+<a class="sourceLine" id="cb2-450" title="450"><span class="co">// part of the standard; we&#39;ll get to standard ways of using prototypes later.</span></a>
+<a class="sourceLine" id="cb2-451" title="451"><span class="kw">var</span> myObj <span class="op">=</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-452" title="452">    <span class="dt">myString</span><span class="op">:</span> <span class="st">&quot;Hello world!&quot;</span></a>
+<a class="sourceLine" id="cb2-453" title="453"><span class="op">};</span></a>
+<a class="sourceLine" id="cb2-454" title="454"><span class="kw">var</span> myPrototype <span class="op">=</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-455" title="455">    <span class="dt">meaningOfLife</span><span class="op">:</span> <span class="dv">42</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb2-456" title="456">    <span class="dt">myFunc</span><span class="op">:</span> <span class="kw">function</span>()<span class="op">{</span></a>
+<a class="sourceLine" id="cb2-457" title="457">        <span class="cf">return</span> <span class="kw">this</span>.<span class="va">myString</span>.<span class="at">toLowerCase</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-458" title="458">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb2-459" title="459"><span class="op">};</span></a>
+<a class="sourceLine" id="cb2-460" title="460"></a>
+<a class="sourceLine" id="cb2-461" title="461"><span class="va">myObj</span>.<span class="at">__proto__</span> <span class="op">=</span> myPrototype<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-462" title="462"><span class="va">myObj</span>.<span class="at">meaningOfLife</span><span class="op">;</span> <span class="co">// = 42</span></a>
+<a class="sourceLine" id="cb2-463" title="463"></a>
+<a class="sourceLine" id="cb2-464" title="464"><span class="co">// This works for functions, too.</span></a>
+<a class="sourceLine" id="cb2-465" title="465"><span class="va">myObj</span>.<span class="at">myFunc</span>()<span class="op">;</span> <span class="co">// = &quot;hello world!&quot;</span></a>
+<a class="sourceLine" id="cb2-466" title="466"></a>
+<a class="sourceLine" id="cb2-467" title="467"><span class="co">// Of course, if your property isn&#39;t on your prototype, the prototype&#39;s</span></a>
+<a class="sourceLine" id="cb2-468" title="468"><span class="co">// prototype is searched, and so on.</span></a>
+<a class="sourceLine" id="cb2-469" title="469"><span class="va">myPrototype</span>.<span class="at">__proto__</span> <span class="op">=</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-470" title="470">    <span class="dt">myBoolean</span><span class="op">:</span> <span class="kw">true</span></a>
+<a class="sourceLine" id="cb2-471" title="471"><span class="op">};</span></a>
+<a class="sourceLine" id="cb2-472" title="472"><span class="va">myObj</span>.<span class="at">myBoolean</span><span class="op">;</span> <span class="co">// = true</span></a>
+<a class="sourceLine" id="cb2-473" title="473"></a>
+<a class="sourceLine" id="cb2-474" title="474"><span class="co">// There&#39;s no copying involved here; each object stores a reference to its</span></a>
+<a class="sourceLine" id="cb2-475" title="475"><span class="co">// prototype. This means we can alter the prototype and our changes will be</span></a>
+<a class="sourceLine" id="cb2-476" title="476"><span class="co">// reflected everywhere.</span></a>
+<a class="sourceLine" id="cb2-477" title="477"><span class="va">myPrototype</span>.<span class="at">meaningOfLife</span> <span class="op">=</span> <span class="dv">43</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-478" title="478"><span class="va">myObj</span>.<span class="at">meaningOfLife</span><span class="op">;</span> <span class="co">// = 43</span></a>
+<a class="sourceLine" id="cb2-479" title="479"></a>
+<a class="sourceLine" id="cb2-480" title="480"><span class="co">// The for/in statement allows iteration over properties of an object,</span></a>
+<a class="sourceLine" id="cb2-481" title="481"><span class="co">// walking up the prototype chain until it sees a null prototype.</span></a>
+<a class="sourceLine" id="cb2-482" title="482"><span class="cf">for</span> (<span class="kw">var</span> x <span class="kw">in</span> myObj)<span class="op">{</span></a>
+<a class="sourceLine" id="cb2-483" title="483">    <span class="va">console</span>.<span class="at">log</span>(myObj[x])<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-484" title="484"><span class="op">}</span></a>
+<a class="sourceLine" id="cb2-485" title="485"><span class="co">///prints:</span></a>
+<a class="sourceLine" id="cb2-486" title="486"><span class="co">// Hello world!</span></a>
+<a class="sourceLine" id="cb2-487" title="487"><span class="co">// 43</span></a>
+<a class="sourceLine" id="cb2-488" title="488"><span class="co">// [Function: myFunc]</span></a>
+<a class="sourceLine" id="cb2-489" title="489"><span class="co">// true</span></a>
+<a class="sourceLine" id="cb2-490" title="490"></a>
+<a class="sourceLine" id="cb2-491" title="491"><span class="co">// To only consider properties attached to the object itself</span></a>
+<a class="sourceLine" id="cb2-492" title="492"><span class="co">// and not its prototypes, use the `hasOwnProperty()` check.</span></a>
+<a class="sourceLine" id="cb2-493" title="493"><span class="cf">for</span> (<span class="kw">var</span> x <span class="kw">in</span> myObj)<span class="op">{</span></a>
+<a class="sourceLine" id="cb2-494" title="494">    <span class="cf">if</span> (<span class="va">myObj</span>.<span class="at">hasOwnProperty</span>(x))<span class="op">{</span></a>
+<a class="sourceLine" id="cb2-495" title="495">        <span class="va">console</span>.<span class="at">log</span>(myObj[x])<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-496" title="496">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb2-497" title="497"><span class="op">}</span></a>
+<a class="sourceLine" id="cb2-498" title="498"><span class="co">///prints:</span></a>
+<a class="sourceLine" id="cb2-499" title="499"><span class="co">// Hello world!</span></a>
+<a class="sourceLine" id="cb2-500" title="500"></a>
+<a class="sourceLine" id="cb2-501" title="501"><span class="co">// We mentioned that `__proto__` was non-standard, and there&#39;s no standard way to</span></a>
+<a class="sourceLine" id="cb2-502" title="502"><span class="co">// change the prototype of an existing object. However, there are two ways to</span></a>
+<a class="sourceLine" id="cb2-503" title="503"><span class="co">// create a new object with a given prototype.</span></a>
+<a class="sourceLine" id="cb2-504" title="504"></a>
+<a class="sourceLine" id="cb2-505" title="505"><span class="co">// The first is Object.create, which is a recent addition to JS, and therefore</span></a>
+<a class="sourceLine" id="cb2-506" title="506"><span class="co">// not available in all implementations yet.</span></a>
+<a class="sourceLine" id="cb2-507" title="507"><span class="kw">var</span> myObj <span class="op">=</span> <span class="va">Object</span>.<span class="at">create</span>(myPrototype)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-508" title="508"><span class="va">myObj</span>.<span class="at">meaningOfLife</span><span class="op">;</span> <span class="co">// = 43</span></a>
+<a class="sourceLine" id="cb2-509" title="509"></a>
+<a class="sourceLine" id="cb2-510" title="510"><span class="co">// The second way, which works anywhere, has to do with constructors.</span></a>
+<a class="sourceLine" id="cb2-511" title="511"><span class="co">// Constructors have a property called prototype. This is *not* the prototype of</span></a>
+<a class="sourceLine" id="cb2-512" title="512"><span class="co">// the constructor function itself; instead, it&#39;s the prototype that new objects</span></a>
+<a class="sourceLine" id="cb2-513" title="513"><span class="co">// are given when they&#39;re created with that constructor and the new keyword.</span></a>
+<a class="sourceLine" id="cb2-514" title="514"><span class="va">MyConstructor</span>.<span class="at">prototype</span> <span class="op">=</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-515" title="515">    <span class="dt">myNumber</span><span class="op">:</span> <span class="dv">5</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb2-516" title="516">    <span class="dt">getMyNumber</span><span class="op">:</span> <span class="kw">function</span>()<span class="op">{</span></a>
+<a class="sourceLine" id="cb2-517" title="517">        <span class="cf">return</span> <span class="kw">this</span>.<span class="at">myNumber</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-518" title="518">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb2-519" title="519"><span class="op">};</span></a>
+<a class="sourceLine" id="cb2-520" title="520"><span class="kw">var</span> myNewObj2 <span class="op">=</span> <span class="kw">new</span> <span class="at">MyConstructor</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-521" title="521"><span class="va">myNewObj2</span>.<span class="at">getMyNumber</span>()<span class="op">;</span> <span class="co">// = 5</span></a>
+<a class="sourceLine" id="cb2-522" title="522"><span class="va">myNewObj2</span>.<span class="at">myNumber</span> <span class="op">=</span> <span class="dv">6</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-523" title="523"><span class="va">myNewObj2</span>.<span class="at">getMyNumber</span>()<span class="op">;</span> <span class="co">// = 6</span></a>
+<a class="sourceLine" id="cb2-524" title="524"></a>
+<a class="sourceLine" id="cb2-525" title="525"><span class="co">// Built-in types like strings and numbers also have constructors that create</span></a>
+<a class="sourceLine" id="cb2-526" title="526"><span class="co">// equivalent wrapper objects.</span></a>
+<a class="sourceLine" id="cb2-527" title="527"><span class="kw">var</span> myNumber <span class="op">=</span> <span class="dv">12</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-528" title="528"><span class="kw">var</span> myNumberObj <span class="op">=</span> <span class="kw">new</span> <span class="at">Number</span>(<span class="dv">12</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-529" title="529">myNumber <span class="op">==</span> myNumberObj<span class="op">;</span> <span class="co">// = true</span></a>
+<a class="sourceLine" id="cb2-530" title="530"></a>
+<a class="sourceLine" id="cb2-531" title="531"><span class="co">// Except, they aren&#39;t exactly equivalent.</span></a>
+<a class="sourceLine" id="cb2-532" title="532"><span class="kw">typeof</span> myNumber<span class="op">;</span> <span class="co">// = &#39;number&#39;</span></a>
+<a class="sourceLine" id="cb2-533" title="533"><span class="kw">typeof</span> myNumberObj<span class="op">;</span> <span class="co">// = &#39;object&#39;</span></a>
+<a class="sourceLine" id="cb2-534" title="534">myNumber <span class="op">===</span> myNumberObj<span class="op">;</span> <span class="co">// = false</span></a>
+<a class="sourceLine" id="cb2-535" title="535"><span class="cf">if</span> (<span class="dv">0</span>)<span class="op">{</span></a>
+<a class="sourceLine" id="cb2-536" title="536">    <span class="co">// This code won&#39;t execute, because 0 is falsy.</span></a>
+<a class="sourceLine" id="cb2-537" title="537"><span class="op">}</span></a>
+<a class="sourceLine" id="cb2-538" title="538"><span class="cf">if</span> (<span class="kw">new</span> <span class="at">Number</span>(<span class="dv">0</span>))<span class="op">{</span></a>
+<a class="sourceLine" id="cb2-539" title="539">   <span class="co">// This code will execute, because wrapped numbers are objects, and objects</span></a>
+<a class="sourceLine" id="cb2-540" title="540">   <span class="co">// are always truthy.</span></a>
+<a class="sourceLine" id="cb2-541" title="541"><span class="op">}</span></a>
+<a class="sourceLine" id="cb2-542" title="542"></a>
+<a class="sourceLine" id="cb2-543" title="543"><span class="co">// However, the wrapper objects and the regular builtins share a prototype, so</span></a>
+<a class="sourceLine" id="cb2-544" title="544"><span class="co">// you can actually add functionality to a string, for instance.</span></a>
+<a class="sourceLine" id="cb2-545" title="545"><span class="va">String</span>.<span class="va">prototype</span>.<span class="at">firstCharacter</span> <span class="op">=</span> <span class="kw">function</span>()<span class="op">{</span></a>
+<a class="sourceLine" id="cb2-546" title="546">    <span class="cf">return</span> <span class="kw">this</span>.<span class="at">charAt</span>(<span class="dv">0</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-547" title="547"><span class="op">};</span></a>
+<a class="sourceLine" id="cb2-548" title="548"><span class="st">&quot;abc&quot;</span>.<span class="at">firstCharacter</span>()<span class="op">;</span> <span class="co">// = &quot;a&quot;</span></a>
+<a class="sourceLine" id="cb2-549" title="549"></a>
+<a class="sourceLine" id="cb2-550" title="550"><span class="co">// This fact is often used in &quot;polyfilling&quot;, which is implementing newer</span></a>
+<a class="sourceLine" id="cb2-551" title="551"><span class="co">// features of JavaScript in an older subset of JavaScript, so that they can be</span></a>
+<a class="sourceLine" id="cb2-552" title="552"><span class="co">// used in older environments such as outdated browsers.</span></a>
+<a class="sourceLine" id="cb2-553" title="553"></a>
+<a class="sourceLine" id="cb2-554" title="554"><span class="co">// For instance, we mentioned that Object.create isn&#39;t yet available in all</span></a>
+<a class="sourceLine" id="cb2-555" title="555"><span class="co">// implementations, but we can still use it with this polyfill:</span></a>
+<a class="sourceLine" id="cb2-556" title="556"><span class="cf">if</span> (<span class="va">Object</span>.<span class="at">create</span> <span class="op">===</span> <span class="kw">undefined</span>)<span class="op">{</span> <span class="co">// don&#39;t overwrite it if it exists</span></a>
+<a class="sourceLine" id="cb2-557" title="557">    <span class="va">Object</span>.<span class="at">create</span> <span class="op">=</span> <span class="kw">function</span>(proto)<span class="op">{</span></a>
+<a class="sourceLine" id="cb2-558" title="558">        <span class="co">// make a temporary constructor with the right prototype</span></a>
+<a class="sourceLine" id="cb2-559" title="559">        <span class="kw">var</span> Constructor <span class="op">=</span> <span class="kw">function</span>()<span class="op">{};</span></a>
+<a class="sourceLine" id="cb2-560" title="560">        <span class="va">Constructor</span>.<span class="at">prototype</span> <span class="op">=</span> proto<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-561" title="561">        <span class="co">// then use it to create a new, appropriately-prototyped object</span></a>
+<a class="sourceLine" id="cb2-562" title="562">        <span class="cf">return</span> <span class="kw">new</span> <span class="at">Constructor</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-563" title="563">    <span class="op">};</span></a>
+<a class="sourceLine" id="cb2-564" title="564"><span class="op">}</span></a>
+<a class="sourceLine" id="cb2-565" title="565"></a>
+<a class="sourceLine" id="cb2-566" title="566"><span class="co">/* *******************************************************************************************</span></a>
+<a class="sourceLine" id="cb2-567" title="567"><span class="co"> * GLOBAL OBJECTS &gt; OBJECT</span></a>
+<a class="sourceLine" id="cb2-568" title="568"><span class="co"> * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object</span></a>
+<a class="sourceLine" id="cb2-569" title="569"><span class="co"> * ******************************************************************************************* */</span></a>
+<a class="sourceLine" id="cb2-570" title="570"></a>
+<a class="sourceLine" id="cb2-571" title="571"><span class="co">// Global object: properties</span></a>
+<a class="sourceLine" id="cb2-572" title="572"><span class="va">Object</span>.<span class="at">length</span>                                        <span class="co">// length is a property of a function object, and indicates how many arguments the function expects, i.e. the number of formal parameters. This number does not include the rest parameter. Has a value of 1.</span></a>
+<a class="sourceLine" id="cb2-573" title="573"><span class="va">Object</span>.<span class="at">prototype</span>                                     <span class="co">// Represents the Object prototype object and allows to add new properties and methods to all objects of type Object.</span></a>
+<a class="sourceLine" id="cb2-574" title="574"></a>
+<a class="sourceLine" id="cb2-575" title="575"><span class="co">// Methods of the Object constructor</span></a>
+<a class="sourceLine" id="cb2-576" title="576"><span class="va">Object</span>.<span class="at">assign</span>(target<span class="op">,</span> ...<span class="at">sources</span>)                    <span class="co">// Copies the values of all enumerable own properties from one or more source objects to a target object. method is used to copy the values of all enumerable own properties from one or more source objects to a target object. It will return the target object</span></a>
+<a class="sourceLine" id="cb2-577" title="577"><span class="va">Object</span>.<span class="at">create</span>(MyObject)                              <span class="co">// Creates a new object with the specified prototype object and properties. The object which should be the prototype of the newly-created object.</span></a>
+<a class="sourceLine" id="cb2-578" title="578"><span class="va">Object</span>.<span class="at">defineProperty</span>(obj<span class="op">,</span> prop<span class="op">,</span> descriptor)         <span class="co">// Adds the named property described by a given descriptor to an object.</span></a>
+<a class="sourceLine" id="cb2-579" title="579"><span class="va">Object</span>.<span class="at">defineProperties</span>(obj<span class="op">,</span> props)                  <span class="co">// Adds the named properties described by the given descriptors to an object.</span></a>
+<a class="sourceLine" id="cb2-580" title="580"><span class="va">Object</span>.<span class="at">entries</span>(obj)                                  <span class="co">// Returns an array containing all of the [key, value] pairs of a given object&#39;s own enumerable string properties.</span></a>
+<a class="sourceLine" id="cb2-581" title="581"><span class="va">Object</span>.<span class="at">freeze</span>(obj)                                   <span class="co">// Freezes an object: other code can&#39;t delete or change any properties.</span></a>
+<a class="sourceLine" id="cb2-582" title="582"><span class="va">Object</span>.<span class="at">getOwnPropertyDescriptor</span>(obj<span class="op">,</span> prop)           <span class="co">// Returns a property descriptor for a named property on an object.</span></a>
+<a class="sourceLine" id="cb2-583" title="583"><span class="va">Object</span>.<span class="at">getOwnPropertyDescriptors</span>(obj)                <span class="co">// Returns an object containing all own property descriptors for an object.</span></a>
+<a class="sourceLine" id="cb2-584" title="584"><span class="va">Object</span>.<span class="at">getOwnPropertyNames</span>(obj)                      <span class="co">// Returns an array containing the names of all of the given object&#39;s own enumerable and non-enumerable properties.</span></a>
+<a class="sourceLine" id="cb2-585" title="585"><span class="va">Object</span>.<span class="at">getOwnPropertySymbols</span>(obj)                    <span class="co">// Returns an array of all symbol properties found directly upon a given object.</span></a>
+<a class="sourceLine" id="cb2-586" title="586"><span class="va">Object</span>.<span class="at">getPrototypeOf</span>(obj)                           <span class="co">// Returns the prototype of the specified object.</span></a>
+<a class="sourceLine" id="cb2-587" title="587"><span class="va">Object</span>.<span class="at">is</span>(value1<span class="op">,</span> value2)<span class="op">;</span>                           <span class="co">// Compares if two values are the same value. Equates all NaN values (which differs from both Abstract Equality Comparison and Strict Equality Comparison).</span></a>
+<a class="sourceLine" id="cb2-588" title="588"><span class="va">Object</span>.<span class="at">isExtensible</span>(obj)                             <span class="co">// Determines if extending of an object is allowed.</span></a>
+<a class="sourceLine" id="cb2-589" title="589"><span class="va">Object</span>.<span class="at">isFrozen</span>(obj)                                 <span class="co">// Determines if an object was frozen.</span></a>
+<a class="sourceLine" id="cb2-590" title="590"><span class="va">Object</span>.<span class="at">isSealed</span>(obj)                                 <span class="co">// Determines if an object is sealed.</span></a>
+<a class="sourceLine" id="cb2-591" title="591"><span class="va">Object</span>.<span class="at">keys</span>(obj)                                     <span class="co">// Returns an array containing the names of all of the given object&#39;s own enumerable string properties.</span></a>
+<a class="sourceLine" id="cb2-592" title="592"><span class="va">Object</span>.<span class="at">preventExtensions</span>(obj)                        <span class="co">// Prevents any extensions of an object.</span></a>
+<a class="sourceLine" id="cb2-593" title="593"><span class="va">Object</span>.<span class="at">seal</span>(obj)                                     <span class="co">// Prevents other code from deleting properties of an object.</span></a>
+<a class="sourceLine" id="cb2-594" title="594"><span class="va">Object</span>.<span class="at">setPrototypeOf</span>(obj<span class="op">,</span> prototype)                <span class="co">// Sets the prototype (i.e., the internal [[Prototype]] property).</span></a>
+<a class="sourceLine" id="cb2-595" title="595"><span class="va">Object</span>.<span class="at">values</span>(obj)                                   <span class="co">// Returns an array containing the values that correspond to all of a given object&#39;s own enumerable string properties.</span></a>
+<a class="sourceLine" id="cb2-596" title="596"></a>
+<a class="sourceLine" id="cb2-597" title="597"><span class="co">// Object instances and Object prototype object (Object.prototype.property or Object.prototype.method())</span></a>
+<a class="sourceLine" id="cb2-598" title="598"><span class="co">// Properties</span></a>
+<a class="sourceLine" id="cb2-599" title="599"><span class="va">obj</span>.<span class="at">constructor</span>                                      <span class="co">// Specifies the function that creates an object&#39;s prototype.</span></a>
+<a class="sourceLine" id="cb2-600" title="600"><span class="va">obj</span>.<span class="at">__proto__</span>                                        <span class="co">// Points to the object which was used as prototype when the object was instantiated.</span></a>
+<a class="sourceLine" id="cb2-601" title="601"></a>
+<a class="sourceLine" id="cb2-602" title="602"><span class="co">// Methods</span></a>
+<a class="sourceLine" id="cb2-603" title="603"><span class="va">obj</span>.<span class="at">hasOwnProperty</span>(prop)                             <span class="co">// Returns a boolean indicating whether an object contains the specified property as a direct property of that object and not inherited through the prototype chain.</span></a>
+<a class="sourceLine" id="cb2-604" title="604"><span class="va">prototypeObj</span>.<span class="at">isPrototypeOf</span>(object)                   <span class="co">// Returns a boolean indicating whether the object this method is called upon is in the prototype chain of the specified object.</span></a>
+<a class="sourceLine" id="cb2-605" title="605"><span class="va">obj</span>.<span class="at">propertyIsEnumerable</span>(prop)                       <span class="co">// Returns a boolean indicating if the internal ECMAScript [[Enumerable]] attribute is set.</span></a>
+<a class="sourceLine" id="cb2-606" title="606"><span class="va">obj</span>.<span class="at">toLocaleString</span>()                                 <span class="co">// Calls toString().</span></a>
+<a class="sourceLine" id="cb2-607" title="607"><span class="va">obj</span>.<span class="at">toString</span>()                                       <span class="co">// Returns a string representation of the object.</span></a>
+<a class="sourceLine" id="cb2-608" title="608"><span class="va">object</span>.<span class="at">valueOf</span>()                                     <span class="co">// Returns the primitive value of the specified object.</span></a>
+<a class="sourceLine" id="cb2-609" title="609"></a>
+<a class="sourceLine" id="cb2-610" title="610"><span class="co">/* *******************************************************************************************</span></a>
+<a class="sourceLine" id="cb2-611" title="611"><span class="co"> * GLOBAL OBJECTS &gt; ARRAY</span></a>
+<a class="sourceLine" id="cb2-612" title="612"><span class="co"> * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array</span></a>
+<a class="sourceLine" id="cb2-613" title="613"><span class="co"> * ******************************************************************************************* */</span></a>
+<a class="sourceLine" id="cb2-614" title="614"></a>
+<a class="sourceLine" id="cb2-615" title="615"><span class="co">// Global object: properties</span></a>
+<a class="sourceLine" id="cb2-616" title="616"><span class="va">Array</span>.<span class="at">length</span>                                         <span class="co">// Reflects the number of elements in an array.</span></a>
+<a class="sourceLine" id="cb2-617" title="617"><span class="va">Array</span>.<span class="at">prototype</span>                                      <span class="co">// Represents the prototype for the Array constructor and allows to add new properties and methods to all Array objects.</span></a>
+<a class="sourceLine" id="cb2-618" title="618"></a>
+<a class="sourceLine" id="cb2-619" title="619"><span class="co">// Global object: methods</span></a>
+<a class="sourceLine" id="cb2-620" title="620"><span class="va">Array</span>.<span class="at">from</span>(arrayLike[<span class="op">,</span> mapFn[<span class="op">,</span> thisArg]])            <span class="co">// Creates a new Array instance from an array-like or iterable object.</span></a>
+<a class="sourceLine" id="cb2-621" title="621"><span class="va">Array</span>.<span class="at">isArray</span>(obj)                                   <span class="co">// Returns true if a variable is an array, if not false.</span></a>
+<a class="sourceLine" id="cb2-622" title="622"><span class="va">Array</span>.<span class="at">of</span>(element0[<span class="op">,</span> element1[<span class="op">,</span> ...[<span class="op">,</span> elementN]]])    <span class="co">// Creates a new Array instance with a variable number of arguments, regardless of number or type of the arguments.</span></a>
+<a class="sourceLine" id="cb2-623" title="623"></a>
+<a class="sourceLine" id="cb2-624" title="624"><span class="co">// Instance: properties</span></a>
+<a class="sourceLine" id="cb2-625" title="625"><span class="va">arr</span>.<span class="at">length</span>                                           <span class="co">// Reflects the number of elements in an array.</span></a>
+<a class="sourceLine" id="cb2-626" title="626"></a>
+<a class="sourceLine" id="cb2-627" title="627"><span class="co">// Instance: mutator methods</span></a>
+<a class="sourceLine" id="cb2-628" title="628"><span class="va">arr</span>.<span class="at">copyWithin</span>(target<span class="op">,</span> start<span class="op">,</span> end)                   <span class="co">// Copies a sequence of array elements within the array.</span></a>
+<a class="sourceLine" id="cb2-629" title="629"><span class="va">arr</span>.<span class="at">fill</span>(value<span class="op">,</span> start<span class="op">,</span> end)                          <span class="co">// Fills all the elements of an array from a start index to an end index with a static value.</span></a>
+<a class="sourceLine" id="cb2-630" title="630"><span class="va">arr</span>.<span class="at">pop</span>()                                            <span class="co">// Removes the last element from an array and returns that element.</span></a>
+<a class="sourceLine" id="cb2-631" title="631"><span class="va">arr</span>.<span class="at">push</span>([element1[<span class="op">,</span> ...[<span class="op">,</span> elementN]]])              <span class="co">// Adds one or more elements to the end of an array and returns the new length of the array.</span></a>
+<a class="sourceLine" id="cb2-632" title="632"><span class="va">arr</span>.<span class="at">reverse</span>()                                        <span class="co">// Reverses the order of the elements of an array in place — the first becomes the last, and the last becomes the first.</span></a>
+<a class="sourceLine" id="cb2-633" title="633"><span class="va">arr</span>.<span class="at">shift</span>()                                          <span class="co">// Removes the first element from an array and returns that element.</span></a>
+<a class="sourceLine" id="cb2-634" title="634"><span class="va">arr</span>.<span class="at">sort</span>()                                           <span class="co">// Sorts the elements of an array in place and returns the array.</span></a>
+<a class="sourceLine" id="cb2-635" title="635"><span class="va">array</span>.<span class="at">splice</span>(start<span class="op">,</span> deleteCount<span class="op">,</span> item1<span class="op">,</span> item2<span class="op">,</span> ...)  <span class="co">// Adds and/or removes elements from an array.</span></a>
+<a class="sourceLine" id="cb2-636" title="636"><span class="va">arr</span>.<span class="at">unshift</span>([element1[<span class="op">,</span> ...[<span class="op">,</span> elementN]]])           <span class="co">// Adds one or more elements to the front of an array and returns the new length of the array.</span></a>
+<a class="sourceLine" id="cb2-637" title="637"></a>
+<a class="sourceLine" id="cb2-638" title="638"><span class="co">// Instance: accessor methods</span></a>
+<a class="sourceLine" id="cb2-639" title="639"><span class="va">arr</span>.<span class="at">concat</span>(value1[<span class="op">,</span> value2[<span class="op">,</span> ...[<span class="op">,</span> valueN]]])        <span class="co">// Returns a new array comprised of this array joined with other array(s) and/or value(s).</span></a>
+<a class="sourceLine" id="cb2-640" title="640"><span class="va">arr</span>.<span class="at">includes</span>(searchElement<span class="op">,</span> fromIndex)               <span class="co">// Determines whether an array contains a certain element, returning true or false as appropriate.</span></a>
+<a class="sourceLine" id="cb2-641" title="641"><span class="va">arr</span>.<span class="at">indexOf</span>(searchElement[<span class="op">,</span> fromIndex])              <span class="co">// Returns the first (least) index of an element within the array equal to the specified value, or -1 if none is found.</span></a>
+<a class="sourceLine" id="cb2-642" title="642"><span class="va">arr</span>.<span class="at">join</span>(separator)                                  <span class="co">// Joins all elements of an array into a string.</span></a>
+<a class="sourceLine" id="cb2-643" title="643"><span class="va">arr</span>.<span class="at">lastIndexOf</span>(searchElement<span class="op">,</span> fromIndex)            <span class="co">// Returns the last (greatest) index of an element within the array equal to the specified value, or -1 if none is found.</span></a>
+<a class="sourceLine" id="cb2-644" title="644"><span class="va">arr</span>.<span class="at">slice</span>(begin<span class="op">,</span> end)                                <span class="co">// Extracts a section of an array and returns a new array.</span></a>
+<a class="sourceLine" id="cb2-645" title="645"><span class="va">arr</span>.<span class="at">toString</span>()                                       <span class="co">// Returns a string representing the array and its elements. Overrides the Object.prototype.toString() method.</span></a>
+<a class="sourceLine" id="cb2-646" title="646"><span class="va">arr</span>.<span class="at">toLocaleString</span>(locales<span class="op">,</span> options)                 <span class="co">// Returns a localized string representing the array and its elements. Overrides the Object.prototype.toLocaleString() method.</span></a>
+<a class="sourceLine" id="cb2-647" title="647"></a>
+<a class="sourceLine" id="cb2-648" title="648"><span class="co">// Instance: iteration methods</span></a>
+<a class="sourceLine" id="cb2-649" title="649"><span class="va">arr</span>.<span class="at">entries</span>()                                        <span class="co">// Returns a new Array Iterator object that contains the key/value pairs for each index in the array.</span></a>
+<a class="sourceLine" id="cb2-650" title="650"><span class="va">arr</span>.<span class="at">every</span>(callback[<span class="op">,</span> thisArg])                       <span class="co">// Returns true if every element in this array satisfies the provided testing function.</span></a>
+<a class="sourceLine" id="cb2-651" title="651"><span class="va">arr</span>.<span class="at">filter</span>(callback[<span class="op">,</span> thisArg])                      <span class="co">// Creates a new array with all of the elements of this array for which the provided filtering function returns true.</span></a>
+<a class="sourceLine" id="cb2-652" title="652"><span class="va">arr</span>.<span class="at">find</span>(callback[<span class="op">,</span> thisArg])                        <span class="co">// Returns the found value in the array, if an element in the array satisfies the provided testing function or undefined if not found.</span></a>
+<a class="sourceLine" id="cb2-653" title="653"><span class="va">arr</span>.<span class="at">findIndex</span>(callback[<span class="op">,</span> thisArg])                   <span class="co">// Returns the found index in the array, if an element in the array satisfies the provided testing function or -1 if not found.</span></a>
+<a class="sourceLine" id="cb2-654" title="654"><span class="va">arr</span>.<span class="at">forEach</span>(callback[<span class="op">,</span> thisArg])                     <span class="co">// Calls a function for each element in the array.</span></a>
+<a class="sourceLine" id="cb2-655" title="655"><span class="va">arr</span>.<span class="at">keys</span>()                                           <span class="co">// Returns a new Array Iterator that contains the keys for each index in the array.</span></a>
+<a class="sourceLine" id="cb2-656" title="656"><span class="va">arr</span>.<span class="at">map</span>(callback[<span class="op">,</span> initialValue])                    <span class="co">// Creates a new array with the results of calling a provided function on every element in this array.</span></a>
+<a class="sourceLine" id="cb2-657" title="657"><span class="va">arr</span>.<span class="at">reduce</span>(callback[<span class="op">,</span> initialValue])                 <span class="co">// Apply a function against an accumulator and each value of the array (from left-to-right) as to reduce it to a single value.</span></a>
+<a class="sourceLine" id="cb2-658" title="658"><span class="va">arr</span>.<span class="at">reduceRight</span>(callback[<span class="op">,</span> initialValue])            <span class="co">// Apply a function against an accumulator and each value of the array (from right-to-left) as to reduce it to a single value.</span></a>
+<a class="sourceLine" id="cb2-659" title="659"><span class="va">arr</span>.<span class="at">some</span>(callback[<span class="op">,</span> initialValue])                   <span class="co">// Returns true if at least one element in this array satisfies the provided testing function.</span></a>
+<a class="sourceLine" id="cb2-660" title="660"><span class="va">arr</span>.<span class="at">values</span>()                                         <span class="co">// Returns a new Array Iterator object that contains the values for each index in the array.</span></a></code></pre></div>
+</body>
+</html>

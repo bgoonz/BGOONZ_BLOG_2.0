@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>injected-js-part4.md</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h2 id="post-processing"><a href="https://app.netlify.com/sites/bgoonz-blog/settings/deploys#post-processing">Post processing</a></h2>
+<p>Control the post processing and optimizations Netlify can do for you</p>
+<h3 id="snippet-injection"><a href="https://app.netlify.com/sites/bgoonz-blog/settings/deploys#snippet-injection">Snippet injection</a></h3>
+<p>Inject analytics or other scripts into the HTML of your site.</p>
+<ul>
+<li><p>before <code>&lt;/head&gt;</code></p>
+<p>gtag-n-firebase</p>
+<pre><code>&lt;!-- Google Tag Manager --&gt;
+&lt;script&gt;(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({&#39;gtm.start&#39;:
+new Date().getTime(),event:&#39;gtm.js&#39;});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!=&#39;dataLayer&#39;?&#39;&amp;l=&#39;+l:&#39;&#39;;j.async=true;j.src=
+&#39;https://www.googletagmanager.com/gtm.js?id=&#39;+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,&#39;script&#39;,&#39;dataLayer&#39;,&#39;GTM-5S5XXNR&#39;);&lt;/script&gt;
+&lt;!-- End Google Tag Manager --&gt;
+&lt;!--FIREBASE-----------------------------------------------------------------------&gt;
+&lt;!-- The core Firebase JS SDK is always required and must be listed first --&gt;
+&lt;script src=&quot;/__/firebase/8.8.1/firebase-app.js&quot;&gt;&lt;/script&gt;
+
+&lt;!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries --&gt;
+&lt;script src=&quot;/__/firebase/8.8.1/firebase-analytics.js&quot;&gt;&lt;/script&gt;
+
+&lt;!-- Initialize Firebase --&gt;
+&lt;script src=&quot;/__/firebase/init.js&quot;&gt;&lt;/script&gt;
+
+&lt;!--Google Tag-----------------------------------------------------------------------&gt;
+
+&lt;!-- Global site tag (gtag.js) - Google Analytics --&gt;
+&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-M9B63M34E1&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag(&#39;js&#39;, new Date());
+
+  gtag(&#39;config&#39;, &#39;G-M9B63M34E1&#39;);
+&lt;/script&gt;</code></pre>
+<p>Remove</p></li>
+<li><p>before <code>&lt;/body&gt;</code></p>
+<p>gtag-in-body</p>
+<pre><code>&lt;!-- Google Tag Manager (noscript) --&gt;
+&lt;noscript&gt;&lt;iframe  style=&quot;-webkit-transform:scale(0.7);-moz-transform-scale(0.7); src=&quot;https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR&quot;
+height=&quot;0&quot; width=&quot;0&quot; style=&quot;display:none;visibility:hidden&quot;&gt;&lt;/iframe&gt;&lt;/noscript&gt;
+&lt;!-- End Google Tag Manager (noscript) --&gt;</code></pre>
+<p>Remove</p></li>
+<li><p>before <code>&lt;/head&gt;</code></p>
+<p>scroll-2-top</p>
+<pre><code>&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js&quot; async defer&gt;
+
+  &lt;/script&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+    function hideLoader() {
+      $( &#39;#loading&#39; ).hide();
+    }
+    $( window ).ready( hideLoader );
+    // Strongly recommended: Hide loader after 20 seconds, even if the page hasn&#39;t finished loading
+    setTimeout( hideLoader, 10 * 1000 );
+    $( window ).on( &#39;beforeunload&#39;, function () {
+      $( window ).scrollTop( 0 );
+    } );
+  &lt;/script&gt;
+
+  &lt;script&gt;
+    $( window ).scroll( function () {
+      $( &quot;#back&quot; ).stop().animate( {
+        &quot;marginTop&quot;: ( $( window ).scrollTop() ) + &quot;px&quot;,
+        &quot;marginLeft&quot;: ( $( window ).scrollLeft() ) + &quot;px&quot;
+      }, &quot;slow&quot; );
+    } );
+  &lt;/script&gt;
+&lt;script&gt;
+        window.addEventListener( &#39;DOMContentLoaded&#39;, ( event ) =&gt; {
+          console.log( &#39;DOM fully loaded and parsed&#39; );
+          const scrollToTop = () =&gt; {
+            const c = document.documentElement.scrollTop || document.body.scrollTop;
+            if ( c &gt; 0 ) {
+              window.requestAnimationFrame( scrollToTop );
+              window.scrollTo( 0, c - c / 8 );
+            }
+          };
+          scrollToTop();
+        } );
+
+      &lt;/script&gt;</code></pre>
+<p>Remove</p></li>
+<li><p>before <code>&lt;/head&gt;</code></p>
+<p>original-analytics</p>
+<pre><code>&lt;script data-ad-client=&quot;ca-pub-7131725540181116&quot; async src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&quot;&gt;&lt;/script&gt;
+&lt;!-- Google Tag Manager --&gt;
+&lt;script&gt;(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({&#39;gtm.start&#39;:
+new Date().getTime(),event:&#39;gtm.js&#39;});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!=&#39;dataLayer&#39;?&#39;&amp;l=&#39;+l:&#39;&#39;;j.async=true;j.src=
+&#39;https://www.googletagmanager.com/gtm.js?id=&#39;+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,&#39;script&#39;,&#39;dataLayer&#39;,&#39;GTM-5S5XXNR&#39;);&lt;/script&gt;
+&lt;!-- End Google Tag Manager --&gt;
+&lt;!-- Google Tag Manager (noscript) --&gt;
+&lt;noscript&gt;&lt;iframe  style=&quot;-webkit-transform:scale(0.7);-moz-transform-scale(0.7); src=&quot;https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR&quot;
+height=&quot;0&quot; width=&quot;0&quot; style=&quot;display:none;visibility:hidden&quot;&gt;&lt;/iframe&gt;&lt;/noscript&gt;
+&lt;!-- End Google Tag Manager (noscript) --&gt;
+
+&lt;meta name=&quot;google-site-verification&quot; content=&quot;W6SJ3S45yhnjzV6ISUMCTXl_QVX5woQZ7jO3bsahONQ&quot; /&gt;
+&lt;!-- Global site tag (gtag.js) - Google Analytics --&gt;
+&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-4W5MG3DG4T&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag(&#39;js&#39;, new Date());
+
+  gtag(&#39;config&#39;, &#39;G-4W5MG3DG4T&#39;);
+&lt;/script&gt;
+
+&lt;script data-ad-client=&quot;ca-pub-7131725540181116&quot; async src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&quot;&gt;&lt;/script&gt;</code></pre>
+<p>Remove</p></li>
+<li><p>before <code>&lt;/body&gt;</code></p>
+<p>goback</p>
+<pre><code>&lt;input type=&quot;button&quot; style=&quot;position: fixed;top: 10px;right: 10px;width:80px;color:white;font-weight:bold;background-color:rgba(0, 0, 0, 0.856); border-radius:15px;&quot; value=&quot;Go Back&quot; onclick=&quot;history.back(-1)&quot; /&gt;
+      &lt;?php
+        $url = htmlspecialchars($_SERVER[&#39;HTTP_REFERER&#39;]);
+        echo &quot;&lt;a href=&#39;$url&#39;&gt;&lt;/a&gt;</code></pre>
+<p>Remove</p></li>
+<li><p>before <code>&lt;/head&gt;</code></p>
+<p>mdn-style</p>
+<pre><code>&lt;style&gt;blockquote,
+body,
+dd,
+dl,
+figcaption,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+li,
+ol[class],
+p,
+ul[class] {
+  margin: 0
+}
+
+body {
+  min-height: 110vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.6
+}
+
+article&gt;*+* {
+  margin-top: 1em
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit
+}
+
+@media(prefers-reduced-motion:reduce) {
+  * {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important
+  }
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: arial, x-locale-body, sans-serif;
+  letter-spacing: -.0027777778rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 100%;
+  line-height: 1.75
+}
+
+img {
+  height: auto
+}
+
+@font-face {
+  font-display: swap;
+  font-family: zillaslab;
+  font-style: normal;
+  font-weight: 700;
+  src: url(/static/media/ZillaSlab-Bold.subset.0beac26b.woff2) format(&quot;woff2&quot;), url(/static/media/ZillaSlab-Bold.subset.72026b3c.woff) format(&quot;woff&quot;)
+}
+
+@font-face {
+  font-display: swap;
+  font-family: zillaslab;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/static/media/ZillaSlab-Regular.subset.ce3a756d.woff2) format(&quot;woff2&quot;), url(/static/media/ZillaSlab-Regular.subset.7e4c05c9.woff) format(&quot;woff&quot;)
+}
+
+h1,
+h2,
+h3 {
+  font-family: zillaslab, palatino, &quot;Palatino Linotype&quot;, serif;
+  line-height: 1.2
+}
+
+h1 {
+  font-size: 1.802rem
+}
+
+@media (min-width:47.9385em) {
+  h1 {
+    font-size: 3.052rem
+  }
+}
+
+h2 {
+  font-size: 1.602rem
+}
+
+@media (min-width:47.9385em) {
+  h2 {
+    font-size: 2.441rem
+  }
+}
+
+h3 {
+  font-size: 1.424rem;
+
+  font-family: zillaslab, palatino, &quot;Palatino Linotype&quot;, serif;
+  font-weight: 400;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  padding: 0 6px;
+  margin: 24px 0
+}
+
+@media (min-width:47.9385em) {
+  h3 {
+    font-size: 1.953rem
+  }
+}
+
+h4 {
+  font-size: 1.266rem
+}
+
+@media (min-width:47.9385em) {
+  h4 {
+    font-size: 1.563rem
+  }
+}
+
+h5 {
+  font-size: 1.125rem
+}
+
+@media (min-width:47.9385em) {
+  h5 {
+    font-size: 1.25rem
+  }
+}
+
+p {
+  margin-bottom: 24px
+}
+
+a:link,
+a:visited {
+
+  text-decoration: none
+}
+
+a:link:active,
+a:link:focus,
+a:link:hover,
+a:visited:active,
+a:visited:focus,
+a:visited:hover {
+  text-decoration: underline
+}
+
+blockquote {
+  max-width: 45rem;
+  max-width: 85ch;
+  font-size: 1.125rem;
+  font-family: zillaslab, palatino, &quot;Palatino Linotype&quot;, serif;
+  font-weight: 400;
+  margin-bottom: 24px
+}
+
+@media (min-width:47.9385em) {
+  blockquote {
+    font-size: 1.25rem
+  }
+}
+
+blockquote:after,
+blockquote:before {
+  background-image: linear-gradient(90deg, #00356a, #83d0f2);
+  content: &quot;&quot;;
+  display: block;
+  height: 5px;
+  margin-bottom: 12px
+}
+
+blockquote:after {
+  margin-top: 12px
+}
+
+blockquote p:last-of-type {
+  margin-bottom: 0
+}
+
+a {
+
+  text-decoration: none
+}
+
+a:focus,
+a:hover {
+  text-decoration: underline
+}
+
+a code {
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none
+}
+
+dl dt {
+  font-weight: 700
+}
+
+dl dd {
+  margin: 0 24px 24px
+}
+
+&lt;/style&gt;</code></pre>
+<p>Remove</p></li>
+<li><p>before <code>&lt;/head&gt;</code></p>
+<p>meta</p>
+<pre><code>&lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;link rel=&quot;apple-touch-icon&quot; href=&quot;logo-circle.png&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+  &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;HTML&quot;&gt;
+  &lt;meta name=&quot;Author&quot; content=&quot;Bryan Guner&quot;&gt;
+  &lt;meta name=&quot;keywords&quot; content=&quot;HTML, Meta Tags, Metadata&quot;&gt;
+  &lt;meta name=&quot;description&quot; content=&quot;Learning about Web Development.&quot;&gt;
+  &lt;link type=&quot;image/x-icon&quot; href=&quot;./favicon.ico&quot; rel=&quot;shortcut icon&quot;&gt;
+  &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=us-ascii&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, shrink-to-fit=no&quot;&gt;
+  &lt;meta name=&quot;twitter:card&quot; content=&quot;summary&quot;&gt;
+  &lt;meta name=&quot;twitter:site&quot; content=&quot;@bgoonz&quot;&gt;
+  &lt;meta name=&quot;twitter:creator&quot; content=&quot;@bgoonz&quot;&gt;
+  &lt;meta name=&quot;twitter:image:src&quot; content=&quot;/logo-circle.png&quot;&gt;
+  &lt;meta name=&quot;twitter:title&quot; content=&quot;Web Development Resource Hub Bryan Guner&quot;&gt;
+  &lt;meta name=&quot;twitter:description&quot; content=&quot;The new home of my blog resource sharing website.&quot;&gt;
+  &lt;link
+    href=&quot;https://instructure-uploads-pdx.s3.us-west-2.amazonaws.com/account_168550000000000001/attachments/537/logo-canvas.png&quot;
+    rel=&quot;apple-touch-icon&quot;&gt;
+  &lt;link type=&quot;text/css&quot; href=&quot;https://fonts.googleapis.com/css?family=Raleway:200,100,400&quot; rel=&quot;stylesheet&quot;&gt;</code></pre>
+<p>Remove</p></li>
+<li><p>before <code>&lt;/head&gt;</code></p>
+<p>meta</p>
+<pre><code>&lt;meta name=&quot;google-site-verification&quot; content=&quot;q5W83EYchlVTyA-iYRE4ElQGcbD_vukQF0NKW12N3qU&quot; /&gt;</code></pre>
+<p>Remove</p></li>
+<li><p>before <code>&lt;/head&gt;</code></p>
+<p>back to top css</p>
+<pre><code>&lt;style&gt;
+
+.intro-copy {
+  padding: 1em;
+  margin: 50vh auto;
+  max-width: 15em;
+  font-family: Helvetica;
+  font-weight: lighter;
+  font-size: 2em;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.top-link {
+  transition: all .25s ease-in-out;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: inline-flex;
+
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin: 0 3em 3em 0;
+    border-radius: 50%;
+    padding: .25em;
+    width: 80px;
+    height: 80px;
+  background-color: #F8F8F8;
+
+  &amp;.show {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &amp;.hide {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+    svg {
+        fill: #000;
+        width: 24px;
+        height: 12px;
+    }
+
+    &amp;:hover {
+        background-color: #E8E8E8;
+
+        svg {
+            fill: #000000;
+        }
+    }
+}
+
+// Text meant only for screen readers.
+.screen-reader-text {
+    position: absolute;
+    clip-path: inset(50%);
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    word-wrap: normal !important;
+    clip: rect(1px, 1px, 1px, 1px);
+
+    &amp;:focus {
+        display: block;
+        top: 5px;
+        left: 5px;
+        z-index: 100000; // Above WP toolbar
+        clip-path: none;
+        background-color: #eee;
+        padding: 15px 23px 14px;
+        width: auto;
+        height: auto;
+        text-decoration: none;
+        line-height: normal;
+        color: #444;
+        font-size: 1em;
+        clip: auto !important;
+    }
+}
+&lt;/style&gt;</code></pre>
+<p>Remove</p></li>
+<li><p>before <code>&lt;/body&gt;</code></p>
+<p>scroll2topsvg</p>
+<pre><code>&lt;!-- google-site-verification: googled2b1865dedd985a4.html --&gt;
+
+&lt;script async&gt;
+
+    // Set a variable for our button element.
+    const scrollToTopButton = document.getElementById(&#39;js-top&#39;);
+
+    // Let&#39;s set up a function that shows our scroll-to-top button if we scroll beyond the height of the initial window.
+    const scrollFunc = () =&gt; {
+        // Get the current scroll value
+        let y = window.scrollY;
+
+        // If the scroll value is greater than the window height, let&#39;s add a class to the scroll-to-top button to show it!
+        if (y &gt; 0) {
+            scrollToTopButton.className = &quot;top-link show&quot;;
+        } else {
+            scrollToTopButton.className = &quot;top-link hide&quot;;
+        }
+    };
+
+    window.addEventListener(&quot;scroll&quot;, scrollFunc);
+
+    const scrollToTop1 = () =&gt; {
+        // Let&#39;s set a variable for the number of pixels we are from the top of the document.
+        const c = document.documentElement.scrollTop || document.body.scrollTop;
+
+        // If that number is greater than 0, we&#39;ll scroll back to 0, or the top of the document.
+        // We&#39;ll also animate that scroll with requestAnimationFrame:
+        // https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame
+        if (c &gt; 0) {
+            window.requestAnimationFrame(scrollToTop1);
+            // ScrollTo takes an x and a y coordinate.
+            // Increase the &#39;10&#39; value to get a smoother/slower scroll!
+            window.scrollTo(0, c - c / 10);
+        }
+    };
+
+    // When the button is clicked, run our ScrolltoTop function above!
+    scrollToTopButton.onclick = function (e) {
+        e.preventDefault();
+        scrollToTop1();
+    }
+
+&lt;/script&gt;
+
+&lt;div&gt;
+&lt;a class=&quot;top-link hide&quot; href=&quot;&quot; id=&quot;js-top&quot;&gt;
+    &lt;span class=&quot;screen-reader-text&quot;&gt;Back to top&lt;/span&gt;  &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 12 6&quot;&gt;&lt;path d=&quot;M12 6H0l6-6z&quot;/&gt;&lt;/svg&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js&quot; async defer&gt;
+
+&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    function hideLoader() {
+        $(&#39;#loading&#39;).hide();
+    }
+    $(window).ready(hideLoader);
+    // Strongly recommended: Hide loader after 20 seconds, even if the page hasn&#39;t finished loading
+    setTimeout(hideLoader, 10 * 1000);
+    $(window).on(&#39;beforeunload&#39;, function () {
+        $(window).scrollTop(0);
+    });
+&lt;/script&gt;
+
+&lt;script&gt;
+    $(window).scroll(function () {
+        $(&quot;#back&quot;).stop().animate({
+            &quot;marginTop&quot;: ($(window).scrollTop()) + &quot;px&quot;,
+            &quot;marginLeft&quot;: ($(window).scrollLeft()) + &quot;px&quot;
+        }, &quot;slow&quot;);
+    });
+&lt;/script&gt;
+&lt;script&gt;
+    window.addEventListener(&#39;DOMContentLoaded&#39;, (event) =&gt; {
+        console.log(&#39;DOM fully loaded and parsed&#39;);
+        const scrollToTop = () =&gt; {
+            const c = document.documentElement.scrollTop || document.body.scrollTop;
+            if (c &gt; 0) {
+                window.requestAnimationFrame(scrollToTop);
+                window.scrollTo(0, c - c / 8);
+            }
+        };
+        scrollToTop();
+    });
+
+&lt;/script&gt;
+&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js&quot; async defer&gt;
+
+&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    function hideLoader() {
+        $(&#39;#loading&#39;).hide();
+    }
+    $(window).ready(hideLoader);
+    // Strongly recommended: Hide loader after 20 seconds, even if the page hasn&#39;t finished loading
+    setTimeout(hideLoader, 10 * 1000);
+    $(window).on(&#39;beforeunload&#39;, function () {
+        $(window).scrollTop(0);
+    });
+&lt;/script&gt;
+
+&lt;script&gt;
+    $(window).scroll(function () {
+        $(&quot;#back&quot;).stop().animate({
+            &quot;marginTop&quot;: ($(window).scrollTop()) + &quot;px&quot;,
+            &quot;marginLeft&quot;: ($(window).scrollLeft()) + &quot;px&quot;
+        }, &quot;slow&quot;);
+    });
+&lt;/script&gt;
+&lt;script&gt;
+    window.addEventListener(&#39;DOMContentLoaded&#39;, (event) =&gt; {
+        console.log(&#39;DOM fully loaded and parsed&#39;);
+        const scrollToTop1 = () =&gt; {
+            const c = document.documentElement.scrollTop || document.body.scrollTop;
+            if (c &gt; 0) {
+                window.requestAnimationFrame(scrollToTop1);
+                window.scrollTo(0, c - c / 8);
+            }
+        };
+        scrollToTop1();
+    });
+
+&lt;/script&gt;</code></pre>
+<p>Remove</p></li>
+<li><p>before <code>&lt;/head&gt;</code></p>
+<p>firebase-cdn</p>
+<pre><code>&lt;script type=&quot;module&quot;&gt;
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from &quot;https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js&quot;;
+  import { getAnalytics } from &quot;https://www.gstatic.com/firebasejs/9.0.2/firebase-analytics.js&quot;;
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app&#39;s Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: &quot;AIzaSyDHEGb8XzHTqWyHezNyXGFRRwVZbvQmd3E&quot;,
+    authDomain: &quot;bgoonzblog20.firebaseapp.com&quot;,
+    projectId: &quot;bgoonzblog20&quot;,
+    storageBucket: &quot;bgoonzblog20.appspot.com&quot;,
+    messagingSenderId: &quot;44896241794&quot;,
+    appId: &quot;1:44896241794:web:81523d6aa975fccb51cc9b&quot;,
+    measurementId: &quot;G-F56YP2Y17L&quot;
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+&lt;/script&gt;</code></pre>
+<p>Remove</p></li>
+<li><p>before <code>&lt;/head&gt;</code></p>
+<p>analytics</p>
+<pre><code>&lt;!-- Global site tag (gtag.js) - Google Analytics --&gt;
+&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-F56YP2Y17L&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag(&#39;js&#39;, new Date());
+
+  gtag(&#39;config&#39;, &#39;G-F56YP2Y17L&#39;);
+&lt;/script&gt;</code></pre>
+<p>Remove</p></li>
+<li><p>before <code>&lt;/head&gt;</code></p>
+<p>more-meta-tags-open-graph</p>
+<pre><code>&lt;!-- HTML Meta Tags --&gt;
+&lt;title&gt;Web-Dev-Hub&lt;/title&gt;
+&lt;meta name=&quot;description&quot; content=&quot;my resource sharing and blog site ... centered mostly on web development and just a bit of audio production / generally nerdy things I find interesting.&quot;&gt;
+
+&lt;!-- Facebook Meta Tags --&gt;
+&lt;meta property=&quot;og:url&quot; content=&quot;https://bgoonz-blog.netlify.app/&quot;&gt;
+&lt;meta property=&quot;og:type&quot; content=&quot;website&quot;&gt;
+&lt;meta property=&quot;og:title&quot; content=&quot;Web-Dev-Hub&quot;&gt;
+&lt;meta property=&quot;og:description&quot; content=&quot;my resource sharing and blog site ... centered mostly on web development and just a bit of audio production / generally nerdy things I find interesting.&quot;&gt;
+&lt;meta property=&quot;og:image&quot; content=&quot;https://bgoonz-blog.netlify.app/images/code.png&quot;&gt;
+
+&lt;!-- Twitter Meta Tags --&gt;
+&lt;meta name=&quot;twitter:card&quot; content=&quot;summary_large_image&quot;&gt;
+&lt;meta property=&quot;twitter:domain&quot; content=&quot;bgoonz-blog.netlify.app&quot;&gt;
+&lt;meta property=&quot;twitter:url&quot; content=&quot;https://bgoonz-blog.netlify.app/&quot;&gt;
+&lt;meta name=&quot;twitter:title&quot; content=&quot;Web-Dev-Hub&quot;&gt;
+&lt;meta name=&quot;twitter:description&quot; content=&quot;my resource sharing and blog site ... centered mostly on web development and just a bit of audio production / generally nerdy things I find interesting.&quot;&gt;
+&lt;meta name=&quot;twitter:image&quot; content=&quot;https://bgoonz-blog.netlify.app/images/code.png&quot;&gt;</code></pre>
+<p>Remove</p></li>
+<li><p>before <code>&lt;/body&gt;</code></p>
+<p>simpleanalytics</p>
+<pre><code>&lt;script async defer src=&quot;https://scripts.simpleanalyticscdn.com/latest.js&quot;&gt;&lt;/script&gt;
+&lt;noscript&gt;&lt;img src=&quot;https://queue.simpleanalyticscdn.com/noscript.gif&quot; alt=&quot;&quot; referrerpolicy=&quot;no-referrer-when-downgrade&quot; /&gt;&lt;/noscript&gt;</code></pre>
+<p>Remove</p></li>
+<li><p>before <code>&lt;/head&gt;</code></p>
+<p>metaaaa</p>
+<pre><code>&lt;meta property=&quot;og:image&quot; content=&quot;https://mugshotbot.com/m/DROicc16&quot;&gt;
+&lt;meta property=&quot;twitter:card&quot; content=&quot;summary_large_image&quot;&gt;</code></pre>
+<p>Remove</p></li>
+<li><p>before <code>&lt;/head&gt;</code></p>
+<p>algolia-head</p>
+<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css&quot;
+    integrity=&quot;sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU&quot; crossorigin=&quot;anonymous&quot; /&gt;
+  &lt;link rel=&quot;stylesheet&quot;  href=&quot;https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css&quot; /&gt;
+  &lt;script type=&quot;text/javascript&quot;  src=&quot;https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js&quot;&gt;
+    &lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+      algoliasearchNetlify({
+        appId: &quot;O6OT9G9U8Z&quot;,
+        apiKey: &quot;b0cb3d390176e1ff4bd1ecb12fc15730&quot;,
+        siteId: &quot;a1b7ee1a-11a7-4bd2-a341-2260656e216f&quot;,
+        branch: &quot;master&quot;,
+        selector: &quot;div#search&quot;
+      });
+    &lt;/script&gt;</code></pre>
+<p>Remove</p></li>
+<li><p>before <code>&lt;/body&gt;</code></p>
+<p>fb</p>
+<pre><code>&lt;script&gt;
+FB.api(
+  &#39;/https://sanity-gatsby-portfolio-3-web-4dmiq19t.netlify.app/&#39;,
+  &#39;GET&#39;,
+  {},
+  function(response) {
+      // Insert your code here
+  }
+);
+
+&lt;/script&gt;
+
+&lt;script&gt;
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : &#39;448469606483680&#39;,
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : &#39;v12.0&#39;
+    });
+  };
+&lt;/script&gt;
+&lt;script async defer crossorigin=&quot;anonymous&quot; src=&quot;https://connect.facebook.net/en_US/sdk.js&quot;&gt;&lt;/script&gt;</code></pre>
+<p>Remove</p></li>
+<li><p>before <code>&lt;/body&gt;</code></p>
+<p>stackbit-widget</p>
+<pre><code>&lt;script src=&quot;https://widget.stackbit.com/init.js&quot; id=&quot;stackbit-widget-init&quot; data-stackbit-project-id=&quot;609b2d7c71a5dd0016f36326&quot;&gt;&lt;/script&gt;</code></pre>
+<p>Remove</p></li>
+<li><p>before <code>&lt;/head&gt;</code></p>
+<p>blm</p>
+<pre><code>&lt;!-- Insert makerbadge.js (download or use ☁️cloud version) --&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://makerbadge.s3.amazonaws.com/blmbadge.js&quot;&gt;&lt;/script&gt;
+
+&lt;!-- Initialise MakerBadge with options --&gt;
+
+&lt;script&gt;
+  BLMBadge.init({
+       layout:2,
+       theme:&#39;dark&#39;,
+       promoText : &#39;Send a donation &#39;+String.fromCodePoint(0x2192),
+       promoLink : &#39;https://minnesotafreedomfund.org/&#39;,
+       message : &#39;To be silent is to be complicit. Black lives matter.&#39;,
+       title : &#39;#BlackLivesMatter&#39;,
+       imageAlt: &quot;Black Lives Matter Badge&quot;
+})
+&lt;/script&gt;</code></pre>
+<p>Remove</p></li>
+<li><p>before <code>&lt;/body&gt;</code></p>
+<p>addthis</p>
+<pre><code>&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946&quot;&gt;&lt;/script&gt;</code></pre>
+<p>Remove</p></li>
+<li><p>before <code>&lt;/body&gt;</code></p>
+<p>add-this</p>
+<pre><code>&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946&quot;&gt;&lt;/script&gt;</code></pre>
+<p>Remove</p></li>
+<li><p>before <code>&lt;/head&gt;</code></p>
+<p>meta</p>
+<pre><code>&lt;meta name=&quot;google-site-verification&quot; content=&quot;q5W83EYchlVTyA-iYRE4ElQGcbD_vukQF0NKW12N3qU&quot; /&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;link rel=&quot;apple-touch-icon&quot; href=&quot;logo-circle.png&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+  &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;HTML&quot;&gt;
+  &lt;meta name=&quot;Author&quot; content=&quot;Bryan Guner&quot;&gt;
+  &lt;meta name=&quot;keywords&quot; content=&quot;HTML, Meta Tags, Metadata&quot;&gt;
+  &lt;meta name=&quot;description&quot; content=&quot;Learning about Web Development.&quot;&gt;
+  &lt;link type=&quot;image/x-icon&quot; href=&quot;./favicon.ico&quot; rel=&quot;shortcut icon&quot;&gt;
+  &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=us-ascii&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, shrink-to-fit=no&quot;&gt;
+  &lt;meta name=&quot;twitter:card&quot; content=&quot;summary&quot;&gt;
+  &lt;meta name=&quot;twitter:site&quot; content=&quot;@bgoonz&quot;&gt;
+  &lt;meta name=&quot;twitter:creator&quot; content=&quot;@bgoonz&quot;&gt;
+  &lt;meta name=&quot;twitter:image:src&quot; content=&quot;/logo-circle.png&quot;&gt;
+  &lt;meta name=&quot;twitter:title&quot; content=&quot;Web Development Resource Hub Bryan Guner&quot;&gt;
+  &lt;meta name=&quot;twitter:description&quot; content=&quot;The new home of my blog resource sharing website.&quot;&gt;
+&lt;meta property=&quot;twitter:card&quot; content=&quot;summary_large_image&quot;&gt;
+  &lt;link
+    href=&quot;https://instructure-uploads-pdx.s3.us-west-2.amazonaws.com/account_168550000000000001/attachments/537/logo-canvas.png&quot;
+    rel=&quot;apple-touch-icon&quot;&gt;
+  &lt;link type=&quot;text/css&quot; href=&quot;https://fonts.googleapis.com/css?family=Raleway:200,100,400&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;meta property=&quot;og:image&quot; content=&quot;https://mugshotbot.com/m/DROicc16&quot;&gt;</code></pre>
+<p>Remove</p></li>
+<li><p>before <code>&lt;/body&gt;</code></p>
+<p>test</p></li>
+<li><p>before <code>&lt;/body&gt;</code></p>
+<p>search</p>
+<pre><code>&lt;script&gt;
+let div = window.createElement(&#39;div&#39;);
+div.id(&#39;search&#39;);
+div.style = &#39;z-index:-1; position:absolute;width: 300px;height: 300px;bottom: 0px;right: 25%;left: 50 %;&#39;;
+let docscontent = window.getElementByClassName(&#39;docs-content&#39;);
+docscontent.appendChild(div);
+
+let div1 = window.createElement(&#39;div&#39;);
+div1.id(&#39;search&#39;);
+div1.style = &#39;z-index:-1; position:absolute;width: 300px;height: 300px;background:#063;bottom: 0px;right: 25%;left: 50 %;margin-left: -150px&#39;;
+let header = window.getElementByClassName(&#39;site-header-inside&#39;);
+header.appendChild(&#39;div1&#39;);
+
+&lt;/script&gt;</code></pre>
+<p>Remove</p></li>
+<li><p>before <code>&lt;/head&gt;</code></p>
+<p>links-highlight</p>
+<pre><code>&lt;style&gt;
+
+a {
+color:blue;
+text-decoration: underline!important;
+}
+
+&lt;/style&gt;</code></pre>
+<p>Remove</p></li>
+</ul>
+</body>
+</html>

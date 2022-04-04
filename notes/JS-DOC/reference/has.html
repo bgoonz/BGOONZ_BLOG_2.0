@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>has</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="handler.has">handler.has()</h1>
+<p>The <code>handler.has()</code> method is a trap for the <a href="../../../operators/in"><code>in</code></a> operator.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>const p = new Proxy(target, {
+  has: function(target, prop) {
+  }
+});</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p>The following parameters are passed to <code>has()</code> method. <code>this</code> is bound to the handler.</p>
+<p><code>target</code><br />
+The target object.</p>
+<p><code>prop</code><br />
+The name or <a href="../../symbol"><code>Symbol</code></a> of the property to check for existence.</p>
+<h3 id="return-value">Return value</h3>
+<p>The <code>has()</code> method must return a boolean value.</p>
+<h2 id="description">Description</h2>
+<p>The <code>handler.has()</code> method is a trap for the <a href="../../../operators/in"><code>in</code></a> operator.</p>
+<h3 id="interceptions">Interceptions</h3>
+<p>This trap can intercept these operations:</p>
+<ul>
+<li>Property query: <code>foo in proxy</code></li>
+<li>Inherited property query: <code>foo in Object.create(proxy)</code></li>
+<li><code>with</code> check: <code>with(proxy) { (foo); }</code></li>
+<li><a href="../../reflect/has"><code>Reflect.has()</code></a></li>
+</ul>
+<h3 id="invariants">Invariants</h3>
+<p>If the following invariants are violated, the proxy will throw a <a href="../../typeerror"><code>TypeError</code></a>:</p>
+<ul>
+<li>A property cannot be reported as non-existent, if it exists as a non-configurable own property of the target object.</li>
+<li>A property cannot be reported as non-existent, if it exists as an own property of the target object and the target object is not extensible.</li>
+</ul>
+<h2 id="examples">Examples</h2>
+<h3 id="trapping-the-in-operator">Trapping the in operator</h3>
+<p>The following code traps the <a href="../../../operators/in"><code>in</code></a> operator.</p>
+<pre><code>const p = new Proxy({}, {
+  has: function(target, prop) {
+    console.log(&#39;called: &#39; + prop);
+    return true;
+  }
+});
+
+console.log(&#39;a&#39; in p); // &quot;called: a&quot;
+                       // true</code></pre>
+<p>The following code violates an invariant.</p>
+<pre><code>const obj = { a: 10 };
+Object.preventExtensions(obj);
+
+const p = new Proxy(obj, {
+  has: function(target, prop) {
+    return false;
+  }
+});
+
+&#39;a&#39; in p; // TypeError is thrown</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-proxy-object-internal-methods-and-internal-slots-hasproperty-p">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-proxy-object-internal-methods-and-internal-slots-hasproperty-p</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>has</code></p>
+<p>49</p>
+<p>12</p>
+<p>18</p>
+<p>No</p>
+<p>36</p>
+<p>10</p>
+<p>49</p>
+<p>49</p>
+<p>18</p>
+<p>36</p>
+<p>10</p>
+<p>5.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../../proxy"><code>Proxy</code></a></li>
+<li><a href="../proxy"><code>handler</code></a></li>
+<li><a href="../../../operators/in"><code>in</code></a> operator</li>
+<li><a href="../../reflect/has"><code>Reflect.has()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/has" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/has</a></p>
+</body>
+</html>

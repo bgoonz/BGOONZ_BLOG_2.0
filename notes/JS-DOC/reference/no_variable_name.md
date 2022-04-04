@@ -1,35 +1,40 @@
-# SyntaxError: missing variable name
+SyntaxError: missing variable name
+==================================
 
-The JavaScript exception "missing variable name" occurs way too often as naming things is so hard. Or maybe a comma is wrong. Check for typos!
+The JavaScript exception “missing variable name” occurs way too often as naming things is so hard. Or maybe a comma is wrong. Check for typos!
 
-## Message
+Message
+-------
 
     SyntaxError: missing variable name (Firefox)
     SyntaxError: Unexpected token = (Chrome)
 
-## Error type
+Error type
+----------
 
 [`SyntaxError`](../global_objects/syntaxerror)
 
-## What went wrong?
+What went wrong?
+----------------
 
 A variable is missing a name. This is likely due to a syntax error in your code. Probably a comma is wrong somewhere or you struggled with coming up with a name. Totally understandable! Naming things is so hard.
 
 -   Check to ensure the previous lines / declaration does not end with a comma instead of a semi-colon.
 
-## Examples
+Examples
+--------
 
 ### Missing a variable name
 
     var = "foo";
 
-It's tough coming up with good variable names. We all have been there.
+It’s tough coming up with good variable names. We all have been there.
 
     var ohGodWhy = "foo";
 
-### Reserved keywords can't be variable names
+### Reserved keywords can’t be variable names
 
-There are a few variable names that are [reserved keywords](../lexical_grammar#keywords). You can't use these. Sorry :(
+There are a few variable names that are [reserved keywords](../lexical_grammar#keywords). You can’t use these. Sorry :(
 
     var debugger = "whoop";
     // SyntaxError: missing variable name
@@ -56,7 +61,7 @@ The fixed version:
 
 ### Arrays
 
-[`Array`](../global_objects/array) literals in JavaScript need square brackets around the values. This won't work:
+[`Array`](../global_objects/array) literals in JavaScript need square brackets around the values. This won’t work:
 
     var arr = 1,2,3,4,5;
     // SyntaxError: missing variable name
@@ -65,7 +70,8 @@ This would be correct:
 
     var arr = [1,2,3,4,5];
 
-## See also
+See also
+--------
 
 -   [Good variable names](https://wiki.c2.com/?GoodVariableNames)
 -   [`var`](../statements/var)

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Rails plugins</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Rails plugins</h1>
+</header>
+<h2 id="generate-a-plugin">Generate a plugin</h2>
+<p>Generate a Rails Engine plugin:</p>
+<pre><code>rails plugin new myplugin --skip-bundle --full</code></pre>
+<h2 id="initializers">Initializers</h2>
+<ul>
+<li><a href="http://edgeapi.rubyonrails.org/classes/Rails/Railtie.html">Rails::Railtie</a></li>
+<li><a href="http://www.engineyard.com/blog/2010/extending-rails-3-with-railties/">EngineYard blog post</a></li>
+</ul>
+<p>Subclass Railtie and provide an <code>initializer</code> method.</p>
+<pre><code>module NewPlugin
+  class Railtie &lt; Rails::Railtie
+    initializer &quot;newplugin.initialize&quot; do |app|
+
+      # subscribe to all rails notifications: controllers, AR, etc.
+      ActiveSupport::Notifications.subscribe do |*args|
+        event = ActiveSupport::Notifications::Event.new(*args)
+        puts &quot;Got notification: #{event.inspect}&quot;
+      end
+
+    end
+  end
+end</code></pre>
+<h2 id="custom-routes">Custom routes</h2>
+<ul>
+<li><a href="http://api.rubyonrails.org/classes/ActionDispatch/Routing/Mapper.html">ActionDispatch::Routing::Mapper</a></li>
+</ul>
+<p>To create custom <code>routes.rb</code> keywords:</p>
+<pre><code># # routes.rb:
+# myplugin_for x
+#
+class ActionDispatch::Routing
+  class Mapper
+    def myplugin_for(*x)
+    end
+  end
+end</code></pre>
+<p>Example with a block:</p>
+<pre><code># authenticated do
+#   resources :users
+# end
+#
+def authenticated
+  constraint = lambda { |request| request... }
+
+  constraints(constraint) { yield }
+end</code></pre>
+<h2 id="custom-generators">Custom generators</h2>
+<ul>
+<li><a href="http://guides.rubyonrails.org/generators.html">Guide: generators</a></li>
+<li><a href="http://api.rubyonrails.org/classes/ActiveRecord/Generators/Base.html">ActiveRecord::Generators::Base</a></li>
+</ul>
+<h3 id="basic">Basic</h3>
+<pre><code># rails g initializer
+# lib/generators/initializer_generator.rb
+class InitializerGenerator &lt; Rails::Generators::Base
+  def create_initializer_file
+    create_file &quot;config/initializers/initializer.rb&quot;, &quot;# Add initialization content here&quot;
+  end
+end</code></pre>
+<ul>
+<li>Extend <code>Rails::Generators::Base</code>.</li>
+<li>Each public method in the generator is executed when a generator is invoked.</li>
+</ul>
+<h3 id="generating-a-generator">Generating a generator</h3>
+<pre><code>$ rails generate generator initializer</code></pre>
+<h3 id="namedbase">NamedBase</h3>
+<p>Use <code>NamedBase</code> instead if you want to take an argument. It will be available as <code>file_name</code>.</p>
+<pre><code>class InitializerGenerator &lt; Rails::Generators::Base
+  def lol
+    puts file_name
+  end
+end</code></pre>
+<h3 id="more">More</h3>
+<pre><code>class InitializerGenerator &lt; Rails::Generators::NamedBase
+  #
+  source_root File.expand_path(&quot;../templates&quot;, __FILE__)
+  desc &quot;Description goes here.&quot;
+end</code></pre>
+<h3 id="generators-lookup">Generators lookup</h3>
+<p>When invoking <code>rails g XXX</code>:</p>
+<pre><code>[rails/]generators/XXX/XXX_generator.rb
+[rails/]generators/XXX_generator.rb</code></pre>
+<p>When invoking <code>rails g XXX:YYY</code>:</p>
+<pre><code>[rails/]generators/XXX/YYY_generator.rb</code></pre>
+<h2 id="activemodel-acts-as">ActiveModel ‘acts as’</h2>
+<pre><code># yaffle/lib/yaffle/acts_as_yaffle.rb
+module Yaffle
+  module ActsAsYaffle
+    extend ActiveSupport::Concern
+
+    included do
+    end
+
+    module ClassMethods
+      def acts_as_yaffle(options = {})
+        # your code will go here
+      end
+    end
+  end
+end
+
+ActiveRecord::Base.send :include, Yaffle::ActsAsYaffle</code></pre>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>assignmentshorthands</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<ul>
+<li>/en/assignment-shorthands/</li>
+</ul>
+<p>Assigning is very common. Sometimes typing becomes time consuming for us ‘Lazy programmers’. So, we can use some tricks to help us and make our code cleaner and simpler.</p>
+<p>This is the similar use of</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1">x <span class="op">+=</span> <span class="dv">23</span><span class="op">;</span> <span class="co">// x = x + 23;</span></a>
+<a class="sourceLine" id="cb1-2" title="2">y <span class="op">-=</span> <span class="dv">15</span><span class="op">;</span> <span class="co">// y = y - 15;</span></a>
+<a class="sourceLine" id="cb1-3" title="3">z <span class="op">*=</span> <span class="dv">10</span><span class="op">;</span> <span class="co">// z = z * 10;</span></a>
+<a class="sourceLine" id="cb1-4" title="4">k /<span class="op">=</span> <span class="dv">7</span><span class="op">;</span> <span class="co">// k = k / 7;</span></a>
+<a class="sourceLine" id="cb1-5" title="5">p <span class="op">%=</span> <span class="dv">3</span><span class="op">;</span> <span class="co">// p = p % 3;</span></a>
+<a class="sourceLine" id="cb1-6" title="6">d <span class="op">**=</span> <span class="dv">2</span><span class="op">;</span> <span class="co">// d = d ** 2;</span></a>
+<a class="sourceLine" id="cb1-7" title="7">m <span class="op">&gt;&gt;=</span> <span class="dv">2</span><span class="op">;</span> <span class="co">// m = m &gt;&gt; 2;</span></a>
+<a class="sourceLine" id="cb1-8" title="8">n <span class="op">&lt;&lt;=</span> <span class="dv">2</span><span class="op">;</span> <span class="co">// n = n &lt;&lt; 2;</span></a>
+<a class="sourceLine" id="cb1-9" title="9">n<span class="op">++;</span> <span class="co">// n = n + 1;</span></a>
+<a class="sourceLine" id="cb1-10" title="10">n<span class="op">--;</span></a>
+<a class="sourceLine" id="cb1-11" title="11">n <span class="op">=</span> n <span class="op">-</span> <span class="dv">1</span><span class="op">;</span></a></code></pre></div>
+<h3 id="and----operators"><code>++</code> and <code>--</code> operators</h3>
+<p>There is a special <code>++</code> operator. It’s best to explain it with an example:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">var</span> a <span class="op">=</span> <span class="dv">2</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-2" title="2"><span class="kw">var</span> b <span class="op">=</span> a<span class="op">++;</span></a>
+<a class="sourceLine" id="cb2-3" title="3"><span class="co">// Now a is 3 and b is 2</span></a></code></pre></div>
+<p>The <code>a++</code> statement does this:</p>
+<ol type="1">
+<li>return the value of <code>a</code></li>
+<li>increment <code>a</code> by 1</li>
+</ol>
+<p>But what if we wanted to increment the value first? It’s simple:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">var</span> a <span class="op">=</span> <span class="dv">2</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb3-2" title="2"><span class="kw">var</span> b <span class="op">=</span> <span class="op">++</span>a<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-3" title="3"><span class="co">// Now both a and b are 3</span></a></code></pre></div>
+<p>See? I put the operator <em>before</em> the variable.</p>
+<p>The <code>--</code> operator is similar, except it decrements the value.</p>
+<h3 id="if-else-using-ternary-operator">If-else (Using ternary operator)</h3>
+<p>This is what we write on regular basis.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb4-1" title="1"><span class="kw">var</span> newValue<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-2" title="2"><span class="cf">if</span> (value <span class="op">&gt;</span> <span class="dv">10</span>) newValue <span class="op">=</span> <span class="dv">5</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb4-3" title="3"><span class="cf">else</span> newValue <span class="op">=</span> <span class="dv">2</span><span class="op">;</span></a></code></pre></div>
+<p>We can user ternary operator to make it awesome:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">var</span> newValue <span class="op">=</span> value <span class="op">&gt;</span> <span class="dv">10</span> <span class="op">?</span> <span class="dv">5</span> : <span class="dv">2</span><span class="op">;</span></a></code></pre></div>
+<h3 id="null-undefined-empty-checks">Null, Undefined, Empty Checks</h3>
+<div class="sourceCode" id="cb6"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb6-1" title="1"><span class="cf">if</span> (variable1 <span class="op">!==</span> <span class="kw">null</span> <span class="op">||</span> variable1 <span class="op">!==</span> <span class="kw">undefined</span> <span class="op">||</span> variable1 <span class="op">!==</span> <span class="st">&#39;&#39;</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb6-2" title="2">    <span class="kw">var</span> variable2 <span class="op">=</span> variable1<span class="op">;</span></a>
+<a class="sourceLine" id="cb6-3" title="3"><span class="op">}</span></a></code></pre></div>
+<p>Shorthand here:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb7-1" title="1"><span class="kw">var</span> variable2 <span class="op">=</span> variable1 <span class="op">||</span> <span class="st">&#39;&#39;</span><span class="op">;</span></a></code></pre></div>
+<p>P.S.: If variable1 is a number, then first check if it is 0.</p>
+<h3 id="object-array-notation">Object Array Notation</h3>
+<p>Instead of using:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb8-1" title="1"><span class="kw">var</span> a <span class="op">=</span> <span class="kw">new</span> <span class="at">Array</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb8-2" title="2">a[<span class="dv">0</span>] <span class="op">=</span> <span class="st">&#39;myString1&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb8-3" title="3">a[<span class="dv">1</span>] <span class="op">=</span> <span class="st">&#39;myString2&#39;</span><span class="op">;</span></a></code></pre></div>
+<p>Use this:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb9-1" title="1"><span class="kw">var</span> a <span class="op">=</span> [<span class="st">&#39;myString1&#39;</span><span class="op">,</span> <span class="st">&#39;myString2&#39;</span>]<span class="op">;</span></a></code></pre></div>
+<h3 id="associative-array">Associative array</h3>
+<p>Instead of using:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb10-1" title="1"><span class="kw">var</span> skillSet <span class="op">=</span> <span class="kw">new</span> <span class="at">Array</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb10-2" title="2">skillSet[<span class="st">&#39;Document language&#39;</span>] <span class="op">=</span> <span class="st">&#39;HTML5&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb10-3" title="3">skillSet[<span class="st">&#39;Styling language&#39;</span>] <span class="op">=</span> <span class="st">&#39;CSS3&#39;</span><span class="op">;</span></a></code></pre></div>
+<p>Use this:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb11-1" title="1"><span class="kw">var</span> skillSet <span class="op">=</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb11-2" title="2">    <span class="st">&#39;Document language&#39;</span><span class="op">:</span> <span class="st">&#39;HTML5&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb11-3" title="3">    <span class="st">&#39;Styling language&#39;</span><span class="op">:</span> <span class="st">&#39;CSS3&#39;</span></a>
+<a class="sourceLine" id="cb11-4" title="4"><span class="op">};</span></a></code></pre></div>
+</body>
+</html>

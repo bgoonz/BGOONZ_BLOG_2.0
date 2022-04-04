@@ -1,21 +1,27 @@
-# To list every process on the system:
+To list every process on the system:
+====================================
 
 ps aux
 
-# To list a process tree:
+To list a process tree:
+=======================
 
 ps axjf
 
-# To list every process owned by foouser:
+To list every process owned by foouser:
+=======================================
 
 ps -aufoouser
 
-# To list every process with a user-defined format:
+To list every process with a user-defined format:
+=================================================
 
 ps -eo pid,user,command
 
-# Exclude grep from your grepped output of ps.
+Exclude grep from your grepped output of ps.
+============================================
 
-# Add [] to the first letter. Ex: sshd -> [s]shd
+Add \[\] to the first letter. Ex: sshd -&gt; \[s\]shd
+=====================================================
 
-ps aux | grep '[h]ttpd'
+ps aux | grep ‘\[h\]ttpd’

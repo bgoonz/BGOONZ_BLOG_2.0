@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Ledger periods</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Ledger periods</h1>
+</header>
+<pre><code>[INTERVAL] [BEGIN] [END]</code></pre>
+<p>Interval:</p>
+<pre><code>every day
+every week
+every month
+every quarter
+every year
+every N days     # N is any integer
+every N weeks
+every N months
+every N quarters
+every N years
+daily
+weekly
+biweekly
+monthly
+bimonthly
+quarterly
+yearly</code></pre>
+<p>Begin:</p>
+<pre><code>from &lt;SPEC&gt;
+since &lt;SPEC&gt;</code></pre>
+<p>The end time can be either of:</p>
+<pre><code>to &lt;SPEC&gt;
+until &lt;SPEC&gt;</code></pre>
+<p>Spec:</p>
+<pre><code>2004
+2004/10
+2004/10/1
+10/1
+october
+oct
+this week  # or day, month, quarter, year
+next week
+last week</code></pre>
+<p>Examples:</p>
+<pre><code>$ ledger r -p &quot;since last month&quot;</code></pre>
+<p>See: http://ledger-cli.org/3.0/doc/ledger3.html#Period-Expressions</p>
+</body>
+</html>

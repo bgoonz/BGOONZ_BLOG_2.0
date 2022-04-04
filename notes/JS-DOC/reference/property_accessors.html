@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>property_accessors</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="property-accessors">Property accessors</h1>
+<p><strong>Property accessors</strong> provide access to an object’s properties by using the dot notation or the bracket notation.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>object.property
+object[&#39;property&#39;]</code></pre>
+<h2 id="description">Description</h2>
+<p>One can think of an object as an <em>associative array</em> (a.k.a. <em>map</em>, <em>dictionary</em>, <em>hash</em>, <em>lookup table</em>). The <em>keys</em> in this array are the names of the object’s properties.</p>
+<p>It’s typical when speaking of an object’s properties to make a distinction between properties and methods. However, the property/method distinction is little more than a convention. A method is a property that can be called (for example, if it has a reference to a <a href="../global_objects/function"><code>Function</code></a> instance as its value).</p>
+<p>There are two ways to access properties: <em>dot notation</em> and <em>bracket notation</em>.</p>
+<h3 id="dot-notation">Dot notation</h3>
+<p>In the <code>object.property</code> syntax, the <code>property</code> must be a valid JavaScript <a href="https://developer.mozilla.org/en-US/docs/Glossary/Identifier">identifier</a>. (In the ECMAScript standard, the names of properties are technically “IdentifierNames”, not “Identifiers”, so reserved words can be used but are not recommended). For example, <code>object.$1</code> is valid, while <code>object.1</code> is not.</p>
+<pre><code>const variable = object.property_name;
+
+object.property_name = value;
+
+const object = {};
+
+object.$1 = &#39;foo&#39;;
+console.log(object.$1);  // &#39;foo&#39;
+
+object.1 = &#39;bar&#39;;        // SyntaxError
+console.log(object.1);   // SyntaxError</code></pre>
+<p>Here, the method named <code>createElement</code> is retrieved from <code>document</code> and is called.</p>
+<pre><code>document.createElement(&#39;pre&#39;)</code></pre>
+<p>If you use a method for a numeric literal, and the numeric literal has no exponent and no decimal point, you should leave <a href="https://developer.mozilla.org/en-US/docs/Glossary/Whitespace">white-space(s)</a> before the dot preceding the method call, so that the dot is not interpreted as a decimal point.</p>
+<pre><code>77 .toExponential()
+// or
+77
+.toExponential()
+// or
+;(77).toExponential()
+// or
+77..toExponential()
+// or
+77.0.toExponential()
+// because 77. === 77.0, no ambiguity</code></pre>
+<h3 id="bracket-notation">Bracket notation</h3>
+<p>In the <code>object[property_name]</code> syntax, the <code>property_name</code> is just a string or <a href="https://developer.mozilla.org/en-US/docs/Glossary/Symbol">Symbol</a>. So, it can be any string, including <code>'1foo'</code>, <code>'!bar!'</code>, or even <code>' '</code> (a space).</p>
+<pre><code>const variable = object[property_name]
+object[property_name] = value;</code></pre>
+<p>This does the exact same thing as the previous example.</p>
+<pre><code>document[&#39;createElement&#39;](&#39;pre&#39;)</code></pre>
+<p>A space before bracket notation is allowed.</p>
+<pre><code>document [&#39;createElement&#39;](&#39;pre&#39;)</code></pre>
+<h3 id="property-names">Property names</h3>
+<p>Property names are string or <a href="https://developer.mozilla.org/en-US/docs/Glossary/Symbol">Symbol</a>. Any other value, including a number, is coerced to a string. This outputs <code>'value'</code>, since <code>1</code> is coerced into <code>'1'</code>.</p>
+<pre><code>let object = {}
+object[&#39;1&#39;] = &#39;value&#39;
+console.log(object[1])</code></pre>
+<p>This also outputs <code>'value'</code>, since both <code>foo</code> and <code>bar</code> are converted to the same string.</p>
+<pre><code>let foo = {unique_prop: 1}, bar = {unique_prop: 2}, object = {};
+object[foo] = &#39;value&#39;
+console.log(object[bar])</code></pre>
+<p>In the <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey">SpiderMonkey</a> JavaScript engine, this string would be “<code>[object Object]</code>”.</p>
+<h3 id="method-binding">Method binding</h3>
+<p>A method is not bound to the object that it is a method of. Specifically, <code>this</code> is not fixed in a method. Put another way, <code>this</code> does not necessarily refer to the object containing a method. Instead, <code>this</code> is “passed” by the function call. See <a href="this#method_binding">method binding</a>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="bracket-notation-vs.-eval">Bracket notation vs. <code>eval</code></h3>
+<p>JavaScript novices often make the mistake of using <a href="../global_objects/eval"><code>eval()</code></a> where the bracket notation can be used instead.</p>
+<p>For example, the following syntax is often seen in many scripts.</p>
+<pre><code>x = eval(&#39;document.forms.form_name.elements.&#39; + strFormControl + &#39;.value&#39;)</code></pre>
+<p><code>eval()</code> is slow and should be avoided whenever possible. Also, <code>strFormControl</code> would have to hold an identifier, which is not required for names and <code>id</code>s of form controls. It is better to use bracket notation instead:</p>
+<pre><code>x = document.forms[&#39;form_name&#39;].elements[strFormControl].value</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-property-accessors">ECMAScript (ECMA-262) <br/></p>
+<span class="small">The definition of ‘Property Accessors’ in that specification.</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>Property_Accessors</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>4</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../global_objects/object"><code>Object</code></a></li>
+<li><a href="../global_objects/object/defineproperty"><code>Object.defineProperty()</code></a></li>
+<li><a href="optional_chaining">Optional chaining</a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_Accessors" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_Accessors</a></p>
+</body>
+</html>

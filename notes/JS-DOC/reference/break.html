@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>break</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="break">break</h1>
+<p>The <code>break</code> terminates the current loop, <a href="switch"><code>switch</code></a>, or <a href="label">label</a> statement and transfers program control to the statement following the terminated statement.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>break [label];</code></pre>
+<p><code>label</code> <span class="badge inline optional">Optional</span><br />
+Identifier associated with the label of the statement. If the statement is not a loop or <a href="switch"><code>switch</code></a>, this is required.</p>
+<h2 id="description">Description</h2>
+<p>The <code>break</code> statement includes an optional label that allows the program to break out of a labeled statement. The <code>break</code> statement needs to be nested within the referenced label. The labeled statement can be any <a href="block">block</a> statement; it does not have to be preceded by a loop statement.</p>
+<p>A <code>break</code> statement, with or without a following label, cannot be used within the body of a function that is itself nested within the current loop, switch, or label statement that the <code>break</code> statement is intended to break out of.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="break-in-while-loop">break in while loop</h3>
+<p>The following function has a <code>break</code> statement that terminates the <a href="while"><code>while</code></a> loop when <code>i</code> is 3, and then returns the value 3 * <code>x</code>.</p>
+<pre><code>function testBreak(x) {
+  var i = 0;
+
+  while (i &lt; 6) {
+    if (i == 3) {
+      break;
+    }
+    i += 1;
+  }
+
+  return i * x;
+}</code></pre>
+<h3 id="break-in-switch-statements">break in switch statements</h3>
+<p>The following code has a <code>break</code> statement that terminates the <a href="switch"><code>switch</code></a> statement when a case is matched and the corresponding code has ran</p>
+<pre><code>const food = &quot;sushi&quot;;
+
+switch (food) {
+  case &quot;sushi&quot;:
+    console.log(&quot;Sushi is originally from Japan.&quot;);
+    break;
+  case &quot;pizza&quot;:
+    console.log(&quot;Pizza is originally from Italy.&quot;);
+    break;
+  default:
+    console.log(&quot;I have never heard of that dish.&quot;);
+    break;
+}</code></pre>
+<h3 id="break-in-labeled-blocks">break in labeled blocks</h3>
+<p>The following code uses <code>break</code> statements with labeled blocks. A <code>break</code> statement must be nested within any label it references. Notice that <code>inner_block</code> is nested within <code>outer_block</code>.</p>
+<pre><code>outer_block: {
+  inner_block: {
+    console.log(&#39;1&#39;);
+    break outer_block; // breaks out of both inner_block and outer_block
+    console.log(&#39;:-(&#39;); // skipped
+  }
+  console.log(&#39;2&#39;); // skipped
+}</code></pre>
+<h3 id="break-in-labeled-blocks-that-throw">break in labeled blocks that throw</h3>
+<p>The following code also uses <code>break</code> statements with labeled blocks, but generates a <code>SyntaxError</code> because its <code>break</code> statement is within <code>block_1</code> but references <code>block_2</code>. A <code>break</code> statement must always be nested within any label it references.</p>
+<pre><code>block_1: {
+  console.log(&#39;1&#39;);
+  break block_2; // SyntaxError: label not found
+}
+
+block_2: {
+  console.log(&#39;2&#39;);
+}</code></pre>
+<h3 id="break-within-functions">break within functions</h3>
+<p><code>SyntaxError</code>s are also generated in the following code examples which use <code>break</code> statements within functions that are nested within a loop, or labeled block that the <code>break</code> statements are intended to break out of.</p>
+<pre><code>function testBreak(x) {
+  var i = 0;
+
+  while (i &lt; 6) {
+    if (i == 3) {
+      (function() {
+        break;
+      })();
+    }
+    i += 1;
+  }
+
+return i * x;
+}
+
+testBreak(1); // SyntaxError: Illegal break statement
+
+block_1: {
+  console.log(&#39;1&#39;);
+  ( function() {
+    break block_1; // SyntaxError: Undefined label &#39;block_1&#39;
+  })();
+}</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-break-statement">ECMAScript (ECMA-262) <br/></p>
+<span class="small">The definition of ‘Break statement’ in that specification.</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>break</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>4</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="continue"><code>continue</code></a></li>
+<li><a href="label">label</a></li>
+<li><a href="switch"><code>switch</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/break" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/break</a></p>
+</body>
+</html>

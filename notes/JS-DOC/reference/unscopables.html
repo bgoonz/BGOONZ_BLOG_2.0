@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>unscopables</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="symbol.unscopables">Symbol.unscopables</h1>
+<p>The <code>Symbol.unscopables</code> well-known symbol is used to specify an object value of whose own and inherited property names are excluded from the <code>with</code> environment bindings of the associated object.</p>
+<h2 id="description">Description</h2>
+<p>The <code>@@unscopables</code> symbol (<code>Symbol.unscopables</code>) can be defined on any object to exclude property names from being exposed as lexical variables in <code>with</code> environment bindings. Note that if using <a href="../../strict_mode">Strict mode</a>, <code>with</code> statements are not available and will likely also not need this symbol.</p>
+<p>Setting a property to <code>true</code> in an <code>unscopables</code> object will make it <em>unscopable</em> and therefore it won’t appear in lexical scope variables. Setting a property to <code>false</code> will make it <code>scopable</code> and thus it will appear in lexical scope variables.</p>
+<p>Property attributes of <code>Symbol.unscopables</code></p>
+<p>Writable</p>
+<p>no</p>
+<p>Enumerable</p>
+<p>no</p>
+<p>Configurable</p>
+<p>no</p>
+<h2 id="examples">Examples</h2>
+<h3 id="scoping-in-with-statements">Scoping in with statements</h3>
+<p>The following code works fine in ES5 and below. However, in ECMAScript 2015 and later, the <a href="../array/keys"><code>Array.prototype.keys()</code></a> method was introduced. That means that inside <code>with</code> environment “keys” would now be the method and not the variable. That’s when the <code>unscopable</code>s symbol was introduced. A built-in <code>unscopables</code> setting is implemented as <a href="../array/@@unscopables"><code>Array.prototype[@@unscopables]</code></a> to prevent that some of the Array methods are being scoped into the <code>with</code> statement.</p>
+<pre><code>var keys = [];
+
+with (Array.prototype) {
+  keys.push(&#39;something&#39;);
+}
+
+Object.keys(Array.prototype[Symbol.unscopables]);
+// [&quot;copyWithin&quot;, &quot;entries&quot;, &quot;fill&quot;, &quot;find&quot;, &quot;findIndex&quot;,
+//  &quot;includes&quot;, &quot;keys&quot;, &quot;values&quot;]</code></pre>
+<h3 id="unscopables-in-objects">Unscopables in objects</h3>
+<p>You can also set <code>unscopables</code> for your own objects.</p>
+<pre><code>var obj = {
+  foo: 1,
+  bar: 2
+};
+
+obj[Symbol.unscopables] = {
+  foo: false,
+  bar: true
+};
+
+with (obj) {
+  console.log(foo); // 1
+  console.log(bar); // ReferenceError: bar is not defined
+}</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-symbol.unscopables">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-symbol.unscopables</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>unscopables</code></p>
+<p>45</p>
+<p>12</p>
+<p>48</p>
+<p>No</p>
+<p>32</p>
+<p>9</p>
+<p>45</p>
+<p>45</p>
+<p>48</p>
+<p>32</p>
+<p>9</p>
+<p>5.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../array/@@unscopables"><code>Array.prototype[@@unscopables]</code></a></li>
+<li><code>with</code> statement (not available in <a href="../../strict_mode">Strict mode</a>)</li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/unscopables" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/unscopables</a></p>
+</body>
+</html>

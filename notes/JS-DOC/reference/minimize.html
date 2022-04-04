@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>minimize</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="intl.locale.prototype.minimize">Intl.Locale.prototype.minimize()</h1>
+<p>The <code>Intl.Locale.prototype.minimize()</code> method attempts to remove information about the locale that would be added by calling <a href="maximize"><code>Locale.maximize()</code></a>.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>minimize()</code></pre>
+<h3 id="return-value">Return value</h3>
+<p>A <a href="../locale"><code>Locale</code></a> instance whose <code>baseName</code> property returns the result of the <a href="https://www.unicode.org/reports/tr35/#Likely_Subtags">Remove Likely Subtags</a> algorithm executed against <em><a href="basename"><code>locale.baseName</code></a></em>.</p>
+<h2 id="description">Description</h2>
+<p>This method carries out the reverse of <a href="maximize"><code>maximize()</code></a>, removing any language, script, or region subtags from the locale language identifier (essentially the contents of <code>baseName</code>). This is useful when there are superfluous subtags in the language identifier; for instance, “en-Latn” can be simplified to “en”, since “Latn” is the only script used to write English. <code>minimize()</code> only affects the main subtags that comprise the <a href="https://www.unicode.org/reports/tr35/#Language_Locale_Field_Definitions">language identifier</a>: language, script, and region subtags. Other subtags after the “-u” in the locale identifier are called extension subtags and are not affected by the <code>minimize()</code> method. Examples of these subtags include <a href="hourcycle"><code>Locale.hourCycle</code></a>, <a href="calendar"><code>Locale.calendar</code></a>, and <a href="numeric"><code>Locale.numeric</code></a>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-minimize">Using minimize</h3>
+<pre><code>let myLocale = new Intl.Locale(&quot;fr-Latn-FR&quot;, {hourCycle: &quot;h24&quot;, calendar: &quot;gregory&quot;});
+console.log(myLocale.baseName); // Prints &quot;fr-Latn-FR&quot;
+console.log(myLocale.toString()); // Prints &quot;fr-Latn-FR-u-ca-gregory-hc-h24&quot;
+
+let myLocMinimized = myLocale.minimize();
+
+// Prints &quot;fr&quot;, since French is only written in the Latin script
+// and is most likely to be spoken in France.
+console.log(myLocMinimized.baseName);
+
+// Prints &quot;fr-u-ca-gregory-hc-h24&quot;.
+// Note that the extension tags (after &quot;-u&quot;) remain unchanged.
+console.log(myLocMinimized.toString());</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.minimize">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) <br/></p>
+<span class="small">#sec-Intl.Locale.prototype.minimize</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>minimize</code></p>
+<p>74</p>
+<p>79</p>
+<p>75</p>
+<p>No</p>
+<p>62</p>
+<p>14</p>
+<p>74</p>
+<p>74</p>
+<p>79</p>
+<p>53</p>
+<p>14</p>
+<p>11.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../locale"><code>Intl.Locale</code></a></li>
+<li><a href="basename"><code>Intl.Locale.baseName</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/minimize" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/minimize</a></p>
+</body>
+</html>

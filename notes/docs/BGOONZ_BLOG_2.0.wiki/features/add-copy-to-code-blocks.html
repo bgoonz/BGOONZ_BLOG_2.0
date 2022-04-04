@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>add-copy-to-code-blocks</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="gatsby-remark-code-buttons">gatsby-remark-code-buttons</h1>
+<p>Add buttons to <strong>markdown</strong> code snippets.</p>
+<blockquote>
+<p>This plugin doesn’t support MDX. Example of <a href="https://github.com/gatsbyjs/gatsby/pull/15834">MDX copy button</a>.</p>
+</blockquote>
+<h2 id="install"><a href="https://www.gatsbyjs.com/plugins/gatsby-remark-code-buttons/#install"></a>Install</h2>
+<pre><code>npm install gatsby-remark-code-buttons --save-dev</code></pre>
+<p><img src="https://media.giphy.com/media/hoHRea4IdkDBrsE4Bu/source.gif" /></p>
+<h2 id="how-to-use"><a href="https://www.gatsbyjs.com/plugins/gatsby-remark-code-buttons/#how-to-use"></a>How to use</h2>
+<p>in your <code>gatsby-config.js</code></p>
+<pre><code>plugins: [
+  {
+    resolve: &#39;gatsby-transformer-remark&#39;,
+    options: {
+      plugins: [&#39;gatsby-remark-code-buttons&#39;]
+    }
+  }
+]</code></pre>
+<h2 id="options"><a href="https://www.gatsbyjs.com/plugins/gatsby-remark-code-buttons/#options"></a>Options</h2>
+<pre><code>plugins: [
+  {
+    resolve: &#39;gatsby-transformer-remark&#39;,
+    options: {
+      plugins: [
+        {
+          resolve: &#39;gatsby-remark-code-buttons&#39;,
+          options: {
+            // Optional button container class name. Defaults
+            // to &#39;gatsby-code-button-container&#39;.
+            buttonContainerClass: `customButtonContainerClass`,
+            // Optional button class name. Defaults to &#39;gatsby-code-button&#39;.
+            buttonClass: `customButtonClass`,
+            // Optional button text. Defaults to &#39;&#39;.
+            buttonText: `customButtonText`,
+            // Optional svg icon class name. Defaults to &#39;gatsby-code-button-icon&#39;.
+            svgIconClass: `customSvgIconClass`,
+            // Optional svg icon. Defaults to svg string and can be
+            // replaced with any other valid svg. Use custom classes
+            // in the svg string and skip `iconClass` option.
+            svgIcon: `customSvgIcon`,
+            // Optional tooltip text. Defaults to &#39;&#39;.
+            tooltipText: `customTooltipText`,
+            // Optional toaster class name. Defaults to &#39;&#39;.
+            toasterClass: `customToasterClass`,
+            // Optional toaster text class name. Defaults to &#39;&#39;.
+            toasterTextClass: `customToasterTextClass`,
+            // Optional toaster text. Defaults to &#39;&#39;.
+            toasterText: &#39;customToasterText&#39;,
+            // Optional toaster duration. Defaults to 3500.
+            toasterDuration: 5000
+          }
+        }
+      ]
+    }
+  }
+]</code></pre>
+<h3 id="custom-styling"><a href="https://www.gatsbyjs.com/plugins/gatsby-remark-code-buttons/#custom-styling"></a>Custom styling</h3>
+<p>Now that we’ve injected the custom button, we need to style it!</p>
+<pre><code>.gatsby-code-button-container {}
+.gatsby-code-button {}
+.gatsby-code-button-icon {}
+.gatsby-code-button-toaster {}
+.gatsby-code-button-toaster-text {}</code></pre>
+<p>To apply custom styles import stylesheet in your app’s root <code>gatsby-browser.js</code>.</p>
+<pre><code>// gatsby-browser.js
+import &#39;./src/styles/custom-code-buttons.scss&#39;;</code></pre>
+<h3 id="usage-in-markdown"><a href="https://www.gatsbyjs.com/plugins/gatsby-remark-code-buttons/#usage-in-markdown"></a>Usage in Markdown</h3>
+<p>In your Markdown content</p>
+<pre><code>```js
+alert(&#39;click to copy 💾&#39;);</code></pre>
+<pre><code>
+This plugin will parse the Markdown AST, pluck the button, and then &quot;clean&quot; the code snippet language for further processing. With the default config options this plugin will create the following structure, injecting a custom `div`:
+</code></pre>
+<div class="gatsby-code-button-container" data-toaster-id="" data-toaster-class="gatsby-code-button-toaster" data-toaster-text-class="gatsby-code-button-toaster-text" data-toaster-text="" data-toaster-duration="3500" onclick="copyToClipboard(`alert(&#39;how cool is this&#39;);`)">
+<div class="gatsby-code-button" data-tooltip="">
+<pre><code>&lt;svg class=&quot;gatsby-code-button-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 24 24&quot;&gt;...&lt;/svg&gt;</code></pre>
+</div>
+</div>
+<pre><code>
+With `toasterText` config enabled this plugin will inject a custom toaster node:
+</code></pre>
+<div class="gatsby-code-button-toaster">
+<div class="gatsby-code-button-toaster-text">
+Copied to clipboard
+</div>
+</div>
+<pre><code>
+Don&#39;t show button
+</code></pre>
+<pre class="js:clipboard=false"><code>alert(&#39;will not be copied 💾&#39;);</code></pre>
+<pre><code>
+
+
+
+
+
+
+
+
+---
+---
+---
+---
+
+
+# OR:
+
+
+
+Accessing the OS clipboard using browser JavaScript has been possible for several years using [`document.execCommand()`](https://www.sitepoint.com/javascript-copy-to-clipboard/).
+
+Unfortunately, there are some problems:
+
+- clipboard access is synchronous, which has performance and security implications
+- support is patchy, especially on older versions of Safari on macOS and iOS
+- permissions access varies across browsers, and
+- the API could never be considered *elegant*
+
+It&#39;s finally been superseded by a new [asynchronous Clipboard API](https://developer.mozilla.org/Web/API/Clipboard_API). It&#39;s new, and no browser supports all features, but it&#39;s easier to use and more robust.
+
+Why Would an App Need to Access the Clipboard?
+----------------------------------------------
+
+As a developer, you&#39;ll know how the clipboard works and regularly use the following keyboard shortcuts:
+
+- `Ctrl` | `Cmd` + `C` to copy
+- `Ctrl` | `Cmd` + `X` to cut
+- `Ctrl` | `Cmd` + `V` to paste
+
+Those with less computing experience won&#39;t necessarily have that knowledge. They may also be using a touch-screen device where keyboard shortcuts aren&#39;t available. Offering easy-to-use cut and paste icons can be useful.
+
+Additionally, you may want to modify content when a clipboard action is completed, such as adding or removing formatting.
+
+Clipboard Access is Dangerous!
+------------------------------
+
+Accessing the clipboard programmatically raises several security concerns:
+
+- Users often copy passwords or private information so no page should be able to arbitrarily read clipboard data.
+- Pages should be restricted when adding data to the clipboard. A nefarious page could replace copied text with a dangerous command or even an executable file.
+
+To avoid potential issues, the Clipboard API can only be used on pages served over HTTPS (`localhost` is also permitted). When running in an iframe, the parent page must also grant `clipboard-read` and/or `clipboard-write` permissions:
+</code></pre>
+<iframe src="childpage.html" allow="clipboard-read; clipboard-write">
+</iframe>
+<pre><code>
+The API is only available to the active browser tab (not background tabs) and can only be triggered by a user interaction such as a click. When necessary, the user will be prompted for permission to read clipboard data:
+
+![Clipboard API user permission](https://uploads.sitepoint.com/wp-content/uploads/2020/11/1606317380permission.png)
+
+This alert is shown when a page first requests clipboard access. It shouldn&#39;t cause any issues, given that the API is asynchronous and returns a Promise. It&#39;s also possible to examine and request the status using the [Permissions API](https://developer.mozilla.org/Web/API/Permissions_API).
+
+Clipboard API Feature Detection
+-------------------------------
+
+The Clipboard API is available when `navigator.clipboard` returns a truthy result. For example:
+</code></pre>
+<p>if (navigator.clipboard) {</p>
+<p>console.log(‘Clipboard API available’);</p>
+<p>}</p>
+<pre><code>
+However, this doesn&#39;t guarantee the browser supports all features, so it&#39;s necessary to make further checks. For example, at the time of writing, Chrome supports the API&#39;s [readText()](https://developer.mozilla.org/Web/API/Clipboard/readText) method, while Firefox doesn&#39;t.
+
+Copy and Paste Text
+-------------------
+
+Copying and pasting text will be a useful option in most applications. The API is refreshingly simple:
+</code></pre>
+<p>// copy text TO the clipboard await navigator.clipboard.writeText(‘This text is now in the clipboard’);</p>
+<p>// get text FROM the clipboard let text = await navigator.clipboard.readText();</p>
+<pre><code>
+You&#39;ll require considerably more code to detect support and handle errors ...
+
+[View the Clipboard API text demonstration](https://rawcdn.githack.com/sitepoint-editors/clipboardapi/a8dfad6a1355bbb79381e61a2ae68394af144cc2/demotext.html)
+
+The code can be [downloaded from GitHub](https://github.com/sitepoint-editors/clipboardapi). Refer to [clipboardtext.js](https://github.com/sitepoint-editors/clipboardapi/blob/main/js/clipboardtext.js) for the JavaScript.
+
+This example implements text copying when a `data-copy` attribute is added any HTML element such as a button. You can set this value to either of these:
+
+1.  a hard-coded string --- such as `data-copy=&quot;copy this to the clipboard&quot;`.
+2.  a CSS selector --- such as `data-copy=&quot;#mysection&quot;`. The text content of the first matching element is then copied.
+
+Optionally, you can set a custom success message in a `data-done` attribute:
+</code></pre>
+<button data-copy="#mysection" data-done="section copied">
+copy text from #mysection
+</button>
+<pre><code>
+The button is only shown when `navigator.clipboard.writeText()` is supported. When clicked, the JavaScript event handler locates the text, copies it to the clipboard, and shows an animated success message.
+
+The text paste button is very similar except it defines a `data-paste` attribute which must point to a DOM node:
+</code></pre>
+<textarea id="pastehere">
+</textarea>
+<button data-paste="#pastehere">
+paste
+</button>
+<pre><code>
+Copy and Paste Data
+-------------------
+
+The Clipboard API&#39;s [`readText()`](https://developer.mozilla.org/Web/API/Clipboard/readText) and [`writeText()`](https://developer.mozilla.org/Web/API/Clipboard/writeText) are convenience options for the more generic `read()` and [`write()`](https://developer.mozilla.org/Web/API/Clipboard/write) methods. These have less browser support but are able to copy and paste any type of data such as binary images.
+
+Copying requires blob data typically returned by a [`fetch()`](https://developer.mozilla.org/Web/API/Fetch_API) or [`canvas.toBlob()`](https://developer.mozilla.org/Web/API/HTMLCanvasElement/toBlob) method. This is passed to a [`ClipboardItem`](https://developer.mozilla.org/Web/API/ClipboardItem) constructor so it can be written to the clipboard:
+
+```js
+
+const
+image = await fetch(&#39;myimage.png&#39;),
+blob = await image.blob();
+
+await navigator.clipboard.write([
+new ClipboardItem({ [blob.type]: blob })
+]);
+</code></pre>
+<p>Pasting is more complex because multiple <code>ClipboardItem</code> objects can be returned with differing content types. It’s therefore necessary to iterate through each type until a useful format is found. For example:</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb18-1" title="1"><span class="kw">const</span> clipboardItems <span class="op">=</span> <span class="cf">await</span> <span class="va">navigator</span>.<span class="va">clipboard</span>.<span class="at">read</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb18-2" title="2"></a>
+<a class="sourceLine" id="cb18-3" title="3"><span class="cf">for</span> (<span class="kw">const</span> clipboardItem <span class="kw">of</span> clipboardItems) <span class="op">{</span></a>
+<a class="sourceLine" id="cb18-4" title="4">    <span class="cf">for</span> (<span class="kw">const</span> type <span class="kw">of</span> <span class="va">clipboardItem</span>.<span class="at">types</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb18-5" title="5">        <span class="cf">if</span> (type <span class="op">===</span> <span class="st">&#39;image/png&#39;</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb18-6" title="6">            <span class="co">// return PNG blob</span></a>
+<a class="sourceLine" id="cb18-7" title="7">            <span class="cf">return</span> <span class="cf">await</span> <span class="va">clipboardItem</span>.<span class="at">getType</span>(type)<span class="op">;</span></a>
+<a class="sourceLine" id="cb18-8" title="8">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb18-9" title="9">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb18-10" title="10"><span class="op">}</span></a></code></pre></div>
+<p><a href="https://rawcdn.githack.com/sitepoint-editors/clipboardapi/a8dfad6a1355bbb79381e61a2ae68394af144cc2/demoblob.html">View the Clipboard API image demonstration</a> (supported in Chromium-based browsers).</p>
+<p>The code can be <a href="https://github.com/sitepoint-editors/clipboardapi">downloaded from GitHub</a>. Refer to <a href="https://github.com/sitepoint-editors/clipboardapi/blob/main/js/clipboardblob.js">clipboardblob.js</a> for the JavaScript.</p>
+<p>This works in a similar way to the text demonstration, in that copy and paste buttons must point to DOM elements using a CSS selector in <code>data-copyblob</code> and <code>data-pasteblob</code> attributes. For example:</p>
+<pre><code>
+&lt;!-- copy image --&gt;
+&lt;img id=&quot;myimage&quot; src=&quot;myimage.png&quot; alt=&quot;any image&quot; /&gt;
+
+&lt;button data-copyblob=&quot;#myimage&quot; data-done=&quot;image copied&quot;&gt;
+  copy image
+&lt;/button&gt;
+
+&lt;!-- paste into DOM --&gt;
+&lt;div id=&quot;imagelist&quot;&gt;&lt;/div&gt;
+
+&lt;button data-pasteblob=&quot;#imagelist&quot;&gt;
+  paste image
+&lt;/button&gt;
+</code></pre>
+<p>Try copying image data from a graphics application, then use the paste button.</p>
+<h2 id="cut-copy-and-paste-events">Cut, Copy, and Paste Events</h2>
+<p>The <code>cut</code>, <code>copy</code>, and <code>paste</code> events fire whenever the user initiates a clipboard action in the browser — typically with right-click menus or the keyboard shortcuts mentioned above. This is supported in most browsers and handler functions can intercept the events to make changes using a <a href="https://wiki.developer.mozilla.org/en-US/API/ClipboardEvent/clipboardData"><code>clipboardData</code> object</a> passed as a parameter.</p>
+<p>The following function forces all cut or copied text to be uppercase. Note that <code>e.preventDefault()</code> stops the default cut/copy action which would override it:</p>
+<pre><code>
+body.addEventListener(&#39;cut&#39;, cutCopyHandler);
+body.addEventListener(&#39;copy&#39;, cutCopyHandler);
+
+// cut or copy event handler
+function cutCopyHandler(e) {
+
+const selection = document.getSelection();
+
+// send uppercase text to clipboard
+e.clipboardData.setData(
+&#39;text/plain&#39;,
+selection.toString().toUpperCase()
+);
+
+if (e.type === &#39;cut&#39;) selection.deleteFromDocument();
+
+// stop default cut/copy
+e.preventDefault();
+
+}
+</code></pre>
+<p>The following code attaches a paste handler to a specific <code>&lt;textarea&gt;</code> field. The function clears the existing content and prefixes the text <code>"pasted:"</code>:</p>
+<pre><code>
+document.getElementById(&#39;field1&#39;).addEventListener(&#39;paste&#39;, pasteEvent);
+
+// paste event handler
+function pasteEvent(e) {
+
+// add &#39;pasted:&#39; to pasted text
+const paste = &#39;pasted:\n&#39; +
+(e.clipboardData || window.clipboardData).getData(&#39;text&#39;);
+
+e.target.value = paste;
+
+// stop default paste
+e.preventDefault();
+}
+</code></pre>
+<pre><code></code></pre>
+</body>
+</html>

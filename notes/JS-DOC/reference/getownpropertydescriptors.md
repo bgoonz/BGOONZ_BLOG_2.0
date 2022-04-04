@@ -1,8 +1,10 @@
-# Object.getOwnPropertyDescriptors()
+Object.getOwnPropertyDescriptors()
+==================================
 
 The `Object.getOwnPropertyDescriptors()` method returns all own property descriptors of a given object.
 
-## Syntax
+Syntax
+------
 
     Object.getOwnPropertyDescriptors(obj)
 
@@ -15,7 +17,8 @@ The object for which to get all own property descriptors.
 
 An object containing all own property descriptors of an object. Might be an empty object, if there are no properties.
 
-## Description
+Description
+-----------
 
 This method permits examination of the precise description of all own properties of an object. A property in JavaScript consists of either a string-valued name or a [`Symbol`](../symbol) and a property descriptor. Further information about property descriptor types and their attributes can be found in [`Object.defineProperty()`](defineproperty).
 
@@ -39,7 +42,8 @@ A function which serves as a setter for the property, or [`undefined`](../undefi
 `enumerable`  
 `true` if and only if this property shows up during enumeration of the properties on the corresponding object.
 
-## Examples
+Examples
+--------
 
 ### Creating a shallow clone
 
@@ -66,12 +70,11 @@ A typical way of creating a subclass is to define the subclass, set its prototyp
       }
     );
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.getownpropertydescriptors">ECMAScript (ECMA-262) 
-<br/>
-
-<span class="small">The definition of 'Object.getOwnPropertyDescriptors' in that specification.</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript (ECMA-262)<br />
+</p><span class="small">The definition of ‘Object.getOwnPropertyDescriptors’ in that specification.</span></td></tr></tbody></table>
 
 `getOwnPropertyDescriptors`
 
@@ -99,12 +102,12 @@ No
 
 6.0
 
-## See also
+See also
+--------
 
 -   [`Object.getOwnPropertyDescriptor()`](getownpropertydescriptor)
 -   [`Object.defineProperty()`](defineproperty)
 -   [Polyfill](https://github.com/tc39/proposal-object-getownpropertydescriptors)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptors" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptors</a>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>reverse</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="array.prototype.reverse">Array.prototype.reverse()</h1>
+<p>The <code>reverse()</code> method reverses an array <em><a href="https://en.wikipedia.org/wiki/In-place_algorithm">in place</a></em>. The first array element becomes the last, and the last array element becomes the first.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>reverse()</code></pre>
+<h3 id="return-value">Return value</h3>
+<p>The reversed array.</p>
+<h2 id="description">Description</h2>
+<p>The <code>reverse</code> method transposes the elements of the calling array object in place, mutating the array, and returning a reference to the array.</p>
+<p><code>reverse</code> is intentionally generic; this method can be <a href="../function/call">called</a> or <a href="../function/apply">applied</a> to objects resembling arrays. Objects which do not contain a <code>length</code> property reflecting the last in a series of consecutive, zero-based numerical properties may not behave in any meaningful manner.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="reversing-the-elements-in-an-array">Reversing the elements in an array</h3>
+<p>The following example creates an array <code>a</code>, containing three elements, then reverses the array. The call to <code>reverse()</code> returns a reference to the reversed array <code>a</code>.</p>
+<pre><code>const a = [1, 2, 3];
+
+console.log(a); // [1, 2, 3]
+
+a.reverse();
+
+console.log(a); // [3, 2, 1]</code></pre>
+<h3 id="reversing-the-elements-in-an-array-like-object">Reversing the elements in an array-like object</h3>
+<p>The following example creates an array-like object <code>a</code>, containing three elements and a length property, then reverses the array-like object. The call to <code>reverse()</code> returns a reference to the reversed array-like object <code>a</code>.</p>
+<pre><code>const a = {0: 1, 1: 2, 2: 3, length: 3};
+
+console.log(a); // {0: 1, 1: 2, 2: 3, length: 3}
+
+Array.prototype.reverse.call(a); //same syntax for using apply()
+
+console.log(a); // {0: 3, 1: 2, 2: 1, length: 3}</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-array.prototype.reverse">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-array.prototype.reverse</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>reverse</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>5.5</p>
+<p>4</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="join"><code>Array.prototype.join()</code></a></li>
+<li><a href="sort"><code>Array.prototype.sort()</code></a></li>
+<li><a href="../typedarray/reverse"><code>TypedArray.prototype.reverse()</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse</a></p>
+</body>
+</html>

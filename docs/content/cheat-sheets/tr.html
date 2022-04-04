@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>tr</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="to-replace-with-a-new-line">To replace : with a new line:</h1>
+<p>echo $PATH | tr “:” “” echo $PATH | tr -t “:” </p>
+<h1 id="to-remove-all-occurance-of-ab">To remove all occurance of “ab”:</h1>
+<p>echo aabbcc | tr -d “ab” # ouput: cc</p>
+<h1 id="to-complement-aa">To complement “aa”:</h1>
+<h1 id="complement-means-to-keep-aa-and-replace-all-others-with-x">(“Complement” means to keep “aa”, and replace all others with “x”)</h1>
+<p>echo aabbccd | tr -c “aa” x # output: aaxxxxx (no newline)</p>
+<h1 id="to-complement-ab">To complement “ab”:</h1>
+<p>echo aabbccd | tr -c “ab” x #output: aabbxxx (with newline)</p>
+<h1 id="to-preserve-all-alpha-c.--digit-etc-will-be-translated-to-.-sequeeze-mode">To preserve all alpha(-c). “:-[:digit:] etc” will be translated to “”. sequeeze mode:</h1>
+<p>echo $PATH | tr -cs “[:alpha:]” “”</p>
+<h1 id="to-convert-an-ordered-list-to-an-unordered-list">To convert an ordered list to an unordered list:</h1>
+<p>echo “1. /usr/bin2. /bin” | tr -cs " /[:alpha:]" “+”</p>
+</body>
+</html>

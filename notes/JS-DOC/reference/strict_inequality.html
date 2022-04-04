@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>strict_inequality</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="strict-inequality">Strict inequality (!==)</h1>
+<p>The strict inequality operator (<code>!==</code>) checks whether its two operands are not equal, returning a Boolean result. Unlike the <a href="inequality">inequality</a> operator, the strict inequality operator always considers operands of different types to be different.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>x !== y</code></pre>
+<h2 id="description">Description</h2>
+<p>The strict inequality operator checks whether its operands are not equal. It is the negation of the <a href="strict_equality">strict equality</a> operator so the following two lines will always give the same result:</p>
+<pre><code>x !== y
+
+!(x === y)</code></pre>
+<p>For details of the comparison algorithm, see the page for the <a href="strict_equality">strict equality</a> operator.</p>
+<p>Like the strict equality operator, the strict inequality operator will always consider operands of different types to be different:</p>
+<pre><code>3 !== &quot;3&quot;; // true</code></pre>
+<h2 id="examples">Examples</h2>
+<h3 id="comparing-operands-of-the-same-type">Comparing operands of the same type</h3>
+<pre><code>console.log(&quot;hello&quot; !== &quot;hello&quot;);   // false
+console.log(&quot;hello&quot; !== &quot;hola&quot;);    // true
+
+console.log(3 !== 3);               // false
+console.log(3 !== 4);               // true
+
+console.log(true !== true);         // false
+console.log(true !== false);        // true
+
+console.log(null !== null);         // false</code></pre>
+<h3 id="comparing-operands-of-different-types">Comparing operands of different types</h3>
+<pre><code>console.log(&quot;3&quot; !== 3);           // true
+
+console.log(true !== 1);          // true
+
+console.log(null !== undefined);  // true</code></pre>
+<h3 id="comparing-objects">Comparing objects</h3>
+<pre><code>const object1 = {
+  name: &quot;hello&quot;
+}
+
+const object2 = {
+  name: &quot;hello&quot;
+}
+
+console.log(object1 !== object2);  // true
+console.log(object1 !== object1);  // false</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-equality-operators">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-equality-operators</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>Strict_inequality</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>4</p>
+<p>4</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="equality">Equality operator</a></li>
+<li><a href="inequality">Inequality operator</a></li>
+<li><a href="strict_equality">Strict equality operator</a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_inequality" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_inequality</a></p>
+</body>
+</html>

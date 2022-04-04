@@ -12,7 +12,7 @@ Each time Google crawls a page, in addition to checking the information on that 
 
 Google crawls every new page you create or modify.
 
-After Google crawls a page, it's time to gather information. This information is actually information that is important to Google and is completely different from the content and information that we have in mind.
+After Google crawls a page, it’s time to gather information. This information is actually information that is important to Google and is completely different from the content and information that we have in mind.
 
 Information such as page links to other pages, number of external links, keyword type and number of times, structure, etc. are some of the things that Google stores in a database.
 
@@ -26,25 +26,25 @@ This is how Google search engine works.
 
 It is very important to note that no one knows exactly how the Google search engine and its algorithm work, and anyone who claims to do so is fundamentally false.
 
-Even if you go to Google's site, it will not share this information with anyone.
+Even if you go to Google’s site, it will not share this information with anyone.
 
 Since the introduction of Google search engine in 1997, its algorithm has undergone extensive and minor changes.
 
-At each general change, Google's algorithm has reviewed how the sites are displayed, and so far has tried to be able to show sites that are of the highest quality in terms of content, and therefore be able to display sites related to users' search terms. ; But the whole algorithm works in the same way in general, and the only difference is in the way and strategy of displaying sites:
+At each general change, Google’s algorithm has reviewed how the sites are displayed, and so far has tried to be able to show sites that are of the highest quality in terms of content, and therefore be able to display sites related to users’ search terms. ; But the whole algorithm works in the same way in general, and the only difference is in the way and strategy of displaying sites:
 
-1\. Analyze input data
+1. Analyze input data
 
-2\. Compare input data with pages
+2. Compare input data with pages
 
-3\. Ranking of useful pages
+3. Ranking of useful pages
 
-4\. Considering the geographical location
+4. Considering the geographical location
 
-5\. Show the best results
+5. Show the best results
 
 Google algorithms each have different purposes, but in general, the purpose of all of them is generally to select the best websites to display on the search results page for users.
 
-now ; Briefly, we name some of Google's algorithms as captions.
+now ; Briefly, we name some of Google’s algorithms as captions.
 
 1.Panda algorithm was first introduced in February 2011 with the advent of languages, and its task was to prevent copying, writing or photographing.
 
@@ -74,7 +74,7 @@ Many sites use ads to pay for their site to be able to pay for their site, but i
 
 Conclusion
 
-Although Google's algorithms can penalize or degrade sites, they only happen if they break the rules.
+Although Google’s algorithms can penalize or degrade sites, they only happen if they break the rules.
 
 In most cases, these algorithms have helped users.
 

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>setdate</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="date.prototype.setdate">Date.prototype.setDate()</h1>
+<p>The <code>setDate()</code> method changes the day of the month of a given <a href="../date"><code>Date</code></a> instance, based on local time.</p>
+<p>To instead change the day of the month for a given <a href="../date"><code>Date</code></a> instance based on UTC time, use the <a href="setutcdate"><code>setUTCDate()</code></a> method.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>setDate(dayValue)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>dayValue</code><br />
+An integer representing the day of the month.</p>
+<h3 id="return-value">Return value</h3>
+<p>The number of milliseconds between 1 January 1970 00:00:00 UTC and the given date (the <a href="../date"><code>Date</code></a> object is also changed in place).</p>
+<h2 id="description">Description</h2>
+<p>If the <code>dayValue</code> is outside of the range of date values for the month, <code>setDate()</code> will update the <a href="../date"><code>Date</code></a> object accordingly.</p>
+<p>For example, if 0 is provided for <code>dayValue</code>, the date will be set to the last day of the previous month.</p>
+<p>If a negative number is provided for <code>dayValue</code>, the date will be set counting backwards from the last day of the previous month. -1 would result in the date being set to 1 day before the last day of the previous month.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-setdate">Using setDate()</h3>
+<pre><code>var theBigDay = new Date(1962, 6, 7); // 1962-07-07 (7th of July 1962)
+theBigDay.setDate(24);  // 1962-07-24 (24th of July 1962)
+theBigDay.setDate(32);  // 1962-08-01 (1st of August 1962)
+theBigDay.setDate(22);  // 1962-08-22 (22th of August 1962)
+theBigDay.setDate(0);   // 1962-07-31 (31th of July 1962)
+theBigDay.setDate(98);  // 1962-10-06 (6th of October 1962)
+theBigDay.setDate(-50); // 1962-08-11 (11th of August 1962)</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-date.prototype.setdate">ECMAScript (ECMA-262) <br/></p>
+<span class="small">The definition of ‘Date.prototype.setDate’ in that specification.</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>setDate</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="getdate"><code>Date.prototype.getDate()</code></a></li>
+<li><a href="setutcdate"><code>Date.prototype.setUTCDate()</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setDate" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setDate</a></p>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>flexbox-cheat-sheet</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="flexbox-cheat-sheet">Flexbox Cheat Sheet</h1>
+<h4 id="container">Container</h4>
+<ul>
+<li><code>display: flex</code> or <code>display: inline-flex</code>: creates a flex context (or an inline flex context) for direct children of this element</li>
+<li><code>flex-direction</code> determines the main and cross axis for the container, valid values are:
+<ul>
+<li><code>row</code> (default): horizontal, in the direction of writing (left to right for English)</li>
+<li><code>row-reverse</code>: horizontal, in the opposite direction of writing (right to left for English)</li>
+<li><code>column</code>: vertical, top to bottom</li>
+<li><code>column-reverse</code>: vertical, bottom to top</li>
+</ul></li>
+<li><code>flex-wrap</code> determines if flex items will try to fit in one line, valid values are:
+<ul>
+<li><code>nowrap</code> (default): all flex items will be on one line</li>
+<li><code>wrap</code>: flex items will wrap onto multiple lines, top to bottom</li>
+<li><code>wrap-reverse</code>: flex items will wrap onto multiple lines, bottom to top</li>
+</ul></li>
+<li><code>flex-flow</code>: shorthand combining <code>flex-direction</code> and <code>flex-wrap</code>
+<ul>
+<li>Formal syntax: <code>flex-flow: &lt;'flex-direction'&gt; || &lt;'flex-wrap'&gt;</code></li>
+</ul></li>
+<li><code>justify-content</code> defines the alignment along the main axis, valid values are:
+<ul>
+<li><code>flex-start</code> (default): pack flex items from the start</li>
+<li><code>flex-end</code>: pack flex items from the end</li>
+<li><code>start</code>: pack items from the start</li>
+<li><code>end</code>: pack items from the end</li>
+<li><code>left</code>: pack items from the left</li>
+<li><code>right</code>: pack items from the right</li>
+<li><code>center</code>: pack items around the center</li>
+<li><code>space-around</code>: distribute items evenly with equal space around them</li>
+<li><code>space-between</code>: distribute items evenly with equal space between them</li>
+<li><code>space-evenly</code>: distribute items evenly, ensuring equal space between any two items</li>
+<li><code>stretch</code>: distribute items evenly, stretching auto-sized items to fit the container</li>
+</ul></li>
+<li><code>align-items</code> defines the alignment along the cross axis, valid values are:
+<ul>
+<li><code>flex-start</code> (default): pack flex items from the start</li>
+<li><code>flex-end</code>: pack flex items from the end</li>
+<li><code>start</code>: pack items from the start</li>
+<li><code>end</code>: pack items from the end</li>
+<li><code>center</code>: pack items around the center</li>
+<li><code>baseline</code>: align items based on their baselines</li>
+<li><code>stretch</code>: stretch items to fill the container</li>
+</ul></li>
+<li><code>align-content</code> defines the alignment of extra space along the cross axis, valid values are:
+<ul>
+<li><code>flex-start</code> (default): pack flex items from the start</li>
+<li><code>flex-end</code>: pack flex items from the end</li>
+<li><code>start</code>: pack items from the start</li>
+<li><code>end</code>: pack items from the end</li>
+<li><code>center</code>: pack items around the center</li>
+<li><code>space-around</code>: distribute items evenly with equal space around them</li>
+<li><code>space-between</code>: distribute items evenly with equal space between them</li>
+<li><code>space-evenly</code>: distribute items evenly, ensuring equal space between any two items</li>
+<li><code>stretch</code>: distribute items evenly, stretching auto-sized items to fit the container</li>
+</ul></li>
+</ul>
+<h4 id="items">Items</h4>
+<ul>
+<li><code>flex-grow</code> determines how much the item can grow if necessary
+<ul>
+<li>Accepts a single positive number (unitless), default value is <code>0</code></li>
+<li>Specifies how much of the remaining space in the flex container should be assigned to the item</li>
+<li>The remaining space is the size of the flex container minus the size of all flex items’ sizes together</li>
+<li>If all items have the same <code>flex-grow</code>, all items will receive an equal share of the remaining space</li>
+<li>If not all items have the same <code>flex-grow</code>, the remaining space is distributed according to the ratio defined by these values</li>
+</ul></li>
+<li><code>flex-shrink</code> determines how much the items can shrink if necessary
+<ul>
+<li>Accepts a single positive number (unitless), default value is <code>1</code></li>
+<li>If the size of all flex items is larger than the flex container, items shrink to fit according to <code>flex-shrink</code></li>
+</ul></li>
+<li><code>flex-basis</code> determines the initial size of a flex item before the remaining space is distributed
+<ul>
+<li>Can use any valid <code>width</code> value, intrinsic size values, <code>auto</code> (default) or <code>content</code></li>
+<li><code>auto</code> means “look at my <code>width</code> or <code>height</code> property”, whereas <code>content</code> is used for automatic sizing</li>
+</ul></li>
+<li><code>flex</code>: shorthand combining <code>flex-grow</code>, <code>flex-shrink</code> and <code>flex-basis</code>
+<ul>
+<li>Formal syntax: <code>flex: none | [ &lt;'flex-grow'&gt; &lt;'flex-shrink'&gt;? || &lt;'flex-basis'&gt; ]</code></li>
+</ul></li>
+<li><code>align-self</code> allows the item to override the default <code>align-items</code> specified by the container
+<ul>
+<li>Valid values are the same as those of the <code>align-items</code> property in the container</li>
+</ul></li>
+<li><code>order</code> determines the ordering of the item
+<ul>
+<li>Accepts an integer value</li>
+<li>Items in a container are sorted by ascending <code>order</code> value and then by their source code order</li>
+<li>Might cause accessibility issues if used incorrectly</li>
+</ul></li>
+</ul>
+</body>
+</html>

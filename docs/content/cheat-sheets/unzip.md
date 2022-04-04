@@ -1,19 +1,19 @@
----
-tags: [compression]
----
+To extract an archive:
+======================
 
-# To extract an archive:
+unzip
 
-unzip <archive>
+To extract an archive to a specific directory:
+==============================================
 
-# To extract an archive to a specific directory:
+unzip -d
 
-unzip <archive> -d <directory>
+To test integrity of archive:
+=============================
 
-# To test integrity of archive:
+unzip -tq
 
-unzip -tq <archive>
+To list files and directories an archive:
+=========================================
 
-# To list files and directories an archive:
-
-unzip -l <archive>
+unzip -l

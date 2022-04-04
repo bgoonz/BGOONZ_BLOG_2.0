@@ -1,37 +1,47 @@
-## tags: [packaging]
+tags: \[packaging\]
+-------------------
 
-# To install a package:
+To install a package:
+=====================
 
-bower install <package>
+bower install
 
-# To install a package from github:
+To install a package from github:
+=================================
 
-bower install <user>/<repo>
+bower install /
 
-# To install a specific package locally:
+To install a specific package locally:
+======================================
 
-bower install <package>#<version>
+bower install \#
 
-# To install a package locally and save installed package into bower.json:
+To install a package locally and save installed package into bower.json:
+========================================================================
 
-bower install <package> --save
+bower install –save
 
-# To retrieve info of a particular package:
+To retrieve info of a particular package:
+=========================================
 
-bower info <package>
+bower info
 
-# To list local packages:
+To list local packages:
+=======================
 
 bower list
 
-# To search for a package by name:
+To search for a package by name:
+================================
 
-bower search <package>
+bower search
 
-# To update a package to their newest version:
+To update a package to their newest version:
+============================================
 
-bower update <package>
+bower update
 
-# To remove a local package:
+To remove a local package:
+==========================
 
-bower uninstall <package>
+bower uninstall

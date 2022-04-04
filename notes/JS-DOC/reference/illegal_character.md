@@ -1,22 +1,27 @@
-# SyntaxError: illegal character
+SyntaxError: illegal character
+==============================
 
-The JavaScript exception "illegal character" occurs when there is an invalid or unexpected token that doesn't belong at this position in the code.
+The JavaScript exception “illegal character” occurs when there is an invalid or unexpected token that doesn’t belong at this position in the code.
 
-## Message
+Message
+-------
 
     SyntaxError: Invalid character (Edge)
     SyntaxError: illegal character (Firefox)
     SyntaxError: Invalid or unexpected token (Chrome)
 
-## Error type
+Error type
+----------
 
 [`SyntaxError`](../global_objects/syntaxerror)
 
-## What went wrong?
+What went wrong?
+----------------
 
-There is an invalid or unexpected token that doesn't belong at this position in the code. Use an editor that supports syntax highlighting and carefully check your code against mismatches like a minus sign (`-`) versus a dash (`-`) or simple quotes (`"`) vs non-standard quotation marks (`"`).
+There is an invalid or unexpected token that doesn’t belong at this position in the code. Use an editor that supports syntax highlighting and carefully check your code against mismatches like a minus sign (`-`) versus a dash (`-`) or simple quotes (`"`) vs non-standard quotation marks (`"`).
 
-## Examples
+Examples
+--------
 
 ### Mismatched characters
 
@@ -37,11 +42,11 @@ This should work:
     42 - 13;
     var foo = 'bar';
 
-<span class="message-body-wrapper"><span class="message-flex-body"><span class="devtools-monospace message-body"><span class="objectBox objectBox-string">Some editors and IDEs will notify you or at least use a slightly different highlighting for it, but not all. When something like this happens to your code and you're not able to find the source of the problem, it's often best to just delete the problematic line and retype it.</span></span></span></span>
+<span class="message-body-wrapper"><span class="message-flex-body"><span class="devtools-monospace message-body"><span class="objectBox objectBox-string">Some editors and IDEs will notify you or at least use a slightly different highlighting for it, but not all. When something like this happens to your code and you’re not able to find the source of the problem, it’s often best to just delete the problematic line and retype it.</span></span></span></span>
 
 ### Forgotten characters
 
-It's easy to forget a character here or there.
+It’s easy to forget a character here or there.
 
     var colors = ['#000', #333', '#666'];
     // SyntaxError: illegal character
@@ -61,7 +66,8 @@ When inspecting this code in an editor like Vim, you can see that there is actua
 
     var foo = 'bar';<200b>
 
-## See also
+See also
+--------
 
 -   [Lexical grammar](../lexical_grammar)
 

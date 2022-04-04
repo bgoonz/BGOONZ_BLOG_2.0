@@ -1,168 +1,104 @@
----
-title: Markdown
-category: Markup
-
-prism_languages: [markdown]
-weight: -1
----
-
-## Reference
+Reference
+---------
 
 {:.-three-column}
 
 ### Headers
 
-```markdown
-# h1
+    # h1
 
-## h2
+    ## h2
 
-### h3
+    ### h3
 
-#### h4
+    #### h4
 
-##### h5
+    ##### h5
 
-###### h6
-```
+    ###### h6
 
-```markdown
-# Header 1
-```
+    # Header 1
 
-```markdown
-## Header 2
-```
+    ## Header 2
 
 ### Emphasis
 
-```markdown
-_italic_
-_italic_
-```
+    _italic_
+    _italic_
 
-```markdown
-**bold**
-**bold**
-```
+    **bold**
+    **bold**
 
-```markdown
-**_bold italic_**
-**_bold italic_**
-```
+    **_bold italic_**
+    **_bold italic_**
 
-```markdown
-~~strikethrough~~
-```
+    ~~strikethrough~~
 
-```markdown
-`code`
-```
+    `code`
 
 ### Lists
 
-```markdown
--   Item 1
--   Item 2
-```
+    -   Item 1
+    -   Item 2
 
-```markdown
--   Item 1
--   Item 2
-```
+    -   Item 1
+    -   Item 2
 
-```markdown
--   [ ] Checkbox off
--   [x] Checkbox on
-```
+    -   [ ] Checkbox off
+    -   [x] Checkbox on
 
-```markdown
-1. Item 1
-2. Item 2
-```
+    1. Item 1
+    2. Item 2
 
 ### Links
 
-```markdown
-[link](http://google.com)
-```
+    [link](http://google.com)
 
-```markdown
-[link][google]
-[google]: http://google.com
-```
+    [link][google]
+    [google]: http://google.com
 
-```markdown
-<http://google.com>
-```
+    <http://google.com>
 
 ### Images
 
-```markdown
-![Image alt text](/path/to/img.jpg)
-![Image alt text](/path/to/img.jpg 'title')
-![Image alt text][img]
-```
+    ![Image alt text](/path/to/img.jpg)
+    ![Image alt text](/path/to/img.jpg 'title')
+    ![Image alt text][img]
 
-```markdown
-[img]: http://foo.com/img.jpg
-```
+    [img]: http://foo.com/img.jpg
 
 ### Code
 
-```
-    4 space indent
-    makes a code block
-```
-
-```markdown
-
-```
+        4 space indent
+        makes a code block
 
 code fences
 
-```
+    ```js
+    codeFences.withLanguage();
+    ```
 
-```
+    ### Blockquotes
 
-````markdown
-```js
-codeFences.withLanguage();
-```
-````
-
-````
-
-### Blockquotes
-
-```markdown
-> This is
-> a blockquote
->
-> > Nested
-> > Blockquote
-````
+    ```markdown
+    > This is
+    > a blockquote
+    >
+    > > Nested
+    > > Blockquote
 
 ### Horizontal line
 
-```markdown
----
-```
+    ---
 
-```markdown
----
-```
+    ---
 
 ### Tables
 
-```markdown
-| Column 1 Heading | Column 2 Heading |
-| ---------------- | ---------------- |
-| Some content     | Other content    |
-```
+    | Column 1 Heading | Column 2 Heading |
+    | ---------------- | ---------------- |
+    | Some content     | Other content    |
 
-```markdown
-| Column 1 Heading | Column 2 Heading |
-| ---------------- | ---------------- |
-| Some content     | Other content    |
-```
+    | Column 1 Heading | Column 2 Heading |
+    | ---------------- | ---------------- |
+    | Some content     | Other content    |

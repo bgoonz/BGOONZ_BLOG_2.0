@@ -1,8 +1,9 @@
-# Web Dev Resources
+Web Dev Resources
+=================
 
 Web Development
 
----
+------------------------------------------------------------------------
 
 ### Web Dev Resources
 
@@ -10,7 +11,7 @@ Web Development
 
 -   <span id="7f87"><a href="https://caniuse.com/#home" class="markup--anchor markup--li-anchor">Check cross-browser compatibility for CSS, JavaScript and HTML</a></span>
 -   <span id="6491"><a href="https://medium.freecodecamp.org/modern-frontend-hacking-cheatsheets-df9c2566c72a" class="markup--anchor markup--li-anchor">Modern front-end Cheatsheets</a></span>
--   <span id="1272"><a href="https://stackshare.io/" class="markup--anchor markup--li-anchor">Check out what your favorite company's stack is</a></span>
+-   <span id="1272"><a href="https://stackshare.io/" class="markup--anchor markup--li-anchor">Check out what your favorite company’s stack is</a></span>
 -   <span id="d228"><a href="https://medium.com/coderbyte/a-guide-to-becoming-a-full-stack-developer-in-2017-5c3c08a1600c" class="markup--anchor markup--li-anchor">A Guide to Becoming a Full-Stack Developer in 2017</a></span>
 -   <span id="0b32"><a href="http://edusagar.com/articles/view/70/What-happens-when-you-type-a-URL-in-browser" class="markup--anchor markup--li-anchor">What happens when you type a URL into a web browser</a></span>
 
@@ -22,7 +23,7 @@ Web Development
 
 ### GIT
 
--   <span id="c612"><a href="http://product.hubspot.com/blog/git-and-github-tutorial-for-beginners" class="markup--anchor markup--li-anchor">HubSpot's Intro to Git/GitHub including Pull Requests &amp; Merging</a></span>
+-   <span id="c612"><a href="http://product.hubspot.com/blog/git-and-github-tutorial-for-beginners" class="markup--anchor markup--li-anchor">HubSpot’s Intro to Git/GitHub including Pull Requests &amp; Merging</a></span>
 
 ### Express
 
@@ -30,9 +31,9 @@ Web Development
 
 ### Node.js
 
--   <span id="3f91"><a href="https://medium.com/@thejasonfile/fetch-vs-axios-js-for-making-http-requests-2b261cdd3af5" class="markup--anchor markup--li-anchor">Fetch vs. Axios.js for making http requests</a> \#\# Sequelize</span>
+-   <span id="3f91"><a href="https://medium.com/@thejasonfile/fetch-vs-axios-js-for-making-http-requests-2b261cdd3af5" class="markup--anchor markup--li-anchor">Fetch vs. Axios.js for making http requests</a> \#\# Sequelize</span>
 -   <span id="b94a"><a href="https://www.youtube.com/watch?v=6NKNfXtKk0c" class="markup--anchor markup--li-anchor">Sequelize: Getting Started</a></span>
--   <span id="fe38">\[Sequelize reference by @tmkelly28\](https://github.com/tmkelly28/sequelize-reference)</span>
+-   <span id="fe38">\[Sequelize reference by <span class="citation" data-cites="tmkelly28">@tmkelly28</span>\](https://github.com/tmkelly28/sequelize-reference)</span>
 -   <span id="63a1"><a href="https://blog.cloudboost.io/docs-for-the-sequelize-docs-querying-edition-aed4bd1273f0" class="markup--anchor markup--li-anchor">Short but useful Sequelize querying cheatsheet</a></span>
 
 ### Study Guides
@@ -73,7 +74,7 @@ Web Development
 ### VS Code
 
 -   <span id="e3ec"><a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf" class="markup--anchor markup--li-anchor">Keystroke cheat sheet</a></span>
--   <span id="7f06"><a href="https://gist.github.com/tanukid/4ba5d7021a2027362592cbac0a356f58" class="markup--anchor markup--li-anchor">Daniel's Config</a></span>
+-   <span id="7f06"><a href="https://gist.github.com/tanukid/4ba5d7021a2027362592cbac0a356f58" class="markup--anchor markup--li-anchor">Daniel’s Config</a></span>
 
 ### Sublime
 
@@ -92,30 +93,27 @@ Web Development
 -   <span id="b6d5"><a href="https://www.hackerrank.com/" class="markup--anchor markup--li-anchor">Hacker Rank</a></span>
 -   <span id="6a45"><a href="https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850/ref=pd_lpo_sbs_14_t_0?_encoding=UTF8&amp;psc=1&amp;refRID=8BB0KRJ073A8CZXTW5PP&amp;dpID=41XgSiYW7dL&amp;preST=_SY291_BO1,204,203,200_QL40_&amp;dpSrc=detail" class="markup--anchor markup--li-anchor">Cracking the Coding Interview</a></span>
 
-Here's a repo where I hoard resource lists!
+Here’s a repo where I hoard resource lists!
 
-<a href="https://github.com/bgoonz/Cumulative-Resource-List.git" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/Cumulative-Resource-List.git"><strong>bgoonz/Cumulative-Resource-List</strong>
-<br/>
+**bgoonz/Cumulative-Resource-List**  
 
-<em>Inspired by Awesome Lists. Contribute to bgoonz/Cumulative-Resource-List development by creating an account on GitHub.</em>github.com</a><a href="https://github.com/bgoonz/Cumulative-Resource-List.git" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Inspired by Awesome Lists. Contribute to bgoonz/Cumulative-Resource-List development by creating an account on GitHub.*github.com<a href="https://github.com/bgoonz/Cumulative-Resource-List.git" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
----
+------------------------------------------------------------------------
 
-#### If you found this guide helpful feel free to checkout my GitHub/gist's where I host similar content:
+#### If you found this guide helpful feel free to checkout my GitHub/gist’s where I host similar content:
 
-> <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--blockquote-anchor"><strong>bgoonz's</strong> gists · GitHub</a>
+> <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--blockquote-anchor"><strong>bgoonz’s</strong> gists · GitHub</a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong>
-<br/>
+**bgoonz — Overview**  
 
-<em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…*github.com<a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 Or Checkout my personal Resource Site:
 
-<a href="https://goofy-euclid-1cd736.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://goofy-euclid-1cd736.netlify.app/"><strong>a/A-Student-Resources</strong>
-<br/>
+**a/A-Student-Resources**  
 
-<em>Edit description</em>goofy-euclid-1cd736.netlify.app</a><a href="https://goofy-euclid-1cd736.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Edit description*goofy-euclid-1cd736.netlify.app<a href="https://goofy-euclid-1cd736.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [March 7, 2021](https://medium.com/p/ec1975773d7d).
 

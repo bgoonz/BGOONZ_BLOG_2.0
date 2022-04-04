@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Rails</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Rails</h1>
+</header>
+<h2 id="helpers">Helpers</h2>
+<pre><code>class ApplicationController
+  helper_method :logged_in?
+
+  def logged_in?
+    &quot;Something&quot;
+  end
+end</code></pre>
+<h3 id="cssjs-packages">CSS/JS packages</h3>
+<pre><code>stylesheet_link_tag :monkey
+javascript_link_tag :monkey</code></pre>
+<h3 id="forms">Forms</h3>
+<pre><code># http://api.rubyonrails.org/classes/ActionView/Helpers/FormHelper.html
+
+- form_for @person do |f|
+  = f.label :first_name
+  = f.label :first_name, &quot;First name&quot;
+  = f.text_field :first_name
+
+  = f.label :last_name&gt;
+  = f.text_field :last_name&gt;
+
+  - fields_for @person.permission do |fields|
+    = fields.checkbox :admin
+
+  -# name=&quot;person[admin]&quot;
+  - fields_for :person, @client do |fields|
+    = fields.checkbox :admin
+
+  = f.submit
+
+# Also: check_box, email_field, fields_for
+# file_field, hidden_field, label, number_field, password_field
+# radio_button, range_field, search_field, telephonen_field,
+# text_area, text_field, url_field</code></pre>
+<h2 id="controllers">Controllers</h2>
+<p>http://apidock.com/rails/ActionController/Base</p>
+<pre><code>class ProjectsController
+  layout &#39;project&#39;   # Actually defaults to `projects` based
+                     # on the controller name
+
+  def save
+  end
+
+  def edit
+  end
+end</code></pre>
+<h3 id="before-filter">Before filter</h3>
+<pre><code>class ApplicationController &lt; ActionController::Base
+  before_filter :validate, only: [:save, :edit]
+  before_filter :ensure_auth, except: [:logout]
+
+  before_filter :require_login
+
+  private
+
+  def require_login
+    unless logged_in?
+      flash[:error] = &quot;You must be logged in to access this section&quot;
+      redirect_to new_login_url # halts request cycle
+    end
+  end
+end</code></pre>
+<h3 id="default-url-options">Default URL options</h3>
+<pre><code>class ApplicationController &lt; ActionController::Base
+  # The options parameter is the hash passed in to &#39;url_for&#39;
+  def default_url_options(options)
+    {:locale =&gt; I18n.locale}
+  end
+end</code></pre>
+<h3 id="hashes">Hashes</h3>
+<pre><code>session[:what]
+flash[:notice] = &quot;Your session expired&quot;
+params[:id]</code></pre>
+<h3 id="xml-and-json">XML and JSON</h3>
+<pre><code>class UsersController &lt; ApplicationController
+  def index
+    @users = User.all
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml =&gt; @users}
+      format.json { render :json =&gt; @users}
+    end
+  end
+end</code></pre>
+<h3 id="redirection">Redirection</h3>
+<pre><code>redirect_to action: &#39;show&#39;, id: @entry.id
+redirect_to root_url          # a path</code></pre>
+<h3 id="render">Render</h3>
+<pre><code>render nothing: true
+render template: &#39;products/show&#39;
+render status: 500
+render status: :forbidden
+render text: &#39;...&#39;
+render layout: &#39;special_layout&#39;
+render layout: false
+render action: &#39;something&#39;    # same as `file: &#39;my/something&#39;`
+                              # Renders the template only, does not execute
+                              # the action
+
+render json: object
+render xml: object
+
+render location: photo_url(photo)</code></pre>
+<h3 id="head-only-responses">Head-only responses</h3>
+<pre><code>head :bad_request
+head :created, location: photo_path(@photo)</code></pre>
+<h2 id="layouts">Layouts</h2>
+<pre><code># app/views/layouts/application.html.erb
+&lt;%= content_for?(:content) ? yield :content : yield %&gt;
+
+# app/views/layouts/news.html.erb
+&lt;% content_for :content do %&gt;
+   ...
+&lt;% end %&gt;
+&lt;% render template: :&#39;layouts/application&#39; %&gt;</code></pre>
+</body>
+</html>

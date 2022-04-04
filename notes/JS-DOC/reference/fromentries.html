@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>fromentries</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="object.fromentries">Object.fromEntries()</h1>
+<p>The <code>Object.fromEntries()</code> method transforms a list of key-value pairs into an object.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>Object.fromEntries(iterable);</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>iterable</code><br />
+An iterable such as <a href="../array"><code>Array</code></a> or <a href="../map"><code>Map</code></a> or other objects implementing the <a href="../../iteration_protocols#the_iterable_protocol">iterable protocol</a>.</p>
+<h3 id="return-value">Return value</h3>
+<p>A new object whose properties are given by the entries of the iterable.</p>
+<h2 id="description">Description</h2>
+<p>The <code>Object.fromEntries()</code> method takes a list of key-value pairs and returns a new object whose properties are given by those entries. The iterable argument is expected to be an object that implements an <code>@@iterator</code> method, that returns an iterator object, that produces a two element array-like object, whose first element is a value that will be used as a property key, and whose second element is the value to associate with that property key.</p>
+<p><code>Object.fromEntries()</code> performs the reverse of <a href="entries"><code>Object.entries()</code></a>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="converting-a-map-to-an-object">Converting a Map to an Object</h3>
+<p>With <code>Object.fromEntries</code>, you can convert from <a href="../map"><code>Map</code></a> to <a href="../object"><code>Object</code></a>:</p>
+<pre><code>const map = new Map([ [&#39;foo&#39;, &#39;bar&#39;], [&#39;baz&#39;, 42] ]);
+const obj = Object.fromEntries(map);
+console.log(obj); // { foo: &quot;bar&quot;, baz: 42 }</code></pre>
+<h3 id="converting-an-array-to-an-object">Converting an Array to an Object</h3>
+<p>With <code>Object.fromEntries</code>, you can convert from <a href="../array"><code>Array</code></a> to <a href="../object"><code>Object</code></a>:</p>
+<pre><code>const arr = [ [&#39;0&#39;, &#39;a&#39;], [&#39;1&#39;, &#39;b&#39;], [&#39;2&#39;, &#39;c&#39;] ];
+const obj = Object.fromEntries(arr);
+console.log(obj); // { 0: &quot;a&quot;, 1: &quot;b&quot;, 2: &quot;c&quot; }</code></pre>
+<h3 id="object-transformations">Object transformations</h3>
+<p>With <code>Object.fromEntries</code>, its reverse method <a href="entries"><code>Object.entries()</code></a>, and <a href="../array#methods_2">array manipulation methods</a>, you are able to transform objects like this:</p>
+<pre><code>const object1 = { a: 1, b: 2, c: 3 };
+
+const object2 = Object.fromEntries(
+  Object.entries(object1)
+  .map(([ key, val ]) =&gt; [ key, val * 2 ])
+);
+
+console.log(object2);
+// { a: 2, b: 4, c: 6 }</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-object.fromentries">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-object.fromentries</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>fromEntries</code></p>
+<p>73</p>
+<p>79</p>
+<p>63</p>
+<p>No</p>
+<p>60</p>
+<p>12.1</p>
+<p>73</p>
+<p>73</p>
+<p>63</p>
+<p>No</p>
+<p>12.2</p>
+<p>No</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="entries"><code>Object.entries()</code></a></li>
+<li><a href="keys"><code>Object.keys()</code></a></li>
+<li><a href="values"><code>Object.values()</code></a></li>
+<li><a href="../map/entries"><code>Map.prototype.entries()</code></a></li>
+<li><a href="../map/keys"><code>Map.prototype.keys()</code></a></li>
+<li><a href="../map/values"><code>Map.prototype.values()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/fromEntries" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/fromEntries</a></p>
+</body>
+</html>

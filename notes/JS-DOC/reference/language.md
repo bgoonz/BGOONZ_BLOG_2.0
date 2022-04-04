@@ -1,12 +1,15 @@
-# Intl.Locale.prototype.language
+Intl.Locale.prototype.language
+==============================
 
 The `Intl.Locale.prototype.language` property is an accessor property that returns the language associated with the locale.
 
-## Description
+Description
+-----------
 
-Language is one of the core features of a locale. The Unicode specification treats the language identifier of a locale as the language and the region together (to make a distinction between dialects and variations, e.g. British English vs. American English). The `language` property of a [`Locale`](../locale) returns strictly the locale's language subtag.
+Language is one of the core features of a locale. The Unicode specification treats the language identifier of a locale as the language and the region together (to make a distinction between dialects and variations, e.g. British English vs. American English). The `language` property of a [`Locale`](../locale) returns strictly the locale’s language subtag.
 
-## Examples
+Examples
+--------
 
 ### Setting the language in the locale identifer string argument
 
@@ -24,12 +27,11 @@ While the language subtag must be specified, the [`Locale`](../locale) construct
 
     console.log(langObj.language); // Prints "es"
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.language">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
-<br/>
-
-<span class="small">#sec-Intl.Locale.prototype.language</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Internationalization API Specification (ECMAScript Internationalization API)<br />
+</p><span class="small">#sec-Intl.Locale.prototype.language</span></td></tr></tbody></table>
 
 `language`
 
@@ -57,7 +59,8 @@ No
 
 11.0
 
-## See also
+See also
+--------
 
 -   [`Intl.Locale`](../locale)
 -   [Unicode language subtag specification](https://www.unicode.org/reports/tr35/#unicode_language_subtag_validity)

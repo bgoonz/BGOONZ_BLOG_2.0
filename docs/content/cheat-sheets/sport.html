@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>sport</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="to-sync-to-newest-slackbuild.org-tree">To sync to newest slackbuild.org tree:</h1>
+<p>sport r</p>
+<h1 id="to-search-fuzzy-slackbuild-tree-for-packages-foo-and-bar">to search (fuzzy) slackbuild tree for packages foo and bar:</h1>
+<p>sport s foo bar</p>
+<h1 id="to-operate-from-alternate-build-tree">To operate from alternate build tree:</h1>
+<p>SBOPATH=/path/to/tree sport s foo</p>
+<h1 id="to-view-info-and-readme-of-bar-not-fuzzy">to view info and readme of bar (not fuzzy):</h1>
+<p>sport c foo BaR</p>
+<h1 id="to-build-a-package">To build a package:</h1>
+<p>sport i –build-only foo</p>
+<h1 id="to-build-and-install-package-foo-and-bar">to build and install package foo and bar:</h1>
+<p>sport i foo BaR</p>
+<h1 id="to-build-and-install-package-from-current-directory">To build and install package from current directory:</h1>
+<p>sport i .</p>
+<h1 id="to-upgrade-instead-of-install">To upgrade instead of install:</h1>
+<p>INSTALLER=upgradepkg sport i foo</p>
+<h1 id="to-build-dependency-list-for-baz">To build dependency list for baz:</h1>
+<p>echo “foo bar” &gt;&gt; /tmp/baz.list</p>
+<h1 id="to-install-list-of-packages-from-file">To install list of packages from file:</h1>
+<p>sport i $(&lt;/tmp/baz.list)</p>
+<h1 id="to-check-if-package-is-installed">To check if package is installed:</h1>
+<p>sport k foo</p>
+</body>
+</html>

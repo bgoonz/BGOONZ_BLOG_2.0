@@ -1,8 +1,10 @@
-# Date.prototype.setSeconds()
+Date.prototype.setSeconds()
+===========================
 
 The `setSeconds()` method sets the seconds for a specified date according to local time.
 
-## Syntax
+Syntax
+------
 
     setSeconds(secondsValue)
     setSeconds(secondsValue, msValue)
@@ -19,27 +21,29 @@ Optional. A number between 0 and 999, representing the milliseconds.
 
 The number of milliseconds between 1 January 1970 00:00:00 UTC and the updated date.
 
-## Description
+Description
+-----------
 
 If you do not specify the `msValue` parameter, the value returned from the [`getMilliseconds()`](getmilliseconds) method is used.
 
 If a parameter you specify is outside of the expected range, `setSeconds()` attempts to update the date information in the [`Date`](../date) object accordingly. For example, if you use 100 for `secondsValue`, the minutes stored in the [`Date`](../date) object will be incremented by 1, and 40 will be used for seconds.
 
-## Examples
+Examples
+--------
 
 ### Using setSeconds()
 
     var theBigDay = new Date();
     theBigDay.setSeconds(30);
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setseconds">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-date.prototype.setseconds</span></td></tr></tbody></table>
 
-<span class="small">#sec-date.prototype.setseconds</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -95,7 +99,8 @@ Samsung Internet
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`Date.prototype.getSeconds()`](getseconds)
 -   [`Date.prototype.setUTCSeconds()`](setutcseconds)

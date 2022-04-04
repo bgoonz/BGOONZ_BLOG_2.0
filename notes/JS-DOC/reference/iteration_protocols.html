@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>iteration_protocols</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="iteration-protocols">Iteration protocols</h1>
+<p>As a couple of additions to ECMAScript 2015, <strong>Iteration protocols</strong> aren’t new built-ins or syntax, but <em>protocols</em>. These protocols can be implemented by any object by following some conventions.</p>
+<p>There are two protocols: The <a href="#the_iterable_protocol">iterable protocol</a> and the <a href="#the_iterator_protocol">iterator protocol</a>.</p>
+<h2 id="the-iterable-protocol">The iterable protocol</h2>
+<p><strong>The iterable protocol</strong> allows JavaScript objects to define or customize their iteration behavior, such as what values are looped over in a <a href="statements/for...of"><code>for...of</code></a> construct. Some built-in types are <a href="#built-in_iterables">built-in iterables</a> with a default iteration behavior, such as <a href="global_objects/array"><code>Array</code></a> or <a href="global_objects/map"><code>Map</code></a>, while other types (such as <a href="global_objects/object"><code>Object</code></a>) are not.</p>
+<p>In order to be <strong>iterable</strong>, an object must implement the <code>@@iterator</code> method, meaning that the object (or one of the objects up its <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain">prototype chain</a>) must have a property with a <code>@@iterator</code> key which is available via constant <a href="global_objects/symbol/iterator"><code>Symbol.iterator</code></a>:</p>
+<table>
+<thead>
+<tr class="header">
+<th>
+Property
+</th>
+<th>
+Value
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<code>[Symbol.iterator]</code>
+</td>
+<td>
+A zero-argument function that returns an object, conforming to the <a href="#the_iterator_protocol">iterator protocol</a>.
+</td>
+</tr>
+</tbody>
+</table>
+<p>Whenever an object needs to be iterated (such as at the beginning of a <a href="statements/for...of"><code>for...of</code></a> loop), its <code>@@iterator</code> method is called with no arguments, and the returned <strong>iterator</strong> is used to obtain the values to be iterated.</p>
+<p>Note that when this zero-argument function is called, it is invoked as a method on the iterable object. Therefore inside of the function, the <code>this</code> keyword can be used to access the properties of the iterable object, to decide what to provide during the iteration.</p>
+<p>This function can be an ordinary function, or it can be a generator function, so that when invoked, an iterator object is returned. Inside of this generator function, each entry can be provided by using <code>yield</code>.</p>
+<h2 id="the-iterator-protocol">The iterator protocol</h2>
+<p><strong>The iterator protocol</strong> defines a standard way to produce a sequence of values (either finite or infinite), and potentially a return value when all values have been generated.</p>
+<p>An object is an iterator when it implements a <code>next()</code> method with the following semantics:</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>
+Property
+</th>
+<th>
+Value
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<code>next()</code>
+</td>
+<td>
+<p>
+A zero-argument function that returns an object with at least the following two properties:
+</p>
+<dl>
+<dt>
+<code>done</code> (boolean)
+</dt>
+<dd>
+<p>
+Has the value <code>false</code> if the iterator was able to produce the next value in the sequence. (This is equivalent to not specifying the <code>done</code> property altogether.)
+</p>
+<p>
+Has the value <code>true</code> if the iterator has completed its sequence. In this case, <code>value</code> optionally specifies the return value of the iterator.
+</p>
+</dd>
+<dt>
+<code>value</code>
+</dt>
+<dd>
+Any JavaScript value returned by the iterator. Can be omitted when <code>done</code> is <code>true</code>.
+</dd>
+</dl>
+<p>
+The <code>next()</code> method must always return an object with appropriate properties including <code>done</code> and <code>value</code>. If a non-object value gets returned (such as <code>false</code> or <code>undefined</code>), a <a href="global_objects/typeerror"><code>TypeError</code></a> (<code>“iterator.next() returned a non-object value”</code>) will be thrown.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note:</strong> It is not possible to know reflectively whether a particular object implements the iterator protocol. However, it is easy to create an object that satisfies <em>both</em> the iterator and iterable protocols (as shown in the example below).</p>
+<p>Doing so allows an iterator to be consumed by the various syntaxes expecting iterables. Thus, it is seldom useful to implement the Iterator Protocol without also implementing Iterable.</p>
+<pre><code>// Satisfies both the Iterator Protocol and Iterable
+const myIterator = {
+    next: function() {
+        // ...
+    },
+    [Symbol.iterator]: function() { return this; }
+};</code></pre>
+<p>However, when possible, it’s better for <code>iterable[Symbol.iterator]</code> to return different iterators that always start from the beginning, like <code>Set.prototype[@@iterator]()</code> does.</p>
+<h2 id="examples-using-the-iteration-protocols">Examples using the iteration protocols</h2>
+<p>A <a href="global_objects/string"><code>String</code></a> is an example of a built-in iterable object:</p>
+<pre><code>const someString = &#39;hi&#39;;
+console.log(typeof someString[Symbol.iterator]); // &quot;function&quot;</code></pre>
+<p><code>String</code>’s <a href="global_objects/string/@@iterator">default iterator</a> returns the string’s code points one by one:</p>
+<pre><code>const iterator = someString[Symbol.iterator]();
+console.log(iterator + &#39;&#39;); // &quot;[object String Iterator]&quot;
+
+console.log(iterator.next()); // { value: &quot;h&quot;, done: false }
+console.log(iterator.next()); // { value: &quot;i&quot;, done: false }
+console.log(iterator.next()); // { value: undefined, done: true }</code></pre>
+<p>Some built-in constructs—such as the <a href="operators/spread_syntax">spread syntax</a>—use the same iteration protocol under the hood:</p>
+<pre><code>console.log([...someString]); // [&quot;h&quot;, &quot;i&quot;]</code></pre>
+<p>You can redefine the iteration behavior by supplying our own <code>@@iterator</code>:</p>
+<pre><code>// need to construct a String object explicitly to avoid auto-boxing
+const someString = new String(&#39;hi&#39;);
+
+someString[Symbol.iterator] = function () {
+  return {
+    // this is the iterator object, returning a single element (the string &quot;bye&quot;)
+    next: function () {
+      return this._first ? {
+        value: &#39;bye&#39;,
+        done: (this._first = false)
+      } : {
+        done: true
+      }
+    },
+    _first: true
+  };
+};</code></pre>
+<p>Notice how redefining <code>@@iterator</code> affects the behavior of built-in constructs that use the iteration protocol:</p>
+<pre><code>console.log([...someString]); // [&quot;bye&quot;]
+console.log(someString + &#39;&#39;); // &quot;hi&quot;</code></pre>
+<h2 id="iterable-examples">Iterable examples</h2>
+<h3 id="built-in-iterables">Built-in iterables</h3>
+<p><a href="global_objects/string"><code>String</code></a>, <a href="global_objects/array"><code>Array</code></a>, <a href="global_objects/typedarray"><code>TypedArray</code></a>, <a href="global_objects/map"><code>Map</code></a>, and <a href="global_objects/set"><code>Set</code></a> are all built-in iterables, because each of their prototype objects implements an <code>@@iterator</code> method.</p>
+<h3 id="user-defined-iterables">User-defined iterables</h3>
+<p>You can make your own iterables like this:</p>
+<pre><code>const myIterable = {};
+myIterable[Symbol.iterator] = function* () {
+    yield 1;
+    yield 2;
+    yield 3;
+};
+console.log([...myIterable]); // [1, 2, 3]</code></pre>
+<h3 id="built-in-apis-accepting-iterables">Built-in APIs accepting iterables</h3>
+<p>There are many APIs that accept iterables. Some examples include:</p>
+<ul>
+<li><a href="global_objects/map"><code>new Map([iterable])</code></a></li>
+<li><a href="global_objects/weakmap"><code>new WeakMap([iterable])</code></a></li>
+<li><a href="global_objects/set"><code>new Set([iterable])</code></a></li>
+<li><a href="global_objects/weakset"><code>new WeakSet([iterable])</code></a></li>
+</ul>
+<!-- -->
+<pre><code>new Map([[1, &#39;a&#39;], [2, &#39;b&#39;], [3, &#39;c&#39;]]).get(2); // &quot;b&quot;
+
+const myObj = {};
+
+new WeakMap([
+    [{}, &#39;a&#39;],
+    [myObj, &#39;b&#39;],
+    [{}, &#39;c&#39;]
+]).get(myObj);             // &quot;b&quot;
+
+new Set([1, 2, 3]).has(3); // true
+new Set(&#39;123&#39;).has(&#39;2&#39;);   // true
+
+new WeakSet(function* () {
+    yield {}
+    yield myObj
+    yield {}
+}()).has(myObj);           // true</code></pre>
+<h4 id="see-also">See also</h4>
+<ul>
+<li><a href="global_objects/promise/all"><code>Promise.all(iterable)</code></a></li>
+<li><a href="global_objects/promise/race"><code>Promise.race(iterable)</code></a></li>
+<li><a href="global_objects/array/from"><code>Array.from(iterable)</code></a></li>
+</ul>
+<h3 id="syntaxes-expecting-iterables">Syntaxes expecting iterables</h3>
+<p>Some statements and expressions expect iterables, for example the <a href="statements/for...of"><code>for...of</code></a> loops, the <a href="operators/spread_syntax">spread operator</a>), <a href="operators/yield*"><code>yield*</code></a>, and <a href="operators/destructuring_assignment"><code>destructuring assignment</code></a>:</p>
+<pre><code>for (const value of [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;]) {
+    console.log(value);
+}
+// &quot;a&quot;
+// &quot;b&quot;
+// &quot;c&quot;
+
+console.log([...&#39;abc&#39;]);   // [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;]
+
+function* gen() {
+  yield* [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;];
+}
+
+console.log(gen().next()); // { value: &quot;a&quot;, done: false }
+
+[a, b, c] = new Set([&#39;a&#39;, &#39;b&#39;, &#39;c&#39;]);
+console.log(a);            // &quot;a&quot;</code></pre>
+<h3 id="non-well-formed-iterables">Non-well-formed iterables</h3>
+<p>If an iterable’s <code>@@iterator</code> method doesn’t return an iterator object, then it’s considered a <em>non-well-formed</em> iterable.</p>
+<p>Using one is likely to result in runtime errors or buggy behavior:</p>
+<pre><code>const nonWellFormedIterable = {};
+nonWellFormedIterable[Symbol.iterator] = () =&gt; 1;
+[...nonWellFormedIterable]; // TypeError: [] is not a function</code></pre>
+<h2 id="iterator-examples">Iterator examples</h2>
+<h3 id="simple-iterator">Simple iterator</h3>
+<pre><code>function makeIterator(array) {
+  let nextIndex = 0
+  return {
+    next: function() {
+      return nextIndex &lt; array.length ? {
+        value: array[nextIndex++],
+        done: false
+      } : {
+        done: true
+      };
+    }
+  };
+}
+
+const it = makeIterator([&#39;yo&#39;, &#39;ya&#39;]);
+
+console.log(it.next().value); // &#39;yo&#39;
+console.log(it.next().value); // &#39;ya&#39;
+console.log(it.next().done);  // true</code></pre>
+<h3 id="infinite-iterator">Infinite iterator</h3>
+<pre><code>function idMaker() {
+  let index = 0;
+  return {
+    next: function() {
+      return {
+        value: index++,
+        done: false
+      };
+    }
+  };
+}
+
+const it = idMaker();
+
+console.log(it.next().value); // &#39;0&#39;
+console.log(it.next().value); // &#39;1&#39;
+console.log(it.next().value); // &#39;2&#39;
+// ...</code></pre>
+<h3 id="with-a-generator">With a generator</h3>
+<pre><code>function* makeSimpleGenerator(array) {
+  let nextIndex = 0;
+  while (nextIndex &lt; array.length) {
+    yield array[nextIndex++];
+  }
+}
+
+const gen = makeSimpleGenerator([&#39;yo&#39;, &#39;ya&#39;]);
+
+console.log(gen.next().value); // &#39;yo&#39;
+console.log(gen.next().value); // &#39;ya&#39;
+console.log(gen.next().done);  // true
+
+function* idMaker() {
+  let index = 0;
+  while (true) {
+    yield index++;
+  }
+}
+
+const it = idMaker()
+
+console.log(it.next().value); // &#39;0&#39;
+console.log(it.next().value); // &#39;1&#39;
+console.log(it.next().value); // &#39;2&#39;
+// ...</code></pre>
+<h3 id="with-es2015-class">With ES2015 class</h3>
+<pre><code>class SimpleClass {
+  constructor(data) {
+    this.data = data;
+  }
+
+  [Symbol.iterator]() {
+    // Use a new index for each iterator. This makes multiple
+    // iterations over the iterable safe for non-trivial cases,
+    // such as use of break or nested looping over the same iterable.
+    let index = 0;
+
+    return {
+      next: () =&gt; {
+        if (index &lt; this.data.length) {
+          return {value: this.data[index++], done: false}
+        } else {
+          return {done: true}
+        }
+      }
+    }
+  }
+}
+
+const simple = new SimpleClass([1,2,3,4,5]);
+
+for (const val of simple) {
+  console.log(val); // &#39;1&#39; &#39;2&#39; &#39;3&#39; &#39;4&#39; &#39;5&#39;
+}</code></pre>
+<h2 id="is-a-generator-object-an-iterator-or-an-iterable">Is a generator object an iterator or an iterable?</h2>
+<p>A <a href="global_objects/generator">generator object</a> is <em>both</em> iterator and iterable:</p>
+<pre><code>const aGeneratorObject = function* () {
+  yield 1;
+  yield 2;
+  yield 3;
+}();
+
+console.log(typeof aGeneratorObject.next);
+// &quot;function&quot;, because it has a next method, so it&#39;s an iterator
+
+console.log(typeof aGeneratorObject[Symbol.iterator]);
+// &quot;function&quot;, because it has an @@iterator method, so it&#39;s an iterable
+
+console.log(aGeneratorObject[Symbol.iterator]() === aGeneratorObject);
+// true, because its @@iterator method returns itself (an iterator), so it&#39;s an well-formed iterable
+
+console.log([...aGeneratorObject]);
+// [1, 2, 3]
+
+console.log(Symbol.iterator in aGeneratorObject)
+// true, because @@iterator method is a property of aGeneratorObject</code></pre>
+<h2 id="see-also-1">See also</h2>
+<ul>
+<li><a href="statements/function*">the <code>function*</code> documentation</a></li>
+<li><a href="https://tc39.es/ecma262/#sec-iteration">Iteration in the ECMAScript specification</a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols</a></p>
+</body>
+</html>

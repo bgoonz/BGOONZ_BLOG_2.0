@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>togmtstring</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="date.prototype.togmtstring">Date.prototype.toGMTString()</h1>
+<p><strong>Deprecated</strong></p>
+<p>This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see the <a href="#browser_compatibility">compatibility table</a> at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time.</p>
+<p>The <code>toGMTString()</code> method converts a date to a string, using Internet Greenwich Mean Time (GMT) conventions. The exact format of the value returned by <code>toGMTString()</code> varies according to the platform and browser, in general it should represent a human readable date string.</p>
+<p><strong>Note:</strong> <code>toGMTString()</code> is deprecated and should no longer be used. It remains implemented only for backward compatibility; please use <a href="toutcstring"><code>toUTCString()</code></a> instead.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>toGMTString()</code></pre>
+<h3 id="return-value">Return value</h3>
+<p>A string representing the given date following the Internet Greenwich Mean Time (GMT) convention.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="simple-example">Simple example</h3>
+<p>In this example, the <code>toGMTString()</code> method converts the date to GMT (UTC) using the operating system’s time-zone offset and returns a string value that is similar to the following form. The exact format depends on the platform.</p>
+<pre><code>var today = new Date();
+var str = today.toGMTString();  // deprecated! use toUTCString()
+
+console.log(str);               // Mon, 18 Dec 1995 17:28:35 GMT</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-date.prototype.togmtstring">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-date.prototype.togmtstring</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>toGMTString</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="tolocaledatestring"><code>Date.prototype.toLocaleDateString()</code></a></li>
+<li><a href="totimestring"><code>Date.prototype.toTimeString()</code></a></li>
+<li><a href="toutcstring"><code>Date.prototype.toUTCString()</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toGMTString" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toGMTString</a></p>
+</body>
+</html>

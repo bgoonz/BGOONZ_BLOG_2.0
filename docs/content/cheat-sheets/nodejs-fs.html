@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>fs</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">fs</h1>
+</header>
+<h3 id="reading">Reading</h3>
+<pre><code>fs.readFile(&#39;file.txt&#39;, function(err, data) { .. });
+fs.readFile(&#39;file.txt&#39;, {encoding: &#39;utf-8&#39;}, function(err, data) { .. });</code></pre>
+<h3 id="writing">Writing</h3>
+<pre><code>fs.writeFile(&#39;output.txt&#39;, function(err) { .. });
+fs.appendFile(&#39;output.txt&#39;, function(err) { .. });</code></pre>
+<h3 id="watch">Watch</h3>
+<pre><code>fs.watch(&#39;dir OR file.txt&#39;, { persistent: true }, function(event, file) {
+  event; /* rename | change */
+});</code></pre>
+<h3 id="getting-info">Getting info</h3>
+<pre><code>fs.exists(&#39;file.txt&#39;, function(exists /*bool*/) { ... });
+
+fs.stat(&#39;file.txt&#39;, function(stats) {
+  stats.isFile();
+  stats.isDirectory();
+  stats.isSymbolicLink();
+});</code></pre>
+<h3 id="file-operations">File operations</h3>
+<pre><code>fs.rename(&#39;old.txt&#39;, &#39;new.txt&#39;, function(){});
+fs.chown(&#39;file.txt&#39;, uid, gid, function(){});
+fs.symlink(&#39;src&#39;, &#39;dest&#39;, function(){});
+fs.unlink(&#39;path&#39;, function(){});
+fs.rmdir(&#39;path&#39;, function(){});
+
+fs.readdir(&#39;path&#39;, function(err, files) { .. }); /* `files` = array of names */</code></pre>
+<h3 id="path">Path</h3>
+<pre><code>fs.realpath(&#39;/etc/passwd&#39;, function(err, path) { /* &quot;/private/etc/passwd&quot; */ });</code></pre>
+<h3 id="sync">Sync</h3>
+<pre><code>data = fs.readFileSync(&#39;input.txt&#39;);
+fs.writeFileSync(&#39;output.txt&#39;, data);
+fs.appendFileSync(&#39;output.txt&#39;, data);
+fs.existsSync(&#39;file.txt&#39;);</code></pre>
+<h3 id="references">References</h3>
+<ul>
+<li>http://nodejs.org/api/fs.html</li>
+</ul>
+</body>
+</html>

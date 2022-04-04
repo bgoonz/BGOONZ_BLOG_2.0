@@ -1,127 +1,79 @@
----
-title: title
-subtitle: subtitle
-date: '2022-01-03'
-thumb_img_alt: lorem-ipsum
-content_img_alt: lorem-ipsum
-excerpt: lorem-ipsum
-seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
-template: post
-thumb_img_path: images/css-72a655a7.jpg
----
+subtitle
 
----
+2022-01-03
 
-title: Bulma
-category: CSS
+------------------------------------------------------------------------
 
-prism_languages: [css, html]
-weight: -1
-authors:
+title: Bulma category: CSS
 
--   github: benolot
-    description: |
-    Basic guide on how to use Bulma, the lightweight css flexbox framework.
+prism\_languages: \[css, html\] weight: -1 authors:
 
----
+-   github: benolot description: | Basic guide on how to use Bulma, the lightweight css flexbox framework.
+
+------------------------------------------------------------------------
 
 ### Screen sizes
 
-```
-         768         1024                1216         1408
-'     '     '     '     '     '     '     '     '     '     '     '
-<---------^------------^------------------^-------------^------------->
-  mobile      tablet         desktop         widescreen      fullhd
-```
+             768         1024                1216         1408
+    '     '     '     '     '     '     '     '     '     '     '     '
+    <---------^------------^------------------^-------------^------------->
+      mobile      tablet         desktop         widescreen      fullhd
 
 ### Columns
 
-```css
-.container
-```
+    .container
 
-Wrap as many `.column`'s' as you like in a `.columns` wrapper
+Wrap as many `.column`‘s’ as you like in a `.columns` wrapper
 
-```html
-<div class="columns">
-    <div class="column"></div>
-    <div class="column"></div>
-    <div class="column"></div>
-    <div class="column"></div>
-    <div class="column"></div>
-</div>
-```
+    <div class="columns">
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="column"></div>
+    </div>
 
 ### Modifiers
 
 The following CSS classes affect the **colour**.
 
-```css
-.is-primary .is-link .is-info .is-success .is-warning .is-danger;
-```
+    .is-primary .is-link .is-info .is-success .is-warning .is-danger;
 
 The following classes modify the **size**.
 
-```css
-.is-small .is-medium .is-large;
-```
+    .is-small .is-medium .is-large;
 
 The following classes modify the **state**.
 
-```scss
-.is-outlined
-.is-loading
-```
+    .is-outlined
+    .is-loading
 
 ### Typography Helpers
 
 The following classes modify the **font-size**
 
-| Class        | Font-size |
-| ------------ | --------- |
-| `.is-size-1` | 3rem      |
-| `.is-size-2` | 2.5rem    |
-| `.is-size-3` | 2rem      |
-| `.is-size-4` | 1.5rem    |
-| `.is-size-5` | 1.25rem   |
-| `.is-size-6` | 1rem      |
-| `.is-size-7` | 0.75rem   |
+<table><thead><tr class="header"><th>Class</th><th>Font-size</th></tr></thead><tbody><tr class="odd"><td><code>.is-size-1</code></td><td>3rem</td></tr><tr class="even"><td><code>.is-size-2</code></td><td>2.5rem</td></tr><tr class="odd"><td><code>.is-size-3</code></td><td>2rem</td></tr><tr class="even"><td><code>.is-size-4</code></td><td>1.5rem</td></tr><tr class="odd"><td><code>.is-size-5</code></td><td>1.25rem</td></tr><tr class="even"><td><code>.is-size-6</code></td><td>1rem</td></tr><tr class="odd"><td><code>.is-size-7</code></td><td>0.75rem</td></tr></tbody></table>
 
 The following classes **align** the text
 
-| Class                 | Alignment                             |
-| --------------------- | ------------------------------------- |
-| `.has-text-centered`  | Makes the text **centered**           |
-| `.has-text-justified` | Makes the text **justified**          |
-| `.has-text-left`.     | Makes the text align to the **left**  |
-| `.has-text-right`     | Makes the text align to the **right** |
+<table><thead><tr class="header"><th>Class</th><th>Alignment</th></tr></thead><tbody><tr class="odd"><td><code>.has-text-centered</code></td><td>Makes the text <strong>centered</strong></td></tr><tr class="even"><td><code>.has-text-justified</code></td><td>Makes the text <strong>justified</strong></td></tr><tr class="odd"><td><code>.has-text-left</code>.</td><td>Makes the text align to the <strong>left</strong></td></tr><tr class="even"><td><code>.has-text-right</code></td><td>Makes the text align to the <strong>right</strong></td></tr></tbody></table>
 
 The following classes **transform** the text
 
-| Class             | Transformation                                                   |
-| ----------------- | ---------------------------------------------------------------- |
-| `.is-capitalized` | Transforms the **first character** of each word to **uppercase** |
-| `.is-lowercase`   | Transforms **all** characters to **lowercase**                   |
-| `.is-uppercase`   | Transforms **all** characters to **uppercase**                   |
+<table><thead><tr class="header"><th>Class</th><th>Transformation</th></tr></thead><tbody><tr class="odd"><td><code>.is-capitalized</code></td><td>Transforms the <strong>first character</strong> of each word to <strong>uppercase</strong></td></tr><tr class="even"><td><code>.is-lowercase</code></td><td>Transforms <strong>all</strong> characters to <strong>lowercase</strong></td></tr><tr class="odd"><td><code>.is-uppercase</code></td><td>Transforms <strong>all</strong> characters to <strong>uppercase</strong></td></tr></tbody></table>
 
 ### WYSIWYG Content
 
-```html
-<div class="content">
-    <!-- start WYSIWYG contents -->
-    <h1>Heading</h1>
-    <p>Paragraph</p>
+    <div class="content">
+        <!-- start WYSIWYG contents -->
+        <h1>Heading</h1>
+        <p>Paragraph</p>
 
-    <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
-    </ul>
-    <!-- end WYSIWYG contents -->
-</div>
-```
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ul>
+        <!-- end WYSIWYG contents -->
+    </div>
 
 To provide default stylings for commonly generated WYSIWYG contents, use the `.content` class.

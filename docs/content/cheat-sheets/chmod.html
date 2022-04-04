@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2022-01-03" />
+  <title>title</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">title</h1>
+<p class="subtitle">subtitle</p>
+<p class="date">2022-01-03</p>
+</header>
+<h1 id="add-execute-for-all-myscript.sh">Add execute for all (myscript.sh)</h1>
+<p>chmod a+x myscript.sh</p>
+<h1 id="set-user-to-readwriteexecute-groupglobal-to-read-only-myscript.sh-symbolic-mode">Set user to read/write/execute, group/global to read only (myscript.sh), symbolic mode</h1>
+<p>chmod u=rwx, go=r myscript.sh</p>
+<h1 id="remove-write-from-usergroupglobal-myscript.sh-symbolic-mode">Remove write from user/group/global (myscript.sh), symbolic mode</h1>
+<p>chmod a-w myscript.sh</p>
+<h1 id="remove-readwriteexecute-from-usergroupglobal-myscript.sh-symbolic-mode">Remove read/write/execute from user/group/global (myscript.sh), symbolic mode</h1>
+<p>chmod = myscript.sh</p>
+<h1 id="set-user-to-readwrite-and-groupglobal-read-myscript.sh-octal-notation">Set user to read/write and group/global read (myscript.sh), octal notation</h1>
+<p>chmod 644 myscript.sh</p>
+<h1 id="set-user-to-readwriteexecute-and-groupglobal-readexecute-myscript.sh-octal-notation">Set user to read/write/execute and group/global read/execute (myscript.sh), octal notation</h1>
+<p>chmod 755 myscript.sh</p>
+<h1 id="set-usergroupglobal-to-readwrite-myscript.sh-octal-notation">Set user/group/global to read/write (myscript.sh), octal notation</h1>
+<p>chmod 666 myscript.sh</p>
+<h1 id="roles">Roles</h1>
+<p>u - user (owner of the file) g - group (members of file’s group) o - global (all users who are not owner and not part of group) a - all (all 3 roles above)</p>
+<h1 id="numeric-representations">Numeric representations</h1>
+<p>7 - full (rwx) 6 - read and write (rw-) 5 - read and execute (r-x) 4 - read only (r–) 3 - write and execute (-wx) 2 - write only (-w-) 1 - execute only (–x) 0 - none (—)</p>
+</body>
+</html>

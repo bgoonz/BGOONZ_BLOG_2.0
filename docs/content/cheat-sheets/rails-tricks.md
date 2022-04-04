@@ -1,8 +1,3 @@
----
-title: Rails tricks
-category: Rails
----
-
 in config/environments/development.rb:
 
     # Source maps for Sass
@@ -48,7 +43,7 @@ Distinct pluck:
 
     Article.distinct.pluck('author')
 
-Relation#merge
+Relation\#merge
 
     scope :with_drafts, -> {
       uniq.joins(:articles).merge(Article.draft)

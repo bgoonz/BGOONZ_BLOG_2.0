@@ -1,8 +1,10 @@
-# Function.prototype.apply()
+Function.prototype.apply()
+==========================
 
 The `apply()` method calls a function with a given `this` value, and `arguments` provided as an array (or an [array-like object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Indexed_collections#working_with_array-like_objects)).
 
-## Syntax
+Syntax
+------
 
     apply(thisArg)
     apply(thisArg, argsArray)
@@ -23,7 +25,8 @@ Starting with ECMAScript 5 these arguments can be a generic array-like object in
 
 The result of calling the function with the specified `this` value and arguments.
 
-## Description
+Description
+-----------
 
 **Note:** While the syntax of this function is almost identical to that of [`call()`](call), the fundamental difference is that `call()` accepts an **argument list**, while `apply()` accepts a **single array of arguments**.
 
@@ -35,11 +38,12 @@ You can assign a different `this` object when calling an existing function. `thi
 
 You can also use [`arguments`](../../functions/arguments) for the `argsArray` parameter. [`arguments`](../../functions/arguments) is a local variable of a function. It can be used for all unspecified arguments of the called object. Thus, you do not have to know the arguments of the called object when you use the `apply` method. You can use `arguments` to pass all the arguments to the called object. The called object is then responsible for handling the arguments.
 
-Since ECMAScript 5<sup>th</sup> Edition, you can also use any kind of object which is array-like. In practice, this means it's going to have a `length` property, and integer ("index") properties in the range `(0..length - 1)`. For example, you could use a [`NodeList`](https://developer.mozilla.org/en-US/docs/Web/API/NodeList), or a custom object like `{ 'length': 2, '0': 'eat', '1': 'bananas' }`.
+Since ECMAScript 5<sup>th</sup> Edition, you can also use any kind of object which is array-like. In practice, this means it’s going to have a `length` property, and integer (“index”) properties in the range `(0..length - 1)`. For example, you could use a [`NodeList`](https://developer.mozilla.org/en-US/docs/Web/API/NodeList), or a custom object like `{ 'length': 2, '0': 'eat', '1': 'bananas' }`.
 
-**Note:** Many older browsers—including Chrome &lt;17 and Internet Explorer &lt;9—don't accept array-like objects, and will throw an exception.
+**Note:** Many older browsers—including Chrome &lt;17 and Internet Explorer &lt;9—don’t accept array-like objects, and will throw an exception.
 
-## Examples
+Examples
+--------
 
 ### Using apply to append an array to another
 
@@ -47,9 +51,9 @@ You can use `push` to append an element to an array. And, because `push` accepts
 
 But, if you pass an array to `push`, it will actually add that array as a single element, instead of adding the elements individually. So you end up with an array inside an array.
 
-What if that is not what you want? `concat` does have the desired behavior in this case, but it does not append to the _existing_ array—it instead creates and returns a new array.
+What if that is not what you want? `concat` does have the desired behavior in this case, but it does not append to the *existing* array—it instead creates and returns a new array.
 
-But you wanted to append to the existing array... So what now? Write a loop? Surely not?
+But you wanted to append to the existing array… So what now? Write a loop? Surely not?
 
 `apply` to the rescue!
 
@@ -86,7 +90,7 @@ As an example, here are `Math.max`/`Math.min`, used to find out the maximum/mini
       }
     }
 
-But beware: by using `apply` this way, you run the risk of exceeding the JavaScript engine's argument length limit. The consequences of applying a function with too many arguments (that is, more than tens of thousands of arguments) varies across engines. (The JavaScriptCore engine has hard-coded [argument limit of 65536](https://bugs.webkit.org/show_bug.cgi?id=80797).
+But beware: by using `apply` this way, you run the risk of exceeding the JavaScript engine’s argument length limit. The consequences of applying a function with too many arguments (that is, more than tens of thousands of arguments) varies across engines. (The JavaScriptCore engine has hard-coded [argument limit of 65536](https://bugs.webkit.org/show_bug.cgi?id=80797).
 
 This is because the limit (and indeed, even the nature of any excessively-large-stack behavior) is unspecified. Some engines will throw an exception. More perniciously, others will arbitrarily limit the number of arguments actually passed to the applied function. To illustrate this latter case: if such an engine had a limit of four arguments (actual limits are of course significantly higher), it would be as if the arguments `5, 6, 2, 3` had been passed to `apply` in the examples above, rather than the full array.
 

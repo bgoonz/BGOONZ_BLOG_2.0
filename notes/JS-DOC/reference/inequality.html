@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>inequality</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="inequality">Inequality (!=)</h1>
+<p>The inequality operator (<code>!=</code>) checks whether its two operands are not equal, returning a Boolean result. Unlike the <a href="strict_inequality">strict inequality</a> operator, it attempts to convert and compare operands that are of different types.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>x != y</code></pre>
+<h2 id="description">Description</h2>
+<p>The inequality operator checks whether its operands are not equal. It is the negation of the <a href="equality">equality</a> operator so the following two lines will always give the same result:</p>
+<pre><code>x != y
+
+!(x == y)</code></pre>
+<p>For details of the comparison algorithm, see the page for the <a href="equality">equality</a> operator.</p>
+<p>Like the equality operator, the inequality operator will attempt to convert and compare operands of different types:</p>
+<pre><code>3 != &quot;3&quot;; // false</code></pre>
+<p>To prevent this, and require that different types are considered to be different, use the <a href="strict_inequality">strict inequality</a> operator instead:</p>
+<pre><code>3 !== &quot;3&quot;; // true</code></pre>
+<h2 id="examples">Examples</h2>
+<h3 id="comparison-with-no-type-conversion">Comparison with no type conversion</h3>
+<pre><code>1 != 2;              // true
+&quot;hello&quot; != &quot;hola&quot;;   // true
+
+1 != 1;              // false
+&quot;hello&quot; != &quot;hello&quot;;  // false</code></pre>
+<h3 id="comparison-with-type-conversion">Comparison with type conversion</h3>
+<pre><code>&quot;1&quot; !=  1;            // false
+1 != &quot;1&quot;;             // false
+0 != false;           // false
+0 != null;            // true
+0 != undefined;       // true
+0 != !!null;          // false, look at Logical NOT operator
+0 != !!undefined;     // false, look at Logical NOT operator
+null != undefined;    // false
+
+const number1 = new Number(3);
+const number2 = new Number(3);
+number1 != 3;         // false
+number1 != number2;   // true</code></pre>
+<h3 id="comparison-of-objects">Comparison of objects</h3>
+<pre><code>const object1 = {&quot;key&quot;: &quot;value&quot;}
+const object2 = {&quot;key&quot;: &quot;value&quot;};
+
+object1 != object2 // true
+object2 != object2 // false</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-equality-operators">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-equality-operators</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>Inequality</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="equality">Equality operator</a></li>
+<li><a href="strict_equality">Strict equality operator</a></li>
+<li><a href="strict_inequality">Strict inequality operator</a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Inequality" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Inequality</a></p>
+</body>
+</html>

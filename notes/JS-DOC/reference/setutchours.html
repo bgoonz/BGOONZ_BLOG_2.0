@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>setutchours</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="date.prototype.setutchours">Date.prototype.setUTCHours()</h1>
+<p>The <code>setUTCHours()</code> method sets the hour for a specified date according to universal time, and returns the number of milliseconds since January 1, 1970 00:00:00 UTC until the time represented by the updated <a href="../date"><code>Date</code></a> instance.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>setUTCHours(hoursValue)
+setUTCHours(hoursValue, minutesValue)
+setUTCHours(hoursValue, minutesValue, secondsValue)
+setUTCHours(hoursValue, minutesValue, secondsValue, msValue)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>hoursValue</code><br />
+An integer between 0 and 23, representing the hour.</p>
+<p><code>minutesValue</code><br />
+Optional. An integer between 0 and 59, representing the minutes.</p>
+<p><code>secondsValue</code><br />
+Optional. An integer between 0 and 59, representing the seconds. If you specify the <code>secondsValue</code> parameter, you must also specify the <code>minutesValue</code>.</p>
+<p><code>msValue</code><br />
+Optional. A number between 0 and 999, representing the milliseconds. If you specify the <code>msValue</code> parameter, you must also specify the <code>minutesValue</code> and <code>secondsValue</code>.</p>
+<h3 id="return-value">Return value</h3>
+<p>The number of milliseconds between January 1, 1970 00:00:00 UTC and the updated date.</p>
+<h2 id="description">Description</h2>
+<p>If you do not specify the <code>minutesValue</code>, <code>secondsValue</code>, and <code>msValue</code> parameters, the values returned from the <a href="getutcminutes"><code>getUTCMinutes()</code></a>, <a href="getutcseconds"><code>getUTCSeconds()</code></a>, and <a href="getutcmilliseconds"><code>getUTCMilliseconds()</code></a> methods are used.</p>
+<p>If a parameter you specify is outside of the expected range, <code>setUTCHours()</code> attempts to update the date information in the <a href="../date"><code>Date</code></a> object accordingly. For example, if you use 100 for <code>secondsValue</code>, the minutes will be incremented by 1 (<code>minutesValue + 1</code>), and 40 will be used for seconds.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-setutchours">Using setUTCHours()</h3>
+<pre><code>var theBigDay = new Date();
+theBigDay.setUTCHours(8);</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-date.prototype.setutchours">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-date.prototype.setutchours</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>setUTCHours</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>4</p>
+<p>4</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="getutchours"><code>Date.prototype.getUTCHours()</code></a></li>
+<li><a href="sethours"><code>Date.prototype.setHours()</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCHours" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCHours</a></p>
+</body>
+</html>

@@ -1,22 +1,21 @@
 -   /en/binding-objects-to-functions/
 
----
+------------------------------------------------------------------------
 
-More than often, we need to bind an object to a function's this object. JS uses the bind method when this is specified explicitly and we need to invoke desired method.
+More than often, we need to bind an object to a function’s this object. JS uses the bind method when this is specified explicitly and we need to invoke desired method.
 
 ### Bind syntax
 
-```js
-fun.bind(thisArg[, arg1[, arg2[, ...]]])
-```
+    fun.bind(thisArg[, arg1[, arg2[, ...]]])
 
-## Parameters
+Parameters
+----------
 
 **thisArg**
 
 `this` parameter value to be passed to target function while calling the `bound` function.
 
-**arg1, arg2, ...**
+**arg1, arg2, …**
 
 Prepended arguments to be passed to the `bound` function while invoking the target function.
 
@@ -26,31 +25,29 @@ A copy of the given function along with the specified `this` value and initial a
 
 ### Bind method in action in JS
 
-```js
-const myCar = {
-    brand: 'Ford',
-    type: 'Sedan',
-    color: 'Red'
-};
+    const myCar = {
+        brand: 'Ford',
+        type: 'Sedan',
+        color: 'Red'
+    };
 
-const getBrand = function () {
-    console.log(this.brand);
-};
+    const getBrand = function () {
+        console.log(this.brand);
+    };
 
-const getType = function () {
-    console.log(this.type);
-};
+    const getType = function () {
+        console.log(this.type);
+    };
 
-const getColor = function () {
-    console.log(this.color);
-};
+    const getColor = function () {
+        console.log(this.color);
+    };
 
-getBrand(); // object not bind,undefined
+    getBrand(); // object not bind,undefined
 
-getBrand(myCar); // object not bind,undefined
+    getBrand(myCar); // object not bind,undefined
 
-getType.bind(myCar)(); // Sedan
+    getType.bind(myCar)(); // Sedan
 
-let boundGetColor = getColor.bind(myCar);
-boundGetColor(); // Red
-```
+    let boundGetColor = getColor.bind(myCar);
+    boundGetColor(); // Red

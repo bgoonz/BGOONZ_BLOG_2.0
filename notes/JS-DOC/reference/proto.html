@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>proto</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="object.prototype.__proto__">Object.prototype.__proto__</h1>
+<p><strong>Deprecated</strong></p>
+<p>This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see the <a href="#browser_compatibility">compatibility table</a> at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time.</p>
+<p><strong>Warning:</strong> Changing the <code>[[Prototype]]</code> of an object is, by the nature of how modern JavaScript engines optimize property accesses, a very slow operation, in <strong><em>every</em></strong> browser and JavaScript engine. The effects on the performance of altering inheritance are subtle and far-flung, and are not limited to the time spent in <code>obj.__proto__ = ...</code> statements, but may extend to <strong><em>any</em></strong> code that has access to <strong><em>any</em></strong> object whose <code>[[Prototype]]</code> has been altered. If you care about performance you should avoid setting the <code>[[Prototype]]</code> of an object. Instead, create a new object with the desired <code>[[Prototype]]</code> using <a href="create"><code>Object.create()</code></a>.</p>
+<p><strong>Warning:</strong> While <code>Object.prototype.__proto__</code> is supported today in most browsers, its existence and exact behavior has only been standardized in the ECMAScript 2015 specification as a legacy feature to ensure compatibility for web browsers. For better support, use <a href="getprototypeof"><code>Object.getPrototypeOf()</code></a> instead.</p>
+<p>The <code>__proto__</code> property of <a href="../object"><code>Object.prototype</code></a> is an accessor property (a getter function and a setter function) that exposes the internal <code>[[Prototype]]</code> (either an object or <a href="../null"><code>null</code></a>) of the object through which it is accessed.</p>
+<p>The use of <code>__proto__</code> is controversial and discouraged. It was never originally included in the ECMAScript language spec, but modern browsers implemented it anyway. Only recently was the <code>__proto__</code> property standardized by the ECMAScript 2015 specification for compatibility with web browsers, so it will be supported into the future. It is deprecated in favor of <a href="getprototypeof"><code>Object.getPrototypeOf</code></a>/<a href="../reflect/getprototypeof"><code>Reflect.getPrototypeOf</code></a> and <a href="setprototypeof"><code>Object.setPrototypeOf</code></a>/<a href="../reflect/setprototypeof"><code>Reflect.setPrototypeOf</code></a> (though still, setting the <code>[[Prototype]]</code> of an object is a slow operation that should be avoided if performance is a concern).</p>
+<p>The <code>__proto__</code> property can also be used in an object literal definition to set the object <code>[[Prototype]]</code> on creation, as an alternative to <a href="create"><code>Object.create()</code></a>. See: <a href="../../operators/object_initializer">object initializer / literal syntax</a>.</p>
+<h2 id="description">Description</h2>
+<p>The <code>__proto__</code> getter function exposes the value of the internal <code>[[Prototype]]</code> of an object. For objects created using an object literal, this value is <a href="../object"><code>Object.prototype</code></a>. For objects created using array literals, this value is <span class="page-not-created"><code>Array.prototype</code></span>. For functions, this value is <a href="../function"><code>Function.prototype</code></a>. For objects created using <code>new fun</code>, where <code>fun</code> is one of the built-in constructor functions provided by JavaScript (<a href="../array"><code>Array</code></a>, <a href="../boolean"><code>Boolean</code></a>, <a href="../date"><code>Date</code></a>, <a href="../number"><code>Number</code></a>, <a href="../object"><code>Object</code></a>, <a href="../string"><code>String</code></a>, and so on — including new constructors added as JavaScript evolves), this value is always <code>fun.prototype</code>. For objects created using <code>new fun</code>, where <code>fun</code> is a function defined in a script, this value is the value of <code>fun.prototype</code>. (That is, if the constructor didn’t return an other object explicitly, or the <code>fun.prototype</code> has been reassigned since the instance was created.)</p>
+<p>The <code>__proto__</code> setter allows the <code>[[Prototype]]</code> of an object to be mutated. The object must be extensible according to <a href="isextensible"><code>Object.isExtensible()</code></a>: if it is not, a <a href="../typeerror"><code>TypeError</code></a> is thrown. The value provided must be an object or <a href="../null"><code>null</code></a>. Providing any other value will do nothing.</p>
+<p>To understand how prototypes are used for inheritance, see guide article <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain">Inheritance and the prototype chain</a>.</p>
+<p>The <code>__proto__</code> property is a simple accessor property on <a href="../object"><code>Object.prototype</code></a> consisting of a getter and setter function. A property access for <code>__proto__</code> that eventually consults <a href="../object"><code>Object.prototype</code></a> will find this property, but an access that does not consult <a href="../object"><code>Object.prototype</code></a> will not. If some other <code>__proto__</code> property is found before <a href="../object"><code>Object.prototype</code></a> is consulted, that property will hide the one found on <a href="../object"><code>Object.prototype</code></a>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-__proto__">Using __proto__</h3>
+<pre><code>function Circle() {}
+const shape = {};
+const circle = new Circle();
+
+// Set the object prototype.
+// DEPRECATED. This is for example purposes only. DO NOT DO THIS in real code.
+shape.__proto__ = circle;
+
+// Get the object prototype
+console.log(shape.__proto__ === Circle);  // false
+
+const ShapeA = function () {};
+const ShapeB = {
+    a() {
+        console.log(&#39;aaa&#39;);
+    }
+};
+console.log(ShapeA.prototype.__proto__ = ShapeB);
+
+const shapea = new ShapeA();
+shapea.a(); // aaa
+console.log(ShapeA.prototype === shapea.__proto__); // true
+
+// or
+const ShapeC = function () {};
+const ShapeD = {
+    a() {
+        console.log(&#39;a&#39;);
+    }
+};
+
+const shapeC = new ShapeC();
+shapeC.__proto__ = ShapeD;
+shapeC.a(); // a
+console.log(ShapeC.prototype === shapeC.__proto__); // false
+
+// or
+function Test() {}
+Test.prototype.myname = function () {
+    console.log(&#39;myname&#39;);
+};
+
+const a = new Test();
+console.log(a.__proto__ === Test.prototype); // true
+a.myname(); // myname
+
+// or
+const fn = function () {};
+fn.prototype.myname = function () {
+    console.log(&#39;myname&#39;);
+};
+
+var obj = {
+    __proto__: fn.prototype
+};
+
+obj.myname(); // myname</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-additional-properties-of-the-object.prototype-object">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-additional-properties-of-the-object.prototype-object</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>proto</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>11</p>
+<p>10.5</p>
+<p>3</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>11</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="isprototypeof"><code>Object.prototype.isPrototypeOf()</code></a></li>
+<li><a href="getprototypeof"><code>Object.getPrototypeOf()</code></a></li>
+<li><a href="setprototypeof"><code>Object.setPrototypeOf()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto</a></p>
+</body>
+</html>

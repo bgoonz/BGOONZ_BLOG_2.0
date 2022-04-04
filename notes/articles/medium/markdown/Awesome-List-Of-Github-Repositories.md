@@ -1,19 +1,19 @@
-# Awesome List Of Github Repositories
+Awesome List Of Github Repositories
+===================================
 
 Platforms
 
----
+------------------------------------------------------------------------
 
 ### Awesome List Of Github Repositories
 
-<a href="https://github.com/bgoonz/awesome-4-new-developers" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/awesome-4-new-developers"><strong>GitHub - bgoonz/awesome-4-new-developers: Top repos for new developers all in one place</strong>
-<br/>
+**GitHub - bgoonz/awesome-4-new-developers: Top repos for new developers all in one place**  
 
-<em>Top repos for new developers all in one place. Contribute to bgoonz/awesome-4-new-developers development by creating an…</em>github.com</a><a href="https://github.com/bgoonz/awesome-4-new-developers" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Top repos for new developers all in one place. Contribute to bgoonz/awesome-4-new-developers development by creating an…*github.com<a href="https://github.com/bgoonz/awesome-4-new-developers" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*PcwyXaMACrHUVng8" class="graf-image" /></figure>### Platforms
 
--   <span id="3a70"><a href="https://github.com/sindresorhus/awesome-nodejs#readme" class="markup--anchor markup--li-anchor" title="https://github.com/sindresorhus/awesome-nodejs#readme">Node.js</a> — Async non-blocking event-driven JavaScript runtime built on Chrome's V8 JavaScript engine.</span>
+-   <span id="3a70"><a href="https://github.com/sindresorhus/awesome-nodejs#readme" class="markup--anchor markup--li-anchor" title="https://github.com/sindresorhus/awesome-nodejs#readme">Node.js</a> — Async non-blocking event-driven JavaScript runtime built on Chrome’s V8 JavaScript engine.</span>
 -   <span id="598d"><a href="https://github.com/bcoe/awesome-cross-platform-nodejs#readme" class="markup--anchor markup--li-anchor" title="https://github.com/bcoe/awesome-cross-platform-nodejs#readme">Cross-Platform</a> — Writing cross-platform code on Node.js.</span>
 -   <span id="2c69"><a href="https://github.com/dypsilon/frontend-dev-bookmarks#readme" class="markup--anchor markup--li-anchor" title="https://github.com/dypsilon/frontend-dev-bookmarks#readme">Frontend Development</a></span>
 -   <span id="8cf1"><a href="https://github.com/vsouza/awesome-ios#readme" class="markup--anchor markup--li-anchor" title="https://github.com/vsouza/awesome-ios#readme">iOS</a> — Mobile operating system for Apple phones and tablets.</span>
@@ -27,7 +27,7 @@ Platforms
 -   <span id="5845"><a href="https://github.com/Friz-zy/awesome-linux-containers#readme" class="markup--anchor markup--li-anchor" title="https://github.com/Friz-zy/awesome-linux-containers#readme">Containers</a></span>
 -   <span id="8f04"><a href="https://github.com/zoidbergwill/awesome-ebpf#readme" class="markup--anchor markup--li-anchor" title="https://github.com/zoidbergwill/awesome-ebpf#readme">eBPF</a> — Virtual machine that allows you to write more efficient and powerful tracing and monitoring for Linux systems.</span>
 -   <span id="07e4"><a href="https://github.com/PandaFoss/Awesome-Arch#readme" class="markup--anchor markup--li-anchor" title="https://github.com/PandaFoss/Awesome-Arch#readme">Arch-based Projects</a> — Linux distributions and projects based on Arch Linux.</span>
--   <span id="360a"><a href="https://github.com/iCHAIT/awesome-macOS#readme" class="markup--anchor markup--li-anchor" title="https://github.com/iCHAIT/awesome-macOS#readme">macOS</a> — Operating system for Apple's Mac computers.</span>
+-   <span id="360a"><a href="https://github.com/iCHAIT/awesome-macOS#readme" class="markup--anchor markup--li-anchor" title="https://github.com/iCHAIT/awesome-macOS#readme">macOS</a> — Operating system for Apple’s Mac computers.</span>
 -   <span id="4017"><a href="https://github.com/herrbischoff/awesome-macos-command-line#readme" class="markup--anchor markup--li-anchor" title="https://github.com/herrbischoff/awesome-macos-command-line#readme">Command-Line</a></span>
 -   <span id="aeef"><a href="https://github.com/agarrharr/awesome-macos-screensavers#readme" class="markup--anchor markup--li-anchor" title="https://github.com/agarrharr/awesome-macos-screensavers#readme">Screensavers</a></span>
 -   <span id="8513"><a href="https://github.com/jaywcjlove/awesome-mac#readme" class="markup--anchor markup--li-anchor" title="https://github.com/jaywcjlove/awesome-mac#readme">Apps</a></span>
@@ -52,7 +52,7 @@ Platforms
 -   <span id="735d"><a href="https://github.com/ironcev/awesome-roslyn#readme" class="markup--anchor markup--li-anchor" title="https://github.com/ironcev/awesome-roslyn#readme">Roslyn</a> — Open-source compilers and code analysis APIs for C\# and <a href="http://VB.NET" class="markup--anchor markup--li-anchor" title="http://VB.NET">VB.NET</a> languages.</span>
 -   <span id="d9d6"><a href="https://github.com/miguelmota/awesome-amazon-alexa#readme" class="markup--anchor markup--li-anchor" title="https://github.com/miguelmota/awesome-amazon-alexa#readme">Amazon Alexa</a> — Virtual home assistant.</span>
 -   <span id="e5f1"><a href="https://github.com/jonleibowitz/awesome-digitalocean#readme" class="markup--anchor markup--li-anchor" title="https://github.com/jonleibowitz/awesome-digitalocean#readme">DigitalOcean</a> — Cloud computing platform designed for developers.</span>
--   <span id="b080"><a href="https://github.com/Solido/awesome-flutter#readme" class="markup--anchor markup--li-anchor" title="https://github.com/Solido/awesome-flutter#readme">Flutter</a> — Google's mobile SDK for building native iOS and Android apps from a single codebase written in Dart.</span>
+-   <span id="b080"><a href="https://github.com/Solido/awesome-flutter#readme" class="markup--anchor markup--li-anchor" title="https://github.com/Solido/awesome-flutter#readme">Flutter</a> — Google’s mobile SDK for building native iOS and Android apps from a single codebase written in Dart.</span>
 -   <span id="e962"><a href="https://github.com/frenck/awesome-home-assistant#readme" class="markup--anchor markup--li-anchor" title="https://github.com/frenck/awesome-home-assistant#readme">Home Assistant</a> — Open source home automation that puts local control and privacy first.</span>
 -   <span id="c8f1"><a href="https://github.com/victorshinya/awesome-ibmcloud#readme" class="markup--anchor markup--li-anchor" title="https://github.com/victorshinya/awesome-ibmcloud#readme">IBM Cloud</a> — Cloud platform for developers and companies.</span>
 -   <span id="2bef"><a href="https://github.com/jthegedus/awesome-firebase#readme" class="markup--anchor markup--li-anchor" title="https://github.com/jthegedus/awesome-firebase#readme">Firebase</a> — App development platform built on Google Cloud Platform.</span>
@@ -84,7 +84,7 @@ Platforms
 -   <span id="48bb"><a href="https://github.com/RyanZim/awesome-npm-scripts#readme" class="markup--anchor markup--li-anchor" title="https://github.com/RyanZim/awesome-npm-scripts#readme">npm scripts</a> — Task runner.</span>
 -   <span id="32ae"><a href="https://github.com/30-seconds/30-seconds-of-code#readme" class="markup--anchor markup--li-anchor" title="https://github.com/30-seconds/30-seconds-of-code#readme">30 Seconds of Code</a> — Code snippets you can understand in 30 seconds.</span>
 -   <span id="df31"><a href="https://github.com/Richienb/awesome-ponyfills#readme" class="markup--anchor markup--li-anchor" title="https://github.com/Richienb/awesome-ponyfills#readme">Ponyfills</a> — Like polyfills but without overriding native APIs.</span>
--   <span id="b36d"><a href="https://github.com/matteocrippa/awesome-swift#readme" class="markup--anchor markup--li-anchor" title="https://github.com/matteocrippa/awesome-swift#readme">Swift</a> — Apple's compiled programming language that is secure, modern, programmer-friendly, and fast.</span>
+-   <span id="b36d"><a href="https://github.com/matteocrippa/awesome-swift#readme" class="markup--anchor markup--li-anchor" title="https://github.com/matteocrippa/awesome-swift#readme">Swift</a> — Apple’s compiled programming language that is secure, modern, programmer-friendly, and fast.</span>
 -   <span id="56b5"><a href="https://github.com/hsavit1/Awesome-Swift-Education#readme" class="markup--anchor markup--li-anchor" title="https://github.com/hsavit1/Awesome-Swift-Education#readme">Education</a></span>
 -   <span id="393c"><a href="https://github.com/uraimo/Awesome-Swift-Playgrounds#readme" class="markup--anchor markup--li-anchor" title="https://github.com/uraimo/Awesome-Swift-Playgrounds#readme">Playgrounds</a></span>
 -   <span id="ff30"><a href="https://github.com/vinta/awesome-python#readme" class="markup--anchor markup--li-anchor" title="https://github.com/vinta/awesome-python#readme">Python</a> — General-purpose programming language designed for readability.</span>
@@ -118,7 +118,7 @@ Platforms
 -   <span id="5e50"><a href="https://github.com/hachiojipm/awesome-perl#readme" class="markup--anchor markup--li-anchor" title="https://github.com/hachiojipm/awesome-perl#readme">Perl</a></span>
 -   <span id="20ef"><a href="https://github.com/kdabir/awesome-groovy#readme" class="markup--anchor markup--li-anchor" title="https://github.com/kdabir/awesome-groovy#readme">Groovy</a></span>
 -   <span id="75c5"><a href="https://github.com/yissachar/awesome-dart#readme" class="markup--anchor markup--li-anchor" title="https://github.com/yissachar/awesome-dart#readme">Dart</a></span>
--   <span id="327e"><a href="https://github.com/akullpp/awesome-java#readme" class="markup--anchor markup--li-anchor" title="https://github.com/akullpp/awesome-java#readme">Java</a> — Popular secure object-oriented language designed for flexibility to "write once, run anywhere".</span>
+-   <span id="327e"><a href="https://github.com/akullpp/awesome-java#readme" class="markup--anchor markup--li-anchor" title="https://github.com/akullpp/awesome-java#readme">Java</a> — Popular secure object-oriented language designed for flexibility to “write once, run anywhere”.</span>
 -   <span id="aa9a"><a href="https://github.com/eleventigers/awesome-rxjava#readme" class="markup--anchor markup--li-anchor" title="https://github.com/eleventigers/awesome-rxjava#readme">RxJava</a></span>
 -   <span id="44f2"><a href="https://github.com/KotlinBy/awesome-kotlin#readme" class="markup--anchor markup--li-anchor" title="https://github.com/KotlinBy/awesome-kotlin#readme">Kotlin</a></span>
 -   <span id="b8b9"><a href="https://github.com/ocaml-community/awesome-ocaml#readme" class="markup--anchor markup--li-anchor" title="https://github.com/ocaml-community/awesome-ocaml#readme">OCaml</a></span>
@@ -241,7 +241,7 @@ Platforms
 -   <span id="bc45"><a href="https://github.com/gramantin/awesome-rails#readme" class="markup--anchor markup--li-anchor" title="https://github.com/gramantin/awesome-rails#readme">Rails</a> — Web app framework for Ruby.</span>
 -   <span id="9591"><a href="https://github.com/hothero/awesome-rails-gem#readme" class="markup--anchor markup--li-anchor" title="https://github.com/hothero/awesome-rails-gem#readme">Gems</a> — Packages.</span>
 -   <span id="0eb4"><a href="https://github.com/phalcon/awesome-phalcon#readme" class="markup--anchor markup--li-anchor" title="https://github.com/phalcon/awesome-phalcon#readme">Phalcon</a> — PHP framework.</span>
--   <span id="b168"><a href="https://github.com/phanan/htaccess#readme" class="markup--anchor markup--li-anchor" title="https://github.com/phanan/htaccess#readme">Useful </a>`.htaccess` <a href="https://github.com/phanan/htaccess#readme" class="markup--anchor markup--li-anchor" title="https://github.com/phanan/htaccess#readme">Snippets</a></span>
+-   <span id="b168"><a href="https://github.com/phanan/htaccess#readme" class="markup--anchor markup--li-anchor" title="https://github.com/phanan/htaccess#readme">Useful</a> `.htaccess` <a href="https://github.com/phanan/htaccess#readme" class="markup--anchor markup--li-anchor" title="https://github.com/phanan/htaccess#readme">Snippets</a></span>
 -   <span id="5664"><a href="https://github.com/fcambus/nginx-resources#readme" class="markup--anchor markup--li-anchor" title="https://github.com/fcambus/nginx-resources#readme">nginx</a> — Web server.</span>
 -   <span id="c8c5"><a href="https://github.com/stve/awesome-dropwizard#readme" class="markup--anchor markup--li-anchor" title="https://github.com/stve/awesome-dropwizard#readme">Dropwizard</a> — Java framework.</span>
 -   <span id="62b8"><a href="https://github.com/ramitsurana/awesome-kubernetes#readme" class="markup--anchor markup--li-anchor" title="https://github.com/ramitsurana/awesome-kubernetes#readme">Kubernetes</a> — Open-source platform that automates Linux container operations.</span>
@@ -264,7 +264,7 @@ Platforms
 -   <span id="5a39"><a href="https://github.com/josephmisiti/awesome-machine-learning#readme" class="markup--anchor markup--li-anchor" title="https://github.com/josephmisiti/awesome-machine-learning#readme">Machine Learning</a></span>
 -   <span id="84c4"><a href="https://github.com/ujjwalkarn/Machine-Learning-Tutorials#readme" class="markup--anchor markup--li-anchor" title="https://github.com/ujjwalkarn/Machine-Learning-Tutorials#readme">Tutorials</a></span>
 -   <span id="e5db"><a href="https://github.com/arbox/machine-learning-with-ruby#readme" class="markup--anchor markup--li-anchor" title="https://github.com/arbox/machine-learning-with-ruby#readme">ML with Ruby</a> — Learning, implementing, and applying Machine Learning using Ruby.</span>
--   <span id="8670"><a href="https://github.com/likedan/Awesome-CoreML-Models#readme" class="markup--anchor markup--li-anchor" title="https://github.com/likedan/Awesome-CoreML-Models#readme">Core ML Models</a> — Models for Apple's machine learning framework.</span>
+-   <span id="8670"><a href="https://github.com/likedan/Awesome-CoreML-Models#readme" class="markup--anchor markup--li-anchor" title="https://github.com/likedan/Awesome-CoreML-Models#readme">Core ML Models</a> — Models for Apple’s machine learning framework.</span>
 -   <span id="c5ee"><a href="https://github.com/h2oai/awesome-h2o#readme" class="markup--anchor markup--li-anchor" title="https://github.com/h2oai/awesome-h2o#readme">H2O</a> — Open source distributed machine learning platform written in Java with APIs in R, Python, and Scala.</span>
 -   <span id="a5bd"><a href="https://github.com/SE-ML/awesome-seml#readme" class="markup--anchor markup--li-anchor" title="https://github.com/SE-ML/awesome-seml#readme">Software Engineering for Machine Learning</a> — From experiment to production-level machine learning.</span>
 -   <span id="ec21"><a href="https://github.com/georgezouq/awesome-ai-in-finance#readme" class="markup--anchor markup--li-anchor" title="https://github.com/georgezouq/awesome-ai-in-finance#readme">AI in Finance</a> — Solving problems in finance with machine learning.</span>
@@ -598,13 +598,13 @@ Platforms
 -   <span id="691a"><a href="https://github.com/gamontal/awesome-katas#readme" class="markup--anchor markup--li-anchor" title="https://github.com/gamontal/awesome-katas#readme">Katas</a></span>
 -   <span id="bdb1"><a href="https://github.com/drewrwilson/toolsforactivism#readme" class="markup--anchor markup--li-anchor" title="https://github.com/drewrwilson/toolsforactivism#readme">Tools for Activism</a></span>
 -   <span id="64c1"><a href="https://github.com/dylanrees/citizen-science#readme" class="markup--anchor markup--li-anchor" title="https://github.com/dylanrees/citizen-science#readme">Citizen Science</a> — For community-based and non-institutional scientists.</span>
--   <span id="1746"><a href="https://github.com/hobbyquaker/awesome-mqtt#readme" class="markup--anchor markup--li-anchor" title="https://github.com/hobbyquaker/awesome-mqtt#readme">MQTT</a> — "Internet of Things" connectivity protocol.</span>
+-   <span id="1746"><a href="https://github.com/hobbyquaker/awesome-mqtt#readme" class="markup--anchor markup--li-anchor" title="https://github.com/hobbyquaker/awesome-mqtt#readme">MQTT</a> — “Internet of Things” connectivity protocol.</span>
 -   <span id="c7b3"><a href="https://github.com/daviddias/awesome-hacking-locations#readme" class="markup--anchor markup--li-anchor" title="https://github.com/daviddias/awesome-hacking-locations#readme">Hacking Spots</a></span>
 -   <span id="dd14"><a href="https://github.com/cristianoliveira/awesome4girls#readme" class="markup--anchor markup--li-anchor" title="https://github.com/cristianoliveira/awesome4girls#readme">For Girls</a></span>
 -   <span id="d88f"><a href="https://github.com/vorpaljs/awesome-vorpal#readme" class="markup--anchor markup--li-anchor" title="https://github.com/vorpaljs/awesome-vorpal#readme">Vorpal</a> — Node.js CLI framework.</span>
 -   <span id="57a5"><a href="https://github.com/vinjn/awesome-vulkan#readme" class="markup--anchor markup--li-anchor" title="https://github.com/vinjn/awesome-vulkan#readme">Vulkan</a> — Low-overhead, cross-platform 3D graphics and compute API.</span>
 -   <span id="3b41"><a href="https://github.com/egeerardyn/awesome-LaTeX#readme" class="markup--anchor markup--li-anchor" title="https://github.com/egeerardyn/awesome-LaTeX#readme">LaTeX</a> — Typesetting language.</span>
--   <span id="825b"><a href="https://github.com/antontarasenko/awesome-economics#readme" class="markup--anchor markup--li-anchor" title="https://github.com/antontarasenko/awesome-economics#readme">Economics</a> — An economist's starter kit.</span>
+-   <span id="825b"><a href="https://github.com/antontarasenko/awesome-economics#readme" class="markup--anchor markup--li-anchor" title="https://github.com/antontarasenko/awesome-economics#readme">Economics</a> — An economist’s starter kit.</span>
 -   <span id="bbb5"><a href="https://github.com/sublimino/awesome-funny-markov#readme" class="markup--anchor markup--li-anchor" title="https://github.com/sublimino/awesome-funny-markov#readme">Funny Markov Chains</a></span>
 -   <span id="2b74"><a href="https://github.com/danielecook/Awesome-Bioinformatics#readme" class="markup--anchor markup--li-anchor" title="https://github.com/danielecook/Awesome-Bioinformatics#readme">Bioinformatics</a></span>
 -   <span id="b268"><a href="https://github.com/hsiaoyi0504/awesome-cheminformatics#readme" class="markup--anchor markup--li-anchor" title="https://github.com/hsiaoyi0504/awesome-cheminformatics#readme">Cheminformatics</a> — Informatics techniques applied to problems in chemistry.</span>
@@ -692,7 +692,7 @@ Platforms
 -   <span id="5761"><a href="http://awesome.digitalbunker.dev" class="markup--anchor markup--li-anchor" title="http://awesome.digitalbunker.dev">Awesome Viewer</a> — A visualizer for all of the above Awesome lists.</span>
 -   <span id="a14d"><a href="https://www.trackawesomelist.com" class="markup--anchor markup--li-anchor" title="https://www.trackawesomelist.com">Track Awesome List</a> — View the latest updates of Awesome lists.</span>
 
----
+------------------------------------------------------------------------
 
 ### All Of My Repositories:
 

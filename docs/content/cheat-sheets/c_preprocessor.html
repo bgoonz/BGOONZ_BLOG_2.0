@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2022-01-03" />
+  <title>title</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">title</h1>
+<p class="subtitle">subtitle</p>
+<p class="date">2022-01-03</p>
+</header>
+<hr />
+<p>title: C Preprocessor category: C-like</p>
+<p>intro: | Quick reference for the <a href="https://en.m.wikipedia.org/wiki/C_preprocessor">C macro preprocessor</a>, which can be used independent of C/C++.</p>
+<hr />
+<h2 id="reference">Reference</h2>
+<h3 id="compiling">Compiling</h3>
+<pre><code>$ cpp -P file &gt; outfile</code></pre>
+<h3 id="includes">Includes</h3>
+<pre><code>#include &quot;file&quot;</code></pre>
+<h3 id="defines">Defines</h3>
+<pre><code>#define FOO
+#define FOO &quot;hello&quot;
+
+#undef FOO</code></pre>
+<h3 id="if">If</h3>
+<pre><code>#ifdef DEBUG
+  console.log(&#39;hi&#39;);
+#elif defined VERBOSE
+  ...
+#else
+  ...
+#endif</code></pre>
+<h3 id="error">Error</h3>
+<pre><code>#if VERSION == 2.0
+  #error Unsupported
+  #warning Not really supported
+#endif</code></pre>
+<h3 id="macro">Macro</h3>
+<pre><code>#define DEG(x) ((x) * 57.29)</code></pre>
+<h3 id="token-concat">Token concat</h3>
+<pre><code>#define DST(name) name##_s name##_t
+DST(object);   #=&gt; object_s object_t;</code></pre>
+<h3 id="stringification">Stringification</h3>
+<pre><code>#define STR(name) #name
+char * a = STR(object);   #=&gt; char * a = &quot;object&quot;;</code></pre>
+<h3 id="file-and-line">file and line</h3>
+<pre><code>#define LOG(msg) console.log(__FILE__, __LINE__, msg)
+#=&gt; console.log(&quot;file.txt&quot;, 3, &quot;hey&quot;)</code></pre>
+</body>
+</html>

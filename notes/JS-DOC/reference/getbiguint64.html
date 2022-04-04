@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>getbiguint64</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="dataview.prototype.getbiguint64">DataView.prototype.getBigUint64()</h1>
+<p>The <code>getBigUint64()</code> method gets an unsigned 64-bit integer (unsigned long long) at the specified byte offset from the start of the <a href="../dataview"><code>DataView</code></a>.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>getBigUint64(byteOffset)
+getBigUint64(byteOffset, littleEndian)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p>byteOffset<br />
+The offset, in bytes, from the start of the view to read the data from.</p>
+<p>littleEndian<br />
+<span class="badge inline optional">Optional</span> Indicates whether the 64-bit int is stored in <a href="https://developer.mozilla.org/en-US/docs/Glossary/Endianness">little- or big-endian</a> format. If <code>false</code> or <code>undefined</code>, a big-endian value is read.</p>
+<h3 id="return-value">Return value</h3>
+<p>A <a href="../bigint"><code>BigInt</code></a>.</p>
+<h3 id="errors-thrown">Errors thrown</h3>
+<p><a href="../rangeerror"><code>RangeError</code></a><br />
+Thrown if the <code>byteOffset</code> is set such that it would read beyond the end of the view.</p>
+<h2 id="description">Description</h2>
+<p>There is no alignment constraint; multi-byte values may be fetched from any offset.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-the-getbiguint64-method">Using the <code>getBigUint64</code> method</h3>
+<pre><code>var buffer = new ArrayBuffer(8);
+var dataview = new DataView(buffer);
+dataview.getBigUint64(0); // 0n</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-dataview.prototype.getbiguint64">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-dataview.prototype.getbiguint64</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>getBigUint64</code></p>
+<p>67</p>
+<p>79</p>
+<p>68</p>
+<p>No</p>
+<p>54</p>
+<p>No</p>
+<p>67</p>
+<p>67</p>
+<p>68</p>
+<p>48</p>
+<p>No</p>
+<p>9.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../dataview"><code>DataView</code></a></li>
+<li><a href="../arraybuffer"><code>ArrayBuffer</code></a></li>
+<li><a href="../bigint"><code>BigInt</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/getBigUint64" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/getBigUint64</a></p>
+</body>
+</html>

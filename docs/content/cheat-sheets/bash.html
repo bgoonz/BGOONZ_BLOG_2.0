@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2022-01-03" />
+  <title>title</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">title</h1>
+<p class="subtitle">subtitle</p>
+<p class="date">2022-01-03</p>
+</header>
+<h1 id="to-implement-a-for-loop">To implement a for loop:</h1>
+<p>for file in *; do echo $file found; done</p>
+<h1 id="to-implement-a-case-command">To implement a case command:</h1>
+<p>case “$1” in 0) echo “zero found”;; 1) echo “one found”;; 2) echo “two found”;; 3*) echo “something beginning with 3 found”;; esac</p>
+<h1 id="to-turn-on-debugging">To turn on debugging:</h1>
+<p>set -x</p>
+<h1 id="to-turn-off-debugging">To turn off debugging:</h1>
+<p>set +x</p>
+<h1 id="retrieve-n-th-piped-command-exit-status">Retrieve N-th piped command exit status:</h1>
+<p>printf ‘foo’ | fgrep ‘foo’ | sed ‘s/foo/bar/’ echo ${PIPESTATUS[0]} # replace 0 with N</p>
+<h1 id="to-create-a-lockfile">To create a lockfile:</h1>
+<p>( set -o noclobber; echo &gt; my.lock ) || echo ‘Failed to create lock file’</p>
+</body>
+</html>

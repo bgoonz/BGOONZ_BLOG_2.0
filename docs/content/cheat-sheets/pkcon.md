@@ -1,11 +1,9 @@
----
-tags: [packaging]
----
-
-# To update cached information about available updates:
+To update cached information about available updates:
+=====================================================
 
 pkcon refresh
 
-# To update installed packages:
+To update installed packages:
+=============================
 
 pkcon update

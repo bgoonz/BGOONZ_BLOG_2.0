@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>numberformat</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="intl.numberformat-constructor">Intl.NumberFormat() constructor</h1>
+<p>The <code>Intl.NumberFormat()</code> constructor creates <a href="../numberformat"><code>Intl.NumberFormat</code></a> objects that enable language-sensitive number formatting.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>new Intl.NumberFormat()
+new Intl.NumberFormat(locales)
+new Intl.NumberFormat(locales, options)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>locales</code> <span class="badge inline optional">Optional</span><br />
+A string with a BCP 47 language tag, or an array of such strings. For the general form and interpretation of the <code>locales</code> argument, see the <a href="../../intl#locale_identification_and_negotiation">Intl</a> page. The following Unicode extension key is allowed:</p>
+<p><code>nu</code><br />
+The numbering system to be used. Possible values include: “<code>adlm</code>”, “<code>ahom</code>”, “<code>arab</code>”, “<code>arabext</code>”, “<code>bali</code>”, “<code>beng</code>”, “<code>bhks</code>”, “<code>brah</code>”, “<code>cakm</code>”, “<code>cham</code>”, “<code>deva</code>”, “<code>diak</code>”, “<code>fullwide</code>”, “<code>gong</code>”, “<code>gonm</code>”, “<code>gujr</code>”, “<code>guru</code>”, “<code>hanidec</code>”, “<code>hmng</code>”, “<code>hmnp</code>”, “<code>java</code>”, “<code>kali</code>”, “<code>khmr</code>”, “<code>knda</code>”, “<code>lana</code>”, “<code>lanatham</code>”, “<code>laoo</code>”, “<code>latn</code>”, “<code>lepc</code>”, “<code>limb</code>”, “<code>mathbold</code>”, “<code>mathdbl</code>”, “<code>mathmono</code>”, “<code>mathsanb</code>”, “<code>mathsans</code>”, “<code>mlym</code>”, “<code>modi</code>”, “<code>mong</code>”, “<code>mroo</code>”, “<code>mtei</code>”, “<code>mymr</code>”, “<code>mymrshan</code>”, “<code>mymrtlng</code>”, “<code>newa</code>”, “<code>nkoo</code>”, “<code>olck</code>”, “<code>orya</code>”, “<code>osma</code>”, “<code>rohg</code>”, “<code>saur</code>”, “<code>segment</code>”, “<code>shrd</code>”, “<code>sind</code>”, “<code>sinh</code>”, “<code>sora</code>”, “<code>sund</code>”, “<code>takr</code>”, “<code>talu</code>”, “<code>tamldec</code>”, “<code>telu</code>”, “<code>thai</code>”, “<code>tibt</code>”, “<code>tirh</code>”, “<code>vaii</code>”, “<code>wara</code>”, “<code>wcho</code>”. — see the <a href="../locale/numberingsystem">standard Unicode numeral systems list</a>.</p>
+<p><code>options</code> <span class="badge inline optional">Optional</span><br />
+An object with some or all of the following properties:</p>
+<p><code>compactDisplay</code><br />
+Only used when <code>notation</code> is “<code>compact</code>”. Takes either “<code>short</code>” (default) or “<code>long</code>”.</p>
+<p><code>currency</code><br />
+The currency to use in currency formatting. Possible values are the ISO 4217 currency codes, such as “<code>USD</code>” for the US dollar, “<code>EUR</code>” for the euro, or “<code>CNY</code>” for the Chinese RMB — see the <a href="https://www.currency-iso.org/en/home/tables/table-a1.html">Current currency &amp; funds code list</a>. There is no default value; if the <code>style</code> is “<code>currency</code>”, the <code>currency</code> property must be provided.</p>
+<p><code>currencyDisplay</code><br />
+How to display the currency in currency formatting. Possible values are:</p>
+<ul>
+<li>“<code>symbol</code>” to use a localized currency symbol such as €, this is the default value,</li>
+<li>“<code>narrowSymbol</code>” to use a narrow format symbol (“$100” rather than “US$100”),</li>
+<li>“<code>code</code>” to use the ISO currency code,</li>
+<li>“<code>name</code>” to use a localized currency name such as “<code>dollar</code>”,</li>
+</ul>
+<p><code>currencySign</code><br />
+In many locales, accounting format means to wrap the number with parentheses instead of appending a minus sign. You can enable this formatting by setting the <code>currencySign</code> option to “<code>accounting</code>”. The default value is “<code>standard</code>”.</p>
+<p><code>localeMatcher</code><br />
+The locale matching algorithm to use. Possible values are “<code>lookup</code>” and “<code>best fit</code>”; the default is “<code>best fit</code>”. For information about this option, see the <a href="../../intl#locale_negotiation">Intl</a> page.</p>
+<p><code>notation</code><br />
+The formatting that should be displayed for the number, the defaults is “<code>standard</code>”</p>
+<ul>
+<li>“<code>standard</code>” plain number formatting</li>
+<li>“<code>scientific</code>” return the order-of-magnitude for formatted number.</li>
+<li>“<code>engineering</code>” return the exponent of ten when divisible by three</li>
+<li>“<code>compact</code>” string representing exponent, defaults is using the “short” form.</li>
+</ul>
+<p><code>numberingSystem</code><br />
+Numbering System. Possible values include: “<code>arab</code>”, “<code>arabext</code>”, " <code>bali</code>“,”<code>beng</code>“,”<code>deva</code>“,”<code>fullwide</code>“,” <code>gujr</code>“,”<code>guru</code>“,”<code>hanidec</code>“,”<code>khmr</code>“,” <code>knda</code>“,”<code>laoo</code>“,”<code>latn</code>“,”<code>limb</code>“,”<code>mlym</code>“,” <code>mong</code>“,”<code>mymr</code>“,”<code>orya</code>“,”<code>tamldec</code>“,” <code>telu</code>“,”<code>thai</code>“,”<code>tibt</code>".</p>
+<p><code>signDisplay</code><br />
+When to display the sign for the number; defaults to “<code>auto</code>”</p>
+<ul>
+<li>“<code>auto</code>” sign display for negative numbers only</li>
+<li>“<code>never</code>” never display sign</li>
+<li>“<code>always</code>” always display sign</li>
+<li>“<code>exceptZero</code>” sign display for positive and negative numbers, but not zero</li>
+</ul>
+<p><code>style</code><br />
+The formatting style to use , the default is “<code>decimal</code>”.</p>
+<ul>
+<li>“<code>decimal</code>” for plain number formatting.</li>
+<li>“<code>currency</code>” for currency formatting.</li>
+<li>“<code>percent</code>” for percent formatting</li>
+<li>“<code>unit</code>” for unit formatting</li>
+</ul>
+<p><code>unit</code><br />
+The unit to use in <code>unit</code> formatting, Possible values are core unit identifiers, defined in <a href="https://unicode.org/reports/tr35/tr35-general.html#Unit_Elements">UTS #35, Part 2, Section 6</a>. A <a href="https://tc39.es/proposal-unified-intl-numberformat/section6/locales-currencies-tz_proposed_out.html#sec-issanctionedsimpleunitidentifier">subset</a> of units from the <a href="https://github.com/unicode-org/cldr/blob/master/common/validity/unit.xml">full list</a> was selected for use in ECMAScript. Pairs of simple units can be concatenated with “<code>-per-</code>” to make a compound unit. There is no default value; if the <code>style</code> is “<code>unit</code>”, the <code>unit</code> property must be provided.</p>
+<p><code>unitDisplay</code><br />
+The unit formatting style to use in <code>unit</code> formatting, the defaults is “<code>short</code>”.</p>
+<ul>
+<li>“<code>long</code>” (e.g., <code>16 litres</code>)</li>
+<li>“<code>short</code>” (e.g., <code>16 l</code>)</li>
+<li>“<code>narrow</code>” (e.g., <code>16l</code>)</li>
+</ul>
+<p><code>useGrouping</code><br />
+Whether to use grouping separators, such as thousands separators or thousand/lakh/crore separators. Possible values are true and false; the default is true.</p>
+<p>The following properties fall into two groups: <code>minimumIntegerDigits</code>, <code>minimumFractionDigits</code>, and <code>maximumFractionDigits</code> in one group, <code>minimumSignificantDigits</code> and <code>maximumSignificantDigits</code> in the other. If at least one property from the second group is defined, then the first group is ignored.</p>
+<p><code>minimumIntegerDigits</code><br />
+The minimum number of integer digits to use. Possible values are from 1 to 21; the default is 1.</p>
+<p><code>minimumFractionDigits</code><br />
+The minimum number of fraction digits to use. Possible values are from 0 to 20; the default for plain number and percent formatting is 0; the default for currency formatting is the number of minor unit digits provided by the <a href="https://www.currency-iso.org/en/home/tables/table-a1.html">ISO 4217 currency code list</a> (2 if the list doesn’t provide that information).</p>
+<p><code>maximumFractionDigits</code><br />
+The maximum number of fraction digits to use. Possible values are from 0 to 20; the default for plain number formatting is the larger of <code>minimumFractionDigits</code> and 3; the default for currency formatting is the larger of <code>minimumFractionDigits</code> and the number of minor unit digits provided by the <a href="https://www.currency-iso.org/en/home/tables/table-a1.html">ISO 4217 currency code list</a> (2 if the list doesn’t provide that information); the default for percent formatting is the larger of <code>minimumFractionDigits</code> and 0.</p>
+<p><code>minimumSignificantDigits</code><br />
+The minimum number of significant digits to use. Possible values are from 1 to 21; the default is 1.</p>
+<p><code>maximumSignificantDigits</code><br />
+The maximum number of significant digits to use. Possible values are from 1 to 21; the default is 21.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="basic-usage">Basic usage</h3>
+<p>In basic use without specifying a locale, a formatted string in the default locale and with default options is returned.</p>
+<pre><code>let amount = 3500;
+
+console.log(new Intl.NumberFormat().format(amount));
+// → &#39;3,500&#39; if in US English locale</code></pre>
+<h3 id="decimal-and-percent-formatting">Decimal and percent formatting</h3>
+<pre><code>let amount = 3500;
+
+new Intl.NumberFormat(&#39;en-US&#39;, {style: &#39;decimal&#39;}).format(amount);
+// → &#39;3,500&#39;
+new Intl.NumberFormat(&#39;en-US&#39;, {style: &#39;percent&#39;}).format(amount);
+// → &#39;350,000%&#39;</code></pre>
+<h3 id="unit-formatting">Unit formatting</h3>
+<p>If the <code>style</code> is <code>'unit'</code>, a <code>unit</code> property must be provided. Optionally, <code>unitDisplay</code> controls the unit formatting.</p>
+<pre><code>let amount = 3500;
+
+new Intl.NumberFormat(&#39;en-US&#39;, {style: &#39;unit&#39;, unit: &#39;liter&#39;}).format(amount);
+// → &#39;3,500 L&#39;
+
+new Intl.NumberFormat(&#39;en-US&#39;, {style: &#39;unit&#39;, unit: &#39;liter&#39;, unitDisplay: &#39;long&#39;}).format(amount);
+// → &#39;3,500 liters&#39;</code></pre>
+<h3 id="currency-formatting">Currency formatting</h3>
+<p>If the <code>style</code> is <code>'currency'</code>, a <code>currency</code> property must be provided. Optionally, <code>currencyDisplay</code> and <code>currencySign</code> control the unit formatting.</p>
+<pre><code>let amount = -3500;
+new Intl.NumberFormat(&#39;en-US&#39;, {style: &#39;currency&#39;, currency: &#39;USD&#39;}).format(amount);
+// → &#39;-$3,500.00&#39;
+
+new Intl.NumberFormat(&#39;bn&#39;, {
+  style: &#39;currency&#39;,
+  currency: &#39;USD&#39;,
+  currencyDisplay: &#39;name&#39;
+}).format(amount);
+// →  &#39;-3,500.00 US dollars&#39;
+
+new Intl.NumberFormat(&#39;bn&#39;, {
+  style: &#39;currency&#39;,
+  currency: &#39;USD&#39;,
+  currencySign: &#39;accounting&#39;
+}).format(amount);
+// →  &#39;($3,500.00)&#39;</code></pre>
+<h3 id="scientific-engineering-or-compact-notations">Scientific, engineering or compact notations</h3>
+<p>Scientific and compact notation are represented by the <code>notation</code> option and can be formatted like this:</p>
+<pre><code>new Intl.NumberFormat(&#39;en-US&#39;, { notation: &quot;scientific&quot; }).format(987654321);
+// → 9.877E8
+
+new Intl.NumberFormat(&#39;pt-PT&#39;, { notation: &quot;scientific&quot; }).format(987654321);
+// → 9,877E8
+
+new Intl.NumberFormat(&#39;en-GB&#39;, { notation: &quot;engineering&quot; }).format(987654321);
+// → 987.654E6
+
+new Intl.NumberFormat(&#39;de&#39;, { notation: &quot;engineering&quot; }).format(987654321);
+// → 987,654E6
+
+new Intl.NumberFormat(&#39;zh-CN&#39;, { notation: &quot;compact&quot; }).format(987654321);
+// → 9.9亿
+
+new Intl.NumberFormat(&#39;fr&#39;, {
+  notation: &quot;compact&quot;,
+  compactDisplay: &quot;long&quot;
+}).format(987654321);
+// → 988 millions
+
+new Intl.NumberFormat(&#39;en-GB&#39;, {
+  notation: &quot;compact&quot;,
+  compactDisplay: &quot;short&quot;
+}).format(987654321);
+// → 988M</code></pre>
+<h3 id="displaying-signs">Displaying signs</h3>
+<p>Display a sign for positive and negative numbers, but not zero:</p>
+<pre><code>new Intl.NumberFormat(&quot;en-US&quot;, {
+    style: &quot;percent&quot;,
+    signDisplay: &quot;exceptZero&quot;
+}).format(0.55);
+// → &#39;+55%&#39;</code></pre>
+<p>Note that when the currency sign is “accounting”, parentheses might be used instead of a minus sign:</p>
+<pre><code>new Intl.NumberFormat(&#39;bn&#39;, {
+  style: &#39;currency&#39;,
+  currency: &#39;USD&#39;,
+  currencySign: &#39;accounting&#39;,
+  signDisplay: &#39;always&#39;
+}).format(-3500);
+
+// → &#39;($3,500.00)&#39;</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma402/#sec-intl-numberformat-constructor">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) <br/></p>
+<span class="small">#sec-intl-numberformat-constructor</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>NumberFormat</code></p>
+<p>24</p>
+<p>12</p>
+<p>29</p>
+<p>11</p>
+<p>15</p>
+<p>10</p>
+<p>4.4</p>
+<p>25</p>
+<p>56</p>
+<p>14</p>
+<p>10</p>
+<p>1.5</p>
+<p><code>compactDisplay</code></p>
+<p>77</p>
+<p>79</p>
+<p>78</p>
+<p>No</p>
+<p>64</p>
+<p>14.1</p>
+<p>77</p>
+<p>77</p>
+<p>79</p>
+<p>55</p>
+<p>14.5</p>
+<p>12.0</p>
+<p><code>currencyDisplay</code></p>
+<p>77</p>
+<p>79</p>
+<p>78</p>
+<p>No</p>
+<p>64</p>
+<p>14.1</p>
+<p>10-14.1</p>
+<p>Doesn’t support <code>currencyDisplay: 'narrowSymbol'</code>.</p>
+<p>77</p>
+<p>77</p>
+<p>79</p>
+<p>55</p>
+<p>14.5</p>
+<p>10-14.5</p>
+<p>Doesn’t support <code>currencyDisplay: 'narrowSymbol'</code>.</p>
+<p>12.0</p>
+<p><code>currencySign</code></p>
+<p>77</p>
+<p>79</p>
+<p>78</p>
+<p>No</p>
+<p>64</p>
+<p>14.1</p>
+<p>77</p>
+<p>77</p>
+<p>79</p>
+<p>55</p>
+<p>14.5</p>
+<p>12.0</p>
+<p><code>notation</code></p>
+<p>77</p>
+<p>79</p>
+<p>78</p>
+<p>No</p>
+<p>64</p>
+<p>14.1</p>
+<p>77</p>
+<p>77</p>
+<p>79</p>
+<p>55</p>
+<p>14.5</p>
+<p>12.0</p>
+<p><code>signDisplay</code></p>
+<p>77</p>
+<p>79</p>
+<p>78</p>
+<p>No</p>
+<p>64</p>
+<p>14.1</p>
+<p>77</p>
+<p>77</p>
+<p>79</p>
+<p>55</p>
+<p>14.5</p>
+<p>12.0</p>
+<p><code>unit</code></p>
+<p>77</p>
+<p>79</p>
+<p>78</p>
+<p>No</p>
+<p>64</p>
+<p>14.1</p>
+<p>77</p>
+<p>77</p>
+<p>79</p>
+<p>55</p>
+<p>14.5</p>
+<p>12.0</p>
+<p><code>unitDisplay</code></p>
+<p>77</p>
+<p>79</p>
+<p>78</p>
+<p>No</p>
+<p>64</p>
+<p>14.1</p>
+<p>77</p>
+<p>77</p>
+<p>79</p>
+<p>55</p>
+<p>14.5</p>
+<p>12.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../numberformat"><code>Intl.NumberFormat</code></a></li>
+<li><a href="../../intl"><code>Intl</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/NumberFormat" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/NumberFormat</a></p>
+</body>
+</html>

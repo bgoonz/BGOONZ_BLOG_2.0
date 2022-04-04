@@ -1,4 +1,5 @@
-# Flexbox Cheat Sheet
+Flexbox Cheat Sheet
+===================
 
 #### Container
 
@@ -50,7 +51,7 @@
 -   `flex-grow` determines how much the item can grow if necessary
     -   Accepts a single positive number (unitless), default value is `0`
     -   Specifies how much of the remaining space in the flex container should be assigned to the item
-    -   The remaining space is the size of the flex container minus the size of all flex items' sizes together
+    -   The remaining space is the size of the flex container minus the size of all flex items’ sizes together
     -   If all items have the same `flex-grow`, all items will receive an equal share of the remaining space
     -   If not all items have the same `flex-grow`, the remaining space is distributed according to the ratio defined by these values
 -   `flex-shrink` determines how much the items can shrink if necessary
@@ -58,7 +59,7 @@
     -   If the size of all flex items is larger than the flex container, items shrink to fit according to `flex-shrink`
 -   `flex-basis` determines the initial size of a flex item before the remaining space is distributed
     -   Can use any valid `width` value, intrinsic size values, `auto` (default) or `content`
-    -   `auto` means "look at my `width` or `height` property", whereas `content` is used for automatic sizing
+    -   `auto` means “look at my `width` or `height` property”, whereas `content` is used for automatic sizing
 -   `flex`: shorthand combining `flex-grow`, `flex-shrink` and `flex-basis`
     -   Formal syntax: `flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]`
 -   `align-self` allows the item to override the default `align-items` specified by the container

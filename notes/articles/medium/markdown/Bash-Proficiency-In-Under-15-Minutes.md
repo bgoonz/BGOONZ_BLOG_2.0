@@ -1,14 +1,15 @@
-# Bash Proficiency In Under 15 Minutes
+Bash Proficiency In Under 15 Minutes
+====================================
 
 Cheat sheet and in-depth explanations located below main article contents… The UNIX shell program interprets user commands, which are…
 
----
+------------------------------------------------------------------------
 
 ### Bash Proficiency In Under 15 Minutes
 
 #### Cheat sheet and in-depth explanations located below main article contents… The UNIX shell program interprets user commands, which are either directly entered by the user, or which can be read from a file called the shell script or shell program. Shell scripts are interpreted, not compiled. The shell reads commands from the script line per line and searches for those commands on the system while a compiler converts a program into machine readable form, an executable file.
 
----
+------------------------------------------------------------------------
 
 ### LIFE SAVING PROTIP:
 
@@ -16,60 +17,53 @@ Cheat sheet and in-depth explanations located below main article contents… The
 
     #!/bin/bash -x
 
----
+------------------------------------------------------------------------
 
 > I will go deeper into the explanations behind some of these examples at the bottom of this article.
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*QkQexW5Lg0NYrtuD" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/0*gtmOR8KLGdLcUwPt.gif" class="graf-image" /></figure>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*QkQexW5Lg0NYrtuD" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/0*gtmOR8KLGdLcUwPt.gif" class="graf-image" /></figure>#### Here’s some previous articles I’ve written for more advanced users.
 
-#### Here's some previous articles I've written for more advanced users.
+**Bash Commands That Save Me Time and Frustration**  
 
-<a href="https://medium.com/geekculture/bash-commands-that-save-time-920fb6ab9d0a" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/geekculture/bash-commands-that-save-time-920fb6ab9d0a"><strong>Bash Commands That Save Me Time and Frustration</strong>
-<br/>
+*Here’s a list of bash commands that stand between me and insanity.*medium.com<a href="https://medium.com/geekculture/bash-commands-that-save-time-920fb6ab9d0a" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<em>Here's a list of bash commands that stand between me and insanity.</em>medium.com</a><a href="https://medium.com/geekculture/bash-commands-that-save-time-920fb6ab9d0a" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+**Life Saving Bash Scripts Part 2**  
 
-<a href="https://medium.com/geekculture/life-saving-bash-scripts-part-2-b40c8ee22682" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/geekculture/life-saving-bash-scripts-part-2-b40c8ee22682"><strong>Life Saving Bash Scripts Part 2</strong>
-<br/>
+*I am not saying they’re in any way special compared with other bash scripts… but when I consider that you can never…*medium.com<a href="https://medium.com/geekculture/life-saving-bash-scripts-part-2-b40c8ee22682" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<em>I am not saying they're in any way special compared with other bash scripts… but when I consider that you can never…</em>medium.com</a><a href="https://medium.com/geekculture/life-saving-bash-scripts-part-2-b40c8ee22682" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+**What Are Bash Aliases And Why Should You Be Using Them!**  
 
-<a href="https://bryanguner.medium.com/what-are-bash-aliases-and-why-should-you-be-using-them-30a6cfafdfeb" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/what-are-bash-aliases-and-why-should-you-be-using-them-30a6cfafdfeb"><strong>What Are Bash Aliases And Why Should You Be Using Them!</strong>
-<br/>
+*A Bash alias is a method of supplementing or overriding Bash commands with new ones. Bash aliases make it easy for…*<a href="https://bryanguner.medium.com/what-are-bash-aliases-and-why-should-you-be-using-them-30a6cfafdfeb" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
-<em>A Bash alias is a method of supplementing or overriding Bash commands with new ones. Bash aliases make it easy for…</em><a href="https://bryanguner.medium.com/what-are-bash-aliases-and-why-should-you-be-using-them-30a6cfafdfeb" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
-
----
+------------------------------------------------------------------------
 
 ### What is Bash?
 
 > Apart from passing commands to the kernel, the main task of a shell is providing a user environment through which they can issue the computer commands via a command line instead of the graphical user interfaces most software consumers are familiar with.
 
----
+------------------------------------------------------------------------
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*7qlctJzV2Jv3F0cr.gif" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/0*oQWiki9YceuZc9h_.jpeg" alt="fire meme" class="graf-image" /><figcaption>fire meme</figcaption></figure>
-
-#### Here's a REPL with some examples for you to practice….
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*7qlctJzV2Jv3F0cr.gif" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/0*oQWiki9YceuZc9h_.jpeg" alt="fire meme" class="graf-image" /><figcaption>fire meme</figcaption></figure>#### Here’s a REPL with some examples for you to practice….
 
 > ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ below motivational monologue ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
 
-**_Remember: learning is an effortful activity… it's not comfortable… practice might be unpleasant but if you don't you might as well skip reading too because without application… reading articles just provides a false sense of accomplishment…._**
+***Remember: learning is an effortful activity… it’s not comfortable… practice might be unpleasant but if you don’t you might as well skip reading too because without application… reading articles just provides a false sense of accomplishment….***
 
 > <a href="https://resume.github.io/?bgoonz" class="markup--anchor markup--blockquote-anchor">quote by: … <strong>me</strong> 1 minute ago</a> (inspired by veritasium….)
 
 ### Aforementioned Repl:
 
----
+------------------------------------------------------------------------
 
 ### <a href="https://egghead.io/lessons/bash-navigate-the-filesystem-in-bash" class="markup--anchor markup--h3-anchor">Navigate the file system</a>
 
-#### Change bash's current working directory
+#### Change bash’s current working directory
 
     cd <file path here>
     # to go up a directory from your current directory
     cd ..
 
-#### List a directory's contents
+#### List a directory’s contents
 
     ls
     # for more details, add -l (long)
@@ -161,7 +155,9 @@ Cheat sheet and in-depth explanations located below main article contents… The
 
 ### <a href="https://egghead.io/lessons/bash-find-files-and-folders-with-find-in-bash" class="markup--anchor markup--h3-anchor">Find Files and Folders with</a> `find` <a href="https://egghead.io/lessons/bash-find-files-and-folders-with-find-in-bash" class="markup--anchor markup--h3-anchor">in bash</a>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*3hXVYnYPTLCQHe0f.jpg" alt="find" class="graf-image" /><figcaption>find</figcaption></figure># find all the PNGs in a folder
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*3hXVYnYPTLCQHe0f.jpg" alt="find" class="graf-image" /><figcaption>find</figcaption></figure>find all the PNGs in a folder
+=============================
+
     find <path> -name "*.png"
     # find all the JPGs (case insensitive) in a folder
     find <path> -iname "*.jpg"
@@ -173,7 +169,7 @@ Cheat sheet and in-depth explanations located below main article contents… The
     # remember `{}` will be replaced with the file name
     find <path> -name "*.png" -exec pngquant {} \;
 
-### <a href="https://egghead.io/lessons/grep-search-for-text-with-grep" class="markup--anchor markup--h3-anchor">Search for text with </a>`grep`
+### <a href="https://egghead.io/lessons/grep-search-for-text-with-grep" class="markup--anchor markup--h3-anchor">Search for text with</a> `grep`
 
     # Basic usage
     grep <pattern> <target file or glob>
@@ -183,7 +179,7 @@ Cheat sheet and in-depth explanations located below main article contents… The
     # -C <number> (show N lines above/below match for context)
     # -e          (regex search)
 
-### <a href="https://egghead.io/lessons/http-make-http-requests-in-bash-with-curl" class="markup--anchor markup--h3-anchor">Make HTTP requests in bash with </a>`curl`
+### <a href="https://egghead.io/lessons/http-make-http-requests-in-bash-with-curl" class="markup--anchor markup--h3-anchor">Make HTTP requests in bash with</a> `curl`
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*YmLsGKSXYDZ_vzMp.png" alt="http" class="graf-image" /><figcaption>http</figcaption></figure>The test server is available in the `curl-practice-server` directory. Run `npm install && npm start` to run it.
 
@@ -212,13 +208,11 @@ Cheat sheet and in-depth explanations located below main article contents… The
     # pretty print JSON with jsome
     curl https://swapi.co/api/people/1/ | jsome
 
-Here's the <a href="https://www.npmjs.com/package/jsome" class="markup--anchor markup--p-anchor">jsome</a> package that pretty prints JSON
+Here’s the <a href="https://www.npmjs.com/package/jsome" class="markup--anchor markup--p-anchor">jsome</a> package that pretty prints JSON
 
 ### <a href="https://egghead.io/lessons/bash-create-and-run-bash-scripts" class="markup--anchor markup--h3-anchor">Create and run bash scripts</a>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*AC9okBRPVFBSHpwv.png" alt="bash scripting" class="graf-image" /><figcaption>bash scripting</figcaption></figure>echo 'echo Hello World' > script.sh
-    chmod u+x script.sh
-    ./script.sh
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*AC9okBRPVFBSHpwv.png" alt="bash scripting" class="graf-image" /><figcaption>bash scripting</figcaption></figure>echo ‘echo Hello World’ &gt; script.sh chmod u+x script.sh ./script.sh
 
 The `init-js.sh` script for scaffolding a JS project
 
@@ -279,7 +273,7 @@ To see all environment variables
 
 ### <a href="https://egghead.io/lessons/bash-understand-exit-statuses-in-bash" class="markup--anchor markup--h3-anchor">Understand exit statuses in bash</a>
 
-Get the last run command's exit status
+Get the last run command’s exit status
 
     ls
     # will be 0 if it ran successfully, 1 - 255 for an error
@@ -353,33 +347,33 @@ Redirection
     # append stdout to a file
     echo "hi" >> ls.txt
 
----
+------------------------------------------------------------------------
 
 ### Update(Utility Commands):
 
-**_Find files that have been modified on your system in the past 60 minutes_**
+***Find files that have been modified on your system in the past 60 minutes***
 
     find / -mmin 60 -type f
 
-**_Find all files larger than 20M_**
+***Find all files larger than 20M***
 
     find / -type f -size +20M
 
-**_Find duplicate files (based on MD5 hash)_**
+***Find duplicate files (based on MD5 hash)***
 
     find -type f -exec md5sum '{}' ';' | sort | uniq --all-repeated=separate -w 33
 
-**_Change permission only for files_**
+***Change permission only for files***
 
     cd /var/www/site && find . -type f -exec chmod 766 {} \;
     cd /var/www/site && find . -type f -exec chmod 664 {} +
 
-**_Change permission only for directories_**
+***Change permission only for directories***
 
     cd /var/www/site && find . -type d -exec chmod g+x {} \;
     cd /var/www/site && find . -type d -exec chmod g+rwx {} +
 
-**_Find files and directories for specific user/group_**
+***Find files and directories for specific user/group***
 
     # User:
     find . -user <username> -print
@@ -389,7 +383,7 @@ Redirection
     find /opt -group <group>
     find /etc -type f -group <group> -iname "*.conf"
 
-**_Find files and directories for all without specific user/group_**
+***Find files and directories for all without specific user/group***
 
     # User:
     find . \! -user <username> -print
@@ -397,7 +391,7 @@ Redirection
     # Group:
     find . \! -group <group>
 
-**_Looking for files/directories that only have certain permission_**
+***Looking for files/directories that only have certain permission***
 
     # User
     find . -user <username> -perm -u+rw # -rw-r--r--
@@ -406,56 +400,54 @@ Redirection
     # Group:
     find /home -type d -group <group> -perm 755 # -rwxr-xr-x
 
-**_Delete older files than 60 days_**
+***Delete older files than 60 days***
 
     find . -type f -mtime +60 -delete
 
-**_Recursively remove all empty sub-directories from a directory_**
+***Recursively remove all empty sub-directories from a directory***
 
     find . -depth  -type d  -empty -exec rmdir {} \;
 
-**_How to find all hard links to a file_**
+***How to find all hard links to a file***
 
     find </path/to/dir> -xdev -samefile filename
 
-**_Recursively find the latest modified files_**
+***Recursively find the latest modified files***
 
     find . -type f -exec stat --format '%Y :%y %n' "{}" \; | sort -nr | cut -d: -f2- | head
 
-**_Recursively find/replace of a string with sed_**
+***Recursively find/replace of a string with sed***
 
     find . -not -path '*/\.git*' -type f -print0 | xargs -0 sed -i 's/foo/bar/g'
 
-**_Recursively find/replace of a string in directories and file names_**
+***Recursively find/replace of a string in directories and file names***
 
     find . -depth -name '*test*' -execdir bash -c 'mv -v "$1" "${1//foo/bar}"' _ {} \;
 
-**_Recursively find suid executables_**
+***Recursively find suid executables***
 
     find / \( -perm -4000 -o -perm -2000 \) -type f -exec ls -la {} \;
 
----
+------------------------------------------------------------------------
 
 ### Additional learning resources
 
--   <span id="8e12">You can view a command's documentation right in bash with `man <command name>`.</span>
+-   <span id="8e12">You can view a command’s documentation right in bash with `man <command name>`.</span>
 -   <span id="9b41"><a href="https://www.gnu.org/software/bash/manual/bash.html" class="markup--anchor markup--li-anchor">Official bash manual</a></span>
 -   <span id="40a7"><a href="http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html" class="markup--anchor markup--li-anchor">TLDP bash programming intro, basic</a></span>
 -   <span id="6515"><a href="http://www.tldp.org/LDP/abs/html/" class="markup--anchor markup--li-anchor">TLDP bash programming intro, advanced</a></span>
 
----
+------------------------------------------------------------------------
 
-### Here's My Github & Website … feel free to reach out!
+### Here’s My Github & Website … feel free to reach out!
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz - Overview</strong>
-<br/>
+**bgoonz - Overview**  
 
-<em>Web Developer, Electrical Engineer https://bryanguner.medium.com/ https://bg-portfolio.netlify.app/ - bgoonz</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Web Developer, Electrical Engineer https://bryanguner.medium.com/ https://bg-portfolio.netlify.app/ - bgoonz*github.com<a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong>
-<br/>
+**Web-Dev-Hub**  
 
-<em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…*bgoonz-blog.netlify.app<a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ### Explanations:
 
@@ -469,7 +461,7 @@ This is very simple way to use pipes.
 
     ls -l | sed -e "s/[aeio]/u/g"
 
-Here, the following happens: first the command ls -l is executed, and it's output, instead of being printed, is sent (piped) to the sed program, which in turn, prints what it has to.
+Here, the following happens: first the command ls -l is executed, and it’s output, instead of being printed, is sent (piped) to the sed program, which in turn, prints what it has to.
 
 ### an alternative to ls -l \*.txt
 
@@ -477,7 +469,7 @@ Probably, this is a more difficult way to do ls -l \*.txt, but this is for educa
 
     ls -l | grep "\.txt$"
 
-> Here, the output of the program ls -l is sent to the grep program, which, in turn, will print lines which match the regex "\\.txt$".
+> Here, the output of the program ls -l is sent to the grep program, which, in turn, will print lines which match the regex “\\.txt$”.
 
 ### Variables
 
@@ -491,7 +483,7 @@ You have no need to declare a variable, just assigning a value to its reference 
                 STR="Hello World!"
                 echo $STR
 
-Line 2 creates a variable called STR and assigns the string "Hello World!" to it. Then the VALUE of this variable is retrieved by putting the '$' in at the beginning. Please notice (try it!) that if you don't use the '$' sign, the output of the program will be different, and probably not what you want it to be.
+Line 2 creates a variable called STR and assigns the string “Hello World!” to it. Then the VALUE of this variable is retrieved by putting the ‘<span class="math inline">′*inatthebeginning*.*Pleasenotice*(*tryit*!)*thatifyoudon*′*tusethe*′</span>’ sign, the output of the program will be different, and probably not what you want it to be.
 
 ### A very simple backup script (little bit better)
 
@@ -499,19 +491,19 @@ Line 2 creates a variable called STR and assigns the string "Hello World!" to it
                OF=/var/my-backup-$(date +%Y%m%d).tgz
                tar -cZf $OF /home/me/
 
-> This script introduces another thing. First of all, you should be familiarized with the variable creation and assignation on line 2. Notice the expression '$(date +%Y%m%d)'. If you run the script you'll notice that it runs the command inside the parenthesis, capturing its output.
+> This script introduces another thing. First of all, you should be familiarized with the variable creation and assignation on line 2. Notice the expression ‘$(date +%Y%m%d)’. If you run the script you’ll notice that it runs the command inside the parenthesis, capturing its output.
 
 > Notice that in this script, the output filename will be different every day, due to the format switch to the date command(+%Y%m%d). You can change this by specifying a different format.
 
 **examples**:
 
-_echo ls_
+*echo ls*
 
-_echo $(ls)_
+*echo $(ls)*
 
 ### Local variables
 
-Local variables can be created by using the keyword _local_.
+Local variables can be created by using the keyword *local*.
 
     #!/bin/bash
                     HELLO=Hello
@@ -525,12 +517,9 @@ Local variables can be created by using the keyword _local_.
 
 ### Basic conditional example if .. then
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*V2XDOXCJO2I8qYBK.jpg" class="graf-image" /></figure>#!/bin/bash
-                if [ "foo" = "foo" ]; then
-                   echo expression evaluated as true
-                fi
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*V2XDOXCJO2I8qYBK.jpg" class="graf-image" /></figure>\#!/bin/bash if \[ “foo” = “foo” \]; then echo expression evaluated as true fi
 
-_The code to be executed if the expression within braces is true can be found after the 'then' word and before 'fi' which indicates the end of the conditionally executed code._
+*The code to be executed if the expression within braces is true can be found after the ‘then’ word and before ‘fi’ which indicates the end of the conditionally executed code.*
 
 ### Basic conditional example if .. then … else
 
@@ -554,14 +543,14 @@ _The code to be executed if the expression within braces is true can be found af
 
 ### Loops
 
--   <span id="15f6">**_for_**</span>
--   <span id="4000">**_while_**</span>
+-   <span id="15f6">***for***</span>
+-   <span id="4000">***while***</span>
 
-> (there's another loop called until but I don't use it so you can look it up if you'd like)
+> (there’s another loop called until but I don’t use it so you can look it up if you’d like)
 
-> **_The until loop is almost equal to the while loop, except that the code is executed while the_** <a href="https://www.cs.fsu.edu/~myers/c++/notes/control1.html" class="markup--anchor markup--blockquote-anchor"><strong><em>control expression</em></strong></a> **_evaluates to false._**
+> ***The until loop is almost equal to the while loop, except that the code is executed while the*** <a href="https://www.cs.fsu.edu/~myers/c++/notes/control1.html" class="markup--anchor markup--blockquote-anchor"><strong><em>control expression</em></strong></a> ***evaluates to false.***
 
-The **for** loop is a little bit different from other programming languages. Basically, it let's you iterate over a series of 'words' within a string.
+The **for** loop is a little bit different from other programming languages. Basically, it let’s you iterate over a series of ‘words’ within a string.
 
 The **while** executes a piece of code if the control expression is true, and only stops when it is false …or a explicit break is found within the executed code.
 
@@ -576,7 +565,7 @@ The **while** executes a piece of code if the control expression is true, and on
 
 > The third line could be longer if needed, or there could be more lines before the done (4).
 
-> 'done' (4) indicates that the code that used the value of $i has finished and $i can take a new value.
+> ‘done’ (4) indicates that the code that used the value of $i has finished and $i can take a new value.
 
 > A more useful way to use the for loop would be to use it to match only certain files on the previous example
 
@@ -593,7 +582,7 @@ The **while** executes a piece of code if the control expression is true, and on
 
 As in almost any programming language, you can use functions to group pieces of code in a more logical way or practice the divine art of recursion.
 
-Declaring a function is just a matter of writing function my_func { my_code }.
+Declaring a function is just a matter of writing function my\_func { my\_code }.
 
 Calling a function is just like calling another program, you just write its name.
 
@@ -610,11 +599,11 @@ Calling a function is just like calling another program, you just write its name
                quit
                echo foo
 
-> Lines 2-4 contain the 'quit' function. Lines 5-7 contain the 'hello' function If you are not absolutely sure about what this script does, please try it!.
+> Lines 2-4 contain the ‘quit’ function. Lines 5-7 contain the ‘hello’ function If you are not absolutely sure about what this script does, please try it!.
 
-> Notice that a functions don't need to be declared in any specific order.
+> Notice that a functions don’t need to be declared in any specific order.
 
-> When running the script you'll notice that first: the function 'hello' is called, second the 'quit' function, and the program never reaches line 10.
+> When running the script you’ll notice that first: the function ‘hello’ is called, second the ‘quit’ function, and the program never reaches line 10.
 
 ### Functions with parameters
 
@@ -642,7 +631,7 @@ Calling a function is just like calling another program, you just write its name
 
 ### Bonus Commands:
 
-#### Included in a gist below (so you can see them syntax highlighted..) I am also including them in text so that they might turn up as a result of google searches … I have a hunch that google's SEO rankings don't put much emphasis on the content of github gists.
+#### Included in a gist below (so you can see them syntax highlighted..) I am also including them in text so that they might turn up as a result of google searches … I have a hunch that google’s SEO rankings don’t put much emphasis on the content of github gists.
 
 ### Example
 
@@ -679,7 +668,7 @@ See <a href="http://wiki.bash-hackers.org/syntax/expansion/cmdsubst" class="mark
 
 ### Functions
 
-{: id='functions-example'}
+{: id=‘functions-example’}
 
     get_name() {
       echo "John"
@@ -691,7 +680,7 @@ See: <a href="https://bryanguner.medium.com/media/2ab9392fe0f579fca234dcdc71259b
 
 ### Conditionals
 
-{: id='conditionals-example'}
+{: id=‘conditionals-example’}
 
     if [[ -z "$string" ]]; then
       echo "String is empty"
@@ -760,7 +749,7 @@ See: <a href="http://wiki.bash-hackers.org/syntax/pe" class="markup--anchor mark
 
 ### Substitution
 
-CodeDescription`${FOO%suffix}`Remove suffix`${FOO#prefix}`Remove prefix------`${FOO%%suffix}`Remove long suffix`${FOO##prefix}`Remove long prefix------`${FOO/from/to}`Replace first match`${FOO//from/to}`Replace all------`${FOO/%from/to}`Replace suffix`${FOO/#from/to}`Replace prefix
+CodeDescription`${FOO%suffix}`Remove suffix`${FOO#prefix}`Remove prefix——`${FOO%%suffix}`Remove long suffix`${FOO##prefix}`Remove long prefix——`${FOO/from/to}`Replace first match`${FOO//from/to}`Replace all——`${FOO/%from/to}`Replace suffix`${FOO/#from/to}`Replace prefix
 
 ### Comments
 
@@ -774,7 +763,7 @@ CodeDescription`${FOO%suffix}`Remove suffix`${FOO#prefix}`Remove prefix------`${
 
 ### Substrings
 
-ExpressionDescription`${FOO:0:3}`Substring _(position, length)_`${FOO:(-3):3}`Substring from the right
+ExpressionDescription`${FOO:0:3}`Substring *(position, length)*`${FOO:(-3):3}`Substring from the right
 
 ### Length
 
@@ -794,7 +783,7 @@ ExpressionDescription`${#FOO}`Length of `$FOO`
 
 ExpressionDescription`${FOO:-val}$FOO`, or `val` if unset (or null)`${FOO:=val}`Set `$FOO` to `val` if unset (or null)`${FOO:+val}val` if `$FOO` is set (and not null)`${FOO:?message}`Show error message and exit if `$FOO` is unset (or null)
 
-Omitting the `:` removes the (non)nullity checks, e.g. `${FOO-val}` expands to `val` if unset otherwise `$FOO`.
+Omitting the `:` removes the (non)nullity checks, e.g. `${FOO-val}` expands to `val` if unset otherwise `$FOO`.
 
 ### Loops
 
@@ -890,15 +879,15 @@ See <a href="http://wiki.bash-hackers.org/syntax/shellvars#special_parameters_an
 
 Note that `[[` is actually a command/program that returns either `0` (true) or `1` (false). Any program that obeys the same logic (like all base utils, such as `grep(1)` or `ping(1)`) can be used as condition, see examples.
 
-ConditionDescription`[[ -z STRING ]]`Empty string`[[ -n STRING ]]`Not empty string`[[ STRING == STRING ]]`Equal`[[ STRING != STRING ]]`Not Equal------`[[ NUM -eq NUM ]]`Equal`[[ NUM -ne NUM ]]`Not equal`[[ NUM -lt NUM ]]`Less than`[[ NUM -le NUM ]]`Less than or equal`[[ NUM -gt NUM ]]`Greater than`[[ NUM -ge NUM ]]`Greater than or equal------`[[ STRING =~ STRING ]]`Regexp------`(( NUM < NUM ))`Numeric conditions
+ConditionDescription`[[ -z STRING ]]`Empty string`[[ -n STRING ]]`Not empty string`[[ STRING == STRING ]]`Equal`[[ STRING != STRING ]]`Not Equal——`[[ NUM -eq NUM ]]`Equal`[[ NUM -ne NUM ]]`Not equal`[[ NUM -lt NUM ]]`Less than`[[ NUM -le NUM ]]`Less than or equal`[[ NUM -gt NUM ]]`Greater than`[[ NUM -ge NUM ]]`Greater than or equal——`[[ STRING =~ STRING ]]`Regexp——`(( NUM < NUM ))`Numeric conditions
 
 #### More conditions
 
-ConditionDescription`[[ -o noclobber ]]`If OPTIONNAME is enabled------`[[ ! EXPR ]]`Not`[[ X && Y ]]`And\`\[\[ X
+ConditionDescription`[[ -o noclobber ]]`If OPTIONNAME is enabled——`[[ ! EXPR ]]`Not`[[ X && Y ]]`And\`\[\[ X
 
 ### File conditions
 
-ConditionDescription`[[ -e FILE ]]`Exists`[[ -r FILE ]]`Readable`[[ -h FILE ]]`Symlink`[[ -d FILE ]]`Directory`[[ -w FILE ]]`Writable`[[ -s FILE ]]`Size is &gt; 0 bytes`[[ -f FILE ]]`File`[[ -x FILE ]]`Executable------`[[ FILE1 -nt FILE2 ]]`1 is more recent than 2`[[ FILE1 -ot FILE2 ]]`2 is more recent than 1`[[ FILE1 -ef FILE2 ]]`Same files
+ConditionDescription`[[ -e FILE ]]`Exists`[[ -r FILE ]]`Readable`[[ -h FILE ]]`Symlink`[[ -d FILE ]]`Directory`[[ -w FILE ]]`Writable`[[ -s FILE ]]`Size is &gt; 0 bytes`[[ -f FILE ]]`File`[[ -x FILE ]]`Executable——`[[ FILE1 -nt FILE2 ]]`1 is more recent than 2`[[ FILE1 -ot FILE2 ]]`2 is more recent than 1`[[ FILE1 -ef FILE2 ]]`Same files
 
 ### Example
 
@@ -1027,7 +1016,7 @@ Set `GLOBIGNORE` as a colon-separated list of patterns to be removed from glob m
 
 ### Commands
 
-CommandDescription`history`Show history`shopt -s histverify`Don't execute expanded result immediately
+CommandDescription`history`Show history`shopt -s histverify`Don’t execute expanded result immediately
 
 ### Expansions
 
@@ -1043,7 +1032,7 @@ CodeDescription`!!`Execute last command again`!!:s/<FROM>/<TO>/`Replace first oc
 
 CodeDescription`!!:n`Expand only `n`th token from most recent command (command is `0`; first argument is `1`)`!^`Expand first argument from most recent command`!$`Expand last token from most recent command`!!:n-m`Expand range of tokens from most recent command`!!:n-$`Expand `n`th token to last from most recent command
 
-`!!` can be replaced with any valid expansion i.e. `!cat`, `!-2`, `!42`, etc.
+`!!` can be replaced with any valid expansion i.e. `!cat`, `!-2`, `!42`, etc.
 
 ### Miscellaneous
 
@@ -1162,7 +1151,7 @@ See <a href="http://wiki.bash-hackers.org/syntax/shellvars#special_parameters_an
     cd -
     pwd # /home/user/foo
 
-### Check for command's result
+### Check for command’s result
 
     if ping -c 1 google.com; then
       echo "It appears you have a working internet connection"
@@ -1178,11 +1167,11 @@ See <a href="http://wiki.bash-hackers.org/syntax/shellvars#special_parameters_an
 
 {: .-one-column}
 
--   <span id="4581"><a href="http://wiki.bash-hackers.org/" class="markup--anchor markup--li-anchor">Bash-hackers wiki</a> _(bash-hackers.org)_</span>
--   <span id="b6a2"><a href="http://wiki.bash-hackers.org/syntax/shellvars" class="markup--anchor markup--li-anchor">Shell vars</a> _(bash-hackers.org)_</span>
--   <span id="a5d4"><a href="https://learnxinyminutes.com/docs/bash/" class="markup--anchor markup--li-anchor">Learn bash in y minutes</a> _(learnxinyminutes.com)_</span>
--   <span id="007b"><a href="http://mywiki.wooledge.org/BashGuide" class="markup--anchor markup--li-anchor">Bash Guide</a> _(mywiki.wooledge.org)_</span>
--   <span id="f2db"><a href="https://www.shellcheck.net/" class="markup--anchor markup--li-anchor">ShellCheck</a> _(shellcheck.net)_</span>
+-   <span id="4581"><a href="http://wiki.bash-hackers.org/" class="markup--anchor markup--li-anchor">Bash-hackers wiki</a> *(bash-hackers.org)*</span>
+-   <span id="b6a2"><a href="http://wiki.bash-hackers.org/syntax/shellvars" class="markup--anchor markup--li-anchor">Shell vars</a> *(bash-hackers.org)*</span>
+-   <span id="a5d4"><a href="https://learnxinyminutes.com/docs/bash/" class="markup--anchor markup--li-anchor">Learn bash in y minutes</a> *(learnxinyminutes.com)*</span>
+-   <span id="007b"><a href="http://mywiki.wooledge.org/BashGuide" class="markup--anchor markup--li-anchor">Bash Guide</a> *(mywiki.wooledge.org)*</span>
+-   <span id="f2db"><a href="https://www.shellcheck.net/" class="markup--anchor markup--li-anchor">ShellCheck</a> *(shellcheck.net)*</span>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [August 9, 2021](https://medium.com/p/3ec9d4e2e65).
 

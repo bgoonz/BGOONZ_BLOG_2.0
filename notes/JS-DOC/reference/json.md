@@ -1,12 +1,14 @@
-# JSON
+JSON
+====
 
-The `JSON` object contains methods for parsing [JavaScript Object Notation](https://json.org/) ([JSON](https://developer.mozilla.org/en-US/docs/Glossary/JSON)) and converting values to JSON. It can't be called or constructed, and aside from its two method properties, it has no interesting functionality of its own.
+The `JSON` object contains methods for parsing [JavaScript Object Notation](https://json.org/) ([JSON](https://developer.mozilla.org/en-US/docs/Glossary/JSON)) and converting values to JSON. It can’t be called or constructed, and aside from its two method properties, it has no interesting functionality of its own.
 
-## Description
+Description
+-----------
 
 ### JavaScript and JSON differences
 
-JSON is a syntax for serializing objects, arrays, numbers, strings, booleans, and [`null`](null). It is based upon JavaScript syntax but is distinct from it: some JavaScript is _not_ JSON.
+JSON is a syntax for serializing objects, arrays, numbers, strings, booleans, and [`null`](null). It is based upon JavaScript syntax but is distinct from it: some JavaScript is *not* JSON.
 
 **Objects and Arrays**  
 Property names must be double-quoted strings; [trailing commas](../trailing_commas) are forbidden.
@@ -14,8 +16,8 @@ Property names must be double-quoted strings; [trailing commas](../trailing_comm
 **Numbers**  
 Leading zeros are prohibited. A decimal point must be followed by at least one digit. `NaN` and `Infinity` are unsupported.
 
-**Any JSON text is a valid JavaScript expression...**  
-...But only in JavaScript engines that have implemented the [proposal to make all JSON text valid ECMA-262](https://github.com/tc39/proposal-json-superset). In engines that haven't implemented the proposal, U+2028 LINE SEPARATOR and U+2029 PARAGRAPH SEPARATOR are allowed in string literals and property keys in JSON; but their use in these features in JavaScript string literals is a [`SyntaxError`](syntaxerror).
+**Any JSON text is a valid JavaScript expression…**  
+…But only in JavaScript engines that have implemented the [proposal to make all JSON text valid ECMA-262](https://github.com/tc39/proposal-json-superset). In engines that haven’t implemented the proposal, U+2028 LINE SEPARATOR and U+2029 PARAGRAPH SEPARATOR are allowed in string literals and property keys in JSON; but their use in these features in JavaScript string literals is a [`SyntaxError`](syntaxerror).
 
 Consider this example where [`JSON.parse()`](json/parse) parses the string as JSON and [`Global_Objects/eval`](eval) executes the string as JavaScript:
 
@@ -79,7 +81,8 @@ The full JSON syntax is as follows:
 
 Insignificant [whitespace](https://developer.mozilla.org/en-US/docs/Glossary/Whitespace) may be present anywhere except within a `JSONNumber` (numbers must contain no whitespace) or `JSONString` (where it is interpreted as the corresponding character in the string, or would cause an error). The tab character ([U+0009](https://unicode-table.com/en/0009/)), carriage return ([U+000D](https://unicode-table.com/en/000D/)), line feed ([U+000A](https://unicode-table.com/en/000A/)), and space ([U+0020](https://unicode-table.com/en/0020/)) characters are the only valid whitespace characters.
 
-## Static methods
+Static methods
+--------------
 
 [`JSON.parse(text[, reviver])`](json/parse)  
 Parse the string `text` as JSON, optionally transform the produced value and its properties, and return the value. Any violations of the JSON syntax, including those pertaining to the differences between JavaScript and JSON, cause a [`SyntaxError`](syntaxerror) to be thrown. The `reviver` option allows for interpreting what the `replacer` has used to stand in for other datatypes.
@@ -87,7 +90,8 @@ Parse the string `text` as JSON, optionally transform the produced value and its
 [`JSON.stringify(value[, replacer[, space]])`](json/stringify)  
 Return a JSON string corresponding to the specified value, optionally including only certain properties or replacing property values in a user-defined manner. By default, all instances of [`undefined`](undefined) are replaced with [`null`](null), and other unsupported native data types are censored. The `replacer` option allows for specifying other behavior.
 
-## Examples
+Examples
+--------
 
 ### Example JSON
 
@@ -108,12 +112,11 @@ Return a JSON string corresponding to the specified value, optionally including 
       }
     }
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-json-object">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-json-object</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-json-object</span></td></tr></tbody></table>
 
 `JSON`
 
@@ -219,7 +222,8 @@ No
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`Date.prototype.toJSON()`](date/tojson)
 -   [JSON Diff](http://www.jsondiff.com/) checker

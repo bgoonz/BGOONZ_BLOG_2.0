@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>maximize</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="intl.locale.prototype.maximize">Intl.Locale.prototype.maximize()</h1>
+<p>The <code>Intl.Locale.prototype.maximize()</code> method gets the most likely values for the language, script, and region of the locale based on existing values.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>maximize()</code></pre>
+<h3 id="return-value">Return value</h3>
+<p>A <a href="../locale"><code>Locale</code></a> instance whose <code>baseName</code> property returns the result of the <a href="https://www.unicode.org/reports/tr35/#Likely_Subtags">Add Likely Subtags</a> algorithm executed against <em><a href="basename"><code>locale.baseName</code></a></em>.</p>
+<h2 id="description">Description</h2>
+<p>Sometimes, it is convenient to be able to identify the most likely locale language identifier subtags based on an incomplete langauage ID. The Add Likely Subtags algorithm gives us this functionality. For instance, given the language ID “en”, the algorithm would return “en-Latn-US”, since English can only be written in the Latin script, and is most likely to be used in the United States, as it is the largest English-speaking country in the world. This functionality is provided to JavaScript programmers via the <code>maximize()</code> method. <code>maximize()</code> only affects the main subtags that comprise the <a href="https://www.unicode.org/reports/tr35/#Language_Locale_Field_Definitions">language identifier</a>: language, script, and region subtags. Other subtags after the “-u” in the locale identifier are called extension subtags and are not affected by the <code>maximize()</code> method. Examples of these subtags include <a href="hourcycle"><code>Locale.hourCycle</code></a>, <a href="calendar"><code>Locale.calendar</code></a>, and <a href="numeric"><code>Locale.numeric</code></a>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-maximize">Using maximize</h3>
+<pre><code>let myLocale = new Intl.Locale(&quot;fr&quot;, {hourCycle: &quot;h24&quot;, calendar: &quot;gregory&quot;});
+console.log(myLocale.baseName); // Prints &quot;fr&quot;
+console.log(myLocale.toString()); // Prints &quot;fr-u-ca-gregory-hc-h24&quot;
+let myLocMaximized = myLocale.maximize();
+
+// Prints &quot;fr-Latn-FR&quot;. The &quot;Latn&quot; and &quot;FR&quot; tags are added,
+// since French is only written in the Latin script and is most likely to be spoken in France.
+console.log(myLocMaximized.baseName);
+
+// Prints &quot;fr-Latn-FR-u-ca-gregory-hc-h24&quot;.
+// Note that the extension tags (after &quot;-u&quot;) remain unchanged.
+console.log(myLocMaximized.toString());</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.maximize">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) <br/></p>
+<span class="small">#sec-Intl.Locale.prototype.maximize</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>maximize</code></p>
+<p>74</p>
+<p>79</p>
+<p>75</p>
+<p>No</p>
+<p>62</p>
+<p>14</p>
+<p>74</p>
+<p>74</p>
+<p>79</p>
+<p>53</p>
+<p>14</p>
+<p>11.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../locale"><code>Intl.Locale</code></a></li>
+<li><a href="basename"><code>Intl.Locale.baseName</code></a></li>
+<li><a href="https://www.unicode.org/reports/tr35/#Likely_Subtags">Unicode’s Likely Subtags spec</a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/maximize" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/maximize</a></p>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>sqlite3</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="to-create-database-and-launch-interactive-shell">to create database and launch interactive shell:</h1>
+<p>sqlite3 <database></p>
+<h1 id="to-create-table">to create table:</h1>
+<p>sqlite3 <database> “create table os(id integer primary key, name text, year integer);”</p>
+<h1 id="to-insert-data">to insert data:</h1>
+<p>sqlite3 <database> “insert into ‘os’ values(1,‘linux’,1991);”</p>
+<h1 id="to-list-tables">to list tables:</h1>
+<p>sqlite3 <database> “.tables”</p>
+<h1 id="to-describe-table">to describe table:</h1>
+<p>sqlite3 <database> “.schema ‘os’”</p>
+<h1 id="to-view-records-in-table">to view records in table:</h1>
+<p>sqlite3 <database> “select * from ‘os’;”</p>
+<h1 id="to-view-records-in-table-conditionally">to view records in table conditionally:</h1>
+<p>sqlite3 <database> “select * from ‘os’ where year=‘1991’;”</p>
+<h1 id="to-view-records-with-fuzzy-matching">to view records with fuzzy matching:</h1>
+<p>sqlite3 <database> “select * from ‘os’ where year like ‘19%’;”</p>
+</body>
+</html>

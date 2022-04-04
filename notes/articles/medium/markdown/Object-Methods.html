@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Object-Methods</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="object-methods">Object Methods</h1>
+<p>Objects store unordered key-value pairs. With Objects we can not rely on indices to access values.Meaning - we’ll have to iterate through…</p>
+<hr />
+<h3 id="object-methods-1">Object Methods</h3>
+<h4 id="objects-store-unordered-key-value-pairs.-with-objects-we-can-not-rely-on-indices-to-access-values.meaning---well-have-to-iterate-through-objects-in-new-ways-to-access-the-keys-and-values-within.">Objects store <em>unordered</em> <code>key</code>-<code>value</code> pairs. With Objects we can not rely on indices to access values.Meaning - we’ll have to iterate through objects in new ways to access the keys and values within.</h4>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*6jQe76YcAOKHZtjr.png" class="graf-image" />
+</figure>
+<p><strong>A list of all of my articles to link to future posts</strong> <br/></p>
+<p><em>You should probably skip this one… seriously it’s just for internal use!</em></p>
+<h3 id="iterating-through-objects">Iterating Through Objects</h3>
+<p>Objects store <em>unordered</em><br />
+<code>key</code>-<code>value</code> pairs. With Objects we can not rely on indices to access values.<br />
+Meaning - we’ll have to iterate through objects in new ways to access the keys<br />
+and values within.</p>
+<p>This article will cover:</p>
+<ol type="1">
+<li><span id="164e">Iterate through Object <code>keys</code> and <code>values</code> using a <code>for...in</code> loop</span></li>
+<li><span id="a166">Use the <code>Object.keys</code> and the <code>Object.values</code> methods to iterate through an Object.</span></li>
+</ol>
+<h3 id="for-in-loop">For In Loop</h3>
+<p>We can use special syntax to iterate through each <code>key</code> of an object (in<br />
+arbitrary order). This is super useful for looping through <strong>both</strong> the keys and<br />
+values of an object.</p>
+<p>The syntax looks like this:</p>
+<pre><code>// The current key is assigned to *variable* on each iteration.
+for (let variable in object) {
+  statement;
+}</code></pre>
+<h3 id="ex.">ex.)</h3>
+<pre><code>let obj = { name: &quot;Rose&quot;, cats: 2 };
+// The key we are accessing is assigned to the `currentKey`
+// *variable* on each iteration.
+for (let currentKey in obj) {
+  console.log(currentKey);
+}
+// prints out:
+// name
+// cats</code></pre>
+<p>The example above prints all the keys found in <code>obj</code> to the screen.</p>
+<p>On each iteration of the loop, the <code>key</code> we are currently accessing is assigned to the<code>currentKey</code> variable.</p>
+<p>To access values in an object, we would throw some bracket notation<br />
+into the mix:</p>
+<pre><code>let obj = { name: &quot;Rose&quot;, cats: 2 };
+for (let key in obj) {
+  let value = obj[key];
+  console.log(value);
+}
+// prints out:
+// Rose
+// 2</code></pre>
+<h4 id="you-can-only-use-variable-keys-when-using-bracket-notation-objkey">You can only use variable keys when using bracket notation (<code>obj[key]</code>)!</h4>
+<blockquote>
+<p>Like all variables, you can name the current key variable whatever you like -<br />
+just be descriptive! Here is an example of using a descriptive name for a key<br />
+variable:</p>
+</blockquote>
+<pre><code>let employees = {
+  manager: &quot;Angela&quot;,
+  sales: &quot;Gracie&quot;,
+  service: &quot;Paul&quot;
+};
+for (let title in employees) {
+  let person = employees[title];
+  console.log(person);
+}
+// prints out:
+// Angela
+// Gracie
+// Paul</code></pre>
+<h3 id="whats-a-method">What’s a method?</h3>
+<p>A <strong>method</strong> is essentially a function that <em>belongs to</em> an object.</p>
+<p>That means that every <em>method is a function</em>, but <strong>not</strong> every function<br />
+is a method.</p>
+<ul>
+<li><span id="cb33"><code>myFunc</code> is a function</span></li>
+<li><span id="2c47"><code>myObject.myFunc</code> is a <em>method</em> of the object <code>myObject</code></span></li>
+<li><span id="14fe"><code>myObject["myFunc"]</code> is a <em>method</em> of the object <code>myObject</code><br />
+A method is just a key-value pair where the <strong>key is the function name and the<br />
+value is the function definition</strong>! Let’s use what we learned earlier to teach<br />
+our dog some new tricks:</span></li>
+</ul>
+<!-- -->
+<pre><code>let dog = {
+  name: &quot;Fido&quot;
+};
+// defining a new key-value pair where the *function name* is the key
+// the function itself is the value!
+dog.bark = function() {
+  console.log(&quot;bark bark!&quot;);
+};
+// this is the same thing as above just using Bracket Notation
+dog[&quot;speak&quot;] = function(string) {
+  console.log(&quot;WOOF &quot; + string + &quot; WOOF!!!&quot;);
+};
+dog.bark(); // prints `bark bark!`
+dog.speak(&quot;pizza&quot;); // prints `WOOF pizza WOOF!!!`</code></pre>
+<p>Additionally, we can give objects methods when we initialize them:</p>
+<pre><code>let dog2 = {
+  name: &quot;Rover&quot;,
+  bark: function() {
+    console.log(&quot;bork bork!&quot;);
+  },
+  speak: function(string) {
+    console.log(&quot;BORK &quot; + string + &quot; BORK!!!&quot;);
+  }
+};
+// Notice that in the object above, we still separate the key-value pairs with commas.
+// `bark` and `speak` are just keys with functions as values.
+dog2.bark(); // prints `bork bork!`
+dog2.speak(&quot;burrito&quot;); // prints `BORK burrito BORK!!!`</code></pre>
+<p>To invoke, or call, a method we need to specify <strong>which</strong> object is calling that method. In the example above the <code>dog2</code> object had the <code>bark</code> method so to invoke <code>bark</code> we had to specify it was <code>dog2</code>’s method: <code>dog2.bark()</code>.</p>
+<h3 id="useful-object-methods">Useful Object Methods</h3>
+<h3 id="iterating-through-keys-using-object.keys">Iterating through keys using <code>Object.keys</code></h3>
+<p>The <code>Object.keys</code> method accepts an object as the argument and returns an array of the <em>keys</em> within that Object.</p>
+<pre><code>&gt; let dog = {name: &quot;Fido&quot;, age: &quot;2&quot;}
+undefined
+&gt; Object.keys(dog)
+[&#39;name&#39;, &#39;age&#39;]
+&gt; let cup = {color: &quot;Red&quot;, contents: &quot;coffee&quot;, weight: 5}
+undefined
+&gt; Object.keys(cup)
+[&#39;color&#39;, &#39;contents&#39;, &#39;weight&#39;]</code></pre>
+<p>The return value of <code>Object.keys</code> method is an array of keys - which is useful<br />
+for iterating!</p>
+<h3 id="iterating-through-keys-using-object.values">Iterating through keys using <code>Object.values</code></h3>
+<p>The <code>Object.values</code> method accepts an object as the argument and returns an<br />
+array of the <em>values</em> within that Object.</p>
+<pre><code>&gt; let dog = {name: &quot;Fido&quot;, age: &quot;2&quot;}
+undefined
+&gt; Object.values(dog)
+[&#39;Fido&#39;, &#39;2&#39;]
+&gt; let cup = {color: &quot;Red&quot;, contents: &quot;coffee&quot;, weight: 5}
+undefined
+&gt; Object.keys(cup)
+[&#39;Red&#39;, &#39;coffee&#39;, 5]</code></pre>
+<p>The return value of <code>Object.values</code> method is an array of values - which is<br />
+useful for iterating!</p>
+<p>By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on <a href="https://medium.com/p/4066ed24b214">June 3, 2021</a>.</p>
+<p><a href="https://medium.com/@bryanguner/object-methods-4066ed24b214" class="p-canonical">Canonical link</a></p>
+<p>August 31, 2021.</p>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>max_safe_integer</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="number.max_safe_integer">Number.MAX_SAFE_INTEGER</h1>
+<p>The <code>Number.MAX_SAFE_INTEGER</code> constant represents the maximum safe integer in JavaScript (<code>253 - 1</code>).</p>
+<p>For larger integers, consider using <a href="../bigint"><code>BigInt</code></a>.</p>
+<p>Property attributes of <code>Number.MAX_SAFE_INTEGER</code></p>
+<p>Writable</p>
+<p>no</p>
+<p>Enumerable</p>
+<p>no</p>
+<p>Configurable</p>
+<p>no</p>
+<h2 id="description">Description</h2>
+<p>The <code>MAX_SAFE_INTEGER</code> constant has a value of <code>9007199254740991</code> (9,007,199,254,740,991 or ~9 quadrillion). The reasoning behind that number is that JavaScript uses <a href="https://en.wikipedia.org/wiki/Double_precision_floating-point_format">double-precision floating-point format numbers</a> as specified in <a href="https://en.wikipedia.org/wiki/IEEE_floating_point">IEEE 754</a> and can only safely represent integers between <code>-(253 - 1)</code> and <code>253 - 1</code>.</p>
+<p>Safe in this context refers to the ability to represent integers exactly and to correctly compare them. For example, <code>Number.MAX_SAFE_INTEGER + 1 === Number.MAX_SAFE_INTEGER + 2</code> will evaluate to true, which is mathematically incorrect. See <a href="issafeinteger"><code>Number.isSafeInteger()</code></a> for more information.</p>
+<p>This field does not exist in old browsers. Using it without checking its existence, such as <code>Math.max(Number.MAX_SAFE_INTEGER, 2)</code>, will yield undesired results such as NaN.</p>
+<p>Because <code>MAX_SAFE_INTEGER</code> is a static property of <a href="../number"><code>Number</code></a>, you always use it as <code>Number.MAX_SAFE_INTEGER</code>, rather than as a property of a <a href="../number"><code>Number</code></a> object you created.</p>
+<h2 id="polyfill">Polyfill</h2>
+<pre><code>if (!Number.MAX_SAFE_INTEGER) {
+    Number.MAX_SAFE_INTEGER = 9007199254740991; // Math.pow(2, 53) - 1;
+}</code></pre>
+<h2 id="examples">Examples</h2>
+<h3 id="return-value-of-max_safe_integer">Return value of MAX_SAFE_INTEGER</h3>
+<pre><code>Number.MAX_SAFE_INTEGER; // 9007199254740991</code></pre>
+<h3 id="numbers-higher-than-safe-integer">Numbers higher than safe integer</h3>
+<p>This returns 2 because in floating points, the value is actually the decimal trailing “1” except for in subnormal precision cases such as zero.</p>
+<pre><code>Number.MAX_SAFE_INTEGER * Number.EPSILON; // 2</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-number.max_safe_integer">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-number.max_safe_integer</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>MAX_SAFE_INTEGER</code></p>
+<p>34</p>
+<p>12</p>
+<p>31</p>
+<p>No</p>
+<p>21</p>
+<p>9</p>
+<p>≤37</p>
+<p>34</p>
+<p>31</p>
+<p>21</p>
+<p>9</p>
+<p>2.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="min_safe_integer"><code>Number.MIN_SAFE_INTEGER</code></a></li>
+<li><a href="issafeinteger"><code>Number.isSafeInteger()</code></a></li>
+<li><a href="../bigint"><code>BigInt</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER</a></p>
+</body>
+</html>

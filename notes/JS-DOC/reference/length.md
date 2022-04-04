@@ -1,8 +1,10 @@
-# Array.prototype.length
+Array.prototype.length
+======================
 
 The `length` property of an object which is an instance of type `Array` sets or returns the number of elements in that array. The value is an unsigned, 32-bit integer that is always numerically greater than the highest index in the array.
 
-## Description
+Description
+-----------
 
 The value of the `length` property is an integer with a positive sign and a value less than 2 to the 32nd power (2<sup>32</sup>).
 
@@ -52,7 +54,8 @@ no
 -   `Configurable`: If this attribute set to `false`, any attempts to delete the property or change its attributes (`Writable`, `Configurable`, or `Enumerable`) will fail.
 -   `Enumerable`: If this attribute set to `true`, the property will be iterated over during [for](../../statements/for) or [for..in](../../statements/for...in) loops.
 
-## Examples
+Examples
+--------
 
 ### Iterating over an array
 
@@ -84,12 +87,11 @@ The following example shortens the array `numbers` to a length of 3 if the curre
     numbers.length = 3;
     console.log(numbers); // [undefined, undefined, undefined]
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-properties-of-array-instances-length">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-properties-of-array-instances-length</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-properties-of-array-instances-length</span></td></tr></tbody></table>
 
 `length`
 
@@ -117,7 +119,8 @@ The following example shortens the array `numbers` to a length of 3 if the curre
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`Array`](../array)
 -   [RangeError: invalid array length](../../errors/invalid_array_length)

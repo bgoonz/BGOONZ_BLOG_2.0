@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>values</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="typedarray.prototype.values">TypedArray.prototype.values()</h1>
+<p>The <code>values()</code> method returns a new array iterator object that contains the values for each index in the array.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>values()</code></pre>
+<h3 id="return-value">Return value</h3>
+<p>A new array iterator object.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="iteration-using-forof-loop">Iteration using for…of loop</h3>
+<pre><code>var arr = [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;];
+var iterator = arr.values();
+
+for (let letter of iterator) {
+  console.log(letter);
+}  //&quot;a&quot; &quot;b&quot; &quot;c&quot; &quot;d&quot; &quot;e&quot;</code></pre>
+<p><code>Array.prototype.values</code> is default implementation of <code>Array.prototype[Symbol.iterator]</code>.</p>
+<pre><code>Array.prototype.values === Array.prototype[Symbol.iterator]      //true</code></pre>
+<h3 id="iteration-using-.next">Iteration using .next()</h3>
+<pre><code>var arr = [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;];
+var iterator = arr.values();
+iterator.next();               // Object { value: &quot;a&quot;, done: false }
+iterator.next().value;         // &quot;b&quot;
+iterator.next()[&quot;value&quot;];      // &quot;c&quot;
+iterator.next();               // Object { value: &quot;d&quot;, done: false }
+iterator.next();               // Object { value: &quot;e&quot;, done: false }
+iterator.next();               // Object { value: undefined, done: true }
+iteraror.next().value;         // undefined</code></pre>
+<p><strong>Warning:</strong> One-use: the array iterator object is one use or temporary object</p>
+<p>example:</p>
+<pre><code>var arr = [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;];
+ var iterator = arr.values();
+ for (let letter of iterator) {
+ console.log(letter);
+} //&quot;a&quot; &quot;b&quot; &quot;c&quot; &quot;d&quot; &quot;e&quot;
+for (let letter of iterator) {
+console.log(letter);
+} // undefined</code></pre>
+<p><strong>reason:</strong> When <code>next().done=true</code> or <code>currentIndex&gt;length</code> the <code>for..of</code> loop ends. See <a href="../../iteration_protocols">Iteration protocols.</a></p>
+<p><strong>Value</strong>: there are no values stored in the array Iterator object; instead it stores the address of the array used in its creation and so depends on the values stored in that array.</p>
+<pre><code>var arr = [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;];
+var iterator = arr.values();
+console.log(iterator);        // Array Iterator {  }
+iterator.next().value;        // &quot;a&quot;
+arr[1]=&#39;n&#39;;
+iterator.next().value;        //  &quot;n&quot;</code></pre>
+<p><strong>Note:</strong> If the values in the array changed the array iterator object values change too.</p>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="#">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-%typedarray%.prototype.values</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>values</code></p>
+<p>38</p>
+<p>14</p>
+<p>37</p>
+<p>No</p>
+<p>25</p>
+<p>10</p>
+<p>38</p>
+<p>38</p>
+<p>37</p>
+<p>25</p>
+<p>10</p>
+<p>3.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../array/keys"><code>Array.prototype.keys()</code></a></li>
+<li><a href="../array/entries"><code>Array.prototype.entries()</code></a></li>
+<li><a href="../array/foreach"><code>Array.prototype.forEach()</code></a></li>
+<li><a href="../array/every"><code>Array.prototype.every()</code></a></li>
+<li><a href="../array/some"><code>Array.prototype.some()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/values" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/values</a></p>
+</body>
+</html>

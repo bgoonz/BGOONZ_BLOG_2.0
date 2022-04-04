@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>SNIPPETS</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<p>Mounting a Docker Socket:</p>
+<pre><code>      - image: docker:stable-dind
+        name: docker-in-docker
+        volumeMounts:
+          - name: dockersock
+            mountPath: &quot;/var/run&quot;
+            #mountPath: &quot;/var/run/docker.sock&quot;
+        securityContext:
+          privileged: true
+          allowPrivilegeEscalation: true
+      volumes:
+      - name: dockersock
+        hostPath:
+          path: /var/run/docker.sock
+          #type: File</code></pre>
+</body>
+</html>

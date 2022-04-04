@@ -1,4 +1,5 @@
-# Number
+Number
+======
 
 `Number` is a [primitive wrapper object](https://developer.mozilla.org/en-US/docs/Glossary/Primitive#primitive_wrapper_objects_in_javascript) used to represent and manipulate numbers like `37` or `-9.25`.
 
@@ -10,9 +11,10 @@ A number literal like `37` in JavaScript code is a floating-point value, not an 
 
 Number may also be expressed in literal forms like `0b101`, `0o13`, `0x0A`. Learn more on numeric [lexical grammar here](../lexical_grammar#numeric_literals).
 
-## Description
+Description
+-----------
 
-When used as a function, `Number(value)` converts a string or other value to the Number type. If the value can't be converted, it returns [`NaN`](nan).
+When used as a function, `Number(value)` converts a string or other value to the Number type. If the value can’t be converted, it returns [`NaN`](nan).
 
 ### Literal syntax
 
@@ -28,12 +30,14 @@ When used as a function, `Number(value)` converts a string or other value to the
     Number("unicorn")  // NaN
     Number(undefined)  // NaN
 
-## Constructor
+Constructor
+-----------
 
 [`Number()`](number/number)  
 Creates a new `Number` value.
 
-## Static properties
+Static properties
+-----------------
 
 [`Number.EPSILON`](number/epsilon)  
 The smallest interval between two representable numbers.
@@ -51,7 +55,7 @@ The minimum safe integer in JavaScript (`-(253 - 1)`).
 The smallest positive representable number—that is, the positive number closest to zero (without actually being zero).
 
 [`Number.NaN`](number/nan)  
-Special "**N**ot **a** **N**umber" value.
+Special “**N**ot **a** **N**umber” value.
 
 [`Number.NEGATIVE_INFINITY`](number/negative_infinity)  
 Special value representing negative infinity. Returned on overflow.
@@ -62,7 +66,8 @@ Special value representing infinity. Returned on overflow.
 [`Number.prototype`](number)  
 Allows the addition of properties to the `Number` object.
 
-## Static methods
+Static methods
+--------------
 
 [`Number.isNaN()`](number/isnan)  
 Determine whether the passed value is `NaN`.
@@ -82,7 +87,8 @@ This is the same as the global [`parseFloat()`](parsefloat) function.
 [`Number.parseInt(string, [radix])`](number/parseint)  
 This is the same as the global [`parseInt()`](parseint) function.
 
-## Instance methods
+Instance methods
+----------------
 
 [`Number.prototype.toExponential(fractionDigits)`](number/toexponential)  
 Returns a string representing the number in exponential notation.
@@ -97,16 +103,17 @@ Returns a string with a language sensitive representation of this number. Overri
 Returns a string representing the number to a specified precision in fixed-point or exponential notation.
 
 [`Number.prototype.toString([radix])`](number/tostring)  
-Returns a string representing the specified object in the specified radix ("base"). Overrides the [`Object.prototype.toString()`](object/tostring) method.
+Returns a string representing the specified object in the specified radix (“base”). Overrides the [`Object.prototype.toString()`](object/tostring) method.
 
 [`Number.prototype.valueOf()`](number/valueof)  
 Returns the primitive value of the specified object. Overrides the [`Object.prototype.valueOf()`](object/valueof) method.
 
-## Examples
+Examples
+--------
 
 ### Using the Number object to assign values to numeric variables
 
-The following example uses the `Number` object's properties to assign values to several numeric variables:
+The following example uses the `Number` object’s properties to assign values to several numeric variables:
 
     const biggestNum     = Number.MAX_VALUE
     const smallestNum    = Number.MIN_VALUE
@@ -116,7 +123,7 @@ The following example uses the `Number` object's properties to assign values to 
 
 ### Integer range for Number
 
-The following example shows the minimum and maximum integer values that can be represented as `Number` object. (More details on this are described in the ECMAScript standard, chapter _[6.1.6 The Number Type](https://tc39.github.io/ecma262/#sec-ecmascript-language-types-number-type)._)
+The following example shows the minimum and maximum integer values that can be represented as `Number` object. (More details on this are described in the ECMAScript standard, chapter *[6.1.6 The Number Type](https://tc39.github.io/ecma262/#sec-ecmascript-language-types-number-type).*)
 
     const biggestInt  = Number.MAX_SAFE_INTEGER  //  (2**53 - 1) =>  9007199254740991
     const smallestInt = Number.MIN_SAFE_INTEGER  // -(2**53 - 1) => -9007199254740991
@@ -152,14 +159,14 @@ This logs `819199440000`.
     Number('100a')    // NaN
     Number('-Infinity') //-Infinity
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number-objects">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-number-objects</span></td></tr></tbody></table>
 
-<span class="small">#sec-number-objects</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -793,7 +800,8 @@ No
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`NaN`](nan)
 -   <span class="page-not-created">`Arithmetic operators`</span>

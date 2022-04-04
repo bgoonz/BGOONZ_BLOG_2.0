@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>css-grid</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="css-grid">CSS Grid</h1>
+<h4 id="container">Container</h4>
+<div class="sourceCode" id="cb1"><pre class="sourceCode css"><code class="sourceCode css"><a class="sourceLine" id="cb1-1" title="1"><span class="fu">.grid-container</span> {</a></code></pre></div>
+<p>{: .-setup}</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode css"><code class="sourceCode css"><a class="sourceLine" id="cb2-1" title="1"><span class="co">/* Display properties */</span></a>
+<a class="sourceLine" id="cb2-2" title="2">display<span class="in">: grid</span>;</a>
+<a class="sourceLine" id="cb2-3" title="3">display<span class="in">: inline-grid</span>;</a>
+<a class="sourceLine" id="cb2-4" title="4">display<span class="in">: subgrid</span>;</a></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode css"><code class="sourceCode css"><a class="sourceLine" id="cb3-1" title="1"><span class="co">/* Columns and rows */</span></a>
+<a class="sourceLine" id="cb3-2" title="2">grid-template-columns<span class="in">: 1rem 2rem 1rem; /* Measurement</span> units <span class="op">*</span>/</a>
+<a class="sourceLine" id="cb3-3" title="3">grid-template-columns<span class="in">: 25% 50% 25%; /* Percentage</span> units <span class="op">*</span>/</a>
+<a class="sourceLine" id="cb3-4" title="4">grid-template-columns<span class="in">: 1rem auto</span> 1rem 2fr; <span class="co">/* Fill remaining widths with auto or fr units */</span></a>
+<a class="sourceLine" id="cb3-5" title="5">grid-template-columns<span class="in">: repeat(12, 1fr)</span>; <span class="co">/* Repeat columns without needing to write them */</span></a>
+<a class="sourceLine" id="cb3-6" title="6"></a>
+<a class="sourceLine" id="cb3-7" title="7">grid-template-rows<span class="in">: 1rem 10% auto</span> repeat(5<span class="op">,</span> 10px); <span class="co">/* Mix any group, same rules work for rows */</span></a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode css"><code class="sourceCode css"><a class="sourceLine" id="cb4-1" title="1"><span class="co">/* Automatic columns and rows */</span></a>
+<a class="sourceLine" id="cb4-2" title="2"></a>
+<a class="sourceLine" id="cb4-3" title="3">grid-auto-columns<span class="in">: 10px; /* No</span> matter how many columns of content end up in the grid<span class="op">,</span> each column will be this same width <span class="op">*</span>/</a>
+<a class="sourceLine" id="cb4-4" title="4">grid-auto-rows<span class="in">: 1rem; /* No</span> matter how many rows of content end up in the grid<span class="op">,</span> each row will be this same height <span class="op">*</span>/</a></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode css"><code class="sourceCode css"><a class="sourceLine" id="cb5-1" title="1"><span class="co">/* Areas */</span></a>
+<a class="sourceLine" id="cb5-2" title="2">grid-template-areas<span class="in">:</span></a>
+<a class="sourceLine" id="cb5-3" title="3">    &#39;header header&#39;</a>
+<a class="sourceLine" id="cb5-4" title="4">    &#39;main aside&#39;</a>
+<a class="sourceLine" id="cb5-5" title="5">    &#39;footer footer&#39;; <span class="co">/* Grid-style */</span></a>
+<a class="sourceLine" id="cb5-6" title="6"></a>
+<a class="sourceLine" id="cb5-7" title="7">grid-template-areas<span class="in">: &#39;header</span> header&#39; &#39;main aside&#39; &#39;footer footer&#39;; <span class="co">/* Inline-style */</span></a></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode css"><code class="sourceCode css"><a class="sourceLine" id="cb6-1" title="1"><span class="co">/* Template shorthand */</span></a>
+<a class="sourceLine" id="cb6-2" title="2">grid-template<span class="in">:</span></a>
+<a class="sourceLine" id="cb6-3" title="3">    &#39;header header&#39; auto</a>
+<a class="sourceLine" id="cb6-4" title="4">    &#39;main aside&#39; 100vh</a>
+<a class="sourceLine" id="cb6-5" title="5">    &#39;footer footer&#39; 10rem</a>
+<a class="sourceLine" id="cb6-6" title="6">    / 80% 20%;</a>
+<a class="sourceLine" id="cb6-7" title="7"></a>
+<a class="sourceLine" id="cb6-8" title="8"><span class="co">/* The above is the same as below long-hand */</span></a>
+<a class="sourceLine" id="cb6-9" title="9">grid-template-columns<span class="in">: 80% 20%;</span></a>
+<a class="sourceLine" id="cb6-10" title="10">grid-template-rows<span class="in">: auto</span> 100vh 10rem;</a>
+<a class="sourceLine" id="cb6-11" title="11">grid-template-areas<span class="in">:</span></a>
+<a class="sourceLine" id="cb6-12" title="12">    &#39;header header&#39;</a>
+<a class="sourceLine" id="cb6-13" title="13">    &#39;main aside&#39;</a>
+<a class="sourceLine" id="cb6-14" title="14">    &#39;footer footer&#39;;</a></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode css"><code class="sourceCode css"><a class="sourceLine" id="cb7-1" title="1"><span class="co">/* Gaps */</span></a>
+<a class="sourceLine" id="cb7-2" title="2">grid-row-gap<span class="in">: 1rem;</span></a>
+<a class="sourceLine" id="cb7-3" title="3">grid-column-gap<span class="in">: 0.5rem; /* Define</span> values separately <span class="op">*</span>/</a>
+<a class="sourceLine" id="cb7-4" title="4"></a>
+<a class="sourceLine" id="cb7-5" title="5">grid-gap<span class="in">: 1rem 0.5rem; /* Short-hand</span> for row / column <span class="op">*</span>/</a>
+<a class="sourceLine" id="cb7-6" title="6">grid-gap<span class="in">: 1rem; /* Gap</span> in both dimensions <span class="op">*</span>/</a></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode css"><code class="sourceCode css"><a class="sourceLine" id="cb8-1" title="1"><span class="co">/* Item justification (horizontal or column alignment) */</span></a>
+<a class="sourceLine" id="cb8-2" title="2">justify-items<span class="in">: start</span>; <span class="co">/* Align items to the left */</span></a>
+<a class="sourceLine" id="cb8-3" title="3">justify-items<span class="in">: center</span>; <span class="co">/* Align items centered within its column */</span></a>
+<a class="sourceLine" id="cb8-4" title="4">justify-items<span class="in">: end</span>; <span class="co">/* Align items to the right */</span></a>
+<a class="sourceLine" id="cb8-5" title="5">justify-items<span class="in">: stretch</span>; <span class="co">/* (default) Fills available area (horizontally) */</span></a></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode css"><code class="sourceCode css"><a class="sourceLine" id="cb9-1" title="1"><span class="co">/* Item alignment (vertical or row alignment) */</span></a>
+<a class="sourceLine" id="cb9-2" title="2">align-items<span class="in">: start</span>; <span class="co">/* Align items to the top */</span></a>
+<a class="sourceLine" id="cb9-3" title="3">align-items<span class="in">: center</span>; <span class="co">/* Align items centered within its row */</span></a>
+<a class="sourceLine" id="cb9-4" title="4">align-items<span class="in">: end</span>; <span class="co">/* Align items to the bottom */</span></a>
+<a class="sourceLine" id="cb9-5" title="5">align-items<span class="in">: stretch</span>; <span class="co">/* (default) Fills available area (vertically) */</span></a></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode css"><code class="sourceCode css"><a class="sourceLine" id="cb10-1" title="1"><span class="co">/* Place item shorthand */</span></a>
+<a class="sourceLine" id="cb10-2" title="2">place-items<span class="in">: start</span> stretch;</a>
+<a class="sourceLine" id="cb10-3" title="3"></a>
+<a class="sourceLine" id="cb10-4" title="4"><span class="co">/* The above is the same as below long-hand */</span></a>
+<a class="sourceLine" id="cb10-5" title="5">align-items<span class="in">: start</span>;</a>
+<a class="sourceLine" id="cb10-6" title="6">justify-items<span class="in">: stretch</span>;</a></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode css"><code class="sourceCode css"><a class="sourceLine" id="cb11-1" title="1"><span class="co">/* Content justification (horizontal or column alignment) */</span></a>
+<a class="sourceLine" id="cb11-2" title="2">justify-content<span class="in">: start</span>; <span class="co">/* Align content to the left */</span></a>
+<a class="sourceLine" id="cb11-3" title="3">justify-content<span class="in">: center</span>; <span class="co">/* Align content centered horizontally within the grid */</span></a>
+<a class="sourceLine" id="cb11-4" title="4">justify-content<span class="in">: end</span>; <span class="co">/* Align content to the right */</span></a>
+<a class="sourceLine" id="cb11-5" title="5">justify-content<span class="in">: stretch</span>; <span class="co">/* (default) Fills available area (horizontally) */</span></a>
+<a class="sourceLine" id="cb11-6" title="6"></a>
+<a class="sourceLine" id="cb11-7" title="7">justify-content<span class="in">: space-around</span>; <span class="co">/* Chooses a space for both sides of the columns like a left and right margin */</span></a>
+<a class="sourceLine" id="cb11-8" title="8">justify-content<span class="in">: space-between</span>; <span class="co">/* Chooses a space to go between columns, no margins on outside of content */</span></a>
+<a class="sourceLine" id="cb11-9" title="9">justify-content<span class="in">: space-evenly</span>; <span class="co">/* Chooses a space that goes between all columns and edges consistently */</span></a></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode css"><code class="sourceCode css"><a class="sourceLine" id="cb12-1" title="1"><span class="co">/* Content alignment (horizontal or column alignment) */</span></a>
+<a class="sourceLine" id="cb12-2" title="2">align-content<span class="in">: start</span>; <span class="co">/* Align content to the top */</span></a>
+<a class="sourceLine" id="cb12-3" title="3">align-content<span class="in">: center</span>; <span class="co">/* Align content centered vertically within the grid */</span></a>
+<a class="sourceLine" id="cb12-4" title="4">align-content<span class="in">: end</span>; <span class="co">/* Align content to the bottom */</span></a>
+<a class="sourceLine" id="cb12-5" title="5">align-content<span class="in">: stretch</span>; <span class="co">/* (default) Fills available area (vertically) */</span></a>
+<a class="sourceLine" id="cb12-6" title="6"></a>
+<a class="sourceLine" id="cb12-7" title="7">align-content<span class="in">: space-around</span>; <span class="co">/* Chooses a space for the top and bottom of the rows like a top and bottom margin */</span></a>
+<a class="sourceLine" id="cb12-8" title="8">align-content<span class="in">: space-between</span>; <span class="co">/* Chooses a space to go between rows, no margins on outside of content */</span></a>
+<a class="sourceLine" id="cb12-9" title="9">align-content<span class="in">: space-evenly</span>; <span class="co">/* Chooses a space that goes between all rows and edges consistently */</span></a></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode css"><code class="sourceCode css"><a class="sourceLine" id="cb13-1" title="1"><span class="co">/* Place item shorthand */</span></a>
+<a class="sourceLine" id="cb13-2" title="2">place-content<span class="in">: center</span> start;</a>
+<a class="sourceLine" id="cb13-3" title="3"></a>
+<a class="sourceLine" id="cb13-4" title="4"><span class="co">/* The above is the same as below long-hand */</span></a>
+<a class="sourceLine" id="cb13-5" title="5">align-content<span class="in">: center</span>;</a>
+<a class="sourceLine" id="cb13-6" title="6">justify-content<span class="in">: start</span>;</a></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode css"><code class="sourceCode css"><a class="sourceLine" id="cb14-1" title="1"><span class="co">/* Automatic grid positioning */</span></a>
+<a class="sourceLine" id="cb14-2" title="2"></a>
+<a class="sourceLine" id="cb14-3" title="3">grid-auto-flow<span class="in">: row</span>; <span class="co">/* Left-to-right rows, then top-to-bottom*/</span></a>
+<a class="sourceLine" id="cb14-4" title="4">grid-auto-flow<span class="in">: column</span>; <span class="co">/* Top-to-bottom columns, then left-to-right */</span></a>
+<a class="sourceLine" id="cb14-5" title="5">grid-auto-flow<span class="in">: dense</span>; <span class="co">/* Responds with best-guess on left-to-right, top-to-bottom order with advanced layouts */</span></a></code></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode css"><code class="sourceCode css"><a class="sourceLine" id="cb15-1" title="1"><span class="co">/* There is one final shorthand for all container properties in one */</span></a>
+<a class="sourceLine" id="cb15-2" title="2"></a>
+<a class="sourceLine" id="cb15-3" title="3"><span class="co">/* Explicit grid columns, rows, and areas */</span></a>
+<a class="sourceLine" id="cb15-4" title="4">grid<span class="in">:</span></a>
+<a class="sourceLine" id="cb15-5" title="5">    &#39;header header&#39; auto</a>
+<a class="sourceLine" id="cb15-6" title="6">    &#39;main aside&#39; 100vh</a>
+<a class="sourceLine" id="cb15-7" title="7">    &#39;footer footer&#39; 10rem</a>
+<a class="sourceLine" id="cb15-8" title="8">    / 80% 20%; <span class="co">/* You can include a template as the only value, which is equivalent to below */</span></a>
+<a class="sourceLine" id="cb15-9" title="9">grid-template<span class="in">:</span></a>
+<a class="sourceLine" id="cb15-10" title="10">    &#39;header header&#39; auto</a>
+<a class="sourceLine" id="cb15-11" title="11">    &#39;main aside&#39; 100vh</a>
+<a class="sourceLine" id="cb15-12" title="12">    &#39;footer footer&#39; 10rem</a>
+<a class="sourceLine" id="cb15-13" title="13">    / 80% 20%; <span class="co">/* Which is again equivalent to below */</span></a>
+<a class="sourceLine" id="cb15-14" title="14">grid-template-columns<span class="in">: 80% 20%;</span></a>
+<a class="sourceLine" id="cb15-15" title="15">grid-template-rows<span class="in">: auto</span> 100vh 10rem;</a>
+<a class="sourceLine" id="cb15-16" title="16">grid-template-areas<span class="in">:</span></a>
+<a class="sourceLine" id="cb15-17" title="17">    &#39;header header&#39;</a>
+<a class="sourceLine" id="cb15-18" title="18">    &#39;main aside&#39;</a>
+<a class="sourceLine" id="cb15-19" title="19">    &#39;footer footer&#39;;</a>
+<a class="sourceLine" id="cb15-20" title="20"></a>
+<a class="sourceLine" id="cb15-21" title="21"><span class="co">/* Automatic grid flows */</span></a>
+<a class="sourceLine" id="cb15-22" title="22">grid<span class="in">: 1rem / auto-flow</span> dense 1fr; <span class="co">/* You can include rows, a flow, and automatic columns, which is equivalent to below */</span></a>
+<a class="sourceLine" id="cb15-23" title="23">grid-template-rows<span class="in">: 1rem;</span></a>
+<a class="sourceLine" id="cb15-24" title="24">grid-auto-flow<span class="in">: dense</span>;</a>
+<a class="sourceLine" id="cb15-25" title="25">grid-auto-columns<span class="in">: 1fr;</span></a>
+<a class="sourceLine" id="cb15-26" title="26"></a>
+<a class="sourceLine" id="cb15-27" title="27">grid<span class="in">: auto-flow</span> dense 1rem / repeat(10<span class="op">,</span> 10%); <span class="co">/* Conversely, you can do the same thing with automatic rows, and defined columns */</span></a>
+<a class="sourceLine" id="cb15-28" title="28">grid-auto-flow<span class="in">: dense</span>;</a>
+<a class="sourceLine" id="cb15-29" title="29">grid-auto-rows<span class="in">: 1rem;</span></a>
+<a class="sourceLine" id="cb15-30" title="30">grid-template-columns<span class="in">: repeat(10, 10%)</span>;</a></code></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode css"><code class="sourceCode css"><a class="sourceLine" id="cb16-1" title="1">}</a></code></pre></div>
+<p>{: .-setup}</p>
+<h4 id="child">Child</h4>
+<div class="sourceCode" id="cb17"><pre class="sourceCode css"><code class="sourceCode css"><a class="sourceLine" id="cb17-1" title="1"><span class="fu">.grid-child</span> {</a></code></pre></div>
+<p>{: .-setup}</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode css"><code class="sourceCode css"><a class="sourceLine" id="cb18-1" title="1"><span class="co">/* Column position */</span></a>
+<a class="sourceLine" id="cb18-2" title="2">grid-column-start<span class="in">: 1;</span></a>
+<a class="sourceLine" id="cb18-3" title="3">grid-column-end<span class="in">: 2;</span></a>
+<a class="sourceLine" id="cb18-4" title="4"></a>
+<a class="sourceLine" id="cb18-5" title="5">grid-column<span class="in">: 1 / 2; /* Short</span> hand <span class="op">*</span>/</a>
+<a class="sourceLine" id="cb18-6" title="6">grid-column<span class="in">: 1 / span</span> 2; <span class="co">/* Span 2 columns without explicitly defining an endpoint */</span></a>
+<a class="sourceLine" id="cb18-7" title="7">grid-column<span class="in">: 1; /* Start</span> in and occupy a single column <span class="op">*</span>/</a></code></pre></div>
+<div class="sourceCode" id="cb19"><pre class="sourceCode css"><code class="sourceCode css"><a class="sourceLine" id="cb19-1" title="1"><span class="co">/* Row position */</span></a>
+<a class="sourceLine" id="cb19-2" title="2">grid-row-start<span class="in">: 2;</span></a>
+<a class="sourceLine" id="cb19-3" title="3">grid-row-end<span class="in">: 4;</span></a>
+<a class="sourceLine" id="cb19-4" title="4"></a>
+<a class="sourceLine" id="cb19-5" title="5">grid-row<span class="in">: 2 / 4; /* Short</span> hand <span class="op">*</span>/</a>
+<a class="sourceLine" id="cb19-6" title="6">grid-row<span class="in">: 2 / span</span> 3; <span class="co">/* Span 3 rows without explicitly defining an endpoint */</span></a>
+<a class="sourceLine" id="cb19-7" title="7">grid-row<span class="in">: 1; /* Start</span> in and occupy a single row <span class="op">*</span>/</a></code></pre></div>
+<div class="sourceCode" id="cb20"><pre class="sourceCode css"><code class="sourceCode css"><a class="sourceLine" id="cb20-1" title="1"><span class="co">/* Area positioning */</span></a>
+<a class="sourceLine" id="cb20-2" title="2">grid-area<span class="in">: header</span>; <span class="co">/* You can use a named grid area from the container */</span></a>
+<a class="sourceLine" id="cb20-3" title="3"></a>
+<a class="sourceLine" id="cb20-4" title="4">grid-area<span class="in">: 2 / 1 / 4 / 2; /* Or</span> you can use positioning<span class="fu">.</span> This is equivalent to<span class="fu">...</span> <span class="op">*</span>/</a>
+<a class="sourceLine" id="cb20-5" title="5">grid-row-start<span class="in">: 2;</span></a>
+<a class="sourceLine" id="cb20-6" title="6">grid-column-start<span class="in">: 1;</span></a>
+<a class="sourceLine" id="cb20-7" title="7">grid-row-end<span class="in">: 4;</span></a>
+<a class="sourceLine" id="cb20-8" title="8">grid-column-end<span class="in">: 2;</span></a></code></pre></div>
+<div class="sourceCode" id="cb21"><pre class="sourceCode css"><code class="sourceCode css"><a class="sourceLine" id="cb21-1" title="1"><span class="co">/* Self justification (horizontal or column alignment) */</span></a>
+<a class="sourceLine" id="cb21-2" title="2">justify-self<span class="in">: start</span>; <span class="co">/* Align item to the left */</span></a>
+<a class="sourceLine" id="cb21-3" title="3">justify-self<span class="in">: center</span>; <span class="co">/* Align item centered within its column */</span></a>
+<a class="sourceLine" id="cb21-4" title="4">justify-self<span class="in">: end</span>; <span class="co">/* Align item to the right */</span></a>
+<a class="sourceLine" id="cb21-5" title="5">justify-self<span class="in">: stretch</span>; <span class="co">/* (default) Fills available area (horizontally) */</span></a></code></pre></div>
+<div class="sourceCode" id="cb22"><pre class="sourceCode css"><code class="sourceCode css"><a class="sourceLine" id="cb22-1" title="1"><span class="co">/* Self alignment (vertical or row alignment) */</span></a>
+<a class="sourceLine" id="cb22-2" title="2">align-self<span class="in">: start</span>; <span class="co">/* Align item to the top */</span></a>
+<a class="sourceLine" id="cb22-3" title="3">align-self<span class="in">: center</span>; <span class="co">/* Align item centered within its row */</span></a>
+<a class="sourceLine" id="cb22-4" title="4">align-self<span class="in">: end</span>; <span class="co">/* Align item to the bottom */</span></a>
+<a class="sourceLine" id="cb22-5" title="5">align-self<span class="in">: stretch</span>; <span class="co">/* (default) Fills available area (vertically) */</span></a></code></pre></div>
+<div class="sourceCode" id="cb23"><pre class="sourceCode css"><code class="sourceCode css"><a class="sourceLine" id="cb23-1" title="1"><span class="co">/* Placement shorthand */</span></a>
+<a class="sourceLine" id="cb23-2" title="2">place-self<span class="in">: start</span> stretch;</a>
+<a class="sourceLine" id="cb23-3" title="3"></a>
+<a class="sourceLine" id="cb23-4" title="4"><span class="co">/* The above is the same as below long-hand */</span></a>
+<a class="sourceLine" id="cb23-5" title="5">align-self<span class="in">: start</span>;</a>
+<a class="sourceLine" id="cb23-6" title="6">justify-self<span class="in">: stretch</span>;</a></code></pre></div>
+<div class="sourceCode" id="cb24"><pre class="sourceCode css"><code class="sourceCode css"><a class="sourceLine" id="cb24-1" title="1">}</a></code></pre></div>
+<p>{: .-setup}</p>
+<h3 id="references">References</h3>
+<p>{: .-one-column}</p>
+<ul>
+<li><a href="http://grid.malven.co">GRID: A simple visual cheatsheet</a></li>
+<li><a href="https://css-tricks.com/snippets/css/complete-guide-grid/">CSS Tricks: A Complete Guide to Grid</a></li>
+<li><a href="https://caniuse.com/#feat=css-grid">Browser support</a></li>
+</ul>
+</body>
+</html>

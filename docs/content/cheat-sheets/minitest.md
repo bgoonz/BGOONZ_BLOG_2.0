@@ -1,8 +1,3 @@
----
-title: Minitest
-category: Ruby
----
-
 ### Usage
 
     require 'minitest/autorun'

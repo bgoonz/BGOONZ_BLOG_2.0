@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>script</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="intl.locale.prototype.script">Intl.Locale.prototype.script</h1>
+<p>The <code>Intl.Locale.prototype.script</code> property is an accessor property which returns the script used for writing the particular language used in the locale.</p>
+<h2 id="description">Description</h2>
+<p>A script, sometimes called writing system, is one of the core attributes of a locale. It indicates the set of symbols, or glyphs, that are used to write a particular language. For instance, the script associated with English is Latin, whereas the script typically associated with Korean is Hangul. In many cases, denoting a script is not strictly necessary, since the language (which is necessary) is only written in a single script. There are exceptions to this rule, however, and it is important to indicate the script whenever possible, in order to have a complete Unicode language identifier.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="setting-the-script-in-the-locale-identifer-string-argument">Setting the script in the locale identifer string argument</h3>
+<p>The script is the second part of a valid Unicode language identifier string, and can be set by adding it to the locale identifier string that is passed into the <a href="locale"><code>Locale</code></a> constructor. Note that the script is not a required part of a locale identifier.</p>
+<pre><code>let scriptStr = new Intl.Locale(&quot;en-Latn-US&quot;);
+
+console.log(scriptStr.script); // Prints &quot;Latn&quot;</code></pre>
+<h3 id="setting-the-script-via-the-configuration-object">Setting the script via the configuration object</h3>
+<p>The <a href="locale"><code>Locale</code></a> constructor takes a configuration object, which can be used to set the script subtag and property.</p>
+<pre><code>let scriptObj = new Intl.Locale(&quot;fr-FR&quot;, {script: &quot;Latn&quot;});
+
+console.log(scriptObj.script); // Prints &quot;Latn&quot;</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.script">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) <br/></p>
+<span class="small">#sec-Intl.Locale.prototype.script</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>script</code></p>
+<p>74</p>
+<p>79</p>
+<p>75</p>
+<p>No</p>
+<p>62</p>
+<p>14</p>
+<p>74</p>
+<p>74</p>
+<p>79</p>
+<p>53</p>
+<p>14</p>
+<p>11.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../locale"><code>Intl.Locale</code></a></li>
+<li><a href="https://www.unicode.org/reports/tr35/#unicode_script_subtag_validity">Unicode’s script subtag specification</a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/script" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/script</a></p>
+</body>
+</html>

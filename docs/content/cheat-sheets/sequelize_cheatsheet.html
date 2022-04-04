@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>sequelize_cheatsheet</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="sequelize_cheatsheet">sequelize_cheatsheet</h1>
+<h3 id="command-line">Command Line <a href="#command-line" id="command-line"></a></h3>
+<p>Sequelize provides utilities for generating migrations, models, and seed files. They are exposed through the <code>sequelize-cli</code> command.</p>
+<pre><code>npm install sequelize@^5.0.0
+npm install sequelize-cli@^5.0.0
+npm install pg@^8.0.0</code></pre>
+<pre><code>$ npx sequelize-cli init</code></pre>
+<p>You must create a database user, and update the <code>config/config.json</code> file to match your database settings to complete the initialization process.</p>
+<pre><code>$ npx sequelize-cli db:create
+$ npx sequelize-cli db:create --env=&quot;test&quot;</code></pre>
+<h4 id="generate-a-model-and-its-migration">Generate a model and its migration <a href="#generate-a-model-and-its-migration" id="generate-a-model-and-its-migration"></a></h4>
+<pre><code>$ npx sequelize-cli model:generate --name &lt;ModelName&gt; --attributes &lt;column1&gt;:&lt;type&gt;,&lt;column2&gt;:&lt;type&gt;,...</code></pre>
+<pre><code>$ npx sequelize-cli db:migrate</code></pre>
+<pre><code>$ npx sequelize-cli db:migrate:undo</code></pre>
+<pre><code>$ npx sequelize-cli db:migrate:undo:all</code></pre>
+<pre><code>$ npx sequelize-cli seed:generate --name &lt;descriptiveName&gt;</code></pre>
+<pre><code>$ npx sequelize-cli db:seed:all</code></pre>
+<pre><code>$ npx sequelize-cli db:seed:undo</code></pre>
+<pre><code>$ npx sequelize-cli db:seed:undo:all</code></pre>
+<h4 id="column-attribute-keywords">Column Attribute Keywords <a href="#column-attribute-keywords" id="column-attribute-keywords"></a></h4>
+<pre><code>&lt;columnName&gt;: {
+    type: Sequelize.&lt;type&gt;,
+    allowNull: &lt;true|false&gt;,
+    unique: &lt;true|false&gt;,
+    references: { model: &lt;TableName&gt; },
+}</code></pre>
+<h4 id="one-to-one-between-student-and-scholarship">One to One between Student and Scholarship <a href="#one-to-one-between-student-and-scholarship" id="one-to-one-between-student-and-scholarship"></a></h4>
+<p><code>student.js</code></p>
+<pre><code>    Student.hasOne(models.Scholarship, { foreignKey: &#39;studentId&#39; });</code></pre>
+<p><code>scholarship.js</code></p>
+<pre><code>    Scholarship.belongsTo(models.Student, { foreignKey: &#39;studentId&#39; });</code></pre>
+<h4 id="one-to-many-between-student-and-class">One to Many between Student and Class <a href="#one-to-many-between-student-and-class" id="one-to-many-between-student-and-class"></a></h4>
+<p><code>student.js</code></p>
+<pre><code>    Student.belongsTo(models.Class, { foreignKey: &#39;classId&#39; });</code></pre>
+<p><code>class.js</code></p>
+<pre><code>    Class.hasMany(models.Student, { foreignKey: &#39;classId&#39; });</code></pre>
+<h4 id="many-to-many-between-student-and-lesson-through-studentlessons-table">Many to Many between Student and Lesson through StudentLessons table <a href="#many-to-many-between-student-and-lesson-through-studentlessons-table" id="many-to-many-between-student-and-lesson-through-studentlessons-table"></a></h4>
+<p><code>student.js</code></p>
+<pre><code>    const columnMapping = {
+        through: &#39;StudentLesson&#39;,
+        otherKey: &#39;lessonId&#39;,
+        foreignKey: &#39;studentId&#39;
+    }
+
+    Student.belongsToMany(models.Lesson, columnMapping);</code></pre>
+<p><code>lesson.js</code></p>
+<pre><code>    const columnMapping = {
+        through: &#39;StudentLesson&#39;,
+        otherKey: &#39;studentId&#39;,
+        foreignKey: &#39;lessonId&#39;
+    }
+
+    Lesson.belongsToMany(models.Student, columnMapping);</code></pre>
+<pre><code>&lt;Model&gt;.findOne({
+  where: {
+    &lt;column&gt;: {
+        [Op.&lt;operator&gt;]: &lt;value&gt;
+    }
+  },
+});</code></pre>
+<pre><code>&lt;Model&gt;.findAll({
+  where: {
+    &lt;column&gt;: {
+        [Op.&lt;operator&gt;]: &lt;value&gt;
+    }
+  },
+  include: &lt;include_specifier&gt;,
+  offset: 10,
+  limit: 2
+});</code></pre>
+<pre><code>&lt;Model&gt;.findByPk(&lt;primary_key&gt;, {
+    include: &lt;include_specifier&gt;
+});</code></pre>
+<pre><code>const Op = Sequelize.Op
+
+[Op.and]: [{a: 5}, {b: 6}]
+[Op.or]: [{a: 5}, {a: 6}]
+[Op.gt]: 6,
+[Op.gte]: 6,
+[Op.lt]: 10,
+[Op.lte]: 10,
+[Op.ne]: 20,
+[Op.eq]: 3,
+[Op.is]: null
+[Op.not]: true,
+[Op.between]: [6, 10],
+[Op.notBetween]: [11, 15],
+[Op.in]: [1, 2],
+[Op.notIn]: [1, 2],
+[Op.like]: &#39;%hat&#39;,
+[Op.notLike]: &#39;%hat&#39;
+[Op.iLike]: &#39;%hat&#39;
+[Op.notILike]: &#39;%hat&#39;
+[Op.startsWith]: &#39;hat&#39;
+[Op.endsWith]: &#39;hat&#39;
+[Op.substring]: &#39;hat&#39;
+[Op.regexp]: &#39;^[h|a|t]&#39;
+[Op.notRegexp]: &#39;^[h|a|t]&#39;
+[Op.iRegexp]: &#39;^[h|a|t]&#39;
+[Op.notIRegexp]: &#39;^[h|a|t]&#39;
+[Op.like]: { [Op.any]: [&#39;cat&#39;, &#39;hat&#39;]}</code></pre>
+</body>
+</html>

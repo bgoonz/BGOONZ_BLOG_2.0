@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>getutcmilliseconds</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="date.prototype.getutcmilliseconds">Date.prototype.getUTCMilliseconds()</h1>
+<p>The <code>getUTCMilliseconds()</code> method returns the milliseconds portion of the time object’s value.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>getUTCMilliseconds()</code></pre>
+<h3 id="return-value">Return value</h3>
+<p>An integer number, between 0 and 999, representing the milliseconds portion of the given date object. This method is a companion to the other UTC based methods that give hour portion, minute portion, etc.; this method gives milliseconds portion.</p>
+<p>Not to be confused with Unix epoch time. To get total milliseconds since 1970/01/01, use the method “.getTime()”.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-getutcmilliseconds">Using getUTCMilliseconds()</h3>
+<p>The following example assigns the milliseconds portion of the current time to the variable <code>milliseconds</code>.</p>
+<pre><code>var today = new Date();
+var milliseconds = today.getUTCMilliseconds();</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-date.prototype.getutcmilliseconds">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-date.prototype.getutcmilliseconds</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>getUTCMilliseconds</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>4</p>
+<p>4</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="getmilliseconds"><code>Date.prototype.getMilliseconds()</code></a></li>
+<li><a href="setutcmilliseconds"><code>Date.prototype.setUTCMilliseconds()</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCMilliseconds" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCMilliseconds</a></p>
+</body>
+</html>

@@ -1,8 +1,10 @@
-# Array.prototype.splice()
+Array.prototype.splice()
+========================
 
 The `splice()` method changes the contents of an array by removing or replacing existing elements and/or adding new elements [in place](https://en.wikipedia.org/wiki/In-place_algorithm).
 
-## Syntax
+Syntax
+------
 
     splice(start)
     splice(start, deleteCount)
@@ -36,13 +38,15 @@ If only one element is removed, an array of one element is returned.
 
 If no elements are removed, an empty array is returned.
 
-## Description
+Description
+-----------
 
-If the specified number of elements to insert differs from the number of elements being removed, the array's `length` will be changed.
+If the specified number of elements to insert differs from the number of elements being removed, the array’s `length` will be changed.
 
-## Examples
+Examples
+--------
 
-### Remove 0 (zero) elements before index 2, and insert "drum"
+### Remove 0 (zero) elements before index 2, and insert “drum”
 
     let myFish = ['angel', 'clown', 'mandarin', 'sturgeon']
     let removed = myFish.splice(2, 0, 'drum')
@@ -50,7 +54,7 @@ If the specified number of elements to insert differs from the number of element
     // myFish is ["angel", "clown", "drum", "mandarin", "sturgeon"]
     // removed is [], no elements removed
 
-### Remove 0 (zero) elements before index 2, and insert "drum" and "guitar"
+### Remove 0 (zero) elements before index 2, and insert “drum” and “guitar”
 
     let myFish = ['angel', 'clown', 'mandarin', 'sturgeon']
     let removed = myFish.splice(2, 0, 'drum', 'guitar')
@@ -66,7 +70,7 @@ If the specified number of elements to insert differs from the number of element
     // myFish is ["angel", "clown", "drum", "sturgeon"]
     // removed is ["mandarin"]
 
-### Remove 1 element at index 2, and insert "trumpet"
+### Remove 1 element at index 2, and insert “trumpet”
 
     let myFish = ['angel', 'clown', 'drum', 'sturgeon']
     let removed = myFish.splice(2, 1, 'trumpet')
@@ -74,7 +78,7 @@ If the specified number of elements to insert differs from the number of element
     // myFish is ["angel", "clown", "trumpet", "sturgeon"]
     // removed is ["drum"]
 
-### Remove 2 elements from index 0, and insert "parrot", "anemone" and "blue"
+### Remove 2 elements from index 0, and insert “parrot”, “anemone” and “blue”
 
     let myFish = ['angel', 'clown', 'trumpet', 'sturgeon']
     let removed = myFish.splice(0, 2, 'parrot', 'anemone', 'blue')
@@ -106,14 +110,14 @@ If the specified number of elements to insert differs from the number of element
     // myFish is ["angel", "clown"]
     // removed is ["mandarin", "sturgeon"]
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.splice">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-array.prototype.splice</span></td></tr></tbody></table>
 
-<span class="small">#sec-array.prototype.splice</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -171,7 +175,8 @@ From Internet Explorer 5.5 through 8, all elements of the array will not be dele
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`push()`](push) / [`pop()`](pop)— add/remove elements from the end of the array
 -   [`unshift()`](unshift) / [`shift()`](shift)— add/remove elements from the beginning of the array

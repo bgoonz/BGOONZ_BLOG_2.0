@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>toprimitive</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="symbol.toprimitive">Symbol.toPrimitive</h1>
+<p>The <code>Symbol.toPrimitive</code> is a symbol that specifies a function valued property that is called to convert an object to a corresponding primitive value.</p>
+<h2 id="description">Description</h2>
+<p>With the help of the <code>Symbol.toPrimitive</code> property (used as a function value), an object can be converted to a primitive value. The function is called with a string argument <code>hint</code>, which specifies the preferred type of the result primitive value. The <code>hint</code> argument can be one of “<code>number</code>”, “<code>string</code>”, and “<code>default</code>”.</p>
+<p>Property attributes of <code>Symbol.toPrimitive</code></p>
+<p>Writable</p>
+<p>no</p>
+<p>Enumerable</p>
+<p>no</p>
+<p>Configurable</p>
+<p>no</p>
+<h2 id="examples">Examples</h2>
+<h3 id="modifying-primitive-values-converted-from-an-object">Modifying primitive values converted from an object</h3>
+<p>Following example describes how <code>Symbol.toPrimitive</code> property can modify the primitive value converted from an object.</p>
+<pre><code>// An object without Symbol.toPrimitive property.
+var obj1 = {};
+console.log(+obj1);     // NaN
+console.log(`${obj1}`); // &quot;[object Object]&quot;
+console.log(obj1 + &#39;&#39;); // &quot;[object Object]&quot;
+
+// An object with Symbol.toPrimitive property.
+var obj2 = {
+  [Symbol.toPrimitive](hint) {
+    if (hint == &#39;number&#39;) {
+      return 10;
+    }
+    if (hint == &#39;string&#39;) {
+      return &#39;hello&#39;;
+    }
+    return true;
+  }
+};
+console.log(+obj2);     // 10        -- hint is &quot;number&quot;
+console.log(`${obj2}`); // &quot;hello&quot;   -- hint is &quot;string&quot;
+console.log(obj2 + &#39;&#39;); // &quot;true&quot;    -- hint is &quot;default&quot;</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-symbol.toprimitive">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-symbol.toprimitive</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>toPrimitive</code></p>
+<p>47</p>
+<p>15</p>
+<p>44</p>
+<p>No</p>
+<p>34</p>
+<p>10</p>
+<p>47</p>
+<p>47</p>
+<p>44</p>
+<p>34</p>
+<p>10</p>
+<p>5.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../date/@@toprimitive"><code>Date.prototype[@@toPrimitive]</code></a></li>
+<li><a href="@@toprimitive"><code>Symbol.prototype[@@toPrimitive]</code></a></li>
+<li><a href="../object/tostring"><code>Object.prototype.toString()</code></a></li>
+<li><a href="../object/valueof"><code>Object.prototype.valueOf()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/toPrimitive" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/toPrimitive</a></p>
+</body>
+</html>

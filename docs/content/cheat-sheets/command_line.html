@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2022-01-03" />
+  <title>Command Line Basics</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Command Line Basics</h1>
+<p class="subtitle">Here is a list of options and example commands</p>
+<p class="date">2022-01-03</p>
+</header>
+<hr />
+<h2 id="title-command-line-stuff">title: Command line stuff</h2>
+<h2 id="list-ls">List (ls)</h2>
+<pre><code>ls [options] [paths]</code></pre>
+<h3 id="format">Format</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Switch</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>-1</code></td>
+<td>One entry per line</td>
+</tr>
+<tr class="even">
+<td><code>-l</code></td>
+<td>Long view</td>
+</tr>
+<tr class="odd">
+<td><code>-o</code></td>
+<td>Long view (without groups)</td>
+</tr>
+<tr class="even">
+<td><code>-C</code></td>
+<td>Multicolumn (sorted horizontally)</td>
+</tr>
+<tr class="odd">
+<td><code>-x</code></td>
+<td>Multicolumn (sorted vertically)</td>
+</tr>
+</tbody>
+</table>
+<p>|— | <code>-F</code> | Add / after directories | | <code>-G</code> | Color | {:.shortcuts}</p>
+<h3 id="options">Options</h3>
+<div class="line-block"><code>-R</code> | Recurse |<br />
+<code>-a</code> | Include hidden (dotfiles) |<br />
+<code>-A</code> | Include hidden (but not . and ..) |</div>
+<p>{:.shortcuts}</p>
+<h3 id="sorting">Sorting</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Switch</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>-r</code></td>
+<td>reverse order</td>
+</tr>
+<tr class="even">
+<td><code>-S</code></td>
+<td>sort by size</td>
+</tr>
+<tr class="odd">
+<td><code>-t</code></td>
+<td>sort by time modified</td>
+</tr>
+<tr class="even">
+<td><code>-u</code></td>
+<td>sort by time accessed</td>
+</tr>
+<tr class="odd">
+<td><code>-U</code></td>
+<td>sort by time created</td>
+</tr>
+<tr class="even">
+<td><code>-c</code></td>
+<td>sort by time status was changed</td>
+</tr>
+</tbody>
+</table>
+<p>|— | <code>-h</code> | Human-readable size (3k) | {:.shortcuts}</p>
+<p><br></p>
+<h2 id="tail">Tail</h2>
+<pre><code>tail [-F | -f | -r] [-bN | -cN | -nN] [file ...]</code></pre>
+<h3 id="modes">Modes</h3>
+<div class="line-block"><code>-f</code> | follow |<br />
+<code>-F</code> | follow by filename (accounts for log rotation) |<br />
+<code>-r</code> | Reverse order |</div>
+<p>{:.shortcuts}</p>
+<h3 id="options-1">Options</h3>
+<div class="line-block"><code>-bN</code> | N*512 bytes |<br />
+<code>-cN</code> | N bytes |<br />
+<code>-nN</code> | N lines |<br />
+<code>+N</code> | Start from line N |</div>
+<p>{:.shortcuts}</p>
+<p><br></p>
+<h2 id="sudo">Sudo</h2>
+<pre><code>sudo [options] &lt;command&gt;</code></pre>
+<h3 id="listing">Listing</h3>
+<div class="line-block"><code>-l</code> | List allowed commands |</div>
+<p>{:.shortcuts}</p>
+<h3 id="options-2">Options</h3>
+<div class="line-block"><code>-A</code> | Use $SUDO_ASKPASS |<br />
+<code>-b</code> | Run in background |<br />
+<code>-E</code> | Preserve environment |<br />
+<code>-H</code> | use target’s $HOME |<br />
+<code>-n</code> | Don’t prompt for password |<br />
+<code>-P</code> | Preserve group vector |<br />
+<code>-S</code> | Read password from stdin |</div>
+<p>{:.shortcuts}</p>
+<h3 id="file-descriptors">File descriptors</h3>
+<div class="line-block"><code>-C fd</code> | Close all open file descriptors |</div>
+<p>{:.shortcuts}</p>
+<h3 id="prompt">Prompt</h3>
+<div class="line-block"><code>-p prompt</code> | Custom prompt (-p “%p password:”) |</div>
+<p>{:.shortcuts}</p>
+<h3 id="interactive">Interactive</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Switch</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>-i [cmd]</code></td>
+<td>Interactive shell without variables</td>
+</tr>
+<tr class="even">
+<td><code>-s [cmd]</code></td>
+<td>Interactive shell</td>
+</tr>
+</tbody>
+</table>
+<p>|—- | <code>-u user</code> | run as this user | | <code>-g group</code> | run as this group | {:.shortcuts}</p>
+<h3 id="timestamp">Timestamp</h3>
+<div class="line-block"><code>-v</code> | revalidate timestamp for 5 mins |<br />
+<code>-k</code> | invalidate timestamp |<br />
+<code>-K</code> | just like -k |</div>
+<p>{:.shortcuts}</p>
+<p><br></p>
+<h2 id="wc-word-count">wc (Word count)</h2>
+<pre><code>... | wc [options]</code></pre>
+<div class="line-block"><code>-c</code> | Bytes |<br />
+<code>-l</code> | Lines |<br />
+<code>-m</code> | Characters (incl multi-byte) |<br />
+<code>-w</code> | Words |</div>
+<p>{:.shortcuts}</p>
+<p><br></p>
+<h2 id="search-and-replace-in-all-files">Search-and-replace in all files</h2>
+<pre><code>perl -p -i -e &#39;s/hello/HELLO/g&#39; **/*</code></pre>
+<p><br></p>
+<h2 id="grep">Grep</h2>
+<pre><code>grep [options] [pattern] [file ...]</code></pre>
+<h3 id="options-3">Options</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Switch</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>-A num</code></td>
+<td>Print <code>num</code> lines of training context</td>
+</tr>
+</tbody>
+</table>
+<p>|—- | <code>-G</code> | –basic-regexp (default) | | <code>-E</code> | –extended-regexp | | <code>-P</code> | –perl-regexp | |—- | <code>-f file</code> | –file (Get patterns for file) | | <code>-F</code> | –fixed-strings | |—- | <code>-h</code> | –no-filename | | <code>-H</code> | –with-filename | |—- | <code>-l</code> | –files-with-matches (just print filenames) | | <code>-L</code> | –files-without-match | |—- | <code>-r, -R</code> | –recursive | | <code>-v</code> | –invert-match | | <code>-i</code> | –ignore-case | {:.shortcuts}</p>
+<h3 id="synonyms">Synonyms</h3>
+<pre><code>egrep  =&gt;  grep -E
+fgrep  =&gt;  grep -F</code></pre>
+</body>
+</html>

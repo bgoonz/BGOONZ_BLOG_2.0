@@ -1,8 +1,10 @@
-# Number.prototype.toFixed()
+Number.prototype.toFixed()
+==========================
 
 The `toFixed()` method formats a number using fixed-point notation.
 
-## Syntax
+Syntax
+------
 
     toFixed()
     toFixed(digits)
@@ -24,13 +26,15 @@ If `digits` is too small or too large. Values between `0` and `100`, inclusive, 
 [`TypeError`](../typeerror)  
 If this method is invoked on an object that is not a [`Number`](../number).
 
-## Description
+Description
+-----------
 
 `toFixed()` returns a string representation of `numObj` that does not use exponential notation and has exactly `digits` digits after the decimal place. The number is rounded if necessary, and the fractional part is padded with zeros if necessary so that it has the specified length. If the absolute value of `numObj` is greater or equal to `1e+21`, this method calls [`Number.prototype.toString()`](tostring) and returns a string in exponential notation.
 
 **Warning:** Floating point numbers cannot represent all decimals precisely in binary. This can lead to unexpected results, such as `0.1 + 0.2 === 0.3` returning `false` .
 
-## Examples
+Examples
+--------
 
 ### Using toFixed
 
@@ -47,14 +51,14 @@ If this method is invoked on an object that is not a [`Number`](../number).
     -2.34.toFixed(1)       // Returns -2.3 (due to operator precedence, negative number literals don't return a string...)
     (-2.34).toFixed(1)     // Returns '-2.3'
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.prototype.tofixed">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-number.prototype.tofixed</span></td></tr></tbody></table>
 
-<span class="small">#sec-number.prototype.tofixed</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -110,12 +114,12 @@ Samsung Internet
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`Number.prototype.toExponential()`](toexponential)
 -   [`Number.prototype.toPrecision()`](toprecision)
 -   [`Number.prototype.toString()`](tostring)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed</a>

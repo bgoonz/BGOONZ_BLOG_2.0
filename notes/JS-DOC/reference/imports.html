@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>imports</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="webassembly.module.imports">WebAssembly.Module.imports()</h1>
+<p>The <code>WebAssembly.imports()</code> function returns an array containing descriptions of all the declared imports of the given <code>Module</code>.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>WebAssembly.Module.imports(module)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><em>module</em><br />
+A <a href="../module"><code>WebAssembly.Module</code></a> object.</p>
+<h3 id="return-value">Return value</h3>
+<p>An array containing objects representing the imported functions of the given module.</p>
+<h3 id="exceptions">Exceptions</h3>
+<p>If module is not a <a href="../module"><code>WebAssembly.Module</code></a> object instance, a <a href="../../typeerror"><code>TypeError</code></a> is thrown.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-imports">Using imports</h3>
+<p>The following example (see imports.html <a href="https://github.com/mdn/webassembly-examples/blob/master/js-api-examples/imports.html">source code</a>; <a href="https://mdn.github.io/webassembly-examples/js-api-examples/imports.html">see it live also</a>) compiles the loaded simple.wasm module. This module is then queried for its imports.</p>
+<pre><code>WebAssembly.compileStreaming(fetch(&#39;simple.wasm&#39;))
+.then(function(mod) {
+  var imports = WebAssembly.Module.imports(mod);
+  console.log(imports[0]);
+});</code></pre>
+<p>The output looks like this:</p>
+<pre><code>{ module: &quot;imports&quot;, name: &quot;imported_func&quot;, kind: &quot;function&quot; }</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://webassembly.github.io/spec/js-api/#dom-module-imports">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) <br/></p>
+<span class="small">#dom-module-imports</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>imports</code></p>
+<p>57</p>
+<p>16</p>
+<p>52</p>
+<p>Disabled in the Firefox 52 Extended Support Release (ESR).</p>
+<p>No</p>
+<p>44</p>
+<p>11</p>
+<p>57</p>
+<p>57</p>
+<p>52</p>
+<p>Disabled in the Firefox 52 Extended Support Release (ESR).</p>
+<p>43</p>
+<p>11</p>
+<p>7.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/WebAssembly">WebAssembly</a> overview page</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts">WebAssembly concepts</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API">Using the WebAssembly JavaScript API</a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Module/imports" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Module/imports</a></p>
+</body>
+</html>

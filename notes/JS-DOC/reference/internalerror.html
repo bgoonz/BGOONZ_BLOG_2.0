@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>internalerror</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="internalerror">InternalError</h1>
+<p><strong>Non-standard</strong></p>
+<p>This feature is non-standard and is not on a standards track. Do not use it on production sites facing the Web: it will not work for every user. There may also be large incompatibilities between implementations and the behavior may change in the future.</p>
+<p>The <code>InternalError</code> indicates an error that occurred internally in the JavaScript engine.</p>
+<p>Example cases are mostly when something is too large, e.g.:</p>
+<ul>
+<li>“too many switch cases”,</li>
+<li>“too many parentheses in regular expression”,</li>
+<li>“array initializer too large”,</li>
+<li>“too much recursion”.</li>
+</ul>
+<h2 id="constructor">Constructor</h2>
+<p><a href="internalerror/internalerror"><code>InternalError()</code></a><br />
+Creates a new <code>InternalError</code> object.</p>
+<h2 id="instance-properties">Instance properties</h2>
+<p><a href="error/message"><code>InternalError.prototype.message</code></a><br />
+Error message. Inherited from <a href="error"><code>Error</code></a>.</p>
+<p><a href="error/name"><code>InternalError.prototype.name</code></a><br />
+Error name. Inherited from <a href="error"><code>Error</code></a>.</p>
+<p><a href="error/filename"><code>InternalError.prototype.fileName</code></a><br />
+Path to file that raised this error. Inherited from <a href="error"><code>Error</code></a>.</p>
+<p><a href="error/linenumber"><code>InternalError.prototype.lineNumber</code></a><br />
+Line number in file that raised this error. Inherited from <a href="error"><code>Error</code></a>.</p>
+<p><a href="error/columnnumber"><code>InternalError.prototype.columnNumber</code></a><br />
+Column number in line that raised this error. Inherited from <a href="error"><code>Error</code></a>.</p>
+<p><a href="error/stack"><code>InternalError.prototype.stack</code></a><br />
+Stack trace. Inherited from <a href="error"><code>Error</code></a>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="too-much-recursion">Too much recursion</h3>
+<p>This recursive function runs 10 times, as per the exit condition.</p>
+<pre><code>function loop(x) {
+  if (x &gt;= 10) // &quot;x &gt;= 10&quot; is the exit condition
+    return;
+  // do stuff
+  loop(x + 1); // the recursive call
+}
+loop(0);</code></pre>
+<p>Setting this condition to an extremely high value, won’t work:</p>
+<pre><code>function loop(x) {
+  if (x &gt;= 1000000000000)
+    return;
+  // do stuff
+  loop(x + 1);
+}
+loop(0);
+
+// InternalError: too much recursion</code></pre>
+<p>For more information, see <a href="../errors/too_much_recursion">InternalError: too much recursion.</a></p>
+<h2 id="specifications">Specifications</h2>
+<p>Not part of any standard.</p>
+<p><code>InternalError</code></p>
+<p>No</p>
+<p>No</p>
+<p>1</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>4</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p><code>InternalError</code></p>
+<p>No</p>
+<p>No</p>
+<p>1</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>4</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="error"><code>Error</code></a></li>
+<li><a href="../errors/too_much_recursion">InternalError: too much recursion</a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError</a></p>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>debugger</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="debugger">debugger</h1>
+<p>The <code>debugger</code> invokes any available debugging functionality, such as setting a breakpoint. If no debugging functionality is available, this statement has no effect.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>debugger;</code></pre>
+<h2 id="examples">Examples</h2>
+<h3 id="using-the-debugger-statement">Using the debugger statement</h3>
+<p>The following example shows code where a <code>debugger</code> statement has been inserted, to invoke a debugger (if one exists) when the function is called.</p>
+<pre><code>function potentiallyBuggyCode() {
+    debugger;
+    // do potentially buggy stuff to examine, step through, etc.
+}</code></pre>
+<p>When the debugger is invoked, execution is paused at the <code>debugger</code> statement. It is like a breakpoint in the script source.</p>
+<p><a href="https://mdn.mozillademos.org/files/6963/Screen%20Shot%202014-02-07%20at%209.14.35%20AM.png"><img src="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/debugger/screen_shot_2014-02-07_at_9.14.35_am.png" alt="Paused at a debugger statement." width="2730" height="1446" /></a></p>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-debugger-statement">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-debugger-statement</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>debugger</code></p>
+<p>5</p>
+<p>12</p>
+<p>1</p>
+<p>4</p>
+<p>10</p>
+<p>5</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>4.2</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Debugging/Debugging_JavaScript">Debugging JavaScript</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Tools/Debugger">The Debugger in the Firefox Developer Tools</a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/debugger" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/debugger</a></p>
+</body>
+</html>

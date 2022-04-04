@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>float64array</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="float64array">Float64Array</h1>
+<p>The <code>Float64Array</code> typed array represents an array of 64-bit floating point numbers (corresponding to the C <code>double</code> data type) in the platform byte order. If control over byte order is needed, use <a href="dataview"><code>DataView</code></a> instead. The contents are initialized to <code>0</code>. Once established, you can reference elements in the array using the object’s methods, or using standard array index syntax (that is, using bracket notation).</p>
+<h2 id="constructor">Constructor</h2>
+<p><a href="float64array/float64array"><code>Float64Array()</code></a><br />
+Creates a new <code>Float64Array</code> object.</p>
+<h2 id="static-properties">Static properties</h2>
+<p><a href="typedarray/bytes_per_element"><code>Float64Array.BYTES_PER_ELEMENT</code></a><br />
+Returns a number value of the element size. <code>8</code> in the case of an <code>Float64Array</code>.</p>
+<p><a href="typedarray/name"><code>Float64Array.name</code></a><br />
+Returns the string value of the constructor name. In the case of the <code>Float64Array</code> type: “Float64Array”.</p>
+<h2 id="static-methods">Static methods</h2>
+<p><a href="typedarray/from"><code>Float64Array.from()</code></a><br />
+Creates a new <code>Float64Array</code> from an array-like or iterable object. See also <a href="array/from"><code>Array.from()</code></a>.</p>
+<p><a href="typedarray/of"><code>Float64Array.of()</code></a><br />
+Creates a new <code>Float64Array</code> with a variable number of arguments. See also <a href="array/of"><code>Array.of()</code></a>.</p>
+<h2 id="instance-properties">Instance properties</h2>
+<p><a href="typedarray/buffer"><code>Float64Array.prototype.buffer</code></a><br />
+Returns the <a href="arraybuffer"><code>ArrayBuffer</code></a> referenced by the <code>Float64Array</code> Fixed at construction time and thus <strong>read only</strong>.</p>
+<p><a href="typedarray/bytelength"><code>Float64Array.prototype.byteLength</code></a><br />
+Returns the length (in bytes) of the <code>Float64Array</code> from the start of its <a href="arraybuffer"><code>ArrayBuffer</code></a>. Fixed at construction time and thus <strong>read only.</strong></p>
+<p><a href="typedarray/byteoffset"><code>Float64Array.prototype.byteOffset</code></a><br />
+Returns the offset (in bytes) of the <code>Float64Array</code> from the start of its <a href="arraybuffer"><code>ArrayBuffer</code></a>. Fixed at construction time and thus <strong>read only.</strong></p>
+<p><a href="typedarray/length"><code>Float64Array.prototype.length</code></a><br />
+Returns the number of elements hold in the <code>Float64Array</code>. Fixed at construction time and thus <strong>read only.</strong></p>
+<h2 id="instance-methods">Instance methods</h2>
+<p><a href="typedarray/copywithin"><code>Float64Array.prototype.copyWithin()</code></a><br />
+Copies a sequence of array elements within the array. See also <a href="array/copywithin"><code>Array.prototype.copyWithin()</code></a>.</p>
+<p><a href="typedarray/entries"><code>Float64Array.prototype.entries()</code></a><br />
+Returns a new <code>Array Iterator</code> object that contains the key/value pairs for each index in the array. See also <a href="array/entries"><code>Array.prototype.entries()</code></a>.</p>
+<p><a href="typedarray/every"><code>Float64Array.prototype.every()</code></a><br />
+Tests whether all elements in the array pass the test provided by a function. See also <a href="array/every"><code>Array.prototype.every()</code></a>.</p>
+<p><a href="typedarray/fill"><code>Float64Array.prototype.fill()</code></a><br />
+Fills all the elements of an array from a start index to an end index with a static value. See also <a href="array/fill"><code>Array.prototype.fill()</code></a>.</p>
+<p><a href="typedarray/filter"><code>Float64Array.prototype.filter()</code></a><br />
+Creates a new array with all of the elements of this array for which the provided filtering function returns true. See also <a href="array/filter"><code>Array.prototype.filter()</code></a>.</p>
+<p><a href="typedarray/find"><code>Float64Array.prototype.find()</code></a><br />
+Returns the found value in the array, if an element in the array satisfies the provided testing function or <code>undefined</code> if not found. See also <a href="array/find"><code>Array.prototype.find()</code></a>.</p>
+<p><a href="typedarray/findindex"><code>Float64Array.prototype.findIndex()</code></a><br />
+Returns the found index in the array, if an element in the array satisfies the provided testing function or -1 if not found. See also <a href="array/findindex"><code>Array.prototype.findIndex()</code></a>.</p>
+<p><a href="typedarray/foreach"><code>Float64Array.prototype.forEach()</code></a><br />
+Calls a function for each element in the array. See also <a href="array/foreach"><code>Array.prototype.forEach()</code></a>.</p>
+<p><a href="typedarray/includes"><code>Float64Array.prototype.includes()</code></a><br />
+Determines whether a typed array includes a certain element, returning <code>true</code> or <code>false</code> as appropriate. See also <a href="array/includes"><code>Array.prototype.includes()</code></a>.</p>
+<p><a href="typedarray/indexof"><code>Float64Array.prototype.indexOf()</code></a><br />
+Returns the first (least) index of an element within the array equal to the specified value, or -1 if none is found. See also <a href="array/indexof"><code>Array.prototype.indexOf()</code></a>.</p>
+<p><a href="typedarray/join"><code>Float64Array.prototype.join()</code></a><br />
+Joins all elements of an array into a string. See also <a href="array/join"><code>Array.prototype.join()</code></a>.</p>
+<p><a href="typedarray/keys"><code>Float64Array.prototype.keys()</code></a><br />
+Returns a new <code>Array Iterator</code> that contains the keys for each index in the array. See also <a href="array/keys"><code>Array.prototype.keys()</code></a>.</p>
+<p><a href="typedarray/lastindexof"><code>Float64Array.prototype.lastIndexOf()</code></a><br />
+Returns the last (greatest) index of an element within the array equal to the specified value, or -1 if none is found. See also <a href="array/lastindexof"><code>Array.prototype.lastIndexOf()</code></a>.</p>
+<p><a href="typedarray/map"><code>Float64Array.prototype.map()</code></a><br />
+Creates a new array with the results of calling a provided function on every element in this array. See also <a href="array/map"><code>Array.prototype.map()</code></a>.</p>
+<p><a href="typedarray/reduce"><code>Float64Array.prototype.reduce()</code></a><br />
+Apply a function against an accumulator and each value of the array (from left-to-right) as to reduce it to a single value. See also <a href="array/reduce"><code>Array.prototype.reduce()</code></a>.</p>
+<p><a href="typedarray/reduceright"><code>Float64Array.prototype.reduceRight()</code></a><br />
+Apply a function against an accumulator and each value of the array (from right-to-left) as to reduce it to a single value. See also <a href="array/reduceright"><code>Array.prototype.reduceRight()</code></a>.</p>
+<p><a href="typedarray/reverse"><code>Float64Array.prototype.reverse()</code></a><br />
+Reverses the order of the elements of an array — the first becomes the last, and the last becomes the first. See also <a href="array/reverse"><code>Array.prototype.reverse()</code></a>.</p>
+<p><a href="typedarray/set"><code>Float64Array.prototype.set()</code></a><br />
+Stores multiple values in the typed array, reading input values from a specified array.</p>
+<p><a href="typedarray/slice"><code>Float64Array.prototype.slice()</code></a><br />
+Extracts a section of an array and returns a new array. See also <a href="array/slice"><code>Array.prototype.slice()</code></a>.</p>
+<p><a href="typedarray/some"><code>Float64Array.prototype.some()</code></a><br />
+Returns true if at least one element in this array satisfies the provided testing function. See also <a href="array/some"><code>Array.prototype.some()</code></a>.</p>
+<p><a href="typedarray/sort"><code>Float64Array.prototype.sort()</code></a><br />
+Sorts the elements of an array in place and returns the array. See also <a href="array/sort"><code>Array.prototype.sort()</code></a>.</p>
+<p><a href="typedarray/subarray"><code>Float64Array.prototype.subarray()</code></a><br />
+Returns a new <code>Float64Array</code> from the given start and end element index.</p>
+<p><a href="typedarray/values"><code>Float64Array.prototype.values()</code></a><br />
+Returns a new <code>Array Iterator</code> object that contains the values for each index in the array. See also <a href="array/values"><code>Array.prototype.values()</code></a>.</p>
+<p><a href="typedarray/tolocalestring"><code>Float64Array.prototype.toLocaleString()</code></a><br />
+Returns a localized string representing the array and its elements. See also <a href="array/tolocalestring"><code>Array.prototype.toLocaleString()</code></a>.</p>
+<p><a href="typedarray/tostring"><code>Float64Array.prototype.toString()</code></a><br />
+Returns a string representing the array and its elements. See also <a href="array/tostring"><code>Array.prototype.toString()</code></a>.</p>
+<p><a href="typedarray/@@iterator"><code>Float64Array.prototype[@@iterator]()</code></a><br />
+Returns a new <code>Array Iterator</code> object that contains the values for each index in the array.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="different-ways-to-create-a-float64array">Different ways to create a <code>Float64Array</code></h3>
+<pre><code>// From a length
+var float64 = new Float64Array(2);
+float64[0] = 42;
+console.log(float64[0]); // 42
+console.log(float64.length); // 2
+console.log(float64.BYTES_PER_ELEMENT); // 8
+
+// From an array
+var arr = new Float64Array([21,31]);
+console.log(arr[1]); // 31
+
+// From another TypedArray
+var x = new Float64Array([21, 31]);
+var y = new Float64Array(x);
+console.log(y[0]); // 21
+
+// From an ArrayBuffer
+var buffer = new ArrayBuffer(32);
+var z = new Float64Array(buffer, 0, 4);
+
+// From an iterable
+var iterable = function*(){ yield* [1,2,3]; }();
+var float64 = new Float64Array(iterable);
+// Float64Array[1, 2, 3]</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#table-49">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#table-49</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>Float64Array</code></p>
+<p>7</p>
+<p>12</p>
+<p>4</p>
+<p>10</p>
+<p>11.6</p>
+<p>5.1</p>
+<p>4</p>
+<p>18</p>
+<p>4</p>
+<p>12</p>
+<p>4.2</p>
+<p>1.0</p>
+<p><code>Float64Array</code></p>
+<p>7</p>
+<p>12</p>
+<p>4</p>
+<p>10</p>
+<p>11.6</p>
+<p>5.1</p>
+<p>4</p>
+<p>18</p>
+<p>4</p>
+<p>12</p>
+<p>4.2</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays">JavaScript typed arrays</a></li>
+<li><a href="arraybuffer"><code>ArrayBuffer</code></a></li>
+<li><a href="dataview"><code>DataView</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array</a></p>
+</body>
+</html>

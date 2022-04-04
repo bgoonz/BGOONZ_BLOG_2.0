@@ -1,41 +1,26 @@
----
-title: title
-subtitle: subtitle
-date: '2022-01-03'
-thumb_img_alt: lorem-ipsum
-content_img_alt: lorem-ipsum
-excerpt: lorem-ipsum
-seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
-template: post
-thumb_img_path: images/css-72a655a7.jpg
----
+subtitle
 
----
+2022-01-03
 
-title: Git log format string
-category: Git
+------------------------------------------------------------------------
 
-weight: -1
-keywords:
+title: Git log format string category: Git
 
--   "git log --pretty=format:%H"
--   "%H - Commit hash"
--   "%an - Author"
--   "%aD - Author date"
+weight: -1 keywords:
 
----
+-   “git log –pretty=format:%H”
+-   “%H - Commit hash”
+-   “%an - Author”
+-   “%aD - Author date”
 
-## Log format
+------------------------------------------------------------------------
+
+Log format
+----------
 
 ### Pretty format
 
-```bash
-git log --pretty="format:%H"
-```
+    git log --pretty="format:%H"
 
 See the next tables on format variables.
 
@@ -43,88 +28,52 @@ See the next tables on format variables.
 
 #### Commit
 
-| Variable | Description          |
-| -------- | -------------------- |
-| `%H`     | commit hash          |
-| `%h`     | (abbrev) commit hash |
+<table><thead><tr class="header"><th>Variable</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>%H</code></td><td>commit hash</td></tr><tr class="even"><td><code>%h</code></td><td>(abbrev) commit hash</td></tr></tbody></table>
 
 #### Tree
 
-| Variable | Description        |
-| -------- | ------------------ |
-| `%T`     | tree hash          |
-| `%t`     | (abbrev) tree hash |
+<table><thead><tr class="header"><th>Variable</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>%T</code></td><td>tree hash</td></tr><tr class="even"><td><code>%t</code></td><td>(abbrev) tree hash</td></tr></tbody></table>
 
 #### Parent
 
-| Variable | Description          |
-| -------- | -------------------- |
-| `%P`     | parent hash          |
-| `%p`     | (abbrev) parent hash |
+<table><thead><tr class="header"><th>Variable</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>%P</code></td><td>parent hash</td></tr><tr class="even"><td><code>%p</code></td><td>(abbrev) parent hash</td></tr></tbody></table>
 
 ### Commit
 
-| Variable | Description                    |
-| -------- | ------------------------------ |
-| `%s`     | commit subject                 |
-| `%f`     | commit subject, filename style |
-| `%b`     | commit body                    |
-| ---      | ---                            |
-| `%d`     | ref names                      |
-| `%e`     | encoding                       |
+<table><thead><tr class="header"><th>Variable</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>%s</code></td><td>commit subject</td></tr><tr class="even"><td><code>%f</code></td><td>commit subject, filename style</td></tr><tr class="odd"><td><code>%b</code></td><td>commit body</td></tr><tr class="even"><td>—</td><td>—</td></tr><tr class="odd"><td><code>%d</code></td><td>ref names</td></tr><tr class="even"><td><code>%e</code></td><td>encoding</td></tr></tbody></table>
 
-## Author and committer
+Author and committer
+--------------------
 
 ### Author
 
 #### Name
 
-| Variable | Description                |
-| -------- | -------------------------- |
-| `%an`    | author                     |
-| `%aN`    | author, respecting mailmap |
+<table><thead><tr class="header"><th>Variable</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>%an</code></td><td>author</td></tr><tr class="even"><td><code>%aN</code></td><td>author, respecting mailmap</td></tr></tbody></table>
 
 #### Email
 
-| Variable | Description                      |
-| -------- | -------------------------------- |
-| `%ae`    | author email                     |
-| `%aE`    | author email, respecting mailmap |
+<table><thead><tr class="header"><th>Variable</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>%ae</code></td><td>author email</td></tr><tr class="even"><td><code>%aE</code></td><td>author email, respecting mailmap</td></tr></tbody></table>
 
 #### Date
 
-| Variable | Description                  |
-| -------- | ---------------------------- |
-| `%aD`    | author date (rfc2882)        |
-| `%ar`    | author date (relative)       |
-| `%at`    | author date (unix timestamp) |
-| `%ai`    | author date (iso8601)        |
+<table><thead><tr class="header"><th>Variable</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>%aD</code></td><td>author date (rfc2882)</td></tr><tr class="even"><td><code>%ar</code></td><td>author date (relative)</td></tr><tr class="odd"><td><code>%at</code></td><td>author date (unix timestamp)</td></tr><tr class="even"><td><code>%ai</code></td><td>author date (iso8601)</td></tr></tbody></table>
 
 ### Committer
 
 #### Name
 
-| Variable | Description                        |
-| -------- | ---------------------------------- |
-| `%cn`    | committer name                     |
-| `%cN`    | committer name, respecting mailmap |
+<table><thead><tr class="header"><th>Variable</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>%cn</code></td><td>committer name</td></tr><tr class="even"><td><code>%cN</code></td><td>committer name, respecting mailmap</td></tr></tbody></table>
 
 #### Email
 
-| Variable | Description                         |
-| -------- | ----------------------------------- |
-| `%ce`    | committer email                     |
-| `%cE`    | committer email, respecting mailmap |
+<table><thead><tr class="header"><th>Variable</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>%ce</code></td><td>committer email</td></tr><tr class="even"><td><code>%cE</code></td><td>committer email, respecting mailmap</td></tr></tbody></table>
 
 #### Date
 
-| Variable | Description                     |
-| -------- | ------------------------------- |
-| `%cD`    | committer date (rfc2882)        |
-| `%cr`    | committer date (relative)       |
-| `%ct`    | committer date (unix timestamp) |
-| `%ci`    | committer date (iso8601)        |
+<table><thead><tr class="header"><th>Variable</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>%cD</code></td><td>committer date (rfc2882)</td></tr><tr class="even"><td><code>%cr</code></td><td>committer date (relative)</td></tr><tr class="odd"><td><code>%ct</code></td><td>committer date (unix timestamp)</td></tr><tr class="even"><td><code>%ci</code></td><td>committer date (iso8601)</td></tr></tbody></table>
 
-## Also see
+Also see
+--------
 
 -   [Git log cheatsheet](./git-log)

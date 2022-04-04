@@ -1,8 +1,10 @@
-# Math.tan()
+Math.tan()
+==========
 
 The `Math.tan()` function returns the tangent of a number.
 
-## Syntax
+Syntax
+------
 
     Math.tan(x)
 
@@ -15,13 +17,15 @@ A number representing an angle in radians.
 
 The tangent of the given number.
 
-## Description
+Description
+-----------
 
 The `Math.tan()` method returns a numeric value that represents the tangent of the angle.
 
 Because `tan()` is a static method of `Math`, you always use it as `Math.tan()`, rather than as a method of a `Math` object you created (`Math` is not a constructor).
 
-## Examples
+Examples
+--------
 
 ### Using Math.tan()
 
@@ -34,14 +38,14 @@ Because the `Math.tan()` function accepts radians, but it is often easier to wor
       return Math.tan(rad);
     }
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.tan">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-math.tan</span></td></tr></tbody></table>
 
-<span class="small">#sec-math.tan</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -97,7 +101,8 @@ Samsung Internet
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`Math.acos()`](acos)
 -   [`Math.asin()`](asin)
@@ -106,6 +111,5 @@ Samsung Internet
 -   [`Math.cos()`](cos)
 -   [`Math.sin()`](sin)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/tan" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/tan</a>

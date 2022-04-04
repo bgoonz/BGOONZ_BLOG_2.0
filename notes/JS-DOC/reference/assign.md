@@ -1,15 +1,17 @@
-# Object.assign()
+Object.assign()
+===============
 
-The `Object.assign()` method copies all [enumerable](propertyisenumerable) [own properties](hasownproperty) from one or more _source objects_ to a _target object_. It returns the target object.
+The `Object.assign()` method copies all [enumerable](propertyisenumerable) [own properties](hasownproperty) from one or more *source objects* to a *target object*. It returns the target object.
 
-## Syntax
+Syntax
+------
 
     Object.assign(target, ...sources)
 
 ### Parameters
 
 `target`  
-The target object — what to apply the sources' properties to, which is returned after it is modified.
+The target object — what to apply the sources’ properties to, which is returned after it is modified.
 
 `sources`  
 The source object(s) — objects containing the properties you want to apply.
@@ -18,11 +20,12 @@ The source object(s) — objects containing the properties you want to apply.
 
 The target object.
 
-## Description
+Description
+-----------
 
-Properties in the target object are overwritten by properties in the sources if they have the same [key](keys). Later sources' properties overwrite earlier ones.
+Properties in the target object are overwritten by properties in the sources if they have the same [key](keys). Later sources’ properties overwrite earlier ones.
 
-The `Object.assign()` method only copies _enumerable_ and _own_ properties from a source object to a target object. It uses `[[Get]]` on the source and `[[Set]]` on the target, so it will invoke [getters](../../functions/get) and [setters](../../functions/set). Therefore it _assigns_ properties, versus copying or defining new properties. This may make it unsuitable for merging new properties into a prototype if the merge sources contain getters.
+The `Object.assign()` method only copies *enumerable* and *own* properties from a source object to a target object. It uses `[[Get]]` on the source and `[[Set]]` on the target, so it will invoke [getters](../../functions/get) and [setters](../../functions/set). Therefore it *assigns* properties, versus copying or defining new properties. This may make it unsuitable for merging new properties into a prototype if the merge sources contain getters.
 
 For copying property definitions (including their enumerability) into prototypes, use [`Object.getOwnPropertyDescriptor()`](getownpropertydescriptor) and [`Object.defineProperty()`](defineproperty) instead.
 
@@ -32,9 +35,10 @@ In case of an error, for example if a property is non-writable, a [`TypeError`](
 
 **Note:** `Object.assign()` does not throw on [`null`](../null) or [`undefined`](../undefined) sources.
 
-## Polyfill
+Polyfill
+--------
 
-This [polyfill](https://developer.mozilla.org/en-US/docs/Glossary/Polyfill) doesn't support symbol properties, since ES5 doesn't have symbols anyway:
+This [polyfill](https://developer.mozilla.org/en-US/docs/Glossary/Polyfill) doesn’t support symbol properties, since ES5 doesn’t have symbols anyway:
 
     if (typeof Object.assign !== 'function') {
       // Must be writable: true, enumerable: false, configurable: true
@@ -66,7 +70,8 @@ This [polyfill](https://developer.mozilla.org/en-US/docs/Glossary/Polyfill) does
       });
     }
 
-## Examples
+Examples
+--------
 
 ### Cloning an object
 
@@ -221,12 +226,11 @@ The properties are overwritten by other objects that have the same properties la
     console.log(copy);
     // { foo:1, get bar() { return 2 } }
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.assign">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-object.assign</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-object.assign</span></td></tr></tbody></table>
 
 `assign`
 
@@ -254,12 +258,12 @@ No
 
 5.0
 
-## See also
+See also
+--------
 
-- [`Object.defineProperties()`](defineproperties)
-- [Enumerability and ownership of properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
-- [Spread in object literals](../../operators/spread_syntax#spread_in_object_literals)
+-   [`Object.defineProperties()`](defineproperties)
+-   [Enumerability and ownership of properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
+-   [Spread in object literals](../../operators/spread_syntax#spread_in_object_literals)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign</a>

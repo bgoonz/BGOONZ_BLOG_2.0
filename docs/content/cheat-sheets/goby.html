@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2022-01-03" />
+  <title>title</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">title</h1>
+<p class="subtitle">subtitle</p>
+<p class="date">2022-01-03</p>
+</header>
+<hr />
+<p>title: Goby</p>
+<p>prism_languages: [ruby] weight: -3 category: Ruby intro: | Goby’s language design is based on Ruby language’s, slim and shaped up. Differences in syntax between them is very small.</p>
+<hr />
+<h2 id="getting-started">Getting started</h2>
+<h3 id="hello-world">Hello world</h3>
+<h4 id="hello.gb">hello.gb</h4>
+<p>{: .-file}</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">class</span> <span class="dt">Greet</span></a>
+<a class="sourceLine" id="cb1-2" title="2">  <span class="ot">attr_accessor</span> <span class="st">:audience</span>, <span class="st">:head</span>, <span class="st">:tail</span></a>
+<a class="sourceLine" id="cb1-3" title="3"></a>
+<a class="sourceLine" id="cb1-4" title="4">  <span class="kw">def</span> initialize</a>
+<a class="sourceLine" id="cb1-5" title="5">    <span class="ot">@head</span> = <span class="st">&quot;Hello, &quot;</span></a>
+<a class="sourceLine" id="cb1-6" title="6">    <span class="ot">@tail</span> = <span class="st">&quot;!&quot;</span></a>
+<a class="sourceLine" id="cb1-7" title="7">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb1-8" title="8"></a>
+<a class="sourceLine" id="cb1-9" title="9">  <span class="kw">def</span> name</a>
+<a class="sourceLine" id="cb1-10" title="10">    audience.name</a>
+<a class="sourceLine" id="cb1-11" title="11">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb1-12" title="12"></a>
+<a class="sourceLine" id="cb1-13" title="13">  <span class="kw">def</span> say</a>
+<a class="sourceLine" id="cb1-14" title="14">    puts head + name + tail</a>
+<a class="sourceLine" id="cb1-15" title="15">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb1-16" title="16"><span class="kw">end</span></a>
+<a class="sourceLine" id="cb1-17" title="17"></a>
+<a class="sourceLine" id="cb1-18" title="18"><span class="kw">module</span> <span class="dt">MyName</span></a>
+<a class="sourceLine" id="cb1-19" title="19">  <span class="ot">attr_reader</span> <span class="st">:name</span></a>
+<a class="sourceLine" id="cb1-20" title="20"></a>
+<a class="sourceLine" id="cb1-21" title="21">  <span class="kw">def</span> initialize</a>
+<a class="sourceLine" id="cb1-22" title="22">    <span class="ot">@name</span> = <span class="dv">self</span>.class.to_s</a>
+<a class="sourceLine" id="cb1-23" title="23">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb1-24" title="24"><span class="kw">end</span></a>
+<a class="sourceLine" id="cb1-25" title="25"></a>
+<a class="sourceLine" id="cb1-26" title="26"><span class="kw">class</span> <span class="dt">World</span></a>
+<a class="sourceLine" id="cb1-27" title="27">  include <span class="dt">MyName</span></a>
+<a class="sourceLine" id="cb1-28" title="28"><span class="kw">end</span></a>
+<a class="sourceLine" id="cb1-29" title="29"></a>
+<a class="sourceLine" id="cb1-30" title="30">greet = <span class="dt">Greet</span>.new</a>
+<a class="sourceLine" id="cb1-31" title="31">greet.audience = <span class="dt">World</span>.new</a>
+<a class="sourceLine" id="cb1-32" title="32">greet.say</a></code></pre></div>
+<p>Then run:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb2-1" title="1">$ <span class="ex">goby</span> hello.gb</a>
+<a class="sourceLine" id="cb2-2" title="2"><span class="co">#=&gt; Hello, World!</span></a></code></pre></div>
+<h3 id="repl-igb">REPL (igb)</h3>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb3-1" title="1">$ <span class="ex">goby</span> -i</a></code></pre></div>
+<ul>
+<li><code>reset</code>: reset the VM</li>
+<li><code>exit</code>: exit REPL</li>
+<li><code>help</code>: show help</li>
+<li>ctrl-c: cancel the block entered, or exit (on top level)</li>
+</ul>
+<p>See <a href="https://github.com/goby-lang/goby/blob/master/igb/manual_test.md">igb manual &amp; test script</a>. You can use <code>readline</code> features such as command history by arrow keys.</p>
+<h2 id="variables">Variables</h2>
+<h3 id="local-variable">Local variable</h3>
+<div class="sourceCode" id="cb4"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb4-1" title="1">zip101 = <span class="st">&quot;233-7383&quot;</span></a>
+<a class="sourceLine" id="cb4-2" title="2">magic_number = <span class="dv">42</span></a></code></pre></div>
+<p>Should be “<code>[a-z][a-z0-9_]+</code>”(snake_case).</p>
+<h3 id="instance-variable">Instance variable</h3>
+<div class="sourceCode" id="cb5"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">module</span> <span class="dt">State</span></a>
+<a class="sourceLine" id="cb5-2" title="2">  <span class="kw">def</span> initialize(state)</a>
+<a class="sourceLine" id="cb5-3" title="3">    <span class="ot">@state</span> = state      <span class="co"># declaring an instance variable by assignment</span></a>
+<a class="sourceLine" id="cb5-4" title="4">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb5-5" title="5">  <span class="kw">def</span> show</a>
+<a class="sourceLine" id="cb5-6" title="6">    <span class="ot">@state</span>              <span class="co"># accessible from other instance methods</span></a>
+<a class="sourceLine" id="cb5-7" title="7">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb5-8" title="8"><span class="kw">end</span></a>
+<a class="sourceLine" id="cb5-9" title="9"></a>
+<a class="sourceLine" id="cb5-10" title="10">state = <span class="dt">State</span>.new <span class="st">&quot;success&quot;</span></a>
+<a class="sourceLine" id="cb5-11" title="11">state.show</a>
+<a class="sourceLine" id="cb5-12" title="12"><span class="co">#=&gt; success</span></a></code></pre></div>
+<p>Should be “<code>@[a-z][a-z0-9_]+</code>”(snake_case).</p>
+<h3 id="multiple-assignment">Multiple assignment</h3>
+<div class="sourceCode" id="cb6"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb6-1" title="1"><span class="co"># array literal</span></a>
+<a class="sourceLine" id="cb6-2" title="2">a, b, c = [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]</a>
+<a class="sourceLine" id="cb6-3" title="3"></a>
+<a class="sourceLine" id="cb6-4" title="4"><span class="co"># array with &#39;*&#39;</span></a>
+<a class="sourceLine" id="cb6-5" title="5">a = [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]</a>
+<a class="sourceLine" id="cb6-6" title="6">x, y, z = *a</a>
+<a class="sourceLine" id="cb6-7" title="7"></a>
+<a class="sourceLine" id="cb6-8" title="8"><span class="co"># array literal with &#39;*&#39;</span></a>
+<a class="sourceLine" id="cb6-9" title="9">a, b, c = *[<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]</a>
+<a class="sourceLine" id="cb6-10" title="10"></a>
+<a class="sourceLine" id="cb6-11" title="11"><span class="co"># bare assignment: unsupported</span></a>
+<a class="sourceLine" id="cb6-12" title="12">a, b, c = <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>  <span class="co">#=&gt; unexpected 3 Line: 0</span></a></code></pre></div>
+<h3 id="black-hole-variable">Black hole variable</h3>
+<div class="sourceCode" id="cb7"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb7-1" title="1"><span class="co"># &#39;_&#39; is write-only</span></a>
+<a class="sourceLine" id="cb7-2" title="2">a, _ = [<span class="dv">1</span>, <span class="dv">2</span>]</a></code></pre></div>
+<h3 id="class-variable">Class variable</h3>
+<p>Unsupported.</p>
+<h3 id="global-variable">Global variable</h3>
+<p>Unsupported.</p>
+<h2 id="method-definition">Method definition</h2>
+<h3 id="method-definition-and-calling">Method definition and calling</h3>
+<div class="sourceCode" id="cb8"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb8-1" title="1"><span class="kw">def</span> foo_bar?(baz)</a>
+<a class="sourceLine" id="cb8-2" title="2">  <span class="kw">if</span> baz == <span class="st">&quot;Hi, Goby!&quot;</span></a>
+<a class="sourceLine" id="cb8-3" title="3">    <span class="dv">true</span></a>
+<a class="sourceLine" id="cb8-4" title="4">  <span class="kw">else</span></a>
+<a class="sourceLine" id="cb8-5" title="5">    <span class="dv">false</span></a>
+<a class="sourceLine" id="cb8-6" title="6">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb8-7" title="7"><span class="kw">end</span></a>
+<a class="sourceLine" id="cb8-8" title="8"></a>
+<a class="sourceLine" id="cb8-9" title="9">foo_bar? <span class="st">&quot;Hi, Goby!&quot;</span> <span class="co">#=&gt; true</span></a></code></pre></div>
+<p>Method name should be “<code>[a-z][a-z0-9_]+\??</code>” (snake_case). You can omit the trailing “<code>()</code>” only if no parameters are taken. Trailing using “<code>!</code>” is <strong>unsupported</strong>.</p>
+<h3 id="order-of-method-parameter">Order of method parameter</h3>
+<div class="sourceCode" id="cb9"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb9-1" title="1"><span class="kw">def</span> foo(normal, default=<span class="st">&quot;value&quot;</span>, hash={}, ary=[], keyword:, keyword_default:<span class="st">&quot;key&quot;</span>, *sprat)</a>
+<a class="sourceLine" id="cb9-2" title="2"><span class="kw">end</span></a></code></pre></div>
+<p>If a default value is provided to a parameter, the parameter can be omitted when calling. <code>()</code> can be omitted. The order of parameters in method definition is restricted as follows:</p>
+<ol type="1">
+<li><strong>normal parameters</strong> (like <code>a</code>)</li>
+<li><strong>normal parameters with default value</strong> (like <code>a=1</code>)</li>
+<li><strong>optional parameters</strong> (array or hash, like <code>ary=[]</code> or <code>hs={}</code>)</li>
+<li><strong>keyword parameters</strong> (like <code>kwd:</code>)</li>
+<li><strong>keyword parameters with default value</strong> (like <code>kwd: 1</code> or <code>ary: [1,2,3]</code> or <code>hsh: {key: "value"}</code>)</li>
+<li><strong>splat parameters</strong> (like <code>*sp</code>)</li>
+</ol>
+<p>Or you will receive an error.</p>
+<h3 id="keyword-parameter-wip">Keyword parameter (WIP)</h3>
+<div class="sourceCode" id="cb10"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb10-1" title="1"><span class="kw">def</span> foo(process:, <span class="st">verb: :GET</span>, opt:{ <span class="st">csp: :enabled</span> }, <span class="st">ary: </span>[<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>])</a>
+<a class="sourceLine" id="cb10-2" title="2"><span class="kw">end</span></a></code></pre></div>
+<h3 id="returning-value">Returning value</h3>
+<div class="sourceCode" id="cb11"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb11-1" title="1"><span class="dt">PI</span> = <span class="fl">3.14</span></a>
+<a class="sourceLine" id="cb11-2" title="2"><span class="kw">def</span> area(radius)</a>
+<a class="sourceLine" id="cb11-3" title="3">  radius * <span class="dt">PI</span>      <span class="co"># returns the result of evaluation</span></a>
+<a class="sourceLine" id="cb11-4" title="4"><span class="kw">end</span></a>
+<a class="sourceLine" id="cb11-5" title="5"></a>
+<a class="sourceLine" id="cb11-6" title="6">area <span class="dv">6</span>             <span class="co">#=&gt; 18.84</span></a></code></pre></div>
+<h3 id="returning-multiple-value">Returning multiple value</h3>
+<div class="sourceCode" id="cb12"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb12-1" title="1"><span class="kw">def</span> my_array</a>
+<a class="sourceLine" id="cb12-2" title="2">  [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]</a>
+<a class="sourceLine" id="cb12-3" title="3"><span class="kw">end</span></a>
+<a class="sourceLine" id="cb12-4" title="4"></a>
+<a class="sourceLine" id="cb12-5" title="5">my_array   <span class="co">#=&gt; [1, 2, 3]</span></a></code></pre></div>
+<h3 id="instance-method">Instance method</h3>
+<div class="sourceCode" id="cb13"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb13-1" title="1"><span class="kw">module</span> <span class="dt">Foo</span></a>
+<a class="sourceLine" id="cb13-2" title="2">  <span class="kw">def</span> bar       <span class="co"># defining instance method</span></a>
+<a class="sourceLine" id="cb13-3" title="3">    puts <span class="st">&quot;bar&quot;</span></a>
+<a class="sourceLine" id="cb13-4" title="4">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb13-5" title="5"></a>
+<a class="sourceLine" id="cb13-6" title="6">  <span class="kw">def</span> baz(count, <span class="st">email: &quot;goby@example.com&quot;</span>)</a>
+<a class="sourceLine" id="cb13-7" title="7">    count.times <span class="kw">do</span></a>
+<a class="sourceLine" id="cb13-8" title="8">      puts email</a>
+<a class="sourceLine" id="cb13-9" title="9">    <span class="kw">end</span></a>
+<a class="sourceLine" id="cb13-10" title="10">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb13-11" title="11"><span class="kw">end</span></a>
+<a class="sourceLine" id="cb13-12" title="12"></a>
+<a class="sourceLine" id="cb13-13" title="13">foo = <span class="dt">Foo</span>.new</a>
+<a class="sourceLine" id="cb13-14" title="14">foo.bar     <span class="co">#=&gt; bar</span></a>
+<a class="sourceLine" id="cb13-15" title="15">foo.baz(<span class="dv">3</span>)  <span class="co">#↓</span></a>
+<a class="sourceLine" id="cb13-16" title="16">goby<span class="ot">@example</span>.com</a>
+<a class="sourceLine" id="cb13-17" title="17">goby<span class="ot">@example</span>.com</a>
+<a class="sourceLine" id="cb13-18" title="18">goby<span class="ot">@example</span>.com</a></code></pre></div>
+<h3 id="singleton-method-1">Singleton method #1</h3>
+<div class="sourceCode" id="cb14"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb14-1" title="1">str = <span class="st">&quot;Goby&quot;</span></a>
+<a class="sourceLine" id="cb14-2" title="2"><span class="kw">def</span> str.foo     <span class="co">#1 singleton method on the object</span></a>
+<a class="sourceLine" id="cb14-3" title="3">  <span class="dv">self</span> * <span class="dv">2</span></a>
+<a class="sourceLine" id="cb14-4" title="4"><span class="kw">end</span></a>
+<a class="sourceLine" id="cb14-5" title="5"></a>
+<a class="sourceLine" id="cb14-6" title="6">str.foo</a>
+<a class="sourceLine" id="cb14-7" title="7"><span class="co">#=&gt; GobyGoby</span></a></code></pre></div>
+<h3 id="singleton-method-2">Singleton method #2</h3>
+<div class="sourceCode" id="cb15"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb15-1" title="1"><span class="kw">module</span> <span class="dt">Foo</span></a>
+<a class="sourceLine" id="cb15-2" title="2">  <span class="kw">def</span> <span class="dv">self</span>.bar  <span class="co">#2 singleton method with `self.`</span></a>
+<a class="sourceLine" id="cb15-3" title="3">    <span class="dv">92</span></a>
+<a class="sourceLine" id="cb15-4" title="4">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb15-5" title="5"><span class="kw">end</span></a></code></pre></div>
+<h3 id="singleton-method-3">Singleton method #3</h3>
+<div class="sourceCode" id="cb16"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb16-1" title="1"><span class="kw">module</span> <span class="dt">Foo</span></a>
+<a class="sourceLine" id="cb16-2" title="2">  <span class="kw">def</span> <span class="dt">Foo</span>.bar   <span class="co">#3 singleton method with a class name (unrecommended)</span></a>
+<a class="sourceLine" id="cb16-3" title="3">    <span class="dv">88</span></a>
+<a class="sourceLine" id="cb16-4" title="4">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb16-5" title="5"><span class="kw">end</span></a></code></pre></div>
+<h3 id="singleton-method-4">Singleton method #4</h3>
+<div class="sourceCode" id="cb17"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb17-1" title="1"><span class="kw">module</span> <span class="dt">Foo</span> <span class="kw">end</span></a>
+<a class="sourceLine" id="cb17-2" title="2"></a>
+<a class="sourceLine" id="cb17-3" title="3"><span class="kw">def</span> <span class="dt">Foo</span>.bar     <span class="co">#4 singleton methods outside the Foo</span></a>
+<a class="sourceLine" id="cb17-4" title="4">  <span class="dv">9999</span></a>
+<a class="sourceLine" id="cb17-5" title="5"><span class="kw">end</span></a>
+<a class="sourceLine" id="cb17-6" title="6"></a>
+<a class="sourceLine" id="cb17-7" title="7"><span class="dt">Foo</span>.bar <span class="co">#=&gt; 9999</span></a></code></pre></div>
+<h3 id="attribute-accessor-method">Attribute accessor method</h3>
+<div class="sourceCode" id="cb18"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb18-1" title="1"><span class="kw">class</span> <span class="dt">Foo</span></a>
+<a class="sourceLine" id="cb18-2" title="2">  <span class="ot">attr_accessor</span> <span class="st">:bar</span>, <span class="st">:baz</span></a>
+<a class="sourceLine" id="cb18-3" title="3"></a>
+<a class="sourceLine" id="cb18-4" title="4">  <span class="kw">def</span> initialize</a>
+<a class="sourceLine" id="cb18-5" title="5">    <span class="ot">@bar</span> = <span class="dv">42</span></a>
+<a class="sourceLine" id="cb18-6" title="6">    <span class="ot">@baz</span> = <span class="dv">99</span></a>
+<a class="sourceLine" id="cb18-7" title="7">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb18-8" title="8"><span class="kw">end</span></a>
+<a class="sourceLine" id="cb18-9" title="9"></a>
+<a class="sourceLine" id="cb18-10" title="10">foo = <span class="dt">Foo</span>.new</a>
+<a class="sourceLine" id="cb18-11" title="11"></a>
+<a class="sourceLine" id="cb18-12" title="12">foo.bar = <span class="dv">77</span></a>
+<a class="sourceLine" id="cb18-13" title="13">foo.baz = <span class="dv">88</span></a></code></pre></div>
+<p>You can use the following shorthands to declare attribute accessor methods in classes/modules:</p>
+<ul>
+<li><code>attr_accessor</code></li>
+<li><code>attr_reader</code></li>
+<li><code>attr_writer</code></li>
+</ul>
+<h3 id="private-method-to-be-implemented">Private method (to be implemented)</h3>
+<div class="sourceCode" id="cb19"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb19-1" title="1"><span class="kw">class</span> <span class="dt">Foo</span></a>
+<a class="sourceLine" id="cb19-2" title="2">  <span class="kw">def</span> bar</a>
+<a class="sourceLine" id="cb19-3" title="3">    <span class="dv">42</span></a>
+<a class="sourceLine" id="cb19-4" title="4">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb19-5" title="5"></a>
+<a class="sourceLine" id="cb19-6" title="6">  <span class="kw">def</span> _baz  <span class="co"># leading &#39;_&#39; means private method</span></a>
+<a class="sourceLine" id="cb19-7" title="7">    <span class="dv">99</span></a>
+<a class="sourceLine" id="cb19-8" title="8">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb19-9" title="9"><span class="kw">end</span></a></code></pre></div>
+<h2 id="moduleclass-definition">Module/Class definition</h2>
+<h3 id="module-definition-and-include">Module definition and <code>include</code></h3>
+<div class="sourceCode" id="cb20"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb20-1" title="1"><span class="kw">module</span> <span class="dt">Foo</span></a>
+<a class="sourceLine" id="cb20-2" title="2">  <span class="kw">def</span> foo</a>
+<a class="sourceLine" id="cb20-3" title="3">    <span class="st">&quot;Foo&#39;s instance method&quot;</span></a>
+<a class="sourceLine" id="cb20-4" title="4">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb20-5" title="5"><span class="kw">end</span></a>
+<a class="sourceLine" id="cb20-6" title="6"></a>
+<a class="sourceLine" id="cb20-7" title="7"><span class="kw">class</span> <span class="dt">Bar</span></a>
+<a class="sourceLine" id="cb20-8" title="8">  include <span class="dt">Foo</span>   <span class="co"># to include Foo</span></a>
+<a class="sourceLine" id="cb20-9" title="9"><span class="kw">end</span></a>
+<a class="sourceLine" id="cb20-10" title="10"></a>
+<a class="sourceLine" id="cb20-11" title="11"><span class="dt">Bar</span>.new.foo     <span class="co">#=&gt; Foo&#39;s instance method</span></a></code></pre></div>
+<p>Module names should be “<code>[A-Z][A-Za-z0-9_]+</code>” (UpperCamelCase). Modules cannot be inherited.</p>
+<h3 id="module-definition-and-extend">Module definition and <code>extend</code></h3>
+<div class="sourceCode" id="cb21"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb21-1" title="1"><span class="kw">module</span> <span class="dt">Foo</span></a>
+<a class="sourceLine" id="cb21-2" title="2">  <span class="kw">def</span> foo</a>
+<a class="sourceLine" id="cb21-3" title="3">    <span class="st">&quot;Foo&#39;s instance method will be a singleton method&quot;</span></a>
+<a class="sourceLine" id="cb21-4" title="4">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb21-5" title="5"><span class="kw">end</span></a>
+<a class="sourceLine" id="cb21-6" title="6"></a>
+<a class="sourceLine" id="cb21-7" title="7"><span class="kw">class</span> <span class="dt">Bar</span></a>
+<a class="sourceLine" id="cb21-8" title="8">  extend <span class="dt">Foo</span>   <span class="co"># to extend Foo</span></a>
+<a class="sourceLine" id="cb21-9" title="9"><span class="kw">end</span></a>
+<a class="sourceLine" id="cb21-10" title="10"></a>
+<a class="sourceLine" id="cb21-11" title="11"><span class="dt">Bar</span>.foo        <span class="co">#=&gt; Foo&#39;s instance method will be a singleton method</span></a></code></pre></div>
+<p><code>extend</code> is to use the instance methods in the specified modules as <strong>singleton methods</strong> in your class or module.</p>
+<h3 id="module-instantiation">Module instantiation</h3>
+<div class="sourceCode" id="cb22"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb22-1" title="1"><span class="kw">module</span> <span class="dt">Foo</span>   <span class="co">#module definition</span></a>
+<a class="sourceLine" id="cb22-2" title="2">  <span class="kw">def</span> foo</a>
+<a class="sourceLine" id="cb22-3" title="3">    <span class="dv">99</span></a>
+<a class="sourceLine" id="cb22-4" title="4">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb22-5" title="5"><span class="kw">end</span></a>
+<a class="sourceLine" id="cb22-6" title="6"></a>
+<a class="sourceLine" id="cb22-7" title="7"><span class="dt">Foo</span>.new.foo  <span class="co">#=&gt; 99</span></a></code></pre></div>
+<p>Actually, Goby’s module can be even <strong>instantiated</strong> via “<code>new</code>” like “<code>Foo.new</code>”.</p>
+<h3 id="class-definition-and-inheritance">Class definition and inheritance</h3>
+<div class="sourceCode" id="cb23"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb23-1" title="1"><span class="kw">class</span> <span class="dt">Foo</span>       <span class="co"># class definition</span></a>
+<a class="sourceLine" id="cb23-2" title="2">  <span class="kw">def</span> bar</a>
+<a class="sourceLine" id="cb23-3" title="3">    <span class="dv">99</span></a>
+<a class="sourceLine" id="cb23-4" title="4">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb23-5" title="5"><span class="kw">end</span></a>
+<a class="sourceLine" id="cb23-6" title="6"></a>
+<a class="sourceLine" id="cb23-7" title="7"><span class="kw">class</span> <span class="dt">Baz</span> &lt; <span class="dt">Foo</span> <span class="co"># inheritance</span></a>
+<a class="sourceLine" id="cb23-8" title="8"><span class="kw">end</span></a>
+<a class="sourceLine" id="cb23-9" title="9"></a>
+<a class="sourceLine" id="cb23-10" title="10"><span class="dt">Baz</span>.new.bar  <span class="co">#=&gt; 99</span></a></code></pre></div>
+<p>Class names should be “<code>[A-Z][A-Za-z0-9]+</code>” (UpperCamelCase). Inheritance with “<code>&lt;</code>” is supported.</p>
+<h3 id="constants">Constants</h3>
+<div class="sourceCode" id="cb24"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb24-1" title="1"><span class="dt">HTTP_ERROR_404</span> = <span class="dv">404</span></a>
+<a class="sourceLine" id="cb24-2" title="2"><span class="dt">HTTP_ERROR_404</span> = <span class="dv">500</span>    <span class="co"># error</span></a>
+<a class="sourceLine" id="cb24-3" title="3"><span class="st">```js</span></a>
+<a class="sourceLine" id="cb24-4" title="4"></a>
+<a class="sourceLine" id="cb24-5" title="5"><span class="st">constants should be &quot;`</span>[A-Z][A-<span class="dt">Za</span>-z0<span class="dv">-9</span>_]+<span class="st">`&quot; (UPPER_SNAKECASE). Constants are **not reentrant** and the scope is **global**.</span></a>
+<a class="sourceLine" id="cb24-6" title="6"></a>
+<a class="sourceLine" id="cb24-7" title="7"><span class="st">### Redefining class/modules</span></a>
+<a class="sourceLine" id="cb24-8" title="8"></a>
+<a class="sourceLine" id="cb24-9" title="9"><span class="st">```</span>ruby</a>
+<a class="sourceLine" id="cb24-10" title="10"><span class="kw">class</span> <span class="dt">Foo</span></a>
+<a class="sourceLine" id="cb24-11" title="11">  <span class="kw">def</span> bar</a>
+<a class="sourceLine" id="cb24-12" title="12">    <span class="dv">99</span></a>
+<a class="sourceLine" id="cb24-13" title="13">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb24-14" title="14"><span class="kw">end</span></a>
+<a class="sourceLine" id="cb24-15" title="15"></a>
+<a class="sourceLine" id="cb24-16" title="16"><span class="kw">class</span> <span class="dt">Foo</span></a>
+<a class="sourceLine" id="cb24-17" title="17">  <span class="kw">def</span> bar  <span class="co"># redefining is possible</span></a>
+<a class="sourceLine" id="cb24-18" title="18">    <span class="dv">77</span></a>
+<a class="sourceLine" id="cb24-19" title="19">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb24-20" title="20"><span class="kw">end</span></a></code></pre></div>
+<h3 id="namespaces">Namespaces</h3>
+<div class="sourceCode" id="cb25"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb25-1" title="1"><span class="kw">class</span> <span class="dt">Foo</span></a>
+<a class="sourceLine" id="cb25-2" title="2">  <span class="kw">module</span> <span class="dt">Bar</span></a>
+<a class="sourceLine" id="cb25-3" title="3">    <span class="dt">MAGIC</span> = <span class="dv">99</span></a>
+<a class="sourceLine" id="cb25-4" title="4">    <span class="kw">def</span> baz</a>
+<a class="sourceLine" id="cb25-5" title="5">      <span class="dv">99</span></a>
+<a class="sourceLine" id="cb25-6" title="6">    <span class="kw">end</span></a>
+<a class="sourceLine" id="cb25-7" title="7">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb25-8" title="8"><span class="kw">end</span></a>
+<a class="sourceLine" id="cb25-9" title="9"></a>
+<a class="sourceLine" id="cb25-10" title="10"><span class="dt">Foo</span>::<span class="dt">Bar</span>.new.baz     <span class="co"># Use &#39;::&#39; for namespacing</span></a>
+<a class="sourceLine" id="cb25-11" title="11"><span class="dt">Foo</span>::<span class="dt">Bar</span>::<span class="dt">MAGIC</span>      <span class="co"># Use &#39;::&#39; for namespacing</span></a></code></pre></div>
+<h2 id="load-library">Load library</h2>
+<h3 id="require"><code>require</code></h3>
+<div class="sourceCode" id="cb26"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb26-1" title="1">require(<span class="st">&quot;uri&quot;</span>)   <span class="co"># to activate URL class</span></a>
+<a class="sourceLine" id="cb26-2" title="2"></a>
+<a class="sourceLine" id="cb26-3" title="3">u = <span class="dt">URI</span>.parse(<span class="st">&quot;http://example.com&quot;</span>)</a>
+<a class="sourceLine" id="cb26-4" title="4">u.scheme   <span class="co">#=&gt; &quot;http&quot;</span></a></code></pre></div>
+<h3 id="require_relative"><code>require_relative</code></h3>
+<div class="sourceCode" id="cb27"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb27-1" title="1">require_relative(<span class="st">&quot;bar&quot;</span>)  <span class="co"># loading the local bar.gb</span></a>
+<a class="sourceLine" id="cb27-2" title="2"></a>
+<a class="sourceLine" id="cb27-3" title="3"><span class="kw">class</span> <span class="dt">Foo</span></a>
+<a class="sourceLine" id="cb27-4" title="4">  <span class="kw">def</span> <span class="dv">self</span>.bar(x)</a>
+<a class="sourceLine" id="cb27-5" title="5">    <span class="dt">Bar</span>.foo <span class="kw">do</span> |ten|</a>
+<a class="sourceLine" id="cb27-6" title="6">      x * ten</a>
+<a class="sourceLine" id="cb27-7" title="7">    <span class="kw">end</span></a>
+<a class="sourceLine" id="cb27-8" title="8">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb27-9" title="9"></a>
+<a class="sourceLine" id="cb27-10" title="10">  <span class="kw">def</span> <span class="dv">self</span>.baz</a>
+<a class="sourceLine" id="cb27-11" title="11">    <span class="kw">yield</span>(<span class="dv">100</span>)</a>
+<a class="sourceLine" id="cb27-12" title="12">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb27-13" title="13"><span class="kw">end</span></a></code></pre></div>
+<h2 id="literal">Literal</h2>
+<h3 id="keyword">Keyword</h3>
+<p><code>def</code>, <code>true</code>, <code>false</code>, <code>nil</code>, <code>if</code>, <code>elsif</code>, <code>else</code>, <code>case</code>, <code>when</code>, <code>return</code>, <code>self</code>, <code>end</code>, <code>while</code>, <code>do</code>, <code>yield</code>, <code>get_block</code>, <code>next</code>, <code>class</code>, <code>module</code>, <code>break</code></p>
+<h3 id="string-literal">String literal</h3>
+<div class="sourceCode" id="cb28"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb28-1" title="1"><span class="st">&quot;double quote&quot;</span></a>
+<a class="sourceLine" id="cb28-2" title="2"><span class="st">&#39;single quote&#39;</span></a></code></pre></div>
+<p>Double and single quotation can be used.</p>
+<h3 id="symbol-literal">Symbol literal</h3>
+<div class="sourceCode" id="cb29"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb29-1" title="1"><span class="st">:symbol</span>           <span class="co"># equivalent to &quot;symbol&quot;</span></a>
+<a class="sourceLine" id="cb29-2" title="2">{ <span class="st">symbol: &quot;value&quot;</span> }</a></code></pre></div>
+<p>Goby’s symbol (using <code>:</code>) is always <code>String</code> class.</p>
+<h3 id="numeric-literal">Numeric literal</h3>
+<div class="sourceCode" id="cb30"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb30-1" title="1">year   =  <span class="dv">2018</span>   <span class="co"># Integer</span></a>
+<a class="sourceLine" id="cb30-2" title="2">offset = <span class="dv">-42</span>     <span class="co"># Integer</span></a>
+<a class="sourceLine" id="cb30-3" title="3"><span class="dt">PI</span>     = <span class="fl">3.14</span>    <span class="co"># Float</span></a>
+<a class="sourceLine" id="cb30-4" title="4">G      = <span class="dv">-9</span>.<span class="dv">8</span>    <span class="co"># Float</span></a></code></pre></div>
+<h3 id="array-literal">Array literal</h3>
+<div class="sourceCode" id="cb31"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb31-1" title="1">[<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="st">&quot;hello&quot;</span>, <span class="st">:goby</span>, { <span class="st">key: &quot;value&quot;</span>}]</a>
+<a class="sourceLine" id="cb31-2" title="2">[<span class="dv">1</span>, <span class="dv">2</span>, [<span class="dv">3</span>, <span class="dv">4</span>], <span class="dv">5</span>, <span class="dv">6</span>]</a></code></pre></div>
+<h3 id="hash-literal">Hash literal</h3>
+<div class="sourceCode" id="cb32"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb32-1" title="1">h = { <span class="st">key: &quot;value&quot;</span>, <span class="st">key2: &quot;value2&quot;</span> }</a>
+<a class="sourceLine" id="cb32-2" title="2">h[<span class="st">:key2</span>]   <span class="co">#=&gt; value2</span></a></code></pre></div>
+<p>Hash literal’s keys should always be <strong>symbol literals</strong>.</p>
+<h3 id="range-literal">Range literal</h3>
+<div class="sourceCode" id="cb33"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb33-1" title="1">(<span class="dv">1</span>..<span class="dv">10</span>).each <span class="kw">do</span> |x|    <span class="co"># &#39;..&#39; represents a range</span></a>
+<a class="sourceLine" id="cb33-2" title="2">  puts x*x</a>
+<a class="sourceLine" id="cb33-3" title="3"><span class="kw">end</span></a></code></pre></div>
+<h3 id="boolean-and-nil">Boolean and <code>nil</code></h3>
+<div class="sourceCode" id="cb34"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb34-1" title="1"><span class="dv">true</span>       <span class="co"># Boolean class</span></a>
+<a class="sourceLine" id="cb34-2" title="2"><span class="dv">false</span>      <span class="co"># Boolean class</span></a>
+<a class="sourceLine" id="cb34-3" title="3"><span class="dv">nil</span>        <span class="co"># Null class</span></a>
+<a class="sourceLine" id="cb34-4" title="4"></a>
+<a class="sourceLine" id="cb34-5" title="5">!nil  <span class="co">#=&gt; true</span></a></code></pre></div>
+<p>Any objects except <code>nil</code> and <code>false</code> will be treated as <code>true</code> on conditionals.</p>
+<h2 id="operator">Operator</h2>
+<h3 id="arithmeticlogicalassignment-operators">Arithmetic/logical/assignment operators</h3>
+<div class="sourceCode" id="cb35"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb35-1" title="1">+           <span class="co"># unary</span></a>
+<a class="sourceLine" id="cb35-2" title="2">**          <span class="co"># power</span></a>
+<a class="sourceLine" id="cb35-3" title="3">-           <span class="co"># unary</span></a>
+<a class="sourceLine" id="cb35-4" title="4">* <span class="ot">/ %       # multiplication, division, modulus</span></a>
+<a class="sourceLine" id="cb35-5" title="5"><span class="ot">+ -         # addition, subtraction</span></a>
+<a class="sourceLine" id="cb35-6" title="6"><span class="ot">!           # logical inversion</span></a>
+<a class="sourceLine" id="cb35-7" title="7"><span class="ot">&gt; &gt;= &lt; &lt;=   # inequality comparison</span></a>
+<a class="sourceLine" id="cb35-8" title="8"><span class="ot">== !=       # equality comparison, negative comparison</span></a>
+<a class="sourceLine" id="cb35-9" title="9"><span class="ot">&amp;&amp;          # logical AND</span></a>
+<a class="sourceLine" id="cb35-10" title="10"><span class="ot">||          # logical OR</span></a>
+<a class="sourceLine" id="cb35-11" title="11"><span class="ot">+= -=       # shorthand of addition/</span>subtraction</a>
+<a class="sourceLine" id="cb35-12" title="12">=           <span class="co"># assignment</span></a></code></pre></div>
+<p>*Priority of operators are TBD</p>
+<h3 id="other-operators">Other operators</h3>
+<div class="sourceCode" id="cb36"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb36-1" title="1">()          <span class="co"># chaning priority of interpretation</span></a>
+<a class="sourceLine" id="cb36-2" title="2">[]          <span class="co"># array literal</span></a>
+<a class="sourceLine" id="cb36-3" title="3">*           <span class="co"># multiple assignment</span></a>
+<a class="sourceLine" id="cb36-4" title="4">..          <span class="co"># range</span></a></code></pre></div>
+<p>*Priority of operators are TBD</p>
+<h3 id="delimiter">Delimiter</h3>
+<div class="sourceCode" id="cb37"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb37-1" title="1"><span class="kw">class</span> <span class="dt">Foo</span>; <span class="kw">end</span>   <span class="co"># &#39;;&#39; to delimit</span></a>
+<a class="sourceLine" id="cb37-2" title="2"></a>
+<a class="sourceLine" id="cb37-3" title="3"><span class="kw">class</span> <span class="dt">Bar</span> <span class="kw">end</span>    <span class="co"># recommended</span></a></code></pre></div>
+<h3 id="string-interpolation-to-be-implemented">String interpolation (to be implemented)</h3>
+<div class="sourceCode" id="cb38"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb38-1" title="1">puts <span class="st">&quot;Error: </span><span class="ot">#{</span>error_message<span class="ot">}</span><span class="st">&quot;</span>  <span class="co"># double quotation is required</span></a></code></pre></div>
+<h3 id="comment">Comment</h3>
+<div class="sourceCode" id="cb39"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb39-1" title="1">puts <span class="st">&quot;Goby&quot;</span>    <span class="co"># comments</span></a></code></pre></div>
+<p>Use the annotations to keep the comments concise.</p>
+<ul>
+<li><code>TODO</code></li>
+<li><code>FIXME</code></li>
+<li><code>OPTIMIZE</code></li>
+<li><code>HACK</code></li>
+<li><code>REVIEW</code></li>
+</ul>
+<h3 id="io">I/O</h3>
+<ul>
+<li><p><code>#puts</code></p></li>
+<li><p>special constants: <code>ARGV</code>, <code>STDIN</code>, <code>STDOUT</code>, <code>STDERR</code>, <code>ENV</code></p></li>
+</ul>
+<h2 id="flow-control">Flow control</h2>
+<h3 id="if-else-elsif"><code>if</code>, <code>else</code>, <code>elsif</code></h3>
+<div class="sourceCode" id="cb40"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb40-1" title="1"><span class="kw">def</span> foo(str)</a>
+<a class="sourceLine" id="cb40-2" title="2">  <span class="kw">if</span> str.size &gt; <span class="dv">10</span></a>
+<a class="sourceLine" id="cb40-3" title="3">    puts <span class="st">&quot;too big!&quot;</span></a>
+<a class="sourceLine" id="cb40-4" title="4">  <span class="kw">elsif</span> str.size &lt; <span class="dv">3</span></a>
+<a class="sourceLine" id="cb40-5" title="5">    puts <span class="st">&quot;too short!&quot;</span></a>
+<a class="sourceLine" id="cb40-6" title="6">  <span class="kw">else</span></a>
+<a class="sourceLine" id="cb40-7" title="7">    puts <span class="st">&quot;moderate&quot;</span></a>
+<a class="sourceLine" id="cb40-8" title="8">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb40-9" title="9"><span class="kw">end</span></a></code></pre></div>
+<p><code>then</code> is <strong>not</strong> supported.</p>
+<h3 id="break">Break</h3>
+<div class="sourceCode" id="cb41"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb41-1" title="1"><span class="kw">def</span> foo(tail)</a>
+<a class="sourceLine" id="cb41-2" title="2">  (<span class="dv">5</span>..tail).each <span class="kw">do</span> |t|</a>
+<a class="sourceLine" id="cb41-3" title="3">    <span class="kw">if</span> t % <span class="dv">2</span> == <span class="dv">0</span> &amp;&amp; t % <span class="dv">5</span> == <span class="dv">0</span></a>
+<a class="sourceLine" id="cb41-4" title="4">      puts <span class="st">&quot;ouch!&quot;</span></a>
+<a class="sourceLine" id="cb41-5" title="5">      <span class="kw">break</span>       <span class="co"># finish the block</span></a>
+<a class="sourceLine" id="cb41-6" title="6">    <span class="kw">else</span></a>
+<a class="sourceLine" id="cb41-7" title="7">      puts t</a>
+<a class="sourceLine" id="cb41-8" title="8">    <span class="kw">end</span></a>
+<a class="sourceLine" id="cb41-9" title="9">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb41-10" title="10">  puts <span class="st">&quot;out of the block&quot;</span></a>
+<a class="sourceLine" id="cb41-11" title="11"><span class="kw">end</span></a>
+<a class="sourceLine" id="cb41-12" title="12"></a>
+<a class="sourceLine" id="cb41-13" title="13">foo <span class="dv">20</span></a>
+<a class="sourceLine" id="cb41-14" title="14"><span class="co">#=&gt; 5 6 7 8 9</span></a>
+<a class="sourceLine" id="cb41-15" title="15"><span class="co">#=&gt; ouch!</span></a>
+<a class="sourceLine" id="cb41-16" title="16"><span class="co">#=&gt; out of the block</span></a></code></pre></div>
+<h3 id="case">Case</h3>
+<div class="sourceCode" id="cb42"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb42-1" title="1"><span class="kw">def</span> foo(str)</a>
+<a class="sourceLine" id="cb42-2" title="2">  <span class="kw">case</span> str</a>
+<a class="sourceLine" id="cb42-3" title="3">  <span class="kw">when</span> <span class="st">&quot;Elf&quot;</span></a>
+<a class="sourceLine" id="cb42-4" title="4">    puts <span class="st">&quot;You might be Aragorn II!&quot;</span></a>
+<a class="sourceLine" id="cb42-5" title="5">  <span class="kw">when</span> <span class="st">&quot;Aragorn&quot;</span></a>
+<a class="sourceLine" id="cb42-6" title="6">    puts <span class="st">&quot;Long time no see, Aragorn!&quot;</span></a>
+<a class="sourceLine" id="cb42-7" title="7">  <span class="kw">when</span> <span class="st">&quot;Frodo&quot;</span>, <span class="st">&quot;Sam&quot;</span>, <span class="st">&quot;Gandalf&quot;</span></a>
+<a class="sourceLine" id="cb42-8" title="8">    puts <span class="st">&quot;One of us!&quot;</span></a>
+<a class="sourceLine" id="cb42-9" title="9">  <span class="kw">else</span></a>
+<a class="sourceLine" id="cb42-10" title="10">    puts <span class="st">&quot;You&#39;re not yourself&quot;</span></a>
+<a class="sourceLine" id="cb42-11" title="11">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb42-12" title="12"><span class="kw">end</span></a></code></pre></div>
+<h3 id="while">While</h3>
+<div class="sourceCode" id="cb43"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb43-1" title="1">decr = <span class="dv">10</span></a>
+<a class="sourceLine" id="cb43-2" title="2">while decr <span class="kw">do</span></a>
+<a class="sourceLine" id="cb43-3" title="3">  <span class="kw">if</span> decr &lt; <span class="dv">1</span></a>
+<a class="sourceLine" id="cb43-4" title="4">    <span class="kw">break</span></a>
+<a class="sourceLine" id="cb43-5" title="5">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb43-6" title="6">  puts decr</a>
+<a class="sourceLine" id="cb43-7" title="7">  decr -= <span class="dv">1</span></a>
+<a class="sourceLine" id="cb43-8" title="8"><span class="kw">end</span></a></code></pre></div>
+<p><code>while</code>, conditional and a <code>do</code>/<code>end</code> block can be used for a loop.</p>
+<h3 id="rescue">Rescue</h3>
+<p>Under construction. Join <a href="https://github.com/goby-lang/goby/issues/605">#605</a>.</p>
+<h2 id="block">Block</h2>
+<h3 id="block-1">Block</h3>
+<div class="sourceCode" id="cb44"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb44-1" title="1"><span class="kw">def</span> foo(<span class="st">ary: </span>[<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>])</a>
+<a class="sourceLine" id="cb44-2" title="2">  ary.each <span class="kw">do</span> |s|      <span class="co"># start of the block with |block variable|</span></a>
+<a class="sourceLine" id="cb44-3" title="3">    puts s</a>
+<a class="sourceLine" id="cb44-4" title="4">  <span class="kw">end</span>                  <span class="co"># end of the block</span></a>
+<a class="sourceLine" id="cb44-5" title="5"><span class="kw">end</span></a></code></pre></div>
+<p><code>{ }</code> cannot be used for forming a block.</p>
+<h3 id="yield"><code>yield</code></h3>
+<div class="sourceCode" id="cb45"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb45-1" title="1"><span class="kw">def</span> foo</a>
+<a class="sourceLine" id="cb45-2" title="2">  <span class="kw">yield</span>(<span class="dv">10</span>)  <span class="co"># executes the block given</span></a>
+<a class="sourceLine" id="cb45-3" title="3"><span class="kw">end</span></a>
+<a class="sourceLine" id="cb45-4" title="4"></a>
+<a class="sourceLine" id="cb45-5" title="5">foo <span class="kw">do</span> |ten|</a>
+<a class="sourceLine" id="cb45-6" title="6">  ten + <span class="dv">20</span></a>
+<a class="sourceLine" id="cb45-7" title="7"><span class="kw">end</span></a></code></pre></div>
+<h3 id="block-object-and-call">Block object and <code>call</code></h3>
+<div class="sourceCode" id="cb46"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb46-1" title="1">b = <span class="dt">Block</span>.new <span class="kw">do</span></a>
+<a class="sourceLine" id="cb46-2" title="2">  <span class="dv">100</span></a>
+<a class="sourceLine" id="cb46-3" title="3"><span class="kw">end</span></a>
+<a class="sourceLine" id="cb46-4" title="4"></a>
+<a class="sourceLine" id="cb46-5" title="5">b.call  <span class="co">#=&gt; 100</span></a></code></pre></div>
+<p><code>Block.new</code> can take a block and then <code>call</code>.</p>
+<h3 id="passing-a-block">Passing a block</h3>
+<div class="sourceCode" id="cb47"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb47-1" title="1"><span class="kw">def</span> baz</a>
+<a class="sourceLine" id="cb47-2" title="2">  <span class="dv">1000</span></a>
+<a class="sourceLine" id="cb47-3" title="3"><span class="kw">end</span></a>
+<a class="sourceLine" id="cb47-4" title="4"></a>
+<a class="sourceLine" id="cb47-5" title="5"><span class="kw">class</span> <span class="dt">Foo</span></a>
+<a class="sourceLine" id="cb47-6" title="6">  <span class="kw">def</span> exec_block(block)</a>
+<a class="sourceLine" id="cb47-7" title="7">    block.call</a>
+<a class="sourceLine" id="cb47-8" title="8">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb47-9" title="9"></a>
+<a class="sourceLine" id="cb47-10" title="10">  <span class="kw">def</span> baz</a>
+<a class="sourceLine" id="cb47-11" title="11">    <span class="dv">100</span></a>
+<a class="sourceLine" id="cb47-12" title="12">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb47-13" title="13"><span class="kw">end</span></a>
+<a class="sourceLine" id="cb47-14" title="14"></a>
+<a class="sourceLine" id="cb47-15" title="15">b = <span class="dt">Block</span>.new <span class="kw">do</span></a>
+<a class="sourceLine" id="cb47-16" title="16">  baz</a>
+<a class="sourceLine" id="cb47-17" title="17"><span class="kw">end</span></a>
+<a class="sourceLine" id="cb47-18" title="18"></a>
+<a class="sourceLine" id="cb47-19" title="19">f = <span class="dt">Foo</span>.new</a>
+<a class="sourceLine" id="cb47-20" title="20">f.exec_block(b)</a></code></pre></div>
+<h3 id="passing-a-block-with-block-arguments">Passing a block with block arguments</h3>
+<div class="sourceCode" id="cb48"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb48-1" title="1">b = <span class="dt">Block</span>.new <span class="kw">do</span> |arg, offset|</a>
+<a class="sourceLine" id="cb48-2" title="2">  arg + <span class="dv">1000</span> - offset</a>
+<a class="sourceLine" id="cb48-3" title="3"><span class="kw">end</span></a>
+<a class="sourceLine" id="cb48-4" title="4"></a>
+<a class="sourceLine" id="cb48-5" title="5">b.call(<span class="dv">49</span>, <span class="dv">500</span>) <span class="co">#=&gt; 549</span></a></code></pre></div>
+<h3 id="special-get_block-keyword">Special <code>get_block</code> keyword</h3>
+<div class="sourceCode" id="cb49"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb49-1" title="1"><span class="kw">def</span> bar(block)</a>
+<a class="sourceLine" id="cb49-2" title="2">  <span class="co"># runs the block object and the block arg simultaneously</span></a>
+<a class="sourceLine" id="cb49-3" title="3">  block.call + get_block.call</a>
+<a class="sourceLine" id="cb49-4" title="4"><span class="kw">end</span></a>
+<a class="sourceLine" id="cb49-5" title="5"></a>
+<a class="sourceLine" id="cb49-6" title="6"><span class="kw">def</span> foo</a>
+<a class="sourceLine" id="cb49-7" title="7">  bar(get_block) <span class="kw">do</span> <span class="co"># passes two blocks to `bar`</span></a>
+<a class="sourceLine" id="cb49-8" title="8">    <span class="dv">20</span></a>
+<a class="sourceLine" id="cb49-9" title="9">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb49-10" title="10"><span class="kw">end</span></a>
+<a class="sourceLine" id="cb49-11" title="11"></a>
+<a class="sourceLine" id="cb49-12" title="12">foo <span class="kw">do</span></a>
+<a class="sourceLine" id="cb49-13" title="13">  <span class="dv">10</span></a>
+<a class="sourceLine" id="cb49-14" title="14"><span class="kw">end</span></a></code></pre></div>
+<p><code>get_block</code> is not a method but a <strong>keyword</strong> to retrive a given block argument as a block object. By this, you can pass around or <code>call</code> the given block arguments as block objects.</p>
+<h3 id="closure">Closure</h3>
+<div class="sourceCode" id="cb50"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb50-1" title="1">count = <span class="dv">0</span>          <span class="co"># the declaration is used</span></a>
+<a class="sourceLine" id="cb50-2" title="2">b = <span class="dt">Block</span>.new <span class="kw">do</span></a>
+<a class="sourceLine" id="cb50-3" title="3">  count += <span class="dv">1</span>       <span class="co"># the block looks preserving the `count`</span></a>
+<a class="sourceLine" id="cb50-4" title="4"><span class="kw">end</span></a>
+<a class="sourceLine" id="cb50-5" title="5"></a>
+<a class="sourceLine" id="cb50-6" title="6"><span class="kw">class</span> <span class="dt">Foo</span></a>
+<a class="sourceLine" id="cb50-7" title="7">  <span class="kw">def</span> bar(blk)</a>
+<a class="sourceLine" id="cb50-8" title="8">    count = <span class="dv">9</span>      <span class="co"># (does not affect)</span></a>
+<a class="sourceLine" id="cb50-9" title="9">    puts blk.call  <span class="co"># local variable is resolved to the one above</span></a>
+<a class="sourceLine" id="cb50-10" title="10">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb50-11" title="11"><span class="kw">end</span></a>
+<a class="sourceLine" id="cb50-12" title="12"></a>
+<a class="sourceLine" id="cb50-13" title="13"><span class="dt">Foo</span>.new.bar b  <span class="co">#=&gt; 1</span></a>
+<a class="sourceLine" id="cb50-14" title="14"><span class="dt">Foo</span>.new.bar b  <span class="co">#=&gt; 2</span></a>
+<a class="sourceLine" id="cb50-15" title="15"><span class="dt">Foo</span>.new.bar b  <span class="co">#=&gt; 3</span></a></code></pre></div>
+<h2 id="native-class-primary">Native class (Primary)</h2>
+<p>Goby’s most “native” classes cannot instantiate with <code>new</code> in principle.</p>
+<h3 id="object"><code>Object</code></h3>
+<div class="sourceCode" id="cb51"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb51-1" title="1"><span class="dt">Bar</span>.ancestors</a>
+<a class="sourceLine" id="cb51-2" title="2"><span class="co">#» [Bar, Foo, Object]</span></a>
+<a class="sourceLine" id="cb51-3" title="3"><span class="dt">Bar</span>.singleton_class.ancestors</a>
+<a class="sourceLine" id="cb51-4" title="4"><span class="co">#» [#&lt;Class:Bar&gt;, #&lt;Class:Object&gt;, Class, Object]</span></a></code></pre></div>
+<p><code>Object</code> is actually just for creating singleton classes. See <code>Class</code>.</p>
+<ul>
+<li><p><strong><code>Object.methods</code></strong>: <code>!</code>, <code>!=</code>, <code>==</code>, <code>block_given?</code>, <code>class</code>, <code>exit</code>, <code>instance_eval</code>, <code>instance_variable_get</code>, <code>instance_variable_set</code>, <code>is_a?</code>, <code>methods</code>, <code>nil?</code>, <code>object_id</code>, <code>puts</code>, <code>raise</code>, <code>require</code>, <code>require_relative</code>, <code>send</code>, <code>singleton_class</code>, <code>sleep</code>, <code>thread</code>, <code>to_s</code>, <code>&lt;</code>, <code>&lt;=</code>, <code>&gt;</code>, <code>&gt;=</code>, <code>ancestors</code>, <code>attr_accessor</code>, <code>attr_reader</code>, <code>attr_writer</code>, <code>extend</code>, <code>include</code>, <code>name</code>, <code>new</code>, <code>superclass</code></p></li>
+<li><p><strong><code>Object.new.methods</code></strong>: <code>!</code>, <code>!=</code>, <code>==</code>, <code>block_given?</code>, <code>class</code>, <code>exit</code>, <code>instance_eval</code>, <code>instance_variable_get</code>, <code>instance_variable_set</code>, <code>is_a?</code>, <code>methods</code>, <code>nil?</code>, <code>object_id</code>, <code>puts</code>, <code>raise</code>, <code>require</code>, <code>require_relative</code>, <code>send</code>, <code>singleton_class</code>, <code>sleep</code>, <code>thread</code>, <code>to_s</code></p></li>
+</ul>
+<h3 id="class"><code>Class</code></h3>
+<div class="sourceCode" id="cb52"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb52-1" title="1"><span class="dt">String</span>.ancestors      <span class="co">#=&gt; [String, Object]</span></a></code></pre></div>
+<p><code>Class</code> and <code>Object</code>can actually be regarded as the same and you don’t need to distinguish them in almost all the cases.</p>
+<ul>
+<li><strong><code>Class.methods</code></strong>: <code>&lt;</code>, <code>&lt;=</code>, <code>&gt;</code>, <code>&gt;=</code>, <code>ancestors</code>, <code>attr_accessor</code>, <code>attr_reader</code>, <code>attr_writer</code>, <code>extend</code>, <code>include</code>, <code>name</code>, <code>new</code>, <code>superclass</code>, <code>!</code>, <code>!=</code>, <code>==</code>, <code>block_given?</code>, <code>class</code>, <code>exit</code>, <code>instance_eval</code>, <code>instance_variable_get</code>, <code>instance_variable_set</code>, <code>is_a?</code>, <code>methods</code>, <code>nil?</code>, <code>object_id</code>, <code>puts</code>, <code>raise</code>, <code>require</code>, <code>require_relative</code>, <code>send</code>, <code>singleton_class</code>, <code>sleep</code>, <code>thread</code>, <code>to_s</code></li>
+</ul>
+<h3 id="string"><code>String</code></h3>
+<div class="sourceCode" id="cb53"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb53-1" title="1">puts <span class="st">&quot;Hello&quot;</span> + <span class="ch">&#39; &#39;</span> + <span class="st">&#39;world&#39;</span>  <span class="co">#=&gt; Hello world</span></a></code></pre></div>
+<p>Fixed to <strong>UTF-8</strong> with mb4 support.</p>
+<ul>
+<li><strong><code>String.methods</code></strong>: <code>fmt</code>,
+<ul>
+<li>the rest: <code>Class.methods</code></li>
+</ul></li>
+<li><strong><code>"a".methods</code></strong>: <code>!=</code>, <code>*</code>, <code>+</code>, <code>&lt;</code>, <code>&lt;=&gt;</code>, <code>==</code>, <code>=~</code>, <code>&gt;</code>, <code>[]</code>, <code>[]=</code>, <code>capitalize</code>, <code>chop</code>, <code>concat</code>, <code>count</code>, <code>delete</code>, <code>downcase</code>, <code>each_byte</code>, <code>each_char</code>, <code>each_line</code>, <code>empty?</code>, <code>end_with?</code>, <code>eql?</code>, <code>fmt</code>, <code>include?</code>, <code>insert</code>, <code>length</code>, <code>ljust</code>, <code>match</code>, <code>new</code>, <code>replace</code>, <code>replace_once</code>, <code>reverse</code>, <code>rjust</code>, <code>size</code>, <code>slice</code>, <code>split</code>, <code>start_with</code>, <code>strip</code>, <code>to_a</code>, <code>to_bytes</code>, <code>to_d</code>, <code>to_f</code>, <code>to_i</code>, <code>to_s</code>, <code>upcase</code>,
+<ul>
+<li>the rest: <code>Object.new.methods</code></li>
+</ul></li>
+</ul>
+<h3 id="integer"><code>Integer</code></h3>
+<div class="sourceCode" id="cb54"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb54-1" title="1"><span class="dv">37037</span> * <span class="dv">27</span>      <span class="co">#=&gt; 999999</span></a></code></pre></div>
+<ul>
+<li><strong><code>Integer.methods</code></strong>: the same as <code>Class.methods</code></li>
+<li><strong><code>1.methods</code></strong>: <code>!=</code>, <code>%</code>, <code>*</code>, <code>**</code>, <code>+</code>, <code>-</code>, <code>/</code>, <code>&lt;</code>, <code>&lt;=</code>, <code>&lt;=&gt;</code>, <code>==</code>, <code>&gt;</code>, <code>&gt;=</code>, <code>even?</code>, <code>new</code>, <code>next</code>, <code>odd?</code>, <code>pred</code>, <code>ptr</code>, <code>times</code>, <code>to_f</code>, <code>to_float32</code>, <code>to_float64</code>, <code>to_i</code>, <code>to_int</code>, <code>to_int16</code>, <code>to_int32</code>, <code>to_int64</code>, <code>to_int8</code>, <code>to_s</code>, <code>to_uint</code>, <code>to_uint16</code>, <code>to_uint32</code>, <code>to_uint64</code>, <code>to_uint8</code>
+<ul>
+<li>the rest: <code>Object.new.methods</code></li>
+</ul></li>
+</ul>
+<h3 id="array"><code>Array</code></h3>
+<div class="sourceCode" id="cb55"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb55-1" title="1">[<span class="dv">1</span>, <span class="st">&quot;2&quot;</span>, <span class="st">:card</span>, [<span class="dv">4</span>, <span class="dv">5</span>], { <span class="st">john: &quot;doe&quot;</span> }]</a></code></pre></div>
+<ul>
+<li><strong><code>Array.methods</code></strong>: the same as <code>Class.methods</code></li>
+<li><strong><code>[1].methods</code></strong>: <code>*</code>, <code>+</code>, <code>[]</code>, <code>[]=</code>, <code>any?</code>, <code>at</code>, <code>clear</code>, <code>concat</code>, <code>count</code>, <code>delete_at</code>, <code>dig</code>, <code>each</code>, <code>each_index</code>, <code>empty?</code>, <code>first</code>, <code>flatten</code>, <code>include?</code>, <code>join</code>, <code>last</code>, <code>lazy</code>, <code>length</code>, <code>map</code>, <code>new</code>, <code>pop</code>, <code>push</code>, <code>reduce</code>, <code>reverse</code>, <code>reverse_each</code>, <code>rotate</code>, <code>select</code>, <code>shift</code>, <code>to_enum</code>, <code>unshift</code>, <code>values_at</code>
+<ul>
+<li>the rest: <code>Object.new.methods</code></li>
+</ul></li>
+</ul>
+<h3 id="hash"><code>Hash</code></h3>
+<div class="sourceCode" id="cb56"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb56-1" title="1">h = { <span class="st">key: &quot;value&quot;</span> }</a>
+<a class="sourceLine" id="cb56-2" title="2">h = { <span class="st">&quot;key&quot;</span>: <span class="st">&quot;value&quot;</span> }  <span class="co">#=&gt; error</span></a>
+<a class="sourceLine" id="cb56-3" title="3"></a>
+<a class="sourceLine" id="cb56-4" title="4">h[<span class="st">&quot;key&quot;</span>]  <span class="co">#=&gt; value</span></a>
+<a class="sourceLine" id="cb56-5" title="5">h[<span class="st">:key</span>]   <span class="co">#=&gt; value</span></a></code></pre></div>
+<p>Keys in hash literals should be <strong>symbol literals</strong>, while Hash index can be either string or symbol literals.</p>
+<ul>
+<li><strong><code>Hash.methods</code></strong>: the same as <code>Class.methods</code></li>
+<li><strong><code>{ key: "value" }.methods</code></strong>: <code>[]</code>, <code>[]=</code>, <code>any?</code>, <code>clear</code>, <code>default</code>, <code>default=</code>, <code>delete</code>, <code>delete_if</code>, <code>dig</code>, <code>each</code>, <code>each_key</code>, <code>each_value</code>, <code>empty?</code>, <code>eql?</code>, <code>fetch</code>, <code>fetch_values</code>, <code>has_key?</code>, <code>has_value?</code>, <code>keys</code>, <code>length</code>, <code>map_values</code>, <code>merge</code>, <code>new</code>, <code>select</code>, <code>sorted_keys</code>, <code>to_a</code>, <code>to_json</code>, <code>to_s</code>, <code>transform_values</code>, <code>values</code>, <code>values_at</code>
+<ul>
+<li>the rest: <code>Object.new.methods</code></li>
+</ul></li>
+</ul>
+<h3 id="range"><code>Range</code></h3>
+<div class="sourceCode" id="cb57"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb57-1" title="1">(<span class="dv">1</span>..<span class="dv">10</span>).each <span class="kw">do</span> |i|</a>
+<a class="sourceLine" id="cb57-2" title="2">  puts i ** <span class="dv">2</span></a>
+<a class="sourceLine" id="cb57-3" title="3"><span class="kw">end</span></a></code></pre></div>
+<ul>
+<li><strong><code>Range.methods</code></strong>: the same as <code>Class.methods</code></li>
+<li><strong><code>(1..10).methods</code></strong>: <code>!=</code>, <code>==</code>, <code>bsearch</code>, <code>each</code>, <code>first</code>, <code>include?</code>, <code>last</code>, <code>lazy</code>, <code>map</code>, <code>new</code>, <code>size</code>, <code>step</code>, <code>to_a</code>, <code>to_enum</code>
+<ul>
+<li>the rest: <code>Object.new.methods</code></li>
+</ul></li>
+</ul>
+<h3 id="block-2"><code>Block</code></h3>
+<div class="sourceCode" id="cb58"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb58-1" title="1">b = <span class="dt">Block</span>.new <span class="kw">do</span></a>
+<a class="sourceLine" id="cb58-2" title="2">  <span class="dv">100</span></a>
+<a class="sourceLine" id="cb58-3" title="3"><span class="kw">end</span></a>
+<a class="sourceLine" id="cb58-4" title="4"></a>
+<a class="sourceLine" id="cb58-5" title="5">b.call  <span class="co">#=&gt; 100</span></a></code></pre></div>
+<ul>
+<li><strong><code>Block.methods</code></strong>: the same as <code>Class.methods</code></li>
+<li><strong><code>(Block.new do end).methods</code></strong>: <code>call</code>
+<ul>
+<li>the rest: <code>Object.new.methods</code></li>
+</ul></li>
+</ul>
+<h2 id="native-class-secondary">Native class (secondary)</h2>
+<h3 id="float"><code>Float</code></h3>
+<div class="sourceCode" id="cb59"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb59-1" title="1"><span class="fl">1.1</span> + <span class="fl">1.1</span>   <span class="co"># =&gt; -2.2</span></a>
+<a class="sourceLine" id="cb59-2" title="2"><span class="fl">2.1</span> * <span class="dv">-2</span>.<span class="dv">1</span>  <span class="co"># =&gt; -4.41</span></a></code></pre></div>
+<p>Float literals like <code>3.14</code> or <code>-273.15</code>. <code>Float</code> class is based on Golang’s <code>float64</code> type.</p>
+<ul>
+<li><strong><code>Float.methods</code></strong>: the same as <code>Class.methods</code></li>
+<li><strong><code>3.14.methods</code></strong>: <code>!=</code>, <code>%</code>, <code>*</code>, <code>**</code>, <code>+</code>, <code>-</code>, <code>/</code>, <code>&lt;</code>, <code>&lt;=</code>, <code>&lt;=&gt;</code>, <code>==</code>, <code>&gt;</code>, <code>&gt;=</code>, <code>new</code>, <code>ptr</code>, <code>to_d</code>, <code>to_i</code>
+<ul>
+<li>the rest: <code>Object.new.methods</code></li>
+</ul></li>
+</ul>
+<h3 id="decimal"><code>Decimal</code></h3>
+<div class="sourceCode" id="cb60"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb60-1" title="1"><span class="st">&quot;3.14&quot;</span>.to_d            <span class="co"># =&gt; 3.14</span></a>
+<a class="sourceLine" id="cb60-2" title="2"><span class="st">&quot;-0.7238943&quot;</span>.to_d      <span class="co"># =&gt; -0.7238943</span></a>
+<a class="sourceLine" id="cb60-3" title="3"><span class="st">&quot;355/113&quot;</span>.to_d</a>
+<a class="sourceLine" id="cb60-4" title="4"><span class="co"># =&gt; 3.1415929203539823008849557522123893805309734513274336283185840</span></a>
+<a class="sourceLine" id="cb60-5" title="5"></a>
+<a class="sourceLine" id="cb60-6" title="6">a = <span class="st">&quot;16.1&quot;</span>.to_d</a>
+<a class="sourceLine" id="cb60-7" title="7">b = <span class="st">&quot;1.1&quot;</span>.to_d</a>
+<a class="sourceLine" id="cb60-8" title="8">e = <span class="st">&quot;17.2&quot;</span>.to_d</a>
+<a class="sourceLine" id="cb60-9" title="9">a + b <span class="co"># =&gt; 0.1</span></a>
+<a class="sourceLine" id="cb60-10" title="10">a + b == e <span class="co"># =&gt; true</span></a>
+<a class="sourceLine" id="cb60-11" title="11"></a>
+<a class="sourceLine" id="cb60-12" title="12">(<span class="st">&#39;16.1&#39;</span>.to_d  + <span class="st">&quot;1.1&quot;</span>.to_d).to_s <span class="co">#=&gt; 17.2</span></a>
+<a class="sourceLine" id="cb60-13" title="13">(<span class="st">&#39;16.1&#39;</span>.to_f  + <span class="st">&quot;1.1&quot;</span>.to_f).to_s <span class="co">#=&gt; 17.200000000000003</span></a></code></pre></div>
+<p>Experimental: the size is arbitrary and internally a fraction from Golang’s <code>big.Rat</code> type. Decimal literal is TBD for now and you can get <code>Decimal</code> number via <code>to_d</code> method from <code>Integer</code>/<code>Float</code>/<code>String</code>.</p>
+<ul>
+<li><strong><code>Decimal.methods</code></strong>: the same as <code>Class.methods</code></li>
+<li><strong><code>(1.1).to_d.methods</code></strong>: <code>!=</code>, <code>*</code>, <code>**</code>, <code>+</code>, <code>-</code>, <code>/</code>, <code>&lt;</code>, <code>&lt;=</code>, <code>&lt;=&gt;</code>, <code>==</code>, <code>&gt;</code>, <code>&gt;=</code>, <code>denominator</code>, <code>fraction</code>, <code>inverse</code>
+<ul>
+<li>the rest: <code>Object.new.methods</code></li>
+</ul></li>
+</ul>
+<h3 id="regexp"><code>Regexp</code></h3>
+<div class="sourceCode" id="cb61"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb61-1" title="1">a = <span class="dt">Regexp</span>.new(<span class="st">&quot;orl&quot;</span>)</a>
+<a class="sourceLine" id="cb61-2" title="2">a.match?(<span class="st">&quot;Hello World&quot;</span>)   <span class="co">#=&gt; true</span></a>
+<a class="sourceLine" id="cb61-3" title="3">a.match?(<span class="st">&quot;Hello Regexp&quot;</span>)  <span class="co">#=&gt; false</span></a>
+<a class="sourceLine" id="cb61-4" title="4"></a>
+<a class="sourceLine" id="cb61-5" title="5">b = <span class="dt">Regexp</span>.new(<span class="st">&quot;😏&quot;</span>)</a>
+<a class="sourceLine" id="cb61-6" title="6">b.match?(<span class="st">&quot;🤡 😏 😐&quot;</span>)    <span class="co">#=&gt; true</span></a>
+<a class="sourceLine" id="cb61-7" title="7">b.match?(<span class="st">&quot;😝 😍 😊&quot;</span>)    <span class="co">#=&gt; false</span></a>
+<a class="sourceLine" id="cb61-8" title="8"></a>
+<a class="sourceLine" id="cb61-9" title="9">c = <span class="dt">Regexp</span>.new(<span class="st">&quot;居(ら(?=れ)|さ(?=せ)|る|ろ|れ(?=[ばる])|よ|(?=な[いかくけそ]|ま[しすせ]|そう|た|て))&quot;</span>)</a>
+<a class="sourceLine" id="cb61-10" title="10">c.match?(<span class="st">&quot;居られればいいのに&quot;</span>)  <span class="co">#=&gt; true</span></a>
+<a class="sourceLine" id="cb61-11" title="11">c.match?(<span class="st">&quot;居ずまいを正す&quot;</span>)      <span class="co">#=&gt; false</span></a></code></pre></div>
+<p>Using <code>/ /</code> is to be implemented.</p>
+<ul>
+<li><strong><code>Regexp.methods</code></strong>: the same as <code>Class.methods</code></li>
+<li><strong><code>Regexp.new("^aa$").methods</code></strong>: <code>==</code>, <code>match?</code>
+<ul>
+<li>the rest: <code>Object.new.methods</code></li>
+</ul></li>
+</ul>
+<h3 id="matchdata"><code>MatchData</code></h3>
+<div class="sourceCode" id="cb62"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb62-1" title="1"><span class="co"># numbered capture</span></a>
+<a class="sourceLine" id="cb62-2" title="2"><span class="st">&#39;abcd&#39;</span>.match(<span class="dt">Regexp</span>.new(<span class="st">&#39;(b.)&#39;</span>))</a>
+<a class="sourceLine" id="cb62-3" title="3"><span class="co">#=&gt; #&lt;MatchData 0:&quot;bc&quot; 1:&quot;bc&quot;&gt;</span></a>
+<a class="sourceLine" id="cb62-4" title="4"></a>
+<a class="sourceLine" id="cb62-5" title="5"><span class="co"># named capture</span></a>
+<a class="sourceLine" id="cb62-6" title="6"><span class="st">&#39;abcd&#39;</span>.match(<span class="dt">Regexp</span>.new(<span class="st">&#39;a(?&lt;first&gt;b)(?&lt;second&gt;c)&#39;</span>))</a>
+<a class="sourceLine" id="cb62-7" title="7"><span class="co">#=&gt; #&lt;MatchData 0:&quot;abc&quot; first:&quot;b&quot; second:&quot;c&quot;&gt;</span></a>
+<a class="sourceLine" id="cb62-8" title="8"></a>
+<a class="sourceLine" id="cb62-9" title="9"><span class="co"># converting to hash</span></a>
+<a class="sourceLine" id="cb62-10" title="10">» <span class="st">&#39;abcd&#39;</span>.match(<span class="dt">Regexp</span>.new(<span class="st">&#39;a(?&lt;first&gt;b)(?&lt;second&gt;c)&#39;</span>)).to_h</a>
+<a class="sourceLine" id="cb62-11" title="11"><span class="co">#» { 0: &quot;abc&quot;, first: &quot;b&quot;, second: &quot;c&quot; }</span></a></code></pre></div>
+<p>The number keys in the captures are actually <code>String</code> class.The key <code>0</code> is the mached string.</p>
+<ul>
+<li><strong><code>MatchData.methods</code></strong>: the same as <code>Class.methods</code></li>
+<li><strong><code>'abcd'.match(Regexp.new('(b.)')).methods</code></strong>: <code>captures</code>, <code>length</code>, <code>new</code>, <code>to_a</code>, <code>to_h</code>
+<ul>
+<li>the rest: <code>Object.new.methods</code></li>
+</ul></li>
+</ul>
+<h3 id="file"><code>File</code></h3>
+<div class="sourceCode" id="cb63"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb63-1" title="1">f = <span class="dt">File</span>.new(<span class="st">&quot;../test_fixtures/file_test/size.gb&quot;</span>)</a>
+<a class="sourceLine" id="cb63-2" title="2">f.name  <span class="co">#=&gt; &quot;../test_fixtures/file_test/size.gb&quot;</span></a></code></pre></div>
+<ul>
+<li><strong><code>File.methods</code></strong>: <code>basename</code>, <code>chmod</code>, <code>delete</code>, <code>exist?</code>, <code>extname</code>, <code>join</code>
+<ul>
+<li>the rest: <code>Class.methods</code></li>
+</ul></li>
+<li><strong><code>File.new.methods</code></strong>: <code>basename</code>, <code>chmod</code>, <code>close</code>, <code>delete</code>, <code>exist?</code>, <code>extname</code>, <code>join</code>, <code>name</code>
+<ul>
+<li>the rest: <code>Object.new.methods</code></li>
+</ul></li>
+</ul>
+<h2 id="native-class-golang-oriented">Native class (Golang-oriented)</h2>
+<h3 id="gomap"><code>GoMap</code></h3>
+<div class="sourceCode" id="cb64"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb64-1" title="1">h = { <span class="st">foo: &quot;bar&quot;</span> }</a>
+<a class="sourceLine" id="cb64-2" title="2">m = <span class="dt">GoMap</span>.new(h)    <span class="co"># to pass values to Golang&#39;s code</span></a>
+<a class="sourceLine" id="cb64-3" title="3">h2 = m.to_hash</a>
+<a class="sourceLine" id="cb64-4" title="4">h2[<span class="st">:foo</span>]   <span class="co">#=&gt; &quot;bar&quot;</span></a></code></pre></div>
+<ul>
+<li><strong><code>GoMap.methods</code></strong>: the same as <code>Class.methods</code></li>
+<li><strong><code>GoMap.new.methods</code></strong>: <code>get</code>, <code>set</code>, <code>to_hash</code>
+<ul>
+<li>the rest: <code>Object.new.methods</code></li>
+</ul></li>
+</ul>
+<h3 id="channel"><code>Channel</code></h3>
+<div class="sourceCode" id="cb65"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb65-1" title="1">c = <span class="dt">Channel</span>.new</a>
+<a class="sourceLine" id="cb65-2" title="2"></a>
+<a class="sourceLine" id="cb65-3" title="3"><span class="dv">1001</span>.times <span class="kw">do</span> |i| <span class="co"># i start from 0 to 1000</span></a>
+<a class="sourceLine" id="cb65-4" title="4">  thread <span class="kw">do</span></a>
+<a class="sourceLine" id="cb65-5" title="5">    c.deliver(i)</a>
+<a class="sourceLine" id="cb65-6" title="6">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb65-7" title="7"><span class="kw">end</span></a>
+<a class="sourceLine" id="cb65-8" title="8"></a>
+<a class="sourceLine" id="cb65-9" title="9">r = <span class="dv">0</span></a>
+<a class="sourceLine" id="cb65-10" title="10"><span class="dv">1001</span>.times <span class="kw">do</span></a>
+<a class="sourceLine" id="cb65-11" title="11">  r = r + c.receive</a>
+<a class="sourceLine" id="cb65-12" title="12"><span class="kw">end</span></a>
+<a class="sourceLine" id="cb65-13" title="13"></a>
+<a class="sourceLine" id="cb65-14" title="14">r <span class="co">#=&gt; 500500</span></a></code></pre></div>
+<p><code>Channel</code> class is to hold channels to work with <code>#thread</code>. See <code>thread</code>.</p>
+<ul>
+<li><strong><code>Channel.methods</code></strong>: the same as <code>Class.methods</code></li>
+<li><strong><code>Channel.new.methods</code></strong>: <code>close</code>, <code>deliver</code>, <code>new</code>, <code>receive</code>
+<ul>
+<li>the rest: <code>Object.new.methods</code></li>
+</ul></li>
+</ul>
+<h2 id="enumerator-lazy">Enumerator &amp; lazy</h2>
+<p>Pretty new experimental library.</p>
+<h3 id="lazyenumerator"><code>LazyEnumerator</code></h3>
+<div class="sourceCode" id="cb66"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb66-1" title="1"><span class="co"># creating a lazy enumerator</span></a>
+<a class="sourceLine" id="cb66-2" title="2">enumerator = <span class="dt">LazyEnumerator</span>.new(<span class="dt">ArrayEnumerator</span>.new([<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>])) <span class="kw">do</span> |value|</a>
+<a class="sourceLine" id="cb66-3" title="3">    <span class="dv">2</span> * value</a>
+<a class="sourceLine" id="cb66-4" title="4"><span class="kw">end</span></a>
+<a class="sourceLine" id="cb66-5" title="5">result = []</a>
+<a class="sourceLine" id="cb66-6" title="6"></a>
+<a class="sourceLine" id="cb66-7" title="7">enumerator.each <span class="kw">do</span> |value|</a>
+<a class="sourceLine" id="cb66-8" title="8">    result.push(value)</a>
+<a class="sourceLine" id="cb66-9" title="9"><span class="kw">end</span></a>
+<a class="sourceLine" id="cb66-10" title="10"></a>
+<a class="sourceLine" id="cb66-11" title="11">result   <span class="co">#=&gt; [2, 4, 6]</span></a></code></pre></div>
+<p>A shorthand <code>#lazy</code> method is also provided in <code>Array</code> and <code>Range</code> by now. See “Tips &amp; tricks” below.</p>
+<ul>
+<li><strong><code>LazyEnumerator.methods</code></strong>: the same as <code>Class.methods</code></li>
+<li><strong><code>[1, 2].lazy</code></strong>: <code>each</code>, <code>first</code>, <code>has_next?</code>, <code>initialize</code>, <code>map</code>, <code>next</code>
+<ul>
+<li>the rest: <code>Object.new.methods</code></li>
+</ul></li>
+</ul>
+<h3 id="arrayenumerator"><code>ArrayEnumerator</code></h3>
+<div class="sourceCode" id="cb67"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb67-1" title="1">iterated_values = []</a>
+<a class="sourceLine" id="cb67-2" title="2"></a>
+<a class="sourceLine" id="cb67-3" title="3">enumerator = <span class="dt">ArrayEnumerator</span>.new([<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">4</span>])</a>
+<a class="sourceLine" id="cb67-4" title="4"></a>
+<a class="sourceLine" id="cb67-5" title="5">while enumerator.has_next? <span class="kw">do</span></a>
+<a class="sourceLine" id="cb67-6" title="6">    iterated_values.push(enumerator.next)</a>
+<a class="sourceLine" id="cb67-7" title="7"><span class="kw">end</span></a>
+<a class="sourceLine" id="cb67-8" title="8"></a>
+<a class="sourceLine" id="cb67-9" title="9">iterated_values   <span class="co">#=&gt; [1, 2, 4]</span></a></code></pre></div>
+<ul>
+<li><strong><code>ArrayEnumerator.methods</code></strong>: the same as <code>Class.methods</code></li>
+<li><strong><code>ArrayEnumerator.new([1, 2, 3]).methods</code></strong>: <code>has_next?</code>, <code>initialize</code>, <code>next</code>
+<ul>
+<li>the rest: <code>Object.new.methods</code></li>
+</ul></li>
+</ul>
+<h3 id="rangeenumerator"><code>RangeEnumerator</code></h3>
+<div class="sourceCode" id="cb68"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb68-1" title="1">iterated_values = []</a>
+<a class="sourceLine" id="cb68-2" title="2"></a>
+<a class="sourceLine" id="cb68-3" title="3">enumerator = <span class="dt">RangeEnumerator</span>.new((<span class="dv">1</span>..<span class="dv">4</span>))</a>
+<a class="sourceLine" id="cb68-4" title="4"></a>
+<a class="sourceLine" id="cb68-5" title="5">while enumerator.has_next? <span class="kw">do</span></a>
+<a class="sourceLine" id="cb68-6" title="6">    iterated_values.push(enumerator.next)</a>
+<a class="sourceLine" id="cb68-7" title="7"><span class="kw">end</span></a>
+<a class="sourceLine" id="cb68-8" title="8"></a>
+<a class="sourceLine" id="cb68-9" title="9">iterated_values   <span class="co">#=&gt; [1, 2, 3, 4]</span></a></code></pre></div>
+<ul>
+<li><strong><code>RangeEnumerator.methods</code></strong>: the same as <code>Class.methods</code></li>
+<li><strong><code>RangeEnumerator.new(1..2).methods</code></strong>: <code>has_next?</code>, <code>initialize</code>, <code>next</code>
+<ul>
+<li>the rest: <code>Object.new.methods</code></li>
+</ul></li>
+</ul>
+<h2 id="special-class">Special class</h2>
+<h3 id="boolean"><code>Boolean</code></h3>
+<div class="sourceCode" id="cb69"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb69-1" title="1"><span class="dv">true</span>.class  <span class="co">#=&gt; Boolean</span></a>
+<a class="sourceLine" id="cb69-2" title="2"><span class="dv">false</span>.class <span class="co">#=&gt; Boolean</span></a></code></pre></div>
+<p>A special class that just to hold <code>true</code> and <code>false</code>. Cannot be instantiate.</p>
+<h3 id="null"><code>Null</code></h3>
+<div class="sourceCode" id="cb70"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb70-1" title="1"><span class="dv">nil</span>.class   <span class="co">#=&gt; Null</span></a></code></pre></div>
+<p>A special class that just to hold <code>nil</code>. Cannot be instantiate.</p>
+<h3 id="method"><code>Method</code></h3>
+<p>(A special dummy class that just holds methods defined by Goby code.)</p>
+<h3 id="diggable"><code>Diggable</code></h3>
+<p>Provides <code>#dig</code> method. Currently. <code>Array</code> and <code>Hash</code> classes’ instance can be <code>Diggable</code>.</p>
+<div class="sourceCode" id="cb71"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb71-1" title="1">[<span class="dv">1</span>, <span class="dv">2</span>].dig(<span class="dv">0</span>, <span class="dv">1</span>)  <span class="co">#=&gt; TypeError: Expect target to be Diggable, got Integer</span></a></code></pre></div>
+<h2 id="testing-framework">Testing framework</h2>
+<h3 id="spec"><code>Spec</code></h3>
+<div class="sourceCode" id="cb72"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb72-1" title="1">require <span class="st">&quot;spec&quot;</span></a>
+<a class="sourceLine" id="cb72-2" title="2"></a>
+<a class="sourceLine" id="cb72-3" title="3"><span class="dt">Spec</span>.describe <span class="dt">Spec</span> <span class="kw">do</span></a>
+<a class="sourceLine" id="cb72-4" title="4">  it <span class="st">&quot;fails and exit with code 1&quot;</span> <span class="kw">do</span></a>
+<a class="sourceLine" id="cb72-5" title="5">    expect(<span class="dv">1</span>).to eq(<span class="dv">2</span>)</a>
+<a class="sourceLine" id="cb72-6" title="6">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb72-7" title="7"><span class="kw">end</span></a>
+<a class="sourceLine" id="cb72-8" title="8"></a>
+<a class="sourceLine" id="cb72-9" title="9"><span class="dt">Spec</span>.run</a></code></pre></div>
+<ul>
+<li><strong><code>Spec.methods</code></strong>: <code>describe</code>, <code>describes</code>, <code>instance</code>, <code>run</code>
+<ul>
+<li>the rest: <code>Object.methods</code></li>
+</ul></li>
+<li><strong><code>Spec.new.methods</code></strong>: <code>describes</code>, <code>initialize</code>, <code>run</code>, <code>session_successful</code>, <code>session_successful=</code>
+<ul>
+<li>the rest: <code>Hash.new.methods</code></li>
+</ul></li>
+</ul>
+<h2 id="tips-tricks">Tips &amp; tricks</h2>
+<h3 id="showing-methods">Showing methods</h3>
+<div class="sourceCode" id="cb73"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb73-1" title="1">» <span class="st">&quot;string&quot;</span>.methods</a>
+<a class="sourceLine" id="cb73-2" title="2"><span class="co">#» [&quot;!=&quot;, &quot;*&quot;, &quot;+&quot;, &quot;&lt;&quot;, &quot;&lt;=&gt;&quot;, &quot;==&quot;, &quot;=~&quot;, &quot;&gt;&quot;, &quot;[]&quot;, &quot;[]=&quot;, &quot;capitalize&quot;, &quot;chop&quot;, &quot;concat&quot;, &quot;count&quot;, &quot;delete&quot;, &quot;downcase&quot;, &quot;each_byte&quot;, &quot;each_char&quot;, &quot;each_line&quot;, &quot;empty?&quot;, &quot;end_with?&quot;, &quot;eql?&quot;, &quot;fmt&quot;, &quot;include?&quot;, &quot;insert&quot;, &quot;length&quot;, &quot;ljust&quot;, &quot;match&quot;, &quot;new&quot;, &quot;replace&quot;, &quot;replace_once&quot;, &quot;reverse&quot;, &quot;rjust&quot;, &quot;size&quot;, &quot;slice&quot;, &quot;split&quot;, &quot;start_with&quot;, &quot;strip&quot;, &quot;to_a&quot;, &quot;to_bytes&quot;, &quot;to_d&quot;, &quot;to_f&quot;, &quot;to_i&quot;, &quot;to_s&quot;, &quot;upcase&quot;, &quot;!&quot;, &quot;block_given?&quot;, &quot;class&quot;, &quot;exit&quot;, &quot;instance_eval&quot;, &quot;instance_variable_get&quot;, &quot;instance_variable_set&quot;, &quot;is_a?&quot;, &quot;methods&quot;, &quot;nil?&quot;, &quot;object_id&quot;, &quot;puts&quot;, &quot;raise&quot;, &quot;require&quot;, &quot;require_relative&quot;, &quot;send&quot;, &quot;singleton_class&quot;, &quot;sleep&quot;, &quot;thread&quot;]</span></a></code></pre></div>
+<h3 id="showing-class">Showing class</h3>
+<div class="sourceCode" id="cb74"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb74-1" title="1">» <span class="st">&quot;string&quot;</span>.class</a>
+<a class="sourceLine" id="cb74-2" title="2"><span class="co">#» String</span></a></code></pre></div>
+<h3 id="showing-singleton-class">Showing singleton class</h3>
+<div class="sourceCode" id="cb75"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb75-1" title="1">» <span class="st">&quot;moji&quot;</span>.singleton_class</a>
+<a class="sourceLine" id="cb75-2" title="2"><span class="co">#» #&lt;Class:#&lt;String:842352325152&gt;&gt;</span></a>
+<a class="sourceLine" id="cb75-3" title="3"></a>
+<a class="sourceLine" id="cb75-4" title="4">» <span class="st">&quot;moji&quot;</span>.class.singleton_class</a>
+<a class="sourceLine" id="cb75-5" title="5"><span class="co">#» #&lt;Class:String&gt;</span></a></code></pre></div>
+<h3 id="showing-ancestors">Showing ancestors</h3>
+<div class="sourceCode" id="cb76"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb76-1" title="1">» <span class="dt">Integer</span>.ancestors</a>
+<a class="sourceLine" id="cb76-2" title="2"><span class="co">#» [Integer, Object]</span></a>
+<a class="sourceLine" id="cb76-3" title="3"></a>
+<a class="sourceLine" id="cb76-4" title="4">» <span class="st">&quot;moji&quot;</span>.class.ancestors</a>
+<a class="sourceLine" id="cb76-5" title="5"><span class="co">#» [String, Object]</span></a></code></pre></div>
+<h3 id="showing-singleton-classes-ancestors">Showing singleton classes’ ancestors</h3>
+<div class="sourceCode" id="cb77"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb77-1" title="1">» <span class="st">&quot;moji&quot;</span>.class.singleton_class.ancestors</a>
+<a class="sourceLine" id="cb77-2" title="2"><span class="co">#» [#&lt;Class:String&gt;, #&lt;Class:Object&gt;, Class, Object]</span></a></code></pre></div>
+<h3 id="showing-objects-id">Showing object’s id</h3>
+<div class="sourceCode" id="cb78"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb78-1" title="1">» <span class="st">&quot;moji&quot;</span>.object_id</a>
+<a class="sourceLine" id="cb78-2" title="2"><span class="co">#» 842352977920</span></a></code></pre></div>
+<h3 id="to_json"><code>#to_json</code></h3>
+<div class="sourceCode" id="cb79"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb79-1" title="1">h = { <span class="st">a: </span><span class="dv">1</span>, <span class="st">b: </span>[<span class="dv">1</span>, <span class="st">&quot;2&quot;</span>, [<span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">nil</span>]]}</a>
+<a class="sourceLine" id="cb79-2" title="2">h.to_json         <span class="co"># converts hash to JSON</span></a>
+<a class="sourceLine" id="cb79-3" title="3"><span class="co">#=&gt; {&quot;a&quot;:1, &quot;b&quot;:[1, &quot;2&quot;, [4, 5, null]]}</span></a></code></pre></div>
+<h3 id="customize-to_json">Customize <code>#to_json</code></h3>
+<p>Overwrite the <code>#to_json</code> in your class:</p>
+<div class="sourceCode" id="cb80"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb80-1" title="1"><span class="kw">class</span> <span class="dt">JobTitle</span></a>
+<a class="sourceLine" id="cb80-2" title="2">  <span class="kw">def</span> initialize(name)</a>
+<a class="sourceLine" id="cb80-3" title="3">    <span class="ot">@name</span> = name</a>
+<a class="sourceLine" id="cb80-4" title="4">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb80-5" title="5"></a>
+<a class="sourceLine" id="cb80-6" title="6">  <span class="kw">def</span> to_json</a>
+<a class="sourceLine" id="cb80-7" title="7">    { <span class="st">title: </span><span class="ot">@name</span> }.to_json</a>
+<a class="sourceLine" id="cb80-8" title="8">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb80-9" title="9"><span class="kw">end</span></a>
+<a class="sourceLine" id="cb80-10" title="10"></a>
+<a class="sourceLine" id="cb80-11" title="11"><span class="kw">class</span> <span class="dt">Person</span></a>
+<a class="sourceLine" id="cb80-12" title="12">  <span class="kw">def</span> initialize(name, age)</a>
+<a class="sourceLine" id="cb80-13" title="13">    <span class="ot">@name</span> = name</a>
+<a class="sourceLine" id="cb80-14" title="14">    <span class="ot">@age</span> = age</a>
+<a class="sourceLine" id="cb80-15" title="15">    <span class="ot">@job</span> = <span class="dt">JobTitle</span>.new(<span class="st">&quot;software engineer&quot;</span>)</a>
+<a class="sourceLine" id="cb80-16" title="16">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb80-17" title="17"></a>
+<a class="sourceLine" id="cb80-18" title="18">  <span class="kw">def</span> to_json</a>
+<a class="sourceLine" id="cb80-19" title="19">    { <span class="st">name: </span><span class="ot">@name</span>, <span class="st">age: </span><span class="ot">@age</span>, <span class="st">job: </span><span class="ot">@job</span> }.to_json</a>
+<a class="sourceLine" id="cb80-20" title="20">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb80-21" title="21"><span class="kw">end</span></a>
+<a class="sourceLine" id="cb80-22" title="22"></a>
+<a class="sourceLine" id="cb80-23" title="23">stan = <span class="dt">Person</span>.new(<span class="st">&quot;Stan&quot;</span>, <span class="dv">23</span>)</a>
+<a class="sourceLine" id="cb80-24" title="24">h = { <span class="st">person: </span>stan }</a>
+<a class="sourceLine" id="cb80-25" title="25">h.to_json <span class="co">#=&gt; {&quot;person&quot;:{&quot;name&quot;:&quot;Stan&quot;,&quot;job&quot;:{&quot;title&quot;:&quot;software engineer&quot;},&quot;age&quot;:23}}</span></a></code></pre></div>
+<h3 id="lazy-enumeration">Lazy enumeration</h3>
+<p>To avoid N + 1 query.</p>
+<div class="sourceCode" id="cb81"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb81-1" title="1">enumerator = [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>].lazy.map <span class="kw">do</span> |value|</a>
+<a class="sourceLine" id="cb81-2" title="2">    <span class="dv">2</span> * value</a>
+<a class="sourceLine" id="cb81-3" title="3"><span class="kw">end</span></a>
+<a class="sourceLine" id="cb81-4" title="4">result = []</a>
+<a class="sourceLine" id="cb81-5" title="5"></a>
+<a class="sourceLine" id="cb81-6" title="6">enumerator.each <span class="kw">do</span> |value|</a>
+<a class="sourceLine" id="cb81-7" title="7">    result.push(value)</a>
+<a class="sourceLine" id="cb81-8" title="8"><span class="kw">end</span></a>
+<a class="sourceLine" id="cb81-9" title="9"></a>
+<a class="sourceLine" id="cb81-10" title="10">result  <span class="co">#=&gt; [2, 4, 6]</span></a></code></pre></div>
+<p>You can call <code>#lazy.map</code> on <code>Array</code>, <code>Range</code>, or <code>JSON</code> objects.</p>
+<h2 id="styling">Styling</h2>
+<h3 id="quick-style-guide">Quick style guide</h3>
+<ul>
+<li>UTF-8 should be used.</li>
+<li>Only two spaces <code></code> should be used for one indentation.
+<ul>
+<li>Tab cannot be used for indentation.</li>
+</ul></li>
+<li>For more, follow <a href="https://github.com/bbatsov/ruby-style-guide">RuboCop’s style guide</a> in principle.</li>
+</ul>
+<h3 id="document-notation">Document notation</h3>
+<ul>
+<li><code>Class#instance_method</code> – use <code>#</code> to represent instance methods in documents</li>
+<li><code>Class.class_method</code></li>
+<li><code>Module.module_method</code></li>
+</ul>
+<h3 id="syntax-highlighting">Syntax highlighting</h3>
+<p>Ready for Vim and Sublime text. You can also use Ruby’s syntax highlighting so far.</p>
+<h2 id="references">References</h2>
+<h3 id="official">Official</h3>
+<ul>
+<li>Official site: <a href="https://goby-lang.org/">https://goby-lang.org/</a></li>
+<li>Repository: <a href="https://github.com/goby-lang/goby/">https://github.com/goby-lang/goby/</a></li>
+<li>DevHints: <a href="https://devhints.io/goby">https://devhints.io/goby</a> (this page)</li>
+</ul>
+<h3 id="readings-for-goby-developers">Readings for Goby developers</h3>
+<ul>
+<li><a href="https://interpreterbook.com/">Write an Interpreter in Go</a></li>
+<li><a href="https://www.coursera.org/learn/nand2tetris2/home/welcome">Nand2Tetris II</a></li>
+<li><a href="http://patshaughnessy.net/ruby-under-a-microscope">Ruby under a microscope</a></li>
+<li><a href="http://www.atdot.net/yarv/insnstbl.html">YARV’s instruction table</a></li>
+</ul>
+<h3 id="jp-resource">JP resource</h3>
+<ul>
+<li><a href="https://techracho.bpsinc.jp/hachi8833/2017_11_10/47787">Goby: Ruby ライクな言語（1）Goby を動かしてみる</a></li>
+<li><a href="https://qiita.com/hanachin_/items/efc1c976a4f5749514ef">Goby の組み込みクラスにメソッドを追加する方法</a></li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>formattoparts</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="intl.datetimeformat.prototype.formattoparts">Intl.DateTimeFormat.prototype.formatToParts()</h1>
+<p>The <code>Intl.DateTimeFormat.prototype.formatToParts()</code> method allows locale-aware formatting of strings produced by <a href="../datetimeformat"><code>Intl.DateTimeFormat</code></a> formatters.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>formatToParts(date)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>date</code> <span class="badge inline optional">Optional</span><br />
+The date to format.</p>
+<h3 id="return-value">Return value</h3>
+<p>An <a href="../../array"><code>Array</code></a> of objects containing the formatted date in parts.</p>
+<h2 id="description">Description</h2>
+<p>The <code>formatToParts()</code> method is useful for custom formatting of date strings. It returns an <a href="../../array"><code>Array</code></a> of objects containing the locale-specific tokens from which it possible to build custom strings while preserving the locale-specific parts. The structure the <code>formatToParts()</code> method returns, looks like this:</p>
+<pre><code>[
+  { type: &#39;day&#39;, value: &#39;17&#39; },
+  { type: &#39;weekday&#39;, value: &#39;Monday&#39; }
+]</code></pre>
+<p>Possible types are the following:</p>
+<p>day<br />
+The string used for the day, for example “<code>17</code>”.</p>
+<p>dayPeriod<br />
+The string used for the day period, for example, “<code>AM</code>”, “<code>PM</code>”, “<code>in the morning</code>”, or “<code>noon</code>”</p>
+<p>era<br />
+The string used for the era, for example “<code>BC</code>” or “<code>AD</code>”.</p>
+<p>fractionalSecond<br />
+The string used for the fractional seconds, for example “<code>0</code>” or “<code>00</code>” or “<code>000</code>”.</p>
+<p>hour<br />
+The string used for the hour, for example “<code>3</code>” or “<code>03</code>”.</p>
+<p>literal<br />
+The string used for separating date and time values, for example “<code>/</code>”, “<code>,</code>”, “<code>o'clock</code>”, “<code>de</code>”, etc.</p>
+<p>minute<br />
+The string used for the minute, for example “<code>00</code>”.</p>
+<p>month<br />
+The string used for the month, for example “<code>12</code>”.</p>
+<p>relatedYear<br />
+The string used for the related 4-digit Gregorian year, in the event that the calendar’s representation would be a yearName instead of a year, for example “<code>2019</code>”.</p>
+<p>second<br />
+The string used for the second, for example “<code>07</code>” or “<code>42</code>”.</p>
+<p>timeZoneName<br />
+The string used for the name of the time zone, for example “<code>UTC</code>”.</p>
+<p>weekday<br />
+The string used for the weekday, for example “<code>M</code>”, “<code>Monday</code>”, or “<code>Montag</code>”.</p>
+<p>year<br />
+The string used for the year, for example “<code>2012</code>” or “<code>96</code>”.</p>
+<p>yearName<br />
+The string used for the yearName in relevant contexts, for example “<code>geng-zi</code>”</p>
+<h2 id="polyfill">Polyfill</h2>
+<p>A polyfill for this feature is available in the <a href="https://github.com/zbraniecki/proposal-intl-formatToParts">proposal repository</a>.</p>
+<h2 id="examples">Examples</h2>
+<p><code>DateTimeFormat</code> outputs localized, opaque strings that cannot be manipulated directly:</p>
+<pre><code>var date = Date.UTC(2012, 11, 17, 3, 0, 42);
+
+var formatter = new Intl.DateTimeFormat(&#39;en-us&#39;, {
+  weekday: &#39;long&#39;,
+  year: &#39;numeric&#39;,
+  month: &#39;numeric&#39;,
+  day: &#39;numeric&#39;,
+  hour: &#39;numeric&#39;,
+  minute: &#39;numeric&#39;,
+  second: &#39;numeric&#39;,
+  fractionalSecondDigits: 3,
+  hour12: true,
+  timeZone: &#39;UTC&#39;
+});
+
+formatter.format(date);
+// &quot;Monday, 12/17/2012, 3:00:42.000 AM&quot;</code></pre>
+<p>However, in many User Interfaces there is a desire to customize the formatting of this string. The <code>formatToParts</code> method enables locale-aware formatting of strings produced by <code>DateTimeFormat</code> formatters by providing you the string in parts:</p>
+<pre><code>formatter.formatToParts(date);
+
+// return value:
+[
+  { type: &#39;weekday&#39;,   value: &#39;Monday&#39; },
+  { type: &#39;literal&#39;,   value: &#39;, &#39;     },
+  { type: &#39;month&#39;,     value: &#39;12&#39;     },
+  { type: &#39;literal&#39;,   value: &#39;/&#39;      },
+  { type: &#39;day&#39;,       value: &#39;17&#39;     },
+  { type: &#39;literal&#39;,   value: &#39;/&#39;      },
+  { type: &#39;year&#39;,      value: &#39;2012&#39;   },
+  { type: &#39;literal&#39;,   value: &#39;, &#39;     },
+  { type: &#39;hour&#39;,      value: &#39;3&#39;      },
+  { type: &#39;literal&#39;,   value: &#39;:&#39;      },
+  { type: &#39;minute&#39;,    value: &#39;00&#39;     },
+  { type: &#39;literal&#39;,   value: &#39;:&#39;      },
+  { type: &#39;second&#39;,    value: &#39;42&#39;     },
+  { type: &#39;fractionalSecond&#39;, value: &#39;000&#39; },
+  { type: &#39;literal&#39;,   value: &#39; &#39;      },
+  { type: &#39;dayPeriod&#39;, value: &#39;AM&#39;     }
+]</code></pre>
+<p>Now the information is available separately and it can be formatted and concatenated again in a customized way. For example by using <a href="../../array/map"><code>Array.prototype.map()</code></a>, <a href="../../../functions/arrow_functions">arrow functions</a>, a <a href="../../../statements/switch">switch statement</a>, <a href="../../../template_literals">template literals</a>, and <a href="../../array/join"><code>Array.prototype.join()</code></a>.</p>
+<pre><code>var dateString = formatter.formatToParts(date).map(({type, value}) =&gt; {
+  switch (type) {
+    case &#39;dayPeriod&#39;: return `&lt;b&gt;${value}&lt;/b&gt;`;
+    default : return value;
+  }
+}).join(&#39;&#39;);</code></pre>
+<p>This will make the day period bold, when using the <code>formatToParts()</code> method.</p>
+<pre><code>console.log(formatter.format(date));
+// &quot;Monday, 12/17/2012, 3:00:42.000 AM&quot;
+
+console.log(dateString);
+// &quot;Monday, 12/17/2012, 3:00:42.000 &lt;b&gt;AM&lt;/b&gt;&quot;</code></pre>
+<h3 id="named-years-and-mixed-calendars">Named Years and Mixed calendars</h3>
+<p>In some cases, calendars use named years. Chinese and Tibetan calendars, for example, use a 60-year <a href="https://en.wikipedia.org/wiki/Sexagenary_cycle">sexagenary cycle</a> of named years. These years are disambiguated by relationship to corresponding years on the Gregorian calendar. When this is the case, the result of <code>formatToParts()</code> will contain an entry for <code>relatedYear</code> when a year would normally be present, containing the 4-digit Gregorian year, instead of an entry for <code>year</code>. Setting an entry in the bag for <code>year</code> (with any value) will yield both the and the <code>yearName</code> Gregorian <code>relatedYear</code>:</p>
+<pre><code>let opts = { year: &quot;numeric&quot;, month: &quot;numeric&quot;, day: &quot;numeric&quot; };
+let df = new Intl.DateTimeFormat(&quot;zh-u-ca-chinese&quot;, opts);
+df.formatToParts(Date.UTC(2012, 11, 17, 3, 0, 42));
+
+// return value
+[
+  { type: &#39;relatedYear&#39;, value: &#39;2012&#39; },
+  { type: &#39;literal&#39;, value: &#39;年&#39; },
+  { type: &#39;month&#39;, value: &#39;十一月&#39; },
+  { type: &#39;day&#39;, value: &#39;4&#39; }
+]</code></pre>
+<p>If the <code>year</code> option is not set in the bag (to any value), the result will include only the <code>relatedYear</code>:</p>
+<pre><code>let df = new Intl.DateTimeFormat(&quot;zh-u-ca-chinese&quot;);
+df.formatToParts(Date.UTC(2012, 11, 17, 3, 0, 42));
+
+// return value
+[
+   { type: &#39;relatedYear&#39;, value: &#39;2012&#39; },
+   { type: &#39;literal&#39;, value: &#39;年&#39; },
+   { type: &#39;month&#39;, value: &#39;十一月&#39; },
+   { type: &#39;day&#39;, value: &#39;4&#39; }
+]</code></pre>
+<p>In cases where the <code>year</code> would be output, <code>.format()</code> may commonly present these side-by-side:</p>
+<pre><code>let df = new Intl.DateTimeFormat(&quot;zh-u-ca-chinese&quot;, {year: &quot;numeric&quot;});
+df.format(Date.UTC(2012, 11, 17, 3, 0, 42));
+
+// return value
+2012壬辰年</code></pre>
+<p>This also makes it possible to mix locale and calendar in both <code>format</code>:</p>
+<pre><code>let df = new Intl.DateTimeFormat(&quot;en-u-ca-chinese&quot;, {year: &quot;numeric&quot;});
+let date = Date.UTC(2012, 11, 17, 3, 0, 42);
+df.format(date);
+
+// return value
+2012(ren-chen)</code></pre>
+<p>And <code>formatToParts</code>:</p>
+<pre><code>let opts = {month: &#39;numeric&#39;, day: &#39;numeric&#39;, year: &quot;numeric&quot;};
+let df = new Intl.DateTimeFormat(&quot;en-u-ca-chinese&quot;, opts);
+let date = Date.UTC(2012, 11, 17, 3);
+df.formatToParts(date)
+
+// return value
+[
+  { type: &#39;month&#39;, value: &#39;11&#39; },
+  { type: &#39;literal&#39;, value: &#39;/&#39; },
+  { type: &#39;day&#39;, value: &#39;4&#39; },
+  { type: &#39;literal&#39;, value: &#39;/&#39; },
+  { type: &#39;relatedYear&#39;, value: &#39;2012&#39; }
+]</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma402/#sec-Intl.DateTimeFormat.prototype.formatToParts">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) <br/></p>
+<span class="small">#sec-Intl.DateTimeFormat.prototype.formatToParts</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>formatToParts</code></p>
+<p>57</p>
+<p>Before version 71, <code>formatToParts()</code> returned an object with an incorrectly cased type key of <code>dayperiod</code>. Version 71 and later use the specification defined <code>dayPeriod</code>. See <a href="https://crbug.com/865351">Chromium bug 865351</a>.</p>
+<p>18</p>
+<p>51</p>
+<p>No</p>
+<p>44</p>
+<p>Before version 58, <code>formatToParts()</code> returned an object with an incorrectly cased type key of <code>dayperiod</code>. Version 58 and later use the specification defined <code>dayPeriod</code>. See <a href="https://crbug.com/865351">Chromium bug 865351</a>.</p>
+<p>11</p>
+<p>57</p>
+<p>Before version 71, <code>formatToParts()</code> returned an object with an incorrectly cased type key of <code>dayperiod</code>. Version 71 and later use the specification defined <code>dayPeriod</code>. See <a href="https://crbug.com/865351">Chromium bug 865351</a>.</p>
+<p>57</p>
+<p>Before version 71, <code>formatToParts()</code> returned an object with an incorrectly cased type key of <code>dayperiod</code>. Version 71 and later use the specification defined <code>dayPeriod</code>. See <a href="https://crbug.com/865351">Chromium bug 865351</a>.</p>
+<p>56</p>
+<p>43</p>
+<p>Before version 50, <code>formatToParts()</code> returned an object with an incorrectly cased type key of <code>dayperiod</code>. Version 50 and later use the specification defined <code>dayPeriod</code>. See <a href="https://crbug.com/865351">Chromium bug 865351</a>.</p>
+<p>11</p>
+<p>7.0</p>
+<p>Before version 71, <code>formatToParts()</code> returned an object with an incorrectly cased type key of <code>dayperiod</code>. Version 71 and later use the specification defined <code>dayPeriod</code>. See <a href="https://crbug.com/865351">Chromium bug 865351</a>.</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../datetimeformat"><code>Intl.DateTimeFormat</code></a></li>
+<li><a href="format"><code>Intl.DateTimeFormat.prototype.format()</code></a></li>
+<li><a href="../../date/tolocalestring"><code>Date.prototype.toLocaleString()</code></a></li>
+<li><a href="../../date/tolocaledatestring"><code>Date.prototype.toLocaleDateString()</code></a></li>
+<li><a href="../../date/tolocaletimestring"><code>Date.prototype.toLocaleTimeString()</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/formatToParts" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/formatToParts</a></p>
+</body>
+</html>

@@ -1,8 +1,10 @@
-# String.prototype.charAt()
+String.prototype.charAt()
+=========================
 
-The [`String`](../string) object's `charAt()` method returns a new string consisting of the single UTF-16 code unit located at the specified offset into the string.
+The [`String`](../string) object’s `charAt()` method returns a new string consisting of the single UTF-16 code unit located at the specified offset into the string.
 
-## Syntax
+Syntax
+------
 
     charAt(index)
 
@@ -15,17 +17,19 @@ An integer between `0` and `str.length - 1`. If the `index` cannot be converted 
 
 A string representing the character (exactly one UTF-16 code unit) at the specified `index`. If `index` is out of range, `charAt()` returns an empty string.
 
-## Description
+Description
+-----------
 
 Characters in a string are indexed from left to right. The index of the first character is `0`, and the index of the last character—in a string called `stringName`—is `stringName.length - 1`. If the `index` you supply is out of this range, JavaScript returns an empty string.
 
 If no `index` is provided to `charAt()`, the default is `0`.
 
-## Examples
+Examples
+--------
 
 ### Displaying characters at different locations in a string
 
-The following example displays characters at different locations in the string "`Brave new world`":
+The following example displays characters at different locations in the string “`Brave new world`”:
 
     var anyString = 'Brave new world';
     console.log("The character at index 0   is '" + anyString.charAt()   + "'");
@@ -158,7 +162,7 @@ In an ECMAScript 2016 environment which allows destructured assignment, the foll
 
 ### Fixing charAt() to support non-Basic-Multilingual-Plane (BMP) characters
 
-While the previous example may be more useful for programs that must support non-BMP characters (since it does not require the caller to know where any non-BMP character might appear), in the event that one _does_ wish, in choosing a character by index, to treat the surrogate pairs within a string as the single characters they represent, one can use the following:
+While the previous example may be more useful for programs that must support non-BMP characters (since it does not require the caller to know where any non-BMP character might appear), in the event that one *does* wish, in choosing a character by index, to treat the surrogate pairs within a string as the single characters they represent, one can use the following:
 
     function fixedCharAt(str, idx) {
       let ret = ''
@@ -188,12 +192,11 @@ While the previous example may be more useful for programs that must support non
       return ret
     }
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.charat">ECMAScript (ECMA-262) 
-<br/>
-
-<span class="small">The definition of 'String.prototype.charAt' in that specification.</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript (ECMA-262)<br />
+</p><span class="small">The definition of ‘String.prototype.charAt’ in that specification.</span></td></tr></tbody></table>
 
 `charAt`
 
@@ -221,7 +224,8 @@ While the previous example may be more useful for programs that must support non
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`String.prototype.indexOf()`](indexof)
 -   [`String.prototype.lastIndexOf()`](lastindexof)
@@ -231,6 +235,5 @@ While the previous example may be more useful for programs that must support non
 -   [`String.fromCodePoint()`](fromcodepoint)
 -   [JavaScript has a Unicode problem - Mathias Bynens](https://mathiasbynens.be/notes/javascript-unicode)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charAt" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charAt</a>

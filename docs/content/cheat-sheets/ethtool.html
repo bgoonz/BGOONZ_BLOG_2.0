@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2022-01-03" />
+  <title>title</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">title</h1>
+<p class="subtitle">subtitle</p>
+<p class="date">2022-01-03</p>
+</header>
+<hr />
+<p>syntax: bash tags: [networking]</p>
+<hr />
+<h1 id="to-show-statistics-for-the-selected-interface">To show statistics for the selected interface:</h1>
+<p>ethtool -S <interface></p>
+<h1 id="to-show-interface-permanent-address">To show interface permanent address:</h1>
+<p>ethotool -P <interface></p>
+<h1 id="to-set-interface-speed">To set interface speed:</h1>
+<p>ethtool -s <interface> [ speed %d ]</p>
+<h1 id="to-set-interface-autonegotiation">To set interface autonegotiation:</h1>
+<p>ethtool -s <interface> [ autoneg on|off ]</p>
+<h1 id="to-get-interface-errors">To get interface errors:</h1>
+<p>ethtool -S <interface> | grep error</p>
+</body>
+</html>

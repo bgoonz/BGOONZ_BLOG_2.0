@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>arguments</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="the-arguments-object">The arguments object</h1>
+<p><span class="summary"><code>arguments</code> is an <code>Array</code>-like object accessible inside <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions">functions</a> that contains the values of the arguments passed to that function.</span></p>
+<h2 id="description">Description</h2>
+<p><strong>Note:</strong> If you’re writing ES6 compatible code, then <a href="rest_parameters">rest parameters</a> should be preferred.</p>
+<p><strong>Note:</strong> “Array-like” means that <code>arguments</code> has a <a href="arguments/length"><code>length</code></a> property and properties indexed from zero, but it doesn’t have <a href="../global_objects/array"><code>Array</code></a>’s built-in methods like <a href="../global_objects/array/foreach"><code>forEach()</code></a> or <a href="../global_objects/array/map"><code>map()</code></a>. See <a href="#description">§Description</a> for details.</p>
+<p>The <code>arguments</code> object is a local variable available within all non-<a href="arrow_functions">arrow</a> functions. You can refer to a function’s arguments inside that function by using its <code>arguments</code> object. It has entries for each argument the function was called with, with the first entry’s index at <code>0</code>.</p>
+<p>For example, if a function is passed 3 arguments, you can access them as follows:</p>
+<pre><code>arguments[0] // first argument
+arguments[1] // second argument
+arguments[2] // third argument</code></pre>
+<p>Each argument can also be set or reassigned:</p>
+<pre><code>arguments[1] = &#39;new value&#39;;</code></pre>
+<p>The <code>arguments</code> object is not an <a href="../global_objects/array"><code>Array</code></a>. It is similar, but lacks all <code>Array</code> properties except <a href="../global_objects/array/length"><code>length</code></a>. For example, it does not have the <a href="../global_objects/array/pop"><code>pop()</code></a> method.</p>
+<p>However, it can be converted to a real <code>Array</code>:</p>
+<pre><code>var args = Array.prototype.slice.call(arguments);
+// Using an array literal is shorter than above but allocates an empty array
+var args = [].slice.call(arguments);</code></pre>
+<p>As you can do with any Array-like object, you can use ES2015’s <a href="../global_objects/array/from"><code>Array.from()</code></a> method or <a href="../operators/spread_syntax">spread syntax</a> to convert <code>arguments</code> to a real Array:</p>
+<pre><code>let args = Array.from(arguments);
+// or
+let args = [...arguments];</code></pre>
+<p>The <code>arguments</code> object is useful for functions called with more arguments than they are formally declared to accept. This technique is useful for functions that can be passed a variable number of arguments, such as <a href="../global_objects/math/min"><code>Math.min()</code></a>. This example function accepts any number of string arguments and returns the longest one:</p>
+<pre><code>function longestString() {
+  var longest = &#39;&#39;;
+  for (var i=0; i &lt; arguments.length; i++) {
+    if (arguments[i].length &gt; longest.length) {
+      longest = arguments[i];
+    }
+  }
+  return longest;
+}</code></pre>
+<p>You can use <a href="arguments/length"><code>arguments.length</code></a> to count how many arguments the function was called with. If you instead want to count how many parameters a function is declared to accept, inspect that function’s <a href="../global_objects/function/length"><code>length</code></a> property.</p>
+<h3 id="using-typeof-with-arguments">Using typeof with arguments</h3>
+<p>The <a href="../operators/typeof"><code>typeof</code></a> operator returns <code>'object'</code> when used with <code>arguments</code></p>
+<pre><code>console.log(typeof arguments); // &#39;object&#39;</code></pre>
+<p>The type of individual arguments can be determined by indexing <code>arguments</code>:</p>
+<pre><code>console.log(typeof arguments[0]); // returns the type of the first argument</code></pre>
+<h2 id="properties">Properties</h2>
+<p><a href="arguments/callee"><code>arguments.callee</code></a><br />
+Reference to the currently executing function that the arguments belong to. Forbidden in strict mode.</p>
+<p><a href="arguments/length"><code>arguments.length</code></a><br />
+The number of arguments that were passed to the function.</p>
+<p><a href="arguments/@@iterator"><code>arguments[@@iterator]</code></a><br />
+Returns a new <a href="../global_objects/array/@@iterator">Array iterator</a> object that contains the values for each index in <code>arguments</code>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="defining-a-function-that-concatenates-several-strings">Defining a function that concatenates several strings</h3>
+<p>This example defines a function that concatenates several strings. The function’s only formal argument is a string containing the characters that separate the items to concatenate.</p>
+<pre><code>function myConcat(separator) {
+  let args = Array.prototype.slice.call(arguments, 1);
+  return args.join(separator);
+}</code></pre>
+<p>You can pass as many arguments as you like to this function. It returns a string list using each argument in the list:</p>
+<pre><code>// returns &quot;red, orange, blue&quot;
+myConcat(&#39;, &#39;, &#39;red&#39;, &#39;orange&#39;, &#39;blue&#39;);
+
+// returns &quot;elephant; giraffe; lion; cheetah&quot;
+myConcat(&#39;; &#39;, &#39;elephant&#39;, &#39;giraffe&#39;, &#39;lion&#39;, &#39;cheetah&#39;);
+
+// returns &quot;sage. basil. oregano. pepper. parsley&quot;
+myConcat(&#39;. &#39;, &#39;sage&#39;, &#39;basil&#39;, &#39;oregano&#39;, &#39;pepper&#39;, &#39;parsley&#39;);</code></pre>
+<h3 id="defining-a-function-that-creates-html-lists">Defining a function that creates HTML lists</h3>
+<p>This example defines a function that creates a string containing HTML for a list. The only formal argument for the function is a string that is “<code>u</code>” if the list is to be <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul">unordered (bulleted)</a>, or “<code>o</code>” if the list is to be <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol">ordered (numbered)</a>. The function is defined as follows:</p>
+<pre><code>function list(type) {
+  var html = &#39;&lt;&#39; + type + &#39;l&gt;&lt;li&gt;&#39;;
+  var args = Array.prototype.slice.call(arguments, 1);
+  html += args.join(&#39;&lt;/li&gt;&lt;li&gt;&#39;);
+  html += &#39;&lt;/li&gt;&lt;/&#39; + type + &#39;l&gt;&#39;; // end list
+  return html;
+}</code></pre>
+<p>You can pass any number of arguments to this function, and it adds each argument as a list item to a list of the type indicated. For example:</p>
+<pre><code>let listHTML = list(&#39;u&#39;, &#39;One&#39;, &#39;Two&#39;, &#39;Three&#39;);
+
+/* listHTML is:
+&quot;&lt;ul&gt;&lt;li&gt;One&lt;/li&gt;&lt;li&gt;Two&lt;/li&gt;&lt;li&gt;Three&lt;/li&gt;&lt;/ul&gt;&quot;
+*/</code></pre>
+<h3 id="rest-default-and-destructured-parameters">Rest, default, and destructured parameters</h3>
+<p>The <code>arguments</code> object can be used in conjunction with <a href="rest_parameters">rest</a>, <a href="default_parameters">default</a>, and <a href="../operators/destructuring_assignment">destructured</a> parameters.</p>
+<pre><code>function foo(...args) {
+  return args;
+}
+foo(1, 2, 3); // [1, 2, 3]</code></pre>
+<p>While the presence of rest, default, or destructured parameters does not alter <a href="../strict_mode#making_eval_and_arguments_simpler">the behavior of the <code>arguments</code> object in strict mode code</a>, there are subtle differences for non-strict code.</p>
+<p>In strict-mode code, the <code>arguments</code> object behaves the same whether or not a function is passed rest, default, or destructured parameters. That is, assigning new values to variables in the body of the function will not affect the <code>arguments</code> object. Nor will assigning new variables to the <code>arguments</code> object affect the value of variables.</p>
+<p><strong>Note:</strong> You cannot write a <code>"use strict";</code> directive in the body of a function definition that accepts rest, default, or destructured parameters. Doing so will throw <a href="../errors/strict_non_simple_params">a syntax error</a>.</p>
+<p>Non-strict functions that are passed only simple parameters (that is, not rest, default, or restructured parameters) will sync the value of variables new values in the body of the function with the <code>arguments</code> object, and vice versa:</p>
+<pre><code>function func(a) {
+  arguments[0] = 99; // updating arguments[0] also updates a
+  console.log(a);
+}
+func(10); // 99</code></pre>
+<p>And also:</p>
+<pre><code>function func(a) {
+  a = 99; // updating a also updates arguments[0]
+  console.log(arguments[0]);
+}
+func(10); // 99</code></pre>
+<p>Conversely, non-strict functions that <strong>are</strong> passed rest, default, or destructured parameters <strong>will not</strong> sync new values assigned to argument variables in the function body with the <code>arguments</code> object. Instead, the <code>arguments</code> object in non-strict functions with complex parameters <strong>will always</strong> reflect the values passed to the function when the function was called (this is the same behavior as exhibited by all strict-mode functions, regardless of the type of variables they are passed):</p>
+<pre><code>function func(a = 55) {
+  arguments[0] = 99; // updating arguments[0] does not also update a
+  console.log(a);
+}
+func(10); // 10</code></pre>
+<p>And also:</p>
+<pre><code>function func(a = 55) {
+  a = 99; // updating a does not also update arguments[0]
+  console.log(arguments[0]);
+}
+func(10); // 10</code></pre>
+<p>And also:</p>
+<pre><code>// An untracked default parameter
+function func(a = 55) {
+  console.log(arguments[0]);
+}
+func(); // undefined</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-arguments-exotic-objects">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-arguments-exotic-objects</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>arguments</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>callee</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>6</p>
+<p>4</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>length</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>4</p>
+<p>4</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>@@iterator</code></p>
+<p>52</p>
+<p>12</p>
+<p>46</p>
+<p>No</p>
+<p>39</p>
+<p>9</p>
+<p>52</p>
+<p>52</p>
+<p>46</p>
+<p>41</p>
+<p>9</p>
+<p>6.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../global_objects/function"><code>Function</code></a></li>
+<li><a href="rest_parameters">Rest parameters</a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments</a></p>
+</body>
+</html>

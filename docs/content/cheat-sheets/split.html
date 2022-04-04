@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>split</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="to-split-a-large-text-file-into-smaller-files-of-1000-lines-each">To split a large text file into smaller files of 1000 lines each:</h1>
+<p>split <file> -l 1000</p>
+<h1 id="to-split-a-large-binary-file-into-smaller-files-of-10m-each">To split a large binary file into smaller files of 10M each:</h1>
+<p>split <file> -b 10M</p>
+<h1 id="to-consolidate-split-files-into-a-single-file">To consolidate split files into a single file:</h1>
+<p>cat x* &gt; <file></p>
+</body>
+</html>

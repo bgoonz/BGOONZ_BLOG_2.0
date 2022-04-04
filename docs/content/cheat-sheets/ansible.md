@@ -1,29 +1,17 @@
----
-title: title
-subtitle: subtitle
-date: '2022-01-03'
-thumb_img_alt: lorem-ipsum
-content_img_alt: lorem-ipsum
-excerpt: lorem-ipsum
-seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
-template: post
-thumb_img_path: images/css-72a655a7.jpg
----
+subtitle
 
----
+2022-01-03
 
-title: Ansible
-category: Ansible
+------------------------------------------------------------------------
 
----
+title: Ansible category: Ansible
+
+------------------------------------------------------------------------
 
 {% raw %}
 
-## Getting started
+Getting started
+---------------
 
 ### Hosts
 
@@ -38,7 +26,8 @@ category: Ansible
 
     $ ansible-playbook playbook.yml
 
-## Tasks
+Tasks
+-----
 
     - hosts: all
       user: root
@@ -57,7 +46,8 @@ category: Ansible
     handlers:
       - include: db.yml user=timmy
 
-## Handlers
+Handlers
+--------
 
     handlers:
       - name: start apache2
@@ -69,7 +59,8 @@ category: Ansible
         notify:
           - start apache2
 
-## Vars
+Vars
+----
 
     - host: lol
       vars_files:
@@ -81,7 +72,8 @@ category: Ansible
           file: state=directory path=${project_root}/home/.ssh/
           only_if: "$vm == 0"
 
-## Roles
+Roles
+-----
 
     - host: xxx
       roles:
@@ -109,7 +101,8 @@ category: Ansible
     vars:
       local_home: "{{ lookup('env','HOME') }}"
 
-## References
+References
+----------
 
 -   [Intro](http://www.ansibleworks.com/docs/intro_configuration.html)
 -   [Modules](http://www.ansibleworks.com/docs/modules.html)

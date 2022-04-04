@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>acosh</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="math.acosh">Math.acosh()</h1>
+<p>The <code>Math.acosh()</code> function returns the hyperbolic arc-cosine of a number, that is</p>
+<p>∀<em>x</em> ≥ 1, <code>Math.acosh</code> <code>(``x``)</code> = arcosh (<em>x</em>) = the unique <em>y</em> ≥ 0 such that cosh (<em>y</em>) = <em>x</em></p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>Math.acosh(x)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>x</code><br />
+A number.</p>
+<h3 id="return-value">Return value</h3>
+<p>The hyperbolic arc-cosine of the given number. If the number is less than <strong>1</strong>, <a href="../nan"><code>NaN</code></a>.</p>
+<h2 id="description">Description</h2>
+<p>Because <code>acosh()</code> is a static method of <code>Math</code>, you always use it as <code>Math.acosh()</code>, rather than as a method of a <code>Math</code> object you created (<code>Math</code> is no constructor).</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-math.acosh">Using Math.acosh()</h3>
+<pre><code>Math.acosh(-1);  // NaN
+Math.acosh(0);   // NaN
+Math.acosh(0.5); // NaN
+Math.acosh(1);   // 0
+Math.acosh(2);   // 1.3169578969248166</code></pre>
+<p>For values less than 1 <code>Math.acosh()</code> returns <a href="../nan"><code>NaN</code></a>.</p>
+<h2 id="polyfill">Polyfill</h2>
+<p>For all <em>x</em> ≥ 1, we have <span class="math inline">$\\operatorname{arcosh}(x) = \\ln\\left( {x + \\sqrt{x^{2} - 1}} \\right)$</span> and so this can be emulated with the following function:</p>
+<pre><code>Math.acosh = Math.acosh || function(x) {
+  return Math.log(x + Math.sqrt(x * x - 1));
+};</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-math.acosh">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-math.acosh</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>acosh</code></p>
+<p>38</p>
+<p>12</p>
+<p>25</p>
+<p>No</p>
+<p>25</p>
+<p>8</p>
+<p>38</p>
+<p>38</p>
+<p>25</p>
+<p>25</p>
+<p>8</p>
+<p>3.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="asinh"><code>Math.asinh()</code></a></li>
+<li><a href="atanh"><code>Math.atanh()</code></a></li>
+<li><a href="cosh"><code>Math.cosh()</code></a></li>
+<li><a href="sinh"><code>Math.sinh()</code></a></li>
+<li><a href="tanh"><code>Math.tanh()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/acosh" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/acosh</a></p>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>codepointat</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="string.prototype.codepointat">String.prototype.codePointAt()</h1>
+<p>The <code>codePointAt()</code> method returns a non-negative integer that is the UTF-16 code point value.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>codePointAt(pos)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>pos</code><br />
+Position of an element in <code>str</code> to return the code point value from.</p>
+<h3 id="return-value">Return value</h3>
+<p>A number representing the code point value of the character at the given <code>pos</code>. If there is no element at <code>pos</code>, returns <a href="../undefined"><code>undefined</code></a>.</p>
+<h2 id="description">Description</h2>
+<p>If there is no element at the specified position, <a href="../undefined"><code>undefined</code></a> is returned. If no UTF-16 surrogate pair begins at <code>pos</code>, the code unit at <code>pos</code> is returned.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-codepointat">Using codePointAt()</h3>
+<pre><code>&#39;ABC&#39;.codePointAt(1)           // 66
+&#39;\uD800\uDC00&#39;.codePointAt(0)  // 65536
+
+&#39;XYZ&#39;.codePointAt(42)          // undefined</code></pre>
+<h3 id="looping-with-codepointat">Looping with codePointAt()</h3>
+<pre><code>for (let codePoint of &#39;\ud83d\udc0e\ud83d\udc71\u2764&#39;) {
+   console.log(codePoint.codePointAt(0).toString(16))
+}
+// &#39;1f40e&#39;, &#39;1f471&#39;, &#39;2764&#39;</code></pre>
+<h2 id="polyfill">Polyfill</h2>
+<p>The following extends Strings to include the <code>codePointAt()</code> function as specified in ECMAScript 2015 for browsers without native support.</p>
+<pre><code>/*! https://mths.be/codepointat v0.2.0 by @mathias */
+if (!String.prototype.codePointAt) {
+  (function() {
+    &#39;use strict&#39;; // needed to support `apply`/`call` with `undefined`/`null`
+    var defineProperty = (function() {
+      // IE 8 only supports `Object.defineProperty` on DOM elements
+      try {
+        var object = {};
+        var $defineProperty = Object.defineProperty;
+        var result = $defineProperty(object, object, object) &amp;&amp; $defineProperty;
+      } catch(error) {}
+      return result;
+    }());
+    var codePointAt = function(position) {
+      if (this == null) {
+        throw TypeError();
+      }
+      var string = String(this);
+      var size = string.length;
+      // `ToInteger`
+      var index = position ? Number(position) : 0;
+      if (index != index) { // better `isNaN`
+        index = 0;
+      }
+      // Account for out-of-bounds indices:
+      if (index &lt; 0 || index &gt;= size) {
+        return undefined;
+      }
+      // Get the first code unit
+      var first = string.charCodeAt(index);
+      var second;
+      if ( // check if it&#39;s the start of a surrogate pair
+        first &gt;= 0xD800 &amp;&amp; first &lt;= 0xDBFF &amp;&amp; // high surrogate
+        size &gt; index + 1 // there is a next code unit
+      ) {
+        second = string.charCodeAt(index + 1);
+        if (second &gt;= 0xDC00 &amp;&amp; second &lt;= 0xDFFF) { // low surrogate
+          // https://mathiasbynens.be/notes/javascript-encoding#surrogate-formulae
+          return (first - 0xD800) * 0x400 + second - 0xDC00 + 0x10000;
+        }
+      }
+      return first;
+    };
+    if (defineProperty) {
+      defineProperty(String.prototype, &#39;codePointAt&#39;, {
+        &#39;value&#39;: codePointAt,
+        &#39;configurable&#39;: true,
+        &#39;writable&#39;: true
+      });
+    } else {
+      String.prototype.codePointAt = codePointAt;
+    }
+  }());
+}</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-string.prototype.codepointat">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-string.prototype.codepointat</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>codePointAt</code></p>
+<p>41</p>
+<p>12</p>
+<p>29</p>
+<p>No</p>
+<p>28</p>
+<p>10</p>
+<p>41</p>
+<p>41</p>
+<p>29</p>
+<p>28</p>
+<p>10</p>
+<p>4.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="fromcodepoint"><code>String.fromCodePoint()</code></a></li>
+<li><a href="fromcharcode"><code>String.fromCharCode()</code></a></li>
+<li><a href="charcodeat"><code>String.prototype.charCodeAt()</code></a></li>
+<li><a href="charat"><code>String.prototype.charAt()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/codePointAt" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/codePointAt</a></p>
+</body>
+</html>

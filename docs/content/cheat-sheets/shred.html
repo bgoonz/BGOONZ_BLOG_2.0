@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>shred</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="to-shred-a-file-5-passes-and-verbose-output">To shred a file (5 passes) and verbose output:</h1>
+<p>shred -n 5 -v <file></p>
+<h1 id="to-shred-a-file-5-passes-and-a-final-overwrite-of-zeroes">To shred a file (5 passes) and a final overwrite of zeroes:</h1>
+<p>shred -n 5 -vz <file></p>
+<h1 id="to-do-the-above-and-then-truncate-and-rm-the-file">To do the above, and then truncate and rm the file:</h1>
+<p>shred -n 5 -vzu <file></p>
+<h1 id="to-shred-a-partition">To shred a partition:</h1>
+<p>shred -n 5 -vz /dev/sda</p>
+<h1 id="remember-that-shred-may-not-behave-as-expected-on-journaled-file-systems-if-file-data-is-being-journaled.">Remember that shred may not behave as expected on journaled file systems if file data is being journaled.</h1>
+</body>
+</html>

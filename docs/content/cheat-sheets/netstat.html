@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>netstat</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="warning-netstat-is-deprecated.-look-below.">WARNING ! netstat is deprecated. Look below.</h1>
+<h1 id="to-view-which-usersprocesses-are-listening-to-which-ports">To view which users/processes are listening to which ports:</h1>
+<p>sudo netstat -lnptu</p>
+<h1 id="to-view-routing-table-use--n-flag-to-disable-dns-lookups">To view routing table (use -n flag to disable DNS lookups):</h1>
+<p>netstat -r</p>
+<h1 id="which-process-is-listening-to-port">Which process is listening to port <port></h1>
+<p>netstat -pln | grep <port> | awk ‘{print $NF}’</p>
+<h1 id="example-output-1507python">Example output: 1507/python</h1>
+<h1 id="fast-display-of-ipv4-tcp-listening-programs">Fast display of ipv4 tcp listening programs</h1>
+<p>sudo netstat -vtlnp –listening -4</p>
+<h1 id="warning-netstat-is-deprecated.">WARNING ! netstat is deprecated.</h1>
+<h1 id="replace-it-by">Replace it by:</h1>
+<p>ss</p>
+<h1 id="for-netstat--r">For netstat -r</h1>
+<p>ip route</p>
+<h1 id="for-netstat--i">For netstat -i</h1>
+<p>ip -s link</p>
+<h1 id="for-netstat--g">For netstat -g</h1>
+<p>ip maddr</p>
+</body>
+</html>

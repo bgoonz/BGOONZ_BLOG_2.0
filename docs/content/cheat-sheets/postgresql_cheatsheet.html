@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>postgresql_cheatsheet</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="postgresql_cheatsheet">postgreSQL_cheatsheet</h1>
+<h3 id="commands">commands\\\</h3>
+<p>Create a new <a href="https://www.postgresqltutorial.com/postgresql-roles/">role</a>:</p>
+<pre><code>CREATE ROLE role_name;</code></pre>
+<p>Create a new role with a <code>username</code> and <code>password</code>:</p>
+<pre><code>CREATE ROLE username NOINHERIT LOGIN PASSWORD password;</code></pre>
+<p>Change role for the current session to the <code>new_role</code>:</p>
+<pre><code>SET ROLE new_role;</code></pre>
+<p>Allow <code>role_1</code> to set its role as <code>role_2:</code></p>
+<pre><code>GRANT role_2 TO role_1;</code></pre>
+<p>===========================</p>
+<h3 id="managing-databases">Managing databases</h3>
+<p>=========================== <a href="https://www.postgresqltutorial.com/postgresql-create-database/">Create a new database</a>:</p>
+<pre><code>CREATE DATABASE [IF NOT EXISTS] db_name;</code></pre>
+<p><a href="https://www.postgresqltutorial.com/postgresql-drop-database/">Delete a database permanently</a>:</p>
+<pre><code>DROP DATABASE [IF EXISTS] db_name;</code></pre>
+<p>===========================</p>
+<h3 id="managing-tables">Managing tables</h3>
+<p>=========================== <a href="https://www.postgresqltutorial.com/postgresql-create-table/">Create a new table</a> or a <a href="https://www.postgresqltutorial.com/postgresql-temporary-table/">temporary table</a></p>
+<pre><code>CREATE [TEMP] TABLE [IF NOT EXISTS] table_name(
+       pk SERIAL PRIMARY KEY,
+   c1 type(size) NOT NULL,
+   c2 type(size) NULL,
+   ...
+);</code></pre>
+<p><a href="https://www.postgresqltutorial.com/postgresql-add-column/">Add a new column</a> to a table:</p>
+<pre><code>ALTER TABLE table_name ADD COLUMN new_column_name TYPE;</code></pre>
+<p><a href="https://www.postgresqltutorial.com/postgresql-drop-column/">Drop a column</a> in a table:</p>
+<pre><code>ALTER TABLE table_name DROP COLUMN column_name;</code></pre>
+<p><a href="https://www.postgresqltutorial.com/postgresql-rename-column/">Rename a column</a>:</p>
+<pre><code>ALTER TABLE table_name RENAME column_name TO new_column_name;</code></pre>
+<p>Set or remove a default value for a column:</p>
+<pre><code>ALTER TABLE table_name ALTER COLUMN [SET DEFAULT value | DROP DEFAULT]</code></pre>
+<p>Add a <a href="https://www.postgresqltutorial.com/postgresql-primary-key/">primary key</a>to a table.</p>
+<pre><code>ALTER TABLE table_name ADD PRIMARY KEY (column,...);</code></pre>
+<p>Remove the primary key from a table.</p>
+<pre><code>ALTER TABLE table_name
+DROP CONSTRAINT primary_key_constraint_name;</code></pre>
+<p><a href="https://www.postgresqltutorial.com/postgresql-rename-table/">Rename a table</a>.</p>
+<pre><code>ALTER TABLE table_name RENAME TO new_table_name;</code></pre>
+<p><a href="https://www.postgresqltutorial.com/postgresql-drop-table/">Drop a table</a> and its dependent objects:</p>
+<pre><code>DROP TABLE [IF EXISTS] table_name CASCADE;</code></pre>
+<p>===========================</p>
+<h3 id="managing-views">Managing views</h3>
+<p>=========================== <a href="https://www.postgresqltutorial.com/managing-postgresql-views/">Create a view</a>:</p>
+<pre><code>CREATE OR REPLACE view_name AS
+query;</code></pre>
+<p><a href="https://www.postgresqltutorial.com/postgresql-recursive-view/">Create a recursive view</a>:</p>
+<pre><code>CREATE RECURSIVE VIEW view_name(column_list) AS
+SELECT column_list;</code></pre>
+<p><a href="https://www.postgresqltutorial.com/postgresql-materialized-views/">Create a materialized view</a>:</p>
+<pre><code>CREATE MATERIALIZED VIEW view_name
+AS
+query
+WITH [NO] DATA;</code></pre>
+<p>Refresh a materialized view:</p>
+<pre><code>REFRESH MATERIALIZED VIEW CONCURRENTLY view_name;</code></pre>
+<p>Drop a view:</p>
+<pre><code>DROP VIEW [ IF EXISTS ] view_name;</code></pre>
+<p>Drop a materialized view:</p>
+<pre><code>DROP MATERIALIZED VIEW view_name;</code></pre>
+<p>Rename a view:</p>
+<pre><code>ALTER VIEW view_name RENAME TO new_name;</code></pre>
+<p>===========================</p>
+<h3 id="managing-indexes">Managing indexes</h3>
+<p>=========================== Creating an index with the specified name on a table</p>
+<pre><code>CREATE [UNIQUE] INDEX index_name
+ON table (column,...)</code></pre>
+<p>Removing a specified index from a table</p>
+<pre><code>DROP INDEX index_name;</code></pre>
+<p>===========================</p>
+<h3 id="querying-data-from-tables">Querying data from tables</h3>
+<p>=========================== Query all data from a table:</p>
+<pre><code>SELECT * FROM table_name;</code></pre>
+<p>Query data from specified columns of all rows in a table:</p>
+<pre><code>SELECT column_list
+FROM table;</code></pre>
+<p>Query data and select only unique rows:</p>
+<pre><code>SELECT DISTINCT (column)
+FROM table;</code></pre>
+<p>Query data from a table with a filter:</p>
+<pre><code>SELECT *
+FROM table
+WHERE condition;</code></pre>
+<p>Assign an <a href="https://www.postgresqltutorial.com/postgresql-alias/">alias</a> to a column in the result set:</p>
+<pre><code>SELECT column_1 AS new_column_1, ...
+FROM table;</code></pre>
+<p>Query data using the <a href="https://www.postgresqltutorial.com/postgresql-like/"><code>LIKE</code></a> operator:</p>
+<pre><code>SELECT * FROM table_name
+WHERE column LIKE &#39;%value%&#39;</code></pre>
+<p>Query data using the <a href="https://www.postgresqltutorial.com/postgresql-between/"><code>BETWEEN</code></a> `` operator:</p>
+<pre><code>SELECT * FROM table_name
+WHERE column BETWEEN low AND high;</code></pre>
+<p>Query data using the <a href="https://www.postgresqltutorial.com/postgresql-in/"><code>IN</code></a> `` operator:</p>
+<pre><code>SELECT * FROM table_name
+WHERE column IN (value1, value2,...);
+```js
+
+constrain the returned rows with the [`LIMIT`](https://www.postgresqltutorial.com/postgresql-limit/) clause:
+</code></pre>
+<p>SELECT * FROM table_name LIMIT limit OFFSET offset ORDER BY column_name;</p>
+<pre><code>
+Query data from multiple using the [inner join](https://www.postgresqltutorial.com/postgresql-inner-join/), [left join](https://www.postgresqltutorial.com/postgresql-left-join/), [full outer join](https://www.postgresqltutorial.com/postgresql-full-outer-join/), [cross join](https://www.postgresqltutorial.com/postgresql-cross-join/) and [natural join](https://www.postgresqltutorial.com/postgresql-natural-join/):
+</code></pre>
+<p>SELECT <em> FROM table1 INNER JOIN table2 ON conditions SELECT </em> FROM table1 LEFT JOIN table2 ON conditions SELECT <em> FROM table1 FULL OUTER JOIN table2 ON conditions SELECT </em> FROM table1 CROSS JOIN table2; SELECT * FROM table1 NATURAL JOIN table2;</p>
+<pre><code>
+Return the number of rows of a table.
+</code></pre>
+<p>SELECT COUNT (*) FROM table_name;</p>
+<pre><code>
+Sort rows in ascending or descending order:
+</code></pre>
+<p>SELECT select_list FROM table ORDER BY column ASC [DESC], column2 ASC [DESC],…;</p>
+<pre><code>
+Group rows using [`GROUP BY`](https://www.postgresqltutorial.com/postgresql-group-by/) clause.
+</code></pre>
+<p>SELECT * FROM table GROUP BY column_1, column_2, …;</p>
+<pre><code>
+Filter groups using the [`HAVING`](https://www.postgresqltutorial.com/postgresql-having/) clause.
+</code></pre>
+<p>SELECT * FROM table GROUP BY column_1 HAVING condition;</p>
+<pre><code>
+\===========================
+
+### Set operations
+
+\=========================== Combine the result set of two or more queries with [`UNION`](https://www.postgresqltutorial.com/postgresql-union/) operator:
+</code></pre>
+<p>SELECT _ FROM table1 UNION SELECT _ FROM table2;</p>
+<pre><code>
+Minus a result set using [`EXCEPT`](https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-except/) operator:
+</code></pre>
+<p>SELECT _ FROM table1 EXCEPT SELECT _ FROM table2;</p>
+<pre><code>
+Get intersection of the result sets of two queries:
+</code></pre>
+<p>SELECT _ FROM table1 INTERSECT SELECT _ FROM table2;</p>
+<pre><code>
+\===========================
+
+### Modifying data
+
+\=========================== [Insert a new row into a table](https://www.postgresqltutorial.com/postgresql-insert/):
+</code></pre>
+<p>INSERT INTO table(column1,column2,…) VALUES(value_1,value_2,…);</p>
+<pre><code>
+Insert multiple rows into a table:
+</code></pre>
+<p>INSERT INTO table_name(column1,column2,…) VALUES(value_1,value_2,…), (value_1,value_2,…), (value_1,value_2,…)…</p>
+<pre><code>
+[Update](https://www.postgresqltutorial.com/postgresql-update/) data for all rows:
+</code></pre>
+<p>UPDATE table_name SET column_1 = value_1, …;</p>
+<pre><code>
+Update data for a set of rows specified by a condition in the `WHERE` clause.
+</code></pre>
+<p>UPDATE table SET column_1 = value_1, … WHERE condition;</p>
+<pre><code>
+[Delete all rows](https://www.postgresqltutorial.com/postgresql-delete/) of a table:
+</code></pre>
+<p>DELETE FROM table_name;</p>
+<pre><code>
+Delete specific rows based on a condition:
+</code></pre>
+<p>DELETE FROM table_name WHERE condition;</p>
+<pre><code>
+### Performance
+
+Show the query plan for a query:
+</code></pre>
+<p>EXPLAIN query;</p>
+<pre><code>
+Show and execute the query plan for a query:
+</code></pre>
+<p>EXPLAIN ANALYZE query;</p>
+<pre><code>
+Collect statistics:
+</code></pre>
+<p>ANALYZE table_name;</p>
+<pre><code></code></pre>
+</body>
+</html>

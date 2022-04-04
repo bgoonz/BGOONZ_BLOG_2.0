@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Notes-I-Wish-I-Had-When-I-Started-Learning-Python</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="notes-i-wish-i-had-when-i-started-learning-python">Notes I Wish I Had When I Started Learning Python</h1>
+<p>Plus resources for learning data structures and algorithms in python at the bottom of this article!</p>
+<hr />
+<h3 id="notes-i-wish-i-had-when-i-started-learning-python-1">Notes I Wish I Had When I Started Learning Python</h3>
+<h4 id="plus-resources-for-learning-data-structures-and-algorithms-in-python-at-the-bottom-of-this-article">Plus resources for learning data structures and algorithms in python at the bottom of this article!</h4>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/1200/0*8zBTnh_6r7agz9wz.jpg" class="graf-image" />
+</figure>
+<h3 id="basics">Basics</h3>
+<ul>
+<li><span id="e168"><strong>PEP8</strong> : Python Enhancement Proposals, style-guide for Python.</span></li>
+<li><span id="22a7"><code>print</code> is the equivalent of <code>console.log</code>.</span></li>
+<li><span id="c6a7"><code>#</code> is used to make comments in your code.</span></li>
+</ul>
+<!-- -->
+<pre><code>def foo():
+    &quot;&quot;&quot;
+    The foo function does many amazing things that you
+    should not question. Just accept that it exists and
+    use it with caution.
+    &quot;&quot;&quot;
+    secretThing()</code></pre>
+<ul>
+<li><span id="dcbc">Python has a built in help function that let’s you see a description of the source code without having to navigate to it.</span></li>
+</ul>
+<hr />
+<h3 id="numbers">Numbers</h3>
+<ul>
+<li><span id="8769">Python has three types of numbers:</span></li>
+<li><span id="8dbf"><strong>Integer</strong></span></li>
+<li><span id="04e5">Positive and Negative Counting Numbers.</span></li>
+<li><span id="931e">No Decimal Point</span></li>
+<li><span id="4be3">Created by a literal non-decimal pt number or with the <code>int()</code> constructor.</span></li>
+</ul>
+<!-- -->
+<pre><code>print(3) # =&gt; 3 print(int(19)) # =&gt; 19 print(int()) # =&gt; 0</code></pre>
+<ul>
+<li><span id="569a">Boolean is a subtype of integer in Python.</span></li>
+<li><span id="43df"><strong>Floating Point Number</strong></span></li>
+<li><span id="0bf7">Decimal Numbers.</span></li>
+</ul>
+<!-- -->
+<pre><code>print(2.24) # =&gt; 2.24 print(2.) # =&gt; 2.0 print(float()) # =&gt; 0.0 print(27e-5) # =&gt; 0.00027</code></pre>
+<h4 id="complex-numbers"><strong>Complex Numbers</strong></h4>
+<ul>
+<li><span id="fbe5">Consist of a real part and imaginary part.</span></li>
+<li><span id="2782">The <code>i</code> is switched to a <code>j</code> in programming.</span></li>
+</ul>
+<!-- -->
+<pre><code>print(7j) # =&gt; 7j print(5.1+7.7j)) # =&gt; 5.1+7.7j print(complex(3, 5)) # =&gt; 3+5j print(complex(17)) # =&gt; 17+0j print(complex()) # =&gt; 0j</code></pre>
+<h4 id="type-casting-the-process-of-converting-one-number-to-another."><strong>Type Casting</strong> : The process of converting one number to another.</h4>
+<pre><code># Using Float
+print(17)               # =&gt; 17
+print(float(17))        # =&gt; 17.0
+
+# Using Int
+print(17.0)             # =&gt; 17.0
+print(int(17.0))        # =&gt; 17
+
+# Using Str
+print(str(17.0) + &#39; and &#39; + str(17))        # =&gt; 17.0 and 17</code></pre>
+<ul>
+<li><span id="995c">The arithmetic operators are the same between JS and Python, with two additions:</span></li>
+<li><span id="794f">“**” : Double asterisk for exponent.</span></li>
+<li><span id="dff1">“//” : Integer Division.</span></li>
+<li><span id="658b">There are no spaces between math operations in Python.</span></li>
+<li><span id="d944">Integer Division gives the other part of the number from Module; it is a way to do round down numbers replacing <code>Math.floor()</code> in JS.</span></li>
+<li><span id="4180">There are no <code>++</code> and <code>--</code> in Python, the only shorthand operators are:</span></li>
+</ul>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*kq_3dH4n7wsmAy7u.png" class="graf-image" />
+</figure>
+<hr />
+<h3 id="strings">Strings</h3>
+<ul>
+<li><span id="d9cf">Python uses both single and double quotes.</span></li>
+<li><span id="d530">You can escape strings like so <code>'Jodi asked, "What\'s up, Sam?"'</code></span></li>
+<li><span id="0f19">Multiline strings use triple quotes.</span></li>
+</ul>
+<!-- -->
+<pre><code>print(&#39;&#39;&#39;My instructions are very long so to make them
+more readable in the code I am putting them on
+more than one line. I can even include &quot;quotes&quot;
+of any kind because they won&#39;t get confused with
+the end of the string!&#39;&#39;&#39;)</code></pre>
+<ul>
+<li><span id="3ef0">Use the <code>len()</code> function to get the length of a string.</span></li>
+</ul>
+<!-- -->
+<pre><code>print(len(&quot;Spaghetti&quot;)) # =&gt; 9</code></pre>
+<ul>
+<li><span id="83b9">Python uses <code>zero-based indexing</code></span></li>
+<li><span id="69f7">Python allows negative indexing (thank god!)</span></li>
+</ul>
+<!-- -->
+<pre><code>print(&quot;Spaghetti&quot;[-1]) # =&gt; i print(&quot;Spaghetti&quot;[-4]) # =&gt; e</code></pre>
+<ul>
+<li><span id="7a34">Python let’s you use ranges</span></li>
+</ul>
+<!-- -->
+<pre><code>print(&quot;Spaghetti&quot;[1:4]) # =&gt; pag print(&quot;Spaghetti&quot;[4:-1]) # =&gt; hett print(&quot;Spaghetti&quot;[4:4]) # =&gt; (empty string)</code></pre>
+<ul>
+<li><span id="0796">The end range is exclusive just like <code>slice</code> in JS.</span></li>
+</ul>
+<!-- -->
+<pre><code># Shortcut to get from the beginning of a string to a certain index.
+print(&quot;Spaghetti&quot;[:4])  # =&gt; Spag
+print(&quot;Spaghetti&quot;[:-1])    # =&gt; Spaghett
+
+# Shortcut to get from a certain index to the end of a string.
+print(&quot;Spaghetti&quot;[1:])  # =&gt; paghetti
+print(&quot;Spaghetti&quot;[-4:])    # =&gt; etti</code></pre>
+<ul>
+<li><span id="09d8">The <code>index</code> string function is the equiv. of <code>indexOf()</code> in JS</span></li>
+</ul>
+<!-- -->
+<pre><code>print(&quot;Spaghetti&quot;.index(&quot;h&quot;))    # =&gt; 4
+print(&quot;Spaghetti&quot;.index(&quot;t&quot;))    # =&gt; 6</code></pre>
+<ul>
+<li><span id="864b">The <code>count</code> function finds out how many times a substring appears in a string.</span></li>
+</ul>
+<!-- -->
+<pre><code>print(&quot;Spaghetti&quot;.count(&quot;h&quot;))    # =&gt; 1
+print(&quot;Spaghetti&quot;.count(&quot;t&quot;))    # =&gt; 2
+print(&quot;Spaghetti&quot;.count(&quot;s&quot;))    # =&gt; 0
+print(&#39;&#39;&#39;We choose to go to the moon in this decade and do the other things,
+not because they are easy, but because they are hard, because that goal will
+serve to organize and measure the best of our energies and skills, because that
+challenge is one that we are willing to accept, one we are unwilling to
+postpone, and one which we intend to win, and the others, too.
+&#39;&#39;&#39;.count(&#39;the &#39;))                # =&gt; 4</code></pre>
+<ul>
+<li><span id="1bbc">You can use <code>+</code> to concatenate strings, just like in JS.</span></li>
+<li><span id="c0f6">You can also use “*” to repeat strings or multiply strings.</span></li>
+<li><span id="4d7f">Use the <code>format()</code> function to use placeholders in a string to input values later on.</span></li>
+</ul>
+<!-- -->
+<pre><code>first_name = &quot;Billy&quot;
+last_name = &quot;Bob&quot;
+print(&#39;Your name is {0} {1}&#39;.format(first_name, last_name))  # =&gt; Your name is Billy Bob</code></pre>
+<ul>
+<li><span id="68ab">Shorthand way to use format function is:<br />
+<code>print(f'Your name is {first_name} {last_name}')</code></span></li>
+<li><span id="e860">Some useful string methods.</span></li>
+<li><span id="205c">Note that in JS <code>join</code> is used on an Array, in Python it is used on String.</span></li>
+</ul>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*36mwuAIxCl-f3m4H.png" class="graf-image" />
+</figure>
+<ul>
+<li><span id="fb66">There are also many handy testing methods.</span></li>
+</ul>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*BIsBBI09FpFa1ntJ.png" class="graf-image" />
+</figure>
+<hr />
+<h3 id="variables-and-expressions">Variables and Expressions</h3>
+<ul>
+<li><span id="42be"><strong>Duck-Typing</strong> : Programming Style which avoids checking an object’s type to figure out what it can do.</span></li>
+<li><span id="6b14">Duck Typing is the fundamental approach of Python.</span></li>
+<li><span id="929a">Assignment of a value automatically declares.</span></li>
+</ul>
+<!-- -->
+<pre><code>a = 7
+b = &#39;Marbles&#39;
+print(a)         # =&gt; 7
+print(b)         # =&gt; Marbles</code></pre>
+<ul>
+<li><span id="5e1f">You can chain variable assignments to give multiple var names the same value.</span></li>
+<li><span id="6d4d">Use with caution as this is highly unreadable</span></li>
+</ul>
+<!-- -->
+<pre><code>count = max = min = 0
+print(count)           # =&gt; 0
+print(max)             # =&gt; 0
+print(min)             # =&gt; 0</code></pre>
+<ul>
+<li><span id="9bfa">The value and type of a variable can be re-assigned at any time.</span></li>
+</ul>
+<!-- -->
+<pre><code>a = 17
+print(a)         # =&gt; 17
+a = &#39;seventeen&#39;
+print(a)         # =&gt; seventeen</code></pre>
+<ul>
+<li><span id="a5fe"><code>NaN</code> does not exist in Python, but you can ‘create’ it like so:<br />
+<code>print(float("nan"))</code></span></li>
+<li><span id="8e6f">Python replaces <code>null</code> with <code>none</code>.</span></li>
+<li><span id="2ce7"><code>none</code> is an object and can be directly assigned to a variable.</span></li>
+<li><span id="d6aa">Using none is a convenient way to check to see why an action may not be operating correctly in your program.</span></li>
+</ul>
+<hr />
+<h3 id="boolean-data-type">Boolean Data Type</h3>
+<ul>
+<li><span id="cd4b">One of the biggest benefits of Python is that it reads more like English than JS does.</span></li>
+</ul>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*eNmuDtlv7vr6a3Wc.png" class="graf-image" />
+</figure>
+<h1 id="logical-and">Logical AND</h1>
+<pre><code>print(True and True)    # =&gt; True
+print(True and False)   # =&gt; False
+print(False and False)  # =&gt; False
+
+# Logical OR
+print(True or True)     # =&gt; True
+print(True or False)    # =&gt; True
+print(False or False)   # =&gt; False
+
+# Logical NOT
+print(not True)             # =&gt; False
+print(not False and True)   # =&gt; True
+print(not True or False)    # =&gt; False</code></pre>
+<ul>
+<li><span id="b779">By default, Python considers an object to be true UNLESS it is one of the following:</span></li>
+<li><span id="a9c1">Constant <code>None</code> or <code>False</code></span></li>
+<li><span id="76fc">Zero of any numeric type.</span></li>
+<li><span id="30b9">Empty Sequence or Collection.</span></li>
+<li><span id="29da"><code>True</code> and <code>False</code> must be capitalized</span></li>
+</ul>
+<hr />
+<h3 id="comparison-operators">Comparison Operators</h3>
+<ul>
+<li><span id="a977">Python uses all the same equality operators as JS.</span></li>
+<li><span id="8cf1">In Python, equality operators are processed from left to right.</span></li>
+<li><span id="636c">Logical operators are processed in this order:</span></li>
+</ul>
+<ol type="1">
+<li><span id="83ea"><strong>NOT</strong></span></li>
+<li><span id="1da5"><strong>AND</strong></span></li>
+<li><span id="5f17"><strong>OR</strong></span></li>
+</ol>
+<ul>
+<li><span id="7bc8">Just like in JS, you can use <code>parentheses</code> to change the inherent order of operations.</span></li>
+<li><span id="ad5a"><strong>Short Circuit</strong> : Stopping a program when a <code>true</code> or <code>false</code> has been reached.</span></li>
+</ul>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*nlYkqe_JubdBB2mv.png" class="graf-image" />
+</figure>
+<hr />
+<h3 id="identity-vs-equality">Identity vs Equality</h3>
+<pre><code>print (2 == &#39;2&#39;)    # =&gt; False
+print (2 is &#39;2&#39;)    # =&gt; False
+
+print (&quot;2&quot; == &#39;2&#39;)    # =&gt; True
+print (&quot;2&quot; is &#39;2&#39;)    # =&gt; True
+
+# There is a distinction between the number types.
+print (2 == 2.0)    # =&gt; True
+print (2 is 2.0)    # =&gt; False</code></pre>
+<ul>
+<li><span id="9344">In the Python community it is better to use <code>is</code> and <code>is not</code> over <code>==</code> or <code>!=</code></span></li>
+</ul>
+<hr />
+<h3 id="if-statements">If Statements</h3>
+<pre><code>if name == &#39;Monica&#39;:
+    print(&#39;Hi, Monica.&#39;)
+
+if name == &#39;Monica&#39;:
+    print(&#39;Hi, Monica.&#39;)
+else:
+    print(&#39;Hello, stranger.&#39;)
+
+if name == &#39;Monica&#39;:
+    print(&#39;Hi, Monica.&#39;)
+elif age &lt; 12:
+    print(&#39;You are not Monica, kiddo.&#39;)
+elif age &gt; 2000:
+   print(&#39;Unlike you, Monica is not an undead, immortal vampire.&#39;)
+elif age &gt; 100:
+   print(&#39;You are not Monica, grannie.&#39;)</code></pre>
+<ul>
+<li><span id="bbd3">Remember the order of <code>elif</code> statements matter.</span></li>
+</ul>
+<hr />
+<h3 id="while-statements">While Statements</h3>
+<pre><code>spam = 0
+while spam &lt; 5:
+  print(&#39;Hello, world.&#39;)
+  spam = spam + 1</code></pre>
+<ul>
+<li><span id="0695"><code>Break</code> statement also exists in Python.</span></li>
+</ul>
+<!-- -->
+<pre><code>spam = 0
+while True:
+  print(&#39;Hello, world.&#39;)
+  spam = spam + 1
+  if spam &gt;= 5:
+    break</code></pre>
+<ul>
+<li><span id="080e">As are <code>continue</code> statements</span></li>
+</ul>
+<!-- -->
+<pre><code>spam = 0
+while True:
+  print(&#39;Hello, world.&#39;)
+  spam = spam + 1
+  if spam &lt; 5:
+    continue
+  break</code></pre>
+<hr />
+<h3 id="tryexcept-statements">Try/Except Statements</h3>
+<ul>
+<li><span id="6166">Python equivalent to <code>try/catch</code></span></li>
+</ul>
+<!-- -->
+<pre><code>a = 321
+try:
+    print(len(a))
+except:
+    print(&#39;Silently handle error here&#39;)
+
+    # Optionally include a correction to the issue
+    a = str(a)
+    print(len(a)
+
+a = &#39;321&#39;
+try:
+    print(len(a))
+except:
+    print(&#39;Silently handle error here&#39;)
+
+    # Optionally include a correction to the issue
+    a = str(a)
+    print(len(a))</code></pre>
+<ul>
+<li><span id="2704">You can name an error to give the output more specificity.</span></li>
+</ul>
+<!-- -->
+<pre><code>a = 100
+b = 0
+try:
+    c = a / b
+except ZeroDivisionError:
+    c = None
+print(c)</code></pre>
+<ul>
+<li><span id="fd53">You can also use the <code>pass</code> commmand to by pass a certain error.</span></li>
+</ul>
+<!-- -->
+<pre><code>a = 100
+b = 0
+try:
+    print(a / b)
+except ZeroDivisionError:
+    pass</code></pre>
+<ul>
+<li><span id="dd14">The <code>pass</code> method won’t allow you to bypass every single error so you can chain an exception series like so:</span></li>
+</ul>
+<!-- -->
+<pre><code>a = 100
+# b = &quot;5&quot;
+try:
+    print(a / b)
+except ZeroDivisionError:
+    pass
+except (TypeError, NameError):
+    print(&quot;ERROR!&quot;)</code></pre>
+<ul>
+<li><span id="a530">You can use an <code>else</code> statement to end a chain of <code>except</code> statements.</span></li>
+</ul>
+<!-- -->
+<pre><code># tuple of file names
+files = (&#39;one.txt&#39;, &#39;two.txt&#39;, &#39;three.txt&#39;)
+
+# simple loop
+for filename in files:
+    try:
+        # open the file in read mode
+        f = open(filename, &#39;r&#39;)
+    except OSError:
+        # handle the case where file does not exist or permission is denied
+        print(&#39;cannot open file&#39;, filename)
+    else:
+        # do stuff with the file object (f)
+        print(filename, &#39;opened successfully&#39;)
+        print(&#39;found&#39;, len(f.readlines()), &#39;lines&#39;)
+        f.close()</code></pre>
+<ul>
+<li><span id="f1fc"><code>finally</code> is used at the end to clean up all actions under any circumstance.</span></li>
+</ul>
+<!-- -->
+<pre><code>def divide(x, y):
+    try:
+        result = x / y
+    except ZeroDivisionError:
+        print(&quot;Cannot divide by zero&quot;)
+    else:
+        print(&quot;Result is&quot;, result)
+    finally:
+        print(&quot;Finally...&quot;)</code></pre>
+<ul>
+<li><span id="e45c">Using duck typing to check to see if some value is able to use a certain method.</span></li>
+</ul>
+<!-- -->
+<pre><code># Try a number - nothing will print out
+a = 321
+if hasattr(a, &#39;__len__&#39;):
+    print(len(a))
+
+# Try a string - the length will print out (4 in this case)
+b = &quot;5555&quot;
+if hasattr(b, &#39;__len__&#39;):
+    print(len(b))</code></pre>
+<hr />
+<h3 id="pass">Pass</h3>
+<ul>
+<li><span id="1449">Pass Keyword is required to write the JS equivalent of :</span></li>
+</ul>
+<!-- -->
+<pre><code>if (true) {
+}
+
+while (true) {}
+
+if True:
+  pass
+
+while True:
+  pass</code></pre>
+<hr />
+<h3 id="functions">Functions</h3>
+<ul>
+<li><span id="23ab"><strong>Function</strong> definition includes:</span></li>
+<li><span id="1c82">The <code>def</code> keyword</span></li>
+<li><span id="fc98">The name of the function</span></li>
+<li><span id="7444">A list of parameters enclosed in parentheses.</span></li>
+<li><span id="e403">A colon at the end of the line.</span></li>
+<li><span id="8a63">One tab indentation for the code to run.</span></li>
+</ul>
+<!-- -->
+<pre><code>def printCopyright():
+    print(&quot;Copyright 2020. Me, myself and I. All rights reserved.&quot;)</code></pre>
+<ul>
+<li><span id="8bc6">You can use default parameters just like in JS</span></li>
+</ul>
+<!-- -->
+<pre><code>def greeting(name, saying=&quot;Hello&quot;):
+    print(saying, name)
+
+greeting(&quot;Monica&quot;)
+# Hello Monica
+
+greeting(&quot;Barry&quot;, &quot;Hey&quot;)
+# Hey Barry</code></pre>
+<ul>
+<li><span id="a984">Keep in mind, default parameters must always come after regular parameters.</span></li>
+</ul>
+<!-- -->
+<pre><code># THIS IS BAD CODE AND WILL NOT RUN
+def increment(delta=1, value):
+    return delta + value</code></pre>
+<ul>
+<li><span id="724a">You can specify arguments by name without destructuring in Python.</span></li>
+</ul>
+<!-- -->
+<pre><code>def greeting(name, saying=&quot;Hello&quot;):
+    print(saying, name)
+
+# name has no default value, so just provide the value
+# saying has a default value, so use a keyword argument
+greeting(&quot;Monica&quot;, saying=&quot;Hi&quot;)</code></pre>
+<ul>
+<li><span id="6381">The <code>lambda</code> keyword is used to create anonymous functions and are supposed to be <code>one-liners</code>.</span></li>
+</ul>
+<p><code>toUpper = lambda s: s.upper()</code></p>
+<hr />
+<h3 id="notes">Notes</h3>
+<h3 id="formatted-strings">Formatted Strings</h3>
+<ul>
+<li><span id="46b0">Remember that in Python <code>join()</code> is called on a string with an array/list passed in as the argument.</span></li>
+</ul>
+<!-- -->
+<pre><code>shopping_list = [&#39;bread&#39;,&#39;milk&#39;,&#39;eggs&#39;]
+print(&#39;,&#39;.join(shopping_list))</code></pre>
+<ul>
+<li><span id="f86e">Python has a very powerful formatting engine.</span></li>
+<li><span id="e0b5"><code>format()</code> is also applied directly to strings.</span></li>
+</ul>
+<!-- -->
+<pre><code># Comma Thousands Separator
+ print(&#39;{:,}&#39;.format(1234567890))
+  &#39;1,234,567,890&#39;
+
+# Date and Time
+d = datetime.datetime(2020, 7, 4, 12, 15, 58)
+print(&#39;{:%Y-%m-%d %H:%M:%S}&#39;.format(d))
+&#39;2020-07-04 12:15:58&#39;
+
+# Percentage
+points = 190
+total = 220
+print(&#39;Correct answers: {:.2%}&#39;.format(points/total))
+Correct answers: 86.36%
+
+# Data Tables
+width=8
+print(&#39; decimal      hex   binary&#39;)
+print(&#39;-&#39;*27)
+for num in range(1,16):
+    for base in &#39;dXb&#39;:
+        print(&#39;{0:{width}{base}}&#39;.format(num, base=base, width=width), end=&#39; &#39;)
+    print()</code></pre>
+<hr />
+<h3 id="getting-input-from-the-command-line">Getting Input from the Command Line</h3>
+<ul>
+<li><span id="67f1">Python runs synchronously, all programs and processes will stop when listening for a user input.</span></li>
+<li><span id="21d9">The <code>input</code> function shows a prompt to a user and waits for them to type ‘ENTER’.</span></li>
+</ul>
+<hr />
+<h3 id="scripts-vs-programs">Scripts vs Programs</h3>
+<ul>
+<li><span id="3d45"><strong>Programming Script</strong> : A set of code that runs in a linear fashion.</span></li>
+<li><span id="126d">The largest difference between scripts and programs is the level of complexity and purpose. Programs typically have many UI’s.</span></li>
+<li><span id="a0e0">Python can be used to display html, css, and JS.</span></li>
+<li><span id="1ffd">We will be using Python as an API (Application Programming Interface)</span></li>
+</ul>
+<hr />
+<h3 id="structured-data">Structured Data</h3>
+<ul>
+<li><span id="6dc6"><strong>Sequence</strong> : The most basic data structure in Python where the index determines the order.</span></li>
+<li><span id="a9bc">List</span></li>
+<li><span id="92b4">Tuple</span></li>
+<li><span id="860c">Range</span></li>
+</ul>
+<p><strong>Collections</strong> : Unordered data structures, hashable values.</p>
+<ul>
+<li><span id="dd66">Dictionaries</span></li>
+<li><span id="a28e">Sets</span></li>
+<li><span id="a86f"><strong>Iterable</strong> : Generic name for a sequence or collection; any object that can be iterated through.</span></li>
+<li><span id="bcb9">Can be mutable or immutable.</span></li>
+</ul>
+<hr />
+<h3 id="built-in-data-types">Built In Data Types</h3>
+<ul>
+<li><span id="681b"><strong>Lists</strong> are the python equivalent of arrays.</span></li>
+</ul>
+<!-- -->
+<pre><code>empty_list = []
+departments = [&#39;HR&#39;,&#39;Development&#39;,&#39;Sales&#39;,&#39;Finance&#39;,&#39;IT&#39;,&#39;Customer Support&#39;]
+
+# You can instantiate
+specials = list()
+
+# Test if a value is in a list.
+print(1 in [1, 2, 3]) #&gt; True
+print(4 in [1, 2, 3]) #&gt; False</code></pre>
+<ul>
+<li><span id="1c0a"><strong>Tuples</strong> : Very similar to lists, but they are <code>immutable</code></span></li>
+</ul>
+<!-- -->
+<pre><code># Instantiated with parentheses
+time_blocks = (&#39;AM&#39;,&#39;PM&#39;)
+
+# Sometimes instantiated without
+colors = &#39;red&#39;,&#39;blue&#39;,&#39;green&#39;
+numbers = 1, 2, 3
+
+# Tuple() built in can be used to convert other data into a tuple
+tuple(&#39;abc&#39;)        # returns (&#39;a&#39;, &#39;b&#39;, &#39;c&#39;)
+tuple([1,2,3])      # returns (1, 2, 3)</code></pre>
+<ul>
+<li><span id="2e5f">Think of tuples as constant variables.</span></li>
+<li><span id="86a4"><strong>Ranges</strong> : A list of numbers which can’t be changed; often used with <code>for</code> loops.</span></li>
+<li><span id="04d3">Declared using one to three parameters.</span></li>
+</ul>
+<ol type="1">
+<li><span id="ac7e"><strong>Start</strong> : opt. default 0, first # in sequence.</span></li>
+<li><span id="7f6d"><strong>Stop</strong> : <code>required</code> next number past the last number in the sequence.</span></li>
+<li><span id="410f"><strong>Step</strong> : opt. default 1, difference between each number in the sequence.</span></li>
+</ol>
+<!-- -->
+<pre><code>range(5)            # [0, 1, 2, 3, 4]
+range(1,5)          # [1, 2, 3, 4]
+range(0, 25, 5)     # [0, 5, 10, 15, 20]
+range(0)            # [ ]
+
+for let (i = 0; i &lt; 5; i++)
+for let (i = 1; i &lt; 5; i++)
+for let (i = 0; i &lt; 25; i+=5)
+for let(i = 0; i = 0; i++)</code></pre>
+<ul>
+<li><span id="56e9">Keep in mind that <code>stop</code> is not included in the range.</span></li>
+<li><span id="8b99"><code>Dictionaries</code> : Mappable collection where a hashable value is used as a key to ref. an object stored in the dictionary.</span></li>
+<li><span id="c9a9">Mutable.</span></li>
+</ul>
+<!-- -->
+<pre><code>a = {&#39;one&#39;:1, &#39;two&#39;:2, &#39;three&#39;:3}
+b = dict(one=1, two=2, three=3)
+c = dict([(&#39;two&#39;, 2), (&#39;one&#39;, 1), (&#39;three&#39;, 3)])</code></pre>
+<blockquote>
+<p><em>a, b, and c are all equal</em></p>
+</blockquote>
+<ul>
+<li><span id="b63b">Declared with curly braces of the built in <code>dict()</code></span></li>
+<li><span id="40be">Benefit of dictionaries in Python is that it doesn’t matter how it is defined, if the keys and values are the same the dictionaries are considered equal.</span></li>
+<li><span id="c7e7">Use the <code>in</code> operator to see if a key exists in a dictionary.</span></li>
+</ul>
+<h4 id="sets-unordered-collection-of-distinct-objects-objects-that-need-to-be-hashable."><strong>Sets</strong> : Unordered collection of distinct objects; objects that <strong>need</strong> to be hashable.</h4>
+<ul>
+<li><span id="341e">Always be unique, duplicate items are auto dropped from the set.</span></li>
+<li><span id="a275"><strong>Common Uses</strong>:</span></li>
+<li><span id="2b5a">Removing Duplicates</span></li>
+<li><span id="2ec0">Membership Testing</span></li>
+<li><span id="ab7b">Mathematical Operators: Intersection, Union, Difference, Symmetric Difference.</span></li>
+<li><span id="9892">Standard Set is mutable, Python has a immutable version called <code>frozenset</code>.</span></li>
+<li><span id="c044">Sets created by putting comma seperated values inside braces:</span></li>
+</ul>
+<!-- -->
+<pre><code>school_bag = {&#39;book&#39;,&#39;paper&#39;,&#39;pencil&#39;,&#39;pencil&#39;,&#39;book&#39;,&#39;book&#39;,&#39;book&#39;,&#39;eraser&#39;}
+print(school_bag)
+
+# Also can use set constructor to automatically put it into a set.
+letters = set(&#39;abracadabra&#39;)
+print(letters)</code></pre>
+<hr />
+<h3 id="built-in-functions">Built-In Functions</h3>
+<p><strong>Functions using iterables</strong></p>
+<ul>
+<li><span id="7a7e"><strong>filter(function, iterable)</strong> : creates new iterable of the same type which includes each item for which the function returns true.</span></li>
+<li><span id="39d0"><strong>map(function, iterable)</strong> : creates new iterable of the same type which includes the result of calling the function on every item of the iterable.</span></li>
+<li><span id="cd33"><strong>sorted(iterable, key=None, reverse=False)</strong> : creates a new sorted list from the items in the iterable.</span></li>
+<li><span id="d949">Output is always a <code>list</code></span></li>
+<li><span id="c4a5"><code>key</code>: opt function which coverts and item to a value to be compared.</span></li>
+<li><span id="2ba7"><code>reverse</code>: optional boolean.</span></li>
+<li><span id="390c"><strong>enumerate(iterable, start=0)</strong> : starts with a sequence and converts it to a series of tuples</span></li>
+</ul>
+<!-- -->
+<pre><code>quarters = [&#39;First&#39;, &#39;Second&#39;, &#39;Third&#39;, &#39;Fourth&#39;]
+print(enumerate(quarters))
+print(enumerate(quarters, start=1))
+
+# (0, &#39;First&#39;), (1, &#39;Second&#39;), (2, &#39;Third&#39;), (3, &#39;Fourth&#39;)
+# (1, &#39;First&#39;), (2, &#39;Second&#39;), (3, &#39;Third&#39;), (4, &#39;Fourth&#39;)</code></pre>
+<ul>
+<li><span id="4919"><strong>zip(*iterables)</strong> : creates a zip object filled with tuples that combine 1 to 1 the items in each provided iterable.</span></li>
+</ul>
+<p><strong>Functions that analyze iterables</strong></p>
+<ul>
+<li><span id="48f1"><strong>len(iterable)</strong> : returns the count of the number of items.</span></li>
+<li><span id="938b"><strong>max(*args, key=None)</strong> : returns the largest of two or more arguments.</span></li>
+<li><span id="b7f1"><strong>max(iterable, key=None)</strong> : returns the largest item in the iterable.</span></li>
+<li><span id="bb8b"><code>key</code> optional function which converts an item to a value to be compared.</span></li>
+<li><span id="6cbc"><strong>min</strong> works the same way as <code>max</code></span></li>
+<li><span id="3098"><strong>sum(iterable)</strong> : used with a list of numbers to generate the total.</span></li>
+<li><span id="2531">There is a faster way to concatenate an array of strings into one string, so do not use sum for that.</span></li>
+<li><span id="97d7"><strong>any(iterable)</strong> : returns True if any items in the iterable are true.</span></li>
+<li><span id="37db"><strong>all(iterable)</strong> : returns True is all items in the iterable are true.</span></li>
+</ul>
+<p><strong>Working with dictionaries</strong></p>
+<ul>
+<li><span id="ddcc"><strong>dir(dictionary)</strong> : returns the list of keys in the dictionary.</span></li>
+</ul>
+<p><strong>Working with sets</strong></p>
+<ul>
+<li><span id="b4fe"><strong>Union</strong> : The pipe | operator or <code>union(*sets)</code> function can be used to produce a new set which is a combination of all elements in the provided set.</span></li>
+</ul>
+<!-- -->
+<pre><code>a = {1, 2, 3}
+b = {2, 4, 6}
+print(a | b)        # =&gt; {1, 2, 3, 4, 6}</code></pre>
+<ul>
+<li><span id="fcbf"><strong>Intersection</strong> : The &amp; operator ca be used to produce a new set of only the elements that appear in all sets.</span></li>
+</ul>
+<!-- -->
+<pre><code>a = {1, 2, 3}
+b = {2, 4, 6}
+print(a &amp; b)        # =&gt; {2}</code></pre>
+<ul>
+<li><span id="b777"><strong>Difference</strong> : The — operator can be used to produce a new set of only the elements that appear in the first set and NOT the others.</span></li>
+<li><span id="8aec"><strong>Symmetric Difference</strong> : The ^ operator can be used to produce a new set of only the elements that appear in exactly one set and not in both.</span></li>
+</ul>
+<!-- -->
+<pre><code>a = {1, 2, 3}
+b = {2, 4, 6}
+print(a - b)        # =&gt; {1, 3}
+print(b - a)        # =&gt; {4, 6}
+print(a ^ b)        # =&gt; {1, 3, 4, 6}</code></pre>
+<hr />
+<h3 id="for-statements">For Statements</h3>
+<ul>
+<li><span id="810e">In python, there is only one for loop.</span></li>
+<li><span id="e633">Always Includes:</span></li>
+<li><span id="8904">The <code>for</code> keyword</span></li>
+<li><span id="2ac7">A variable name</span></li>
+<li><span id="74ea">The <code>in</code> keyword</span></li>
+<li><span id="4b73">An iterable of some kid</span></li>
+<li><span id="7cff">A colon</span></li>
+<li><span id="e9e8">On the next line, an indented block of code called the <code>for</code> clause.</span></li>
+<li><span id="7ca8">You can use <code>break</code> and <code>continue</code> statements inside for loops as well.</span></li>
+<li><span id="93a6">You can use the range function as the iterable for the <code>for</code> loop.</span></li>
+</ul>
+<!-- -->
+<pre><code>print(&#39;My name is&#39;)
+for i in range(5):
+   print(&#39;Carlita Cinco (&#39; + str(i) + &#39;)&#39;)
+
+total = 0
+for num in range(101):
+    total += num
+print(total)</code></pre>
+<ul>
+<li><span id="14a1">Looping over a list in Python</span></li>
+</ul>
+<!-- -->
+<pre><code>for c in [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;]:
+    print(c)
+
+lst = [0, 1, 2, 3]
+for i in lst:
+    print(i)</code></pre>
+<ul>
+<li><span id="b506">Common technique is to use the len() on a pre-defined list with a for loop to iterate over the indices of the list.</span></li>
+</ul>
+<!-- -->
+<pre><code>supplies = [&#39;pens&#39;, &#39;staplers&#39;, &#39;flame-throwers&#39;, &#39;binders&#39;]
+for i in range(len(supplies)):
+    print(&#39;Index &#39; + str(i) + &#39; in supplies is: &#39; + supplies[i])</code></pre>
+<ul>
+<li><span id="a5bd">You can loop and destructure at the same time.</span></li>
+</ul>
+<!-- -->
+<pre><code>l = [[1, 2], [3, 4], [5, 6]]
+for a, b in l:
+    print(a, &#39;, &#39;, b)
+
+# Prints 1, 2
+# Prints 3, 4
+# Prints 5, 6</code></pre>
+<ul>
+<li><span id="125a">You can use <code>values()</code> and <code>keys()</code> to loop over dictionaries.</span></li>
+</ul>
+<!-- -->
+<pre><code>spam = {&#39;color&#39;: &#39;red&#39;, &#39;age&#39;: 42}
+for v in spam.values():
+    print(v)
+
+# Prints red
+# Prints 42
+
+for k in spam.keys():
+    print(k)
+
+# Prints color
+# Prints age</code></pre>
+<ul>
+<li><span id="3392">For loops can also iterate over both keys and values.</span></li>
+</ul>
+<!-- -->
+<pre><code># Getting tuples
+for i in spam.items():
+    print(i)
+
+# Prints (&#39;color&#39;, &#39;red&#39;)
+# Prints (&#39;age&#39;, 42)
+
+# Destructuring to values
+for k, v in spam.items():
+    print(&#39;Key: &#39; + k + &#39; Value: &#39; + str(v))
+
+# Prints Key: age Value: 42
+# Prints Key: color Value: red</code></pre>
+<ul>
+<li><span id="cd7e">Looping over string</span></li>
+</ul>
+<!-- -->
+<pre><code>for c in &quot;abcdefg&quot;:
+    print(c)</code></pre>
+<hr />
+<h3 id="more-on-functions">More On Functions</h3>
+<ul>
+<li><span id="5d5a"><strong>Variable-length positional arguments</strong> : (*args)</span></li>
+</ul>
+<!-- -->
+<pre><code>def add(a, b, *args):
+    total = a + b;
+    for n in args:
+        total += n
+    return total
+
+add(1, 2)  # Returns 3
+
+add(2, 3, 4, 5) # Returns 14</code></pre>
+<ul>
+<li><span id="824a"><strong>keyword arguments</strong> : (*kwargs)</span></li>
+</ul>
+<!-- -->
+<pre><code>def print_names_and_countries(greeting, **kwargs):
+    for k, v in kwargs.items():
+        print(greeting, k, &quot;from&quot;, v)
+
+print_names_and_countries(&quot;Hi&quot;,
+                          Monica=&quot;Sweden&quot;,
+                          Charles=&quot;British Virgin Islands&quot;,
+                          Carlo=&quot;Portugal&quot;)
+# Prints
+# Hi Monica from Sweden
+# Hi Charles from British Virgin Islands
+# Hi Carlo from Portugal</code></pre>
+<ul>
+<li><span id="6518">When you order arguments within a function or function call, the args need to occur in a particular order:</span></li>
+</ul>
+<ol type="1">
+<li><span id="7a5f">formal positional args.</span></li>
+<li><span id="20d4">*args</span></li>
+<li><span id="c514">keyword args with default values</span></li>
+<li><span id="b8d9">**kwargs</span></li>
+</ol>
+<!-- -->
+<pre><code>def example(arg_1, arg_2, *args, **kwargs):
+  pass
+
+def example2(arg_1, arg_2, *args, kw_1=&quot;shark&quot;, kw_2=&quot;blowfish&quot;, **kwargs):
+  pass</code></pre>
+<hr />
+<h3 id="importing-in-python">Importing in Python</h3>
+<ul>
+<li><span id="ea2a">Modules are similar to packages in Node.js</span></li>
+<li><span id="94fa">Come in different types: Built-In, Third-Party, Custom.</span></li>
+<li><span id="4023">All loaded using <code>import</code> statements.</span></li>
+</ul>
+<p><strong>Terms</strong></p>
+<ul>
+<li><span id="e81a"><strong>module</strong> : Python code in a separate file.</span></li>
+<li><span id="cf63"><strong>package</strong> : Path to a directory that contains modules.</span></li>
+<li><span id="30ba">*<strong>*init</strong>.py** : Default file for a package.</span></li>
+<li><span id="64a7"><strong>submodule</strong> : Another file in a module’s folder.</span></li>
+<li><span id="6cd7"><strong>function</strong> : Function in a module.</span></li>
+<li><span id="95fe">A module can be any file but it is usually created by placing a special file <code>__init__.py</code> into a folder.</span></li>
+<li><span id="06e5">Try to avoid importing with wildcards in Python.</span></li>
+<li><span id="04c3">Use multiple lines for clarity when importing.</span></li>
+</ul>
+<!-- -->
+<pre><code>from urllib.request import (
+  HTTPDefaultErrorHandler as ErrorHandler,
+  HTTPRedirectHandler as RedirectHandler,
+  Request,
+  pathname2url,
+  url2pathname,
+  urlopen,
+)</code></pre>
+<hr />
+<h3 id="watching-out-for-python-2">Watching Out for Python 2</h3>
+<ul>
+<li><span id="8bca">Python 3 removed <code>&lt;&gt;</code> and only uses <code>!=</code></span></li>
+<li><span id="b81a"><code>format()</code> was introduced with P3</span></li>
+<li><span id="4a2e">All strings in P3 are unicode and encoded.</span></li>
+<li><span id="fec8"><code>md5</code> was removed.</span></li>
+<li><span id="57ab"><code>ConfigParser</code> was renamed to <code>configparser</code></span></li>
+<li><span id="9716"><code>sets</code> were killed in favor of <code>set()</code> class.</span></li>
+<li><span id="e034"><code>print</code> was a statement in P2, but is a function in P3.</span></li>
+</ul>
+<hr />
+<h3 id="classes-in-python">Classes In Python</h3>
+<ul>
+<li><span id="b84b">Classes are a way of combining information and behavior.</span></li>
+<li><span id="2a24">Classes are blueprints to make objects.</span></li>
+</ul>
+<!-- -->
+<pre><code>class AngryBird {
+  constructor() {
+    this.x = 0;
+    this.y = 0;
+  }
+}
+
+class AngryBird:
+    def __init__(self):
+        &quot;&quot;&quot;
+        Construct a new AngryBird by setting its position to (0, 0).
+        &quot;&quot;&quot;
+        self.x = 0
+        self.y = 0</code></pre>
+<ul>
+<li><span id="8a53">Both JS and PY use the <code>class</code> keyword to declare classes.</span></li>
+<li><span id="4c00"><code>constructor</code> == <code>__init__</code></span></li>
+<li><span id="4156"><code>this</code> == <code>self</code></span></li>
+</ul>
+<!-- -->
+<pre><code>bird = AngryBird()
+print(bird.x, bird.y)  #&gt; 0 0
+
+class AngryBird:
+    def __init__(self):
+        &quot;&quot;&quot;
+        Construct a new AngryBird by setting its position to (0, 0).
+        &quot;&quot;&quot;
+        self.x = 0
+        self.y = 0
+
+    def move_up_by(self, delta):
+        self.y += delta</code></pre>
+<ul>
+<li><span id="5231">Note how you do not need to define <code>self</code> it is already bound to the class.</span></li>
+<li><span id="ff87">It is good practice to write a comment at the beginning of your class, describing the class.</span></li>
+</ul>
+<p><strong>Dunder Methods</strong></p>
+<ul>
+<li><span id="ec40">Double Underscore Methods, special built in functions that PY uses in certain ways.</span></li>
+<li><span id="1e02">i.e. <code>__init__()</code> lets you make sure all relevant attributes are set to their proper values when an object is created from the class.</span></li>
+<li><span id="2936">The <code>self</code> keyword refers to the current object that you are working with.</span></li>
+<li><span id="da3f">Method is a function that is part of a class.</span></li>
+</ul>
+<!-- -->
+<pre><code>class AngryBird:
+    def __init__(self):
+        self.x = 0
+        self.y = 0
+
+    def move_up_by(self, delta):
+        self.y += delta
+
+bird = AngryBird()
+print(bird)
+print(bird.y)
+bird.move_up_by(5)
+print(bird.y)</code></pre>
+<ul>
+<li><span id="e971"><em>Use one leading underscore only for non-public methods and instance variables</em></span></li>
+</ul>
+<!-- -->
+<pre><code>class AngryBird:
+    def __init__(self, x=0, y=0):
+        &quot;&quot;&quot;
+        Construct a new AngryBird by setting its position to (0, 0).
+        &quot;&quot;&quot;
+        self._x = x
+        self._y = y
+
+    def move_up_by(self, delta):
+        self._y += delta
+
+    def get_x(self):
+        return self._x
+
+    def get_y(self):
+        return self._y</code></pre>
+<ul>
+<li><span id="9c5d"><em>All instance variables should be considered non-public</em></span></li>
+<li><span id="9262">*<strong>*slots**</strong> : Dunder class variable used to reserve memory for the instance variables that you know will you will use.</span></li>
+</ul>
+<!-- -->
+<pre><code>class AngryBird:
+    __slots__ = [&#39;_x&#39;, &#39;_y&#39;]
+
+    def __init__(self, x=0, y=0):
+        &quot;&quot;&quot;
+        Construct a new AngryBird by setting its position to (0, 0).
+        &quot;&quot;&quot;
+        self._x = x
+        self._y = y
+
+    def move_up_by(self, delta):
+        self._y += delta
+
+    def get_x(self):
+        return self._x
+
+    def get_y(self):
+        return self._y</code></pre>
+<ul>
+<li><span id="e02b">You can use <code>__repr__()</code> to override the behavior of printing out a class in a verbose manner.</span></li>
+</ul>
+<!-- -->
+<pre><code>class AngryBird:
+    __slots__ = [&#39;_x&#39;, &#39;_y&#39;]
+
+    def __init__(self, x=0, y=0):
+        &quot;&quot;&quot;
+        Construct a new AngryBird by setting its position to (0, 0).
+        &quot;&quot;&quot;
+        self._x = x
+        self._y = y
+
+    def move_up_by(self, delta):
+        self._y += delta
+
+    def get_x(self):
+        return self._x
+
+    def get_y(self):
+        return self._y
+
+    def __repr__(self):
+        return f&quot;&lt;AngryBird ({self._x}, {self._y})&gt;&quot;</code></pre>
+<hr />
+<h3 id="properties-for-classes">Properties for Classes</h3>
+<ul>
+<li><span id="721b">Getters and Setters are used in object-oriented programming to add validation logic around getting and setting a value.</span></li>
+</ul>
+<p><strong>Getters</strong></p>
+<pre><code>bird = AngryBird()
+
+print(bird.get_x(), bird.get_y())</code></pre>
+<ul>
+<li><span id="8100">Getting the x and y values of our class can get very cumbersome.</span></li>
+<li><span id="7cc1"><strong>Decorators</strong> : Allow us to change the way methods get invoked.</span></li>
+<li><span id="20bc">Always start with the @ symbol.</span></li>
+<li><span id="940f">Can be applied to methods, classes, and parameters.</span></li>
+<li><span id="98d2">Built in decorator named <code>property</code> that you can apply to a method to make it readable.</span></li>
+</ul>
+<!-- -->
+<pre><code>@property
+    def x(self):
+        return self._x
+
+ @property
+    def y(self):
+        return self._y
+
+ bird = AngryBird()
+
+ print(bird.x, bird.y)</code></pre>
+<p><strong>Setters</strong></p>
+<pre><code>class AngryBird:
+    def __init__(self, x=0, y=0):
+        &quot;&quot;&quot;
+        Construct a new AngryBird by setting its position to (0, 0).
+        &quot;&quot;&quot;
+        self._x = x
+        self._y = y
+
+    def move_up_by(self, delta):
+        self._y += delta
+
+    @property
+    def x(self):
+        return self._x
+
+    @x.setter
+    def x(self, value):
+        if value &lt; 0:
+            value = 0
+        self._x = value
+
+    @property
+    def y(self):
+        return self._y
+
+    @y.setter
+    def y(self, value):
+        if value &lt; 0:
+            value = 0
+        self._y = value</code></pre>
+<hr />
+<h3 id="list-comprehensions">List Comprehensions</h3>
+<ul>
+<li><span id="9b2c">List comprehensions are the equivalent of wrapped up filter namp array methods while also allowing nested loops.</span></li>
+<li><span id="f25d"><code>new_list = [expression for member in iterable]</code></span></li>
+<li><span id="e7c4"><strong>expression</strong> : member itself, a call to a methd, or any other valid expression that returns a value.</span></li>
+<li><span id="2aec"><strong>member</strong> : object or value in the list or iterable.</span></li>
+<li><span id="f6de"><strong>iterable</strong> : iterable.</span></li>
+</ul>
+<p><code>new_list = [expression for member in iterable (if conditional)]</code></p>
+<ul>
+<li><span id="5643">Adding a conditional into a list comprehension.</span></li>
+</ul>
+<!-- -->
+<pre><code>sentence = &#39;Mary, Mary, quite contrary, how does your garden grow?&#39;
+def is_consonant(letter):
+    vowels = &quot;aeiou&quot;
+    return letter.isalpha() and letter.lower() not in vowels
+
+consonants = [i for i in sentence if is_consonant(i)]
+
+print(consonants)
+# Prints [&#39;M&#39;, &#39;r&#39;, &#39;y&#39;, &#39;M&#39;, &#39;r&#39;, &#39;y&#39;, &#39;q&#39;, &#39;t&#39;, &#39;c&#39;,
+# &#39;n&#39;, &#39;t&#39;, &#39;r&#39;, &#39;r&#39;, &#39;y&#39;, &#39;h&#39;, &#39;w&#39;, &#39;d&#39;, &#39;s&#39;, &#39;y&#39;,
+# &#39;r&#39;, &#39;g&#39;, &#39;r&#39;, &#39;d&#39;, &#39;n&#39;, &#39;g&#39;, &#39;r&#39;, &#39;w&#39;]</code></pre>
+<p><strong>When to not use list comprehensions</strong></p>
+<ul>
+<li><span id="6e41">List comprehensions may make your code run more slowly or use more memory.</span></li>
+<li><span id="d062">You can use nest lists to create matrices.</span></li>
+</ul>
+<!-- -->
+<pre><code>matrix = [[i for i in range(5)] for _ in range(6)]
+
+print(matrix)
+# Prints
+# [
+#     [0, 1, 2, 3, 4],
+#     [0, 1, 2, 3, 4],
+#     [0, 1, 2, 3, 4],
+#     [0, 1, 2, 3, 4],
+#     [0, 1, 2, 3, 4],
+#     [0, 1, 2, 3, 4]
+# ]</code></pre>
+<hr />
+<h3 id="my-blog">My Blog:</h3>
+<p><a href="https://master--bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://master--bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong> <br/></p>
+<p><em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>master–bgoonz-blog.netlify.app</a><a href="https://master--bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
+<h3 id="python-data-structures-algorithms-resources">Python Data Structures &amp; Algorithms Resources:</h3>
+<ul>
+<li><span id="b2ea"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/Framework%20and%20thoughts%20about%20learning%20data%20structure%20and%20algorithm.md" class="markup--anchor markup--li-anchor">The Framework for Learning Algorithms and intense problem solving exercises</a></span></li>
+<li><span id="4075"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/why_i_recommend_algs4.md" class="markup--anchor markup--li-anchor">Algs4: Recommended book for Learning Algorithms and Data Structures</a></span></li>
+<li><span id="277c"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/AnalysisOfDynamicProgramming.md" class="markup--anchor markup--li-anchor">An analysis of Dynamic Programming</a></span></li>
+<li><span id="5401"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/OptimalSubstructure.md" class="markup--anchor markup--li-anchor">Dynamic Programming Q&amp;A — What is Optimal Substructure</a></span></li>
+<li><span id="9c28"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/DetailsaboutBacktracking.md" class="markup--anchor markup--li-anchor">The Framework for Backtracking Algorithm</a></span></li>
+<li><span id="d786"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/DetailedBinarySearch.md" class="markup--anchor markup--li-anchor">Binary Search in Detail: I wrote a Poem</a></span></li>
+<li><span id="1239"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/SlidingWindowTechnique.md" class="markup--anchor markup--li-anchor">The Sliding Window Technique</a></span></li>
+<li><span id="bfaf"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/common_knowledge/linuxProcess.md" class="markup--anchor markup--li-anchor">Difference Between Process and Thread in Linux</a></span></li>
+<li><span id="6d97"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/common_knowledge/OnlinePraticePlatform.md" class="markup--anchor markup--li-anchor">Some Good Online Practice Platforms</a></span></li>
+<li><span id="9583"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/AnalysisOfDynamicProgramming.md" class="markup--anchor markup--li-anchor">Dynamic Programming in Details</a></span></li>
+<li><span id="4d54"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/OptimalSubstructure.md" class="markup--anchor markup--li-anchor">Dynamic Programming Q&amp;A — What is Optimal Substructure</a></span></li>
+<li><span id="183e"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/LongestCommonSubsequence.md" class="markup--anchor markup--li-anchor">Classic DP: Longest Common Subsequence</a></span></li>
+<li><span id="3dca"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/EditDistance.md" class="markup--anchor markup--li-anchor">Classic DP: Edit Distance</a></span></li>
+<li><span id="9429"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/ThrowingEggsinHighBuildings.md" class="markup--anchor markup--li-anchor">Classic DP: Super Egg</a></span></li>
+<li><span id="cf8d"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/SuperEggDropAdvanced.md" class="markup--anchor markup--li-anchor">Classic DP: Super Egg (Advanced Solution)</a></span></li>
+<li><span id="9f94"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/StrategiesForSubsequenceProblem.md" class="markup--anchor markup--li-anchor">The Strategies of Subsequence Problem</a></span></li>
+<li><span id="306b"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/GameProblemsInDynamicProgramming.md" class="markup--anchor markup--li-anchor">Classic DP: Game Problems</a></span></li>
+<li><span id="cf55"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/IntervalScheduling.md" class="markup--anchor markup--li-anchor">Greedy: Interval Scheduling</a></span></li>
+<li><span id="0a6a"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/KMPCharacterMatchingAlgorithmInDynamicProgramming.md" class="markup--anchor markup--li-anchor">KMP Algorithm In Detail</a></span></li>
+<li><span id="ccb6"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/BestTimeToBuyAndSellStock.md" class="markup--anchor markup--li-anchor">A solution to all Buy Time to Buy and Sell Stock Problems</a></span></li>
+<li><span id="a130"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/HouseRobber.md" class="markup--anchor markup--li-anchor">A solution to all House Robber Problems</a></span></li>
+<li><span id="1470"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/FourKeysKeyboard.md" class="markup--anchor markup--li-anchor">4 Keys Keyboard</a></span></li>
+<li><span id="d7e6"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/RegularExpression.md" class="markup--anchor markup--li-anchor">Regular Expression</a></span></li>
+<li><span id="b35e"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/LongestIncreasingSubsequence.md" class="markup--anchor markup--li-anchor">Longest Increasing Subsequence</a></span></li>
+<li><span id="99f6"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/Framework%20and%20thoughts%20about%20learning%20data%20structure%20and%20algorithm.md" class="markup--anchor markup--li-anchor">The Framework for Learning Algorithms and intense problem solving exercises</a></span></li>
+<li><span id="ed60"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/why_i_recommend_algs4.md" class="markup--anchor markup--li-anchor">Algs4: Recommended book for Learning Algorithms and Data Structures</a></span></li>
+<li><span id="659f"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/data_structure/binary_heap_implements_priority_queues.md" class="markup--anchor markup--li-anchor">Binary Heap and Priority Queue</a></span></li>
+<li><span id="210a"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/LRU_algorithm.md" class="markup--anchor markup--li-anchor">LRU Cache Strategy in Detail</a></span></li>
+<li><span id="26a4"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/data_structure/The_Manipulation_Collection_of_Binary_Search_Tree.md" class="markup--anchor markup--li-anchor">Collections of Binary Search Operations</a></span></li>
+<li><span id="d918"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/data_structure/MonotonicStack.md" class="markup--anchor markup--li-anchor">Special Data Structure: Monotonic Stack</a></span></li>
+<li><span id="a7c1"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/data_structure/Monotonic_queue.md" class="markup--anchor markup--li-anchor">Special Data Structure: Monotonic Stack</a></span></li>
+<li><span id="b904"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/data_structure/design_Twitter.md" class="markup--anchor markup--li-anchor">Design Twitter</a></span></li>
+<li><span id="46a9"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/data_structure/reverse_part_of_a_linked_list_via_recursion.md" class="markup--anchor markup--li-anchor">Reverse Part of Linked List via Recursion</a></span></li>
+<li><span id="b014"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/data_structure/ImplementQueueUsingStacksImplementStackUsingQueues.md" class="markup--anchor markup--li-anchor">Queue Implement Stack/Stack implement Queue</a></span></li>
+<li><span id="d366"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/ThewaytoAlgorithmlearning.md" class="markup--anchor markup--li-anchor">My Way to Learn Algorithm</a></span></li>
+<li><span id="b0b9"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/DetailsaboutBacktracking.md" class="markup--anchor markup--li-anchor">The Framework of Backtracking Algorithm</a></span></li>
+<li><span id="1716"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/DetailedBinarySearch.md" class="markup--anchor markup--li-anchor">Binary Search in Detail</a></span></li>
+<li><span id="2571"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/Subset_Permutation_Combination.md" class="markup--anchor markup--li-anchor">Backtracking Solve Subset/Permutation/Combination</a></span></li>
+<li><span id="0038"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/double_pointer.md" class="markup--anchor markup--li-anchor">Diving into the technical parts of Double Pointers</a></span></li>
+<li><span id="fa85"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/SlidingWindowTechnique.md" class="markup--anchor markup--li-anchor">Sliding Window Technique</a></span></li>
+<li><span id="ce8c"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/The_key_to_resolving_TwoSum_problems.md" class="markup--anchor markup--li-anchor">The Core Concept of TwoSum Problems</a></span></li>
+<li><span id="d2e4"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/CommonBitManipulation.md" class="markup--anchor markup--li-anchor">Common Bit Manipulations</a></span></li>
+<li><span id="f554"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/data_structure/Implementing_the_functions_of_a_calculator.md" class="markup--anchor markup--li-anchor">Breaking down a Complicated Problem: Implement a Calculator</a></span></li>
+<li><span id="96c2"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/PancakesSorting.md" class="markup--anchor markup--li-anchor">Pancake Sorting Algorithm</a></span></li>
+<li><span id="71b5"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/prefix_sum.md" class="markup--anchor markup--li-anchor">Prefix Sum: Intro and Concept</a></span></li>
+<li><span id="ccf5"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/string_multiplication.md" class="markup--anchor markup--li-anchor">String Multiplication</a></span></li>
+<li><span id="dd56"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/flood_fill.md" class="markup--anchor markup--li-anchor">FloodFill Algorithm in Detail</a></span></li>
+<li><span id="0bc1"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/IntervalMerging.md" class="markup--anchor markup--li-anchor">Interval Scheduling: Interval Merging</a></span></li>
+<li><span id="07eb"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/IntervalIntersection.md" class="markup--anchor markup--li-anchor">Interval Scheduling: Intersections of Intervals</a></span></li>
+<li><span id="c308"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/RussianDollEnvelopes.md" class="markup--anchor markup--li-anchor">Russian Doll Envelopes Problem</a></span></li>
+<li><span id="cc1c"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/several_counter_intuitive_probability_problems.md" class="markup--anchor markup--li-anchor">A collection of counter-intuitive Probability Problems</a></span></li>
+<li><span id="983c"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/Shuffle_Algorithm.md" class="markup--anchor markup--li-anchor">Shuffle Algorithm</a></span></li>
+<li><span id="915e"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/data_structure/RecursionInDetail.md" class="markup--anchor markup--li-anchor">Recursion In Detail</a></span></li>
+<li><span id="e511"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/LRU_algorithm.md" class="markup--anchor markup--li-anchor">How to Implement LRU Cache</a></span></li>
+<li><span id="43f6"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/Print_PrimeNumbers.md" class="markup--anchor markup--li-anchor">How to Find Prime Number Efficiently</a></span></li>
+<li><span id="a714"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/EditDistance.md" class="markup--anchor markup--li-anchor">How to Calculate Minimium Edit Distance</a></span></li>
+<li><span id="6efb"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/UsingBinarySearchAlgorithm.md" class="markup--anchor markup--li-anchor">How to use Binary Search</a></span></li>
+<li><span id="2310"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/Trapping_Rain_Water.md" class="markup--anchor markup--li-anchor">How to efficiently solve Trapping Rain Water Problem</a></span></li>
+<li><span id="98e2"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/RemoveDuplicatesfromSortedArray.md" class="markup--anchor markup--li-anchor">How to Remove Duplicates From Sorted Array</a></span></li>
+<li><span id="b2e1"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/TheLongestPalindromicSubstring.md" class="markup--anchor markup--li-anchor">How to Find Longest Palindromic Substring</a></span></li>
+<li><span id="52d6"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/reverse-nodes-in-k-group.md" class="markup--anchor markup--li-anchor">How to Reverse Linked List in K Group</a></span></li>
+<li><span id="adbe"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/valid-parentheses.md" class="markup--anchor markup--li-anchor">How to Check the Validation of Parenthesis</a></span></li>
+<li><span id="440d"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/missing_elements.md" class="markup--anchor markup--li-anchor">How to Find Missing Element</a></span></li>
+<li><span id="80cb"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/Find-Duplicate-and-Missing-Element.md" class="markup--anchor markup--li-anchor">How to Find Duplicates and Missing Elements</a></span></li>
+<li><span id="6a2a"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/check_palindromic_linkedlist.md" class="markup--anchor markup--li-anchor">How to Check Palindromic LinkedList</a></span></li>
+<li><span id="0e94"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/ReservoirSampling.md" class="markup--anchor markup--li-anchor">How to Pick Elements From an Infinite Arbitrary Sequence</a></span></li>
+<li><span id="f96d"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/Seatscheduling.md" class="markup--anchor markup--li-anchor">How to Schedule Seats for Students</a></span></li>
+<li><span id="6d49"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/Union-find-Explanation.md" class="markup--anchor markup--li-anchor">Union-Find Algorithm in Detail</a></span></li>
+<li><span id="7221"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/Union-Find-Application.md" class="markup--anchor markup--li-anchor">Union-Find Application</a></span></li>
+<li><span id="19f3"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/one-line-code-puzzles.md" class="markup--anchor markup--li-anchor">Problems that can be solved in one line</a></span></li>
+<li><span id="1b55"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/findSebesquenceWithBinarySearch.md" class="markup--anchor markup--li-anchor">Find Subsequence With Binary Search</a></span></li>
+<li><span id="ff15"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/common_knowledge/linuxProcess.md" class="markup--anchor markup--li-anchor">Difference Between Process and Thread in Linux</a></span></li>
+<li><span id="a49f"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/common_knowledge/linuxshell.md" class="markup--anchor markup--li-anchor">You Must Know About Linux Shell</a></span></li>
+<li><span id="901b"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/common_knowledge/SessionAndCookie.md" class="markup--anchor markup--li-anchor">You Must Know About Cookie and Session</a></span></li>
+<li><span id="02f7"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/common_knowledge/Cryptology.md" class="markup--anchor markup--li-anchor">Cryptology Algorithm</a></span></li>
+<li><span id="d08e"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/common_knowledge/OnlinePraticePlatform.md" class="markup--anchor markup--li-anchor">Some Good Online Practice Platforms</a></span></li>
+</ul>
+<h3 id="algorithms">Algorithms:</h3>
+<ul>
+<li><span id="fa97"><a href="https://github.com/coells/100days" class="markup--anchor markup--li-anchor">100 days of algorithms</a></span></li>
+<li><span id="7dcc"><a href="https://github.com/marcosfede/algorithms" class="markup--anchor markup--li-anchor">Algorithms</a> — Solved algorithms and data structures problems in many languages.</span></li>
+<li><span id="15d0"><a href="http://jeffe.cs.illinois.edu/teaching/algorithms/" class="markup--anchor markup--li-anchor">Algorithms by Jeff Erickson</a> (<a href="https://github.com/jeffgerickson/algorithms" class="markup--anchor markup--li-anchor">Code</a>) (<a href="https://news.ycombinator.com/item?id=26074289" class="markup--anchor markup--li-anchor">HN</a>)</span></li>
+<li><span id="d4cd"><a href="https://www.reddit.com/r/compsci/comments/5uz9lb/top_algorithmsdata_structuresconcepts_every/ddy8azz/" class="markup--anchor markup--li-anchor">Top algos/DS to learn</a></span></li>
+<li><span id="1a0a"><a href="https://www.nayuki.io/category/programming" class="markup--anchor markup--li-anchor">Some neat algorithms</a></span></li>
+<li><span id="14b4"><a href="https://stackabuse.com/mathematical-proof-of-algorithm-correctness-and-efficiency/" class="markup--anchor markup--li-anchor">Mathematical Proof of Algorithm Correctness and Efficiency (2019)</a></span></li>
+<li><span id="06f9"><a href="https://github.com/algorithm-visualizer/algorithm-visualizer" class="markup--anchor markup--li-anchor">Algorithm Visualizer</a> — Interactive online platform that visualizes algorithms from code.</span></li>
+<li><span id="90af"><a href="https://mitpress.mit.edu/books/algorithms-optimization" class="markup--anchor markup--li-anchor">Algorithms for Optimization book</a></span></li>
+<li><span id="2a4b"><a href="https://www.algorithm-archive.org/" class="markup--anchor markup--li-anchor">Collaborative book on algorithms</a> (<a href="https://github.com/algorithm-archivists/algorithm-archive" class="markup--anchor markup--li-anchor">Code</a>)</span></li>
+<li><span id="be29"><a href="http://index-of.co.uk/Algorithms/Algorithms%20in%20C.pdf" class="markup--anchor markup--li-anchor">Algorithms in C by Robert Sedgewick</a></span></li>
+<li><span id="93f7"><a href="http://mimoza.marmara.edu.tr/~msakalli/cse706_12/SkienaTheAlgorithmDesignManual.pdf" class="markup--anchor markup--li-anchor">Algorithm Design Manual</a></span></li>
+<li><span id="f494"><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/" class="markup--anchor markup--li-anchor">MIT Introduction to Algorithms course (2011)</a></span></li>
+<li><span id="1c5b"><a href="http://codecapsule.com/2012/01/18/how-to-implement-a-paper/" class="markup--anchor markup--li-anchor">How to implement an algorithm from a scientific paper (2012)</a></span></li>
+<li><span id="cc64"><a href="https://github.com/scandum/quadsort" class="markup--anchor markup--li-anchor">Quadsort</a> — Stable non-recursive merge sort named quadsort.</span></li>
+<li><span id="e3de"><a href="https://github.com/resumejob/system-design-algorithms" class="markup--anchor markup--li-anchor">System design algorithms</a> — Algorithms you should know before system design.</span></li>
+<li><span id="d219"><a href="http://www.cs.sjtu.edu.cn/~jiangli/teaching/CS222/files/materials/Algorithm%20Design.pdf" class="markup--anchor markup--li-anchor">Algorithms Design book</a></span></li>
+<li><span id="1c8d"><a href="http://greenteapress.com/complexity/html/index.html" class="markup--anchor markup--li-anchor">Think Complexity</a></span></li>
+<li><span id="f062"><a href="https://github.com/TheAlgorithms/Rust" class="markup--anchor markup--li-anchor">All Algorithms implemented in Rust</a></span></li>
+<li><span id="ad4b"><a href="https://walkccc.github.io/CLRS/" class="markup--anchor markup--li-anchor">Solutions to Introduction to Algorithms book</a> (<a href="https://github.com/walkccc/CLRS" class="markup--anchor markup--li-anchor">Code</a>)</span></li>
+<li><span id="c24d"><a href="https://www.jamisbuck.org/mazes/" class="markup--anchor markup--li-anchor">Maze Algorithms (2011)</a> (<a href="https://news.ycombinator.com/item?id=23429368" class="markup--anchor markup--li-anchor">HN</a>)</span></li>
+<li><span id="b88e"><a href="https://page.skerritt.blog/algorithms/" class="markup--anchor markup--li-anchor">Algorithmic Design Paradigms book</a> (<a href="https://github.com/brandonskerritt/AlgorithmsBook" class="markup--anchor markup--li-anchor">Code</a>)</span></li>
+<li><span id="e4f3"><a href="https://wordsandbuttons.online/" class="markup--anchor markup--li-anchor">Words and buttons Online Blog</a> (<a href="https://github.com/akalenuk/wordsandbuttons" class="markup--anchor markup--li-anchor">Code</a>)</span></li>
+<li><span id="66f7"><a href="https://www.chrislaux.com/" class="markup--anchor markup--li-anchor">Algorithms animated</a></span></li>
+<li><span id="247d"><a href="https://jiahai-feng.github.io/posts/cache-oblivious-algorithms/" class="markup--anchor markup--li-anchor">Cache Oblivious Algorithms (2020)</a> (<a href="https://news.ycombinator.com/item?id=23662434" class="markup--anchor markup--li-anchor">HN</a>)</span></li>
+<li><span id="f306"><a href="http://blog.ezyang.com/2012/03/you-could-have-invented-fractional-cascading/" class="markup--anchor markup--li-anchor">You could have invented fractional cascading (2012)</a></span></li>
+<li><span id="73c4"><a href="https://labuladong.gitbook.io/algo-en/" class="markup--anchor markup--li-anchor">Guide to learning algorithms through LeetCode</a> (<a href="https://github.com/labuladong/fucking-algorithm/tree/english" class="markup--anchor markup--li-anchor">Code</a>) (<a href="https://news.ycombinator.com/item?id=24167297" class="markup--anchor markup--li-anchor">HN</a>)</span></li>
+<li><span id="f612"><a href="https://cstheory.stackexchange.com/questions/34/how-hard-is-unshuffling-a-string" class="markup--anchor markup--li-anchor">How hard is unshuffling a string?</a></span></li>
+<li><span id="f646"><a href="https://sites.uclouvain.be/absil/amsbook/" class="markup--anchor markup--li-anchor">Optimization Algorithms on Matrix Manifolds</a></span></li>
+<li><span id="0db2"><a href="https://runestone.academy/runestone/books/published/pythonds/index.html" class="markup--anchor markup--li-anchor">Problem Solving with Algorithms and Data Structures</a> (<a href="https://news.ycombinator.com/item?id=24287622" class="markup--anchor markup--li-anchor">HN</a>) (<a href="https://www.cs.auckland.ac.nz/compsci105s1c/resources/ProblemSolvingwithAlgorithmsandDataStructures.pdf" class="markup--anchor markup--li-anchor">PDF</a>)</span></li>
+<li><span id="b105"><a href="https://github.com/TheAlgorithms/Python" class="markup--anchor markup--li-anchor">Algorithms implemented in Python</a></span></li>
+<li><span id="b477"><a href="https://github.com/TheAlgorithms/Javascript" class="markup--anchor markup--li-anchor">Algorithms implemented in JavaScript</a></span></li>
+<li><span id="b80e"><a href="https://github.com/williamfiset/Algorithms" class="markup--anchor markup--li-anchor">Algorithms &amp; Data Structures in Java</a></span></li>
+<li><span id="9c9e"><a href="https://github.com/scandum/wolfsort" class="markup--anchor markup--li-anchor">Wolfsort</a> — Stable adaptive hybrid radix / merge sort.</span></li>
+<li><span id="5270"><a href="https://github.com/fcampelo/EC-Bestiary" class="markup--anchor markup--li-anchor">Evolutionary Computation Bestiary</a> — Bestiary of evolutionary, swarm and other metaphor-based algorithms.</span></li>
+<li><span id="355a"><a href="http://elementsofprogramming.com/" class="markup--anchor markup--li-anchor">Elements of Programming book</a> — Decomposing programs into a system of algorithmic components. (<a href="http://www.pathsensitive.com/2020/09/book-review-elements-of-programmnig.html" class="markup--anchor markup--li-anchor">Review</a>) (<a href="https://news.ycombinator.com/item?id=24635947" class="markup--anchor markup--li-anchor">HN</a>) (<a href="https://lobste.rs/s/bqnhbo/book_review_elements_programmnig" class="markup--anchor markup--li-anchor">Lobsters</a>)</span></li>
+<li><span id="5ca1"><a href="https://cp-algorithms.com/" class="markup--anchor markup--li-anchor">Competitive Programming Algorithms</a></span></li>
+<li><span id="d363"><a href="https://github.com/akshitagit/CPP" class="markup--anchor markup--li-anchor">CPP/C</a> — C/C++ algorithms/DS problems.</span></li>
+<li><span id="cfb3"><a href="https://www.adamconrad.dev/blog/how-to-design-an-algorithm/" class="markup--anchor markup--li-anchor">How to design an algorithm (2018)</a></span></li>
+<li><span id="3b26"><a href="https://www.youtube.com/playlist?list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx" class="markup--anchor markup--li-anchor">CSE 373 — Introduction to Algorithms, by Steven Skiena (2020)</a></span></li>
+<li><span id="8f11"><a href="http://homepages.math.uic.edu/~lreyzin/f20_mcs501/" class="markup--anchor markup--li-anchor">Computer Algorithms II course (2020)</a></span></li>
+<li><span id="13f4"><a href="https://notebook.drmaciver.com/posts/2019-04-30-13:03.html" class="markup--anchor markup--li-anchor">Improving Binary Search by Guessing (2019)</a></span></li>
+<li><span id="fdf8"><a href="https://blog.acolyer.org/2020/10/19/the-case-for-a-learned-sorting-algorithm/" class="markup--anchor markup--li-anchor">The case for a learned sorting algorithm (2020)</a> (<a href="https://news.ycombinator.com/item?id=24823611" class="markup--anchor markup--li-anchor">HN</a>)</span></li>
+<li><span id="cfaf"><a href="https://github.com/liuxinyu95/AlgoXY" class="markup--anchor markup--li-anchor">Elementary Algorithms</a> — Introduces elementary algorithms and data structures. Includes side-by-side comparisons of purely functional realization and their imperative counterpart.</span></li>
+<li><span id="e36d"><a href="https://sahandsaba.com/combinatorial-generation-for-coding-interviews-in-python.html" class="markup--anchor markup--li-anchor">Combinatorics Algorithms for Coding Interviews (2018)</a></span></li>
+<li><span id="ac6d"><a href="https://github.com/ZoranPandovski/al-go-rithms" class="markup--anchor markup--li-anchor">Algorithms written in different programming languages</a> (<a href="https://zoranpandovski.github.io/al-go-rithms/" class="markup--anchor markup--li-anchor">Web</a>)</span></li>
+<li><span id="ca55"><a href="https://johnlekberg.com/blog/2020-10-25-seq-align.html" class="markup--anchor markup--li-anchor">Solving the Sequence Alignment problem in Python (2020)</a></span></li>
+<li><span id="e21b"><a href="https://github.com/bingmann/sound-of-sorting" class="markup--anchor markup--li-anchor">The Sound of Sorting</a> — Visualization and “Audibilization” of Sorting Algorithms. (<a href="https://panthema.net/2013/sound-of-sorting/" class="markup--anchor markup--li-anchor">Web</a>)</span></li>
+<li><span id="d619"><a href="https://danlark.org/2020/11/11/miniselect-practical-and-generic-selection-algorithms/" class="markup--anchor markup--li-anchor">Miniselect: Practical and Generic Selection Algorithms (2020)</a></span></li>
+<li><span id="0e30"><a href="https://chasewilson.dev/blog/slowest-quicksort/" class="markup--anchor markup--li-anchor">The Slowest Quicksort (2019)</a></span></li>
+<li><span id="9e0b"><a href="https://blog.sigplan.org/2020/11/17/functional-algorithm-design-part-0/" class="markup--anchor markup--li-anchor">Functional Algorithm Design (2020)</a></span></li>
+<li><span id="3868"><a href="https://milofultz.com/2020/12/27/atlb-notes" class="markup--anchor markup--li-anchor">Algorithms To Live By — Book Notes</a></span></li>
+<li><span id="8db5"><a href="http://people.csail.mit.edu/jsolomon/share/book/numerical_book.pdf" class="markup--anchor markup--li-anchor">Numerical Algorithms (2015)</a></span></li>
+<li><span id="347f"><a href="https://blog.vespa.ai/using-approximate-nearest-neighbor-search-in-real-world-applications/" class="markup--anchor markup--li-anchor">Using approximate nearest neighbor search in real world applications (2020)</a></span></li>
+<li><span id="8dfb"><a href="https://arxiv.org/pdf/1911.06347.pdf" class="markup--anchor markup--li-anchor">In search of the fastest concurrent Union-Find algorithm (2019)</a></span></li>
+<li><span id="c05f"><a href="https://www.cs.princeton.edu/courses/archive/fall13/cos521/" class="markup--anchor markup--li-anchor">Computer Science 521 Advanced Algorithm Design</a></span></li>
+</ul>
+<h3 id="data-structures">Data Structures:</h3>
+<ul>
+<li><span id="b39d"><a href="https://github.com/floyernick/Data-Structures-and-Algorithms" class="markup--anchor markup--li-anchor">Data Structures and Algorithms implementation in Go</a></span></li>
+<li><span id="1c2b"><a href="https://softwareengineering.stackexchange.com/questions/155639/which-algorithms-data-structures-should-i-recognize-and-know-by-name" class="markup--anchor markup--li-anchor">Which algorithms/data structures should I “recognize” and know by name?</a></span></li>
+<li><span id="8e46"><a href="https://xlinux.nist.gov/dads/" class="markup--anchor markup--li-anchor">Dictionary of Algorithms and Data Structures</a></span></li>
+<li><span id="987b"><a href="https://g1thubhub.github.io/data-structure-zoo.html" class="markup--anchor markup--li-anchor">Phil’s Data Structure Zoo</a></span></li>
+<li><span id="617d"><a href="https://stratos.seas.harvard.edu/files/stratos/files/periodictabledatastructures.pdf" class="markup--anchor markup--li-anchor">The Periodic Table of Data Structures</a> (<a href="https://news.ycombinator.com/item?id=18314555" class="markup--anchor markup--li-anchor">HN</a>)</span></li>
+<li><span id="9160"><a href="https://www.cs.usfca.edu/~galles/visualization/Algorithms.html" class="markup--anchor markup--li-anchor">Data Structure Visualizations</a> (<a href="https://news.ycombinator.com/item?id=19082943" class="markup--anchor markup--li-anchor">HN</a>)</span></li>
+<li><span id="233a"><a href="http://blog.amynguyen.net/?p=853" class="markup--anchor markup--li-anchor">Data structures to name-drop when you want to sound smart in an interview</a></span></li>
+<li><span id="fe28"><a href="https://pdziepak.github.io/2019/05/02/on-lists-cache-algorithms-and-microarchitecture/" class="markup--anchor markup--li-anchor">On lists, cache, algorithms, and microarchitecture (2019)</a></span></li>
+<li><span id="1cfe"><a href="http://web.stanford.edu/class/cs166/handouts/100%20Suggested%20Final%20Project%20Topics.pdf" class="markup--anchor markup--li-anchor">Topics in Advanced Data Structures (2019)</a> (<a href="https://news.ycombinator.com/item?id=19780387" class="markup--anchor markup--li-anchor">HN</a>)</span></li>
+<li><span id="d508"><a href="http://web.stanford.edu/class/cs166/" class="markup--anchor markup--li-anchor">CS166 Advanced DS Course (2019)</a></span></li>
+<li><span id="b314"><a href="https://courses.csail.mit.edu/6.851/fall17/" class="markup--anchor markup--li-anchor">Advanced Data Structures (2017)</a> (<a href="https://news.ycombinator.com/item?id=20044876" class="markup--anchor markup--li-anchor">HN</a>)</span></li>
+<li><span id="c505"><a href="https://github.com/jamesroutley/write-a-hash-table" class="markup--anchor markup--li-anchor">Write a hash table in C</a></span></li>
+<li><span id="b552"><a href="https://github.com/prabhupant/python-ds" class="markup--anchor markup--li-anchor">Python Data Structures and Algorithms</a></span></li>
+<li><span id="7784"><a href="https://vaibhavsagar.com/blog/2018/07/29/hamts-from-scratch/" class="markup--anchor markup--li-anchor">HAMTs from Scratch (2018)</a></span></li>
+<li><span id="aeff"><a href="https://github.com/JoeKarlsson/data-structures" class="markup--anchor markup--li-anchor">JavaScript Data Structures and Algorithms</a></span></li>
+<li><span id="63be"><a href="http://codecapsule.com/2012/11/07/ikvs-implementing-a-key-value-store-table-of-contents/" class="markup--anchor markup--li-anchor">Implementing a Key-Value Store series</a></span></li>
+<li><span id="7c7e"><a href="https://opendatastructures.org/" class="markup--anchor markup--li-anchor">Open Data Structures</a> — Provide a high-quality open content data structures textbook that is both mathematically rigorous and provides complete implementations. (<a href="https://github.com/patmorin/ods" class="markup--anchor markup--li-anchor">Code</a>)</span></li>
+<li><span id="8f01"><a href="https://www.csee.usf.edu/~kchriste/energy/ipl10.pdf" class="markup--anchor markup--li-anchor">A new analysis of the false positive rate of a Bloom filter (2009)</a></span></li>
+<li><span id="3ae6"><a href="https://lampwww.epfl.ch/papers/idealhashtrees.pdf" class="markup--anchor markup--li-anchor">Ideal Hash Trees</a></span></li>
+<li><span id="4896"><a href="http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=0265C1992F573129BCC7D4AF7734DBF7?doi=10.1.1.592.5377&amp;rep=rep1&amp;type=pdf" class="markup--anchor markup--li-anchor">RRB-Trees: Efficient Immutable Vectors</a></span></li>
+<li><span id="0458"><a href="https://github.com/jdan/ocaml-data-structures" class="markup--anchor markup--li-anchor">Some data structures and algorithms written in OCaml</a></span></li>
+<li><span id="499a"><a href="https://shachaf.net/w/b-trees" class="markup--anchor markup--li-anchor">Let’s Invent B(+)-Trees</a> (<a href="https://news.ycombinator.com/item?id=23001831" class="markup--anchor markup--li-anchor">HN</a>)</span></li>
+<li><span id="1b1e"><a href="https://github.com/hydro-project/anna" class="markup--anchor markup--li-anchor">Anna</a> — Low-latency, cloud-native KVS.</span></li>
+<li><span id="1700"><a href="https://www.aleksandra.codes/persistent-data-structures" class="markup--anchor markup--li-anchor">Persistent data structures thanks to recursive type aliases (2019)</a></span></li>
+<li><span id="1807"><a href="https://yetanotherdevblog.com/lsm/" class="markup--anchor markup--li-anchor">Log-Structured Merge-Trees (2020)</a></span></li>
+<li><span id="211e"><a href="https://sagi.io/bloom-filters-for-the-perplexed/" class="markup--anchor markup--li-anchor">Bloom Filters for the Perplexed (2017)</a></span></li>
+<li><span id="8456"><a href="https://yetanotherdevblog.com/bloom-filters/" class="markup--anchor markup--li-anchor">Understanding Bloom Filters (2020)</a></span></li>
+<li><span id="efa8"><a href="https://yetanotherdevblog.com/dense-vs-sparse-indexes/" class="markup--anchor markup--li-anchor">Dense vs. Sparse Indexes (2020)</a></span></li>
+<li><span id="cc53"><a href="https://www.techiedelight.com/list-of-problems/" class="markup--anchor markup--li-anchor">Data Structures and Algorithms Problems</a></span></li>
+<li><span id="4222"><a href="https://blog.pragmaticengineer.com/data-structures-and-algorithms-i-actually-used-day-to-day/" class="markup--anchor markup--li-anchor">Data Structures &amp; Algorithms I Actually Used Working at Tech Companies (2020)</a> (<a href="https://lobste.rs/s/n8tyip/data_structures_algorithms_i_actually" class="markup--anchor markup--li-anchor">Lobsters</a>) (<a href="https://news.ycombinator.com/item?id=23841491" class="markup--anchor markup--li-anchor">HN</a>)</span></li>
+<li><span id="df7b"><a href="https://onatm.dev/2020/08/10/let-s-implement-a-bloom-filter/" class="markup--anchor markup--li-anchor">Let’s implement a Bloom Filter (2020)</a> (<a href="https://news.ycombinator.com/item?id=24102617" class="markup--anchor markup--li-anchor">HN</a>)</span></li>
+<li><span id="009b"><a href="https://ourmachinery.com/post/data-structures-part-1-bulk-data/" class="markup--anchor markup--li-anchor">Data Structures Part 1: Bulk Data (2019)</a> (<a href="https://lobste.rs/s/t8mrxn/data_structures_part_1_bulk_data" class="markup--anchor markup--li-anchor">Lobsters</a>)</span></li>
+<li><span id="870d"><a href="https://www.freecodecamp.org/news/learn-all-about-data-structures-used-in-computer-science/" class="markup--anchor markup--li-anchor">Data Structures Explained</a></span></li>
+<li><span id="7553"><a href="https://rcoh.me/posts/cache-oblivious-datastructures/" class="markup--anchor markup--li-anchor">Introduction to Cache-Oblivious Data Structures (2018)</a></span></li>
+<li><span id="367e"><a href="https://thedailycoding.com/" class="markup--anchor markup--li-anchor">The Daily Coding newsletter</a> — Master JavaScript and Data Structures.</span></li>
+<li><span id="c5c8"><a href="https://www.cs.bham.ac.uk/~jxb/DSA/dsa.pdf" class="markup--anchor markup--li-anchor">Lectures Note for Data Structures and Algorithms (2019)</a></span></li>
+<li><span id="afb3"><a href="https://abhinavsarkar.net/posts/continuation-defunctionalization/" class="markup--anchor markup--li-anchor">Mechanically Deriving Binary Tree Iterators with Continuation Defunctionalization (2020)</a></span></li>
+<li><span id="0f9a"><a href="https://cp-algorithms.com/data_structures/segment_tree.html" class="markup--anchor markup--li-anchor">Segment Tree data structure</a></span></li>
+<li><span id="5ce2"><a href="https://medium.com/@gballet/structure-of-a-binary-state-tree-part-1-48c587836d2f" class="markup--anchor markup--li-anchor">Structure of a binary state tree (2020)</a></span></li>
+<li><span id="b46c"><a href="https://github.com/sushinoya/fundamentals" class="markup--anchor markup--li-anchor">Introductory data structures and algorithms</a></span></li>
+<li><span id="f981"><a href="https://heap.io/blog/engineering/applying-textbook-data-structures-for-real-life-wins" class="markup--anchor markup--li-anchor">Applying Textbook Data Structures for Real Life Wins (2020)</a> (<a href="https://news.ycombinator.com/item?id=24761105" class="markup--anchor markup--li-anchor">HN</a>)</span></li>
+<li><span id="e9df"><a href="https://www.youtube.com/watch?v=9XAx279s7gs" class="markup--anchor markup--li-anchor">Michael Scott — Nonblocking data structures lectures (2020)</a> — Nonblocking concurrent data structures are an increasingly valuable tool for shared-memory parallel programming.</span></li>
+<li><span id="39a7"><a href="https://github.com/cksystemsgroup/scal" class="markup--anchor markup--li-anchor">Scal</a> — High-performance multicore-scalable data structures and benchmarks. (<a href="http://scal.cs.uni-salzburg.at/" class="markup--anchor markup--li-anchor">Web</a>)</span></li>
+<li><span id="13c1"><a href="https://github.com/HazyResearch/hyperbolics" class="markup--anchor markup--li-anchor">Hyperbolic embedding implementations</a></span></li>
+<li><span id="dae7"><a href="https://github.com/prathyvsh/morphisms-of-computational-structures" class="markup--anchor markup--li-anchor">Morphisms of Computational Constructs</a> — Visual catalogue + story of morphisms displayed across computational structures.</span></li>
+<li><span id="c5b7"><a href="http://djkooks.github.io/build-your-own-kv-store" class="markup--anchor markup--li-anchor">What is key-value store? (build-your-own-x) (2020)</a></span></li>
+<li><span id="f78c"><a href="https://stackoverflow.com/questions/500607/what-are-the-lesser-known-but-useful-data-structures" class="markup--anchor markup--li-anchor">Lesser Known but Useful Data Structures</a></span></li>
+<li><span id="4a81"><a href="https://martin.kleppmann.com/2020/12/02/bloom-filter-hash-graph-sync.html" class="markup--anchor markup--li-anchor">Using Bloom filters to efficiently synchronize hash graphs (2020)</a></span></li>
+<li><span id="f4d6"><a href="https://llimllib.github.io/bloomfilter-tutorial/" class="markup--anchor markup--li-anchor">Bloom Filters by Example</a> (<a href="https://github.com/llimllib/bloomfilter-tutorial" class="markup--anchor markup--li-anchor">Code</a>)</span></li>
+<li><span id="4faa"><a href="https://crypto.stanford.edu/pbc/notes/zdd/" class="markup--anchor markup--li-anchor">Binary Decision Diagrams</a> (<a href="https://news.ycombinator.com/item?id=25342922" class="markup--anchor markup--li-anchor">HN</a>)</span></li>
+<li><span id="949c"><a href="https://mochromatic.com/3-steps-to-designing-better-data-structures-in-elixir/" class="markup--anchor markup--li-anchor">3 Steps to Designing Better Data Structures (2020)</a></span></li>
+<li><span id="50a9"><a href="https://matteding.github.io/2019/04/25/sparse-matrices/" class="markup--anchor markup--li-anchor">Sparse Matrices (2019)</a> (<a href="https://news.ycombinator.com/item?id=25601288" class="markup--anchor markup--li-anchor">HN</a>)</span></li>
+<li><span id="eb25"><a href="https://github.com/xtaci/algorithms" class="markup--anchor markup--li-anchor">Algorithms &amp; Data Structures in C++</a></span></li>
+<li><span id="24f9"><a href="https://drs.is/post/fancy-tree-traversals/" class="markup--anchor markup--li-anchor">Fancy Tree Traversals (2019)</a></span></li>
+<li><span id="9259"><a href="https://drs.is/post/robson-traversal/" class="markup--anchor markup--li-anchor">The Robson Tree Traversal (2019)</a></span></li>
+<li><span id="6fdb"><a href="http://cr.yp.to/data.html" class="markup--anchor markup--li-anchor">Data structures and program structures</a></span></li>
+<li><span id="11af"><a href="http://cr.yp.to/cdb.html" class="markup--anchor markup--li-anchor">cdb</a> — Fast, reliable, simple package for creating and reading constant databases.</span></li>
+<li><span id="6fb7"><a href="https://pgm.di.unipi.it/" class="markup--anchor markup--li-anchor">PGM-index</a> — Learned indexes that match B-tree performance with 83x less space. (<a href="https://news.ycombinator.com/item?id=25899286" class="markup--anchor markup--li-anchor">HN</a>) (<a href="https://github.com/gvinciguerra/PGM-index" class="markup--anchor markup--li-anchor">Code</a>)</span></li>
+<li><span id="4e08"><a href="https://minimalmodeling.substack.com/p/structural-and-pure-attributes" class="markup--anchor markup--li-anchor">Structural and pure attributes</a></span></li>
+<li><span id="e0ae"><a href="http://aleksandar-prokopec.com/resources/docs/p137-prokopec.pdf" class="markup--anchor markup--li-anchor">Cache-Tries: O(1) Concurrent Lock-Free Hash Tries (2018)</a></span></li>
+</ul>
+<p>By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on <a href="https://medium.com/p/16ce4244be12">August 24, 2021</a>.</p>
+<p><a href="https://medium.com/@bryanguner/notes-i-wish-i-had-when-i-started-learning-python-16ce4244be12" class="p-canonical">Canonical link</a></p>
+<p>August 31, 2021.</p>
+</body>
+</html>

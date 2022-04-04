@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>uniq</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="to-show-all-lines-without-duplication">To show all lines without duplication:</h1>
+<h1 id="sort--u-and-uniq-have-the-same-effect.">(<code>sort -u</code> and <code>uniq</code> have the same effect.)</h1>
+<p>sort <file> | uniq</p>
+<h1 id="to-show-not-duplicated-lines">To show not duplicated lines:</h1>
+<p>sort <file> | uniq -u</p>
+<h1 id="to-show-duplicated-lines-only">To show duplicated lines only:</h1>
+<p>sort <file> | uniq -d</p>
+<h1 id="to-count-all-lines">To count all lines:</h1>
+<p>sort <file> | uniq -c</p>
+<h1 id="to-count-not-duplicated-lines">To count not duplicated lines:</h1>
+<p>sort <file> | uniq -uc</p>
+<h1 id="to-count-only-duplicated-lines">To count only duplicated lines:</h1>
+<p>sort <file> | uniq -dc</p>
+</body>
+</html>

@@ -1,121 +1,94 @@
----
-title: title
-subtitle: subtitle
-date: '2022-01-03'
-thumb_img_alt: lorem-ipsum
-content_img_alt: lorem-ipsum
-excerpt: lorem-ipsum
-seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
-template: post
-thumb_img_path: images/css-72a655a7.jpg
----
+subtitle
 
----
+2022-01-03
 
-title: ExUnit
-category: Elixir
+------------------------------------------------------------------------
 
----
+title: ExUnit category: Elixir
+
+------------------------------------------------------------------------
 
 ### Test cases
 
-```elixir
-defmodule MyTest do
-  use ExUnit.Case
-  use ExUnit.Case, async: true  # for async
+    defmodule MyTest do
+      use ExUnit.Case
+      use ExUnit.Case, async: true  # for async
 
-  test "the truth" do
-    assert 1 + 1 == 2
-  end
-end
-```
+      test "the truth" do
+        assert 1 + 1 == 2
+      end
+    end
 
 ### Capture IO
 
-```elixir
-import ExUnit.CaptureIO
+    import ExUnit.CaptureIO
 
-test "capture io" do
-  result = capture_io(fn ->
-    IO.puts "sup"
-  end)
+    test "capture io" do
+      result = capture_io(fn ->
+        IO.puts "sup"
+      end)
 
-  assert result == "sup\n"
-end
-```
+      assert result == "sup\n"
+    end
 
 ### Capture logs
 
-```elixir
-config :ex_unit, capture_logs: true
-```
+    config :ex_unit, capture_logs: true
 
 ### Async
 
-```elixir
-defmodule AssertionTest do
-  # run concurrently with other test cases
-  use ExUnit.Case, async: true
-end
-```
+    defmodule AssertionTest do
+      # run concurrently with other test cases
+      use ExUnit.Case, async: true
+    end
 
 ### Assertions
 
-```elixir
-assert x == y
-refute x == y
+    assert x == y
+    refute x == y
 
-assert_raise ArithmeticError, fn ->
-  1 + "test"
-end
+    assert_raise ArithmeticError, fn ->
+      1 + "test"
+    end
 
-assert_raise ArithmeticError, "message", fn -> ...
-assert_raise ArithmeticError, ~r/message/, fn -> ...
+    assert_raise ArithmeticError, "message", fn -> ...
+    assert_raise ArithmeticError, ~r/message/, fn -> ...
 
-flunk "This should've been an error"
-```
+    flunk "This should've been an error"
 
 See: [Assertions](http://devdocs.io/elixir/ex_unit/exunit.assertions)
 
-## Setup
+Setup
+-----
 
 ### Pattern matching
 
-```elixir
-setup do
-  {:ok, name: "John"}
-end
-```
+    setup do
+      {:ok, name: "John"}
+    end
 
-```elixir
-test "it works", %{name: name} do
-  assert name == "John"
-end
-```
+    test "it works", %{name: name} do
+      assert name == "John"
+    end
 
 ### Setup
 
-```elixir
-defp my_hook(_context) do
-  # Invoked in every block in "a block"
-  {:ok, name: "John", age: 54}
-end
+    defp my_hook(_context) do
+      # Invoked in every block in "a block"
+      {:ok, name: "John", age: 54}
+    end
 
-describe "a block" do
-  setup [:my_hook]
+    describe "a block" do
+      setup [:my_hook]
 
-  test "John's age", context do
-    assert context[:name] == "John"
-    assert context[:age] == 54
-  end
-end
-```
+      test "John's age", context do
+        assert context[:name] == "John"
+        assert context[:age] == 54
+      end
+    end
 
-## Also see
+Also see
+--------
 
 {: .-one-column}
 

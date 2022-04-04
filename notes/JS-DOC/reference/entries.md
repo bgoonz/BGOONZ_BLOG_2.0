@@ -1,10 +1,12 @@
-# Object.entries()
+Object.entries()
+================
 
-The `Object.entries()` method returns an array of a given object's own enumerable string-keyed property `[key, value]` pairs, in the same order as that provided by a [`for...in`](../../statements/for...in) loop. (The only important difference is that a `for...in` loop enumerates properties in the prototype chain as well).
+The `Object.entries()` method returns an array of a given object’s own enumerable string-keyed property `[key, value]` pairs, in the same order as that provided by a [`for...in`](../../statements/for...in) loop. (The only important difference is that a `for...in` loop enumerates properties in the prototype chain as well).
 
 The order of the array returned by `Object.entries()` does not depend on how an object is defined. If there is a need for certain ordering, then the array should be sorted first, like `Object.entries(obj).sort((a, b) => b[0].localeCompare(a[0]));`.
 
-## Syntax
+Syntax
+------
 
     Object.entries(obj)
 
@@ -15,17 +17,19 @@ The object whose own enumerable string-keyed property `[key, value]` pairs are t
 
 ### Return value
 
-An array of the given object's own enumerable string-keyed property `[key, value]` pairs.
+An array of the given object’s own enumerable string-keyed property `[key, value]` pairs.
 
-## Description
+Description
+-----------
 
 `Object.entries()` returns an array whose elements are arrays corresponding to the enumerable string-keyed property `[key, value]` pairs found directly upon `object`. The ordering of the properties is the same as that given by looping over the property values of the object manually.
 
-## Polyfill
+Polyfill
+--------
 
 To add compatible `Object.entries()` support in older environments that do not natively support it, you can use any of the following:
 
--   a demonstration implementation of `Object.entries` in the [tc39/proposal-object-values-entries](https://github.com/tc39/proposal-object-values-entries) (if you don't need any support for IE);
+-   a demonstration implementation of `Object.entries` in the [tc39/proposal-object-values-entries](https://github.com/tc39/proposal-object-values-entries) (if you don’t need any support for IE);
 -   a polyfill in the [es-shims/Object.entries](https://github.com/es-shims/Object.entries) repositories;
 -   or, you can use the simple, ready-to-deploy polyfill listed below:
 
@@ -45,7 +49,8 @@ To add compatible `Object.entries()` support in older environments that do not n
 
 For the above polyfill code snippet, if you need support for IE&lt;9, then you will also need an `Object.keys()` polyfill (such as the one found on the [`Object.keys`](keys) page).
 
-## Examples
+Examples
+--------
 
     const obj = { foo: 'bar', baz: 42 };
     console.log(Object.entries(obj)); // [ ['foo', 'bar'], ['baz', 42] ]
@@ -95,12 +100,11 @@ Using [Array Destructuring](../../operators/destructuring_assignment#array_destr
     const obj = { foo: 'bar', baz: 42 };
     Object.entries(obj).forEach(([key, value]) => console.log(`${key}: ${value}`)); // "foo: bar", "baz: 42"
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.entries">ECMAScript (ECMA-262) 
-<br/>
-
-<span class="small">The definition of 'Object.entries' in that specification.</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript (ECMA-262)<br />
+</p><span class="small">The definition of ‘Object.entries’ in that specification.</span></td></tr></tbody></table>
 
 `entries`
 
@@ -128,7 +132,8 @@ No
 
 6.0
 
-## See also
+See also
+--------
 
 -   [Enumerability and ownership of properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
 -   [`Object.keys()`](keys)
@@ -141,6 +146,5 @@ No
 -   [`Map.prototype.keys()`](../map/keys)
 -   [`Map.prototype.values()`](../map/values)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries</a>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>ssh-cheatsheet</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="ssh-cheatsheet">SSH Cheatsheet</h1>
+<h2 id="ssh-cheat-sheet">SSH Cheat Sheet</h2>
+<h4 id="login-via-ssh-with-password-local-server">Login via SSH with password (LOCAL SERVER)</h4>
+<p><code>$ ssh bryan@192.168.1.29</code></p>
+<h4 id="create-folder-file-install-apache-just-messing-around">Create folder, file, install Apache (Just messing around)</h4>
+<p><code>$ mkdir test</code></p>
+<p><code>$ cd test</code></p>
+<p><code>$ touch hello.txt</code></p>
+<p><code>$ sudo apt-get install apache2</code></p>
+<h4 id="generate-keys-local-machine">Generate Keys (Local Machine)</h4>
+<p><code>$ ssh-keygen</code></p>
+<h4 id="add-key-to-server-in-one-command">Add Key to server in one command</h4>
+<p><code>&gt; cat ~/.ssh/id_rsa.pub | ssh bryan@192.168.1.29 "mkdir -p ~/.ssh &amp;&amp; chmod 700 ~/.ssh &amp;&amp; cat &gt;&gt; ~/.ssh/authorized_keys</code></p>
+<h4 id="create-copy-a-file-to-the-server-using-scp">Create &amp; copy a file to the server using SCP</h4>
+<p><code>$ touch test.txt</code> <code>$ scp ~/test.txt bryan@192.168.1.29:~</code></p>
+<h3 id="digital-ocean">DIGITAL OCEAN</h3>
+<blockquote>
+<p>Create account-&gt;create droplet</p>
+</blockquote>
+<h4 id="create-keys-for-droplet-id_rsa_do">Create Keys For Droplet (id_rsa_do)</h4>
+<p><code>$ ssh-keygen -t rsa</code></p>
+<blockquote>
+<p>Add Key When Creating Droplet</p>
+</blockquote>
+<h4 id="try-logging-in">Try logging in</h4>
+<p><code>$ ssh root@doserver</code></p>
+<h4 id="if-it-doesnt-work">If it doesn’t work</h4>
+<p><code>$ ssh-add ~/.ssh/id_rsa_do</code> (or whatever name you used)</p>
+<h4 id="login-should-now-work">Login should now work</h4>
+<p><code>$ ssh root@doserver</code></p>
+<h4 id="update-packages">Update packages</h4>
+<p><code>$ sudo apt update</code></p>
+<p><code>$ sudo apt upgrade</code></p>
+<h4 id="create-new-user-with-sudo">Create new user with sudo</h4>
+<p><code>$ adduser bryan</code></p>
+<p><code>$ id bryan</code></p>
+<p><code>$ usermod -aG sudo bryan</code></p>
+<p><code>$ id bryan</code></p>
+<h4 id="login-as-bryan">Login as bryan</h4>
+<p><code>&gt; ssh bryan@doserver</code></p>
+<h4 id="we-need-to-add-the-key-to-bryans-.ssh-on-the-server-log-back-in-as-root">We need to add the key to bryans .ssh on the server, log back in as root</h4>
+<p><code>$ ssh root@doserver</code></p>
+<p><code>$ cd /home/bryan</code></p>
+<p><code>$ mkdir .ssh</code></p>
+<p><code>$ cd .ssh</code></p>
+<p><code>$ touch authorized_keys</code></p>
+<p><code>&gt; sudo nano authorized_keys</code> (paste in the id_rsa_do.pub key, exit and log in as bryan)</p>
+<h4 id="disable-root-password-login">Disable root password login</h4>
+<p><code>$ sudo nano /etc/ssh/sshd_config</code></p>
+<h4 id="set-the-following">Set the following</h4>
+<p><code>PermitRootLogin no</code></p>
+<p><code>PasswordAuthentication no</code></p>
+<h4 id="reload-sshd-service">Reload sshd service</h4>
+<p><code>$ sudo systemctl reload sshd</code></p>
+<h4 id="change-owner-of-homebryan-to-bryan">Change owner of /home/bryan/* to bryan</h4>
+<p><code>$ sudo chown -R bryan:bryan /home/bryan</code></p>
+<h4 id="may-need-to-set-permission">May need to set permission</h4>
+<p><code>$ chmod 700 /home/bryan/.ssh</code></p>
+<h4 id="install-apache-and-visit-ip">Install Apache and visit ip</h4>
+<p><code>$ sudo apt install apache2 -y</code></p>
+<h3 id="github">Github</h3>
+<h4 id="generate-github-keyon-server">Generate Github Key(On Server)</h4>
+<p><code>$ ssh-keygen -t rsa</code> (id_rsa_github or whatever you want)</p>
+<h3 id="add-new-key">Add new key</h3>
+<p><code>$ ssh-add /home/bryan/.ssh/id_rsa_github</code></p>
+<h3 id="if-you-get-a-message-about-auth-agent-run-this-and-try-again">If you get a message about auth agent, run this and try again</h3>
+<p>```$ eval `ssh-agent -s````</p>
+<h3 id="clone-repo">Clone repo</h3>
+<p><code>$ git clone git@github.com:bryantraversy/react_otka_auth.git</code></p>
+<h3 id="install-node">Install Node</h3>
+<p><code>$ curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -</code></p>
+<p><code>$ sudo apt-get install -y nodejs</code></p>
+<h3 id="install-dependencies">Install Dependencies</h3>
+<p><code>$ npm install</code></p>
+<h3 id="start-dev-server-and-visit-ip3000">Start Dev Server and visit ip:3000</h3>
+<p><code>$ npm start</code></p>
+<h3 id="build-out-react-app">Build Out React App</h3>
+<p><code>$ npm run build</code></p>
+<h3 id="move-static-build-to-web-server-root">Move static build to web server root</h3>
+<p><code>$ sudo mv -v /home/bryan/react_otka_auth/build/* /var/www/html</code></p>
+<h2 id="ssh-cheat-sheet-1">SSH Cheat Sheet</h2>
+<h4 id="login-via-ssh-with-password-local-server-1">Login via SSH with password (LOCAL SERVER)</h4>
+<p><code>$ ssh bryan@192.168.1.29</code></p>
+<h4 id="create-folder-file-install-apache-just-messing-around-1">Create folder, file, install Apache (Just messing around)</h4>
+<p><code>$ mkdir test</code></p>
+<p><code>$ cd test</code></p>
+<p><code>$ touch hello.txt</code></p>
+<p><code>$ sudo apt-get install apache2</code></p>
+<h4 id="generate-keys-local-machine-1">Generate Keys (Local Machine)</h4>
+<p><code>$ ssh-keygen</code></p>
+<h4 id="add-key-to-server-in-one-command-1">Add Key to server in one command</h4>
+<p><code>&gt; cat ~/.ssh/id_rsa.pub | ssh bryan@192.168.1.29 "mkdir -p ~/.ssh &amp;&amp; chmod 700 ~/.ssh &amp;&amp; cat &gt;&gt; ~/.ssh/authorized_keys</code></p>
+<h4 id="create-copy-a-file-to-the-server-using-scp-1">Create &amp; copy a file to the server using SCP</h4>
+<p><code>$ touch test.txt</code> <code>$ scp ~/test.txt bryan@192.168.1.29:~</code></p>
+<h3 id="digital-ocean-1">DIGITAL OCEAN</h3>
+<blockquote>
+<p>Create account-&gt;create droplet</p>
+</blockquote>
+<h4 id="create-keys-for-droplet-id_rsa_do-1">Create Keys For Droplet (id_rsa_do)</h4>
+<p><code>$ ssh-keygen -t rsa</code></p>
+<blockquote>
+<p>Add Key When Creating Droplet</p>
+</blockquote>
+<h4 id="try-logging-in-1">Try logging in</h4>
+<p><code>$ ssh root@doserver</code></p>
+<h4 id="if-it-doesnt-work-1">If it doesn’t work</h4>
+<p><code>$ ssh-add ~/.ssh/id_rsa_do</code> (or whatever name you used)</p>
+<h4 id="login-should-now-work-1">Login should now work</h4>
+<p><code>$ ssh root@doserver</code></p>
+<h4 id="update-packages-1">Update packages</h4>
+<p><code>$ sudo apt update</code></p>
+<p><code>$ sudo apt upgrade</code></p>
+<h4 id="create-new-user-with-sudo-1">Create new user with sudo</h4>
+<p><code>$ adduser bryan</code></p>
+<p><code>$ id bryan</code></p>
+<p><code>$ usermod -aG sudo bryan</code></p>
+<p><code>$ id bryan</code></p>
+<h4 id="login-as-bryan-1">Login as bryan</h4>
+<p><code>&gt; ssh bryan@doserver</code></p>
+<h4 id="we-need-to-add-the-key-to-bryans-.ssh-on-the-server-log-back-in-as-root-1">We need to add the key to bryans .ssh on the server, log back in as root</h4>
+<p><code>$ ssh root@doserver</code></p>
+<p><code>$ cd /home/bryan</code></p>
+<p><code>$ mkdir .ssh</code></p>
+<p><code>$ cd .ssh</code></p>
+<p><code>$ touch authorized_keys</code></p>
+<p><code>&gt; sudo nano authorized_keys</code> (paste in the id_rsa_do.pub key, exit and log in as bryan)</p>
+<h4 id="disable-root-password-login-1">Disable root password login</h4>
+<p><code>$ sudo nano /etc/ssh/sshd_config</code></p>
+<h4 id="set-the-following-1">Set the following</h4>
+<p><code>PermitRootLogin no</code></p>
+<p><code>PasswordAuthentication no</code></p>
+<h4 id="reload-sshd-service-1">Reload sshd service</h4>
+<p><code>$ sudo systemctl reload sshd</code></p>
+<h4 id="change-owner-of-homebryan-to-bryan-1">Change owner of /home/bryan/* to bryan</h4>
+<p><code>$ sudo chown -R bryan:bryan /home/bryan</code></p>
+<h4 id="may-need-to-set-permission-1">May need to set permission</h4>
+<p><code>$ chmod 700 /home/bryan/.ssh</code></p>
+<h4 id="install-apache-and-visit-ip-1">Install Apache and visit ip</h4>
+<p><code>$ sudo apt install apache2 -y</code></p>
+<h3 id="github-1">Github</h3>
+<h4 id="generate-github-keyon-server-1">Generate Github Key(On Server)</h4>
+<p><code>$ ssh-keygen -t rsa</code> (id_rsa_github or whatever you want)</p>
+<h3 id="add-new-key-1">Add new key</h3>
+<p><code>$ ssh-add /home/bryan/.ssh/id_rsa_github</code></p>
+<h3 id="if-you-get-a-message-about-auth-agent-run-this-and-try-again-1">If you get a message about auth agent, run this and try again</h3>
+<p>```$ eval `ssh-agent -s````</p>
+<h3 id="clone-repo-1">Clone repo</h3>
+<p><code>$ git clone git@github.com:bryantraversy/react_otka_auth.git</code></p>
+<h3 id="install-node-1">Install Node</h3>
+<p><code>$ curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -</code></p>
+<p><code>$ sudo apt-get install -y nodejs</code></p>
+<h3 id="install-dependencies-1">Install Dependencies</h3>
+<p><code>$ npm install</code></p>
+<h3 id="start-dev-server-and-visit-ip3000-1">Start Dev Server and visit ip:3000</h3>
+<p><code>$ npm start</code></p>
+<h3 id="build-out-react-app-1">Build Out React App</h3>
+<p><code>$ npm run build</code></p>
+<h3 id="move-static-build-to-web-server-root-1">Move static build to web server root</h3>
+<p><code>$ sudo mv -v /home/bryan/react_otka_auth/build/* /var/www/html</code></p>
+</body>
+</html>

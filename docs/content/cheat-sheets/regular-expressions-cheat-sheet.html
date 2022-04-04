@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>regular-expressions-cheat-sheet</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="regular-expressions-cheat-sheet">Regular Expressions Cheat Sheet</h1>
+<h4 id="anchors">Anchors</h4>
+<ul>
+<li><code>^</code>: start of the string or the start of a line in a multiline pattern</li>
+<li><code>$</code>: end of the string or the end of a line in a multiline pattern</li>
+<li><code>\b</code>: word boundary</li>
+<li><code>\B</code>: not word boundary (opposite of <code>\b</code>)</li>
+</ul>
+<p>Note: Anchors are non-quantifiable (i.e. cannot be followed by a quantifier).</p>
+<h4 id="character-sequences">Character sequences</h4>
+<ul>
+<li><code>.</code>: any character except line breaks</li>
+<li><code>\w</code>: any word character</li>
+<li><code>\W</code>: any non-word character (opposite of <code>\w</code>)</li>
+<li><code>\s</code>: any whitespace character</li>
+<li><code>\S</code>: any non-whitespace character (opposite of <code>\s</code>)</li>
+<li><code>\d</code>: any digit character</li>
+<li><code>\D</code>: any non-digit character (opposite of <code>\d</code>)</li>
+<li><code>[abc]</code>: a single character in the given set (here <code>a</code>, <code>b</code> or <code>c</code>)</li>
+<li><code>[^abc]</code>: a single character not in the given set (opposite of <code>[abc]</code>)</li>
+<li><code>[a-z]</code>: a single character in the given range (here between <code>a</code> and <code>z</code> inclusive)</li>
+<li><code>[^a-z]</code>: a single character not in the given range (opposite of <code>[a-z]</code>)</li>
+<li><code>[a-zA-Z]</code>: a single character in either of the given ranges</li>
+</ul>
+<p>Note: Use <code>\</code> to escape special characters (e.g. <code>\</code>, <code>/</code>, <code>[</code>, <code>]</code>, <code>(</code>, <code>)</code>, <code>{</code>, <code>}</code> etc.).</p>
+<h4 id="quantifiers">Quantifiers</h4>
+<ul>
+<li><code>a?</code>: zero or one of <code>a</code> (equal to <code>a{0,1}</code>)</li>
+<li><code>a*</code>: zero or more of <code>a</code> (equal to <code>a{0,}</code>)</li>
+<li><code>a+</code>: one or more of <code>a</code> (equal to <code>a{1,}</code>)</li>
+<li><code>a{3}</code>: exactly 3 of <code>a</code></li>
+<li><code>a{3,}</code>: 3 or more of <code>a</code></li>
+<li><code>a{3,5}</code>: between 3 and 5 of <code>a</code> (inclusive)</li>
+</ul>
+<p>Note: <code>a</code> is any valid quantifiable expression.</p>
+<h4 id="groups">Groups</h4>
+<ul>
+<li><code>(ab)</code>: match and capture everything enclosed (here exactly <code>ab</code>)</li>
+<li><code>(a|b)</code>: match and capture either one character (here <code>a</code> or <code>b</code>)</li>
+<li><code>(?:ab)</code>: match everything enclosed, without capturing</li>
+</ul>
+<h4 id="flags">Flags</h4>
+<ul>
+<li><code>g</code>: Global</li>
+<li><code>m</code>: Multiline</li>
+<li><code>i</code>: Case insensitive</li>
+<li><code>u</code>: Unicode</li>
+</ul>
+<p>Note that this cheatsheet is meant only as a starting point and is by no means a complete guide to all the features and nuances of regular expressions. You can also read 6 JavaScript Regular Expression features you can use today for a deeper dive into some more advanced features.</p>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>regex-basics</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="regex-tutorial-a-quick-cheatsheet-by-examples">Regex tutorial  —  A quick cheatsheet by examples</h1>
+<blockquote>
+<p>Regular expressions (regex or regexp) are extremely useful in extracting information from any text by searching a specific search pattern</p>
+</blockquote>
+<p><strong>UPDATE!</strong> Check out my new <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/@fox.jonny/regex-cookbook-most-wanted-regex-aa721558c3c1">REGEX COOKBOOK</a> about the most commonly used (and most wanted) regex 🎉</p>
+<p>Regular expressions (regex or regexp) are extremely useful in <strong>extracting information from any text</strong> by searching for one or more matches of a specific search pattern (i.e. a specific sequence of ASCII or unicode characters).</p>
+<p>Fields of application range from validation to parsing/replacing strings, passing through translating data to other formats and web scraping.</p>
+<p>One of the most interesting features is that once you’ve learned the syntax, you can actually use this tool in (almost) all programming languages ​​(JavaScript, Java, VB, C #, C / C++, Python, Perl, Ruby, Delphi, R, Tcl, and many others) with the slightest distinctions about the support of the most advanced features and syntax versions supported by the engines).</p>
+<p>Let’s start by looking at some examples and explanations.</p>
+<h2 id="anchors-and"><strong>Anchors — ^ and $</strong></h2>
+<p><strong>^The</strong> matches any string that <strong>starts with</strong> <strong>The</strong> -&gt; <a href="https://regex101.com/r/cO8lqs/2"><strong>Try it!</strong></a><strong>end<span class="math inline">$** matches a string that **ends with** **end\*\***^The end$</span> exact string match</strong> (starts and ends with <strong>The end</strong>)<strong>roar</strong> matches any string that **has the text roar in it**</p>
+<h2 id="quantifiers-and"><strong>Quantifiers — * + ? and {}</strong></h2>
+<p>abc<strong>*</strong> matches a string that has <strong>ab followed by zero or more c</strong> -&gt; <a href="https://regex101.com/r/cO8lqs/1"><strong>Try it!</strong></a>abc<strong>+</strong> matches a string that has <strong>ab followed by one or more c</strong>abc<strong>?</strong> matches a string that has <strong>ab followed by zero or one c</strong>abc<strong>{2}</strong> matches a string that has <strong>ab followed by 2 c</strong>abc<strong>{2,}</strong> matches a string that has <strong>ab followed by 2 or more c</strong>abc<strong>{2,5}</strong> matches a string that has <strong>ab followed by 2 up to 5 c</strong>a<strong>(bc)*</strong> matches a string that has <strong>a followed by zero or more copies of the sequence bc</strong>a<strong>(bc){2,5}</strong> matches a string that has <strong>a followed by 2 up to 5 copies of the sequence bc</strong></p>
+<h2 id="or-operator-or">OR operator — | or []</h2>
+<p><strong>a(b|c)</strong> matches a string that has <strong>a followed by b or c</strong> <em>(and captures</em> <strong><em>b or c</em></strong>_)_ <strong>-&gt;</strong> <a href="https://regex101.com/r/cO8lqs/3"><strong>Try it!</strong></a><strong>a[bc]</strong> same as previous, <em>but without capturing b or c</em></p>
+<h2 id="character-classes-d-w-s-and-.">Character classes — \d \w \s and .</h2>
+<p><strong>\d</strong> matches a <strong>single character</strong> that is a <strong>digit</strong> -&gt; <a href="https://regex101.com/r/cO8lqs/4"><strong>Try it!</strong></a><strong>\w</strong> matches a <strong>word character</strong> (alphanumeric character plus underscore) -&gt; <a href="https://regex101.com/r/cO8lqs/4"><strong>Try it!</strong></a><strong>\s</strong> matches a <strong>whitespace character</strong> (includes tabs and line breaks)<strong>.</strong> matches <strong>any character</strong> -&gt; <a href="https://regex101.com/r/cO8lqs/5"><strong>Try it!</strong></a></p>
+<p>Use the <code>.</code> operator carefully since often class or negated character class (which we’ll cover next) are faster and more precise.</p>
+<p><code>\d</code>, <code>\w</code> and <code>\s</code> also present their negations with <code>\D</code>, <code>\W</code> and <code>\S</code> respectively.</p>
+<p>For example, <code>\D</code> will perform the inverse match with respect to that obtained with <code>\d</code>.</p>
+<p><strong>\D</strong> matches a <strong>single non-digit character</strong> -&gt; <a href="https://regex101.com/r/cO8lqs/6"><strong>Try it!</strong></a></p>
+<p>In order to be taken literally, you must escape the characters <code>^.[$()|*+?{\</code>with a backslash <code>\</code> as they have special meaning.</p>
+<p><strong>\<span class="math inline">$\\d** matches a string that has a **$</span> before one digit</strong> -&gt; <a href="https://regex101.com/r/cO8lqs/9"><strong>Try it!</strong></a></p>
+<p>Notice that you can match also <strong>non-printable characters</strong> like tabs <code>\t</code>, new-lines <code>\n</code>, carriage returns <code>\r</code>.</p>
+<h2 id="flags">Flags</h2>
+<p>We are learning how to construct a regex but forgetting a fundamental concept: <strong>flags</strong>.</p>
+<p>A regex usually comes within this form <code>**/**abc**/**</code>, where the search pattern is delimited by two slash characters <code>/</code>. At the end we can specify a flag with these values (we can also combine them each other):</p>
+<ul>
+<li><strong>g</strong> (global) does not return after the first match, restarting the subsequent searches from the end of the previous match</li>
+<li><strong>m</strong> (multi-line) when enabled <code>^</code> and <code>$</code> will match the start and end of a line, instead of the whole string</li>
+<li><strong>i</strong> (insensitive) makes the whole expression case-insensitive (for instance <code>**/aBc/i**</code> would match <code>**AbC**</code>)</li>
+</ul>
+<p><a href="https://medium.com/factory-mind/regex-tutorial-a-simple-cheatsheet-by-examples-649dc1c3f285">Source</a></p>
+</body>
+</html>

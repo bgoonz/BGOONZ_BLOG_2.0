@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>trimstart</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="string.prototype.trimstart">String.prototype.trimStart()</h1>
+<p>The <code>trimStart()</code> method removes whitespace from the beginning of a string. <code>trimLeft()</code> is an alias of this method.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>trimStart()
+
+trimLeft()</code></pre>
+<h3 id="return-value">Return value</h3>
+<p>A new string representing <code>str</code> stripped of whitespace from its beginning (left side).</p>
+<p>If the beginning of <code>str</code> has no whitespace, a new string is still returned (essentially a copy of <code>str</code>), with no exception being thrown.</p>
+<h3 id="aliasing">Aliasing</h3>
+<p>For consistency with functions like <a href="padstart"><code>String.prototype.padStart</code></a> the standard method name is <code>trimStart</code>. However, for web compatibility reasons, <code>trimLeft</code> remains as an alias to <code>trimStart</code>. In some engines this means:</p>
+<pre><code>String.prototype.trimLeft.name === &quot;trimStart&quot;;</code></pre>
+<h2 id="examples">Examples</h2>
+<h3 id="using-trimstart">Using trimStart()</h3>
+<p>The following example displays the lowercase string <code>'foo '</code>:</p>
+<pre><code>var str = &#39;   foo  &#39;;
+
+console.log(str.length); // 8
+
+str = str.trimStart();
+console.log(str.length); // 5
+console.log(str);        // &#39;foo  &#39;</code></pre>
+<h2 id="polyfill">Polyfill</h2>
+<pre><code>//https://github.com/FabioVergani/js-Polyfill_String-trimStart
+
+(function(w){
+    var String=w.String, Proto=String.prototype;
+
+    (function(o,p){
+        if(p in o?o[p]?false:true:true){
+            var r=/^\s+/;
+            o[p]=o.trimLeft||function(){
+                return this.replace(r,&#39;&#39;)
+            }
+        }
+    })(Proto,&#39;trimStart&#39;);
+
+})(window);
+
+/*
+ES6:
+(w=&gt;{
+    const String=w.String, Proto=String.prototype;
+
+    ((o,p)=&gt;{
+        if(p in o?o[p]?false:true:true){
+            const r=/^\s+/;
+            o[p]=o.trimLeft||function(){
+                return this.replace(r,&#39;&#39;)
+            }
+        }
+    })(Proto,&#39;trimStart&#39;);
+
+})(window);
+*/</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-string.prototype.trimstart">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-string.prototype.trimstart</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>trimStart</code></p>
+<p>66</p>
+<p>4</p>
+<p>12</p>
+<p>61</p>
+<p>3.5</p>
+<p>No</p>
+<p>53</p>
+<p>15</p>
+<p>12</p>
+<p>66</p>
+<p>≤37</p>
+<p>66</p>
+<p>18</p>
+<p>61</p>
+<p>4</p>
+<p>47</p>
+<p>14</p>
+<p>12</p>
+<p>9.0</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="trim"><code>String.prototype.trim()</code></a></li>
+<li><a href="trimend"><code>String.prototype.trimEnd()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trimStart" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trimStart</a></p>
+</body>
+</html>

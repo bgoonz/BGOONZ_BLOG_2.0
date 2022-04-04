@@ -1,8 +1,10 @@
-# JSON.stringify()
+JSON.stringify()
+================
 
 The `JSON.stringify()` method converts a JavaScript object or value to a JSON string, optionally replacing values if a replacer function is specified or optionally including only the specified properties if a replacer array is specified.
 
-## Syntax
+Syntax
+------
 
     JSON.stringify(value)
     JSON.stringify(value, replacer)
@@ -17,11 +19,11 @@ The value to convert to a JSON string.
 A function that alters the behavior of the stringification process, or an array of [`String`](../string) and [`Number`](../number) that serve as an allowlist for selecting/filtering the properties of the value object to be included in the JSON string. If this value is [`null`](../null) or not provided, all properties of the object are included in the resulting JSON string.
 
 `space` <span class="badge inline optional">Optional</span>  
-A [`String`](../string) or [`Number`](../number) object that's used to insert white space into the output JSON string for readability purposes.
+A [`String`](../string) or [`Number`](../number) object that’s used to insert white space into the output JSON string for readability purposes.
 
 If this is a `Number`, it indicates the number of space characters to use as white space; this number is capped at 10 (if it is greater, the value is just `10`). Values less than 1 indicate that no space should be used.
 
-If this is a `String`, the string (or the first 10 characters of the string, if it's longer than that) is used as white space. If this parameter is not provided (or is [`null`](../null)), no white space is used.
+If this is a `String`, the string (or the first 10 characters of the string, if it’s longer than that) is used as white space. If this parameter is not provided (or is [`null`](../null)), no white space is used.
 
 ### Return value
 
@@ -29,22 +31,24 @@ A JSON string representing the given value, or undefined.
 
 ### Exceptions
 
--   Throws a [`TypeError`](../typeerror) ("cyclic object value") exception when a circular reference is found.
--   Throws a [`TypeError`](../typeerror) ("BigInt value can't be serialized in JSON") when trying to stringify a [`BigInt`](../bigint) value.
+-   Throws a [`TypeError`](../typeerror) (“cyclic object value”) exception when a circular reference is found.
+-   Throws a [`TypeError`](../typeerror) (“BigInt value can’t be serialized in JSON”) when trying to stringify a [`BigInt`](../bigint) value.
 
-## Description
+Description
+-----------
 
 `JSON.stringify()` converts a value to JSON notation representing it:
 
--   If the value has a `toJSON()` method, it's responsible to define what data will be serialized.
+-   If the value has a `toJSON()` method, it’s responsible to define what data will be serialized.
 -   [`Boolean`](../boolean), [`Number`](../number), and [`String`](../string) objects are converted to the corresponding primitive values during stringification, in accord with the traditional conversion semantics.
--   [`undefined`](../undefined), [`Function`](../function)s, and [`Symbol`](../symbol)s are not valid JSON values. If any such values are encountered during conversion they are either omitted (when found in an object) or changed to [`null`](../null) (when found in an array). `JSON.stringify()` can return `undefined` when passing in "pure" values like `JSON.stringify(function(){})` or `JSON.stringify(undefined)`.
+-   [`undefined`](../undefined), [`Function`](../function)s, and [`Symbol`](../symbol)s are not valid JSON values. If any such values are encountered during conversion they are either omitted (when found in an object) or changed to [`null`](../null) (when found in an array). `JSON.stringify()` can return `undefined` when passing in “pure” values like `JSON.stringify(function(){})` or `JSON.stringify(undefined)`.
 -   All [`Symbol`](../symbol)-keyed properties will be completely ignored, even when using the `replacer` function.
 -   The instances of [`Date`](../date) implement the `toJSON()` function by returning a string (the same as `date.toISOString()`). Thus, they are treated as strings.
 -   The numbers [`Infinity`](../infinity) and [`NaN`](../nan), as well as the value [`null`](../null), are all considered `null`.
 -   All the other [`Object`](../object) instances (including [`Map`](../map), [`Set`](../set), [`WeakMap`](../weakmap), and [`WeakSet`](../weakset)) will have only their enumerable properties serialized.
 
-## Examples
+Examples
+--------
 
 ### Using JSON.stringify
 
@@ -114,13 +118,13 @@ A JSON string representing the given value, or undefined.
 
 The `replacer` parameter can be either a function or an array.
 
-**As a function**, it takes two parameters: the key and the value being stringified. The object in which the key was found is provided as the `replacer`'s `this` parameter.
+**As a function**, it takes two parameters: the key and the value being stringified. The object in which the key was found is provided as the `replacer`’s `this` parameter.
 
 Initially, the `replacer` function is called with an empty string as key representing the object being stringified. It is then called for each property on the object or array being stringified.
 
 It should return the value that should be added to the JSON string, as follows:
 
--   If you return a [`Number`](../number), [`String`](../string), [`Boolean`](../boolean), or [`null`](../null), the stringified version of that value is used as the property's value.
+-   If you return a [`Number`](../number), [`String`](../string), [`Boolean`](../boolean), or [`null`](../null), the stringified version of that value is used as the property’s value.
 -   If you return a [`Function`](../function), [`Symbol`](../symbol), or [`undefined`](../undefined), the property is not included in the output.
 -   If you return any other object, the object is recursively stringified, calling the `replacer` function on each property.
 
@@ -144,7 +148,7 @@ It should return the value that should be added to the JSON string, as follows:
 
 #### Example replacer, as an array
 
-If `replacer` is an array, the array's values indicate the names of the properties in the object that should be included in the resulting JSON string.
+If `replacer` is an array, the array’s values indicate the names of the properties in the object that should be included in the resulting JSON string.
 
     JSON.stringify(foo, ['week', 'month']);
     // '{"week":45,"month":7}', only keep "week" and "month" properties
@@ -204,7 +208,7 @@ For example:
 
 ### Issue with JSON.stringify() when serializing circular references
 
-Note that since the [JSON format](https://www.json.org/) doesn't support object references (although an [IETF draft exists](https://datatracker.ietf.org/doc/html/draft-pbryan-zyp-json-ref-03)), a [`TypeError`](../typeerror) will be thrown if one attempts to encode an object with circular references.
+Note that since the [JSON format](https://www.json.org/) doesn’t support object references (although an [IETF draft exists](https://datatracker.ietf.org/doc/html/draft-pbryan-zyp-json-ref-03)), a [`TypeError`](../typeerror) will be thrown if one attempts to encode an object with circular references.
 
     const circularReference = {};
     circularReference.myself = circularReference;
@@ -212,7 +216,7 @@ Note that since the [JSON format](https://www.json.org/) doesn't support object 
     // Serializing circular references throws "TypeError: cyclic object value"
     JSON.stringify(circularReference);
 
-To serialize circular references you can use a library that supports them (e.g. [cycle.js](https://github.com/douglascrockford/JSON-js/blob/master/cycle.js) by Douglas Crockford) or implement a solution by yourself, which will require finding and replacing (or removing) the cyclic references by serializable values.
+To serialize circular references you can use a library that supports them (e.g. [cycle.js](https://github.com/douglascrockford/JSON-js/blob/master/cycle.js) by Douglas Crockford) or implement a solution by yourself, which will require finding and replacing (or removing) the cyclic references by serializable values.
 
 ### Issue with plain JSON.stringify for use as JavaScript
 
@@ -288,20 +292,20 @@ Engines implementing the [well-formed JSON.stringify specification](https://gith
 
     JSON.stringify("\uD800"); // '"�"'
 
-But with this change `JSON.stringify` represents lone surrogates using JSON escape sequences that _can_ be encoded in valid UTF-8 or UTF-16:
+But with this change `JSON.stringify` represents lone surrogates using JSON escape sequences that *can* be encoded in valid UTF-8 or UTF-16:
 
     JSON.stringify("\uD800"); // '"\\ud800"'
 
-This change should be backwards-compatible as long as you pass the result of `JSON.stringify` to APIs such as `JSON.parse` that will accept any valid JSON text, because they will treat Unicode escapes of lone surrogates as identical to the lone surrogates themselves. _Only_ if you are directly interpreting the result of `JSON.stringify` do you need to carefully handle `JSON.stringify`'s two possible encodings of these code points.
+This change should be backwards-compatible as long as you pass the result of `JSON.stringify` to APIs such as `JSON.parse` that will accept any valid JSON text, because they will treat Unicode escapes of lone surrogates as identical to the lone surrogates themselves. *Only* if you are directly interpreting the result of `JSON.stringify` do you need to carefully handle `JSON.stringify`’s two possible encodings of these code points.
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-json.stringify">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-json.stringify</span></td></tr></tbody></table>
 
-<span class="small">#sec-json.stringify</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -383,10 +387,10 @@ No
 
 No
 
-## See also
+See also
+--------
 
 -   [`JSON.parse()`](parse)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify</a>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>global</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="webassembly.global-constructor">WebAssembly.Global() constructor</h1>
+<p>A <code>WebAssembly.Global()</code> constructor creates a new <code>Global</code> object representing a global variable instance, accessible from both JavaScript and importable/exportable across one or more <a href="../module"><code>WebAssembly.Module</code></a> instances. This allows dynamic linking of multiple modules.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>new WebAssembly.Global(descriptor, value)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><em>descriptor</em><br />
+A <code>GlobalDescriptor</code> dictionary object, which contains two properties:</p>
+<ul>
+<li><code>value</code>: A <a href="https://developer.mozilla.org/en-US/docs/Web/API/USVString"><code>USVString</code></a> representing the data type of the global. This can be one of <code>i32</code>, <code>i64</code>, <code>f32</code>, and <code>f64</code>. USVString corresponds to the set of all possible sequences of unicode scalar values. USVString maps to a String when returned in JavaScript; it’s generally only used for APIs that perform text processing and need a string of unicode scalar values to operate on. USVString is equivalent to DOMString except for not allowing unpaired surrogate codepoints. Unpaired surrogate codepoints present in USVString are converted by the browser to Unicode ‘replacement character’ U+FFFD, (�).</li>
+<li><code>mutable</code>: A boolean value that determines whether the global is mutable or not. By default, this is <code>false</code>.</li>
+</ul>
+<p><em>value</em><br />
+The value the variable contains. This can be any value, as long as its type matches the variable’s data type. If no value is specified, a typed 0 value is used, as specified by the <a href="https://webassembly.github.io/spec/js-api/#defaultvalue"><code>DefaultValue</code> algorithm</a>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="creating-a-new-global-instance">Creating a new Global instance</h3>
+<p>The following example shows a new global instance being created using the <code>WebAssembly.Global()</code> constructor. It is being defined as a mutable <code>i32</code> type, with a value of 0.</p>
+<p>The value of the global is then changed, first to <code>42</code> using the <code>Global.value</code> property, and then to 43 using the <code>incGlobal()</code> function exported out of the <code>global.wasm</code> module (this adds 1 to whatever value is given to it and then returns the new value).</p>
+<pre><code>const output = document.getElementById(&#39;output&#39;);
+
+function assertEq(msg, got, expected) {
+  output.innerHTML += `Testing ${msg}: `;
+  if (got !== expected)
+    output.innerHTML += `FAIL!&lt;br&gt;Got: ${got}&lt;br&gt;Expected: ${expected}&lt;br&gt;`;
+  else
+    output.innerHTML += `SUCCESS! Got: ${got}&lt;br&gt;`;
+}
+
+assertEq(&quot;WebAssembly.Global exists&quot;, typeof WebAssembly.Global, &quot;function&quot;);
+
+const global = new WebAssembly.Global({value:&#39;i32&#39;, mutable:true}, 0);
+
+WebAssembly.instantiateStreaming(fetch(&#39;global.wasm&#39;), { js: { global } })
+.then(({instance}) =&gt; {
+    assertEq(&quot;getting initial value from wasm&quot;, instance.exports.getGlobal(), 0);
+    global.value = 42;
+    assertEq(&quot;getting JS-updated value from wasm&quot;, instance.exports.getGlobal(), 42);
+    instance.exports.incGlobal();
+    assertEq(&quot;getting wasm-updated value from JS&quot;, global.value, 43);
+});</code></pre>
+<p><strong>Note:</strong> You can see the example <a href="https://mdn.github.io/webassembly-examples/js-api-examples/global.html">running live on GitHub</a>; see also the <a href="https://github.com/mdn/webassembly-examples/blob/master/js-api-examples/global.html">source code</a>.</p>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://webassembly.github.io/spec/js-api/#dom-global-global">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) <br/></p>
+<span class="small">#dom-global-global</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>Global</code></p>
+<p>69</p>
+<p>79</p>
+<p>62</p>
+<p>No</p>
+<p>No</p>
+<p>13.1</p>
+<p>69</p>
+<p>69</p>
+<p>62</p>
+<p>No</p>
+<p>13.4</p>
+<p>10.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/WebAssembly">WebAssembly</a> overview page</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts">WebAssembly concepts</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API">Using the WebAssembly JavaScript API</a></li>
+<li><a href="https://github.com/WebAssembly/mutable-global/blob/master/proposals/mutable-global/Overview.md">Import/Export mutable globals proposal</a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Global/Global" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Global/Global</a></p>
+</body>
+</html>

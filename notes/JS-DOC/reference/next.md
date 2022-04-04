@@ -1,8 +1,10 @@
-# Generator.prototype.next()
+Generator.prototype.next()
+==========================
 
 The `next()` method returns an object with two properties `done` and `value`. You can also provide a parameter to the `next` method to send a value to the generator.
 
-## Syntax
+Syntax
+------
 
     next(value)
 
@@ -18,14 +20,15 @@ The value will be assigned as a result of a `yield` expression. For example, in 
 An [`Object`](../object) with two properties:
 
 `done` (boolean)  
-Has the value `true` if the iterator is past the end of the iterated sequence. In this case `value` optionally specifies the _return value_ of the iterator.
+Has the value `true` if the iterator is past the end of the iterated sequence. In this case `value` optionally specifies the *return value* of the iterator.
 
 Has the value `false` if the iterator was able to produce the next value in the sequence. This is equivalent of not specifying the `done` property altogether.
 
 `value`  
 Any JavaScript value returned by the iterator. Can be omitted when `done` is `true`.
 
-## Examples
+Examples
+--------
 
 ### Using next()
 
@@ -90,14 +93,14 @@ Note that the first call does not log anything, because the generator was not yi
     // 2
     // "{ value: null, done: false }"
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-generator.prototype.next">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-generator.prototype.next</span></td></tr></tbody></table>
 
-<span class="small">#sec-generator.prototype.next</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -153,7 +156,8 @@ No
 
 4.0
 
-## See also
+See also
+--------
 
 -   [`function*`](../../statements/function*)
 -   [Iterators and generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators)

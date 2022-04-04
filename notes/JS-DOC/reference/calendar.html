@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>calendar</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="intl.locale.prototype.calendar">Intl.Locale.prototype.calendar</h1>
+<p>The <code>Intl.Locale.prototype.calendar</code> property is an accessor property which returns the type of calendar used in the <code>Locale</code>.</p>
+<h2 id="description">Description</h2>
+<p>The <code>calendar</code> property returns the part of the <code>Locale</code> that indicates the <code>Locale</code>’s calendar era. While most of the world uses the Gregorian calendar, there are several regional calendar eras used around the world. The following table shows all the valid Unicode calendar key strings, along with a description of the calendar era they represent.</p>
+<h3 id="unicode-calendar-keys">Unicode calendar keys</h3>
+<table>
+<caption>
+Unicode calendar keys
+</caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>
+Calendar key (name)
+</th>
+<th>
+Description
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<code>buddhist</code>
+</td>
+<td>
+Thai Buddhist calendar
+</td>
+</tr>
+<tr class="even">
+<td>
+<code>chinese</code>
+</td>
+<td>
+Traditional Chinese calendar
+</td>
+</tr>
+<tr class="odd">
+<td>
+<code>coptic</code>
+</td>
+<td>
+Coptic calendar
+</td>
+</tr>
+<tr class="even">
+<td>
+<code>dangi</code>
+</td>
+<td>
+Traditional Korean calendar
+</td>
+</tr>
+<tr class="odd">
+<td>
+<code>ethioaa</code>
+</td>
+<td>
+Ethiopic calendar, Amete Alem (epoch approx. 5493 B.C.E)
+</td>
+</tr>
+<tr class="even">
+<td>
+<code>ethiopic</code>
+</td>
+<td>
+Ethiopic calendar, Amete Mihret (epoch approx, 8 C.E.)
+</td>
+</tr>
+<tr class="odd">
+<td>
+<code>gregory</code>
+</td>
+<td>
+Gregorian calendar
+</td>
+</tr>
+<tr class="even">
+<td>
+<code>hebrew</code>
+</td>
+<td>
+Traditional Hebrew calendar
+</td>
+</tr>
+<tr class="odd">
+<td>
+<code>indian</code>
+</td>
+<td>
+Indian calendar
+</td>
+</tr>
+<tr class="even">
+<td>
+<code>islamic</code>
+</td>
+<td>
+Islamic calendar
+</td>
+</tr>
+<tr class="odd">
+<td>
+<code>islamic-umalqura</code>
+</td>
+<td>
+Islamic calendar, Umm al-Qura
+</td>
+</tr>
+<tr class="even">
+<td>
+<code>islamic-tbla</code>
+</td>
+<td>
+Islamic calendar, tabular (intercalary years [2,5,7,10,13,16,18,21,24,26,29] - astronomical epoch)
+</td>
+</tr>
+<tr class="odd">
+<td>
+<code>islamic-civil</code>
+</td>
+<td>
+Islamic calendar, tabular (intercalary years [2,5,7,10,13,16,18,21,24,26,29] - civil epoch)
+</td>
+</tr>
+<tr class="even">
+<td>
+<code>islamic-rgsa</code>
+</td>
+<td>
+Islamic calendar, Saudi Arabia sighting
+</td>
+</tr>
+<tr class="odd">
+<td>
+<code>iso8601</code>
+</td>
+<td>
+ISO calendar (Gregorian calendar using the ISO 8601 calendar week rules)
+</td>
+</tr>
+<tr class="even">
+<td>
+<code>japanese</code>
+</td>
+<td>
+Japanese Imperial calendar
+</td>
+</tr>
+<tr class="odd">
+<td>
+<code>persian</code>
+</td>
+<td>
+Persian calendar
+</td>
+</tr>
+<tr class="even">
+<td>
+<code>roc</code>
+</td>
+<td>
+Republic of China calendar
+</td>
+</tr>
+<tr class="odd">
+<td>
+<div class="notecard warning">
+<p>
+<strong>Warning:</strong> The <code>islamicc</code> calendar key has been deprecated. Please use <code>islamic-civil</code>.
+</p>
+</div>
+<p>
+<code>islamicc</code>
+</p>
+</td>
+<td>
+Civil (algorithmic) Arabic calendar
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="examples">Examples</h2>
+<h3 id="adding-a-calendar-in-the-locale-string">Adding a calendar in the Locale string</h3>
+<p>Calendar eras fall under the category of locale key “extension keys”. These keys add additional data about the locale, and are added to locale identifiers by using the <code>-u</code> extension. Thus, the calendar era type can be added to the initial locale identifier string that is passed into the <a href="locale"><code>Intl.Locale</code></a> constructor. To add the calendar type, first add the <code>-u</code> extension to the string. Next, add the <code>-ca</code> extension to indicate that you are adding a calendar type. Finally, add the calendar era to the string.</p>
+<pre><code>let frBuddhist = new Intl.Locale(&quot;fr-FR-u-ca-buddhist&quot;);
+console.log(frBuddhist.calendar); // Prints &quot;buddhist&quot;</code></pre>
+<h3 id="adding-a-calendar-with-a-configuration-object">Adding a calendar with a configuration object</h3>
+<p>The <a href="locale"><code>Intl.Locale</code></a> constructor has an optional configuration object argument, which can contain any of several extension types, including calendars. Set the <code>calendar</code> property of the configuration object to your desired calendar era, and then pass it into the constructor.</p>
+<pre><code>let frBuddhist = new Intl.Locale(&quot;fr-FR&quot;, {calendar: &quot;buddhist&quot;});
+console.log(frBuddhist.calendar); // Prints &quot;buddhist&quot;</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.calendar">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) <br/></p>
+<span class="small">#sec-Intl.Locale.prototype.calendar</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>calendar</code></p>
+<p>74</p>
+<p>79</p>
+<p>75</p>
+<p>No</p>
+<p>62</p>
+<p>14</p>
+<p>74</p>
+<p>74</p>
+<p>79</p>
+<p>53</p>
+<p>14</p>
+<p>11.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../locale"><code>Intl.Locale</code></a></li>
+<li><a href="https://www.unicode.org/reports/tr35/#UnicodeCalendarIdentifier">Unicode Calendar Identifiers</a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/calendar" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/calendar</a></p>
+</body>
+</html>

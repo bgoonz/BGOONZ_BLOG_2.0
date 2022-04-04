@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>ncat</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="connect-mode-ncat-is-client-default-port-is-31337">Connect mode (ncat is client) | default port is 31337</h1>
+<p>ncat <host> [<port>]</p>
+<h1 id="listen-mode-ncat-is-server-default-port-is-31337">Listen mode (ncat is server) | default port is 31337</h1>
+<p>ncat -l [<host>] [<port>]</p>
+<h1 id="transfer-file-closes-after-one-transfer">Transfer file (closes after one transfer)</h1>
+<p>ncat -l [<host>] [<port>] &lt; file</p>
+<h1 id="transfer-file-stays-open-for-multiple-transfers">Transfer file (stays open for multiple transfers)</h1>
+<p>ncat -l –keep-open [<host>] [<port>] &lt; file</p>
+<h1 id="receive-file">Receive file</h1>
+<p>ncat [<host>] [<port>] &gt; file</p>
+<h1 id="brokering-allows-for-multiple-clients-to-connect">Brokering | allows for multiple clients to connect</h1>
+<p>ncat -l –broker [<host>] [<port>]</p>
+<h1 id="listen-with-ssl-many-options-use-ncat-help-for-full-list">Listen with SSL | many options, use ncat –help for full list</h1>
+<p>ncat -l –ssl [<host>] [<port>]</p>
+<h1 id="access-control">Access control</h1>
+<p>ncat -l –allow <ip> ncat -l –deny <ip></p>
+<h1 id="proxying">Proxying</h1>
+<p>ncat –proxy <proxyhost>[:<proxyport>] –proxy-type {http | socks4} <host>[<port>]</p>
+<h1 id="chat-server-can-use-brokering-for-multi-user-chat">Chat server | can use brokering for multi-user chat</h1>
+<p>ncat -l –chat [<host>] [<port>]</p>
+</body>
+</html>

@@ -1,73 +1,46 @@
----
-title: title
-subtitle: subtitle
-date: '2022-01-03'
-thumb_img_alt: lorem-ipsum
-content_img_alt: lorem-ipsum
-excerpt: lorem-ipsum
-seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
-template: post
-thumb_img_path: images/css-72a655a7.jpg
----
+subtitle
 
----
+2022-01-03
 
-title: DOM Selection
-category: JavaScript
+------------------------------------------------------------------------
 
-intro: |
-Quick introduction to the HTML [DOM selection API](https://devdocs.io/dom/selection).
+title: DOM Selection category: JavaScript
 
----
+intro: | Quick introduction to the HTML [DOM selection API](https://devdocs.io/dom/selection).
 
-## Reference
+------------------------------------------------------------------------
+
+Reference
+---------
 
 ### Selection
 
-```js
-var sel = document.getSelection();
-```
+    var sel = document.getSelection();
 
-See: <https://devdocs.io/dom/selection>
+See: <a href="https://devdocs.io/dom/selection" class="uri">https://devdocs.io/dom/selection</a>
 
 ### Methods
 
-```js
-sel.removeAllRanges(); //  deselects
-sel.addRange(range); //    sets a selection
-sel.removeRange(range); // remove a range
-```
+    sel.removeAllRanges(); //  deselects
+    sel.addRange(range); //    sets a selection
+    sel.removeRange(range); // remove a range
 
-```js
-sel.rangeCount;
-sel.getRangeAt(0); // get the 0th range
-```
+    sel.rangeCount;
+    sel.getRangeAt(0); // get the 0th range
 
 ### Collapsing
 
-```js
-sel.collapse(parent, offset);
-sel.collapseToEnd();
-sel.collapseToStart();
-sel.isCollapsed;
-```
+    sel.collapse(parent, offset);
+    sel.collapseToEnd();
+    sel.collapseToStart();
+    sel.isCollapsed;
 
-```js
-sel.containsNode(node);
-```
+    sel.containsNode(node);
 
 ### Deleting
 
-```js
-sel.deleteFromDocument();
-```
+    sel.deleteFromDocument();
 
 ### Events
 
-```js
-document.addEventListener('selectionchange', () => {});
-```
+    document.addEventListener('selectionchange', () => {});

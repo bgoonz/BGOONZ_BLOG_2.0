@@ -1,10 +1,12 @@
-# Math.random()
+Math.random()
+=============
 
 The `Math.random()` function returns a floating-point, pseudo-random number in the range 0 to less than 1 (inclusive of 0, but not 1) with approximately uniform distribution over that range — which you can then scale to your desired range. The implementation selects the initial seed to the random number generation algorithm; it cannot be chosen or reset by the user.
 
-**Note:** `Math.random()` _does not_ provide cryptographically secure random numbers. Do not use them for anything related to security. Use the Web Crypto API instead, and more precisely the [`window.crypto.getRandomValues()`](https://developer.mozilla.org/en-US/docs/Web/API/Crypto/getRandomValues) method.
+**Note:** `Math.random()` *does not* provide cryptographically secure random numbers. Do not use them for anything related to security. Use the Web Crypto API instead, and more precisely the [`window.crypto.getRandomValues()`](https://developer.mozilla.org/en-US/docs/Web/API/Crypto/getRandomValues) method.
 
-## Syntax
+Syntax
+------
 
     Math.random()
 
@@ -12,9 +14,10 @@ The `Math.random()` function returns a floating-point, pseudo-random number in t
 
 A floating-point, pseudo-random number between `0` (inclusive) and 1 (exclusive).
 
-## Examples
+Examples
+--------
 
-Note that as numbers in JavaScript are IEEE 754 floating point numbers with round-to-nearest-even behavior, the ranges claimed for the functions below (excluding the one for `Math.random()` itself) aren't exact. If extremely large bounds are chosen (2<sup>53</sup> or higher), it's possible in _extremely_ rare cases to calculate the usually-excluded upper bound.
+Note that as numbers in JavaScript are IEEE 754 floating point numbers with round-to-nearest-even behavior, the ranges claimed for the functions below (excluding the one for `Math.random()` itself) aren’t exact. If extremely large bounds are chosen (2<sup>53</sup> or higher), it’s possible in *extremely* rare cases to calculate the usually-excluded upper bound.
 
 ### Getting a random number between 0 (inclusive) and 1 (exclusive)
 
@@ -32,7 +35,7 @@ This example returns a random number between the specified values. The returned 
 
 ### Getting a random integer between two values
 
-This example returns a random _integer_ between the specified values. The value is no lower than `min` (or the next integer greater than `min` if `min` isn't an integer), and is less than (but not equal to) `max`.
+This example returns a random *integer* between the specified values. The value is no lower than `min` (or the next integer greater than `min` if `min` isn’t an integer), and is less than (but not equal to) `max`.
 
     function getRandomInt(min, max) {
       min = Math.ceil(min);
@@ -44,7 +47,7 @@ This example returns a random _integer_ between the specified values. The value 
 
 ### Getting a random integer between two values, inclusive
 
-While the `getRandomInt()` function above is inclusive at the minimum, it's exclusive at the maximum. What if you need the results to be inclusive at both the minimum and the maximum? The `getRandomIntInclusive()` function below accomplishes that.
+While the `getRandomInt()` function above is inclusive at the minimum, it’s exclusive at the maximum. What if you need the results to be inclusive at both the minimum and the maximum? The `getRandomIntInclusive()` function below accomplishes that.
 
     function getRandomIntInclusive(min, max) {
       min = Math.ceil(min);
@@ -52,14 +55,14 @@ While the `getRandomInt()` function above is inclusive at the minimum, it's excl
       return Math.floor(Math.random() * (max - min + 1) + min); //The maximum is inclusive and the minimum is inclusive
     }
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.random">ECMAScript (ECMA-262) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript (ECMA-262)<br />
+</p><span class="small">The definition of ‘Math.random’ in that specification.</span></td></tr></tbody></table>
 
-<span class="small">The definition of 'Math.random' in that specification.</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -115,10 +118,10 @@ Samsung Internet
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`window.crypto.getRandomValues()`](https://developer.mozilla.org/en-US/docs/Web/API/Crypto/getRandomValues)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random</a>

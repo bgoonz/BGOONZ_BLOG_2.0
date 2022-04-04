@@ -1,8 +1,10 @@
-# RegExp.prototype.test()
+RegExp.prototype.test()
+=======================
 
 The `test()` method executes a search for a match between a regular expression and a specified string. Returns `true` or `false`.
 
-## Syntax
+Syntax
+------
 
     test(str)
 
@@ -15,7 +17,8 @@ The string against which to match the regular expression.
 
 `true` if there is a match between the regular expression and the string `str`. Otherwise, `false`.
 
-## Description
+Description
+-----------
 
 Use `test()` whenever you want to know whether a pattern is found in a string. `test()` returns a boolean, unlike the [`String.prototype.search()`](../string/search) method (which returns the index of a match, or `-1` if not found).
 
@@ -23,11 +26,12 @@ To get more information (but with slower execution), use the [`exec()`](exec) me
 
 As with `exec()` (or in combination with it), `test()` called multiple times on the same global regular expression instance will advance past the previous match.
 
-## Examples
+Examples
+--------
 
 ### Using test()
 
-Simple example that tests if "`hello`" is contained at the very beginning of a string, returning a boolean result.
+Simple example that tests if “`hello`” is contained at the very beginning of a string, returning a boolean result.
 
     const str = 'hello world!';
     const result = /^hello/.test(str);
@@ -46,15 +50,15 @@ The following example logs a message which depends on the success of the test:
       console.log(`${str}${midstring}${re.source}`);
     }
 
-### Using test() on a regex with the "global" flag
+### Using test() on a regex with the “global” flag
 
 When a regex has the [global flag](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#advanced_searching_with_flags_2) set, `test()` will advance the [`lastIndex`](lastindex) of the regex. ([`RegExp.prototype.exec()`](exec) also advances the `lastIndex` property.)
 
 Further calls to `test(str)` will resume searching `str` starting from `lastIndex`. The `lastIndex` property will continue to increase each time `test()` returns `true`.
 
-**Note:** As long as `test()` returns `true`, `lastIndex` will _not_ reset—even when testing a different string!
+**Note:** As long as `test()` returns `true`, `lastIndex` will *not* reset—even when testing a different string!
 
-When `test()` returns `false`, the calling regex's `lastIndex` property will reset to `0`.
+When `test()` returns `false`, the calling regex’s `lastIndex` property will reset to `0`.
 
 The following example demonstrates this behavior:
 
@@ -75,14 +79,14 @@ The following example demonstrates this behavior:
     // regex.lastIndex is at 0
     // (...and so on)
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-regexp.prototype.test">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-regexp.prototype.test</span></td></tr></tbody></table>
 
-<span class="small">#sec-regexp.prototype.test</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -138,12 +142,12 @@ Samsung Internet
 
 1.0
 
-## See also
+See also
+--------
 
 -   [Regular Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) chapter in the [JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
 -   [`RegExp`](../regexp)
 -   [`RegExp.prototype`](../regexp)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test</a>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="permutations">Permutations</h1>
+<p>When the order doesn’t matter, it is a <strong>Combination</strong>.</p>
+<p>When the order <strong>does</strong> matter it is a <strong>Permutation</strong>.</p>
+<p><strong>“The combination to the safe is 472”</strong>. We do care about the order. <code>724</code> won’t work, nor will <code>247</code>. It has to be exactly <code>4-7-2</code>.</p>
+<h2 id="permutations-without-repetitions">Permutations without repetitions</h2>
+<p>A permutation, also called an “arrangement number” or “order”, is a rearrangement of the elements of an ordered list <code>S</code> into a one-to-one correspondence with <code>S</code> itself.</p>
+<p>Below are the permutations of string <code>ABC</code>.</p>
+<pre class="math"><code>ABC  ACB  BAC  BCA  CBA  CAB</code></pre>
+<p>Or for example the first three people in a running race: you can’t be first and second.</p>
+<p><strong>Number of combinations</strong></p>
+<pre class="math"><code>n * (n-1) * (n -2) * ... * 1 = n!</code></pre>
+<h2 id="permutations-with-repetitions">Permutations with repetitions</h2>
+<p>When repetition is allowed we have permutations with repetitions. For example the the lock below: it could be <code>333</code>.</p>
+<h6 id="number-of-combinations">Number of combinations</h6>
+<pre class="math"><code>n * n * n ... (r times) = n^r</code></pre>
+<h2 id="cheat-sheets">Cheat Sheets</h2>
+<p>Permutations cheat sheet</p>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/2000/1*JNK-n0Pt0Vbxk0lxVpgT5A.png" alt="Permutations Cheat Sheet" /><figcaption>Permutations Cheat Sheet</figcaption>
+</figure>
+<p>Combinations cheat sheet</p>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/2000/1*7cFRn8jW4g_91YgDAbmxRQ.png" alt="Combinations Cheat Sheet" /><figcaption>Combinations Cheat Sheet</figcaption>
+</figure>
+<p>Permutations/combinations algorithm ideas.</p>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/2000/1*vLsSsZMnesCFPCYTYMbxrQ.png" alt="Algorithms Idea" /><figcaption>Algorithms Idea</figcaption>
+</figure>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://www.mathsisfun.com/combinatorics/combinations-permutations.html">Math Is Fun</a></li>
+<li><a href="https://medium.com/@trekhleb/permutations-combinations-algorithms-cheat-sheet-68c14879aba5">Permutations/combinations cheat sheets</a></li>
+</ul>
+</body>
+</html>

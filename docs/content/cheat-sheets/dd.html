@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2022-01-03" />
+  <title>title</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">title</h1>
+<p class="subtitle">subtitle</p>
+<p class="date">2022-01-03</p>
+</header>
+<h1 id="read-from-devurandom-2512-bytes-and-put-it-into-tmptest.txt">Read from {/dev/urandom} 2*512 Bytes and put it into {/tmp/test.txt}</h1>
+<h1 id="note-at-the-first-iteration-we-read-512-bytes.">Note: At the first iteration, we read 512 Bytes.</h1>
+<h1 id="note-at-the-second-iteration-we-read-512-bytes.">Note: At the second iteration, we read 512 Bytes.</h1>
+<p>dd if=/dev/urandom of=/tmp/test.txt count=2 bs=512</p>
+<h1 id="watch-the-progress-of-dd">Watch the progress of ‘dd’</h1>
+<p>dd if=/dev/zero of=/dev/null bs=4KB &amp;; export dd_pid=<code>pgrep '^dd'</code>; while [[-d /proc/$dd_pid]]; do kill -USR1 $dd_pid &amp;&amp; sleep 1 &amp;&amp; clear; done</p>
+<h1 id="watch-the-progress-of-dd-with-pv-and-dialog-apt-get-install-pv-dialog">Watch the progress of ‘dd’ with <code>pv</code> and <code>dialog</code> (apt-get install pv dialog)</h1>
+<p>(pv -n /dev/zero | dd of=/dev/null bs=128M conv=notrunc,noerror) 2&gt;&amp;1 | dialog –gauge “Running dd command (cloning), please wait…” 10 70 0</p>
+<h1 id="watch-the-progress-of-dd-with-pv-and-zenity-apt-get-install-pv-zenity">Watch the progress of ‘dd’ with <code>pv</code> and <code>zenity</code> (apt-get install pv zenity)</h1>
+<p>(pv -n /dev/zero | dd of=/dev/null bs=128M conv=notrunc,noerror) 2&gt;&amp;1 | zenity –title ‘Running dd command (cloning), please wait…’ –progress</p>
+<h1 id="watch-the-progress-of-dd-with-the-built-in-progress-functionality-introduced-in-coreutils-v8.24">Watch the progress of ‘dd’ with the built-in <code>progress</code> functionality (introduced in coreutils v8.24)</h1>
+<p>dd if=/dev/zero of=/dev/null bs=128M status=progress</p>
+<h1 id="dd-with-graphical-return">DD with “graphical” return</h1>
+<p>dcfldd if=/dev/zero of=/dev/null bs=500K</p>
+<h1 id="this-will-output-the-sound-from-your-microphone-port-to-the-ssh-target-computers-speaker-port.-the-sound-quality-is-very-bad-so-you-will-hear-a-lot-of-hissing.">This will output the sound from your microphone port to the ssh target computer’s speaker port. The sound quality is very bad, so you will hear a lot of hissing.</h1>
+<p>dd if=/dev/dsp | ssh -c arcfour -C username@host dd of=/dev/dsp</p>
+</body>
+</html>

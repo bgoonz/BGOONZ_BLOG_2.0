@@ -1,14 +1,16 @@
-# WebAssembly.Module.exports()
+WebAssembly.Module.exports()
+============================
 
 The `WebAssembly.Module.exports()` function returns an array containing descriptions of all the declared exports of the given `Module`.
 
-## Syntax
+Syntax
+------
 
     WebAssembly.Module.exports(module)
 
 ### Parameters
 
-_module_  
+*module*  
 A [`WebAssembly.Module`](../module) object.
 
 ### Return value
@@ -19,7 +21,8 @@ An array containing objects representing the exported functions of the given mod
 
 If module is not a [`WebAssembly.Module`](../module) object instance, a [`TypeError`](../../typeerror) is thrown.
 
-## Examples
+Examples
+--------
 
 ### Using exports
 
@@ -58,12 +61,11 @@ The `exports[0]` output looks like this:
 
     { name: "exported_func", kind: "function" }
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#dom-module-exports">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
-<br/>
-
-<span class="small">#dom-module-exports</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>WebAssembly JavaScript Interface (WebAssembly JavaScript Interface)<br />
+</p><span class="small">#dom-module-exports</span></td></tr></tbody></table>
 
 `exports`
 
@@ -95,12 +97,12 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 
 7.0
 
-## See also
+See also
+--------
 
 -   [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
 -   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Module/exports" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Module/exports</a>

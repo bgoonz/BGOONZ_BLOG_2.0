@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2022-01-03" />
+  <title>title</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">title</h1>
+<p class="subtitle">subtitle</p>
+<p class="date">2022-01-03</p>
+</header>
+<hr />
+<p>title: Go</p>
+<p>prism_languages: [go, bash] weight: -3 tags: [Featured] category: C-like</p>
+<hr />
+<h2 id="getting-started">Getting started</h2>
+<h3 id="introduction">Introduction</h3>
+<p>{: .-intro}</p>
+<ul>
+<li><a href="https://tour.golang.org/welcome/1">A tour of Go</a> <em>(tour.golang.org)</em></li>
+<li><a href="https://repl.it/languages/go">Go repl</a> <em>(repl.it)</em></li>
+<li><a href="https://github.com/golang/go/wiki/">Golang wiki</a> <em>(github.com)</em></li>
+</ul>
+<h3 id="hello-world">Hello world</h3>
+<h4 id="hello.go">hello.go</h4>
+<p>{: .-file}</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">package</span> main</a>
+<a class="sourceLine" id="cb1-2" title="2"></a>
+<a class="sourceLine" id="cb1-3" title="3"><span class="kw">import</span> <span class="st">&quot;fmt&quot;</span></a>
+<a class="sourceLine" id="cb1-4" title="4"></a>
+<a class="sourceLine" id="cb1-5" title="5"><span class="kw">func</span> main() {</a>
+<a class="sourceLine" id="cb1-6" title="6">  message := greetMe(<span class="st">&quot;world&quot;</span>)</a>
+<a class="sourceLine" id="cb1-7" title="7">  fmt.Println(message)</a>
+<a class="sourceLine" id="cb1-8" title="8">}</a>
+<a class="sourceLine" id="cb1-9" title="9"></a>
+<a class="sourceLine" id="cb1-10" title="10"><span class="kw">func</span> greetMe(name <span class="dt">string</span>) <span class="dt">string</span> {</a>
+<a class="sourceLine" id="cb1-11" title="11">  <span class="kw">return</span> <span class="st">&quot;Hello, &quot;</span> + name + <span class="st">&quot;!&quot;</span></a>
+<a class="sourceLine" id="cb1-12" title="12">}</a></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb2-1" title="1">$ <span class="ex">go</span> build</a></code></pre></div>
+<p>Or try it out in the <a href="https://repl.it/languages/go">Go repl</a>, or <a href="https://tour.golang.org/welcome/1">A Tour of Go</a>.</p>
+<h3 id="variables">Variables</h3>
+<h4 id="variable-declaration">Variable declaration</h4>
+<div class="sourceCode" id="cb3"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">var</span> msg <span class="dt">string</span></a>
+<a class="sourceLine" id="cb3-2" title="2">msg = <span class="st">&quot;Hello&quot;</span></a></code></pre></div>
+<h4 id="shortcut-of-above-infers-type">Shortcut of above (Infers type)</h4>
+<div class="sourceCode" id="cb4"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb4-1" title="1">msg := <span class="st">&quot;Hello&quot;</span></a></code></pre></div>
+<h3 id="constants">Constants</h3>
+<div class="sourceCode" id="cb5"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">const</span> Phi = <span class="dv">1</span><span class="fl">.618</span></a>
+<a class="sourceLine" id="cb5-2" title="2"><span class="st">```js</span></a>
+<a class="sourceLine" id="cb5-3" title="3"></a>
+<a class="sourceLine" id="cb5-4" title="4"><span class="st">constants can be character, string, boolean, or numeric values.</span></a>
+<a class="sourceLine" id="cb5-5" title="5"></a>
+<a class="sourceLine" id="cb5-6" title="6"><span class="st">See: [Constants](https://tour.golang.org/basics/15)</span></a>
+<a class="sourceLine" id="cb5-7" title="7"></a>
+<a class="sourceLine" id="cb5-8" title="8"><span class="st">## Basic types</span></a>
+<a class="sourceLine" id="cb5-9" title="9"></a>
+<a class="sourceLine" id="cb5-10" title="10"><span class="st">### Strings</span></a>
+<a class="sourceLine" id="cb5-11" title="11"></a>
+<a class="sourceLine" id="cb5-12" title="12"><span class="st">```</span>go</a>
+<a class="sourceLine" id="cb5-13" title="13">str := <span class="st">&quot;Hello&quot;</span></a></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb6-1" title="1">str := <span class="st">`Multiline</span></a>
+<a class="sourceLine" id="cb6-2" title="2"><span class="st">string`</span></a></code></pre></div>
+<p>Strings are of type <code>string</code>.</p>
+<h3 id="numbers">Numbers</h3>
+<h4 id="typical-types">Typical types</h4>
+<div class="sourceCode" id="cb7"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb7-1" title="1">num := <span class="dv">3</span>          <span class="co">// int</span></a>
+<a class="sourceLine" id="cb7-2" title="2">num := <span class="dv">3</span>.         <span class="co">// float64</span></a>
+<a class="sourceLine" id="cb7-3" title="3">num := <span class="dv">3</span> + 4i     <span class="co">// complex128</span></a>
+<a class="sourceLine" id="cb7-4" title="4">num := <span class="dt">byte</span>(<span class="ch">&#39;a&#39;</span>)  <span class="co">// byte (alias for uint8)</span></a></code></pre></div>
+<h4 id="other-types">Other types</h4>
+<div class="sourceCode" id="cb8"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb8-1" title="1"><span class="kw">var</span> u <span class="dt">uint</span> = <span class="dv">7</span>        <span class="co">// uint (unsigned)</span></a>
+<a class="sourceLine" id="cb8-2" title="2"><span class="kw">var</span> p <span class="dt">float32</span> = <span class="dv">22</span><span class="fl">.7</span>  <span class="co">// 32-bit float</span></a></code></pre></div>
+<h3 id="arrays">Arrays</h3>
+<div class="sourceCode" id="cb9"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb9-1" title="1"><span class="co">// var numbers [5]int</span></a>
+<a class="sourceLine" id="cb9-2" title="2">numbers := [...]<span class="dt">int</span>{<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>}</a></code></pre></div>
+<p>Arrays have a fixed size.</p>
+<h3 id="slices">Slices</h3>
+<div class="sourceCode" id="cb10"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb10-1" title="1">slice := []<span class="dt">int</span>{<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>}</a></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb11-1" title="1">slice := []<span class="dt">byte</span>(<span class="st">&quot;Hello&quot;</span>)</a></code></pre></div>
+<p>Slices have a dynamic size, unlike arrays.</p>
+<h3 id="pointers">Pointers</h3>
+<div class="sourceCode" id="cb12"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb12-1" title="1"><span class="kw">func</span> main () {</a>
+<a class="sourceLine" id="cb12-2" title="2">  b := *getPointer()</a>
+<a class="sourceLine" id="cb12-3" title="3">  fmt.Println(<span class="st">&quot;Value is&quot;</span>, b)</a>
+<a class="sourceLine" id="cb12-4" title="4">}</a></code></pre></div>
+<p>{: data-line=“2”}</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb13-1" title="1"><span class="kw">func</span> getPointer () (myPointer *<span class="dt">int</span>) {</a>
+<a class="sourceLine" id="cb13-2" title="2">  a := <span class="dv">234</span></a>
+<a class="sourceLine" id="cb13-3" title="3">  <span class="kw">return</span> &amp;a</a>
+<a class="sourceLine" id="cb13-4" title="4">}</a></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb14-1" title="1">a := <span class="bu">new</span>(<span class="dt">int</span>)</a>
+<a class="sourceLine" id="cb14-2" title="2">*a = <span class="dv">234</span></a></code></pre></div>
+<p>{: data-line=“2”}</p>
+<p>Pointers point to a memory location of a variable. Go is fully garbage-collected.</p>
+<p>See: <a href="https://tour.golang.org/moretypes/1">Pointers</a></p>
+<h3 id="type-conversions">Type conversions</h3>
+<div class="sourceCode" id="cb15"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb15-1" title="1">i := <span class="dv">2</span></a>
+<a class="sourceLine" id="cb15-2" title="2">f := <span class="dt">float64</span>(i)</a>
+<a class="sourceLine" id="cb15-3" title="3">u := <span class="dt">uint</span>(i)</a></code></pre></div>
+<p>See: <a href="https://tour.golang.org/basics/13">Type conversions</a></p>
+<h2 id="flow-control">Flow control</h2>
+<h3 id="conditional">Conditional</h3>
+<div class="sourceCode" id="cb16"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb16-1" title="1"><span class="kw">if</span> day == <span class="st">&quot;sunday&quot;</span> || day == <span class="st">&quot;saturday&quot;</span> {</a>
+<a class="sourceLine" id="cb16-2" title="2">  rest()</a>
+<a class="sourceLine" id="cb16-3" title="3">} <span class="kw">else</span> <span class="kw">if</span> day == <span class="st">&quot;monday&quot;</span> &amp;&amp; isTired() {</a>
+<a class="sourceLine" id="cb16-4" title="4">  groan()</a>
+<a class="sourceLine" id="cb16-5" title="5">} <span class="kw">else</span> {</a>
+<a class="sourceLine" id="cb16-6" title="6">  work()</a>
+<a class="sourceLine" id="cb16-7" title="7">}</a></code></pre></div>
+<p>{: data-line=“1,3,5”}</p>
+<p>See: <a href="https://tour.golang.org/flowcontrol/5">If</a></p>
+<h3 id="statements-in-if">Statements in if</h3>
+<div class="sourceCode" id="cb17"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb17-1" title="1"><span class="kw">if</span> _, err := doThing(); err != <span class="ot">nil</span> {</a>
+<a class="sourceLine" id="cb17-2" title="2">  fmt.Println(<span class="st">&quot;Uh oh&quot;</span>)</a>
+<a class="sourceLine" id="cb17-3" title="3">}</a></code></pre></div>
+<p>{: data-line=“1”}</p>
+<p>A condition in an <code>if</code> statement can be preceded with a statement before a <code>;</code>. Variables declared by the statement are only in scope until the end of the <code>if</code>.</p>
+<p>See: <a href="https://tour.golang.org/flowcontrol/6">If with a short statement</a></p>
+<h3 id="switch">Switch</h3>
+<div class="sourceCode" id="cb18"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb18-1" title="1"><span class="kw">switch</span> day {</a>
+<a class="sourceLine" id="cb18-2" title="2">  <span class="kw">case</span> <span class="st">&quot;sunday&quot;</span>:</a>
+<a class="sourceLine" id="cb18-3" title="3">    <span class="co">// cases don&#39;t &quot;fall through&quot; by default!</span></a>
+<a class="sourceLine" id="cb18-4" title="4">    <span class="kw">fallthrough</span></a>
+<a class="sourceLine" id="cb18-5" title="5"></a>
+<a class="sourceLine" id="cb18-6" title="6">  <span class="kw">case</span> <span class="st">&quot;saturday&quot;</span>:</a>
+<a class="sourceLine" id="cb18-7" title="7">    rest()</a>
+<a class="sourceLine" id="cb18-8" title="8"></a>
+<a class="sourceLine" id="cb18-9" title="9">  <span class="kw">default</span>:</a>
+<a class="sourceLine" id="cb18-10" title="10">    work()</a>
+<a class="sourceLine" id="cb18-11" title="11">}</a></code></pre></div>
+<p>See: <a href="https://github.com/golang/go/wiki/Switch">Switch</a></p>
+<h3 id="for-loop">For loop</h3>
+<div class="sourceCode" id="cb19"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb19-1" title="1"><span class="kw">for</span> count := <span class="dv">0</span>; count &lt;= <span class="dv">10</span>; count++ {</a>
+<a class="sourceLine" id="cb19-2" title="2">  fmt.Println(<span class="st">&quot;My counter is at&quot;</span>, count)</a>
+<a class="sourceLine" id="cb19-3" title="3">}</a></code></pre></div>
+<p>See: <a href="https://tour.golang.org/flowcontrol/1">For loops</a></p>
+<h3 id="for-range-loop">For-Range loop</h3>
+<div class="sourceCode" id="cb20"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb20-1" title="1">entry := []<span class="dt">string</span>{<span class="st">&quot;Jack&quot;</span>,<span class="st">&quot;John&quot;</span>,<span class="st">&quot;Jones&quot;</span>}</a>
+<a class="sourceLine" id="cb20-2" title="2"><span class="kw">for</span> i, val := <span class="kw">range</span> entry {</a>
+<a class="sourceLine" id="cb20-3" title="3">  fmt.Printf(<span class="st">&quot;At position %d, the character %s is present</span><span class="ch">\n</span><span class="st">&quot;</span>, i, val)</a>
+<a class="sourceLine" id="cb20-4" title="4">}</a></code></pre></div>
+<p>See: <a href="https://gobyexample.com/range">For-Range loops</a></p>
+<h3 id="while-loop">While loop</h3>
+<div class="sourceCode" id="cb21"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb21-1" title="1">n := <span class="dv">0</span></a>
+<a class="sourceLine" id="cb21-2" title="2">x := <span class="dv">42</span></a>
+<a class="sourceLine" id="cb21-3" title="3"><span class="kw">for</span> n != x {</a>
+<a class="sourceLine" id="cb21-4" title="4">  n := guess()</a>
+<a class="sourceLine" id="cb21-5" title="5">}</a></code></pre></div>
+<p>See: <a href="https://tour.golang.org/flowcontrol/3">Go’s “while”</a></p>
+<h2 id="functions">Functions</h2>
+<h3 id="lambdas">Lambdas</h3>
+<div class="sourceCode" id="cb22"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb22-1" title="1">myfunc := <span class="kw">func</span>() <span class="dt">bool</span> {</a>
+<a class="sourceLine" id="cb22-2" title="2">  <span class="kw">return</span> x &gt; <span class="dv">10000</span></a>
+<a class="sourceLine" id="cb22-3" title="3">}</a></code></pre></div>
+<p>{: data-line=“1”}</p>
+<p>Functions are first class objects.</p>
+<h3 id="multiple-return-types">Multiple return types</h3>
+<div class="sourceCode" id="cb23"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb23-1" title="1">a, b := getMessage()</a></code></pre></div>
+<div class="sourceCode" id="cb24"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb24-1" title="1"><span class="kw">func</span> getMessage() (a <span class="dt">string</span>, b <span class="dt">string</span>) {</a>
+<a class="sourceLine" id="cb24-2" title="2">  <span class="kw">return</span> <span class="st">&quot;Hello&quot;</span>, <span class="st">&quot;World&quot;</span></a>
+<a class="sourceLine" id="cb24-3" title="3">}</a></code></pre></div>
+<p>{: data-line=“2”}</p>
+<h3 id="named-return-values">Named return values</h3>
+<div class="sourceCode" id="cb25"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb25-1" title="1"><span class="kw">func</span> split(sum <span class="dt">int</span>) (x, y <span class="dt">int</span>) {</a>
+<a class="sourceLine" id="cb25-2" title="2">  x = sum * <span class="dv">4</span> / <span class="dv">9</span></a>
+<a class="sourceLine" id="cb25-3" title="3">  y = sum - x</a>
+<a class="sourceLine" id="cb25-4" title="4">  <span class="kw">return</span></a>
+<a class="sourceLine" id="cb25-5" title="5">}</a></code></pre></div>
+<p>{: data-line=“4”}</p>
+<p>By defining the return value names in the signature, a <code>return</code> (no args) will return variables with those names.</p>
+<p>See: <a href="https://tour.golang.org/basics/7">Named return values</a></p>
+<h2 id="packages">Packages</h2>
+<h3 id="importing">Importing</h3>
+<div class="sourceCode" id="cb26"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb26-1" title="1"><span class="kw">import</span> <span class="st">&quot;fmt&quot;</span></a>
+<a class="sourceLine" id="cb26-2" title="2"><span class="kw">import</span> <span class="st">&quot;math/rand&quot;</span></a></code></pre></div>
+<div class="sourceCode" id="cb27"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb27-1" title="1"><span class="kw">import</span> (</a>
+<a class="sourceLine" id="cb27-2" title="2">  <span class="st">&quot;fmt&quot;</span>        <span class="co">// gives fmt.Println</span></a>
+<a class="sourceLine" id="cb27-3" title="3">  <span class="st">&quot;math/rand&quot;</span>  <span class="co">// gives rand.Intn</span></a>
+<a class="sourceLine" id="cb27-4" title="4">)</a></code></pre></div>
+<p>Both are the same.</p>
+<p>See: <a href="https://tour.golang.org/basics/1">Importing</a></p>
+<h3 id="aliases">Aliases</h3>
+<div class="sourceCode" id="cb28"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb28-1" title="1"><span class="kw">import</span> r <span class="st">&quot;math/rand&quot;</span></a></code></pre></div>
+<p>{: data-line=“1”}</p>
+<div class="sourceCode" id="cb29"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb29-1" title="1">r.Intn()</a></code></pre></div>
+<h3 id="exporting-names">Exporting names</h3>
+<div class="sourceCode" id="cb30"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb30-1" title="1"><span class="kw">func</span> Hello () {</a>
+<a class="sourceLine" id="cb30-2" title="2">  ···</a>
+<a class="sourceLine" id="cb30-3" title="3">}</a></code></pre></div>
+<p>Exported names begin with capital letters.</p>
+<p>See: <a href="https://tour.golang.org/basics/3">Exported names</a></p>
+<h3 id="packages-1">Packages</h3>
+<div class="sourceCode" id="cb31"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb31-1" title="1"><span class="kw">package</span> hello</a></code></pre></div>
+<p>Every package file has to start with <code>package</code>.</p>
+<h2 id="concurrency">Concurrency</h2>
+<h3 id="goroutines">Goroutines</h3>
+<div class="sourceCode" id="cb32"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb32-1" title="1"><span class="kw">func</span> main() {</a>
+<a class="sourceLine" id="cb32-2" title="2">  <span class="co">// A &quot;channel&quot;</span></a>
+<a class="sourceLine" id="cb32-3" title="3">  ch := <span class="bu">make</span>(<span class="kw">chan</span> <span class="dt">string</span>)</a>
+<a class="sourceLine" id="cb32-4" title="4"></a>
+<a class="sourceLine" id="cb32-5" title="5">  <span class="co">// Start concurrent routines</span></a>
+<a class="sourceLine" id="cb32-6" title="6">  <span class="kw">go</span> push(<span class="st">&quot;Moe&quot;</span>, ch)</a>
+<a class="sourceLine" id="cb32-7" title="7">  <span class="kw">go</span> push(<span class="st">&quot;Larry&quot;</span>, ch)</a>
+<a class="sourceLine" id="cb32-8" title="8">  <span class="kw">go</span> push(<span class="st">&quot;Curly&quot;</span>, ch)</a>
+<a class="sourceLine" id="cb32-9" title="9"></a>
+<a class="sourceLine" id="cb32-10" title="10">  <span class="co">// Read 3 results</span></a>
+<a class="sourceLine" id="cb32-11" title="11">  <span class="co">// (Since our goroutines are concurrent,</span></a>
+<a class="sourceLine" id="cb32-12" title="12">  <span class="co">// the order isn&#39;t guaranteed!)</span></a>
+<a class="sourceLine" id="cb32-13" title="13">  fmt.Println(&lt;-ch, &lt;-ch, &lt;-ch)</a>
+<a class="sourceLine" id="cb32-14" title="14">}</a></code></pre></div>
+<p>{: data-line=“3,6,7,8,13”}</p>
+<div class="sourceCode" id="cb33"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb33-1" title="1"><span class="kw">func</span> push(name <span class="dt">string</span>, ch <span class="kw">chan</span> <span class="dt">string</span>) {</a>
+<a class="sourceLine" id="cb33-2" title="2">  msg := <span class="st">&quot;Hey, &quot;</span> + name</a>
+<a class="sourceLine" id="cb33-3" title="3">  ch &lt;- msg</a>
+<a class="sourceLine" id="cb33-4" title="4">}</a></code></pre></div>
+<p>Channels are concurrency-safe communication objects, used in goroutines.</p>
+<p>See: <a href="https://tour.golang.org/concurrency/1">Goroutines</a>, <a href="https://tour.golang.org/concurrency/2">Channels</a></p>
+<h3 id="buffered-channels">Buffered channels</h3>
+<div class="sourceCode" id="cb34"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb34-1" title="1">ch := <span class="bu">make</span>(<span class="kw">chan</span> <span class="dt">int</span>, <span class="dv">2</span>)</a>
+<a class="sourceLine" id="cb34-2" title="2">ch &lt;- <span class="dv">1</span></a>
+<a class="sourceLine" id="cb34-3" title="3">ch &lt;- <span class="dv">2</span></a>
+<a class="sourceLine" id="cb34-4" title="4">ch &lt;- <span class="dv">3</span></a>
+<a class="sourceLine" id="cb34-5" title="5"><span class="co">// fatal error:</span></a>
+<a class="sourceLine" id="cb34-6" title="6"><span class="co">// all goroutines are asleep - deadlock!</span></a></code></pre></div>
+<p>{: data-line=“1”}</p>
+<p>Buffered channels limit the amount of messages it can keep.</p>
+<p>See: <a href="https://tour.golang.org/concurrency/3">Buffered channels</a></p>
+<h3 id="closing-channels">Closing channels</h3>
+<h4 id="closes-a-channel">Closes a channel</h4>
+<div class="sourceCode" id="cb35"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb35-1" title="1">ch &lt;- <span class="dv">1</span></a>
+<a class="sourceLine" id="cb35-2" title="2">ch &lt;- <span class="dv">2</span></a>
+<a class="sourceLine" id="cb35-3" title="3">ch &lt;- <span class="dv">3</span></a>
+<a class="sourceLine" id="cb35-4" title="4"><span class="bu">close</span>(ch)</a></code></pre></div>
+<p>{: data-line=“4”}</p>
+<h4 id="iterates-across-a-channel-until-its-closed">Iterates across a channel until its closed</h4>
+<div class="sourceCode" id="cb36"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb36-1" title="1"><span class="kw">for</span> i := <span class="kw">range</span> ch {</a>
+<a class="sourceLine" id="cb36-2" title="2">  ···</a>
+<a class="sourceLine" id="cb36-3" title="3">}</a></code></pre></div>
+<p>{: data-line=“1”}</p>
+<h4 id="closed-if-ok-false">Closed if <code>ok == false</code></h4>
+<div class="sourceCode" id="cb37"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb37-1" title="1">v, ok := &lt;- ch</a></code></pre></div>
+<p>See: <a href="https://tour.golang.org/concurrency/4">Range and close</a></p>
+<h3 id="waitgroup">WaitGroup</h3>
+<div class="sourceCode" id="cb38"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb38-1" title="1"><span class="kw">import</span> <span class="st">&quot;sync&quot;</span></a>
+<a class="sourceLine" id="cb38-2" title="2"></a>
+<a class="sourceLine" id="cb38-3" title="3"><span class="kw">func</span> main() {</a>
+<a class="sourceLine" id="cb38-4" title="4">  <span class="kw">var</span> wg sync.WaitGroup</a>
+<a class="sourceLine" id="cb38-5" title="5"></a>
+<a class="sourceLine" id="cb38-6" title="6">  <span class="kw">for</span> _, item := <span class="kw">range</span> itemList {</a>
+<a class="sourceLine" id="cb38-7" title="7">    <span class="co">// Increment WaitGroup Counter</span></a>
+<a class="sourceLine" id="cb38-8" title="8">    wg.Add(<span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb38-9" title="9">    <span class="kw">go</span> doOperation(item)</a>
+<a class="sourceLine" id="cb38-10" title="10">  }</a>
+<a class="sourceLine" id="cb38-11" title="11">  <span class="co">// Wait for goroutines to finish</span></a>
+<a class="sourceLine" id="cb38-12" title="12">  wg.Wait()</a>
+<a class="sourceLine" id="cb38-13" title="13"></a>
+<a class="sourceLine" id="cb38-14" title="14">}</a></code></pre></div>
+<p>{: data-line=“1,4,8,12”}</p>
+<div class="sourceCode" id="cb39"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb39-1" title="1"><span class="kw">func</span> doOperation(item <span class="dt">string</span>) {</a>
+<a class="sourceLine" id="cb39-2" title="2">  <span class="kw">defer</span> wg.Done()</a>
+<a class="sourceLine" id="cb39-3" title="3">  <span class="co">// do operation on item</span></a>
+<a class="sourceLine" id="cb39-4" title="4">  <span class="co">// ...</span></a>
+<a class="sourceLine" id="cb39-5" title="5">}</a></code></pre></div>
+<p>{: data-line=“2”}</p>
+<p>A WaitGroup waits for a collection of goroutines to finish. The main goroutine calls Add to set the number of goroutines to wait for. The goroutine calls <code>wg.Done()</code> when it finishes. See: <a href="https://golang.org/pkg/sync/#WaitGroup">WaitGroup</a></p>
+<h2 id="error-control">Error control</h2>
+<h3 id="defer">Defer</h3>
+<div class="sourceCode" id="cb40"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb40-1" title="1"><span class="kw">func</span> main() {</a>
+<a class="sourceLine" id="cb40-2" title="2">  <span class="kw">defer</span> fmt.Println(<span class="st">&quot;Done&quot;</span>)</a>
+<a class="sourceLine" id="cb40-3" title="3">  fmt.Println(<span class="st">&quot;Working...&quot;</span>)</a>
+<a class="sourceLine" id="cb40-4" title="4">}</a></code></pre></div>
+<p>{: data-line=“2”}</p>
+<p>Defers running a function until the surrounding function returns. The arguments are evaluated immediately, but the function call is not ran until later.</p>
+<p>See: <a href="https://blog.golang.org/defer-panic-and-recover">Defer, panic and recover</a></p>
+<h3 id="deferring-functions">Deferring functions</h3>
+<div class="sourceCode" id="cb41"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb41-1" title="1"><span class="kw">func</span> main() {</a>
+<a class="sourceLine" id="cb41-2" title="2">  <span class="kw">defer</span> <span class="kw">func</span>() {</a>
+<a class="sourceLine" id="cb41-3" title="3">    fmt.Println(<span class="st">&quot;Done&quot;</span>)</a>
+<a class="sourceLine" id="cb41-4" title="4">  }()</a>
+<a class="sourceLine" id="cb41-5" title="5">  fmt.Println(<span class="st">&quot;Working...&quot;</span>)</a>
+<a class="sourceLine" id="cb41-6" title="6">}</a></code></pre></div>
+<p>{: data-line=“2,3,4”}</p>
+<p>Lambdas are better suited for defer blocks.</p>
+<div class="sourceCode" id="cb42"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb42-1" title="1"><span class="kw">func</span> main() {</a>
+<a class="sourceLine" id="cb42-2" title="2">  <span class="kw">var</span> d = <span class="dt">int64</span>(<span class="dv">0</span>)</a>
+<a class="sourceLine" id="cb42-3" title="3">  <span class="kw">defer</span> <span class="kw">func</span>(d *<span class="dt">int64</span>) {</a>
+<a class="sourceLine" id="cb42-4" title="4">    fmt.Printf(<span class="st">&quot;&amp; %v Unix Sec</span><span class="ch">\n</span><span class="st">&quot;</span>, *d)</a>
+<a class="sourceLine" id="cb42-5" title="5">  }(&amp;d)</a>
+<a class="sourceLine" id="cb42-6" title="6">  fmt.Print(<span class="st">&quot;Done &quot;</span>)</a>
+<a class="sourceLine" id="cb42-7" title="7">  d = time.Now().Unix()</a>
+<a class="sourceLine" id="cb42-8" title="8">}</a></code></pre></div>
+<p>{: data-line=“3,4,5”} The defer func uses current value of d, unless we use a pointer to get final value at end of main.</p>
+<h2 id="structs">Structs</h2>
+<h3 id="defining">Defining</h3>
+<div class="sourceCode" id="cb43"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb43-1" title="1"><span class="kw">type</span> Vertex <span class="kw">struct</span> {</a>
+<a class="sourceLine" id="cb43-2" title="2">  X <span class="dt">int</span></a>
+<a class="sourceLine" id="cb43-3" title="3">  Y <span class="dt">int</span></a>
+<a class="sourceLine" id="cb43-4" title="4">}</a></code></pre></div>
+<p>{: data-line=“1,2,3,4”}</p>
+<div class="sourceCode" id="cb44"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb44-1" title="1"><span class="kw">func</span> main() {</a>
+<a class="sourceLine" id="cb44-2" title="2">  v := Vertex{<span class="dv">1</span>, <span class="dv">2</span>}</a>
+<a class="sourceLine" id="cb44-3" title="3">  v.X = <span class="dv">4</span></a>
+<a class="sourceLine" id="cb44-4" title="4">  fmt.Println(v.X, v.Y)</a>
+<a class="sourceLine" id="cb44-5" title="5">}</a></code></pre></div>
+<p>See: <a href="https://tour.golang.org/moretypes/2">Structs</a></p>
+<h3 id="literals">Literals</h3>
+<div class="sourceCode" id="cb45"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb45-1" title="1">v := Vertex{X: <span class="dv">1</span>, Y: <span class="dv">2</span>}</a></code></pre></div>
+<div class="sourceCode" id="cb46"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb46-1" title="1"><span class="co">// Field names can be omitted</span></a>
+<a class="sourceLine" id="cb46-2" title="2">v := Vertex{<span class="dv">1</span>, <span class="dv">2</span>}</a></code></pre></div>
+<div class="sourceCode" id="cb47"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb47-1" title="1"><span class="co">// Y is implicit</span></a>
+<a class="sourceLine" id="cb47-2" title="2">v := Vertex{X: <span class="dv">1</span>}</a></code></pre></div>
+<p>You can also put field names.</p>
+<h3 id="pointers-to-structs">Pointers to structs</h3>
+<div class="sourceCode" id="cb48"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb48-1" title="1">v := &amp;Vertex{<span class="dv">1</span>, <span class="dv">2</span>}</a>
+<a class="sourceLine" id="cb48-2" title="2">v.X = <span class="dv">2</span></a></code></pre></div>
+<p>Doing <code>v.X</code> is the same as doing <code>(*v).X</code>, when <code>v</code> is a pointer.</p>
+<h2 id="methods">Methods</h2>
+<h3 id="receivers">Receivers</h3>
+<div class="sourceCode" id="cb49"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb49-1" title="1"><span class="kw">type</span> Vertex <span class="kw">struct</span> {</a>
+<a class="sourceLine" id="cb49-2" title="2">  X, Y <span class="dt">float64</span></a>
+<a class="sourceLine" id="cb49-3" title="3">}</a></code></pre></div>
+<div class="sourceCode" id="cb50"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb50-1" title="1"><span class="kw">func</span> (v Vertex) Abs() <span class="dt">float64</span> {</a>
+<a class="sourceLine" id="cb50-2" title="2">  <span class="kw">return</span> math.Sqrt(v.X * v.X + v.Y * v.Y)</a>
+<a class="sourceLine" id="cb50-3" title="3">}</a></code></pre></div>
+<p>{: data-line=“1”}</p>
+<div class="sourceCode" id="cb51"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb51-1" title="1">v := Vertex{<span class="dv">1</span>, <span class="dv">2</span>}</a>
+<a class="sourceLine" id="cb51-2" title="2">v.Abs()</a></code></pre></div>
+<p>There are no classes, but you can define functions with <em>receivers</em>.</p>
+<p>See: <a href="https://tour.golang.org/methods/1">Methods</a></p>
+<h3 id="mutation">Mutation</h3>
+<div class="sourceCode" id="cb52"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb52-1" title="1"><span class="kw">func</span> (v *Vertex) Scale(f <span class="dt">float64</span>) {</a>
+<a class="sourceLine" id="cb52-2" title="2">  v.X = v.X * f</a>
+<a class="sourceLine" id="cb52-3" title="3">  v.Y = v.Y * f</a>
+<a class="sourceLine" id="cb52-4" title="4">}</a></code></pre></div>
+<p>{: data-line=“1”}</p>
+<div class="sourceCode" id="cb53"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb53-1" title="1">v := Vertex{<span class="dv">6</span>, <span class="dv">12</span>}</a>
+<a class="sourceLine" id="cb53-2" title="2">v.Scale(<span class="dv">0</span><span class="fl">.5</span>)</a>
+<a class="sourceLine" id="cb53-3" title="3"><span class="co">// `v` is updated</span></a></code></pre></div>
+<p>By defining your receiver as a pointer (<code>*Vertex</code>), you can do mutations.</p>
+<p>See: <a href="https://tour.golang.org/methods/4">Pointer receivers</a></p>
+<h2 id="interfaces">Interfaces</h2>
+<h3 id="a-basic-interface">A basic interface</h3>
+<div class="sourceCode" id="cb54"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb54-1" title="1"><span class="kw">type</span> Shape <span class="kw">interface</span> {</a>
+<a class="sourceLine" id="cb54-2" title="2">  Area() <span class="dt">float64</span></a>
+<a class="sourceLine" id="cb54-3" title="3">  Perimeter() <span class="dt">float64</span></a>
+<a class="sourceLine" id="cb54-4" title="4">}</a></code></pre></div>
+<h3 id="struct">Struct</h3>
+<div class="sourceCode" id="cb55"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb55-1" title="1"><span class="kw">type</span> Rectangle <span class="kw">struct</span> {</a>
+<a class="sourceLine" id="cb55-2" title="2">  Length, Width <span class="dt">float64</span></a>
+<a class="sourceLine" id="cb55-3" title="3">}</a></code></pre></div>
+<p>Struct <code>Rectangle</code> implicitly implements interface <code>Shape</code> by implementing all of its methods.</p>
+<h3 id="methods-1">Methods</h3>
+<div class="sourceCode" id="cb56"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb56-1" title="1"><span class="kw">func</span> (r Rectangle) Area() <span class="dt">float64</span> {</a>
+<a class="sourceLine" id="cb56-2" title="2">  <span class="kw">return</span> r.Length * r.Width</a>
+<a class="sourceLine" id="cb56-3" title="3">}</a>
+<a class="sourceLine" id="cb56-4" title="4"></a>
+<a class="sourceLine" id="cb56-5" title="5"><span class="kw">func</span> (r Rectangle) Perimeter() <span class="dt">float64</span> {</a>
+<a class="sourceLine" id="cb56-6" title="6">  <span class="kw">return</span> <span class="dv">2</span> * (r.Length + r.Width)</a>
+<a class="sourceLine" id="cb56-7" title="7">}</a></code></pre></div>
+<p>The methods defined in <code>Shape</code> are implemented in <code>Rectangle</code>.</p>
+<h3 id="interface-example">Interface example</h3>
+<div class="sourceCode" id="cb57"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb57-1" title="1"><span class="kw">func</span> main() {</a>
+<a class="sourceLine" id="cb57-2" title="2">  <span class="kw">var</span> r Shape = Rectangle{Length: <span class="dv">3</span>, Width: <span class="dv">4</span>}</a>
+<a class="sourceLine" id="cb57-3" title="3">  fmt.Printf(<span class="st">&quot;Type of r: %T, Area: %v, Perimeter: %v.&quot;</span>, r, r.Area(), r.Perimeter())</a>
+<a class="sourceLine" id="cb57-4" title="4">}</a></code></pre></div>
+<h2 id="references">References</h2>
+<h3 id="official-resources">Official resources</h3>
+<ul>
+<li><a href="https://tour.golang.org/welcome/1">A tour of Go</a> <em>(tour.golang.org)</em></li>
+<li><a href="https://github.com/golang/go/wiki/">Golang wiki</a> <em>(github.com)</em></li>
+<li><a href="https://golang.org/doc/effective_go.html">Effective Go</a> <em>(golang.org)</em></li>
+</ul>
+<h3 id="other-links">Other links</h3>
+<p>{: .-intro}</p>
+<ul>
+<li><a href="https://gobyexample.com/">Go by Example</a> <em>(gobyexample.com)</em></li>
+<li><a href="https://awesome-go.com/">Awesome Go</a> <em>(awesome-go.com)</em></li>
+<li><a href="https://www.youtube.com/channel/UC_BzFbxG2za3bp5NRRRXJSw">JustForFunc Youtube</a> <em>(youtube.com)</em></li>
+<li><a href="https://github.com/golang/go/wiki/CodeReviewComments">Style Guide</a> <em>(github.com)</em></li>
+</ul>
+</body>
+</html>

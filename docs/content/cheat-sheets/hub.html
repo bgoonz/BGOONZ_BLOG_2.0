@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>hub</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h2 id="as-a-contributor-to-open-source">As a contributor to open-source</h2>
+<h1 id="clone-your-own-project">clone your own project</h1>
+<p>$ git clone dotfiles → git clone git://github.com/YOUR_USER/dotfiles.git</p>
+<h1 id="clone-another-project">clone another project</h1>
+<p>$ git clone github/hub → git clone git://github.com/github/hub.git</p>
+<h1 id="see-the-current-projects-issues">see the current project’s issues</h1>
+<p>$ git browse – issues → open https://github.com/github/hub/issues</p>
+<h1 id="open-another-projects-wiki">open another project’s wiki</h1>
+<p>$ git browse mojombo/jekyll wiki → open https://github.com/mojombo/jekyll/wiki</p>
+<h2 id="example-workflow-for-contributing-to-a-project">Example workflow for contributing to a project:</h2>
+<p>$ git clone github/hub $ cd hub</p>
+<h1 id="create-a-topic-branch">create a topic branch</h1>
+<p>$ git checkout -b feature → ( making changes … ) $ git commit -m “done with feature”</p>
+<h1 id="its-time-to-fork-the-repo">It’s time to fork the repo!</h1>
+<p>$ git fork → (forking repo on GitHub…) → git remote add YOUR_USER git://github.com/YOUR_USER/hub.git</p>
+<h1 id="push-the-changes-to-your-new-remote">push the changes to your new remote</h1>
+<p>$ git push YOUR_USER feature</p>
+<h1 id="open-a-pull-request-for-the-topic-branch-youve-just-pushed">open a pull request for the topic branch you’ve just pushed</h1>
+<p>$ git pull-request → (opens a text editor for your pull request message)</p>
+<h2 id="as-an-open-source-maintainer">As an open-source maintainer</h2>
+<h1 id="fetch-from-multiple-trusted-forks-even-if-they-dont-yet-exist-as-remotes">fetch from multiple trusted forks, even if they don’t yet exist as remotes</h1>
+<p>$ git fetch mislav,cehoffman → git remote add mislav git://github.com/mislav/hub.git → git remote add cehoffman git://github.com/cehoffman/hub.git → git fetch –multiple mislav cehoffman</p>
+<h1 id="check-out-a-pull-request-for-review">check out a pull request for review</h1>
+<p>$ git checkout https://github.com/github/hub/pull/134 → (creates a new branch with the contents of the pull request)</p>
+<h1 id="directly-apply-all-commits-from-a-pull-request-to-the-current-branch">directly apply all commits from a pull request to the current branch</h1>
+<p>$ git am -3 https://github.com/github/hub/pull/134</p>
+<h1 id="cherry-pick-a-github-url">cherry-pick a GitHub URL</h1>
+<p>$ git cherry-pick https://github.com/xoebus/hub/commit/177eeb8 → git remote add xoebus git://github.com/xoebus/hub.git → git fetch xoebus → git cherry-pick 177eeb8</p>
+<h1 id="am-can-be-better-than-cherry-pick-since-it-doesnt-create-a-remote"><code>am</code> can be better than cherry-pick since it doesn’t create a remote</h1>
+<p>$ git am https://github.com/xoebus/hub/commit/177eeb8</p>
+<h1 id="open-the-github-compare-view-between-two-releases">open the GitHub compare view between two releases</h1>
+<p>$ git compare v0.9..v1.0</p>
+<h1 id="put-compare-url-for-a-topic-branch-to-clipboard">put compare URL for a topic branch to clipboard</h1>
+<p>$ git compare -u feature | pbcopy</p>
+<h1 id="create-a-repo-for-a-new-project">create a repo for a new project</h1>
+<p>$ git init $ git add . &amp;&amp; git commit -m “It begins.” $ git create -d “My new thing” → (creates a new project on GitHub with the name of current directory) $ git push origin master</p>
+</body>
+</html>

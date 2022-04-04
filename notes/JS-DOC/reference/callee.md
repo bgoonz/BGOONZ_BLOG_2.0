@@ -1,10 +1,12 @@
-# arguments.callee
+arguments.callee
+================
 
 The `arguments.callee` property contains the currently executing function.
 
-## Description
+Description
+-----------
 
-`callee` is a property of the `arguments` object. It can be used to refer to the currently executing function inside the function body of that function. This is useful when the name of the function is unknown, such as within a function expression with no name (also called "anonymous functions").
+`callee` is a property of the `arguments` object. It can be used to refer to the currently executing function inside the function body of that function. This is useful when the name of the function is unknown, such as within a function expression with no name (also called “anonymous functions”).
 
 **Warning:** The 5th edition of ECMAScript (ES5) forbids use of `arguments.callee()` in [strict mode](../../strict_mode). Avoid using `arguments.callee()` by either giving function expressions a name or use a function declaration where a function must call itself.
 
@@ -65,15 +67,16 @@ Another feature that was deprecated was `arguments.callee.caller`, or more speci
 
     function f(a, b, c, d, e) { return a ? b * c : d * e; }
 
-If the JavaScript interpreter cannot guarantee that all the provided arguments are numbers at the point that the call is made, it needs to either insert checks for all the arguments before the inlined code, or it cannot inline the function. Now in this particular case a smart interpreter should be able to rearrange the checks to be more optimal and not check any values that would not be used. However in many cases that's just not possible and therefore it becomes impossible to inline.
+If the JavaScript interpreter cannot guarantee that all the provided arguments are numbers at the point that the call is made, it needs to either insert checks for all the arguments before the inlined code, or it cannot inline the function. Now in this particular case a smart interpreter should be able to rearrange the checks to be more optimal and not check any values that would not be used. However in many cases that’s just not possible and therefore it becomes impossible to inline.
 
-## Examples
+Examples
+--------
 
 ### Using `arguments.callee` in an anonymous recursive function
 
 A recursive function must be able to refer to itself. Typically, a function refers to itself by its name. However, an anonymous function (which can be created by a [function expression](../../operators/function) or the [`Function` constructor](../../global_objects/function)) does not have a name. Therefore if there is no accessible variable referring to it, the only way the function can refer to itself is by `arguments.callee`.
 
-The following example defines a function, which, in turn, defines and returns a factorial function. This example isn't very practical, and there are nearly no cases where the same result cannot be achieved with [named function expressions](../../operators/function).
+The following example defines a function, which, in turn, defines and returns a factorial function. This example isn’t very practical, and there are nearly no cases where the same result cannot be achieved with [named function expressions](../../operators/function).
 
     function create() {
        return function(n) {
@@ -99,12 +102,11 @@ However, in a case like the following, there are not alternatives to `arguments.
 
     john();
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-arguments-exotic-objects">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-arguments-exotic-objects</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-arguments-exotic-objects</span></td></tr></tbody></table>
 
 `callee`
 
@@ -132,7 +134,8 @@ However, in a case like the following, there are not alternatives to `arguments.
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`Function`](../../global_objects/function)
 

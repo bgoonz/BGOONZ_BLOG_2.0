@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>cant_assign_to_property</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="typeerror-cant-assign-to-property-x-on-y-not-an-object">TypeError: can’t assign to property “x” on “y”: not an object</h1>
+<p>The JavaScript strict mode exception “can’t assign to property” occurs when attempting to create a property on <a href="https://developer.mozilla.org/en-US/docs/Glossary/Primitive">primitive</a> value such as a <a href="https://developer.mozilla.org/en-US/docs/Glossary/Symbol">symbol</a>, a <a href="https://developer.mozilla.org/en-US/docs/Glossary/String">string</a>, a <a href="https://developer.mozilla.org/en-US/docs/Glossary/Number">number</a> or a <a href="https://developer.mozilla.org/en-US/docs/Glossary/Boolean">boolean</a>. <a href="https://developer.mozilla.org/en-US/docs/Glossary/Primitive">Primitive</a> values cannot hold any <a href="https://developer.mozilla.org/en-US/docs/Glossary/property/JavaScript">property</a>.</p>
+<h2 id="message">Message</h2>
+<pre><code>TypeError: can&#39;t assign to property &quot;x&quot; on {y}: not an object (Firefox)
+TypeError: Cannot create property &#39;x&#39; on {y} (Chrome)</code></pre>
+<h2 id="error-type">Error type</h2>
+<p><a href="../global_objects/typeerror"><code>TypeError</code></a>.</p>
+<h2 id="what-went-wrong">What went wrong?</h2>
+<p>In <a href="../strict_mode"><code>Strict_mode</code></a>, a <a href="../global_objects/typeerror"><code>TypeError</code></a> is raised when attempting to create a property on <a href="https://developer.mozilla.org/en-US/docs/Glossary/Primitive">primitive</a> value such as a <a href="https://developer.mozilla.org/en-US/docs/Glossary/Symbol">symbol</a>, a <a href="https://developer.mozilla.org/en-US/docs/Glossary/String">string</a>, a <a href="https://developer.mozilla.org/en-US/docs/Glossary/Number">number</a> or a <a href="https://developer.mozilla.org/en-US/docs/Glossary/Boolean">boolean</a>. <a href="https://developer.mozilla.org/en-US/docs/Glossary/Primitive">Primitive</a> values cannot hold any <a href="https://developer.mozilla.org/en-US/docs/Glossary/property/JavaScript">property</a>.</p>
+<p>The problem might be that an unexpected value is flowing at an unexpected place, or that an object variant of a <a href="../global_objects/string"><code>String</code></a> or a <a href="../global_objects/number"><code>Number</code></a> is expected.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="invalid-cases">Invalid cases</h3>
+<pre><code>&#39;use strict&#39;;
+
+var foo = &quot;my string&quot;;
+// The following line does nothing if not in strict mode.
+foo.bar = {}; // TypeError: can&#39;t assign to property &quot;bar&quot; on &quot;my string&quot;: not an object</code></pre>
+<h3 id="fixing-the-issue">Fixing the issue</h3>
+<p>Either fix the code to prevent the <a href="https://developer.mozilla.org/en-US/docs/Glossary/Primitive">primitive</a> from being used in such places, or fix the issue is to create the object equivalent <a href="../global_objects/object"><code>Object</code></a>.</p>
+<pre><code>&#39;use strict&#39;;
+
+var foo = new String(&quot;my string&quot;);
+foo.bar = {};</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../strict_mode"><code>Strict_mode</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Primitive">primitive</a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Cant_assign_to_property" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Cant_assign_to_property</a></p>
+</body>
+</html>

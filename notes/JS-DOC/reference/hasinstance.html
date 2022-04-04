@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>hasinstance</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="symbol.hasinstance">Symbol.hasInstance</h1>
+<p>The <code>Symbol.hasInstance</code> well-known symbol is used to determine if a constructor object recognizes an object as its instance. The <a href="../../operators/instanceof"><code>instanceof</code></a> operator’s behavior can be customized by this symbol.</p>
+<p>Property attributes of <code>Symbol.hasInstance</code></p>
+<p>Writable</p>
+<p>no</p>
+<p>Enumerable</p>
+<p>no</p>
+<p>Configurable</p>
+<p>no</p>
+<h2 id="examples">Examples</h2>
+<h3 id="custom-instanceof-behavior">Custom instanceof behavior</h3>
+<p>You could implement your custom <code>instanceof</code> behavior like this, for example:</p>
+<pre><code>class MyArray {
+  static [Symbol.hasInstance](instance) {
+    return Array.isArray(instance)
+  }
+}
+console.log([] instanceof MyArray); // true
+
+function MyArray() { }
+Object.defineProperty(MyArray, Symbol.hasInstance, {
+  value: function(instance) { return Array.isArray(instance); }
+});
+console.log([] instanceof MyArray); // true</code></pre>
+<h3 id="checking-the-instance-of-an-object">Checking the instance of an object</h3>
+<p>Just in the same manner at which you can check if an object is an instance of a class using the <code>instanceof</code> keyword, we can also use <code>Symbol.hasInstance</code> for such checks also.</p>
+<pre><code>class Animal {
+  constructor() {}
+}
+
+const cat = new Animal();
+
+console.log(Animal[Symbol.hasInstance](cat)); // true</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-symbol.hasinstance">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-symbol.hasinstance</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>hasInstance</code></p>
+<p>50</p>
+<p>15</p>
+<p>50</p>
+<p>No</p>
+<p>37</p>
+<p>10</p>
+<p>50</p>
+<p>50</p>
+<p>50</p>
+<p>37</p>
+<p>10</p>
+<p>5.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../../operators/instanceof"><code>instanceof</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/hasInstance" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/hasInstance</a></p>
+</body>
+</html>

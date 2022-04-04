@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>splice</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="array.prototype.splice">Array.prototype.splice()</h1>
+<p>The <code>splice()</code> method changes the contents of an array by removing or replacing existing elements and/or adding new elements <a href="https://en.wikipedia.org/wiki/In-place_algorithm">in place</a>.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>splice(start)
+splice(start, deleteCount)
+splice(start, deleteCount, item1)
+splice(start, deleteCount, item1, item2, itemN)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>start</code><br />
+The index at which to start changing the array.</p>
+<p>If greater than the length of the array, <code>start</code> will be set to the length of the array. In this case, no element will be deleted but the method will behave as an adding function, adding as many element as item[n*] provided.</p>
+<p>If negative, it will begin that many elements from the end of the array. (In this case, the origin <code>-1</code>, meaning <code>-n</code> is the index of the <code>n</code><sup>th</sup> last element, and is therefore equivalent to the index of <code>array.length - n</code>.) If <code>array.length + start</code> is less than <code>0</code>, it will begin from index <code>0</code>.</p>
+<p><code>deleteCount</code> <span class="badge inline optional">Optional</span><br />
+An integer indicating the number of elements in the array to remove from <code>start</code>.</p>
+<p>If <code>deleteCount</code> is omitted, or if its value is equal to or larger than <code>array.length - start</code> (that is, if it is equal to or greater than the number of elements left in the array, starting at <code>start</code>), then all the elements from <code>start</code> to the end of the array will be deleted.</p>
+<p>If <code>deleteCount</code> is <code>0</code> or negative, no elements are removed. In this case, you should specify at least one new element (see below).</p>
+<p><code>item1, item2, ...</code> <span class="badge inline optional">Optional</span><br />
+The elements to add to the array, beginning from <code>start</code>. If you do not specify any elements, <code>splice()</code> will only remove elements from the array.</p>
+<h3 id="return-value">Return value</h3>
+<p>An array containing the deleted elements.</p>
+<p>If only one element is removed, an array of one element is returned.</p>
+<p>If no elements are removed, an empty array is returned.</p>
+<h2 id="description">Description</h2>
+<p>If the specified number of elements to insert differs from the number of elements being removed, the array’s <code>length</code> will be changed.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="remove-0-zero-elements-before-index-2-and-insert-drum">Remove 0 (zero) elements before index 2, and insert “drum”</h3>
+<pre><code>let myFish = [&#39;angel&#39;, &#39;clown&#39;, &#39;mandarin&#39;, &#39;sturgeon&#39;]
+let removed = myFish.splice(2, 0, &#39;drum&#39;)
+
+// myFish is [&quot;angel&quot;, &quot;clown&quot;, &quot;drum&quot;, &quot;mandarin&quot;, &quot;sturgeon&quot;]
+// removed is [], no elements removed</code></pre>
+<h3 id="remove-0-zero-elements-before-index-2-and-insert-drum-and-guitar">Remove 0 (zero) elements before index 2, and insert “drum” and “guitar”</h3>
+<pre><code>let myFish = [&#39;angel&#39;, &#39;clown&#39;, &#39;mandarin&#39;, &#39;sturgeon&#39;]
+let removed = myFish.splice(2, 0, &#39;drum&#39;, &#39;guitar&#39;)
+
+// myFish is [&quot;angel&quot;, &quot;clown&quot;, &quot;drum&quot;, &quot;guitar&quot;, &quot;mandarin&quot;, &quot;sturgeon&quot;]
+// removed is [], no elements removed</code></pre>
+<h3 id="remove-1-element-at-index-3">Remove 1 element at index 3</h3>
+<pre><code>let myFish = [&#39;angel&#39;, &#39;clown&#39;, &#39;drum&#39;, &#39;mandarin&#39;, &#39;sturgeon&#39;]
+let removed = myFish.splice(3, 1)
+
+// myFish is [&quot;angel&quot;, &quot;clown&quot;, &quot;drum&quot;, &quot;sturgeon&quot;]
+// removed is [&quot;mandarin&quot;]</code></pre>
+<h3 id="remove-1-element-at-index-2-and-insert-trumpet">Remove 1 element at index 2, and insert “trumpet”</h3>
+<pre><code>let myFish = [&#39;angel&#39;, &#39;clown&#39;, &#39;drum&#39;, &#39;sturgeon&#39;]
+let removed = myFish.splice(2, 1, &#39;trumpet&#39;)
+
+// myFish is [&quot;angel&quot;, &quot;clown&quot;, &quot;trumpet&quot;, &quot;sturgeon&quot;]
+// removed is [&quot;drum&quot;]</code></pre>
+<h3 id="remove-2-elements-from-index-0-and-insert-parrot-anemone-and-blue">Remove 2 elements from index 0, and insert “parrot”, “anemone” and “blue”</h3>
+<pre><code>let myFish = [&#39;angel&#39;, &#39;clown&#39;, &#39;trumpet&#39;, &#39;sturgeon&#39;]
+let removed = myFish.splice(0, 2, &#39;parrot&#39;, &#39;anemone&#39;, &#39;blue&#39;)
+
+// myFish is [&quot;parrot&quot;, &quot;anemone&quot;, &quot;blue&quot;, &quot;trumpet&quot;, &quot;sturgeon&quot;]
+// removed is [&quot;angel&quot;, &quot;clown&quot;]</code></pre>
+<h3 id="remove-2-elements-starting-from-index-2">Remove 2 elements, starting from index 2</h3>
+<pre><code>let myFish = [&#39;parrot&#39;, &#39;anemone&#39;, &#39;blue&#39;, &#39;trumpet&#39;, &#39;sturgeon&#39;]
+let removed = myFish.splice(2, 2)
+
+// myFish is [&quot;parrot&quot;, &quot;anemone&quot;, &quot;sturgeon&quot;]
+// removed is [&quot;blue&quot;, &quot;trumpet&quot;]</code></pre>
+<h3 id="remove-1-element-from-index--2">Remove 1 element from index -2</h3>
+<pre><code>let myFish = [&#39;angel&#39;, &#39;clown&#39;, &#39;mandarin&#39;, &#39;sturgeon&#39;]
+let removed = myFish.splice(-2, 1)
+
+// myFish is [&quot;angel&quot;, &quot;clown&quot;, &quot;sturgeon&quot;]
+// removed is [&quot;mandarin&quot;]</code></pre>
+<h3 id="remove-all-elements-starting-from-index-2">Remove all elements, starting from index 2</h3>
+<pre><code>let myFish = [&#39;angel&#39;, &#39;clown&#39;, &#39;mandarin&#39;, &#39;sturgeon&#39;]
+let removed = myFish.splice(2)
+
+// myFish is [&quot;angel&quot;, &quot;clown&quot;]
+// removed is [&quot;mandarin&quot;, &quot;sturgeon&quot;]</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-array.prototype.splice">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-array.prototype.splice</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>splice</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>5.5</p>
+<p>From Internet Explorer 5.5 through 8, all elements of the array will not be deleted if <code>deleteCount</code> is omitted. This behavior was fixed in Internet Explorer 9.</p>
+<p>4</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="push"><code>push()</code></a> / <a href="pop"><code>pop()</code></a>— add/remove elements from the end of the array</li>
+<li><a href="unshift"><code>unshift()</code></a> / <a href="shift"><code>shift()</code></a>— add/remove elements from the beginning of the array</li>
+<li><a href="concat"><code>concat()</code></a>— returns a new array comprised of this array joined with other array(s) and/or value(s)</li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice</a></p>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>networking_cheatsheet-2</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="networking_cheatsheet">networking_cheatsheet</h1>
+<p>Networking</p>
+<h3 id="transport">Transport</h3>
+<ol type="1">
+<li>UDP &gt;&gt; UDP is a connectionless protocol</li>
+<li>TCP is a connection-oriented protocol</li>
+</ol>
+<h3 id="dns-record-types">DNS Record Types</h3>
+<ol type="1">
+<li>SOA - Start of Authority record points to the primary authority for the domain we’re querying</li>
+<li>NS - Name Servers</li>
+</ol>
+<ul>
+<li>directory for devices and the IP addresses attached to them</li>
+<li>translate domain names into numerical IP addresses</li>
+</ul>
+<ol type="1">
+<li>A / AAAA - record that maps directly to an IP address</li>
+<li>CNAME - record that acts as an alias</li>
+<li>MX - Mail Exchanger - used for e-mail</li>
+</ol>
+<h3 id="network-hardware">Network Hardware</h3>
+<h4 id="router">Router</h4>
+<ul>
+<li>contains internal addresses of each device connected to router</li>
+<li>can join different networks, a feature switches and hubs cannot do</li>
+<li>performs NAT (network address translation)</li>
+<li>NAT allows router a single IP address</li>
+<li>router can direct traffic to the appropriate address</li>
+</ul>
+<h3 id="switch">Switch</h3>
+<ul>
+<li>contains the MAC (media access control) address of all - connected devices</li>
+<li>flood - send to ALL connected devices "</li>
+<li>forward - send to a particular device</li>
+<li>filter - drop data entirely</li>
+</ul>
+<h2 id="switch-1">Switch</h2>
+<ul>
+<li>no network management ,,,</li>
+<li>signal splitter</li>
+<li>duplicates data and broadcasts it to ALL connected devices</li>
+</ul>
+</body>
+</html>

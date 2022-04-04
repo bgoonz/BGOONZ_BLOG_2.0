@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>remainder</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="remainder">Remainder (%)</h1>
+<p>The remainder operator (<code>%</code>) returns the remainder left over when one operand is divided by a second operand. It always takes the sign of the dividend.</p>
+<p>Note that while in most languages, ‘%’ is a remainder operator, in some (e.g. <a href="https://en.wikipedia.org/wiki/Modulo_operation#In_programming_languages">Python, Perl</a>) it is a modulo operator. For positive values, the two are equivalent, but when the dividend and divisor are of different signs, they give different results. To obtain a modulo in JavaScript, in place of <code>a % n</code>, use <code>((a % n ) + n ) % n</code>.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>Operator: var1 % var2</code></pre>
+<h2 id="examples">Examples</h2>
+<h3 id="remainder-with-positive-dividend">Remainder with positive dividend</h3>
+<pre><code> 12 % 5  //  2
+ 1 % -2 //  1
+ 1 % 2  //  1
+ 2 % 3  //  2
+5.5 % 2 // 1.5</code></pre>
+<h3 id="remainder-with-negative-dividend">Remainder with negative dividend</h3>
+<pre><code>-12 % 5 // -2
+-1 % 2  // -1
+-4 % 2  // -0</code></pre>
+<h3 id="remainder-with-nan">Remainder with NaN</h3>
+<pre><code>NaN % 2 // NaN</code></pre>
+<h3 id="remainder-with-infinity">Remainder with Infinity</h3>
+<pre><code>Infinity % 2 // NaN
+Infinity % 0 // NaN
+Infinity % Infinity // NaN</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-multiplicative-operators">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-multiplicative-operators</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>Remainder</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="addition">Addition operator</a></li>
+<li><a href="subtraction">Subtraction operator</a></li>
+<li><a href="division">Division operator</a></li>
+<li><a href="multiplication">Multiplication operator</a></li>
+<li><a href="exponentiation">Exponentiation operator</a></li>
+<li><a href="increment">Increment operator</a></li>
+<li><a href="decrement">Decrement operator</a></li>
+<li><a href="unary_negation">Unary negation operator</a></li>
+<li><a href="unary_plus">Unary plus operator</a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder</a></p>
+</body>
+</html>

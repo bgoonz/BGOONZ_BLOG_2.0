@@ -1,8 +1,10 @@
-# Date.prototype.getUTCHours()
+Date.prototype.getUTCHours()
+============================
 
 The `getUTCHours()` method returns the hours in the specified date according to universal time.
 
-## Syntax
+Syntax
+------
 
     getUTCHours()
 
@@ -10,7 +12,8 @@ The `getUTCHours()` method returns the hours in the specified date according to 
 
 An integer number, between 0 and 23, representing the hours in the given date according to universal time.
 
-## Examples
+Examples
+--------
 
 ### Using getUTCHours()
 
@@ -19,12 +22,11 @@ The following example assigns the hours portion of the current time to the varia
     var today = new Date();
     var hours = today.getUTCHours();
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getutchours">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-date.prototype.getutchours</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-date.prototype.getutchours</span></td></tr></tbody></table>
 
 `getUTCHours`
 
@@ -52,7 +54,8 @@ The following example assigns the hours portion of the current time to the varia
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`Date.prototype.getHours()`](gethours)
 -   [`Date.prototype.setUTCHours()`](setutchours)

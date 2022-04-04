@@ -1,8 +1,10 @@
-# DataView.prototype.setBigUint64()
+DataView.prototype.setBigUint64()
+=================================
 
 The `setBigUint64()` method stores an unsigned 64-bit integer (unsigned long long) value at the specified byte offset from the start of the [`DataView`](../dataview).
 
-## Syntax
+Syntax
+------
 
     setBigUint64(byteOffset, value)
     setBigUint64(byteOffset, value, littleEndian)
@@ -27,7 +29,8 @@ littleEndian
 [`RangeError`](../rangeerror)  
 Thrown if the `byteOffset` is set such that it would store beyond the end of the view.
 
-## Examples
+Examples
+--------
 
 ### Using the `setBigUint64` method
 
@@ -36,14 +39,14 @@ Thrown if the `byteOffset` is set such that it would store beyond the end of the
     dataview.setBigUint64(0, 3n);
     dataview.getBigUint64(0); // 3n
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.setbiguint64">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-dataview.prototype.setbiguint64</span></td></tr></tbody></table>
 
-<span class="small">#sec-dataview.prototype.setbiguint64</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -99,7 +102,8 @@ No
 
 9.0
 
-## See also
+See also
+--------
 
 -   [`DataView`](../dataview)
 -   [`ArrayBuffer`](../arraybuffer)

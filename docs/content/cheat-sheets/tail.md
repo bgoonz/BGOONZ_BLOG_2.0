@@ -1,19 +1,24 @@
-# To show the last 10 lines of <file>:
+To show the last 10 lines of :
+==============================
 
-tail <file>
+tail
 
-# To show the last <number> lines of <file>:
+To show the last lines of :
+===========================
 
-tail -n <number> <file>
+tail -n
 
-# To show the last lines of <file> starting with <number>:
+To show the last lines of starting with :
+=========================================
 
-tail -n +<number> <file>
+tail -n +
 
-# To show the last <number> bytes of <file>:
+To show the last bytes of :
+===========================
 
-tail -c <number> <file>
+tail -c
 
-# To show the last 10 lines of <file> and to wait for <file> to grow:
+To show the last 10 lines of and to wait for to grow:
+=====================================================
 
-tail -f <file>
+tail -f

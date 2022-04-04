@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>unary_plus</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="unary-plus">Unary plus (+)</h1>
+<p>The unary plus operator (<code>+</code>) precedes its operand and evaluates to its operand but attempts to convert it into a number, if it isn’t already.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>Operator: +x</code></pre>
+<h2 id="description">Description</h2>
+<p>Although unary negation (<code>-</code>) also can convert non-numbers, unary plus is the fastest and preferred way of converting something into a number, because it does not perform any other operations on the number. It can convert string representations of integers and floats, as well as the non-string values <code>true</code>, <code>false</code>, and <code>null</code>. Integers in both decimal and hexadecimal (<code>0x</code>-prefixed) formats are supported. Negative numbers are supported (though not for hex). Using the operator on BigInt values throws a TypeError. If it cannot parse a particular value, it will evaluate to <a href="../global_objects/nan"><code>NaN</code></a>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="usage-with-numbers">Usage with numbers</h3>
+<pre><code>const x = 1;
+const y = -1;
+
+console.log(+x);
+// 1
+console.log(+y);
+// -1</code></pre>
+<h3 id="usage-with-non-numbers">Usage with non-numbers</h3>
+<pre><code>+true  // 1
++false // 0
++null  // 0
++function(val){ return val } // NaN
++1n    // throws TypeError: Cannot convert BigInt value to number</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-unary-plus-operator">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-unary-plus-operator</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>Unary_plus</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>4</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="addition">Addition operator</a></li>
+<li><a href="subtraction">Subtraction operator</a></li>
+<li><a href="division">Division operator</a></li>
+<li><a href="multiplication">Multiplication operator</a></li>
+<li><a href="remainder">Remainder operator</a></li>
+<li><a href="exponentiation">Exponentiation operator</a></li>
+<li><a href="increment">Increment operator</a></li>
+<li><a href="decrement">Decrement operator</a></li>
+<li><a href="unary_negation">Unary negation operator</a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Unary_plus" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Unary_plus</a></p>
+</body>
+</html>

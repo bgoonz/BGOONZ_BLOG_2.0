@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>What-Are-Bash-Aliases-And-Why-Should-You-Be-Using-Them</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="what-are-bash-aliases-and-why-should-you-be-using-them">What Are Bash Aliases And Why Should You Be Using Them!</h1>
+<p>A Bash alias is a method of supplementing or overriding Bash commands with new ones. Bash aliases make it easy for users to customize their…</p>
+<hr />
+<h3 id="what-are-bash-aliases-and-why-should-you-be-using-them-1">What Are Bash Aliases And Why Should You Be Using Them!</h3>
+<p>A Bash alias is a method of supplementing or overriding Bash commands with new ones. Bash aliases make it easy for users to customize their experience in a <a href="https://opensource.com/article/19/7/what-posix-richard-stallman-explains" class="markup--anchor markup--p-anchor">POSIX</a> terminal. They are often defined in <strong><span class="math inline"><em>H</em><em>O</em><em>M</em><em>E</em>/.<em>b</em><em>a</em><em>s</em><em>h</em><em>r</em><em>c</em> *  * <em>o</em><em>r</em> * *</span>HOME/bash_aliases</strong> (which must be loaded by <strong>$HOME/.bashrc</strong>).</p>
+<p>Most distributions add at least some popular aliases in the default <strong>.bashrc</strong> file of any new user account. These are simple ones to demonstrate the syntax of a Bash alias:</p>
+<pre><code>alias ls=&#39;ls -F&#39;
+alias ll=&#39;ls -lh&#39;</code></pre>
+<p>Not all distributions ship with pre-populated aliases, though. If you add aliases manually, then you must load them into your current Bash session:</p>
+<pre><code>$ source ~/.bashrc</code></pre>
+<p>Otherwise, you can close your terminal and re-open it so that it reloads its configuration file.</p>
+<p>With those aliases defined in your Bash initialization script, you can then type <strong>ll</strong> and get the results of <strong>ls -l</strong>, and when you type <strong>ls</strong> you get, instead of the output of plain old <a href="https://opensource.com/article/19/7/master-ls-command" class="markup--anchor markup--p-anchor">ls</a>.</p>
+<p>Those aliases are great to have, but they just scratch the surface of what’s possible. Here are the top 10 Bash aliases that, once you try them, you won’t be able to live without.</p>
+<h3 id="set-up-first">Set up first</h3>
+<p>Before beginning, create a file called <strong>~/.bash_aliases</strong>:</p>
+<pre><code>$ touch ~/.bash_aliases</code></pre>
+<p>Then, make sure that this code appears in your <strong>~/.bashrc</strong> file:</p>
+<pre><code>if [ -e $HOME/.bash_aliases ]; then
+    source $HOME/.bash_aliases
+fi</code></pre>
+<p>If you want to try any of the aliases in this article for yourself, enter them into your <strong>.bash_aliases</strong> file, and then load them into your Bash session with the <strong>source ~/.bashrc</strong> command.</p>
+<ul>
+<li><span id="75f5"><a href="https://opensource.com/article/19/7/bash-aliases" class="markup--anchor markup--li-anchor">source</a></span></li>
+</ul>
+<h3 id="heres-a-list-of-my-bash-aliases">Here’s a list of my bash aliases:</h3>
+<p>By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on <a href="https://medium.com/p/30a6cfafdfeb">July 6, 2021</a>.</p>
+<p><a href="https://medium.com/@bryanguner/what-are-bash-aliases-and-why-should-you-be-using-them-30a6cfafdfeb" class="p-canonical">Canonical link</a></p>
+<p>August 6, 2021.</p>
+</body>
+</html>

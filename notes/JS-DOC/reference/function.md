@@ -1,10 +1,12 @@
-# Function expression
+Function expression
+===================
 
 The `function` keyword can be used to define a function inside an expression.
 
 You can also define functions using the [`Function`](../global_objects/function/function) constructor and a [function declaration](../statements/function).
 
-## Syntax
+Syntax
+------
 
 The expression is not allowed at the start of a statement.
 
@@ -17,7 +19,7 @@ As of ES2015, you can also use [arrow functions](../functions/arrow_functions).
 ### Parameters
 
 `name` <span class="badge inline optional">Optional</span>  
-The function name. Can be omitted, in which case the function is _anonymous_. The name is only local to the function body.
+The function name. Can be omitted, in which case the function is *anonymous*. The name is only local to the function body.
 
 `paramN` <span class="badge inline optional">Optional</span>  
 The name of an argument to be passed to the function.
@@ -25,13 +27,14 @@ The name of an argument to be passed to the function.
 `statements` <span class="badge inline optional">Optional</span>  
 The statements which comprise the body of the function.
 
-## Description
+Description
+-----------
 
-A function expression is very similar to and has almost the same syntax as a function declaration (see [`function`](../statements/function) statement for details). The main difference between a function expression and a function declaration is the _function name_, which can be omitted in function expressions to create _anonymous_ functions. A function expression can be used as an [IIFE (Immediately Invoked Function Expression)](https://developer.mozilla.org/en-US/docs/Glossary/IIFE) which runs as soon as it is defined. See also the chapter about [functions](../functions) for more information.
+A function expression is very similar to and has almost the same syntax as a function declaration (see [`function`](../statements/function) statement for details). The main difference between a function expression and a function declaration is the *function name*, which can be omitted in function expressions to create *anonymous* functions. A function expression can be used as an [IIFE (Immediately Invoked Function Expression)](https://developer.mozilla.org/en-US/docs/Glossary/IIFE) which runs as soon as it is defined. See also the chapter about [functions](../functions) for more information.
 
 ### Function expression hoisting
 
-Function expressions in JavaScript are not hoisted, unlike [function declarations](../statements/function#function_declaration_hoisting). You can't use function expressions before you create them:
+Function expressions in JavaScript are not hoisted, unlike [function declarations](../statements/function#function_declaration_hoisting). You can’t use function expressions before you create them:
 
     console.log(notHoisted) // undefined
     //  even though the variable name is hoisted, the definition isn't. so it's undefined.
@@ -57,7 +60,7 @@ If you want to refer to the current function inside the function body, you need 
 
     math.factit(3) //3;2;1;
 
-The variable the function expression is assigned to will have a `name` property. The name doesn't change if it's assigned to a different variable. If function name is omitted, it will be the variable name (implicit name). If function name is present, it will be the function name (explicit name). This also applies to [`arrow functions`](../functions/arrow_functions) (arrows don't have a name so you can only give the variable an implicit name).
+The variable the function expression is assigned to will have a `name` property. The name doesn’t change if it’s assigned to a different variable. If function name is omitted, it will be the variable name (implicit name). If function name is present, it will be the function name (explicit name). This also applies to [`arrow functions`](../functions/arrow_functions) (arrows don’t have a name so you can only give the variable an implicit name).
 
     var foo = function() {}
     foo.name // "foo"
@@ -72,7 +75,8 @@ The variable the function expression is assigned to will have a `name` property.
     console.log(typeof baz); // undefined
     console.log(bar === baz); // false (errors because baz == undefined)
 
-## Examples
+Examples
+--------
 
 ### Creating an unnamed function
 
@@ -104,12 +108,11 @@ An anonymous function is created and called:
       console.log('Code runs!')
     }();
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-function-definitions">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-function-definitions</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-function-definitions</span></td></tr></tbody></table>
 
 `function`
 
@@ -163,7 +166,8 @@ No
 
 7.0
 
-## See also
+See also
+--------
 
 -   [Arrow functions](../functions/arrow_functions)
 -   [Functions and function scope](../functions)
@@ -175,6 +179,5 @@ No
 -   [async function](../statements/async_function)
 -   [async function expression](async_function)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function</a>

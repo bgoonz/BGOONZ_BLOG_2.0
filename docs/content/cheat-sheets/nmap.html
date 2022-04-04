@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>nmap</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="single-target-scan">Single target scan:</h1>
+<p>nmap [target]</p>
+<h1 id="scan-from-a-list-of-targets">Scan from a list of targets:</h1>
+<p>nmap -iL [list.txt]</p>
+<h1 id="ipv6">iPv6:</h1>
+<p>nmap -6 [target]</p>
+<h1 id="os-detection">OS detection:</h1>
+<p>nmap -O –osscan_guess [target]</p>
+<h1 id="save-output-to-text-file">Save output to text file:</h1>
+<p>nmap -oN [output.txt] [target]</p>
+<h1 id="save-output-to-xml-file">Save output to xml file:</h1>
+<p>nmap -oX [output.xml] [target]</p>
+<h1 id="scan-a-specific-port">Scan a specific port:</h1>
+<p>nmap -source-port [port] [target]</p>
+<h1 id="do-an-aggressive-scan">Do an aggressive scan:</h1>
+<p>nmap -A [target]</p>
+<h1 id="speedup-your-scan">Speedup your scan:</h1>
+<h1 id="n-disable-reversedns">-n =&gt; disable ReverseDNS</h1>
+<h1 id="min-ratex-min-x-packets-sec">–min-rate=X =&gt; min X packets / sec</h1>
+<p>nmap -T5 –min-parallelism=50 -n –min-rate=300 [target]</p>
+<h1 id="traceroute">Traceroute:</h1>
+<p>nmap -traceroute [target]</p>
+<h1 id="ping-scan-only--sp">Ping scan only: -sP</h1>
+<h1 id="dont-ping--pn---use-full-if-a-host-dont-reply-to-a-ping.">Don’t ping: -PN &lt;- Use full if a host don’t reply to a ping.</h1>
+<h1 id="tcp-syn-ping--ps">TCP SYN ping: -PS</h1>
+<h1 id="tcp-ack-ping--pa">TCP ACK ping: -PA</h1>
+<h1 id="udp-ping--pu">UDP ping: -PU</h1>
+<h1 id="arp-ping--pr">ARP ping: -PR</h1>
+<h1 id="example-ping-scan-all-machines-on-a-class-c-network">Example: Ping scan all machines on a class C network</h1>
+<p>nmap -sP 192.168.0.0/24</p>
+<h1 id="force-tcp-scan--st">Force TCP scan: -sT</h1>
+<h1 id="force-udp-scan--su">Force UDP scan: -sU</h1>
+<h1 id="use-some-script">Use some script:</h1>
+<p>nmap –script default,safe</p>
+<h1 id="loads-the-script-in-the-default-category-the-banner-script-and-all-.nse-files-in-the-directory-homeusercustomscripts.">Loads the script in the default category, the banner script, and all .nse files in the directory /home/user/customscripts.</h1>
+<p>nmap –script default,banner,/home/user/customscripts</p>
+<h1 id="loads-all-scripts-whose-name-starts-with-http--such-as-http-auth-and-http-open-proxy.">Loads all scripts whose name starts with http-, such as http-auth and http-open-proxy.</h1>
+<p>nmap –script ‘http-*’</p>
+<h1 id="loads-every-script-except-for-those-in-the-intrusive-category.">Loads every script except for those in the intrusive category.</h1>
+<p>nmap –script “not intrusive”</p>
+<h1 id="loads-those-scripts-that-are-in-both-the-default-and-safe-categories.">Loads those scripts that are in both the default and safe categories.</h1>
+<p>nmap –script “default and safe”</p>
+<h1 id="loads-scripts-in-the-default-safe-or-intrusive-categories-except-for-those-whose-names-start-with-http-.">Loads scripts in the default, safe, or intrusive categories, except for those whose names start with http-.</h1>
+<p>nmap –script “(default or safe or intrusive) and not http-*”</p>
+<h1 id="scan-for-the-heartbleed">Scan for the heartbleed</h1>
+<h1 id="pt443-scan-only-port-443-with-tcp-t">-pT:443 =&gt; Scan only port 443 with TCP (T:)</h1>
+<p>nmap -T5 –min-parallelism=50 -n –script “ssl-heartbleed” -pT:443 127.0.0.1</p>
+<h1 id="show-all-informations-debug-mode">Show all informations (debug mode)</h1>
+<p>nmap -d …</p>
+<h2 id="port-status-information">Port Status Information</h2>
+<ul>
+<li>Open: This indicates that an application is listening for connections on this port.</li>
+<li>Closed: This indicates that the probes were received but there is no application listening on this port.</li>
+<li>Filtered: This indicates that the probes were not received and the state could not be established. It also indicates that the probes are being dropped by some kind of filtering.</li>
+<li>Unfiltered: This indicates that the probes were received but a state could not be established.</li>
+<li>Open/Filtered: This indicates that the port was filtered or open but Nmap couldn’t establish the state.</li>
+<li>Closed/Filtered: This indicates that the port was filtered or closed but Nmap couldn’t establish the state.</li>
+</ul>
+<h2 id="additional-scan-types">Additional Scan Types</h2>
+<p>nmap -sn: Probe only (host discovery, not port scan) nmap -sS: SYN Scan nmap -sT: TCP Connect Scan nmap -sU: UDP Scan nmap -sV: Version Scan nmap -O: Used for OS Detection/fingerprinting nmap –scanflags: Sets custom list of TCP using <code>URG ACK PSH RST SYN FIN</code> in any order</p>
+<h3 id="nmap-scripting-engine-categories">Nmap Scripting Engine Categories</h3>
+<p>The most common Nmap scripting engine categories:</p>
+<ul>
+<li>auth: Utilize credentials or bypass authentication on target hosts.</li>
+<li>broadcast: Discover hosts not included on command line by broadcasting on local network.</li>
+<li>brute: Attempt to guess passwords on target systems, for a variety of protocols, including http, SNMP, IAX, MySQL, VNC, etc.</li>
+<li>default: Scripts run automatically when -sC or -A are used.</li>
+<li>discovery: Try to learn more information about target hosts through public sources of information, SNMP, directory services, and more.</li>
+<li>dos: May cause denial of service conditions in target hosts.</li>
+<li>exploit: Attempt to exploit target systems.</li>
+<li>external: Interact with third-party systems not included in target list.</li>
+<li>fuzzer: Send unexpected input in network protocol fields.</li>
+<li>intrusive: May crash target, consume excessive resources, or otherwise impact target machines in a malicious fashion.</li>
+<li>malware: Look for signs of malware infection on the target hosts.</li>
+<li>safe: Designed not to impact target in a negative fashion.</li>
+<li>version: Measure the version of software or protocols on the target hosts.</li>
+<li>vul: Measure whether target systems have a known vulnerability.</li>
+</ul>
+</body>
+</html>

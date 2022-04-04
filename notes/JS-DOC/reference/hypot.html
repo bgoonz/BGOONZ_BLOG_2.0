@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>hypot</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="math.hypot">Math.hypot()</h1>
+<p>The <code>Math.hypot()</code> function returns the square root of the sum of squares of its arguments, that is:</p>
+<p><br /><span class="math display">$$\\mathtt{\\operatorname{Math.hypot}(v\_{1},v\_{2},\\ldots,v\_{n})} = \\sqrt{\\sum\\limits\_{i = 1}^{n}v\_{i}^{2}} = \\sqrt{v\_{1}^{2} + v\_{2}^{2} + \\ldots + v\_{n}^{2}}$$</span><br /></p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>Math.hypot()
+Math.hypot(value0)
+Math.hypot(value0, value1)
+Math.hypot(value0, value1, ... , valueN)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>value1, value2, ...</code><br />
+Numbers.</p>
+<h3 id="return-value">Return value</h3>
+<p>The square root of the sum of squares of the given arguments. If at least one of the arguments cannot be converted to a number, <a href="../nan"><code>NaN</code></a> is returned.</p>
+<h2 id="description">Description</h2>
+<p>Calculating the hypotenuse of a right triangle, or the magnitude of a complex number, uses the formula <code>Math.sqrt(v1*v1 + v2*v2)</code>, where v1 and v2 are the lengths of the triangle’s legs, or the complex number’s real and complex components. The corresponding distance in 2 or more dimensions can be calculated by adding more squares under the square root: <code>Math.sqrt(v1*v1 + v2*v2 + v3*v3 + v4*v4)</code>.</p>
+<p>This function makes this calculation easier and faster; you call <code>Math.hypot(v1, v2)</code> , or <code>Math.hypot(v1, v2, v3, v4, ...)</code>.</p>
+<p><code>Math.hypot</code> also avoids overflow/underflow problems if the magnitude of your numbers is very large. The largest number you can represent in JS is <code>Number.MAX_VALUE</code>, which is around 10<sup>308</sup>. If your numbers are larger than about 10<sup>154</sup>, taking the square of them will result in Infinity. For example, <code>Math.sqrt(1e200*1e200 + 1e200*1e200) = Infinity</code>. If you use <code>hypot()</code> instead, you get better answer: <code>Math.hypot(1e200, 1e200) = 1.4142...e+200</code> . This is also true with very small numbers. <code>Math.sqrt(1e-200*1e-200 + 1e-200*1e-200) = 0</code>, but <code>Math.hypot(1e-200, 1e-200) = 1.4142...e-200</code>.</p>
+<p>Because <code>hypot()</code> is a static method of <code>Math</code>, you always use it as <code>Math.hypot()</code>, rather than as a method of a <code>Math</code> object you created (<code>Math</code> is not a constructor).</p>
+<p>If no arguments are given, the result is +0. If any of the arguments is ±Infinity, the result is Infinity. If any of the arguments is NaN (unless another argument is ±Infinity), the result is NaN. If at least one of the arguments cannot be converted to a number, the result is <a href="../nan"><code>NaN</code></a>.</p>
+<p>With one argument, <code>Math.hypot()</code> is equivalent to <code>Math.abs()</code>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-math.hypot">Using Math.hypot()</h3>
+<pre><code>Math.hypot(3, 4);          // 5
+Math.hypot(3, 4, 5);       // 7.0710678118654755
+Math.hypot();              // 0
+Math.hypot(NaN);           // NaN
+Math.hypot(NaN, Infinity); // Infinity
+Math.hypot(3, 4, &#39;foo&#39;);   // NaN, since +&#39;foo&#39; =&gt; NaN
+Math.hypot(3, 4, &#39;5&#39;);     // 7.0710678118654755, +&#39;5&#39; =&gt; 5
+Math.hypot(-3);            // 3, the same as Math.abs(-3)</code></pre>
+<h2 id="polyfill">Polyfill</h2>
+<p>A naive approach that does not handle overflow/underflow issues:</p>
+<pre><code>if (!Math.hypot) Math.hypot = function() {
+  var y = 0, i = arguments.length, containsInfinity = false;
+  while (i--) {
+    var arg = arguments[i];
+    if (arg === Infinity || arg === -Infinity)
+      containsInfinity = true
+    y += arg * arg
+  }
+  return containsInfinity ? Infinity : Math.sqrt(y)
+}</code></pre>
+<p>A polyfill that avoids underflows and overflows:</p>
+<pre><code>if (!Math.hypot) Math.hypot = function () {
+  var max = 0;
+  var s = 0;
+  var containsInfinity = false;
+  for (var i = 0; i &lt; arguments.length; ++i) {
+    var arg = Math.abs(Number(arguments[i]));
+    if (arg === Infinity)
+      containsInfinity = true
+    if (arg &gt; max) {
+      s *= (max / arg) * (max / arg);
+      max = arg;
+    }
+    s += arg === 0 &amp;&amp; max === 0 ? 0 : (arg / max) * (arg / max);
+  }
+  return containsInfinity ? Infinity : (max === 1 / 0 ? 1 / 0 : max * Math.sqrt(s));
+};</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-math.hypot">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-math.hypot</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>hypot</code></p>
+<p>38</p>
+<p>12</p>
+<p>27</p>
+<p>No</p>
+<p>25</p>
+<p>8</p>
+<p>38</p>
+<p>38</p>
+<p>27</p>
+<p>25</p>
+<p>8</p>
+<p>3.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="abs"><code>Math.abs()</code></a></li>
+<li><a href="pow"><code>Math.pow()</code></a></li>
+<li><a href="sqrt"><code>Math.sqrt()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/hypot" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/hypot</a></p>
+</body>
+</html>

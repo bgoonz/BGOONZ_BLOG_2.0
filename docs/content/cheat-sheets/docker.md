@@ -1,67 +1,68 @@
----
-title: title
-subtitle: subtitle
-date: '2022-01-03'
-thumb_img_alt: lorem-ipsum
-content_img_alt: lorem-ipsum
-excerpt: lorem-ipsum
-seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
-template: post
-thumb_img_path: images/css-72a655a7.jpg
----
+subtitle
 
-# To start the docker daemon:
+2022-01-03
+
+To start the docker daemon:
+===========================
 
 docker -d
 
-# To start a container with an interactive shell:
+To start a container with an interactive shell:
+===============================================
 
-docker run -ti <image-name> /bin/bash
+docker run -ti /bin/bash
 
-# To "shell" into a running container (docker-1.3+):
+To “shell” into a running container (docker-1.3+):
+==================================================
 
-docker exec -ti <container-name> bash
+docker exec -ti bash
 
-# To inspect a running container:
+To inspect a running container:
+===============================
 
-docker inspect <container-name> (or <container-id>)
+docker inspect (or )
 
-# To get the process ID for a container:
+To get the process ID for a container:
+======================================
 
-docker inspect --format {{.State.Pid}} <container-name-or-id>
+docker inspect –format {{.State.Pid}}
 
-# To list (and pretty-print) the current mounted volumes for a container:
+To list (and pretty-print) the current mounted volumes for a container:
+=======================================================================
 
-docker inspect --format='{{json .Volumes}}' <container-id> | python -mjson.tool
+docker inspect –format=‘{{json .Volumes}}’ | python -mjson.tool
 
-# To copy files/folders between a container and your host:
+To copy files/folders between a container and your host:
+========================================================
 
 docker cp foo.txt mycontainer:/foo.txt
 
-# To list currently running containers:
+To list currently running containers:
+=====================================
 
 docker ps
 
-# To list all containers:
+To list all containers:
+=======================
 
 docker ps -a
 
-# To remove all stopped containers:
+To remove all stopped containers:
+=================================
 
 docker rm $(docker ps -qa)
 
-# To list all images:
+To list all images:
+===================
 
 docker images
 
-# To remove all untagged images:
+To remove all untagged images:
+==============================
 
-docker rmi $(docker images | grep "^<none>" | awk "{print $3}")
+docker rmi $(docker images | grep “^” | awk “{print $3}”)
 
-# To remove all volumes not used by at least one container:
+To remove all volumes not used by at least one container:
+=========================================================
 
 docker volume prune

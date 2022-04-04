@@ -1,4 +1,5 @@
-# GitHub | Netlify CMS | Open-Source Content Management System
+GitHub | Netlify CMS | Open-Source Content Management System
+============================================================
 
 > Open source content management for your Git workflow
 
@@ -11,19 +12,18 @@ To enable basic GitHub authentication:
 1.  Follow the authentication provider setup steps in the [Netlify docs](https://www.netlify.com/docs/authentication-providers/#using-an-authentication-provider).
 2.  Add the following lines to your Netlify CMS `config.yml` file:
 
-    backend:
-    name: github
-    repo: owner-name/repo-name
+    backend: name: github repo: owner-name/repo-name
 
-## [](#specifying-a-status-for-deploy-previews)Specifying a status for deploy previews
+[](#specifying-a-status-for-deploy-previews)Specifying a status for deploy previews
+-----------------------------------------------------------------------------------
 
-The GitHub backend supports [deploy preview links](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/deploy-preview-links). Netlify CMS checks the `context` of a commit's [statuses](https://help.github.com/articles/about-status-checks/) and infers one that seems to represent a deploy preview. If you need to customize this behavior, you can specify which context to look for using `preview_context`:
+The GitHub backend supports [deploy preview links](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/deploy-preview-links). Netlify CMS checks the `context` of a commit’s [statuses](https://help.github.com/articles/about-status-checks/) and infers one that seems to represent a deploy preview. If you need to customize this behavior, you can specify which context to look for using `preview_context`:
 
     backend:
       name: github
       repo: my/repo
       preview_context: my-provider/deployment
 
-The above configuration would look for the status who's `"context"` is `"my-provider/deployment"`.
+The above configuration would look for the status who’s `"context"` is `"my-provider/deployment"`.
 
 [Source](https://www.netlifycms.org/docs/github-backend/)

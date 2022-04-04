@@ -1,123 +1,78 @@
----
-title: Sinon
-category: JavaScript libraries
-
-weight: -1
----
-
 ### Creating spies
 
-```js
-fn = sinon.spy();
-fn();
-```
+    fn = sinon.spy();
+    fn();
 
-```js
-fn.calledOnce == true;
-fn.callCount == 1;
-```
+    fn.calledOnce == true;
+    fn.callCount == 1;
 
 ### Spying/stubbing
 
-```js
-sinon.spy($, 'ajax');
-```
+    sinon.spy($, 'ajax');
 
-```js
-$.ajax();
-$.ajax.calledOnce == true;
-```
+    $.ajax();
+    $.ajax.calledOnce == true;
 
-```js
-sinon.stub($, 'ajax', function () { ... }) // function optional
-```
+    sinon.stub($, 'ajax', function () { ... }) // function optional
 
-```js
-$.ajax.calledWithMatch({ url: '/x' });
-$.ajax.restore();
-```
+    $.ajax.calledWithMatch({ url: '/x' });
+    $.ajax.restore();
 
 ### Spy/stub properties
 
-```js
-spy.args.thisValues.returnValues; //=> [ [..], [..] ] one per call
-```
+    spy.args.thisValues.returnValues; //=> [ [..], [..] ] one per call
 
-```js
-  .called      //=> true
-  .notCalled
-  .callCount
-  .calledOnce
-  .calledTwice
-  .calledThrice
-```
+      .called      //=> true
+      .notCalled
+      .callCount
+      .calledOnce
+      .calledTwice
+      .calledThrice
 
-```js
-  .getCalls()   //=> Array
-  .getCall(0)
-  .firstCall
-```
+      .getCalls()   //=> Array
+      .getCall(0)
+      .firstCall
 
 ### Anonymous stub
 
-```js
-stub = sinon.stub().returns(42);
-stub() == 42;
-```
+    stub = sinon.stub().returns(42);
+    stub() == 42;
 
-```js
-stub.withArgs(42).returns(1).withArgs(43).throws('TypeError');
-```
+    stub.withArgs(42).returns(1).withArgs(43).throws('TypeError');
 
-```js
-stub.returns(1)
-    .throws('TypeError')
-    .returnsArg(0) // Return 1st argument
-    .callsArg(0);
-```
+    stub.returns(1)
+        .throws('TypeError')
+        .returnsArg(0) // Return 1st argument
+        .callsArg(0);
 
 ### Fake date
 
-```js
-sinon.useFakeTimers(+new Date(2011, 9, 1));
-```
+    sinon.useFakeTimers(+new Date(2011, 9, 1));
 
 ### Fake server
 
-```js
-server = sinon.fakeServer.create();
-```
+    server = sinon.fakeServer.create();
 
-```js
-$.get('/file.json', ...)
-server.requests[0].respond(
-  200,
-  { 'Content-Type': 'application/json' },
-  JSON.stringify({ hello: 'world' })
-)
-```
+    $.get('/file.json', ...)
+    server.requests[0].respond(
+      200,
+      { 'Content-Type': 'application/json' },
+      JSON.stringify({ hello: 'world' })
+    )
 
-```js
-server.restore();
-```
+    server.restore();
 
 ### Fake XHR
 
-```js
-xhr = sinon.useFakeXMLHttpRequest();
-xhr.restore();
-```
+    xhr = sinon.useFakeXMLHttpRequest();
+    xhr.restore();
 
 ### Sandbox
 
-```js
-beforeEach(function () {
-    global.sinon = require('sinon').sandbox.create();
-});
-```
+    beforeEach(function () {
+        global.sinon = require('sinon').sandbox.create();
+    });
 
-```js
-afterEach(function () {
-    global.sinon.restore();
-});
-```
+    afterEach(function () {
+        global.sinon.restore();
+    });

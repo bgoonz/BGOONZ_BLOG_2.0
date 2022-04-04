@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>hasindices</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="regexp.prototype.hasindices">RegExp.prototype.hasIndices</h1>
+<p>The <code>hasIndices</code> property indicates whether or not the “<code>d</code>” flag is used with the regular expression. <code>hasIndices</code> is a read-only property of an individual regular expression instance.</p>
+<p>Property attributes of <code>RegExp.prototype.hasIndices</code></p>
+<p>Writable</p>
+<p>no</p>
+<p>Enumerable</p>
+<p>no</p>
+<p>Configurable</p>
+<p>yes</p>
+<h2 id="description">Description</h2>
+<p>The value of <code>hasIndices</code> is a <a href="../boolean"><code>Boolean</code></a> and <code>true</code> if the “<code>d</code>” flag was used; otherwise, <code>false</code>. The “<code>d</code>” flag indicates that the result of a regular expression match should contain the start and end indices of the substrings of each capture group.</p>
+<p>You cannot change this property directly.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-hasindices">Using <code>hasIndices</code></h3>
+<pre><code>const str1 = &#39;foo bar foo&#39;;
+
+const regex1 = new RegExp(&#39;foo&#39;, &#39;gd&#39;);
+
+console.log(regex1.hasIndices); // Output: true
+
+console.log(regex1.exec(str1).indices[0]); // Output: Array [0, 3]
+console.log(regex1.exec(str1).indices[0]); // Output: Array [8, 11]
+
+const str2 = &#39;foo bar foo&#39;;
+
+const regex2 = new RegExp(&#39;foo&#39;);
+
+console.log(regex2.hasIndices); // Output: false
+
+console.log(regex2.exec(str2).indices); // Output: undefined</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-get-regexp.prototype.hasIndices">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-get-regexp.prototype.hasIndices</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>hasIndices</code></p>
+<p>90</p>
+<p>90</p>
+<p>88</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>90</p>
+<p>90</p>
+<p>88</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="lastindex"><code>RegExp.lastIndex</code></a></li>
+<li><a href="exec"><code>RegExp.prototype.exec()</code></a></li>
+<li><a href="dotall"><code>RegExp.prototype.dotAll</code></a></li>
+<li><a href="global"><code>RegExp.prototype.global</code></a></li>
+<li><a href="ignorecase"><code>RegExp.prototype.ignoreCase</code></a></li>
+<li><a href="multiline"><code>RegExp.prototype.multiline</code></a></li>
+<li><a href="source"><code>RegExp.prototype.source</code></a></li>
+<li><a href="sticky"><code>RegExp.prototype.sticky</code></a></li>
+<li><a href="unicode"><code>RegExp.prototype.unicode</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/hasIndices" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/hasIndices</a></p>
+</body>
+</html>

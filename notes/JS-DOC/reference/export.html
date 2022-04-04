@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>export</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="export">export</h1>
+<p>The <code>export</code> statement is used when creating JavaScript modules to export live bindings to functions, objects, or primitive values from the module so they can be used by other programs with the <a href="import"><code>import</code></a> statement. Bindings that are exported can still be modified locally; when imported, although they can only be read by the importing module the value updates whenever it is updated by the exporting module.</p>
+<p>Exported modules are in <a href="../strict_mode">strict mode</a> whether you declare them as such or not. The export statement cannot be used in embedded scripts.</p>
+<h2 id="syntax">Syntax</h2>
+<p>There are two types of exports:</p>
+<ol type="1">
+<li>Named Exports (Zero or more exports per module)</li>
+<li>Default Exports (One per module)</li>
+</ol>
+<!-- -->
+<pre><code>// Exporting individual features
+export let name1, name2, …, nameN; // also var, const
+export let name1 = …, name2 = …, …, nameN; // also var, const
+export function functionName(){...}
+export class ClassName {...}
+
+// Export list
+export { name1, name2, …, nameN };
+
+// Renaming exports
+export { variable1 as name1, variable2 as name2, …, nameN };
+
+// Exporting destructured assignments with renaming
+export const { name1, name2: bar } = o;
+
+// Default exports
+export default expression;
+export default function (…) { … } // also class, function*
+export default function name1(…) { … } // also class, function*
+export { name1 as default, … };
+
+// Aggregating modules
+export * from …; // does not set the default export
+export * as name1 from …; // Draft ECMAScript® 2O21
+export { name1, name2, …, nameN } from …;
+export { import1 as name1, import2 as name2, …, nameN } from …;
+export { default, … } from …;</code></pre>
+<p><code>nameN</code><br />
+Identifier to be exported (so that it can be imported via <a href="import"><code>import</code></a> in another script).</p>
+<h2 id="description">Description</h2>
+<p>There are two different types of export, <strong>named</strong> and <strong>default</strong>. You can have multiple named exports per module but only one default export. Each type corresponds to one of the above syntax:</p>
+<p>Named exports:</p>
+<pre><code>// export features declared earlier
+export { myFunction, myVariable };
+
+// export individual features (can export var, let,
+// const, function, class)
+export let myVariable = Math.sqrt(2);
+export function myFunction() { ... };</code></pre>
+<p>Default exports:</p>
+<pre><code>// export feature declared earlier as default
+export { myFunction as default };
+
+// export individual features as default
+export default function () { ... }
+export default class { .. }
+
+// each export overwrites the previous one</code></pre>
+<p>Named exports are useful to export several values. During the import, it is mandatory to use the same name of the corresponding object.</p>
+<p>But a default export can be imported with any name for example:</p>
+<pre><code>// file test.js
+let k; export default k = 12;
+
+// some other file
+import m from &#39;./test&#39;; // note that we have the freedom to use import m instead of import k, because k was default export
+console.log(m);        // will log 12</code></pre>
+<p>You can also rename named exports to avoid naming conflicts:</p>
+<pre><code>export { myFunction as function1,
+         myVariable as variable };</code></pre>
+<h3 id="re-exporting-aggregating">Re-exporting / Aggregating</h3>
+<p>It is also possible to “import/export” from different modules in a parent module so that they are available to import from that module. In other words, one can create a single module concentrating various exports from various modules.</p>
+<p>This can be achieved with the “export from” syntax:</p>
+<pre><code>export { default as function1,
+         function2 } from &#39;bar.js&#39;;</code></pre>
+<p>Which is comparable to a combination of import and export:</p>
+<pre><code>import { default as function1,
+         function2 } from &#39;bar.js&#39;;
+export { function1 as default, function2 };</code></pre>
+<p>But where <code>function1</code> and <code>function2</code> do not become available inside the current module.</p>
+<p><strong>Note:</strong> The following is syntactically invalid despite its import equivalent:</p>
+<pre><code>import DefaultExport from &#39;bar.js&#39;; // Valid
+
+export DefaultExport from &#39;bar.js&#39;; // Invalid</code></pre>
+<p>The correct way of doing this is to rename the export:</p>
+<pre><code>export { default as DefaultExport } from &#39;bar.js&#39;;</code></pre>
+<p>The “export from” syntax allows the <code>as</code> token to be omitted; however this will mean the default item cannot be imported as a named import:</p>
+<pre><code>export { default, function2 } from &#39;bar.js&#39;;</code></pre>
+<h2 id="examples">Examples</h2>
+<h3 id="using-named-exports">Using named exports</h3>
+<p>In a module <code>my-module.js</code>, we could include the following code:</p>
+<pre><code>// module &quot;my-module.js&quot;
+function cube(x) {
+  return x * x * x;
+}
+
+const foo = Math.PI + Math.SQRT2;
+
+var graph = {
+  options: {
+      color:&#39;white&#39;,
+      thickness:&#39;2px&#39;
+  },
+  draw: function() {
+      console.log(&#39;From graph draw function&#39;);
+  }
+}
+
+export { cube, foo, graph };</code></pre>
+<p>Then in the top-level module included in your HTML page, we could have:</p>
+<pre><code>import { cube, foo, graph } from &#39;./my-module.js&#39;;
+
+graph.options = {
+    color:&#39;blue&#39;,
+    thickness:&#39;3px&#39;
+};
+
+graph.draw();
+console.log(cube(3)); // 27
+console.log(foo);    // 4.555806215962888</code></pre>
+<p>It is important to note the following:</p>
+<ul>
+<li>You need to include this script in your HTML with a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script"><code>&lt;script&gt;</code></a> element of type=“module”, so that it gets recognized as a module and dealt with appropriately.</li>
+<li>You can’t run JS modules via a <code>file://</code> URL — you’ll get <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">CORS</a> errors. You need to run it via an HTTP server.</li>
+</ul>
+<h3 id="using-the-default-export">Using the default export</h3>
+<p>If we want to export a single value or to have a fallback value for your module, you could use a default export:</p>
+<pre><code>// module &quot;my-module.js&quot;
+
+export default function cube(x) {
+  return x * x * x;
+}</code></pre>
+<p>Then, in another script, it is straightforward to import the default export:</p>
+<pre><code>import cube from &#39;./my-module.js&#39;;
+console.log(cube(3)); // 27</code></pre>
+<h3 id="using-export-from">Using export from</h3>
+<p>Let’s take an example where we have the following hierarchy:</p>
+<ul>
+<li><code>childModule1.js</code>: exporting <code>myFunction</code> and <code>myVariable</code></li>
+<li><code>childModule2.js</code>: exporting <code>myClass</code></li>
+<li><code>parentModule.js</code>: acting as an aggregator (and doing nothing else)</li>
+<li>top level module: consuming the exports of <code>parentModule.js</code></li>
+</ul>
+<p>This is what it would look like using code snippets:</p>
+<pre><code>// In childModule1.js
+let myFunction = ...; // assign something useful to myFunction
+let myVariable = ...; // assign something useful to myVariable
+export {myFunction, myVariable};
+
+// In childModule2.js
+let myClass = ...; // assign something useful to myClass
+export myClass;
+
+// In parentModule.js
+// Only aggregating the exports from childModule1 and childModule2
+// to re-export them
+export { myFunction, myVariable } from &#39;childModule1.js&#39;;
+export { myClass } from &#39;childModule2.js&#39;;
+
+// In top-level module
+// We can consume the exports from a single module since parentModule
+// &quot;collected&quot;/&quot;bundled&quot; them in a single source
+import { myFunction, myVariable, myClass } from &#39;parentModule.js&#39;</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-exports">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-exports</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>export</code></p>
+<p>61</p>
+<p>16</p>
+<p>15</p>
+<p>60</p>
+<p>54-60</p>
+<p>No</p>
+<p>48</p>
+<p>10.1</p>
+<p>61</p>
+<p>61</p>
+<p>60</p>
+<p>54-60</p>
+<p>45</p>
+<p>10.3</p>
+<p>8.0</p>
+<p><code>default</code></p>
+<p>61</p>
+<p>16</p>
+<p>15</p>
+<p>60</p>
+<p>54-60</p>
+<p>No</p>
+<p>48</p>
+<p>10.1</p>
+<p>No</p>
+<p>61</p>
+<p>60</p>
+<p>54-60</p>
+<p>45</p>
+<p>10.3</p>
+<p>8.0</p>
+<p><code>namespace</code></p>
+<p>72</p>
+<p>79</p>
+<p>80</p>
+<p>No</p>
+<p>60</p>
+<p>No</p>
+<p>No</p>
+<p>72</p>
+<p>80</p>
+<p>51</p>
+<p>No</p>
+<p>11.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="import"><code>import</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules">JavaScript modules</a> guide</li>
+<li><a href="https://hacks.mozilla.org/2015/08/es6-in-depth-modules/">ES6 in Depth: Modules</a>, Hacks blog post by Jason Orendorff</li>
+<li><a href="https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/">ES modules: A cartoon deep-dive</a>, Hacks blog post by Lin Clark</li>
+<li><a href="https://exploringjs.com/es6/ch_modules.html">Axel Rauschmayer’s book: “Exploring JS: Modules”</a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export</a></p>
+</body>
+</html>

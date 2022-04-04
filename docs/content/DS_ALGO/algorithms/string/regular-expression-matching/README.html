@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="regular-expression-matching">Regular Expression Matching</h1>
+<p>Given an input string <code>s</code> and a pattern <code>p</code>, implement regular expression matching with support for <code>.</code> and <code>*</code>.</p>
+<ul>
+<li><code>.</code> Matches any single character.</li>
+<li><code>*</code> Matches zero or more of the preceding element.</li>
+</ul>
+<p>The matching should cover the <strong>entire</strong> input string (not partial).</p>
+<p><strong>Note</strong></p>
+<ul>
+<li><code>s</code> could be empty and contains only lowercase letters <code>a-z</code>.</li>
+<li><code>p</code> could be empty and contains only lowercase letters <code>a-z</code>, and characters like <code>.</code> or <code>*</code>.</li>
+</ul>
+<h2 id="examples">Examples</h2>
+<p><strong>Example #1</strong></p>
+<p>Input:</p>
+<pre><code>s = &#39;aa&#39;
+p = &#39;a&#39;</code></pre>
+<p>Output: <code>false</code></p>
+<p>Explanation: <code>a</code> does not match the entire string <code>aa</code>.</p>
+<p><strong>Example #2</strong></p>
+<p>Input:</p>
+<pre><code>s = &#39;aa&#39;
+p = &#39;a*&#39;</code></pre>
+<p>Output: <code>true</code></p>
+<p>Explanation: <code>*</code> means zero or more of the preceding element, <code>a</code>. Therefore, by repeating <code>a</code> once, it becomes <code>aa</code>.</p>
+<p><strong>Example #3</strong></p>
+<p>Input:</p>
+<pre><code>s = &#39;ab&#39;
+p = &#39;.*&#39;</code></pre>
+<p>Output: <code>true</code></p>
+<p>Explanation: <code>.*</code> means “zero or more (<code>*</code>) of any character (<code>.</code>)”.</p>
+<p><strong>Example #4</strong></p>
+<p>Input:</p>
+<pre><code>s = &#39;aab&#39;
+p = &#39;c*a*b&#39;</code></pre>
+<p>Output: <code>true</code></p>
+<p>Explanation: <code>c</code> can be repeated 0 times, <code>a</code> can be repeated 1 time. Therefore it matches <code>aab</code>.</p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=l3hda49XcDE&amp;list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8&amp;index=71&amp;t=0s">YouTube</a></li>
+<li><a href="https://leetcode.com/problems/regular-expression-matching/description/">LeetCode</a></li>
+</ul>
+</body>
+</html>

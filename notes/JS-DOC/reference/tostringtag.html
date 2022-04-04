@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>tostringtag</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="symbol.tostringtag">Symbol.toStringTag</h1>
+<p>The <code>Symbol.toStringTag</code> well-known symbol is a string valued property that is used in the creation of the default string description of an object. It is accessed internally by the <a href="../object/tostring"><code>Object.prototype.toString()</code></a> method.</p>
+<p>Property attributes of <code>Symbol.toStringTag</code></p>
+<p>Writable</p>
+<p>no</p>
+<p>Enumerable</p>
+<p>no</p>
+<p>Configurable</p>
+<p>no</p>
+<h2 id="examples">Examples</h2>
+<h3 id="default-tags">Default tags</h3>
+<pre><code>Object.prototype.toString.call(&#39;foo&#39;);     // &quot;[object String]&quot;
+Object.prototype.toString.call([1, 2]);    // &quot;[object Array]&quot;
+Object.prototype.toString.call(3);         // &quot;[object Number]&quot;
+Object.prototype.toString.call(true);      // &quot;[object Boolean]&quot;
+Object.prototype.toString.call(undefined); // &quot;[object Undefined]&quot;
+Object.prototype.toString.call(null);      // &quot;[object Null]&quot;
+// ... and more</code></pre>
+<h3 id="built-in-tostringtag-symbols">Built-in toStringTag symbols</h3>
+<pre><code>Object.prototype.toString.call(new Map());       // &quot;[object Map]&quot;
+Object.prototype.toString.call(function* () {}); // &quot;[object GeneratorFunction]&quot;
+Object.prototype.toString.call(Promise.resolve()); // &quot;[object Promise]&quot;
+// ... and more</code></pre>
+<h3 id="custom-classes-default-to-object-tag">Custom classes default to object tag</h3>
+<p>When creating your own class, JavaScript defaults to the “Object” tag:</p>
+<pre><code>class ValidatorClass {}
+
+Object.prototype.toString.call(new ValidatorClass()); // &quot;[object Object]&quot;</code></pre>
+<h3 id="custom-tag-with-tostringtag">Custom tag with toStringTag</h3>
+<p>Now, with the help of <code>toStringTag</code>, you are able to set your own custom tag:</p>
+<pre><code>class ValidatorClass {
+  get [Symbol.toStringTag]() {
+    return &#39;Validator&#39;;
+  }
+}
+
+Object.prototype.toString.call(new ValidatorClass()); // &quot;[object Validator]&quot;</code></pre>
+<h3 id="tostringtag-available-on-all-dom-prototype-objects">toStringTag available on all DOM prototype objects</h3>
+<p>Due to a <a href="https://github.com/heycam/webidl/pull/357">WebIDL spec change</a> in mid-2020, browsers are adding a <code>Symbol.toStringTag</code> property to all DOM prototype objects. For example, to acccess the <code>Symbol.toStringTag</code> property on <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLButtonElement"><code>HTMLButtonElement</code></a>:</p>
+<pre><code>let test = document.createElement(&#39;button&#39;);
+test.toString(); // Returns [object HTMLButtonElement]
+test[Symbol.toStringTag];  // Returns HTMLButtonElement</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-symbol.tostringtag">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-symbol.tostringtag</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>toStringTag</code></p>
+<p>49</p>
+<p>15</p>
+<p>51</p>
+<p>No</p>
+<p>36</p>
+<p>10</p>
+<p>49</p>
+<p>49</p>
+<p>51</p>
+<p>36</p>
+<p>10</p>
+<p>5.0</p>
+<p><code>dom-objects</code></p>
+<p>50</p>
+<p>79</p>
+<p>78</p>
+<p>No</p>
+<p>37</p>
+<p>14</p>
+<p>50</p>
+<p>50</p>
+<p>79</p>
+<p>37</p>
+<p>14</p>
+<p>5.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../object/tostring"><code>Object.prototype.toString()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/toStringTag" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/toStringTag</a></p>
+</body>
+</html>

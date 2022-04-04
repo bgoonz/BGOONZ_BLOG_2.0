@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="" />
+  <title>inject5</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="build-deploy-site-settings">Build &amp; deploy | Site settings</h1>
+<blockquote>
+<h2 id="excerpt">Excerpt</h2>
+<p>Settings for Continuous Deployment from a Git repository</p>
+</blockquote>
+<hr />
+<h2 id="continuous-deployment"><a href="https://app.netlify.com/sites/bgoonz-blog/settings/deploys#continuous-deployment">Continuous Deployment</a></h2>
+<p>Settings for Continuous Deployment from a Git repository</p>
+<p>Deploy Previews allow you and your team to experience changes to any part of your site without having to publish them to production.</p>
+<p>Deploy Previews</p>
+<p>Don’t deploy pull requests</p>
+<p>Netlify Drawer</p>
+<p>Enabled</p>
+<p><a href="https://docs.netlify.com/site-deploys/deploy-previews">Learn more about Deploy Previews in the docs</a></p>
+<p>Build hooks give you a unique URL you can use to trigger a build.</p>
+<ul>
+<li><p><strong>stackbit-build-hook</strong></p>
+<p>https://api.netlify.com/build_hooks/609b2d9f66af5127803b19c3</p>
+<p>Send a POST request to this webhook to trigger a deploy from <a href="https://github.com/stackbit-projects/best-celery-b2d7c/tree/master">master</a>.</p>
+<p>Example using cURL:</p>
+<pre><code>curl -X POST -d {} https://api.netlify.com/build_hooks/609b2d9f66af5127803b19c3</code></pre></li>
+<li><p><strong>gitter</strong></p>
+<p>https://api.netlify.com/build_hooks/61dccb6ed7c12040ccc2daef</p>
+<p>Send a POST request to this webhook to trigger a deploy from <a href="https://github.com/stackbit-projects/best-celery-b2d7c/tree/master">master</a>.</p>
+<p>Example using cURL:</p>
+<pre><code>curl -X POST -d {} https://api.netlify.com/build_hooks/61dccb6ed7c12040ccc2daef</code></pre></li>
+</ul>
+<p><a href="https://www.netlify.com/docs/webhooks/#incoming-webhooks">Learn more about build hooks in the docs</a></p>
+<p>A deploy key grants permissions to our build system to access your private submodule.</p>
+<pre><code>ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDVi79bjai48K5TZNQWEji8lai8DX6wJ94cbj9e5c78porecQYCklAt6N97MiziIoctETdYTe63bGhSw9Dz9IQweau7oBE0RmUWovlVgqZgJDysWSFVkN8a8e16XnBYQa4kD7sCIYCZA9dH2cW+yxnW+bEJcoqYA7dUJt8thwA0yjVQkVzune3SXzro9mifS9bWmTISUpvBf21JlS7sS0MdF8Iqb+gYDivSm38ilkBu0HMlelYFixEIPkVRXVRyW+KHGWynVP5g/TGsvocIinJeH19FVovHusHSnTE0Cg9z8f1IKL9hyEj3ksbJmrzZNy3jhVOpLrx5PFHSbrWcCGv8PPoWt8fPbUDJugIhZ62IHOgcbt6wzIBLYgF3C1hLxIwzeCzbx85TqHGN9pp5uzJDAtx+meqO/QzssBz3ZJ2aR98BGwzoWgawAjllE0BPOWtuR5+lwDAAGznb/C6vfUrdXOU72++wawjcL+PHBCjOjwIRXW4f2Q0qiH2scyOazCmmlQXPul3jJnHBl+KzClL7N9Vvm6bvbRj5XXYKbexNAgit7PwscV24qfszTAeHtx55+aSHqYAYkFx3rqI4h9BwhwpNvXM4EcgNarYWoze4qp4tW7weidR6DKKiX/SjT5wyltipY5F8T0LBqq+nT1n0FHqrk3/6l+7y9++XTyv4oQ==</code></pre>
+<p><a href="https://docs.netlify.com/configure-builds/repo-permissions-linking/#access-other-repositories-at-build">Learn more about deploy keys in the docs</a></p>
+<h2 id="environment"><a href="https://app.netlify.com/sites/bgoonz-blog/settings/deploys#environment">Environment</a></h2>
+<p>Control the environment your site builds in and/or gets deployed to.</p>
+<p>Deploy Previews triggered by a pull request from an unrecognized author’s fork are considered untrusted deploys. Choose how to manage sensitive environment variable access for these deploys.</p>
+<p>Untrusted deploys</p>
+<p>Deploy without sensitive variables</p>
+<p><a href="https://docs.netlify.com/configure-builds/environment-variables/#sensitive-variable-policy">Learn more about sensitive variable policy in the docs</a></p>
+<h2 id="post-processing"><a href="https://app.netlify.com/sites/bgoonz-blog/settings/deploys#post-processing">Post processing</a></h2>
+<p>Control the post processing and optimizations Netlify can do for you</p>
+<p>Inject analytics or other scripts into the HTML of your site.</p>
+<ul>
+<li><p>before <code>&lt;/head&gt;</code></p>
+<p>gtag-n-firebase</p>
+<pre><code>&lt;!-- Google Tag Manager --&gt;
+&lt;script&gt;(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({&#39;gtm.start&#39;:
+new Date().getTime(),event:&#39;gtm.js&#39;});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!=&#39;dataLayer&#39;?&#39;&amp;l=&#39;+l:&#39;&#39;;j.async=true;j.src=
+&#39;https://www.googletagmanager.com/gtm.js?id=&#39;+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,&#39;script&#39;,&#39;dataLayer&#39;,&#39;GTM-5S5XXNR&#39;);&lt;/script&gt;
+&lt;!-- End Google Tag Manager --&gt;
+&lt;!--FIREBASE-----------------------------------------------------------------------&gt;
+&lt;!-- The core Firebase JS SDK is always required and must be listed first --&gt;
+&lt;script src=&quot;/__/firebase/8.8.1/firebase-app.js&quot;&gt;&lt;/script&gt;
+
+&lt;!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries --&gt;
+&lt;script src=&quot;/__/firebase/8.8.1/firebase-analytics.js&quot;&gt;&lt;/script&gt;
+
+&lt;!-- Initialize Firebase --&gt;
+&lt;script src=&quot;/__/firebase/init.js&quot;&gt;&lt;/script&gt;
+
+&lt;!--Google Tag-----------------------------------------------------------------------&gt;
+
+&lt;!-- Global site tag (gtag.js) - Google Analytics --&gt;
+&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-M9B63M34E1&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag(&#39;js&#39;, new Date());
+
+  gtag(&#39;config&#39;, &#39;G-M9B63M34E1&#39;);
+&lt;/script&gt;</code></pre></li>
+<li><p>before <code>&lt;/body&gt;</code></p>
+<p>gtag-in-body</p>
+<pre><code>&lt;!-- Google Tag Manager (noscript) --&gt;
+&lt;noscript&gt;&lt;iframe  style=&quot;-webkit-transform:scale(0.7);-moz-transform-scale(0.7);sandbox=&quot;allow-scripts&quot; style=&quot;resize:both; overflow:scroll;&quot;    src=&quot;https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR&quot;
+height=&quot;0&quot; width=&quot;0&quot; style=&quot;display:none;visibility:hidden&quot;&gt;&lt;/iframe&gt;&lt;/noscript&gt;
+&lt;!-- End Google Tag Manager (noscript) --&gt;</code></pre></li>
+<li><p>before <code>&lt;/head&gt;</code></p>
+<p>original-analytics</p>
+<pre><code>&lt;script data-ad-client=&quot;ca-pub-7131725540181116&quot; async src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&quot;&gt;&lt;/script&gt;
+&lt;!-- Google Tag Manager --&gt;
+&lt;script&gt;(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({&#39;gtm.start&#39;:
+new Date().getTime(),event:&#39;gtm.js&#39;});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!=&#39;dataLayer&#39;?&#39;&amp;l=&#39;+l:&#39;&#39;;j.async=true;j.src=
+&#39;https://www.googletagmanager.com/gtm.js?id=&#39;+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,&#39;script&#39;,&#39;dataLayer&#39;,&#39;GTM-5S5XXNR&#39;);&lt;/script&gt;
+&lt;!-- End Google Tag Manager --&gt;
+&lt;!-- Google Tag Manager (noscript) --&gt;
+&lt;noscript&gt;&lt;iframe  style=&quot;-webkit-transform:scale(0.7);-moz-transform-scale(0.7);sandbox=&quot;allow-scripts&quot; style=&quot;resize:both; overflow:scroll;&quot;    src=&quot;https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR&quot;
+height=&quot;0&quot; width=&quot;0&quot; style=&quot;display:none;visibility:hidden&quot;&gt;&lt;/iframe&gt;&lt;/noscript&gt;
+&lt;!-- End Google Tag Manager (noscript) --&gt;
+
+&lt;meta name=&quot;google-site-verification&quot; content=&quot;W6SJ3S45yhnjzV6ISUMCTXl_QVX5woQZ7jO3bsahONQ&quot; /&gt;
+&lt;!-- Global site tag (gtag.js) - Google Analytics --&gt;
+&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-4W5MG3DG4T&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag(&#39;js&#39;, new Date());
+
+  gtag(&#39;config&#39;, &#39;G-4W5MG3DG4T&#39;);
+&lt;/script&gt;
+
+&lt;script data-ad-client=&quot;ca-pub-7131725540181116&quot; async src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&quot;&gt;&lt;/script&gt;</code></pre></li>
+<li><p>before <code>&lt;/body&gt;</code></p>
+<p>goback</p>
+<pre><code>&lt;input type=&quot;button&quot; style=&quot;position: fixed;top: 10px;right: 10px;width:80px;color:white;font-weight:bold;background-color:rgba(0, 0, 0, 0.856); border-radius:15px;&quot; value=&quot;Go Back&quot; onclick=&quot;history.back(-1)&quot; /&gt;
+      &lt;?php
+        $url = htmlspecialchars($_SERVER[&#39;HTTP_REFERER&#39;]);
+        echo &quot;&lt;a href=&#39;$url&#39;&gt;&lt;/a&gt;</code></pre></li>
+<li><p>before <code>&lt;/head&gt;</code></p>
+<p>mdn-style</p>
+<pre><code>&lt;style&gt;blockquote,
+body,
+dd,
+dl,
+figcaption,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+li,
+ol[class],
+p,
+ul[class] {
+  margin: 0
+}
+
+body {
+  min-height: 110vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.6
+}
+
+
+
+
+
+article&gt;*+* {
+  margin-top: 1em
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit
+}
+
+@media(prefers-reduced-motion:reduce) {
+  * {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important
+  }
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: arial, x-locale-body, sans-serif;
+  letter-spacing: -.0027777778rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 100%;
+  line-height: 1.75
+}
+
+img {
+  height: auto
+}
+
+@font-face {
+  font-display: swap;
+  font-family: zillaslab;
+  font-style: normal;
+  font-weight: 700;
+  src: url(/static/media/ZillaSlab-Bold.subset.0beac26b.woff2) format(&quot;woff2&quot;), url(/static/media/ZillaSlab-Bold.subset.72026b3c.woff) format(&quot;woff&quot;)
+}
+
+@font-face {
+  font-display: swap;
+  font-family: zillaslab;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/static/media/ZillaSlab-Regular.subset.ce3a756d.woff2) format(&quot;woff2&quot;), url(/static/media/ZillaSlab-Regular.subset.7e4c05c9.woff) format(&quot;woff&quot;)
+}
+
+h1,
+h2,
+h3 {
+  font-family: zillaslab, palatino, &quot;Palatino Linotype&quot;, serif;
+  line-height: 1.2
+}
+
+h1 {
+  font-size: 1.802rem
+}
+
+@media (min-width:47.9385em) {
+  h1 {
+    font-size: 3.052rem
+  }
+}
+
+h2 {
+  font-size: 1.602rem
+}
+
+@media (min-width:47.9385em) {
+  h2 {
+    font-size: 2.441rem
+  }
+}
+
+h3 {
+  font-size: 1.424rem;
+
+
+  font-family: zillaslab, palatino, &quot;Palatino Linotype&quot;, serif;
+  font-weight: 400;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  padding: 0 6px;
+  margin: 24px 0
+}
+
+@media (min-width:47.9385em) {
+  h3 {
+    font-size: 1.953rem
+  }
+}
+
+h4 {
+  font-size: 1.266rem
+}
+
+@media (min-width:47.9385em) {
+  h4 {
+    font-size: 1.563rem
+  }
+}
+
+h5 {
+  font-size: 1.125rem
+}
+
+@media (min-width:47.9385em) {
+  h5 {
+    font-size: 1.25rem
+  }
+}
+
+p {
+  margin-bottom: 24px
+}
+
+a:link,
+a:visited {
+
+  text-decoration: none
+}
+
+a:link:active,
+a:link:focus,
+a:link:hover,
+a:visited:active,
+a:visited:focus,
+a:visited:hover {
+  text-decoration: underline
+}
+
+blockquote {
+  max-width: 45rem;
+  max-width: 85ch;
+  font-size: 1.125rem;
+  font-family: zillaslab, palatino, &quot;Palatino Linotype&quot;, serif;
+  font-weight: 400;
+  margin-bottom: 24px
+}
+
+@media (min-width:47.9385em) {
+  blockquote {
+    font-size: 1.25rem
+  }
+}
+
+blockquote:after,
+blockquote:before {
+  background-image: linear-gradient(90deg, #00356a, #83d0f2);
+  content: &quot;&quot;;
+  display: block;
+  height: 5px;
+  margin-bottom: 12px
+}
+
+blockquote:after {
+  margin-top: 12px
+}
+
+blockquote p:last-of-type {
+  margin-bottom: 0
+}
+
+a {
+
+  text-decoration: none
+}
+
+a:focus,
+a:hover {
+  text-decoration: underline
+}
+
+a code {
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none
+}
+
+
+dl dt {
+  font-weight: 700
+}
+
+dl dd {
+  margin: 0 24px 24px
+}
+
+
+
+&lt;/style&gt;</code></pre></li>
+<li><p>before <code>&lt;/head&gt;</code></p>
+<p>algolia-head</p>
+<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css&quot;
+    integrity=&quot;sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU&quot; crossorigin=&quot;anonymous&quot; /&gt;
+  &lt;link rel=&quot;stylesheet&quot;  href=&quot;https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css&quot; /&gt;
+  &lt;script type=&quot;text/javascript&quot;  src=&quot;https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js&quot;&gt;
+    &lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+      algoliasearchNetlify({
+        appId: &quot;O6OT9G9U8Z&quot;,
+        apiKey: &quot;b0cb3d390176e1ff4bd1ecb12fc15730&quot;,
+        siteId: &quot;a1b7ee1a-11a7-4bd2-a341-2260656e216f&quot;,
+        branch: &quot;master&quot;,
+        selector: &quot;div#search&quot;
+      });
+    &lt;/script&gt;</code></pre></li>
+<li><p>before <code>&lt;/body&gt;</code></p>
+<p>stackbit-widget</p>
+<pre><code>&lt;script src=&quot;https://widget.stackbit.com/init.js&quot; id=&quot;stackbit-widget-init&quot; data-stackbit-project-id=&quot;609b2d7c71a5dd0016f36326&quot;&gt;&lt;/script&gt;</code></pre></li>
+<li><p>before <code>&lt;/body&gt;</code></p>
+<p>addthis</p>
+<pre><code>&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946&quot;&gt;&lt;/script&gt;</code></pre></li>
+<li><p>before <code>&lt;/head&gt;</code></p>
+<p>meta</p>
+<pre><code>&lt;meta name=&quot;google-site-verification&quot; content=&quot;q5W83EYchlVTyA-iYRE4ElQGcbD_vukQF0NKW12N3qU&quot; /&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;link rel=&quot;apple-touch-icon&quot; href=&quot;logo-circle.png&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+  &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;HTML&quot;&gt;
+  &lt;meta name=&quot;Author&quot; content=&quot;Bryan Guner&quot;&gt;
+  &lt;meta name=&quot;keywords&quot; content=&quot;HTML, Meta Tags, Metadata&quot;&gt;
+  &lt;meta name=&quot;description&quot; content=&quot;Learning about Web Development.&quot;&gt;
+  &lt;link type=&quot;image/x-icon&quot; href=&quot;./favicon.ico&quot; rel=&quot;shortcut icon&quot;&gt;
+  &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=us-ascii&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, shrink-to-fit=no&quot;&gt;
+  &lt;meta name=&quot;twitter:card&quot; content=&quot;summary&quot;&gt;
+  &lt;meta name=&quot;twitter:site&quot; content=&quot;@bgoonz&quot;&gt;
+  &lt;meta name=&quot;twitter:creator&quot; content=&quot;@bgoonz&quot;&gt;
+  &lt;meta name=&quot;twitter:image:src&quot; content=&quot;/logo-circle.png&quot;&gt;
+  &lt;meta name=&quot;twitter:title&quot; content=&quot;Web Development Resource Hub Bryan Guner&quot;&gt;
+  &lt;meta name=&quot;twitter:description&quot; content=&quot;The new home of my blog resource sharing website.&quot;&gt;
+&lt;meta property=&quot;twitter:card&quot; content=&quot;summary_large_image&quot;&gt;
+  &lt;link
+    href=&quot;https://instructure-uploads-pdx.s3.us-west-2.amazonaws.com/account_168550000000000001/attachments/537/logo-canvas.png&quot;
+    rel=&quot;apple-touch-icon&quot;&gt;
+  &lt;link type=&quot;text/css&quot; href=&quot;https://fonts.googleapis.com/css?family=Raleway:200,100,400&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;meta property=&quot;og:image&quot; content=&quot;https://mugshotbot.com/m/DROicc16&quot;&gt;</code></pre></li>
+<li><p>before <code>&lt;/body&gt;</code></p>
+<p>search</p>
+<pre><code>&lt;script&gt;
+let div = window.createElement(&#39;div&#39;);
+div.id(&#39;search&#39;);
+div.style = &#39;z-index:-1; position:absolute;width: 300px;height: 300px;bottom: 0px;right: 25%;left: 50 %;&#39;;
+let docscontent = window.getElementByClassName(&#39;docs-content&#39;);
+docscontent.appendChild(div);
+
+let div1 = window.createElement(&#39;div&#39;);
+div1.id(&#39;search&#39;);
+div1.style = &#39;z-index:-1; position:absolute;width: 300px;height: 300px;background:#063;bottom: 0px;right: 25%;left: 50 %;margin-left: -150px&#39;;
+let header = window.getElementByClassName(&#39;site-header-inside&#39;);
+header.appendChild(&#39;div1&#39;);
+
+&lt;/script&gt;</code></pre></li>
+<li><p>before <code>&lt;/head&gt;</code></p>
+<p>mailchimp</p>
+<pre><code>&lt;script id=&quot;mcjs&quot;&gt;!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,&quot;script&quot;,&quot;https://chimpstatic.com/mcjs-connected/js/users/a41d8352dc1deaf4533662699/28d2370bb66d456a5d6411971.js&quot;);&lt;/script&gt;</code></pre></li>
+<li><p>before <code>&lt;/head&gt;</code></p>
+<p>google-adds</p>
+<pre><code>&lt;!-- Global site tag (gtag.js) - Google Ads: 389525629 --&gt;
+&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=AW-389525629&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag(&#39;js&#39;, new Date());
+
+  gtag(&#39;config&#39;, &#39;AW-389525629&#39;);
+&lt;/script&gt;
+&lt;!-- Event snippet for Subscribe conversion page --&gt;
+&lt;script&gt;
+  gtag(&#39;event&#39;, &#39;conversion&#39;, {&#39;send_to&#39;: &#39;AW-389525629/_TJRCMyNpIsDEP3g3rkB&#39;});
+&lt;/script&gt;</code></pre></li>
+<li><p>before <code>&lt;/body&gt;</code></p>
+<p>google-search</p>
+<pre><code>&lt;script async src=&quot;https://cse.google.com/cse.js?cx=54896af6e2f16ea45&quot;&gt;&lt;/script&gt;
+&lt;div class=&quot;gcse-search&quot;&gt;&lt;/div&gt;</code></pre></li>
+<li><p>before <code>&lt;/head&gt;</code></p>
+<p>gs-head-script</p>
+<pre><code>&lt;script async src=&quot;https://cse.google.com/cse.js?cx=54896af6e2f16ea45&quot;&gt;&lt;/script&gt;</code></pre></li>
+<li><p>before <code>&lt;/head&gt;</code></p>
+<p>jquery</p>
+<pre><code>&lt;script src=&quot;https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js&quot; integrity=&quot;sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js&quot; integrity=&quot;sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;</code></pre></li>
+<li><p>before <code>&lt;/body&gt;</code></p>
+<p>search2</p>
+<pre><code>&lt;script&gt;&quot;use strict&quot;;
+
+!function() {
+    var t = &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZDM2MTc3YmNjM2JjNmJiZjk3NzQyYSIsInRva2VuVHlwZSI6InB1YmxpYyIsImlhdCI6MTY0MTI0MzQxOSwiZXhwIjoxNDI1NTY0MzQxOX0.OxbJg61D899RH4NoK_3pT_DDaY2lw787fLDUS9ZjGuM&quot;;
+    function e() {
+        var e = document.createElement(&quot;script&quot;), a = navigator.language || navigator.userLanguage;
+        e.type = &quot;text/javascript&quot;, e.async = !0, e.src = &quot;https://api.searchbar.org/v1/widget/&quot; + t + &quot;/&quot; + a;
+        var n = document.getElementsByTagName(&quot;script&quot;)[0];
+        n.parentNode.insertBefore(e, n);
+    }
+    &quot;complete&quot; === document.readyState ? e() : window.attachEvent ? window.attachEvent(&quot;onload&quot;, e) : window.addEventListener(&quot;load&quot;, e, !1);
+}();&lt;/script&gt;
+&lt;div id=&#39;sb-search-example&#39;&gt;
+&lt;div class=&quot;sb-search-icon&quot; id=&quot;myCustomSearchButtonID&quot;&gt;
+&lt;i class=&quot;sb-icon&quot;&gt;&amp;#xe80a;&lt;/i&gt;
+&lt;p&gt;Search&lt;/p&gt;
+&lt;/div&gt;
+&lt;style&gt;
+@font-face {
+            font-family: font-sb;
+            src: url(https://api.searchbar.org/fonts/sb.eot?39450784);
+            src: url(https://api.searchbar.org/fonts/sb.eot?39450784#iefix) format(&#39;embedded-opentype&#39;), url(https://api.searchbar.org/fonts/sb.woff?39450784) format(&#39;woff&#39;), url(https://api.searchbar.org/fonts/?39450784) format(&#39;truetype&#39;), url(https://api.searchbar.org/fonts/sb.svg?39450784#font-sb) format(&#39;svg&#39;);
+            font-weight: 400;
+            font-style: normal
+        }
+
+        #sb-search-example p {
+            font-family: sans-serif;
+            font-size: 18px;
+            line-height: 12px;
+        margin: 0;
+        }
+
+        #sb-search-example {
+            position: static;
+            top: 0;
+            width: auto;
+            place-content: center;
+            display: inline-block;
+            box-shadow: 0px 2px 4px rgba(190, 190, 190, 0.5);
+            border: solid 5px white;
+            border-radius: 100px;
+            flex-shrink: initial;
+            flex-grow: initial;
+        }
+
+
+        #sb-search-example .sb-icon {
+            font: normal normal 400 26px font-sb;
+            align-items: center;
+            padding: 10px;
+            speak: none;
+            display: inline-block;
+            text-decoration: inherit;
+            text-align: center;
+            text-transform: none;
+            cursor: pointer;
+            margin: 0;
+        }
+
+        #sb-search-example .sb-search-icon {
+            box-sizing: border-box;
+            border: 0px;
+            align-items: center;
+            background: #007cff;
+            color: #fff;
+            cursor: pointer;
+            display: flex;
+            border-radius: 26px;
+            padding: 0 20px 0 4px;
+        }
+&lt;/style&gt;
+&lt;/div&gt;</code></pre></li>
+<li><p>before <code>&lt;/head&gt;</code></p>
+<p>blm</p>
+<pre><code>&lt;!-- Insert makerbadge.js (download or use ☁️cloud version) --&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://makerbadge.s3.amazonaws.com/blmbadge.js&quot;&gt;&lt;/script&gt;
+
+&lt;!-- Initialise MakerBadge with options --&gt;
+
+&lt;script&gt;
+  BLMBadge.init({
+       layout:1,
+       theme:&#39;dark&#39;,
+       promoText : &#39;Send a donation &#39;+String.fromCodePoint(0x2192),
+       promoLink : &#39;https://minnesotafreedomfund.org/&#39;,
+       message : &#39;To be silent is to be complicit. Black lives matter.&#39;,
+       title : &#39;#BlackLivesMatter&#39;,
+       imageAlt: &quot;Black Lives Matter Badge&quot;
+})
+&lt;/script&gt;</code></pre></li>
+<li><p>before <code>&lt;/head&gt;</code></p>
+<p>netlify-identity</p>
+<pre><code>&lt;script src=&quot;https://identity.netlify.com/v1/netlify-identity-widget.js&quot;&gt;&lt;/script&gt;</code></pre></li>
+<li><p>before <code>&lt;/head&gt;</code></p>
+<p>netlify-identity</p>
+<pre><code>&lt;script src=&quot;https://identity.netlify.com/v1/netlify-identity-widget.js&quot;&gt;&lt;/script&gt;
+
+
+&lt;script&gt;
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on(&quot;init&quot;, user =&gt; {
+      if (!user) {
+        window.netlifyIdentity.on(&quot;login&quot;, () =&gt; {
+          document.location.href = &quot;/admin/&quot;;
+        });
+      }
+    });
+  }
+&lt;/script&gt;</code></pre></li>
+<li><p>before <code>&lt;/head&gt;</code></p>
+<p>search</p>
+<pre><code>&lt;script&gt;&quot;use strict&quot;;
+
+!function() {
+    var t = &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZTQzZmFlY2I2NjkwNWMyZGJkMGVmZCIsInRva2VuVHlwZSI6InB1YmxpYyIsImlhdCI6MTY0MjM0ODUyNiwiZXhwIjoxNDI1Njc0ODUyNn0.VD7Lxgh5cWuOzOhV9KH51TZVdPVXvsIJgRUx-oacfVM&quot;;
+    function e() {
+        var e = document.createElement(&quot;script&quot;), a = navigator.language || navigator.userLanguage;
+        e.type = &quot;text/javascript&quot;, e.async = !0, e.src = &quot;https://api.searchbar.org/v1/widget/&quot; + t + &quot;/&quot; + a;
+        var n = document.getElementsByTagName(&quot;script&quot;)[0];
+        n.parentNode.insertBefore(e, n);
+    }
+    &quot;complete&quot; === document.readyState ? e() : window.attachEvent ? window.attachEvent(&quot;onload&quot;, e) : window.addEventListener(&quot;load&quot;, e, !1);
+}();&lt;/script&gt;</code></pre></li>
+<li><p>before <code>&lt;/body&gt;</code></p>
+<p>sb-search</p>
+<pre><code>&lt;div id=&#39;sb-search-example&#39;&gt;
+&lt;div class=&quot;sb-search-icon&quot; id=&quot;myCustomSearchButtonID&quot;&gt;
+&lt;i class=&quot;sb-icon&quot;&gt;&amp;#xe80a;&lt;/i&gt;
+&lt;p&gt;Search&lt;/p&gt;
+&lt;/div&gt;
+&lt;style&gt;
+@font-face {
+            font-family: font-sb;
+            src: url(https://api.searchbar.org/fonts/sb.eot?39450784);
+            src: url(https://api.searchbar.org/fonts/sb.eot?39450784#iefix) format(&#39;embedded-opentype&#39;), url(https://api.searchbar.org/fonts/sb.woff?39450784) format(&#39;woff&#39;), url(https://api.searchbar.org/fonts/?39450784) format(&#39;truetype&#39;), url(https://api.searchbar.org/fonts/sb.svg?39450784#font-sb) format(&#39;svg&#39;);
+            font-weight: 400;
+            font-style: normal
+        }
+
+        #sb-search-example p {
+            font-family: sans-serif;
+            font-size: 18px;
+            line-height: 12px;
+        margin: 0;
+        }
+
+        #sb-search-example {
+            position: static;
+            bottom: 0;
+            width: auto;
+            place-content: center;
+            display: inline-block;
+            box-shadow: 0px 2px 4px rgba(190, 190, 190, 0.5);
+            border: solid 5px white;
+            border-radius: 100px;
+            flex-shrink: initial;
+            flex-grow: initial;
+        }
+
+
+        #sb-search-example .sb-icon {
+            font: normal normal 400 26px font-sb;
+            align-items: center;
+            padding: 10px;
+            speak: none;
+            display: inline-block;
+            text-decoration: inherit;
+            text-align: center;
+            text-transform: none;
+            cursor: pointer;
+            margin: 0;
+        }
+
+        #sb-search-example .sb-search-icon {
+            box-sizing: border-box;
+            border: 0px;
+            align-items: center;
+            background: #007cff;
+            color: #fff;
+            cursor: pointer;
+            display: flex;
+            border-radius: 26px;
+            padding: 0 20px 0 4px;
+        }
+&lt;/style&gt;
+&lt;/div&gt;</code></pre></li>
+</ul>
+<p><a href="https://www.netlify.com/docs/inject-analytics-snippets">Learn more about snippet injection in the docs</a></p>
+<p>URLs</p>
+<p>Pretty URLs</p>
+<p>CSS</p>
+<p>Bundle &amp; Minify</p>
+<p>JS</p>
+<p>Bundle &amp; Minify</p>
+<p>Images</p>
+<p>Lossless compression</p>
+<p><strong>Prerendering enabled with Netlify</strong></p>
+<p>With each deploy, Netlify scans new and changed HTML files for forms to enable handling submissions. If you’re not using Netlify Forms, you can disable form detection to speed up deploy time.</p>
+<p><a href="https://docs.netlify.com/site-deploys/post-processing/form-detection/">Learn more about form detection in the docs</a></p>
+<h2 id="deploy-notifications"><a href="https://app.netlify.com/sites/bgoonz-blog/settings/deploys#deploy-notifications">Deploy notifications</a></h2>
+<p>Set up outgoing webhooks to notify other services about deploys for your site. <a href="https://www.netlify.com/docs/webhooks/#outgoing-webhooks-and-notifications">Learn more</a></p>
+</body>
+</html>

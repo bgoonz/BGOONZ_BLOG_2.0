@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>flatmap</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="array.prototype.flatmap">Array.prototype.flatMap()</h1>
+<p>The <code>flatMap()</code> method returns a new array formed by applying a given callback function to each element of the array, and then flattening the result by one level. It is identical to a <a href="map"><code>map()</code></a> followed by a <a href="flat"><code>flat()</code></a> of depth 1, but slightly more efficient than calling those two methods separately.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>// Arrow function
+flatMap((currentValue) =&gt; { ... } )
+flatMap((currentValue, index) =&gt; { ... } )
+flatMap((currentValue, index, array) =&gt; { ... } )
+
+// Callback function
+flatMap(callbackFn)
+flatMap(callbackFn, thisArg)
+
+// Inline callback function
+flatMap(function callbackFn(currentValue) { ... })
+flatMap(function callbackFn(currentValue, index) { ... })
+flatMap(function callbackFn(currentValue, index, array){ ... })
+flatMap(function callbackFn(currentValue, index, array) { ... }, thisArg)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>callback</code><br />
+Function that produces an element of the new Array, taking three arguments:</p>
+<p><code>currentValue</code><br />
+The current element being processed in the array.</p>
+<p><code>index</code><span class="badge inline optional">Optional</span><br />
+The index of the current element being processed in the array.</p>
+<p><code>array</code><span class="badge inline optional">Optional</span><br />
+The array <code>map</code> was called upon.</p>
+<p><code>thisArg</code><span class="badge inline optional">Optional</span><br />
+Value to use as <code>this</code> when executing <code>callback</code>.</p>
+<h3 id="return-value">Return value</h3>
+<p>A new array with each element being the result of the callback function and flattened to a depth of 1.</p>
+<h2 id="description">Description</h2>
+<p>See <a href="map"><code>Array.prototype.map()</code></a> for a detailed description of the callback function. The <code>flatMap</code> method is identical to a <code>map</code> followed by a call to <code>flat</code> of depth 1.</p>
+<h3 id="alternative">Alternative</h3>
+<h4 id="reduce-and-concat"><code>reduce()</code> and <code>concat()</code></h4>
+<pre><code>var arr = [1, 2, 3, 4];
+
+arr.flatMap(x =&gt; [x, x * 2]);
+// is equivalent to
+arr.reduce((acc, x) =&gt; acc.concat([x, x * 2]), []);
+// [1, 2, 2, 4, 3, 6, 4, 8]</code></pre>
+<p>Note, however, that this is inefficient and should be avoided for large arrays: in each iteration, it creates a new temporary array that must be garbage-collected, and it copies elements from the current accumulator array into a new array instead of just adding the new elements to the existing array.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="map-and-flatmap"><code>map()</code> and <code>flatMap()</code></h3>
+<pre><code>let arr1 = [1, 2, 3, 4];
+
+arr1.map(x =&gt; [x * 2]);
+// [[2], [4], [6], [8]]
+
+arr1.flatMap(x =&gt; [x * 2]);
+// [2, 4, 6, 8]
+
+// only one level is flattened
+arr1.flatMap(x =&gt; [[x * 2]]);
+// [[2], [4], [6], [8]]</code></pre>
+<p>While the above could have been achieved by using map itself, here is an example that better showcases the use of <code>flatMap</code>.</p>
+<p>Let’s generate a list of words from a list of sentences.</p>
+<pre><code>let arr1 = [&quot;it&#39;s Sunny in&quot;, &quot;&quot;, &quot;California&quot;];
+
+arr1.map(x =&gt; x.split(&quot; &quot;));
+// [[&quot;it&#39;s&quot;,&quot;Sunny&quot;,&quot;in&quot;],[&quot;&quot;],[&quot;California&quot;]]
+
+arr1.flatMap(x =&gt; x.split(&quot; &quot;));
+// [&quot;it&#39;s&quot;,&quot;Sunny&quot;,&quot;in&quot;, &quot;&quot;, &quot;California&quot;]</code></pre>
+<p>Notice, the output list length can be different from the input list length.</p>
+<h3 id="for-adding-and-removing-items-during-a-map">For adding and removing items during a <code>map()</code></h3>
+<p><code>flatMap</code> can be used as a way to add and remove items (modify the number of items) during a <code>map</code>. In other words, it allows you to map <em>many items to many items</em> (by handling each input item separately), rather than always <em>one-to-one</em>. In this sense, it works like the opposite of <a href="filter">filter</a>. Return a 1-element array to keep the item, a multiple-element array to add items, or a 0-element array to remove the item.</p>
+<pre><code>// Let&#39;s say we want to remove all the negative numbers
+// and split the odd numbers into an even number and a 1
+let a = [5, 4, -3, 20, 17, -33, -4, 18]
+//       |\  \  x   |  | \   x   x   |
+//      [4,1, 4,   20, 16, 1,       18]
+
+a.flatMap( (n) =&gt;
+  (n &lt; 0) ?      [] :
+  (n % 2 == 0) ? [n] :
+                 [n-1, 1]
+)
+
+// expected output: [4, 1, 4, 20, 16, 1, 18]</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-array.prototype.flatmap">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-array.prototype.flatmap</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>flatMap</code></p>
+<p>69</p>
+<p>79</p>
+<p>62</p>
+<p>No</p>
+<p>56</p>
+<p>12</p>
+<p>69</p>
+<p>69</p>
+<p>62</p>
+<p>48</p>
+<p>12</p>
+<p>10.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="flat"><code>Array.prototype.flat()</code></a></li>
+<li><a href="map"><code>Array.prototype.map()</code></a></li>
+<li><a href="reduce"><code>Array.prototype.reduce()</code></a></li>
+<li><a href="concat"><code>Array.prototype.concat()</code></a></li>
+<li><a href="https://github.com/behnammodi/polyfill/blob/master/array.polyfill.js">A polyfill</a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flatMap" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flatMap</a></p>
+</body>
+</html>

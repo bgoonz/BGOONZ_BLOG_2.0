@@ -1,40 +1,30 @@
----
-title: ZNC bouncer
+Start
+-----
 
-intro: |
-    A quick reference to the [ZNC](https://znc.bg) IRC bouncer's common commands.
----
+    /msg *status addserver irc.undernet.org [6667]
+    /msg *status connect
 
-## Start
+    /msg *status loadmod webadmin
+    /msg *status loadmod admin
+    /msg *status loadmod away
+    /msg *status loadmod awaynick
+    /msg *status loadmod clientnotify    # Notifies when another client logs
+    /msg *status loadmod keepnick
+    /msg *status loadmod kickrejoin
 
-```
-/msg *status addserver irc.undernet.org [6667]
-/msg *status connect
+Away
+----
 
-/msg *status loadmod webadmin
-/msg *status loadmod admin
-/msg *status loadmod away
-/msg *status loadmod awaynick
-/msg *status loadmod clientnotify    # Notifies when another client logs
-/msg *status loadmod keepnick
-/msg *status loadmod kickrejoin
-```
+    /msg *status loadmod away
+    /msg *away away
+    /msg *away back
+    /msg *away show   #=> Show messages
+    /msg *away delete all
 
-## Away
+Watch
+-----
 
-```
-/msg *status loadmod away
-/msg *away away
-/msg *away back
-/msg *away show   #=> Show messages
-/msg *away delete all
-```
-
-## Watch
-
-```
-/msg *status loadmod watch
-/msg *watch list
-/msg *watch add * *watch *rico*
-/msg *watch add * *watch *%nick%*
-```
+    /msg *status loadmod watch
+    /msg *watch list
+    /msg *watch add * *watch *rico*
+    /msg *watch add * *watch *%nick%*

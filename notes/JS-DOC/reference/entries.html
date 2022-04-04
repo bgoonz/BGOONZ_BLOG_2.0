@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>entries</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="object.entries">Object.entries()</h1>
+<p>The <code>Object.entries()</code> method returns an array of a given object’s own enumerable string-keyed property <code>[key, value]</code> pairs, in the same order as that provided by a <a href="../../statements/for...in"><code>for...in</code></a> loop. (The only important difference is that a <code>for...in</code> loop enumerates properties in the prototype chain as well).</p>
+<p>The order of the array returned by <code>Object.entries()</code> does not depend on how an object is defined. If there is a need for certain ordering, then the array should be sorted first, like <code>Object.entries(obj).sort((a, b) =&gt; b[0].localeCompare(a[0]));</code>.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>Object.entries(obj)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>obj</code><br />
+The object whose own enumerable string-keyed property <code>[key, value]</code> pairs are to be returned.</p>
+<h3 id="return-value">Return value</h3>
+<p>An array of the given object’s own enumerable string-keyed property <code>[key, value]</code> pairs.</p>
+<h2 id="description">Description</h2>
+<p><code>Object.entries()</code> returns an array whose elements are arrays corresponding to the enumerable string-keyed property <code>[key, value]</code> pairs found directly upon <code>object</code>. The ordering of the properties is the same as that given by looping over the property values of the object manually.</p>
+<h2 id="polyfill">Polyfill</h2>
+<p>To add compatible <code>Object.entries()</code> support in older environments that do not natively support it, you can use any of the following:</p>
+<ul>
+<li>a demonstration implementation of <code>Object.entries</code> in the <a href="https://github.com/tc39/proposal-object-values-entries">tc39/proposal-object-values-entries</a> (if you don’t need any support for IE);</li>
+<li>a polyfill in the <a href="https://github.com/es-shims/Object.entries">es-shims/Object.entries</a> repositories;</li>
+<li>or, you can use the simple, ready-to-deploy polyfill listed below:</li>
+</ul>
+<!-- -->
+<pre><code>if (!Object.entries) {
+  Object.entries = function( obj ){
+    var ownProps = Object.keys( obj ),
+        i = ownProps.length,
+        resArray = new Array(i); // preallocate the Array
+    while (i--)
+      resArray[i] = [ownProps[i], obj[ownProps[i]]];
+
+    return resArray;
+  };
+}</code></pre>
+<p>For the above polyfill code snippet, if you need support for IE&lt;9, then you will also need an <code>Object.keys()</code> polyfill (such as the one found on the <a href="keys"><code>Object.keys</code></a> page).</p>
+<h2 id="examples">Examples</h2>
+<pre><code>const obj = { foo: &#39;bar&#39;, baz: 42 };
+console.log(Object.entries(obj)); // [ [&#39;foo&#39;, &#39;bar&#39;], [&#39;baz&#39;, 42] ]
+
+// array like object
+const obj = { 0: &#39;a&#39;, 1: &#39;b&#39;, 2: &#39;c&#39; };
+console.log(Object.entries(obj)); // [ [&#39;0&#39;, &#39;a&#39;], [&#39;1&#39;, &#39;b&#39;], [&#39;2&#39;, &#39;c&#39;] ]
+
+// array like object with random key ordering
+const anObj = { 100: &#39;a&#39;, 2: &#39;b&#39;, 7: &#39;c&#39; };
+console.log(Object.entries(anObj)); // [ [&#39;2&#39;, &#39;b&#39;], [&#39;7&#39;, &#39;c&#39;], [&#39;100&#39;, &#39;a&#39;] ]
+
+// getFoo is property which isn&#39;t enumerable
+const myObj = Object.create({}, { getFoo: { value() { return this.foo; } } });
+myObj.foo = &#39;bar&#39;;
+console.log(Object.entries(myObj)); // [ [&#39;foo&#39;, &#39;bar&#39;] ]
+
+// non-object argument will be coerced to an object
+console.log(Object.entries(&#39;foo&#39;)); // [ [&#39;0&#39;, &#39;f&#39;], [&#39;1&#39;, &#39;o&#39;], [&#39;2&#39;, &#39;o&#39;] ]
+
+// returns an empty array for any primitive type except for strings (see the above example), since primitives have no own properties
+console.log(Object.entries(100)); // [ ]
+
+// iterate through key-value gracefully
+const obj = { a: 5, b: 7, c: 9 };
+for (const [key, value] of Object.entries(obj)) {
+  console.log(`${key}${value}`); // &quot;a 5&quot;, &quot;b 7&quot;, &quot;c 9&quot;
+}
+
+// Or, using array extras
+Object.entries(obj).forEach(([key, value]) =&gt; {
+  console.log(`${key}${value}`); // &quot;a 5&quot;, &quot;b 7&quot;, &quot;c 9&quot;
+});</code></pre>
+<h3 id="converting-an-object-to-a-map">Converting an <code>Object</code> to a <code>Map</code></h3>
+<p>The <a href="../map"><code>new Map()</code></a> constructor accepts an iterable of <code>entries</code>. With <code>Object.entries</code>, you can easily convert from <a href="../object"><code>Object</code></a> to <a href="../map"><code>Map</code></a>:</p>
+<pre><code>const obj = { foo: &#39;bar&#39;, baz: 42 };
+const map = new Map(Object.entries(obj));
+console.log(map); // Map(2) {&quot;foo&quot; =&gt; &quot;bar&quot;, &quot;baz&quot; =&gt; 42}</code></pre>
+<h3 id="iterating-through-an-object">Iterating through an <code>Object</code></h3>
+<p>Using <a href="../../operators/destructuring_assignment#array_destructuring">Array Destructuring</a>, you can iterate through objects easily.</p>
+<pre><code>const obj = { foo: &#39;bar&#39;, baz: 42 };
+Object.entries(obj).forEach(([key, value]) =&gt; console.log(`${key}: ${value}`)); // &quot;foo: bar&quot;, &quot;baz: 42&quot;</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-object.entries">ECMAScript (ECMA-262) <br/></p>
+<span class="small">The definition of ‘Object.entries’ in that specification.</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>entries</code></p>
+<p>54</p>
+<p>14</p>
+<p>47</p>
+<p>No</p>
+<p>41</p>
+<p>10.1</p>
+<p>54</p>
+<p>54</p>
+<p>47</p>
+<p>41</p>
+<p>10.3</p>
+<p>6.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties">Enumerability and ownership of properties</a></li>
+<li><a href="keys"><code>Object.keys()</code></a></li>
+<li><a href="values"><code>Object.values()</code></a></li>
+<li><a href="propertyisenumerable"><code>Object.prototype.propertyIsEnumerable()</code></a></li>
+<li><a href="create"><code>Object.create()</code></a></li>
+<li><a href="fromentries"><code>Object.fromEntries()</code></a></li>
+<li><a href="getownpropertynames"><code>Object.getOwnPropertyNames()</code></a></li>
+<li><a href="../map/entries"><code>Map.prototype.entries()</code></a></li>
+<li><a href="../map/keys"><code>Map.prototype.keys()</code></a></li>
+<li><a href="../map/values"><code>Map.prototype.values()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries</a></p>
+</body>
+</html>

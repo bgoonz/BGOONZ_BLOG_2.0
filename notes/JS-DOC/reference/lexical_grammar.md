@@ -1,28 +1,33 @@
-# Lexical grammar
+Lexical grammar
+===============
 
-This page describes JavaScript's lexical grammar. The source text of ECMAScript scripts gets scanned from left to right and is converted into a sequence of input elements which are tokens, control characters, line terminators, comments or [white space](https://developer.mozilla.org/en-US/docs/Glossary/Whitespace). ECMAScript also defines certain keywords and literals and has rules for automatic insertion of semicolons to end statements.
+This page describes JavaScript’s lexical grammar. The source text of ECMAScript scripts gets scanned from left to right and is converted into a sequence of input elements which are tokens, control characters, line terminators, comments or [white space](https://developer.mozilla.org/en-US/docs/Glossary/Whitespace). ECMAScript also defines certain keywords and literals and has rules for automatic insertion of semicolons to end statements.
 
-## Control characters
+Control characters
+------------------
 
 Control characters have no visual representation but are used to control the interpretation of the text.
 
-<table><caption>Unicode format-control characters</caption><thead><tr class="header"><th>Code point</th><th>Name</th><th>Abbreviation</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>U+200C</code></td><td>Zero width non-joiner</td><td>&lt;ZWNJ&gt;</td><td>Placed between characters to prevent being connected into ligatures in certain languages (<a href="https://en.wikipedia.org/wiki/Zero-width_non-joiner">Wikipedia</a>).</td></tr><tr class="even"><td><code>U+200D</code></td><td>Zero width joiner</td><td>&lt;ZWJ&gt;</td><td>Placed between characters that would not normally be connected in order to cause the characters to be rendered using their connected form in certain languages (<a href="https://en.wikipedia.org/wiki/Zero-width_joiner">Wikipedia</a>).</td></tr><tr class="odd"><td><code>U+FEFF</code></td><td>Byte order mark</td><td>&lt;BOM&gt;</td><td>Used at the start of the script to mark it as Unicode and the text's byte order (<a href="https://en.wikipedia.org/wiki/Byte_order_mark">Wikipedia</a>).</td></tr></tbody></table>
+<table><caption> Unicode format-control characters </caption><thead><tr class="header"><th>Code point</th><th>Name</th><th>Abbreviation</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>U+200C</code></td><td>Zero width non-joiner</td><td>&lt;ZWNJ&gt;</td><td>Placed between characters to prevent being connected into ligatures in certain languages (<a href="https://en.wikipedia.org/wiki/Zero-width_non-joiner">Wikipedia</a>).</td></tr><tr class="even"><td><code>U+200D</code></td><td>Zero width joiner</td><td>&lt;ZWJ&gt;</td><td>Placed between characters that would not normally be connected in order to cause the characters to be rendered using their connected form in certain languages (<a href="https://en.wikipedia.org/wiki/Zero-width_joiner">Wikipedia</a>).</td></tr><tr class="odd"><td><code>U+FEFF</code></td><td>Byte order mark</td><td>&lt;BOM&gt;</td><td>Used at the start of the script to mark it as Unicode and the text’s byte order (<a href="https://en.wikipedia.org/wiki/Byte_order_mark">Wikipedia</a>).</td></tr></tbody></table>
 
-## White space
+White space
+-----------
 
 [White space](https://developer.mozilla.org/en-US/docs/Glossary/Whitespace) characters improve the readability of source text and separate tokens from each other. These characters are usually unnecessary for the functionality of the code. [Minification tools](https://en.wikipedia.org/wiki/Minification_%28programming%29) are often used to remove whitespace in order to reduce the amount of data that needs to be transferred.
 
-<table><caption>White space characters</caption><thead><tr class="header"><th>Code point</th><th>Name</th><th>Abbreviation</th><th>Description</th><th>Escape sequence</th></tr></thead><tbody><tr class="odd"><td>U+0009</td><td>Character tabulation</td><td>&lt;HT&gt;</td><td>Horizontal tabulation</td><td>\t</td></tr><tr class="even"><td>U+000B</td><td>Line tabulation</td><td>&lt;VT&gt;</td><td>Vertical tabulation</td><td>\v</td></tr><tr class="odd"><td>U+000C</td><td>Form feed</td><td>&lt;FF&gt;</td><td>Page breaking control character (<a href="https://en.wikipedia.org/wiki/Page_break#Form_feed">Wikipedia</a>).</td><td>\f</td></tr><tr class="even"><td>U+0020</td><td>Space</td><td>&lt;SP&gt;</td><td>Normal space</td><td></td></tr><tr class="odd"><td>U+00A0</td><td>No-break space</td><td>&lt;NBSP&gt;</td><td>Normal space, but no point at which a line may break</td><td></td></tr><tr class="even"><td>Others</td><td>Other Unicode space characters</td><td>&lt;USP&gt;</td><td><a href="https://en.wikipedia.org/wiki/Space_%28punctuation%29#Spaces_in_Unicode">Spaces in Unicode on Wikipedia</a></td><td></td></tr></tbody></table>
+<table><caption> White space characters </caption><thead><tr class="header"><th>Code point</th><th>Name</th><th>Abbreviation</th><th>Description</th><th>Escape sequence</th></tr></thead><tbody><tr class="odd"><td>U+0009</td><td>Character tabulation</td><td>&lt;HT&gt;</td><td>Horizontal tabulation</td><td>/td&gt;</td></tr><tr class="even"><td>U+000B</td><td>Line tabulation</td><td>&lt;VT&gt;</td><td>Vertical tabulation</td><td>/td&gt;</td></tr><tr class="odd"><td>U+000C</td><td>Form feed</td><td>&lt;FF&gt;</td><td>Page breaking control character (<a href="https://en.wikipedia.org/wiki/Page_break#Form_feed">Wikipedia</a>).</td><td>/td&gt;</td></tr><tr class="even"><td>U+0020</td><td>Space</td><td>&lt;SP&gt;</td><td>Normal space</td><td></td></tr><tr class="odd"><td>U+00A0</td><td>No-break space</td><td>&lt;NBSP&gt;</td><td>Normal space, but no point at which a line may break</td><td></td></tr><tr class="even"><td>Others</td><td>Other Unicode space characters</td><td>&lt;USP&gt;</td><td><a href="https://en.wikipedia.org/wiki/Space_%28punctuation%29#Spaces_in_Unicode">Spaces in Unicode on Wikipedia</a></td><td></td></tr></tbody></table>
 
-## Line terminators
+Line terminators
+----------------
 
 In addition to [white space](https://developer.mozilla.org/en-US/docs/Glossary/Whitespace) characters, line terminator characters are used to improve the readability of the source text. However, in some cases, line terminators can influence the execution of JavaScript code as there are a few places where they are forbidden. Line terminators also affect the process of [automatic semicolon insertion](#automatic_semicolon_insertion). Line terminators are matched by the **\\s** class in [regular expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions).
 
 Only the following Unicode code points are treated as line terminators in ECMAScript, other line breaking characters are treated as white space (for example, Next Line, NEL, U+0085 is considered as white space).
 
-<table><caption>Line terminator characters</caption><thead><tr class="header"><th>Code point</th><th>Name</th><th>Abbreviation</th><th>Description</th><th>Escape sequence</th></tr></thead><tbody><tr class="odd"><td>U+000A</td><td>Line Feed</td><td>&lt;LF&gt;</td><td>New line character in UNIX systems.</td><td>\n</td></tr><tr class="even"><td>U+000D</td><td>Carriage Return</td><td>&lt;CR&gt;</td><td>New line character in Commodore and early Mac systems.</td><td>\r</td></tr><tr class="odd"><td>U+2028</td><td>Line Separator</td><td>&lt;LS&gt;</td><td><a href="https://en.wikipedia.org/wiki/Newline">Wikipedia</a></td><td></td></tr><tr class="even"><td>U+2029</td><td>Paragraph Separator</td><td>&lt;PS&gt;</td><td><a href="https://en.wikipedia.org/wiki/Newline">Wikipedia</a></td><td></td></tr></tbody></table>
+<table><caption> Line terminator characters </caption><thead><tr class="header"><th>Code point</th><th>Name</th><th>Abbreviation</th><th>Description</th><th>Escape sequence</th></tr></thead><tbody><tr class="odd"><td>U+000A</td><td>Line Feed</td><td>&lt;LF&gt;</td><td>New line character in UNIX systems.</td><td></td></tr><tr class="even"><td>U+000D</td><td>Carriage Return</td><td>&lt;CR&gt;</td><td>New line character in Commodore and early Mac systems.</td><td>/td&gt;</td></tr><tr class="odd"><td>U+2028</td><td>Line Separator</td><td>&lt;LS&gt;</td><td><a href="https://en.wikipedia.org/wiki/Newline">Wikipedia</a></td><td></td></tr><tr class="even"><td>U+2029</td><td>Paragraph Separator</td><td>&lt;PS&gt;</td><td><a href="https://en.wikipedia.org/wiki/Newline">Wikipedia</a></td><td></td></tr></tbody></table>
 
-## Comments
+Comments
+--------
 
 Comments are used to add hints, notes, suggestions, or warnings to JavaScript code. This can make it easier to read and understand. They can also be used to disable code to prevent it from being executed; this can be a valuable debugging tool.
 
@@ -69,9 +74,10 @@ In addition, you can use it to disable code to prevent it from running, by wrapp
     }
     comment();
 
-In this case, the `console.log()` call is never issued, since it's inside a comment. Any number of lines of code can be disabled this way.
+In this case, the `console.log()` call is never issued, since it’s inside a comment. Any number of lines of code can be disabled this way.
 
-## Hashbang comments
+Hashbang comments
+-----------------
 
 A specialized third comment syntax, the **hashbang comment**, is in the process of being standardized in ECMAScript (see the [Hashbang Grammar proposal](https://github.com/tc39/proposal-hashbang)).
 
@@ -83,13 +89,14 @@ The hashbang comment specifies the path to a specific JavaScript interpreter tha
 
     console.log("Hello world");
 
-**Note:** Hashbang comments in JavaScript mimic [shebangs in Unix](<https://en.wikipedia.org/wiki/Shebang_(Unix)>) used to run files with proper interpreter.
+**Note:** Hashbang comments in JavaScript mimic [shebangs in Unix](https://en.wikipedia.org/wiki/Shebang_(Unix)) used to run files with proper interpreter.
 
 **Warning:** Although [BOM](https://en.wikipedia.org/wiki/Byte_order_mark) before hashbang comment will work in a browser it is not advised to use BOM in a script with hasbang. BOM will not work when you try to run the script in Unix/Linux. So use UTF-8 without BOM if you want to run scripts directly from shell.
 
 You must only use the `#!` comment style to specify a JavaScript interpreter. In all other cases just use a `//` comment (or mulitiline comment).
 
-## Keywords
+Keywords
+--------
 
 ### Reserved keywords as of ECMAScript 2015
 
@@ -176,13 +183,13 @@ Additionally, the literals `null`, `true`, and `false` cannot be used as identif
 
 ### Reserved word usage
 
-Reserved words actually only apply to *Identifier*s (vs. *IdentifierName*s) . As described in [es5.github.com/\#A.1](https://es5.github.com/#A.1), these are all *IdentifierName*s which do not exclude _ReservedWords_.
+Reserved words actually only apply to *Identifier*s (vs. *IdentifierName*s) . As described in [es5.github.com/\#A.1](https://es5.github.com/#A.1), these are all *IdentifierName*s which do not exclude *ReservedWords*.
 
     a.import
     a['import']
     a = { import: 'test' }.
 
-On the other hand the following is illegal because it's an _Identifier_, which is an _IdentifierName_ without the reserved words. Identifiers are used for _FunctionDeclaration_, _FunctionExpression_, _VariableDeclaration_ and so on. _IdentifierNames_ are used for _MemberExpression_, _CallExpression_ and so on.
+On the other hand the following is illegal because it’s an *Identifier*, which is an *IdentifierName* without the reserved words. Identifiers are used for *FunctionDeclaration*, *FunctionExpression*, *VariableDeclaration* and so on. *IdentifierNames* are used for *MemberExpression*, *CallExpression* and so on.
 
     function import() {} // Illegal.
 
@@ -194,7 +201,8 @@ A few identifiers have a special meaning in some contexts without being keywords
 -   [`get`](functions/get)
 -   [`set`](functions/set)
 
-## Literals
+Literals
+--------
 
 ### Null literal
 
@@ -222,11 +230,11 @@ The [`Number`](global_objects/number) and [`BigInt`](global_objects/bigint) type
     0888 // 888 parsed as decimal
     0777 // parsed as octal, 511 in decimal
 
-Note that decimal literals can start with a zero (`0`) followed by another decimal digit, but If all digits after the leading `0` are smaller than 8, the number is interpreted as an octal number. This won't throw in JavaScript, see [bug 957513](https://bugzilla.mozilla.org/show_bug.cgi?id=957513). See also the page about [`parseInt()`](global_objects/parseint)
+Note that decimal literals can start with a zero (`0`) followed by another decimal digit, but If all digits after the leading `0` are smaller than 8, the number is interpreted as an octal number. This won’t throw in JavaScript, see [bug 957513](https://bugzilla.mozilla.org/show_bug.cgi?id=957513). See also the page about [`parseInt()`](global_objects/parseint)
 
 ##### Exponential
 
-The decimal exponential literal is specified by the following format: `beN`; where `b` is a base number (integer or floating), followed by `e` char (which serves as separator or _exponent indicator_) and `N`, which is _exponent_ or _power_ number - a signed integer (as per 2019 ECMA-262 specs):
+The decimal exponential literal is specified by the following format: `beN`; where `b` is a base number (integer or floating), followed by `e` char (which serves as separator or *exponent indicator*) and `N`, which is *exponent* or *power* number - a signed integer (as per 2019 ECMA-262 specs):
 
     0e-5   // => 0
     0e+5   // => 0
@@ -237,7 +245,7 @@ The decimal exponential literal is specified by the following format: `beN`; whe
 
 #### Binary
 
-Binary number syntax uses a leading zero followed by a lowercase or uppercase Latin letter "B" (`0b` or `0B`). Because this syntax is new in ECMAScript 2015, see the browser compatibility table, below. If the digits after the `0b` are not 0 or 1, the following [`SyntaxError`](global_objects/syntaxerror) is thrown: "Missing binary digits after 0b".
+Binary number syntax uses a leading zero followed by a lowercase or uppercase Latin letter “B” (`0b` or `0B`). Because this syntax is new in ECMAScript 2015, see the browser compatibility table, below. If the digits after the `0b` are not 0 or 1, the following [`SyntaxError`](global_objects/syntaxerror) is thrown: “Missing binary digits after 0b”.
 
     var FLT_SIGNBIT  = 0b10000000000000000000000000000000; // 2147483648
     var FLT_EXPONENT = 0b01111111100000000000000000000000; // 2139095040
@@ -245,7 +253,7 @@ Binary number syntax uses a leading zero followed by a lowercase or uppercase La
 
 #### Octal
 
-Octal number syntax uses a leading zero followed by a lowercase or uppercase Latin letter "O" (`0o` or `0O)`. Because this syntax is new in ECMAScript 2015, see the browser compatibility table, below. If the digits after the `0o` are outside the range (01234567), the following [`SyntaxError`](global_objects/syntaxerror) is thrown: "Missing octal digits after 0o".
+Octal number syntax uses a leading zero followed by a lowercase or uppercase Latin letter “O” (`0o` or `0O)`. Because this syntax is new in ECMAScript 2015, see the browser compatibility table, below. If the digits after the `0o` are outside the range (01234567), the following [`SyntaxError`](global_objects/syntaxerror) is thrown: “Missing octal digits after 0o”.
 
     var n = 0O755; // 493
     var m = 0o644; // 420
@@ -256,7 +264,7 @@ Octal number syntax uses a leading zero followed by a lowercase or uppercase Lat
 
 #### Hexadecimal
 
-Hexadecimal number syntax uses a leading zero followed by a lowercase or uppercase Latin letter "X" (`0x` or `0X)`. If the digits after 0x are outside the range (0123456789ABCDEF), the following [`SyntaxError`](global_objects/syntaxerror) is thrown: "Identifier starts immediately after numeric literal".
+Hexadecimal number syntax uses a leading zero followed by a lowercase or uppercase Latin letter “X” (`0x` or `0X)`. If the digits after 0x are outside the range (0123456789ABCDEF), the following [`SyntaxError`](global_objects/syntaxerror) is thrown: “Identifier starts immediately after numeric literal”.
 
     0xFFFFFFFFFFFFFFFFF // 295147905179352830000
     0x123456789ABCDEF   // 81985529216486900
@@ -271,12 +279,12 @@ The [`BigInt`](global_objects/bigint) type is a numeric primitive in JavaScript 
     0x123456789ABCDEFn      // 81985529216486895‬
     0b11101001010101010101n // 955733
 
-Note that legacy octal numbers with just a leading zero won't work for `BigInt`:
+Note that legacy octal numbers with just a leading zero won’t work for `BigInt`:
 
     // 0755n
     // SyntaxError: invalid BigInt syntax
 
-For octal `BigInt` numbers, always use zero followed by the letter "o" (uppercase or lowercase):
+For octal `BigInt` numbers, always use zero followed by the letter “o” (uppercase or lowercase):
 
     0o755n
 
@@ -396,7 +404,8 @@ See also [template strings](template_literals) for more information.
 
     tag `string text ${expression} string text`
 
-## Automatic semicolon insertion
+Automatic semicolon insertion
+-----------------------------
 
 Some [JavaScript statements](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements) must be terminated with semicolons and are therefore affected by automatic semicolon insertion (ASI):
 
@@ -410,17 +419,15 @@ Some [JavaScript statements](https://developer.mozilla.org/en-US/docs/Web/JavaSc
 
 The ECMAScript specification mentions [three rules of semicolon insertion](https://tc39.github.io/ecma262/#sec-rules-of-automatic-semicolon-insertion).
 
-1. A semicolon is inserted before, when a [Line terminator](#line_terminators) or "}" is encountered that is not allowed by the grammar.
+1.  A semicolon is inserted before, when a [Line terminator](#line_terminators) or “}” is encountered that is not allowed by the grammar.
 
-    { 1
-    2 } 3
+    { 1 2 } 3
 
     // is transformed by ASI into:
 
-    { 1
-    ;2 ;} 3;
+    { 1 ;2 ;} 3;
 
-2. A semicolon is inserted at the end, when the end of the input stream of tokens is detected and the parser is unable to parse the single input stream as a complete program.
+2.  A semicolon is inserted at the end, when the end of the input stream of tokens is detected and the parser is unable to parse the single input stream as a complete program.
 
 Here `++` is not treated as a [postfix operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#increment) applying to variable `b`, because a line terminator occurs between `b` and `++`.
 
@@ -432,7 +439,7 @@ Here `++` is not treated as a [postfix operator](https://developer.mozilla.org/e
     a = b;
     ++c;
 
-3. A semicolon is inserted at the end, when a statement with restricted productions in the grammar is followed by a line terminator. These statements with "no LineTerminator here" rules are:
+1.  A semicolon is inserted at the end, when a statement with restricted productions in the grammar is followed by a line terminator. These statements with “no LineTerminator here” rules are:
 
 -   PostfixExpressions (`++` and `--`)
 -   `continue`
@@ -451,12 +458,11 @@ Here `++` is not treated as a [postfix operator](https://developer.mozilla.org/e
     return;
     a + b;
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-ecmascript-language-lexical-grammar">ECMAScript (ECMA-262) 
-<br/>
-
-<span class="small">The definition of 'Lexical Grammar' in that specification.</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript (ECMA-262)<br />
+</p><span class="small">The definition of ‘Lexical Grammar’ in that specification.</span></td></tr></tbody></table>
 
 `array_literals`
 
@@ -900,7 +906,8 @@ No
 
 1.0
 
-## See also
+See also
+--------
 
 -   [Jeff Walden: Binary and octal numbers](https://whereswalden.com/2013/08/12/micro-feature-from-es6-now-in-firefox-aurora-and-nightly-binary-and-octal-numbers/)
 -   [Mathias Bynens: JavaScript character escape sequences](https://mathiasbynens.be/notes/javascript-escapes)

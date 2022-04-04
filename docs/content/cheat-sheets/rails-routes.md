@@ -1,9 +1,5 @@
----
-title: Routes
-category: Rails
----
-
-## Multiple resources (`resources`)
+Multiple resources (`resources`)
+--------------------------------
 
     resources :photos
 
@@ -44,7 +40,8 @@ category: Rails
       shalow_path: 'secret'
       shallow_prefix: 'secret'
 
-## Single resource (`resource`)
+Single resource (`resource`)
+----------------------------
 
     resource :coder
 
@@ -56,7 +53,8 @@ category: Rails
     # update =>    PUT /coder
     # delete => DELETE /coder
 
-## Matching (`match`)
+Matching (`match`)
+------------------
 
     match 'photo/:id' => 'photos#show'  # /photo/what-is-it
     match 'photo/:id', id: /[0-9]+/     # /photo/0192
@@ -198,5 +196,4 @@ category: Rails
 
 -   [Guides/Routing](http://guides.rubyonrails.org/routing.html)
 
--   [ActionDispatch::Routing::Mapper](http://api.rubyonrails.org/classes/ActionDispatch/Routing/Mapper.html)
-    (See included modules)
+-   [ActionDispatch::Routing::Mapper](http://api.rubyonrails.org/classes/ActionDispatch/Routing/Mapper.html) (See included modules)

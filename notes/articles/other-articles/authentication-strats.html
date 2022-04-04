@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>authentication-strats</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="authentication-strategies.js">authentication-strategies.js</h1>
+<blockquote>
+<p>GitHub API authentication strategies for Browsers, Node.js, and Deno</p>
+</blockquote>
+<!-- toc -->
+<ul>
+<li><a href="#authentication-strategiesjs">authentication-strategies.js</a>
+<ul>
+<li><a href="#official-authentication-strategies">Official Authentication Strategies</a>
+<ul>
+<li><a href="#personal-access-token-authentication">Personal Access Token authentication</a></li>
+<li><a href="#github-app-or-installation-authentication">GitHub App or installation authentication</a></li>
+<li><a href="#oauth-app-authentication">OAuth app authentication</a></li>
+<li><a href="#oauth-user-authentication">OAuth user authentication</a></li>
+<li><a href="#oauth-user-client-authentication">OAuth user client authentication</a></li>
+<li><a href="#device-authentication">Device authentication</a></li>
+<li><a href="#github-action-authentication">GitHub Action authentication</a></li>
+</ul></li>
+<li><a href="#other-strategies">Other Strategies</a>
+<ul>
+<li><a href="#unauthenticated">unauthenticated</a></li>
+<li><a href="#callback">callback</a></li>
+<li><a href="#netrc">.netrc</a></li>
+</ul></li>
+<li><a href="#how-authentication-strategies-work">How authentication strategies work</a>
+<ul>
+<li><a href="#authenticationstrategystrategyoptions"><code>authenticationStrategy(strategyOptions)</code></a></li>
+<li><a href="#auth-interface"><code>auth</code> interface</a></li>
+<li><a href="#the-authoptionsfactory-pattern">The <code>authOptions.factory</code> pattern</a></li>
+</ul></li>
+<li><a href="#create-your-own-octokit-authentication-strategy-module">Create your own Octokit authentication strategy module</a></li>
+<li><a href="#license">License</a></li>
+</ul></li>
+</ul>
+<!-- tocstop -->
+<h2 id="official-authentication-strategies">Official Authentication Strategies</h2>
+<h3 id="personal-access-token-authentication">Personal Access Token authentication</h3>
+<p><strong>Module</strong>: <a href="https://github.com/octokit/auth-token.js#readme"><code>@octokit/auth-token</code></a></p>
+<p>The simplest authentication strategy requires a user to create a personal access token at https://github.com/settings/tokens/new and pass it as the single argument to the <code>createTokenAuth()</code> function. You can pass in any other token such as an installation access token or a OAuth user access token, but there are dedicated startegies for the respective use cases which might be a better fit.</p>
+<p><code>@octokit/auth-token</code> is the default authentication strategy built into <a href="https://github.com/octokit/core.js/#authentication"><code>@octokit/core</code></a></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">const</span> auth <span class="op">=</span> <span class="at">createTokenAuth</span>(<span class="st">&#39;1234567890abcdef1234567890abcdef12345678&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="kw">const</span> <span class="op">{</span> token <span class="op">}</span> <span class="op">=</span> <span class="cf">await</span> <span class="at">auth</span>()<span class="op">;</span></a></code></pre></div>
+<h3 id="github-app-or-installation-authentication">GitHub App or installation authentication</h3>
+<p><strong>Module</strong>: <a href="https://github.com/octokit/auth-app.js#readme"><code>@octokit/auth-app</code></a> <strong>SDK</strong>: <a href="https://github.com/octokit/app.js#readme"><code>@octokit/app</code></a></p>
+<p>A GitHub app has four different means of authentication.</p>
+<ol type="1">
+<li><strong>It can authenticate as itself</strong> using a JWT (JSON Web Token) derived from the app ID and a private key. JWT authentication is required to iterate through installations and repositories, use the marketplace APIs, or to create installation access tokens.</li>
+<li><strong>It can authenticate as an installation</strong> using an installation access tokens. GitHub apps can be actors like GitHub users. They can create issues, manage teams, and much more. Installing a GitHub app grants access to a GitHub user account or organization, and either all or selected repositories. The installation inherits the app’s permissions at this point, they will not be altered if the app’s permissions change until the user/organization account owner accepts the new permissions. Installation access tokens expire after 1h, and they can be created with a subset of the installations permissions and accessible repositories.</li>
+<li><strong>It can authenticate as OAuth App</strong> using Basic Authentication derived from the client ID and a client secret. Basic authentication is required to create, reset, refresh, scope, and delete OAuth user authentication tokens. See also <a href="#oauth-app-authentication">OAuth App authentication</a></li>
+<li><strong>It can authenticate as user</strong> using an OAuth user-to-server access token. A user-to-server token authenticates as both a user and the app/installation. It can be created using the <a href="https://developer.github.com/apps/building-oauth-apps/authorizing-oauth-apps/#web-application-flow">OAuth web flow</a> or <a href="https://docs.github.com/en/developers/apps/authorizing-oauth-apps#device-flow">OAuth Device flow</a>. See also <a href="#oauth-user-authentication">OAuth user authentication</a></li>
+</ol>
+<h3 id="oauth-app-authentication">OAuth app authentication</h3>
+<p><strong>Module</strong>: <a href="https://github.com/octokit/auth-oauth-app.js#readme"><code>@octokit/auth-oauth-app</code></a> <strong>SDK</strong>: <a href="https://github.com/octokit/oauth-app.js#readme"><code>@octokit/oauth-app</code></a></p>
+<p>An OAuth app has two different means of authentication.</p>
+<ol start="3" type="1">
+<li><strong>It can authenticate as OAuth App</strong> using Basic Authentication derived from the client ID and a client secret. Basic authentication is required to create, reset, refresh, scope, and delete OAuth user authentication tokens.</li>
+<li><strong>It can authenticate as user</strong> using an OAuth user-to-server access token. A user-to-server token authenticates as both a user and the app/installation. It can be created using the <a href="https://developer.github.com/apps/building-oauth-apps/authorizing-oauth-apps/#web-application-flow">OAuth web flow</a> or <a href="https://docs.github.com/en/developers/apps/authorizing-oauth-apps#device-flow">OAuth Device flow</a>. See also <a href="#oauth-user-authentication">OAuth user authentication</a></li>
+</ol>
+<p>There are differences between <a href="https://docs.github.com/en/developers/apps/building-oauth-apps">OAuth Apps</a> and the OAuth features from <a href="https://docs.github.com/en/developers/apps/building-github-apps">GitHub Apps</a>:</p>
+<ul>
+<li>OAuth apps support scopes. Different scopes can be set each time a user-access token is created. They cannot be limited globally for the OAuth app.</li>
+<li>GitHub apps have permissions. The are set when the app is registered. The app cannot access any repository until it is installed by a user. The installation inherits the app’s permissions at the time of the installation. Permission changes need to be approved by the user.</li>
+<li>OAuth apps create OAuth user access tokens which have work the same on all repositories</li>
+<li>GitHub apps create OAuth user-to-server access tokens which inher both the app’s user permissions as well as each installation’s repository and user/organization permissions.</li>
+<li>GitHub apps can enable expiration for its user-to-server access tokens. OAuth apps do not have such a feature.</li>
+</ul>
+<h3 id="oauth-user-authentication">OAuth user authentication</h3>
+<p><strong>Module</strong>: <a href="https://github.com/octokit/auth-oauth-user.js#readme"><code>@octokit/auth-oauth-user</code></a></p>
+<p>OAuth user authentication be created by both OAuth Apps and GitHub Apps. OAuth Apps create OAuth user access tokens which are granted a set of scopes at the time of creation. GitHub apps create user-to-server tokens which authenticate as both a user and the app/installation. It can be created using the <a href="https://developer.github.com/apps/building-oauth-apps/authorizing-oauth-apps/#web-application-flow">OAuth web flow</a> or <a href="https://docs.github.com/en/developers/apps/authorizing-oauth-apps#device-flow">OAuth Device flow</a></p>
+<p>There are differences between <a href="https://docs.github.com/en/developers/apps/building-oauth-apps">OAuth Apps</a> and the OAuth features from <a href="https://docs.github.com/en/developers/apps/building-github-apps">GitHub Apps</a>, see the list in <a href="#oauth-app-authentication">OAuth app authentication</a>.</p>
+<p><strong>Important:</strong> <code>@octokit/auth-oauth-user</code> requires your app’s <code>client_secret</code>, which must not be exposed to users. If you are looking for an OAuth user authentication strategy that can be used on a client (browser, IoT, CLI), see <a href="#oauth-user-client-authentication">OAUth user client authentication</a> or <a href="#device-authentication">Device authentication</a></p>
+<h3 id="oauth-user-client-authentication">OAuth user client authentication</h3>
+<p>🚧 TBD, see https://github.com/octokit/auth-oauth-user-client.js#readme</p>
+<h3 id="device-authentication">Device authentication</h3>
+<p><strong>Module</strong>: <a href="https://github.com/octokit/auth-oauth-device.js#readme"><code>@octokit/auth-oauth-device</code></a></p>
+<p><a href="https://docs.github.com/en/developers/apps/authorizing-oauth-apps#device-flow">Device flow authentication</a> is a way to create OAuth user authentication. Unlike the <a href="https://docs.github.com/en/developers/apps/authorizing-oauth-apps#web-application-flow">web flow</a>, there is no http redirect required in order to retrieve an OAuth code for the user access token exchange. It also does not require the client secret, which makes it a great solution for IoT devices or CLI applications.</p>
+<p>Unfortunately the device flow cannot be used for browsers, as the APIs to request user/device codes and the user access token exchange are not enabled for cross-domain requests (CORS).</p>
+<p>There are differences between <a href="https://docs.github.com/en/developers/apps/building-oauth-apps">OAuth Apps</a> and the OAuth features from <a href="https://docs.github.com/en/developers/apps/building-github-apps">GitHub Apps</a>, see the list in <a href="#oauth-app-authentication">OAuth app authentication</a>.</p>
+<h3 id="github-action-authentication">GitHub Action authentication</h3>
+<p><strong>Module</strong>: <a href="https://github.com/octokit/auth-action.js#readme"><code>@octokit/auth-action</code></a> <strong>SDK</strong>: <a href="https://github.com/octokit/action.js#readme"><code>@octokit/action</code></a></p>
+<p>GitHub actions provide a <a href="https://docs.github.com/en/actions/reference/environment-variables#default-environment-variables"><code>secrets.GITHUB_TOKEN</code></a> variable which can be used to authenticate scripts run as part of a GitHub Action workflow.</p>
+<p>Technically, <code>secrets.GITHUB_TOKEN</code> is an installation access token that has all repository permissions but only access to the current repositories. It expires after 6h or when the current workflow step is completed. It cannot be renewed as the app ID and private key credentials are not exposed.</p>
+<h2 id="other-strategies">Other Strategies</h2>
+<h3 id="unauthenticated">unauthenticated</h3>
+<p><strong>Module</strong>: <a href="https://github.com/octokit/auth-unauthenticated.js#readme"><code>@octokit/auth-unauthenticated</code></a></p>
+<p>This authentication strategy is useful to provide a helpful error message when no valid authentication can be provided. An example is an event handler for the <a href="https://docs.github.com/en/developers/webhooks-and-events/webhook-events-and-payloads#installation"><code>installation</code> webhook event</a> when the action is <code>delete</code> or <code>suspend</code>. In this case the authorization for the installation has been revoked and no requests can be sent anymore. Instead of failing with a cryptic error message, <code>@octokit/auth-unauthenticated</code> can be used to explain that the access for the installation has been revoked.</p>
+<h3 id="callback">callback</h3>
+<p><strong>Module</strong>: <a href="https://github.com/octokit/auth-callback.js#readme"><code>@octokit/auth-callback</code></a></p>
+<p>This authentication strategy accepts a single <code>{ callback }</code> startegy option which returns either a falsy value or the string for a valid token. It’s great for single-page web applications where a user can sign in/sign out without the need to re-instantiate a new <code>octokit</code> instance each time.</p>
+<h3 id="netrc">.netrc</h3>
+<p><strong>Module</strong>: <a href="https://github.com/travi/octokit-auth-netrc/#readme"><code>octokit-auth-netrc</code></a></p>
+<p>Similar to <a href="#personal-access-token-authentication">token authentication</a>, but reads the token from your <code>~/.netrc</code> file</p>
+<p>Example</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="co">// expects a personal access token to be set as `login` in the `~/.netrc` file for `api.github.com`</span></a>
+<a class="sourceLine" id="cb2-2" title="2"><span class="kw">const</span> <span class="op">{</span> createNetrcAuth <span class="op">}</span> <span class="op">=</span> <span class="at">require</span>(<span class="st">&#39;octokit-netrc-auth&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-3" title="3"><span class="kw">const</span> auth <span class="op">=</span> <span class="at">createNetrcAuth</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-4" title="4"><span class="kw">const</span> <span class="op">{</span> token <span class="op">}</span> <span class="op">=</span> <span class="cf">await</span> <span class="at">auth</span>()<span class="op">;</span></a></code></pre></div>
+<p>See <a href="https://github.com/travi/octokit-auth-netrc">octokit-auth-netrc</a> for more details.</p>
+<h2 id="how-authentication-strategies-work">How authentication strategies work</h2>
+<p>All authentication strategies implement the same interface</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">const</span> auth <span class="op">=</span> <span class="at">authenticationStrategy</span>(strategyOptions)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-2" title="2"><span class="kw">const</span> authentication <span class="op">=</span> <span class="cf">await</span> <span class="at">auth</span>(authOptions)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-3" title="3"><span class="va">auth</span>.<span class="at">hook</span>(request<span class="op">,</span> route<span class="op">,</span> parameters)<span class="op">;</span></a></code></pre></div>
+<p>It can be used with an <code>Octokit</code> constructor by setting the <code>authStrategy</code> and <code>auth</code> constructor options. <code>auth.hook</code> is automatically applied to all requests sent by the <code>octokit</code> instance.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb4-1" title="1"><span class="kw">const</span> octokit <span class="op">=</span> <span class="kw">new</span> <span class="at">Octokit</span>(<span class="op">{</span></a>
+<a class="sourceLine" id="cb4-2" title="2">    <span class="dt">authStrategy</span><span class="op">:</span> authenticationStrategy<span class="op">,</span></a>
+<a class="sourceLine" id="cb4-3" title="3">    <span class="dt">auth</span><span class="op">:</span> strategyOptions</a>
+<a class="sourceLine" id="cb4-4" title="4"><span class="op">}</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-5" title="5"></a>
+<a class="sourceLine" id="cb4-6" title="6"><span class="kw">const</span> authentication <span class="op">=</span> <span class="cf">await</span> <span class="va">octokit</span>.<span class="at">auth</span>(authOptions)<span class="op">;</span></a></code></pre></div>
+<p>This interface an auth strategy to hook into a request lifecycle, implement request retries if necessary or transparent on-demand authentication creation.</p>
+<p>For example, when implementing a GitHub App which acts on webhook events, a pre-authenticated <code>octokit</code> instance should be provided to the event handler. But an installation access token should not be created until a request is sent in that event handler.</p>
+<p>In other cases, tokens might be invalid due to out-of-sync time between GitHub’s API servers and yours. The time difference can be detected and corrected with an additional request.</p>
+<h3 id="authenticationstrategystrategyoptions"><code>authenticationStrategy(strategyOptions)</code></h3>
+<p>The authentication strategy is a synchronous method which returns the <code>auth</code> interface. <code>strategyOptions</code> can be optional, but must always be an object.</p>
+<h3 id="auth-interface"><code>auth</code> interface</h3>
+<p>The <code>auth</code> interface is an asynchronous function which accepts <code>authOptions</code> and resolves with an <code>authentication</code> object. <code>authOptions</code> can be optional, but must always be an object. The <code>auth</code> interface also provides an <code>auth.hook</code> interface which can be used to hook into the request lifecycle of <a href="https://github.com/octokit/request.js/#readme"><code>@octokit/request</code></a> (see <code>options.request.hook</code>) or <code>octokit.request</code>.</p>
+<h3 id="the-authoptions.factory-pattern">The <code>authOptions.factory</code> pattern</h3>
+<p>In some cases, <code>auth(authOptions)</code> needs to resolve with another <code>auth</code> interface, or <code>octokit.auth(authOptions)</code> with another <code>octokit</code> instance. For example, when using the GitHub App authentication strategy (<a href="https://github.com/octokit/auth-app.js/#readme"><code>@octokit/auth-app</code></a>), the auth interface has an internal state that caches the installation access tokens it created for reusability</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">const</span> appOctokit <span class="op">=</span> <span class="kw">new</span> <span class="at">Octokit</span>(<span class="op">{</span></a>
+<a class="sourceLine" id="cb5-2" title="2">  <span class="dt">authStrategy</span><span class="op">:</span> createAppAuth</a>
+<a class="sourceLine" id="cb5-3" title="3">  <span class="dt">auth</span><span class="op">:</span> <span class="op">{</span> appId<span class="op">,</span> privateKey <span class="op">}</span></a>
+<a class="sourceLine" id="cb5-4" title="4"><span class="op">}</span>)</a>
+<a class="sourceLine" id="cb5-5" title="5"></a>
+<a class="sourceLine" id="cb5-6" title="6"><span class="kw">const</span> installationAuthentication <span class="op">=</span> <span class="va">appOctokit</span>.<span class="at">auth</span>(<span class="op">{</span></a>
+<a class="sourceLine" id="cb5-7" title="7">  <span class="dt">type</span><span class="op">:</span> <span class="st">&quot;installation&quot;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb5-8" title="8">  installationId</a>
+<a class="sourceLine" id="cb5-9" title="9"><span class="op">}</span>)</a></code></pre></div>
+<p>This internal state would get lost if a separate <code>octokit</code> instance would be created for an installation</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb6-1" title="1"><span class="kw">const</span> appOctokit <span class="op">=</span> <span class="kw">new</span> <span class="at">Octokit</span>(<span class="op">{</span></a>
+<a class="sourceLine" id="cb6-2" title="2">    <span class="dt">authStrategy</span><span class="op">:</span> createAppAuth<span class="op">,</span></a>
+<a class="sourceLine" id="cb6-3" title="3">    <span class="dt">auth</span><span class="op">:</span> <span class="op">{</span> appId<span class="op">,</span> privateKey <span class="op">}</span></a>
+<a class="sourceLine" id="cb6-4" title="4"><span class="op">}</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb6-5" title="5"></a>
+<a class="sourceLine" id="cb6-6" title="6"><span class="kw">const</span> installationOctokit <span class="op">=</span> <span class="kw">new</span> <span class="at">Octokit</span>(<span class="op">{</span></a>
+<a class="sourceLine" id="cb6-7" title="7">    <span class="dt">authStrategy</span><span class="op">:</span> createAppAuth<span class="op">,</span></a>
+<a class="sourceLine" id="cb6-8" title="8">    <span class="dt">auth</span><span class="op">:</span> <span class="op">{</span> appId<span class="op">,</span> privateKey<span class="op">,</span> installationId <span class="op">}</span></a>
+<a class="sourceLine" id="cb6-9" title="9"><span class="op">}</span>)<span class="op">;</span></a></code></pre></div>
+<p>Instead, <code>installationOctokit</code> can be created from <code>appOctokit.auth</code>, and both can share the cached installation access tokens</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb7-1" title="1"><span class="kw">const</span> appOctokit <span class="op">=</span> <span class="kw">new</span> <span class="at">Octokit</span>(<span class="op">{</span></a>
+<a class="sourceLine" id="cb7-2" title="2">    <span class="dt">authStrategy</span><span class="op">:</span> createAppAuth<span class="op">,</span></a>
+<a class="sourceLine" id="cb7-3" title="3">    <span class="dt">auth</span><span class="op">:</span> <span class="op">{</span> appId<span class="op">,</span> privateKey <span class="op">}</span></a>
+<a class="sourceLine" id="cb7-4" title="4"><span class="op">}</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb7-5" title="5"></a>
+<a class="sourceLine" id="cb7-6" title="6"><span class="kw">const</span> installationOctokit <span class="op">=</span> <span class="va">appOctokit</span>.<span class="at">auth</span>(<span class="op">{</span></a>
+<a class="sourceLine" id="cb7-7" title="7">    <span class="dt">type</span><span class="op">:</span> <span class="st">&#39;installation&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb7-8" title="8">    installationId<span class="op">,</span></a>
+<a class="sourceLine" id="cb7-9" title="9">    <span class="dt">factory</span><span class="op">:</span> (<span class="op">{</span> octokitOptions<span class="op">,</span> ...<span class="at">auth</span> <span class="op">}</span>) <span class="kw">=&gt;</span> <span class="kw">new</span> <span class="at">Octokit</span>(<span class="op">{</span> ...<span class="at">octokitOptions</span><span class="op">,</span> auth <span class="op">}</span>)</a>
+<a class="sourceLine" id="cb7-10" title="10"><span class="op">}</span>)<span class="op">;</span></a></code></pre></div>
+<h2 id="create-your-own-octokit-authentication-strategy-module">Create your own Octokit authentication strategy module</h2>
+<p>Use <a href="https://github.com/octokit/create-octokit-project.js/"><code>create-octokit-project</code></a>, follow instructions, and send a pull request to add your own strategy to this README</p>
+<pre><code>npm init octokit-project</code></pre>
+<figure>
+<img src="assets/create-octokit-project.png" alt="Screenshot of a terminall running npm init octokit-project" /><figcaption>Screenshot of a terminall running npm init octokit-project</figcaption>
+</figure>
+<h2 id="license">License</h2>
+<p>MIT</p>
+</body>
+</html>

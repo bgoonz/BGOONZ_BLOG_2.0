@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>sharedarraybuffer</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="sharedarraybuffer">SharedArrayBuffer</h1>
+<p>The <code>SharedArrayBuffer</code> object is used to represent a generic, fixed-length raw binary data buffer, similar to the <a href="arraybuffer"><code>ArrayBuffer</code></a> object, but in a way that they can be used to create views on shared memory. Unlike an <code>ArrayBuffer</code>, a <code>SharedArrayBuffer</code> cannot become detached.</p>
+<h2 id="description">Description</h2>
+<h3 id="allocating-and-sharing-memory">Allocating and sharing memory</h3>
+<p>To share memory using <a href="sharedarraybuffer"><code>SharedArrayBuffer</code></a> objects from one agent in the cluster to another (an agent is either the web page’s main program or one of its web workers), <code>postMessage</code> and <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Structured_clone_algorithm">structured cloning</a> is used.</p>
+<p>The structured clone algorithm accepts <code>SharedArrayBuffers</code> and <code>TypedArrays</code> mapped onto <code>SharedArrayBuffers</code>. In both cases, the <code>SharedArrayBuffer</code> object is transmitted to the receiver resulting in a new, private SharedArrayBuffer object in the receiving agent (just as for <a href="arraybuffer"><code>ArrayBuffer</code></a>). However, the shared data block referenced by the two <code>SharedArrayBuffer</code> objects is the same data block, and a side effect to the block in one agent will eventually become visible in the other agent.</p>
+<pre><code>var sab = new SharedArrayBuffer(1024);
+worker.postMessage(sab);</code></pre>
+<h3 id="updating-and-synchronizing-shared-memory-with-atomic-operations">Updating and synchronizing shared memory with atomic operations</h3>
+<p>Shared memory can be created and updated simultaneously in workers or the main thread. Depending on the system (the CPU, the OS, the Browser) it can take a while until the change is propagated to all contexts. To synchronize, <a href="atomics">atomic</a> operations are needed.</p>
+<h3 id="apis-which-use-sharedarraybuffer-objects">APIs which use SharedArrayBuffer objects</h3>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/bufferData"><code>WebGLRenderingContext.bufferData()</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/bufferSubData"><code>WebGLRenderingContext.bufferSubData()</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/getBufferSubData"><code>WebGL2RenderingContext.getBufferSubData()</code></a></li>
+</ul>
+<h3 id="security-requirements">Security requirements</h3>
+<p>Shared memory and high-resolution timers were effectively <a href="https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/">disabled at the start of 2018</a> in light of <a href="https://en.wikipedia.org/wiki/Spectre_(security_vulnerability)">Spectre</a>. In 2020, a new, secure approach has been standardized to re-enable shared memory. With a few security measures, <code>postMessage()</code> will no longer throw for <code>SharedArrayBuffer</code> objects and shared memory across threads will be available:</p>
+<p>As a baseline requirement, your document needs to be in a <a href="https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts">secure context</a>.</p>
+<p>For top-level documents, two headers will need to be set to cross-origin isolate your site:</p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cross-Origin-Opener-Policy"><code>Cross-Origin-Opener-Policy</code></a> with <code>same-origin</code> as value (protects your origin from attackers)</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cross-Origin-Embedder-Policy"><code>Cross-Origin-Embedder-Policy</code></a> with <code>require-corp</code> as value (protects victims from your origin)</li>
+</ul>
+<!-- -->
+<pre><code>Cross-Origin-Opener-Policy: same-origin
+Cross-Origin-Embedder-Policy: require-corp</code></pre>
+<p>To check if cross origin isolation has been successful, you can test against the <code>crossOriginIsolated</code> property available to window and worker contexts:</p>
+<pre><code>if (crossOriginIsolated) {
+  // Post SharedArrayBuffer
+} else {
+  // Do something else
+}</code></pre>
+<p>See also <a href="sharedarraybuffer/planned_changes">Planned changes to shared memory</a> which is starting to roll out to browsers (Firefox 79, for example.)</p>
+<h3 id="always-use-the-new-operator-to-create-a-sharedarraybuffer">Always use the new operator to create a SharedArrayBuffer</h3>
+<p><code>SharedArrayBuffer</code> constructors are required to be constructed with a <a href="../operators/new"><code>new</code></a> operator. Calling a <code>SharedArrayBuffer</code> constructor as a function without <code>new</code> will throw a <a href="typeerror"><code>TypeError</code></a>.</p>
+<pre><code>var sab = SharedArrayBuffer(1024);
+// TypeError: calling a builtin SharedArrayBuffer constructor
+// without new is forbidden
+
+var sab = new SharedArrayBuffer(1024);</code></pre>
+<h2 id="constructor">Constructor</h2>
+<p><a href="sharedarraybuffer/sharedarraybuffer"><code>SharedArrayBuffer()</code></a><br />
+Creates a new <code>SharedArrayBuffer</code> object.</p>
+<h2 id="instance-properties">Instance properties</h2>
+<p><a href="sharedarraybuffer/bytelength"><code>SharedArrayBuffer.prototype.byteLength</code></a><br />
+The size, in bytes, of the array. This is established when the array is constructed and cannot be changed. <strong>Read only.</strong></p>
+<h2 id="instance-methods">Instance methods</h2>
+<p><a href="sharedarraybuffer/slice"><code>SharedArrayBuffer.prototype.slice(begin, end)</code></a><br />
+Returns a new <code>SharedArrayBuffer</code> whose contents are a copy of this <code>SharedArrayBuffer</code>’s bytes from <code>begin</code>, inclusive, up to <code>end</code>, exclusive. If either <code>begin</code> or <code>end</code> is negative, it refers to an index from the end of the array, as opposed to from the beginning.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="creating-a-new-sharedarraybuffer">Creating a new SharedArrayBuffer</h3>
+<pre><code>var sab = new SharedArrayBuffer(1024);</code></pre>
+<h3 id="slicing-the-sharedarraybuffer">Slicing the SharedArrayBuffer</h3>
+<pre><code>sab.slice();    // SharedArrayBuffer { byteLength: 1024 }
+sab.slice(2);   // SharedArrayBuffer { byteLength: 1022 }
+sab.slice(-2);  // SharedArrayBuffer { byteLength: 2 }
+sab.slice(0, 1); // SharedArrayBuffer { byteLength: 1 }</code></pre>
+<h3 id="using-it-in-a-webgl-buffer">Using it in a WebGL buffer</h3>
+<pre><code>const canvas = document.querySelector(&#39;canvas&#39;);
+const gl = canvas.getContext(&#39;webgl&#39;);
+const buffer = gl.createBuffer();
+gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
+gl.bufferData(gl.ARRAY_BUFFER, sab, gl.STATIC_DRAW);</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-sharedarraybuffer-objects">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-sharedarraybuffer-objects</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>SharedArrayBuffer</code></p>
+<p>68</p>
+<p>60-63</p>
+<p>Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place.</p>
+<p>79</p>
+<p>16-17</p>
+<p>Support was removed to mitigate <a href="https://blogs.windows.com/msedgedev/2018/01/03/speculative-execution-mitigations-microsoft-edge-internet-explorer">speculative execution side-channel attacks (Windows blog)</a>.</p>
+<p>79</p>
+<p>57</p>
+<p>Support was disabled by default to mitigate <a href="https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/">speculative execution side-channel attacks (Mozilla Security Blog)</a>.</p>
+<p>55-57</p>
+<p>46-55</p>
+<p>No</p>
+<p>No</p>
+<p>10.1-11</p>
+<p>60-63</p>
+<p>Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p>89</p>
+<p><code>SharedArrayBuffer</code> is gated behind COOP/COEP. For more detail, read <a href="https://web.dev/coop-coep/">Making your website “cross-origin isolated” using COOP and COEP</a>.</p>
+<p>60-63</p>
+<p>Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p>79</p>
+<p>57</p>
+<p>Support was disabled by default to mitigate <a href="https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/">speculative execution side-channel attacks (Mozilla Security Blog)</a>.</p>
+<p>55-57</p>
+<p>46-55</p>
+<p>No</p>
+<p>10.3-11</p>
+<p>No</p>
+<p>Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p><code>SharedArrayBuffer</code></p>
+<p>68</p>
+<p>60-63</p>
+<p>Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place.</p>
+<p>79</p>
+<p>16-17</p>
+<p>Support was removed to mitigate <a href="https://blogs.windows.com/msedgedev/2018/01/03/speculative-execution-mitigations-microsoft-edge-internet-explorer">speculative execution side-channel attacks (Windows blog)</a>.</p>
+<p>79</p>
+<p>57</p>
+<p>Support was disabled by default to mitigate <a href="https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/">speculative execution side-channel attacks (Mozilla Security Blog)</a>.</p>
+<p>55-57</p>
+<p>46-55</p>
+<p>No</p>
+<p>No</p>
+<p>10.1-11</p>
+<p>60-63</p>
+<p>Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p>89</p>
+<p><code>SharedArrayBuffer</code> is gated behind COOP/COEP. For more detail, read <a href="https://web.dev/coop-coep/">Making your website “cross-origin isolated” using COOP and COEP</a>.</p>
+<p>60-63</p>
+<p>Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p>79</p>
+<p>57</p>
+<p>Support was disabled by default to mitigate <a href="https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/">speculative execution side-channel attacks (Mozilla Security Blog)</a>.</p>
+<p>55-57</p>
+<p>46-55</p>
+<p>No</p>
+<p>10.3-11</p>
+<p>No</p>
+<p>Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p><code>byteLength</code></p>
+<p>68</p>
+<p>60-63</p>
+<p>Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place.</p>
+<p>79</p>
+<p>16-17</p>
+<p>Support was removed to mitigate <a href="https://blogs.windows.com/msedgedev/2018/01/03/speculative-execution-mitigations-microsoft-edge-internet-explorer">speculative execution side-channel attacks (Windows blog)</a>.</p>
+<p>79</p>
+<p>57</p>
+<p>Support was disabled by default to mitigate <a href="https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/">speculative execution side-channel attacks (Mozilla Security Blog)</a>.</p>
+<p>55-57</p>
+<p>46-55</p>
+<p>No</p>
+<p>No</p>
+<p>10.1-11</p>
+<p>60-63</p>
+<p>Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p>89</p>
+<p><code>SharedArrayBuffer</code> is gated behind COOP/COEP. For more detail, read <a href="https://web.dev/coop-coep/">Making your website “cross-origin isolated” using COOP and COEP</a>.</p>
+<p>60-63</p>
+<p>Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p>79</p>
+<p>57</p>
+<p>Support was disabled by default to mitigate <a href="https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/">speculative execution side-channel attacks (Mozilla Security Blog)</a>.</p>
+<p>55-57</p>
+<p>46-55</p>
+<p>No</p>
+<p>10.3-11</p>
+<p>No</p>
+<p>Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p><code>slice</code></p>
+<p>68</p>
+<p>60-63</p>
+<p>Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place.</p>
+<p>79</p>
+<p>16-17</p>
+<p>Support was removed to mitigate <a href="https://blogs.windows.com/msedgedev/2018/01/03/speculative-execution-mitigations-microsoft-edge-internet-explorer">speculative execution side-channel attacks (Windows blog)</a>.</p>
+<p>79</p>
+<p>57</p>
+<p>Support was disabled by default to mitigate <a href="https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/">speculative execution side-channel attacks (Mozilla Security Blog)</a>.</p>
+<p>55-57</p>
+<p>46-55</p>
+<p>No</p>
+<p>No</p>
+<p>10.1-11</p>
+<p>60-63</p>
+<p>Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p>89</p>
+<p><code>SharedArrayBuffer</code> is gated behind COOP/COEP. For more detail, read <a href="https://web.dev/coop-coep/">Making your website “cross-origin isolated” using COOP and COEP</a>.</p>
+<p>60-63</p>
+<p>Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p>79</p>
+<p>57</p>
+<p>Support was disabled by default to mitigate <a href="https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/">speculative execution side-channel attacks (Mozilla Security Blog)</a>.</p>
+<p>55-57</p>
+<p>46-55</p>
+<p>No</p>
+<p>10.3-11</p>
+<p>No</p>
+<p>Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="atomics"><code>Atomics</code></a></li>
+<li><a href="arraybuffer"><code>ArrayBuffer</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays">JavaScript typed arrays</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API">Web Workers</a></li>
+<li><a href="https://github.com/lars-t-hansen/parlib-simple">parlib-simple</a> - a simple library providing synchronization and work distribution abstractions.</li>
+<li><a href="https://github.com/tc39/ecmascript_sharedmem/blob/master/TUTORIAL.md">Shared Memory - a brief tutorial</a></li>
+<li><a href="https://hacks.mozilla.org/2016/05/a-taste-of-javascripts-new-parallel-primitives/">A Taste of JavaScript’s New Parallel Primitives - Mozilla Hacks</a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer</a></p>
+</body>
+</html>

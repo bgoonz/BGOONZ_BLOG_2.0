@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>generatorfunction</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="generatorfunction">GeneratorFunction</h1>
+<p>The <code>GeneratorFunction</code> creates a new <a href="../statements/function*">generator function</a> object. In JavaScript, every generator function is actually a <code>GeneratorFunction</code> object.</p>
+<p>Note that <code>GeneratorFunction</code> is not a global object. It could be obtained by evaluating the following code.</p>
+<pre><code>Object.getPrototypeOf(function*(){}).constructor</code></pre>
+<h2 id="syntax">Syntax</h2>
+<pre><code>new Function(arg1, functionBody)
+new Function(arg1, arg2, functionBody)
+new Function(arg1, ... , argN, functionBody)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>arg1, arg2, ... argN</code><br />
+Names to be used by the function as formal argument names. Each must be a string that corresponds to a valid JavaScript identifier or a list of such strings separated with a comma; for example “<code>x</code>”, “<code>theValue</code>”, or “<code>a,b</code>”.</p>
+<p><code>functionBody</code><br />
+A string containing the JavaScript statements comprising the function definition.</p>
+<h2 id="description">Description</h2>
+<p><a href="../statements/function*"><code>generator function</code></a> objects created with the <code>GeneratorFunction</code> constructor are parsed when the function is created. This is less efficient than declaring a generator function with a <a href="../statements/function*"><code>function* expression</code></a> and calling it within your code, because such functions are parsed with the rest of the code.</p>
+<p>All arguments passed to the function are treated as the names of the identifiers of the parameters in the function to be created, in the order in which they are passed.</p>
+<p><strong>Note:</strong> <a href="../statements/function*"><code>generator function</code></a> created with the <code>GeneratorFunction</code> constructor do not create closures to their creation contexts; they are always created in the global scope.</p>
+<p>When running them, they will only be able to access their own local variables and global ones, not the ones from the scope in which the <code>GeneratorFunction</code> constructor was called.</p>
+<p>This is different from using <a href="eval"><code>eval</code></a> with code for a generator function expression.</p>
+<p>Invoking the <code>GeneratorFunction</code> constructor as a function (without using the <code>new</code> operator) has the same effect as invoking it as a constructor.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="creating-a-generator-function-from-a-generatorfunction-constructor">Creating a generator function from a GeneratorFunction() constructor</h3>
+<pre><code>var GeneratorFunction = Object.getPrototypeOf(function*(){}).constructor
+var g = new GeneratorFunction(&#39;a&#39;, &#39;yield a * 2&#39;);
+var iterator = g(10);
+console.log(iterator.next().value); // 20</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-generatorfunction-objects">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-generatorfunction-objects</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>GeneratorFunction</code></p>
+<p>39</p>
+<p>13</p>
+<p>26</p>
+<p>No</p>
+<p>26</p>
+<p>10</p>
+<p>39</p>
+<p>39</p>
+<p>26</p>
+<p>26</p>
+<p>10</p>
+<p>4.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../statements/function*">function* function</a></li>
+<li><a href="../operators/function*">function* expression</a></li>
+<li><a href="function"><code>Function</code></a></li>
+<li><a href="../statements/function">function statement</a></li>
+<li><a href="../operators/function">function expression</a></li>
+<li><a href="../functions">Functions and function scope</a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction</a></p>
+</body>
+</html>

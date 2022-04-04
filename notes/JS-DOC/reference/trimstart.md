@@ -1,8 +1,10 @@
-# String.prototype.trimStart()
+String.prototype.trimStart()
+============================
 
 The `trimStart()` method removes whitespace from the beginning of a string. `trimLeft()` is an alias of this method.
 
-## Syntax
+Syntax
+------
 
     trimStart()
 
@@ -20,7 +22,8 @@ For consistency with functions like [`String.prototype.padStart`](padstart) the 
 
     String.prototype.trimLeft.name === "trimStart";
 
-## Examples
+Examples
+--------
 
 ### Using trimStart()
 
@@ -34,7 +37,8 @@ The following example displays the lowercase string `'foo '`:
     console.log(str.length); // 5
     console.log(str);        // 'foo  '
 
-## Polyfill
+Polyfill
+--------
 
     //https://github.com/FabioVergani/js-Polyfill_String-trimStart
 
@@ -69,14 +73,14 @@ The following example displays the lowercase string `'foo '`:
     })(window);
     */
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.trimstart">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-string.prototype.trimstart</span></td></tr></tbody></table>
 
-<span class="small">#sec-string.prototype.trimstart</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -148,11 +152,11 @@ No
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`String.prototype.trim()`](trim)
 -   [`String.prototype.trimEnd()`](trimend)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trimStart" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trimStart</a>

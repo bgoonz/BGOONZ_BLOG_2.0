@@ -1,20 +1,25 @@
-# Warning: JavaScript 1.6's for-each-in loops are deprecated
+Warning: JavaScript 1.6’s for-each-in loops are deprecated
+==========================================================
 
-The JavaScript warning "JavaScript 1.6's for-each-in loops are deprecated; consider using ES6 for-of instead" occurs when a <span class="page-not-created">`for each (variable in obj)`</span> statement is used.
+The JavaScript warning “JavaScript 1.6’s for-each-in loops are deprecated; consider using ES6 for-of instead” occurs when a <span class="page-not-created">`for each (variable in obj)`</span> statement is used.
 
-## Message
+Message
+-------
 
     Warning: JavaScript 1.6's for-each-in loops are deprecated; consider using ES6 for-of instead
 
-## Error type
+Error type
+----------
 
 Warning
 
-## What went wrong?
+What went wrong?
+----------------
 
-JavaScript 1.6's <span class="page-not-created">`for each (variable in obj)`</span> statement is deprecated, and will be removed in the near future.
+JavaScript 1.6’s <span class="page-not-created">`for each (variable in obj)`</span> statement is deprecated, and will be removed in the near future.
 
-## Examples
+Examples
+--------
 
 ### Object iteration
 
@@ -108,11 +113,11 @@ To rewrite <span class="page-not-created">`for each...in`</span> statements so t
     func(null);            // prints nothing
     func(undefined);       // prints nothing
 
-### Iterating over an object's key-value pair
+### Iterating over an object’s key-value pair
 
 #### Deprecated syntax
 
-There's a deprecated idiom to iterate over the specified object's key-value pairs using <span class="page-not-created">`for each...in`</span> and the deprecated <span class="page-not-created">`Iterator`</span> object.
+There’s a deprecated idiom to iterate over the specified object’s key-value pairs using <span class="page-not-created">`for each...in`</span> and the deprecated <span class="page-not-created">`Iterator`</span> object.
 
     var object = { a: 10, b: 20 };
 
@@ -142,7 +147,8 @@ Or, using [`for...of`](../statements/for...of) (ES2015) and [`Object.entries`](.
                                 // "b", 20
     }
 
-## See also
+See also
+--------
 
 -   [`for...of`](../statements/for...of)
 -   [`Object.values`](../global_objects/object/values)

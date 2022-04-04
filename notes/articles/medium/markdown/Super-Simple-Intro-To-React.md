@@ -1,14 +1,15 @@
-# Super Simple Intro To React
+Super Simple Intro To React
+===========================
 
 This is a basic introduction for those who feel overwhelmed by the vast microcosm that is the React ecosystem!
 
----
+------------------------------------------------------------------------
 
 ### Super Simple Intro To React
 
 #### This is a basic introduction for those who feel overwhelmed by the vast microcosm that is the React ecosystem!
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*3wl1cp6IklxaFuBi.gif" class="graf-image" /></figure>### Here's a sandbox for you to practice with:
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*3wl1cp6IklxaFuBi.gif" class="graf-image" /></figure>### Here’s a sandbox for you to practice with:
 
 <a href="https://codesandbox.io/s/intro-to-react-i72er" class="markup--anchor markup--p-anchor">https://codesandbox.io/s/intro-to-react-i72er</a>
 
@@ -30,7 +31,7 @@ This is a basic introduction for those who feel overwhelmed by the vast microcos
 
     React.createElement(type, [props], [...children]);
 
--   <span id="44e8">`Type` : Type of element to create, i.e. a string for an HTML element or a reference to a function or class that is a React component.</span>
+-   <span id="44e8">`Type` : Type of element to create, i.e. a string for an HTML element or a reference to a function or class that is a React component.</span>
 -   <span id="7359">`Props` : Object that contains data to render the element.</span>
 -   <span id="5990">`Children` : Children of the element, as many as you want.</span>
 
@@ -57,7 +58,7 @@ This is a basic introduction for those who feel overwhelmed by the vast microcos
 > There are certain attributes we want to appear in the DOM for these tags as well:
 
 -   <span id="1bce">Each `li` has a `class` (or `className` in React)</span>
--   <span id="19af">Both `a` ele's have `href` attributes</span>
+-   <span id="19af">Both `a` ele’s have `href` attributes</span>
 -   <span id="5dfe">Also keep in mind the parent child relationships happening between the tags.</span>
 -   <span id="cb9e">`ul` is the parent of both `li`</span>
 -   <span id="7a63">Each `li` has an `a` element as a child</span>
@@ -308,17 +309,17 @@ This is a basic introduction for those who feel overwhelmed by the vast microcos
 
 -   <span id="fcde">`checked` : Attribute of input components such as checkbox or radio, use it to set whether the component is checked or not.</span>
 -   <span id="ae4c">`className` : Used to specify a CSS class.</span>
--   <span id="2d7b">`dangerouslySetInnerHTML` : React's equivalent of innerHTML because it is risky to cross-site scripting attacks.</span>
+-   <span id="2d7b">`dangerouslySetInnerHTML` : React’s equivalent of innerHTML because it is risky to cross-site scripting attacks.</span>
 -   <span id="5f13">`htmlFor` : Because `for` is protected keyword, React elements use this instead.</span>
 -   <span id="5880">`onChange` : Event fired whenever a form field is changed.</span>
 -   <span id="fb2b">`style` : Accepts a JS object with camelCase properties rather than a CSS string.</span>
 -   <span id="8f1c">`value` : Supported by Input, Select, and TextArea components; use it to set the value of the component.</span>
 
-> **_Note: React uses camel-case!!!_**
+> ***Note: React uses camel-case!!!***
 
 #### **The JSX semicolon gotcha**
 
--   <span id="3d60">We wrap what want to return in parenthesis so JS doesn't auto add semi-colons after every line and run the code incorrectly.</span>
+-   <span id="3d60">We wrap what want to return in parenthesis so JS doesn’t auto add semi-colons after every line and run the code incorrectly.</span>
 
 <!-- -->
 
@@ -346,14 +347,14 @@ This is a basic introduction for those who feel overwhelmed by the vast microcos
       );
     }
 
--   <span id="6898">Just remember if you decided to use the return keyword in a function to 'return some JSX', then make sure you wrap the JSX in parenthesis.</span>
+-   <span id="6898">Just remember if you decided to use the return keyword in a function to ‘return some JSX’, then make sure you wrap the JSX in parenthesis.</span>
 
----
+------------------------------------------------------------------------
 
 `npx create-react-app my-app`
 
 -   <span id="a3ca">Single line used to initiate a React application.</span>
--   <span id="61c5">React has a great toolchain where you can see changes live as you're editing your application.</span>
+-   <span id="61c5">React has a great toolchain where you can see changes live as you’re editing your application.</span>
 -   <span id="4889">React errors will be rendered directly onto the browser window.</span>
 -   <span id="f917">A downside is that it installs a lot of bloat files.</span>
 -   <span id="bdd9">Examples of React create Element and JSX equivalent</span>
@@ -398,10 +399,9 @@ This is a basic introduction for those who feel overwhelmed by the vast microcos
 
 ### My Blog:
 
-<a href="https://master--bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://master--bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong>
-<br/>
+**Web-Dev-Hub**  
 
-<em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>master--bgoonz-blog.netlify.app</a><a href="https://master--bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…*master–bgoonz-blog.netlify.app<a href="https://master--bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ### Here are the React Docs In One Markdown File:
 

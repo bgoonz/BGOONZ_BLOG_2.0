@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>if...else</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="ifelse">if…else</h1>
+<p>The <code>if</code> statement executes a statement if a specified condition is <a href="https://developer.mozilla.org/en-US/docs/Glossary/Truthy">truthy</a>. If the condition is <a href="https://developer.mozilla.org/en-US/docs/Glossary/Falsy">falsy</a>, another statement can be executed.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>if (condition) {
+   statement1
+} else {
+   statement2
+}</code></pre>
+<p><code>condition</code><br />
+An <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#expressions">expression</a> that is considered to be either <a href="https://developer.mozilla.org/en-US/docs/Glossary/Truthy">truthy</a> or <a href="https://developer.mozilla.org/en-US/docs/Glossary/Falsy">falsy</a>.</p>
+<p><code>statement1</code><br />
+Statement that is executed if condition is <a href="https://developer.mozilla.org/en-US/docs/Glossary/Truthy">truthy</a>. Can be any statement, including further nested <code>if</code> statements. To execute multiple statements, use a <a href="block">block</a> statement (<code>{ ... }</code>) to group those statements. To execute no statements, use an <a href="empty">empty</a> statement.</p>
+<p><code>statement2</code><br />
+Statement that is executed if <code>condition</code> is <a href="https://developer.mozilla.org/en-US/docs/Glossary/Falsy">falsy</a> and the <code>else</code> clause exists. Can be any statement, including block statements and further nested <code>if</code> statements.</p>
+<h2 id="description">Description</h2>
+<p>Multiple <code>if...else</code> statements can be nested to create an <code>else if</code> clause. Note that there is no <code>elseif</code> (in one word) keyword in JavaScript.</p>
+<pre><code>if (condition1)
+  statement1
+else if (condition2)
+  statement2
+else if (condition3)
+  statement3
+...
+else
+  statementN</code></pre>
+<p>To see how this works, this is how it would look if the nesting were properly indented:</p>
+<pre><code>if (condition1)
+  statement1
+else
+  if (condition2)
+    statement2
+  else
+    if (condition3)
+...</code></pre>
+<p>To execute multiple statements within a clause, use a block statement (<code>{ ... }</code>) to group those statements. In general, it is a good practice to always use block statements, especially in code involving nested <code>if</code> statements:</p>
+<pre><code>if (condition) {
+  statements1
+} else {
+  statements2
+}</code></pre>
+<p>Do not confuse the primitive Boolean values <code>true</code> and <code>false</code> with truthiness or falsiness of the <a href="../global_objects/boolean"><code>Boolean</code></a> object. Any value that is not <code>false</code>, <code>undefined</code>, <code>null</code>, <code>0</code>, <code>-0</code>, <code>NaN</code>, or the empty string (<code>""</code>), and any object, including a Boolean object whose value is <code>false</code>, is considered <a href="https://developer.mozilla.org/en-US/docs/Glossary/Truthy">truthy</a> when used as the condition. For example:</p>
+<pre><code>var b = new Boolean(false);
+if (b) // this condition is truthy</code></pre>
+<h2 id="examples">Examples</h2>
+<h3 id="using-ifelse">Using if…else</h3>
+<pre><code>if (cipher_char === from_char) {
+  result = result + to_char;
+  x++;
+} else {
+  result = result + clear_char;
+}</code></pre>
+<h3 id="using-else-if">Using else if</h3>
+<p>Note that there is no <code>elseif</code> syntax in JavaScript. However, you can write it with a space between <code>else</code> and <code>if</code>:</p>
+<pre><code>if (x &gt; 50) {
+  /* do something */
+} else if (x &gt; 5) {
+  /* do something */
+} else {
+  /* do something */
+}</code></pre>
+<h3 id="assignment-within-the-conditional-expression">Assignment within the conditional expression</h3>
+<p>It is advisable to not use simple assignments in a conditional expression, because the assignment can be confused with equality when glancing over the code. For example, do not use the following code:</p>
+<pre><code>if (x = y) {
+  /* do something */
+}</code></pre>
+<p>If you need to use an assignment in a conditional expression, a common practice is to put additional parentheses around the assignment. For example:</p>
+<pre><code>if ((x = y)) {
+  /* do something */
+}</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-if-statement">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-if-statement</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>if...else</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="block"><code>block</code></a></li>
+<li><a href="switch"><code>switch</code></a></li>
+<li><a href="../operators/conditional_operator">Conditional operator</a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if…else</a></p>
+</body>
+</html>

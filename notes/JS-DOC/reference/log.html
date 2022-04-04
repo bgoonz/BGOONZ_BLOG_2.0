@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>log</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="math.log">Math.log()</h1>
+<p>The <code>Math.log()</code> function returns the natural logarithm (base <a href="e"><code>e</code></a>) of a number, that is</p>
+<p>∀<em>x</em> &gt; 0, <code>Math.log</code> <code>(``x``)</code> = ln (<em>x</em>) = the unique <em>y</em> such that <em>e</em><sup><em>y</em></sup> = <em>x</em></p>
+<p>The JavaScript <code>Math.log()</code> function is equivalent to <em>ln(x)</em> in mathematics.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>Math.log(x)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>x</code><br />
+A number.</p>
+<h3 id="return-value">Return value</h3>
+<p>The natural logarithm (base <a href="e"><code>e</code></a>) of the given number. If the number is negative, <a href="../nan"><code>NaN</code></a> is returned.</p>
+<h2 id="description">Description</h2>
+<p>If the value of <code>x</code> is 0, the return value is always <a href="../number/negative_infinity"><code>-Infinity</code></a>.</p>
+<p>If the value of <code>x</code> is negative, the return value is always <a href="../nan"><code>NaN</code></a>.</p>
+<p>Because <code>log()</code> is a static method of <code>Math</code>, you always use it as <code>Math.log()</code>, rather than as a method of a <code>Math</code> object you created (<code>Math</code> is not a constructor).</p>
+<p>If you need the natural log of 2 or 10, use the constants <a href="ln2"><code>Math.LN2</code></a> or <a href="ln10"><code>Math.LN10</code></a>. If you need a logarithm to base 2 or 10, use <a href="log2"><code>Math.log2()</code></a> or <a href="log10"><code>Math.log10()</code></a>. If you need a logarithm to other bases, use Math.log(x) / Math.log(otherBase) as in the example below; you might want to precalculate 1 / Math.log(otherBase).</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-math.log">Using Math.log()</h3>
+<pre><code>Math.log(-1); // NaN, out of range
+Math.log(0);  // -Infinity
+Math.log(1);  // 0
+Math.log(10); // 2.302585092994046</code></pre>
+<h3 id="using-math.log-with-a-different-base">Using Math.log() with a different base</h3>
+<p>The following function returns the logarithm of <code>y</code> with base <code>x</code> (ie. log<sub><em>x</em></sub><em>y</em>):</p>
+<pre><code>function getBaseLog(x, y) {
+  return Math.log(y) / Math.log(x);
+}</code></pre>
+<p>If you run <code>getBaseLog(10, 1000)</code> it returns <code>2.9999999999999996</code> due to floating-point rounding, which is very close to the actual answer of 3.</p>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-math.log">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-math.log</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>log</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="exp"><code>Math.exp()</code></a></li>
+<li><a href="log1p"><code>Math.log1p()</code></a></li>
+<li><a href="log10"><code>Math.log10()</code></a></li>
+<li><a href="log2"><code>Math.log2()</code></a></li>
+<li><a href="pow"><code>Math.pow()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/log" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/log</a></p>
+</body>
+</html>

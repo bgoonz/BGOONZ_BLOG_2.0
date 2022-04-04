@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>padend</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="string.prototype.padend">String.prototype.padEnd()</h1>
+<p>The <code>padEnd()</code> method pads the current string with a given string (repeated, if needed) so that the resulting string reaches a given length. The padding is applied from the end of the current string.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>padEnd(targetLength)
+padEnd(targetLength, padString)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>targetLength</code><br />
+The length of the resulting string once the current <code>str</code> has been padded. If the value is lower than <code>str.length</code>, the current string will be returned as-is.</p>
+<p><code>padString</code> <span class="badge inline optional">Optional</span><br />
+The string to pad the current <code>str</code> with. If <code>padString</code> is too long to stay within <code>targetLength</code>, it will be truncated: for left-to-right languages the left-most part and for right-to-left languages the right-most will be applied. The default value for this parameter is "" (<code>U+0020</code>).</p>
+<h3 id="return-value">Return value</h3>
+<p>A <a href="../string"><code>String</code></a> of the specified <code>targetLength</code> with the <code>padString</code> applied at the end of the current <code>str</code>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-padend">Using padEnd</h3>
+<pre><code>&#39;abc&#39;.padEnd(10);          // &quot;abc       &quot;
+&#39;abc&#39;.padEnd(10, &quot;foo&quot;);   // &quot;abcfoofoof&quot;
+&#39;abc&#39;.padEnd(6, &quot;123456&quot;); // &quot;abc123&quot;
+&#39;abc&#39;.padEnd(1);           // &quot;abc&quot;</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-string.prototype.padend">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-string.prototype.padend</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>padEnd</code></p>
+<p>57</p>
+<p>15</p>
+<p>48</p>
+<p>No</p>
+<p>44</p>
+<p>10</p>
+<p>57</p>
+<p>57</p>
+<p>48</p>
+<p>43</p>
+<p>10</p>
+<p>7.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="padstart"><code>String.prototype.padStart()</code></a></li>
+<li><a href="https://github.com/behnammodi/polyfill/blob/master/string.polyfill.js">A polyfill</a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padEnd" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padEnd</a></p>
+</body>
+</html>

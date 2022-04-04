@@ -1,33 +1,22 @@
----
-title: title
-subtitle: subtitle
-date: '2022-01-03'
-thumb_img_alt: lorem-ipsum
-content_img_alt: lorem-ipsum
-excerpt: lorem-ipsum
-seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
-template: post
-thumb_img_path: images/css-72a655a7.jpg
----
+subtitle
 
----
+2022-01-03
 
-title: Git tricks
-category: Git
+------------------------------------------------------------------------
 
----
+title: Git tricks category: Git
 
-## Refs
+------------------------------------------------------------------------
+
+Refs
+----
 
     HEAD^       # 1 commit before head
     HEAD^^      # 2 commits before head
     HEAD~5      # 5 commits before head
 
-## Branches
+Branches
+--------
 
     # create a new branch
       git checkout -b $branchname
@@ -49,7 +38,8 @@ category: Git
     # go back to previous branch
       git checkout -
 
-## Collaboration
+Collaboration
+-------------
 
     # Rebase your changes on top of the remote master
       git pull --rebase upstream master
@@ -58,7 +48,8 @@ category: Git
     # (on the following screen change the word pick to either 'f' or 's')
       git rebase -i $commit_ref
 
-## Submodules
+Submodules
+----------
 
     # Import .gitmodules
       git submodule init
@@ -70,7 +61,8 @@ category: Git
     # (Use when you changed remotes in submodules)
       git submodule sync
 
-## Diff
+Diff
+----
 
 ### Diff with stats
 
@@ -83,7 +75,8 @@ category: Git
 
     git diff --summary
 
-## Log options
+Log options
+-----------
 
     --oneline
       e11e9f9 Commit message here
@@ -97,7 +90,8 @@ category: Git
     --date=relative
       "2 hours ago"
 
-## Misc
+Misc
+----
 
 ### Cherry pick
 
@@ -114,7 +108,8 @@ category: Git
     # Go back up to root directory
       cd "$(git rev-parse --show-top-level)"
 
-## Short log
+Short log
+---------
 
      $ git shortlog
      $ git shortlog HEAD~20..    # last 20 commits
@@ -127,7 +122,8 @@ category: Git
          Another commit
          This other commit
 
-## Bisect
+Bisect
+------
 
     git bisect start HEAD HEAD~6
     git bisect run npm test
@@ -145,13 +141,15 @@ category: Git
 
     git bisect reset  # abort
 
-## Searching
+Searching
+---------
 
     git log --grep="fixes things"  # search in commit messages
     git log -S"window.alert"       # search in code
     git log -G"foo.*"              # search in code (regex)
 
-## GPG Signing
+GPG Signing
+-----------
 
     git config set user.signingkey <GPG KEY ID>       # Sets GPG key to use for signing
 

@@ -1,8 +1,10 @@
-# handler.getPrototypeOf()
+handler.getPrototypeOf()
+========================
 
 The `handler.getPrototypeOf()` method is a trap for the `[[GetPrototypeOf]]` internal method.
 
-## Syntax
+Syntax
+------
 
     const p = new Proxy(obj, {
       getPrototypeOf(target) {
@@ -21,7 +23,8 @@ The target object.
 
 The `getPrototypeOf()` method must return an object or `null`.
 
-## Description
+Description
+-----------
 
 ### Interceptions
 
@@ -40,7 +43,8 @@ If the following invariants are violated, the proxy will throw a [`TypeError`](.
 -   `getPrototypeOf()` method must return an object or `null`.
 -   If `target` is not extensible, `Object.getPrototypeOf(proxy)` method must return the same value as `Object.getPrototypeOf(target)`.
 
-## Examples
+Examples
+--------
 
 ### Basic usage
 
@@ -91,12 +95,11 @@ If the following invariants are violated, the proxy will throw a [`TypeError`](.
     });
     Object.getPrototypeOf(p); // TypeError: expected same prototype value
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-proxy-object-internal-methods-and-internal-slots-getprototypeof">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-proxy-object-internal-methods-and-internal-slots-getprototypeof</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-proxy-object-internal-methods-and-internal-slots-getprototypeof</span></td></tr></tbody></table>
 
 `getPrototypeOf`
 
@@ -124,13 +127,13 @@ No
 
 5.0
 
-## See also
+See also
+--------
 
 -   [`Proxy`](../../proxy)
 -   [`handler`](../proxy)
 -   [`Object.getPrototypeOf()`](../../object/getprototypeof)
 -   [`Reflect.getPrototypeOf()`](../../reflect/getprototypeof)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/getPrototypeOf" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/getPrototypeOf</a>

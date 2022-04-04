@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>RSpec</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">RSpec</h1>
+</header>
+<h3 id="invoking-tests">Invoking tests</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sh"><code class="sourceCode bash"><a class="sourceLine" id="cb1-1" title="1"><span class="ex">rake</span> -T spec      <span class="co"># List spec tasks</span></a>
+<a class="sourceLine" id="cb1-2" title="2"></a>
+<a class="sourceLine" id="cb1-3" title="3"><span class="ex">rake</span> spec         <span class="co"># Run all</span></a>
+<a class="sourceLine" id="cb1-4" title="4"></a>
+<a class="sourceLine" id="cb1-5" title="5"><span class="ex">rake</span> spec/models/mymodel_spec.rb</a>
+<a class="sourceLine" id="cb1-6" title="6"><span class="ex">rake</span> spec/models/mymodel_spec.rb:27</a></code></pre></div>
+<h2 id="writing-tests">Writing tests</h2>
+<div class="sourceCode" id="cb2"><pre class="sourceCode rb"><code class="sourceCode ruby"><a class="sourceLine" id="cb2-1" title="1">describe <span class="st">&quot;A User (in general)&quot;</span> <span class="kw">do</span></a>
+<a class="sourceLine" id="cb2-2" title="2">  include <span class="dt">UserSpecHelper</span></a>
+<a class="sourceLine" id="cb2-3" title="3"></a>
+<a class="sourceLine" id="cb2-4" title="4">  subject { <span class="dt">Person</span>.new }</a>
+<a class="sourceLine" id="cb2-5" title="5"></a>
+<a class="sourceLine" id="cb2-6" title="6">  let(<span class="st">:admin</span>) { <span class="dt">Person</span>.new(<span class="st">role: :admin</span>) }</a>
+<a class="sourceLine" id="cb2-7" title="7"></a>
+<a class="sourceLine" id="cb2-8" title="8">  context <span class="st">&quot;setter methods&quot;</span> <span class="kw">do</span></a>
+<a class="sourceLine" id="cb2-9" title="9">    it <span class="st">&quot;should do this&quot;</span> <span class="kw">do</span></a>
+<a class="sourceLine" id="cb2-10" title="10">      pending <span class="st">&quot;some other thing&quot;</span></a>
+<a class="sourceLine" id="cb2-11" title="11"></a>
+<a class="sourceLine" id="cb2-12" title="12">      expect(subject.name).to eq <span class="ch">&#39;x&#39;</span></a>
+<a class="sourceLine" id="cb2-13" title="13">    <span class="kw">end</span></a>
+<a class="sourceLine" id="cb2-14" title="14">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb2-15" title="15"><span class="kw">end</span></a></code></pre></div>
+<h3 id="beforeafter">Before/after</h3>
+<div class="sourceCode" id="cb3"><pre class="sourceCode rb"><code class="sourceCode ruby"><a class="sourceLine" id="cb3-1" title="1">before <span class="st">:each</span> <span class="kw">do</span></a>
+<a class="sourceLine" id="cb3-2" title="2">  <span class="co"># before all tests</span></a>
+<a class="sourceLine" id="cb3-3" title="3"><span class="kw">end</span></a>
+<a class="sourceLine" id="cb3-4" title="4"></a>
+<a class="sourceLine" id="cb3-5" title="5">before <span class="kw">do</span></a>
+<a class="sourceLine" id="cb3-6" title="6">  <span class="co"># before this suite</span></a>
+<a class="sourceLine" id="cb3-7" title="7"><span class="kw">end</span></a>
+<a class="sourceLine" id="cb3-8" title="8"></a>
+<a class="sourceLine" id="cb3-9" title="9">after <span class="kw">do</span></a>
+<a class="sourceLine" id="cb3-10" title="10">  <span class="co"># after this suite</span></a>
+<a class="sourceLine" id="cb3-11" title="11"><span class="kw">end</span></a></code></pre></div>
+<h3 id="subjects">Subjects</h3>
+<div class="sourceCode" id="cb4"><pre class="sourceCode rb"><code class="sourceCode ruby"><a class="sourceLine" id="cb4-1" title="1">subject { <span class="dt">CheckingAccount</span>.new }</a>
+<a class="sourceLine" id="cb4-2" title="2">it { is_expected.to be_empty }</a>
+<a class="sourceLine" id="cb4-3" title="3"></a>
+<a class="sourceLine" id="cb4-4" title="4"><span class="co"># also names: subject(:account) { ... }</span></a></code></pre></div>
+<h2 id="expectations">Expectations</h2>
+<div class="sourceCode" id="cb5"><pre class="sourceCode rb"><code class="sourceCode ruby"><a class="sourceLine" id="cb5-1" title="1">target.should eq <span class="dv">1</span></a>
+<a class="sourceLine" id="cb5-2" title="2">target.should_not eq <span class="dv">1</span></a>
+<a class="sourceLine" id="cb5-3" title="3"></a>
+<a class="sourceLine" id="cb5-4" title="4">expect(target).to eq <span class="dv">1</span></a>
+<a class="sourceLine" id="cb5-5" title="5">expect(target).not_to eq <span class="dv">1</span></a></code></pre></div>
+<h3 id="numeric">Numeric</h3>
+<div class="sourceCode" id="cb6"><pre class="sourceCode rb"><code class="sourceCode ruby"><a class="sourceLine" id="cb6-1" title="1">expect(<span class="dv">5</span>).to be &lt; <span class="dv">6</span></a>
+<a class="sourceLine" id="cb6-2" title="2">expect(<span class="dv">5</span>).to == <span class="dv">5</span></a>
+<a class="sourceLine" id="cb6-3" title="3">expect(<span class="dv">5</span>).to equal value</a>
+<a class="sourceLine" id="cb6-4" title="4">expect(<span class="dv">5</span>).to be_between(<span class="dv">1</span>, <span class="dv">10</span>)</a>
+<a class="sourceLine" id="cb6-5" title="5">expect(<span class="dv">5</span>).to be_within(<span class="fl">0.05</span>).of value</a></code></pre></div>
+<h3 id="comparison">Comparison</h3>
+<div class="sourceCode" id="cb7"><pre class="sourceCode rb"><code class="sourceCode ruby"><a class="sourceLine" id="cb7-1" title="1">expect(x).to be value</a>
+<a class="sourceLine" id="cb7-2" title="2">expect(x).to satisfy { |arg| ... }</a>
+<a class="sourceLine" id="cb7-3" title="3">expect(x).to match <span class="ot">/regexp/</span></a></code></pre></div>
+<h3 id="predicate">Predicate</h3>
+<div class="sourceCode" id="cb8"><pre class="sourceCode rb"><code class="sourceCode ruby"><a class="sourceLine" id="cb8-1" title="1">expect(x).to be_zero    <span class="co"># FixNum#zero?</span></a>
+<a class="sourceLine" id="cb8-2" title="2">expect(x).to be_empty   <span class="co"># Array#empty?</span></a>
+<a class="sourceLine" id="cb8-3" title="3">expect(x).to have_key   <span class="co"># Hash#has_key?</span></a></code></pre></div>
+<h3 id="objects">Objects</h3>
+<div class="sourceCode" id="cb9"><pre class="sourceCode rb"><code class="sourceCode ruby"><a class="sourceLine" id="cb9-1" title="1">expect(obj).to be_an_instance_of <span class="dt">MyClass</span></a>
+<a class="sourceLine" id="cb9-2" title="2">expect(obj).to be_a_kind_of <span class="dt">MyClass</span></a>
+<a class="sourceLine" id="cb9-3" title="3">expect(obj).to respond_to <span class="st">:save!</span></a></code></pre></div>
+<h3 id="control-flow">Control flow</h3>
+<div class="sourceCode" id="cb10"><pre class="sourceCode rb"><code class="sourceCode ruby"><a class="sourceLine" id="cb10-1" title="1">expect { user.save! }.to raise_error</a>
+<a class="sourceLine" id="cb10-2" title="2">expect { user.save! }.to raise_error(<span class="dt">ExceptionName</span>, <span class="ot">/msg/</span>)</a>
+<a class="sourceLine" id="cb10-3" title="3">expect { user.save! }.to throw <span class="st">:symbol</span></a></code></pre></div>
+<h3 id="enumerablesarrays">Enumerables/arrays</h3>
+<div class="sourceCode" id="cb11"><pre class="sourceCode rb"><code class="sourceCode ruby"><a class="sourceLine" id="cb11-1" title="1">expect(list).to include(&lt;object&gt;)</a>
+<a class="sourceLine" id="cb11-2" title="2"></a>
+<a class="sourceLine" id="cb11-3" title="3">expect(list).to have(<span class="dv">1</span>).things</a>
+<a class="sourceLine" id="cb11-4" title="4">expect(list).to have_at_least(<span class="dv">2</span>).things</a>
+<a class="sourceLine" id="cb11-5" title="5">expect(list).to have_at_most(<span class="dv">3</span>).things</a>
+<a class="sourceLine" id="cb11-6" title="6"></a>
+<a class="sourceLine" id="cb11-7" title="7">expect(list).to have(<span class="dv">2</span>).errors_on(<span class="st">:field</span>)</a></code></pre></div>
+<h3 id="change">Change</h3>
+<div class="sourceCode" id="cb12"><pre class="sourceCode rb"><code class="sourceCode ruby"><a class="sourceLine" id="cb12-1" title="1">expect { thing.approve! }.to \</a>
+<a class="sourceLine" id="cb12-2" title="2">  change(thing, <span class="st">:status</span>)</a>
+<a class="sourceLine" id="cb12-3" title="3">  .from(<span class="dt">Status</span>::<span class="dt">AWAITING_APPROVAL</span>)</a>
+<a class="sourceLine" id="cb12-4" title="4">  .to(<span class="dt">Status</span>::<span class="dt">APPROVED</span>)</a>
+<a class="sourceLine" id="cb12-5" title="5"></a>
+<a class="sourceLine" id="cb12-6" title="6">expect { thing.destroy }.to \</a>
+<a class="sourceLine" id="cb12-7" title="7">  change(<span class="dt">Thing</span>, <span class="st">:count</span>)</a>
+<a class="sourceLine" id="cb12-8" title="8">  .by(-<span class="dv">1</span>)</a></code></pre></div>
+<h2 id="doubles">Doubles</h2>
+<div class="sourceCode" id="cb13"><pre class="sourceCode rb"><code class="sourceCode ruby"><a class="sourceLine" id="cb13-1" title="1">book = double(<span class="st">&#39;book&#39;</span>)</a>
+<a class="sourceLine" id="cb13-2" title="2">book = instance_double(<span class="st">&#39;Book&#39;</span>, <span class="st">pages: </span><span class="dv">250</span>)</a></code></pre></div>
+<h3 id="method-stubs">Method stubs</h3>
+<div class="sourceCode" id="cb14"><pre class="sourceCode rb"><code class="sourceCode ruby"><a class="sourceLine" id="cb14-1" title="1">allow(die).to receive(<span class="st">:roll</span>)</a>
+<a class="sourceLine" id="cb14-2" title="2">allow(die).to receive(<span class="st">:roll</span>) { <span class="dv">3</span> }</a>
+<a class="sourceLine" id="cb14-3" title="3">allow_any_instance_of(<span class="dt">Die</span>).to receive(<span class="st">:roll</span>)</a>
+<a class="sourceLine" id="cb14-4" title="4"></a>
+<a class="sourceLine" id="cb14-5" title="5">expect(die).to receive(<span class="st">:roll</span>)</a>
+<a class="sourceLine" id="cb14-6" title="6">  .with(<span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb14-7" title="7">  .with(<span class="dv">1</span>, <span class="dv">true</span>)</a>
+<a class="sourceLine" id="cb14-8" title="8">  .with(boolean)</a>
+<a class="sourceLine" id="cb14-9" title="9">  .with(anything)</a>
+<a class="sourceLine" id="cb14-10" title="10">  .with(any_args)</a>
+<a class="sourceLine" id="cb14-11" title="11">  .with(<span class="dv">1</span>, any_args)</a>
+<a class="sourceLine" id="cb14-12" title="12">  .with(no_args)</a>
+<a class="sourceLine" id="cb14-13" title="13">  .with(hash_including(<span class="st">a: </span><span class="dv">1</span>))</a>
+<a class="sourceLine" id="cb14-14" title="14">  .with(hash_excluding(<span class="st">a: </span><span class="dv">1</span>))</a>
+<a class="sourceLine" id="cb14-15" title="15">  .with(array_including(<span class="st">:a</span>, <span class="st">:b</span>))</a>
+<a class="sourceLine" id="cb14-16" title="16">  .with(array_excluding(<span class="st">:a</span>, <span class="st">:b</span>))</a>
+<a class="sourceLine" id="cb14-17" title="17">  .with(instance_of(<span class="dt">Fixnum</span>))</a>
+<a class="sourceLine" id="cb14-18" title="18">  .with(kind_of(<span class="dt">Numeric</span>))</a>
+<a class="sourceLine" id="cb14-19" title="19">  .with(&lt;matcher&gt;)</a>
+<a class="sourceLine" id="cb14-20" title="20"></a>
+<a class="sourceLine" id="cb14-21" title="21">  .once</a>
+<a class="sourceLine" id="cb14-22" title="22">  .twice</a>
+<a class="sourceLine" id="cb14-23" title="23">  .exactly(n).times</a>
+<a class="sourceLine" id="cb14-24" title="24">  .at_least(<span class="st">:once</span>)</a>
+<a class="sourceLine" id="cb14-25" title="25">  .at_least(<span class="st">:twice</span>)</a>
+<a class="sourceLine" id="cb14-26" title="26">  .at_least(n).times</a>
+<a class="sourceLine" id="cb14-27" title="27">  .at_most(<span class="st">:once</span>)</a>
+<a class="sourceLine" id="cb14-28" title="28">  .at_most(<span class="st">:twice</span>)</a>
+<a class="sourceLine" id="cb14-29" title="29">  .at_most(n).times</a></code></pre></div>
+<p>https://relishapp.com/rspec/rspec-mocks/docs</p>
+<h2 id="spec-helpers">Spec helpers</h2>
+<div class="sourceCode" id="cb15"><pre class="sourceCode rb"><code class="sourceCode ruby"><a class="sourceLine" id="cb15-1" title="1"><span class="kw">module</span> <span class="dt">UserSpecHelper</span></a>
+<a class="sourceLine" id="cb15-2" title="2">  <span class="kw">def</span> valid_user_attributes</a>
+<a class="sourceLine" id="cb15-3" title="3">    { <span class="st">:email</span> =&gt; <span class="st">&quot;joe@bloggs.com&quot;</span>,</a>
+<a class="sourceLine" id="cb15-4" title="4">      <span class="st">:username</span> =&gt; <span class="st">&quot;joebloggs&quot;</span>,</a>
+<a class="sourceLine" id="cb15-5" title="5">      <span class="st">:password</span> =&gt; <span class="st">&quot;abcdefg&quot;</span>}</a>
+<a class="sourceLine" id="cb15-6" title="6">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb15-7" title="7"><span class="kw">end</span></a></code></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode rb"><code class="sourceCode ruby"><a class="sourceLine" id="cb16-1" title="1">describe <span class="dt">User</span> <span class="kw">do</span></a>
+<a class="sourceLine" id="cb16-2" title="2">  include <span class="dt">UserSpecHelper</span></a>
+<a class="sourceLine" id="cb16-3" title="3"></a>
+<a class="sourceLine" id="cb16-4" title="4">  ...</a>
+<a class="sourceLine" id="cb16-5" title="5"><span class="kw">end</span></a></code></pre></div>
+</body>
+</html>

@@ -1,8 +1,10 @@
-# Int32Array
+Int32Array
+==========
 
-The `Int32Array()` typed array constructor creates an array of twos-complement 32-bit signed integers in the platform byte order. If control over byte order is needed, use [`DataView`](dataview) instead. The contents are initialized to `0`. Once established, you can reference elements in the array using the object's methods, or using standard array index syntax (that is, using bracket notation).
+The `Int32Array()` typed array constructor creates an array of twos-complement 32-bit signed integers in the platform byte order. If control over byte order is needed, use [`DataView`](dataview) instead. The contents are initialized to `0`. Once established, you can reference elements in the array using the object’s methods, or using standard array index syntax (that is, using bracket notation).
 
-## Syntax
+Syntax
+------
 
     new Int32Array(); // new in ES2017
     new Int32Array(length);
@@ -16,7 +18,7 @@ The `Int32Array()` typed array constructor creates an array of twos-complement 3
 ### Parameters
 
 `length`  
-When called with a `length` argument, an internal array buffer is created in memory, of size `length` _multiplied by `BYTES_PER_ELEMENT`_ bytes, containing zeros.
+When called with a `length` argument, an internal array buffer is created in memory, of size `length` *multiplied by `BYTES_PER_ELEMENT`* bytes, containing zeros.
 
 `typedArray`  
 When called with a `typedArray` argument, which can be an object of any of the typed array types (such as `Int32Array`), the `typedArray` gets copied into a new typed array. Each value in `typedArray` is converted to the corresponding type of the constructor before being copied into the new array. The length of the new typed array will be same as the length of the `typedArray` argument.
@@ -27,7 +29,8 @@ When called with an `object` argument, a new typed array is created as if by the
 `buffer`, `byteOffset`, `length`  
 When called with a `buffer`, and optionally a `byteOffset` and a `length` argument, a new typed array view is created that views the specified [`ArrayBuffer`](arraybuffer). The `byteOffset` and `length` parameters specify the memory range that will be exposed by the typed array view. If both are omitted, all of `buffer` is viewed; if only `length` is omitted, the remainder of `buffer` is viewed.
 
-## Examples
+Examples
+--------
 
 ### Different ways to create an Int32Array
 
@@ -56,12 +59,11 @@ When called with a `buffer`, and optionally a `byteOffset` and a `length` argume
     var int32 = new Int32Array(iterable);
     // Int32Array[1, 2, 3]
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-typedarray-constructors">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-typedarray-constructors</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-typedarray-constructors</span></td></tr></tbody></table>
 
 `Int32Array`
 
@@ -177,7 +179,8 @@ Starting with ECMAScript 2015, `Int32Array` constructors require to be construct
 
     var dv = new Int32Array([1, 2, 3]);
 
-## See also
+See also
+--------
 
 -   [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
 -   [`ArrayBuffer`](arraybuffer)

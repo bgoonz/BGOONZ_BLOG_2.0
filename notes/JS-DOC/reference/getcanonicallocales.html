@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>getcanonicallocales</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="intl.getcanonicallocales">Intl.getCanonicalLocales()</h1>
+<p>The <code>Intl.getCanonicalLocales()</code> method returns an array containing the canonical locale names. Duplicates will be omitted and elements will be validated as structurally valid language tags.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>Intl.getCanonicalLocales(locales)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>locales</code><br />
+A list of <a href="../string"><code>String</code></a> values for which to get the canonical locale names.</p>
+<h3 id="return-value">Return value</h3>
+<p>An array containing the canonical locale names.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-getcanonicallocales">Using getCanonicalLocales</h3>
+<pre><code>Intl.getCanonicalLocales(&#39;EN-US&#39;); // [&quot;en-US&quot;]
+Intl.getCanonicalLocales([&#39;EN-US&#39;, &#39;Fr&#39;]); // [&quot;en-US&quot;, &quot;fr&quot;]
+
+Intl.getCanonicalLocales(&#39;EN_US&#39;);
+// RangeError:&#39;EN_US&#39; is not a structurally valid language tag</code></pre>
+<h2 id="polyfill">Polyfill</h2>
+<p><a href="https://formatjs.io/docs/polyfills/intl-getcanonicallocales">formatjs Intl.getCanonicalLocales polyfill</a></p>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma402/#sec-intl.getcanonicallocales">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) <br/></p>
+<span class="small">#sec-intl.getcanonicallocales</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>getCanonicalLocales</code></p>
+<p>54</p>
+<p>16</p>
+<p>48</p>
+<p>No</p>
+<p>No</p>
+<p>11</p>
+<p>No</p>
+<p>No</p>
+<p>56</p>
+<p>No</p>
+<p>11</p>
+<p>No</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="numberformat/supportedlocalesof"><code>Intl.NumberFormat.supportedLocalesOf()</code></a></li>
+<li><a href="datetimeformat/supportedlocalesof"><code>Intl.DateTimeFormat.supportedLocalesOf()</code></a></li>
+<li><a href="collator/supportedlocalesof"><code>Intl.Collator.supportedLocalesOf()</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/getCanonicalLocales" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/getCanonicalLocales</a></p>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>empty</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="empty">empty</h1>
+<p>An <strong>empty statement</strong> is used to provide no statement, although the JavaScript syntax would expect one.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>;</code></pre>
+<h2 id="description">Description</h2>
+<p>The empty statement is a semicolon (<code>;</code>) indicating that no statement will be executed, even if JavaScript syntax requires one.</p>
+<p>The opposite behavior, where you want multiple statements, but JavaScript only allows a single one, is possible using a <a href="block">block statement</a>, which combines several statements into a single one.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="empty-loop-body">Empty loop body</h3>
+<p>The empty statement is sometimes used with loop statements. See the following example with an empty loop body:</p>
+<pre><code>let arr = [1, 2, 3];
+
+// Assign all array values to 0
+for (let i = 0; i &lt; arr.length; arr[i++] = 0) /* empty statement */ ;
+
+console.log(arr);
+// [0, 0, 0]</code></pre>
+<h3 id="unintentional-usage">Unintentional usage</h3>
+<p>It is a good idea to comment <em>intentional</em> use of the empty statement, as it is not really obvious to distinguish from a normal semicolon.</p>
+<p>In the following example, the usage is probably not intentional:</p>
+<pre><code>if (condition);       // Caution, this &quot;if&quot; does nothing!
+   killTheUniverse()  // So this always gets executed!!!</code></pre>
+<p>In the next example, an <a href="if...else"><code>if...else</code></a> statement without curly braces (<code>{}</code>) is used.</p>
+<p>If <code>three</code> is <code>true</code>, nothing will happen, <code>four</code> does not matter, and also the <code>launchRocket()</code> function in the <code>else</code> case will not be executed.</p>
+<pre><code>if (one)
+  doOne();
+else if (two)
+  doTwo();
+else if (three)
+  ; // nothing here
+else if (four)
+  doFour();
+else
+  launchRocket();</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-empty-statement">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-empty-statement</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>Empty</code></p>
+<p>3</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>5</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>4.2</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="block"><code>Block statement</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/Empty" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/Empty</a></p>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="topological-sorting">Topological Sorting</h1>
+<p>In the field of computer science, a topological sort or topological ordering of a directed graph is a linear ordering of its vertices such that for every directed edge <code>uv</code> from vertex <code>u</code> to vertex <code>v</code>, <code>u</code> comes before <code>v</code> in the ordering.</p>
+<p>For instance, the vertices of the graph may represent tasks to be performed, and the edges may represent constraints that one task must be performed before another; in this application, a topological ordering is just a valid sequence for the tasks.</p>
+<p>A topological ordering is possible if and only if the graph has no directed cycles, that is, if it is a <a href="https://en.wikipedia.org/wiki/Directed_acyclic_graph">directed acyclic graph</a> (DAG). Any DAG has at least one topological ordering, and algorithms are known for constructing a topological ordering of any DAG in linear time.</p>
+<figure>
+<img src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Topological_Ordering.svg" alt="Directed Acyclic Graph" /><figcaption>Directed Acyclic Graph</figcaption>
+</figure>
+<p>A topological ordering of a directed acyclic graph: every edge goes from earlier in the ordering (upper left) to later in the ordering (lower right). A directed graph is acyclic if and only if it has a topological ordering.</p>
+<h2 id="example">Example</h2>
+<figure>
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Directed_acyclic_graph_2.svg" alt="Topologic Sorting" /><figcaption>Topologic Sorting</figcaption>
+</figure>
+<p>The graph shown above has many valid topological sorts, including:</p>
+<ul>
+<li><code>5, 7, 3, 11, 8, 2, 9, 10</code> (visual left-to-right, top-to-bottom)</li>
+<li><code>3, 5, 7, 8, 11, 2, 9, 10</code> (smallest-numbered available vertex first)</li>
+<li><code>5, 7, 3, 8, 11, 10, 9, 2</code> (fewest edges first)</li>
+<li><code>7, 5, 11, 3, 10, 8, 9, 2</code> (largest-numbered available vertex first)</li>
+<li><code>5, 7, 11, 2, 3, 8, 9, 10</code> (attempting top-to-bottom, left-to-right)</li>
+<li><code>3, 7, 8, 5, 11, 10, 2, 9</code> (arbitrary)</li>
+</ul>
+<h2 id="application">Application</h2>
+<p>The canonical application of topological sorting is in <strong>scheduling a sequence of jobs</strong> or tasks based on their dependencies. The jobs are represented by vertices, and there is an edge from <code>x</code> to <code>y</code> if job <code>x</code> must be completed before job <code>y</code> can be started (for example, when washing clothes, the washing machine must finish before we put the clothes in the dryer). Then, a topological sort gives an order in which to perform the jobs.</p>
+<p>Other application is <strong>dependency resolution</strong>. Each vertex is a package and each edge is a dependency of package <code>a</code> on package ‘b’. Then topological sorting will provide a sequence of installing dependencies in a way that every next dependency has its dependent packages to be installed in prior.</p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Topological_sorting">Wikipedia</a></li>
+<li><a href="https://www.youtube.com/watch?v=ddTC4Zovtbc&amp;list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8">Topological Sorting on YouTube by Tushar Roy</a></li>
+</ul>
+</body>
+</html>

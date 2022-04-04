@@ -1,10 +1,5 @@
----
-title: Spine
-category: JavaScript libraries
-vim: ft=python
----
-
-## Models
+Models
+------
 
     class User extends Spine.Model
       @configure "User", "name", "address"
@@ -126,7 +121,8 @@ vim: ft=python
     .on 'refresh'
     .on 'error'    # validation error
 
-## Ajax
+Ajax
+----
 
     class User extends Spine.Model
       @extend Spine.Model.Ajax

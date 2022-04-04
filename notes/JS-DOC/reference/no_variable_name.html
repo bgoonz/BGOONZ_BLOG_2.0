@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>no_variable_name</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="syntaxerror-missing-variable-name">SyntaxError: missing variable name</h1>
+<p>The JavaScript exception “missing variable name” occurs way too often as naming things is so hard. Or maybe a comma is wrong. Check for typos!</p>
+<h2 id="message">Message</h2>
+<pre><code>SyntaxError: missing variable name (Firefox)
+SyntaxError: Unexpected token = (Chrome)</code></pre>
+<h2 id="error-type">Error type</h2>
+<p><a href="../global_objects/syntaxerror"><code>SyntaxError</code></a></p>
+<h2 id="what-went-wrong">What went wrong?</h2>
+<p>A variable is missing a name. This is likely due to a syntax error in your code. Probably a comma is wrong somewhere or you struggled with coming up with a name. Totally understandable! Naming things is so hard.</p>
+<ul>
+<li>Check to ensure the previous lines / declaration does not end with a comma instead of a semi-colon.</li>
+</ul>
+<h2 id="examples">Examples</h2>
+<h3 id="missing-a-variable-name">Missing a variable name</h3>
+<pre><code>var = &quot;foo&quot;;</code></pre>
+<p>It’s tough coming up with good variable names. We all have been there.</p>
+<pre><code>var ohGodWhy = &quot;foo&quot;;</code></pre>
+<h3 id="reserved-keywords-cant-be-variable-names">Reserved keywords can’t be variable names</h3>
+<p>There are a few variable names that are <a href="../lexical_grammar#keywords">reserved keywords</a>. You can’t use these. Sorry :(</p>
+<pre><code>var debugger = &quot;whoop&quot;;
+// SyntaxError: missing variable name</code></pre>
+<h3 id="declaring-multiple-variables">Declaring multiple variables</h3>
+<p>Pay special attention to commas when declaring multiple variables. Is there an excess comma? Did you accidentally add commas instead of semicolons?</p>
+<pre><code>var x, y = &quot;foo&quot;,
+var x, = &quot;foo&quot;
+
+var first = document.getElementById(&#39;one&#39;),
+var second = document.getElementById(&#39;two&#39;),
+
+// SyntaxError: missing variable name</code></pre>
+<p>The fixed version:</p>
+<pre><code>var x, y = &quot;foo&quot;;
+var x = &quot;foo&quot;;
+
+var first = document.getElementById(&#39;one&#39;);
+var second = document.getElementById(&#39;two&#39;);</code></pre>
+<h3 id="arrays">Arrays</h3>
+<p><a href="../global_objects/array"><code>Array</code></a> literals in JavaScript need square brackets around the values. This won’t work:</p>
+<pre><code>var arr = 1,2,3,4,5;
+// SyntaxError: missing variable name</code></pre>
+<p>This would be correct:</p>
+<pre><code>var arr = [1,2,3,4,5];</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="https://wiki.c2.com/?GoodVariableNames">Good variable names</a></li>
+<li><a href="../statements/var"><code>var</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#declarations">Variable declarations in the JavaScript Guide</a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/No_variable_name" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/No_variable_name</a></p>
+</body>
+</html>

@@ -1,4 +1,3 @@
-
     <ul>
         <li><a href="https://bgoonz-blog.netlify.app/showcase/">/showcase/</a></li>
         <li><a href="https://bgoonz-blog.netlify.app/privacy-policy/">/privacy-policy/</a></li>

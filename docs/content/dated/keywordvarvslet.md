@@ -1,34 +1,32 @@
 -   /en/keyword-var-vs-let/
 
----
+------------------------------------------------------------------------
 
 ### Overview
 
 -   The scope of a variable defined with `var` is function scope or declared outside any function, global.
 -   The scope of a variable defined with `let` is block scope.
 
----
+------------------------------------------------------------------------
 
-```js
-function varvslet() {
-    console.log(i); // i is undefined due to hoisting
-    // console.log(j); // ReferenceError: j is not defined
+    function varvslet() {
+        console.log(i); // i is undefined due to hoisting
+        // console.log(j); // ReferenceError: j is not defined
 
-    for (var i = 0; i < 3; i++) {
-        console.log(i); // 0, 1, 2
+        for (var i = 0; i < 3; i++) {
+            console.log(i); // 0, 1, 2
+        }
+
+        console.log(i); // 3
+        // console.log(j); // ReferenceError: j is not defined
+
+        for (let j = 0; j < 3; j++) {
+            console.log(j);
+        }
+
+        console.log(i); // 3
+        // console.log(j); // ReferenceError: j is not defined
     }
-
-    console.log(i); // 3
-    // console.log(j); // ReferenceError: j is not defined
-
-    for (let j = 0; j < 3; j++) {
-        console.log(j);
-    }
-
-    console.log(i); // 3
-    // console.log(j); // ReferenceError: j is not defined
-}
-```
 
 ### Difference Details
 
@@ -36,45 +34,38 @@ function varvslet() {
 
     `let` will not hoist to the entire scope of the block they appear in. By contrast, `var` could hoist as below.
 
-```js
-{
-    console.log(c); // undefined. Due to hoisting
-    var c = 2;
-}
+    {
+        console.log(c); // undefined. Due to hoisting
+        var c = 2;
+    }
 
-{
-    console.log(b); // ReferenceError: b is not defined
-    let b = 3;
-}
-```
+    {
+        console.log(b); // ReferenceError: b is not defined
+        let b = 3;
+    }
 
 -   Closure in Loop
 
     `let` in the loop can re-binds it to each iteration of the loop, making sure to re-assign it the value from the end of the previous loop iteration, so it can be used to avoid issue with closures.
 
-```js
-for (var i = 0; i < 5; ++i) {
-    setTimeout(function () {
-        console.log(i); // output '5' 5 times
-    }, 100);
-}
-```
+    for (var i = 0; i < 5; ++i) {
+        setTimeout(function () {
+            console.log(i); // output '5' 5 times
+        }, 100);
+    }
 
 After replacing `var` with `let`
 
-```js
-// print 1, 2, 3, 4, 5
-for (let i = 0; i < 5; ++i) {
-    setTimeout(function () {
-        console.log(i); // output 0, 1, 2, 3, 4
-    }, 100);
-}
-```
+    // print 1, 2, 3, 4, 5
+    for (let i = 0; i < 5; ++i) {
+        setTimeout(function () {
+            console.log(i); // output 0, 1, 2, 3, 4
+        }, 100);
+    }
 
 ### Should I replace `var` with `let`?
 
-> NO, `let` is the new block scoping `var`. That statement emphasizes that `let` should replace `var` only when `var` was already signaling
-> block scoping stylistically. Otherwise, leave `var` alone. `let` improves scoping options in JS, not replaces. `var` is still a useful signal for variables that are used throughout the function.
+> NO, `let` is the new block scoping `var`. That statement emphasizes that `let` should replace `var` only when `var` was already signaling block scoping stylistically. Otherwise, leave `var` alone. `let` improves scoping options in JS, not replaces. `var` is still a useful signal for variables that are used throughout the function.
 
 ### `let` compatibility
 
@@ -83,9 +74,7 @@ for (let i = 0; i < 5; ++i) {
 
 ### Playground
 
-<div>
-  <a class="jsbin-embed" href="http://jsbin.com/yumaye/embed?js,console">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.39.11"></script>
-</div>
+<a href="http://jsbin.com/yumaye/embed?js,console" class="jsbin-embed">JS Bin on jsbin.com</a>
 
 ### More info
 

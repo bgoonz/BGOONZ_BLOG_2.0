@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Underscore-string</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Underscore-string</h1>
+</header>
+<h3 id="usage">Usage</h3>
+<pre><code>// Use it like so:
+_.str.trim(&quot;hey&quot;);
+_s.trim(&quot;hey&quot;);
+
+// Unless you do:
+_.mixin(_.string.exports());
+
+// So you can:
+_.trim(&quot;hey&quot;);
+_(&quot;hey&quot;).trim();</code></pre>
+<h3 id="trimming">Trimming</h3>
+<pre><code>_.truncate(&quot;Hello world&quot;, 4) // =&gt; &quot;Hell...&quot;
+_.prune(&quot;Hello world&quot;, 5)    // =&gt; &quot;Hello...&quot;
+
+_.trim(&quot; foo &quot;)              // =&gt; &quot;foo&quot;
+_.trim(&quot;-foo-&quot;, &#39;-&#39;)         // =&gt; &quot;foo&quot;
+_.ltrim
+_.rtrim</code></pre>
+<h3 id="numbers">Numbers</h3>
+<pre><code>_.numberFormat(1000, 2)  // =&gt; &quot;1,000.00&quot;</code></pre>
+<h3 id="caps">Caps</h3>
+<pre><code>_.capitalize(&quot;foo bar&quot;)       // =&gt; &quot;Foo Bar&quot;
+_.humanize(&quot;hey-there foo&quot;)   // =&gt; &quot;Hey there foo&quot;
+_.titleize(&#39;My name is hi&#39;)   // =&gt; &quot;My Name Is Hi&quot;
+
+_.dasherize(&#39;MozTransform&#39;)   // =&gt; &quot;-moz-transform&quot;
+_.underscored(&#39;MozTransform&#39;) // =&gt; &quot;moz_transform&quot;
+_.classify(&#39;-moz-transform&#39;)  // =&gt; &quot;MozTransform&quot;
+_.camelize(&#39;moz_transform&#39;)   // =&gt; &quot;MozTransform&quot;
+
+_.slugify(&quot;hey there&quot;)        // =&gt; &quot;hey-there&quot;
+
+_.swapCase(&quot;hELLO&quot;)           // =&gt; &quot;Hello&quot;</code></pre>
+<h3 id="checks">Checks</h3>
+<pre><code>_.startsWith(&#39;image.gif&#39;, &#39;image&#39;) // =&gt; true
+_.endsWith(&#39;image.gif&#39;, &#39;.gif&#39;)    // =&gt; true
+_.isBlank(&quot; &quot;)                     // =&gt; true (also for &quot;\n&quot;, &quot;&quot;)</code></pre>
+<h3 id="html">HTML</h3>
+<pre><code>_.escapeHTML(&quot;&lt;div&gt;&quot;)
+_.unescapeHTML(&quot;&amp;lt;div&amp;gt;&quot;)
+_.stripTags(&quot;&lt;div&gt;hi&lt;/div&gt;&quot;)</code></pre>
+<h3 id="quote">Quote</h3>
+<pre><code>_.quote(&quot;hi&quot;, &#39;&quot;&#39;) // =&gt; &#39;&quot;hi&quot;&#39;
+_.unquote(&#39;&quot;hi&quot;&#39;)  // =&gt; &quot;hi&quot;</code></pre>
+<h3 id="splits">Splits</h3>
+<pre><code>_.lines(&quot;hi\nthere&quot;)     // =&gt; [&quot;hi&quot;,&quot;there&quot;]
+_.words(&quot;hi  there you&quot;) // =&gt; [&quot;hi&quot;,&quot;there&quot;,&quot;you&quot;]</code></pre>
+<h3 id="sprintf">Sprintf</h3>
+<pre><code>_.sprintf(&quot;%.1f&quot;, 1.17)</code></pre>
+<h3 id="pad">Pad</h3>
+<pre><code>_.pad(&quot;1&quot;, 8)               // =&gt; &quot;       1&quot;
+_.pad(&quot;1&quot;, 8, &quot;0&quot;)          // =&gt; &quot;00000001&quot;
+_.pad(&quot;1&quot;, 8, &quot; &quot;, &quot;right&quot;) // =&gt; &quot;1       &quot;
+_.pad(&quot;1&quot;, 8, &quot; &quot;, &quot;both&quot;)  // =&gt; &quot;    1   &quot;
+
+_.lpad(..)  // same as _.pad(.., &#39;left&#39;)
+_.rpad(..)  // same as _.pad(.., &#39;right&#39;)
+_.lrpad(..) // same as _.pad(.., &#39;both&#39;)</code></pre>
+<h3 id="references">References</h3>
+<ul>
+<li>https://github.com/epeli/underscore.string</li>
+</ul>
+</body>
+</html>

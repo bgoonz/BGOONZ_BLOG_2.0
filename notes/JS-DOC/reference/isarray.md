@@ -1,4 +1,5 @@
-# Array.isArray()
+Array.isArray()
+===============
 
 The `Array.isArray()` method determines whether the passed value is an [`Array`](../array).
 
@@ -7,7 +8,8 @@ The `Array.isArray()` method determines whether the passed value is an [`Array`]
     Array.isArray('foobar');   // false
     Array.isArray(undefined);  // false
 
-## Syntax
+Syntax
+------
 
     Array.isArray(value)
 
@@ -20,13 +22,15 @@ The value to be checked.
 
 `true` if the value is an [`Array`](../array); otherwise, `false`.
 
-## Description
+Description
+-----------
 
 If the value is an [`Array`](../array), `true` is returned; otherwise, `false` is.
 
-See the article ["Determining with absolute accuracy whether or not a JavaScript object is an array"](https://web.mit.edu/jwalden/www/isArray.html) for more details. Given a [`TypedArray`](../typedarray) instance, `false` is always returned.
+See the article [“Determining with absolute accuracy whether or not a JavaScript object is an array”](https://web.mit.edu/jwalden/www/isArray.html) for more details. Given a [`TypedArray`](../typedarray) instance, `false` is always returned.
 
-## Examples
+Examples
+--------
 
 ### Using Array.isArray
 
@@ -65,12 +69,11 @@ When checking for `Array` instance, `Array.isArray` is preferred over `instanceo
     // Considered harmful, because doesn't work through iframes
     arr instanceof Array; // false
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.isarray">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-array.isarray</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-array.isarray</span></td></tr></tbody></table>
 
 `isArray`
 
@@ -98,7 +101,8 @@ When checking for `Array` instance, `Array.isArray` is preferred over `instanceo
 
 1.0
 
-## See also
+See also
+--------
 
 -   [A polyfill](https://github.com/behnammodi/polyfill/blob/master/array.polyfill.js)
 -   [`Array`](../array)

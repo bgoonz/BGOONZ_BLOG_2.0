@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>fround</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="math.fround">Math.fround()</h1>
+<p>The <code>Math.fround()</code> function returns the nearest <a href="https://en.wikipedia.org/wiki/Single-precision_floating-point_format">32-bit single precision</a> float representation of a <a href="../number"><code>Number</code></a>.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>Math.fround(doubleFloat)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>doubleFloat</code><br />
+A <a href="../number"><code>Number</code></a>. If the parameter is of a different type, it will get converted to a number or to <a href="../nan"><code>NaN</code></a> if it cannot be converted.</p>
+<h3 id="return-value">Return value</h3>
+<p>The nearest <a href="https://en.wikipedia.org/wiki/Single-precision_floating-point_format">32-bit single precision</a> float representation of the given number.</p>
+<h2 id="description">Description</h2>
+<p>JavaScript uses 64-bit double floating-point numbers internally, which offer a very high precision. However, sometimes you may be working with 32-bit floating-point numbers, for example if you are reading values from a <a href="../float32array"><code>Float32Array</code></a>. This can create confusion: Checking a 64-bit float and a 32-bit float for equality may fail even though the numbers are seemingly identical.</p>
+<p>To solve this, <code>Math.fround()</code> can be used to cast the 64-bit float to a 32-bit float. Internally, JavaScript continues to treat the number as a 64-bit float, it just performs a “round to even” on the 23rd bit of the mantissa, and sets all following mantissa bits to <code>0</code>. If the number is outside the range of a 32-bit float, <a href="../infinity"><code>Infinity</code></a> or <code>-Infinity</code> is returned.</p>
+<p>Because <code>fround()</code> is a static method of <code>Math</code>, you always use it as <code>Math.fround()</code>, rather than as a method of a <code>Math</code> object you created (<code>Math</code> is not a constructor).</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-math.fround">Using Math.fround()</h3>
+<p>The number 1.5 can be precisely represented in the binary numeral system, and is identical in 32-bit and 64-bit:</p>
+<pre><code>Math.fround(1.5); // 1.5
+Math.fround(1.5) === 1.5; // true</code></pre>
+<p>However, the number 1.337 cannot be precisely represented in the binary numeral system, so it differs in 32-bit and 64-bit:</p>
+<pre><code>Math.fround(1.337); // 1.3370000123977661
+Math.fround(1.337) === 1.337; // false</code></pre>
+<p>2<sup>150</sup> is too big for a 32-bit float, so <code>Infinity</code> is returned:</p>
+<pre><code>2 ** 150; // 1.42724769270596e+45
+Math.fround(2 ** 150); // Infinity</code></pre>
+<p>If the parameter cannot be converted to a number, or it is <a href="https://en.wikipedia.org/wiki/NaN">not-a-number</a> (<code>NaN</code>), <code>Math.fround()</code> will return <code>NaN</code>:</p>
+<pre><code>Math.fround(&#39;abc&#39;); // NaN
+Math.fround(NaN); // NaN</code></pre>
+<h2 id="polyfill">Polyfill</h2>
+<p>This can be emulated with the following function, if <a href="../float32array"><code>Float32Array</code></a> are supported:</p>
+<pre><code>Math.fround = Math.fround || (function (array) {
+  return function(x) {
+    return array[0] = x, array[0];
+  };
+})(new Float32Array(1));</code></pre>
+<p>Supporting older browsers is slower, but also possible:</p>
+<pre><code>if (!Math.fround) Math.fround = function(arg) {
+  arg = Number(arg);
+  // Return early for ±0 and NaN.
+  if (!arg) return arg;
+  var sign = arg &lt; 0 ? -1 : 1;
+  if (sign &lt; 0) arg = -arg;
+  // Compute the exponent (8 bits, signed).
+  var exp = Math.floor(Math.log(arg) / Math.LN2);
+  var powexp = Math.pow(2, Math.max(-126, Math.min(exp, 127)));
+  // Handle subnormals: leading digit is zero if exponent bits are all zero.
+  var leading = exp &lt; -127 ? 0 : 1;
+  // Compute 23 bits of mantissa, inverted to round toward zero.
+  var mantissa = Math.round((leading - arg / powexp) * 0x800000);
+  if (mantissa &lt;= -0x800000) return sign * Infinity;
+  return sign * powexp * (leading - mantissa / 0x800000);
+};</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-math.fround">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-math.fround</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>fround</code></p>
+<p>38</p>
+<p>12</p>
+<p>26</p>
+<p>No</p>
+<p>25</p>
+<p>8</p>
+<p>38</p>
+<p>38</p>
+<p>26</p>
+<p>25</p>
+<p>8</p>
+<p>3.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="round"><code>Math.round()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/fround" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/fround</a></p>
+</body>
+</html>

@@ -1,8 +1,9 @@
-# Web Developer Resource List Part 2
+Web Developer Resource List Part 2
+==================================
 
 Because I compile these things compulsively anyway…
 
----
+------------------------------------------------------------------------
 
 ### Web Developer Resource List Part 2
 
@@ -60,7 +61,7 @@ Because I compile these things compulsively anyway…
 
 ### Grafana
 
--   <span id="db81"><a href="https://github.com/mlabouardy/grafana-dashboards" class="markup--anchor markup--li-anchor">Grafana Dashboards @mlabouardy</a></span>
+-   <span id="db81"><a href="https://github.com/mlabouardy/grafana-dashboards" class="markup--anchor markup--li-anchor">Grafana Dashboards <span class="citation" data-cites="mlabouardy">@mlabouardy</span></a></span>
 
 ### Docker
 
@@ -77,8 +78,8 @@ Metrics:
 
 #### Awesome Docker Repos
 
--   <span id="8b0f"><a href="https://github.com/jessfraz/dockerfiles" class="markup--anchor markup--li-anchor">Jess's Dockerfiles</a></span>
--   <span id="46e9"><a href="https://github.com/firecat53/dockerfiles" class="markup--anchor markup--li-anchor">Firecat53's Dockerfiles</a></span>
+-   <span id="8b0f"><a href="https://github.com/jessfraz/dockerfiles" class="markup--anchor markup--li-anchor">Jess’s Dockerfiles</a></span>
+-   <span id="46e9"><a href="https://github.com/firecat53/dockerfiles" class="markup--anchor markup--li-anchor">Firecat53’s Dockerfiles</a></span>
 
 #### RaspberryPi ARM Images:
 
@@ -180,7 +181,7 @@ Metrics:
 
 -   <span id="e55e"><a href="https://modess.io/jenkins-php/" class="markup--anchor markup--li-anchor">Modess — PHP with Jenkins</a></span>
 -   <span id="e077"><a href="https://code.tutsplus.com/tutorials/setting-up-continuous-integration-continuous-deployment-with-jenkins--cms-21511" class="markup--anchor markup--li-anchor">CI/CD Nodejs Tutorial with Jenkins</a></span>
--   <span id="8663"><a href="https://medium.com/@mosheezderman/how-to-set-up-ci-cd-pipeline-for-a-node-js-app-with-jenkins-c51581cc783c" class="markup--anchor markup--li-anchor">CI/CD Nodejs Tutorial with Jenkins @medium</a></span>
+-   <span id="8663"><a href="https://medium.com/@mosheezderman/how-to-set-up-ci-cd-pipeline-for-a-node-js-app-with-jenkins-c51581cc783c" class="markup--anchor markup--li-anchor">CI/CD Nodejs Tutorial with Jenkins <span class="citation" data-cites="medium">@medium</span></a></span>
 -   <span id="c17d"><a href="https://github.com/shazChaudhry/docker-swarm-mode" class="markup--anchor markup--li-anchor">Epic CICD workflow with Jenkins, Gitlab, Sonar, Nexus</a></span>
 
 #### SwarmCi
@@ -290,7 +291,7 @@ Metrics:
 -   <span id="2583"><a href="http://mherman.org/" class="markup--anchor markup--li-anchor">Michael Herman</a></span>
 -   <span id="3e8c"><a href="http://charlesleifer.com/" class="markup--anchor markup--li-anchor">Charles Leifer</a></span>
 -   <span id="3b5d"><a href="https://www.blog.labouardy.com/" class="markup--anchor markup--li-anchor">Labouardy</a></span>
--   <span id="2759"><a href="https://tech.marksblogg.com/" class="markup--anchor markup--li-anchor">Mark's Tech Blog</a></span>
+-   <span id="2759"><a href="https://tech.marksblogg.com/" class="markup--anchor markup--li-anchor">Mark’s Tech Blog</a></span>
 
 ### Linuxkit:
 
@@ -445,22 +446,19 @@ Metrics:
 
 ### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong>
-<br/>
+**bgoonz’s gists**  
 
-<em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…*gist.github.com<a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong>
-<br/>
+**bgoonz — Overview**  
 
-<em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…*github.com<a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ### Discover More:
 
-<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong>
-<br/>
+**Web-Dev-Hub**  
 
-<em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…*bgoonz-blog.netlify.app<a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [March 19, 2021](https://medium.com/p/9c5cb56ab263).
 

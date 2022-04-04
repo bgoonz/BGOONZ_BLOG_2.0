@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>paste</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="to-concat-columns-from-files">To concat columns from files:</h1>
+<p>paste <file>…</p>
+<h1 id="to-list-the-files-in-the-current-directory-in-three-columns">To list the files in the current directory in three columns:</h1>
+<p>ls | paste - - -</p>
+<h1 id="to-combine-pairs-of-lines-from-a-file-into-single-lines">To combine pairs of lines from a file into single lines:</h1>
+<p>paste -s -d ‘’ <file></p>
+<h1 id="to-number-the-lines-in-a-file-similar-to-nl1">To number the lines in a file, similar to nl(1):</h1>
+<p>sed = <file> | paste -s -d ‘’ - -</p>
+<h1 id="to-create-a-colon-separated-list-of-directories-named-bin-suitable-for-use-in-the-path-environment-variable">To create a colon-separated list of directories named bin, suitable for use in the PATH environment variable:</h1>
+<p>find / -name bin -type d | paste -s -d : -</p>
+</body>
+</html>

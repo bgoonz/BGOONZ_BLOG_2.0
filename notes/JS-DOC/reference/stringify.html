@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>stringify</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="json.stringify">JSON.stringify()</h1>
+<p>The <code>JSON.stringify()</code> method converts a JavaScript object or value to a JSON string, optionally replacing values if a replacer function is specified or optionally including only the specified properties if a replacer array is specified.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>JSON.stringify(value)
+JSON.stringify(value, replacer)
+JSON.stringify(value, replacer, space)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>value</code><br />
+The value to convert to a JSON string.</p>
+<p><code>replacer</code> <span class="badge inline optional">Optional</span><br />
+A function that alters the behavior of the stringification process, or an array of <a href="../string"><code>String</code></a> and <a href="../number"><code>Number</code></a> that serve as an allowlist for selecting/filtering the properties of the value object to be included in the JSON string. If this value is <a href="../null"><code>null</code></a> or not provided, all properties of the object are included in the resulting JSON string.</p>
+<p><code>space</code> <span class="badge inline optional">Optional</span><br />
+A <a href="../string"><code>String</code></a> or <a href="../number"><code>Number</code></a> object that’s used to insert white space into the output JSON string for readability purposes.</p>
+<p>If this is a <code>Number</code>, it indicates the number of space characters to use as white space; this number is capped at 10 (if it is greater, the value is just <code>10</code>). Values less than 1 indicate that no space should be used.</p>
+<p>If this is a <code>String</code>, the string (or the first 10 characters of the string, if it’s longer than that) is used as white space. If this parameter is not provided (or is <a href="../null"><code>null</code></a>), no white space is used.</p>
+<h3 id="return-value">Return value</h3>
+<p>A JSON string representing the given value, or undefined.</p>
+<h3 id="exceptions">Exceptions</h3>
+<ul>
+<li>Throws a <a href="../typeerror"><code>TypeError</code></a> (“cyclic object value”) exception when a circular reference is found.</li>
+<li>Throws a <a href="../typeerror"><code>TypeError</code></a> (“BigInt value can’t be serialized in JSON”) when trying to stringify a <a href="../bigint"><code>BigInt</code></a> value.</li>
+</ul>
+<h2 id="description">Description</h2>
+<p><code>JSON.stringify()</code> converts a value to JSON notation representing it:</p>
+<ul>
+<li>If the value has a <code>toJSON()</code> method, it’s responsible to define what data will be serialized.</li>
+<li><a href="../boolean"><code>Boolean</code></a>, <a href="../number"><code>Number</code></a>, and <a href="../string"><code>String</code></a> objects are converted to the corresponding primitive values during stringification, in accord with the traditional conversion semantics.</li>
+<li><a href="../undefined"><code>undefined</code></a>, <a href="../function"><code>Function</code></a>s, and <a href="../symbol"><code>Symbol</code></a>s are not valid JSON values. If any such values are encountered during conversion they are either omitted (when found in an object) or changed to <a href="../null"><code>null</code></a> (when found in an array). <code>JSON.stringify()</code> can return <code>undefined</code> when passing in “pure” values like <code>JSON.stringify(function(){})</code> or <code>JSON.stringify(undefined)</code>.</li>
+<li>All <a href="../symbol"><code>Symbol</code></a>-keyed properties will be completely ignored, even when using the <code>replacer</code> function.</li>
+<li>The instances of <a href="../date"><code>Date</code></a> implement the <code>toJSON()</code> function by returning a string (the same as <code>date.toISOString()</code>). Thus, they are treated as strings.</li>
+<li>The numbers <a href="../infinity"><code>Infinity</code></a> and <a href="../nan"><code>NaN</code></a>, as well as the value <a href="../null"><code>null</code></a>, are all considered <code>null</code>.</li>
+<li>All the other <a href="../object"><code>Object</code></a> instances (including <a href="../map"><code>Map</code></a>, <a href="../set"><code>Set</code></a>, <a href="../weakmap"><code>WeakMap</code></a>, and <a href="../weakset"><code>WeakSet</code></a>) will have only their enumerable properties serialized.</li>
+</ul>
+<h2 id="examples">Examples</h2>
+<h3 id="using-json.stringify">Using JSON.stringify</h3>
+<pre><code>JSON.stringify({});                    // &#39;{}&#39;
+JSON.stringify(true);                  // &#39;true&#39;
+JSON.stringify(&#39;foo&#39;);                 // &#39;&quot;foo&quot;&#39;
+JSON.stringify([1, &#39;false&#39;, false]);   // &#39;[1,&quot;false&quot;,false]&#39;
+JSON.stringify([NaN, null, Infinity]); // &#39;[null,null,null]&#39;
+JSON.stringify({ x: 5 });              // &#39;{&quot;x&quot;:5}&#39;
+
+JSON.stringify(new Date(2006, 0, 2, 15, 4, 5))
+// &#39;&quot;2006-01-02T15:04:05.000Z&quot;&#39;
+
+JSON.stringify({ x: 5, y: 6 });
+// &#39;{&quot;x&quot;:5,&quot;y&quot;:6}&#39;
+JSON.stringify([new Number(3), new String(&#39;false&#39;), new Boolean(false)]);
+// &#39;[3,&quot;false&quot;,false]&#39;
+
+// String-keyed array elements are not enumerable and make no sense in JSON
+let a = [&#39;foo&#39;, &#39;bar&#39;];
+a[&#39;baz&#39;] = &#39;quux&#39;;      // a: [ 0: &#39;foo&#39;, 1: &#39;bar&#39;, baz: &#39;quux&#39; ]
+JSON.stringify(a);
+// &#39;[&quot;foo&quot;,&quot;bar&quot;]&#39;
+
+JSON.stringify({ x: [10, undefined, function(){}, Symbol(&#39;&#39;)] });
+// &#39;{&quot;x&quot;:[10,null,null,null]}&#39;
+
+// Standard data structures
+JSON.stringify([new Set([1]), new Map([[1, 2]]), new WeakSet([{a: 1}]), new WeakMap([[{a: 1}, 2]])]);
+// &#39;[{},{},{},{}]&#39;
+
+// TypedArray
+JSON.stringify([new Int8Array([1]), new Int16Array([1]), new Int32Array([1])]);
+// &#39;[{&quot;0&quot;:1},{&quot;0&quot;:1},{&quot;0&quot;:1}]&#39;
+JSON.stringify([new Uint8Array([1]), new Uint8ClampedArray([1]), new Uint16Array([1]), new Uint32Array([1])]);
+// &#39;[{&quot;0&quot;:1},{&quot;0&quot;:1},{&quot;0&quot;:1},{&quot;0&quot;:1}]&#39;
+JSON.stringify([new Float32Array([1]), new Float64Array([1])]);
+// &#39;[{&quot;0&quot;:1},{&quot;0&quot;:1}]&#39;
+
+// toJSON()
+JSON.stringify({ x: 5, y: 6, toJSON(){ return this.x + this.y; } });
+// &#39;11&#39;
+
+// Symbols:
+JSON.stringify({ x: undefined, y: Object, z: Symbol(&#39;&#39;) });
+// &#39;{}&#39;
+JSON.stringify({ [Symbol(&#39;foo&#39;)]: &#39;foo&#39; });
+// &#39;{}&#39;
+JSON.stringify({ [Symbol.for(&#39;foo&#39;)]: &#39;foo&#39; }, [Symbol.for(&#39;foo&#39;)]);
+// &#39;{}&#39;
+JSON.stringify({ [Symbol.for(&#39;foo&#39;)]: &#39;foo&#39; }, function(k, v) {
+  if (typeof k === &#39;symbol&#39;) {
+    return &#39;a symbol&#39;;
+  }
+});
+// undefined
+
+// Non-enumerable properties:
+JSON.stringify( Object.create(null, { x: { value: &#39;x&#39;, enumerable: false }, y: { value: &#39;y&#39;, enumerable: true } }) );
+// &#39;{&quot;y&quot;:&quot;y&quot;}&#39;
+
+// BigInt values throw
+JSON.stringify({x: 2n});
+// TypeError: BigInt value can&#39;t be serialized in JSON</code></pre>
+<h3 id="the-replacer-parameter">The replacer parameter</h3>
+<p>The <code>replacer</code> parameter can be either a function or an array.</p>
+<p><strong>As a function</strong>, it takes two parameters: the key and the value being stringified. The object in which the key was found is provided as the <code>replacer</code>’s <code>this</code> parameter.</p>
+<p>Initially, the <code>replacer</code> function is called with an empty string as key representing the object being stringified. It is then called for each property on the object or array being stringified.</p>
+<p>It should return the value that should be added to the JSON string, as follows:</p>
+<ul>
+<li>If you return a <a href="../number"><code>Number</code></a>, <a href="../string"><code>String</code></a>, <a href="../boolean"><code>Boolean</code></a>, or <a href="../null"><code>null</code></a>, the stringified version of that value is used as the property’s value.</li>
+<li>If you return a <a href="../function"><code>Function</code></a>, <a href="../symbol"><code>Symbol</code></a>, or <a href="../undefined"><code>undefined</code></a>, the property is not included in the output.</li>
+<li>If you return any other object, the object is recursively stringified, calling the <code>replacer</code> function on each property.</li>
+</ul>
+<p><strong>Note:</strong> You cannot use the <code>replacer</code> function to remove values from an array. If you return <code>undefined</code> or a function then <code>null</code> is used instead.</p>
+<p><strong>Note:</strong> If you wish the <code>replacer</code> to distinguish an initial object from a key with an empty string property (since both would give the empty string as key and potentially an object as value), you will have to keep track of the iteration count (if it is beyond the first iteration, it is a genuine empty string key).</p>
+<h4 id="example-replacer-as-a-function">Example replacer, as a function</h4>
+<pre><code>function replacer(key, value) {
+  // Filtering out properties
+  if (typeof value === &#39;string&#39;) {
+    return undefined;
+  }
+  return value;
+}
+
+var foo = {foundation: &#39;Mozilla&#39;, model: &#39;box&#39;, week: 45, transport: &#39;car&#39;, month: 7};
+JSON.stringify(foo, replacer);
+// &#39;{&quot;week&quot;:45,&quot;month&quot;:7}&#39;</code></pre>
+<h4 id="example-replacer-as-an-array">Example replacer, as an array</h4>
+<p>If <code>replacer</code> is an array, the array’s values indicate the names of the properties in the object that should be included in the resulting JSON string.</p>
+<pre><code>JSON.stringify(foo, [&#39;week&#39;, &#39;month&#39;]);
+// &#39;{&quot;week&quot;:45,&quot;month&quot;:7}&#39;, only keep &quot;week&quot; and &quot;month&quot; properties</code></pre>
+<h3 id="the-space-argument">The space argument</h3>
+<p>The <code>space</code> argument may be used to control spacing in the final string.</p>
+<ul>
+<li><strong>If it is a number</strong>, successive levels in the stringification will each be indented by this many space characters (up to 10).</li>
+<li><strong>If it is a string</strong>, successive levels will be indented by this string (or the first ten characters of it).</li>
+</ul>
+<!-- -->
+<pre><code>JSON.stringify({ a: 2 }, null, &#39; &#39;);
+// &#39;{
+//  &quot;a&quot;: 2
+// }&#39;</code></pre>
+<p>Using a tab character mimics standard pretty-print appearance:</p>
+<pre><code>JSON.stringify({ uno: 1, dos: 2 }, null, &#39;\t&#39;);
+// returns the string:
+// &#39;{
+//     &quot;uno&quot;: 1,
+//     &quot;dos&quot;: 2
+// }&#39;</code></pre>
+<h3 id="tojson-behavior">toJSON() behavior</h3>
+<p>If an object being stringified has a property named <code>toJSON</code> whose value is a function, then the <code>toJSON()</code> method customizes JSON stringification behavior: instead of the object being serialized, the value returned by the <code>toJSON()</code> method when called will be serialized. <code>JSON.stringify()</code> calls <code>toJSON</code> with one parameter:</p>
+<ul>
+<li>if this object is a property value, the property name</li>
+<li>if it is in an array, the index in the array, as a string</li>
+<li>an empty string if <code>JSON.stringify()</code> was directly called on this object</li>
+</ul>
+<p>For example:</p>
+<pre><code>var obj = {
+    data: &#39;data&#39;,
+
+    toJSON (key) {
+        if (key)
+            return `Now I am a nested object under key &#39;${key}&#39;`;
+        else
+            return this;
+    }
+};
+
+JSON.stringify(obj);
+// &#39;{&quot;data&quot;:&quot;data&quot;}&#39;
+
+JSON.stringify({ obj }); // Shorthand property names (ES2015).
+// &#39;{&quot;obj&quot;:&quot;Now I am a nested object under key &#39;obj&#39;&quot;}&#39;
+
+JSON.stringify([ obj ]);
+// &#39;[&quot;Now I am a nested object under key &#39;0&#39;&quot;]&#39;</code></pre>
+<h3 id="issue-with-json.stringify-when-serializing-circular-references">Issue with JSON.stringify() when serializing circular references</h3>
+<p>Note that since the <a href="https://www.json.org/">JSON format</a> doesn’t support object references (although an <a href="https://datatracker.ietf.org/doc/html/draft-pbryan-zyp-json-ref-03">IETF draft exists</a>), a <a href="../typeerror"><code>TypeError</code></a> will be thrown if one attempts to encode an object with circular references.</p>
+<pre><code>const circularReference = {};
+circularReference.myself = circularReference;
+
+// Serializing circular references throws &quot;TypeError: cyclic object value&quot;
+JSON.stringify(circularReference);</code></pre>
+<p>To serialize circular references you can use a library that supports them (e.g. <a href="https://github.com/douglascrockford/JSON-js/blob/master/cycle.js">cycle.js</a> by Douglas Crockford) or implement a solution by yourself, which will require finding and replacing (or removing) the cyclic references by serializable values.</p>
+<h3 id="issue-with-plain-json.stringify-for-use-as-javascript">Issue with plain JSON.stringify for use as JavaScript</h3>
+<p>Historically, JSON was not a completely strict subset of JavaScript. The literal code points U+2028 LINE SEPARATOR and U+2029 PARAGRAPH SEPARATOR could appear literally in string literals and property names in JSON text. But they could not appear literally in similar context in JavaScript text, only using Unicode escapes as <code>\u2028</code> and <code>\u2029</code>. This recently changed: now both code points may appear literally in strings in JSON and JavaScript both.</p>
+<p>Therefore, if compatibility with older JavaScript engines is required, it is perilous to directly substitute the string returned by <code>JSON.stringify</code> into a JavaScript string to be passed to <code>eval</code> or <code>new Function</code> or as part of a <a href="https://en.wikipedia.org/wiki/JSONP">JSONP</a> URL, and the following utility can be used:</p>
+<pre><code>function jsFriendlyJSONStringify (s) {
+    return JSON.stringify(s).
+        replace(/\u2028/g, &#39;\\u2028&#39;).
+        replace(/\u2029/g, &#39;\\u2029&#39;);
+}
+
+var s = {
+    a: String.fromCharCode(0x2028),
+    b: String.fromCharCode(0x2029)
+};
+try {
+    eval(&#39;(&#39; + JSON.stringify(s) + &#39;)&#39;);
+} catch (e) {
+    console.log(e); // &quot;SyntaxError: unterminated string literal&quot;
+}
+
+// No need for a catch
+eval(&#39;(&#39; + jsFriendlyJSONStringify(s) + &#39;)&#39;);
+
+// console.log in Firefox unescapes the Unicode if
+//   logged to console, so we use alert
+alert(jsFriendlyJSONStringify(s)); // {&quot;a&quot;:&quot;\u2028&quot;,&quot;b&quot;:&quot;\u2029&quot;}</code></pre>
+<p><strong>Note:</strong> Properties of non-array objects are not guaranteed to be stringified in any particular order. Do not rely on ordering of properties within the same object within the stringification.</p>
+<pre><code>var a = JSON.stringify({ foo: &quot;bar&quot;, baz: &quot;quux&quot; })
+//&#39;{&quot;foo&quot;:&quot;bar&quot;,&quot;baz&quot;:&quot;quux&quot;}&#39;
+var b = JSON.stringify({ baz: &quot;quux&quot;, foo: &quot;bar&quot; })
+//&#39;{&quot;baz&quot;:&quot;quux&quot;,&quot;foo&quot;:&quot;bar&quot;}&#39;
+console.log(a !== b) // true
+
+// some memoization functions use JSON.stringify to serialize arguments,
+// which may cause a cache miss when encountering the same object like above</code></pre>
+<h3 id="example-of-using-json.stringify-with-localstorage">Example of using JSON.stringify() with localStorage</h3>
+<p>In a case where you want to store an object created by your user and allowing it to be restored even after the browser has been closed, the following example is a model for the applicability of <code>JSON.stringify()</code>:</p>
+<pre><code>// Creating an example of JSON
+var session = {
+  &#39;screens&#39;: [],
+  &#39;state&#39;: true
+};
+session.screens.push({ &#39;name&#39;: &#39;screenA&#39;, &#39;width&#39;: 450, &#39;height&#39;: 250 });
+session.screens.push({ &#39;name&#39;: &#39;screenB&#39;, &#39;width&#39;: 650, &#39;height&#39;: 350 });
+session.screens.push({ &#39;name&#39;: &#39;screenC&#39;, &#39;width&#39;: 750, &#39;height&#39;: 120 });
+session.screens.push({ &#39;name&#39;: &#39;screenD&#39;, &#39;width&#39;: 250, &#39;height&#39;: 60 });
+session.screens.push({ &#39;name&#39;: &#39;screenE&#39;, &#39;width&#39;: 390, &#39;height&#39;: 120 });
+session.screens.push({ &#39;name&#39;: &#39;screenF&#39;, &#39;width&#39;: 1240, &#39;height&#39;: 650 });
+
+// Converting the JSON string with JSON.stringify()
+// then saving with localStorage in the name of session
+localStorage.setItem(&#39;session&#39;, JSON.stringify(session));
+
+// Example of how to transform the String generated through
+// JSON.stringify() and saved in localStorage in JSON object again
+var restoredSession = JSON.parse(localStorage.getItem(&#39;session&#39;));
+
+// Now restoredSession variable contains the object that was saved
+// in localStorage
+console.log(restoredSession);</code></pre>
+<h3 id="well-formed-json.stringify">Well-formed JSON.stringify()</h3>
+<p>Engines implementing the <a href="https://github.com/tc39/proposal-well-formed-stringify">well-formed JSON.stringify specification</a> will stringify lone surrogates, any code point from U+D800 to U+DFFF, using Unicode escape sequences rather than literally. Before this change <code>JSON.stringify</code> would output lone surrogates if the input contained any lone surrogates; such strings could not be encoded in valid UTF-8 or UTF-16:</p>
+<pre><code>JSON.stringify(&quot;\uD800&quot;); // &#39;&quot;�&quot;&#39;</code></pre>
+<p>But with this change <code>JSON.stringify</code> represents lone surrogates using JSON escape sequences that <em>can</em> be encoded in valid UTF-8 or UTF-16:</p>
+<pre><code>JSON.stringify(&quot;\uD800&quot;); // &#39;&quot;\\ud800&quot;&#39;</code></pre>
+<p>This change should be backwards-compatible as long as you pass the result of <code>JSON.stringify</code> to APIs such as <code>JSON.parse</code> that will accept any valid JSON text, because they will treat Unicode escapes of lone surrogates as identical to the lone surrogates themselves. <em>Only</em> if you are directly interpreting the result of <code>JSON.stringify</code> do you need to carefully handle <code>JSON.stringify</code>’s two possible encodings of these code points.</p>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-json.stringify">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-json.stringify</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>stringify</code></p>
+<p>3</p>
+<p>12</p>
+<p>3.5</p>
+<p>8</p>
+<p>10.5</p>
+<p>4</p>
+<p>≤37</p>
+<p>18</p>
+<p>4</p>
+<p>11</p>
+<p>4</p>
+<p>1.0</p>
+<p><code>well_formed_stringify</code></p>
+<p>72</p>
+<p>79</p>
+<p>64</p>
+<p>No</p>
+<p>60</p>
+<p>12.1</p>
+<p>72</p>
+<p>72</p>
+<p>64</p>
+<p>50</p>
+<p>12.2</p>
+<p>No</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="parse"><code>JSON.parse()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify</a></p>
+</body>
+</html>

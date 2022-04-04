@@ -1,4 +1,4 @@
-<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7); src="https://archive.org/" comp-type="feed" width="400" height="600"></iframe>
+&lt;iframe style=“-webkit-transform:scale(0.7);-moz-transform-scale(0.7); src=”https://archive.org/" comp-type=“feed” width=“400” height=“600”&gt;
 
 https://sanity-signup.netlify.app/
 

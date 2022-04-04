@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>substring</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="string.prototype.substring">String.prototype.substring()</h1>
+<p>The <code>substring()</code> method returns the part of the <code>string</code> between the start and end indexes, or to the end of the string.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>substring(indexStart)
+substring(indexStart, indexEnd)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>indexStart</code><br />
+The index of the first character to include in the returned substring.</p>
+<p><code>indexEnd</code> <span class="badge inline optional">Optional</span><br />
+The index of the first character to exclude from the returned substring.</p>
+<h3 id="return-value">Return value</h3>
+<p>A new string containing the specified part of the given string.</p>
+<h2 id="description">Description</h2>
+<p><code>substring()</code> extracts characters from <code>indexStart</code> up to <em>but not including</em> <code>indexEnd</code>. In particular:</p>
+<ul>
+<li>If <code>indexEnd</code> is omitted, <code>substring()</code> extracts characters to the end of the string.</li>
+<li>If <code>indexStart</code> is equal to <code>indexEnd</code>, <code>substring()</code> returns an empty string.</li>
+<li>If <code>indexStart</code> is greater than <code>indexEnd</code>, then the effect of <code>substring()</code> is as if the two arguments were swapped; See example below.</li>
+</ul>
+<p>Any argument value that is less than <code>0</code> or greater than <code>stringName.length</code> is treated as if it were <code>0</code> and <code>stringName.length</code>, respectively.</p>
+<p>Any argument value that is <a href="../nan"><code>NaN</code></a> is treated as if it were <code>0</code>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-substring">Using substring()</h3>
+<p>The following example uses <code>substring()</code> to display characters from the string <code>'Mozilla'</code>:</p>
+<pre><code>let anyString = &#39;Mozilla&#39;
+
+// Displays &#39;M&#39;
+console.log(anyString.substring(0, 1))
+console.log(anyString.substring(1, 0))
+
+// Displays &#39;Mozill&#39;
+console.log(anyString.substring(0, 6))
+
+// Displays &#39;lla&#39;
+console.log(anyString.substring(4))
+console.log(anyString.substring(4, 7))
+console.log(anyString.substring(7, 4))
+
+// Displays &#39;Mozilla&#39;
+console.log(anyString.substring(0, 7))
+console.log(anyString.substring(0, 10))</code></pre>
+<h3 id="using-substring-with-length-property">Using substring() with length property</h3>
+<p>The following example uses the <code>substring()</code> method and <a href="length"><code>length</code></a> property to extract the last characters of a particular string. This method may be easier to remember, given that you don’t need to know the starting and ending indices as you would in the above examples.</p>
+<pre><code>// Displays &#39;illa&#39; the last 4 characters
+let anyString = &#39;Mozilla&#39;
+let anyString4 = anyString.substring(anyString.length - 4)
+console.log(anyString4)
+
+// Displays &#39;zilla&#39; the last 5 characters
+let anyString = &#39;Mozilla&#39;
+let anyString5 = anyString.substring(anyString.length - 5)
+console.log(anyString5)</code></pre>
+<h3 id="the-difference-between-substring-and-substr">The difference between substring() and substr()</h3>
+<p>There’s a subtle difference between the <code>substring()</code> and <a href="substr"><code>substr()</code></a> methods, so you should be careful not to get them confused.</p>
+<p>The arguments of <code>substring()</code> represent the starting and ending indexes, while the arguments of <code>substr()</code> represent the starting index and the number of characters to include in the returned string.</p>
+<p>Furthermore, <code>substr()</code> is considered a <strong>legacy feature in ECMAScript</strong> and could be removed from future versions, so it is best to avoid using it if possible.</p>
+<pre><code>let text = &#39;Mozilla&#39;
+console.log(text.substring(2,5))  // =&gt; &quot;zil&quot;
+console.log(text.substr(2,3))     // =&gt; &quot;zil&quot;</code></pre>
+<h3 id="differences-between-substring-and-slice">Differences between substring() and slice()</h3>
+<p>The <code>substring()</code> and <a href="slice"><code>slice()</code></a> methods are almost identical, but there are a couple of subtle differences between the two, especially in the way negative arguments are dealt with.</p>
+<p>The <code>substring()</code> method swaps its two arguments if <code>indexStart</code> is greater than <code>indexEnd</code>, meaning that a string is still returned. The <a href="slice"><code>slice()</code></a> method returns an empty string if this is the case.</p>
+<pre><code>let text = &#39;Mozilla&#39;
+console.log(text.substring(5, 2))  // =&gt; &quot;zil&quot;
+console.log(text.slice(5, 2))      // =&gt; &quot;&quot;</code></pre>
+<p>If either or both of the arguments are negative or <code>NaN</code>, the <code>substring()</code> method treats them as if they were <code>0</code>.</p>
+<pre><code>console.log(text.substring(-5, 2))  // =&gt; &quot;Mo&quot;
+console.log(text.substring(-5, -2)) // =&gt; &quot;&quot;</code></pre>
+<p><code>slice()</code> also treats <code>NaN</code> arguments as <code>0</code>, but when it is given negative values it counts backwards from the end of the string to find the indexes.</p>
+<pre><code>console.log(text.slice(-5, 2))   // =&gt; &quot;&quot;
+console.log(text.slice(-5, -2))  // =&gt; &quot;zil&quot;</code></pre>
+<p>See the <a href="slice"><code>slice()</code></a> page for more examples with negative numbers.</p>
+<h3 id="replacing-a-substring-within-a-string">Replacing a substring within a string</h3>
+<p>The following example replaces a substring within a string. It will replace both individual characters and substrings. The function call at the end of the example changes the string <code>Brave New World</code> to <code>Brave New Web</code>.</p>
+<pre><code>// Replaces oldS with newS in the string fullS
+function replaceString(oldS, newS, fullS) {
+  for (let i = 0; i &lt; fullS.length; ++i) {
+    if (fullS.substring(i, i + oldS.length) == oldS) {
+      fullS = fullS.substring(0, i) + newS + fullS.substring(i + oldS.length, fullS.length)
+    }
+  }
+  return fullS
+}
+
+replaceString(&#39;World&#39;, &#39;Web&#39;, &#39;Brave New World&#39;)</code></pre>
+<p>Note that this can result in an infinite loop if <code>oldS</code> is itself a substring of <code>newS</code> — for example, if you attempted to replace ‘<code>World</code>’ with ‘<code>OtherWorld</code>’ here.</p>
+<p>A better method for replacing strings is as follows:</p>
+<pre><code>function replaceString(oldS, newS, fullS) {
+  return fullS.split(oldS).join(newS)
+}</code></pre>
+<p>The code above serves as an example for substring operations. If you need to replace substrings, most of the time you will want to use <a href="replace"><code>String.prototype.replace()</code></a>.</p>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-string.prototype.substring">ECMAScript (ECMA-262) <br/></p>
+<span class="small">The definition of ‘String.prototype.substring’ in that specification.</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>substring</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="substr"><code>String.prototype.substr()</code></a></li>
+<li><a href="slice"><code>String.prototype.slice()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring</a></p>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>more_arguments_needed</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="typeerror-more-arguments-needed">TypeError: More arguments needed</h1>
+<p>The JavaScript exception “more arguments needed” occurs when there is an error with how a function is called. More arguments need to be provided.</p>
+<h2 id="message">Message</h2>
+<pre><code>TypeError: argument is not an Object and is not null (Edge)
+TypeError: Object.create requires at least 1 argument, but only 0 were passed
+TypeError: Object.setPrototypeOf requires at least 2 arguments, but only 0 were passed
+TypeError: Object.defineProperties requires at least 1 argument, but only 0 were passed</code></pre>
+<h2 id="error-type">Error type</h2>
+<p><a href="../global_objects/typeerror"><code>TypeError</code></a>.</p>
+<h2 id="what-went-wrong">What went wrong?</h2>
+<p>There is an error with how a function is called. More arguments need to be provided.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="required-arguments-not-provided">Required arguments not provided</h3>
+<p>The <a href="../global_objects/object/create"><code>Object.create()</code></a> method requires at least one argument and the <a href="../global_objects/object/setprototypeof"><code>Object.setPrototypeOf()</code></a> method requires at least two arguments:</p>
+<pre><code>var obj = Object.create();
+// TypeError: Object.create requires at least 1 argument, but only 0 were passed
+
+var obj = Object.setPrototypeOf({});
+// TypeError: Object.setPrototypeOf requires at least 2 arguments, but only 1 were passed</code></pre>
+<p>You can fix this by setting <a href="../global_objects/null"><code>null</code></a> as the prototype, for example:</p>
+<pre><code>var obj = Object.create(null);
+
+var obj = Object.setPrototypeOf({}, null);</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions">Functions</a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/More_arguments_needed" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/More_arguments_needed</a></p>
+</body>
+</html>

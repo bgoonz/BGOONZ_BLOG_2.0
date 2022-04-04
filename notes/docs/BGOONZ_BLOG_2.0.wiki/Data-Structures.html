@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Data-Structures</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="what-are-data-structures">What are data structures</h1>
+<p>Data structures, at a high level, are techniques for storing and organizing data that make it easier to modify, navigate, and access. Data structures determine how data is collected, the functions we can use to access it, and the relationships between data.</p>
+<p>Data structures are used in almost all areas of computer science and programming, from operating systems to basic vanilla code to artificial intelligence.</p>
+<p>Data structures enable us to:</p>
+<ul>
+<li>Manage and utilize large datasets</li>
+<li>Search for particular data from a database</li>
+<li>Design algorithms that are tailored towards particular programs</li>
+<li>Handle multiple requests from users at once</li>
+<li>Simplify and speed up data processing</li>
+</ul>
+<p>Data structures are vital for efficient, real-world problem solving. After all, the way we organize data has a lot of impact on performance and useability. In fact, most top companies require a strong understanding of data structures.</p>
+<blockquote>
+<p>Anyone looking to crack the coding interview will need to master data structures.</p>
+</blockquote>
+<p>JavaScript has primitive and non-primitive data structures. Primitive data structures and data types are native to the programming language. These include boolean, null, number, string, etc.</p>
+<p>Non-primitive data structures are not defined by the programming language but rather by the programmer. These include linear data structures, static data structures, and dynamic data structures, like queue and linked lists.</p>
+<h2 id="array">1. Array</h2>
+<p>The most basic of all data structures, an array stores data in memory for later use. Each array has a fixed number of cells decided on its creation, and each cell has a corresponding numeric index used to select its data. Whenever you’d like to use the array, all you need are the desired indices, and you can access any of the data within.</p>
+<p><img src="https://www.educative.io/api/page/6094484883374080/image/download/5163503745761280" /></p>
+<p>Advantages</p>
+<ul>
+<li>Simple to create and use.</li>
+<li>Foundational building block for complex data structures</li>
+</ul>
+<p>Disadvantages</p>
+<ul>
+<li>Fixed size</li>
+<li>Expensive to insert/delete or resequence values</li>
+<li>Inefficient to sort</li>
+</ul>
+<h3 id="applications">Applications</h3>
+<ul>
+<li>Basic spreadsheets</li>
+<li>Within complex structures such as hash tables</li>
+</ul>
+<h2 id="queues">2. Queues</h2>
+<p>Queues are conceptually similar to stacks; both are sequential structures, but queues process elements in the order they were entered rather than the most recent element.</p>
+<p>As a result, queues can be thought of as a FIFO (First In, First Out) version of stacks. These are helpful as a buffer for requests, storing each request in the order it was received until it can be processed.</p>
+<p><img src="https://www.educative.io/api/page/6094484883374080/image/download/4608256413532160" /></p>
+<p>For a visual, consider a single-lane tunnel: the first car to enter is the first car to exit. If other cars should wish to exit, but the first stops, all cars will have to wait for the first to exit before they can proceed.</p>
+<p>Advantages</p>
+<ul>
+<li>Dynamic size</li>
+<li>Orders data in the order it was received</li>
+<li>Low runtime</li>
+</ul>
+<p>Disadvantages</p>
+<ul>
+<li>Can only retrieve the oldest element</li>
+</ul>
+<h3 id="applications-1">Applications</h3>
+<ul>
+<li>Effective as a buffer when receiving frequent data</li>
+<li>Convenient way to store order-sensitive data such as stored voicemails</li>
+<li>Ensures the oldest data is processed first</li>
+</ul>
+<h2 id="linked-list">3. Linked List</h2>
+<p>Linked lists are a data structure which, unlike the previous three, does not use physical placement of data in memory. This means that, rather than indexes or positions, linked lists use a referencing system: elements are stored in nodes that contain a pointer to the next node, repeating until all nodes are linked.</p>
+<p>This system allows efficient insertion and removal of items without the need for reorganization.</p>
+<p><img src="https://www.educative.io/api/page/6094484883374080/image/download/4536246505308160" /></p>
+<p>Advantages</p>
+<ul>
+<li>Efficient insertion and removal of new elements</li>
+<li>Less complex than restructuring an array</li>
+</ul>
+<p>Disadvantages</p>
+<ul>
+<li>Uses more memory than arrays</li>
+<li>Inefficient to retrieve a specific element</li>
+<li>Inefficient to traverse the list backward</li>
+</ul>
+<h3 id="applications-2">Applications</h3>
+<ul>
+<li>Best used when data must be added and removed in quick succession from unknown locations</li>
+</ul>
+<h2 id="trees">4. Trees</h2>
+<p>Trees are another relation-based data structure, which specialize in representing hierarchical structures. Like a linked list, nodes contain both elements of data and pointers marking its relation to immediate nodes.</p>
+<p>Each tree has a “root” node, off of which all other nodes branch. The root contains references to all elements directly below it, which are known as its “child nodes”. This continues, with each child node, branching off into more child nodes.</p>
+<p>Nodes with linked child nodes are called internal nodes while those without child nodes are external nodes. A common type of tree is the “binary search tree” which is used to easily search stored data.</p>
+<p>These search operations are highly efficient, as its search duration is dependent not on the number of nodes but on the number of levels down the tree.</p>
+<p><img src="https://www.educative.io/api/page/6094484883374080/image/download/4860454879887360" /></p>
+<p>This type of tree is defined by four strict rules:</p>
+<ol type="1">
+<li>The left subtree contains only nodes with elements lesser than the root.</li>
+<li>The right subtree contains only nodes with elements greater than the root.</li>
+<li>Left and right subtrees must also be a binary search tree. They must follow the above rules with the “root” of their tree.</li>
+<li>There can be no duplicate nodes, i.e. no two nodes can have the same value.</li>
+</ol>
+<p>Advantages</p>
+<ul>
+<li>Ideal for storing hierarchical relationships</li>
+<li>Dynamic size</li>
+<li>Quick at insert and delete operations</li>
+<li>In a binary search tree, inserted nodes are sequenced immediately.</li>
+<li>Binary search trees are efficient at searches; length is only O(height)O(height).</li>
+</ul>
+<p>Disadvantages</p>
+<ul>
+<li>Slow to rearrange nodes</li>
+<li>Child nodes hold no information about their parent node</li>
+<li>Binary search trees are not as fast as the more complicated hash table</li>
+<li>Binary search trees can degenerate into linear search (scanning all elements) if not implemented with balanced subtrees.</li>
+</ul>
+<h3 id="applications-3">Applications</h3>
+<ul>
+<li>Storing hierarchical data such as a file location.</li>
+<li>Binary search trees are excellent for tasks needing searching or ordering of data.</li>
+</ul>
+<blockquote>
+<p><em>Enjoying the article? Scroll down to <a href="https://www.educative.io/blog/blog-newsletter-annoucement">sign up</a> for our free, bi-monthly newsletter.</em></p>
+</blockquote>
+<h2 id="graphs">5. Graphs</h2>
+<p>Graphs are a relation-based data structure helpful for storing web-like relationships. Each node, or vertex, as they’re called in graphs, has a title (A, B, C, etc.), a value contained within, and a list of links (called edges) it has with other vertices.</p>
+<p><img src="https://www.educative.io/api/page/6094484883374080/image/download/4912691077447680" /></p>
+<p>In the above example, each circle is a vertex, and each line is an edge. If produced in writing, this structure would look like:</p>
+<p><em>V = {a, b, c, d}</em></p>
+<p><em>E = {ab, ac, bc, cd}</em></p>
+<p>While hard to visualize at first, this structure is invaluable in conveying relationship charts in textual form, anything from circuitry to train networks.</p>
+<p>Advantages</p>
+<ul>
+<li>Can quickly convey visuals over text</li>
+<li>Usable to model a diverse number of subjects so long as they contain a relational structure</li>
+</ul>
+<p>Disadvantages</p>
+<ul>
+<li>At a higher level, text can be time-consuming to convert to an image.</li>
+<li>It can be difficult to see the existing edges or how many edges a given vertex has connected to it</li>
+</ul>
+<h3 id="applications-4">Applications</h3>
+<ul>
+<li>Network representations</li>
+<li>Modeling social networks, such as Facebook.</li>
+</ul>
+<h2 id="hash-tables-map">6. Hash Tables (Map)</h2>
+<p>Hash tables are a complex data structure capable of storing large amounts of information and retrieving specific elements efficiently. This data structure relies on the concept of key/value pairs, where the “key” is a searched string and the “value” is the data paired with that key.</p>
+<p><img src="https://www.educative.io/api/page/6094484883374080/image/download/6745911163092992" /> Each searched key is converted from its string form into a numerical value, called a hash, using a predefined hash function. This hash then points to a storage bucket – a smaller subgroup within the table. It then searches the bucket for the originally entered key and returns the value associated with that key.</p>
+<p>Advantages</p>
+<ul>
+<li>Key can be in any form, while array’s indices must be integers</li>
+<li>Highly efficient search function</li>
+<li>Constant number of operations for each search</li>
+<li>Constant cost for insertion or deletion operations</li>
+</ul>
+<p>Disadvantages</p>
+<ul>
+<li>Collisions: an error caused when two keys convert to the same hash code or two hash codes point to the same value.</li>
+<li>These errors can be common and often require an overhaul of the hash function.</li>
+</ul>
+<h3 id="applications-5">Applications</h3>
+<ul>
+<li>Database storage</li>
+<li>Address lookups by name</li>
+</ul>
+<p>Each hash table can be very different, from the types of the keys and values, to the way their hash functions work. Due to these differences and the multi-layered aspects of a hash table, it is nearly impossible to encapsulate so generally.</p>
+<h2 id="data-structure-interview-questions">Data structure interview questions</h2>
+<details>
+<p><summary> 🔥See Interview Questions </summary></p>
+<p>For many developers and programmers, data structures are most important for <a href="https://www.educative.io/blog/acing-the-javascript-interview-top-questions-explained">cracking Javascript coding interviews</a>. Questions and problems on data structures are fundamental to modern-day coding interviews. In fact, they have a lot to say over your hireability and entry-level rate as a candidate.</p>
+<p>Today, we will be going over seven common coding interview questions for JavaScript data structures, one for each of the data structures we discussed above. Each will also discuss its time complexity based on the <a href="https://www.educative.io/blog/a-big-o-primer-for-beginning-devs">BigO notation</a> theory.</p>
+<h3 id="array-remove-all-even-integers-from-an-array">Array: Remove all even integers from an array</h3>
+<p>Problem statement: Implement a function <code>removeEven(arr)</code>, which takes an array arr in its input and removes all the even elements from a given array.</p>
+<p>Input: An array of random integers</p>
+<pre><code>[1,2,4,5,10,6,3]</code></pre>
+<p>Output: an array containing only odd integers</p>
+<pre><code>[1,5,3]</code></pre>
+<p>There are two ways you could solve this coding problem in an interview. Let’s discuss each.</p>
+<h4 id="solution-1-doing-it-by-hand">Solution #1: Doing it “by hand”</h4>
+<hr />
+<div class="sourceCode" id="cb3"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">function</span> <span class="at">removeEven</span>(arr) <span class="op">{</span></a>
+<a class="sourceLine" id="cb3-2" title="2">    <span class="kw">const</span> odds <span class="op">=</span> []<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-3" title="3">    <span class="cf">for</span> (<span class="kw">let</span> number <span class="kw">of</span> arr) <span class="op">{</span></a>
+<a class="sourceLine" id="cb3-4" title="4">        <span class="cf">if</span> (number <span class="op">%</span> <span class="dv">2</span> <span class="op">!=</span> <span class="dv">0</span>)</a>
+<a class="sourceLine" id="cb3-5" title="5">            <span class="co">// Check if the item in the list is NOT even (&#39;%&#39; is the modulus symbol!)</span></a>
+<a class="sourceLine" id="cb3-6" title="6">            <span class="va">odds</span>.<span class="at">push</span>(number)<span class="op">;</span> <span class="co">//If it isn&#39;t even append it to the empty list</span></a>
+<a class="sourceLine" id="cb3-7" title="7">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb3-8" title="8">    <span class="cf">return</span> odds<span class="op">;</span> <span class="co">// Return the new list</span></a>
+<a class="sourceLine" id="cb3-9" title="9"><span class="op">}</span></a>
+<a class="sourceLine" id="cb3-10" title="10"><span class="kw">let</span> example <span class="op">=</span> <span class="at">removeEven</span>([<span class="dv">3</span><span class="op">,</span> <span class="dv">2</span><span class="op">,</span> <span class="dv">41</span><span class="op">,</span> <span class="dv">3</span><span class="op">,</span> <span class="dv">34</span>])<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-11" title="11"><span class="va">console</span>.<span class="at">log</span>(<span class="st">&#39;EXAMPLE:&#39;</span><span class="op">,</span> example)<span class="op">;</span> <span class="co">//EXAMPLE: [ 3, 41, 3 ]</span></a></code></pre></div>
+<p>This approach starts with the first element of the array. If that current element is not even, it pushes this element into a new array. If it is even, it will move to the next element, repeating until it reaches the end of the array. In regards to time complexity, since the entire array has to be iterated over, this solution is in <em>O(n)O(n).</em></p>
+<h4 id="solution-2-using-filter-and-lambda-function">Solution #2: Using filter() and lambda function</h4>
+<hr />
+<div class="sourceCode" id="cb4"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb4-1" title="1"><span class="kw">function</span> <span class="at">removeEven</span>(arr) <span class="op">{</span></a>
+<a class="sourceLine" id="cb4-2" title="2">    <span class="cf">return</span> <span class="va">arr</span>.<span class="at">filter</span>((v) <span class="kw">=&gt;</span> v <span class="op">%</span> <span class="dv">2</span> <span class="op">!=</span> <span class="dv">0</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-3" title="3"><span class="op">}</span></a>
+<a class="sourceLine" id="cb4-4" title="4"></a>
+<a class="sourceLine" id="cb4-5" title="5"><span class="va">console</span>.<span class="at">log</span>(<span class="at">removeEven</span>([<span class="dv">3</span><span class="op">,</span> <span class="dv">2</span><span class="op">,</span> <span class="dv">41</span><span class="op">,</span> <span class="dv">3</span><span class="op">,</span> <span class="dv">34</span>]))<span class="op">;</span></a></code></pre></div>
+<p>This solution also begins with the first element and checks if it is even. If it is even, it filters out this element. If not, skips to the next element, repeating this process until it reaches the end of the array.</p>
+<p>The filter function uses lambda or arrow functions, which use shorter, simpler syntax. The filter filters out the element for which the lambda function returns false. The time complexity of this is the same as the time complexity of the previous solution.</p>
+<h3 id="stack-check-for-balanced-parentheses-using-a-stack">Stack: Check for balanced parentheses using a stack</h3>
+<p>Problem statement: Implement the <code>isBalanced()</code> function to take a string containing only curly <code>{}</code>, square <code>[]</code>, and round <code>()</code> parentheses. The function should tell us if all the parentheses in the string are balanced. This means that every opening parenthesis will have a closing one. For example, <code>{[]}</code> is balanced, but <code>{[}]</code> is not.</p>
+<p>Input: A string consisting solely of <code>(</code>, <code>)</code>, <code>{</code>, <code>}</code>, <code>[</code> and <code>]</code></p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb5-1" title="1">exp <span class="op">=</span> <span class="st">&#39;{[({})]}&#39;</span><span class="op">;</span></a></code></pre></div>
+<p>Output: Returns <code>False</code> if the expression doesn’t have balanced parentheses. If it does, the function returns <code>True</code>.</p>
+<pre class="text"><code>True</code></pre>
+<p>To solve this problem, we can simply use a stack of characters. Look below at the code to see how it works.</p>
+<p>index.js</p>
+<p>Stack.js</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb7-1" title="1"></a>
+<a class="sourceLine" id="cb7-2" title="2"><span class="st">&quot;use strict&quot;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb7-3" title="3"><span class="va">module</span>.<span class="at">exports</span> <span class="op">=</span> <span class="kw">class</span> Stack <span class="op">{</span></a>
+<a class="sourceLine" id="cb7-4" title="4">    <span class="at">constructor</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb7-5" title="5">      <span class="kw">this</span>.<span class="at">items</span> <span class="op">=</span> []<span class="op">;</span></a>
+<a class="sourceLine" id="cb7-6" title="6">      <span class="kw">this</span>.<span class="at">top</span> <span class="op">=</span> <span class="kw">null</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb7-7" title="7">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb7-8" title="8">    <span class="at">getTop</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb7-9" title="9">      <span class="cf">if</span> ( <span class="kw">this</span>.<span class="va">items</span>.<span class="at">length</span> <span class="op">==</span> <span class="dv">0</span> )</a>
+<a class="sourceLine" id="cb7-10" title="10">        <span class="cf">return</span> <span class="kw">null</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb7-11" title="11">      <span class="cf">return</span> <span class="kw">this</span>.<span class="at">top</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb7-12" title="12">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb7-13" title="13">    <span class="at">isEmpty</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb7-14" title="14">      <span class="cf">return</span> <span class="kw">this</span>.<span class="va">items</span>.<span class="at">length</span> <span class="op">==</span> <span class="dv">0</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb7-15" title="15">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb7-16" title="16">    <span class="at">size</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb7-17" title="17">      <span class="cf">return</span> <span class="kw">this</span>.<span class="va">items</span>.<span class="at">length</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb7-18" title="18">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb7-19" title="19">    <span class="at">push</span>( element ) <span class="op">{</span></a>
+<a class="sourceLine" id="cb7-20" title="20">      <span class="kw">this</span>.<span class="va">items</span>.<span class="at">push</span>( element )<span class="op">;</span></a>
+<a class="sourceLine" id="cb7-21" title="21">      <span class="kw">this</span>.<span class="at">top</span> <span class="op">=</span> element<span class="op">;</span></a>
+<a class="sourceLine" id="cb7-22" title="22">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb7-23" title="23">    <span class="at">pop</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb7-24" title="24">        <span class="cf">if</span> ( <span class="kw">this</span>.<span class="va">items</span>.<span class="at">length</span> <span class="op">!=</span> <span class="dv">0</span> ) <span class="op">{</span></a>
+<a class="sourceLine" id="cb7-25" title="25">          <span class="cf">if</span> ( <span class="kw">this</span>.<span class="va">items</span>.<span class="at">length</span> <span class="op">==</span> <span class="dv">1</span> ) <span class="op">{</span></a>
+<a class="sourceLine" id="cb7-26" title="26">            <span class="kw">this</span>.<span class="at">top</span> <span class="op">=</span> <span class="kw">null</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb7-27" title="27">            <span class="cf">return</span> <span class="kw">this</span>.<span class="va">items</span>.<span class="at">pop</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb7-28" title="28"></a></code></pre></div>
+<hr />
+<p>This process will iterate over the string one character at a time. We can determine that the string is unbalanced based on two factors:</p>
+<ol type="1">
+<li>The stack is empty.</li>
+<li>The top element in the stack is not the right type.</li>
+</ol>
+<p>If either of these conditions is true, we return <code>False</code>. If the parenthesis is an opening parenthesis, it is pushed into the stack. If by the end all are balanced, the stack will be empty. If it is not empty, we return <code>False</code>. Since we traverse the string exp only once, the time complexity is <em>O(n)</em>.</p>
+<h3 id="queue-generate-binary-numbers-from-1-to-n">Queue: Generate Binary Numbers from 1 to n</h3>
+<p>Problem statement: Implement a function <code>findBin(n)</code>, which will generate binary numbers from <code>1</code> to <code>n</code> in the form of a string using a queue.</p>
+<p>Input: A positive integer n</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb8-1" title="1">n <span class="op">=</span> <span class="dv">3</span><span class="op">;</span></a></code></pre></div>
+<p>Output: Returns binary numbers in the form of strings from <code>1</code> up to <code>n</code></p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb9-1" title="1">result <span class="op">=</span> [<span class="st">&#39;1&#39;</span><span class="op">,</span> <span class="st">&#39;10&#39;</span><span class="op">,</span> <span class="st">&#39;11&#39;</span>]<span class="op">;</span></a></code></pre></div>
+<p>The easiest way to solve this problem is using a queue to generate new numbers from previous numbers. Let’s break that down.</p>
+<p>index.js</p>
+<p>Queue.js</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb10-1" title="1"></a>
+<a class="sourceLine" id="cb10-2" title="2"><span class="st">&quot;use strict&quot;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb10-3" title="3"><span class="va">module</span>.<span class="at">exports</span> <span class="op">=</span> <span class="kw">class</span> Queue <span class="op">{</span></a>
+<a class="sourceLine" id="cb10-4" title="4">    <span class="at">constructor</span> () <span class="op">{</span></a>
+<a class="sourceLine" id="cb10-5" title="5">        <span class="kw">this</span>.<span class="at">items</span> <span class="op">=</span> []<span class="op">;</span></a>
+<a class="sourceLine" id="cb10-6" title="6">        <span class="kw">this</span>.<span class="at">front</span> <span class="op">=</span> <span class="kw">null</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb10-7" title="7">        <span class="kw">this</span>.<span class="at">back</span> <span class="op">=</span> <span class="kw">null</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb10-8" title="8">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb10-9" title="9">    <span class="at">isEmpty</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb10-10" title="10">        <span class="cf">return</span> <span class="kw">this</span>.<span class="va">items</span>.<span class="at">length</span> <span class="op">==</span> <span class="dv">0</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb10-11" title="11">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb10-12" title="12">    <span class="at">getFront</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb10-13" title="13">        <span class="cf">if</span> ( <span class="kw">this</span>.<span class="va">items</span>.<span class="at">length</span> <span class="op">!=</span> <span class="dv">0</span> ) <span class="op">{</span></a>
+<a class="sourceLine" id="cb10-14" title="14">            <span class="cf">return</span> <span class="kw">this</span>.<span class="at">items</span>[ <span class="dv">0</span> ]<span class="op">;</span></a>
+<a class="sourceLine" id="cb10-15" title="15">        <span class="op">}</span> <span class="cf">else</span></a>
+<a class="sourceLine" id="cb10-16" title="16">            <span class="cf">return</span> <span class="kw">null</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb10-17" title="17">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb10-18" title="18">    <span class="at">size</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb10-19" title="19">        <span class="cf">return</span> <span class="kw">this</span>.<span class="va">items</span>.<span class="at">length</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb10-20" title="20">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb10-21" title="21">    <span class="at">enqueue</span>( element ) <span class="op">{</span></a>
+<a class="sourceLine" id="cb10-22" title="22">        <span class="kw">this</span>.<span class="va">items</span>.<span class="at">push</span>( element )<span class="op">;</span></a>
+<a class="sourceLine" id="cb10-23" title="23">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb10-24" title="24"></a></code></pre></div>
+<hr />
+<p>The key is to generate consecutive binary numbers by appending 0 and 1 to previous binary numbers. To clarify,</p>
+<ul>
+<li>10 and 11 can be generated if 0 and 1 are appended to 1.</li>
+<li>100 and 101 are generated if 0 and 1 are appended to 10.</li>
+</ul>
+<p>Once we generate a binary number, it is then enqueued to a queue so that new binary numbers can be generated if we append 0 and 1 when that number will be enqueued.</p>
+<p>Since a queue follows the <em>First-In First-Out</em> property, the enqueued binary numbers are dequeued so that the resulting array is mathematically correct.</p>
+<p>Look at the code above. On line 7, <code>1</code> is enqueued. To generate the sequence of binary numbers, a number is dequeued and stored in the array <code>result</code>. On lines 11-12, we append <code>0</code> and <code>1</code> to produce the next numbers.</p>
+<p>Those new numbers are also enqueued at lines 14-15. The queue will take integer values, so it converts the string to an integer as it is enqueued.</p>
+<p>The time complexity of this solution is in <em>O(n)O(n)</em> since constant-time operations are executed for n times.</p>
+<h3 id="linked-list-reverse-a-linked-list">Linked List: Reverse a linked list</h3>
+<p>Problem statement: Write the <code>reverse</code> function to take a singly linked list and reverse it in place.</p>
+<p>Input: a singly linked list</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb11-1" title="1">LinkedList <span class="op">=</span> <span class="dv">0</span><span class="op">-&gt;</span><span class="dv">1</span><span class="op">-&gt;</span><span class="dv">2</span><span class="op">-&gt;</span><span class="dv">3-4</span></a></code></pre></div>
+<p>Output: a reverse linked list</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb12-1" title="1">LinkedList <span class="op">=</span> <span class="dv">4</span><span class="op">-&gt;</span><span class="dv">3</span><span class="op">-&gt;</span><span class="dv">2</span><span class="op">-&gt;</span><span class="dv">1</span><span class="op">-&gt;</span><span class="dv">0</span></a></code></pre></div>
+<p>The easiest way to solve this problem is by using iterative pointer manipulation. Let’s take a look.</p>
+<p>index.js</p>
+<p>LinkedList.js</p>
+<p>Node.js</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb13-1" title="1"></a>
+<a class="sourceLine" id="cb13-2" title="2"></a>
+<a class="sourceLine" id="cb13-3" title="3"><span class="st">&quot;use strict&quot;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb13-4" title="4"><span class="kw">const</span> Node <span class="op">=</span> <span class="at">require</span>( <span class="st">&#39;./Node.js&#39;</span> )<span class="op">;</span></a>
+<a class="sourceLine" id="cb13-5" title="5"><span class="va">module</span>.<span class="at">exports</span> <span class="op">=</span> <span class="kw">class</span> LinkedList <span class="op">{</span></a>
+<a class="sourceLine" id="cb13-6" title="6">    <span class="at">constructor</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb13-7" title="7">      <span class="kw">this</span>.<span class="at">head</span> <span class="op">=</span> <span class="kw">null</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb13-8" title="8">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb13-9" title="9">    <span class="co">//Insertion At Head</span></a>
+<a class="sourceLine" id="cb13-10" title="10">    <span class="at">insertAtHead</span>( newData ) <span class="op">{</span></a>
+<a class="sourceLine" id="cb13-11" title="11">      <span class="kw">let</span> tempNode <span class="op">=</span> <span class="kw">new</span> <span class="at">Node</span>( newData )<span class="op">;</span></a>
+<a class="sourceLine" id="cb13-12" title="12">      <span class="va">tempNode</span>.<span class="at">nextElement</span> <span class="op">=</span> <span class="kw">this</span>.<span class="at">head</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb13-13" title="13">      <span class="kw">this</span>.<span class="at">head</span> <span class="op">=</span> tempNode<span class="op">;</span></a>
+<a class="sourceLine" id="cb13-14" title="14">      <span class="cf">return</span> <span class="kw">this</span><span class="op">;</span> <span class="co">//returning the updated list</span></a>
+<a class="sourceLine" id="cb13-15" title="15">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb13-16" title="16">    <span class="at">isEmpty</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb13-17" title="17">      <span class="cf">return</span> ( <span class="kw">this</span>.<span class="at">head</span> <span class="op">==</span> <span class="kw">null</span> )<span class="op">;</span></a>
+<a class="sourceLine" id="cb13-18" title="18">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb13-19" title="19">    <span class="co">//function to print the linked list</span></a>
+<a class="sourceLine" id="cb13-20" title="20">    <span class="at">printList</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb13-21" title="21">        <span class="cf">if</span> ( <span class="kw">this</span>.<span class="at">isEmpty</span>() ) <span class="op">{</span></a>
+<a class="sourceLine" id="cb13-22" title="22">          <span class="va">console</span>.<span class="at">log</span>( <span class="st">&quot;Empty List&quot;</span> )<span class="op">;</span></a>
+<a class="sourceLine" id="cb13-23" title="23">          <span class="cf">return</span> <span class="kw">false</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb13-24" title="24">        <span class="op">}</span> <span class="cf">else</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb13-25" title="25">          <span class="kw">let</span> temp <span class="op">=</span> <span class="kw">this</span>.<span class="at">head</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb13-26" title="26">          <span class="cf">while</span> ( temp <span class="op">!=</span> <span class="kw">null</span> ) <span class="op">{</span></a>
+<a class="sourceLine" id="cb13-27" title="27">            <span class="va">process</span>.<span class="va">stdout</span>.<span class="at">write</span>( <span class="at">String</span>( <span class="va">temp</span>.<span class="at">data</span> ) )<span class="op">;</span></a>
+<a class="sourceLine" id="cb13-28" title="28">            <span class="va">process</span>.<span class="va">stdout</span>.<span class="at">write</span>( <span class="st">&quot; -&gt; &quot;</span> )<span class="op">;</span></a>
+<a class="sourceLine" id="cb13-29" title="29">            temp <span class="op">=</span> <span class="va">temp</span>.<span class="at">nextElement</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb13-30" title="30"></a></code></pre></div>
+<hr />
+<p>We use a loop to iterate through the input list. For a <code>current</code> node, its link with the <code>previous</code> node is reversed. then, <code>next</code> stores the next node in the list. Let’s break that down by line.</p>
+<ul>
+<li>Line 22- Store the <code>current</code> node’s <code>nextElement</code> in <code>next</code></li>
+<li>Line 23 - Set <code>current</code> node’s <code>nextElement</code> to <code>previous</code></li>
+<li>Line 24 - Make the <code>current</code> node the new <code>previous</code> for the next iteration</li>
+<li>Line 25 - Use <code>next</code> to go to the next node</li>
+<li>Line 29 - We reset the <code>head</code> pointer to point at the last node</li>
+</ul>
+<p>Since the list is traversed only once, the algorithm runs in <em>O(n)</em>.</p>
+<h3 id="tree-find-the-minimum-value-in-a-binary-search-tree">Tree: Find the Minimum Value in a Binary Search Tree</h3>
+<p>Problem statement: Use the <code>findMin(root)</code> function to find the minimum value in a Binary Search Tree.</p>
+<p>Input: a root node for a binary search tree</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb14-1" title="1">bst <span class="op">=</span> <span class="op">{</span>    <span class="dv">6</span> <span class="op">-&gt;</span> <span class="dv">4</span><span class="op">,</span><span class="dv">9</span>    <span class="dv">4</span> <span class="op">-&gt;</span> <span class="dv">2</span><span class="op">,</span><span class="dv">5</span>    <span class="dv">9</span> <span class="op">-&gt;</span> <span class="dv">8</span><span class="op">,</span><span class="dv">12</span>    <span class="dv">12</span> <span class="op">-&gt;</span> <span class="dv">10</span><span class="op">,</span><span class="dv">14</span><span class="op">}</span>where parent <span class="op">-&gt;</span> leftChild<span class="op">,</span>rightChild</a></code></pre></div>
+<p>Output: the smallest integer value from that binary search tree</p>
+<pre class="text"><code>2</code></pre>
+<p>Let’s look at an easy solution for this problem.</p>
+<h4 id="solution-iterative-findmin">Solution: Iterative <code>findMin( )</code></h4>
+<p>This solution begins by checking if the root is <code>null</code>. It returns <code>null</code> if so. It then moves to the left subtree and continues with each node’s left child until the left-most child is reached.</p>
+<p>index.js</p>
+<p>BinarySearchTree.js</p>
+<p>Node.js</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb16-1" title="1"><span class="st">&#39;use strict&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb16-2" title="2"><span class="kw">const</span> Node <span class="op">=</span> <span class="at">require</span>(<span class="st">&#39;./Node.js&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb16-3" title="3"><span class="va">module</span>.<span class="at">exports</span> <span class="op">=</span> <span class="kw">class</span> BinarySearchTree <span class="op">{</span></a>
+<a class="sourceLine" id="cb16-4" title="4">    <span class="at">constructor</span>(rootValue) <span class="op">{</span></a>
+<a class="sourceLine" id="cb16-5" title="5">        <span class="kw">this</span>.<span class="at">root</span> <span class="op">=</span> <span class="kw">new</span> <span class="at">Node</span>(rootValue)<span class="op">;</span></a>
+<a class="sourceLine" id="cb16-6" title="6">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb16-7" title="7">    <span class="at">insert</span>(currentNode<span class="op">,</span> newValue) <span class="op">{</span></a>
+<a class="sourceLine" id="cb16-8" title="8">        <span class="cf">if</span> (currentNode <span class="op">===</span> <span class="kw">null</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb16-9" title="9">            currentNode <span class="op">=</span> <span class="kw">new</span> <span class="at">Node</span>(newValue)<span class="op">;</span></a>
+<a class="sourceLine" id="cb16-10" title="10">        <span class="op">}</span> <span class="cf">else</span> <span class="cf">if</span> (newValue <span class="op">&lt;</span> <span class="va">currentNode</span>.<span class="at">val</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb16-11" title="11">            <span class="va">currentNode</span>.<span class="at">leftChild</span> <span class="op">=</span> <span class="kw">this</span>.<span class="at">insert</span>(<span class="va">currentNode</span>.<span class="at">leftChild</span><span class="op">,</span> newValue)<span class="op">;</span></a>
+<a class="sourceLine" id="cb16-12" title="12">        <span class="op">}</span> <span class="cf">else</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb16-13" title="13">            <span class="va">currentNode</span>.<span class="at">rightChild</span> <span class="op">=</span> <span class="kw">this</span>.<span class="at">insert</span>(<span class="va">currentNode</span>.<span class="at">rightChild</span><span class="op">,</span> newValue)<span class="op">;</span></a>
+<a class="sourceLine" id="cb16-14" title="14">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb16-15" title="15">        <span class="cf">return</span> currentNode<span class="op">;</span></a>
+<a class="sourceLine" id="cb16-16" title="16">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb16-17" title="17">    <span class="at">insertBST</span>(newValue) <span class="op">{</span></a>
+<a class="sourceLine" id="cb16-18" title="18">        <span class="cf">if</span> (<span class="kw">this</span>.<span class="at">root</span> <span class="op">==</span> <span class="kw">null</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb16-19" title="19">            <span class="kw">this</span>.<span class="at">root</span> <span class="op">=</span> <span class="kw">new</span> <span class="at">Node</span>(newValue)<span class="op">;</span></a>
+<a class="sourceLine" id="cb16-20" title="20">            <span class="cf">return</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb16-21" title="21">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb16-22" title="22">        <span class="kw">this</span>.<span class="at">insert</span>(<span class="kw">this</span>.<span class="at">root</span><span class="op">,</span> newValue)<span class="op">;</span></a>
+<a class="sourceLine" id="cb16-23" title="23">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb16-24" title="24">    <span class="at">preOrderPrint</span>(currentNode) <span class="op">{</span></a>
+<a class="sourceLine" id="cb16-25" title="25">        <span class="cf">if</span> (currentNode <span class="op">!==</span> <span class="kw">null</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb16-26" title="26">            <span class="va">console</span>.<span class="at">log</span>(<span class="va">currentNode</span>.<span class="at">val</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb16-27" title="27">            <span class="kw">this</span>.<span class="at">preOrderPrint</span>(<span class="va">currentNode</span>.<span class="at">leftChild</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb16-28" title="28">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb16-29" title="29">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb16-30" title="30"><span class="op">};</span></a></code></pre></div>
+<hr />
+<h3 id="graph-remove-edge">Graph: Remove Edge</h3>
+<p>Problem statement: Implement the removeEdge function to take a source and a destination as arguments. It should detect if an edge exists between them.</p>
+<p>Input: A graph, a source, and a destination</p>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjA4MCIgaGVpZ2h0PSIyOTEwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIvPg==" /></p>
+<figure>
+<img src="https://www.educative.io/cdn-cgi/image/f=auto,fit=contain,w=600/api/page/6094484883374080/image/download/6576135669284864" alt="widget" /><figcaption>widget</figcaption>
+</figure>
+<figure>
+<img src="https://www.educative.io/cdn-cgi/image/f=auto,fit=contain,w=300,q=10/api/page/6094484883374080/image/download/6576135669284864" alt="widget" /><figcaption>widget</figcaption>
+</figure>
+<p>Output: A graph with the edge between the source and the destination removed.</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb17-1" title="1"><span class="at">removeEdge</span>(graph<span class="op">,</span> <span class="dv">2</span><span class="op">,</span> <span class="dv">3</span>)<span class="op">;</span></a></code></pre></div>
+<figure>
+<img src="https://www.educative.io/cdn-cgi/image/f=auto,fit=contain,w=600/api/page/6094484883374080/image/download/6038590984290304" alt="widget" /><figcaption>widget</figcaption>
+</figure>
+<figure>
+<img src="https://www.educative.io/cdn-cgi/image/f=auto,fit=contain,w=300,q=10/api/page/6094484883374080/image/download/6038590984290304" alt="widget" /><figcaption>widget</figcaption>
+</figure>
+<p>The solution to this problem is fairly simple: we use Indexing and deletion. Take a look</p>
+<p>index.js</p>
+<p>Graph.js</p>
+<p>LinkedList.js</p>
+<p>Node.js</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb18-1" title="1"><span class="kw">const</span> LinkedList <span class="op">=</span> <span class="at">require</span>(<span class="st">&#39;./LinkedList.js&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb18-2" title="2"><span class="kw">const</span> Node <span class="op">=</span> <span class="at">require</span>(<span class="st">&#39;./Node.js&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb18-3" title="3"><span class="va">module</span>.<span class="at">exports</span> <span class="op">=</span> <span class="kw">class</span> Graph <span class="op">{</span></a>
+<a class="sourceLine" id="cb18-4" title="4">    <span class="at">constructor</span>(vertices) <span class="op">{</span></a>
+<a class="sourceLine" id="cb18-5" title="5">        <span class="kw">this</span>.<span class="at">vertices</span> <span class="op">=</span> vertices<span class="op">;</span></a>
+<a class="sourceLine" id="cb18-6" title="6">        <span class="kw">this</span>.<span class="at">list</span> <span class="op">=</span> []<span class="op">;</span></a>
+<a class="sourceLine" id="cb18-7" title="7">        <span class="kw">let</span> it<span class="op">;</span></a>
+<a class="sourceLine" id="cb18-8" title="8">        <span class="cf">for</span> (it <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> it <span class="op">&lt;</span> vertices<span class="op">;</span> it<span class="op">++</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb18-9" title="9">            <span class="kw">let</span> temp <span class="op">=</span> <span class="kw">new</span> <span class="at">LinkedList</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb18-10" title="10">            <span class="kw">this</span>.<span class="va">list</span>.<span class="at">push</span>(temp)<span class="op">;</span></a>
+<a class="sourceLine" id="cb18-11" title="11">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb18-12" title="12">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb18-13" title="13">    <span class="at">addEdge</span>(source<span class="op">,</span> destination) <span class="op">{</span></a>
+<a class="sourceLine" id="cb18-14" title="14">        <span class="cf">if</span> (source <span class="op">&lt;</span> <span class="kw">this</span>.<span class="at">vertices</span> <span class="op">&amp;&amp;</span> destination <span class="op">&lt;</span> <span class="kw">this</span>.<span class="at">vertices</span>) <span class="kw">this</span>.<span class="at">list</span>[source].<span class="at">insertAtHead</span>(destination)<span class="op">;</span></a>
+<a class="sourceLine" id="cb18-15" title="15">        <span class="cf">return</span> <span class="kw">this</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb18-16" title="16">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb18-17" title="17">    <span class="at">printGraph</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb18-18" title="18">        <span class="va">console</span>.<span class="at">log</span>(<span class="st">&#39;&gt;&gt;Adjacency List of Directed Graph&lt;&lt;&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb18-19" title="19">        <span class="kw">let</span> i<span class="op">;</span></a>
+<a class="sourceLine" id="cb18-20" title="20">        <span class="cf">for</span> (i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> <span class="kw">this</span>.<span class="va">list</span>.<span class="at">length</span><span class="op">;</span> i<span class="op">++</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb18-21" title="21">            <span class="va">process</span>.<span class="va">stdout</span>.<span class="at">write</span>(<span class="vs">`|</span><span class="sc">${</span><span class="at">String</span>(i)<span class="sc">}</span><span class="vs">| =&gt; `</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb18-22" title="22">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb18-23" title="23">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb18-24" title="24"><span class="op">};</span></a></code></pre></div>
+<hr />
+<p>Since our vertices are stored in an array, we can access the <code>source</code> linked list. We then call the <code>delete</code> function for linked lists. The time complexity for this solution is O(E) since we may have to traverse E edges.</p>
+<h3 id="hash-table-convert-max-heap-to-min-heap">Hash Table: Convert Max-Heap to Min-Heap</h3>
+<p>Problem statement: Implement the function <code>convertMax(maxHeap)</code> to convert a binary max-heap into a binary min-heap. <code>maxHeap</code> should be an array in the <code>maxHeap</code> format, i.e the parent is greater than its children.</p>
+<p>Input: a Max-Heap</p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb19-1" title="1">maxHeap <span class="op">=</span> [<span class="dv">9</span><span class="op">,</span> <span class="dv">4</span><span class="op">,</span> <span class="dv">7</span><span class="op">,</span> <span class="dv">1</span><span class="op">,</span> <span class="dv">-2</span><span class="op">,</span> <span class="dv">6</span><span class="op">,</span> <span class="dv">5</span>]<span class="op">;</span></a></code></pre></div>
+<p>Output: returns the converted array</p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb20-1" title="1">result <span class="op">=</span> [<span class="op">-</span><span class="dv">2</span><span class="op">,</span> <span class="dv">1</span><span class="op">,</span> <span class="dv">5</span><span class="op">,</span> <span class="dv">9</span><span class="op">,</span> <span class="dv">4</span><span class="op">,</span> <span class="dv">6</span><span class="op">,</span> <span class="dv">7</span>]<span class="op">;</span></a></code></pre></div>
+<p>To solve this problem, we must min heapify all parent nodes. Take a look.</p>
+<hr />
+<div class="sourceCode" id="cb21"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb21-1" title="1"><span class="kw">function</span> <span class="at">minHeapify</span>(heap<span class="op">,</span> index) <span class="op">{</span></a>
+<a class="sourceLine" id="cb21-2" title="2">    <span class="kw">const</span> left <span class="op">=</span> index <span class="op">*</span> <span class="dv">2</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb21-3" title="3">    <span class="kw">const</span> right <span class="op">=</span> index <span class="op">*</span> <span class="dv">2</span> <span class="op">+</span> <span class="dv">1</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb21-4" title="4">    <span class="kw">let</span> smallest <span class="op">=</span> index<span class="op">;</span></a>
+<a class="sourceLine" id="cb21-5" title="5">    <span class="cf">if</span> (<span class="va">heap</span>.<span class="at">length</span> <span class="op">&gt;</span> left <span class="op">&amp;&amp;</span> heap[smallest] <span class="op">&gt;</span> heap[left]) <span class="op">{</span></a>
+<a class="sourceLine" id="cb21-6" title="6">        smallest <span class="op">=</span> left<span class="op">;</span></a>
+<a class="sourceLine" id="cb21-7" title="7">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb21-8" title="8">    <span class="cf">if</span> (<span class="va">heap</span>.<span class="at">length</span> <span class="op">&gt;</span> right <span class="op">&amp;&amp;</span> heap[smallest] <span class="op">&gt;</span> heap[right]) smallest <span class="op">=</span> right<span class="op">;</span></a>
+<a class="sourceLine" id="cb21-9" title="9">    <span class="cf">if</span> (smallest <span class="op">!=</span> index) <span class="op">{</span></a>
+<a class="sourceLine" id="cb21-10" title="10">        <span class="kw">const</span> tmp <span class="op">=</span> heap[smallest]<span class="op">;</span></a>
+<a class="sourceLine" id="cb21-11" title="11">        heap[smallest] <span class="op">=</span> heap[index]<span class="op">;</span></a>
+<a class="sourceLine" id="cb21-12" title="12">        heap[index] <span class="op">=</span> tmp<span class="op">;</span></a>
+<a class="sourceLine" id="cb21-13" title="13">        <span class="at">minHeapify</span>(heap<span class="op">,</span> smallest)<span class="op">;</span></a>
+<a class="sourceLine" id="cb21-14" title="14">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb21-15" title="15">    <span class="cf">return</span> heap<span class="op">;</span></a>
+<a class="sourceLine" id="cb21-16" title="16"><span class="op">}</span></a></code></pre></div>
+<hr />
+<hr />
+<div class="sourceCode" id="cb22"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb22-1" title="1"><span class="kw">function</span> <span class="at">convertMax</span>(maxHeap) <span class="op">{</span></a>
+<a class="sourceLine" id="cb22-2" title="2">    <span class="cf">for</span> (<span class="kw">var</span> i <span class="op">=</span> <span class="va">Math</span>.<span class="at">floor</span>(<span class="va">maxHeap</span>.<span class="at">length</span> / <span class="dv">2</span>)<span class="op">;</span> i <span class="op">&gt;</span> <span class="dv">-1</span><span class="op">;</span> i<span class="op">--</span>) maxHeap <span class="op">=</span> <span class="at">minHeapify</span>(maxHeap<span class="op">,</span> i)<span class="op">;</span></a>
+<a class="sourceLine" id="cb22-3" title="3"></a>
+<a class="sourceLine" id="cb22-4" title="4">    <span class="cf">return</span> maxHeap<span class="op">;</span></a>
+<a class="sourceLine" id="cb22-5" title="5"><span class="op">}</span></a>
+<a class="sourceLine" id="cb22-6" title="6"></a>
+<a class="sourceLine" id="cb22-7" title="7"><span class="kw">var</span> maxHeap <span class="op">=</span> [<span class="dv">9</span><span class="op">,</span> <span class="dv">4</span><span class="op">,</span> <span class="dv">7</span><span class="op">,</span> <span class="dv">1</span><span class="op">,</span> <span class="dv">-2</span><span class="op">,</span> <span class="dv">6</span><span class="op">,</span> <span class="dv">5</span>]<span class="op">;</span></a>
+<a class="sourceLine" id="cb22-8" title="8"></a>
+<a class="sourceLine" id="cb22-9" title="9"><span class="va">console</span>.<span class="at">log</span>(<span class="at">convertMax</span>(maxHeap))<span class="op">;</span></a></code></pre></div>
+<hr />
+<p>We consider <code>maxHeap</code> to be a regular array and reorder it to accurately represent a min-heap. You can see this done in the code above. The <code>convertMax()</code> function then restores the heap property on all nodes from the lowest parent node by calling the <code>minHeapify()</code> function. In regards to time complexity, this solution takes <em>O(nlog(n))O(nlog(n))</em> time.</p>
+</details>
+</body>
+</html>

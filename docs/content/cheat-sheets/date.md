@@ -1,39 +1,33 @@
----
-title: title
-subtitle: subtitle
-date: '2022-01-03'
-thumb_img_alt: lorem-ipsum
-content_img_alt: lorem-ipsum
-excerpt: lorem-ipsum
-seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
-template: post
-thumb_img_path: images/css-72a655a7.jpg
----
+subtitle
 
----
+2022-01-03
 
-## tags: [date, time]
+------------------------------------------------------------------------
 
-# To print the date in a format suitable for affixing to file names:
+tags: \[date, time\]
+--------------------
 
-date +"%Y%m%d\_%H%M%S"
+To print the date in a format suitable for affixing to file names:
+==================================================================
 
-# To convert a Unix timestamp to Date (Linux)
+date +“%Y%m%d\_%H%M%S”
 
-date -d @1440359821
+To convert a Unix timestamp to Date (Linux)
+===========================================
 
-# To convert a Unix timestamp to Date (OSX)
+date -d <span class="citation" data-cites="1440359821">@1440359821</span>
+
+To convert a Unix timestamp to Date (OSX)
+=========================================
 
 date -r 1440359821
 
-# To list UTC time
+To list UTC time
+================
 
 date -u
 
-# Show the time on the west coast of the US (use tzselect(1) to find TZ)
+Show the time on the west coast of the US (use tzselect(1) to find TZ)
+======================================================================
 
-TZ='America/Los_Angeles' date
+TZ=‘America/Los\_Angeles’ date

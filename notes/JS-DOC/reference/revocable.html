@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>revocable</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="proxy.revocable">Proxy.revocable()</h1>
+<p>The <code>Proxy.revocable()</code> method is used to create a revocable <a href="../proxy"><code>Proxy</code></a> object.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>Proxy.revocable(target, handler);</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>target</code><br />
+A target object to wrap with <code>Proxy</code>. It can be any sort of object, including a native array, a function, or even another proxy.</p>
+<p><code>handler</code><br />
+An object whose properties are functions define the behavior of proxy <code>p</code> when an operation is performed on it.</p>
+<h3 id="return-value">Return value</h3>
+<p>A newly created revocable <code>Proxy</code> object is returned.</p>
+<h2 id="description">Description</h2>
+<p>A revocable <code>Proxy</code> is an object with following two properties <code>{proxy: proxy, revoke: revoke}</code>.</p>
+<p><code>proxy</code><br />
+A Proxy object created with <code>new Proxy(target, handler)</code> call.</p>
+<p><code>revoke</code><br />
+A function with no argument to invalidate (switch off) the <code>proxy</code>.</p>
+<p>If the <code>revoke()</code> function gets called, the proxy becomes unusable: Any trap to a handler will throw a <a href="../typeerror"><code>TypeError</code></a>. Once a proxy is revoked, it will remain revoked and can be garbage collected. Calling <code>revoke()</code> again has no effect.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-proxy.revocable">Using Proxy.revocable</h3>
+<pre><code>var revocable = Proxy.revocable({}, {
+  get: function(target, name) {
+    return &quot;[[&quot; + name + &quot;]]&quot;;
+  }
+});
+var proxy = revocable.proxy;
+console.log(proxy.foo); // &quot;[[foo]]&quot;
+
+revocable.revoke();
+
+console.log(proxy.foo); // TypeError is thrown
+proxy.foo = 1           // TypeError again
+delete proxy.foo;       // still TypeError
+typeof proxy            // &quot;object&quot;, typeof doesn&#39;t trigger any trap</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-proxy.revocable">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-proxy.revocable</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>revocable</code></p>
+<p>63</p>
+<p>12</p>
+<p>34</p>
+<p>No</p>
+<p>50</p>
+<p>10</p>
+<p>63</p>
+<p>63</p>
+<p>34</p>
+<p>46</p>
+<p>10</p>
+<p>8.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../proxy"><code>Proxy</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/revocable" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/revocable</a></p>
+</body>
+</html>

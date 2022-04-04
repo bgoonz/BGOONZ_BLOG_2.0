@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>signal-processing-cheat-sheet</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="signals-systems-for-dummies-cheat-sheet---dummies">Signals &amp; Systems For Dummies Cheat Sheet - dummies</h1>
+<blockquote>
+<p>Signals and systems is an aspect of electrical engineering that applies mathematical concepts to the creation of product design, such as cell phones and automobile cruise control systems. Absorbing the core concepts of signals and systems requires a firm grasp on their properties and classifications; a solid knowledge of algebra, trigonometry, complex arithmetic, calculus of […]</p>
+</blockquote>
+<ol start="2" type="1">
+<li><a href="https://www.dummies.com/education/">Education</a></li>
+<li><a href="https://www.dummies.com/education/science/">Science</a></li>
+<li>Signals &amp; Systems For Dummies Cheat Sheet</li>
+</ol>
+<p>Signals and systems is an aspect of electrical engineering that applies mathematical concepts to the creation of product design, such as cell phones and automobile cruise control systems. Absorbing the core concepts of signals and systems requires a firm grasp on their properties and classifications; a solid knowledge of algebra, trigonometry, complex arithmetic, calculus of one variable; and familiarity with linear constant coefficient (LCC) differential equations.</p>
+<h2 id="getting-to-know-the-mathematical-foundation-of-signals-and-systems">Getting to Know the Mathematical Foundation of Signals and Systems</h2>
+<p>The study of signals and systems establishes a mathematical formalism for analyzing, modeling, and simulating electrical systems in the time, frequency, and <em>s__-</em> or <em>z__-_domains. Signals exist naturally and are also created by people. Some operate continuously (known as _continuous-time signals</em>); others are active at specific instants of time (and are called <em>discrete-time signals</em>).</p>
+<p>Signals pass through systems to be modified or enhanced in some way. Systems that operate on signals are also categorized as continuous- or discrete-time.</p>
+<p>Mathematics plays a central role in all facets of signals and systems. Specifically, complex arithmetic, trigonometry, and geometry are mainstays of this dynamic and (ahem) electrifying field of work and study. This article highlights the most applicable concepts from each of these areas of math for signals and systems work.</p>
+<h2 id="complex-arithmetic-for-signals-and-systems">Complex arithmetic for signals and systems</h2>
+<p>Here are some of the most important complex arithmetic operations and formulas that relate to signals and systems.</p>
+<figure>
+<img src="https://www.dummies.com/wp-content/uploads/375142.image0.jpg" alt="image0.jpg" /><figcaption>image0.jpg</figcaption>
+</figure>
+<h2 id="trigonometry-and-eulers-formulas">Trigonometry and Euler’s formulas</h2>
+<p>This table presents the key formulas of trigonometry that apply to signals and systems:</p>
+<figure>
+<img src="https://www.dummies.com/wp-content/uploads/375143.image1.jpg" alt="image1.jpg" /><figcaption>image1.jpg</figcaption>
+</figure>
+<h2 id="geometric-series">Geometric series</h2>
+<p>Among the most important geometry equations to know for signals and systems are these three:</p>
+<figure>
+<img src="https://www.dummies.com/wp-content/uploads/375144.image2.jpg" alt="image2.jpg" /><figcaption>image2.jpg</figcaption>
+</figure>
+<h2 id="recognizing-signal-properties-and-classifications">Recognizing Signal Properties and Classifications</h2>
+<p>Signals — both continuous-time signals and their discrete-time counterparts — are categorized according to certain properties, such as deterministic or random, periodic or aperiodic, power or energy, and even or odd. These traits aren’t mutually exclusive; signals can hold multiple classifications.</p>
+<p>Here are some of the most important signal properties.</p>
+<figure>
+<img src="https://www.dummies.com/wp-content/uploads/375167.image0.jpg" alt="image0.jpg" /><figcaption>image0.jpg</figcaption>
+</figure>
+<p>But wait! There’s more. Signals can also be categorized as exponential, sinusoidal, or a special sequence. The unit sample sequence and the unit step sequence are special signals of interest in discrete-time. All the continuous-time signal classifications have discrete-time counterparts, except singularity functions, which appear in continuous-time only.</p>
+<p>Defining special signals that serve as building blocks for more complex signals makes the creation of custom signal models to suit your needs more systematic and convenient.</p>
+<figure>
+<img src="https://www.dummies.com/wp-content/uploads/375168.image1.jpg" alt="image1.jpg" /><figcaption>image1.jpg</figcaption>
+</figure>
+<h2 id="recognizing-system-properties-and-classifications">Recognizing System Properties and Classifications</h2>
+<p>Part of learning about signals and systems is that systems are identified according to certain properties they exhibit. Have a look at the core system classifications:</p>
+<ul>
+<li><strong>Linearity:</strong> A linear combination of individually obtained outputs is equivalent to the output obtained by the system operating on the corresponding linear combination of inputs.</li>
+<li><strong>Time-invariant:</strong> The system properties don’t change with time. A present input produces the same response as it does in the future, less the time shift factor between the present and future.</li>
+<li><strong>Memoryless:</strong> If the present system output depends only on the present input, the system is memoryless.</li>
+<li><strong>Causal:</strong> The present system output depends at most on the present and past inputs. Future inputs can’t be used to produce the present output.</li>
+<li><strong>Stable:</strong> A system is bounded-input bound-output (BIBO) stable if all bounded inputs produce a bounded output.</li>
+</ul>
+<p>This table presents core linear time invariant (LTI) system properties for both continuous and discrete-time systems. Time-domain, frequency-domain, and <em>s</em>/<em>z</em>-domain properties are identified for the categories basic input/output, cascading, linear constant coefficient (LCC) differential and difference equations, and BIBO stability:</p>
+<figure>
+<img src="https://www.dummies.com/wp-content/uploads/375149.image0.jpg" alt="image0.jpg" /><figcaption>image0.jpg</figcaption>
+</figure>
+<h2 id="signals-and-systems-working-with-transform-theorems-and-pairs">Signals and Systems: Working with Transform Theorems and Pairs</h2>
+<p>Both signals and systems can be analyzed in the time-, frequency-, and <em>s__-</em> and _z__-_domains. Leaving the time-domain requires a transform and then an inverse transform to return to the time-domain.</p>
+<p>As you work to and from the time domain, referencing tables of both transform theorems and transform pairs can speed your progress and make the work easier. Use this table of common pairs for the continuous-time Fourier transform, discrete-time Fourier transform, the Laplace transform, and the <em>z</em>-transform as needed.</p>
+<p>Working in the frequency domain means you are working with Fourier transform and discrete-time Fourier transform — in the <em>s</em>-domain.</p>
+<h2 id="using-fourier-transforms-for-continuous-time-signals">Using Fourier transforms for continuous-time signals</h2>
+<p>Here is a short table of theorems and pairs for the continuous-time Fourier transform (FT), in both frequency variable</p>
+<figure>
+<img src="https://www.dummies.com/wp-content/uploads/375151.image0.png" alt="image0.png" /><figcaption>image0.png</figcaption>
+</figure>
+<p>The forward and inverse transforms for these two notational schemes are defined as:</p>
+<figure>
+<img src="https://www.dummies.com/wp-content/uploads/375152.image1.png" alt="image1.png" /><figcaption>image1.png</figcaption>
+</figure>
+<p>. . . and here’s the table:</p>
+<figure>
+<img src="https://www.dummies.com/wp-content/uploads/375153.image2.jpg" alt="image2.jpg" /><figcaption>image2.jpg</figcaption>
+</figure>
+<h2 id="applying-fourier-transform-to-discrete-time-signals">Applying Fourier transform to discrete-time signals</h2>
+<p>For discrete-time signals and systems the discrete-time Fourier transform (DTFT) takes you to the frequency domain. A short table of theorems and pairs for the DTFT can make your work in this domain much more fun. The discrete-time frequency variable is</p>
+<figure>
+<img src="https://www.dummies.com/wp-content/uploads/375154.image3.png" alt="image3.png" /><figcaption>image3.png</figcaption>
+</figure>
+<p>The forward and inverse transforms are defined as:</p>
+<figure>
+<img src="https://www.dummies.com/wp-content/uploads/375155.image4.png" alt="image4.png" /><figcaption>image4.png</figcaption>
+</figure>
+<p>. . . and here’s the table:</p>
+<figure>
+<img src="https://www.dummies.com/wp-content/uploads/375156.image5.jpg" alt="image5.jpg" /><figcaption>image5.jpg</figcaption>
+</figure>
+<h2 id="using-the-laplace-transform-in-the-s-domain">Using the Laplace transform in the s-domain</h2>
+<p>For continuous-time signals and systems, the one-sided Laplace transform (LT) helps to decipher signal and system behavior. It’s also the best approach for solving linear constant coefficient differential equations with nonzero initial conditions. The one-sided LT is defined as:</p>
+<figure>
+<img src="https://www.dummies.com/wp-content/uploads/375157.image6.png" alt="image6.png" /><figcaption>image6.png</figcaption>
+</figure>
+<p>The inverse LT is typically found using partial fraction expansion along with LT theorems and pairs. Here’s a short table of LT theorems and pairs.</p>
+<figure>
+<img src="https://www.dummies.com/wp-content/uploads/375158.image7.jpg" alt="image7.jpg" /><figcaption>image7.jpg</figcaption>
+</figure>
+<h2 id="letting-the-z-transform-help-with-signals-and-systems-analysis">Letting the z-Transform help with signals and systems analysis</h2>
+<p>For discrete-time signals and systems, the <em>z</em>-transform (ZT) is the counterpart to the Laplace transform. With the ZT you can characterize signals and systems as well as solve linear constant coefficient difference equations. The two-sided ZT is defined as:</p>
+<figure>
+<img src="https://www.dummies.com/wp-content/uploads/375159.image8.png" alt="image8.png" /><figcaption>image8.png</figcaption>
+</figure>
+<p>The inverse ZT is typically found using partial fraction expansion and the use of ZT theorems and pairs. Here is a short table of ZT theorems and pairs.</p>
+<figure>
+<img src="https://www.dummies.com/wp-content/uploads/375160.image9.jpg" alt="image9.jpg" /><figcaption>image9.jpg</figcaption>
+</figure>
+<h2 id="exploring-signals-and-systems-core-concepts-of-sampling-theory">Exploring Signals and Systems: Core Concepts of Sampling Theory</h2>
+<p>Sampling theory links continuous and discrete-time signals and systems. For example, you can get a discrete-time signal from a continuous-time signal by taking samples every <em>T</em> seconds. This article points out some useful relationships associated with sampling theory. Key concepts include the low-pass sampling theorem, the frequency spectrum of a sampled continuous-time signal, reconstruction using an ideal lowpass filter, and the calculation of alias frequencies.</p>
+<p>The table of properties begins with a block diagram of a discrete-time processing subsystem that produces continuous-time output <em>y</em>(<em>t</em>) from continuous-time input <em>x</em>(<em>t</em>). This block diagram motivates the sampling theory properties in the remainder of the table.</p>
+<p>The process of converting continuous-time signal <em>x</em>(<em>t</em>) to discrete-time signal <em>x</em>[<em>n</em>] requires sampling, which is implemented by the analog-to-digital converter (ADC) block. The block with frequency response</p>
+<figure>
+<img src="https://www.dummies.com/wp-content/uploads/375162.image0.png" alt="image0.png" /><figcaption>image0.png</figcaption>
+</figure>
+<p>represents a linear time invariant system with input <em>x</em>[<em>n</em>] and output <em>y</em>[<em>n</em>]. The discrete-time signal <em>y</em>[<em>n</em>] is returned to the continuous-time domain via a digital-to-analog converter and a reconstruction filter.</p>
+<figure>
+<img src="https://www.dummies.com/wp-content/uploads/375163.image1.jpg" alt="image1.jpg" /><figcaption>image1.jpg</figcaption>
+</figure>
+<h2 id="synthesizing-signals-with-the-fourier-series">Synthesizing Signals with the Fourier Series</h2>
+<p>Periodic signals can be synthesized as a linear combination of harmonically related complex sinusoids. The theory of Fourier series provides the mathematical tools for this synthesis by starting with the analysis formula, which provides the Fourier coefficients <em>X__n</em> corresponding to periodic signal <em>x</em>(<em>t</em>) having period _T_0.</p>
+<p>Common periodic signals include the square wave, pulse train, and triangle wave. This table shows the Fourier series analysis and synthesis formulas and coefficient formulas for <em>X__n</em> in terms of waveform parameters for the provided waveform sketches:</p>
+<figure>
+<img src="https://www.dummies.com/wp-content/uploads/375165.image0.jpg" alt="image0.jpg" /><figcaption>image0.jpg</figcaption>
+</figure>
+</body>
+</html>

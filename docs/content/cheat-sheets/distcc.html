@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2022-01-03" />
+  <title>title</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">title</h1>
+<p class="subtitle">subtitle</p>
+<p class="date">2022-01-03</p>
+</header>
+<h1 id="install">INSTALL</h1>
+<h1 id="section">==============================================================================</h1>
+<h1 id="edit-etcdefaultdistcc-and-set-theses-vars">Edit /etc/default/distcc and set theses vars</h1>
+<h1 id="startdistcctrue">STARTDISTCC=“true”</h1>
+<h1 id="allowednets127.0.0.1-192.168.1.024-your-computer-and-local-computers">ALLOWEDNETS=“127.0.0.1 192.168.1.0/24”# Your computer and local computers</h1>
+<h1 id="listener127.0.0.1-comment-it">#LISTENER=“127.0.0.1”# Comment it</h1>
+<h1 id="zeroconftrue-auto-configuration">ZEROCONF=“true”# Auto configuration</h1>
+<h1 id="remember-1">REMEMBER 1:</h1>
+<h1 id="startrestart-your-distccd-servers-before-using-one-of-these-commands.">Start/Restart your distccd servers before using one of these commands.</h1>
+<h1 id="service-distccd-start">service distccd start</h1>
+<h1 id="remember-2">REMEMBER 2:</h1>
+<h1 id="do-not-forget-to-install-on-each-machine-distcc.">Do not forget to install on each machine DISTCC.</h1>
+<h1 id="no-need-to-install-libs-only-main-host-need-libs">No need to install libs ! Only main host need libs !</h1>
+<h1 id="usage">USAGE</h1>
+<h1 id="section-1">==============================================================================</h1>
+<h1 id="run-make-with-4-thread-a-cross-network-in-auto-configuration.">Run make with 4 thread (a cross network) in auto configuration.</h1>
+<h1 id="note-for-gcc-replace-cxx-by-cc-and-g-by-gcc">Note: for gcc, Replace CXX by CC and g++ by gcc</h1>
+<p>ZEROCONF=‘+zeroconf’ make -j4 CXX=‘distcc g++’</p>
+<h1 id="run-make-with-4-thread-a-cross-network-in-static-configuration-2-ip">Run make with 4 thread (a cross network) in static configuration (2 ip)</h1>
+<h1 id="note-for-gcc-replace-cxx-by-cc-and-g-by-gcc-1">Note: for gcc, Replace CXX by CC and g++ by gcc</h1>
+<p>DISTCC_HOSTS=‘127.0.0.1 192.168.1.69’ make -j4 CXX=‘distcc g++’</p>
+<h1 id="show-hosts-aviables">Show hosts aviables</h1>
+<p>ZEROCONF=‘+zeroconf’ distcc –show-hosts</p>
+</body>
+</html>

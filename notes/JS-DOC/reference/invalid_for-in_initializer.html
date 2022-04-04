@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>invalid_for-in_initializer</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="syntaxerror-for-in-loop-head-declarations-may-not-have-initializers">SyntaxError: for-in loop head declarations may not have initializers</h1>
+<p>The JavaScript <a href="../strict_mode">strict mode</a>-only exception “for-in loop head declarations may not have initializers” occurs when the head of a <a href="../statements/for...in">for…in</a> contains an initializer expression, such as |<code>for (var i = 0 in obj)</code>|. This is not allowed in for-of loops in strict mode.</p>
+<h2 id="message">Message</h2>
+<pre><code>SyntaxError: for-in loop head declarations cannot have an initializer (Edge)
+SyntaxError: for-in loop head declarations may not have initializers (Firefox)
+SyntaxError: for-in loop variable declaration may not have an initializer. (Chrome)</code></pre>
+<h2 id="error-type">Error type</h2>
+<p><a href="../global_objects/syntaxerror"><code>SyntaxError</code></a> in <a href="../strict_mode">strict mode</a> only.</p>
+<h2 id="what-went-wrong">What went wrong?</h2>
+<p>The head of a <a href="../statements/for...in">for…in</a> loop contains an initializer expression. That is, a variable is declared and assigned a value |<code>for (var i = 0 in obj)</code>|. In non-strict mode, this head declaration is silently ignored and behaves like <code>|for (var i in obj)|</code>. In <a href="../strict_mode">strict mode</a>, however, a <code>SyntaxError</code> is thrown.</p>
+<h2 id="examples">Examples</h2>
+<p>This example throws a <code>SyntaxError</code>:</p>
+<pre><code>&quot;use strict&quot;;
+
+var obj = {a: 1, b: 2, c: 3 };
+
+for (var i = 0 in obj) {
+  console.log(obj[i]);
+}
+
+// SyntaxError: for-in loop head declarations may not have initializers</code></pre>
+<h3 id="valid-for-in-loop">Valid for-in loop</h3>
+<p>You can remove the initializer (<code>i = 0</code>) in the head of the for-in loop.</p>
+<pre><code>&quot;use strict&quot;;
+
+var obj = {a: 1, b: 2, c: 3 };
+
+for (var i in obj) {
+  console.log(obj[i]);
+}</code></pre>
+<h3 id="array-iteration">Array iteration</h3>
+<p>The for…in loop <a href="../statements/for...in#array_iteration_and_for...in">shouldn’t be used for Array iteration</a>. Did you intend to use a <code>for</code> loop instead of a <code>for-in</code> loop to iterate an <a href="../global_objects/array"><code>Array</code></a>? The <code>for</code> loop allows you to set an initializer then as well:</p>
+<pre><code>var arr = [ &quot;a&quot;, &quot;b&quot;, &quot;c&quot; ]
+
+for (var i = 2; i &lt; arr.length; i++) {
+  console.log(arr[i]);
+}
+
+// &quot;c&quot;</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><code>for...in</code></li>
+<li><code>for...of</code> - also disallows an initializer in both strict and non-strict mode.</li>
+<li><code>for</code> - preferred for array iteration, allows to define an initializer.</li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Invalid_for-in_initializer" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Invalid_for-in_initializer</a></p>
+</body>
+</html>

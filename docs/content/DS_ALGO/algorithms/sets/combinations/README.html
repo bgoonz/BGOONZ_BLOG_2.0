@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="combinations">Combinations</h1>
+<p>When the order doesn’t matter, it is a <strong>Combination</strong>.</p>
+<p>When the order <strong>does</strong> matter it is a <strong>Permutation</strong>.</p>
+<p><strong>“My fruit salad is a combination of apples, grapes and bananas”</strong> We don’t care what order the fruits are in, they could also be “bananas, grapes and apples” or “grapes, apples and bananas”, its the same fruit salad.</p>
+<h2 id="combinations-without-repetitions">Combinations without repetitions</h2>
+<p>This is how lotteries work. The numbers are drawn one at a time, and if we have the lucky numbers (no matter what order) we win!</p>
+<p>No Repetition: such as lottery numbers <code>(2,14,15,27,30,33)</code></p>
+<p><strong>Number of combinations</strong></p>
+<figure>
+<img src="https://www.mathsisfun.com/combinatorics/images/combinations-no-repeat.png" alt="Formula" /><figcaption>Formula</figcaption>
+</figure>
+<p>where <code>n</code> is the number of things to choose from, and we choose <code>r</code> of them, no repetition, order doesn’t matter.</p>
+<p>It is often called “n choose r” (such as “16 choose 3”). And is also known as the Binomial Coefficient.</p>
+<h2 id="combinations-with-repetitions">Combinations with repetitions</h2>
+<p>Repetition is Allowed: such as coins in your pocket <code>(5,5,5,10,10)</code></p>
+<p>Or let us say there are five flavours of ice cream: <code>banana</code>, <code>chocolate</code>, <code>lemon</code>, <code>strawberry</code> and <code>vanilla</code>.</p>
+<p>We can have three scoops. How many variations will there be?</p>
+<p>Let’s use letters for the flavours: <code>{b, c, l, s, v}</code>. Example selections include:</p>
+<ul>
+<li><code>{c, c, c}</code> (3 scoops of chocolate)</li>
+<li><code>{b, l, v}</code> (one each of banana, lemon and vanilla)</li>
+<li><code>{b, v, v}</code> (one of banana, two of vanilla)</li>
+</ul>
+<p><strong>Number of combinations</strong></p>
+<figure>
+<img src="https://www.mathsisfun.com/combinatorics/images/combinations-repeat.gif" alt="Formula" /><figcaption>Formula</figcaption>
+</figure>
+<p>Where <code>n</code> is the number of things to choose from, and we choose <code>r</code> of them. Repetition allowed, order doesn’t matter.</p>
+<h2 id="cheat-sheets">Cheat Sheets</h2>
+<p>Permutations cheat sheet</p>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/2000/1*JNK-n0Pt0Vbxk0lxVpgT5A.png" alt="Permutations Cheat Sheet" /><figcaption>Permutations Cheat Sheet</figcaption>
+</figure>
+<p>Combinations cheat sheet</p>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/2000/1*7cFRn8jW4g_91YgDAbmxRQ.png" alt="Combinations Cheat Sheet" /><figcaption>Combinations Cheat Sheet</figcaption>
+</figure>
+<p>Permutations/combinations algorithm ideas.</p>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/2000/1*vLsSsZMnesCFPCYTYMbxrQ.png" alt="Algorithms Idea" /><figcaption>Algorithms Idea</figcaption>
+</figure>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://www.mathsisfun.com/combinatorics/combinations-permutations.html">Math Is Fun</a></li>
+<li><a href="https://medium.com/@trekhleb/permutations-combinations-algorithms-cheat-sheet-68c14879aba5">Permutations/combinations cheat sheets</a></li>
+</ul>
+</body>
+</html>

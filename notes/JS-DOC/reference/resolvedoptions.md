@@ -1,8 +1,10 @@
-# Intl.NumberFormat.prototype.resolvedOptions()
+Intl.NumberFormat.prototype.resolvedOptions()
+=============================================
 
 The `Intl.NumberFormat.prototype.resolvedOptions()` method returns a new object with properties reflecting the locale and number formatting options computed during initialization of this [`Intl/NumberFormat`](../numberformat) object.
 
-## Syntax
+Syntax
+------
 
     resolvedOptions()
 
@@ -10,7 +12,8 @@ The `Intl.NumberFormat.prototype.resolvedOptions()` method returns a new object 
 
 A new object with properties reflecting the locale and number formatting options computed during the initialization of the given [`Intl/NumberFormat`](../numberformat) object.
 
-## Description
+Description
+-----------
 
 The resulting object has the following properties:
 
@@ -18,24 +21,24 @@ The resulting object has the following properties:
 The BCP 47 language tag for the locale actually used. If any Unicode extension values were requested in the input BCP 47 language tag that led to this locale, the key-value pairs that were requested and are supported for this locale are included in `locale`.
 
 `numberingSystem`  
-The value provided for this properties in the `options` argument, if present, or the value requested using the Unicode extension key "`nu`" or filled in as a default.
+The value provided for this properties in the `options` argument, if present, or the value requested using the Unicode extension key “`nu`” or filled in as a default.
 
 `notation`  
-The value provided for this property in the `options` argument, if present, or "`standard`" filled in as a default.
+The value provided for this property in the `options` argument, if present, or “`standard`” filled in as a default.
 
 `compactDisplay`  
-The value provided for this property in the `options` argument, or "`short`" filled in as a default.  
-This property is only present if the `notation` is set to "compact".
+The value provided for this property in the `options` argument, or “`short`” filled in as a default.  
+This property is only present if the `notation` is set to “compact”.
 
 `signDisplay`  
-The value provided for this property in the `options` argument, or "`auto`" filled in as a default.
+The value provided for this property in the `options` argument, or “`auto`” filled in as a default.
 
 `useGrouping`  
 The values provided for these properties in the `options` argument or filled in as defaults.
 
 `currency`  
 `currencyDisplay`  
-The values provided for these properties in the `options` argument or filled in as defaults. These properties are only present if `style` is "`currency`".
+The values provided for these properties in the `options` argument or filled in as defaults. These properties are only present if `style` is “`currency`”.
 
 Only one of the following two groups of properties is included:
 
@@ -48,7 +51,8 @@ The values provided for these properties in the `options` argument or filled in 
 `maximumSignificantDigits`  
 The values provided for these properties in the `options` argument or filled in as defaults. These properties are present only if at least one of them was provided in the `options` argument.
 
-## Examples
+Examples
+--------
 
 ### Using the `resolvedOptions` method
 
@@ -65,14 +69,14 @@ The values provided for these properties in the `options` argument or filled in 
     usedOptions.maximumFractionDigits; // 3
     usedOptions.useGrouping;           // true
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-intl.numberformat.prototype.resolvedoptions">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Internationalization API Specification (ECMAScript Internationalization API)<br />
+</p><span class="small">#sec-intl.numberformat.prototype.resolvedoptions</span></td></tr></tbody></table>
 
-<span class="small">#sec-intl.numberformat.prototype.resolvedoptions</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -128,7 +132,8 @@ Samsung Internet
 
 1.5
 
-## See also
+See also
+--------
 
 -   [`Intl.NumberFormat`](../numberformat)
 

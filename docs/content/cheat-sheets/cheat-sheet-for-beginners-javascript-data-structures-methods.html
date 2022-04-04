@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>cheat-sheet-for-beginners-javascript-data-structures-methods</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="cheat-sheet-for-beginners-javascript-data-structures-methods">Cheat Sheet for Beginners: JavaScript Data Structures Methods</h1>
+<blockquote>
+<p>References: JavaScript: The Good Parts by Douglas Crockford, 2008. Page 78-93. Mozilla JavaScript R…</p>
+</blockquote>
+<p><strong>References:</strong></p>
+<ol type="1">
+<li>JavaScript: The Good Parts by Douglas Crockford, 2008. Page 78-93.</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Mozilla JavaScript Reference: Array</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Mozilla JavaScript Reference: Object</a></li>
+<li><p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set">Mozilla JavaScript Reference: Set</a></p>
+<hr /></li>
+</ol>
+<p>There are two ways you learn about available methods in programming languages:</p>
+<ol type="1">
+<li>You find yourself with a problem that needs a solution that prompts you to search for it.</li>
+<li>You read about it; be it from the documentation or some article.</li>
+</ol>
+<p>This article serves as my notes from reading “JavaScript: The Good Parts by Douglas Crockford, 2008. Page 78-93”. While this cheat sheet is inspired by the book, it is also created with reference from <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">MDN Web docs</a> to keep updated.</p>
+<hr />
+<blockquote>
+<p>This cheat sheet focus <strong>ONLY</strong> on <strong>methods</strong> for <strong>SOME</strong> Data Structures in JavaScript</p>
+</blockquote>
+<h2 id="arrays">1. Arrays</h2>
+<p>What’s an Array? The way I visualize it is a table. Below is an example of how an array would look like.</p>
+<table>
+<colgroup>
+<col style="width: 3%" />
+<col style="width: 96%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>index</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td>this is the first value, stored at zero position</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>the index of an array <strong>runs in sequence</strong></td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td>this could be useful for storing data that are required to be ordered, such as rankings or queues</td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td>in JavaScript, array’s value could be mixed; meaning value of each index could be of different data, be it String, Number or even Objects</td>
+</tr>
+</tbody>
+</table>
+<pre><code>// 1. Creating Arrays
+let firstArray = [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;];
+let secondArray = [&quot;d&quot;,&quot;e&quot;,&quot;f&quot;];
+
+// 2. Access an Array Item
+console.log(firstArray[0]); // Results: &quot;a&quot;
+
+// 3. Loop over an Array
+firstArray.forEach(function(item, index, array){
+    console.log(item, index);
+});
+// Results:
+// a 0
+// b 1
+// c 2
+
+// 4. Add new item to END of array
+secondArray.push(&#39;g&#39;);
+console.log(secondArray);
+// Results: [&quot;d&quot;,&quot;e&quot;,&quot;f&quot;, &quot;g&quot;]
+
+// 5. Remove item from END of array
+secondArray.pop();
+console.log(secondArray);
+// Results: [&quot;d&quot;,&quot;e&quot;,&quot;f&quot;]
+
+// 6. Remove item from FRONT of array
+secondArray.shift();
+console.log(secondArray);
+// Results: [&quot;e&quot;,&quot;f&quot;]
+
+// 7. Add item to FRONT of array
+secondArray.unshift(&quot;d&quot;);
+console.log(secondArray);
+// Results: [&quot;d&quot;,&quot;e&quot;,&quot;f&quot;]
+
+// 8. Find INDEX of an item in array
+let position = secondArray.indexOf(&#39;f&#39;);
+// Results: 2
+
+// 9. Remove Item by Index Position
+secondArray.splice(position, 1);
+console.log(secondArray);
+// Note, the second argument, in this case &quot;1&quot;,
+// represent the number of array elements to be removed
+// Results:  [&quot;d&quot;,&quot;e&quot;]
+
+// 10. Copy an Array
+let shallowCopy = secondArray.slice();
+console.log(secondArray);
+console.log(shallowCopy);
+// Results: ShallowCopy === [&quot;d&quot;,&quot;e&quot;]
+
+// 11. JavaScript properties that BEGIN with a digit MUST be accessed using bracket notation
+renderer.3d.setTexture(model, &#39;character.png&#39;);     // a syntax error
+renderer[&#39;3d&#39;].setTexture(model, &#39;character.png&#39;);  // works properly
+
+// 12. Combine two Arrays
+let thirdArray = firstArray.concat(secondArray);
+console.log(thirdArray);
+// [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;, &quot;d&quot;, &quot;e&quot;];
+
+// 13. Combine all Array elements into a string
+console.log(thirdArray.join()); // Results: a,b,c,d,e
+console.log(thirdArray.join(&#39;&#39;)); // Results: abcde
+console.log(thirdArray.join(&#39;-&#39;)); // Results: a-b-c-d-e
+
+// 14. Reversing an Array (in place, i.e. destructive)
+console.log(thirdArray.reverse()); // [&quot;e&quot;, &quot;d&quot;, &quot;c&quot;, &quot;b&quot;, &quot;a&quot;]
+
+// 15. sort
+let unsortedArray = [&quot;Alphabet&quot;, &quot;Zoo&quot;, &quot;Products&quot;, &quot;Computer Science&quot;, &quot;Computer&quot;];
+console.log(unsortedArray.sort());
+// Results: [&quot;Alphabet&quot;, &quot;Computer&quot;, &quot;Computer Science&quot;, &quot;Products&quot;, &quot;Zoo&quot; ]</code></pre>
+<h2 id="objects">2. Objects</h2>
+<p>Think of objects as a logical grouping of a bunch of properties. Properties could be some variable that it’s storing or some methods that it’s using. I also visualize an object as a table. The main difference is that object’s “index” need not be numbers and is not necessarily sequenced.</p>
+<table>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 93%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>properties</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>name</td>
+<td>“I’m an object”</td>
+</tr>
+<tr class="even">
+<td>data</td>
+<td>[“You can add an array as a property”, “Recall that array is a sequenced list of items”, “but just because it’s sequenced, doesn’t means you can only use it for that purpose”]</td>
+</tr>
+<tr class="odd">
+<td>function_name</td>
+<td><code>function(parameters){//do something}</code></td>
+</tr>
+</tbody>
+</table>
+<pre><code>// 16. Creating an Object
+
+let newObj = {
+    name: &quot;I&#39;m an object&quot;,
+    values: [1,10,11,20],
+    others: &#39;&#39;,
+    &quot;1property&quot;: &#39;example of property name starting with digit&#39;
+
+};
+
+// 17. Figure out what keys/properties are in an object
+console.log(Object.keys(newObj));
+// Results: [ &#39;name&#39;, &#39;values&#39;, &#39;others&#39;, &#39;1property&#39; ]
+
+// 18. Show all values stored in the object
+console.log(Object.values(newObj));
+
+// Results:
+// [ &#39;I\&#39;m an object&#39;,
+//   [ 1, 10, 11, 20 ],
+//   &#39;&#39;,
+//   &#39;example of property name starting with digit&#39; ]
+
+// 19. Show all key and values of the object
+for (let [key, value] of Object.entries(newObj)) {
+    console.log(`${key}: ${value}`);
+}
+// Results:
+// name: I&#39;m an object
+// values: 1,10,11,20
+// others:
+// 1property: example of property name starting with digit
+
+// 20. Accessing Object&#39;s Properties
+// Two different ways to access properties, both produce same results
+console.log(newObj.name);
+console.log(newObj[&quot;name&quot;]);
+
+// But if the property name starts with a digit,
+// we CANNOT use dot notation
+console.log(newObj[&quot;1property&quot;]);
+
+// 21. Adding a Method to an Object
+newObj.helloWorld = function(){
+    console.log(&quot;Hello World from inside an object!&quot;);
+}
+
+// 22. Invoking an Object&#39;s Method
+newObj.helloWorld();</code></pre>
+<h2 id="sets">3. Sets</h2>
+<p>Lastly, Sets are pretty much what it sounds like. It’s the same intuition as Set in Mathematics. I visualize Sets as Venn Diagrams.</p>
+<pre><code>// 23. Creating a new Set
+let newSet = new Set();
+
+// 24. Adding new elements to a set
+newSet.add(1); // Set[1]
+newSet.add(&quot;text&quot;) // Set[1, &quot;text&quot;]
+
+// 25. Check if element is in set
+newSet.has(1); // true
+
+// 24. Check size of set
+console.log(newSet.size) // Results: 2
+
+// 26. Delete element from set
+newSet.delete(1) // Set[&quot;text&quot;]
+
+// 27. Set Operations: isSuperSet
+function isSuperset(set, subset) {
+    for (let elem of subset) {
+        if (!set.has(elem)) {
+            return false;
+        }
+    }
+    return true;
+}
+// 28. Set Operations: union
+function union(setA, setB) {
+    let _union = new Set(setA);
+    for (let elem of setB) {
+        _union.add(elem);
+    }
+    return _union;
+}
+
+// 29. Set Operations: intersection
+function intersection(setA, setB) {
+    let _intersection = new Set();
+    for (let elem of setB) {
+        if (setA.has(elem)) {
+            _intersection.add(elem);
+        }
+    }
+    return _intersection;
+}
+// 30. Set Operations: symmetricDifference
+function symmetricDifference(setA, setB) {
+    let _difference = new Set(setA);
+    for (let elem of setB) {
+        if (_difference.has(elem)) {
+            _difference.delete(elem);
+        } else {
+            _difference.add(elem);
+        }
+    }
+    return _difference;
+}
+// 31. Set Operations: difference
+function difference(setA, setB) {
+    let _difference = new Set(setA);
+    for (let elem of setB) {
+        _difference.delete(elem);
+    }
+    return _difference;
+}
+
+// Examples
+let setA = new Set([1, 2, 3, 4]);
+let setB = new Set([2, 3]);
+let setC = new Set([3, 4, 5, 6]);
+
+console.log(isSuperset(setA, setB));            // =&gt; true
+console.log(union(setA, setC));                 // =&gt; Set [1, 2, 3, 4, 5, 6]
+console.log(intersection(setA, setC));          // =&gt; Set [3, 4]
+console.log(symmetricDifference(setA, setC));   // =&gt; Set [1, 2, 5, 6]
+console.log(difference(setA, setC));            // =&gt; Set [1, 2]</code></pre>
+<hr />
+<p><strong>Article Updates:</strong></p>
+<ul>
+<li><strong>25 Dec 19.</strong> Added some description to each of the data structure. Credits: <span class="citation" data-cites="bam92">[@bam92]</span>(https://dev.to/bam92)</li>
+</ul>
+<p><a href="https://dev.to/tangweejieleslie/cheat-sheet-for-beginners-javascript-data-structures-methods-25l4">Source</a></p>
+</body>
+</html>

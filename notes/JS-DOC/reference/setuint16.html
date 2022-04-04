@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>setuint16</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="dataview.prototype.setuint16">DataView.prototype.setUint16()</h1>
+<p>The <code>setUint16()</code> method stores an unsigned 16-bit integer (unsigned short) value at the specified byte offset from the start of the <a href="../dataview"><code>DataView</code></a>.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>setUint16(byteOffset, value)
+setUint16(byteOffset, value, littleEndian)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>byteOffset</code><br />
+The offset, in byte, from the start of the view where to store the data.</p>
+<p><code>value</code><br />
+The value to set.</p>
+<p><code>littleEndian</code><br />
+<span class="badge inline optional">Optional</span> Indicates whether the 16-bit int is stored in <a href="https://developer.mozilla.org/en-US/docs/Glossary/Endianness">little- or big-endian</a> format. If <code>false</code> or <code>undefined</code>, a big-endian value is written.</p>
+<h3 id="return-value">Return value</h3>
+<p><a href="../undefined"><code>undefined</code></a>.</p>
+<h3 id="errors-thrown">Errors thrown</h3>
+<p><a href="../rangeerror"><code>RangeError</code></a><br />
+Thrown if the <code>byteOffset</code> is set such as it would store beyond the end of the view.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-the-setuint16-method">Using the setUint16 method</h3>
+<pre><code>var buffer = new ArrayBuffer(8);
+var dataview = new DataView(buffer);
+dataview.setUint16(1, 3);
+dataview.getUint16(1); // 3</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-dataview.prototype.setuint16">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-dataview.prototype.setuint16</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>setUint16</code></p>
+<p>9</p>
+<p>12</p>
+<p>15</p>
+<p>10</p>
+<p>12.1</p>
+<p>5.1</p>
+<p>4</p>
+<p>18</p>
+<p>15</p>
+<p>12.1</p>
+<p>4.2</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../dataview"><code>DataView</code></a></li>
+<li><a href="../arraybuffer"><code>ArrayBuffer</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setUint16" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setUint16</a></p>
+</body>
+</html>

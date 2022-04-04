@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>multiline</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="regexp.prototype.multiline">RegExp.prototype.multiline</h1>
+<p>The <code>multiline</code> property indicates whether or not the “<code>m</code>” flag is used with the regular expression. <code>multiline</code> is a read-only property of an individual regular expression instance.</p>
+<p>Property attributes of <code>RegExp.prototype.multiline</code></p>
+<p>Writable</p>
+<p>no</p>
+<p>Enumerable</p>
+<p>no</p>
+<p>Configurable</p>
+<p>yes</p>
+<h2 id="description">Description</h2>
+<p>The value of <code>multiline</code> is a <a href="../boolean"><code>Boolean</code></a> and is true if the “<code>m</code>” flag was used; otherwise, false. The “<code>m</code>” flag indicates that a multiline input string should be treated as multiple lines. For example, if “<code>m</code>” is used, “<code>^</code>” and “<code>$</code>” change from matching at only the start or end of the entire string to the start or end of any line within the string.</p>
+<p>You cannot change this property directly.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-multiline">Using multiline</h3>
+<pre><code>var regex = new RegExp(&#39;foo&#39;, &#39;m&#39;);
+
+console.log(regex.multiline); // true</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-get-regexp.prototype.multiline">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-get-regexp.prototype.multiline</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>multiline</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>5.5</p>
+<p>5</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>prototype_accessor</code></p>
+<p>48</p>
+<p>12</p>
+<p>38</p>
+<p>5.5</p>
+<p>35</p>
+<p>1.3</p>
+<p>48</p>
+<p>48</p>
+<p>38</p>
+<p>35</p>
+<p>1</p>
+<p>5.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="lastindex"><code>RegExp.lastIndex</code></a></li>
+<li><a href="dotall"><code>RegExp.prototype.dotAll</code></a></li>
+<li><a href="global"><code>RegExp.prototype.global</code></a></li>
+<li><a href="hasindices"><code>RegExp.prototype.hasIndices</code></a></li>
+<li><a href="ignorecase"><code>RegExp.prototype.ignoreCase</code></a></li>
+<li><a href="source"><code>RegExp.prototype.source</code></a></li>
+<li><a href="sticky"><code>RegExp.prototype.sticky</code></a></li>
+<li><a href="unicode"><code>RegExp.prototype.unicode</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/multiline" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/multiline</a></p>
+</body>
+</html>

@@ -1,8 +1,10 @@
-# TypedArray.prototype.values()
+TypedArray.prototype.values()
+=============================
 
 The `values()` method returns a new array iterator object that contains the values for each index in the array.
 
-## Syntax
+Syntax
+------
 
     values()
 
@@ -10,9 +12,10 @@ The `values()` method returns a new array iterator object that contains the valu
 
 A new array iterator object.
 
-## Examples
+Examples
+--------
 
-### Iteration using for...of loop
+### Iteration using for…of loop
 
     var arr = ['a', 'b', 'c', 'd', 'e'];
     var iterator = arr.values();
@@ -63,14 +66,14 @@ example:
 
 **Note:** If the values in the array changed the array iterator object values change too.
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="#">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-%typedarray%.prototype.values</span></td></tr></tbody></table>
 
-<span class="small">#sec-%typedarray%.prototype.values</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -126,7 +129,8 @@ No
 
 3.0
 
-## See also
+See also
+--------
 
 -   [`Array.prototype.keys()`](../array/keys)
 -   [`Array.prototype.entries()`](../array/entries)
@@ -134,6 +138,5 @@ No
 -   [`Array.prototype.every()`](../array/every)
 -   [`Array.prototype.some()`](../array/some)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/values" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/values</a>

@@ -1,8 +1,10 @@
-# Intl.Collator.prototype.compare()
+Intl.Collator.prototype.compare()
+=================================
 
 The `Intl.Collator.prototype.compare()` method compares two strings according to the sort order of this [`Intl/Collator`](../collator) object.
 
-## Syntax
+Syntax
+------
 
     compare(string1, string2)
 
@@ -12,11 +14,13 @@ The `Intl.Collator.prototype.compare()` method compares two strings according to
 `string2`  
 The strings to compare against each other.
 
-## Description
+Description
+-----------
 
 The `compare` getter function returns a number indicating how `string1` and `string2` compare to each other according to the sort order of this [`Intl/Collator`](../collator) object: a negative value if `string1` comes before `string2`; a positive value if `string1` comes after `string2`; 0 if they are considered equal.
 
-## Examples
+Examples
+--------
 
 ### Using compare for array sort
 
@@ -39,12 +43,11 @@ Use the `compare` getter function for finding matching strings in arrays:
     console.log(matches.join(', '));
     // → "Congrès, congres"
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-intl.collator.prototype.compare">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
-<br/>
-
-<span class="small">#sec-intl.collator.prototype.compare</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Internationalization API Specification (ECMAScript Internationalization API)<br />
+</p><span class="small">#sec-intl.collator.prototype.compare</span></td></tr></tbody></table>
 
 `compare`
 
@@ -72,7 +75,8 @@ Use the `compare` getter function for finding matching strings in arrays:
 
 1.5
 
-## See also
+See also
+--------
 
 -   [`Intl.Collator`](../collator)
 -   [`String.prototype.localeCompare()`](../../string/localecompare)

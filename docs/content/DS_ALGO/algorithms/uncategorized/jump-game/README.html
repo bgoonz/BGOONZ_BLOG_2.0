@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="jump-game">Jump Game</h1>
+<h2 id="the-problem">The Problem</h2>
+<p>Given an array of non-negative integers, you are initially positioned at the first index of the array. Each element in the array represents your maximum jump length at that position.</p>
+<p>Determine if you are able to reach the last index.</p>
+<p><strong>Example #1</strong></p>
+<pre><code>Input: [2,3,1,1,4]
+Output: true
+Explanation: Jump 1 step from index 0 to 1, then 3 steps to the last index.</code></pre>
+<p><strong>Example #2</strong></p>
+<pre><code>Input: [3,2,1,0,4]
+Output: false
+Explanation: You will always arrive at index 3 no matter what. Its maximum
+             jump length is 0, which makes it impossible to reach the last index.</code></pre>
+<h2 id="naming">Naming</h2>
+<p>We call a position in the array a <strong>“good index”</strong> if starting at that position, we can reach the last index. Otherwise, that index is called a <strong>“bad index”</strong>. The problem then reduces to whether or not index 0 is a “good index”.</p>
+<h2 id="solutions">Solutions</h2>
+<h3 id="approach-1-backtracking">Approach 1: Backtracking</h3>
+<p>This is the inefficient solution where we try every single jump pattern that takes us from the first position to the last. We start from the first position and jump to every index that is reachable. We repeat the process until last index is reached. When stuck, backtrack.</p>
+<blockquote>
+<p>See <a href="backtrackingJumpGame.js">backtrackingJumpGame.js</a> file</p>
+</blockquote>
+<p><strong>Time complexity:</strong>: <code>O(2^n)</code>. There are 2<sup>n</sup> (upper bound) ways of jumping from the first position to the last, where <code>n</code> is the length of array <code>nums</code>.</p>
+<p><strong>Auxiliary Space Complexity</strong>: <code>O(n)</code>. Recursion requires additional memory for the stack frames.</p>
+<h3 id="approach-2-dynamic-programming-top-down">Approach 2: Dynamic Programming Top-down</h3>
+<p>Top-down Dynamic Programming can be thought of as optimized backtracking. It relies on the observation that once we determine that a certain index is good / bad, this result will never change. This means that we can store the result and not need to recompute it every time.</p>
+<p>Therefore, for each position in the array, we remember whether the index is good or bad. Let’s call this array memo and let its values be either one of: GOOD, BAD, UNKNOWN. This technique is called memoization.</p>
+<blockquote>
+<p>See <a href="dpTopDownJumpGame.js">dpTopDownJumpGame.js</a> file</p>
+</blockquote>
+<p><strong>Time complexity:</strong>: <code>O(n^2)</code>. For every element in the array, say <code>i</code>, we are looking at the next <code>nums[i]</code> elements to its right aiming to find a GOOD index. <code>nums[i]</code> can be at most <code>n</code>, where <code>n</code> is the length of array <code>nums</code>.</p>
+<p><strong>Auxiliary Space Complexity</strong>: <code>O(2 * n) = O(n)</code>. First <code>n</code> originates from recursion. Second <code>n</code> comes from the usage of the memo table.</p>
+<h3 id="approach-3-dynamic-programming-bottom-up">Approach 3: Dynamic Programming Bottom-up</h3>
+<p>Top-down to bottom-up conversion is done by eliminating recursion. In practice, this achieves better performance as we no longer have the method stack overhead and might even benefit from some caching. More importantly, this step opens up possibilities for future optimization. The recursion is usually eliminated by trying to reverse the order of the steps from the top-down approach.</p>
+<p>The observation to make here is that we only ever jump to the right. This means that if we start from the right of the array, every time we will query a position to our right, that position has already be determined as being GOOD or BAD. This means we don’t need to recurse anymore, as we will always hit the memo table.</p>
+<blockquote>
+<p>See <a href="dpBottomUpJumpGame.js">dpBottomUpJumpGame.js</a> file</p>
+</blockquote>
+<p><strong>Time complexity:</strong>: <code>O(n^2)</code>. For every element in the array, say <code>i</code>, we are looking at the next <code>nums[i]</code> elements to its right aiming to find a GOOD index. <code>nums[i]</code> can be at most <code>n</code>, where <code>n</code> is the length of array <code>nums</code>.</p>
+<p><strong>Auxiliary Space Complexity</strong>: <code>O(n)</code>. This comes from the usage of the memo table.</p>
+<h3 id="approach-4-greedy">Approach 4: Greedy</h3>
+<p>Once we have our code in the bottom-up state, we can make one final, important observation. From a given position, when we try to see if we can jump to a GOOD position, we only ever use one - the first one. In other words, the left-most one. If we keep track of this left-most GOOD position as a separate variable, we can avoid searching for it in the array. Not only that, but we can stop using the array altogether.</p>
+<blockquote>
+<p>See <a href="greedyJumpGame.js">greedyJumpGame.js</a> file</p>
+</blockquote>
+<p><strong>Time complexity:</strong>: <code>O(n)</code>. We are doing a single pass through the <code>nums</code> array, hence <code>n</code> steps, where <code>n</code> is the length of array <code>nums</code>.</p>
+<p><strong>Auxiliary Space Complexity</strong>: <code>O(1)</code>. We are not using any extra memory.</p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://leetcode.com/articles/jump-game/">Jump Game Fully Explained on LeetCode</a></li>
+<li><a href="https://itnext.io/dynamic-programming-vs-divide-and-conquer-2fea680becbe">Dynamic Programming vs Divide and Conquer</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Dynamic_programming">Dynamic Programming</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Memoization">Memoization on Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Top-down_and_bottom-up_design">Top-Down and Bottom-Up Design on Wikipedia</a></li>
+</ul>
+</body>
+</html>

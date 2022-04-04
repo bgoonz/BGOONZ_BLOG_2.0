@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>issealed</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="object.issealed">Object.isSealed()</h1>
+<p>The <code>Object.isSealed()</code> method determines if an object is sealed.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>Object.isSealed(obj)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>obj</code><br />
+The object which should be checked.</p>
+<h3 id="return-value">Return value</h3>
+<p>A <a href="../boolean"><code>Boolean</code></a> indicating whether or not the given object is sealed.</p>
+<h2 id="description">Description</h2>
+<p>Returns <code>true</code> if the object is sealed, otherwise <code>false</code>. An object is sealed if it is not <a href="isextensible">extensible</a> and if all its properties are non-configurable and therefore not removable (but not necessarily non-writable).</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-object.issealed">Using Object.isSealed</h3>
+<pre><code>// Objects aren&#39;t sealed by default.
+var empty = {};
+Object.isSealed(empty); // === false
+
+// If you make an empty object non-extensible,
+// it is vacuously sealed.
+Object.preventExtensions(empty);
+Object.isSealed(empty); // === true
+
+// The same is not true of a non-empty object,
+// unless its properties are all non-configurable.
+var hasProp = { fee: &#39;fie foe fum&#39; };
+Object.preventExtensions(hasProp);
+Object.isSealed(hasProp); // === false
+
+// But make them all non-configurable
+// and the object becomes sealed.
+Object.defineProperty(hasProp, &#39;fee&#39;, {
+  configurable: false
+});
+Object.isSealed(hasProp); // === true
+
+// The easiest way to seal an object, of course,
+// is Object.seal.
+var sealed = {};
+Object.seal(sealed);
+Object.isSealed(sealed); // === true
+
+// A sealed object is, by definition, non-extensible.
+Object.isExtensible(sealed); // === false
+
+// A sealed object might be frozen,
+// but it doesn&#39;t have to be.
+Object.isFrozen(sealed); // === true
+// (all properties also non-writable)
+
+var s2 = Object.seal({ p: 3 });
+Object.isFrozen(s2); // === false
+// (&#39;p&#39; is still writable)
+
+var s3 = Object.seal({ get p() { return 0; } });
+Object.isFrozen(s3); // === true
+// (only configurability matters for accessor properties)</code></pre>
+<h3 id="non-object-coercion">Non-object coercion</h3>
+<p>In ES5, if the argument to this method is not an object (a primitive), then it will cause a <a href="../typeerror"><code>TypeError</code></a>. In ES2015, a non-object argument will be treated as if it was a sealed ordinary object, return <code>true</code>.</p>
+<pre><code>Object.isSealed(1);
+// TypeError: 1 is not an object (ES5 code)
+
+Object.isSealed(1);
+// true                          (ES2015 code)</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-object.issealed">ECMAScript (ECMA-262) <br/></p>
+<span class="small">The definition of ‘Object.isSealed’ in that specification.</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>isSealed</code></p>
+<p>6</p>
+<p>12</p>
+<p>4</p>
+<p>9</p>
+<p>12</p>
+<p>5.1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>12</p>
+<p>6</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="seal"><code>Object.seal()</code></a></li>
+<li><a href="preventextensions"><code>Object.preventExtensions()</code></a></li>
+<li><a href="isextensible"><code>Object.isExtensible()</code></a></li>
+<li><a href="freeze"><code>Object.freeze()</code></a></li>
+<li><a href="isfrozen"><code>Object.isFrozen()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/isSealed" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/isSealed</a></p>
+</body>
+</html>

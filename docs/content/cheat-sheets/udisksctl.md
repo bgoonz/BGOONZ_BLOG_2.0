@@ -1,15 +1,19 @@
-# To get info about a device:
+To get info about a device:
+===========================
 
-udisksctl info -b <device>
+udisksctl info -b
 
-# To mount a device:
+To mount a device:
+==================
 
-udisksctl mount --block-device <device>
+udisksctl mount –block-device
 
-# To unmount a device:
+To unmount a device:
+====================
 
-udisksctl unmount --block-device <device>
+udisksctl unmount –block-device
 
-# To get help:
+To get help:
+============
 
 udisksctl help

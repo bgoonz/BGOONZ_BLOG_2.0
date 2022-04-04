@@ -1,3 +1,4 @@
-# To convert bytes to Human readable format
+To convert bytes to Human readable format
+=========================================
 
-numfmt --to=iec --suffix=B --padding=7 1048576
+numfmt –to=iec –suffix=B –padding=7 1048576

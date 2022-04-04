@@ -1,8 +1,3 @@
----
-title: Sequelize
-category: Ruby libraries
----
-
 ### API
 
     sequelize.sync().done -> ...

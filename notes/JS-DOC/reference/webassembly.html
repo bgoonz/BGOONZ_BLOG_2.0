@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>webassembly</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="webassembly">WebAssembly</h1>
+<p>The <code>WebAssembly</code> JavaScript object acts as the namespace for all <a href="https://developer.mozilla.org/en-US/docs/WebAssembly">WebAssembly</a>-related functionality.</p>
+<p>Unlike most other global objects, <code>WebAssembly</code> is not a constructor (it is not a function object). You can compare it to <a href="math"><code>Math</code></a>, which is also a namespace object for mathematical constants and functions, or to <a href="intl"><code>Intl</code></a> which is the namespace object for internationalization constructors and other language-sensitive functions.</p>
+<h2 id="description">Description</h2>
+<p>The primary uses for the <code>WebAssembly</code> object are:</p>
+<ul>
+<li>Loading WebAssembly code, using the <a href="webassembly/instantiate"><code>WebAssembly.instantiate()</code></a> function.</li>
+<li>Creating new memory and table instances via the <a href="webassembly/memory"><code>WebAssembly.Memory()</code></a>/<a href="webassembly/table"><code>WebAssembly.Table()</code></a> constructors.</li>
+<li>Providing facilities to handle errors that occur in WebAssembly via the <a href="webassembly/compileerror"><code>WebAssembly.CompileError()</code></a>/<a href="webassembly/linkerror"><code>WebAssembly.LinkError()</code></a>/<a href="webassembly/runtimeerror"><code>WebAssembly.RuntimeError()</code></a> constructors.</li>
+</ul>
+<h2 id="constructor-properties">Constructor properties</h2>
+<p><a href="webassembly/compileerror/compileerror"><code>WebAssembly.CompileError()</code></a><br />
+Indicates an error during WebAssembly decoding or validation.</p>
+<p><a href="webassembly/global/global"><code>WebAssembly.Global()</code></a><br />
+Represents a global variable instance, accessible from both JavaScript and importable/exportable across one or more <a href="webassembly/module"><code>WebAssembly.Module</code></a> instances. This allows dynamic linking of multiple modules.</p>
+<p><a href="webassembly/instance/instance"><code>WebAssembly.Instance()</code></a><br />
+Is a stateful, executable instance of a <a href="webassembly/module">WebAssembly.Module</a></p>
+<p><a href="webassembly/linkerror/linkerror"><code>WebAssembly.LinkError()</code></a><br />
+Indicates an error during module instantiation (besides <a href="https://webassembly.org/docs/semantics/#traps">traps</a> from the start function).</p>
+<p><a href="webassembly/memory/memory"><code>WebAssembly.Memory()</code></a><br />
+An object whose <a href="webassembly/memory/buffer"><code>buffer</code></a> property is a resizable <a href="arraybuffer">ArrayBuffer</a> that holds the raw bytes of memory accessed by a WebAssembly <code>Instance</code>.</p>
+<p><a href="webassembly/module/module"><code>WebAssembly.Module()</code></a><br />
+Contains stateless WebAssembly code that has already been compiled by the browser and can be efficiently <a href="https://developer.mozilla.org/en-US/docs/Web/API/Worker/postMessage">shared with Workers</a>, and instantiated multiple times.</p>
+<p><a href="webassembly/runtimeerror/runtimeerror"><code>WebAssembly.RuntimeError()</code></a><br />
+Error type that is thrown whenever WebAssembly specifies a <a href="https://webassembly.org/docs/semantics/#traps">trap</a>.</p>
+<p><a href="webassembly/table/table"><code>WebAssembly.Table()</code></a><br />
+An array-like structure representing a WebAssembly Table, which stores function references.</p>
+<h2 id="static-methods">Static methods</h2>
+<p><a href="webassembly/instantiate"><code>WebAssembly.instantiate()</code></a><br />
+The primary API for compiling and instantiating WebAssembly code, returning both a <code>Module</code> and its first <code>Instance</code>.</p>
+<p><a href="webassembly/instantiatestreaming"><code>WebAssembly.instantiateStreaming()</code></a><br />
+Compiles and instantiates a WebAssembly module directly from a streamed underlying source, returning both a <code>Module</code> and its first <code>Instance</code>.</p>
+<p><a href="webassembly/compile"><code>WebAssembly.compile()</code></a><br />
+Compiles a <a href="webassembly/module"><code>WebAssembly.Module</code></a> from WebAssembly binary code, leaving instantiation as a separate step.</p>
+<p><a href="webassembly/compilestreaming"><code>WebAssembly.compileStreaming()</code></a><br />
+compiles a <a href="webassembly/module"><code>WebAssembly.Module</code></a> directly from a streamed underlying source, leaving instantiation as a separate step.</p>
+<p><a href="webassembly/validate"><code>WebAssembly.validate()</code></a><br />
+Validates a given typed array of WebAssembly binary code, returning whether the bytes are valid WebAssembly code (<code>true</code>) or not (<code>false</code>).</p>
+<h2 id="examples">Examples</h2>
+<h3 id="stream-a-.wasm-module-then-compile-and-instantiate-it">Stream a .wasm module then compile and instantiate it</h3>
+<p>The following example (see our <a href="https://github.com/mdn/webassembly-examples/blob/master/js-api-examples/instantiate-streaming.html">instantiate-streaming.html</a> demo on GitHub, and <a href="https://mdn.github.io/webassembly-examples/js-api-examples/instantiate-streaming.html">view it live</a> also) directly streams a .wasm module from an underlying source then compiles and instantiates it, the promise fulfilling with a <code>ResultObject</code>. Because the <code>instantiateStreaming()</code> function accepts a promise for a <a href="https://developer.mozilla.org/en-US/docs/Web/API/Response"><code>Response</code></a> object, you can directly pass it a <a href="https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch"><code>WindowOrWorkerGlobalScope.fetch()</code></a> call, and it will pass the response into the function when it fulfills.</p>
+<pre><code>var importObject = { imports: { imported_func: arg =&gt; console.log(arg) } };
+
+WebAssembly.instantiateStreaming(fetch(&#39;simple.wasm&#39;), importObject)
+.then(obj =&gt; obj.instance.exports.exported_func());</code></pre>
+<p>The <code>ResultObject</code>’s instance member is then accessed, and the contained exported function invoked.</p>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://webassembly.github.io/spec/js-api/#webassembly-namespace">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) <br/></p>
+<span class="small">#webassembly-namespace</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>CompileError</code></p>
+<p>57</p>
+<p>16</p>
+<p>52</p>
+<p>Disabled in the Firefox 52 Extended Support Release (ESR).</p>
+<p>No</p>
+<p>44</p>
+<p>11</p>
+<p>57</p>
+<p>57</p>
+<p>52</p>
+<p>Disabled in the Firefox 52 Extended Support Release (ESR).</p>
+<p>43</p>
+<p>11</p>
+<p>7.0</p>
+<p><code>Global</code></p>
+<p>69</p>
+<p>79</p>
+<p>62</p>
+<p>No</p>
+<p>No</p>
+<p>13.1</p>
+<p>69</p>
+<p>69</p>
+<p>62</p>
+<p>No</p>
+<p>13.4</p>
+<p>10.0</p>
+<p><code>Instance</code></p>
+<p>57</p>
+<p>16</p>
+<p>52</p>
+<p>Disabled in the Firefox 52 Extended Support Release (ESR).</p>
+<p>No</p>
+<p>44</p>
+<p>11</p>
+<p>57</p>
+<p>57</p>
+<p>52</p>
+<p>Disabled in the Firefox 52 Extended Support Release (ESR).</p>
+<p>43</p>
+<p>11</p>
+<p>7.0</p>
+<p><code>LinkError</code></p>
+<p>57</p>
+<p>16</p>
+<p>52</p>
+<p>Disabled in the Firefox 52 Extended Support Release (ESR).</p>
+<p>No</p>
+<p>44</p>
+<p>11</p>
+<p>57</p>
+<p>57</p>
+<p>52</p>
+<p>Disabled in the Firefox 52 Extended Support Release (ESR).</p>
+<p>43</p>
+<p>11</p>
+<p>7.0</p>
+<p><code>Memory</code></p>
+<p>57</p>
+<p>16</p>
+<p>52</p>
+<p>Disabled in the Firefox 52 Extended Support Release (ESR).</p>
+<p>No</p>
+<p>44</p>
+<p>11</p>
+<p>57</p>
+<p>57</p>
+<p>52</p>
+<p>Disabled in the Firefox 52 Extended Support Release (ESR).</p>
+<p>43</p>
+<p>11</p>
+<p>7.0</p>
+<p><code>Module</code></p>
+<p>57</p>
+<p>16</p>
+<p>52</p>
+<p>Disabled in the Firefox 52 Extended Support Release (ESR).</p>
+<p>No</p>
+<p>44</p>
+<p>11</p>
+<p>57</p>
+<p>57</p>
+<p>52</p>
+<p>Disabled in the Firefox 52 Extended Support Release (ESR).</p>
+<p>43</p>
+<p>11</p>
+<p>7.0</p>
+<p><code>RuntimeError</code></p>
+<p>57</p>
+<p>16</p>
+<p>52</p>
+<p>Disabled in the Firefox 52 Extended Support Release (ESR).</p>
+<p>No</p>
+<p>44</p>
+<p>11</p>
+<p>57</p>
+<p>57</p>
+<p>52</p>
+<p>Disabled in the Firefox 52 Extended Support Release (ESR).</p>
+<p>43</p>
+<p>11</p>
+<p>7.0</p>
+<p><code>Table</code></p>
+<p>57</p>
+<p>16</p>
+<p>52</p>
+<p>Disabled in the Firefox 52 Extended Support Release (ESR).</p>
+<p>No</p>
+<p>44</p>
+<p>11</p>
+<p>57</p>
+<p>57</p>
+<p>52</p>
+<p>Disabled in the Firefox 52 Extended Support Release (ESR).</p>
+<p>43</p>
+<p>11</p>
+<p>7.0</p>
+<p><code>WebAssembly</code></p>
+<p>57</p>
+<p>16</p>
+<p>52</p>
+<p>Disabled in the Firefox 52 Extended Support Release (ESR).</p>
+<p>No</p>
+<p>44</p>
+<p>11</p>
+<p>57</p>
+<p>57</p>
+<p>52</p>
+<p>Disabled in the Firefox 52 Extended Support Release (ESR).</p>
+<p>43</p>
+<p>11</p>
+<p>7.0</p>
+<p><code>compile</code></p>
+<p>57</p>
+<p>16</p>
+<p>52</p>
+<p>Disabled in the Firefox 52 Extended Support Release (ESR).</p>
+<p>No</p>
+<p>44</p>
+<p>11</p>
+<p>57</p>
+<p>57</p>
+<p>52</p>
+<p>Disabled in the Firefox 52 Extended Support Release (ESR).</p>
+<p>43</p>
+<p>11</p>
+<p>7.0</p>
+<p><code>compileStreaming</code></p>
+<p>61</p>
+<p>16</p>
+<p>58</p>
+<p>No</p>
+<p>47</p>
+<p>No</p>
+<p>61</p>
+<p>61</p>
+<p>58</p>
+<p>45</p>
+<p>No</p>
+<p>8.0</p>
+<p><code>instantiate</code></p>
+<p>57</p>
+<p>16</p>
+<p>52</p>
+<p>Disabled in the Firefox 52 Extended Support Release (ESR).</p>
+<p>No</p>
+<p>44</p>
+<p>11</p>
+<p>57</p>
+<p>57</p>
+<p>52</p>
+<p>Disabled in the Firefox 52 Extended Support Release (ESR).</p>
+<p>43</p>
+<p>11</p>
+<p>7.0</p>
+<p><code>instantiateStreaming</code></p>
+<p>61</p>
+<p>16</p>
+<p>58</p>
+<p>No</p>
+<p>47</p>
+<p>No</p>
+<p>61</p>
+<p>61</p>
+<p>58</p>
+<p>45</p>
+<p>No</p>
+<p>8.0</p>
+<p><code>validate</code></p>
+<p>57</p>
+<p>16</p>
+<p>52</p>
+<p>Disabled in the Firefox 52 Extended Support Release (ESR).</p>
+<p>No</p>
+<p>44</p>
+<p>11</p>
+<p>57</p>
+<p>57</p>
+<p>52</p>
+<p>Disabled in the Firefox 52 Extended Support Release (ESR).</p>
+<p>43</p>
+<p>11</p>
+<p>7.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/WebAssembly">WebAssembly</a> overview page</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts">WebAssembly concepts</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API">Using the WebAssembly JavaScript API</a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly</a></p>
+</body>
+</html>

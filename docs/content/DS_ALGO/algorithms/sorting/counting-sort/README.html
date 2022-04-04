@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="counting-sort">Counting Sort</h1>
+<p>In computer science, <strong>counting sort</strong> is an algorithm for sorting a collection of objects according to keys that are small integers; that is, it is an integer sorting algorithm. It operates by counting the number of objects that have each distinct key value, and using arithmetic on those counts to determine the positions of each key value in the output sequence. Its running time is linear in the number of items and the difference between the maximum and minimum key values, so it is only suitable for direct use in situations where the variation in keys is not significantly greater than the number of items. However, it is often used as a subroutine in another sorting algorithm, radix sort, that can handle larger keys more efficiently.</p>
+<p>Because counting sort uses key values as indexes into an array, it is not a comparison sort, and the <code>Ω(n log n)</code> lower bound for comparison sorting does not apply to it. Bucket sort may be used for many of the same tasks as counting sort, with a similar time analysis; however, compared to counting sort, bucket sort requires linked lists, dynamic arrays or a large amount of preallocated memory to hold the sets of items within each bucket, whereas counting sort instead stores a single number (the count of items) per bucket.</p>
+<p>Counting sorting works best when the range of numbers for each array element is very small.</p>
+<h2 id="algorithm">Algorithm</h2>
+<p><strong>Step I</strong></p>
+<p>In first step we calculate the count of all the elements of the input array <code>A</code>. Then Store the result in the count array <code>C</code>. The way we count is depicted below.</p>
+<figure>
+<img src="https://3.bp.blogspot.com/-jJchly1BkTc/WLGqCFDdvCI/AAAAAAAAAHA/luljAlz2ptMndIZNH0KLTTuQMNsfzDeFQCLcB/s1600/CSortUpdatedStepI.gif" alt="Counting Sort" /><figcaption>Counting Sort</figcaption>
+</figure>
+<p><strong>Step II</strong></p>
+<p>In second step we calculate how many elements exist in the input array <code>A</code> which are less than or equals for the given index. <code>Ci</code> = numbers of elements less than or equals to <code>i</code> in input array.</p>
+<figure>
+<img src="https://1.bp.blogspot.com/-1vFu-VIRa9Y/WLHGuZkdF3I/AAAAAAAAAHs/8jKu2dbQee4ap9xlVcNsILrclqw0UxAVACLcB/s1600/Step-II.png" alt="Counting Sort" /><figcaption>Counting Sort</figcaption>
+</figure>
+<p><strong>Step III</strong></p>
+<p>In this step we place the input array <code>A</code> element at sorted position by taking help of constructed count array <code>C</code> ,i.e what we constructed in step two. We used the result array <code>B</code> to store the sorted elements. Here we handled the index of <code>B</code> start from zero.</p>
+<figure>
+<img src="https://1.bp.blogspot.com/-xPqylngqASY/WLGq3p9n9vI/AAAAAAAAAHM/JHdtXAkJY8wYzDMBXxqarjmhpPhM0u8MACLcB/s1600/ResultArrayCS.gif" alt="Counting Sort" /><figcaption>Counting Sort</figcaption>
+</figure>
+<h2 id="complexity">Complexity</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Name</th>
+<th style="text-align: center;">Best</th>
+<th style="text-align: center;">Average</th>
+<th style="text-align: center;">Worst</th>
+<th style="text-align: center;">Memory</th>
+<th style="text-align: center;">Stable</th>
+<th style="text-align: left;">Comments</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Counting sort</strong></td>
+<td style="text-align: center;">n + r</td>
+<td style="text-align: center;">n + r</td>
+<td style="text-align: center;">n + r</td>
+<td style="text-align: center;">n + r</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: left;">r - biggest number in array</td>
+</tr>
+</tbody>
+</table>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Counting_sort">Wikipedia</a></li>
+<li><a href="https://www.youtube.com/watch?v=OKd534EWcdk&amp;index=61&amp;t=0s&amp;list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8">YouTube</a></li>
+<li><a href="https://efficientalgorithms.blogspot.com/2016/09/lenear-sorting-counting-sort.html">EfficientAlgorithms</a></li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>block</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="block">block</h1>
+<p>A <strong>block statement</strong> (or <strong>compound statement</strong> in other languages) is used to group zero or more statements. The block is delimited by a pair of braces (“curly brackets”) and may optionally be <a href="label">labelled</a>:</p>
+<h2 id="syntax">Syntax</h2>
+<h3 id="block-statement">Block Statement</h3>
+<pre><code>{
+  StatementList
+}</code></pre>
+<h3 id="labelled-block-statement">Labelled Block Statement</h3>
+<pre><code>LabelIdentifier: {
+  StatementList
+}</code></pre>
+<p><code>StatementList</code><br />
+Statements grouped within the block statement.</p>
+<p><code>LabelIdentifier</code><br />
+An optional <a href="label">label</a> for visual identification or as a target for <a href="break"><code>break</code></a>.</p>
+<h2 id="description">Description</h2>
+<p>The block statement is often called <strong>compound statement</strong> in other languages. It allows you to use multiple statements where JavaScript expects only one statement. Combining statements into blocks is a common practice in JavaScript. The opposite behavior is possible using an <a href="empty">empty statement</a>, where you provide no statement, although one is required.</p>
+<p>Blocks are commonly used in association with <a href="if...else"><code>if...else</code></a> and <a href="for"><code>for</code></a> statements.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="block-scoping-rules-with-var-or-function-declaration-in-non-strict-mode">Block scoping rules with var or function declaration in non-strict mode</h3>
+<p>Variables declared with <code>var</code> or created by <a href="function">function declarations</a> in non-strict mode <strong>do not</strong> have block scope. Variables introduced within a block are scoped to the containing function or script, and the effects of setting them persist beyond the block itself. In other words, block statements do not introduce a scope. For example:</p>
+<pre><code>var x = 1;
+{
+  var x = 2;
+}
+console.log(x); // logs 2</code></pre>
+<p>This logs 2 because the <code>var x</code> statement within the block is in the same scope as the <code>var x</code> statement before the block.</p>
+<p>In non-strict code, function declarations inside blocks behave strangely. Do not use them.</p>
+<h3 id="block-scoping-rules-with-let-const-or-function-declaration-in-strict-mode">Block scoping rules with let, const or function declaration in strict mode</h3>
+<p>By contrast, identifiers declared with <a href="let"><code>let</code></a> and <a href="const"><code>const</code></a> <strong>do have</strong> block scope:</p>
+<pre><code>let x = 1;
+{
+  let x = 2;
+}
+console.log(x); // logs 1</code></pre>
+<p>The <code>x = 2</code> is limited in scope to the block in which it was defined.</p>
+<p>The same is true of <code>const</code>:</p>
+<pre><code>const c = 1;
+{
+  const c = 2;
+}
+console.log(c); // logs 1 and does not throw SyntaxError...</code></pre>
+<p>Note that the block-scoped <code>const c = 2</code> <em>does not</em> throw a <code>SyntaxError: Identifier 'c' has already been declared</code> because it can be declared uniquely within the block.</p>
+<p>In <a href="../strict_mode">strict mode</a>, starting with ES2015, functions inside blocks are scoped to that block. Prior to ES2015, block-level functions were forbidden in strict mode.</p>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-block">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-block</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>block</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>11</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="while"><code>while</code></a></li>
+<li><a href="if...else"><code>if...else</code></a></li>
+<li><a href="let"><code>let</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/block" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/block</a></p>
+</body>
+</html>

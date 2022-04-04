@@ -1,8 +1,10 @@
-# Promise.reject()
+Promise.reject()
+================
 
 The `Promise.reject()` method returns a `Promise` object that is rejected with a given reason.
 
-## Syntax
+Syntax
+------
 
     Promise.reject(reason);
 
@@ -15,11 +17,13 @@ Reason why this `Promise` rejected.
 
 A [`Promise`](../promise) that is rejected with the given reason.
 
-## Description
+Description
+-----------
 
 The static `Promise.reject` function returns a `Promise` that is rejected. For debugging purposes and selective error catching, it is useful to make `reason` an `instanceof` [`Error`](../error).
 
-## Examples
+Examples
+--------
 
 ### Using the static Promise.reject() method
 
@@ -29,14 +33,14 @@ The static `Promise.reject` function returns a `Promise` that is rejected. For d
       console.error(error); // Stacktrace
     });
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.reject">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-promise.reject</span></td></tr></tbody></table>
 
-<span class="small">#sec-promise.reject</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -92,10 +96,10 @@ No
 
 2.0
 
-## See also
+See also
+--------
 
 -   [`Promise`](../promise)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/reject" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/reject</a>

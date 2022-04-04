@@ -1,8 +1,10 @@
-# String.prototype.split()
+String.prototype.split()
+========================
 
-The `split()` method divides a [`String`](../string) into an ordered list of substrings, puts these substrings into an array, and returns the array. The division is done by searching for a pattern; where the pattern is provided as the first parameter in the method's call.
+The `split()` method divides a [`String`](../string) into an ordered list of substrings, puts these substrings into an array, and returns the array. The division is done by searching for a pattern; where the pattern is provided as the first parameter in the method’s call.
 
-## Syntax
+Syntax
+------
 
     split()
     split(separator)
@@ -16,10 +18,10 @@ The pattern describing where each split should occur. The `separator` can be a s
 -   The simplest case is when `separator` is just a single character; this is used to split a delimited string. For example, a string containing tab separated values (TSV) could be parsed by passing a tab character as the separator, like this: `myString.split("\t")`.
 -   If `separator` contains multiple characters, that entire character sequence must be found in order to split.
 -   If `separator` is omitted or does not occur in `str`, the returned array contains one element consisting of the entire string.
--   If `separator` appears at the beginning (or end) of the string, it still has the effect of splitting. The result is an empty (i.e. zero length) string, which appears at the first (or last) position of the returned array.
--   If `separator` is an empty string (`""`), `str` is converted to an array of each of its UTF-16 "characters".
+-   If `separator` appears at the beginning (or end) of the string, it still has the effect of splitting. The result is an empty (i.e. zero length) string, which appears at the first (or last) position of the returned array.
+-   If `separator` is an empty string (`""`), `str` is converted to an array of each of its UTF-16 “characters”.
 
-**Warning:** When the empty string (`""`) is used as a separator, the string is **not** split by _user-perceived characters_ ([grapheme clusters](https://unicode.org/reports/tr29/#Grapheme_Cluster_Boundaries)) or unicode characters (codepoints), but by UTF-16 codeunits. This destroys [surrogate pairs](https://unicode.org/faq/utf_bom.html#utf16-2). See ["How do you get a string to a character array in JavaScript?" on StackOverflow](https://stackoverflow.com/a/34717402).
+**Warning:** When the empty string (`""`) is used as a separator, the string is **not** split by *user-perceived characters* ([grapheme clusters](https://unicode.org/reports/tr29/#Grapheme_Cluster_Boundaries)) or unicode characters (codepoints), but by UTF-16 codeunits. This destroys [surrogate pairs](https://unicode.org/faq/utf_bom.html#utf16-2). See [“How do you get a string to a character array in JavaScript?” on StackOverflow](https://stackoverflow.com/a/34717402).
 
 `limit` <span class="badge inline optional">Optional</span>  
 A non-negative integer specifying a limit on the number of substrings to be included in the array. If provided, splits the string at each occurrence of the specified `separator`, but stops when `limit` entries have been placed in the array. Any leftover text is not included in the array at all.
@@ -31,7 +33,8 @@ A non-negative integer specifying a limit on the number of substrings to be incl
 
 An [`Array`](../array) of strings, split at each point where the `separator` occurs in the given string.
 
-## Description
+Description
+-----------
 
 When found, `separator` is removed from the string, and the substrings are returned in an array.
 
@@ -39,7 +42,8 @@ If `separator` is a regular expression with capturing parentheses, then each tim
 
 If the separator is an array, then that Array is coerced to a String and used as a separator.
 
-## Examples
+Examples
+--------
 
 ### Using `split()`
 
@@ -119,7 +123,7 @@ This script displays the following:
 
 ### Splitting with a `RegExp` to include parts of the separator in the result
 
-If `separator` is a regular expression that contains capturing parentheses ` (``) `, matched results are included in the array.
+If `separator` is a regular expression that contains capturing parentheses ``` (``) ```, matched results are included in the array.
 
     const myString = 'Hello 1 word. Sentence number 2.'
     const splits = myString.split(/(\d)/)
@@ -142,22 +146,22 @@ This script displays the following:
 
     // split() returns an array on which reverse() and join() can be applied
 
-It doesn't work if the string contains grapheme clusters, even when using a unicode-aware split. (Use, for example, [esrever](https://github.com/mathiasbynens/esrever) instead.)
+It doesn’t work if the string contains grapheme clusters, even when using a unicode-aware split. (Use, for example, [esrever](https://github.com/mathiasbynens/esrever) instead.)
 
     const str = 'résumé'
     const strReverse = str.split(/(?:)/u).reverse().join('')
     // => "́emuśer"
 
-**Bonus:** use [`===`](<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#identity_strict_equality_(===)>) operator to test if the original string was a palindrome.
+**Bonus:** use [`===`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#identity_strict_equality_(===)) operator to test if the original string was a palindrome.
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.split">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-string.prototype.split</span></td></tr></tbody></table>
 
-<span class="small">#sec-string.prototype.split</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -213,7 +217,8 @@ Samsung Internet
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`String.prototype.charAt()`](charat)
 -   [`String.prototype.indexOf()`](indexof)
@@ -221,6 +226,5 @@ Samsung Internet
 -   [`Array.prototype.join()`](../array/join)
 -   [Using regular expressions in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split</a>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="detect-cycle-in-graphs">Detect Cycle in Graphs</h1>
+<p>In graph theory, a <strong>cycle</strong> is a path of edges and vertices wherein a vertex is reachable from itself. There are several different types of cycles, principally a <strong>closed walk</strong> and a <strong>simple cycle</strong>.</p>
+<h2 id="definitions">Definitions</h2>
+<p>A <strong>closed walk</strong> consists of a sequence of vertices starting and ending at the same vertex, with each two consecutive vertices in the sequence adjacent to each other in the graph. In a directed graph, each edge must be traversed by the walk consistently with its direction: the edge must be oriented from the earlier of two consecutive vertices to the later of the two vertices in the sequence. The choice of starting vertex is not important: traversing the same cyclic sequence of edges from different starting vertices produces the same closed walk.</p>
+<p>A <strong>simple cycle may</strong> be defined either as a closed walk with no repetitions of vertices and edges allowed, other than the repetition of the starting and ending vertex, or as the set of edges in such a walk. The two definitions are equivalent in directed graphs, where simple cycles are also called directed cycles: the cyclic sequence of vertices and edges in a walk is completely determined by the set of edges that it uses. In undirected graphs the set of edges of a cycle can be traversed by a walk in either of two directions, giving two possible directed cycles for every undirected cycle. A circuit can be a closed walk allowing repetitions of vertices but not edges; however, it can also be a simple cycle, so explicit definition is recommended when it is used.</p>
+<h2 id="example">Example</h2>
+<figure>
+<img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Graph_cycle.gif" alt="Cycles" /><figcaption>Cycles</figcaption>
+</figure>
+<p>A graph with edges colored to illustrate <strong>path</strong> <code>H-A-B</code> (green), closed path or <strong>walk with a repeated vertex</strong> <code>B-D-E-F-D-C-B</code> (blue) and a <strong>cycle with no repeated edge</strong> or vertex <code>H-D-G-H</code> (red)</p>
+<h3 id="cycle-in-undirected-graph">Cycle in undirected graph</h3>
+<figure>
+<img src="https://www.geeksforgeeks.org/wp-content/uploads/cycleGraph.png" alt="Undirected Cycle" /><figcaption>Undirected Cycle</figcaption>
+</figure>
+<h3 id="cycle-in-directed-graph">Cycle in directed graph</h3>
+<figure>
+<img src="https://cdncontribute.geeksforgeeks.org/wp-content/uploads/cycle.png" alt="Directed Cycle" /><figcaption>Directed Cycle</figcaption>
+</figure>
+<h2 id="references">References</h2>
+<p>General information:</p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Cycle_(graph_theory)">Wikipedia</a></li>
+</ul>
+<p>Cycles in undirected graphs:</p>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/detect-cycle-undirected-graph/">Detect Cycle in Undirected Graph on GeeksForGeeks</a></li>
+<li><a href="https://www.youtube.com/watch?v=n_t0a_8H8VY&amp;list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8">Detect Cycle in Undirected Graph Algorithm on YouTube</a></li>
+</ul>
+<p>Cycles in directed graphs:</p>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/detect-cycle-in-a-graph/">Detect Cycle in Directed Graph on GeeksForGeeks</a></li>
+<li><a href="https://www.youtube.com/watch?v=rKQaZuoUR4M&amp;list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8">Detect Cycle in Directed Graph Algorithm on YouTube</a></li>
+</ul>
+</body>
+</html>

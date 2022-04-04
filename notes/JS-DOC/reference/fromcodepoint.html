@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>fromcodepoint</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="string.fromcodepoint">String.fromCodePoint()</h1>
+<p>The static <code>String.fromCodePoint()</code> method returns a string created by using the specified sequence of code points.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>String.fromCodePoint(num1)
+String.fromCodePoint(num1, num2)
+String.fromCodePoint(num1, num2, ..., numN)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>num1, ..., numN</code><br />
+A sequence of code points.</p>
+<h3 id="return-value">Return value</h3>
+<p>A string created by using the specified sequence of code points.</p>
+<h3 id="exceptions">Exceptions</h3>
+<ul>
+<li>A <a href="../../errors/not_a_codepoint"><code>RangeError</code></a> is thrown if an invalid Unicode code point is given (e.g. <code>"RangeError: NaN is not a valid code point"</code>).</li>
+</ul>
+<h2 id="description">Description</h2>
+<p>This method returns a string (and <em>not</em> a <a href="../string"><code>String</code></a> object).</p>
+<p>Because <code>fromCodePoint()</code> is a static method of <a href="../string"><code>String</code></a>, you must call it as <code>String.fromCodePoint()</code>, rather than as a method of a <a href="../string"><code>String</code></a> object you created.</p>
+<h2 id="polyfill">Polyfill</h2>
+<p>The <code>String.fromCodePoint()</code> method has been added to ECMAScript 2015 and may not be supported in all web browsers or environments yet.</p>
+<p>Use the code below for a polyfill:</p>
+<pre><code>if (!String.fromCodePoint) (function(stringFromCharCode) {
+    var fromCodePoint = function(_) {
+      var codeUnits = [], codeLen = 0, result = &quot;&quot;;
+      for (var index=0, len = arguments.length; index !== len; ++index) {
+        var codePoint = +arguments[index];
+        // correctly handles all cases including `NaN`, `-Infinity`, `+Infinity`
+        // The surrounding `!(...)` is required to correctly handle `NaN` cases
+        // The (codePoint&gt;&gt;&gt;0) === codePoint clause handles decimals and negatives
+        if (!(codePoint &lt; 0x10FFFF &amp;&amp; (codePoint&gt;&gt;&gt;0) === codePoint))
+          throw RangeError(&quot;Invalid code point: &quot; + codePoint);
+        if (codePoint &lt;= 0xFFFF) { // BMP code point
+          codeLen = codeUnits.push(codePoint);
+        } else { // Astral code point; split in surrogate halves
+          // https://mathiasbynens.be/notes/javascript-encoding#surrogate-formulae
+          codePoint -= 0x10000;
+          codeLen = codeUnits.push(
+            (codePoint &gt;&gt; 10) + 0xD800,  // highSurrogate
+            (codePoint % 0x400) + 0xDC00 // lowSurrogate
+          );
+        }
+        if (codeLen &gt;= 0x3fff) {
+          result += stringFromCharCode.apply(null, codeUnits);
+          codeUnits.length = 0;
+        }
+      }
+      return result + stringFromCharCode.apply(null, codeUnits);
+    };
+    try { // IE 8 only supports `Object.defineProperty` on DOM elements
+      Object.defineProperty(String, &quot;fromCodePoint&quot;, {
+        &quot;value&quot;: fromCodePoint, &quot;configurable&quot;: true, &quot;writable&quot;: true
+      });
+    } catch(e) {
+      String.fromCodePoint = fromCodePoint;
+    }
+}(String.fromCharCode));</code></pre>
+<h2 id="examples">Examples</h2>
+<h3 id="using-fromcodepoint">Using <code>fromCodePoint()</code></h3>
+<p>Valid input:</p>
+<pre><code>String.fromCodePoint(42);       // &quot;*&quot;
+String.fromCodePoint(65, 90);   // &quot;AZ&quot;
+String.fromCodePoint(0x404);    // &quot;\u0404&quot; == &quot;Є&quot;
+String.fromCodePoint(0x2F804);  // &quot;\uD87E\uDC04&quot;
+String.fromCodePoint(194564);   // &quot;\uD87E\uDC04&quot;
+String.fromCodePoint(0x1D306, 0x61, 0x1D307); // &quot;\uD834\uDF06a\uD834\uDF07&quot;</code></pre>
+<p>Invalid input:</p>
+<pre><code>String.fromCodePoint(&#39;_&#39;);      // RangeError
+String.fromCodePoint(Infinity); // RangeError
+String.fromCodePoint(-1);       // RangeError
+String.fromCodePoint(3.14);     // RangeError
+String.fromCodePoint(3e-2);     // RangeError
+String.fromCodePoint(NaN);      // RangeError</code></pre>
+<h3 id="compared-to-fromcharcode">Compared to <code>fromCharCode()</code></h3>
+<p><a href="fromcharcode"><code>String.fromCharCode()</code></a> cannot return supplementary characters (i.e. code points <code>0x010000</code> - <code>0x10FFFF</code>) by specifying their code point. Instead, it requires the UTF-16 surrogate pair in order to return a supplementary character:</p>
+<pre><code>String.fromCharCode(0xD83C, 0xDF03); // Code Point U+1F303 &quot;Night with
+String.fromCharCode(55356, 57091);   // Stars&quot; == &quot;\uD83C\uDF03&quot;</code></pre>
+<p><code>String.fromCodePoint()</code>, on the other hand, can return 4-byte supplementary characters, as well as the more common 2-byte BMP characters, by specifying their code point (which is equivalent to the UTF-32 code unit):</p>
+<pre><code>String.fromCodePoint(0x1F303); // or 127747 in decimal</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-string.fromcodepoint">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-string.fromcodepoint</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>fromCodePoint</code></p>
+<p>41</p>
+<p>12</p>
+<p>29</p>
+<p>No</p>
+<p>28</p>
+<p>10</p>
+<p>41</p>
+<p>41</p>
+<p>29</p>
+<p>28</p>
+<p>10</p>
+<p>4.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="fromcharcode"><code>String.fromCharCode()</code></a></li>
+<li><a href="charat"><code>String.prototype.charAt()</code></a></li>
+<li><a href="codepointat"><code>String.prototype.codePointAt()</code></a></li>
+<li><a href="charcodeat"><code>String.prototype.charCodeAt()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCodePoint" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCodePoint</a></p>
+</body>
+</html>

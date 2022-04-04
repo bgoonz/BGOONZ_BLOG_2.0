@@ -1,8 +1,3 @@
----
-title: Sequel
-category: Ruby libraries
----
-
 ### Open a database
 
     require 'rubygems'
@@ -67,7 +62,7 @@ Without a filename argument, the sqlite adapter will setup a new sqlite database
     dataset.inject(0){|sum, r| sum + r[:value]}
     dataset.sum(:value) # same as above
 
-### Filtering (see also doc/dataset_filtering.rdoc)
+### Filtering (see also doc/dataset\_filtering.rdoc)
 
 #### Equality
 
@@ -186,7 +181,7 @@ Without a filename argument, the sqlite adapter will setup a new sqlite database
       dataset.insert(:first_name => 'Farm', :last_name => 'Boy')
     end # Either both are inserted or neither are inserted
 
-Database#transaction is re-entrant:
+Database\#transaction is re-entrant:
 
     DB.transaction do # BEGIN issued only here
       DB.transaction
@@ -225,7 +220,7 @@ Savepoints can be used if the database supports it:
     dataset.columns #=> array of columns in the result set, does a SELECT
     DB.schema(:items) => [[:id, {:type=>:integer, ...}], [:name, {:type=>:string, ...}], ...]
 
----
+------------------------------------------------------------------------
 
 ### Documents
 
@@ -280,7 +275,7 @@ Savepoints can be used if the database supports it:
         ds.filter { copies_sold > 50000 }
       end
 
-Provided by many_to_many
+Provided by many\_to\_many
 
     Deal[1].images
     Deal[1].add_image

@@ -1,6 +1,8 @@
-# SSH Cheatsheet
+SSH Cheatsheet
+==============
 
-## SSH Cheat Sheet
+SSH Cheat Sheet
+---------------
 
 #### Login via SSH with password (LOCAL SERVER)
 
@@ -30,9 +32,9 @@
 
 ### DIGITAL OCEAN
 
-> Create account->create droplet
+> Create account-&gt;create droplet
 
-#### Create Keys For Droplet (id_rsa_do)
+#### Create Keys For Droplet (id\_rsa\_do)
 
 `$ ssh-keygen -t rsa`
 
@@ -42,7 +44,7 @@
 
 `$ ssh root@doserver`
 
-#### If it doesn't work
+#### If it doesn’t work
 
 `$ ssh-add ~/.ssh/id_rsa_do` (or whatever name you used)
 
@@ -82,7 +84,7 @@
 
 `$ touch authorized_keys`
 
-`> sudo nano authorized_keys` (paste in the id_rsa_do.pub key, exit and log in as bryan)
+`> sudo nano authorized_keys` (paste in the id\_rsa\_do.pub key, exit and log in as bryan)
 
 #### Disable root password login
 
@@ -114,7 +116,7 @@
 
 #### Generate Github Key(On Server)
 
-`$ ssh-keygen -t rsa` (id_rsa_github or whatever you want)
+`$ ssh-keygen -t rsa` (id\_rsa\_github or whatever you want)
 
 ### Add new key
 
@@ -150,7 +152,8 @@
 
 `$ sudo mv -v /home/bryan/react_otka_auth/build/* /var/www/html`
 
-## SSH Cheat Sheet
+SSH Cheat Sheet
+---------------
 
 #### Login via SSH with password (LOCAL SERVER)
 
@@ -180,9 +183,9 @@
 
 ### DIGITAL OCEAN
 
-> Create account->create droplet
+> Create account-&gt;create droplet
 
-#### Create Keys For Droplet (id_rsa_do)
+#### Create Keys For Droplet (id\_rsa\_do)
 
 `$ ssh-keygen -t rsa`
 
@@ -192,7 +195,7 @@
 
 `$ ssh root@doserver`
 
-#### If it doesn't work
+#### If it doesn’t work
 
 `$ ssh-add ~/.ssh/id_rsa_do` (or whatever name you used)
 
@@ -232,7 +235,7 @@
 
 `$ touch authorized_keys`
 
-`> sudo nano authorized_keys` (paste in the id_rsa_do.pub key, exit and log in as bryan)
+`> sudo nano authorized_keys` (paste in the id\_rsa\_do.pub key, exit and log in as bryan)
 
 #### Disable root password login
 
@@ -264,7 +267,7 @@
 
 #### Generate Github Key(On Server)
 
-`$ ssh-keygen -t rsa` (id_rsa_github or whatever you want)
+`$ ssh-keygen -t rsa` (id\_rsa\_github or whatever you want)
 
 ### Add new key
 

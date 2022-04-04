@@ -1,75 +1,43 @@
----
-title: title
-subtitle: subtitle
-date: '2022-01-03'
-thumb_img_alt: lorem-ipsum
-content_img_alt: lorem-ipsum
-excerpt: lorem-ipsum
-seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
-template: post
-thumb_img_path: images/css-72a655a7.jpg
----
+subtitle
 
----
+2022-01-03
 
-title: Atom
-category: Apps
+------------------------------------------------------------------------
 
----
+title: Atom category: Apps
 
-## Shortcuts
+------------------------------------------------------------------------
+
+Shortcuts
+---------
 
 ### Tree
 
-| Shortcut | Description         |
-| -------- | ------------------- |
-| `⌘\`     | Toggle tree         |
-| `⌘⇧\`    | Reveal current file |
+<table><thead><tr class="header"><th>Shortcut</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>⌘\</code></td><td>Toggle tree</td></tr><tr class="even"><td><code>⌘⇧\</code></td><td>Reveal current file</td></tr></tbody></table>
 
 {: .-shortcuts}
 
 ### Comments
 
-| Shortcut | Description     |
-| -------- | --------------- |
-| `⌘/`     | Toggle comments |
+<table><thead><tr class="header"><th>Shortcut</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>⌘/</code></td><td>Toggle comments</td></tr></tbody></table>
 
 {: .-shortcuts}
 
 ### View
 
-| Shortcut | Description            |
-| -------- | ---------------------- |
-| `⌘k` `←` | Split pane to the left |
-| ---      | ---                    |
-| `⌘⌥=`    | Grow pane              |
-| `⌘⌥-`    | Shrink pane            |
-| ---      | ---                    |
-| `^⇧←`    | Move tab to left       |
+<table><thead><tr class="header"><th>Shortcut</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>⌘k</code> <code>←</code></td><td>Split pane to the left</td></tr><tr class="even"><td>—</td><td>—</td></tr><tr class="odd"><td><code>⌘⌥=</code></td><td>Grow pane</td></tr><tr class="even"><td><code>⌘⌥-</code></td><td>Shrink pane</td></tr><tr class="odd"><td>—</td><td>—</td></tr><tr class="even"><td><code>^⇧←</code></td><td>Move tab to left</td></tr></tbody></table>
 
 {: .-shortcuts}
 
 ### Bracket matcher
 
-| Shortcut | Description                    |
-| -------- | ------------------------------ |
-| `^m`     | Go to matching bracket         |
-| `^]`     | Remove brackets from selection |
-| `^⌘m`    | Select inside brackets         |
-| `⌥⌘.`    | Close tag                      |
+<table><thead><tr class="header"><th>Shortcut</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>^m</code></td><td>Go to matching bracket</td></tr><tr class="even"><td><code>^]</code></td><td>Remove brackets from selection</td></tr><tr class="odd"><td><code>^⌘m</code></td><td>Select inside brackets</td></tr><tr class="even"><td><code>⌥⌘.</code></td><td>Close tag</td></tr></tbody></table>
 
 {: .-shortcuts}
 
 ### Symbols view
 
-| Shortcut | Description                      |
-| -------- | -------------------------------- |
-| `^⌥↓`    | Jump to declaration under cursor |
-| `^⇧r`    | Show tags                        |
+<table><thead><tr class="header"><th>Shortcut</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>^⌥↓</code></td><td>Jump to declaration under cursor</td></tr><tr class="even"><td><code>^⇧r</code></td><td>Show tags</td></tr></tbody></table>
 
 {: .-shortcuts}
 
@@ -79,52 +47,32 @@ See: [Symbols view](https://atom.io/packages/symbols-view)
 
 ### Git
 
-| `^⇧9` | Show Git pane |
-| `^⇧8` | Show GitHub pane |
+`^⇧9` | Show Git pane |  
+`^⇧8` | Show GitHub pane |
+
 {: .-shortcuts}
 
 ### Editing
 
-| Shortcut | Description    |
-| -------- | -------------- |
-| `⌘d`     | Select word    |
-| `⌘l`     | Select line    |
-| ---      | ---            |
-| `⌘↓`     | Move line down |
-| `⌘↑`     | Move line up   |
-| ---      | ---            |
-| `⌘⏎`     | New line below |
-| `⌘⇧⏎`    | New line above |
-| ---      | ---            |
-| `⌘⇧k`    | Delete line    |
-| `⌘⇧d`    | Duplicate line |
+<table><thead><tr class="header"><th>Shortcut</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>⌘d</code></td><td>Select word</td></tr><tr class="even"><td><code>⌘l</code></td><td>Select line</td></tr><tr class="odd"><td>—</td><td>—</td></tr><tr class="even"><td><code>⌘↓</code></td><td>Move line down</td></tr><tr class="odd"><td><code>⌘↑</code></td><td>Move line up</td></tr><tr class="even"><td>—</td><td>—</td></tr><tr class="odd"><td><code>⌘⏎</code></td><td>New line below</td></tr><tr class="even"><td><code>⌘⇧⏎</code></td><td>New line above</td></tr><tr class="odd"><td>—</td><td>—</td></tr><tr class="even"><td><code>⌘⇧k</code></td><td>Delete line</td></tr><tr class="odd"><td><code>⌘⇧d</code></td><td>Duplicate line</td></tr></tbody></table>
 
 {: .-shortcuts}
 
 ### Project
 
-| Shortcut | Description             |
-| -------- | ----------------------- |
-| `⌘⇧p`    | Command palette         |
-| `⌘⇧a`    | Add project folder      |
-| ---      | ---                     |
-| `⌘n`     | New file                |
-| `⌘⇧n`    | New window              |
-| ---      | ---                     |
-| `⌘f`     | Find in file            |
-| `⌘⇧f`    | Find in project         |
-| `⌘t`     | Search files in project |
+<table><thead><tr class="header"><th>Shortcut</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>⌘⇧p</code></td><td>Command palette</td></tr><tr class="even"><td><code>⌘⇧a</code></td><td>Add project folder</td></tr><tr class="odd"><td>—</td><td>—</td></tr><tr class="even"><td><code>⌘n</code></td><td>New file</td></tr><tr class="odd"><td><code>⌘⇧n</code></td><td>New window</td></tr><tr class="even"><td>—</td><td>—</td></tr><tr class="odd"><td><code>⌘f</code></td><td>Find in file</td></tr><tr class="even"><td><code>⌘⇧f</code></td><td>Find in project</td></tr><tr class="odd"><td><code>⌘t</code></td><td>Search files in project</td></tr></tbody></table>
 
 {: .-shortcuts}
 
-## Notes
+Notes
+-----
 
 ### ⌘
 
 -   For Windows and Linux, `⌘` is the `Control` key.
--   For macOS, it's the `Command` key.
+-   For macOS, it’s the `Command` key.
 
 ### ⌥
 
 -   For Windows and Linux, `⌥` is the `Alt` key.
--   For macOS, it's the `Option` key.
+-   For macOS, it’s the `Option` key.

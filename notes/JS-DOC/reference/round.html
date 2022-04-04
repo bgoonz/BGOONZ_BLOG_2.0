@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>round</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="math.round">Math.round()</h1>
+<p>The <code>Math.round()</code> function returns the value of a number rounded to the nearest integer.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>Math.round(x)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>x</code><br />
+A number.</p>
+<h3 id="return-value">Return value</h3>
+<p>The value of the given number rounded to the nearest integer.</p>
+<h2 id="description">Description</h2>
+<p>If the fractional portion of the argument is greater than 0.5, the argument is rounded to the integer with the next higher absolute value. If it is less than 0.5, the argument is rounded to the integer with the lower absolute value. If the fractional portion is exactly 0.5, the argument is rounded to the next integer in the direction of +∞. <strong>Note that this differs from many languages’ <code>round()</code> functions, which often round this case to the next integer <em>away from zero</em></strong>, instead giving a different result in the case of negative numbers with a fractional part of exactly 0.5.</p>
+<p>Because <code>round()</code> is a static method of <code>Math</code>, you always use it as <code>Math.round()</code>, rather than as a method of a <code>Math</code> object you created (<code>Math</code> has no constructor).</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-round">Using round</h3>
+<pre><code>Math.round( 20.49); //  20
+Math.round( 20.5 ); //  21
+Math.round( 42   ); //  42
+Math.round(-20.5 ); // -20
+Math.round(-20.51); // -21</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-math.round">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-math.round</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>round</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../number/toprecision"><code>Number.toPrecision()</code></a></li>
+<li><a href="../number/tofixed"><code>Number.toFixed()</code></a></li>
+<li><a href="abs"><code>Math.abs()</code></a></li>
+<li><a href="ceil"><code>Math.ceil()</code></a></li>
+<li><a href="floor"><code>Math.floor()</code></a></li>
+<li><a href="sign"><code>Math.sign()</code></a></li>
+<li><a href="trunc"><code>Math.trunc()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round</a></p>
+</body>
+</html>

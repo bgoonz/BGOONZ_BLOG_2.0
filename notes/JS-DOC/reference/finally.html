@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>finally</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="promise.prototype.finally">Promise.prototype.finally()</h1>
+<p>The <code>finally()</code> method returns a <a href="../promise"><code>Promise</code></a>. When the promise is settled, i.e either fulfilled or rejected, the specified callback function is executed. This provides a way for code to be run whether the promise was fulfilled successfully or rejected once the <code>Promise</code> has been dealt with.</p>
+<p>This helps to avoid duplicating code in both the promise’s <a href="then"><code>then()</code></a> and <a href="catch"><code>catch()</code></a> handlers.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>p.finally(onFinally);
+
+p.finally(function() {
+   // settled (fulfilled or rejected)
+});</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>onFinally</code><br />
+A <a href="../function"><code>Function</code></a> called when the <code>Promise</code> is settled.</p>
+<h3 id="return-value">Return value</h3>
+<p>Returns a <a href="../promise"><code>Promise</code></a> whose <code>finally</code> handler is set to the specified function, <code>onFinally</code>.</p>
+<h2 id="description">Description</h2>
+<p>The <code>finally()</code> method can be useful if you want to do some processing or cleanup once the promise is settled, regardless of its outcome.</p>
+<p>The <code>finally()</code> method is very similar to calling <code>.then(onFinally, onFinally)</code> however there are a couple of differences:</p>
+<ul>
+<li>When creating a function inline, you can pass it once, instead of being forced to either declare it twice, or create a variable for it</li>
+<li>A <code>finally</code> callback will not receive any argument, since there’s no reliable means of determining if the promise was fulfilled or rejected. This use case is for precisely when you <em>do not care</em> about the rejection reason, or the fulfillment value, and so there’s no need to provide it. So for example:
+<ul>
+<li>Unlike <code>Promise.resolve(2).then(() =&gt; {}, () =&gt; {})</code> (which will be resolved with <code>undefined</code>), <code>Promise.resolve(2).finally(() =&gt; {})</code> will be resolved with <code>2</code>.</li>
+<li>Similarly, unlike <code>Promise.reject(3).then(() =&gt; {}, () =&gt; {})</code> (which will be fulfilled with <code>undefined</code>), <code>Promise.reject(3).finally(() =&gt; {})</code> will be rejected with <code>3</code>.</li>
+</ul></li>
+</ul>
+<p><strong>Note:</strong> A <code>throw</code> (or returning a rejected promise) in the <code>finally</code> callback will reject the new promise with the rejection reason specified when calling <code>throw</code>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-finally">Using finally</h3>
+<pre><code>let isLoading = true;
+
+fetch(myRequest).then(function(response) {
+    var contentType = response.headers.get(&quot;content-type&quot;);
+    if(contentType &amp;&amp; contentType.includes(&quot;application/json&quot;)) {
+      return response.json();
+    }
+    throw new TypeError(&quot;Oops, we haven&#39;t got JSON!&quot;);
+  })
+  .then(function(json) { /* process your JSON further */ })
+  .catch(function(error) { console.error(error); /* this line can also throw, e.g. when console = {} */ })
+  .finally(function() { isLoading = false; });</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-promise.prototype.finally">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-promise.prototype.finally</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>finally</code></p>
+<p>63</p>
+<p>18</p>
+<p>58</p>
+<p>No</p>
+<p>50</p>
+<p>11.1</p>
+<p>63</p>
+<p>63</p>
+<p>58</p>
+<p>46</p>
+<p>11.3</p>
+<p>8.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../promise"><code>Promise</code></a></li>
+<li><a href="then"><code>Promise.prototype.then()</code></a></li>
+<li><a href="catch"><code>Promise.prototype.catch()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/finally" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/finally</a></p>
+</body>
+</html>

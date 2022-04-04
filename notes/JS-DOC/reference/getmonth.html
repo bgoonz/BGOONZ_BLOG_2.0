@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>getmonth</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="date.prototype.getmonth">Date.prototype.getMonth()</h1>
+<p>The <code>getMonth()</code> method returns the month in the specified date according to local time, as a zero-based value (where zero indicates the first month of the year).</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>getMonth()</code></pre>
+<h3 id="return-value">Return value</h3>
+<p>An integer number, between 0 and 11, representing the month in the given date according to local time. 0 corresponds to January, 1 to February, and so on.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-getmonth">Using getMonth()</h3>
+<p>The second statement below assigns the value 11 to the variable <code>month</code>, based on the value of the <a href="../date"><code>Date</code></a> object <code>Xmas95</code>.</p>
+<pre><code>var Xmas95 = new Date(&#39;December 25, 1995 23:15:30&#39;);
+var month = Xmas95.getMonth();
+
+console.log(month); // 11</code></pre>
+<p><strong>Note:</strong> If needed, the full name of a month (<code>January</code> for example) can be obtained by using <code>Intl.DateTimeFormat()</code> with an <code>options</code> parameter. Using this method, internationalization is made easier:</p>
+<pre><code>var options = { month: &#39;long&#39;};
+console.log(new Intl.DateTimeFormat(&#39;en-US&#39;, options).format(Xmas95));
+// December
+console.log(new Intl.DateTimeFormat(&#39;de-DE&#39;, options).format(Xmas95));
+// Dezember</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-date.prototype.getmonth">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-date.prototype.getmonth</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>getMonth</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>4</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="getutcmonth"><code>Date.prototype.getUTCMonth()</code></a></li>
+<li><a href="setmonth"><code>Date.prototype.setMonth()</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getMonth" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getMonth</a></p>
+</body>
+</html>

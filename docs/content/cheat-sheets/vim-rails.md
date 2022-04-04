@@ -1,81 +1,51 @@
----
-title: Vim-rails
-category: Vim
-html_class: key-codes
----
+Alternate files
+---------------
 
-## Alternate files
-
-| `:A` | alternate file (test) |
-| `:R` | related file (controller/view) |
+`:A` | alternate file (test) |  
+`:R` | related file (controller/view) |
 
 ### What it does
 
-| .                     | :A                | :R              |
-| --------------------- | ----------------- | --------------- |
-| **Model**             | test/models/      | db/schema.rb    |
-| **Controller method** | test/controllers/ | app/views/      |
-| **View template**     | test/views/       | app/controllers |
+<table><thead><tr class="header"><th>.</th><th>:A</th><th>:R</th></tr></thead><tbody><tr class="odd"><td><strong>Model</strong></td><td>test/models/</td><td>db/schema.rb</td></tr><tr class="even"><td><strong>Controller method</strong></td><td>test/controllers/</td><td>app/views/</td></tr><tr class="odd"><td><strong>View template</strong></td><td>test/views/</td><td>app/controllers</td></tr></tbody></table>
 
-## Abbreviations
+Abbreviations
+-------------
 
 Type `:Rabbrev` for a full list.
 
-| Abbrev  | Expansion        |
-| ------- | ---------------- |
-| `AC::`  | ActionController |
-| `AR::`  | ActiveRecord     |
-| `AV::`  | ActionView       |
-| `...`   | ...              |
-| ---     | ---              |
-| `logd(` | logger.debug     |
-| `logi(` | logger.info      |
-| `...`   | ...              |
+<table><thead><tr class="header"><th>Abbrev</th><th>Expansion</th></tr></thead><tbody><tr class="odd"><td><code>AC::</code></td><td>ActionController</td></tr><tr class="even"><td><code>AR::</code></td><td>ActiveRecord</td></tr><tr class="odd"><td><code>AV::</code></td><td>ActionView</td></tr><tr class="even"><td><code>...</code></td><td>…</td></tr><tr class="odd"><td>—</td><td>—</td></tr><tr class="even"><td><code>logd(</code></td><td>logger.debug</td></tr><tr class="odd"><td><code>logi(</code></td><td>logger.info</td></tr><tr class="even"><td><code>...</code></td><td>…</td></tr></tbody></table>
 
 {:.no-head.greycode}
 
 ### Model
 
-| Abbrev   | Expansion                 |
-| -------- | ------------------------- |
-| `bt(`    | `belongs_to`              |
-| `hm(`    | `has_many`                |
-| `ho(`    | `has_one`                 |
-| `habtm(` | `has_and_belongs_to_many` |
+<table><thead><tr class="header"><th>Abbrev</th><th>Expansion</th></tr></thead><tbody><tr class="odd"><td><code>bt(</code></td><td><code>belongs_to</code></td></tr><tr class="even"><td><code>hm(</code></td><td><code>has_many</code></td></tr><tr class="odd"><td><code>ho(</code></td><td><code>has_one</code></td></tr><tr class="even"><td><code>habtm(</code></td><td><code>has_and_belongs_to_many</code></td></tr></tbody></table>
 
 {:.no-head.greycode}
 
 ### Controllers
 
-| Abbrev | Expansion       |
-| ------ | --------------- |
-| `pa[`  | params          |
-| `re(`  | redirect_to     |
-| `rp(`  | render partial: |
-| `rst(` | respond_to      |
+<table><thead><tr class="header"><th>Abbrev</th><th>Expansion</th></tr></thead><tbody><tr class="odd"><td><code>pa[</code></td><td>params</td></tr><tr class="even"><td><code>re(</code></td><td>redirect_to</td></tr><tr class="odd"><td><code>rp(</code></td><td>render partial:</td></tr><tr class="even"><td><code>rst(</code></td><td>respond_to</td></tr></tbody></table>
 
 {:.no-head.greycode}
 
 ### Views
 
-| Abbrev  | Expansion                   |
-| ------- | --------------------------- |
-| `dotiw` | `distance_of_time_in_words` |
-| `taiw`  | `time_ago_in_words`         |
+<table><thead><tr class="header"><th>Abbrev</th><th>Expansion</th></tr></thead><tbody><tr class="odd"><td><code>dotiw</code></td><td><code>distance_of_time_in_words</code></td></tr><tr class="even"><td><code>taiw</code></td><td><code>time_ago_in_words</code></td></tr></tbody></table>
 
 {:.no-head.greycode}
 
-## Extracting partials
+Extracting partials
+-------------------
 
-```rb
-# from view => app/views/home/_foo_partial.haml
-  :Rextract home/foo_partial
+    # from view => app/views/home/_foo_partial.haml
+      :Rextract home/foo_partial
 
-# from model => app/models/concerns/foo_concern.rb
-  :Rextract FooConcern
-```
+    # from model => app/models/concerns/foo_concern.rb
+      :Rextract FooConcern
 
-## Loading files
+Loading files
+-------------
 
 ### App
 
@@ -132,6 +102,7 @@ Type `:Rabbrev` for a full list.
     :Eenvironment                 # application.rb
     :Eenvironment development     # config/environments/*.rb
 
-## Reference
+Reference
+---------
 
 -   [vim-rails](https://github.com/tpope/vim-rails)

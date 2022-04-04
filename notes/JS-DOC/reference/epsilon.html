@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>epsilon</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="number.epsilon">Number.EPSILON</h1>
+<p>The <code>Number.EPSILON</code> property represents the difference between 1 and the smallest floating point number greater than 1.</p>
+<p>You do not have to create a <a href="../number"><code>Number</code></a> object to access this static property (use <code>Number.EPSILON</code>).</p>
+<p>Property attributes of <code>Number.EPSILON</code></p>
+<p>Writable</p>
+<p>no</p>
+<p>Enumerable</p>
+<p>no</p>
+<p>Configurable</p>
+<p>no</p>
+<h2 id="description">Description</h2>
+<p>The <code>EPSILON</code> property has a value of approximately <code>2.2204460492503130808472633361816E-16</code>, or <code>2-52</code>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="testing-equality">Testing equality</h3>
+<pre><code>x = 0.2;
+y = 0.3;
+z = 0.1;
+equal = (Math.abs(x - y + z) &lt; Number.EPSILON);</code></pre>
+<h2 id="polyfill">Polyfill</h2>
+<pre><code>if (Number.EPSILON === undefined) {
+    Number.EPSILON = Math.pow(2, -52);
+}</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-number.epsilon">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-number.epsilon</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>EPSILON</code></p>
+<p>34</p>
+<p>12</p>
+<p>25</p>
+<p>No</p>
+<p>21</p>
+<p>9</p>
+<p>≤37</p>
+<p>34</p>
+<p>25</p>
+<p>21</p>
+<p>9</p>
+<p>2.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li>The <a href="../number"><code>Number</code></a> object it belongs to</li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/EPSILON" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/EPSILON</a></p>
+</body>
+</html>

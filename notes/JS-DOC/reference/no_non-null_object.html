@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>no_non-null_object</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="typeerror-x-is-not-a-non-null-object">TypeError: “x” is not a non-null object</h1>
+<p>The JavaScript exception “is not a non-null object” occurs when an object is expected somewhere and wasn’t provided. <a href="../global_objects/null"><code>null</code></a> is not an object and won’t work.</p>
+<h2 id="message">Message</h2>
+<pre><code>TypeError: Invalid descriptor for property {x} (Edge)
+TypeError: &quot;x&quot; is not a non-null object (Firefox)
+TypeError: Property description must be an object: &quot;x&quot; (Chrome)
+TypeError: Invalid value used in weak set (Chrome)</code></pre>
+<h2 id="error-type">Error type</h2>
+<p><a href="../global_objects/typeerror"><code>TypeError</code></a></p>
+<h2 id="what-went-wrong">What went wrong?</h2>
+<p>An object is expected somewhere and wasn’t provided. <a href="../global_objects/null"><code>null</code></a> is not an object and won’t work. You must provide a proper object in the given situation.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="property-descriptor-expected">Property descriptor expected</h3>
+<p>When methods like <a href="../global_objects/object/create"><code>Object.create()</code></a> or <a href="../global_objects/object/defineproperty"><code>Object.defineProperty()</code></a> and <a href="../global_objects/object/defineproperties"><code>Object.defineProperties()</code></a> are used, the optional descriptor parameter expects a property descriptor object. Providing no object (like just a number), will throw an error:</p>
+<pre><code>Object.defineProperty({}, &#39;key&#39;, 1);
+// TypeError: 1 is not a non-null object
+
+Object.defineProperty({}, &#39;key&#39;, null);
+// TypeError: null is not a non-null object</code></pre>
+<p>A valid property descriptor object might look like this:</p>
+<pre><code>Object.defineProperty({}, &#39;key&#39;, { value: &#39;foo&#39;, writable: false });</code></pre>
+<h3 id="weakmap-and-weakset-objects-require-object-keys"><code>WeakMap</code> and <code>WeakSet</code> objects require object keys</h3>
+<p><a href="../global_objects/weakmap"><code>WeakMap</code></a> and <a href="../global_objects/weakset"><code>WeakSet</code></a> objects store object keys. You can’t use other types as keys.</p>
+<pre><code>var ws = new WeakSet();
+ws.add(&#39;foo&#39;);
+// TypeError: &quot;foo&quot; is not a non-null object</code></pre>
+<p>Use objects instead:</p>
+<pre><code>ws.add({foo: &#39;bar&#39;});
+ws.add(window);</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../global_objects/object/create"><code>Object.create()</code></a></li>
+<li><a href="../global_objects/object/defineproperty"><code>Object.defineProperty()</code></a>, <a href="../global_objects/object/defineproperties"><code>Object.defineProperties()</code></a></li>
+<li><a href="../global_objects/weakmap"><code>WeakMap</code></a>, <a href="../global_objects/weakset"><code>WeakSet</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/No_non-null_object" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/No_non-null_object</a></p>
+</body>
+</html>

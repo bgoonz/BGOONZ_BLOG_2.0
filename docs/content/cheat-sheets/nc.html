@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>nc</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="to-open-a-tcp-connection-from-to-of-with-a-timeout-of">To open a TCP connection from <src-port> to <dest-port> of <dest-host>, with a timeout of <seconds></h1>
+<p>nc -p <src-port> -w <seconds> <dest-host> <dest-port></p>
+<h1 id="to-open-a-udp-connection-to-of">To open a UDP connection to <dest-port> of <dest-host>:</h1>
+<p>nc -u <dest-host> <dest-port></p>
+<h1 id="to-open-a-tcp-connection-to-port-42-of-using-as-the-ip-for-the-local-end-of-the-connection">To open a TCP connection to port 42 of <host> using <source-host> as the IP for the local end of the connection:</h1>
+<p>nc -s <source-host> <dest-host> <port></p>
+<h1 id="to-create-and-listen-on-a-unix-domain-stream-socket">To create and listen on a UNIX-domain stream socket:</h1>
+<p>nc -lU /var/tmp/dsocket</p>
+<h1 id="to-connect-to-of-via-an-http-proxy-at">To connect to <dest-port> of <dest-host> via an HTTP proxy at <proxy-host>,</h1>
+<h1 id="this-example-could-also-be-used-by-ssh1-see-the-proxycommand"><proxy-port>. This example could also be used by ssh(1); see the ProxyCommand</h1>
+<h1 id="directive-in-ssh_config5-for-more-information.">directive in ssh_config(5) for more information.</h1>
+<p>nc -x<proxy-host>:<proxy-port> -Xconnect <dest-host> <dest-port></p>
+<h1 id="the-same-example-again-this-time-enabling-proxy-authentication-with-username-ruser-if-the-proxy-requires-it">The same example again, this time enabling proxy authentication with username “ruser” if the proxy requires it:</h1>
+<p>nc -x<proxy-host>:<proxy-port> -Xconnect -Pruser <host> <port></p>
+<h1 id="to-choose-the-source-ip-for-the-testing-using-the--s-option">To choose the source IP for the testing using the -s option</h1>
+<p>nc -zv -s source_IP target_IP Port</p>
+</body>
+</html>

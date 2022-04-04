@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>missing_bracket_after_list</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="syntaxerror-missing-after-element-list">SyntaxError: missing ] after element list</h1>
+<p>The JavaScript exception “missing ] after element list” occurs when there is an error with the array initializer syntax somewhere. Likely there is a closing bracket (“<code>]</code>”) or a comma (“<code>,</code>”) missing.</p>
+<h2 id="message">Message</h2>
+<pre><code>SyntaxError: missing ] after element list</code></pre>
+<h2 id="error-type">Error type</h2>
+<p><a href="../global_objects/syntaxerror"><code>SyntaxError</code></a>.</p>
+<h2 id="what-went-wrong">What went wrong?</h2>
+<p>There is an error with the array initializer syntax somewhere. Likely there is a closing bracket (“<code>]</code>”) or a comma (“<code>,</code>”) missing.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="incomplete-array-initializer">Incomplete array initializer</h3>
+<pre><code>var list = [1, 2,
+
+var instruments = [
+  &#39;Ukulele&#39;,
+  &#39;Guitar&#39;,
+  &#39;Piano&#39;
+};
+
+var data = [{foo: &#39;bar&#39;} {bar: &#39;foo&#39;}];</code></pre>
+<p>Correct would be:</p>
+<pre><code>var list = [1, 2];
+
+var instruments = [
+ &#39;Ukulele&#39;,
+ &#39;Guitar&#39;,
+ &#39;Piano&#39;
+];
+
+var data = [{foo: &#39;bar&#39;}, {bar: &#39;foo&#39;}];</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../global_objects/array"><code>Array</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Missing_bracket_after_list" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Missing_bracket_after_list</a></p>
+</body>
+</html>

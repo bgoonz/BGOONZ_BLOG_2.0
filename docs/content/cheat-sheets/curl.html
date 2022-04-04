@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2022-01-03" />
+  <title>title</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">title</h1>
+<p class="subtitle">subtitle</p>
+<p class="date">2022-01-03</p>
+</header>
+<h1 id="to-download-a-file">To download a file:</h1>
+<p>curl <url></p>
+<h1 id="to-download-and-rename-a-file">To download and rename a file:</h1>
+<p>curl <url> -o <outfile></p>
+<h1 id="to-download-multiple-files">To download multiple files:</h1>
+<p>curl -O <url> -O <url></p>
+<h1 id="to-download-all-sequentially-numbered-files-1-24">To download all sequentially numbered files (1-24):</h1>
+<p>curl http://example.com/pic[1-24].jpg</p>
+<h1 id="to-download-a-file-and-pass-http-authentication">To download a file and pass HTTP authentication:</h1>
+<p>curl -u <username>:<password> <url></p>
+<h1 id="to-download-a-file-with-a-proxy">To download a file with a proxy:</h1>
+<p>curl -x <proxy-host>:<port> <url></p>
+<h1 id="to-download-a-file-over-ftp">To download a file over FTP:</h1>
+<p>curl -u <username>:<password> -O ftp://example.com/pub/file.zip</p>
+<h1 id="to-get-an-ftp-directory-listing">To get an FTP directory listing:</h1>
+<p>curl ftp://username:password@example.com</p>
+<h1 id="to-resume-a-previously-failed-download">To resume a previously failed download:</h1>
+<p>curl -C - -o <partial-file> <url></p>
+<h1 id="to-fetch-only-the-http-headers-from-a-response">To fetch only the HTTP headers from a response:</h1>
+<p>curl -I <url></p>
+<h1 id="to-fetch-your-external-ip-and-network-info-as-json">To fetch your external IP and network info as JSON:</h1>
+<p>curl http://ifconfig.me/all.json</p>
+<h1 id="to-limit-the-rate-of-a-download">To limit the rate of a download:</h1>
+<p>curl –limit-rate 1000B -O <outfile></p>
+<h1 id="to-get-your-global-ip">To get your global IP:</h1>
+<p>curl httpbin.org/ip</p>
+<h1 id="to-get-only-the-http-status-code">To get only the HTTP status code:</h1>
+<p>curl -o /dev/null -w ‘%{http_code}’ -s -I URL</p>
+</body>
+</html>

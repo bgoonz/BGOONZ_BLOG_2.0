@@ -1,4 +1,5 @@
-# Function.caller
+Function.caller
+===============
 
 **Deprecated**
 
@@ -6,9 +7,10 @@ This feature is no longer recommended. Though some browsers might still support 
 
 The `function.caller` property returns the function that invoked the specified function. It returns `null` for strict, async function and generator function callers.
 
-## Description
+Description
+-----------
 
-If the function `f` was invoked by the top level code, the value of `f.caller` is [`null`](../null), otherwise it's the function that called `f`. It's also `null` for strict, async function and generator function callers.
+If the function `f` was invoked by the top level code, the value of `f.caller` is [`null`](../null), otherwise it’s the function that called `f`. It’s also `null` for strict, async function and generator function callers.
 
 This property replaces the obsolete <span class="page-not-created">`arguments.caller`</span> property of the [`arguments`](../../functions/arguments) object.
 
@@ -16,7 +18,7 @@ The special property `__caller__`, which returned the activation object of the c
 
 ### Notes
 
-Note that in case of recursion, you can't reconstruct the call stack using this property. Consider:
+Note that in case of recursion, you can’t reconstruct the call stack using this property. Consider:
 
     function f(n) { g(n - 1); }
     function g(n) { if (n > 0) { f(n); } else { stop(); } }
@@ -41,11 +43,12 @@ so if you tried to get the stack trace in the `stop()` function like this:
 
 the loop would never stop.
 
-## Examples
+Examples
+--------
 
-### Checking the value of a function's `caller` property
+### Checking the value of a function’s `caller` property
 
-The following code checks the value a function's `caller` property.
+The following code checks the value a function’s `caller` property.
 
     function myFunc() {
       if (myFunc.caller == null) {
@@ -55,7 +58,8 @@ The following code checks the value a function's `caller` property.
       }
     }
 
-## Specifications
+Specifications
+--------------
 
 <span class="pl-s">Not part of any standard.</span>
 
@@ -85,7 +89,8 @@ The following code checks the value a function's `caller` property.
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`Function.name`](name)
 -   [`arguments`](../../functions/arguments)

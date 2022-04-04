@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>compile</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="webassembly.compile">WebAssembly.compile()</h1>
+<p>The <code>WebAssembly.compile()</code> function compiles WebAssembly binary code into a <a href="module"><code>WebAssembly.Module</code></a> object. This function is useful if it is necessary to a compile a module before it can be instantiated (otherwise, the <a href="instantiate"><code>WebAssembly.instantiate()</code></a> function should be used).</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>WebAssembly.compile(bufferSource)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><em>bufferSource</em><br />
+A <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays">typed array</a> or <a href="../arraybuffer">ArrayBuffer</a> containing the binary code of the .wasm module you want to compile.</p>
+<h3 id="return-value">Return value</h3>
+<p>A <code>Promise</code> that resolves to a <a href="module"><code>WebAssembly.Module</code></a> object representing the compiled module.</p>
+<h3 id="exceptions">Exceptions</h3>
+<ul>
+<li>If <code>bufferSource</code> is not a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays">typed array</a>, a <a href="../typeerror"><code>TypeError</code></a> is thrown.</li>
+<li>If compilation fails, the promise rejects with a <a href="compileerror"><code>WebAssembly.CompileError</code></a>.</li>
+</ul>
+<h2 id="examples">Examples</h2>
+<h3 id="using-compile">Using compile</h3>
+<p>The following example compiles the loaded simple.wasm byte code using the <code>compile()</code> function and then sends it to a <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API">worker</a> using <a href="https://developer.mozilla.org/en-US/docs/Web/API/Worker/postMessage">postMessage()</a>.</p>
+<pre><code>var worker = new Worker(&quot;wasm_worker.js&quot;);
+
+fetch(&#39;simple.wasm&#39;).then(response =&gt;
+  response.arrayBuffer()
+).then(bytes =&gt;
+  WebAssembly.compile(bytes)
+).then(mod =&gt;
+  worker.postMessage(mod)
+);</code></pre>
+<p><strong>Note:</strong> You’ll probably want to use <a href="compilestreaming"><code>WebAssembly.compileStreaming()</code></a> in most cases, as it is more efficient than <code>compile()</code>.</p>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://webassembly.github.io/spec/js-api/#dom-webassembly-compile">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) <br/></p>
+<span class="small">#dom-webassembly-compile</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>compile</code></p>
+<p>57</p>
+<p>16</p>
+<p>52</p>
+<p>Disabled in the Firefox 52 Extended Support Release (ESR).</p>
+<p>No</p>
+<p>44</p>
+<p>11</p>
+<p>57</p>
+<p>57</p>
+<p>52</p>
+<p>Disabled in the Firefox 52 Extended Support Release (ESR).</p>
+<p>43</p>
+<p>11</p>
+<p>7.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/WebAssembly">WebAssembly</a> overview page</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts">WebAssembly concepts</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API">Using the WebAssembly JavaScript API</a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/compile" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/compile</a></p>
+</body>
+</html>

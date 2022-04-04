@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>exponentiation</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="exponentiation">Exponentiation (**)</h1>
+<p>The exponentiation operator (<code>**</code>) returns the result of raising the first operand to the power of the second operand. It is equivalent to <code>Math.pow</code>, except it also accepts BigInts as operands.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>Operator: var1 ** var2</code></pre>
+<h2 id="description">Description</h2>
+<p>The exponentiation operator is right-associative: <code>a ** b ** c</code> is equal to <code>a ** (b ** c)</code>.</p>
+<p>In most languages, such as PHP, Python, and others that have an exponentiation operator (<code>**</code>), the exponentiation operator is defined to have a higher precedence than unary operators, such as unary <code>+</code> and unary <code>-</code>, but there are a few exceptions. For example, in Bash, the <code>**</code> operator is defined to have a lower precedence than unary operators.</p>
+<p>In JavaScript, it is impossible to write an ambiguous exponentiation expression. That is, you cannot put a unary operator (<code>+/-/~/!/delete/void/typeof</code>) immediately before the base number; doing so will cause a SyntaxError.</p>
+<pre><code>-2 ** 2;
+// 4 in Bash, -4 in other languages.
+// This is invalid in JavaScript, as the operation is ambiguous.
+
+-(2 ** 2);
+// -4 in JavaScript and the author&#39;s intention is unambiguous.</code></pre>
+<p>Note that some programming languages use the caret symbol ^ for exponentiation, but JavaScript uses that symbol for the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#bitwise_xor">bitwise logical XOR operator</a>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="basic-exponentiation">Basic exponentiation</h3>
+<pre><code>2 ** 3   // 8
+3 ** 2   // 9
+3 ** 2.5 // 15.588457268119896
+10 ** -1 // 0.1
+NaN ** 2 // NaN</code></pre>
+<h3 id="associativity">Associativity</h3>
+<pre><code>2 ** 3 ** 2   // 512
+2 ** (3 ** 2) // 512
+(2 ** 3) ** 2 // 64</code></pre>
+<h3 id="usage-with-unary-operators">Usage with unary operators</h3>
+<p>To invert the sign of the result of an exponentiation expression:</p>
+<pre><code>-(2 ** 2) // -4</code></pre>
+<p>To force the base of an exponentiation expression to be a negative number:</p>
+<pre><code>(-2) ** 2 // 4</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-exp-operator">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-exp-operator</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>Exponentiation</code></p>
+<p>52</p>
+<p>14</p>
+<p>52</p>
+<p>No</p>
+<p>39</p>
+<p>10.1</p>
+<p>51</p>
+<p>52</p>
+<p>52</p>
+<p>41</p>
+<p>10.3</p>
+<p>6.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="addition">Addition operator</a></li>
+<li><a href="subtraction">Subtraction operator</a></li>
+<li><a href="division">Division operator</a></li>
+<li><a href="multiplication">Multiplication operator</a></li>
+<li><a href="remainder">Remainder operator</a></li>
+<li><a href="increment">Increment operator</a></li>
+<li><a href="decrement">Decrement operator</a></li>
+<li><a href="unary_negation">Unary negation operator</a></li>
+<li><a href="unary_plus">Unary plus operator</a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Exponentiation" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Exponentiation</a></p>
+</body>
+</html>

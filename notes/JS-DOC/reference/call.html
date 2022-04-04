@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>call</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="function.prototype.call">Function.prototype.call()</h1>
+<p>The <code>call()</code> method calls a function with a given <code>this</code> value and arguments provided individually.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>call()
+call(thisArg)
+call(thisArg, arg1)
+call(thisArg, arg1, arg2)
+call(thisArg, arg1, ... , argN)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>thisArg</code> <span class="badge inline optional">Optional</span><br />
+The value to use as <code>this</code> when calling <code>func</code>.</p>
+<p><strong>Note:</strong> In certain cases, <code>thisArg</code> may not be the actual value seen by the method.</p>
+<p>If the method is a function in <a href="../../strict_mode">non-strict mode</a>, <a href="../null"><code>null</code></a> and <a href="../undefined"><code>undefined</code></a> will be replaced with the global object, and primitive values will be converted to objects.</p>
+<p><code>arg1, arg2, ...argN</code> <span class="badge inline optional">Optional</span><br />
+Arguments for the function.</p>
+<h3 id="return-value">Return value</h3>
+<p>The result of calling the function with the specified <code>this</code> value and arguments.</p>
+<h2 id="description">Description</h2>
+<p>The <code>call()</code> allows for a function/method belonging to one object to be assigned and called for a different object.</p>
+<p><code>call()</code> provides a new value of <code>this</code> to the function/method. With <code>call()</code>, you can write a method once and then inherit it in another object, without having to rewrite the method for the new object.</p>
+<p><strong>Note:</strong> While the syntax of this function is almost identical to that of <a href="apply"><code>apply()</code></a>, the fundamental difference is that <code>call()</code> accepts an <strong>argument list</strong>, while <code>apply()</code> accepts a <strong>single array of arguments</strong>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-call-to-chain-constructors-for-an-object">Using <code>call</code> to chain constructors for an object</h3>
+<p>You can use <code>call</code> to chain constructors for an object (similar to Java).</p>
+<p>In the following example, the constructor for the <code>Product</code> object is defined with two parameters: <code>name</code> and <code>price</code>.</p>
+<p>Two other functions, <code>Food</code> and <code>Toy</code>, invoke <code>Product</code>, passing <code>this</code>, <code>name</code>, and <code>price</code>. <code>Product</code> initializes the properties <code>name</code> and <code>price</code>, both specialized functions define the <code>category</code>.</p>
+<pre><code>function Product(name, price) {
+  this.name = name;
+  this.price = price;
+}
+
+function Food(name, price) {
+  Product.call(this, name, price);
+  this.category = &#39;food&#39;;
+}
+
+function Toy(name, price) {
+  Product.call(this, name, price);
+  this.category = &#39;toy&#39;;
+}
+
+const cheese = new Food(&#39;feta&#39;, 5);
+const fun = new Toy(&#39;robot&#39;, 40);</code></pre>
+<h3 id="using-call-to-invoke-an-anonymous-function">Using <code>call</code> to invoke an anonymous function</h3>
+<p>In this example, we create an anonymous function and use <code>call</code> to invoke it on every object in an array.</p>
+<p>The main purpose of the anonymous function here is to add a <code>print</code> function to every object, which is able to print the correct index of the object in the array.</p>
+<p><strong>Note:</strong> Passing the object as <code>this</code> value is not strictly necessary, but is done for explanatory purpose.</p>
+<pre><code>const animals = [
+  { species: &#39;Lion&#39;, name: &#39;King&#39; },
+  { species: &#39;Whale&#39;, name: &#39;Fail&#39; }
+];
+
+for (let i = 0; i &lt; animals.length; i++) {
+  (function(i) {
+    this.print = function() {
+      console.log(&#39;#&#39; + i + &#39; &#39; + this.species
+                  + &#39;: &#39; + this.name);
+    }
+    this.print();
+  }).call(animals[i], i);
+}</code></pre>
+<h3 id="using-call-to-invoke-a-function-and-specifying-the-context-for-this">Using <code>call</code> to invoke a function and specifying the context for ‘<code>this</code>’</h3>
+<p>In the example below, when we call <code>greet</code>, the value of <code>this</code> will be bound to object <code>obj</code>.</p>
+<pre><code>function greet() {
+  const reply = [this.animal, &#39;typically sleep between&#39;, this.sleepDuration].join(&#39; &#39;);
+  console.log(reply);
+}
+
+const obj = {
+  animal: &#39;cats&#39;, sleepDuration: &#39;12 and 16 hours&#39;
+};
+
+greet.call(obj);  // cats typically sleep between 12 and 16 hours</code></pre>
+<h3 id="using-call-to-invoke-a-function-and-without-specifying-the-first-argument">Using <code>call</code> to invoke a function and without specifying the first argument</h3>
+<p>In the example below, we invoke the <code>display</code> function without passing the first argument. If the first argument is not passed, the value of <code>this</code> is bound to the global object.</p>
+<pre><code>var sData = &#39;Wisen&#39;;
+
+function display() {
+  console.log(&#39;sData value is %s &#39;, this.sData);
+}
+
+display.call();  // sData value is Wisen</code></pre>
+<p><strong>Note:</strong> In strict mode, the value of <code>this</code> will be <code>undefined</code>. See below.</p>
+<pre><code>&#39;use strict&#39;;
+
+var sData = &#39;Wisen&#39;;
+
+function display() {
+  console.log(&#39;sData value is %s &#39;, this.sData);
+}
+
+display.call(); // Cannot read the property of &#39;sData&#39; of undefined</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-function.prototype.call">ECMAScript (ECMA-262) <br/></p>
+<span class="small">The definition of ‘Function.prototype.call’ in that specification.</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>call</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>5.5</p>
+<p>4</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="bind"><code>Function.prototype.bind()</code></a></li>
+<li><a href="apply"><code>Function.prototype.apply()</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects">Introduction to Object-Oriented JavaScript</a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call</a></p>
+</body>
+</html>

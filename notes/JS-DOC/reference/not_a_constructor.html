@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>not_a_constructor</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="typeerror-x-is-not-a-constructor">TypeError: “x” is not a constructor</h1>
+<p>The JavaScript exception “is not a constructor” occurs when there was an attempt to use an object or a variable as a constructor, but that object or variable is not a constructor.</p>
+<h2 id="message">Message</h2>
+<pre><code>TypeError: Object doesn&#39;t support this action (Edge)
+TypeError: &quot;x&quot; is not a constructor
+
+TypeError: Math is not a constructor
+TypeError: JSON is not a constructor
+TypeError: Symbol is not a constructor
+TypeError: Reflect is not a constructor
+TypeError: Intl is not a constructor
+TypeError: Atomics is not a constructor</code></pre>
+<h2 id="error-type">Error type</h2>
+<p><a href="../global_objects/typeerror"><code>TypeError</code></a></p>
+<h2 id="what-went-wrong">What went wrong?</h2>
+<p>There was an attempt to use an object or a variable as a constructor, but that object or variable is not a constructor. See <a href="https://developer.mozilla.org/en-US/docs/Glossary/Constructor">constructor</a> or the <a href="../operators/new"><code>new</code> operator</a> for more information on what a constructor is.</p>
+<p>There are many global objects, like <a href="../global_objects/string"><code>String</code></a> or <a href="../global_objects/array"><code>Array</code></a>, which are constructable using <code>new</code>. However, some global objects are not and their properties and methods are static. The following JavaScript standard built-in objects are not a constructor: <a href="../global_objects/math"><code>Math</code></a>, <a href="../global_objects/json"><code>JSON</code></a>, <a href="../global_objects/symbol"><code>Symbol</code></a>, <a href="../global_objects/reflect"><code>Reflect</code></a>, <a href="../global_objects/intl"><code>Intl</code></a>, <a href="../global_objects/atomics"><code>Atomics</code></a>.</p>
+<p><a href="../statements/function*">Generator functions</a> cannot be used as constructors either.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="invalid-cases">Invalid cases</h3>
+<pre><code>var Car = 1;
+new Car();
+// TypeError: Car is not a constructor
+
+new Math();
+// TypeError: Math is not a constructor
+
+new Symbol();
+// TypeError: Symbol is not a constructor
+
+function* f() {};
+var obj = new f;
+// TypeError: f is not a constructor</code></pre>
+<h3 id="a-car-constructor">A car constructor</h3>
+<p>Suppose you want to create an object type for cars. You want this type of object to be called <code>car</code>, and you want it to have properties for make, model, and year. To do this, you would write the following function:</p>
+<pre><code>function Car(make, model, year) {
+  this.make = make;
+  this.model = model;
+  this.year = year;
+}</code></pre>
+<p>Now you can create an object called <code>mycar</code> as follows:</p>
+<pre><code>var mycar = new Car(&#39;Eagle&#39;, &#39;Talon TSi&#39;, 1993);</code></pre>
+<h3 id="in-promises">In Promises</h3>
+<p>When returning an immediately-resolved or immediately-rejected Promise, you do not need to create a <em>new Promise(…)</em> and act on it.</p>
+<p>This is not legal (the <a href="https://developer.mozilla.org/en-US/docs/Mozilla/JavaScript_code_modules/Promise.jsm/Promise#Constructor">Promise constructor</a> is not being called correctly) and will throw a <code>TypeError: this is not a constructor</code> exception:</p>
+<pre><code>return new Promise.resolve(true);</code></pre>
+<p>Instead, use the <a href="../global_objects/promise/resolve">Promise.resolve()</a> or <a href="../global_objects/promise/reject">Promise.reject()</a> <a href="https://en.wikipedia.org/wiki/Method_(computer_programming)#Static_methods">static methods</a>:</p>
+<pre><code>// This is legal, but unnecessarily long:
+return new Promise((resolve, reject) =&gt; { resolve(true); })
+
+// Instead, return the static method:
+return Promise.resolve(true);
+return Promise.reject(false);</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Constructor">constructor</a></li>
+<li><a href="../operators/new"><code>new</code> operator</a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Not_a_constructor" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Not_a_constructor</a></p>
+</body>
+</html>

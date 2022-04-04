@@ -1,45 +1,49 @@
----
-tags: [packaging]
----
+To install a package:
+=====================
 
-# To install a package:
+rpm -ivh
 
-rpm -ivh <rpm>
+To remove a package:
+====================
 
-# To remove a package:
+rpm -e
 
-rpm -e <package>
+To remove a package, but not its dependencies
+=============================================
 
-# To remove a package, but not its dependencies
+rpm -e –nodeps
 
-rpm -e --nodeps <package>
+To find what package installs a file:
+=====================================
 
-# To find what package installs a file:
+rpm -qf
 
-rpm -qf <file>
+To find what files are installed by a package:
+==============================================
 
-# To find what files are installed by a package:
+rpm -ql rpm -qpl
 
-rpm -ql <package>
-rpm -qpl <rpm>
+To find what packages require a package or file:
+================================================
 
-# To find what packages require a package or file:
+rpm -q –whatrequires rpm -q –whatrequires
 
-rpm -q --whatrequires <package>
-rpm -q --whatrequires <file>
-
-# To list all installed packages:
+To list all installed packages:
+===============================
 
 rpm -qa
 
-# To find a packages's dependencies:
+To find a packages’s dependencies:
+==================================
 
-rpm -i --test <package>
+rpm -i –test
 
-# To display checksum against a source:
+To display checksum against a source:
+=====================================
 
-rpm -K <package>
+rpm -K
 
-# To verify a package:
+To verify a package:
+====================
 
-rpm -V <package>
+rpm -V

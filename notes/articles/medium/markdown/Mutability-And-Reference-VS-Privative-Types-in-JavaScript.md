@@ -1,8 +1,9 @@
-# Mutability And Reference VS Privative Types in JavaScript
+Mutability And Reference VS Privative Types in JavaScript
+=========================================================
 
 Mutability && Primitive && Reference Examples
 
----
+------------------------------------------------------------------------
 
 ### Mutability And Reference VS Privative Types in JavaScript
 
@@ -17,7 +18,7 @@ For example, the following code:
     var myStr = "Bob";
     myStr[0] = "J";
 
-cannot change the value of `myStr` to `Job`, because the contents of `myStr` cannot be altered. Note that this does _not_ mean that `myStr` cannot be changed, just that the individual characters of a string literal cannot be changed. The only way to change `myStr` would be to assign it with a new string, like this:
+cannot change the value of `myStr` to `Job`, because the contents of `myStr` cannot be altered. Note that this does *not* mean that `myStr` cannot be changed, just that the individual characters of a string literal cannot be changed. The only way to change `myStr` would be to assign it with a new string, like this:
 
     var myStr = "Bob";
     myStr = "Job";
@@ -62,14 +63,11 @@ To dereference attributes from an object, use `let {}` syntax.
 
 ### Primitive Data Types in Depth
 
-<figure><img src="https://cdn-images-1.medium.com/max/2560/1*mRr-4QeqbjcMUTtQQNOlEw.png" class="graf-image" /></figure>
+<figure><img src="https://cdn-images-1.medium.com/max/2560/1*mRr-4QeqbjcMUTtQQNOlEw.png" class="graf-image" /></figure>### Check Out My New Blog:
 
-### Check Out My New Blog:
+**Web-Dev-Hub**  
 
-<a href="https://best-celery-b2d7c.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://best-celery-b2d7c.netlify.app/"><strong>Web-Dev-Hub</strong>
-<br/>
-
-<em>Bryan</em> best-celery-b2d7c.netlify.app</a><a href="https://best-celery-b2d7c.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Bryan* best-celery-b2d7c.netlify.app<a href="https://best-celery-b2d7c.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [May 27, 2021](https://medium.com/p/5294422db4b0).
 

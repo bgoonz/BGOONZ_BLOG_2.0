@@ -1,8 +1,3 @@
----
-title: Migrations
-category: Rails
----
-
 ### Automatically make migrations
 
     $ rails generate migration RemovePartNumberFromProducts part_number:string
@@ -120,4 +115,4 @@ Use `ActiveRecord::Migration`.
 
 ### References
 
--   http://apidock.com/rails/ActiveRecord/ConnectionAdapters/SchemaStatements/add_index
+-   http://apidock.com/rails/ActiveRecord/ConnectionAdapters/SchemaStatements/add\_index

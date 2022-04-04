@@ -1,19 +1,23 @@
-# TypeError: "x" is not a function
+TypeError: “x” is not a function
+================================
 
-The JavaScript exception "is not a function" occurs when there was an attempt to call a value from a function, but the value is not actually a function.
+The JavaScript exception “is not a function” occurs when there was an attempt to call a value from a function, but the value is not actually a function.
 
-## Message
+Message
+-------
 
     TypeError: Object doesn't support property or method {x} (Edge)
     TypeError: "x" is not a function
 
-## Error type
+Error type
+----------
 
 [`TypeError`](../global_objects/typeerror)
 
-## What went wrong?
+What went wrong?
+----------------
 
-It attempted to call a value from a function, but the value is not actually a function. Some code expects you to provide a function, but that didn't happen.
+It attempted to call a value from a function, but the value is not actually a function. Some code expects you to provide a function, but that didn’t happen.
 
 Maybe there is a typo in the function name? Maybe the object you are calling the method on does not have this function? For example, JavaScript `Objects` have no `map` function, but the JavaScript `Array` object does.
 
@@ -24,7 +28,8 @@ There are many built-in functions in need of a (callback) function. You will hav
 -   When working with [`Map`](../global_objects/map) and [`Set`](../global_objects/set) objects:
     -   [`Map.prototype.forEach()`](../global_objects/map/foreach) and [`Set.prototype.forEach()`](../global_objects/set/foreach)
 
-## Examples
+Examples
+--------
 
 ### A typo in the function name
 
@@ -137,7 +142,8 @@ The correct import usage (`App.js`):
 
     import helpers from './helpers'
 
-## See also
+See also
+--------
 
 -   [Functions](../functions)
 

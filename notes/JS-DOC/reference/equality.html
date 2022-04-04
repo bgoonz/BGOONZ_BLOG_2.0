@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>equality</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="equality">Equality (==)</h1>
+<p>The equality operator (<code>==</code>) checks whether its two operands are equal, returning a Boolean result. Unlike the <a href="strict_equality">strict equality</a> operator, it attempts to convert and compare operands that are of different types.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>x == y</code></pre>
+<h2 id="description">Description</h2>
+<p>The equality operators (<code>==</code> and <code>!=</code>) use the <a href="https://www.ecma-international.org/ecma-262/5.1/#sec-11.9.3">Abstract Equality Comparison Algorithm</a> to compare two operands. This can be roughly summarised as follows:</p>
+<ul>
+<li>If the operands are both objects, return <code>true</code> only if both operands reference the same object.</li>
+<li>If one operand is <code>null</code> and the other is <code>undefined</code>, return <code>true</code>.</li>
+<li>If the operands are of different types, try to convert them to the same type before comparing:
+<ul>
+<li>When comparing a number to a string, try to convert the string to a numeric value.</li>
+<li>If one of the operands is <code>Boolean</code>, convert the Boolean operand to 1 if it is <code>true</code> and +0 if it is <code>false</code>.</li>
+<li>If one of the operands is an object and the other is a number or a string, try to convert the object to a primitive using the object’s <code>valueOf()</code> and <code>toString()</code> methods.</li>
+</ul></li>
+<li>If the operands have the same type, they are compared as follows:
+<ul>
+<li><code>String</code>: return <code>true</code> only if both operands have the same characters in the same order.</li>
+<li><code>Number</code>: return <code>true</code> only if both operands have the same value. <code>+0</code> and <code>-0</code> are treated as the same value. If either operand is <code>NaN</code>, return <code>false</code>.</li>
+<li><code>Boolean</code>: return <code>true</code> only if operands are both <code>true</code> or both <code>false</code>.</li>
+</ul></li>
+</ul>
+<p>The most notable difference between this operator and the <a href="strict_equality">strict equality</a> (<code>===</code>) operator is that the strict equality operator does not attempt type conversion. Instead, the strict equality operator always considers operands of different types to be different.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="comparison-with-no-type-conversion">Comparison with no type conversion</h3>
+<pre><code>1 == 1;              // true
+&quot;hello&quot; == &quot;hello&quot;;  // true</code></pre>
+<h3 id="comparison-with-type-conversion">Comparison with type conversion</h3>
+<pre><code>&quot;1&quot; ==  1;            // true
+1 == &quot;1&quot;;             // true
+0 == false;           // true
+0 == null;            // false
+0 == undefined;       // false
+0 == !!null;          // true, look at Logical NOT operator
+0 == !!undefined;     // true, look at Logical NOT operator
+null == undefined;    // true
+
+const number1 = new Number(3);
+const number2 = new Number(3);
+number1 == 3;         // true
+number1 == number2;   // false</code></pre>
+<h3 id="comparison-of-objects">Comparison of objects</h3>
+<pre><code>const object1 = {&quot;key&quot;: &quot;value&quot;}
+const object2 = {&quot;key&quot;: &quot;value&quot;};
+
+object1 == object2 // false
+object2 == object2 // true</code></pre>
+<h3 id="comparing-strings-and-string-objects">Comparing strings and String objects</h3>
+<p>Note that strings constructed using <code>new String()</code> are objects. If you compare one of these with a string literal, the <code>String</code> object will be converted to a string literal and the contents will be compared. However, if both operands are <code>String</code> objects, then they are compared as objects and must reference the same object for comparison to succeed:</p>
+<pre><code>const string1 = &quot;hello&quot;;
+const string2 = String(&quot;hello&quot;);
+const string3 = new String(&quot;hello&quot;);
+const string4 = new String(&quot;hello&quot;);
+
+console.log(string1 == string2); // true
+console.log(string1 == string3); // true
+console.log(string2 == string3); // true
+console.log(string3 == string4); // false
+console.log(string4 == string4); // true</code></pre>
+<h3 id="comparing-dates-and-strings">Comparing Dates and strings</h3>
+<pre><code>const d = new Date(&#39;December 17, 1995 03:24:00&#39;);
+const s = d.toString(); // for example: &quot;Sun Dec 17 1995 03:24:00 GMT-0800 (Pacific Standard Time)&quot;
+console.log(d == s);    //true</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-equality-operators">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-equality-operators</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>Equality</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="inequality">Inequality operator</a></li>
+<li><a href="strict_equality">Strict equality operator</a></li>
+<li><a href="strict_inequality">Strict inequality operator</a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Equality" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Equality</a></p>
+</body>
+</html>

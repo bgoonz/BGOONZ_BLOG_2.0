@@ -1,15 +1,18 @@
-# return
+return
+======
 
 The `return` statement ends function execution and specifies a value to be returned to the function caller.
 
-## Syntax
+Syntax
+------
 
     return [expression];
 
 `expression`  
 The expression whose value is to be returned. If omitted, `undefined` is returned instead.
 
-## Description
+Description
+-----------
 
 When a `return` statement is used in a function body, the execution of the function is stopped. If specified, a given value is returned to the function caller. For example, the following function returns the square of its argument, `x`, where `x` is a number.
 
@@ -41,7 +44,7 @@ is transformed by ASI into:
     return;
     a + b;
 
-The console will warn "unreachable code after return statement".
+The console will warn “unreachable code after return statement”.
 
 **Note:** Starting with Firefox 40, a warning is shown in the console if unreachable code is found after a `return` statement.
 
@@ -51,7 +54,8 @@ To avoid this problem (to prevent ASI), you could use parentheses:
       a + b
     );
 
-## Examples
+Examples
+--------
 
 ### Interrupt a function
 
@@ -92,14 +96,14 @@ See also the article about [Closures](https://developer.mozilla.org/en-US/docs/W
     var answer = magic();
     answer(1337); // 56154
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-return-statement">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-return-statement</span></td></tr></tbody></table>
 
-<span class="small">#sec-return-statement</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -155,11 +159,11 @@ Samsung Internet
 
 1.0
 
-## See also
+See also
+--------
 
 -   [Functions](../functions)
 -   [Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return</a>

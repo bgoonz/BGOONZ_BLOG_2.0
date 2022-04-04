@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Minitest</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Minitest</h1>
+</header>
+<h3 id="usage">Usage</h3>
+<pre><code>require &#39;minitest/autorun&#39;
+
+describe &quot;X&quot; do
+  before do .. end
+  after do .. end
+  subject { .. }
+  let(:list) { Array.new }
+
+  it &quot;should work&quot; do
+    assert true
+  end
+end</code></pre>
+<h3 id="specs-.must.wont">Specs (.must/.wont)</h3>
+<pre><code>expect(x)
+.must_be :==, 0
+.must_equal b
+.must_be_close_to 2.99999
+.must_be_same_as b
+
+.must_include needle
+.must_be_empty
+
+.must_be_kind_of
+.must_be_instance_of
+.must_be_nil
+.must_match /regex/
+.must_be :&lt;=, 42
+.must_respond_to msg
+
+.must_be_silent  ( proc { &quot;no stdout or stderr&quot; }.must_be_silent)
+.must_output &quot;hi&quot;
+
+proc { ... }.must_output out_or_nil [, err]
+proc { ... }.must_raise exception
+proc { ... }.must_throw sym</code></pre>
+<h3 id="test">Test</h3>
+<pre><code>class TestHipster &lt; Minitest::Test
+  def setup
+    @subject = [&quot;silly hats&quot;, &quot;skinny jeans&quot;]
+  end
+
+  def teardown
+    @hipster.destroy!
+  end
+
+  def test_for_helvetica_font
+    assert_equal &quot;helvetica!&quot;, @hipster.preferred_font
+  end
+
+  def test_not_mainstream
+    refute @hipster.mainstream?
+  end
+end</code></pre>
+<h3 id="assertions">Assertions</h3>
+<pre><code>assert
+assert_block { ... }
+assert_empty
+assert_equal 2, @size
+assert_in_delta @size, 1, 1
+assert_in_epsilon
+assert_includes @list, &quot;item&quot;
+assert_instance_of Array, @list
+assert_kind_of Enumerable, @list
+assert_match @str, /regex/
+assert_nil
+assert_operator @n, :==, 0
+assert_output
+assert_raises
+assert_respond_to
+assert_same
+assert_send
+assert_silent
+assert_throws</code></pre>
+<h3 id="minitestmock">Minitest::Mock</h3>
+<p>A simple and clean mock system. There two essential methods at our disposal: expect and verify.</p>
+<pre><code>require &#39;minitest/autorun&#39;
+
+describe Twipster, &quot;Make every tweet a hipster tweet.&quot; do
+  before do
+    @twitter  = Minitest::Mock.new
+    @twipster = Twipster.new(@twitter)
+  end
+
+  it &quot;should append a #lolhipster hashtag and update Twitter with our status&quot; do
+    tweet = &quot;Skyrim? Too mainstream.&quot;
+    @twitter.expect :update, true, [&quot;#{tweet} #lolhipster&quot;]
+    @twipster.submit(tweet)
+    assert @twitter.verify # verifies tweet and hashtag was passed to `@twitter.update`
+  end
+end</code></pre>
+<h3 id="reporters">Reporters</h3>
+<pre><code>gem &#39;minitest-reporters&#39;
+
+require &#39;minitest/reporters&#39;
+Minitest::Reporters.use! Minitest::Reporters::SpecReporter.new
+
+[Default, Spec, Progress, RubyMate, RubyMine, JUnit]</code></pre>
+</body>
+</html>

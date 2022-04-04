@@ -1,4 +1,5 @@
-# String.prototype.small()
+String.prototype.small()
+========================
 
 **Deprecated**
 
@@ -6,7 +7,8 @@ This feature is no longer recommended. Though some browsers might still support 
 
 The `small()` method creates a [`<small>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/small) HTML element that causes a string to be displayed in a small font.
 
-## Syntax
+Syntax
+------
 
     small()
 
@@ -14,11 +16,13 @@ The `small()` method creates a [`<small>`](https://developer.mozilla.org/en-US/d
 
 A string containing a [`<small>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/small) HTML element.
 
-## Description
+Description
+-----------
 
-The `small()` method embeds a string in a `<small>` element: "`<small>str</small>`".
+The `small()` method embeds a string in a `<small>` element: “`<small>str</small>`”.
 
-## Examples
+Examples
+--------
 
 ### Using small()
 
@@ -30,18 +34,18 @@ The following example uses string methods to change the size of a string:
     console.log(worldString.big());       // <big>Hello, world</big>
     console.log(worldString.fontsize(7)); // <font size="7">Hello, world</fontsize>
 
-With the [`element.style`](https://developer.mozilla.org/en-US/docs/Web/API/ElementCSSInlineStyle/style) object you can get the element's `style` attribute and manipulate it more generically, for example:
+With the [`element.style`](https://developer.mozilla.org/en-US/docs/Web/API/ElementCSSInlineStyle/style) object you can get the element’s `style` attribute and manipulate it more generically, for example:
 
     document.getElementById('yourElemId').style.fontSize = '0.7em';
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.small">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-string.prototype.small</span></td></tr></tbody></table>
 
-<span class="small">#sec-string.prototype.small</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -97,11 +101,11 @@ Samsung Internet
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`String.prototype.fontsize()`](fontsize)
 -   [`String.prototype.big()`](big)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/small" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/small</a>

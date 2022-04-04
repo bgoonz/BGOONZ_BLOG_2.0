@@ -1,10 +1,12 @@
-# Object.prototype.constructor
+Object.prototype.constructor
+============================
 
-The `constructor` property returns a reference to the [`Object`](../object) constructor function that created the instance object. Note that the value of this property is a reference to _the function itself_, not a string containing the function's name.
+The `constructor` property returns a reference to the [`Object`](../object) constructor function that created the instance object. Note that the value of this property is a reference to *the function itself*, not a string containing the function’s name.
 
 The value is only read-only for primitive values such as `1`, `true`, and `"test"`.
 
-## Description
+Description
+-----------
 
 All objects (with the exception of objects created with `Object.create(null)`) will have a `constructor` property. Objects created without the explicit use of a constructor function (such as object- and array-literals) will have a `constructor` property that points to the Fundamental Object constructor type for that object.
 
@@ -23,7 +25,8 @@ All objects (with the exception of objects created with `Object.create(null)`) w
     let n = new Number(3)
     n.constructor === Number // true
 
-## Examples
+Examples
+--------
 
 ### Displaying the constructor of an object
 
@@ -44,7 +47,7 @@ This example displays the following output:
 
 ### Changing the constructor of an object
 
-One can assign the `constructor` property for any value except `null` and `undefined` since those don't have a corresponding constructor function (like `String`, `Number`, `Boolean` etc.), but values which are primitives won't keep the change (with no exception thrown). This is due to the same mechanism, which allows one to set any property on primitive values (except `null` and `undefined`) with no effect. Namely whenever one uses such a primitive as an object an instance of the corresponding constructor is created and discarded right after the statement was executed.
+One can assign the `constructor` property for any value except `null` and `undefined` since those don’t have a corresponding constructor function (like `String`, `Number`, `Boolean` etc.), but values which are primitives won’t keep the change (with no exception thrown). This is due to the same mechanism, which allows one to set any property on primitive values (except `null` and `undefined`) with no effect. Namely whenever one uses such a primitive as an object an instance of the corresponding constructor is created and discarded right after the statement was executed.
 
     let val = null;
     val.constructor = 1; //TypeError: var is null
@@ -89,9 +92,9 @@ Mostly this property is used for defining a function as a **function-constructor
 
     Child.prototype.constructor = Child // return original constructor to Child
 
-But when do we need to perform the last line here? Unfortunately, the answer is: _it depends_.
+But when do we need to perform the last line here? Unfortunately, the answer is: *it depends*.
 
-Let's try to define the cases in which re-assignment of the original constructor will play a major role, and when it will be one superfluous line of code.
+Let’s try to define the cases in which re-assignment of the original constructor will play a major role, and when it will be one superfluous line of code.
 
 Take the following case: the object has the `create()` method to create itself.
 
@@ -124,9 +127,9 @@ To avoid this, just assign the necessary constructor you are going to use.
 
     new CreatedConstructor().create().create() // it's pretty fine
 
-Ok, now it's pretty clear why changing the constructor can be useful.
+Ok, now it’s pretty clear why changing the constructor can be useful.
 
-Let's consider one more case.
+Let’s consider one more case.
 
     function ParentWithStatic() {}
 
@@ -156,7 +159,7 @@ Let's consider one more case.
       }
     };
 
-For this example we need either to stay parent constructor to continue to work properly or reassign static properties to child's constructor:
+For this example we need either to stay parent constructor to continue to work properly or reassign static properties to child’s constructor:
 
     ...
     Child = Object.assign(Child, ParentWithStatic) // Notice that we assign it before we create(...) a prototype below
@@ -174,12 +177,11 @@ or assign parent constructor identifier to a separate property on the Child cons
 
 **Note:** Manually updating or setting the constructor can lead to different and sometimes confusing consequences. To prevent this, just define the role of `constructor` in each specific case. In most cases, `constructor` is not used and reassignment of it is not necessary.
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.prototype.constructor">ECMAScript (ECMA-262) 
-<br/>
-
-<span class="small">The definition of 'Object.prototype.constructor' in that specification.</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript (ECMA-262)<br />
+</p><span class="small">The definition of ‘Object.prototype.constructor’ in that specification.</span></td></tr></tbody></table>
 
 `constructor`
 
@@ -207,12 +209,12 @@ or assign parent constructor identifier to a separate property on the Child cons
 
 1.0
 
-## See also
+See also
+--------
 
 -   [Class declaration](../../statements/class)
 -   [Class constructor](../../classes/constructor)
 -   Glossary: [constructor](https://developer.mozilla.org/en-US/docs/Glossary/Constructor)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/constructor" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/constructor</a>

@@ -1,8 +1,9 @@
-# It's my genuine pleasure... more coming soon!
+It’s my genuine pleasure… more coming soon!
+===========================================
 
----
+------------------------------------------------------------------------
 
-It's my genuine pleasure... more coming soon!
+It’s my genuine pleasure… more coming soon!
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [May 28, 2021](https://medium.com/p/f560ed8a641b).
 

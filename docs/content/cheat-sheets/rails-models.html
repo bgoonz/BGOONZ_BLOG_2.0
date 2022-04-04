@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Rails models</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Rails models</h1>
+</header>
+<h2 id="generating">Generating</h2>
+<h3 id="generating-1">Generating</h3>
+<pre><code>$ rails g model User</code></pre>
+<h2 id="using-models">Using models</h2>
+<h3 id="query-methods">Query methods</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb2-1" title="1">items = <span class="dt">Model</span></a>
+<a class="sourceLine" id="cb2-2" title="2">  .where(<span class="st">first_name: &#39;Harvey&#39;</span>)</a>
+<a class="sourceLine" id="cb2-3" title="3">  .where(<span class="st">&#39;id = 3&#39;</span>)</a>
+<a class="sourceLine" id="cb2-4" title="4">  .where(<span class="st">&#39;id = ?&#39;</span>, <span class="dv">3</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb3-1" title="1">  .order(<span class="st">:title</span>)</a>
+<a class="sourceLine" id="cb3-2" title="2">  .order(<span class="st">title: :desc</span>)</a>
+<a class="sourceLine" id="cb3-3" title="3">  .order(<span class="st">&quot;title DESC&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb4-1" title="1">  .reorder(<span class="st">:title</span>)  <span class="co"># discards other .order&#39;s</span></a>
+<a class="sourceLine" id="cb4-2" title="2">  .rewhere(...)     <span class="co"># discards other .where&#39;s</span></a></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb5-1" title="1">  .limit(<span class="dv">2</span>)</a>
+<a class="sourceLine" id="cb5-2" title="2">  .offset(<span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb5-3" title="3">  .uniq</a></code></pre></div>
+<p>See: <a href="http://devdocs.io/rails/activerecord/querymethods">QueryMethods</a></p>
+<h3 id="advanced-query-methods">Advanced query methods</h3>
+<div class="sourceCode" id="cb6"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb6-1" title="1">items = <span class="dt">Model</span></a>
+<a class="sourceLine" id="cb6-2" title="2">  .select(<span class="st">:id</span>)</a>
+<a class="sourceLine" id="cb6-3" title="3">  .select([<span class="st">:id</span>, <span class="st">:name</span>])</a></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb7-1" title="1">  .group(<span class="st">:name</span>)   <span class="co"># GROUP BY name</span></a>
+<a class="sourceLine" id="cb7-2" title="2">  .group(<span class="st">&#39;name AS grouped_name, age&#39;</span>)</a>
+<a class="sourceLine" id="cb7-3" title="3">  .having(<span class="st">&#39;SUM(price) &gt; 30&#39;</span>)  <span class="co"># needs to be chained with .group</span></a></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb8-1" title="1">  .includes(<span class="st">:user</span>)</a>
+<a class="sourceLine" id="cb8-2" title="2">  .includes(<span class="st">user: </span>[<span class="st">:articles</span>])</a></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb9-1" title="1">  .references(<span class="st">:posts</span>)</a>
+<a class="sourceLine" id="cb9-2" title="2">  <span class="co"># aka: .where(&quot;posts.name = &#39;foo&#39;&quot;).references(:posts)</span></a></code></pre></div>
+<h3 id="finder-methods">Finder methods</h3>
+<div class="sourceCode" id="cb10"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb10-1" title="1">item = <span class="dt">Model</span>.find(id)</a>
+<a class="sourceLine" id="cb10-2" title="2">item = <span class="dt">Model</span>.find_by_email(email)</a>
+<a class="sourceLine" id="cb10-3" title="3">item = <span class="dt">Model</span>.where(<span class="st">email: </span>email).first</a></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb11-1" title="1"><span class="dt">Model</span></a>
+<a class="sourceLine" id="cb11-2" title="2">  .exists?(<span class="dv">5</span>)</a>
+<a class="sourceLine" id="cb11-3" title="3">  .exists?(<span class="st">name: &quot;David&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb12-1" title="1">  .first</a>
+<a class="sourceLine" id="cb12-2" title="2">  .last</a>
+<a class="sourceLine" id="cb12-3" title="3">  .find_nth(<span class="dv">4</span>, [offset])</a></code></pre></div>
+<p>See: <a href="http://devdocs.io/rails/activerecord/findermethods">FinderMethods</a></p>
+<h3 id="persistence">Persistence</h3>
+<div class="sourceCode" id="cb13"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb13-1" title="1">item.new_record?</a>
+<a class="sourceLine" id="cb13-2" title="2">item.persisted?</a>
+<a class="sourceLine" id="cb13-3" title="3">item.destroyed?</a>
+<a class="sourceLine" id="cb13-4" title="4"></a>
+<a class="sourceLine" id="cb13-5" title="5">item.serialize_hash</a></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb14-1" title="1">item.save</a>
+<a class="sourceLine" id="cb14-2" title="2">item.save!      <span class="co"># Same as above, but raises an Exception</span></a></code></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb15-1" title="1">item.update  <span class="st">name: &#39;John&#39;</span>  <span class="co"># Saves immediately</span></a>
+<a class="sourceLine" id="cb15-2" title="2">item.update! <span class="st">name: &#39;John&#39;</span></a></code></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb16-1" title="1">item.update_column  <span class="st">:name</span>, <span class="st">&#39;John&#39;</span>  <span class="co"># skips validations and callbacks</span></a>
+<a class="sourceLine" id="cb16-2" title="2">item.update_columns  <span class="st">name: &#39;John&#39;</span></a>
+<a class="sourceLine" id="cb16-3" title="3">item.update_columns! <span class="st">name: &#39;John&#39;</span></a></code></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb17-1" title="1">item.touch                 <span class="co"># updates :updated_at</span></a>
+<a class="sourceLine" id="cb17-2" title="2">item.touch <span class="st">:published_at</span></a></code></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb18-1" title="1">item.destroy</a>
+<a class="sourceLine" id="cb18-2" title="2">item.delete  <span class="co"># skips callbacks</span></a></code></pre></div>
+<div class="sourceCode" id="cb19"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb19-1" title="1"><span class="dt">Model</span>.create     <span class="co"># Same an #new then #save</span></a>
+<a class="sourceLine" id="cb19-2" title="2"><span class="dt">Model</span>.create!    <span class="co"># Same as above, but raises an Exception</span></a></code></pre></div>
+<p>See: <a href="http://devdocs.io/rails/activerecord/persistence">Persistence</a></p>
+<h3 id="attribute-assignment">Attribute Assignment</h3>
+<div class="sourceCode" id="cb20"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb20-1" title="1">item.attributes                      <span class="co"># #&lt;Hash&gt;</span></a></code></pre></div>
+<div class="sourceCode" id="cb21"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb21-1" title="1">item.attributes = { <span class="st">name: &#39;John&#39;</span> }   <span class="co"># Merges attributes in. Doesn&#39;t save.</span></a>
+<a class="sourceLine" id="cb21-2" title="2">item.assign_attributes <span class="st">name: &#39;John&#39;</span>  <span class="co"># Same as above</span></a></code></pre></div>
+<p>See: <a href="http://devdocs.io/rails/activerecord/attributeassignment">AttributeAssignment</a></p>
+<h3 id="dirty">Dirty</h3>
+<div class="sourceCode" id="cb22"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb22-1" title="1">item.changed?</a>
+<a class="sourceLine" id="cb22-2" title="2">item.changed             <span class="co"># [&#39;name&#39;]</span></a>
+<a class="sourceLine" id="cb22-3" title="3">item.changed_attributes  <span class="co"># { &#39;name&#39; =&gt; &#39;Bob&#39; } - original values</span></a>
+<a class="sourceLine" id="cb22-4" title="4">item.changes             <span class="co"># { &#39;name&#39; =&gt; [&#39;Bob&#39;, &#39;Robert&#39;] }</span></a>
+<a class="sourceLine" id="cb22-5" title="5">item.previous_changes    <span class="co"># available after #save</span></a>
+<a class="sourceLine" id="cb22-6" title="6">item.restore_attributes</a></code></pre></div>
+<div class="sourceCode" id="cb23"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb23-1" title="1">item.name = <span class="st">&#39;Robert&#39;</span></a>
+<a class="sourceLine" id="cb23-2" title="2">item.name_was         <span class="co"># &#39;Bob&#39;</span></a>
+<a class="sourceLine" id="cb23-3" title="3">item.name_change      <span class="co"># [ &#39;Bob&#39;, &#39;Robert&#39; ]</span></a>
+<a class="sourceLine" id="cb23-4" title="4">item.name_changed?    <span class="co"># true</span></a>
+<a class="sourceLine" id="cb23-5" title="5">item.name_changed?(<span class="st">from: &#39;Bob&#39;</span>, <span class="st">to: &#39;Robert&#39;</span>)</a></code></pre></div>
+<p>See: <a href="http://devdocs.io/rails/activemodel/dirty">Dirty</a></p>
+<h3 id="validations">Validations</h3>
+<div class="sourceCode" id="cb24"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb24-1" title="1">item.valid?</a>
+<a class="sourceLine" id="cb24-2" title="2">item.invalid?</a></code></pre></div>
+<p>See: <a href="http://devdocs.io/rails/activerecord/validations">Validations</a></p>
+<h3 id="calculations">Calculations</h3>
+<div class="sourceCode" id="cb25"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb25-1" title="1"><span class="dt">Person</span>.count</a>
+<a class="sourceLine" id="cb25-2" title="2"><span class="dt">Person</span>.count(<span class="st">:age</span>)    <span class="co"># counts non-nil&#39;s</span></a></code></pre></div>
+<div class="sourceCode" id="cb26"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb26-1" title="1"><span class="dt">Person</span>.average(<span class="st">:age</span>)</a>
+<a class="sourceLine" id="cb26-2" title="2"><span class="dt">Person</span>.maximum(<span class="st">:age</span>)</a>
+<a class="sourceLine" id="cb26-3" title="3"><span class="dt">Person</span>.minimum(<span class="st">:age</span>)</a>
+<a class="sourceLine" id="cb26-4" title="4"><span class="dt">Person</span>.sum(<span class="st">&#39;2 * age&#39;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb27"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb27-1" title="1"><span class="dt">Person</span>.calculate(<span class="st">:count</span>, <span class="st">:all</span>)</a></code></pre></div>
+<p>Advanced:</p>
+<div class="sourceCode" id="cb28"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb28-1" title="1"><span class="dt">Person</span>.distinct.count</a>
+<a class="sourceLine" id="cb28-2" title="2"><span class="dt">Person</span>.group(<span class="st">:city</span>).count</a></code></pre></div>
+<p>See: <a href="http://devdocs.io/rails/activerecord/calculations">Calculations</a></p>
+<h3 id="dynamic-attribute-based-finders">Dynamic attribute-based finders</h3>
+<p>Given a field called <code>name</code>: {: .-setup}</p>
+<div class="sourceCode" id="cb29"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb29-1" title="1"><span class="co"># Returns one record</span></a>
+<a class="sourceLine" id="cb29-2" title="2"><span class="dt">Person</span>.find_by_name(name)</a>
+<a class="sourceLine" id="cb29-3" title="3"><span class="dt">Person</span>.find_last_by_name(name)</a>
+<a class="sourceLine" id="cb29-4" title="4"><span class="dt">Person</span>.find_or_create_by_name(name)</a>
+<a class="sourceLine" id="cb29-5" title="5"><span class="dt">Person</span>.find_or_initialize_by_name(name)</a></code></pre></div>
+<div class="sourceCode" id="cb30"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb30-1" title="1"><span class="co"># Returns a list of records</span></a>
+<a class="sourceLine" id="cb30-2" title="2"><span class="dt">Person</span>.find_all_by_name(name)</a></code></pre></div>
+<div class="sourceCode" id="cb31"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb31-1" title="1"><span class="co"># Add a bang to make it raise an exception</span></a>
+<a class="sourceLine" id="cb31-2" title="2"><span class="dt">Person</span>.find_by_name!(name)</a></code></pre></div>
+<div class="sourceCode" id="cb32"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb32-1" title="1"><span class="co"># You may use `scoped` instead of `find`</span></a>
+<a class="sourceLine" id="cb32-2" title="2"><span class="dt">Person</span>.scoped_by_user_name</a></code></pre></div>
+<h2 id="associations">Associations</h2>
+<h3 id="associations-1">Associations</h3>
+<ul>
+<li><code>belongs_to</code></li>
+<li><code>has_one</code></li>
+<li><code>has_many</code></li>
+<li><code>has_many :through</code></li>
+<li><code>has_one :through</code></li>
+<li><code>has_and_belongs_to_many</code></li>
+</ul>
+<h3 id="has-many">Has many</h3>
+<div class="sourceCode" id="cb33"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb33-1" title="1">belongs_to <span class="st">:parent</span>, <span class="st">:foreign_key</span> =&gt; <span class="st">&#39;parent_id&#39;</span> <span class="kw">class</span><span class="st">_name: &#39;Folder&#39;</span></a>
+<a class="sourceLine" id="cb33-2" title="2">has_many <span class="st">:folders</span>, <span class="st">:foreign_key</span> =&gt; <span class="st">&#39;parent_id&#39;</span>, <span class="kw">class</span><span class="st">_name: &#39;Folder&#39;</span></a>
+<a class="sourceLine" id="cb33-3" title="3"></a>
+<a class="sourceLine" id="cb33-4" title="4">has_many <span class="st">:comments</span>,                -&gt; { order(<span class="st">&#39;posted_on DESC&#39;</span>) }</a>
+<a class="sourceLine" id="cb33-5" title="5">has_many <span class="st">:comments</span>,    <span class="st">:include</span>    =&gt; <span class="st">:author</span></a>
+<a class="sourceLine" id="cb33-6" title="6">has_many <span class="st">:people</span>,      <span class="st">:class_name</span> =&gt; <span class="st">&quot;Person&quot;</span></a>
+<a class="sourceLine" id="cb33-7" title="7">has_many <span class="st">:people</span>,      <span class="st">:conditions</span> =&gt; <span class="st">&quot;deleted = 0&quot;</span></a>
+<a class="sourceLine" id="cb33-8" title="8">has_many <span class="st">:tracks</span>,                  -&gt; { order(<span class="st">:position</span>) }</a>
+<a class="sourceLine" id="cb33-9" title="9">has_many <span class="st">:comments</span>,    <span class="st">:dependent</span>  =&gt; <span class="st">:nullify</span></a>
+<a class="sourceLine" id="cb33-10" title="10">has_many <span class="st">:comments</span>,    <span class="st">:dependent</span>  =&gt; <span class="st">:destroy</span></a>
+<a class="sourceLine" id="cb33-11" title="11">has_many <span class="st">:tags</span>,        <span class="st">:as</span>         =&gt; <span class="st">:taggable</span></a>
+<a class="sourceLine" id="cb33-12" title="12">has_many <span class="st">:reports</span>,     <span class="st">:readonly</span>   =&gt; <span class="dv">true</span></a>
+<a class="sourceLine" id="cb33-13" title="13">has_many <span class="st">:subscribers</span>, <span class="st">:through</span>    =&gt; <span class="st">:subscriptions</span>, <span class="kw">class</span><span class="st">_name: &quot;User&quot;</span>, <span class="st">:source</span> =&gt; <span class="st">:user</span></a>
+<a class="sourceLine" id="cb33-14" title="14">has_many <span class="st">:subscribers</span>, <span class="st">:finder_sql</span> =&gt;</a>
+<a class="sourceLine" id="cb33-15" title="15">    <span class="st">&#39;SELECT DISTINCT people.* &#39;</span> +</a>
+<a class="sourceLine" id="cb33-16" title="16">    <span class="st">&#39;FROM people p, post_subscriptions ps &#39;</span> +</a>
+<a class="sourceLine" id="cb33-17" title="17">    <span class="st">&#39;WHERE ps.post_id = #{id} AND ps.person_id = p.id &#39;</span> +</a>
+<a class="sourceLine" id="cb33-18" title="18">    <span class="st">&#39;ORDER BY p.first_name&#39;</span></a></code></pre></div>
+<h3 id="belongs-to">belongs to</h3>
+<div class="sourceCode" id="cb34"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb34-1" title="1">belongs_to <span class="st">:author</span>,</a>
+<a class="sourceLine" id="cb34-2" title="2">  <span class="st">:dependent</span>      =&gt; <span class="st">:destroy</span>    <span class="co"># or :delete</span></a>
+<a class="sourceLine" id="cb34-3" title="3"></a>
+<a class="sourceLine" id="cb34-4" title="4">  <span class="st">:class_name</span>     =&gt; <span class="st">&quot;Person&quot;</span></a>
+<a class="sourceLine" id="cb34-5" title="5">  <span class="st">:select</span>         =&gt; <span class="st">&quot;*&quot;</span></a>
+<a class="sourceLine" id="cb34-6" title="6">  <span class="st">:counter_cache</span>  =&gt; <span class="dv">true</span></a>
+<a class="sourceLine" id="cb34-7" title="7">  <span class="st">:counter_cache</span>  =&gt; <span class="st">:custom_counter</span></a>
+<a class="sourceLine" id="cb34-8" title="8">  <span class="st">:include</span>        =&gt; <span class="st">&quot;Book&quot;</span></a>
+<a class="sourceLine" id="cb34-9" title="9">  <span class="st">:readonly</span>       =&gt; <span class="dv">true</span></a>
+<a class="sourceLine" id="cb34-10" title="10"></a>
+<a class="sourceLine" id="cb34-11" title="11">  <span class="st">:conditions</span>     =&gt; <span class="st">&#39;published = true&#39;</span></a>
+<a class="sourceLine" id="cb34-12" title="12"></a>
+<a class="sourceLine" id="cb34-13" title="13">  <span class="st">:touch</span>          =&gt; <span class="dv">true</span></a>
+<a class="sourceLine" id="cb34-14" title="14">  <span class="st">:touch</span>          =&gt; <span class="st">:authors_last_updated_at</span></a>
+<a class="sourceLine" id="cb34-15" title="15"></a>
+<a class="sourceLine" id="cb34-16" title="16">  <span class="st">:primary_key</span>    =&gt; <span class="st">&quot;name&quot;</span></a>
+<a class="sourceLine" id="cb34-17" title="17">  <span class="st">:foreign_key</span>    =&gt; <span class="st">&quot;author_name&quot;</span></a></code></pre></div>
+<h3 id="many-to-many">Many-to-many</h3>
+<p>If you have a join model: {: .-setup}</p>
+<div class="sourceCode" id="cb35"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb35-1" title="1"><span class="kw">class</span> <span class="dt">Programmer</span> &lt; <span class="dt">ActiveRecord</span>::<span class="dt">Base</span></a>
+<a class="sourceLine" id="cb35-2" title="2">  has_many <span class="st">:assignments</span></a>
+<a class="sourceLine" id="cb35-3" title="3">  has_many <span class="st">:projects</span>, <span class="st">:through</span> =&gt; <span class="st">:assignments</span></a>
+<a class="sourceLine" id="cb35-4" title="4"><span class="kw">end</span></a></code></pre></div>
+<p>{: data-line=“2,3”}</p>
+<div class="sourceCode" id="cb36"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb36-1" title="1"><span class="kw">class</span> <span class="dt">Project</span> &lt; <span class="dt">ActiveRecord</span>::<span class="dt">Base</span></a>
+<a class="sourceLine" id="cb36-2" title="2">  has_many <span class="st">:assignments</span></a>
+<a class="sourceLine" id="cb36-3" title="3">  has_many <span class="st">:programmers</span>, <span class="st">:through</span> =&gt; <span class="st">:assignments</span></a>
+<a class="sourceLine" id="cb36-4" title="4"><span class="kw">end</span></a></code></pre></div>
+<p>{: data-line=“2,3”}</p>
+<div class="sourceCode" id="cb37"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb37-1" title="1"><span class="kw">class</span> <span class="dt">Assignment</span></a>
+<a class="sourceLine" id="cb37-2" title="2">  belongs_to <span class="st">:project</span></a>
+<a class="sourceLine" id="cb37-3" title="3">  belongs_to <span class="st">:programmer</span></a>
+<a class="sourceLine" id="cb37-4" title="4"><span class="kw">end</span></a></code></pre></div>
+<p>{: data-line=“2,3”}</p>
+<h3 id="many-to-many-habtm">Many-to-many (HABTM)</h3>
+<div class="sourceCode" id="cb38"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb38-1" title="1">has_and_belongs_to_many <span class="st">:projects</span></a>
+<a class="sourceLine" id="cb38-2" title="2">has_and_belongs_to_many <span class="st">:projects</span>, <span class="st">:include</span> =&gt; [ <span class="st">:milestones</span>, <span class="st">:manager</span> ]</a>
+<a class="sourceLine" id="cb38-3" title="3">has_and_belongs_to_many <span class="st">:nations</span>, <span class="st">:class_name</span> =&gt; <span class="st">&quot;Country&quot;</span></a>
+<a class="sourceLine" id="cb38-4" title="4">has_and_belongs_to_many <span class="st">:categories</span>, <span class="st">:join_table</span> =&gt; <span class="st">&quot;prods_cats&quot;</span></a>
+<a class="sourceLine" id="cb38-5" title="5">has_and_belongs_to_many <span class="st">:categories</span>, <span class="st">:readonly</span> =&gt; <span class="dv">true</span></a>
+<a class="sourceLine" id="cb38-6" title="6">has_and_belongs_to_many <span class="st">:active_projects</span>, <span class="st">:join_table</span> =&gt; <span class="st">&#39;developers_projects&#39;</span>, <span class="st">:delete_sql</span> =&gt;</a>
+<a class="sourceLine" id="cb38-7" title="7"><span class="st">&quot;DELETE FROM developers_projects WHERE active=1 AND developer_id = </span><span class="ot">#{</span>id<span class="ot">}</span><span class="st"> AND project_id = </span><span class="ot">#{</span>record.id<span class="ot">}</span><span class="st">&quot;</span></a></code></pre></div>
+<h3 id="polymorphic-associations">Polymorphic associations</h3>
+<div class="sourceCode" id="cb39"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb39-1" title="1"><span class="kw">class</span> <span class="dt">Post</span></a>
+<a class="sourceLine" id="cb39-2" title="2">  has_many <span class="st">:attachments</span>, <span class="st">as: :parent</span></a>
+<a class="sourceLine" id="cb39-3" title="3"><span class="kw">end</span></a></code></pre></div>
+<p>{: data-line=“2”}</p>
+<div class="sourceCode" id="cb40"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb40-1" title="1"><span class="kw">class</span> <span class="dt">Image</span></a>
+<a class="sourceLine" id="cb40-2" title="2">  belongs_to <span class="st">:parent</span>, <span class="st">polymorphic: </span><span class="dv">true</span></a>
+<a class="sourceLine" id="cb40-3" title="3"><span class="kw">end</span></a></code></pre></div>
+<p>{: data-line=“2”}</p>
+<p>And in migrations:</p>
+<div class="sourceCode" id="cb41"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb41-1" title="1">create_table <span class="st">:images</span> <span class="kw">do</span> |t|</a>
+<a class="sourceLine" id="cb41-2" title="2">  t.references <span class="st">:post</span>, <span class="st">polymorphic: </span><span class="dv">true</span></a>
+<a class="sourceLine" id="cb41-3" title="3"><span class="kw">end</span></a></code></pre></div>
+<p>{: data-line=“2”}</p>
+<h2 id="validation">Validation</h2>
+<h3 id="validation-1">Validation</h3>
+<div class="sourceCode" id="cb42"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb42-1" title="1"><span class="kw">class</span> <span class="dt">Person</span> &lt; <span class="dt">ActiveRecord</span>::<span class="dt">Base</span></a></code></pre></div>
+<p>{:.-setup}</p>
+<div class="sourceCode" id="cb43"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb43-1" title="1">  <span class="co"># Presence</span></a>
+<a class="sourceLine" id="cb43-2" title="2">  validates <span class="st">:name</span>,     <span class="st">presence: </span><span class="dv">true</span></a></code></pre></div>
+<p>{: data-line=“2”}</p>
+<div class="sourceCode" id="cb44"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb44-1" title="1">  <span class="co"># Acceptance</span></a>
+<a class="sourceLine" id="cb44-2" title="2">  validates <span class="st">:terms</span>,    <span class="st">acceptance: </span><span class="dv">true</span></a></code></pre></div>
+<div class="sourceCode" id="cb45"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb45-1" title="1">  <span class="co"># Confirm</span></a>
+<a class="sourceLine" id="cb45-2" title="2">  validates <span class="st">:email</span>,    <span class="st">confirmation: </span><span class="dv">true</span></a></code></pre></div>
+<div class="sourceCode" id="cb46"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb46-1" title="1">  <span class="co"># Unique</span></a>
+<a class="sourceLine" id="cb46-2" title="2">  validates <span class="st">:slug</span>,     <span class="st">uniqueness: </span><span class="dv">true</span></a>
+<a class="sourceLine" id="cb46-3" title="3">  validates <span class="st">:slug</span>,     <span class="st">uniqueness: </span>{ <span class="kw">case</span><span class="st">_sensitive: </span><span class="dv">false</span> }</a>
+<a class="sourceLine" id="cb46-4" title="4">  validates <span class="st">:holiday</span>,  <span class="st">uniqueness: </span>{ <span class="st">scope: :year</span>, <span class="st">message: &#39;yearly only&#39;</span> }</a></code></pre></div>
+<div class="sourceCode" id="cb47"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb47-1" title="1">  <span class="co"># Format</span></a>
+<a class="sourceLine" id="cb47-2" title="2">  validates <span class="st">:code</span>,     format: <span class="ot">/regex/</span></a>
+<a class="sourceLine" id="cb47-3" title="3">  validates <span class="st">:code</span>,     format: { <span class="st">with: </span><span class="ot">/regex/</span> }</a></code></pre></div>
+<div class="sourceCode" id="cb48"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb48-1" title="1">  <span class="co"># Length</span></a>
+<a class="sourceLine" id="cb48-2" title="2">  validates <span class="st">:name</span>,     <span class="st">length: </span>{ <span class="st">minimum: </span><span class="dv">2</span> }</a>
+<a class="sourceLine" id="cb48-3" title="3">  validates <span class="st">:bio</span>,      <span class="st">length: </span>{ <span class="st">maximum: </span><span class="dv">500</span> }</a>
+<a class="sourceLine" id="cb48-4" title="4">  validates <span class="st">:password</span>, <span class="st">length: </span>{ <span class="kw">in</span>: =&gt; <span class="dv">6</span>..<span class="dv">20</span> }</a>
+<a class="sourceLine" id="cb48-5" title="5">  validates <span class="st">:number</span>,   <span class="st">length: </span>{ <span class="st">is: </span>=&gt; <span class="dv">6</span> }</a></code></pre></div>
+<div class="sourceCode" id="cb49"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb49-1" title="1">  <span class="co"># Include/exclude</span></a>
+<a class="sourceLine" id="cb49-2" title="2">  validates <span class="st">:gender</span>,   <span class="st">inclusion: </span><span class="ot">%w(</span><span class="st">male female</span><span class="ot">)</span></a>
+<a class="sourceLine" id="cb49-3" title="3">  validates <span class="st">:gender</span>,   <span class="st">inclusion: </span>{ <span class="kw">in</span>:<span class="ot"> %w(</span><span class="st">male female</span><span class="ot">)</span> }</a>
+<a class="sourceLine" id="cb49-4" title="4">  validates <span class="st">:lol</span>,      <span class="st">exclusion: </span><span class="ot">%w(</span><span class="st">xyz</span><span class="ot">)</span></a></code></pre></div>
+<div class="sourceCode" id="cb50"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb50-1" title="1">  <span class="co"># Numeric</span></a>
+<a class="sourceLine" id="cb50-2" title="2">  validates <span class="st">:points</span>,   <span class="st">numericality: </span><span class="dv">true</span></a>
+<a class="sourceLine" id="cb50-3" title="3">  validates <span class="st">:played</span>,   <span class="st">numericality: </span>{ <span class="st">only_integer: </span><span class="dv">true</span> }</a>
+<a class="sourceLine" id="cb50-4" title="4">  <span class="co"># ... greater_than, greater_than_or_equal_to,</span></a>
+<a class="sourceLine" id="cb50-5" title="5">  <span class="co"># ... less_than, less_than_or_equal_to</span></a>
+<a class="sourceLine" id="cb50-6" title="6">  <span class="co"># ... odd, even, equal_to</span></a></code></pre></div>
+<div class="sourceCode" id="cb51"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb51-1" title="1">  <span class="co"># Validate the associated records to ensure they&#39;re valid as well</span></a>
+<a class="sourceLine" id="cb51-2" title="2">  has_many <span class="st">:books</span></a>
+<a class="sourceLine" id="cb51-3" title="3">  validates_associated <span class="st">:books</span></a></code></pre></div>
+<div class="sourceCode" id="cb52"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb52-1" title="1">  <span class="co"># Length (full options)</span></a>
+<a class="sourceLine" id="cb52-2" title="2">  validates <span class="st">:content</span>, <span class="st">length: </span>{</a>
+<a class="sourceLine" id="cb52-3" title="3">    <span class="st">minimum: </span>  <span class="dv">300</span>,</a>
+<a class="sourceLine" id="cb52-4" title="4">    <span class="st">maximum: </span>  <span class="dv">400</span>,</a>
+<a class="sourceLine" id="cb52-5" title="5">    <span class="st">tokenizer: </span>lambda { |str| str.scan(<span class="ot">/\w+/</span>) },</a>
+<a class="sourceLine" id="cb52-6" title="6">    <span class="st">too_short: &quot;must have at least %{count} words&quot;</span>,</a>
+<a class="sourceLine" id="cb52-7" title="7">    <span class="st">too_long: </span> <span class="st">&quot;must have at most %{count} words&quot;</span> }</a></code></pre></div>
+<div class="sourceCode" id="cb53"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb53-1" title="1">  <span class="co"># Multiple</span></a>
+<a class="sourceLine" id="cb53-2" title="2">  validates <span class="st">:login</span>, <span class="st">:email</span>, <span class="st">presence: </span><span class="dv">true</span></a></code></pre></div>
+<div class="sourceCode" id="cb54"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb54-1" title="1">  <span class="co"># Conditional</span></a>
+<a class="sourceLine" id="cb54-2" title="2">  validates <span class="st">:description</span>, <span class="st">presence: </span><span class="dv">true</span>, <span class="kw">if</span>: <span class="st">:published?</span></a>
+<a class="sourceLine" id="cb54-3" title="3">  validates <span class="st">:description</span>, <span class="st">presence: </span><span class="dv">true</span>, <span class="kw">if</span>: lambda { |obj| .. }</a></code></pre></div>
+<div class="sourceCode" id="cb55"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb55-1" title="1">  validates <span class="st">:title</span>, <span class="st">presence: </span><span class="dv">true</span>, <span class="st">on: :save</span>   <span class="co"># :save | :create | :update</span></a></code></pre></div>
+<div class="sourceCode" id="cb56"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb56-1" title="1"><span class="kw">end</span></a></code></pre></div>
+<p>{: .-setup}</p>
+<h3 id="custom-validations">Custom validations</h3>
+<div class="sourceCode" id="cb57"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb57-1" title="1"><span class="kw">class</span> <span class="dt">Person</span> &lt; <span class="dt">ActiveRecord</span>::<span class="dt">Base</span></a>
+<a class="sourceLine" id="cb57-2" title="2">  validate <span class="st">:foo_cant_be_nil</span></a>
+<a class="sourceLine" id="cb57-3" title="3"></a>
+<a class="sourceLine" id="cb57-4" title="4">  <span class="kw">def</span> foo_cant_be_nil</a>
+<a class="sourceLine" id="cb57-5" title="5">    errors.add(<span class="st">:foo</span>, <span class="st">&#39;cant be nil&#39;</span>)  <span class="kw">if</span> foo.nil?</a>
+<a class="sourceLine" id="cb57-6" title="6">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb57-7" title="7"><span class="kw">end</span></a></code></pre></div>
+<p>{: data-line=“2”}</p>
+<h3 id="errors">Errors</h3>
+<div class="sourceCode" id="cb58"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb58-1" title="1">record.errors.valid?      <span class="co"># → false</span></a>
+<a class="sourceLine" id="cb58-2" title="2">record.errors             <span class="co"># → { :name =&gt; [&quot;can&#39;t be blank&quot;] }</span></a>
+<a class="sourceLine" id="cb58-3" title="3">record.errors.messages    <span class="co"># → { :name =&gt; [&quot;can&#39;t be blank&quot;] }</span></a></code></pre></div>
+<div class="sourceCode" id="cb59"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb59-1" title="1">record.errors[<span class="st">:name</span>].any?</a></code></pre></div>
+<h2 id="other-api">Other API</h2>
+<h3 id="callbacks">Callbacks</h3>
+<ul>
+<li><a href="http://guides.rubyonrails.org/active_record_validations_callbacks.html">Guides: callbacks</a></li>
+</ul>
+<h3 id="mass-updates">Mass updates</h3>
+<div class="sourceCode" id="cb60"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb60-1" title="1"><span class="co"># Updates person id 15</span></a>
+<a class="sourceLine" id="cb60-2" title="2"><span class="dt">Person</span>.update <span class="dv">15</span>, <span class="st">name: &quot;John&quot;</span>, <span class="st">age: </span><span class="dv">24</span></a>
+<a class="sourceLine" id="cb60-3" title="3"><span class="dt">Person</span>.update [<span class="dv">1</span>,<span class="dv">2</span>], [{<span class="st">name: &quot;John&quot;</span>}, {<span class="st">name: &quot;foo&quot;</span>}]</a></code></pre></div>
+<h3 id="joining">Joining</h3>
+<div class="sourceCode" id="cb61"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb61-1" title="1"><span class="co"># Basic joins</span></a>
+<a class="sourceLine" id="cb61-2" title="2"><span class="dt">Student</span>.joins(<span class="st">:schools</span>).where(<span class="st">schools: </span>{ <span class="st">type: &#39;public&#39;</span> })</a>
+<a class="sourceLine" id="cb61-3" title="3"><span class="dt">Student</span>.joins(<span class="st">:schools</span>).where(<span class="st">&#39;schools.type&#39;</span> =&gt; <span class="st">&#39;public&#39;</span> )</a></code></pre></div>
+<div class="sourceCode" id="cb62"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb62-1" title="1"><span class="co"># Multiple associations</span></a>
+<a class="sourceLine" id="cb62-2" title="2"><span class="dt">Article</span>.joins(<span class="st">:category</span>, <span class="st">:comments</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb63"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb63-1" title="1"><span class="co"># Nested associations</span></a>
+<a class="sourceLine" id="cb63-2" title="2"><span class="dt">Article</span>.joins(<span class="st">comments: :guest</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb64"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb64-1" title="1"><span class="co"># SQL</span></a>
+<a class="sourceLine" id="cb64-2" title="2"><span class="dt">Author</span>.joins(</a>
+<a class="sourceLine" id="cb64-3" title="3">  <span class="st">&#39;INNER JOIN posts &#39;</span> +</a>
+<a class="sourceLine" id="cb64-4" title="4">  <span class="st">&#39;ON posts.author_id = authors.id &#39;</span> +</a>
+<a class="sourceLine" id="cb64-5" title="5">  <span class="st">&#39;AND posts.published = &quot;t&quot;&#39;</span></a>
+<a class="sourceLine" id="cb64-6" title="6">)</a></code></pre></div>
+<h3 id="where-interpolation">Where interpolation</h3>
+<div class="sourceCode" id="cb65"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb65-1" title="1">where(<span class="st">&#39;name = ?&#39;</span>, <span class="st">&#39;John&#39;</span>)</a>
+<a class="sourceLine" id="cb65-2" title="2">where([<span class="st">&#39;name = :name&#39;</span>, { <span class="st">name: &#39;John&#39;</span> }])</a></code></pre></div>
+<h3 id="serialize">Serialize</h3>
+<div class="sourceCode" id="cb66"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb66-1" title="1"><span class="kw">class</span> <span class="dt">User</span> &lt; <span class="dt">ActiveRecord</span>::<span class="dt">Base</span></a>
+<a class="sourceLine" id="cb66-2" title="2">  serialize <span class="st">:preferences</span></a>
+<a class="sourceLine" id="cb66-3" title="3"><span class="kw">end</span></a></code></pre></div>
+<p>{: data-line=“2”}</p>
+<div class="sourceCode" id="cb67"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb67-1" title="1">user = <span class="dt">User</span>.create(</a>
+<a class="sourceLine" id="cb67-2" title="2">  <span class="st">preferences: </span>{</a>
+<a class="sourceLine" id="cb67-3" title="3">    <span class="st">&#39;background&#39;</span> =&gt; <span class="st">&#39;black&#39;</span>,</a>
+<a class="sourceLine" id="cb67-4" title="4">    <span class="st">&#39;display&#39;</span> =&gt; <span class="st">&#39;large&#39;</span></a>
+<a class="sourceLine" id="cb67-5" title="5">  }</a>
+<a class="sourceLine" id="cb67-6" title="6">)</a></code></pre></div>
+<p>You can also specify a class option as the second parameter that’ll raise an exception if a serialized object is retrieved as a descendant of a class not in the hierarchy.</p>
+<div class="sourceCode" id="cb68"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb68-1" title="1"><span class="co"># Only Hash allowed!</span></a>
+<a class="sourceLine" id="cb68-2" title="2"><span class="kw">class</span> <span class="dt">User</span> &lt; <span class="dt">ActiveRecord</span>::<span class="dt">Base</span></a>
+<a class="sourceLine" id="cb68-3" title="3">  serialize <span class="st">:preferences</span>, <span class="dt">Hash</span></a>
+<a class="sourceLine" id="cb68-4" title="4"><span class="kw">end</span></a></code></pre></div>
+<div class="sourceCode" id="cb69"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb69-1" title="1"><span class="co"># Reading it raises SerializationTypeMismatch</span></a>
+<a class="sourceLine" id="cb69-2" title="2">user = <span class="dt">User</span>.create(<span class="st">preferences: </span><span class="ot">%w(</span><span class="st">one two three</span><span class="ot">)</span>)</a>
+<a class="sourceLine" id="cb69-3" title="3"><span class="dt">User</span>.find(user.id).preferences</a></code></pre></div>
+<h2 id="other-tricks">Other tricks</h2>
+<h3 id="overriding-accessors">Overriding accessors</h3>
+<div class="sourceCode" id="cb70"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb70-1" title="1"><span class="kw">class</span> <span class="dt">Song</span> &lt; <span class="dt">ActiveRecord</span>::<span class="dt">Base</span></a>
+<a class="sourceLine" id="cb70-2" title="2">  <span class="co"># Uses an integer of seconds to hold the length of the song</span></a>
+<a class="sourceLine" id="cb70-3" title="3"></a>
+<a class="sourceLine" id="cb70-4" title="4">  <span class="kw">def</span> length=(minutes)</a>
+<a class="sourceLine" id="cb70-5" title="5">    write_attribute(<span class="st">:length</span>, minutes.to_i * <span class="dv">60</span>)</a>
+<a class="sourceLine" id="cb70-6" title="6">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb70-7" title="7"></a>
+<a class="sourceLine" id="cb70-8" title="8">  <span class="kw">def</span> length</a>
+<a class="sourceLine" id="cb70-9" title="9">    read_attribute(<span class="st">:length</span>) / <span class="dv">60</span></a>
+<a class="sourceLine" id="cb70-10" title="10">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb70-11" title="11"><span class="kw">end</span></a></code></pre></div>
+<p>{: data-line=“4,8”}</p>
+<p>See: <a href="http://api.rubyonrails.org/classes/ActiveRecord/Base.html" class="uri">http://api.rubyonrails.org/classes/ActiveRecord/Base.html</a></p>
+<h2 id="callbacks-1">Callbacks</h2>
+<ul>
+<li>after_create</li>
+<li>after_initialize</li>
+<li>after_validation</li>
+<li>after_save</li>
+<li>after_commit</li>
+</ul>
+</body>
+</html>

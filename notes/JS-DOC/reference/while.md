@@ -1,8 +1,10 @@
-# while
+while
+=====
 
 The **while statement** creates a loop that executes a specified statement as long as the test condition evaluates to true. The condition is evaluated before executing the statement.
 
-## Syntax
+Syntax
+------
 
     while (condition)
       statement
@@ -15,7 +17,8 @@ An optional statement that is executed as long as the condition evaluates to tru
 
 Note: Use the `break` statement to stop a loop before condition evaluates to true.
 
-## Examples
+Examples
+--------
 
 ### Using while
 
@@ -37,14 +40,14 @@ Each iteration, the loop increments `n` and adds it to `x`. Therefore, `x` and `
 
 After completing the third pass, the condition `n` &lt; 3 is no longer true, so the loop terminates.
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-while-statement">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-while-statement</span></td></tr></tbody></table>
 
-<span class="small">#sec-while-statement</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -100,11 +103,11 @@ Samsung Internet
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`do...while`](do...while)
 -   [`for`](for)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while</a>

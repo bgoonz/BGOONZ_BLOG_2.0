@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="interpolation-search">Interpolation Search</h1>
+<p><strong>Interpolation search</strong> is an algorithm for searching for a key in an array that has been ordered by numerical values assigned to the keys (key values).</p>
+<p>For example we have a sorted array of <code>n</code> uniformly distributed values <code>arr[]</code>, and we need to write a function to search for a particular element <code>x</code> in the array.</p>
+<p><strong>Linear Search</strong> finds the element in <code>O(n)</code> time, <strong>Jump Search</strong> takes <code>O(√ n)</code> time and <strong>Binary Search</strong> take <code>O(Log n)</code> time.</p>
+<p>The <strong>Interpolation Search</strong> is an improvement over Binary Search for instances, where the values in a sorted array are <em>uniformly</em> distributed. Binary Search always goes to the middle element to check. On the other hand, interpolation search may go to different locations according to the value of the key being searched. For example, if the value of the key is closer to the last element, interpolation search is likely to start search toward the end side.</p>
+<p>To find the position to be searched, it uses following formula:</p>
+<pre><code>// The idea of formula is to return higher value of pos
+// when element to be searched is closer to arr[hi]. And
+// smaller value when closer to arr[lo]
+pos = lo + ((x - arr[lo]) * (hi - lo) / (arr[hi] - arr[Lo]))
+
+arr[] - Array where elements need to be searched
+x - Element to be searched
+lo - Starting index in arr[]
+hi - Ending index in arr[]</code></pre>
+<h2 id="complexity">Complexity</h2>
+<p><strong>Time complexity</strong>: <code>O(log(log(n))</code></p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/interpolation-search/">GeeksForGeeks</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Interpolation_search">Wikipedia</a></li>
+</ul>
+</body>
+</html>

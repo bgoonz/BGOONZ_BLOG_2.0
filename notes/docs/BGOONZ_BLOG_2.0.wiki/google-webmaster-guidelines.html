@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>google-webmaster-guidelines</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="webmaster-guidelines-google-search-central-google-developers">Webmaster Guidelines | Google Search Central | Google Developers</h1>
+<blockquote>
+<h2 id="excerpt">Excerpt</h2>
+<p>Follow Google’s Webmaster Guidelines, including quality and SEO guidelines, designed to help Google better find, index, and rank your site.</p>
+</blockquote>
+<hr />
+<p>&lt;iframe style=“-webkit-transform:scale(0.7);-moz-transform-scale(0.7);frameborder=”0" allowfullscreen=“1” allow=“accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture” title=“YouTube video player” width=“640” height=“360” src=“https://www.youtube.com/embed/yFxNda5Z4eE?origin=https%3A%2F%2Fdevelopers.google.com&amp;showinfo=0&amp;video-id=yFxNda5Z4eE&amp;enablejsapi=1&amp;widgetid=1” id=“widget2”&gt;</iframe></p>
+<p>Following the <a href="https://developers.google.com/search/docs/advanced/guidelines/webmaster-guidelines?hl=en&amp;_ga=2.47561892.2010395531.1639933504-972587081.1639933504&amp;visit_id=1639931578542-8725338968151920159&amp;rd=1#general">General guidelines</a> will help Google find, index, and rank your site.</p>
+<p>We strongly encourage you to pay very close attention to the <a href="https://developers.google.com/search/docs/advanced/guidelines/webmaster-guidelines?hl=en&amp;_ga=2.47561892.2010395531.1639933504-972587081.1639933504&amp;visit_id=1639931578542-8725338968151920159&amp;rd=1#quality_guidelines">Quality guidelines</a>, which outline some of the illicit practices that may lead to a site being removed entirely from the Google index or otherwise affected by an algorithmic or manual spam action. If a site has been affected by a spam action, it may no longer show up in results on Google.com or on any of Google’s partner sites.</p>
+<h2 id="general-guidelines">General guidelines</h2>
+<h3 id="help-google-find-your-pages">Help Google find your pages</h3>
+<ul>
+<li>Ensure that all pages on the site can be reached by a link from another findable page. Make sure the referring link includes either text or, for images, an <code>alt</code> attribute, that is relevant to the target page. Crawlable links are <a href="https://developers.google.com/search/docs/advanced/guidelines/links-crawlable"><code>&lt;a&gt;</code> tags with an <code>href</code> attribute</a>.</li>
+<li>Provide a <a href="https://developers.google.com/search/docs/advanced/sitemaps/overview">sitemap file</a> with links that point to the important pages on your site. Also provide a page with a human-readable list of links to these pages (sometimes called a site index or site map page).</li>
+<li>Limit the number of links on a page to a reasonable number (a few thousand at most).</li>
+<li>Make sure that your web server correctly supports the <code>If-Modified-Since</code> HTTP header. This feature directs your web server to tell Google if your content has changed since we last crawled your site. Supporting this feature saves you bandwidth and overhead.</li>
+<li>Use the robots.txt file on your web server to manage your crawling budget by preventing crawling of infinite spaces such as search result pages. Keep your robots.txt file up to date. <a href="https://developers.google.com/search/docs/advanced/robots/intro">Learn how to manage crawling with the robots.txt file</a>. Test the coverage and syntax of your robots.txt file using the <a href="https://www.google.com/webmasters/tools/robots-testing-tool">robots.txt Tester</a>.</li>
+</ul>
+<p><strong>Ways to help Google find your site:</strong></p>
+<ul>
+<li><a href="https://developers.google.com/search/docs/advanced/crawling/ask-google-to-recrawl">Ask Google to crawl your pages</a>.</li>
+<li>Make sure that any sites that should know about your pages are aware your site is online.</li>
+</ul>
+<h3 id="help-google-understand-your-pages">Help Google understand your pages</h3>
+<ul>
+<li>Create a useful, information-rich site, and write pages that clearly and accurately describe your content.</li>
+<li>Think about the words users would type to find your pages, and make sure that your site actually includes those words within it.</li>
+<li>Ensure that your <a href="https://developers.google.com/search/docs/advanced/appearance/title-link"><code>&lt;title&gt;</code> elements</a> and <code>alt</code> attributes are descriptive, specific, and accurate.</li>
+<li>Design your site to have a clear conceptual page hierarchy.</li>
+<li>Follow our recommended best practices for <a href="https://developers.google.com/search/docs/advanced/guidelines/google-images">images</a>, <a href="https://developers.google.com/search/docs/advanced/guidelines/video">video</a>, and <a href="https://developers.google.com/search/docs/advanced/structured-data/intro-structured-data">structured data</a>.</li>
+<li>When using a content management system (for example, Wix or WordPress), make sure that it creates pages and links that search engines can crawl.</li>
+<li>To help Google fully understand your site’s contents, allow all site assets that would significantly affect page rendering to be crawled: for example, CSS and JavaScript files that affect the understanding of the pages. The Google indexing system renders a web page as the user would see it, including images, CSS, and JavaScript files. To see which page assets that Googlebot cannot crawl, use the <a href="https://support.google.com/webmasters/answer/9012289">URL Inspection tool</a>. To debug directives in your robots.txt file, use the <a href="https://support.google.com/webmasters/answer/6062598">robots.txt Tester</a> tool.</li>
+<li>Allow search bots to crawl your site without session IDs or URL parameters that track their path through the site. These techniques are useful for tracking individual user behavior, but the access pattern of bots is entirely different. Using these techniques may result in incomplete indexing of your site, as bots may not be able to eliminate URLs that look different but actually point to the same page.</li>
+<li>Make your site’s important content visible by default. Google is able to crawl HTML content hidden inside navigational elements such as tabs or expanding sections. However, we consider this content less accessible to users, and recommend that you make your most important information visible in the default page view.</li>
+<li>Make a reasonable effort to ensure that advertisement links on your pages do not affect search engine rankings. For example, use <a href="https://developers.google.com/search/docs/advanced/robots/intro">robots.txt</a>, <code>rel="nofollow"</code>, or <code>rel="sponsored"</code> to prevent advertisement links from being followed by a crawler.</li>
+</ul>
+<h3 id="help-visitors-use-your-pages">Help visitors use your pages</h3>
+<ul>
+<li>Try to use text instead of images to display important names, content, or links. If you must use images for textual content, use the <code>alt</code> attribute to include a few words of descriptive text.</li>
+<li>Ensure that all links go to live web pages. Use <a href="https://validator.w3.org/">valid HTML</a>.</li>
+<li>Optimize your page loading times. Fast sites make users happy and improve the overall quality of the web (especially for those users with slow Internet connections). Google recommends that you use tools like <a href="https://pagespeed.web.dev/">PageSpeed Insights</a> and <a href="https://www.webpagetest.org/">Webpagetest.org</a> to test the performance of your page.</li>
+<li>Design your site for all device types and sizes, including desktops, tablets, and smartphones. Use the <a href="https://search.google.com/test/mobile-friendly">Mobile-Friendly Test</a> to test how well your pages work on mobile devices, and get feedback on what needs to be fixed.</li>
+<li>Ensure that your site <a href="https://developers.google.com/search/docs/advanced/guidelines/browser-compatibility">appears correctly in different browsers</a>.</li>
+<li>If possible, <a href="https://developers.google.com/search/docs/advanced/security/https">secure your site’s connections</a> with HTTPS. Encrypting interactions between the user and your website is a good practice for communication on the web.</li>
+<li>Ensure that your pages are useful for readers with visual impairments, for example, by testing usability with a screen-reader.</li>
+</ul>
+<h2 id="quality-guidelines">Quality guidelines</h2>
+<p>These quality guidelines cover the most common forms of deceptive or manipulative behavior, but Google may respond negatively to other misleading practices not listed here. It’s not safe to assume that just because a specific deceptive technique isn’t included on this page, Google approves of it. Website owners who spend their energies upholding the spirit of the basic principles will provide a much better user experience and subsequently enjoy better ranking than those who spend their time looking for loopholes they can exploit.</p>
+<p>If you believe that another site is abusing Google’s quality guidelines, please let us know by <a href="https://www.google.com/webmasters/tools/spamreport">filing a spam report</a>. Google prefers developing scalable and automated solutions to problems, and will use the report for further improving our spam detection systems.</p>
+<p>&lt;iframe style=“-webkit-transform:scale(0.7);-moz-transform-scale(0.7);frameborder=”0" allowfullscreen=“1” allow=“accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture” title=“YouTube video player” width=“640” height=“360” src=“https://www.youtube.com/embed/2oPj5_9WxpA?origin=https%3A%2F%2Fdevelopers.google.com&amp;showinfo=0&amp;video-id=2oPj5_9WxpA&amp;enablejsapi=1&amp;widgetid=3” id=“widget4”&gt;</iframe></p>
+<h3 id="basic-principles">Basic principles</h3>
+<ul>
+<li>Make pages primarily for users, not for search engines.</li>
+<li>Don’t deceive your users.</li>
+<li>Avoid tricks intended to improve search engine rankings. A good rule of thumb is whether you’d feel comfortable explaining what you’ve done to a website that competes with you, or to a Google employee. Another useful test is to ask, “Does this help my users? Would I do this if search engines didn’t exist?”</li>
+<li>Think about what makes your website unique, valuable, or engaging. Make your website stand out from others in your field.</li>
+</ul>
+<h3 id="specific-guidelines">Specific guidelines</h3>
+<p><strong>Avoid</strong> the following techniques:</p>
+<ul>
+<li><a href="https://developers.google.com/search/docs/advanced/guidelines/auto-gen-content">Automatically generated content</a></li>
+<li>Participating in <a href="https://developers.google.com/search/docs/advanced/guidelines/link-schemes">link schemes</a></li>
+<li>Creating pages with <a href="https://developers.google.com/search/docs/advanced/guidelines/thin-content">little or no original content</a></li>
+<li><a href="https://developers.google.com/search/docs/advanced/guidelines/cloaking">Cloaking</a></li>
+<li><a href="https://developers.google.com/search/docs/advanced/guidelines/sneaky-redirects">Sneaky redirects</a></li>
+<li><a href="https://developers.google.com/search/docs/advanced/guidelines/hidden-text-links">Hidden text or links</a></li>
+<li><a href="https://developers.google.com/search/docs/advanced/guidelines/doorway-pages">Doorway pages</a></li>
+<li><a href="https://developers.google.com/search/docs/advanced/guidelines/scraped-content">Scraped content</a></li>
+<li>Participating in <a href="https://developers.google.com/search/docs/advanced/guidelines/affiliate-programs">affiliate programs without adding sufficient value</a></li>
+<li>Loading pages with <a href="https://developers.google.com/search/docs/advanced/guidelines/irrelevant-keywords">irrelevant keywords</a></li>
+<li>Creating pages with <a href="https://developers.google.com/search/docs/advanced/guidelines/malicious-behavior">malicious behavior</a>, such as phishing or installing viruses, trojans, or other badware</li>
+<li>Abusing <a href="https://developers.google.com/search/docs/advanced/structured-data/sd-policies">structured data</a> markup</li>
+<li>Sending <a href="https://developers.google.com/search/docs/advanced/guidelines/automated-queries">automated queries</a> to Google</li>
+</ul>
+<p><strong>Follow</strong> good practices:</p>
+<ul>
+<li>Monitoring your site for <a href="https://developers.google.com/search/docs/advanced/security/what-is-hacked">hacking</a> and removing hacked content as soon as it appears</li>
+<li>Preventing and removing <a href="https://developers.google.com/search/docs/advanced/guidelines/user-gen-spam">user-generated spam</a> on your site</li>
+</ul>
+<p>If your site violates one or more of these guidelines, then Google may take <a href="https://support.google.com/webmasters/answer/9044175">manual action</a> against it. Once you have remedied the problem, you can <a href="https://support.google.com/webmasters/answer/35843">submit your site for reconsideration</a>.</p>
+<hr />
+<h1 id="create-crawlable-links-google-search-central-google-developers">Create Crawlable Links | Google Search Central | Google Developers</h1>
+<blockquote>
+<h2 id="excerpt-1">Excerpt</h2>
+<p>Google can only crawl links if they use the proper a tag with an href attritube. Review examples to ensure your links are crawlable.</p>
+</blockquote>
+<hr />
+<p>Google can follow your links only if they <strong>use proper <code>&lt;a&gt;</code> tags</strong> with <strong>resolvable URLs</strong>:</p>
+<p>Google can follow links only if they are an <code>&lt;a&gt;</code> tag with an <em>href</em> attribute. Links that use other formats won’t be followed by Google’s crawlers. Google cannot follow <code>&lt;a&gt;</code> links without an <em>href</em> tag or other tags that perform a links because of script events. Here are examples of links that Google can and can’t follow:</p>
+<p><strong>Can follow:</strong></p>
+<ul>
+<li><code>&lt;a href="https://example.com"&gt;</code></li>
+<li><code>&lt;a href="/relative/path/file"&gt;</code></li>
+</ul>
+<p><strong>Can’t follow:</strong></p>
+<ul>
+<li><code>&lt;a routerLink="some/path"&gt;</code></li>
+<li><code>&lt;span href="https://example.com"&gt;</code></li>
+<li><code>&lt;a onclick="goto('https://example.com')"&gt;</code></li>
+</ul>
+<h2 id="link-to-resolvable-urls">Link to resolvable URLs</h2>
+<p>Ensure that the URL linked to by your <code>&lt;a&gt;</code> tag is an actual web address that Googlebot can send requests to, for example:</p>
+<p><strong>Can resolve:</strong></p>
+<ul>
+<li><code>https://example.com/stuff</code></li>
+<li><code>/products</code></li>
+<li><code>/products.php?id=123</code></li>
+</ul>
+<p><strong>Can’t resolve:</strong></p>
+<ul>
+<li><code>javascript:goTo('products')</code></li>
+<li><code>javascript:window.location.href='/products'</code></li>
+<li><code>#</code></li>
+</ul>
+<hr />
+<h1 id="what-is-a-sitemap-google-search-central-google-developers">What Is a Sitemap | Google Search Central | Google Developers</h1>
+<blockquote>
+<h2 id="excerpt-2">Excerpt</h2>
+<p>A sitemap provides information that helps Google more intelligently crawl your site. Discover how a sitemap works and determine if you need one.</p>
+</blockquote>
+<hr />
+<p>&lt;iframe style=“-webkit-transform:scale(0.7);-moz-transform-scale(0.7);frameborder=”0" allowfullscreen=“1” allow=“accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture” width=“640” height=“360” src=“https://www.youtube.com/embed/JlamLfyFjTA?origin=https%3A%2F%2Fdevelopers.google.com&amp;showinfo=0&amp;video-id=JlamLfyFjTA&amp;enablejsapi=1&amp;widgetid=1” id=“widget2” data-title=“YouTube video player”&gt;</iframe></p>
+<p>A <em>sitemap</em> is a file where you provide information about the pages, videos, and other files on your site, and the relationships between them. Search engines like Google read this file to crawl your site more efficiently. A sitemap tells Google which pages and files you think are important in your site, and also provides valuable information about these files. For example, when the page was last updated and any alternate language versions of the page.</p>
+<p>You can use a sitemap to provide information about specific types of content on your pages, including <a href="https://developers.google.com/search/docs/advanced/sitemaps/video-sitemaps">video</a>, <a href="https://developers.google.com/search/docs/advanced/sitemaps/image-sitemaps">image</a>, and <a href="https://developers.google.com/search/docs/advanced/sitemaps/news-sitemap">news</a> content. For example:</p>
+<ul>
+<li>A sitemap <em>video entry</em> can specify the video running time, category, and age-appropriateness rating.</li>
+<li>A sitemap <em>image entry</em> can include the image subject matter, type, and license.</li>
+<li>A sitemap <em>news entry</em> can include the article title and publication date.</li>
+</ul>
+<h2 id="do-i-need-a-sitemap">Do I need a sitemap?</h2>
+<p>If your site’s pages are properly linked, Google can usually discover most of your site. Proper linking means that all pages that you deem important can be reached through some form of navigation, be that your site’s menu or links that you placed on pages. Even so, a sitemap can improve the crawling of larger or more complex sites, or more specialized files.</p>
+<p><strong>You might need a sitemap if:</strong></p>
+<ul>
+<li><strong>Your site is really large.</strong> As a result, it’s more likely Google web crawlers might overlook crawling some of your new or recently updated pages.</li>
+<li><strong>Your site has a large archive of content pages that are isolated or not well linked to each other.</strong> If your site pages don’t naturally reference each other, you can list them in a sitemap to ensure that Google doesn’t overlook some of your pages.</li>
+<li><strong>Your site is new and has few external links to it.</strong> Googlebot and other web crawlers crawl the web by following links from one page to another. As a result, Google might not discover your pages if no other sites link to them.</li>
+<li><strong>Your site has a lot of rich media content (video, images) or is shown in Google News.</strong> If provided, Google can take additional information from sitemaps into account for search, where appropriate.</li>
+</ul>
+<p><strong>You might <em>not</em> need a sitemap if:</strong></p>
+<ul>
+<li><strong>Your site is “small”.</strong> By small, we mean about 500 pages or fewer on your site. (Only pages that you think need to be in search results count toward this total.)</li>
+<li><strong>Your site is comprehensively linked internally.</strong> This means that Google can find all the important pages on your site by following links starting from the homepage.</li>
+<li><strong>You don’t have many media files</strong> (video, image) <strong>or news pages</strong> that you want to show in search results. Sitemaps can help Google find and understand video and image files, or news articles, on your site. If you don’t need these results to appear in image, video, or news results, you might not need a sitemap.</li>
+</ul>
+<h2 id="build-a-sitemap">Build a sitemap</h2>
+<p>If you decided that you need a sitemap, <a href="https://developers.google.com/search/docs/advanced/sitemaps/build-sitemap">learn more about how to create one</a>.</p>
+<hr />
+<h1 id="robots.txt-introduction-and-guide-google-search-central-google-developers">Robots.txt Introduction and Guide | Google Search Central | Google Developers</h1>
+<blockquote>
+<h2 id="excerpt-3">Excerpt</h2>
+<p>Robots.txt is used to manage crawler traffic. Explore this robots.txt introduction guide to learn what robot.txt files are and how to use them.</p>
+</blockquote>
+<hr />
+<p>A robots.txt file tells search engine crawlers which URLs the crawler can access on your site. This is used mainly to avoid overloading your site with requests; <strong>it is not a mechanism for keeping a web page out of Google</strong>. To keep a web page out of Google, <a href="https://developers.google.com/search/docs/advanced/crawling/block-indexing">block indexing with <code>noindex</code></a> or password-protect the page.</p>
+<h2 id="what-is-a-robots.txt-file-used-for">What is a robots.txt file used for?</h2>
+<p>A robots.txt file is used primarily to manage crawler traffic to your site, and <em>usually</em> to keep a file off Google, depending on the file type:</p>
+<p>robots.txt effect on different file types</p>
+<p>Web page</p>
+<p>You can use a robots.txt file for web pages (HTML, PDF, or other <a href="https://support.google.com/webmasters/answer/35287">non-media formats that Google can read</a>), to manage crawling traffic if you think your server will be overwhelmed by requests from Google’s crawler, or to avoid crawling unimportant or similar pages on your site.</p>
+<p><strong>If your web page is blocked with a robots.txt file</strong>, its URL can still appear in search results, but the search result will <a href="https://support.google.com/webmasters/answer/7489871">not have a description</a>. Image files, video files, PDFs, and other non-HTML files will be excluded. If you see this search result for your page and want to fix it, remove the robots.txt entry blocking the page. If you want to hide the page completely from Search, use <a href="https://developers.google.com/search/docs/advanced/crawling/remove-information#i-control-the-web-page">another method</a>.</p>
+<p>Media file</p>
+<p>Use a robots.txt file to manage crawl traffic, and also to prevent image, video, and audio files from appearing in Google search results. This won’t prevent other pages or users from linking to your image, video, or audio file.</p>
+<ul>
+<li><a href="https://developers.google.com/search/docs/advanced/crawling/prevent-images-on-your-page">Read more about preventing images from appearing on Google.</a></li>
+<li><a href="https://developers.google.com/search/docs/advanced/guidelines/video#remove">Read more about how to remove or restrict your video files from appearing on Google.</a></li>
+</ul>
+<p>Resource file</p>
+<p>You can use a robots.txt file to block resource files such as unimportant image, script, or style files, <strong>if you think that pages loaded without these resources will not be significantly affected by the loss</strong>. However, if the absence of these resources make the page harder for Google’s crawler to understand the page, don’t block them, or else Google won’t do a good job of analyzing pages that depend on those resources.</p>
+<h2 id="understand-the-limitations-of-a-robots.txt-file">Understand the limitations of a robots.txt file</h2>
+<p>Before you create or edit a robots.txt file, you should know the limits of this URL blocking method. Depending on your goals and situation, you might want to consider other mechanisms to ensure your URLs are not findable on the web.</p>
+<ul>
+<li><strong>robots.txt directives may not be supported by all search engines.</strong><br />
+The instructions in robots.txt files cannot enforce crawler behavior to your site; it’s up to the crawler to obey them. While Googlebot and other respectable web crawlers obey the instructions in a robots.txt file, other crawlers might not. Therefore, if you want to keep information secure from web crawlers, it’s better to use other blocking methods, such as <a href="https://developers.google.com/search/docs/advanced/crawling/control-what-you-share">password-protecting private files on your server</a>.</li>
+<li><strong>Different crawlers interpret syntax differently.</strong><br />
+Although respectable web crawlers follow the directives in a robots.txt file, each crawler might interpret the directives differently. You should know the <a href="https://developers.google.com/search/docs/advanced/robots/robots_txt#syntax">proper syntax</a> for addressing different web crawlers as some might not understand certain instructions.</li>
+<li><strong>A page that’s disallowed in robots.txt can still be indexed if linked to from other sites.</strong><br />
+While Google won’t crawl or index the content blocked by a robots.txt file, we might still find and index a disallowed URL if it is linked from other places on the web. As a result, the URL address and, potentially, other publicly available information such as anchor text in links to the page can still appear in Google search results. To properly prevent your URL from appearing in Google search results, <a href="https://developers.google.com/search/docs/advanced/crawling/control-what-you-share">password-protect the files on your server</a>, <a href="https://developers.google.com/search/docs/advanced/crawling/block-indexing">use the <code>noindex</code> meta tag or response header</a>, or remove the page entirely.</li>
+</ul>
+<h2 id="create-a-robots.txt-file">Create a robots.txt file</h2>
+<p>If you decided that you need one, learn how to <a href="https://developers.google.com/search/docs/advanced/robots/create-robots-txt">create a robots.txt file</a>.</p>
+<hr />
+</body>
+</html>

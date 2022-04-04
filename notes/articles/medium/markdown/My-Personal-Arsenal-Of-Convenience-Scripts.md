@@ -1,14 +1,15 @@
-# My Personal Arsenal Of Convenience Scripts
+My Personal Arsenal Of Convenience Scripts
+==========================================
 
 At the bottom the following commands are listed as a markdown file and embed in this article as a github gist.
 
----
+------------------------------------------------------------------------
 
 ### My Personal Arsenal Of Convenience Scripts
 
 #### At the bottom the following commands are listed as a markdown file and embed in this article as a github gist.
 
----
+------------------------------------------------------------------------
 
 ### Pandoc File Conversions:
 
@@ -18,41 +19,35 @@ At the bottom the following commands are listed as a markdown file and embed in 
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*FWFnnWJL20CskMovSMbHCA.png" class="graf-image" /></figure>
 
----
+------------------------------------------------------------------------
 
 ### Resources:
 
-<a href="https://bryanguner.medium.com/bash-proficiency-in-under-15-minutes-3ec9d4e2e65" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/bash-proficiency-in-under-15-minutes-3ec9d4e2e65"><strong>Bash Proficiency In Under 15 Minutes</strong>
-<br/>
+**Bash Proficiency In Under 15 Minutes**  
 
-<em>Cheat sheet and in-depth explanations located below main article contents… The UNIX shell program interprets user…</em><a href="https://bryanguner.medium.com/bash-proficiency-in-under-15-minutes-3ec9d4e2e65" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Cheat sheet and in-depth explanations located below main article contents… The UNIX shell program interprets user…*<a href="https://bryanguner.medium.com/bash-proficiency-in-under-15-minutes-3ec9d4e2e65" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://levelup.gitconnected.com/these-are-the-bash-shell-commands-that-stand-between-me-and-insanity-984865ba5d1b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://levelup.gitconnected.com/these-are-the-bash-shell-commands-that-stand-between-me-and-insanity-984865ba5d1b"><strong>These Are The Bash Shell Commands That Stand Between Me And Insanity</strong>
-<br/>
+**These Are The Bash Shell Commands That Stand Between Me And Insanity**  
 
-<em>I will not profess to be a bash shell wizard… but I have managed to scour some pretty helpful little scripts from Stack…</em>levelup.gitconnected.com</a><a href="https://levelup.gitconnected.com/these-are-the-bash-shell-commands-that-stand-between-me-and-insanity-984865ba5d1b" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*I will not profess to be a bash shell wizard… but I have managed to scour some pretty helpful little scripts from Stack…*levelup.gitconnected.com<a href="https://levelup.gitconnected.com/these-are-the-bash-shell-commands-that-stand-between-me-and-insanity-984865ba5d1b" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://medium.com/geekculture/bash-commands-that-save-time-920fb6ab9d0a" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/geekculture/bash-commands-that-save-time-920fb6ab9d0a"><strong>Bash Commands That Save Me Time and Frustration</strong>
-<br/>
+**Bash Commands That Save Me Time and Frustration**  
 
-<em>Here's a list of bash commands that stand between me and insanity.</em>medium.com</a><a href="https://medium.com/geekculture/bash-commands-that-save-time-920fb6ab9d0a" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Here’s a list of bash commands that stand between me and insanity.*medium.com<a href="https://medium.com/geekculture/bash-commands-that-save-time-920fb6ab9d0a" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://medium.com/geekculture/life-saving-bash-scripts-part-2-b40c8ee22682" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/geekculture/life-saving-bash-scripts-part-2-b40c8ee22682"><strong>Life Saving Bash Scripts Part 2</strong>
-<br/>
+**Life Saving Bash Scripts Part 2**  
 
-<em>I am not saying they're in any way special compared with other bash scripts… but when I consider that you can never…</em>medium.com</a><a href="https://medium.com/geekculture/life-saving-bash-scripts-part-2-b40c8ee22682" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*I am not saying they’re in any way special compared with other bash scripts… but when I consider that you can never…*medium.com<a href="https://medium.com/geekculture/life-saving-bash-scripts-part-2-b40c8ee22682" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://bryanguner.medium.com/what-are-bash-aliases-and-why-should-you-be-using-them-30a6cfafdfeb" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/what-are-bash-aliases-and-why-should-you-be-using-them-30a6cfafdfeb"><strong>What Are Bash Aliases And Why Should You Be Using Them!</strong>
-<br/>
+**What Are Bash Aliases And Why Should You Be Using Them!**  
 
-<em>A Bash alias is a method of supplementing or overriding Bash commands with new ones. Bash aliases make it easy for…</em><a href="https://bryanguner.medium.com/what-are-bash-aliases-and-why-should-you-be-using-them-30a6cfafdfeb" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
+*A Bash alias is a method of supplementing or overriding Bash commands with new ones. Bash aliases make it easy for…*<a href="https://bryanguner.medium.com/what-are-bash-aliases-and-why-should-you-be-using-them-30a6cfafdfeb" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
-<a href="https://bryanguner.medium.com/bash-d3077114aea7" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/bash-d3077114aea7"><strong>BASH CHEAT SHEET</strong>
-<br/>
+**BASH CHEAT SHEET**  
 
-<em>My Bash Cheatsheet Index:</em><a href="https://bryanguner.medium.com/bash-d3077114aea7" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
+*My Bash Cheatsheet Index:*<a href="https://bryanguner.medium.com/bash-d3077114aea7" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
----
+------------------------------------------------------------------------
 
 > <a href="https://gist.github.com/bgoonz/df74dfa73bb5edd239ac738a14104eee" class="markup--anchor markup--pullquote-anchor"><strong>holy grail</strong></a> **of learning bash**
 
@@ -62,7 +57,7 @@ At the bottom the following commands are listed as a markdown file and embed in 
 
 ### Description: need to : `sudo apt install rename`
 
-> _Notes: Issue when renaming file without numbers collides with existing file name…_
+> *Notes: Issue when renaming file without numbers collides with existing file name…*
 
 code:
 
@@ -99,19 +94,19 @@ code:
 
 ### Description:
 
-> _Notes: ==&gt; sudo apt install wget_
+> *Notes: ==&gt; sudo apt install wget*
 
 code:
 
     wget --limit-rate=200k --no-clobber --convert-links --random-wait -r -p -E -e robots=off -U mozilla https://bootcamp42.gitbook.io/python/
 
----
+------------------------------------------------------------------------
 
 ### 3. Clean Out Messy Git Repo:
 
 ### Description: recursively removes git related folders as well as internal use files / attributions in addition to empty folders
 
-> _Notes: To clear up clutter in repositories that only get used on your local machine._
+> *Notes: To clear up clutter in repositories that only get used on your local machine.*
 
 code:
 
@@ -121,13 +116,13 @@ code:
 
     find . \( -name "*SECURITY.txt" -o -name "*RELEASE.txt" -o  -name "*CHANGELOG.txt" -o -name "*LICENSE.txt" -o -name "*CONTRIBUTING.txt" -name "*HISTORY.md" -o -name "*LICENSE" -o -name "*SECURITY.md" -o -name "*RELEASE.md" -o  -name "*CHANGELOG.md" -o -name "*LICENSE.md" -o -name "*CODE_OF_CONDUCT.md" -o -name "*CONTRIBUTING.md" \) -exec rm -rf -- {} +
 
----
+------------------------------------------------------------------------
 
-### 4. clone all of a user's git repositories
+### 4. clone all of a user’s git repositories
 
-### Description: clone all of a user or organization's git repositories.
+### Description: clone all of a user or organization’s git repositories.
 
-> _Notes:_
+> *Notes:*
 
 code:
 
@@ -155,7 +150,7 @@ code:
       cut -d \" -f 4 |
       xargs -L1 git clone
 
----
+------------------------------------------------------------------------
 
 ### 5. Git Workflow
 
@@ -189,13 +184,13 @@ code:
     git commit -m"update"
     git push -u origin preview
 
----
+------------------------------------------------------------------------
 
 ### 6. Recursive Unzip In Place
 
 ### Description: recursively unzips folders and then deletes the zip file by the same name.
 
-> _Notes:_
+> *Notes:*
 
 code:
 
@@ -203,13 +198,13 @@ code:
 
     find . -name "*.zip" -type f -print -delete
 
----
+------------------------------------------------------------------------
 
 ### 7. git pull keeping local changes:
 
 ### Description:
 
-> _Notes:_
+> *Notes:*
 
 code:
 
@@ -217,13 +212,13 @@ code:
     git pull
     git stash pop
 
----
+------------------------------------------------------------------------
 
 ### 8. Prettier Code Formatter:
 
 ### Description:
 
-> _Notes:_
+> *Notes:*
 
 code:
 
@@ -231,13 +226,13 @@ code:
 
     prettier --write .
 
----
+------------------------------------------------------------------------
 
 ### 9. Pandoc
 
 ### Description:
 
-> _Notes:_
+> *Notes:*
 
 code:
 
@@ -247,13 +242,13 @@ code:
 
     find ./ -iname "*.docx" -type f -exec sh -c 'pandoc "${0}" -o "${0%.docx}.md"' {} \;
 
----
+------------------------------------------------------------------------
 
 ### 10. Gitpod Installs
 
 ### Description:
 
-> _Notes:_
+> *Notes:*
 
 code:
 
@@ -271,25 +266,25 @@ code:
     prettier --write .
     npm-recursive-install
 
----
+------------------------------------------------------------------------
 
 ### 11. Repo Utils Package:
 
 ### Description: my standard repo utis package
 
-> _Notes:_
+> *Notes:*
 
 code:
 
     npm i @bgoonz11/repoutils
 
----
+------------------------------------------------------------------------
 
 ### 12. Unix Tree Package Usage:
 
 ### Description:
 
-> _Notes:_
+> *Notes:*
 
 code:
 
@@ -307,13 +302,13 @@ code:
 
     tree -f >README.md
 
----
+------------------------------------------------------------------------
 
 ### 13. Find & Replace string in file & folder names recursively..
 
 ### Description:
 
-> _Notes:_
+> *Notes:*
 
 code:
 
@@ -331,13 +326,13 @@ code:
 
     find . -type d -exec rename 's/es6//g' {} +
 
----
+------------------------------------------------------------------------
 
 ### 14. Remove double extensions :
 
 ### Description:
 
-> _Notes:_
+> *Notes:*
 
 code:
 
@@ -367,25 +362,25 @@ code:
         mv "${file}" "${file%.png}"
     done
 
----
+------------------------------------------------------------------------
 
 ### 15. Truncate folder names down to 12 characters:
 
 ### Description:
 
-> _Notes:_
+> *Notes:*
 
 code:
 
     for d in ./*; do mv $d ${d:0:12}; done
 
----
+------------------------------------------------------------------------
 
 ### 16.Appendir.js
 
 ### Description: combine the contents of every file in the containing directory.
 
-> _Notes: this includes the contents of the file it's self…_
+> *Notes: this includes the contents of the file it’s self…*
 
 code:
 
@@ -398,627 +393,624 @@ code:
       if (err) throw err;
     });
 
-```
-
----
-
-### 17. Replace space in filename with underscore
-
-### Description: followed by replace `'#' with '_'` in directory name
-
-> _Notes: Can be re-purposed to find and replace any set of strings in file or folder names._
-
-code:
-
-    find . -name "* *" -type f | rename 's/_//g'
-
-    find . -name "* *" -type d | rename 's/#/_/g'
-
----
-
-### 18. Filter & delete files by name and extension
-
-### Description:
-
-> _Notes:_
-
-code:
-
-    find . -name '.bin' -type d -prune -exec rm -rf '{}' +
-
-    find . -name '*.html' -type d -prune -exec rm -rf '{}' +
-
-    find . -name 'nav-index' -type d -prune -exec rm -rf '{}' +
-
-    find . -name 'node-gyp' -type d -prune -exec rm -rf '{}' +
-
-    find . -name 'deleteme.txt' -type f -prune -exec rm -rf '{}' +
-
-    find . -name 'right.html' -type f -prune -exec rm -rf '{}' +
-
-    find . -name 'left.html' -type f -prune -exec rm -rf '{}' +
-
----
-
-### 19. Remove lines containing string:
-
-### Description:
-
-> _Notes: Remove lines not containing_ `'.js'`
-
-    sudo sed -i '/\.js/!d' ./*scrap2.md
-
-code:
-
-    sudo sed -i '/githubusercontent/d' ./*sandbox.md
-
-    sudo sed -i '/githubusercontent/d' ./*scrap2.md
-
-    sudo sed -i '/github\.com/d' ./*out.md
-
-    sudo sed -i '/author/d' ./*
-
----
-
-### 20. Remove duplicate lines from a text file
-
-### Description:
-
-> _Notes: //…syntax of uniq…// $uniq \[OPTION\] \[INPUT\[OUTPUT\]\] The syntax of this is quite easy to understand. Here, INPUT refers to the input file in which repeated lines need to be filtered out and if INPUT isn't specified then uniq reads from the standard input. OUTPUT refers to the output file in which you can store the filtered output generated by uniq command and as in case of INPUT if OUTPUT isn't specified then uniq writes to the standard output._
-
-Now, let's understand the use of this with the help of an example. Suppose you have a text file named kt.txt which contains repeated lines that needs to be omitted. This can simply be done with uniq.
-
-code:
-
-    sudo apt install uniq
-    uniq -u input.txt output.txt
-
----
-
-### 21. Remove lines containing string:
-
-### Description:
-
-> _Notes:_
-
-code:
-
-    sudo sed -i '/githubusercontent/d' ./*sandbox.md
-
-    sudo sed -i '/githubusercontent/d' ./*scrap2.md
-
-    sudo sed -i '/github\.com/d' ./*out.md
-
-    ---
-    title: add_days
-    tags: date,intermediate
-    firstSeen: 2020-10-28T16:19:04+02:00
-    lastUpdated: 2020-10-28T16:19:04+02:00
     ---
 
-    sudo sed -i '/title:/d' ./*output.md
-    sudo sed -i '/firstSeen/d' ./*output.md
-    sudo sed -i '/lastUpdated/d' ./*output.md
-    sudo sed -i '/tags:/d' ./*output.md
+    ### 17. Replace space in filename with underscore
 
-    sudo sed -i '/badstring/d' ./*
+    ### Description: followed by replace `'#' with '_'` in directory name
 
-    sudo sed -i '/stargazers/d' ./repo.txt
-    sudo sed -i '/node_modules/d' ./index.html
-    sudo sed -i '/right\.html/d' ./index.html
-    sudo sed -i '/right\.html/d' ./right.html
+    > _Notes: Can be re-purposed to find and replace any set of strings in file or folder names._
 
----
+    code:
 
-### 22. Zip directory excluding .git and node_modules all the way down (Linux)
+        find . -name "* *" -type f | rename 's/_//g'
 
-### Description:
+        find . -name "* *" -type d | rename 's/#/_/g'
 
-> _Notes:_
+    ---
 
-code:
+    ### 18. Filter & delete files by name and extension
 
-    #!/bin/bash
-    TSTAMP=`date '+%Y%m%d-%H%M%S'`
-    zip -r $1.$TSTAMP.zip $1 -x "**.git/*" -x "**node_modules/*" `shift; echo $@;`
+    ### Description:
 
-    printf "\nCreated: $1.$TSTAMP.zip\n"
+    > _Notes:_
 
-    # usage:
-    # - zipdir thedir
-    # - zip thedir -x "**anotherexcludedsubdir/*"    (important the double quotes to prevent glob expansion)
+    code:
 
-    # if in windows/git-bash, add 'zip' command this way:
-    # https://stackoverflow.com/a/55749636/1482990
+        find . -name '.bin' -type d -prune -exec rm -rf '{}' +
 
----
+        find . -name '*.html' -type d -prune -exec rm -rf '{}' +
 
-### 23. Delete files containing a certain string:
+        find . -name 'nav-index' -type d -prune -exec rm -rf '{}' +
 
-### Description:
+        find . -name 'node-gyp' -type d -prune -exec rm -rf '{}' +
 
-> _Notes:_
+        find . -name 'deleteme.txt' -type f -prune -exec rm -rf '{}' +
 
-code:
+        find . -name 'right.html' -type f -prune -exec rm -rf '{}' +
 
-    find . | xargs grep -l www.redhat.com | awk '{print "rm "$1}' > doit.sh
-    vi doit.sh // check for murphy and his law
-    source doit.sh
+        find . -name 'left.html' -type f -prune -exec rm -rf '{}' +
 
----
+    ---
 
-### 24.
+    ### 19. Remove lines containing string:
 
-### Description:
+    ### Description:
 
-> _Notes:_
+    > _Notes: Remove lines not containing_ `'.js'`
 
-code:
+        sudo sed -i '/\.js/!d' ./*scrap2.md
 
-    #!/bin/sh
+    code:
 
-    # find ./ | grep -i "\.*$" >files
-    find ./ | sed -E -e 's/([^ ]+[ ]+){8}//' | grep -i "\.*$">files
-    listing="files"
+        sudo sed -i '/githubusercontent/d' ./*sandbox.md
 
-    out=""
+        sudo sed -i '/githubusercontent/d' ./*scrap2.md
 
-    html="sitemap.html"
-    out="basename $out.html"
-    html="sitemap.html"
-    cmd() {
+        sudo sed -i '/github\.com/d' ./*out.md
 
-      echo '  <!DOCTYPE html>'
-      echo '<html>'
-      echo '<head>'
+        sudo sed -i '/author/d' ./*
 
-      echo '  <meta http-equiv="Content-Type" content="text/html">'
+    ---
 
-      echo '  <meta name="Author" content="Bryan Guner">'
-      echo '<link rel="stylesheet" href="./assets/prism.css">'
-      echo ' <link rel="stylesheet" href="./assets/style.css">'
-      echo ' <script async defer src="./assets/prism.js"></script>'
+    ### 20. Remove duplicate lines from a text file
 
-      echo "  <title> directory </title>"
-        echo '<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/mdn-article.css">'
-      echo '<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/markdown-to-html-style.css">'
-      echo ""
-      echo '<style>'
+    ### Description:
 
-    echo '    a {'
-    echo '      color: black;'
-    echo '    }'
-    echo ''
-    echo '    li {'
-    echo '      border: 1px solid black !important;'
-    echo '      font-size: 20px;'
-    echo '      letter-spacing: 0px;'
-    echo '      font-weight: 700;'
-    echo '      line-height: 16px;'
-    echo '      text-decoration: none !important;'
-    echo '      text-transform: uppercase;'
-    echo '      background: #194ccdaf !important;'
-    echo '      color: black !important;'
-    echo '      border: none;'
-    echo '      cursor: pointer;'
-    echo '      justify-content: center;'
-    echo '      padding: 30px 60px;'
-    echo '      height: 48px;'
-    echo '      text-align: center;'
-    echo '      white-space: normal;'
-    echo '      border-radius: 10px;'
-    echo '      min-width: 45em;'
-    echo '      padding: 1.2em 1em 0;'
-    echo '      box-shadow: 0 0 5px;'
-    echo '      margin: 1em;'
-    echo '      display: grid;'
-    echo '      -webkit-border-radius: 10px;'
-    echo '      -moz-border-radius: 10px;'
-    echo '      -ms-border-radius: 10px;'
-    echo '      -o-border-radius: 10px;'
-    echo '    }'
-    echo '  </style>'
-      echo '</head>'
-
-      echo '<body>'
-
-      echo ""
-
-      # continue with the HTML stuff
-
-      echo ""
-
-      echo ""
-
-      echo "<ul>"
+    > _Notes: //…syntax of uniq…// $uniq \[OPTION\] \[INPUT\[OUTPUT\]\] The syntax of this is quite easy to understand. Here, INPUT refers to the input file in which repeated lines need to be filtered out and if INPUT isn't specified then uniq reads from the standard input. OUTPUT refers to the output file in which you can store the filtered output generated by uniq command and as in case of INPUT if OUTPUT isn't specified then uniq writes to the standard output._
 
-      awk '{print "<li><a href=\""$1"\">",$1,"&nbsp;</a></li>"}' $listing
+    Now, let's understand the use of this with the help of an example. Suppose you have a text file named kt.txt which contains repeated lines that needs to be omitted. This can simply be done with uniq.
 
-      # awk '{print "<li>"};
+    code:
 
-      #    {print " <a href=\""$1"\">",$1,"</a></li>&nbsp;"}' \ $listing
+        sudo apt install uniq
+        uniq -u input.txt output.txt
 
-      echo ""
+    ---
 
-      echo "</ul>"
+    ### 21. Remove lines containing string:
 
-      echo "</body>"
+    ### Description:
 
-      echo "</html>"
+    > _Notes:_
 
-    }
+    code:
 
-    cmd $listing --sort=extension >>$html
+        sudo sed -i '/githubusercontent/d' ./*sandbox.md
 
----
+        sudo sed -i '/githubusercontent/d' ./*scrap2.md
 
-### 25. Index of Iframes
+        sudo sed -i '/github\.com/d' ./*out.md
 
-### Description: Creates an index.html file that contains all the files in the working directory or any of it's sub folders as iframes instead of anchor tags.
+        ---
+        title: add_days
+        tags: date,intermediate
+        firstSeen: 2020-10-28T16:19:04+02:00
+        lastUpdated: 2020-10-28T16:19:04+02:00
+        ---
 
-> _Notes: Useful Follow up Code:_
+        sudo sed -i '/title:/d' ./*output.md
+        sudo sed -i '/firstSeen/d' ./*output.md
+        sudo sed -i '/lastUpdated/d' ./*output.md
+        sudo sed -i '/tags:/d' ./*output.md
 
-code:
+        sudo sed -i '/badstring/d' ./*
 
-    #!/bin/sh
+        sudo sed -i '/stargazers/d' ./repo.txt
+        sudo sed -i '/node_modules/d' ./index.html
+        sudo sed -i '/right\.html/d' ./index.html
+        sudo sed -i '/right\.html/d' ./right.html
 
-    # find ./ | grep -i "\.*$" >files
-    find ./ | sed -E -e 's/([^ ]+[ ]+){8}//' | grep -i "\.*$">files
-    listing="files"
+    ---
 
-    out=""
+    ### 22. Zip directory excluding .git and node_modules all the way down (Linux)
 
-    html="index.html"
-    out="basename $out.html"
-    html="index.html"
-    cmd() {
+    ### Description:
 
-      echo '  <!DOCTYPE html>'
-      echo '<html>'
-      echo '<head>'
+    > _Notes:_
 
-      echo '  <meta http-equiv="Content-Type" content="text/html">'
+    code:
 
-      echo '  <meta name="Author" content="Bryan Guner">'
-      echo '<link rel="stylesheet" href="./assets/prism.css">'
-      echo ' <link rel="stylesheet" href="./assets/style.css">'
-      echo ' <script async defer src="./assets/prism.js"></script>'
+        #!/bin/bash
+        TSTAMP=`date '+%Y%m%d-%H%M%S'`
+        zip -r $1.$TSTAMP.zip $1 -x "**.git/*" -x "**node_modules/*" `shift; echo $@;`
 
-      echo "  <title> directory </title>"
+        printf "\nCreated: $1.$TSTAMP.zip\n"
 
-      echo ""
-      echo '<style>'
+        # usage:
+        # - zipdir thedir
+        # - zip thedir -x "**anotherexcludedsubdir/*"    (important the double quotes to prevent glob expansion)
 
-    echo '    a {'
-    echo '      color: black;'
-    echo '    }'
-    echo ''
-    echo '    li {'
-    echo '      border: 1px solid black !important;'
-    echo '      font-size: 20px;'
-    echo '      letter-spacing: 0px;'
-    echo '      font-weight: 700;'
-    echo '      line-height: 16px;'
-    echo '      text-decoration: none !important;'
-    echo '      text-transform: uppercase;'
-    echo '      background: #194ccdaf !important;'
-    echo '      color: black !important;'
-    echo '      border: none;'
-    echo '      cursor: pointer;'
-    echo '      justify-content: center;'
-    echo '      padding: 30px 60px;'
-    echo '      height: 48px;'
-    echo '      text-align: center;'
-    echo '      white-space: normal;'
-    echo '      border-radius: 10px;'
-    echo '      min-width: 45em;'
-    echo '      padding: 1.2em 1em 0;'
-    echo '      box-shadow: 0 0 5px;'
-    echo '      margin: 1em;'
-    echo '      display: grid;'
-    echo '      -webkit-border-radius: 10px;'
-    echo '      -moz-border-radius: 10px;'
-    echo '      -ms-border-radius: 10px;'
-    echo '      -o-border-radius: 10px;'
-    echo '    }'
-    echo '  </style>'
-      echo '</head>'
+        # if in windows/git-bash, add 'zip' command this way:
+        # https://stackoverflow.com/a/55749636/1482990
 
-      echo '<body>'
+    ---
 
-      echo ""
+    ### 23. Delete files containing a certain string:
 
-      # continue with the HTML stuff
+    ### Description:
 
-      echo ""
+    > _Notes:_
 
-      echo ""
+    code:
 
-      echo "<ul>"
+        find . | xargs grep -l www.redhat.com | awk '{print "rm "$1}' > doit.sh
+        vi doit.sh // check for murphy and his law
+        source doit.sh
 
-      awk '{print "<iframe src=\""$1"\">","</iframe>"}' $listing
+    ---
 
-      # awk '{print "<li>"};
+    ### 24.
 
-      #    {print " <a href=\""$1"\">",$1,"</a></li>&nbsp;"}' \ $listing
+    ### Description:
 
-      echo ""
+    > _Notes:_
 
-      echo "</ul>"
+    code:
 
-      echo "</body>"
+        #!/bin/sh
 
-      echo "</html>"
+        # find ./ | grep -i "\.*$" >files
+        find ./ | sed -E -e 's/([^ ]+[ ]+){8}//' | grep -i "\.*$">files
+        listing="files"
 
-    }
+        out=""
 
-    cmd $listing --sort=extension >>$html
+        html="sitemap.html"
+        out="basename $out.html"
+        html="sitemap.html"
+        cmd() {
 
----
+          echo '  <!DOCTYPE html>'
+          echo '<html>'
+          echo '<head>'
 
-### 26. Filter Corrupted Git Repo For Troublesome File:
+          echo '  <meta http-equiv="Content-Type" content="text/html">'
 
-### Description:
+          echo '  <meta name="Author" content="Bryan Guner">'
+          echo '<link rel="stylesheet" href="./assets/prism.css">'
+          echo ' <link rel="stylesheet" href="./assets/style.css">'
+          echo ' <script async defer src="./assets/prism.js"></script>'
 
-> _Notes:_
+          echo "  <title> directory </title>"
+            echo '<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/mdn-article.css">'
+          echo '<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/markdown-to-html-style.css">'
+          echo ""
+          echo '<style>'
 
-code:
+        echo '    a {'
+        echo '      color: black;'
+        echo '    }'
+        echo ''
+        echo '    li {'
+        echo '      border: 1px solid black !important;'
+        echo '      font-size: 20px;'
+        echo '      letter-spacing: 0px;'
+        echo '      font-weight: 700;'
+        echo '      line-height: 16px;'
+        echo '      text-decoration: none !important;'
+        echo '      text-transform: uppercase;'
+        echo '      background: #194ccdaf !important;'
+        echo '      color: black !important;'
+        echo '      border: none;'
+        echo '      cursor: pointer;'
+        echo '      justify-content: center;'
+        echo '      padding: 30px 60px;'
+        echo '      height: 48px;'
+        echo '      text-align: center;'
+        echo '      white-space: normal;'
+        echo '      border-radius: 10px;'
+        echo '      min-width: 45em;'
+        echo '      padding: 1.2em 1em 0;'
+        echo '      box-shadow: 0 0 5px;'
+        echo '      margin: 1em;'
+        echo '      display: grid;'
+        echo '      -webkit-border-radius: 10px;'
+        echo '      -moz-border-radius: 10px;'
+        echo '      -ms-border-radius: 10px;'
+        echo '      -o-border-radius: 10px;'
+        echo '    }'
+        echo '  </style>'
+          echo '</head>'
 
-    git filter-branch --index-filter 'git rm -r --cached --ignore-unmatch assets/_index.html' HEAD
+          echo '<body>'
 
----
+          echo ""
 
-### 27. OVERWRITE LOCAL CHANGES:
+          # continue with the HTML stuff
 
-### Description:
+          echo ""
 
-Important: If you have any local changes, they will be lost. With or without — hard option, any local commits that haven't been pushed will be lost.\[\*\] If you have any files that are not tracked by Git (e.g. uploaded user content), these files will not be affected.
+          echo ""
 
-> _Notes: First, run a fetch to update all origin/ refs to latest:_
+          echo "<ul>"
 
-code:
+          awk '{print "<li><a href=\""$1"\">",$1,"&nbsp;</a></li>"}' $listing
 
-    git fetch --all
-    # Backup your current branch:
+          # awk '{print "<li>"};
 
-    git branch backup-master
-    # Then, you have two options:
+          #    {print " <a href=\""$1"\">",$1,"</a></li>&nbsp;"}' \ $listing
 
-    git reset --hard origin/master
-    # OR If you are on some other branch:
+          echo ""
 
-    git reset --hard origin/<branch_name>
-    # Explanation:
-    # git fetch downloads the latest from remote without trying to merge or rebase anything.
+          echo "</ul>"
 
-    # Then the git reset resets the master branch to what you just fetched. The --hard option changes all the files in your working tree to match the files in origin/master
-    git fetch --all
-    git reset --hard origin/master
+          echo "</body>"
 
----
+          echo "</html>"
 
-### 28. Remove Submodules:
+        }
 
-### Description: To remove a submodule you need to:
+        cmd $listing --sort=extension >>$html
 
-> _Notes:_
+    ---
 
-> _Delete the relevant section from the .gitmodules file. Stage the .gitmodules changes git add .gitmodules Delete the relevant section from .git/config. Run git rm — cached path_to_submodule (no trailing slash). Run rm -rf .git/modules/path_to_submodule (no trailing slash). Commit git commit -m "Removed submodule " Delete the now untracked submodule files rm -rf path_to_submodule_
+    ### 25. Index of Iframes
 
-code:
+    ### Description: Creates an index.html file that contains all the files in the working directory or any of it's sub folders as iframes instead of anchor tags.
 
-    git submodule deinit
+    > _Notes: Useful Follow up Code:_
 
----
+    code:
 
-### 29. GET GISTS
+        #!/bin/sh
 
-### Description:
+        # find ./ | grep -i "\.*$" >files
+        find ./ | sed -E -e 's/([^ ]+[ ]+){8}//' | grep -i "\.*$">files
+        listing="files"
 
-> _Notes:_
+        out=""
 
-code:
+        html="index.html"
+        out="basename $out.html"
+        html="index.html"
+        cmd() {
 
-    sudo apt install wget
+          echo '  <!DOCTYPE html>'
+          echo '<html>'
+          echo '<head>'
 
-    wget -q -O - https://api.github.com/users/bgoonz/gists | grep raw_url | awk -F\" '{print $4}' | xargs -n3 wget
+          echo '  <meta http-equiv="Content-Type" content="text/html">'
 
-    wget -q -O - https://api.github.com/users/amitness/gists | grep raw_url | awk -F\" '{print $4}' | xargs -n3 wget
+          echo '  <meta name="Author" content="Bryan Guner">'
+          echo '<link rel="stylesheet" href="./assets/prism.css">'
+          echo ' <link rel="stylesheet" href="./assets/style.css">'
+          echo ' <script async defer src="./assets/prism.js"></script>'
 
-    wget -q -O - https://api.github.com/users/drodsou/gists | grep raw_url | awk -F\" '{print $4}' | xargs -n1 wget
+          echo "  <title> directory </title>"
 
-    wget -q -O - https://api.github.com/users/thomasmb/gists | grep raw_url | awk -F\" '{print $4}' | xargs -n1 wget
+          echo ""
+          echo '<style>'
 
----
+        echo '    a {'
+        echo '      color: black;'
+        echo '    }'
+        echo ''
+        echo '    li {'
+        echo '      border: 1px solid black !important;'
+        echo '      font-size: 20px;'
+        echo '      letter-spacing: 0px;'
+        echo '      font-weight: 700;'
+        echo '      line-height: 16px;'
+        echo '      text-decoration: none !important;'
+        echo '      text-transform: uppercase;'
+        echo '      background: #194ccdaf !important;'
+        echo '      color: black !important;'
+        echo '      border: none;'
+        echo '      cursor: pointer;'
+        echo '      justify-content: center;'
+        echo '      padding: 30px 60px;'
+        echo '      height: 48px;'
+        echo '      text-align: center;'
+        echo '      white-space: normal;'
+        echo '      border-radius: 10px;'
+        echo '      min-width: 45em;'
+        echo '      padding: 1.2em 1em 0;'
+        echo '      box-shadow: 0 0 5px;'
+        echo '      margin: 1em;'
+        echo '      display: grid;'
+        echo '      -webkit-border-radius: 10px;'
+        echo '      -moz-border-radius: 10px;'
+        echo '      -ms-border-radius: 10px;'
+        echo '      -o-border-radius: 10px;'
+        echo '    }'
+        echo '  </style>'
+          echo '</head>'
 
-### 30. Remove Remote OriginL
+          echo '<body>'
 
-### Description:
+          echo ""
 
-> _Notes:_
+          # continue with the HTML stuff
 
-code:
+          echo ""
 
-    git remote remove origin
+          echo ""
 
----
+          echo "<ul>"
 
-### 31. just clone .git folder:
+          awk '{print "<iframe src=\""$1"\">","</iframe>"}' $listing
 
-### Description:
+          # awk '{print "<li>"};
 
-> _Notes:_
+          #    {print " <a href=\""$1"\">",$1,"</a></li>&nbsp;"}' \ $listing
 
-code:
+          echo ""
 
-    git clone --bare --branch=master --single-branch https://github.com/bgoonz/My-Web-Dev-Archive.git
+          echo "</ul>"
 
----
+          echo "</body>"
 
-### 32. Undo recent pull request:
+          echo "</html>"
 
-### Description:
+        }
 
-> _Notes:_
+        cmd $listing --sort=extension >>$html
 
-code:
+    ---
 
-    git reset --hard master@{"10 minutes ago"}
+    ### 26. Filter Corrupted Git Repo For Troublesome File:
 
----
+    ### Description:
 
-### 33. Lebab
+    > _Notes:_
 
-### Description: ES5 → ES6
+    code:
 
-> _Notes:_
+        git filter-branch --index-filter 'git rm -r --cached --ignore-unmatch assets/_index.html' HEAD
 
-code:
+    ---
 
-    # Safe:
+    ### 27. OVERWRITE LOCAL CHANGES:
 
-     lebab --replace ./ --transform arrow
-     lebab --replace ./ --transform arrow-return
-     lebab --replace ./ --transform for-of
-     lebab --replace ./ --transform for-each
-     lebab --replace ./ --transform arg-rest
-     lebab --replace ./ --transform arg-spread
-     lebab --replace ./ --transform obj-method
-     lebab --replace ./ --transform obj-shorthand
-     lebab --replace ./ --transform multi-var
+    ### Description:
 
-    # ALL:
+    Important: If you have any local changes, they will be lost. With or without — hard option, any local commits that haven't been pushed will be lost.\[\*\] If you have any files that are not tracked by Git (e.g. uploaded user content), these files will not be affected.
 
-    lebab --replace ./ --transform obj-method
-    lebab --replace ./ --transform class
-    lebab --replace ./ --transform arrow
-    lebab --replace ./ --transform let
-    lebab --replace ./ --transform arg-spread
-    lebab --replace ./ --transform arg-rest
-    lebab --replace ./ --transform for-each
-    lebab --replace ./ --transform for-of
-    lebab --replace ./ --transform commonjs
-    lebab --replace ./ --transform exponent
-    lebab --replace ./ --transform multi-var
-    lebab --replace ./ --transform template
-    lebab --replace ./ --transform default-param
-    lebab --replace ./ --transform  destruct-param
-    lebab --replace ./ --transform includes
-    lebab --replace ./ --transform obj-method
-    lebab --replace ./ --transform class
-    lebab --replace ./ --transform arrow
-    lebab --replace ./ --transform arg-spread
-    lebab --replace ./ --transform arg-rest
-    lebab --replace ./ --transform for-each
-    lebab --replace ./ --transform for-of
-    lebab --replace ./ --transform commonjs
-    lebab --replace ./ --transform exponent
-    lebab --replace ./ --transform multi-var
-    lebab --replace ./ --transform template
-    lebab --replace ./ --transform default-param
-    lebab --replace ./ --transform  destruct-param
-    lebab --replace ./ --transform includes
+    > _Notes: First, run a fetch to update all origin/ refs to latest:_
 
----
+    code:
 
-### 34. Troubleshoot Ubuntu Input/Output Error
+        git fetch --all
+        # Backup your current branch:
 
-### Description: Open Powershell as Administrator…
+        git branch backup-master
+        # Then, you have two options:
 
-> _Notes:_
+        git reset --hard origin/master
+        # OR If you are on some other branch:
 
-code:
+        git reset --hard origin/<branch_name>
+        # Explanation:
+        # git fetch downloads the latest from remote without trying to merge or rebase anything.
 
-    wsl.exe --shutdown
+        # Then the git reset resets the master branch to what you just fetched. The --hard option changes all the files in your working tree to match the files in origin/master
+        git fetch --all
+        git reset --hard origin/master
 
-     Get-Service LxssManager | Restart-Service
+    ---
 
----
+    ### 28. Remove Submodules:
 
-### 35. Export Medium as Markdown
+    ### Description: To remove a submodule you need to:
 
-### Description:
+    > _Notes:_
 
-> _Notes:_
+    > _Delete the relevant section from the .gitmodules file. Stage the .gitmodules changes git add .gitmodules Delete the relevant section from .git/config. Run git rm — cached path_to_submodule (no trailing slash). Run rm -rf .git/modules/path_to_submodule (no trailing slash). Commit git commit -m "Removed submodule " Delete the now untracked submodule files rm -rf path_to_submodule_
 
-code:
+    code:
 
-    npm i mediumexporter -g
+        git submodule deinit
 
-    mediumexporter https://medium.com/codex/fundamental-data-structures-in-javascript-8f9f709c15b4 >ds.md
+    ---
 
----
+    ### 29. GET GISTS
 
-### 36. Delete files in violation of a given size range (100MB for git)
+    ### Description:
 
-### Description:
+    > _Notes:_
 
-> _Notes:_
+    code:
 
-code:
+        sudo apt install wget
 
-    find . -size +75M -a -print -a -exec rm -f {} \;
+        wget -q -O - https://api.github.com/users/bgoonz/gists | grep raw_url | awk -F\" '{print $4}' | xargs -n3 wget
 
-    find . -size +98M -a -print -a -exec rm -f {} \;
+        wget -q -O - https://api.github.com/users/amitness/gists | grep raw_url | awk -F\" '{print $4}' | xargs -n3 wget
 
----
+        wget -q -O - https://api.github.com/users/drodsou/gists | grep raw_url | awk -F\" '{print $4}' | xargs -n1 wget
 
-### 37. download all links of given file type
+        wget -q -O - https://api.github.com/users/thomasmb/gists | grep raw_url | awk -F\" '{print $4}' | xargs -n1 wget
 
-### Description:
+    ---
 
-> _Notes:_
+    ### 30. Remove Remote OriginL
 
-code:
+    ### Description:
 
-    wget -r -A.pdf https://overapi.com/git
+    > _Notes:_
 
----
+    code:
 
-### 38. Kill all node processes
+        git remote remove origin
 
-### Description:
+    ---
 
-> _Notes:_
+    ### 31. just clone .git folder:
 
-code:
+    ### Description:
 
-    killall -s KILL node
+    > _Notes:_
 
----
+    code:
 
-### 39. Remove string from file names recursively
+        git clone --bare --branch=master --single-branch https://github.com/bgoonz/My-Web-Dev-Archive.git
 
-### Description: In the example below I am using this command to remove the string "-master" from all file names in the working directory and all of it's sub directories.
+    ---
 
-code:
+    ### 32. Undo recent pull request:
 
-    find <mydir> -type f -exec sed -i 's/<string1>/<string2>/g' {} +
+    ### Description:
 
-    find . -type f -exec rename 's/-master//g' {} +
+    > _Notes:_
 
-> _Notes: The same could be done for folder names by changing the_ -type f _flag (for file) to a_ -type d _flag (for directory)_
+    code:
 
-    find <mydir> -type d -exec sed -i 's/<string1>/<string2>/g' {} +
+        git reset --hard master@{"10 minutes ago"}
 
-    find . -type d -exec rename 's/-master//g' {} +
+    ---
 
----
+    ### 33. Lebab
 
-### 40. Remove spaces from file and folder names recursively
+    ### Description: ES5 → ES6
 
-### Description: replaces spaces in file and folder names with an `_` underscore
+    > _Notes:_
 
-> _Notes: need to run_ `sudo apt install rename` _to use this command_
+    code:
 
-code:
+        # Safe:
 
-    find . -name "* *" -type d | rename 's/ /_/g'
-    find . -name "* *" -type f | rename 's/ /_/g'
+         lebab --replace ./ --transform arrow
+         lebab --replace ./ --transform arrow-return
+         lebab --replace ./ --transform for-of
+         lebab --replace ./ --transform for-each
+         lebab --replace ./ --transform arg-rest
+         lebab --replace ./ --transform arg-spread
+         lebab --replace ./ --transform obj-method
+         lebab --replace ./ --transform obj-shorthand
+         lebab --replace ./ --transform multi-var
 
-By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [August 24, 2021](https://medium.com/p/3c7869fdae53).
+        # ALL:
 
-<a href="https://medium.com/@bryanguner/my-personal-arsenal-of-convenience-scripts-3c7869fdae53" class="p-canonical">Canonical link</a>
+        lebab --replace ./ --transform obj-method
+        lebab --replace ./ --transform class
+        lebab --replace ./ --transform arrow
+        lebab --replace ./ --transform let
+        lebab --replace ./ --transform arg-spread
+        lebab --replace ./ --transform arg-rest
+        lebab --replace ./ --transform for-each
+        lebab --replace ./ --transform for-of
+        lebab --replace ./ --transform commonjs
+        lebab --replace ./ --transform exponent
+        lebab --replace ./ --transform multi-var
+        lebab --replace ./ --transform template
+        lebab --replace ./ --transform default-param
+        lebab --replace ./ --transform  destruct-param
+        lebab --replace ./ --transform includes
+        lebab --replace ./ --transform obj-method
+        lebab --replace ./ --transform class
+        lebab --replace ./ --transform arrow
+        lebab --replace ./ --transform arg-spread
+        lebab --replace ./ --transform arg-rest
+        lebab --replace ./ --transform for-each
+        lebab --replace ./ --transform for-of
+        lebab --replace ./ --transform commonjs
+        lebab --replace ./ --transform exponent
+        lebab --replace ./ --transform multi-var
+        lebab --replace ./ --transform template
+        lebab --replace ./ --transform default-param
+        lebab --replace ./ --transform  destruct-param
+        lebab --replace ./ --transform includes
 
- August 31, 2021.
-```
+    ---
+
+    ### 34. Troubleshoot Ubuntu Input/Output Error
+
+    ### Description: Open Powershell as Administrator…
+
+    > _Notes:_
+
+    code:
+
+        wsl.exe --shutdown
+
+         Get-Service LxssManager | Restart-Service
+
+    ---
+
+    ### 35. Export Medium as Markdown
+
+    ### Description:
+
+    > _Notes:_
+
+    code:
+
+        npm i mediumexporter -g
+
+        mediumexporter https://medium.com/codex/fundamental-data-structures-in-javascript-8f9f709c15b4 >ds.md
+
+    ---
+
+    ### 36. Delete files in violation of a given size range (100MB for git)
+
+    ### Description:
+
+    > _Notes:_
+
+    code:
+
+        find . -size +75M -a -print -a -exec rm -f {} \;
+
+        find . -size +98M -a -print -a -exec rm -f {} \;
+
+    ---
+
+    ### 37. download all links of given file type
+
+    ### Description:
+
+    > _Notes:_
+
+    code:
+
+        wget -r -A.pdf https://overapi.com/git
+
+    ---
+
+    ### 38. Kill all node processes
+
+    ### Description:
+
+    > _Notes:_
+
+    code:
+
+        killall -s KILL node
+
+    ---
+
+    ### 39. Remove string from file names recursively
+
+    ### Description: In the example below I am using this command to remove the string "-master" from all file names in the working directory and all of it's sub directories.
+
+    code:
+
+        find <mydir> -type f -exec sed -i 's/<string1>/<string2>/g' {} +
+
+        find . -type f -exec rename 's/-master//g' {} +
+
+    > _Notes: The same could be done for folder names by changing the_ -type f _flag (for file) to a_ -type d _flag (for directory)_
+
+        find <mydir> -type d -exec sed -i 's/<string1>/<string2>/g' {} +
+
+        find . -type d -exec rename 's/-master//g' {} +
+
+    ---
+
+    ### 40. Remove spaces from file and folder names recursively
+
+    ### Description: replaces spaces in file and folder names with an `_` underscore
+
+    > _Notes: need to run_ `sudo apt install rename` _to use this command_
+
+    code:
+
+        find . -name "* *" -type d | rename 's/ /_/g'
+        find . -name "* *" -type f | rename 's/ /_/g'
+
+    By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [August 24, 2021](https://medium.com/p/3c7869fdae53).
+
+    <a href="https://medium.com/@bryanguner/my-personal-arsenal-of-convenience-scripts-3c7869fdae53" class="p-canonical">Canonical link</a>
+
+     August 31, 2021.

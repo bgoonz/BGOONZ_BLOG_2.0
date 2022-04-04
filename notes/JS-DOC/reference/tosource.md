@@ -1,4 +1,5 @@
-# Object.prototype.toSource()
+Object.prototype.toSource()
+===========================
 
 **Deprecated**
 
@@ -6,7 +7,8 @@ This feature is no longer recommended. Though some browsers might still support 
 
 The `toSource()` method returns a string representing the source code of the object.
 
-## Syntax
+Syntax
+------
 
     toSource()
 
@@ -14,7 +16,8 @@ The `toSource()` method returns a string representing the source code of the obj
 
 A string representing the source code of the object.
 
-## Description
+Description
+-----------
 
 The `toSource()` method returns the following values:
 
@@ -54,11 +57,11 @@ Each core JavaScript type has its own `toSource()` method. These objects are:
 -   [`RegExp.prototype.toSource()`](../regexp/tosource) — [`RegExp`](../regexp) object.
 -   [`String.prototype.toSource()`](../string/tosource) — [`String`](../string) object.
 -   [`Symbol.prototype.toSource()`](../symbol/tosource) — [`Symbol`](../symbol) object.
--   `Math.toSource()` — Returns the String "Math".
+-   `Math.toSource()` — Returns the String “Math”.
 
 ### Limitations on cyclical objects
 
-In the case of objects that contain references to themselves, e.g. a cyclically linked list or a tree that can be traversed both ways, `toSource()` will not recreate the self-reference, as of Firefox 24. For example:
+In the case of objects that contain references to themselves, e.g. a cyclically linked list or a tree that can be traversed both ways, `toSource()` will not recreate the self-reference, as of Firefox 24. For example:
 
     var obj1 = {};
     var obj2 = { a: obj1 };
@@ -74,7 +77,8 @@ In the case of objects that contain references to themselves, e.g. a cyclically 
 
 If a cyclical structure is employed and `toSource()` is needed, the object must provide an override to `toSource()`, either using a reference to a constructor or providing an anonymous function.
 
-## Examples
+Examples
+--------
 
 ### Using toSource()
 
@@ -94,11 +98,13 @@ Calling the `toSource()` method of `theDog` displays the JavaScript source that 
     theDog.toSource();
     // returns ({name:"Gabby", breed:"Lab", color:"chocolate", sex:"female"})
 
-## Specifications
+Specifications
+--------------
 
 Not part of any standard.
 
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -156,10 +162,10 @@ No
 
 No
 
-## See also
+See also
+--------
 
 -   [`Object.prototype.toString()`](tostring)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toSource" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toSource</a>

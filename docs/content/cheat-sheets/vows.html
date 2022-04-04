@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Vows</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Vows</h1>
+</header>
+<ul>
+<li><a href="http://vowsjs.org/">Vowsjs.org</a></li>
+</ul>
+<h3 id="coffeescript-usage">CoffeeScript usage</h3>
+<pre><code>vows = require &quot;vows&quot;
+assert = require &quot;assert&quot;
+
+vows
+  .describe(&#39;My tests&#39;)
+  .addBatch
+    &#39;context&#39;:
+      topic: -&gt;
+        100
+      &#39;should work&#39;: (number) -&gt;
+        assert.equal number, 100
+
+  .export(module)</code></pre>
+<h3 id="running">Running</h3>
+<pre><code>vows test/*-test.* --spec</code></pre>
+<h3 id="assertions">Assertions</h3>
+<pre><code>assert.equal a, b
+assert.notEqual a, b
+assert.strictEqual a, b
+
+assert.isNaN(number)
+assert.instanceOf(object, klass)
+assert.isUndefined(object)
+assert.isFunction(func)
+assert.isNull(object)
+assert.isNotZero(object)
+assert.isObject(object)
+assert.isString(object)</code></pre>
+<h3 id="async">Async</h3>
+<pre><code>.addBatch
+  topic: -&gt;
+    doStuff()
+    @callback 2
+  &#39;check things&#39;: (n) -&gt;
+    assert.equal 2, n</code></pre>
+</body>
+</html>

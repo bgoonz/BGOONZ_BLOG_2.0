@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>template_literals</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="template-literals-template-strings">Template literals (Template strings)</h1>
+<p>Template literals are string literals allowing embedded expressions. You can use multi-line strings and string interpolation features with them.</p>
+<p>They were called “template strings” in prior editions of the ES2015 specification.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>`string text`
+
+`string text line 1
+ string text line 2`
+
+`string text ${expression} string text`
+
+tag`string text ${expression} string text`</code></pre>
+<h2 id="description">Description</h2>
+<p>Template literals are enclosed by the backtick (` `) (<a href="https://en.wikipedia.org/wiki/Grave_accent">grave accent</a>) character instead of double or single quotes.</p>
+<p>Template literals can contain placeholders. These are indicated by the dollar sign and curly braces (<code>${expression}</code>). The expressions in the placeholders and the text between the backticks (` `) get passed to a function.</p>
+<p>The default function just concatenates the parts into a single string. If there is an expression preceding the template literal (<code>tag</code> here), this is called a <em>tagged template</em>. In that case, the tag expression (usually a function) gets called with the template literal, which you can then manipulate before outputting.</p>
+<p>To escape a backtick in a template literal, put a backslash (<code>\</code>) before the backtick.</p>
+<pre><code>`\`` === &#39;`&#39; // --&gt; true</code></pre>
+<h3 id="multi-line-strings">Multi-line strings</h3>
+<p>Any newline characters inserted in the source are part of the template literal.</p>
+<p>Using normal strings, you would have to use the following syntax in order to get multi-line strings:</p>
+<pre><code>console.log(&#39;string text line 1\n&#39; +
+&#39;string text line 2&#39;);
+// &quot;string text line 1
+// string text line 2&quot;</code></pre>
+<p>Using template literals, you can do the same like this:</p>
+<pre><code>console.log(`string text line 1
+string text line 2`);
+// &quot;string text line 1
+// string text line 2&quot;</code></pre>
+<h3 id="expression-interpolation">Expression interpolation</h3>
+<p>In order to embed expressions within normal strings, you would use the following syntax:</p>
+<pre><code>let a = 5;
+let b = 10;
+console.log(&#39;Fifteen is &#39; + (a + b) + &#39; and\nnot &#39; + (2 * a + b) + &#39;.&#39;);
+// &quot;Fifteen is 15 and
+// not 20.&quot;</code></pre>
+<p>Now, with template literals, you are able to make use of the syntactic sugar, making substitutions like this more readable:</p>
+<pre><code>let a = 5;
+let b = 10;
+console.log(`Fifteen is ${a + b} and
+not ${2 * a + b}.`);
+// &quot;Fifteen is 15 and
+// not 20.&quot;</code></pre>
+<h3 id="nesting-templates">Nesting templates</h3>
+<p>In certain cases, nesting a template is the easiest (and perhaps more readable) way to have configurable strings. Within a backticked template, it is simple to allow inner backticks by using them inside a placeholder <code>${ }</code> within the template.</p>
+<p>For instance, if condition a is <code>true</code>, then <code>return</code> this templated literal.</p>
+<p>In ES5:</p>
+<pre><code>let classes = &#39;header&#39;;
+classes += (isLargeScreen() ?
+  &#39;&#39; : item.isCollapsed ?
+    &#39; icon-expander&#39; : &#39; icon-collapser&#39;);</code></pre>
+<p>In ES2015 with template literals and without nesting:</p>
+<pre><code>const classes = `header ${ isLargeScreen() ? &#39;&#39; :
+  (item.isCollapsed ? &#39;icon-expander&#39; : &#39;icon-collapser&#39;) }`;</code></pre>
+<p>In ES2015 with nested template literals:</p>
+<pre><code>const classes = `header ${ isLargeScreen() ? &#39;&#39; :
+  `icon-${item.isCollapsed ? &#39;expander&#39; : &#39;collapser&#39;}` }`;</code></pre>
+<h3 id="tagged-templates">Tagged templates</h3>
+<p>A more advanced form of template literals are <em>tagged</em> templates.</p>
+<p>Tags allow you to parse template literals with a function. The first argument of a tag function contains an array of string values. The remaining arguments are related to the expressions.</p>
+<p>The tag function can then perform whatever operations on these arguments you wish, and return the manipulated string. (Alternatively, it can return something completely different, as described in one of the following examples.)</p>
+<p>The name of the function used for the tag can be whatever you want.</p>
+<pre><code>let person = &#39;Mike&#39;;
+let age = 28;
+
+function myTag(strings, personExp, ageExp) {
+  let str0 = strings[0]; // &quot;That &quot;
+  let str1 = strings[1]; // &quot; is a &quot;
+  let str2 = strings[2]; // &quot;.&quot;
+
+  let ageStr;
+  if (ageExp &gt; 99){
+    ageStr = &#39;centenarian&#39;;
+  } else {
+    ageStr = &#39;youngster&#39;;
+  }
+
+  // We can even return a string built using a template literal
+  return `${str0}${personExp}${str1}${ageStr}${str2}`;
+}
+
+let output = myTag`That ${ person } is a ${ age }.`;
+
+console.log(output);
+// That Mike is a youngster.</code></pre>
+<p>Tag functions don’t even need to return a string!</p>
+<pre><code>function template(strings, ...keys) {
+  return (function(...values) {
+    let dict = values[values.length - 1] || {};
+    let result = [strings[0]];
+    keys.forEach(function(key, i) {
+      let value = Number.isInteger(key) ? values[key] : dict[key];
+      result.push(value, strings[i + 1]);
+    });
+    return result.join(&#39;&#39;);
+  });
+}
+
+let t1Closure = template`${0}${1}${0}!`;
+//let t1Closure = template([&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;!&quot;],0,1,0);
+t1Closure(&#39;Y&#39;, &#39;A&#39;);                      // &quot;YAY!&quot;
+
+let t2Closure = template`${0}${&#39;foo&#39;}!`;
+//let t2Closure = template([&quot;&quot;,&quot; &quot;,&quot;!&quot;],0,&quot;foo&quot;);
+t2Closure(&#39;Hello&#39;, {foo: &#39;World&#39;}); // &quot;Hello World!&quot;
+
+let t3Closure = template`I&#39;m ${&#39;name&#39;}. I&#39;m almost ${&#39;age&#39;} years old.`;
+//let t3Closure = template([&quot;I&#39;m &quot;, &quot;. I&#39;m almost &quot;, &quot; years old.&quot;], &quot;name&quot;, &quot;age&quot;);
+t3Closure(&#39;foo&#39;, {name: &#39;MDN&#39;, age: 30}); //&quot;I&#39;m MDN. I&#39;m almost 30 years old.&quot;
+t3Closure({name: &#39;MDN&#39;, age: 30}); //&quot;I&#39;m MDN. I&#39;m almost 30 years old.&quot;</code></pre>
+<h3 id="raw-strings">Raw strings</h3>
+<p>The special <code>raw</code> property, available on the first argument to the tag function, allows you to access the raw strings as they were entered, without processing <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#using_special_characters_in_strings">escape sequences</a>.</p>
+<pre><code>function tag(strings) {
+  console.log(strings.raw[0]);
+}
+
+tag`string text line 1 \n string text line 2`;
+// logs &quot;string text line 1 \n string text line 2&quot; ,
+// including the two characters &#39;\&#39; and &#39;n&#39;</code></pre>
+<p>In addition, the <a href="global_objects/string/raw"><code>String.raw()</code></a> method exists to create raw strings—just like the default template function and string concatenation would create.</p>
+<pre><code>let str = String.raw`Hi\n${2+3}!`;
+// &quot;Hi\n5!&quot;
+
+str.length;
+// 6
+
+Array.from(str).join(&#39;,&#39;);
+// &quot;H,i,\,n,5,!&quot;</code></pre>
+<h3 id="tagged-templates-and-escape-sequences">Tagged templates and escape sequences</h3>
+<h4 id="es2016-behavior">ES2016 behavior</h4>
+<p>As of ECMAScript 2016, tagged templates conform to the rules of the following escape sequences:</p>
+<ul>
+<li>Unicode escapes started by “<code>\u</code>”, for example <code>\u00A9</code></li>
+<li>Unicode code point escapes indicated by “<code>\u{}</code>”, for example <code>\u{2F804}</code></li>
+<li>Hexadecimal escapes started by “<code>\x</code>”, for example <code>\xA9</code></li>
+<li>Octal literal escapes started by “<code>\0o</code>” and followed by one or more digits, for example <code>\0o251</code></li>
+</ul>
+<p>This means that a tagged template like the following is problematic, because, per ECMAScript grammar, a parser looks for valid Unicode escape sequences, but finds malformed syntax:</p>
+<pre><code>latex`\unicode`
+// Throws in older ECMAScript versions (ES2016 and earlier)
+// SyntaxError: malformed Unicode character escape sequence</code></pre>
+<h4 id="es2018-revision-of-illegal-escape-sequences">ES2018 revision of illegal escape sequences</h4>
+<p>Tagged templates should allow the embedding of languages (for example <a href="https://en.wikipedia.org/wiki/Domain-specific_language">DSLs</a>, or <a href="https://en.wikipedia.org/wiki/LaTeX">LaTeX</a>), where other escapes sequences are common. The ECMAScript proposal <a href="https://tc39.github.io/proposal-template-literal-revision/">Template Literal Revision</a> (Stage 4, to be integrated in the ECMAScript 2018 standard) removes the syntax restriction of ECMAScript escape sequences from tagged templates.</p>
+<p>However, illegal escape sequences must still be represented in the “cooked” representation. They will show up as <a href="global_objects/undefined"><code>undefined</code></a> element in the “cooked” array:</p>
+<pre><code>function latex(str) {
+  return { &quot;cooked&quot;: str[0], &quot;raw&quot;: str.raw[0] }
+}
+
+latex`\unicode`
+
+// { cooked: undefined, raw: &quot;\\unicode&quot; }</code></pre>
+<p>Note that the escape sequence restriction is only dropped from <em>tagged</em> templates—not from <em>untagged</em> template literals:</p>
+<pre><code>let bad = `bad escape sequence: \unicode`;</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-template-literals">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-template-literals</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>Template_literals</code></p>
+<p>41</p>
+<p>12</p>
+<p>34</p>
+<p>No</p>
+<p>28</p>
+<p>9</p>
+<p>41</p>
+<p>41</p>
+<p>34</p>
+<p>28</p>
+<p>9</p>
+<p>4.0</p>
+<p><code>template_literal_revision</code></p>
+<p>62</p>
+<p>79</p>
+<p>53</p>
+<p>No</p>
+<p>49</p>
+<p>11</p>
+<p>62</p>
+<p>62</p>
+<p>53</p>
+<p>46</p>
+<p>11</p>
+<p>8.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="global_objects/string"><code>String</code></a></li>
+<li><a href="global_objects/string/raw"><code>String.raw()</code></a></li>
+<li><a href="lexical_grammar">Lexical grammar</a></li>
+<li><a href="https://gist.github.com/WebReflection/8f227532143e63649804">Template-like strings in ES3 compatible syntax</a></li>
+<li><a href="https://hacks.mozilla.org/2015/05/es6-in-depth-template-strings-2/">“ES6 in Depth: Template strings” on hacks.mozilla.org</a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals</a></p>
+</body>
+</html>

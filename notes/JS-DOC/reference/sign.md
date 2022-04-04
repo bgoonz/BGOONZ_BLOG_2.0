@@ -1,8 +1,10 @@
-# Math.sign()
+Math.sign()
+===========
 
 The `Math.sign()` function returns either a **positive** or **negative** +/- 1, indicating the sign of a number passed into the argument. If the number passed into `Math.sign()` is 0, it will return a +/- 0. Note that if the number is positive, an explicit (+) will **not** be returned.
 
-## Syntax
+Syntax
+------
 
     Math.sign(x)
 
@@ -21,11 +23,13 @@ A number representing the sign of the given argument:
 -   If the argument is negative zero, returns `-0`.
 -   Otherwise, [`NaN`](../nan) is returned.
 
-## Description
+Description
+-----------
 
 Because `sign()` is a static method of `Math`, you always use it as `Math.sign()`, rather than as a method of a `Math` object you created (`Math` is not a constructor).
 
-## Examples
+Examples
+--------
 
 ### Using Math.sign()
 
@@ -38,14 +42,14 @@ Because `sign()` is a static method of `Math`, you always use it as `Math.sign()
     Math.sign('foo'); // NaN
     Math.sign();      // NaN
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.sign">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-math.sign</span></td></tr></tbody></table>
 
-<span class="small">#sec-math.sign</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -101,7 +105,8 @@ No
 
 3.0
 
-## See also
+See also
+--------
 
 -   [A polyfill](https://github.com/behnammodi/polyfill/blob/master/math.polyfill.js)
 -   [`Math.abs()`](abs)
@@ -110,6 +115,5 @@ No
 -   [`Math.round()`](round)
 -   [`Math.trunc()`](trunc)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sign" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sign</a>

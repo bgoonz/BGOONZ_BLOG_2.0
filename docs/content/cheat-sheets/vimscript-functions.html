@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Vimscript functions</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Vimscript functions</h1>
+</header>
+<h2 id="dictionaries">Dictionaries</h2>
+<pre class="vim"><code>let colors = {
+  \ &quot;apple&quot;: &quot;red&quot;,
+  \ &quot;banana&quot;: &quot;yellow&quot;
+}
+
+echo colors[&quot;a&quot;]
+echo get(colors, &quot;apple&quot;)   &quot; suppress error
+
+remove(colors, &quot;apple&quot;)
+
+&quot; :help E715
+if has_key(dict, &#39;foo&#39;)
+if empty(dict)
+keys(dict)
+len(dict)
+
+max(dict)
+min(dict)
+
+count(dict, &#39;x&#39;)
+string(dict)
+
+map(dict, &#39;&lt;&gt;&gt; &quot; . v:val&#39;)
+extend(s:fruits, { ... })</code></pre>
+<pre class="vim"><code>for key in keys(mydict)
+  echo key . &#39;: &#39; . mydict(key)
+endfor</code></pre>
+<h2 id="lists">Lists</h2>
+<pre class="vim"><code>let mylist = [1, two, 3, &quot;four&quot;]
+
+let first = mylist[0]
+let last  = mylist[-1]
+
+&quot; Suppresses errors
+let second = get(mylist, 1)
+let second = get(mylist, 1, &quot;NONE&quot;)</code></pre>
+<h2 id="functions">Functions</h2>
+<h3 id="buffer">Buffer</h3>
+<pre><code>line(&#39;.&#39;)             &quot; current line number
+col(&#39;.&#39;)
+col(&#39;$&#39;)
+
+getline(&#39;.&#39;)          &quot; current line as a string
+getline(1)            &quot; get line 1
+getline(1, 5)         &quot; get lines 1-5
+search(&#39;^$&#39;)          &quot; next blank line, returns line number
+search(&#39;^$&#39;,&#39;n&#39;)      &quot; but don&#39;t move cursor
+
+getcurpos()           &quot; [bufnum, lnum, col, off, curswant]
+getpos(&#39;.&#39;)           &quot; [bufnum, lnum, col, off]
+
+nextnonblank(1)       &quot; next non-blank line after line1
+prevnonblank()</code></pre>
+<h3 id="marks">Marks</h3>
+<pre><code>getpos(&quot;&#39;a&quot;)          &quot; position of a mark
+setpos(&quot;&#39;a&quot;,...)
+
+getpos(&quot;&#39;&lt;&quot;)          &quot; position of selection start</code></pre>
+<h3 id="cursor">Cursor</h3>
+<pre><code>cursor(line,col)      &quot; moves cursor
+cursor(line,col,off,curswant)
+
+getcurpos()           &quot; returns [bufnum,line,col,off,curswant]</code></pre>
+<h3 id="expand">Expand</h3>
+<pre><code>expand(&#39;&lt;cword&gt;&#39;)      &quot; word under cursor
+expand(&#39;%&#39;)            &quot; current file
+
+&quot; &lt;cword&gt;  current word on cursor
+&quot; :p    full path
+&quot; :h    head
+&quot; :p:h  dirname   (/Users/rsc/project)
+&quot; :t    tail      (file.txt)
+&quot; :r    root      (file)
+&quot; :e    extension (.txt)
+&quot; see :h cmdline-special</code></pre>
+<h3 id="files">Files</h3>
+<pre><code>fnameescape(&#39;string&#39;)
+fnamemodify(&#39;main.c&#39;, &#39;:p:h&#39;)
+fnamemodify(fname, &#39;:e&#39;)   &quot; current file extension - see expand()
+filereadable(fname)
+getfsize(&#39;file.txt&#39;)
+getcwd()
+
+globpath(&amp;rtp, &quot;plugin/commentary.vim&quot;)</code></pre>
+<h3 id="math">Math</h3>
+<pre><code>fmod(9, 2)  &quot; modulus
+abs(-0.5)
+sqrt(9)
+
+trunc(1.84)
+floor(1.84)
+ceil(1.84)
+float2nr(3.14)</code></pre>
+<h3 id="casting">Casting</h3>
+<pre><code>str2float(&#39;0.2&#39;)
+str2nr(&#39;240&#39;)
+str2nr(&#39;ff&#39;, &#39;16&#39;)
+
+string(0.3)</code></pre>
+<h3 id="type-checking">Type checking</h3>
+<pre><code>type(var) == type(0)
+type(var) == type(&quot;&quot;)
+type(var) == type(function(&quot;tr&quot;))
+type(var) == type([])
+type(var) == type({})
+type(var) == type(0.0)</code></pre>
+<h3 id="datetime">Date/time</h3>
+<pre><code>strftime(&#39;%c&#39;)
+strftime(&#39;%c&#39;,getftime(&#39;file.c&#39;))</code></pre>
+<h3 id="strings">Strings</h3>
+<pre><code>if a =~ &#39;\s*&#39;
+substitute(str, &#39;.&#39;, &#39;x&#39;, &#39;g&#39;)
+strpart(&quot;abcdef&quot;, 3, 2)    &quot; == &quot;de&quot; (substring)
+strpart(&quot;abcdef&quot;, 3)       &quot; == &quot;def&quot;
+stridx(&quot;abcdef&quot;, &quot;e&quot;)      &quot; == 4
+strridx()                  &quot; reverse
+
+matchstr(&#39;testing&#39;,&#39;test&#39;)  &quot; == &#39;test&#39; (or &#39;&#39;)
+match(&#39;testing&#39;,&#39;test&#39;)     &quot; == 0
+matchend(&#39;testing&#39;,&#39;test&#39;)  &quot; == 4
+match(&#39;testing&#39;,&#39;\ctest&#39;)   &quot; ignore case
+
+split(str, &#39;\zs&#39;)           &quot; split into characters
+
+strlen(str)
+strchars()                  &quot; accounts for composing chars
+strwidth()                  &quot; accounts for ambig characters
+strdisplaywidth()           &quot; accounts for tab stops
+
+toupper(str)
+tolower(str)
+tr(&#39;foo&#39;, &#39;_-&#39;, &#39;  &#39;)</code></pre>
+<h3 id="syntax">Syntax</h3>
+<pre><code>synstack(line(&#39;.&#39;),col(&#39;.&#39;))   &quot; returns many
+synID(line(&#39;.&#39;),col(&#39;.&#39;),1)    &quot; only one
+
+synIDattr(id,&quot;bg&quot;)
+synIDattr(id,&quot;name&quot;)
+synIDtrans()
+
+&quot; syntax stack
+map(synstack(line(&#39;.&#39;), col(&#39;.&#39;)), &#39;synIDattr(v:val, &quot;name&quot;)&#39;)</code></pre>
+<h3 id="shell">Shell</h3>
+<pre><code>system(&#39;ls &#39;.shellescape(expand(&#39;%:h&#39;)))</code></pre>
+<h3 id="registers">Registers</h3>
+<pre><code>getreg(&#39;*&#39;)
+getregtype(&#39;*&#39;)     &quot; v(char), V(line) &lt;ctrl-v&gt;(block)</code></pre>
+<h2 id="comparisons">Comparisons</h2>
+<pre><code>if name ==# &#39;John&#39;     &quot; case-sensitive
+if name ==? &#39;John&#39;     &quot; case-insensitive
+if name == &#39;John&#39;      &quot; depends on :set ignorecase
+&quot; also: is#, is?, &gt;=#, &gt;=?, and so on
+
+if &quot;hello&quot; =~ &#39;.*&#39;
+if &quot;hello&quot; !~ &#39;.*&#39;</code></pre>
+<h2 id="executing">Executing</h2>
+<h3 id="running-commands">Running commands</h3>
+<pre><code>normal &#39;ddahello&#39;
+exe &#39;normal ^C&#39;  &quot; with expansions
+wincmd J</code></pre>
+</body>
+</html>
