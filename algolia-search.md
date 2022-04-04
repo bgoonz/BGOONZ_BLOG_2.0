@@ -9,7 +9,7 @@ To setup algolia search, first, you need to:
 -   create an account at algolia's website [here](https://www.algolia.com/users/sign_up)
 -   once done, you create an index you can name whatever you want (blog for example)
 
-After that, we can grab the API keys and put them in your `.env` which you can find them here [![algolia api keys](https://malikgabroun.com/static/d81f28f7e184299ddb2144e4116a22bf/fcda8/algolia-api-keys.png "algolia api keys")](https://malikgabroun.com/static/d81f28f7e184299ddb2144e4116a22bf/5df5d/algolia-api-keys.png)
+After that, we can grab the API keys and put them in your `.env` which you can find them here [![algolia api keys](https://malikgabroun.com/static/d81f28f7e184299ddb2144e4116a22bf/fcda8/algolia-api-keys.png 'algolia api keys')](https://malikgabroun.com/static/d81f28f7e184299ddb2144e4116a22bf/5df5d/algolia-api-keys.png)
 
 ```
 1GATSBY_ALGOLIA_APP_ID="xxxx"2GATSBY_ALGOLIA_INDEX_NAME="test"3ALGOLIA_API_KEY="xxx"4GATSBY_ALGOLIA_SEARCH_KEY="xxx"
@@ -50,9 +50,9 @@ The next step will be configuring `gatsby-plugin-algolia` as follow
 
 the plugin takes an options object with the keys we added earlier in the env file and the queries object which contains your query (you can pass more than one query to that, for example, a query for posts and a different one for pages) and the transformer method for mapping, index name and any settings you wish to pass.
 
-Once the configuration is done, you can run your project in production mode to send the data to algolia so that you can test by running `gatsby build` and it will look like the following [![gatsby indexing data to algolia](https://malikgabroun.com/static/ab96e8cfa1bcff9409a65040625c292b/fcda8/algolia-build.png "gatsby indexing data to algolia")](https://malikgabroun.com/static/ab96e8cfa1bcff9409a65040625c292b/076ca/algolia-build.png)
+Once the configuration is done, you can run your project in production mode to send the data to algolia so that you can test by running `gatsby build` and it will look like the following [![gatsby indexing data to algolia](https://malikgabroun.com/static/ab96e8cfa1bcff9409a65040625c292b/fcda8/algolia-build.png 'gatsby indexing data to algolia')](https://malikgabroun.com/static/ab96e8cfa1bcff9409a65040625c292b/076ca/algolia-build.png)
 
-If you look in your dashboard after the build finish, you should be able to see the data as well [![algolia index dashboard](https://malikgabroun.com/static/5348cf03ba27e5cf3783da2d33581cce/fcda8/algolia-index-dashboard.png "algolia index dashboard")](https://malikgabroun.com/static/5348cf03ba27e5cf3783da2d33581cce/a3c4c/algolia-index-dashboard.png)
+If you look in your dashboard after the build finish, you should be able to see the data as well [![algolia index dashboard](https://malikgabroun.com/static/5348cf03ba27e5cf3783da2d33581cce/fcda8/algolia-index-dashboard.png 'algolia index dashboard')](https://malikgabroun.com/static/5348cf03ba27e5cf3783da2d33581cce/a3c4c/algolia-index-dashboard.png)
 
 Now we can move to the frontend part after configuration and indexing part finished.
 
@@ -71,7 +71,7 @@ To do that, first, we create a new component call it `Search.js` which would uti
 19export default Search;
 ```
 
-As you can see in the above snippet, we first added `InstantSearch` component which as defined by algolia in the [docs](https://www.algolia.com/doc/guides/building-search-ui/what-is-instantsearch/react/) as a component that interact with Algolia’s API, to easily build instant-search applications. `InstantSearch` takes two properties, `searchClient` that contains your app id and search key which was defined in env earlier and indexName that you defined in algolia's account. The component has two children components, `SearchBox` component as the name implies and input field with search and delete icon and a `Hits` component (Hits are the return result from your query). The result of the search component will look something like this ![Search Component](https://malikgabroun.com/static/48f558d3489bae12bb05be88caee9e37/fcda8/SearchComponent.png "Search Component")
+As you can see in the above snippet, we first added `InstantSearch` component which as defined by algolia in the [docs](https://www.algolia.com/doc/guides/building-search-ui/what-is-instantsearch/react/) as a component that interact with Algolia’s API, to easily build instant-search applications. `InstantSearch` takes two properties, `searchClient` that contains your app id and search key which was defined in env earlier and indexName that you defined in algolia's account. The component has two children components, `SearchBox` component as the name implies and input field with search and delete icon and a `Hits` component (Hits are the return result from your query). The result of the search component will look something like this ![Search Component](https://malikgabroun.com/static/48f558d3489bae12bb05be88caee9e37/fcda8/SearchComponent.png 'Search Component')
 
 We can replace the HTML you see in the screenshot from the list of posts with the actual hits which is a good spot to do highlighting for the searched keywords etc. To do so, we can add an attribute `hitComponent` which going to pass the data that it receives from `Hits` to the component you pass to it for example postPreview.
 
@@ -96,7 +96,7 @@ An example of adding the `Highlight` widget
 1<Highlight hit={hit} attribute="title" tagName="mark" />
 ```
 
-By adding the above, it is going to highlight the attribute title if it matches the search query as you can see below [![Highlight Component](https://malikgabroun.com/static/249c1d6ce3bf01038eb53069d4d337d8/fcda8/highlight-widget.png "Highlight Component")](https://malikgabroun.com/static/249c1d6ce3bf01038eb53069d4d337d8/332b4/highlight-widget.png)
+By adding the above, it is going to highlight the attribute title if it matches the search query as you can see below [![Highlight Component](https://malikgabroun.com/static/249c1d6ce3bf01038eb53069d4d337d8/fcda8/highlight-widget.png 'Highlight Component')](https://malikgabroun.com/static/249c1d6ce3bf01038eb53069d4d337d8/332b4/highlight-widget.png)
 
 As a result, now we have `Search` component that uses algolia `InstantSearch` as a base component.
 
@@ -104,12 +104,13 @@ As a result, now we have `Search` component that uses algolia `InstantSearch` as
 
 I hope part one showed how you can install and add algolia search component to your Gatsby site. Part two will cover how to create a custom search component with Algolia.
 
-
----
----
----
 ---
 
+---
+
+---
+
+---
 
 This guide will run you through the process of setting up a custom search experience powered by [Algolia](https://www.algolia.com/) on a Gatsby site.
 
@@ -161,7 +162,7 @@ If you don’t already have an Algolia account, [create one](https://www.algolia
 
 Then, go to [the ‘API Keys’ section of your Algolia profile](https://www.algolia.com/api-keys). It should look like this screenshot, only with letters and numbers instead of black boxes:
 
-[![The API Keys section of the Algolia profile](https://www.gatsbyjs.com/static/7d7464953fdefee4e5dff0ce845f0834/321ea/algolia-api-keys.png "The API Keys section of the Algolia profile")](https://www.gatsbyjs.com/static/7d7464953fdefee4e5dff0ce845f0834/d26de/algolia-api-keys.png)
+[![The API Keys section of the Algolia profile](https://www.gatsbyjs.com/static/7d7464953fdefee4e5dff0ce845f0834/321ea/algolia-api-keys.png 'The API Keys section of the Algolia profile')](https://www.gatsbyjs.com/static/7d7464953fdefee4e5dff0ce845f0834/d26de/algolia-api-keys.png)
 
 Copy out the Application ID, Search-Only API Key, and Admin API Key from Algolia and create a file called `.env` in the root of your project (`gatsby-algolia-guide` if created as described above). This file contains your [project environment variables](https://www.gatsbyjs.com/docs/how-to/local-development/environment-variables). Replace the placeholders with your copied values:
 
@@ -225,7 +226,7 @@ Check that `graphql resulted in` is followed by the number of pages in your proj
 
 Log in to your Algolia account, go to “Indices” and then select the “Page” index and you should see your indexed page data.
 
-[![Algolia index displaying the indexed page](https://www.gatsbyjs.com/static/4fbad40aaf341ec977e903213c235827/321ea/algolia-index.png "Algolia index displaying the indexed page")](https://www.gatsbyjs.com/static/4fbad40aaf341ec977e903213c235827/b8471/algolia-index.png)
+[![Algolia index displaying the indexed page](https://www.gatsbyjs.com/static/4fbad40aaf341ec977e903213c235827/321ea/algolia-index.png 'Algolia index displaying the indexed page')](https://www.gatsbyjs.com/static/4fbad40aaf341ec977e903213c235827/b8471/algolia-index.png)
 
 ### [](https://www.gatsbyjs.com/docs/adding-search-with-algolia/#troubleshooting)Troubleshooting
 
@@ -364,7 +365,7 @@ Note that this is where you define the search indices you wish to search. They a
 
 Running `gatsby develop` should now give you a working search that looks something like this:
 
-[![Search widget displaying search results](https://www.gatsbyjs.com/static/c2b0e4bba13a5850a9c9454f9a1b3886/321ea/algolia-final-search.png "Search widget displaying search results")](https://www.gatsbyjs.com/static/c2b0e4bba13a5850a9c9454f9a1b3886/e6c84/algolia-final-search.png)
+[![Search widget displaying search results](https://www.gatsbyjs.com/static/c2b0e4bba13a5850a9c9454f9a1b3886/321ea/algolia-final-search.png 'Search widget displaying search results')](https://www.gatsbyjs.com/static/c2b0e4bba13a5850a9c9454f9a1b3886/e6c84/algolia-final-search.png)
 
 You can also play around with it at [https://janosh.io/blog](https://janosh.io/blog).
 
@@ -374,7 +375,7 @@ If you try to deploy the project to Netlify, the deployment will fail with the e
 
 You therefore need to declare the same environment variables you put in `.env` in Netlify. Go to your Netlify site dashboard under **Settings > Build & deploy > Environment > Environment variables** and enter the keys `GATSBY_ALGOLIA_APP_ID`, `GATSBY_ALGOLIA_SEARCH_KEY` and `ALGOLIA_ADMIN_KEY` with the same values as you used in the `.env` file. After a redeploy, the search should now work!
 
-[![Netlify environment variable configuration](https://www.gatsbyjs.com/static/3106f00be7f21a1b1749ee8498cdafd8/321ea/algolia-netlify-env.png "Netlify environment variable configuration")](https://www.gatsbyjs.com/static/3106f00be7f21a1b1749ee8498cdafd8/22284/algolia-netlify-env.png)
+[![Netlify environment variable configuration](https://www.gatsbyjs.com/static/3106f00be7f21a1b1749ee8498cdafd8/321ea/algolia-netlify-env.png 'Netlify environment variable configuration')](https://www.gatsbyjs.com/static/3106f00be7f21a1b1749ee8498cdafd8/22284/algolia-netlify-env.png)
 
 The Netlify documentation has more information on [how to configure environment variables in Netlify](https://docs.netlify.com/configure-builds/environment-variables/#declare-variables). Also see the [Environment Variables](https://www.gatsbyjs.com/docs/how-to/local-development/environment-variables) guide for an overview of environment variables in Gatsby.
 
@@ -388,17 +389,13 @@ You can also find stories of companies using Gatsby + Algolia together [in the A
 
 [Edit this page on GitHub](https://github.com/gatsbyjs/gatsby/blob/master/docs/docs/adding-search-with-algolia.md)
 
-
-
-
-
-
----
----
----
 ---
 
+---
 
+---
+
+---
 
 **with support for Partial Updates**
 
@@ -502,14 +499,13 @@ This saves a lot of Algolia operations since you don’t reindex everything on e
 
 You can also specify `matchFields` per query to check for different fields based on the type of objects you are indexing.
 
-
-
-
----
----
----
 ---
 
+---
+
+---
+
+---
 
 ![](https://miro.medium.com/max/1400/1*4gek2a2hKVKa_sEyWoXbrg.png)
 
@@ -640,45 +636,34 @@ As a result, now we have `Search` component that uses algolia `InstantSearch` as
 
 I hope part one showed how we can install and add algolia search component to our Gatsby site. Part two will cover how to create a custom search component with Algolia.
 
-
-
-
-
----
----
----
 ---
 
-
-
-
-
-
-
-
----
----
----
 ---
 
-
-
-
-
-
-
-
----
----
----
 ---
 
-
-
-
-
+---
 
 ---
+
 ---
+
 ---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
 ---
