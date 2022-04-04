@@ -21,7 +21,7 @@ cmseditable: true
 
 ### Login to postgresql
 
-```
+```sh
 psql -U postgres
 psql -d mydb -U myuser -W
 psql -h myhost -d mydb -U myuser -W
@@ -30,7 +30,7 @@ psql -U myuser -h myhost "dbname=mydb sslmode=require" # ssl connection
 
 ### Default Admin Login
 
-```
+```sh
 sudo -u postgres psql -U postgres
 sudo -u postgres psql
 ```
@@ -39,7 +39,7 @@ sudo -u postgres psql
 
 ### Determine system tables
 
-```
+```sh
 select * from pg_tables where tableowner = 'postgres';
 ```
 
@@ -55,7 +55,7 @@ select * from pg_tables where tableowner = 'postgres';
 
 ### Reset a user password as admin
 
-```
+```sh
 alter user usertochange with password 'new_passwd';
 ```
 
@@ -67,25 +67,25 @@ alter user usertochange with password 'new_passwd';
 
 ### Load data into postgresql
 
-```
+```sh
 psql -W -U username -H hostname < file.sql
 ```
 
 ### Dump (Backup) Data into file
 
-```
+```sh
 pg_dump -W -U username -h hostname database_name > file.sql
 ```
 
 ### Increment a sequence
 
-```
+```sh
 SELECT nextval('my_id_seq');
 ```
 
 ### Create new user
 
-```
+```sh
 CREATE USER lemmy WITH PASSWORD 'myPassword';
 # or
 
@@ -94,19 +94,19 @@ sudo -u postgres createuser lemmy -W
 
 ### Change user password
 
-```
+```sh
 ALTER USER Postgres WITH PASSWORD 'mypass';
 ```
 
 ### Grant user createdb privilege
 
-```
+```sh
 ALTER USER myuser WITH createdb;
 ```
 
 ### Create a superuser user
 
-```
+```sh
 create user mysuper with password '1234' SUPERUSER
 # or even better
 create user mysuper with password '1234' SUPERUSER CREATEDB CREATEROLE INHERIT LOGIN REPLICATION;
@@ -116,7 +116,7 @@ sudo -u postgres createuser lemmy -W -s
 
 ### Upgrade an existing user to superuser
 
-```
+```sh
 alter user mysuper with superuser;
 # or even better
 alter user mysuper with SUPERUSER CREATEDB CREATEROLE INHERIT LOGIN REPLICATION
@@ -126,19 +126,19 @@ alter user mysuper with SUPERUSER CREATEDB CREATEROLE INHERIT LOGIN REPLICATION
 
 ### Change Database Owner
 
-```
+```sh
 alter database database_name owner to new_owner;
 ```
 
 ### Copy a database
 
-```
+```sh
 CREATE DATABASE newdb WITH TEMPLATE originaldb;
 ```
 
 ### View Database Connections
 
-```
+```sh
 SELECT * FROM pg_stat_activity;
 ```
 
@@ -146,14 +146,14 @@ SELECT * FROM pg_stat_activity;
 
 ### Show run-time parameters
 
-```
+```sh
 show all;
 select * from pg_settings;
 ```
 
 ### Show the block size setting
 
-```
+```sh
 # show block_size;
  block_size
 ------------
@@ -163,13 +163,13 @@ select * from pg_settings;
 
 ### Show stored procedure source
 
-```
+```sh
 SELECT prosrc FROM pg_proc WHERE proname = 'procname'
 ```
 
 ### Grant examples
 
-```
+```sh
 # readonly to all tables for myuser
 grant select on all tables in schema public to myuser;
 # all privileges on table1 and table2 to myuser
@@ -178,7 +178,7 @@ grant all privileges on table1, table2, table3 to myuser;
 
 ### Restore Postgres .dump file
 
-```
+```sh
 pg_restore --verbose --clean --no-acl --no-owner -h localhost -U myuser -d mydb latest.dump
 ```
 
@@ -188,7 +188,7 @@ pg_restore --verbose --clean --no-acl --no-owner -h localhost -U myuser -d mydb 
 
 Source: <http://stackoverflow.com/questions/5408156/how-to-drop-a-postgresql-database-if-there-are-active-connections-to-it>
 
-```
+```sh
 # Postgres 9.6 and above
 SELECT pg_terminate_backend(pg_stat_activity.pid)
 FROM pg_stat_activity
@@ -204,7 +204,7 @@ AND procpid <> pg_backend_pid();
 
 ## Handy Queries
 
-```
+```sh
 -- List procedure/function
 SELECT * FROM pg_proc WHERE proname='__procedurename__';
 
@@ -256,7 +256,7 @@ SELECT * FROM pg_stat_activity WHERE waiting='t';
 
 ### Query analysis
 
-```
+```sh
 -- See the query plan for the given query
 EXPLAIN __query__
 
@@ -271,7 +271,7 @@ ANALYZE [__table__]
 
 ### From a Single Table
 
-```
+```sh
 -- Query data in columns c1, c2 from a table
 SELECT c1, c2 FROM t;
 
@@ -305,7 +305,7 @@ HAVING condition;
 
 ### From Multiple Tables
 
-```
+```sh
 -- Inner join t1 and t2
 SELECT c1, c2
 FROM t1
@@ -347,7 +347,7 @@ INNER JOIN t2 B ON condition
 
 ### Using SQL Operators
 
-```
+```sh
 -- Combine rows from two queries
 SELECT c1, c2 FROM t1
 UNION [ALL]
@@ -384,7 +384,7 @@ SELECT c1, c2 FROM t
 WHERE c1 IS [NOT] NULL;
 ```
 
-## Source:
+## Source
 
 * [PostgreSQL 9.6.0 Documentation](https://www.postgresql.org/docs/9.6/static/app-psql.html)
 * [PostgreSQL Exercises](https://pgexercises.com)
