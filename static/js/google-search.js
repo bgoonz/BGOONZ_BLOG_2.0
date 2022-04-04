@@ -1,21 +1,21 @@
-(function(opts_) {
+(function (opts_) {
     /*
     Copyright The Closure Library Authors.
     SPDX-License-Identifier: Apache-2.0
    */
     var g = this || self,
-        k = function(a, b) {
+        k = function (a, b) {
             function d() {}
             d.prototype = b.prototype;
             a.l = b.prototype;
             a.prototype = new d();
             a.prototype.constructor = a;
-            a.j = function(e, c, f) {
+            a.j = function (e, c, f) {
                 for (var h = Array(arguments.length - 2), q = 2; q < arguments.length; q++) h[q - 2] = arguments[q];
                 return b.prototype[c].apply(e, h);
             };
         },
-        l = function(a) {
+        l = function (a) {
             return a;
         };
     function m(a) {
@@ -28,14 +28,14 @@
     }
     k(m, Error);
     m.prototype.name = 'CustomError';
-    var n = function(a, b) {
+    var n = function (a, b) {
         a = a.split('%s');
         for (var d = '', e = a.length - 1, c = 0; c < e; c++) d += a[c] + (c < b.length ? b[c] : '%s');
         m.call(this, d + a[e]);
     };
     k(n, m);
     n.prototype.name = 'AssertionError';
-    var p = function(a, b, d) {
+    var p = function (a, b, d) {
             if (!a) {
                 var e = 'Assertion failed';
                 if (b) {
@@ -45,40 +45,40 @@
                 throw new n('' + e, c || []);
             }
         },
-        r = function(a, b) {
+        r = function (a, b) {
             throw new n('Failure' + (a ? ': ' + a : ''), Array.prototype.slice.call(arguments, 1));
         };
     var t;
-    var w = function(a, b) {
+    var w = function (a, b) {
         this.h = (a === u && b) || '';
         this.i = v;
     };
-    w.prototype.toString = function() {
+    w.prototype.toString = function () {
         return 'Const{' + this.h + '}';
     };
-    var x = function(a) {
+    var x = function (a) {
             if (a instanceof w && a.constructor === w && a.i === v) return a.h;
             r("expected object of type Const, got '" + a + "'");
             return 'type_error:Const';
         },
         v = {},
         u = {};
-    var z = function(a, b) {
+    var z = function (a, b) {
         this.g = b === y ? a : '';
     };
-    z.prototype.toString = function() {
+    z.prototype.toString = function () {
         return this.g + '';
     };
-    var A = function(a) {
+    var A = function (a) {
             if (a instanceof z && a.constructor === z) return a.g;
             var b = typeof a;
             r("expected object of type TrustedResourceUrl, got '" + a + "' of type " + ('object' != b ? b : a ? (Array.isArray(a) ? 'array' : b) : 'null'));
             return 'type_error:TrustedResourceUrl';
         },
-        E = function(a, b) {
+        E = function (a, b) {
             var d = x(a);
             if (!B.test(d)) throw Error('Invalid TrustedResourceUrl format: ' + d);
-            a = d.replace(C, function(e, c) {
+            a = d.replace(C, function (e, c) {
                 if (!Object.prototype.hasOwnProperty.call(b, c))
                     throw Error('Found marker, "' + c + '", in format string, "' + d + '", but no valid label mapping found in args: ' + JSON.stringify(b));
                 e = b[c];
@@ -89,7 +89,7 @@
         C = /%{(\w+)}/g,
         B = /^((https:)?\/\/[0-9a-z.:[\]-]+\/|\/[^/\\]|[^:/\\%]+\/|[^:/\\%]*[?#]|about:blank#)/i,
         F = /^([^?#]*)(\?[^#]*)?(#[\s\S]*)?/,
-        J = function(a) {
+        J = function (a) {
             var b = G;
             a = E(H, a);
             a = A(a).toString();
@@ -98,7 +98,7 @@
             return D(a[1] + I('?', a[2] || '', b) + I('#', d, void 0));
         },
         y = {},
-        D = function(a) {
+        D = function (a) {
             if (void 0 === t) {
                 var b = null;
                 var d = g.trustedTypes;
@@ -117,7 +117,7 @@
             a = (b = t) ? b.createScriptURL(a) : a;
             return new z(a, y);
         },
-        I = function(a, b, d) {
+        I = function (a, b, d) {
             if (null == d) return b;
             if ('string' === typeof d) return d ? a + encodeURIComponent(d) : '';
             for (var e in d)
@@ -138,19 +138,19 @@
         L = new w(u, '/');
     window.__gcse = window.__gcse || {};
     window.__gcse.ct = Date.now();
-    window.__gcse.scb = function() {
+    window.__gcse.scb = function () {
         var a = window.__gcse;
         M() || delete opts_.rawCss;
         var b = ca(a.initializationCallback || a.callback);
         google.search.cse.element.init(opts_) &&
-            ('explicit' !== a.parsetags ?
-                'complete' === document.readyState || 'interactive' === document.readyState ?
-                (google.search.cse.element.go(), b && b()) :
-                google.setOnLoadCallback(function() {
-                    google.search.cse.element.go();
-                    b && b();
-                }, !0) :
-                b && b());
+            ('explicit' !== a.parsetags
+                ? 'complete' === document.readyState || 'interactive' === document.readyState
+                    ? (google.search.cse.element.go(), b && b())
+                    : google.setOnLoadCallback(function () {
+                          google.search.cse.element.go();
+                          b && b();
+                      }, !0)
+                : b && b());
     };
     function ca(a) {
         return 'function' === typeof a ? a : 'string' === typeof a && 'function' === typeof window[a] ? window[a] : null;
@@ -206,23 +206,23 @@
         return b;
     }
     var O,
-        G = opts_.usqp ?
-        {
-            usqp: opts_.usqp
-        } :
-        {},
+        G = opts_.usqp
+            ? {
+                  usqp: opts_.usqp
+              }
+            : {},
         P = opts_.language.toLowerCase();
-    O = opts_.cselibVersion ?
-        J({
-            versionDir: opts_.cselibVersion,
-            versionSlash: L,
-            lang: P
-        }) :
-        J({
-            versionDir: '',
-            versionSlash: '',
-            lang: P
-        });
+    O = opts_.cselibVersion
+        ? J({
+              versionDir: opts_.cselibVersion,
+              versionSlash: L,
+              lang: P
+          })
+        : J({
+              versionDir: '',
+              versionSlash: '',
+              lang: P
+          });
     var Q = window.__gcse.scb,
         R = document.createElement('script');
     R.src = A(O);
@@ -237,19 +237,19 @@
     if (M()) {
         document.getElementsByTagName('head')[0].appendChild(
             N(
-                opts_.cselibVersion ?
-                E(K, {
-                    versionDir: opts_.cselibVersion,
-                    versionSlash: L,
-                    experiment: '',
-                    lang: opts_.language
-                }) :
-                E(K, {
-                    versionDir: '',
-                    versionSlash: '',
-                    experiment: '',
-                    lang: opts_.language
-                })
+                opts_.cselibVersion
+                    ? E(K, {
+                          versionDir: opts_.cselibVersion,
+                          versionSlash: L,
+                          experiment: '',
+                          lang: opts_.language
+                      })
+                    : E(K, {
+                          versionDir: '',
+                          versionSlash: '',
+                          experiment: '',
+                          lang: opts_.language
+                      })
             )
         );
         var W,
@@ -275,7 +275,8 @@
         imageSearchLayout: 'popup',
         resultSetSize: 'filtered_cse',
         enableOrderBy: true,
-        orderByOptions: [{
+        orderByOptions: [
+            {
                 label: 'Relevance',
                 key: ''
             },

@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Bash-Commands-That-Save-Me-Time-and</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="bash-commands-that-save-me-time-and-frustration">Bash Commands That Save Me Time and Frustration</h1>
+<p>Here’s a list of bash commands that stand between me and insanity.</p>
+<hr />
+<h3 id="bash-commands-that-save-me-time-and-frustration-1">Bash Commands That Save Me Time and Frustration</h3>
+<h4 id="heres-a-list-of-bash-commands-that-stand-between-me-and-insanity.">Here’s a list of bash commands that stand between me and insanity.</h4>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*w0J8u6jWTikYVZzW.jpg" class="graf-image" />
+</figure>
+<p><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--p-anchor">https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b</a></p>
+<blockquote>
+<p><strong>This article will be accompanied by the following</strong> <a href="https://github.com/bgoonz/bash-commands-walkthrough" class="markup--anchor markup--pullquote-anchor"><strong>github repository</strong></a> <strong>which will contain all the commands listed as well as folders that demonstrate before and after usage!</strong></p>
+</blockquote>
+<p><a href="https://github.com/bgoonz/bash-commands-walkthrough" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/bash-commands-walkthrough"><strong>bgoonz/bash-commands-walkthrough</strong> <br/></p>
+<p><em>to accompany the medium article I am writing. Contribute to bgoonz/bash-commands-walkthrough development by creating an…</em>github.com</a><a href="https://github.com/bgoonz/bash-commands-walkthrough" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
+<blockquote>
+<p>The <a href="https://github.com/bgoonz/bash-commands-walkthrough#readme" class="markup--anchor markup--pullquote-anchor">readme</a> for this git repo will provide a much more condensed list… whereas this article will break up the commands with explanations… images &amp; links!</p>
+</blockquote>
+<p><strong>I will include the code examples as both github gists (for proper syntax highlighting) and as code snippets adjacent to said gists so that they can easily be copied and pasted… or … if you’re like me for instance; and like to use an extension to grab the markdown content of a page… the code will be included rather than just a link to the gist!</strong></p>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/1200/1*3m_UcQOAyKtIpHQ6j9JzZw.gif" class="graf-image" />
+</figure>
+<h3 id="heres-a-cheatsheet">Here’s a Cheatsheet:</h3>
+<h3 id="getting-started-advanced-users-skip-section">Getting Started (Advanced Users Skip Section):</h3>
+<hr />
+<h4 id="check-the-current-directory-pwd">✔ Check the Current Directory ➡ <code>pwd</code>:</h4>
+<p>On the command line, it’s important to know the directory we are currently working on. For that, we can use <code>pwd</code> command.</p>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*dimzLUrmDI4Ufev6.gif" class="graf-image" />
+</figure>
+<p>It shows that I’m working on my Desktop directory.</p>
+<h4 id="display-list-of-files-ls">✔ Display List of Files ➡ <code>ls</code>:</h4>
+<p>To see the list of files and directories in the current directory use <code>ls</code> command in your CLI.</p>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*HHzVrK2CtTPwTdYT.gif" class="graf-image" />
+</figure>
+<p>Shows all of my files and directories of my Desktop directory.</p>
+<ul>
+<li><span id="20cb">To show the contents of a directory pass the directory name to the <code>ls</code> command i.e. <code>ls directory_name</code>.</span></li>
+<li><span id="5cd8">Some useful <code>ls</code> command options:-</span></li>
+</ul>
+<p>OptionDescriptionls -alist all files including hidden file starting with ’.’ls -llist with the long formatls -lalist long format including hidden files</p>
+<h4 id="create-a-directory-mkdir">✔ Create a Directory ➡ <code>mkdir</code>:</h4>
+<p>We can create a new folder using the <code>mkdir</code> command. To use it type <code>mkdir folder_name</code>.</p>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*m3dDyC9vRJBUZSxR.gif" class="graf-image" />
+</figure>
+<p>Use <code>ls</code> command to see the directory is created or not.</p>
+<p>I created a cli-practice directory in my working directory i.e. Desktop directory.</p>
+<h4 id="move-between-directories-cd">✔ Move Between Directories ➡ <code>cd</code>:</h4>
+<p>It’s used to change directory or to move other directories. To use it type <code>cd directory_name</code>.</p>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*34KGxT2G8oNMDnIc.gif" class="graf-image" />
+</figure>
+<p>Can use <code>pwd</code> command to confirm your directory name.</p>
+<p>Changed my directory to the cli-practice directory. And the rest of the tutorial I’m gonna work within this directory.</p>
+<h4 id="parent-directory-..">✔ Parent Directory ➡ <code>..</code>:</h4>
+<p>We have seen <code>cd</code> command to change directory but if we want to move back or want to move to the parent directory we can use a special symbol <code>..</code> after <code>cd</code> command, like <code>cd ..</code></p>
+<h4 id="create-files-touch">✔ Create Files ➡ <code>touch</code>:</h4>
+<p>We can create an empty file by typing <code>touch file_name</code>. It’s going to create a new file in the current directory (the directory you are currently in) with your provided name.</p>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*xu1wtv7gJ2NMvP60.gif" class="graf-image" />
+</figure>
+<p>I created a hello.txt file in my current working directory. Again you can use <code>ls</code> command to see the file is created or not.</p>
+<p>Now open your hello.txt file in your text editor and write <em>Hello Everyone!</em> into your hello.txt file and save it.</p>
+<h4 id="display-the-content-of-a-file-cat">✔ Display the Content of a File ➡ <code>cat</code>:</h4>
+<p>We can display the content of a file using the <code>cat</code> command. To use it type <code>cat file_name</code>.</p>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*iKf5w9QFNCeLRv8a.gif" class="graf-image" />
+</figure>
+<p>Shows the content of my hello.txt file.</p>
+<h4 id="move-files-directories-mv">✔ Move Files &amp; Directories ➡ <code>mv</code>:</h4>
+<p>To move a file and directory, we use <code>mv</code> command.</p>
+<p>By typing <code>mv file_to_move destination_directory</code>, you can move a file to the specified directory.</p>
+<p>By entering <code>mv directory_to_move destination_directory</code>, you can move all the files and directories under that directory.</p>
+<p>Before using this command, we are going to create two more directories and another txt file in our cli-practice directory.</p>
+<p><code>mkdir html css touch bye.txt</code></p>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*piaAQz_MQpzo7DPH.gif" class="graf-image" />
+</figure>
+<p>Yes, we can use multiple directories &amp; files names one after another to create multiple directories &amp; files in one command.</p>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*5jmj_ZyNz46GuQKz.gif" class="graf-image" />
+</figure>
+<p>Moved my bye.txt file into my css directory and then moved my css directory into my html directory.</p>
+<h4 id="rename-files-directories-mv">✔ Rename Files &amp; Directories ➡ <code>mv</code>:</h4>
+<p><code>mv</code> command can also be used to rename a file and a directory.</p>
+<p>You can rename a file by typing <code>mv old_file_name new_file_name</code> &amp; also rename a directory by typing <code>mv old_directory_name new_directory_name</code>.</p>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*WTVu1dd6gr-nmWhD.gif" class="graf-image" />
+</figure>
+<p>Renamed my hello.txt file to the hi.txt file and html directory to the folder directory.</p>
+<h4 id="copy-files-directories-cp">✔ Copy Files &amp; Directories ➡ <code>cp</code>:</h4>
+<p>To do this, we use the <code>cp</code> command.</p>
+<ul>
+<li><span id="62fa">You can copy a file by entering <code>cp file_to_copy new_file_name</code>.</span></li>
+</ul>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*kCLVtKN9oKPbHfRF.gif" class="graf-image" />
+</figure>
+<p>Copied my hi.txt file content into hello.txt file. For confirmation open your hello.txt file in your text editor.</p>
+<ul>
+<li><span id="9bfc">You can also copy a directory by adding the <code>-r</code> option, like <code>cp -r directory_to_copy new_directory_name</code>.</span></li>
+</ul>
+<p><em>The</em> <code>-r</code> <em>option for “recursive” means that it will copy all of the files including the files inside of subfolders.</em></p>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*MnmzMiioIYCuK92B.gif" class="graf-image" />
+</figure>
+<p>Here I copied all of the files from the folder to folder-copy.</p>
+<h4 id="remove-files-directories-rm">✔ Remove Files &amp; Directories ➡ <code>rm</code>:</h4>
+<p>To do this, we use the <code>rm</code> command.</p>
+<ul>
+<li><span id="487a">To remove a file, you can use the command like <code>rm file_to_remove</code>.</span></li>
+</ul>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*ohCmdthd92_HA6Ze.gif" class="graf-image" />
+</figure>
+<p>Here I removed my hi.txt file.</p>
+<ul>
+<li><span id="0e9a">To remove a directory, use the command like <code>rm -r directory_to_remove</code>.</span></li>
+</ul>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*voDbzwSpw24A2RjQ.gif" class="graf-image" />
+</figure>
+<p>I removed my folder-copy directory from my cli-practice directory i.e. current working directory.</p>
+<h4 id="clear-screen-clear">✔ Clear Screen ➡ <code>clear</code>:</h4>
+<p>Clear command is used to clear the terminal screen.</p>
+<h4 id="home-directory">✔ Home Directory ➡ <code>~</code>:</h4>
+<p>The Home directory is represented by <code>~</code>. The Home directory refers to the base directory for the user. If we want to move to the Home directory we can use <code>cd ~</code> command. Or we can only use <code>cd</code> command.</p>
+<hr />
+<h3 id="my-commands">MY COMMANDS:</h3>
+<h3 id="recursively-unzip-zip-files-and-then-delete-the-archives-when-finished">1.) Recursively unzip zip files and then delete the archives when finished:</h3>
+<p><strong>here is a</strong> <a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/1-recursive-unzip" class="markup--anchor markup--p-anchor"><strong>folde</strong></a><strong>r containing the before and after… I had to change folder names slightly due to a limit on the length of file-paths in a github repo.</strong></p>
+<pre><code>find . -name &quot;*.zip&quot; | while read filename; do unzip -o -d &quot;`dirname &quot;$filename&quot;`&quot; &quot;$filename&quot;; done;
+
+find . -name &quot;*.zip&quot; -type f -print -delete</code></pre>
+<hr />
+<h3 id="install-node-modules-recursively">2.) Install node modules recursively:</h3>
+<pre><code>npm i -g recursive-install
+
+npm-recursive-install</code></pre>
+<hr />
+<h3 id="clean-up-unnecessary-filesfolders-in-git-repo">3.) Clean up unnecessary files/folders in git repo:</h3>
+<pre><code>find . -empty -type f -print -delete #Remove empty files
+
+# -------------------------------------------------------
+find . -empty -type d -print -delete #Remove empty folders
+
+# -------------------------------------------------------
+
+# This will remove .git folders...    .gitmodule files as well as .gitattributes and .gitignore files.
+
+find . \( -name &quot;.git&quot; -o -name &quot;.gitignore&quot; -o -name &quot;.gitmodules&quot; -o -name &quot;.gitattributes&quot; \) -exec rm -rf -- {} +
+
+# -------------------------------------------------------
+
+# This will remove the filenames you see listed below that just take up space if a repo has been downloaded for use exclusively in your personal file system (in which case the following files just take up space)# Disclaimer... you should not use this command in a repo that you intend to use with your work as it removes files that attribute the work to their original creators!
+
+find . \( -name &quot;*SECURITY.txt&quot; -o -name &quot;*RELEASE.txt&quot; -o -name &quot;*CHANGELOG.txt&quot; -o -name &quot;*LICENSE.txt&quot; -o -name &quot;*CONTRIBUTING.txt&quot; -name &quot;*HISTORY.md&quot; -o -name &quot;*LICENSE&quot; -o -name &quot;*SECURITY.md&quot; -o -name &quot;*RELEASE.md&quot; -o -name &quot;*CHANGELOG.md&quot; -o -name &quot;*LICENSE.md&quot; -o -name &quot;*CODE_OF_CONDUCT.md&quot; -o -name &quot;\*CONTRIBUTING.md&quot; \) -exec rm -rf -- {} +</code></pre>
+<h4 id="in-action">In Action:</h4>
+<p>The following output from my bash shell corresponds to the directory:</p>
+<p><a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/3-clean-up-fluf/DS-ALGO-OFFICIAL-master" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/3-clean-up-fluf/DS-ALGO-OFFICIAL-master"><strong>bgoonz/bash-commands-walkthrough</strong> <br/></p>
+<p><em>Deployment github-pages Navigation Big O notation is the language we use for talking about how long an algorithm takes…</em>github.com</a><a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/3-clean-up-fluf/DS-ALGO-OFFICIAL-master" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
+<h4 id="which-was-created-by-running-the-aforementioned-commands-in-in-a-perfect-copy-of-this-directory">which was created by running the aforementioned commands in in a perfect copy of this directory:</h4>
+<p><a href="https://github.com/bgoonz/DS-ALGO-OFFICIAL" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/DS-ALGO-OFFICIAL"><strong>bgoonz/DS-ALGO-OFFICIAL</strong> <br/></p>
+<p><em>Deployment github-pages Navigation Big O notation is the language we use for talking about how long an algorithm takes…</em>github.com</a><a href="https://github.com/bgoonz/DS-ALGO-OFFICIAL" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
+<blockquote>
+<p><strong>…..below is the terminal output for the following commands:</strong></p>
+</blockquote>
+<pre><code>pwd
+/mnt/c/Users/bryan/Downloads/bash-commands/steps/3-clean-up-fluf/DS-ALGO-OFFICIAL-master</code></pre>
+<blockquote>
+<p><strong>After printing the working directory for good measure:</strong></p>
+</blockquote>
+<pre><code>find . -empty -type f -print -delete</code></pre>
+<blockquote>
+<p><strong>The above command deletes empty files recursively starting from the directory in which it was run:</strong></p>
+</blockquote>
+<pre><code>./CONTENT/DS-n-Algos/File-System/file-utilities/node_modules/line-reader/test/data/empty_file.txt
+./CONTENT/DS-n-Algos/_Extra-Practice/free-code-camp/nodejs/http-collect.js
+./CONTENT/Resources/Comments/node_modules/mime/.npmignore
+./markdown/tree2.md
+./node_modules/loadashes6/lodash/README.md
+./node_modules/loadashes6/lodash/release.md
+./node_modules/web-dev-utils/Markdown-Templates/Markdown-Templates-master/filled-out-readme.md
+|01:33:16|bryan@LAPTOP-9LGJ3JGS:[DS-ALGO-OFFICIAL-master] DS-ALGO-OFFICIAL-master_exitstatus:0[╗___________o&gt;</code></pre>
+<blockquote>
+<p><strong>The command seen below deletes empty folders recursively starting from the directory in which it was run:</strong></p>
+</blockquote>
+<pre><code>find . -empty -type d -print -delete</code></pre>
+<blockquote>
+<p>The resulting directories….</p>
+</blockquote>
+<pre><code>|01:33:16|bryan@LAPTOP-9LGJ3JGS:[DS-ALGO-OFFICIAL-master] DS-ALGO-OFFICIAL-master_exitstatus:0[╗___________o&gt;
+
+find . -empty -type d -print -delete
+./.git/branches
+./.git/objects/info
+./.git/refs/tags
+|01:33:31|bryan@LAPTOP-9LGJ3JGS:[DS-ALGO-OFFICIAL-master] DS-ALGO-OFFICIAL-master_exitstatus:0[╗___________o&gt;</code></pre>
+<blockquote>
+<p><strong>The command seen below deletes .git folders as well as .gitignore, .gitattributes, .gitmodule files</strong></p>
+</blockquote>
+<pre><code>find . \( -name &quot;.git&quot; -o -name &quot;.gitignore&quot; -o -name &quot;.gitmodules&quot; -o -name &quot;.gitattributes&quot; \) -exec rm -rf -- {} +</code></pre>
+<p><strong>The command seen below deletes most SECURITY, RELEASE, CHANGELOG, LICENSE, CONTRIBUTING, &amp; HISTORY files that take up pointless space in repo’s you wish to keep exclusively for your own reference.</strong></p>
+<h3 id="use-with-caution-as-this-command-removes-the-attribution-of-the-work-from-its-original-authors">!!!Use with caution as this command removes the attribution of the work from it’s original authors!!!!!</h3>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*r5dGhtbeZ4VdO54U" alt="!!!Use with caution as this command removes the attribution of the work from it's original authors!!!!!" class="graf-image" />
+<figcaption>
+!!!Use with caution as this command removes the attribution of the work from it’s original authors!!!!!
+</figcaption>
+</figure>
+<p>find . ( -name “<em>SECURITY.txt" -o -name "</em>RELEASE.txt” -o -name “<em>CHANGELOG.txt" -o -name "</em>LICENSE.txt” -o -name “<em>CONTRIBUTING.txt" -name "</em>HISTORY.md” -o -name “<em>LICENSE" -o -name "</em>SECURITY.md” -o -name “<em>RELEASE.md" -o -name "</em>CHANGELOG.md” -o -name “<em>LICENSE.md" -o -name "</em>CODE_OF_CONDUCT.md” -o -name "*CONTRIBUTING.md" ) -exec rm -rf – {} +</p>
+<hr />
+<h3 id="generate-index.html-file-that-links-to-all-other-files-in-working-directory">4.) Generate index.html file that links to all other files in working directory:</h3>
+<pre><code>#!/bin/sh
+# find ./ | grep -i &quot;\.*$&quot; &gt;files
+find ./ | sed -E -e &#39;s/([^ ]+[ ]+){8}//&#39; | grep -i &quot;\.*$&quot;&gt;files
+listing=&quot;files&quot;
+out=&quot;&quot;
+html=&quot;index.html&quot;
+out=&quot;basename $out.html&quot;
+html=&quot;index.html&quot;
+cmd() {
+  echo &#39;  &lt;!DOCTYPE html&gt;&#39;
+  echo &#39;&lt;html&gt;&#39;
+  echo &#39;&lt;head&gt;&#39;
+  echo &#39;  &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;&#39;
+  echo &#39;  &lt;meta name=&quot;Author&quot; content=&quot;Bryan Guner&quot;&gt;&#39;
+  echo &#39;&lt;link rel=&quot;stylesheet&quot; href=&quot;./assets/prism.css&quot;&gt;&#39;
+  echo &#39; &lt;link rel=&quot;stylesheet&quot; href=&quot;./assets/style.css&quot;&gt;&#39;
+  echo &#39; &lt;script async defer src=&quot;./assets/prism.js&quot;&gt;&lt;/script&gt;&#39;
+  echo &quot;  &lt;title&gt; directory &lt;/title&gt;&quot;
+  echo &quot;&quot;
+  echo &#39;&lt;style&gt;&#39;
+echo &#39;    a {&#39;
+echo &#39;      color: black;&#39;
+echo &#39;    }&#39;
+echo &#39;&#39;
+echo &#39;    li {&#39;
+echo &#39;      border: 1px solid black !important;&#39;
+echo &#39;      font-size: 20px;&#39;
+echo &#39;      letter-spacing: 0px;&#39;
+echo &#39;      font-weight: 700;&#39;
+echo &#39;      line-height: 16px;&#39;
+echo &#39;      text-decoration: none !important;&#39;
+echo &#39;      text-transform: uppercase;&#39;
+echo &#39;      background: #194ccdaf !important;&#39;
+echo &#39;      color: black !important;&#39;
+echo &#39;      border: none;&#39;
+echo &#39;      cursor: pointer;&#39;
+echo &#39;      justify-content: center;&#39;
+echo &#39;      padding: 30px 60px;&#39;
+echo &#39;      height: 48px;&#39;
+echo &#39;      text-align: center;&#39;
+echo &#39;      white-space: normal;&#39;
+echo &#39;      border-radius: 10px;&#39;
+echo &#39;      min-width: 45em;&#39;
+echo &#39;      padding: 1.2em 1em 0;&#39;
+echo &#39;      box-shadow: 0 0 5px;&#39;
+echo &#39;      margin: 1em;&#39;
+echo &#39;      display: grid;&#39;
+echo &#39;      -webkit-border-radius: 10px;&#39;
+echo &#39;      -moz-border-radius: 10px;&#39;
+echo &#39;      -ms-border-radius: 10px;&#39;
+echo &#39;      -o-border-radius: 10px;&#39;
+echo &#39;    }&#39;
+echo &#39;  &lt;/style&gt;&#39;
+  echo &#39;&lt;/head&gt;&#39;
+  echo &#39;&lt;body&gt;&#39;
+  echo &quot;&quot;
+  # continue with the HTML stuff
+  echo &quot;&quot;
+  echo &quot;&quot;
+  echo &quot;&lt;ul&gt;&quot;
+  awk &#39;{print &quot;&lt;li&gt;&lt;a href=\&quot;&quot;$1&quot;\&quot;&gt;&quot;,$1,&quot;&amp;nbsp;&lt;/a&gt;&lt;/li&gt;&quot;}&#39; $listing
+  # awk &#39;{print &quot;&lt;li&gt;&quot;};
+  #  {print &quot; &lt;a href=\&quot;&quot;$1&quot;\&quot;&gt;&quot;,$1,&quot;&lt;/a&gt;&lt;/li&gt;&amp;nbsp;&quot;}&#39; \ $listing
+  echo &quot;&quot;
+  echo &quot;&lt;/ul&gt;&quot;
+  echo &quot;&lt;/body&gt;&quot;
+  echo &quot;&lt;/html&gt;&quot;
+}
+cmd $listing --sort=extension &gt;&gt;$html</code></pre>
+<h4 id="in-action-1">In Action:</h4>
+<p><strong>I will use this copy of my Data Structures Practice Site to demonstrate the result:</strong></p>
+<p><a href="https://github.com/side-projects-42/DS-Bash-Examples-Deploy" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/side-projects-42/DS-Bash-Examples-Deploy"><strong>side-projects-42/DS-Bash-Examples-Deploy</strong> <br/></p>
+<p><em>Deployment github-pages Navigation Big O notation is the language we use for talking about how long an algorithm takes…</em>github.com</a><a href="https://github.com/side-projects-42/DS-Bash-Examples-Deploy" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*PuuDTUviX5G6mja-5eKUIw.png" class="graf-image" />
+</figure>
+<h4 id="the-result-is-a-index.html-file-that-contains-a-list-of-links-to-each-file-in-the-directory">The result is a index.html file that contains a list of links to each file in the directory:</h4>
+<blockquote>
+<p>here is a link to and photo of the resulting html file:</p>
+</blockquote>
+<p><a href="https://quirky-meninsky-4181b5.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://quirky-meninsky-4181b5.netlify.app/"><strong>index.html</strong> <br/></p>
+<p><em>CONTENT/DS-n-Algos/</em>quirky-meninsky-4181b5.netlify.app</a><a href="https://quirky-meninsky-4181b5.netlify.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a></p>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*AOYbWvUGN9yJ4ceNzAGGsw.png" class="graf-image" />
+</figure>
+<hr />
+<h3 id="download-all-links-to-a-files-of-a-specified-extension-on-a-user-provided-url-webpage">5.) Download all links to a files of a specified extension on a user provided (url) webpage:</h3>
+<pre><code>wget -r -A.pdf https://overapi.com/gitwget --wait=2 --level=inf --limit-rate=20K --recursive --page-requisites --user-agent=Mozilla --no-parent --convert-links --adjust-extension --no-clobber -e robots=off</code></pre>
+<blockquote>
+<p>The result is stored in <a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/5-download-all-pdf" class="markup--anchor markup--blockquote-anchor">this directory:</a></p>
+</blockquote>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/1200/1*8evVPO_z-_TATzkcDTp15Q.png" class="graf-image" />
+</figure>
+<hr />
+<h3 id="recursively-remove-lines-of-text-containing-the-string-badfolder-from-files-in-the-working-directory.">6.)Recursively remove lines of text containing the string badFolder from files in the working directory.</h3>
+<pre><code>find . -type f -exec sed -i &#39;/badFolder/d&#39; ./* {} \;
+
+# OR
+
+find . -name &#39;result.md&#39;  -type f -exec sed -i &#39;/badFolder/d&#39; ./* {} \;</code></pre>
+<p><strong>As an example I will run this command on a file containing the text:</strong></p>
+<pre><code>Hacks Blog
+
+Read more at hacks.mozilla.org
+
+badFolder
+
+badFolder Implementing Private Fields for JavaScript
+
+When implementing a language feature for JavaScript, an implementer must make decisions about how the language in the specification maps to the implementation. Private fields is an example of where the specification language and implementation reality diverge, at least in SpiderMonkey- the JavaScript engine which powers Firefox. To understand more, I&#39;ll explain what private fields are, a couple of models for thinking about them, and explain why our implementation diverges from the specification language.The post Implementing Private Fields for JavaScript appeared first on Mozilla Hacks - the Web developer blog.
+
+Posted Tuesday, June 8, 2021 by Matthew Gaudet
+
+Looking fine with Firefox 89
+
+Firefox 89 has smartened up and brings with it a slimmed-down, slightly more minimalist interface.badFolder Along with this new look, we get some great styling features including a force-colours feature for media queries and better control over how fonts are displayed. The long-awaited top-level await keyword for JavaScript modules is now enabled, as well as the PerformanceEventTiming interface, which is another addition to the performance suite of APIs: 89 really has been working out!The post Looking fine with Firefox 89 appeared first on Mozilla Hacks - the Web developer blog.
+
+badFolder
+
+Posted Tuesday, June 1, 2021 by Chris Mills
+
+badFolder
+
+Improving Firefox stability on Linux
+
+Roughly a year ago at Mozilla we started an effort to improve Firefox stability on Linux. This effort quickly became an example of good synergies between FOSS projects.The post Improving Firefox stability on Linux appeared first on Mozilla Hacks - the Web developer blog.
+
+Posted Wednesday, May 19, 2021 by Gabriele Svelto badFolder
+
+Introducing Firefox&#39;s new Site Isolation Security Architecture
+
+Like any web browser, Firefox loads code from untrusted and potentially hostile websites and runs it on your computer. To protect you against new types of attacks from malicious sites and to meet the security principles of Mozilla, we set out to redesign Firefox on desktop.The post Introducing Firefox&#39;s new Site Isolation Security Architecture appeared first on Mozilla Hacks - the Web developer blog.
+
+Posted Tuesday, May 18, 2021 by Anny Gakhokidze
+
+Pyodide Spin Out and 0.17 Release
+
+We are happy to announce that Pyodide has become an independent and community-driven project. We are also pleased to announce the 0.17 release for Pyodide with many new features and improvements. Pyodide consists of the CPython 3.8 interpreter compiled to WebAssembly which allows Python to run in the browser.The post Pyodide Spin Out and 0.17 Release appeared first on Mozilla Hacks - the Web developer blog. badFolder
+
+Posted Thursday, April 22, 2021 by Teon Brooks</code></pre>
+<p><strong><em>I modified the command slightly to apply only to files called ‘result.md’:</em></strong></p>
+<blockquote>
+<p>The result is :</p>
+</blockquote>
+<pre><code>Hacks Blog
+
+Read more at hacks.mozilla.org
+
+When implementing a language feature for JavaScript, an implementer must make decisions about how the language in the specification maps to the implementation. Private fields is an example of where the specification language and implementation reality diverge, at least in SpiderMonkey- the JavaScript engine which powers Firefox. To understand more, I&#39;ll explain what private fields are, a couple of models for thinking about them, and explain why our implementation diverges from the specification language.The post Implementing Private Fields for JavaScript appeared first on Mozilla Hacks - the Web developer blog.
+
+Posted Tuesday, June 8, 2021 by Matthew Gaudet
+
+Looking fine with Firefox 89
+
+Posted Tuesday, June 1, 2021 by Chris Mills
+
+Improving Firefox stability on Linux
+
+Roughly a year ago at Mozilla we started an effort to improve Firefox stability on Linux. This effort quickly became an example of good synergies between FOSS projects.The post Improving Firefox stability on Linux appeared first on Mozilla Hacks - the Web developer blog.
+
+Introducing Firefox&#39;s new Site Isolation Security Architecture
+
+Like any web browser, Firefox loads code from untrusted and potentially hostile websites and runs it on your computer. To protect you against new types of attacks from malicious sites and to meet the security principles of Mozilla, we set out to redesign Firefox on desktop.The post Introducing Firefox&#39;s new Site Isolation Security Architecture appeared first on Mozilla Hacks - the Web developer blog.
+
+Posted Tuesday, May 18, 2021 by Anny Gakhokidze
+
+Pyodide Spin Out and 0.17 Release
+
+Posted Thursday, April 22, 2021 by Teon Brooks</code></pre>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/1200/1*Up5as-MkHcHbvI_qX1AqPw.png" class="graf-image" />
+</figure>
+<p><strong>the test.txt and result.md files can be found here:</strong></p>
+<p><a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/6-remove-lines-contaning-bad-text" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/6-remove-lines-contaning-bad-text"><strong>bgoonz/bash-commands-walkthrough</strong> <br/></p>
+<p><em>to accompany the medium article I am writing. Contribute to bgoonz/bash-commands-walkthrough development by creating an…</em>github.com</a><a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/6-remove-lines-contaning-bad-text" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
+<hr />
+<h3 id="execute-command-recursively">7.) Execute command recursively:</h3>
+<p><strong>Here I have modified the command I wish to run recursively to account for the fact that the ‘find’ command already works recursively, by appending the -maxdepth 1 flag…</strong></p>
+<blockquote>
+<p><strong>I am essentially removing the recursive action of the find command…</strong></p>
+</blockquote>
+<p><strong>That way, if the command affects the more deeply nested folders we know the outer RecurseDirs function we are using to run the <em>find/pandoc</em> line once in every subfolder of the working directory… is working properly!</strong></p>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/600/1*5C_uzLnuCSlTiioi2EtnUA.png" class="graf-image" />
+</figure>
+<p><strong>Run in the folder shown to the left… we would expect every .md file to be accompanied by a newly generated html file by the same name.</strong></p>
+<p><strong>The results of said operation can be found in the</strong> <a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/7-recursive-run" class="markup--anchor markup--p-anchor"><strong>following directory</strong></a></p>
+<h4 id="in-action-2">In Action:</h4>
+<p>🢃 Below 🢃</p>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/1200/1*k9c1QRKY07TLJnp9Se89lQ.gif" class="graf-image" />
+</figure>
+<h4 id="the-final-result-is">The final result is:</h4>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/1200/1*jqrjNeBuRmTrDt3vmQ50LQ.png" class="graf-image" />
+</figure>
+<p><em>If you want to run any bash script recursively all you have to do is substitue out line #9 with the command you want to run once in every sub-folder.</em></p>
+<pre><code>function RecurseDirs ()
+{
+    oldIFS=$IFS
+    IFS=$&#39;\n&#39;
+    for f in &quot;$@&quot;
+    do
+
+#Replace the line below with your own command!
+
+#find ./ -iname &quot;*.md&quot; -maxdepth 1 -type f -exec sh -c &#39;pandoc --standalone &quot;${0}&quot; -o &quot;${0%.md}.html&quot;&#39; {} \;
+
+#####################################################
+# YOUR CODE BELOW!
+
+#####################################################
+
+if [[ -d &quot;${f}&quot; ]]; then
+            cd &quot;${f}&quot;
+            RecurseDirs $(ls -1 &quot;.&quot;)
+            cd ..
+        fi
+    done
+    IFS=$oldIFS
+}
+RecurseDirs &quot;./&quot;</code></pre>
+<hr />
+<h3 id="tbc.">TBC….</h3>
+<p><strong>Here are some of the other commands I will cover in greater detail… at a later time:</strong></p>
+<h3 id="copy-any-text-between-script-tags-in-a-file-called-example.html-to-be-inserted-into-a-new-file-out.js">9. Copy any text between &lt;script&gt; tags in a file called example.html to be inserted into a new file: out.js</h3>
+<pre><code>sed -n -e &#39;/&lt;script&gt;/,/&lt;\/script&gt;/p&#39; example.html &gt;out.js</code></pre>
+<hr />
+<h3 id="recursively-delete-node_modules-folders">10. Recursively Delete node_modules folders</h3>
+<pre><code>find . -name &#39;node_modules&#39; -type d -print -prune -exec rm -rf &#39;{}&#39; +</code></pre>
+<hr />
+<h3 id="sanatize-file-and-folder-names-to-remove-illegal-characters-and-reserved-words.">11. Sanatize file and folder names to remove illegal characters and reserved words.</h3>
+<pre><code>sanitize() {
+  shopt -s extglob;
+
+  filename=$(basename &quot;$1&quot;)
+  directory=$(dirname &quot;$1&quot;)
+
+  filename_clean=$(echo &quot;$filename&quot; | sed -e &#39;s/[\\/:\*\?&quot;&lt;&gt;\|\x01-\x1F\x7F]//g&#39; -e &#39;s/^\(nul\|prn\|con\|lpt[0-9]\|com[0-9]\|aux\)\(\.\|$\)//i&#39; -e &#39;s/^\.*$//&#39; -e &#39;s/^$/NONAME/&#39;)
+
+  if (test &quot;$filename&quot; != &quot;$filename_clean&quot;)
+  then
+    mv -v &quot;$1&quot; &quot;$directory/$filename_clean&quot;
+  fi
+}
+
+export -f sanitize
+
+sanitize_dir() {
+  find &quot;$1&quot; -depth -exec bash -c &#39;sanitize &quot;$0&quot;&#39; {} \;
+
+}
+
+sanitize_dir &#39;/path/to/somewhere&#39;</code></pre>
+<hr />
+<h3 id="start-postgresql-in-terminal">12. Start postgresql in terminal</h3>
+<pre><code>sudo -u postgres psql</code></pre>
+<hr />
+<h3 id="add-closing-body-and-script-tags-to-each-html-file-in-working-directory.">13. Add closing body and script tags to each html file in working directory.</h3>
+<pre><code>for f in * ; do
+  mv &quot;$f&quot; &quot;$f.html&quot;
+doneecho &quot;&lt;form&gt;
+ &lt;input type=&quot;button&quot; value=&quot;Go back!&quot; onclick=&quot;history.back()&quot;&gt;
+&lt;/form&gt;
+  &lt;/body&gt;&lt;/html&gt;&quot; | tee -a *.html</code></pre>
+<hr />
+<h3 id="batch-download-videos">14. Batch Download Videos</h3>
+<pre><code>#!/bin/bash
+
+link=&quot;#insert url here#&quot;
+#links were a set of strings with just the index of the video as the variable
+
+num=3
+#first video was numbered 3 - weird.
+
+ext=&quot;.mp4&quot;
+
+while [ $num -le 66 ]
+do
+      wget $link$num$ext -P ~/Downloads/
+      num=$(($num+1))
+done</code></pre>
+<hr />
+<h3 id="change-file-extension-from-.txt-to-.doc-for-all-files-in-working-directory.">15. Change File Extension from ‘.txt’ to .doc for all files in working directory.</h3>
+<pre><code>sudo apt install rename
+
+rename &#39;s/\.txt$/.doc/&#39; *.txt</code></pre>
+<h3 id="recursivley-change-any-file-with-extension-.js.download-to-.js">16. Recursivley change any file with extension .js.download to .js</h3>
+<pre><code>find . -name &quot;*.\.js\.download&quot; -exec rename &#39;s/\.js\.download$/.js/&#39; &#39;{}&#39; +</code></pre>
+<hr />
+<h3 id="copy-folder-structure-including-only-files-of-a-specific-extension-into-an-ouput-folder">17. Copy folder structure including only files of a specific extension into an ouput Folder</h3>
+<pre><code>find . -name &#39;*.md&#39; | cpio -pdm &#39;./../outputFolder&#39;</code></pre>
+<hr />
+<h3 id="discover-more">Discover More:</h3>
+<p><a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong> <br/></p>
+<p><em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
+<h3 id="part-2-of-this-series">Part 2 of this series:</h3>
+<p><a href="https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682"><strong>Medium</strong> <br/></p>
+<p><em>Continued!!!medium.com</em></a><a href="https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a></p>
+<hr />
+<p>By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on <a href="https://medium.com/p/920fb6ab9d0a">June 29, 2021</a>.</p>
+<p><a href="https://medium.com/@bryanguner/bash-commands-that-save-time-920fb6ab9d0a" class="p-canonical">Canonical link</a></p>
+<p>August 6, 2021.</p>
+</body>
+</html>

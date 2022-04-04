@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Array-Callback-Methods-Implemented-With-For-Loops</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="array-callback-methods-implemented-with-for-loops">Array Callback Methods Implemented With For Loops</h1>
+<p>How to implement array callback methods in JavaScript</p>
+<hr />
+<h3 id="array-callback-methods-implemented-with-for-loops-1">Array Callback Methods Implemented With For Loops</h3>
+<h4 id="how-to-implement-array-callback-methods-in-javascript">How to implement array callback methods in JavaScript</h4>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*WpKqOdTsTPhvapuW" class="graf-image" />
+</figure>
+<h4 id="functions-are-called-first-class-objects-in-javascript-because">Functions are called “First Class Objects” in JavaScript because:</h4>
+<ul>
+<li><span id="1df8">A function is an instance of the Object type</span></li>
+<li><span id="6e67">A function can have properties and has a link back to its constructor method</span></li>
+<li><span id="c7cf">You can store the function in a variable</span></li>
+<li><span id="b709">You can pass the function as a parameter to another function</span></li>
+<li><span id="2c3c">You can return the function from a function</span></li>
+</ul>
+<p>What do you think will be printed in the following:</p>
+<h4 id="anonymous-callback-a-named-callback">Anonymous callback, a named callback</h4>
+<pre><code>function foo(callback) {
+    console.log(&#39;grape&#39;);
+    callback();
+}
+
+function bar() {
+    console.log(&#39;banana&#39;);
+}
+
+const fruitBasket = function() {
+    console.log(&#39;apple&#39;);
+    bar();
+    foo(bar);
+    foo(function() {
+        console.log(&#39;orange&#39;);
+    });
+    console.log(&#39;pear&#39;);
+};
+
+fruitBasket();</code></pre>
+<h4 id="function-that-takes-in-a-value-and-two-callbacks.-the-function-should-return-the-result-of-the-callback-whos-invocation-results-in-a-larger-value">Function that takes in a value and two callbacks. The function should return the result of the callback who’s invocation results in a larger value</h4>
+<pre><code>function greaterValue(value, cb1, cb2) {
+    // compare cb1 invoked with value to cb2 invoked with value
+    // return the greater result
+
+    let res1 = cb1(value);
+    let res2 = cb2(value);
+    if (res1 &gt; res2) {
+        // if this is false, we move out of if statement
+        return res1;
+    }
+    return res2;
+}
+
+let negate = function(num) {
+    return num * -1;
+};
+
+let addOne = function(num) {
+    return num + 1;
+};
+
+console.log(greaterValue(3, negate, addOne));
+console.log(greaterValue(-2, negate, addOne));</code></pre>
+<p><em>Note: we do not invoke</em> <code>negate</code> <em>or</em> <code>addOne</code> <em>(by using</em> <code>()</code> <em>to call them), we are passing the function itself.</em></p>
+<h4 id="write-a-function-mymap-that-takes-in-an-array-and-a-callback-as-arguments.-the-function-should-mimic-the-behavior-of-array.prototype.map">Write a function, myMap, that takes in an array and a callback as arguments. The function should mimic the behavior of Array.prototype.map</h4>
+<pre><code>function myMap(arr, callback) {
+    // iterate through the array, perform the cb on each element
+    // return a new array with those new values
+    let mapped = [];
+
+    for (let i = 0; i &lt; arr.length; i++) {
+        // remember that map passes three args with each element.
+        let val = callback(arr[i], i, arr);
+        mapped.push(val);
+    }
+
+    return mapped;
+}
+
+let double = function(num) {
+    return num * 2;
+};
+console.log(myMap([1, 2, 3], double));</code></pre>
+<h4 id="write-a-function-myfilter-that-takes-in-an-array-and-a-callback-as-arguments.-the-function-should-mimic-the-behavior-of-array.prototype.filter">Write a function, myFilter, that takes in an array and a callback as arguments. The function should mimic the behavior of Array.prototype.filter</h4>
+<pre><code>function myFilter(arr, callback) {
+    let filtered = [];
+
+    for (let i = 0; i &lt; arr.length; i++) {
+        let element = arr[i];
+
+        if (callback(element, i, arr)) {
+            filtered.push(element);
+        }
+    }
+
+    return filtered;
+}</code></pre>
+<h4 id="write-a-function-myevery-that-takes-in-an-array-and-a-callback-as-arguments.-the-function-should-mimic-the-behavior-of-array.prototype.every">Write a function, myEvery, that takes in an array and a callback as arguments. The function should mimic the behavior of Array.prototype.every</h4>
+<pre><code>function myEvery(arr, callback) {
+    for (let i = 0; i &lt; arr.length; i++) {
+        let element = arr[i];
+
+        if (callback(element, i, arr) === false) {
+            return false;
+        }
+    }
+    return true;
+}</code></pre>
+<h3 id="further-examples-of-the-above-concepts">Further Examples of the above concepts</h3>
+<pre><code>const createMeowValue = () =&gt; {
+  console.log(this.name);
+  let meow = function () {
+    console.log(this);
+    console.log(this.name + &#39; meows&#39;);
+  }
+  meow = meow.bind(this);
+  return meow;
+};
+
+const name = &#39;Fluffy&#39;;
+
+const cat = {
+  name: name,
+  age: 12,
+  createMeow: function () {
+    console.log(this.name);
+    let meow = () =&gt; {
+      const hello = &#39;hello&#39;;
+      console.log(this.name + &#39; meows&#39;);
+    };
+    let world = &#39;&#39;;
+    if (true) {
+      world = &#39;world&#39;;
+    }
+    console.log(world);
+    // meow = meow.bind(this);
+    return meow;
+  }
+};
+
+cat.newKey = function () {
+  const outermostContext = this;
+  const innerFunc = () =&gt; {
+    secondContext = this;
+    console.log(secondContext === outermostContext)
+    return function () {
+      innermostContext = this;
+    }
+  };
+  return innerFunc.bind(outermostContext);
+};
+
+const meow = cat.createMeow(); // method-style invocation
+meow(); // function-style invocation
+
+console.log(&#39;-------&#39;)
+
+const createMeow = cat.createMeow;
+const globalMeow = createMeow(); // function-style
+globalMeow(); // function-style
+
+function createSmoothie(ingredient) {
+  const ingredients = [ingredient];
+  return ingredients;
+}
+
+// console.log(createSmoothie(&#39;banana&#39;));
+// console.log(createSmoothie(&#39;apple&#39;));
+
+// one parameter only
+// first argument is a string
+// return an array
+// DO NOT USE forEach</code></pre>
+<p>References:</p>
+<p><a href="https://open.appacademy.io/learn" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://open.appacademy.io/learn"><strong>App Academy Open</strong> <br/></p>
+<p><em>App Academy Open is the first free, online web development course that’s meant to get you hired as a developer. Get…</em>open.appacademy.io</a><a href="https://open.appacademy.io/learn" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
+<p><a href="https://developer.mozilla.org/en-US/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://developer.mozilla.org/en-US/"><strong>MDN Web Docs</strong> <br/></p>
+<p><em>Read more at hacks.mozilla.org Roughly a year ago at Mozilla we started an effort to improve Firefox stability on…</em>developer.mozilla.org</a><a href="https://developer.mozilla.org/en-US/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
+<p><a href="https://javascript.info/callbacks" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://javascript.info/callbacks"><strong>Introduction: callbacks</strong> <br/></p>
+<p><em>To demonstrate the use of callbacks, promises and other abstract concepts, we’ll be using some browser methods…</em>javascript.info</a><a href="https://javascript.info/callbacks" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
+<p><em>More content at</em> <a href="http://plainenglish.io" class="markup--anchor markup--p-anchor"><strong><em>plainenglish.io</em></strong></a></p>
+<p>By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on <a href="https://medium.com/p/d08875df6777">May 27, 2021</a>.</p>
+<p><a href="https://medium.com/@bryanguner/array-callback-methods-implemented-with-for-loops-d08875df6777" class="p-canonical">Canonical link</a></p>
+<p>August 31, 2021.</p>
+</body>
+</html>

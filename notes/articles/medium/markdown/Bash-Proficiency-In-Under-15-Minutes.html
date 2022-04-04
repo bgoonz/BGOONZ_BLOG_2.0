@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Bash-Proficiency-In-Under-15-Minutes</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="bash-proficiency-in-under-15-minutes">Bash Proficiency In Under 15 Minutes</h1>
+<p>Cheat sheet and in-depth explanations located below main article contents… The UNIX shell program interprets user commands, which are…</p>
+<hr />
+<h3 id="bash-proficiency-in-under-15-minutes-1">Bash Proficiency In Under 15 Minutes</h3>
+<h4 id="cheat-sheet-and-in-depth-explanations-located-below-main-article-contents-the-unix-shell-program-interprets-user-commands-which-are-either-directly-entered-by-the-user-or-which-can-be-read-from-a-file-called-the-shell-script-or-shell-program.-shell-scripts-are-interpreted-not-compiled.-the-shell-reads-commands-from-the-script-line-per-line-and-searches-for-those-commands-on-the-system-while-a-compiler-converts-a-program-into-machine-readable-form-an-executable-file.">Cheat sheet and in-depth explanations located below main article contents… The UNIX shell program interprets user commands, which are either directly entered by the user, or which can be read from a file called the shell script or shell program. Shell scripts are interpreted, not compiled. The shell reads commands from the script line per line and searches for those commands on the system while a compiler converts a program into machine readable form, an executable file.</h4>
+<hr />
+<h3 id="life-saving-protip">LIFE SAVING PROTIP:</h3>
+<h3 id="a-nice-thing-to-do-is-to-add-on-the-first-line">A nice thing to do is to add on the first line</h3>
+<pre><code>#!/bin/bash -x</code></pre>
+<hr />
+<blockquote>
+<p>I will go deeper into the explanations behind some of these examples at the bottom of this article.</p>
+</blockquote>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*QkQexW5Lg0NYrtuD" class="graf-image" />
+</figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/600/0*gtmOR8KLGdLcUwPt.gif" class="graf-image" />
+</figure>
+<h4 id="heres-some-previous-articles-ive-written-for-more-advanced-users.">Here’s some previous articles I’ve written for more advanced users.</h4>
+<p><a href="https://medium.com/geekculture/bash-commands-that-save-time-920fb6ab9d0a" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/geekculture/bash-commands-that-save-time-920fb6ab9d0a"><strong>Bash Commands That Save Me Time and Frustration</strong> <br/></p>
+<p><em>Here’s a list of bash commands that stand between me and insanity.</em>medium.com</a><a href="https://medium.com/geekculture/bash-commands-that-save-time-920fb6ab9d0a" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
+<p><a href="https://medium.com/geekculture/life-saving-bash-scripts-part-2-b40c8ee22682" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/geekculture/life-saving-bash-scripts-part-2-b40c8ee22682"><strong>Life Saving Bash Scripts Part 2</strong> <br/></p>
+<p><em>I am not saying they’re in any way special compared with other bash scripts… but when I consider that you can never…</em>medium.com</a><a href="https://medium.com/geekculture/life-saving-bash-scripts-part-2-b40c8ee22682" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
+<p><a href="https://bryanguner.medium.com/what-are-bash-aliases-and-why-should-you-be-using-them-30a6cfafdfeb" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/what-are-bash-aliases-and-why-should-you-be-using-them-30a6cfafdfeb"><strong>What Are Bash Aliases And Why Should You Be Using Them!</strong> <br/></p>
+<p><em>A Bash alias is a method of supplementing or overriding Bash commands with new ones. Bash aliases make it easy for…</em><a href="https://bryanguner.medium.com/what-are-bash-aliases-and-why-should-you-be-using-them-30a6cfafdfeb" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a></p>
+<hr />
+<h3 id="what-is-bash">What is Bash?</h3>
+<blockquote>
+<p>Apart from passing commands to the kernel, the main task of a shell is providing a user environment through which they can issue the computer commands via a command line instead of the graphical user interfaces most software consumers are familiar with.</p>
+</blockquote>
+<hr />
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*7qlctJzV2Jv3F0cr.gif" class="graf-image" />
+</figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/600/0*oQWiki9YceuZc9h_.jpeg" alt="fire meme" class="graf-image" />
+<figcaption>
+fire meme
+</figcaption>
+</figure>
+<h4 id="heres-a-repl-with-some-examples-for-you-to-practice.">Here’s a REPL with some examples for you to practice….</h4>
+<blockquote>
+<p>↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ below motivational monologue ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓</p>
+</blockquote>
+<p><strong><em>Remember: learning is an effortful activity… it’s not comfortable… practice might be unpleasant but if you don’t you might as well skip reading too because without application… reading articles just provides a false sense of accomplishment….</em></strong></p>
+<blockquote>
+<p><a href="https://resume.github.io/?bgoonz" class="markup--anchor markup--blockquote-anchor">quote by: … <strong>me</strong> 1 minute ago</a> (inspired by veritasium….)</p>
+</blockquote>
+<h3 id="aforementioned-repl">Aforementioned Repl:</h3>
+<hr />
+<h3 id="navigate-the-file-system"><a href="https://egghead.io/lessons/bash-navigate-the-filesystem-in-bash" class="markup--anchor markup--h3-anchor">Navigate the file system</a></h3>
+<h4 id="change-bashs-current-working-directory">Change bash’s current working directory</h4>
+<pre><code>cd &lt;file path here&gt;
+# to go up a directory from your current directory
+cd ..</code></pre>
+<h4 id="list-a-directorys-contents">List a directory’s contents</h4>
+<pre><code>ls
+# for more details, add -l (long)
+ls -l
+# this will output something like this:
+# -rw-r--r--  1 cameronnokes  staff  1237 Jun  2 22:46 index.js
+# in order, those columns are:
+#   permissions for you, your group, all
+#   number of links (hardlinks &amp; softlinks)
+#   owner user
+#   owner group
+#   file size
+#   last modified time
+#   file name
+
+# to see hidden files/folders (like .git or .npmignore)
+ls -a
+# Note, flags can be combined like so
+ls -la</code></pre>
+<h3 id="view-files-and-folders-in-bash"><a href="https://egghead.io/lessons/bash-view-files-and-folders-in-bash" class="markup--anchor markup--h3-anchor">View files and folders in bash</a></h3>
+<h4 id="output-a-file-to-the-screen-stdout">Output a file to the screen (stdout)</h4>
+<pre><code>cat &lt;file name&gt;
+# shows it with line numbers
+cat -n &lt;file name&gt;</code></pre>
+<h4 id="view-a-file-in-bash">View a file in bash</h4>
+<pre><code># view the file without dumping it all onto your screen
+less &lt;file name&gt;
+# Some useful shortcuts in less
+#   Shift+g   (jump to end)
+#   g         (go back to top)
+#   /         (search)
+#   q         (quit/close)</code></pre>
+<h4 id="view-filefolder-in-default-application-associated-with-it">View file/folder in default application associated with it</h4>
+<pre><code>open &lt;file/folder name&gt;
+# view current directory in Finder
+open .
+# specify an application to use
+open &lt;file name&gt; -a TextEdit</code></pre>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*LKzjKI9gdjBFE851.png" alt="folder structure" class="graf-image" />
+<figcaption>
+folder structure
+</figcaption>
+</figure>
+<h3 id="create-and-delete-files-and-folders"><a href="https://egghead.io/lessons/bash-create-and-delete-files-and-folders-in-bash" class="markup--anchor markup--h3-anchor">Create and delete files and folders</a></h3>
+<h4 id="create-a-file">Create a file</h4>
+<pre><code>touch &lt;file name&gt;</code></pre>
+<h4 id="set-or-append-to-a-file">Set or append to a file</h4>
+<pre><code># set the file&#39;s contents
+echo &#39;hi&#39; &gt; file.txt
+# append to file&#39;s contents
+echo &#39;hi&#39; &gt;&gt; file.txt
+# note that if you pass a file name that doesn&#39;t exist, it&#39;ll get created on the fly</code></pre>
+<h4 id="create-a-directory">Create a directory</h4>
+<pre><code>mkdir &lt;folder name&gt;
+# make intermediary directories as needed
+mkdir -p parent/child/grandchild</code></pre>
+<h4 id="remove-a-file">Remove a file</h4>
+<pre><code># Note, this permanently deletes a file
+rm &lt;file name&gt;
+# Remove a folder and it&#39;s contents, recursively
+rm -rf &lt;folder name&gt;</code></pre>
+<h3 id="move-and-copy-files-and-folders-with-bash"><a href="https://egghead.io/lessons/bash-move-and-copy-files-and-folders-with-bash" class="markup--anchor markup--h3-anchor">Move and Copy Files and Folders with bash</a></h3>
+<h4 id="move-a-file">Move a file</h4>
+<pre><code>mv &lt;target&gt; &lt;destination&gt;
+# for example, to rename a file
+mv a.js b.js
+# move all files in a folder to another folder
+mv lib/* src</code></pre>
+<h4 id="copy-a-file">Copy a file</h4>
+<pre><code>cp &lt;target&gt; &lt;destination&gt;
+# copy everything recursively from one folder to another
+cp -R src/* lib</code></pre>
+<h3 id="find-files-and-folders-with-find-in-bash"><a href="https://egghead.io/lessons/bash-find-files-and-folders-with-find-in-bash" class="markup--anchor markup--h3-anchor">Find Files and Folders with</a> <code>find</code> <a href="https://egghead.io/lessons/bash-find-files-and-folders-with-find-in-bash" class="markup--anchor markup--h3-anchor">in bash</a></h3>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*3hXVYnYPTLCQHe0f.jpg" alt="find" class="graf-image" />
+<figcaption>
+find
+</figcaption>
+</figure>
+<h1 id="find-all-the-pngs-in-a-folder">find all the PNGs in a folder</h1>
+<pre><code>find &lt;path&gt; -name &quot;*.png&quot;
+# find all the JPGs (case insensitive) in a folder
+find &lt;path&gt; -iname &quot;*.jpg&quot;
+# find only directories
+find &lt;path&gt; -type d
+# delete all matching files
+find &lt;path&gt; -name &quot;*.built.js&quot; -delete
+# execute an arbitrary action on each match
+# remember `{}` will be replaced with the file name
+find &lt;path&gt; -name &quot;*.png&quot; -exec pngquant {} \;</code></pre>
+<h3 id="search-for-text-with-grep"><a href="https://egghead.io/lessons/grep-search-for-text-with-grep" class="markup--anchor markup--h3-anchor">Search for text with </a><code>grep</code></h3>
+<pre><code># Basic usage
+grep &lt;pattern&gt; &lt;target file or glob&gt;
+# Useful flags
+# --color     (colorizes matches)
+# -n          (show line numbers)
+# -C &lt;number&gt; (show N lines above/below match for context)
+# -e          (regex search)</code></pre>
+<h3 id="make-http-requests-in-bash-with-curl"><a href="https://egghead.io/lessons/http-make-http-requests-in-bash-with-curl" class="markup--anchor markup--h3-anchor">Make HTTP requests in bash with </a><code>curl</code></h3>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*YmLsGKSXYDZ_vzMp.png" alt="http" class="graf-image" />
+<figcaption>
+http
+</figcaption>
+</figure>
+<p>The test server is available in the <code>curl-practice-server</code> directory. Run <code>npm install &amp;&amp; npm start</code> to run it.</p>
+<pre><code>curl &lt;url&gt;
+# Useful flags
+# -i    (show response headers only)
+# -L    (follow redirects)
+# -H    (header flag)
+# -X    (set HTTP method)
+# -d    (request body)
+# -o    (output to a file)
+
+# to POST JSON
+# (technically you don&#39;t need -X POST because -d will make it POST automatically, but I like to be explicit)
+curl -X POST -H &quot;Content-Type: application/json&quot; -d &#39;{ &quot;title&quot;: &quot;Curling&quot; }&#39; http://localhost:3000/api/posts
+
+# POST a url encoded form
+curl -X POST --data-urlencode title=&quot;Curling again&quot; http://localhost:3000/api/posts
+
+# multiline curl (applies to any bash command)
+curl -i -X PUT \
+-d &#39;{ &quot;title&quot;: &quot;Changed title&quot; }&#39; \
+-H &quot;Content-Type: application/json&quot; \
+http://localhost:3000/api/posts
+
+# pretty print JSON with jsome
+curl https://swapi.co/api/people/1/ | jsome</code></pre>
+<p>Here’s the <a href="https://www.npmjs.com/package/jsome" class="markup--anchor markup--p-anchor">jsome</a> package that pretty prints JSON</p>
+<h3 id="create-and-run-bash-scripts"><a href="https://egghead.io/lessons/bash-create-and-run-bash-scripts" class="markup--anchor markup--h3-anchor">Create and run bash scripts</a></h3>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*AC9okBRPVFBSHpwv.png" alt="bash scripting" class="graf-image" />
+<figcaption>
+bash scripting
+</figcaption>
+</figure>
+<p>echo ‘echo Hello World’ &gt; script.sh chmod u+x script.sh ./script.sh</p>
+<p>The <code>init-js.sh</code> script for scaffolding a JS project</p>
+<pre><code>echo &quot;Initializing JS project at $(pwd)&quot;
+git init
+npm init -y # create package.json with all the defaults
+mkdir src
+touch index.js
+code .</code></pre>
+<p>One way to add that script to your <code>$PATH</code>:</p>
+<pre><code>cp init-js.sh /usr/local/bin/init-js</code></pre>
+<h3 id="store-and-use-values-with-bash-variables"><a href="https://egghead.io/lessons/bash-store-and-use-values-with-bash-variables" class="markup--anchor markup--h3-anchor">Store and Use Values with bash Variables</a></h3>
+<pre><code># no spaces between name, =, and value
+var=123
+echo $var
+# to make it accessible to all child processes of current shell, export it
+export var
+# this deletes the variable
+unset var</code></pre>
+<p>To see all environment variables</p>
+<pre><code>env</code></pre>
+<p><code>clone-to-temp.sh</code> script:</p>
+<pre><code>temp=$(mktemp -d)
+git clone --branch $1 $PWD $temp
+echo &quot;branch $1 cloned to $temp&quot;
+# run some tasks, tests, etc here</code></pre>
+<h3 id="understand-and-use-functions-in-bash"><a href="https://egghead.io/lessons/bash-understand-and-use-functions-in-bash" class="markup--anchor markup--h3-anchor">Understand and use functions in bash</a></h3>
+<pre><code>greet() {
+  echo &quot;$1 world&quot;
+}
+
+greeting=$(greet &quot;howdy&quot;)
+
+echo &quot;the greeting is $greeting&quot;
+
+global=123
+
+test() {
+  echo &quot;global = $global&quot;
+  local local_var=&quot;i&#39;m a local&quot;
+  echo &quot;local_var = $local_var&quot;
+}
+
+test
+
+echo &quot;global = $global&quot;
+echo &quot;local_var = $local_var&quot; # will be empty because it&#39;s out of scope</code></pre>
+<h3 id="understand-exit-statuses-in-bash"><a href="https://egghead.io/lessons/bash-understand-exit-statuses-in-bash" class="markup--anchor markup--h3-anchor">Understand exit statuses in bash</a></h3>
+<p>Get the last run command’s exit status</p>
+<pre><code>ls
+# will be 0 if it ran successfully, 1 - 255 for an error
+echo $?</code></pre>
+<p>Exit statuses and functions. <code>script.sh</code></p>
+<pre><code>ok() {
+  return 0
+}
+
+fail() {
+  return 1
+}
+
+fail
+ok
+
+./script.sh
+echo $? # exit status is same as the last run function/command</code></pre>
+<h3 id="use-conditional-statements-in-bash"><a href="https://egghead.io/lessons/bash-use-conditional-statements-in-bash" class="markup--anchor markup--h3-anchor">Use Conditional Statements in bash</a></h3>
+<p>Basic form</p>
+<pre><code># Some conditional primaries that can be used in the if expression:
+#   =, !=      string (in)equality
+#   -eq, -ne   numeric (in)equality
+#   -lt, -gt   less/greater than
+#   -z         check variable is not set
+#   -e         check file/folder exists
+
+if [[ $USER = &#39;cameronnokes&#39; ]]; then
+  echo &quot;true&quot;
+else
+  echo &quot;false&quot;
+fi</code></pre>
+<p>Conditionals can be used inline in a more ternary-like format</p>
+<pre><code>[[ $USER = &#39;cameronnokes&#39; ]] &amp;&amp; echo &quot;yes&quot; || echo &quot;no&quot;</code></pre>
+<p><code>check-status.sh</code> for checking a URL is responding with a 200</p>
+<pre><code>check_status() {
+  local status=$(curl -ILs $1 | head -n 1 | cut -d &#39; &#39; -f 2)
+  if [[ $status -lt 200 ]] || [[ $status -gt 299 ]]; then
+    echo &quot;$1 failed with a $status&quot;
+    return 1
+  else
+    echo &quot;$1 succeeded with a $status&quot;
+  fi
+}
+
+check_status https://example.org
+check_status https://example.org/404</code></pre>
+<h3 id="chain-commands-with-pipes-and-redirect-output-in-bash"><a href="https://egghead.io/lessons/bash-chain-commands-with-pipes-and-redirect-output-in-bash" class="markup--anchor markup--h3-anchor">Chain Commands with Pipes and Redirect Output in bash</a></h3>
+<p>Pipes</p>
+<pre><code># ps ax will list all running processes
+ps ax | grep Chrome | less
+# get the file size after uglify + gzip
+uglifyjs -c -m -- index.js | gzip -9 | wc -c</code></pre>
+<p>Redirection</p>
+<pre><code># redirect stdout to a file
+ls &gt; ls.txt
+# append stdout to a file
+echo &quot;hi&quot; &gt;&gt; ls.txt</code></pre>
+<hr />
+<h3 id="updateutility-commands">Update(Utility Commands):</h3>
+<p><strong><em>Find files that have been modified on your system in the past 60 minutes</em></strong></p>
+<pre><code>find / -mmin 60 -type f</code></pre>
+<p><strong><em>Find all files larger than 20M</em></strong></p>
+<pre><code>find / -type f -size +20M</code></pre>
+<p><strong><em>Find duplicate files (based on MD5 hash)</em></strong></p>
+<pre><code>find -type f -exec md5sum &#39;{}&#39; &#39;;&#39; | sort | uniq --all-repeated=separate -w 33</code></pre>
+<p><strong><em>Change permission only for files</em></strong></p>
+<pre><code>cd /var/www/site &amp;&amp; find . -type f -exec chmod 766 {} \;
+cd /var/www/site &amp;&amp; find . -type f -exec chmod 664 {} +</code></pre>
+<p><strong><em>Change permission only for directories</em></strong></p>
+<pre><code>cd /var/www/site &amp;&amp; find . -type d -exec chmod g+x {} \;
+cd /var/www/site &amp;&amp; find . -type d -exec chmod g+rwx {} +</code></pre>
+<p><strong><em>Find files and directories for specific user/group</em></strong></p>
+<pre><code># User:
+find . -user &lt;username&gt; -print
+find /etc -type f -user &lt;username&gt; -name &quot;*.conf&quot;
+
+# Group:
+find /opt -group &lt;group&gt;
+find /etc -type f -group &lt;group&gt; -iname &quot;*.conf&quot;</code></pre>
+<p><strong><em>Find files and directories for all without specific user/group</em></strong></p>
+<pre><code># User:
+find . \! -user &lt;username&gt; -print
+
+# Group:
+find . \! -group &lt;group&gt;</code></pre>
+<p><strong><em>Looking for files/directories that only have certain permission</em></strong></p>
+<pre><code># User
+find . -user &lt;username&gt; -perm -u+rw # -rw-r--r--
+find /home -user $(whoami) -perm 777 # -rwxrwxrwx
+
+# Group:
+find /home -type d -group &lt;group&gt; -perm 755 # -rwxr-xr-x</code></pre>
+<p><strong><em>Delete older files than 60 days</em></strong></p>
+<pre><code>find . -type f -mtime +60 -delete</code></pre>
+<p><strong><em>Recursively remove all empty sub-directories from a directory</em></strong></p>
+<pre><code>find . -depth  -type d  -empty -exec rmdir {} \;</code></pre>
+<p><strong><em>How to find all hard links to a file</em></strong></p>
+<pre><code>find &lt;/path/to/dir&gt; -xdev -samefile filename</code></pre>
+<p><strong><em>Recursively find the latest modified files</em></strong></p>
+<pre><code>find . -type f -exec stat --format &#39;%Y :%y %n&#39; &quot;{}&quot; \; | sort -nr | cut -d: -f2- | head</code></pre>
+<p><strong><em>Recursively find/replace of a string with sed</em></strong></p>
+<pre><code>find . -not -path &#39;*/\.git*&#39; -type f -print0 | xargs -0 sed -i &#39;s/foo/bar/g&#39;</code></pre>
+<p><strong><em>Recursively find/replace of a string in directories and file names</em></strong></p>
+<pre><code>find . -depth -name &#39;*test*&#39; -execdir bash -c &#39;mv -v &quot;$1&quot; &quot;${1//foo/bar}&quot;&#39; _ {} \;</code></pre>
+<p><strong><em>Recursively find suid executables</em></strong></p>
+<pre><code>find / \( -perm -4000 -o -perm -2000 \) -type f -exec ls -la {} \;</code></pre>
+<hr />
+<h3 id="additional-learning-resources">Additional learning resources</h3>
+<ul>
+<li><span id="8e12">You can view a command’s documentation right in bash with <code>man &lt;command name&gt;</code>.</span></li>
+<li><span id="9b41"><a href="https://www.gnu.org/software/bash/manual/bash.html" class="markup--anchor markup--li-anchor">Official bash manual</a></span></li>
+<li><span id="40a7"><a href="http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html" class="markup--anchor markup--li-anchor">TLDP bash programming intro, basic</a></span></li>
+<li><span id="6515"><a href="http://www.tldp.org/LDP/abs/html/" class="markup--anchor markup--li-anchor">TLDP bash programming intro, advanced</a></span></li>
+</ul>
+<hr />
+<h3 id="heres-my-github-website-feel-free-to-reach-out">Here’s My Github &amp; Website … feel free to reach out!</h3>
+<p><a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz - Overview</strong> <br/></p>
+<p><em>Web Developer, Electrical Engineer https://bryanguner.medium.com/ https://bg-portfolio.netlify.app/ - bgoonz</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
+<p><a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong> <br/></p>
+<p><em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
+<h3 id="explanations">Explanations:</h3>
+<h3 id="pipes">Pipes</h3>
+<p>Pipes let you use the output of a program as the input of another one</p>
+<h3 id="simple-pipe-with-sed">simple pipe with sed</h3>
+<p>This is very simple way to use pipes.</p>
+<pre><code>ls -l | sed -e &quot;s/[aeio]/u/g&quot;</code></pre>
+<p>Here, the following happens: first the command ls -l is executed, and it’s output, instead of being printed, is sent (piped) to the sed program, which in turn, prints what it has to.</p>
+<h3 id="an-alternative-to-ls--l-.txt">an alternative to ls -l *.txt</h3>
+<p>Probably, this is a more difficult way to do ls -l *.txt, but this is for educational purposes.</p>
+<pre><code>ls -l | grep &quot;\.txt$&quot;</code></pre>
+<blockquote>
+<p>Here, the output of the program ls -l is sent to the grep program, which, in turn, will print lines which match the regex “\.txt$”.</p>
+</blockquote>
+<h3 id="variables">Variables</h3>
+<p>You can use variables as in any programming languages. There are no data types. A variable in bash can contain a number, a character, a string of characters.</p>
+<p>You have no need to declare a variable, just assigning a value to its reference will create it.</p>
+<h3 id="hello-world-using-variables">Hello World! using variables</h3>
+<pre><code>#!/bin/bash
+            STR=&quot;Hello World!&quot;
+            echo $STR</code></pre>
+<p>Line 2 creates a variable called STR and assigns the string “Hello World!” to it. Then the VALUE of this variable is retrieved by putting the ‘<span class="math inline">′<em>i</em><em>n</em><em>a</em><em>t</em><em>t</em><em>h</em><em>e</em><em>b</em><em>e</em><em>g</em><em>i</em><em>n</em><em>n</em><em>i</em><em>n</em><em>g</em>.<em>P</em><em>l</em><em>e</em><em>a</em><em>s</em><em>e</em><em>n</em><em>o</em><em>t</em><em>i</em><em>c</em><em>e</em>(<em>t</em><em>r</em><em>y</em><em>i</em><em>t</em>!)<em>t</em><em>h</em><em>a</em><em>t</em><em>i</em><em>f</em><em>y</em><em>o</em><em>u</em><em>d</em><em>o</em><em>n</em>′<em>t</em><em>u</em><em>s</em><em>e</em><em>t</em><em>h</em><em>e</em>′</span>’ sign, the output of the program will be different, and probably not what you want it to be.</p>
+<h3 id="a-very-simple-backup-script-little-bit-better">A very simple backup script (little bit better)</h3>
+<pre><code>#!/bin/bash
+           OF=/var/my-backup-$(date +%Y%m%d).tgz
+           tar -cZf $OF /home/me/</code></pre>
+<blockquote>
+<p>This script introduces another thing. First of all, you should be familiarized with the variable creation and assignation on line 2. Notice the expression ‘$(date +%Y%m%d)’. If you run the script you’ll notice that it runs the command inside the parenthesis, capturing its output.</p>
+</blockquote>
+<blockquote>
+<p>Notice that in this script, the output filename will be different every day, due to the format switch to the date command(+%Y%m%d). You can change this by specifying a different format.</p>
+</blockquote>
+<p><strong>examples</strong>:</p>
+<p><em>echo ls</em></p>
+<p><em>echo $(ls)</em></p>
+<h3 id="local-variables">Local variables</h3>
+<p>Local variables can be created by using the keyword <em>local</em>.</p>
+<pre><code>#!/bin/bash
+                HELLO=Hello
+                function hello {
+                        local HELLO=World
+                        echo $HELLO
+                }
+                echo $HELLO
+                hello
+                echo $HELLO</code></pre>
+<h3 id="basic-conditional-example-if-..-then">Basic conditional example if .. then</h3>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*V2XDOXCJO2I8qYBK.jpg" class="graf-image" />
+</figure>
+<p>#!/bin/bash if [ “foo” = “foo” ]; then echo expression evaluated as true fi</p>
+<p><em>The code to be executed if the expression within braces is true can be found after the ‘then’ word and before ‘fi’ which indicates the end of the conditionally executed code.</em></p>
+<h3 id="basic-conditional-example-if-..-then-else">Basic conditional example if .. then … else</h3>
+<pre><code>#!/bin/bash
+            if [ &quot;foo&quot; = &quot;foo&quot; ]; then
+               echo expression evaluated as true
+            else
+               echo expression evaluated as false
+            fi</code></pre>
+<h3 id="conditionals-with-variables">Conditionals with variables</h3>
+<pre><code>#!/bin/bash
+            T1=&quot;foo&quot;
+            T2=&quot;bar&quot;
+            if [ &quot;$T1&quot; = &quot;$T2&quot; ]; then
+                echo expression evaluated as true
+            else
+                echo expression evaluated as false
+            fi</code></pre>
+<h3 id="loops">Loops</h3>
+<ul>
+<li><span id="15f6"><strong><em>for</em></strong></span></li>
+<li><span id="4000"><strong><em>while</em></strong></span></li>
+</ul>
+<blockquote>
+<p>(there’s another loop called until but I don’t use it so you can look it up if you’d like)</p>
+</blockquote>
+<blockquote>
+<p><strong><em>The until loop is almost equal to the while loop, except that the code is executed while the</em></strong> <a href="https://www.cs.fsu.edu/~myers/c++/notes/control1.html" class="markup--anchor markup--blockquote-anchor"><strong><em>control expression</em></strong></a> <strong><em>evaluates to false.</em></strong></p>
+</blockquote>
+<p>The <strong>for</strong> loop is a little bit different from other programming languages. Basically, it let’s you iterate over a series of ‘words’ within a string.</p>
+<p>The <strong>while</strong> executes a piece of code if the control expression is true, and only stops when it is false …or a explicit break is found within the executed code.</p>
+<h3 id="for">For</h3>
+<pre><code>#!/bin/bash
+        for i in $( ls ); do
+            echo item: $i
+        done</code></pre>
+<blockquote>
+<p>On the second line, we declare i to be the variable that will take the different values contained in $( ls ).</p>
+</blockquote>
+<blockquote>
+<p>The third line could be longer if needed, or there could be more lines before the done (4).</p>
+</blockquote>
+<blockquote>
+<p>‘done’ (4) indicates that the code that used the value of $i has finished and $i can take a new value.</p>
+</blockquote>
+<blockquote>
+<p>A more useful way to use the for loop would be to use it to match only certain files on the previous example</p>
+</blockquote>
+<h3 id="while">While</h3>
+<pre><code>#!/bin/bash
+         COUNTER=0
+         while [  $COUNTER -lt 10 ]; do
+             echo The counter is $COUNTER
+             let COUNTER=COUNTER+1
+         done</code></pre>
+<h3 id="functions">Functions</h3>
+<p>As in almost any programming language, you can use functions to group pieces of code in a more logical way or practice the divine art of recursion.</p>
+<p>Declaring a function is just a matter of writing function my_func { my_code }.</p>
+<p>Calling a function is just like calling another program, you just write its name.</p>
+<h3 id="functions-ex.">Functions ex.)</h3>
+<pre><code>#!/bin/bash
+           function quit {
+               exit
+           }
+           function hello {
+               echo Hello!
+           }
+           hello
+           quit
+           echo foo</code></pre>
+<blockquote>
+<p>Lines 2-4 contain the ‘quit’ function. Lines 5-7 contain the ‘hello’ function If you are not absolutely sure about what this script does, please try it!.</p>
+</blockquote>
+<blockquote>
+<p>Notice that a functions don’t need to be declared in any specific order.</p>
+</blockquote>
+<blockquote>
+<p>When running the script you’ll notice that first: the function ‘hello’ is called, second the ‘quit’ function, and the program never reaches line 10.</p>
+</blockquote>
+<h3 id="functions-with-parameters">Functions with parameters</h3>
+<pre><code>#!/bin/bash
+                function quit {
+                   exit
+                }
+                function e {
+                    echo $1
+                }
+                e Hello
+                e World
+                quit
+                echo foo</code></pre>
+<h3 id="backup-directory-script">Backup Directory Script:</h3>
+<pre><code>#!/bin/bash
+            SRCD=&quot;/home/&quot;
+            TGTD=&quot;/var/backups/&quot;
+            OF=home-$(date +%Y%m%d).tgz
+            tar -cZf $TGTD$OF $SRCD</code></pre>
+<h3 id="file-renamer">File Renamer:</h3>
+<h3 id="bonus-commands">Bonus Commands:</h3>
+<h4 id="included-in-a-gist-below-so-you-can-see-them-syntax-highlighted..-i-am-also-including-them-in-text-so-that-they-might-turn-up-as-a-result-of-google-searches-i-have-a-hunch-that-googles-seo-rankings-dont-put-much-emphasis-on-the-content-of-github-gists.">Included in a gist below (so you can see them syntax highlighted..) I am also including them in text so that they might turn up as a result of google searches … I have a hunch that google’s SEO rankings don’t put much emphasis on the content of github gists.</h4>
+<h3 id="example">Example</h3>
+<pre><code>#!/usr/bin/env bash
+
+NAME=&quot;John&quot;
+echo &quot;Hello $NAME!&quot;</code></pre>
+<h3 id="variables-1">Variables</h3>
+<pre><code>NAME=&quot;John&quot;
+echo $NAME
+echo &quot;$NAME&quot;
+echo &quot;${NAME}!&quot;</code></pre>
+<h3 id="string-quotes">String quotes</h3>
+<pre><code>NAME=&quot;John&quot;
+echo &quot;Hi $NAME&quot;  #=&gt; Hi John
+echo &#39;Hi $NAME&#39;  #=&gt; Hi $NAME</code></pre>
+<h3 id="shell-execution">Shell execution</h3>
+<pre><code>echo &quot;I&#39;m in $(pwd)&quot;
+echo &quot;I&#39;m in `pwd`&quot;
+# Same</code></pre>
+<p>See <a href="http://wiki.bash-hackers.org/syntax/expansion/cmdsubst" class="markup--anchor markup--p-anchor">Command substitution</a></p>
+<h3 id="conditional-execution">Conditional execution</h3>
+<pre><code>git commit &amp;&amp; git push
+git commit || echo &quot;Commit failed&quot;</code></pre>
+<h3 id="functions-1">Functions</h3>
+<p>{: id=‘functions-example’}</p>
+<pre><code>get_name() {
+  echo &quot;John&quot;
+}
+
+echo &quot;You are $(get_name)&quot;</code></pre>
+<p>See: <a href="https://bryanguner.medium.com/media/2ab9392fe0f579fca234dcdc71259b1c#functions" class="markup--anchor markup--p-anchor">Functions</a></p>
+<h3 id="conditionals">Conditionals</h3>
+<p>{: id=‘conditionals-example’}</p>
+<pre><code>if [[ -z &quot;$string&quot; ]]; then
+  echo &quot;String is empty&quot;
+elif [[ -n &quot;$string&quot; ]]; then
+  echo &quot;String is not empty&quot;
+fi</code></pre>
+<p>See: <a href="https://bryanguner.medium.com/media/2ab9392fe0f579fca234dcdc71259b1c#conditionals" class="markup--anchor markup--p-anchor">Conditionals</a></p>
+<h3 id="strict-mode">Strict mode</h3>
+<pre><code>set -euo pipefail
+IFS=$&#39;\n\t&#39;</code></pre>
+<p>See: <a href="http://redsymbol.net/articles/unofficial-bash-strict-mode/" class="markup--anchor markup--p-anchor">Unofficial bash strict mode</a></p>
+<h3 id="brace-expansion">Brace expansion</h3>
+<pre><code>echo {A,B}.js</code></pre>
+<p>ExpressionDescription<code>{A,B}</code>Same as <code>A B{A,B}.js</code>Same as <code>A.js B.js{1..5}</code>Same as <code>1 2 3 4 5</code></p>
+<p>See: <a href="http://wiki.bash-hackers.org/syntax/expansion/brace" class="markup--anchor markup--p-anchor">Brace expansion</a></p>
+<h3 id="parameter-expansions">Parameter expansions</h3>
+<p>{: .-three-column}</p>
+<h3 id="basics">Basics</h3>
+<pre><code>name=&quot;John&quot;
+echo ${name}
+echo ${name/J/j}    #=&gt; &quot;john&quot; (substitution)
+echo ${name:0:2}    #=&gt; &quot;Jo&quot; (slicing)
+echo ${name::2}     #=&gt; &quot;Jo&quot; (slicing)
+echo ${name::-1}    #=&gt; &quot;Joh&quot; (slicing)
+echo ${name:(-1)}   #=&gt; &quot;n&quot; (slicing from right)
+echo ${name:(-2):1} #=&gt; &quot;h&quot; (slicing from right)
+echo ${food:-Cake}  #=&gt; $food or &quot;Cake&quot;
+
+length=2
+echo ${name:0:length}  #=&gt; &quot;Jo&quot;</code></pre>
+<p>See: <a href="http://wiki.bash-hackers.org/syntax/pe" class="markup--anchor markup--p-anchor">Parameter expansion</a></p>
+<pre><code>STR=&quot;/path/to/foo.cpp&quot;
+echo ${STR%.cpp}    # /path/to/foo
+echo ${STR%.cpp}.o  # /path/to/foo.o
+echo ${STR%/*}      # /path/to
+
+echo ${STR##*.}     # cpp (extension)
+echo ${STR##*/}     # foo.cpp (basepath)
+
+echo ${STR#*/}      # path/to/foo.cpp
+echo ${STR##*/}     # foo.cpp
+
+echo ${STR/foo/bar} # /path/to/bar.cpp
+
+STR=&quot;Hello world&quot;
+echo ${STR:6:5}   # &quot;world&quot;
+echo ${STR: -5:5}  # &quot;world&quot;
+
+SRC=&quot;/path/to/foo.cpp&quot;
+BASE=${SRC##*/}   #=&gt; &quot;foo.cpp&quot; (basepath)
+DIR=${SRC%$BASE}  #=&gt; &quot;/path/to/&quot; (dirpath)</code></pre>
+<h3 id="substitution">Substitution</h3>
+<p>CodeDescription<code>${FOO%suffix}</code>Remove suffix<code>${FOO#prefix}</code>Remove prefix——<code>${FOO%%suffix}</code>Remove long suffix<code>${FOO##prefix}</code>Remove long prefix——<code>${FOO/from/to}</code>Replace first match<code>${FOO//from/to}</code>Replace all——<code>${FOO/%from/to}</code>Replace suffix<code>${FOO/#from/to}</code>Replace prefix</p>
+<h3 id="comments">Comments</h3>
+<pre><code># Single line comment
+
+: &#39;
+This is a
+multi line
+comment
+&#39;</code></pre>
+<h3 id="substrings">Substrings</h3>
+<p>ExpressionDescription<code>${FOO:0:3}</code>Substring <em>(position, length)</em><code>${FOO:(-3):3}</code>Substring from the right</p>
+<h3 id="length">Length</h3>
+<p>ExpressionDescription<code>${#FOO}</code>Length of <code>$FOO</code></p>
+<h3 id="manipulation">Manipulation</h3>
+<pre><code>STR=&quot;HELLO WORLD!&quot;
+echo ${STR,}   #=&gt; &quot;hELLO WORLD!&quot; (lowercase 1st letter)
+echo ${STR,,}  #=&gt; &quot;hello world!&quot; (all lowercase)
+
+STR=&quot;hello world!&quot;
+echo ${STR^}   #=&gt; &quot;Hello world!&quot; (uppercase 1st letter)
+echo ${STR^^}  #=&gt; &quot;HELLO WORLD!&quot; (all uppercase)</code></pre>
+<h3 id="default-values">Default values</h3>
+<p>ExpressionDescription<code>${FOO:-val}$FOO</code>, or <code>val</code> if unset (or null)<code>${FOO:=val}</code>Set <code>$FOO</code> to <code>val</code> if unset (or null)<code>${FOO:+val}val</code> if <code>$FOO</code> is set (and not null)<code>${FOO:?message}</code>Show error message and exit if <code>$FOO</code> is unset (or null)</p>
+<p>Omitting the <code>:</code> removes the (non)nullity checks, e.g. <code>${FOO-val}</code> expands to <code>val</code> if unset otherwise <code>$FOO</code>.</p>
+<h3 id="loops-1">Loops</h3>
+<p>{: .-three-column}</p>
+<h3 id="basic-for-loop">Basic for loop</h3>
+<pre><code>for i in /etc/rc.*; do
+  echo $i
+done</code></pre>
+<h3 id="c-like-for-loop">C-like for loop</h3>
+<pre><code>for ((i = 0 ; i &lt; 100 ; i++)); do
+  echo $i
+done</code></pre>
+<h3 id="ranges">Ranges</h3>
+<pre><code>for i in {1..5}; do
+    echo &quot;Welcome $i&quot;
+done</code></pre>
+<h4 id="with-step-size">With step size</h4>
+<pre><code>for i in {5..50..5}; do
+    echo &quot;Welcome $i&quot;
+done</code></pre>
+<h3 id="reading-lines">Reading lines</h3>
+<pre><code>cat file.txt | while read line; do
+  echo $line
+done</code></pre>
+<h3 id="forever">Forever</h3>
+<pre><code>while true; do
+  ···
+done</code></pre>
+<h3 id="functions-2">Functions</h3>
+<p>{: .-three-column}</p>
+<h3 id="defining-functions">Defining functions</h3>
+<pre><code>myfunc() {
+    echo &quot;hello $1&quot;
+}
+
+# Same as above (alternate syntax)
+function myfunc() {
+    echo &quot;hello $1&quot;
+}
+
+myfunc &quot;John&quot;</code></pre>
+<h3 id="returning-values">Returning values</h3>
+<pre><code>myfunc() {
+    local myresult=&#39;some value&#39;
+    echo $myresult
+}
+
+result=&quot;$(myfunc)&quot;</code></pre>
+<h3 id="raising-errors">Raising errors</h3>
+<pre><code>myfunc() {
+  return 1
+}
+
+if myfunc; then
+  echo &quot;success&quot;
+else
+  echo &quot;failure&quot;
+fi</code></pre>
+<h3 id="arguments">Arguments</h3>
+<p>ExpressionDescription<code>$#</code>Number of arguments<code>$*</code>All postional arguments (as a single word)<code>$@</code>All postitional arguments (as separate strings)<code>$1</code>First argument<code>$_</code>Last argument of the previous command</p>
+<p><strong>Note</strong>: <code>$@</code> and <code>$*</code> must be quoted in order to perform as described. Otherwise, they do exactly the same thing (arguments as separate strings).</p>
+<p>See <a href="http://wiki.bash-hackers.org/syntax/shellvars#special_parameters_and_shell_variables" class="markup--anchor markup--p-anchor">Special parameters</a>.</p>
+<h3 id="conditionals-1">Conditionals</h3>
+<p>{: .-three-column}</p>
+<h3 id="conditions">Conditions</h3>
+<p>Note that <code>[[</code> is actually a command/program that returns either <code>0</code> (true) or <code>1</code> (false). Any program that obeys the same logic (like all base utils, such as <code>grep(1)</code> or <code>ping(1)</code>) can be used as condition, see examples.</p>
+<p>ConditionDescription<code>[[ -z STRING ]]</code>Empty string<code>[[ -n STRING ]]</code>Not empty string<code>[[ STRING == STRING ]]</code>Equal<code>[[ STRING != STRING ]]</code>Not Equal——<code>[[ NUM -eq NUM ]]</code>Equal<code>[[ NUM -ne NUM ]]</code>Not equal<code>[[ NUM -lt NUM ]]</code>Less than<code>[[ NUM -le NUM ]]</code>Less than or equal<code>[[ NUM -gt NUM ]]</code>Greater than<code>[[ NUM -ge NUM ]]</code>Greater than or equal——<code>[[ STRING =~ STRING ]]</code>Regexp——<code>(( NUM &lt; NUM ))</code>Numeric conditions</p>
+<h4 id="more-conditions">More conditions</h4>
+<p>ConditionDescription<code>[[ -o noclobber ]]</code>If OPTIONNAME is enabled——<code>[[ ! EXPR ]]</code>Not<code>[[ X &amp;&amp; Y ]]</code>And`[[ X</p>
+<h3 id="file-conditions">File conditions</h3>
+<p>ConditionDescription<code>[[ -e FILE ]]</code>Exists<code>[[ -r FILE ]]</code>Readable<code>[[ -h FILE ]]</code>Symlink<code>[[ -d FILE ]]</code>Directory<code>[[ -w FILE ]]</code>Writable<code>[[ -s FILE ]]</code>Size is &gt; 0 bytes<code>[[ -f FILE ]]</code>File<code>[[ -x FILE ]]</code>Executable——<code>[[ FILE1 -nt FILE2 ]]</code>1 is more recent than 2<code>[[ FILE1 -ot FILE2 ]]</code>2 is more recent than 1<code>[[ FILE1 -ef FILE2 ]]</code>Same files</p>
+<h3 id="example-1">Example</h3>
+<pre><code># String
+if [[ -z &quot;$string&quot; ]]; then
+  echo &quot;String is empty&quot;
+elif [[ -n &quot;$string&quot; ]]; then
+  echo &quot;String is not empty&quot;
+else
+  echo &quot;This never happens&quot;
+fi
+
+# Combinations
+if [[ X &amp;&amp; Y ]]; then
+  ...
+fi
+
+# Equal
+if [[ &quot;$A&quot; == &quot;$B&quot; ]]
+
+# Regex
+if [[ &quot;A&quot; =~ . ]]
+
+if (( $a &lt; $b )); then
+   echo &quot;$a is smaller than $b&quot;
+fi
+
+if [[ -e &quot;file.txt&quot; ]]; then
+  echo &quot;file exists&quot;
+fi</code></pre>
+<h3 id="arrays">Arrays</h3>
+<h3 id="defining-arrays">Defining arrays</h3>
+<pre><code>Fruits=(&#39;Apple&#39; &#39;Banana&#39; &#39;Orange&#39;)
+
+Fruits[0]=&quot;Apple&quot;
+Fruits[1]=&quot;Banana&quot;
+Fruits[2]=&quot;Orange&quot;</code></pre>
+<h3 id="working-with-arrays">Working with arrays</h3>
+<pre><code>echo ${Fruits[0]}           # Element #0
+echo ${Fruits[-1]}          # Last element
+echo ${Fruits[@]}           # All elements, space-separated
+echo ${#Fruits[@]}          # Number of elements
+echo ${#Fruits}             # String length of the 1st element
+echo ${#Fruits[3]}          # String length of the Nth element
+echo ${Fruits[@]:3:2}       # Range (from position 3, length 2)
+echo ${!Fruits[@]}          # Keys of all elements, space-separated</code></pre>
+<h3 id="operations">Operations</h3>
+<pre><code>Fruits=(&quot;${Fruits[@]}&quot; &quot;Watermelon&quot;)    # Push
+Fruits+=(&#39;Watermelon&#39;)                  # Also Push
+Fruits=( ${Fruits[@]/Ap*/} )            # Remove by regex match
+unset Fruits[2]                         # Remove one item
+Fruits=(&quot;${Fruits[@]}&quot;)                 # Duplicate
+Fruits=(&quot;${Fruits[@]}&quot; &quot;${Veggies[@]}&quot;) # Concatenate
+lines=(`cat &quot;logfile&quot;`)                 # Read from file</code></pre>
+<h3 id="iteration">Iteration</h3>
+<pre><code>for i in &quot;${arrayName[@]}&quot;; do
+  echo $i
+done</code></pre>
+<h3 id="dictionaries">Dictionaries</h3>
+<p>{: .-three-column}</p>
+<h3 id="defining">Defining</h3>
+<pre><code>declare -A sounds
+
+sounds[dog]=&quot;bark&quot;
+sounds[cow]=&quot;moo&quot;
+sounds[bird]=&quot;tweet&quot;
+sounds[wolf]=&quot;howl&quot;</code></pre>
+<p>Declares <code>sound</code> as a Dictionary object (aka associative array).</p>
+<h3 id="working-with-dictionaries">Working with dictionaries</h3>
+<pre><code>echo ${sounds[dog]} # Dog&#39;s sound
+echo ${sounds[@]}   # All values
+echo ${!sounds[@]}  # All keys
+echo ${#sounds[@]}  # Number of elements
+unset sounds[dog]   # Delete dog</code></pre>
+<h3 id="iteration-1">Iteration</h3>
+<h4 id="iterate-over-values">Iterate over values</h4>
+<pre><code>for val in &quot;${sounds[@]}&quot;; do
+  echo $val
+done</code></pre>
+<h4 id="iterate-over-keys">Iterate over keys</h4>
+<pre><code>for key in &quot;${!sounds[@]}&quot;; do
+  echo $key
+done</code></pre>
+<h3 id="options">Options</h3>
+<h3 id="options-1">Options</h3>
+<pre><code>set -o noclobber  # Avoid overlay files (echo &quot;hi&quot; &gt; foo)
+set -o errexit    # Used to exit upon error, avoiding cascading errors
+set -o pipefail   # Unveils hidden failures
+set -o nounset    # Exposes unset variables</code></pre>
+<h3 id="glob-options">Glob options</h3>
+<pre><code>shopt -s nullglob    # Non-matching globs are removed  (&#39;*.foo&#39; =&gt; &#39;&#39;)
+shopt -s failglob    # Non-matching globs throw errors
+shopt -s nocaseglob  # Case insensitive globs
+shopt -s dotglob     # Wildcards match dotfiles (&quot;*.sh&quot; =&gt; &quot;.foo.sh&quot;)
+shopt -s globstar    # Allow ** for recursive matches (&#39;lib/**/*.rb&#39; =&gt; &#39;lib/a/b/c.rb&#39;)</code></pre>
+<p>Set <code>GLOBIGNORE</code> as a colon-separated list of patterns to be removed from glob matches.</p>
+<h3 id="history">History</h3>
+<h3 id="commands">Commands</h3>
+<p>CommandDescription<code>history</code>Show history<code>shopt -s histverify</code>Don’t execute expanded result immediately</p>
+<h3 id="expansions">Expansions</h3>
+<p>ExpressionDescription<code>!$</code>Expand last parameter of most recent command<code>!*</code>Expand all parameters of most recent command<code>!-n</code>Expand <code>n</code>th most recent command<code>!n</code>Expand <code>n</code>th command in history<code>!&lt;command&gt;</code>Expand most recent invocation of command <code>&lt;command&gt;</code></p>
+<h3 id="operations-1">Operations</h3>
+<p>CodeDescription<code>!!</code>Execute last command again<code>!!:s/&lt;FROM&gt;/&lt;TO&gt;/</code>Replace first occurrence of <code>&lt;FROM&gt;</code> to <code>&lt;TO&gt;</code> in most recent command<code>!!:gs/&lt;FROM&gt;/&lt;TO&gt;/</code>Replace all occurrences of <code>&lt;FROM&gt;</code> to <code>&lt;TO&gt;</code> in most recent command<code>!$:t</code>Expand only basename from last parameter of most recent command<code>!$:h</code>Expand only directory from last parameter of most recent command</p>
+<p><code>!!</code> and <code>!$</code> can be replaced with any valid expansion.</p>
+<h3 id="slices">Slices</h3>
+<p>CodeDescription<code>!!:n</code>Expand only <code>n</code>th token from most recent command (command is <code>0</code>; first argument is <code>1</code>)<code>!^</code>Expand first argument from most recent command<code>!$</code>Expand last token from most recent command<code>!!:n-m</code>Expand range of tokens from most recent command<code>!!:n-$</code>Expand <code>n</code>th token to last from most recent command</p>
+<p><code>!!</code> can be replaced with any valid expansion i.e. <code>!cat</code>, <code>!-2</code>, <code>!42</code>, etc.</p>
+<h3 id="miscellaneous">Miscellaneous</h3>
+<h3 id="numeric-calculations">Numeric calculations</h3>
+<pre><code>$((a + 200))      # Add 200 to $a
+
+$(($RANDOM%200))  # Random number 0..199</code></pre>
+<h3 id="subshells">Subshells</h3>
+<pre><code>(cd somedir; echo &quot;I&#39;m now in $PWD&quot;)
+pwd # still in first directory</code></pre>
+<h3 id="redirection">Redirection</h3>
+<pre><code>python hello.py &gt; output.txt   # stdout to (file)
+python hello.py &gt;&gt; output.txt  # stdout to (file), append
+python hello.py 2&gt; error.log   # stderr to (file)
+python hello.py 2&gt;&amp;1           # stderr to stdout
+python hello.py 2&gt;/dev/null    # stderr to (null)
+python hello.py &amp;&gt;/dev/null    # stdout and stderr to (null)
+
+python hello.py &lt; foo.txt      # feed foo.txt to stdin for python</code></pre>
+<h3 id="inspecting-commands">Inspecting commands</h3>
+<pre><code>command -V cd
+#=&gt; &quot;cd is a function/alias/whatever&quot;</code></pre>
+<h3 id="trap-errors">Trap errors</h3>
+<pre><code>trap &#39;echo Error at about $LINENO&#39; ERR</code></pre>
+<p>or</p>
+<pre><code>traperr() {
+  echo &quot;ERROR: ${BASH_SOURCE[1]} at about ${BASH_LINENO[0]}&quot;
+}
+
+set -o errtrace
+trap traperr ERR</code></pre>
+<h3 id="caseswitch">Case/switch</h3>
+<pre><code>case &quot;$1&quot; in
+  start | up)
+    vagrant up
+    ;;
+
+  *)
+    echo &quot;Usage: $0 {start|stop|ssh}&quot;
+    ;;
+esac</code></pre>
+<h3 id="source-relative">Source relative</h3>
+<pre><code>source &quot;${0%/*}/../share/foo.sh&quot;</code></pre>
+<h3 id="printf">printf</h3>
+<pre><code>printf &quot;Hello %s, I&#39;m %s&quot; Sven Olga
+#=&gt; &quot;Hello Sven, I&#39;m Olga
+
+printf &quot;1 + 1 = %d&quot; 2
+#=&gt; &quot;1 + 1 = 2&quot;
+
+printf &quot;This is how you print a float: %f&quot; 2
+#=&gt; &quot;This is how you print a float: 2.000000&quot;</code></pre>
+<h3 id="directory-of-script">Directory of script</h3>
+<pre><code>DIR=&quot;${0%/*}&quot;</code></pre>
+<h3 id="getting-options">Getting options</h3>
+<pre><code>while [[ &quot;$1&quot; =~ ^- &amp;&amp; ! &quot;$1&quot; == &quot;--&quot; ]]; do case $1 in
+  -V | --version )
+    echo $version
+    exit
+    ;;
+  -s | --string )
+    shift; string=$1
+    ;;
+  -f | --flag )
+    flag=1
+    ;;
+esac; shift; done
+if [[ &quot;$1&quot; == &#39;--&#39; ]]; then shift; fi</code></pre>
+<h3 id="heredoc">Heredoc</h3>
+<pre><code>cat &lt;&lt;END
+hello world
+END</code></pre>
+<h3 id="reading-input">Reading input</h3>
+<pre><code>echo -n &quot;Proceed? [y/n]: &quot;
+read ans
+echo $ans
+
+read -n 1 ans    # Just one character</code></pre>
+<h3 id="special-variables">Special variables</h3>
+<p>ExpressionDescription<code>$?</code>Exit status of last task<code>$!</code>PID of last background task<code>$$</code>PID of shell<code>$0</code>Filename of the shell script</p>
+<p>See <a href="http://wiki.bash-hackers.org/syntax/shellvars#special_parameters_and_shell_variables" class="markup--anchor markup--p-anchor">Special parameters</a>.</p>
+<h3 id="go-to-previous-directory">Go to previous directory</h3>
+<pre><code>pwd # /home/user/foo
+cd bar/
+pwd # /home/user/foo/bar
+cd -
+pwd # /home/user/foo</code></pre>
+<h3 id="check-for-commands-result">Check for command’s result</h3>
+<pre><code>if ping -c 1 google.com; then
+  echo &quot;It appears you have a working internet connection&quot;
+fi</code></pre>
+<h3 id="grep-check">Grep check</h3>
+<pre><code>if grep -q &#39;foo&#39; ~/.bash_history; then
+  echo &quot;You appear to have typed &#39;foo&#39; in the past&quot;
+fi</code></pre>
+<h3 id="also-see">Also see</h3>
+<p>{: .-one-column}</p>
+<ul>
+<li><span id="4581"><a href="http://wiki.bash-hackers.org/" class="markup--anchor markup--li-anchor">Bash-hackers wiki</a> <em>(bash-hackers.org)</em></span></li>
+<li><span id="b6a2"><a href="http://wiki.bash-hackers.org/syntax/shellvars" class="markup--anchor markup--li-anchor">Shell vars</a> <em>(bash-hackers.org)</em></span></li>
+<li><span id="a5d4"><a href="https://learnxinyminutes.com/docs/bash/" class="markup--anchor markup--li-anchor">Learn bash in y minutes</a> <em>(learnxinyminutes.com)</em></span></li>
+<li><span id="007b"><a href="http://mywiki.wooledge.org/BashGuide" class="markup--anchor markup--li-anchor">Bash Guide</a> <em>(mywiki.wooledge.org)</em></span></li>
+<li><span id="f2db"><a href="https://www.shellcheck.net/" class="markup--anchor markup--li-anchor">ShellCheck</a> <em>(shellcheck.net)</em></span></li>
+</ul>
+<p>By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on <a href="https://medium.com/p/3ec9d4e2e65">August 9, 2021</a>.</p>
+<p><a href="https://medium.com/@bryanguner/bash-proficiency-in-under-15-minutes-3ec9d4e2e65" class="p-canonical">Canonical link</a></p>
+<p>August 31, 2021.</p>
+</body>
+</html>
