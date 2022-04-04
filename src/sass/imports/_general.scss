@@ -12,17 +12,33 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
 }
-iframe{
-        overflow-y: scroll!important;
-        overflow-x: scroll!important;
-        border-radius:26px;
-        border: 3px solid gold;
-        height:1100px;
-        width:100%;
-        margin:auto;
-        text-align:center;
-        align-self:center;
+
+iframe {
+    overflow-y: scroll !important;
+    overflow-x: scroll !important;
+    border-radius: 26px;
+    border: 3px solid gold;
+    height: 1100px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    align-self: center;
+    overflow: scroll !important;
+    resize: both !important;
 }
+
+#scrollBtn {
+    position: fixed;
+    top: 30px;
+    right: 10px;
+    width: 80px;
+    color: white;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.856);
+    border-radius: 15px;
+}
+
+
 mark,
 ins {
     background: $yellow-pale;
@@ -454,5 +470,7 @@ th {
 
 th {
     color: #283040;
+
     font-weight: 700;
+}
 }
