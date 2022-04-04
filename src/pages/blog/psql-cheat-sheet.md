@@ -8,6 +8,8 @@ image: /blog/psql.jpg
 thumb_image: /blog/psql-schema.jpg
 image_position: right
 author: src/data/authors/bgoon.yaml
+categories:
+  - src/data/categories/git.yaml
 show_author_bio: true
 cmseditable: true
 ---
