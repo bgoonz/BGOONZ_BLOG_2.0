@@ -41,9 +41,7 @@ class GraphUnweightedUndirected {
     }
 }
 
-export {
-    GraphUnweightedUndirected
-};
+export { GraphUnweightedUndirected };
 
 // Example
 // const graph = new GraphUnweightedUndirected()

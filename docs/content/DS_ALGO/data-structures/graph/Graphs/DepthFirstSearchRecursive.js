@@ -38,9 +38,7 @@ class GraphUnweightedUndirected {
     }
 }
 
-export {
-    GraphUnweightedUndirected
-};
+export { GraphUnweightedUndirected };
 
 // const graph = new GraphUnweightedUndirected()
 // graph.addEdge(1, 2)

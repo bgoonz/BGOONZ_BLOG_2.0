@@ -96,9 +96,7 @@ class GraphWeightedUndirectedAdjacencyList {
     }
 }
 
-export {
-    GraphWeightedUndirectedAdjacencyList
-};
+export { GraphWeightedUndirectedAdjacencyList };
 
 // const graph = new GraphWeightedUndirectedAdjacencyList()
 // graph.addEdge(1, 2, 1)
