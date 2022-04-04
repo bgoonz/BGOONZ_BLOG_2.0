@@ -36,9 +36,11 @@ function solve(graph, s) {
     }
     return solutions;
 }
+
 export {
     solve
 };
+
 // // create graph
 // const graph = {}
 // const layout = {

@@ -53,7 +53,7 @@ Min  Hour Day  Mon  Weekday
 ### Operators
 
 | Operator | Description                |
-|----------|----------------------------|
+| -------- | -------------------------- |
 | `*`      | all values                 |
 | `,`      | separate individual values |
 | `-`      | a range of values          |
@@ -62,7 +62,7 @@ Min  Hour Day  Mon  Weekday
 ### Examples
 
 | Example        | Description                 |
-|----------------|-----------------------------|
+| -------------- | --------------------------- |
 | `0 * * * *`    | every hour                  |
 | `*/15 * * * *` | every 15 mins               |
 | `0 */2 * * *`  | every 2 hours               |

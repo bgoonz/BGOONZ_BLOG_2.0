@@ -2,197 +2,197 @@
 
 ### Python Cheatsheet
 
-* About
-  * Contribute
-  * Read It
-  * Python Cheatsheet
-  * The Zen of Python
-  * Python Basics
-    * Math Operators
-    * Data Types
-    * String Concatenation and Replication
-    * Variables
-    * Comments
-    * The print() Function
-    * The input() Function
-    * The len() Function
-    * The str(), int(), and float() Functions
-  * Flow Control
-    * Comparison Operators
-    * Boolean evaluation
-    * Boolean Operators
-    * Mixing Boolean and Comparison Operators
-    * if Statements
-    * else Statements
-    * elif Statements
-    * while Loop Statements
-    * break Statements
-    * continue Statements
-    * for Loops and the range() Function
-    * For else statement
-    * Importing Modules
-    * Ending a Program Early with sys.exit()
-  * Functions
-    * Return Values and return Statements
-    * The None Value
-    * Keyword Arguments and print()
-    * Local and Global Scope
-    * The global Statement
-  * Exception Handling
-    * Basic exception handling
-    * Final code in exception handling
-  * Lists
-    * Getting Individual Values in a List with Indexes
-    * Negative Indexes
-    * Getting Sublists with Slices
-    * Getting a List's Length with len()
-    * Changing Values in a List with Indexes
-    * List Concatenation and List Replication
-    * Removing Values from Lists with del Statements
-    * Using for Loops with Lists
-    * Looping Through Multiple Lists with zip()
-    * The in and not in Operators
-    * The Multiple Assignment Trick
-    * Augmented Assignment Operators
-    * Finding a Value in a List with the index() Method
-    * Adding Values to Lists with the append() and insert() Methods
-    * Removing Values from Lists with remove()
-    * Removing Values from Lists with pop()
-    * Sorting the Values in a List with the sort() Method
-    * Tuple Data Type
-    * Converting Types with the list() and tuple() Functions
-  * Dictionaries and Structuring Data
-    * The keys(), values(), and items() Methods
-    * Checking Whether a Key or Value Exists in a Dictionary
-    * The get() Method
-    * The setdefault() Method
-    * Pretty Printing
-    * Merge two dictionaries
-  * sets
-    * Initializing a set
-    * sets: unordered collections of unique elements
-    * set add() and update()
-    * set remove() and discard()
-    * set union()
-    * set intersection
-    * set difference
-    * set symetric\_difference
-  * itertools Module
-    * accumulate()
-    * combinations()
-    * combinations\_with\_replacement()
-    * count()
-    * cycle()
-    * chain()
-    * compress()
-    * dropwhile()
-    * filterfalse()
-    * groupby()
-    * islice()
-    * permutations()
-    * product()
-    * repeat()
-    * starmap()
-    * takewhile()
-    * tee()
-    * zip\_longest()
-  * Comprehensions
-    * List comprehension
-    * Set comprehension
-    * Dict comprehension
-  * Manipulating Strings
-    * Escape Characters
-    * Raw Strings
-    * Multiline Strings with Triple Quotes
-    * Indexing and Slicing Strings
-    * The in and not in Operators with Strings
-    * The in and not in Operators with list
-    * The upper(), lower(), isupper(), and islower() String Methods
-    * The isX String Methods
-    * The startswith() and endswith() String Methods
-    * The join() and split() String Methods
-    * Justifying Text with rjust(), ljust(), and center()
-    * Removing Whitespace with strip(), rstrip(), and lstrip()
-    * Copying and Pasting Strings with the pyperclip Module (need pip install)
-  * String Formatting
-    * % operator
-    * String Formatting (str.format)
-    * Lazy string formatting
-    * Formatted String Literals or f-strings (Python 3.6+)
-    * Template Strings
-  * Regular Expressions
-    * Matching Regex Objects
-    * Grouping with Parentheses
-    * Matching Multiple Groups with the Pipe
-    * Optional Matching with the Question Mark
-    * Matching Zero or More with the Star
-    * Matching One or More with the Plus
-    * Matching Specific Repetitions with Curly Brackets
-    * Greedy and Nongreedy Matching
-    * The findall() Method
-    * Making Your Own Character Classes
-    * The Caret and Dollar Sign Characters
-    * The Wildcard Character
-    * Matching Everything with Dot-Star
-    * Matching Newlines with the Dot Character
-    * Review of Regex Symbols
-    * Case-Insensitive Matching
-    * Substituting Strings with the sub() Method
-    * Managing Complex Regexes
-  * Handling File and Directory Paths
-    * Backslash on Windows and Forward Slash on OS X and Linux
-    * The Current Working Directory
-    * Creating New Folders
-    * Absolute vs. Relative Paths
-    * Handling Absolute and Relative Paths
-    * Checking Path Validity
-    * Finding File Sizes and Folder Contents
-    * Copying Files and Folders
-    * Moving and Renaming Files and Folders
-    * Permanently Deleting Files and Folders
-    * Safe Deletes with the send2trash Module
-    * Walking a Directory Tree
-  * Reading and Writing Files
-    * The File Reading/Writing Process
-    * Opening and reading files with the open() function
-    * Writing to Files
-    * Saving Variables with the shelve Module
-    * Saving Variables with the pprint.pformat() Function
-    * Reading ZIP Files
-    * Extracting from ZIP Files
-    * Creating and Adding to ZIP Files
-  * JSON, YAML and configuration files
-    * JSON
-    * YAML
-    * Anyconfig
-  * Debugging
-    * Raising Exceptions
-    * Getting the Traceback as a String
-    * Assertions
-    * Logging
-    * Logging Levels
-    * Disabling Logging
-    * Logging to a File
-  * Lambda Functions
-  * Ternary Conditional Operator
-  * args and kwargs
-    * Things to Remember(args)
-    * Things to Remember(kwargs)
-  * Context Manager
-    * with statement
-    * Writing your own contextmanager using generator syntax
-  * `__main__` Top-level script environment
-    * Advantages
-  * setup.py
-  * Dataclasses
-    * Features
-    * Default values
-    * Type hints
-  * Virtual Environment
-    * virtualenv
-    * poetry
-    * pipenv
-    * anaconda
+-   About
+    -   Contribute
+    -   Read It
+    -   Python Cheatsheet
+    -   The Zen of Python
+    -   Python Basics
+        -   Math Operators
+        -   Data Types
+        -   String Concatenation and Replication
+        -   Variables
+        -   Comments
+        -   The print() Function
+        -   The input() Function
+        -   The len() Function
+        -   The str(), int(), and float() Functions
+    -   Flow Control
+        -   Comparison Operators
+        -   Boolean evaluation
+        -   Boolean Operators
+        -   Mixing Boolean and Comparison Operators
+        -   if Statements
+        -   else Statements
+        -   elif Statements
+        -   while Loop Statements
+        -   break Statements
+        -   continue Statements
+        -   for Loops and the range() Function
+        -   For else statement
+        -   Importing Modules
+        -   Ending a Program Early with sys.exit()
+    -   Functions
+        -   Return Values and return Statements
+        -   The None Value
+        -   Keyword Arguments and print()
+        -   Local and Global Scope
+        -   The global Statement
+    -   Exception Handling
+        -   Basic exception handling
+        -   Final code in exception handling
+    -   Lists
+        -   Getting Individual Values in a List with Indexes
+        -   Negative Indexes
+        -   Getting Sublists with Slices
+        -   Getting a List's Length with len()
+        -   Changing Values in a List with Indexes
+        -   List Concatenation and List Replication
+        -   Removing Values from Lists with del Statements
+        -   Using for Loops with Lists
+        -   Looping Through Multiple Lists with zip()
+        -   The in and not in Operators
+        -   The Multiple Assignment Trick
+        -   Augmented Assignment Operators
+        -   Finding a Value in a List with the index() Method
+        -   Adding Values to Lists with the append() and insert() Methods
+        -   Removing Values from Lists with remove()
+        -   Removing Values from Lists with pop()
+        -   Sorting the Values in a List with the sort() Method
+        -   Tuple Data Type
+        -   Converting Types with the list() and tuple() Functions
+    -   Dictionaries and Structuring Data
+        -   The keys(), values(), and items() Methods
+        -   Checking Whether a Key or Value Exists in a Dictionary
+        -   The get() Method
+        -   The setdefault() Method
+        -   Pretty Printing
+        -   Merge two dictionaries
+    -   sets
+        -   Initializing a set
+        -   sets: unordered collections of unique elements
+        -   set add() and update()
+        -   set remove() and discard()
+        -   set union()
+        -   set intersection
+        -   set difference
+        -   set symetric_difference
+    -   itertools Module
+        -   accumulate()
+        -   combinations()
+        -   combinations_with_replacement()
+        -   count()
+        -   cycle()
+        -   chain()
+        -   compress()
+        -   dropwhile()
+        -   filterfalse()
+        -   groupby()
+        -   islice()
+        -   permutations()
+        -   product()
+        -   repeat()
+        -   starmap()
+        -   takewhile()
+        -   tee()
+        -   zip_longest()
+    -   Comprehensions
+        -   List comprehension
+        -   Set comprehension
+        -   Dict comprehension
+    -   Manipulating Strings
+        -   Escape Characters
+        -   Raw Strings
+        -   Multiline Strings with Triple Quotes
+        -   Indexing and Slicing Strings
+        -   The in and not in Operators with Strings
+        -   The in and not in Operators with list
+        -   The upper(), lower(), isupper(), and islower() String Methods
+        -   The isX String Methods
+        -   The startswith() and endswith() String Methods
+        -   The join() and split() String Methods
+        -   Justifying Text with rjust(), ljust(), and center()
+        -   Removing Whitespace with strip(), rstrip(), and lstrip()
+        -   Copying and Pasting Strings with the pyperclip Module (need pip install)
+    -   String Formatting
+        -   % operator
+        -   String Formatting (str.format)
+        -   Lazy string formatting
+        -   Formatted String Literals or f-strings (Python 3.6+)
+        -   Template Strings
+    -   Regular Expressions
+        -   Matching Regex Objects
+        -   Grouping with Parentheses
+        -   Matching Multiple Groups with the Pipe
+        -   Optional Matching with the Question Mark
+        -   Matching Zero or More with the Star
+        -   Matching One or More with the Plus
+        -   Matching Specific Repetitions with Curly Brackets
+        -   Greedy and Nongreedy Matching
+        -   The findall() Method
+        -   Making Your Own Character Classes
+        -   The Caret and Dollar Sign Characters
+        -   The Wildcard Character
+        -   Matching Everything with Dot-Star
+        -   Matching Newlines with the Dot Character
+        -   Review of Regex Symbols
+        -   Case-Insensitive Matching
+        -   Substituting Strings with the sub() Method
+        -   Managing Complex Regexes
+    -   Handling File and Directory Paths
+        -   Backslash on Windows and Forward Slash on OS X and Linux
+        -   The Current Working Directory
+        -   Creating New Folders
+        -   Absolute vs. Relative Paths
+        -   Handling Absolute and Relative Paths
+        -   Checking Path Validity
+        -   Finding File Sizes and Folder Contents
+        -   Copying Files and Folders
+        -   Moving and Renaming Files and Folders
+        -   Permanently Deleting Files and Folders
+        -   Safe Deletes with the send2trash Module
+        -   Walking a Directory Tree
+    -   Reading and Writing Files
+        -   The File Reading/Writing Process
+        -   Opening and reading files with the open() function
+        -   Writing to Files
+        -   Saving Variables with the shelve Module
+        -   Saving Variables with the pprint.pformat() Function
+        -   Reading ZIP Files
+        -   Extracting from ZIP Files
+        -   Creating and Adding to ZIP Files
+    -   JSON, YAML and configuration files
+        -   JSON
+        -   YAML
+        -   Anyconfig
+    -   Debugging
+        -   Raising Exceptions
+        -   Getting the Traceback as a String
+        -   Assertions
+        -   Logging
+        -   Logging Levels
+        -   Disabling Logging
+        -   Logging to a File
+    -   Lambda Functions
+    -   Ternary Conditional Operator
+    -   args and kwargs
+        -   Things to Remember(args)
+        -   Things to Remember(kwargs)
+    -   Context Manager
+        -   with statement
+        -   Writing your own contextmanager using generator syntax
+    -   `__main__` Top-level script environment
+        -   Advantages
+    -   setup.py
+    -   Dataclasses
+        -   Features
+        -   Default values
+        -   Type hints
+    -   Virtual Environment
+        -   virtualenv
+        -   poetry
+        -   pipenv
+        -   anaconda
 
 ### The Zen of Python
 
@@ -805,8 +805,8 @@ _Return to the Top_
 
 When creating a function using the def statement, you can specify what the return value should be with a return statement. A return statement consists of the following:
 
-* The return keyword.
-* The value or expression that the function should return.
+-   The return keyword.
+-   The value or expression that the function should return.
 
 ```python
 import random
@@ -875,10 +875,10 @@ _Return to the Top_
 
 #### Local and Global Scope
 
-* Code in the global scope cannot use any local variables.
-* However, a local scope can access global variables.
-* Code in a function's local scope cannot use variables in any other local scope.
-* You can use the same name for different variables if they are in different scopes. That is, there can be a local variable named spam and a global variable also named spam.
+-   Code in the global scope cannot use any local variables.
+-   However, a local scope can access global variables.
+-   Code in a function's local scope cannot use variables in any other local scope.
+-   You can use the same name for different variables if they are in different scopes. That is, there can be a local variable named spam and a global variable also named spam.
 
 _Return to the Top_
 
@@ -1716,7 +1716,7 @@ KeyError: 3
 {4}
 ```
 
-#### set symetric\_difference
+#### set symetric_difference
 
 `symetric_difference` or `^` will return all the elements that are not common between them.
 
@@ -1830,7 +1830,7 @@ Example:
 
 _Return to the Top_
 
-#### combinations\_with\_replacement()
+#### combinations_with_replacement()
 
 Just like combinations(), but allows individual elements to be repeated more than once.
 
@@ -2222,7 +2222,7 @@ blue
 
 _Return to the Top_
 
-#### zip\_longest()
+#### zip_longest()
 
 Makes an iterator that aggregates elements from each of the iterables. If the iterables are of uneven length, missing values are filled-in with fillvalue. Iteration continues until the longest iterable is exhausted.
 
@@ -2520,11 +2520,11 @@ _Return to the Top_
 
 #### The isX String Methods
 
-* **isalpha()** returns True if the string consists only of letters and is not blank.
-* **isalnum()** returns True if the string consists only of letters and numbers and is not blank.
-* **isdecimal()** returns True if the string consists only of numeric characters and is not blank.
-* **isspace()** returns True if the string consists only of spaces,tabs, and new-lines and is not blank.
-* **istitle()** returns True if the string consists only of words that begin with an uppercase letter followed by only lowercase letters.
+-   **isalpha()** returns True if the string consists only of letters and is not blank.
+-   **isalnum()** returns True if the string consists only of letters and numbers and is not blank.
+-   **isdecimal()** returns True if the string consists only of numeric characters and is not blank.
+-   **isspace()** returns True if the string consists only of spaces,tabs, and new-lines and is not blank.
+-   **istitle()** returns True if the string consists only of words that begin with an uppercase letter followed by only lowercase letters.
 
 _Return to the Top_
 
@@ -3008,8 +3008,8 @@ In addition to the search() method, Regex objects also have a findall() method. 
 
 To summarize what the findall() method returns, remember the following:
 
-* When called on a regex with no groups, such as \d-\d\d\d-\d\d\d\d, the method findall() returns a list of ng matches, such as \['415-555-9999', '212-555-0000'].
-* When called on a regex that has groups, such as (\d\d\d)-(d\d)-(\d\d\d\d), the method findall() returns a list of es of strings (one string for each group), such as \[('415', '555', '9999'), ('212', '555', '0000')].
+-   When called on a regex with no groups, such as \d-\d\d\d-\d\d\d\d, the method findall() returns a list of ng matches, such as \['415-555-9999', '212-555-0000'].
+-   When called on a regex that has groups, such as (\d\d\d)-(d\d)-(\d\d\d\d), the method findall() returns a list of es of strings (one string for each group), such as \[('415', '555', '9999'), ('212', '555', '0000')].
 
 _Return to the Top_
 
@@ -3040,9 +3040,9 @@ _Return to the Top_
 
 #### The Caret and Dollar Sign Characters
 
-* You can also use the caret symbol (^) at the start of a regex to indicate that a match must occur at the beginning of the searched text.
-* Likewise, you can put a dollar sign ($) at the end of the regex to indicate the string must end with this regex pattern.
-* And you can use the ^ and $ together to indicate that the entire string must match the regex—that is, it's not enough for a match to be made on some subset of the string.
+-   You can also use the caret symbol (^) at the start of a regex to indicate that a match must occur at the beginning of the searched text.
+-   Likewise, you can put a dollar sign ($) at the end of the regex to indicate the string must end with this regex pattern.
+-   And you can use the ^ and $ together to indicate that the entire string must match the regex—that is, it's not enough for a match to be made on some subset of the string.
 
 The r'^Hello' regular expression string matches strings that begin with 'Hello':
 
@@ -3375,8 +3375,8 @@ _Return to the Top_
 
 There are two ways to specify a file path.
 
-* An absolute path, which always begins with the root folder
-* A relative path, which is relative to the program's current working directory
+-   An absolute path, which always begins with the root folder
+-   A relative path, which is relative to the program's current working directory
 
 There are also the dot (.) and dot-dot (..) folders. These are not real folders but special names that can be used in a path. A single period ("dot") for a folder name is shorthand for "this directory." Two periods ("dot-dot") means "the parent folder."
 
@@ -3675,9 +3675,9 @@ _Return to the Top_
 
 #### Permanently Deleting Files and Folders
 
-* Calling os.unlink(path) or Path.unlink() will delete the file at path.
-* Calling os.rmdir(path) or Path.rmdir() will delete the folder at path. This folder must be empty of any files or folders.
-* Calling shutil.rmtree(path) will remove the folder at path, and all files and folders it contains will also be deleted.
+-   Calling os.unlink(path) or Path.unlink() will delete the file at path.
+-   Calling os.rmdir(path) or Path.rmdir() will delete the folder at path. This folder must be empty of any files or folders.
+-   Calling shutil.rmtree(path) will remove the folder at path, and all files and folders it contains will also be deleted.
 
 _Return to the Top_
 
@@ -3929,8 +3929,8 @@ Compared to JSON, YAML allows for much better human maintainability and gives yo
 
 There are two main libraries allowing to access to YAML files:
 
-* [PyYaml](https://pypi.python.org/pypi/PyYAML)
-* [Ruamel.yaml](https://pypi.python.org/pypi/ruamel.yaml)
+-   [PyYaml](https://pypi.python.org/pypi/PyYAML)
+-   [Ruamel.yaml](https://pypi.python.org/pypi/ruamel.yaml)
 
 Install them using `pip install` in your virtual environment.
 
@@ -3974,9 +3974,9 @@ _Return to the Top_
 
 Exceptions are raised with a raise statement. In code, a raise statement consists of the following:
 
-* The raise keyword
-* A call to the Exception() function
-* A string with a helpful error message passed to the Exception() function
+-   The raise keyword
+-   A call to the Exception() function
+-   A string with a helpful error message passed to the Exception() function
 
 ```python
 >>> raise Exception('This is the error message.')
@@ -4011,7 +4011,7 @@ _Return to the Top_
 
 #### Getting the Traceback as a String
 
-The traceback is displayed by Python whenever a raised exception goes unhandled. But can also obtain it as a string by calling traceback.format\_exc(). This function is useful if you want the information from an exception's traceback but also want an except statement to gracefully handle the exception. You will need to import Python's traceback module before calling this function.
+The traceback is displayed by Python whenever a raised exception goes unhandled. But can also obtain it as a string by calling traceback.format_exc(). This function is useful if you want the information from an exception's traceback but also want an except statement to gracefully handle the exception. You will need to import Python's traceback module before calling this function.
 
 ```python
 >>> import traceback
@@ -4040,10 +4040,10 @@ _Return to the Top_
 
 An assertion is a sanity check to make sure your code isn't doing something obviously wrong. These sanity checks are performed by assert statements. If the sanity check fails, then an AssertionError exception is raised. In code, an assert statement consists of the following:
 
-* The assert keyword
-* A condition (that is, an expression that evaluates to True or False)
-* A comma
-* A string to display when the condition is False
+-   The assert keyword
+-   A condition (that is, an expression that evaluates to True or False)
+-   A comma
+-   A string to display when the condition is False
 
 ```python
 >>> pod_bay_door_status = 'open'
@@ -4448,7 +4448,7 @@ python setup.py install
 
 and module will install itself.
 
-Our initial setup.py will also include information about the license and will re-use the README.txt file for the long\_description field. This will look like:
+Our initial setup.py will also include information about the license and will re-use the README.txt file for the long_description field. This will look like:
 
 ```python
 >>> from distutils.core import setup
@@ -4552,6 +4552,7 @@ _Return to the Top_
     ```
     pip install virtualenv
     ```
+
 2.  Install virtualenvwrapper-win (Windows)
 
     ```
@@ -4567,6 +4568,7 @@ Usage:
     ```
 
     Anything we install now will be specific to this project. And available to the projects we connect to this environment.
+
 2.  Set Project Directory
 
     To bind our virtualenv with our current working directory we simply enter:
@@ -4574,6 +4576,7 @@ Usage:
     ```
     setprojectdir .
     ```
+
 3.  Deactivate
 
     To move onto something else in the command line type ‘deactivate' to deactivate your environment.
@@ -4583,6 +4586,7 @@ Usage:
     ```
 
     Notice how the parenthesis disappear.
+
 4.  Workon
 
     Open up the command prompt and type ‘workon HelloWold' to activate the environment and move into your root project folder
@@ -4602,6 +4606,7 @@ _Return to the Top_
     ```
     pip install --user poetry
     ```
+
 2.  Create a new project
 
     ```
@@ -4636,6 +4641,7 @@ _Return to the Top_
     [tool.poetry.dev-dependencies]
     pytest = "^3.4"
     ```
+
 3.  Packages
 
     To add dependencies to your project, you can specify them in the tool.poetry.dependencies section:
@@ -4676,6 +4682,7 @@ _Return to the Top_
     ```
     pip install pipenv
     ```
+
 2.  Enter your Project directory and install the Packages for your project
 
     ```
@@ -4684,16 +4691,19 @@ _Return to the Top_
     ```
 
     Pipenv will install your package and create a Pipfile for you in your project's directory. The Pipfile is used to track which dependencies your project needs in case you need to re-install them.
+
 3.  Uninstall Packages
 
     ```
     pipenv uninstall <package>
     ```
+
 4.  Activate the Virtual Environment associated with your Python project
 
     ```
     pipenv shell
     ```
+
 5.  Exit the Virtual Environment
 
     ```
@@ -4717,6 +4727,7 @@ Usage:
     ```
     conda create -n HelloWorld
     ```
+
 2.  To use the Virtual Environment, activate it by:
 
     ```
@@ -4724,6 +4735,7 @@ Usage:
     ```
 
     Anything installed now will be specific to the project HelloWorld
+
 3.  Exit the Virtual Environment
 
     ```
@@ -4732,7 +4744,7 @@ Usage:
 
 _Return to the Top_
 
-```
+````
 ## Python Cheatsheet
 
 - [About](#about)
@@ -4956,7 +4968,7 @@ Although never is often better than *right* now.
 If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
-```
+````
 
 _Return to the Top_
 
@@ -5538,8 +5550,8 @@ _Return to the Top_
 
 When creating a function using the def statement, you can specify what the return value should be with a return statement. A return statement consists of the following:
 
-* The return keyword.
-* The value or expression that the function should return.
+-   The return keyword.
+-   The value or expression that the function should return.
 
 ```python
 import random
@@ -5608,10 +5620,10 @@ _Return to the Top_
 
 ### Local and Global Scope
 
-* Code in the global scope cannot use any local variables.
-* However, a local scope can access global variables.
-* Code in a function's local scope cannot use variables in any other local scope.
-* You can use the same name for different variables if they are in different scopes. That is, there can be a local variable named spam and a global variable also named spam.
+-   Code in the global scope cannot use any local variables.
+-   However, a local scope can access global variables.
+-   Code in a function's local scope cannot use variables in any other local scope.
+-   You can use the same name for different variables if they are in different scopes. That is, there can be a local variable named spam and a global variable also named spam.
 
 _Return to the Top_
 
@@ -6449,7 +6461,7 @@ KeyError: 3
 {4}
 ```
 
-### set symetric\_difference
+### set symetric_difference
 
 `symetric_difference` or `^` will return all the elements that are not common between them.
 
@@ -6563,7 +6575,7 @@ Example:
 
 _Return to the Top_
 
-### combinations\_with\_replacement()
+### combinations_with_replacement()
 
 Just like combinations(), but allows individual elements to be repeated more than once.
 
@@ -6955,7 +6967,7 @@ blue
 
 _Return to the Top_
 
-### zip\_longest()
+### zip_longest()
 
 Makes an iterator that aggregates elements from each of the iterables. If the iterables are of uneven length, missing values are filled-in with fillvalue. Iteration continues until the longest iterable is exhausted.
 
@@ -7253,11 +7265,11 @@ _Return to the Top_
 
 ### The isX String Methods
 
-* **isalpha()** returns True if the string consists only of letters and is not blank.
-* **isalnum()** returns True if the string consists only of letters and numbers and is not blank.
-* **isdecimal()** returns True if the string consists only of numeric characters and is not blank.
-* **isspace()** returns True if the string consists only of spaces,tabs, and new-lines and is not blank.
-* **istitle()** returns True if the string consists only of words that begin with an uppercase letter followed by only lowercase letters.
+-   **isalpha()** returns True if the string consists only of letters and is not blank.
+-   **isalnum()** returns True if the string consists only of letters and numbers and is not blank.
+-   **isdecimal()** returns True if the string consists only of numeric characters and is not blank.
+-   **isspace()** returns True if the string consists only of spaces,tabs, and new-lines and is not blank.
+-   **istitle()** returns True if the string consists only of words that begin with an uppercase letter followed by only lowercase letters.
 
 _Return to the Top_
 
@@ -7741,8 +7753,8 @@ In addition to the search() method, Regex objects also have a findall() method. 
 
 To summarize what the findall() method returns, remember the following:
 
-* When called on a regex with no groups, such as \d-\d\d\d-\d\d\d\d, the method findall() returns a list of ng matches, such as \['415-555-9999', '212-555-0000'].
-* When called on a regex that has groups, such as (\d\d\d)-(d\d)-(\d\d\d\d), the method findall() returns a list of es of strings (one string for each group), such as \[('415', '555', '9999'), ('212', '555', '0000')].
+-   When called on a regex with no groups, such as \d-\d\d\d-\d\d\d\d, the method findall() returns a list of ng matches, such as \['415-555-9999', '212-555-0000'].
+-   When called on a regex that has groups, such as (\d\d\d)-(d\d)-(\d\d\d\d), the method findall() returns a list of es of strings (one string for each group), such as \[('415', '555', '9999'), ('212', '555', '0000')].
 
 _Return to the Top_
 
@@ -7773,9 +7785,9 @@ _Return to the Top_
 
 ### The Caret and Dollar Sign Characters
 
-* You can also use the caret symbol (^) at the start of a regex to indicate that a match must occur at the beginning of the searched text.
-* Likewise, you can put a dollar sign ($) at the end of the regex to indicate the string must end with this regex pattern.
-* And you can use the ^ and $ together to indicate that the entire string must match the regex—that is, it's not enough for a match to be made on some subset of the string.
+-   You can also use the caret symbol (^) at the start of a regex to indicate that a match must occur at the beginning of the searched text.
+-   Likewise, you can put a dollar sign ($) at the end of the regex to indicate the string must end with this regex pattern.
+-   And you can use the ^ and $ together to indicate that the entire string must match the regex—that is, it's not enough for a match to be made on some subset of the string.
 
 The r'^Hello' regular expression string matches strings that begin with 'Hello':
 
@@ -8108,8 +8120,8 @@ _Return to the Top_
 
 There are two ways to specify a file path.
 
-* An absolute path, which always begins with the root folder
-* A relative path, which is relative to the program's current working directory
+-   An absolute path, which always begins with the root folder
+-   A relative path, which is relative to the program's current working directory
 
 There are also the dot (.) and dot-dot (..) folders. These are not real folders but special names that can be used in a path. A single period ("dot") for a folder name is shorthand for "this directory." Two periods ("dot-dot") means "the parent folder."
 
@@ -8408,9 +8420,9 @@ _Return to the Top_
 
 ### Permanently Deleting Files and Folders
 
-* Calling os.unlink(path) or Path.unlink() will delete the file at path.
-* Calling os.rmdir(path) or Path.rmdir() will delete the folder at path. This folder must be empty of any files or folders.
-* Calling shutil.rmtree(path) will remove the folder at path, and all files and folders it contains will also be deleted.
+-   Calling os.unlink(path) or Path.unlink() will delete the file at path.
+-   Calling os.rmdir(path) or Path.rmdir() will delete the folder at path. This folder must be empty of any files or folders.
+-   Calling shutil.rmtree(path) will remove the folder at path, and all files and folders it contains will also be deleted.
 
 _Return to the Top_
 
@@ -8662,8 +8674,8 @@ Compared to JSON, YAML allows for much better human maintainability and gives yo
 
 There are two main libraries allowing to access to YAML files:
 
-* [PyYaml](https://pypi.python.org/pypi/PyYAML)
-* [Ruamel.yaml](https://pypi.python.org/pypi/ruamel.yaml)
+-   [PyYaml](https://pypi.python.org/pypi/PyYAML)
+-   [Ruamel.yaml](https://pypi.python.org/pypi/ruamel.yaml)
 
 Install them using `pip install` in your virtual environment.
 
@@ -8707,9 +8719,9 @@ _Return to the Top_
 
 Exceptions are raised with a raise statement. In code, a raise statement consists of the following:
 
-* The raise keyword
-* A call to the Exception() function
-* A string with a helpful error message passed to the Exception() function
+-   The raise keyword
+-   A call to the Exception() function
+-   A string with a helpful error message passed to the Exception() function
 
 ```python
 >>> raise Exception('This is the error message.')
@@ -8744,7 +8756,7 @@ _Return to the Top_
 
 ### Getting the Traceback as a String
 
-The traceback is displayed by Python whenever a raised exception goes unhandled. But can also obtain it as a string by calling traceback.format\_exc(). This function is useful if you want the information from an exception's traceback but also want an except statement to gracefully handle the exception. You will need to import Python's traceback module before calling this function.
+The traceback is displayed by Python whenever a raised exception goes unhandled. But can also obtain it as a string by calling traceback.format_exc(). This function is useful if you want the information from an exception's traceback but also want an except statement to gracefully handle the exception. You will need to import Python's traceback module before calling this function.
 
 ```python
 >>> import traceback
@@ -8773,10 +8785,10 @@ _Return to the Top_
 
 An assertion is a sanity check to make sure your code isn't doing something obviously wrong. These sanity checks are performed by assert statements. If the sanity check fails, then an AssertionError exception is raised. In code, an assert statement consists of the following:
 
-* The assert keyword
-* A condition (that is, an expression that evaluates to True or False)
-* A comma
-* A string to display when the condition is False
+-   The assert keyword
+-   A condition (that is, an expression that evaluates to True or False)
+-   A comma
+-   A string to display when the condition is False
 
 ```python
 >>> pod_bay_door_status = 'open'
@@ -9181,7 +9193,7 @@ python setup.py install
 
 and module will install itself.
 
-Our initial setup.py will also include information about the license and will re-use the README.txt file for the long\_description field. This will look like:
+Our initial setup.py will also include information about the license and will re-use the README.txt file for the long_description field. This will look like:
 
 ```python
 >>> from distutils.core import setup
@@ -9285,6 +9297,7 @@ _Return to the Top_
     ```
     pip install virtualenv
     ```
+
 2.  Install virtualenvwrapper-win (Windows)
 
     ```
@@ -9300,6 +9313,7 @@ Usage:
     ```
 
     Anything we install now will be specific to this project. And available to the projects we connect to this environment.
+
 2.  Set Project Directory
 
     To bind our virtualenv with our current working directory we simply enter:
@@ -9307,6 +9321,7 @@ Usage:
     ```
     setprojectdir .
     ```
+
 3.  Deactivate
 
     To move onto something else in the command line type ‘deactivate' to deactivate your environment.
@@ -9316,6 +9331,7 @@ Usage:
     ```
 
     Notice how the parenthesis disappear.
+
 4.  Workon
 
     Open up the command prompt and type ‘workon HelloWold' to activate the environment and move into your root project folder
@@ -9335,6 +9351,7 @@ _Return to the Top_
     ```
     pip install --user poetry
     ```
+
 2.  Create a new project
 
     ```
@@ -9369,6 +9386,7 @@ _Return to the Top_
     [tool.poetry.dev-dependencies]
     pytest = "^3.4"
     ```
+
 3.  Packages
 
     To add dependencies to your project, you can specify them in the tool.poetry.dependencies section:
@@ -9409,6 +9427,7 @@ _Return to the Top_
     ```
     pip install pipenv
     ```
+
 2.  Enter your Project directory and install the Packages for your project
 
     ```
@@ -9417,16 +9436,19 @@ _Return to the Top_
     ```
 
     Pipenv will install your package and create a Pipfile for you in your project's directory. The Pipfile is used to track which dependencies your project needs in case you need to re-install them.
+
 3.  Uninstall Packages
 
     ```
     pipenv uninstall <package>
     ```
+
 4.  Activate the Virtual Environment associated with your Python project
 
     ```
     pipenv shell
     ```
+
 5.  Exit the Virtual Environment
 
     ```
@@ -9450,6 +9472,7 @@ Usage:
     ```
     conda create -n HelloWorld
     ```
+
 2.  To use the Virtual Environment, activate it by:
 
     ```
@@ -9457,6 +9480,7 @@ Usage:
     ```
 
     Anything installed now will be specific to the project HelloWorld
+
 3.  Exit the Virtual Environment
 
     ```
@@ -9466,4 +9490,5 @@ Usage:
 _Return to the Top_
 
 ```
+
 ```

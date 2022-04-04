@@ -79,10 +79,7 @@ st.on('data' /*...*/);
 
 ---
 
-
 ```js
-
-
 function clock() {
     const stream = new Readable({
         objectMode: true,
@@ -106,10 +103,7 @@ Readable streams are generators of data. Write data using `stream.push()`.
 
 ---
 
-
 ```js
-
-
 function xformer() {
     let count = 0;
 
@@ -128,10 +122,7 @@ Pass the updated chunk to `done(null, chunk)`.
 
 ---
 
-
 ```js
-
-
 function renderer() {
     return new Writable({
         objectMode: true,

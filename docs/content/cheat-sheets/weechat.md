@@ -1,7 +1,6 @@
 ---
 title: Weechat
 category: Apps
-
 ---
 
 ## Keys

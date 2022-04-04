@@ -60,7 +60,6 @@ fastify.register(require('./route'));
 
 ---
 
-
 ```js
 
 

@@ -3,8 +3,10 @@
 #### Heading kerning pairs and ligature
 
 ```css
-h1, h2, h3 {
-  text-rendering: optimizeLegibility;
+h1,
+h2,
+h3 {
+    text-rendering: optimizeLegibility;
 }
 ```
 
@@ -42,18 +44,19 @@ document.ontouchstart = (e) ->
 
 ```scss
 %ios-scrollable {
-  &, >div {
-    -webkit-overflow-scrolling: touch;
-    overflow: auto;
-  }
+    &,
+    > div {
+        -webkit-overflow-scrolling: touch;
+        overflow: auto;
+    }
 
-  >div {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
+    > div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
 }
 ```
 
@@ -63,14 +66,14 @@ Relevant in iOS6, but maybe not anymore.
 
 ```css
 * {
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-  -webkit-user-select: none;                /* disable text select */
-  -webkit-touch-callout: none;              /* disable callout, image save panel (popup) */
-  -webkit-tap-highlight-color: transparent; /* "turn off" link highlight */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-user-select: none; /* disable text select */
+    -webkit-touch-callout: none; /* disable callout, image save panel (popup) */
+    -webkit-tap-highlight-color: transparent; /* "turn off" link highlight */
 }
 
 a:focus {
-  outline: 0; // Firefox (remove border on link click)
+    outline: 0; // Firefox (remove border on link click)
 }
 ```
 
@@ -88,7 +91,9 @@ Not recommended, but here they are if you ever need them. Note that vendor prefi
 
 ```css
 @-moz-document url-prefix() {
-  .box { color: blue; }
+    .box {
+        color: blue;
+    }
 }
 ```
 

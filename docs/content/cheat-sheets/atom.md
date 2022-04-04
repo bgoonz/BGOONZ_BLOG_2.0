@@ -26,7 +26,7 @@ category: Apps
 ### Tree
 
 | Shortcut | Description         |
-|----------|---------------------|
+| -------- | ------------------- |
 | `⌘\`     | Toggle tree         |
 | `⌘⇧\`    | Reveal current file |
 
@@ -35,7 +35,7 @@ category: Apps
 ### Comments
 
 | Shortcut | Description     |
-|----------|-----------------|
+| -------- | --------------- |
 | `⌘/`     | Toggle comments |
 
 {: .-shortcuts}
@@ -43,7 +43,7 @@ category: Apps
 ### View
 
 | Shortcut | Description            |
-|----------|------------------------|
+| -------- | ---------------------- |
 | `⌘k` `←` | Split pane to the left |
 | ---      | ---                    |
 | `⌘⌥=`    | Grow pane              |
@@ -56,7 +56,7 @@ category: Apps
 ### Bracket matcher
 
 | Shortcut | Description                    |
-|----------|--------------------------------|
+| -------- | ------------------------------ |
 | `^m`     | Go to matching bracket         |
 | `^]`     | Remove brackets from selection |
 | `^⌘m`    | Select inside brackets         |
@@ -67,7 +67,7 @@ category: Apps
 ### Symbols view
 
 | Shortcut | Description                      |
-|----------|----------------------------------|
+| -------- | -------------------------------- |
 | `^⌥↓`    | Jump to declaration under cursor |
 | `^⇧r`    | Show tags                        |
 
@@ -86,7 +86,7 @@ See: [Symbols view](https://atom.io/packages/symbols-view)
 ### Editing
 
 | Shortcut | Description    |
-|----------|----------------|
+| -------- | -------------- |
 | `⌘d`     | Select word    |
 | `⌘l`     | Select line    |
 | ---      | ---            |
@@ -104,7 +104,7 @@ See: [Symbols view](https://atom.io/packages/symbols-view)
 ### Project
 
 | Shortcut | Description             |
-|----------|-------------------------|
+| -------- | ----------------------- |
 | `⌘⇧p`    | Command palette         |
 | `⌘⇧a`    | Add project folder      |
 | ---      | ---                     |
@@ -121,10 +121,10 @@ See: [Symbols view](https://atom.io/packages/symbols-view)
 
 ### ⌘
 
-- For Windows and Linux, `⌘` is the `Control` key.
-- For macOS, it's the `Command` key.
+-   For Windows and Linux, `⌘` is the `Control` key.
+-   For macOS, it's the `Command` key.
 
 ### ⌥
 
-- For Windows and Linux, `⌥` is the `Alt` key.
-- For macOS, it's the `Option` key.
+-   For Windows and Linux, `⌥` is the `Alt` key.
+-   For macOS, it's the `Option` key.

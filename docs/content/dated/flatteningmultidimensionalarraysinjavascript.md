@@ -1,6 +1,6 @@
 tip-writer-support: https://www.coinbase.com/loverajoel
 
-- /en/flattening-multidimensional-arrays-in-javascript/
+-   /en/flattening-multidimensional-arrays-in-javascript/
 
 These are the three known ways to merge multidimensional array into a single array.
 

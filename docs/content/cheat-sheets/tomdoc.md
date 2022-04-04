@@ -1,7 +1,6 @@
 ---
 title: Tomdoc
 category: Markup
-
 ---
 
 ### Tomdoc

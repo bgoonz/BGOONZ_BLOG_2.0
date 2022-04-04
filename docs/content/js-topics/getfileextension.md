@@ -27,10 +27,7 @@ function getFileExtension(filename) {
 
 ---
 
-
 ```js
-
-
 function getFileExtension1(filename) {
     return /[.]/.exec(filename) ? /[^.]+$/.exec(filename)[0] : undefined;
 }
@@ -40,10 +37,7 @@ function getFileExtension1(filename) {
 
 ---
 
-
 ```js
-
-
 function getFileExtension2(filename) {
     return filename.split('.').pop();
 }
@@ -55,10 +49,7 @@ Those two solutions couldnot handle some edge cases, here is another more robust
 
 ---
 
-
 ```js
-
-
 function getFileExtension3(filename) {
     return filename.slice(((filename.lastIndexOf('.') - 1) >>> 0) + 2);
 }
@@ -79,7 +70,7 @@ _How does it works?_
 ### Comparison
 
 | Solution                                  |                                          Paramters                                          |                                Results                                |
-|-------------------------------------------|:-------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------:|
+| ----------------------------------------- | :-----------------------------------------------------------------------------------------: | :-------------------------------------------------------------------: |
 | Solution 1: Regular Expression            | ''<br> 'filename' <br> 'filename.txt' <br> '.hiddenfile' <br> 'filename.with.many.dots.ext' | undefined <br> undefined <br> 'txt' <br> 'hiddenfile' <br> 'ext' <br> |
 | Solution 2: String `split`                | ''<br> 'filename' <br> 'filename.txt' <br> '.hiddenfile' <br> 'filename.with.many.dots.ext' |    '' <br> 'filename' <br> 'txt' <br> 'hiddenfile' <br> 'ext' <br>    |
 | Solution 3: String `slice`, `lastIndexOf` | ''<br> 'filename' <br> 'filename.txt' <br> '.hiddenfile' <br> 'filename.with.many.dots.ext' |             '' <br> '' <br> 'txt' <br> '' <br> 'ext' <br>             |

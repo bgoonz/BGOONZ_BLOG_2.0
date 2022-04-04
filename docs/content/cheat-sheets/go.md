@@ -79,8 +79,8 @@ msg := "Hello"
 
 ### Constants
 
-```go
-const Phi = 1.618 
+````go
+const Phi = 1.618
 ```js
 
 constants can be character, string, boolean, or numeric values.
@@ -93,7 +93,7 @@ See: [Constants](https://tour.golang.org/basics/15)
 
 ```go
 str := "Hello"
-```
+````
 
 ```go
 str := `Multiline

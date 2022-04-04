@@ -59,5 +59,5 @@ intro: |
 
 ## Also see
 
-- [rTorrent website](https://rakshasa.github.io/rtorrent/) _(rakshasa.github.io)_
-- [rTorrent wiki](https://github.com/rakshasa/rtorrent/wiki) _(github.com)_
+-   [rTorrent website](https://rakshasa.github.io/rtorrent/) _(rakshasa.github.io)_
+-   [rTorrent wiki](https://github.com/rakshasa/rtorrent/wiki) _(github.com)_

@@ -8,10 +8,7 @@ want to print.
 
 ---
 
-
 ```js
-
-
 function tap(x) {
     console.log(x);
     return x;
@@ -58,10 +55,7 @@ that's why the function was returning nothing.
 
 ---
 
-
 ```js
-
-
 function tap(x, fn = (x) => x) {
     console.log(fn(x));
     return x;

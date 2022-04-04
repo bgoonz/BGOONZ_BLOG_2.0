@@ -96,4 +96,4 @@ See: Git log format cheatsheet
 
 ### Also see
 
-* Git log format cheatsheet
+-   Git log format cheatsheet

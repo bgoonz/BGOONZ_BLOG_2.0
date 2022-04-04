@@ -1,5 +1,5 @@
 ---
-title: 
+title:
 weight: 0
 excerpt: resources
 seo:

@@ -31,10 +31,7 @@ Uncurried add()
 
 ---
 
-
 ```js
-
-
 function add(x, y) {
     return x + y;
 }
@@ -46,10 +43,7 @@ Curried add()
 
 ---
 
-
 ```js
-
-
 function addC(x) {
     return function (y) {
         return x + y;
@@ -69,10 +63,7 @@ Javascript Code:
 
 ---
 
-
 ```js
-
-
 function curry(f) {
     return function (x) {
         return function (y) {
@@ -98,10 +89,7 @@ For example: Binding the first argument of function add to 5 produces the functi
 
 ---
 
-
 ```js
-
-
 function plus5(y) {
     return 5 + y;
 }
@@ -119,10 +107,7 @@ Javascript Code:
 
 ---
 
-
 ```js
-
-
 function partApply(f, x) {
     return function (y) {
         return f(x, y);

@@ -5,7 +5,7 @@ Googling Cheat Sheet
 ### Search filters
 
 | Filter                                  | Description                                                                                       | Example                                               |
-|-----------------------------------------|---------------------------------------------------------------------------------------------------|-------------------------------------------------------|
+| --------------------------------------- | ------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
 | allintext                               | Searches for occurrences of all the keywords given.                                               | `allintext:"keyword"`                                 |
 | intext                                  | Searches for the occurrences of keywords all at once or one at a time.                            | `intext:"keyword"`                                    |
 | inurl                                   | Searches for a URL matching one of the keywords.                                                  | `inurl:"keyword"`                                     |

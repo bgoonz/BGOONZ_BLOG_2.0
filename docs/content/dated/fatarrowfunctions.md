@@ -4,8 +4,8 @@ Introduced as a new feature in ES6, fat arrow functions may come as a handy tool
 
 ### What are the benefits?
 
-- Syntax: fewer LOC; no more typing `function` keyword over and over again
-- Semantics: capturing the keyword `this` from the surrounding context
+-   Syntax: fewer LOC; no more typing `function` keyword over and over again
+-   Semantics: capturing the keyword `this` from the surrounding context
 
 ### Simple syntax example
 

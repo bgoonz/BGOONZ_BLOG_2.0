@@ -11,7 +11,7 @@ title: iOS Provisioning Profiles
 ### Requirements
 
 | What            | Dev | Adhoc | Appstore |
-|-----------------|-----|-------|----------|
+| --------------- | --- | ----- | -------- |
 | CSR file        |     | √     | √        |
 | Device UDIDs    | √   | √     |          |
 | Developers list | √   |       |          |

@@ -12,4 +12,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/thank-you-youre-far-to-kind-249be2cc2b3d" class="p-canonical">Canonical link</a>
 
- August 6, 2021.
+August 6, 2021.

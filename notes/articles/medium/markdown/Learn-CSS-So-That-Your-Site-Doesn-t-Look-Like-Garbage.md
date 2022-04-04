@@ -580,4 +580,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/learn-css-so-that-your-site-doesnt-look-like-garbage-938871b4521a" class="p-canonical">Canonical link</a>
 
- August 31, 2021.
+August 31, 2021.

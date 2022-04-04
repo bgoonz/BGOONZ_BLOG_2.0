@@ -35,10 +35,7 @@ Eg:-
 
 ---
 
-
 ```js
-
-
 function a() {
     console.log('a');
     return 'a';

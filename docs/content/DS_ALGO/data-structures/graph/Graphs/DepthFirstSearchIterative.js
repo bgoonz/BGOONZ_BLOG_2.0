@@ -40,9 +40,11 @@ class GraphUnweightedUndirected {
         return false;
     }
 }
+
 export {
     GraphUnweightedUndirected
 };
+
 // Example
 // const graph = new GraphUnweightedUndirected()
 // graph.addEdge(1, 2)

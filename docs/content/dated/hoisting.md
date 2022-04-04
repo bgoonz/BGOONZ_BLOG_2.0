@@ -2,10 +2,7 @@ Understanding [hoisting](https://developer.mozilla.org/en-US/docs/Web/JavaScript
 
 ---
 
-
 ```js
-
-
 function doTheThing() {
     // ReferenceError: notDeclared is not defined
     console.log(notDeclared);

@@ -6,7 +6,7 @@ export default class DocsMenu extends React.Component {
     render() {
         let site = _.get(this.props, 'site', null);
         let page = _.get(this.props, 'page', null);
-        let root_docs_path = _.get( site, 'data.doc_sections.root_docs_path', null );
+        let root_docs_path = _.get(site, 'data.doc_sections.root_docs_path', null);
         let pageContextProps = this.props.pageContext.pages;
         let root_page = getPage(pageContextProps, root_docs_path);
         return (

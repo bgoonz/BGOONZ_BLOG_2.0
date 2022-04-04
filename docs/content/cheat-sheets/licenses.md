@@ -1,7 +1,6 @@
 ---
 title: Licenses
 section: Development
-
 ---
 
 ## Licenses

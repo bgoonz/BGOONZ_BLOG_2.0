@@ -11,10 +11,7 @@ weight: -1
 
 ---
 
-
 ```js
-
-
 function speak(message) {
     var msg = new SpeechSynthesisUtterance(message);
     var voices = window.speechSynthesis.getVoices();

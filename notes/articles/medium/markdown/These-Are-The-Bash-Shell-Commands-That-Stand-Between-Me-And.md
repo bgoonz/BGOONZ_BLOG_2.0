@@ -62,4 +62,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/these-are-the-bash-shell-commands-that-stand-between-me-and-insanity-984865ba5d1b" class="p-canonical">Canonical link</a>
 
- August 6, 2021.
+August 6, 2021.

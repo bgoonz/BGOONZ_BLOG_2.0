@@ -391,9 +391,9 @@ Class names should be "`[A-Z][A-Za-z0-9]+`" (UpperCamelCase). Inheritance with "
 
 ### Constants
 
-```ruby
+````ruby
 HTTP_ERROR_404 = 404
-HTTP_ERROR_404 = 500    # error 
+HTTP_ERROR_404 = 500    # error
 ```js
 
 constants should be "`[A-Z][A-Za-z0-9_]+`" (UPPER_SNAKECASE). Constants are **not reentrant** and the scope is **global**.
@@ -412,7 +412,7 @@ class Foo
     77
   end
 end
-```
+````
 
 ### Namespaces
 

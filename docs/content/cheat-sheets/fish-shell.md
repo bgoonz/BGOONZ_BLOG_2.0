@@ -27,7 +27,7 @@ weight: -1
 ### Keys
 
 | Shortcut            | Description                 |
-|---------------------|-----------------------------|
+| ------------------- | --------------------------- |
 | `Alt ←` _/_ `Alt →` | Move word                   |
 | `^U`                | Delete to beginning         |
 | `^W`                | Delete to previous `/`      |
@@ -141,7 +141,7 @@ complete \
 ### Conditions
 
 | Condition                                           | Description                                                                                                                                                       |
-|-----------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| --------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `-n __fish_complete_directories STRING DESCRIPTION` | performs path completion on STRING, allowing only directories, and giving them the description DESCRIPTION.                                                       |
 | `-n __fish_complete_path STRING DESCRIPTION`        | performs path completion on STRING, giving them the description DESCRIPTION.                                                                                      |
 | `-n __fish_complete_groups`                         | prints a list of all user groups with the groups members as description.                                                                                          |

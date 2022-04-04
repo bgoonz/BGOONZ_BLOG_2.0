@@ -1,11 +1,11 @@
 # react-examples
 
-```
+````
 ```js
 
 /* *******************************************************************************************
  *
-```
+````
 
 ```js
 
@@ -27,19 +27,19 @@ npm install --save prop-types  // runtime type checking for React props and simi
 
 /\* \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
 
-- REACT
-- https://reactjs.org/docs/react-api.html //------------------------------------------------------------------------------\\
+-   REACT
+-   https://reactjs.org/docs/react-api.html //------------------------------------------------------------------------------\\
 
 \*/
 
 // Create and return a new React element of the given type. // Code written with JSX will be converted to use
 
-```
+````
 ```js
 
 React.createElement().
 // You will not typically invoke
-```
+````
 
 ```js
 

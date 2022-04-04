@@ -625,4 +625,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/the-penultimate-web-developers-cheat-sheet-a02a423139a4" class="p-canonical">Canonical link</a>
 
- August 6, 2021.
+August 6, 2021.

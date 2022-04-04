@@ -6,10 +6,7 @@ The `new` operator in JavaScript is an operator that, under reasonable circumsta
 
 ---
 
-
 ```js
-
-
 function Thing() {
     this.one = 1;
     this.two = 2;
@@ -30,10 +27,7 @@ Now that you get that example, here's where things get a little bit wonky. Let's
 
 ---
 
-
 ```js
-
-
 function Thing() {
     this.one = 1;
     this.two = 2;
@@ -59,10 +53,7 @@ Let's return a non-primitive type instead, something like an object.
 
 ---
 
-
 ```js
-
-
 function Thing() {
     this.one = 1;
     this.two = 2;

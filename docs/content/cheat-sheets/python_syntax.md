@@ -2,9 +2,9 @@
 
 **Python Syntax compared to other programming languages**
 
-- Python was designed to for readability, and has some similarities to the English language with influence from mathematics.
-- Python uses new lines to complete a command, as opposed to other programming languages which often use semicolons or parentheses.
-- Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions and classes. Other programming languages often use curly-brackets for this purpose.
+-   Python was designed to for readability, and has some similarities to the English language with influence from mathematics.
+-   Python uses new lines to complete a command, as opposed to other programming languages which often use semicolons or parentheses.
+-   Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions and classes. Other programming languages often use curly-brackets for this purpose.
 
 ## Python Indentations
 
@@ -39,11 +39,11 @@ Docstrings can be one line, or multiline. Docstrings are also comments:
 Python uses triple quotes at the beginning and end of the docstring:
 
 ```python
-"""This is a 
+"""This is a
 multiline docstring."""
 print("Hello, World!")
 ```
 
 ## References
 
-- [w3schools.com](https://www.w3schools.com/python/python_syntax.asp)
+-   [w3schools.com](https://www.w3schools.com/python/python_syntax.asp)

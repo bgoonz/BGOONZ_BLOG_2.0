@@ -12,10 +12,7 @@ The `void` operator returns an `undefined` value from an evaluated expression, o
 
 ---
 
-
 ```js
-
-
 function getYear() {
     return 2020;
 }

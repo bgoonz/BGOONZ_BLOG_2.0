@@ -47,9 +47,11 @@ class GraphUnweightedUndirectedAdjacencyList {
         return components;
     }
 }
+
 export {
     GraphUnweightedUndirectedAdjacencyList
 };
+
 // Example
 // const graph = new GraphUnweightedUndirectedAdjacencyList()
 // graph.addEdge(1, 2) // Component 1

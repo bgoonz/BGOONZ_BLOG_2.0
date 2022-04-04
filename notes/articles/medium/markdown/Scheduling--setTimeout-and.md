@@ -275,4 +275,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/scheduling-settimeout-and-setinterval-fcb2f40d16f7" class="p-canonical">Canonical link</a>
 
- August 6, 2021.
+August 6, 2021.

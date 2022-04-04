@@ -198,4 +198,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/http-basics-8f02a96a834a" class="p-canonical">Canonical link</a>
 
- August 6, 2021.
+August 6, 2021.

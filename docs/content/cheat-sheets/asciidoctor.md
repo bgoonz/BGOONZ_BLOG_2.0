@@ -41,16 +41,16 @@ Some warning
 
 .Un-ordered list with a title
 
-- list item
+-   list item
     \*\* sub-list item
 
 *   hypen as sub-sub-list item
 
-- that continues at the next line
+-   that continues at the next line
 
 *   {blank}
 
-- ***
+-   ***
     ## complex content of an item
 
 [%reversed,start=4]
@@ -65,9 +65,9 @@ Some warning
 
 # checklist
 
-- [*] checked
-- [x] also checked
-- [ ] not checked
+-   [*] checked
+-   [x] also checked
+-   [ ] not checked
 
 Description list item:: definition
 [horizontal]

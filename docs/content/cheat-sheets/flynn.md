@@ -2,10 +2,10 @@
 
 #### General workflow
 
-* Start a flynn cluster (on amazon or vagrant)
-* `flynn cluster add` to add that cluster
-* `flynn create NAME` in your app
-* `git push flynn master` to deploy
+-   Start a flynn cluster (on amazon or vagrant)
+-   `flynn cluster add` to add that cluster
+-   `flynn create NAME` in your app
+-   `git push flynn master` to deploy
 
 #### Creating a cluster (AWS)
 
@@ -16,10 +16,10 @@ flynn key add  # (adds your pubkey to AWS)
 
 **What it does**
 
-* This creates `XXXX.flynnhub.com`
-* Dashboard in `dashboard.XXXX.flynnhub.com`
-* Use `flynn -a dashboard env get LOGIN_TOKEN` to get login token
-* Apps live in `APP.XXXX.flynnhub.com`
+-   This creates `XXXX.flynnhub.com`
+-   Dashboard in `dashboard.XXXX.flynnhub.com`
+-   Use `flynn -a dashboard env get LOGIN_TOKEN` to get login token
+-   Apps live in `APP.XXXX.flynnhub.com`
 
 #### Using a flynn cluster
 
@@ -91,4 +91,4 @@ flynn meta set foo=baz
 
 ### Also see
 
-* [Flynn website](https://flynn.io) _(flynn.io)_
+-   [Flynn website](https://flynn.io) _(flynn.io)_

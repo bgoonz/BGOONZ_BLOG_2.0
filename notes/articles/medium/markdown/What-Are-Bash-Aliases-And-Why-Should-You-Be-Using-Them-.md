@@ -45,4 +45,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/what-are-bash-aliases-and-why-should-you-be-using-them-30a6cfafdfeb" class="p-canonical">Canonical link</a>
 
- August 31, 2021.
+August 31, 2021.

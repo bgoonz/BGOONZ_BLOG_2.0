@@ -1,7 +1,6 @@
 ---
 title: 'Shell: named pipes'
 category: CLI
-
 ---
 
 ### Named pipes

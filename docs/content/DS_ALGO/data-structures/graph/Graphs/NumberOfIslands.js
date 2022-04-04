@@ -61,9 +61,11 @@ const islands = (matrixGrid) => {
     }
     return counter;
 };
+
 export {
     islands
 };
+
 // islands(
 //   ['1', '1', '0', '0', '0'],
 //   ['1', '1', '0', '0', '0'],

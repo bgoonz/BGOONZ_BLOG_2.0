@@ -323,4 +323,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/vscode-extensions-specifically-for-javascript-development-ea91305cbd4a" class="p-canonical">Canonical link</a>
 
- August 6, 2021.
+August 6, 2021.

@@ -1,6 +1,6 @@
 c
 
-- /en/filtering-and-sorting-a-list-of-strings/
+-   /en/filtering-and-sorting-a-list-of-strings/
 
 You may have a big list of names you need to filter in order to remove duplicates and sort them alphabetically.
 

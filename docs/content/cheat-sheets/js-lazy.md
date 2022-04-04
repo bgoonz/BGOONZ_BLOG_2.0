@@ -1,7 +1,6 @@
 ---
 title: JavaScript lazy shortcuts
 category: JavaScript
-
 ---
 
 ## Shortcuts
@@ -11,8 +10,8 @@ category: JavaScript
 ### Examples
 
 ```js
-n = +"4096"; // n === 4096
-s = "" + 200; // s === '200'
+n = +'4096'; // n === 4096
+s = '' + 200; // s === '200'
 ```
 
 ```js

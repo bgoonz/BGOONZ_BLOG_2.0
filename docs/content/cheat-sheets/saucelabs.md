@@ -1,6 +1,5 @@
 ---
 title: Saucelabs
-
 ---
 
 ### Getting started

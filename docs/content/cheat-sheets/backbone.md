@@ -67,26 +67,26 @@ view.stopListening();
 
 ### List of events
 
-- Collection:
+-   Collection:
 
     -   `add` (model, collection, options)
     -   `remove` (model, collection, options)
     -   `reset` (collection, options)
     -   `sort` (collection, options)
 
-- Model:
+-   Model:
 
     -   `change` (model, options)
     -   `change:[attr]` (model, value, options)
     -   `destroy` (model, collection, options)
     -   `error` (model, xhr, options)
 
-- Model and collection:
+-   Model and collection:
 
     -   `request` (model, xhr, options)
     -   `sync` (model, resp, options)
 
-- Router:
+-   Router:
     -   `route:[name]` (params)
     -   `route` (router, route, params)
 
@@ -293,5 +293,5 @@ var obj = new Model({ urlRoot: ··· })
 
 {: .-one-column}
 
-- [Backbone website](http://backbonejs.org/) _(backbonejs.org)_
-- [Backbone patterns](http://ricostacruz.com/backbone-patterns/) _(ricostacruz.com)_
+-   [Backbone website](http://backbonejs.org/) _(backbonejs.org)_
+-   [Backbone patterns](http://ricostacruz.com/backbone-patterns/) _(ricostacruz.com)_

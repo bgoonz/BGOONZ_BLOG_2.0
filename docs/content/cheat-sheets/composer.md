@@ -33,7 +33,7 @@ All composer commands, depending on your install, may need to use `php composer.
 ### Installing dependencies
 
 | Command                      | Description                                                                                                                                                                                                 |
-|------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ---------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `composer install`           | Downloads and installs all the libraries and dependencies outlined in the `composer.lock` file. If the file does not exist it will look for composer.json and do the same, creating a `composer.lock` file. |
 | ---                          | ---                                                                                                                                                                                                         |
 | `composer install --dry-run` | Simulates the install without installing anything                                                                                                                                                           |
@@ -47,7 +47,7 @@ local dependencies to the last committed state. If that file is modified on the 
 ### Updating packages
 
 | Command                               | Description                                                |
-|---------------------------------------|------------------------------------------------------------|
+| ------------------------------------- | ---------------------------------------------------------- |
 | `composer update`                     | Updates all packages                                       |
 | `composer update --with-dependencies` | Updates all packages and its dependencies                  |
 | ---                                   | ---                                                        |
@@ -60,13 +60,13 @@ This command changes only the `composer.lock` file.
 ### Updating autoloader
 
 | Command                    | Description                        |
-|----------------------------|------------------------------------|
+| -------------------------- | ---------------------------------- |
 | `composer dumpautoload -o` | Generates optimized autoload files |
 
 ### Adding packages
 
 | Command                                 | Description                                                                            |
-|-----------------------------------------|----------------------------------------------------------------------------------------|
+| --------------------------------------- | -------------------------------------------------------------------------------------- |
 | `composer require vendor/package`.      | Adds `package` from `vendor` to composer.json's `require` section and installs it      |
 | ---                                     | ---                                                                                    |
 | `composer require vendor/package --dev` | Adds `package` from `vendor` to composer.json's `require-dev` section and installs it. |
@@ -76,7 +76,7 @@ This command changes both the `composer.json` and `composer.lock` files.
 ### Passing versions
 
 | Command                                         | Description                              |
-|-------------------------------------------------|------------------------------------------|
+| ----------------------------------------------- | ---------------------------------------- |
 | `composer require vendor/pkg "1.3.2"`           | Installs `1.3.2`                         |
 | `composer require vendor/pkg ">=1.3.2"`         | Above or equal `1.3.2`                   |
 | `composer require vendor/pkg "<1.3.2"`          | Below `1.3.2`                            |
@@ -91,7 +91,7 @@ This command changes both the `composer.json` and `composer.lock` files.
 ### Removing packages
 
 | Command                          | Description                                                   |
-|----------------------------------|---------------------------------------------------------------|
+| -------------------------------- | ------------------------------------------------------------- |
 | `composer remove vendor/package` | Removes `vendor/package` from composer.json and uninstalls it |
 
 This command changes both the `composer.json` and `composer.lock` files.

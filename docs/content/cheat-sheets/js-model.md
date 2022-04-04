@@ -80,4 +80,4 @@ project.trigger "turn_blue"
 
 {: .-one-column}
 
-* [http://benpickles.github.io/js-model/](http://benpickles.github.io/js-model/)
+-   [http://benpickles.github.io/js-model/](http://benpickles.github.io/js-model/)

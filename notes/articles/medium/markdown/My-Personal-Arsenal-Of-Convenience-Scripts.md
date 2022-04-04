@@ -1021,3 +1021,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 <a href="https://medium.com/@bryanguner/my-personal-arsenal-of-convenience-scripts-3c7869fdae53" class="p-canonical">Canonical link</a>
 
  August 31, 2021.
+```

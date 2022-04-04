@@ -6,10 +6,7 @@ You just have to concat everything into an array first. `Array.concat` will acce
 
 ---
 
-
 ```js
-
-
 function printUpperCase(words) {
     var elements = [].concat(words || []);
     for (var i = 0; i < elements.length; i++) {

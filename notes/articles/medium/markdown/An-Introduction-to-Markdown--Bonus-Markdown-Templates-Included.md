@@ -148,10 +148,10 @@ This text can be embedded into Markdown:
 
     A double line break, breaks out of the list.
 
-- <span id="7904">Item 1</span>
-- <span id="1cf1">Item 2</span>
-- <span id="ded6">Item 3  
-    This text is part of the third item. Use two spaces at end of the the list item to break the line.</span>
+-   <span id="7904">Item 1</span>
+-   <span id="1cf1">Item 2</span>
+-   <span id="ded6">Item 3  
+     This text is part of the third item. Use two spaces at end of the the list item to break the line.</span>
 
 A double line break, breaks out of the list.
 
@@ -277,4 +277,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/an-introduction-to-markdown-bonus-markdown-templates-included-3497ce56de3" class="p-canonical">Canonical link</a>
 
- August 6, 2021.
+August 6, 2021.

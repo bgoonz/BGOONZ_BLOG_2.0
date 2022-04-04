@@ -438,10 +438,10 @@ Redirection
 
 ### Additional learning resources
 
-- <span id="8e12">You can view a command's documentation right in bash with `man <command name>`.</span>
-- <span id="9b41"><a href="https://www.gnu.org/software/bash/manual/bash.html" class="markup--anchor markup--li-anchor">Official bash manual</a></span>
-- <span id="40a7"><a href="http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html" class="markup--anchor markup--li-anchor">TLDP bash programming intro, basic</a></span>
-- <span id="6515"><a href="http://www.tldp.org/LDP/abs/html/" class="markup--anchor markup--li-anchor">TLDP bash programming intro, advanced</a></span>
+-   <span id="8e12">You can view a command's documentation right in bash with `man <command name>`.</span>
+-   <span id="9b41"><a href="https://www.gnu.org/software/bash/manual/bash.html" class="markup--anchor markup--li-anchor">Official bash manual</a></span>
+-   <span id="40a7"><a href="http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html" class="markup--anchor markup--li-anchor">TLDP bash programming intro, basic</a></span>
+-   <span id="6515"><a href="http://www.tldp.org/LDP/abs/html/" class="markup--anchor markup--li-anchor">TLDP bash programming intro, advanced</a></span>
 
 ---
 
@@ -554,8 +554,8 @@ _The code to be executed if the expression within braces is true can be found af
 
 ### Loops
 
-- <span id="15f6">**_for_**</span>
-- <span id="4000">**_while_**</span>
+-   <span id="15f6">**_for_**</span>
+-   <span id="4000">**_while_**</span>
 
 > (there's another loop called until but I don't use it so you can look it up if you'd like)
 
@@ -1178,14 +1178,14 @@ See <a href="http://wiki.bash-hackers.org/syntax/shellvars#special_parameters_an
 
 {: .-one-column}
 
-- <span id="4581"><a href="http://wiki.bash-hackers.org/" class="markup--anchor markup--li-anchor">Bash-hackers wiki</a> _(bash-hackers.org)_</span>
-- <span id="b6a2"><a href="http://wiki.bash-hackers.org/syntax/shellvars" class="markup--anchor markup--li-anchor">Shell vars</a> _(bash-hackers.org)_</span>
-- <span id="a5d4"><a href="https://learnxinyminutes.com/docs/bash/" class="markup--anchor markup--li-anchor">Learn bash in y minutes</a> _(learnxinyminutes.com)_</span>
-- <span id="007b"><a href="http://mywiki.wooledge.org/BashGuide" class="markup--anchor markup--li-anchor">Bash Guide</a> _(mywiki.wooledge.org)_</span>
-- <span id="f2db"><a href="https://www.shellcheck.net/" class="markup--anchor markup--li-anchor">ShellCheck</a> _(shellcheck.net)_</span>
+-   <span id="4581"><a href="http://wiki.bash-hackers.org/" class="markup--anchor markup--li-anchor">Bash-hackers wiki</a> _(bash-hackers.org)_</span>
+-   <span id="b6a2"><a href="http://wiki.bash-hackers.org/syntax/shellvars" class="markup--anchor markup--li-anchor">Shell vars</a> _(bash-hackers.org)_</span>
+-   <span id="a5d4"><a href="https://learnxinyminutes.com/docs/bash/" class="markup--anchor markup--li-anchor">Learn bash in y minutes</a> _(learnxinyminutes.com)_</span>
+-   <span id="007b"><a href="http://mywiki.wooledge.org/BashGuide" class="markup--anchor markup--li-anchor">Bash Guide</a> _(mywiki.wooledge.org)_</span>
+-   <span id="f2db"><a href="https://www.shellcheck.net/" class="markup--anchor markup--li-anchor">ShellCheck</a> _(shellcheck.net)_</span>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [August 9, 2021](https://medium.com/p/3ec9d4e2e65).
 
 <a href="https://medium.com/@bryanguner/bash-proficiency-in-under-15-minutes-3ec9d4e2e65" class="p-canonical">Canonical link</a>
 
- August 31, 2021.
+August 31, 2021.

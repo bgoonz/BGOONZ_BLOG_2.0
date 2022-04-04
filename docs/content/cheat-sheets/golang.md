@@ -2,11 +2,11 @@
 
 ## Summary
 
-- Introduction
+-   Introduction
     -   [Hello World](#hello-world)
     -   [Go CLI Commands](#go-cli-commands)
     -   [Go Modules](#go-modules)
-- Basic
+-   Basic
     -   [Basic Types](#basic-types)
     -   [Variables](#variables)
     -   [Operators](#operators)
@@ -14,7 +14,7 @@
     -   [Loops](#loops)
     -   [Arrays](#arrays)
     -   [Functions](#functions)
-- Advanced
+-   Advanced
     -   [Structs](#structs)
     -   [Maps](#maps)
     -   [Pointers](#pointers)
@@ -22,7 +22,7 @@
     -   [Errors](#errors)
     -   [Testing](#testing)
     -   [Concurrency](#concurrency)
-- Standard Libs
+-   Standard Libs
     -   [Package fmt](#package-fmt)
 
 ## Hello World
@@ -86,11 +86,11 @@ $ go version
 
 ## Go Modules
 
-- Go projects are called **modules**
-- Each module has multiple **packages**
-- Each package should has a scoped functionality. Packages talk to each other to compose the code
-- A module needs at least one package, the **main**
-- The package main needs a entry function called **main**
+-   Go projects are called **modules**
+-   Each module has multiple **packages**
+-   Each package should has a scoped functionality. Packages talk to each other to compose the code
+-   A module needs at least one package, the **main**
+-   The package main needs a entry function called **main**
 
 ```bash
 # Create Module
@@ -110,7 +110,7 @@ Example: github.com/spf13/cobra
 ## Basic Types
 
 |    Type    |               Set of Values                |                    Values                     |
-|:----------:|:------------------------------------------:|:---------------------------------------------:|
+| :--------: | :----------------------------------------: | :-------------------------------------------: |
 |    bool    |                  boolean                   |                  true/false                   |
 |   string   |            array of characters             |             needs to be inside ""             |
 |    int     |                  integers                  |             32 or 64 bit integer              |
@@ -178,36 +178,36 @@ const pi = 3.1415
 [Return to Summary](#summary)
 
 Arithmetic Operators
-| Symbol |      Operation      |                Valid Types                |
+| Symbol | Operation | Valid Types |
 |:------:|:-------------------:|:-----------------------------------------:|
-|  `+`   |         Sum         | integers, floats, complex values, strings |
-|  `-`   |     Difference      |     integers, floats, complex values      |
-|  `*`   |       Product       |     integers, floats, complex values      |
-|  `/`   |      Quotient       |     integers, floats, complex values      |
-|  `%`   |      Remainder      |                 integers                  |
-|  `&`   |     Bitwise AND     |                 integers                  |
-|  `|`   |     Bitwise OR      |                 integers                  |
-|  `^`   |     Bitwise XOR     |                 integers                  |
-|  `&^`  | Bit clear (AND NOT) |                 integers                  |
-|  `<<`  |     Left shift      |        integer << unsigned integer        |
-|  `>>`  |     Right shift     |        integer >> unsigned integer        |
+| `+` | Sum | integers, floats, complex values, strings |
+| `-` | Difference | integers, floats, complex values |
+| `*` | Product | integers, floats, complex values |
+| `/` | Quotient | integers, floats, complex values |
+| `%` | Remainder | integers |
+| `&` | Bitwise AND | integers |
+| `|` | Bitwise OR | integers |
+| `^` | Bitwise XOR | integers |
+| `&^` | Bit clear (AND NOT) | integers |
+| `<<` | Left shift | integer << unsigned integer |
+| `>>` | Right shift | integer >> unsigned integer |
 
 Comparison Operators
-| Symbol |    Operation     |
+| Symbol | Operation |
 |:------:|:----------------:|
-|  `==`  |      Equal       |
-|  `!=`  |    Not equal     |
-|  `<`   |       Less       |
-|  `<=`  |  Less or equal   |
-|  `>`   |     Greater      |
-|  `>=`  | Greater or equal |
+| `==` | Equal |
+| `!=` | Not equal |
+| `<` | Less |
+| `<=` | Less or equal |
+| `>` | Greater |
+| `>=` | Greater or equal |
 
 Logical Operators
-| Symbol |    Operation    |
+| Symbol | Operation |
 |:------:|:---------------:|
-|  `&&`  | Conditional AND |
-|  `||`  | Conditional OR  |
-|  `!`   |       NOT       |
+| `&&` | Conditional AND |
+| `||` | Conditional OR |
+| `!` | NOT |
 
 [Return to Summary](#summary)
 

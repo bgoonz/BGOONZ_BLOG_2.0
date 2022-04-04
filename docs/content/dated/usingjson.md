@@ -24,10 +24,7 @@ Instead of array we can pass a function also.
 
 ---
 
-
 ```js
-
-
 function selectedProperties(key, val) {
     // the first val will be the entire object, key is empty string
     if (!key) {

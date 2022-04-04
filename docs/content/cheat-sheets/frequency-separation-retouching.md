@@ -1,7 +1,6 @@
 ---
 title: Frequency separation retouching
 category: Others
-
 ---
 
 ### Frequency separation retouching in Photoshop

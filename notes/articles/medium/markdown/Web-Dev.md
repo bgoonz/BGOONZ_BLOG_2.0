@@ -121,4 +121,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/web-dev-resources-ec1975773d7d" class="p-canonical">Canonical link</a>
 
- August 6, 2021.
+August 6, 2021.

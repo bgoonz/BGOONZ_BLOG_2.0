@@ -141,33 +141,33 @@ By default with version npm 5.0+ npm install adds the module to the `dependencie
 
 # Express Cheatsheet
 
-- [Express glossary](#express-glossary)
-    - [application](#application)
-    - [API](#api)
-    - [Express](#express)
-    - [libuv](#libuv)
-    - [middleware](#middleware)
-    - [Node.js](#nodejs)
-    - [open-source, open source](#open-source-open-source)
-    - [request](#request)
-    - [response](#response)
-    - [route](#route)
-- [Installing](#installing)
-- [Express Cheatsheet](#express-cheatsheet)
-  - [Creating an App](#creating-an-app)
-  - [Listening on a port](#listening-on-a-port)
-    - [Using a separate server instance](#using-a-separate-server-instance)
-  - [Middleware](#middleware-1)
-    - [Standard middleware function signature](#standard-middleware-function-signature)
-    - [`app.use`](#appuse)
-    - [Routes - `app.get`, `app.post`, etc](#routes---appget-apppost-etc)
-    - [Router](#router)
-      - [Making a new router](#making-a-new-router)
-      - [Letting app know about the router and it's prefix.](#letting-app-know-about-the-router-and-its-prefix)
-      - [Defining Routes on the Router](#defining-routes-on-the-router)
-  - [Error handling](#error-handling)
-  - [Common Pitfalls](#common-pitfalls)
-    - [Not sending anything back from a route](#not-sending-anything-back-from-a-route)
+-   [Express glossary](#express-glossary)
+    -   [application](#application)
+    -   [API](#api)
+    -   [Express](#express)
+    -   [libuv](#libuv)
+    -   [middleware](#middleware)
+    -   [Node.js](#nodejs)
+    -   [open-source, open source](#open-source-open-source)
+    -   [request](#request)
+    -   [response](#response)
+    -   [route](#route)
+-   [Installing](#installing)
+-   [Express Cheatsheet](#express-cheatsheet)
+    -   [Creating an App](#creating-an-app)
+    -   [Listening on a port](#listening-on-a-port)
+        -   [Using a separate server instance](#using-a-separate-server-instance)
+    -   [Middleware](#middleware-1)
+        -   [Standard middleware function signature](#standard-middleware-function-signature)
+        -   [`app.use`](#appuse)
+        -   [Routes - `app.get`, `app.post`, etc](#routes---appget-apppost-etc)
+        -   [Router](#router)
+            -   [Making a new router](#making-a-new-router)
+            -   [Letting app know about the router and it's prefix.](#letting-app-know-about-the-router-and-its-prefix)
+            -   [Defining Routes on the Router](#defining-routes-on-the-router)
+    -   [Error handling](#error-handling)
+    -   [Common Pitfalls](#common-pitfalls)
+        -   [Not sending anything back from a route](#not-sending-anything-back-from-a-route)
 
 ## Creating an App
 
@@ -276,10 +276,7 @@ As a way of organizing your router, express includes a router object.
 
 #### Making a new router
 
-
 ```jsx
-
-
 const express = require('express');
 const userRouter = express.Router();
 ```

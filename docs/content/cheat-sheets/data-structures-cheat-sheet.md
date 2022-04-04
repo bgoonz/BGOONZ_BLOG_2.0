@@ -4,32 +4,32 @@
 
 Its always good to have a look at worst-case time complexities of common data structure operations frequently.
 
-![Image for post](https://miro.medium.com/max/60/1\*6NpRbTpekXG\_1l5hh1XeIQ.png?q=20)
+![Image for post](https://miro.medium.com/max/60/1*6NpRbTpekXG_1l5hh1XeIQ.png?q=20)
 
-![Image for post](https://miro.medium.com/max/3572/1\*6NpRbTpekXG\_1l5hh1XeIQ.png)
+![Image for post](https://miro.medium.com/max/3572/1*6NpRbTpekXG_1l5hh1XeIQ.png)
 
 Arrays are one of the basic and important data structures to learn, They take constant time to read and Insert elements at the end and takes a linear time for the remaining.
 
-![Image for post](https://miro.medium.com/max/60/1\*vFbcvaNX-aWr5-wERwKFIA.png?q=20)
+![Image for post](https://miro.medium.com/max/60/1*vFbcvaNX-aWr5-wERwKFIA.png?q=20)
 
-![Image for post](https://miro.medium.com/max/3746/1\*vFbcvaNX-aWr5-wERwKFIA.png)
+![Image for post](https://miro.medium.com/max/3746/1*vFbcvaNX-aWr5-wERwKFIA.png)
 
 Stack takes constant time for Push, Pop & Peek operations.
 
-![Image for post](https://miro.medium.com/max/60/1\*HgkpbE06UCWm2G3U54J8ew.png?q=20)
+![Image for post](https://miro.medium.com/max/60/1*HgkpbE06UCWm2G3U54J8ew.png?q=20)
 
-![Image for post](https://miro.medium.com/max/2512/1\*HgkpbE06UCWm2G3U54J8ew.png)
+![Image for post](https://miro.medium.com/max/2512/1*HgkpbE06UCWm2G3U54J8ew.png)
 
 In Queue for Enqueue, Dequeue & Peek operations it takes only Constant time.
 
-![Image for post](https://miro.medium.com/max/60/1\*amq4OYYapQjaN2QXIG5eUw.png?q=20)
+![Image for post](https://miro.medium.com/max/60/1*amq4OYYapQjaN2QXIG5eUw.png?q=20)
 
-![Image for post](https://miro.medium.com/max/3942/1\*amq4OYYapQjaN2QXIG5eUw.png)
+![Image for post](https://miro.medium.com/max/3942/1*amq4OYYapQjaN2QXIG5eUw.png)
 
 Here we are considering we are using tails for all single linked lists (Some implementations might not have it).\
 Linked List is the data structure that comes with a lot of different operational scenarios, we have to think about head & tail usage in every operation we are doing. And operation logic and complexity changes at the head, tail, and middle. Typically insertion at head & tail takes constant time and insertion in middle takes linear time. Search can take linear time. Deletion at the head takes constant time and it can take linear time in remaining scenarios.
 
-***
+---
 
 ## Trees: basic concepts
 
@@ -41,14 +41,14 @@ These data structures are called "trees" because the data structure resembles a 
 
 Here are some properties of trees:
 
-* The top-most node is called **root**.
-* A node without children is called **leaf** node or **terminal** node.
-* **Height** (_h_) of the tree is the distance (edge count) between the farthest leaf to the root.
-  * `A` has a height of 3
-  * `I` has a height of 0
-* **Depth** or **level** of a node is the distance between the root and the node in question.
-  * `H` has a depth of 2
-  * `B` has a depth of 1
+-   The top-most node is called **root**.
+-   A node without children is called **leaf** node or **terminal** node.
+-   **Height** (_h_) of the tree is the distance (edge count) between the farthest leaf to the root.
+    -   `A` has a height of 3
+    -   `I` has a height of 0
+-   **Depth** or **level** of a node is the distance between the root and the node in question.
+    -   `H` has a depth of 2
+    -   `B` has a depth of 1
 
 ### Implementing a simple tree data structure
 
@@ -56,8 +56,8 @@ As we saw earlier, a tree node is just a data structure that has a value and has
 
 Here's an example of a tree node:
 
-| <pre><code>123456</code></pre> | <pre><code>class TreeNode {  constructor(value) {    this.value = value;    this.descendents = [];  }}</code></pre> |
-| ------------------------------ | ------------------------------------------------------------------------------------------------------------------- |
+| <pre><code>123456</code></pre> | <pre><code>class TreeNode { constructor(value) { this.value = value; this.descendents = []; }}</code></pre> |
+| ------------------------------ | ----------------------------------------------------------------------------------------------------------- |
 
 We can create a tree with 3 descendents as follows:
 
@@ -72,12 +72,12 @@ The node `abe` is the **root** and `bart`, `lisa` and `maggie` are the **leaf** 
 
 Tree data structures have many applications such as:
 
-* [Maps](https://adrianmejia.com/blog/2018/04/28/data-structures-time-complexity-for-beginners-arrays-hashmaps-linked-lists-stacks-queues-tutorial/#HashMaps)
-* [Sets](https://adrianmejia.com/blog/2018/04/28/data-structures-time-complexity-for-beginners-arrays-hashmaps-linked-lists-stacks-queues-tutorial/#Sets)
-* Databases
-* Priority Queues
-* Querying an LDAP (Lightweight Directory Access Protocol)
-* Representing the Document Object Model (DOM) for HTML on Websites.
+-   [Maps](https://adrianmejia.com/blog/2018/04/28/data-structures-time-complexity-for-beginners-arrays-hashmaps-linked-lists-stacks-queues-tutorial/#HashMaps)
+-   [Sets](https://adrianmejia.com/blog/2018/04/28/data-structures-time-complexity-for-beginners-arrays-hashmaps-linked-lists-stacks-queues-tutorial/#Sets)
+-   Databases
+-   Priority Queues
+-   Querying an LDAP (Lightweight Directory Access Protocol)
+-   Representing the Document Object Model (DOM) for HTML on Websites.
 
 ## Binary Trees
 
@@ -87,9 +87,9 @@ Trees nodes can have zero or more children. However, when a tree has at the most
 
 Depending on how nodes are arranged in a binary tree, it can be **full**, **complete** and **perfect**:
 
-* **Full binary tree**: each node has exactly 0 or 2 children (but never 1).
-* **Complete binary tree**: when all levels except the last one are **full** with nodes.
-* **Perfect binary tree**: when all the levels (including the last one) are full of nodes.
+-   **Full binary tree**: each node has exactly 0 or 2 children (but never 1).
+-   **Complete binary tree**: when all levels except the last one are **full** with nodes.
+-   **Perfect binary tree**: when all the levels (including the last one) are full of nodes.
 
 Look at these examples:
 
@@ -97,11 +97,11 @@ Look at these examples:
 
 These properties are not always mutually exclusive. You can have more than one:
 
-* A perfect tree is **always** complete and full.
-  * Perfect binary trees have precisely 2k-1 nodes, where _`k`_ is the last level of the tree (starting with 1).
-* A complete tree is **not** always `full`.
-  * Like in our "complete" example, since it has a parent with only one child. If we remove the rightmost gray node, then we would have a **complete** and **full** tree but not perfect.
-* A full tree is not always complete and perfect.
+-   A perfect tree is **always** complete and full.
+    -   Perfect binary trees have precisely 2k-1 nodes, where _`k`_ is the last level of the tree (starting with 1).
+-   A complete tree is **not** always `full`.
+    -   Like in our "complete" example, since it has a parent with only one child. If we remove the rightmost gray node, then we would have a **complete** and **full** tree but not perfect.
+-   A full tree is not always complete and perfect.
 
 ## Binary Search Tree (BST)
 
@@ -115,22 +115,22 @@ Let's implement a Binary Search Tree!
 
 BST are very similar to our previous [implementation of a tree](broken-reference/). However, there are some differences:
 
-* Nodes can have at most, only two children: left and right.
-* Nodes values has to be ordered as `left < parent < right`.
+-   Nodes can have at most, only two children: left and right.
+-   Nodes values has to be ordered as `left < parent < right`.
 
 Here's the tree node. Very similar to what we did before, but we added some handy getters and setters for left and right children. Notice that is also keeping a reference to the parent and we update it every time add children.
 
 TreeNode.js[Code](https://github.com/amejiarosario/dsa.js/blob/master/src/data-structures/trees/tree-node.js)
 
-| <pre><code>1234567891011121314151617181920212223242526272829303132</code></pre> | <pre><code>const LEFT = 0;const RIGHT = 1;class TreeNode {  constructor(value) {    this.value = value;    this.descendents = [];    this.parent = null;  }  get left() {    return this.descendents[LEFT];  }  set left(node) {    this.descendents[LEFT] = node;    if (node) {      node.parent = this;    }  }  get right() {    return this.descendents[RIGHT];  }  set right(node) {    this.descendents[RIGHT] = node;    if (node) {      node.parent = this;    }  }}</code></pre> |
-| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <pre><code>1234567891011121314151617181920212223242526272829303132</code></pre> | <pre><code>const LEFT = 0;const RIGHT = 1;class TreeNode { constructor(value) { this.value = value; this.descendents = []; this.parent = null; } get left() { return this.descendents[LEFT]; } set left(node) { this.descendents[LEFT] = node; if (node) { node.parent = this; } } get right() { return this.descendents[RIGHT]; } set right(node) { this.descendents[RIGHT] = node; if (node) { node.parent = this; } }}</code></pre> |
+| ------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
 Ok, so far we can add a left and right child. Now, let's do the BST class that enforces the `left < parent < right` rule.
 
 BinarySearchTree.js linkUrl linkText
 
-| <pre><code>12345678910111213</code></pre> | <pre><code>class BinarySearchTree {  constructor() {    this.root = null;    this.size = 0;  }  add(value) {  }  find(value) {  }  remove(value) {  }  getMax() {  }  getMin() {  }}</code></pre> |
-| ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <pre><code>12345678910111213</code></pre> | <pre><code>class BinarySearchTree { constructor() { this.root = null; this.size = 0; } add(value) { } find(value) { } remove(value) { } getMax() { } getMin() { }}</code></pre> |
+| ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
 Let's implementing insertion.
 
@@ -168,8 +168,8 @@ We are using a helper function called `findNodeAndParent`. If we found that the 
 
 BinarySearchTree.prototype.findNodeAndParent[Full Code](https://github.com/amejiarosario/dsa.js/blob/master/src/data-structures/trees/binary-search-tree.js#L44)
 
-| <pre><code>1234567891011121314</code></pre> | <pre><code>findNodeAndParent(value) {  let node = this.root;  let parent;  while (node) {    if (node.value === value) {      break;    }    parent = node;    node = ( value >= node.value) ? node.right : node.left;  }  return { found: node, parent };}</code></pre> |
-| ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| <pre><code>1234567891011121314</code></pre> | <pre><code>findNodeAndParent(value) { let node = this.root; let parent; while (node) { if (node.value === value) { break; } parent = node; node = ( value >= node.value) ? node.right : node.left; } return { found: node, parent };}</code></pre> |
+| ------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
 `findNodeAndParent` goes through the tree searching for the value. It starts at the root (line 2) and then goes left or right based on the value (line 10). If the value already exists, it will return the node `found` and also the parent. In case that the node doesn't exist, we still return the `parent`.
 
@@ -179,36 +179,36 @@ We know how to insert and search for value. Now, we are going to implement the d
 
 **Deleting a leaf node (0 children)**
 
-| <pre><code>1234567</code></pre> | <pre><code>    30                             30 /     \         remove(12)     /     \10      40       --------->    10      40  \    /  \                      \    /  \  15  35   50                    15  35   50  /12*</code></pre> |
-| ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <pre><code>1234567</code></pre> | <pre><code> 30 30 / \ remove(12) / \10 40 ---------> 10 40 \ / \ \ / \ 15 35 50 15 35 50 /12\*</code></pre> |
+| ------------------------------- | ----------------------------------------------------------------------------------------------------------- |
 
 We just remove the reference from node's parent (15) to be null.
 
 **Deleting a node with one child.**
 
-| <pre><code>12345</code></pre> | <pre><code>    30                              30 /     \         remove(10)      /     \10*     40       --------->     15      40  \    /  \                            /  \  15  35   50                         35   50</code></pre> |
-| ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <pre><code>12345</code></pre> | <pre><code> 30 30 / \ remove(10) / \10\* 40 ---------> 15 40 \ / \ / \ 15 35 50 35 50</code></pre> |
+| ----------------------------- | -------------------------------------------------------------------------------------------------- |
 
 In this case, we go to the parent (30) and replace the child (10), with a child's child (15).
 
 **Deleting a node with two children**
 
-| <pre><code>12345</code></pre> | <pre><code>    30                              30 /     \         remove(40)      /     \15      40*      --------->     15      50       /  \                            /      35   50                         35</code></pre> |
-| ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <pre><code>12345</code></pre> | <pre><code> 30 30 / \ remove(40) / \15 40\* ---------> 15 50 / \ / 35 50 35</code></pre> |
+| ----------------------------- | ---------------------------------------------------------------------------------------- |
 
 We are removing node 40, that has two children (35 and 50). We replace the parent's (30) child (40) with the child's right child (50). Then we keep the left child (35) in the same place it was before, so we have to make it the left child of 50.
 
 Another way to do it to remove node 40, is to move the left child (35) up and then keep the right child (50) where it was.
 
-| <pre><code>12345</code></pre> | <pre><code>    30 /     \15      35          \           50</code></pre> |
-| ----------------------------- | ------------------------------------------------------------------------ |
+| <pre><code>12345</code></pre> | <pre><code> 30 / \15 35 \ 50</code></pre> |
+| ----------------------------- | ----------------------------------------- |
 
 Either way is ok as long as you keep the binary search tree property: `left < parent < right`.
 
 **Deleting the root.**
 
-| <pre><code>12345</code></pre> | <pre><code>   30*                            50 /     \       remove(30)      /     \15      50     --------->     15      35       /      35</code></pre> |
-| ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <pre><code>12345</code></pre> | <pre><code> 30\* 50 / \ remove(30) / \15 50 ---------> 15 35 / 35</code></pre> |
+| ----------------------------- | ------------------------------------------------------------------------------ |
 
 Deleting the root is very similar to removing nodes with 0, 1, or 2 children that we discussed earlier. The only difference is that afterward, we need to update the reference of the root of the tree.
 
@@ -222,26 +222,26 @@ Now that we have a good idea how it should work, let's implement it:
 
 BinarySearchTree.prototype.remove[Full Code](https://github.com/amejiarosario/dsa.js/blob/master/src/data-structures/trees/binary-search-tree.js#L89)
 
-| <pre><code>1234567891011121314151617181920212223</code></pre> | <pre><code>remove(value) {  const nodeToRemove = this.find(value);  if (!nodeToRemove) return false;    const nodeToRemoveChildren = this.combineLeftIntoRightSubtree(nodeToRemove);  if (nodeToRemove.meta.multiplicity &#x26;&#x26; nodeToRemove.meta.multiplicity > 1) {    nodeToRemove.meta.multiplicity -= 1;   } else if (nodeToRemove === this.root) {        this.root = nodeToRemoveChildren;    this.root.parent = null;   } else {    const side = nodeToRemove.isParentLeftChild ? 'left' : 'right';    const { parent } = nodeToRemove;         parent[side] = nodeToRemoveChildren;  }  this.size -= 1;  return true;}</code></pre> |
-| ------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <pre><code>1234567891011121314151617181920212223</code></pre> | <pre><code>remove(value) { const nodeToRemove = this.find(value); if (!nodeToRemove) return false; const nodeToRemoveChildren = this.combineLeftIntoRightSubtree(nodeToRemove); if (nodeToRemove.meta.multiplicity &#x26;&#x26; nodeToRemove.meta.multiplicity > 1) { nodeToRemove.meta.multiplicity -= 1; } else if (nodeToRemove === this.root) { this.root = nodeToRemoveChildren; this.root.parent = null; } else { const side = nodeToRemove.isParentLeftChild ? 'left' : 'right'; const { parent } = nodeToRemove; parent[side] = nodeToRemoveChildren; } this.size -= 1; return true;}</code></pre> |
+| ------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
 Here are some highlights of the implementation:
 
-* First, we search if the node exists. If it doesn't, we return false and we are done!
-* If the node to remove exists, then combine left and right children into one subtree.
-* Replace node to delete with the combined subtree.
+-   First, we search if the node exists. If it doesn't, we return false and we are done!
+-   If the node to remove exists, then combine left and right children into one subtree.
+-   Replace node to delete with the combined subtree.
 
 The function that combines left into right subtree is the following:
 
 BinarySearchTree.prototype.combineLeftIntoRightSubtree[Full Code](https://github.com/amejiarosario/dsa.js/blob/master/src/data-structures/trees/binary-search-tree.js#L89)
 
-| <pre><code>12345678</code></pre> | <pre><code>combineLeftIntoRightSubtree(node) {  if (node.right) {    const leftmost = this.getLeftmost(node.right);    leftmost.left = node.left;    return node.right;  }  return node.left;}</code></pre> |
-| -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <pre><code>12345678</code></pre> | <pre><code>combineLeftIntoRightSubtree(node) { if (node.right) { const leftmost = this.getLeftmost(node.right); leftmost.left = node.left; return node.right; } return node.left;}</code></pre> |
+| -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
 For instance, let's say that we want to combine the following tree and we are about to delete node `30`. We want to mix 30's left subtree into the right one. The result is this:
 
-| <pre><code>1234567</code></pre> | <pre><code>   30*                             40 /     \                          /  \10      40    combine(30)       35   50  \    /  \   ----------->      /  15  35   50                  10                                \                                 15</code></pre> |
-| ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <pre><code>1234567</code></pre> | <pre><code> 30\* 40 / \ / \10 40 combine(30) 35 50 \ / \ -----------> / 15 35 50 10 \ 15</code></pre> |
+| ------------------------------- | ----------------------------------------------------------------------------------------------------- |
 
 Now, and if we make the new subtree the root, then node `30` is no more!
 
@@ -255,13 +255,13 @@ In-order traversal visit nodes on this order: left, parent, right.
 
 BinarySearchTree.prototype.inOrderTraversal[Full Code](https://github.com/amejiarosario/dsa.js/blob/master/src/data-structures/trees/binary-search-tree.js)
 
-| <pre><code>12345</code></pre> | <pre><code>* inOrderTraversal(node = this.root) {  if (node.left) { yield* this.inOrderTraversal(node.left); }  yield node;  if (node.right) { yield* this.inOrderTraversal(node.right); }}</code></pre> |
-| ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <pre><code>12345</code></pre> | <pre><code>_ inOrderTraversal(node = this.root) { if (node.left) { yield_ this.inOrderTraversal(node.left); } yield node; if (node.right) { yield\* this.inOrderTraversal(node.right); }}</code></pre> |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 
 Let's use this tree to make the example:
 
-| <pre><code>1234567</code></pre> | <pre><code>         10       /    \      5      30    /       /  \   4       15   40 /3</code></pre> |
-| ------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| <pre><code>1234567</code></pre> | <pre><code> 10 / \ 5 30 / / \ 4 15 40 /3</code></pre> |
+| ------------------------------- | ----------------------------------------------------- |
 
 In-order traversal would print out the following values: `3, 4, 5, 10, 15, 30, 40`. If the tree is a BST, then the nodes will be sorted in ascendent order as in our example.
 
@@ -271,8 +271,8 @@ Post-order traversal visit nodes on this order: left, right, parent.
 
 BinarySearchTree.prototype.postOrderTraversal[Full Code](https://github.com/amejiarosario/dsa.js/blob/master/src/data-structures/trees/binary-search-tree.js)
 
-| <pre><code>12345</code></pre> | <pre><code>* postOrderTraversal(node = this.root) {  if (node.left) { yield* this.postOrderTraversal(node.left); }  if (node.right) { yield* this.postOrderTraversal(node.right); }  yield node;}</code></pre> |
-| ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <pre><code>12345</code></pre> | <pre><code>_ postOrderTraversal(node = this.root) { if (node.left) { yield_ this.postOrderTraversal(node.left); } if (node.right) { yield\* this.postOrderTraversal(node.right); } yield node;}</code></pre> |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 
 Post-order traversal would print out the following values: `3, 4, 5, 15, 40, 30, 10`.
 
@@ -282,15 +282,15 @@ In-order traversal visit nodes on this order: parent, left, right.
 
 BinarySearchTree.prototype.preOrderTraversal[Full Code](https://github.com/amejiarosario/dsa.js/blob/master/src/data-structures/trees/binary-search-tree.js)
 
-| <pre><code>12345</code></pre> | <pre><code>* preOrderTraversal(node = this.root) {  yield node;  if (node.left) { yield* this.preOrderTraversal(node.left); }  if (node.right) { yield* this.preOrderTraversal(node.right); }}</code></pre> |
-| ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <pre><code>12345</code></pre> | <pre><code>_ preOrderTraversal(node = this.root) { yield node; if (node.left) { yield_ this.preOrderTraversal(node.left); } if (node.right) { yield\* this.preOrderTraversal(node.right); }}</code></pre> |
+| ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
 Pre-order traversal would print out the following values: `10, 5, 4, 3, 30, 15, 40`. This order of numbers is the same result that we would get if we run the Depth-First Search (DFS).
 
 BinarySearchTree.prototype.dfs[Full Code](https://github.com/amejiarosario/dsa.js/blob/master/src/data-structures/trees/binary-search-tree.js)
 
-| <pre><code>123456789101112</code></pre> | <pre><code>* dfs() {  const stack = new Stack();  stack.add(this.root);  while (!stack.isEmpty()) {    const node = stack.remove();    yield node;        node.descendents.reverse().forEach(child => stack.add(child));  }}</code></pre> |
-| --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <pre><code>123456789101112</code></pre> | <pre><code>\* dfs() { const stack = new Stack(); stack.add(this.root); while (!stack.isEmpty()) { const node = stack.remove(); yield node; node.descendents.reverse().forEach(child => stack.add(child)); }}</code></pre> |
+| --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
 If you need a refresher on DFS, we covered in details on [Graph post](https://chrome-extension/cjedbglnccaioiolemnfhjncicchinao/blog/2018/05/14/Data-Structures-for-Beginners-Graphs-Time-Complexity-tutorial/#Depth-first-search-DFS-Graph-search).
 
@@ -300,8 +300,8 @@ Similar to DFS, we can implement a BFS by switching the `Stack` by a `Queue`:
 
 BinarySearchTree.prototype.bfs[Full Code](https://github.com/amejiarosario/dsa.js/blob/master/src/data-structures/trees/binary-search-tree.js)
 
-| <pre><code>1234567891011</code></pre> | <pre><code>* bfs() {  const queue = new Queue();  queue.add(this.root);  while (!queue.isEmpty()) {    const node = queue.remove();    yield node;    node.descendents.forEach(child => queue.add(child));  }}</code></pre> |
-| ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <pre><code>1234567891011</code></pre> | <pre><code>\* bfs() { const queue = new Queue(); queue.add(this.root); while (!queue.isEmpty()) { const node = queue.remove(); yield node; node.descendents.forEach(child => queue.add(child)); }}</code></pre> |
+| ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
 The BFS order is: `10, 5, 30, 4, 15, 40, 3`
 
@@ -341,10 +341,7 @@ O(n):
 
 ---
 
-
 ```js
-
-
 function addUpToSimple(n: number) {
     let total = 0;
     for (let i = 0; i < n; i++) {
@@ -358,10 +355,7 @@ O(1):
 
 ---
 
-
 ```js
-
-
 function addUpComplex(n: number) {
     return (n * (n + 1)) / 2;
 }
@@ -371,16 +365,13 @@ O(n): maybe thinking O(2n) but we see big picture! BigONotation doesn't care abo
 
 ---
 
-
 ```js
-
-
 function printUpAndDown(n: number) {
-    console.log("Going up");
+    console.log('Going up');
     for (let i = 0; i < n; i++) {
         console.log(i);
     }
-    console.log("Going down");
+    console.log('Going down');
     for (let j = n - 1; j > 0; j--) {
         console.log(j);
     }
@@ -391,10 +382,7 @@ O(n^2)
 
 ---
 
-
 ```js
-
-
 function printAllPairs(n: number) {
     for (let i = 0; i < n; i++) {
         console.log(i);
@@ -409,10 +397,7 @@ O(n) : cuz as soon as n grows complexity grows too
 
 ---
 
-
 ```js
-
-
 function logAtLeastFive(n: number) {
     for (let i = 0; i <= Math.max(5, n); i++) {
         console.log(i);
@@ -424,10 +409,7 @@ O(1)
 
 ---
 
-
 ```js
-
-
 function logAtMostFive(n: number) {
     for (let i = 0; i <= Math.min(5, n); i++) {
         console.log(i);
@@ -439,17 +421,14 @@ function logAtMostFive(n: number) {
 
 Rules of Thumb
 
-* <==(_**most primitive booleans numbers undefined null are constant space**_)==>.
-* <==(_**strings and reference types like objects an arrays require O(n) space n is string length or number of keys**_)==>
+-   <==(_**most primitive booleans numbers undefined null are constant space**_)==>.
+-   <==(_**strings and reference types like objects an arrays require O(n) space n is string length or number of keys**_)==>
 
 O(1)
 
 ---
 
-
 ```js
-
-
 function sum(arr: number[]) {
     let total = 0;
     for (let i = 0; i < arr.length; i++) {
@@ -462,10 +441,7 @@ O(n)
 
 ---
 
-
 ```js
-
-
 function double(arr: number[]) {
     const newArr = [];
     for (let i = 0; i < arr.length; i++) {
@@ -477,27 +453,24 @@ function double(arr: number[]) {
 
 ### quick note around object, array through BigO lens!
 
-* object:
+-   object:
 
 ```js
-const person = { name: "John", age: 22, hobbies: ["reading", "sleeping"] };
+const person = { name: 'John', age: 22, hobbies: ['reading', 'sleeping'] };
 
 Object.keys(person); // ["name", "age", "hobbies"] --->              O(n)
 Object.values(person); // ["John", 22, Array(2)]--->                 O(n)
 Object.entries(person); // [Array(2), Array(2), Array(2)]--->        O(n)
-person.hasOwnProperty("name"); // true --->                          O(1)
+person.hasOwnProperty('name'); // true --->                          O(1)
 ```
 
-* array: _**push() and pop()**_\*\* are always faster than **\_**unshift() and shift()**\_** because inserting or removing element from beginning of an array requires reIndexing all elements\*\*
+-   array: _**push() and pop()**_\*\* are always faster than **\_**unshift() and shift()**\_** because inserting or removing element from beginning of an array requires reIndexing all elements\*\*
 
 ## Common Patterns
 
 ---
 
-
 ```js
-
-
 function binarySearch(sortedArr: number[], value: number): number {
     let min = 0;
     let max = sortedArr.length - 1;
@@ -524,20 +497,17 @@ quick note around callStack
 
 ---
 
-
 ```js
-
-
 function wakeUp() {
     // callStack [wakeUp]
     takeShower();
     eatBreakfast();
-    console.log("Ready to go ... ");
+    console.log('Ready to go ... ');
 } // callStack []
 
 function takeShower() {
     // callStack [takeShower, wakeUp]
-    console.log("taking shower");
+    console.log('taking shower');
 } // callStack[wakeUp]
 
 function eatBreakfast() {
@@ -548,7 +518,7 @@ function eatBreakfast() {
 
 function cookBreakFast() {
     // callStack [cookBreakFast, eatBreakfast, wakeUp]
-    const meals = ["Cheese", "Protein Shake", "Coffee"];
+    const meals = ['Cheese', 'Protein Shake', 'Coffee'];
     return meals[Math.floor(Math.random() * meals.length)]; // callStack [eatBreakFast, wakeUp]
 }
 
@@ -557,15 +527,12 @@ wakeUp();
 
 two essential part of recursive functions
 
-* **base case : end of the line**
-* **different input : recursive should call by different piece of data**
+-   **base case : end of the line**
+-   **different input : recursive should call by different piece of data**
 
 ---
 
-
 ```js
-
-
 function sumRange(num: number) {
     if (num === 1) return 1;
     return num + sumRange(num - 1);
@@ -628,10 +595,7 @@ O(n)
 
 ---
 
-
 ```js
-
-
 function linearSearch(arr: number[], value: number): number {
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] === value) {
@@ -648,10 +612,7 @@ O(Log n)
 
 ---
 
-
 ```js
-
-
 function binarySearch(sortedArr: number[], value: number): number {
     let left = 0;
     let right = sortedArr.length - 1;
@@ -678,7 +639,7 @@ function binarySearch(sortedArr: number[], value: number): number {
 array.sort(cb) will turn all values to _string_ then sort it based on it's _unicode_
 
 ```js
-["a", "c", "b", "f", "d"].sort(); // (5) ["a", "b", "c", "d", "f"]
+['a', 'c', 'b', 'f', 'd'].sort(); // (5) ["a", "b", "c", "d", "f"]
 [1, 10, 6, 8, 2, 3, 5].sort(); //(7) [1, 10, 2, 3, 5, 6, 8]
 
 /* 
@@ -704,10 +665,7 @@ general: O(n^2) nearlySortedData: O(n)
 
 ---
 
-
 ```js
-
-
 function bubbleSort(arr: number[]): number[] {
     for (let i = 0; i < arr.length; i++) {
         let noSwap = true;
@@ -745,10 +703,7 @@ O(n^2)
 
 ---
 
-
 ```js
-
-
 function selectionSort(arr: number[]) {
     for (let i = 0; i < arr.length; i++) {
         let min = i;
@@ -771,10 +726,7 @@ general: O(n^2) nearlySortedData: O(n)
 
 ---
 
-
 ```js
-
-
 function insertionSort(arr) {
     var currentVal;
     for (let i = 1; i < arr.length; i++) {
@@ -790,11 +742,11 @@ function insertionSort(arr) {
 
 ### quadric sorting algorithms comparison
 
-|    Algorithm   | Time Complexity (Best) | Time Complexity (Average) | Time Complexity (worst) | Space Complexity |
+|   Algorithm    | Time Complexity (Best) | Time Complexity (Average) | Time Complexity (worst) | Space Complexity |
 | :------------: | :--------------------: | :-----------------------: | :---------------------: | :--------------: |
-|   bubble sort  |          O(n)          |           O(n^2)          |          O(n^2)         |       O(1)       |
-| insertion sort |          O(n)          |           O(n^2)          |          O(n^2)         |       O(1)       |
-| selection sort |         O(n^2)         |           O(n^2)          |          O(n^2)         |       O(1)       |
+|  bubble sort   |          O(n)          |          O(n^2)           |         O(n^2)          |       O(1)       |
+| insertion sort |          O(n)          |          O(n^2)           |         O(n^2)          |       O(1)       |
+| selection sort |         O(n^2)         |          O(n^2)           |         O(n^2)          |       O(1)       |
 
 ## Fancy
 
@@ -917,25 +869,25 @@ function radixSort(arr: number[]): number[] {
 
 ### fancy sorting algorithms comparison
 
-|  Algorithm | Time Complexity (Best) | Time Complexity (Average) | Time Complexity (worst) | Space Complexity |
+| Algorithm  | Time Complexity (Best) | Time Complexity (Average) | Time Complexity (worst) | Space Complexity |
 | :--------: | :--------------------: | :-----------------------: | :---------------------: | :--------------: |
-| merge sort |       O(n Log n)       |         O(n Log n)        |        O(n Log n)       |       O(n)       |
-| quick sort |       O(n Log n)       |         O(n Log n)        |          O(n^2)         |     O(Log n)     |
-| radix sort |          O(nk)         |           O(nk)           |          O(nk)          |     O(n + k)     |
+| merge sort |       O(n Log n)       |        O(n Log n)         |       O(n Log n)        |       O(n)       |
+| quick sort |       O(n Log n)       |        O(n Log n)         |         O(n^2)          |     O(Log n)     |
+| radix sort |         O(nk)          |           O(nk)           |          O(nk)          |     O(n + k)     |
 
 ## Data Structure
 
 ### complexity comparison
 
-|    DataStructure   | Insertion |                          Removal                         |                 Searching                 | Access |
+|   DataStructure    | Insertion |                         Removal                          |                 Searching                 | Access |
 | :----------------: | :-------: | :------------------------------------------------------: | :---------------------------------------: | :----: |
-| Singly Linked List |    O(1)   | bestCase(very beginning): O(1) worstCase(very end): O(n) |                    O(n)                   |  O(n)  |
-| Doubly Linked List |    O(1)   |                           O(1)                           | O(n) it is faster than Singly Linked List |  O(n)  |
-|        Stack       |    O(1)   |                           O(1)                           |                    O(n)                   |  O(n)  |
-|        Queue       |    O(1)   |                           O(1)                           |                    O(n)                   |  O(n)  |
-| Binary Search Tree | O( Log n) |                             -                            |                  O(Log n)                 |    -   |
-|     Binary Heap    | O( Log n) |                         O( Log n)                        |                   O( n )                  |    -   |
-|     Hash Tables    |   O( 1 )  |                          O( 1 )                          |                     -                     | O( 1 ) |
+| Singly Linked List |   O(1)    | bestCase(very beginning): O(1) worstCase(very end): O(n) |                   O(n)                    |  O(n)  |
+| Doubly Linked List |   O(1)    |                           O(1)                           | O(n) it is faster than Singly Linked List |  O(n)  |
+|       Stack        |   O(1)    |                           O(1)                           |                   O(n)                    |  O(n)  |
+|       Queue        |   O(1)    |                           O(1)                           |                   O(n)                    |  O(n)  |
+| Binary Search Tree | O( Log n) |                            -                             |                 O(Log n)                  |   -    |
+|    Binary Heap     | O( Log n) |                        O( Log n)                         |                  O( n )                   |   -    |
+|    Hash Tables     |  O( 1 )   |                          O( 1 )                          |                     -                     | O( 1 ) |
 
 ## Singly Linked list
 
@@ -1408,18 +1360,18 @@ class Queue {
 
 ### terminology
 
-* root : top node of tree
-* child : a node directly connected to another node when moving away from root
-* parent : the converse notion of a child
-* sibling : a group of nodes with the same parent
-* leaf : a child with no children
-* edge : connection from two node
+-   root : top node of tree
+-   child : a node directly connected to another node when moving away from root
+-   parent : the converse notion of a child
+-   sibling : a group of nodes with the same parent
+-   leaf : a child with no children
+-   edge : connection from two node
 
 ### binary search tree
 
-* every parent node has at most **two** children
-* every node to the **left** of parent node is always **less** than the **parent**
-* every node to the **right** of parent node is always **greater** than the **parent**
+-   every parent node has at most **two** children
+-   every node to the **left** of parent node is always **less** than the **parent**
+-   every node to the **right** of parent node is always **greater** than the **parent**
 
 ```js
 class _Node {
@@ -1551,7 +1503,7 @@ class BinarySearchTree {
         }
         return false;
     }
-    /* 
+    /*
     breadth first search (bfs) : traverse tree horizontally
 */
     public bfs(): _Node[] {
@@ -1570,8 +1522,8 @@ class BinarySearchTree {
     /*
     depth first search (dfs) : traverse tree vertically
     following contains three dfs searching methods:
-    1. preOrder : add node => going to left and add left => going to right and add right 
-    2. postOrder : going to left and add left => going to right and add right => going to node and add node 
+    1. preOrder : add node => going to left and add left => going to right and add right
+    2. postOrder : going to left and add left => going to right and add right => going to node and add node
     3. inOrder : going to the left and add left => add node => going to the right and add right
      */
     public dfsPreOrder(): _Node[] {
@@ -1643,7 +1595,7 @@ if we got **a depth long tree** like this:
 
 **depth-first take up more space.**
 
-***
+---
 
 **potentially use cases for dfs variants (**_**preOder postOrder inOrder**_**)** preOrder is useful when we want a clone of tree. inOrder is useful when we want data in order that it's stored in tree.
 
@@ -1651,16 +1603,16 @@ if we got **a depth long tree** like this:
 
 ### terminology
 
-* a binary heap is as compact as possible (all the children of each node are as full as they can be and left children and filled out first)
-* each parent has at most two children
+-   a binary heap is as compact as possible (all the children of each node are as full as they can be and left children and filled out first)
+-   each parent has at most two children
 
 **Max Binary Heap**:
 
-* **parent** nodes are always greater than **child** nodes but there is no guarantees between sibling
+-   **parent** nodes are always greater than **child** nodes but there is no guarantees between sibling
 
 **Min Binary Heap**:
 
-* **child** nodes are always greater than **parent** nodes but there is no guarantees between sibling
+-   **child** nodes are always greater than **parent** nodes but there is no guarantees between sibling
 
 ### binary heap parent and child relations
 
@@ -1891,8 +1843,8 @@ Hash tables are collection of key-value pairs
 
 There is possibility for handle collisions is hash tables :
 
-* Separate chaining ( e.g. using nested arrays of key values _implemented in following hash tables_ )
-* linear probing ( if index filled place {key, value} in next position )
+-   Separate chaining ( e.g. using nested arrays of key values _implemented in following hash tables_ )
+-   linear probing ( if index filled place {key, value} in next position )
 
 ```js
 type El = [string, any];
@@ -1972,10 +1924,10 @@ A graph data structure consists of a finite (and possibly mutable) set of vertic
 
 ### terminology
 
-* vertex :node
-* edge : connection between nodes
-* directed/ undirected graph: in directed graph there is a direction assigned to vertices an in undirected no direction assigned.
-* weighted/ unweighted graph: in weighted graph there is a weight associated by edges but in unweighted graph no weight assigned to edges
+-   vertex :node
+-   edge : connection between nodes
+-   directed/ undirected graph: in directed graph there is a direction assigned to vertices an in undirected no direction assigned.
+-   weighted/ unweighted graph: in weighted graph there is a weight associated by edges but in unweighted graph no weight assigned to edges
 
 ### adjacency matrix
 
@@ -1985,21 +1937,21 @@ A graph data structure consists of a finite (and possibly mutable) set of vertic
 
 |   Operation   | Adjacency List | Adjacency Matrix |
 | :-----------: | :------------: | :--------------: |
-|   Add vertex  |      O(1)      |      O(V^2)      |
-|    Add Edge   |      O(1)      |       O(1)       |
+|  Add vertex   |      O(1)      |      O(V^2)      |
+|   Add Edge    |      O(1)      |       O(1)       |
 | Remove vertex |     O(V+E)     |      O(V^2)      |
 |  Remove Edge  |      O(E)      |       O(1)       |
 |     Query     |     O(V+E)     |       O(1)       |
 |    Storage    |     O(V+E)     |      O(V^2)      |
 
-* |V| : number of Vertices
-* |E| : number of Edges
+-   |V| : number of Vertices
+-   |E| : number of Edges
 
-***
+---
 
-* **Adjacency List** take **less space** in sparse graph( when we have a few edges ).
-* **Adjacency List** are **faster to iterate** over edges.
-* **Adjacency Matrix** are **faster to** finding a specific edge.
+-   **Adjacency List** take **less space** in sparse graph( when we have a few edges ).
+-   **Adjacency List** are **faster to iterate** over edges.
+-   **Adjacency Matrix** are **faster to** finding a specific edge.
 
 ### graph(adjacency list)
 
@@ -2253,7 +2205,7 @@ class WeightedGraph {
         return false;
     }
 
-    /* 
+    /*
     dijkstra shortest path first
     */
 
@@ -2330,10 +2282,7 @@ _**in fibonacci sequence fib(n) = fib(n-2) + fib(n-1) && fin(1) = 1 && fib(2) = 
 
 ---
 
-
 ```js
-
-
 function fib(n: number): number {
     if (n <= 2) return 1;
     return fib(n - 1) + fib(n - 2);
@@ -2350,10 +2299,7 @@ O(n)
 
 ---
 
-
 ```js
-
-
 function fib(n: number, memo: number[] = []): number {
     if (memo[n]) return memo[n];
 
@@ -2371,10 +2317,7 @@ fib(10000); // Maximum callStack exceeded
 
 ---
 
-
 ```js
-
-
 function fib(n: number): number {
     if (n <= 2) return 1;
 
@@ -2449,11 +2392,7 @@ function charCount(str: string) {
 
 function isAlphaNumeric(char: string) {
     const code = char.charCodeAt(0);
-    if (
-        !(code > 47 && code < 58) &&
-        !(code > 64 && code < 91) &&
-        !(code > 96 && code < 123)
-    ) {
+    if (!(code > 47 && code < 58) && !(code > 64 && code < 91) && !(code > 96 && code < 123)) {
         return false;
     }
     return true;
@@ -2463,21 +2402,21 @@ function isAlphaNumeric(char: string) {
 ## Array
 
 ```js
-const array = ["hello", "world"];
-arr.find(el => el === "world"); // world
-arr.findIndex(el => el === "world"); // 1
+const array = ['hello', 'world'];
+arr.find((el) => el === 'world'); // world
+arr.findIndex((el) => el === 'world'); // 1
 
 [1, 2].includes(1); // true
 
-Array.from({ length: 2 }, () => ["lol"]); // [["lol"], ["lol"]]
+Array.from({ length: 2 }, () => ['lol']); // [["lol"], ["lol"]]
 
-const stack = ["A", "B", "D", "E", "C", "F"];
+const stack = ['A', 'B', 'D', 'E', 'C', 'F'];
 const s = stack.shift();
 const p = stack.pop();
 console.log(s); // "A"
 console.log(p); // "F"
 
-["a", "b"].reverse(); // ['b', 'a']
+['a', 'b'].reverse(); // ['b', 'a']
 ```
 
 ### Object
@@ -2492,11 +2431,11 @@ delete this._adjacencyList.vertex;
 ```js
 const map = new Map();
 // store any type of **unique key** of use duplicate key it will override last value
-map.set({ 1: "Object" }, "Object");
-map.set(["arr"], "arr");
-map.set(1, "number");
-map.set(false, "boolean");
-map.set(() => console.log("Function"), "Function");
+map.set({ 1: 'Object' }, 'Object');
+map.set(['arr'], 'arr');
+map.set(1, 'number');
+map.set(false, 'boolean');
+map.set(() => console.log('Function'), 'Function');
 
 console.log(map);
 /* 

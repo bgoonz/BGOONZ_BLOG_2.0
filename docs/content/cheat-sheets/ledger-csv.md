@@ -1,7 +1,6 @@
 ---
 title: Ledger CSV format
 category: Ledger
-
 ---
 
 ## Ledger CSV format

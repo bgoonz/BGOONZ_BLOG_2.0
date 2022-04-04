@@ -1,7 +1,6 @@
 ---
 title: Vim-Unite
 category: Vim
-
 ---
 
 ### Usage

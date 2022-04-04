@@ -36,4 +36,4 @@ category: Ansible
 
 ### References
 
-- http://www.ansibleworks.com/docs/playbooks_roles.html
+-   http://www.ansibleworks.com/docs/playbooks_roles.html

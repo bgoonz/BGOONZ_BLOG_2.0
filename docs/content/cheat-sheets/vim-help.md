@@ -1,7 +1,6 @@
 ---
 title: Vim helpfiles
 category: Vim
-
 ---
 
 ## Writing help files

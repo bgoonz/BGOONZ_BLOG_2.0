@@ -15,10 +15,7 @@ a given number `n! = n * (n - 1) * ... * 1` is a standard example.
 
 ---
 
-
 ```js
-
-
 function factorial(n) {
     if (n === 0) {
         return 1;
@@ -68,10 +65,7 @@ Let's take a look at a second implementation of this function.
 
 ---
 
-
 ```js
-
-
 function factorial(n, res) {
     if (n === 0) {
         return res;
@@ -84,10 +78,7 @@ We can encapsulate functionality a bit further by defining an inner function.
 
 ---
 
-
 ```js
-
-
 function factorial(n) {
     function inner_factorial(n, res) {
         if (n === 0) {

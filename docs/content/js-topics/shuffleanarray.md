@@ -10,10 +10,7 @@ This snippet here uses [Fisher-Yates Shuffling](https://www.wikiwand.com/en/Fish
 
 ---
 
-
 ```js
-
-
 function shuffle(arr) {
     var i, j, temp;
     for (i = arr.length - 1; i > 0; i--) {

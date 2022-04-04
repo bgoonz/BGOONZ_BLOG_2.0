@@ -2,26 +2,26 @@
 
 ### Contents
 
-* Versions
-* Development Environments
-* Running Programs
-* Comments
-* Semicolons
-* Whitespace, Blocks
-* Functions
-* Arithmetic Operators
-* Variables
-* Data Types
-* Arrays/Lists
-* Slices
-* Objects/Dicts
-* String Formatting
-* Booleans and Conditionals
-* `for` Loops
-* `while` Loops
-* `switch` Statement
-* `if` Conditionals
-* Classes
+-   Versions
+-   Development Environments
+-   Running Programs
+-   Comments
+-   Semicolons
+-   Whitespace, Blocks
+-   Functions
+-   Arithmetic Operators
+-   Variables
+-   Data Types
+-   Arrays/Lists
+-   Slices
+-   Objects/Dicts
+-   String Formatting
+-   Booleans and Conditionals
+-   `for` Loops
+-   `while` Loops
+-   `switch` Statement
+-   `if` Conditionals
+-   Classes
 
 ### Versions
 
@@ -130,7 +130,7 @@ print(2)
 Javascript ends statements with semicolons, usually at the end of the line. I can also be effectively used to put multiple statements on the same line, but this is rare.
 
 ```js
-console.log("Hello, world!");
+console.log('Hello, world!');
 
 let x = 10;
 console.log(x);
@@ -154,13 +154,13 @@ Whitespace has no special meaning. Blocks are declared with squirrely braces `{`
 
 ```js
 if (x == 2) {
-  console.log("x must be 2");
+    console.log('x must be 2');
 } else {
-  if (x == 3) {
-    console.log("x must be 3");
-  } else {
-    console.log("x must be something else");
-  }
+    if (x == 3) {
+        console.log('x must be 3');
+    } else {
+        console.log('x must be something else');
+    }
 }
 ```
 
@@ -186,13 +186,10 @@ Define functions as follows:
 
 ---
 
-
 ```js
-
-
 function foobar(x, y, z) {
-  console.log(x, y, z);
-  return 12;
+    console.log(x, y, z);
+    return 12;
 }
 ```
 
@@ -200,8 +197,8 @@ An alternate syntax for functions is growing increasingly common, called _arrow 
 
 ```js
 let hello = () => {
-  console.log("hello");
-  console.log("world");
+    console.log('hello');
+    console.log('world');
 };
 
 hello(); // prints hello, then world
@@ -209,7 +206,7 @@ hello(); // prints hello, then world
 // Arrow functions with single parameters don't
 // need parens around the parameter:
 let printNum = (x) => {
-  console.log(x);
+    console.log(x);
 };
 
 // If you don't explicitly return a value, the value
@@ -244,7 +241,7 @@ print(add(4, 5)) # prints 9
 #### JavaScript
 
 | Operator | Description                   |
-|----------|-------------------------------|
+| -------- | ----------------------------- |
 | `+`      | Addition                      |
 | `-`      | Subtraction                   |
 | `*`      | Multiplication                |
@@ -265,7 +262,7 @@ print(add(4, 5)) # prints 9
 The pre- and post-increment and decrement are notably absent.
 
 | Operator | Description               |
-|----------|---------------------------|
+| -------- | ------------------------- |
 | `+`      | Addition                  |
 | `-`      | Subtraction               |
 | `*`      | Multiplication            |
@@ -307,8 +304,8 @@ x = 10
 ```js
 let a = 12; // number
 let b = 1.2; // number
-let c = "hello"; // string
-let d = "world"; // string
+let c = 'hello'; // string
+let d = 'world'; // string
 let e = true; // boolean
 let f = null; // null value
 let g = undefined; // undefined value
@@ -331,9 +328,9 @@ console.log(`x is ${x}`); // prints "x is 12"
 JS is _weakly typed_ so it supports operations on multiple types of data at once.
 
 ```js
-"2" + 4; // string "24"
-parseInt("2") + 4; // number 6
-Number("2") + 4; // number 6
+'2' + 4; // string "24"
+parseInt('2') + 4; // number 6
+Number('2') + 4; // number 6
 ```
 
 #### Python
@@ -384,7 +381,7 @@ let a1 = new Array(); // Empty array
 let a2 = new Array(10); // Array of 10 elements
 let a3 = []; // Empty array
 let a4 = [10, 20, 30]; // Array of 3 elements
-let a5 = [1, 2, "b"]; // No problem
+let a5 = [1, 2, 'b']; // No problem
 ```
 
 Accessing:
@@ -491,13 +488,13 @@ Creation:
 ```js
 let o1 = {}; // empty object
 let o2 = { x: 12 }; // one property
-let o3 = { y: "hello" }; // property quotes optional
+let o3 = { y: 'hello' }; // property quotes optional
 
 let o4 = {
-  // common multiline format
-  a: 20,
-  b: 1.2,
-  foo: "hello",
+    // common multiline format
+    a: 20,
+    b: 1.2,
+    foo: 'hello'
 };
 ```
 
@@ -505,7 +502,7 @@ Access:
 
 ```js
 console.log(o2.x); // prints 12
-console.log(o4["foo"]); // prints hello
+console.log(o4['foo']); // prints hello
 ```
 
 #### Python
@@ -561,27 +558,25 @@ let y = x.toFixed(2); // string '3.14'
 Padding and justification:
 
 ```js
-let s = "Hello!";
-let t = s.padStart(10, " "); // string '    Hello!'
-let u = s.padEnd(10, " "); // string 'Hello!    '
+let s = 'Hello!';
+let t = s.padStart(10, ' '); // string '    Hello!'
+let u = s.padEnd(10, ' '); // string 'Hello!    '
 
-let v = s.padStart(10, "*"); // string '****Hello!'
+let v = s.padStart(10, '*'); // string '****Hello!'
 
 // Pad with leading zeroes
-(12).toString(2).padStart(8, "0"); // string '00001100'
+(12).toString(2).padStart(8, '0'); // string '00001100'
 ```
 
 Parameterized strings:
 
 ```js
 let x = 3.1415926;
-let y = "Hello";
+let y = 'Hello';
 let z = 67;
 
 // 'x is 3.14, y is "Hello", z is 01000011'
-let s = `x is ${x.toFixed(2)}, y is "${y}", z is ${z
-  .toString(2)
-  .padStart(8, "0")}`;
+let s = `x is ${x.toFixed(2)}, y is "${y}", z is ${z.toString(2).padStart(8, '0')}`;
 ```
 
 #### Python
@@ -608,7 +603,7 @@ y = false;
 Boolean operators:
 
 | Operator | Definition            |
-|----------|-----------------------|
+| -------- | --------------------- |
 | `==`     | Equality              |
 | `!=`     | Inequality            |
 | `===`    | Strict equality       |
@@ -621,8 +616,8 @@ Boolean operators:
 The concept of strict equality/inequality applies to items that might normally be converted into a compatible type. The strict tests will consider if the types themselves are the same.
 
 ```js
-0 == "0"; // true
-0 === "0"; // false
+0 == '0'; // true
+0 === '0'; // false
 
 0 == []; // true
 0 === []; // false
@@ -634,7 +629,7 @@ The concept of strict equality/inequality applies to items that might normally b
 Logical operators:
 
 | Operator | Description          |
-|----------|----------------------|
+| -------- | -------------------- |
 | `!`      | Logical inverse, not |
 | `&&`     | Logical AND          |
 | \`       | \`                   |
@@ -646,15 +641,15 @@ The not operator `!` can be used to test whether or not a value is "truthy".
 !!0; // false
 !1; // false
 !null; // true
-!"0"; // false, perhaps unexpectedly
-!"x"; // false
+!'0'; // false, perhaps unexpectedly
+!'x'; // false
 ```
 
 Example:
 
 ```js
-if (a == 2 && b !== "") {
-  // Something complicated
+if (a == 2 && b !== '') {
+    // Something complicated
 }
 ```
 
@@ -670,7 +665,7 @@ y = False
 Boolean operators:
 
 | Operator | Definition            |
-|----------|-----------------------|
+| -------- | --------------------- |
 | `==`     | Equality              |
 | `!=`     | Inequality            |
 | `<`      | Less than             |
@@ -681,7 +676,7 @@ Boolean operators:
 Logical operators:
 
 | Operator | Description          |
-|----------|----------------------|
+| -------- | -------------------- |
 | `not`    | Logical inverse, not |
 | `and`    | Logical AND          |
 | `or`     | Logical OR           |
@@ -712,7 +707,7 @@ C-style `for` loops:
 
 ```js
 for (let i = 0; i < 10; i++) {
-  console.log(i);
+    console.log(i);
 }
 ```
 
@@ -823,14 +818,14 @@ JS can switch on various data types:
 
 ```js
 switch (x) {
-  case "foo":
-    console.log("x is foo, all right");
-    break;
-  case 23:
-    console.log("but here x is 23");
-    break;
-  default:
-    console.log("x is something else entirely");
+    case 'foo':
+        console.log('x is foo, all right');
+        break;
+    case 23:
+        console.log('but here x is 23');
+        break;
+    default:
+        console.log('x is something else entirely');
 }
 ```
 
@@ -868,11 +863,11 @@ JS uses C-style `if` statements:
 
 ```js
 if (x == 10) {
-  console.log("x is 10");
+    console.log('x is 10');
 } else if (x == 20) {
-  console.log("x is 20");
+    console.log('x is 20');
 } else {
-  console.log("x is something else");
+    console.log('x is something else');
 }
 ```
 
@@ -899,39 +894,33 @@ Pre ES-2015, classes were created using functions. This is now outdated.
 
 ---
 
-
 ```js
-
-
 function Goat(color) {
-  this.legs = 4;
-  this.color = color;
+    this.legs = 4;
+    this.color = color;
 }
 
-g = new Goat("brown");
+g = new Goat('brown');
 ```
 
 JS uses prototypal inheritance. Pre ES-2015, this was explicit, and is also outdated:
 
 ---
 
-
 ```js
-
-
 function Creature(type) {
-  this.type = type;
+    this.type = type;
 }
 
 // Make Goats inherit from Creature:
-Goat.prototype = new Creature("mammal");
+Goat.prototype = new Creature('mammal');
 
 // Add a method:
 Goat.prototype.jump = function () {
-  console.log("I'm jumping! Yay!");
+    console.log("I'm jumping! Yay!");
 };
 
-g = new Goat("red");
+g = new Goat('red');
 g.type; // "mammal", since Goat inherits from Creature
 g.jump(); // "I'm jumping! Yay!"
 ```
@@ -940,24 +929,24 @@ Modern JS introduced the `class` keyword and a syntax more familiar to most othe
 
 ```js
 class Creature {
-  constructor(type) {
-    this.type = type;
-  }
+    constructor(type) {
+        this.type = type;
+    }
 }
 
 class Goat extends Creature {
-  constructor(color) {
-    super("mammal");
-    this.legs = 4;
-    this.color = color;
-  }
+    constructor(color) {
+        super('mammal');
+        this.legs = 4;
+        this.color = color;
+    }
 
-  jump() {
-    console.log("I'm jumping! Yay!");
-  }
+    jump() {
+        console.log("I'm jumping! Yay!");
+    }
 }
 
-g = new Goat("orange");
+g = new Goat('orange');
 g.type; // "mammal"
 g.jump(); // "I'm jumping! Yay!"
 ```

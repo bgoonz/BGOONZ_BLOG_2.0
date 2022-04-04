@@ -695,13 +695,13 @@ Initially the attribute must be initialized to `[NONE](https://dom.spec.whatwg.o
 
 Each [event](https://dom.spec.whatwg.org/#concept-event) has the following associated flags that are all initially unset:
 
-- stop propagation flag
-- stop immediate propagation flag
-- canceled flag
-- in passive listener flag
-- composed flag
-- initialized flag
-- dispatch flag
+-   stop propagation flag
+-   stop immediate propagation flag
+-   canceled flag
+-   in passive listener flag
+-   composed flag
+-   initialized flag
+-   dispatch flag
 
 The `stopPropagation()` method steps are to set [this](https://webidl.spec.whatwg.org/#this)'s [stop propagation flag](https://dom.spec.whatwg.org/#stop-propagation-flag).
 
@@ -1010,13 +1010,13 @@ Each `[EventTarget](https://dom.spec.whatwg.org/#eventtarget)` object has an ass
 
 An event listener can be used to observe a specific [event](https://dom.spec.whatwg.org/#concept-event) and consists of:
 
-- type (a string)
-- callback (null or an `[EventListener](https://dom.spec.whatwg.org/#callbackdef-eventlistener)` object)
-- capture (a boolean, initially false)
-- passive (a boolean, initially false)
-- once (a boolean, initially false)
-- signal (null or an `[AbortSignal](https://dom.spec.whatwg.org/#abortsignal)` object)
-- removed (a boolean for bookkeeping purposes, initially false)
+-   type (a string)
+-   callback (null or an `[EventListener](https://dom.spec.whatwg.org/#callbackdef-eventlistener)` object)
+-   capture (a boolean, initially false)
+-   passive (a boolean, initially false)
+-   once (a boolean, initially false)
+-   signal (null or an `[AbortSignal](https://dom.spec.whatwg.org/#abortsignal)` object)
+-   removed (a boolean for bookkeeping purposes, initially false)
 
 Although [callback](https://dom.spec.whatwg.org/#event-listener-callback) is an `[EventListener](https://dom.spec.whatwg.org/#callbackdef-eventlistener)` object, an [event listener](https://dom.spec.whatwg.org/#concept-event-listener) is a broader concept as can be seen above.
 
@@ -1789,10 +1789,10 @@ A followingSignal (an `[AbortSignal](https://dom.spec.whatwg.org/#abortsignal)`)
 
 Any web platform API using promises to represent operations that can be aborted must adhere to the following:
 
-- Accept `[AbortSignal](https://dom.spec.whatwg.org/#abortsignal)` objects through a `signal` dictionary member.
-- Convey that the operation got aborted by rejecting the promise with `[AbortSignal](https://dom.spec.whatwg.org/#abortsignal)` object's [abort reason](https://dom.spec.whatwg.org/#abortsignal-abort-reason).
-- Reject immediately if the `[AbortSignal](https://dom.spec.whatwg.org/#abortsignal)` is already [aborted](https://dom.spec.whatwg.org/#abortsignal-aborted), otherwise:
-- Use the [abort algorithms](https://dom.spec.whatwg.org/#abortsignal-abort-algorithms) mechanism to observe changes to the `[AbortSignal](https://dom.spec.whatwg.org/#abortsignal)` object and do so in a manner that does not lead to clashes with other observers.
+-   Accept `[AbortSignal](https://dom.spec.whatwg.org/#abortsignal)` objects through a `signal` dictionary member.
+-   Convey that the operation got aborted by rejecting the promise with `[AbortSignal](https://dom.spec.whatwg.org/#abortsignal)` object's [abort reason](https://dom.spec.whatwg.org/#abortsignal-abort-reason).
+-   Reject immediately if the `[AbortSignal](https://dom.spec.whatwg.org/#abortsignal)` is already [aborted](https://dom.spec.whatwg.org/#abortsignal-aborted), otherwise:
+-   Use the [abort algorithms](https://dom.spec.whatwg.org/#abortsignal-abort-algorithms) mechanism to observe changes to the `[AbortSignal](https://dom.spec.whatwg.org/#abortsignal)` object and do so in a manner that does not lead to clashes with other observers.
 
 APIs not using promises should still adhere to the above as much as possible.
 
@@ -1814,15 +1814,15 @@ To illustrate, consider this HTML document:
 
 It is represented as follows:
 
-- [Document](https://dom.spec.whatwg.org/#concept-document)
-    - [Doctype](https://dom.spec.whatwg.org/#concept-doctype): `html`
-    - `[Element](https://dom.spec.whatwg.org/#element)`: `html` `class`\="`e`"
-        - `[Element](https://dom.spec.whatwg.org/#element)`: `head`
-            - `[Element](https://dom.spec.whatwg.org/#element)`: `title`
-                - `[Text](https://dom.spec.whatwg.org/#text)`: Aliens?
-        - `[Text](https://dom.spec.whatwg.org/#text)`: ⏎␣
-        - `[Element](https://dom.spec.whatwg.org/#element)`: `body`
-            - `[Text](https://dom.spec.whatwg.org/#text)`: Why yes.⏎
+-   [Document](https://dom.spec.whatwg.org/#concept-document)
+    -   [Doctype](https://dom.spec.whatwg.org/#concept-doctype): `html`
+    -   `[Element](https://dom.spec.whatwg.org/#element)`: `html` `class`\="`e`"
+        -   `[Element](https://dom.spec.whatwg.org/#element)`: `head`
+            -   `[Element](https://dom.spec.whatwg.org/#element)`: `title`
+                -   `[Text](https://dom.spec.whatwg.org/#text)`: Aliens?
+        -   `[Text](https://dom.spec.whatwg.org/#text)`: ⏎␣
+        -   `[Element](https://dom.spec.whatwg.org/#element)`: `body`
+            -   `[Text](https://dom.spec.whatwg.org/#text)`: Why yes.⏎
 
 Note that, due to the magic that is [HTML parsing](https://html.spec.whatwg.org/multipage/parsing.html#html-parser), not all [ASCII whitespace](https://infra.spec.whatwg.org/#ascii-whitespace) were turned into `[Text](https://dom.spec.whatwg.org/#text)` [nodes](https://dom.spec.whatwg.org/#concept-node), but the general concept is clear. Markup goes in, a [tree](https://dom.spec.whatwg.org/#concept-tree) of [nodes](https://dom.spec.whatwg.org/#concept-node) comes out.
 
@@ -3468,8 +3468,8 @@ The `namedItem(key)`[](https://dom.spec.whatwg.org/#dom-htmlcollection-nameditem
 1.  If key is the empty string, return null.
 2.  Return the first [element](https://dom.spec.whatwg.org/#concept-element) in the [collection](https://dom.spec.whatwg.org/#concept-collection) for which at least one of the following is true:
 
-    - it has an [ID](https://dom.spec.whatwg.org/#concept-id) which is key;
-    - it is in the [HTML namespace](https://infra.spec.whatwg.org/#html-namespace) and [has](https://dom.spec.whatwg.org/#concept-element-attribute-has) a [`name` attribute](https://dom.spec.whatwg.org/#concept-named-attribute) whose [value](https://dom.spec.whatwg.org/#concept-attribute-value) is key;
+    -   it has an [ID](https://dom.spec.whatwg.org/#concept-id) which is key;
+    -   it is in the [HTML namespace](https://infra.spec.whatwg.org/#html-namespace) and [has](https://dom.spec.whatwg.org/#concept-element-attribute-has) a [`name` attribute](https://dom.spec.whatwg.org/#concept-named-attribute) whose [value](https://dom.spec.whatwg.org/#concept-attribute-value) is key;
 
     or null if there is no such [element](https://dom.spec.whatwg.org/#concept-element).
 
@@ -3555,9 +3555,9 @@ A `[MutationObserver](https://dom.spec.whatwg.org/#mutationobserver)` object can
 
 Each `[MutationObserver](https://dom.spec.whatwg.org/#mutationobserver)` object has these associated concepts:
 
-- A callback set on creation.
-- A node list (a [list](https://infra.spec.whatwg.org/#list) of [nodes](https://dom.spec.whatwg.org/#concept-node)), which is initially empty.
-- A record queue (a [queue](https://infra.spec.whatwg.org/#queue) of zero or more `[MutationRecord](https://dom.spec.whatwg.org/#mutationrecord)` objects), which is initially empty.
+-   A callback set on creation.
+-   A node list (a [list](https://infra.spec.whatwg.org/#list) of [nodes](https://dom.spec.whatwg.org/#concept-node)), which is initially empty.
+-   A record queue (a [queue](https://infra.spec.whatwg.org/#queue) of zero or more `[MutationRecord](https://dom.spec.whatwg.org/#mutationrecord)` objects), which is initially empty.
 
 [MutationObserver/MutationObserver](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver/MutationObserver 'The DOM MutationObserver() constructor — part of the MutationObserver interface — creates and returns a new observer which invokes a specified callback when DOM events occur.')
 
@@ -3722,11 +3722,11 @@ To queue a mutation record of type for target with name, namespace, oldValue, ad
     1.  Let options be registered's [options](https://dom.spec.whatwg.org/#registered-observer-options).
     2.  If none of the following are true
 
-        - node is not target and options\["`[subtree](https://dom.spec.whatwg.org/#dom-mutationobserverinit-subtree)`"\] is false
-        - type is "`attributes`" and options\["`[attributes](https://dom.spec.whatwg.org/#dom-mutationobserverinit-attributes)`"\] either does not [exist](https://infra.spec.whatwg.org/#map-exists) or is false
-        - type is "`attributes`", options\["`[attributeFilter](https://dom.spec.whatwg.org/#dom-mutationobserverinit-attributefilter)`"\] [exists](https://infra.spec.whatwg.org/#map-exists), and options\["`[attributeFilter](https://dom.spec.whatwg.org/#dom-mutationobserverinit-attributefilter)`"\] does not [contain](https://infra.spec.whatwg.org/#list-contain) name or namespace is non-null
-        - type is "`characterData`" and options\["`[characterData](https://dom.spec.whatwg.org/#dom-mutationobserverinit-characterdata)`"\] either does not [exist](https://infra.spec.whatwg.org/#map-exists) or is false
-        - type is "`childList`" and options\["`[childList](https://dom.spec.whatwg.org/#dom-mutationobserverinit-childlist)`"\] is false
+        -   node is not target and options\["`[subtree](https://dom.spec.whatwg.org/#dom-mutationobserverinit-subtree)`"\] is false
+        -   type is "`attributes`" and options\["`[attributes](https://dom.spec.whatwg.org/#dom-mutationobserverinit-attributes)`"\] either does not [exist](https://infra.spec.whatwg.org/#map-exists) or is false
+        -   type is "`attributes`", options\["`[attributeFilter](https://dom.spec.whatwg.org/#dom-mutationobserverinit-attributefilter)`"\] [exists](https://infra.spec.whatwg.org/#map-exists), and options\["`[attributeFilter](https://dom.spec.whatwg.org/#dom-mutationobserverinit-attributefilter)`"\] does not [contain](https://infra.spec.whatwg.org/#list-contain) name or namespace is non-null
+        -   type is "`characterData`" and options\["`[characterData](https://dom.spec.whatwg.org/#dom-mutationobserverinit-characterdata)`"\] either does not [exist](https://infra.spec.whatwg.org/#map-exists) or is false
+        -   type is "`childList`" and options\["`[childList](https://dom.spec.whatwg.org/#dom-mutationobserverinit-childlist)`"\] is false
 
         then:
 
@@ -4658,8 +4658,8 @@ The `cloneNode(deep)` method steps are:
 
 A [node](https://dom.spec.whatwg.org/#concept-node) A equals a [node](https://dom.spec.whatwg.org/#concept-node) B if all of the following conditions are true:
 
-- A and B [implement](https://webidl.spec.whatwg.org/#implements) the same interfaces.
-- The following are equal, switching on the interface A [implements](https://webidl.spec.whatwg.org/#implements):
+-   A and B [implement](https://webidl.spec.whatwg.org/#implements) the same interfaces.
+-   The following are equal, switching on the interface A [implements](https://webidl.spec.whatwg.org/#implements):
 
     `[DocumentType](https://dom.spec.whatwg.org/#documenttype)`
 
@@ -4687,9 +4687,9 @@ A [node](https://dom.spec.whatwg.org/#concept-node) A equals a [node](https://do
 
     —
 
-- If A is an [element](https://dom.spec.whatwg.org/#concept-element), each [attribute](https://dom.spec.whatwg.org/#concept-attribute) in its [attribute list](https://dom.spec.whatwg.org/#concept-element-attribute) has an [attribute](https://dom.spec.whatwg.org/#concept-attribute) that [equals](https://dom.spec.whatwg.org/#concept-node-equals) an [attribute](https://dom.spec.whatwg.org/#concept-attribute) in B's [attribute list](https://dom.spec.whatwg.org/#concept-element-attribute).
-- A and B have the same number of [children](https://dom.spec.whatwg.org/#concept-tree-child).
-- Each [child](https://dom.spec.whatwg.org/#concept-tree-child) of A [equals](https://dom.spec.whatwg.org/#concept-node-equals) the [child](https://dom.spec.whatwg.org/#concept-tree-child) of B at the identical [index](https://dom.spec.whatwg.org/#concept-tree-index).
+-   If A is an [element](https://dom.spec.whatwg.org/#concept-element), each [attribute](https://dom.spec.whatwg.org/#concept-attribute) in its [attribute list](https://dom.spec.whatwg.org/#concept-element-attribute) has an [attribute](https://dom.spec.whatwg.org/#concept-attribute) that [equals](https://dom.spec.whatwg.org/#concept-node-equals) an [attribute](https://dom.spec.whatwg.org/#concept-attribute) in B's [attribute list](https://dom.spec.whatwg.org/#concept-element-attribute).
+-   A and B have the same number of [children](https://dom.spec.whatwg.org/#concept-tree-child).
+-   Each [child](https://dom.spec.whatwg.org/#concept-tree-child) of A [equals](https://dom.spec.whatwg.org/#concept-node-equals) the [child](https://dom.spec.whatwg.org/#concept-tree-child) of B at the identical [index](https://dom.spec.whatwg.org/#concept-tree-index).
 
 The `isEqualNode(otherNode)` method steps are to return true if otherNode is non-null and [this](https://webidl.spec.whatwg.org/#this) [equals](https://dom.spec.whatwg.org/#concept-node-equals) otherNode; otherwise false.
 
@@ -4781,12 +4781,12 @@ Returns true if other is an [inclusive descendant](https://dom.spec.whatwg.org/#
 
 These are the constants `[compareDocumentPosition()](https://dom.spec.whatwg.org/#dom-node-comparedocumentposition)` returns as mask:
 
-- `DOCUMENT_POSITION_DISCONNECTED` (1);
-- `DOCUMENT_POSITION_PRECEDING` (2);
-- `DOCUMENT_POSITION_FOLLOWING` (4);
-- `DOCUMENT_POSITION_CONTAINS` (8);
-- `DOCUMENT_POSITION_CONTAINED_BY` (16, 10 in hexadecimal);
-- `DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC` (32, 20 in hexadecimal).
+-   `DOCUMENT_POSITION_DISCONNECTED` (1);
+-   `DOCUMENT_POSITION_PRECEDING` (2);
+-   `DOCUMENT_POSITION_FOLLOWING` (4);
+-   `DOCUMENT_POSITION_CONTAINS` (8);
+-   `DOCUMENT_POSITION_CONTAINED_BY` (16, 10 in hexadecimal);
+-   `DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC` (32, 20 in hexadecimal).
 
 The `compareDocumentPosition(other)` method steps are:
 
@@ -5038,8 +5038,8 @@ The list of elements with qualified name qualifiedName for a [node](https://dom.
 1.  If qualifiedName is U+002A (\*), then return a `[HTMLCollection](https://dom.spec.whatwg.org/#htmlcollection)` rooted at root, whose filter matches only [descendant](https://dom.spec.whatwg.org/#concept-tree-descendant) [elements](https://dom.spec.whatwg.org/#concept-element).
 2.  Otherwise, if root's [node document](https://dom.spec.whatwg.org/#concept-node-document) is an [HTML document](https://dom.spec.whatwg.org/#html-document), return a `[HTMLCollection](https://dom.spec.whatwg.org/#htmlcollection)` rooted at root, whose filter matches the following [descendant](https://dom.spec.whatwg.org/#concept-tree-descendant) [elements](https://dom.spec.whatwg.org/#concept-element):
 
-    - Whose [namespace](https://dom.spec.whatwg.org/#concept-element-namespace) is the [HTML namespace](https://infra.spec.whatwg.org/#html-namespace) and whose [qualified name](https://dom.spec.whatwg.org/#concept-element-qualified-name) is qualifiedName, in [ASCII lowercase](https://infra.spec.whatwg.org/#ascii-lowercase).
-    - Whose [namespace](https://dom.spec.whatwg.org/#concept-element-namespace) is _not_ the [HTML namespace](https://infra.spec.whatwg.org/#html-namespace) and whose [qualified name](https://dom.spec.whatwg.org/#concept-element-qualified-name) is qualifiedName.
+    -   Whose [namespace](https://dom.spec.whatwg.org/#concept-element-namespace) is the [HTML namespace](https://infra.spec.whatwg.org/#html-namespace) and whose [qualified name](https://dom.spec.whatwg.org/#concept-element-qualified-name) is qualifiedName, in [ASCII lowercase](https://infra.spec.whatwg.org/#ascii-lowercase).
+    -   Whose [namespace](https://dom.spec.whatwg.org/#concept-element-namespace) is _not_ the [HTML namespace](https://infra.spec.whatwg.org/#html-namespace) and whose [qualified name](https://dom.spec.whatwg.org/#concept-element-qualified-name) is qualifiedName.
 
 3.  Otherwise, return a `[HTMLCollection](https://dom.spec.whatwg.org/#htmlcollection)` rooted at root, whose filter matches [descendant](https://dom.spec.whatwg.org/#concept-tree-descendant) [elements](https://dom.spec.whatwg.org/#concept-element) whose [qualified name](https://dom.spec.whatwg.org/#concept-element-qualified-name) is qualifiedName.
 
@@ -5558,10 +5558,10 @@ If qualifiedName does not match the `[QName](https://www.w3.org/TR/xml-names/#NT
 
 If one of the following conditions is true a "`[NamespaceError](https://webidl.spec.whatwg.org/#namespaceerror)`" `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` will be thrown:
 
-- [Namespace prefix](https://dom.spec.whatwg.org/#concept-element-namespace-prefix) is not null and namespace is the empty string.
-- [Namespace prefix](https://dom.spec.whatwg.org/#concept-element-namespace-prefix) is "`xml`" and namespace is not the [XML namespace](https://infra.spec.whatwg.org/#xml-namespace).
-- qualifiedName or [namespace prefix](https://dom.spec.whatwg.org/#concept-element-namespace-prefix) is "`xmlns`" and namespace is not the [XMLNS namespace](https://infra.spec.whatwg.org/#xmlns-namespace).
-- namespace is the [XMLNS namespace](https://infra.spec.whatwg.org/#xmlns-namespace) and neither qualifiedName nor [namespace prefix](https://dom.spec.whatwg.org/#concept-element-namespace-prefix) is "`xmlns`".
+-   [Namespace prefix](https://dom.spec.whatwg.org/#concept-element-namespace-prefix) is not null and namespace is the empty string.
+-   [Namespace prefix](https://dom.spec.whatwg.org/#concept-element-namespace-prefix) is "`xml`" and namespace is not the [XML namespace](https://infra.spec.whatwg.org/#xml-namespace).
+-   qualifiedName or [namespace prefix](https://dom.spec.whatwg.org/#concept-element-namespace-prefix) is "`xmlns`" and namespace is not the [XMLNS namespace](https://infra.spec.whatwg.org/#xmlns-namespace).
+-   namespace is the [XMLNS namespace](https://infra.spec.whatwg.org/#xmlns-namespace) and neither qualifiedName nor [namespace prefix](https://dom.spec.whatwg.org/#concept-element-namespace-prefix) is "`xmlns`".
 
 When supplied, options's `[is](https://dom.spec.whatwg.org/#dom-elementcreationoptions-is)` can be used to create a [customized built-in element](https://html.spec.whatwg.org/multipage/custom-elements.html#customized-built-in-element).
 
@@ -6431,17 +6431,17 @@ A shadow-including inclusive ancestor is an object or one of its [shadow-includi
 
 A [node](https://dom.spec.whatwg.org/#concept-node) A is closed-shadow-hidden from a [node](https://dom.spec.whatwg.org/#concept-node) B if all of the following conditions are true:
 
-- A's [root](https://dom.spec.whatwg.org/#concept-tree-root) is a [shadow root](https://dom.spec.whatwg.org/#concept-shadow-root).
-- A's [root](https://dom.spec.whatwg.org/#concept-tree-root) is not a [shadow-including inclusive ancestor](https://dom.spec.whatwg.org/#concept-shadow-including-inclusive-ancestor) of B.
-- A's [root](https://dom.spec.whatwg.org/#concept-tree-root) is a [shadow root](https://dom.spec.whatwg.org/#concept-shadow-root) whose [mode](https://dom.spec.whatwg.org/#shadowroot-mode) is "`closed`" or A's [root](https://dom.spec.whatwg.org/#concept-tree-root)'s [host](https://dom.spec.whatwg.org/#concept-documentfragment-host) is [closed-shadow-hidden](https://dom.spec.whatwg.org/#concept-closed-shadow-hidden) from B.
+-   A's [root](https://dom.spec.whatwg.org/#concept-tree-root) is a [shadow root](https://dom.spec.whatwg.org/#concept-shadow-root).
+-   A's [root](https://dom.spec.whatwg.org/#concept-tree-root) is not a [shadow-including inclusive ancestor](https://dom.spec.whatwg.org/#concept-shadow-including-inclusive-ancestor) of B.
+-   A's [root](https://dom.spec.whatwg.org/#concept-tree-root) is a [shadow root](https://dom.spec.whatwg.org/#concept-shadow-root) whose [mode](https://dom.spec.whatwg.org/#shadowroot-mode) is "`closed`" or A's [root](https://dom.spec.whatwg.org/#concept-tree-root)'s [host](https://dom.spec.whatwg.org/#concept-documentfragment-host) is [closed-shadow-hidden](https://dom.spec.whatwg.org/#concept-closed-shadow-hidden) from B.
 
 To retarget an object A against an object B, repeat these steps until they return an object:
 
 1.  If one of the following is true
 
-    - A is not a [node](https://dom.spec.whatwg.org/#concept-node)
-    - A's [root](https://dom.spec.whatwg.org/#concept-tree-root) is not a [shadow root](https://dom.spec.whatwg.org/#concept-shadow-root)
-    - B is a [node](https://dom.spec.whatwg.org/#concept-node) and A's [root](https://dom.spec.whatwg.org/#concept-tree-root) is a [shadow-including inclusive ancestor](https://dom.spec.whatwg.org/#concept-shadow-including-inclusive-ancestor) of B
+    -   A is not a [node](https://dom.spec.whatwg.org/#concept-node)
+    -   A's [root](https://dom.spec.whatwg.org/#concept-tree-root) is not a [shadow root](https://dom.spec.whatwg.org/#concept-shadow-root)
+    -   B is a [node](https://dom.spec.whatwg.org/#concept-node) and A's [root](https://dom.spec.whatwg.org/#concept-tree-root) is a [shadow-including inclusive ancestor](https://dom.spec.whatwg.org/#concept-shadow-including-inclusive-ancestor) of B
 
     then return A.
 
@@ -7436,8 +7436,8 @@ The `attachShadow(init)` method steps are:
 1.  If [this](https://webidl.spec.whatwg.org/#this)'s [namespace](https://dom.spec.whatwg.org/#concept-element-namespace) is not the [HTML namespace](https://infra.spec.whatwg.org/#html-namespace), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[NotSupportedError](https://webidl.spec.whatwg.org/#notsupportederror)`" `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 2.  If [this](https://webidl.spec.whatwg.org/#this)'s [local name](https://dom.spec.whatwg.org/#concept-element-local-name) is not one of the following:
 
-    - a [valid custom element name](https://html.spec.whatwg.org/multipage/custom-elements.html#valid-custom-element-name)
-    - "`article`", "`aside`", "`blockquote`", "`body`", "`div`", "`footer`", "`h1`", "`h2`", "`h3`", "`h4`", "`h5`", "`h6`", "`header`", "`main`", "`nav`", "`p`", "`section`", or "`span`"
+    -   a [valid custom element name](https://html.spec.whatwg.org/multipage/custom-elements.html#valid-custom-element-name)
+    -   "`article`", "`aside`", "`blockquote`", "`body`", "`div`", "`footer`", "`h1`", "`h2`", "`h3`", "`h4`", "`h5`", "`h6`", "`header`", "`main`", "`nav`", "`p`", "`section`", or "`span`"
 
     then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[NotSupportedError](https://webidl.spec.whatwg.org/#notsupportederror)`" `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 
@@ -8317,12 +8317,12 @@ The constructor steps are to set [this](https://webidl.spec.whatwg.org/#this)'s 
 
 [Ranges](https://dom.spec.whatwg.org/#concept-range) are frequently used in editing for selecting and copying content.
 
-- `[Element](https://dom.spec.whatwg.org/#element)`: `p`
-    - `[Element](https://dom.spec.whatwg.org/#element)`: `<img src="insanity-wolf" alt="Little-endian BOM; decode as big-endian!">`
-    - `[Text](https://dom.spec.whatwg.org/#text)`: CSS 2.1 syndata is
-    - `[Element](https://dom.spec.whatwg.org/#element)`: `<em>`
-        - `[Text](https://dom.spec.whatwg.org/#text)`: awesome
-    - `[Text](https://dom.spec.whatwg.org/#text)`: !
+-   `[Element](https://dom.spec.whatwg.org/#element)`: `p`
+    -   `[Element](https://dom.spec.whatwg.org/#element)`: `<img src="insanity-wolf" alt="Little-endian BOM; decode as big-endian!">`
+    -   `[Text](https://dom.spec.whatwg.org/#text)`: CSS 2.1 syndata is
+    -   `[Element](https://dom.spec.whatwg.org/#element)`: `<em>`
+        -   `[Text](https://dom.spec.whatwg.org/#text)`: awesome
+    -   `[Text](https://dom.spec.whatwg.org/#text)`: !
 
 In the [node tree](https://dom.spec.whatwg.org/#concept-node-tree) above, a [range](https://dom.spec.whatwg.org/#concept-range) can be used to represent the sequence "syndata is awes". Assuming p is assigned to the `p` [element](https://dom.spec.whatwg.org/#concept-element), and em to the `em` [element](https://dom.spec.whatwg.org/#concept-element), this would be done as follows:
 
@@ -8762,10 +8762,10 @@ The `new StaticRange(init)` constructor steps are:
 
 A `[StaticRange](https://dom.spec.whatwg.org/#staticrange)` is valid[](https://dom.spec.whatwg.org/#staticrange-valid) if all of the following are true:
 
-- Its [start](https://dom.spec.whatwg.org/#concept-range-start) and [end](https://dom.spec.whatwg.org/#concept-range-end) are in the same [node tree](https://dom.spec.whatwg.org/#concept-node-tree).
-- Its [start offset](https://dom.spec.whatwg.org/#concept-range-start-offset) is between 0 and its [start node](https://dom.spec.whatwg.org/#concept-range-start-node)'s [length](https://dom.spec.whatwg.org/#concept-node-length), inclusive.
-- Its [end offset](https://dom.spec.whatwg.org/#concept-range-end-offset) is between 0 and its [end node](https://dom.spec.whatwg.org/#concept-range-end-node)'s [length](https://dom.spec.whatwg.org/#concept-node-length), inclusive.
-- Its [start](https://dom.spec.whatwg.org/#concept-range-start) is [before](https://dom.spec.whatwg.org/#concept-range-bp-before) or [equal](https://dom.spec.whatwg.org/#concept-range-bp-equal) to its [end](https://dom.spec.whatwg.org/#concept-range-end).
+-   Its [start](https://dom.spec.whatwg.org/#concept-range-start) and [end](https://dom.spec.whatwg.org/#concept-range-end) are in the same [node tree](https://dom.spec.whatwg.org/#concept-node-tree).
+-   Its [start offset](https://dom.spec.whatwg.org/#concept-range-start-offset) is between 0 and its [start node](https://dom.spec.whatwg.org/#concept-range-start-node)'s [length](https://dom.spec.whatwg.org/#concept-node-length), inclusive.
+-   Its [end offset](https://dom.spec.whatwg.org/#concept-range-end-offset) is between 0 and its [end node](https://dom.spec.whatwg.org/#concept-range-end-node)'s [length](https://dom.spec.whatwg.org/#concept-node-length), inclusive.
+-   Its [start](https://dom.spec.whatwg.org/#concept-range-start) is [before](https://dom.spec.whatwg.org/#concept-range-bp-before) or [equal](https://dom.spec.whatwg.org/#concept-range-bp-equal) to its [end](https://dom.spec.whatwg.org/#concept-range-end).
 
 ### 5.5. Interface `[Range](https://dom.spec.whatwg.org/#range)`[](https://dom.spec.whatwg.org/#interface-range)
 
@@ -8838,15 +8838,15 @@ A [node](https://dom.spec.whatwg.org/#concept-node) is partially contained in a 
 
 Some facts to better understand these definitions:
 
-- The content that one would think of as being within the [live range](https://dom.spec.whatwg.org/#concept-live-range) consists of all [contained](https://dom.spec.whatwg.org/#contained) [nodes](https://dom.spec.whatwg.org/#concept-node), plus possibly some of the contents of the [start node](https://dom.spec.whatwg.org/#concept-range-start-node) and [end node](https://dom.spec.whatwg.org/#concept-range-end-node) if those are `[CharacterData](https://dom.spec.whatwg.org/#characterdata)` [nodes](https://dom.spec.whatwg.org/#concept-node).
-- The [nodes](https://dom.spec.whatwg.org/#concept-node) that are contained in a [live range](https://dom.spec.whatwg.org/#concept-live-range) will generally not be contiguous, because the [parent](https://dom.spec.whatwg.org/#concept-tree-parent) of a [contained](https://dom.spec.whatwg.org/#contained) [node](https://dom.spec.whatwg.org/#concept-node) will not always be [contained](https://dom.spec.whatwg.org/#contained).
-- However, the [descendants](https://dom.spec.whatwg.org/#concept-tree-descendant) of a [contained](https://dom.spec.whatwg.org/#contained) [node](https://dom.spec.whatwg.org/#concept-node) are [contained](https://dom.spec.whatwg.org/#contained), and if two [siblings](https://dom.spec.whatwg.org/#concept-tree-sibling) are [contained](https://dom.spec.whatwg.org/#contained), so are any [siblings](https://dom.spec.whatwg.org/#concept-tree-sibling) that lie between them.
-- The [start node](https://dom.spec.whatwg.org/#concept-range-start-node) and [end node](https://dom.spec.whatwg.org/#concept-range-end-node) of a [live range](https://dom.spec.whatwg.org/#concept-live-range) are never [contained](https://dom.spec.whatwg.org/#contained) within it.
-- The first [contained](https://dom.spec.whatwg.org/#contained) [node](https://dom.spec.whatwg.org/#concept-node) (if there are any) will always be after the [start node](https://dom.spec.whatwg.org/#concept-range-start-node), and the last [contained](https://dom.spec.whatwg.org/#contained) [node](https://dom.spec.whatwg.org/#concept-node) will always be equal to or before the [end node](https://dom.spec.whatwg.org/#concept-range-end-node)'s last [descendant](https://dom.spec.whatwg.org/#concept-tree-descendant).
-- There exists a [partially contained](https://dom.spec.whatwg.org/#partially-contained) [node](https://dom.spec.whatwg.org/#concept-node) if and only if the [start node](https://dom.spec.whatwg.org/#concept-range-start-node) and [end node](https://dom.spec.whatwg.org/#concept-range-end-node) are different.
-- The `[commonAncestorContainer](https://dom.spec.whatwg.org/#dom-range-commonancestorcontainer)` attribute value is neither [contained](https://dom.spec.whatwg.org/#contained) nor [partially contained](https://dom.spec.whatwg.org/#partially-contained).
-- If the [start node](https://dom.spec.whatwg.org/#concept-range-start-node) is an [ancestor](https://dom.spec.whatwg.org/#concept-tree-ancestor) of the [end node](https://dom.spec.whatwg.org/#concept-range-end-node), the common [inclusive ancestor](https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor) will be the [start node](https://dom.spec.whatwg.org/#concept-range-start-node). Exactly one of its [children](https://dom.spec.whatwg.org/#concept-tree-child) will be [partially contained](https://dom.spec.whatwg.org/#partially-contained), and a [child](https://dom.spec.whatwg.org/#concept-tree-child) will be [contained](https://dom.spec.whatwg.org/#contained) if and only if it [precedes](https://dom.spec.whatwg.org/#concept-tree-preceding) the [partially contained](https://dom.spec.whatwg.org/#partially-contained) [child](https://dom.spec.whatwg.org/#concept-tree-child). If the [end node](https://dom.spec.whatwg.org/#concept-range-end-node) is an [ancestor](https://dom.spec.whatwg.org/#concept-tree-ancestor) of the [start node](https://dom.spec.whatwg.org/#concept-range-start-node), the opposite holds.
-- If the [start node](https://dom.spec.whatwg.org/#concept-range-start-node) is not an [inclusive ancestor](https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor) of the [end node](https://dom.spec.whatwg.org/#concept-range-end-node), nor vice versa, the common [inclusive ancestor](https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor) will be distinct from both of them. Exactly two of its [children](https://dom.spec.whatwg.org/#concept-tree-child) will be [partially contained](https://dom.spec.whatwg.org/#partially-contained), and a [child](https://dom.spec.whatwg.org/#concept-tree-child) will be contained if and only if it lies between those two.
+-   The content that one would think of as being within the [live range](https://dom.spec.whatwg.org/#concept-live-range) consists of all [contained](https://dom.spec.whatwg.org/#contained) [nodes](https://dom.spec.whatwg.org/#concept-node), plus possibly some of the contents of the [start node](https://dom.spec.whatwg.org/#concept-range-start-node) and [end node](https://dom.spec.whatwg.org/#concept-range-end-node) if those are `[CharacterData](https://dom.spec.whatwg.org/#characterdata)` [nodes](https://dom.spec.whatwg.org/#concept-node).
+-   The [nodes](https://dom.spec.whatwg.org/#concept-node) that are contained in a [live range](https://dom.spec.whatwg.org/#concept-live-range) will generally not be contiguous, because the [parent](https://dom.spec.whatwg.org/#concept-tree-parent) of a [contained](https://dom.spec.whatwg.org/#contained) [node](https://dom.spec.whatwg.org/#concept-node) will not always be [contained](https://dom.spec.whatwg.org/#contained).
+-   However, the [descendants](https://dom.spec.whatwg.org/#concept-tree-descendant) of a [contained](https://dom.spec.whatwg.org/#contained) [node](https://dom.spec.whatwg.org/#concept-node) are [contained](https://dom.spec.whatwg.org/#contained), and if two [siblings](https://dom.spec.whatwg.org/#concept-tree-sibling) are [contained](https://dom.spec.whatwg.org/#contained), so are any [siblings](https://dom.spec.whatwg.org/#concept-tree-sibling) that lie between them.
+-   The [start node](https://dom.spec.whatwg.org/#concept-range-start-node) and [end node](https://dom.spec.whatwg.org/#concept-range-end-node) of a [live range](https://dom.spec.whatwg.org/#concept-live-range) are never [contained](https://dom.spec.whatwg.org/#contained) within it.
+-   The first [contained](https://dom.spec.whatwg.org/#contained) [node](https://dom.spec.whatwg.org/#concept-node) (if there are any) will always be after the [start node](https://dom.spec.whatwg.org/#concept-range-start-node), and the last [contained](https://dom.spec.whatwg.org/#contained) [node](https://dom.spec.whatwg.org/#concept-node) will always be equal to or before the [end node](https://dom.spec.whatwg.org/#concept-range-end-node)'s last [descendant](https://dom.spec.whatwg.org/#concept-tree-descendant).
+-   There exists a [partially contained](https://dom.spec.whatwg.org/#partially-contained) [node](https://dom.spec.whatwg.org/#concept-node) if and only if the [start node](https://dom.spec.whatwg.org/#concept-range-start-node) and [end node](https://dom.spec.whatwg.org/#concept-range-end-node) are different.
+-   The `[commonAncestorContainer](https://dom.spec.whatwg.org/#dom-range-commonancestorcontainer)` attribute value is neither [contained](https://dom.spec.whatwg.org/#contained) nor [partially contained](https://dom.spec.whatwg.org/#partially-contained).
+-   If the [start node](https://dom.spec.whatwg.org/#concept-range-start-node) is an [ancestor](https://dom.spec.whatwg.org/#concept-tree-ancestor) of the [end node](https://dom.spec.whatwg.org/#concept-range-end-node), the common [inclusive ancestor](https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor) will be the [start node](https://dom.spec.whatwg.org/#concept-range-start-node). Exactly one of its [children](https://dom.spec.whatwg.org/#concept-tree-child) will be [partially contained](https://dom.spec.whatwg.org/#partially-contained), and a [child](https://dom.spec.whatwg.org/#concept-tree-child) will be [contained](https://dom.spec.whatwg.org/#contained) if and only if it [precedes](https://dom.spec.whatwg.org/#concept-tree-preceding) the [partially contained](https://dom.spec.whatwg.org/#partially-contained) [child](https://dom.spec.whatwg.org/#concept-tree-child). If the [end node](https://dom.spec.whatwg.org/#concept-range-end-node) is an [ancestor](https://dom.spec.whatwg.org/#concept-tree-ancestor) of the [start node](https://dom.spec.whatwg.org/#concept-range-start-node), the opposite holds.
+-   If the [start node](https://dom.spec.whatwg.org/#concept-range-start-node) is not an [inclusive ancestor](https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor) of the [end node](https://dom.spec.whatwg.org/#concept-range-end-node), nor vice versa, the common [inclusive ancestor](https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor) will be distinct from both of them. Exactly two of its [children](https://dom.spec.whatwg.org/#concept-tree-child) will be [partially contained](https://dom.spec.whatwg.org/#partially-contained), and a [child](https://dom.spec.whatwg.org/#concept-tree-child) will be contained if and only if it lies between those two.
 
 ---
 
@@ -9154,10 +9154,10 @@ The `compareBoundaryPoints(how, sourceRange)` method steps are:
 
 1.  If how is not one of
 
-    - `[START_TO_START](https://dom.spec.whatwg.org/#dom-range-start_to_start)`,
-    - `[START_TO_END](https://dom.spec.whatwg.org/#dom-range-start_to_end)`,
-    - `[END_TO_END](https://dom.spec.whatwg.org/#dom-range-end_to_end)`, and
-    - `[END_TO_START](https://dom.spec.whatwg.org/#dom-range-end_to_start)`,
+    -   `[START_TO_START](https://dom.spec.whatwg.org/#dom-range-start_to_start)`,
+    -   `[START_TO_END](https://dom.spec.whatwg.org/#dom-range-start_to_end)`,
+    -   `[END_TO_END](https://dom.spec.whatwg.org/#dom-range-end_to_end)`, and
+    -   `[END_TO_START](https://dom.spec.whatwg.org/#dom-range-end_to_start)`,
 
     then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[NotSupportedError](https://webidl.spec.whatwg.org/#notsupportederror)`" `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 
@@ -10302,22 +10302,22 @@ const [unsigned long](https://webidl.spec.whatwg.org/#idl-unsigned-long) `SHOW_N
 
 These constants can be used as [filter](https://dom.spec.whatwg.org/#concept-traversal-filter) return value:
 
-- `FILTER_ACCEPT` (1);
-- `FILTER_REJECT` (2);
-- `FILTER_SKIP` (3).
+-   `FILTER_ACCEPT` (1);
+-   `FILTER_REJECT` (2);
+-   `FILTER_SKIP` (3).
 
 These constants can be used for [whatToShow](https://dom.spec.whatwg.org/#concept-traversal-whattoshow):
 
-- `SHOW_ALL` (4294967295, FFFFFFFF in hexadecimal);
-- `SHOW_ELEMENT` (1);
-- `SHOW_ATTRIBUTE` (2);
-- `SHOW_TEXT` (4);
-- `SHOW_CDATA_SECTION` (8);
-- `SHOW_PROCESSING_INSTRUCTION` (64, 40 in hexadecimal);
-- (128, 80 in hexadecimal);
-- `SHOW_DOCUMENT` (256, 100 in hexadecimal);
-- `SHOW_DOCUMENT_TYPE` (512, 200 in hexadecimal);
-- `SHOW_DOCUMENT_FRAGMENT` (1024, 400 in hexadecimal).
+-   `SHOW_ALL` (4294967295, FFFFFFFF in hexadecimal);
+-   `SHOW_ELEMENT` (1);
+-   `SHOW_ATTRIBUTE` (2);
+-   `SHOW_TEXT` (4);
+-   `SHOW_CDATA_SECTION` (8);
+-   `SHOW_PROCESSING_INSTRUCTION` (64, 40 in hexadecimal);
+-   (128, 80 in hexadecimal);
+-   `SHOW_DOCUMENT` (256, 100 in hexadecimal);
+-   `SHOW_DOCUMENT_TYPE` (512, 200 in hexadecimal);
+-   `SHOW_DOCUMENT_FRAGMENT` (1024, 400 in hexadecimal).
 
 ## 7\. Sets[](https://dom.spec.whatwg.org/#sets)
 
@@ -11111,78 +11111,78 @@ This standard used to contain several interfaces and interface members that have
 
 These interfaces have been removed:
 
-- `DOMConfiguration`[](https://dom.spec.whatwg.org/#domconfiguration)
-- `DOMError`[](https://dom.spec.whatwg.org/#domerror)
-- `DOMErrorHandler`[](https://dom.spec.whatwg.org/#domerrorhandler)
-- `DOMImplementationList`[](https://dom.spec.whatwg.org/#domimplementationlist)
-- `DOMImplementationSource`[](https://dom.spec.whatwg.org/#domimplementationsource)
-- `DOMLocator`[](https://dom.spec.whatwg.org/#domlocator)
-- `DOMObject`[](https://dom.spec.whatwg.org/#domobject)
-- `DOMUserData`[](https://dom.spec.whatwg.org/#domuserdata)
-- `Entity`[](https://dom.spec.whatwg.org/#entity)
-- `EntityReference`[](https://dom.spec.whatwg.org/#entityreference)
-- `MutationEvent`[](https://dom.spec.whatwg.org/#mutationevent)
-- `MutationNameEvent`[](https://dom.spec.whatwg.org/#mutationnameevent)
-- `NameList`[](https://dom.spec.whatwg.org/#namelist)
-- `Notation`[](https://dom.spec.whatwg.org/#notation)
-- `RangeException`[](https://dom.spec.whatwg.org/#rangeexception)
-- `TypeInfo`[](https://dom.spec.whatwg.org/#typeinfo)
-- `UserDataHandler`[](https://dom.spec.whatwg.org/#userdatahandler)
+-   `DOMConfiguration`[](https://dom.spec.whatwg.org/#domconfiguration)
+-   `DOMError`[](https://dom.spec.whatwg.org/#domerror)
+-   `DOMErrorHandler`[](https://dom.spec.whatwg.org/#domerrorhandler)
+-   `DOMImplementationList`[](https://dom.spec.whatwg.org/#domimplementationlist)
+-   `DOMImplementationSource`[](https://dom.spec.whatwg.org/#domimplementationsource)
+-   `DOMLocator`[](https://dom.spec.whatwg.org/#domlocator)
+-   `DOMObject`[](https://dom.spec.whatwg.org/#domobject)
+-   `DOMUserData`[](https://dom.spec.whatwg.org/#domuserdata)
+-   `Entity`[](https://dom.spec.whatwg.org/#entity)
+-   `EntityReference`[](https://dom.spec.whatwg.org/#entityreference)
+-   `MutationEvent`[](https://dom.spec.whatwg.org/#mutationevent)
+-   `MutationNameEvent`[](https://dom.spec.whatwg.org/#mutationnameevent)
+-   `NameList`[](https://dom.spec.whatwg.org/#namelist)
+-   `Notation`[](https://dom.spec.whatwg.org/#notation)
+-   `RangeException`[](https://dom.spec.whatwg.org/#rangeexception)
+-   `TypeInfo`[](https://dom.spec.whatwg.org/#typeinfo)
+-   `UserDataHandler`[](https://dom.spec.whatwg.org/#userdatahandler)
 
 And these interface members have been removed:
 
 `[Attr](https://dom.spec.whatwg.org/#attr)`
 
-- `schemaTypeInfo`[](https://dom.spec.whatwg.org/#dom-attr-schematypeinfo)
-- `isId`[](https://dom.spec.whatwg.org/#dom-attr-isid)
+-   `schemaTypeInfo`[](https://dom.spec.whatwg.org/#dom-attr-schematypeinfo)
+-   `isId`[](https://dom.spec.whatwg.org/#dom-attr-isid)
 
 `[Document](https://dom.spec.whatwg.org/#document)`
 
-- `createEntityReference()`[](https://dom.spec.whatwg.org/#dom-document-createentityreference)
-- `xmlEncoding`[](https://dom.spec.whatwg.org/#dom-document-xmlencoding)
-- `xmlStandalone`[](https://dom.spec.whatwg.org/#dom-document-xmlstandalone)
-- `xmlVersion`[](https://dom.spec.whatwg.org/#dom-document-xmlversion)
-- `strictErrorChecking`[](https://dom.spec.whatwg.org/#dom-document-stricterrorchecking)
-- `domConfig`[](https://dom.spec.whatwg.org/#dom-document-domconfig)
-- `normalizeDocument()`[](https://dom.spec.whatwg.org/#dom-document-normalizedocument)
-- `renameNode()`[](https://dom.spec.whatwg.org/#dom-document-renamenode)
+-   `createEntityReference()`[](https://dom.spec.whatwg.org/#dom-document-createentityreference)
+-   `xmlEncoding`[](https://dom.spec.whatwg.org/#dom-document-xmlencoding)
+-   `xmlStandalone`[](https://dom.spec.whatwg.org/#dom-document-xmlstandalone)
+-   `xmlVersion`[](https://dom.spec.whatwg.org/#dom-document-xmlversion)
+-   `strictErrorChecking`[](https://dom.spec.whatwg.org/#dom-document-stricterrorchecking)
+-   `domConfig`[](https://dom.spec.whatwg.org/#dom-document-domconfig)
+-   `normalizeDocument()`[](https://dom.spec.whatwg.org/#dom-document-normalizedocument)
+-   `renameNode()`[](https://dom.spec.whatwg.org/#dom-document-renamenode)
 
 `[DocumentType](https://dom.spec.whatwg.org/#documenttype)`
 
-- `entities`[](https://dom.spec.whatwg.org/#dom-documenttype-entities)
-- `notations`[](https://dom.spec.whatwg.org/#dom-documenttype-notations)
-- `internalSubset`[](https://dom.spec.whatwg.org/#dom-documenttype-internalsubset)
+-   `entities`[](https://dom.spec.whatwg.org/#dom-documenttype-entities)
+-   `notations`[](https://dom.spec.whatwg.org/#dom-documenttype-notations)
+-   `internalSubset`[](https://dom.spec.whatwg.org/#dom-documenttype-internalsubset)
 
 `[DOMImplementation](https://dom.spec.whatwg.org/#domimplementation)`
 
-- `getFeature()`[](https://dom.spec.whatwg.org/#dom-domimplementation-getfeature)
+-   `getFeature()`[](https://dom.spec.whatwg.org/#dom-domimplementation-getfeature)
 
 `[Element](https://dom.spec.whatwg.org/#element)`
 
-- `schemaTypeInfo`[](https://dom.spec.whatwg.org/#dom-element-schematypeinfo)
-- `setIdAttribute()`[](https://dom.spec.whatwg.org/#dom-element-setidattribute)
-- `setIdAttributeNS()`[](https://dom.spec.whatwg.org/#dom-element-setidattributens)
-- `setIdAttributeNode()`[](https://dom.spec.whatwg.org/#dom-element-setidattributenode)
+-   `schemaTypeInfo`[](https://dom.spec.whatwg.org/#dom-element-schematypeinfo)
+-   `setIdAttribute()`[](https://dom.spec.whatwg.org/#dom-element-setidattribute)
+-   `setIdAttributeNS()`[](https://dom.spec.whatwg.org/#dom-element-setidattributens)
+-   `setIdAttributeNode()`[](https://dom.spec.whatwg.org/#dom-element-setidattributenode)
 
 `[Node](https://dom.spec.whatwg.org/#node)`
 
-- `isSupported`[](https://dom.spec.whatwg.org/#dom-node-issupported)
-- `getFeature()`[](https://dom.spec.whatwg.org/#dom-node-getfeature)
-- `getUserData()`[](https://dom.spec.whatwg.org/#dom-node-getuserdata)
-- `setUserData()`[](https://dom.spec.whatwg.org/#dom-node-setuserdata)
+-   `isSupported`[](https://dom.spec.whatwg.org/#dom-node-issupported)
+-   `getFeature()`[](https://dom.spec.whatwg.org/#dom-node-getfeature)
+-   `getUserData()`[](https://dom.spec.whatwg.org/#dom-node-getuserdata)
+-   `setUserData()`[](https://dom.spec.whatwg.org/#dom-node-setuserdata)
 
 `[NodeIterator](https://dom.spec.whatwg.org/#nodeiterator)`
 
-- `expandEntityReferences`[](https://dom.spec.whatwg.org/#dom-nodeiterator-expandentityreferences)
+-   `expandEntityReferences`[](https://dom.spec.whatwg.org/#dom-nodeiterator-expandentityreferences)
 
 `[Text](https://dom.spec.whatwg.org/#text)`
 
-- `isElementContentWhitespace`[](https://dom.spec.whatwg.org/#dom-text-iselementcontentwhitespace)
-- `replaceWholeText()`[](https://dom.spec.whatwg.org/#dom-text-replacewholetext)
+-   `isElementContentWhitespace`[](https://dom.spec.whatwg.org/#dom-text-iselementcontentwhitespace)
+-   `replaceWholeText()`[](https://dom.spec.whatwg.org/#dom-text-replacewholetext)
 
 `[TreeWalker](https://dom.spec.whatwg.org/#treewalker)`
 
-- `expandEntityReferences`[](https://dom.spec.whatwg.org/#dom-treewalker-expandentityreferences)
+-   `expandEntityReferences`[](https://dom.spec.whatwg.org/#dom-treewalker-expandentityreferences)
 
 ## Acknowledgments[](https://dom.spec.whatwg.org/#acks)
 

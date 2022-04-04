@@ -18,10 +18,7 @@ or inside a function:
 
 ---
 
-
 ```js
-
-
 function f() {
     // Function-level strict mode syntax
     'use strict';

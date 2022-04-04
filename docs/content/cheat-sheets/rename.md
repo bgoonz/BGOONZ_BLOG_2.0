@@ -1,7 +1,6 @@
 ---
 title: rename
 category: CLI
-
 ---
 
 ### Installation
@@ -38,4 +37,4 @@ Replace `.png` with `.jpg.png` in `*.png`.
 
 ## Also see
 
-- [Rename website](http://plasmasturm.org/code/rename/) _(plasmasturm.org)_
+-   [Rename website](http://plasmasturm.org/code/rename/) _(plasmasturm.org)_

@@ -44,10 +44,7 @@ unnamedFunc(); // Global context
 
 ---
 
-
 ```js
-
-
 function namedFunc(params) {
     return 'named function';
 }

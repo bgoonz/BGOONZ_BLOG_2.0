@@ -54,7 +54,7 @@ describes JavaScript regular expressions.
 
 You construct a regular expression in one of two ways:
 
-- Using a regular expression literal, which consists of a pattern
+-   Using a regular expression literal, which consists of a pattern
     enclosed between slashes, as follows:
 
     ```{.brush: .js .notranslate}
@@ -65,7 +65,7 @@ You construct a regular expression in one of two ways:
     expression when the script is loaded. If the regular
     expression remains constant, using this can improve performance.
 
-- Or calling the constructor function of the
+-   Or calling the constructor function of the
     [`RegExp`](../Reference/Global_Objects/RegExp.html) object, as
     follows:
 
@@ -218,7 +218,7 @@ performs a global search, looking in the whole string and returning all
 matches. It is explained in detail below in [Advanced Searching With
 Flags](Regular_Expressions.html#Advanced_searching_with_flags).
 
-*Why isn\'t this built into JavaScript?* There is a proposal to add such
+_Why isn\'t this built into JavaScript?_ There is a proposal to add such
 a function to RegExp, but it was [rejected by
 TC39.](../../../../../../external.html?link=https://github.com/benjamingr/RegExp.escape/issues/37){.external}
 
@@ -441,12 +441,12 @@ let re = new RegExp('\\w+\\s', 'g');
 and get the same result.
 
 The behavior associated with the `g` flag is different when the
-`.exec()` method is used.  The roles of \"class\" and \"argument\" get
+`.exec()` method is used. The roles of \"class\" and \"argument\" get
 reversed: In the case of `.match()`, the string class (or data type)
 owns the method and the regular expression is just an argument, while in
 the case of `.exec()`, it is the regular expression that owns the
-method, with the string being the argument.  Contrast this
-_`str.match(re)`_ versus _`re.exec(str)`_.  The `g` flag is used with
+method, with the string being the argument. Contrast this
+_`str.match(re)`_ versus _`re.exec(str)`_. The `g` flag is used with
 the **`.exec()`** method to get iterative progression.
 
 ```{.brush: .js .notranslate}
@@ -467,7 +467,7 @@ start or end of the entire string.
 ::: {.blockIndicator .note}
 **Note:** Several examples are also available in:
 
-- The reference pages for
+-   The reference pages for
     [`exec()`](../Reference/Global_Objects/RegExp/exec.html),
     [`test()`](../Reference/Global_Objects/RegExp/test.html),
     [`match()`](../Reference/Global_Objects/String/match.html),
@@ -475,7 +475,7 @@ start or end of the entire string.
     [`search()`](../Reference/Global_Objects/String/search.html),
     [`replace()`](../Reference/Global_Objects/String/replace.html),
     [`split()`](../Reference/Global_Objects/String/split.html)
-- This guide articles\': [character
+-   This guide articles\': [character
     classes](Regular_Expressions/Character_Classes.html),
     [assertions](Regular_Expressions/Assertions.html), [groups and
     ranges](Regular_Expressions/Groups_and_Ranges.html),

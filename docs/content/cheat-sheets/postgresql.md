@@ -12,12 +12,12 @@ Replace anything within `<placeholder>` accordingly
 
 ### Commands
 
-- Show roles: `\du`
-- Show tables: `\dt`
-- Show databases: `\l`
-- Connect to a database: `\c <database>`
-- Show columns of a table: `\d <table>` or `\d+ <table>`
-- Quit: `\q`
+-   Show roles: `\du`
+-   Show tables: `\dt`
+-   Show databases: `\l`
+-   Connect to a database: `\c <database>`
+-   Show columns of a table: `\d <table>` or `\d+ <table>`
+-   Quit: `\q`
 
 ### Creating database
 

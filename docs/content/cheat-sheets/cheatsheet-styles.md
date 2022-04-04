@@ -33,59 +33,66 @@ You can refer to this when contributing your own cheatsheets to the [GitHub repo
 {: .-three-column}
 
 ### H2 sections
-||
-|---|---|
-| `-one-column` | |
-| `-two-column` | _(default)_|
-| `-three-column` | |
+
+|                   |
+| ----------------- | ----------------------------------- |
+| `-one-column`     |                                     |
+| `-two-column`     | _(default)_                         |
+| `-three-column`   |                                     |
 | `-left-reference` | 3 columns<br>_(short first column)_ |
-| `-no-hide` | Don't hide H2 |
+| `-no-hide`        | Don't hide H2                       |
 
 See: [H2 sections](#two-columns)
 
 ### H3 sections
-||
-|---|---|
+
+|          |
+| -------- | --------- |
 | `-prime` | Highlight |
 
 See: [H3 sections](#h3-sections-1)
 
 ### Tables
-||
-|---|---|
-| `-bold-first` | Bold first column |
-| `-headers` | Show headers |
+
+|               |
+| ------------- | ----------------------------- |
+| `-bold-first` | Bold first column             |
+| `-headers`    | Show headers                  |
 | `-left-align` | Don't right align last column |
-| `-mute-em` | Lower opacity for italics |
-| `-no-wrap` | Don't wrap text |
-| `-shortcuts` | Shortcut keys |
+| `-mute-em`    | Lower opacity for italics     |
+| `-no-wrap`    | Don't wrap text               |
+| `-shortcuts`  | Shortcut keys                 |
 
 See: [Tables](#tables-1)
 
 ### Code
-||
-|---|---|
+
+|              |
+| ------------ | ------------------------------------------- |
 | `-box-chars` | Less line height<br>_for box drawing chars_ |
-| `-setup` | Gray background |
-| `-wrap` | Enables line-wrapping |
+| `-setup`     | Gray background                             |
+| `-wrap`      | Enables line-wrapping                       |
 
 See: [Code](#code-1)
 
 ### Paragraphs
-||
-|---|---|
-| `-setup` | Gray background |
+
+|              |
+| ------------ | --------------------- |
+| `-setup`     | Gray background       |
 | `-crosslink` | Has arrow on the link |
+
 {: .-gray}
 
 See: [Paragraphs](#paragraphs-1)
 
 ### Lists
-||
-|---|---|
-| `-also-see` | Lighter background |
-| `-four-column` | |
-| `-six-column` | |
+
+|                |
+| -------------- | ------------------ |
+| `-also-see`    | Lighter background |
+| `-four-column` |                    |
+| `-six-column`  |                    |
 
 See: [Lists](#lists-1)
 
@@ -110,14 +117,14 @@ Each section can have the following children:
 
 #### White
 
-- `pre`
-- `ul`
-- `table`
+-   `pre`
+-   `ul`
+-   `table`
 
 #### Gray
 
-- `p`
-- `h4`
+-   `p`
+-   `h4`
 
 ### Prime section
 
@@ -221,10 +228,7 @@ Add `{: .-setup}` to a `pre` or `table` or `ul`.
 
 ---
 
-
 ```js
-
-
 function createNode(nodeName: string, options: { key: string }) {
     return true;
 }
@@ -248,9 +252,9 @@ Add `-wrap` to wrap long lines.
 
 ### Lists
 
-- This is
-- a list
-- with a few items
+-   This is
+-   a list
+-   with a few items
 
 Here's an extra paragraph after the list.
 
@@ -258,14 +262,14 @@ Here's an extra paragraph after the list.
 
 #### Part 1
 
-- `createElement()`
-- `componentDidMount()`
-- `componentWillUnmount()`
+-   `createElement()`
+-   `componentDidMount()`
+-   `componentWillUnmount()`
 
 #### Part 2
 
-- `shouldComponentUpdate()`
-- `componentWillReceiveProps()`
+-   `shouldComponentUpdate()`
+-   `componentWillReceiveProps()`
 
 Here's an extra paragraph after the list.
 
@@ -275,50 +279,50 @@ Here's an extra paragraph after the list.
 
 ### Six columns
 
-- One
-- Two
-- Three
-- Four
-- Five
-- Six
-- Seven
-- Eight
-- Nine
-- Ten
-- Eleven
+-   One
+-   Two
+-   Three
+-   Four
+-   Five
+-   Six
+-   Seven
+-   Eight
+-   Nine
+-   Ten
+-   Eleven
     {: .-six-column}
 
 Add `{: .-six-column}` to make large lists.
 
 ### Four columns
 
-- One
-- Two
-- Three
-- Four
-- Five
-- Six
-- Seven
-- Eight
-- Nine
-- Ten
-- Eleven
+-   One
+-   Two
+-   Three
+-   Four
+-   Five
+-   Six
+-   Seven
+-   Eight
+-   Nine
+-   Ten
+-   Eleven
     {: .-four-column}
 
 Add `{: .-four-column}` to make large lists.
 
 ### Also see
 
-- One
-- Two
-- Three
-- Four
-- Five
-- Six
-- Seven
-- Eight
-- Nine
-- Ten
+-   One
+-   Two
+-   Three
+-   Four
+-   Five
+-   Six
+-   Seven
+-   Eight
+-   Nine
+-   Ten
     {: .-also-see}
 
 Add `{: .-also-see}`.
@@ -366,8 +370,9 @@ Add `{: .-crosslink}` to make big loud external links:
 ### Basic table
 
 #### Date
-||
-|---|---|
+
+|                 |
+| --------------- | ---------------------- |
 | Example         | Output                 |
 | --------------- | ---------------------- |
 | `%m/%d/%Y`      | `06/05/2013`           |
@@ -375,8 +380,9 @@ Add `{: .-crosslink}` to make big loud external links:
 | `%b %e %a`      | `Jun 5 Sun`            |
 
 #### Time
-||
-|---|---|
+
+|            |
+| ---------- | ---------- |
 | Example    | Output     |
 | ---------- | ---------- |
 | `%H:%M`    | `23:05`    |
@@ -385,22 +391,25 @@ Add `{: .-crosslink}` to make big loud external links:
 This is a basic table with h4's.
 
 ### Shortcuts
-||
-|---|---|
-| `V` | Vector |
-| `P` | Pencil |
-| `T` | Text |
-| `L` | Line |
+
+|     |
+| --- | --------- |
+| `V` | Vector    |
+| `P` | Pencil    |
+| `T` | Text      |
+| `L` | Line      |
 | `R` | Rectangle |
-| `O` | Oval |
-| `U` | Rounded |
+| `O` | Oval      |
+| `U` | Rounded   |
+
 {: .-shortcuts}
 
 Add `{: .-shortcuts}` to tables.
 
 ### With headers
-||
-|---|---|
+
+|        |
+| ------ | --------------------- | -------- |
 | Prefix | Example               | What     |
 | ------ | --------------------- | -------- |
 | `//`   | `//hr[@class='edge']` | Anywhere |

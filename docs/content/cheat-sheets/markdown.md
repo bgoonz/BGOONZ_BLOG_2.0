@@ -62,18 +62,18 @@ _italic_
 ### Lists
 
 ```markdown
-- Item 1
-- Item 2
+-   Item 1
+-   Item 2
 ```
 
 ```markdown
-- Item 1
-- Item 2
+-   Item 1
+-   Item 2
 ```
 
 ```markdown
-- [ ] Checkbox off
-- [x] Checkbox on
+-   [ ] Checkbox off
+-   [x] Checkbox on
 ```
 
 ```markdown
@@ -100,7 +100,7 @@ _italic_
 
 ```markdown
 ![Image alt text](/path/to/img.jpg)
-![Image alt text](/path/to/img.jpg "title")
+![Image alt text](/path/to/img.jpg 'title')
 ![Image alt text][img]
 ```
 
@@ -116,16 +116,22 @@ _italic_
 ```
 
 ```markdown
-```
-code fences
-```
+
 ```
 
-```markdown
+code fences
+
+```
+
+```
+
+````markdown
 ```js
 codeFences.withLanguage();
 ```
-```
+````
+
+````
 
 ### Blockquotes
 
@@ -135,7 +141,7 @@ codeFences.withLanguage();
 >
 > > Nested
 > > Blockquote
-```
+````
 
 ### Horizontal line
 

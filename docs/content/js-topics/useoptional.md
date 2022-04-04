@@ -14,10 +14,7 @@ Example function where arguments 2 and 3 are optional
 
 ---
 
-
 ```js
-
-
 function example(err, optionalA, optionalB, callback) {
     // retrieve arguments as array
     var args = new Array(arguments.length);

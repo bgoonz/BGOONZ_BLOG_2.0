@@ -229,69 +229,81 @@ WHERE column BETWEEN low AND high;
 
 Query data using the [`IN`](https://www.postgresqltutorial.com/postgresql-in/) `` operator:
 
-```
+````
 SELECT * FROM table_name
-WHERE column IN (value1, value2,...); 
+WHERE column IN (value1, value2,...);
 ```js
 
 constrain the returned rows with the [`LIMIT`](https://www.postgresqltutorial.com/postgresql-limit/) clause:
 
-```
-SELECT * FROM table_name
+````
+
+SELECT \* FROM table_name
 LIMIT limit OFFSET offset
 ORDER BY column_name;
+
 ```
 
 Query data from multiple using the [inner join](https://www.postgresqltutorial.com/postgresql-inner-join/), [left join](https://www.postgresqltutorial.com/postgresql-left-join/), [full outer join](https://www.postgresqltutorial.com/postgresql-full-outer-join/), [cross join](https://www.postgresqltutorial.com/postgresql-cross-join/) and [natural join](https://www.postgresqltutorial.com/postgresql-natural-join/):
 
 ```
-SELECT *
+
+SELECT _
 FROM table1
 INNER JOIN table2 ON conditions
-SELECT *
+SELECT _
 FROM table1
 LEFT JOIN table2 ON conditions
-SELECT *
+SELECT _
 FROM table1
 FULL OUTER JOIN table2 ON conditions
-SELECT *
+SELECT _
 FROM table1
 CROSS JOIN table2;
-SELECT *
+SELECT \*
 FROM table1
 NATURAL JOIN table2;
+
 ```
 
 Return the number of rows of a table.
 
 ```
-SELECT COUNT (*)
+
+SELECT COUNT (\*)
 FROM table_name;
+
 ```
 
 Sort rows in ascending or descending order:
 
 ```
+
 SELECT select_list
 FROM table
 ORDER BY column ASC [DESC], column2 ASC [DESC],...;
+
 ```
 
 Group rows using [`GROUP BY`](https://www.postgresqltutorial.com/postgresql-group-by/) clause.
 
 ```
-SELECT *
+
+SELECT \*
 FROM table
 GROUP BY column_1, column_2, ...;
+
 ```
 
 Filter groups using the [`HAVING`](https://www.postgresqltutorial.com/postgresql-having/) clause.
 
 ```
-SELECT *
+
+SELECT \*
 FROM table
 GROUP BY column_1
 HAVING condition;
+
 ```
 
 \===========================
@@ -301,25 +313,31 @@ HAVING condition;
 \=========================== Combine the result set of two or more queries with [`UNION`](https://www.postgresqltutorial.com/postgresql-union/) operator:
 
 ```
-SELECT * FROM table1
+
+SELECT _ FROM table1
 UNION
-SELECT * FROM table2;
+SELECT _ FROM table2;
+
 ```
 
 Minus a result set using [`EXCEPT`](https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-except/) operator:
 
 ```
-SELECT * FROM table1
+
+SELECT _ FROM table1
 EXCEPT
-SELECT * FROM table2;
+SELECT _ FROM table2;
+
 ```
 
 Get intersection of the result sets of two queries:
 
 ```
-SELECT * FROM table1
+
+SELECT _ FROM table1
 INTERSECT
-SELECT * FROM table2;
+SELECT _ FROM table2;
+
 ```
 
 \===========================
@@ -329,47 +347,59 @@ SELECT * FROM table2;
 \=========================== [Insert a new row into a table](https://www.postgresqltutorial.com/postgresql-insert/):
 
 ```
+
 INSERT INTO table(column1,column2,...)
 VALUES(value_1,value_2,...);
+
 ```
 
 Insert multiple rows into a table:
 
 ```
+
 INSERT INTO table_name(column1,column2,...)
 VALUES(value_1,value_2,...),
-      (value_1,value_2,...),
-      (value_1,value_2,...)...
+(value_1,value_2,...),
+(value_1,value_2,...)...
+
 ```
 
 [Update](https://www.postgresqltutorial.com/postgresql-update/) data for all rows:
 
 ```
+
 UPDATE table_name
 SET column_1 = value_1,
-    ...;
+...;
+
 ```
 
 Update data for a set of rows specified by a condition in the `WHERE` clause.
 
 ```
+
 UPDATE table
 SET column_1 = value_1,
-    ...
+...
 WHERE condition;
+
 ```
 
 [Delete all rows](https://www.postgresqltutorial.com/postgresql-delete/) of a table:
 
 ```
+
 DELETE FROM table_name;
+
 ```
 
 Delete specific rows based on a condition:
 
 ```
+
 DELETE FROM table_name
 WHERE condition;
+
 ```
 
 ### Performance
@@ -377,17 +407,25 @@ WHERE condition;
 Show the query plan for a query:
 
 ```
+
 EXPLAIN query;
+
 ```
 
 Show and execute the query plan for a query:
 
 ```
+
 EXPLAIN ANALYZE query;
+
 ```
 
 Collect statistics:
 
 ```
+
 ANALYZE table_name;
+
+```
+
 ```

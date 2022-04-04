@@ -1,6 +1,5 @@
 ---
 title: Vainglory
-
 ---
 
 ## T3 items by use

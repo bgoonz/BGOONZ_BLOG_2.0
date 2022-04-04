@@ -50,10 +50,7 @@ Therefore we need to change our approach and use a hash table.
 
 ---
 
-
 ```js
-
-
 function dedup(arr) {
     var hashTable = {};
 

@@ -1,6 +1,6 @@
 tip-writer-support: https://www.coinbase.com/loverajoel
 
-- /en/insert-item-inside-an-array/
+-   /en/insert-item-inside-an-array/
 
 # Inserting an item into an existing array
 

@@ -46,16 +46,16 @@ category: JavaScript libraries
 
 ### Tools
 
-- watchify (recompiles on demand)
-- beefy (http server)
-- debowerify
-- es6ify (es6 to es5)
+-   watchify (recompiles on demand)
+-   beefy (http server)
+-   debowerify
+-   es6ify (es6 to es5)
 
 Transforms
 
-- coffeeify
-- ractify
-- reactify
-- brfs
-- cssify
-- https://github.com/substack/node-browserify/wiki/list-of-transforms
+-   coffeeify
+-   ractify
+-   reactify
+-   brfs
+-   cssify
+-   https://github.com/substack/node-browserify/wiki/list-of-transforms

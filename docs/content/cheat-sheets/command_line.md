@@ -25,7 +25,7 @@ thumb_img_path: images/command-line-basics.png
 ### Format
 
 | Switch | Description                       |
-|--------|-----------------------------------|
+| ------ | --------------------------------- |
 | `-1`   | One entry per line                |
 | `-l`   | Long view                         |
 | `-o`   | Long view (without groups)        |
@@ -47,7 +47,7 @@ thumb_img_path: images/command-line-basics.png
 ### Sorting
 
 | Switch | Description                     |
-|--------|---------------------------------|
+| ------ | ------------------------------- |
 | `-r`   | reverse order                   |
 | `-S`   | sort by size                    |
 | `-t`   | sort by time modified           |
@@ -117,7 +117,7 @@ sudo [options] <command>
 ### Interactive
 
 | Switch     | Description                         |
-|------------|-------------------------------------|
+| ---------- | ----------------------------------- |
 | `-i [cmd]` | Interactive shell without variables |
 | `-s [cmd]` | Interactive shell                   |
 
@@ -164,7 +164,7 @@ grep [options] [pattern] [file ...]
 ### Options
 
 | Switch   | Description                           |
-|----------|---------------------------------------|
+| -------- | ------------------------------------- |
 | `-A num` | Print `num` lines of training context |
 
 |----

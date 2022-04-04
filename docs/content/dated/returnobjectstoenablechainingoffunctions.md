@@ -4,10 +4,7 @@ When creating functions on an object in Object Oriented Javascript, returning th
 
 ---
 
-
 ```js
-
-
 function Person(name) {
     this.name = name;
 

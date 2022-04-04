@@ -23,12 +23,12 @@ new Date(1419785527580);
 
 ```js
 // Date format
-new Date("May 17, 1995 03:24:00");
+new Date('May 17, 1995 03:24:00');
 ```
 
 ```js
 // ISO date format
-new Date("2013-03-01T01:10:00");
+new Date('2013-03-01T01:10:00');
 ```
 
 ```js

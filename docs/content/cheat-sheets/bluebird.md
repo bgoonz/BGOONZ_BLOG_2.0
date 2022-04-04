@@ -76,11 +76,11 @@ Use [Promise.join](http://bluebirdjs.com/docs/api/promise.join.html)
 
 ### Multiple promises (array)
 
-- [Promise.all](http://bluebirdjs.com/docs/api/promise.all.html)([p]) - expect all to pass
-- [Promise.some](http://bluebirdjs.com/docs/api/promise.some.html)([p], count) - expect `count` to pass
-- [Promise.any](http://bluebirdjs.com/docs/api/promise.any.html)([p]) - same as `some([p], 1)`
-- [Promise.race](http://bluebirdjs.com/docs/api/promise.race.html)([p], count) - use `.any` instead
-- [Promise.map](http://bluebirdjs.com/docs/api/promise.map.html)([p], fn, options) - supports concurrency
+-   [Promise.all](http://bluebirdjs.com/docs/api/promise.all.html)([p]) - expect all to pass
+-   [Promise.some](http://bluebirdjs.com/docs/api/promise.some.html)([p], count) - expect `count` to pass
+-   [Promise.any](http://bluebirdjs.com/docs/api/promise.any.html)([p]) - same as `some([p], 1)`
+-   [Promise.race](http://bluebirdjs.com/docs/api/promise.race.html)([p], count) - use `.any` instead
+-   [Promise.map](http://bluebirdjs.com/docs/api/promise.map.html)([p], fn, options) - supports concurrency
 
 ```js
 Promise.all([promise1, promise2]).then((results) => {
@@ -122,7 +122,6 @@ Use [Promise.props](http://bluebirdjs.com/docs/api/promise.props.html).
 ### Chain of promises
 
 ---
-
 
 ```js
 

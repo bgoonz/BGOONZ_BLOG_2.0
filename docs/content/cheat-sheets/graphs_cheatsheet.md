@@ -1,4 +1,4 @@
-# graphs\_cheatsheet
+# graphs_cheatsheet
 
 ```
 class TreeNode {
@@ -29,7 +29,7 @@ BST Definition
 insert: log(n)\
 search: log(n)
 
-* Using a node implementation with iteration:
+-   Using a node implementation with iteration:
 
 ```
 function depthFirstIter(node) {
@@ -39,15 +39,15 @@ function depthFirstIter(node) {
     while (stack.length) {
         let node = stack.pop();
 
-        
+
         if (visited.has(node.val)) continue;
 
-        
-        
+
+
         console.log(node.val);
         visited.add(node.val);
 
-        
+
         stack.push(...node.neighbors);
     }
 }

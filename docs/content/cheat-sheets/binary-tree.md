@@ -4,11 +4,11 @@
 
 ```js
 class TreeNode {
-  constructor(val) {
-    this.val = val;
-    this.left = null;
-    this.right = null;
-  }
+    constructor(val) {
+        this.val = val;
+        this.left = null;
+        this.right = null;
+    }
 }
 ```
 
@@ -44,14 +44,14 @@ insert: log(n) search: log(n)
 
 ## Example of DFS using a adjacency list with itera
 
-* Using a node implementation with iteration:
+-   Using a node implementation with iteration:
 
 ```js
 // This is easy to swap to a breadth-first approach by using a queue instead of a stack!
 // Instead of popping from the top, we can shift from the front
 function depthFirstIter(node) {
     let visited = new Set();
-    let stack = [ node ];
+    let stack = [node];
 
     while (stack.length) {
         let node = stack.pop();
@@ -68,5 +68,4 @@ function depthFirstIter(node) {
         stack.push(...node.neighbors);
     }
 }
- 
 ```

@@ -1,7 +1,6 @@
 ---
 title: Mobx
 category: JavaScript libraries
-
 ---
 
 ### Properties

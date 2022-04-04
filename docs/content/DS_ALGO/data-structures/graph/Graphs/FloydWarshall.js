@@ -20,9 +20,11 @@ const FloydWarshall = (dist) => {
     }
     return dist;
 };
+
 export {
     FloydWarshall
 };
+
 // For the following graph (edge weights are shown in brackets)
 //  4       1       dist[1][2] = dist[2][1] = 1
 //   \  (2)/ \      dist[1][3] = dist[3][1] = 2

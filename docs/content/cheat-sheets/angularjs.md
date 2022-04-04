@@ -113,5 +113,5 @@ App.controller('PhoneListCtrl', function ($scope, $http) {
 
 References:
 
-- https://github.com/angular/angular-seed
-- https://angularjs.org/
+-   https://github.com/angular/angular-seed
+-   https://angularjs.org/

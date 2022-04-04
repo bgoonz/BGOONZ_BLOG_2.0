@@ -20,7 +20,7 @@ weight: -1
  */
 
 function foo(n) {
-  return n;
+    return n;
 }
 ```
 

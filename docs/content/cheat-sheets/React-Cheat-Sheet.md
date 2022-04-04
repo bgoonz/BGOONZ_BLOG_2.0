@@ -11,20 +11,18 @@ coverY: -0.9904458598726115
 
 <summary><strong>Cheat Sheet Written In Code</strong></summary>
 
-
 ```jsx
-
-
 /* *******************************************************************************************
  * REACT.JS CHEATSHEET
  * DOCUMENTATION: https://reactjs.org/docs/
  * FILE STRUCTURE: https://reactjs.org/docs/faq-structure.html
  * ******************************************************************************************* */
-
 ```
-npm install --save react       // declarative and flexible JavaScript library for building UI
-npm install --save react-dom   // serves as the entry point of the DOM-related rendering paths
-npm install --save prop-types  // runtime type checking for React props and similar objects
+
+npm install --save react // declarative and flexible JavaScript library for building UI
+npm install --save react-dom // serves as the entry point of the DOM-related rendering paths
+npm install --save prop-types // runtime type checking for React props and similar objects
+
 ```
 
 // notes: don't forget the command lines

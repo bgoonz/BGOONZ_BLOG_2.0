@@ -17,6 +17,7 @@ export default class RadixSort extends Sort {
             const buckets = isArrayOfNumbers ?
                 this.placeElementsInNumberBuckets(sortedArray, currentIndex) :
                 this.placeElementsInCharacterBuckets(sortedArray, currentIndex, numPasses);
+
             // Flatten buckets into sortedArray, and repeat at next index
             sortedArray = buckets.reduce((acc, val) => {
                 return [...acc, ...val];

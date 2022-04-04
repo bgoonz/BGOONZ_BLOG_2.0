@@ -879,4 +879,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/quick-web-developers-website-checklist-a-list-of-tools-for-improvement-9a52e11c8ee1" class="p-canonical">Canonical link</a>
 
- August 6, 2021.
+August 6, 2021.

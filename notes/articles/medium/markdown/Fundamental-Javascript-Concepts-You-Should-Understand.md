@@ -887,4 +887,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/fundamental-javascript-concepts-you-should-understand-81c4d839b827" class="p-canonical">Canonical link</a>
 
- August 31, 2021.
+August 31, 2021.

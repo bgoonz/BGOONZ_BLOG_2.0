@@ -201,14 +201,14 @@ What is a Query?
 
 **Populating a database via &lt; ("left caret")**
 
--   <span id="0880">Syntax :  
-    `psql -d [database] < [path_to_file/file.sql]`  
+-   <span id="0880">Syntax :
+    `psql -d [database] < [path_to_file/file.sql]`
     `psql -d bakery < path_to_my_file/seed-data.sql`</span>
 
 **Populating the database via | ("pipe")**
 
--   <span id="e1ff">Syntax :  
-    `cat [path_to_file/file.sql] | psql -d [database]`  
+-   <span id="e1ff">Syntax :
+    `cat [path_to_file/file.sql] | psql -d [database]`
     `cat path_to_my_file/seed-data.sql | psql -d postgres`</span>
 
 ### Relational Database Design
@@ -385,7 +385,7 @@ What is a Query?
 
 ### Subqueries and JOINs
 
-**Joins vs. Subqueries**  
+**Joins vs. Subqueries**
 **What is a JOIN?**
 
 -   <span id="6e9d">JOIN allows us to retrieve rows from multiple tables.</span>
@@ -583,3 +583,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 <a href="https://medium.com/@bryanguner/mini-review-of-sql-for-postgresql-w-node-express-f34676f3802b" class="p-canonical">Canonical link</a>
 
  August 31, 2021.
+```

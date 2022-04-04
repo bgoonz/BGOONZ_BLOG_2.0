@@ -92,10 +92,10 @@ import './src/styles/custom-code-buttons.scss';
 
 In your Markdown content
 
-```
+````
 ```js
 alert('click to copy 💾');
-```
+````
 
 ```
 
@@ -128,10 +128,10 @@ With `toasterText` config enabled this plugin will inject a custom toaster node:
 
 Don't show button
 
-```
+````
 ```js:clipboard=false
 alert('will not be copied 💾');
-```
+````
 
 ```
 
@@ -264,7 +264,7 @@ The text paste button is very similar except it defines a `data-paste` attribute
 <textarea id="pastehere"></textarea>
 <button data-paste="#pastehere">paste</button>
 
-```
+````
 
 Copy and Paste Data
 -------------------
@@ -272,7 +272,7 @@ Copy and Paste Data
 The Clipboard API's [`readText()`](https://developer.mozilla.org/Web/API/Clipboard/readText) and [`writeText()`](https://developer.mozilla.org/Web/API/Clipboard/writeText) are convenience options for the more generic `read()` and [`write()`](https://developer.mozilla.org/Web/API/Clipboard/write) methods. These have less browser support but are able to copy and paste any type of data such as binary images.
 
 Copying requires blob data typically returned by a [`fetch()`](https://developer.mozilla.org/Web/API/Fetch_API) or [`canvas.toBlob()`](https://developer.mozilla.org/Web/API/HTMLCanvasElement/toBlob) method. This is passed to a [`ClipboardItem`](https://developer.mozilla.org/Web/API/ClipboardItem) constructor so it can be written to the clipboard:
- 
+
 ```js
 
 const
@@ -283,29 +283,21 @@ await navigator.clipboard.write([
 new ClipboardItem({ [blob.type]: blob })
 ]);
 
-```
+````
 
 Pasting is more complex because multiple `ClipboardItem` objects can be returned with differing content types. It's therefore necessary to iterate through each type until a useful format is found. For example:
- 
-```js
 
+```js
 const clipboardItems = await navigator.clipboard.read();
 
 for (const clipboardItem of clipboardItems) {
-
-for (const type of clipboardItem.types) {
-
-    if (type === 'image/png') {
-
-      // return PNG blob
-      return await clipboardItem.getType(type);
-
+    for (const type of clipboardItem.types) {
+        if (type === 'image/png') {
+            // return PNG blob
+            return await clipboardItem.getType(type);
+        }
     }
-
 }
-
-}
-
 ```
 
 [View the Clipboard API image demonstration](https://rawcdn.githack.com/sitepoint-editors/clipboardapi/a8dfad6a1355bbb79381e61a2ae68394af144cc2/demoblob.html) (supported in Chromium-based browsers).
@@ -334,8 +326,7 @@ This works in a similar way to the text demonstration, in that copy and paste bu
 
 Try copying image data from a graphics application, then use the paste button.
 
-Cut, Copy, and Paste Events
----------------------------
+## Cut, Copy, and Paste Events
 
 The `cut`, `copy`, and `paste` events fire whenever the user initiates a clipboard action in the browser --- typically with right-click menus or the keyboard shortcuts mentioned above. This is supported in most browsers and handler functions can intercept the events to make changes using a [`clipboardData` object](https://wiki.developer.mozilla.org/en-US/API/ClipboardEvent/clipboardData) passed as a parameter.
 
@@ -384,6 +375,8 @@ e.target.value = paste;
 // stop default paste
 e.preventDefault();
 }
+
+```
 
 ```
 

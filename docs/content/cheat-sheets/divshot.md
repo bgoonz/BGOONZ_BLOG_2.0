@@ -123,13 +123,13 @@ divshot destroy
 divshot apps
 divshot account
 
-```
+````
 
 ### Password protect
 
 ```sh
 divshot protect <env> <username:password>
-```
+````
 
 ## Custom domains
 

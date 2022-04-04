@@ -47,10 +47,7 @@ See: [flow.org docs](https://flow.org/en/docs/)
 
 ---
 
-
 ```js
-
-
 function square(n: number) {
     const result = n * n;
 }
@@ -75,10 +72,7 @@ type Person = {
 
 ---
 
-
 ```js
-
-
 function greet(user: Person) {
     console.log('hello', user.name);
 }
@@ -238,26 +232,26 @@ See: [Dynamic object keys](https://flow.org/en/docs/types/objects/#toc-objects-a
 
 ### Primitives
 
-| Type            | Description                  |
-| --------------- | ---------------------------- | ----------- |
-| `any`           |                              |
-| `boolean`       |                              |
-| `mixed`         |                              |
-| `number`        |                              |
-| `string`        |                              |
-| `void`          | undefined                    |
-| `null`               | null (but not undefined)     |
-|----------------------|------------------------------|
-| `{a: Number}`        | Object with a shape          |
-| `[any, number]`      | Tuples (fixed-length arrays) |
-| ---                  | ---                          |
-| `Array<T>`           |                              |
-| `Class<T>`           |                              |
-| `Function`           |                              |
-| `Object`             |                              |
-| ---                  | ---                          |
-| `?number`            | Maybe (number, void, null)   |
-| `a              | b` | Union types                  |
+| Type                   | Description                    |
+| ---------------------- | ------------------------------ | ----------- |
+| `any`                  |                                |
+| `boolean`              |                                |
+| `mixed`                |                                |
+| `number`               |                                |
+| `string`               |                                |
+| `void`                 | undefined                      |
+| `null`                 | null (but not undefined)       |
+| ---------------------- | ------------------------------ |
+| `{a: Number}`          | Object with a shape            |
+| `[any, number]`        | Tuples (fixed-length arrays)   |
+| ---                    | ---                            |
+| `Array<T>`             |                                |
+| `Class<T>`             |                                |
+| `Function`             |                                |
+| `Object`               |                                |
+| ---                    | ---                            |
+| `?number`              | Maybe (number, void, null)     |
+| `a                     | b`                             | Union types |
 
 ### Enums
 
@@ -329,7 +323,6 @@ const callback: () => void = function () {};
 ```
 
 ---
-
 
 ```js
 

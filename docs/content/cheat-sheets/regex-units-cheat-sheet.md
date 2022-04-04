@@ -1,6 +1,6 @@
 # REGEX units Cheat Sheet
 
-- #### Anchors
+-   #### Anchors
 
     -   `^`: start of the string or the start of a line in a multiline pattern
     -   `$`: end of the string or the end of a line in a multiline pattern

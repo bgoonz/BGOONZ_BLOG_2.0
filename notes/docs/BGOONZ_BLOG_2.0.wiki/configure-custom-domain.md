@@ -8,8 +8,8 @@ To access customized details about the DNS records you need to configure, go to 
 
 The next steps vary depending on the type of domain or subdomain.
 
-- For a [subdomain](https://docs.netlify.com/domains-https/custom-domains/#definitions) of a domain you own, such as `blog.petsofnetlify.com` or `www.petsofnetlify.com`, follow the directions below for [subdomain configuration](https://docs.netlify.com/domains-https/custom-domains/configure-external-dns/#configure-a-subdomain).
-- For an [apex domain](https://docs.netlify.com/domains-https/custom-domains/#definitions) with no subdomain, such as `petsofnetlify.com`, make sure to read our [advice about using apex domains](https://docs.netlify.com/domains-https/custom-domains/multiple-domains/#apex-domains-and-www-subdomains), then follow the directions below for [apex domain configuration](https://docs.netlify.com/domains-https/custom-domains/configure-external-dns/#configure-an-apex-domain).
+-   For a [subdomain](https://docs.netlify.com/domains-https/custom-domains/#definitions) of a domain you own, such as `blog.petsofnetlify.com` or `www.petsofnetlify.com`, follow the directions below for [subdomain configuration](https://docs.netlify.com/domains-https/custom-domains/configure-external-dns/#configure-a-subdomain).
+-   For an [apex domain](https://docs.netlify.com/domains-https/custom-domains/#definitions) with no subdomain, such as `petsofnetlify.com`, make sure to read our [advice about using apex domains](https://docs.netlify.com/domains-https/custom-domains/multiple-domains/#apex-domains-and-www-subdomains), then follow the directions below for [apex domain configuration](https://docs.netlify.com/domains-https/custom-domains/configure-external-dns/#configure-an-apex-domain).
 
 Special handling for apex and `www`
 

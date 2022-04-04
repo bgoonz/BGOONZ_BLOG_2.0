@@ -3015,4 +3015,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/awesome-list-of-awesome-lists-f1bbcd632fd0" class="p-canonical">Canonical link</a>
 
- August 31, 2021.
+August 31, 2021.

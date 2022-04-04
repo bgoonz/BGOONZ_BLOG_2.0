@@ -1,26 +1,26 @@
- ```
-    <!-- Insert makerbadge.js (download or use ☁️cloud version) -->
+-   ```
+      <!-- Insert makerbadge.js (download or use ☁️cloud version) -->
 
-    <script type="text/javascript" src="https://makerbadge.s3.amazonaws.com/blmbadge.js"></script>
+      <script type="text/javascript" src="https://makerbadge.s3.amazonaws.com/blmbadge.js"></script>
 
-    <!-- Initialise MakerBadge with options -->
+      <!-- Initialise MakerBadge with options -->
 
-    <script>
-      BLMBadge.init({
-           layout:1,
-           theme:'dark',
-           promoText : 'Send a donation '+String.fromCodePoint(0x2192),
-           promoLink : 'https://minnesotafreedomfund.org/',
-           message : 'To be silent is to be complicit. Black lives matter.',
-           title : '#BlackLivesMatter',
-           imageAlt: "Black Lives Matter Badge"
-    })
-    </script>
+      <script>
+        BLMBadge.init({
+             layout:1,
+             theme:'dark',
+             promoText : 'Send a donation '+String.fromCodePoint(0x2192),
+             promoLink : 'https://minnesotafreedomfund.org/',
+             message : 'To be silent is to be complicit. Black lives matter.',
+             title : '#BlackLivesMatter',
+             imageAlt: "Black Lives Matter Badge"
+      })
+      </script>
     ```
 
     Remove
 
-- before `</body>`
+-   before `</body>`
 
     addthis
 
@@ -33,7 +33,7 @@
 
     Remove
 
-- before `</head>`
+-   before `</head>`
 
     gtag-n-firebase
 
@@ -71,7 +71,7 @@
 
     Remove
 
-- before `</body>`
+-   before `</body>`
 
     gtag-in-body
 
@@ -84,7 +84,7 @@
 
     Remove
 
-- before `</head>`
+-   before `</head>`
 
     scroll-2-top
 
@@ -130,7 +130,7 @@
 
     Remove
 
-- before `</head>`
+-   before `</head>`
 
     original-analytics
 
@@ -164,7 +164,7 @@
 
     Remove
 
-- before `</body>`
+-   before `</body>`
 
     goback
 
@@ -177,7 +177,7 @@
 
     Remove
 
-- before `</head>`
+-   before `</head>`
 
     mdn-style
 
@@ -404,7 +404,7 @@
 
     Remove
 
-- before `</head>`
+-   before `</head>`
 
     meta
 
@@ -435,7 +435,7 @@
 
     Remove
 
-- before `</head>`
+-   before `</head>`
 
     meta
 
@@ -445,7 +445,7 @@
 
     Remove
 
-- before `</head>`
+-   before `</head>`
 
     back to top css
 
@@ -540,7 +540,7 @@
 
     Remove
 
-- before `</body>`
+-   before `</body>`
 
     print2pdf
 
@@ -553,7 +553,7 @@
 
     Remove
 
-- before `</body>`
+-   before `</body>`
 
     scroll2topsvg
 
@@ -686,7 +686,7 @@
 
     Remove
 
-- before `</body>`
+-   before `</body>`
 
     tawk-chat
 
@@ -708,7 +708,7 @@
 
     Remove
 
-- before `</head>`
+-   before `</head>`
 
     firebase-cdn
 
@@ -740,7 +740,7 @@
 
     Remove
 
-- before `</head>`
+-   before `</head>`
 
     add-this-suggested-pages
 
@@ -751,7 +751,7 @@
 
     Remove
 
-- before `</body>`
+-   before `</body>`
 
     auth-firestore-cloud
 
@@ -769,7 +769,7 @@
 
     Remove
 
-- before `</head>`
+-   before `</head>`
 
     analytics
 
@@ -787,7 +787,7 @@
 
     Remove
 
-- before `</head>`
+-   before `</head>`
 
     search-script
 
@@ -807,7 +807,7 @@
 
     Remove
 
-- before `</head>`
+-   before `</head>`
 
     more-meta-tags-open-graph
 
@@ -834,7 +834,7 @@
 
     Remove
 
-- before `</body>`
+-   before `</body>`
 
     simpleanalytics
 
@@ -845,7 +845,7 @@
 
     Remove
 
-- before `</head>`
+-   before `</head>`
 
     metaaaa
 
@@ -904,46 +904,46 @@ Set up outgoing webhooks to notify other services about deploys for your site. [
 
 Add notification
 
-- Post to <https://api.stackbit.com/project/609b2d7c71a5dd0016f36326/webhook/netlify> when deploy starts
+-   Post to https://api.stackbit.com/project/609b2d7c71a5dd0016f36326/webhook/netlify when deploy starts
 
     Options
 
-- Post to <https://api.stackbit.com/project/609b2d7c71a5dd0016f36326/webhook/netlify> when deploy succeeds
+-   Post to https://api.stackbit.com/project/609b2d7c71a5dd0016f36326/webhook/netlify when deploy succeeds
 
     Options
 
-- Post to <https://api.stackbit.com/project/609b2d7c71a5dd0016f36326/webhook/netlify> when deploy fails
+-   Post to https://api.stackbit.com/project/609b2d7c71a5dd0016f36326/webhook/netlify when deploy fails
 
     Options
 
-- Add rich details to commits when Deploy Preview starts
+-   Add rich details to commits when Deploy Preview starts
 
     Options
 
-- Add rich details to commits when Deploy Preview succeeds
+-   Add rich details to commits when Deploy Preview succeeds
 
     Options
 
-- Add rich details to commits when Deploy Preview fails
+-   Add rich details to commits when Deploy Preview fails
 
     Options
 
-- Email bryan.guner@gmail.com when deploy request is pending
+-   Email bryan.guner@gmail.com when deploy request is pending
 
     Options
 
-- Email bryan.guner@gmail.com when deploy request is accepted
+-   Email bryan.guner@gmail.com when deploy request is accepted
 
     Options
 
-- Email bryan.guner@gmail.com when deploy request is rejected
+-   Email bryan.guner@gmail.com when deploy request is rejected
 
     Options
 
-- [Docs](https://www.netlify.com/docs/)
-- [Pricing](https://www.netlify.com/pricing/)
-- [Support](https://www.netlify.com/support)
-- [News](https://www.netlify.com/news/)
-- [Terms](https://www.netlify.com/tos/)
+-   [Docs](https://www.netlify.com/docs/)
+-   [Pricing](https://www.netlify.com/pricing/)
+-   [Support](https://www.netlify.com/support)
+-   [News](https://www.netlify.com/news/)
+-   [Terms](https://www.netlify.com/tos/)
 
 © 2021 Netlify

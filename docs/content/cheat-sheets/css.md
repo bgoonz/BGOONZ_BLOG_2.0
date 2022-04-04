@@ -6,25 +6,29 @@ thumb_img_alt: lorem-ipsum
 content_img_alt: lorem-ipsum
 excerpt: lorem-ipsum
 seo:
-  title: ''
-  description: ''
-  robots: []
-  extra: []
+    title: ''
+    description: ''
+    robots: []
+    extra: []
 template: post
 thumb_img_path: images/css-72a655a7.jpg
 ---
+
 ---
+
 title: CSS
 category: CSS
 
 weight: -1
 keywords:
-  - "margin, padding, border"
-  - "div, .class, #id, [attr]"
-  - "font, background"
-  - "display: block, inline, flex"
-  - Selectors
-  - Properties
+
+-   "margin, padding, border"
+-   "div, .class, #id, [attr]"
+-   "font, background"
+-   "display: block, inline, flex"
+-   Selectors
+-   Properties
+
 ---
 
 ## Basics
@@ -33,7 +37,7 @@ keywords:
 
 ```css
 .class {
-  font-weight: bold;
+    font-weight: bold;
 }
 ```
 
@@ -190,8 +194,7 @@ text-transform: lowercase; /* hello */
 ### Multiple backgrounds
 
 ```css
-background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  url("background.jpg") center center / cover, #333;
+background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('background.jpg') center center / cover, #333;
 ```
 
 ## Animation

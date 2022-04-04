@@ -941,4 +941,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/github-repositories-that-will-teach-you-how-to-code-for-free-ad0ecf59d89e" class="p-canonical">Canonical link</a>
 
- August 31, 2021.
+August 31, 2021.

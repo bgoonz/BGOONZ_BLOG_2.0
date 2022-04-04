@@ -6,14 +6,14 @@ coverY: -16.14267515923567
 
 # Bash Cheat Sheet
 
-- One Liners
-- -   Block Bad IPs
+-   One Liners
+-   -   Block Bad IPs
 -   If Statements
     -   Check if args are passed
     -   Check if required variables exist
     -   Check if environment variables exists
-- While Loops
-- -   Run for 5 Seconds
+-   While Loops
+-   -   Run for 5 Seconds
 -   Redirecting Outputs
     -   Stdout, Stderr
 

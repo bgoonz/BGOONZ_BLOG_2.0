@@ -1,7 +1,6 @@
 ---
 title: Man
 category: CLI
-
 ---
 
 ### Man paths

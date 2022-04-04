@@ -12,10 +12,7 @@ Temporal Dead Zone is a JavaScript behavior while using variables declared using
 
 ---
 
-
 ```js
-
-
 function myFunc() {
     console.log(greeting);
     var greeting = 'Hello World!';

@@ -424,10 +424,7 @@ See [inline styles](https://facebook.github.io/react/tips/inline-styles.html).
 
 ---
 
-
 ```js
-
-
 function markdownify() {
     return '<p>...</p>';
 }
@@ -451,5 +448,5 @@ var TodoList = React.createClass({
 
 ## See also
 
-- [Animations](http://facebook.github.io/react/docs/animation.html)
+-   [Animations](http://facebook.github.io/react/docs/animation.html)
     {%endraw%}

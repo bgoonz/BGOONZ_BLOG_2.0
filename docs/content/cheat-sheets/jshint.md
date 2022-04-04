@@ -1,7 +1,6 @@
 ---
 title: Jshint
 category: JavaScript libraries
-
 ---
 
 ### Relaxing
@@ -33,7 +32,7 @@ if (x == null)
 
 ```js
 /* jshint evil: true */
-eval("...");
+eval('...');
 ```
 
 ```js
@@ -46,7 +45,7 @@ expect(x).be.true;
 ```js
 /* jshint laxcomma: true */
 var one = 1,
-  two = 2;
+    two = 2;
 ```
 
 ```js
@@ -58,12 +57,12 @@ for (i=0; i<10; x++) {
 
 ```js
 /* jshint sub: true */
-process.env["name_here"];
+process.env['name_here'];
 ```
 
 ```js
 /* jshint strict: "global" */
-"use strict";
+'use strict';
 ```
 
 ### Enforcing
@@ -75,8 +74,8 @@ See: [Enforcing](http://www.jshint.com/docs/options/#enforcing-options)
 ```js
 /* jshint curly: true */
 while (day)
-  // err: use { }'s
-  shuffle();
+    // err: use { }'s
+    shuffle();
 ```
 
 ```js
@@ -111,7 +110,7 @@ if (x) {                        // err: expected indent of 4, found 2
 ```js
 /* jshint quotmark: single */
 /* jshint quotmark: double */
-alert("hi"); // err: only single allowed
+alert('hi'); // err: only single allowed
 ```
 
 ```js
@@ -154,5 +153,5 @@ See: [Environments](http://www.jshint.com/docs/options/#environments)
 
 ### Also see
 
-- <http://www.jshint.com/docs/options/>
-- <https://gist.github.com/haschek/2595796>
+-   <http://www.jshint.com/docs/options/>
+-   <https://gist.github.com/haschek/2595796>

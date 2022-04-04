@@ -6,16 +6,17 @@ thumb_img_alt: lorem-ipsum
 content_img_alt: lorem-ipsum
 excerpt: lorem-ipsum
 seo:
-  title: ''
-  description: ''
-  robots: []
-  extra: []
+    title: ''
+    description: ''
+    robots: []
+    extra: []
 template: post
 thumb_img_path: images/css-72a655a7.jpg
 ---
+
 ---
-tags: [vcs]
----
+
+## tags: [vcs]
 
 # To set your identity:
 

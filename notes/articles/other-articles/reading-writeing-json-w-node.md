@@ -1,10 +1,11 @@
-
 # Reading and Writing JSON Files with Node.js
 
 > ## Excerpt
+>
 > One of the best ways to exchange information between applications written in different languages is to use the JSON (JavaScript Object Notation) format. Thanks...
 
 ---
+
 One of the best ways to exchange information between applications written in different languages is to use the [JSON](https://en.wikipedia.org/wiki/JSON) (JavaScript Object Notation) format. Thanks to its uniformity and simplicity, JSON has almost completely replaced XML as the standard data exchange format in software, particularly in web services.
 
 Given the extensive use of JSON in software applications, and especially JavaScript-based applications, it is important to know how to read and write JSON data to a file in Node.js. In this article we'll explain how to perform these functions.
@@ -14,7 +15,7 @@ Given the extensive use of JSON in software applications, and especially JavaScr
 Let's first see how we can [read a file](https://stackabuse.com/read-files-with-node-js/) that has already been created. But before we do that we need to actually create the file. Open a new window in your favorite text editor and add the following text to it:
 
 ```
-{ 
+{
     "name": "Sara",
     "age": 23,
     "gender": "Female",
@@ -145,14 +146,14 @@ Note that if the file doesn't already exist, then a new file is created for you.
 
 const fs = require('fs');
 
-let student = { 
+let student = {
     name: 'Mike',
-    age: 23, 
+    age: 23,
     gender: 'Male',
     department: 'English',
-    car: 'Honda' 
+    car: 'Honda'
 };
- 
+
 let data = JSON.stringify(student);
 fs.writeFileSync('student-2.json', data);
 ```
@@ -194,14 +195,14 @@ Let's write another file, "student-3.json", using the `writeFile` function.
 
 const fs = require('fs');
 
-let student = { 
+let student = {
     name: 'Mike',
-    age: 23, 
+    age: 23,
     gender: 'Male',
     department: 'English',
-    car: 'Honda' 
+    car: 'Honda'
 };
- 
+
 let data = JSON.stringify(student, null, 2);
 
 fs.writeFile('student-3.json', data, (err) => {

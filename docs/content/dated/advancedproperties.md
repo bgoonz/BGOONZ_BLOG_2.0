@@ -63,7 +63,6 @@ But that's not all! Advanced properties allows us to create **getters** and **se
 
 ---
 
-
 ```js
 
 

@@ -1,7 +1,6 @@
 ---
 title: Spreadsheet functions
 tags: [WIP]
-
 ---
 
 ### If

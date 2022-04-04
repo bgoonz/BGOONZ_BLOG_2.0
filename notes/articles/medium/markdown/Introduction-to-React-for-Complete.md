@@ -66,7 +66,7 @@ The `render` method returns a _description_ of what you want to see on the scree
       React.createElement('ul', /* ... ul children ... */)
     );
 
-```
+````
 
 ---
 
@@ -103,7 +103,7 @@ The code editor has a JSX element similar to what you created in the last challe
       </div>
     );
 
-```
+````
 
 ---
 
@@ -141,7 +141,7 @@ The code editor has a JSX element similar to what you created in the last challe
 
 ### Ans:
 
-```js
+````js
 
  const JSX = (
       <div className="myDiv">
@@ -162,13 +162,13 @@ The code editor has a JSX element similar to what you created in the last challe
 
 ,`_but should never be written as_`<br></br>`_, since it doesn't contain any content._
 
-> _In JSX, the rules are a little different. Any JSX element can be written with a self-closing tag, and every element must be closed.  
+> _In JSX, the rules are a little different. Any JSX element can be written with a self-closing tag, and every element must be closed.
 > The line-break tag, for example, must always be written as_ `
 > <br/>
 
 ` \_in order to be valid JSX that can be transpiled.
 
-> A* `<div>`*, on the other hand, can be written as* `<div />`\_or*`<div></div>`_.  
+> A* `<div>`*, on the other hand, can be written as* `<div />`\_or*`<div></div>`_.
 > The difference is that in the first syntax version there is no way to include anything in the_ `<div />`_._
 
 ### Fix the errors in the code editor so that it is valid JSX and successfully transpiles. Make sure you don't change any of the content — you only need to close tags where they are needed.
@@ -199,7 +199,7 @@ The code editor has a JSX element similar to what you created in the last challe
       </div>
     );
 
-```
+````
 
 ---
 
@@ -396,8 +396,6 @@ Note: The text is considered a child of the div element, so you will not be able
 
 ### More Examples:
 
-
-
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz - Overview</strong>
 <br/>
 
@@ -409,4 +407,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/introduction-to-react-for-complete-beginners-8021738aa1ad" class="p-canonical">Canonical link</a>
 
- August 6, 2021.
+August 6, 2021.

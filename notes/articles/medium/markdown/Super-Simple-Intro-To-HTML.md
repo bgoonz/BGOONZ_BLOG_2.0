@@ -235,4 +235,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/super-simple-intro-to-html-651d695f9bc" class="p-canonical">Canonical link</a>
 
- August 31, 2021.
+August 31, 2021.

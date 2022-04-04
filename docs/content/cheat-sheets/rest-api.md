@@ -62,4 +62,4 @@ curl -is https://$TOKEN@api.example.com/
 
 ### References
 
-- [interagent/http-api-design](https://github.com/interagent/http-api-design) _(github.com)_
+-   [interagent/http-api-design](https://github.com/interagent/http-api-design) _(github.com)_

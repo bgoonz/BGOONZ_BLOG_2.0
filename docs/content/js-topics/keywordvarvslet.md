@@ -17,10 +17,7 @@ categories: - en - javascript
 
 ---
 
-
 ```js
-
-
 function varvslet() {
     console.log(i); // i is undefined due to hoisting
     // console.log(j); // ReferenceError: j is not defined

@@ -1,7 +1,6 @@
 ---
 title: Sublime Text
 category: Apps
-
 ---
 
 ### Select & Expand

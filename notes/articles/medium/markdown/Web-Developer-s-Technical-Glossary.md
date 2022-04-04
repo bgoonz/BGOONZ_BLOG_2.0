@@ -1540,4 +1540,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/web-developers-technical-glossary-2066beae5e96" class="p-canonical">Canonical link</a>
 
- August 31, 2021.
+August 31, 2021.

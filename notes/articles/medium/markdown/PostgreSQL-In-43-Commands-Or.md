@@ -1261,4 +1261,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/postgresql-in-43-commands-or-less-19fba3e37110" class="p-canonical">Canonical link</a>
 
- August 6, 2021.
+August 6, 2021.

@@ -1,7 +1,6 @@
 ---
 title: Sketch
 category: Apps
-
 ---
 
 ## Shortcuts

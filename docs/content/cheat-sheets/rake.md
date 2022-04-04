@@ -1,7 +1,6 @@
 ---
 title: Rake
 category: Ruby
-
 ---
 
 ### Basic syntax

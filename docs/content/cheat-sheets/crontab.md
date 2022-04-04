@@ -32,7 +32,7 @@ PATH=$PATH:/do/not/do/this
 
 # crontab format
 
-- -   -   -   -   command_to_execute
+-   -   -   -   -   command_to_execute
 
 ---
 

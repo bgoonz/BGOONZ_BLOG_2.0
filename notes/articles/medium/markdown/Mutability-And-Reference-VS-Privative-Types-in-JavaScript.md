@@ -75,4 +75,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/mutability-and-reference-vs-privative-types-in-javascript-5294422db4b0" class="p-canonical">Canonical link</a>
 
- August 31, 2021.
+August 31, 2021.

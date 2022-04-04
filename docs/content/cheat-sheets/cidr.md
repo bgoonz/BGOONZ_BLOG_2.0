@@ -32,4 +32,4 @@ category: Misc
 
 ### Resources
 
-- [CIDR range calculator](http://ipaddressguide.com/cidr#range) _(ipaddressguide.com)_
+-   [CIDR range calculator](http://ipaddressguide.com/cidr#range) _(ipaddressguide.com)_

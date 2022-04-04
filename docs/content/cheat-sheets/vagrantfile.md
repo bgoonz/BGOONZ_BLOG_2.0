@@ -1,7 +1,6 @@
 ---
 title: Vagrantfile
 category: Devops
-
 ---
 
 ## Vagrantfile

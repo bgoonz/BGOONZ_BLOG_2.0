@@ -38,7 +38,7 @@ The 3rd argument in each of these commands is a `gitrevision`. These gitrevision
 ### Common git revisions
 
 | Reference                    | Description                                     |
-|------------------------------|-------------------------------------------------|
+| ---------------------------- | ----------------------------------------------- |
 | _`git show`_ `dae68e1`       | sha1                                            |
 | _`git show`_ `HEAD`          | reference                                       |
 | _`git show`_ `v1.0.0`        | tag                                             |
@@ -65,7 +65,7 @@ These are just the common ones, there's a lot more below! (These work in many ot
 ### References
 
 | Example                          | Description                       |
-|----------------------------------|-----------------------------------|
+| -------------------------------- | --------------------------------- |
 | _`git checkout`_ `HEAD`          | reference                         |
 | _`git checkout`_ `master`        | branch                            |
 | _`git checkout`_ `v1.0.0`        | tag                               |
@@ -78,7 +78,7 @@ These are just the common ones, there's a lot more below! (These work in many ot
 ### Searching back
 
 | Example                               | Description                              |
-|---------------------------------------|------------------------------------------|
+| ------------------------------------- | ---------------------------------------- |
 | _`git checkout`_ `master@{yesterday}` | also _1 day ago_, etc                    |
 | _`git checkout`_ `master@{2}`         | 2nd prior value                          |
 | _`git checkout`_ `master@{push}`      | where _master_ would push to             |

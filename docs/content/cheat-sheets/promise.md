@@ -1,7 +1,6 @@
 ---
 title: Promises
 category: JavaScript
-
 ---
 
 ## Reference

@@ -41,10 +41,7 @@ A better approach:
 
 ---
 
-
 ```js
-
-
 function handleEvent(eventName, { onElement, withCallback, useCapture = false } = {}, thisArg) {
     const element = onElement || document.documentElement;
 

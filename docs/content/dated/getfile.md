@@ -19,10 +19,7 @@ function getFileExtension(filename) {
 
 ---
 
-
 ```js
-
-
 function getFileExtension1(filename) {
     return /[.]/.exec(filename) ? /[^.]+$/.exec(filename)[0] : undefined;
 }
@@ -32,10 +29,7 @@ function getFileExtension1(filename) {
 
 ---
 
-
 ```js
-
-
 function getFileExtension2(filename) {
     return filename.split('.').pop();
 }
@@ -47,10 +41,7 @@ Those two solutions couldnot handle some edge cases, here is another more robust
 
 ---
 
-
 ```js
-
-
 function getFileExtension3(filename) {
     return filename.slice(((filename.lastIndexOf('.') - 1) >>> 0) + 2);
 }

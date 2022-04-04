@@ -2,7 +2,6 @@
 title: jQuery CDN
 category: JavaScript libraries
 tags: [Archived]
-
 ---
 
 ### Google jQuery

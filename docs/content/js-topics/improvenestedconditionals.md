@@ -72,10 +72,7 @@ If refactoring is an option, we can try to simplify the functions themselves. Fo
 
 ---
 
-
 ```js
-
-
 function printBackground(color) {
     if (!color || typeof color !== 'string') {
         return; // Invalid color, return immediately

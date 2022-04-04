@@ -5,9 +5,9 @@
 **References:**
 
 1. JavaScript: The Good Parts by Douglas Crockford, 2008. Page 78-93.
-2. [Mozilla JavaScript Reference: Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array)
-3. [Mozilla JavaScript Reference: Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object)
-4.  [Mozilla JavaScript Reference: Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Set)
+2. [Mozilla JavaScript Reference: Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+3. [Mozilla JavaScript Reference: Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
+4. [Mozilla JavaScript Reference: Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)
 
     ***
 
@@ -18,7 +18,7 @@ There are two ways you learn about available methods in programming languages:
 
 This article serves as my notes from reading "JavaScript: The Good Parts by Douglas Crockford, 2008. Page 78-93". While this cheat sheet is inspired by the book, it is also created with reference from [MDN Web docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference) to keep updated.
 
-***
+---
 
 > This cheat sheet focus **ONLY** on **methods** for **SOME** Data Structures in JavaScript
 
@@ -43,9 +43,9 @@ console.log(firstArray[0]); // Results: "a"
 
 // 3. Loop over an Array
 firstArray.forEach(function(item, index, array){
-    console.log(item, index); 
+    console.log(item, index);
 });
-// Results: 
+// Results:
 // a 0
 // b 1
 // c 2
@@ -75,9 +75,9 @@ let position = secondArray.indexOf('f');
 // Results: 2
 
 // 9. Remove Item by Index Position
-secondArray.splice(position, 1); 
+secondArray.splice(position, 1);
 console.log(secondArray);
-// Note, the second argument, in this case "1", 
+// Note, the second argument, in this case "1",
 // represent the number of array elements to be removed
 // Results:  ["d","e"]
 
@@ -106,7 +106,7 @@ console.log(thirdArray.reverse()); // ["e", "d", "c", "b", "a"]
 
 // 15. sort
 let unsortedArray = ["Alphabet", "Zoo", "Products", "Computer Science", "Computer"];
-console.log(unsortedArray.sort()); 
+console.log(unsortedArray.sort());
 // Results: ["Alphabet", "Computer", "Computer Science", "Products", "Zoo" ]
 ```
 
@@ -114,11 +114,11 @@ console.log(unsortedArray.sort());
 
 Think of objects as a logical grouping of a bunch of properties. Properties could be some variable that it's storing or some methods that it's using. I also visualize an object as a table. The main difference is that object's "index" need not be numbers and is not necessarily sequenced.
 
-| properties     | value                                                                                                                                                                            |
-| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| name           | "I'm an object"                                                                                                                                                                  |
-| data           | \["You can add an array as a property", "Recall that array is a sequenced list of items", "but just because it's sequenced, doesn't means you can only use it for that purpose"] |
-| function\_name | `function(parameters){//do something}`                                                                                                                                           |
+| properties    | value                                                                                                                                                                            |
+| ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| name          | "I'm an object"                                                                                                                                                                  |
+| data          | \["You can add an array as a property", "Recall that array is a sequenced list of items", "but just because it's sequenced, doesn't means you can only use it for that purpose"] |
+| function_name | `function(parameters){//do something}`                                                                                                                                           |
 
 ```
 // 16. Creating an Object
@@ -254,10 +254,10 @@ console.log(symmetricDifference(setA, setC));   // => Set [1, 2, 5, 6]
 console.log(difference(setA, setC));            // => Set [1, 2]
 ```
 
-***
+---
 
 **Article Updates:**
 
-* **25 Dec 19.** Added some description to each of the data structure. Credits: [@bam92](https://dev.to/bam92)
+-   **25 Dec 19.** Added some description to each of the data structure. Credits: [@bam92](https://dev.to/bam92)
 
 [Source](https://dev.to/tangweejieleslie/cheat-sheet-for-beginners-javascript-data-structures-methods-25l4)
