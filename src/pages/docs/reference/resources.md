@@ -377,7 +377,7 @@ There're also some great commercial libraries, like [amchart](https://www.amchar
 
 
 ## Functional Programming
-*Functional programming libraries to extend JavaScript’s capabilities.*
+*Functional programming libraries to extend JavaScript's capabilities.*
 
 * [underscore](https://github.com/jashkenas/underscore) - JavaScript's utility _ belt.
 * [lodash](https://github.com/lodash/lodash) - A utility library delivering consistency, customization, performance, & extras.

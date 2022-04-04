@@ -20,11 +20,11 @@ The latest alpha release of React introduced a new concept called _Hooks_. Hooks
 
 Hooks are currently available in React v16.7.0-alpha. There are no plans to remove classes. Hooks provide another way to write React.
 
-Given that Hooks are still new, many developers are looking to apply the concept in their existing React applications or new applications. In this post, you’ll explore five ways to convert React class components to functional components using React Hooks.
+Given that Hooks are still new, many developers are looking to apply the concept in their existing React applications or new applications. In this post, you'll explore five ways to convert React class components to functional components using React Hooks.
 
 ## Prerequisites
 
-To complete this tutorial, you’ll need:
+To complete this tutorial, you'll need:
 
 -   Familiarity with JavaScript. You can review the [How To Code in JavaScript](https://www.digitalocean.com/community/tutorial_series/how-to-code-in-javascript) series to learn more and get started.
 -   Familiarity with React. You can review our [How To Code in React.js](https://www.digitalocean.com/community/tutorial_series/how-to-code-in-react-js) series for guides to help you get started.
@@ -33,7 +33,7 @@ No local development is required, but [CodeSandbox](https://codesandbox.io/) exa
 
 ## Step 1 — Understanding a Class without State or Lifecycle Methods
 
-Let’s start with a React class that has neither state nor lifecycle components:
+Let's start with a React class that has neither state nor lifecycle components:
 
 ExampleClassComponent.js
 
@@ -47,11 +47,11 @@ Like the first example, this functional class behaves in a typical way.
 
 However, this example does not use Hooks or anything new yet. In these examples, you have no need for state or lifecycle.
 
-Let’s take a look at class-based components with state and learn how to convert them to functional components using Hooks.
+Let's take a look at class-based components with state and learn how to convert them to functional components using Hooks.
 
 ## Step 2 — Adding Hooks to Classes with State
 
-Let’s consider a situation where you have a global name variable that you can update within the app from a text input field.
+Let's consider a situation where you have a global name variable that you can update within the app from a text input field.
 
 In React, you handle cases like this by defining the name variable in a `state` object and calling `setState()` when we have a new value to update the `name` variable with:
 
@@ -73,11 +73,11 @@ The initial value of the state in the `useState()` Hook comes from an argument. 
 
 This code is an example of how you can convert a class-based React component with state to a functional component using Hooks.
 
-Let’s explore other scenarios, including classes with multiple state properties.
+Let's explore other scenarios, including classes with multiple state properties.
 
 ## Step 3 — Adding Hooks to Classes with Multiple State Properties
 
-You have looked at how you might convert one state property with `useState`, but the same approach won’t quite work when you have multiple state properties. If, for example, you had two or more input fields for `userName`, `firstName`, and `lastName`, then you would have a class-based component with three state properties:
+You have looked at how you might convert one state property with `useState`, but the same approach won't quite work when you have multiple state properties. If, for example, you had two or more input fields for `userName`, `firstName`, and `lastName`, then you would have a class-based component with three state properties:
 
 ExampleClassComponentWithMultipleStateProperties.js
 
@@ -85,33 +85,33 @@ To convert this class to a functional component with Hooks, you will have to tak
 
 ExampleFunctionalComponentWithMultipleStateProperties.js
 
-Here’s a [CodeSandbox](https://codesandbox.io/s/ypjynxx16x) for this example.
+Here's a [CodeSandbox](https://codesandbox.io/s/ypjynxx16x) for this example.
 
 This demonstrates how you can convert a class-based component with multiple state properties to a functional component using the `useState()` Hook.
 
 ## Step 4 — Adding Hooks to a Class with State and `componentDidMount`
 
-Let’s consider a class with `state` and `componentDidMount`. To demonstrate, you will look at a scenario where you set an initial state for the three input fields and have them all update to a different set of values after five seconds.
+Let's consider a class with `state` and `componentDidMount`. To demonstrate, you will look at a scenario where you set an initial state for the three input fields and have them all update to a different set of values after five seconds.
 
 To achieve this, you will declare an initial state value for the input fields and implement a `componentDidMount()` lifecycle method that will run after the initial render to update the state values:
 
 ExampleClassComponentWithStateAndComponentDidMount.js
 
-When the app runs, the input fields will have the initial values you’ve defined in the state object. These values will then update to the values you’ve defined inside the `componentDidMount()` method after five seconds.
+When the app runs, the input fields will have the initial values you've defined in the state object. These values will then update to the values you've defined inside the `componentDidMount()` method after five seconds.
 
 Next, you will convert this class to a functional component using the React `useState` and `useEffect` Hooks:
 
 ExampleFunctionalComponentWithStateAndComponentDidMount.js
 
-Here’s a [CodeSandbox](https://codesandbox.io/s/jzoz2n97my) for this example.
+Here's a [CodeSandbox](https://codesandbox.io/s/jzoz2n97my) for this example.
 
 In terms of functionality, this component does exactly the same thing as the previous example. The only difference is that instead of using the conventional `state` object and `componentDidMount()` lifecycle method as you did in the class component, you used the `useState` and `useEffect` Hooks.
 
 ## Step 5 — Adding Hooks to a Class with State, `componentDidMount`, and `componentDidUpdate`
 
-Next, let’s look at a React class with state and two lifecycle methods: `componentDidMount` and `componentDidUpdate`. Most of the solutions up to this point have used the `useState` Hook. In this example, you will focus on the `useEffect` Hook.
+Next, let's look at a React class with state and two lifecycle methods: `componentDidMount` and `componentDidUpdate`. Most of the solutions up to this point have used the `useState` Hook. In this example, you will focus on the `useEffect` Hook.
 
-To best demonstrate how this works, let’s modify your code to dynamically update the `<h3>` header on the page.
+To best demonstrate how this works, let's modify your code to dynamically update the `<h3>` header on the page.
 
 Currently, the header says `This is a Class Component`. Now, you will define a `componentDidMount()` method to update the header to say `Welcome to React Hooks` after three seconds:
 
@@ -119,7 +119,7 @@ ExampleClassComponentWithStateAndTwoLifecycleMethods.js
 
 When the app runs, it will start with the initial header `This is a Class Component` and change it to `Welcome to React Hooks` after three seconds. This is the classic `componentDidMount()` behavior since it runs after the `render` function is executed successfully.
 
-Let’s add functionality to dynamically update the header from another input field so that the header gets updated with the new text while you type.
+Let's add functionality to dynamically update the header from another input field so that the header gets updated with the new text while you type.
 
 To accomplish this, you will need to implement the `componentDidUpdate()` lifecycle method:
 
@@ -137,13 +137,13 @@ You achieved the same functionality with this component as you did previously by
 
 ## Step 6 — Converting `PureComponent` to `React memo`
 
-[React PureComponent](https://reactjs.org/docs/react-api.html#reactpurecomponent) works in a similar manner to [Component](https://reactjs.org/docs/react-api.html#reactcomponent). The major difference between them is that `React.Component` doesn’t implement the `shouldComponentUpdate()` lifecycle method while `React.PureComponent` does.
+[React PureComponent](https://reactjs.org/docs/react-api.html#reactpurecomponent) works in a similar manner to [Component](https://reactjs.org/docs/react-api.html#reactcomponent). The major difference between them is that `React.Component` doesn't implement the `shouldComponentUpdate()` lifecycle method while `React.PureComponent` does.
 
 If you have an application where the `render()` function renders the same result given the same props and state, you can use `React.PureComponent` for a performance boost in some cases.
 
 `React.memo()` works in a similar way. When your function component renders the same result given the same props, you can wrap it in a call to `React.memo()` to enhance performance. Using `PureComponent` and `React.memo()` gives React applications a considerable increase in performance as it reduces the number of render operations in the app.
 
-To understand what they both do, you will first look at code where a component renders every two seconds, whether or not there’s a change in value or state:
+To understand what they both do, you will first look at code where a component renders every two seconds, whether or not there's a change in value or state:
 
 ExampleClassComponent.js
 
@@ -151,7 +151,7 @@ When you run the app and check the logs, you will notice that it renders the com
 
 ![Console log output for multiple render operations](https://assets.digitalocean.com/articles/five-ways-to-convert-react-class-components-to-functional-components-with-react-hooks/1.png)
 
-Most of the time, you only want to re-render a component when there’s been a change in state or props. Using the example above, you can improve it with `PureComponent` so that the component only re-renders when there’s a change in state or props.
+Most of the time, you only want to re-render a component when there's been a change in state or props. Using the example above, you can improve it with `PureComponent` so that the component only re-renders when there's a change in state or props.
 
 You can accomplish this by importing `PureComponent` and extending it:
 
@@ -167,7 +167,7 @@ For example, consider the following changes to `setState()`:
 
 Currently, `value` set to `1`:
 
-Let’s consider a situation where `value` is set to `Math.random()`:
+Let's consider a situation where `value` is set to `Math.random()`:
 
 In this scenario, the first example component would re-render each time the value updates to the next random number. However, `PureComponent` makes it possible to re-render components only when there has been a change in state or props.
 
@@ -175,7 +175,7 @@ Now you can explore how to use `React.memo()` to achieve the same fix. To accomp
 
 ExampleReactMemo.js
 
-Here’s the [CodeSandbox](https://codesandbox.io/s/100zmv7ljj) for this example.
+Here's the [CodeSandbox](https://codesandbox.io/s/100zmv7ljj) for this example.
 
 This achieves the same result as using `PureComponent`. The component only renders after the initial render and does not re-render again until there is a change in state or props.
 
