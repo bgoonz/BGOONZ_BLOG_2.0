@@ -184,7 +184,7 @@ pg_restore --verbose --clean --no-acl --no-owner -h localhost -U myuser -d mydb 
 
 ### Find all active sessions and kill them (i.e. for when needing to drop or rename db)
 
-Source: [http://stackoverflow.com/questions/5408156/how-to-drop-a-postgresql-database-if-there-are-active-connections-to-it](http://stackoverflow.com/questions/5408156/how-to-drop-a-postgresql-database-if-there-are-active-connections-to-it)
+Source: <http://stackoverflow.com/questions/5408156/how-to-drop-a-postgresql-database-if-there-are-active-connections-to-it>
 
 ```
 # Postgres 9.6 and above
@@ -384,8 +384,6 @@ WHERE c1 IS [NOT] NULL;
 
 ## Source:
 
-- [PostgreSQL 9.6.0 Documentation](https://www.postgresql.org/docs/9.6/static/app-psql.html)
-- [PostgreSQL Exercises](https://pgexercises.com)
-- [PostgreSQL Tutorial](http://www.postgresqltutorial.com/postgresql-cheat-sheets)
-
-[Source](https://karloespiritu.github.io/cheatsheets/postgresql/)
+* [PostgreSQL 9.6.0 Documentation](https://www.postgresql.org/docs/9.6/static/app-psql.html)
+* [PostgreSQL Exercises](https://pgexercises.com)
+* [PostgreSQL Tutorial](http://www.postgresqltutorial.com/postgresql-cheat-sheets)
