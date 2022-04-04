@@ -1,6 +1,7 @@
 <div align="center">
 
 # [⇨WEBSITE🗺️⇦](https://bgoonz-blog.netlify.app/)
+  
 
 ### [Github Org Link](https://github.com/BGOOONZ-BLOG/)
 
@@ -18,7 +19,7 @@
 
 ###### [⇨Privacy policy⇦](https://codepen.io/bgoonz/pen/LYLJZrW)
 
-
+###### [⇨ Changes ⇦](https://visualping.io/jobs/3577650)
 
 </div>
 <div align="center">
