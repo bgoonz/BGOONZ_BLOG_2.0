@@ -65,7 +65,7 @@ template: docs
 <br>
 <br>
 
-<iframe class="inner" src="https://lambda-resources.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe  src="https://lambda-resources.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
 <br>
@@ -87,7 +87,7 @@ template: docs
 <br>
 <br>
 
-<iframe class="inner" src="https://bgoonz.github.io/bass-station/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe  src="https://bgoonz.github.io/bass-station/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
 <br>
