@@ -2,35 +2,35 @@
 title: Family Promise Project
 weight: 0
 seo:
-  title: Gatsby Plugins For This Sites Content Model
-  description: This is my markdown notes tempate
-  extra:
-    - name: og:type
-      value: website
-      keyName: property
-    - name: og:title
-      value: Gatsby Plugins For This Sites Content Model
-      keyName: property
-    - name: og:description
-      value: This is the Gatsby Plugins For This Sites Content Model page
-      keyName: property
-    - name: twitter:card
-      value: summary
-    - name: twitter:title
-      value: Gatsby Plugins For This Sites Content Model
-    - name: twitter:description
-      value: This is the Gatsby Plugins For This Sites Content Model page
+    title: Gatsby Plugins For This Sites Content Model
+    description: This is my markdown notes tempate
+    extra:
+        - name: og:type
+          value: website
+          keyName: property
+        - name: og:title
+          value: Gatsby Plugins For This Sites Content Model
+          keyName: property
+        - name: og:description
+          value: This is the Gatsby Plugins For This Sites Content Model page
+          keyName: property
+        - name: twitter:card
+          value: summary
+        - name: twitter:title
+          value: Gatsby Plugins For This Sites Content Model
+        - name: twitter:description
+          value: This is the Gatsby Plugins For This Sites Content Model page
 template: docs
 excerpt: Family Promise organizes congregations, social service agencies and
-  community members into volunteer coalitions called Affiliates that provide
-  emergency shelter and wraparound services to homeless and at-risk families.
-  The model of the core program emphasizes sustainability and relies on
-  resources that are already available to the locales served. Though each
-  Affiliate coordinates its own programming for transitional housing, case
-  management, family mentoring, financial literacy classes and childcare, all
-  receive staff training and program assistance from the national office. Built
-  a way to track and visualize the services they provide external to the shelter
-  to gain actionable insights.
+    community members into volunteer coalitions called Affiliates that provide
+    emergency shelter and wraparound services to homeless and at-risk families.
+    The model of the core program emphasizes sustainability and relies on
+    resources that are already available to the locales served. Though each
+    Affiliate coordinates its own programming for transitional housing, case
+    management, family mentoring, financial literacy classes and childcare, all
+    receive staff training and program assistance from the national office. Built
+    a way to track and visualize the services they provide external to the shelter
+    to gain actionable insights.
 ---
 
 <br>
