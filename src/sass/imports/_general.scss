@@ -83,7 +83,13 @@ a {
     text-underline-offset: 0.125em;
     -webkit-transition: color 0.3s ease;
     transition: color 0.3s ease;
-
+  display: inline-block;
+  background-color: var(--color-blue);
+  border: 0.125rem solid var(--color-blue);
+  font-weight: bold;
+  color: var(--color-white);
+  padding: 1rem 3rem;
+  transition: all 0.35s ease;
     &:hover {
         color: $gray-600;
     }
