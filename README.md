@@ -2,16 +2,11 @@
 
 # [⇨WEBSITE🗺️⇦](https://bgoonz-blog.netlify.app/)
   
-
 ### [Github Org Link](https://github.com/BGOOONZ-BLOG/)
 
 </div>
 
 ---
-
-
-
-
 
 <div align="center">
 
@@ -32,8 +27,6 @@
 
 ![preview](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/blog-preview.png?raw=true)
 
-  
-  
 ---
   
 <a href="https://testmysite.io/61e5ff836a840eeeef7e78e9/bgoonz-blog.netlify.app" rel="Test My Site Results">![Foo](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/Screenshot%202022-03-30%20at%2012-37-24%20Website%20Speed%20Test%20Tool%20-%20Testmysite.io%20by%20Netlify.png?raw=true)</a>
@@ -1589,7 +1582,7 @@ find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 <details>
 <summary>  Docs Structure  </summary>
 
-```
+```txt
 ├── blog
 │     ├── 300-react-questions.md
 │     ├── awesome-graphql.md
@@ -2257,8 +2250,6 @@ find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 ## 🧐 What's inside?
 
 A quick look at the top-level files and directories you'll see in a Gatsby project.
-
-    .
     ├── node_modules
     ├── src
     ├── .gitignore
