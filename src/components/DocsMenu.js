@@ -1,4 +1,3 @@
-
 import React from 'react';
 import _ from 'lodash';
 import { classNames, getPage, getPages, Link, pathJoin, withPrefix } from '../utils';
@@ -6,9 +5,9 @@ import DocsSubmenu from './DocsSubmenu';
 export default class DocsMenu extends React.Component {
     render() {
         let site = _.get(this.props, 'site', null);
-        let page = _.get( this.props, 'page', null );
+        let page = _.get(this.props, 'page', null);
         let rootPath = 'data.doc_sections.root_docs_path';
-        let root_docs_path = _.get( site,rootPath, null );
+        let root_docs_path = _.get(site, rootPath, null);
         let pageContextProps = this.props.pageContext.pages;
         let root_page = getPage(pageContextProps, root_docs_path);
         return (
