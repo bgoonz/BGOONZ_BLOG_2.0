@@ -1,7 +1,7 @@
 ---
 title: Effect Hook
 weight: 0
-excerpt:Hooks_ are a new addition in React 16.8. They let you use state and other React features without writing a class
+excerpt: Hooks are a new addition in React 16.8 They let you use state and other React features without writing a class
 seo:
     title: 'Text Search'
     description: 'Hooks_ are a new addition in React 16.8. They let you use state and other React features without writing a class'
