@@ -96,7 +96,7 @@
             },
             {
                 "label": "Job Search",
-                "url": "/docs/interview/job-search-nav/",
+                "url": "docs/career/",
                 "style": "primary",
                 "icon_class": "dev",
                 "new_window": false,
@@ -104,7 +104,7 @@
                 "has_subnav": true,
                 "subnav_links": [{
                         "label": "Job Boards",
-                        "url": "interview/job-boards",
+                        "url": "docs/career/job-boards",
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
