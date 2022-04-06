@@ -38,6 +38,9 @@ iframe {
     border-radius: 15px;
 }
 
+#container-top {
+  display:none;
+}
 
 mark,
 ins {
@@ -472,4 +475,5 @@ th {
     color: #283040;
 
     font-weight: 700;
+}
 }
