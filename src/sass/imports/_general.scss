@@ -14,10 +14,8 @@ body {
 }
 
 iframe {
-    overflow-y: scroll !important;
-    overflow-x: scroll !important;
-    border-radius: 26px;
-    border: 3px solid gold;
+    border-radius: 16px;
+    border: 1px solid gold;
     height: 1100px;
     width: 100%;
     margin: auto;
@@ -37,7 +35,6 @@ iframe {
     background-color: rgba(0, 0, 0, 0.856);
     border-radius: 15px;
 }
-
 
 mark,
 ins {
@@ -79,10 +76,16 @@ pre {
 a {
     color: $color-primary;
     text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 0.125em;
     -webkit-transition: color 0.3s ease;
     transition: color 0.3s ease;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-left: -0.3125em;
+    margin-right: -0.3125em;
+    padding: 0;
+    flex: 1 1 240px;
+    margin: 0 0.3125em 0.9375em;
 
     &:hover {
         color: $gray-600;
@@ -470,6 +473,5 @@ th {
 
 th {
     color: #283040;
-
     font-weight: 700;
 }
