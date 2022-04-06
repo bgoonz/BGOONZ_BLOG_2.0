@@ -9,13 +9,14 @@ thumb_image: /blog/psql-schema.jpg
 image_position: top
 author: src/data/authors/bgoon.yaml
 categories:
-  - src/data/categories/db.yaml
+    - src/data/categories/db.yaml
 tags:
-  - src/data/tags/psql.yaml
+    - src/data/tags/psql.yaml
 show_author_bio: true
 cmseditable: true
 ---
-# 💻 PSQL💻 
+
+# 💻 PSQL💻
 
 > source
 
@@ -258,8 +259,6 @@ SELECT * FROM pg_stat_activity WHERE waiting='t';
 
 ### Query analysis
 
-
-
 ```sh
 -- See the query plan for the given query
 EXPLAIN __query__
@@ -390,6 +389,6 @@ WHERE c1 IS [NOT] NULL;
 
 ## Source
 
-* [PostgreSQL 9.6.0 Documentation](https://www.postgresql.org/docs/9.6/static/app-psql.html)
-* [PostgreSQL Exercises](https://pgexercises.com)
-* [PostgreSQL Tutorial](http://www.postgresqltutorial.com/postgresql-cheat-sheets)
+-   [PostgreSQL 9.6.0 Documentation](https://www.postgresql.org/docs/9.6/static/app-psql.html)
+-   [PostgreSQL Exercises](https://pgexercises.com)
+-   [PostgreSQL Tutorial](http://www.postgresqltutorial.com/postgresql-cheat-sheets)
