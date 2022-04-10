@@ -19,10 +19,10 @@ The `await` operator is used to wait for a [`Promise`](../global_objects/promise
 
     [rv] = await expression;
 
-`expression`  
+`expression`
 A [`Promise`](../global_objects/promise) or any value to wait for.
 
-`rv`  
+`rv`
 Returns the fulfilled value of the promise, or the value itself if it's not a `Promise`.
 
 ## Description

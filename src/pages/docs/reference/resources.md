@@ -14,13 +14,13 @@ template: docs
 ### Web Dev Resources
 
 <details>
-  
+
   <summary>
     JS RESOURCES
-    
+
   </summary>
-  
-  
+
+
 * [Awesome JavaScript](#awesome-javascript)
   * [Package Managers](#package-managers)
   * [Loaders](#loaders)

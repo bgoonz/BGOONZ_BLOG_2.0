@@ -95,44 +95,44 @@ Ubuntu does not come with Python 3. Install it using the command `sudo apt insta
 
 As of the time of writing of this document, WSL has an issue renaming or deleting files if Visual Studio Code is open. So before doing any linux commands which manipulate files, make sure you **close** Visual Studio Code before running those commands in the Ubuntu terminal.
 
-\# Installing build essentials  
-sudo apt-get install -y build-essential libssl-dev  
-\# Nodejs and NVM  
-curl -o- [https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh](https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh) | bash  
-source ~/.profile  
-sudo nvm install 7.10.0  
-sudo nvm use 7.10.0  
-node -v  
-#nodemon  
-sudo npm install -g nodemon  
-sudo npm install -g loopback-cli  
-\# Forever to run nodejs scripts forever  
-sudo npm install forever -g  
-\# Git - a version control system  
-sudo apt-get update  
-sudo apt-get install -y git xclip  
-\# Grunt - an automated task runner  
-sudo npm install -g grunt-cli  
-\# Bower - a dependency manager  
-sudo npm install -g bower  
-\# Yeoman - for generators  
-sudo npm install -g yo  
-\# maven  
-sudo apt-get install maven -y  
-\# Gulp - an automated task runner  
-sudo npm install -g gulp-cli  
-\# Angular FullStack - My favorite MEAN boilerplate (MEAN = MongoDB, Express, Angularjs, Nodejs)  
-sudo npm install -g generator-angular-fullstack  
-\# Vim, Curl, Python - Some random useful stuff  
-sudo apt-get install -y vim curl python-software-properties  
-sudo apt-get install -y python-dev, python-pip  
-sudo apt-get install -y libkrb5-dev  
-\# Installing JDK and JRE  
-sudo apt-get install -y default-jre  
-sudo apt-get install -y default-jdk  
-\# Archive Extractors  
-sudo apt-get install -y unace unrar zip unzip p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract file-roller  
-\# FileZilla - a FTP client  
+\# Installing build essentials
+sudo apt-get install -y build-essential libssl-dev
+\# Nodejs and NVM
+curl -o- [https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh](https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh) | bash
+source ~/.profile
+sudo nvm install 7.10.0
+sudo nvm use 7.10.0
+node -v
+#nodemon
+sudo npm install -g nodemon
+sudo npm install -g loopback-cli
+\# Forever to run nodejs scripts forever
+sudo npm install forever -g
+\# Git - a version control system
+sudo apt-get update
+sudo apt-get install -y git xclip
+\# Grunt - an automated task runner
+sudo npm install -g grunt-cli
+\# Bower - a dependency manager
+sudo npm install -g bower
+\# Yeoman - for generators
+sudo npm install -g yo
+\# maven
+sudo apt-get install maven -y
+\# Gulp - an automated task runner
+sudo npm install -g gulp-cli
+\# Angular FullStack - My favorite MEAN boilerplate (MEAN = MongoDB, Express, Angularjs, Nodejs)
+sudo npm install -g generator-angular-fullstack
+\# Vim, Curl, Python - Some random useful stuff
+sudo apt-get install -y vim curl python-software-properties
+sudo apt-get install -y python-dev, python-pip
+sudo apt-get install -y libkrb5-dev
+\# Installing JDK and JRE
+sudo apt-get install -y default-jre
+sudo apt-get install -y default-jdk
+\# Archive Extractors
+sudo apt-get install -y unace unrar zip unzip p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract file-roller
+\# FileZilla - a FTP client
 sudo apt-get install -y filezilla
 
 ## If you found this guide helpful feel free to checkout my github/gists where I host similar content:

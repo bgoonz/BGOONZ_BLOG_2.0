@@ -108,25 +108,25 @@ Write one line of Python that takes this list a and makes a new list that has on
 
 Make a two-player `Rock-Paper-Scissors` game.
 
-**Hint:**  
+**Hint:**
 Ask for player plays (using input), compare them. Print out a message of congratulations to the winner, and ask if the players want to start a new game.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*1_4w6u4D7EDi2r4h.png" class="graf-image" /></figure>### Problem 9
 
 Generate a random number between `1 and 100 (including 1 and 100)`. Ask the user to guess the number, then tell them whether they guessed `too low`, `too high`, or `exactly right`.
 
-> **Hint:**  
+> **Hint:**
 > Remember to use the user input from the very first exercise.
 
-**Extras:**  
-Keep the game going until the user types `"exit"`.  
+**Extras:**
+Keep the game going until the user types `"exit"`.
 Keep track of how many guesses the user has taken, and when the game ends, print this out.
 
 ### Problem 10
 
 Write a program that asks the user how many Fibonacci numbers to generate and then generates them. Take this opportunity to think about how you can use functions. Make sure to ask the user to enter the number of numbers in the sequence to generate.
 
-**Hint:**  
+**Hint:**
 The Fibonacci sequence is a sequence of numbers where the next number in the sequence is the sum of the previous two numbers in the sequence. The sequence looks like this: `1, 1, 2, 3, 5, 8, 13, …`
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*2xJsVLGikF6dg7qc.png" class="graf-image" /></figure>
@@ -141,7 +141,7 @@ The Fibonacci sequence is a sequence of numbers where the next number in the seq
 
 ### Problem 11
 
-In linear algebra, _a Toeplitz matrix is one in which the elements on any given diagonal from top left to bottom right are identical._  
+In linear algebra, _a Toeplitz matrix is one in which the elements on any given diagonal from top left to bottom right are identical._
 Here is an example:
 
     1 2 3 4 8
@@ -155,11 +155,11 @@ Write a program to determine whether a given input is a `Toeplitz` matrix.
 
 Given a positive integer `N`, find the smallest number of steps it will take to reach `1`.
 
-There are two kinds of permitted steps:  
- — -&gt; You may decrement N to N — 1.  
+There are two kinds of permitted steps:
+ — -&gt; You may decrement N to N — 1.
  — -&gt; If `a * b = N`, you may decrement `N to the larger of a and b`.
 
-For example, given 100, you can reach 1 in 5 steps with the following route:  
+For example, given 100, you can reach 1 in 5 steps with the following route:
 `100 -> 10 -> 9 -> 3 -> 2 -> 1.`
 
 ### Problem 13

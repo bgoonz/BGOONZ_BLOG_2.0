@@ -14,7 +14,7 @@ template: docs
 
 #### Table of Contents
 
-[An introduction to React](https://www.freecodecamp.org/news/the-react-handbook-b71c27b0a795/#an-introduction-to-the-react-view-library)  
+[An introduction to React](https://www.freecodecamp.org/news/the-react-handbook-b71c27b0a795/#an-introduction-to-the-react-view-library)
 [How to use create-react-app](https://www.freecodecamp.org/news/the-react-handbook-b71c27b0a795/#how-to-use-create-react-app)
 
 -   [Variables](https://www.freecodecamp.org/news/the-react-handbook-b71c27b0a795/#variables)

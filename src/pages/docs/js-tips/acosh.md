@@ -23,7 +23,7 @@ The `Math.acosh()` function returns the hyperbolic arc-cosine of a number, that 
 
 ### Parameters
 
-`x`  
+`x`
 A number.
 
 ### Return value

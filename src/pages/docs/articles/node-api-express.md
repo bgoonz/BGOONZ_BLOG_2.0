@@ -273,7 +273,7 @@ _Click on the following to get the slides presentation -_
 -   <span id="54d4">Employee Database</span>
 -   <span id="c6fb"><a href="https://www.w3resource.com/sql-exercises/employee-database-exercise/index.php" class="markup--anchor markup--li-anchor"><strong>BASIC queries on employee Database [115 Exercises]</strong></a></span>
 -   <span id="0419"><a href="https://www.w3resource.com/sql-exercises/employee-database-exercise/subqueries-exercises-on-employee-database.php" class="markup--anchor markup--li-anchor"><strong>SUBQUERIES on employee Database [77 Exercises]</strong></a></span>
--   <span id="cb3e">  
+-   <span id="cb3e">
       </span>
 -   <span id="b3da">More to come!</span>
 

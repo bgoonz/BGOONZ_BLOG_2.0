@@ -279,9 +279,9 @@ Sometimes this results in clearer code, but this style can also be abused. Like 
 
 So many times I have seen developers use the _index_ of an item as its _key_ when they render a list.
 
-todos.map((todo, index) => (  
- <Todo {...todo} key={index} />  
- ));  
+todos.map((todo, index) => (
+ <Todo {...todo} key={index} />
+ ));
 }
 
 It looks elegant and it does get rid of the warning (which was the ‘real' issue, right?). What is the danger here?
@@ -308,30 +308,30 @@ It turns out, when nothing is passed React uses the _index_ as _key_ because it 
 
 Each such item should have a _permanent_ and _unique_ property. Ideally, it should be assigned when the item is created. Of course, I am speaking about an _id_. Then we can use it the following way:
 
-{  
- todos.map((todo) => (  
- <Todo {...todo} key={todo.id} />  
- ));  
+{
+ todos.map((todo) => (
+ <Todo {...todo} key={todo.id} />
+ ));
 }
 
 > **Note:** First look at the existing properties of the items. It is possible they already have something that can be used as an _id_.
 
 One way to do so it to just move the numbering one step up in the abstraction. Using a global index makes sure any two items would have different \_id_s.
 
-let todoCounter = 1;const createNewTodo = (text) => ({  
- completed: false,  
- id: todoCounter++,  
- text  
+let todoCounter = 1;const createNewTodo = (text) => ({
+ completed: false,
+ id: todoCounter++,
+ text
 }
 
 ## Much better
 
 A production solution should use a more robust approach that would handle a distributed creation of items. For such, I recommend [nanoid](https://github.com/ai/nanoid/). It quickly generates short non-sequential url-friendly unique ids. The code could look like the following:
 
-import { nanoid } from 'nanoid';const createNewTodo = (text) => ({  
- completed: false,  
- id: nanoid(),  
- text  
+import { nanoid } from 'nanoid';const createNewTodo = (text) => ({
+ completed: false,
+ id: nanoid(),
+ text
 }
 
 > **TL;DR:** Generate a unique _id_ for every item and use it as _key_ when rendering the list.

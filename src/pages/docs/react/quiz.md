@@ -20,10 +20,10 @@ A top-level `App` component returns `<Button />` from its `render()` method.
 
 **Answer:**
 
-`<Button>` is a React "element".  
+`<Button>` is a React "element".
 If you log it, you will see a plain object like `{ type: Button, props: {} }`.
 
-The element does not represent anything on the screen at that point.  
+The element does not represent anything on the screen at that point.
 It is a _description_ of what `App` wants to be rendered.
 
 At some point, React will look at that description and think: "Hmm, there was no `Button` here but now there should be. So I'll create a `Button` instance."

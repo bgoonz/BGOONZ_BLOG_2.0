@@ -23,7 +23,7 @@ The `Math.acos()` function returns the arccosine (in radians) of a number, that 
 
 ### Parameters
 
-`x`  
+`x`
 A number representing a cosine, where `x` is between `-1` and `1`.
 
 ### Return value

@@ -50,14 +50,14 @@ _Hi (name),_
 
 Don't wait for the company to reach out to you! Be proactive in showing your interest by checking in to see where you stand in the process. If a company indicates a deadline by which you will hear back, and the deadline has passed, follow-up!
 
-**Check your email and phone regularly  
-‍\***  
+**Check your email and phone regularly
+‍\***
 \*Don't ghost on a company at any stage in the process; make sure you add their domain to your safe senders list and respond to any messages within 24 hours.
 
 ‍
 
-**Be prepared  
-‍\***  
+**Be prepared
+‍\***
 \*You might be invited for another interview on short notice; review the description regularly so it doesn't slip from your memory, and keep brushing up on skills you may need for an interview (chances are, this won't be the only job you'll need them for anyway!)
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*H4pwwuDEjkYTWKpJ.gif" class="graf-image" /></figure>

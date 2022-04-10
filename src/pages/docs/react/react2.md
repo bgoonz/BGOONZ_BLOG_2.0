@@ -371,8 +371,8 @@ Note: The text is considered a child of the div element, so you will not be able
       }
     };
 
-⌛The React component should return a single div element.  
-⌛The component should return two nested elements.  
+⌛The React component should return a single div element.
+⌛The component should return two nested elements.
 ⌛The component should return the ChildComponent as its second child.
 
 ### Ans:
