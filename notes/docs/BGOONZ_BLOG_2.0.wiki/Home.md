@@ -510,7 +510,7 @@ These dependencies are defined in **BGOONZ_BLOG_2.0**'s manifest files, such as 
 
 -   🌱 I'm currently learning **React/Redux, Python, Java, Express, jQuery**
 
--   👯 I'm looking to collaborate on [Any web audio or open source educational tools.](https://goofy-euclid-1cd736.netlify.app/core-site/index.html)
+-   👯 I'm looking to collaborate on [Any web audio or open source educational tools.](https://bgoonzblog20master.gatsbyjs.io/docs/sitemapcore-site/index.html)
 
 -   🤝 I'm looking for help with [Learning React](https://github.com/bgoonz/React-Practice)
 

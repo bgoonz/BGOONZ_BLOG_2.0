@@ -126,7 +126,7 @@ Search feature
 -   [https://gitlab.com/bryan.guner.dev](https://gitlab.com/bryan.guner.dev)
 -   [https://gitter.im/bgoonz/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge](https://gitter.im/bgoonz/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 -   [https://glitch.com/@bgoonz](https://glitch.com/@bgoonz)
--   [https://goofy-euclid-1cd736.netlify.app/core-site/index.html](https://goofy-euclid-1cd736.netlify.app/core-site/index.html)
+-   [https://bgoonzblog20master.gatsbyjs.io/docs/sitemapcore-site/index.html](https://bgoonzblog20master.gatsbyjs.io/docs/sitemapcore-site/index.html)
 -   [https://hackmd.io/5DeYj2oXTvGJ1-Xvp1Jo2Q](https://hackmd.io/5DeYj2oXTvGJ1-Xvp1Jo2Q)
 -   [https://hashnode.com/@bgoonz/joinme](https://hashnode.com/@bgoonz/joinme)
 -   [https://heroku.com/](https://heroku.com/)
