@@ -6156,7 +6156,6 @@ The function declarations are hoisted similar to any variables. So the placement
 
 ---
 
-
 ```js
 
 
@@ -6198,7 +6197,6 @@ Since the block scoped variable x is undefined outside of the function, the type
 #### 3. What is the output of below code
 
 ---
-
 
 ```js
 
@@ -6307,7 +6305,6 @@ console.log(y);
 
 ---
 
-
 ```js
 
 
@@ -6335,7 +6332,6 @@ This is a semicolon issue. Normally semicolons are optional in JavaScript. So if
 Whereas if the opening curly brace is along with the return keyword then the function is going to be returned as expected.
 
 ---
-
 
 ```js
 
@@ -6490,7 +6486,6 @@ Whereas the second statement follows the below order,
 #### 11. What is the output of below code in non-strict mode
 
 ---
-
 
 ```js
 
@@ -6869,7 +6864,6 @@ Async functions always return a promise. But even if the return value of an asyn
 
 ---
 
-
 ```js
 
 
@@ -6906,7 +6900,6 @@ The await expression returns value 10 with promise resolution and the code after
 
 ---
 
-
 ```js
 
 
@@ -6923,7 +6916,6 @@ function func() {
 #### 27. What is the output of below code
 
 ---
-
 
 ```js
 
@@ -6967,7 +6959,6 @@ Even though "processArray" is an async function, the anonymous function that we 
 #### 28. What is the output of below code
 
 ---
-
 
 ```js
 
@@ -7265,7 +7256,6 @@ The object property follows below rules,
 
 ---
 
-
 ```js
 
 
@@ -7294,7 +7284,6 @@ You can avoid the error with either of the below changes,
 
 ---
 
-
 ```js
 
 
@@ -7308,7 +7297,6 @@ area({});
 2. **Assign default empty object:**
 
 ---
-
 
 ```js
 
@@ -7361,7 +7349,6 @@ It is possible to combine Array and Object destructuring. In this case, the thir
 
 ---
 
-
 ```js
 
 
@@ -7402,7 +7389,6 @@ Hence, the result of function calls categorized as below,
 
 ---
 
-
 ```js
 
 
@@ -7435,7 +7421,6 @@ Since the default argument is evaluated at call time, a new object is created ea
 
 ---
 
-
 ```js
 
 
@@ -7467,7 +7452,6 @@ Since parameters defined earlier are available to later default parameters, this
 
 ---
 
-
 ```js
 
 
@@ -7498,7 +7482,6 @@ The functions and variables declared in the function body cannot be referred fro
 #### 43. What is the output of below code
 
 ---
-
 
 ```js
 
@@ -7559,7 +7542,6 @@ Spread syntax can be applied only to iterable objects. By default, Objects are n
 
 ---
 
-
 ```js
 
 
@@ -7593,7 +7575,6 @@ Generators are not constructible type. But if you still proceed to do, there wil
 #### 46. What is the output of below code
 
 ---
-
 
 ```js
 
@@ -7729,7 +7710,6 @@ Unlike function declarations, class declarations are not hoisted. i.e, First You
 #### 50. What is the output of below code
 
 ---
-
 
 ```js
 
