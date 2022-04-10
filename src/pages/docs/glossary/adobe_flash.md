@@ -1,7 +1,8 @@
 ---
 title: Adobe Flash
 weight: 0
-excerpt: seo:
+excerpt: 
+seo:
     title: 'Adobe_Flash'
     robots: []
     extra: []

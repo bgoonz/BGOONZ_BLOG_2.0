@@ -1,7 +1,8 @@
 ---
 title: ALPN
 weight: 0
-excerpt: seo:
+excerpt: 
+seo:
     title: 'ALPN'
     description: 'ALPN  Draft  Glossary  NeedsContent  TLS'
     robots: []

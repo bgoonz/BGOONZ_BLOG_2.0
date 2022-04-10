@@ -1,7 +1,8 @@
 ---
 title: Alpha (alpha channel)
 weight: 0
-excerpt: seo:
+excerpt: 
+seo:
     title: 'Alpha'
     description: 'Alpha  Alpha Channel  Drawing  Glossary  Graphics  Translucency  Translucent  Transparency  Transparent  WebGL  WebXR  channel  color  pixel'
     robots: []

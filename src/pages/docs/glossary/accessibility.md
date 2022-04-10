@@ -1,7 +1,8 @@
 ---
 title: Accessibility
 weight: 0
-excerpt: seo:
+excerpt: 
+seo:
     title: 'Accessibility'
     description: 'Accessibility  Glossary'
     robots: []

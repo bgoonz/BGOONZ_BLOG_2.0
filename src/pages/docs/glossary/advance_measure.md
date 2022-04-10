@@ -1,7 +1,8 @@
 ---
 title: Advance measure
 weight: 0
-excerpt: seo:
+excerpt: 
+seo:
     title: 'advance_measure'
     description: 'Accessibility  Glossary'
     robots: []

@@ -1,6 +1,7 @@
 ---
 title: Argument
-
+weight: 0
+excerpt: 
 seo:
     title: 'Argument'
     description: 'CodingScripting  Glossary  JavaScript'

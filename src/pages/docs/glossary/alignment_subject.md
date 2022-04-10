@@ -1,7 +1,8 @@
 ---
 title: Alignment subject
 weight: 0
-excerpt: seo:
+excerpt: 
+seo:
     title: 'Alignment_Subject'
     description: 'Alignment subject  CSS  Glossary  alignment'
     robots: []

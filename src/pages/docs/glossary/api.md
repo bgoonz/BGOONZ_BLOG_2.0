@@ -1,7 +1,8 @@
 ---
 title: API
 weight: 0
-excerpt: seo:
+excerpt: 
+seo:
     title: 'API'
     description: 'CodingScripting  Glossary  Infrastructure '
     robots: []

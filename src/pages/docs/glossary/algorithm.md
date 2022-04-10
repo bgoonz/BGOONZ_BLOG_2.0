@@ -1,7 +1,8 @@
 ---
 title: Algorithm
 weight: 0
-excerpt: seo:
+excerpt: 
+seo:
     title: 'Algorithm'
     description: 'CodingScripting  Glossary'
     robots: []
