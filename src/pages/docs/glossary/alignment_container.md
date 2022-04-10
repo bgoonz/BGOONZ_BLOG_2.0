@@ -2,11 +2,10 @@
 title: Alignment container
 sections: []
 weight: 0
-excerpt: 
-seo:
-    title: ' Alignment_Container'
-    description:  'Alignment container  CSS  Glossary  alignment '
- robots: []
+excerpt: seo:
+    title: 'Alignment_Container'
+    description: 'Alignment container  CSS  Glossary  alignment'
+    robots: []
     extra: []
     type: stackbit_page_meta
 template: docs

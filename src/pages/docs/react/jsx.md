@@ -10,6 +10,7 @@ seo:
 template: docs
 ---
 
+
 # Introducing JSX&#xA;&#xA;
 
 Consider this variable declaration:

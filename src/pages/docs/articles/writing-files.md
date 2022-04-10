@@ -27,6 +27,7 @@ seo:
 template: docs
 ---
 
+
 The easiest way to write to files in Node.js is to use the `fs.writeFile()` API.
 
 Example:

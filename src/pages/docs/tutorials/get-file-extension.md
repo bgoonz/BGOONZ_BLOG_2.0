@@ -10,6 +10,7 @@ seo:
 template: docs
 ---
 
+
 ### Question: How to get the file extension?
 
 ```js

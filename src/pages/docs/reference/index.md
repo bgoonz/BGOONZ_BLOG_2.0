@@ -10,6 +10,7 @@ seo:
 template: docs
 ---
 
+
 # Reference:
 
 -   [SITEMAP🗺🟈]\(https://bgoonz-blog.netlify.app/docs/sitemap/)

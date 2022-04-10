@@ -23,6 +23,7 @@ seo:
 template: docs
 ---
 
+
 <h1> Here are some other websites I have worked on since endeavoring to learn web development! </h1>
 
 <br>

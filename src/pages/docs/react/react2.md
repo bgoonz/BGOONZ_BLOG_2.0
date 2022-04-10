@@ -11,6 +11,7 @@ seo:
 template: docs
 ---
 
+
 # Introduction to React for Complete Beginners
 
 All of the code examples below will be included a second time at the bottom of this article as an embedded gist.

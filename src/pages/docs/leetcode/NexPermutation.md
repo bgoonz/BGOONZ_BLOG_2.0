@@ -11,6 +11,7 @@ seo:
 template: docs
 ---
 
+
 ## [31. Next Permutation](https://leetcode.com/problems/next-permutation/description/)
 
 ### Problem:

@@ -10,6 +10,7 @@ seo:
 template: docs
 ---
 
+
 ## Web Standards Checklist
 
 The term web standards can mean different things to different people. For some, it is '_table-free sites_', for others it is '_using valid code_'. However, web standards are much broader than that. A site built to web standards should _adhere to standards_ (HTML, XHTML, XML, CSS, XSLT, DOM, MathML, SVG etc) and _pursue best practices_ (valid code, accessible code, semantically correct code, user-friendly URLs etc).
