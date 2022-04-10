@@ -2,8 +2,7 @@
 title: Alignment container
 sections: []
 weight: 0
-excerpt: 
-seo:
+excerpt: seo:
     title: 'Alignment_Container'
     description: 'Alignment container  CSS  Glossary  alignment'
     robots: []

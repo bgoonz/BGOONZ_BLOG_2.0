@@ -2,8 +2,7 @@
 title: Accessibility
 sections: []
 weight: 0
-excerpt: 
-seo:
+excerpt: seo:
     title: 'Accessibility'
     description: 'Accessibility  Glossary'
     robots: []
@@ -17,7 +16,7 @@ _Web Accessibility_ (**A11Y**) refers to best practices for keeping a website us
 ## See also
 
 - [Accessibility resources at MDN](/en-US/docs/Web/Accessibility)
-- {{Interwiki("wikipedia", "Web accessibility"on Wikipedia
+
 - [Learn accessibility on MDN](/en-US/docs/Learn/Accessibility)
 - [Web Accessibility In Mind](https://webaim.org/)
 - [The ARIA documentation on MDN](/en-US/docs/Web/Accessibility/ARIA)

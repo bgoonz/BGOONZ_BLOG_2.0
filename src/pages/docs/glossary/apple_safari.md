@@ -14,7 +14,7 @@ template: docs
 
 ## See also
 
-- {{Interwiki("wikipedia", "Safari (web browser)", "Safari"on Wikipedia
+- [Interwiki("wikipedia", "Safari (web browser)", "Safari"on Wikipedia
 - [Safari on apple.com](https://www.apple.com/safari/)
 - [The WebKit project](https://webkit.org/)
 - [WebKit nightly build](https://nightly.webkit.org/)

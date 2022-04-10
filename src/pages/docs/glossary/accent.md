@@ -2,8 +2,7 @@
 title: accent
 sections: []
 weight: 0
-excerpt: 
-seo:
+excerpt: seo:
     title: 'accent'
     description: 'Input  accent'
     robots: []

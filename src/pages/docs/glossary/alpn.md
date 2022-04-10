@@ -2,8 +2,7 @@
 title: ALPN
 sections: []
 weight: 0
-excerpt: 
-seo:
+excerpt: seo:
     title: 'ALPN'
     description: 'ALPN  Draft  Glossary  NeedsContent  TLS'
     robots: []
@@ -16,7 +15,7 @@ template: docs
 
 | Protocol                                       | Identification sequence                                |
 | ---------------------------------------------- | ------------------------------------------------------ |
-| HTTP")}}/1.1               | `0x68 0x74 0x74 0x70 0x2F 0x31 0x2E 0x31` ("http/1.1") |
+| HTTP" /1.1               | `0x68 0x74 0x74 0x70 0x2F 0x31 0x2E 0x31` ("http/1.1") |
 | HTTP 2", "HTTP/2"  | `0x68 0x32` ("h2")                                     |
 | HTTP/2 over cleartext TCP"| `0x68 0x32 0x63` ("h2c")                               |
 

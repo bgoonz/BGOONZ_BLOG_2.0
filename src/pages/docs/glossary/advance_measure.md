@@ -2,8 +2,7 @@
 title: Advance measure
 sections: []
 weight: 0
-excerpt: 
-seo:
+excerpt: seo:
     title: 'advance_measure'
     description: 'Accessibility  Glossary'
     robots: []
@@ -21,4 +20,4 @@ For a horizontal inline axis, this will be the width of the character.
 
 ## See also
 
-- &lt;length&gt;")}}
+- &lt;length&gt;"

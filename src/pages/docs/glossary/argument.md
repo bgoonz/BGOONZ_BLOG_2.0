@@ -10,9 +10,9 @@ seo:
 template: docs
 ---
 
-An **argument** is a value"(primitive"or object")}}) passed as input to a function")}}.
+An **argument** is a value"(primitive"or object" ) passed as input to a function" .
 
 ## See also
 
-- {{Interwiki("wikipedia", "Parameter_(computer_programming)", "Difference between Parameter and Argument"on Wikipedia
-- The {{jsxref("Functions/arguments","arguments"object in JavaScript")}}
+- [Interwiki("wikipedia", "Parameter_(computer_programming)", "Difference between Parameter and Argument"on Wikipedia
+- The {{jsxref("Functions/arguments","arguments"object in JavaScript"
