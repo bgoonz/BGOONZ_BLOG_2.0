@@ -4,9 +4,9 @@ sections: []
 weight: 0
 excerpt: 
 seo:
-    title: ' accent'
-    description:  'Input  accent '
- robots: []
+    title: 'accent'
+    description:  'Input  accent'
+    robots: []
     extra: []
     type: stackbit_page_meta
 template: docs

@@ -2,9 +2,9 @@
 title: ARPA
 sections: []
 seo:
-    title: ' ARPA'
-    description:  'Glossary  Infrastructure '
- robots: []
+    title: 'ARPA'
+    description:  'Glossary  Infrastructure'
+    robots: []
     extra: []
     type: stackbit_page_meta
 template: docs

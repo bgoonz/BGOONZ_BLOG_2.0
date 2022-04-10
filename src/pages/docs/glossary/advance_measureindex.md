@@ -4,9 +4,9 @@ sections: []
 weight: 0
 excerpt: 
 seo:
-    title: ' advance_measure'
-    description:  'Accessibility  Glossary '
- robots: []
+    title: 'advance_measure'
+    description:  'Accessibility  Glossary'
+    robots: []
     extra: []
     type: stackbit_page_meta
 template: docs

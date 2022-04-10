@@ -4,9 +4,9 @@ sections: []
 weight: 0
 excerpt: 
 seo:
-    title: ' Algorithm'
-    description:  'CodingScripting  Glossary '
- robots: []
+    title: 'Algorithm'
+    description:  'CodingScripting  Glossary'
+    robots: []
     extra: []
     type: stackbit_page_meta
 template: docs

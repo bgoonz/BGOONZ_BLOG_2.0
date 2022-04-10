@@ -4,7 +4,7 @@ sections: []
 weight: 0
 excerpt: 
 seo:
-    title: ' API'
+    title: 'API'
     description:  'CodingScripting  Glossary  Infrastructure '
     robots: []
     extra: []

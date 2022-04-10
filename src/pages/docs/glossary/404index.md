@@ -1,12 +1,11 @@
 ---
 title: '404'
-sections: []
 weight: 0
 excerpt: 
 seo:
     title:  404'
-    description:  'Glossary  HTTP Errors  Infrastructure  Navigation '
- robots: []
+    description:  'Glossary  HTTP Errors  Infrastructure  Navigation'
+    robots: []
     extra: []
     type: stackbit_page_meta
 template: docs

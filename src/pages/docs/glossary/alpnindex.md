@@ -4,9 +4,9 @@ sections: []
 weight: 0
 excerpt: 
 seo:
-    title: ' ALPN'
-    description:  'ALPN  Draft  Glossary  NeedsContent  TLS '
- robots: []
+    title: 'ALPN'
+    description:  'ALPN  Draft  Glossary  NeedsContent  TLS'
+    robots: []
     extra: []
     type: stackbit_page_meta
 template: docs

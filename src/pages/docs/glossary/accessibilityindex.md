@@ -4,9 +4,9 @@ sections: []
 weight: 0
 excerpt: 
 seo:
-    title: ' Accessibility'
-    description:  'Accessibility  Glossary '
- robots: []
+    title: 'Accessibility'
+    description:  'Accessibility  Glossary'
+    robots: []
     extra: []
     type: stackbit_page_meta
 template: docs

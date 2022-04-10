@@ -2,9 +2,9 @@
 title: Application Context
 sections: []
 seo:
-    title: ' application_context'
-    description:  'CodingScripting  Glossary '
- robots: []
+    title: 'application_context'
+    description:  'CodingScripting  Glossary'
+    robots: []
     extra: []
     type: stackbit_page_meta
 template: docs

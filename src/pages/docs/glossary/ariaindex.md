@@ -2,9 +2,9 @@
 title: ARIA
 sections: []
 seo:
-    title: ' ARIA'
-    description:  'Accessibility  Glossary '
- robots: []
+    title: 'ARIA'
+    description:  'Accessibility  Glossary'
+    robots: []
     extra: []
     type: stackbit_page_meta
 template: docs

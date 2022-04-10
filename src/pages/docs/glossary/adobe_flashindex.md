@@ -4,8 +4,8 @@ sections: []
 weight: 0
 excerpt: 
 seo:
-    title: ' Adobe_Flash '
- robots: []
+    title: 'Adobe_Flash'
+    robots: []
     extra: []
     type: stackbit_page_meta
 template: docs

@@ -1,12 +1,11 @@
 ---
 title: '502'
-sections: []
 weight: 0
 excerpt: 
 seo:
-    title: ' 502'
-    description:  ''502'  Bad Gateway  Glossary  HTTP Errors  Infrastructure  Navigation '
- robots: []
+    title: '502'
+    description:  '502  Bad Gateway  Glossary  HTTP Errors  Infrastructure  Navigation'
+    robots: []
     extra: []
     type: stackbit_page_meta
 template: docs
