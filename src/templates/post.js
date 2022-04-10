@@ -1,10 +1,12 @@
-import { graphql } from 'gatsby';
-import { Disqus } from 'gatsby-plugin-disqus';
+import {graphql} from 'gatsby';
+import {Disqus} from 'gatsby-plugin-disqus';
 import _ from 'lodash';
 import moment from 'moment-strftime';
 import React from 'react';
-import { Layout } from '../components/index';
-import { htmlToReact, toStyleObj, withPrefix } from '../utils';
+
+import {Layout} from '../components/index';
+import {htmlToReact, toStyleObj, withPrefix} from '../utils';
+
 // this minimal GraphQL query ensures that when 'gatsby develop' is running,
 // any changes to content files are reflected in browser
 export const query = graphql`
@@ -15,16 +17,21 @@ export const query = graphql`
     }
 `;
 export default class Post extends React.Component {
-    render() {
+  render() {
         return (
             <Layout {...this.props}>
                 <article className="post post-full">
                     <header className="post-header has-gradient outer">
                         {_.get(this.props, 'pageContext.frontmatter.image', null) && (
                             <div
-                                className="bg-img"
-                                style={toStyleObj("background-image: url('" + withPrefix(_.get(this.props, 'pageContext.frontmatter.image', null)) + "')")}
-                            />
+      className = "bg-img"
+    style =
+    {
+      toStyleObj(
+          "background-image: url('" +
+          withPrefix(_.get(this.props, 'pageContext.frontmatter.image', null)) +
+          "')")
+    } />
                         )}
                         <div className="inner-sm">
                             <div className="post-meta">
@@ -33,10 +40,9 @@ export default class Post extends React.Component {
                                     dateTime={moment(_.get(this.props, 'pageContext.frontmatter.date', null)).strftime('%Y-%m-%d %H:%M')}
                                 >
                                     {moment(_.get(this.props, 'pageContext.frontmatter.date', null)).strftime('%B %d, %Y')}
-                                </time>
-                            </div>
-                            <h1 className="post-title">{_.get(this.props, 'pageContext.frontmatter.title', null)}</h1>
-                            {_.get(this.props, 'pageContext.frontmatter.subtitle', null) && (
+                                </time >
+        </div>
+                            <h1 className="post-title">{_.get(this.props, 'pageContext.frontmatter.title', null)}</h1> {_.get(this.props, 'pageContext.frontmatter.subtitle', null) && (
                                 <div className="post-subtitle">{htmlToReact(_.get(this.props, 'pageContext.frontmatter.subtitle', null))}</div>
                             )}
                         </div>
