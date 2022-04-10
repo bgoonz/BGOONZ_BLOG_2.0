@@ -5,7 +5,7 @@ date: '2021-09-11'
 thumb_image_alt: big o
 excerpt: What are the possible ways to create objects in JavaScript
 seo:
-    title: ''
+    title: 'Javascript Interview Questions'
     description: What are the possible ways to create objects in JavaScript
     robots: []
     extra:
