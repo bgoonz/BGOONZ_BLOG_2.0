@@ -428,7 +428,7 @@
       <meta name="twitter:title" content="Web Development Resource Hub Bryan Guner">
       <meta name="twitter:description" content="The new home of my blog resource sharing website.">
       <link
-        href="https://instructure-uploads-pdx.s3.us-west-2.amazonaws.com/account_168550000000000001/attachments/537/logo-canvas.png"
+        href="https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/favicon.png"
         rel="apple-touch-icon">
       <link type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet">
     ```
