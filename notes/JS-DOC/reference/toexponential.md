@@ -1,8 +1,10 @@
-# Number.prototype.toExponential()
+Number.prototype.toExponential()
+================================
 
 The `toExponential()` method returns a string representing the [`Number`](../number) object in exponential notation.
 
-## Syntax
+Syntax
+------
 
     toExponential()
     toExponential(fractionDigits)
@@ -24,7 +26,8 @@ If `fractionDigits` is too small or too large. Values between `0` and `100`, inc
 [`TypeError`](../typeerror)  
 If this method is invoked on an object that is not a [`Number`](../number).
 
-## Description
+Description
+-----------
 
 If the `fractionDigits` argument is omitted, the number of digits after the decimal point defaults to the number of digits necessary to represent the value uniquely.
 
@@ -32,7 +35,8 @@ If you use the `toExponential()` method for a numeric literal and the numeric li
 
 If a number has more digits than requested by the `fractionDigits` parameter, the number is rounded to the nearest number represented by `fractionDigits` digits. See the discussion of rounding in the description of the [`toFixed()`](tofixed) method, which also applies to `toExponential()`.
 
-## Examples
+Examples
+--------
 
 ### Using toExponential
 
@@ -44,14 +48,14 @@ If a number has more digits than requested by the `fractionDigits` parameter, th
     console.log(77.1234.toExponential()); // logs 7.71234e+1
     console.log(77 .toExponential());     // logs 7.7e+1
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.prototype.toexponential">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-number.prototype.toexponential</span></td></tr></tbody></table>
 
-<span class="small">#sec-number.prototype.toexponential</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -107,12 +111,12 @@ Samsung Internet
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`Number.prototype.toFixed()`](tofixed)
 -   [`Number.prototype.toPrecision()`](toprecision)
 -   [`Number.prototype.toString()`](tostring)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toExponential" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toExponential</a>

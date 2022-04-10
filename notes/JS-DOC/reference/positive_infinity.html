@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>positive_infinity</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="number.positive_infinity">Number.POSITIVE_INFINITY</h1>
+<p>The <code>Number.POSITIVE_INFINITY</code> property represents the positive Infinity value.</p>
+<p>Property attributes of <code>Number.POSITIVE_INFINITY</code></p>
+<p>Writable</p>
+<p>no</p>
+<p>Enumerable</p>
+<p>no</p>
+<p>Configurable</p>
+<p>no</p>
+<h2 id="description">Description</h2>
+<p>The value of <code>Number.POSITIVE_INFINITY</code> is the same as the value of the global object’s <a href="../infinity"><code>Infinity</code></a> property.</p>
+<p>This value behaves slightly differently than mathematical infinity:</p>
+<ul>
+<li>Any positive value, including <code>POSITIVE_INFINITY</code>, multiplied by <code>POSITIVE_INFINITY</code> is <code>POSITIVE_INFINITY</code>.</li>
+<li>Any negative value, including <a href="negative_infinity"><code>NEGATIVE_INFINITY</code></a>, multiplied by <code>POSITIVE_INFINITY</code> is <a href="negative_infinity"><code>NEGATIVE_INFINITY</code></a>.</li>
+<li>Any positive number divided by <code>POSITIVE_INFINITY</code> is positive Zero.</li>
+<li>Any negative number divided by <code>POSITIVE_INFINITY</code> is negative Zero.</li>
+<li>Zero multiplied by <code>POSITIVE_INFINITY</code> is <a href="../nan"><code>NaN</code></a>.</li>
+<li><a href="../nan"><code>NaN</code></a> multiplied by <code>POSITIVE_INFINITY</code> is <a href="../nan"><code>NaN</code></a>.</li>
+<li><code>POSITIVE_INFINITY</code>, divided by any negative value except <a href="negative_infinity"><code>NEGATIVE_INFINITY</code></a>, is <a href="negative_infinity"><code>NEGATIVE_INFINITY</code></a>.</li>
+<li><code>POSITIVE_INFINITY</code>, divided by any positive value except <code>POSITIVE_INFINITY</code>, is <code>POSITIVE_INFINITY</code>.</li>
+<li><code>POSITIVE_INFINITY</code>, divided by either <a href="negative_infinity"><code>NEGATIVE_INFINITY</code></a> or <code>POSITIVE_INFINITY</code>, is <a href="../nan"><code>NaN</code></a>.</li>
+</ul>
+<p>You might use the <code>Number.POSITIVE_INFINITY</code> property to indicate an error condition that returns a finite number in case of success. Note, however, that <a href="../isfinite"><code>isFinite</code></a> would be more appropriate in such a case.</p>
+<p>Because <code>POSITIVE_INFINITY</code> is a static property of <a href="../number"><code>Number</code></a>, you always use it as <code>Number.POSITIVE_INFINITY</code>, rather than as a property of a <a href="../number"><code>Number</code></a> object you created.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-positive_infinity">Using POSITIVE_INFINITY</h3>
+<p>In the following example, the variable <code>bigNumber</code> is assigned a value that is larger than the maximum value. When the <a href="../../statements/if...else"><code>if</code></a> statement executes, <code>bigNumber</code> has the value <code>Infinity</code>, so <code>bigNumber</code> is set to a more manageable value before continuing.</p>
+<pre><code>var bigNumber = Number.MAX_VALUE * 2;
+
+if (bigNumber == Number.POSITIVE_INFINITY) {
+  bigNumber = returnFinite();
+}</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-number.positive_infinity">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-number.positive_infinity</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>POSITIVE_INFINITY</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>4</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="negative_infinity"><code>Number.NEGATIVE_INFINITY</code></a></li>
+<li><a href="isfinite"><code>Number.isFinite()</code></a></li>
+<li><a href="../infinity"><code>Infinity</code></a></li>
+<li><a href="../isfinite"><code>isFinite()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/POSITIVE_INFINITY" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/POSITIVE_INFINITY</a></p>
+</body>
+</html>

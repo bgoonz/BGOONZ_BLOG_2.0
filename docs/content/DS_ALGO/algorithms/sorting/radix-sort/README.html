@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="radix-sort">Radix Sort</h1>
+<p>In computer science, <strong>radix sort</strong> is a non-comparative integer sorting algorithm that sorts data with integer keys by grouping keys by the individual digits which share the same significant position and value. A positional notation is required, but because integers can represent strings of characters (e.g., names or dates) and specially formatted floating point numbers, radix sort is not limited to integers.</p>
+<p><em>Where does the name come from?</em></p>
+<p>In mathematical numeral systems, the <em>radix</em> or base is the number of unique digits, including the digit zero, used to represent numbers in a positional numeral system. For example, a binary system (using numbers 0 and 1) has a radix of 2 and a decimal system (using numbers 0 to 9) has a radix of 10.</p>
+<h2 id="efficiency">Efficiency</h2>
+<p>The topic of the efficiency of radix sort compared to other sorting algorithms is somewhat tricky and subject to quite a lot of misunderstandings. Whether radix sort is equally efficient, less efficient or more efficient than the best comparison-based algorithms depends on the details of the assumptions made. Radix sort complexity is <code>O(wn)</code> for <code>n</code> keys which are integers of word size <code>w</code>. Sometimes <code>w</code> is presented as a constant, which would make radix sort better (for sufficiently large <code>n</code>) than the best comparison-based sorting algorithms, which all perform <code>O(n log n)</code> comparisons to sort <code>n</code> keys. However, in general <code>w</code> cannot be considered a constant: if all <code>n</code> keys are distinct, then <code>w</code> has to be at least <code>log n</code> for a random-access machine to be able to store them in memory, which gives at best a time complexity <code>O(n log n)</code>. That would seem to make radix sort at most equally efficient as the best comparison-based sorts (and worse if keys are much longer than <code>log n</code>).</p>
+<figure>
+<img src="https://www.researchgate.net/publication/291086231/figure/fig1/AS:614214452404240@1523451545568/Simplistic-illustration-of-the-steps-performed-in-a-radix-sort-In-this-example-the.png" alt="Radix Sort" /><figcaption>Radix Sort</figcaption>
+</figure>
+<h2 id="complexity">Complexity</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Name</th>
+<th style="text-align: center;">Best</th>
+<th style="text-align: center;">Average</th>
+<th style="text-align: center;">Worst</th>
+<th style="text-align: center;">Memory</th>
+<th style="text-align: center;">Stable</th>
+<th style="text-align: left;">Comments</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Radix sort</strong></td>
+<td style="text-align: center;">n * k</td>
+<td style="text-align: center;">n * k</td>
+<td style="text-align: center;">n * k</td>
+<td style="text-align: center;">n + k</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: left;">k - length of longest key</td>
+</tr>
+</tbody>
+</table>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Radix_sort">Wikipedia</a></li>
+<li><a href="https://www.youtube.com/watch?v=XiuSW_mEn7g&amp;index=62&amp;t=0s&amp;list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8">YouTube</a></li>
+<li><a href="https://www.researchgate.net/figure/Simplistic-illustration-of-the-steps-performed-in-a-radix-sort-In-this-example-the_fig1_291086231">ResearchGate</a></li>
+</ul>
+</body>
+</html>

@@ -1,6 +1,7 @@
-Welcome to the BGOONZ_BLOG_2.0 wiki!
+Welcome to the BGOONZ\_BLOG\_2.0 wiki!
 
-# How to install, setup and add new content to a Blog starter - front-end dev with Greg
+How to install, setup and add new content to a Blog starter - front-end dev with Greg
+=====================================================================================
 
 > Front-end web development with Greg is an educational project.
 
@@ -45,9 +46,10 @@ You will see something more or less like this:
 
 That means you can see the blog running in your web browser under the `http://localhost:8000/` address.
 
-## Folders structure
+Folders structure
+-----------------
 
-This is the starter's main folders structure.
+This is the starter’s main folders structure.
 
     root
       ├── .cache
@@ -56,7 +58,8 @@ This is the starter's main folders structure.
       ├── src
       └── static
 
-## Content
+Content
+-------
 
 To easily customize all texts of the blog, not only posts, I extracted all content to its own separate folder.
 
@@ -108,7 +111,7 @@ Content of the `config.js` file.
       ]
     };
 
-Edit values of the object's properties according to your needs.
+Edit values of the object’s properties according to your needs.
 
 ### Posts
 
@@ -133,7 +136,8 @@ There are three obligatory parts:
 
 Only posts inside properly named folders are displayed on the blog post list.
 
-## Pages
+Pages
+-----
 
 The same way as posts, every page has its own folder.
 
@@ -154,9 +158,10 @@ There are three parts.
 
 Only pages inside folders with order prefix are displayed in the Info menu.
 
-## Parts
+Parts
+-----
 
-Through `parts` you can edit content of elements which are parts of the blog's layout, like an author note under a post or a footer.
+Through `parts` you can edit content of elements which are parts of the blog’s layout, like an author note under a post or a footer.
 
     root
       ├── content
@@ -165,7 +170,8 @@ Through `parts` you can edit content of elements which are parts of the blog's l
       │   │   ├── footnote.md
       │   │   └── info.md
 
-## Environment variables
+Environment variables
+---------------------
 
 The starter uses some external services:
 
@@ -208,8 +214,9 @@ If you want to delay singing-up to Algolia you can temporarily turn off `gatsby-
         {
           resolve: `gatsby-source-filesystem`,
 
-But hey, it's not diffucult or long to [setup](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/setup-algolia-account/) your Algolia account for the starter.
+But hey, it’s not diffucult or long to [setup](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/setup-algolia-account/) your Algolia account for the starter.
 
-## Summary
+Summary
+-------
 
-That's all for the first step. Now you should have a running blog with your own data running on your localhost. In the next post we will talk how to change the look of your blog. Stay tuned.
+That’s all for the first step. Now you should have a running blog with your own data running on your localhost. In the next post we will talk how to change the look of your blog. Stay tuned.

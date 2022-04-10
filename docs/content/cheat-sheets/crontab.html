@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2022-01-03" />
+  <title>title</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">title</h1>
+<p class="subtitle">subtitle</p>
+<p class="date">2022-01-03</p>
+</header>
+<hr />
+<h2 id="tags-job-scheduler-periodic">tags: [job, scheduler, periodic]</h2>
+<h1 id="set-a-shell">set a shell</h1>
+<p>SHELL=/bin/bash</p>
+<h1 id="set-a-path">set a PATH</h1>
+<p>PATH=/usr/bin:/usr/sbin:/usr/local/bin</p>
+<h1 id="incorrect-way-of-seeting-path">incorrect way of seeting PATH</h1>
+<p>PATH=$PATH:/do/not/do/this</p>
+<h1 id="crontab-format">crontab format</h1>
+<ul>
+<li><ul>
+<li><ul>
+<li><ul>
+<li><ul>
+<li>command_to_execute</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<hr />
+<div class="line-block">| | | |<br />
+| | | +- day of week (0 - 7) (where sunday is 0 and 7)<br />
+| | +— month (1 - 12)<br />
+| +—– day (1 - 31)<br />
++——- hour (0 - 23)</div>
+<p>+——— minute (0 - 59)</p>
+<h1 id="example-entries">example entries</h1>
+<h1 id="every-15-min">every 15 min</h1>
+<p><em>/15 </em> * * * /home/user/command.sh</p>
+<h1 id="every-midnight">every midnight</h1>
+<p>0 0 * * * /home/user/command.sh</p>
+<h1 id="every-saturday-at-805-am">every Saturday at 8:05 AM</h1>
+<p>5 8 * * 6 /home/user/command.sh</p>
+<h1 id="compute-your-crontab-periodicity-format-online">compute your crontab periodicity format online</h1>
+<p>https://crontab.guru/</p>
+<h1 id="be-careful-with-sign-percent-it-has-special-meaning-see-httpscrontab.guru-for-explanation">be careful with % sign (percent), it has special meaning, see https://crontab.guru/ for explanation</h1>
+<p>% signs must be escaped such as %</p>
+</body>
+</html>

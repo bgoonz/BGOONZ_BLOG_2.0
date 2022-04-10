@@ -1,10 +1,12 @@
-# function\*
+function\*
+==========
 
-The `function*` declaration (`function` keyword followed by an asterisk) defines a _generator function_, which returns a [`Generator`](../global_objects/generator) object.
+The `function*` declaration (`function` keyword followed by an asterisk) defines a *generator function*, which returns a [`Generator`](../global_objects/generator) object.
 
 You can also define generator functions using the [`GeneratorFunction`](../global_objects/generatorfunction) constructor, or the function expression syntax.
 
-## Syntax
+Syntax
+------
 
     function* name([param[, param[, ... param]]]) {
        statements
@@ -19,19 +21,21 @@ The name of a formal parameter for the function.
 `statements`  
 The statements comprising the body of the function.
 
-## Description
+Description
+-----------
 
 Generators are functions that can be exited and later re-entered. Their context (variable bindings) will be saved across re-entrances.
 
-Generators in JavaScript -- especially when combined with Promises -- are a very powerful tool for asynchronous programming as they mitigate -- if not entirely eliminate -- the problems with callbacks, such as [Callback Hell](http://callbackhell.com/) and [Inversion of Control](https://frontendmasters.com/courses/rethinking-async-js/callback-problems-inversion-of-control/). However, an even simpler solution to these problems can be achieved with [async functions](async_function).
+Generators in JavaScript – especially when combined with Promises – are a very powerful tool for asynchronous programming as they mitigate – if not entirely eliminate – the problems with callbacks, such as [Callback Hell](http://callbackhell.com/) and [Inversion of Control](https://frontendmasters.com/courses/rethinking-async-js/callback-problems-inversion-of-control/). However, an even simpler solution to these problems can be achieved with [async functions](async_function).
 
-Calling a generator function does not execute its body immediately; an [iterator](../iteration_protocols#iterator) object for the function is returned instead. When the iterator's `next()` method is called, the generator function's body is executed until the first [`yield`](../operators/yield) expression, which specifies the value to be returned from the iterator or, with [`yield*`](../operators/yield*), delegates to another generator function. The `next()` method returns an object with a `value` property containing the yielded value and a `done` property which indicates whether the generator has yielded its last value, as a boolean. Calling the `next()` method with an argument will resume the generator function execution, replacing the `yield` expression where an execution was paused with the argument from `next()`.
+Calling a generator function does not execute its body immediately; an [iterator](../iteration_protocols#iterator) object for the function is returned instead. When the iterator’s `next()` method is called, the generator function’s body is executed until the first [`yield`](../operators/yield) expression, which specifies the value to be returned from the iterator or, with [`yield*`](../operators/yield*), delegates to another generator function. The `next()` method returns an object with a `value` property containing the yielded value and a `done` property which indicates whether the generator has yielded its last value, as a boolean. Calling the `next()` method with an argument will resume the generator function execution, replacing the `yield` expression where an execution was paused with the argument from `next()`.
 
-A `return` statement in a generator, when executed, will make the generator finish (i.e. the `done` property of the object returned by it will be set to `true`). If a value is returned, it will be set as the `value` property of the object returned by the generator.  
-Much like a `return` statement, an error thrown inside the generator will make the generator finished -- unless caught within the generator's body.  
-When a generator is finished, subsequent `next()` calls will not execute any of that generator's code, they will just return an object of this form: `{value: undefined, done: true}`.
+A `return` statement in a generator, when executed, will make the generator finish (i.e. the `done` property of the object returned by it will be set to `true`). If a value is returned, it will be set as the `value` property of the object returned by the generator.  
+Much like a `return` statement, an error thrown inside the generator will make the generator finished – unless caught within the generator’s body.  
+When a generator is finished, subsequent `next()` calls will not execute any of that generator’s code, they will just return an object of this form: `{value: undefined, done: true}`.
 
-## Examples
+Examples
+--------
 
 ### Simple example
 
@@ -189,12 +193,11 @@ When a generator is finished, subsequent `next()` calls will not execute any of 
            //32
     }
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-generator-function-definitions">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-generator-function-definitions</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-generator-function-definitions</span></td></tr></tbody></table>
 
 `function*`
 
@@ -300,7 +303,8 @@ No
 
 7.0
 
-## See also
+See also
+--------
 
 -   [`function*`](../operators/function*) expression
 -   [`GeneratorFunction`](../global_objects/generatorfunction) object
@@ -313,10 +317,9 @@ No
 -   [Functions and function scope](../functions)
 -   Other web resources:
     -   [Regenerator](https://facebook.github.io/regenerator/) an ES2015 generator compiler to ES5
-    -   [Forbes Lindesay: Promises and Generators: control flow utopia -- JSConf EU 2013](https://www.youtube.com/watch?v=qbKWsbJ76-s)
+    -   [Forbes Lindesay: Promises and Generators: control flow utopia – JSConf EU 2013](https://www.youtube.com/watch?v=qbKWsbJ76-s)
     -   [Task.js](https://github.com/mozilla/task.js)
     -   [Iterating generators asynchronously](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/async%20%26%20performance/ch4.md#iterating-generators-asynchronously)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function\*</a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*</a>

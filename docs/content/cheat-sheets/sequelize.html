@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Sequelize</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Sequelize</h1>
+</header>
+<h3 id="api">API</h3>
+<pre><code>sequelize.sync().done -&gt; ...</code></pre>
+<h3 id="models">Models</h3>
+<pre><code>Project = sequelize.define(&#39;Project&#39;, {
+  title: Sequelize.STRING,
+  description: Sequelize.TEXT,
+  myDate: { type: Sequelize.DATE, defaultValue: Sequelize.NOW },
+  title: { type: Sequelize.STRING, allowNull: false },
+  id: { type: Sequelize.INTEGER, autoIncrement: true, primaryKey: true },
+}, {
+  classMethods: { ... },
+  instanceMethods: { ... }
+});
+
+Project.hasMany(Task)</code></pre>
+<h3 id="finders">Finders</h3>
+<pre><code>Project.find(123).success (project) -&gt;
+
+Project.find({ where: {title: &#39;Hello&#39;} })
+Project.find({ where: {id: [1,3,4]} })
+Project.find({ where: [&quot;id &gt; ?&quot;, 25] })
+
+Project.find(
+  where: {title: &#39;a&#39;}
+  attributes: [&#39;id&#39;, [&#39;name&#39;, &#39;title&#39;]]
+)
+
+.findOrCreate(...)
+
+.findAll
+.findAll({ where: ... })
+.findAll({ order: &#39;title DESC&#39; })
+.findAll({ limit: 10 })
+.findAll({ offset: 10, limit: 2 })
+
+.count()</code></pre>
+<h3 id="build">Build</h3>
+<pre><code>item = Project.build({ ... })
+
+item.title = &#39;...&#39;
+
+item.save().success (item) -&gt;
+
+item.updateAttributes({ title: &#39;...&#39; })
+
+item.destroy().success -&gt;
+
+item.values</code></pre>
+</body>
+</html>

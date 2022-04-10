@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>injected-part3.md</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h2 id="post-processing"><a href="https://app.netlify.com/sites/bgoonz-blog/settings/deploys#post-processing">Post processing</a></h2>
+<p>Control the post processing and optimizations Netlify can do for you</p>
+<h3 id="snippet-injection"><a href="https://app.netlify.com/sites/bgoonz-blog/settings/deploys#snippet-injection">Snippet injection</a></h3>
+<p>Inject analytics or other scripts into the HTML of your site.</p>
+<ul>
+<li><p>before <code>&lt;/body&gt;</code></p>
+<p>blm</p>
+<pre><code>&lt;!-- Insert makerbadge.js (download or use ☁️cloud version) --&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://makerbadge.s3.amazonaws.com/blmbadge.js&quot;&gt;&lt;/script&gt;
+
+&lt;!-- Initialise MakerBadge with options --&gt;
+
+&lt;script&gt;
+  BLMBadge.init({
+       layout:1,
+       theme:&#39;dark&#39;,
+       promoText : &#39;Send a donation &#39;+String.fromCodePoint(0x2192),
+       promoLink : &#39;https://minnesotafreedomfund.org/&#39;,
+       message : &#39;To be silent is to be complicit. Black lives matter.&#39;,
+       title : &#39;#BlackLivesMatter&#39;,
+       imageAlt: &quot;Black Lives Matter Badge&quot;
+})
+&lt;/script&gt;</code></pre>
+<p>Remove</p></li>
+<li><p>before <code>&lt;/body&gt;</code></p>
+<p>addthis</p>
+<pre><code>&lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946&quot;&gt;&lt;/script&gt;
+
+&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946&quot;&gt;&lt;/script&gt;</code></pre>
+<p>Remove</p></li>
+<li><p>before <code>&lt;/head&gt;</code></p>
+<p>apple</p>
+<pre><code>&lt;link rel=&quot;apple-touch-icon&quot; href=&quot;logo-circle.png&quot;&gt;</code></pre>
+<p>Remove</p></li>
+<li><p>before <code>&lt;/body&gt;</code></p>
+<p>hit counter</p>
+<pre><code>&lt;div id=&quot;sfcfbp12lg5qfuxxlsmlznhmyuh5qc33xr2&quot;&gt;&lt;/div&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;https://counter5.stat.ovh/private/counter.js?c=fbp12lg5qfuxxlsmlznhmyuh5qc33xr2&amp;down=async&quot; async&gt;&lt;/script&gt;&lt;br&gt;&lt;a href=&quot;https://www.freecounterstat.com&quot;&gt;page counter&lt;/a&gt;&lt;noscript&gt;&lt;a href=&quot;https://www.freecounterstat.com&quot; title=&quot;page counter&quot;&gt;&lt;img src=&quot;https://counter5.stat.ovh/private/freecounterstat.php?c=fbp12lg5qfuxxlsmlznhmyuh5qc33xr2&quot; border=&quot;0&quot; title=&quot;page counter&quot; alt=&quot;page counter&quot;&gt;&lt;/a&gt;&lt;/noscript&gt;</code></pre>
+<p>Remove</p></li>
+<li><p>before <code>&lt;/body&gt;</code></p>
+<p>go-back</p>
+<pre><code>&lt;input type=&quot;button&quot; style=&quot;position: absolute;top: 10px;right: 10px;width:80px;color:rgb(147, 13, 13);font-weight:bold;background-color:rgba(0, 0, 0, 0.856); border-radius:15px;&quot; value=&quot;Go Back&quot; onclick=&quot;history.back(-1)&quot; /&gt;
+      &lt;?php
+        $url = htmlspecialchars($_SERVER[&#39;HTTP_REFERER&#39;]);
+        echo &quot;&lt;a href=&#39;$url&#39;&gt;&lt;/a&gt;&quot;;
+      ?&gt;</code></pre>
+<p>Remove</p></li>
+<li><p>before <code>&lt;/body&gt;</code></p>
+<p>clock</p>
+<pre><code>&lt;div class=&quot;cleanslate w24tz-current-time w24tz-small&quot; style=&quot;display: inline-block !important; visibility: hidden !important; min-width:200px !important; min-height:100px !important;&quot;&gt;&lt;p&gt;&lt;a href=&quot;//24timezones.com/time-zone/et&quot; style=&quot;text-decoration: none&quot; class=&quot;clock24&quot; id=&quot;tz24-1627974679-tzest-eyJob3VydHlwZSI6MTIsInNob3dkYXRlIjoiMSIsInNob3dzZWNvbmRzIjoiMCIsImNvbnRhaW5lcl9pZCI6ImNsb2NrX2Jsb2NrX2NiNjEwOGVjMTc3NjAwMiIsInR5cGUiOiJkYiIsImxhbmciOiJlbiJ9&quot; title=&quot;EST time now&quot; target=&quot;_blank&quot;&gt;EST&lt;/a&gt;&lt;/p&gt;&lt;div id=&quot;clock_block_cb6108ec1776002&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;//w.24timezones.com/l.js&quot; async&gt;&lt;/script&gt;</code></pre>
+<p>Remove</p></li>
+<li><p>before <code>&lt;/body&gt;</code></p>
+<p>algolia</p>
+<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+      algoliasearchNetlify({
+        appId: &quot;BAGY237H21&quot;,
+        apiKey: &quot;5f5a2d1bb109c79803ca95250ca3496c&quot;,
+        siteId: &quot;835ad7b5-37ce-4a32-824d-f3b0d3eab8e5&quot;,
+        branch: &quot;master&quot;,
+        selector: &quot;div#search&quot;,
+         });
+    &lt;/script&gt;
+</code></pre>
+<p>Remove</p></li>
+<li><p>before <code>&lt;/head&gt;</code></p>
+<p>algolia-cdn</p>
+<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js&quot;&gt;&lt;/script&gt;</code></pre>
+<p>Remove</p></li>
+<li><p>before <code>&lt;/body&gt;</code></p>
+<p>algolia2</p>
+<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+      algoliasearchNetlify({
+        appId: &quot;BAGY237H21&quot;,
+        apiKey: &quot;5f5a2d1bb109c79803ca95250ca3496c&quot;,
+        siteId: &quot;835ad7b5-37ce-4a32-824d-f3b0d3eab8e5&quot;,
+        branch: &quot;master&quot;,
+        selector: &quot;div#search&quot;,
+         });
+    &lt;/script&gt;
+</code></pre>
+<p>Remove</p></li>
+</ul>
+<p><a href="https://www.netlify.com/docs/inject-analytics-snippets">Learn more about snippet injection in the docs</a></p>
+<p>Add snippet</p>
+<h3 id="asset-optimization"><a href="https://app.netlify.com/sites/bgoonz-blog/settings/deploys#asset-optimization">Asset optimization</a></h3>
+<p>Asset optimization is disabled.</p>
+<p>Edit settings</p>
+<h3 id="prerendering"><a href="https://app.netlify.com/sites/bgoonz-blog/settings/deploys#prerendering">Prerendering</a></h3>
+<p>Beta</p>
+<p>Prerendering enabled with Netlify</p>
+<p>Edit settings</p>
+<h3 id="form-detection"><a href="https://app.netlify.com/sites/bgoonz-blog/settings/deploys#form-detection">Form detection</a></h3>
+<p>With each deploy, Netlify scans new and changed HTML files for forms to enable handling submissions. If you’re not using Netlify Forms, you can disable form detection to speed up deploy time.</p>
+<p><a href="https://docs.netlify.com/site-deploys/post-processing/form-detection/">Learn more about form detection in the docs</a></p>
+<p>Edit settings</p>
+<h2 id="deploy-notifications"><a href="https://app.netlify.com/sites/bgoonz-blog/settings/deploys#deploy-notifications">Deploy notifications</a></h2>
+<p>Set up outgoing webhooks to notify other services about deploys for your site. <a href="https://www.netlify.com/docs/webhooks/#outgoing-webhooks-and-notifications">Learn more</a></p>
+<h3 id="outgoing-notifications"><a href="https://app.netlify.com/sites/bgoonz-blog/settings/deploys#outgoing-notifications">Outgoing notifications</a></h3>
+<p>Add notification</p>
+<ul>
+<li><p>Post to <a href="https://api.stackbit.com/project/609b2d7c71a5dd0016f36326/webhook/netlify" class="uri">https://api.stackbit.com/project/609b2d7c71a5dd0016f36326/webhook/netlify</a> when deploy starts</p>
+<p>Options</p></li>
+<li><p>Post to <a href="https://api.stackbit.com/project/609b2d7c71a5dd0016f36326/webhook/netlify" class="uri">https://api.stackbit.com/project/609b2d7c71a5dd0016f36326/webhook/netlify</a> when deploy succeeds</p>
+<p>Options</p></li>
+<li><p>Post to <a href="https://api.stackbit.com/project/609b2d7c71a5dd0016f36326/webhook/netlify" class="uri">https://api.stackbit.com/project/609b2d7c71a5dd0016f36326/webhook/netlify</a> when deploy fails</p>
+<p>Options</p></li>
+<li><p>Add rich details to commits when Deploy Preview starts</p>
+<p>Options</p></li>
+<li><p>Add rich details to commits when Deploy Preview succeeds</p>
+<p>Options</p></li>
+<li><p>Add rich details to commits when Deploy Preview fails</p>
+<p>Options</p></li>
+<li><p>Email bryan.guner@gmail.com when deploy request is pending</p>
+<p>Options</p></li>
+<li><p>Email bryan.guner@gmail.com when deploy request is accepted</p>
+<p>Options</p></li>
+<li><p>Email bryan.guner@gmail.com when deploy request is rejected</p>
+<p>Options</p></li>
+<li><a href="https://www.netlify.com/docs/">Docs</a></li>
+<li><a href="https://www.netlify.com/pricing/">Pricing</a></li>
+<li><a href="https://www.netlify.com/support">Support</a></li>
+<li><a href="https://www.netlify.com/news/">News</a></li>
+<li><p><a href="https://www.netlify.com/tos/">Terms</a></p></li>
+</ul>
+<p>© 2021 Netlify</p>
+</body>
+</html>

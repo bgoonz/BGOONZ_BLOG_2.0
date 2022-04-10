@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>any</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="promise.any">Promise.any()</h1>
+<p><code>Promise.any()</code> takes an iterable of <a href="../promise"><code>Promise</code></a> objects and, as soon as one of the promises in the iterable fulfills, returns a single promise that resolves with the value from that promise. If no promises in the iterable fulfill (if all of the given promises are rejected), then the returned promise is rejected with an <a href="../aggregateerror"><code>AggregateError</code></a>, a new subclass of <a href="../error"><code>Error</code></a> that groups together individual errors. Essentially, this method is the opposite of <a href="all"><code>Promise.all()</code></a>.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>Promise.any(iterable);</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>iterable</code><br />
+An <a href="../../iteration_protocols#the_iterable_protocol">iterable</a> object, such as an <a href="../array"><code>Array</code></a>.</p>
+<h3 id="return-value">Return value</h3>
+<ul>
+<li>An <strong>already rejected</strong> <a href="../promise"><code>Promise</code></a> if the iterable passed is empty.</li>
+<li>An <strong>asynchronously resolved</strong> <a href="../promise"><code>Promise</code></a> if the iterable passed contains no promises.</li>
+<li>A <strong>pending</strong> <a href="../promise"><code>Promise</code></a> in all other cases. This returned promise is then resolved/rejected <strong>asynchronously</strong> (as soon as the stack is empty) when any of the promises in the given iterable resolve, or if all the promises have rejected.</li>
+</ul>
+<h2 id="description">Description</h2>
+<p>This method is useful for returning the first promise that fulfills. It short-circuits after a promise fulfills, so it does not wait for the other promises to complete once it finds one. Unlike <a href="all"><code>Promise.all()</code></a>, which returns an <em>array</em> of fulfillment values, we only get one fulfillment value (assuming at least one promise fulfills). This can be beneficial if we need only one promise to fulfill but we do not care which one does. Note another difference: This method rejects upon receiving an <em>empty iterable</em>, since, truthfully, the iterable contains no items that fulfill.</p>
+<p>Also, unlike <a href="race"><code>Promise.race()</code></a>, which returns the first <em>settled</em> value (either fulfillment or rejection), this method returns the first <em>fulfilled</em> value. This method will ignore all rejected promises up until the first promise that fulfils.</p>
+<h3 id="fulfillment">Fulfillment</h3>
+<p>The returned promise is fulfilled with <strong>the first</strong> resolved value (or non-promise value) in the iterable passed as the argument, whether or not the other promises have rejected.</p>
+<ul>
+<li>If a nonempty <em>iterable</em> is passed, and <strong>any</strong> of the promises fulfill, or are not promises, then the promise returned by this method is fulfilled asynchronously.</li>
+</ul>
+<h3 id="rejection">Rejection</h3>
+<p>If all of the passed-in promises reject, <code>Promise.any</code> asynchronously rejects with an <a href="../aggregateerror"><code>AggregateError</code></a> object, which extends <a href="../error"><code>Error</code></a>, and contains an <code>errors</code> property with an array of rejection values.</p>
+<ul>
+<li>If an empty iterable is passed, then the promise returned by this method is rejected synchronously. The rejected reason is an <code>AggregateError</code> object whose <code>errors</code> property is an empty array.</li>
+</ul>
+<h2 id="examples">Examples</h2>
+<h3 id="first-to-fulfil">First to fulfil</h3>
+<p><code>Promise.any()</code> resolves with the first promise to fulfil, even if a promise rejects first. This is in contrast to <a href="race"><code>Promise.race()</code></a>, which resolves or rejects with the first promise to settle.</p>
+<pre><code>const pErr = new Promise((resolve, reject) =&gt; {
+  reject(&quot;Always fails&quot;);
+});
+
+const pSlow = new Promise((resolve, reject) =&gt; {
+  setTimeout(resolve, 500, &quot;Done eventually&quot;);
+});
+
+const pFast = new Promise((resolve, reject) =&gt; {
+  setTimeout(resolve, 100, &quot;Done quick&quot;);
+});
+
+Promise.any([pErr, pSlow, pFast]).then((value) =&gt; {
+  console.log(value);
+  // pFast fulfils first
+})
+// expected output: &quot;Done quick&quot;</code></pre>
+<h3 id="rejections-with-aggregateerror">Rejections with AggregateError</h3>
+<p><code>Promise.any()</code> rejects with an <a href="../aggregateerror"><code>AggregateError</code></a> if no promise fulfils.</p>
+<pre><code>const pErr = new Promise((resolve, reject) =&gt; {
+  reject(&#39;Always fails&#39;);
+});
+
+Promise.any([pErr]).catch((err) =&gt; {
+  console.log(err);
+})
+// expected output: &quot;AggregateError: No Promise in Promise.any was resolved&quot;</code></pre>
+<h3 id="displaying-the-first-image-loaded">Displaying the first image loaded</h3>
+<p>In this example, we have a function that fetches an image and returns a blob. We use <code>Promise.any()</code> to fetch a couple of images and display the first one available (i.e. whose promise has resolved).</p>
+<pre><code>function fetchAndDecode(url) {
+  return fetch(url).then(response =&gt; {
+    if(!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    } else {
+      return response.blob();
+    }
+  })
+}
+
+let coffee = fetchAndDecode(&#39;coffee.jpg&#39;);
+let tea = fetchAndDecode(&#39;tea.jpg&#39;);
+
+Promise.any([coffee, tea]).then(value =&gt; {
+  let objectURL = URL.createObjectURL(value);
+  let image = document.createElement(&#39;img&#39;);
+  image.src = objectURL;
+  document.body.appendChild(image);
+})
+.catch(e =&gt; {
+  console.log(e.message);
+});</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-promise.any">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-promise.any</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>any</code></p>
+<p>85</p>
+<p>85</p>
+<p>79</p>
+<p>No</p>
+<p>No</p>
+<p>14</p>
+<p>85</p>
+<p>85</p>
+<p>79</p>
+<p>No</p>
+<p>14</p>
+<p>No</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../promise"><code>Promise</code></a></li>
+<li><a href="allsettled"><code>Promise.allSettled()</code></a></li>
+<li><a href="all"><code>Promise.all()</code></a></li>
+<li><a href="race"><code>Promise.race()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/any" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/any</a></p>
+</body>
+</html>

@@ -1,57 +1,49 @@
----
-title: Vimscript functions
-category: Vim
----
+Dictionaries
+------------
 
-## Dictionaries
+    let colors = {
+      \ "apple": "red",
+      \ "banana": "yellow"
+    }
 
-```vim
-let colors = {
-  \ "apple": "red",
-  \ "banana": "yellow"
-}
+    echo colors["a"]
+    echo get(colors, "apple")   " suppress error
 
-echo colors["a"]
-echo get(colors, "apple")   " suppress error
+    remove(colors, "apple")
 
-remove(colors, "apple")
+    " :help E715
+    if has_key(dict, 'foo')
+    if empty(dict)
+    keys(dict)
+    len(dict)
 
-" :help E715
-if has_key(dict, 'foo')
-if empty(dict)
-keys(dict)
-len(dict)
+    max(dict)
+    min(dict)
 
-max(dict)
-min(dict)
+    count(dict, 'x')
+    string(dict)
 
-count(dict, 'x')
-string(dict)
+    map(dict, '<>> " . v:val')
+    extend(s:fruits, { ... })
 
-map(dict, '<>> " . v:val')
-extend(s:fruits, { ... })
-```
+    for key in keys(mydict)
+      echo key . ': ' . mydict(key)
+    endfor
 
-```vim
-for key in keys(mydict)
-  echo key . ': ' . mydict(key)
-endfor
-```
+Lists
+-----
 
-## Lists
+    let mylist = [1, two, 3, "four"]
 
-```vim
-let mylist = [1, two, 3, "four"]
+    let first = mylist[0]
+    let last  = mylist[-1]
 
-let first = mylist[0]
-let last  = mylist[-1]
+    " Suppresses errors
+    let second = get(mylist, 1)
+    let second = get(mylist, 1, "NONE")
 
-" Suppresses errors
-let second = get(mylist, 1)
-let second = get(mylist, 1, "NONE")
-```
-
-## Functions
+Functions
+---------
 
 ### Buffer
 
@@ -189,7 +181,8 @@ let second = get(mylist, 1, "NONE")
     getreg('*')
     getregtype('*')     " v(char), V(line) <ctrl-v>(block)
 
-## Comparisons
+Comparisons
+-----------
 
     if name ==# 'John'     " case-sensitive
     if name ==? 'John'     " case-insensitive
@@ -199,7 +192,8 @@ let second = get(mylist, 1, "NONE")
     if "hello" =~ '.*'
     if "hello" !~ '.*'
 
-## Executing
+Executing
+---------
 
 ### Running commands
 

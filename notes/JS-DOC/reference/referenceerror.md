@@ -1,13 +1,16 @@
-# ReferenceError
+ReferenceError
+==============
 
 The `ReferenceError` object represents an error when a non-existent variable is referenced.
 
-## Constructor
+Constructor
+-----------
 
 [`ReferenceError()`](referenceerror/referenceerror)  
 Creates a new `ReferenceError` object.
 
-## Instance properties
+Instance properties
+-------------------
 
 [`ReferenceError.prototype.message`](error/message)  
 Error message. Although ECMA-262 specifies that [`ReferenceError`](referenceerror) should provide its own `message` property, in [SpiderMonkey](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey), it inherits [`Error.prototype.message`](error/message).
@@ -27,7 +30,8 @@ Column number in line that raised this error. Inherited from [`Error`](error).
 [`ReferenceError.prototype.stack`](error/stack)  
 Stack trace. Inherited from [`Error`](error).
 
-## Examples
+Examples
+--------
 
 ### Catching a ReferenceError
 
@@ -57,14 +61,14 @@ Stack trace. Inherited from [`Error`](error).
       console.log(e.stack)                      // "@Scratchpad/2:2:9\n"
     }
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard-referenceerror">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-native-error-types-used-in-this-standard-referenceerror</span></td></tr></tbody></table>
 
-<span class="small">#sec-native-error-types-used-in-this-standard-referenceerror</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -146,7 +150,8 @@ Samsung Internet
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`Error`](error)
 

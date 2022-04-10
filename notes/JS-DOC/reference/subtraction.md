@@ -1,12 +1,15 @@
-# Subtraction (-)
+Subtraction (-)
+===============
 
 The subtraction operator (`-`) subtracts the two operands, producing their difference.
 
-## Syntax
+Syntax
+------
 
     Operator: x - y
 
-## Examples
+Examples
+--------
 
 ### Subtraction with numbers
 
@@ -17,14 +20,14 @@ The subtraction operator (`-`) subtracts the two operands, producing their diffe
 
     'foo' - 3 // NaN
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-subtraction-operator-minus">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-subtraction-operator-minus</span></td></tr></tbody></table>
 
-<span class="small">#sec-subtraction-operator-minus</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -80,7 +83,8 @@ Samsung Internet
 
 1.0
 
-## See also
+See also
+--------
 
 -   [Addition operator](addition)
 -   [Division operator](division)
@@ -92,6 +96,5 @@ Samsung Internet
 -   [Unary negation operator](unary_negation)
 -   [Unary plus operator](unary_plus)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Subtraction" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Subtraction</a>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2022-01-03" />
+  <title>title</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">title</h1>
+<p class="subtitle">subtitle</p>
+<p class="date">2022-01-03</p>
+</header>
+<hr />
+<p>title: docker-compose category: Devops</p>
+<p>prism_languages: [yaml] weight: -1</p>
+<hr />
+<h3 id="basic-example">Basic example</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode yaml"><code class="sourceCode yaml"><a class="sourceLine" id="cb1-1" title="1"><span class="co"># docker-compose.yml</span></a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="fu">version:</span><span class="at"> </span><span class="st">&#39;2&#39;</span></a>
+<a class="sourceLine" id="cb1-3" title="3"></a>
+<a class="sourceLine" id="cb1-4" title="4"><span class="fu">services:</span></a>
+<a class="sourceLine" id="cb1-5" title="5">    <span class="fu">web:</span></a>
+<a class="sourceLine" id="cb1-6" title="6">        <span class="fu">build:</span><span class="at"> .</span></a>
+<a class="sourceLine" id="cb1-7" title="7">        <span class="co"># build from Dockerfile</span></a>
+<a class="sourceLine" id="cb1-8" title="8">        <span class="fu">context:</span><span class="at"> ./Path</span></a>
+<a class="sourceLine" id="cb1-9" title="9">        <span class="fu">dockerfile:</span><span class="at"> Dockerfile</span></a>
+<a class="sourceLine" id="cb1-10" title="10">        <span class="fu">ports:</span></a>
+<a class="sourceLine" id="cb1-11" title="11">            <span class="kw">-</span> <span class="st">&#39;5000:5000&#39;</span></a>
+<a class="sourceLine" id="cb1-12" title="12">        <span class="fu">volumes:</span></a>
+<a class="sourceLine" id="cb1-13" title="13">            <span class="kw">-</span> .:/code</a>
+<a class="sourceLine" id="cb1-14" title="14">    <span class="fu">redis:</span></a>
+<a class="sourceLine" id="cb1-15" title="15">        <span class="fu">image:</span><span class="at"> redis</span></a></code></pre></div>
+<h3 id="commands">Commands</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode sh"><code class="sourceCode bash"><a class="sourceLine" id="cb2-1" title="1"><span class="ex">docker-compose</span> start</a>
+<a class="sourceLine" id="cb2-2" title="2"><span class="ex">docker-compose</span> stop</a></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode sh"><code class="sourceCode bash"><a class="sourceLine" id="cb3-1" title="1"><span class="ex">docker-compose</span> pause</a>
+<a class="sourceLine" id="cb3-2" title="2"><span class="ex">docker-compose</span> unpause</a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode sh"><code class="sourceCode bash"><a class="sourceLine" id="cb4-1" title="1"><span class="ex">docker-compose</span> ps</a>
+<a class="sourceLine" id="cb4-2" title="2"><span class="ex">docker-compose</span> up</a>
+<a class="sourceLine" id="cb4-3" title="3"><span class="ex">docker-compose</span> down</a></code></pre></div>
+<h2 id="reference">Reference</h2>
+<h3 id="building">Building</h3>
+<div class="sourceCode" id="cb5"><pre class="sourceCode yaml"><code class="sourceCode yaml"><a class="sourceLine" id="cb5-1" title="1"><span class="fu">web:</span></a>
+<a class="sourceLine" id="cb5-2" title="2">    <span class="co"># build from Dockerfile</span></a>
+<a class="sourceLine" id="cb5-3" title="3">    <span class="fu">build:</span><span class="at"> .</span></a>
+<a class="sourceLine" id="cb5-4" title="4">    <span class="fu">args:</span><span class="at"> </span><span class="co"># Add build arguments</span></a>
+<a class="sourceLine" id="cb5-5" title="5">        <span class="fu">APP_HOME:</span><span class="at"> app</span></a></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode yaml"><code class="sourceCode yaml"><a class="sourceLine" id="cb6-1" title="1"><span class="co"># build from custom Dockerfile</span></a>
+<a class="sourceLine" id="cb6-2" title="2"><span class="fu">build:</span></a>
+<a class="sourceLine" id="cb6-3" title="3">    <span class="fu">context:</span><span class="at"> ./dir</span></a>
+<a class="sourceLine" id="cb6-4" title="4">    <span class="fu">dockerfile:</span><span class="at"> Dockerfile.dev</span></a></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode yaml"><code class="sourceCode yaml"><a class="sourceLine" id="cb7-1" title="1">  <span class="co"># build from image</span></a>
+<a class="sourceLine" id="cb7-2" title="2">  <span class="fu">image:</span><span class="at"> ubuntu</span></a>
+<a class="sourceLine" id="cb7-3" title="3">  <span class="fu">image:</span><span class="at"> ubuntu:14.04</span></a>
+<a class="sourceLine" id="cb7-4" title="4">  <span class="fu">image:</span><span class="at"> tutum/influxdb</span></a>
+<a class="sourceLine" id="cb7-5" title="5">  <span class="fu">image:</span><span class="at"> example-registry:4000/postgresql</span></a>
+<a class="sourceLine" id="cb7-6" title="6">  <span class="fu">image:</span><span class="at"> a4bc65fd</span></a></code></pre></div>
+<h3 id="ports">Ports</h3>
+<div class="sourceCode" id="cb8"><pre class="sourceCode yaml"><code class="sourceCode yaml"><a class="sourceLine" id="cb8-1" title="1"><span class="fu">ports:</span></a>
+<a class="sourceLine" id="cb8-2" title="2">    <span class="kw">-</span> <span class="st">&#39;3000&#39;</span></a>
+<a class="sourceLine" id="cb8-3" title="3">    <span class="kw">-</span> <span class="st">&#39;8000:80&#39;</span> <span class="co"># host:container</span></a></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode yaml"><code class="sourceCode yaml"><a class="sourceLine" id="cb9-1" title="1"><span class="co"># expose ports to linked services (not to host)</span></a>
+<a class="sourceLine" id="cb9-2" title="2"><span class="fu">expose:</span><span class="at"> </span><span class="kw">[</span><span class="st">&#39;3000&#39;</span><span class="kw">]</span></a></code></pre></div>
+<h3 id="commands-1">Commands</h3>
+<div class="sourceCode" id="cb10"><pre class="sourceCode yaml"><code class="sourceCode yaml"><a class="sourceLine" id="cb10-1" title="1">  <span class="co"># command to execute</span></a>
+<a class="sourceLine" id="cb10-2" title="2">  <span class="fu">command:</span><span class="at"> bundle exec thin -p 3000</span></a>
+<a class="sourceLine" id="cb10-3" title="3">  <span class="fu">command:</span><span class="at"> </span><span class="kw">[</span>bundle<span class="kw">,</span> exec<span class="kw">,</span> thin<span class="kw">,</span> -p<span class="kw">,</span> <span class="dv">3000</span><span class="kw">]</span></a></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode yaml"><code class="sourceCode yaml"><a class="sourceLine" id="cb11-1" title="1">  <span class="co"># override the entrypoint</span></a>
+<a class="sourceLine" id="cb11-2" title="2">  <span class="fu">entrypoint:</span><span class="at"> /app/start.sh</span></a>
+<a class="sourceLine" id="cb11-3" title="3">  <span class="fu">entrypoint:</span><span class="at"> </span><span class="kw">[</span>php<span class="kw">,</span> -d<span class="kw">,</span> vendor/bin/phpunit<span class="kw">]</span></a></code></pre></div>
+<h3 id="environment-variables">Environment variables</h3>
+<div class="sourceCode" id="cb12"><pre class="sourceCode yaml"><code class="sourceCode yaml"><a class="sourceLine" id="cb12-1" title="1">  <span class="co"># environment vars</span></a>
+<a class="sourceLine" id="cb12-2" title="2">  <span class="fu">environment:</span></a>
+<a class="sourceLine" id="cb12-3" title="3">    <span class="fu">RACK_ENV:</span><span class="at"> development</span></a>
+<a class="sourceLine" id="cb12-4" title="4">  <span class="fu">environment:</span></a>
+<a class="sourceLine" id="cb12-5" title="5">    <span class="kw">-</span> RACK_ENV=development</a></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode yaml"><code class="sourceCode yaml"><a class="sourceLine" id="cb13-1" title="1">  <span class="co"># environment vars from file</span></a>
+<a class="sourceLine" id="cb13-2" title="2">  <span class="fu">env_file:</span><span class="at"> .env</span></a>
+<a class="sourceLine" id="cb13-3" title="3">  <span class="fu">env_file:</span><span class="at"> </span><span class="kw">[</span>.env<span class="kw">,</span> .development.env<span class="kw">]</span></a></code></pre></div>
+<h3 id="dependencies">Dependencies</h3>
+<div class="sourceCode" id="cb14"><pre class="sourceCode yaml"><code class="sourceCode yaml"><a class="sourceLine" id="cb14-1" title="1"><span class="co"># makes the `db` service available as the hostname `database`</span></a>
+<a class="sourceLine" id="cb14-2" title="2"><span class="co"># (implies depends_on)</span></a>
+<a class="sourceLine" id="cb14-3" title="3"><span class="fu">links:</span></a>
+<a class="sourceLine" id="cb14-4" title="4">    <span class="kw">-</span> db:database</a>
+<a class="sourceLine" id="cb14-5" title="5">    <span class="kw">-</span> redis</a></code></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode yaml"><code class="sourceCode yaml"><a class="sourceLine" id="cb15-1" title="1"><span class="co"># make sure `db` is alive before starting</span></a>
+<a class="sourceLine" id="cb15-2" title="2"><span class="fu">depends_on:</span></a>
+<a class="sourceLine" id="cb15-3" title="3">    <span class="kw">-</span> db</a></code></pre></div>
+<h3 id="other-options">Other options</h3>
+<div class="sourceCode" id="cb16"><pre class="sourceCode yaml"><code class="sourceCode yaml"><a class="sourceLine" id="cb16-1" title="1"><span class="co"># make this service extend another</span></a>
+<a class="sourceLine" id="cb16-2" title="2"><span class="fu">extends:</span></a>
+<a class="sourceLine" id="cb16-3" title="3">    <span class="fu">file:</span><span class="at"> common.yml </span><span class="co"># optional</span></a>
+<a class="sourceLine" id="cb16-4" title="4">    <span class="fu">service:</span><span class="at"> webapp</span></a></code></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode yaml"><code class="sourceCode yaml"><a class="sourceLine" id="cb17-1" title="1"><span class="fu">volumes:</span></a>
+<a class="sourceLine" id="cb17-2" title="2">    <span class="kw">-</span> /var/lib/mysql</a>
+<a class="sourceLine" id="cb17-3" title="3">    <span class="kw">-</span> ./_data:/var/lib/mysql</a></code></pre></div>
+<h2 id="advanced-features">Advanced features</h2>
+<h3 id="labels">Labels</h3>
+<div class="sourceCode" id="cb18"><pre class="sourceCode yaml"><code class="sourceCode yaml"><a class="sourceLine" id="cb18-1" title="1"><span class="fu">services:</span></a>
+<a class="sourceLine" id="cb18-2" title="2">    <span class="fu">web:</span></a>
+<a class="sourceLine" id="cb18-3" title="3">        <span class="fu">labels:</span></a>
+<a class="sourceLine" id="cb18-4" title="4">            <span class="fu">com.example.description:</span><span class="at"> </span><span class="st">&#39;Accounting web app&#39;</span></a></code></pre></div>
+<h3 id="dns-servers">DNS servers</h3>
+<div class="sourceCode" id="cb19"><pre class="sourceCode yaml"><code class="sourceCode yaml"><a class="sourceLine" id="cb19-1" title="1"><span class="fu">services:</span></a>
+<a class="sourceLine" id="cb19-2" title="2">  <span class="fu">web:</span></a>
+<a class="sourceLine" id="cb19-3" title="3">    <span class="fu">dns:</span><span class="at"> </span><span class="fl">8.8.8.8</span></a>
+<a class="sourceLine" id="cb19-4" title="4">    <span class="fu">dns:</span></a>
+<a class="sourceLine" id="cb19-5" title="5">      <span class="kw">-</span> <span class="fl">8.8.8.8</span></a>
+<a class="sourceLine" id="cb19-6" title="6">      <span class="kw">-</span> <span class="fl">8.8.4.4</span></a></code></pre></div>
+<h3 id="devices">Devices</h3>
+<div class="sourceCode" id="cb20"><pre class="sourceCode yaml"><code class="sourceCode yaml"><a class="sourceLine" id="cb20-1" title="1"><span class="fu">services:</span></a>
+<a class="sourceLine" id="cb20-2" title="2">    <span class="fu">web:</span></a>
+<a class="sourceLine" id="cb20-3" title="3">        <span class="fu">devices:</span></a>
+<a class="sourceLine" id="cb20-4" title="4">            <span class="kw">-</span> <span class="st">&#39;/dev/ttyUSB0:/dev/ttyUSB0&#39;</span></a></code></pre></div>
+<h3 id="external-links">External links</h3>
+<div class="sourceCode" id="cb21"><pre class="sourceCode yaml"><code class="sourceCode yaml"><a class="sourceLine" id="cb21-1" title="1"><span class="fu">services:</span></a>
+<a class="sourceLine" id="cb21-2" title="2">    <span class="fu">web:</span></a>
+<a class="sourceLine" id="cb21-3" title="3">        <span class="fu">external_links:</span></a>
+<a class="sourceLine" id="cb21-4" title="4">            <span class="kw">-</span> redis_1</a>
+<a class="sourceLine" id="cb21-5" title="5">            <span class="kw">-</span> project_db_1:mysql</a></code></pre></div>
+<h3 id="hosts">Hosts</h3>
+<div class="sourceCode" id="cb22"><pre class="sourceCode yaml"><code class="sourceCode yaml"><a class="sourceLine" id="cb22-1" title="1"><span class="fu">services:</span></a>
+<a class="sourceLine" id="cb22-2" title="2">    <span class="fu">web:</span></a>
+<a class="sourceLine" id="cb22-3" title="3">        <span class="fu">extra_hosts:</span></a>
+<a class="sourceLine" id="cb22-4" title="4">            <span class="kw">-</span> <span class="st">&#39;somehost:192.168.1.100&#39;</span></a></code></pre></div>
+<h3 id="network">Network</h3>
+<div class="sourceCode" id="cb23"><pre class="sourceCode yaml"><code class="sourceCode yaml"><a class="sourceLine" id="cb23-1" title="1"><span class="co"># creates a custom network called `frontend`</span></a>
+<a class="sourceLine" id="cb23-2" title="2"><span class="fu">networks:</span></a>
+<a class="sourceLine" id="cb23-3" title="3">    <span class="fu">frontend:</span></a></code></pre></div>
+<h3 id="external-network">External network</h3>
+<div class="sourceCode" id="cb24"><pre class="sourceCode yaml"><code class="sourceCode yaml"><a class="sourceLine" id="cb24-1" title="1"><span class="co"># join a pre-existing network</span></a>
+<a class="sourceLine" id="cb24-2" title="2"><span class="fu">networks:</span></a>
+<a class="sourceLine" id="cb24-3" title="3">    <span class="fu">default:</span></a>
+<a class="sourceLine" id="cb24-4" title="4">        <span class="fu">external:</span></a>
+<a class="sourceLine" id="cb24-5" title="5">            <span class="fu">name:</span><span class="at"> frontend</span></a></code></pre></div>
+<h3 id="volume">Volume</h3>
+<div class="sourceCode" id="cb25"><pre class="sourceCode yaml"><code class="sourceCode yaml"><a class="sourceLine" id="cb25-1" title="1"><span class="co"># Mount host paths or named volumes, specified as sub-options to a service</span></a>
+<a class="sourceLine" id="cb25-2" title="2">  <span class="fu">db:</span></a>
+<a class="sourceLine" id="cb25-3" title="3">    <span class="fu">image:</span><span class="at"> postgres:latest</span></a>
+<a class="sourceLine" id="cb25-4" title="4">    <span class="fu">volumes:</span></a>
+<a class="sourceLine" id="cb25-5" title="5">      <span class="kw">-</span> <span class="st">&quot;/var/run/postgres/postgres.sock:/var/run/postgres/postgres.sock&quot;</span></a>
+<a class="sourceLine" id="cb25-6" title="6">      <span class="kw">-</span> <span class="st">&quot;dbdata:/var/lib/postgresql/data&quot;</span></a>
+<a class="sourceLine" id="cb25-7" title="7"></a>
+<a class="sourceLine" id="cb25-8" title="8"><span class="fu">volumes:</span></a>
+<a class="sourceLine" id="cb25-9" title="9">  <span class="fu">dbdata:</span></a></code></pre></div>
+</body>
+</html>

@@ -1,16 +1,19 @@
-# Rest parameters
+Rest parameters
+===============
 
 The **rest parameter** syntax allows a function to accept an indefinite number of arguments as an array, providing a way to represent [variadic functions](https://en.wikipedia.org/wiki/Variadic_function) in JavaScript.
 
-## Syntax
+Syntax
+------
 
     function f(a, b, ...theArgs) {
       // ...
     }
 
-## Description
+Description
+-----------
 
-A function definition's last parameter can be prefixed with "`...`" (three U+002E FULL STOP characters), which will cause all remaining (user supplied) parameters to be placed within a ["standard" JavaScript array.](../global_objects/array). Only the last parameter in a function definition can be a rest parameter.
+A function definition’s last parameter can be prefixed with “`...`” (three U+002E FULL STOP characters), which will cause all remaining (user supplied) parameters to be placed within a [“standard” JavaScript array.](../global_objects/array). Only the last parameter in a function definition can be a rest parameter.
 
     function myFun(a,  b, ...manyMoreArgs) {
       console.log("a", a)
@@ -43,7 +46,7 @@ There are three main differences between rest parameters and the [`arguments`](a
 
 -   The `arguments` object is **not a real array**, while rest parameters are [`Array`](../global_objects/array) instances, meaning methods like [`sort`](../global_objects/array/sort), [`map`](../global_objects/array/map), [`forEach`](../global_objects/array/foreach) or [`pop`](../global_objects/array/pop) can be applied on it directly;
 -   The `arguments` object has additional functionality specific to itself (like the `callee` property).
--   The `...restParam` bundles all the extra parameters into a single array, therefore it does not contain any named argument defined **before** the `...restParam`. Whereas the `arguments` object contains all of the parameters -- including all of the stuff in the `...restParam` -- **un**bundled.
+-   The `...restParam` bundles all the extra parameters into a single array, therefore it does not contain any named argument defined **before** the `...restParam`. Whereas the `arguments` object contains all of the parameters – including all of the stuff in the `...restParam` – **un**bundled.
 
 ### From arguments to an array
 
@@ -70,13 +73,14 @@ Rest parameters were introduced to reduce the boilerplate code that was commonly
       let first = normalArray.shift() // OK, gives the first argument
     }
 
-## Examples
+Examples
+--------
 
 ### Using rest parameters
 
 In this example, the first argument is mapped to `a` and the second to `b`, so these named arguments are used as normal.
 
-However, the third argument, `manyMoreArgs`, will be an array that contains the 3<sup>rd</sup>, 4<sup>th</sup>, 5<sup>th</sup>, 6<sup>th</sup> ... n<sup>th</sup> — as many arguments that the user includes.
+However, the third argument, `manyMoreArgs`, will be an array that contains the 3<sup>rd</sup>, 4<sup>th</sup>, 5<sup>th</sup>, 6<sup>th</sup> … n<sup>th</sup> — as many arguments that the user includes.
 
     function myFun(a, b, ...manyMoreArgs) {
       console.log("a", a)
@@ -100,7 +104,7 @@ Below, even though there is just one value, the last argument still gets put int
     // b, "two"
     // manyMoreArgs, ["three"] <-- notice it's an array, even though there's just one value
 
-Below, the third argument isn't provided, but `manyMoreArgs` is still an array (albeit an empty one).
+Below, the third argument isn’t provided, but `manyMoreArgs` is still an array (albeit an empty one).
 
     // using the same function definition from example above
 
@@ -163,14 +167,14 @@ To use `Array` methods on the `arguments` object, it must be converted to a real
     }
     console.log(sortArguments(5, 3, 7, 1))  // 1, 3, 5, 7
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-function-definitions">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-function-definitions</span></td></tr></tbody></table>
 
-<span class="small">#sec-function-definitions</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -252,9 +256,10 @@ No
 
 5.0
 
-## See also
+See also
+--------
 
--   [Spread syntax](../operators/spread_syntax) (also '`...`')
+-   [Spread syntax](../operators/spread_syntax) (also ‘`...`’)
 -   [Arguments object](arguments)
 -   [Array](../global_objects/array)
 -   [Functions](../functions)

@@ -1,8 +1,10 @@
-# TypedArray.prototype.subarray()
+TypedArray.prototype.subarray()
+===============================
 
-The `subarray()` method returns a new _TypedArray_ on the same [`ArrayBuffer`](../arraybuffer) store and with the same element types as for this _TypedArray_ object. The begin offset is **inclusive** and the end offset is **exclusive**. _TypedArray_ is one of the [typed array types](../typedarray#typedarray_objects).
+The `subarray()` method returns a new *TypedArray* on the same [`ArrayBuffer`](../arraybuffer) store and with the same element types as for this *TypedArray* object. The begin offset is **inclusive** and the end offset is **exclusive**. *TypedArray* is one of the [typed array types](../typedarray#typedarray_objects).
 
-## Syntax
+Syntax
+------
 
     subarray()
     subarray(begin)
@@ -20,13 +22,15 @@ Element to end at. The offset is exclusive. If not specified, all elements from 
 
 A new [`TypedArray`](../typedarray) object.
 
-## Description
+Description
+-----------
 
-The range specified by `begin` and `end` is clamped to the valid index range for the current array; if the computed length of the new array would be negative, it's clamped to zero. If either `begin` or `end` is negative, it refers to an index from the end of the array instead of from the beginning.
+The range specified by `begin` and `end` is clamped to the valid index range for the current array; if the computed length of the new array would be negative, it’s clamped to zero. If either `begin` or `end` is negative, it refers to an index from the end of the array instead of from the beginning.
 
-Also note that this is creating a new view on the existing buffer; changes to the new object's contents will impact the original object and vice versa.
+Also note that this is creating a new view on the existing buffer; changes to the new object’s contents will impact the original object and vice versa.
 
-## Examples
+Examples
+--------
 
 ### Using the subarray() method
 
@@ -40,14 +44,14 @@ Also note that this is creating a new view on the existing buffer; changes to th
 
     console.log(sub);   // Uint8Array [ 1, 2, 3, 0 ]
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="#">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-%typedarray%.prototype.subarray</span></td></tr></tbody></table>
 
-<span class="small">#sec-%typedarray%.prototype.subarray</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -103,12 +107,12 @@ Samsung Internet
 
 1.0
 
-## See also
+See also
+--------
 
 -   [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
 -   [`TypedArray`](../typedarray)
 -   [`ArrayBuffer`](../arraybuffer)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/subarray" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/subarray</a>

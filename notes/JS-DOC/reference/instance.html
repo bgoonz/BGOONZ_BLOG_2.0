@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>instance</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="webassembly.instance">WebAssembly.Instance</h1>
+<p>A <code>WebAssembly.Instance</code> object is a stateful, executable instance of a <a href="module"><code>WebAssembly.Module</code></a>. <code>Instance</code> objects contain all the <a href="https://developer.mozilla.org/en-US/docs/WebAssembly/Exported_functions">Exported WebAssembly functions</a> that allow calling into WebAssembly code from JavaScript.</p>
+<h2 id="constructor">Constructor</h2>
+<p><a href="instance/instance"><code>WebAssembly.Instance()</code></a><br />
+Creates a new <code>Instance</code> object.</p>
+<h2 id="instance-properties">Instance properties</h2>
+<p><a href="instance/exports"><code>Instance.prototype.exports</code></a><br />
+Returns an object containing as its members all the functions exported from the WebAssembly module instance, to allow them to be accessed and used by JavaScript. Read-only.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="synchronously-instantiating-a-webassembly-module">Synchronously instantiating a WebAssembly module</h3>
+<p>The <code>WebAssembly.Instance()</code> constructor function can be called to synchronously instantiate a given <a href="module"><code>WebAssembly.Module</code></a> object, for example:</p>
+<pre><code>const importObject = {
+  imports: {
+    imported_func: function(arg) {
+      console.log(arg);
+    }
+  }
+};
+
+fetch(&#39;simple.wasm&#39;).then(response =&gt;
+  response.arrayBuffer()
+).then(bytes =&gt; {
+  let mod = new WebAssembly.Module(bytes);
+  let instance = new WebAssembly.Instance(mod, importObject);
+  instance.exports.exported_func();
+})</code></pre>
+<p>The preferred way to get an <code>Instance</code> is asynchronously, for example using the <a href="instantiatestreaming"><code>WebAssembly.instantiateStreaming()</code></a> function like this:</p>
+<pre><code>const importObject = {
+  imports: {
+    imported_func: function(arg) {
+      console.log(arg);
+    }
+  }
+};
+
+WebAssembly.instantiateStreaming(fetch(&#39;simple.wasm&#39;), importObject)
+.then(obj =&gt; obj.instance.exports.exported_func());</code></pre>
+<p>This also demonstrates how the <code>exports</code> property is used to access exported functions.</p>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://webassembly.github.io/spec/js-api/#instances">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) <br/></p>
+<span class="small">#instances</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>Instance</code></p>
+<p>57</p>
+<p>16</p>
+<p>52</p>
+<p>Disabled in the Firefox 52 Extended Support Release (ESR).</p>
+<p>No</p>
+<p>44</p>
+<p>11</p>
+<p>57</p>
+<p>57</p>
+<p>52</p>
+<p>Disabled in the Firefox 52 Extended Support Release (ESR).</p>
+<p>43</p>
+<p>11</p>
+<p>7.0</p>
+<p><code>Instance</code></p>
+<p>57</p>
+<p>16</p>
+<p>52</p>
+<p>Disabled in the Firefox 52 Extended Support Release (ESR).</p>
+<p>No</p>
+<p>44</p>
+<p>11</p>
+<p>57</p>
+<p>57</p>
+<p>52</p>
+<p>Disabled in the Firefox 52 Extended Support Release (ESR).</p>
+<p>43</p>
+<p>11</p>
+<p>7.0</p>
+<p><code>exports</code></p>
+<p>57</p>
+<p>16</p>
+<p>52</p>
+<p>Disabled in the Firefox 52 Extended Support Release (ESR).</p>
+<p>No</p>
+<p>44</p>
+<p>11</p>
+<p>57</p>
+<p>57</p>
+<p>52</p>
+<p>Disabled in the Firefox 52 Extended Support Release (ESR).</p>
+<p>43</p>
+<p>11</p>
+<p>7.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/WebAssembly">WebAssembly</a> overview page</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts">WebAssembly concepts</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API">Using the WebAssembly JavaScript API</a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Instance" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Instance</a></p>
+</body>
+</html>

@@ -1,0 +1,1 @@
+There are several browsers available, such as [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/), [Google Chrome](https://www.google.com/chrome/index.html), and [Microsoft Edge](https://www.microsoft.com/en-us/windows/microsoft-edge).

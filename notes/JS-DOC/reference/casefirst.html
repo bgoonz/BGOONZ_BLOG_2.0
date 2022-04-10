@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>casefirst</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="intl.locale.prototype.casefirst">Intl.Locale.prototype.caseFirst</h1>
+<p>The <code>Intl.Locale.prototype.caseFirst</code> property is an accessor property that returns whether case is taken into account for the locale’s collation rules.</p>
+<h2 id="description">Description</h2>
+<p>A locale’s collation rules are used to determine how strings are ordered in that locale. Certain locales use a character’s case (UPPERCASE or lowercase) in the collation process. This additional rule can be expressed in a <a href="../locale"><code>Locale's</code></a> <code>caseFirst</code> property.</p>
+<p>There are 3 values that the <code>caseFirst</code> property can have, outlined in the table below.</p>
+<h3 id="casefirst-values"><code>caseFirst</code> values</h3>
+<table>
+<thead>
+<tr class="header">
+<th>
+Value
+</th>
+<th>
+Description
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<code>upper</code>
+</td>
+<td>
+Upper case to be sorted before lower case.
+</td>
+</tr>
+<tr class="even">
+<td>
+<code>lower</code>
+</td>
+<td>
+Lower case to be sorted before upper case.
+</td>
+</tr>
+<tr class="odd">
+<td>
+<code>false</code>
+</td>
+<td>
+No special case ordering.
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="examples">Examples</h2>
+<h3 id="setting-the-casefirst-value-via-the-locale-string">Setting the caseFirst value via the locale string</h3>
+<p>In the <a href="https://www.unicode.org/reports/tr35/">Unicode locale string spec</a>, the values that <code>caseFirst</code> represents correspond to the key <code>kf</code>. <code>kf</code> is treated as a locale string “extension subtag”. These subtags add additional data about the locale, and are added to locale identifiers by using the <code>-u</code> extension key. Thus, the <code>caseFirst</code> value can be added to the initial locale identifier string that is passed into the <code>Locale</code> constructor. To add the <code>caseFirst</code> value, first add the <code>-u</code> extension key to the string. Next, add the <code>-kf</code> extension key to indicate that you are adding a value for <code>caseFirst</code>. Finally, add the <code>caseFirst</code> value to the string.</p>
+<pre><code>let caseFirstStr = new Intl.Locale(&quot;fr-Latn-FR-u-kf-upper&quot;);
+console.log(caseFirstStr.caseFirst); // Prints &quot;upper&quot;</code></pre>
+<h3 id="setting-the-casefirst-value-via-the-configuration-object-argument">Setting the caseFirst value via the configuration object argument</h3>
+<p>The <a href="locale"><code>Intl.Locale</code></a> constructor has an optional configuration object argument, which can be used to pass extension types. Set the <code>caseFirst</code> property of the configuration object to your desired <code>caseFirst</code> value, and then pass it into the constructor.</p>
+<pre><code>let caseFirstObj= new Intl.Locale(&quot;en-Latn-US&quot;, {caseFirst: &quot;lower&quot;});
+console.log(us12hour.caseFirst); // Prints &quot;lower&quot;</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.caseFirst">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) <br/></p>
+<span class="small">#sec-Intl.Locale.prototype.caseFirst</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>caseFirst</code></p>
+<p>74</p>
+<p>79</p>
+<p>75</p>
+<p>No</p>
+<p>62</p>
+<p>14</p>
+<p>74</p>
+<p>74</p>
+<p>79</p>
+<p>53</p>
+<p>14</p>
+<p>11.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../locale"><code>Intl.Locale</code></a></li>
+<li><a href="https://github.com/unicode-org/cldr/blob/master/common/bcp47/collation.xml#L49">Unicode case first collation spec</a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/caseFirst" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/caseFirst</a></p>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>flat</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="array.prototype.flat">Array.prototype.flat()</h1>
+<p>The <code>flat()</code> method creates a new array with all sub-array elements concatenated into it recursively up to the specified depth.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>flat()
+flat(depth)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>depth</code> <span class="badge inline optional">Optional</span><br />
+The depth level specifying how deep a nested array structure should be flattened. Defaults to 1.</p>
+<h3 id="return-value">Return value</h3>
+<p>A new array with the sub-array elements concatenated into it.</p>
+<h2 id="alternatives">Alternatives</h2>
+<h3 id="reduce-and-concat">reduce and concat</h3>
+<pre><code>const arr = [1, 2, [3, 4]];
+
+// To flat single level array
+arr.flat();
+// is equivalent to
+arr.reduce((acc, val) =&gt; acc.concat(val), []);
+// [1, 2, 3, 4]
+
+// or with decomposition syntax
+const flattened = arr =&gt; [].concat(...arr);</code></pre>
+<h3 id="reduce-concat-isarray-recursivity">reduce + concat + isArray + recursivity</h3>
+<pre><code>const arr = [1, 2, [3, 4, [5, 6]]];
+
+// to enable deep level flatten use recursion with reduce and concat
+function flatDeep(arr, d = 1) {
+   return d &gt; 0 ? arr.reduce((acc, val) =&gt; acc.concat(Array.isArray(val) ? flatDeep(val, d - 1) : val), [])
+                : arr.slice();
+};
+
+flatDeep(arr, Infinity);
+// [1, 2, 3, 4, 5, 6]</code></pre>
+<h3 id="use-a-stack">Use a stack</h3>
+<pre><code>// non recursive flatten deep using a stack
+// note that depth control is hard/inefficient as we will need to tag EACH value with its own depth
+// also possible w/o reversing on shift/unshift, but array OPs on the end tends to be faster
+function flatten(input) {
+  const stack = [...input];
+  const res = [];
+  while(stack.length) {
+    // pop value from stack
+    const next = stack.pop();
+    if(Array.isArray(next)) {
+      // push back array items, won&#39;t modify the original input
+      stack.push(...next);
+    } else {
+      res.push(next);
+    }
+  }
+  // reverse to restore input order
+  return res.reverse();
+}
+
+const arr = [1, 2, [3, 4, [5, 6]]];
+flatten(arr);
+// [1, 2, 3, 4, 5, 6]</code></pre>
+<h3 id="use-generator-function">Use Generator function</h3>
+<pre><code>function* flatten(array, depth) {
+    if(depth === undefined) {
+      depth = 1;
+    }
+    for(const item of array) {
+        if(Array.isArray(item) &amp;&amp; depth &gt; 0) {
+          yield* flatten(item, depth - 1);
+        } else {
+          yield item;
+        }
+    }
+}
+
+const arr = [1, 2, [3, 4, [5, 6]]];
+const flattened = [...flatten(arr, Infinity)];
+// [1, 2, 3, 4, 5, 6]</code></pre>
+<h2 id="examples">Examples</h2>
+<h3 id="flattening-nested-arrays">Flattening nested arrays</h3>
+<pre><code>const arr1 = [1, 2, [3, 4]];
+arr1.flat();
+// [1, 2, 3, 4]
+
+const arr2 = [1, 2, [3, 4, [5, 6]]];
+arr2.flat();
+// [1, 2, 3, 4, [5, 6]]
+
+const arr3 = [1, 2, [3, 4, [5, 6]]];
+arr3.flat(2);
+// [1, 2, 3, 4, 5, 6]
+
+const arr4 = [1, 2, [3, 4, [5, 6, [7, 8, [9, 10]]]]];
+arr4.flat(Infinity);
+// [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]</code></pre>
+<h3 id="flattening-and-array-holes">Flattening and array holes</h3>
+<p>The flat method removes empty slots in arrays:</p>
+<pre><code>const arr5 = [1, 2, , 4, 5];
+arr5.flat();
+// [1, 2, 4, 5]</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-array.prototype.flat">ECMAScript (ECMA-262) <br/></p>
+<span class="small">The definition of ‘Array.prototype.flat’ in that specification.</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>flat</code></p>
+<p>69</p>
+<p>79</p>
+<p>62</p>
+<p>No</p>
+<p>56</p>
+<p>12</p>
+<p>69</p>
+<p>69</p>
+<p>62</p>
+<p>48</p>
+<p>12</p>
+<p>10.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="flatmap"><code>Array.prototype.flatMap()</code></a></li>
+<li><a href="map"><code>Array.prototype.map()</code></a></li>
+<li><a href="reduce"><code>Array.prototype.reduce()</code></a></li>
+<li><a href="concat"><code>Array.prototype.concat()</code></a></li>
+<li><a href="https://github.com/behnammodi/polyfill/blob/master/array.polyfill.js">A polyfill</a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat</a></p>
+</body>
+</html>

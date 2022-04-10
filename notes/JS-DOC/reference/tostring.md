@@ -1,8 +1,10 @@
-# Object.prototype.toString()
+Object.prototype.toString()
+===========================
 
 The `toString()` method returns a string representing the object.
 
-## Syntax
+Syntax
+------
 
     toString()
 
@@ -10,9 +12,10 @@ The `toString()` method returns a string representing the object.
 
 A string representing the object.
 
-## Description
+Description
+-----------
 
-Every object has a `toString()` method that is automatically called when the object is to be represented as a text value or when an object is referred to in a manner in which a string is expected. By default, the `toString()` method is inherited by every object descended from `Object`. If this method is not overridden in a custom object, `toString()` returns "`[object type]`", where `type` is the object type. The following code illustrates this:
+Every object has a `toString()` method that is automatically called when the object is to be represented as a text value or when an object is referred to in a manner in which a string is expected. By default, the `toString()` method is inherited by every object descended from `Object`. If this method is not overridden in a custom object, `toString()` returns “`[object type]`”, where `type` is the object type. The following code illustrates this:
 
     const o = new Object();
     o.toString(); // returns [object Object]
@@ -21,11 +24,12 @@ Every object has a `toString()` method that is automatically called when the obj
 
 See [Using `toString()` to detect object class](#using_tostring_to_detect_object_class).
 
-## Parameters
+Parameters
+----------
 
 For Numbers and BigInts `toString()` takes an optional parameter `radix` the value of radix must be minimum 2 and maximum 36.
 
-By using `radix` you can also convert base 10 numbers (like 1,2,3,4,5,.........) to another base numbers, in example below we are converting base 10 number to a base 2 (binary) number.
+By using `radix` you can also convert base 10 numbers (like 1,2,3,4,5,………) to another base numbers, in example below we are converting base 10 number to a base 2 (binary) number.
 
     let baseTenInt = 10;
     console.log(baseTenInt.toString(2));
@@ -44,7 +48,8 @@ Some common radix are
 -   10 for [decimal numbers](https://en.wikipedia.org/wiki/Decimal),
 -   16 for [hexadecimal numbers](https://en.wikipedia.org/wiki/Hexadecimal).
 
-## Examples
+Examples
+--------
 
 ### Overriding the default toString method
 
@@ -65,7 +70,7 @@ If you call the `toString()` method on this custom object, it returns the defaul
 
     theDog.toString(); // returns [object Object]
 
-The following code creates and assigns `dogToString()` to override the default `toString()` method. This function generates a string containing the `name`, `breed`, `color`, and `sex` of the object, in the form "`property = value;`".
+The following code creates and assigns `dogToString()` to override the default `toString()` method. This function generates a string containing the `name`, `breed`, `color`, and `sex` of the object, in the form “`property = value;`”.
 
     Dog.prototype.toString = function dogToString() {
       const ret = 'Dog ' + this.name + ' is a ' + this.sex + ' ' + this.color + ' ' + this.breed;
@@ -109,14 +114,14 @@ Using `toString()` in this way is unreliable; objects can change the behavior of
     Date.prototype[Symbol.toStringTag] = 'prototype polluted';
     Object.prototype.toString.call(new Date()); // [object prototype polluted]
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.prototype.tostring">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-object.prototype.tostring</span></td></tr></tbody></table>
 
-<span class="small">#sec-object.prototype.tostring</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -172,13 +177,13 @@ Samsung Internet
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`Object.prototype.toSource()`](tosource)
 -   [`Object.prototype.valueOf()`](valueof)
 -   [`Number.prototype.toString()`](../number/tostring)
 -   [`Symbol.toPrimitive`](../symbol/toprimitive)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString</a>

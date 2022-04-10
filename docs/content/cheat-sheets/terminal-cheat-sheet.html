@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>terminal-cheat-sheet</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="terminal-cheat-sheet">Terminal Cheat Sheet</h1>
+<h3 id="system-information">1 - SYSTEM INFORMATION</h3>
+<p># Display Linux system information uname -a</p>
+<h2 id="display-kernel-release-information">Display kernel release information</h2>
+<p>uname -r</p>
+<h2 id="show-which-version-of-red-hat-installed">Show which version of Red Hat installed</h2>
+<p>cat /etc/redhat-release</p>
+<h2 id="show-how-long-the-system-has-been-running-load">Show how long the system has been running + load</h2>
+<p>uptime</p>
+<h2 id="show-system-host-name">Show system host name</h2>
+<p>hostname</p>
+<h2 id="display-all-local-ip-addresses-of-the-host.">Display all local IP addresses of the host.</h2>
+<p>hostname -I</p>
+<h2 id="show-system-reboot-history">Show system reboot history</h2>
+<p>last reboot</p>
+<h2 id="show-the-current-date-and-time">Show the current date and time</h2>
+<p>date</p>
+<h2 id="show-this-months-calendar">Show this month’s calendar</h2>
+<p>cal</p>
+<h2 id="display-who-is-online">Display who is online</h2>
+<p>w</p>
+<h2 id="who-you-are-logged-in-as">Who you are logged in as</h2>
+<p>whoami</p>
+<h3 id="hardware-information">2 - HARDWARE INFORMATION</h3>
+<p># Display messages in kernel ring buffer dmesg</p>
+<h2 id="display-cpu-information">Display CPU information</h2>
+<p>cat /proc/cpuinfo</p>
+<h2 id="display-memory-information">Display memory information</h2>
+<p>cat /proc/meminfo</p>
+<h2 id="display-free-and-used-memory--h-for-human-readable--m-for-mb--g-for-gb.">Display free and used memory ( -h for human readable, -m for MB, -g for GB.)</h2>
+<p>free -h</p>
+<h2 id="display-pci-devices">Display PCI devices</h2>
+<p>lspci -tv</p>
+<h2 id="display-usb-devices">Display USB devices</h2>
+<p>lsusb -tv</p>
+<h2 id="display-dmismbios-hardware-info-from-the-bios">Display DMI/SMBIOS (hardware info) from the BIOS</h2>
+<p>dmidecode</p>
+<h2 id="show-info-about-disk-sda">Show info about disk sda</h2>
+<p>hdparm -i /dev/sda</p>
+<h2 id="perform-a-read-speed-test-on-disk-sda">Perform a read speed test on disk sda</h2>
+<p>hdparm -tT /dev/sda</p>
+<h2 id="test-for-unreadable-blocks-on-disk-sda">Test for unreadable blocks on disk sda</h2>
+<p>badblocks -s /dev/sda</p>
+<h3 id="performance-monitoring-and-statistics">3 - PERFORMANCE MONITORING AND STATISTICS</h3>
+<p># Display and manage the top processes top</p>
+<h2 id="interactive-process-viewer-top-alternative">Interactive process viewer (top alternative)</h2>
+<p>htop</p>
+<h2 id="display-processor-related-statistics">Display processor related statistics</h2>
+<p>mpstat 1</p>
+<h2 id="display-virtual-memory-statistics">Display virtual memory statistics</h2>
+<p>vmstat 1</p>
+<h2 id="display-io-statistics">Display I/O statistics</h2>
+<p>iostat 1</p>
+<h2 id="display-the-last-100-syslog-messages-use-varlogsyslog-for-debian-based-systems.">Display the last 100 syslog messages (Use /var/log/syslog for Debian based systems.)</h2>
+<p>tail -100 /var/log/messages</p>
+<h2 id="capture-and-display-all-packets-on-interface-eth0">Capture and display all packets on interface eth0</h2>
+<p>tcpdump -i eth0</p>
+<h2 id="monitor-all-traffic-on-port-80-http">Monitor all traffic on port 80 ( HTTP )</h2>
+<p>tcpdump -i eth0 ‘port 80’</p>
+<h2 id="list-all-open-files-on-the-system">List all open files on the system</h2>
+<p>lsof</p>
+<h2 id="list-files-opened-by-user">List files opened by user</h2>
+<p>lsof -u user</p>
+<h2 id="display-free-and-used-memory--h-for-human-readable--m-for-mb--g-for-gb.-1">Display free and used memory ( -h for human readable, -m for MB, -g for GB.)</h2>
+<p>free -h</p>
+<h2 id="execute-df--h-showing-periodic-updates">Execute “df -h”, showing periodic updates</h2>
+<p>watch df -h</p>
+<h3 id="user-information-and-management">4 - USER INFORMATION AND MANAGEMENT</h3>
+<p># Display the user and group ids of your current user. id</p>
+<h2 id="display-the-last-users-who-have-logged-onto-the-system.">Display the last users who have logged onto the system.</h2>
+<p>last</p>
+<h2 id="show-who-is-logged-into-the-system.">Show who is logged into the system.</h2>
+<p>who</p>
+<h2 id="show-who-is-logged-in-and-what-they-are-doing.">Show who is logged in and what they are doing.</h2>
+<p>w</p>
+<h2 id="create-a-group-named-test.">Create a group named “test”.</h2>
+<p>groupadd test</p>
+<h2 id="create-an-account-named-john-with-a-comment-of-john-smith-and-create-the-users-home-directory.">Create an account named john, with a comment of “John Smith” and create the user’s home directory.</h2>
+<p>useradd -c “John Smith” -m john</p>
+<h2 id="delete-the-john-account.">Delete the john account.</h2>
+<p>userdel john</p>
+<h2 id="add-the-john-account-to-the-sales-group">Add the john account to the sales group</h2>
+<p>usermod -aG sales john</p>
+<h3 id="file-and-directory-commands">5 - FILE AND DIRECTORY COMMANDS</h3>
+<p># List all files in a long listing (detailed) format ls -al</p>
+<h2 id="display-the-present-working-directory">Display the present working directory</h2>
+<p>pwd</p>
+<h2 id="create-a-directory">Create a directory</h2>
+<p>mkdir directory</p>
+<h2 id="remove-delete-file">Remove (delete) file</h2>
+<p>rm file</p>
+<h2 id="remove-the-directory-and-its-contents-recursively">Remove the directory and its contents recursively</h2>
+<p>rm -r directory</p>
+<h2 id="force-removal-of-file-without-prompting-for-confirmation">Force removal of file without prompting for confirmation</h2>
+<p>rm -f file</p>
+<h2 id="forcefully-remove-directory-recursively">Forcefully remove directory recursively</h2>
+<p>rm -rf directory</p>
+<h2 id="copy-file1-to-file2">Copy file1 to file2</h2>
+<p>cp file1 file2</p>
+<h2 id="copy-source_directory-recursively-to-destination.-if-destination-exists-copy-source_directory-into-destination-otherwise-create-destination-with-the-contents-of-source_directory.">Copy source_directory recursively to destination. If destination exists, copy source_directory into destination, otherwise create destination with the contents of source_directory.</h2>
+<p>cp -r source_directory destination</p>
+<h2 id="rename-or-move-file1-to-file2.-if-file2-is-an-existing-directory-move-file1-into-directory-file2">Rename or move file1 to file2. If file2 is an existing directory, move file1 into directory file2</h2>
+<p>mv file1 file2</p>
+<h2 id="create-symbolic-link-to-linkname">Create symbolic link to linkname</h2>
+<p>ln -s /path/to/file linkname</p>
+<h2 id="create-an-empty-file-or-update-the-access-and-modification-times-of-file.">Create an empty file or update the access and modification times of file.</h2>
+<p>touch file</p>
+<h2 id="view-the-contents-of-file">View the contents of file</h2>
+<p>cat file</p>
+<h2 id="browse-through-a-text-file">Browse through a text file</h2>
+<p>less file</p>
+<h2 id="display-the-first-10-lines-of-file">Display the first 10 lines of file</h2>
+<p>head file</p>
+<h2 id="display-the-last-10-lines-of-file">Display the last 10 lines of file</h2>
+<p>tail file</p>
+<h2 id="display-the-last-10-lines-of-file-and-follow-the-file-as-it-grows.">Display the last 10 lines of file and “follow” the file as it grows.</h2>
+<p>tail -f file</p>
+<h3 id="process-management">6 - PROCESS MANAGEMENT</h3>
+<p># Display your currently running processes ps</p>
+<h2 id="display-all-the-currently-running-processes-on-the-system.">Display all the currently running processes on the system.</h2>
+<p>ps -ef</p>
+<h2 id="display-process-information-for-processname">Display process information for processname</h2>
+<p>ps -ef | grep processname</p>
+<h2 id="display-and-manage-the-top-processes">Display and manage the top processes</h2>
+<p>top</p>
+<h2 id="interactive-process-viewer-top-alternative-1">Interactive process viewer (top alternative)</h2>
+<p>htop</p>
+<h2 id="kill-process-with-process-id-of-pid">Kill process with process ID of pid</h2>
+<p>kill pid</p>
+<h2 id="kill-all-processes-named-processname">Kill all processes named processname</h2>
+<p>killall processname</p>
+<h2 id="start-program-in-the-background">Start program in the background</h2>
+<p>program &amp;</p>
+<h2 id="display-stopped-or-background-jobs">Display stopped or background jobs</h2>
+<p>bg</p>
+<h2 id="brings-the-most-recent-background-job-to-foreground">Brings the most recent background job to foreground</h2>
+<p>fg</p>
+<h2 id="brings-job-n-to-the-foreground">Brings job n to the foreground</h2>
+<p>fg n</p>
+<h3 id="file-permissions">7 - FILE PERMISSIONS</h3>
+<p><img src="https://www.linuxtrainingacademy.com/wp-content/uploads/2017/02/linux-permissions-chart.png" alt="Linux chmod example" /> PERMISSION EXAMPLE</p>
+<p>  U G W rwx rwx rwx chmod 777 filename rwx rwx r-x chmod 775 filename rwx r-x r-x chmod 755 filename rw- rw- r– chmod 664 filename rw- r– r– chmod 644 filename</p>
+<h2 id="note-use-777-sparingly">NOTE: Use 777 sparingly!</h2>
+<p>  LEGEND U = User G = Group W = World</p>
+<p>  r = Read w = write x = execute - = no access</p>
+<h3 id="networking">8 - NETWORKING</h3>
+<p># Display all network interfaces and IP address ip a</p>
+<h2 id="display-eth0-address-and-details">Display eth0 address and details</h2>
+<p>ip addr show dev eth0</p>
+<h2 id="query-or-control-network-driver-and-hardware-settings">Query or control network driver and hardware settings</h2>
+<p>ethtool eth0</p>
+<h2 id="send-icmp-echo-request-to-host">Send ICMP echo request to host</h2>
+<p>ping host</p>
+<h2 id="display-whois-information-for-domain">Display whois information for domain</h2>
+<p>whois domain</p>
+<h2 id="display-dns-information-for-domain">Display DNS information for domain</h2>
+<p>dig domain</p>
+<h2 id="reverse-lookup-of-ip_address">Reverse lookup of IP_ADDRESS</h2>
+<p>dig -x IP_ADDRESS</p>
+<h2 id="display-dns-ip-address-for-domain">Display DNS IP address for domain</h2>
+<p>host domain</p>
+<h2 id="display-the-network-address-of-the-host-name.">Display the network address of the host name.</h2>
+<p>hostname -i</p>
+<h2 id="display-all-local-ip-addresses-of-the-host.-1">Display all local IP addresses of the host.</h2>
+<p>hostname -I</p>
+<h2 id="download-httpdomain.comfile">Download http://domain.com/file</h2>
+<p>wget http://domain.com/file</p>
+<h2 id="display-listening-tcp-and-udp-ports-and-corresponding-programs">Display listening tcp and udp ports and corresponding programs</h2>
+<p>netstat -nutlp</p>
+<h3 id="archives-tar-files">9 - ARCHIVES (TAR FILES)</h3>
+<p># Create tar named archive.tar containing directory. tar cf archive.tar directory</p>
+<h2 id="extract-the-contents-from-archive.tar.">Extract the contents from archive.tar.</h2>
+<p>tar xf archive.tar</p>
+<h2 id="create-a-gzip-compressed-tar-file-name-archive.tar.gz.">Create a gzip compressed tar file name archive.tar.gz.</h2>
+<p>tar czf archive.tar.gz directory</p>
+<h2 id="extract-a-gzip-compressed-tar-file.">Extract a gzip compressed tar file.</h2>
+<p>tar xzf archive.tar.gz</p>
+<h2 id="create-a-tar-file-with-bzip2-compression">Create a tar file with bzip2 compression</h2>
+<p>tar cjf archive.tar.bz2 directory</p>
+<h2 id="extract-a-bzip2-compressed-tar-file.">Extract a bzip2 compressed tar file.</h2>
+<p>tar xjf archive.tar.bz2</p>
+<h3 id="installing-packages">10 - INSTALLING PACKAGES</h3>
+<p># Search for a package by keyword. yum search keyword</p>
+<h2 id="install-package.">Install package.</h2>
+<p>yum install package</p>
+<h2 id="display-description-and-summary-information-about-package.">Display description and summary information about package.</h2>
+<p>yum info package</p>
+<h2 id="install-package-from-local-file-named-package.rpm">Install package from local file named package.rpm</h2>
+<p>rpm -i package.rpm</p>
+<h2 id="removeuninstall-package.">Remove/uninstall package.</h2>
+<p>yum remove package</p>
+<h2 id="install-software-from-source-code.">Install software from source code.</h2>
+<p>tar zxvf sourcecode.tar.gz cd sourcecode ./configure make make install</p>
+<h3 id="search">11 - SEARCH</h3>
+<p># Search for pattern in file grep pattern file</p>
+<h2 id="search-recursively-for-pattern-in-directory">Search recursively for pattern in directory</h2>
+<p>grep -r pattern directory</p>
+<h2 id="find-files-and-directories-by-name">Find files and directories by name</h2>
+<p>locate name</p>
+<h2 id="find-files-in-homejohn-that-start-with-prefix.">Find files in /home/john that start with “prefix”.</h2>
+<p>find /home/john -name ‘prefix*’</p>
+<h2 id="find-files-larger-than-100mb-in-home">Find files larger than 100MB in /home</h2>
+<p>find /home -size +100M</p>
+<h3 id="ssh-logins">12 - SSH LOGINS</h3>
+<p># Connect to host as your local username. ssh host</p>
+<h2 id="connect-to-host-as-user">Connect to host as user</h2>
+<p>ssh user@host</p>
+<h2 id="connect-to-host-using-port">Connect to host using port</h2>
+<p>ssh -p port user@host</p>
+<h3 id="file-transfers">13 - FILE TRANSFERS</h3>
+<p># Secure copy file.txt to the /tmp folder on server scp file.txt server:/tmp</p>
+<h2 id="copy-.html-files-from-server-to-the-local-tmp-folder.">Copy *.html files from server to the local /tmp folder.</h2>
+<p>scp server:/var/www/*.html /tmp</p>
+<h2 id="copy-all-files-and-directories-recursively-from-server-to-the-current-systems-tmp-folder.">Copy all files and directories recursively from server to the current system’s /tmp folder.</h2>
+<p>scp -r server:/var/www /tmp</p>
+<h2 id="synchronize-home-to-backupshome">Synchronize /home to /backups/home</h2>
+<p>rsync -a /home /backups/</p>
+<h2 id="synchronize-filesdirectories-between-the-local-and-remote-system-with-compression-enabled">Synchronize files/directories between the local and remote system with compression enabled</h2>
+<p>rsync -avz /home server:/backups/</p>
+<h3 id="disk-usage">14 - DISK USAGE</h3>
+<p># Show free and used space on mounted filesystems df -h</p>
+<h2 id="show-free-and-used-inodes-on-mounted-filesystems">Show free and used inodes on mounted filesystems</h2>
+<p>df -i</p>
+<h2 id="display-disks-partitions-sizes-and-types">Display disks partitions sizes and types</h2>
+<p>fdisk -l</p>
+<h2 id="display-disk-usage-for-all-files-and-directories-in-human-readable-format">Display disk usage for all files and directories in human readable format</h2>
+<p>du -ah</p>
+<h2 id="display-total-disk-usage-off-the-current-directory">Display total disk usage off the current directory</h2>
+<p>du -sh</p>
+<h3 id="directory-navigation">15 - DIRECTORY NAVIGATION</h3>
+<p># To go up one level of the directory tree. (Change into the parent directory.) cd ..</p>
+<h2 id="go-to-the-home-directory">Go to the $HOME directory</h2>
+<p>cd</p>
+<h2 id="change-to-the-etc-directory">Change to the /etc directory</h2>
+<p>cd /etc</p>
+<table>
+<colgroup>
+<col style="width: 28%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ls</td>
+<td>Lists all files and directories in the present working directory</td>
+</tr>
+<tr class="even">
+<td>ls-R</td>
+<td>Lists files in sub-directories as well</td>
+</tr>
+<tr class="odd">
+<td>ls-a</td>
+<td>Lists hidden files as well</td>
+</tr>
+<tr class="even">
+<td>ls-al</td>
+<td>Lists files and directories with detailed information like permissions,size, owner, etc.</td>
+</tr>
+<tr class="odd">
+<td>cd or cd ~</td>
+<td>Navigate to HOME directory</td>
+</tr>
+<tr class="even">
+<td>cd ..</td>
+<td>Move one level up</td>
+</tr>
+<tr class="odd">
+<td>cd</td>
+<td>To change to a particular directory</td>
+</tr>
+<tr class="even">
+<td>cd /</td>
+<td>Move to the root directory</td>
+</tr>
+<tr class="odd">
+<td>cat &gt; filename</td>
+<td>Creates a new file</td>
+</tr>
+<tr class="even">
+<td>cat filename</td>
+<td>Displays the file content</td>
+</tr>
+<tr class="odd">
+<td>cat file1 file2 &gt; file3</td>
+<td>Joins two files (file1, file2) and stores the output in a new file (file3)</td>
+</tr>
+<tr class="even">
+<td>mv file “new file path”</td>
+<td>Moves the files to the new location</td>
+</tr>
+<tr class="odd">
+<td>mv filename new_file_name</td>
+<td>Renames the file to a new filename</td>
+</tr>
+<tr class="even">
+<td>sudo</td>
+<td>Allows regular users to run programs with the security privileges of the superuser or root</td>
+</tr>
+<tr class="odd">
+<td>rm filename</td>
+<td>Deletes a file</td>
+</tr>
+<tr class="even">
+<td>man</td>
+<td>Gives help information on a command</td>
+</tr>
+<tr class="odd">
+<td>history</td>
+<td>Gives a list of all past commands typed in the current terminal session</td>
+</tr>
+<tr class="even">
+<td>clear</td>
+<td>Clears the terminal</td>
+</tr>
+<tr class="odd">
+<td>mkdir directoryname</td>
+<td>Creates a new directory in the present working directory or a at the specified path</td>
+</tr>
+<tr class="even">
+<td>rmdir</td>
+<td>Deletes a directory</td>
+</tr>
+<tr class="odd">
+<td>mv</td>
+<td>Renames a directory</td>
+</tr>
+<tr class="even">
+<td>pr -x</td>
+<td>Divides the file into x columns</td>
+</tr>
+<tr class="odd">
+<td>pr -h</td>
+<td>Assigns a header to the file</td>
+</tr>
+<tr class="even">
+<td>pr -n</td>
+<td>Denotes the file with Line Numbers</td>
+</tr>
+<tr class="odd">
+<td>lp -nc , lpr c</td>
+<td>Prints “c” copies of the File</td>
+</tr>
+<tr class="even">
+<td>lp-d lp-P</td>
+<td>Specifies name of the printer</td>
+</tr>
+<tr class="odd">
+<td>apt-get</td>
+<td>Command used to install and update packages</td>
+</tr>
+<tr class="even">
+<td>mail -s ‘subject’</td>
+<td>Command to send email</td>
+</tr>
+<tr class="odd">
+<td>-c ‘cc-address’</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>-b ‘bcc-address’</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>‘to-address’</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>mail -s “Subject”</td>
+<td>Command to send email with attachment</td>
+</tr>
+<tr class="odd">
+<td>to-address &lt; Filename</td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Linux File Permissions</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>File Permission commands</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Command</td>
+<td>Description</td>
+</tr>
+<tr class="even">
+<td>ls-l</td>
+<td>to show file type and access permission</td>
+</tr>
+<tr class="odd">
+<td>r</td>
+<td>read permission</td>
+</tr>
+<tr class="even">
+<td>w</td>
+<td>write permission</td>
+</tr>
+<tr class="odd">
+<td>x</td>
+<td>execute permission</td>
+</tr>
+<tr class="even">
+<td>-=</td>
+<td>no permission</td>
+</tr>
+<tr class="odd">
+<td>Chown user</td>
+<td>For changing the ownership of a file/directory</td>
+</tr>
+<tr class="even">
+<td>Chown user:group filename</td>
+<td>change the user as well as group for a file or directory</td>
+</tr>
+<tr class="odd">
+<td>Environment Variables command</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Command</td>
+<td>Description</td>
+</tr>
+<tr class="odd">
+<td>echo $VARIABLE</td>
+<td>To display value of a variable</td>
+</tr>
+<tr class="even">
+<td>env</td>
+<td>Displays all environment variables</td>
+</tr>
+<tr class="odd">
+<td>VARIABLE_NAME= variable_value</td>
+<td>Create a new variable</td>
+</tr>
+<tr class="even">
+<td>Unset</td>
+<td>Remove a variable</td>
+</tr>
+<tr class="odd">
+<td>export Variable=value</td>
+<td>To set value of an environment variable</td>
+</tr>
+<tr class="even">
+<td>User management commands of linux</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Command</td>
+<td>Description</td>
+</tr>
+<tr class="even">
+<td>sudo adduser username</td>
+<td>To add a new user</td>
+</tr>
+<tr class="odd">
+<td>sudo passwd -l ‘username’</td>
+<td>To change the password of a user</td>
+</tr>
+<tr class="even">
+<td>sudo userdel -r ‘username’</td>
+<td>To remove a newly created user</td>
+</tr>
+<tr class="odd">
+<td>sudo usermod -a -G GROUPNAME USERNAME</td>
+<td>To add a user to a group</td>
+</tr>
+<tr class="even">
+<td>sudo deluser USER GROUPNAME</td>
+<td>To remove a user from a group</td>
+</tr>
+<tr class="odd">
+<td>finger</td>
+<td>Shows information of all the users logged in</td>
+</tr>
+<tr class="even">
+<td>finger username</td>
+<td>Gives information of a particular user</td>
+</tr>
+<tr class="odd">
+<td>Networking command</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Command</td>
+<td>Description</td>
+</tr>
+<tr class="odd">
+<td>SSH username@ip-address or hostname</td>
+<td>login into a remote Linux machine using SSH</td>
+</tr>
+<tr class="even">
+<td>Ping hostname="" or =""</td>
+<td>To ping and Analyzing network and host connections</td>
+</tr>
+<tr class="odd">
+<td>dir</td>
+<td>Display files in the current directory of a remote computer</td>
+</tr>
+<tr class="even">
+<td>cd “dirname”</td>
+<td>change directory to “dirname” on a remote computer</td>
+</tr>
+<tr class="odd">
+<td>put file</td>
+<td>upload ‘file’ from local to remote computer</td>
+</tr>
+<tr class="even">
+<td>get file</td>
+<td>Download ‘file’ from remote to local computer</td>
+</tr>
+<tr class="odd">
+<td>quit</td>
+<td>Logout</td>
+</tr>
+<tr class="even">
+<td>Process command</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Command</td>
+<td>Description</td>
+</tr>
+<tr class="even">
+<td>bg</td>
+<td>To send a process to the background</td>
+</tr>
+<tr class="odd">
+<td>fg</td>
+<td>To run a stopped process in the foreground</td>
+</tr>
+<tr class="even">
+<td>top</td>
+<td>Details on all Active Processes</td>
+</tr>
+<tr class="odd">
+<td>ps</td>
+<td>Give the status of processes running for a user</td>
+</tr>
+<tr class="even">
+<td>ps PID</td>
+<td>Gives the status of a particular process</td>
+</tr>
+<tr class="odd">
+<td>pidof</td>
+<td>Gives the Process ID (PID) of a process</td>
+</tr>
+<tr class="even">
+<td>kill PID</td>
+<td>Kills a process</td>
+</tr>
+<tr class="odd">
+<td>nice</td>
+<td>Starts a process with a given priority</td>
+</tr>
+<tr class="even">
+<td>renice</td>
+<td>Changes priority of an already running process</td>
+</tr>
+<tr class="odd">
+<td>df</td>
+<td>Gives free hard disk space on your system</td>
+</tr>
+<tr class="even">
+<td>free</td>
+<td>Gives free RAM on your system</td>
+</tr>
+<tr class="odd">
+<td>VI Editing Commands</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Command</td>
+<td>Description</td>
+</tr>
+<tr class="odd">
+<td>i</td>
+<td>Insert at cursor (goes into insert mode)</td>
+</tr>
+<tr class="even">
+<td>a</td>
+<td>Write after cursor (goes into insert mode)</td>
+</tr>
+<tr class="odd">
+<td>A</td>
+<td>Write at the end of line (goes into insert mode)</td>
+</tr>
+<tr class="even">
+<td>ESC</td>
+<td>Terminate insert mode</td>
+</tr>
+<tr class="odd">
+<td>u</td>
+<td>Undo last change</td>
+</tr>
+<tr class="even">
+<td>U</td>
+<td>Undo all changes to the entire line</td>
+</tr>
+<tr class="odd">
+<td>o</td>
+<td>Open a new line (goes into insert mode)</td>
+</tr>
+<tr class="even">
+<td>dd</td>
+<td>Delete line</td>
+</tr>
+<tr class="odd">
+<td>3dd</td>
+<td>Delete 3 lines</td>
+</tr>
+<tr class="even">
+<td>D</td>
+<td>Delete contents of line after the cursor</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td>Delete contents of a line after the cursor and insert new text. Press ESC key to end insertion.</td>
+</tr>
+<tr class="even">
+<td>dw</td>
+<td>Delete word</td>
+</tr>
+<tr class="odd">
+<td>4dw</td>
+<td>Delete 4 words</td>
+</tr>
+<tr class="even">
+<td>cw</td>
+<td>Change word</td>
+</tr>
+<tr class="odd">
+<td>x</td>
+<td>Delete character at the cursor</td>
+</tr>
+<tr class="even">
+<td>r</td>
+<td>Replace character</td>
+</tr>
+<tr class="odd">
+<td>R</td>
+<td>Overwrite characters from cursor onward</td>
+</tr>
+<tr class="even">
+<td>s</td>
+<td>Substitute one character under cursor continue to insert</td>
+</tr>
+<tr class="odd">
+<td>S</td>
+<td>Substitute entire line and begin to insert at the beginning of the line</td>
+</tr>
+<tr class="even">
+<td>~</td>
+<td>Change case of individual character</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="doubly-linked-list">Doubly Linked List</h1>
+<p>In computer science, a <strong>doubly linked list</strong> is a linked data structure that consists of a set of sequentially linked records called nodes. Each node contains two fields, called links, that are references to the previous and to the next node in the sequence of nodes. The beginning and ending nodes’ previous and next links, respectively, point to some kind of terminator, typically a sentinel node or null, to facilitate the traversal of the list. If there is only one sentinel node, then the list is circularly linked via the sentinel node. It can be conceptualized as two singly linked lists formed from the same data items, but in opposite sequential orders.</p>
+<figure>
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Doubly-linked-list.svg" alt="Doubly Linked List" /><figcaption>Doubly Linked List</figcaption>
+</figure>
+<p>The two node links allow traversal of the list in either direction. While adding or removing a node in a doubly linked list requires changing more links than the same operations on a singly linked list, the operations are simpler and potentially more efficient (for nodes other than first nodes) because there is no need to keep track of the previous node during traversal or no need to traverse the list to find the previous node, so that its link can be modified.</p>
+<h2 id="pseudocode-for-basic-operations">Pseudocode for Basic Operations</h2>
+<h3 id="insert">Insert</h3>
+<pre class="text"><code>Add(value)
+  Pre: value is the value to add to the list
+  Post: value has been placed at the tail of the list
+  n ← node(value)
+  if head = ø
+    head ← n
+    tail ← n
+  else
+    n.previous ← tail
+    tail.next ← n
+    tail ← n
+  end if
+end Add</code></pre>
+<h3 id="delete">Delete</h3>
+<pre class="text"><code>Remove(head, value)
+  Pre: head is the head node in the list
+       value is the value to remove from the list
+  Post: value is removed from the list, true; otherwise false
+  if head = ø
+    return false
+  end if
+  if value = head.value
+    if head = tail
+      head ← ø
+      tail ← ø
+    else
+      head ← head.next
+      head.previous ← ø
+    end if
+    return true
+  end if
+  n ← head.next
+  while n != ø and value !== n.value
+    n ← n.next
+  end while
+  if n = tail
+    tail ← tail.previous
+    tail.next ← ø
+    return true
+  else if n != ø
+    n.previous.next ← n.next
+    n.next.previous ← n.previous
+    return true
+  end if
+  return false
+end Remove</code></pre>
+<h3 id="reverse-traversal">Reverse Traversal</h3>
+<pre class="text"><code>ReverseTraversal(tail)
+  Pre: tail is the node of the list to traverse
+  Post: the list has been traversed in reverse order
+  n ← tail
+  while n != ø
+    yield n.value
+    n ← n.previous
+  end while
+end Reverse Traversal</code></pre>
+<h2 id="complexities">Complexities</h2>
+<h2 id="time-complexity">Time Complexity</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Access</th>
+<th style="text-align: center;">Search</th>
+<th style="text-align: center;">Insertion</th>
+<th style="text-align: center;">Deletion</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">O(n)</td>
+<td style="text-align: center;">O(n)</td>
+<td style="text-align: center;">O(1)</td>
+<td style="text-align: center;">O(n)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="space-complexity">Space Complexity</h3>
+<p>O(n)</p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Doubly_linked_list">Wikipedia</a></li>
+<li><a href="https://www.youtube.com/watch?v=JdQeNxWCguQ&amp;t=7s&amp;index=72&amp;list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8">YouTube</a></li>
+</ul>
+</body>
+</html>

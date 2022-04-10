@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>ssh-add</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="to-add-private-key">To add private key:</h1>
+<p>ssh-add <keyfile></p>
+<h1 id="to-load-resident-keys-from-fido2-authenticator">To load resident keys from FIDO2 authenticator:</h1>
+<p>ssh-add -K</p>
+<h1 id="to-store-a-github-ssh-passphrase-in-your-keychain">To store a GitHub SSH passphrase in your keychain:</h1>
+<p>ssh-add -K ~/.ssh/github_rsa</p>
+<h1 id="to-list-all-public-keys">To list all public keys:</h1>
+<p>ssh-add -L</p>
+<h1 id="to-list-fingerprints-of-all-keys">To list fingerprints of all keys:</h1>
+<p>ssh-add -l</p>
+<h1 id="to-delete-key">To delete key:</h1>
+<p>ssh-add -d <keyfile></p>
+<h1 id="to-delete-all-keys">To delete all keys:</h1>
+<p>ssh-add -D</p>
+</body>
+</html>

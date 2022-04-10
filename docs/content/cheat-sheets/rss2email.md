@@ -1,23 +1,29 @@
-# To list all feeds:
+To list all feeds:
+==================
 
 r2e list
 
-# To convert RSS entries to email:
+To convert RSS entries to email:
+================================
 
 r2e run
 
-# To add a new feed:
+To add a new feed:
+==================
 
-r2e add <feed-address>
+r2e add
 
-# To add a new feed with new email address:
+To add a new feed with new email address:
+=========================================
 
-r2e add <feed-address> [new-email-address]
+r2e add \[new-email-address\]
 
-# To delete a feed :
+To delete a feed :
+==================
 
-r2e delete <number-of-feed-in-list>
+r2e delete
 
-# To get help:
+To get help:
+============
 
 r2e -h

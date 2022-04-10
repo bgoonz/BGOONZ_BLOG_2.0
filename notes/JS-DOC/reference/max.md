@@ -1,8 +1,10 @@
-# Math.max()
+Math.max()
+==========
 
-The `Math.max()` function returns the largest of the zero or more numbers given as input parameters, or [`NaN`](../nan) if any parameter isn't a number and can't be converted into one.
+The `Math.max()` function returns the largest of the zero or more numbers given as input parameters, or [`NaN`](../nan) if any parameter isn’t a number and can’t be converted into one.
 
-## Syntax
+Syntax
+------
 
     Math.max()
     Math.max(value0)
@@ -18,7 +20,8 @@ Zero or more numbers among which the largest value will be selected and returned
 
 The largest of the given numbers. If any one or more of the parameters cannot be converted into a number, [`NaN`](../nan) is returned. The result is -[`Infinity`](../infinity) if no parameters are provided.
 
-## Description
+Description
+-----------
 
 Because `max()` is a static method of `Math`, you always use it as `Math.max()`, rather than as a method of a `Math` object you created (`Math` is not a constructor).
 
@@ -26,7 +29,8 @@ If no arguments are given, the result is -[`Infinity`](../infinity).
 
 If at least one of arguments cannot be converted to a number, the result is [`NaN`](../nan).
 
-## Examples
+Examples
+--------
 
 ### Using Math.max()
 
@@ -56,12 +60,11 @@ The new [spread operator](../../operators/spread_syntax) is a shorter way of wri
 
 However, both spread (`...`) and `apply` will either fail or return the wrong result if the array has too many elements, because they try to pass the array elements as function parameters. See [Using apply and built-in functions](../function/apply#using_apply_and_built-in_functions) for more details. The `reduce` solution does not have this problem.
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.max">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-math.max</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-math.max</span></td></tr></tbody></table>
 
 `max`
 
@@ -89,10 +92,10 @@ However, both spread (`...`) and `apply` will either fail or return the wrong re
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`Math.min()`](min)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max</a>

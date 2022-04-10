@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Less.js</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Less.js</h1>
+</header>
+<h3 id="functions">Functions</h3>
+<pre><code>unit(30px / 5px)  #=&gt; 6
+unit(5, px)       #=&gt; 5px
+
+e(&quot;ms:stuff()&quot;)   #=&gt; ms:stuff() (unquote)
+
+%(&quot;count: %d&quot;, 1+2) #=&gt; &quot;count: 3&quot;
+
+iscolor(@x)
+isstring(@x)
+isnumber(@x)
+iskeyword(@x)
+isurl(url(...))
+ispixel()
+isem()
+ispercentage()
+isunit()
+
+hue(@color)
+saturation(@color)
+lightness(@color)
+luma(@color)
+luminance(@color)
+
+fade(@color, amount)
+fadein(@color, amount)
+fadeout(@color, amount)
+spin(@color, degrees)
+mix(@a, @b, amount)</code></pre>
+<h3 id="conditionals">Conditionals</h3>
+<pre><code>.image when (luma(@color) &gt; 50%) { }
+.image when (not(...)) { }
+.image when (default()) {}
+.image when (e(@shape) = &#39;circle&#39;) { }</code></pre>
+</body>
+</html>

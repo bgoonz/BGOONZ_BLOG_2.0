@@ -1,8 +1,9 @@
-# CSS Interview Prep Quiz
+CSS Interview Prep Quiz
+=======================
 
 Plus Css Cheat Sheet (82 questions total)
 
----
+------------------------------------------------------------------------
 
 ### CSS Interview Prep Quiz
 
@@ -26,7 +27,7 @@ Plus Css Cheat Sheet (82 questions total)
 -   <span id="09ae">\[ \] `a`</span>
 -   <span id="a2d4">\[ \] `ul li a`</span>
 
-#### Q2. Using an attribute selector, how would you select an `<a>` element with a "title" attribute?
+#### Q2. Using an attribute selector, how would you select an `<a>` element with a “title” attribute?
 
 -   <span id="558d">\[x\] a\[title\]{…}</span>
 -   <span id="768a">\[ \] a &gt; title {…}</span>
@@ -35,10 +36,10 @@ Plus Css Cheat Sheet (82 questions total)
 
 #### Q3. CSS grid and flexbox are now becoming a more popular way to create page layouts. However, floats are still commonly used, especially when working with an older code base, or it you need to support older browser version. What are two valid techniques used to clear floats?
 
--   <span id="2ea7">\[ \] Use the "clearfix hack" on the floated element and add a float to the parent element.</span>
--   <span id="53b9">\[ \] Use the overflow property on the floated element or the "clearfix hack" on either the floated or parent element.</span>
--   <span id="0f0b">\[ \] Use the "clearfix hack" on the floated element or the overflow property on the parent element.</span>
--   <span id="3558">\[x\] Use the "clearfix hack" on the parent element or use the overflow property with a value other than "visible."</span>
+-   <span id="2ea7">\[ \] Use the “clearfix hack” on the floated element and add a float to the parent element.</span>
+-   <span id="53b9">\[ \] Use the overflow property on the floated element or the “clearfix hack” on either the floated or parent element.</span>
+-   <span id="0f0b">\[ \] Use the “clearfix hack” on the floated element or the overflow property on the parent element.</span>
+-   <span id="3558">\[x\] Use the “clearfix hack” on the parent element or use the overflow property with a value other than “visible.”</span>
 
 #### Q4. What element(s) do the following selectors match to?
 
@@ -377,7 +378,7 @@ Plus Css Cheat Sheet (82 questions total)
 -   <span id="09e2">\[ \] The rule will apply to a device that has a width of 1024px or wider and is a screen device in landscape mode.</span>
 -   <span id="0a5b">\[ \] The rule will apply to a device that has a width of 1024px or narrower, or is a screen device in landscape mode.</span>
 
-#### Q28. CSS transform properties are used to change the shape and position of the selected objects. The transform-origin property specifies the location of the element's transformation origin. By default, what is the location of the origin?
+#### Q28. CSS transform properties are used to change the shape and position of the selected objects. The transform-origin property specifies the location of the element’s transformation origin. By default, what is the location of the origin?
 
 -   <span id="436c">\[x\] the top left corner of the element</span>
 -   <span id="2269">\[ \] the center of the element</span>
@@ -443,7 +444,7 @@ Plus Css Cheat Sheet (82 questions total)
 -   <span id="0eb4">\[x\] Paragraphs 2 and 3 will be blue. Paragraph 2 will have a beige background.</span>
 -   <span id="e353">\[ \] Paragraph 2 will be blue. Paragraphs 2 and 3 will have a beige background.</span>
 
-#### Q35. When using flexbox, the "justify-content" property can be used to distribute the space between the flex items along the main axis. Which value should be used to evenly distribute the flex items within the container shown below?
+#### Q35. When using flexbox, the “justify-content” property can be used to distribute the space between the flex items along the main axis. Which value should be used to evenly distribute the flex items within the container shown below?
 
 -   <span id="cd2a">\[x\] justify-content: space-around;</span>
 -   <span id="bd21">\[ \] justify-content: center;</span>
@@ -585,10 +586,10 @@ Plus Css Cheat Sheet (82 questions total)
       margin-left: calc(5% + 5px);
     }
 
--   <span id="e7bf">\[x\] The left margin value is equal to 5% of its parents element's width plus 5px</span>
+-   <span id="e7bf">\[x\] The left margin value is equal to 5% of its parents element’s width plus 5px</span>
 -   <span id="d573">\[ \] The left margin value is equal to 5% of the viewport width plus 5px</span>
--   <span id="9e5c">\[ \] The left margin value is equal to 5% of the closest positioned element's width plus 5px</span>
--   <span id="e324">\[ \] The left margin value is equal to 5% of the selected element's width (.example) plus 5px</span>
+-   <span id="9e5c">\[ \] The left margin value is equal to 5% of the closest positioned element’s width plus 5px</span>
+-   <span id="e324">\[ \] The left margin value is equal to 5% of the selected element’s width (.example) plus 5px</span>
 
 #### Q50. What is the CSS selector for an `<a>` tag containing the title attribute?
 
@@ -651,7 +652,7 @@ Plus Css Cheat Sheet (82 questions total)
 -   <span id="7333">\[x\] none</span>
 -   <span id="ff26">\[ \] oblique</span>
 
-#### Q56. When would you use the @font-face method?
+#### Q56. When would you use the <span class="citation" data-cites="font-face">@font-face</span> method?
 
 -   <span id="5fb7">\[ \] to set the font size of the text</span>
 -   <span id="ed7c">\[x\] to load custom fonts into stylesheet</span>
@@ -699,7 +700,7 @@ Plus Css Cheat Sheet (82 questions total)
 -   <span id="c3a5">\[x\] 800 x 400 pixels</span>
 -   <span id="4122">\[ \] 400 x 200 pixels</span>
 
-#### Q59. In Chrome's Developer Tools view, where are the default styles listed?
+#### Q59. In Chrome’s Developer Tools view, where are the default styles listed?
 
 -   <span id="51e1">\[x\] under the User Agent Stylesheet section on the right</span>
 -   <span id="3df4">\[ \] in the third panel under the Layout tab</span>
@@ -713,7 +714,7 @@ Plus Css Cheat Sheet (82 questions total)
 -   <span id="9e01">\[ \] document structure</span>
 -   <span id="5a6d">\[x\] content appearance</span>
 
-#### Q61. What is the recommended name you should give the folder that holds your project's images?
+#### Q61. What is the recommended name you should give the folder that holds your project’s images?
 
 -   <span id="fb5f">\[x\] images</span>
 -   <span id="f81e">\[ \] \#images</span>
@@ -843,10 +844,10 @@ Plus Css Cheat Sheet (82 questions total)
 
 #### Q72. A universal selector is specified using a(n) \_.
 
--   <span id="052b">\[ \] "h1" string</span>
--   <span id="34cd">\[ \] "a" character</span>
--   <span id="5064">\[ \] "p" character</span>
--   <span id="7a51">\[x\] "\*" character</span>
+-   <span id="052b">\[ \] “h1” string</span>
+-   <span id="34cd">\[ \] “a” character</span>
+-   <span id="5064">\[ \] “p” character</span>
+-   <span id="7a51">\[x\] “\*” character</span>
 
 #### Q73. In the following CSS code, `'h1'` is the \_, while `'color'` is the \_.
 
@@ -856,7 +857,7 @@ Plus Css Cheat Sheet (82 questions total)
 
 -   <span id="ecb8">\[ \] property; declaration</span>
 -   <span id="4ebb">\[ \] declaration; rule</span>
--   <span id="cbea">\[ \] "p" character</span>
+-   <span id="cbea">\[ \] “p” character</span>
 -   <span id="d058">\[x\] selector; property</span>
 
 #### Q74. What is an alternate way to define the following CSS rule?
@@ -878,16 +879,16 @@ Plus Css Cheat Sheet (82 questions total)
 #### Q76. What is one disadvantage of using a web font service?
 
 -   <span id="e9b4">\[ \] It requires you to host font files on your own server.</span>
--   <span id="5b98">\[ \] It uses more of your site's bandwidth.</span>
+-   <span id="5b98">\[ \] It uses more of your site’s bandwidth.</span>
 -   <span id="5943">\[ \] It offers a narrow selection of custom fonts.</span>
 -   <span id="5bf8">\[x\] It is not always a free service.</span>
 
 #### Q77. How do you add Google fonts to your project?
 
 -   <span id="9e31">\[x\] by using an HTML link element referring to a Google-provided CSS</span>
--   <span id="b503">\[ \] by embedding the font file directly into the project's master JavaScript</span>
+-   <span id="b503">\[ \] by embedding the font file directly into the project’s master JavaScript</span>
 -   <span id="cbc6">\[ \] by using a Google-specific CSS syntax that directly links to the desired font file</span>
--   <span id="32c6">\[ \] by using a standard font-face CSS definition sourcing a font file on Google's servers</span>
+-   <span id="32c6">\[ \] by using a standard font-face CSS definition sourcing a font file on Google’s servers</span>
 
 #### Q78. which choice is not a valid color?
 

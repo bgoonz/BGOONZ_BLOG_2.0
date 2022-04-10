@@ -1,26 +1,32 @@
-# To list VMs on current tenant:
+To list VMs on current tenant:
+==============================
 
 nova list
 
-# To list VMs of all tenants (admin user only):
+To list VMs of all tenants (admin user only):
+=============================================
 
-nova list --all-tenants
+nova list –all-tenants
 
-# To boot a VM on a specific host:
+To boot a VM on a specific host:
+================================
 
-nova boot --nic net-id=<net_id> \
- --image <image_id> \
- --flavor <flavor> \
- --availability-zone nova:<host_name> <vm_name>
+nova boot –nic net-id=  
+–image  
+–flavor  
+–availability-zone nova:
 
-# To stop a server:
+To stop a server:
+=================
 
-nova stop <server>
+nova stop
 
-# To start a server:
+To start a server:
+==================
 
-nova start <server>
+nova start
 
-# To attach a network interface to a specific VM:
+To attach a network interface to a specific VM:
+===============================================
 
-nova interface-attach --net-id <net_id> <server>
+nova interface-attach –net-id

@@ -1,7 +1,9 @@
-# To create a symlink:
+To create a symlink:
+====================
 
-ln -s <source-location> <symlink-location>
+ln -s
 
-# To symlink, while overwriting existing destination files
+To symlink, while overwriting existing destination files
+========================================================
 
-ln -sf <source-location> <symlink-location>
+ln -sf

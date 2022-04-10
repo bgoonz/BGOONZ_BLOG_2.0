@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>replaceall</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="string.prototype.replaceall">String.prototype.replaceAll()</h1>
+<p>The <code>replaceAll()</code> method returns a new string with all matches of a <code>pattern</code> replaced by a <code>replacement</code>. The <code>pattern</code> can be a string or a <a href="../regexp"><code>RegExp</code></a>, and the <code>replacement</code> can be a string or a function to be called for each match.</p>
+<p>The original string is left unchanged.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>replaceAll(regexp, newSubstr)
+replaceAll(regexp, replacerFunction)
+
+replaceAll(substr, newSubstr)
+replaceAll(substr, replacerFunction)</code></pre>
+<p><strong>Note:</strong> When using a `regexp` you have to set the global (“g”) flag; otherwise, it will throw a <code>TypeError</code>: “replaceAll must be called with a global RegExp”.</p>
+<h3 id="parameters">Parameters</h3>
+<p><code>regexp</code> (pattern)<br />
+A <a href="../regexp"><code>RegExp</code></a> object or literal with the global flag. The matches are replaced with <code>newSubstr</code> or the value returned by the specified <code>replacerFunction</code>. A RegExp without the global (“g”) flag will throw a <code>TypeError</code>: “replaceAll must be called with a global RegExp”.</p>
+<p><code>substr</code><br />
+A <a href="../string"><code>String</code></a> that is to be replaced by <code>newSubstr</code>. It is treated as a literal string and is <em>not</em> interpreted as a regular expression.</p>
+<p><code>newSubstr</code> (replacement)<br />
+The <a href="../string"><code>String</code></a> that replaces the substring specified by the specified <code>regexp</code> or <code>substr</code> parameter. A number of special replacement patterns are supported; see the “<a href="#specifying_a_string_as_a_parameter">Specifying a string as a parameter</a>” section below.</p>
+<p><code>replacerFunction</code> (replacement)<br />
+A function to be invoked to create the new substring to be used to replace the matches to the given <code>regexp</code> or <code>substr</code>. The arguments supplied to this function are described in the “<a href="#specifying_a_function_as_a_parameter">Specifying a function as a parameter</a>” section below.</p>
+<h3 id="return-value">Return value</h3>
+<p>A new string, with all matches of a pattern replaced by a replacement.</p>
+<h2 id="description">Description</h2>
+<p>This method does not change the calling <a href="../string"><code>String</code></a> object. It returns a new string.</p>
+<h3 id="specifying-a-string-as-a-parameter">Specifying a string as a parameter</h3>
+<p>The replacement string can include the following special replacement patterns:</p>
+<table>
+<thead>
+<tr class="header">
+<th>
+Pattern
+</th>
+<th>
+Inserts
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<code>$<span class="math inline">$&lt;/code&gt;&lt;/td&gt;&lt;td&gt;Inserts a &lt;code&gt;"$</span>"</code>.
+</td>
+</tr>
+<tr class="even">
+<td>
+<code><span class="math inline">$&amp;amp;&lt;/code&gt;&lt;/td&gt;&lt;td&gt;Inserts the matched substring.&lt;/td&gt;&lt;/tr&gt;&lt;tr class="odd"&gt;&lt;td&gt;&lt;code&gt;$</span>`</code>
+</td>
+<td>
+Inserts the portion of the string that precedes the matched substring.
+</td>
+</tr>
+<tr class="even">
+<td>
+<code><span class="math inline">$'&lt;/code&gt;&lt;/td&gt;&lt;td&gt;Inserts the portion of the string that follows the matched substring.&lt;/td&gt;&lt;/tr&gt;&lt;tr class="odd"&gt;&lt;td&gt;&lt;code&gt;$</span>n</code>
+</td>
+<td>
+Where <code>n</code> is a positive integer less than 100, inserts the <code>n</code>th parenthesized submatch string, provided the first argument was a <a href="../regexp"><code>RegExp</code></a> object. Note that this is <code>1</code>-indexed.
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="specifying-a-function-as-a-parameter">Specifying a function as a parameter</h3>
+<p>You can specify a function as the second parameter. In this case, the function will be invoked after the match has been performed. The function’s result (return value) will be used as the replacement string. (<strong>Note:</strong> The above-mentioned special replacement patterns do <em>not</em> apply in this case.)</p>
+<p>Note that if the first argument of an <code>replaceAll()</code> invocation is a <a href="../regexp"><code>RegExp</code></a> object or regular expression literal, the function will be invoked multiple times.</p>
+<p>The arguments to the function are as follows:</p>
+<table>
+<thead>
+<tr class="header">
+<th>
+Possible name
+</th>
+<th>
+Supplied value
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<code>match</code>
+</td>
+<td>
+The matched substring. (Corresponds to <code>$&amp;</code> above.)
+</td>
+</tr>
+<tr class="even">
+<td>
+<code>p1, p2, …</code>
+</td>
+<td>
+The nth string found by a parenthesized capture group, provided the first argument to <code>replaceAll()</code> was a <a href="../regexp"><code>RegExp</code></a> object. (Corresponds to <code>$1</code>, <code>$2</code>, etc. above.) For example, if <code>/(+)()/</code>, was given, <code>p1</code> is the match for <code>+</code>, and <code>p2</code> for <code></code>.
+</td>
+</tr>
+<tr class="odd">
+<td>
+<code>offset</code>
+</td>
+<td>
+The offset of the matched substring within the whole string being examined. (For example, if the whole string was <code>‘abcd’</code>, and the matched substring was <code>‘bc’</code>, then this argument will be <code>1</code>.)
+</td>
+</tr>
+<tr class="even">
+<td>
+<code>string</code>
+</td>
+<td>
+The whole string being examined.
+</td>
+</tr>
+</tbody>
+</table>
+<p>(The exact number of arguments depends on whether the first argument is a <a href="../regexp"><code>RegExp</code></a> object—and, if so, how many parenthesized submatches it specifies.)</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-replaceall">Using replaceAll</h3>
+<pre><code>&#39;aabbcc&#39;.replaceAll(&#39;b&#39;, &#39;.&#39;);
+// &#39;aa..cc&#39;</code></pre>
+<h3 id="non-global-regex-throws">Non-global regex throws</h3>
+<p>When using a regular expression search value, it must be global. This won’t work:</p>
+<pre><code>&#39;aabbcc&#39;.replaceAll(/b/, &#39;.&#39;);
+TypeError: replaceAll must be called with a global RegExp</code></pre>
+<p>This will work:</p>
+<pre><code>&#39;aabbcc&#39;.replaceAll(/b/g, &#39;.&#39;);
+&quot;aa..cc&quot;</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-string.prototype.replaceall">ECMAScript (ECMA-262) <br/></p>
+<span class="small">The definition of ‘String.prototype.replaceAll’ in that specification.</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>replaceAll</code></p>
+<p>85</p>
+<p>85</p>
+<p>77</p>
+<p>No</p>
+<p>71</p>
+<p>13.1</p>
+<p>85</p>
+<p>85</p>
+<p>79</p>
+<p>60</p>
+<p>13.4</p>
+<p>No</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="replace"><code>String.prototype.replace()</code></a></li>
+<li><a href="match"><code>String.prototype.match()</code></a></li>
+<li><a href="../regexp/exec"><code>RegExp.prototype.exec()</code></a></li>
+<li><a href="../regexp/test"><code>RegExp.prototype.test()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replaceAll" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replaceAll</a></p>
+</body>
+</html>

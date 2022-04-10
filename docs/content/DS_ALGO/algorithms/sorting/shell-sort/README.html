@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="shellsort">Shellsort</h1>
+<p>Shellsort, also known as Shell sort or Shell’s method, is an in-place comparison sort. It can be seen as either a generalization of sorting by exchange (bubble sort) or sorting by insertion (insertion sort). The method starts by sorting pairs of elements far apart from each other, then progressively reducing the gap between elements to be compared. Starting with far apart elements, it can move some out-of-place elements into position faster than a simple nearest neighbor exchange</p>
+<figure>
+<img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Sorting_shellsort_anim.gif" alt="Shellsort" /><figcaption>Shellsort</figcaption>
+</figure>
+<h2 id="how-shell-sort-works">How Shell Sort Works</h2>
+<p>For our example and ease of understanding, we take the interval of <code>4</code>. Make a virtual sub-list of all values located at the interval of 4 positions. Here these values are <code>{35, 14}</code>, <code>{33, 19}</code>, <code>{42, 27}</code> and <code>{10, 44}</code></p>
+<figure>
+<img src="https://www.tutorialspoint.com/data_structures_algorithms/images/shell_sort_gap_4.jpg" alt="Shellsort" /><figcaption>Shellsort</figcaption>
+</figure>
+<p>We compare values in each sub-list and swap them (if necessary) in the original array. After this step, the new array should look like this</p>
+<figure>
+<img src="https://www.tutorialspoint.com/data_structures_algorithms/images/shell_sort_step_1.jpg" alt="Shellsort" /><figcaption>Shellsort</figcaption>
+</figure>
+<p>Then, we take interval of 2 and this gap generates two sub-lists</p>
+<ul>
+<li><code>{14, 27, 35, 42}</code>, <code>{19, 10, 33, 44}</code></li>
+</ul>
+<figure>
+<img src="https://www.tutorialspoint.com/data_structures_algorithms/images/shell_sort_gap_2.jpg" alt="Shellsort" /><figcaption>Shellsort</figcaption>
+</figure>
+<p>We compare and swap the values, if required, in the original array. After this step, the array should look like this</p>
+<figure>
+<img src="https://www.tutorialspoint.com/data_structures_algorithms/images/shell_sort_step_2.jpg" alt="Shellsort" /><figcaption>Shellsort</figcaption>
+</figure>
+<blockquote>
+<p>UPD: On the picture below there is a typo and result array is supposed to be <code>[14, 10, 27, 19, 35, 33, 42, 44]</code>.</p>
+</blockquote>
+<p>Finally, we sort the rest of the array using interval of value 1. Shell sort uses insertion sort to sort the array.</p>
+<figure>
+<img src="https://www.tutorialspoint.com/data_structures_algorithms/images/shell_sort.jpg" alt="Shellsort" /><figcaption>Shellsort</figcaption>
+</figure>
+<h2 id="complexity">Complexity</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Name</th>
+<th style="text-align: center;">Best</th>
+<th style="text-align: center;">Average</th>
+<th style="text-align: center;">Worst</th>
+<th style="text-align: center;">Memory</th>
+<th style="text-align: center;">Stable</th>
+<th style="text-align: left;">Comments</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Shell sort</strong></td>
+<td style="text-align: center;">n log(n)</td>
+<td style="text-align: center;">depends on gap sequence</td>
+<td style="text-align: center;">n (log(n))<sup>2</sup></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://www.tutorialspoint.com/data_structures_algorithms/shell_sort_algorithm.htm">Tutorials Point</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Shellsort">Wikipedia</a></li>
+<li><a href="https://www.youtube.com/watch?v=ddeLSDsYVp8&amp;index=79&amp;list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8">YouTube by Rob Edwards</a></li>
+</ul>
+</body>
+</html>

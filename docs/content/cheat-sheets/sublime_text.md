@@ -1,119 +1,126 @@
-# SUBLIME TEXT 3 CHEATSHEET
+SUBLIME TEXT 3 CHEATSHEET
+=========================
 
-## Access every command with the command palette
+Access every command with the command palette
+---------------------------------------------
 
--   `shift + cmd + P `: Command palette
+-   `shift + cmd + P`: Command palette
 
-## Goto anything
+Goto anything
+-------------
 
--   `cmd + P `: Goto file
+-   `cmd + P`: Goto file
 
--   `ctrl + G `: Goto line
+-   `ctrl + G`: Goto line
 
--   `cmd + P and # `: Fuzzy search
+-   `cmd + P and #`: Fuzzy search
 
--   `cmd + R `: Goto symbol
+-   `cmd + R`: Goto symbol
 
-## Quick selections
+Quick selections
+----------------
 
--   `cmd + D `: Select word
+-   `cmd + D`: Select word
 
--   `cmd + K D `: Skip and add next
+-   `cmd + K D`: Skip and add next
 
--   `cmd + U `: Undo quick select
+-   `cmd + U`: Undo quick select
 
--   `cmd + L `: Select line
+-   `cmd + L`: Select line
 
--   `ctrl + cmd + G `: Select all in file
+-   `ctrl + cmd + G`: Select all in file
 
--   `shift + cmd + space `: Expand selection to scope
+-   `shift + cmd + space`: Expand selection to scope
 
--   `shift + cmd + L `: Split into lines
+-   `shift + cmd + L`: Split into lines
 
-## Edit code
+Edit code
+---------
 
--   `cmd + J `: Join 2 lines
+-   `cmd + J`: Join 2 lines
 
--   `cmd + shift + D `: Duplicate line
+-   `cmd + shift + D`: Duplicate line
 
--   `cmd + shift + R `: Reindent
+-   `cmd + shift + R`: Reindent
 
--   `cmd + shift + K `: Delete line
+-   `cmd + shift + K`: Delete line
 
--   `ctrl + cmd + up/down `: Move line/selection up/down
+-   `ctrl + cmd + up/down`: Move line/selection up/down
 
--   `alt + cmd + V `: Paste from history
+-   `alt + cmd + V`: Paste from history
 
--   `shift + cmd + / `: Comment/uncomment line
+-   `shift + cmd + /`: Comment/uncomment line
 
--   `alt + backspace `: Delete word by word
+-   `alt + backspace`: Delete word by word
 
--   `alt + fn + backspace `: Forward delete word by word
+-   `alt + fn + backspace`: Forward delete word by word
 
--   `cmd + shift + enter `: Insert line before
+-   `cmd + shift + enter`: Insert line before
 
--   `cmd + enter `: Insert line after
+-   `cmd + enter`: Insert line after
 
-## Searching
+Searching
+---------
 
--   `cmd + F `: Search in file
+-   `cmd + F`: Search in file
 
--   `shift + cmd + F `: Search in all files
+-   `shift + cmd + F`: Search in all files
 
--   `<open files> `: where filter
+-   `<open files>`: where filter
 
-## Miscelaneous
+Miscelaneous
+------------
 
--   `alt + cmd + right/left `: Switch open tab
+-   `alt + cmd + right/left`: Switch open tab
 
--   `Indent selection `: Indent selection
+-   `Indent selection`: Indent selection
 
--   `Unindent selection `: Unindent selection
+-   `Unindent selection`: Unindent selection
 
--   `Go to previous cursor position `: Go to previous cursor position
+-   `Go to previous cursor position`: Go to previous cursor position
 
--   `Go to next previous cursor position `: Go to next previous cursor position
+-   `Go to next previous cursor position`: Go to next previous cursor position
 
--   `Build and execute file `: Build and execute file
+-   `Build and execute file`: Build and execute file
 
-## Must have packages
+Must have packages
+------------------
 
 `A file icon, BracketHighlighter, Color Highlighter, Comment-Snippets, DevDocs, EditorConfig, Emmet, File Rename, Git, Git blame, GitGutter, HTML-CSS-JS Prettify, JavaScript Completions, JavaScript Patterns, JavaScript Snippets, LESS, Nodejs, Package Control, Pretty JSON, SideBarEnhancements, SublimeLinter, SublimeLinter-contrib-eslint, Terminal`
 
-## Preferences
+Preferences
+-----------
 
-```js
-{
-"color_scheme": "Packages/User/Color Highlighter/themes/Boxy Ocean.tmTheme",
-"detect_indentation": false,
-"folder_exclude_patterns":
-[
-"node_modules",
-".svn",
-".git",
-".meteor/local"
-],
-"ignored_packages":
-[
-"Vintage"
-],
-"show_definitions": true,
-"theme": "Adaptive.sublime-theme"
-}
-```
+    {
+    "color_scheme": "Packages/User/Color Highlighter/themes/Boxy Ocean.tmTheme",
+    "detect_indentation": false,
+    "folder_exclude_patterns":
+    [
+    "node_modules",
+    ".svn",
+    ".git",
+    ".meteor/local"
+    ],
+    "ignored_packages":
+    [
+    "Vintage"
+    ],
+    "show_definitions": true,
+    "theme": "Adaptive.sublime-theme"
+    }
 
-## Keymap
+Keymap
+------
 
-```js
-[
-    { keys: ['super+v'], command: 'paste_and_indent' },
-    { keys: ['super+shift+v'], command: 'paste' },
-    { keys: ['super+shift+r'], command: 'reindent' },
-    { keys: ['super+h'], command: 'dev_docs_search_selection' }
-];
-```
+    [
+        { keys: ['super+v'], command: 'paste_and_indent' },
+        { keys: ['super+shift+v'], command: 'paste' },
+        { keys: ['super+shift+r'], command: 'reindent' },
+        { keys: ['super+h'], command: 'dev_docs_search_selection' }
+    ];
 
-## Syncing settings with iCloud
+Syncing settings with iCloud
+----------------------------
 
 -   `cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages`
 
@@ -123,7 +130,8 @@
 
 -   `ln -s ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/WebDev/ST3/Plugins/User`
 
-## Restore settings from iCloud
+Restore settings from iCloud
+----------------------------
 
 -   `cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages`
 

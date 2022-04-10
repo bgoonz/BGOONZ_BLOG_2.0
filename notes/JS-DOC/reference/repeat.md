@@ -1,8 +1,10 @@
-# String.prototype.repeat()
+String.prototype.repeat()
+=========================
 
 The `repeat()` method constructs and returns a new string which contains the specified number of copies of the string on which it was called, concatenated together.
 
-## Syntax
+Syntax
+------
 
     repeat(count)
 
@@ -20,7 +22,8 @@ A new string containing the specified number of copies of the given string.
 -   [`RangeError`](../../errors/negative_repetition_count): repeat count must be non-negative.
 -   [`RangeError`](../../errors/resulting_string_too_large): repeat count must be less than infinity and not overflow maximum string size.
 
-## Examples
+Examples
+--------
 
 ### Using repeat()
 
@@ -34,7 +37,8 @@ A new string containing the specified number of copies of the given string.
     ({ toString: () => 'abc', repeat: String.prototype.repeat }).repeat(2)
     // 'abcabc' (repeat() is a generic method)
 
-## Polyfill
+Polyfill
+--------
 
 This method has been added to the ECMAScript 2015 specification and may not be available in all JavaScript implementations yet. However, you can polyfill `String.prototype.repeat()` with the following snippet:
 
@@ -78,14 +82,14 @@ This method has been added to the ECMAScript 2015 specification and may not be a
       }
     }
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.repeat">ECMAScript (ECMA-262) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript (ECMA-262)<br />
+</p><span class="small">The definition of ‘String.prototype.repeat’ in that specification.</span></td></tr></tbody></table>
 
-<span class="small">The definition of 'String.prototype.repeat' in that specification.</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -141,10 +145,10 @@ No
 
 3.0
 
-## See also
+See also
+--------
 
 -   [`String.prototype.concat()`](concat)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat</a>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>patch</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="to-patch-one-file">To patch one file:</h1>
+<p>patch <file> &lt; <patch-file></p>
+<h1 id="to-reverse-a-patch">To reverse a patch:</h1>
+<p>patch -R <file> &lt; <patch-file></p>
+<h1 id="to-patch-all-files-in-a-directory-adding-any-missing-new-files">To patch all files in a directory, adding any missing new files:</h1>
+<h1 id="p-strips-leading-slashes">-p strips leading slashes</h1>
+$ cd dir $ patch -p1 -i
+<dir>
+<p><patch-file></p>
+<h1 id="to-patch-files-in-a-directory-with-one-level-offset">To patch files in a directory, with one level (/) offset:</h1>
+patch -p1 -r
+<dir>
+<p>&lt; <patch-file></p>
+</body>
+</html>

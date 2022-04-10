@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>isnan</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="isnan">isNaN()</h1>
+<p>The <code>isNaN()</code> function determines whether a value is <a href="nan"><code>NaN</code></a> or not. Because coercion inside the <code>isNaN</code> function can be <a href="#confusing_special-case_behavior">surprising</a>, you may alternatively want to use <a href="number/isnan"><code>Number.isNaN()</code></a>.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>isNaN(value)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>value</code><br />
+The value to be tested.</p>
+<h3 id="return-value">Return value</h3>
+<p><code>true</code> if the given value is <a href="nan"><code>NaN</code></a>; otherwise, <code>false</code>.</p>
+<h2 id="description">Description</h2>
+<h3 id="the-necessity-of-an-isnan-function">The necessity of an isNaN function</h3>
+<p>Unlike all other possible values in JavaScript, it is not possible to use the equality operators (== and ===) to compare a value against <a href="nan"><code>NaN</code></a> to determine whether the value <em>is</em> <code>NaN</code> or not, because both <code>NaN == NaN</code> and <code>NaN === NaN</code> evaluate to <code>false</code>. Hence, the necessity of an <code>isNaN</code> function.</p>
+<h3 id="origin-of-nan-values">Origin of NaN values</h3>
+<p><code>NaN</code> values are generated when arithmetic operations result in <em>undefined</em> or <em>unrepresentable</em> values. Such values do not necessarily represent overflow conditions. A <code>NaN</code> also results from attempted coercion to numeric values of non-numeric values for which no primitive numeric value is available.</p>
+<p>For example, dividing zero by zero results in a <code>NaN</code> — but dividing other numbers by zero does not.</p>
+<h3 id="confusing-special-case-behavior">Confusing special-case behavior</h3>
+<p>Since the very earliest versions of the <code>isNaN</code> function specification, its behavior for non-numeric arguments has been confusing. When the argument to the <code>isNaN</code> function is not of type <a href="https://es5.github.com/#x8.5">Number</a>, the value is first coerced to a Number. The resulting value is then tested to determine whether it is <a href="nan"><code>NaN</code></a>. Thus for non-numbers that when coerced to numeric type result in a valid non-NaN numeric value (notably the empty string and boolean primitives, which when coerced give numeric values zero or one), the “false” returned value may be unexpected; the empty string, for example, is surely “not a number.” The confusion stems from the fact that the term, “not a number”, has a specific meaning for numbers represented as IEEE-754 floating-point values. The function should be interpreted as answering the question, “is this value, when coerced to a numeric value, an IEEE-754 ‘Not A Number’ value?”</p>
+<p>ECMAScript 2015 contains the <a href="number/isnan"><code>Number.isNaN()</code></a> function. <code>Number.isNaN(x)</code> is a reliable way to test whether <code>x</code> is <code>NaN</code> or not. Even with <code>Number.isNaN</code>, however, the meaning of <code>NaN</code> remains the precise numeric meaning and not, “not a number”. Alternatively, in the absence of <code>Number.isNaN</code>, the expression <code>(x != x)</code> is a more reliable way to test whether variable <code>x</code> is <code>NaN</code> or not, as the result is not subject to the false positives that make <code>isNaN</code> unreliable.</p>
+<p>A polyfill for <code>isNaN</code> would be (the polyfill leverages the unique never-equal-to-itself characteristic of <code>NaN</code>):</p>
+<pre><code>const isNaN = function(value) {
+    const n = Number(value);
+    return n !== n;
+};</code></pre>
+<h2 id="examples">Examples</h2>
+<pre><code>isNaN(NaN);       // true
+isNaN(undefined); // true
+isNaN({});        // true
+
+isNaN(true);      // false
+isNaN(null);      // false
+isNaN(37);        // false
+
+// strings
+isNaN(&#39;37&#39;);      // false: &quot;37&quot; is converted to the number 37 which is not NaN
+isNaN(&#39;37.37&#39;);   // false: &quot;37.37&quot; is converted to the number 37.37 which is not NaN
+isNaN(&quot;37,5&quot;);    // true
+isNaN(&#39;123ABC&#39;);  // true:  parseInt(&quot;123ABC&quot;) is 123 but Number(&quot;123ABC&quot;) is NaN
+isNaN(&#39;&#39;);        // false: the empty string is converted to 0 which is not NaN
+isNaN(&#39; &#39;);       // false: a string with spaces is converted to 0 which is not NaN
+
+// dates
+isNaN(new Date());                // false
+isNaN(new Date().toString());     // true
+
+// This is a false positive and the reason why isNaN is not entirely reliable
+isNaN(&#39;blabla&#39;);   // true: &quot;blabla&quot; is converted to a number.
+                   // Parsing this as a number fails and returns NaN</code></pre>
+<h3 id="useful-special-case-behavior">Useful special-case behavior</h3>
+<p>There is a more usage oriented way to think of <code>isNaN()</code>: If <code>isNaN(x)</code> returns <code>false</code>, you can use <code>x</code> in an arithmetic expression not making the expression return <code>NaN</code>. If it returns <code>true</code>, <code>x</code> will make every arithmetic expression return <code>NaN</code>. This means that in JavaScript, <code>isNaN(x) == true</code> is equivalent to <code>x - 0</code> returning <code>NaN</code> (though in JavaScript <code>x - 0 == NaN</code> always returns false, so you can’t test for it). Actually, <code>isNaN(x)</code>, <code>isNaN(x - 0)</code>, <code>isNaN(Number(x))</code>, <code>Number.isNaN(x - 0)</code>, and <code>Number.isNaN(Number(x))</code> always return the same and in JavaScript <code>isNaN(x)</code> is just the shortest possible form to express each of these terms.</p>
+<p>You can use this, for example, to test whether an argument to a function is arithmetically processable (usable “like” a number), or if it’s not and you have to provide a default value or something else. This way you can have a function that makes use of the full versatility JavaScript provides by implicitly converting values depending on context.</p>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-isnan-number">ECMAScript (ECMA-262) <br/></p>
+<span class="small">The definition of ‘isNaN’ in that specification.</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>isNaN</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="nan"><code>NaN</code></a></li>
+<li><a href="number/isnan"><code>Number.isNaN()</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN</a></p>
+</body>
+</html>

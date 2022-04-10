@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>deprecated_caller_or_arguments_usage</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="referenceerror-deprecated-caller-or-arguments-usage">ReferenceError: deprecated caller or arguments usage</h1>
+<p>The JavaScript <a href="../strict_mode">strict mode</a>-only exception “deprecated caller or arguments usage” occurs when the deprecated <a href="../global_objects/function/caller"><code>Function.caller</code></a> or <a href="../global_objects/function/arguments"><code>Function.arguments</code></a> properties are used.</p>
+<h2 id="message">Message</h2>
+<pre><code>TypeError: &#39;arguments&#39;, &#39;callee&#39; and &#39;caller&#39; are restricted function properties and cannot be accessed in this context (Edge)
+Warning: ReferenceError: deprecated caller usage (Firefox)
+Warning: ReferenceError: deprecated arguments usage (Firefox)
+TypeError: &#39;callee&#39; and &#39;caller&#39; cannot be accessed in strict mode. (Safari)</code></pre>
+<h2 id="error-type">Error type</h2>
+<p>A strict-mode-only warning that a <a href="../global_objects/referenceerror"><code>ReferenceError</code></a> occurred. JavaScript execution won’t be halted.</p>
+<h2 id="what-went-wrong">What went wrong?</h2>
+<p>In <a href="../strict_mode">strict mode</a>, the <a href="../global_objects/function/caller"><code>Function.caller</code></a> or <a href="../global_objects/function/arguments"><code>Function.arguments</code></a> properties are used and shouldn’t be. They are deprecated, because they leak the function caller, are non-standard, hard to optimize and potentially a performance-harmful feature.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="deprecated-function.caller-or-arguments.callee.caller">Deprecated <code>function.caller</code> or <code>arguments.callee.caller</code></h3>
+<p><a href="../global_objects/function/caller"><code>Function.caller</code></a> and <code>arguments.callee.caller</code> are deprecated (see the reference articles for more information).</p>
+<pre><code>&#39;use strict&#39;;
+
+function myFunc() {
+  if (myFunc.caller == null) {
+    return &#39;The function was called from the top!&#39;;
+  } else {
+    return &#39;This function\&#39;s caller was &#39; + myFunc.caller;
+  }
+}
+
+myFunc();
+// Warning: ReferenceError: deprecated caller usage
+// &quot;The function was called from the top!&quot;</code></pre>
+<h3 id="function.arguments"><code>Function.arguments</code></h3>
+<p><a href="../global_objects/function/arguments"><code>Function.arguments</code></a> is deprecated (see the reference article for more information).</p>
+<pre><code>&#39;use strict&#39;;
+
+function f(n) { g(n - 1); }
+
+function g(n) {
+  console.log(&#39;before: &#39; + g.arguments[0]);
+  if (n &gt; 0) { f(n); }
+  console.log(&#39;after: &#39; + g.arguments[0]);
+}
+
+f(2);
+
+console.log(&#39;returned: &#39; + g.arguments);
+// Warning: ReferenceError: deprecated arguments usage</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Deprecated_and_obsolete_features">Deprecated and obsolete features</a></li>
+<li><a href="../strict_mode">Strict mode</a></li>
+<li><a href="../global_objects/function/arguments"><code>Function.arguments</code></a></li>
+<li><a href="../global_objects/function/caller"><code>Function.caller</code></a> and <code>arguments.callee.caller</code></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Deprecated_caller_or_arguments_usage" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Deprecated_caller_or_arguments_usage</a></p>
+</body>
+</html>

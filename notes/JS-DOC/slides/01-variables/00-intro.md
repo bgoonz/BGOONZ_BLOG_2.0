@@ -1,5 +1,1 @@
----
-title: Variables
-chapter: Variables
----
 

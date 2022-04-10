@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>seal</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="object.seal">Object.seal()</h1>
+<p>The <code>Object.seal()</code> method seals an object, preventing new properties from being added to it and marking all existing properties as non-configurable. Values of present properties can still be changed as long as they are writable.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>Object.seal(obj)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>obj</code><br />
+The object which should be sealed.</p>
+<h3 id="return-value">Return value</h3>
+<p>The object being sealed.</p>
+<h2 id="description">Description</h2>
+<p>By default, objects are <a href="isextensible">extensible</a> (new properties can be added to them). Sealing an object prevents new properties from being added and marks all existing properties as non-configurable. This has the effect of making the set of properties on the object fixed. Making all properties non-configurable also prevents them from being converted from data properties to accessor properties and vice versa, but it does not prevent the values of data properties from being changed. Attempting to delete or add properties to a sealed object, or to convert a data property to accessor or vice versa, will fail, either silently or by throwing a <a href="../typeerror"><code>TypeError</code></a> (most commonly, although not exclusively, when in <a href="../../strict_mode">strict mode</a> code).</p>
+<p>The prototype chain remains untouched. However, the <a href="proto"><code>__proto__</code></a> property is sealed as well.</p>
+<h3 id="comparison-to-object.freeze">Comparison to Object.freeze()</h3>
+<p>Existing properties in objects frozen with <a href="freeze"><code>Object.freeze()</code></a> are made immutable. Objects sealed with <code>Object.seal()</code> can have their existing properties changed.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-object.seal">Using Object.seal</h3>
+<pre><code>var obj = {
+  prop: function() {},
+  foo: &#39;bar&#39;
+};
+
+// New properties may be added, existing properties
+// may be changed or removed.
+obj.foo = &#39;baz&#39;;
+obj.lumpy = &#39;woof&#39;;
+delete obj.prop;
+
+var o = Object.seal(obj);
+
+o === obj; // true
+Object.isSealed(obj); // === true
+
+// Changing property values on a sealed object
+// still works.
+obj.foo = &#39;quux&#39;;
+
+// But you can&#39;t convert data properties to accessors,
+// or vice versa.
+Object.defineProperty(obj, &#39;foo&#39;, {
+  get: function() { return &#39;g&#39;; }
+}); // throws a TypeError
+
+// Now any changes, other than to property values,
+// will fail.
+obj.quaxxor = &#39;the friendly duck&#39;;
+// silently doesn&#39;t add the property
+delete obj.foo;
+// silently doesn&#39;t delete the property
+
+// ...and in strict mode such attempts
+// will throw TypeErrors.
+function fail() {
+  &#39;use strict&#39;;
+  delete obj.foo; // throws a TypeError
+  obj.sparky = &#39;arf&#39;; // throws a TypeError
+}
+fail();
+
+// Attempted additions through
+// Object.defineProperty will also throw.
+Object.defineProperty(obj, &#39;ohai&#39;, {
+  value: 17
+}); // throws a TypeError
+Object.defineProperty(obj, &#39;foo&#39;, {
+  value: &#39;eit&#39;
+}); // changes existing property value</code></pre>
+<h3 id="non-object-coercion">Non-object coercion</h3>
+<p>In ES5, if the argument to this method is not an object (a primitive), then it will cause a <a href="../typeerror"><code>TypeError</code></a>. In ES2015, a non-object argument will be treated as if it was a sealed ordinary object by returning it.</p>
+<pre><code>Object.seal(1);
+// TypeError: 1 is not an object (ES5 code)
+
+Object.seal(1);
+// 1                             (ES2015 code)</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-object.seal">ECMAScript (ECMA-262) <br/></p>
+<span class="small">The definition of ‘Object.seal’ in that specification.</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>seal</code></p>
+<p>6</p>
+<p>12</p>
+<p>4</p>
+<p>9</p>
+<p>12</p>
+<p>5.1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>12</p>
+<p>6</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="issealed"><code>Object.isSealed()</code></a></li>
+<li><a href="preventextensions"><code>Object.preventExtensions()</code></a></li>
+<li><a href="isextensible"><code>Object.isExtensible()</code></a></li>
+<li><a href="freeze"><code>Object.freeze()</code></a></li>
+<li><a href="isfrozen"><code>Object.isFrozen()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/seal" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/seal</a></p>
+</body>
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>React.js (v0.14)</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">React.js (v0.14)</h1>
+</header>
+<p>{%raw%}</p>
+<h3 id="components">Components</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">var</span> Component <span class="op">=</span> <span class="va">React</span>.<span class="at">createClass</span>(<span class="op">{</span></a>
+<a class="sourceLine" id="cb1-2" title="2">    <span class="dt">render</span><span class="op">:</span> <span class="kw">function</span> () <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-3" title="3">        <span class="cf">return</span> <span class="op">&lt;</span>div<span class="op">&gt;</span>Hello <span class="op">{</span><span class="kw">this</span>.<span class="va">props</span>.<span class="at">name</span><span class="op">}</span>&lt;/div<span class="op">&gt;;</span></a>
+<a class="sourceLine" id="cb1-4" title="4">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb1-5" title="5"><span class="op">}</span>)<span class="op">;</span></a></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="va">ReactDOM</span>.<span class="at">render</span>(<span class="op">&lt;</span>Component name<span class="op">=</span><span class="st">&quot;John&quot;</span> /&gt;<span class="op">,</span> <span class="va">document</span>.<span class="at">body</span>)<span class="op">;</span></a></code></pre></div>
+<p>{:.light}</p>
+<p>Use the <a href="http://jsfiddle.net/reactjs/69z2wepo/">React.js jsfiddle</a> to start hacking. (or the unofficial <a href="http://jsbin.com/yafixat/edit?js,output">jsbin</a>)</p>
+<h3 id="nesting">Nesting</h3>
+<div class="sourceCode" id="cb3"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">var</span> UserAvatar  <span class="op">=</span> <span class="va">React</span>.<span class="at">createClass</span>(<span class="op">{</span>...<span class="op">}</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-2" title="2"><span class="kw">var</span> UserProfile <span class="op">=</span> <span class="va">React</span>.<span class="at">createClass</span>(<span class="op">{</span>...<span class="op">}</span>)<span class="op">;</span></a></code></pre></div>
+<p>{:.light}</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb4-1" title="1"><span class="kw">var</span> Info <span class="op">=</span> <span class="va">React</span>.<span class="at">createClass</span>(<span class="op">{</span></a>
+<a class="sourceLine" id="cb4-2" title="2">    <span class="at">render</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb4-3" title="3">        <span class="cf">return</span> (</a>
+<a class="sourceLine" id="cb4-4" title="4">            <span class="op">&lt;</span>div<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb4-5" title="5">                <span class="op">&lt;</span>UserAvatar src<span class="op">={</span><span class="kw">this</span>.<span class="va">props</span>.<span class="at">avatar</span><span class="op">}</span> /&gt;</a>
+<a class="sourceLine" id="cb4-6" title="6">                <span class="op">&lt;</span>UserProfile username<span class="op">={</span><span class="kw">this</span>.<span class="va">props</span>.<span class="at">username</span><span class="op">}</span> /&gt;</a>
+<a class="sourceLine" id="cb4-7" title="7">            &lt;/div<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb4-8" title="8">        )<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-9" title="9">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb4-10" title="10"><span class="op">}</span>)<span class="op">;</span></a></code></pre></div>
+<p>Nest components to separate concerns. See <a href="http://facebook.github.io/react/docs/multiple-components.html">multiple components</a>.</p>
+<h2 id="states-properties">States &amp; Properties</h2>
+<p>{:.center}</p>
+<h3 id="states-and-props">States and props</h3>
+<div class="sourceCode" id="cb5"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">&lt;MyComponent</span><span class="ot"> fullscreen=</span><span class="st">&quot;{true}&quot;</span> <span class="kw">/&gt;</span></a></code></pre></div>
+<p>{:.light}</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb6-1" title="1"><span class="co">// props</span></a>
+<a class="sourceLine" id="cb6-2" title="2">  <span class="kw">this</span>.<span class="va">props</span>.<span class="at">fullscreen</span> <span class="co">//=&gt; true</span></a>
+<a class="sourceLine" id="cb6-3" title="3"></a>
+<a class="sourceLine" id="cb6-4" title="4"><span class="co">// state</span></a>
+<a class="sourceLine" id="cb6-5" title="5">  <span class="kw">this</span>.<span class="at">setState</span>(<span class="op">{</span> <span class="dt">username</span><span class="op">:</span> <span class="st">&#39;rstacruz&#39;</span> <span class="op">}</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb6-6" title="6">  <span class="kw">this</span>.<span class="at">replaceState</span>(<span class="op">{</span> ... <span class="op">}</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb6-7" title="7">  <span class="kw">this</span>.<span class="va">state</span>.<span class="at">username</span> <span class="co">//=&gt; &#39;rstacruz&#39;</span></a></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb7-1" title="1">render<span class="op">:</span> <span class="kw">function</span> () <span class="op">{</span></a>
+<a class="sourceLine" id="cb7-2" title="2">  <span class="cf">return</span> <span class="op">&lt;</span>div className<span class="op">={</span><span class="kw">this</span>.<span class="va">props</span>.<span class="at">fullscreen</span> <span class="op">?</span> <span class="st">&#39;full&#39;</span> : <span class="st">&#39;&#39;</span><span class="op">}&gt;</span></a>
+<a class="sourceLine" id="cb7-3" title="3">    Welcome<span class="op">,</span> <span class="op">{</span><span class="kw">this</span>.<span class="va">state</span>.<span class="at">username</span><span class="op">}</span></a>
+<a class="sourceLine" id="cb7-4" title="4">  &lt;/div<span class="op">&gt;;</span></a>
+<a class="sourceLine" id="cb7-5" title="5"><span class="op">}</span></a></code></pre></div>
+<p>Use <a href="https://facebook.github.io/react/docs/tutorial.html#using-props">props</a> (<code>this.props</code>) to access parameters passed from the parent. Use <a href="https://facebook.github.io/react/docs/tutorial.html#reactive-state">states</a> (<code>this.state</code>) to manage dynamic data.</p>
+<h3 id="setting-defaults">Setting defaults</h3>
+<div class="sourceCode" id="cb8"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb8-1" title="1"><span class="va">React</span>.<span class="at">createClass</span>(<span class="op">{</span></a>
+<a class="sourceLine" id="cb8-2" title="2">  <span class="dt">getInitialState</span><span class="op">:</span> <span class="kw">function</span> () <span class="op">{</span></a>
+<a class="sourceLine" id="cb8-3" title="3">    <span class="cf">return</span> <span class="op">{</span> <span class="dt">comments</span><span class="op">:</span> [] <span class="op">};</span></a>
+<a class="sourceLine" id="cb8-4" title="4">  <span class="op">},</span></a>
+<a class="sourceLine" id="cb8-5" title="5"></a>
+<a class="sourceLine" id="cb8-6" title="6">  <span class="dt">getDefaultProps</span><span class="op">:</span> <span class="kw">function</span> () <span class="op">{</span></a>
+<a class="sourceLine" id="cb8-7" title="7">    <span class="cf">return</span> <span class="op">{</span> <span class="dt">name</span><span class="op">:</span> <span class="st">&quot;Hello&quot;</span> <span class="op">};</span></a>
+<a class="sourceLine" id="cb8-8" title="8">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb8-9" title="9">)<span class="op">;</span></a></code></pre></div>
+<p>Pre-populates <code>this.state.comments</code> and <code>this.props.name</code>.</p>
+<h2 id="components-1">Components</h2>
+<h3 id="component-api">Component API</h3>
+<div class="sourceCode" id="cb9"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb9-1" title="1"><span class="va">ReactDOM</span>.<span class="at">findDOMNode</span>(c)<span class="op">;</span> <span class="co">// 0.14+</span></a>
+<a class="sourceLine" id="cb9-2" title="2"><span class="va">React</span>.<span class="at">findDOMNode</span>(c)<span class="op">;</span> <span class="co">// 0.13</span></a>
+<a class="sourceLine" id="cb9-3" title="3"><span class="va">c</span>.<span class="at">getDOMNode</span>()<span class="op">;</span> <span class="co">// 0.12 below</span></a></code></pre></div>
+<p>{:.light}</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb10-1" title="1"><span class="va">c</span>.<span class="at">forceUpdate</span>()</a>
+<a class="sourceLine" id="cb10-2" title="2"><span class="va">c</span>.<span class="at">isMounted</span>()</a>
+<a class="sourceLine" id="cb10-3" title="3"></a>
+<a class="sourceLine" id="cb10-4" title="4"><span class="va">c</span>.<span class="at">state</span></a>
+<a class="sourceLine" id="cb10-5" title="5"><span class="va">c</span>.<span class="at">props</span></a>
+<a class="sourceLine" id="cb10-6" title="6"></a>
+<a class="sourceLine" id="cb10-7" title="7"><span class="va">c</span>.<span class="at">setState</span>(<span class="op">{</span> ... <span class="op">}</span>)</a>
+<a class="sourceLine" id="cb10-8" title="8"><span class="va">c</span>.<span class="at">replaceState</span>(<span class="op">{</span> ... <span class="op">}</span>)</a>
+<a class="sourceLine" id="cb10-9" title="9"></a>
+<a class="sourceLine" id="cb10-10" title="10"><span class="va">c</span>.<span class="at">setProps</span>(<span class="op">{</span> ... <span class="op">}</span>)       <span class="co">// for deprecation</span></a>
+<a class="sourceLine" id="cb10-11" title="11"><span class="va">c</span>.<span class="at">replaceProps</span>(<span class="op">{</span> ... <span class="op">}</span>)   <span class="co">// for deprecation</span></a>
+<a class="sourceLine" id="cb10-12" title="12"></a>
+<a class="sourceLine" id="cb10-13" title="13"><span class="va">c</span>.<span class="at">refs</span></a></code></pre></div>
+<p>These are methods available for <code>Component</code> instances. See <a href="http://facebook.github.io/react/docs/component-api.html">Component API</a>.</p>
+<h3 id="component-specs">Component specs</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Method</th>
+<th>What</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="http://facebook.github.io/react/docs/component-specs.html#render"><code>render()</code></a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>—-</td>
+<td>—-</td>
+</tr>
+<tr class="odd">
+<td><a href="http://facebook.github.io/react/docs/component-specs.html#getinitialstate"><code>getInitialState()</code></a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a href="http://facebook.github.io/react/docs/component-specs.html#getdefaultprops"><code>getDefaultProps()</code></a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>—-</td>
+<td>—-</td>
+</tr>
+<tr class="even">
+<td><a href="http://facebook.github.io/react/docs/component-specs.html#mixins"><code>mixins: [ ... ]</code></a></td>
+<td>Mixins … <a href="#mixins">more</a></td>
+</tr>
+<tr class="odd">
+<td><a href="http://facebook.github.io/react/docs/component-specs.html#proptypes"><code>propTypes: { ... }</code></a></td>
+<td>Validation … <a href="#property-validation">more</a></td>
+</tr>
+<tr class="even">
+<td><a href="http://facebook.github.io/react/docs/component-specs.html#statics"><code>statics: { ... }</code></a></td>
+<td>Static methods</td>
+</tr>
+<tr class="odd">
+<td><a href="http://facebook.github.io/react/docs/component-specs.html#displayname"><code>displayName: "..."</code></a></td>
+<td>Automatically filled by JSX</td>
+</tr>
+</tbody>
+</table>
+<p>{:.greycode.no-head}</p>
+<p>Methods and properties you can override. See <a href="http://facebook.github.io/react/docs/component-specs.html">component specs</a>.</p>
+<h2 id="lifecycle">Lifecycle</h2>
+<h3 id="mounting">Mounting</h3>
+<div class="line-block"><code>componentWillMount()</code> | Before rendering (no DOM yet) |<br />
+<code>componentDidMount()</code> | After rendering |</div>
+<p>{:.greycode.no-head.lc}</p>
+<p>Before initial rendering occurs. Add your DOM stuff on didMount (events, timers, etc). See <a href="http://facebook.github.io/react/docs/component-specs.html#mounting-componentwillmount">reference</a>.</p>
+<h3 id="updating">Updating</h3>
+<div class="line-block"><code>componentWillReceiveProps</code><em>(newProps={})</em> | Use <code>setState()</code> here |<br />
+<code>shouldComponentUpdate</code><em>(newProps={}, newState={})</em> | Skips <code>render()</code> if returns false |<br />
+<code>componentWillUpdate</code><em>(newProps={}, newState={})</em> | Can’t use <code>setState()</code> here |<br />
+<code>componentDidUpdate</code><em>(prevProps={}, prevState={})</em> | Operate on the DOM here |</div>
+<p>{:.greycode.no-head.lc}</p>
+<p>Called when parents change properties and <code>.setState()</code>. These are not called for initial renders. See <a href="http://facebook.github.io/react/docs/component-specs.html#updating-componentwillreceiveprops">reference</a>.</p>
+<h3 id="unmounting">Unmounting</h3>
+<div class="line-block"><code>componentWillUnmount()</code> | Invoked before DOM removal |</div>
+<p>{:.greycode.no-head.lc}</p>
+<p>Clear your DOM stuff here (probably done on didMount). See <a href="http://facebook.github.io/react/docs/component-specs.html#unmounting-componentwillunmount">reference</a>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="example-loading-data">Example: loading data</h3>
+<div class="sourceCode" id="cb11"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb11-1" title="1"><span class="va">React</span>.<span class="at">createClass</span>(<span class="op">{</span></a>
+<a class="sourceLine" id="cb11-2" title="2">    <span class="dt">componentDidMount</span><span class="op">:</span> <span class="kw">function</span> () <span class="op">{</span></a>
+<a class="sourceLine" id="cb11-3" title="3">        <span class="va">$</span>.<span class="at">get</span>(</a>
+<a class="sourceLine" id="cb11-4" title="4">            <span class="kw">this</span>.<span class="va">props</span>.<span class="at">url</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb11-5" title="5">            <span class="kw">function</span> (data) <span class="op">{</span></a>
+<a class="sourceLine" id="cb11-6" title="6">                <span class="kw">this</span>.<span class="at">setState</span>(data)<span class="op">;</span></a>
+<a class="sourceLine" id="cb11-7" title="7">            <span class="op">}</span>.<span class="at">bind</span>(<span class="kw">this</span>)</a>
+<a class="sourceLine" id="cb11-8" title="8">        )<span class="op">;</span></a>
+<a class="sourceLine" id="cb11-9" title="9">    <span class="op">},</span></a>
+<a class="sourceLine" id="cb11-10" title="10"></a>
+<a class="sourceLine" id="cb11-11" title="11">    <span class="dt">render</span><span class="op">:</span> <span class="kw">function</span> () <span class="op">{</span></a>
+<a class="sourceLine" id="cb11-12" title="12">        <span class="cf">return</span> <span class="op">&lt;</span>CommentList data<span class="op">={</span><span class="kw">this</span>.<span class="va">state</span>.<span class="at">data</span><span class="op">}</span> /&gt;<span class="op">;</span></a>
+<a class="sourceLine" id="cb11-13" title="13">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb11-14" title="14"><span class="op">}</span>)<span class="op">;</span></a></code></pre></div>
+<p>See <a href="http://facebook.github.io/react/tips/initial-ajax.html">initial AJAX data</a>.</p>
+<h2 id="dom-nodes">DOM nodes</h2>
+<h3 id="references">References</h3>
+<div class="sourceCode" id="cb12"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb12-1" title="1"><span class="kw">&lt;input</span><span class="ot"> ref=</span><span class="st">&quot;myInput&quot;</span> <span class="kw">/&gt;</span></a></code></pre></div>
+<p>{:.light}</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb13-1" title="1"><span class="kw">this</span>.<span class="va">refs</span>.<span class="at">myInput</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb13-2" title="2"><span class="va">ReactDOM</span>.<span class="at">findDOMNode</span>(<span class="kw">this</span>.<span class="va">refs</span>.<span class="at">myInput</span>).<span class="at">focus</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb13-3" title="3"><span class="va">ReactDOM</span>.<span class="at">findDOMNode</span>(<span class="kw">this</span>.<span class="va">refs</span>.<span class="at">myInput</span>).<span class="at">value</span><span class="op">;</span></a></code></pre></div>
+<h3 id="dom-events">DOM Events</h3>
+<p>Add attributes like <code>onChange</code>. See <a href="https://facebook.github.io/react/docs/events.html">events</a>.</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb14-1" title="1"><span class="kw">&lt;input</span><span class="ot"> type=</span><span class="st">&quot;text&quot;</span><span class="ot"> value=</span><span class="st">&quot;{this.state.value}&quot;</span><span class="ot"> onChange=</span><span class="st">&quot;{this.handleChange}&quot;</span> <span class="kw">/&gt;</span></a></code></pre></div>
+<p>{:.light}</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb15-1" title="1">handleChange<span class="op">:</span> <span class="kw">function</span>(event) <span class="op">{</span></a>
+<a class="sourceLine" id="cb15-2" title="2">  <span class="kw">this</span>.<span class="at">setState</span>(<span class="op">{</span> <span class="dt">value</span><span class="op">:</span> <span class="va">event</span>.<span class="va">target</span>.<span class="at">value</span> <span class="op">}</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb15-3" title="3"><span class="op">}</span></a></code></pre></div>
+<p>Allows access to DOM nodes. See <a href="http://facebook.github.io/react/docs/more-about-refs.html">References</a>.</p>
+<h3 id="two-way-binding">Two-way binding</h3>
+<div class="sourceCode" id="cb16"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb16-1" title="1">Email: <span class="kw">&lt;input</span><span class="ot"> type=</span><span class="st">&quot;text&quot;</span><span class="ot"> valueLink=</span><span class="st">{this.linkState(</span><span class="er">&#39;email&#39;)}</span> <span class="kw">/&gt;</span></a></code></pre></div>
+<p>{:.light}</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb17-1" title="1"><span class="va">React</span>.<span class="at">createClass</span>(<span class="op">{</span></a>
+<a class="sourceLine" id="cb17-2" title="2">    <span class="dt">mixins</span><span class="op">:</span> [<span class="va">React</span>.<span class="va">addons</span>.<span class="at">LinkedStateMixin</span>]</a>
+<a class="sourceLine" id="cb17-3" title="3"><span class="op">}</span>)<span class="op">;</span></a></code></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb18-1" title="1"><span class="kw">this</span>.<span class="va">state</span>.<span class="at">email</span><span class="op">;</span></a></code></pre></div>
+<p>Use <a href="http://facebook.github.io/react/docs/two-way-binding-helpers.html">LinkedStateMixin</a> for easier two-way binding.</p>
+<h2 id="property-validation">Property validation</h2>
+<h3 id="basic-types">Basic types</h3>
+<div class="sourceCode" id="cb19"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb19-1" title="1"><span class="va">React</span>.<span class="at">createClass</span>(<span class="op">{</span></a>
+<a class="sourceLine" id="cb19-2" title="2">    <span class="dt">propTypes</span><span class="op">:</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb19-3" title="3">        <span class="dt">email</span><span class="op">:</span> <span class="va">React</span>.<span class="va">PropTypes</span>.<span class="at">string</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb19-4" title="4">        <span class="dt">seats</span><span class="op">:</span> <span class="va">React</span>.<span class="va">PropTypes</span>.<span class="at">number</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb19-5" title="5">        <span class="dt">settings</span><span class="op">:</span> <span class="va">React</span>.<span class="va">PropTypes</span>.<span class="at">object</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb19-6" title="6">        <span class="dt">callback</span><span class="op">:</span> <span class="va">React</span>.<span class="va">PropTypes</span>.<span class="at">func</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb19-7" title="7">        <span class="dt">isClosed</span><span class="op">:</span> <span class="va">React</span>.<span class="va">PropTypes</span>.<span class="at">bool</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb19-8" title="8">        <span class="dt">any</span><span class="op">:</span> <span class="va">React</span>.<span class="va">PropTypes</span>.<span class="at">any</span></a>
+<a class="sourceLine" id="cb19-9" title="9">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb19-10" title="10"><span class="op">}</span>)<span class="op">;</span></a></code></pre></div>
+<p>Primitive types: <code>.string</code>, <code>.number</code>, <code>.func</code>, and <code>.bool</code>. See <a href="http://facebook.github.io/react/docs/reusable-components.html#prop-validation">propTypes</a>.</p>
+<h3 id="required-types">Required types</h3>
+<div class="sourceCode" id="cb20"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb20-1" title="1">propTypes<span class="op">:</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb20-2" title="2">  <span class="dt">requiredFunc</span><span class="op">:</span>  <span class="va">React</span>.<span class="va">PropTypes</span>.<span class="va">func</span>.<span class="at">isRequired</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb20-3" title="3">  <span class="dt">requiredAny</span><span class="op">:</span>   <span class="va">React</span>.<span class="va">PropTypes</span>.<span class="va">any</span>.<span class="at">isRequired</span><span class="op">,</span></a></code></pre></div>
+<p>Add <code>.isRequired</code>.</p>
+<h3 id="react-elements">React elements</h3>
+<div class="sourceCode" id="cb21"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb21-1" title="1">propTypes<span class="op">:</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb21-2" title="2">  <span class="dt">element</span><span class="op">:</span>  <span class="va">React</span>.<span class="va">PropTypes</span>.<span class="at">element</span><span class="op">,</span>  <span class="co">// react element</span></a>
+<a class="sourceLine" id="cb21-3" title="3">  <span class="dt">node</span><span class="op">:</span>     <span class="va">React</span>.<span class="va">PropTypes</span>.<span class="at">node</span><span class="op">,</span>     <span class="co">// num, string, element</span></a>
+<a class="sourceLine" id="cb21-4" title="4">                                      <span class="co">// ...or array of those</span></a></code></pre></div>
+<p>Use <code>.element</code>, <code>.node</code>.</p>
+<h3 id="enumerables">Enumerables</h3>
+<pre><code>propTypes: {
+  enum:     React.PropTypes.oneOf([&#39;M&#39;,&#39;F&#39;]),  // enum
+  union:    React.PropTypes.oneOfType([        // any
+              React.PropTypes.string,
+              React.PropTypes.number ]),</code></pre>
+<p>Use <code>.oneOf</code>, <code>.oneOfType</code>.</p>
+<h3 id="arrays-and-objects">Arrays and objects</h3>
+<div class="sourceCode" id="cb23"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb23-1" title="1">propTypes<span class="op">:</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb23-2" title="2">  <span class="dt">array</span><span class="op">:</span>    <span class="va">React</span>.<span class="va">PropTypes</span>.<span class="at">array</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb23-3" title="3">  <span class="dt">arrayOf</span><span class="op">:</span>  <span class="va">React</span>.<span class="va">PropTypes</span>.<span class="at">arrayOf</span>(<span class="va">React</span>.<span class="va">PropTypes</span>.<span class="at">number</span>)<span class="op">,</span></a>
+<a class="sourceLine" id="cb23-4" title="4">  <span class="dt">object</span><span class="op">:</span>   <span class="va">React</span>.<span class="va">PropTypes</span>.<span class="at">object</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb23-5" title="5">  <span class="dt">objectOf</span><span class="op">:</span> <span class="va">React</span>.<span class="va">PropTypes</span>.<span class="at">objectOf</span>(<span class="va">React</span>.<span class="va">PropTypes</span>.<span class="at">number</span>)<span class="op">,</span></a>
+<a class="sourceLine" id="cb23-6" title="6"></a>
+<a class="sourceLine" id="cb23-7" title="7">  <span class="dt">message</span><span class="op">:</span>  <span class="va">React</span>.<span class="va">PropTypes</span>.<span class="at">instanceOf</span>(Message)<span class="op">,</span></a>
+<a class="sourceLine" id="cb23-8" title="8"></a>
+<a class="sourceLine" id="cb23-9" title="9">  <span class="dt">object2</span><span class="op">:</span>  <span class="va">React</span>.<span class="va">PropTypes</span>.<span class="at">shape</span>(<span class="op">{</span></a>
+<a class="sourceLine" id="cb23-10" title="10">    <span class="dt">color</span><span class="op">:</span>  <span class="va">React</span>.<span class="va">PropTypes</span>.<span class="at">string</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb23-11" title="11">    <span class="dt">size</span><span class="op">:</span>   <span class="va">React</span>.<span class="va">PropTypes</span>.<span class="at">number</span></a>
+<a class="sourceLine" id="cb23-12" title="12">  <span class="op">}</span>)<span class="op">,</span></a></code></pre></div>
+<p>Use <code>.array[Of]</code>, <code>.object[Of]</code>, <code>.instanceOf</code>, <code>.shape</code>.</p>
+<h3 id="custom-validation">Custom validation</h3>
+<div class="sourceCode" id="cb24"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb24-1" title="1">propTypes<span class="op">:</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-2" title="2">  <span class="dt">customProp</span><span class="op">:</span> <span class="kw">function</span>(props<span class="op">,</span> propName<span class="op">,</span> componentName) <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-3" title="3">    <span class="cf">if</span> (<span class="op">!</span><span class="ss">/matchme/</span>.<span class="at">test</span>(props[propName])) <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-4" title="4">      <span class="cf">return</span> <span class="kw">new</span> <span class="at">Error</span>(<span class="st">&#39;Validation failed!&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-5" title="5">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb24-6" title="6">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb24-7" title="7"><span class="op">}</span></a></code></pre></div>
+<p>Supply your own function.</p>
+<h2 id="other-features">Other features</h2>
+<h3 id="class-set">Class set</h3>
+<div class="sourceCode" id="cb25"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb25-1" title="1"><span class="kw">var</span> cx <span class="op">=</span> <span class="at">require</span>(<span class="st">&#39;classnames&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb25-2" title="2"></a>
+<a class="sourceLine" id="cb25-3" title="3">render<span class="op">:</span> <span class="kw">function</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb25-4" title="4">  <span class="kw">var</span> classes <span class="op">=</span> <span class="at">cx</span>(<span class="op">{</span></a>
+<a class="sourceLine" id="cb25-5" title="5">    <span class="st">&#39;message&#39;</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb25-6" title="6">    <span class="st">&#39;message-important&#39;</span><span class="op">:</span> <span class="kw">this</span>.<span class="va">props</span>.<span class="at">isImportant</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb25-7" title="7">    <span class="st">&#39;message-read&#39;</span><span class="op">:</span> <span class="kw">this</span>.<span class="va">props</span>.<span class="at">isRead</span></a>
+<a class="sourceLine" id="cb25-8" title="8">  <span class="op">}</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb25-9" title="9"></a>
+<a class="sourceLine" id="cb25-10" title="10">  <span class="cf">return</span> <span class="op">&lt;</span>div className<span class="op">={</span>classes<span class="op">}&gt;</span>Great Scott<span class="op">!</span>&lt;/div<span class="op">&gt;;</span></a>
+<a class="sourceLine" id="cb25-11" title="11"><span class="op">}</span></a></code></pre></div>
+<p>Manipulate DOM classes with <a href="https://www.npmjs.org/package/classnames">classnames</a>, previously known as <code>React.addons.classSet</code>. See <a href="http://facebook.github.io/react/docs/class-name-manipulation.html">Class set</a>.</p>
+<h3 id="propagating-properties">Propagating properties</h3>
+<div class="sourceCode" id="cb26"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb26-1" title="1"><span class="kw">&lt;VideoPlayer</span><span class="ot"> src=</span><span class="st">&quot;video.mp4&quot;</span> <span class="kw">/&gt;</span></a></code></pre></div>
+<p>{:.light}</p>
+<div class="sourceCode" id="cb27"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb27-1" title="1"><span class="kw">var</span> VideoPlayer <span class="op">=</span> <span class="va">React</span>.<span class="at">createClass</span>(<span class="op">{</span></a>
+<a class="sourceLine" id="cb27-2" title="2">    <span class="dt">render</span><span class="op">:</span> <span class="kw">function</span> () <span class="op">{</span></a>
+<a class="sourceLine" id="cb27-3" title="3">        <span class="co">/* propagates src=&quot;...&quot; down to this sub component */</span></a>
+<a class="sourceLine" id="cb27-4" title="4">        <span class="cf">return</span> <span class="op">&lt;</span>VideoEmbed <span class="op">{</span>...<span class="va">this</span>.<span class="at">props</span><span class="op">}</span> controls<span class="op">=</span><span class="st">&quot;false&quot;</span> /&gt;<span class="op">;</span></a>
+<a class="sourceLine" id="cb27-5" title="5">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb27-6" title="6"><span class="op">}</span>)<span class="op">;</span></a></code></pre></div>
+<p>See <a href="http://facebook.github.io/react/docs/transferring-props.html">Transferring props</a>.</p>
+<h3 id="mixins">Mixins</h3>
+<div class="sourceCode" id="cb28"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb28-1" title="1"><span class="kw">var</span> SetIntervalMixin <span class="op">=</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb28-2" title="2">  <span class="dt">componentWillMount</span><span class="op">:</span> <span class="kw">function</span>() <span class="op">{</span> .. <span class="op">}</span></a>
+<a class="sourceLine" id="cb28-3" title="3"><span class="op">}</span></a></code></pre></div>
+<p>{:.light}</p>
+<div class="sourceCode" id="cb29"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb29-1" title="1"><span class="kw">var</span> TickTock <span class="op">=</span> <span class="va">React</span>.<span class="at">createClass</span>(<span class="op">{</span></a>
+<a class="sourceLine" id="cb29-2" title="2">  <span class="dt">mixins</span><span class="op">:</span> [SetIntervalMixin]</a>
+<a class="sourceLine" id="cb29-3" title="3"><span class="op">}</span></a></code></pre></div>
+<p>See <a href="https://facebook.github.io/react/docs/addons.html">addons</a> for some built-in mixins.</p>
+<h2 id="top-level-api"><a href="https://facebook.github.io/react/docs/top-level-api.html">Top level API</a></h2>
+<div class="sourceCode" id="cb30"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb30-1" title="1"><span class="va">React</span>.<span class="at">createClass</span>(<span class="op">{</span> ... <span class="op">}</span>)</a>
+<a class="sourceLine" id="cb30-2" title="2"></a>
+<a class="sourceLine" id="cb30-3" title="3"><span class="va">React</span>.<span class="at">isValidElement</span>(c)</a>
+<a class="sourceLine" id="cb30-4" title="4"></a>
+<a class="sourceLine" id="cb30-5" title="5"><span class="va">ReactDOM</span>.<span class="at">findDOMNode</span>(c) <span class="co">// 0.14+</span></a>
+<a class="sourceLine" id="cb30-6" title="6"><span class="va">ReactDOM</span>.<span class="at">render</span>(<span class="op">&lt;</span>Component /<span class="op">&gt;,</span> domnode<span class="op">,</span> [callback]) <span class="co">// 0.14+</span></a>
+<a class="sourceLine" id="cb30-7" title="7"><span class="va">ReactDOM</span>.<span class="at">unmountComponentAtNode</span>(domnode) <span class="co">// 0.14+</span></a>
+<a class="sourceLine" id="cb30-8" title="8"></a>
+<a class="sourceLine" id="cb30-9" title="9"><span class="va">ReactDOMServer</span>.<span class="at">renderToString</span>(<span class="op">&lt;</span>Component /<span class="op">&gt;</span>) <span class="co">// 0.14+</span></a>
+<a class="sourceLine" id="cb30-10" title="10"><span class="va">ReactDOMServer</span>.<span class="at">renderToStaticMarkup</span>(<span class="op">&lt;</span>Component /<span class="op">&gt;</span>) <span class="co">// 0.14+</span></a></code></pre></div>
+<h2 id="jsx-patterns">JSX patterns</h2>
+<h3 id="style-shorthand">Style shorthand</h3>
+<div class="sourceCode" id="cb31"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb31-1" title="1"><span class="kw">var</span> style <span class="op">=</span> <span class="op">{</span> <span class="dt">backgroundImage</span><span class="op">:</span> <span class="st">&#39;url(x.jpg)&#39;</span><span class="op">,</span> <span class="dt">height</span><span class="op">:</span> <span class="dv">10</span> <span class="op">};</span></a>
+<a class="sourceLine" id="cb31-2" title="2"><span class="cf">return</span> <span class="op">&lt;</span>div style<span class="op">={</span>style<span class="op">}&gt;</span>&lt;/div<span class="op">&gt;;</span></a></code></pre></div>
+<p>See <a href="https://facebook.github.io/react/tips/inline-styles.html">inline styles</a>.</p>
+<h3 id="innerhtml">InnerHTML</h3>
+<hr />
+<div class="sourceCode" id="cb32"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb32-1" title="1"><span class="kw">function</span> <span class="at">markdownify</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb32-2" title="2">    <span class="cf">return</span> <span class="st">&#39;&lt;p&gt;...&lt;/p&gt;&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb32-3" title="3"><span class="op">}</span></a>
+<a class="sourceLine" id="cb32-4" title="4"><span class="op">&lt;</span>div dangerouslySetInnerHTML<span class="op">={{</span> <span class="dt">__html</span><span class="op">:</span> <span class="at">markdownify</span>() <span class="op">}}</span> /&gt;<span class="op">;</span></a></code></pre></div>
+<p>See <a href="https://facebook.github.io/react/tips/dangerously-set-inner-html.html">dangerously set innerHTML</a>.</p>
+<h3 id="lists">Lists</h3>
+<div class="sourceCode" id="cb33"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb33-1" title="1"><span class="kw">var</span> TodoList <span class="op">=</span> <span class="va">React</span>.<span class="at">createClass</span>(<span class="op">{</span></a>
+<a class="sourceLine" id="cb33-2" title="2">    <span class="dt">render</span><span class="op">:</span> <span class="kw">function</span> () <span class="op">{</span></a>
+<a class="sourceLine" id="cb33-3" title="3">        <span class="kw">function</span> <span class="at">item</span>(itemText) <span class="op">{</span></a>
+<a class="sourceLine" id="cb33-4" title="4">            <span class="cf">return</span> <span class="op">&lt;</span>li<span class="op">&gt;{</span>itemText<span class="op">}</span>&lt;/li<span class="op">&gt;;</span></a>
+<a class="sourceLine" id="cb33-5" title="5">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb33-6" title="6">        <span class="cf">return</span> <span class="op">&lt;</span>ul<span class="op">&gt;{</span><span class="kw">this</span>.<span class="va">props</span>.<span class="va">items</span>.<span class="at">map</span>(item)<span class="op">}</span>&lt;/ul<span class="op">&gt;;</span></a>
+<a class="sourceLine" id="cb33-7" title="7">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb33-8" title="8"><span class="op">}</span>)<span class="op">;</span></a></code></pre></div>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="http://facebook.github.io/react/docs/animation.html">Animations</a> {%endraw%}</li>
+</ul>
+</body>
+</html>

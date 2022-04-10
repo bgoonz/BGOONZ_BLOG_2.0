@@ -1,8 +1,10 @@
-# Destructuring assignment
+Destructuring assignment
+========================
 
 The **destructuring assignment** syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
 
-## Syntax
+Syntax
+------
 
     let a, b, rest;
     [a, b] = [10, 20];
@@ -24,9 +26,10 @@ The **destructuring assignment** syntax is a JavaScript expression that makes it
     console.log(b); // 20
     console.log(rest); // {c: 30, d: 40}
 
-## Description
+Description
+-----------
 
-The object and array literal expressions provide an easy way to create _ad hoc_ packages of data.
+The object and array literal expressions provide an easy way to create *ad hoc* packages of data.
 
     const x = [1, 2, 3, 4, 5];
 
@@ -46,7 +49,8 @@ Similarly, you can destructure arrays on the left-hand side of the assignment
 
 This capability is similar to features present in languages such as Perl and Python.
 
-## Examples
+Examples
+--------
 
 ### Array destructuring
 
@@ -61,7 +65,7 @@ This capability is similar to features present in languages such as Perl and Pyt
 
 #### Assignment separate from declaration
 
-A variable can be assigned its value via destructuring, separate from the variable's declaration.
+A variable can be assigned its value via destructuring, separate from the variable’s declaration.
 
     let a, b;
 
@@ -98,7 +102,7 @@ Without destructuring assignment, swapping two values requires a temporary varia
 
 #### Parsing an array returned from a function
 
-It's always been possible to return an array from a function. Destructuring can make working with an array return value more concise.
+It’s always been possible to return an array from a function. Destructuring can make working with an array return value more concise.
 
 In this example, `f()` returns the values `[1, 2]` as its output, which can be parsed in a single line with destructuring.
 
@@ -113,7 +117,7 @@ In this example, `f()` returns the values `[1, 2]` as its output, which can be p
 
 #### Ignoring some returned values
 
-You can ignore return values that you're not interested in:
+You can ignore return values that you’re not interested in:
 
     function f() {
       return [1, 2, 3];
@@ -147,7 +151,7 @@ Be aware that a [`SyntaxError`](../global_objects/syntaxerror) will be thrown if
 
 #### Unpacking values from a regular expression match
 
-When the regular expression ` exec()` method finds a match, it returns an array containing first the entire matched portion of the string and then the portions of the string that matched each parenthesized group in the regular expression. Destructuring assignment allows you to unpack the parts out of this array easily, ignoring the full match if it is not needed.
+When the regular expression `exec()` method finds a match, it returns an array containing first the entire matched portion of the string and then the portions of the string that matched each parenthesized group in the regular expression. Destructuring assignment allows you to unpack the parts out of this array easily, ignoring the full match if it is not needed.
 
     function parseProtocol(url) {
       const parsedURL = /^(\w+)\:\/\/([^\/]+)\/(.*)$/.exec(url);
@@ -254,7 +258,7 @@ A property can be both
 
 This unpacks the `id`, `displayName` and `firstName` from the user object and prints them.
 
-#### Setting a function parameter's default value
+#### Setting a function parameter’s default value
 
     function drawChart({size = 'big', coords = {x: 0, y: 0}, radius = 25} = {}) {
       console.log(size, coords, radius);
@@ -377,12 +381,11 @@ When deconstructing an object, if a property is not accessed in itself, it will 
     // self "123"
     // prot "456" (Access to the prototype chain)
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-destructuring-assignment">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-destructuring-assignment</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-destructuring-assignment</span></td></tr></tbody></table>
 
 `Destructuring_assignment`
 
@@ -494,11 +497,11 @@ No
 
 8.0
 
-## See also
+See also
+--------
 
 -   [Assignment operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Assignment_operators)
--   ["ES6 in Depth: Destructuring" on hacks.mozilla.org](https://hacks.mozilla.org/2015/05/es6-in-depth-destructuring/)
+-   [“ES6 in Depth: Destructuring” on hacks.mozilla.org](https://hacks.mozilla.org/2015/05/es6-in-depth-destructuring/)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment</a>

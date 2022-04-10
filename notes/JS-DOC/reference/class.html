@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>class</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="class-expression">class expression</h1>
+<p>The <strong>class expression</strong> is one way to define a class in ECMAScript 2015. Similar to <a href="function">function expressions</a>, class expressions can be named or unnamed. If named, the name of the class is local to the class body only.</p>
+<p>JavaScript classes use prototype-based inheritance.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>const MyClass = class [className] [extends otherClassName] {
+    // class body
+};</code></pre>
+<h2 id="description">Description</h2>
+<p>A class expression has a similar syntax to a <a href="../statements/class">class declaration (statement)</a>. As with <code>class</code> statements, the body of a <code>class</code> expression is executed in <a href="../strict_mode">strict mode</a>.</p>
+<p>There are several differences between class expressions and <a href="../statements/class">class statements</a>, however:</p>
+<ul>
+<li>Class expressions may omit the class name (“binding identifier”), which is not possible with <a href="../statements/class">class statements</a>.</li>
+<li>Class expressions allow you to redefine (re-declare) classes <strong>without throwing</strong> a <a href="../global_objects/syntaxerror"><code>SyntaxError</code></a>. This is not the case with <a href="../statements/class">class statements</a>.</li>
+</ul>
+<p>The <code>constructor</code> method is optional. Classes generated with class expressions will always respond to <a href="typeof"><code>typeof</code></a> with the value “<code>function</code>”.</p>
+<pre><code>&#39;use strict&#39;;
+let Foo = class {};  // constructor property is optional
+Foo = class {};      // Re-declaration is allowed
+
+typeof Foo;             // returns &quot;function&quot;
+typeof class {};        // returns &quot;function&quot;
+
+Foo instanceof Object;   // true
+Foo instanceof Function; // true
+class Foo {}            // Throws SyntaxError (class declarations do not allow re-declaration)</code></pre>
+<h2 id="examples">Examples</h2>
+<h3 id="a-simple-class-expression">A simple class expression</h3>
+<p>This is just a simple anonymous class expression which you can refer to using the variable <code>Foo</code>.</p>
+<pre><code>const Foo = class {
+  constructor() {}
+  bar() {
+    return &#39;Hello World!&#39;;
+  }
+};
+
+const instance = new Foo();
+instance.bar();  // &quot;Hello World!&quot;
+Foo.name;        // &quot;Foo&quot;</code></pre>
+<h3 id="named-class-expressions">Named class expressions</h3>
+<p>If you want to refer to the current class inside the class body, you can create a <em>named class expression</em>. The name is only visible within the scope of the class expression itself.</p>
+<pre><code>const Foo = class NamedFoo {
+  constructor() {}
+  whoIsThere() {
+    return NamedFoo.name;
+  }
+}
+const bar = new Foo();
+bar.whoIsThere();  // &quot;NamedFoo&quot;
+NamedFoo.name;     // ReferenceError: NamedFoo is not defined
+Foo.name;          // &quot;NamedFoo&quot;</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-class-definitions">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-class-definitions</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>class</code></p>
+<p>42</p>
+<p>13</p>
+<p>45</p>
+<p>No</p>
+<p>29</p>
+<p>7</p>
+<p>42</p>
+<p>42</p>
+<p>45</p>
+<p>29</p>
+<p>7</p>
+<p>4.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="function">function expression</a></li>
+<li><a href="../statements/class">class declaration</a></li>
+<li><a href="../classes">Classes</a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/class" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/class</a></p>
+</body>
+</html>

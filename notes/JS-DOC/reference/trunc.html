@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>trunc</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="math.trunc">Math.trunc()</h1>
+<p>The <code>Math.trunc()</code> function returns the integer part of a number by removing any fractional digits.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>Math.trunc(x)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>x</code><br />
+A number.</p>
+<h3 id="return-value">Return value</h3>
+<p>The integer part of the given number.</p>
+<h2 id="description">Description</h2>
+<p>Unlike the other three <code>Math</code> methods: <a href="floor"><code>Math.floor()</code></a>, <a href="ceil"><code>Math.ceil()</code></a> and <a href="round"><code>Math.round()</code></a>, the way <code>Math.trunc()</code> works is very simple. It <em>truncates</em> (cuts off) the dot and the digits to the right of it, no matter whether the argument is a positive or negative number.</p>
+<p>The argument passed to this method will be converted to number type implicitly.</p>
+<p>Because <code>trunc()</code> is a static method of <code>Math</code>, you always use it as <code>Math.trunc()</code>, rather than as a method of a <code>Math</code> object you created (<code>Math</code> is not a constructor).</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-math.trunc">Using Math.trunc()</h3>
+<pre><code>Math.trunc(13.37);    // 13
+Math.trunc(42.84);    // 42
+Math.trunc(0.123);    //  0
+Math.trunc(-0.123);   // -0
+Math.trunc(&#39;-1.123&#39;); // -1
+Math.trunc(NaN);      // NaN
+Math.trunc(&#39;foo&#39;);    // NaN
+Math.trunc();         // NaN</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-math.trunc">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-math.trunc</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>trunc</code></p>
+<p>38</p>
+<p>12</p>
+<p>25</p>
+<p>No</p>
+<p>25</p>
+<p>8</p>
+<p>38</p>
+<p>38</p>
+<p>25</p>
+<p>25</p>
+<p>8</p>
+<p>3.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="https://github.com/behnammodi/polyfill/blob/master/math.polyfill.js">A polyfill</a></li>
+<li><a href="abs"><code>Math.abs()</code></a></li>
+<li><a href="ceil"><code>Math.ceil()</code></a></li>
+<li><a href="floor"><code>Math.floor()</code></a></li>
+<li><a href="round"><code>Math.round()</code></a></li>
+<li><a href="sign"><code>Math.sign()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/trunc" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/trunc</a></p>
+</body>
+</html>

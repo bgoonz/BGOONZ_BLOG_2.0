@@ -1,8 +1,10 @@
-# Math.sin()
+Math.sin()
+==========
 
 The `Math.sin()` function returns the sine of a number.
 
-## Syntax
+Syntax
+------
 
     Math.sin(x)
 
@@ -15,13 +17,15 @@ A number (given in radians).
 
 The sine of the given number.
 
-## Description
+Description
+-----------
 
 The `Math.sin()` method returns a numeric value between -1 and 1, which represents the sine of the angle given in radians.
 
 Because `sin()` is a static method of `Math`, you always use it as `Math.sin()`, rather than as a method of a `Math` object you created (`Math` is not a constructor).
 
-## Examples
+Examples
+--------
 
 ### Using Math.sin()
 
@@ -30,14 +34,14 @@ Because `sin()` is a static method of `Math`, you always use it as `Math.sin()`,
 
     Math.sin(Math.PI / 2); // 1
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.sin">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-math.sin</span></td></tr></tbody></table>
 
-<span class="small">#sec-math.sin</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -93,7 +97,8 @@ Samsung Internet
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`Math.acos()`](acos)
 -   [`Math.asin()`](asin)
@@ -102,6 +107,5 @@ Samsung Internet
 -   [`Math.cos()`](cos)
 -   [`Math.tan()`](tan)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sin" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sin</a>

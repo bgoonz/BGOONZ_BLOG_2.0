@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>math</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="math">Math</h1>
+<p><code>Math</code> is a built-in object that has properties and methods for mathematical constants and functions. It’s not a function object.</p>
+<p><code>Math</code> works with the <a href="number"><code>Number</code></a> type. It doesn’t work with <a href="bigint"><code>BigInt</code></a>.</p>
+<h2 id="description">Description</h2>
+<p>Unlike many other global objects, <code>Math</code> is not a constructor. All properties and methods of <code>Math</code> are static. You refer to the constant pi as <code>Math.PI</code> and you call the sine function as <code>Math.sin(x)</code>, where <code>x</code> is the method’s argument. Constants are defined with the full precision of real numbers in JavaScript.</p>
+<p><strong>Note:</strong> Many <code>Math</code> functions have a precision that’s <em>implementation-dependent.</em></p>
+<p>This means that different browsers can give a different result. Even the same JavaScript engine on a different OS or architecture can give different results!</p>
+<h2 id="static-properties">Static properties</h2>
+<p><a href="math/e"><code>Math.E</code></a><br />
+Euler’s constant and the base of natural logarithms; approximately <code>2.718</code>.</p>
+<p><a href="math/ln2"><code>Math.LN2</code></a><br />
+Natural logarithm of <code>2</code>; approximately <code>0.693</code>.</p>
+<p><a href="math/ln10"><code>Math.LN10</code></a><br />
+Natural logarithm of <code>10</code>; approximately <code>2.303</code>.</p>
+<p><a href="math/log2e"><code>Math.LOG2E</code></a><br />
+Base-2 logarithm of <code>E</code>; approximately <code>1.443</code>.</p>
+<p><a href="math/log10e"><code>Math.LOG10E</code></a><br />
+Base-10 logarithm of <code>E</code>; approximately <code>0.434</code>.</p>
+<p><a href="math/pi"><code>Math.PI</code></a><br />
+Ratio of the a circle’s circumference to its diameter; approximately <code>3.14159</code>.</p>
+<p><a href="math/sqrt1_2"><code>Math.SQRT1_2</code></a><br />
+Square root of ½ (or equivalently, <sup>1</sup>/<sub>√2</sub>); approximately <code>0.707</code>.</p>
+<p><a href="math/sqrt2"><code>Math.SQRT2</code></a><br />
+Square root of <code>2</code>; approximately <code>1.414</code>.</p>
+<h2 id="static-methods">Static methods</h2>
+<p><a href="math/abs"><code>Math.abs(x)</code></a><br />
+Returns the absolute value of <code>x</code>.</p>
+<p><a href="math/acos"><code>Math.acos(x)</code></a><br />
+Returns the arccosine of <code>x</code>.</p>
+<p><a href="math/acosh"><code>Math.acosh(x)</code></a><br />
+Returns the hyperbolic arccosine of <code>x</code>.</p>
+<p><a href="math/asin"><code>Math.asin(x)</code></a><br />
+Returns the arcsine of <code>x</code>.</p>
+<p><a href="math/asinh"><code>Math.asinh(x)</code></a><br />
+Returns the hyperbolic arcsine of a number.</p>
+<p><a href="math/atan"><code>Math.atan(x)</code></a><br />
+Returns the arctangent of <code>x</code>.</p>
+<p><a href="math/atanh"><code>Math.atanh(x)</code></a><br />
+Returns the hyperbolic arctangent of <code>x</code>.</p>
+<p><a href="math/atan2"><code>Math.atan2(y, x)</code></a><br />
+Returns the arctangent of the quotient of its arguments.</p>
+<p><a href="math/cbrt"><code>Math.cbrt(x)</code></a><br />
+Returns the cube root of <code>x</code>.</p>
+<p><a href="math/ceil"><code>Math.ceil(x)</code></a><br />
+Returns the smallest integer greater than or equal to <code>x</code>.</p>
+<p><a href="math/clz32"><code>Math.clz32(x)</code></a><br />
+Returns the number of leading zero bits of the 32-bit integer <code>x</code>.</p>
+<p><a href="math/cos"><code>Math.cos(x)</code></a><br />
+Returns the cosine of <code>x</code>.</p>
+<p><a href="math/cosh"><code>Math.cosh(x)</code></a><br />
+Returns the hyperbolic cosine of <code>x</code>.</p>
+<p><a href="math/exp"><code>Math.exp(x)</code></a><br />
+Returns <code>Ex</code>, where <code>x</code> is the argument, and <code>E</code> is Euler’s constant (<code>2.718</code>…, the base of the natural logarithm).</p>
+<p><a href="math/expm1"><code>Math.expm1(x)</code></a><br />
+Returns subtracting <code>1</code> from <code>exp(x)</code>.</p>
+<p><a href="math/floor"><code>Math.floor(x)</code></a><br />
+Returns the largest integer less than or equal to <code>x</code>.</p>
+<p><a href="math/fround"><code>Math.fround(x)</code></a><br />
+Returns the nearest <a href="https://en.wikipedia.org/wiki/Single-precision_floating-point_format">single precision</a> float representation of <code>x</code>.</p>
+<p><a href="math/hypot"><code>Math.hypot([x[, y[, …]]])</code></a><br />
+Returns the square root of the sum of squares of its arguments.</p>
+<p><a href="math/imul"><code>Math.imul(x, y)</code></a><br />
+Returns the result of the 32-bit integer multiplication of <code>x</code> and <code>y</code>.</p>
+<p><a href="math/log"><code>Math.log(x)</code></a><br />
+Returns the natural logarithm (㏒<sub>e</sub>; also, ㏑) of <code>x</code>.</p>
+<p><a href="math/log1p"><code>Math.log1p(x)</code></a><br />
+Returns the natural logarithm (㏒<sub>e</sub>; also ㏑) of <code>1 + x</code> for the number <code>x</code>.</p>
+<p><a href="math/log10"><code>Math.log10(x)</code></a><br />
+Returns the base-10 logarithm of <code>x</code>.</p>
+<p><a href="math/log2"><code>Math.log2(x)</code></a><br />
+Returns the base-2 logarithm of <code>x</code>.</p>
+<p><a href="math/max"><code>Math.max([x[, y[, …]]])</code></a><br />
+Returns the largest of zero or more numbers.</p>
+<p><a href="math/min"><code>Math.min([x[, y[, …]]])</code></a><br />
+Returns the smallest of zero or more numbers.</p>
+<p><a href="math/pow"><code>Math.pow(x, y)</code></a><br />
+Returns base <code>x</code> to the exponent power <code>y</code> (that is, <code>xy</code>).</p>
+<p><a href="math/random"><code>Math.random()</code></a><br />
+Returns a pseudo-random number between <code>0</code> and <code>1</code>.</p>
+<p><a href="math/round"><code>Math.round(x)</code></a><br />
+Returns the value of the number <code>x</code> rounded to the nearest integer.</p>
+<p><a href="math/sign"><code>Math.sign(x)</code></a><br />
+Returns the sign of the <code>x</code>, indicating whether <code>x</code> is positive, negative, or zero.</p>
+<p><a href="math/sin"><code>Math.sin(x)</code></a><br />
+Returns the sine of <code>x</code>.</p>
+<p><a href="math/sinh"><code>Math.sinh(x)</code></a><br />
+Returns the hyperbolic sine of <code>x</code>.</p>
+<p><a href="math/sqrt"><code>Math.sqrt(x)</code></a><br />
+Returns the positive square root of <code>x</code>.</p>
+<p><a href="math/tan"><code>Math.tan(x)</code></a><br />
+Returns the tangent of <code>x</code>.</p>
+<p><a href="math/tanh"><code>Math.tanh(x)</code></a><br />
+Returns the hyperbolic tangent of <code>x</code>.</p>
+<p><a href="math/trunc"><code>Math.trunc(x)</code></a><br />
+Returns the integer portion of <code>x</code>, removing any fractional digits.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="converting-between-degrees-and-radians">Converting between degrees and radians</h3>
+<p>The trigonometric functions <code>sin()</code>, <code>cos()</code>, <code>tan()</code>, <code>asin()</code>, <code>acos()</code>, <code>atan()</code>, and <code>atan2()</code> expect (and return) angles in <em>radians</em>.</p>
+<p>Since humans tend to think in degrees, and some functions (such as CSS transforms) can accept degrees, it is a good idea to keep functions handy that convert between the two:</p>
+<pre><code>function degToRad(degrees) {
+  return degrees * (Math.PI / 180);
+};
+
+function radToDeg(rad) {
+  return rad / (Math.PI / 180);
+};</code></pre>
+<h3 id="calculating-the-height-of-an-equilateral-triangle">Calculating the height of an equilateral triangle</h3>
+<p>If we want to calculate the height of an equilateral triangle, and we know its side length is 100, we can use the formulae <em>length of the adjacent multiplied by the tangent of the angle is equal to the opposite.</em></p>
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAACmCAMAAACoeDCGAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAJnUExURf///9/f3x8fH19fX+/v77+/vz8/PwAAAICAgH9/fw8PDxAQEJ+fn///18/Pz/f//6+vr8/3/09PT///94+Pj29vb0cAAE8AAJ/X+C8vLzAwMP//5wBIpkcAR//319j//wAAR///7+///5fW9wAAT6dHAAAAc4/P9V8AANf3/y+g1f//39enRwAAL6fZ+KcvAMTx/wAvnp8vAPTPladPAJxMAPfv79ieSKzL2ezFke3x+U2n128AAP/qv//vzNy/oAAAitenTy+T0gAvfOf//rPR7Pbn15MAAM+1kLuPTBcXF2Kn1//fp9+nTc6PL/f/1ue+ddOmdIfJ76fM5/vXpXG55o2300ef1i8ALwBPpwAvp2+XvoyrxC8AAACP09T39vX3/9WZL9nu/PffuZPB48Hj+793ALHn/79vAItLAMmfX9fZ1+fTuf/v17mjg6PCyi9PcwBns4cAAPf783cAAABzv7qnpP/nrYcvANfPswBfoZe91a+np//338LV7dHj658AAF+PpwCJxwAAX6SqpP/3z8/t/6eiktqnX0cAL8end9XS1a+KbI9UdN/3//fv5826ooePnE+Pv82UR3et1XQvAL/H37m5uikpKc/n9wYGBu2/fPX/5XRMQsW/zy9LT18vAKJsP09HL6ers//380+nzUtLd3d/cy+Lw+vj44drT3dPdwAvL5Orq1dPXwBHk5dfANf32+v/1wAAl6OTT+fDp0+r30tLAIx8jHe/72NjY0cvAG8AX0cAby93r2+fvy9HLwBPh9/f5wBHby+atceHAMe3v19fd9eXAE9fL0dPVwAvT0+PlxgK/IcAAApOSURBVHja7VwHW9vIFh03rh1j3DY2YGNs00yvCRBKIEsCCSS7SUjbTSC9974pm82mbnp92WySfZvtvbfXe38/6o0sA8bIlkYaWaM87veBi0CfjnTm3HuuRoPQdEzHdEzHdKTGBf+BxLvFwRdWu9P/ofeqk2kgL0I4cfSLGw+9HU3/hw4oZhmHt+ls5wr8egX23w8+/rkYzfXB/ovIewXgD07uw8vO6uvn/bAysAOer2QYSBc0LGl0olY4OQBrMLWOwb0FX69Bl6FtLlS0w8pX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" width="200" height="166" /></p>
+<p>In JavaScript, we can do this with the following:</p>
+<pre><code>50 * Math.tan(degToRad(60)).</code></pre>
+<p>We use our <code>degToRad()</code> function to convert 60 degrees to radians, as <a href="math/tan"><code>Math.tan()</code></a> expects an input value in radians.</p>
+<h3 id="returning-a-random-integer-between-two-bounds">Returning a random integer between two bounds</h3>
+<p>This can be achieved with a combination of <a href="math/random"><code>Math.random()</code></a> and <a href="math/floor"><code>Math.floor()</code></a>:</p>
+<pre><code>function random(min, max) {
+  const num = Math.floor(Math.random() * (max - min + 1)) + min;
+  return num;
+}
+
+random(1, 10);</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-math-object">ECMAScript (ECMA-262) <br/></p>
+<span class="small">The definition of ‘Math’ in that specification.</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>E</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>LN2</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>LN10</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>LOG2E</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>LOG10E</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>PI</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>SQRT1_2</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>SQRT2</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>abs</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>acos</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>acosh</code></p>
+<p>38</p>
+<p>12</p>
+<p>25</p>
+<p>No</p>
+<p>25</p>
+<p>8</p>
+<p>38</p>
+<p>38</p>
+<p>25</p>
+<p>25</p>
+<p>8</p>
+<p>3.0</p>
+<p><code>asin</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>asinh</code></p>
+<p>38</p>
+<p>12</p>
+<p>25</p>
+<p>No</p>
+<p>25</p>
+<p>8</p>
+<p>38</p>
+<p>38</p>
+<p>25</p>
+<p>25</p>
+<p>8</p>
+<p>3.0</p>
+<p><code>atan</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>atan2</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>4</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>atanh</code></p>
+<p>38</p>
+<p>12</p>
+<p>25</p>
+<p>No</p>
+<p>25</p>
+<p>8</p>
+<p>38</p>
+<p>38</p>
+<p>25</p>
+<p>25</p>
+<p>8</p>
+<p>3.0</p>
+<p><code>cbrt</code></p>
+<p>38</p>
+<p>12</p>
+<p>25</p>
+<p>No</p>
+<p>25</p>
+<p>8</p>
+<p>38</p>
+<p>38</p>
+<p>25</p>
+<p>25</p>
+<p>8</p>
+<p>3.0</p>
+<p><code>ceil</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>clz32</code></p>
+<p>38</p>
+<p>12</p>
+<p>31</p>
+<p>No</p>
+<p>25</p>
+<p>7</p>
+<p>38</p>
+<p>38</p>
+<p>31</p>
+<p>25</p>
+<p>7</p>
+<p>3.0</p>
+<p><code>cos</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>cosh</code></p>
+<p>38</p>
+<p>12</p>
+<p>25</p>
+<p>No</p>
+<p>25</p>
+<p>8</p>
+<p>38</p>
+<p>38</p>
+<p>25</p>
+<p>25</p>
+<p>8</p>
+<p>3.0</p>
+<p><code>exp</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>expm1</code></p>
+<p>38</p>
+<p>12</p>
+<p>25</p>
+<p>No</p>
+<p>25</p>
+<p>8</p>
+<p>38</p>
+<p>38</p>
+<p>25</p>
+<p>25</p>
+<p>8</p>
+<p>3.0</p>
+<p><code>floor</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>fround</code></p>
+<p>38</p>
+<p>12</p>
+<p>26</p>
+<p>No</p>
+<p>25</p>
+<p>8</p>
+<p>38</p>
+<p>38</p>
+<p>26</p>
+<p>25</p>
+<p>8</p>
+<p>3.0</p>
+<p><code>hypot</code></p>
+<p>38</p>
+<p>12</p>
+<p>27</p>
+<p>No</p>
+<p>25</p>
+<p>8</p>
+<p>38</p>
+<p>38</p>
+<p>27</p>
+<p>25</p>
+<p>8</p>
+<p>3.0</p>
+<p><code>imul</code></p>
+<p>28</p>
+<p>12</p>
+<p>20</p>
+<p>No</p>
+<p>16</p>
+<p>7</p>
+<p>≤37</p>
+<p>28</p>
+<p>20</p>
+<p>15</p>
+<p>7</p>
+<p>1.5</p>
+<p><code>log</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>log1p</code></p>
+<p>38</p>
+<p>12</p>
+<p>25</p>
+<p>No</p>
+<p>25</p>
+<p>8</p>
+<p>38</p>
+<p>38</p>
+<p>25</p>
+<p>25</p>
+<p>8</p>
+<p>3.0</p>
+<p><code>log2</code></p>
+<p>38</p>
+<p>12</p>
+<p>25</p>
+<p>No</p>
+<p>25</p>
+<p>8</p>
+<p>38</p>
+<p>38</p>
+<p>25</p>
+<p>25</p>
+<p>8</p>
+<p>3.0</p>
+<p><code>log10</code></p>
+<p>38</p>
+<p>12</p>
+<p>25</p>
+<p>No</p>
+<p>25</p>
+<p>8</p>
+<p>38</p>
+<p>38</p>
+<p>25</p>
+<p>25</p>
+<p>8</p>
+<p>3.0</p>
+<p><code>max</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>min</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>pow</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>random</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>round</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>sign</code></p>
+<p>38</p>
+<p>12</p>
+<p>25</p>
+<p>No</p>
+<p>25</p>
+<p>9</p>
+<p>38</p>
+<p>38</p>
+<p>25</p>
+<p>25</p>
+<p>9</p>
+<p>3.0</p>
+<p><code>sin</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>sinh</code></p>
+<p>38</p>
+<p>12</p>
+<p>25</p>
+<p>No</p>
+<p>25</p>
+<p>8</p>
+<p>38</p>
+<p>38</p>
+<p>25</p>
+<p>25</p>
+<p>8</p>
+<p>3.0</p>
+<p><code>sqrt</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>tan</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>tanh</code></p>
+<p>38</p>
+<p>12</p>
+<p>25</p>
+<p>No</p>
+<p>25</p>
+<p>8</p>
+<p>38</p>
+<p>38</p>
+<p>25</p>
+<p>25</p>
+<p>8</p>
+<p>3.0</p>
+<p><code>trunc</code></p>
+<p>38</p>
+<p>12</p>
+<p>25</p>
+<p>No</p>
+<p>25</p>
+<p>8</p>
+<p>38</p>
+<p>38</p>
+<p>25</p>
+<p>25</p>
+<p>8</p>
+<p>3.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="number"><code>Number</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math</a></p>
+</body>
+</html>

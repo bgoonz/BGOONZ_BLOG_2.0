@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>in</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="in-operator">in operator</h1>
+<p>The <code>in</code> returns <code>true</code> if the specified property is in the specified object or its prototype chain.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>prop in object</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>prop</code><br />
+A string or symbol representing a property name or array index (non-symbols will be coerced to strings).</p>
+<p><code>object</code><br />
+Object to check if it (or its prototype chain) <span class="short_text">contains</span> the property with specified name (<code>prop</code>).</p>
+<h2 id="examples">Examples</h2>
+<h3 id="basic-usage">Basic usage</h3>
+<p>The following examples show some uses of the <code>in</code> operator.</p>
+<pre><code>// Arrays
+let trees = [&#39;redwood&#39;, &#39;bay&#39;, &#39;cedar&#39;, &#39;oak&#39;, &#39;maple&#39;]
+0 in trees        // returns true
+3 in trees        // returns true
+6 in trees        // returns false
+&#39;bay&#39; in trees    // returns false (you must specify the index number, not the value at that index)
+&#39;length&#39; in trees // returns true (length is an Array property)
+Symbol.iterator in trees // returns true (arrays are iterable, works only in ES2015+)
+
+// Predefined objects
+&#39;PI&#39; in Math          // returns true
+
+// Custom objects
+let mycar = {make: &#39;Honda&#39;, model: &#39;Accord&#39;, year: 1998}
+&#39;make&#39; in mycar  // returns true
+&#39;model&#39; in mycar // returns true</code></pre>
+<p>You must specify an object on the right side of the <code>in</code> operator. For example, you can specify a string created with the <code>String</code> constructor, but you cannot specify a string literal.</p>
+<pre><code>let color1 = new String(&#39;green&#39;)
+&#39;length&#39; in color1 // returns true
+
+let color2 = &#39;coral&#39;
+// generates an error (color2 is not a String object)
+&#39;length&#39; in color2</code></pre>
+<h3 id="using-in-with-deleted-or-undefined-properties">Using <code>in</code> with deleted or undefined properties</h3>
+<p>If you delete a property with the <code>delete</code> operator, the <code>in</code> operator returns <code>false</code> for that property.</p>
+<pre><code>let mycar = {make: &#39;Honda&#39;, model: &#39;Accord&#39;, year: 1998}
+delete mycar.make
+&#39;make&#39; in mycar   // returns false
+
+let trees = new Array(&#39;redwood&#39;, &#39;bay&#39;, &#39;cedar&#39;, &#39;oak&#39;, &#39;maple&#39;)
+delete trees[3]
+3 in trees  // returns false</code></pre>
+<p>If you set a property to <a href="../global_objects/undefined"><code>undefined</code></a> but do not delete it, the <code>in</code> operator returns true for that property.</p>
+<pre><code>let mycar = {make: &#39;Honda&#39;, model: &#39;Accord&#39;, year: 1998}
+mycar.make = undefined
+&#39;make&#39; in mycar   // returns true
+
+let trees = new Array(&#39;redwood&#39;, &#39;bay&#39;, &#39;cedar&#39;, &#39;oak&#39;, &#39;maple&#39;)
+trees[3] = undefined
+3 in trees  // returns true</code></pre>
+<p>The <code>in</code> operator will return <code>false</code> for empty array slots. Even if accessing it directly returns <code>undefined</code>.</p>
+<pre><code>let empties = new Array(3)
+empties[2] // returns undefined
+2 in empties  // returns false</code></pre>
+<p>To avoid this, make sure a new array is always filled with non-empty values or not write to indexes past the end of array.</p>
+<pre><code>let empties = new Array(3).fill(undefined)
+2 in empties  // returns true</code></pre>
+<h3 id="inherited-properties">Inherited properties</h3>
+<p>The <code>in</code> operator returns <code>true</code> for properties in the prototype chain. (If you want to check for only <em>non-inherited</em> properties, use <a href="../global_objects/object/hasownproperty"><code>Object.prototype.hasOwnProperty()</code></a> instead.)</p>
+<pre><code>&#39;toString&#39; in {}  // returns true</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-relational-operators">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-relational-operators</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>in</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>5.5</p>
+<p>4</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><code>for...in</code></li>
+<li><code>delete</code></li>
+<li><a href="../global_objects/object/hasownproperty"><code>Object.prototype.hasOwnProperty()</code></a></li>
+<li><a href="../global_objects/reflect/has"><code>Reflect.has()</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties">Enumerability and ownership of properties</a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/in" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/in</a></p>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>unshift</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="array.prototype.unshift">Array.prototype.unshift()</h1>
+<p>The <code>unshift()</code> method adds one or more elements to the beginning of an array and returns the new length of the array.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>unshift(element0)
+unshift(element0, element1)
+unshift(element0, element1, ... , elementN)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>elementN</code><br />
+The elements to add to the front of the <code>arr</code>.</p>
+<h3 id="return-value">Return value</h3>
+<p>The new <a href="length"><code>length</code></a> property of the object upon which the method was called.</p>
+<h2 id="description">Description</h2>
+<p>The <code>unshift</code> method inserts the given values to the beginning of an array-like object.</p>
+<p><code>unshift</code> is intentionally generic. This method can be <a href="../function/call">called</a> or <a href="../function/apply">applied</a> to objects resembling arrays. Objects which do not contain a <code>length</code> property—reflecting the last in a series of consecutive, zero-based numerical properties—may not behave in any meaningful manner.</p>
+<p>Please note that, if multiple elements are passed as parameters, they’re inserted in chunk at the beginning of the object, in the exact same order they were passed as parameters. Hence, calling <code>unshift</code> with <code>n</code> arguments <strong>once</strong>, or calling it <code>n</code> times with <strong>1</strong> argument (with a loop, for example), don’t yield the same results.</p>
+<p>See example:</p>
+<pre><code>let arr = [4, 5, 6]
+
+arr.unshift(1, 2, 3)
+console.log(arr);
+// [1, 2, 3, 4, 5, 6]
+
+arr = [4, 5, 6] // resetting the array
+
+arr.unshift(1)
+arr.unshift(2)
+arr.unshift(3)
+
+console.log(arr)
+// [3, 2, 1, 4, 5, 6]</code></pre>
+<h2 id="examples">Examples</h2>
+<h3 id="using-unshift">Using unshift</h3>
+<pre><code>let arr = [1, 2]
+
+arr.unshift(0)               // result of the call is 3, which is the new array length
+// arr is [0, 1, 2]
+
+arr.unshift(-2, -1)          // the new array length is 5
+// arr is [-2, -1, 0, 1, 2]
+
+arr.unshift([-4, -3])        // the new array length is 6
+// arr is [[-4, -3], -2, -1, 0, 1, 2]
+
+arr.unshift([-7, -6], [-5])  // the new array length is 8
+// arr is [ [-7, -6], [-5], [-4, -3], -2, -1, 0, 1, 2 ]</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-array.prototype.unshift">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-array.prototype.unshift</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>unshift</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>5.5</p>
+<p>4</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="push"><code>Array.prototype.push()</code></a></li>
+<li><a href="pop"><code>Array.prototype.pop()</code></a></li>
+<li><a href="shift"><code>Array.prototype.shift()</code></a></li>
+<li><a href="concat"><code>Array.prototype.concat()</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift</a></p>
+</body>
+</html>

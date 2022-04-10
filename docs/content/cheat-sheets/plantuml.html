@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>PlantUML</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">PlantUML</h1>
+</header>
+<h3 id="format">Format</h3>
+<pre><code>@startuml
+Car : drive()
+Dog : bark()
+@enduml
+
+# plantuml file.uml &amp;&amp; open file.png</code></pre>
+<h2 id="classes">Classes</h2>
+<ul>
+<li>http://plantuml.sourceforge.net/classes.html</li>
+</ul>
+<h3 id="methods">Methods</h3>
+<pre><code>Car : drive()</code></pre>
+<h3 id="methods-alt">Methods (alt)</h3>
+<pre><code>class Car {
+  String make
+  year : Integer
+  void drive()
+
+  -private()
+  #protected()
+  ~package private()
+  +public()
+
+  {static} String id
+  {abstract} void methods()
+}</code></pre>
+<h3 id="lines">Lines</h3>
+<pre><code>class Car {
+  These are separated by lines.
+  The next line is a dotted line
+  ..
+  Next is a double-stroke
+  ==
+  Next is a plain line
+  --
+  Next is a strong line
+  __
+  You can make headers with it
+  .. header ..
+}</code></pre>
+<h3 id="associations">Associations</h3>
+<pre><code>Car &lt;|-- SmallCar      # extension
+Car *-- Engine         # composition
+Cars o-- Car           # aggregation
+Car &lt;|.. SmallCar      # dotted line (use .. instead of --)
+Car &lt;|--* Car
+
+-left-&gt;
+-right-&gt;</code></pre>
+<h3 id="relations">Relations</h3>
+<pre><code>Driver - Car : drives &gt;
+Car -- Owner : &lt; owns
+Car *-- Wheel : has 4 &gt;</code></pre>
+<h3 id="notes">Notes</h3>
+<pre><code>class Car {
+}
+note left: Something something
+
+note top of Car : This is a car.</code></pre>
+<h3 id="namespaces">Namespaces</h3>
+<pre><code>namespace Client {
+  class Driver {
+  }
+}
+
+Car -- Client.Driver : owns &gt;</code></pre>
+<h2 id="activities">Activities</h2>
+<pre><code>(*) --&gt; &quot;First Activity&quot;
+--&gt;[You can put also labels] &quot;Second Activity&quot;
+--&gt; (*)</code></pre>
+</body>
+</html>

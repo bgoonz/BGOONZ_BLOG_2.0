@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>BASH-CHEAT-SHEET</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="bash-cheat-sheet">BASH CHEAT SHEET</h1>
+<p>My Bash Cheatsheet Index:</p>
+<hr />
+<h3 id="bash-cheat-sheet-1">BASH CHEAT SHEET</h3>
+<h4 id="my-bash-cheatsheet-index">My Bash Cheatsheet Index:</h4>
+<h3 id="table-of-contents">Table Of Contents:</h3>
+<blockquote>
+<p>One Liners</p>
+</blockquote>
+<blockquote>
+<p>Block Bad IPs</p>
+</blockquote>
+<blockquote>
+<p>If Statements</p>
+</blockquote>
+<blockquote>
+<p>Check if args are passed</p>
+</blockquote>
+<blockquote>
+<p>Check if required variables exist</p>
+</blockquote>
+<blockquote>
+<p>Check if environment variables exists</p>
+</blockquote>
+<blockquote>
+<p>While Loops</p>
+</blockquote>
+<blockquote>
+<p>Run for 5 Seconds</p>
+</blockquote>
+<blockquote>
+<p>Redirecting Outputs</p>
+</blockquote>
+<blockquote>
+<p>Stdout, Stderr</p>
+</blockquote>
+<h3 id="commands">Commands</h3>
+<h3 id="tr-command">tr command</h3>
+<p>Remove whitespace:</p>
+<pre><code>$ echo &#39;foo - bar&#39; | tr -d &#39;[:space:]&#39;
+foo-bar</code></pre>
+<h3 id="one-liners">One Liners</h3>
+<h3 id="block-bad-ips">Block Bad IPs</h3>
+<p>Use iptables to block all bad ip addresses:</p>
+<pre><code>$ cat /var/log/maillog | grep &#39;lost connection after AUTH from unknown&#39; | tail -n 5
+May 10 11:19:49 srv4 postfix/smtpd[1486]: lost connection after AUTH from unknown[185.36.81.145]
+May 10 11:21:41 srv4 postfix/smtpd[1762]: lost connection after AUTH from unknown[185.36.81.164]
+May 10 11:21:56 srv4 postfix/smtpd[1762]: lost connection after AUTH from unknown[175.139.231.129]
+May 10 11:23:51 srv4 postfix/smtpd[1838]: lost connection after AUTH from unknown[185.211.245.170]
+May 10 11:24:02 srv4 postfix/smtpd[1838]: lost connection after AUTH from unknown[185.211.245.170]</code></pre>
+<p>Get the data to show only IPs:</p>
+<pre><code>cat /var/log/maillog | grep &#39;lost connection after AUTH from unknown&#39; | cut -d&#39;[&#39; -f3 | cut -d &#39;]&#39; -f1 | tail -n5
+185.36.81.164
+175.139.231.129
+185.211.245.170
+185.211.245.170
+185.36.81.173</code></pre>
+<p>Get the unique IP addresses:</p>
+<pre><code>$ cat /var/log/maillog | grep &#39;lost connection after AUTH from unknown&#39; | cut -d&#39;[&#39; -f3 | cut -d &#39;]&#39; -f1 | sort | uniq
+103.194.70.16
+112.196.77.202
+113.172.210.19
+113.173.182.119
+139.59.224.234</code></pre>
+<p>Redirect the output to iptables:</p>
+<pre><code>$ for ip in $(cat /var/log/maillog | grep &#39;lost connection after AUTH from unknown&#39; | cut -d&#39;[&#39; -f3 | cut -d &#39;]&#39; -f1 | sort | uniq); do iptables -I INPUT -s ${ip} -p tcp --dport 25 -j DROP; done</code></pre>
+<h3 id="if-statements">If Statements</h3>
+<h3 id="check-if-args-are-passed">Check if args are passed</h3>
+<pre><code>if [[ $# -eq 0 ]] ; then
+    echo &#39;need to pass args&#39;
+    exit 0
+fi</code></pre>
+<h3 id="check-if-required-variables-exist">Check if required variables exist</h3>
+<pre><code>if [ $1 == &quot;one&quot; ] || [ $1 == &quot;two&quot; ]
+then
+  echo &quot;argument 1 has the value one or two&quot;
+  exit 0
+else
+  echo &quot;I require argument 1 to be one or two&quot;
+  exit 1
+fi</code></pre>
+<h3 id="check-if-environment-variables-exists">Check if environment variables exists</h3>
+<pre><code>if [ -z ${OWNER} ] || [ -z ${NAME} ]
+then
+  echo &quot;does not meet requirements of both environment variables&quot;
+  exit 1
+else
+  echo &quot;required environment variables exists&quot;
+fi</code></pre>
+<h3 id="while-loops">While Loops</h3>
+<h3 id="run-process-for-5-seconds">Run process for 5 Seconds</h3>
+<pre><code>set -ex
+count=0
+echo &quot;boot&quot;
+ping localhost &amp;
+while [ $count -le 5 ]
+  do
+    sleep 1
+    count=$((count + 1))
+    echo $count
+  done
+ps aux | grep ping
+echo &quot;tear down&quot;
+kill $!
+sleep 2</code></pre>
+<h3 id="redirecting-outputs">Redirecting Outputs</h3>
+<h3 id="stdout-stderr">Stdout, Stderr</h3>
+<p>Redirect stderr to /dev/null:</p>
+<pre><code>grep -irl faker . 2&gt;/dev/null</code></pre>
+<p>Redirect stdout to one file and stderr to another file:</p>
+<pre><code>grep -irl faker . &gt; out 2&gt;error</code></pre>
+<p>Redirect stderr to stdout (&amp;1), and then redirect stdout to a file:</p>
+<pre><code>grep -irl faker . &gt;out 2&gt;&amp;1</code></pre>
+<p>Redirect both to a file:</p>
+<pre><code>grep -irl faker . &amp;&gt; file.log</code></pre>
+<p>By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on <a href="https://medium.com/p/d3077114aea7">July 14, 2021</a>.</p>
+<p><a href="https://medium.com/@bryanguner/bash-d3077114aea7" class="p-canonical">Canonical link</a></p>
+<p>August 31, 2021.</p>
+</body>
+</html>

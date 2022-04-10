@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>totimestring</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="date.prototype.totimestring">Date.prototype.toTimeString()</h1>
+<p>The <code>toTimeString()</code> method returns the time portion of a <a href="../date"><code>Date</code></a> object in human readable form in English.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>toTimeString()</code></pre>
+<h3 id="return-value">Return value</h3>
+<p>A string representing the time portion of the given date in human readable form in English.</p>
+<h2 id="description">Description</h2>
+<p><a href="../date"><code>Date</code></a> instances refer to a specific point in time. Calling <a href="tostring"><code>toString()</code></a> will return the date formatted in a human readable form in English. In <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey">SpiderMonkey</a>, this consists of the date portion (day, month, and year) followed by the time portion (hours, minutes, seconds, and time zone). Sometimes it is desirable to obtain a string of the time portion; such a thing can be accomplished with the <code>toTimeString()</code> method.</p>
+<p>The <code>toTimeString()</code> method is especially useful because compliant engines implementing <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Language_Resources">ECMA-262</a> may differ in the string obtained from <a href="tostring"><code>toString()</code></a> for <a href="../date"><code>Date</code></a> objects, as the format is implementation-dependent; simple string slicing approaches may not produce consistent results across multiple engines.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="a-basic-usage-of-totimestring">A basic usage of toTimeString()</h3>
+<pre><code>var d = new Date(1993, 6, 28, 14, 39, 7);
+
+console.log(d.toString());     // Wed Jul 28 1993 14:39:07 GMT-0600 (PDT)
+console.log(d.toTimeString()); // 14:39:07 GMT-0600 (PDT)</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-date.prototype.totimestring">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-date.prototype.totimestring</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>toTimeString</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>5.5</p>
+<p>5</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="tolocaletimestring"><code>Date.prototype.toLocaleTimeString()</code></a></li>
+<li><a href="todatestring"><code>Date.prototype.toDateString()</code></a></li>
+<li><a href="tostring"><code>Date.prototype.toString()</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toTimeString" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toTimeString</a></p>
+</body>
+</html>

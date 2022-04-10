@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>atomics</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="atomics">Atomics</h1>
+<p>The <code>Atomics</code> object provides atomic operations as static methods. They are used with <a href="sharedarraybuffer"><code>SharedArrayBuffer</code></a> and <a href="arraybuffer"><code>ArrayBuffer</code></a> objects.</p>
+<h2 id="description">Description</h2>
+<p>The Atomic operations are installed on an <code>Atomics</code> module. Unlike the other global objects, <code>Atomics</code> is not a constructor. You cannot use it with a <a href="../operators/new"><code>new</code> operator</a> or invoke the <code>Atomics</code> object as a function. All properties and methods of <code>Atomics</code> are static (as is the case with the <a href="math"><code>Math</code></a> object, for example).</p>
+<h3 id="atomic-operations">Atomic operations</h3>
+<p>When memory is shared, multiple threads can read and write the same data in memory. Atomic operations make sure that predictable values are written and read, that operations are finished before the next operation starts and that operations are not interrupted.</p>
+<h3 id="wait-and-notify">Wait and notify</h3>
+<p>The <code>wait()</code> and <code>notify()</code> methods are modeled on Linux futexes (“fast user-space mutex”) and provide ways for waiting until a certain condition becomes true and are typically used as blocking constructs.</p>
+<h2 id="static-methods">Static methods</h2>
+<p><a href="atomics/add"><code>Atomics.add()</code></a><br />
+Adds the provided value to the existing value at the specified index of the array. Returns the old value at that index.</p>
+<p><a href="atomics/and"><code>Atomics.and()</code></a><br />
+Computes a bitwise AND on the value at the specified index of the array with the provided value. Returns the old value at that index.</p>
+<p><a href="atomics/compareexchange"><code>Atomics.compareExchange()</code></a><br />
+Stores a value at the specified index of the array, if it equals a value. Returns the old value.</p>
+<p><a href="atomics/exchange"><code>Atomics.exchange()</code></a><br />
+Stores a value at the specified index of the array. Returns the old value.</p>
+<p><a href="atomics/islockfree"><code>Atomics.isLockFree(size)</code></a><br />
+An optimization primitive that can be used to determine whether to use locks or atomic operations. Returns <code>true</code> if an atomic operation on arrays of the given element size will be implemented using a hardware atomic operation (as opposed to a lock). Experts only.</p>
+<p><a href="atomics/load"><code>Atomics.load()</code></a><br />
+Returns the value at the specified index of the array.</p>
+<p><a href="atomics/notify"><code>Atomics.notify()</code></a><br />
+Notifies agents that are waiting on the specified index of the array. Returns the number of agents that were notified.</p>
+<p><a href="atomics/or"><code>Atomics.or()</code></a><br />
+Computes a bitwise OR on the value at the specified index of the array with the provided value. Returns the old value at that index.</p>
+<p><a href="atomics/store"><code>Atomics.store()</code></a><br />
+Stores a value at the specified index of the array. Returns the value.</p>
+<p><a href="atomics/sub"><code>Atomics.sub()</code></a><br />
+Subtracts a value at the specified index of the array. Returns the old value at that index.</p>
+<p><a href="atomics/wait"><code>Atomics.wait()</code></a><br />
+Verifies that the specified index of the array still contains a value and sleeps awaiting or times out. Returns either “<code>ok</code>”, “<code>not-equal</code>”, or “<code>timed-out</code>”. If waiting is not allowed in the calling agent then it throws an <a href="error"><code>Error</code></a> exception. (Most browsers will not allow <code>wait()</code> on the browser’s main thread.)</p>
+<p><a href="atomics/xor"><code>Atomics.xor()</code></a><br />
+Computes a bitwise XOR on the value at the specified index of the array with the provided value. Returns the old value at that index.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-atomics">Using Atomics</h3>
+<pre><code>const sab = new SharedArrayBuffer(1024);
+const ta = new Uint8Array(sab);
+
+ta[0]; // 0
+ta[0] = 5; // 5
+
+Atomics.add(ta, 0, 12); // 5
+Atomics.load(ta, 0); // 17
+
+Atomics.and(ta, 0, 1); // 17
+Atomics.load(ta, 0); // 1
+
+Atomics.compareExchange(ta, 0, 5, 12); // 1
+Atomics.load(ta, 0); // 1
+
+Atomics.exchange(ta, 0, 12); // 1
+Atomics.load(ta, 0); // 12
+
+Atomics.isLockFree(1); // true
+Atomics.isLockFree(2); // true
+Atomics.isLockFree(3); // false
+Atomics.isLockFree(4); // true
+
+Atomics.or(ta, 0, 1); // 12
+Atomics.load(ta, 0);  // 13
+
+Atomics.store(ta, 0, 12); // 12
+
+Atomics.sub(ta, 0, 2); // 12
+Atomics.load(ta, 0); // 10
+
+Atomics.xor(ta, 0, 1); // 10
+Atomics.load(ta, 0); // 11</code></pre>
+<h3 id="waiting-and-notifiying">Waiting and notifiying</h3>
+<p>Given a shared <code>Int32Array</code>:</p>
+<pre><code>const sab = new SharedArrayBuffer(1024);
+const int32 = new Int32Array(sab);</code></pre>
+<p>A reading thread is sleeping and waiting on location 0 which is expected to be 0. As long as that is true, it will not go on. However, once the writing thread has stored a new value, it will be notified by the writing thread and return the new value (123).</p>
+<pre><code>Atomics.wait(int32, 0, 0);
+console.log(int32[0]); // 123</code></pre>
+<p>A writing thread stores a new value and notifies the waiting thread once it has written:</p>
+<pre><code>console.log(int32[0]); // 0;
+Atomics.store(int32, 0, 123);
+Atomics.notify(int32, 0, 1);</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-atomics-object">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-atomics-object</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>Atomics</code></p>
+<p>68</p>
+<p>60-63</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place.</p>
+<p>79</p>
+<p>16-17</p>
+<p>Support was removed to mitigate <a href="https://blogs.windows.com/msedgedev/2018/01/03/speculative-execution-mitigations-microsoft-edge-internet-explorer">speculative execution side-channel attacks (Windows blog)</a>.</p>
+<p>78</p>
+<p>57</p>
+<p>Support was disabled by default to mitigate <a href="https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/">speculative execution side-channel attacks (Mozilla Security Blog)</a>.</p>
+<p>55-57</p>
+<p>46-55</p>
+<p>No</p>
+<p>No</p>
+<p>10.1-11.1</p>
+<p>60-63</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p>60-63</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p>57</p>
+<p>Support was disabled by default to mitigate <a href="https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/">speculative execution side-channel attacks (Mozilla Security Blog)</a>.</p>
+<p>55-57</p>
+<p>46-55</p>
+<p>No</p>
+<p>10.3-11.3</p>
+<p>No</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p><code>Atomic_operations_on_non-shared_buffers</code></p>
+<p>No</p>
+<p>No</p>
+<p>79</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>79</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p><code>add</code></p>
+<p>68</p>
+<p>60-63</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place.</p>
+<p>79</p>
+<p>16-17</p>
+<p>Support was removed to mitigate <a href="https://blogs.windows.com/msedgedev/2018/01/03/speculative-execution-mitigations-microsoft-edge-internet-explorer">speculative execution side-channel attacks (Windows blog)</a>.</p>
+<p>78</p>
+<p>57</p>
+<p>Support was disabled by default to mitigate <a href="https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/">speculative execution side-channel attacks (Mozilla Security Blog)</a>.</p>
+<p>55-57</p>
+<p>46-55</p>
+<p>No</p>
+<p>No</p>
+<p>10.1-11.1</p>
+<p>60-63</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p>60-63</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p>57</p>
+<p>Support was disabled by default to mitigate <a href="https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/">speculative execution side-channel attacks (Mozilla Security Blog)</a>.</p>
+<p>55-57</p>
+<p>46-55</p>
+<p>No</p>
+<p>10.3-11.3</p>
+<p>No</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p><code>and</code></p>
+<p>68</p>
+<p>60-63</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place.</p>
+<p>79</p>
+<p>16-17</p>
+<p>Support was removed to mitigate <a href="https://blogs.windows.com/msedgedev/2018/01/03/speculative-execution-mitigations-microsoft-edge-internet-explorer">speculative execution side-channel attacks (Windows blog)</a>.</p>
+<p>78</p>
+<p>57</p>
+<p>Support was disabled by default to mitigate <a href="https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/">speculative execution side-channel attacks (Mozilla Security Blog)</a>.</p>
+<p>55-57</p>
+<p>46-55</p>
+<p>No</p>
+<p>No</p>
+<p>10.1-11.1</p>
+<p>60-63</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p>60-63</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p>57</p>
+<p>Support was disabled by default to mitigate <a href="https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/">speculative execution side-channel attacks (Mozilla Security Blog)</a>.</p>
+<p>55-57</p>
+<p>46-55</p>
+<p>No</p>
+<p>10.3-11.3</p>
+<p>No</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p><code>compareExchange</code></p>
+<p>68</p>
+<p>60-63</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place.</p>
+<p>79</p>
+<p>16-17</p>
+<p>Support was removed to mitigate <a href="https://blogs.windows.com/msedgedev/2018/01/03/speculative-execution-mitigations-microsoft-edge-internet-explorer">speculative execution side-channel attacks (Windows blog)</a>.</p>
+<p>78</p>
+<p>57</p>
+<p>Support was disabled by default to mitigate <a href="https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/">speculative execution side-channel attacks (Mozilla Security Blog)</a>.</p>
+<p>55-57</p>
+<p>46-55</p>
+<p>No</p>
+<p>No</p>
+<p>10.1-11.1</p>
+<p>60-63</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p>60-63</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p>57</p>
+<p>Support was disabled by default to mitigate <a href="https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/">speculative execution side-channel attacks (Mozilla Security Blog)</a>.</p>
+<p>55-57</p>
+<p>46-55</p>
+<p>No</p>
+<p>10.3-11.3</p>
+<p>No</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p><code>exchange</code></p>
+<p>68</p>
+<p>60-63</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place.</p>
+<p>79</p>
+<p>16-17</p>
+<p>Support was removed to mitigate <a href="https://blogs.windows.com/msedgedev/2018/01/03/speculative-execution-mitigations-microsoft-edge-internet-explorer">speculative execution side-channel attacks (Windows blog)</a>.</p>
+<p>78</p>
+<p>57</p>
+<p>Support was disabled by default to mitigate <a href="https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/">speculative execution side-channel attacks (Mozilla Security Blog)</a>.</p>
+<p>55-57</p>
+<p>46-55</p>
+<p>No</p>
+<p>No</p>
+<p>10.1-11.1</p>
+<p>60-63</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p>60-63</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p>57</p>
+<p>Support was disabled by default to mitigate <a href="https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/">speculative execution side-channel attacks (Mozilla Security Blog)</a>.</p>
+<p>55-57</p>
+<p>46-55</p>
+<p>No</p>
+<p>10.3-11.3</p>
+<p>No</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p><code>isLockFree</code></p>
+<p>68</p>
+<p>60-63</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place.</p>
+<p>79</p>
+<p>16-17</p>
+<p>Support was removed to mitigate <a href="https://blogs.windows.com/msedgedev/2018/01/03/speculative-execution-mitigations-microsoft-edge-internet-explorer">speculative execution side-channel attacks (Windows blog)</a>.</p>
+<p>78</p>
+<p>57</p>
+<p>Support was disabled by default to mitigate <a href="https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/">speculative execution side-channel attacks (Mozilla Security Blog)</a>.</p>
+<p>55-57</p>
+<p>46-55</p>
+<p>No</p>
+<p>No</p>
+<p>10.1-11.1</p>
+<p>60-63</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p>60-63</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p>57</p>
+<p>Support was disabled by default to mitigate <a href="https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/">speculative execution side-channel attacks (Mozilla Security Blog)</a>.</p>
+<p>55-57</p>
+<p>46-55</p>
+<p>No</p>
+<p>10.3-11.3</p>
+<p>No</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p><code>load</code></p>
+<p>68</p>
+<p>60-63</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place.</p>
+<p>79</p>
+<p>16-17</p>
+<p>Support was removed to mitigate <a href="https://blogs.windows.com/msedgedev/2018/01/03/speculative-execution-mitigations-microsoft-edge-internet-explorer">speculative execution side-channel attacks (Windows blog)</a>.</p>
+<p>78</p>
+<p>57</p>
+<p>Support was disabled by default to mitigate <a href="https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/">speculative execution side-channel attacks (Mozilla Security Blog)</a>.</p>
+<p>55-57</p>
+<p>46-55</p>
+<p>No</p>
+<p>No</p>
+<p>10.1-11.1</p>
+<p>60-63</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p>60-63</p>
+<p>Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p>57</p>
+<p>Support was disabled by default to mitigate <a href="https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/">speculative execution side-channel attacks (Mozilla Security Blog)</a>.</p>
+<p>55-57</p>
+<p>46-55</p>
+<p>No</p>
+<p>10.3-11.3</p>
+<p>No</p>
+<p>Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p><code>notify</code></p>
+<p>68</p>
+<p>60-63</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place.</p>
+<p>79</p>
+<p>78</p>
+<p>63</p>
+<p>Support was disabled by default to mitigate <a href="https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/">speculative execution side-channel attacks (Mozilla Security Blog)</a>.</p>
+<p>57</p>
+<p>Support was disabled by default to mitigate <a href="https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/">speculative execution side-channel attacks (Mozilla Security Blog)</a>.</p>
+<p>55-57</p>
+<p>48-55</p>
+<p>46-48</p>
+<p>The <code>count</code> parameter defaults to <code>0</code> instead of the later-specified <code>+Infinity</code>.</p>
+<p>No</p>
+<p>No</p>
+<p>10.1-11.1</p>
+<p>60-63</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p>60-63</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p>63</p>
+<p>Support was disabled by default to mitigate <a href="https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/">speculative execution side-channel attacks (Mozilla Security Blog)</a>.</p>
+<p>57</p>
+<p>Support was disabled by default to mitigate <a href="https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/">speculative execution side-channel attacks (Mozilla Security Blog)</a>.</p>
+<p>55-57</p>
+<p>48-55</p>
+<p>46-48</p>
+<p>The <code>count</code> parameter defaults to <code>0</code> instead of the later-specified <code>+Infinity</code>.</p>
+<p>No</p>
+<p>10.3-11.3</p>
+<p>No</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p><code>or</code></p>
+<p>68</p>
+<p>60-63</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place.</p>
+<p>79</p>
+<p>16-17</p>
+<p>Support was removed to mitigate <a href="https://blogs.windows.com/msedgedev/2018/01/03/speculative-execution-mitigations-microsoft-edge-internet-explorer">speculative execution side-channel attacks (Windows blog)</a>.</p>
+<p>78</p>
+<p>57</p>
+<p>Support was disabled by default to mitigate <a href="https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/">speculative execution side-channel attacks (Mozilla Security Blog)</a>.</p>
+<p>55-57</p>
+<p>46-55</p>
+<p>No</p>
+<p>No</p>
+<p>10.1-11.1</p>
+<p>60-63</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p>60-63</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p>57</p>
+<p>Support was disabled by default to mitigate <a href="https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/">speculative execution side-channel attacks (Mozilla Security Blog)</a>.</p>
+<p>55-57</p>
+<p>46-55</p>
+<p>No</p>
+<p>10.3-11.3</p>
+<p>No</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p><code>store</code></p>
+<p>68</p>
+<p>60-63</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place.</p>
+<p>79</p>
+<p>16-17</p>
+<p>Support was removed to mitigate <a href="https://blogs.windows.com/msedgedev/2018/01/03/speculative-execution-mitigations-microsoft-edge-internet-explorer">speculative execution side-channel attacks (Windows blog)</a>.</p>
+<p>78</p>
+<p>57</p>
+<p>Support was disabled by default to mitigate <a href="https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/">speculative execution side-channel attacks (Mozilla Security Blog)</a>.</p>
+<p>55-57</p>
+<p>46-55</p>
+<p>No</p>
+<p>No</p>
+<p>10.1-11.1</p>
+<p>60-63</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p>60-63</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p>57</p>
+<p>Support was disabled by default to mitigate <a href="https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/">speculative execution side-channel attacks (Mozilla Security Blog)</a>.</p>
+<p>55-57</p>
+<p>46-55</p>
+<p>No</p>
+<p>10.3-11.3</p>
+<p>No</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p><code>sub</code></p>
+<p>68</p>
+<p>60-63</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place.</p>
+<p>79</p>
+<p>16-17</p>
+<p>Support was removed to mitigate <a href="https://blogs.windows.com/msedgedev/2018/01/03/speculative-execution-mitigations-microsoft-edge-internet-explorer">speculative execution side-channel attacks (Windows blog)</a>.</p>
+<p>78</p>
+<p>57</p>
+<p>Support was disabled by default to mitigate <a href="https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/">speculative execution side-channel attacks (Mozilla Security Blog)</a>.</p>
+<p>55-57</p>
+<p>46-55</p>
+<p>No</p>
+<p>No</p>
+<p>10.1-11.1</p>
+<p>60-63</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p>60-63</p>
+<p>Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p>57</p>
+<p>Support was disabled by default to mitigate <a href="https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/">speculative execution side-channel attacks (Mozilla Security Blog)</a>.</p>
+<p>55-57</p>
+<p>46-55</p>
+<p>No</p>
+<p>10.3-11.3</p>
+<p>No</p>
+<p>Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p><code>wait</code></p>
+<p>68</p>
+<p>60-63</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place.</p>
+<p>79</p>
+<p>16-17</p>
+<p>Support was removed to mitigate <a href="https://blogs.windows.com/msedgedev/2018/01/03/speculative-execution-mitigations-microsoft-edge-internet-explorer">speculative execution side-channel attacks (Windows blog)</a>.</p>
+<p>78</p>
+<p>57</p>
+<p>Support was disabled by default to mitigate <a href="https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/">speculative execution side-channel attacks (Mozilla Security Blog)</a>.</p>
+<p>55-57</p>
+<p>48-55</p>
+<p>46-48</p>
+<p>The method returns values <code>Atomics.OK</code>, <code>Atomics.TIMEDOUT</code>, and <code>Atomics.NOTEQUAL</code>, instead of the later-specified strings.</p>
+<p>No</p>
+<p>No</p>
+<p>10.1-11.1</p>
+<p>60-63</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p>60-63</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p>57</p>
+<p>Support was disabled by default to mitigate <a href="https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/">speculative execution side-channel attacks (Mozilla Security Blog)</a>.</p>
+<p>55-57</p>
+<p>48-55</p>
+<p>46-48</p>
+<p>The method returns values <code>Atomics.OK</code>, <code>Atomics.TIMEDOUT</code>, and <code>Atomics.NOTEQUAL</code>, instead of the later-specified strings.</p>
+<p>No</p>
+<p>10.3-11.3</p>
+<p>No</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p><code>xor</code></p>
+<p>68</p>
+<p>60-63</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place.</p>
+<p>79</p>
+<p>16-17</p>
+<p>Support was removed to mitigate <a href="https://blogs.windows.com/msedgedev/2018/01/03/speculative-execution-mitigations-microsoft-edge-internet-explorer">speculative execution side-channel attacks (Windows blog)</a>.</p>
+<p>78</p>
+<p>57</p>
+<p>Support was disabled by default to mitigate <a href="https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/">speculative execution side-channel attacks (Mozilla Security Blog)</a>.</p>
+<p>55-57</p>
+<p>46-55</p>
+<p>No</p>
+<p>No</p>
+<p>10.1-11.1</p>
+<p>60-63</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p>60-63</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p>57</p>
+<p>Support was disabled by default to mitigate <a href="https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/">speculative execution side-channel attacks (Mozilla Security Blog)</a>.</p>
+<p>55-57</p>
+<p>46-55</p>
+<p>No</p>
+<p>10.3-11.3</p>
+<p>No</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="arraybuffer"><code>ArrayBuffer</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays">JavaScript typed arrays</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API">Web Workers</a></li>
+<li><a href="https://github.com/lars-t-hansen/parlib-simple">parlib-simple</a> - a simple library providing synchronization and work distribution abstractions.</li>
+<li><a href="https://github.com/tc39/ecmascript_sharedmem/blob/master/TUTORIAL.md">Shared Memory - a brief tutorial</a></li>
+<li><a href="https://hacks.mozilla.org/2016/05/a-taste-of-javascripts-new-parallel-primitives/">A Taste of JavaScript’s New Parallel Primitives - Mozilla Hacks</a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics</a></p>
+</body>
+</html>

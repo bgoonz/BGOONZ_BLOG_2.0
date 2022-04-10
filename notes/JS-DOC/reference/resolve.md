@@ -1,8 +1,10 @@
-# Promise.resolve()
+Promise.resolve()
+=================
 
-The `Promise.resolve()` method returns a [`Promise`](../promise) object that is resolved with a given value. If the value is a promise, that promise is returned; if the value is a thenable (i.e. has a [`"then" method`](then)), the returned promise will "follow" that thenable, adopting its eventual state; otherwise the returned promise will be fulfilled with the value. This function flattens nested layers of promise-like objects (e.g. a promise that resolves to a promise that resolves to something) into a single layer.
+The `Promise.resolve()` method returns a [`Promise`](../promise) object that is resolved with a given value. If the value is a promise, that promise is returned; if the value is a thenable (i.e. has a [`"then" method`](then)), the returned promise will “follow” that thenable, adopting its eventual state; otherwise the returned promise will be fulfilled with the value. This function flattens nested layers of promise-like objects (e.g. a promise that resolves to a promise that resolves to something) into a single layer.
 
-## Syntax
+Syntax
+------
 
     Promise.resolve(value);
 
@@ -15,11 +17,13 @@ Argument to be resolved by this `Promise`. Can also be a `Promise` or a thenable
 
 A [`Promise`](../promise) that is resolved with the given value, or the promise passed as value, if the value was a promise object.
 
-## Description
+Description
+-----------
 
 The static `Promise.resolve` function returns a `Promise` that is resolved.
 
-## Examples
+Examples
+--------
 
 ### Using the static Promise.resolve method
 
@@ -93,14 +97,14 @@ The inverted order of the logs is due to the fact that the `then` handlers are c
       // not called
     });
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.resolve">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-promise.resolve</span></td></tr></tbody></table>
 
-<span class="small">#sec-promise.resolve</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -156,10 +160,10 @@ No
 
 2.0
 
-## See also
+See also
+--------
 
 -   [`Promise`](../promise)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/resolve" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/resolve</a>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="square-root-newtons-method">Square Root (Newton’s Method)</h1>
+<p>In numerical analysis, a branch of mathematics, there are several square root algorithms or methods of computing the principal square root of a non-negative real number. As, generally, the roots of a function cannot be computed exactly. The root-finding algorithms provide approximations to roots expressed as floating point numbers.</p>
+<p>Finding <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bff86975b0e7944720b3e635c53c22c032a7a6f1" /> is the same as solving the equation <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6cf57722151ef19ba1ca918d702b95c335e21cad" /> for a positive <code>x</code>. Therefore, any general numerical root-finding algorithm can be used.</p>
+<p><strong>Newton’s method</strong> (also known as the Newton-Raphson method), named after <em>Isaac Newton</em> and <em>Joseph Raphson</em>, is one example of a root-finding algorithm. It is a method for finding successively better approximations to the roots of a real-valued function.</p>
+<p>Let’s start by explaining the general idea of Newton’s method and then apply it to our particular case with finding a square root of the number.</p>
+<h2 id="newtons-method-general-idea">Newton’s Method General Idea</h2>
+<p>The Newton-Raphson method in one variable is implemented as follows:</p>
+<p>The method starts with a function <code>f</code> defined over the real numbers <code>x</code>, the function’s derivative <code>f'</code>, and an initial guess <code>x0</code> for a root of the function <code>f</code>. If the function satisfies the assumptions made in the derivation of the formula and the initial guess is close, then a better approximation <code>x1</code> is:</p>
+<p><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/52c50eca0b7c4d64ef2fdca678665b73e944cb84" /></p>
+<p>Geometrically, <code>(x1, 0)</code> is the intersection of the <code>x</code>-axis and the tangent of the graph of <code>f</code> at <code>(x0, f (x0))</code>.</p>
+<p>The process is repeated as:</p>
+<p><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/710c11b9ec4568d1cfff49b7c7d41e0a7829a736" /></p>
+<p>until a sufficiently accurate value is reached.</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/NewtonIteration_Ani.gif" /></p>
+<h2 id="newtons-method-of-finding-a-square-root">Newton’s Method of Finding a Square Root</h2>
+<p>As it was mentioned above, finding <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bff86975b0e7944720b3e635c53c22c032a7a6f1" /> is the same as solving the equation <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6cf57722151ef19ba1ca918d702b95c335e21cad" /> for a positive <code>x</code>.</p>
+<p>The derivative of the function <code>f(x)</code> in case of square root problem is <code>2x</code>.</p>
+<p>After applying the Newton’s formula (see above) we get the following equation for our algorithm iterations:</p>
+<pre class="text"><code>x := x - (x² - S) / (2x)</code></pre>
+<p>The <code>x² − S</code> above is how far away <code>x²</code> is from where it needs to be, and the division by <code>2x</code> is the derivative of <code>x²</code>, to scale how much we adjust <code>x</code> by how quickly <code>x²</code> is changing.</p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Methods_of_computing_square_roots">Methods of computing square roots on Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Newton%27s_method">Newton’s method on Wikipedia</a></li>
+</ul>
+</body>
+</html>

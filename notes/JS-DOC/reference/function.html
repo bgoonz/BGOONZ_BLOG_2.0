@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>function</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="function-expression">Function expression</h1>
+<p>The <code>function</code> keyword can be used to define a function inside an expression.</p>
+<p>You can also define functions using the <a href="../global_objects/function/function"><code>Function</code></a> constructor and a <a href="../statements/function">function declaration</a>.</p>
+<h2 id="syntax">Syntax</h2>
+<p>The expression is not allowed at the start of a statement.</p>
+<pre><code>function [name]([param1[, param2[, ..., paramN]]]) {
+   statements
+}</code></pre>
+<p>As of ES2015, you can also use <a href="../functions/arrow_functions">arrow functions</a>.</p>
+<h3 id="parameters">Parameters</h3>
+<p><code>name</code> <span class="badge inline optional">Optional</span><br />
+The function name. Can be omitted, in which case the function is <em>anonymous</em>. The name is only local to the function body.</p>
+<p><code>paramN</code> <span class="badge inline optional">Optional</span><br />
+The name of an argument to be passed to the function.</p>
+<p><code>statements</code> <span class="badge inline optional">Optional</span><br />
+The statements which comprise the body of the function.</p>
+<h2 id="description">Description</h2>
+<p>A function expression is very similar to and has almost the same syntax as a function declaration (see <a href="../statements/function"><code>function</code></a> statement for details). The main difference between a function expression and a function declaration is the <em>function name</em>, which can be omitted in function expressions to create <em>anonymous</em> functions. A function expression can be used as an <a href="https://developer.mozilla.org/en-US/docs/Glossary/IIFE">IIFE (Immediately Invoked Function Expression)</a> which runs as soon as it is defined. See also the chapter about <a href="../functions">functions</a> for more information.</p>
+<h3 id="function-expression-hoisting">Function expression hoisting</h3>
+<p>Function expressions in JavaScript are not hoisted, unlike <a href="../statements/function#function_declaration_hoisting">function declarations</a>. You can’t use function expressions before you create them:</p>
+<pre><code>console.log(notHoisted) // undefined
+//  even though the variable name is hoisted, the definition isn&#39;t. so it&#39;s undefined.
+notHoisted(); // TypeError: notHoisted is not a function
+
+var notHoisted = function() {
+   console.log(&#39;bar&#39;);
+};</code></pre>
+<h3 id="named-function-expression">Named function expression</h3>
+<p>If you want to refer to the current function inside the function body, you need to create a named function expression. <span class="underline"><strong>This name is then local only to the function body (scope)</strong></span>. This also avoids using the non-standard <a href="../functions/arguments/callee"><code>arguments.callee</code></a> property.</p>
+<pre><code>let math = {
+  &#39;factit&#39;: function factorial(n) {
+    console.log(n)
+    if (n &lt;= 1) {
+      return 1;
+    }
+    return n * factorial(n - 1);
+  }
+};
+
+math.factit(3) //3;2;1;</code></pre>
+<p>The variable the function expression is assigned to will have a <code>name</code> property. The name doesn’t change if it’s assigned to a different variable. If function name is omitted, it will be the variable name (implicit name). If function name is present, it will be the function name (explicit name). This also applies to <a href="../functions/arrow_functions"><code>arrow functions</code></a> (arrows don’t have a name so you can only give the variable an implicit name).</p>
+<pre><code>var foo = function() {}
+foo.name // &quot;foo&quot;
+
+var foo2 = foo
+foo2.name // &quot;foo&quot;
+
+var bar = function baz() {}
+bar.name // &quot;baz&quot;
+
+console.log(foo === foo2); // true
+console.log(typeof baz); // undefined
+console.log(bar === baz); // false (errors because baz == undefined)</code></pre>
+<h2 id="examples">Examples</h2>
+<h3 id="creating-an-unnamed-function">Creating an unnamed function</h3>
+<p>The following example defines an unnamed function and assigns it to <code>x</code>. The function returns the square of its argument:</p>
+<pre><code>var x = function(y) {
+   return y * y;
+};</code></pre>
+<h3 id="using-a-function-as-a-callback">Using a function as a callback</h3>
+<p>More commonly it is used as a <a href="https://developer.mozilla.org/en-US/docs/Glossary/Callback_function">callback</a>:</p>
+<pre><code>button.addEventListener(&#39;click&#39;, function(event) {
+    console.log(&#39;button is clicked!&#39;)
+})</code></pre>
+<h3 id="using-an-immediately-executed-function-expression">Using an immediately executed function expression</h3>
+<p>An anonymous function is created and called:</p>
+<pre><code>(function() {
+    console.log(&#39;Code runs!&#39;)
+})();
+
+// or
+
+!function() {
+  console.log(&#39;Code runs!&#39;)
+}();</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-function-definitions">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-function-definitions</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>function</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>trailing_comma</code></p>
+<p>58</p>
+<p>14</p>
+<p>52</p>
+<p>No</p>
+<p>45</p>
+<p>10</p>
+<p>58</p>
+<p>58</p>
+<p>52</p>
+<p>43</p>
+<p>10</p>
+<p>7.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../functions/arrow_functions">Arrow functions</a></li>
+<li><a href="../functions">Functions and function scope</a></li>
+<li><a href="../global_objects/function"><code>Function</code></a></li>
+<li><a href="../statements/function"><code>function</code></a> statement</li>
+<li><a href="../statements/function*"><code>function*</code></a> statement</li>
+<li><a href="function*"><code>function*</code></a> expression</li>
+<li><a href="../global_objects/generatorfunction"><code>GeneratorFunction</code></a></li>
+<li><a href="../statements/async_function">async function</a></li>
+<li><a href="async_function">async function expression</a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function</a></p>
+</body>
+</html>

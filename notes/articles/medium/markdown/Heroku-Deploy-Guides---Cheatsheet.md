@@ -1,25 +1,25 @@
-# Heroku Deploy Guides & Cheatsheet Compilation
+Heroku Deploy Guides & Cheatsheet Compilation
+=============================================
 
 Heroku lets you deploy, run and manage applications written in Ruby, Node.js, Java, Python, Clojure, Scala, Go and PHP. An application is a…
 
----
+------------------------------------------------------------------------
 
 ### Heroku Deploy Guides & Cheatsheet Compilation
 
-#### Heroku lets you deploy, run and manage applications written in Ruby, Node.js, Java, Python, Clojure, Scala, Go and PHP. An application is a collection of _source code_ written in one of these languages, perhaps a framework, and some _dependency description_ that instructs a build system as to which additional dependencies are needed in order to build and run the application.
+#### Heroku lets you deploy, run and manage applications written in Ruby, Node.js, Java, Python, Clojure, Scala, Go and PHP. An application is a collection of *source code* written in one of these languages, perhaps a framework, and some *dependency description* that instructs a build system as to which additional dependencies are needed in order to build and run the application.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*gAOfoFENBTwE5mqJ.gif" class="graf-image" /></figure>#### This is a quick tutorial explaining how to get a static website hosted on Heroku.
 
 > Heroku hosts apps on the internet, not static websites. To get it to run your static portfolio, personal blog, etc., you need to trick Heroku into thinking your website is a PHP app.
 
-> Basic Assumptions You want to deploy some straight-up HTML, CSS, JS, maybe a few images. Nothing fancy here. You are in the root directory of your site (i.e. the directory that contains all subdirectories and files for the site) The root directory contains a main HTML page, e.g. index.html A Heroku app and remote are set up and ready to go Steps Add a file called composer.json to the root directory by running touch composer.json Add a file called index.php to the root directory by running touch index.php Rename the homepage (e.g. index.html) to home.html In index.php, add the following line: In composer.json, add the following line: {} Run git push heroku master Done! Visit your deployed single-page website, hosted by Heroku (as a fake PHP app ☺).
+> Basic Assumptions You want to deploy some straight-up HTML, CSS, JS, maybe a few images. Nothing fancy here. You are in the root directory of your site (i.e. the directory that contains all subdirectories and files for the site) The root directory contains a main HTML page, e.g. index.html A Heroku app and remote are set up and ready to go Steps Add a file called composer.json to the root directory by running touch composer.json Add a file called index.php to the root directory by running touch index.php Rename the homepage (e.g. index.html) to home.html In index.php, add the following line: In composer.json, add the following line: {} Run git push heroku master Done! Visit your deployed single-page website, hosted by Heroku (as a fake PHP app ☺).
 
-<strong>A list of all of my articles to link to future posts</strong>
-<br/>
+**A list of all of my articles to link to future posts**  
 
-<em>You should probably skip this one… seriously it's just for internal use!</em>
+*You should probably skip this one… seriously it’s just for internal use!*
 
-<em>You should probably skip this one… seriously it's just for internal use!</em>
+*You should probably skip this one… seriously it’s just for internal use!*
 
 ### Steps:
 
@@ -39,7 +39,7 @@ We can start the application by running `node app.js`. Then we can try it out at
 
 The next step is to choose a version control system and to place our code in a development platform in a repository.
 
-The most popular version control system is <a href="https://git-scm.com/" class="markup--anchor markup--p-anchor">Git</a> along with <a href="https://github.com/" class="markup--anchor markup--p-anchor">Github</a> as a development platform, so that's what we'll use here.
+The most popular version control system is <a href="https://git-scm.com/" class="markup--anchor markup--p-anchor">Git</a> along with <a href="https://github.com/" class="markup--anchor markup--p-anchor">Github</a> as a development platform, so that’s what we’ll use here.
 
 On GitHub, go ahead and create a new repository for your application, like this:
 
@@ -51,7 +51,7 @@ For that, we need to create a new file `.gitignore` and inside it write the file
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*T-9QyGzUdWvFuA-D.png" class="graf-image" /></figure>Now, we can write the commands listed in the picture above (the one from GitHub).
 
-If you ran the commands correctly, then it'll be on your repository's page. If you refresh it you should see your files, except the one that you explicitly ignored, namely `node modules`.
+If you ran the commands correctly, then it’ll be on your repository’s page. If you refresh it you should see your files, except the one that you explicitly ignored, namely `node modules`.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*_WzaY9T9A0FsvPgb.png" class="graf-image" /></figure>### Step 3 — Link the repository with Heroku
 
@@ -61,7 +61,7 @@ First, create a new application on Heroku and follow the steps listed on the pla
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*J9tMV455odrM00UJ.png" class="graf-image" /></figure>Once the application has been created, a window similar to this should appear:
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*cowa0t6DgTqjUdjR.png" class="graf-image" /></figure>Now, if you look at the navigation at the top, you'll see `Overview`, `Resources`, `Deploy`, `Metrics` and so on. Be sure that `Deploy` is selected. Then on the second row, click on the GitHub icon.
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*cowa0t6DgTqjUdjR.png" class="graf-image" /></figure>Now, if you look at the navigation at the top, you’ll see `Overview`, `Resources`, `Deploy`, `Metrics` and so on. Be sure that `Deploy` is selected. Then on the second row, click on the GitHub icon.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*kAZI5kiisUiZ2Z9D.png" class="graf-image" /></figure>Search for the desired application, which is `demo-deploy-app-09` in our case. Then click `Connect`.
 
@@ -75,39 +75,37 @@ Once the application has been deployed, you can click on View to open your appli
 
 If you open the application at this point, you should see something like this:
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*rMZ8aneIjG3nx211.png" class="graf-image" /></figure>That's right, an error. That's because Heroku doesn't know how to start our application.
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*rMZ8aneIjG3nx211.png" class="graf-image" /></figure>That’s right, an error. That’s because Heroku doesn’t know how to start our application.
 
-If you remember, we ran the command `node app.js` to start the application locally.
-Heroku has no way of knowing what commands it needs to run to start the application, and that's why it threw an error.
+If you remember, we ran the command `node app.js` to start the application locally. Heroku has no way of knowing what commands it needs to run to start the application, and that’s why it threw an error.
 
 To solve this problem, we must create a new file named `Procfile` with the following content: `web: node ./app.js`.
 
 To update our application, all we need to do is push a new commit to GitHub. If we have enabled the `Automatic Deploys` option, then the code will be automatically pulled to Heroku. Otherwise we need to click on `Deploy Branch` again.
 
----
+------------------------------------------------------------------------
 
 ### Cheat Sheet:
 
----
+------------------------------------------------------------------------
 
 ### Git-Heroku Workflow:
 
----
+------------------------------------------------------------------------
 
 ### Full Stack Deploy:
 
 ### Alternative Approach:
 
----
+------------------------------------------------------------------------
 
 ### This one was created by Nick G and originally posted on medium Aug 29 2020.
 
 ### Find More On My Blog:
 
-<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong>
-<br/>
+**Web-Dev-Hub**  
 
-<em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…*bgoonz-blog.netlify.app<a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [July 29, 2021](https://medium.com/p/b2897b69ce02).
 

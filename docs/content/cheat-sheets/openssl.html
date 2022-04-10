@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>openssl</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="to-create-a-2048-bit-private-key">To create a 2048-bit private key:</h1>
+<p>openssl genrsa -out server.key 2048</p>
+<h1 id="to-create-the-certificate-signing-request-csr">To create the Certificate Signing Request (CSR):</h1>
+<p>openssl req -new -key server.key -out server.csr</p>
+<h1 id="to-sign-a-certificate-using-a-private-key-and-csr">To sign a certificate using a private key and CSR:</h1>
+<p>openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt</p>
+<h1 id="the-above-commands-may-be-run-in-sequence-to-generate-a-self-signed-ssl-certificate.">(The above commands may be run in sequence to generate a self-signed SSL certificate.)</h1>
+<h1 id="to-show-certificate-information-for-a-certificate-signing-request">To show certificate information for a certificate signing request</h1>
+<p>openssl req -text -noout -in server.csr</p>
+<h1 id="to-show-certificate-information-for-generated-certificate">To show certificate information for generated certificate</h1>
+<p>openssl x509 -text -noout -in server.crt</p>
+<h1 id="to-get-the-sha256-fingerprint-of-a-certificate">To get the sha256 fingerprint of a certificate</h1>
+<p>openssl x509 -in server.crt -noout -sha256 -fingerprint</p>
+<h1 id="to-view-certificate-expiration">To view certificate expiration:</h1>
+<p>echo | openssl s_client -connect <hostname>:443 2&gt; /dev/null |<br />
+awk ‘/—–BEGIN/,/END CERTIFICATE—–/’ |<br />
+openssl x509 -noout -enddate</p>
+<h1 id="to-generate-diffie-hellman-parameters">To generate Diffie-Hellman parameters:</h1>
+<p>openssl dhparam -outform PEM -out dhparams.pem 2048</p>
+<h1 id="high-quality-options-for-openssl-for-symmetric-secret-key-encryption">High-quality options for openssl for symmetric (secret key) encryption</h1>
+<p>This is what knowledgable people consider a good set of options for symmetric encryption with openssl to give you a high-quality result. Also, always remember that the result is only as good as the password you use. You must use a strong password otherwise encryption is meaningless.</p>
+<p>openssl enc -e -aes-256-cbc<br />
+-salt<br />
+-pbkdf2<br />
+-iter 1000000<br />
+-md sha512<br />
+-base64<br />
+-in somefile<br />
+-out somefile.enc # to encrypt</p>
+<p>openssl enc -d -aes-256-cbc<br />
+-salt<br />
+-pbkdf2<br />
+-iter 1000000<br />
+-md sha512<br />
+-base64<br />
+-in somefile.enc<br />
+-out somefile # to decrypt</p>
+</body>
+</html>

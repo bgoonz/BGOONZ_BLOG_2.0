@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>boolean</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="boolean">Boolean</h1>
+<p>The <code>Boolean</code> object is an object wrapper for a boolean value.</p>
+<h2 id="description">Description</h2>
+<p>The value passed as the first parameter is converted to a boolean value, if necessary. If the value is omitted or is <code>0</code>, <code>-0</code>, <a href="null"><code>null</code></a>, <code>false</code>, <a href="nan"><code>NaN</code></a>, <a href="undefined"><code>undefined</code></a>, or the empty string (<code>""</code>), the object has an initial value of <code>false</code>. All other values, including any object, an empty array (<code>[]</code>), or the string “<code>false</code>”, create an object with an initial value of <code>true</code>.</p>
+<p>Do not confuse the <a href="https://developer.mozilla.org/en-US/docs/Glossary/Primitive">primitive</a> <code>Boolean</code> values <code>true</code> and <code>false</code> with the <code>true</code> and <code>false</code> values of the <code>Boolean</code> object.</p>
+<p><strong>Any</strong> object of which the value is not <a href="undefined"><code>undefined</code></a> or <a href="null"><code>null</code></a>, including a <code>Boolean</code> object whose value is <code>false</code>, evaluates to <code>true</code> when passed to a conditional statement. For example, the condition in the following <a href="../statements/if...else"><code>if</code></a> statement evaluates to <code>true</code>:</p>
+<pre><code>var x = new Boolean(false);
+if (x) {
+  // this code is executed
+}</code></pre>
+<p>This behavior does not apply to <code>Boolean</code> primitives. For example, the condition in the following <a href="../statements/if...else"><code>if</code></a> statement evaluates to <code>false</code>:</p>
+<pre><code>var x = false;
+if (x) {
+  // this code is not executed
+}</code></pre>
+<p>Do not use a <code>Boolean</code> object to convert a non-boolean value to a boolean value. To perform this task, instead, use <code>Boolean</code> as a function, or a <a href="../operators/logical_not">double NOT operator</a>:</p>
+<pre><code>var x = Boolean(expression);     // use this...
+var x = !!(expression);          // ...or this
+var x = new Boolean(expression); // don&#39;t use this!</code></pre>
+<p>If you specify any object, including a <code>Boolean</code> object whose value is <code>false</code>, as the initial value of a <code>Boolean</code> object, the new <code>Boolean</code> object has a value of <code>true</code>.</p>
+<pre><code>var myFalse = new Boolean(false);   // initial value of false
+var g = Boolean(myFalse);       // initial value of true
+var myString = new String(&#39;Hello&#39;); // string object
+var s = Boolean(myString);      // initial value of true</code></pre>
+<p>Do not use a <code>Boolean</code> object in place of a <code>Boolean</code> primitive.</p>
+<p><strong>Note:</strong> When the non-standard property <code>document.all</code> is used as an argument for this constructor, the result is a <code>Boolean</code> object with the value <code>false</code>. This property is legacy and non-standard and should not be used.</p>
+<h2 id="constructor">Constructor</h2>
+<p><a href="boolean/boolean"><code>Boolean()</code></a><br />
+Creates a new <code>Boolean</code> object.</p>
+<h2 id="instance-methods">Instance methods</h2>
+<p><a href="boolean/tostring"><code>Boolean.prototype.toString()</code></a><br />
+Returns a string of either <code>true</code> or <code>false</code> depending upon the value of the object. Overrides the <a href="object/tostring"><code>Object.prototype.toString()</code></a> method.</p>
+<p><a href="boolean/valueof"><code>Boolean.prototype.valueOf()</code></a><br />
+Returns the primitive value of the <a href="boolean"><code>Boolean</code></a> object. Overrides the <a href="object/valueof"><code>Object.prototype.valueOf()</code></a> method.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="creating-boolean-objects-with-an-initial-value-of-false">Creating <code>Boolean</code> objects with an initial value of <code>false</code></h3>
+<pre><code>var bNoParam = new Boolean();
+var bZero = new Boolean(0);
+var bNull = new Boolean(null);
+var bEmptyString = new Boolean(&#39;&#39;);
+var bfalse = new Boolean(false);</code></pre>
+<h3 id="creating-boolean-objects-with-an-initial-value-of-true">Creating <code>Boolean</code> objects with an initial value of <code>true</code></h3>
+<pre><code>var btrue = new Boolean(true);
+var btrueString = new Boolean(&#39;true&#39;);
+var bfalseString = new Boolean(&#39;false&#39;);
+var bSuLin = new Boolean(&#39;Su Lin&#39;);
+var bArrayProto = new Boolean([]);
+var bObjProto = new Boolean({});</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-boolean-objects">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-boolean-objects</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>Boolean</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>Boolean</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>4</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>toSource</code></p>
+<p>No</p>
+<p>No</p>
+<p>1-74</p>
+<p>Starting in Firefox 74, <code>toSource()</code> is no longer available for use by web content. It is still allowed for internal and privileged code.</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>4</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p><code>toString</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>4</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>valueOf</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>4</p>
+<p>4</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Boolean">Boolean</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#boolean_type">Boolean primitives</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Boolean_data_type">Boolean data type (Wikipedia)</a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean</a></p>
+</body>
+</html>

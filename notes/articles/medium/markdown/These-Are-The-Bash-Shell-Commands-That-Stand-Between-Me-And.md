@@ -1,16 +1,17 @@
-# These Are The Bash Shell Commands That Stand Between Me And Insanity
+These Are The Bash Shell Commands That Stand Between Me And Insanity
+====================================================================
 
 I will not profess to be a bash shell wizard… but I have managed to scour some pretty helpful little scripts from Stack Overflow and modify…
 
----
+------------------------------------------------------------------------
 
 ### These Are The Bash Shell Commands That Stand Between Me And Insanity
 
 #### I will not profess to be a bash shell wizard… but I have managed to scour some pretty helpful little scripts from Stack Overflow and modify them to suit my needs.
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*R_oz3NR6AD6EIp5d" alt="Photo by George Girnas on Unsplash" class="graf-image" /><figcaption>Photo by <a href="https://unsplash.com/@amfiloxia_68?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">George Girnas</a> on <a href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">Unsplash</a></figcaption></figure>All of these commands are for Ubuntu/WSL … some may work in other scenarios but I can't guarantee it.
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*R_oz3NR6AD6EIp5d" alt="Photo by George Girnas on Unsplash" class="graf-image" /><figcaption>Photo by <a href="https://unsplash.com/@amfiloxia_68?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">George Girnas</a> on <a href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">Unsplash</a></figcaption></figure>All of these commands are for Ubuntu/WSL … some may work in other scenarios but I can’t guarantee it.
 
-> _As of this writing I have about 120 more bash snippets I regularly use… I am not writing the whole article right now but I wanted to get it started so I feel obligated to finish it!_
+> *As of this writing I have about 120 more bash snippets I regularly use… I am not writing the whole article right now but I wanted to get it started so I feel obligated to finish it!*
 
 ### Recursive Unzip followed by recursive delete zip:
 
@@ -45,7 +46,7 @@ I will not profess to be a bash shell wizard… but I have managed to scour some
     find . -empty -type f -print -delete
     find . -empty -type d -print -delete
 
-**_or_**
+***or***
 
     find . -depth -exec rmdir {} \;
 
@@ -53,10 +54,9 @@ I will not profess to be a bash shell wizard… but I have managed to scour some
 
 ### For more content… go to :
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz - Overview</strong>
-<br/>
+**bgoonz - Overview**  
 
-<em>Web Developer, Electrical Engineer https://bryanguner.medium.com/ https://portfolio42.netlify.app/…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Web Developer, Electrical Engineer https://bryanguner.medium.com/ https://portfolio42.netlify.app/…*github.com<a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [May 15, 2021](https://medium.com/p/984865ba5d1b).
 

@@ -1,8 +1,10 @@
-# encodeURIComponent()
+encodeURIComponent()
+====================
 
-The `encodeURIComponent()` function encodes a [URI](https://developer.mozilla.org/en-US/docs/Glossary/URI) by replacing each instance of certain characters by one, two, three, or four escape sequences representing the [UTF-8](https://developer.mozilla.org/en-US/docs/Glossary/UTF-8) encoding of the character (will only be four escape sequences for characters composed of two "surrogate" characters).
+The `encodeURIComponent()` function encodes a [URI](https://developer.mozilla.org/en-US/docs/Glossary/URI) by replacing each instance of certain characters by one, two, three, or four escape sequences representing the [UTF-8](https://developer.mozilla.org/en-US/docs/Glossary/UTF-8) encoding of the character (will only be four escape sequences for characters composed of two “surrogate” characters).
 
-## Syntax
+Syntax
+------
 
     encodeURIComponent(str);
 
@@ -15,7 +17,8 @@ String. A component of a URI.
 
 A new string representing the provided string encoded as a URI component.
 
-## Description
+Description
+-----------
 
 `encodeURIComponent()` escapes all characters **except**:
 
@@ -51,13 +54,13 @@ Note that a [`URIError`](urierror) will be thrown if one attempts to encode a su
     // lone low surrogate throws "URIError: malformed URI sequence"
     console.log(encodeURIComponent('\uDFFF'));
 
-Use `encodeURIComponent()` on user-entered fields from forms [`POST`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST)'d to the server. This will encode `&` symbols that may inadvertently be generated during data entry for special HTML entities or other characters that require encoding/decoding.
+Use `encodeURIComponent()` on user-entered fields from forms [`POST`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST)’d to the server. This will encode `&` symbols that may inadvertently be generated during data entry for special HTML entities or other characters that require encoding/decoding.
 
 For example, if a user writes `Jack & Jill`, the text may get encoded as `Jack &amp; Jill`. Without `encodeURIComponent()` the ampersand could be interpretted on the server as the start of a new field and jeopardize the integrity of the data.
 
 For [`application/x-www-form-urlencoded`](https://www.whatwg.org/specs/web-apps/current-work/multipage/association-of-controls-and-forms.html#application/x-www-form-urlencoded-encoding-algorithm), spaces are to be replaced by `+`, so one may wish to follow a `encodeURIComponent()` replacement with an additional replacement of `%20` with `+`.
 
-To be more stringent in adhering to [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986) (which reserves !, ', (, ), and \*), even though these characters have no formalized URI delimiting uses, the following can be safely used:
+To be more stringent in adhering to [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986) (which reserves !, ’, (, ), and \*), even though these characters have no formalized URI delimiting uses, the following can be safely used:
 
     function fixedEncodeURIComponent(str) {
       return encodeURIComponent(str).replace(/[!'()*]/g, function(c) {
@@ -65,7 +68,8 @@ To be more stringent in adhering to [RFC 3986](https://datatracker.ietf.org/doc/
       });
     }
 
-## Examples
+Examples
+--------
 
 ### Encoding for Content-Disposition and Link headers
 
@@ -101,12 +105,11 @@ The following example provides the special encoding required within UTF-8 [`Cont
         replace(/%(7C|60|5E)/g, (str, hex) => String.fromCharCode(parseInt(hex, 16)));
     }
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-encodeuricomponent-uricomponent">ECMAScript (ECMA-262) 
-<br/>
-
-<span class="small">The definition of 'encodeURIComponent' in that specification.</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript (ECMA-262)<br />
+</p><span class="small">The definition of ‘encodeURIComponent’ in that specification.</span></td></tr></tbody></table>
 
 `encodeURIComponent`
 
@@ -134,7 +137,8 @@ The following example provides the special encoding required within UTF-8 [`Cont
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`decodeURI`](decodeuri)
 -   [`encodeURI`](encodeuri)

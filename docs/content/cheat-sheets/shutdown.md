@@ -1,15 +1,19 @@
-# To reboot the system immediately:
+To reboot the system immediately:
+=================================
 
 shutdown -r now
 
-# To shut system down immediately:
+To shut system down immediately:
+================================
 
 shutdown -h now
 
-# To reboot system after 5 minutes:
+To reboot system after 5 minutes:
+=================================
 
 shutdown -r +5
 
-# To cancel a scheduled shutdown:
+To cancel a scheduled shutdown:
+===============================
 
 shutdown -c

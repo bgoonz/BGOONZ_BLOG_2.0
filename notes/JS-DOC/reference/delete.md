@@ -1,8 +1,10 @@
-# delete operator
+delete operator
+===============
 
 The JavaScript `delete` removes a property from an object; if no more references to the same property are held, it is eventually released automatically.
 
-## Syntax
+Syntax
+------
 
     delete expression
 
@@ -27,7 +29,8 @@ The property to delete.
 
 Throws [`TypeError`](../global_objects/typeerror) in [`strict mode`](../strict_mode) if the property is an own non-configurable property.
 
-## Description
+Description
+-----------
 
 Unlike what common belief suggests (perhaps due to other programming languages like [delete in C++](https://docs.microsoft.com/en-us/cpp/cpp/delete-operator-cpp?view=vs-2019)), the `delete` operator has **nothing** to do with directly freeing memory. Memory management is done indirectly via breaking references. See the [memory management](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management) page for more details.
 
@@ -36,8 +39,8 @@ The `delete` operator removes a given property from an object. On successful del
 However, it is important to consider the following scenarios:
 
 -   If the property which you are trying to delete does not exist, `delete` will not have any effect and will return `true`.
--   If a property with the same name exists on the object's prototype chain, then, after deletion, the object will use the property from the prototype chain (in other words, `delete` only has an effect on own properties).
--   Any property declared with [`var`](../statements/var) cannot be deleted from the global scope or from a function's scope.
+-   If a property with the same name exists on the object’s prototype chain, then, after deletion, the object will use the property from the prototype chain (in other words, `delete` only has an effect on own properties).
+-   Any property declared with [`var`](../statements/var) cannot be deleted from the global scope or from a function’s scope.
     -   As such, `delete` cannot delete any functions in the global scope (whether this is part from a function definition or a function expression).
     -   Functions which are part of an object (apart from the global scope) can be deleted with `delete`.
 -   Any property declared with [`let`](../statements/let) or [`const`](../statements/const) cannot be deleted from the scope within which they were defined.
@@ -60,7 +63,7 @@ The following snippet gives a simple example:
 
 ### Non-configurable properties
 
-When a property is marked as non-configurable, `delete` won't have any effect, and will return `false`. In strict mode this will raise a `TypeError`.
+When a property is marked as non-configurable, `delete` won’t have any effect, and will return `false`. In strict mode this will raise a `TypeError`.
 
     var Employee = {};
     Object.defineProperty(Employee, 'name', {configurable: false});
@@ -86,7 +89,7 @@ When a property is marked as non-configurable, `delete` won't have any effect, a
 
 In strict mode, this would have raised an exception.
 
-### Strict vs. non-strict mode
+### Strict vs. non-strict mode
 
 When in strict mode, if `delete` is used on a direct reference to a variable, a function argument or a function name, it will throw a [`SyntaxError`](../global_objects/syntaxerror)**.** Therefore, to avoid syntax errors in strict mode, you must use the `delete` operator in the form of `delete object.property` or `delete object['property']`.
 
@@ -109,11 +112,12 @@ When in strict mode, if `delete` is used on a direct reference to a variable, a 
 
 ### Cross-browser notes
 
-Although ECMAScript makes iteration order of objects implementation-dependent, it may appear that all major browsers support an iteration order based on the earliest added property coming first (at least for properties not on the prototype). However, in the case of Internet Explorer, when one uses `delete` on a property, some confusing behavior results, preventing other browsers from using simple objects like object literals as ordered associative arrays. In Explorer, while the property _value_ is indeed set to `undefined`, if one later adds back a property with the same name, the property will be iterated in its _old_ position--not at the end of the iteration sequence as one might expect after having deleted the property and then added it back.
+Although ECMAScript makes iteration order of objects implementation-dependent, it may appear that all major browsers support an iteration order based on the earliest added property coming first (at least for properties not on the prototype). However, in the case of Internet Explorer, when one uses `delete` on a property, some confusing behavior results, preventing other browsers from using simple objects like object literals as ordered associative arrays. In Explorer, while the property *value* is indeed set to `undefined`, if one later adds back a property with the same name, the property will be iterated in its *old* position–not at the end of the iteration sequence as one might expect after having deleted the property and then added it back.
 
 If you want to use an ordered associative array in a cross-browser environment, use a [`Map`](../global_objects/map) object if available, or simulate this structure with two separate arrays (one for the keys and the other for the values), or build an array of single-property objects, etc.
 
-## Examples
+Examples
+--------
 
     // Creates the property adminName on the global scope.
     adminName = 'xyz';
@@ -215,12 +219,11 @@ If instead, you want to remove an array element by changing the contents of the 
     trees.splice(3,1);
     console.log(trees); // ["redwood", "bay", "cedar", "maple"]
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-delete-operator">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-delete-operator</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-delete-operator</span></td></tr></tbody></table>
 
 `delete`
 
@@ -248,12 +251,12 @@ If instead, you want to remove an array element by changing the contents of the 
 
 1.0
 
-## See also
+See also
+--------
 
 -   [In depth analysis on delete](http://perfectionkills.com/understanding-delete/)
 -   [`Reflect.deleteProperty()`](../global_objects/reflect/deleteproperty)
 -   [`Map.prototype.delete()`](../global_objects/map/delete)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete</a>

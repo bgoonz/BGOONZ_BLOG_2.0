@@ -1,14 +1,15 @@
-# React State
+React State
+===========
 
 Demystified
 
----
+------------------------------------------------------------------------
 
 ### React State
 
 #### Demystified
 
-### Here's a gist containing most of the below react components:
+### Here’s a gist containing most of the below react components:
 
 <a href="https://gist.github.com/bgoonz/216025f38eed1dd451df356e4085fa5a" class="markup--anchor markup--p-anchor">https://gist.github.com/bgoonz/216025f38eed1dd451df356e4085fa5a</a>
 
@@ -73,7 +74,7 @@ Demystified
 **Stateful components**
 
 -   <span id="1ecc">One of the major reasons why you would choose to use a **Class Component** over a Function Component is to add and manage local or internal state to your component.</span>
--   <span id="c4cd">Second of the major reasons is to be able to use a Class Component's lifecycle methods.</span>
+-   <span id="c4cd">Second of the major reasons is to be able to use a Class Component’s lifecycle methods.</span>
 
 **What is state?**
 
@@ -84,10 +85,10 @@ Demystified
 
 **When to use state**
 
--   <span id="0936">_Only Use State when it is absolutely necessary_</span>
--   <span id="2052">If the data never changes, or if it's needed through an entire application use props instead.</span>
+-   <span id="0936">*Only Use State when it is absolutely necessary*</span>
+-   <span id="2052">If the data never changes, or if it’s needed through an entire application use props instead.</span>
 -   <span id="04ff">State is more often used when creating components that retrieve data from APIs or render forms.</span>
--   <span id="5a9f">**The general rule of thumb**: If a component doesn't need to use state or Lifecyle methods, it should be prioritized as a `function component`.</span>
+-   <span id="5a9f">**The general rule of thumb**: If a component doesn’t need to use state or Lifecyle methods, it should be prioritized as a `function component`.</span>
 -   <span id="412f">Functional:Stateless || Class:Stateful</span>
 
 **Initializing state**
@@ -148,9 +149,9 @@ Demystified
 
 **Updating State**
 
--   <span id="e560">Let's say we want to update our state with a new quote.</span>
+-   <span id="e560">Let’s say we want to update our state with a new quote.</span>
 -   <span id="ead5">We can set up event listeners in React similarly to how we did them before.</span>
--   <span id="b7c7">&lt;button type="button" onClick={this.changeQuote}&gt; Change Quote &lt;/button&gt;</span>
+-   <span id="b7c7">&lt;button type=“button” onClick={this.changeQuote}&gt; Change Quote &lt;/button&gt;</span>
 -   <span id="270b">`onClick` is the event listener.</span>
 -   <span id="10c4">`{this.changeQuote}` is the event handler method.</span>
 -   <span id="99e8">Our Class Component File should now look like this with the new additions:</span>
@@ -206,7 +207,7 @@ Demystified
 
     export default RandomQuote;
 
-**Don't modify state directly**
+**Don’t modify state directly**
 
 -   <span id="11e2">It is important to `never` modify your state directly!</span>
 -   <span id="d085">ALWAYS use `this.setState` method to update state.</span>
@@ -278,7 +279,7 @@ Demystified
       document.getElementById('root');
     )
 
--   <span id="c3f2">One thing to note about this workaround is that the caller of the component _must_ set the quotes prop or the component will throw an error =&gt; so use `defaultProps`!</span>
+-   <span id="c3f2">One thing to note about this workaround is that the caller of the component *must* set the quotes prop or the component will throw an error =&gt; so use `defaultProps`!</span>
 
 <!-- -->
 
@@ -294,7 +295,7 @@ Demystified
       ],
     };
 
--   <span id="8909">A good safety net in case the consumer/caller doesn't provide a value for the quotes array.</span>
+-   <span id="8909">A good safety net in case the consumer/caller doesn’t provide a value for the quotes array.</span>
 -   <span id="a254">We can even remove it from our index.js now and an error will not be thrown.</span>
 
 ### Handling Events
@@ -320,7 +321,7 @@ Demystified
       }
     }
 
--   <span id="c8ad">Note that when referring the handler method in onClick we're not invoking showAlert simply just passing a reference.</span>
+-   <span id="c8ad">Note that when referring the handler method in onClick we’re not invoking showAlert simply just passing a reference.</span>
 
 **Preventing default behavior**
 
@@ -405,7 +406,7 @@ Demystified
     displayAgain(); // => Result in a Type Error: Cannot read property 'name' of undefined.
 
 -   <span id="f44c">The first time we use our `displayMethod` call, it is called directly on the instance of the boyfriend class, which is why `Javascript` was printed out.</span>
--   <span id="5ab3">The second time it was called, the ref of the method is stored as a variable and method is called on that variable instead of the instance; resulting in a type error (it has lost it's context)</span>
+-   <span id="5ab3">The second time it was called, the ref of the method is stored as a variable and method is called on that variable instead of the instance; resulting in a type error (it has lost it’s context)</span>
 -   <span id="f151">Remember we can use the `bind` method to rebind context!</span>
 -   <span id="a90b">We can refactor to get the second call working like this:</span>
 
@@ -440,15 +441,15 @@ Demystified
 
     export default AlertButton;
 
--   <span id="e397">`Experimental Syntax` : Syntax that has been proposed to add to ECMAScript but hasn't officially been added to the language specification yet.</span>
--   <span id="eb35">It's good to pick one approach and use it consistently, either:</span>
+-   <span id="e397">`Experimental Syntax` : Syntax that has been proposed to add to ECMAScript but hasn’t officially been added to the language specification yet.</span>
+-   <span id="eb35">It’s good to pick one approach and use it consistently, either:</span>
 
 1.  <span id="e7c9">Class Properties & Arrow Functions</span>
 2.  <span id="f447">Bind Method & This Keyword</span>
 
 **The** `SyntheticEvent` **object**
 
--   <span id="d26e">**Synthetic Event Objects**: Cross Browser wrappers around the browser's native event.</span>
+-   <span id="d26e">**Synthetic Event Objects**: Cross Browser wrappers around the browser’s native event.</span>
 -   <span id="7319">Includes the use of stopPropagation() and preventDefault();</span>
 -   <span id="1d15">Attributes of the Synthetic Event Object:</span>
 
@@ -456,20 +457,20 @@ Demystified
 
 ### Forms in React
 
-_Exercise being done in a separate file_
+*Exercise being done in a separate file*
 
 **Random Notes**
 
 -   <span id="f551">`onChange` : detects when a value of an input element changes.</span>
--   <span id="a180">Assigning `onChange` to our input fields makes our component's state update in real time during user input.</span>
--   <span id="6814">Don't forget to add `preventDefault` onto form submissions to deal with the default behavior of the browser refreshing the page!</span>
+-   <span id="a180">Assigning `onChange` to our input fields makes our component’s state update in real time during user input.</span>
+-   <span id="6814">Don’t forget to add `preventDefault` onto form submissions to deal with the default behavior of the browser refreshing the page!</span>
 -   <span id="830f">`submittedOn: new Date(),` Can be added to a form, most likely will persist into a DB.</span>
 
 #### **Controlled Components**
 
--   <span id="2228">We use the `onChange` event handlers on form fields to keep our component's state as the `"one source of truth"`</span>
+-   <span id="2228">We use the `onChange` event handlers on form fields to keep our component’s state as the `"one source of truth"`</span>
 -   <span id="44e7">Adding an `onChange` event handler to every single input can massively bloat your code.</span>
--   <span id="056c">Try assigning it to it's own method to apply everywhere.</span>
+-   <span id="056c">Try assigning it to it’s own method to apply everywhere.</span>
 -   <span id="9137">`textarea` is handled differently in react: it takes in a value property to handle what the inner text will be.</span>
 
 <!-- -->
@@ -500,7 +501,7 @@ _Exercise being done in a separate file_
 
 -   <span id="588f">Server-side validation is not optional.</span>
 -   <span id="e35c">Tech-savvy users can manipulate client-side validations.</span>
--   <span id="03da">Sometimes the 'best approach' is to skip implementing validations on the client-side and rely completely on the server-side validation.</span>
+-   <span id="03da">Sometimes the ‘best approach’ is to skip implementing validations on the client-side and rely completely on the server-side validation.</span>
 
 ### Component Lifecycle
 
@@ -546,12 +547,12 @@ _Exercise being done in a separate file_
 **Avoiding the legacy lifecycle methods**
 
 -   <span id="732f">Occasionally you will encounter some deprecated lifecycle methods:</span>
--   <span id="fb04">UNSAFE_componentWillMount</span>
--   <span id="5f6e">UNSAFE_componentWillReceiveProps</span>
--   <span id="b7aa">UNSAFE_componentWillUpdate</span>
--   <span id="6277">Just know they will be removed soon from React's API…☮️</span>
+-   <span id="fb04">UNSAFE\_componentWillMount</span>
+-   <span id="5f6e">UNSAFE\_componentWillReceiveProps</span>
+-   <span id="b7aa">UNSAFE\_componentWillUpdate</span>
+-   <span id="6277">Just know they will be removed soon from React’s API…☮️</span>
 
----
+------------------------------------------------------------------------
 
 ### React Docs:
 

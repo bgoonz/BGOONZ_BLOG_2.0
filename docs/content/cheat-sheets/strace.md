@@ -1,31 +1,39 @@
-# To strace a command:
+To strace a command:
+====================
 
-strace <command>
+strace
 
-# To save the trace to a file:
+To save the trace to a file:
+============================
 
-strace -o <outfile> <command>
+strace -o
 
-# To follow only the open() system call:
+To follow only the open() system call:
+======================================
 
-strace -e trace=open <command>
+strace -e trace=open
 
-# To follow all the system calls which open a file:
+To follow all the system calls which open a file:
+=================================================
 
-strace -e trace=file <command>
+strace -e trace=file
 
-# To follow all the system calls associated with process management:
+To follow all the system calls associated with process management:
+==================================================================
 
-strace -e trace=process <command>
+strace -e trace=process
 
-# To follow child processes as they are created:
+To follow child processes as they are created:
+==============================================
 
-strace -f <command>
+strace -f
 
-# To count time, calls and errors for each system call:
+To count time, calls and errors for each system call:
+=====================================================
 
-strace -c <command>
+strace -c
 
-# To trace a running process (multiple PIDs can be specified):
+To trace a running process (multiple PIDs can be specified):
+============================================================
 
-strace -p <pid>
+strace -p

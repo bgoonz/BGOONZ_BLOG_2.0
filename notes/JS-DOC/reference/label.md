@@ -1,8 +1,10 @@
-# label
+label
+=====
 
 The **labeled statement** can be used with [`break`](break) or [`continue`](continue) statements. It is prefixing a statement with an identifier which you can refer to.
 
-## Syntax
+Syntax
+------
 
     label :
       statement
@@ -13,15 +15,17 @@ Any JavaScript identifier that is not a reserved word.
 `statement`  
 A JavaScript statement. `break` can be used with any labeled statement, and `continue` can be used with looping labeled statements.
 
-## Description
+Description
+-----------
 
 You can use a label to identify a loop, and then use the `break` or `continue` statements to indicate whether a program should interrupt the loop or continue its execution.
 
-Note that JavaScript has _no_ `goto` statement, you can only use labels with `break` or `continue`.
+Note that JavaScript has *no* `goto` statement, you can only use labels with `break` or `continue`.
 
-In [strict mode](../strict_mode) code, you can't use "`let`" as a label name. It will throw a [`SyntaxError`](../global_objects/syntaxerror) (let is a reserved identifier).
+In [strict mode](../strict_mode) code, you can’t use “`let`” as a label name. It will throw a [`SyntaxError`](../global_objects/syntaxerror) (let is a reserved identifier).
 
-## Examples
+Examples
+--------
 
 ### Using a labeled continue with for loops
 
@@ -138,12 +142,11 @@ In [strict mode](../strict_mode) code, however, this will throw a [`SyntaxError`
     L: function* F() {}
     // SyntaxError: generator functions cannot be labelled
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-labelled-statements">ECMAScript (ECMA-262) 
-<br/>
-
-<span class="small">The definition of 'Labelled statement' in that specification.</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript (ECMA-262)<br />
+</p><span class="small">The definition of ‘Labelled statement’ in that specification.</span></td></tr></tbody></table>
 
 `label`
 
@@ -171,11 +174,11 @@ In [strict mode](../strict_mode) code, however, this will throw a [`SyntaxError`
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`break`](break)
 -   [`continue`](continue)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/label" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/label</a>

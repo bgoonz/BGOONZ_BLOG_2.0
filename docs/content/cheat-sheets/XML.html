@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>XML</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<blockquote>
+<p>announcement: this doc is a quiz-, interview-oriented cheatsheet, which desigend for those who want to have an overview of XML, when preparing for interviews.</p>
+</blockquote>
+<h1 id="what-is-xml">What is XML</h1>
+<p>XML stands for eXtensible Markup Language, XML was designed to store and transport data. XML is often used for distributing data over the Internet(especial in web development).</p>
+<h1 id="then-how-can-xml-store-data">Then how can XML store data</h1>
+<p>XML uses a DTD to describe the data.</p>
+<h1 id="the-relation-with-html">The relation with HTML</h1>
+<ul>
+<li>XML: is used to store or transport data. So the XML is a <strong>Complement</strong> to HTML.</li>
+<li>HTML: is used to format and display the same data.</li>
+</ul>
+<p>XML does not carry any information about how to be displayed. The same XML data can be used in many different presentation scenarios. Because of this, with XML, there is a full separation between data and presentation.</p>
+<h1 id="what-is-xml-schemadtd">What is XML Schema/DTD</h1>
+<p>The purpose of a DTD is to define the structure of an XML document. It defines the structure with a list of legal elements:</p>
+<h1 id="when-not-to-use-a-xml-dtdsschema">When Not to Use a XML DTD/Sschema</h1>
+<p>XML does not require a DTD/Schema.</p>
+<p>When you are experimenting with XML, or when you are working with small XML files, creating DTDs may be a waste of time.</p>
+<p>If you develop applications, wait until the specification is stable before you add a document definition. Otherwise, your software might stop working because of validation errors.</p>
+<h1 id="xml-syntax">XML Syntax</h1>
+<p>The XML language has no predefined tags, but the syntax is rather logic and easy to learn. XML documents must contain one root element that is the parent of all other elements.</p>
+<pre><code>&lt;bookstore&gt;
+  &lt;book category=&quot;children&quot;&gt;
+    &lt;title&gt;Harry Potter&lt;/title&gt;
+    &lt;author&gt;J K. Rowling&lt;/author&gt;
+    &lt;year&gt;2005&lt;/year&gt;
+    &lt;price&gt;29.99&lt;/price&gt;
+  &lt;/book&gt;
+  &lt;book category=&quot;web&quot;&gt;
+    &lt;title&gt;Learning XML&lt;/title&gt;
+    &lt;author&gt;Erik T. Ray&lt;/author&gt;
+    &lt;year&gt;2003&lt;/year&gt;
+    &lt;price&gt;39.95&lt;/price&gt;
+  &lt;/book&gt;
+&lt;/bookstore&gt;</code></pre>
+<ol type="1">
+<li>XML Tags are Case Sensitive</li>
+<li>All XML Elements Must Have a Closeing Tag</li>
+</ol>
+<pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;br /&gt;  &lt;!-- This is a self closing --&gt;</code></pre>
+<ol start="3" type="1">
+<li>XML Attribute Values Must Always be Quoted</li>
+<li>Pay attention to the name rules.</li>
+</ol>
+<h1 id="reference">Reference</h1>
+<ol type="1">
+<li>(W3School) [https://www.w3schools.com/xml/]</li>
+<li><a href="https://www.i-d-e.de/wp-content/uploads/2015/02/ide-xml-kurzreferenz.pdf">cheat sheet in German</a></li>
+</ol>
+</body>
+</html>

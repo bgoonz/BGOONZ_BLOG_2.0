@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>sub</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="atomics.sub">Atomics.sub()</h1>
+<p>The static <code>Atomics.sub()</code> method substracts a given value at a given position in the array and returns the old value at that position. This atomic operation guarantees that no other write happens until the modified value is written back.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>Atomics.sub(typedArray, index, value)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>typedArray</code><br />
+An integer typed array. One of <a href="../int8array"><code>Int8Array</code></a>, <a href="../uint8array"><code>Uint8Array</code></a>, <a href="../int16array"><code>Int16Array</code></a>, <a href="../uint16array"><code>Uint16Array</code></a>, <a href="../int32array"><code>Int32Array</code></a>, <a href="../uint32array"><code>Uint32Array</code></a>, <a href="../bigint64array"><code>BigInt64Array</code></a>, or <a href="../biguint64array"><code>BigUint64Array</code></a>.</p>
+<p><code>index</code><br />
+The position in the <code>typedArray</code> to subtract a <code>value</code> from.</p>
+<p><code>value</code><br />
+The number to subtract.</p>
+<h3 id="return-value">Return value</h3>
+<p>The old value at the given position (<code>typedArray[index]</code>).</p>
+<h3 id="exceptions">Exceptions</h3>
+<ul>
+<li>Throws a <a href="../typeerror"><code>TypeError</code></a>, if <code>typedArray</code> is not one of the allowed integer types.</li>
+<li>Throws a <a href="../rangeerror"><code>RangeError</code></a>, if <code>index</code> is out of bounds in the <code>typedArray</code>.</li>
+</ul>
+<h2 id="examples">Examples</h2>
+<h3 id="using-sub">Using sub</h3>
+<pre><code>const sab = new SharedArrayBuffer(1024);
+const ta = new Uint8Array(sab);
+ta[0] = 48;
+
+Atomics.sub(ta, 0, 12); // returns 48, the old value
+Atomics.load(ta, 0); // 36</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-atomics.sub">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-atomics.sub</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>sub</code></p>
+<p>68</p>
+<p>60-63</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place.</p>
+<p>79</p>
+<p>16-17</p>
+<p>Support was removed to mitigate <a href="https://blogs.windows.com/msedgedev/2018/01/03/speculative-execution-mitigations-microsoft-edge-internet-explorer">speculative execution side-channel attacks (Windows blog)</a>.</p>
+<p>78</p>
+<p>57</p>
+<p>Support was disabled by default to mitigate <a href="https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/">speculative execution side-channel attacks (Mozilla Security Blog)</a>.</p>
+<p>55-57</p>
+<p>46-55</p>
+<p>No</p>
+<p>No</p>
+<p>10.1-11.1</p>
+<p>60-63</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p>60-63</p>
+<p>Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p>57</p>
+<p>Support was disabled by default to mitigate <a href="https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/">speculative execution side-channel attacks (Mozilla Security Blog)</a>.</p>
+<p>55-57</p>
+<p>46-55</p>
+<p>No</p>
+<p>10.3-11.3</p>
+<p>No</p>
+<p>Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../atomics"><code>Atomics</code></a></li>
+<li><a href="add"><code>Atomics.add()</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics/sub" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics/sub</a></p>
+</body>
+</html>

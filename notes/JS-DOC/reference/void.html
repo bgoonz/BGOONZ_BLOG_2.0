@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>void</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="void-operator">void operator</h1>
+<p>The <code>void</code> evaluates the given <code>expression</code> and then returns <a href="../global_objects/undefined"><code>undefined</code></a>.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>void expression</code></pre>
+<h2 id="description">Description</h2>
+<p>This operator allows evaluating expressions that produce a value into places where an expression that evaluates to <a href="../global_objects/undefined"><code>undefined</code></a> is desired.</p>
+<p>The <code>void</code> operator is often used merely to obtain the <code>undefined</code> primitive value, usually using “<code>void(0)</code>” (which is equivalent to “<code>void 0</code>”). In these cases, the global variable <a href="../global_objects/undefined"><code>undefined</code></a> can be used.</p>
+<p>It should be noted that <a href="operator_precedence">the precedence</a> of the <code>void</code> operator should be taken into account and that parentheses can help clarify the resolution of the expression following the <code>void</code> operator:</p>
+<pre><code>void 2 == &#39;2&#39;;   // (void 2) == &#39;2&#39;, returns false
+void (2 == &#39;2&#39;); // void (2 == &#39;2&#39;), returns undefined</code></pre>
+<h2 id="examples">Examples</h2>
+<h3 id="immediately-invoked-function-expressions">Immediately Invoked Function Expressions</h3>
+<p>When using an <a href="https://developer.mozilla.org/en-US/docs/Glossary/IIFE">immediately-invoked function expression</a>, <code>void</code> can be used to force the <code>function</code> keyword to be treated as an expression instead of a declaration.</p>
+<pre><code>void function iife() {
+
+  console.log(&quot;Executed!&quot;);
+
+}();
+
+// Output: &quot;Executed!&quot;</code></pre>
+<p>Executing the above function without the <code>void</code> keyword will result in an <strong>Uncaught SyntaxError</strong>.</p>
+<h3 id="javascript-uris">JavaScript URIs</h3>
+<p>When a browser follows a <code>javascript:</code> URI, it evaluates the code in the URI and then replaces the contents of the page with the returned value, unless the returned value is <a href="../global_objects/undefined"><code>undefined</code></a>. The <code>void</code> operator can be used to return <code>undefined</code>. For example:</p>
+<pre><code>&lt;a href=&quot;javascript:void(0);&quot;&gt;
+  Click here to do nothing
+&lt;/a&gt;
+
+&lt;a href=&quot;javascript:void(document.body.style.backgroundColor=&#39;green&#39;);&quot;&gt;
+  Click here for green background
+&lt;/a&gt;</code></pre>
+<p><strong>Note:</strong> <code>javascript:</code> pseudo protocol is discouraged over other alternatives, such as unobtrusive event handlers.</p>
+<h3 id="non-leaking-arrow-functions">Non-leaking Arrow Functions</h3>
+<p>Arrow functions introduce a short-hand braceless syntax that returns an expression. This can cause unintended side effects by returning the result of a function call that previously returned nothing. To be safe, when the return value of a function is not intended to be used, it can be passed to the void operator to ensure that (for example) changing APIs do not cause arrow functions’ behaviors to change.</p>
+<pre><code>button.onclick = () =&gt; void doSomething();</code></pre>
+<p>This ensures the return value of <code>doSomething</code> changing from <code>undefined</code> to <code>true</code> will not change the behavior of this code.</p>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-void-operator">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-void-operator</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>void</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>5</p>
+<p>4</p>
+<p>3.2</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>3</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../global_objects/undefined"><code>undefined</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/void" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/void</a></p>
+</body>
+</html>

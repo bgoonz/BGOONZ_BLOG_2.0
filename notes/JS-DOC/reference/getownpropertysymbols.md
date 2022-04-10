@@ -1,8 +1,10 @@
-# Object.getOwnPropertySymbols()
+Object.getOwnPropertySymbols()
+==============================
 
 The `Object.getOwnPropertySymbols()` method returns an array of all symbol properties found directly upon a given object.
 
-## Syntax
+Syntax
+------
 
     Object.getOwnPropertySymbols(obj)
 
@@ -15,13 +17,15 @@ The object whose symbol properties are to be returned.
 
 An array of all symbol properties found directly upon the given object.
 
-## Description
+Description
+-----------
 
 Similar to [`Object.getOwnPropertyNames()`](getownpropertynames), you can get all symbol properties of a given object as an array of symbols. Note that [`Object.getOwnPropertyNames()`](getownpropertynames) itself does not contain the symbol properties of an object and only the string properties.
 
 As all objects have no own symbol properties initially, `Object.getOwnPropertySymbols()` returns an empty array unless you have set symbol properties on your object.
 
-## Examples
+Examples
+--------
 
 ### Using getOwnPropertySymbols
 
@@ -38,12 +42,11 @@ As all objects have no own symbol properties initially, `Object.getOwnPropertySy
     console.log(objectSymbols);        // [Symbol(a), Symbol(b)]
     console.log(objectSymbols[0]);     // Symbol(a)
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.getownpropertysymbols">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-object.getownpropertysymbols</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-object.getownpropertysymbols</span></td></tr></tbody></table>
 
 `getOwnPropertySymbols`
 
@@ -71,11 +74,11 @@ No
 
 3.0
 
-## See also
+See also
+--------
 
 -   [`Object.getOwnPropertyNames()`](getownpropertynames)
 -   [`Symbol`](../symbol)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertySymbols" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertySymbols</a>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2022-01-03" />
+  <title>title</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">title</h1>
+<p class="subtitle">subtitle</p>
+<p class="date">2022-01-03</p>
+</header>
+<hr />
+<p>title: Ansible roles category: Ansible</p>
+<hr />
+<h3 id="structure">Structure</h3>
+<pre><code>roles/
+  common/
+    tasks/
+    handlers/
+    files/              # &#39;copy&#39; will refer to this
+    templates/          # &#39;template&#39; will refer to this
+    meta/               # Role dependencies here
+    vars/
+    defaults/
+      main.yml</code></pre>
+<h3 id="references">References</h3>
+<ul>
+<li>http://www.ansibleworks.com/docs/playbooks_roles.html</li>
+</ul>
+</body>
+</html>

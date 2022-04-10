@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="pascals-triangle">Pascal’s Triangle</h1>
+<p>In mathematics, <strong>Pascal’s triangle</strong> is a triangular array of the <a href="https://en.wikipedia.org/wiki/Binomial_coefficient">binomial coefficients</a>.</p>
+<p>The rows of Pascal’s triangle are conventionally enumerated starting with row <code>n = 0</code> at the top (the <code>0th</code> row). The entries in each row are numbered from the left beginning with <code>k = 0</code> and are usually staggered relative to the numbers in the adjacent rows. The triangle may be constructed in the following manner: In row <code>0</code> (the topmost row), there is a unique nonzero entry <code>1</code>. Each entry of each subsequent row is constructed by adding the number above and to the left with the number above and to the right, treating blank entries as <code>0</code>. For example, the initial number in the first (or any other) row is <code>1</code> (the sum of <code>0</code> and <code>1</code>), whereas the numbers <code>1</code> and <code>3</code> in the third row are added to produce the number <code>4</code> in the fourth row.</p>
+<figure>
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/PascalTriangleAnimated2.gif" alt="Pascal’s Triangle" /><figcaption>Pascal’s Triangle</figcaption>
+</figure>
+<h2 id="formula">Formula</h2>
+<p>The entry in the <code>nth</code> row and <code>kth</code> column of Pascal’s triangle is denoted <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/206415d3742167e319b2e52c2ca7563b799abad7" alt="Formula" />. For example, the unique nonzero entry in the topmost row is <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b7e35f86368d5978b46c07fd6dddca86bd6e635c" alt="Formula example" />.</p>
+<p>With this notation, the construction of the previous paragraph may be written as follows:</p>
+<figure>
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/203b128a098e18cbb8cf36d004bd7282b28461bf" alt="Formula" /><figcaption>Formula</figcaption>
+</figure>
+<p>for any non-negative integer <code>n</code> and any integer <code>k</code> between <code>0</code> and <code>n</code>, inclusive.</p>
+<figure>
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a2457a7ef3c77831e34e06a1fe17a80b84a03181" alt="Binomial Coefficient" /><figcaption>Binomial Coefficient</figcaption>
+</figure>
+<h2 id="calculating-triangle-entries-in-on-time">Calculating triangle entries in O(n) time</h2>
+<p>We know that <code>i</code>-th entry in a line number <code>lineNumber</code> is Binomial Coefficient <code>C(lineNumber, i)</code> and all lines start with value <code>1</code>. The idea is to calculate <code>C(lineNumber, i)</code> using <code>C(lineNumber, i-1)</code>. It can be calculated in <code>O(1)</code> time using the following:</p>
+<pre><code>C(lineNumber, i)   = lineNumber! / ((lineNumber - i)! * i!)
+C(lineNumber, i - 1) = lineNumber! / ((lineNumber - i + 1)! * (i - 1)!)</code></pre>
+<p>We can derive following expression from above two expressions:</p>
+<pre><code>C(lineNumber, i) = C(lineNumber, i - 1) * (lineNumber - i + 1) / i</code></pre>
+<p>So <code>C(lineNumber, i)</code> can be calculated from <code>C(lineNumber, i - 1)</code> in <code>O(1)</code> time.</p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Pascal%27s_triangle">Wikipedia</a></li>
+<li><a href="https://www.geeksforgeeks.org/pascal-triangle/">GeeksForGeeks</a></li>
+</ul>
+</body>
+</html>

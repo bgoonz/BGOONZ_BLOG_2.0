@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="levenshtein-distance">Levenshtein Distance</h1>
+<p>The Levenshtein distance is a string metric for measuring the difference between two sequences. Informally, the Levenshtein distance between two words is the minimum number of single-character edits (insertions, deletions or substitutions) required to change one word into the other.</p>
+<h2 id="definition">Definition</h2>
+<p>Mathematically, the Levenshtein distance between two strings <code>a</code> and <code>b</code> (of length <code>|a|</code> and <code>|b|</code> respectively) is given by <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4cf357d8f2135035207088d2c7b890fb4b64e410" alt="Levenshtein" /> where</p>
+<figure>
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f0a48ecfc9852c042382fdc33c19e11a16948e85" alt="Levenshtein" /><figcaption>Levenshtein</figcaption>
+</figure>
+<p>where <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/52512ede08444b13838c570ba4a3fc71d54dbce9" alt="Levenshtein" /> is the indicator function equal to <code>0</code> when <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/231fda9ee578f0328c5ca28088d01928bb0aaaec" alt="Levenshtein" /> and equal to 1 otherwise, and <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bdc0315678caad28648aafedb6ebafb16bd1655c" alt="Levenshtein" /> is the distance between the first <code>i</code> characters of <code>a</code> and the first <code>j</code> characters of <code>b</code>.</p>
+<p>Note that the first element in the minimum corresponds to deletion (from <code>a</code> to <code>b</code>), the second to insertion and the third to match or mismatch, depending on whether the respective symbols are the same.</p>
+<h2 id="example">Example</h2>
+<p>For example, the Levenshtein distance between <code>kitten</code> and <code>sitting</code> is <code>3</code>, since the following three edits change one into the other, and there is no way to do it with fewer than three edits:</p>
+<ol type="1">
+<li><strong>k</strong>itten → <strong>s</strong>itten (substitution of “s” for “k”)</li>
+<li>sitt<strong>e</strong>n → sitt<strong>i</strong>n (substitution of “i” for “e”)</li>
+<li>sittin → sittin<strong>g</strong> (insertion of “g” at the end).</li>
+</ol>
+<h2 id="applications">Applications</h2>
+<p>This has a wide range of applications, for instance, spell checkers, correction systems for optical character recognition, fuzzy string searching, and software to assist natural language translation based on translation memory.</p>
+<h2 id="dynamic-programming-approach-explanation">Dynamic Programming Approach Explanation</h2>
+<p>Let’s take a simple example of finding minimum edit distance between strings <code>ME</code> and <code>MY</code>. Intuitively you already know that minimum edit distance here is <code>1</code> operation, which is replacing <code>E</code> with <code>Y</code>. But let’s try to formalize it in a form of the algorithm in order to be able to do more complex examples like transforming <code>Saturday</code> into <code>Sunday</code>.</p>
+<p>To apply the mathematical formula mentioned above to <code>ME → MY</code> transformation we need to know minimum edit distances of <code>ME → M</code>, <code>M → MY</code> and <code>M → M</code> transformations in prior. Then we will need to pick the minimum one and add <em>one</em> operation to transform last letters <code>E → Y</code>. So minimum edit distance of <code>ME → MY</code> transformation is being calculated based on three previously possible transformations.</p>
+<p>To explain this further let’s draw the following matrix:</p>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/1600/1*aTunSUoy0BJyYBVn4tWGrA.png" alt="Levenshtein Matrix" /><figcaption>Levenshtein Matrix</figcaption>
+</figure>
+<ul>
+<li>Cell <code>(0:1)</code> contains red number 1. It means that we need 1 operation to transform <code>M</code> to an empty string. And it is by deleting <code>M</code>. This is why this number is red.</li>
+<li>Cell <code>(0:2)</code> contains red number 2. It means that we need 2 operations to transform <code>ME</code> to an empty string. And it is by deleting <code>E</code> and <code>M</code>.</li>
+<li>Cell <code>(1:0)</code> contains green number 1. It means that we need 1 operation to transform an empty string to <code>M</code>. And it is by inserting <code>M</code>. This is why this number is green.</li>
+<li>Cell <code>(2:0)</code> contains green number 2. It means that we need 2 operations to transform an empty string to <code>MY</code>. And it is by inserting <code>Y</code> and <code>M</code>.</li>
+<li>Cell <code>(1:1)</code> contains number 0. It means that it costs nothing to transform <code>M</code> into <code>M</code>.</li>
+<li>Cell <code>(1:2)</code> contains red number 1. It means that we need 1 operation to transform <code>ME</code> to <code>M</code>. And it is by deleting <code>E</code>.</li>
+<li>And so on…</li>
+</ul>
+<p>This looks easy for such small matrix as ours (it is only <code>3x3</code>). But here you may find basic concepts that may be applied to calculate all those numbers for bigger matrices (let’s say a <code>9x7</code> matrix for <code>Saturday → Sunday</code> transformation).</p>
+<p>According to the formula you only need three adjacent cells <code>(i-1:j)</code>, <code>(i-1:j-1)</code>, and <code>(i:j-1)</code> to calculate the number for current cell <code>(i:j)</code>. All we need to do is to find the minimum of those three cells and then add <code>1</code> in case if we have different letters in <code>i</code>’s row and <code>j</code>’s column.</p>
+<p>You may clearly see the recursive nature of the problem.</p>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/1600/1*w8UB4DSvBnAK6mBXRGQDjw.png" alt="Levenshtein Matrix" /><figcaption>Levenshtein Matrix</figcaption>
+</figure>
+<p>Let’s draw a decision graph for this problem.</p>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/1600/1*8jD0qvr5B9PwRFM_9z7q9A.png" alt="Minimum Edit Distance Decision Graph" /><figcaption>Minimum Edit Distance Decision Graph</figcaption>
+</figure>
+<p>You may see a number of overlapping sub-problems on the picture that are marked with red. Also there is no way to reduce the number of operations and make it less than a minimum of those three adjacent cells from the formula.</p>
+<p>Also you may notice that each cell number in the matrix is being calculated based on previous ones. Thus the tabulation technique (filling the cache in bottom-up direction) is being applied here.</p>
+<p>Applying this principle further we may solve more complicated cases like with <code>Saturday → Sunday</code> transformation.</p>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/2600/1*497gMaFErzJpCXG7kS_7dw.png" alt="Levenshtein distance" /><figcaption>Levenshtein distance</figcaption>
+</figure>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Levenshtein_distance">Wikipedia</a></li>
+<li><a href="https://www.youtube.com/watch?v=We3YDTzNXEk&amp;list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8">YouTube</a></li>
+<li><a href="https://itnext.io/dynamic-programming-vs-divide-and-conquer-2fea680becbe">ITNext</a></li>
+</ul>
+</body>
+</html>

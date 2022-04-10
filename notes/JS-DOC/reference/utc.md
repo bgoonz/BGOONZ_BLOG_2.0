@@ -1,8 +1,10 @@
-# Date.UTC()
+Date.UTC()
+==========
 
 The `Date.UTC()` method accepts parameters similar to the [`Date`](../date) constructor, but treats them as UTC. It returns the number of milliseconds since January 1, 1970, 00:00:00 UTC.
 
-## Syntax
+Syntax
+------
 
     Date.UTC(year)
     Date.UTC(year, month)
@@ -16,7 +18,7 @@ The `Date.UTC()` method accepts parameters similar to the [`Date`](../date) cons
 A full year.
 
 `month` <span class="badge inline optional">Optional</span>  
-An integer between `0` (January) and `11` (December) representing the month. Since ECMAScript 2017 it defaults to `0` if omitted. _(Up until ECMAScript 2016, `month` was a required parameter. As of ES2017, it no longer is.)_
+An integer between `0` (January) and `11` (December) representing the month. Since ECMAScript 2017 it defaults to `0` if omitted. *(Up until ECMAScript 2016, `month` was a required parameter. As of ES2017, it no longer is.)*
 
 `day` <span class="badge inline optional">Optional</span>  
 An integer between `1` and `31` representing the day of the month. If omitted, defaults to `1`.
@@ -37,7 +39,8 @@ An integer between `0` and `999` representing the milliseconds. If omitted, defa
 
 A number representing the number of milliseconds for the given date since January 1, 1970, 00:00:00, UTC.
 
-## Description
+Description
+-----------
 
 `UTC()` takes comma-delimited date and time parameters and returns the number of milliseconds between January 1, 1970, 00:00:00, universal time and the specified date and time.
 
@@ -50,9 +53,10 @@ The `UTC()` method differs from the [`Date`](../date) constructor in two ways:
 
 If a parameter is outside of the expected range, the `UTC()` method updates the other parameters to accommodate the value. For example, if `15` is used for `month`, the year will be incremented by 1 `(year + 1)` and `3` will be used for the month.
 
-`UTC()` is a static method of [`Date`](../date), so it's called as `Date.UTC()` rather than as a method of a [`Date`](../date) instance.
+`UTC()` is a static method of [`Date`](../date), so it’s called as `Date.UTC()` rather than as a method of a [`Date`](../date) instance.
 
-## Examples
+Examples
+--------
 
 ### Using Date.UTC()
 
@@ -60,14 +64,14 @@ The following statement creates a [`Date`](../date) object with the arguments tr
 
     let utcDate = new Date(Date.UTC(2018, 11, 1, 0, 0, 0));
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.utc">ECMAScript (ECMA-262) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript (ECMA-262)<br />
+</p><span class="small">The definition of ‘Date.UTC’ in that specification.</span></td></tr></tbody></table>
 
-<span class="small">The definition of 'Date.UTC' in that specification.</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -127,7 +131,7 @@ Samsung Internet
 
 #### Date.UTC() with fewer than two arguments
 
-When providing less than two arguments to `Date.UTC()`, ECMAScript 2017 requires that [`NaN`](../nan) is returned. Engines that weren't supporting this behavior have been updated (see [bug 1050755](https://bugzilla.mozilla.org/show_bug.cgi?id=1050755), [ecma-262 \#642](https://github.com/tc39/ecma262/pull/642)).
+When providing less than two arguments to `Date.UTC()`, ECMAScript 2017 requires that [`NaN`](../nan) is returned. Engines that weren’t supporting this behavior have been updated (see [bug 1050755](https://bugzilla.mozilla.org/show_bug.cgi?id=1050755), [ecma-262 \#642](https://github.com/tc39/ecma262/pull/642)).
 
     Date.UTC();
     Date.UTC(1);
@@ -141,7 +145,8 @@ When providing less than two arguments to `Date.UTC()`, ECMAScript 2017 requires
     // IE: non-NaN
     // Edge: NaN
 
-## See also
+See also
+--------
 
 -   [`Date.parse()`](parse)
 -   [`Date`](../date)

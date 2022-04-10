@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>reflect</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="reflect">Reflect</h1>
+<p><strong>Reflect</strong> is a built-in object that provides methods for interceptable JavaScript operations. The methods are the same as those of <a href="proxy/proxy">proxy handlers</a>. <code>Reflect</code> is not a function object, so it’s not constructible.</p>
+<h2 id="description">Description</h2>
+<p>Unlike most global objects, <code>Reflect</code> is not a constructor. You cannot use it with a <a href="../operators/new"><code>new</code> operator</a> or invoke the <code>Reflect</code> object as a function. All properties and methods of <code>Reflect</code> are static (just like the <a href="math"><code>Math</code></a> object).</p>
+<p>The <code>Reflect</code> object provides the following static functions which have the same names as the <a href="proxy/proxy">proxy handler methods</a>.</p>
+<p>Some of these methods are also the same as corresponding methods on <a href="object"><code>Object</code></a>, although they do have <a href="reflect/comparing_reflect_and_object_methods">some subtle differences</a> between them.</p>
+<h2 id="static-methods">Static methods</h2>
+<p><a href="reflect/apply"><code>Reflect.apply(target, thisArgument, argumentsList)</code></a><br />
+Calls a <code>target</code> function with arguments as specified by the <code>argumentsList</code> parameter. See also <a href="function/apply"><code>Function.prototype.apply()</code></a>.</p>
+<p><a href="reflect/construct"><code>Reflect.construct(target, argumentsList[, newTarget])</code></a><br />
+The <a href="../operators/new"><code>new</code> operator</a> as a function. Equivalent to calling <code>new target(...argumentsList)</code>. Also provides the option to specify a different prototype.</p>
+<p><a href="reflect/defineproperty"><code>Reflect.defineProperty(target, propertyKey, attributes)</code></a><br />
+Similar to <a href="object/defineproperty"><code>Object.defineProperty()</code></a>. Returns a <a href="boolean"><code>Boolean</code></a> that is <code>true</code> if the property was successfully defined.</p>
+<p><a href="reflect/deleteproperty"><code>Reflect.deleteProperty(target, propertyKey)</code></a><br />
+The <a href="../operators/delete"><code>delete</code> operator</a> as a function. Equivalent to calling <code>delete target[propertyKey]</code>.</p>
+<p><a href="reflect/get"><code>Reflect.get(target, propertyKey[, receiver])</code></a><br />
+Returns the value of the property. Works like getting a property from an object (<code>target[propertyKey]</code>) as a function.</p>
+<p><a href="reflect/getownpropertydescriptor"><code>Reflect.getOwnPropertyDescriptor(target, propertyKey)</code></a><br />
+Similar to <a href="object/getownpropertydescriptor"><code>Object.getOwnPropertyDescriptor()</code></a>. Returns a property descriptor of the given property if it exists on the object, <a href="undefined"><code>undefined</code></a> otherwise.</p>
+<p><a href="reflect/getprototypeof"><code>Reflect.getPrototypeOf(target)</code></a><br />
+Same as <a href="object/getprototypeof"><code>Object.getPrototypeOf()</code></a>.</p>
+<p><a href="reflect/has"><code>Reflect.has(target, propertyKey)</code></a><br />
+Returns a <a href="boolean"><code>Boolean</code></a> indicating whether the target has the property. Either as own or inherited. Works like the <a href="../operators/in"><code>in</code> operator</a> as a function.</p>
+<p><a href="reflect/isextensible"><code>Reflect.isExtensible(target)</code></a><br />
+Same as <a href="object/isextensible"><code>Object.isExtensible()</code></a>. Returns a <a href="boolean"><code>Boolean</code></a> that is <code>true</code> if the target is extensible.</p>
+<p><a href="reflect/ownkeys"><code>Reflect.ownKeys(target)</code></a><br />
+Returns an array of the target object’s own (not inherited) property keys.</p>
+<p><a href="reflect/preventextensions"><code>Reflect.preventExtensions(target)</code></a><br />
+Similar to <a href="object/preventextensions"><code>Object.preventExtensions()</code></a>. Returns a <a href="boolean"><code>Boolean</code></a> that is <code>true</code> if the update was successful.</p>
+<p><a href="reflect/set"><code>Reflect.set(target, propertyKey, value[, receiver])</code></a><br />
+A function that assigns values to properties. Returns a <a href="boolean"><code>Boolean</code></a> that is <code>true</code> if the update was successful.</p>
+<p><a href="reflect/setprototypeof"><code>Reflect.setPrototypeOf(target, prototype)</code></a><br />
+A function that sets the prototype of an object. Returns a <a href="boolean"><code>Boolean</code></a> that is <code>true</code> if the update was successful.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="detecting-whether-an-object-contains-certain-properties">Detecting whether an object contains certain properties</h3>
+<pre><code>const duck = {
+  name: &#39;Maurice&#39;,
+  color: &#39;white&#39;,
+  greeting: function() {
+    console.log(`Quaaaack! My name is ${this.name}`);
+  }
+}
+
+Reflect.has(duck, &#39;color&#39;);
+// true
+Reflect.has(duck, &#39;haircut&#39;);
+// false</code></pre>
+<h3 id="returning-the-objects-own-keys">Returning the object’s own keys</h3>
+<pre><code>Reflect.ownKeys(duck);
+// [ &quot;name&quot;, &quot;color&quot;, &quot;greeting&quot; ]</code></pre>
+<h3 id="adding-a-new-property-to-the-object">Adding a new property to the object</h3>
+<pre><code>Reflect.set(duck, &#39;eyes&#39;, &#39;black&#39;);
+// returns &quot;true&quot; if successful
+// &quot;duck&quot; now contains the property &quot;eyes: &#39;black&#39;&quot;</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-reflect-object">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-reflect-object</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>Reflect</code></p>
+<p>49</p>
+<p>12</p>
+<p>42</p>
+<p>No</p>
+<p>36</p>
+<p>10</p>
+<p>49</p>
+<p>49</p>
+<p>42</p>
+<p>36</p>
+<p>10</p>
+<p>5.0</p>
+<p><code>apply</code></p>
+<p>49</p>
+<p>12</p>
+<p>42</p>
+<p>No</p>
+<p>36</p>
+<p>10</p>
+<p>49</p>
+<p>49</p>
+<p>42</p>
+<p>36</p>
+<p>10</p>
+<p>5.0</p>
+<p><code>construct</code></p>
+<p>49</p>
+<p>12</p>
+<p>42</p>
+<p>No</p>
+<p>36</p>
+<p>10</p>
+<p>49</p>
+<p>49</p>
+<p>42</p>
+<p>36</p>
+<p>10</p>
+<p>5.0</p>
+<p><code>defineProperty</code></p>
+<p>49</p>
+<p>12</p>
+<p>42</p>
+<p>No</p>
+<p>36</p>
+<p>10</p>
+<p>49</p>
+<p>49</p>
+<p>42</p>
+<p>36</p>
+<p>10</p>
+<p>5.0</p>
+<p><code>deleteProperty</code></p>
+<p>49</p>
+<p>12</p>
+<p>42</p>
+<p>No</p>
+<p>36</p>
+<p>10</p>
+<p>49</p>
+<p>49</p>
+<p>42</p>
+<p>36</p>
+<p>10</p>
+<p>5.0</p>
+<p><code>get</code></p>
+<p>49</p>
+<p>12</p>
+<p>42</p>
+<p>No</p>
+<p>36</p>
+<p>10</p>
+<p>49</p>
+<p>49</p>
+<p>42</p>
+<p>36</p>
+<p>10</p>
+<p>5.0</p>
+<p><code>getOwnPropertyDescriptor</code></p>
+<p>49</p>
+<p>12</p>
+<p>42</p>
+<p>No</p>
+<p>36</p>
+<p>10</p>
+<p>49</p>
+<p>49</p>
+<p>42</p>
+<p>36</p>
+<p>10</p>
+<p>5.0</p>
+<p><code>getPrototypeOf</code></p>
+<p>49</p>
+<p>12</p>
+<p>42</p>
+<p>No</p>
+<p>36</p>
+<p>10</p>
+<p>49</p>
+<p>49</p>
+<p>42</p>
+<p>36</p>
+<p>10</p>
+<p>5.0</p>
+<p><code>has</code></p>
+<p>49</p>
+<p>12</p>
+<p>42</p>
+<p>No</p>
+<p>36</p>
+<p>10</p>
+<p>49</p>
+<p>49</p>
+<p>42</p>
+<p>36</p>
+<p>10</p>
+<p>5.0</p>
+<p><code>isExtensible</code></p>
+<p>49</p>
+<p>12</p>
+<p>42</p>
+<p>No</p>
+<p>36</p>
+<p>10</p>
+<p>49</p>
+<p>49</p>
+<p>42</p>
+<p>36</p>
+<p>10</p>
+<p>5.0</p>
+<p><code>ownKeys</code></p>
+<p>49</p>
+<p>12</p>
+<p>42</p>
+<p>No</p>
+<p>36</p>
+<p>10</p>
+<p>49</p>
+<p>49</p>
+<p>42</p>
+<p>36</p>
+<p>10</p>
+<p>5.0</p>
+<p><code>preventExtensions</code></p>
+<p>49</p>
+<p>12</p>
+<p>42</p>
+<p>No</p>
+<p>36</p>
+<p>10</p>
+<p>49</p>
+<p>49</p>
+<p>42</p>
+<p>36</p>
+<p>10</p>
+<p>5.0</p>
+<p><code>set</code></p>
+<p>49</p>
+<p>12</p>
+<p>42</p>
+<p>No</p>
+<p>36</p>
+<p>10</p>
+<p>49</p>
+<p>49</p>
+<p>42</p>
+<p>36</p>
+<p>10</p>
+<p>5.0</p>
+<p><code>setPrototypeOf</code></p>
+<p>49</p>
+<p>12</p>
+<p>42</p>
+<p>No</p>
+<p>36</p>
+<p>10</p>
+<p>49</p>
+<p>49</p>
+<p>42</p>
+<p>36</p>
+<p>10</p>
+<p>5.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li>The <a href="proxy"><code>Proxy</code></a> global object.</li>
+<li>The <a href="proxy/proxy"><code>handler</code></a> object.</li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect</a></p>
+</body>
+</html>

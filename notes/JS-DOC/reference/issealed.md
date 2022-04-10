@@ -1,8 +1,10 @@
-# Object.isSealed()
+Object.isSealed()
+=================
 
 The `Object.isSealed()` method determines if an object is sealed.
 
-## Syntax
+Syntax
+------
 
     Object.isSealed(obj)
 
@@ -15,11 +17,13 @@ The object which should be checked.
 
 A [`Boolean`](../boolean) indicating whether or not the given object is sealed.
 
-## Description
+Description
+-----------
 
 Returns `true` if the object is sealed, otherwise `false`. An object is sealed if it is not [extensible](isextensible) and if all its properties are non-configurable and therefore not removable (but not necessarily non-writable).
 
-## Examples
+Examples
+--------
 
 ### Using Object.isSealed
 
@@ -77,12 +81,11 @@ In ES5, if the argument to this method is not an object (a primitive), then it w
     Object.isSealed(1);
     // true                          (ES2015 code)
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.issealed">ECMAScript (ECMA-262) 
-<br/>
-
-<span class="small">The definition of 'Object.isSealed' in that specification.</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript (ECMA-262)<br />
+</p><span class="small">The definition of ‘Object.isSealed’ in that specification.</span></td></tr></tbody></table>
 
 `isSealed`
 
@@ -110,7 +113,8 @@ In ES5, if the argument to this method is not an object (a primitive), then it w
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`Object.seal()`](seal)
 -   [`Object.preventExtensions()`](preventextensions)
@@ -118,6 +122,5 @@ In ES5, if the argument to this method is not an object (a primitive), then it w
 -   [`Object.freeze()`](freeze)
 -   [`Object.isFrozen()`](isfrozen)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/isSealed" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/isSealed</a>

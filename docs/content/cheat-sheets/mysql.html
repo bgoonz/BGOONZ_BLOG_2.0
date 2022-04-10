@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>mysql</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="to-connect-to-a-database">To connect to a database:</h1>
+<p>mysql -h <host> -u <username> -p</p>
+<h1 id="to-backup-all-databases">To backup all databases:</h1>
+<p>mysqldump –all-databases –all-routines -u <username> -p &gt; ~/dump.sql</p>
+<h1 id="to-restore-all-databases">To restore all databases:</h1>
+<p>mysql -u <username> -p &lt; ~/fulldump.sql</p>
+<h1 id="to-create-a-database-in-utf8-charset">To create a database in utf8 charset:</h1>
+<p>CREATE DATABASE owa CHARACTER SET utf8 COLLATE utf8_general_ci;</p>
+<h1 id="to-add-a-user-and-give-rights-on-the-given-database">To add a user and give rights on the given database:</h1>
+<p>GRANT ALL PRIVILEGES ON database.* TO ‘user’@‘localhost’IDENTIFIED BY ’password’ WITH GRANT OPTION;</p>
+<h1 id="to-list-the-privileges-granted-to-the-account-that-you-are-using-to-connect-to-the-server.-any-of-the-3-statements-will-work.">To list the privileges granted to the account that you are using to connect to the server. Any of the 3 statements will work. :</h1>
+<p>SHOW GRANTS FOR CURRENT_USER(); SHOW GRANTS; SHOW GRANTS FOR CURRENT_USER;</p>
+<h1 id="basic-select-statement">Basic SELECT Statement:</h1>
+<p>SELECT * FROM tbl_name;</p>
+<h1 id="basic-insert-statement">Basic INSERT Statement:</h1>
+<p>INSERT INTO tbl_name (col1,col2) VALUES(15,col1*2);</p>
+<h1 id="basic-update-statement">Basic UPDATE Statement:</h1>
+<p>UPDATE tbl_name SET col1 = “example”;</p>
+<h1 id="basic-delete-statement">Basic DELETE Statement:</h1>
+<p>DELETE FROM tbl_name WHERE user = ‘jcole’;</p>
+<h1 id="to-check-stored-procedure">To check stored procedure:</h1>
+<p>SHOW PROCEDURE STATUS;</p>
+<h1 id="to-check-stored-function">To check stored function:</h1>
+<p>SHOW FUNCTION STATUS;</p>
+</body>
+</html>

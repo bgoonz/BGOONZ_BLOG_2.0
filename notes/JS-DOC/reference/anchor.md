@@ -1,4 +1,5 @@
-# String.prototype.anchor()
+String.prototype.anchor()
+=========================
 
 **Deprecated**
 
@@ -6,9 +7,10 @@ This feature is no longer recommended. Though some browsers might still support 
 
 The `anchor()` method creates a string beginning with an `<a name="...">` start tag, then some text, and then an `</a>` end tag.
 
-**Warning:** Don't use this method. Use [DOM APIs](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) instead. Also, the HTML specification no longer allows the [`<a>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) element to have a `name` attribute, so this method doesn't even create valid markup.
+**Warning:** Don’t use this method. Use [DOM APIs](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) instead. Also, the HTML specification no longer allows the [`<a>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) element to have a `name` attribute, so this method doesn’t even create valid markup.
 
-## Syntax
+Syntax
+------
 
     anchor(name)
 
@@ -21,11 +23,13 @@ A string representing a `name` value to put into the generated `<a name="...">` 
 
 A string beginning with an `<a name="name">` start tag, then the text str, and then an `</a>` end tag.
 
-## Description
+Description
+-----------
 
-Don't use this method. Use [DOM APIs](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) instead. Also, the HTML specification no longer allows the [`<a>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) element to have a `name` attribute, so this method doesn't even create valid markup.
+Don’t use this method. Use [DOM APIs](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) instead. Also, the HTML specification no longer allows the [`<a>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) element to have a `name` attribute, so this method doesn’t even create valid markup.
 
-## Examples
+Examples
+--------
 
 ### Using anchor()
 
@@ -37,12 +41,11 @@ will output the following HTML:
 
     <a name="contents_anchor">Table of Contents</a>
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.anchor">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-string.prototype.anchor</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-string.prototype.anchor</span></td></tr></tbody></table>
 
 `anchor`
 
@@ -72,10 +75,10 @@ No
 
 1.0
 
-## See also
+See also
+--------
 
-- [`String.prototype.link()`](link)
+-   [`String.prototype.link()`](link)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/anchor" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/anchor</a>

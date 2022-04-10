@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2022-01-03" />
+  <title>title</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">title</h1>
+<p class="subtitle">subtitle</p>
+<p class="date">2022-01-03</p>
+</header>
+<hr />
+<p>title: Awesome Redux category: React</p>
+<hr />
+<h3 id="redux-actions">redux-actions</h3>
+<p>Create action creators in flux standard action format. {: .-setup}</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1">increment <span class="op">=</span> <span class="at">createAction</span>(<span class="st">&#39;INCREMENT&#39;</span><span class="op">,</span> (amount) <span class="kw">=&gt;</span> amount)<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-2" title="2">increment <span class="op">=</span> <span class="at">createAction</span>(<span class="st">&#39;INCREMENT&#39;</span>)<span class="op">;</span> <span class="co">// same</span></a></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="at">increment</span>(<span class="dv">42</span>) <span class="op">===</span> <span class="op">{</span> <span class="dt">type</span><span class="op">:</span> <span class="st">&#39;INCREMENT&#39;</span><span class="op">,</span> <span class="dt">payload</span><span class="op">:</span> <span class="dv">42</span> <span class="op">};</span></a></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb3-1" title="1"><span class="co">// Errors are handled for you:</span></a>
+<a class="sourceLine" id="cb3-2" title="2">err <span class="op">=</span> <span class="kw">new</span> <span class="at">Error</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-3" title="3"><span class="at">increment</span>(err) <span class="op">===</span> <span class="op">{</span> <span class="dt">type</span><span class="op">:</span> <span class="st">&#39;INCREMENT&#39;</span><span class="op">,</span> <span class="dt">payload</span><span class="op">:</span> err<span class="op">,</span> <span class="dt">error</span><span class="op">:</span> <span class="kw">true</span> <span class="op">};</span></a></code></pre></div>
+<p><a href="https://www.npmjs.com/package/redux-actions">redux-actions</a> {: .-crosslink}</p>
+<h3 id="flux-standard-action">flux-standard-action</h3>
+<p>A standard for flux action objects. An action may have an <code>error</code>, <code>payload</code> and <code>meta</code> and nothing else. {: .-setup}</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb4-1" title="1"><span class="op">{</span> <span class="dt">type</span><span class="op">:</span> <span class="st">&#39;ADD_TODO&#39;</span><span class="op">,</span> <span class="dt">payload</span><span class="op">:</span> <span class="op">{</span> <span class="dt">text</span><span class="op">:</span> <span class="st">&#39;Work it&#39;</span> <span class="op">}</span> <span class="op">}</span></a>
+<a class="sourceLine" id="cb4-2" title="2"><span class="op">{</span> <span class="dt">type</span><span class="op">:</span> <span class="st">&#39;ADD_TODO&#39;</span><span class="op">,</span> <span class="dt">payload</span><span class="op">:</span> <span class="kw">new</span> <span class="at">Error</span>()<span class="op">,</span> <span class="dt">error</span><span class="op">:</span> <span class="kw">true</span> <span class="op">}</span></a></code></pre></div>
+<p><a href="https://github.com/acdlite/flux-standard-action">flux-standard-action</a> {: .-crosslink}</p>
+<h3 id="redux-multi">redux-multi</h3>
+<p>Dispatch multiple actions in one action creator. {: .-setup}</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb5-1" title="1"><span class="va">store</span>.<span class="at">dispatch</span>([</a>
+<a class="sourceLine" id="cb5-2" title="2">    <span class="op">{</span> <span class="dt">type</span><span class="op">:</span> <span class="st">&#39;INCREMENT&#39;</span><span class="op">,</span> <span class="dt">payload</span><span class="op">:</span> <span class="dv">2</span> <span class="op">},</span></a>
+<a class="sourceLine" id="cb5-3" title="3">    <span class="op">{</span> <span class="dt">type</span><span class="op">:</span> <span class="st">&#39;INCREMENT&#39;</span><span class="op">,</span> <span class="dt">payload</span><span class="op">:</span> <span class="dv">3</span> <span class="op">}</span></a>
+<a class="sourceLine" id="cb5-4" title="4">])<span class="op">;</span></a></code></pre></div>
+<p><a href="https://github.com/ashaffer/redux-multi">redux-multi</a> {: .-crosslink}</p>
+<h3 id="reduce-reducers">reduce-reducers</h3>
+<p>Combines reducers (like <em>combineReducers()</em>), but without namespacing magic. {: .-setup}</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb6-1" title="1">re <span class="op">=</span> <span class="at">reduceReducers</span>(</a>
+<a class="sourceLine" id="cb6-2" title="2">    (state<span class="op">,</span> action) <span class="kw">=&gt;</span> state <span class="op">+</span> <span class="va">action</span>.<span class="at">number</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb6-3" title="3">    (state<span class="op">,</span> action) <span class="kw">=&gt;</span> state <span class="op">+</span> <span class="va">action</span>.<span class="at">number</span></a>
+<a class="sourceLine" id="cb6-4" title="4">)<span class="op">;</span></a>
+<a class="sourceLine" id="cb6-5" title="5"></a>
+<a class="sourceLine" id="cb6-6" title="6"><span class="at">re</span>(<span class="dv">10</span><span class="op">,</span> <span class="op">{</span> <span class="dt">number</span><span class="op">:</span> <span class="dv">2</span> <span class="op">}</span>)<span class="op">;</span> <span class="co">//=&gt; 14</span></a></code></pre></div>
+<p><a href="https://www.npmjs.com/package/reduce-reducers">reduce-reducers</a> {: .-crosslink}</p>
+<h3 id="redux-logger">redux-logger</h3>
+<p>Logs actions to your console. {: .-setup}</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb7-1" title="1"><span class="co">// Nothing to see here</span></a></code></pre></div>
+<p><a href="https://github.com/evgenyrodionov/redux-logger">redux-logger</a> {: .-crosslink}</p>
+<h2 id="async">Async</h2>
+<h3 id="redux-promise">redux-promise</h3>
+<p>Pass promises to actions. Dispatches a flux-standard-action. {: .-setup}</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb8-1" title="1">increment <span class="op">=</span> <span class="at">createAction</span>(<span class="st">&#39;INCREMENT&#39;</span>)<span class="op">;</span> <span class="co">// redux-actions</span></a>
+<a class="sourceLine" id="cb8-2" title="2"><span class="at">increment</span>(<span class="va">Promise</span>.<span class="at">resolve</span>(<span class="dv">42</span>))<span class="op">;</span></a></code></pre></div>
+<p><a href="https://github.com/acdlite/redux-promise">redux-promise</a> {: .-crosslink}</p>
+<h3 id="redux-promises">redux-promises</h3>
+<p>Sorta like that, too. Works by letting you pass <em>thunks</em> (functions) to <code>dispatch()</code>. Also has ‘idle checking’. {: .-setup}</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb9-1" title="1">fetchData <span class="op">=</span> (url) <span class="kw">=&gt;</span> (dispatch) <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb9-2" title="2">  <span class="at">dispatch</span>(<span class="op">{</span> <span class="dt">type</span><span class="op">:</span> <span class="st">&#39;FETCH_REQUEST&#39;</span> <span class="op">}</span>)</a>
+<a class="sourceLine" id="cb9-3" title="3">  <span class="at">fetch</span>(url)</a>
+<a class="sourceLine" id="cb9-4" title="4">    .<span class="at">then</span>((data) <span class="kw">=&gt;</span> <span class="at">dispatch</span>(<span class="op">{</span> <span class="dt">type</span><span class="op">:</span> <span class="st">&#39;FETCH_DONE&#39;</span><span class="op">,</span> data <span class="op">}</span>)</a>
+<a class="sourceLine" id="cb9-5" title="5">    .<span class="at">catch</span>((error) <span class="kw">=&gt;</span> <span class="at">dispatch</span>(<span class="op">{</span> <span class="dt">type</span><span class="op">:</span> <span class="st">&#39;FETCH_ERROR&#39;</span><span class="op">,</span> error <span class="op">}</span>)</a>
+<a class="sourceLine" id="cb9-6" title="6"><span class="op">}</span>)</a>
+<a class="sourceLine" id="cb9-7" title="7"></a>
+<a class="sourceLine" id="cb9-8" title="8"><span class="va">store</span>.<span class="at">dispatch</span>(<span class="at">fetchData</span>(<span class="st">&#39;/posts&#39;</span>))</a></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb10-1" title="1"><span class="co">// That&#39;s actually shorthand for:</span></a>
+<a class="sourceLine" id="cb10-2" title="2"><span class="at">fetchData</span>(<span class="st">&#39;/posts&#39;</span>)(<span class="va">store</span>.<span class="at">dispatch</span>)<span class="op">;</span></a></code></pre></div>
+<p><a href="https://www.npmjs.com/package/redux-promises">redux-promises</a> {: .-crosslink}</p>
+<h3 id="redux-effects">redux-effects</h3>
+<p>Pass side effects declaratively to keep your actions pure. {: .-setup}</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb11-1" title="1"><span class="op">{</span></a>
+<a class="sourceLine" id="cb11-2" title="2">  <span class="dt">type</span><span class="op">:</span> <span class="st">&#39;EFFECT_COMPOSE&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb11-3" title="3">  <span class="dt">payload</span><span class="op">:</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb11-4" title="4">    <span class="dt">type</span><span class="op">:</span> <span class="st">&#39;FETCH&#39;</span></a>
+<a class="sourceLine" id="cb11-5" title="5">    <span class="dt">payload</span><span class="op">:</span> <span class="op">{</span><span class="dt">url</span><span class="op">:</span> <span class="st">&#39;/some/thing&#39;</span><span class="op">,</span> <span class="dt">method</span><span class="op">:</span> <span class="st">&#39;GET&#39;</span><span class="op">}</span></a>
+<a class="sourceLine" id="cb11-6" title="6">  <span class="op">},</span></a>
+<a class="sourceLine" id="cb11-7" title="7">  <span class="dt">meta</span><span class="op">:</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb11-8" title="8">    <span class="dt">steps</span><span class="op">:</span> [ [success<span class="op">,</span> failure] ]</a>
+<a class="sourceLine" id="cb11-9" title="9">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb11-10" title="10"><span class="op">}</span></a></code></pre></div>
+<p><a href="https://www.npmjs.com/package/redux-effects">redux-effects</a> {: .-crosslink}</p>
+<h3 id="redux-thunk">redux-thunk</h3>
+<p>Pass “thunks” to as actions. Extremely similar to redux-promises, but has support for getState. {: .-setup}</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb12-1" title="1">fetchData <span class="op">=</span> (url) <span class="kw">=&gt;</span> (dispatch<span class="op">,</span> getState) <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb12-2" title="2">  <span class="at">dispatch</span>(<span class="op">{</span> <span class="dt">type</span><span class="op">:</span> <span class="st">&#39;FETCH_REQUEST&#39;</span> <span class="op">}</span>)</a>
+<a class="sourceLine" id="cb12-3" title="3">  <span class="at">fetch</span>(url)</a>
+<a class="sourceLine" id="cb12-4" title="4">    .<span class="at">then</span>((data) <span class="kw">=&gt;</span> <span class="at">dispatch</span>(<span class="op">{</span> <span class="dt">type</span><span class="op">:</span> <span class="st">&#39;FETCH_DONE&#39;</span><span class="op">,</span> data <span class="op">}</span>)</a>
+<a class="sourceLine" id="cb12-5" title="5">    .<span class="at">catch</span>((error) <span class="kw">=&gt;</span> <span class="at">dispatch</span>(<span class="op">{</span> <span class="dt">type</span><span class="op">:</span> <span class="st">&#39;FETCH_ERROR&#39;</span><span class="op">,</span> error <span class="op">}</span>)</a>
+<a class="sourceLine" id="cb12-6" title="6"><span class="op">}</span>)</a>
+<a class="sourceLine" id="cb12-7" title="7"></a>
+<a class="sourceLine" id="cb12-8" title="8"><span class="va">store</span>.<span class="at">dispatch</span>(<span class="at">fetchData</span>(<span class="st">&#39;/posts&#39;</span>))</a></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb13-1" title="1"><span class="co">// That&#39;s actually shorthand for:</span></a>
+<a class="sourceLine" id="cb13-2" title="2"><span class="at">fetchData</span>(<span class="st">&#39;/posts&#39;</span>)(<span class="va">store</span>.<span class="at">dispatch</span><span class="op">,</span> <span class="va">store</span>.<span class="at">getState</span>)<span class="op">;</span></a></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb14-1" title="1"><span class="co">// Optional: since fetchData returns a promise, it can be chained</span></a>
+<a class="sourceLine" id="cb14-2" title="2"><span class="co">// for server-side rendering</span></a>
+<a class="sourceLine" id="cb14-3" title="3"><span class="va">store</span>.<span class="at">dispatch</span>(<span class="at">fetchPosts</span>()).<span class="at">then</span>(() <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb14-4" title="4">    <span class="va">ReactDOMServer</span>.<span class="at">renderToString</span>(<span class="op">&lt;</span>MyApp store<span class="op">={</span>store<span class="op">}</span> /&gt;)<span class="op">;</span></a>
+<a class="sourceLine" id="cb14-5" title="5"><span class="op">}</span>)<span class="op">;</span></a></code></pre></div>
+<p><a href="https://www.npmjs.com/package/redux-thunk">redux-thunk</a> {: .-crosslink}</p>
+</body>
+</html>

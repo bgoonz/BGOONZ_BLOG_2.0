@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>matchall</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="string.prototype.matchall">String.prototype.matchAll()</h1>
+<p>The <code>matchAll()</code> method returns an iterator of all results matching a string against a <em><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions">regular expression</a></em>, including <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Groups_and_Ranges">capturing groups</a>.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>matchAll(regexp)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>regexp</code><br />
+A regular expression object.</p>
+<p>If a non-<code>RegExp</code> object <code>obj</code> is passed, it is implicitly converted to a <a href="../regexp"><code>RegExp</code></a> by using <code>new RegExp(obj)</code>.</p>
+<p>The <code>RegExp</code> object must have the <code>/g</code> flag, otherwise a <code>TypeError</code> will be thrown.</p>
+<h3 id="return-value">Return value</h3>
+<p>An <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators">iterator</a> (which is not a restartable iterable) of matches.</p>
+<p>Each match is an array (with extra properties <code>index</code> and <code>input</code>; see the return value for <a href="../regexp/exec"><code>RegExp.exec</code></a>). The match array has the matched text as the first item, and then one item for each parenthetical capture group of the matched text.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="regexp.exec-and-matchall">Regexp.exec() and matchAll()</h3>
+<p>Prior to the addition of <code>matchAll</code> to JavaScript, it was possible to use calls to <a href="../regexp/exec">regexp.exec</a> (and regexes with the <code>/g</code> flag) in a loop to obtain all the matches:</p>
+<pre><code>const regexp = new RegExp(&#39;foo[a-z]*&#39;,&#39;g&#39;);
+const str = &#39;table football, foosball&#39;;
+let match;
+
+while ((match = regexp.exec(str)) !== null) {
+  console.log(`Found ${match[0]} start=${match.index} end=${regexp.lastIndex}.`);
+  // expected output: &quot;Found football start=6 end=14.&quot;
+  // expected output: &quot;Found foosball start=16 end=24.&quot;
+}</code></pre>
+<p>With <code>matchAll</code> available, you can avoid the <a href="../../statements/while"><code>while</code></a> loop and <code>exec</code> with <code>g</code>.</p>
+<p>Instead, by using <code>matchAll</code>, you get an iterator to use with the more convenient <a href="../../statements/for...of"><code>for...of</code></a>, <a href="../../operators/spread_syntax"><code>array spread</code></a>, or <a href="../array/from"><code>Array.from()</code></a> constructs:</p>
+<pre><code>const regexp = new RegExp(&#39;foo[a-z]*&#39;,&#39;g&#39;);
+const str = &#39;table football, foosball&#39;;
+const matches = str.matchAll(regexp);
+
+for (const match of matches) {
+  console.log(`Found ${match[0]} start=${match.index} end=${match.index + match[0].length}.`);
+}
+// expected output: &quot;Found football start=6 end=14.&quot;
+// expected output: &quot;Found foosball start=16 end=24.&quot;
+
+// matches iterator is exhausted after the for..of iteration
+// Call matchAll again to create a new iterator
+Array.from(str.matchAll(regexp), m =&gt; m[0]);
+// Array [ &quot;football&quot;, &quot;foosball&quot; ]</code></pre>
+<p><code>matchAll</code> will throw an exception if the <code>g</code> flag is missing.</p>
+<pre><code>const regexp = new RegExp(&#39;[a-c]&#39;,&#39;&#39;);
+const str = &#39;abc&#39;;
+str.matchAll(regexp);
+// TypeError</code></pre>
+<p><code>matchAll</code> internally makes a clone of the <code>regexp</code>—so, unlike <a href="../regexp/exec"><code>regexp.exec()</code></a>, <code>lastIndex</code> does not change as the string is scanned.</p>
+<pre><code>const regexp = new RegExp(&#39;[a-c]&#39;,&#39;g&#39;);
+regexp.lastIndex = 1;
+const str = &#39;abc&#39;;
+Array.from(str.matchAll(regexp), m =&gt; `${regexp.lastIndex}${m[0]}`);
+// Array [ &quot;1 b&quot;, &quot;1 c&quot; ]</code></pre>
+<h3 id="better-access-to-capturing-groups-than-string.prototype.match">Better access to capturing groups (than String.prototype.match())</h3>
+<p>Another compelling reason for <code>matchAll</code> is the improved access to capture groups.</p>
+<p>Capture groups are ignored when using <a href="match"><code>match()</code></a> with the global <code>/g</code> flag:</p>
+<pre><code>let regexp = /t(e)(st(\d?))/g;
+let str = &#39;test1test2&#39;;
+
+str.match(regexp);
+// Array [&#39;test1&#39;, &#39;test2&#39;]</code></pre>
+<p>Using <code>matchAll</code>, you can access capture groups easily:</p>
+<pre><code>let array = [...str.matchAll(regexp)];
+
+array[0];
+// [&#39;test1&#39;, &#39;e&#39;, &#39;st1&#39;, &#39;1&#39;, index: 0, input: &#39;test1test2&#39;, length: 4]
+array[1];
+// [&#39;test2&#39;, &#39;e&#39;, &#39;st2&#39;, &#39;2&#39;, index: 5, input: &#39;test1test2&#39;, length: 4]</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-string.prototype.matchall">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-string.prototype.matchall</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>matchAll</code></p>
+<p>73</p>
+<p>79</p>
+<p>67</p>
+<p>No</p>
+<p>60</p>
+<p>13</p>
+<p>73</p>
+<p>73</p>
+<p>67</p>
+<p>52</p>
+<p>13</p>
+<p>11.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="match"><code>String.prototype.match()</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions">Using regular expressions in JavaScript</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Groups_and_Ranges">Capturing groups</a></li>
+<li><a href="../regexp"><code>RegExp</code></a></li>
+<li><a href="../regexp/exec"><code>RegExp.prototype.exec()</code></a></li>
+<li><a href="../regexp/test"><code>RegExp.prototype.test()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/matchAll" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/matchAll</a></p>
+</body>
+</html>

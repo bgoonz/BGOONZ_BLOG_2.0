@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>right_shift</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="right-shift">Right shift (&gt;&gt;)</h1>
+<p>The <code>&gt;&gt;</code> shifts the first operand the specified number of bits to the right. Excess bits shifted off to the right are discarded. Copies of the leftmost bit are shifted in from the left. Since the new leftmost bit has the same value as the previous leftmost bit, the sign bit (the leftmost bit) does not change. Hence the name “sign-propagating”.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>a &gt;&gt; b</code></pre>
+<h2 id="description">Description</h2>
+<p>This operator shifts the first operand the specified number of bits to the right. Excess bits shifted off to the right are discarded. Copies of the leftmost bit are shifted in from the left. Since the new leftmost bit has the same value as the previous leftmost bit, the sign bit (the leftmost bit) does not change. Hence the name “sign-propagating”.</p>
+<p>For example, <code>9 &gt;&gt; 2</code> yields 2:</p>
+<pre><code>.    9 (base 10): 00000000000000000000000000001001 (base 2)
+                  --------------------------------
+9 &gt;&gt; 2 (base 10): 00000000000000000000000000000010 (base 2) = 2 (base 10)</code></pre>
+<p>Likewise, <code>-9 &gt;&gt; 2</code> yields <code>-3</code>, because the sign is preserved:</p>
+<pre><code>.    -9 (base 10): 11111111111111111111111111110111 (base 2)
+                   --------------------------------
+-9 &gt;&gt; 2 (base 10): 11111111111111111111111111111101 (base 2) = -3 (base 10)</code></pre>
+<h2 id="examples">Examples</h2>
+<h3 id="using-right-shift">Using right shift</h3>
+<pre><code> 9 &gt;&gt; 2; //  2
+-9 &gt;&gt; 2; // -3</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#prod-BitwiseORExpression">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#prod-BitwiseORExpression</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>Right_shift</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#bitwise">Bitwise operators in the JS guide</a></li>
+<li><a href="right_shift_assignment">Right shift assignment operator</a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Right_shift" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Right_shift</a></p>
+</body>
+</html>

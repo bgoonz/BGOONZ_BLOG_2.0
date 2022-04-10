@@ -1,8 +1,10 @@
-# parseFloat()
+parseFloat()
+============
 
 The `parseFloat()` function parses an argument (converting it to a string first if needed) and returns a floating point number.
 
-## Syntax
+Syntax
+------
 
     parseFloat(string)
 
@@ -17,14 +19,15 @@ A floating point number parsed from the given `string`.
 
 Or [`NaN`](nan) when the first non-whitespace character cannot be converted to a number.
 
-## Description
+Description
+-----------
 
 `parseFloat` is a function property of the global object.
 
 -   If `parseFloat` encounters a character other than a plus sign (`+`), minus sign (`-` U+002D HYPHEN-MINUS), numeral (`0`-`9`), decimal point (`.`), or exponent (`e` or `E`), it returns the value up to that character, ignoring the invalid character and characters following it.
--   A _second_ decimal point also stops parsing (characters up to that point will still be parsed).
+-   A *second* decimal point also stops parsing (characters up to that point will still be parsed).
 -   Leading and trailing spaces in the argument are ignored.
--   If the argument's first character can't be converted to a number (it's not any of the above characters), `parseFloat` returns [`NaN`](nan).
+-   If the argument’s first character can’t be converted to a number (it’s not any of the above characters), `parseFloat` returns [`NaN`](nan).
 -   `parseFloat` can also parse and return [`Infinity`](infinity).
 -   `parseFloat` converts [`BigInt`](bigint) syntax to [`Numbers`](number), losing precision. This happens because the trailing `n` character is discarded.
 
@@ -32,7 +35,8 @@ Consider [`Number(value)`](number) for stricter parsing, which converts to [`NaN
 
 `parseFloat` will parse non-string objects if they have a [`toString`](object/tostring) or [`valueOf`](object/valueof) method. The returned value is the same as if `parseFloat` had been called on the result of those methods.
 
-## Examples
+Examples
+--------
 
 ### `parseFloat` returning a number
 
@@ -59,14 +63,14 @@ The following examples both return `900719925474099300`, losing precision as the
     parseFloat(900719925474099267n);
     parseFloat('900719925474099267n');
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-parsefloat-string">ECMAScript (ECMA-262) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript (ECMA-262)<br />
+</p><span class="small">The definition of ‘parseFloat’ in that specification.</span></td></tr></tbody></table>
 
-<span class="small">The definition of 'parseFloat' in that specification.</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -122,7 +126,8 @@ Samsung Internet
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`parseInt()`](parseint)
 -   [`Number.parseFloat()`](number/parsefloat)

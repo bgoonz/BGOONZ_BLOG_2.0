@@ -1,83 +1,50 @@
----
-title: title
-subtitle: subtitle
-date: '2022-01-03'
-thumb_img_alt: lorem-ipsum
-content_img_alt: lorem-ipsum
-excerpt: lorem-ipsum
-seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
-template: post
-thumb_img_path: images/css-72a655a7.jpg
----
+subtitle
 
----
+2022-01-03
+
+------------------------------------------------------------------------
 
 title: AppleScript
 
-category: macOS
-prism_languages: [applescript]
+category: macOS prism\_languages: \[applescript\]
 
----
+------------------------------------------------------------------------
 
 ### Running
 
-```applescript
-osascript -e "..."
-```
+    osascript -e "..."
 
-```applescript
-display notification "X" with title "Y"
-```
+    display notification "X" with title "Y"
 
 ### Comments
 
-```applescript
--- This is a single line comment
-```
+    -- This is a single line comment
 
-```applescript
-# This is another single line comment
-```
+    # This is another single line comment
 
-```applescript
-(*
-This is
-a multi
-line comment
-*)
-```
+    (*
+    This is
+    a multi
+    line comment
+    *)
 
 ### Say
 
-```applescript
--- default voice
-say "Hi I am a Mac"
-```
+    -- default voice
+    say "Hi I am a Mac"
 
-```applescript
--- specified voice
-say "Hi I am a Mac" using "Zarvox"
-```
+    -- specified voice
+    say "Hi I am a Mac" using "Zarvox"
 
 ### Beep
 
-```applescript
--- beep once
-beep
-```
+    -- beep once
+    beep
 
-```applescript
--- beep 10 times
-beep 10
-```
+    -- beep 10 times
+    beep 10
 
 ### Delay
 
-```applescript
--- delay for 5 seconds
-delay 5
-```
+    -- delay for 5 seconds
+    delay 5

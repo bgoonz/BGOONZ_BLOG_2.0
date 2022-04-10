@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>bitwise_not</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="bitwise-not">Bitwise NOT (~)</h1>
+<p>The bitwise NOT operator (<code>~</code>) inverts the bits of its operand.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>~a</code></pre>
+<h2 id="description">Description</h2>
+<p>The operands are converted to 32-bit integers and expressed by a series of bits (zeroes and ones). Numbers with more than 32 bits get their most significant bits discarded. For example, the following integer with more than 32 bits will be converted to a 32 bit integer:</p>
+<pre><code>Before: 11100110111110100000000000000110000000000001
+After:              10100000000000000110000000000001</code></pre>
+<p>Each bit in the first operand is paired with the corresponding bit in the second operand: <em>first bit</em> to <em>first bit</em>, <em>second bit</em> to <em>second bit</em>, and so on.</p>
+<p>The operator is applied to each pair of bits, and the result is constructed bitwise.</p>
+<p>The truth table for the <code>NOT</code> operation is:</p>
+<table>
+<thead>
+<tr class="header">
+<th>
+a
+</th>
+<th>
+NOT a
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+0
+</td>
+<td>
+1
+</td>
+</tr>
+<tr class="even">
+<td>
+1
+</td>
+<td>
+0
+</td>
+</tr>
+</tbody>
+</table>
+<pre><code> 9 (base 10) = 00000000000000000000000000001001 (base 2)
+               --------------------------------
+~9 (base 10) = 11111111111111111111111111110110 (base 2) = -10 (base 10)</code></pre>
+<p>Bitwise NOTing any number <code>x</code> yields <code>-(x + 1)</code>. For example, <code>~-5</code> yields <code>4</code>.</p>
+<p>Note that due to using 32-bit representation for numbers both <code>~-1</code> and <code>~4294967295</code> (2<sup>32</sup>-1) results in <code>0</code>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-bitwise-not">Using bitwise NOT</h3>
+<pre><code>~0;  // -1
+~-1; // 0
+~1;  // -2</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-bitwise-not-operator">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-bitwise-not-operator</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>Bitwise_NOT</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#bitwise">Bitwise operators in the JS guide</a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_NOT" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_NOT</a></p>
+</body>
+</html>

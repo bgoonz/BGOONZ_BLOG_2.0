@@ -1,115 +1,130 @@
----
-title: title
-subtitle: subtitle
-date: '2022-01-03'
-thumb_img_alt: lorem-ipsum
-content_img_alt: lorem-ipsum
-excerpt: lorem-ipsum
-seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
-template: post
-thumb_img_path: images/css-72a655a7.jpg
----
+subtitle
 
-# Basic
+2022-01-03
 
-# launch terminal.
+Basic
+=====
 
-[Shift]+[Mod]+[Enter]
+launch terminal.
+================
 
-# show/hide bar.
+\[Shift\]+\[Mod\]+\[Enter\]
 
-[Mod]+[b]
+show/hide bar.
+==============
 
-# dmenu for running programs like the x#www#browser.
+\[Mod\]+\[b\]
 
-[Mod]+[p]
+dmenu for running programs like the x\#www\#browser.
+====================================================
 
-# push acive window from stack to master, or pulls last used window from stack onto master.
+\[Mod\]+\[p\]
 
-[Mod]+[Enter]
+push acive window from stack to master, or pulls last used window from stack onto master.
+=========================================================================================
 
-# focus on next/previous window in current tag.
+\[Mod\]+\[Enter\]
 
-[Mod] + [j / k]
+focus on next/previous window in current tag.
+=============================================
 
-# increases / decreases master size.
+\[Mod\] + \[j / k\]
 
-[Mod] + [h / l]
+increases / decreases master size.
+==================================
 
-# Navigation
+\[Mod\] + \[h / l\]
 
-# moves your focus to tag 2.
+Navigation
+==========
 
-[Mod]+[2]
+moves your focus to tag 2.
+==========================
 
-# move active window to the 2 tag.
+\[Mod\]+\[2\]
 
-[Shift]+[Mod]+[2]
+move active window to the 2 tag.
+================================
 
-# increases / decreases number of windows on master
+\[Shift\]+\[Mod\]+\[2\]
 
-[Mod] + [i / d]
+increases / decreases number of windows on master
+=================================================
 
-# move focus between screens (multi monitor setup)
+\[Mod\] + \[i / d\]
 
-[Mod] + [, / .]
+move focus between screens (multi monitor setup)
+================================================
 
-# move active window to different screen.
+\[Mod\] + \[, / .\]
 
-[Shift]+[Mod]+[, / .]
+move active window to different screen.
+=======================================
 
-# view all windows on screen.
+\[Shift\]+\[Mod\]+\[, / .\]
 
-[Mod]+[0]
+view all windows on screen.
+===========================
 
-# make focused window appear on all tags.
+\[Mod\]+\[0\]
 
-[Shift]+[Mod]+[0]
+make focused window appear on all tags.
+=======================================
 
-# kill active window.
+\[Shift\]+\[Mod\]+\[0\]
 
-[Shift]+[Mod]+[c]
+kill active window.
+===================
 
-# quit dwm cleanly.
+\[Shift\]+\[Mod\]+\[c\]
 
-[Shift]+[Mod]+[q]
+quit dwm cleanly.
+=================
 
-# Layout
+\[Shift\]+\[Mod\]+\[q\]
 
-# tiled mode. []=
+Layout
+======
 
-[Mod]+[t]
+tiled mode. \[\]=
+=================
 
-# floating mode. ><>
+\[Mod\]+\[t\]
 
-[Mod]+[f]
+floating mode. &gt;&lt;&gt;
+===========================
 
-# monocle mode. [M] (single window fullscreen)
+\[Mod\]+\[f\]
 
-[Mod]+[m]
+monocle mode. \[M\] (single window fullscreen)
+==============================================
 
-# Floating
+\[Mod\]+\[m\]
 
-# to resize the floating window.
+Floating
+========
 
-[Mod]+[R M B]
+to resize the floating window.
+==============================
 
-# to move the floating window around.
+\[Mod\]+\[R M B\]
 
-[Mod]+[L M B]
+to move the floating window around.
+===================================
 
-# toggles to the previous layout mode.
+\[Mod\]+\[L M B\]
 
-[Mod]+[Space]
+toggles to the previous layout mode.
+====================================
 
-# to make an individual window float.
+\[Mod\]+\[Space\]
 
-[Mod]+[Shift]+[Space]
+to make an individual window float.
+===================================
 
-# to make an individual window un#float.
+\[Mod\]+\[Shift\]+\[Space\]
 
-[Mod]+[M M B]
+to make an individual window un\#float.
+=======================================
+
+\[Mod\]+\[M M B\]

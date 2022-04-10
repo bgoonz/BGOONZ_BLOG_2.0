@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>toprecision</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="number.prototype.toprecision">Number.prototype.toPrecision()</h1>
+<p>The <code>toPrecision()</code> method returns a string representing the <a href="../number"><code>Number</code></a> object to the specified precision.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>toPrecision()
+toPrecision(precision)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>precision</code> <span class="badge inline optional">Optional</span><br />
+An integer specifying the number of significant digits.</p>
+<h3 id="return-value">Return value</h3>
+<p>A string representing a <a href="../number"><code>Number</code></a> object in fixed-point or exponential notation rounded to <code>precision</code> significant digits. See the discussion of rounding in the description of the <a href="tofixed"><code>Number.prototype.toFixed()</code></a> method, which also applies to <code>toPrecision()</code>.</p>
+<p>If the <code>precision</code> argument is omitted, behaves as <a href="tostring"><code>Number.prototype.toString()</code></a>. If the <code>precision</code> argument is a non-integer value, it is rounded to the nearest integer.</p>
+<h3 id="exceptions">Exceptions</h3>
+<p><a href="../rangeerror"><code>RangeError</code></a><br />
+If <code>precision</code> is not between <code>1</code> and <code>100</code> (inclusive), a <a href="../rangeerror"><code>RangeError</code></a> is thrown. Implementations are allowed to support larger and smaller values as well. ECMA-262 only requires a precision of up to 21 significant digits.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-toprecision">Using <code>toPrecision</code></h3>
+<pre><code>let numObj = 5.123456
+
+console.log(numObj.toPrecision())    // logs &#39;5.123456&#39;
+console.log(numObj.toPrecision(5))   // logs &#39;5.1235&#39;
+console.log(numObj.toPrecision(2))   // logs &#39;5.1&#39;
+console.log(numObj.toPrecision(1))   // logs &#39;5&#39;
+
+numObj = 0.000123
+
+console.log(numObj.toPrecision())    // logs &#39;0.000123&#39;
+console.log(numObj.toPrecision(5))   // logs &#39;0.00012300&#39;
+console.log(numObj.toPrecision(2))   // logs &#39;0.00012&#39;
+console.log(numObj.toPrecision(1))   // logs &#39;0.0001&#39;
+
+// note that exponential notation might be returned in some circumstances
+console.log((1234.5).toPrecision(2)) // logs &#39;1.2e+3&#39;</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-number.prototype.toprecision">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-number.prototype.toprecision</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>toPrecision</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>5.5</p>
+<p>7</p>
+<p>2</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="tofixed"><code>Number.prototype.toFixed()</code></a></li>
+<li><a href="toexponential"><code>Number.prototype.toExponential()</code></a></li>
+<li><a href="tostring"><code>Number.prototype.toString()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toPrecision" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toPrecision</a></p>
+</body>
+</html>

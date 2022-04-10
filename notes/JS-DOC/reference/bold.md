@@ -1,4 +1,5 @@
-# String.prototype.bold()
+String.prototype.bold()
+=======================
 
 **Deprecated**
 
@@ -6,7 +7,8 @@ This feature is no longer recommended. Though some browsers might still support 
 
 The `bold()` method creates a [`<b>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b) HTML element that causes a string to be displayed as bold.
 
-## Syntax
+Syntax
+------
 
     bold()
 
@@ -14,11 +16,13 @@ The `bold()` method creates a [`<b>`](https://developer.mozilla.org/en-US/docs/W
 
 A string containing a [`<b>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b) HTML element.
 
-## Description
+Description
+-----------
 
-The `bold()` method embeds a string in a `<b>` element: "`<b>str</b>`".
+The `bold()` method embeds a string in a `<b>` element: “`<b>str</b>`”.
 
-## Examples
+Examples
+--------
 
 ### Using bold()
 
@@ -31,12 +35,11 @@ The following example uses string methods to change the formatting of a string:
     console.log(worldString.italics()); // <i>Hello, world</i>
     console.log(worldString.strike());  // <strike>Hello, world</strike>
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.bold">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-string.prototype.bold</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-string.prototype.bold</span></td></tr></tbody></table>
 
 `bold`
 
@@ -64,12 +67,12 @@ The following example uses string methods to change the formatting of a string:
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`String.prototype.blink()`](blink)
 -   [`String.prototype.italics()`](italics)
 -   [`String.prototype.strike()`](strike)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/bold" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/bold</a>

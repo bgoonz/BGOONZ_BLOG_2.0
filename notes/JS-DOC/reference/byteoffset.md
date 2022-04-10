@@ -1,12 +1,15 @@
-# TypedArray.prototype.byteOffset
+TypedArray.prototype.byteOffset
+===============================
 
 The `byteOffset` accessor property represents the offset (in bytes) of a typed array from the start of its [`ArrayBuffer`](../arraybuffer).
 
-## Description
+Description
+-----------
 
-The `byteOffset` property is an accessor property whose set accessor function is `undefined`, meaning that you can only read this property. The value is established when a _TypedArray_ is constructed and cannot be changed. _TypedArray_ is one of the [TypedArray objects](../typedarray#typedarray_objects).
+The `byteOffset` property is an accessor property whose set accessor function is `undefined`, meaning that you can only read this property. The value is established when a *TypedArray* is constructed and cannot be changed. *TypedArray* is one of the [TypedArray objects](../typedarray#typedarray_objects).
 
-## Examples
+Examples
+--------
 
 ### Using the byteOffset property
 
@@ -18,12 +21,11 @@ The `byteOffset` property is an accessor property whose set accessor function is
     var uint8 = new Uint8Array(buffer, 3);
     uint8.byteOffset; // 3 (as specified when constructing Uint8Array)
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="#">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-get-%typedarray%.prototype.byteoffset</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-get-%typedarray%.prototype.byteoffset</span></td></tr></tbody></table>
 
 `byteOffset`
 
@@ -51,11 +53,11 @@ The `byteOffset` property is an accessor property whose set accessor function is
 
 1.0
 
-## See also
+See also
+--------
 
 -   [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
 -   [`TypedArray`](../typedarray)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/byteOffset" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/byteOffset</a>

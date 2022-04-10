@@ -1,8 +1,10 @@
-# Intl.PluralRules() constructor
+Intl.PluralRules() constructor
+==============================
 
 The `Intl.PluralRules()` constructor creates [`Intl.PluralRules`](../pluralrules) objects.
 
-## Syntax
+Syntax
+------
 
     new Intl.PluralRules()
     new Intl.PluralRules(locales)
@@ -17,13 +19,13 @@ A string with a BCP 47 language tag, or an array of such strings. For the genera
 An object with some or all of the following properties:
 
 `localeMatcher`  
-The locale matching algorithm to use. Possible values are "`lookup`" and "`best fit`"; the default is "`best fit`". For information about this option, see the [Intl](../../intl#locale_negotiation) page.
+The locale matching algorithm to use. Possible values are “`lookup`” and “`best fit`”; the default is “`best fit`”. For information about this option, see the [Intl](../../intl#locale_negotiation) page.
 
 `type`  
 The type to use. Possible values are:
 
--   "`cardinal`" for cardinal numbers (refering to the quantity of things). This is the default value.
--   "`ordinal`" for ordinal number (refering to the ordering or ranking of things, e.g. "1st", "2nd", "3rd" in English).
+-   “`cardinal`” for cardinal numbers (refering to the quantity of things). This is the default value.
+-   “`ordinal`” for ordinal number (refering to the ordering or ranking of things, e.g. “1st”, “2nd”, “3rd” in English).
 
 The following properties fall into two groups: `minimumIntegerDigits`, `minimumFractionDigits`, and `maximumFractionDigits` in one group, `minimumSignificantDigits` and `maximumSignificantDigits` in the other. If at least one property from the second group is defined, then the first group is ignored.
 
@@ -31,10 +33,10 @@ The following properties fall into two groups: `minimumIntegerDigits`, `minimumF
 The minimum number of integer digits to use. Possible values are from 1 to 21; the default is 1.
 
 `minimumFractionDigits`  
-The minimum number of fraction digits to use. Possible values are from 0 to 20; the default for plain number and percent formatting is 0; the default for currency formatting is the number of minor unit digits provided by the [ISO 4217 currency code list](https://www.currency-iso.org/en/home/tables/table-a1.html) (2 if the list doesn't provide that information).
+The minimum number of fraction digits to use. Possible values are from 0 to 20; the default for plain number and percent formatting is 0; the default for currency formatting is the number of minor unit digits provided by the [ISO 4217 currency code list](https://www.currency-iso.org/en/home/tables/table-a1.html) (2 if the list doesn’t provide that information).
 
 `maximumFractionDigits`  
-The maximum number of fraction digits to use. Possible values are from 0 to 20; the default for plain number formatting is the larger of `minimumFractionDigits` and 3; the default for currency formatting is the larger of `minimumFractionDigits` and the number of minor unit digits provided by the [ISO 4217 currency code list](https://www.currency-iso.org/en/home/tables/table-a1.html) (2 if the list doesn't provide that information); the default for percent formatting is the larger of `minimumFractionDigits` and 0.
+The maximum number of fraction digits to use. Possible values are from 0 to 20; the default for plain number formatting is the larger of `minimumFractionDigits` and 3; the default for currency formatting is the larger of `minimumFractionDigits` and the number of minor unit digits provided by the [ISO 4217 currency code list](https://www.currency-iso.org/en/home/tables/table-a1.html) (2 if the list doesn’t provide that information); the default for percent formatting is the larger of `minimumFractionDigits` and 0.
 
 `minimumSignificantDigits`  
 The minimum number of significant digits to use. Possible values are from 1 to 21; the default is 1.
@@ -42,11 +44,12 @@ The minimum number of significant digits to use. Possible values are from 1 to 2
 `maximumSignificantDigits`  
 The maximum number of significant digits to use. Possible values are from 1 to 21; the default is 21.
 
-## Examples
+Examples
+--------
 
 ### Basic usage
 
-In basic use without specifying a locale, a formatted string in the default locale and with default options is returned. This is useful to distinguish between singular and plural forms, e.g. "dog" and "dogs".
+In basic use without specifying a locale, a formatted string in the default locale and with default options is returned. This is useful to distinguish between singular and plural forms, e.g. “dog” and “dogs”.
 
     var pr = new Intl.PluralRules();
 
@@ -61,7 +64,7 @@ In basic use without specifying a locale, a formatted string in the default loca
 
 ### Using options
 
-The results can be customized using the `options` argument, which has one property called `type` which you can set to `ordinal`. This is useful to figure out the ordinal indicator, e.g. "1st", "2nd", "3rd", "4th", "42nd" and so forth.
+The results can be customized using the `options` argument, which has one property called `type` which you can set to `ordinal`. This is useful to figure out the ordinal indicator, e.g. “1st”, “2nd”, “3rd”, “4th”, “42nd” and so forth.
 
     var pr = new Intl.PluralRules('en-US', { type: 'ordinal' });
 
@@ -78,14 +81,14 @@ The results can be customized using the `options` argument, which has one proper
     pr.select(42);
     // → 'two'
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-intl-pluralrules-constructor">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Internationalization API Specification (ECMAScript Internationalization API)<br />
+</p><span class="small">#sec-intl-pluralrules-constructor</span></td></tr></tbody></table>
 
-<span class="small">#sec-intl-pluralrules-constructor</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -141,7 +144,8 @@ No
 
 8.0
 
-## See also
+See also
+--------
 
 -   [`Intl.PluralRules`](../pluralrules)
 -   [`Intl`](../../intl)

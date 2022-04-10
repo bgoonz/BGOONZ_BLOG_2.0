@@ -1,8 +1,10 @@
-# typeof
+typeof
+======
 
 The `typeof` operator returns a string indicating the type of the unevaluated operand.
 
-## Syntax
+Syntax
+------
 
 The `typeof` operator is followed by its operand:
 
@@ -14,17 +16,19 @@ The `typeof` operator is followed by its operand:
 `operand`  
 An expression representing the object or [primitive](https://developer.mozilla.org/en-US/docs/Glossary/Primitive) whose type is to be returned.
 
-## Description
+Description
+-----------
 
 The following table summarizes the possible return values of `typeof`. For more information about types and primitives, see also the [JavaScript data structure](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures) page.
 
-<table><thead><tr class="header"><th>Type</th><th>Result</th></tr></thead><tbody><tr class="odd"><td><a href="https://developer.mozilla.org/en-US/docs/Glossary/undefined">Undefined</a></td><td><code>"undefined"</code></td></tr><tr class="even"><td><a href="https://developer.mozilla.org/en-US/docs/Glossary/Null">Null</a></td><td><code>"object"</code> (see <a href="#typeof_null">below</a>)</td></tr><tr class="odd"><td><a href="https://developer.mozilla.org/en-US/docs/Glossary/Boolean">Boolean</a></td><td><code>"boolean"</code></td></tr><tr class="even"><td><a href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a></td><td><code>"number"</code></td></tr><tr class="odd"><td><a href="https://developer.mozilla.org/en-US/docs/Glossary/BigInt">BigInt</a> (new in ECMAScript 2020)</td><td><code>"bigint"</code></td></tr><tr class="even"><td><a href="https://developer.mozilla.org/en-US/docs/Glossary/String">String</a></td><td><code>"string"</code></td></tr><tr class="odd"><td><a href="https://developer.mozilla.org/en-US/docs/Glossary/Symbol">Symbol</a> (new in ECMAScript 2015)</td><td><code>"symbol"</code></td></tr><tr class="even"><td><a href="https://developer.mozilla.org/en-US/docs/Glossary/Function">Function</a> object (implements [[Call]] in ECMA-262 terms)</td><td><code>"function"</code></td></tr><tr class="odd"><td>Any other object</td><td><code>"object"</code></td></tr></tbody></table>
+<table><thead><tr class="header"><th>Type</th><th>Result</th></tr></thead><tbody><tr class="odd"><td><a href="https://developer.mozilla.org/en-US/docs/Glossary/undefined">Undefined</a></td><td><code>“undefined”</code></td></tr><tr class="even"><td><a href="https://developer.mozilla.org/en-US/docs/Glossary/Null">Null</a></td><td><code>“object”</code> (see <a href="#typeof_null">below</a>)</td></tr><tr class="odd"><td><a href="https://developer.mozilla.org/en-US/docs/Glossary/Boolean">Boolean</a></td><td><code>“boolean”</code></td></tr><tr class="even"><td><a href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a></td><td><code>“number”</code></td></tr><tr class="odd"><td><a href="https://developer.mozilla.org/en-US/docs/Glossary/BigInt">BigInt</a> (new in ECMAScript 2020)</td><td><code>“bigint”</code></td></tr><tr class="even"><td><a href="https://developer.mozilla.org/en-US/docs/Glossary/String">String</a></td><td><code>“string”</code></td></tr><tr class="odd"><td><a href="https://developer.mozilla.org/en-US/docs/Glossary/Symbol">Symbol</a> (new in ECMAScript 2015)</td><td><code>“symbol”</code></td></tr><tr class="even"><td><a href="https://developer.mozilla.org/en-US/docs/Glossary/Function">Function</a> object (implements [[Call]] in ECMA-262 terms)</td><td><code>“function”</code></td></tr><tr class="odd"><td>Any other object</td><td><code>“object”</code></td></tr></tbody></table>
 
 **Note:** ECMAScript 2019 and older permitted implementations to have `typeof` return any implementation-defined string value for non-callable non-standard exotic objects.
 
 The only known browser to have actually taken advantage of this is old Internet Explorer (see [below](#ie-specific_notes)).
 
-## Examples
+Examples
+--------
 
 ### Basic usage
 
@@ -125,7 +129,7 @@ Callable regular expressions were a non-standard addition in some browsers.
 
 Before ECMAScript 2015, `typeof` was always guaranteed to return a string for any operand it was supplied with. Even with undeclared identifiers, `typeof` will return `'undefined'`. Using `typeof` could never generate an error.
 
-But with the addition of block-scoped [`let`](../statements/let) and [`Statements/const`](../statements/const) using `typeof` on `let` and `const` variables (or using `typeof` on a `class`) in a block before they are declared will throw a [`ReferenceError`](../global_objects/referenceerror). Block scoped variables are in a "[temporal dead zone](../statements/let#the_temporal_dead_zone_and_typeof)" from the start of the block until the initialization is processed, during which, it will throw an error if accessed.
+But with the addition of block-scoped [`let`](../statements/let) and [`Statements/const`](../statements/const) using `typeof` on `let` and `const` variables (or using `typeof` on a `class`) in a block before they are declared will throw a [`ReferenceError`](../global_objects/referenceerror). Block scoped variables are in a “[temporal dead zone](../statements/let#the_temporal_dead_zone_and_typeof)” from the start of the block until the initialization is processed, during which, it will throw an error if accessed.
 
     typeof undeclaredVariable === 'undefined';
 
@@ -143,11 +147,11 @@ All current browsers expose a non-standard host object [`document.all`](https://
 
     typeof document.all === 'undefined';
 
-Although the specification allows custom type tags for non-standard exotic objects, it requires those type tags to be different from the predefined ones. The case of `document.all` having type `'undefined'` is classified in the web standards as a "willful violation" of the original ECMA JavaScript standard.
+Although the specification allows custom type tags for non-standard exotic objects, it requires those type tags to be different from the predefined ones. The case of `document.all` having type `'undefined'` is classified in the web standards as a “willful violation” of the original ECMA JavaScript standard.
 
 ### Real-world usage
 
-`typeof` is very useful, but it's not as versatile as might be required. For example, `typeof([])` , is `'object'`, as well as `typeof(new Date())`, `typeof(/abc/)`, etc.
+`typeof` is very useful, but it’s not as versatile as might be required. For example, `typeof([])` , is `'object'`, as well as `typeof(new Date())`, `typeof(/abc/)`, etc.
 
 For greater specificity in checking types, a `typeof` wrapper for usage in production-level code would be as follows (provided `obj` exists):
 
@@ -173,14 +177,14 @@ For greater specificity in checking types, a `typeof` wrapper for usage in produ
 
 For checking non-existent variables that would otherwise throw a [`ReferenceError`](../global_objects/referenceerror), use `typeof nonExistentVar === 'undefined'`.
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-typeof-operator">ECMAScript (ECMA-262) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript (ECMA-262)<br />
+</p><span class="small">The definition of ‘The typeof Operator’ in that specification.</span></td></tr></tbody></table>
 
-<span class="small">The definition of 'The typeof Operator' in that specification.</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -247,11 +251,11 @@ Some non-standard IE properties return other values ([tc39/ecma262\#1440 (commen
     typeof window.external.AddSearchProvider === "unknown";
     typeof window.external.IsSearchProviderInstalled === "unknown";
 
-## See also
+See also
+--------
 
 -   [`instanceof`](instanceof)
 -   [`document.all` willful violation of the standard](https://github.com/tc39/ecma262/issues/668)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof</a>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>todatestring</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="date.prototype.todatestring">Date.prototype.toDateString()</h1>
+<p>The <code>toDateString()</code> method returns the date portion of a <a href="../date"><code>Date</code></a> object in English in the following format separated by spaces:</p>
+<ol type="1">
+<li>First three letters of the week day name</li>
+<li>First three letters of the month name</li>
+<li>Two digit day of the month, padded on the left a zero if necessary</li>
+<li>Four digit year (at least), padded on the left with zeros if necessary</li>
+</ol>
+<p>E.g. “Thu Jan 01 1970”.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>toDateString()</code></pre>
+<h3 id="return-value">Return value</h3>
+<p>A string representing the date portion of the given <a href="../date"><code>Date</code></a> object in human readable form in English.</p>
+<h2 id="description">Description</h2>
+<p><a href="../date"><code>Date</code></a> instances refer to a specific point in time. Calling <a href="tostring"><code>toString()</code></a> will return the date formatted in a human readable form in English. In <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey">SpiderMonkey</a>, this consists of the date portion (day, month, and year) followed by the time portion (hours, minutes, seconds, and time zone). Sometimes it is desirable to obtain a string of the time portion; such a thing can be accomplished with the <code>toTimeString()</code> method.</p>
+<p>The <code>toDateString()</code> method is especially useful because compliant engines implementing <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Language_Resources">ECMA-262</a> may differ in the string obtained from <a href="tostring"><code>toString()</code></a> for <a href="../date"><code>Date</code></a> objects, as the format is implementation-dependent and simple string slicing approaches may not produce consistent results across multiple engines.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="a-basic-usage-of-todatestring">A basic usage of toDateString()</h3>
+<pre><code>var d = new Date(1993, 5, 28, 14, 39, 7);
+
+console.log(d.toString());     // logs Mon Jun 28 1993 14:39:07 GMT-0600 (PDT)
+console.log(d.toDateString()); // logs Mon Jun 28 1993</code></pre>
+<p><strong>Note:</strong> Month are 0-indexed when used as an argument of <a href="../date"><code>Date</code></a> (thus 0 corresponds to January and 11 to December).</p>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-date.prototype.todatestring">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-date.prototype.todatestring</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>toDateString</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>5.5</p>
+<p>5</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="tolocaledatestring"><code>Date.prototype.toLocaleDateString()</code></a></li>
+<li><a href="totimestring"><code>Date.prototype.toTimeString()</code></a></li>
+<li><a href="tostring"><code>Date.prototype.toString()</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toDateString" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toDateString</a></p>
+</body>
+</html>

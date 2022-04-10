@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>marking</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="html5-controls-marking-guide">HTML5 controls marking guide</h1>
+<p>The aim of the tasks is to demonstrate an understanding of the features covered in the <a href="https://wiki.developer.mozilla.org/en-US/docs/Learn/Forms/HTML5_input_types">The HTML5 input types</a> lesson in Learn Web Development on MDN.</p>
+<h2 id="task-1">Task 1</h2>
+<p>First let’s explore some of the new HTML5 input types.</p>
+<p>Create appropriate inputs for a user to update their details for:</p>
+<ol type="1">
+<li>Email</li>
+<li>Website</li>
+<li>Phone number</li>
+<li>Favourite color</li>
+</ol>
+<p>The appropriate input types to use here are <code>email</code>, <code>url</code>, <code>tel</code>, and <code>color</code>.</p>
+<p>The finished markup should look something like this:</p>
+<pre><code>&lt;form&gt;
+  &lt;h2&gt;Edit your preferences&lt;/h2&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;label for=&quot;e-mail&quot;&gt;Email&lt;/label&gt;
+      &lt;input type=&quot;email&quot; id=&quot;e-mail&quot; name=&quot;e-mail&quot;&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;label for=&quot;website&quot;&gt;Website&lt;/label&gt;
+      &lt;input type=&quot;url&quot; id=&quot;website&quot; name=&quot;website&quot;&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;label for=&quot;phone&quot;&gt;Phone number&lt;/label&gt;
+      &lt;input type=&quot;tel&quot; id=&quot;phone&quot; name=&quot;phone&quot;&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;label for=&quot;fave-color&quot;&gt;Favorite color&lt;/label&gt;
+      &lt;input type=&quot;color&quot; id=&quot;fave-color&quot; name=&quot;fave-color&quot;&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;button&gt;Update preferences&lt;/button&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/form&gt;</code></pre>
+<h2 id="task-2">Task 2</h2>
+<p>Next, we want you to implement a slider control to allow the user to choose a maximum number of people to invite to their party.</p>
+<ol type="1">
+<li>Implement a basic slider control to go along with the provided label. This requires <code>&lt;input type="range"&gt;</code>.</li>
+<li>Give it a minimum value of 1, maximum value of 30, and initial value of 10. To do this, you should use the <code>min</code>, <code>max</code>, and <code>value</code> attributes.</li>
+<li>Create a corresponding output element to put the current value of the slider into. Give it a class of <code>invite-output</code>, and semantically associate it with the input. If you do this correctly, the JavaScript included on the page will automatically update the output value when the slider is moved. To achieve this, you need to use an <code>&lt;output&gt;</code> element, give it a <code>class</code> attribute with value <code>invite-output</code>, and give it a <code>for</code> attribute with value <code>max-invite</code>.</li>
+</ol>
+<p>The finished markup should look something like this:</p>
+<pre><code>&lt;form&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;label for=&quot;max-invite&quot;&gt;Select maximum number of invitations&lt;/label&gt;
+      &lt;input type=&quot;range&quot; id=&quot;max-invite&quot; name=&quot;max-invite&quot; min=&quot;1&quot; max=&quot;30&quot; value=&quot;10&quot;&gt;
+      &lt;output class=&quot;invite-output&quot; for=&quot;max-invite&quot;&gt;&lt;/output&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;button&gt;Submit&lt;/button&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/form&gt;</code></pre>
+</body>
+</html>

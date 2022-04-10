@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2022-01-03" />
+  <title>title</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">title</h1>
+<p class="subtitle">subtitle</p>
+<p class="date">2022-01-03</p>
+</header>
+<hr />
+<p>title: Bundler category: Ruby</p>
+<hr />
+<h3 id="commands">Commands</h3>
+<pre><code>bundle                  # same as bundle install
+bundle install          # installs gems
+bundle install -j3      # faster (3 jobs)
+bundle update           # update all gems
+bundle update --source gemname  # update specified gem
+
+bundle outdated         # show outdated gems
+cd `bundle show rails`  # inspect a gem&#39;s dir
+
+bundle gem              # new gem skeleton</code></pre>
+<h3 id="gems">Gems</h3>
+<pre><code>gem &#39;hello&#39;
+gem &#39;hello&#39;, group: &#39;development&#39;</code></pre>
+<h3 id="github-support">Github support</h3>
+<pre><code>gem &#39;hello&#39;, github: &#39;rstacruz/hello&#39;
+gem &#39;hello&#39;, github: &#39;rstacruz/hello&#39;, &#39;branch: master&#39;</code></pre>
+<h3 id="grouping">Grouping</h3>
+<pre><code>group :development do
+  gem &#39;hello&#39;
+end</code></pre>
+<h3 id="deployment">Deployment</h3>
+<pre><code>$ bundle install --without=test,development --deployment</code></pre>
+<h3 id="local-gem-development">Local gem development</h3>
+<p>In your Gemfile, define a Git source and a branch:</p>
+<pre><code>gem &#39;hello&#39;, github: &#39;rstacruz/hello&#39;, branch: &#39;master&#39;</code></pre>
+<p>And then:</p>
+<pre><code>$ bundle config --global local.xxx ~/projects/xxx</code></pre>
+<h3 id="rake-gem-tasks">Rake Gem tasks</h3>
+<pre><code># Rakefile
+require &#39;bundler/gem_tasks&#39;</code></pre>
+<p>Terminal:</p>
+<pre><code>$ rake release
+$ rake build</code></pre>
+</body>
+</html>

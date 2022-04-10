@@ -1,8 +1,10 @@
-# Intl.NumberFormat() constructor
+Intl.NumberFormat() constructor
+===============================
 
 The `Intl.NumberFormat()` constructor creates [`Intl.NumberFormat`](../numberformat) objects that enable language-sensitive number formatting.
 
-## Syntax
+Syntax
+------
 
     new Intl.NumberFormat()
     new Intl.NumberFormat(locales)
@@ -14,67 +16,67 @@ The `Intl.NumberFormat()` constructor creates [`Intl.NumberFormat`](../numberfor
 A string with a BCP 47 language tag, or an array of such strings. For the general form and interpretation of the `locales` argument, see the [Intl](../../intl#locale_identification_and_negotiation) page. The following Unicode extension key is allowed:
 
 `nu`  
-The numbering system to be used. Possible values include: "`adlm`", "`ahom`", "`arab`", "`arabext`", "`bali`", "`beng`", "`bhks`", "`brah`", "`cakm`", "`cham`", "`deva`", "`diak`", "`fullwide`", "`gong`", "`gonm`", "`gujr`", "`guru`", "`hanidec`", "`hmng`", "`hmnp`", "`java`", "`kali`", "`khmr`", "`knda`", "`lana`", "`lanatham`", "`laoo`", "`latn`", "`lepc`", "`limb`", "`mathbold`", "`mathdbl`", "`mathmono`", "`mathsanb`", "`mathsans`", "`mlym`", "`modi`", "`mong`", "`mroo`", "`mtei`", "`mymr`", "`mymrshan`", "`mymrtlng`", "`newa`", "`nkoo`", "`olck`", "`orya`", "`osma`", "`rohg`", "`saur`", "`segment`", "`shrd`", "`sind`", "`sinh`", "`sora`", "`sund`", "`takr`", "`talu`", "`tamldec`", "`telu`", "`thai`", "`tibt`", "`tirh`", "`vaii`", "`wara`", "`wcho`". — see the [standard Unicode numeral systems list](../locale/numberingsystem).
+The numbering system to be used. Possible values include: “`adlm`”, “`ahom`”, “`arab`”, “`arabext`”, “`bali`”, “`beng`”, “`bhks`”, “`brah`”, “`cakm`”, “`cham`”, “`deva`”, “`diak`”, “`fullwide`”, “`gong`”, “`gonm`”, “`gujr`”, “`guru`”, “`hanidec`”, “`hmng`”, “`hmnp`”, “`java`”, “`kali`”, “`khmr`”, “`knda`”, “`lana`”, “`lanatham`”, “`laoo`”, “`latn`”, “`lepc`”, “`limb`”, “`mathbold`”, “`mathdbl`”, “`mathmono`”, “`mathsanb`”, “`mathsans`”, “`mlym`”, “`modi`”, “`mong`”, “`mroo`”, “`mtei`”, “`mymr`”, “`mymrshan`”, “`mymrtlng`”, “`newa`”, “`nkoo`”, “`olck`”, “`orya`”, “`osma`”, “`rohg`”, “`saur`”, “`segment`”, “`shrd`”, “`sind`”, “`sinh`”, “`sora`”, “`sund`”, “`takr`”, “`talu`”, “`tamldec`”, “`telu`”, “`thai`”, “`tibt`”, “`tirh`”, “`vaii`”, “`wara`”, “`wcho`”. — see the [standard Unicode numeral systems list](../locale/numberingsystem).
 
 `options` <span class="badge inline optional">Optional</span>  
 An object with some or all of the following properties:
 
 `compactDisplay`  
-Only used when `notation` is "`compact`". Takes either "`short`" (default) or "`long`".
+Only used when `notation` is “`compact`”. Takes either “`short`” (default) or “`long`”.
 
 `currency`  
-The currency to use in currency formatting. Possible values are the ISO 4217 currency codes, such as "`USD`" for the US dollar, "`EUR`" for the euro, or "`CNY`" for the Chinese RMB — see the [Current currency & funds code list](https://www.currency-iso.org/en/home/tables/table-a1.html). There is no default value; if the `style` is "`currency`", the `currency` property must be provided.
+The currency to use in currency formatting. Possible values are the ISO 4217 currency codes, such as “`USD`” for the US dollar, “`EUR`” for the euro, or “`CNY`” for the Chinese RMB — see the [Current currency & funds code list](https://www.currency-iso.org/en/home/tables/table-a1.html). There is no default value; if the `style` is “`currency`”, the `currency` property must be provided.
 
 `currencyDisplay`  
 How to display the currency in currency formatting. Possible values are:
 
--   "`symbol`" to use a localized currency symbol such as €, this is the default value,
--   "`narrowSymbol`" to use a narrow format symbol ("$100" rather than "US$100"),
--   "`code`" to use the ISO currency code,
--   "`name`" to use a localized currency name such as "`dollar`",
+-   “`symbol`” to use a localized currency symbol such as €, this is the default value,
+-   “`narrowSymbol`” to use a narrow format symbol (“$100” rather than “US$100”),
+-   “`code`” to use the ISO currency code,
+-   “`name`” to use a localized currency name such as “`dollar`”,
 
 `currencySign`  
-In many locales, accounting format means to wrap the number with parentheses instead of appending a minus sign. You can enable this formatting by setting the `currencySign` option to "`accounting`". The default value is "`standard`".
+In many locales, accounting format means to wrap the number with parentheses instead of appending a minus sign. You can enable this formatting by setting the `currencySign` option to “`accounting`”. The default value is “`standard`”.
 
 `localeMatcher`  
-The locale matching algorithm to use. Possible values are "`lookup`" and "`best fit`"; the default is "`best fit`". For information about this option, see the [Intl](../../intl#locale_negotiation) page.
+The locale matching algorithm to use. Possible values are “`lookup`” and “`best fit`”; the default is “`best fit`”. For information about this option, see the [Intl](../../intl#locale_negotiation) page.
 
 `notation`  
-The formatting that should be displayed for the number, the defaults is "`standard`"
+The formatting that should be displayed for the number, the defaults is “`standard`”
 
--   "`standard`" plain number formatting
--   "`scientific`" return the order-of-magnitude for formatted number.
--   "`engineering`" return the exponent of ten when divisible by three
--   "`compact`" string representing exponent, defaults is using the "short" form.
+-   “`standard`” plain number formatting
+-   “`scientific`” return the order-of-magnitude for formatted number.
+-   “`engineering`” return the exponent of ten when divisible by three
+-   “`compact`” string representing exponent, defaults is using the “short” form.
 
 `numberingSystem`  
-Numbering System. Possible values include: "`arab`", "`arabext`", " `bali`", "`beng`", "`deva`", "`fullwide`", " `gujr`", "`guru`", "`hanidec`", "`khmr`", " `knda`", "`laoo`", "`latn`", "`limb`", "`mlym`", " `mong`", "`mymr`", "`orya`", "`tamldec`", " `telu`", "`thai`", "`tibt`".
+Numbering System. Possible values include: “`arab`”, “`arabext`”, " `bali`“,”`beng`“,”`deva`“,”`fullwide`“,” `gujr`“,”`guru`“,”`hanidec`“,”`khmr`“,” `knda`“,”`laoo`“,”`latn`“,”`limb`“,”`mlym`“,” `mong`“,”`mymr`“,”`orya`“,”`tamldec`“,” `telu`“,”`thai`“,”`tibt`".
 
 `signDisplay`  
-When to display the sign for the number; defaults to "`auto`"
+When to display the sign for the number; defaults to “`auto`”
 
--   "`auto`" sign display for negative numbers only
--   "`never`" never display sign
--   "`always`" always display sign
--   "`exceptZero`" sign display for positive and negative numbers, but not zero
+-   “`auto`” sign display for negative numbers only
+-   “`never`” never display sign
+-   “`always`” always display sign
+-   “`exceptZero`” sign display for positive and negative numbers, but not zero
 
 `style`  
-The formatting style to use , the default is "`decimal`".
+The formatting style to use , the default is “`decimal`”.
 
--   "`decimal`" for plain number formatting.
--   "`currency`" for currency formatting.
--   "`percent`" for percent formatting
--   "`unit`" for unit formatting
+-   “`decimal`” for plain number formatting.
+-   “`currency`” for currency formatting.
+-   “`percent`” for percent formatting
+-   “`unit`” for unit formatting
 
 `unit`  
-The unit to use in `unit` formatting, Possible values are core unit identifiers, defined in [UTS \#35, Part 2, Section 6](https://unicode.org/reports/tr35/tr35-general.html#Unit_Elements). A [subset](https://tc39.es/proposal-unified-intl-numberformat/section6/locales-currencies-tz_proposed_out.html#sec-issanctionedsimpleunitidentifier) of units from the [full list](https://github.com/unicode-org/cldr/blob/master/common/validity/unit.xml) was selected for use in ECMAScript. Pairs of simple units can be concatenated with "`-per-`" to make a compound unit. There is no default value; if the `style` is "`unit`", the `unit` property must be provided.
+The unit to use in `unit` formatting, Possible values are core unit identifiers, defined in [UTS \#35, Part 2, Section 6](https://unicode.org/reports/tr35/tr35-general.html#Unit_Elements). A [subset](https://tc39.es/proposal-unified-intl-numberformat/section6/locales-currencies-tz_proposed_out.html#sec-issanctionedsimpleunitidentifier) of units from the [full list](https://github.com/unicode-org/cldr/blob/master/common/validity/unit.xml) was selected for use in ECMAScript. Pairs of simple units can be concatenated with “`-per-`” to make a compound unit. There is no default value; if the `style` is “`unit`”, the `unit` property must be provided.
 
 `unitDisplay`  
-The unit formatting style to use in `unit` formatting, the defaults is "`short`".
+The unit formatting style to use in `unit` formatting, the defaults is “`short`”.
 
--   "`long`" (e.g., `16 litres`)
--   "`short`" (e.g., `16 l`)
--   "`narrow`" (e.g., `16l`)
+-   “`long`” (e.g., `16 litres`)
+-   “`short`” (e.g., `16 l`)
+-   “`narrow`” (e.g., `16l`)
 
 `useGrouping`  
 Whether to use grouping separators, such as thousands separators or thousand/lakh/crore separators. Possible values are true and false; the default is true.
@@ -85,10 +87,10 @@ The following properties fall into two groups: `minimumIntegerDigits`, `minimumF
 The minimum number of integer digits to use. Possible values are from 1 to 21; the default is 1.
 
 `minimumFractionDigits`  
-The minimum number of fraction digits to use. Possible values are from 0 to 20; the default for plain number and percent formatting is 0; the default for currency formatting is the number of minor unit digits provided by the [ISO 4217 currency code list](https://www.currency-iso.org/en/home/tables/table-a1.html) (2 if the list doesn't provide that information).
+The minimum number of fraction digits to use. Possible values are from 0 to 20; the default for plain number and percent formatting is 0; the default for currency formatting is the number of minor unit digits provided by the [ISO 4217 currency code list](https://www.currency-iso.org/en/home/tables/table-a1.html) (2 if the list doesn’t provide that information).
 
 `maximumFractionDigits`  
-The maximum number of fraction digits to use. Possible values are from 0 to 20; the default for plain number formatting is the larger of `minimumFractionDigits` and 3; the default for currency formatting is the larger of `minimumFractionDigits` and the number of minor unit digits provided by the [ISO 4217 currency code list](https://www.currency-iso.org/en/home/tables/table-a1.html) (2 if the list doesn't provide that information); the default for percent formatting is the larger of `minimumFractionDigits` and 0.
+The maximum number of fraction digits to use. Possible values are from 0 to 20; the default for plain number formatting is the larger of `minimumFractionDigits` and 3; the default for currency formatting is the larger of `minimumFractionDigits` and the number of minor unit digits provided by the [ISO 4217 currency code list](https://www.currency-iso.org/en/home/tables/table-a1.html) (2 if the list doesn’t provide that information); the default for percent formatting is the larger of `minimumFractionDigits` and 0.
 
 `minimumSignificantDigits`  
 The minimum number of significant digits to use. Possible values are from 1 to 21; the default is 1.
@@ -96,7 +98,8 @@ The minimum number of significant digits to use. Possible values are from 1 to 2
 `maximumSignificantDigits`  
 The maximum number of significant digits to use. Possible values are from 1 to 21; the default is 21.
 
-## Examples
+Examples
+--------
 
 ### Basic usage
 
@@ -191,7 +194,7 @@ Display a sign for positive and negative numbers, but not zero:
     }).format(0.55);
     // → '+55%'
 
-Note that when the currency sign is "accounting", parentheses might be used instead of a minus sign:
+Note that when the currency sign is “accounting”, parentheses might be used instead of a minus sign:
 
     new Intl.NumberFormat('bn', {
       style: 'currency',
@@ -202,14 +205,14 @@ Note that when the currency sign is "accounting", parentheses might be used inst
 
     // → '($3,500.00)'
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-intl-numberformat-constructor">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Internationalization API Specification (ECMAScript Internationalization API)<br />
+</p><span class="small">#sec-intl-numberformat-constructor</span></td></tr></tbody></table>
 
-<span class="small">#sec-intl-numberformat-constructor</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -307,7 +310,7 @@ No
 
 10-14.1
 
-Doesn't support `currencyDisplay: 'narrowSymbol'`.
+Doesn’t support `currencyDisplay: 'narrowSymbol'`.
 
 77
 
@@ -321,7 +324,7 @@ Doesn't support `currencyDisplay: 'narrowSymbol'`.
 
 10-14.5
 
-Doesn't support `currencyDisplay: 'narrowSymbol'`.
+Doesn’t support `currencyDisplay: 'narrowSymbol'`.
 
 12.0
 
@@ -455,7 +458,8 @@ No
 
 12.0
 
-## See also
+See also
+--------
 
 -   [`Intl.NumberFormat`](../numberformat)
 -   [`Intl`](../../intl)

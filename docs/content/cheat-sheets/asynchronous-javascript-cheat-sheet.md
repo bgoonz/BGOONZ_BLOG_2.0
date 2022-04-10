@@ -1,4 +1,5 @@
-# Asynchronous JavaScript Cheat Sheet
+Asynchronous JavaScript Cheat Sheet
+===================================
 
 #### Promise basics
 
@@ -14,18 +15,16 @@
 -   `Promise.reject(err)` will reject the promise with `err`.
 -   If you put a fulfilled promise into a fulfilled promise, they will collapse into one.
 
-```js
-// Resolving with a value, rejecting with an error
-new Promise((resolve, reject) => {
-    performOperation((err, val) => {
-        if (err) reject(err);
-        else resolve(val);
+    // Resolving with a value, rejecting with an error
+    new Promise((resolve, reject) => {
+        performOperation((err, val) => {
+            if (err) reject(err);
+            else resolve(val);
+        });
     });
-});
 
-// Resolving without value, no need for reject
-const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-```
+    // Resolving without value, no need for reject
+    const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 #### Handling promises
 
@@ -40,22 +39,20 @@ const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 -   `Promise.prototype.finally()` calls `onFinally` with no arguments once any outcome is available.
 -   `Promise.prototype.finally()` passes through input promise.
 
-```js
-promisedOperation()
-  .then(
-    val => value + 1,   // Called once the promise is fulfilled
-    err => {            // Called if the promise is rejected
-      if (err === someKnownErr) return defaultVal;
-      else throw err;
-    }
-  )
-  .catch(
-    err => console.log(err); // Called if the promise is rejected
-  )
-  .finally(
-    () => console.log('Done'); // Called once any outcome is available
-  );
-```
+    promisedOperation()
+      .then(
+        val => value + 1,   // Called once the promise is fulfilled
+        err => {            // Called if the promise is rejected
+          if (err === someKnownErr) return defaultVal;
+          else throw err;
+        }
+      )
+      .catch(
+        err => console.log(err); // Called if the promise is rejected
+      )
+      .finally(
+        () => console.log('Done'); // Called once any outcome is available
+      );
 
 -   All three of the above methods will not be executed at least until the next tick, even for promises that already have an outcome.
 
@@ -65,16 +62,14 @@ promisedOperation()
 -   If any promise is rejected, the error will pass through.
 -   `Promise.race()` passes through the first settled promise.
 
-```js
-Promise.all([p1, p2, p3]).then(([v1, v2, v3]) => {
-    // Values always correspond to the order of promises,
-    // not the order they resolved in (i.e. v1 corresponds to p1)
-});
+    Promise.all([p1, p2, p3]).then(([v1, v2, v3]) => {
+        // Values always correspond to the order of promises,
+        // not the order they resolved in (i.e. v1 corresponds to p1)
+    });
 
-Promise.race([p1, p2, p3]).then((val) => {
-    // val will take the value of the first resolved promise
-});
-```
+    Promise.race([p1, p2, p3]).then((val) => {
+        // val will take the value of the first resolved promise
+    });
 
 #### async/await
 
@@ -86,16 +81,14 @@ Promise.race([p1, p2, p3]).then((val) => {
 -   `await` also accepts non-promise values.
 -   `await` always waits at least until the next tick before resolving, even when waiting already fulfilled promises or non-promise values.
 
-```js
-async () => {
-    try {
-        let val = await promisedValue();
-        // Do stuff here
-    } catch (err) {
-        // Handle error
-    }
-};
-```
+    async () => {
+        try {
+            let val = await promisedValue();
+            // Do stuff here
+        } catch (err) {
+            // Handle error
+        }
+    };
 
 #### Promise basics
 
@@ -111,9 +104,9 @@ async () => {
 -   `Promise.reject(err)` will reject the promise with `err`.
 -   If you put a fulfilled promise into a fulfilled promise, they will collapse into one.
 
-// Resolving with a value, rejecting with an error new Promise((resolve, reject) => { performOperation((err, val) => { if (err) reject(err); else resolve(val); }); });
+// Resolving with a value, rejecting with an error new Promise((resolve, reject) =&gt; { performOperation((err, val) =&gt; { if (err) reject(err); else resolve(val); }); });
 
-// Resolving without value, no need for reject const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+// Resolving without value, no need for reject const delay = (ms) =&gt; new Promise(resolve =&gt; setTimeout(resolve, ms));
 
 #### Handling promises
 
@@ -128,7 +121,7 @@ async () => {
 -   `Promise.prototype.finally()` calls `onFinally` with no arguments once any outcome is available.
 -   `Promise.prototype.finally()` passes through input promise.
 
-promisedOperation() .then( val => value + 1, // Called once the promise is fulfilled err => { // Called if the promise is rejected if (err === someKnownErr) return defaultVal; else throw err; } ) .catch( err => console.log(err); // Called if the promise is rejected ) .finally( () => console.log('Done'); // Called once any outcome is available );
+promisedOperation() .then( val =&gt; value + 1, // Called once the promise is fulfilled err =&gt; { // Called if the promise is rejected if (err === someKnownErr) return defaultVal; else throw err; } ) .catch( err =&gt; console.log(err); // Called if the promise is rejected ) .finally( () =&gt; console.log(‘Done’); // Called once any outcome is available );
 
 -   All three of the above methods will not be executed at least until the next tick, even for promises that already have an outcome.
 
@@ -138,9 +131,9 @@ promisedOperation() .then( val => value + 1, // Called once the promise is fulfi
 -   If any promise is rejected, the error will pass through.
 -   `Promise.race()` passes through the first settled promise.
 
-Promise .all(\[ p1, p2, p3 ]) .then((\[ v1, v2, v3 ]) => { // Values always correspond to the order of promises, // not the order they resolved in (i.e. v1 corresponds to p1) });
+Promise .all(\[ p1, p2, p3 \]) .then((\[ v1, v2, v3 \]) =&gt; { // Values always correspond to the order of promises, // not the order they resolved in (i.e. v1 corresponds to p1) });
 
-Promise .race(\[ p1, p2, p3 ]) .then(val => { // val will take the value of the first resolved promise });
+Promise .race(\[ p1, p2, p3 \]) .then(val =&gt; { // val will take the value of the first resolved promise });
 
 #### async/await
 
@@ -152,4 +145,4 @@ Promise .race(\[ p1, p2, p3 ]) .then(val => { // val will take the value of the 
 -   `await` also accepts non-promise values.
 -   `await` always waits at least until the next tick before resolving, even when waiting already fulfilled promises or non-promise values.
 
-async () => { try { let val = await promisedValue(); // Do stuff here } catch (err) { // Handle error } }
+async () =&gt; { try { let val = await promisedValue(); // Do stuff here } catch (err) { // Handle error } }

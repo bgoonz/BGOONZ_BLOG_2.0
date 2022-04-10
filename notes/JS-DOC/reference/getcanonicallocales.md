@@ -1,8 +1,10 @@
-# Intl.getCanonicalLocales()
+Intl.getCanonicalLocales()
+==========================
 
 The `Intl.getCanonicalLocales()` method returns an array containing the canonical locale names. Duplicates will be omitted and elements will be validated as structurally valid language tags.
 
-## Syntax
+Syntax
+------
 
     Intl.getCanonicalLocales(locales)
 
@@ -15,7 +17,8 @@ A list of [`String`](../string) values for which to get the canonical locale nam
 
 An array containing the canonical locale names.
 
-## Examples
+Examples
+--------
 
 ### Using getCanonicalLocales
 
@@ -25,16 +28,16 @@ An array containing the canonical locale names.
     Intl.getCanonicalLocales('EN_US');
     // RangeError:'EN_US' is not a structurally valid language tag
 
-## Polyfill
+Polyfill
+--------
 
 [formatjs Intl.getCanonicalLocales polyfill](https://formatjs.io/docs/polyfills/intl-getcanonicallocales)
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-intl.getcanonicallocales">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
-<br/>
-
-<span class="small">#sec-intl.getcanonicallocales</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Internationalization API Specification (ECMAScript Internationalization API)<br />
+</p><span class="small">#sec-intl.getcanonicallocales</span></td></tr></tbody></table>
 
 `getCanonicalLocales`
 
@@ -62,7 +65,8 @@ No
 
 No
 
-## See also
+See also
+--------
 
 -   [`Intl.NumberFormat.supportedLocalesOf()`](numberformat/supportedlocalesof)
 -   [`Intl.DateTimeFormat.supportedLocalesOf()`](datetimeformat/supportedlocalesof)

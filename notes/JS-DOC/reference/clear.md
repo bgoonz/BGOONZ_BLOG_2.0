@@ -1,8 +1,10 @@
-# Set.prototype.clear()
+Set.prototype.clear()
+=====================
 
 The `clear()` method removes all elements from a `Set` object.
 
-## Syntax
+Syntax
+------
 
     clear()
 
@@ -10,7 +12,8 @@ The `clear()` method removes all elements from a `Set` object.
 
 [`undefined`](../undefined).
 
-## Examples
+Examples
+--------
 
 ### Using the clear() method
 
@@ -26,12 +29,11 @@ The `clear()` method removes all elements from a `Set` object.
     mySet.size;       // 0
     mySet.has('bar')  // false
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-set.prototype.clear">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-set.prototype.clear</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-set.prototype.clear</span></td></tr></tbody></table>
 
 `clear`
 
@@ -59,11 +61,11 @@ The `clear()` method removes all elements from a `Set` object.
 
 3.0
 
-## See also
+See also
+--------
 
 -   [`Set`](../set)
 -   [`Set.prototype.delete()`](delete)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/clear" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/clear</a>

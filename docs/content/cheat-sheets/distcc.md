@@ -1,61 +1,69 @@
----
-title: title
-subtitle: subtitle
-date: '2022-01-03'
-thumb_img_alt: lorem-ipsum
-content_img_alt: lorem-ipsum
-excerpt: lorem-ipsum
-seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
-template: post
-thumb_img_path: images/css-72a655a7.jpg
----
+subtitle
 
-# INSTALL
+2022-01-03
 
-# ==============================================================================
+INSTALL
+=======
 
-# Edit /etc/default/distcc and set theses vars
+==============================================================================
+==============================================================================
 
-# STARTDISTCC="true"
+Edit /etc/default/distcc and set theses vars
+============================================
 
-# ALLOWEDNETS="127.0.0.1 192.168.1.0/24"# Your computer and local computers
+STARTDISTCC=“true”
+==================
 
-# #LISTENER="127.0.0.1"# Comment it
+ALLOWEDNETS=“127.0.0.1 192.168.1.0/24”\# Your computer and local computers
+==========================================================================
 
-# ZEROCONF="true"# Auto configuration
+\#LISTENER=“127.0.0.1”\# Comment it
+===================================
 
-# REMEMBER 1:
+ZEROCONF=“true”\# Auto configuration
+====================================
 
-# Start/Restart your distccd servers before using one of these commands.
+REMEMBER 1:
+===========
 
-# service distccd start
+Start/Restart your distccd servers before using one of these commands.
+======================================================================
 
-# REMEMBER 2:
+service distccd start
+=====================
 
-# Do not forget to install on each machine DISTCC.
+REMEMBER 2:
+===========
 
-# No need to install libs ! Only main host need libs !
+Do not forget to install on each machine DISTCC.
+================================================
 
-# USAGE
+No need to install libs ! Only main host need libs !
+====================================================
 
-# ==============================================================================
+USAGE
+=====
 
-# Run make with 4 thread (a cross network) in auto configuration.
+==============================================================================
+==============================================================================
 
-# Note: for gcc, Replace CXX by CC and g++ by gcc
+Run make with 4 thread (a cross network) in auto configuration.
+===============================================================
 
-ZEROCONF='+zeroconf' make -j4 CXX='distcc g++'
+Note: for gcc, Replace CXX by CC and g++ by gcc
+===============================================
 
-# Run make with 4 thread (a cross network) in static configuration (2 ip)
+ZEROCONF=‘+zeroconf’ make -j4 CXX=‘distcc g++’
 
-# Note: for gcc, Replace CXX by CC and g++ by gcc
+Run make with 4 thread (a cross network) in static configuration (2 ip)
+=======================================================================
 
-DISTCC_HOSTS='127.0.0.1 192.168.1.69' make -j4 CXX='distcc g++'
+Note: for gcc, Replace CXX by CC and g++ by gcc
+===============================================
 
-# Show hosts aviables
+DISTCC\_HOSTS=‘127.0.0.1 192.168.1.69’ make -j4 CXX=‘distcc g++’
 
-ZEROCONF='+zeroconf' distcc --show-hosts
+Show hosts aviables
+===================
+
+ZEROCONF=‘+zeroconf’ distcc –show-hosts

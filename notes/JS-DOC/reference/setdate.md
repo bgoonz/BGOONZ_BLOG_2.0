@@ -1,10 +1,12 @@
-# Date.prototype.setDate()
+Date.prototype.setDate()
+========================
 
 The `setDate()` method changes the day of the month of a given [`Date`](../date) instance, based on local time.
 
 To instead change the day of the month for a given [`Date`](../date) instance based on UTC time, use the [`setUTCDate()`](setutcdate) method.
 
-## Syntax
+Syntax
+------
 
     setDate(dayValue)
 
@@ -17,7 +19,8 @@ An integer representing the day of the month.
 
 The number of milliseconds between 1 January 1970 00:00:00 UTC and the given date (the [`Date`](../date) object is also changed in place).
 
-## Description
+Description
+-----------
 
 If the `dayValue` is outside of the range of date values for the month, `setDate()` will update the [`Date`](../date) object accordingly.
 
@@ -25,7 +28,8 @@ For example, if 0 is provided for `dayValue`, the date will be set to the last d
 
 If a negative number is provided for `dayValue`, the date will be set counting backwards from the last day of the previous month. -1 would result in the date being set to 1 day before the last day of the previous month.
 
-## Examples
+Examples
+--------
 
 ### Using setDate()
 
@@ -37,14 +41,14 @@ If a negative number is provided for `dayValue`, the date will be set counting b
     theBigDay.setDate(98);  // 1962-10-06 (6th of October 1962)
     theBigDay.setDate(-50); // 1962-08-11 (11th of August 1962)
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setdate">ECMAScript (ECMA-262) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript (ECMA-262)<br />
+</p><span class="small">The definition of ‘Date.prototype.setDate’ in that specification.</span></td></tr></tbody></table>
 
-<span class="small">The definition of 'Date.prototype.setDate' in that specification.</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -100,7 +104,8 @@ Samsung Internet
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`Date.prototype.getDate()`](getdate)
 -   [`Date.prototype.setUTCDate()`](setutcdate)

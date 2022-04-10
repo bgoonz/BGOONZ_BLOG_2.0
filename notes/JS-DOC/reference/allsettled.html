@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>allsettled</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="promise.allsettled">Promise.allSettled()</h1>
+<p>The <code>Promise.allSettled()</code> method returns a promise that resolves after all of the given promises have either fulfilled or rejected, with an array of objects that each describes the outcome of each promise.</p>
+<p>It is typically used when you have multiple asynchronous tasks that are not dependent on one another to complete successfully, or you’d always like to know the result of each promise.</p>
+<p>In comparison, the Promise returned by <a href="all"><code>Promise.all()</code></a> may be more appropriate if the tasks are dependent on each other / if you’d like to immediately reject upon any of them rejecting.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>Promise.allSettled(iterable);</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>iterable</code><br />
+An <a href="../../iteration_protocols">iterable</a> object, such as an <a href="../array"><code>Array</code></a>, in which each member is a <code>Promise</code>.</p>
+<h3 id="return-value">Return value</h3>
+<p>A <strong>pending</strong> <a href="../promise"><code>Promise</code></a> that will be <strong>asynchronously</strong> fulfilled once every promise in the specified collection of promises has completed, either by successfully being fulfilled or by being rejected. At that time, the returned promise’s handler is passed as input an array containing the outcome of each promise in the original set of promises.</p>
+<p>However, <strong>if and only if</strong> an empty iterable is passed as an argument, <code>Promise.allSettled()</code> returns a <code>Promise</code> object that has <strong>already been resolved</strong> as an empty array.</p>
+<p>For each outcome object, a <code>status</code> string is present. If the status is <code>fulfilled</code>, then a <code>value</code> is present. If the status is <code>rejected</code>, then a <code>reason</code> is present. The value (or reason) reflects what value each promise was fulfilled (or rejected) with.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-promise.allsettled">Using Promise.allSettled</h3>
+<pre><code>Promise.allSettled([
+  Promise.resolve(33),
+  new Promise(resolve =&gt; setTimeout(() =&gt; resolve(66), 0)),
+  99,
+  Promise.reject(new Error(&#39;an error&#39;))
+])
+.then(values =&gt; console.log(values));
+
+// [
+//   {status: &quot;fulfilled&quot;, value: 33},
+//   {status: &quot;fulfilled&quot;, value: 66},
+//   {status: &quot;fulfilled&quot;, value: 99},
+//   {status: &quot;rejected&quot;,  reason: Error: an error}
+// ]</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-promise.allsettled">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-promise.allsettled</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>allSettled</code></p>
+<p>76</p>
+<p>79</p>
+<p>71</p>
+<p>No</p>
+<p>63</p>
+<p>13</p>
+<p>76</p>
+<p>76</p>
+<p>79</p>
+<p>54</p>
+<p>13</p>
+<p>12.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Archive/Add-ons/Techniques/Promises">Promises</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises">Using promises</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Promises">Graceful asynchronous programming with promises</a></li>
+<li><a href="../promise"><code>Promise</code></a></li>
+<li><a href="all"><code>Promise.all()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/allSettled" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/allSettled</a></p>
+</body>
+</html>

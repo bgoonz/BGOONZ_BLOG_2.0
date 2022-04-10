@@ -1,13 +1,16 @@
-# URIError
+URIError
+========
 
 The `URIError` object represents an error when a global URI handling function was used in a wrong way.
 
-## Constructor
+Constructor
+-----------
 
 [`URIError()`](urierror/urierror)  
 Creates a new `URIError` object.
 
-## Instance properties
+Instance properties
+-------------------
 
 [`URIError.prototype.message`](error/message)  
 Error message. Although ECMA-262 specifies that [`URIError`](urierror) should provide its own `message` property, in [SpiderMonkey](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey), it inherits [`Error.prototype.message`](error/message).
@@ -27,7 +30,8 @@ Column number in line that raised this error. Inherited from [`Error`](error).
 [`URIError.prototype.stack`](error/stack)  
 Stack trace. Inherited from [`Error`](error).
 
-## Examples
+Examples
+--------
 
 ### Catching an URIError
 
@@ -57,14 +61,14 @@ Stack trace. Inherited from [`Error`](error).
       console.log(e.stack)                // "@Scratchpad/2:2:9\n"
     }
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard-urierror">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-native-error-types-used-in-this-standard-urierror</span></td></tr></tbody></table>
 
-<span class="small">#sec-native-error-types-used-in-this-standard-urierror</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -146,7 +150,8 @@ Samsung Internet
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`Error`](error)
 -   [`decodeURI()`](decodeuri)

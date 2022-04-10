@@ -1,39 +1,37 @@
-# Bash Commands That Save Me Time and Frustration
+Bash Commands That Save Me Time and Frustration
+===============================================
 
-Here's a list of bash commands that stand between me and insanity.
+Here’s a list of bash commands that stand between me and insanity.
 
----
+------------------------------------------------------------------------
 
 ### Bash Commands That Save Me Time and Frustration
 
-#### Here's a list of bash commands that stand between me and insanity.
+#### Here’s a list of bash commands that stand between me and insanity.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*w0J8u6jWTikYVZzW.jpg" class="graf-image" /></figure><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--p-anchor">https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b</a>
 
 > **This article will be accompanied by the following** <a href="https://github.com/bgoonz/bash-commands-walkthrough" class="markup--anchor markup--pullquote-anchor"><strong>github repository</strong></a> **which will contain all the commands listed as well as folders that demonstrate before and after usage!**
 
-<a href="https://github.com/bgoonz/bash-commands-walkthrough" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/bash-commands-walkthrough"><strong>bgoonz/bash-commands-walkthrough</strong>
-<br/>
+**bgoonz/bash-commands-walkthrough**  
 
-<em>to accompany the medium article I am writing. Contribute to bgoonz/bash-commands-walkthrough development by creating an…</em>github.com</a><a href="https://github.com/bgoonz/bash-commands-walkthrough" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*to accompany the medium article I am writing. Contribute to bgoonz/bash-commands-walkthrough development by creating an…*github.com<a href="https://github.com/bgoonz/bash-commands-walkthrough" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 > The <a href="https://github.com/bgoonz/bash-commands-walkthrough#readme" class="markup--anchor markup--pullquote-anchor">readme</a> for this git repo will provide a much more condensed list… whereas this article will break up the commands with explanations… images & links!
 
-**I will include the code examples as both github gists (for proper syntax highlighting) and as code snippets adjacent to said gists so that they can easily be copied and pasted… or … if you're like me for instance; and like to use an extension to grab the markdown content of a page… the code will be included rather than just a link to the gist!**
+**I will include the code examples as both github gists (for proper syntax highlighting) and as code snippets adjacent to said gists so that they can easily be copied and pasted… or … if you’re like me for instance; and like to use an extension to grab the markdown content of a page… the code will be included rather than just a link to the gist!**
 
-<figure><img src="https://cdn-images-1.medium.com/max/1200/1*3m_UcQOAyKtIpHQ6j9JzZw.gif" class="graf-image" /></figure>
-
-### Here's a Cheatsheet:
+<figure><img src="https://cdn-images-1.medium.com/max/1200/1*3m_UcQOAyKtIpHQ6j9JzZw.gif" class="graf-image" /></figure>### Here’s a Cheatsheet:
 
 ### Getting Started (Advanced Users Skip Section):
 
----
+------------------------------------------------------------------------
 
 #### ✔ Check the Current Directory ➡ `pwd`:
 
-On the command line, it's important to know the directory we are currently working on. For that, we can use `pwd` command.
+On the command line, it’s important to know the directory we are currently working on. For that, we can use `pwd` command.
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*dimzLUrmDI4Ufev6.gif" class="graf-image" /></figure>It shows that I'm working on my Desktop directory.
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*dimzLUrmDI4Ufev6.gif" class="graf-image" /></figure>It shows that I’m working on my Desktop directory.
 
 #### ✔ Display List of Files ➡ `ls`:
 
@@ -41,10 +39,10 @@ To see the list of files and directories in the current directory use `ls` comma
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*HHzVrK2CtTPwTdYT.gif" class="graf-image" /></figure>Shows all of my files and directories of my Desktop directory.
 
--   <span id="20cb">To show the contents of a directory pass the directory name to the `ls` command i.e. `ls directory_name`.</span>
+-   <span id="20cb">To show the contents of a directory pass the directory name to the `ls` command i.e. `ls directory_name`.</span>
 -   <span id="5cd8">Some useful `ls` command options:-</span>
 
-OptionDescriptionls -alist all files including hidden file starting with '.'ls -llist with the long formatls -lalist long format including hidden files
+OptionDescriptionls -alist all files including hidden file starting with ’.’ls -llist with the long formatls -lalist long format including hidden files
 
 #### ✔ Create a Directory ➡ `mkdir`:
 
@@ -52,15 +50,15 @@ We can create a new folder using the `mkdir` command. To use it type `mkdir fold
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*m3dDyC9vRJBUZSxR.gif" class="graf-image" /></figure>Use `ls` command to see the directory is created or not.
 
-I created a cli-practice directory in my working directory i.e. Desktop directory.
+I created a cli-practice directory in my working directory i.e. Desktop directory.
 
 #### ✔ Move Between Directories ➡ `cd`:
 
-It's used to change directory or to move other directories. To use it type `cd directory_name`.
+It’s used to change directory or to move other directories. To use it type `cd directory_name`.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*34KGxT2G8oNMDnIc.gif" class="graf-image" /></figure>Can use `pwd` command to confirm your directory name.
 
-Changed my directory to the cli-practice directory. And the rest of the tutorial I'm gonna work within this directory.
+Changed my directory to the cli-practice directory. And the rest of the tutorial I’m gonna work within this directory.
 
 #### ✔ Parent Directory ➡ `..`:
 
@@ -68,11 +66,11 @@ We have seen `cd` command to change directory but if we want to move back or wan
 
 #### ✔ Create Files ➡ `touch`:
 
-We can create an empty file by typing `touch file_name`. It's going to create a new file in the current directory (the directory you are currently in) with your provided name.
+We can create an empty file by typing `touch file_name`. It’s going to create a new file in the current directory (the directory you are currently in) with your provided name.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*xu1wtv7gJ2NMvP60.gif" class="graf-image" /></figure>I created a hello.txt file in my current working directory. Again you can use `ls` command to see the file is created or not.
 
-Now open your hello.txt file in your text editor and write _Hello Everyone!_ into your hello.txt file and save it.
+Now open your hello.txt file in your text editor and write *Hello Everyone!* into your hello.txt file and save it.
 
 #### ✔ Display the Content of a File ➡ `cat`:
 
@@ -114,7 +112,7 @@ To do this, we use the `cp` command.
 
 -   <span id="9bfc">You can also copy a directory by adding the `-r` option, like `cp -r directory_to_copy new_directory_name`.</span>
 
-_The_ `-r` _option for "recursive" means that it will copy all of the files including the files inside of subfolders._
+*The* `-r` *option for “recursive” means that it will copy all of the files including the files inside of subfolders.*
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*MnmzMiioIYCuK92B.gif" class="graf-image" /></figure>Here I copied all of the files from the folder to folder-copy.
 
@@ -128,7 +126,7 @@ To do this, we use the `rm` command.
 
 -   <span id="0e9a">To remove a directory, use the command like `rm -r directory_to_remove`.</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*voDbzwSpw24A2RjQ.gif" class="graf-image" /></figure>I removed my folder-copy directory from my cli-practice directory i.e. current working directory.
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*voDbzwSpw24A2RjQ.gif" class="graf-image" /></figure>I removed my folder-copy directory from my cli-practice directory i.e. current working directory.
 
 #### ✔ Clear Screen ➡ `clear`:
 
@@ -138,7 +136,7 @@ Clear command is used to clear the terminal screen.
 
 The Home directory is represented by `~`. The Home directory refers to the base directory for the user. If we want to move to the Home directory we can use `cd ~` command. Or we can only use `cd` command.
 
----
+------------------------------------------------------------------------
 
 ### MY COMMANDS:
 
@@ -150,7 +148,7 @@ The Home directory is represented by `~`. The Home directory refers to the base 
 
     find . -name "*.zip" -type f -print -delete
 
----
+------------------------------------------------------------------------
 
 ### 2.) Install node modules recursively:
 
@@ -158,7 +156,7 @@ The Home directory is represented by `~`. The Home directory refers to the base 
 
     npm-recursive-install
 
----
+------------------------------------------------------------------------
 
 ### 3.) Clean up unnecessary files/folders in git repo:
 
@@ -183,17 +181,15 @@ The Home directory is represented by `~`. The Home directory refers to the base 
 
 The following output from my bash shell corresponds to the directory:
 
-<a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/3-clean-up-fluf/DS-ALGO-OFFICIAL-master" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/3-clean-up-fluf/DS-ALGO-OFFICIAL-master"><strong>bgoonz/bash-commands-walkthrough</strong>
-<br/>
+**bgoonz/bash-commands-walkthrough**  
 
-<em>Deployment github-pages Navigation Big O notation is the language we use for talking about how long an algorithm takes…</em>github.com</a><a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/3-clean-up-fluf/DS-ALGO-OFFICIAL-master" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Deployment github-pages Navigation Big O notation is the language we use for talking about how long an algorithm takes…*github.com<a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/3-clean-up-fluf/DS-ALGO-OFFICIAL-master" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 #### which was created by running the aforementioned commands in in a perfect copy of this directory:
 
-<a href="https://github.com/bgoonz/DS-ALGO-OFFICIAL" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/DS-ALGO-OFFICIAL"><strong>bgoonz/DS-ALGO-OFFICIAL</strong>
-<br/>
+**bgoonz/DS-ALGO-OFFICIAL**  
 
-<em>Deployment github-pages Navigation Big O notation is the language we use for talking about how long an algorithm takes…</em>github.com</a><a href="https://github.com/bgoonz/DS-ALGO-OFFICIAL" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Deployment github-pages Navigation Big O notation is the language we use for talking about how long an algorithm takes…*github.com<a href="https://github.com/bgoonz/DS-ALGO-OFFICIAL" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 > **…..below is the terminal output for the following commands:**
 
@@ -233,13 +229,13 @@ The following output from my bash shell corresponds to the directory:
 
     find . \( -name ".git" -o -name ".gitignore" -o -name ".gitmodules" -o -name ".gitattributes" \) -exec rm -rf -- {} +
 
-**The command seen below deletes most SECURITY, RELEASE, CHANGELOG, LICENSE, CONTRIBUTING, & HISTORY files that take up pointless space in repo's you wish to keep exclusively for your own reference.**
+**The command seen below deletes most SECURITY, RELEASE, CHANGELOG, LICENSE, CONTRIBUTING, & HISTORY files that take up pointless space in repo’s you wish to keep exclusively for your own reference.**
 
-### !!!Use with caution as this command removes the attribution of the work from it's original authors!!!!!
+### !!!Use with caution as this command removes the attribution of the work from it’s original authors!!!!!
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*r5dGhtbeZ4VdO54U" alt="!!!Use with caution as this command removes the attribution of the work from it's original authors!!!!!" class="graf-image" /><figcaption>!!!Use with caution as this command removes the attribution of the work from it's original authors!!!!!</figcaption></figure>find . \( -name "*SECURITY.txt" -o -name "*RELEASE.txt" -o  -name "*CHANGELOG.txt" -o -name "*LICENSE.txt" -o -name "*CONTRIBUTING.txt" -name "*HISTORY.md" -o -name "*LICENSE" -o -name "*SECURITY.md" -o -name "*RELEASE.md" -o  -name "*CHANGELOG.md" -o -name "*LICENSE.md" -o -name "*CODE_OF_CONDUCT.md" -o -name "*CONTRIBUTING.md" \) -exec rm -rf -- {} +
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*r5dGhtbeZ4VdO54U" alt="!!!Use with caution as this command removes the attribution of the work from it’s original authors!!!!!" class="graf-image" /><figcaption>!!!Use with caution as this command removes the attribution of the work from it’s original authors!!!!!</figcaption></figure>find . ( -name “*SECURITY.txt" -o -name "*RELEASE.txt” -o -name “*CHANGELOG.txt" -o -name "*LICENSE.txt” -o -name “*CONTRIBUTING.txt" -name "*HISTORY.md” -o -name “*LICENSE" -o -name "*SECURITY.md” -o -name “*RELEASE.md" -o -name "*CHANGELOG.md” -o -name “*LICENSE.md" -o -name "*CODE\_OF\_CONDUCT.md” -o -name "\*CONTRIBUTING.md" ) -exec rm -rf – {} +
 
----
+------------------------------------------------------------------------
 
 ### 4.) Generate index.html file that links to all other files in working directory:
 
@@ -317,23 +313,21 @@ The following output from my bash shell corresponds to the directory:
 
 **I will use this copy of my Data Structures Practice Site to demonstrate the result:**
 
-<a href="https://github.com/side-projects-42/DS-Bash-Examples-Deploy" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/side-projects-42/DS-Bash-Examples-Deploy"><strong>side-projects-42/DS-Bash-Examples-Deploy</strong>
-<br/>
+**side-projects-42/DS-Bash-Examples-Deploy**  
 
-<em>Deployment github-pages Navigation Big O notation is the language we use for talking about how long an algorithm takes…</em>github.com</a><a href="https://github.com/side-projects-42/DS-Bash-Examples-Deploy" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Deployment github-pages Navigation Big O notation is the language we use for talking about how long an algorithm takes…*github.com<a href="https://github.com/side-projects-42/DS-Bash-Examples-Deploy" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*PuuDTUviX5G6mja-5eKUIw.png" class="graf-image" /></figure>#### The result is a index.html file that contains a list of links to each file in the directory:
 
 > here is a link to and photo of the resulting html file:
 
-<a href="https://quirky-meninsky-4181b5.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://quirky-meninsky-4181b5.netlify.app/"><strong>index.html</strong>
-<br/>
+**index.html**  
 
-<em>CONTENT/DS-n-Algos/</em>quirky-meninsky-4181b5.netlify.app</a><a href="https://quirky-meninsky-4181b5.netlify.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
+*CONTENT/DS-n-Algos/*quirky-meninsky-4181b5.netlify.app<a href="https://quirky-meninsky-4181b5.netlify.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*AOYbWvUGN9yJ4ceNzAGGsw.png" class="graf-image" /></figure>
 
----
+------------------------------------------------------------------------
 
 ### 5.) Download all links to a files of a specified extension on a user provided (url) webpage:
 
@@ -343,7 +337,7 @@ The following output from my bash shell corresponds to the directory:
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*8evVPO_z-_TATzkcDTp15Q.png" class="graf-image" /></figure>
 
----
+------------------------------------------------------------------------
 
 ### 6.)Recursively remove lines of text containing the string badFolder from files in the working directory.
 
@@ -395,7 +389,7 @@ The following output from my bash shell corresponds to the directory:
 
     Posted Thursday, April 22, 2021 by Teon Brooks
 
-**_I modified the command slightly to apply only to files called 'result.md':_**
+***I modified the command slightly to apply only to files called ‘result.md’:***
 
 > The result is :
 
@@ -425,24 +419,21 @@ The following output from my bash shell corresponds to the directory:
 
     Posted Thursday, April 22, 2021 by Teon Brooks
 
-<figure><img src="https://cdn-images-1.medium.com/max/1200/1*Up5as-MkHcHbvI_qX1AqPw.png" class="graf-image" /></figure>
+<figure><img src="https://cdn-images-1.medium.com/max/1200/1*Up5as-MkHcHbvI_qX1AqPw.png" class="graf-image" /></figure>**the test.txt and result.md files can be found here:**
 
-**the test.txt and result.md files can be found here:**
+**bgoonz/bash-commands-walkthrough**  
 
-<a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/6-remove-lines-contaning-bad-text" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/6-remove-lines-contaning-bad-text"><strong>bgoonz/bash-commands-walkthrough</strong>
-<br/>
+*to accompany the medium article I am writing. Contribute to bgoonz/bash-commands-walkthrough development by creating an…*github.com<a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/6-remove-lines-contaning-bad-text" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<em>to accompany the medium article I am writing. Contribute to bgoonz/bash-commands-walkthrough development by creating an…</em>github.com</a><a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/6-remove-lines-contaning-bad-text" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
-
----
+------------------------------------------------------------------------
 
 ### 7.) Execute command recursively:
 
-**Here I have modified the command I wish to run recursively to account for the fact that the 'find' command already works recursively, by appending the -maxdepth 1 flag…**
+**Here I have modified the command I wish to run recursively to account for the fact that the ‘find’ command already works recursively, by appending the -maxdepth 1 flag…**
 
 > **I am essentially removing the recursive action of the find command…**
 
-**That way, if the command affects the more deeply nested folders we know the outer RecurseDirs function we are using to run the _find/pandoc_ line once in every subfolder of the working directory… is working properly!**
+**That way, if the command affects the more deeply nested folders we know the outer RecurseDirs function we are using to run the *find/pandoc* line once in every subfolder of the working directory… is working properly!**
 
 <figure><img src="https://cdn-images-1.medium.com/max/600/1*5C_uzLnuCSlTiioi2EtnUA.png" class="graf-image" /></figure>**Run in the folder shown to the left… we would expect every .md file to be accompanied by a newly generated html file by the same name.**
 
@@ -452,13 +443,9 @@ The following output from my bash shell corresponds to the directory:
 
 🢃 Below 🢃
 
-<figure><img src="https://cdn-images-1.medium.com/max/1200/1*k9c1QRKY07TLJnp9Se89lQ.gif" class="graf-image" /></figure>
+<figure><img src="https://cdn-images-1.medium.com/max/1200/1*k9c1QRKY07TLJnp9Se89lQ.gif" class="graf-image" /></figure>#### The final result is:
 
-#### The final result is:
-
-<figure><img src="https://cdn-images-1.medium.com/max/1200/1*jqrjNeBuRmTrDt3vmQ50LQ.png" class="graf-image" /></figure>
-
-_If you want to run any bash script recursively all you have to do is substitue out line \#9 with the command you want to run once in every sub-folder._
+<figure><img src="https://cdn-images-1.medium.com/max/1200/1*jqrjNeBuRmTrDt3vmQ50LQ.png" class="graf-image" /></figure>*If you want to run any bash script recursively all you have to do is substitue out line \#9 with the command you want to run once in every sub-folder.*
 
     function RecurseDirs ()
     {
@@ -486,7 +473,7 @@ _If you want to run any bash script recursively all you have to do is substitue 
     }
     RecurseDirs "./"
 
----
+------------------------------------------------------------------------
 
 ### TBC….
 
@@ -496,13 +483,13 @@ _If you want to run any bash script recursively all you have to do is substitue 
 
     sed -n -e '/<script>/,/<\/script>/p' example.html >out.js
 
----
+------------------------------------------------------------------------
 
-### 10. Recursively Delete node_modules folders
+### 10. Recursively Delete node\_modules folders
 
     find . -name 'node_modules' -type d -print -prune -exec rm -rf '{}' +
 
----
+------------------------------------------------------------------------
 
 ### 11. Sanatize file and folder names to remove illegal characters and reserved words.
 
@@ -529,13 +516,13 @@ _If you want to run any bash script recursively all you have to do is substitue 
 
     sanitize_dir '/path/to/somewhere'
 
----
+------------------------------------------------------------------------
 
 ### 12. Start postgresql in terminal
 
     sudo -u postgres psql
 
----
+------------------------------------------------------------------------
 
 ### 13. Add closing body and script tags to each html file in working directory.
 
@@ -546,7 +533,7 @@ _If you want to run any bash script recursively all you have to do is substitue 
     </form>
       </body></html>" | tee -a *.html
 
----
+------------------------------------------------------------------------
 
 ### 14. Batch Download Videos
 
@@ -566,9 +553,9 @@ _If you want to run any bash script recursively all you have to do is substitue 
           num=$(($num+1))
     done
 
----
+------------------------------------------------------------------------
 
-### 15. Change File Extension from '.txt' to .doc for all files in working directory.
+### 15. Change File Extension from ‘.txt’ to .doc for all files in working directory.
 
     sudo apt install rename
 
@@ -578,29 +565,27 @@ _If you want to run any bash script recursively all you have to do is substitue 
 
     find . -name "*.\.js\.download" -exec rename 's/\.js\.download$/.js/' '{}' +
 
----
+------------------------------------------------------------------------
 
 ### 17. Copy folder structure including only files of a specific extension into an ouput Folder
 
     find . -name '*.md' | cpio -pdm './../outputFolder'
 
----
+------------------------------------------------------------------------
 
 ### Discover More:
 
-<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong>
-<br/>
+**Web-Dev-Hub**  
 
-<em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…*bgoonz-blog.netlify.app<a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ### Part 2 of this series:
 
-<a href="https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682"><strong>Medium</strong>
-<br/>
+**Medium**  
 
-<em>Continued!!!medium.com</em></a><a href="https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
+*Continued!!!medium.com*<a href="https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
----
+------------------------------------------------------------------------
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [June 29, 2021](https://medium.com/p/920fb6ab9d0a).
 

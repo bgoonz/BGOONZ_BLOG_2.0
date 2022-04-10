@@ -1,8 +1,9 @@
-# Object Oriented Programming in JavaScript
+Object Oriented Programming in JavaScript
+=========================================
 
 Object-Oriented Programming
 
----
+------------------------------------------------------------------------
 
 ### Object Oriented Programming in JavaScript
 
@@ -57,11 +58,11 @@ Object-Oriented Programming
 
 #### `The Interface Segregation Principle`
 
--   <span id="6af3">Method names should be grouped together into granular collections called "interfaces"</span>
+-   <span id="6af3">Method names should be grouped together into granular collections called “interfaces”</span>
 
 #### `The Law Of Demeter`
 
--   <span id="e90d">Don't use more than one dot (not counting the one after "this").</span>
+-   <span id="e90d">Don’t use more than one dot (not counting the one after “this”).</span>
 -   <span id="6cbd">A method of an object can only invoke the methods (or use the properties) of the following kinds of objects: Methods on the object itself Any of the objects passed in as parameters to the method And object created in the method Any values stored in the instance variables of the object Any values stored in global variables</span>
 
 #### `The Liskov Substitution Principle`
@@ -79,13 +80,13 @@ Object-Oriented Programming
 -   <span id="2d3f">A class should have only one reason to change.</span>
 -   <span id="e277">Gather together the things that change for the same reasons. Separate those things that change for different reasons.</span>
 
----
+------------------------------------------------------------------------
 
 ### Background:
 
 ### Constructor Functions
 
-Defining a constructor function _Example of an object using object initialization_
+Defining a constructor function *Example of an object using object initialization*
 
     const fellowshipOfTheRing = {
       title: "The Fellowship of the Ring",
@@ -93,16 +94,16 @@ Defining a constructor function _Example of an object using object initializatio
       author: "J.R.R. Tolkien",
     };
 
--   <span id="9071">The above literal is a "Book" object type.</span>
--   <span id="a5d6">`Object Type` is defined by it's attributes and behaviors.</span>
+-   <span id="9071">The above literal is a “Book” object type.</span>
+-   <span id="a5d6">`Object Type` is defined by it’s attributes and behaviors.</span>
 
 > `Behaviors` **are represented by methods.**
 
--   <span id="ccb5">`Constructor Functions` : Handle the creation of an object - it's a factory for creating objects of a specific type.</span>
+-   <span id="ccb5">`Constructor Functions` : Handle the creation of an object - it’s a factory for creating objects of a specific type.</span>
 -   <span id="bdc9">There are a few specific things to constructors worth noting:</span>
--   <span id="6549">**_The name of the constructor function is capitalized_**</span>
--   <span id="8e61">The Function _does not explicitly return a value_</span>
--   <span id="8d48">Within the body, the _this_ keyword references the newly created object</span>
+-   <span id="6549">***The name of the constructor function is capitalized***</span>
+-   <span id="8e61">The Function *does not explicitly return a value*</span>
+-   <span id="8d48">Within the body, the *this* keyword references the newly created object</span>
 
 <!-- -->
 
@@ -132,10 +133,10 @@ Defining a constructor function _Example of an object using object initializatio
 
     console.log(fellowshipOfTheRing); // Book { title: 'The Fellowship of the Ring', ... }
 
-### _Four Things will happen when invoking a constructor function_
+### *Four Things will happen when invoking a constructor function*
 
 1.  <span id="b127">A new empty object is created {};</span>
-2.  <span id="3c79">The new obj's `prototype` is set to the object referenced by the constructors prototype property.</span>
+2.  <span id="3c79">The new obj’s `prototype` is set to the object referenced by the constructors prototype property.</span>
 3.  <span id="6b2e">`This` is bound to the new object.</span>
 4.  <span id="a360">The new object is returned after the constructor function has completed.</span>
 
@@ -144,12 +145,12 @@ Defining a constructor function _Example of an object using object initializatio
 -   <span id="1263">`Instance` : term to describe an objected created from a constructor function.</span>
 -   <span id="6916">Every instance created is a unique object and therefore not equal to each other.</span>
 
-### Using the instanceof operator to check an object's type
+### Using the instanceof operator to check an object’s type
 
     console.log(fellowshipOfTheRing instanceof Book); // true
 
 -   <span id="f5e2">By using the `instanceof` operator we can verify that an object was created from a certain object type.</span>
--   <span id="9d20">_The instanceOf operator works by checking to see if the prototype object of the left side of the operator is the same as the prototype object of the right side of the operator._</span>
+-   <span id="9d20">*The instanceOf operator works by checking to see if the prototype object of the left side of the operator is the same as the prototype object of the right side of the operator.*</span>
 
 ### Invoking a constructor function without the new keyword
 
@@ -162,11 +163,11 @@ Defining a constructor function _Example of an object using object initializatio
 
 ### Defining Sharable Methods
 
--   <span id="0f4e">_Avoid the temptation to store an object method inside a constructor function, it is inefficient with computer memory usage b/c each object instance would have it's own method definition._</span>
--   <span id="a9e8">`Prototype` : An object that is delegated to when a reference to an object property or method can't be resolved.</span>
+-   <span id="0f4e">*Avoid the temptation to store an object method inside a constructor function, it is inefficient with computer memory usage b/c each object instance would have it’s own method definition.*</span>
+-   <span id="a9e8">`Prototype` : An object that is delegated to when a reference to an object property or method can’t be resolved.</span>
 -   <span id="ddc6">Every instance created by a constructor function shares the same prototype.</span>
 -   <span id="ddba">`Object.setPrototypeOf()` and `Object.getPrototypeOf()` are just used to set a prototype of one object to another object; and also the verify a prototype.</span>
--   <span id="144c">`proto` : aka "dunder proto" is a property used to gain easy access to an object's prototype - it is widely supported by browsers but is considered deprecated.</span>
+-   <span id="144c">`proto` : aka “dunder proto” is a property used to gain easy access to an object’s prototype - it is widely supported by browsers but is considered deprecated.</span>
 
 <!-- -->
 
@@ -190,20 +191,20 @@ Defining a constructor function _Example of an object using object initializatio
 
     console.log(fellowshipOfTheRing.getInformation());
 
--   <span id="455e">Every method we define on a constructor function's prototype property will be shared across all instances of that object type.</span>
+-   <span id="455e">Every method we define on a constructor function’s prototype property will be shared across all instances of that object type.</span>
 
 The Problem with Arrow Functions
 
--   <span id="6cb0">We cannot use arrow functions when defining methods on a constructor function's prototype property.</span>
--   <span id="4f33">Arrow functions don't include their own this binding; therefore it will not reference the current instance — always stick with the function () keyword.</span>
+-   <span id="6cb0">We cannot use arrow functions when defining methods on a constructor function’s prototype property.</span>
+-   <span id="4f33">Arrow functions don’t include their own this binding; therefore it will not reference the current instance — always stick with the function () keyword.</span>
 
----
+------------------------------------------------------------------------
 
 ### Putting the Class in JavaScript Classes
 
 In ES2015, JS gained the `class` keyword - replacing the need to use only constructor functions & prototypes to mimic classes!
 
--   <span id="df3e">`class` : keyword that gives developers a formal way to create a class definition to specify an object type's attributes and behavior; also used to create objects of that specific type.</span>
+-   <span id="df3e">`class` : keyword that gives developers a formal way to create a class definition to specify an object type’s attributes and behavior; also used to create objects of that specific type.</span>
 
 Defining a ES2015 class
 
@@ -217,7 +218,7 @@ Defining a ES2015 class
 
 -   <span id="951e">Class names also begin only with capital letters.</span>
 -   <span id="28ed">Although not required, class definitions can include a `class constructor function` - these are similar to regular constructors in that:</span>
--   <span id="a4b1">They don't explicitly return a value.</span>
+-   <span id="a4b1">They don’t explicitly return a value.</span>
 -   <span id="e85e">The this keyword references the newly created object instance.</span>
 
 ### Instantiating an instance of a class
@@ -227,11 +228,11 @@ Defining a ES2015 class
 ### Four things occur when instantiating an instance of a class:
 
 1.  <span id="8842">New empty object is created {};</span>
-2.  <span id="1cd6">The new obj's prototype is set to the class prototype's property value.</span>
+2.  <span id="1cd6">The new obj’s prototype is set to the class prototype’s property value.</span>
 3.  <span id="eddc">`This` is bound to the new object.</span>
 4.  <span id="0814">After the constructor method has completed, the new obj is returned.</span>
 
--   <span id="e722">**Don't try to instatiate a class object without the new keyword.**</span>
+-   <span id="e722">**Don’t try to instatiate a class object without the new keyword.**</span>
 
 #### Class Definitions are NOT hoisted
 
@@ -241,7 +242,7 @@ Defining a ES2015 class
       console.log("This works!");
     }
 
--   <span id="bf4e">In JS you can call a function before it's declared — this is known as `hoisting`.</span>
+-   <span id="bf4e">In JS you can call a function before it’s declared — this is known as `hoisting`.</span>
 -   <span id="8dd6">Class definitions are **NOT hoisted,** so just get in the habit of declaring them before you use them.</span>
 
 Defining Methods
@@ -289,7 +290,7 @@ Defining Methods
 
     console.log(bookTitles.join(", ")); // The Fellowship of the Ring, The Two Towers
 
--   <span id="133d">If we go back to an example of how constructor functions also use static methods — we see that static methods are _defined directly on the constructor function_ — whereas instance methods need to be defined on the _prototype_ object.</span>
+-   <span id="133d">If we go back to an example of how constructor functions also use static methods — we see that static methods are *defined directly on the constructor function* — whereas instance methods need to be defined on the *prototype* object.</span>
 
 <!-- -->
 
@@ -335,9 +336,9 @@ Defining Methods
 
 ### Comparing Classes to Constructor Functions
 
-> _ES2015 Classes are essentially_ **_syntactic sugar_** _over traditional constructor functions and prototypes._
+> *ES2015 Classes are essentially* ***syntactic sugar*** *over traditional constructor functions and prototypes.*
 
----
+------------------------------------------------------------------------
 
 ### Javascript Inheritance
 
@@ -392,7 +393,7 @@ Defining Methods
     console.log(Catalogitem instanceof Function); // true
     console.log(Book instanceof Function); // true
 
--   <span id="8dcd">A `prototype chain` defines a series of prototype objects that are delegated to one by one, when a property or method can't be found on an instance object.</span>
+-   <span id="8dcd">A `prototype chain` defines a series of prototype objects that are delegated to one by one, when a property or method can’t be found on an instance object.</span>
 
 <!-- -->
 
@@ -400,12 +401,12 @@ Defining Methods
 
 -   <span id="cdf9">When the `getInformation()` method is invoked:</span>
 -   <span id="7d03">JS looks for get() on the current object.</span>
--   <span id="c65f">If it isn't found, the method call is delegated to the object's prototype.</span>
+-   <span id="c65f">If it isn’t found, the method call is delegated to the object’s prototype.</span>
 -   <span id="7ff3">It continues up the prototype chain until the method is found.</span>
 
 Overriding a method in a parent class
 
--   <span id="71f7">`Method Overriding` : when a child class provides an implementation of a method that's already defined in a parent class.</span>
+-   <span id="71f7">`Method Overriding` : when a child class provides an implementation of a method that’s already defined in a parent class.</span>
 
 <!-- -->
 
@@ -426,16 +427,16 @@ Overriding a method in a parent class
       }
     }
 
--   <span id="68fd">We can simply declare our own method of the same name in our child class to override our parent's version of `getInformation()`</span>
+-   <span id="68fd">We can simply declare our own method of the same name in our child class to override our parent’s version of `getInformation()`</span>
 
----
+------------------------------------------------------------------------
 
 ### JavaScript Modules
 
 Introducing Node.js modules
 
 -   <span id="7869">In Node.js, each JS file in a project defines a `module`.</span>
--   <span id="fdaa">Module's contents are private by default.</span>
+-   <span id="fdaa">Module’s contents are private by default.</span>
 -   <span id="1ee7">`Local Modules` : Modules defined within your project.</span>
 -   <span id="47f2">`Core Modules` : Native modules contained within Node.js that you can use to perform tasks or to add functionality to your application.</span>
 -   <span id="dc6e">`CommonJS` : A legacy module system.</span>
@@ -465,15 +466,15 @@ Introducing Node.js modules
 -   <span id="7f81">`Node.js Core`: identifier matches name</span>
 -   <span id="ecfe">`Third-Party`: identifier matches a module in the node modules folder (installed package)</span>
 
----
+------------------------------------------------------------------------
 
 ### `Encapsulation`
 
--   <span id="74af">Puts the behavior and data together behind methods that hide the specific implementation so that code that uses it doesn't need to worry about the details of it.</span>
+-   <span id="74af">Puts the behavior and data together behind methods that hide the specific implementation so that code that uses it doesn’t need to worry about the details of it.</span>
 
 ### `Inheritance`
 
--   <span id="5328">`Implementation Inheritance`** :** Means that data and methods defined on a parent class are available on objects created from classes that inherit from those parent classes.</span>
+-   <span id="5328">`Implementation Inheritance`\*\* :\*\* Means that data and methods defined on a parent class are available on objects created from classes that inherit from those parent classes.</span>
 -   <span id="743c">`Prototypal Inheritance` : Means that JS uses prototype objects to make its `implementation inheritance` actually work.</span>
 -   <span id="39b5">Parent Class === Prototype === Super Class === Base Class</span>
 -   <span id="8a35">Inheritance === Subtyping</span>
@@ -557,7 +558,7 @@ Introducing Node.js modules
 
 -   <span id="4da7">The ability to treat an object as if it were an instance of one of its parent classes.</span>
 
----
+------------------------------------------------------------------------
 
 ### The SOLID Principles Explained
 
@@ -571,15 +572,15 @@ SOLID is an anagram for:
 
 ### `Single-Responsibility Principle`
 
-> _A class should do one thing and do it well_
+> *A class should do one thing and do it well*
 
 -   <span id="46f7">This principle is about limiting the impact of change.</span>
 
 ### `The Liskov Substitution Principle:`
 
-_Subtype Requirement: Let ϕ(x) be a property provable about objects x of type T. Then ϕ(y) should be true for objects y of type S where S is a subtype of T._
+*Subtype Requirement: Let ϕ(x) be a property provable about objects x of type T. Then ϕ(y) should be true for objects y of type S where S is a subtype of T.*
 
-> _You can substitute child class objects for parent class objects and not cause errors._
+> *You can substitute child class objects for parent class objects and not cause errors.*
 
 `The Other Three`
 
@@ -588,14 +589,14 @@ _Subtype Requirement: Let ϕ(x) be a property provable about objects x of type T
 -   <span id="450f">A class is open for extension and closed for modification.</span>
 -   <span id="d4c9">Creating new functionality can happen in child classes, and not the original class.</span>
 -   <span id="9cb7">`Interface Segregation Principle`</span>
--   <span id="37db">Method names should be grouped together into granular collections called "interfaces".</span>
+-   <span id="37db">Method names should be grouped together into granular collections called “interfaces”.</span>
 -   <span id="7861">`Dependency Inversion Principle`</span>
 -   <span id="40a9">Functionality that your class depends on should be provided as parameters to methods rather than using new in the class to create a new instance.</span>
 
 ### Controlling Coupling with The Law of Demeter
 
 -   <span id="2e83">`Coupling` : The degree of interdependence between two or more classes.</span>
--   <span id="d484">The fewer the connections between classes, the less chance there is for the _ripple effect_.</span>
+-   <span id="d484">The fewer the connections between classes, the less chance there is for the *ripple effect*.</span>
 -   <span id="dc31">Here is the formal definition:</span>
 -   <span id="61b4">A method of an object can only invoke the methods (or use the properties) of the following kind of objects:</span>
 -   <span id="5733">Methods on the object itself.</span>
@@ -604,12 +605,12 @@ _Subtype Requirement: Let ϕ(x) be a property provable about objects x of type T
 -   <span id="d8ce">Any values stores in the instance variables of the object.</span>
 -   <span id="ce51">Any values stored in global variables.</span>
 -   <span id="0aba">Law of Demeter is more so of a guideline than a law.</span>
--   <span id="0d36">Easiest way to implement it is to _not us more than one dot_</span>
+-   <span id="0d36">Easiest way to implement it is to *not us more than one dot*</span>
 -   <span id="76ea">You cannot cheat by separating extra calls onto different lines.</span>
 
 ### When to ignore the Law of Demeter
 
--   <span id="770a">When you work with objects that come from code that you didn't create — you will often have to break the LoD.</span>
+-   <span id="770a">When you work with objects that come from code that you didn’t create — you will often have to break the LoD.</span>
 
 <!-- -->
 
@@ -618,26 +619,23 @@ _Subtype Requirement: Let ϕ(x) be a property provable about objects x of type T
       .addEventListener("click", (e) => e.preventDefault());
 
 -   <span id="d850">This breaks the law but there is way about it because your code needs to know about both elements and you have to use the API provided by the DOM.</span>
--   <span id="9dc9">UI's will break LoD because they are not object-oriented programs.</span>
+-   <span id="9dc9">UI’s will break LoD because they are not object-oriented programs.</span>
 
 ### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong>
-<br/>
+**bgoonz’s gists**  
 
-<em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…*gist.github.com<a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong>
-<br/>
+**bgoonz — Overview**  
 
-<em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…*github.com<a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ### Or Checkout my personal Resource Site:
 
-<a href="https://web-dev-resource-hub.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://web-dev-resource-hub.netlify.app/"><strong>Web-Dev-Resource-Hub</strong>
-<br/>
+**Web-Dev-Resource-Hub**  
 
-<em>Edit description</em>web-dev-resource-hub.netlify.app</a><a href="https://web-dev-resource-hub.netlify.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
+*Edit description*web-dev-resource-hub.netlify.app<a href="https://web-dev-resource-hub.netlify.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [March 14, 2021](https://medium.com/p/d45007d06333).
 

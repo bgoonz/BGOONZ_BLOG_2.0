@@ -1,10 +1,12 @@
-# Array.prototype.reduceRight()
+Array.prototype.reduceRight()
+=============================
 
 The `reduceRight()` method applies a function against an accumulator and each value of the array (from right-to-left) to reduce it to a single value.
 
 See also [`Array.prototype.reduce()`](reduce) for left-to-right.
 
-## Syntax
+Syntax
+------
 
     // Arrow function
     reduceRight((accumulator, currentValue) => { ... } )
@@ -46,7 +48,8 @@ Value to use as accumulator to the first call of the `callbackFn`. If no initial
 
 The value that results from the reduction.
 
-## Description
+Description
+-----------
 
 `reduceRight` executes the callback function once for each element present in the array, excluding holes in the array, receiving four arguments: the initial value (or value from the previous callback call), the value of the current element, the current index, and the array over which iteration is occurring.
 
@@ -82,7 +85,8 @@ And if you were to provide an `initialValue`, the result would look like this:
 
 The value returned by `reduceRight` this time would be, of course, `20`.
 
-## Polyfill
+Polyfill
+--------
 
 `reduceRight` was added to the ECMA-262 standard in the 5th edition; as such it may not be present in all implementations of the standard. You can work around this by inserting the following code at the beginning of your scripts, allowing use of `reduceRight` in implementations which do not natively support it.
 
@@ -118,7 +122,8 @@ The value returned by `reduceRight` this time would be, of course, `20`.
       };
     }
 
-## Examples
+Examples
+--------
 
 ### Sum up all values within an array
 
@@ -190,7 +195,7 @@ The value returned by `reduceRight` this time would be, of course, `20`.
 
 Function composition is a mechanism for combining functions, in which the output of each function is passed into the next one, and the output of the last function is the final result. In this example we use `reduceRight()` to implement function composition.
 
-See also [Function composition](<https://en.wikipedia.org/wiki/Function_composition_(computer_science)>) on Wikipedia.
+See also [Function composition](https://en.wikipedia.org/wiki/Function_composition_(computer_science)) on Wikipedia.
 
     const compose = (...args) => (value) => args.reduceRight((acc, fn) => fn(acc), value)
 
@@ -206,14 +211,14 @@ See also [Function composition](<https://en.wikipedia.org/wiki/Function_composit
     // using composition function
     console.log(compose(inc, double)(2)); // 5
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.reduceright">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-array.prototype.reduceright</span></td></tr></tbody></table>
 
-<span class="small">#sec-array.prototype.reduceright</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -269,7 +274,8 @@ Samsung Internet
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`Array.prototype.reduce()`](reduce)
 

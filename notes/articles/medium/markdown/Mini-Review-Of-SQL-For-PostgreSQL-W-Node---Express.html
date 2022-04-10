@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Mini-Review-Of-SQL-For-PostgreSQL-W-Node---Express</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="mini-review-of-sql-for-postgresql-w-node-express">Mini Review Of SQL For PostgreSQL W Node &amp; Express</h1>
+<p>What is a Query?</p>
+<hr />
+<h3 id="mini-review-of-sql-for-postgresql-w-node-express-1">Mini Review Of SQL For PostgreSQL W Node &amp; Express</h3>
+<h4 id="what-is-a-query"><strong>What is a Query?</strong></h4>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*LU-Sn7CDRHyY78nD.jpeg" class="graf-image" />
+</figure>
+<h3 id="using-select">Using Select</h3>
+<p><strong>What is a Query?</strong></p>
+<ul>
+<li><span id="2026"><code>Query</code> : A question we’re asking a database, aiming to get a response back.</span></li>
+<li><span id="e626"><code>psql -U postgres</code></span></li>
+<li><span id="f34d">Let’s us access the postgres server as the user ‘postgres’</span></li>
+<li><span id="113b"><code>-U</code> stands for ‘user’.</span></li>
+<li><span id="60c5"><code>\q</code> is used to quit postgres at any time.</span></li>
+</ul>
+<!-- -->
+<pre><code>create table puppies (
+  name VARCHAR(100),
+  age_yrs NUMERIC(2,1),
+  breed VARCHAR(100),
+  weight_lbs INT,
+  microchipped BOOLEAN
+);
+
+insert into puppies
+values
+(&#39;Cooper&#39;, 1, &#39;Miniature Schnauzer&#39;, 18, &#39;yes&#39;);
+
+insert into puppies
+values
+(&#39;Indie&#39;, 0.5, &#39;Yorkshire Terrier&#39;, 13, &#39;yes&#39;),
+(&#39;Kota&#39;, 0.7, &#39;Australian Shepherd&#39;, 26, &#39;no&#39;),
+(&#39;Zoe&#39;, 0.8, &#39;Korean Jindo&#39;, 32, &#39;yes&#39;),
+(&#39;Charley&#39;, 1.5, &#39;Basset Hound&#39;, 25, &#39;no&#39;),
+(&#39;Ladybird&#39;, 0.6, &#39;Labradoodle&#39;, 20, &#39;yes&#39;),
+(&#39;Callie&#39;, 0.9, &#39;Corgi&#39;, 16, &#39;no&#39;),
+(&#39;Jaxson&#39;, 0.4, &#39;Beagle&#39;, 19, &#39;yes&#39;),
+(&#39;Leinni&#39;, 1, &#39;Miniature Schnauzer&#39;, 25, &#39;yes&#39; ),
+(&#39;Max&#39;, 1.6, &#39;German Shepherd&#39;, 65, &#39;no&#39;);</code></pre>
+<ul>
+<li><span id="2c10">SQL Data Types listed here:</span></li>
+<li><span id="e3ef"><code>varchar(n)</code> : variable length char, n represents the limit.</span></li>
+<li><span id="3af6"><code>numeric(p, s)</code> : floating point number, with <em>p</em> digits and <em>s</em> number of places after the decimal point.</span></li>
+<li><span id="2eff"><code>int</code> : 4 byte integer.</span></li>
+<li><span id="a736"><code>boolean</code> : regular boolean value.</span></li>
+<li><span id="1ff4"><code>SELECT Query</code> : Query used to get results back from a table.</span></li>
+<li><span id="d1a2">Syntax <code>SELECT [columns] FROM [table]</code>.</span></li>
+<li><span id="d9bb">You can use <code>SELECT *</code> to get all rows back in a given table.</span></li>
+<li><span id="96d6">To select multiple columns you could use:</span></li>
+</ul>
+<!-- -->
+<pre><code>SELECT name , age_yrs , weight_lbs FROM puppies;</code></pre>
+<ul>
+<li><span id="9e78">It is recommended to perform queries with multi-line formatting because column selection can become very long.</span></li>
+<li><span id="16a2">Also if you format it like this you can easily comment out certain columns with double dash.</span></li>
+</ul>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*tj99LLWFAJYMoZIf" class="graf-image" />
+</figure>
+<hr />
+<h3 id="using-where">USING WHERE</h3>
+<p><strong>Using SELECT and WHERE</strong></p>
+<ul>
+<li><span id="43bf">We can filter our information from our SELECT queries by using WHERE.</span></li>
+</ul>
+<p><strong>WHERE clause for a single value</strong></p>
+<pre><code>SELECT name, breed FROM puppies
+  WHERE breed = &#39;Corgi&#39;;</code></pre>
+<ul>
+<li><span id="d62e">Note that the string must use single quotation marks because PostgreSQL will convert all names to lowercase unless DOUBLE quoted.</span></li>
+</ul>
+<p><strong>WHERE clause for a list of values</strong></p>
+<pre><code>SELECT name, breed FROM puppies
+  WHERE breed IN (&#39;Corgi&#39;, &#39;Beagle&#39;, &#39;Yorkshire Terrier&#39;);</code></pre>
+<ul>
+<li><span id="94cc">Use the structure WHERE [col] IN (‘val’, ‘val2’…)</span></li>
+</ul>
+<p><strong>WHERE clause for a range of values</strong></p>
+<pre><code>SELECT name, breed, age_yrs FROM puppies
+  WHERE age_yrs BETWEEN 0 AND 0.6;</code></pre>
+<p><strong>ORDER BY</strong></p>
+<ul>
+<li><span id="b401">You can use <code>Order By</code> to get back your data in a specified way.</span></li>
+</ul>
+<!-- -->
+<pre><code>SELECT name, breed
+FROM puppies
+ORDER BY age_yrs DESC;</code></pre>
+<p><strong>LIMIT and OFFSET</strong></p>
+<ul>
+<li><span id="3943">You can limit the amount of rows returned by using the LIMIT keyword.</span></li>
+</ul>
+<!-- -->
+<pre><code>SELECT name, breed
+FROM puppies
+ORDER BY age_yrs
+LIMIT 100 OFFSET 100;</code></pre>
+<ul>
+<li><span id="7340">You can on the OFFSET keyword after LIMIT to retrieve the next 100 after the LIMIT clause.</span></li>
+</ul>
+<p><strong>SQL operators</strong></p>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*u9zQKiyH8RiwHczk.png" class="graf-image" />
+</figure>
+<p>SELECT name, breed FROM puppies WHERE breed NOT IN (‘Miniature Schnauzer’, ‘Basset Hound’, ‘Labradoodle’) AND breed NOT LIKE ‘%Shepherd’;</p>
+<ul>
+<li><span id="f700">Example of a query with a WHERE clause using several logical operators.</span></li>
+<li><span id="d31c">The % is a wildcard.</span></li>
+</ul>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*662qwyPcdX2fxy6Q.png" class="graf-image" />
+</figure>
+<ul>
+<li><span id="d0b9">You can also use mathematical operators in WHERE clauses.</span></li>
+</ul>
+<!-- -->
+<pre><code>SELECT name, breed, age_yrs FROM puppies
+  WHERE age_yrs * 10 = 6;</code></pre>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*FbpEHXEfQGBl9B2w.png" class="graf-image" />
+</figure>
+<ul>
+<li><span id="9442">You can also use comparison operators.</span></li>
+</ul>
+<!-- -->
+<pre><code>SELECT name, breed, weight_lbs FROM puppies
+  WHERE weight_lbs &gt; 50;</code></pre>
+<hr />
+<h3 id="using-insert">Using INSERT</h3>
+<ul>
+<li><span id="8b98">Used to add data into a table.</span></li>
+</ul>
+<!-- -->
+<pre><code>INSERT INTO table_name
+VALUES
+  (column1_value, colum2_value, column3_value);
+
+INSERT INTO friends (first_name, last_name)
+VALUES
+(&#39;Rose&#39;, &#39;Tyler&#39;),
+(&#39;Martha&#39;, &#39;Jones&#39;),
+(&#39;Donna&#39;, &#39;Noble&#39;),
+(&#39;River&#39;, &#39;Song&#39;);</code></pre>
+<ul>
+<li><span id="2291">Note the use of single quotation marks for string values.</span></li>
+<li><span id="810d">DEFAULT can be used in lieu of our SERIAL pseudo type.</span></li>
+<li><span id="94af">You can do multiple insert by first specifying the column names and the adding in the data wrapped in parenthesis seperated by a comma.</span></li>
+</ul>
+<h3 id="using-inner-join">Using INNER JOIN</h3>
+<ul>
+<li><span id="8c61">Relationships are key in RD’s.</span></li>
+<li><span id="b080">We create table associations through <em>foreign keys</em> and <em>primary keys</em>.</span></li>
+</ul>
+<!-- -->
+<pre><code>SELECT * FROM puppies
+INNER JOIN breeds ON (puppies.breed_id = breeds.id);</code></pre>
+<pre><code>
+---
+
+### Using Seed Files
+
+**Writing And Running A Seed File In PSQL**
+
+-   &lt;span id=&quot;bf27&quot;&gt;Seeding is the act of populating a database with data.&lt;/span&gt;
+
+**Creating a seed file**
+
+-   &lt;span id=&quot;b5dd&quot;&gt;Start by making a seed file in your IDE with `.sql` file type.&lt;/span&gt;
+
+&lt;!-- --&gt;
+
+    CREATE TABLE pies (
+      flavor VARCHAR(255) PRIMARY KEY,
+      price FLOAT
+    );
+
+    INSERT INTO pies VALUES(&#39;Apple&#39;, 19.95);
+    INSERT INTO pies VALUES(&#39;Caramel Apple Crumble&#39;, 20.53);
+    INSERT INTO pies VALUES(&#39;Blueberry&#39;, 19.31);
+    INSERT INTO pies VALUES(&#39;Blackberry&#39;, 22.86);
+    INSERT INTO pies VALUES(&#39;Cherry&#39;, 22.32);
+    INSERT INTO pies VALUES(&#39;Peach&#39;, 20.45);
+    INSERT INTO pies VALUES(&#39;Raspberry&#39;, 20.99);
+    INSERT INTO pies VALUES(&#39;Mixed Berry&#39;, 21.45);
+
+**Populating a database via &amp;lt; (&quot;left caret&quot;)**
+
+-   &lt;span id=&quot;0880&quot;&gt;Syntax :
+    `psql -d [database] &lt; [path_to_file/file.sql]`
+    `psql -d bakery &lt; path_to_my_file/seed-data.sql`&lt;/span&gt;
+
+**Populating the database via | (&quot;pipe&quot;)**
+
+-   &lt;span id=&quot;e1ff&quot;&gt;Syntax :
+    `cat [path_to_file/file.sql] | psql -d [database]`
+    `cat path_to_my_file/seed-data.sql | psql -d postgres`&lt;/span&gt;
+
+### Relational Database Design
+
+### Creating a Schema For Relational Database Design
+
+-   &lt;span id=&quot;ab7f&quot;&gt;Schemas allow us to easily visualize database tables and their relationships to one another.&lt;/span&gt;
+
+**What is Relational Database Design?**
+
+-   &lt;span id=&quot;c8bd&quot;&gt;**RDD** : Relational Database Design differs from other Databases because data is organized into tables and all types of data access are carried out via controlled transactions.&lt;/span&gt;
+-   &lt;span id=&quot;088e&quot;&gt;Remember: Tables = Entities, Rows = Records, Columns = Fields.&lt;/span&gt;
+
+**Stages of Relational Database Design**
+
+1.  &lt;span id=&quot;62c5&quot;&gt;`Define the purpose &amp; entitites of the Relational DB.`&lt;/span&gt;
+
+-   &lt;span id=&quot;e1e7&quot;&gt;Why is the database being created?&lt;/span&gt;
+-   &lt;span id=&quot;dcfc&quot;&gt;What problem is it solving?&lt;/span&gt;
+-   &lt;span id=&quot;d2b6&quot;&gt;What is the data used for?&lt;/span&gt;
+
+1.  &lt;span id=&quot;0784&quot;&gt;`Identify the Primary keys.`&lt;/span&gt;
+
+-   &lt;span id=&quot;8d90&quot;&gt;Identify the PK of each table.&lt;/span&gt;
+
+1.  &lt;span id=&quot;0ec6&quot;&gt;`Establish Table Relationships.`&lt;/span&gt;
+
+-   &lt;span id=&quot;93f7&quot;&gt;There are theee types of relational database table relationships:&lt;/span&gt;
+
+1.  &lt;span id=&quot;c34b&quot;&gt;**One-To-One**&lt;/span&gt;
+
+-   &lt;span id=&quot;e3aa&quot;&gt;One record in a table is associated with only one record in another table.&lt;/span&gt;
+-   &lt;span id=&quot;258f&quot;&gt;The least common type of table relationship.&lt;/span&gt;
+
+1.  &lt;span id=&quot;1afc&quot;&gt;**One-To-Many**&lt;/span&gt;
+
+-   &lt;span id=&quot;ffbf&quot;&gt;Each record in a table is associated with multiple records in another table.&lt;/span&gt;
+
+1.  &lt;span id=&quot;f087&quot;&gt;**Many-To-Many**&lt;/span&gt;
+
+-   &lt;span id=&quot;69de&quot;&gt;Multiple records in one table are associated with multiple records in another table.&lt;/span&gt;
+-   &lt;span id=&quot;3c48&quot;&gt;Usually we would create a third table for this relationship called a `join table`&lt;/span&gt;
+
+1.  &lt;span id=&quot;f73a&quot;&gt;`Apply Normalization Rules.`&lt;/span&gt;
+
+-   &lt;span id=&quot;16ec&quot;&gt;`Normalization` : Process of optimizing the database structure so that redundancy and confusion are eliminated.&lt;/span&gt;
+-   &lt;span id=&quot;6e1e&quot;&gt;Rules are called &#39;normal forms&#39;&lt;/span&gt;
+
+1.  &lt;span id=&quot;950c&quot;&gt;First normal form.&lt;/span&gt;
+
+-   &lt;span id=&quot;6915&quot;&gt;Eliminate repeating groups in tables.&lt;/span&gt;
+-   &lt;span id=&quot;ced9&quot;&gt;Create sep. table for each set of related data.&lt;/span&gt;
+-   &lt;span id=&quot;98cd&quot;&gt;ID each set of related data with a primary key.&lt;/span&gt;
+
+1.  &lt;span id=&quot;2cb4&quot;&gt;Second normal form.&lt;/span&gt;
+
+-   &lt;span id=&quot;8a62&quot;&gt;Create sep. tables for sets of values that apply to multiple records.&lt;/span&gt;
+-   &lt;span id=&quot;7ad9&quot;&gt;Related these tables with a foreign key.&lt;/span&gt;
+
+1.  &lt;span id=&quot;7c97&quot;&gt;Third normal form.&lt;/span&gt;
+
+-   &lt;span id=&quot;a141&quot;&gt;Eliminate fields that do not depend on the table&#39;s key.&lt;/span&gt;
+
+1.  &lt;span id=&quot;6611&quot;&gt;Boyce-Codd normal form.&lt;/span&gt;
+2.  &lt;span id=&quot;e505&quot;&gt;Fifth normal form.&lt;/span&gt;
+
+-   &lt;span id=&quot;49d0&quot;&gt;The first three are widely used in practice and the fourth/fifth less so.&lt;/span&gt;
+
+---
+
+### Transactions
+
+-   &lt;span id=&quot;d642&quot;&gt;Using Transactions allow us to make changes to a SQL database in a consistent and durable way, and it is considered best practice to use them regularly.&lt;/span&gt;
+-   &lt;span id=&quot;bf44&quot;&gt;`Transaction` : Single unit of work, which can contain multiple operations, performed on a database.&lt;/span&gt;
+-   &lt;span id=&quot;708d&quot;&gt;Bundles multiple steps into a single, all-or-nothing operation.&lt;/span&gt;
+
+**Implicit vs. explicit transactions**
+
+-   &lt;span id=&quot;2c5c&quot;&gt;Technically every SQL statement is a transaction.&lt;/span&gt;
+
+&lt;!-- --&gt;
+
+    INSERT INTO hobbits(name,purpose)
+      VALUES(&#39;Frodo&#39;,&#39;Destroy the One Ring of power.&#39;);
+
+-   &lt;span id=&quot;c72a&quot;&gt;This statement would be a `implicit` transaction.&lt;/span&gt;
+-   &lt;span id=&quot;6a91&quot;&gt;On the flip side `explicit` transactions will allow us to create save points and roll back to whatever point in time we choose.&lt;/span&gt;
+
+**PostgreSQL transactional commands**
+
+-   &lt;span id=&quot;7400&quot;&gt;`BEGIN` : Initiates a transaction block. All Statements after a BEGIN command will be executed in a single transaction until COMMIT or ROLLBACK is called.&lt;/span&gt;
+
+&lt;!-- --&gt;
+
+    BEGIN;
+      INSERT INTO hobbits(name,purpose)
+        VALUES(&#39;Frodo&#39;,&#39;Destroy the One Ring of power.&#39;);
+
+-   &lt;span id=&quot;ae31&quot;&gt;`COMMIT` : Commits a current transaction, all changes made by this transaction become visible to others and are guaranteed to be durable if a crash occurs.&lt;/span&gt;
+
+&lt;!-- --&gt;
+
+    BEGIN;
+      INSERT INTO hobbits(name,purpose)
+        VALUES(&#39;Frodo&#39;,&#39;Destroy the One Ring of power.&#39;);
+    COMMIT;
+
+-   &lt;span id=&quot;a20c&quot;&gt;`ROLLBACK` : Rolls back current transaction and removes all updates made by the transaction.&lt;/span&gt;
+
+&lt;!-- --&gt;
+
+    BEGIN;
+      INSERT INTO hobbits(name,purpose)
+        VALUES(&#39;Frodo&#39;,&#39;Destroy the One Ring of power.&#39;);
+    ROLLBACK;
+
+-   &lt;span id=&quot;0aa4&quot;&gt;`SAVEPOINT` : Establishes a new save point within the current transaction.&lt;/span&gt;
+
+&lt;!-- --&gt;
+
+    BEGIN;
+      DELETE FROM fellowship
+        WHERE age &gt; 100;
+      SAVEPOINT first_savepoint;
+      DELETE FROM fellowship
+        WHERE age &gt; 80;
+      DELETE FROM fellowship
+        WHERE age &gt;= 40;
+      ROLLBACK TO first_savepoint;
+    COMMIT;
+
+-   &lt;span id=&quot;5b46&quot;&gt;`SET TRANSACTION` : Sets the characteristics of the current transaction.&lt;/span&gt;
+
+&lt;!-- --&gt;
+
+    BEGIN;
+      SET TRANSACTION READ ONLY;
+      ...
+    COMMIT;
+
+**When to use transactions and why**
+
+-   &lt;span id=&quot;2649&quot;&gt;Good to use when making any updates, insertions, or deletions to a database.&lt;/span&gt;
+-   &lt;span id=&quot;9ade&quot;&gt;Help us deal with crashes, failures, data consistency, and error handling.&lt;/span&gt;
+-   &lt;span id=&quot;0228&quot;&gt;`Atomicity` is another feature that is a benefit of transactions.&lt;/span&gt;
+
+**Transaction properties: ACID**
+
+-   &lt;span id=&quot;1cd4&quot;&gt;A SQL transaction has four properties known collectively as `ACID` (Atomic, Consistent, Isolated, and Durable)&lt;/span&gt;
+-   &lt;span id=&quot;7c59&quot;&gt;`Atomicity` : All changes to data are performed as if they are a single operation.&lt;/span&gt;
+-   &lt;span id=&quot;1e1b&quot;&gt;You can also refer to the A as &#39;Abortability&#39;&lt;/span&gt;
+-   &lt;span id=&quot;34fa&quot;&gt;I.E. if an app transfers funds from one account to another, the atomic nature of transactions will ensure that if a debt is successfully made, the credit will be properly transferred.&lt;/span&gt;
+-   &lt;span id=&quot;1be1&quot;&gt;`Consistency` : Data is in a consistent start when a transaction starts and ends.&lt;/span&gt;
+-   &lt;span id=&quot;0ffb&quot;&gt;I.E. if a transfer is scheduled, this prop ensures total value of funds in both accounts is the same at the start and end of a transaction.&lt;/span&gt;
+-   &lt;span id=&quot;bc89&quot;&gt;`Isolation` : Intermediate state of a transaction is invisible to othe rtransactioned, they appear to be serialized.&lt;/span&gt;
+-   &lt;span id=&quot;ce2d&quot;&gt;I.E. continuing our money transfer example, when a transfer occurs this prop ensures that transactions can see funds in one account or the other BUT NOT both NOR neither.&lt;/span&gt;
+-   &lt;span id=&quot;8fcd&quot;&gt;`Durable` : After a transaction successfully completes, changes to data persists and are not undone even in system failure.&lt;/span&gt;
+-   &lt;span id=&quot;cb8d&quot;&gt;I.E. this prop ensures our transaction will success and cannot be reversed in the event of a failure.&lt;/span&gt;
+
+**Banking transaction example**
+
+    BEGIN;
+      UPDATE accounts SET balance = balance - 100.00
+          WHERE name = &#39;Alice&#39;;
+      UPDATE branches SET balance = balance - 100.00
+          WHERE name = (SELECT branch_name FROM accounts WHERE name = &#39;Alice&#39;);
+      UPDATE accounts SET balance = balance + 100.00
+          WHERE name = &#39;Bob&#39;;
+      UPDATE branches SET balance = balance + 100.00
+          WHERE name = (SELECT branch_name FROM accounts WHERE name = &#39;Bob&#39;);
+    COMMIT;
+
+---
+
+### Subqueries and JOINs
+
+**Joins vs. Subqueries**
+**What is a JOIN?**
+
+-   &lt;span id=&quot;6e9d&quot;&gt;JOIN allows us to retrieve rows from multiple tables.&lt;/span&gt;
+
+&lt;!-- --&gt;
+
+    SELECT * FROM puppies
+    INNER JOIN breeds ON (puppies.breed_id = breeds.id);
+
+-   &lt;span id=&quot;c49e&quot;&gt;There are a few different types of JOIN operations:&lt;/span&gt;
+-   &lt;span id=&quot;405d&quot;&gt;`Inner Join` : Returns results containing rows in the left table that match rows in the right table.&lt;/span&gt;
+-   &lt;span id=&quot;10a2&quot;&gt;`Left Join` : Returns a set of results containing all rows from the left table with the matching rows from the right table. If there is no match, the right side will have null values.&lt;/span&gt;
+-   &lt;span id=&quot;6b72&quot;&gt;`Right Join` : Returns a set of results containing all rows from the right table with the matching rows from the left table. If there is no match, the left side will have null values.&lt;/span&gt;
+-   &lt;span id=&quot;30f3&quot;&gt;`Full Outer Join` : Returns a set of results containing all rows from both the left and right tables, with matching rows from both sides where avail. If there is no match the missing side contains null values.&lt;/span&gt;
+-   &lt;span id=&quot;cb22&quot;&gt;`Self-Join` : Query in which a table is joined to itslef, useful for comparing values in a column of rows within the same table.&lt;/span&gt;
+
+**What is a subquery?**
+
+-   &lt;span id=&quot;29b8&quot;&gt;A SELECT statement nested inside another SELECT statement.&lt;/span&gt;
+
+&lt;!-- --&gt;
+
+    postgres=# SELECT * FROM puppies;
+     id |   name   | age_yrs | breed_id | weight_lbs | microchipped
+    ----+----------+---------+----------+------------+--------------
+      1 | Cooper   |     1.0 |        8 |         18 | t
+      2 | Indie    |     0.5 |        9 |         13 | t
+      3 | Kota     |     0.7 |        1 |         26 | f
+      4 | Zoe      |     0.8 |        6 |         32 | t
+      5 | Charley  |     1.5 |        2 |         25 | f
+      6 | Ladybird |     0.6 |        7 |         20 | t
+      7 | Callie   |     0.9 |        4 |         16 | f
+      8 | Jaxson   |     0.4 |        3 |         19 | t
+      9 | Leinni   |     1.0 |        8 |         25 | t
+     10 | Max      |     1.6 |        5 |         65 | f
+    (10 rows)
+
+    SELECT
+      puppies.name,
+      age_yrs,
+      breeds.name
+    FROM
+      puppies
+    INNER JOIN
+      breeds ON (breeds.id = puppies.breed_id)
+    WHERE
+      age_yrs &gt; (
+        SELECT
+          AVG (age_yrs)
+        FROM
+          puppies
+      );
+
+**Multiple-row subquery**
+
+    SELECT *
+    FROM friends
+    WHERE
+      puppy_id IN (
+        SELECT puppy_id
+        FROM puppies
+        WHERE
+          age_yrs &lt; 0.6
+      );
+
+-   &lt;span id=&quot;9abf&quot;&gt;We can also use a JOIN operation instead of the WHERE clause like in the above example.&lt;/span&gt;
+
+&lt;!-- --&gt;
+
+    SELECT *
+    FROM friends
+    INNER JOIN puppies ON (puppies.puppy_id = friends.puppy_id)
+    WHERE
+      puppies.age_yrs &lt; 0.6;
+
+**Should I use a JOIN or a subquery?**
+
+-   &lt;span id=&quot;569f&quot;&gt;Joins are better when you want to combine rows from one or more tables based on a match condition.&lt;/span&gt;
+-   &lt;span id=&quot;3175&quot;&gt;Subqueries work great when you&#39;re only returning a single value.&lt;/span&gt;
+-   &lt;span id=&quot;b6fb&quot;&gt;When returning multiple rows, you could go with either subQ&#39;s or joins.&lt;/span&gt;
+
+---
+
+### Indexes and Performance Analysis
+
+-   &lt;span id=&quot;fc7a&quot;&gt;`PostgreSQL Index` : Works similarly like an index in the back of a book, they provide special lookup tables to let us make faster database queries.&lt;/span&gt;
+-   &lt;span id=&quot;cb65&quot;&gt;The Syntax for creating index is as follows:&lt;/span&gt;
+
+&lt;!-- --&gt;
+
+    CREATE INDEX index_name ON table_name (column_name);
+
+    CREATE INDEX addresses_phone_index ON addresses (phone_number);
+
+    DROP INDEX addresses_phone_index;
+
+**Types of indexes**
+
+There are several types of indexes use in Postgres: B-tree, Hash, GiST, and GIN.
+
+-   &lt;span id=&quot;19e4&quot;&gt;`Single-Column Indexes` Uses only one table column.&lt;/span&gt;
+-   &lt;span id=&quot;d09d&quot;&gt;`CREATE INDEX addresses_phone_index ON addresses (phone_number);`&lt;/span&gt;
+-   &lt;span id=&quot;31d2&quot;&gt;`Multiple-Column Indexes` Uses more than one table column.&lt;/span&gt;
+-   &lt;span id=&quot;d219&quot;&gt;`CREATE INDEX idx_addresses_city_post_code ON table_name (city_id, postal_code);`&lt;/span&gt;
+-   &lt;span id=&quot;c2ad&quot;&gt;`Partial Indexes` Uses subset of a table defined by a conditional expression.&lt;/span&gt;
+-   &lt;span id=&quot;37df&quot;&gt;`CREATE INDEX addresses_phone_index ON addresses (phone_number) WHERE (city_id = 2);`&lt;/span&gt;
+
+**When to use an index**
+
+-   &lt;span id=&quot;e4ea&quot;&gt;Overall DB indexes are known to enhance performance when performing queries, however there are certain situations where it is not recommended:&lt;/span&gt;
+-   &lt;span id=&quot;7095&quot;&gt;When working with small tables.&lt;/span&gt;
+-   &lt;span id=&quot;5829&quot;&gt;When table has large batch updates or insert operations.&lt;/span&gt;
+-   &lt;span id=&quot;d017&quot;&gt;When working with columns that have many NULL values.&lt;/span&gt;
+-   &lt;span id=&quot;a1d6&quot;&gt;When working with columns that are frequently manipulated.&lt;/span&gt;
+-   &lt;span id=&quot;9bdf&quot;&gt;Using EXPLAIN and ANALYZE keywords can give us performance data of our queries.&lt;/span&gt;
+
+&lt;!-- --&gt;
+
+    EXPLAIN ANALYZE SELECT *
+    FROM tenk1 t1, tenk2 t2
+    WHERE t1.unique1 &lt; 100 AND t1.unique2 = t2.unique2;
+
+                                                                QUERY PLAN
+    ----------------------------------------------------------------------------------------------------------------------------------
+     Nested Loop  (cost=2.37..553.11 rows=106 width=488) (actual time=1.392..12.700 rows=100 loops=1)
+       -&gt;  Bitmap Heap Scan on tenk1 t1  (cost=2.37..232.35 rows=106 width=244) (actual time=0.878..2.367 rows=100 loops=1)
+             Recheck Cond: (unique1 &lt; 100)
+             -&gt;  Bitmap Index Scan on tenk1_unique1  (cost=0.00..2.37 rows=106 width=0) (actual time=0.546..0.546 rows=100 loops=1)
+                   Index Cond: (unique1 &lt; 100)
+       -&gt;  Index Scan using tenk2_unique2 on tenk2 t2  (cost=0.00..3.01 rows=1 width=244) (actual time=0.067..0.078 rows=1 loops=100)
+             Index Cond: (unique2 = t1.unique2)
+     Total runtime: 14.452 ms
+
+---
+
+### Accessing Data from Node.js
+
+**Node-Postgres And Prepared Statements**
+
+-   &lt;span id=&quot;56a1&quot;&gt;The **node-postgres** library is the library used for node apps to connect to postgres applications.&lt;/span&gt;
+
+**Connecting**
+
+-   &lt;span id=&quot;2f98&quot;&gt;Use a POOL of client objects to connect to the database.&lt;/span&gt;
+
+&lt;figure&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/0*CVhxtep5CrAqP_rN.png&quot; class=&quot;graf-image&quot; /&gt;&lt;/figure&gt;const { Pool } = require(&quot;pg&quot;);
+
+    const pool = new Pool({
+      user: &quot;application_user&quot;,
+      password: &quot;iy7qTEcZ&quot;,
+    });
+
+    const results = await pool.query(`
+      SELECT id, name, age_yrs
+      FROM puppies;
+    `);
+
+    console.log(results);
+
+**Prepared Statement**
+
+-   &lt;span id=&quot;37b9&quot;&gt;Prepared Statements are SQL statements that parameters in them that you can substitute values.&lt;/span&gt;
+
+&lt;!-- --&gt;
+
+    in inside an array.
+
+    await pool.query(`
+      INSERT INTO puppies (name, age_yrs, breed, weight_lbs, microchipped)
+      VALUES ($1, $2, $3, $4, $5);
+    `, [name, age, breedName, weight, isMicrochipped]);
+
+    const { Pool } = require(&quot;pg&quot;);
+
+    const allPuppiesSql = `
+      SELECT id, name, age_yrs, breed, weight_lbs, microchipped
+      FROM puppies;
+    `;
+
+    const pool = new Pool({
+      database: &quot;«database name»&quot;,
+    });
+
+    async function selectAllPuppies() {
+      const results = await pool.query(allPuppiesSql);
+      console.log(results.rows);
+      pool.end();
+    }
+
+    const id = Number.parseInt(process.argv[2]);
+    selectOnePuppy(id);
+
+By &lt;a href=&quot;https://medium.com/@bryanguner&quot; class=&quot;p-author h-card&quot;&gt;Bryan Guner&lt;/a&gt; on [August 6, 2021](https://medium.com/p/f34676f3802b).
+
+&lt;a href=&quot;https://medium.com/@bryanguner/mini-review-of-sql-for-postgresql-w-node-express-f34676f3802b&quot; class=&quot;p-canonical&quot;&gt;Canonical link&lt;/a&gt;
+
+ August 31, 2021.</code></pre>
+</body>
+</html>

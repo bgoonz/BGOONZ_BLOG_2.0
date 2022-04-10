@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>keyfor</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="symbol.keyfor">Symbol.keyFor()</h1>
+<p>The <code>Symbol.keyFor(sym)</code> method retrieves a shared symbol key from the global symbol registry for the given symbol.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>Symbol.keyFor(sym);</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>sym</code><br />
+Symbol, required. The symbol to find a key for.</p>
+<h3 id="return-value">Return value</h3>
+<p>A string representing the key for the given symbol if one is found on the global registry; otherwise, <a href="../undefined"><code>undefined</code></a>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-keyfor">Using keyFor()</h3>
+<pre><code>var globalSym = Symbol.for(&#39;foo&#39;); // create a new global symbol
+Symbol.keyFor(globalSym); // &quot;foo&quot;
+
+var localSym = Symbol();
+Symbol.keyFor(localSym); // undefined
+
+// well-known symbols are not symbols registered
+// in the global symbol registry
+Symbol.keyFor(Symbol.iterator) // undefined</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-symbol.keyfor">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-symbol.keyfor</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>keyFor</code></p>
+<p>40</p>
+<p>12</p>
+<p>36</p>
+<p>No</p>
+<p>27</p>
+<p>9</p>
+<p>40</p>
+<p>40</p>
+<p>36</p>
+<p>27</p>
+<p>9</p>
+<p>4.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="for"><code>Symbol.for()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/keyFor" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/keyFor</a></p>
+</body>
+</html>

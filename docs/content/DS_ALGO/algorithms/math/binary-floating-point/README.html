@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="binary-representation-of-floating-point-numbers">Binary representation of floating-point numbers</h1>
+<p>Have you ever wondered how computers store the floating-point numbers like <code>3.1416</code> (𝝿) or <code>9.109 × 10⁻³¹</code> (the mass of the electron in kg) in the memory which is limited by a finite number of ones and zeroes (aka bits)?</p>
+<p>It seems pretty straightforward for integers (i.e. <code>17</code>). Let’s say we have 16 bits (2 bytes) to store the number. In 16 bits we may store the integers in a range of <code>[0, 65535]</code>:</p>
+<pre class="text"><code>(0000000000000000)₂ = (0)₁₀
+
+(0000000000010001)₂ =
+    (1 × 2⁴) +
+    (0 × 2³) +
+    (0 × 2²) +
+    (0 × 2¹) +
+    (1 × 2⁰) = (17)₁₀
+
+(1111111111111111)₂ =
+    (1 × 2¹⁵) +
+    (1 × 2¹⁴) +
+    (1 × 2¹³) +
+    (1 × 2¹²) +
+    (1 × 2¹¹) +
+    (1 × 2¹⁰) +
+    (1 × 2⁹) +
+    (1 × 2⁸) +
+    (1 × 2⁷) +
+    (1 × 2⁶) +
+    (1 × 2⁵) +
+    (1 × 2⁴) +
+    (1 × 2³) +
+    (1 × 2²) +
+    (1 × 2¹) +
+    (1 × 2⁰) = (65535)₁₀</code></pre>
+<p>If we need a signed integer we may use <a href="https://en.wikipedia.org/wiki/Two%27s_complement">two’s complement</a> and shift the range of <code>[0, 65535]</code> towards the negative numbers. In this case, our 16 bits would represent the numbers in a range of <code>[-32768, +32767]</code>.</p>
+<p>As you might have noticed, this approach won’t allow you to represent the numbers like <code>-27.15625</code> (numbers after the decimal point are just being ignored).</p>
+<p>We’re not the first ones who have noticed this issue though. Around ≈36 years ago some smart folks overcame this limitation by introducing the <a href="https://en.wikipedia.org/wiki/IEEE_754">IEEE 754</a> standard for floating-point arithmetic.</p>
+<p>The IEEE 754 standard describes the way (the framework) of using those 16 bits (or 32, or 64 bits) to store the numbers of wider range, including the small floating numbers (smaller than 1 and closer to 0).</p>
+<p>To get the idea behind the standard we might recall the <a href="https://en.wikipedia.org/wiki/Scientific_notation">scientific notation</a> - a way of expressing numbers that are too large or too small (usually would result in a long string of digits) to be conveniently written in decimal form.</p>
+<figure>
+<img src="images/03-scientific-notation.png" alt="Scientific number notation" /><figcaption>Scientific number notation</figcaption>
+</figure>
+<p>As you may see from the image, the number representation might be split into three parts:</p>
+<ul>
+<li><strong>sign</strong></li>
+<li><strong>fraction (aka significand)</strong> - the valuable digits (the meaning, the payload) of the number</li>
+<li><strong>exponent</strong> - controls how far and in which direction to move the decimal point in the fraction</li>
+</ul>
+<p>The <strong>base</strong> part we may omit by just agreeing on what it will be equal to. In our case, we’ll be using <code>2</code> as a base.</p>
+<p>Instead of using all 16 bits (or 32 bits, or 64 bits) to store the fraction of the number, we may share the bits and store a sign, exponent, and fraction at the same time. Depending on the number of bits that we’re going to use to store the number we end up with the following splits:</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Floating-point format</th>
+<th style="text-align: center;">Total bits</th>
+<th style="text-align: center;">Sign bits</th>
+<th style="text-align: center;">Exponent bits</th>
+<th style="text-align: center;">Fraction bits</th>
+<th style="text-align: center;">Base</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://en.wikipedia.org/wiki/Half-precision_floating-point_format">Half-precision</a></td>
+<td style="text-align: center;">16</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://en.wikipedia.org/wiki/Single-precision_floating-point_format">Single-precision</a></td>
+<td style="text-align: center;">32</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">23</td>
+<td style="text-align: center;">2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://en.wikipedia.org/wiki/Double-precision_floating-point_format">Double-precision</a></td>
+<td style="text-align: center;">64</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">11</td>
+<td style="text-align: center;">52</td>
+<td style="text-align: center;">2</td>
+</tr>
+</tbody>
+</table>
+<p>With this approach, the number of bits for the fraction has been reduced (i.e. for the 16-bits number it was reduced from 16 bits to 10 bits). It means that the fraction might take a narrower range of values now (losing some precision). However, since we also have an exponent part, it will actually increase the ultimate number range and also allow us to describe the numbers between 0 and 1 (if the exponent is negative).</p>
+<blockquote>
+<p>For example, a signed 32-bit integer variable has a maximum value of 2³¹ − 1 = 2,147,483,647, whereas an IEEE 754 32-bit base-2 floating-point variable has a maximum value of ≈ 3.4028235 × 10³⁸.</p>
+</blockquote>
+<p>To make it possible to have a negative exponent, the IEEE 754 standard uses the <a href="https://en.wikipedia.org/wiki/Exponent_bias">biased exponent</a>. The idea is simple - subtract the bias from the exponent value to make it negative. For example, if the exponent has 5 bits, it might take the values from the range of <code>[0, 31]</code> (all values are positive here). But if we subtract the value of <code>15</code> from it, the range will be <code>[-15, 16]</code>. The number <code>15</code> is called bias, and it is being calculated by the following formula:</p>
+<pre><code>exponent_bias = 2 ^ (k−1) − 1
+
+k - number of exponent bits</code></pre>
+<p>I’ve tried to describe the logic behind the converting of floating-point numbers from a binary format back to the decimal format on the image below. Hopefully, it will give you a better understanding of how the IEEE 754 standard works. The 16-bits number is being used here for simplicity, but the same approach works for 32-bits and 64-bits numbers as well.</p>
+<figure>
+<img src="images/02-half-precision-floating-point-number-explained.png" alt="Half-precision floating point number format explained in one picture" /><figcaption>Half-precision floating point number format explained in one picture</figcaption>
+</figure>
+<blockquote>
+<p>Checkout the <a href="https://trekhleb.dev/blog/2021/binary-floating-point/">interactive version of this diagram</a> to play around with setting bits on and off, and seeing how it would influence the final result</p>
+</blockquote>
+<p>Here is the number ranges that different floating-point formats support:</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Floating-point format</th>
+<th style="text-align: left;">Exp min</th>
+<th style="text-align: left;">Exp max</th>
+<th style="text-align: left;">Range</th>
+<th style="text-align: left;">Min positive</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Half-precision</td>
+<td style="text-align: left;">−14</td>
+<td style="text-align: left;">+15</td>
+<td style="text-align: left;">±65,504</td>
+<td style="text-align: left;">6.10 × 10⁻⁵</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Single-precision</td>
+<td style="text-align: left;">−126</td>
+<td style="text-align: left;">+127</td>
+<td style="text-align: left;">±3.4028235 × 10³⁸</td>
+<td style="text-align: left;">1.18 × 10⁻³⁸</td>
+</tr>
+</tbody>
+</table>
+<p>Be aware that this is by no means a complete and sufficient overview of the IEEE 754 standard. It is rather a simplified and basic overview. Several corner cases were omitted in the examples above for simplicity of presentation (i.e. <code>-0</code>, <code>-∞</code>, <code>+∞</code> and <code>NaN</code> (not a number) values)</p>
+<h2 id="code-examples">Code examples</h2>
+<ul>
+<li>See the <a href="bitsToFloat.js">bitsToFloat.js</a> for the example of how to convert array of bits to the floating point number (the example is a bit artificial but still it gives the overview of how the conversion is going on)</li>
+<li>See the <a href="floatAsBinaryString.js">floatAsBinaryString.js</a> for the example of how to see the actual binary representation of the floating-point number in JavaScript</li>
+</ul>
+<h2 id="references">References</h2>
+<p>You might also want to check out the following resources to get a deeper understanding of the binary representation of floating-point numbers:</p>
+<ul>
+<li><a href="https://trekhleb.dev/blog/2021/binary-floating-point/">Interactive version of this article</a> (allows setting the bits manually and seeing the resulting floating number)</li>
+<li><a href="https://indepth.dev/posts/1139/here-is-what-you-need-to-know-about-javascripts-number-type">Here is what you need to know about JavaScript’s Number type</a></li>
+<li><a href="https://float.exposed/">Float Exposed</a></li>
+<li><a href="https://bartaz.github.io/ieee754-visualization/">IEEE754 Visualization</a></li>
+</ul>
+</body>
+</html>

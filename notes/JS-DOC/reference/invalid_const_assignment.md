@@ -1,23 +1,28 @@
-# TypeError: invalid assignment to const "x"
+TypeError: invalid assignment to const “x”
+==========================================
 
-The JavaScript exception "invalid assignment to const" occurs when it was attempted to alter a constant value. JavaScript `const` declarations can't be re-assigned or redeclared.
+The JavaScript exception “invalid assignment to const” occurs when it was attempted to alter a constant value. JavaScript `const` declarations can’t be re-assigned or redeclared.
 
-## Message
+Message
+-------
 
     TypeError: invalid assignment to const "x" (Firefox)
     TypeError: Assignment to constant variable. (Chrome)
     TypeError: Assignment to const (Edge)
     TypeError: Redeclaration of const 'x' (IE)
 
-## Error type
+Error type
+----------
 
 [`TypeError`](../global_objects/typeerror)
 
-## What went wrong?
+What went wrong?
+----------------
 
-A constant is a value that cannot be altered by the program during normal execution. It cannot change through re-assignment, and it can't be redeclared. In JavaScript, constants are declared using the `const` keyword.
+A constant is a value that cannot be altered by the program during normal execution. It cannot change through re-assignment, and it can’t be redeclared. In JavaScript, constants are declared using the `const` keyword.
 
-## Examples
+Examples
+--------
 
 ### Invalid redeclaration
 
@@ -42,7 +47,7 @@ If you meant to declare another constant, pick another name and re-name. This co
 
 #### `const`, `let` or `var`?
 
-Do not use const if you weren't meaning to declare a constant. Maybe you meant to declare a block-scoped variable with `let` or global variable with `var`.
+Do not use const if you weren’t meaning to declare a constant. Maybe you meant to declare a block-scoped variable with `let` or global variable with `var`.
 
     let columns = 80;
 
@@ -62,7 +67,7 @@ Check if you are in the correct scope. Should this constant appear in this scope
 
 ### `const` and immutability
 
-The `const` declaration creates a read-only reference to a value. It does **not** mean the value it holds is immutable, just that the variable identifier cannot be reassigned. For instance, in case the content is an object, this means the object itself can still be altered. This means that you can't mutate the value stored in a variable:
+The `const` declaration creates a read-only reference to a value. It does **not** mean the value it holds is immutable, just that the variable identifier cannot be reassigned. For instance, in case the content is an object, this means the object itself can still be altered. This means that you can’t mutate the value stored in a variable:
 
     const obj = {foo: 'bar'};
     obj = {foo: 'baz'}; // TypeError: invalid assignment to const `obj'
@@ -72,7 +77,8 @@ But you can mutate the properties in a variable:
     obj.foo = 'baz';
     obj; // Object { foo: "baz" }
 
-## See also
+See also
+--------
 
 -   `const`
 -   `let`

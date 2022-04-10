@@ -4,48 +4,43 @@
 
 Currying takes a function
 
-f: X \* Y -> R
+f: X \* Y -&gt; R
 
 and turns it into a function
 
-f': X -> (Y -> R)
+f’: X -&gt; (Y -&gt; R)
 
-Instead of calling f with two arguments, we invoke f' with the first argument. The result is a function that we then call with the second argument to produce the result.
+Instead of calling f with two arguments, we invoke f’ with the first argument. The result is a function that we then call with the second argument to produce the result.
 
 Thus, if the uncurried f is invoked as
 
 f(3,5)
 
-then the curried f' is invoked as
+then the curried f’ is invoked as
 
 f(3)(5)
 
-For example:
-Uncurried add()
+For example: Uncurried add()
 
----
+------------------------------------------------------------------------
 
-```js
-function add(x, y) {
-    return x + y;
-}
+    function add(x, y) {
+        return x + y;
+    }
 
-add(3, 5); // returns 8
-```
+    add(3, 5); // returns 8
 
 Curried add()
 
----
+------------------------------------------------------------------------
 
-```js
-function addC(x) {
-    return function (y) {
-        return x + y;
-    };
-}
+    function addC(x) {
+        return function (y) {
+            return x + y;
+        };
+    }
 
-addC(3)(5); // returns 8
-```
+    addC(3)(5); // returns 8
 
 **The algorithm for currying.**
 
@@ -55,41 +50,37 @@ curry: (X × Y → R) → (X → (Y → R))
 
 Javascript Code:
 
----
+------------------------------------------------------------------------
 
-```js
-function curry(f) {
-    return function (x) {
-        return function (y) {
-            return f(x, y);
+    function curry(f) {
+        return function (x) {
+            return function (y) {
+                return f(x, y);
+            };
         };
-    };
-}
-```
+    }
 
 **Partial application**
 
 Partial application takes a function
 
-f: X \* Y -> R
+f: X \* Y -&gt; R
 
 and a fixed value for the first argument to produce a new function
 
-f`: Y -> R
+f\`: Y -&gt; R
 
-f' does the same as f, but only has to fill in the second parameter which is why its arity is one less than the arity of f.
+f’ does the same as f, but only has to fill in the second parameter which is why its arity is one less than the arity of f.
 
 For example: Binding the first argument of function add to 5 produces the function plus5.
 
----
+------------------------------------------------------------------------
 
-```js
-function plus5(y) {
-    return 5 + y;
-}
+    function plus5(y) {
+        return 5 + y;
+    }
 
-plus5(3); // returns 8
-```
+    plus5(3); // returns 8
 
 **The algorithm of partial application.\***
 
@@ -99,12 +90,10 @@ partApply : ((X × Y → R) × X) → (Y → R)
 
 Javascript Code:
 
----
+------------------------------------------------------------------------
 
-```js
-function partApply(f, x) {
-    return function (y) {
-        return f(x, y);
-    };
-}
-```
+    function partApply(f, x) {
+        return function (y) {
+            return f(x, y);
+        };
+    }

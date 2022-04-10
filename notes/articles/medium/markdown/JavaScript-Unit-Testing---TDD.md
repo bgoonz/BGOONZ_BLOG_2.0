@@ -1,14 +1,15 @@
-# JavaScript Unit Testing & TDD
+JavaScript Unit Testing & TDD
+=============================
 
 All about Testing
 
----
+------------------------------------------------------------------------
 
 ### JavaScript Unit Testing & TDD
 
 ### All about Testing
 
--   <span id="640f">_The general idea across all testing frameworks is to allow developers to write code that would specify the behavior of a function or module or class._</span>
+-   <span id="640f">*The general idea across all testing frameworks is to allow developers to write code that would specify the behavior of a function or module or class.*</span>
 -   <span id="11e6">Testing one function at a time is vulnerable to false negatives and false positives.</span>
 
 ### Why do we test?
@@ -31,7 +32,7 @@ A**utomated Tests** are known as **Specs**, they:
 ### What do we Test?
 
 -   <span id="d93c">The public interface:</span>
--   <span id="9d42">Ask yourself, "What is the public interface of the module or class I'm writing?"</span>
+-   <span id="9d42">Ask yourself, “What is the public interface of the module or class I’m writing?”</span>
 -   <span id="bddd">When in doubt, make sure that you at least have the most important and/or complex parts of that interface working as intended.</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*-u18Iz0pA_e0pX2p" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*Moc1ywM-IYBKtL1l.png" class="graf-image" /></figure>*The Testing Pyramid*
@@ -58,11 +59,11 @@ A**utomated Tests** are known as **Specs**, they:
     });
 
 -   <span id="70aa">avgValue() =&gt; The function we will be testing.</span>
--   <span id="95ad">it("string") =&gt; describes the desired output.</span>
+-   <span id="95ad">it(“string”) =&gt; describes the desired output.</span>
 
 ### Test-Driven Development
 
--   <span id="abf2">TDD is a quick repetitive cycle that revolves around first determining what a piece of code should do and writing tests for that behavior _before actually writing any code_.</span>
+-   <span id="abf2">TDD is a quick repetitive cycle that revolves around first determining what a piece of code should do and writing tests for that behavior *before actually writing any code*.</span>
 
 ### A simple example just to give an idea of what test code looks like… note that it reads more like spoken english than normal code…
 

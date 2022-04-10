@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>invalid_const_assignment</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="typeerror-invalid-assignment-to-const-x">TypeError: invalid assignment to const “x”</h1>
+<p>The JavaScript exception “invalid assignment to const” occurs when it was attempted to alter a constant value. JavaScript <code>const</code> declarations can’t be re-assigned or redeclared.</p>
+<h2 id="message">Message</h2>
+<pre><code>TypeError: invalid assignment to const &quot;x&quot; (Firefox)
+TypeError: Assignment to constant variable. (Chrome)
+TypeError: Assignment to const (Edge)
+TypeError: Redeclaration of const &#39;x&#39; (IE)</code></pre>
+<h2 id="error-type">Error type</h2>
+<p><a href="../global_objects/typeerror"><code>TypeError</code></a></p>
+<h2 id="what-went-wrong">What went wrong?</h2>
+<p>A constant is a value that cannot be altered by the program during normal execution. It cannot change through re-assignment, and it can’t be redeclared. In JavaScript, constants are declared using the <code>const</code> keyword.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="invalid-redeclaration">Invalid redeclaration</h3>
+<p>Assigning a value to the same constant name in the same block-scope will throw.</p>
+<pre><code>const COLUMNS = 80;
+
+// ...
+
+COLUMNS = 120; // TypeError: invalid assignment to const `COLUMNS&#39;</code></pre>
+<h3 id="fixing-the-error">Fixing the error</h3>
+<p>There are multiple options to fix this error. Check what was intended to be achieved with the constant in question.</p>
+<h4 id="rename">Rename</h4>
+<p>If you meant to declare another constant, pick another name and re-name. This constant name is already taken in this scope.</p>
+<pre><code>const COLUMNS = 80;
+const WIDE_COLUMNS = 120;</code></pre>
+<h4 id="const-let-or-var"><code>const</code>, <code>let</code> or <code>var</code>?</h4>
+<p>Do not use const if you weren’t meaning to declare a constant. Maybe you meant to declare a block-scoped variable with <code>let</code> or global variable with <code>var</code>.</p>
+<pre><code>let columns = 80;
+
+// ...
+
+let columns = 120;</code></pre>
+<h4 id="scoping">Scoping</h4>
+<p>Check if you are in the correct scope. Should this constant appear in this scope or was it meant to appear in a function, for example?</p>
+<pre><code>const COLUMNS = 80;
+
+function setupBigScreenEnvironment() {
+  const COLUMNS = 120;
+}</code></pre>
+<h3 id="const-and-immutability"><code>const</code> and immutability</h3>
+<p>The <code>const</code> declaration creates a read-only reference to a value. It does <strong>not</strong> mean the value it holds is immutable, just that the variable identifier cannot be reassigned. For instance, in case the content is an object, this means the object itself can still be altered. This means that you can’t mutate the value stored in a variable:</p>
+<pre><code>const obj = {foo: &#39;bar&#39;};
+obj = {foo: &#39;baz&#39;}; // TypeError: invalid assignment to const `obj&#39;</code></pre>
+<p>But you can mutate the properties in a variable:</p>
+<pre><code>obj.foo = &#39;baz&#39;;
+obj; // Object { foo: &quot;baz&quot; }</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><code>const</code></li>
+<li><code>let</code></li>
+<li><code>var</code></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Invalid_const_assignment" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Invalid_const_assignment</a></p>
+</body>
+</html>

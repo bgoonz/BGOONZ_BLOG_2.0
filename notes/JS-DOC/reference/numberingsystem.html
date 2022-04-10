@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>numberingsystem</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="intl.locale.prototype.numberingsystem">Intl.Locale.prototype.numberingSystem</h1>
+<p>The <code>Intl.Locale.prototype.numberingSystem</code> property is an accessor property that returns the <a href="https://en.wikipedia.org/wiki/Numeral_system">numeral system</a> used by the locale.</p>
+<h2 id="description">Description</h2>
+<p>A numeral system is a system for expressing numbers. The <code>numberingSystem</code> property helps to represent the different numeral systems used by various countries, regions, and cultures around the world. As with most internationalization schemas, the numeral systems that can be represented in a <code>Locale</code> object by <code>numberingSystem</code> are standardized by Unicode. A table of the standard Unicode numeral systems can be seen below.</p>
+<table>
+<thead>
+<tr class="header">
+<th>
+Value
+</th>
+<th>
+Description
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+adlm
+</td>
+<td>
+Adlam digits
+</td>
+</tr>
+<tr class="even">
+<td>
+ahom
+</td>
+<td>
+Ahom digits
+</td>
+</tr>
+<tr class="odd">
+<td>
+arab
+</td>
+<td>
+Arabic-Indic digits
+</td>
+</tr>
+<tr class="even">
+<td>
+arabext
+</td>
+<td>
+Extended Arabic-Indic digits
+</td>
+</tr>
+<tr class="odd">
+<td>
+armn
+</td>
+<td>
+Armenian upper case numerals — algorithmic
+</td>
+</tr>
+<tr class="even">
+<td>
+armnlow
+</td>
+<td>
+Armenian lower case numerals — algorithmic
+</td>
+</tr>
+<tr class="odd">
+<td>
+bali
+</td>
+<td>
+Balinese digits
+</td>
+</tr>
+<tr class="even">
+<td>
+beng
+</td>
+<td>
+Bengali digits
+</td>
+</tr>
+<tr class="odd">
+<td>
+bhks
+</td>
+<td>
+Bhaiksuki digits
+</td>
+</tr>
+<tr class="even">
+<td>
+brah
+</td>
+<td>
+Brahmi digits
+</td>
+</tr>
+<tr class="odd">
+<td>
+cakm
+</td>
+<td>
+Chakma digits
+</td>
+</tr>
+<tr class="even">
+<td>
+cham
+</td>
+<td>
+Cham digits
+</td>
+</tr>
+<tr class="odd">
+<td>
+cyrl
+</td>
+<td>
+Cyrillic numerals — algorithmic
+</td>
+</tr>
+<tr class="even">
+<td>
+deva
+</td>
+<td>
+Devanagari digits
+</td>
+</tr>
+<tr class="odd">
+<td>
+ethi
+</td>
+<td>
+Ethiopic numerals — algorithmic
+</td>
+</tr>
+<tr class="even">
+<td>
+finance
+</td>
+<td>
+Financial numerals — may be algorithmic
+</td>
+</tr>
+<tr class="odd">
+<td>
+fullwide
+</td>
+<td>
+Full width digits
+</td>
+</tr>
+<tr class="even">
+<td>
+geor
+</td>
+<td>
+Georgian numerals — algorithmic
+</td>
+</tr>
+<tr class="odd">
+<td>
+gong
+</td>
+<td>
+Gunjala Gondi digits
+</td>
+</tr>
+<tr class="even">
+<td>
+gonm
+</td>
+<td>
+Masaram Gondi digits
+</td>
+</tr>
+<tr class="odd">
+<td>
+grek
+</td>
+<td>
+Greek upper case numerals — algorithmic
+</td>
+</tr>
+<tr class="even">
+<td>
+greklow
+</td>
+<td>
+Greek lower case numerals — algorithmic
+</td>
+</tr>
+<tr class="odd">
+<td>
+gujr
+</td>
+<td>
+Gujarati digits
+</td>
+</tr>
+<tr class="even">
+<td>
+guru
+</td>
+<td>
+Gurmukhi digits
+</td>
+</tr>
+<tr class="odd">
+<td>
+hanidays
+</td>
+<td>
+Han-character day-of-month numbering for lunar/other traditional calendars
+</td>
+</tr>
+<tr class="even">
+<td>
+hanidec
+</td>
+<td>
+Positional decimal system using Chinese number ideographs as digits
+</td>
+</tr>
+<tr class="odd">
+<td>
+hans
+</td>
+<td>
+Simplified Chinese numerals — algorithmic
+</td>
+</tr>
+<tr class="even">
+<td>
+hansfin
+</td>
+<td>
+Simplified Chinese financial numerals — algorithmic
+</td>
+</tr>
+<tr class="odd">
+<td>
+hant
+</td>
+<td>
+Traditional Chinese numerals — algorithmic
+</td>
+</tr>
+<tr class="even">
+<td>
+hantfin
+</td>
+<td>
+Traditional Chinese financial numerals — algorithmic
+</td>
+</tr>
+<tr class="odd">
+<td>
+hebr
+</td>
+<td>
+Hebrew numerals — algorithmic
+</td>
+</tr>
+<tr class="even">
+<td>
+hmng
+</td>
+<td>
+Pahawh Hmong digits
+</td>
+</tr>
+<tr class="odd">
+<td>
+hmnp
+</td>
+<td>
+Nyiakeng Puachue Hmong digits
+</td>
+</tr>
+<tr class="even">
+<td>
+java
+</td>
+<td>
+Javanese digits
+</td>
+</tr>
+<tr class="odd">
+<td>
+jpan
+</td>
+<td>
+Japanese numerals — algorithmic
+</td>
+</tr>
+<tr class="even">
+<td>
+jpanfin
+</td>
+<td>
+Japanese financial numerals — algorithmic
+</td>
+</tr>
+<tr class="odd">
+<td>
+jpanyear
+</td>
+<td>
+Japanese first-year Gannen numbering for Japanese calendar
+</td>
+</tr>
+<tr class="even">
+<td>
+kali
+</td>
+<td>
+Kayah Li digits
+</td>
+</tr>
+<tr class="odd">
+<td>
+khmr
+</td>
+<td>
+Khmer digits
+</td>
+</tr>
+<tr class="even">
+<td>
+knda
+</td>
+<td>
+Kannada digits
+</td>
+</tr>
+<tr class="odd">
+<td>
+lana
+</td>
+<td>
+Tai Tham Hora (secular) digits
+</td>
+</tr>
+<tr class="even">
+<td>
+lanatham
+</td>
+<td>
+Tai Tham (ecclesiastical) digits
+</td>
+</tr>
+<tr class="odd">
+<td>
+laoo
+</td>
+<td>
+Lao digits
+</td>
+</tr>
+<tr class="even">
+<td>
+latn
+</td>
+<td>
+Latin digits
+</td>
+</tr>
+<tr class="odd">
+<td>
+lepc
+</td>
+<td>
+Lepcha digits
+</td>
+</tr>
+<tr class="even">
+<td>
+limb
+</td>
+<td>
+Limbu digits
+</td>
+</tr>
+<tr class="odd">
+<td>
+mathbold
+</td>
+<td>
+Mathematical bold digits
+</td>
+</tr>
+<tr class="even">
+<td>
+mathdbl
+</td>
+<td>
+Mathematical double-struck digits
+</td>
+</tr>
+<tr class="odd">
+<td>
+mathmono
+</td>
+<td>
+Mathematical monospace digits
+</td>
+</tr>
+<tr class="even">
+<td>
+mathsanb
+</td>
+<td>
+Mathematical sans-serif bold digits
+</td>
+</tr>
+<tr class="odd">
+<td>
+mathsans
+</td>
+<td>
+Mathematical sans-serif digits
+</td>
+</tr>
+<tr class="even">
+<td>
+mlym
+</td>
+<td>
+Malayalam digits
+</td>
+</tr>
+<tr class="odd">
+<td>
+modi
+</td>
+<td>
+Modi digits
+</td>
+</tr>
+<tr class="even">
+<td>
+mong
+</td>
+<td>
+Mongolian digits
+</td>
+</tr>
+<tr class="odd">
+<td>
+mroo
+</td>
+<td>
+Mro digits
+</td>
+</tr>
+<tr class="even">
+<td>
+mtei
+</td>
+<td>
+Meetei Mayek digits
+</td>
+</tr>
+<tr class="odd">
+<td>
+mymr
+</td>
+<td>
+Myanmar digits
+</td>
+</tr>
+<tr class="even">
+<td>
+mymrshan
+</td>
+<td>
+Myanmar Shan digits
+</td>
+</tr>
+<tr class="odd">
+<td>
+mymrtlng
+</td>
+<td>
+Myanmar Tai Laing digits
+</td>
+</tr>
+<tr class="even">
+<td>
+native
+</td>
+<td>
+Native digits
+</td>
+</tr>
+<tr class="odd">
+<td>
+newa
+</td>
+<td>
+Newa digits
+</td>
+</tr>
+<tr class="even">
+<td>
+nkoo
+</td>
+<td>
+N’Ko digits
+</td>
+</tr>
+<tr class="odd">
+<td>
+olck
+</td>
+<td>
+Ol Chiki digits
+</td>
+</tr>
+<tr class="even">
+<td>
+orya
+</td>
+<td>
+Oriya digits
+</td>
+</tr>
+<tr class="odd">
+<td>
+osma
+</td>
+<td>
+Osmanya digits
+</td>
+</tr>
+<tr class="even">
+<td>
+rohg
+</td>
+<td>
+Hanifi Rohingya digits
+</td>
+</tr>
+<tr class="odd">
+<td>
+roman
+</td>
+<td>
+Roman upper case numerals — algorithmic
+</td>
+</tr>
+<tr class="even">
+<td>
+romanlow
+</td>
+<td>
+Roman lowercase numerals — algorithmic
+</td>
+</tr>
+<tr class="odd">
+<td>
+saur
+</td>
+<td>
+Saurashtra digits
+</td>
+</tr>
+<tr class="even">
+<td>
+shrd
+</td>
+<td>
+Sharada digits
+</td>
+</tr>
+<tr class="odd">
+<td>
+sind
+</td>
+<td>
+Khudawadi digits
+</td>
+</tr>
+<tr class="even">
+<td>
+sinh
+</td>
+<td>
+Sinhala Lith digits
+</td>
+</tr>
+<tr class="odd">
+<td>
+sora
+</td>
+<td>
+Sora_Sompeng digits
+</td>
+</tr>
+<tr class="even">
+<td>
+sund
+</td>
+<td>
+Sundanese digits
+</td>
+</tr>
+<tr class="odd">
+<td>
+takr
+</td>
+<td>
+Takri digits
+</td>
+</tr>
+<tr class="even">
+<td>
+talu
+</td>
+<td>
+New Tai Lue digits
+</td>
+</tr>
+<tr class="odd">
+<td>
+taml
+</td>
+<td>
+Tamil numerals — algorithmic
+</td>
+</tr>
+<tr class="even">
+<td>
+tamldec
+</td>
+<td>
+Modern Tamil decimal digits
+</td>
+</tr>
+<tr class="odd">
+<td>
+telu
+</td>
+<td>
+Telugu digits
+</td>
+</tr>
+<tr class="even">
+<td>
+thai
+</td>
+<td>
+Thai digits
+</td>
+</tr>
+<tr class="odd">
+<td>
+tirh
+</td>
+<td>
+Tirhuta digits
+</td>
+</tr>
+<tr class="even">
+<td>
+tibt
+</td>
+<td>
+Tibetan digits
+</td>
+</tr>
+<tr class="odd">
+<td>
+traditio
+</td>
+<td>
+Traditional numerals — may be algorithmic
+</td>
+</tr>
+<tr class="even">
+<td>
+vaii
+</td>
+<td>
+Vai digits
+</td>
+</tr>
+<tr class="odd">
+<td>
+wara
+</td>
+<td>
+Warang Citi digits
+</td>
+</tr>
+<tr class="even">
+<td>
+wcho
+</td>
+<td>
+Wancho digits
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="examples">Examples</h2>
+<h3 id="setting-the-numberingsystem-value-via-the-locale-string">Setting the <code>numberingSystem</code> value via the locale string</h3>
+<p>In the <a href="https://www.unicode.org/reports/tr35/">Unicode locale string spec</a>, the values that <code>numberingSystem</code> represents correspond to the key <code>nu</code>. <code>nu</code> is considered a locale string “extension subtag”. These subtags add additional data about the locale, and are added to locale identifiers by first adding the <code>-u</code> key. To set the <code>numberingSystem</code> value via the string argument to the <a href="locale"><code>Locale</code></a> constructor, first add the <code>-u</code> extension key. Next, add the <code>-nu</code> extension key to indicate that you are adding a value for <code>numberingSystem</code>. Finally, add the <code>numberingSystem</code> value to the string.</p>
+<pre><code>let numberingSystemViaStr = new Intl.Locale(&quot;fr-Latn-FR-u-nu-mong&quot;);
+console.log(numberingSystemStr.numberingSystem); // Prints &quot;mong&quot;</code></pre>
+<h3 id="setting-the-numberingsystem-value-via-the-configuration-object-argument">Setting the <code>numberingSystem</code> value via the configuration object argument</h3>
+<p>The <a href="locale"><code>Intl.Locale</code></a> constructor has an optional configuration object argument, which can be used to pass extension types. Set the <code>numberingSystem</code> property of the configuration object to your desired <code>numberingSystem</code> value and pass it into the constructor.</p>
+<pre><code>let numberingSystemViaObj= new Intl.Locale(&quot;en-Latn-US&quot;, {numberingSystem: &quot;latn&quot;});
+console.log(us12hour.numberingSystem); // Prints &quot;latn&quot;</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.numberingSystem">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) <br/></p>
+<span class="small">#sec-Intl.Locale.prototype.numberingSystem</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>numberingSystem</code></p>
+<p>74</p>
+<p>79</p>
+<p>75</p>
+<p>No</p>
+<p>62</p>
+<p>14</p>
+<p>74</p>
+<p>74</p>
+<p>79</p>
+<p>53</p>
+<p>14</p>
+<p>11.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../locale"><code>Intl.Locale</code></a></li>
+<li><a href="https://github.com/unicode-org/cldr/blob/master/common/supplemental/numberingSystems.xml">Details on the standard Unicode numeral systems</a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/numberingSystem" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/numberingSystem</a></p>
+</body>
+</html>

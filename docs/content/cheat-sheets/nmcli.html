@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>nmcli</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="connect-to-a-wireless-access-point---parameters">Connect to a wireless access point - Parameters:</h1>
+<h1 id="the-name-of-your-wireless-interface"><wiface> – the name of your wireless interface</h1>
+<h1 id="the-ssid-of-the-access-point"><ssid> – the SSID of the access point</h1>
+<h1 id="the-wifi-password"><pass> – the WiFi password</h1>
+<p>nmcli d wifi connect <ssid> password <pass> iface <wiface></p>
+<h1 id="disconnect-from-wifi---parameters">Disconnect from WiFi - Parameters:</h1>
+<h1 id="the-name-of-your-wireless-interface-1"><wiface> – the name of your wireless interface</h1>
+<p>nmcli d wifi disconnect iface <wiface></p>
+<h1 id="get-wifi-status-enabled-disabled">Get WiFi status (enabled / disabled)</h1>
+<p>nmcli radio wifi</p>
+<h1 id="enable-disable-wifi">Enable / Disable WiFi</h1>
+<p>nmcli radio wifi &lt;on|off&gt;</p>
+<h1 id="show-all-available-wifi-access-points">Show all available WiFi access points</h1>
+<p>nmcli dev wifi list</p>
+<h1 id="refresh-the-available-wifi-connection-list">Refresh the available WiFi connection list</h1>
+<p>nmcli dev wifi rescan</p>
+<h1 id="show-all-available-connections">Show all available connections</h1>
+<p>nmcli con</p>
+<h1 id="show-only-active-connections">Show only active connections</h1>
+<p>nmcli con show –active</p>
+<h1 id="review-the-available-devices">Review the available devices</h1>
+<p>nmcli dev status</p>
+<h1 id="add-a-dynamic-ethernet-connection---parameters">Add a dynamic ethernet connection - parameters:</h1>
+<h1 id="the-name-of-the-connection"><name> – the name of the connection</h1>
+<h1 id="the-name-of-the-interface"><iface_name> – the name of the interface</h1>
+<p>nmcli con add type ethernet con-name <name> ifname <iface_name></p>
+<h1 id="import-openvpn-connection-settings-from-file">Import OpenVPN connection settings from file:</h1>
+<p>nmcli con import type openvpn file <path_to_ovpn_file></p>
+<h1 id="bring-up-the-ethernet-connection">Bring up the ethernet connection</h1>
+<p>nmcli con up <name></p>
+</body>
+</html>

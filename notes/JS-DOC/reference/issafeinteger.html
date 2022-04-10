@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>issafeinteger</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="number.issafeinteger">Number.isSafeInteger()</h1>
+<p>The <code>Number.isSafeInteger()</code> method determines whether the provided value is a number that is a safe integer.</p>
+<p>A safe integer is an integer that</p>
+<ul>
+<li>can be exactly represented as an IEEE-754 double precision number, and</li>
+<li>whose IEEE-754 representation cannot be the result of rounding any other integer to fit the IEEE-754 representation.</li>
+</ul>
+<p>For example, <code>253 - 1</code> is a safe integer: it can be exactly represented, and no other integer rounds to it under any IEEE-754 rounding mode. In contrast, <code>253</code> is <em>not</em> a safe integer: it can be exactly represented in IEEE-754, but the integer <code>253 + 1</code> can’t be directly represented in IEEE-754 but instead rounds to <code>253</code> under round-to-nearest and round-to-zero rounding. The safe integers consist of all integers from <code>-(253 - 1)</code> inclusive to <code>253 - 1</code> inclusive (± <code>9007199254740991</code> or ± 9,007,199,254,740,991).</p>
+<p>Handling values larger or smaller than ~9 quadrillion with full precision requires using an <a href="https://en.wikipedia.org/wiki/Arbitrary-precision_arithmetic">arbitrary precision arithmetic library</a>. See <a href="https://floating-point-gui.de/">What Every Programmer Needs to Know about Floating Point Arithmetic</a> for more information on floating point representations of numbers.</p>
+<p>For larger integers, consider using the <a href="../bigint"><code>BigInt</code></a> type.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>Number.isSafeInteger(testValue)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>testValue</code><br />
+The value to be tested for being a safe integer.</p>
+<h3 id="return-value">Return value</h3>
+<p>A <a href="../boolean"><code>Boolean</code></a> indicating whether or not the given value is a number that is a safe integer.</p>
+<h2 id="polyfill">Polyfill</h2>
+<pre><code>Number.isSafeInteger = Number.isSafeInteger || function (value) {
+   return Number.isInteger(value) &amp;&amp; Math.abs(value) &lt;= Number.MAX_SAFE_INTEGER;
+};</code></pre>
+<h2 id="examples">Examples</h2>
+<h3 id="using-issafeinteger">Using isSafeInteger</h3>
+<pre><code>Number.isSafeInteger(3);                    // true
+Number.isSafeInteger(Math.pow(2, 53));      // false
+Number.isSafeInteger(Math.pow(2, 53) - 1);  // true
+Number.isSafeInteger(NaN);                  // false
+Number.isSafeInteger(Infinity);             // false
+Number.isSafeInteger(&#39;3&#39;);                  // false
+Number.isSafeInteger(3.1);                  // false
+Number.isSafeInteger(3.0);                  // true</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-number.issafeinteger">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-number.issafeinteger</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>isSafeInteger</code></p>
+<p>34</p>
+<p>12</p>
+<p>32</p>
+<p>No</p>
+<p>21</p>
+<p>10</p>
+<p>≤37</p>
+<p>34</p>
+<p>32</p>
+<p>21</p>
+<p>10</p>
+<p>2.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li>The <a href="../number"><code>Number</code></a> object it belongs to.</li>
+<li><a href="min_safe_integer"><code>Number.MIN_SAFE_INTEGER</code></a></li>
+<li><a href="max_safe_integer"><code>Number.MAX_SAFE_INTEGER</code></a></li>
+<li><a href="../bigint"><code>BigInt</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isSafeInteger" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isSafeInteger</a></p>
+</body>
+</html>

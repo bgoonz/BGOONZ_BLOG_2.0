@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>reading-writeing-json-w-node</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="reading-and-writing-json-files-with-node.js">Reading and Writing JSON Files with Node.js</h1>
+<blockquote>
+<h2 id="excerpt">Excerpt</h2>
+<p>One of the best ways to exchange information between applications written in different languages is to use the JSON (JavaScript Object Notation) format. Thanks…</p>
+</blockquote>
+<hr />
+<p>One of the best ways to exchange information between applications written in different languages is to use the <a href="https://en.wikipedia.org/wiki/JSON">JSON</a> (JavaScript Object Notation) format. Thanks to its uniformity and simplicity, JSON has almost completely replaced XML as the standard data exchange format in software, particularly in web services.</p>
+<p>Given the extensive use of JSON in software applications, and especially JavaScript-based applications, it is important to know how to read and write JSON data to a file in Node.js. In this article we’ll explain how to perform these functions.</p>
+<h3 id="reading-a-json-file">Reading a JSON File</h3>
+<p>Let’s first see how we can <a href="https://stackabuse.com/read-files-with-node-js/">read a file</a> that has already been created. But before we do that we need to actually create the file. Open a new window in your favorite text editor and add the following text to it:</p>
+<pre><code>{
+    &quot;name&quot;: &quot;Sara&quot;,
+    &quot;age&quot;: 23,
+    &quot;gender&quot;: &quot;Female&quot;,
+    &quot;department&quot;: &quot;History&quot;,
+    &quot;car&quot;: &quot;Honda&quot;
+}</code></pre>
+<p>Now save this file as “student.json” to your project directory.</p>
+<p>To read the JSON data from the file we can use the Node.js <a href="https://nodejs.org/api/fs.html">fs</a> module. There are two functions available in this module that we can use to read files from the file system: <code>readFile</code> and <code>readFileSync</code>.</p>
+<p>Although both of these functions perform similar tasks i.e. reading files from disk, the difference lies in the way these functions are actually executed, which we’ll explain in more detail in the sections below.</p>
+<h5 id="using-fs.readfilesync">Using fs.readFileSync</h5>
+<p>The <code>readFileSync</code> function reads data from a file in a synchronous manner. This function blocks the rest of the code from executing until all the data is read from a file. The function is particularly useful when your application has to load configuration settings before it can perform any other tasks.</p>
+<p>To continue with our example, let’s use this function to read the “student.json” file that we created earlier, using the <code>readFileSync</code> function. Add the following code to a ‘.js’ file:</p>
+<pre><code>&#39;use strict&#39;;
+
+const fs = require(&#39;fs&#39;);
+
+let rawdata = fs.readFileSync(&#39;student.json&#39;);
+let student = JSON.parse(rawdata);
+console.log(student);</code></pre>
+<p>In the above Node.js code we first load the <code>fs</code> module to our application. Next we use the <code>readFileSync</code> function and pass it the relative file path to the file that we want to read. If you print the object <code>rawdata</code> to the console, you will see raw data (in a <a href="https://nodejs.org/api/buffer.html">Buffer</a>) on the console screen:</p>
+<pre><code>&lt;Buffer 7b 20 0a 20 20 20 20 22 6e 61 6d 65 22 3a 20 22 53 61 72 61 22 2c 0a 20 20 20 20 22 61 67 65 22 3a 20 32 33 2c 0a 20 20 20 20 22 67 65 6e 64 65 72 22 ... &gt;</code></pre>
+<p>However, we want to read the file in its JSON format, not the raw hex data. This is where the <code>JSON.parse</code> function comes into play. This function handles parsing the raw data, converts it to ASCII text, and parses the actual JSON data in to a JavaScript object. Now, if you print the <code>student</code> object on the console, you will get the following output:</p>
+<pre><code>{ name: &#39;Sara&#39;,
+  age: 23,
+  gender: &#39;Female&#39;,
+  department: &#39;History&#39;,
+  car: &#39;Honda&#39; }</code></pre>
+<p>As you can see, the JSON from our file was successfully loaded in to the <code>student</code> object.</p>
+<h5 id="using-fs.readfile">Using fs.readFile</h5>
+<p>Another way you can read a JSON file in Node.js is using the <code>readFile</code> function. Unlike <code>readFileSync</code> function, the <code>readFile</code> function reads file data in an asynchronous manner. When a <code>readFile</code> function is called, the file reading process starts and immediately the control shifts to next line executing the remaining lines of code. Once the file data has been loaded, this function will call the callback function provided to it. This way you aren’t blocking code execution while waiting for the operating system to get back to you with data.</p>
+<p>In our example, the <code>readFile</code> function takes two parameters: The path to the file that is to be read and the callback function that is to be called when the file is read completely. You can optionally also include a parameter with options, but we won’t be covering those in this article.</p>
+<p>Take a look at the following example to understand how to use the <code>readFile</code> function.</p>
+<pre><code>&#39;use strict&#39;;
+
+const fs = require(&#39;fs&#39;);
+
+fs.readFile(&#39;student.json&#39;, (err, data) =&gt; {
+    if (err) throw err;
+    let student = JSON.parse(data);
+    console.log(student);
+});
+
+console.log(&#39;This is after the read call&#39;);</code></pre>
+<p>The code above does exactly what our previous code snippet did (with an extra <code>console.log</code> call), but it does so asynchronously. Here are a few of the differences, which you may have noticed:</p>
+<ul>
+<li><code>(err, data) =&gt; {}</code>: This is our callback function that is executed once the file is completely read</li>
+<li><code>err</code>: Since we can’t easily use try/catch with asynchronous code, the function instead gives us an <code>err</code> object if something goes wrong. It is <code>null</code> if there were no errors</li>
+</ul>
+<p>You may have also noticed that we print a string to the console immediately after calling <code>readFile</code>. This is to show you the behavior of asynchronous code. When the above script is executed, you will see that this <code>console.log</code> executes <em>before</em> the <code>readFile</code> callback function executes. This is because <code>readFile</code> does not block code from executing while it reads data from the file system.</p>
+<p>The output of the code will look like this:</p>
+<pre><code>This is after the read call
+{ name: &#39;Sara&#39;,
+  age: 23,
+  gender: &#39;Female&#39;,
+  department: &#39;History&#39;,
+  car: &#39;Honda&#39; }</code></pre>
+<p>As you can see, the last line of code in our file is actually the one that shows up first in the output.</p>
+<h5 id="using-require">Using <code>require</code></h5>
+<p>Check out our hands-on, practical guide to learning Git, with best-practices, industry-accepted standards, and included cheat sheet. Stop Googling Git commands and actually <em>learn</em> it!</p>
+<p>Another approach is to use the global <code>require</code> method to read and parse JSON files. This is the same method you use to load Node modules, but it can also be used to load JSON.</p>
+<p>Take a look at the following example.</p>
+<pre><code>&#39;use strict&#39;;
+
+let jsonData = require(&#39;./student.json&#39;);
+
+console.log(jsonData);</code></pre>
+<p>It works exactly like the <code>readFileSync</code> code we showed above, but it is a globally available method that you can use anywhere, which has its advantages.</p>
+<p>However there are a few drawbacks of <code>require</code> function:</p>
+<ul>
+<li>Require is synchronous function and is called only once, which means the calls receive a cached result. If the file is updated you can’t re-read it using this method</li>
+<li>Your file must have ‘.json’ extension, so it can’t be as flexible. Without the proper extension <code>require</code> doesn’t treat the file as JSON file.</li>
+</ul>
+<h3 id="writing-json-to-a-file">Writing JSON to a File</h3>
+<p>Similar to the <code>readFile</code> and <code>readFileSync</code> functions, there are two functions for <a href="https://stackabuse.com/writing-to-files-in-node-js/">writing data to files</a>: <code>writeFile</code> and <code>writeFileSync</code>. As the names suggest, the <code>writeFile</code> method writes data to a file in an asynchronous way while <code>writeFileSync</code> function writes data to a file in a synchronous manner.</p>
+<p>We’ll take a closer look in the following sections.</p>
+<h5 id="using-fs.writefilesync">Using fs.writeFileSync</h5>
+<p>The <code>writeFileSync</code> function accepts 2-3 parameters: The path of the file to write data to, the data to write, and an optional parameter.</p>
+<p>Note that if the file doesn’t already exist, then a new file is created for you. Take a look at the following example:</p>
+<pre><code>&#39;use strict&#39;;
+
+const fs = require(&#39;fs&#39;);
+
+let student = {
+    name: &#39;Mike&#39;,
+    age: 23,
+    gender: &#39;Male&#39;,
+    department: &#39;English&#39;,
+    car: &#39;Honda&#39;
+};
+
+let data = JSON.stringify(student);
+fs.writeFileSync(&#39;student-2.json&#39;, data);</code></pre>
+<p>In the above example we are storing our JSON object <code>student</code> to a file named “student-2.json”. Notice that here we have to use the <code>JSON.stringify</code> function before saving the data. Just like we needed to parse the data into JSON format when we read the JSON file, we need to “stringify” the data before we can store it in a string form in the file.</p>
+<p>Execute the above code and open the “student-2.json” file. You should see following content in the file:</p>
+<pre><code>{&quot;name&quot;:&quot;Mike&quot;,&quot;age&quot;:23,&quot;gender&quot;:&quot;Male&quot;,&quot;department&quot;:&quot;English&quot;,&quot;car&quot;:&quot;Honda&quot;}</code></pre>
+<p>Although this is the data that we wanted to write, the data is in the form of one line of string, which is difficult for us to read. If you’d like the serialized JSON to be human readable, then change the <code>JSON.Stringify</code> function as follows:</p>
+<pre><code>let data = JSON.stringify(student, null, 2);</code></pre>
+<p>Here we are telling the method to add newlines and a couple of indentations to the serialized JSON. Now if you open the “student-2.json” file, you should see the text in following format.</p>
+<pre><code>{
+  &quot;name&quot;: &quot;Mike&quot;,
+  &quot;age&quot;: 23,
+  &quot;gender&quot;: &quot;Male&quot;,
+  &quot;department&quot;: &quot;English&quot;,
+  &quot;car&quot;: &quot;Honda&quot;
+}</code></pre>
+<h5 id="using-fs.writefile">Using fs.writeFile</h5>
+<p>As I mentioned earlier, the <code>writeFile</code> function executes in asynchronous manner, which means our code is not blocked while data is written <em>to</em> the file. And just like the asynchronous methods from before, we need to pass a callback to this function.</p>
+<p>Let’s write another file, “student-3.json”, using the <code>writeFile</code> function.</p>
+<pre><code>&#39;use strict&#39;;
+
+const fs = require(&#39;fs&#39;);
+
+let student = {
+    name: &#39;Mike&#39;,
+    age: 23,
+    gender: &#39;Male&#39;,
+    department: &#39;English&#39;,
+    car: &#39;Honda&#39;
+};
+
+let data = JSON.stringify(student, null, 2);
+
+fs.writeFile(&#39;student-3.json&#39;, data, (err) =&gt; {
+    if (err) throw err;
+    console.log(&#39;Data written to file&#39;);
+});
+
+console.log(&#39;This is after the write call&#39;);</code></pre>
+<p>The output of the above script will be:</p>
+<pre><code>This is after the write call
+Data written to file</code></pre>
+<p>And again, you can see that the last line of our code actually shows up first in the console since our callback hasn’t been called yet. This ends up saving quite a bit of execution time if you have large amounts of data to write to your file, or if you have quite a few files to write to.</p>
+<h3 id="learn-more">Learn More</h3>
+<p>Want to learn more about the fundamentals of Node.js? Personally, I’d recommend taking an online course like <a href="https://stackabu.se/wes-bos-learn-node">Learn Node.js by Wes Bos</a>. Not only will you learn the most up-to-date ES2017 syntax, but you’ll get to build a full stack restaurant app. In my experience, building real-world apps like this is the fastest way to learn.</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>Throughout this article we showed how you can read and write JSON data from and to files, which is a very common and important task to know how to do as a web programmer.</p>
+<p>There are a couple of methods in the <code>fs</code> module both for reading from and writing to JSON files. The <code>readFile</code> and <code>readFileSync</code> functions will read JSON data from the file in an asynchronous and synchronous manner, respectively. You can also use the global <code>require</code> method to handle reading/parsing JSON data from a file in a single line of code. However, <code>require</code> is synchronous and can only read JSON data from files with ‘.json’ extension.</p>
+<p>Similarly, the <code>writeFile</code> and <code>writeFileSync</code> functions from the <code>fs</code> module write JSON data to the file in an asynchronous and synchronous manner respectively.</p>
+</body>
+</html>

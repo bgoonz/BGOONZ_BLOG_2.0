@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>then</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="promise.prototype.then">Promise.prototype.then()</h1>
+<p>The <code>then()</code> method returns a <a href="../promise"><code>Promise</code></a>. It takes up to two arguments: callback functions for the success and failure cases of the <code>Promise</code>.</p>
+<p><strong>Note:</strong> If one or both arguments are omitted or are provided non-functions, then <code>then</code> will be missing the handler(s), but will not generate any errors. If the <code>Promise</code> that <code>then</code> is called on adopts a state (<code>fulfillment</code> or <code>rejection</code>) for which <code>then</code> has no handler, the returned promise adopts the final state of the original <code>Promise</code> on which <code>then</code> was called.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>p.then(onFulfilled[, onRejected]);
+
+p.then(value =&gt; {
+  // fulfillment
+}, reason =&gt; {
+  // rejection
+});</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>onFulfilled</code> <span class="badge inline optional">Optional</span><br />
+A <a href="../function"><code>Function</code></a> called if the <code>Promise</code> is fulfilled. This function has one argument, the <code>fulfillment value</code>. If it is not a function, it is internally replaced with an “Identity” function (it returns the received argument).</p>
+<p><code>onRejected</code> <span class="badge inline optional">Optional</span><br />
+A <a href="../function"><code>Function</code></a> called if the <code>Promise</code> is rejected. This function has one argument, the <code>rejection reason</code>. If it is not a function, it is internally replaced with a “Thrower” function (it throws an error it received as argument).</p>
+<h3 id="return-value">Return value</h3>
+<p>Once a <a href="../promise"><code>Promise</code></a> is fulfilled or rejected, the respective handler function (<code>onFulfilled</code> or <code>onRejected</code>) will be called <strong>asynchronously</strong> (scheduled in the current thread loop). The behavior of the handler function follows a specific set of rules. If a handler function:</p>
+<ul>
+<li>returns a value, the promise returned by <code>then</code> gets resolved with the returned value as its value.</li>
+<li>doesn’t return anything, the promise returned by <code>then</code> gets resolved with an <code>undefined</code> value.</li>
+<li>throws an error, the promise returned by <code>then</code> gets rejected with the thrown error as its value.</li>
+<li>returns an already fulfilled promise, the promise returned by <code>then</code> gets fulfilled with that promise’s value as its value.</li>
+<li>returns an already rejected promise, the promise returned by <code>then</code> gets rejected with that promise’s value as its value.</li>
+<li>returns another <strong>pending</strong> promise object, the resolution/rejection of the promise returned by <code>then</code> will be subsequent to the resolution/rejection of the promise returned by the handler. Also, the resolved value of the promise returned by <code>then</code> will be the same as the resolved value of the promise returned by the handler.</li>
+</ul>
+<p>Following, an example to demonstrate the asynchronicity of the <code>then</code> method.</p>
+<pre><code>// using a resolved promise, the &#39;then&#39; block will be triggered instantly,
+// but its handlers will be triggered asynchronously as demonstrated by the console.logs
+const resolvedProm = Promise.resolve(33);
+
+let thenProm = resolvedProm.then(value =&gt; {
+    console.log(&quot;this gets called after the end of the main stack. the value received and returned is: &quot; + value);
+    return value;
+});
+// instantly logging the value of thenProm
+console.log(thenProm);
+
+// using setTimeout we can postpone the execution of a function to the moment the stack is empty
+setTimeout(() =&gt; {
+    console.log(thenProm);
+});
+
+// logs, in order:
+// Promise {[[PromiseStatus]]: &quot;pending&quot;, [[PromiseValue]]: undefined}
+// &quot;this gets called after the end of the main stack. the value received and returned is: 33&quot;
+// Promise {[[PromiseStatus]]: &quot;resolved&quot;, [[PromiseValue]]: 33}</code></pre>
+<h2 id="description">Description</h2>
+<p>As the <code>then</code> and <a href="catch"><code>Promise.prototype.catch()</code></a> methods return promises, they <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises#chaining">can be chained</a> — an operation called <em>composition</em>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-the-then-method">Using the <code>then</code> method</h3>
+<pre><code>var p1 = new Promise((resolve, reject) =&gt; {
+  resolve(&#39;Success!&#39;);
+  // or
+  // reject(new Error(&quot;Error!&quot;));
+});
+
+p1.then(value =&gt; {
+  console.log(value); // Success!
+}, reason =&gt; {
+  console.error(reason); // Error!
+});</code></pre>
+<h3 id="chaining">Chaining</h3>
+<p>The <code>then</code> method returns a <code>Promise</code> which allows for method chaining.</p>
+<p>If the function passed as handler to <code>then</code> returns a <code>Promise</code>, an equivalent <code>Promise</code> will be exposed to the subsequent <code>then</code> in the method chain. The below snippet simulates asynchronous code with the <code>setTimeout</code> function.</p>
+<pre><code>Promise.resolve(&#39;foo&#39;)
+  // 1. Receive &quot;foo&quot;, concatenate &quot;bar&quot; to it, and resolve that to the next then
+  .then(function(string) {
+    return new Promise(function(resolve, reject) {
+      setTimeout(function() {
+        string += &#39;bar&#39;;
+        resolve(string);
+      }, 1);
+    });
+  })
+  // 2. receive &quot;foobar&quot;, register a callback function to work on that string
+  // and print it to the console, but not before returning the unworked on
+  // string to the next then
+  .then(function(string) {
+    setTimeout(function() {
+      string += &#39;baz&#39;;
+      console.log(string); // foobarbaz
+    }, 1)
+    return string;
+  })
+  // 3. print helpful messages about how the code in this section will be run
+  // before the string is actually processed by the mocked asynchronous code in the
+  // previous then block.
+  .then(function(string) {
+    console.log(&quot;Last Then:  oops... didn&#39;t bother to instantiate and return &quot; +
+                &quot;a promise in the prior then so the sequence may be a bit &quot; +
+                &quot;surprising&quot;);
+
+    // Note that `string` will not have the &#39;baz&#39; bit of it at this point. This
+    // is because we mocked that to happen asynchronously with a setTimeout function
+    console.log(string); // foobar
+  });
+
+// logs, in order:
+// Last Then: oops... didn&#39;t bother to instantiate and return a promise in the prior then so the sequence may be a bit surprising
+// foobar
+// foobarbaz</code></pre>
+<p>When a value is returned from within a <code>then</code> handler, it will effectively return <code>Promise.resolve(&lt;value returned by whichever handler was called&gt;)</code>.</p>
+<pre><code>var p2 = new Promise(function(resolve, reject) {
+  resolve(1);
+});
+
+p2.then(function(value) {
+  console.log(value); // 1
+  return value + 1;
+}).then(function(value) {
+  console.log(value + &#39; - A synchronous value works&#39;); // 2 - A synchronous value works
+});
+
+p2.then(function(value) {
+  console.log(value); // 1
+});</code></pre>
+<p>A <code>then</code> call will return a rejected promise if the function throws an error or returns a rejected Promise.</p>
+<pre><code>Promise.resolve()
+  .then(() =&gt; {
+    // Makes .then() return a rejected promise
+    throw new Error(&#39;Oh no!&#39;);
+  })
+  .then(() =&gt; {
+    console.log(&#39;Not called.&#39;);
+  }, error =&gt; {
+    console.error(&#39;onRejected function called: &#39; + error.message);
+  });</code></pre>
+<p>In all other cases, a resolving Promise is returned. In the following example, the first <code>then()</code> will return <code>42</code> wrapped in a resolving Promise even though the previous Promise in the chain was rejected.</p>
+<pre><code>Promise.reject()
+  .then(() =&gt; 99, () =&gt; 42) // onRejected returns 42 which is wrapped in a resolving Promise
+  .then(solution =&gt; console.log(&#39;Resolved with &#39; + solution)); // Resolved with 42</code></pre>
+<p>In practice, it is often desirable to catch rejected promises rather than use <code>then</code>’s two case syntax, as demonstrated below.</p>
+<pre><code>Promise.resolve()
+  .then(() =&gt; {
+    // Makes .then() return a rejected promise
+    throw new Error(&#39;Oh no!&#39;);
+  })
+  .catch(error =&gt; {
+    console.error(&#39;onRejected function called: &#39; + error.message);
+  })
+  .then(() =&gt; {
+    console.log(&quot;I am always called even if the prior then&#39;s promise rejects&quot;);
+  });</code></pre>
+<p>You can also use chaining to implement one function with a Promise-based API on top of another such function.</p>
+<pre><code>function fetch_current_data() {
+  // The fetch() API returns a Promise.  This function
+  // exposes a similar API, except the fulfillment
+  // value of this function&#39;s Promise has had more
+  // work done on it.
+  return fetch(&#39;current-data.json&#39;).then(response =&gt; {
+    if (response.headers.get(&#39;content-type&#39;) != &#39;application/json&#39;) {
+      throw new TypeError();
+    }
+    var j = response.json();
+    // maybe do something with j
+    return j; // fulfillment value given to user of
+              // fetch_current_data().then()
+  });
+}</code></pre>
+<p>If <code>onFulfilled</code> returns a promise, the return value of <code>then</code> will be resolved/rejected by the promise.</p>
+<pre><code>function resolveLater(resolve, reject) {
+  setTimeout(function() {
+    resolve(10);
+  }, 1000);
+}
+function rejectLater(resolve, reject) {
+  setTimeout(function() {
+    reject(new Error(&#39;Error&#39;));
+  }, 1000);
+}
+
+var p1 = Promise.resolve(&#39;foo&#39;);
+var p2 = p1.then(function() {
+  // Return promise here, that will be resolved to 10 after 1 second
+  return new Promise(resolveLater);
+});
+p2.then(function(v) {
+  console.log(&#39;resolved&#39;, v);  // &quot;resolved&quot;, 10
+}, function(e) {
+  // not called
+  console.error(&#39;rejected&#39;, e);
+});
+
+var p3 = p1.then(function() {
+  // Return promise here, that will be rejected with &#39;Error&#39; after 1 second
+  return new Promise(rejectLater);
+});
+p3.then(function(v) {
+  // not called
+  console.log(&#39;resolved&#39;, v);
+}, function(e) {
+  console.error(&#39;rejected&#39;, e); // &quot;rejected&quot;, &#39;Error&#39;
+});</code></pre>
+<h3 id="window.setimmediate-style-promise-based-polyfill">window.setImmediate style promise-based polyfill</h3>
+<p>Using a <a href="../function/bind"><code>Function.prototype.bind()</code></a> <code>Reflect.apply</code> (<a href="../reflect/apply"><code>Reflect.apply()</code></a>) method to create a (non-cancellable) <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/setImmediate"><code>window.setImmediate</code></a>-style function.</p>
+<pre><code>const nextTick = (() =&gt; {
+  const noop = () =&gt; {}; // literally
+  const nextTickPromise = () =&gt; Promise.resolve().then(noop);
+
+  const rfab = Reflect.apply.bind; // (thisArg, fn, thisArg, [...args])
+  const nextTick = (fn, ...args) =&gt; (
+    fn !== undefined
+    ? Promise.resolve(args).then(rfab(null, fn, null))
+    : nextTickPromise(),
+    undefined
+  );
+  nextTick.ntp = nextTickPromise;
+
+  return nextTick;
+})();</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-promise.prototype.then">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-promise.prototype.then</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>then</code></p>
+<p>32</p>
+<p>12</p>
+<p>29</p>
+<p>No</p>
+<p>19</p>
+<p>8</p>
+<p>4.4.3</p>
+<p>32</p>
+<p>29</p>
+<p>19</p>
+<p>8</p>
+<p>2.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../promise"><code>Promise</code></a></li>
+<li><a href="catch"><code>Promise.prototype.catch()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then</a></p>
+</body>
+</html>

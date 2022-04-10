@@ -1,45 +1,52 @@
----
-tags: [packaging]
----
+To install the latest version of a package:
+===========================================
 
-# To install the latest version of a package:
+yum install
 
-yum install <package>
+To perform a local install:
+===========================
 
-# To perform a local install:
+yum localinstall
 
-yum localinstall <package>
+To remove a package:
+====================
 
-# To remove a package:
+yum remove
 
-yum remove <package>
+To search for a package:
+========================
 
-# To search for a package:
+yum search
 
-yum search <package>
+To find what package installs an executable:
+============================================
 
-# To find what package installs an executable:
+yum whatprovides
 
-yum whatprovides <executable>
+To find the dependencies of a package:
+======================================
 
-# To find the dependencies of a package:
+yum deplist
 
-yum deplist <package>
+To find information about a package:
+====================================
 
-# To find information about a package:
+yum info
 
-yum info <package>
-
-# List currently enabled repositories:
+List currently enabled repositories:
+====================================
 
 yum repolist
 
-# List packages matching <phrase>:
+List packages matching :
+========================
 
-yum list <phrase>
+yum list
 
-# To download the source RPM for a package:
+To download the source RPM for a package:
+=========================================
 
-yumdownloader --source <package>
+yumdownloader –source
 
-# (You have to install yumdownloader first, which is installed by the yum-utils package)
+(You have to install yumdownloader first, which is installed by the yum-utils package)
+======================================================================================

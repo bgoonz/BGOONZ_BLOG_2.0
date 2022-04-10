@@ -1,21 +1,25 @@
-# BigInt64Array
+BigInt64Array
+=============
 
-The `BigInt64Array` typed array represents an array of 64-bit signed integers in the platform byte order. If control over byte order is needed, use [`DataView`](dataview) instead. The contents are initialized to `0n`. Once established, you can reference elements in the array using the object's methods, or by using standard array index syntax (that is, using bracket notation).
+The `BigInt64Array` typed array represents an array of 64-bit signed integers in the platform byte order. If control over byte order is needed, use [`DataView`](dataview) instead. The contents are initialized to `0n`. Once established, you can reference elements in the array using the object’s methods, or by using standard array index syntax (that is, using bracket notation).
 
-## Constructor
+Constructor
+-----------
 
 [`BigInt64Array()`](bigint64array/bigint64array)  
 Creates a new `BigInt64Array` object.
 
-## Static properties
+Static properties
+-----------------
 
 [`BigInt64Array.BYTES_PER_ELEMENT`](typedarray/bytes_per_element)  
 Returns a number value of the element size. `8` in the case of a `BigInt64Array`.
 
 [`BigInt64Array.name`](typedarray/name)  
-Returns the string value of the constructor name. In the case of the `BigInt64Array` type, this is "BigInt64Array".
+Returns the string value of the constructor name. In the case of the `BigInt64Array` type, this is “BigInt64Array”.
 
-## Static methods
+Static methods
+--------------
 
 [`BigInt64Array.from()`](typedarray/from)  
 Creates a new `BigInt64Array` from an array-like or iterable object. See also [`Array.from()`](array/from).
@@ -23,7 +27,8 @@ Creates a new `BigInt64Array` from an array-like or iterable object. See also [`
 [`BigInt64Array.of()`](typedarray/of)  
 Creates a new `BigInt64Array` with a variable number of arguments. See also [`Array.of()`](array/of).
 
-## Instance properties
+Instance properties
+-------------------
 
 [`BigInt64Array.prototype.buffer`](typedarray/buffer)  
 Returns the [`ArrayBuffer`](arraybuffer) referenced by the `BigInt64Array`. This is fixed at construction time and thus **read only**.
@@ -37,7 +42,8 @@ Returns the offset (in bytes) of the `BigInt64Array` from the start of its [`Arr
 [`BigInt64Array.prototype.length`](typedarray/length)  
 Returns the number of elements hold in the `BigInt64Array`. This is fixed at construction time and thus **read only.**
 
-## Instance methods
+Instance methods
+----------------
 
 [`BigInt64Array.prototype.copyWithin()`](typedarray/copywithin)  
 Copies a sequence of array elements within the array. See also [`Array.prototype.copyWithin()`](array/copywithin).
@@ -117,7 +123,8 @@ Returns a string representing the array and its elements. See also [`Array.proto
 [`BigInt64Array.prototype[@@iterator]()`](typedarray/@@iterator)  
 Returns a new `Array Iterator` object that contains the values for each index in the array.
 
-## Examples
+Examples
+--------
 
 ### Different ways to create a `BigInt64Array`
 
@@ -146,38 +153,11 @@ Returns a new `Array Iterator` object that contains the values for each index in
     var bigint64 = new BigInt64Array(iterable);
     // BigInt64Array[1n, 2n, 3n]
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-typedarray-objects">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-typedarray-objects</span></a></td></tr></tbody></table>
-
-`BigInt64Array`
-
-67
-
-79
-
-68
-
-No
-
-54
-
-No
-
-67
-
-67
-
-68
-
-48
-
-No
-
-9.0
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-typedarray-objects</span></td></tr></tbody></table>
 
 `BigInt64Array`
 
@@ -205,7 +185,34 @@ No
 
 9.0
 
-## See also
+`BigInt64Array`
+
+67
+
+79
+
+68
+
+No
+
+54
+
+No
+
+67
+
+67
+
+68
+
+48
+
+No
+
+9.0
+
+See also
+--------
 
 -   [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
 -   [`BigUint64Array`](biguint64array)

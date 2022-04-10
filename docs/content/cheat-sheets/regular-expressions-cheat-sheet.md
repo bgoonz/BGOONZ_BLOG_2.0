@@ -1,4 +1,5 @@
-# Regular Expressions Cheat Sheet
+Regular Expressions Cheat Sheet
+===============================
 
 #### Anchors
 
@@ -7,7 +8,7 @@
 -   `\b`: word boundary
 -   `\B`: not word boundary (opposite of `\b`)
 
-Note: Anchors are non-quantifiable (i.e. cannot be followed by a quantifier).
+Note: Anchors are non-quantifiable (i.e. cannot be followed by a quantifier).
 
 #### Character sequences
 
@@ -24,7 +25,7 @@ Note: Anchors are non-quantifiable (i.e. cannot be followed by a quantifier).
 -   `[^a-z]`: a single character not in the given range (opposite of `[a-z]`)
 -   `[a-zA-Z]`: a single character in either of the given ranges
 
-Note: Use `\` to escape special characters (e.g. `\`, `/`, `[`, `]`, `(`, `)`, `{`, `}` etc.).
+Note: Use `\` to escape special characters (e.g. `\`, `/`, `[`, `]`, `(`, `)`, `{`, `}` etc.).
 
 #### Quantifiers
 

@@ -1,65 +1,37 @@
----
-title: RESTful API
-
-category: API
----
-
 ### Status codes
 
-| Code                  | Description                                  |
-| --------------------- | -------------------------------------------- |
-| `200 OK`              | Successful get, patch (return a JSON object) |
-| `201 Created`         | Successful post (return a JSON object)       |
-| `202 Accepted`        | Successful post, delete, path - async        |
-| `204 No content`      | Successful delete                            |
-| `206 Partial content` | Successful get - async                       |
+<table><thead><tr class="header"><th>Code</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>200 OK</code></td><td>Successful get, patch (return a JSON object)</td></tr><tr class="even"><td><code>201 Created</code></td><td>Successful post (return a JSON object)</td></tr><tr class="odd"><td><code>202 Accepted</code></td><td>Successful post, delete, path - async</td></tr><tr class="even"><td><code>204 No content</code></td><td>Successful delete</td></tr><tr class="odd"><td><code>206 Partial content</code></td><td>Successful get - async</td></tr></tbody></table>
 
 ### Error status
 
-| Code                       | Description                       |
-| -------------------------- | --------------------------------- |
-| `401 Unauthorized`         | Not authenticated                 |
-| `403 Forbidden`            | Authenticated, but no permissions |
-| `422 Unprocessable entity` | Validation                        |
+<table><thead><tr class="header"><th>Code</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>401 Unauthorized</code></td><td>Not authenticated</td></tr><tr class="even"><td><code>403 Forbidden</code></td><td>Authenticated, but no permissions</td></tr><tr class="odd"><td><code>422 Unprocessable entity</code></td><td>Validation</td></tr></tbody></table>
 
 ### Errors
 
-```
-HTTP/1.1 401 Unauthorized
-Content-Type: application/json
-{
-  'id': 'auth_failed',
-  'message': "You're not logged in."
-}
-```
+    HTTP/1.1 401 Unauthorized
+    Content-Type: application/json
+    {
+      'id': 'auth_failed',
+      'message': "You're not logged in."
+    }
 
-Here's an example of a possible error reply.
+Here’s an example of a possible error reply.
 
 ### Versioning
 
-```
-GET /api/foo
-Accept: application/json; version=1
-```
+    GET /api/foo
+    Accept: application/json; version=1
 
 You can pass a `version=x` to the Accept request header. [Info here](https://github.com/interagent/http-api-design#version-with-accepts-header)
 
 ### Authentication
 
-```
-curl -is https://$TOKEN@api.example.com/
-```
+    curl -is https://$TOKEN@api.example.com/
 
 ### Methods
 
-| Request              | Description                   |
-| -------------------- | ----------------------------- |
-| `GET /articles/1`    | read, returns _200_           |
-| `PUT /articles/1`    | edit (or path), returns _200_ |
-| `DELETE /articles/1` | delete, returns _200_         |
-| `POST /articles`     | create, returns _201_         |
-| `GET /articles`      | list, returns _200_           |
+<table><thead><tr class="header"><th>Request</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>GET /articles/1</code></td><td>read, returns <em>200</em></td></tr><tr class="even"><td><code>PUT /articles/1</code></td><td>edit (or path), returns <em>200</em></td></tr><tr class="odd"><td><code>DELETE /articles/1</code></td><td>delete, returns <em>200</em></td></tr><tr class="even"><td><code>POST /articles</code></td><td>create, returns <em>201</em></td></tr><tr class="odd"><td><code>GET /articles</code></td><td>list, returns <em>200</em></td></tr></tbody></table>
 
 ### References
 
--   [interagent/http-api-design](https://github.com/interagent/http-api-design) _(github.com)_
+-   [interagent/http-api-design](https://github.com/interagent/http-api-design) *(github.com)*

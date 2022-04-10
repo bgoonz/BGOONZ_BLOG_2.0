@@ -1,3 +1,4 @@
-# Preserve user environment when running command
+Preserve user environment when running command
+==============================================
 
-sudo -E <cmd>
+sudo -E

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>islockfree</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="atomics.islockfree">Atomics.isLockFree()</h1>
+<p>The static <code>Atomics``.isLockFree()</code> method is used to determine whether to use locks or atomic operations. It returns <code>true</code>, if the given size is one of the <a href="../typedarray/bytes_per_element">BYTES_PER_ELEMENT</a> property of integer TypedArray types.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>Atomics.isLockFree(size)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>size</code><br />
+The size in bytes to check.</p>
+<h3 id="return-value">Return value</h3>
+<p>A <a href="../boolean"><code>Boolean</code></a> indicating whether the operation is lock free.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-islockfree">Using isLockFree</h3>
+<pre><code>Atomics.isLockFree(1); // true
+Atomics.isLockFree(2); // true
+Atomics.isLockFree(3); // false
+Atomics.isLockFree(4); // true
+Atomics.isLockFree(5); // false
+Atomics.isLockFree(6); // false
+Atomics.isLockFree(7); // false
+Atomics.isLockFree(8); // true</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-atomics.islockfree">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-atomics.islockfree</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>isLockFree</code></p>
+<p>68</p>
+<p>60-63</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This was a temporary removal while mitigations were put in place.</p>
+<p>79</p>
+<p>16-17</p>
+<p>Support was removed to mitigate <a href="https://blogs.windows.com/msedgedev/2018/01/03/speculative-execution-mitigations-microsoft-edge-internet-explorer">speculative execution side-channel attacks (Windows blog)</a>.</p>
+<p>78</p>
+<p>57</p>
+<p>Support was disabled by default to mitigate <a href="https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/">speculative execution side-channel attacks (Mozilla Security Blog)</a>.</p>
+<p>55-57</p>
+<p>46-55</p>
+<p>No</p>
+<p>No</p>
+<p>10.1-11.1</p>
+<p>60-63</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p>60-63</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<p>57</p>
+<p>Support was disabled by default to mitigate <a href="https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/">speculative execution side-channel attacks (Mozilla Security Blog)</a>.</p>
+<p>55-57</p>
+<p>46-55</p>
+<p>No</p>
+<p>10.3-11.3</p>
+<p>No</p>
+<p>Chrome disabled <code>SharedArrayBuffer</code> on January 5, 2018 to help reduce the efficacy of <a href="https://www.chromium.org/Home/chromium-security/ssca">speculative side-channel attacks</a>. This is intended as a temporary measure until other mitigations are in place.</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../atomics"><code>Atomics</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics/isLockFree" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics/isLockFree</a></p>
+</body>
+</html>

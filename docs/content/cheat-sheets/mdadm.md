@@ -1,83 +1,110 @@
-# For the sake of briefness, we use Bash "group compound" stanza:
+For the sake of briefness, we use Bash “group compound” stanza:
+===============================================================
 
-# /dev/sd{a,b,...}1 => /dev/sda1 /dev/sdb1 ...
+/dev/sd{a,b,…}1 =&gt; /dev/sda1 /dev/sdb1 …
+===========================================
 
-# Along the following variables:
+Along the following variables:
+==============================
 
-# ${M} array identifier (/dev/md${M})
+<span class="math inline">*Marrayidentifier*(/*dev*/*md*</span>{M})
+===================================================================
 
-# ${D} device identifier (/dev/sd${D})
+<span class="math inline">*Ddeviceidentifier*(/*dev*/*sd*</span>{D})
+====================================================================
 
-# ${P} partition identifier (/dev/sd${D}${P})
+<span class="math inline">*Ppartitionidentifier*(/*dev*/*sd*</span>{D}${P})
+===========================================================================
 
-# To create (initialize) a new array:
+To create (initialize) a new array:
+===================================
 
-mdadm --create /dev/md${M} --level=raid5 --raid-devices=4 /dev/sd{a,b,c,d,e}${P} --spare-devices=/dev/sdf1
+mdadm –create /dev/md<span class="math inline">*M* −  − *level* = *raid*5 −  − *raid* − *devices* = 4/*dev*/*sda*, *b*, *c*, *d*, *e*</span>{P} –spare-devices=/dev/sdf1
 
-# To manually assemble (activate) an existing array:
+To manually assemble (activate) an existing array:
+==================================================
 
-mdadm --assemble /dev/md${M} /dev/sd{a,b,c,d,e}${P}
+mdadm –assemble /dev/md<span class="math inline">*M*/*dev*/*sda*, *b*, *c*, *d*, *e*</span>{P}
 
-# To automatically assemble (activate) all existing arrays:
+To automatically assemble (activate) all existing arrays:
+=========================================================
 
-mdadm --assemble --scan
+mdadm –assemble –scan
 
-# To stop an assembled (active) array:
+To stop an assembled (active) array:
+====================================
 
-mdadm --stop /dev/md${M}
+mdadm –stop /dev/md${M}
 
-# To see array configuration:
+To see array configuration:
+===========================
 
-mdadm --query /dev/md${M}
+mdadm –query /dev/md${M}
 
-# To see array component configuration (dump superblock content):
+To see array component configuration (dump superblock content):
+===============================================================
 
-mdadm --query --examine /dev/sd${D}${P}
+mdadm –query –examine /dev/sd<span class="math inline">*D*</span>{P}
 
-# To see detailed array confiration/status:
+To see detailed array confiration/status:
+=========================================
 
-mdadm --detail /dev/md${M}
+mdadm –detail /dev/md${M}
 
-# To save existing arrays configuration:
+To save existing arrays configuration:
+======================================
 
-# (MAY be required by initrd for successfull boot)
+(MAY be required by initrd for successfull boot)
+================================================
 
-mdadm --detail --scan > /etc/mdadm/mdadm.conf
+mdadm –detail –scan &gt; /etc/mdadm/mdadm.conf
 
-# To erase array component superblock:
+To erase array component superblock:
+====================================
 
-# (MUST do before reusing a partition for other purposes)
+(MUST do before reusing a partition for other purposes)
+=======================================================
 
-mdadm --zero-superblock /dev/sd${D}${P}
+mdadm –zero-superblock /dev/sd<span class="math inline">*D*</span>{P}
 
-# To manually mark a component as failed:
+To manually mark a component as failed:
+=======================================
 
-# (SHOULD when a device shows wear-and-tear signs, e.g. through SMART)
+(SHOULD when a device shows wear-and-tear signs, e.g. through SMART)
+====================================================================
 
-mdadm --manage /dev/md${M} --fail /dev/sd${D}${P}
+mdadm –manage /dev/md<span class="math inline">*M* −  − *fail*/*dev*/*sd*</span>{D}${P}
 
-# To remove a failed component:
+To remove a failed component:
+=============================
 
-# (SHOULD before preemptively replacing a device, after failing it)
+(SHOULD before preemptively replacing a device, after failing it)
+=================================================================
 
-mdadm --manage /dev/md${M} --remove /dev/sd${D}${P}
+mdadm –manage /dev/md<span class="math inline">*M* −  − *remove*/*dev*/*sd*</span>{D}${P}
 
-# To prepare (format) a new device to replace a failed one:
+To prepare (format) a new device to replace a failed one:
+=========================================================
 
-sfdisk -d /dev/sd${D,sane} | sfdisk /dev/sd${D,new}
+sfdisk -d /dev/sd<span class="math inline">*D*, *sane*|*sfdisk*/*dev*/*sd*</span>{D,new}
 
-# To add new component to an existing array:
+To add new component to an existing array:
+==========================================
 
-# (this will trigger the rebuild)
+(this will trigger the rebuild)
+===============================
 
-mdadm --manage /dev/md${M} --add /dev/sd${D,new}${P}
+mdadm –manage /dev/md<span class="math inline">*M* −  − *add*/*dev*/*sd*</span>{D,new}${P}
 
-# To see assembled (active) arrays status:
+To see assembled (active) arrays status:
+========================================
 
 cat /proc/mdstat
 
-# To rename a device:
+To rename a device:
+===================
 
-# (SHOULD after hostname change; eg. name="$(hostname -s)")
+(SHOULD after hostname change; eg. name=“$(hostname -s)”)
+=========================================================
 
-mdadm --assemble /dev/md${M} /dev/sd{a,b,c,d,e}${P} --name="${name}:${M}" --update=name
+mdadm –assemble /dev/md<span class="math inline">*M*/*dev*/*sda*, *b*, *c*, *d*, *e*</span>{P} –name=“<span class="math inline">*name*:</span>{M}” –update=name

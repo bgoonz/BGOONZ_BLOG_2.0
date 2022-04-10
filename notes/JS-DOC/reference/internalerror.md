@@ -1,4 +1,5 @@
-# InternalError
+InternalError
+=============
 
 **Non-standard**
 
@@ -8,17 +9,19 @@ The `InternalError` indicates an error that occurred internally in the JavaScrip
 
 Example cases are mostly when something is too large, e.g.:
 
--   "too many switch cases",
--   "too many parentheses in regular expression",
--   "array initializer too large",
--   "too much recursion".
+-   “too many switch cases”,
+-   “too many parentheses in regular expression”,
+-   “array initializer too large”,
+-   “too much recursion”.
 
-## Constructor
+Constructor
+-----------
 
 [`InternalError()`](internalerror/internalerror)  
 Creates a new `InternalError` object.
 
-## Instance properties
+Instance properties
+-------------------
 
 [`InternalError.prototype.message`](error/message)  
 Error message. Inherited from [`Error`](error).
@@ -38,7 +41,8 @@ Column number in line that raised this error. Inherited from [`Error`](error).
 [`InternalError.prototype.stack`](error/stack)  
 Stack trace. Inherited from [`Error`](error).
 
-## Examples
+Examples
+--------
 
 ### Too much recursion
 
@@ -52,7 +56,7 @@ This recursive function runs 10 times, as per the exit condition.
     }
     loop(0);
 
-Setting this condition to an extremely high value, won't work:
+Setting this condition to an extremely high value, won’t work:
 
     function loop(x) {
       if (x >= 1000000000000)
@@ -66,7 +70,8 @@ Setting this condition to an extremely high value, won't work:
 
 For more information, see [InternalError: too much recursion.](../errors/too_much_recursion)
 
-## Specifications
+Specifications
+--------------
 
 Not part of any standard.
 
@@ -122,7 +127,8 @@ No
 
 No
 
-## See also
+See also
+--------
 
 -   [`Error`](error)
 -   [InternalError: too much recursion](../errors/too_much_recursion)

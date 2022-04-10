@@ -1,10 +1,12 @@
-# Symbol
+Symbol
+======
 
-`Symbol` is a built-in object whose constructor returns a `symbol` [primitive](https://developer.mozilla.org/en-US/docs/Glossary/Primitive) — also called a **Symbol value** or just a **Symbol** — that's guaranteed to be unique. Symbols are often used to add unique property keys to an object that won't collide with keys any other code might add to the object, and which are hidden from any mechanisms other code will typically use to access the object. That enables a form of weak [encapsulation](https://developer.mozilla.org/en-US/docs/Glossary/Encapsulation), or a weak form of [information hiding](https://en.wikipedia.org/wiki/Information_hiding).
+`Symbol` is a built-in object whose constructor returns a `symbol` [primitive](https://developer.mozilla.org/en-US/docs/Glossary/Primitive) — also called a **Symbol value** or just a **Symbol** — that’s guaranteed to be unique. Symbols are often used to add unique property keys to an object that won’t collide with keys any other code might add to the object, and which are hidden from any mechanisms other code will typically use to access the object. That enables a form of weak [encapsulation](https://developer.mozilla.org/en-US/docs/Glossary/Encapsulation), or a weak form of [information hiding](https://en.wikipedia.org/wiki/Information_hiding).
 
 Every `Symbol()` call is guaranteed to return a unique Symbol. Every `Symbol.for("key")` call will always return the same Symbol for a given value of `"key"`. When `Symbol.for("key")` is called, if a Symbol with the given key can be found in the global Symbol registry, that Symbol is returned. Otherwise, a new Symbol is created, added to the global Symbol registry under the given key, and returned.
 
-## Description
+Description
+-----------
 
 To create a new primitive Symbol, you write `Symbol()` with an optional string as its description:
 
@@ -35,14 +37,16 @@ The above syntax using the `Symbol()` function will not create a global Symbol t
 
 ### Finding Symbol properties on objects
 
-The method [`Object.getOwnPropertySymbols()`](object/getownpropertysymbols) returns an array of Symbols and lets you find Symbol properties on a given object. Note that every object is initialized with no own Symbol properties, so that this array will be empty unless you've set Symbol properties on the object.
+The method [`Object.getOwnPropertySymbols()`](object/getownpropertysymbols) returns an array of Symbols and lets you find Symbol properties on a given object. Note that every object is initialized with no own Symbol properties, so that this array will be empty unless you’ve set Symbol properties on the object.
 
-## Constructor
+Constructor
+-----------
 
 [`Symbol()`](symbol/symbol)  
-Creates a new `Symbol` object. It is incomplete as a constructor because it does not support the syntax "`new Symbol()`".
+Creates a new `Symbol` object. It is incomplete as a constructor because it does not support the syntax “`new Symbol()`”.
 
-## Static properties
+Static properties
+-----------------
 
 [`Symbol.asyncIterator`](symbol/asynciterator)  
 A method that returns the default AsyncIterator for an object. Used by [`for await...of`](../statements/for-await...of).
@@ -83,7 +87,8 @@ A string value used for the default description of an object. Used by [`Object.p
 [`Symbol.unscopables`](symbol/unscopables)  
 An object value of whose own and inherited property names are excluded from the `with` environment bindings of the associated object.
 
-## Static methods
+Static methods
+--------------
 
 [`Symbol.for(key)`](symbol/for)  
 Searches for existing Symbols with the given `key` and returns it if found. Otherwise a new Symbol gets created in the global Symbol registry with `key`.
@@ -91,12 +96,14 @@ Searches for existing Symbols with the given `key` and returns it if found. Othe
 [`Symbol.keyFor(sym)`](symbol/keyfor)  
 Retrieves a shared Symbol key from the global Symbol registry for the given Symbol.
 
-## Instance properties
+Instance properties
+-------------------
 
 [`Symbol.prototype.description`](symbol/description)  
 A read-only string containing the description of the Symbol.
 
-## Instance methods
+Instance methods
+----------------
 
 [`Symbol.prototype.toSource()`](symbol/tosource)  
 Returns a string containing the source of the Symbol. Overrides the [`Object.prototype.toSource()`](object/tosource) method.
@@ -110,7 +117,8 @@ Returns the Symbol. Overrides the [`Object.prototype.valueOf()`](object/valueof)
 [`Symbol.prototype[@@toPrimitive]`](symbol/@@toprimitive)  
 Returns the Symbol.
 
-## Examples
+Examples
+--------
 
 ### Using the typeof operator with Symbols
 
@@ -125,12 +133,12 @@ The [`typeof`](../operators/typeof) operator can help you to identify Symbols.
 Some things to note when working with type conversion of Symbols.
 
 -   When trying to convert a Symbol to a number, a [`TypeError`](typeerror) will be thrown  
-    (e.g. `+sym` or `sym | 0`).
+    (e.g. `+sym` or `sym | 0`).
 -   When using loose equality, `Object(sym) == sym` returns `true`.
--   `Symbol("foo") + "bar" `throws a [`TypeError`](typeerror) (can't convert Symbol to string). This prevents you from silently creating a new string property name from a Symbol, for example.
--   The ["safer" `String(sym)` conversion](string#string_conversion) works like a call to [`Symbol.prototype.toString()`](symbol/tostring) with Symbols, but note that `new String(sym)` will throw.
+-   `Symbol("foo") + "bar"`throws a [`TypeError`](typeerror) (can’t convert Symbol to string). This prevents you from silently creating a new string property name from a Symbol, for example.
+-   The [“safer” `String(sym)` conversion](string#string_conversion) works like a call to [`Symbol.prototype.toString()`](symbol/tostring) with Symbols, but note that `new String(sym)` will throw.
 
-### Symbols and for...in iteration
+### Symbols and for…in iteration
 
 Symbols are not enumerable in [`for...in`](../statements/for...in) iterations. In addition, [`Object.getOwnPropertyNames()`](object/getownpropertynames) will not return Symbol object properties, however, you can use [`Object.getOwnPropertySymbols()`](object/getownpropertysymbols) to get these.
 
@@ -163,14 +171,14 @@ When a Symbol wrapper object is used as a property key, this object will be coer
     obj[sym]             // 1
     obj[Object(sym)]     // still 1
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-symbol-objects">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-symbol-objects</span></td></tr></tbody></table>
 
-<span class="small">#sec-symbol-objects</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -784,11 +792,12 @@ No
 
 5.0
 
-## See also
+See also
+--------
 
 -   [Glossary: Symbol data type](https://developer.mozilla.org/en-US/docs/Glossary/Symbol)
 -   [`typeof`](../operators/typeof)
 -   [Data types and data structures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
--   ["ES6 In Depth: Symbols" on hacks.mozilla.org](https://hacks.mozilla.org/2015/06/es6-in-depth-symbols/)
+-   [“ES6 In Depth: Symbols” on hacks.mozilla.org](https://hacks.mozilla.org/2015/06/es6-in-depth-symbols/)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol</a>

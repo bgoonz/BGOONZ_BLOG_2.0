@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>getfullyear</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="date.prototype.getfullyear">Date.prototype.getFullYear()</h1>
+<p>The <code>getFullYear()</code> method returns the year of the specified date according to local time.</p>
+<p>Use this method instead of the <a href="getyear"><code>getYear()</code></a> method.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>getFullYear()</code></pre>
+<h3 id="return-value">Return value</h3>
+<p>A number corresponding to the year of the given date, according to local time.</p>
+<h2 id="description">Description</h2>
+<p>The value returned by <code>getFullYear()</code> is an absolute number. For dates between the years 1000 and 9999, <code>getFullYear()</code> returns a four-digit number, for example, 1995. Use this function to make sure a year is compliant with years after 2000.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-getfullyear">Using getFullYear()</h3>
+<p>The following example assigns the four-digit value of the current year to the variable <code>year</code>.</p>
+<pre><code>var today = new Date();
+var year = today.getFullYear();</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-date.prototype.getfullyear">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-date.prototype.getfullyear</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>getFullYear</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>4</p>
+<p>4</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="getutcfullyear"><code>Date.prototype.getUTCFullYear()</code></a></li>
+<li><a href="setfullyear"><code>Date.prototype.setFullYear()</code></a></li>
+<li><a href="getyear"><code>Date.prototype.getYear()</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getFullYear" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getFullYear</a></p>
+</body>
+</html>

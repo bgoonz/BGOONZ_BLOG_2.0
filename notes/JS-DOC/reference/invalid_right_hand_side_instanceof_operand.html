@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>invalid_right_hand_side_instanceof_operand</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="typeerror-invalid-instanceof-operand-x">TypeError: invalid ‘instanceof’ operand ‘x’</h1>
+<p>The JavaScript exception “invalid ‘instanceof’ operand” occurs when the right hand side operands of the <a href="../operators/instanceof"><code>instanceof</code> operator</a> isn’t used with a constructor object, i.e. an object which has a <code>prototype</code> property and is callable.</p>
+<h2 id="message">Message</h2>
+<pre><code>TypeError: invalid &#39;instanceof&#39; operand &quot;x&quot; (Firefox)
+TypeError: &quot;x&quot; is not a function (Firefox)
+TypeError: Right-hand side of &#39;instanceof&#39; is not an object (Chrome)
+TypeError: Right-hand side of &#39;instanceof&#39; is not callable (Chrome)</code></pre>
+<h2 id="error-type">Error type</h2>
+<p><a href="../global_objects/typeerror"><code>TypeError</code></a></p>
+<h2 id="what-went-wrong">What went wrong?</h2>
+<p>The <a href="../operators/instanceof"><code>instanceof</code> operator</a> expects the right hand side operands to be a constructor object, i.e. an object which has a <code>prototype</code> property and is callable.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="instanceof-vs-typeof">instanceof vs typeof</h3>
+<pre><code>&quot;test&quot; instanceof &quot;&quot;; // TypeError: invalid &#39;instanceof&#39; operand &quot;&quot;
+42 instanceof 0;      // TypeError: invalid &#39;instanceof&#39; operand 0
+
+function Foo() {}
+var f = Foo();        // Foo() is called and returns undefined
+var x = new Foo();
+
+x instanceof f;       // TypeError: invalid &#39;instanceof&#39; operand f
+x instanceof x;       // TypeError: x is not a function</code></pre>
+<p>To fix these errors, you will either need to replace the <a href="../operators/instanceof"><code>instanceof</code> operator</a> with the <a href="../operators/typeof"><code>typeof</code> operator</a>, or to make sure you use the function name, instead of the result of its evaluation.</p>
+<pre><code>typeof &quot;test&quot; == &quot;string&quot;; // true
+typeof 42 == &quot;number&quot;      // true
+
+function Foo() {}
+var f = Foo;               // Do not call Foo.
+var x = new Foo();
+
+x instanceof f;            // true
+x instanceof Foo;          // true</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../operators/instanceof"><code>instanceof</code> operator</a></li>
+<li><a href="../operators/typeof"><code>typeof</code> operator</a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/invalid_right_hand_side_instanceof_operand" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/invalid_right_hand_side_instanceof_operand</a></p>
+</body>
+</html>

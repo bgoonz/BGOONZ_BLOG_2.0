@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Ledger CSV format</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Ledger CSV format</h1>
+</header>
+<h2 id="ledger-csv-format">Ledger CSV format</h2>
+<p>{: .-one-column}</p>
+<pre><code>$ ledger csv</code></pre>
+<p>{: .-setup}</p>
+<pre class="csv"><code>date         , ?  , desc     , account            , currency , amt     , pending/cleared , ?
+&quot;2013/09/02&quot; , &quot;&quot; , &quot;things&quot; , &quot;Assets:Cash&quot;      , &quot;P&quot;      , &quot;-2000&quot; , &quot;*&quot;             , &quot;&quot;
+&quot;2013/09/02&quot; , &quot;&quot; , &quot;things&quot; , &quot;Liabilities:Card&quot; , &quot;P&quot;      , &quot;-200&quot;  , &quot;*&quot;             , &quot;&quot;
+&quot;2013/09/02&quot; , &quot;&quot; , &quot;things&quot; , &quot;Expenses:Things&quot;  , &quot;P&quot;      , &quot;2200&quot;  , &quot;*&quot;             , &quot;&quot;
+&quot;2013/09/04&quot; , &quot;&quot; , &quot;stuff&quot;  , &quot;Assets:Cash&quot;      , &quot;P&quot;      , &quot;-20&quot;   , &quot;*&quot;             , &quot;&quot;
+&quot;2013/09/04&quot; , &quot;&quot; , &quot;stuff&quot;  , &quot;Expneses:Others&quot;  , &quot;P&quot;      , &quot;20&quot;    , &quot;*&quot;             , &quot;&quot;</code></pre>
+</body>
+</html>

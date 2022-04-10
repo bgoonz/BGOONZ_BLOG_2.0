@@ -1,38 +1,39 @@
-# Everything You Need To Become A Machine Learner
+Everything You Need To Become A Machine Learner
+===============================================
 
 This list of resources is specifically targeted at Web Developers and Data Scientists…. so do with it what you will…This list borrows…
 
----
+------------------------------------------------------------------------
 
 ### Everything You Need To Become A Machine Learner
 
-#### _This list of resources is specifically targeted at Web Developers and Data Scientists…. so do with it what you will…This list borrows heavily from multiple lists created by :_ <a href="https://github.com/sindresorhus" class="markup--anchor markup--h4-anchor"><em>sindresorhus</em></a>
+#### *This list of resources is specifically targeted at Web Developers and Data Scientists…. so do with it what you will…This list borrows heavily from multiple lists created by :* <a href="https://github.com/sindresorhus" class="markup--anchor markup--h4-anchor"><em>sindresorhus</em></a>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*KLzv9YgXVEYUpnk8.jpg" class="graf-image" /></figure>Machine learning is a subfield of artificial intelligence, which is broadly defined as the capability of a machine to imitate intelligent human behavior. Artificial intelligence systems are used to perform complex tasks in a way that is similar to how humans solve problems.
 
-> _The goal of AI is to create computer models that exhibit "intelligent behaviors" like humans, according to_ <a href="https://www.csail.mit.edu/person/boris-katz" class="markup--anchor markup--blockquote-anchor"><em>Boris Katz</em></a>_, a principal research scientist and head of the InfoLab Group at CSAIL. This means machines that can recognize a visual scene, understand a text written in natural language, or perform an action in the physical world._
+> *The goal of AI is to create computer models that exhibit “intelligent behaviors” like humans, according to* <a href="https://www.csail.mit.edu/person/boris-katz" class="markup--anchor markup--blockquote-anchor"><em>Boris Katz</em></a>*, a principal research scientist and head of the InfoLab Group at CSAIL. This means machines that can recognize a visual scene, understand a text written in natural language, or perform an action in the physical world.*
 
-> _Machine learning is one way to use AI. It was defined in the 1950s by AI pioneer_ <a href="https://en.wikipedia.org/wiki/Arthur_Samuel" class="markup--anchor markup--blockquote-anchor"><em>Arthur Samuel</em></a> _as "the field of study that gives computers the ability to learn without explicitly being programmed."_
+> *Machine learning is one way to use AI. It was defined in the 1950s by AI pioneer* <a href="https://en.wikipedia.org/wiki/Arthur_Samuel" class="markup--anchor markup--blockquote-anchor"><em>Arthur Samuel</em></a> *as “the field of study that gives computers the ability to learn without explicitly being programmed.”*
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*c767tks1CPvxbbb5.png" class="graf-image" /></figure>- <span id="3c14">\[📖\] <a href="https://www.amazon.com/Delivering-Happiness-Profits-Passion-Purpose/dp/0446576220" class="markup--anchor markup--li-anchor">Delivering Happiness</a></span>
-- <span id="accd">\[📖\] <a href="https://www.amazon.com/Good-Great-Some-Companies-Others-ebook/dp/B0058DRUV6" class="markup--anchor markup--li-anchor">Good to Great: Why Some Companies Make the Leap…And Others Don't</a></span>
-- <span id="bcc5">\[📖\] <a href="https://www.amazon.com/Hello-Startup-Programmers-Building-Technologies/dp/1491909900" class="markup--anchor markup--li-anchor">Hello, Startup: A Programmer's Guide to Building Products, Technologies, and Teams</a></span>
-- <span id="e47e">\[📖\] <a href="https://www.howgoogleworks.net/" class="markup--anchor markup--li-anchor">How Google Works</a></span>
-- <span id="0016">\[📖\] <a href="https://www.goodreads.com/book/show/817589.Learn_to_Earn" class="markup--anchor markup--li-anchor">Learn to Earn: A Beginner's Guide to the Basics of Investing and Business</a></span>
-- <span id="62e6">\[📖\] <a href="https://www.goodreads.com/book/show/6732019-rework" class="markup--anchor markup--li-anchor">Rework</a></span>
-- <span id="b657">\[📖\] <a href="https://www.amazon.com/Airbnb-Story-Ordinary-Disrupted-Controversy/dp/0544952669" class="markup--anchor markup--li-anchor">The Airbnb Story</a></span>
-- <span id="ec24">\[📖\] <a href="https://www.amazon.com/Personal-MBA-Master-Art-Business/dp/1591845572" class="markup--anchor markup--li-anchor">The Personal MBA</a></span>
-- <span id="cb38">\[ \] <a href="https://learn.fb.com/skillset/marketing-started" class="markup--anchor markup--li-anchor">Facebook: Digital marketing: get started</a></span>
-- <span id="e348">\[ \] <a href="https://learn.fb.com/skillset/marketing-further" class="markup--anchor markup--li-anchor">Facebook: Digital marketing: go further</a></span>
-- <span id="b2b5">\[ \] <a href="https://analytics.google.com/analytics/academy/course/6" class="markup--anchor markup--li-anchor">Google Analytics for Beginners</a></span>
-- <span id="84ba">\[ \] <a href="https://moz.com/beginners-guide-to-seo" class="markup--anchor markup--li-anchor">Moz: The Beginner's Guide to SEO</a></span>
-- <span id="8bef">\[ \] <a href="https://smart.ly/course/abd47e21-4b59-4ccf-910d-fb1c18b2e9df" class="markup--anchor markup--li-anchor">Smartly: Marketing Fundamentals</a></span>
-- <span id="f8cd">\[ \] <a href="https://teamtreehouse.com/library/seo-basics" class="markup--anchor markup--li-anchor">Treehouse: SEO Basics</a></span>
-- <span id="f656">\[🅤\]ꭏ <a href="https://www.udacity.com/course/app-monetization--ud518" class="markup--anchor markup--li-anchor">App Monetization</a></span>
-- <span id="29cb">\[🅤\]ꭏ <a href="https://www.udacity.com/course/app-marketing--ud719" class="markup--anchor markup--li-anchor">App Marketing</a></span>
-- <span id="5781">\[🅤\]ꭏ <a href="https://www.udacity.com/course/how-to-build-a-startup--ep245" class="markup--anchor markup--li-anchor">How to Build a Startup</a></span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*c767tks1CPvxbbb5.png" class="graf-image" /></figure>-   <span id="3c14">\[📖\] <a href="https://www.amazon.com/Delivering-Happiness-Profits-Passion-Purpose/dp/0446576220" class="markup--anchor markup--li-anchor">Delivering Happiness</a></span>
+-   <span id="accd">\[📖\] <a href="https://www.amazon.com/Good-Great-Some-Companies-Others-ebook/dp/B0058DRUV6" class="markup--anchor markup--li-anchor">Good to Great: Why Some Companies Make the Leap…And Others Don’t</a></span>
+-   <span id="bcc5">\[📖\] <a href="https://www.amazon.com/Hello-Startup-Programmers-Building-Technologies/dp/1491909900" class="markup--anchor markup--li-anchor">Hello, Startup: A Programmer’s Guide to Building Products, Technologies, and Teams</a></span>
+-   <span id="e47e">\[📖\] <a href="https://www.howgoogleworks.net/" class="markup--anchor markup--li-anchor">How Google Works</a></span>
+-   <span id="0016">\[📖\] <a href="https://www.goodreads.com/book/show/817589.Learn_to_Earn" class="markup--anchor markup--li-anchor">Learn to Earn: A Beginner’s Guide to the Basics of Investing and Business</a></span>
+-   <span id="62e6">\[📖\] <a href="https://www.goodreads.com/book/show/6732019-rework" class="markup--anchor markup--li-anchor">Rework</a></span>
+-   <span id="b657">\[📖\] <a href="https://www.amazon.com/Airbnb-Story-Ordinary-Disrupted-Controversy/dp/0544952669" class="markup--anchor markup--li-anchor">The Airbnb Story</a></span>
+-   <span id="ec24">\[📖\] <a href="https://www.amazon.com/Personal-MBA-Master-Art-Business/dp/1591845572" class="markup--anchor markup--li-anchor">The Personal MBA</a></span>
+-   <span id="cb38">\[ \] <a href="https://learn.fb.com/skillset/marketing-started" class="markup--anchor markup--li-anchor">Facebook: Digital marketing: get started</a></span>
+-   <span id="e348">\[ \] <a href="https://learn.fb.com/skillset/marketing-further" class="markup--anchor markup--li-anchor">Facebook: Digital marketing: go further</a></span>
+-   <span id="b2b5">\[ \] <a href="https://analytics.google.com/analytics/academy/course/6" class="markup--anchor markup--li-anchor">Google Analytics for Beginners</a></span>
+-   <span id="84ba">\[ \] <a href="https://moz.com/beginners-guide-to-seo" class="markup--anchor markup--li-anchor">Moz: The Beginner’s Guide to SEO</a></span>
+-   <span id="8bef">\[ \] <a href="https://smart.ly/course/abd47e21-4b59-4ccf-910d-fb1c18b2e9df" class="markup--anchor markup--li-anchor">Smartly: Marketing Fundamentals</a></span>
+-   <span id="f8cd">\[ \] <a href="https://teamtreehouse.com/library/seo-basics" class="markup--anchor markup--li-anchor">Treehouse: SEO Basics</a></span>
+-   <span id="f656">\[🅤\]ꭏ <a href="https://www.udacity.com/course/app-monetization--ud518" class="markup--anchor markup--li-anchor">App Monetization</a></span>
+-   <span id="29cb">\[🅤\]ꭏ <a href="https://www.udacity.com/course/app-marketing--ud719" class="markup--anchor markup--li-anchor">App Marketing</a></span>
+-   <span id="5781">\[🅤\]ꭏ <a href="https://www.udacity.com/course/how-to-build-a-startup--ep245" class="markup--anchor markup--li-anchor">How to Build a Startup</a></span>
 
----
+------------------------------------------------------------------------
 
 ### Natural language processing
 
@@ -54,7 +55,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="5ed8">\[ \] <a href="https://dev.to/bgoonz/everything-you-need-to-become-a-machine-learner-1cjp#" class="markup--anchor markup--li-anchor">Real-world AI Case Studies</a></span>
 -   <span id="a586">\[ \] <a href="https://www.youtube.com/watch?v=ZVJTqAuPvTU&amp;list=PL1T8fO7ArWlf4EkqeguoD70LsnOJ7c9Ib&amp;index=7" class="markup--anchor markup--li-anchor">Andrej Karpathy on AI at Tesla (Full Stack Deep Learning — August 2018)</a></span>
 -   <span id="30ce">\[ \] <a href="https://youtu.be/8PjTWFfjkeY?list=PL1T8fO7ArWlf4EkqeguoD70LsnOJ7c9Ib" class="markup--anchor markup--li-anchor">Jai Ranganathan at Data Science at Uber (Full Stack Deep Learning — August 2018)</a></span>
--   <span id="fdf3">\[ \] <a href="https://www.youtube.com/watch?v=9XdGZVohnno" class="markup--anchor markup--li-anchor">John Apostolopoulos of Cisco discusses "Machine Learning in Networking"</a> `0:48:44`</span>
+-   <span id="fdf3">\[ \] <a href="https://www.youtube.com/watch?v=9XdGZVohnno" class="markup--anchor markup--li-anchor">John Apostolopoulos of Cisco discusses “Machine Learning in Networking”</a> `0:48:44`</span>
 -   <span id="afd6">\[ \] <a href="https://www.youtube.com/watch?v=Fw8adDBBfog" class="markup--anchor markup--li-anchor">Joaquin Candela, Director of Applied Machine Learning , Facebook in conversation with Esteban Arcaute</a> `0:52:27`</span>
 -   <span id="1629">\[ \] <a href="https://www.youtube.com/watch?v=z_OGYzT_MBo" class="markup--anchor markup--li-anchor">Eric Colson, Chief Algorithms Officer, Stitch Fix</a> `0:53:57`</span>
 -   <span id="ad62">\[ \] <a href="https://www.youtube.com/watch?v=p0cQUErM5xs" class="markup--anchor markup--li-anchor">Claudia Perlich, Advisor to Dstillery and Adjunct Professor NYU Stern School of Business</a> `0:51:59`</span>
@@ -67,14 +68,14 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="0d82">\[💻\] <a href="https://www.datacamp.com/courses/hr-analytics-in-python-predicting-employee-churn" class="markup--anchor markup--li-anchor">HR Analytics in Python: Predicting Employee Churn</a></span>
 -   <span id="b6e9">\[💻\] <a href="https://www.datacamp.com/courses/predicting-customer-churn-in-python" class="markup--anchor markup--li-anchor">Predicting Customer Churn in Python</a></span>
 -   <span id="98fb">\[📺 \] <a href="https://www.youtube.com/watch?v=wDxTWp3KMMs" class="markup--anchor markup--li-anchor">How does YouTube recommend videos? — AI EXPLAINED!</a> `0:33:53`</span>
--   <span id="a85b">\[📺 \] <a href="https://www.youtube.com/watch?v=sIoHFPGOY0I" class="markup--anchor markup--li-anchor">How does Google Translate's AI work?</a> `0:15:02`</span>
+-   <span id="a85b">\[📺 \] <a href="https://www.youtube.com/watch?v=sIoHFPGOY0I" class="markup--anchor markup--li-anchor">How does Google Translate’s AI work?</a> `0:15:02`</span>
 -   <span id="ac0e">\[📺 \] <a href="https://www.youtube.com/watch?v=mbOkL39Uabs" class="markup--anchor markup--li-anchor">Data Science in Finance</a> `0:17:52`</span>
 -   <span id="73d9">\[📺 \] <a href="https://www.youtube.com/playlist?list=PLjq6DwYksrzz_fsWIpPcf6V7p2RNAneKc" class="markup--anchor markup--li-anchor">The Age of AI</a></span>
 -   <span id="89bb">\[ \] <a href="https://www.youtube.com/watch?v=UwsrzCVZAb8" class="markup--anchor markup--li-anchor">How Far is Too Far? | The Age of A.I.</a> `0:34:39`</span>
 -   <span id="03d7">\[ \] <a href="https://www.youtube.com/watch?v=V5aZjsWM2wo" class="markup--anchor markup--li-anchor">Healed through A.I. | The Age of A.I.</a> `0:39:55`</span>
 -   <span id="fc3f">\[ \] <a href="https://www.youtube.com/watch?v=lrv8ga02VNg" class="markup--anchor markup--li-anchor">Using A.I. to build a better human | The Age of A.I.</a> `0:44:27`</span>
 -   <span id="67bf">\[ \] <a href="https://www.youtube.com/watch?v=Kr1fmKVY3cA" class="markup--anchor markup--li-anchor">Love, art and stories: decoded | The Age of A.I.</a> `0:38:57`</span>
--   <span id="f892">\[ \] <a href="https://www.youtube.com/watch?v=lIvrIKaNCRE" class="markup--anchor markup--li-anchor">The 'Space Architects' of Mars | The Age of A.I.</a> `0:30:10`</span>
+-   <span id="f892">\[ \] <a href="https://www.youtube.com/watch?v=lIvrIKaNCRE" class="markup--anchor markup--li-anchor">The ‘Space Architects’ of Mars | The Age of A.I.</a> `0:30:10`</span>
 -   <span id="e84f">\[ \] <a href="https://www.youtube.com/watch?v=f2aocKWrPG8" class="markup--anchor markup--li-anchor">Will a robot take my job? | The Age of A.I.</a> `0:36:14`</span>
 -   <span id="8867">\[ \] <a href="https://www.youtube.com/watch?v=0wy4u34fii4" class="markup--anchor markup--li-anchor">Saving the world one algorithm at a time | The Age of A.I.</a> `0:46:37`</span>
 -   <span id="140d">\[ \] <a href="https://www.youtube.com/watch?v=VwtC_4t2g5M" class="markup--anchor markup--li-anchor">How A.I. is searching for Aliens | The Age of A.I.</a> `0:36:12`</span>
@@ -83,14 +84,14 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="5b7f">\[📺 \] <a href="https://www.youtube.com/watch?v=uF1V2MqX2U0" class="markup--anchor markup--li-anchor">Google Machine Learning System Design Mock Interview</a></span>
 -   <span id="d304">\[📺 \] <a href="https://www.youtube.com/watch?v=12Ry6kGPQVs" class="markup--anchor markup--li-anchor">Netflix Machine Learning Mock Interview: Type-ahead Search</a></span>
 -   <span id="9621">\[📺 \] <a href="https://www.youtube.com/watch?v=J_0ms1ayqKE" class="markup--anchor markup--li-anchor">Machine Learning design: Search engine for Q&amp;A</a></span>
--   <span id="3bf2">\[📺 \] <a href="https://www.youtube.com/watch?v=sEZsIUBIhNk" class="markup--anchor markup--li-anchor">Engineering Systems for Real-Time Predictions @DoorDash</a></span>
+-   <span id="3bf2">\[📺 \] <a href="https://www.youtube.com/watch?v=sEZsIUBIhNk" class="markup--anchor markup--li-anchor">Engineering Systems for Real-Time Predictions <span class="citation" data-cites="DoorDash">@DoorDash</span></a></span>
 -   <span id="8e0c">\[📺 \] <a href="https://youtu.be/5UjCjVWa3yc?list=LL" class="markup--anchor markup--li-anchor">How Gmail Uses Iterative Design, Machine Learning and AI to Create More Assistive Features</a></span>
 -   <span id="82b1">\[📺 \] <a href="https://youtu.be/miMwyvXt9VI?list=LL" class="markup--anchor markup--li-anchor">Wayfair Data Science Explains It All: Human-in-the-loop Systems</a></span>
 -   <span id="38d6">\[📺 \] <a href="https://youtu.be/Z2FdH3j8Wbc?list=LL" class="markup--anchor markup--li-anchor">Leaving the lab: Building NLP applications that real people can use</a></span>
 -   <span id="232a">\[📺 \] <a href="https://www.youtube.com/watch?v=R9z6s0Jx2p0" class="markup--anchor markup--li-anchor">Machine Learning at Uber (Natural Language Processing Use Cases)</a></span>
 -   <span id="edad">\[📺 \] <a href="https://www.youtube.com/watch?v=Sx3Fpw0XCXk" class="markup--anchor markup--li-anchor">Google Wave: Natural Language Processing</a></span>
 -   <span id="cb09">\[📺 \] <a href="https://www.youtube.com/watch?v=U1yT_4xcglY" class="markup--anchor markup--li-anchor">Natural Language Understanding in Alexa</a></span>
--   <span id="37bb">\[📺 \] <a href="https://www.youtube.com/watch?v=Dkg1ULBASNA" class="markup--anchor markup--li-anchor">The Machine Learning Behind Alexa's AI Systems</a></span>
+-   <span id="37bb">\[📺 \] <a href="https://www.youtube.com/watch?v=Dkg1ULBASNA" class="markup--anchor markup--li-anchor">The Machine Learning Behind Alexa’s AI Systems</a></span>
 -   <span id="3c50">\[📺 \] <a href="https://www.youtube.com/watch?v=mJqFI7vhqdA" class="markup--anchor markup--li-anchor">Ines Montani Keynote — Applied NLP Thinking</a></span>
 -   <span id="5c43">\[📺 \] <a href="https://youtu.be/25_kBogrzrs" class="markup--anchor markup--li-anchor">Lecture 9: Lukas Biewald</a></span>
 -   <span id="ea14">\[📺 \] <a href="https://youtu.be/vF7UgqaegVI" class="markup--anchor markup--li-anchor">Lecture 13: Research Directions</a></span>
@@ -100,9 +101,9 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="fe46">\[📺 \] <a href="https://www.youtube.com/watch?v=n_CTGZSq4m0" class="markup--anchor markup--li-anchor">Rachael Tatman — Conversational A.I. and Linguistics</a> `0:36:51`</span>
 -   <span id="039e">\[📺 \] <a href="https://www.youtube.com/watch?v=NbiG8ZuRsqU" class="markup--anchor markup--li-anchor">Nicolas Koumchatzky — Machine Learning in Production for Self Driving Cars</a> `0:44:56`</span>
 -   <span id="db4e">\[📺 \] <a href="https://www.youtube.com/watch?v=_Ot35PspXw4" class="markup--anchor markup--li-anchor">Brandon Rohrer — Machine Learning in Production for Robots</a> `0:34:31`</span>
--   <span id="b256">\[📺 \] <a href="https://youtu.be/g6bOwQdCJrc" class="markup--anchor markup--li-anchor">[CVPR'21 WAD] Keynote — Andrej Karpathy, Tesla</a></span>
+-   <span id="b256">\[📺 \] <a href="https://youtu.be/g6bOwQdCJrc" class="markup--anchor markup--li-anchor">[CVPR’21 WAD] Keynote — Andrej Karpathy, Tesla</a></span>
 
----
+------------------------------------------------------------------------
 
 ### Be able to frame anMachine Learning problem
 
@@ -142,7 +143,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 
 · **\[📖\]** <a href="https://www.amazon.com/AI-Superpowers-China-Silicon-Valley/dp/132854639X" class="markup--anchor markup--p-anchor"><strong>AI Superpowers: China, Silicon Valley, and the New World Order</strong></a>
 
-· **\[📖\]** <a href="https://www.amazon.com/Humans-Guide-Machine-Intelligence-Algorithms/dp/0525560882" class="markup--anchor markup--p-anchor"><strong>A Human's Guide to Machine Intelligence</strong></a>
+· **\[📖\]** <a href="https://www.amazon.com/Humans-Guide-Machine-Intelligence-Algorithms/dp/0525560882" class="markup--anchor markup--p-anchor"><strong>A Human’s Guide to Machine Intelligence</strong></a>
 
 · **\[📖\]** <a href="https://news.microsoft.com/uploads/2018/01/The-Future-Computed.pdf" class="markup--anchor markup--p-anchor"><strong>The Future Computed</strong></a>
 
@@ -178,13 +179,11 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 
 · **\[📺 \]** <a href="https://youtu.be/xNGI0B_Sn1E?list=LL" class="markup--anchor markup--p-anchor"><strong>Building intuitions before building models</strong></a>
 
----
+------------------------------------------------------------------------
 
 ### Be familiar with data ethics
 
-<figure><img src="https://cdn-images-1.medium.com/max/1200/0*oFBt0xjx-zaZJqsd" class="graf-image" /></figure>
-
--   <span id="e980">**\[📰\]** <a href="https://www.maartengrootendorst.com/blog/bias/" class="markup--anchor markup--li-anchor"><strong>How to Detect Bias in AI</strong></a></span>
+<figure><img src="https://cdn-images-1.medium.com/max/1200/0*oFBt0xjx-zaZJqsd" class="graf-image" /></figure>-   <span id="e980">**\[📰\]** <a href="https://www.maartengrootendorst.com/blog/bias/" class="markup--anchor markup--li-anchor"><strong>How to Detect Bias in AI</strong></a></span>
 -   <span id="3888">**\[ \]** <a href="https://www.netflix.com/np/title/81328723" class="markup--anchor markup--li-anchor"><strong>Netflix: Coded Bias</strong></a></span>
 -   <span id="3f1b">**\[ \]** <a href="https://www.netflix.com/np/title/80117542" class="markup--anchor markup--li-anchor"><strong>Netflix: The Great Hack</strong></a></span>
 -   <span id="9213">**\[ \]** <a href="https://www.netflix.com/np/title/81254224" class="markup--anchor markup--li-anchor"><strong>Netflix: The Social Dilemma</strong></a></span>
@@ -211,14 +210,14 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 
 ### Be able to setup data annotation efficiently
 
-**\[📰\]** <a href="https://towardsdatascience.com/create-a-synthetic-image-dataset-the-what-the-why-and-the-how-f820e6b6f718" class="markup--anchor markup--p-anchor"><strong>Create A Synthetic Image Dataset — The "What", The "Why" and The "How"</strong></a>
+**\[📰\]** <a href="https://towardsdatascience.com/create-a-synthetic-image-dataset-the-what-the-why-and-the-how-f820e6b6f718" class="markup--anchor markup--p-anchor"><strong>Create A Synthetic Image Dataset — The “What”, The “Why” and The “How”</strong></a>
 
 -   <span id="83ea">**\[📰\]** <a href="https://towardsdatascience.com/we-need-synthetic-data-e6f90a8532a4" class="markup--anchor markup--li-anchor"><strong>We need Synthetic Data</strong></a></span>
 -   <span id="82da">**\[📰\]** <a href="https://trishalaneeraj.github.io/2020-07-05/weak-supervision" class="markup--anchor markup--li-anchor"><strong>Weak Supervision for Online Discussions</strong></a></span>
 -   <span id="0baa">**\[📰\]** <a href="https://towardsdatascience.com/ml-infrastructure-tools-for-data-preparation-70d79e70f8d4" class="markup--anchor markup--li-anchor"><strong>Machine Learning Infrastructure Tools for Data Preparation</strong></a></span>
 -   <span id="c1b1">**\[📰\]** <a href="https://medium.com/jigsaw/creating-labeled-datasets-and-exploring-the-role-of-human-raters-56367b6db298" class="markup--anchor markup--li-anchor"><strong>Exploring the Role of Human Raters in Creating NLP Datasets</strong></a></span>
 -   <span id="9636">**\[📰\]** <a href="https://towardsdatascience.com/inter-annotator-agreement-2f46c6d37bf3" class="markup--anchor markup--li-anchor"><strong>Inter-Annotator Agreement (IAA)</strong></a></span>
--   <span id="5e61">**\[📰\]** <a href="https://learnaitech.com/how-to-compute-inter-rater-reliablity-metrics-cohens-kappa-fleisss-kappa-cronbach-alpha-kripndorff-alpha-scotts-pi-inter-class-correlation-in-python/" class="markup--anchor markup--li-anchor"><strong>How to compute inter-rater reliability metrics (Cohen's Kappa, Fleiss's Kappa, Cronbach Alpha, Krippendorff Alpha, Scott's Pi, Inter-class correlation) in Python</strong></a></span>
+-   <span id="5e61">**\[📰\]** <a href="https://learnaitech.com/how-to-compute-inter-rater-reliablity-metrics-cohens-kappa-fleisss-kappa-cronbach-alpha-kripndorff-alpha-scotts-pi-inter-class-correlation-in-python/" class="markup--anchor markup--li-anchor"><strong>How to compute inter-rater reliability metrics (Cohen’s Kappa, Fleiss’s Kappa, Cronbach Alpha, Krippendorff Alpha, Scott’s Pi, Inter-class correlation) in Python</strong></a></span>
 -   <span id="d899">**\[📺 \]** <a href="https://www.youtube.com/watch?v=yu15Nf5eJEE" class="markup--anchor markup--li-anchor"><strong>Snorkel: Dark Data and Machine Learning — Christopher Ré</strong></a></span>
 -   <span id="6598">**\[📺 \]** <a href="https://youtu.be/59BKHO_xBPA" class="markup--anchor markup--li-anchor"><strong>Training a NER Model with Prodigy and Transfer Learning</strong></a></span>
 -   <span id="bd05">**\[📺 \]** <a href="https://youtu.be/l4scwf8KeIA" class="markup--anchor markup--li-anchor"><strong>Training a New Entity Type with Prodigy — annotation powered by active learning</strong></a></span>
@@ -231,13 +230,11 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="1fa7">**\[📺 \]** <a href="https://www.youtube.com/watch?v=6e6aI4yjAxc" class="markup--anchor markup--li-anchor"><strong>SE4AI: Data Programming and Intro to Big Data Processing</strong></a> **0:33:04**</span>
 -   <span id="ea6c">**\[📺 \]** <a href="https://www.youtube.com/watch?v=iPmQ5ezQNPY" class="markup--anchor markup--li-anchor"><strong>SE4AI: Managing and Processing Large Datasets</strong></a> **1:21:27**</span>
 
----
+------------------------------------------------------------------------
 
 ### Be able to manipulate data with Numpy
 
-<figure><img src="https://cdn-images-1.medium.com/max/1200/1*VYGDIe6FVYL5uRZ_YrQraQ.png" class="graf-image" /></figure>
-
--   <span id="007b">**\[📰\]** <a href="https://jalammar.github.io/visual-numpy/" class="markup--anchor markup--li-anchor"><strong>A Visual Intro to NumPy and Data Representation</strong></a></span>
+<figure><img src="https://cdn-images-1.medium.com/max/1200/1*VYGDIe6FVYL5uRZ_YrQraQ.png" class="graf-image" /></figure>-   <span id="007b">**\[📰\]** <a href="https://jalammar.github.io/visual-numpy/" class="markup--anchor markup--li-anchor"><strong>A Visual Intro to NumPy and Data Representation</strong></a></span>
 -   <span id="e5c6">**\[📰\]** <a href="https://albertcthomas.github.io/good-practices-random-number-generators/" class="markup--anchor markup--li-anchor"><strong>Good practices with numpy random number generators</strong></a></span>
 -   <span id="14f3">**\[📰\]** <a href="https://medium.com/better-programming/numpy-illustrated-the-visual-guide-to-numpy-3b1d4976de1d" class="markup--anchor markup--li-anchor"><strong>NumPy Illustrated: The Visual Guide to NumPy</strong></a></span>
 -   <span id="905b">**\[📰\]** <a href="https://pabloinsente.github.io/intro-numpy-fundamentals" class="markup--anchor markup--li-anchor"><strong>NumPy Fundamentals for Data Science and Machine Learning</strong></a></span>
@@ -246,28 +243,28 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 
 ### Be able to manipulate data with Pandas
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*JLvULIyCErhYRfRDkcBKMw.gif" class="graf-image" /></figure>- <span id="c8f5">**\[📰\]** <a href="https://jalammar.github.io/visualizing-pandas-pivoting-and-reshaping/" class="markup--anchor markup--li-anchor"><strong>Visualizing Pandas' Pivoting and Reshaping Functions</strong></a></span>
-- <span id="bfe3">**\[📰\]** <a href="https://jalammar.github.io/gentle-visual-intro-to-data-analysis-python-pandas/" class="markup--anchor markup--li-anchor"><strong>A Gentle Visual Intro to Data Analysis in Python Using Pandas</strong></a></span>
-- <span id="35ee">**\[📰\]** <a href="https://pbpython.com/groupby-agg.html" class="markup--anchor markup--li-anchor"><strong>Comprehensive Guide to Grouping and Aggregating with Pandas</strong></a></span>
-- <span id="ef61">**\[📰\]** <a href="https://re-thought.com/pandas-value_counts/" class="markup--anchor markup--li-anchor"><strong>8 Python Pandas Value_counts() tricks that make your work more efficient</strong></a></span>
-- <span id="447f">**\[💻\]** <a href="https://www.datacamp.com/courses/pandas-foundations" class="markup--anchor markup--li-anchor"><strong>pandas Foundations</strong></a></span>
-- <span id="79c2">**\[💻\]** <a href="https://www.datacamp.com/courses/pandas-joins-for-spreadsheet-users" class="markup--anchor markup--li-anchor"><strong>Pandas Joins for Spreadsheet Users</strong></a></span>
-- <span id="f927">**\[💻\]** <a href="https://www.datacamp.com/courses/manipulating-dataframes-with-pandas" class="markup--anchor markup--li-anchor"><strong>Manipulating DataFrames with pandas</strong></a></span>
-- <span id="865e">**\[💻\]** <a href="https://www.datacamp.com/courses/merging-dataframes-with-pandas" class="markup--anchor markup--li-anchor"><strong>Merging DataFrames with pandas</strong></a></span>
-- <span id="2e8d">**\[💻\]** <a href="https://www.datacamp.com/courses/data-manipulation-with-pandas" class="markup--anchor markup--li-anchor"><strong>Data Manipulation with pandas</strong></a></span>
-- <span id="dec6">**\[💻\]** <a href="https://www.datacamp.com/courses/optimizing-python-code-with-pandas" class="markup--anchor markup--li-anchor"><strong>Optimizing Python Code with pandas</strong></a></span>
-- <span id="b0e7">**\[💻\]** <a href="https://www.datacamp.com/courses/streamlined-data-ingestion-with-pandas" class="markup--anchor markup--li-anchor"><strong>Streamlined Data Ingestion with pandas</strong></a></span>
-- <span id="3ced">**\[💻\]** <a href="https://www.datacamp.com/courses/analyzing-marketing-campaigns-with-pandas" class="markup--anchor markup--li-anchor"><strong>Analyzing Marketing Campaigns with pandas</strong></a></span>
-- <span id="e4c7">**\[ \]** <a href="https://www.edx.org/course/implementing-predictive-analytics-spark-microsoft-dat202-3x-2" class="markup--anchor markup--li-anchor"><strong>edX: Implementing Predictive Analytics with Spark in Azure HDInsight</strong></a></span>
-- <span id="aaf0">**\[📰\]** <a href="https://tomaugspurger.github.io/" class="markup--anchor markup--li-anchor"><strong>Modern Pandas</strong></a></span>
-- <span id="230a">**\[ \]** <a href="https://tomaugspurger.github.io/modern-1-intro.html" class="markup--anchor markup--li-anchor"><strong>Modern Pandas (Part 1)</strong></a></span>
-- <span id="df40">**\[ \]** <a href="https://tomaugspurger.github.io/method-chaining.html" class="markup--anchor markup--li-anchor"><strong>Modern Pandas (Part 2)</strong></a></span>
-- <span id="0c27">**\[ \]** <a href="https://tomaugspurger.github.io/modern-3-indexes.html" class="markup--anchor markup--li-anchor"><strong>Modern Pandas (Part 3)</strong></a></span>
-- <span id="9267">**\[ \]** <a href="https://tomaugspurger.github.io/modern-4-performance.html" class="markup--anchor markup--li-anchor"><strong>Modern Pandas (Part 4)</strong></a></span>
-- <span id="e6d8">**\[ \]** <a href="https://tomaugspurger.github.io/modern-5-tidy.html" class="markup--anchor markup--li-anchor"><strong>Modern Pandas (Part 5)</strong></a></span>
-- <span id="3e82">**\[ \]** <a href="https://tomaugspurger.github.io/modern-6-visualization.html" class="markup--anchor markup--li-anchor"><strong>Modern Pandas (Part 6)</strong></a></span>
-- <span id="7081">**\[ \]** <a href="https://tomaugspurger.github.io/modern-7-timeseries.html" class="markup--anchor markup--li-anchor"><strong>Modern Pandas (Part 7)</strong></a></span>
-- <span id="fa37">**\[ \]** <a href="https://tomaugspurger.github.io/modern-8-scaling.html" class="markup--anchor markup--li-anchor"><strong>Modern Pandas (Part 8)</strong></a></span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*JLvULIyCErhYRfRDkcBKMw.gif" class="graf-image" /></figure>-   <span id="c8f5">**\[📰\]** <a href="https://jalammar.github.io/visualizing-pandas-pivoting-and-reshaping/" class="markup--anchor markup--li-anchor"><strong>Visualizing Pandas’ Pivoting and Reshaping Functions</strong></a></span>
+-   <span id="bfe3">**\[📰\]** <a href="https://jalammar.github.io/gentle-visual-intro-to-data-analysis-python-pandas/" class="markup--anchor markup--li-anchor"><strong>A Gentle Visual Intro to Data Analysis in Python Using Pandas</strong></a></span>
+-   <span id="35ee">**\[📰\]** <a href="https://pbpython.com/groupby-agg.html" class="markup--anchor markup--li-anchor"><strong>Comprehensive Guide to Grouping and Aggregating with Pandas</strong></a></span>
+-   <span id="ef61">**\[📰\]** <a href="https://re-thought.com/pandas-value_counts/" class="markup--anchor markup--li-anchor"><strong>8 Python Pandas Value_counts() tricks that make your work more efficient</strong></a></span>
+-   <span id="447f">**\[💻\]** <a href="https://www.datacamp.com/courses/pandas-foundations" class="markup--anchor markup--li-anchor"><strong>pandas Foundations</strong></a></span>
+-   <span id="79c2">**\[💻\]** <a href="https://www.datacamp.com/courses/pandas-joins-for-spreadsheet-users" class="markup--anchor markup--li-anchor"><strong>Pandas Joins for Spreadsheet Users</strong></a></span>
+-   <span id="f927">**\[💻\]** <a href="https://www.datacamp.com/courses/manipulating-dataframes-with-pandas" class="markup--anchor markup--li-anchor"><strong>Manipulating DataFrames with pandas</strong></a></span>
+-   <span id="865e">**\[💻\]** <a href="https://www.datacamp.com/courses/merging-dataframes-with-pandas" class="markup--anchor markup--li-anchor"><strong>Merging DataFrames with pandas</strong></a></span>
+-   <span id="2e8d">**\[💻\]** <a href="https://www.datacamp.com/courses/data-manipulation-with-pandas" class="markup--anchor markup--li-anchor"><strong>Data Manipulation with pandas</strong></a></span>
+-   <span id="dec6">**\[💻\]** <a href="https://www.datacamp.com/courses/optimizing-python-code-with-pandas" class="markup--anchor markup--li-anchor"><strong>Optimizing Python Code with pandas</strong></a></span>
+-   <span id="b0e7">**\[💻\]** <a href="https://www.datacamp.com/courses/streamlined-data-ingestion-with-pandas" class="markup--anchor markup--li-anchor"><strong>Streamlined Data Ingestion with pandas</strong></a></span>
+-   <span id="3ced">**\[💻\]** <a href="https://www.datacamp.com/courses/analyzing-marketing-campaigns-with-pandas" class="markup--anchor markup--li-anchor"><strong>Analyzing Marketing Campaigns with pandas</strong></a></span>
+-   <span id="e4c7">**\[ \]** <a href="https://www.edx.org/course/implementing-predictive-analytics-spark-microsoft-dat202-3x-2" class="markup--anchor markup--li-anchor"><strong>edX: Implementing Predictive Analytics with Spark in Azure HDInsight</strong></a></span>
+-   <span id="aaf0">**\[📰\]** <a href="https://tomaugspurger.github.io/" class="markup--anchor markup--li-anchor"><strong>Modern Pandas</strong></a></span>
+-   <span id="230a">**\[ \]** <a href="https://tomaugspurger.github.io/modern-1-intro.html" class="markup--anchor markup--li-anchor"><strong>Modern Pandas (Part 1)</strong></a></span>
+-   <span id="df40">**\[ \]** <a href="https://tomaugspurger.github.io/method-chaining.html" class="markup--anchor markup--li-anchor"><strong>Modern Pandas (Part 2)</strong></a></span>
+-   <span id="0c27">**\[ \]** <a href="https://tomaugspurger.github.io/modern-3-indexes.html" class="markup--anchor markup--li-anchor"><strong>Modern Pandas (Part 3)</strong></a></span>
+-   <span id="9267">**\[ \]** <a href="https://tomaugspurger.github.io/modern-4-performance.html" class="markup--anchor markup--li-anchor"><strong>Modern Pandas (Part 4)</strong></a></span>
+-   <span id="e6d8">**\[ \]** <a href="https://tomaugspurger.github.io/modern-5-tidy.html" class="markup--anchor markup--li-anchor"><strong>Modern Pandas (Part 5)</strong></a></span>
+-   <span id="3e82">**\[ \]** <a href="https://tomaugspurger.github.io/modern-6-visualization.html" class="markup--anchor markup--li-anchor"><strong>Modern Pandas (Part 6)</strong></a></span>
+-   <span id="7081">**\[ \]** <a href="https://tomaugspurger.github.io/modern-7-timeseries.html" class="markup--anchor markup--li-anchor"><strong>Modern Pandas (Part 7)</strong></a></span>
+-   <span id="fa37">**\[ \]** <a href="https://tomaugspurger.github.io/modern-8-scaling.html" class="markup--anchor markup--li-anchor"><strong>Modern Pandas (Part 8)</strong></a></span>
 
 ### Be able to manipulate data in spreadsheets
 
@@ -315,11 +312,11 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 
 > <a href="https://medium.com/geekculture/bash-commands-that-save-time-920fb6ab9d0a" class="markup--anchor markup--blockquote-anchor">Bash Commands That Save Me Time and Frustration</a>
 
-> <a href="https://medium.com/geekculture/bash-commands-that-save-time-920fb6ab9d0a" class="markup--anchor markup--blockquote-anchor">Here's a list of bash commands that stand between me and insanity.</a>
+> <a href="https://medium.com/geekculture/bash-commands-that-save-time-920fb6ab9d0a" class="markup--anchor markup--blockquote-anchor">Here’s a list of bash commands that stand between me and insanity.</a>
 
 > <a href="https://medium.com/geekculture/life-saving-bash-scripts-part-2-b40c8ee22682" class="markup--anchor markup--blockquote-anchor">Life Saving Bash Scripts Part 2</a>
 
-> <a href="https://medium.com/geekculture/life-saving-bash-scripts-part-2-b40c8ee22682" class="markup--anchor markup--blockquote-anchor">I am not saying they're in any way special compared with other bash scripts… but when I consider that you can never…</a>
+> <a href="https://medium.com/geekculture/life-saving-bash-scripts-part-2-b40c8ee22682" class="markup--anchor markup--blockquote-anchor">I am not saying they’re in any way special compared with other bash scripts… but when I consider that you can never…</a>
 
 > <a href="https://bryanguner.medium.com/what-are-bash-aliases-and-why-should-you-be-using-them-30a6cfafdfeb" class="markup--anchor markup--blockquote-anchor">What Are Bash Aliases And Why Should You Be Using Them!</a>
 
@@ -329,9 +326,9 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 
 > <a href="https://bryanguner.medium.com/bash-d3077114aea7" class="markup--anchor markup--blockquote-anchor">My Bash Cheatsheet Index:</a>
 
----
+------------------------------------------------------------------------
 
-> <a href="https://gist.github.com/bgoonz/df74dfa73bb5edd239ac738a14104eee" class="markup--anchor markup--pullquote-anchor"><em>holy grail</em></a> _of learning bash_
+> <a href="https://gist.github.com/bgoonz/df74dfa73bb5edd239ac738a14104eee" class="markup--anchor markup--pullquote-anchor"><em>holy grail</em></a> *of learning bash*
 
 -   <span id="2fd9">**\[📰\]** <a href="https://dev.to/yankee/streamline-projects-using-makefile-28fe" class="markup--anchor markup--li-anchor"><strong>Streamline your projects using Makefile</strong></a></span>
 -   <span id="6805">**\[📰\]** <a href="https://www.tecmint.com/understand-linux-load-averages-and-monitor-performance/" class="markup--anchor markup--li-anchor"><strong>Understand Linux Load Averages and Monitor Performance of Linux</strong></a></span>
@@ -368,7 +365,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="5fea">**\[📰\]** <a href="https://www.jeremyjordan.me/preparing-data-for-a-machine-learning-model/" class="markup--anchor markup--li-anchor"><strong>Preparing data for a machine learning model</strong></a></span>
 -   <span id="1fd5">**\[📰\]** <a href="https://www.jeremyjordan.me/feature-selection/" class="markup--anchor markup--li-anchor"><strong>Feature selection for a machine learning model</strong></a></span>
 -   <span id="c2a0">**\[📰\]** <a href="https://www.jeremyjordan.me/imbalanced-data/" class="markup--anchor markup--li-anchor"><strong>Learning from imbalanced data</strong></a></span>
--   <span id="2247">**\[📰\]** <a href="https://www.curiousily.com/posts/hackers-guide-to-data-preparation-for-machine-learning/" class="markup--anchor markup--li-anchor"><strong>Hacker's Guide to Data Preparation for Machine Learning</strong></a></span>
+-   <span id="2247">**\[📰\]** <a href="https://www.curiousily.com/posts/hackers-guide-to-data-preparation-for-machine-learning/" class="markup--anchor markup--li-anchor"><strong>Hacker’s Guide to Data Preparation for Machine Learning</strong></a></span>
 -   <span id="c9bd">**\[📰\]** <a href="https://www.curiousily.com/posts/practical-guide-to-handling-imbalanced-datasets/" class="markup--anchor markup--li-anchor"><strong>Practical Guide to Handling Imbalanced Datasets</strong></a></span>
 -   <span id="da26">**\[💻\]** <a href="https://www.datacamp.com/courses/analyzing-social-media-data-in-python" class="markup--anchor markup--li-anchor"><strong>Analyzing Social Media Data in Python</strong></a></span>
 -   <span id="e398">**\[💻\]** <a href="https://www.datacamp.com/courses/dimensionality-reduction-in-python" class="markup--anchor markup--li-anchor"><strong>Dimensionality Reduction in Python</strong></a></span>
@@ -396,7 +393,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="b0cb">**\[ \]** <a href="https://www.pluralsight.com/courses/jupyter-notebook-python" class="markup--anchor markup--li-anchor"><strong>Pluralsight: Getting Started with Jupyter Notebook and Python</strong></a></span>
 -   <span id="e3fc">**\[📺 \]** <a href="https://www.youtube.com/watch?v=kFhhCOeYcGw" class="markup--anchor markup--li-anchor"><strong>William Horton — A Brief History of Jupyter Notebooks</strong></a></span>
 -   <span id="9dde">**\[📺 \]** <a href="https://www.youtube.com/watch?v=9Q6sLbz37gk" class="markup--anchor markup--li-anchor"><strong>I Like Notebooks</strong></a></span>
--   <span id="0c6a">**\[📺 \]** <a href="https://www.youtube.com/watch?v=7jiPeIFXb6U" class="markup--anchor markup--li-anchor"><strong>I don't like notebooks.- Joel Grus (Allen Institute for Artificial Intelligence)</strong></a></span>
+-   <span id="0c6a">**\[📺 \]** <a href="https://www.youtube.com/watch?v=7jiPeIFXb6U" class="markup--anchor markup--li-anchor"><strong>I don’t like notebooks.- Joel Grus (Allen Institute for Artificial Intelligence)</strong></a></span>
 -   <span id="f215">**\[📺 \]** <a href="https://www.youtube.com/watch?v=hGHwu1h3l6g" class="markup--anchor markup--li-anchor"><strong>Ryan Herr — After model.fit, before you deploy| JupyterCon 2020</strong></a></span>
 -   <span id="c187">**\[📺 \]** <a href="https://www.youtube.com/watch?v=ZJTop5uqC2U&amp;feature=youtu.be" class="markup--anchor markup--li-anchor"><strong>nbdev live coding with Hamel Husain</strong></a></span>
 -   <span id="6fe1">**\[📺 \]** <a href="https://www.youtube.com/watch?v=A5YyoCKxEOU&amp;feature=emb_logo" class="markup--anchor markup--li-anchor"><strong>How to Use JupyterLab</strong></a></span>
@@ -422,14 +419,14 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="2f24">**\[ \]** <a href="https://www.youtube.com/watch?v=9vKqVkMQHKk" class="markup--anchor markup--li-anchor"><strong>The paradox of the derivative | Essence of calculus, chapter 2</strong></a> **0:17:57**</span>
 -   <span id="681a">**\[ \]** <a href="https://www.youtube.com/watch?v=S0_qX4VJhMQ" class="markup--anchor markup--li-anchor"><strong>Derivative formulas through geometry | Essence of calculus, chapter 3</strong></a> **0:18:43**</span>
 -   <span id="aaf2">**\[ \]** <a href="https://www.youtube.com/watch?v=YG15m2VwSjA" class="markup--anchor markup--li-anchor"><strong>Visualizing the chain rule and product rule | Essence of calculus, chapter 4</strong></a> **0:16:52**</span>
--   <span id="b904">**\[ \]** <a href="https://www.youtube.com/watch?v=m2MIpDrF7Es" class="markup--anchor markup--li-anchor"><strong>What's so special about Euler's number e? | Essence of calculus, chapter 5</strong></a> **0:13:50**</span>
--   <span id="8548">**\[ \]** <a href="https://www.youtube.com/watch?v=qb40J4N1fa4" class="markup--anchor markup--li-anchor"><strong>Implicit differentiation, what's going on here? | Essence of calculus, chapter 6</strong></a> **0:15:33**</span>
--   <span id="68e4">**\[ \]** <a href="https://www.youtube.com/watch?v=kfF40MiS7zA" class="markup--anchor markup--li-anchor"><strong>Limits, L'Hôpital's rule, and epsilon delta definitions | Essence of calculus, chapter 7</strong></a> **0:18:26**</span>
+-   <span id="b904">**\[ \]** <a href="https://www.youtube.com/watch?v=m2MIpDrF7Es" class="markup--anchor markup--li-anchor"><strong>What’s so special about Euler’s number e? | Essence of calculus, chapter 5</strong></a> **0:13:50**</span>
+-   <span id="8548">**\[ \]** <a href="https://www.youtube.com/watch?v=qb40J4N1fa4" class="markup--anchor markup--li-anchor"><strong>Implicit differentiation, what’s going on here? | Essence of calculus, chapter 6</strong></a> **0:15:33**</span>
+-   <span id="68e4">**\[ \]** <a href="https://www.youtube.com/watch?v=kfF40MiS7zA" class="markup--anchor markup--li-anchor"><strong>Limits, L’Hôpital’s rule, and epsilon delta definitions | Essence of calculus, chapter 7</strong></a> **0:18:26**</span>
 -   <span id="1d16">**\[ \]** <a href="https://www.youtube.com/watch?v=rfG8ce4nNh0" class="markup--anchor markup--li-anchor"><strong>Integration and the fundamental theorem of calculus | Essence of calculus, chapter 8</strong></a> **0:20:46**</span>
 -   <span id="1632">**\[ \]** <a href="https://www.youtube.com/watch?v=FnJqaIESC2s" class="markup--anchor markup--li-anchor"><strong>What does area have to do with slope? | Essence of calculus, chapter 9</strong></a> **0:12:39**</span>
 -   <span id="27e7">**\[ \]** <a href="https://www.youtube.com/watch?v=BLkz5LGWihw" class="markup--anchor markup--li-anchor"><strong>Higher order derivatives | Essence of calculus, chapter 10</strong></a> **0:05:38**</span>
 -   <span id="ea2b">**\[ \]** <a href="https://www.youtube.com/watch?v=3d6DsjIBzJ4" class="markup--anchor markup--li-anchor"><strong>Taylor series | Essence of calculus, chapter 11</strong></a> **0:22:19**</span>
--   <span id="3181">**\[ \]** <a href="https://www.youtube.com/watch?v=CfW845LNObM" class="markup--anchor markup--li-anchor"><strong>What they won't teach you in calculus</strong></a> **0:16:22**</span>
+-   <span id="3181">**\[ \]** <a href="https://www.youtube.com/watch?v=CfW845LNObM" class="markup--anchor markup--li-anchor"><strong>What they won’t teach you in calculus</strong></a> **0:16:22**</span>
 -   <span id="42ff">**\[ \]** <a href="https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab" class="markup--anchor markup--li-anchor"><strong>3Blue1Brown: Essence of linear algebra</strong></a></span>
 -   <span id="32f1">**\[ \]** <a href="https://www.youtube.com/watch?v=fNk_zzaMoSs" class="markup--anchor markup--li-anchor"><strong>Vectors, what even are they? | Essence of linear algebra, chapter 1</strong></a> **0:09:52**</span>
 -   <span id="c25a">**\[ \]** <a href="https://www.youtube.com/watch?v=k7RM-ot2NWY" class="markup--anchor markup--li-anchor"><strong>Linear combinations, span, and basis vectors | Essence of linear algebra, chapter 2</strong></a> **0:09:59**</span>
@@ -442,7 +439,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="5346">**\[ \]** <a href="https://www.youtube.com/watch?v=LyGKycYT2v0" class="markup--anchor markup--li-anchor"><strong>Dot products and duality | Essence of linear algebra, chapter 9</strong></a> **0:14:11**</span>
 -   <span id="3523">**\[ \]** <a href="https://www.youtube.com/watch?v=eu6i7WJeinw" class="markup--anchor markup--li-anchor"><strong>Cross products | Essence of linear algebra, Chapter 10</strong></a> **0:08:53**</span>
 -   <span id="7d2e">**\[ \]** <a href="https://www.youtube.com/watch?v=BaM7OCEm3G0" class="markup--anchor markup--li-anchor"><strong>Cross products in the light of linear transformations | Essence of linear algebra chapter 11</strong></a> **0:13:10**</span>
--   <span id="3e49">**\[ \]** <a href="https://www.youtube.com/watch?v=jBsC34PxzoM" class="markup--anchor markup--li-anchor"><strong>Cramer's rule, explained geometrically | Essence of linear algebra, chapter 12</strong></a> **0:12:12**</span>
+-   <span id="3e49">**\[ \]** <a href="https://www.youtube.com/watch?v=jBsC34PxzoM" class="markup--anchor markup--li-anchor"><strong>Cramer’s rule, explained geometrically | Essence of linear algebra, chapter 12</strong></a> **0:12:12**</span>
 -   <span id="959d">**\[ \]** <a href="https://www.youtube.com/watch?v=P2LTAUO1TdA" class="markup--anchor markup--li-anchor"><strong>Change of basis | Essence of linear algebra, chapter 13</strong></a> **0:12:50**</span>
 -   <span id="ccca">**\[ \]** <a href="https://www.youtube.com/watch?v=PFDu9oVAE-g" class="markup--anchor markup--li-anchor"><strong>Eigenvectors and eigenvalues | Essence of linear algebra, chapter 14</strong></a> **0:17:15**</span>
 -   <span id="dcab">**\[ \]** <a href="https://www.youtube.com/watch?v=TgKwz5Ikpc8" class="markup--anchor markup--li-anchor"><strong>Abstract vector spaces | Essence of linear algebra, chapter 15</strong></a> **0:16:46**</span>
@@ -455,11 +452,11 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="a134">**\[📰\]** <a href="https://towardsdatascience.com/entropy-cross-entropy-and-kl-divergence-17138ffab87b" class="markup--anchor markup--li-anchor"><strong>Entropy, Cross Entropy, and KL Divergence</strong></a></span>
 -   <span id="d4cb">**\[📰\]** <a href="https://medium.com/acing-ai/interview-guide-to-probability-distributions-a6dfb08c3766" class="markup--anchor markup--li-anchor"><strong>Interview Guide to Probability Distributions</strong></a></span>
 -   <span id="34dc">**\[📰\]** <a href="https://pabloinsente.github.io/intro-linear-algebra" class="markup--anchor markup--li-anchor"><strong>Introduction to Linear Algebra for Applied Machine Learning with Python</strong></a></span>
--   <span id="5a78">**\[📰\]** <a href="https://medium.com/@ajitrajasekharan/entropy-of-a-probability-distribution-explained-in-laymans-terms-8a4139b329bc" class="markup--anchor markup--li-anchor"><strong>Entropy of a probability distribution — in layman's terms</strong></a></span>
--   <span id="1e69">**\[📰\]** <a href="https://medium.com/@ajitrajasekharan/what-is-kl-divergence-d1fb7921ee5b" class="markup--anchor markup--li-anchor"><strong>KL Divergence — in layman's terms</strong></a></span>
+-   <span id="5a78">**\[📰\]** <a href="https://medium.com/@ajitrajasekharan/entropy-of-a-probability-distribution-explained-in-laymans-terms-8a4139b329bc" class="markup--anchor markup--li-anchor"><strong>Entropy of a probability distribution — in layman’s terms</strong></a></span>
+-   <span id="1e69">**\[📰\]** <a href="https://medium.com/@ajitrajasekharan/what-is-kl-divergence-d1fb7921ee5b" class="markup--anchor markup--li-anchor"><strong>KL Divergence — in layman’s terms</strong></a></span>
 -   <span id="e619">**\[📰\]** <a href="https://www.simonwardjones.co.uk/posts/probability_distributions/" class="markup--anchor markup--li-anchor"><strong>Probability Distributions</strong></a></span>
 -   <span id="69b6">**\[📰\]** <a href="https://www.dhruvonmath.com/2018/12/31/matrices/" class="markup--anchor markup--li-anchor"><strong>Relearning Matrices as Linear Functions</strong></a></span>
--   <span id="6ed7">**\[📰\]** <a href="https://www.dhruvonmath.com/2019/02/25/eigenvectors/" class="markup--anchor markup--li-anchor"><strong>You Could Have Come Up With Eigenvectors — Here's How</strong></a></span>
+-   <span id="6ed7">**\[📰\]** <a href="https://www.dhruvonmath.com/2019/02/25/eigenvectors/" class="markup--anchor markup--li-anchor"><strong>You Could Have Come Up With Eigenvectors — Here’s How</strong></a></span>
 -   <span id="8aa6">**\[📰\]** <a href="https://www.dhruvonmath.com/2019/03/20/pagerank/" class="markup--anchor markup--li-anchor"><strong>PageRank — How Eigenvectors Power the Algorithm Behind Google Search</strong></a></span>
 -   <span id="8f65">**\[📰\]** <a href="https://www.dhruvonmath.com/2020/07/26/who-cares-about-eigenvectors/" class="markup--anchor markup--li-anchor"><strong>Interactive Visualization of Why Eigenvectors Matter</strong></a></span>
 -   <span id="da3a">**\[📰\]** <a href="https://medium.com/swlh/cross-entropy-and-kl-divergence-522d9f71bd3d" class="markup--anchor markup--li-anchor"><strong>Cross-Entropy and KL Divergence</strong></a></span>
@@ -518,7 +515,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="16f8">**\[ \]** <a href="https://www.youtube.com/watch?v=Rsc5znwR5FA" class="markup--anchor markup--li-anchor"><strong>Statistical Power, Clearly Explained!!!</strong></a> **0:08:19**</span>
 -   <span id="339f">**\[ \]** <a href="https://www.youtube.com/watch?v=VX_M3tIyiYk" class="markup--anchor markup--li-anchor"><strong>Power Analysis, Clearly Explained!!!</strong></a> **0:16:44**</span>
 -   <span id="452c">**\[ \]** <a href="https://www.youtube.com/watch?v=qtaqvPAeEJY" class="markup--anchor markup--li-anchor"><strong>Covariance and Correlation Part 1: Covariance</strong></a> **0:22:23**</span>
--   <span id="f785">**\[ \]** <a href="https://www.youtube.com/watch?v=xZ_z8KWkhXE" class="markup--anchor markup--li-anchor"><strong>Covariance and Correlation Part 2: Pearson's Correlation</strong></a> **0:19:13**</span>
+-   <span id="f785">**\[ \]** <a href="https://www.youtube.com/watch?v=xZ_z8KWkhXE" class="markup--anchor markup--li-anchor"><strong>Covariance and Correlation Part 2: Pearson’s Correlation</strong></a> **0:19:13**</span>
 -   <span id="d5b4">**\[ \]** <a href="https://www.youtube.com/watch?v=2AQKmw14mHM" class="markup--anchor markup--li-anchor"><strong>StatQuest: R-squared explained</strong></a> **0:11:01**</span>
 -   <span id="4af4">**\[ \]** <a href="https://www.youtube.com/watch?v=YAlJCEDH2uY" class="markup--anchor markup--li-anchor"><strong>The Central Limit Theorem</strong></a> **0:07:35**</span>
 -   <span id="46c7">**\[ \]** <a href="https://www.youtube.com/watch?v=A82brFpdr9g" class="markup--anchor markup--li-anchor"><strong>StatQuickie: Standard Deviation vs Standard Error</strong></a> **0:02:52**</span>
@@ -594,22 +591,20 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="c453">**\[📺 \]** <a href="https://uniroma1.zoom.us/rec/share/W6zWeel0z0w561Rza8iaoP39daROQ7MN144R2VYSksMhSBrh6l1MPrd_jIUFiy4s.fpA9W3TdJdXg_2Hx?startTime=1620983293000" class="markup--anchor markup--li-anchor"><strong>Continuous integration</strong></a></span>
 -   <span id="00d5">**\[📺 \]** <a href="https://www.youtube.com/watch?v=IUhvO8QjWd8&amp;list=LL&amp;index=2" class="markup--anchor markup--li-anchor"><strong>Data Engineering +Machine Learning + Software Engineering // Satish Chandra Gupta // MLOps Coffee Sessions #16</strong></a></span>
 -   <span id="ea96">**\[📺 \]** <a href="https://www.youtube.com/watch?v=VuQaS0FFUFY" class="markup--anchor markup--li-anchor"><strong>OO Design and Testing Patterns for Machine Learning with Chris Gerpheide</strong></a></span>
--   <span id="a9b4">**\[📺 \]** <a href="https://www.youtube.com/watch?v=WkUBx3g2QfQ&amp;feature=youtu.be" class="markup--anchor markup--li-anchor"><strong>Tutorial: Sebastian Witowski — Modern Python Developer's Toolkit</strong></a></span>
+-   <span id="a9b4">**\[📺 \]** <a href="https://www.youtube.com/watch?v=WkUBx3g2QfQ&amp;feature=youtu.be" class="markup--anchor markup--li-anchor"><strong>Tutorial: Sebastian Witowski — Modern Python Developer’s Toolkit</strong></a></span>
 -   <span id="0e69">**\[📺 \]** <a href="https://www.youtube.com/watch?v=8daKeuaWgjk" class="markup--anchor markup--li-anchor"><strong>Lecture 13:Machine Learning Teams (Full Stack Deep Learning — Spring 2021)</strong></a> **0:58:13**</span>
 -   <span id="a731">**\[📺 \]** <a href="https://www.youtube.com/watch?v=pxisK6RMn1s" class="markup--anchor markup--li-anchor"><strong>Lecture 5:Machine Learning Projects (Full Stack Deep Learning — Spring 2021)</strong></a> **1:13:14**</span>
 -   <span id="735d">**\[📺 \]** <a href="https://www.youtube.com/watch?v=760Mc_b3_N0" class="markup--anchor markup--li-anchor"><strong>Lecture 6: Infrastructure &amp; Tooling (Full Stack Deep Learning — Spring 2021)</strong></a> **1:07:21**</span>
 
 ### Be able to version control code
 
-<a href="https://levelup.gitconnected.com/understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://levelup.gitconnected.com/understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107"><strong>Understanding Git (A Beginners Guide Containing Cheat Sheets &amp; Resources)</strong>
-<br/>
+**Understanding Git (A Beginners Guide Containing Cheat Sheets & Resources)**  
 
-<em>Basic Git Work Flow.</em>levelup.gitconnected.com</a><a href="https://levelup.gitconnected.com/understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Basic Git Work Flow.*levelup.gitconnected.com<a href="https://levelup.gitconnected.com/understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://levelup.gitconnected.com/github-repositories-that-will-teach-you-how-to-code-for-free-ad0ecf59d89e" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://levelup.gitconnected.com/github-repositories-that-will-teach-you-how-to-code-for-free-ad0ecf59d89e"><strong>Github Repositories That Will Teach You How To Code For Free!</strong>
-<br/>
+**Github Repositories That Will Teach You How To Code For Free!**  
 
-<em>Update: here's a repo full of helpful repos:</em>levelup.gitconnected.com</a><a href="https://levelup.gitconnected.com/github-repositories-that-will-teach-you-how-to-code-for-free-ad0ecf59d89e" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Update: here’s a repo full of helpful repos:*levelup.gitconnected.com<a href="https://levelup.gitconnected.com/github-repositories-that-will-teach-you-how-to-code-for-free-ad0ecf59d89e" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 -   <span id="223a">**\[📰\]** <a href="https://dev.to/yankee/mastering-git-stash-workflow-223" class="markup--anchor markup--li-anchor"><strong>Mastering Git Stash Workflow</strong></a></span>
 -   <span id="d9dc">**\[📰\]** <a href="https://blog.daftcode.pl/how-to-become-a-master-of-git-tags-b70fbd9609d9" class="markup--anchor markup--li-anchor"><strong>How to Become a Master of Git Tags</strong></a></span>
@@ -647,7 +642,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="2f73">**\[📺 \]** <a href="https://www.youtube.com/watch?v=EuBBz3bI-aA" class="markup--anchor markup--li-anchor"><strong>Machine Learning Fundamentals: Bias and Variance</strong></a> **0:06:36**</span>
 -   <span id="c150">**\[📺 \]** <a href="https://www.youtube.com/watch?v=4jRBRDbJemM" class="markup--anchor markup--li-anchor"><strong>ROC and AUC, Clearly Explained!</strong></a> **0:16:26**</span>
 
----
+------------------------------------------------------------------------
 
 ### Be familiar with inner working of models
 
@@ -661,7 +656,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="f1ee">**\[📰\]** <a href="https://www.jeremyjordan.me/support-vector-machines/" class="markup--anchor markup--li-anchor"><strong>Support Vector Machines</strong></a></span>
 -   <span id="a636">**\[📰\]** <a href="https://www.jeremyjordan.me/random-forests/" class="markup--anchor markup--li-anchor"><strong>Random forests</strong></a></span>
 -   <span id="7ee3">**\[📰\]** <a href="https://www.jeremyjordan.me/boosted-trees/" class="markup--anchor markup--li-anchor"><strong>Boosted trees</strong></a></span>
--   <span id="58f1">**\[📰\]** <a href="https://www.curiousily.com/posts/hackers-guide-to-fundamental-machine-learning-algorithms/" class="markup--anchor markup--li-anchor"><strong>Hacker's Guide to Fundamental Machine Learning Algorithms with Python</strong></a></span>
+-   <span id="58f1">**\[📰\]** <a href="https://www.curiousily.com/posts/hackers-guide-to-fundamental-machine-learning-algorithms/" class="markup--anchor markup--li-anchor"><strong>Hacker’s Guide to Fundamental Machine Learning Algorithms with Python</strong></a></span>
 -   <span id="7c5a">**\[📰\]** <a href="https://www.jeremyjordan.me/neural-networks-activation-functions/" class="markup--anchor markup--li-anchor"><strong>Neural networks: activation functions</strong></a></span>
 -   <span id="bc86">**\[📰\]** <a href="https://www.jeremyjordan.me/neural-networks-training/" class="markup--anchor markup--li-anchor"><strong>Neural networks: training with backpropagation</strong></a></span>
 -   <span id="7c7f">**\[📰\]** <a href="https://theaisummer.com/Neural_Network_from_scratch/" class="markup--anchor markup--li-anchor"><strong>Neural Network from scratch-part 1</strong></a></span>
@@ -746,7 +741,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="acf3">**\[📺 \]** <a href="https://www.youtube.com/watch?v=CRRPLlgYWZw" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020-18 — Neural Networks</strong></a> **1:19:36**</span>
 -   <span id="1e1f">**\[📺 \]** <a href="https://www.youtube.com/watch?v=bmBezdqHTAg" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020-12 — AutoML (plus some feature selection)</strong></a> **1:25:38**</span>
 
----
+------------------------------------------------------------------------
 
 ### Be able to improve models
 
@@ -761,14 +756,14 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="c8e2">**\[📺 \]** <a href="https://www.youtube.com/watch?v=w3OPq0V8fr8" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020-10 — Calibration, Imbalanced data</strong></a> `1:16:14`</span>
 -   <span id="a96b">**\[📺 \]** <a href="https://youtu.be/GwGTwPcG0YM" class="markup--anchor markup--li-anchor"><strong>Lecture 10: Troubleshooting Deep Neural Networks</strong></a></span>
 
----
+------------------------------------------------------------------------
 
 ### **Be familiar with fundamental Machine Learning concepts**
 
 <a href="https://./cnn.png" class="markup--anchor markup--p-anchor"><strong>CNN</strong></a>
 
 -   <span id="c2e0">**\[📰\]** <a href="https://glassboxmedicine.com/2019/12/07/connections-log-likelihood-cross-entropy-kl-divergence-logistic-regression-and-neural-networks/" class="markup--anchor markup--li-anchor"><strong>Connections: Log Likelihood, Cross Entropy, KL Divergence, Logistic Regression, and Neural Networks</strong></a></span>
--   <span id="deee">**\[📰\]** <a href="https://medium.com/@ajitrajasekharan/mle-and-map-in-laymans-terms-8527061b15a6" class="markup--anchor markup--li-anchor"><strong>MLE and MAP — in layman's terms</strong></a></span>
+-   <span id="deee">**\[📰\]** <a href="https://medium.com/@ajitrajasekharan/mle-and-map-in-laymans-terms-8527061b15a6" class="markup--anchor markup--li-anchor"><strong>MLE and MAP — in layman’s terms</strong></a></span>
 -   <span id="564c">**\[ \]** <a href="https://ruder.io/optimizing-gradient-descent/" class="markup--anchor markup--li-anchor"><strong>An overview of gradient descent optimization algorithms</strong></a></span>
 -   <span id="7ef3">**\[📰\]** <a href="https://ruder.io/deep-learning-optimization-2017/" class="markup--anchor markup--li-anchor"><strong>Optimization for Deep Learning Highlights in 2017</strong></a></span>
 -   <span id="3712">**\[📰\]** <a href="https://www.jeremyjordan.me/gradient-descent/" class="markup--anchor markup--li-anchor"><strong>Gradient descent</strong></a></span>
@@ -823,7 +818,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="39d1">**\[📺 \]** <a href="https://www.youtube.com/watch?v=bDdjebakjbA" class="markup--anchor markup--li-anchor"><strong>Multilabel and Multioutput Classification -Machine Learning with TensorFlow &amp; scikit-learn on Python</strong></a></span>
 -   <span id="c1f5">**\[📺 \]** <a href="https://youtu.be/7pykC5m24Z0?list=LL" class="markup--anchor markup--li-anchor"><strong>DABL: Automatic machine learning with a human in the loop- AI Latim American SumMIT Day 1</strong></a></span>
 
----
+------------------------------------------------------------------------
 
 ### Be able to implement models in Tensorflow and Keras
 
@@ -869,7 +864,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="6876">\[📰\] <a href="https://huggingface.co/blog/zero-deepspeed-fairscale" class="markup--anchor markup--li-anchor">Fit More and Train Faster With ZeRO via DeepSpeed and FairScale</a></span>
 -   <span id="6204">\[📰\] <a href="https://medium.com/pytorch/pytorch-lightning-v1-2-0-43a032ade82b" class="markup--anchor markup--li-anchor">PyTorch Lightning V1.2.0- DeepSpeed, Pruning, Quantization, SWA</a></span>
 -   <span id="a60d">\[📰\] <a href="https://www.scottcondron.com/jupyter/visualisation/audio/2020/12/02/dataloaders-samplers-collate.html" class="markup--anchor markup--li-anchor">But what are PyTorch DataLoaders really?</a></span>
--   <span id="b870">\[📰\] <a href="https://tanelp.github.io/posts/a-bug-that-plagues-thousands-of-open-source-ml-projects/" class="markup--anchor markup--li-anchor">Using PyTorch + NumPy? You're making a mistake.</a></span>
+-   <span id="b870">\[📰\] <a href="https://tanelp.github.io/posts/a-bug-that-plagues-thousands-of-open-source-ml-projects/" class="markup--anchor markup--li-anchor">Using PyTorch + NumPy? You’re making a mistake.</a></span>
 -   <span id="6cfb">\[📰\] <a href="https://medium.com/pytorch/how-wadhwani-ai-uses-pytorch-to-empower-cotton-farmers-14397f4c9f2b" class="markup--anchor markup--li-anchor">How Wadhwani AI Uses PyTorch To Empower Cotton Farmers</a></span>
 -   <span id="98a6">\[📰\] <a href="https://towardsdatascience.com/taming-lstms-variable-sized-mini-batches-and-why-pytorch-is-good-for-your-health-61d35642972e" class="markup--anchor markup--li-anchor">Taming LSTMs: Variable-sized mini-batches and why PyTorch is good for your health</a></span>
 -   <span id="cb71">\[📰\] <a href="https://medium.com/speechmatics/how-to-build-a-streaming-dataloader-with-pytorch-a66dd891d9dd" class="markup--anchor markup--li-anchor">How to Build a Streaming DataLoader with PyTorch</a></span>
@@ -920,7 +915,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="f092">\[📺 \] <a href="https://www.youtube.com/watch?v=wG_nF1awSSY" class="markup--anchor markup--li-anchor">What is Automatic Differentiation?</a></span>
 -   <span id="0b29">\[📺 \] <a href="https://www.youtube.com/watch?v=BzuEGdGHKjc" class="markup--anchor markup--li-anchor">JAX: accelerated machine learning research via composable function transformations in Python</a></span>
 
----
+------------------------------------------------------------------------
 
 ### Be able to implement models using cloud services
 

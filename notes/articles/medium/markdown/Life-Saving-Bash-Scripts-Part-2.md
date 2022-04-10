@@ -1,32 +1,31 @@
-# Life Saving Bash Scripts Part 2
+Life Saving Bash Scripts Part 2
+===============================
 
-I am not saying they're in any way special compared with other bash scripts… but when I consider that you can never recover time spent… the…
+I am not saying they’re in any way special compared with other bash scripts… but when I consider that you can never recover time spent… the…
 
----
+------------------------------------------------------------------------
 
 ### Life Saving Bash Scripts Part 2
 
-#### I am not saying they're in any way special compared with other bash scripts… but when I consider that you can never recover time spent… the value of these commands in my life quickly becomes incalculable!
+#### I am not saying they’re in any way special compared with other bash scripts… but when I consider that you can never recover time spent… the value of these commands in my life quickly becomes incalculable!
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*aWKygEnTVdHuulB4.gif" class="graf-image" /></figure>Below the following 20 commands I will include <a href="https://gist.github.com/bgoonz/2d2314216d337a69b31bcb5a8880ade7" class="markup--anchor markup--pullquote-anchor">the gist files</a> so you can download these commands all at once as well as see them syntax highlighted but I decided to include them as plain code blocks for the ease with which they can be copied and pasted as well as detected by the web crawlers of various search engines (it could be the case that it has no affect on seo… but that's a chance I don't have to take).
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*aWKygEnTVdHuulB4.gif" class="graf-image" /></figure>Below the following 20 commands I will include <a href="https://gist.github.com/bgoonz/2d2314216d337a69b31bcb5a8880ade7" class="markup--anchor markup--pullquote-anchor">the gist files</a> so you can download these commands all at once as well as see them syntax highlighted but I decided to include them as plain code blocks for the ease with which they can be copied and pasted as well as detected by the web crawlers of various search engines (it could be the case that it has no affect on seo… but that’s a chance I don’t have to take).
 
----
+------------------------------------------------------------------------
 
 ### Discover More:
 
-<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong>
-<br/>
+**Web-Dev-Hub**  
 
-<em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…*bgoonz-blog.netlify.app<a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
----
+------------------------------------------------------------------------
 
 ### Part 2 of this series is the infinitely more comprehensive part 1 of the series:
 
-<a href="https://medium.com/geekculture/bash-commands-that-save-time-920fb6ab9d0a" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/geekculture/bash-commands-that-save-time-920fb6ab9d0a"><strong>Bash Commands That Save Me Time and Frustration (Part 1)</strong>
-<br/>
+**Bash Commands That Save Me Time and Frustration (Part 1)**  
 
-<em>Here's a list of bash commands that stand between me and insanity.</em>medium.com</a><a href="https://medium.com/geekculture/bash-commands-that-save-time-920fb6ab9d0a" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Here’s a list of bash commands that stand between me and insanity.*medium.com<a href="https://medium.com/geekculture/bash-commands-that-save-time-920fb6ab9d0a" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ### Update (more practical commands):
 
@@ -107,13 +106,13 @@ Recursively find suid executables
 
     find / \( -perm -4000 -o -perm -2000 \) -type f -exec ls -la {} \;
 
----
+------------------------------------------------------------------------
 
 ### Update \#2:
 
     $ find -type f -exec grep -q "foo" {} \; -exec echo rm -- {} \;
 
-This recursively searches for files containing `foo`. The second `-exec` is only run if the first `exec` exits successfully, i.e. if `grep` matches. Dryrun and remove the `echo` if the output seems correct.
+This recursively searches for files containing `foo`. The second `-exec` is only run if the first `exec` exits successfully, i.e. if `grep` matches. Dryrun and remove the `echo` if the output seems correct.
 
 Or alternatively
 
@@ -190,7 +189,7 @@ and
       n=`expr "$n" + 1`;
     done
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" /></figure>### 11.) Traverse Directories recursivley and delete files who's name match a specified string:
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" /></figure>### 11.) Traverse Directories recursivley and delete files who’s name match a specified string:
 
     find . -type f -exec sed -i '/badFolder/d' ./* {} \;
 
@@ -206,7 +205,7 @@ and
 
     find . -type f -a \( -name "*.html" -o -name "*.js" -o -name "*.css" -o -name "*.md" \) -a -exec sed -i  '/BADSTRING/d' '{}' +
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" /></figure>### 15.) Recursively remove from all html files any lines containing the string "badText"
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" /></figure>### 15.) Recursively remove from all html files any lines containing the string “badText”
 
     find . -type f -exec sed -i '/badText/d' ./*.html {} \;
 
@@ -245,14 +244,11 @@ and
 
 <span class="graf-dropCap">P</span>ersonal Blog:
 
-<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong>
-<br/>
+**Web-Dev-Hub**  
 
-<em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…*bgoonz-blog.netlify.app<a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" /></figure>
-
-By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [July 6, 2021](https://medium.com/p/b40c8ee22682).
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" /></figure>By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [July 6, 2021](https://medium.com/p/b40c8ee22682).
 
 <a href="https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682" class="p-canonical">Canonical link</a>
 

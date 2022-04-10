@@ -1,14 +1,17 @@
-# Transitioning to strict mode
+Transitioning to strict mode
+============================
 
 ECMAScript 5 introduced [strict mode](../strict_mode) which is now implemented in all major browsers (including IE10). While making web browsers interpret code as strict is easy (just add `'use strict';` at the top of your source code), transitioning an existing code base to strict mode requires a bit more work.
 
 This article aims at providing guidance for developers.
 
-## Gradual transition
+Gradual transition
+------------------
 
 Strict mode has been designed so that the transition to it can be made gradually. It is possible to change each file individually and even to transition code to strict mode down to the function granularity.
 
-## Differences from non-strict to strict
+Differences from non-strict to strict
+-------------------------------------
 
 ### Syntax errors
 
@@ -85,36 +88,37 @@ which can be rewritten as:
 
 ### Semantic differences
 
-These differences are very subtle differences. It's possible that a test suite doesn't catch this kind of subtle difference. Careful review of your code base will probably be necessary to be sure these differences don't affect the semantics of your code. Fortunately, this careful review can be done gradually down the function granularity.
+These differences are very subtle differences. It’s possible that a test suite doesn’t catch this kind of subtle difference. Careful review of your code base will probably be necessary to be sure these differences don’t affect the semantics of your code. Fortunately, this careful review can be done gradually down the function granularity.
 
 #### `this` in function calls
 
 In function calls like `f()`, the `this` value was the global object. In strict mode, it is now `undefined`. When a function was called with `call` or `apply`, if the value was a primitive value, this one was boxed into an object (or the global object for `undefined` and `null`). In strict mode, the value is passed directly without conversion or replacement.
 
-#### `arguments` doesn't alias named function arguments
+#### `arguments` doesn’t alias named function arguments
 
-In non-strict mode, modifying a value in the `arguments` object modifies the corresponding named argument. This made optimizations complicated for JavaScript engine and made code harder to read/understand. In strict mode, the `arguments` object is created and initialized with the same values than the named arguments, but changes to either the `arguments` object or the named arguments aren't reflected in one another.
+In non-strict mode, modifying a value in the `arguments` object modifies the corresponding named argument. This made optimizations complicated for JavaScript engine and made code harder to read/understand. In strict mode, the `arguments` object is created and initialized with the same values than the named arguments, but changes to either the `arguments` object or the named arguments aren’t reflected in one another.
 
 #### Change to `eval`
 
-In strict mode code, `eval` doesn't create a new variable in the scope from which it was called. Also, of course, in strict mode, the string is evaluated with strict mode rules. Thorough testing will need to be performed to make sure nothing breaks. Not using eval if you don't really need it may be another pragmatic solution.
+In strict mode code, `eval` doesn’t create a new variable in the scope from which it was called. Also, of course, in strict mode, the string is evaluated with strict mode rules. Thorough testing will need to be performed to make sure nothing breaks. Not using eval if you don’t really need it may be another pragmatic solution.
 
-## Strictness-neutral code
+Strictness-neutral code
+-----------------------
 
-A potential "downside" of moving strict code to strict mode is that the semantics may be different in legacy browsers which do not implement strict mode. In some rare occasions (like bad concatenation or minification), your code also may not run in the mode you wrote and tested it in. Here are the rules to make your code strictness-neutral:
+A potential “downside” of moving strict code to strict mode is that the semantics may be different in legacy browsers which do not implement strict mode. In some rare occasions (like bad concatenation or minification), your code also may not run in the mode you wrote and tested it in. Here are the rules to make your code strictness-neutral:
 
-1.  Write your code as strict and make sure no strict-only errors (from the above "New runtime errors" section) are thrown.
+1.  Write your code as strict and make sure no strict-only errors (from the above “New runtime errors” section) are thrown.
 2.  Stay away from semantic differences
-    1.  `eval`: use it only if you know what you're doing
+    1.  `eval`: use it only if you know what you’re doing
     2.  `arguments`: always access function arguments via their name or perform a copy of the arguments object using:  
         `var args = Array.prototype.slice.call(arguments)`  
         as the first line of your function
     3.  `this`: only use `this` when it refers to an object you created.
 
-## See also
+See also
+--------
 
 -   [Strict mode](../strict_mode)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode/Transitioning_to_strict_mode" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode/Transitioning_to_strict_mode</a>

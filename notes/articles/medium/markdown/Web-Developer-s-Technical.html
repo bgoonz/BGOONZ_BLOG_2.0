@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Web-Developer-s-Technical</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="web-developers-technical-glossary">Web Developer’s Technical Glossary</h1>
+<p>This will be a running list as I make updates!</p>
+<hr />
+<h3 id="web-developers-technical-appendix">Web Developer’s Technical Appendix</h3>
+<p>This will be a running list as I make updates!</p>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*Cnf7R_30Pu8Wur3b.jpg" class="graf-image" />
+</figure>
+<hr />
+<hr />
+<h3 id="update-terms">Update Terms:</h3>
+<h3 id="cdn">CDN</h3>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*7kT2S7lsQbsJUk7Q.png" class="graf-image" />
+</figure>
+<p>Content Delivery Network</p>
+<p>This is typically a paid service you can use to get great performance for your app. Many CDNs act as caching proxies to your origin server; some require you to upload your assets to them. They give you a URL for each resource in your app. This URL will resolve differently for folks depending on where they’re browsing.</p>
+<p>Behind the scenes, the CDN will distribute your content geographically with the goal of end-users being able to fetch your content with the lowest latency possible. For example, if a user is in India, they’d likely get content served from India faster than from the United States.</p>
+<h3 id="coffeescript-typescript">CoffeeScript, TypeScript</h3>
+<p>These are both languages that compile to JavaScript. You’re able to write your code using the syntax they offer and when ready you compile your TypeScript or CoffeeScript into JavaScript.</p>
+<p><a href="http://www.stoutsystems.com/articles/coffeescript-versus-typescript/" class="markup--anchor markup--p-anchor" title="http://www.stoutsystems.com/articles/coffeescript-versus-typescript/">CoffeeScript vs TypeScript</a></p>
+<h3 id="evergreen-browsers">Evergreen browsers</h3>
+<p>Browsers that update themselves (without user intervention).</p>
+<p><a href="http://tomdale.net/2013/05/evergreen-browsers/" class="markup--anchor markup--p-anchor" title="http://tomdale.net/2013/05/evergreen-browsers/">Evergreen Browsers</a></p>
+<h3 id="es3-es5-es5.1-es6-aka-es2015-etc">ES3, ES5, ES5.1, ES6 (aka ES2015), etc</h3>
+<p>ES stands for ECMAScript, which is the specification that JavaScript is based on. The number that follows is the version of the specification.</p>
+<p>Most browsers support at least ES5, and some even have ES6 (also known as ES2015) support. You can check each browser’s support (including yours) here:</p>
+<ul>
+<li><span id="280c"><a href="http://kangax.github.io/compat-table/es5/" class="markup--anchor markup--li-anchor" title="http://kangax.github.io/compat-table/es5/">ES5 support</a></span></li>
+<li><span id="f676"><a href="http://kangax.github.io/compat-table/es6/" class="markup--anchor markup--li-anchor" title="http://kangax.github.io/compat-table/es6/">ES6 support</a></span></li>
+</ul>
+<p><a href="https://en.wikipedia.org/wiki/ECMAScript" class="markup--anchor markup--p-anchor" title="https://en.wikipedia.org/wiki/ECMAScript">ECMAScript</a></p>
+<h3 id="less-sass">LESS, Sass</h3>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*Zgup2nchwl-taGZMniA46w.png" class="graf-image" />
+</figure>
+<p>Both LESS and Sass are types of CSS preprocessor markup intended to give you much more control over your CSS. During the build process, the LESS or Sass resources compile down to vanilla CSS (which can be executed in a browser).</p>
+<p><a href="https://gist.github.com/chriseppstein/674726" class="markup--anchor markup--p-anchor" title="https://gist.github.com/chriseppstein/674726">Sass/Less Comparison</a></p>
+<h3 id="linter-linting-jslint-jshint">Linter, linting, jslint, jshint</h3>
+<p>A validation tool which checks for common issues in your JavaScript. You’d usually use this in your build process to enforce quality in your codebase. A great example of something to check for: <em>making sure you’ve always got your semicolons</em>.</p>
+<p><a href="http://jshint.com/docs/options/" class="markup--anchor markup--p-anchor" title="http://jshint.com/docs/options/">An example of some of the options you can configure</a></p>
+<h3 id="polyfill">Polyfill</h3>
+<p>This is a concept that typically means providing JavaScript which tests for features that are missing (prototypes not defined, etc) and “fills” them by providing an implementation.</p>
+<h3 id="promise">Promise</h3>
+<p>Asynchronous calls typically return a promise (or deferred). This is an object which has a state: it can be given handlers for when it’s fulfilled or rejected.</p>
+<p>Ember makes use of these in places like the model hook for a route. Until the promise resolves, Ember is able to put the route into a “loading” state.</p>
+<ul>
+<li><span id="a026"><a href="https://promisesaplus.com/" class="markup--anchor markup--li-anchor" title="https://promisesaplus.com/">An open standard for sound, interoperable JavaScript promises</a></span></li>
+<li><span id="f0eb"><a href="http://emberjs.com/guides/routing/asynchronous-routing/#toc_a-word-on-promises" class="markup--anchor markup--li-anchor" title="http://emberjs.com/guides/routing/asynchronous-routing/#toc_a-word-on-promises">emberjs.com — A word on promises</a></span></li>
+</ul>
+<h3 id="ssr">SSR</h3>
+<p>Server Side Rendering</p>
+<p><a href="http://emberjs.com/blog/2014/12/22/inside-fastboot-the-road-to-server-side-rendering.html" class="markup--anchor markup--p-anchor" title="http://emberjs.com/blog/2014/12/22/inside-fastboot-the-road-to-server-side-rendering.html">Inside FastBoot: The Road to Server-Side Rendering</a></p>
+<h3 id="transpile">Transpile</h3>
+<p>When related to JavaScript, this can be part of your build process which “transpiles” (converts) your ES6 syntax JavaScript to JavaScript that is supported by current browsers.</p>
+<p>Besides ES6, you’ll see a lot of content about compiling/transpiling CoffeeScript, a short-hand language which can “compile” to JavaScript.</p>
+<ul>
+<li><span id="3730">Ember CLI specifically uses <a href="https://babeljs.io/" class="markup--anchor markup--li-anchor" title="https://babeljs.io/">Babel</a> via the <a href="https://github.com/babel/ember-cli-babel" class="markup--anchor markup--li-anchor" title="https://github.com/babel/ember-cli-babel">ember-cli-babel</a> plugin.</span></li>
+</ul>
+<h3 id="shadow-dom">Shadow DOM</h3>
+<p>Not to be confused with Virtual DOM. Shadow DOM is still a work in progress, but basically a proposed way to have an “isolated” DOM encapsulated within your app’s DOM.</p>
+<p>Creating a re-usable “widget” or control might be a good use-case for this. Browsers implement some of their controls using their own version of a shadow DOM.</p>
+<ul>
+<li><span id="0bcb"><a href="http://www.w3.org/TR/shadow-dom/" class="markup--anchor markup--li-anchor" title="http://www.w3.org/TR/shadow-dom/">W3C Working Draft</a></span></li>
+<li><span id="df28"><a href="http://glazkov.com/2011/01/14/what-the-heck-is-shadow-dom/" class="markup--anchor markup--li-anchor" title="http://glazkov.com/2011/01/14/what-the-heck-is-shadow-dom/">What the Heck is Shadow DOM?</a></span></li>
+</ul>
+<h3 id="virtual-dom">Virtual DOM</h3>
+<p>Not to be confused with Shadow DOM. The concept of a virtual DOM means abstracting your code (or in our case, Ember) away from using the browser’s DOM in favor of a “virtual” DOM that can easily be accessed for read/writes or even serialized.</p>
+<hr />
+<p><strong>Adaptive Web Design (AWD)</strong> — encourages the creation of several versions of a<br />
+web page for a specified number of device dimensions. Which template to display<br />
+is determined in the HTTP GET request which recognises the screen size of the<br />
+device. Adaptive Web Design was introduced to deal with mobile browsing when<br />
+most sites were optimised for desktop only. As devices now exist in many sizes<br />
+and dimensions from different mobile brands through tablets to desktops,<br />
+<strong>Responsive Web Design</strong> has become a popular and more flexible alternative.</p>
+<p><strong>Authentication</strong> — the process of verifying that you are who you say you are<br />
+E.g. when you login to your email you use a password to authenticate your<br />
+identity. Other methods for authentication include using an ID card or<br />
+fingerprint/biometric method.</p>
+<p><strong>Authorization</strong> — check that you are authorised (have permission) to perform a<br />
+certain action or to see a given page. E.g. admin users are authorised to create<br />
+new users on the website.</p>
+<p><strong>Declarations</strong> — in JavaScript declarations are <code>var</code>, <code>const</code> and <code>let</code> for<br />
+the creation of variables, constants and lexically scoped variables.</p>
+<p><strong>Closure</strong> — the scope where a variable can be accessed. A function used within another function can access the parent function’s variables since its scope extends to its parent.</p>
+<p>In this example, the variable <code>color</code> is accessible to the function <code>displayColor()</code>.</p>
+<pre><code>function color() {
+    var color = &#39;red&#39;;
+    function displayColor() {
+        alert(color);
+    }
+    displayColor();
+}</code></pre>
+<p><strong>CSS Box Model</strong> — the concept that in HTML all elements are contained within<br />
+rectangles or boxes. Each box consists of: margins, borders, padding, and the<br />
+actual content.</p>
+<p><strong>Customer relationship management (CRM)</strong> — a CRM system allows businesses to<br />
+manage business relationships and the data and information associated with them.<br />
+E.g. using CRM to track holiday bookings for a holiday bookings site. The CRM<br />
+would have information on the customer and the trip they’re planning/ have<br />
+booked and any staff members or actions that may need taking to progress or<br />
+confirm their booking.</p>
+<p><strong>Create, Read, Update, and Delete (CRUD)</strong> — CRUD refers to the 4 basic<br />
+operations you can perform on data in a relational database application. Create<br />
+a new data entry, read or retrieve existing data from the database, update the<br />
+value of an existing piece of data or delete an existing piece of data.</p>
+<p><strong>Cross-Origin Resource Sharing (CORS)</strong> — is a specification that allows<br />
+specified resources on a web page to be requested from another domain outside<br />
+the domain from which the first resource was served. E.g. uploading images using<br />
+different domains using Amazon S3. For more about origin policies see<br />
+‘Same-origin Policy’.</p>
+<p><a href="https://en.wikipedia.org/wiki/JavaScript_syntax#Destructuring_assignment" class="markup--anchor markup--p-anchor"><strong>Destructuring Assignment</strong></a> -<br />
+the ability to unpack and assign variables when there are multiple parameters.</p>
+<p>A way to simply assign the variables and then swap their values.</p>
+<pre><code>let x, y;
+[x, y] = [5, 6];
+// x = 5, y = 6
+[y, x] = [x, y];
+// x = 6, y = 5</code></pre>
+<p>To assign values from an object.</p>
+<pre><code>let obj = { &#39;a&#39;: 1, &#39;b&#39;: {&#39;b1&#39;: &#39;1.1&#39;}}
+let {a, b, b:{b1}} = obj
+// a = 1, b = {&#39;b1&#39;: &#39;1.1&#39;}, b1 = 1.1</code></pre>
+<p>There is an extensive list found <a href="https://stackoverflow.com/questions/54605286/what-is-destructuring-assignment-and-its-uses" class="markup--anchor markup--p-anchor">here</a> for more examples.</p>
+<p><strong>Domain Name</strong> — the characters/words used to identify a website after <code>http://</code> or<br />
+<code>www.</code>. The domain name consists of two parts. Take this example:<br />
+<code>https://dwyl.com</code>, <code>dwyl</code> makes up the <strong>second level domain (SLD)</strong> which is<br />
+then followed by <code>.com</code> which what is known as the <strong>top level domain (TLD)</strong> or<br />
+<strong>parent domain</strong>. Other examples of top level domains are: <code>.org</code>, <code>.co.uk</code><br />
+<code>.io</code>. Domain names are the more memorable and user-friendly representation of a<br />
+website’s <strong>IP address</strong>. Domain names are registered under the <strong>Domain Name<br />
+System (DNS)</strong>.</p>
+<p><strong>Domain Name System (DNS)</strong> — a distributed global directory of website domain<br />
+names (and other internet resources). The directory stores already registered<br />
+domain names along with their corresponding IP addresses.</p>
+<p><a href="https://en.wikipedia.org/wiki/Hexadecimal" class="markup--anchor markup--p-anchor"><strong>Hexadecimal</strong></a> — Uses 16 different symbols. “0”-“9” to represent the values 0 to 9 and “A”-“F” (“a”-“f” is acceptable too) to represent the values 10 to 15. It’s common to use<br />
+hexadecimals when working in CSS to assign colors to your elements.</p>
+<p>The hexadecimal for dwyl’s logo color is #4bc0a9 (teal).<br />
+To convert the hexadecimal into RGB values, do the following:</p>
+<pre><code>R = 4b
+G = c0
+B = a9
+
+Convert the letters to their numerical value.
+b = 11
+c = 12
+a = 10
+
+Red: 4 * (16^1) + 11 * (16^0) = 75
+Green: 12 * (16^1) + 0 * (16^0) = 192
+Blue: 10 * (16^1) + 9 * (16^0) = 169</code></pre>
+<p>Hex: #4bc0a9 is RGB: 75, 192, 169.</p>
+<p><strong>Hoisting</strong> — Hoisting is JavaScript’s default behaviour of moving <code>var</code><br />
+declarations to the top of the current <strong>scope</strong> when your code is run. What<br />
+this means is that whatever line your write a <code>var</code> declaration on e.g. <code>var x;</code>,<br />
+when your code is run it will automatically be lifted and read as if it were<br />
+written on the top lines of your current <strong>scope</strong> (to the top of the current<br />
+script or the current function).</p>
+<p>This means that you can use <code>var</code>’s higher up in the code before the line you’ve<br />
+declared them on. So this example:</p>
+<pre><code>x = &quot;hello&quot;;
+console.log(x)     // logs &#39;hello&#39;
+var x;            //  declaring `x` which is hoisted as if it were written at the top on compilation</code></pre>
+<p>Is read by the computer like this:</p>
+<pre><code>var x;            //  declaring `x` which has been hoisted to the top line on compilation
+x = &quot;hello&quot;;
+console.log(x)     // logs &#39;hello&#39;</code></pre>
+<p><strong>Higher-order Function</strong> — Functions that take other functions as parameters and/or return a function. Some examples of these types of functions are the <code>map</code> and <code>reduce</code> method used for arrays. They both accept a function to use on the elements in the given array.</p>
+<pre><code>// perform an action twice
+function twice (func, value) {
+  return func(func(value));
+}
+
+// func can be any simple (preferably pure) function:
+function func (value) {
+  return value + 3;
+}
+
+console.log(twice(func, 1)); // 7
+console.log(twice(func, 7)); // 13</code></pre>
+<p>Not to be confused with pure functions, <a href="https://github.com/dwyl/learn-redux/issues/40#issuecomment-272489779" class="markup--anchor markup--p-anchor">this comment</a> explains the difference between the variations.</p>
+<p><strong>Hypertext Transfer Protocol (HTTP)</strong> — the set of rules for transferring files<br />
+(text, graphic images, sound, video, and other multimedia files) on the World<br />
+Wide Web. When you enter http:// in your address bar in front of the domain, it<br />
+tells the browser to connect over HTTP.</p>
+<p><strong>Initialisation</strong> — defining a variable and providing it with an initial value:<br />
+e.g. <code>var x = 1;</code>.</p>
+<p><strong>Internet Protocol (IP) Address</strong> — a unique series of numbers or hexadecimal<br />
+digits used to identify a website.</p>
+<p><strong>Microservices</strong> — the practice of running multiple web/application servers<br />
+simultaneously. It is a widely accepted/used application architecture used in<br />
+most companies. Lambda Functions are an example of a micro Node.js Server.</p>
+<p><strong>Polymorphism</strong> — the ability for an object to take on many forms or types e.g.<br />
+when a parent class is used to refer to a child class object. <strong>Operator<br />
+overloading</strong> is one form of polymorphism. It is not used in Javascript but is a<br />
+feature of C++, Scala, Ruby, Haskell and Rust.</p>
+<p><strong>Progressive Web App (PWA)</strong> — PWAs are traditional websites that are enhanced<br />
+with modern web technologies, allowing them to provide a more app-like<br />
+experience. They offer functionality such as being saved as a tile on your<br />
+mobile home screen, working offline and push notifications. The “progressive”<br />
+part means they’re “progressively enhanced” with newer features, which means<br />
+they’ll also work in older browsers that don’t support the new features. Unlike<br />
+native apps, they don’t have to be updated/listed in the app store although it<br />
+is possible to list them in the app store when this is desired.</p>
+<p><a href="https://www.softwaretestingmaterial.com/regression-testing/" class="markup--anchor markup--p-anchor"><strong>Regression Testing</strong></a> -<br />
+the re-running of existing tests to ensure that new changes/fixes have not<br />
+broken any existing functionality. We should perform regression testing any time<br />
+we modify an application, automated testing is a convenient way to achieve this.</p>
+<p><strong>REPL (READ, EVAL, PRINT, LOOP)</strong> — a REPL is an interactive toplevel or<br />
+language shell. A simple, interactive computer programming environment that<br />
+takes single user inputs (i.e. single expressions), evaluates them, and returns<br />
+the result to the user. They are a handy tool for experimenting with<br />
+functionality outside of the context of a project.</p>
+<p><strong>Responsive Web Design (RWD)</strong> — is designing one version of a web page which<br />
+reorders and resizes content in response to the size of a browser <strong>at any given<br />
+point</strong>, not just predetermined device sizes. This means the design of the site<br />
+is optimised for all screen sizes. See Adaptive Design for another approach to<br />
+designing.</p>
+<p><strong>Same-origin Policy</strong> — Under this security policy implemented by web browsers,<br />
+a document (i.e. like a web page) hosted on server A can only interact with<br />
+other documents that are also on server A. In short, the same-origin policy<br />
+enforces that documents that interact with each other have the same origin.</p>
+<p><strong>Search Engine Optimisation (SEO)</strong> — is the process of improving the visibility<br />
+of a website or web page in unpaid/organic search engine results. There are many<br />
+aspects to SEO and search engines change how it’s calculated over time. It may<br />
+include the use of key words on a page, how often you add/edit content on your<br />
+site, to the way other sites link to you on the web.</p>
+<p><strong>Semantic HTML</strong> — semantic HTML is the use of HTML elements that accurately<br />
+describe what they contain/are being used for E.g. a <code>&lt;p&gt;</code> tag indicates that the<br />
+text within it is a paragraph whereas a <code>&lt;nav&gt;</code> tag should contain navigation<br />
+content and a <code>&lt;footer&gt;</code> should appear at the end of the page.</p>
+<p><strong>Syntactic Sugar</strong> — syntactic sugar refers to syntax in a language that is<br />
+designed to make things easier to read. The syntax makes the language “sweeter”<br />
+to use as things can be expressed more clearly or concisely. Something can be<br />
+considered “syntactic sugar” if it could be removed from the language without<br />
+removing any functionality on what the language can do. For example ternary<br />
+operators in Javascript: <code>x ? a : b</code> doesn’t require the ternary operator syntax<br />
+it could also be expressed with an <code>if/else</code> statement:</p>
+<pre><code>if(x)
+ { a }
+else
+ { b }</code></pre>
+<p><strong>Technical Debt</strong> — Technical<br />
+debt is the time/cost of “re-working” a feature (or entire app) because corners<br />
+were cut the first time it was built. Think of Technical Debt like a “loan shark”<br />
+for your project, if you take “shortcuts” to implement a feature quickly (e.g:<br />
+by skipping tests) you will pay for it later and usually with “interest”. For<br />
+more detail see: <a href="https://github.com/dwyl/product-owner-guide#what-is-technical-debt" class="markup--anchor markup--p-anchor">https://github.com/dwyl/product-owner-guide#what-is-technical-debt</a></p>
+<p><strong>Transmission Control Protocol (TCP)</strong> -<br />
+TCP is a protocol which exists to enable the establishment of a connection and<br />
+the exchange of streams of data (multiple<br />
+<a href="https://www.techopedia.com/definition/6751/data-packet" class="markup--anchor markup--p-anchor">data packets</a>) between<br />
+one or more computers. TCP guarantees the delivery of data and that packets will<br />
+be delivered in the same order in which they were sent.</p>
+<p><strong>Transmission Control Protocol (TCP) handshake</strong> -<br />
+A TCP handshake or three-way handshake is the first part in a three part process<br />
+for TCP data transfer between a local host/client and a server. The handshake is<br />
+a three-step method that requires both the client and server to exchange SYN and<br />
+ACK (acknowledgment) packets to establish a connection before actual data<br />
+communication begins.</p>
+<p>Sources:</p>
+<ol type="1">
+<li><span id="8d0d">) <a href="https://www.techopedia.com/definition/10339/three-way-handshake" class="markup--anchor markup--li-anchor">https://www.techopedia.com</a></span></li>
+</ol>
+<p>By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on <a href="https://medium.com/p/2066beae5e96">July 14, 2021</a>.</p>
+<p><a href="https://medium.com/@bryanguner/web-developers-technical-glossary-2066beae5e96" class="p-canonical">Canonical link</a></p>
+<p>August 6, 2021.</p>
+</body>
+</html>

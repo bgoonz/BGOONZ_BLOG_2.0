@@ -1,37 +1,31 @@
----
-title: title
-subtitle: subtitle
-date: '2022-01-03'
-thumb_img_alt: lorem-ipsum
-content_img_alt: lorem-ipsum
-excerpt: lorem-ipsum
-seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
-template: post
-thumb_img_path: images/css-72a655a7.jpg
----
+subtitle
 
----
+2022-01-03
 
-## tags: [packaging]
+------------------------------------------------------------------------
 
-# To find packages matching <phrase>:
+tags: \[packaging\]
+-------------------
 
-apt-cache search <phrase>
+To find packages matching :
+===========================
 
-# To display package records for the named package(s):
+apt-cache search
 
-apt-cache show <package>...
+To display package records for the named package(s):
+====================================================
 
-# To display reverse dependencies of a package:
+apt-cache show …
 
-apt-cache rdepends <package>
+To display reverse dependencies of a package:
+=============================================
 
-# To display package versions, reverse dependencies and forward dependencies of
+apt-cache rdepends
 
-# a package
+To display package versions, reverse dependencies and forward dependencies of
+=============================================================================
 
-apt-cache showpkg <package>
+a package
+=========
+
+apt-cache showpkg

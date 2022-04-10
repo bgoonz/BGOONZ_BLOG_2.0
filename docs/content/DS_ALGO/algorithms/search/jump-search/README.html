@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="jump-search">Jump Search</h1>
+<p>Like Binary Search, <strong>Jump Search</strong> (or <strong>Block Search</strong>) is a searching algorithm for sorted arrays. The basic idea is to check fewer elements (than linear search) by jumping ahead by fixed steps or skipping some elements in place of searching all elements.</p>
+<p>For example, suppose we have an array <code>arr[]</code> of size <code>n</code> and block (to be jumped) of size <code>m</code>. Then we search at the indexes <code>arr[0]</code>, <code>arr[m]</code>, <code>arr[2 * m]</code>, …, <code>arr[k * m]</code> and so on. Once we find the interval <code>arr[k * m] &lt; x &lt; arr[(k+1) * m]</code>, we perform a linear search operation from the index <code>k * m</code> to find the element <code>x</code>.</p>
+<p><strong>What is the optimal block size to be skipped?</strong> In the worst case, we have to do <code>n/m</code> jumps and if the last checked value is greater than the element to be searched for, we perform <code>m - 1</code> comparisons more for linear search. Therefore the total number of comparisons in the worst case will be <code>((n/m) + m - 1)</code>. The value of the function <code>((n/m) + m - 1)</code> will be minimum when <code>m = √n</code>. Therefore, the best step size is <code>m = √n</code>.</p>
+<h2 id="complexity">Complexity</h2>
+<p><strong>Time complexity</strong>: <code>O(√n)</code> - because we do search by blocks of size <code>√n</code>.</p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/jump-search/">GeeksForGeeks</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Jump_search">Wikipedia</a></li>
+</ul>
+</body>
+</html>

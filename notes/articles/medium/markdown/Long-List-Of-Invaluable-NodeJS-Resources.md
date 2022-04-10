@@ -1,15 +1,15 @@
-# Long List Of Invaluable NodeJS Resources
+Long List Of Invaluable NodeJS Resources
+========================================
 
 Authentication
 
----
+------------------------------------------------------------------------
 
 ### Long List Of Invaluable NodeJS Resources
 
-<strong>A list of all of my articles to link to future posts</strong>
-<br/>
+**A list of all of my articles to link to future posts**  
 
-<em>You should probably skip this one… seriously it's just for internal use!</em>
+*You should probably skip this one… seriously it’s just for internal use!*
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*kSmfKjzYhx8ejpwQ.png" class="graf-image" /></figure>### Authentication
 
@@ -105,7 +105,7 @@ Authentication
 -   <span id="bd77"><a href="https://github.com/vagr9k/gatsby-advanced-starter" class="markup--anchor markup--li-anchor" title="https://github.com/vagr9k/gatsby-advanced-starter">https://github.com/vagr9k/gatsby-advanced-starter</a></span>
 -   <span id="cb83"><a href="https://github.com/focusaurus/express_code_structure" class="markup--anchor markup--li-anchor" title="https://github.com/focusaurus/express_code_structure">https://github.com/focusaurus/express_code_structure</a></span>
 -   <span id="8c3b"><a href="https://github.com/Nilomiranda/relay-social" class="markup--anchor markup--li-anchor" title="https://github.com/Nilomiranda/relay-social">https://github.com/Nilomiranda/relay-social</a> + <a href="https://twitter.com/Nilomiranda/status/1241465671608918017" class="markup--anchor markup--li-anchor" title="https://twitter.com/Nilomiranda/status/1241465671608918017">https://twitter.com/Nilomiranda/status/1241465671608918017</a></span>
--   <span id="3a42"><a href="https://github.com/covidgreen/covid-green-backend-api" class="markup--anchor markup--li-anchor" title="https://github.com/covidgreen/covid-green-backend-api">https://github.com/covidgreen/covid-green-backend-api</a> + \[Can anyone recommend some beginner friendly @fastifyjs \](<a href="https://twitter.com/simonplend/status/1347482545831731203" class="markup--anchor markup--li-anchor" title="https://twitter.com/simonplend/status/1347482545831731203">https://twitter.com/simonplend/status/1347482545831731203</a>)</span>
+-   <span id="3a42"><a href="https://github.com/covidgreen/covid-green-backend-api" class="markup--anchor markup--li-anchor" title="https://github.com/covidgreen/covid-green-backend-api">https://github.com/covidgreen/covid-green-backend-api</a> + \[Can anyone recommend some beginner friendly <span class="citation" data-cites="fastifyjs">@fastifyjs</span> \](<a href="https://twitter.com/simonplend/status/1347482545831731203" class="markup--anchor markup--li-anchor" title="https://twitter.com/simonplend/status/1347482545831731203">https://twitter.com/simonplend/status/1347482545831731203</a>)</span>
 
 ### Cinema
 
@@ -173,7 +173,7 @@ Authentication
 -   <span id="957d"><a href="https://blog.logrocket.com/node-js-crypto-module-a-tutorial" class="markup--anchor markup--li-anchor" title="https://blog.logrocket.com/node-js-crypto-module-a-tutorial">https://blog.logrocket.com/node-js-crypto-module-a-tutorial</a></span>
 -   <span id="0da6"><a href="https://github.com/nodejs/node/issues/37583" class="markup--anchor markup--li-anchor" title="https://github.com/nodejs/node/issues/37583">fs.promises.readFile is 40% slower than fs.readFile</a></span>
 -   <span id="dd27"><a href="https://github.com/ejdaly/node-threads-example" class="markup--anchor markup--li-anchor" title="https://github.com/ejdaly/node-threads-example">https://github.com/ejdaly/node-threads-example</a></span>
--   <span id="6b10"><a href="https://stackoverflow.com/a/40686853/1904223" class="markup--anchor markup--li-anchor" title="https://stackoverflow.com/a/40686853/1904223">How to create full path with node's fs.mkdirSync?</a></span>
+-   <span id="6b10"><a href="https://stackoverflow.com/a/40686853/1904223" class="markup--anchor markup--li-anchor" title="https://stackoverflow.com/a/40686853/1904223">How to create full path with node’s fs.mkdirSync?</a></span>
 
 ### Event loop
 
@@ -183,7 +183,7 @@ Authentication
 ### Stream
 
 -   <span id="5251"><a href="https://youtu.be/dEFdt_6fW-0" class="markup--anchor markup--li-anchor" title="https://youtu.be/dEFdt_6fW-0">Stream into the Future — Matteo Collina, NearForm</a></span>
--   <span id="621e"><a href="https://twitter.com/djgrant_/status/1296395202056327172" class="markup--anchor markup--li-anchor" title="https://twitter.com/djgrant_/status/1296395202056327172">https://twitter.com/djgrant\_/status/1296395202056327172</a></span>
+-   <span id="621e"><a href="https://twitter.com/djgrant_/status/1296395202056327172" class="markup--anchor markup--li-anchor" title="https://twitter.com/djgrant_/status/1296395202056327172">https://twitter.com/djgrant_/status/1296395202056327172</a></span>
 -   <span id="fbf9"><a href="https://github.com/lrlna/sketchin/blob/master/guides/node-streams.md" class="markup--anchor markup--li-anchor" title="https://github.com/lrlna/sketchin/blob/master/guides/node-streams.md">https://github.com/lrlna/sketchin/blob/master/guides/node-streams.md</a></span>
 -   <span id="ae29"><a href="https://developer.mongodb.com/how-to/capturing-hacker-news-mentions-nodejs-mongodb" class="markup--anchor markup--li-anchor" title="https://developer.mongodb.com/how-to/capturing-hacker-news-mentions-nodejs-mongodb">https://developer.mongodb.com/how-to/capturing-hacker-news-mentions-nodejs-mongodb</a></span>
 -   <span id="80f3"><a href="https://2ality.com/2019/11/nodejs-streams-async-iteration.html" class="markup--anchor markup--li-anchor" title="https://2ality.com/2019/11/nodejs-streams-async-iteration.html">https://2ality.com/2019/11/nodejs-streams-async-iteration.html</a></span>
@@ -227,8 +227,8 @@ Authentication
 -   <span id="4b7a"><a href="https://github.com/justjavac/awesome-node-utils" class="markup--anchor markup--li-anchor" title="https://github.com/justjavac/awesome-node-utils">https://github.com/justjavac/awesome-node-utils</a></span>
 -   <span id="b8a4"><a href="https://github.com/bcoe/awesome-cross-platform-nodejs" class="markup--anchor markup--li-anchor" title="https://github.com/bcoe/awesome-cross-platform-nodejs">https://github.com/bcoe/awesome-cross-platform-nodejs</a> + <a href="https://github.com/ehmicky/cross-platform-node-guide" class="markup--anchor markup--li-anchor" title="https://github.com/ehmicky/cross-platform-node-guide">https://github.com/ehmicky/cross-platform-node-guide</a></span>
 -   <span id="ae89">Zero-dependency HTTP responders: <a href="https://twitter.com/juliangruber/status/1222120717367611392" class="markup--anchor markup--li-anchor" title="https://twitter.com/juliangruber/status/1222120717367611392">tweet</a> + <a href="https://github.com/juliangruber/http-responders" class="markup--anchor markup--li-anchor" title="https://github.com/juliangruber/http-responders">repo</a></span>
--   <span id="7cca"><a href="https://twitter.com/sseraphini/status/1232667049949880320" class="markup--anchor markup--li-anchor" title="https://twitter.com/sseraphini/status/1232667049949880320">Prefer cwd instead of \_\_dirname when configuring your Webpack.</a></span>
--   <span id="ad3c"><a href="https://github.com/codemanki/cloudscraper" class="markup--anchor markup--li-anchor" title="https://github.com/codemanki/cloudscraper">Node.js library to bypass cloudflare's anti-ddos page.</a></span>
+-   <span id="7cca"><a href="https://twitter.com/sseraphini/status/1232667049949880320" class="markup--anchor markup--li-anchor" title="https://twitter.com/sseraphini/status/1232667049949880320">Prefer cwd instead of __dirname when configuring your Webpack.</a></span>
+-   <span id="ad3c"><a href="https://github.com/codemanki/cloudscraper" class="markup--anchor markup--li-anchor" title="https://github.com/codemanki/cloudscraper">Node.js library to bypass cloudflare’s anti-ddos page.</a></span>
 -   <span id="e14b"><a href="https://github.com/Link-/starred_search" class="markup--anchor markup--li-anchor" title="https://github.com/Link-/starred_search">Search your starred repositories on GitHub for a keyword.</a></span>
 -   <span id="3fa1"><a href="https://maximorlov.com/pm2-to-docker-automatic-restarts" class="markup--anchor markup--li-anchor" title="https://maximorlov.com/pm2-to-docker-automatic-restarts">https://maximorlov.com/pm2-to-docker-automatic-restarts</a></span>
 -   <span id="14bf"><a href="https://blog.bitsrc.io/npm-clients-that-are-better-than-the-original-cd54ed0f5fe7" class="markup--anchor markup--li-anchor" title="https://blog.bitsrc.io/npm-clients-that-are-better-than-the-original-cd54ed0f5fe7">https://blog.bitsrc.io/npm-clients-that-are-better-than-the-original-cd54ed0f5fe7</a></span>
@@ -243,7 +243,7 @@ Authentication
 -   <span id="60e0"><a href="https://github.com/leafac/kill-the-newsletter" class="markup--anchor markup--li-anchor" title="https://github.com/leafac/kill-the-newsletter">Convert email newsletters into Atom feeds</a></span>
 -   <span id="c052"><a href="https://github.com/kriszyp/msgpackr" class="markup--anchor markup--li-anchor" title="https://github.com/kriszyp/msgpackr">Ultra-fast MessagePack implementation with extension for record and structural cloning</a> + <a href="https://dev.doctorevidence.com/building-the-fastest-js-de-serializer-a413a2b4fb72" class="markup--anchor markup--li-anchor" title="https://dev.doctorevidence.com/building-the-fastest-js-de-serializer-a413a2b4fb72">https://dev.doctorevidence.com/building-the-fastest-js-de-serializer-a413a2b4fb72</a></span>
 -   <span id="3182"><a href="https://github.com/AlbertoFdzM/express-list-endpoints" class="markup--anchor markup--li-anchor" title="https://github.com/AlbertoFdzM/express-list-endpoints">A express package to list all registered endoints and its verbs</a></span>
--   <span id="6933"><a href="https://github.com/alessioalex/express-var-dump" class="markup--anchor markup--li-anchor" title="https://github.com/alessioalex/express-var-dump">Express view helper inspired by PHP's var_dump()</a></span>
+-   <span id="6933"><a href="https://github.com/alessioalex/express-var-dump" class="markup--anchor markup--li-anchor" title="https://github.com/alessioalex/express-var-dump">Express view helper inspired by PHP’s var_dump()</a></span>
 -   <span id="b2fc"><a href="https://github.com/dotzero/node-url-shortener" class="markup--anchor markup--li-anchor" title="https://github.com/dotzero/node-url-shortener">A modern, minimalist, and lightweight URL shortener using Node.js and Redis</a></span>
 -   <span id="bd97"><a href="https://github.com/fent/node-ytdl" class="markup--anchor markup--li-anchor" title="https://github.com/fent/node-ytdl">A youtube downloader written in Javascript.</a></span>
 -   <span id="7581"><a href="https://github.com/jesusprubio/awesome-nodejs-pentest" class="markup--anchor markup--li-anchor" title="https://github.com/jesusprubio/awesome-nodejs-pentest">https://github.com/jesusprubio/awesome-nodejs-pentest</a></span>
@@ -274,7 +274,7 @@ Authentication
 -   <span id="f8c7"><a href="https://futurestud.io/learningpaths/learn-hapi" class="markup--anchor markup--li-anchor" title="https://futurestud.io/learningpaths/learn-hapi">https://futurestud.io/learningpaths/learn-hapi</a></span>
 -   <span id="f710"><a href="https://dev.to/justincy/blue-green-node-js-deploys-with-nginx-bkc" class="markup--anchor markup--li-anchor" title="https://dev.to/justincy/blue-green-node-js-deploys-with-nginx-bkc">https://dev.to/justincy/blue-green-node-js-deploys-with-nginx-bkc</a></span>
 -   <span id="ff55"><a href="https://github.com/simonplend/talks/tree/main/make-the-most-of-modern-javascript-with-fastify" class="markup--anchor markup--li-anchor" title="https://github.com/simonplend/talks/tree/main/make-the-most-of-modern-javascript-with-fastify">https://github.com/simonplend/talks/tree/main/make-the-most-of-modern-javascript-with-fastify</a></span>
--   <span id="9f25">\[LeonAI has migrated from Express.js to @fastifyjs\](<a href="https://twitter.com/louistiti_fr/status/1374978615696183296" class="markup--anchor markup--li-anchor" title="https://twitter.com/louistiti_fr/status/1374978615696183296">https://twitter.com/louistiti_fr/status/1374978615696183296</a>)</span>
+-   <span id="9f25">\[LeonAI has migrated from Express.js to <span class="citation" data-cites="fastifyjs">@fastifyjs</span>\](<a href="https://twitter.com/louistiti_fr/status/1374978615696183296" class="markup--anchor markup--li-anchor" title="https://twitter.com/louistiti_fr/status/1374978615696183296">https://twitter.com/louistiti_fr/status/1374978615696183296</a>)</span>
 -   <span id="5b19"><a href="https://www.freecodecamp.org/news/free-8-hour-node-express-course" class="markup--anchor markup--li-anchor" title="https://www.freecodecamp.org/news/free-8-hour-node-express-course">https://www.freecodecamp.org/news/free-8-hour-node-express-course</a></span>
 -   <span id="9f15"><a href="https://www.freecodecamp.org/news/the-nginx-handbook" class="markup--anchor markup--li-anchor" title="https://www.freecodecamp.org/news/the-nginx-handbook">https://www.freecodecamp.org/news/the-nginx-handbook</a></span>
 
@@ -338,7 +338,7 @@ Authentication
 -   <span id="a66a"><a href="https://slides.com/mayashavin/deck-44de00/fullscreen#/" class="markup--anchor markup--li-anchor" title="https://slides.com/mayashavin/deck-44de00/fullscreen#/">Dynamic from Static with Smart Deployment.</a> + <a href="https://twitter.com/cloudinary/status/1208172092312543232" class="markup--anchor markup--li-anchor" title="https://twitter.com/cloudinary/status/1208172092312543232">https://twitter.com/cloudinary/status/1208172092312543232</a></span>
 -   <span id="59af"><a href="https://twitter.com/captainsafia/status/1207459107004801024" class="markup--anchor markup--li-anchor" title="https://twitter.com/captainsafia/status/1207459107004801024">Markdown-based static site generator that works well with monorepos</a></span>
 -   <span id="f5d1"><a href="https://github.com/fpapado/fotis.xyz" class="markup--anchor markup--li-anchor" title="https://github.com/fpapado/fotis.xyz">Personal blog of Fotis Papadogeorgopoulos, built with Eleventy.</a></span>
--   <span id="fe4f"><a href="https://medium.com/@WebReflection/how-to-send-emails-from-static-websites-9a34ceb9416c" class="markup--anchor markup--li-anchor" title="https://medium.com/@WebReflection/how-to-send-emails-from-static-websites-9a34ceb9416c">https://medium.com/@WebReflection/how-to-send-emails-from-static-websites-9a34ceb9416c</a></span>
+-   <span id="fe4f"><a href="https://medium.com/@WebReflection/how-to-send-emails-from-static-websites-9a34ceb9416c" class="markup--anchor markup--li-anchor" title="https://medium.com/@WebReflection/how-to-send-emails-from-static-websites-9a34ceb9416c">https://medium.com/<span class="citation" data-cites="WebReflection/how-to-send-emails-from-static-websites-9a34ceb9416c">@WebReflection/how-to-send-emails-from-static-websites-9a34ceb9416c</span></a></span>
 -   <span id="0d1c"><a href="https://darekkay.com/blog/static-site-comments" class="markup--anchor markup--li-anchor" title="https://darekkay.com/blog/static-site-comments">Various ways to include comments on your static site.</a></span>
 -   <span id="41b0">A statically generated blog example using Next.js and Markdown: <a href="https://github.com/zeit/next.js/tree/canary/examples/blog-starter" class="markup--anchor markup--li-anchor" title="https://github.com/zeit/next.js/tree/canary/examples/blog-starter">repo</a> + <a href="https://twitter.com/timneutkens/status/1240277123451047936" class="markup--anchor markup--li-anchor" title="https://twitter.com/timneutkens/status/1240277123451047936">tweet</a></span>
 -   <span id="4c5e"><a href="https://kezzbracey.com/posts/2020/01/19/eleventy-plus-vscode-plus-gitlab-plus-cloudways" class="markup--anchor markup--li-anchor" title="https://kezzbracey.com/posts/2020/01/19/eleventy-plus-vscode-plus-gitlab-plus-cloudways">https://kezzbracey.com/posts/2020/01/19/eleventy-plus-vscode-plus-gitlab-plus-cloudways</a></span>
@@ -360,7 +360,7 @@ Authentication
 ### Serverless
 
 -   <span id="16e9"><a href="https://youtu.be/KlO5Ksk7baQ" class="markup--anchor markup--li-anchor" title="https://youtu.be/KlO5Ksk7baQ">Building and deploying modern websites and apps — GitHub Universe 2019</a></span>
--   <span id="0d65">\[Would someone be willing to teach me how @netlify or @zeithq's deploy preview feature works?\](<a href="https://twitter.com/TejasKumar_/status/1208378475771506688" class="markup--anchor markup--li-anchor" title="https://twitter.com/TejasKumar_/status/1208378475771506688">https://twitter.com/TejasKumar\_/status/1208378475771506688</a>)</span>
+-   <span id="0d65">\[Would someone be willing to teach me how <span class="citation" data-cites="netlify">@netlify</span> or <span class="citation" data-cites="zeithq">@zeithq</span>’s deploy preview feature works?\](<a href="https://twitter.com/TejasKumar_/status/1208378475771506688" class="markup--anchor markup--li-anchor" title="https://twitter.com/TejasKumar_/status/1208378475771506688">https://twitter.com/TejasKumar_/status/1208378475771506688</a>)</span>
 -   <span id="9594"><a href="https://www.freecodecamp.org/news/complete-back-end-system-with-serverless" class="markup--anchor markup--li-anchor" title="https://www.freecodecamp.org/news/complete-back-end-system-with-serverless">https://www.freecodecamp.org/news/complete-back-end-system-with-serverless</a></span>
 -   <span id="8d2d"><a href="https://twitter.com/rwieruch/status/1212773598492004352" class="markup--anchor markup--li-anchor" title="https://twitter.com/rwieruch/status/1212773598492004352">Firebase Hosting in 6 steps.</a></span>
 -   <span id="9d8e"><a href="https://maxkostinevich.com/blog/serverless-geolocation" class="markup--anchor markup--li-anchor" title="https://maxkostinevich.com/blog/serverless-geolocation">How to make simple Geolocation service using Cloudflare Workers.</a></span>

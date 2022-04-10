@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="prims-algorithm">Prim’s Algorithm</h1>
+<p>In computer science, <strong>Prim’s algorithm</strong> is a greedy algorithm that finds a minimum spanning tree for a weighted undirected graph.</p>
+<p>The algorithm operates by building this tree one vertex at a time, from an arbitrary starting vertex, at each step adding the cheapest possible connection from the tree to another vertex.</p>
+<figure>
+<img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Prim%27s_algorithm.svg" alt="Prim’s Algorithm" /><figcaption>Prim’s Algorithm</figcaption>
+</figure>
+<p>Prim’s algorithm starting at vertex <code>A</code>. In the third step, edges <code>BD</code> and <code>AB</code> both have weight <code>2</code>, so <code>BD</code> is chosen arbitrarily. After that step, <code>AB</code> is no longer a candidate for addition to the tree because it links two nodes that are already in the tree.</p>
+<h2 id="minimum-spanning-tree">Minimum Spanning Tree</h2>
+<p>A <strong>minimum spanning tree</strong> (MST) or minimum weight spanning tree is a subset of the edges of a connected, edge-weighted (un)directed graph that connects all the vertices together, without any cycles and with the minimum possible total edge weight. That is, it is a spanning tree whose sum of edge weights is as small as possible. More generally, any edge-weighted undirected graph (not necessarily connected) has a minimum spanning forest, which is a union of the minimum spanning trees for its connected components.</p>
+<figure>
+<img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Minimum_spanning_tree.svg" alt="Minimum Spanning Tree" /><figcaption>Minimum Spanning Tree</figcaption>
+</figure>
+<p>A planar graph and its minimum spanning tree. Each edge is labeled with its weight, which here is roughly proportional to its length.</p>
+<figure>
+<img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Multiple_minimum_spanning_trees.svg" alt="Minimum Spanning Tree" /><figcaption>Minimum Spanning Tree</figcaption>
+</figure>
+<p>This figure shows there may be more than one minimum spanning tree in a graph. In the figure, the two trees below the graph are two possibilities of minimum spanning tree of the given graph.</p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Minimum_spanning_tree">Minimum Spanning Tree on Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Prim%27s_algorithm">Prim’s Algorithm on Wikipedia</a></li>
+<li><a href="https://www.youtube.com/watch?v=oP2-8ysT3QQ&amp;list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8">Prim’s Algorithm on YouTube by Tushar Roy</a></li>
+<li><a href="https://www.youtube.com/watch?v=cplfcGZmX7I&amp;list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8">Prim’s Algorithm on YouTube by Michael Sambol</a></li>
+</ul>
+</body>
+</html>

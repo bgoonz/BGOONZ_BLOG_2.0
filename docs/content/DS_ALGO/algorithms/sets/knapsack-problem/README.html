@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="knapsack-problem">Knapsack Problem</h1>
+<p>The knapsack problem or rucksack problem is a problem in combinatorial optimization: Given a set of items, each with a weight and a value, determine the number of each item to include in a collection so that the total weight is less than or equal to a given limit and the total value is as large as possible.</p>
+<p>It derives its name from the problem faced by someone who is constrained by a fixed-size knapsack and must fill it with the most valuable items.</p>
+<p>Example of a one-dimensional (constraint) knapsack problem: which boxes should be chosen to maximize the amount of money while still keeping the overall weight under or equal to 15 kg?</p>
+<figure>
+<img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Knapsack.svg" alt="knapsack problem" /><figcaption>knapsack problem</figcaption>
+</figure>
+<h2 id="definition">Definition</h2>
+<h3 id="knapsack-problem-1">0/1 knapsack problem</h3>
+<p>The most common problem being solved is the <strong>0/1 knapsack problem</strong>, which restricts the number <code>xi</code> of copies of each kind of item to zero or one.</p>
+<p>Given a set of n items numbered from <code>1</code> up to <code>n</code>, each with a weight <code>wi</code> and a value <code>vi</code>, along with a maximum weight capacity <code>W</code>,</p>
+<p>maximize <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/85620037d368d2136fb3361702df6a489416931b" alt="0/1 knapsack" /></p>
+<p>subject to <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dd6e7c9bca4397980976ea6d19237500ce3b8176" alt="0/1 knapsack" /> and <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/07dda71da2a630762c7b21b51ea54f86f422f951" alt="0/1 knapsack" /></p>
+<p>Here <code>xi</code> represents the number of instances of item <code>i</code> to include in the knapsack. Informally, the problem is to maximize the sum of the values of the items in the knapsack so that the sum of the weights is less than or equal to the knapsack’s capacity.</p>
+<h3 id="bounded-knapsack-problem-bkp">Bounded knapsack problem (BKP)</h3>
+<p>The <strong>bounded knapsack problem (BKP)</strong> removes the restriction that there is only one of each item, but restricts the number <code>xi</code> of copies of each kind of item to a maximum non-negative integer value <code>c</code>:</p>
+<p>maximize <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/85620037d368d2136fb3361702df6a489416931b" alt="bounded knapsack" /></p>
+<p>subject to <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dd6e7c9bca4397980976ea6d19237500ce3b8176" alt="bounded knapsack" /> and <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6c8c5ac4f8247b3b8e01e89de76a1df0ea969821" alt="bounded knapsack" /></p>
+<h3 id="unbounded-knapsack-problem-ukp">Unbounded knapsack problem (UKP)</h3>
+<p>The <strong>unbounded knapsack problem (UKP)</strong> places no upper bound on the number of copies of each kind of item and can be formulated as above except for that the only restriction on <code>xi</code> is that it is a non-negative integer.</p>
+<p>maximize <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/85620037d368d2136fb3361702df6a489416931b" alt="unbounded knapsack" /></p>
+<p>subject to <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dd6e7c9bca4397980976ea6d19237500ce3b8176" alt="unbounded knapsack" /> and <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/90a99710f61d5dea19e49ae5b31164d2b56b07e3" alt="unbounded knapsack" /></p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Knapsack_problem">Wikipedia</a></li>
+<li><a href="https://www.youtube.com/watch?v=8LusJS5-AGo&amp;list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8">0/1 Knapsack Problem on YouTube</a></li>
+</ul>
+</body>
+</html>

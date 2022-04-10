@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>regex</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="regular-expressions">Regular expressions</h1>
+<blockquote>
+<p>Regular expressions are patterns used to match character combinations in strings. In JavaScript, regular expressions are also objects. These patterns are used with the exec() and test() methods of RegExp, and with the match(), matchAll(), replace(), replaceAll(), search(), and split() methods of String. This chapter describes JavaScript regular expressions.</p>
+</blockquote>
+<p>Regular expressions are patterns used to match character combinations in strings. In JavaScript, regular expressions are also objects. These patterns are used with the <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec"><code>exec()</code></a> and <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test"><code>test()</code></a> methods of <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp"><code>RegExp</code></a>, and with the <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match"><code>match()</code></a>, <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/matchAll"><code>matchAll()</code></a>, <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace"><code>replace()</code></a>, <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replaceAll"><code>replaceAll()</code></a>, <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/search"><code>search()</code></a>, and <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split"><code>split()</code></a> methods of <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/String"><code>String</code></a>. This chapter describes JavaScript regular expressions.</p>
+<h2 id="creating-a-regular-expression">Creating a regular expression</h2>
+<p>You construct a regular expression in one of two ways:</p>
+<ul>
+<li><p>Using a regular expression literal, which consists of a pattern enclosed between slashes, as follows:</p>
+<pre><code>  let re = /ab+c/;</code></pre>
+<p>Regular expression literals provide compilation of the regular expression when the script is loaded. If the regular expression remains constant, using this can improve performance.</p></li>
+<li><p>Or calling the constructor function of the <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp"><code>RegExp</code></a> object, as follows:</p>
+<pre><code>  let re = new RegExp(&#39;ab+c&#39;);</code></pre>
+<p>Using the constructor function provides runtime compilation of the regular expression. Use the constructor function when you know the regular expression pattern will be changing, or you don’t know the pattern and are getting it from another source, such as user input.</p></li>
+</ul>
+<h2 id="writing-a-regular-expression-pattern">Writing a regular expression pattern</h2>
+<p>A regular expression pattern is composed of simple characters, such as <code>/abc/</code>, or a combination of simple and special characters, such as <code>/ab*c/</code> or <code>/Chapter (\d+)\.\d*/</code>. The last example includes parentheses, which are used as a memory device. The match made with this part of the pattern is remembered for later use, as described in <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Groups_and_Ranges#Using_groups">Using groups</a>.</p>
+<p><strong>Note:</strong> If you are already familiar with the forms of a regular expression, you may also read <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Cheatsheet">the cheatsheet</a> for a quick lookup for a specific pattern/construct.</p>
+<h3 id="using-simple-patterns">Using simple patterns</h3>
+<p>Simple patterns are constructed of characters for which you want to find a direct match. For example, the pattern <code>/abc/</code> matches character combinations in strings only when the exact sequence <code>"abc"</code> occurs (all characters together and in that order). Such a match would succeed in the strings <code>"Hi, do you know your abc's?"</code> and <code>"The latest airplane designs evolved from slabcraft."</code> In both cases the match is with the substring <code>"abc"</code>. There is no match in the string <code>"Grab crab"</code> because while it contains the substring <code>"ab c"</code>, it does not contain the exact substring <code>"abc"</code>.</p>
+<h3 id="using-special-characters">Using special characters</h3>
+<p>When the search for a match requires something more than a direct match, such as finding one or more b’s, or finding white space, you can include special characters in the pattern. For example, to match <em>a single <code>"a"</code> followed by zero or more <code>"b"</code>s followed by <code>"c"</code></em>, you’d use the pattern <code>/ab*c/</code>: the <code>*</code> after <code>"b"</code> means “0 or more occurrences of the preceding item.” In the string <code>"cbbabbbbcdebc"</code>, this pattern will match the substring <code>"abbbbc"</code>.</p>
+<p>The following pages provide lists of the different special characters that fit into each category, along with descriptions and examples.</p>
+<p><a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Assertions">Assertions</a></p>
+<p>Assertions include boundaries, which indicate the beginnings and endings of lines and words, and other patterns indicating in some way that a match is possible (including look-ahead, look-behind, and conditional expressions).</p>
+<p><a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Character_Classes">Character classes</a></p>
+<p>Distinguish different types of characters. For example, distinguishing between letters and digits.</p>
+<p><a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Groups_and_Ranges">Groups and ranges</a></p>
+<p>Indicate groups and ranges of expression characters.</p>
+<p><a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Quantifiers">Quantifiers</a></p>
+<p>Indicate numbers of characters or expressions to match.</p>
+<p><a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Unicode_Property_Escapes">Unicode property escapes</a></p>
+<p>Distinguish based on unicode character properties, for example, upper- and lower-case letters, math symbols, and punctuation.</p>
+<p>If you want to look at all the special characters that can be used in regular expressions in a single table, see the following:</p>
+<p>Special characters in regular expressions. | Characters / constructs | Corresponding article | | — | — | | <code>\</code>, <code>.</code>, <code>\cX</code>, <code>\d</code>, <code>\D</code>, <code>\f</code>, <code>\n</code>, <code>\r</code>, <code>\s</code>, <code>\S</code>, <code>\t</code>, <code>\v</code>, <code>\w</code>, <code>\W</code>, <code>\0</code>, <code>\xhh</code>, <code>\uhhhh</code>, <code>\uhhhhh</code>, <code>[\b]</code> | <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Character_Classes">Character classes</a></p>
+<div class="line-block"><br />
+<code>^</code>, <code>$</code>, <code>x(?=y)</code>, <code>x(?!y)</code>, <code>(?&lt;=y)x</code>, <code>(?&lt;!y)x</code>, <code>\b</code>, <code>\B</code> |</div>
+<p><a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Assertions">Assertions</a></p>
+<div class="line-block"><br />
+<code>(x)</code>, <code>(?:x)</code>, <code>(?&lt;Name&gt;x)</code>, <code>x|y</code>, <code>[xyz]</code>, <code>[^xyz]</code>, <code>\_Number_</code> |</div>
+<p><a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Groups_and_Ranges">Groups and ranges</a></p>
+<div class="line-block"><br />
+<code>*</code>, <code>+</code>, <code>?</code>, <code>x{_n_}</code>, <code>x{_n_,}</code>, <code>x{_n_,_m_}</code> |</div>
+<p><a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Quantifiers">Quantifiers</a></p>
+<div class="line-block"><br />
+<code>\p{_UnicodeProperty_}</code>, <code>\P{_UnicodeProperty_}</code> | <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Unicode_Property_Escapes">Unicode property escapes</a> |</div>
+<h3 id="escaping">Escaping</h3>
+<p>If you need to use any of the special characters literally (actually searching for a <code>"*"</code>, for instance), you must escape it by putting a backslash in front of it. For instance, to search for <code>"a"</code> followed by <code>"*"</code> followed by <code>"b"</code>, you’d use <code>/a\*b/</code> — the backslash “escapes” the <code>"*"</code>, making it literal instead of special.</p>
+<p>Similarly, if you’re writing a regular expression literal and need to match a slash (“/”), you need to escape that (otherwise, it terminates the pattern). For instance, to search for the string “/example/” followed by one or more alphabetic characters, you’d use <code>/\/example\/[a-z]+/i</code>—the backslashes before each slash make them literal.</p>
+<p>To match a literal backslash, you need to escape the backslash. For instance, to match the string “C:\” where “C” can be any letter, you’d use <code>/[A-Z]:\\/</code> — the first backslash escapes the one after it, so the expression searches for a single literal backslash.</p>
+<p>If using the <code>RegExp</code> constructor with a string literal, remember that the backslash is an escape in string literals, so to use it in the regular expression, you need to escape it at the string literal level. <code>/a\*b/</code> and <code>new RegExp("a\\*b")</code> create the same expression, which searches for “a” followed by a literal “*” followed by “b”.</p>
+<p>If escape strings are not already part of your pattern you can add them using <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace"><code>String.replace</code></a>:</p>
+<pre><code>function escapeRegExp(string) {
+  return string.replace(/[.*+\-?^${}()|[\]\\]/g, &#39;\\$&amp;&#39;);
+}</code></pre>
+<p>The “g” after the regular expression is an option or flag that performs a global search, looking in the whole string and returning all matches. It is explained in detail below in <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#Advanced_searching_with_flags">Advanced Searching With Flags</a>.</p>
+<p><em>Why isn’t this built into JavaScript?</em> There is a proposal to add such a function to RegExp, but it was <a href="https://github.com/benjamingr/RegExp.escape/issues/37">rejected by TC39.</a></p>
+<h3 id="using-parentheses">Using parentheses</h3>
+<p>Parentheses around any part of the regular expression pattern causes that part of the matched substring to be remembered. Once remembered, the substring can be recalled for other use. See <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Groups_and_Ranges#Using_groups">Groups and ranges</a> for more details.</p>
+<h2 id="using-regular-expressions-in-javascript">Using regular expressions in JavaScript</h2>
+<p>Regular expressions are used with the <code>RegExp</code> methods <code>test()</code> and <code>exec()</code> and with the <code>String</code> methods <code>match()</code>, <code>replace()</code>, <code>search()</code>, and <code>split()</code>. These methods are explained in detail in the <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference" title="en-US/docs/JavaScript/Reference">JavaScript reference</a>.</p>
+<p>Methods that use regular expressions | Method | Description | | — | — | | <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec"><code>exec()</code></a> | Executes a search for a match in a string. It returns an array of information or <code>null</code> on a mismatch. | | <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test"><code>test()</code></a> | Tests for a match in a string. It returns <code>true</code> or <code>false</code>. | | <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match"><code>match()</code></a> | Returns an array containing all of the matches, including capturing groups, or <code>null</code> if no match is found. | | <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/matchAll"><code>matchAll()</code></a> | Returns an iterator containing all of the matches, including capturing groups. | | <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/search"><code>search()</code></a> | Tests for a match in a string. It returns the index of the match, or <code>-1</code> if the search fails. | | <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace"><code>replace()</code></a> | Executes a search for a match in a string, and replaces the matched substring with a replacement substring. | | <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replaceAll"><code>replaceAll()</code></a> | Executes a search for all matches in a string, and replaces the matched substrings with a replacement substring. | | <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split"><code>split()</code></a> | Uses a regular expression or a fixed string to break a string into an array of substrings. |</p>
+<p>When you want to know whether a pattern is found in a string, use the <code>test()</code> or <code>search()</code> methods; for more information (but slower execution) use the <code>exec()</code> or <code>match()</code> methods. If you use <code>exec()</code> or <code>match()</code> and if the match succeeds, these methods return an array and update properties of the associated regular expression object and also of the predefined regular expression object, <code>RegExp</code>. If the match fails, the <code>exec()</code> method returns <code>null</code> (which coerces to <code>false</code>).</p>
+<p>In the following example, the script uses the <code>exec()</code> method to find a match in a string.</p>
+<pre><code>var myRe = /d(b+)d/g;
+var myArray = myRe.exec(&#39;cdbbdbsbz&#39;);</code></pre>
+<p>If you do not need to access the properties of the regular expression, an alternative way of creating <code>myArray</code> is with this script:</p>
+<pre><code>var myArray = /d(b+)d/g.exec(&#39;cdbbdbsbz&#39;);</code></pre>
+<p>(See <a href="#g-different-behaviors">different behaviors</a> for further info about the different behaviors.)</p>
+<p>If you want to construct the regular expression from a string, yet another alternative is this script:</p>
+<pre><code>var myRe = new RegExp(&#39;d(b+)d&#39;, &#39;g&#39;);
+var myArray = myRe.exec(&#39;cdbbdbsbz&#39;);</code></pre>
+<p>With these scripts, the match succeeds and returns the array and updates the properties shown in the following table.</p>
+<p>Results of regular expression execution. | Object | Property or index | Description | In this example | | — | — | — | — | | <code>myArray</code> | | The matched string and all remembered substrings. | <code>['dbbd', 'bb', index: 1, input: 'cdbbdbsbz']</code> | | <code>index</code> | The 0-based index of the match in the input string. | <code>1</code> | | <code>input</code> | The original string. | <code>'cdbbdbsbz'</code> | | <code>[0]</code> | The last matched characters. | <code>'dbbd'</code> | | <code>myRe</code> | <code>lastIndex</code> | The index at which to start the next match. (This property is set only if the regular expression uses the g option, described in <a href="#Advanced_searching_with_flags">Advanced Searching With Flags</a>.) | <code>5</code> | | <code>source</code> | The text of the pattern. Updated at the time that the regular expression is created, not executed. | <code>'d(b+)d'</code> |</p>
+<p>As shown in the second form of this example, you can use a regular expression created with an object initializer without assigning it to a variable. If you do, however, every occurrence is a new regular expression. For this reason, if you use this form without assigning it to a variable, you cannot subsequently access the properties of that regular expression. For example, assume you have this script:</p>
+<pre><code>var myRe = /d(b+)d/g;
+var myArray = myRe.exec(&#39;cdbbdbsbz&#39;);
+console.log(&#39;The value of lastIndex is &#39; + myRe.lastIndex);</code></pre>
+<p>However, if you have this script:</p>
+<pre><code>var myArray = /d(b+)d/g.exec(&#39;cdbbdbsbz&#39;);
+console.log(&#39;The value of lastIndex is &#39; + /d(b+)d/g.lastIndex);</code></pre>
+<p>The occurrences of <code>/d(b+)d/g</code> in the two statements are different regular expression objects and hence have different values for their <code>lastIndex</code> property. If you need to access the properties of a regular expression created with an object initializer, you should first assign it to a variable.</p>
+<h3 id="advanced-searching-with-flags">Advanced searching with flags</h3>
+<p>Regular expressions have six optional flags that allow for functionality like global and case insensitive searching. These flags can be used separately or together in any order, and are included as part of the regular expression.</p>
+<p>Regular expression flags | Flag | Description | Corresponding property | | — | — | — | | <code>g</code> | Global search. | <code>[RegExp.prototype.global](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/global)</code> | | <code>i</code> | Case-insensitive search. | <code>[RegExp.prototype.ignoreCase](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/ignoreCase)</code> | | <code>m</code> | Multi-line search. | <code>[RegExp.prototype.multiline](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/multiline)</code> | | <code>s</code> | Allows <code>.</code> to match newline characters. | <code>[RegExp.prototype.dotAll](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/dotAll)</code> | | <code>u</code> | “unicode”; treat a pattern as a sequence of unicode code points. | <code>[RegExp.prototype.unicode](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/unicode)</code> | | <code>y</code> | Perform a “sticky” search that matches starting at the current position in the target string. See <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/sticky"><code>sticky</code></a>. | <code>[RegExp.prototype.sticky](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/sticky)</code> |</p>
+<p>To include a flag with the regular expression, use this syntax:</p>
+<pre><code>var re = /pattern/flags;</code></pre>
+<p>or</p>
+<pre><code>var re = new RegExp(&#39;pattern&#39;, &#39;flags&#39;);</code></pre>
+<p>Note that the flags are an integral part of a regular expression. They cannot be added or removed later.</p>
+<p>For example, <code>re = /\w+\s/g</code> creates a regular expression that looks for one or more characters followed by a space, and it looks for this combination throughout the string.</p>
+<pre><code>var re = /\w+\s/g;
+var str = &#39;fee fi fo fum&#39;;
+var myArray = str.match(re);
+console.log(myArray);</code></pre>
+<p>You could replace the line:</p>
+<pre><code>var re = /\w+\s/g;</code></pre>
+<p>with:</p>
+<pre><code>var re = new RegExp(&#39;\\w+\\s&#39;, &#39;g&#39;);</code></pre>
+<p>and get the same result.</p>
+<p>The behavior associated with the <code>g</code> flag is different when the <code>.exec()</code> method is used. The roles of “class” and “argument” get reversed: In the case of <code>.match()</code>, the string class (or data type) owns the method and the regular expression is just an argument, while in the case of <code>.exec()</code>, it is the regular expression that owns the method, with the string being the argument. Contrast this <em><code>str.match(re)</code></em> versus <em><code>re.exec(str)</code></em>. The <code>g</code> flag is used with the <strong><code>.exec()</code></strong> method to get iterative progression.</p>
+<pre><code>var xArray; while(xArray = re.exec(str)) console.log(xArray);</code></pre>
+<p>The <code>m</code> flag is used to specify that a multiline input string should be treated as multiple lines. If the <code>m</code> flag is used, <code>^</code> and <code>$</code> match at the start or end of any line within the input string instead of the start or end of the entire string.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Note:</strong> Several examples are also available in:</p>
+<ul>
+<li>The reference pages for <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec"><code>exec()</code></a>, <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test"><code>test()</code></a>, <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match"><code>match()</code></a>, <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/matchAll"><code>matchAll()</code></a>, <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/search"><code>search()</code></a>, <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace"><code>replace()</code></a>, <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split"><code>split()</code></a></li>
+<li>This guide articles’: <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Character_Classes">character classes</a>, <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Assertions">assertions</a>, <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Groups_and_Ranges">groups and ranges</a>, <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Quantifiers">quantifiers</a>, <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Unicode_Property_Escapes">Unicode property escapes</a></li>
+</ul>
+<h3 id="using-special-characters-to-verify-input">Using special characters to verify input</h3>
+<p>In the following example, the user is expected to enter a phone number. When the user presses the “Check” button, the script checks the validity of the number. If the number is valid (matches the character sequence specified by the regular expression), the script shows a message thanking the user and confirming the number. If the number is invalid, the script informs the user that the phone number is not valid.</p>
+<p>Within non-capturing parentheses <code>(?:</code> , the regular expression looks for three numeric characters <code>\d{3}</code> OR <code>|</code> a left parenthesis <code>\(</code> followed by three digits <code>\d{3}</code>, followed by a close parenthesis <code>\)</code>, (end non-capturing parenthesis <code>)</code>), followed by one dash, forward slash, or decimal point and when found, remember the character <code>([-\/\.])</code>, followed by three digits <code>\d{3}</code>, followed by the remembered match of a dash, forward slash, or decimal point <code>\1</code>, followed by four digits <code>\d{4}</code>.</p>
+<p>The <code>Change</code> event activated when the user presses Enter sets the value of <code>RegExp.input</code>.</p>
+<h4 id="html">HTML</h4>
+<pre><code>&lt;p&gt;
+  Enter your phone number (with area code) and then click &quot;Check&quot;.
+  &lt;br&gt;
+  The expected format is like ###-###-####.
+&lt;/p&gt;
+&lt;form action=&quot;#&quot;&gt;
+  &lt;input id=&quot;phone&quot;&gt;
+    &lt;button onclick=&quot;testInfo(document.getElementById(&#39;phone&#39;));&quot;&gt;Check&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+<h4 id="javascript">JavaScript</h4>
+<pre><code>var re = /(?:\d{3}|\(\d{3}\))([-\/\.])\d{3}\1\d{4}/;
+function testInfo(phoneInput) {
+  var OK = re.exec(phoneInput.value);
+  if (!OK) {
+    console.error(phoneInput.value + &#39; isn\&#39;t a phone number with area code!&#39;);
+  } else {
+    console.log(&#39;Thanks, your phone number is &#39; + OK[0]);}
+}</code></pre>
+<h4 id="result">Result</h4>
+<p><a href="https://regexr.com/">RegExr</a></p>
+<p>An online tool to learn, build, &amp; test Regular Expressions.</p>
+<p><a href="https://regex101.com/">Regex tester</a></p>
+<p>An online regex builder/debugger</p>
+<p><a href="https://extendsclass.com/regex-tester.html">Regex visualizer</a></p>
+<p>An online visual regex tester.</p>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<div class="line-block">[ECMAScript (ECMA-262)</div>
+<p>The definition of ‘RegExp’ in that specification.](https://tc39.es/ecma262/#sec-regexp-regular-expression-objects) |</p>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>The compatibility table on this page is generated from structured data. If you’d like to contribute to the data, please check out <a href="https://github.com/mdn/browser-compat-data">https://github.com/mdn/browser-compat-data</a> and send us a pull request.</p>
+<p><a href="https://github.com/mdn/browser-compat-data">Update compatibility data on GitHub</a></p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 3%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 5%" />
+<col style="width: 8%" />
+<col style="width: 4%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Desktop</th>
+<th>Mobile</th>
+<th>Server</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td>Chrome</td>
+<td>Edge</td>
+<td>Firefox</td>
+<td>Internet Explorer</td>
+<td>Opera</td>
+<td>Safari</td>
+<td>Android webview</td>
+<td>Chrome for Android</td>
+<td>Firefox for Android</td>
+<td>Opera for Android</td>
+<td>Safari on iOS</td>
+<td>Samsung Internet</td>
+<td>Node.js</td>
+</tr>
+<tr class="even">
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td><a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp"><code>RegExp</code></a></td>
+<td>Chrome Full support 1</td>
+<td>Edge Full support 12</td>
+<td>Firefox Full support 1</td>
+<td>IE Full support 4</td>
+<td>Opera Full support 5</td>
+<td>Safari Full support 1</td>
+<td>WebView Android Full support 1</td>
+<td>Chrome Android Full support 18</td>
+<td>Firefox Android Full support 4</td>
+<td>Opera Android Full support 10.1</td>
+<td>Safari iOS Full support 1</td>
+<td>Samsung Internet Android Full support 1.0</td>
+<td>nodejs Full support Yes</td>
+</tr>
+<tr class="even">
+<td><a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/RegExp"><code>RegExp()</code> constructor</a></td>
+<td>Chrome Full support 1</td>
+<td>Edge Full support 12</td>
+<td>Firefox Full support 1</td>
+<td>IE Full support 4</td>
+<td>Opera Full support 5</td>
+<td>Safari Full support 1</td>
+<td>WebView Android Full support 1</td>
+<td>Chrome Android Full support 18</td>
+<td>Firefox Android Full support 4</td>
+<td>Opera Android Full support 10.1</td>
+<td>Safari iOS Full support 1</td>
+<td>Samsung Internet Android Full support 1.0</td>
+<td>nodejs Full support Yes</td>
+</tr>
+</tbody>
+</table>
+<div class="line-block"><a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/compile"><code>compile</code></a></div>
+<p>Deprecated</p>
+<div class="line-block">Chrome Full support 1 | Edge Full support 12 | Firefox Full support 1 | IE Full support 4 | Opera Full support 6 | Safari Full support 3.1 | WebView Android Full support 1 | Chrome Android Full support 18 | Firefox Android Full support 4 | Opera Android Full support 10.1 | Safari iOS Full support 2 | Samsung Internet Android Full support 1.0 | nodejs Full support Yes |<br />
+<a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/dotAll"><code>dotAll</code></a> | Chrome Full support 62 | Edge Full support 79 | Firefox Full support 78 | IE No support No | Opera Full support 49 | Safari Full support 12 | WebView Android Full support 62 | Chrome Android Full support 62 | Firefox Android No support No | Opera Android Full support 46 | Safari iOS Full support 12 | Samsung Internet Android Full support 8.0 | nodejs Full support 8.10.0</div>
+<p>Full support 8.10.0</p>
+<p>Full support 8.3.0</p>
+<p>Disabled</p>
+<p>Disabled From version 8.3.0: this feature is behind the <code>--harmony</code> runtime flag.</p>
+<div class="line-block"><br />
+<a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec"><code>exec</code></a> | Chrome Full support 1 | Edge Full support 12 | Firefox Full support 1 | IE Full support 4 | Opera Full support 5 | Safari Full support 1 | WebView Android Full support 1 | Chrome Android Full support 18 | Firefox Android Full support 4 | Opera Android Full support 10.1 | Safari iOS Full support 1 | Samsung Internet Android Full support 1.0 | nodejs Full support Yes |<br />
+<a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/flags"><code>flags</code></a> | Chrome Full support 49 | Edge Full support 79 | Firefox Full support 37 | IE No support No | Opera Full support 39 | Safari Full support 9 | WebView Android Full support 49 | Chrome Android Full support 49 | Firefox Android Full support 37 | Opera Android Full support 41 | Safari iOS Full support 9 | Samsung Internet Android Full support 5.0 | nodejs Full support 6.0.0 |<br />
+<a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/global"><code>global</code></a> | Chrome Full support 1 | Edge Full support 12 | Firefox Full support 1 | IE Full support 5.5 | Opera Full support 5 | Safari Full support 1 | WebView Android Full support 1 | Chrome Android Full support 18 | Firefox Android Full support 4 | Opera Android Full support 10.1 | Safari iOS Full support 1 | Samsung Internet Android Full support 1.0 | nodejs Full support Yes |<br />
+<a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/ignoreCase"><code>ignoreCase</code></a> | Chrome Full support 1 | Edge Full support 12 | Firefox Full support 1 | IE Full support 5.5 | Opera Full support 5 | Safari Full support 1 | WebView Android Full support 1 | Chrome Android Full support 18 | Firefox Android Full support 4 | Opera Android Full support 10.1 | Safari iOS Full support 1 | Samsung Internet Android Full support 1.0 | nodejs Full support Yes |<br />
+<a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/input"><code>RegExp.input</code> (<code>$_</code>)</a></div>
+<p>Non-standard</p>
+<div class="line-block">Chrome Full support 1 | Edge Full support 12 | Firefox Full support 1 | IE Full support 5.5 | Opera Full support 15 | Safari Full support 3 | WebView Android Full support 1 | Chrome Android Full support 18 | Firefox Android Full support 4 | Opera Android Full support 14 | Safari iOS Full support 1 | Samsung Internet Android Full support 1.0 | nodejs Full support Yes |<br />
+<a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/lastIndex"><code>lastIndex</code></a> | Chrome Full support 1 | Edge Full support 12 | Firefox Full support 1 | IE Full support 5.5 | Opera Full support 5 | Safari Full support 1 | WebView Android Full support 1 | Chrome Android Full support 18 | Firefox Android Full support 4 | Opera Android Full support 10.1 | Safari iOS Full support 1 | Samsung Internet Android Full support 1.0 | nodejs Full support Yes |<br />
+<a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/lastMatch"><code>RegExp.lastMatch</code> (<code>$&amp;</code>)</a></div>
+<p>Non-standard</p>
+<div class="line-block">Chrome Full support 1 | Edge Full support 12 | Firefox Full support 1 | IE Full support 5.5 | Opera Full support 10.5 | Safari Full support 3 | WebView Android Full support 1 | Chrome Android Full support 18 | Firefox Android Full support 4 | Opera Android Full support 11 | Safari iOS Full support 1 | Samsung Internet Android Full support 1.0 | nodejs Full support Yes |<br />
+<a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/lastParen"><code>RegExp.lastParen</code> (<code>$+</code>)</a></div>
+<p>Non-standard</p>
+<div class="line-block">Chrome Full support 1 | Edge Full support 12 | Firefox Full support 1 | IE Full support 5.5 | Opera Full support 10.5 | Safari Full support 3 | WebView Android Full support 1 | Chrome Android Full support 18 | Firefox Android Full support 4 | Opera Android Full support 11 | Safari iOS Full support 1 | Samsung Internet Android Full support 1.0 | nodejs Full support Yes |<br />
+<a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/leftContext"><code>RegExp.leftContext</code> (<code>$`</code>)</a></div>
+<p>Non-standard</p>
+<div class="line-block">Chrome Full support 1 | Edge Full support 12 | Firefox Full support 1 | IE Full support 5.5 | Opera Full support 8 | Safari Full support 3 | WebView Android Full support 1 | Chrome Android Full support 18 | Firefox Android Full support 4 | Opera Android Full support 10.1 | Safari iOS Full support 1 | Samsung Internet Android Full support 1.0 | nodejs Full support Yes |<br />
+lookbehind assertions (<code>(?&lt;= )</code> and <code>(?&lt;! )</code>) | Chrome Full support 62 | Edge Full support 79 | Firefox Full support 78 | IE No support No | Opera Full support 49 | Safari No support No | WebView Android Full support 62 | Chrome Android Full support 62 | Firefox Android No support No</div>
+<p>Notes</p>
+<p>No support No</p>
+<p>Notes</p>
+<p>Notes See <a href="https://bugzil.la/1225665">bug 1225665</a>.</p>
+<div class="line-block">Opera Android Full support 46 | Safari iOS No support No | Samsung Internet Android Full support 8.0 | nodejs Full support 8.10.0 |<br />
+<a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/multiline"><code>multiline</code></a> | Chrome Full support 1 | Edge Full support 12 | Firefox Full support 1 | IE Full support 5.5 | Opera Full support 5 | Safari Full support 1 | WebView Android Full support 1 | Chrome Android Full support 18 | Firefox Android Full support 4 | Opera Android Full support 10.1 | Safari iOS Full support 1 | Samsung Internet Android Full support 1.0 | nodejs Full support Yes |<br />
+<a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/n"><code>RegExp.$1-$9</code></a> | Chrome Full support 1 | Edge Full support 12 | Firefox Full support 1 | IE Full support 4 | Opera Full support 5 | Safari Full support 1 | WebView Android Full support 1 | Chrome Android Full support 18 | Firefox Android Full support 4 | Opera Android Full support 10.1 | Safari iOS Full support 1 | Samsung Internet Android Full support 1.0 | nodejs Full support Yes |<br />
+Named capture groups | Chrome Full support 64 | Edge Full support 79 | Firefox Full support 78 | IE No support No | Opera Full support 51 | Safari Full support 11.1 | WebView Android Full support 64 | Chrome Android Full support 64 | Firefox Android No support No | Opera Android Full support 47 | Safari iOS Full support 11.3 | Samsung Internet Android Full support 9.0 | nodejs Full support 10.0.0</div>
+<p>Full support 10.0.0</p>
+<p>Full support 8.3.0</p>
+<p>Disabled</p>
+<p>Disabled From version 8.3.0: this feature is behind the <code>--harmony</code> runtime flag.</p>
+<div class="line-block"><br />
+Unicode property escapes (<code>\p{...}</code>) | Chrome Full support 64 | Edge Full support 79 | Firefox Full support 78 | IE No support No | Opera Full support 51 | Safari Full support 11.1 | WebView Android Full support 64 | Chrome Android Full support 64 | Firefox Android No support No | Opera Android Full support 47 | Safari iOS Full support 11.3 | Samsung Internet Android Full support 9.0 | nodejs Full support 10.0.0</div>
+<p>Full support 10.0.0</p>
+<p>Full support 8.3.0</p>
+<p>Disabled</p>
+<p>Disabled From version 8.3.0: this feature is behind the <code>--harmony</code> runtime flag.</p>
+<div class="line-block"><br />
+<a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/rightContext"><code>RegExp.rightContext</code> (<code>$'</code>)</a></div>
+<p>Non-standard</p>
+<div class="line-block">Chrome Full support 1 | Edge Full support 12 | Firefox Full support 1 | IE Full support 5.5 | Opera Full support 8 | Safari Full support 3 | WebView Android Full support 1 | Chrome Android Full support 18 | Firefox Android Full support 4 | Opera Android Full support 10.1 | Safari iOS Full support 1 | Samsung Internet Android Full support 1.0 | nodejs Full support Yes |<br />
+<a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/source"><code>source</code></a> | Chrome Full support 1 | Edge Full support 12 | Firefox Full support 1 | IE Full support 4 | Opera Full support 5 | Safari Full support 1 | WebView Android Full support 1 | Chrome Android Full support 18 | Firefox Android Full support 4 | Opera Android Full support 10.1 | Safari iOS Full support 1 | Samsung Internet Android Full support 1.0 | nodejs Full support Yes |<br />
+<a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/sticky"><code>sticky</code></a> | Chrome Full support 49 | Edge Full support 13 | Firefox Full support 3 | IE No support No | Opera Full support 36 | Safari Full support 10 | WebView Android Full support 49 | Chrome Android Full support 49 | Firefox Android Full support 4 | Opera Android Full support 36 | Safari iOS Full support 10 | Samsung Internet Android Full support 5.0 | nodejs Full support Yes |<br />
+<a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test"><code>test</code></a> | Chrome Full support 1 | Edge Full support 12 | Firefox Full support 1 | IE Full support 4 | Opera Full support 5 | Safari Full support 1 | WebView Android Full support 1 | Chrome Android Full support 18 | Firefox Android Full support 4 | Opera Android Full support 10.1 | Safari iOS Full support 1 | Samsung Internet Android Full support 1.0 | nodejs Full support Yes |<br />
+<a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/toSource"><code>toSource</code></a></div>
+<p>Non-standard</p>
+<div class="line-block">Chrome No support No | Edge No support No | Firefox No support 1 — 74</div>
+<p>Notes</p>
+<p>No support 1 — 74</p>
+<p>Notes</p>
+<p>Notes Starting in Firefox 74, <code>toSource()</code> is no longer available for use by web content. It is still allowed for internal and privileged code.</p>
+<div class="line-block">IE No support No | Opera No support No | Safari No support No | WebView Android No support No | Chrome Android No support No | Firefox Android Full support 4 | Opera Android No support No | Safari iOS No support No | Samsung Internet Android No support No | nodejs No support No |<br />
+<a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/toString"><code>toString</code></a> | Chrome Full support 1 | Edge Full support 12 | Firefox Full support 1 | IE Full support 4 | Opera Full support 5 | Safari Full support 1 | WebView Android Full support 1 | Chrome Android Full support 18 | Firefox Android Full support 4 | Opera Android Full support 10.1 | Safari iOS Full support 1 | Samsung Internet Android Full support 1.0 | nodejs Full support Yes |<br />
+<a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/unicode"><code>unicode</code></a> | Chrome Full support 50 | Edge Full support 12</div>
+<p>Notes</p>
+<p>Full support 12</p>
+<p>Notes</p>
+<p>Notes Case folding is implemented in version 13</p>
+<div class="line-block">Firefox Full support 46 | IE No support No | Opera Full support 37 | Safari Full support 10 | WebView Android Full support 50 | Chrome Android Full support 50 | Firefox Android Full support 46 | Opera Android Full support 37 | Safari iOS Full support 10 | Samsung Internet Android Full support 5.0 | nodejs Full support Yes |<br />
+<a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/@@match"><code>@@match</code></a> | Chrome Full support 50 | Edge Full support 13 | Firefox Full support 49 | IE No support No | Opera Full support 37 | Safari Full support 10 | WebView Android Full support 50 | Chrome Android Full support 50 | Firefox Android Full support 49 | Opera Android Full support 37 | Safari iOS Full support 10 | Samsung Internet Android Full support 5.0 | nodejs Full support 6.0.0 |<br />
+<a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/@@matchAll"><code>@@matchAll</code></a> | Chrome Full support 73 | Edge Full support 79 | Firefox Full support 67 | IE No support No | Opera Full support 60 | Safari Full support 13 | WebView Android Full support 73 | Chrome Android Full support 73 | Firefox Android Full support 67 | Opera Android Full support 52 | Safari iOS Full support 13 | Samsung Internet Android Full support 5.0 | nodejs Full support 12.0.0 |<br />
+<a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/@@replace"><code>@@replace</code></a> | Chrome Full support 50 | Edge Full support 79 | Firefox Full support 49 | IE No support No | Opera Full support 37 | Safari Full support 10 | WebView Android Full support 50 | Chrome Android Full support 50 | Firefox Android Full support 49 | Opera Android Full support 37 | Safari iOS Full support 10 | Samsung Internet Android Full support 5.0 | nodejs Full support 6.0.0 |<br />
+<a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/@@search"><code>@@search</code></a> | Chrome Full support 50 | Edge Full support 13 | Firefox Full support 49 | IE No support No | Opera Full support 37 | Safari Full support 10 | WebView Android Full support 50 | Chrome Android Full support 50 | Firefox Android Full support 49 | Opera Android Full support 37 | Safari iOS Full support 10 | Samsung Internet Android Full support 5.0 | nodejs Full support 6.0.0 |<br />
+<a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/@@species"><code>@@species</code></a> | Chrome Full support 50 | Edge Full support 13 | Firefox Full support 49 | IE No support No | Opera Full support 37 | Safari Full support 10 | WebView Android Full support 50 | Chrome Android Full support 50 | Firefox Android Full support 49 | Opera Android Full support 37 | Safari iOS Full support 10 | Samsung Internet Android Full support 5.0 | nodejs Full support 6.5.0</div>
+<p>Full support 6.5.0</p>
+<p>Full support 6.0.0</p>
+<p>Disabled</p>
+<p>Disabled From version 6.0.0: this feature is behind the <code>--harmony</code> runtime flag.</p>
+<div class="line-block"><br />
+<a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/@@split"><code>@@split</code></a> | Chrome Full support 50 | Edge Full support 79 | Firefox Full support 49 | IE No support No | Opera Full support 37 | Safari Full support 10 | WebView Android Full support 50 | Chrome Android Full support 50 | Firefox Android Full support 49 | Opera Android Full support 37 | Safari iOS Full support 10 | Samsung Internet Android Full support 5.0 | nodejs Full support 6.0.0 |</div>
+<h4 id="what-happens-next">What happens next?</h4>
+<p>Our team will review your report. Once we verify the information you have supplied we will update this browser compatability table accordingly.</p>
+<h4 id="can-i-keep-track-of-my-report">Can I keep track of my report?</h4>
+<p>You can join the GitHub repository to see updates and commits for this table data:</p>
+<p><a href="https://github.com/mdn/browser-compat-data">https://github.com/mdn/browser-compat-data</a></p>
+<p>Our goal is to provide accurate, real values for all our compatibility data tables. Notifying MDN of inaccurate data or supplying new data pushes us further towards our goal of providing 100% real values to the developer community.<br />
+Thank you for helping.</p>
+<p>Please select the browser or browsers which are affected.</p>
+<p>Briefly outline the issue you are highlighting. Minimum 10 and maximum 1,000 characters.</p>
+<p>Browser documentation and release notes are good supporting items to accompany your message. A demo hosted on services like Codepen or JSBin are perfect for providing real examples of your findings.</p>
+<p>Connection error:Sorry, we can’t seem to reach the server. We are working to fix the problem. Please try again later.</p>
+<h3 id="legend">Legend</h3>
+<p>Full support</p>
+<p>Full support</p>
+<p>No support</p>
+<p>No support</p>
+<p>Non-standard. Expect poor cross-browser support.</p>
+<p>Non-standard. Expect poor cross-browser support.</p>
+<p>Deprecated. Not for use in new websites.</p>
+<p>Deprecated. Not for use in new websites.</p>
+<p>See implementation notes.</p>
+<p>See implementation notes.</p>
+<p>User must explicitly enable this feature.</p>
+<p>User must explicitly enable this feature.</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions">Source</a></p>
+</body>
+</html>

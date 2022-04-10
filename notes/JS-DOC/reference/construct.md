@@ -1,8 +1,10 @@
-# Reflect.construct()
+Reflect.construct()
+===================
 
 The static `Reflect.construct()` method acts like the [`new`](../../operators/new) operator, but as a function. It is equivalent to calling `new target(...args)`. It gives also the added option to specify a different prototype.
 
-## Syntax
+Syntax
+------
 
     Reflect.construct(target, argumentsList)
     Reflect.construct(target, argumentsList, newTarget)
@@ -26,7 +28,8 @@ A new instance of `target` (or `newTarget`, if present), initialized by `target`
 
 A [`TypeError`](../typeerror), if `target` or `newTarget` are not constructors.
 
-## Description
+Description
+-----------
 
 `Reflect.construct()` allows you to invoke a constructor with a variable number of arguments. (This would also be possible by using the [spread syntax](../../operators/spread_syntax) combined with the [`new` operator](../../operators/new).)
 
@@ -103,7 +106,8 @@ When invoking `Reflect.construct()`, on the other hand, the `new.target` operato
     //     OneClass
     //     undefined
 
-## Examples
+Examples
+--------
 
 ### Using `Reflect.construct()`
 
@@ -111,12 +115,11 @@ When invoking `Reflect.construct()`, on the other hand, the `new.target` operato
     d instanceof Date  // true
     d.getFullYear()    // 1776
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-reflect.construct">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-reflect.construct</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-reflect.construct</span></td></tr></tbody></table>
 
 `construct`
 
@@ -144,12 +147,12 @@ No
 
 5.0
 
-## See also
+See also
+--------
 
 -   [`Reflect`](../reflect)
 -   [`new`](../../operators/new)
 -   `new.target`
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect/construct" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect/construct</a>

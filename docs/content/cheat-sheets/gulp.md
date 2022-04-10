@@ -1,25 +1,12 @@
----
-title: title
-subtitle: subtitle
-date: '2022-01-03'
-thumb_img_alt: lorem-ipsum
-content_img_alt: lorem-ipsum
-excerpt: lorem-ipsum
-seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
-template: post
-thumb_img_path: images/css-72a655a7.jpg
----
+subtitle
 
----
+2022-01-03
 
-title: Gulp
-category: JavaScript libraries
+------------------------------------------------------------------------
 
----
+title: Gulp category: JavaScript libraries
+
+------------------------------------------------------------------------
 
 -   gulp-ruby-sass
 -   gulp-autoprefixer
@@ -131,7 +118,7 @@ category: JavaScript libraries
 
 ### References
 
-https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md#getting-started
+https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md\#getting-started
 
 ### Livereload
 

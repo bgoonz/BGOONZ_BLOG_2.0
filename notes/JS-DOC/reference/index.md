@@ -1,8 +1,10 @@
-# JavaScript reference
+JavaScript reference
+====================
 
 This part of the JavaScript section on MDN serves as a repository of facts about the JavaScript language. Read more [about this reference](about).
 
-## Built-ins
+Built-ins
+---------
 
 [JavaScript standard built-in objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects), along with their methods and properties.
 
@@ -123,7 +125,8 @@ This part of the JavaScript section on MDN serves as a repository of facts about
 -   [`WebAssembly.LinkError`](global_objects/webassembly/linkerror)
 -   [`WebAssembly.RuntimeError`](global_objects/webassembly/runtimeerror)
 
-## Statements
+Statements
+----------
 
 [JavaScript statements and declarations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements)
 
@@ -170,7 +173,8 @@ This part of the JavaScript section on MDN serves as a repository of facts about
 -   [`label`](statements/label)
 -   [`with`](statements/with)
 
-## Expressions and operators
+Expressions and operators
+-------------------------
 
 [JavaScript expressions and operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators).
 
@@ -280,7 +284,8 @@ This part of the JavaScript section on MDN serves as a repository of facts about
 -   [`[a, b] = [1, 2]`](operators/destructuring_assignment)
 -   [`{a, b} = {a:1, b:2}`](operators/destructuring_assignment)
 
-## Functions
+Functions
+---------
 
 This chapter documents how to work with JavaScript functions to develop your applications.
 
@@ -289,7 +294,8 @@ This chapter documents how to work with JavaScript functions to develop your app
 -   [Default parameters](functions/default_parameters)
 -   [Rest parameters](functions/rest_parameters)
 
-## Additional reference pages
+Additional reference pages
+--------------------------
 
 -   [Lexical grammar](lexical_grammar)
 -   [Data types and data structures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)

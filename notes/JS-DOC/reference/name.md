@@ -1,6 +1,7 @@
-# Function.name
+Function.name
+=============
 
-A [`Function`](../function) object's read-only `name` property indicates the function's name as specified when it was created, or it may be either `anonymous` or `''` (an empty string) for functions created anonymously.
+A [`Function`](../function) object’s read-only `name` property indicates the function’s name as specified when it was created, or it may be either `anonymous` or `''` (an empty string) for functions created anonymously.
 
 Property attributes of `Function.name`
 
@@ -18,9 +19,10 @@ yes
 
 **Note:** In non-standard, pre-ES2015 implementations the `configurable` attribute was `false` as well.
 
-## JavaScript compressors and minifiers
+JavaScript compressors and minifiers
+------------------------------------
 
-**Warning:** Be careful when using `Function.name` and source code transformations, such as those carried out by JavaScript compressors (minifiers) or obfuscators. These tools are often used as part of a JavaScript build pipeline to reduce the size of a program prior to deploying it to production. Such transformations often change a function's name at build-time.
+**Warning:** Be careful when using `Function.name` and source code transformations, such as those carried out by JavaScript compressors (minifiers) or obfuscators. These tools are often used as part of a JavaScript build pipeline to reduce the size of a program prior to deploying it to production. Such transformations often change a function’s name at build-time.
 
 Source code such as:
 
@@ -43,9 +45,10 @@ may be compressed to:
       console.log('Oops!');
     }
 
-In the uncompressed version, the program runs into the truthy-branch and logs "`'foo' is an instance of 'Foo'`". Whereas, in the compressed version it behaves differently, and runs into the else-branch. If you rely on `Function.name`, like in the example above, make sure your build pipeline doesn't change function names, or don't assume a function to have a particular name.
+In the uncompressed version, the program runs into the truthy-branch and logs “`'foo' is an instance of 'Foo'`”. Whereas, in the compressed version it behaves differently, and runs into the else-branch. If you rely on `Function.name`, like in the example above, make sure your build pipeline doesn’t change function names, or don’t assume a function to have a particular name.
 
-## Examples
+Examples
+--------
 
 ### Function statement name
 
@@ -56,7 +59,7 @@ The `name` property returns the name of a function statement.
 
 ### Function constructor name
 
-Functions created with the syntax `new Function(...)` or just `Function(...)` create [`Function`](../function) objects and their name is "anonymous".
+Functions created with the syntax `new Function(...)` or just `Function(...)` create [`Function`](../function) objects and their name is “anonymous”.
 
     (new Function).name; // "anonymous"
 
@@ -110,14 +113,14 @@ To change it, use [`Object.defineProperty()`](../object/defineproperty).
 
 ### Bound function names
 
-[`Function.bind()`](bind) produces a function whose name is "bound " plus the function name.
+[`Function.bind()`](bind) produces a function whose name is “bound” plus the function name.
 
     function foo() {};
     foo.bind({}).name; // "bound foo"
 
 ### Function names for getters and setters
 
-When using `get` and `set` accessor properties, "get" or "set" will appear in the function name.
+When using `get` and `set` accessor properties, “get” or “set” will appear in the function name.
 
     let o = {
       get foo(){},
@@ -130,16 +133,16 @@ When using `get` and `set` accessor properties, "get" or "set" will appear in th
 
 ### Function names in classes
 
-You can use `obj.constructor.name` to check the "class" of an object (but be sure to read the warnings below):
+You can use `obj.constructor.name` to check the “class” of an object (but be sure to read the warnings below):
 
     function Foo() {}  // ES2015 Syntax: class Foo {}
 
     var fooInstance = new Foo();
     console.log(fooInstance.constructor.name); // logs "Foo"
 
-**Warning:** The script interpreter will set the built-in `Function.name` property only if a function does not have an own property called _name_ (see section [9.2.11 of the ECMAScript2015 Language Specification](https://www.ecma-international.org/ecma-262/6.0/#sec-setfunctionname)). However, ES2015 specifies the _static_ keyword such that static methods will be set as OwnProperty of the class constructor function (ECMAScript2015, [14.5.14.21.b](https://www.ecma-international.org/ecma-262/6.0/#sec-runtime-semantics-classdefinitionevaluation) + [12.2.6.9](https://www.ecma-international.org/ecma-262/6.0/#sec-object-initializer-runtime-semantics-propertydefinitionevaluation)).
+**Warning:** The script interpreter will set the built-in `Function.name` property only if a function does not have an own property called *name* (see section [9.2.11 of the ECMAScript2015 Language Specification](https://www.ecma-international.org/ecma-262/6.0/#sec-setfunctionname)). However, ES2015 specifies the *static* keyword such that static methods will be set as OwnProperty of the class constructor function (ECMAScript2015, [14.5.14.21.b](https://www.ecma-international.org/ecma-262/6.0/#sec-runtime-semantics-classdefinitionevaluation) + [12.2.6.9](https://www.ecma-international.org/ecma-262/6.0/#sec-object-initializer-runtime-semantics-propertydefinitionevaluation)).
 
-Therefore we can't obtain the class name for virtually any class with a static method property `name()`:
+Therefore we can’t obtain the class name for virtually any class with a static method property `name()`:
 
     class Foo {
       constructor() {}
@@ -152,21 +155,21 @@ With a `static name()` method `Foo.name` no longer holds the actual class name b
     Object.defineProperty(Foo, 'name', { writable: true });
     Foo.name = function() {};
 
-Trying to obtain the class of `fooInstance` via `fooInstance.constructor.name` won't give us the class name at all but a reference to the static class method. Example:
+Trying to obtain the class of `fooInstance` via `fooInstance.constructor.name` won’t give us the class name at all but a reference to the static class method. Example:
 
     let fooInstance = new Foo();
     console.log(fooInstance.constructor.name); // logs function name()
 
-You may also see from the ES5 syntax example that in Chrome or Firefox our static definition of `Foo.name` becomes _writable_. The built-in definition in the absence of a custom static definition is _read-only_:
+You may also see from the ES5 syntax example that in Chrome or Firefox our static definition of `Foo.name` becomes *writable*. The built-in definition in the absence of a custom static definition is *read-only*:
 
     Foo.name = 'Hello';
     console.log(Foo.name); // logs "Hello" if class Foo has a static name() property but "Foo" if not.
 
-Therefore you may not rely on the built-in `Function.name` property to always hold a class's name.
+Therefore you may not rely on the built-in `Function.name` property to always hold a class’s name.
 
 ### Symbols as function names
 
-If a [`Symbol`](../symbol) is used a function name and the symbol has a description, the method's name is the description in square brackets.
+If a [`Symbol`](../symbol) is used a function name and the symbol has a description, the method’s name is the description in square brackets.
 
     let sym1 = Symbol("foo");
     let sym2 = Symbol();
@@ -178,12 +181,11 @@ If a [`Symbol`](../symbol) is used a function name and the symbol has a descript
     o[sym1].name; // "[foo]"
     o[sym2].name; // ""
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-function-instances-name">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-function-instances-name</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-function-instances-name</span></td></tr></tbody></table>
 
 `name`
 
@@ -265,7 +267,8 @@ No
 
 5.0
 
-## See also
+See also
+--------
 
 -   [`Function`](../function)
 

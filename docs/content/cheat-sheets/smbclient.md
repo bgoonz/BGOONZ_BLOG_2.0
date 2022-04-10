@@ -1,7 +1,9 @@
-# To display public shares on the server:
+To display public shares on the server:
+=======================================
 
-smbclient -L <host> -U%
+smbclient -L -U%
 
-# To connect to a share:
+To connect to a share:
+======================
 
-smbclient //<host>/<share> -U<user>%<password>
+smbclient /// -U%

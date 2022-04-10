@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>fill</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="array.prototype.fill">Array.prototype.fill()</h1>
+<p>The <code>fill()</code> method changes all elements in an array to a static value, from a start index (default <code>0</code>) to an end index (default <code>array.length</code>). It returns the modified array.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>fill(value)
+fill(value, start)
+fill(value, start, end)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>value</code><br />
+Value to fill the array with. (Note all elements in the array will be this exact value.)</p>
+<p><code>start</code> <span class="badge inline optional">Optional</span><br />
+Start index, default <code>0</code>.</p>
+<p><code>end</code> <span class="badge inline optional">Optional</span><br />
+End index, default <code>arr.length</code>.</p>
+<h3 id="return-value">Return value</h3>
+<p>The modified array, filled with <code>value</code>.</p>
+<h2 id="description">Description</h2>
+<ul>
+<li>If <code>start</code> is negative, it is treated as <code>array.length + start</code>.</li>
+<li>If <code>end</code> is negative, it is treated as <code>array.length + end</code>.</li>
+<li><code>fill</code> is intentionally generic: it does not require that its <code>this</code> value be an <code>Array</code> object.</li>
+<li><code>fill</code> is a mutator method: it will change the array itself and return it, not a copy of it.</li>
+<li>If the first parameter is an object, each slot in the array will reference that object.</li>
+</ul>
+<h2 id="polyfill">Polyfill</h2>
+<pre><code>if (!Array.prototype.fill) {
+  Object.defineProperty(Array.prototype, &#39;fill&#39;, {
+    value: function(value) {
+
+      // Steps 1-2.
+      if (this == null) {
+        throw new TypeError(&#39;this is null or not defined&#39;);
+      }
+
+      var O = Object(this);
+
+      // Steps 3-5.
+      var len = O.length &gt;&gt;&gt; 0;
+
+      // Steps 6-7.
+      var start = arguments[1];
+      var relativeStart = start &gt;&gt; 0;
+
+      // Step 8.
+      var k = relativeStart &lt; 0 ?
+        Math.max(len + relativeStart, 0) :
+        Math.min(relativeStart, len);
+
+      // Steps 9-10.
+      var end = arguments[2];
+      var relativeEnd = end === undefined ?
+        len : end &gt;&gt; 0;
+
+      // Step 11.
+      var finalValue = relativeEnd &lt; 0 ?
+        Math.max(len + relativeEnd, 0) :
+        Math.min(relativeEnd, len);
+
+      // Step 12.
+      while (k &lt; finalValue) {
+        O[k] = value;
+        k++;
+      }
+
+      // Step 13.
+      return O;
+    }
+  });
+}</code></pre>
+<p>If you need to support truly obsolete JavaScript engines that don’t support <a href="../object/defineproperty"><code>Object.defineProperty</code></a>, it’s best not to polyfill <code>Array.prototype</code> methods at all, as you can’t make them non-enumerable.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-fill">Using fill</h3>
+<pre><code>[1, 2, 3].fill(4)                // [4, 4, 4]
+[1, 2, 3].fill(4, 1)             // [1, 4, 4]
+[1, 2, 3].fill(4, 1, 2)          // [1, 4, 3]
+[1, 2, 3].fill(4, 1, 1)          // [1, 2, 3]
+[1, 2, 3].fill(4, 3, 3)          // [1, 2, 3]
+[1, 2, 3].fill(4, -3, -2)        // [4, 2, 3]
+[1, 2, 3].fill(4, NaN, NaN)      // [1, 2, 3]
+[1, 2, 3].fill(4, 3, 5)          // [1, 2, 3]
+Array(3).fill(4)                 // [4, 4, 4]
+[].fill.call({ length: 3 }, 4)   // {0: 4, 1: 4, 2: 4, length: 3}
+
+// A single object, referenced by each slot of the array:
+let arr = Array(3).fill({}) // [{}, {}, {}]
+arr[0].hi = &quot;hi&quot;            // [{ hi: &quot;hi&quot; }, { hi: &quot;hi&quot; }, { hi: &quot;hi&quot; }]</code></pre>
+<h3 id="using-fill-to-create-a-matrix-of-all-1">Using fill() to create a matrix of all 1</h3>
+<p>This example shows how to create a matrix of all 1, like the <em>ones()</em> function of Octave or MATLAB.</p>
+<pre><code>const arr = new Array(3);
+for (let i=0; i&lt;arr.length; i++) {
+  arr[i] = new Array(4).fill(1); // Creating an array of size 4 and filled of 1
+}
+arr[0][0] = 10;
+console.log(arr[0][0]); // 10
+console.log(arr[1][0]); // 1
+console.log(arr[2][0]); // 1</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-array.prototype.fill">ECMAScript (ECMA-262) <br/></p>
+<span class="small">The definition of ‘Array.prototype.fill’ in that specification.</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>fill</code></p>
+<p>45</p>
+<p>12</p>
+<p>31</p>
+<p>No</p>
+<p>32</p>
+<p>8</p>
+<p>45</p>
+<p>45</p>
+<p>31</p>
+<p>32</p>
+<p>8</p>
+<p>5.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../array"><code>Array</code></a></li>
+<li><a href="../typedarray/fill"><code>TypedArray.prototype.fill()</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill</a></p>
+</body>
+</html>

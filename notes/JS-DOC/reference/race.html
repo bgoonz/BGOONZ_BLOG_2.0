@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>race</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="promise.race">Promise.race()</h1>
+<p>The <code>Promise.race()</code> method returns a promise that fulfills or rejects as soon as one of the promises in an iterable fulfills or rejects, with the value or reason from that promise.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>Promise.race(iterable);</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>iterable</code><br />
+An iterable object, such as an <a href="../array"><code>Array</code></a>. See <a href="../../iteration_protocols#the_iterable_protocol">iterable</a>.</p>
+<h3 id="return-value">Return value</h3>
+<p>A <strong>pending</strong> <a href="../promise"><code>Promise</code></a> that <strong>asynchronously</strong> yields the value of the first promise in the given iterable to fulfill or reject.</p>
+<h2 id="description">Description</h2>
+<p>The <code>race</code> function returns a <code>Promise</code> that is settled the same way (and takes the same value) as the first promise that settles amongst the promises of the iterable passed as an argument.</p>
+<p>If the iterable passed is empty, the promise returned will be forever pending.</p>
+<p>If the iterable contains one or more non-promise value and/or an already settled promise, then <code>Promise.race</code> will resolve to the first of these values found in the iterable.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="asynchronicity-of-promise.race">Asynchronicity of Promise.race</h3>
+<p>This following example demonstrates the asynchronicity of <code>Promise.race</code>:</p>
+<pre><code>// we are passing as argument an array of promises that are already resolved,
+// to trigger Promise.race as soon as possible
+var resolvedPromisesArray = [Promise.resolve(33), Promise.resolve(44)];
+
+var p = Promise.race(resolvedPromisesArray);
+// immediately logging the value of p
+console.log(p);
+
+// using setTimeout we can execute code after the stack is empty
+setTimeout(function(){
+    console.log(&#39;the stack is now empty&#39;);
+    console.log(p);
+});
+
+// logs, in order:
+// Promise { &lt;state&gt;: &quot;pending&quot; }
+// the stack is now empty
+// Promise { &lt;state&gt;: &quot;fulfilled&quot;, &lt;value&gt;: 33 }</code></pre>
+<p>An empty iterable causes the returned promise to be forever pending:</p>
+<pre><code>var foreverPendingPromise = Promise.race([]);
+console.log(foreverPendingPromise);
+setTimeout(function(){
+    console.log(&#39;the stack is now empty&#39;);
+    console.log(foreverPendingPromise);
+});
+
+// logs, in order:
+// Promise { &lt;state&gt;: &quot;pending&quot; }
+// the stack is now empty
+// Promise { &lt;state&gt;: &quot;pending&quot; }</code></pre>
+<p>If the iterable contains one or more non-promise value and/or an already settled promise, then <code>Promise.race</code> will resolve to the first of these values found in the array:</p>
+<pre><code>var foreverPendingPromise = Promise.race([]);
+var alreadyFulfilledProm = Promise.resolve(100);
+
+var arr = [foreverPendingPromise, alreadyFulfilledProm, &quot;non-Promise value&quot;];
+var arr2 = [foreverPendingPromise, &quot;non-Promise value&quot;, Promise.resolve(100)];
+var p = Promise.race(arr);
+var p2 = Promise.race(arr2);
+
+console.log(p);
+console.log(p2);
+setTimeout(function(){
+    console.log(&#39;the stack is now empty&#39;);
+    console.log(p);
+    console.log(p2);
+});
+
+// logs, in order:
+// Promise { &lt;state&gt;: &quot;pending&quot; }
+// Promise { &lt;state&gt;: &quot;pending&quot; }
+// the stack is now empty
+// Promise { &lt;state&gt;: &quot;fulfilled&quot;, &lt;value&gt;: 100 }
+// Promise { &lt;state&gt;: &quot;fulfilled&quot;, &lt;value&gt;: &quot;non-Promise value&quot; }</code></pre>
+<h3 id="using-promise.race---examples-with-settimeout">Using Promise.race - examples with setTimeout</h3>
+<pre><code>var p1 = new Promise(function(resolve, reject) {
+    setTimeout(() =&gt; resolve(&#39;one&#39;), 500);
+});
+var p2 = new Promise(function(resolve, reject) {
+    setTimeout(() =&gt; resolve(&#39;two&#39;), 100);
+});
+
+Promise.race([p1, p2])
+.then(function(value) {
+  console.log(value); // &quot;two&quot;
+  // Both fulfill, but p2 is faster
+});
+
+var p3 = new Promise(function(resolve, reject) {
+    setTimeout(() =&gt; resolve(&#39;three&#39;), 100);
+});
+var p4 = new Promise(function(resolve, reject) {
+    setTimeout(() =&gt; reject(new Error(&#39;four&#39;)), 500);
+});
+
+Promise.race([p3, p4])
+.then(function(value) {
+  console.log(value); // &quot;three&quot;
+  // p3 is faster, so it fulfills
+}, function(error) {
+  // Not called
+});
+
+var p5 = new Promise(function(resolve, reject) {
+    setTimeout(() =&gt; resolve(&#39;five&#39;), 500);
+});
+var p6 = new Promise(function(resolve, reject) {
+    setTimeout(() =&gt; reject(new Error(&#39;six&#39;)), 100);
+});
+
+Promise.race([p5, p6])
+.then(function(value) {
+  // Not called
+}, function(error) {
+  console.log(error.message); // &quot;six&quot;
+  // p6 is faster, so it rejects
+});</code></pre>
+<h3 id="comparison-with-promise.any">Comparison with Promise.any</h3>
+<p><code>Promise.race</code> takes the first settled <a href="../promise"><code>Promise</code></a>.</p>
+<pre><code>const promise1 = new Promise((resolve, reject) =&gt; {
+  setTimeout(resolve, 500, &#39;one&#39;);
+});
+
+const promise2 = new Promise((resolve, reject) =&gt; {
+  setTimeout(reject, 100, &#39;two&#39;);
+});
+
+Promise.race([promise1, promise2]).then((value) =&gt; {
+  console.log(&#39;succeeded with value:&#39;, value);
+}).catch((reason) =&gt; {
+  // Only promise1 is fulfilled, but promise2 is faster
+  console.log(&#39;failed with reason:&#39;, reason);
+});
+// expected output: &quot;failed with reason: two&quot;</code></pre>
+<p><a href="any"><code>Promise.any</code></a> takes the first fulfilled <a href="../promise"><code>Promise</code></a>.</p>
+<pre><code>const promise1 = new Promise((resolve, reject) =&gt; {
+  setTimeout(resolve, 500, &#39;one&#39;);
+});
+
+const promise2 = new Promise((resolve, reject) =&gt; {
+  setTimeout(reject, 100, &#39;two&#39;);
+});
+
+Promise.any([promise1, promise2]).then((value) =&gt; {
+  // Only promise1 is fulfilled, even though promise2 settled sooner
+  console.log(&#39;succeeded with value:&#39;, value);
+}).catch((reason) =&gt; {
+  console.log(&#39;failed with reason:&#39;, reason);
+});
+// expected output: &quot;succeeded with value: one&quot;</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-promise.race">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-promise.race</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>race</code></p>
+<p>32</p>
+<p>12</p>
+<p>29</p>
+<p>No</p>
+<p>19</p>
+<p>8</p>
+<p>4.4.3</p>
+<p>32</p>
+<p>29</p>
+<p>19</p>
+<p>8</p>
+<p>2.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../promise"><code>Promise</code></a></li>
+<li><a href="all"><code>Promise.all()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/race" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/race</a></p>
+</body>
+</html>

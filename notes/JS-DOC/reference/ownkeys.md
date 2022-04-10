@@ -1,8 +1,10 @@
-# handler.ownKeys()
+handler.ownKeys()
+=================
 
 The `handler.ownKeys()` method is a trap for [`Reflect.ownKeys()`](../../reflect/ownkeys).
 
-## Syntax
+Syntax
+------
 
     const p = new Proxy(target, {
       ownKeys: function(target) {
@@ -20,7 +22,8 @@ The target object.
 
 The `ownKeys()` method must return an enumerable object.
 
-## Description
+Description
+-----------
 
 The `handler.ownKeys()` method is a trap for [`Reflect.ownKeys()`](../../reflect/ownkeys).
 
@@ -42,7 +45,8 @@ If the following invariants are violated, the proxy will throw a [`TypeError`](.
 -   The result List must contain the keys of all non-configurable own properties of the target object.
 -   If the target object is not extensible, then the result List must contain all the keys of the own properties of the target object and no other values.
 
-## Examples
+Examples
+--------
 
 ### Trapping of getOwnPropertyNames
 
@@ -78,14 +82,14 @@ The following code violates an invariant.
     // TypeError: proxy [[OwnPropertyKeys]] must return an array
     // with only string and symbol elements
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-proxy-object-internal-methods-and-internal-slots-ownpropertykeys">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-proxy-object-internal-methods-and-internal-slots-ownpropertykeys</span></td></tr></tbody></table>
 
-<span class="small">#sec-proxy-object-internal-methods-and-internal-slots-ownpropertykeys</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -145,13 +149,13 @@ In Firefox 42, the implementation got updated to reflect the final ES2015 specif
 
 5.0
 
-## See also
+See also
+--------
 
 -   [`Proxy`](../../proxy)
 -   [`handler`](../proxy)
 -   [`Object.getOwnPropertyNames()`](../../object/getownpropertynames)
 -   [`Reflect.ownKeys()`](../../reflect/ownkeys)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/ownKeys" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/ownKeys</a>

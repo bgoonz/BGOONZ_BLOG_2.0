@@ -1,8 +1,10 @@
-# Reflect
+Reflect
+=======
 
-**Reflect** is a built-in object that provides methods for interceptable JavaScript operations. The methods are the same as those of [proxy handlers](proxy/proxy). `Reflect` is not a function object, so it's not constructible.
+**Reflect** is a built-in object that provides methods for interceptable JavaScript operations. The methods are the same as those of [proxy handlers](proxy/proxy). `Reflect` is not a function object, so it’s not constructible.
 
-## Description
+Description
+-----------
 
 Unlike most global objects, `Reflect` is not a constructor. You cannot use it with a [`new` operator](../operators/new) or invoke the `Reflect` object as a function. All properties and methods of `Reflect` are static (just like the [`Math`](math) object).
 
@@ -10,7 +12,8 @@ The `Reflect` object provides the following static functions which have the same
 
 Some of these methods are also the same as corresponding methods on [`Object`](object), although they do have [some subtle differences](reflect/comparing_reflect_and_object_methods) between them.
 
-## Static methods
+Static methods
+--------------
 
 [`Reflect.apply(target, thisArgument, argumentsList)`](reflect/apply)  
 Calls a `target` function with arguments as specified by the `argumentsList` parameter. See also [`Function.prototype.apply()`](function/apply).
@@ -40,7 +43,7 @@ Returns a [`Boolean`](boolean) indicating whether the target has the property. E
 Same as [`Object.isExtensible()`](object/isextensible). Returns a [`Boolean`](boolean) that is `true` if the target is extensible.
 
 [`Reflect.ownKeys(target)`](reflect/ownkeys)  
-Returns an array of the target object's own (not inherited) property keys.
+Returns an array of the target object’s own (not inherited) property keys.
 
 [`Reflect.preventExtensions(target)`](reflect/preventextensions)  
 Similar to [`Object.preventExtensions()`](object/preventextensions). Returns a [`Boolean`](boolean) that is `true` if the update was successful.
@@ -51,7 +54,8 @@ A function that assigns values to properties. Returns a [`Boolean`](boolean) tha
 [`Reflect.setPrototypeOf(target, prototype)`](reflect/setprototypeof)  
 A function that sets the prototype of an object. Returns a [`Boolean`](boolean) that is `true` if the update was successful.
 
-## Examples
+Examples
+--------
 
 ### Detecting whether an object contains certain properties
 
@@ -68,7 +72,7 @@ A function that sets the prototype of an object. Returns a [`Boolean`](boolean) 
     Reflect.has(duck, 'haircut');
     // false
 
-### Returning the object's own keys
+### Returning the object’s own keys
 
     Reflect.ownKeys(duck);
     // [ "name", "color", "greeting" ]
@@ -79,14 +83,14 @@ A function that sets the prototype of an object. Returns a [`Boolean`](boolean) 
     // returns "true" if successful
     // "duck" now contains the property "eyes: 'black'"
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-reflect-object">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-reflect-object</span></td></tr></tbody></table>
 
-<span class="small">#sec-reflect-object</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -480,7 +484,8 @@ No
 
 5.0
 
-## See also
+See also
+--------
 
 -   The [`Proxy`](proxy) global object.
 -   The [`handler`](proxy/proxy) object.

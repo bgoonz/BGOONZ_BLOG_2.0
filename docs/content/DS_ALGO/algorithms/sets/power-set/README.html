@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="power-set">Power Set</h1>
+<p>Power set of a set <code>S</code> is the set of all of the subsets of <code>S</code>, including the empty set and <code>S</code> itself. Power set of set <code>S</code> is denoted as <code>P(S)</code>.</p>
+<p>For example for <code>{x, y, z}</code>, the subsets are:</p>
+<pre class="text"><code>{
+  {}, // (also denoted empty set ∅ or the null set)
+  {x},
+  {y},
+  {z},
+  {x, y},
+  {x, z},
+  {y, z},
+  {x, y, z}
+}</code></pre>
+<figure>
+<img src="https://www.mathsisfun.com/sets/images/power-set.svg" alt="Power Set" /><figcaption>Power Set</figcaption>
+</figure>
+<p>Here is how we may illustrate the elements of the power set of the set <code>{x, y, z}</code> ordered with respect to inclusion:</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Hasse_diagram_of_powerset_of_3.svg" /></p>
+<p><strong>Number of Subsets</strong></p>
+<p>If <code>S</code> is a finite set with <code>|S| = n</code> elements, then the number of subsets of <code>S</code> is <code>|P(S)| = 2^n</code>. This fact, which is the motivation for the notation <code>2^S</code>, may be demonstrated simply as follows:</p>
+<blockquote>
+<p>First, order the elements of <code>S</code> in any manner. We write any subset of <code>S</code> in the format <code>{γ1, γ2, ..., γn}</code> where <code>γi , 1 ≤ i ≤ n</code>, can take the value of <code>0</code> or <code>1</code>. If <code>γi = 1</code>, the <code>i</code>-th element of <code>S</code> is in the subset; otherwise, the <code>i</code>-th element is not in the subset. Clearly the number of distinct subsets that can be constructed this way is <code>2^n</code> as <code>γi ∈ {0, 1}</code>.</p>
+</blockquote>
+<h2 id="algorithms">Algorithms</h2>
+<h3 id="bitwise-solution">Bitwise Solution</h3>
+<p>Each number in binary representation in a range from <code>0</code> to <code>2^n</code> does exactly what we need: it shows by its bits (<code>0</code> or <code>1</code>) whether to include related element from the set or not. For example, for the set <code>{1, 2, 3}</code> the binary number of <code>0b010</code> would mean that we need to include only <code>2</code> to the current set.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;"></th>
+<th style="text-align: center;"><code>abc</code></th>
+<th style="text-align: center;">Subset</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><code>0</code></td>
+<td style="text-align: center;"><code>000</code></td>
+<td style="text-align: center;"><code>{}</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>1</code></td>
+<td style="text-align: center;"><code>001</code></td>
+<td style="text-align: center;"><code>{c}</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>2</code></td>
+<td style="text-align: center;"><code>010</code></td>
+<td style="text-align: center;"><code>{b}</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>3</code></td>
+<td style="text-align: center;"><code>011</code></td>
+<td style="text-align: center;"><code>{c, b}</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>4</code></td>
+<td style="text-align: center;"><code>100</code></td>
+<td style="text-align: center;"><code>{a}</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>5</code></td>
+<td style="text-align: center;"><code>101</code></td>
+<td style="text-align: center;"><code>{a, c}</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>6</code></td>
+<td style="text-align: center;"><code>110</code></td>
+<td style="text-align: center;"><code>{a, b}</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>7</code></td>
+<td style="text-align: center;"><code>111</code></td>
+<td style="text-align: center;"><code>{a, b, c}</code></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>See <a href="./bwPowerSet.js">bwPowerSet.js</a> file for bitwise solution.</p>
+</blockquote>
+<h3 id="backtracking-solution">Backtracking Solution</h3>
+<p>In backtracking approach we’re constantly trying to add next element of the set to the subset, memorizing it and then removing it and try the same with the next element.</p>
+<blockquote>
+<p>See <a href="./btPowerSet.js">btPowerSet.js</a> file for backtracking solution.</p>
+</blockquote>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Power_set">Wikipedia</a></li>
+<li><a href="https://www.mathsisfun.com/sets/power-set.html">Math is Fun</a></li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2022-01-03" />
+  <title>title</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">title</h1>
+<p class="subtitle">subtitle</p>
+<p class="date">2022-01-03</p>
+</header>
+<h1 id="apparmor-will-protect-a-system-by-confining-programs-to-a-limited-set-of-resources.">apparmor will protect a system by confining programs to a limited set of resources.</h1>
+<h1 id="to-activate-a-profile">To activate a profile:</h1>
+<p>sudo aa-enforce usr.bin.firefox</p>
+<h1 id="or">or</h1>
+<p>export <em>PROFILE</em>=‘usr.bin.firefox’ sudo <span class="math inline">(<em>r</em><em>m</em>/<em>e</em><em>t</em><em>c</em>/<em>a</em><em>p</em><em>p</em><em>a</em><em>r</em><em>m</em><em>o</em><em>r</em>.<em>d</em>/<em>d</em><em>i</em><em>s</em><em>a</em><em>b</em><em>l</em><em>e</em>/</span><em>PROFILE</em> ; cat /etc/apparmor.d/$<em>PROFILE</em> | apparmor_parser -a )</p>
+<h1 id="to-disable-a-profile">To disable a profile:</h1>
+<p>sudo aa-disable usr.bin.firefox</p>
+<h1 id="or-1">or</h1>
+<p>export <em>PROFILE</em>=‘usr.bin.firefox’ sudo <span class="math inline">(<em>l</em><em>n</em> − <em>s</em>/<em>e</em><em>t</em><em>c</em>/<em>a</em><em>p</em><em>p</em><em>a</em><em>r</em><em>m</em><em>o</em><em>r</em>.<em>d</em>/</span><em>PROFILE</em> /etc/apparmor.d/disable/ &amp;&amp; apparmor<em>parser -R /etc/apparmor.d/$_PROFILE</em>)</p>
+<h1 id="to-list-profiles-loaded">To list profiles loaded:</h1>
+<p>sudo aa-status</p>
+<h1 id="or-2">or</h1>
+<p>sudo apparmor_status</p>
+<h1 id="list-of-available-profiles-etcapparmor.d">List of available profiles: /etc/apparmor.d/</h1>
+</body>
+</html>

@@ -1,45 +1,54 @@
----
-tags: [cryptography, hash, checksum, verification]
----
-
-# To compute hash (checksum) of <file>:
-
-sha256sum <file>
-
-# To compute hash (checksum) from input text:
-
-# Enter text in keyboard and finish by ctrl-D at beginning of line
+To compute hash (checksum) of :
+===============================
 
 sha256sum
-Some text
-^D
 
-echo -n "Hello World" | sha256sum
+To compute hash (checksum) from input text:
+===========================================
 
-# To verify if a hash (checksum) is correct if a hash-file is provided:
+Enter text in keyboard and finish by ctrl-D at beginning of line
+================================================================
 
-# sha256sum will go thru the files listed in <file-with-list-of-checksums>.
+sha256sum Some text ^D
 
-# For each file it will look if it exists. If not, it will print an error.
+echo -n “Hello World” | sha256sum
 
-# If it does exist it will compute the checksum and compare it with the hash
+To verify if a hash (checksum) is correct if a hash-file is provided:
+=====================================================================
 
-# provided in the <file-with-list-of-checksums>. If they match (good!) it
+sha256sum will go thru the files listed in .
+============================================
 
-# will print "filename: OK".
+For each file it will look if it exists. If not, it will print an error.
+========================================================================
 
-# If they don't match (warning, you might have been hacked), it will
+If it does exist it will compute the checksum and compare it with the hash
+==========================================================================
 
-# print "filename: FAILED".
+provided in the . If they match (good!) it
+==========================================
 
-sha256sum --check <file-with-list-of-checksums>
+will print “filename: OK”.
+==========================
 
-# Same as above (but ignore missing files):
+If they don’t match (warning, you might have been hacked), it will
+==================================================================
 
-# This tells you if your file is an exact copy (OK) or has been
+print “filename: FAILED”.
+=========================
 
-# tampered with (FAILED) without bothering you with warnings about
+sha256sum –check
 
-# missing files
+Same as above (but ignore missing files):
+=========================================
 
-sha256sum --check --ignore-missing <file-with-list-of-checksums>
+This tells you if your file is an exact copy (OK) or has been
+=============================================================
+
+tampered with (FAILED) without bothering you with warnings about
+================================================================
+
+missing files
+=============
+
+sha256sum –check –ignore-missing

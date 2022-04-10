@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>asuintn</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="bigint.asuintn">BigInt.asUintN()</h1>
+<p>The <code>BigInt.asUintN</code> static method clamps a BigInt value to an unsigned integer value, and returns that value.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>BigInt.asUintN(bits, bigint);</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>bits</code><br />
+The amount of bits available for the integer size.</p>
+<p><code>bigint</code><br />
+The BigInt value to clamp to fit into the supplied bits.</p>
+<h3 id="returns">Returns</h3>
+<p>The value of <code>bigint</code> modulo 2<sup><code>bits</code></sup>, as an unsigned integer.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="staying-in-64-bit-ranges">Staying in 64-bit ranges</h3>
+<p>The <code>BigInt.asUintN()</code> method can be useful to stay in the range of 64-bit arithmetic.</p>
+<pre><code>const max = 2n ** 64n - 1n;
+
+BigInt.asUintN(64, max);
+// ↪ 18446744073709551615n
+
+BigInt.asUintN(64, max + 1n);
+// ↪ 0n
+// zero because of overflow</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-bigint.asuintn">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-bigint.asuintn</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>asUintN</code></p>
+<p>67</p>
+<p>79</p>
+<p>68</p>
+<p>No</p>
+<p>54</p>
+<p>14</p>
+<p>67</p>
+<p>67</p>
+<p>68</p>
+<p>48</p>
+<p>14</p>
+<p>9.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../bigint"><code>BigInt</code></a></li>
+<li><a href="asintn"><code>BigInt.asIntN()</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt/asUintN" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt/asUintN</a></p>
+</body>
+</html>

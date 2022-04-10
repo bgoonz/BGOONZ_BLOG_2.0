@@ -1,138 +1,169 @@
----
-tags: [packaging]
----
+To find :
+=========
 
-# To find <package>:
+snap find
 
-snap find <package>
+To view detailed information about :
+====================================
 
-# To view detailed information about <package>:
+snap info
 
-snap info <package>
+To view all private snaps (must be logged in):
+==============================================
 
-# To view all private snaps (must be logged in):
+snap find –private
 
-snap find --private
+To install the :
+================
 
-# To install the <package>:
+sudo snap install
 
-sudo snap install <package>
+To install the from the “beta” channel:
+=======================================
 
-# To install the <package> from the "beta" channel:
+sudo snap install –channel=beta
 
-sudo snap install <package> --channel=beta
-
-# To view installed snaps:
+To view installed snaps:
+========================
 
 snap list
 
-# To list all revisions of installed snaps:
+To list all revisions of installed snaps:
+=========================================
 
-snap list --all
+snap list –all
 
-# To (manually) update all snaps:
+To (manually) update all snaps:
+===============================
 
 sudo snap refresh
 
-# To (manually) update <package>:
+To (manually) update :
+======================
 
-sudo snap refresh <package>
+sudo snap refresh
 
-# To update <package> to the "beta" channel:
+To update to the “beta” channel:
+================================
 
-sudo snap refresh <package> --channel=beta
+sudo snap refresh –channel=beta
 
-# To revert <package> to a prior version:
+To revert to a prior version:
+=============================
 
-sudo snap revert <package>
+sudo snap revert
 
-# To revert <package> to revision 5:
+To revert to revision 5:
+========================
 
-snap revert <package> --revision 5
+snap revert –revision 5
 
-# To remove <package>:
+To remove :
+===========
 
-sudo snap remove <package>
+sudo snap remove
 
-# To log in to snap (must first create account online):
+To log in to snap (must first create account online):
+=====================================================
 
 sudo snap login
 
-# To log out of snap:
+To log out of snap:
+===================
 
 snap logout
 
-# To view a transaction log summary:
+To view a transaction log summary:
+==================================
 
 snap changes
 
-# To view details of item 123 in the transaction log:
+To view details of item 123 in the transaction log:
+===================================================
 
 snap change 123
 
-# To watch transaction 123:
+To watch transaction 123:
+=========================
 
 snap watch 123
 
-# To abort transaction 123:
+To abort transaction 123:
+=========================
 
 snap abort 123
 
-# To download <package> (and its assertions) _without_ installing it:
+To download (and its assertions) *without* installing it:
+=========================================================
 
-snap download <package>
+snap download
 
-# To install the locally-downloaded `foo` snap with assertions:
+To install the locally-downloaded `foo` snap with assertions:
+=============================================================
 
-snap ack foo.assert
-snap install foo.snap
+snap ack foo.assert snap install foo.snap
 
-# To install the locally-downloaded `foo` snap without assertions:
+To install the locally-downloaded `foo` snap without assertions:
+================================================================
 
-# NB: this is dangerous, because the integrity of the snap will not be
+NB: this is dangerous, because the integrity of the snap will not be
+====================================================================
 
-# verified. You should only do this to test a snap that you are currently
+verified. You should only do this to test a snap that you are currently
+=======================================================================
 
-# developing.
+developing.
+===========
 
-snap install --dangerous foo.snap
+snap install –dangerous foo.snap
 
-# To install snap `foo` in "dev mode":
+To install snap `foo` in “dev mode”:
+====================================
 
-# NB: this is dangerous, and bypasses the snap sandboxing mechanisms
+NB: this is dangerous, and bypasses the snap sandboxing mechanisms
+==================================================================
 
-snap install --devmode foo
+snap install –devmode foo
 
-# To install snap `foo` in "classic mode":
+To install snap `foo` in “classic mode”:
+========================================
 
-# NB: this is likewise dangerous
+NB: this is likewise dangerous
+==============================
 
-snap install --classic foo
+snap install –classic foo
 
-# To view available snap interfaces:
+To view available snap interfaces:
+==================================
 
 snap interfaces
 
-# To connect the `foo:camera` plug to the ubuntu core slot:
+To connect the `foo:camera` plug to the ubuntu core slot:
+=========================================================
 
 snap connect foo:camera :camera
 
-# To disconnect the `foo:camera` plug from the ubuntu core slot:
+To disconnect the `foo:camera` plug from the ubuntu core slot:
+==============================================================
 
 snap disconnect foo:camera
 
-# To disable the `foo` snap
+To disable the `foo` snap
+=========================
 
 snap disable foo
 
-# To enable the `foo` snap
+To enable the `foo` snap
+========================
 
 snap enable foo
 
-# To set snap `foo`'s `bar` property to 10:
+To set snap `foo`’s `bar` property to 10:
+=========================================
 
 snap set foo bar=10
 
-# To read snap `foo`'s current `bar` property:
+To read snap `foo`’s current `bar` property:
+============================================
 
 snap get foo bar

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>pkgtools</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="to-create-a-slackware-package-from-a-structured-directory-and-sub-tree">To create a Slackware package from a structured directory and sub-tree:</h1>
+cd
+<dir>
+<p>su - c ‘makepkg –linkadd y –chown n $foo-1.0.3-x86_64-1_tag.tgz’</p>
+<h1 id="to-install-a-slackware-package">To install a Slackware package:</h1>
+<p>installpkg foo-1.0.3-x86_64-1.tgz</p>
+<h1 id="to-install-a-slackware-package-to-non-standard-location">To install a Slackware package to non-standard location:</h1>
+<p>ROOT=/path/to/dir installpkg foo-1.0.4-noarch-1.tgz</p>
+<h1 id="to-create-backup-of-files-that-will-be-overwritten-when-installing">To create backup of files that will be overwritten when installing:</h1>
+<p>tar czvf /tmp/backup.tar.gz $(installpkg –warn foo-1.0.4-noarch-1.tgz)</p>
+<h1 id="to-upgrade-a-slackware-package-including-files-only-in-new-version">To upgrade a Slackware package including files only in new version:</h1>
+<p>upgradepkg –install-new foo-1.0.6-noarch-1.tgz</p>
+<h1 id="to-upgrade-a-slackware-package-even-if-version-is-the-same">To upgrade a Slackware package even if version is the same:</h1>
+<p>upgradepkg –reinstall foo-1.0.4-noarch-1.tgz</p>
+<h1 id="to-remove-a-slackware-package">To remove a Slackware package:</h1>
+<p>removepkg foo-0.2.8-x86_64-1</p>
+<h1 id="to-remove-a-slackware-package-retaining-a-backup-uninstalled-copy">To remove a Slackware package, retaining a backup (uninstalled) copy:</h1>
+<p>removepkg -copy foo-0.2.8-x86_64-1 # -&gt; /var/log/setup/tmp/preserved_packages/foo…</p>
+</body>
+</html>

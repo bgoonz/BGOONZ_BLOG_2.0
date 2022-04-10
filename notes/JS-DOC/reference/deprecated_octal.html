@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>deprecated_octal</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="syntaxerror-0-prefixed-octal-literals-and-octal-escape-seq.-are-deprecated">SyntaxError: “0”-prefixed octal literals and octal escape seq. are deprecated</h1>
+<p>The JavaScript <a href="../strict_mode">strict mode</a>-only exception “0-prefixed octal literals and octal escape sequences are deprecated; for octal literals use the”0o" prefix instead" occurs when deprecated octal literals and octal escape sequences are used.</p>
+<h2 id="message">Message</h2>
+<pre><code>SyntaxError: Octal numeric literals and escape characters not allowed in strict mode (Edge)
+SyntaxError:
+&quot;0&quot;-prefixed octal literals and octal escape sequences are deprecated;
+for octal literals use the &quot;0o&quot; prefix instead</code></pre>
+<h2 id="error-type">Error type</h2>
+<p><a href="../global_objects/syntaxerror"><code>SyntaxError</code></a> in <a href="../strict_mode">strict mode</a> only.</p>
+<h2 id="what-went-wrong">What went wrong?</h2>
+<p>Octal literals and octal escape sequences are deprecated and will throw a <a href="../global_objects/syntaxerror"><code>SyntaxError</code></a> in strict mode. With ECMAScript 2015 and later, the standardized syntax uses a leading zero followed by a lowercase or uppercase Latin letter “O” (<code>0o</code> or <code>0O)</code>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="prefixed-octal-literals">“0”-prefixed octal literals</h3>
+<pre><code>&quot;use strict&quot;;
+
+03;
+
+// SyntaxError: &quot;0&quot;-prefixed octal literals and octal escape sequences
+// are deprecated</code></pre>
+<h3 id="octal-escape-sequences">Octal escape sequences</h3>
+<pre><code>&quot;use strict&quot;;
+
+&quot;\251&quot;;
+
+// SyntaxError: &quot;0&quot;-prefixed octal literals and octal escape sequences
+// are deprecated</code></pre>
+<h3 id="valid-octal-numbers">Valid octal numbers</h3>
+<p>Use a leading zero followed by the letter “o” or “O”:</p>
+<pre><code>0o3;</code></pre>
+<p>For octal escape sequences, you can use hexadecimal escape sequences instead:</p>
+<pre><code>&#39;\xA9&#39;;</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../lexical_grammar#octal">Lexical grammar</a></li>
+<li><a href="bad_octal">Warning: 08/09 is not a legal ECMA-262 octal constant</a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Deprecated_octal" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Deprecated_octal</a></p>
+</body>
+</html>

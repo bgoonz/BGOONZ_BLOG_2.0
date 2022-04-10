@@ -1,194 +1,136 @@
----
-title: title
-subtitle: subtitle
-date: '2022-01-03'
-thumb_img_alt: lorem-ipsum
-content_img_alt: lorem-ipsum
-excerpt: lorem-ipsum
-seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
-template: post
-thumb_img_path: images/css-72a655a7.jpg
----
+subtitle
 
----
+2022-01-03
 
-title: Awesome Redux
-category: React
+------------------------------------------------------------------------
 
----
+title: Awesome Redux category: React
+
+------------------------------------------------------------------------
 
 ### redux-actions
 
-Create action creators in flux standard action format.
-{: .-setup}
+Create action creators in flux standard action format. {: .-setup}
 
-```js
-increment = createAction('INCREMENT', (amount) => amount);
-increment = createAction('INCREMENT'); // same
-```
+    increment = createAction('INCREMENT', (amount) => amount);
+    increment = createAction('INCREMENT'); // same
 
-```js
-increment(42) === { type: 'INCREMENT', payload: 42 };
-```
+    increment(42) === { type: 'INCREMENT', payload: 42 };
 
-```js
-// Errors are handled for you:
-err = new Error();
-increment(err) === { type: 'INCREMENT', payload: err, error: true };
-```
+    // Errors are handled for you:
+    err = new Error();
+    increment(err) === { type: 'INCREMENT', payload: err, error: true };
 
-[redux-actions](https://www.npmjs.com/package/redux-actions)
-{: .-crosslink}
+[redux-actions](https://www.npmjs.com/package/redux-actions) {: .-crosslink}
 
 ### flux-standard-action
 
-A standard for flux action objects. An action may have an `error`, `payload` and `meta` and nothing else.
-{: .-setup}
+A standard for flux action objects. An action may have an `error`, `payload` and `meta` and nothing else. {: .-setup}
 
-```js
-{ type: 'ADD_TODO', payload: { text: 'Work it' } }
-{ type: 'ADD_TODO', payload: new Error(), error: true }
-```
+    { type: 'ADD_TODO', payload: { text: 'Work it' } }
+    { type: 'ADD_TODO', payload: new Error(), error: true }
 
-[flux-standard-action](https://github.com/acdlite/flux-standard-action)
-{: .-crosslink}
+[flux-standard-action](https://github.com/acdlite/flux-standard-action) {: .-crosslink}
 
 ### redux-multi
 
-Dispatch multiple actions in one action creator.
-{: .-setup}
+Dispatch multiple actions in one action creator. {: .-setup}
 
-```js
-store.dispatch([
-    { type: 'INCREMENT', payload: 2 },
-    { type: 'INCREMENT', payload: 3 }
-]);
-```
+    store.dispatch([
+        { type: 'INCREMENT', payload: 2 },
+        { type: 'INCREMENT', payload: 3 }
+    ]);
 
-[redux-multi](https://github.com/ashaffer/redux-multi)
-{: .-crosslink}
+[redux-multi](https://github.com/ashaffer/redux-multi) {: .-crosslink}
 
 ### reduce-reducers
 
-Combines reducers (like _combineReducers()_), but without namespacing magic.
-{: .-setup}
+Combines reducers (like *combineReducers()*), but without namespacing magic. {: .-setup}
 
-```js
-re = reduceReducers(
-    (state, action) => state + action.number,
-    (state, action) => state + action.number
-);
+    re = reduceReducers(
+        (state, action) => state + action.number,
+        (state, action) => state + action.number
+    );
 
-re(10, { number: 2 }); //=> 14
-```
+    re(10, { number: 2 }); //=> 14
 
-[reduce-reducers](https://www.npmjs.com/package/reduce-reducers)
-{: .-crosslink}
+[reduce-reducers](https://www.npmjs.com/package/reduce-reducers) {: .-crosslink}
 
 ### redux-logger
 
-Logs actions to your console.
-{: .-setup}
+Logs actions to your console. {: .-setup}
 
-```js
-// Nothing to see here
-```
+    // Nothing to see here
 
-[redux-logger](https://github.com/evgenyrodionov/redux-logger)
-{: .-crosslink}
+[redux-logger](https://github.com/evgenyrodionov/redux-logger) {: .-crosslink}
 
-## Async
+Async
+-----
 
 ### redux-promise
 
-Pass promises to actions. Dispatches a flux-standard-action.
-{: .-setup}
+Pass promises to actions. Dispatches a flux-standard-action. {: .-setup}
 
-```js
-increment = createAction('INCREMENT'); // redux-actions
-increment(Promise.resolve(42));
-```
+    increment = createAction('INCREMENT'); // redux-actions
+    increment(Promise.resolve(42));
 
-[redux-promise](https://github.com/acdlite/redux-promise)
-{: .-crosslink}
+[redux-promise](https://github.com/acdlite/redux-promise) {: .-crosslink}
 
 ### redux-promises
 
-Sorta like that, too. Works by letting you pass _thunks_ (functions) to `dispatch()`. Also has 'idle checking'.
-{: .-setup}
+Sorta like that, too. Works by letting you pass *thunks* (functions) to `dispatch()`. Also has ‘idle checking’. {: .-setup}
 
-```js
-fetchData = (url) => (dispatch) => {
-  dispatch({ type: 'FETCH_REQUEST' })
-  fetch(url)
-    .then((data) => dispatch({ type: 'FETCH_DONE', data })
-    .catch((error) => dispatch({ type: 'FETCH_ERROR', error })
-})
+    fetchData = (url) => (dispatch) => {
+      dispatch({ type: 'FETCH_REQUEST' })
+      fetch(url)
+        .then((data) => dispatch({ type: 'FETCH_DONE', data })
+        .catch((error) => dispatch({ type: 'FETCH_ERROR', error })
+    })
 
-store.dispatch(fetchData('/posts'))
-```
+    store.dispatch(fetchData('/posts'))
 
-```js
-// That's actually shorthand for:
-fetchData('/posts')(store.dispatch);
-```
+    // That's actually shorthand for:
+    fetchData('/posts')(store.dispatch);
 
-[redux-promises](https://www.npmjs.com/package/redux-promises)
-{: .-crosslink}
+[redux-promises](https://www.npmjs.com/package/redux-promises) {: .-crosslink}
 
 ### redux-effects
 
-Pass side effects declaratively to keep your actions pure.
-{: .-setup}
+Pass side effects declaratively to keep your actions pure. {: .-setup}
 
-```js
-{
-  type: 'EFFECT_COMPOSE',
-  payload: {
-    type: 'FETCH'
-    payload: {url: '/some/thing', method: 'GET'}
-  },
-  meta: {
-    steps: [ [success, failure] ]
-  }
-}
-```
+    {
+      type: 'EFFECT_COMPOSE',
+      payload: {
+        type: 'FETCH'
+        payload: {url: '/some/thing', method: 'GET'}
+      },
+      meta: {
+        steps: [ [success, failure] ]
+      }
+    }
 
-[redux-effects](https://www.npmjs.com/package/redux-effects)
-{: .-crosslink}
+[redux-effects](https://www.npmjs.com/package/redux-effects) {: .-crosslink}
 
 ### redux-thunk
 
-Pass "thunks" to as actions. Extremely similar to redux-promises, but has support for getState.
-{: .-setup}
+Pass “thunks” to as actions. Extremely similar to redux-promises, but has support for getState. {: .-setup}
 
-```js
-fetchData = (url) => (dispatch, getState) => {
-  dispatch({ type: 'FETCH_REQUEST' })
-  fetch(url)
-    .then((data) => dispatch({ type: 'FETCH_DONE', data })
-    .catch((error) => dispatch({ type: 'FETCH_ERROR', error })
-})
+    fetchData = (url) => (dispatch, getState) => {
+      dispatch({ type: 'FETCH_REQUEST' })
+      fetch(url)
+        .then((data) => dispatch({ type: 'FETCH_DONE', data })
+        .catch((error) => dispatch({ type: 'FETCH_ERROR', error })
+    })
 
-store.dispatch(fetchData('/posts'))
-```
+    store.dispatch(fetchData('/posts'))
 
-```js
-// That's actually shorthand for:
-fetchData('/posts')(store.dispatch, store.getState);
-```
+    // That's actually shorthand for:
+    fetchData('/posts')(store.dispatch, store.getState);
 
-```js
-// Optional: since fetchData returns a promise, it can be chained
-// for server-side rendering
-store.dispatch(fetchPosts()).then(() => {
-    ReactDOMServer.renderToString(<MyApp store={store} />);
-});
-```
+    // Optional: since fetchData returns a promise, it can be chained
+    // for server-side rendering
+    store.dispatch(fetchPosts()).then(() => {
+        ReactDOMServer.renderToString(<MyApp store={store} />);
+    });
 
-[redux-thunk](https://www.npmjs.com/package/redux-thunk)
-{: .-crosslink}
+[redux-thunk](https://www.npmjs.com/package/redux-thunk) {: .-crosslink}

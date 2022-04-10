@@ -1,8 +1,10 @@
-# Math.clz32()
+Math.clz32()
+============
 
 The `Math.clz32()` function returns the number of leading zero bits in the 32-bit binary representation of a number.
 
-## Syntax
+Syntax
+------
 
     Math.clz32(x)
 
@@ -15,9 +17,10 @@ A number.
 
 The number of leading zero bits in the 32-bit binary representation of the given number.
 
-## Description
+Description
+-----------
 
-"`clz32`" is short for **CountLeadingZeroes32**.
+“`clz32`” is short for **CountLeadingZeroes32**.
 
 If `x` is not a number, then it will be converted to a number first, then converted to a 32-bit unsigned integer.
 
@@ -27,7 +30,7 @@ This function is particularly useful for systems that compile to JS, like [Emscr
 
 ### Count Leading Ones and beyond
 
-At present, there is no `Math.clon` for "Count Leading Ones" (named "clon", not "clo", because "clo" and "clz" are too similar especially for non-English-speaking people). However, a `clon` function can easily be created by inversing the bits of a number and passing the result to `Math.clz32`. Doing this will work because the inverse of 1 is 0 and vice-versa. Thus, inversing the bits will inverse the measured quantity of 0's (from `Math.clz32`), thereby making `Math.clz32` count the number of ones instead of counting the number of zeros.
+At present, there is no `Math.clon` for “Count Leading Ones” (named “clon”, not “clo”, because “clo” and “clz” are too similar especially for non-English-speaking people). However, a `clon` function can easily be created by inversing the bits of a number and passing the result to `Math.clz32`. Doing this will work because the inverse of 1 is 0 and vice-versa. Thus, inversing the bits will inverse the measured quantity of 0’s (from `Math.clz32`), thereby making `Math.clz32` count the number of ones instead of counting the number of zeros.
 
 Consider the following 32-bit word:
 
@@ -44,7 +47,7 @@ Using this logic, a `clon` function can be created as follows:
         return clz(~integer);
     }
 
-Further, this technique could be extended to create jumpless "Count Trailing Zeros" and "Count Trailing Ones" functions as seen below. The `ctrz` function below fills in all the high bits with the lowest filled bit, then negates the bits to erase all higher set bits so that clz can then be used.
+Further, this technique could be extended to create jumpless “Count Trailing Zeros” and “Count Trailing Ones” functions as seen below. The `ctrz` function below fills in all the high bits with the lowest filled bit, then negates the bits to erase all higher set bits so that clz can then be used.
 
     var clz = Math.clz32;
     function ctrz(integer){ // count trailing zeros
@@ -100,7 +103,8 @@ Make these helper functions into ASM.JS module; then, you have a true performanc
     var ctrz = countTrailsMethods.a;
     var ctron = countTrailsMethods.b;
 
-## Examples
+Examples
+--------
 
 ### Using Math.clz32()
 
@@ -114,7 +118,8 @@ Make these helper functions into ASM.JS module; then, you have a true performanc
     Math.clz32(true);        // 31
     Math.clz32(3.5);         // 30
 
-## Polyfill
+Polyfill
+--------
 
 The following polyfill is the most efficient.
 
@@ -132,12 +137,11 @@ The following polyfill is the most efficient.
       };
     })(Math.log, Math.LN2);
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.clz32">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-math.clz32</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-math.clz32</span></td></tr></tbody></table>
 
 `clz32`
 
@@ -165,11 +169,11 @@ No
 
 3.0
 
-## See also
+See also
+--------
 
 -   [`Math`](../math)
 -   [`Math.imul`](imul)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/clz32" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/clz32</a>

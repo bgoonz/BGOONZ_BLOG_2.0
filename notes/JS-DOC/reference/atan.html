@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>atan</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="math.atan">Math.atan()</h1>
+<p>The <code>Math.atan()</code> function returns the arctangent (in radians) of a number, that is</p>
+<p><br /><span class="math display">$$\\mathtt{\\operatorname{Math.atan}(x)} = \\arctan(x) = \\text{the\\ unique}\\; y \\in \\left\\lbrack {- \\frac{\\pi}{2};\\frac{\\pi}{2}} \\right\\rbrack\\,\\text{such\\ that}\\;\\tan(y) = x$$</span><br /></p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>Math.atan(x)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>x</code><br />
+A number.</p>
+<h3 id="return-value">Return value</h3>
+<p>The arctangent (in radians) of the given number.</p>
+<h2 id="description">Description</h2>
+<p>The <code>Math.atan()</code> method returns a numeric value between <span class="math inline">$- \\frac{\\pi}{2}$</span> and <span class="math inline">$\\frac{\\pi}{2}$</span> radians.</p>
+<p>Because <code>atan()</code> is a static method of <code>Math</code>, you always use it as <code>Math.atan()</code>, rather than as a method of a <code>Math</code> object you created (<code>Math</code> is not a constructor).</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-math.atan">Using Math.atan()</h3>
+<pre><code>Math.atan(1);   // 0.7853981633974483
+Math.atan(0);   // 0
+Math.atan(-0);  // -0
+
+Math.atan(Infinity);   //  1.5707963267948966
+Math.atan(-Infinity);  // -1.5707963267948966
+
+// The angle that the line [(0,0);(x,y)] forms with the x-axis in a Cartesian coordinate system
+Math.atan(y / x);</code></pre>
+<p>Note that you may want to avoid using <strong>±</strong><code>Infinity</code> for stylistic reasons. In this case, <a href="atan2"><code>Math.atan2()</code></a> with <code>0</code> as the second argument may be a better solution.</p>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-math.atan">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-math.atan</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>atan</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="acos"><code>Math.acos()</code></a></li>
+<li><a href="asin"><code>Math.asin()</code></a></li>
+<li><a href="atan2"><code>Math.atan2()</code></a></li>
+<li><a href="cos"><code>Math.cos()</code></a></li>
+<li><a href="sin"><code>Math.sin()</code></a></li>
+<li><a href="tan"><code>Math.tan()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/atan" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/atan</a></p>
+</body>
+</html>

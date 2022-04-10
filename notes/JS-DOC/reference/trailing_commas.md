@@ -1,16 +1,19 @@
-# Trailing commas
+Trailing commas
+===============
 
-**Trailing commas** (sometimes called "final commas") can be useful when adding new elements, parameters, or properties to JavaScript code. If you want to add a new property, you can add a new line without modifying the previously last line if that line already uses a trailing comma. This makes version-control diffs cleaner and editing code might be less troublesome.
+**Trailing commas** (sometimes called “final commas”) can be useful when adding new elements, parameters, or properties to JavaScript code. If you want to add a new property, you can add a new line without modifying the previously last line if that line already uses a trailing comma. This makes version-control diffs cleaner and editing code might be less troublesome.
 
 JavaScript has allowed trailing commas in array literals since the beginning, and later added them to object literals (ECMAScript 5) and most recently (ECMAScript 2017) to function parameters.
 
 [JSON](https://developer.mozilla.org/en-US/docs/Glossary/JSON), however, disallows trailing commas.
 
-## Syntax
+Syntax
+------
 
     ,
 
-## Examples
+Examples
+--------
 
 ### Trailing commas in literals
 
@@ -27,7 +30,7 @@ JavaScript ignores trailing commas in arrays:
     arr; // [1, 2, 3]
     arr.length; // 3
 
-If more than one trailing comma is used, an elision (or hole) is produced. An array with holes is called _sparse_ (a _dense_ array has no holes). When iterating arrays for example with [`Array.prototype.forEach()`](global_objects/array/foreach) or [`Array.prototype.map()`](global_objects/array/map), array holes are skipped.
+If more than one trailing comma is used, an elision (or hole) is produced. An array with holes is called *sparse* (a *dense* array has no holes). When iterating arrays for example with [`Array.prototype.forEach()`](global_objects/array/foreach) or [`Array.prototype.map()`](global_objects/array/map), array holes are skipped.
 
     var arr = [1, 2, 3,,,];
     arr.length; // 5
@@ -48,7 +51,7 @@ ECMAScript 2017 allows trailing commas in function parameter lists.
 
 #### Parameter definitions
 
-The following function definition pairs are legal and equivalent to each other. Trailing commas don't affect the `length` property of function declarations or their `arguments` object.
+The following function definition pairs are legal and equivalent to each other. Trailing commas don’t affect the `length` property of function declarations or their `arguments` object.
 
     function f(p) {}
     function f(p,) {}
@@ -110,7 +113,7 @@ Again, when using a rest element, a [`SyntaxError`](global_objects/syntaxerror) 
 
 ### Trailing commas in JSON
 
-Trailing commas in objects were only introduced in ECMAScript 5. As JSON is based on JavaScript's syntax prior to ES5, **trailing commas are not allowed in JSON**.
+Trailing commas in objects were only introduced in ECMAScript 5. As JSON is based on JavaScript’s syntax prior to ES5, **trailing commas are not allowed in JSON**.
 
 Both lines will throw a `SyntaxError`:
 
@@ -124,14 +127,16 @@ Omit the trailing commas to parse the JSON correctly:
     JSON.parse('[1, 2, 3, 4 ]');
     JSON.parse('{"foo" : 1 }');
 
-## Specifications
+Specifications
+--------------
 
 **No specification found**
 
 No specification data found for `javascript.grammar.trailing_commas`.  
 [Check for problems with this page](#on-github) or contribute a missing `spec_url` to [mdn/browser-compat-data](https://github.com/mdn/browser-compat-data). Also make sure the specification is included in [w3c/browser-specs](https://github.com/w3c/browser-specs).
 
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -239,7 +244,8 @@ No
 
 1.0
 
-## See also
+See also
+--------
 
 -   Initial ECMAScript proposal: [trailing function commas](https://github.com/tc39/proposal-trailing-function-commas) by Jeff Morrison
 

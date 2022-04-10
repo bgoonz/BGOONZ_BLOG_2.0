@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>tutorials-how-2-install-nodejs-n-npm</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="installing-node.js-via-package-manager-node.js">Installing Node.js via package manager | Node.js</h1>
+<blockquote>
+<h2 id="excerpt">Excerpt</h2>
+<p>Node.js® is a JavaScript runtime built on Chrome’s V8 JavaScript engine.</p>
+</blockquote>
+<hr />
+<p><em><strong>Note:</strong></em> The packages on this page are maintained and supported by their respective packagers, <strong>not</strong> the Node.js core team. Please report any issues you encounter to the package maintainer. If it turns out your issue is a bug in Node.js itself, the maintainer will report the issue upstream.</p>
+<hr />
+<ul>
+<li><a href="https://nodejs.org/en/download/package-manager/#alpine-linux">Alpine Linux</a></li>
+<li><a href="https://nodejs.org/en/download/package-manager/#android">Android</a></li>
+<li><a href="https://nodejs.org/en/download/package-manager/#arch-linux">Arch Linux</a></li>
+<li><a href="https://nodejs.org/en/download/package-manager/#centos-fedora-and-red-hat-enterprise-linux">CentOS, Fedora and Red Hat Enterprise Linux</a></li>
+<li><a href="https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions">Debian and Ubuntu based Linux distributions</a></li>
+<li><a href="https://nodejs.org/en/download/package-manager/#fnm">fnm</a></li>
+<li><a href="https://nodejs.org/en/download/package-manager/#freebsd">FreeBSD</a></li>
+<li><a href="https://nodejs.org/en/download/package-manager/#gentoo">Gentoo</a></li>
+<li><a href="https://nodejs.org/en/download/package-manager/#ibm-i">IBM i</a></li>
+<li><a href="https://nodejs.org/en/download/package-manager/#macos">macOS</a></li>
+<li><a href="https://nodejs.org/en/download/package-manager/#n">n</a></li>
+<li><a href="https://nodejs.org/en/download/package-manager/#netbsd">NetBSD</a></li>
+<li><a href="https://nodejs.org/en/download/package-manager/#nodenv">Nodenv</a></li>
+<li><a href="https://nodejs.org/en/download/package-manager/#nvm">nvm</a></li>
+<li><a href="https://nodejs.org/en/download/package-manager/#nvs">nvs</a></li>
+<li><a href="https://nodejs.org/en/download/package-manager/#openbsd">OpenBSD</a></li>
+<li><a href="https://nodejs.org/en/download/package-manager/#opensuse-and-sle">openSUSE and SLE</a></li>
+<li><a href="https://nodejs.org/en/download/package-manager/#smartos-and-illumos">SmartOS and illumos</a></li>
+<li><a href="https://nodejs.org/en/download/package-manager/#snap">Snap</a></li>
+<li><a href="https://nodejs.org/en/download/package-manager/#solus">Solus</a></li>
+<li><a href="https://nodejs.org/en/download/package-manager/#void-linux">Void Linux</a></li>
+<li><a href="https://nodejs.org/en/download/package-manager/#windows">Windows</a></li>
+<li><a href="https://nodejs.org/en/download/package-manager/#zos">z/OS</a></li>
+</ul>
+<hr />
+<p>Node.js LTS and npm packages are available in the Main Repository.</p>
+<pre><code>apk add nodejs npm</code></pre>
+<p>Node.js Current can be installed from the Community Repository.</p>
+<pre><code>apk add nodejs-current</code></pre>
+<h2 id="android">Android<a href="https://nodejs.org/en/download/package-manager/#android"></a></h2>
+<p>Android support is still experimental in Node.js, so precompiled binaries are not yet provided by Node.js developers.</p>
+<p>However, there are some third-party solutions. For example, <a href="https://termux.com/">Termux</a> community provides terminal emulator and Linux environment for Android, as well as own package manager and <a href="https://github.com/termux/termux-packages">extensive collection</a> of many precompiled applications. This command in Termux app will install the last available Node.js version:</p>
+<pre><code>pkg install nodejs</code></pre>
+<p>Currently, Termux Node.js binaries are linked against <code>system-icu</code> (depending on <code>libicu</code> package).</p>
+<p>Node.js and npm packages are available in the Community Repository.</p>
+<pre><code>pacman -S nodejs npm</code></pre>
+<h2 id="centos-fedora-and-red-hat-enterprise-linux">CentOS, Fedora and Red Hat Enterprise Linux<a href="https://nodejs.org/en/download/package-manager/#centos-fedora-and-red-hat-enterprise-linux"></a></h2>
+<p>Node.js is available as a module called <code>nodejs</code> in CentOS/RHEL 8 and Fedora.</p>
+<pre><code>dnf module install nodejs:&lt;stream&gt;</code></pre>
+<p>where <code>&lt;stream&gt;</code> corresponds to the major version of Node.js. To see a list of available streams:</p>
+<pre><code>dnf module list nodejs</code></pre>
+<p>For example, to install Node.js 12:</p>
+<pre><code>dnf module install nodejs:12</code></pre>
+<p>For CentOS/RHEL 7 Node.js is available via <a href="https://www.softwarecollections.org/en/scls/?search=NodeJS">Software Collections</a>.</p>
+<p>These resources provide packages compatible with CentOS, Fedora, and RHEL.</p>
+<ul>
+<li><a href="https://nodejs.org/en/download/package-manager/#snap">Node.js snaps</a> maintained and supported at <a href="https://github.com/nodejs/snap">https://github.com/nodejs/snap</a></li>
+<li><a href="https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions">Node.js binary distributions</a> maintained and supported by <a href="https://github.com/nodesource/distributions">NodeSource</a></li>
+</ul>
+<h2 id="debian-and-ubuntu-based-linux-distributions">Debian and Ubuntu based Linux distributions<a href="https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions"></a></h2>
+<p><a href="https://github.com/nodesource/distributions/blob/master/README.md">Node.js binary distributions</a> are available from NodeSource.</p>
+<p>Packages compatible with Debian and Ubuntu based Linux distributions are available via <a href="https://nodejs.org/en/download/package-manager/#snap">Node.js snaps</a>.</p>
+<p>Fast and simple Node.js version manager built in Rust used to manage multiple released Node.js versions. It allows you to perform operations like install, uninstall, switch Node versions automatically based on the current directory, etc. To install fnm, use this <a href="https://github.com/Schniz/fnm#using-a-script-macoslinux">install script</a>.</p>
+<p>fnm has cross-platform support (macOS, Windows, Linux) &amp; all popular shells (Bash, Zsh, Fish, PowerShell, Windows Command Line Prompt). fnm is built with speed in mind and compatibility support for <code>.node-version</code> and <code>.nvmrc</code> files.</p>
+<p>The most recent release of Node.js is available via the <a href="https://www.freshports.org/www/node">www/node</a> port.</p>
+<p>Install a binary package via <a href="https://www.freebsd.org/cgi/man.cgi?pkg">pkg</a>:</p>
+<pre><code>pkg install node</code></pre>
+<p>Or compile it on your own using <a href="https://www.freebsd.org/cgi/man.cgi?ports">ports</a>:</p>
+<pre><code>cd /usr/ports/www/node &amp;&amp; make install</code></pre>
+<p>Node.js is available in the portage tree.</p>
+<pre><code>emerge nodejs</code></pre>
+<p>LTS versions of Node.js are available from IBM, and are available via <a href="https://ibm.biz/ibmi-rpms">the ‘yum’ package manager</a>. The package name is <code>nodejs</code> followed by the major version number (for instance, <code>nodejs12</code>, <code>nodejs14</code> etc)</p>
+<p>To install Node.js 14.x from the command line, run the following as a user with *ALLOBJ special authority:</p>
+<pre><code>yum install nodejs14</code></pre>
+<p>Node.js can also be installed with the IBM i Access Client Solutions product. See <a href="http://www-01.ibm.com/support/docview.wss?uid=nas8N1022619">this support document</a> for more details</p>
+<p>Download the <a href="https://nodejs.org/en/#home-downloadhead">macOS Installer</a> directly from the <a href="https://nodejs.org/">nodejs.org</a> web site.</p>
+<p><em>If you want to download the package with bash:</em></p>
+<pre><code>curl &quot;https://nodejs.org/dist/latest/node-${VERSION:-$(wget -qO- https://nodejs.org/dist/latest/ | sed -nE &#39;s|.*&gt;node-(.*)\.pkg&lt;/a&gt;.*|\1|p&#39;)}.pkg&quot; &gt; &quot;$HOME/Downloads/node-latest.pkg&quot; &amp;&amp; sudo installer -store -pkg &quot;$HOME/Downloads/node-latest.pkg&quot; -target &quot;/&quot;</code></pre>
+<p>Using <strong><a href="https://brew.sh/">Homebrew</a></strong>:</p>
+<pre><code>brew install node</code></pre>
+<p>Using <strong><a href="https://www.macports.org/">MacPorts</a></strong>:</p>
+<pre><code>port install nodejs&lt;major version&gt;
+
+
+port install nodejs7</code></pre>
+<p>Using <strong><a href="https://pkgsrc.joyent.com/install-on-osx/">pkgsrc</a></strong>:</p>
+<p>Install the binary package:</p>
+<pre><code>pkgin -y install nodejs</code></pre>
+<p>Or build manually from pkgsrc:</p>
+<pre><code>cd pkgsrc/lang/nodejs &amp;&amp; bmake install</code></pre>
+<p><code>n</code> is a simple to use Node.js version manager for Mac and Linux. Specify the target version to install using a rich syntax, or select from a menu of previously downloaded versions. The versions are installed system-wide or user-wide, and for more targeted use you can run a version directly from the cached downloads.</p>
+<p>See the <a href="https://github.com/tj/n">homepage</a> for install methods (boostrap, npm, Homebrew, third-party), and all the usage details.</p>
+<p>If you already have <code>npm</code> then installing <code>n</code> and then the newest LTS <code>node</code> version is as simple as:</p>
+<pre><code>npm install -g n
+n lts</code></pre>
+<p>Node.js is available in the pkgsrc tree:</p>
+<pre><code>cd /usr/pkgsrc/lang/nodejs &amp;&amp; make install</code></pre>
+<p>Or install a binary package (if available for your platform) using pkgin:</p>
+<pre><code>pkgin -y install nodejs</code></pre>
+<p><code>nodenv</code> is a lightweight node version manager, similar to <code>nvm</code>. It’s simple and predictable. A rich plugin ecosystem lets you tailor it to suit your needs. Use <code>nodenv</code> to pick a Node version for your application and guarantee that your development environment matches production.</p>
+<p>Nodenv installation instructions are maintained <a href="https://github.com/nodenv/nodenv#installation">on its Github page</a>. Please visit that page to ensure you’re following the latest version of the installation steps.</p>
+<p>Node Version Manager is a bash script used to manage multiple released Node.js versions. It allows you to perform operations like install, uninstall, switch version, etc. To install nvm, use this <a href="https://github.com/nvm-sh/nvm#install--update-script">install script</a>.</p>
+<p>On Unix / OS X systems Node.js built from source can be installed using <a href="https://github.com/creationix/nvm">nvm</a> by installing into the location that nvm expects:</p>
+<pre><code>env VERSION=`python tools/getnodeversion.py` make install DESTDIR=`nvm_version_path v$VERSION` PREFIX=&quot;&quot;</code></pre>
+<p>After this you can use <code>nvm</code> to switch between released versions and versions built from source. For example, if the version of Node.js is v8.0.0-pre:</p>
+<pre><code>nvm use 8</code></pre>
+<p>Once the official release is out you will want to uninstall the version built from source:</p>
+<pre><code>nvm uninstall 8</code></pre>
+<p>The <code>nvs</code> version manager is cross-platform and can be used on Windows, macOS, and Unix-like systems</p>
+<p>To install <code>nvs</code> on Windows go to the <a href="https://github.com/jasongin/nvs/releases">release page</a> here and download the MSI installer file of the latest release.</p>
+<p>You can also use <code>chocolatey</code> to install it:</p>
+<pre><code>choco install nvs</code></pre>
+<p>You can find the documentation regarding the installation steps of <code>nvs</code> in macOS/Unix-like systems <a href="https://github.com/jasongin/nvs/blob/master/doc/SETUP.md#mac-linux">here</a></p>
+<p>After this you can use <code>nvs</code> to switch between different versions of node.</p>
+<p>To add the latest version of node:</p>
+<pre><code>nvs add latest</code></pre>
+<p>Or to add the latest LTS version of node:</p>
+<pre><code>nvs add lts</code></pre>
+<p>Then run the <code>nvs use</code> command to add a version of node to your <code>PATH</code> for the current shell:</p>
+<pre><code>$ nvs use lts
+PATH -= %LOCALAPPDATA%\nvs\default
+PATH += %LOCALAPPDATA%\nvs\node\14.17.0\x64</code></pre>
+<p>To add it to <code>PATH</code> permanently, use <code>nvs link</code>:</p>
+<pre><code>nvs link lts</code></pre>
+<p>Node.js is available through the ports system.</p>
+<pre><code>/usr/ports/lang/node</code></pre>
+<p>Using <a href="https://man.openbsd.org/OpenBSD-current/man1/pkg_add.1">pkg_add</a> on OpenBSD:</p>
+<pre><code>pkg_add node</code></pre>
+<h2 id="opensuse-and-sle">openSUSE and SLE<a href="https://nodejs.org/en/download/package-manager/#opensuse-and-sle"></a></h2>
+<p>Node.js is available in the main repositories under the following packages:</p>
+<ul>
+<li><strong>openSUSE Leap 15.2</strong>: <code>nodejs10</code>, <code>nodejs12</code>, <code>nodejs14</code></li>
+<li><strong>openSUSE Tumbleweed</strong>: <code>nodejs16</code></li>
+<li><strong>SUSE Linux Enterprise Server (SLES) 12</strong>: <code>nodejs10</code>, <code>nodejs12</code>, and <code>nodejs14</code> (The “Web and Scripting Module” must be <a href="https://www.suse.com/releasenotes/x86_64/SUSE-SLES/12-SP5/#intro-modulesExtensionsRelated">enabled</a>.)</li>
+<li><strong>SUSE Linux Enterprise Server (SLES) 15 SP2</strong>: <code>nodejs10</code>, <code>nodejs12</code>, and <code>nodejs14</code> (The “Web and Scripting Module” must be <a href="https://www.suse.com/releasenotes/x86_64/SUSE-SLES/15/#Intro.Module">enabled</a>.)</li>
+</ul>
+<p>For example, to install Node.js 14.x on openSUSE Leap 15.2, run the following as root:</p>
+<pre><code>zypper install nodejs14</code></pre>
+<p>Different major versions of Node can be installed and used concurrently.</p>
+<h2 id="smartos-and-illumos">SmartOS and illumos<a href="https://nodejs.org/en/download/package-manager/#smartos-and-illumos"></a></h2>
+<p>SmartOS images come with pkgsrc pre-installed. On other illumos distributions, first install <strong><a href="https://pkgsrc.joyent.com/install-on-illumos/">pkgsrc</a></strong>, then you may install the binary package as normal:</p>
+<pre><code>pkgin -y install nodejs</code></pre>
+<p>Or build manually from pkgsrc:</p>
+<pre><code>cd pkgsrc/lang/nodejs &amp;&amp; bmake install</code></pre>
+<p><a href="https://github.com/nodejs/snap">Node.js snaps</a> are available as <a href="https://snapcraft.io/node"><code>node</code></a> on the Snap store.</p>
+<p>Solus provides Node.js in its main repository.</p>
+<pre><code>sudo eopkg install nodejs</code></pre>
+<p>Void Linux ships Node.js stable in the main repository.</p>
+<pre><code>xbps-install -Sy nodejs</code></pre>
+<p>Download the <a href="https://nodejs.org/en/#home-downloadhead">Windows Installer</a> directly from the <a href="https://nodejs.org/">nodejs.org</a> web site.</p>
+<p>Using <strong><a href="https://aka.ms/winget-cli">Winget</a></strong>:</p>
+<pre><code>winget install OpenJS.NodeJS
+
+winget install OpenJS.NodeJS.LTS</code></pre>
+<p>After running one of the two commands above, it may be necessary to restart the terminal emulator before the <code>node</code> CLI command becomes available.</p>
+<p>Using <strong><a href="https://chocolatey.org/">Chocolatey</a></strong>:</p>
+<pre><code>cinst nodejs
+
+cinst nodejs.install</code></pre>
+<p>Using <strong><a href="https://scoop.sh/">Scoop</a></strong>:</p>
+<pre><code>scoop install nodejs</code></pre>
+<p>IBM® SDK for Node.js - z/OS® is available in two installation formats, SMP/E and PAX. Select the installation format that applies to you:</p>
+<ul>
+<li><a href="https://www.ibm.com/support/knowledgecenter/SSTRRS_14.0.0/com.ibm.nodejs.zos.v14.doc/smpe.htm">Installing and configuring SMP/E edition of Node.js on z/OS</a></li>
+<li><a href="https://www.ibm.com/support/knowledgecenter/SSTRRS_14.0.0/com.ibm.nodejs.zos.v14.doc/paxz.htm">Installing and configuring PAX edition of Node.js on z/OS</a></li>
+</ul>
+</body>
+</html>

@@ -1,7 +1,3 @@
----
-title: Unicode symbols
----
-
     ✈   \u2708 airplane
     ❄   \u2744 snowflake
     ⚑   \u2691 flag

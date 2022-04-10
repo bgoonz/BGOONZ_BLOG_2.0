@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>ping</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="to-ping-with-15-packets">To ping <host> with 15 packets:</h1>
+<p>ping -c 15 <host></p>
+<h1 id="to-ping-with-15-packets-one-every-.5-seconds">To ping <host> with 15 packets, one every .5 seconds:</h1>
+<p>ping -c 15 -i .5 <host></p>
+<h1 id="to-test-if-a-packet-size-of-1500-bytes-is-supported-to-check-the-mtu-for-example">To test if a packet size of 1500 bytes is supported (to check the MTU for example):</h1>
+<p>ping -s 1500 -c 10 -M do <host></p>
+</body>
+</html>

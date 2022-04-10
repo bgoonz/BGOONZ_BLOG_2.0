@@ -1,63 +1,77 @@
----
-tags: [networking]
----
+Connect to a wireless access point - Parameters:
+================================================
 
-# Connect to a wireless access point - Parameters:
+– the name of your wireless interface
+=====================================
 
-# <wiface> -- the name of your wireless interface
+– the SSID of the access point
+==============================
 
-# <ssid> -- the SSID of the access point
+– the WiFi password
+===================
 
-# <pass> -- the WiFi password
+nmcli d wifi connect password iface
 
-nmcli d wifi connect <ssid> password <pass> iface <wiface>
+Disconnect from WiFi - Parameters:
+==================================
 
-# Disconnect from WiFi - Parameters:
+– the name of your wireless interface
+=====================================
 
-# <wiface> -- the name of your wireless interface
+nmcli d wifi disconnect iface
 
-nmcli d wifi disconnect iface <wiface>
-
-# Get WiFi status (enabled / disabled)
+Get WiFi status (enabled / disabled)
+====================================
 
 nmcli radio wifi
 
-# Enable / Disable WiFi
+Enable / Disable WiFi
+=====================
 
-nmcli radio wifi <on|off>
+nmcli radio wifi &lt;on|off&gt;
 
-# Show all available WiFi access points
+Show all available WiFi access points
+=====================================
 
 nmcli dev wifi list
 
-# Refresh the available WiFi connection list
+Refresh the available WiFi connection list
+==========================================
 
 nmcli dev wifi rescan
 
-# Show all available connections
+Show all available connections
+==============================
 
 nmcli con
 
-# Show only active connections
+Show only active connections
+============================
 
-nmcli con show --active
+nmcli con show –active
 
-# Review the available devices
+Review the available devices
+============================
 
 nmcli dev status
 
-# Add a dynamic ethernet connection - parameters:
+Add a dynamic ethernet connection - parameters:
+===============================================
 
-# <name> -- the name of the connection
+– the name of the connection
+============================
 
-# <iface_name> -- the name of the interface
+– the name of the interface
+===========================
 
-nmcli con add type ethernet con-name <name> ifname <iface_name>
+nmcli con add type ethernet con-name ifname
 
-# Import OpenVPN connection settings from file:
+Import OpenVPN connection settings from file:
+=============================================
 
-nmcli con import type openvpn file <path_to_ovpn_file>
+nmcli con import type openvpn file
 
-# Bring up the ethernet connection
+Bring up the ethernet connection
+================================
 
-nmcli con up <name>
+nmcli con up

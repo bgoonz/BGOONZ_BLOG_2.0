@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>getownpropertydescriptors</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="object.getownpropertydescriptors">Object.getOwnPropertyDescriptors()</h1>
+<p>The <code>Object.getOwnPropertyDescriptors()</code> method returns all own property descriptors of a given object.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>Object.getOwnPropertyDescriptors(obj)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>obj</code><br />
+The object for which to get all own property descriptors.</p>
+<h3 id="return-value">Return value</h3>
+<p>An object containing all own property descriptors of an object. Might be an empty object, if there are no properties.</p>
+<h2 id="description">Description</h2>
+<p>This method permits examination of the precise description of all own properties of an object. A property in JavaScript consists of either a string-valued name or a <a href="../symbol"><code>Symbol</code></a> and a property descriptor. Further information about property descriptor types and their attributes can be found in <a href="defineproperty"><code>Object.defineProperty()</code></a>.</p>
+<p>A property descriptor is a record with some of the following attributes:</p>
+<p><code>value</code><br />
+The value associated with the property (data descriptors only).</p>
+<p><code>writable</code><br />
+<code>true</code> if and only if the value associated with the property may be changed (data descriptors only).</p>
+<p><code>get</code><br />
+A function which serves as a getter for the property, or <a href="../undefined"><code>undefined</code></a> if there is no getter (accessor descriptors only).</p>
+<p><code>set</code><br />
+A function which serves as a setter for the property, or <a href="../undefined"><code>undefined</code></a> if there is no setter (accessor descriptors only).</p>
+<p><code>configurable</code><br />
+<code>true</code> if and only if the type of this property descriptor may be changed and if the property may be deleted from the corresponding object.</p>
+<p><code>enumerable</code><br />
+<code>true</code> if and only if this property shows up during enumeration of the properties on the corresponding object.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="creating-a-shallow-clone">Creating a shallow clone</h3>
+<p>Whereas the <a href="assign"><code>Object.assign()</code></a> method will only copy enumerable and own properties from a source object to a target object, you are able to use this method and <a href="create"><code>Object.create()</code></a> for a shallow copy between two unknown objects:</p>
+<pre><code>Object.create(
+  Object.getPrototypeOf(obj),
+  Object.getOwnPropertyDescriptors(obj)
+);</code></pre>
+<h3 id="creating-a-subclass">Creating a subclass</h3>
+<p>A typical way of creating a subclass is to define the subclass, set its prototype to an instance of the superclass, and then define properties on that instance. This can get awkward especially for getters and setters. Instead, you can use this code to set the prototype:</p>
+<pre><code>function superclass() {}
+superclass.prototype = {
+  // Define your methods and properties here
+};
+function subclass() {}
+subclass.prototype = Object.create(
+  superclass.prototype,
+  {
+    // Define your methods and properties here
+  }
+);</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-object.getownpropertydescriptors">ECMAScript (ECMA-262) <br/></p>
+<span class="small">The definition of ‘Object.getOwnPropertyDescriptors’ in that specification.</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>getOwnPropertyDescriptors</code></p>
+<p>54</p>
+<p>15</p>
+<p>50</p>
+<p>No</p>
+<p>41</p>
+<p>10</p>
+<p>54</p>
+<p>54</p>
+<p>50</p>
+<p>41</p>
+<p>10</p>
+<p>6.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="getownpropertydescriptor"><code>Object.getOwnPropertyDescriptor()</code></a></li>
+<li><a href="defineproperty"><code>Object.defineProperty()</code></a></li>
+<li><a href="https://github.com/tc39/proposal-object-getownpropertydescriptors">Polyfill</a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptors" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptors</a></p>
+</body>
+</html>

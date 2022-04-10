@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>cant_redefine_property</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="typeerror-cant-redefine-non-configurable-property-x">TypeError: can’t redefine non-configurable property “x”</h1>
+<p>The JavaScript exception “can’t redefine non-configurable property” occurs when it was attempted to redefine a property, but that property is <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#properties">non-configurable</a>.</p>
+<h2 id="message">Message</h2>
+<pre><code>TypeError: Cannot modify non-writable property {x} (Edge)
+TypeError: can&#39;t redefine non-configurable property &quot;x&quot; (Firefox)
+TypeError: Cannot redefine property: &quot;x&quot; (Chrome)</code></pre>
+<h2 id="error-type">Error type</h2>
+<p><a href="../global_objects/typeerror"><code>TypeError</code></a></p>
+<h2 id="what-went-wrong">What went wrong?</h2>
+<p>It was attempted to redefine a property, but that property is <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#properties">non-configurable</a>. The <code>configurable</code> attribute controls whether the property can be deleted from the object and whether its attributes (other than <code>writable</code>) can be changed. Usually, properties in an object created by an <a href="../operators/object_initializer">object initializer</a> are configurable. However, for example, when using <a href="../global_objects/object/defineproperty"><code>Object.defineProperty()</code></a>, the property isn’t configurable by default.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="non-configurable-properties-created-by-object.defineproperty">Non-configurable properties created by <code>Object.defineProperty</code></h3>
+<p>The <a href="../global_objects/object/defineproperty"><code>Object.defineProperty()</code></a> creates non-configurable properties if you haven’t specified them as configurable.</p>
+<pre><code>var obj = Object.create({});
+Object.defineProperty(obj, &quot;foo&quot;, {value: &quot;bar&quot;});
+
+Object.defineProperty(obj, &quot;foo&quot;, {value: &quot;baz&quot;});
+// TypeError: can&#39;t redefine non-configurable property &quot;foo&quot;</code></pre>
+<p>You will need to set the “foo” property to configurable, if you intend to redefine it later in the code.</p>
+<pre><code>var obj = Object.create({});
+Object.defineProperty(obj, &quot;foo&quot;, {value: &quot;bar&quot;, configurable: true});
+Object.defineProperty(obj, &quot;foo&quot;, {value: &quot;baz&quot;, configurable: true});</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#properties">[[Configurable]]</a></li>
+<li><a href="../global_objects/object/defineproperty"><code>Object.defineProperty()</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Cant_redefine_property" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Cant_redefine_property</a></p>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>tarsnap</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="perform-a-backup-of-two-directories">Perform a backup of two directories</h1>
+<p>tarsnap -c -f <archive-name> /usr/home /other/stuff/to/backup</p>
+<h1 id="print-how-much-data-would-be-uploaded">Print how much data would be uploaded</h1>
+<p>tarsnap -c -f <archive-name> –dry-run –print-stats &lt;directories…&gt;</p>
+<h1 id="copy-an-archive-only-accesses-metadata">Copy an archive (only accesses metadata)</h1>
+<p>tarsnap -c -f <target-archive-name> @@<source-archive></p>
+<h1 id="list-the-archives">List the archives</h1>
+<p>tarsnap –list-archives</p>
+<h1 id="delete-an-archive">Delete an archive</h1>
+<p>tarsnap -d -f <archive-name></p>
+<h1 id="list-the-files-in-an-archive">List the files in an archive</h1>
+<p>tarsnap -tv -f <archive-name></p>
+<h1 id="restore-two-users-home-directories-from-an-archive-use-no-leading-slashes">Restore two users’ home directories from an archive (use no leading slashes)</h1>
+<p>tarsnap -x -f <archive-name> usr/home/alice usr/home/bob</p>
+</body>
+</html>

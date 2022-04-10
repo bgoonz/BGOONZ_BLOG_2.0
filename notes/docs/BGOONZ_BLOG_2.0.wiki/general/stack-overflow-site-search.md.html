@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>stack-overflow-site-search.md</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<p>1</p>
+<p><a href="https://stackoverflow.com/posts/50155664/timeline"></a></p>
+<p>A somewhat straight forward suggestion if you don’t want some type of Google Searchbar would be to run a script on submission of the form that searches the text in each of the web pages in your working directory to find a match, then display a page with links to the found matches.</p>
+<p>I will use PHP for my description of how this is done.</p>
+<p>With this in mind, first learn how to read entire pages (i.e. webpages) into a string: <a href="http://php.net/manual/en/function.file-get-contents.php" class="uri">http://php.net/manual/en/function.file-get-contents.php</a></p>
+<pre><code>//YOU WILL HAVE TO LINE THIS UP WITH YOUR WORKING FILE NAMES
+$home = file_get_contents(&#39;./home.php&#39;, FILE_USE_INCLUDE_PATH);
+</code></pre>
+<p>or I suppose you could just search for the actual webpage/URL like so:</p>
+<pre><code>$home = file_get_contents(&#39;http://www.example.com/&#39;);//IMAGINE THIS IS REALLY HOME.PHP
+$homePageName = &quot;home.php&quot;;//JUST HERE TO SHOW AN EXAMPLE
+</code></pre>
+<p>Example:</p>
+<pre><code>///YOUR FORM/INPUT BOX
+&lt;form action=&quot;search.php&quot; method=&quot;post&quot;&gt;
+    &lt;input type=&quot;text&quot; name=&quot;findMe&quot; placeholder=&quot;Search Yacht&quot;&gt;
+&lt;/form&gt;
+</code></pre>
+<p>Now search.php</p>
+<pre><code>$search = $_POST[&#39;findMe&#39;];
+//$search = &quot;example&quot;;//THIS WOULD WORK, BUT I WAS SHOWING HOW TO USE FORM
+
+//IF WORD FOUND IN HOME PAGE
+if (stripos($home, $search) !== false) {//USING EXAMPLE.COM TO SHOW IT WORKS
+    echo &#39;&lt;a href=&quot;&#39;.$homePageName.&#39;&quot;&gt;&#39;.$homePageName.&#39;&lt;/a&gt;&#39;;
+}
+</code></pre>
+<p>Then if you want to be simplistic and not use an array to store the found pages, take the same code above and use it for every page you want searched (i.e. home, about, products, etc..).</p>
+<p>Now a user can search your site (or the pages you want indexed), to find all pages that have matching text. If you want specific keywords to be searched, just add them to the page metadata and the process I have described will still work as it searches everything that makes up the page.</p>
+<pre><code>&lt;meta name=&quot;keywords&quot; content=&quot;keyword1, keyword2, keyword3 &quot; /&gt;</code></pre>
+<hr />
+<p>1</p>
+<p><a href="https://stackoverflow.com/posts/50155664/timeline"></a></p>
+<p>A somewhat straight forward suggestion if you don’t want some type of Google Searchbar would be to run a script on submission of the form that searches the text in each of the web pages in your working directory to find a match, then display a page with links to the found matches.</p>
+<p>I will use PHP for my description of how this is done.</p>
+<p>With this in mind, first learn how to read entire pages (i.e. webpages) into a string: <a href="http://php.net/manual/en/function.file-get-contents.php" class="uri">http://php.net/manual/en/function.file-get-contents.php</a></p>
+<pre><code>
+//YOU WILL HAVE TO LINE THIS UP WITH YOUR WORKING FILE NAMES
+
+$home = file_get_contents(&#39;./home.php&#39;, FILE_USE_INCLUDE_PATH);
+</code></pre>
+<p>or I suppose you could just search for the actual webpage/URL like so:</p>
+<pre><code>
+$home = file_get_contents(&#39;http://www.example.com/&#39;);//IMAGINE THIS IS REALLY HOME.PHP
+
+$homePageName = &quot;home.php&quot;;//JUST HERE TO SHOW AN EXAMPLE
+</code></pre>
+<p>Example:</p>
+<pre><code>
+///YOUR FORM/INPUT BOX
+
+&lt;form action=&quot;search.php&quot; method=&quot;post&quot;&gt;
+
+    &lt;input type=&quot;text&quot; name=&quot;findMe&quot; placeholder=&quot;Search Yacht&quot;&gt;
+
+&lt;/form&gt;
+</code></pre>
+<p>Now search.php</p>
+<pre><code>
+$search = $_POST[&#39;findMe&#39;];
+
+//$search = &quot;example&quot;;//THIS WOULD WORK, BUT I WAS SHOWING HOW TO USE FORM
+
+//IF WORD FOUND IN HOME PAGE
+
+if (stripos($home, $search) !== false) {//USING EXAMPLE.COM TO SHOW IT WORKS
+
+    echo &#39;&lt;a href=&quot;&#39;.$homePageName.&#39;&quot;&gt;&#39;.$homePageName.&#39;&lt;/a&gt;&#39;;
+
+}
+</code></pre>
+<p>Then if you want to be simplistic and not use an array to store the found pages, take the same code above and use it for every page you want searched (i.e. home, about, products, etc..).</p>
+<p>Now a user can search your site (or the pages you want indexed), to find all pages that have matching text. If you want specific keywords to be searched, just add them to the page metadata and the process I have described will still work as it searches everything that makes up the page.</p>
+<pre><code>
+&lt;meta name=&quot;keywords&quot; content=&quot;keyword1, keyword2, keyword3 &quot; /&gt;
+</code></pre>
+<hr />
+<h1 id="how-to-design-the-perfect-search-bar-for-your-website">How to Design the Perfect Search Bar for Your Website</h1>
+<blockquote>
+<h2 id="excerpt">Excerpt</h2>
+<p>Learn the fundamentals of search bar design to help users find the content they want quickly and easily.</p>
+</blockquote>
+<hr />
+<p>Have you ever landed on a website looking for something, but been unsure where to find it?</p>
+<p>You might have skimmed the menus and scrolled down the page a bit, but ultimately you couldn’t find the exact product/post/article you had in mind. Frustrating, right?</p>
+<p>In this situation, you would probably do two things: exit the page, or look for the trusty <strong>search bar</strong>. If you decide to stick around, a proper search function should take your query and send you to your destination. Problem solved.</p>
+<p>It’s not a perfect experience, but it’s a hard one to avoid on larger websites that simply can’t link to every piece of content from the homepage.</p>
+<p>This is why, when crafting a <a href="https://blog.hubspot.com/marketing/ux-user-experience">user experience</a> for your website, the design of your search feature must be intuitive. If visitors are using it, that means they’re on a mission for something specific. And, as designers, we’re tasked with helping them get there. Our design choices can make the difference between a good or bad navigation experience, which translates to a conversion or a bounce.</p>
+<p>In this guide, we’ll learn how to create the best search bar for your website. By implementing these design guidelines, you’ll help users locate their desired content quickly and smoothly.</p>
+<h2 id="does-your-website-need-a-search-bar">Does Your Website Need a Search Bar?</h2>
+<p>Before we cover best practices, it’s important to consider whether your website would benefit from an internal site search feature in the first place.</p>
+<p>While there’s no hard “yes” or “no” for including a search feature, larger sites generally will benefit from search more than smaller ones. This is because users are more likely to rely on search when faced with extensive click navigation.</p>
+<p>Also, if users land on your homepage with a specific piece of content, category, or product in mind, they might prefer to type it in, rather than rely on <a href="https://blog.hubspot.com/website/secondary-navigation">primary and secondary click navigation</a>.</p>
+<p>If you’re still unsure, you can add a search feature and <a href="https://blog.hubspot.com/sales/website-activity">track user activity</a> to determine whether your search bar is being utilized (and, if so, whether it’s being used effectively), then decide whether to keep or scrap it.</p>
+<h3 id="download-our-free-ux-research-testing-kit"><a href="https://blog.hubspot.com/cs/c/?cta_guid=8c4d5bb5-117a-409a-a6ec-1b2cbd38ebf1&amp;signature=AAH58kFaKhCtPr5zv6BhqSi41R3HdIvsyA&amp;pageId=35700119037&amp;placement_guid=6c3ff587-7525-4d62-b870-13a85b7c0868&amp;click=58b3f10e-947f-4fc8-b860-fd207d3d2c00&amp;hsutk=8d2d69975cf15cde180092afb2aa5c4f&amp;canon=https%3A%2F%2Fblog.hubspot.com%2Fwebsite%2Fsearch-bar-design&amp;portal_id=53&amp;redirect_url=APefjpF2iY51UCZP2Szdl2N_Uf31EbNGoqTtgOh66pd4EN3KzJtO9i6cOp4wopsxbaEs1_RTl33kY8Bla3PJwOoPeepY8Ik1p0wzNVr07K-Po2vTWdqxcOiHanP2Sz6Cl6kwEIdeCzOMEPxXS0cYXKnQjXUOt1rxIQ&amp;__hstc=20629287.8d2d69975cf15cde180092afb2aa5c4f.1638298114286.1638298114286.1638298114286.1&amp;__hssc=20629287.1.1638298114286&amp;__hsfp=4046790836&amp;contentType=blog-post" title="Download Our Free UX Research &amp; Testing Kit">Download Our Free UX Research &amp; Testing Kit</a></h3>
+<h2 id="search-bar-design-best-practices">Search Bar Design Best Practices</h2>
+<ol type="1">
+<li>Include a text field and a search button.</li>
+<li>Place in an expected location.</li>
+<li>Include the search icon.</li>
+<li>Size appropriately.</li>
+<li>Consider adding placeholder text.</li>
+<li>Consider adding autocomplete.</li>
+<li>Hide advanced options.</li>
+<li>Design for mobile.</li>
+</ol>
+<p>Often, site search is a visitor’s final or only option when navigating your site, so a poor user experience can make the difference between holding their interest and sending them to a competitor. You’ll need to keep their expectations and comfort at the forefront of your design — here’s how:</p>
+<h3 id="include-a-text-field-and-a-search-button.">1. Include a text field and a search button.</h3>
+<p>Most search bars consist of two elements: the search box, where users write their queries, and a search button, which users click to initiate a search. The elements most often are placed horizontally adjacent on a single line, like so:</p>
+<figure>
+<img src="https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/How%20to%20Design%20the%20Perfect%20Search%20Bar%20for%20Your%20Website-1.png?width=1500&amp;name=How%20to%20Design%20the%20Perfect%20Search%20Bar%20for%20Your%20Website-1.png" alt="an example of a basic search bar" /><figcaption>an example of a basic search bar</figcaption>
+</figure>
+<p><a href="https://www.youtube.com/">Image Source</a></p>
+<figure>
+<img src="https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/How%20to%20Design%20the%20Perfect%20Search%20Bar%20for%20Your%20Website.png?width=1500&amp;name=How%20to%20Design%20the%20Perfect%20Search%20Bar%20for%20Your%20Website.png" alt="an example of a basic search bar" /><figcaption>an example of a basic search bar</figcaption>
+</figure>
+<p><a href="https://www.unitedway.org/">Image Source</a></p>
+<p>You might occasionally see variations on this presentation, but the majority appear this way for simplicity and accessibility.</p>
+<p>The search box should be just that, a box. You can take some design liberties like adding background contrast, color, or rounding the corners, but the text field should be a text input element with a height of one line of text. Users will easily recognize this.</p>
+<p>As for the search button, strongly consider including one. It serves as a visual cue to submit a query, so users may be confused without it. Place this button to the right of the input field, as this is a convention and is logical for those who read left-to-right. Write concise <a href="https://blog.hubspot.com/website/button-design">button text</a> as well — the word “Search” or a magnifying glass icon will do.</p>
+<p>Visitors should also be able to launch their search by either clicking the search button or pressing the “Enter”/“Return”/“Go” key when the search box is in focus (i.e., the text cursor is active inside it).</p>
+<p>A common alternative iteration on the classic search bar is a magnifying glass icon that, when clicked, expands to a full search bar and button. Here’s an example from the <a href="https://www.worldwildlife.org/">World Wildlife Fund</a>:</p>
+<figure>
+<img src="https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/How%20to%20Design%20the%20Perfect%20Search%20Bar%20for%20Your%20Website-2.gif?width=1500&amp;name=How%20to%20Design%20the%20Perfect%20Search%20Bar%20for%20Your%20Website-2.gif" alt="an example of search bar design on the WWF website" /><figcaption>an example of search bar design on the WWF website</figcaption>
+</figure>
+<p><a href="https://www.worldwildlife.org/">Image Source</a></p>
+<p>This design saves page space and can look cleaner, but use it with caution. Some may have difficulty seeing it, and it increases interaction cost if users need to click again to focus on the text box after revealing it. However, if the search glass button stands out enough on the page, this is a viable alternative approach.</p>
+<h3 id="place-in-an-expected-location.">2. Place in an expected location.</h3>
+<p>Websites that allow site searches tend to place the search bar in either the top-right or top-center of the web page. Either placement ensures the search functionality is visible and readily available for those who need it.</p>
+<p>Some sites might opt to place other links, menus, or icons in the top right corner — think login prompts, settings, or shopping cart icons. In this case, it’s okay to move the search bar farther left to accommodate for them.</p>
+<p>However, refrain from placing the search bar at the bottom of the page exclusively, or from hiding it inside a menu. It’s okay to put a search bar in the <a href="https://blog.hubspot.com/website/website-footer">footer</a> <em>in addition to</em> one at the top of the page, but you shouldn’t leave users searching for, of all things, your search function.</p>
+<p>Also, it’s likely your users will want to conduct searches on other web pages besides your homepage. Placing the search bar in your header across most pages ensures users can do this from any site location.</p>
+<p>If search is essential to your site’s navigation and you expect users to navigate primarily through queries, center the search bar on the page and place it below the header for more emphasis. For example, this configuration appears on the <a href="https://knowledge.hubspot.com/?hubs_post=blog.hubspot.com/website/search-bar-design&amp;hubs_post-cta=HubSpot%20Knowledge%20Base">HubSpot Knowledge Base</a> page, since we expect most users to arrive with specific, searchable questions.</p>
+<figure>
+<img src="https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/How%20to%20Design%20the%20Perfect%20Search%20Bar%20for%20Your%20Website-1.jpeg?width=1500&amp;name=How%20to%20Design%20the%20Perfect%20Search%20Bar%20for%20Your%20Website-1.jpeg" alt="an example of search bar design on the hubspot knowledge base website" /><figcaption>an example of search bar design on the hubspot knowledge base website</figcaption>
+</figure>
+<h3 id="include-the-search-icon.">3. Include the search icon.</h3>
+<p>Designers use <a href="https://blog.hubspot.com/website/free-icon-set-web-designers-general-users">icons</a> to visually convey what a button or other page element does. Icons save space and <a href="https://www.nngroup.com/articles/icon-usability/">can be identified more quickly than text</a>. The magnifying glass icon is a widespread symbol of search, so we recommend you place it in your interface.</p>
+<p>There are a few ways to add this icon to your bar, You can place it on the search button:</p>
+<figure>
+<img src="https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/How%20to%20Design%20the%20Perfect%20Search%20Bar%20for%20Your%20Website-2.jpeg?width=1500&amp;name=How%20to%20Design%20the%20Perfect%20Search%20Bar%20for%20Your%20Website-2.jpeg" alt="an example of search bar design" /><figcaption>an example of search bar design</figcaption>
+</figure>
+<p><a href="https://www.vexels.com/vectors/preview/145299/search-bar-design-set">Image Source</a></p>
+<p>You could place it inside the search box:</p>
+<figure>
+<img src="https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/How%20to%20Design%20the%20Perfect%20Search%20Bar%20for%20Your%20Website-2.png?width=1500&amp;name=How%20to%20Design%20the%20Perfect%20Search%20Bar%20for%20Your%20Website-2.png" alt="an example of search bar design" /><figcaption>an example of search bar design</figcaption>
+</figure>
+<p><a href="https://www.google.com/">Image Source</a></p>
+<p>Or you could place it on a button which hides/reveals the entire search bar, we saw in our World Wildlife Fund example. Here’s another example from <a href="https://pitchfork.com/">Pitchfork.com</a>:</p>
+<figure>
+<img src="https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/How%20to%20Design%20the%20Perfect%20Search%20Bar%20for%20Your%20Website-1.gif?width=1500&amp;name=How%20to%20Design%20the%20Perfect%20Search%20Bar%20for%20Your%20Website-1.gif" alt="an example of search bar design on pitchfork.com" /><figcaption>an example of search bar design on pitchfork.com</figcaption>
+</figure>
+<p><a href="https://pitchfork.com/">Image Source</a></p>
+<p>One more note: If the magnifying glass appears outside the search box, many users will assume it’s a button, so avoid doing this if the icon itself isn’t clickable.</p>
+<h3 id="size-appropriately.">4. Size appropriately.</h3>
+<p>The size of your search bar will depend on its importance on your site and the expected length of a typical query.</p>
+<p>If search is your primary navigational tool, make it large and centered on page load. If placed in the header, the bar should be sized based on its fellow header elements: large enough to be seen on a visual scan of the page, but not so large as to steal attention.</p>
+<p>The length of your bar is another important design choice. On one hand, you want your text field to be long enough to display more or all of the user’s typed-out query — this lets users review their query and fix any typos. On the other, the search bar shouldn’t steal space from other header elements.</p>
+<p>A good place to start is finding or estimating the length of the average search query in characters. Are users typing in just a couple of words, or are they asking longer questions? If it’s the latter, you’ll probably want to lengthen your search box or set it to expand when clicked.</p>
+<h3 id="consider-adding-placeholder-text.">5. Consider adding placeholder text.</h3>
+<p>Placeholder text appears in the search box when the box is not in focus. It is meant to prompt action from the user. A placeholder can be a helpful cue for users by either listing a sample queries like “Try hats, jeans, bags…”, or by simply stating “Search…”.</p>
+<p>If you want to add a placeholder, the text should appear a lighter shade to distinguish it from a typed query, and should disappear when the user focuses on the box or starts typing.</p>
+<h3 id="consider-adding-autocomplete.">6. Consider adding autocomplete.</h3>
+<p>Autocomplete is another way to help complete a search. When user type, autocomplete provides suggestions in a menu below the search. Predictions can be tailored to your site’s specific content, so users can be confident they’re finding their desired content.</p>
+<p>Don’t overwhelm users with the number of suggestions — while it depends on the size of your website and the amount of indexed content, one to 10 is usually a good range.</p>
+<p>Here’s an example of autocomplete on <a href="https://www.patagonia.com/home/">Patagonia</a>’s ecommerce site search:</p>
+<figure>
+<img src="https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/How%20to%20Design%20the%20Perfect%20Search%20Bar%20for%20Your%20Website.gif?width=1500&amp;name=How%20to%20Design%20the%20Perfect%20Search%20Bar%20for%20Your%20Website.gif" alt="an example of search bar design on patagonia.com" /><figcaption>an example of search bar design on patagonia.com</figcaption>
+</figure>
+<p><a href="https://www.patagonia.com/home/">Image Source</a></p>
+<p>Allow users to click the suggestion or, to make your interface more accessible, let them move up and down the suggestion list with the arrow keys and select an option with the “Enter”/ “Return” key.</p>
+<h3 id="hide-advanced-options.">7. Hide advanced options.</h3>
+<p>Unless you expect your user base to be generally more technology-savvy than the average internet user, it’s almost always best to hide advanced search options like categories, filters, and exact matching. This keeps the <a href="https://blog.hubspot.com/marketing/what-is-ui">UI</a> clean and accessible.</p>
+<p>If you must include advanced options, consider placing them in a hidden menu that appears when the search bar is selected, or provide a nearby link to an “Advanced search” page.</p>
+<h3 id="design-for-mobile.">8. Design for mobile.</h3>
+<p>The rise of smartphones and tablets has impacted UI best practices across the board, and that includes site search bars. Make sure your search box and button are large enough to see and be selected. <a href="https://www.w3.org/TR/mobile-accessibility-mapping/#touch-target-size-and-spacing">W3C</a> provides two relevant accessibility guidelines:</p>
+<ul>
+<li>Ensure that touch targets are at least 9 millimeters high by 9 millimeters wide.</li>
+<li>Ensure that touch targets close to the minimum size are surrounded by a small amount of inactive space.</li>
+</ul>
+<p>These guidelines apply to all touchscreen devices regardless of screen size.</p>
+<p>Also, due to lack of space, it’s more acceptable on mobile devices to hide your entire search bar behind a search glass icon, and reveal it when the icon is tapped. Again, this icon needs to be noticeable — some <a href="https://blog.hubspot.com/marketing/usability-testing">user testing</a> is helpful to ensure this.</p>
+<h2 id="save-conversions-with-search">Save Conversions With Search</h2>
+<p>Designing site search can be challenging because, as internet users, we’re spoiled with this feature. In all likelihood, most websites you frequent have mastered their search function and design, so the bar is quite high (pun intended). Heck, even the most popular website is literally a search interface.</p>
+<p>That’s why, above all, your search bar needs to be simple, obvious, and easy to use. If it works well, your users won’t think about it. You’ll retain their trust in your site and your business, and push them closer to a conversion or purchase.</p>
+<p><a href="https://blog.hubspot.com/cs/c/?cta_guid=3169b52c-2a37-475f-b423-3ea99292e45b&amp;signature=AAH58kFVWVoTcggyubynA3iTYP7IFN8fmw&amp;pageId=35700119037&amp;placement_guid=c8a37a02-b1cc-4406-bf6d-f9795c1e51a4&amp;click=c824cd3e-7ed5-4720-9f52-3db144d9e713&amp;hsutk=8d2d69975cf15cde180092afb2aa5c4f&amp;canon=https%3A%2F%2Fblog.hubspot.com%2Fwebsite%2Fsearch-bar-design&amp;portal_id=53&amp;redirect_url=APefjpEx9IbavfSAbIl7kumP_tukgsgD3asXo6He3k7Eh_vcPDR64WgC9huLmLhOqAqRdS4uknkklXylz_EDfihEnIidOrc5EUtNh37roAW3zQVLSQ1pZTJIN43l_W1JVEifPmXYkYG7jtAl4dEt6VigWfEHsSq2yQ&amp;__hstc=20629287.8d2d69975cf15cde180092afb2aa5c4f.1638298114286.1638298114286.1638298114286.1&amp;__hssc=20629287.1.1638298114286&amp;__hsfp=4046790836&amp;contentType=blog-post"><img src="https://blog.hubspot.com/hs-fs/hub/53/hub_generated/resized/9f84de8e-e10c-4a3d-8ecd-a0503679e3f6.png" alt="ux templates" /></a></p>
+<p><a href="https://blog.hubspot.com/cs/c/?cta_guid=c3a6388a-28bb-4fc9-8006-27281624b768&amp;signature=AAH58kFZdvDZQjHKrV6KFiSLk2j1Co9-1g&amp;pageId=35700119037&amp;placement_guid=4bf6af99-b34d-4c32-bac3-5950cf96059d&amp;click=74db292e-60aa-437d-9b29-d7ab19f2430e&amp;hsutk=8d2d69975cf15cde180092afb2aa5c4f&amp;canon=https%3A%2F%2Fblog.hubspot.com%2Fwebsite%2Fsearch-bar-design&amp;portal_id=53&amp;redirect_url=APefjpHI-oJFFBDQOKqryTEfL3jJndW8IYU2UlKVfltpR_yxQnx8ATvAva0LcSEkiD21ljTDYViM6iZUxU9pWZcRbBskOhRln6gD7E1t5MWqDzs-gf34_fPSkrRp76I93JQq3-ycZ1z9rS5wCWgmQivJ6a16GzS_ng&amp;__hstc=20629287.8d2d69975cf15cde180092afb2aa5c4f.1638298114286.1638298114286.1638298114286.1&amp;__hssc=20629287.1.1638298114286&amp;__hsfp=4046790836&amp;contentType=blog-post"><img src="https://blog.hubspot.com/hs-fs/hub/53/hub_generated/resized/c1821c79-d07f-4299-a9e5-bdedae87d734.png" alt="ux research kit" /></a></p>
+<p>Originally published Oct 6, 2020 7:00:00 AM, updated October 06 2020</p>
+</body>
+</html>

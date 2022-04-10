@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>missing_name_after_dot_operator</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="syntaxerror-missing-name-after-.-operator">SyntaxError: missing name after . operator</h1>
+<p>The JavaScript exception “missing name after . operator” occurs when there is a problem with how the dot operator (<code>.</code>) is used for <a href="../operators/property_accessors">property access</a>.</p>
+<h2 id="message">Message</h2>
+<pre><code>SyntaxError: missing name after . operator</code></pre>
+<h2 id="error-type">Error type</h2>
+<p><a href="../global_objects/syntaxerror"><code>SyntaxError</code></a></p>
+<h2 id="what-went-wrong">What went wrong?</h2>
+<p>The dot operator (<code>.</code>) is used for <a href="../operators/property_accessors">property access</a>. You will have to specify the name of the property that you want to access. For computed property access, you might need to change your property access from using a dot to using square brackets. These will allow you to compute an expression. Maybe you intended to do concatenation instead? A plus operator (<code>+</code>) is needed in that case. Please see the examples below.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="property-access">Property access</h3>
+<p><a href="../operators/property_accessors">Property accessors</a> in JavaScript use either the dot (.) or square brackets (<code>[]</code>), but not both. Square brackets allow computed property access.</p>
+<pre><code>var obj = { foo: { bar: &quot;baz&quot;, bar2: &quot;baz2&quot; } };
+var i = 2;
+
+obj.[foo].[bar]
+// SyntaxError: missing name after . operator
+
+obj.foo.&quot;bar&quot;+i;
+// SyntaxError: missing name after . operator</code></pre>
+<p>To fix this code, you need to access the object like this:</p>
+<pre><code>obj.foo.bar; // &quot;baz&quot;
+// or alternatively
+obj[&quot;foo&quot;][&quot;bar&quot;]; // &quot;baz&quot;
+
+// computed properties require square brackets
+obj.foo[&quot;bar&quot; + i]; // &quot;baz2&quot;</code></pre>
+<h3 id="property-access-vs.-concatenation">Property access vs. concatenation</h3>
+<p>If you are coming from another programming language (like <a href="https://developer.mozilla.org/en-US/docs/Glossary/PHP">PHP</a>), it is also easy to mix up the dot operator (<code>.</code>) and the concatenation operator (<code>+</code>).</p>
+<pre><code>console.log(&quot;Hello&quot; . &quot;world&quot;);
+
+// SyntaxError: missing name after . operator</code></pre>
+<p>Instead you need to use a plus sign for concatenation:</p>
+<pre><code>console.log(&quot;Hello&quot; + &quot;World&quot;);</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../operators/property_accessors">Property accessors</a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Missing_name_after_dot_operator" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Missing_name_after_dot_operator</a></p>
+</body>
+</html>

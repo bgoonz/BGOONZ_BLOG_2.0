@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>tan</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="math.tan">Math.tan()</h1>
+<p>The <code>Math.tan()</code> function returns the tangent of a number.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>Math.tan(x)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>x</code><br />
+A number representing an angle in radians.</p>
+<h3 id="return-value">Return value</h3>
+<p>The tangent of the given number.</p>
+<h2 id="description">Description</h2>
+<p>The <code>Math.tan()</code> method returns a numeric value that represents the tangent of the angle.</p>
+<p>Because <code>tan()</code> is a static method of <code>Math</code>, you always use it as <code>Math.tan()</code>, rather than as a method of a <code>Math</code> object you created (<code>Math</code> is not a constructor).</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-math.tan">Using Math.tan()</h3>
+<pre><code>Math.tan(1); // 1.5574077246549023</code></pre>
+<p>Because the <code>Math.tan()</code> function accepts radians, but it is often easier to work with degrees, the following function accepts a value in degrees, converts it to radians and returns the tangent.</p>
+<pre><code>function getTanDeg(deg) {
+  var rad = deg * Math.PI/180;
+  return Math.tan(rad);
+}</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-math.tan">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-math.tan</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>tan</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="acos"><code>Math.acos()</code></a></li>
+<li><a href="asin"><code>Math.asin()</code></a></li>
+<li><a href="atan"><code>Math.atan()</code></a></li>
+<li><a href="atan2"><code>Math.atan2()</code></a></li>
+<li><a href="cos"><code>Math.cos()</code></a></li>
+<li><a href="sin"><code>Math.sin()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/tan" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/tan</a></p>
+</body>
+</html>

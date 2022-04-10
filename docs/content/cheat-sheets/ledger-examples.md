@@ -1,8 +1,3 @@
----
-title: Ledger examples
-category: Ledger
----
-
 Inspecting transactions:
 
     # show me expenses for october (--period)

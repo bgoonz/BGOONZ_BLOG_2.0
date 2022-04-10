@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>hasownproperty</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="object.prototype.hasownproperty">Object.prototype.hasOwnProperty()</h1>
+<p>The <code>hasOwnProperty()</code> method returns a boolean indicating whether the object has the specified property as its own property (as opposed to inheriting it).</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>hasOwnProperty(prop)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p>prop<br />
+The <a href="../string"><code>String</code></a> name or <a href="https://developer.mozilla.org/en-US/docs/Glossary/Symbol">Symbol</a> of the property to test.</p>
+<h3 id="return-value">Return value</h3>
+<p>A <a href="../boolean"><code>Boolean</code></a> indicating whether or not the object has the specified property as own property.</p>
+<h2 id="description">Description</h2>
+<p>All descendants of <a href="../object"><code>Object</code></a> inherit the <code>hasOwnProperty</code> method. This method can be used to determine whether an object has the specified property as a direct property of that object; unlike the <a href="../../operators/in"><code>in</code></a> operator, this method does not check for a property in the object’s prototype chain. If an <a href="../object"><code>Object</code></a> is an <a href="../array"><code>Array</code></a>, <code>hasOwnProperty</code> method can check whether an index exists.</p>
+<h2 id="note">Note</h2>
+<p><code>hasOwnProperty</code> returns true even if the value of the property is <code>null</code> or <code>undefined</code>.</p>
+<pre><code>o = new Object();
+o.propOne = null;
+o.hasOwnProperty(&#39;propOne&#39;);   // returns true
+o.propTwo = undefined;
+o.hasOwnProperty(&#39;propTwo&#39;);   // returns true</code></pre>
+<h2 id="examples">Examples</h2>
+<h3 id="using-hasownproperty-to-test-for-a-propertys-existence">Using hasOwnProperty to test for a property’s existence</h3>
+<p>The following example determines whether the <code>o</code> object contains a property named <code>prop</code>:</p>
+<pre><code>o = new Object();
+o.hasOwnProperty(&#39;prop&#39;);   // returns false
+o.prop = &#39;exists&#39;;
+o.hasOwnProperty(&#39;prop&#39;);   // returns true</code></pre>
+<h3 id="direct-vs.-inherited-properties">Direct vs. inherited properties</h3>
+<p>The following example differentiates between direct properties and properties inherited through the prototype chain:</p>
+<pre><code>o = new Object();
+o.prop = &#39;exists&#39;;
+o.hasOwnProperty(&#39;prop&#39;);             // returns true
+o.hasOwnProperty(&#39;toString&#39;);         // returns false
+o.hasOwnProperty(&#39;hasOwnProperty&#39;);   // returns false</code></pre>
+<h3 id="iterating-over-the-properties-of-an-object">Iterating over the properties of an object</h3>
+<p>The following example shows how to iterate over the properties of an object without executing on inherited properties. Note that the <a href="../../statements/for...in"><code>for...in</code></a> loop is already only iterating enumerable items, so one should not assume based on the lack of non-enumerable properties shown in the loop that <code>hasOwnProperty</code> itself is confined strictly to enumerable items (as with <a href="getownpropertynames"><code>Object.getOwnPropertyNames()</code></a>).</p>
+<pre><code>var buz = {
+  fog: &#39;stack&#39;
+};
+
+for (var name in buz) {
+  if (buz.hasOwnProperty(name)) {
+    console.log(&#39;this is fog (&#39; +
+      name + &#39;) for sure. Value: &#39; + buz[name]);
+  }
+  else {
+    console.log(name); // toString or something else
+  }
+}</code></pre>
+<h3 id="using-hasownproperty-as-a-property-name">Using hasOwnProperty as a property name</h3>
+<p>JavaScript does not protect the property name <code>hasOwnProperty</code>; thus, if the possibility exists that an object might have a property with this name, it is necessary to use an <em>external</em> <code>hasOwnProperty</code> to get correct results:</p>
+<pre><code>var foo = {
+  hasOwnProperty: function() {
+    return false;
+  },
+  bar: &#39;Here be dragons&#39;
+};
+
+foo.hasOwnProperty(&#39;bar&#39;); // always returns false
+
+// Use another Object&#39;s hasOwnProperty
+// and call it with &#39;this&#39; set to foo
+({}).hasOwnProperty.call(foo, &#39;bar&#39;); // true
+
+// It&#39;s also possible to use the hasOwnProperty property
+// from the Object prototype for this purpose
+Object.prototype.hasOwnProperty.call(foo, &#39;bar&#39;); // true</code></pre>
+<p>Note that in the last case there are no newly created objects.</p>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-object.prototype.hasownproperty">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-object.prototype.hasownproperty</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>hasOwnProperty</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>5.5</p>
+<p>5</p>
+<p>3</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties">Enumerability and ownership of properties</a></li>
+<li><a href="getownpropertynames"><code>Object.getOwnPropertyNames()</code></a></li>
+<li><a href="../../statements/for...in"><code>for...in</code></a></li>
+<li><a href="../../operators/in"><code>in</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain">JavaScript Guide: Inheritance revisited</a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty</a></p>
+</body>
+</html>

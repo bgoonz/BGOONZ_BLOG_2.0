@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>getdate</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="date.prototype.getdate">Date.prototype.getDate()</h1>
+<p>The <code>getDate()</code> method returns the day of the month for the specified date according to local time.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>getDate()</code></pre>
+<h3 id="return-value">Return value</h3>
+<p>An integer number, between 1 and 31, representing the day of the month for the given date according to local time.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-getdate">Using getDate()</h3>
+<p>The second statement below assigns the value 25 to the variable <code>day</code>, based on the value of the <a href="../date"><code>Date</code></a> object <code>Xmas95</code>.</p>
+<pre><code>var Xmas95 = new Date(&#39;December 25, 1995 23:15:30&#39;);
+var day = Xmas95.getDate();
+
+console.log(day); // 25</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-date.prototype.getdate">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-date.prototype.getdate</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>getDate</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="getutcdate"><code>Date.prototype.getUTCDate()</code></a></li>
+<li><a href="getutcday"><code>Date.prototype.getUTCDay()</code></a></li>
+<li><a href="setdate"><code>Date.prototype.setDate()</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getDate" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getDate</a></p>
+</body>
+</html>

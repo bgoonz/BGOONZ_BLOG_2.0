@@ -1,6 +1,7 @@
-# App Academy Open
+App Academy Open
+================
 
-> Learn to code online with access to App Academy's entire full-stack course for free
+> Learn to code online with access to App Academy’s entire full-stack course for free
 
 -   ⏱ 10 minutes
 
@@ -9,13 +10,14 @@
 -   Week 6 Sep 2020 Online
 -   Wt Part Three Testing Classes With Chai
 
-In this reading we'll be covering:
+In this reading we’ll be covering:
 
 -   how to test classes using `Mocha` and `Chai`
 
-## Part Three: Testing classes using Mocha and Chai
+Part Three: Testing classes using Mocha and Chai
+------------------------------------------------
 
-Let's expand our knowledge of testing syntax by testing some classes! In order to fully test a class, we'll be looking to test that class's instance and static methods. Create a new file in the `problems` folder - `dog.js`. We'll use the following code for the rest of our tests so make sure to copy it over:
+Let’s expand our knowledge of testing syntax by testing some classes! In order to fully test a class, we’ll be looking to test that class’s instance and static methods. Create a new file in the `problems` folder - `dog.js`. We’ll use the following code for the rest of our tests so make sure to copy it over:
 
     // testing-demo/problems/dog.js
 
@@ -54,7 +56,7 @@ Let's expand our knowledge of testing syntax by testing some classes! In order t
     // ensure to export our class!
     module.exports = Dog;
 
-To test this class we'll create a new file in our `test` directory - `dog-spec.js` so your file structure should now look like this:
+To test this class we’ll create a new file in our `test` directory - `dog-spec.js` so your file structure should now look like this:
 
     testing-demo
       └──
@@ -65,9 +67,9 @@ To test this class we'll create a new file in our `test` directory - `dog-spec.j
         └── reverse-string-spec.js
         └── dog-spec.js
 
-Let's now set up our `dog-spec.js` file. For this example we'll get experience using another assertion library named [`Chai`](https://www.chaijs.com/). As you'll soon see, the Chai library comes with a lot more built-in more functionality than Node's `Assert` module.
+Let’s now set up our `dog-spec.js` file. For this example we’ll get experience using another assertion library named [`Chai`](https://www.chaijs.com/). As you’ll soon see, the Chai library comes with a lot more built-in more functionality than Node’s `Assert` module.
 
-Now since `Chai` is another external library we'll need to import it in order to use it. We need to run a few commands to first create a `package.json` and then we can import the `chai` library. Start off by running `npm init --y` in the top level directory (`testing-demo`) to create a `package.json` file. After that is finished you can import the `Chai` library by running `npm install chai`.
+Now since `Chai` is another external library we’ll need to import it in order to use it. We need to run a few commands to first create a `package.json` and then we can import the `chai` library. Start off by running `npm init --y` in the top level directory (`testing-demo`) to create a `package.json` file. After that is finished you can import the `Chai` library by running `npm install chai`.
 
 Here is what that will look like in your terminal:
 
@@ -92,7 +94,7 @@ Here is what that will look like in your terminal:
 
     ~ testing-demo $ npm install chai
 
-Now that we've installed `Chai` we can set up our test file. Create a new file in the `test` folder named `dog-spec.js` We'll require the `expect` module from Chai for our assertions, import our `Dog` class, and set up our outer `describe` function for testing the `Dog` class:
+Now that we’ve installed `Chai` we can set up our test file. Create a new file in the `test` folder named `dog-spec.js` We’ll require the `expect` module from Chai for our assertions, import our `Dog` class, and set up our outer `describe` function for testing the `Dog` class:
 
     // testing-demo/test/dog-spec.js
 
@@ -106,9 +108,9 @@ Now that we've installed `Chai` we can set up our test file. Create a new file i
     // our outer describe for the whole Dog class
     describe("Dog", function() {});
 
-So the first thing we'll generally want to test on classes is their `constructor` functions - we need to make sure new instances have the correct properties and that those properties are being set properly before we can test anything else. For the `Dog` class it looks like a name is accepted on instantiation, so let's test that!
+So the first thing we’ll generally want to test on classes is their `constructor` functions - we need to make sure new instances have the correct properties and that those properties are being set properly before we can test anything else. For the `Dog` class it looks like a name is accepted on instantiation, so let’s test that!
 
-We'll start with a nested describe function within our outer `Dog` describe function:
+We’ll start with a nested describe function within our outer `Dog` describe function:
 
     describe("Dog", function() {
       describe("Dog Constructor Function", function() {
@@ -116,11 +118,11 @@ We'll start with a nested describe function within our outer `Dog` describe func
       });
     });
 
-Now we are using a different assertion library so we'll be working with some different syntax. Open up the [`Chai Expect`](https://www.chaijs.com/api/bdd/) documentation for reference, we won't be going into tons of detail into every function we use with Chai because Chai allows for a lot of smaller chainable functions and we know you have lives outide this reading.
+Now we are using a different assertion library so we’ll be working with some different syntax. Open up the [`Chai Expect`](https://www.chaijs.com/api/bdd/) documentation for reference, we won’t be going into tons of detail into every function we use with Chai because Chai allows for a lot of smaller chainable functions and we know you have lives outide this reading.
 
 The nice thing about Chai is that the chainable functions available will often read like English. Check out the right column of this handy [Chai cheatsheet](https://devhints.io/chai) for a quick and easy reference on chainable functions.
 
-We'll start our first spec off by using the [`property`](https://www.chaijs.com/api/bdd/#method_property) matcher to ensure that a newly instantiated object has a specified property:
+We’ll start our first spec off by using the [`property`](https://www.chaijs.com/api/bdd/#method_property) matcher to ensure that a newly instantiated object has a specified property:
 
     describe("Dog", function() {
       describe("Dog Constructor Function", function() {
@@ -134,7 +136,7 @@ We'll start our first spec off by using the [`property`](https://www.chaijs.com/
       });
     });
 
-Now to test our new spec we can run just the Dog class specs by running `mocha test/dog-spec.js` from our top level directory. Running that command we'll see:
+Now to test our new spec we can run just the Dog class specs by running `mocha test/dog-spec.js` from our top level directory. Running that command we’ll see:
 
     Dog
       Dog Constructor Function
@@ -158,7 +160,7 @@ Nice! We tested that the name property exists on a new dog instance. Next, we ca
       });
     });
 
-Running the above using `mocha` we'll see both of our specs passing! Now take extra note of the fact that we are defining the same variable twice using `const` within the above `it` callbacks. This is important to note because it underlines the fact that each of the unit tests you write will have their own scope - meaning that they are each independent of the specs that came before or after them.
+Running the above using `mocha` we’ll see both of our specs passing! Now take extra note of the fact that we are defining the same variable twice using `const` within the above `it` callbacks. This is important to note because it underlines the fact that each of the unit tests you write will have their own scope - meaning that they are each independent of the specs that came before or after them.
 
 Head to the next reading to refactor some of the code we just wrote using `Mocha` hooks!
 

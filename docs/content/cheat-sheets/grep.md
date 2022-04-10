@@ -1,54 +1,53 @@
----
-title: title
-subtitle: subtitle
-date: '2022-01-03'
-thumb_img_alt: lorem-ipsum
-content_img_alt: lorem-ipsum
-excerpt: lorem-ipsum
-seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
-template: post
-thumb_img_path: images/css-72a655a7.jpg
----
+subtitle
 
-# To search a file for a pattern:
+2022-01-03
 
-grep <pattern> <file>
+To search a file for a pattern:
+===============================
 
-# To perform a case-insensitive search (with line numbers):
+grep
 
-grep -in <pattern> <file>
+To perform a case-insensitive search (with line numbers):
+=========================================================
 
-# To recursively grep for string <pattern> in <dir>:
+grep -in
 
-grep -R <pattern> <dir>
+\# To recursively grep for string in
 
-# Read search patterns from a file (one per line):
+:
 
-grep -f <pattern-file> <file>
+grep -R
 
-# Find lines NOT containing pattern:
+Read search patterns from a file (one per line):
+================================================
 
-grep -v <pattern> <file>
+grep -f
 
-# To grep with regular expressions:
+Find lines NOT containing pattern:
+==================================
 
-grep "^00" <file> # Match lines starting with 00
-grep -E "[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}" <file> # Find IP add
+grep -v
 
-# To find all files that match <pattern> in <dir>
+To grep with regular expressions:
+=================================
 
-grep -rnw <dir> -e <pattern>
+grep “^00” \# Match lines starting with 00 grep -E “\[0-9\]{1,3}.\[0-9\]{1,3}.\[0-9\]{1,3}.\[0-9\]{1,3}” \# Find IP add
 
-# To exclude grep from your grepped output of ps:
+\# To find all files that match in
 
-# (Add [] to the first letter. Ex: sshd -> [s]shd)
+grep -rnw
 
-ps aux | grep '[h]ttpd'
+-e
 
-# Colour in red {bash} and keep all other lines
+To exclude grep from your grepped output of ps:
+===============================================
 
-ps aux | grep -E --color 'bash|$'
+(Add \[\] to the first letter. Ex: sshd -&gt; \[s\]shd)
+=======================================================
+
+ps aux | grep ‘\[h\]ttpd’
+
+Colour in red {bash} and keep all other lines
+=============================================
+
+ps aux | grep -E –color ‘bash|$’

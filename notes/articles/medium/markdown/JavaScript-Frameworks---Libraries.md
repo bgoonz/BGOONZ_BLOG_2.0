@@ -1,23 +1,23 @@
-# JavaScript Frameworks & Libraries
+JavaScript Frameworks & Libraries
+=================================
 
 My Awesome JavaScript List Part 2
 
----
+------------------------------------------------------------------------
 
 ### JavaScript Frameworks & Libraries
 
 #### My Awesome JavaScript List Part 2
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*9riCKLCPutYxPEtE" class="graf-image" /></figure>#### Here's the rest of my stash!
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*9riCKLCPutYxPEtE" class="graf-image" /></figure>#### Here’s the rest of my stash!
 
-**_…well… not really… here's the rest of my stash:_**
+***…well… not really… here’s the rest of my stash:***
 
-<a href="https://github.com/bgoonz/Cumulative-Resource-List/tree/master/README-s" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/Cumulative-Resource-List/tree/master/README-s"><strong>bgoonz/Cumulative-Resource-List</strong>
-<br/>
+**bgoonz/Cumulative-Resource-List**  
 
-<em>List of useful cheats heets Inspired by @sindresorhus awesome and improved by these amazing contributors . If you see a…</em>github.com</a><a href="https://github.com/bgoonz/Cumulative-Resource-List/tree/master/README-s" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*List of useful cheats heets Inspired by <span class="citation" data-cites="sindresorhus">@sindresorhus</span> awesome and improved by these amazing contributors . If you see a…*github.com<a href="https://github.com/bgoonz/Cumulative-Resource-List/tree/master/README-s" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
----
+------------------------------------------------------------------------
 
 ### Web Development frameworks
 
@@ -89,7 +89,7 @@ My Awesome JavaScript List Part 2
 
 > · ​<a href="https://glimmerjs.com/" class="markup--anchor markup--pullquote-anchor">Glimmer</a> — Fast and light-weight UI components for the web. (<a href="https://github.com/glimmerjs/glimmer.js" class="markup--anchor markup--pullquote-anchor">Code</a>)
 
-> · ​<a href="https://github.com/glimmerjs/glimmer-vm" class="markup--anchor markup--pullquote-anchor">Glimmer VM</a> — Flexible, low-level rendering pipeline for building a "live" DOM from Handlebars templates that can subsequently be updated cheaply when data changes.
+> · ​<a href="https://github.com/glimmerjs/glimmer-vm" class="markup--anchor markup--pullquote-anchor">Glimmer VM</a> — Flexible, low-level rendering pipeline for building a “live” DOM from Handlebars templates that can subsequently be updated cheaply when data changes.
 
 > · ​<a href="https://github.com/frintjs/frint" class="markup--anchor markup--pullquote-anchor">frint</a> — Modular JavaScript framework for building scalable and reactive applications.
 
@@ -113,7 +113,7 @@ My Awesome JavaScript List Part 2
 
 > · ​<a href="https://github.com/jupyterlab/lumino" class="markup--anchor markup--pullquote-anchor">Lumino</a> — Library for building interactive web applications.
 
----
+------------------------------------------------------------------------
 
 > Animation
 
@@ -133,7 +133,7 @@ My Awesome JavaScript List Part 2
 
 > · ​<a href="https://github.com/react-spring/react-spring" class="markup--anchor markup--pullquote-anchor">react-spring</a> — Spring physics based React animation library.
 
-> · ​<a href="https://github.com/nextapps-de/fat" class="markup--anchor markup--pullquote-anchor">FAT</a> — Web's fastest and most lightweight animation tool.
+> · ​<a href="https://github.com/nextapps-de/fat" class="markup--anchor markup--pullquote-anchor">FAT</a> — Web’s fastest and most lightweight animation tool.
 
 > · ​<a href="https://github.com/jlkiri/react-easy-flip" class="markup--anchor markup--pullquote-anchor">React Easy Flip</a> — Lightweight React library for smooth FLIP animations.
 
@@ -141,21 +141,15 @@ My Awesome JavaScript List Part 2
 
 > · ​<a href="https://github.com/veltman/flubber" class="markup--anchor markup--pullquote-anchor">flubber</a> — Tools for smoother shape animations.
 
----
-
->
+------------------------------------------------------------------------
 
 > CLI
 
->
-
 > · ​<a href="https://github.com/klaussinani/qoa" class="markup--anchor markup--pullquote-anchor">qoa</a> — Minimal interactive command-line prompts.
 
----
+------------------------------------------------------------------------
 
 > Test
-
->
 
 > · ​<a href="https://github.com/unexpectedjs/unexpected" class="markup--anchor markup--pullquote-anchor">Unexpected</a> — Extensible BDD assertion toolkit. (<a href="https://unexpected.js.org/" class="markup--anchor markup--pullquote-anchor">Docs</a>)
 
@@ -169,13 +163,9 @@ My Awesome JavaScript List Part 2
 
 > · ​<a href="https://github.com/ealush/vest" class="markup--anchor markup--pullquote-anchor">Vest</a> — Declarative Validation Testing.
 
----
-
->
+------------------------------------------------------------------------
 
 > State management
-
->
 
 > · ​<a href="https://github.com/jaredpalmer/mutik" class="markup--anchor markup--pullquote-anchor">Mutik</a> — Tiny (495B) immutable state management library based on Immer.
 
@@ -183,7 +173,7 @@ My Awesome JavaScript List Part 2
 
 > · ​<a href="https://github.com/ai/storeon" class="markup--anchor markup--pullquote-anchor">Storeon</a> — Tiny event-based Redux-like state manager for React and Preact.
 
-> · ​<a href="https://github.com/fabiospampinato/overstated" class="markup--anchor markup--pullquote-anchor">Overstated</a> — React state management library that's delightful to use, without sacrificing performance or scalability.
+> · ​<a href="https://github.com/fabiospampinato/overstated" class="markup--anchor markup--pullquote-anchor">Overstated</a> — React state management library that’s delightful to use, without sacrificing performance or scalability.
 
 > · ​<a href="https://github.com/effector/effector" class="markup--anchor markup--pullquote-anchor">Effector</a> — Reactive state manager. (<a href="https://github.com/ilyalesik/awesome-effector" class="markup--anchor markup--pullquote-anchor">Awesome</a>) (<a href="https://effector.now.sh/docs/introduction/installation" class="markup--anchor markup--pullquote-anchor">Docs</a>) (<a href="https://github.com/yumauri/effector-storage" class="markup--anchor markup--pullquote-anchor">effector-storage</a>)
 
@@ -209,23 +199,15 @@ My Awesome JavaScript List Part 2
 
 > · ​<a href="https://github.com/hmans/statery" class="markup--anchor markup--pullquote-anchor">Statery</a> — Surprise-Free State Management. Designed for React with functional components.
 
----
-
->
+------------------------------------------------------------------------
 
 > API bindings
 
->
-
 > · ​<a href="https://github.com/dilame/instagram-private-api" class="markup--anchor markup--pullquote-anchor">NodeJS Instagram private API client</a>​
 
----
-
->
+------------------------------------------------------------------------
 
 > DB
-
->
 
 > · ​<a href="https://github.com/sql-js/sql.js" class="markup--anchor markup--pullquote-anchor">sql.js</a> — SQLite compiled to JavaScript. Allows you to create a relational database and query it entirely in the browser. (<a href="https://sql.js.org/#/" class="markup--anchor markup--pullquote-anchor">Docs</a>) (<a href="https://news.ycombinator.com/item?id=25008308" class="markup--anchor markup--pullquote-anchor">HN</a>)
 
@@ -235,9 +217,7 @@ My Awesome JavaScript List Part 2
 
 > · ​<a href="https://github.com/voxpelli/node-connect-pg-simple" class="markup--anchor markup--pullquote-anchor">Connect PG Simple</a> — Simple, minimal PostgreSQL session store for Express/Connect.
 
----
-
->
+------------------------------------------------------------------------
 
 > React
 
@@ -257,7 +237,7 @@ My Awesome JavaScript List Part 2
 
 > <a href="https://github.com/carlosrocha/react-data-components" class="markup--anchor markup--pullquote-anchor">react-data-components</a> — React components for sorting, filtering and pagination of data.
 
-> <a href="https://github.com/AllenFang/react-bootstrap-table" class="markup--anchor markup--pullquote-anchor">react-bootstrap-table</a> — It' s a react table for bootstrap.
+> <a href="https://github.com/AllenFang/react-bootstrap-table" class="markup--anchor markup--pullquote-anchor">react-bootstrap-table</a> — It’ s a react table for bootstrap.
 
 > <a href="https://github.com/adazzle/react-data-grid" class="markup--anchor markup--pullquote-anchor">react-data-grid</a> — Excel-like grid component built with React, with editors, keyboard navigation, copy & paste, and the like.
 
@@ -287,7 +267,7 @@ My Awesome JavaScript List Part 2
 
 > Overlay
 
-> _Display overlay / modal / alert / dialog / lightbox / popup_
+> *Display overlay / modal / alert / dialog / lightbox / popup*
 
 > <a href="https://github.com/alexkuz/react-dock" class="markup--anchor markup--pullquote-anchor">react-dock</a> — Resizable dockable react component.
 
@@ -309,7 +289,7 @@ My Awesome JavaScript List Part 2
 
 > Notification
 
-> _Toaster / snackbar — Notify the user with a modeless temporary little popup_
+> *Toaster / snackbar — Notify the user with a modeless temporary little popup*
 
 > <a href="https://github.com/igorprado/react-notification-system" class="markup--anchor markup--pullquote-anchor">react-notification-system</a> — A complete and totally customizable component for notifications in React.
 
@@ -331,7 +311,7 @@ My Awesome JavaScript List Part 2
 
 > Menu
 
-> _Menus / sidebars_
+> *Menus / sidebars*
 
 > <a href="https://github.com/negomi/react-burger-menu" class="markup--anchor markup--pullquote-anchor">react-burger-menu</a> — An off-canvas sidebar component with a collection of effects and styles using CSS transitions and SVG path animations.
 
@@ -351,7 +331,7 @@ My Awesome JavaScript List Part 2
 
 > Sticky
 
-> _Fixed headers / scroll-up headers / sticky elements_
+> *Fixed headers / scroll-up headers / sticky elements*
 
 > <a href="https://github.com/captivationsoftware/react-sticky" class="markup--anchor markup--pullquote-anchor">react-sticky</a> — &lt; Sticky /&gt; component for awesome React apps.
 
@@ -375,7 +355,7 @@ My Awesome JavaScript List Part 2
 
 > Loader
 
-> _Loaders / spinners / progress bars — Let the user know that something is loading_
+> *Loaders / spinners / progress bars — Let the user know that something is loading*
 
 > <a href="https://github.com/yuanyan/halogen" class="markup--anchor markup--pullquote-anchor">halogen</a> — A collection of loading spinners with React.js.
 
@@ -413,7 +393,7 @@ My Awesome JavaScript List Part 2
 
 > Chart
 
-> _Display data in charts / graphs / diagrams_
+> *Display data in charts / graphs / diagrams*
 
 > <a href="https://github.com/fraserxu/react-chartist" class="markup--anchor markup--pullquote-anchor">react-chartist</a> — React component for Chartist.js.
 
@@ -453,7 +433,7 @@ My Awesome JavaScript List Part 2
 
 > Tree
 
-> _Display a tree data structure_
+> *Display a tree data structure*
 
 > <a href="https://github.com/chenglou/react-treeview" class="markup--anchor markup--pullquote-anchor">react-treeview</a> — Easy, light, flexible tree view made with React.
 
@@ -463,7 +443,7 @@ My Awesome JavaScript List Part 2
 
 > UI Navigation
 
-> _Ways to navigate views_
+> *Ways to navigate views*
 
 > <a href="https://github.com/fisshy/react-scroll" class="markup--anchor markup--pullquote-anchor">react-scroll</a> — React scroll component.
 
@@ -515,17 +495,17 @@ My Awesome JavaScript List Part 2
 
 > Time / Date / Age
 
-> _Display time / date / age_
+> *Display time / date / age*
 
 > <a href="https://github.com/andreypopp/react-time" class="markup--anchor markup--pullquote-anchor">react-time</a> — Component for React to render relative and/or formatted dates into &lt; time&gt; HTML5 element.
 
 > <a href="https://github.com/nmn/react-timeago" class="markup--anchor markup--pullquote-anchor">react-timeago</a> — A simple time-ago component for ReactJs.
 
-> <a href="https://github.com/hustcc/timeago-react" class="markup--anchor markup--pullquote-anchor">timeago-react</a> — Simple and efficient react component to format date with `*** time ago` statement. eg: '3 hours ago'.
+> <a href="https://github.com/hustcc/timeago-react" class="markup--anchor markup--pullquote-anchor">timeago-react</a> — Simple and efficient react component to format date with `*** time ago` statement. eg: ‘3 hours ago’.
 
 > Photo / Image
 
-> _Display images / photos_
+> *Display images / photos*
 
 > <a href="https://github.com/xiaolin/react-image-gallery" class="markup--anchor markup--pullquote-anchor">react-image-gallery</a> — Responsive image gallery, carousel, image slider react component.
 
@@ -541,7 +521,7 @@ My Awesome JavaScript List Part 2
 
 > Icons
 
-> _Display icons / icon set / emojis_
+> *Display icons / icon set / emojis*
 
 > <a href="https://github.com/gorangajic/react-icons" class="markup--anchor markup--pullquote-anchor">react-icons</a> — Svg react icons of popular icon packs using ES6 imports.
 
@@ -551,13 +531,13 @@ My Awesome JavaScript List Part 2
 
 > Paginator
 
-> _Display a control element to paginate_
+> *Display a control element to paginate*
 
 > <a href="https://github.com/AdeleD/react-paginate" class="markup--anchor markup--pullquote-anchor">react-paginate</a> — A ReactJS component that creates a pagination.
 
 > Markdown Viewer
 
-> _Display parsed markdow source_
+> *Display parsed markdow source*
 
 > <a href="https://github.com/rexxars/react-markdown" class="markup--anchor markup--pullquote-anchor">react-markdown</a> — Render Markdown as React components.
 
@@ -597,11 +577,11 @@ My Awesome JavaScript List Part 2
 
 > Form Components
 
-> _Let the user enter data_
+> *Let the user enter data*
 
 > Date / Time picker
 
-> _Date picker / time picker / datetime picker / date range picker_
+> *Date picker / time picker / datetime picker / date range picker*
 
 > <a href="https://github.com/Hacker0x01/react-datepicker" class="markup--anchor markup--pullquote-anchor">react-datepicker</a> — A simple and reusable datepicker component for React.
 
@@ -637,7 +617,7 @@ My Awesome JavaScript List Part 2
 
 > Input Types
 
-> _Masked inputs, specialized inputs; email / telephone number / credit card / etc._
+> *Masked inputs, specialized inputs; email / telephone number / credit card / etc.*
 
 > <a href="https://github.com/sanniassin/react-input-mask" class="markup--anchor markup--pullquote-anchor">react-input-mask</a> — Yet another react component for input masking.
 
@@ -649,7 +629,7 @@ My Awesome JavaScript List Part 2
 
 > Autocomplete
 
-> _Autosuggest / autocomplete / typeahead_
+> *Autosuggest / autocomplete / typeahead*
 
 > <a href="https://github.com/moroshko/react-autosuggest" class="markup--anchor markup--pullquote-anchor">react-autosuggest</a> — WAI-ARIA compliant React autosuggest component.
 
@@ -693,7 +673,7 @@ My Awesome JavaScript List Part 2
 
 > Type Select
 
-> _Let the user select something (e.g. a tag) while typing_
+> *Let the user select something (e.g. a tag) while typing*
 
 > <a href="https://github.com/olahol/react-tagsinput" class="markup--anchor markup--pullquote-anchor">react-tagsinput</a> — A simple react component for inputing tags.
 
@@ -735,9 +715,9 @@ My Awesome JavaScript List Part 2
 
 > Sortable List
 
-> _Let the user define an order on a list_
+> *Let the user define an order on a list*
 
-> <a href="https://github.com/RubaXa/Sortable" class="markup--anchor markup--pullquote-anchor">sortablejs</a> — Sortable — is a JavaScript library for reorderable drag-and-drop lists on modern browsers and touch devices. No jQuery. Supports Meteor, AngularJS, React, Polymer, Knockout and any CSS library, e.g. Bootstrap.
+> <a href="https://github.com/RubaXa/Sortable" class="markup--anchor markup--pullquote-anchor">sortablejs</a> — Sortable — is a JavaScript library for reorderable drag-and-drop lists on modern browsers and touch devices. No jQuery. Supports Meteor, AngularJS, React, Polymer, Knockout and any CSS library, e.g. Bootstrap.
 
 > <a href="https://github.com/jasonslyvia/react-anything-sortable" class="markup--anchor markup--pullquote-anchor">react-anything-sortable</a> — A ReactJS component that can sort any children with touch support and IE8 compatibility.
 
@@ -777,7 +757,7 @@ My Awesome JavaScript List Part 2
 
 > Image Editing
 
-> _Image manipulation_
+> *Image manipulation*
 
 > <a href="https://github.com/DropsOfSerenity/react-avatar-cropper" class="markup--anchor markup--pullquote-anchor">react-avatar-cropper</a> — Aiming to be a complete solution for avatar cropping in react.
 
@@ -805,11 +785,9 @@ My Awesome JavaScript List Part 2
 
 > <a href="https://github.com/avocode/react-tabguard" class="markup--anchor markup--pullquote-anchor">react-tabguard</a> — React Tabguard.
 
----
+------------------------------------------------------------------------
 
 > MISC
-
->
 
 > · ​<a href="https://github.com/mxstbr/micro-github" class="markup--anchor markup--pullquote-anchor">micro github</a> — Tiny microservice that makes adding authentication with GitHub to your application easy.
 
@@ -829,7 +807,7 @@ My Awesome JavaScript List Part 2
 
 > · ​<a href="https://github.com/tivac/xstate-component-tree" class="markup--anchor markup--pullquote-anchor">xstate-component-tree</a> — Build a tree of UI components based on your state chart.
 
-> · <a href="https://github.com/valdrinkoshi/virtual-scroller" class="markup--anchor markup--pullquote-anchor">virtual-scroller</a> — Maps a provided set of JavaScript objects onto DOM nodes, and renders only the DOM nodes that are currently visible, leaving the rest "virtualized".
+> · <a href="https://github.com/valdrinkoshi/virtual-scroller" class="markup--anchor markup--pullquote-anchor">virtual-scroller</a> — Maps a provided set of JavaScript objects onto DOM nodes, and renders only the DOM nodes that are currently visible, leaving the rest “virtualized”.
 
 > · ​<a href="https://github.com/MrRio/jsPDF" class="markup--anchor markup--pullquote-anchor">jSPDF</a> — Client-side JavaScript PDF generation for everyone.
 
@@ -861,7 +839,7 @@ My Awesome JavaScript List Part 2
 
 > · ​<a href="https://github.com/mweststrate/immer/#async-producers" class="markup--anchor markup--pullquote-anchor">Immer</a> — Create the next immutable state by mutating the current one.
 
-> · ​<a href="https://github.com/nextapps-de/flexsearch" class="markup--anchor markup--pullquote-anchor">FlexSearch</a> — Web's fastest and most memory-flexible full-text search library with zero dependencies.
+> · ​<a href="https://github.com/nextapps-de/flexsearch" class="markup--anchor markup--pullquote-anchor">FlexSearch</a> — Web’s fastest and most memory-flexible full-text search library with zero dependencies.
 
 > · ​<a href="https://github.com/neurosnap/cofx" class="markup--anchor markup--pullquote-anchor">cofx</a> — Node and javascript library that helps developers describe side-effects as data in a declarative, flexible API.
 
@@ -871,7 +849,7 @@ My Awesome JavaScript List Part 2
 
 > · ​<a href="https://github.com/memcachier/memjs" class="markup--anchor markup--pullquote-anchor">MemJS</a> — Memcache client for node using the binary protocol and SASL authentication.
 
-> · ​<a href="https://github.com/streamich/memfs" class="markup--anchor markup--pullquote-anchor">memfs</a> — In-memory filesystem with Node's API.
+> · ​<a href="https://github.com/streamich/memfs" class="markup--anchor markup--pullquote-anchor">memfs</a> — In-memory filesystem with Node’s API.
 
 > · ​<a href="https://github.com/accounts-js/accounts" class="markup--anchor markup--pullquote-anchor">Accounts</a> — Fullstack authentication and accounts-management for GraphQL and REST.
 
@@ -935,7 +913,7 @@ My Awesome JavaScript List Part 2
 
 > · ​<a href="https://github.com/ai/nanoid" class="markup--anchor markup--pullquote-anchor">nanoid</a> — Tiny (139 bytes), secure, URL-friendly, unique string ID generator for JavaScript.
 
-> · ​<a href="https://github.com/visionmedia/debug" class="markup--anchor markup--pullquote-anchor">debug</a> — Tiny JavaScript debugging utility modelled after Node.js core's debugging technique. Works in Node.js and web browsers.
+> · ​<a href="https://github.com/visionmedia/debug" class="markup--anchor markup--pullquote-anchor">debug</a> — Tiny JavaScript debugging utility modelled after Node.js core’s debugging technique. Works in Node.js and web browsers.
 
 > · ​<a href="https://github.com/jwilber/roughViz" class="markup--anchor markup--pullquote-anchor">roughViz.js</a> — Reusable JavaScript library for creating sketchy/hand-drawn styled charts in the browser.
 
@@ -1003,7 +981,7 @@ My Awesome JavaScript List Part 2
 
 > · ​<a href="https://github.com/jackyef/react-isomorphic-data" class="markup--anchor markup--pullquote-anchor">react-isomorphic-data</a> — Easily fetch data in your React components, with similar APIs to react-apollo.
 
-> · ​<a href="https://github.com/lukeed/klona" class="markup--anchor markup--pullquote-anchor">klona</a> — Tiny (228B) and fast utility to "deep clone" Objects, Arrays, Dates, RegExps, and more.
+> · ​<a href="https://github.com/lukeed/klona" class="markup--anchor markup--pullquote-anchor">klona</a> — Tiny (228B) and fast utility to “deep clone” Objects, Arrays, Dates, RegExps, and more.
 
 > · ​<a href="https://github.com/janpaepke/ScrollMagic" class="markup--anchor markup--pullquote-anchor">ScrollMagic</a> — JavaScript library for magical scroll interactions.
 
@@ -1071,7 +1049,7 @@ My Awesome JavaScript List Part 2
 
 > · ​<a href="https://github.com/npm/cacache" class="markup--anchor markup--pullquote-anchor">cacache</a> — Node.js library for managing local key and content address caches.
 
-> · ​<a href="https://github.com/webpack/enhanced-resolve" class="markup--anchor markup--pullquote-anchor">enhanced-resolve</a> — Offers an async require.resolve function. It's highly configurable.
+> · ​<a href="https://github.com/webpack/enhanced-resolve" class="markup--anchor markup--pullquote-anchor">enhanced-resolve</a> — Offers an async require.resolve function. It’s highly configurable.
 
 > · ​<a href="https://github.com/mmckegg/notevil" class="markup--anchor markup--pullquote-anchor">notevil</a> — Evalulate javascript like the built-in javascript eval() method but safely.
 
@@ -1091,7 +1069,7 @@ My Awesome JavaScript List Part 2
 
 > · ​<a href="https://github.com/zloirock/core-js" class="markup--anchor markup--pullquote-anchor">core-js</a> — Modular standard library for JavaScript.
 
-> · ​<a href="https://github.com/hustcc/timeago.js" class="markup--anchor markup--pullquote-anchor">timeago.js</a> — Nano library (less than 2 kb) used to format datetime with \*\*\* time ago statement. eg: '3 hours ago'.
+> · ​<a href="https://github.com/hustcc/timeago.js" class="markup--anchor markup--pullquote-anchor">timeago.js</a> — Nano library (less than 2 kb) used to format datetime with \*\*\* time ago statement. eg: ‘3 hours ago’.
 
 > · ​<a href="https://github.com/yahoo/serialize-javascript" class="markup--anchor markup--pullquote-anchor">Serialize JavaScript</a> — Serialize JavaScript to a superset of JSON that includes regular expressions, dates and functions.
 
@@ -1111,7 +1089,7 @@ My Awesome JavaScript List Part 2
 
 > · ​<a href="https://github.com/xtermjs/xterm.js" class="markup--anchor markup--pullquote-anchor">Xterm.js</a> — Terminal for the web.
 
-> · ​<a href="https://github.com/blakeembrey/change-case" class="markup--anchor markup--pullquote-anchor">Change Case</a> — Convert strings between camelCase, PascalCase, Capital Case, snake_case and more.
+> · ​<a href="https://github.com/blakeembrey/change-case" class="markup--anchor markup--pullquote-anchor">Change Case</a> — Convert strings between camelCase, PascalCase, Capital Case, snake\_case and more.
 
 > · ​<a href="https://github.com/bryntum/chronograph" class="markup--anchor markup--pullquote-anchor">ChronoGraph</a> — Reactive, graph-based, computation engine.
 
@@ -1177,7 +1155,7 @@ My Awesome JavaScript List Part 2
 
 > · ​<a href="https://github.com/logux/server" class="markup--anchor markup--pullquote-anchor">Logux Server</a> — Build own Logux server or make proxy between WebSocket and HTTP backend on any language.
 
-> · ​<a href="https://github.com/expo/results" class="markup--anchor markup--pullquote-anchor">@expo/results</a> — Efficient, standards-compliant library for representing results of successful or failed operations.
+> · ​<a href="https://github.com/expo/results" class="markup--anchor markup--pullquote-anchor"><span class="citation" data-cites="expo/results">@expo/results</span></a> — Efficient, standards-compliant library for representing results of successful or failed operations.
 
 > · ​<a href="https://github.com/milesj/emojibase" class="markup--anchor markup--pullquote-anchor">Emojibase</a> — Collection of lightweight, up-to-date, pre-generated, specification compliant, localized emoji JSON datasets, regex patterns, and more.
 
@@ -1237,7 +1215,7 @@ My Awesome JavaScript List Part 2
 
 > · ​<a href="https://github.com/bpmn-io/bpmn-js" class="markup--anchor markup--pullquote-anchor">bpmn-js</a> — BPMN 2.0 rendering toolkit and web modeler.
 
-> · ​<a href="https://github.com/soswow/fit-curve" class="markup--anchor markup--pullquote-anchor">fit-curve</a> — JavaScript implementation of Philip J. Schneider's "Algorithm for Automatically Fitting Digitized Curves" from the book "Graphics Gems".
+> · ​<a href="https://github.com/soswow/fit-curve" class="markup--anchor markup--pullquote-anchor">fit-curve</a> — JavaScript implementation of Philip J. Schneider’s “Algorithm for Automatically Fitting Digitized Curves” from the book “Graphics Gems”.
 
 > · ​<a href="https://github.com/nunofgs/clean-deep" class="markup--anchor markup--pullquote-anchor">clean-deep</a> — Remove falsy, empty or nullable values from objects.
 
@@ -1273,7 +1251,7 @@ My Awesome JavaScript List Part 2
 
 > · ​<a href="https://github.com/open-draft/reach-schema" class="markup--anchor markup--pullquote-anchor">Reach Schema</a> — Functional schema-driven JavaScript object validation library.
 
-> · ​<a href="https://github.com/cyclejs/callbags" class="markup--anchor markup--pullquote-anchor">@cycle/callbags</a> — Set of commonly used stream operators implemented as callbags with Typescript and ES modules.
+> · ​<a href="https://github.com/cyclejs/callbags" class="markup--anchor markup--pullquote-anchor"><span class="citation" data-cites="cycle/callbags">@cycle/callbags</span></a> — Set of commonly used stream operators implemented as callbags with Typescript and ES modules.
 
 > · ​<a href="https://github.com/thi-ng/umbrella/" class="markup--anchor markup--pullquote-anchor">umbrella</a> — Broadly scoped ecosystem & mono-repository of ~135 TypeScript projects for functional, data driven development.
 
@@ -1363,7 +1341,7 @@ My Awesome JavaScript List Part 2
 
 > · ​<a href="https://github.com/apollographql/invariant-packages" class="markup--anchor markup--blockquote-anchor">invariant-packages</a> — Packages for working with invariant(condition, message) assertions.
 
-> · ​<a href="https://github.com/garronej/evt" class="markup--anchor markup--blockquote-anchor">evt</a> — EventEmitter's typesafe replacement.
+> · ​<a href="https://github.com/garronej/evt" class="markup--anchor markup--blockquote-anchor">evt</a> — EventEmitter’s typesafe replacement.
 
 > · ​<a href="https://github.com/samyk/webscan" class="markup--anchor markup--blockquote-anchor">webscan</a> — Browser-based network scanner & local-IP detection.
 
@@ -1411,7 +1389,7 @@ My Awesome JavaScript List Part 2
 
 > · ​<a href="https://github.com/sindresorhus/execa" class="markup--anchor markup--blockquote-anchor">Execa</a> — Process execution for humans.
 
-> · ​<a href="https://github.com/sindresorhus/quick-lru" class="markup--anchor markup--blockquote-anchor">quick-lru</a> — Simple "Least Recently Used" (LRU) cache.
+> · ​<a href="https://github.com/sindresorhus/quick-lru" class="markup--anchor markup--blockquote-anchor">quick-lru</a> — Simple “Least Recently Used” (LRU) cache.
 
 > · ​<a href="https://github.com/YuriGor/deepdash" class="markup--anchor markup--blockquote-anchor">Deepdash</a> — Tree traversal library written in Underscore/Lodash fashion. (<a href="https://deepdash.io/" class="markup--anchor markup--blockquote-anchor">Docs</a>)
 
@@ -1531,7 +1509,7 @@ My Awesome JavaScript List Part 2
 
 > · ​<a href="https://github.com/alojs/alo" class="markup--anchor markup--blockquote-anchor">Alo</a> — Full-fledged state management. (<a href="http://www.alojs.com/index.html" class="markup--anchor markup--blockquote-anchor">Docs</a>)
 
-> · ​<a href="https://github.com/form-data/form-data" class="markup--anchor markup--blockquote-anchor">Form-Data</a> — Library to create readable "multipart/form-data" streams. Can be used to submit forms and file uploads to other web applications.
+> · ​<a href="https://github.com/form-data/form-data" class="markup--anchor markup--blockquote-anchor">Form-Data</a> — Library to create readable “multipart/form-data” streams. Can be used to submit forms and file uploads to other web applications.
 
 > · ​<a href="https://github.com/sindresorhus/conf" class="markup--anchor markup--blockquote-anchor">conf</a> — Simple config handling for your app or module.
 
@@ -1539,7 +1517,7 @@ My Awesome JavaScript List Part 2
 
 > · ​<a href="https://github.com/remusao/tldts" class="markup--anchor markup--blockquote-anchor">tldts</a> — Blazing Fast URL Parsing.
 
-> · ​<a href="https://github.com/barbajs/barba" class="markup--anchor markup--blockquote-anchor">Barba.js</a> — Easy-to-use library that helps you create fluid and smooth transitions between your website's pages.
+> · ​<a href="https://github.com/barbajs/barba" class="markup--anchor markup--blockquote-anchor">Barba.js</a> — Easy-to-use library that helps you create fluid and smooth transitions between your website’s pages.
 
 > · ​<a href="https://github.com/Vestride/Shuffle" class="markup--anchor markup--blockquote-anchor">Shuffle.js</a> — Categorize, sort, and filter a responsive grid of items. (<a href="https://vestride.github.io/Shuffle/" class="markup--anchor markup--blockquote-anchor">Web</a>)
 
@@ -1559,7 +1537,7 @@ My Awesome JavaScript List Part 2
 
 > · ​<a href="https://github.com/fingerprintjs/fingerprintjs" class="markup--anchor markup--blockquote-anchor">FingerprintJS</a> — Browser fingerprinting library with the highest accuracy and stability.
 
-> · ​<a href="https://github.com/ivan7237d/antiutils" class="markup--anchor markup--pullquote-anchor">Antiutils</a> — TypeScript/JavaScript utilities for those who don't like utilities.
+> · ​<a href="https://github.com/ivan7237d/antiutils" class="markup--anchor markup--pullquote-anchor">Antiutils</a> — TypeScript/JavaScript utilities for those who don’t like utilities.
 
 ### General:
 
@@ -1575,22 +1553,19 @@ My Awesome JavaScript List Part 2
 
 If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong>
-<br/>
+**bgoonz’s gists**  
 
-<em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…*gist.github.com<a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong>
-<br/>
+**bgoonz — Overview**  
 
-<em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…*github.com<a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 Or checkout my personal resource site:
 
-<a href="https://web-dev-resource-hub.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://web-dev-resource-hub.netlify.app/"><strong>Web-Dev-Resource-Hub</strong>
-<br/>
+**Web-Dev-Resource-Hub**  
 
-<em>Edit description</em>web-dev-resource-hub.netlify.app</a><a href="https://web-dev-resource-hub.netlify.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
+*Edit description*web-dev-resource-hub.netlify.app<a href="https://web-dev-resource-hub.netlify.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [March 18, 2021](https://medium.com/p/35931e187a35).
 

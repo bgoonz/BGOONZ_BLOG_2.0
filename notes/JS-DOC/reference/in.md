@@ -1,8 +1,10 @@
-# in operator
+in operator
+===========
 
 The `in` returns `true` if the specified property is in the specified object or its prototype chain.
 
-## Syntax
+Syntax
+------
 
     prop in object
 
@@ -14,7 +16,8 @@ A string or symbol representing a property name or array index (non-symbols will
 `object`  
 Object to check if it (or its prototype chain) <span class="short_text">contains</span> the property with specified name (`prop`).
 
-## Examples
+Examples
+--------
 
 ### Basic usage
 
@@ -81,16 +84,15 @@ To avoid this, make sure a new array is always filled with non-empty values or n
 
 ### Inherited properties
 
-The `in` operator returns `true` for properties in the prototype chain. (If you want to check for only _non-inherited_ properties, use [`Object.prototype.hasOwnProperty()`](../global_objects/object/hasownproperty) instead.)
+The `in` operator returns `true` for properties in the prototype chain. (If you want to check for only *non-inherited* properties, use [`Object.prototype.hasOwnProperty()`](../global_objects/object/hasownproperty) instead.)
 
     'toString' in {}  // returns true
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-relational-operators">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-relational-operators</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-relational-operators</span></td></tr></tbody></table>
 
 `in`
 
@@ -118,7 +120,8 @@ The `in` operator returns `true` for properties in the prototype chain. (If you 
 
 1.0
 
-## See also
+See also
+--------
 
 -   `for...in`
 -   `delete`
@@ -126,6 +129,5 @@ The `in` operator returns `true` for properties in the prototype chain. (If you 
 -   [`Reflect.has()`](../global_objects/reflect/has)
 -   [Enumerability and ownership of properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/in" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/in</a>

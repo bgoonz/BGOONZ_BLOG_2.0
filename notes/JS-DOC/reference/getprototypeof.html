@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>getprototypeof</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="handler.getprototypeof">handler.getPrototypeOf()</h1>
+<p>The <code>handler.getPrototypeOf()</code> method is a trap for the <code>[[GetPrototypeOf]]</code> internal method.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>const p = new Proxy(obj, {
+  getPrototypeOf(target) {
+  ...
+  }
+});</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p>The following parameter is passed to the <code>getPrototypeOf()</code> method. <code>this</code> is bound to the handler.</p>
+<p><code>target</code><br />
+The target object.</p>
+<h3 id="return-value">Return value</h3>
+<p>The <code>getPrototypeOf()</code> method must return an object or <code>null</code>.</p>
+<h2 id="description">Description</h2>
+<h3 id="interceptions">Interceptions</h3>
+<p>This trap can intercept these operations:</p>
+<ul>
+<li><a href="../../object/getprototypeof"><code>Object.getPrototypeOf()</code></a></li>
+<li><a href="../../reflect/getprototypeof"><code>Reflect.getPrototypeOf()</code></a></li>
+<li><a href="../../object/proto"><code>__proto__</code></a></li>
+<li><a href="../../object/isprototypeof"><code>Object.prototype.isPrototypeOf()</code></a></li>
+<li><a href="../../../operators/instanceof"><code>instanceof</code></a></li>
+</ul>
+<h3 id="invariants">Invariants</h3>
+<p>If the following invariants are violated, the proxy will throw a <a href="../../typeerror"><code>TypeError</code></a>:</p>
+<ul>
+<li><code>getPrototypeOf()</code> method must return an object or <code>null</code>.</li>
+<li>If <code>target</code> is not extensible, <code>Object.getPrototypeOf(proxy)</code> method must return the same value as <code>Object.getPrototypeOf(target)</code>.</li>
+</ul>
+<h2 id="examples">Examples</h2>
+<h3 id="basic-usage">Basic usage</h3>
+<pre><code>const obj = {};
+const proto = {};
+const handler = {
+    getPrototypeOf(target) {
+        console.log(target === obj);   // true
+        console.log(this === handler); // true
+        return proto;
+    }
+};
+
+const p = new Proxy(obj, handler);
+console.log(Object.getPrototypeOf(p) === proto);    // true</code></pre>
+<h3 id="five-ways-to-trigger-the-getprototypeof-trap">Five ways to trigger the getPrototypeOf trap</h3>
+<pre><code>const obj = {};
+const p = new Proxy(obj, {
+    getPrototypeOf(target) {
+        return Array.prototype;
+    }
+});
+console.log(
+    Object.getPrototypeOf(p) === Array.prototype,  // true
+    Reflect.getPrototypeOf(p) === Array.prototype, // true
+    p.__proto__ === Array.prototype,               // true
+    Array.prototype.isPrototypeOf(p),              // true
+    p instanceof Array                             // true
+);</code></pre>
+<h3 id="two-kinds-of-exceptions">Two kinds of exceptions</h3>
+<pre><code>const obj = {};
+const p = new Proxy(obj, {
+    getPrototypeOf(target) {
+        return &#39;foo&#39;;
+    }
+});
+Object.getPrototypeOf(p); // TypeError: &quot;foo&quot; is not an object or null
+
+const obj = Object.preventExtensions({});
+const p = new Proxy(obj, {
+    getPrototypeOf(target) {
+        return {};
+    }
+});
+Object.getPrototypeOf(p); // TypeError: expected same prototype value</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-proxy-object-internal-methods-and-internal-slots-getprototypeof">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-proxy-object-internal-methods-and-internal-slots-getprototypeof</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>getPrototypeOf</code></p>
+<p>49</p>
+<p>79</p>
+<p>49</p>
+<p>No</p>
+<p>36</p>
+<p>10</p>
+<p>49</p>
+<p>49</p>
+<p>49</p>
+<p>36</p>
+<p>10</p>
+<p>5.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../../proxy"><code>Proxy</code></a></li>
+<li><a href="../proxy"><code>handler</code></a></li>
+<li><a href="../../object/getprototypeof"><code>Object.getPrototypeOf()</code></a></li>
+<li><a href="../../reflect/getprototypeof"><code>Reflect.getPrototypeOf()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/getPrototypeOf" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/getPrototypeOf</a></p>
+</body>
+</html>

@@ -1,8 +1,10 @@
-# Array.prototype.includes()
+Array.prototype.includes()
+==========================
 
 The `includes()` method determines whether an array includes a certain value among its entries, returning `true` or `false` as appropriate.
 
-## Syntax
+Syntax
+------
 
     includes(searchElement)
     includes(searchElement, fromIndex)
@@ -12,7 +14,7 @@ The `includes()` method determines whether an array includes a certain value amo
 `searchElement`  
 The value to search for.
 
-**Note:** When comparing strings and characters, `includes()` is _case-sensitive_.
+**Note:** When comparing strings and characters, `includes()` is *case-sensitive*.
 
 `fromIndex` <span class="badge inline optional">Optional</span>  
 The position in this array at which to begin searching for `searchElement`.
@@ -25,11 +27,12 @@ Defaults to `0`.
 
 A [`Boolean`](../boolean) which is `true` if the value `searchElement` is found within the array (or the part of the array indicated by the index `fromIndex`, if specified).
 
-Values of zero are all considered to be equal, regardless of sign. (That is, `-0` is considered to be equal to both `0` and `+0`), but `false` is _not_ considered to be the same as `0`.
+Values of zero are all considered to be equal, regardless of sign. (That is, `-0` is considered to be equal to both `0` and `+0`), but `false` is *not* considered to be the same as `0`.
 
 **Note:** Technically speaking, `includes()` uses the `sameValueZero` algorithm to determine whether the given element is found.
 
-## Examples
+Examples
+--------
 
     [1, 2, 3].includes(2)      // true
     [1, 2, 3].includes(4)      // false
@@ -63,21 +66,20 @@ If `fromIndex` is negative, the computed index is calculated to be used as a pos
 
 ### includes() used as a generic method
 
-`includes()` method is intentionally generic. It does not require `this` value to be an Array object, so it can be applied to other kinds of objects (e.g. array-like objects).
+`includes()` method is intentionally generic. It does not require `this` value to be an Array object, so it can be applied to other kinds of objects (e.g. array-like objects).
 
-The example below illustrates `includes()` method called on the function's [arguments](../../functions/arguments) object.
+The example below illustrates `includes()` method called on the function’s [arguments](../../functions/arguments) object.
 
     (function() {
       console.log(Array.prototype.includes.call(arguments, 'a'))  // true
       console.log(Array.prototype.includes.call(arguments, 'd'))  // false
     })('a','b','c')
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.includes">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-array.prototype.includes</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-array.prototype.includes</span></td></tr></tbody></table>
 
 `includes`
 
@@ -105,7 +107,8 @@ No
 
 5.0
 
-## See also
+See also
+--------
 
 -   [`TypedArray.prototype.includes()`](../typedarray/includes)
 -   [`String.prototype.includes()`](../string/includes)

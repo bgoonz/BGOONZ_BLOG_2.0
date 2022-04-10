@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>graphs_cheatsheet</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="graphs_cheatsheet">graphs_cheatsheet</h1>
+<pre><code>class TreeNode {
+  constructor(val) {
+    this.val = val;
+    this.left = null;
+    this.right = null;
+  }
+}</code></pre>
+<p>implement a queue</p>
+<p>implement a stack</p>
+<p>node,l. subtree, r. subtree</p>
+<p>l.subtree, node, r.subtreethe left subtree contains values less than the root</p>
+<p>l.subtree, r.subtree, node</p>
+<p>BST Definition</p>
+<ol type="1">
+<li><ol start="12" type="a">
+<li>subtree contains values &lt; root</li>
+</ol></li>
+<li><ol start="18" type="a">
+<li>subtree contains values &gt;= to the root</li>
+</ol></li>
+<li><ol start="12" type="a">
+<li>&amp; r. subtree are BST</li>
+</ol></li>
+</ol>
+<p>insert: log(n)<br />
+search: log(n)</p>
+<ul>
+<li>Using a node implementation with iteration:</li>
+</ul>
+<pre><code>function depthFirstIter(node) {
+    let visited = new Set();
+    let stack = [ node ];
+
+    while (stack.length) {
+        let node = stack.pop();
+
+
+        if (visited.has(node.val)) continue;
+
+
+
+        console.log(node.val);
+        visited.add(node.val);
+
+
+        stack.push(...node.neighbors);
+    }
+}</code></pre>
+</body>
+</html>

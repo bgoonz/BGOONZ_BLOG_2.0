@@ -1,49 +1,32 @@
----
-title: Pry
-category: Ruby libraries
----
-
 ### cd
 
-```
-> cd Array
-```
+    > cd Array
 
-```nohighlight
-> ls
-  Array.methods: [] try_convert
-  Array#methods: & * + abbrev assoc at ...
-```
+    > ls
+      Array.methods: [] try_convert
+      Array#methods: & * + abbrev assoc at ...
 
-```
-> show-source
-```
+    > show-source
 
 ### Code
 
-```nohighlight
-> show-method Array#select
-```
+    > show-method Array#select
 
 ### Docs
 
-```nohighlight
-> ri Array
-> ri Array#each
+    > ri Array
+    > ri Array#each
 
-> cd Gem
-> show-doc try_activate
-```
+    > cd Gem
+    > show-doc try_activate
 
 ### Finding
 
-```nohighlight
-> find-method each
-  Array#each
-  Array#each_index
-  Enumerable#each_slice
-  ...
-```
+    > find-method each
+      Array#each
+      Array#each_index
+      Enumerable#each_slice
+      ...
 
 ### Editing
 
@@ -60,7 +43,8 @@ category: Ruby libraries
     > hist          # History
     > wtf?          # Trace of recent exception
 
-## Rails
+Rails
+-----
 
 ### Rails console
 
@@ -89,7 +73,8 @@ Also consider [pry-rails](https://rubygems.org/gems/pry-rails).
 
     > ls -G xx   # Grey by regex
 
-## Shell integration
+Shell integration
+-----------------
 
 shell-mode adds dir to the prompt.
 
@@ -100,7 +85,8 @@ Commands with `.` are shell commands.
 
     pry(main)> .cat hello.txt
 
-## hirb
+hirb
+----
 
 Add the [hirb](https://rubygems.org/gems/hirb) gem.
 
@@ -108,42 +94,37 @@ Add the [hirb](https://rubygems.org/gems/hirb) gem.
     > view User.all
     > view User.all, fields: %w[id name email]
 
-## pry-rescue
+pry-rescue
+----------
 
 Add the [pry-rescue](https://github.com/ConradIrwin/pry-rescue) gem.
 
-```rb
-Pry::rescue {
-  # raise exceptions here
-}
-```
+    Pry::rescue {
+      # raise exceptions here
+    }
 
 Or run:
 
-```
-bundle exec rescue rspec
-```
+    bundle exec rescue rspec
 
 Additional commands:
 
-```
-pry(main)> cd-cause
-pry(main)> try-again
-```
+    pry(main)> cd-cause
+    pry(main)> try-again
 
-## pry-remote
+pry-remote
+----------
 
 Add the [pry-remote](https://github.com/Mon-Ouie/pry-remote) gem.
 
-```rb
-# In your code:
-binding.remote_pry
+    # In your code:
+    binding.remote_pry
 
-# In the shell:
-bundle exec pry-remote
-```
+    # In the shell:
+    bundle exec pry-remote
 
-## Reference
+Reference
+---------
 
 -   [Pry](https://github.com/pry/pry)
 -   [Hirb](https://github.com/cldwalker/hirb)

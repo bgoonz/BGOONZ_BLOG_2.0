@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>operator_precedence</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="operator-precedence">Operator precedence</h1>
+<p><strong>Operator precedence</strong> determines how operators are parsed concerning each other. Operators with higher precedence become the operands of operators with lower precedence.</p>
+<h2 id="precedence-and-associativity">Precedence And Associativity</h2>
+<p>Consider an expression describable by the representation below. Note that both OP<sub>1</sub> and OP<sub>2</sub> are fill-in-the-blanks for OPerators.</p>
+<pre><code>a OP1 b OP2 c</code></pre>
+<p>If <code>OP1</code> and <code>OP2</code> have different precedence levels (see the table below), the operator with the highest precedence goes first and associativity does not matter. Observe how multiplication has higher precedence than addition and executed first, even though addition is written first in the code.</p>
+<pre><code>console.log(3 + 10 * 2);   // logs 23
+console.log(3 + (10 * 2)); // logs 23 because parentheses here are superfluous
+console.log((3 + 10) * 2); // logs 26 because the parentheses change the order</code></pre>
+<p>Left-associativity (left-to-right) means that it is processed as <code>(a OP1 b) OP2 c</code>, while right-associativity (right-to-left) means it is interpreted as <code>a OP1 (b OP2 c)</code>. Assignment operators are right-associative, so you can write:</p>
+<pre><code>a = b = 5; // same as writing a = (b = 5);</code></pre>
+<p>with the expected result that <code>a</code> and <code>b</code> get the value 5. This is because the assignment operator returns the value that is assigned. First, <code>b</code> is set to 5. Then the <code>a</code> is also set to 5, the return value of <code>b = 5</code>, aka right operand of the assignment.</p>
+<p>As another example, the unique exponentiation operator has right-associativity, whereas other arithmetic operators have left-associativity. It is interesting to note that, the order of evaluation is always left-to-right irregardless of associativity and precedence.</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>
+Code
+</td>
+<td>
+Output
+</td>
+</tr>
+<tr class="even">
+<td>
+<pre data-language="js"><code>function echo(name, num) {
+    console.log(&quot;Evaluating the &quot; + name + &quot; side&quot;);
+    return num;
+}
+// Notice the division operator (/)
+console.log(echo(&quot;left&quot;, 6) / echo(&quot;right&quot;, 2));</code></pre>
+</td>
+<td>
+<pre data-language="plain"><code>Evaluating the left side
+Evaluating the right side
+3</code></pre>
+</td>
+</tr>
+<tr class="odd">
+<td>
+<pre data-language="js"><code>function echo(name, num) {
+    console.log(&quot;Evaluating the &quot; + name + &quot; side&quot;);
+    return num;
+}
+// Notice the exponentiation operator (**)
+console.log(echo(&quot;left&quot;, 2) ** echo(&quot;right&quot;, 3));</code></pre>
+</td>
+<td>
+<pre data-language="plain"><code>Evaluating the left side
+Evaluating the right side
+8</code></pre>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The difference in associativity comes into play when there are multiple operators of the same precedence. With only one operator or operators of different precedences, associativity doesn’t affect the output, as seen in the example above. In the example below, observe how associativity affects the output when multiple of the same operator are used.</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>
+Code
+</td>
+<td>
+Output
+</td>
+</tr>
+<tr class="even">
+<td>
+<pre data-language="js"><code>function echo(name, num) {
+    console.log(&quot;Evaluating the &quot; + name + &quot; side&quot;);
+    return num;
+}
+// Notice the division operator (/)
+console.log(echo(&quot;left&quot;, 6) / echo(&quot;middle&quot;, 2) / echo(&quot;right&quot;, 3));</code></pre>
+</td>
+<td>
+<pre data-language="plain"><code>Evaluating the left side
+Evaluating the middle side
+Evaluating the right side
+1</code></pre>
+</td>
+</tr>
+<tr class="odd">
+<td>
+<pre data-language="js"><code>function echo(name, num) {
+    console.log(&quot;Evaluating the &quot; + name + &quot; side&quot;);
+    return num;
+}
+// Notice the exponentiation operator (**)
+console.log(echo(&quot;left&quot;, 2) ** echo(&quot;middle&quot;, 3) ** echo(&quot;right&quot;, 2));</code></pre>
+</td>
+<td>
+<pre data-language="plain"><code>Evaluating the left side
+Evaluating the middle side
+Evaluating the right side
+512</code></pre>
+</td>
+</tr>
+<tr class="even">
+<td>
+<pre data-language="js"><code>function echo(name, num) {
+    console.log(&quot;Evaluating the &quot; + name + &quot; side&quot;);
+    return num;
+}
+// Notice the parentheses around the left and middle exponentiation
+console.log((echo(&quot;left&quot;, 2) ** echo(&quot;middle&quot;, 3)) ** echo(&quot;right&quot;, 2));</code></pre>
+</td>
+<td>
+<pre data-language="plain"><code>Evaluating the left side
+Evaluating the middle side
+Evaluating the right side
+64</code></pre>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Looking at the code snippets above, <code>6 / 3 / 2</code> is the same as <code>(6 / 3) / 2</code> because division is left-associative. Exponentiation, on the other hand, is right-associative, so <code>2 ** 3 ** 2</code> is the same as <code>2 ** (3 ** 2)</code>. Thus, doing <code>(2 ** 3) ** 2</code> changes the order and results in the 64 seen in the table above.</p>
+<p>Remember that precedence comes before associativity. So, mixing division and exponentiation, the exponentiation comes before the division. For example, <code>2 ** 3 / 3 ** 2</code> results in 0.8888888888888888 because it is the same as <code>(2 ** 3) / (3 ** 2)</code>.</p>
+<h3 id="note-on-grouping-and-short-circuiting">Note on grouping and short-circuiting</h3>
+<p>In the table below, <strong>Grouping</strong> is listed as having the highest precedence. However, that does not always mean the expression within the grouping symbols <code>( … )</code> is evaluated first, especially when it comes to short-circuiting.</p>
+<p>Short-circuiting is jargon for conditional evaluation. For example, in the expression <code>a &amp;&amp; (b + c)</code>, if <code>a</code> is <a href="https://developer.mozilla.org/en-US/docs/Glossary/Falsy">falsy</a>, then the sub-expression <code>(b + c)</code> will not even get evaluated, even if it is in parentheses. We could say that the logical disjunction operator (“OR”) is “short-circuited”. Along with logical disjunction, other short-circuited operators include logical conjunction (“AND”), nullish-coalescing, optional chaining, and the conditional operator. Some more examples follow.</p>
+<pre><code>a || (b * c);  // evaluate `a` first, then produce `a` if `a` is &quot;truthy&quot;
+a &amp;&amp; (b &lt; c);  // evaluate `a` first, then produce `a` if `a` is &quot;falsy&quot;
+a ?? (b || c); // evaluate `a` first, then produce `a` if `a` is not `null` and not `undefined`
+a?.b.c;        // evaluate `a` first, then produce `undefined` if `a` is `null` or `undefined`</code></pre>
+<h2 id="examples">Examples</h2>
+<pre><code>3 &gt; 2 &amp;&amp; 2 &gt; 1
+// returns true
+
+3 &gt; 2 &gt; 1
+// Returns false because 3 &gt; 2 is true, then true is converted to 1
+// in inequality operators, therefore true &gt; 1 becomes 1 &gt; 1, which
+//  is false. Adding parentheses makes things clear: (3 &gt; 2) &gt; 1.</code></pre>
+<h2 id="table">Table</h2>
+<p>The following table lists operators in order from highest precedence (21) to lowest precedence (1).</p>
+<p>Note that <a href="spread_syntax">spread syntax</a> is intentionally not included in the table — because, to quote an <a href="https://stackoverflow.com/a/48656377">an answer at Stack Overflow</a>, “<a href="https://stackoverflow.com/q/44934828/1048572">Spread syntax is not an operator</a> and therefore does not have a precedence. It is part of the array literal and function call (and object literal) syntax.”</p>
+<p>Precedence</p>
+<p>Operator type</p>
+<p>Associativity</p>
+<p>Individual operators</p>
+<p>21</p>
+<p><a href="grouping">Grouping</a></p>
+<p>n/a</p>
+<p><code>( … )</code></p>
+<p>20</p>
+<p><a href="property_accessors#dot_notation">Member Access</a></p>
+<p>left-to-right</p>
+<p><code>… . …</code></p>
+<p><a href="property_accessors#bracket_notation">Computed Member Access</a></p>
+<p>left-to-right</p>
+<p><code>… [ … ]</code></p>
+<p><a href="new"><code>new</code></a> (with argument list)</p>
+<p>n/a</p>
+<p><code>new … ( … )</code></p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions">Function Call</a></p>
+<p>left-to-right</p>
+<p><code>… ( … )</code></p>
+<p><a href="optional_chaining">Optional chaining</a></p>
+<p>left-to-right</p>
+<p><code>?.</code></p>
+<p>19</p>
+<p><a href="new"><code>new</code></a> (without argument list)</p>
+<p>right-to-left</p>
+<p><code>new …</code></p>
+<p>18</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#increment">Postfix Increment</a></p>
+<p>n/a</p>
+<p><code>… ++</code></p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#decrement">Postfix Decrement</a></p>
+<p><code>… --</code></p>
+<p>17</p>
+<p><a href="logical_not">Logical NOT (!)</a></p>
+<p>right-to-left</p>
+<p><code>! …</code></p>
+<p><a href="bitwise_not">Bitwise NOT (~)</a></p>
+<p><code>~ …</code></p>
+<p><a href="unary_plus">Unary plus (+)</a></p>
+<p><code>+ …</code></p>
+<p><a href="unary_negation">Unary negation (-)</a></p>
+<p><code>- …</code></p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#increment">Prefix Increment</a></p>
+<p><code>++ …</code></p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#decrement">Prefix Decrement</a></p>
+<p><code>-- …</code></p>
+<p><a href="typeof"><code>typeof</code></a></p>
+<p><code>typeof …</code></p>
+<p><a href="void"><code>void</code></a></p>
+<p><code>void …</code></p>
+<p><a href="delete"><code>delete</code></a></p>
+<p><code>delete …</code></p>
+<p><a href="await"><code>await</code></a></p>
+<p><code>await …</code></p>
+<p>16</p>
+<p><a href="exponentiation">Exponentiation (**)</a></p>
+<p>right-to-left</p>
+<p><code>… ** …</code></p>
+<p>15</p>
+<p><a href="multiplication">Multiplication (*)</a></p>
+<p>left-to-right</p>
+<p><code>… * …</code></p>
+<p><a href="division">Division (/)</a></p>
+<p><code>… / …</code></p>
+<p><a href="remainder">Remainder (%)</a></p>
+<p><code>… % …</code></p>
+<p>14</p>
+<p><a href="addition">Addition (+)</a></p>
+<p>left-to-right</p>
+<p><code>… + …</code></p>
+<p><a href="subtraction">Subtraction (-)</a></p>
+<p><code>… - …</code></p>
+<p>13</p>
+<p><a href="left_shift">Bitwise Left Shift (&lt;&lt;)</a></p>
+<p>left-to-right</p>
+<p><code>… &lt;&lt; …</code></p>
+<p><a href="right_shift">Bitwise Right Shift (&gt;&gt;)</a></p>
+<p><code>… &gt;&gt; …</code></p>
+<p><a href="unsigned_right_shift">Bitwise Unsigned Right Shift (&gt;&gt;&gt;)</a></p>
+<p><code>… &gt;&gt;&gt; …</code></p>
+<p>12</p>
+<p><a href="less_than">Less Than (&lt;)</a></p>
+<p>left-to-right</p>
+<p><code>… &lt; …</code></p>
+<p><a href="less_than_or_equal">Less Than Or Equal (&lt;=)</a></p>
+<p><code>… &lt;= …</code></p>
+<p><a href="greater_than">Greater Than (&gt;)</a></p>
+<p><code>… &gt; …</code></p>
+<p><a href="greater_than_or_equal">Greater Than Or Equal (&gt;=)</a></p>
+<p><code>… &gt;= …</code></p>
+<p><a href="in"><code>in</code></a></p>
+<p><code>… in …</code></p>
+<p><a href="instanceof"><code>instanceof</code></a></p>
+<p><code>… instanceof …</code></p>
+<p>11</p>
+<p><a href="equality">Equality (==)</a></p>
+<p>left-to-right</p>
+<p><code>… == …</code></p>
+<p><a href="inequality">Inequality (!=)</a></p>
+<p><code>… != …</code></p>
+<p><a href="strict_equality">Strict Equality (===)</a></p>
+<p><code>… === …</code></p>
+<p><a href="strict_inequality">Strict Inequality (!==)</a></p>
+<p><code>… !== …</code></p>
+<p>10</p>
+<p><a href="bitwise_and">Bitwise AND (&amp;)</a></p>
+<p>left-to-right</p>
+<p><code>… &amp; …</code></p>
+<p>9</p>
+<p><a href="bitwise_xor">Bitwise XOR (^)</a></p>
+<p>left-to-right</p>
+<p><code>… ^ …</code></p>
+<p>8</p>
+<p><a href="bitwise_or">Bitwise OR (|)</a></p>
+<p>left-to-right</p>
+<p><code>… | …</code></p>
+<p>7</p>
+<p><a href="logical_and">Logical AND (&amp;&amp;)</a></p>
+<p>left-to-right</p>
+<p><code>… &amp;&amp; …</code></p>
+<p>6</p>
+<p><a href="logical_or">Logical OR (||)</a></p>
+<p>left-to-right</p>
+<p><code>… || …</code></p>
+<p>5</p>
+<p><a href="nullish_coalescing_operator">Nullish coalescing operator (??)</a></p>
+<p>left-to-right</p>
+<p><code>… ?? …</code></p>
+<p>4</p>
+<p><a href="conditional_operator">Conditional (ternary) operator</a></p>
+<p>right-to-left</p>
+<p><code>… ? … : …</code></p>
+<p>3</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#assignment_operators">Assignment</a></p>
+<p>right-to-left</p>
+<p><code>… = …</code></p>
+<p><code>… += …</code></p>
+<p><code>… -= …</code></p>
+<p><code>… **= …</code></p>
+<p><code>… *= …</code></p>
+<p><code>… /= …</code></p>
+<p><code>… %= …</code></p>
+<p><code>… &lt;&lt;= …</code></p>
+<p><code>… &gt;&gt;= …</code></p>
+<p><code>… &gt;&gt;&gt;= …</code></p>
+<p><code>… &amp;= …</code></p>
+<p><code>… ^= …</code></p>
+<p><code>… |= …</code></p>
+<p><code>… &amp;&amp;= …</code></p>
+<p><code>… ||= …</code></p>
+<p><code>… ??= …</code></p>
+<p>2</p>
+<p><a href="yield"><code>yield</code></a></p>
+<p>right-to-left</p>
+<p><code>yield …</code></p>
+<p><a href="yield*"><code>yield*</code></a></p>
+<p><code>yield* …</code></p>
+<p>1</p>
+<p><a href="comma_operator">Comma / Sequence</a></p>
+<p>left-to-right</p>
+<p><code>… , …</code></p>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence</a></p>
+</body>
+</html>

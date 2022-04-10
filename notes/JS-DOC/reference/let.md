@@ -1,8 +1,10 @@
-# let
+let
+===
 
 The `let` statement declares a block-scoped local variable, optionally initializing it to a value.
 
-## Syntax
+Syntax
+------
 
     let name1 [= value1] [, name2 [= value2]] [, ..., nameN [= valueN];
 
@@ -11,7 +13,7 @@ The `let` statement declares a block-scoped local variable, optionally initializ
 `nameN`  
 The names of the variable or variables to declare. Each must be a legal JavaScript identifier.
 
-` value``N ` <span class="badge inline optional">Optional</span>  
+``` value``N ``` <span class="badge inline optional">Optional</span>  
 For each variable declared, you may optionally specify its initial value to any legal JavaScript expression.
 
 Alternatively, the [Destructuring Assignment](../operators/destructuring_assignment) syntax can also be used to declare variables.
@@ -19,17 +21,19 @@ Alternatively, the [Destructuring Assignment](../operators/destructuring_assignm
     let { bar } = foo; // where foo = { bar:10, baz:12 };
     /* This creates a variable with the name 'bar', which has a value of 10 */
 
-## Description
+Description
+-----------
 
 `let` allows you to declare variables that are limited to the scope of a [block](block) statement, or expression on which it is used, unlike the [`var`](var) keyword, which declares a variable globally, or locally to an entire function regardless of block scope. The other difference between [`var`](var) and `let` is that the latter is initialized to a value only when a [parser evaluates it (see below)](#temporal_dead_zone).
 
-Just like [`const`](const#description) the `let` does _not_ create properties of the [`window`](https://developer.mozilla.org/en-US/docs/Web/API/Window) object when declared globally (in the top-most scope).
+Just like [`const`](const#description) the `let` does *not* create properties of the [`window`](https://developer.mozilla.org/en-US/docs/Web/API/Window) object when declared globally (in the top-most scope).
 
-An explanation of why the name "**let**" was chosen can be found [here](https://stackoverflow.com/questions/37916940/why-was-the-name-let-chosen-for-block-scoped-variable-declarations-in-javascri).
+An explanation of why the name “**let**” was chosen can be found [here](https://stackoverflow.com/questions/37916940/why-was-the-name-let-chosen-for-block-scoped-variable-declarations-in-javascri).
 
 **Note:** Many issues with `let` variables can be avoided by declaring them at the top of the scope in which they are used (doing so may impact readibility).
 
-## Examples
+Examples
+--------
 
 ### Scoping rules
 
@@ -125,7 +129,7 @@ You may encounter errors in [`switch`](switch) statements because there is only 
         break;
     }
 
-However, it's important to point out that a block nested inside a case clause will create a new block scoped lexical environment, which will not produce the redeclaration errors shown above.
+However, it’s important to point out that a block nested inside a case clause will create a new block scoped lexical environment, which will not produce the redeclaration errors shown above.
 
     let x = 1;
 
@@ -146,7 +150,7 @@ However, it's important to point out that a block nested inside a case clause wi
 
 **Note:** This differs from [`var`](var#var_hoisting) variables, which will return a value of `undefined` if they are accessed before they are declared.
 
-The variable is said to be in a "temporal dead zone" (TDZ) from the start of the block until the initialization has completed.
+The variable is said to be in a “temporal dead zone” (TDZ) from the start of the block until the initialization has completed.
 
     { // TDZ starts at beginning of scope
       console.log(bar); // undefined
@@ -155,7 +159,7 @@ The variable is said to be in a "temporal dead zone" (TDZ) from the start of the
       let foo = 2; // End of TDZ (for foo)
     }
 
-The term "temporal" is used because the zone depends on the order of execution (time) rather than the order in which the code is written (position). For example, the code below works because, even though the function that uses the `let` variable appears before the variable is declared, the function is _called_ outside the TDZ.
+The term “temporal” is used because the zone depends on the order of execution (time) rather than the order in which the code is written (position). For example, the code below works because, even though the function that uses the `let` variable appears before the variable is declared, the function is *called* outside the TDZ.
 
     {
         // TDZ starts at beginning of scope
@@ -192,9 +196,9 @@ The following code results in a `ReferenceError` at the line shown:
     }
     test();
 
-The `if` block is evaluated because the outer `var foo` has a value. However due to lexical scoping this value is not available inside the block: the identifier `foo` _inside_ the `if` block is the `let foo`. The expression `(foo + 55)` throws a `ReferenceError` because initialization of `let foo` has not completed — it is still in the temporal dead zone.
+The `if` block is evaluated because the outer `var foo` has a value. However due to lexical scoping this value is not available inside the block: the identifier `foo` *inside* the `if` block is the `let foo`. The expression `(foo + 55)` throws a `ReferenceError` because initialization of `let foo` has not completed — it is still in the temporal dead zone.
 
-This phenomenon can be confusing in a situation like the following. The instruction `let n of n.a` is already inside the private scope of the for loop's block. So, the identifier `n.a` is resolved to the property '`a`' of the '`n`' object located in the first part of the instruction itself (`let n`).
+This phenomenon can be confusing in a situation like the following. The instruction `let n of n.a` is already inside the private scope of the for loop’s block. So, the identifier `n.a` is resolved to the property ‘`a`’ of the ‘`n`’ object located in the first part of the instruction itself (`let n`).
 
 This is still in the temporal dead zone as its declaration statement has not been reached and terminated.
 
@@ -211,7 +215,7 @@ This is still in the temporal dead zone as its declaration statement has not bee
 
 ### Other situations
 
-When used inside a block, `let` limits the variable's scope to that block. Note the difference between `var`, whose scope is inside the function where it is declared.
+When used inside a block, `let` limits the variable’s scope to that block. Note the difference between `var`, whose scope is inside the function where it is declared.
 
     var a = 1;
     var b = 2;
@@ -235,12 +239,11 @@ However, this combination of `var` and `let` declaration below is a [`SyntaxErro
       var x = 2; // SyntaxError for re-declaration
     }
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-let-and-const-declarations">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-let-and-const-declarations</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-let-and-const-declarations</span></td></tr></tbody></table>
 
 `let`
 
@@ -262,7 +265,7 @@ In Edge 12 and 13, `let` within a `for` loop initializer does not create a separ
 
 44
 
-\["Prior to Firefox 44, `let` is only available to code blocks in HTML wrapped in a `<script type=\"application/javascript;version=1.7\">` block (or higher version) and has different semantics (e.g. no temporal dead zone).", "Prior to Firefox 46, a `TypeError` is thrown on redeclaration instead of a `SyntaxError`.", "Firefox 54 adds support of `let` in workers."\]
+\[“Prior to Firefox 44, `let` is only available to code blocks in HTML wrapped in a `<script type=\"application/javascript;version=1.7\">` block (or higher version) and has different semantics (e.g. no temporal dead zone).”, “Prior to Firefox 46, a `TypeError` is thrown on redeclaration instead of a `SyntaxError`.”, “Firefox 54 adds support of `let` in workers.”\]
 
 11
 
@@ -290,7 +293,7 @@ Support outside of [strict mode](https://developer.mozilla.org/docs/Web/JavaScri
 
 44
 
-\["Prior to Firefox 44, `let` is only available to code blocks in HTML wrapped in a `<script type=\"application/javascript;version=1.7\">` block (or higher version) and has different semantics (e.g. no temporal dead zone).", "Prior to Firefox 46, a `TypeError` is thrown on redeclaration instead of a `SyntaxError`.", "Firefox 54 adds support of `let` in workers."\]
+\[“Prior to Firefox 44, `let` is only available to code blocks in HTML wrapped in a `<script type=\"application/javascript;version=1.7\">` block (or higher version) and has different semantics (e.g. no temporal dead zone).”, “Prior to Firefox 46, a `TypeError` is thrown on redeclaration instead of a `SyntaxError`.”, “Firefox 54 adds support of `let` in workers.”\]
 
 18
 
@@ -302,16 +305,16 @@ Support outside of [strict mode](https://developer.mozilla.org/docs/Web/JavaScri
 
 [Strict mode](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Strict_mode) is required.
 
-## See also
+See also
+--------
 
 -   [`var`](var)
 -   [`const`](const)
 -   [ES6 In Depth: `let` and `const`](https://hacks.mozilla.org/2015/07/es6-in-depth-let-and-const/)
 -   [Breaking changes in `let` and `const` in Firefox 44](https://blog.mozilla.org/addons/2015/10/14/breaking-changes-let-const-firefox-nightly-44/)
--   [You Don't Know JS: Scope & Closures: Chapter 3: Function vs. Block Scope](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/scope%20%26%20closures/ch3.md)
+-   [You Don’t Know JS: Scope & Closures: Chapter 3: Function vs. Block Scope](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/scope%20%26%20closures/ch3.md)
 -   [StackOverflow: What is the Temporal Dead Zone](https://stackoverflow.com/a/33198850/1125029)?
 -   [StackOverflow: What is the difference between using `let` and `var`?](https://stackoverflow.com/questions/762011/whats-the-difference-between-using-let-and-var-to-declare-a-variable)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let</a>

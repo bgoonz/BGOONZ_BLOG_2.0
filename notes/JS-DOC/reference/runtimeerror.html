@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>runtimeerror</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="webassembly.runtimeerror">WebAssembly.RuntimeError</h1>
+<p>The <code>WebAssembly.RuntimeError</code> object is the error type that is thrown whenever WebAssembly specifies a <a href="https://webassembly.org/docs/semantics/#traps">trap</a>.</p>
+<h2 id="constructor">Constructor</h2>
+<p><a href="runtimeerror/runtimeerror"><code>WebAssembly.RuntimeError()</code></a><br />
+Creates a new <code>WebAssembly.RuntimeError</code> object.</p>
+<h2 id="instance-properties">Instance properties</h2>
+<p><a href="../error/message"><code>WebAssembly.RuntimeError.prototype.message</code></a><br />
+Error message. Although ECMA-262 specifies that <a href="../urierror"><code>URIError</code></a> should provide its own <code>message</code> property, in <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey">SpiderMonkey</a>, it inherits <a href="../error/message"><code>Error.prototype.message</code></a>.</p>
+<p><a href="../error/name"><code>WebAssembly.RuntimeError.prototype.name</code></a><br />
+Error name. Inherited from <a href="../error"><code>Error</code></a>.</p>
+<p><a href="../error/filename"><code>WebAssembly.RuntimeError.prototype.fileName</code></a><br />
+Path to file that raised this error. Inherited from <a href="../error"><code>Error</code></a>.</p>
+<p><a href="../error/linenumber"><code>WebAssembly.RuntimeError.prototype.lineNumber</code></a><br />
+Line number in file that raised this error. Inherited from <a href="../error"><code>Error</code></a>.</p>
+<p><a href="../error/columnnumber"><code>WebAssembly.RuntimeError.prototype.columnNumber</code></a><br />
+Column number in line that raised this error. Inherited from <a href="../error"><code>Error</code></a>.</p>
+<p><a href="../error/stack"><code>WebAssembly.RuntimeError.prototype.stack</code></a><br />
+Stack trace. Inherited from <a href="../error"><code>Error</code></a>.</p>
+<h2 id="instance-methods">Instance methods</h2>
+<p><a href="../error/tosource"><code>WebAssembly.RuntimeError.prototype.toSource()</code></a><br />
+Returns code that could eval to the same error. Inherited from <a href="../error"><code>Error</code></a>.</p>
+<p><a href="../error/tostring"><code>WebAssembly.RuntimeError.prototype.toString()</code></a><br />
+Returns a string representing the specified <code>Error</code> object.. Inherited from <a href="../error"><code>Error</code></a>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="creating-a-new-runtimeerror-instance">Creating a new RuntimeError instance</h3>
+<p>The following snippet creates a new <code>RuntimeError</code> instance, and logs its details to the console:</p>
+<pre><code>try {
+  throw new WebAssembly.RuntimeError(&#39;Hello&#39;, &#39;someFile&#39;, 10);
+} catch (e) {
+  console.log(e instanceof WebAssembly.RuntimeError); // true
+  console.log(e.message);                             // &quot;Hello&quot;
+  console.log(e.name);                                // &quot;RuntimeError&quot;
+  console.log(e.fileName);                            // &quot;someFile&quot;
+  console.log(e.lineNumber);                          // 10
+  console.log(e.columnNumber);                        // 0
+  console.log(e.stack);                               // returns the location where the code was run
+}</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://webassembly.github.io/spec/js-api/#exceptiondef-runtimeerror">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) <br/></p>
+<span class="small">#exceptiondef-runtimeerror</span></a>
+</td>
+</tr>
+<tr class="even">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-native-error-types-used-in-this-standard</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>RuntimeError</code></p>
+<p>57</p>
+<p>16</p>
+<p>52</p>
+<p>Disabled in the Firefox 52 Extended Support Release (ESR).</p>
+<p>No</p>
+<p>44</p>
+<p>11</p>
+<p>57</p>
+<p>57</p>
+<p>52</p>
+<p>Disabled in the Firefox 52 Extended Support Release (ESR).</p>
+<p>43</p>
+<p>11</p>
+<p>7.0</p>
+<p><code>RuntimeError</code></p>
+<p>57</p>
+<p>16</p>
+<p>52</p>
+<p>Disabled in the Firefox 52 Extended Support Release (ESR).</p>
+<p>No</p>
+<p>44</p>
+<p>11</p>
+<p>57</p>
+<p>57</p>
+<p>52</p>
+<p>Disabled in the Firefox 52 Extended Support Release (ESR).</p>
+<p>43</p>
+<p>11</p>
+<p>7.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/WebAssembly">WebAssembly</a> overview page</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts">WebAssembly concepts</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API">Using the WebAssembly JavaScript API</a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/RuntimeError" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/RuntimeError</a></p>
+</body>
+</html>

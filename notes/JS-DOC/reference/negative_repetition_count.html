@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>negative_repetition_count</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="rangeerror-repeat-count-must-be-non-negative">RangeError: repeat count must be non-negative</h1>
+<p>The JavaScript exception “repeat count must be non-negative” occurs when the <a href="../global_objects/string/repeat"><code>String.prototype.repeat()</code></a> method is used with a <code>count</code> argument that is a negative number.</p>
+<h2 id="message">Message</h2>
+<pre><code>RangeError: argument out of range
+RangeError: repeat count must be non-negative (Firefox)
+RangeError: Invalid count value (Chrome)</code></pre>
+<h2 id="error-type">Error type</h2>
+<p><a href="../global_objects/rangeerror"><code>RangeError</code></a></p>
+<h2 id="what-went-wrong">What went wrong?</h2>
+<p>The <a href="../global_objects/string/repeat"><code>String.prototype.repeat()</code></a> method has been used. It has a <code>count</code> parameter indicating the number of times to repeat the string. It must be between 0 and less than positive <a href="../global_objects/infinity"><code>Infinity</code></a> and cannot be a negative number. The range of allowed values can be described like this: [0, +∞).</p>
+<h2 id="examples">Examples</h2>
+<h3 id="invalid-cases">Invalid cases</h3>
+<pre><code>&#39;abc&#39;.repeat(-1); // RangeError</code></pre>
+<h3 id="valid-cases">Valid cases</h3>
+<pre><code>&#39;abc&#39;.repeat(0);    // &#39;&#39;
+&#39;abc&#39;.repeat(1);    // &#39;abc&#39;
+&#39;abc&#39;.repeat(2);    // &#39;abcabc&#39;
+&#39;abc&#39;.repeat(3.5);  // &#39;abcabcabc&#39; (count will be converted to integer)</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../global_objects/string/repeat"><code>String.prototype.repeat()</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Negative_repetition_count" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Negative_repetition_count</a></p>
+</body>
+</html>

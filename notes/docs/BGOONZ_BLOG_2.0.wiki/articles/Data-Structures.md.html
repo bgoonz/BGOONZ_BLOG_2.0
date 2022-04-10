@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Data-Structures.md</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h2 id="what-are-data-structures">What are data structures</h2>
+<p>Data structures, at a high level, are techniques for storing and organizing data that make it easier to modify, navigate, and access. Data structures determine how data is collected, the functions we can use to access it, and the relationships between data.</p>
+<p>Data structures are used in almost all areas of computer science and programming, from operating systems to basic vanilla code to artificial intelligence.</p>
+<p>Data structures enable us to:</p>
+<ul>
+<li>Manage and utilize large datasets</li>
+<li>Search for particular data from a database</li>
+<li>Design algorithms that are tailored towards particular programs</li>
+<li>Handle multiple requests from users at once</li>
+<li>Simplify and speed up data processing</li>
+</ul>
+<p>Data structures are vital for efficient, real-world problem solving. After all, the way we organize data has a lot of impact on performance and useability. In fact, most top companies require a strong understanding of data structures.</p>
+<blockquote>
+<p>Anyone looking to crack the coding interview will need to master data structures.</p>
+</blockquote>
+<p>JavaScript has primitive and non-primitive data structures. Primitive data structures and data types are native to the programming language. These include boolean, null, number, string, etc.</p>
+<p>Non-primitive data structures are not defined by the programming language but rather by the programmer. These include linear data structures, static data structures, and dynamic data structures, like queue and linked lists.</p>
+<h2 id="array">1. Array</h2>
+<p>The most basic of all data structures, an array stores data in memory for later use. Each array has a fixed number of cells decided on its creation, and each cell has a corresponding numeric index used to select its data. Whenever you’d like to use the array, all you need are the desired indices, and you can access any of the data within.</p>
+<p><img src="https://www.educative.io/api/page/6094484883374080/image/download/5163503745761280" /></p>
+<p>Advantages</p>
+<ul>
+<li>Simple to create and use.</li>
+<li>Foundational building block for complex data structures</li>
+</ul>
+<p>Disadvantages</p>
+<ul>
+<li>Fixed size</li>
+<li>Expensive to insert/delete or resequence values</li>
+<li>Inefficient to sort</li>
+</ul>
+<h3 id="applications">Applications</h3>
+<ul>
+<li>Basic spreadsheets</li>
+<li>Within complex structures such as hash tables</li>
+</ul>
+<h2 id="queues">2. Queues</h2>
+<p>Queues are conceptually similar to stacks; both are sequential structures, but queues process elements in the order they were entered rather than the most recent element.</p>
+<p>As a result, queues can be thought of as a FIFO (First In, First Out) version of stacks. These are helpful as a buffer for requests, storing each request in the order it was received until it can be processed.</p>
+<p><img src="https://www.educative.io/api/page/6094484883374080/image/download/4608256413532160" /></p>
+<p>For a visual, consider a single-lane tunnel: the first car to enter is the first car to exit. If other cars should wish to exit, but the first stops, all cars will have to wait for the first to exit before they can proceed.</p>
+<p>Advantages</p>
+<ul>
+<li>Dynamic size</li>
+<li>Orders data in the order it was received</li>
+<li>Low runtime</li>
+</ul>
+<p>Disadvantages</p>
+<ul>
+<li>Can only retrieve the oldest element</li>
+</ul>
+<h3 id="applications-1">Applications</h3>
+<ul>
+<li>Effective as a buffer when receiving frequent data</li>
+<li>Convenient way to store order-sensitive data such as stored voicemails</li>
+<li>Ensures the oldest data is processed first</li>
+</ul>
+<h2 id="linked-list">3. Linked List</h2>
+<p>Linked lists are a data structure which, unlike the previous three, does not use physical placement of data in memory. This means that, rather than indexes or positions, linked lists use a referencing system: elements are stored in nodes that contain a pointer to the next node, repeating until all nodes are linked.</p>
+<p>This system allows efficient insertion and removal of items without the need for reorganization.</p>
+<p><img src="https://www.educative.io/api/page/6094484883374080/image/download/4536246505308160" /></p>
+<p>Advantages</p>
+<ul>
+<li>Efficient insertion and removal of new elements</li>
+<li>Less complex than restructuring an array</li>
+</ul>
+<p>Disadvantages</p>
+<ul>
+<li>Uses more memory than arrays</li>
+<li>Inefficient to retrieve a specific element</li>
+<li>Inefficient to traverse the list backward</li>
+</ul>
+<h3 id="applications-2">Applications</h3>
+<ul>
+<li>Best used when data must be added and removed in quick succession from unknown locations</li>
+</ul>
+<h2 id="trees">4. Trees</h2>
+<p>Trees are another relation-based data structure, which specialize in representing hierarchical structures. Like a linked list, nodes contain both elements of data and pointers marking its relation to immediate nodes.</p>
+<p>Each tree has a “root” node, off of which all other nodes branch. The root contains references to all elements directly below it, which are known as its “child nodes”. This continues, with each child node, branching off into more child nodes.</p>
+<p>Nodes with linked child nodes are called internal nodes while those without child nodes are external nodes. A common type of tree is the “binary search tree” which is used to easily search stored data.</p>
+<p>These search operations are highly efficient, as its search duration is dependent not on the number of nodes but on the number of levels down the tree.</p>
+<p><img src="https://www.educative.io/api/page/6094484883374080/image/download/4860454879887360" /></p>
+<p>This type of tree is defined by four strict rules:</p>
+<ol type="1">
+<li>The left subtree contains only nodes with elements lesser than the root.</li>
+<li>The right subtree contains only nodes with elements greater than the root.</li>
+<li>Left and right subtrees must also be a binary search tree. They must follow the above rules with the “root” of their tree.</li>
+<li>There can be no duplicate nodes, i.e. no two nodes can have the same value.</li>
+</ol>
+<p>Advantages</p>
+<ul>
+<li>Ideal for storing hierarchical relationships</li>
+<li>Dynamic size</li>
+<li>Quick at insert and delete operations</li>
+<li>In a binary search tree, inserted nodes are sequenced immediately.</li>
+<li>Binary search trees are efficient at searches; length is only O(height)O(height).</li>
+</ul>
+<p>Disadvantages</p>
+<ul>
+<li>Slow to rearrange nodes</li>
+<li>Child nodes hold no information about their parent node</li>
+<li>Binary search trees are not as fast as the more complicated hash table</li>
+<li>Binary search trees can degenerate into linear search (scanning all elements) if not implemented with balanced subtrees.</li>
+</ul>
+<h3 id="applications-3">Applications</h3>
+<ul>
+<li>Storing hierarchical data such as a file location.</li>
+<li>Binary search trees are excellent for tasks needing searching or ordering of data.</li>
+</ul>
+<blockquote>
+<p><em>Enjoying the article? Scroll down to <a href="https://www.educative.io/blog/blog-newsletter-annoucement">sign up</a> for our free, bi-monthly newsletter.</em></p>
+</blockquote>
+<h2 id="graphs">5. Graphs</h2>
+<p>Graphs are a relation-based data structure helpful for storing web-like relationships. Each node, or vertex, as they’re called in graphs, has a title (A, B, C, etc.), a value contained within, and a list of links (called edges) it has with other vertices.</p>
+<p><img src="https://www.educative.io/api/page/6094484883374080/image/download/4912691077447680" /></p>
+<p>In the above example, each circle is a vertex, and each line is an edge. If produced in writing, this structure would look like:</p>
+<p><em>V = {a, b, c, d}</em></p>
+<p><em>E = {ab, ac, bc, cd}</em></p>
+<p>While hard to visualize at first, this structure is invaluable in conveying relationship charts in textual form, anything from circuitry to train networks.</p>
+<p>Advantages</p>
+<ul>
+<li>Can quickly convey visuals over text</li>
+<li>Usable to model a diverse number of subjects so long as they contain a relational structure</li>
+</ul>
+<p>Disadvantages</p>
+<ul>
+<li>At a higher level, text can be time-consuming to convert to an image.</li>
+<li>It can be difficult to see the existing edges or how many edges a given vertex has connected to it</li>
+</ul>
+<h3 id="applications-4">Applications</h3>
+<ul>
+<li>Network representations</li>
+<li>Modeling social networks, such as Facebook.</li>
+</ul>
+<h2 id="hash-tables-map">6. Hash Tables (Map)</h2>
+<p>Hash tables are a complex data structure capable of storing large amounts of information and retrieving specific elements efficiently. This data structure relies on the concept of key/value pairs, where the “key” is a searched string and the “value” is the data paired with that key.</p>
+<p><img src="https://www.educative.io/api/page/6094484883374080/image/download/6745911163092992" /> Each searched key is converted from its string form into a numerical value, called a hash, using a predefined hash function. This hash then points to a storage bucket – a smaller subgroup within the table. It then searches the bucket for the originally entered key and returns the value associated with that key.</p>
+<p>Advantages</p>
+<ul>
+<li>Key can be in any form, while array’s indices must be integers</li>
+<li>Highly efficient search function</li>
+<li>Constant number of operations for each search</li>
+<li>Constant cost for insertion or deletion operations</li>
+</ul>
+<p>Disadvantages</p>
+<ul>
+<li>Collisions: an error caused when two keys convert to the same hash code or two hash codes point to the same value.</li>
+<li>These errors can be common and often require an overhaul of the hash function.</li>
+</ul>
+<h3 id="applications-5">Applications</h3>
+<ul>
+<li>Database storage</li>
+<li>Address lookups by name</li>
+</ul>
+<p>Each hash table can be very different, from the types of the keys and values, to the way their hash functions work. Due to these differences and the multi-layered aspects of a hash table, it is nearly impossible to encapsulate so generally.</p>
+<h2 id="data-structure-interview-questions">Data structure interview questions</h2>
+<p>For many developers and programmers, data structures are most important for <a href="https://www.educative.io/blog/acing-the-javascript-interview-top-questions-explained">cracking Javascript coding interviews</a>. Questions and problems on data structures are fundamental to modern-day coding interviews. In fact, they have a lot to say over your hireability and entry-level rate as a candidate.</p>
+<p>Today, we will be going over seven common coding interview questions for JavaScript data structures, one for each of the data structures we discussed above. Each will also discuss its time complexity based on the <a href="https://www.educative.io/blog/a-big-o-primer-for-beginning-devs">BigO notation</a> theory.</p>
+<h3 id="array-remove-all-even-integers-from-an-array">Array: Remove all even integers from an array</h3>
+<p>Problem statement: Implement a function <code>removeEven(arr)</code>, which takes an array arr in its input and removes all the even elements from a given array.</p>
+<p>Input: An array of random integers</p>
+<pre><code>[1,2,4,5,10,6,3]</code></pre>
+<p>Output: an array containing only odd integers</p>
+<pre><code>[1,5,3]</code></pre>
+<p>There are two ways you could solve this coding problem in an interview. Let’s discuss each.</p>
+<h4 id="solution-1-doing-it-by-hand">Solution #1: Doing it “by hand”</h4>
+<p>function removeEven(arr) {</p>
+<p>var odds = []</p>
+<p>for (let number of arr) {</p>
+<p>if (number % 2 != 0) // Check if the item in the list is NOT even (‘%’ is the modulus symbol!)</p>
+<p>odds.push(number) //If it isn’t even append it to the empty list</p>
+<p>}</p>
+<p>return odds // Return the new list</p>
+<p>}</p>
+<p>console.log(removeEven([3, 2, 41, 3, 34]))</p>
+<p>Run</p>
+<p>This approach starts with the first element of the array. If that current element is not even, it pushes this element into a new array. If it is even, it will move to the next element, repeating until it reaches the end of the array. In regards to time complexity, since the entire array has to be iterated over, this solution is in <em>O(n)O(n).</em></p>
+<h4 id="solution-2-using-filter-and-lambda-function">Solution #2: Using filter() and lambda function</h4>
+<p>function removeEven(arr) {</p>
+<p>return arr.filter((v =&gt; (v % 2) != 0))</p>
+<p>}</p>
+<p>console.log(removeEven([3,2,41,3,34]))</p>
+<p>This solution also begins with the first element and checks if it is even. If it is even, it filters out this element. If not, skips to the next element, repeating this process until it reaches the end of the array.</p>
+<p>The filter function uses lambda or arrow functions, which use shorter, simpler syntax. The filter filters out the element for which the lambda function returns false. The time complexity of this is the same as the time complexity of the previous solution.</p>
+<h3 id="stack-check-for-balanced-parentheses-using-a-stack">Stack: Check for balanced parentheses using a stack</h3>
+<p>Problem statement: Implement the <code>isBalanced()</code> function to take a string containing only curly <code>{}</code>, square <code>[]</code>, and round <code>()</code> parentheses. The function should tell us if all the parentheses in the string are balanced. This means that every opening parenthesis will have a closing one. For example, <code>{[]}</code> is balanced, but <code>{[}]</code> is not.</p>
+<p>Input: A string consisting solely of <code>(</code>, <code>)</code>, <code>{</code>, <code>}</code>, <code>[</code> and <code>]</code></p>
+<pre><code>exp = &quot;{[({})]}&quot;</code></pre>
+<p>Output: Returns <code>False</code> if the expression doesn’t have balanced parentheses. If it does, the function returns <code>True</code>.</p>
+<pre><code>True</code></pre>
+<p>To solve this problem, we can simply use a stack of characters. Look below at the code to see how it works.</p>
+<p>index.js</p>
+<p>Stack.js</p>
+<p>10</p>
+<p>11</p>
+<p>12</p>
+<p>13</p>
+<p>14</p>
+<p>15</p>
+<p>16</p>
+<p>17</p>
+<p>18</p>
+<p>19</p>
+<p>20</p>
+<p>21</p>
+<p>22</p>
+<p>23</p>
+<p>24</p>
+<p>25</p>
+<p>26</p>
+<p>27</p>
+<p>28</p>
+<p>29</p>
+<p>30</p>
+<p>31</p>
+<p>“use strict”;</p>
+<p>module.exports = class Stack {</p>
+<p>constructor() {</p>
+<p>this.items = [];</p>
+<p>this.top = null;</p>
+<p>}</p>
+<p>getTop() {</p>
+<p>if (this.items.length == 0)</p>
+<p>return null;</p>
+<p>return this.top;</p>
+<p>}</p>
+<p>isEmpty() {</p>
+<p>return this.items.length == 0;</p>
+<p>}</p>
+<p>size() {</p>
+<p>return this.items.length;</p>
+<p>}</p>
+<p>push(element) {</p>
+<p>this.items.push(element);</p>
+<p>this.top = element;</p>
+<p>}</p>
+<p>pop() {</p>
+<p>if (this.items.length != 0) {</p>
+<p>if (this.items.length == 1) {</p>
+<p>this.top = null;</p>
+<p>return this.items.pop();</p>
+<p>Run</p>
+<p>This process will iterate over the string one character at a time. We can determine that the string is unbalanced based on two factors:</p>
+<ol type="1">
+<li>The stack is empty.</li>
+<li>The top element in the stack is not the right type.</li>
+</ol>
+<p>If either of these conditions is true, we return <code>False</code>. If the parenthesis is an opening parenthesis, it is pushed into the stack. If by the end all are balanced, the stack will be empty. If it is not empty, we return <code>False</code>. Since we traverse the string exp only once, the time complexity is <em>O(n)</em>.</p>
+<h3 id="queue-generate-binary-numbers-from-1-to-n">Queue: Generate Binary Numbers from 1 to n</h3>
+<p>Problem statement: Implement a function <code>findBin(n)</code>, which will generate binary numbers from <code>1</code> to <code>n</code> in the form of a string using a queue.</p>
+<p>Input: A positive integer n</p>
+<pre><code>n = 3</code></pre>
+<p>Output: Returns binary numbers in the form of strings from <code>1</code> up to <code>n</code></p>
+<pre><code>result = [&quot;1&quot;,&quot;10&quot;,&quot;11&quot;]</code></pre>
+<p>The easiest way to solve this problem is using a queue to generate new numbers from previous numbers. Let’s break that down.</p>
+<p>index.js</p>
+<p>Queue.js</p>
+<p>10</p>
+<p>11</p>
+<p>12</p>
+<p>13</p>
+<p>14</p>
+<p>15</p>
+<p>16</p>
+<p>17</p>
+<p>18</p>
+<p>19</p>
+<p>20</p>
+<p>21</p>
+<p>22</p>
+<p>23</p>
+<p>24</p>
+<p>25</p>
+<p>26</p>
+<p>27</p>
+<p>28</p>
+<p>29</p>
+<p>30</p>
+<p>31</p>
+<p>“use strict”;</p>
+<p>module.exports = class Queue {</p>
+<p>constructor() {</p>
+<p>this.items = [];</p>
+<p>this.front = null;</p>
+<p>this.back = null;</p>
+<p>}</p>
+<p>isEmpty() {</p>
+<p>return this.items.length == 0;</p>
+<p>}</p>
+<p>getFront() {</p>
+<p>if (this.items.length != 0) {</p>
+<p>return this.items[0];</p>
+<p>} else</p>
+<p>return null;</p>
+<p>}</p>
+<p>size() {</p>
+<p>return this.items.length;</p>
+<p>}</p>
+<p>enqueue(element) {</p>
+<p>this.items.push(element);</p>
+<p>}</p>
+<p>Run</p>
+<p>The key is to generate consecutive binary numbers by appending 0 and 1 to previous binary numbers. To clarify,</p>
+<ul>
+<li>10 and 11 can be generated if 0 and 1 are appended to 1.</li>
+<li>100 and 101 are generated if 0 and 1 are appended to 10.</li>
+</ul>
+<p>Once we generate a binary number, it is then enqueued to a queue so that new binary numbers can be generated if we append 0 and 1 when that number will be enqueued.</p>
+<p>Since a queue follows the <em>First-In First-Out</em> property, the enqueued binary numbers are dequeued so that the resulting array is mathematically correct.</p>
+<p>Look at the code above. On line 7, <code>1</code> is enqueued. To generate the sequence of binary numbers, a number is dequeued and stored in the array <code>result</code>. On lines 11-12, we append <code>0</code> and <code>1</code> to produce the next numbers.</p>
+<p>Those new numbers are also enqueued at lines 14-15. The queue will take integer values, so it converts the string to an integer as it is enqueued.</p>
+<p>The time complexity of this solution is in <em>O(n)O(n)</em> since constant-time operations are executed for n times.</p>
+<h3 id="linked-list-reverse-a-linked-list">Linked List: Reverse a linked list</h3>
+<p>Problem statement: Write the <code>reverse</code> function to take a singly linked list and reverse it in place.</p>
+<p>Input: a singly linked list</p>
+<pre><code>LinkedList = 0-&gt;1-&gt;2-&gt;3-4</code></pre>
+<p>Output: a reverse linked list</p>
+<pre><code>LinkedList = 4-&gt;3-&gt;2-&gt;1-&gt;0</code></pre>
+<p>The easiest way to solve this problem is by using iterative pointer manipulation. Let’s take a look.</p>
+<p>index.js</p>
+<p>LinkedList.js</p>
+<p>Node.js</p>
+<p>10</p>
+<p>11</p>
+<p>12</p>
+<p>13</p>
+<p>14</p>
+<p>15</p>
+<p>16</p>
+<p>17</p>
+<p>18</p>
+<p>19</p>
+<p>20</p>
+<p>21</p>
+<p>22</p>
+<p>23</p>
+<p>24</p>
+<p>25</p>
+<p>26</p>
+<p>27</p>
+<p>28</p>
+<p>29</p>
+<p>30</p>
+<p>31</p>
+<p>“use strict”;</p>
+<p>const Node = require(‘./Node.js’);</p>
+<p>module.exports = class LinkedList {</p>
+<p>constructor() {</p>
+<p>this.head = null;</p>
+<p>}</p>
+<p>//Insertion At Head</p>
+<p>insertAtHead(newData) {</p>
+<p>let tempNode = new Node(newData);</p>
+<p>tempNode.nextElement = this.head;</p>
+<p>this.head = tempNode;</p>
+<p>return this; //returning the updated list</p>
+<p>}</p>
+<p>isEmpty() {</p>
+<p>return (this.head == null);</p>
+<p>}</p>
+<p>//function to print the linked list</p>
+<p>printList() {</p>
+<p>if (this.isEmpty()) {</p>
+<p>console.log(“Empty List”);</p>
+<p>return false;</p>
+<p>} else {</p>
+<p>let temp = this.head;</p>
+<p>while (temp != null) {</p>
+<p>process.stdout.write(String(temp.data));</p>
+<p>process.stdout.write(" -&gt; ");</p>
+<p>temp = temp.nextElement;</p>
+<p>Run</p>
+<p>We use a loop to iterate through the input list. For a <code>current</code> node, its link with the <code>previous</code> node is reversed. then, <code>next</code> stores the next node in the list. Let’s break that down by line.</p>
+<ul>
+<li>Line 22- Store the <code>current</code> node’s <code>nextElement</code> in <code>next</code></li>
+<li>Line 23 - Set <code>current</code> node’s <code>nextElement</code> to <code>previous</code></li>
+<li>Line 24 - Make the <code>current</code> node the new <code>previous</code> for the next iteration</li>
+<li>Line 25 - Use <code>next</code> to go to the next node</li>
+<li>Line 29 - We reset the <code>head</code> pointer to point at the last node</li>
+</ul>
+<p>Since the list is traversed only once, the algorithm runs in <em>O(n)</em>.</p>
+<h3 id="tree-find-the-minimum-value-in-a-binary-search-tree">Tree: Find the Minimum Value in a Binary Search Tree</h3>
+<p>Problem statement: Use the <code>findMin(root)</code> function to find the minimum value in a Binary Search Tree.</p>
+<p>Input: a root node for a binary search tree</p>
+<pre><code>bst = {    6 -&gt; 4,9    4 -&gt; 2,5    9 -&gt; 8,12    12 -&gt; 10,14}where parent -&gt; leftChild,rightChild</code></pre>
+<p>Output: the smallest integer value from that binary search tree</p>
+<pre><code>2</code></pre>
+<p>Let’s look at an easy solution for this problem.</p>
+<h4 id="solution-iterative-findmin">Solution: Iterative <code>findMin( )</code></h4>
+<p>This solution begins by checking if the root is <code>null</code>. It returns <code>null</code> if so. It then moves to the left subtree and continues with each node’s left child until the left-most child is reached.</p>
+<p>index.js</p>
+<p>BinarySearchTree.js</p>
+<p>Node.js</p>
+<p>10</p>
+<p>11</p>
+<p>12</p>
+<p>13</p>
+<p>14</p>
+<p>15</p>
+<p>16</p>
+<p>17</p>
+<p>18</p>
+<p>19</p>
+<p>20</p>
+<p>21</p>
+<p>22</p>
+<p>23</p>
+<p>24</p>
+<p>25</p>
+<p>26</p>
+<p>27</p>
+<p>28</p>
+<p>29</p>
+<p>30</p>
+<p>31</p>
+<p>“use strict”;</p>
+<p>const Node = require(‘./Node.js’);</p>
+<p>module.exports = class BinarySearchTree {</p>
+<p>constructor(rootValue) {</p>
+<p>this.root = new Node(rootValue);</p>
+<p>}</p>
+<p>insert(currentNode, newValue) {</p>
+<p>if (currentNode === null) {</p>
+<p>currentNode = new Node(newValue);</p>
+<p>} else if (newValue &lt; currentNode.val) {</p>
+<p>currentNode.leftChild = this.insert(currentNode.leftChild, newValue);</p>
+<p>} else {</p>
+<p>currentNode.rightChild = this.insert(currentNode.rightChild, newValue);</p>
+<p>}</p>
+<p>return currentNode;</p>
+<p>}</p>
+<p>insertBST(newValue) {</p>
+<p>if(this.root==null){</p>
+<p>this.root=new Node(newValue);</p>
+<p>return;</p>
+<p>}</p>
+<p>this.insert(this.root, newValue);</p>
+<p>}</p>
+<p>preOrderPrint(currentNode) {</p>
+<p>if (currentNode !== null) {</p>
+<p>console.log(currentNode.val);</p>
+<p>this.preOrderPrint(currentNode.leftChild);</p>
+<p>Run</p>
+<h3 id="graph-remove-edge">Graph: Remove Edge</h3>
+<p>Problem statement: Implement the removeEdge function to take a source and a destination as arguments. It should detect if an edge exists between them.</p>
+<p>Input: A graph, a source, and a destination</p>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjA4MCIgaGVpZ2h0PSIyOTEwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIvPg==" /></p>
+<figure>
+<img src="https://www.educative.io/cdn-cgi/image/f=auto,fit=contain,w=600/api/page/6094484883374080/image/download/6576135669284864" alt="widget" /><figcaption>widget</figcaption>
+</figure>
+<figure>
+<img src="https://www.educative.io/cdn-cgi/image/f=auto,fit=contain,w=300,q=10/api/page/6094484883374080/image/download/6576135669284864" alt="widget" /><figcaption>widget</figcaption>
+</figure>
+<p>Output: A graph with the edge between the source and the destination removed.</p>
+<pre><code>removeEdge(graph, 2, 3)</code></pre>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjA5MCIgaGVpZ2h0PSIyOTIwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIvPg==" /></p>
+<figure>
+<img src="https://www.educative.io/cdn-cgi/image/f=auto,fit=contain,w=600/api/page/6094484883374080/image/download/6038590984290304" alt="widget" /><figcaption>widget</figcaption>
+</figure>
+<figure>
+<img src="https://www.educative.io/cdn-cgi/image/f=auto,fit=contain,w=300,q=10/api/page/6094484883374080/image/download/6038590984290304" alt="widget" /><figcaption>widget</figcaption>
+</figure>
+<p>The solution to this problem is fairly simple: we use Indexing and deletion. Take a look</p>
+<p>index.js</p>
+<p>Graph.js</p>
+<p>LinkedList.js</p>
+<p>Node.js</p>
+<p>10</p>
+<p>11</p>
+<p>12</p>
+<p>13</p>
+<p>14</p>
+<p>15</p>
+<p>16</p>
+<p>17</p>
+<p>18</p>
+<p>19</p>
+<p>20</p>
+<p>21</p>
+<p>22</p>
+<p>23</p>
+<p>24</p>
+<p>25</p>
+<p>26</p>
+<p>27</p>
+<p>28</p>
+<p>29</p>
+<p>30</p>
+<p>31</p>
+<p>“use strict”;</p>
+<p>const LinkedList = require(‘./LinkedList.js’);</p>
+<p>const Node = require(‘./Node.js’);</p>
+<p>module.exports = class Graph {</p>
+<p>constructor(vertices) {</p>
+<p>this.vertices = vertices;</p>
+<p>this.list = [];</p>
+<p>var it;</p>
+<p>for (it = 0; it &lt; vertices; it++) {</p>
+<p>let temp = new LinkedList();</p>
+<p>this.list.push(temp);</p>
+<p>}</p>
+<p>}</p>
+<p>addEdge(source, destination) {</p>
+<p>if (source &lt; this.vertices &amp;&amp; destination &lt; this.vertices)</p>
+<p>this.list[source].insertAtHead(destination);</p>
+<p>return this;</p>
+<p>}</p>
+<p>printGraph() {</p>
+<p>console.log(“&gt;&gt;Adjacency List of Directed Graph&lt;&lt;”);</p>
+<p>var i;</p>
+<p>for (i = 0; i &lt; this.list.length; i++) {</p>
+<p>process.stdout.write(“|” + String(i) + “| =&gt;”);</p>
+<p>Run</p>
+<p>Since our vertices are stored in an array, we can access the <code>source</code> linked list. We then call the <code>delete</code> function for linked lists. The time complexity for this solution is O(E) since we may have to traverse E edges.</p>
+<h3 id="hash-table-convert-max-heap-to-min-heap">Hash Table: Convert Max-Heap to Min-Heap</h3>
+<p>Problem statement: Implement the function <code>convertMax(maxHeap)</code> to convert a binary max-heap into a binary min-heap. <code>maxHeap</code> should be an array in the <code>maxHeap</code> format, i.e the parent is greater than its children.</p>
+<p>Input: a Max-Heap</p>
+<pre><code>maxHeap = [9,4,7,1,-2,6,5]</code></pre>
+<p>Output: returns the converted array</p>
+<pre><code>result = [-2,1,5,9,4,6,7]</code></pre>
+<p>To solve this problem, we must min heapify all parent nodes. Take a look.</p>
+<p>10</p>
+<p>11</p>
+<p>12</p>
+<p>13</p>
+<p>14</p>
+<p>15</p>
+<p>16</p>
+<p>17</p>
+<p>18</p>
+<p>19</p>
+<p>20</p>
+<p>21</p>
+<p>22</p>
+<p>23</p>
+<p>24</p>
+<p>25</p>
+<p>26</p>
+<p>27</p>
+<p>function minHeapify(heap, index) {</p>
+<p>var left = index * 2;</p>
+<p>var right = (index * 2) + 1;</p>
+<p>var smallest = index;</p>
+<p>if ((heap.length &gt; left) &amp;&amp; (heap[smallest] &gt; heap[left])) {</p>
+<p>smallest = left</p>
+<p>}</p>
+<p>if ((heap.length &gt; right) &amp;&amp; (heap[smallest] &gt; heap[right]))</p>
+<p>smallest = right</p>
+<p>if (smallest != index) {</p>
+<p>var tmp = heap[smallest]</p>
+<p>heap[smallest] = heap[index]</p>
+<p>heap[index] = tmp</p>
+<p>minHeapify(heap, smallest)</p>
+<p>}</p>
+<p>return heap;</p>
+<p>}</p>
+<p>function convertMax(maxHeap) {</p>
+<p>for (var i = Math.floor((maxHeap.length) / 2); i &gt; -1; i–)</p>
+<p>maxHeap = minHeapify(maxHeap, i)</p>
+<p>return maxHeap</p>
+<p>}</p>
+<p>var maxHeap = [9,4,7,1,-2,6,5]</p>
+<p>console.log(convertMax(maxHeap))</p>
+<p>Run</p>
+<p>We consider <code>maxHeap</code> to be a regular array and reorder it to accurately represent a min-heap. You can see this done in the code above. The <code>convertMax()</code> function then restores the heap property on all nodes from the lowest parent node by calling the <code>minHeapify()</code> function. In regards to time complexity, this solution takes <em>O(nlog(n))O(nlog(n))</em> time.</p>
+</body>
+</html>

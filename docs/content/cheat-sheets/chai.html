@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2022-01-03" />
+  <title>title</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">title</h1>
+<p class="subtitle">subtitle</p>
+<p class="date">2022-01-03</p>
+</header>
+<hr />
+<p>title: Chai.js category: JavaScript libraries</p>
+<p>weight: -3 version: chai v4.x description: | expect(x).to.be.equal(y) 〉 assert.equal(x, y) 〉 .to.be.true 〉 jQuery, assertions, TDD and BDD, and other Chai examples.</p>
+<hr />
+<h3 id="assert">Assert</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">const</span> <span class="op">{</span> assert <span class="op">}</span> <span class="op">=</span> <span class="at">require</span>(<span class="st">&#39;chai&#39;</span>)<span class="op">;</span></a></code></pre></div>
+<p>{: .-setup}</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="at">assert</span>(val)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-2" title="2"><span class="va">assert</span>.<span class="at">fail</span>(actual<span class="op">,</span> expected)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-3" title="3"><span class="va">assert</span>.<span class="at">ok</span>(val)<span class="op">;</span> <span class="co">// is truthy</span></a>
+<a class="sourceLine" id="cb2-4" title="4"><span class="va">assert</span>.<span class="at">equal</span>(actual<span class="op">,</span> expected)<span class="op">;</span> <span class="co">// compare with ==</span></a>
+<a class="sourceLine" id="cb2-5" title="5"><span class="va">assert</span>.<span class="at">strictEqual</span>(actual<span class="op">,</span> expected)<span class="op">;</span> <span class="co">// compare with ===</span></a>
+<a class="sourceLine" id="cb2-6" title="6"><span class="va">assert</span>.<span class="at">deepEqual</span>(actual<span class="op">,</span> expected)<span class="op">;</span> <span class="co">// deep equal check</span></a></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb3-1" title="1"><span class="va">assert</span>.<span class="at">isTrue</span>(val)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-2" title="2"><span class="va">assert</span>.<span class="at">isFalse</span>(val)<span class="op">;</span></a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb4-1" title="1"><span class="va">assert</span>.<span class="at">isNull</span>(val)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-2" title="2"><span class="va">assert</span>.<span class="at">isNotNull</span>(val)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-3" title="3"><span class="va">assert</span>.<span class="at">isUndefined</span>(val)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-4" title="4"><span class="va">assert</span>.<span class="at">isDefined</span>(val)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-5" title="5"><span class="va">assert</span>.<span class="at">isFunction</span>(val)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-6" title="6"><span class="va">assert</span>.<span class="at">isObject</span>(val)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-7" title="7"><span class="va">assert</span>.<span class="at">isArray</span>(val)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-8" title="8"><span class="va">assert</span>.<span class="at">isString</span>(val)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-9" title="9"><span class="va">assert</span>.<span class="at">isNumber</span>(val)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-10" title="10"><span class="va">assert</span>.<span class="at">isBoolean</span>(val)<span class="op">;</span></a></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb5-1" title="1"><span class="va">assert</span>.<span class="at">typeOf</span>(<span class="ss">/tea/</span><span class="op">,</span> <span class="st">&#39;regexp&#39;</span>)<span class="op">;</span> <span class="co">// Object.prototype.toString()</span></a>
+<a class="sourceLine" id="cb5-2" title="2"><span class="va">assert</span>.<span class="at">instanceOf</span>(chai<span class="op">,</span> Tea)<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-3" title="3"><span class="va">assert</span>.<span class="at">include</span>([a<span class="op">,</span> b<span class="op">,</span> c]<span class="op">,</span> a)<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-4" title="4"><span class="va">assert</span>.<span class="at">match</span>(val<span class="op">,</span> <span class="ss">/regexp/</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-5" title="5"><span class="va">assert</span>.<span class="at">property</span>(obj<span class="op">,</span> <span class="st">&#39;tea&#39;</span>)<span class="op">;</span> <span class="co">// &#39;tea&#39; in object</span></a>
+<a class="sourceLine" id="cb5-6" title="6"><span class="va">assert</span>.<span class="at">deepProperty</span>(obj<span class="op">,</span> <span class="st">&#39;tea.green&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-7" title="7"><span class="va">assert</span>.<span class="at">propertyVal</span>(person<span class="op">,</span> <span class="st">&#39;name&#39;</span><span class="op">,</span> <span class="st">&#39;John&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-8" title="8"><span class="va">assert</span>.<span class="at">deepPropertyVal</span>(post<span class="op">,</span> <span class="st">&#39;author.name&#39;</span><span class="op">,</span> <span class="st">&#39;John&#39;</span>)<span class="op">;</span></a></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb6-1" title="1"><span class="va">assert</span>.<span class="at">lengthOf</span>(object<span class="op">,</span> <span class="dv">3</span>)</a>
+<a class="sourceLine" id="cb6-2" title="2"><span class="va">assert</span>.<span class="at">throws</span>(<span class="kw">function</span>() <span class="op">{</span> ... <span class="op">}</span>)</a>
+<a class="sourceLine" id="cb6-3" title="3"><span class="va">assert</span>.<span class="at">throws</span>(<span class="kw">function</span>() <span class="op">{</span> ... <span class="op">},</span> <span class="ss">/reference error/</span>)</a>
+<a class="sourceLine" id="cb6-4" title="4"><span class="va">assert</span>.<span class="at">doesNotThrow</span></a></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb7-1" title="1"><span class="va">assert</span>.<span class="at">operator</span>(<span class="dv">1</span><span class="op">,</span> <span class="st">&#39;&lt;&#39;</span><span class="op">,</span> <span class="dv">2</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb7-2" title="2"><span class="va">assert</span>.<span class="at">closeTo</span>(actual<span class="op">,</span> expected)<span class="op">;</span></a></code></pre></div>
+<p>See: <a href="http://chaijs.com/api/assert/">Assert API</a> <em>(chaijs.com)</em></p>
+<h3 id="bdd-syntax">BDD syntax</h3>
+<div class="sourceCode" id="cb8"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb8-1" title="1"><span class="kw">const</span> <span class="op">{</span> expect <span class="op">}</span> <span class="op">=</span> <span class="at">require</span>(<span class="st">&#39;chai&#39;</span>)<span class="op">;</span></a></code></pre></div>
+<p>{: .-setup}</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb9-1" title="1"><span class="at">expect</span>(object)</a>
+<a class="sourceLine" id="cb9-2" title="2">    .<span class="va">to</span>.<span class="at">equal</span>(expected)</a>
+<a class="sourceLine" id="cb9-3" title="3">    .<span class="va">to</span>.<span class="at">eql</span>(expected) <span class="co">// deep equality</span></a>
+<a class="sourceLine" id="cb9-4" title="4">    .<span class="va">to</span>.<span class="va">deep</span>.<span class="at">equal</span>(expected) <span class="co">// same as .eql</span></a>
+<a class="sourceLine" id="cb9-5" title="5">    .<span class="va">to</span>.<span class="va">be</span>.<span class="at">a</span>(<span class="st">&#39;string&#39;</span>)</a>
+<a class="sourceLine" id="cb9-6" title="6">    .<span class="va">to</span>.<span class="at">include</span>(val)<span class="op">;</span></a></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb10-1" title="1">  .<span class="va">be</span>.<span class="at">ok</span>(val)</a>
+<a class="sourceLine" id="cb10-2" title="2">  .<span class="va">be</span>.<span class="at">true</span></a>
+<a class="sourceLine" id="cb10-3" title="3">  .<span class="va">be</span>.<span class="at">false</span></a>
+<a class="sourceLine" id="cb10-4" title="4">  .<span class="va">to</span>.<span class="at">exist</span></a></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb11-1" title="1">  .<span class="va">to</span>.<span class="va">be</span>.<span class="at">null</span></a>
+<a class="sourceLine" id="cb11-2" title="2">  .<span class="va">to</span>.<span class="va">be</span>.<span class="at">undefined</span></a>
+<a class="sourceLine" id="cb11-3" title="3">  .<span class="va">to</span>.<span class="va">be</span>.<span class="at">empty</span></a>
+<a class="sourceLine" id="cb11-4" title="4">  .<span class="va">to</span>.<span class="va">be</span>.<span class="at">arguments</span></a>
+<a class="sourceLine" id="cb11-5" title="5">  .<span class="va">to</span>.<span class="va">be</span>.<span class="at">function</span></a>
+<a class="sourceLine" id="cb11-6" title="6">  .<span class="va">to</span>.<span class="va">be</span>.<span class="at">instanceOf</span></a></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb12-1" title="1">  .<span class="va">to</span>.<span class="va">be</span>.<span class="at">gt</span>(<span class="dv">5</span>)  <span class="co">// aka: .above .greaterThan</span></a>
+<a class="sourceLine" id="cb12-2" title="2">  .<span class="va">to</span>.<span class="va">be</span>.<span class="at">gte</span>(<span class="dv">5</span>) <span class="co">// aka: .at.least</span></a>
+<a class="sourceLine" id="cb12-3" title="3">  .<span class="va">to</span>.<span class="va">be</span>.<span class="at">lt</span>(<span class="dv">5</span>)  <span class="co">// aka: .below</span></a></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb13-1" title="1">  .<span class="va">to</span>.<span class="at">respondTo</span>(<span class="st">&#39;bar&#39;</span>)</a>
+<a class="sourceLine" id="cb13-2" title="2">  .<span class="va">to</span>.<span class="at">satisfy</span>((n) <span class="kw">=&gt;</span> n <span class="op">&gt;</span> <span class="dv">0</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb14-1" title="1">  .<span class="va">to</span>.<span class="va">have</span>.<span class="at">members</span>([<span class="dv">2</span><span class="op">,</span> <span class="dv">3</span><span class="op">,</span> <span class="dv">4</span>])</a>
+<a class="sourceLine" id="cb14-2" title="2">  .<span class="va">to</span>.<span class="va">have</span>.<span class="at">keys</span>([<span class="st">&#39;foo&#39;</span>])</a>
+<a class="sourceLine" id="cb14-3" title="3">  .<span class="va">to</span>.<span class="va">have</span>.<span class="at">key</span>(<span class="st">&#39;foo&#39;</span>)</a>
+<a class="sourceLine" id="cb14-4" title="4">  .<span class="va">to</span>.<span class="va">have</span>.<span class="at">lengthOf</span>(<span class="dv">3</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb15-1" title="1"><span class="at">expect</span>(() <span class="kw">=&gt;</span> <span class="op">{</span> ··· <span class="op">}</span>)</a>
+<a class="sourceLine" id="cb15-2" title="2">  .<span class="va">to</span>.<span class="at">throw</span>(<span class="ss">/not a function/</span>)</a></code></pre></div>
+<p>See: <a href="http://chaijs.com/api/bdd/">BDD</a> <em>(chaijs.com)</em></p>
+<h3 id="should-chains">Should: chains</h3>
+<pre><code>.to .be .been .is .that .and .have .with .at .of .same</code></pre>
+<p>These don’t do anything and can be chained.</p>
+<h3 id="should-not">Should not</h3>
+<div class="sourceCode" id="cb17"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb17-1" title="1"><span class="at">expect</span>(object).<span class="va">not</span>.<span class="at">equal</span>(<span class="st">&#39;x&#39;</span>)<span class="op">;</span></a></code></pre></div>
+<h2 id="chai-with-jquery">Chai with jQuery</h2>
+<h3 id="using-chai-jquery">Using chai-jquery</h3>
+<div class="sourceCode" id="cb18"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb18-1" title="1"><span class="va">global</span>.<span class="at">jQuery</span> <span class="op">=</span> ···</a>
+<a class="sourceLine" id="cb18-2" title="2"><span class="va">chai</span>.<span class="at">use</span>(<span class="at">require</span>(<span class="st">&#39;chai-jquery&#39;</span>))</a></code></pre></div>
+<p>{: .-setup}</p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb19-1" title="1"><span class="at">expect</span>($body).<span class="va">have</span>.<span class="at">attr</span>(<span class="st">&#39;foo&#39;</span>).<span class="va">have</span>.<span class="at">prop</span>(<span class="st">&#39;disabled&#39;</span>).<span class="va">have</span>.<span class="at">css</span>(<span class="st">&#39;background&#39;</span>).<span class="va">have</span>.<span class="at">css</span>(<span class="st">&#39;background-color&#39;</span><span class="op">,</span> <span class="st">&#39;#ffffff&#39;</span>).<span class="va">have</span>.<span class="at">data</span>(<span class="st">&#39;foo&#39;</span>)<span class="op">;</span></a></code></pre></div>
+<div class="sourceCode" id="cb20"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb20-1" title="1">  .<span class="va">have</span>.<span class="at">class</span>(<span class="st">&#39;active&#39;</span>)</a>
+<a class="sourceLine" id="cb20-2" title="2">  .<span class="va">have</span>.<span class="at">id</span>(<span class="st">&#39;id&#39;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb21"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb21-1" title="1">  .<span class="va">have</span>.<span class="at">html</span>(<span class="st">&#39;&lt;em&gt;hi&lt;/em&gt;&#39;</span>)</a>
+<a class="sourceLine" id="cb21-2" title="2">  .<span class="va">have</span>.<span class="at">text</span>(<span class="st">&#39;hello&#39;</span>)</a>
+<a class="sourceLine" id="cb21-3" title="3">  .<span class="va">have</span>.<span class="at">value</span>(<span class="st">&#39;2013&#39;</span>)</a></code></pre></div>
+<h3 id="continued">Continued</h3>
+<div class="sourceCode" id="cb22"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb22-1" title="1"><span class="at">expect</span>($body)<span class="op">;</span></a></code></pre></div>
+<div class="sourceCode" id="cb23"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb23-1" title="1">  .<span class="va">be</span>.<span class="at">visible</span></a>
+<a class="sourceLine" id="cb23-2" title="2">  .<span class="va">be</span>.<span class="at">hidden</span></a></code></pre></div>
+<div class="sourceCode" id="cb24"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb24-1" title="1">  .<span class="va">be</span>.<span class="at">checked</span></a>
+<a class="sourceLine" id="cb24-2" title="2">  .<span class="va">be</span>.<span class="at">selected</span></a></code></pre></div>
+<div class="sourceCode" id="cb25"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb25-1" title="1">  .<span class="va">be</span>.<span class="at">enabled</span></a>
+<a class="sourceLine" id="cb25-2" title="2">  .<span class="va">be</span>.<span class="at">disabled</span></a></code></pre></div>
+<div class="sourceCode" id="cb26"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb26-1" title="1">  .<span class="va">be</span>.<span class="at">empty</span></a>
+<a class="sourceLine" id="cb26-2" title="2">  .<span class="va">to</span>.<span class="at">exist</span></a>
+<a class="sourceLine" id="cb26-3" title="3">  .<span class="va">to</span>.<span class="at">contain</span>(<span class="st">&#39;text&#39;</span>)</a>
+<a class="sourceLine" id="cb26-4" title="4">  .<span class="va">to</span>.<span class="at">have</span>(<span class="st">&#39;.selector&#39;</span>)</a></code></pre></div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="rabin-karp-algorithm">Rabin Karp Algorithm</h1>
+<p>In computer science, the Rabin-Karp algorithm or Karp-Rabin algorithm is a string searching algorithm created by Richard M. Karp and Michael O. Rabin (1987) that uses hashing to find any one of a set of pattern strings in a text.</p>
+<h2 id="algorithm">Algorithm</h2>
+<p>The Rabin-Karp algorithm seeks to speed up the testing of equality of the pattern to the substrings in the text by using a hash function. A hash function is a function which converts every string into a numeric value, called its hash value; for example, we might have <code>hash('hello') = 5</code>. The algorithm exploits the fact that if two strings are equal, their hash values are also equal. Thus, string matching is reduced (almost) to computing the hash value of the search pattern and then looking for substrings of the input string with that hash value.</p>
+<p>However, there are two problems with this approach. First, because there are so many different strings and so few hash values, some differing strings will have the same hash value. If the hash values match, the pattern and the substring may not match; consequently, the potential match of search pattern and the substring must be confirmed by comparing them; that comparison can take a long time for long substrings. Luckily, a good hash function on reasonable strings usually does not have many collisions, so the expected search time will be acceptable.</p>
+<h2 id="hash-function-used">Hash Function Used</h2>
+<p>The key to the Rabin-Karp algorithm’s performance is the efficient computation of hash values of the successive substrings of the text. The <strong>Rabin fingerprint</strong> is a popular and effective rolling hash function.</p>
+<p>The <strong>polynomial hash function</strong> described in this example is not a Rabin fingerprint, but it works equally well. It treats every substring as a number in some base, the base being usually a large prime.</p>
+<h2 id="complexity">Complexity</h2>
+<p>For text of length <code>n</code> and <code>p</code> patterns of combined length <code>m</code>, its average and best case running time is <code>O(n + m)</code> in space <code>O(p)</code>, but its worst-case time is <code>O(n * m)</code>.</p>
+<h2 id="application">Application</h2>
+<p>A practical application of the algorithm is detecting plagiarism. Given source material, the algorithm can rapidly search through a paper for instances of sentences from the source material, ignoring details such as case and punctuation. Because of the abundance of the sought strings, single-string searching algorithms are impractical.</p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Rabin%E2%80%93Karp_algorithm">Wikipedia</a></li>
+<li><a href="https://www.youtube.com/watch?v=H4VrKHVG5qI&amp;list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8">YouTube</a></li>
+</ul>
+</body>
+</html>

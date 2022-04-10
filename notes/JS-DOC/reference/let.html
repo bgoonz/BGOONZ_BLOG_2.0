@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>let</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="let">let</h1>
+<p>The <code>let</code> statement declares a block-scoped local variable, optionally initializing it to a value.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>let name1 [= value1] [, name2 [= value2]] [, ..., nameN [= valueN];</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>nameN</code><br />
+The names of the variable or variables to declare. Each must be a legal JavaScript identifier.</p>
+<p><code>value``N</code> <span class="badge inline optional">Optional</span><br />
+For each variable declared, you may optionally specify its initial value to any legal JavaScript expression.</p>
+<p>Alternatively, the <a href="../operators/destructuring_assignment">Destructuring Assignment</a> syntax can also be used to declare variables.</p>
+<pre><code>let { bar } = foo; // where foo = { bar:10, baz:12 };
+/* This creates a variable with the name &#39;bar&#39;, which has a value of 10 */</code></pre>
+<h2 id="description">Description</h2>
+<p><code>let</code> allows you to declare variables that are limited to the scope of a <a href="block">block</a> statement, or expression on which it is used, unlike the <a href="var"><code>var</code></a> keyword, which declares a variable globally, or locally to an entire function regardless of block scope. The other difference between <a href="var"><code>var</code></a> and <code>let</code> is that the latter is initialized to a value only when a <a href="#temporal_dead_zone">parser evaluates it (see below)</a>.</p>
+<p>Just like <a href="const#description"><code>const</code></a> the <code>let</code> does <em>not</em> create properties of the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window"><code>window</code></a> object when declared globally (in the top-most scope).</p>
+<p>An explanation of why the name “<strong>let</strong>” was chosen can be found <a href="https://stackoverflow.com/questions/37916940/why-was-the-name-let-chosen-for-block-scoped-variable-declarations-in-javascri">here</a>.</p>
+<p><strong>Note:</strong> Many issues with <code>let</code> variables can be avoided by declaring them at the top of the scope in which they are used (doing so may impact readibility).</p>
+<h2 id="examples">Examples</h2>
+<h3 id="scoping-rules">Scoping rules</h3>
+<p>Variables declared by <code>let</code> have their scope in the block for which they are declared, as well as in any contained sub-blocks. In this way, <code>let</code> works very much like <code>var</code>. The main difference is that the scope of a <code>var</code> variable is the entire enclosing function:</p>
+<pre><code>function varTest() {
+  var x = 1;
+  {
+    var x = 2;  // same variable!
+    console.log(x);  // 2
+  }
+  console.log(x);  // 2
+}
+
+function letTest() {
+  let x = 1;
+  {
+    let x = 2;  // different variable
+    console.log(x);  // 2
+  }
+  console.log(x);  // 1
+}</code></pre>
+<p>At the top level of programs and functions, <code>let</code>, unlike <code>var</code>, does not create a property on the global object. For example:</p>
+<pre><code>var x = &#39;global&#39;;
+let y = &#39;global&#39;;
+console.log(this.x); // &quot;global&quot;
+console.log(this.y); // undefined</code></pre>
+<h3 id="emulating-private-members">Emulating private members</h3>
+<p>In dealing with <a href="https://developer.mozilla.org/en-US/docs/Glossary/Constructor">constructors</a> it is possible to use the <code>let</code> bindings to share one or more private members without using <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures">closures</a>:</p>
+<pre><code>var Thing;
+
+{
+  let privateScope = new WeakMap();
+  let counter = 0;
+
+  Thing = function() {
+    this.someProperty = &#39;foo&#39;;
+
+    privateScope.set(this, {
+      hidden: ++counter,
+    });
+  };
+
+  Thing.prototype.showPublic = function() {
+    return this.someProperty;
+  };
+
+  Thing.prototype.showPrivate = function() {
+    return privateScope.get(this).hidden;
+  };
+}
+
+console.log(typeof privateScope);
+// &quot;undefined&quot;
+
+var thing = new Thing();
+
+console.log(thing);
+// Thing {someProperty: &quot;foo&quot;}
+
+thing.showPublic();
+// &quot;foo&quot;
+
+thing.showPrivate();
+// 1</code></pre>
+<p>The same privacy pattern with closures over local variables can be created with <code>var</code>, but those need a function scope (typically an <a href="https://developer.mozilla.org/en-US/docs/Glossary/IIFE">IIFE</a> in the module pattern) instead of just a block scope like in the example above.</p>
+<h3 id="redeclarations">Redeclarations</h3>
+<p>Redeclaring the same variable within the same function or block scope raises a <a href="../global_objects/syntaxerror"><code>SyntaxError</code></a>.</p>
+<pre><code>if (x) {
+  let foo;
+  let foo; // SyntaxError thrown.
+}</code></pre>
+<p>You may encounter errors in <a href="switch"><code>switch</code></a> statements because there is only one block.</p>
+<pre><code>let x = 1;
+switch(x) {
+  case 0:
+    let foo;
+    break;
+
+  case 1:
+    let foo; // SyntaxError for redeclaration.
+    break;
+}</code></pre>
+<p>However, it’s important to point out that a block nested inside a case clause will create a new block scoped lexical environment, which will not produce the redeclaration errors shown above.</p>
+<pre><code>let x = 1;
+
+switch(x) {
+  case 0: {
+    let foo;
+    break;
+  }
+  case 1: {
+    let foo;
+    break;
+  }
+}</code></pre>
+<h3 id="temporal-dead-zone-tdz">Temporal dead zone (TDZ)</h3>
+<p><code>let</code> variables cannot be read/written until they have been fully initialized, which happens when they are declared (if no initial value is specified on declaration, the variable is initialized with a value of <code>undefined</code>). Accessing the variable before the initialization results in a <a href="../global_objects/referenceerror"><code>ReferenceError</code></a>.</p>
+<p><strong>Note:</strong> This differs from <a href="var#var_hoisting"><code>var</code></a> variables, which will return a value of <code>undefined</code> if they are accessed before they are declared.</p>
+<p>The variable is said to be in a “temporal dead zone” (TDZ) from the start of the block until the initialization has completed.</p>
+<pre><code>{ // TDZ starts at beginning of scope
+  console.log(bar); // undefined
+  console.log(foo); // ReferenceError
+  var bar = 1;
+  let foo = 2; // End of TDZ (for foo)
+}</code></pre>
+<p>The term “temporal” is used because the zone depends on the order of execution (time) rather than the order in which the code is written (position). For example, the code below works because, even though the function that uses the <code>let</code> variable appears before the variable is declared, the function is <em>called</em> outside the TDZ.</p>
+<pre><code>{
+    // TDZ starts at beginning of scope
+    const func = () =&gt; console.log(letVar); // OK
+
+    // Within the TDZ letVar access throws `ReferenceError`
+
+    let letVar = 3; // End of TDZ (for letVar)
+    func(); // Called outside TDZ!
+}</code></pre>
+<h4 id="the-tdz-and-typeof">The TDZ and <code>typeof</code></h4>
+<p>Using the <code>typeof</code> operator for a <code>let</code> variable in its TDZ will throw a <a href="../global_objects/referenceerror"><code>ReferenceError</code></a>:</p>
+<pre><code>// results in a &#39;ReferenceError&#39;
+console.log(typeof i);
+let i = 10;</code></pre>
+<p>This differs from using <code>typeof</code> for undeclared variables, and variables that hold a value of <code>undefined</code>:</p>
+<pre><code>// prints out &#39;undefined&#39;
+console.log(typeof undeclaredVariable);</code></pre>
+<h4 id="tdz-combined-with-lexical-scoping">TDZ combined with lexical scoping</h4>
+<p>The following code results in a <code>ReferenceError</code> at the line shown:</p>
+<pre><code>function test(){
+   var foo = 33;
+   if(foo) {
+      let foo = (foo + 55); // ReferenceError
+   }
+}
+test();</code></pre>
+<p>The <code>if</code> block is evaluated because the outer <code>var foo</code> has a value. However due to lexical scoping this value is not available inside the block: the identifier <code>foo</code> <em>inside</em> the <code>if</code> block is the <code>let foo</code>. The expression <code>(foo + 55)</code> throws a <code>ReferenceError</code> because initialization of <code>let foo</code> has not completed — it is still in the temporal dead zone.</p>
+<p>This phenomenon can be confusing in a situation like the following. The instruction <code>let n of n.a</code> is already inside the private scope of the for loop’s block. So, the identifier <code>n.a</code> is resolved to the property ‘<code>a</code>’ of the ‘<code>n</code>’ object located in the first part of the instruction itself (<code>let n</code>).</p>
+<p>This is still in the temporal dead zone as its declaration statement has not been reached and terminated.</p>
+<pre><code>function go(n) {
+  // n here is defined!
+  console.log(n); // Object {a: [1,2,3]}
+
+  for (let n of n.a) { // ReferenceError
+    console.log(n);
+  }
+}
+
+go({a: [1, 2, 3]});</code></pre>
+<h3 id="other-situations">Other situations</h3>
+<p>When used inside a block, <code>let</code> limits the variable’s scope to that block. Note the difference between <code>var</code>, whose scope is inside the function where it is declared.</p>
+<pre><code>var a = 1;
+var b = 2;
+
+if (a === 1) {
+  var a = 11; // the scope is global
+  let b = 22; // the scope is inside the if-block
+
+  console.log(a);  // 11
+  console.log(b);  // 22
+}
+
+console.log(a); // 11
+console.log(b); // 2</code></pre>
+<p>However, this combination of <code>var</code> and <code>let</code> declaration below is a <a href="../global_objects/syntaxerror"><code>SyntaxError</code></a> due to <code>var</code> being hoisted to the top of the block. This results in an implicit re-declaration of the variable.</p>
+<pre><code>let x = 1;
+
+{
+  var x = 2; // SyntaxError for re-declaration
+}</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-let-and-const-declarations">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-let-and-const-declarations</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>let</code></p>
+<p>49</p>
+<p>48-49</p>
+<p>Support outside of <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Strict_mode">strict mode</a>.</p>
+<p>41-49</p>
+<p><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Strict_mode">Strict mode</a> is required.</p>
+<p>14</p>
+<p>12-14</p>
+<p>In Edge 12 and 13, <code>let</code> within a <code>for</code> loop initializer does not create a separate variable for each loop iteration as defined by ES2015. Instead, it behaves as though the loop were wrapped in a scoping block with the <code>let</code> immediately before the loop.</p>
+<p>44</p>
+<p>[“Prior to Firefox 44, <code>let</code> is only available to code blocks in HTML wrapped in a <code>&lt;script type=\"application/javascript;version=1.7\"&gt;</code> block (or higher version) and has different semantics (e.g. no temporal dead zone).”, “Prior to Firefox 46, a <code>TypeError</code> is thrown on redeclaration instead of a <code>SyntaxError</code>.”, “Firefox 54 adds support of <code>let</code> in workers.”]</p>
+<p>11</p>
+<p>In Internet Explorer, <code>let</code> within a <code>for</code> loop initializer does not create a separate variable for each loop iteration as defined by ES2015. Instead, it behaves as though the loop were wrapped in a scoping block with the <code>let</code> immediately before the loop.</p>
+<p>17</p>
+<p>10</p>
+<p>49</p>
+<p>41-49</p>
+<p><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Strict_mode">Strict mode</a> is required.</p>
+<p>49</p>
+<p>48-49</p>
+<p>Support outside of <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Strict_mode">strict mode</a>.</p>
+<p>41-49</p>
+<p><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Strict_mode">Strict mode</a> is required.</p>
+<p>44</p>
+<p>[“Prior to Firefox 44, <code>let</code> is only available to code blocks in HTML wrapped in a <code>&lt;script type=\"application/javascript;version=1.7\"&gt;</code> block (or higher version) and has different semantics (e.g. no temporal dead zone).”, “Prior to Firefox 46, a <code>TypeError</code> is thrown on redeclaration instead of a <code>SyntaxError</code>.”, “Firefox 54 adds support of <code>let</code> in workers.”]</p>
+<p>18</p>
+<p>10</p>
+<p>5.0</p>
+<p>4.0-5.0</p>
+<p><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Strict_mode">Strict mode</a> is required.</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="var"><code>var</code></a></li>
+<li><a href="const"><code>const</code></a></li>
+<li><a href="https://hacks.mozilla.org/2015/07/es6-in-depth-let-and-const/">ES6 In Depth: <code>let</code> and <code>const</code></a></li>
+<li><a href="https://blog.mozilla.org/addons/2015/10/14/breaking-changes-let-const-firefox-nightly-44/">Breaking changes in <code>let</code> and <code>const</code> in Firefox 44</a></li>
+<li><a href="https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/scope%20%26%20closures/ch3.md">You Don’t Know JS: Scope &amp; Closures: Chapter 3: Function vs. Block Scope</a></li>
+<li><a href="https://stackoverflow.com/a/33198850/1125029">StackOverflow: What is the Temporal Dead Zone</a>?</li>
+<li><a href="https://stackoverflow.com/questions/762011/whats-the-difference-between-using-let-and-var-to-declare-a-variable">StackOverflow: What is the difference between using <code>let</code> and <code>var</code>?</a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let</a></p>
+</body>
+</html>

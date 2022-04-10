@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>cant_access_lexical_declaration_before_init</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="referenceerror-cant-access-lexical-declarationx-before-initialization">ReferenceError: can’t access lexical declaration`X’ before initialization</h1>
+<p>The JavaScript exception “can’t access lexical declaration `<em>variable</em>’ before initialization” occurs when a lexical variable was accessed before it was initialized. This happens within any block statement, when <code>let</code> or <code>const</code> declarations are accessed before they are defined.</p>
+<h2 id="message">Message</h2>
+<pre><code>ReferenceError: Use before delaration (Edge)
+ReferenceError: can&#39;t access lexical declaration `X&#39; before initialization (Firefox)
+ReferenceError: &#39;x&#39; is not defined (Chrome)</code></pre>
+<h2 id="error-type">Error type</h2>
+<p><a href="../global_objects/referenceerror"><code>ReferenceError</code></a></p>
+<h2 id="what-went-wrong">What went wrong?</h2>
+<p>A lexical variable was accessed before it was initialized. This happens within any block statement, when <code>let</code> or <code>const</code> declarations are accessed before they are defined.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="invalid-cases">Invalid cases</h3>
+<p>In this case, the variable “foo” is redeclared in the block statement using <code>let</code>.</p>
+<pre><code>function test() {
+  let foo = 33;
+  if (true) {
+    let foo = (foo + 55);
+    // ReferenceError: can&#39;t access lexical
+    // declaration `foo&#39; before initialization
+  }
+}
+test();</code></pre>
+<h3 id="valid-cases">Valid cases</h3>
+<p>To change “foo” inside the if statement, you need to remove the <code>let</code> that causes the redeclaration.</p>
+<pre><code>function test(){
+   let foo = 33;
+   if (true) {
+      foo = (foo + 55);
+   }
+}
+test();</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../statements/let#temporal_dead_zone_and_errors_with_let">Temporal Dead Zone and errors with let</a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Cant_access_lexical_declaration_before_init" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Cant_access_lexical_declaration_before_init</a></p>
+</body>
+</html>

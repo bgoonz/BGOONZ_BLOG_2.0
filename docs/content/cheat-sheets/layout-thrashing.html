@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Layout thrashing</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Layout thrashing</h1>
+</header>
+<h2 id="layout-thrashing">Layout thrashing</h2>
+<p>{: .-one-column}</p>
+<h3 id="things-that-cause-invalidation">Things that cause invalidation</h3>
+<h4 id="element">Element</h4>
+<ul>
+<li>clientHeight</li>
+<li>clientLeft</li>
+<li>clientTop</li>
+<li>clientWidth</li>
+<li>focus</li>
+<li>getBoundingClientRect</li>
+<li>getClientRects</li>
+<li>innerText</li>
+<li>offsetHeight</li>
+<li>offsetLeft</li>
+<li>offsetParent</li>
+<li>offsetTop</li>
+<li>offsetWidth</li>
+<li>outerText</li>
+<li>scrollByLines</li>
+<li>scrollByPages</li>
+<li>scrollHeight</li>
+<li>scrollIntoView</li>
+<li>scrollIntoViewIfNeeded</li>
+<li>scrollLeft</li>
+<li>scrollTop</li>
+<li>scrollWidth {: .-six-column}</li>
+</ul>
+<h4 id="mouseevent">MouseEvent</h4>
+<ul>
+<li>layerX</li>
+<li>layerY</li>
+<li>offsetX</li>
+<li>offsetY {: .-six-column}</li>
+</ul>
+<h4 id="window">Window</h4>
+<ul>
+<li>getComputedStyle</li>
+<li>scrollBy</li>
+<li>scrollTo</li>
+<li>scrollX</li>
+<li>scrollY {: .-six-column}</li>
+</ul>
+<h4 id="frame-document-image">Frame, Document &amp; Image</h4>
+<ul>
+<li>height</li>
+<li>width {: .-six-column}</li>
+</ul>
+<h4 id="jquery">jQuery</h4>
+<ul>
+<li>$.fn.offset</li>
+<li>$.fn.offsetParent</li>
+<li>$.fn.position</li>
+<li>$.fn.scrollLeft</li>
+<li>$.fn.scrollTop</li>
+<li>$.fn.css(‘…’)</li>
+<li>$.fn.text(‘…’)</li>
+<li>$(‘:hidden’)</li>
+<li>$(‘:contains’) {: .-six-column}</li>
+</ul>
+<h2 id="also-see">Also see</h2>
+<ul>
+<li><a href="http://www.kellegous.com/j/2013/01/26/layout-performance/" class="uri">http://www.kellegous.com/j/2013/01/26/layout-performance/</a></li>
+<li><a href="https://gist.github.com/desandro/4657744" class="uri">https://gist.github.com/desandro/4657744</a></li>
+<li><a href="http://stackoverflow.com/questions/17199958/why-does-setting-textcontent-cause-layout-thrashing" class="uri">http://stackoverflow.com/questions/17199958/why-does-setting-textcontent-cause-layout-thrashing</a></li>
+</ul>
+</body>
+</html>

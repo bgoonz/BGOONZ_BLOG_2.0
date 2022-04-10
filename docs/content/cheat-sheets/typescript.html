@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>typescript</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="typescript">Typescript</h1>
+<pre class="tsx"><code>const fs = require(&#39;fs&#39;);
+const filesTopCopy = [
+    {
+        src: &#39;../CONTRIBUTORS.md&#39;,
+        dest: &#39;../docs/contributors.md&#39;,
+        hideHeader: true
+    },
+    {
+        src: &#39;../CONTRIBUTING.md&#39;,
+        dest: &#39;../docs/contributing.md&#39;,
+        hideHeader: true
+    }
+];
+
+const generatingPageOptions = `---
+hide_title: true
+---
+`;
+
+function writeNewFile(src, dest) {
+    const fileContent = fs.readFileSync(src).toString();
+    const data = new Uint8Array(Buffer.from(generatingPageOptions + fileContent));
+
+    fs.writeFile(dest, data, (err) =&gt; {
+        if (err) {
+            console.log(&#39;Error Found:&#39;, err);
+        } else {
+            console.log(&#39;Files added&#39;);
+        }
+    });
+}
+
+function copyFile(src, dest) {
+    fs.copyFile(src, dest, (err) =&gt; {
+        if (err) {
+            console.log(&#39;Error Found:&#39;, err);
+        } else {
+            console.log(&#39;Files copied&#39;);
+        }
+    });
+}
+
+filesTopCopy.forEach(({ src, dest, hideHeader }) =&gt; {
+    if (hideHeader) {
+        writeNewFile(src, dest);
+    } else {
+        copyFile(src, dest);
+    }
+});
+x;</code></pre>
+</body>
+</html>

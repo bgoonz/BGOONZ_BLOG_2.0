@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>trim</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="string.prototype.trim">String.prototype.trim()</h1>
+<p>The <code>trim()</code> method removes whitespace from both ends of a string. Whitespace in this context is all the whitespace characters (space, tab, no-break space, etc.) and all the line terminator characters (LF, CR, etc.).</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>trim()</code></pre>
+<h3 id="return-value">Return value</h3>
+<p>A new string representing <code>str</code> stripped of whitespace from both its beginning and end.</p>
+<p>If neither the beginning or end of <code>str</code> has any whitespace, a new string is still returned (essentially a copy of <code>str</code>), with no exception being thrown.</p>
+<p>To return a new string with whitespace trimmed from just one end, use <a href="trimstart"><code>trimStart()</code></a> or <a href="trimend"><code>trimEnd()</code></a>.</p>
+<h2 id="polyfill">Polyfill</h2>
+<p>Running the following code before any other code will create <code>trim()</code> if it’s not natively available.</p>
+<pre><code>if (!String.prototype.trim) {
+  String.prototype.trim = function () {
+    return this.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, &#39;&#39;);
+  };
+}</code></pre>
+<h2 id="examples">Examples</h2>
+<h3 id="using-trim">Using <code>trim()</code></h3>
+<p>The following example displays the lowercase string <code>'foo'</code>:</p>
+<pre><code>var orig = &#39;   foo  &#39;;
+console.log(orig.trim()); // &#39;foo&#39;</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-string.prototype.trim">ECMAScript (ECMA-262) <br/></p>
+<span class="small">The definition of ‘String.prototype.trim’ in that specification.</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>Trim</code></p>
+<p>4</p>
+<p>12</p>
+<p>3.5</p>
+<p>10</p>
+<p>10.5</p>
+<p>5</p>
+<p>≤37</p>
+<p>18</p>
+<p>4</p>
+<p>11</p>
+<p>5</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="trimstart"><code>String.prototype.trimStart()</code></a></li>
+<li><a href="trimend"><code>String.prototype.trimEnd()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim</a></p>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>tmux</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="to-start-tmux">To start tmux:</h1>
+<p>tmux</p>
+<h1 id="to-detach-from-tmux">To detach from tmux:</h1>
+<p>Ctrl-b d</p>
+<h1 id="to-restore-tmux-session">To restore tmux session:</h1>
+<p>tmux attach</p>
+<h1 id="to-detach-an-already-attached-session-great-if-you-are-moving-devices-with-different-screen-resolutions">To detach an already attached session (great if you are moving devices with different screen resolutions):</h1>
+<p>tmux attach -d</p>
+<h1 id="to-display-session">To display session:</h1>
+<p>tmux ls</p>
+<h1 id="to-rename-session">To rename session:</h1>
+<p>Ctrl-b $</p>
+<h1 id="to-switch-session">To switch session:</h1>
+<p>Ctrl-b s</p>
+<h1 id="to-start-a-shared-session">To start a shared session:</h1>
+<p>tmux -S /tmp/your_shared_session chmod 777 /tmp/your_shared_session</p>
+<h1 id="to-help-screen-q-to-quit">To help screen (Q to quit):</h1>
+<p>Ctrl-b ?</p>
+<h1 id="to-scroll-in-window">To scroll in window:</h1>
+<p>Ctrl-b PageUp/PageDown</p>
+<h1 id="to-reload-configuration-file">To reload configuration file</h1>
+<p>Ctrl-b : source-file /path/to/file</p>
+<h1 id="to-create-a-window">To create a window:</h1>
+<p>Ctrl-b c</p>
+<h1 id="to-go-next-window">To go next window:</h1>
+<p>Ctrl-b n</p>
+<h1 id="to-destroy-a-window">To destroy a window:</h1>
+<p>Ctrl-b x</p>
+<h1 id="to-switch-between-windows">To switch between windows:</h1>
+<p>Ctrl-b [0-9] Ctrl-b Arrows</p>
+<h1 id="to-split-windows-horizontally">To split windows horizontally:</h1>
+<p>Ctrl-b %</p>
+<h1 id="to-split-windows-vertically">To split windows vertically:</h1>
+<p>Ctrl-b "</p>
+<h1 id="to-swap-windows">To swap windows:</h1>
+<p>Ctrl-b :swap-window -s [0-9] -t [0-9]</p>
+</body>
+</html>

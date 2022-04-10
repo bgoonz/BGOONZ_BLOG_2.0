@@ -1,12 +1,15 @@
-# Intl.DateTimeFormat.prototype.formatRangeToParts()
+Intl.DateTimeFormat.prototype.formatRangeToParts()
+==================================================
 
 The `Intl.DateTimeFormat.prototype.formatRangeToParts()` method allows locale-specific tokens representing each part of the formatted date range produced by [`Intl.DateTimeFormat`](../datetimeformat) formatters.
 
-## Syntax
+Syntax
+------
 
     formatRangeToParts(startDate, endDate)
 
-## Examples
+Examples
+--------
 
 ### Basic formatRangeToParts usage
 
@@ -39,12 +42,11 @@ This method receives two [`Date`](../../date)s and returns an [`Array`](../../ar
     //   { type: 'dayPeriod', value: 'AM',  source: "shared"     }
     // ]
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.DateTimeFormat.prototype.formatRangeToParts">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
-<br/>
-
-<span class="small">#sec-Intl.DateTimeFormat.prototype.formatRangeToParts</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Internationalization API Specification (ECMAScript Internationalization API)<br />
+</p><span class="small">#sec-Intl.DateTimeFormat.prototype.formatRangeToParts</span></td></tr></tbody></table>
 
 `formatRangeToParts`
 
@@ -72,7 +74,8 @@ No
 
 No
 
-## See also
+See also
+--------
 
 -   <span class="page-not-created">`Intl.DateTimeFormat.prototype.formatRange()`</span>
 -   [`Intl.DateTimeFormat`](../datetimeformat)

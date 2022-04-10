@@ -1,8 +1,10 @@
-# handler.deleteProperty()
+handler.deleteProperty()
+========================
 
 The `handler.deleteProperty()` method is a trap for the [`delete`](../../../operators/delete) operator.
 
-## Syntax
+Syntax
+------
 
     const p = new Proxy(target, {
       deleteProperty: function(target, property) {
@@ -23,7 +25,8 @@ The name or [`Symbol`](../../symbol) of the property to delete.
 
 The `deleteProperty()` method must return a [`Boolean`](../../boolean) indicating whether or not the property has been successfully deleted.
 
-## Description
+Description
+-----------
 
 The `handler.deleteProperty()` method is a trap for the [`delete`](../../../operators/delete) operator.
 
@@ -40,7 +43,8 @@ If the following invariants are violated, the proxy will throw a [`TypeError`](.
 
 -   A property cannot be deleted, if it exists as a non-configurable own property of the target object.
 
-## Examples
+Examples
+--------
 
 ### Trapping the delete operator
 
@@ -72,12 +76,11 @@ The following code traps the [`delete`](../../../operators/delete) operator.
     result = delete p.a    // "property not found: a"
     console.log(result)    // false
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-proxy-object-internal-methods-and-internal-slots-delete-p">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-proxy-object-internal-methods-and-internal-slots-delete-p</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-proxy-object-internal-methods-and-internal-slots-delete-p</span></td></tr></tbody></table>
 
 `deleteProperty`
 
@@ -105,13 +108,13 @@ No
 
 5.0
 
-## See also
+See also
+--------
 
 -   [`Proxy`](../../proxy)
 -   [`handler`](../proxy)
 -   [`delete`](../../../operators/delete) operator
 -   [`Reflect.deleteProperty()`](../../reflect/deleteproperty)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/deleteProperty" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/deleteProperty</a>

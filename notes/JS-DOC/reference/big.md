@@ -1,4 +1,5 @@
-# String.prototype.big()
+String.prototype.big()
+======================
 
 **Deprecated**
 
@@ -6,9 +7,10 @@ This feature is no longer recommended. Though some browsers might still support 
 
 The `big()` method creates a [`<big>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/big) HTML element that causes a string to be displayed in a big font.
 
-**Note:** The &lt;big&gt; element has been removed in [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) and shouldn't be used anymore. Instead web developers should use [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) properties.
+**Note:** The &lt;big&gt; element has been removed in [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) and shouldn’t be used anymore. Instead web developers should use [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) properties.
 
-## Syntax
+Syntax
+------
 
     big()
 
@@ -16,11 +18,13 @@ The `big()` method creates a [`<big>`](https://developer.mozilla.org/en-US/docs/
 
 A string containing a [`<big>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/big) HTML element.
 
-## Description
+Description
+-----------
 
-The `big()` method embeds a string in a `<big>` element: "`<big>str</big>`".
+The `big()` method embeds a string in a `<big>` element: “`<big>str</big>`”.
 
-## Examples
+Examples
+--------
 
 ### Using big()
 
@@ -32,16 +36,15 @@ The following example uses string methods to change the size of a string:
     console.log(worldString.big());       // <big>Hello, world</big>
     console.log(worldString.fontsize(7)); // <font size="7">Hello, world</font>
 
-With the [`element.style`](https://developer.mozilla.org/en-US/docs/Web/API/ElementCSSInlineStyle/style) object you can get the element's `style` attribute and manipulate it more generically, for example:
+With the [`element.style`](https://developer.mozilla.org/en-US/docs/Web/API/ElementCSSInlineStyle/style) object you can get the element’s `style` attribute and manipulate it more generically, for example:
 
     document.getElementById('yourElemId').style.fontSize = '2em';
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.big">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-string.prototype.big</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-string.prototype.big</span></td></tr></tbody></table>
 
 `big`
 
@@ -69,11 +72,11 @@ With the [`element.style`](https://developer.mozilla.org/en-US/docs/Web/API/Elem
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`String.prototype.fontsize()`](fontsize)
 -   [`String.prototype.small()`](small)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/big" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/big</a>

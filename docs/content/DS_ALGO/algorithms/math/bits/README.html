@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="bit-manipulation">Bit Manipulation</h1>
+<p><a href="README.fr-FR.md">français</a>,</p>
+<h4 id="get-bit">Get Bit</h4>
+<p>This method shifts the relevant bit to the zeroth position. Then we perform <code>AND</code> operation with one which has bit pattern like <code>0001</code>. This clears all bits from the original number except the relevant one. If the relevant bit is one, the result is <code>1</code>, otherwise the result is <code>0</code>.</p>
+<blockquote>
+<p>See <a href="getBit.js">getBit.js</a> for further details.</p>
+</blockquote>
+<h4 id="set-bit">Set Bit</h4>
+<p>This method shifts <code>1</code> over by <code>bitPosition</code> bits, creating a value that looks like <code>00100</code>. Then we perform <code>OR</code> operation that sets specific bit into <code>1</code> but it does not affect on other bits of the number.</p>
+<blockquote>
+<p>See <a href="setBit.js">setBit.js</a> for further details.</p>
+</blockquote>
+<h4 id="clear-bit">Clear Bit</h4>
+<p>This method shifts <code>1</code> over by <code>bitPosition</code> bits, creating a value that looks like <code>00100</code>. Than it inverts this mask to get the number that looks like <code>11011</code>. Then <code>AND</code> operation is being applied to both the number and the mask. That operation unsets the bit.</p>
+<blockquote>
+<p>See <a href="clearBit.js">clearBit.js</a> for further details.</p>
+</blockquote>
+<h4 id="update-bit">Update Bit</h4>
+<p>This method is a combination of “Clear Bit” and “Set Bit” methods.</p>
+<blockquote>
+<p>See <a href="updateBit.js">updateBit.js</a> for further details.</p>
+</blockquote>
+<h4 id="iseven">isEven</h4>
+<p>This method determines if the number provided is even. It is based on the fact that odd numbers have their last right bit to be set to 1.</p>
+<pre class="text"><code>Number: 5 = 0b0101
+isEven: false
+
+Number: 4 = 0b0100
+isEven: true</code></pre>
+<blockquote>
+<p>See <a href="isEven.js">isEven.js</a> for further details.</p>
+</blockquote>
+<h4 id="ispositive">isPositive</h4>
+<p>This method determines if the number is positive. It is based on the fact that all positive numbers have their leftmost bit to be set to <code>0</code>. However, if the number provided is zero or negative zero, it should still return <code>false</code>.</p>
+<pre class="text"><code>Number: 1 = 0b0001
+isPositive: true
+
+Number: -1 = -0b0001
+isPositive: false</code></pre>
+<blockquote>
+<p>See <a href="isPositive.js">isPositive.js</a> for further details.</p>
+</blockquote>
+<h4 id="multiply-by-two">Multiply By Two</h4>
+<p>This method shifts original number by one bit to the left. Thus all binary number components (powers of two) are being multiplying by two and thus the number itself is being multiplied by two.</p>
+<pre><code>Before the shift
+Number: 0b0101 = 5
+Powers of two: 0 + 2^2 + 0 + 2^0
+
+After the shift
+Number: 0b1010 = 10
+Powers of two: 2^3 + 0 + 2^1 + 0</code></pre>
+<blockquote>
+<p>See <a href="multiplyByTwo.js">multiplyByTwo.js</a> for further details.</p>
+</blockquote>
+<h4 id="divide-by-two">Divide By Two</h4>
+<p>This method shifts original number by one bit to the right. Thus all binary number components (powers of two) are being divided by two and thus the number itself is being divided by two without remainder.</p>
+<pre><code>Before the shift
+Number: 0b0101 = 5
+Powers of two: 0 + 2^2 + 0 + 2^0
+
+After the shift
+Number: 0b0010 = 2
+Powers of two: 0 + 0 + 2^1 + 0</code></pre>
+<blockquote>
+<p>See <a href="divideByTwo.js">divideByTwo.js</a> for further details.</p>
+</blockquote>
+<h4 id="switch-sign">Switch Sign</h4>
+<p>This method make positive numbers to be negative and backwards. To do so it uses “Twos Complement” approach which does it by inverting all of the bits of the number and adding 1 to it.</p>
+<pre><code>1101 -3
+1110 -2
+1111 -1
+0000  0
+0001  1
+0010  2
+0011  3</code></pre>
+<blockquote>
+<p>See <a href="switchSign.js">switchSign.js</a> for further details.</p>
+</blockquote>
+<h4 id="multiply-two-signed-numbers">Multiply Two Signed Numbers</h4>
+<p>This method multiplies two signed integer numbers using bitwise operators. This method is based on the following facts:</p>
+<pre class="text"><code>a * b can be written in the below formats:
+  0                     if a is zero or b is zero or both a and b are zeroes
+  2a * (b/2)            if b is even
+  2a * (b - 1)/2 + a    if b is odd and positive
+  2a * (b + 1)/2 - a    if b is odd and negative</code></pre>
+<p>The advantage of this approach is that in each recursive step one of the operands reduces to half its original value. Hence, the run time complexity is <code>O(log(b))</code> where <code>b</code> is the operand that reduces to half on each recursive step.</p>
+<blockquote>
+<p>See <a href="multiply.js">multiply.js</a> for further details.</p>
+</blockquote>
+<h4 id="multiply-two-unsigned-numbers">Multiply Two Unsigned Numbers</h4>
+<p>This method multiplies two integer numbers using bitwise operators. This method is based on that “Every number can be denoted as the sum of powers of 2”.</p>
+<p>The main idea of bitwise multiplication is that every number may be split to the sum of powers of two:</p>
+<p>I.e.</p>
+<pre class="text"><code>19 = 2^4 + 2^1 + 2^0</code></pre>
+<p>Then multiplying number <code>x</code> by <code>19</code> is equivalent of:</p>
+<pre class="text"><code>x * 19 = x * 2^4 + x * 2^1 + x * 2^0</code></pre>
+<p>Now we need to remember that <code>x * 2^4</code> is equivalent of shifting <code>x</code> left by <code>4</code> bits (<code>x &lt;&lt; 4</code>).</p>
+<blockquote>
+<p>See <a href="multiplyUnsigned.js">multiplyUnsigned.js</a> for further details.</p>
+</blockquote>
+<h4 id="count-set-bits">Count Set Bits</h4>
+<p>This method counts the number of set bits in a number using bitwise operators. The main idea is that we shift the number right by one bit at a time and check the result of <code>&amp;</code> operation that is <code>1</code> if bit is set and <code>0</code> otherwise.</p>
+<pre class="text"><code>Number: 5 = 0b0101
+Count of set bits = 2</code></pre>
+<blockquote>
+<p>See <a href="countSetBits.js">countSetBits.js</a> for further details.</p>
+</blockquote>
+<h4 id="count-bits-to-flip-one-number-to-another">Count Bits to Flip One Number to Another</h4>
+<p>This methods outputs the number of bits required to convert one number to another. This makes use of property that when numbers are <code>XOR</code>-ed the result will be number of different bits.</p>
+<pre><code>5 = 0b0101
+1 = 0b0001
+Count of Bits to be Flipped: 1</code></pre>
+<blockquote>
+<p>See <a href="bitsDiff.js">bitsDiff.js</a> for further details.</p>
+</blockquote>
+<h4 id="count-bits-of-a-number">Count Bits of a Number</h4>
+<p>To calculate the number of valuable bits we need to shift <code>1</code> one bit left each time and see if shifted number is bigger than the input number.</p>
+<pre><code>5 = 0b0101
+Count of valuable bits is: 3
+When we shift 1 four times it will become bigger than 5.</code></pre>
+<blockquote>
+<p>See <a href="bitLength.js">bitLength.js</a> for further details.</p>
+</blockquote>
+<h4 id="is-power-of-two">Is Power of Two</h4>
+<p>This method checks if a number provided is power of two. It uses the following property. Let’s say that <code>powerNumber</code> is a number that has been formed as a power of two (i.e. 2, 4, 8, 16 etc.). Then if we’ll do <code>&amp;</code> operation between <code>powerNumber</code> and <code>powerNumber - 1</code> it will return <code>0</code> (in case if number is power of two).</p>
+<pre><code>Number: 4 = 0b0100
+Number: 3 = (4 - 1) = 0b0011
+4 &amp; 3 = 0b0100 &amp; 0b0011 = 0b0000 &lt;-- Equal to zero, is power of two.
+
+Number: 10 = 0b01010
+Number: 9 = (10 - 1) = 0b01001
+10 &amp; 9 = 0b01010 &amp; 0b01001 = 0b01000 &lt;-- Not equal to zero, not a power of two.</code></pre>
+<blockquote>
+<p>See <a href="isPowerOfTwo.js">isPowerOfTwo.js</a> for further details.</p>
+</blockquote>
+<h4 id="full-adder">Full Adder</h4>
+<p>This method adds up two integer numbers using bitwise operators.</p>
+<p>It implements <a href="https://en.wikipedia.org/wiki/Adder_(electronics)">full adder</a> electronics circuit logic to sum two 32-bit integers in two’s complement format. It’s using the boolean logic to cover all possible cases of adding two input bits: with and without a “carry bit” from adding the previous less-significant stage.</p>
+<p>Legend:</p>
+<ul>
+<li><code>A</code>: Number <code>A</code></li>
+<li><code>B</code>: Number <code>B</code></li>
+<li><code>ai</code>: ith bit of number <code>A</code></li>
+<li><code>bi</code>: ith bit of number <code>B</code></li>
+<li><code>carryIn</code>: a bit carried in from the previous less-significant stage</li>
+<li><code>carryOut</code>: a bit to carry to the next most-significant stage</li>
+<li><code>bitSum</code>: The sum of <code>ai</code>, <code>bi</code>, and <code>carryIn</code></li>
+<li><code>resultBin</code>: The full result of adding current stage with all less-significant stages (in binary)</li>
+<li><code>resultDec</code>: The full result of adding current stage with all less-significant stages (in decimal)</li>
+</ul>
+<pre><code>A = 3: 011
+B = 6: 110
+┌──────┬────┬────┬─────────┬──────────┬─────────┬───────────┬───────────┐
+│  bit │ ai │ bi │ carryIn │ carryOut │  bitSum │ resultBin │ resultDec │
+├──────┼────┼────┼─────────┼──────────┼─────────┼───────────┼───────────┤
+│   0  │ 1  │ 0  │    0    │    0     │     1   │       1   │     1     │
+│   1  │ 1  │ 1  │    0    │    1     │     0   │      01   │     1     │
+│   2  │ 0  │ 1  │    1    │    1     │     0   │     001   │     1     │
+│   3  │ 0  │ 0  │    1    │    0     │     1   │    1001   │     9     │
+└──────┴────┴────┴─────────┴──────────┴─────────┴───────────┴───────────┘</code></pre>
+<blockquote>
+<p>See <a href="fullAdder.js">fullAdder.js</a> for further details. See <a href="https://www.youtube.com/watch?v=wvJc9CZcvBc&amp;list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8">Full Adder on YouTube</a>.</p>
+</blockquote>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=NLKQEOgBAnw&amp;t=0s&amp;index=28&amp;list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8">Bit Manipulation on YouTube</a></li>
+<li><a href="https://www.youtube.com/watch?v=4qH4unVtJkE&amp;t=0s&amp;index=30&amp;list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8">Negative Numbers in binary on YouTube</a></li>
+<li><a href="https://graphics.stanford.edu/~seander/bithacks.html">Bit Hacks on stanford.edu</a></li>
+</ul>
+</body>
+</html>

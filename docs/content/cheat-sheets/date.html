@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2022-01-03" />
+  <title>title</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">title</h1>
+<p class="subtitle">subtitle</p>
+<p class="date">2022-01-03</p>
+</header>
+<hr />
+<h2 id="tags-date-time">tags: [date, time]</h2>
+<h1 id="to-print-the-date-in-a-format-suitable-for-affixing-to-file-names">To print the date in a format suitable for affixing to file names:</h1>
+<p>date +“%Y%m%d_%H%M%S”</p>
+<h1 id="to-convert-a-unix-timestamp-to-date-linux">To convert a Unix timestamp to Date (Linux)</h1>
+<p>date -d <span class="citation" data-cites="1440359821">@1440359821</span></p>
+<h1 id="to-convert-a-unix-timestamp-to-date-osx">To convert a Unix timestamp to Date (OSX)</h1>
+<p>date -r 1440359821</p>
+<h1 id="to-list-utc-time">To list UTC time</h1>
+<p>date -u</p>
+<h1 id="show-the-time-on-the-west-coast-of-the-us-use-tzselect1-to-find-tz">Show the time on the west coast of the US (use tzselect(1) to find TZ)</h1>
+<p>TZ=‘America/Los_Angeles’ date</p>
+</body>
+</html>

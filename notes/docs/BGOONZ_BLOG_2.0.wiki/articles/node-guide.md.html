@@ -1,0 +1,1331 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>node-guide.md</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="node.js---quick-guide">Node.js - Quick Guide</h1>
+<blockquote>
+<h2 id="excerpt">Excerpt</h2>
+<p>Node.js - Quick Guide, Node.js is a server-side platform built on Google Chrome’s JavaScript Engine (V8 Engine). Node.js was developed by Ryan Dahl in 2009 and its latest version is v</p>
+</blockquote>
+<hr />
+<hr />
+<h2 id="what-is-node.js">What is Node.js?</h2>
+<p>Node.js is a server-side platform built on Google Chrome’s JavaScript Engine (V8 Engine). Node.js was developed by Ryan Dahl in 2009 and its latest version is v0.10.36. The definition of Node.js as supplied by its <a href="https://nodejs.org/">official documentation</a> is as follows −</p>
+<blockquote>
+<p>Node.js is a platform built on <a href="https://code.google.com/p/v8/">Chrome’s JavaScript runtime</a> for easily building fast and scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.</p>
+</blockquote>
+<p>Node.js is an open source, cross-platform runtime environment for developing server-side and networking applications. Node.js applications are written in JavaScript, and can be run within the Node.js runtime on OS X, Microsoft Windows, and Linux.</p>
+<p>Node.js also provides a rich library of various JavaScript modules which simplifies the development of web applications using Node.js to a great extent.</p>
+<p>Node.js = Runtime Environment + JavaScript Library</p>
+<h2 id="features-of-node.js">Features of Node.js</h2>
+<p>Following are some of the important features that make Node.js the first choice of software architects.</p>
+<ul>
+<li><strong>Asynchronous and Event Driven</strong> − All APIs of Node.js library are asynchronous, that is, non-blocking. It essentially means a Node.js based server never waits for an API to return data. The server moves to the next API after calling it and a notification mechanism of Events of Node.js helps the server to get a response from the previous API call.</li>
+<li><strong>Very Fast</strong> − Being built on Google Chrome’s V8 JavaScript Engine, Node.js library is very fast in code execution.</li>
+<li><strong>Single Threaded but Highly Scalable</strong> − Node.js uses a single threaded model with event looping. Event mechanism helps the server to respond in a non-blocking way and makes the server highly scalable as opposed to traditional servers which create limited threads to handle requests. Node.js uses a single threaded program and the same program can provide service to a much larger number of requests than traditional servers like Apache HTTP Server.</li>
+<li><strong>No Buffering</strong> − Node.js applications never buffer any data. These applications simply output the data in chunks.</li>
+<li><strong>License</strong> − Node.js is released under the <a href="https://raw.githubusercontent.com/joyent/node/v0.12.0/LICENSE">MIT license</a>.</li>
+</ul>
+<h2 id="who-uses-node.js">Who Uses Node.js?</h2>
+<p>Following is the link on github wiki containing an exhaustive list of projects, application and companies which are using Node.js. This list includes eBay, General Electric, GoDaddy, Microsoft, PayPal, Uber, Wikipins, Yahoo!, and Yammer to name a few.</p>
+<ul>
+<li><a href="https://github.com/joyent/node/wiki/projects,-applications,-and-companies-using-node">Projects, Applications, and Companies Using Node</a></li>
+</ul>
+<h2 id="concepts">Concepts</h2>
+<p>The following diagram depicts some important parts of Node.js which we will discuss in detail in the subsequent chapters.</p>
+<figure>
+<img src="https://www.tutorialspoint.com/nodejs/images/nodejs_concepts.jpg" alt="Node.js Concepts" /><figcaption>Node.js Concepts</figcaption>
+</figure>
+<h2 id="where-to-use-node.js">Where to Use Node.js?</h2>
+<p>Following are the areas where Node.js is proving itself as a perfect technology partner.</p>
+<ul>
+<li>I/O bound Applications</li>
+<li>Data Streaming Applications</li>
+<li>Data Intensive Real-time Applications (DIRT)</li>
+<li>JSON APIs based Applications</li>
+<li>Single Page Applications</li>
+</ul>
+<h2 id="where-not-to-use-node.js">Where Not to Use Node.js?</h2>
+<p>It is not advisable to use Node.js for CPU intensive applications.</p>
+<h2 id="try-it-option-online">Try it Option Online</h2>
+<blockquote>
+<p>You really do not need to set up your own environment to start learning Node.js. Reason is very simple, we already have set up Node.js environment online, so that you can execute all the available examples online and learn through practice. Feel free to modify any example and check the results with different options.</p>
+<p>Try the following example using the <strong>Live Demo</strong> option available at the top right corner of the below sample code box (on our website) −</p>
+<p>/* Hello World! program in Node.js */ console.log(“Hello World!”);</p>
+<p>For most of the examples given in this tutorial, you will find a Try it option, so just make use of it and enjoy your learning.</p>
+</blockquote>
+<h2 id="local-environment-setup">Local Environment Setup</h2>
+<p>If you are still willing to set up your environment for Node.js, you need the following two softwares available on your computer, (a) Text Editor and (b) The Node.js binary installables.</p>
+<h2 id="text-editor">Text Editor</h2>
+<p>This will be used to type your program. Examples of few editors include Windows Notepad, OS Edit command, Brief, Epsilon, EMACS, and vim or vi.</p>
+<p>Name and version of text editor can vary on different operating systems. For example, Notepad will be used on Windows, and vim or vi can be used on windows as well as Linux or UNIX.</p>
+<p>The files you create with your editor are called source files and contain program source code. The source files for Node.js programs are typically named with the extension “<strong>.js</strong>”.</p>
+<p>Before starting your programming, make sure you have one text editor in place and you have enough experience to write a computer program, save it in a file, and finally execute it.</p>
+<h2 id="the-node.js-runtime">The Node.js Runtime</h2>
+<p>The source code written in source file is simply javascript. The Node.js interpreter will be used to interpret and execute your javascript code.</p>
+<p>Node.js distribution comes as a binary installable for SunOS , Linux, Mac OS X, and Windows operating systems with the 32-bit (386) and 64-bit (amd64) x86 processor architectures.</p>
+<p>Following section guides you on how to install Node.js binary distribution on various OS.</p>
+<h2 id="download-node.js-archive">Download Node.js archive</h2>
+<p>Download latest version of Node.js installable archive file from <a href="http://nodejs.org/download/">Node.js Downloads</a>. At the time of writing this tutorial, following are the versions available on different OS.</p>
+<p>OS</p>
+<p>Archive name</p>
+<p>Windows</p>
+<p>node-v6.3.1-x64.msi</p>
+<p>Linux</p>
+<p>node-v6.3.1-linux-x86.tar.gz</p>
+<p>Mac</p>
+<p>node-v6.3.1-darwin-x86.tar.gz</p>
+<p>SunOS</p>
+<p>node-v6.3.1-sunos-x86.tar.gz</p>
+<h2 id="installation-on-unixlinuxmac-os-x-and-sunos">Installation on UNIX/Linux/Mac OS X, and SunOS</h2>
+<p>Based on your OS architecture, download and extract the archive node-v6.3.1-<strong>osname</strong>.tar.gz into /tmp, and then finally move extracted files into /usr/local/nodejs directory. For example:</p>
+<p>$ cd /tmp $ wget http://nodejs.org/dist/v6.3.1/node-v6.3.1-linux-x64.tar.gz $ tar xvfz node-v6.3.1-linux-x64.tar.gz $ mkdir -p /usr/local/nodejs $ mv node-v6.3.1-linux-x64/* /usr/local/nodejs</p>
+<p>Add /usr/local/nodejs/bin to the PATH environment variable.</p>
+<p>OS</p>
+<p>Output</p>
+<p>Linux</p>
+<p>export PATH=$PATH:/usr/local/nodejs/bin</p>
+<p>Mac</p>
+<p>export PATH=$PATH:/usr/local/nodejs/bin</p>
+<p>FreeBSD</p>
+<p>export PATH=$PATH:/usr/local/nodejs/bin</p>
+<h2 id="installation-on-windows">Installation on Windows</h2>
+<p>Use the MSI file and follow the prompts to install the Node.js. By default, the installer uses the Node.js distribution in C:\Program Files\nodejs. The installer should set the C:\Program Files\nodejs\bin directory in window’s PATH environment variable. Restart any open command prompts for the change to take effect.</p>
+<h2 id="verify-installation-executing-a-file">Verify installation: Executing a File</h2>
+<p>Create a js file named <strong>main.js</strong> on your machine (Windows or Linux) having the following code.</p>
+<p>/* Hello, World! program in node.js */ console.log(“Hello, World!”)</p>
+<p>Now execute main.js file using Node.js interpreter to see the result −</p>
+<p>$ node main.js</p>
+<p>If everything is fine with your installation, this should produce the following result −</p>
+<p>Hello, World!</p>
+<p>Before creating an actual “Hello, World!” application using Node.js, let us see the components of a Node.js application. A Node.js application consists of the following three important components −</p>
+<ul>
+<li><strong>Import required modules</strong> − We use the <strong>require</strong> directive to load Node.js modules.</li>
+<li><strong>Create server</strong> − A server which will listen to client’s requests similar to Apache HTTP Server.</li>
+<li><strong>Read request and return response</strong> − The server created in an earlier step will read the HTTP request made by the client which can be a browser or a console and return the response.</li>
+</ul>
+<h2 id="creating-node.js-application">Creating Node.js Application</h2>
+<h3 id="step-1---import-required-module">Step 1 - Import Required Module</h3>
+<p>We use the <strong>require</strong> directive to load the http module and store the returned HTTP instance into an http variable as follows −</p>
+<p>var http = require(“http”);</p>
+<h3 id="step-2---create-server">Step 2 - Create Server</h3>
+<p>We use the created http instance and call <strong>http.createServer()</strong> method to create a server instance and then we bind it at port 8081 using the <strong>listen</strong> method associated with the server instance. Pass it a function with parameters request and response. Write the sample implementation to always return “Hello World”.</p>
+<p>http.createServer(function (request, response) { // Send the HTTP header // HTTP Status: 200 : OK // Content Type: text/plain response.writeHead(200, {‘Content-Type’: ‘text/plain’}); // Send the response body as “Hello World” response.end(‘Hello World\n’); }).listen(8081); // Console will print the message console.log(‘Server running at http://127.0.0.1:8081/’);</p>
+<p>The above code is enough to create an HTTP server which listens, i.e., waits for a request over 8081 port on the local machine.</p>
+<h3 id="step-3---testing-request-response">Step 3 - Testing Request &amp; Response</h3>
+<p>Let’s put step 1 and 2 together in a file called <strong>main.js</strong> and start our HTTP server as shown below −</p>
+<p>var http = require(“http”); http.createServer(function (request, response) { // Send the HTTP header // HTTP Status: 200 : OK // Content Type: text/plain response.writeHead(200, {‘Content-Type’: ‘text/plain’}); // Send the response body as “Hello World” response.end(‘Hello World\n’); }).listen(8081); // Console will print the message console.log(‘Server running at http://127.0.0.1:8081/’);</p>
+<p>Now execute the main.js to start the server as follows −</p>
+<p>$ node main.js</p>
+<p>Verify the Output. Server has started.</p>
+<p>Server running at http://127.0.0.1:8081/</p>
+<h2 id="make-a-request-to-the-node.js-server">Make a Request to the Node.js Server</h2>
+<p>Open http://127.0.0.1:8081/ in any browser and observe the following result.</p>
+<figure>
+<img src="https://www.tutorialspoint.com/nodejs/images/nodejs_sample.jpg" alt="Node.js Sample" /><figcaption>Node.js Sample</figcaption>
+</figure>
+<p>Congratulations, you have your first HTTP server up and running which is responding to all the HTTP requests at port 8081.</p>
+<p>REPL stands for Read Eval Print Loop and it represents a computer environment like a Windows console or Unix/Linux shell where a command is entered and the system responds with an output in an interactive mode. Node.js or <strong>Node</strong> comes bundled with a REPL environment. It performs the following tasks −</p>
+<ul>
+<li><strong>Read</strong> − Reads user’s input, parses the input into JavaScript data-structure, and stores in memory.</li>
+<li><strong>Eval</strong> − Takes and evaluates the data structure.</li>
+<li><strong>Print</strong> − Prints the result.</li>
+<li><strong>Loop</strong> − Loops the above command until the user presses <strong>ctrl-c</strong> twice.</li>
+</ul>
+<p>The REPL feature of Node is very useful in experimenting with Node.js codes and to debug JavaScript codes.</p>
+<h2 id="online-repl-terminal">Online REPL Terminal</h2>
+<p>To simplify your learning, we have set up an easy to use Node.js REPL environment online, where you can practice Node.js syntax − <a href="https://www.tutorialspoint.com/nodejs_terminal_online.php" title="Node.js Terminal Online">Launch Node.js REPL Terminal</a></p>
+<h3 id="starting-repl">Starting REPL</h3>
+<p>REPL can be started by simply running <strong>node</strong> on shell/console without any arguments as follows.</p>
+<p>$ node</p>
+<p>You will see the REPL Command prompt &gt; where you can type any Node.js command −</p>
+<p>$ node</p>
+<blockquote>
+
+</blockquote>
+<h3 id="simple-expression">Simple Expression</h3>
+<p>Let’s try a simple mathematics at the Node.js REPL command prompt −</p>
+<p>$ node</p>
+<blockquote>
+<p>1 + 3 4 1 + ( 2 * 3 ) - 4 3</p>
+</blockquote>
+<h3 id="use-variables">Use Variables</h3>
+<p>You can make use variables to store values and print later like any conventional script. If <strong>var</strong> keyword is not used, then the value is stored in the variable and printed. Whereas if <strong>var</strong> keyword is used, then the value is stored but not printed. You can print variables using <strong>console.log()</strong>.</p>
+<p>$ node</p>
+<blockquote>
+<p>x = 10 10 var y = 10 undefined x + y 20 console.log(“Hello World”) Hello World undefined</p>
+</blockquote>
+<h3 id="multiline-expression">Multiline Expression</h3>
+<p>Node REPL supports multiline expression similar to JavaScript. Let’s check the following do-while loop in action −</p>
+<p>$ node</p>
+<blockquote>
+<p>var x = 0 undefined do { … x++; … console.log(“x:” + x); … } while ( x &lt; 5 ); x: 1 x: 2 x: 3 x: 4 x: 5 undefined</p>
+</blockquote>
+<p><strong>…</strong> comes automatically when you press Enter after the opening bracket. Node automatically checks the continuity of expressions.</p>
+<h3 id="underscore-variable">Underscore Variable</h3>
+<p>You can use underscore <strong>(_)</strong> to get the last result −</p>
+<p>$ node</p>
+<blockquote>
+<p>var x = 10 undefined var y = 20 undefined x + y 30 var sum = _ undefined console.log(sum) 30 undefined</p>
+</blockquote>
+<h2 id="repl-commands">REPL Commands</h2>
+<ul>
+<li><strong>ctrl + c</strong> − terminate the current command.</li>
+<li><strong>ctrl + c twice</strong> − terminate the Node REPL.</li>
+<li><strong>ctrl + d</strong> − terminate the Node REPL.</li>
+<li><strong>Up/Down Keys</strong> − see command history and modify previous commands.</li>
+<li><strong>tab Keys</strong> − list of current commands.</li>
+<li><strong>.help</strong> − list of all commands.</li>
+<li><strong>.break</strong> − exit from multiline expression.</li>
+<li><strong>.clear</strong> − exit from multiline expression.</li>
+<li><strong>.save <em>filename</em></strong> − save the current Node REPL session to a file.</li>
+<li><strong>.load <em>filename</em></strong> − load file content in current Node REPL session.</li>
+</ul>
+<h2 id="stopping-repl">Stopping REPL</h2>
+<p>As mentioned above, you will need to use <strong>ctrl-c twice</strong> to come out of Node.js REPL.</p>
+<p>$ node</p>
+<blockquote>
+<p>(^C again to quit)</p>
+</blockquote>
+<p>Node Package Manager (NPM) provides two main functionalities −</p>
+<ul>
+<li>Online repositories for node.js packages/modules which are searchable on <a href="https://search.nodejs.org/">search.nodejs.org</a></li>
+<li>Command line utility to install Node.js packages, do version management and dependency management of Node.js packages.</li>
+</ul>
+<p>NPM comes bundled with Node.js installables after v0.6.3 version. To verify the same, open console and type the following command and see the result −</p>
+<p>$ npm –version 2.7.1</p>
+<p>If you are running an old version of NPM then it is quite easy to update it to the latest version. Just use the following command from root −</p>
+<p>$ sudo npm install npm -g /usr/bin/npm -&gt; /usr/lib/node_modules/npm/bin/npm-cli.js npm@2.7.1 /usr/lib/node_modules/npm</p>
+<h2 id="installing-modules-using-npm">Installing Modules using NPM</h2>
+<p>There is a simple syntax to install any Node.js module −</p>
+<p>$ npm install <Module Name></p>
+<p>For example, following is the command to install a famous Node.js web framework module called express −</p>
+<p>$ npm install express</p>
+<p>Now you can use this module in your js file as following −</p>
+<p>var express = require(‘express’);</p>
+<h2 id="global-vs-local-installation">Global vs Local Installation</h2>
+<p>By default, NPM installs any dependency in the local mode. Here local mode refers to the package installation in node_modules directory lying in the folder where Node application is present. Locally deployed packages are accessible via require() method. For example, when we installed express module, it created node_modules directory in the current directory where it installed the express module.</p>
+<p>$ ls -l total 0 drwxr-xr-x 3 root root 20 Mar 17 02:23 node_modules</p>
+<p>Alternatively, you can use <strong>npm ls</strong> command to list down all the locally installed modules.</p>
+<p>Globally installed packages/dependencies are stored in system directory. Such dependencies can be used in CLI (Command Line Interface) function of any node.js but cannot be imported using require() in Node application directly. Now let’s try installing the express module using global installation.</p>
+<p>$ npm install express -g</p>
+<p>This will produce a similar result but the module will be installed globally. Here, the first line shows the module version and the location where it is getting installed.</p>
+<p><strong>express@4.12.2 /usr/lib/node_modules/express</strong> ├── merge-descriptors@1.0.0 ├── utils-merge@1.0.0 ├── cookie-signature@1.0.6 ├── methods@1.1.1 ├── fresh@0.2.4 ├── cookie@0.1.2 ├── escape-html@1.0.1 ├── range-parser@1.0.2 ├── content-type@1.0.1 ├── finalhandler@0.3.3 ├── vary@1.0.0 ├── parseurl@1.3.0 ├── content-disposition@0.5.0 ├── path-to-regexp@0.1.3 ├── depd@1.0.0 ├── qs@2.3.3 ├── on-finished@2.2.0 (ee-first@1.1.0) ├── etag@1.5.1 (crc@3.2.1) ├── debug@2.1.3 (ms@0.7.0) ├── proxy-addr@1.0.7 (forwarded@0.1.0, ipaddr.js@0.1.9) ├── send@0.12.1 (destroy@1.0.3, ms@0.7.0, mime@1.3.4) ├── serve-static@1.9.2 (send@0.12.2) ├── accepts@1.2.5 (negotiator@0.5.1, mime-types@2.0.10) └── type-is@1.6.1 (media-typer@0.3.0, mime-types@2.0.10)</p>
+<p>You can use the following command to check all the modules installed globally −</p>
+<p>$ npm ls -g</p>
+<h2 id="using-package.json">Using package.json</h2>
+<p>package.json is present in the root directory of any Node application/module and is used to define the properties of a package. Let’s open package.json of express package present in <strong>node_modules/express/</strong></p>
+<p>{ “name”: “express”, “description”: “Fast, unopinionated, minimalist web framework”, “version”: “4.11.2”, “author”: { “name”: “TJ Holowaychuk”, “email”: “tj@vision-media.ca” }, “contributors”: [{ “name”: “Aaron Heckmann”, “email”: “aaron.heckmann+github@gmail.com” }, { “name”: “Ciaran Jessup”, “email”: “ciaranj@gmail.com” }, { “name”: “Douglas Christopher Wilson”, “email”: “doug@somethingdoug.com” }, { “name”: “Guillermo Rauch”, “email”: “rauchg@gmail.com” }, { “name”: “Jonathan Ong”, “email”: “me@jongleberry.com” }, { “name”: “Roman Shtylman”, “email”: “shtylman+expressjs@gmail.com” }, { “name”: “Young Jae Sim”, “email”: “hanul@hanul.me” } ], “license”: “MIT”, “repository”: { “type”: “git”, “url”: “https://github.com/strongloop/express” }, “homepage”: “https://expressjs.com/”, “keywords”: [ “express”, “framework”, “sinatra”, “web”, “rest”, “restful”, “router”, “app”, “api” ], “dependencies”: { “accepts”: “~1.2.3”, “content-disposition”: “0.5.0”, “cookie-signature”: “1.0.5”, “debug”: “~2.1.1”, “depd”: “~1.0.0”, “escape-html”: “1.0.1”, “etag”: “~1.5.1”, “finalhandler”: “0.3.3”, “fresh”: “0.2.4”, “media-typer”: “0.3.0”, “methods”: “~1.1.1”, “on-finished”: “~2.2.0”, “parseurl”: “~1.3.0”, “path-to-regexp”: “0.1.3”, “proxy-addr”: “~1.0.6”, “qs”: “2.3.3”, “range-parser”: “~1.0.2”, “send”: “0.11.1”, “serve-static”: “~1.8.1”, “type-is”: “~1.5.6”, “vary”: “~1.0.0”, “cookie”: “0.1.2”, “merge-descriptors”: “0.0.2”, “utils-merge”: “1.0.0” }, “devDependencies”: { “after”: “0.8.1”, “ejs”: “2.1.4”, “istanbul”: “0.3.5”, “marked”: “0.3.3”, “mocha”: “~2.1.0”, “should”: “~4.6.2”, “supertest”: “~0.15.0”, “hjs”: “~0.0.6”, “body-parser”: “~1.11.0”, “connect-redis”: “~2.2.0”, “cookie-parser”: “~1.3.3”, “express-session”: “~1.10.2”, “jade”: “~1.9.1”, “method-override”: “~2.3.1”, “morgan”: “~1.5.1”, “multiparty”: “~4.1.1”, “vhost”: “~3.0.0” }, “engines”: { “node”: “&gt;= 0.10.0” }, “files”: [ “LICENSE”, “History.md”, “Readme.md”, “index.js”, “lib/” ], “scripts”: { “test”: “mocha –require test/support/env –reporter spec –bail –check-leaks test/ test/acceptance/”, “test-cov”: “istanbul cover node_modules/mocha/bin/_mocha – –require test/support/env –reporter dot –check-leaks test/ test/acceptance/”, “test-tap”: “mocha –require test/support/env –reporter tap –check-leaks test/ test/acceptance/”, “test-travis”: “istanbul cover node_modules/mocha/bin/_mocha –report lcovonly – –require test/support/env –reporter spec –check-leaks test/ test/acceptance/” }, “gitHead”: “63ab25579bda70b4927a179b580a9c580b6c7ada”, “bugs”: { “url”: “https://github.com/strongloop/express/issues” }, “_id”: “express@4.11.2”, “_shasum”: “8df3d5a9ac848585f00a0777601823faecd3b148”, “_from”: “express@*”, “_npmVersion”: “1.4.28”, “_npmUser”: { “name”: “dougwilson”, “email”: “doug@somethingdoug.com” }, “maintainers”: [{ “name”: “tjholowaychuk”, “email”: “tj@vision-media.ca” }, { “name”: “jongleberry”, “email”: “jonathanrichardong@gmail.com” }, { “name”: “shtylman”, “email”: “shtylman@gmail.com” }, { “name”: “dougwilson”, “email”: “doug@somethingdoug.com” }, { “name”: “aredridel”, “email”: “aredridel@nbtsc.org” }, { “name”: “strongloop”, “email”: “callback@strongloop.com” }, { “name”: “rfeng”, “email”: “enjoyjava@gmail.com” }], “dist”: { “shasum”: “8df3d5a9ac848585f00a0777601823faecd3b148”, “tarball”: “https://registry.npmjs.org/express/-/express-4.11.2.tgz” }, “directories”: {}, “_resolved”: “https://registry.npmjs.org/express/-/express-4.11.2.tgz”, “readme”: “ERROR: No README data found!” }</p>
+<h2 id="attributes-of-package.json">Attributes of Package.json</h2>
+<ul>
+<li><strong>name</strong> − name of the package</li>
+<li><strong>version</strong> − version of the package</li>
+<li><strong>description</strong> − description of the package</li>
+<li><strong>homepage</strong> − homepage of the package</li>
+<li><strong>author</strong> − author of the package</li>
+<li><strong>contributors</strong> − name of the contributors to the package</li>
+<li><strong>dependencies</strong> − list of dependencies. NPM automatically installs all the dependencies mentioned here in the node_module folder of the package.</li>
+<li><strong>repository</strong> − repository type and URL of the package</li>
+<li><strong>main</strong> − entry point of the package</li>
+<li><strong>keywords</strong> − keywords</li>
+</ul>
+<h2 id="uninstalling-a-module">Uninstalling a Module</h2>
+<p>Use the following command to uninstall a Node.js module.</p>
+<p>$ npm uninstall express</p>
+<p>Once NPM uninstalls the package, you can verify it by looking at the content of /node_modules/ directory or type the following command −</p>
+<p>$ npm ls</p>
+<h2 id="updating-a-module">Updating a Module</h2>
+<p>Update package.json and change the version of the dependency to be updated and run the following command.</p>
+<p>$ npm update express</p>
+<h2 id="search-a-module">Search a Module</h2>
+<p>Search a package name using NPM.</p>
+<p>$ npm search express</p>
+<h2 id="create-a-module">Create a Module</h2>
+<p>Creating a module requires package.json to be generated. Let’s generate package.json using NPM, which will generate the basic skeleton of the package.json.</p>
+<p>$ npm init This utility will walk you through creating a package.json file. It only covers the most common items, and tries to guess sane defaults.</p>
+<p>See ‘npm help json’ for definitive documentation on these fields and exactly what they do.</p>
+<p>Use ‘npm install <pkg> –save’ afterwards to install a package and save it as a dependency in the package.json file.</p>
+<p>Press ^C at any time to quit. name: (webmaster)</p>
+<p>You will need to provide all the required information about your module. You can take help from the above-mentioned package.json file to understand the meanings of various information demanded. Once package.json is generated, use the following command to register yourself with NPM repository site using a valid email address.</p>
+<p>$ npm adduser Username: mcmohd Password: Email: (this IS public) mcmohd@gmail.com</p>
+<p>It is time now to publish your module −</p>
+<p>$ npm publish</p>
+<p>If everything is fine with your module, then it will be published in the repository and will be accessible to install using NPM like any other Node.js module.</p>
+<h2 id="what-is-callback">What is Callback?</h2>
+<p>Callback is an asynchronous equivalent for a function. A callback function is called at the completion of a given task. Node makes heavy use of callbacks. All the APIs of Node are written in such a way that they support callbacks.</p>
+<p>For example, a function to read a file may start reading file and return the control to the execution environment immediately so that the next instruction can be executed. Once file I/O is complete, it will call the callback function while passing the callback function, the content of the file as a parameter. So there is no blocking or wait for File I/O. This makes Node.js highly scalable, as it can process a high number of requests without waiting for any function to return results.</p>
+<h2 id="blocking-code-example">Blocking Code Example</h2>
+<p>Create a text file named <strong>input.txt</strong> with the following content −</p>
+<p>Tutorials Point is giving self learning content to teach the world in simple and easy way!!!!!</p>
+<p>Create a js file named <strong>main.js</strong> with the following code −</p>
+<p>var fs = require(“fs”); var data = fs.readFileSync(‘input.txt’); console.log(data.toString()); console.log(“Program Ended”);</p>
+<p>Now run the main.js to see the result −</p>
+<p>$ node main.js</p>
+<p>Verify the Output.</p>
+<p>Tutorials Point is giving self learning content to teach the world in simple and easy way!!!!! Program Ended</p>
+<h2 id="non-blocking-code-example">Non-Blocking Code Example</h2>
+<p>Create a text file named input.txt with the following content.</p>
+<p>Tutorials Point is giving self learning content to teach the world in simple and easy way!!!!!</p>
+<p>Update main.js to have the following code −</p>
+<p>var fs = require(“fs”); fs.readFile(‘input.txt’, function (err, data) { if (err) return console.error(err); console.log(data.toString()); }); console.log(“Program Ended”);</p>
+<p>Now run the main.js to see the result −</p>
+<p>$ node main.js</p>
+<p>Verify the Output.</p>
+<p>Program Ended Tutorials Point is giving self learning content to teach the world in simple and easy way!!!!!</p>
+<p>These two examples explain the concept of blocking and non-blocking calls.</p>
+<ul>
+<li>The first example shows that the program blocks until it reads the file and then only it proceeds to end the program.</li>
+<li>The second example shows that the program does not wait for file reading and proceeds to print “Program Ended” and at the same time, the program without blocking continues reading the file.</li>
+</ul>
+<p>Thus, a blocking program executes very much in sequence. From the programming point of view, it is easier to implement the logic but non-blocking programs do not execute in sequence. In case a program needs to use any data to be processed, it should be kept within the same block to make it sequential execution.</p>
+<p>Node.js is a single-threaded application, but it can support concurrency via the concept of <strong>event</strong> and <strong>callbacks</strong>. Every API of Node.js is asynchronous and being single-threaded, they use <strong>async function calls</strong> to maintain concurrency. Node uses observer pattern. Node thread keeps an event loop and whenever a task gets completed, it fires the corresponding event which signals the event-listener function to execute.</p>
+<h2 id="event-driven-programming">Event-Driven Programming</h2>
+<p>Node.js uses events heavily and it is also one of the reasons why Node.js is pretty fast compared to other similar technologies. As soon as Node starts its server, it simply initiates its variables, declares functions and then simply waits for the event to occur.</p>
+<p>In an event-driven application, there is generally a main loop that listens for events, and then triggers a callback function when one of those events is detected.</p>
+<figure>
+<img src="https://www.tutorialspoint.com/nodejs/images/event_loop.jpg" alt="Event Loop" /><figcaption>Event Loop</figcaption>
+</figure>
+<p>Although events look quite similar to callbacks, the difference lies in the fact that callback functions are called when an asynchronous function returns its result, whereas event handling works on the observer pattern. The functions that listen to events act as <strong>Observers</strong>. Whenever an event gets fired, its listener function starts executing. Node.js has multiple in-built events available through events module and EventEmitter class which are used to bind events and event-listeners as follows −</p>
+<p>// Import events module var events = require(‘events’);</p>
+<p>// Create an eventEmitter object var eventEmitter = new events.EventEmitter();</p>
+<p>Following is the syntax to bind an event handler with an event −</p>
+<p>// Bind event and event handler as follows eventEmitter.on(‘eventName’, eventHandler);</p>
+<p>We can fire an event programmatically as follows −</p>
+<p>// Fire an event eventEmitter.emit(‘eventName’);</p>
+<h2 id="example">Example</h2>
+<p>Create a js file named main.js with the following code −</p>
+<p>// Import events module var events = require(‘events’); // Create an eventEmitter object var eventEmitter = new events.EventEmitter(); // Create an event handler as follows var connectHandler = function connected() { console.log(‘connection succesful.’); // Fire the data_received event eventEmitter.emit(‘data_received’); } // Bind the connection event with the handler eventEmitter.on(‘connection’, connectHandler); // Bind the data_received event with the anonymous function eventEmitter.on(‘data_received’, function() { console.log(‘data received succesfully.’); }); // Fire the connection event eventEmitter.emit(‘connection’); console.log(“Program Ended.”);</p>
+<p>Now let’s try to run the above program and check its output −</p>
+<p>$ node main.js</p>
+<p>IT should produce the following result −</p>
+<p>connection successful. data received successfully. Program Ended.</p>
+<h2 id="how-node-applications-work">How Node Applications Work?</h2>
+<p>In Node Application, any async function accepts a callback as the last parameter and a callback function accepts an error as the first parameter. Let’s revisit the previous example again. Create a text file named input.txt with the following content.</p>
+<p>Tutorials Point is giving self learning content to teach the world in simple and easy way!!!!!</p>
+<p>Create a js file named main.js having the following code −</p>
+<p>var fs = require(“fs”); fs.readFile(‘input.txt’, function (err, data) { if (err) { console.log(err.stack); return; } console.log(data.toString()); }); console.log(“Program Ended”);</p>
+<p>Here fs.readFile() is a async function whose purpose is to read a file. If an error occurs during the read operation, then the <strong>err object</strong> will contain the corresponding error, else data will contain the contents of the file. <strong>readFile</strong> passes err and data to the callback function after the read operation is complete, which finally prints the content.</p>
+<p>Program Ended Tutorials Point is giving self learning content to teach the world in simple and easy way!!!!!</p>
+<p>Many objects in a Node emit events, for example, a net.Server emits an event each time a peer connects to it, an fs.readStream emits an event when the file is opened. All objects which emit events are the instances of events.EventEmitter.</p>
+<h2 id="eventemitter-class">EventEmitter Class</h2>
+<p>As we have seen in the previous section, EventEmitter class lies in the events module. It is accessible via the following code −</p>
+<p>// Import events module var events = require(‘events’);</p>
+<p>// Create an eventEmitter object var eventEmitter = new events.EventEmitter();</p>
+<p>When an EventEmitter instance faces any error, it emits an ‘error’ event. When a new listener is added, ‘newListener’ event is fired and when a listener is removed, ‘removeListener’ event is fired.</p>
+<p>EventEmitter provides multiple properties like <strong>on</strong> and <strong>emit</strong>. <strong>on</strong> property is used to bind a function with the event and <strong>emit</strong> is used to fire an event.</p>
+<h2 id="methods">Methods</h2>
+<p>Sr.No.</p>
+<p>Method &amp; Description</p>
+<p>1</p>
+<p><strong>addListener(event, listener)</strong></p>
+<p>Adds a listener at the end of the listeners array for the specified event. No checks are made to see if the listener has already been added. Multiple calls passing the same combination of event and listener will result in the listener being added multiple times. Returns emitter, so calls can be chained.</p>
+<p>2</p>
+<p><strong>on(event, listener)</strong></p>
+<p>Adds a listener at the end of the listeners array for the specified event. No checks are made to see if the listener has already been added. Multiple calls passing the same combination of event and listener will result in the listener being added multiple times. Returns emitter, so calls can be chained.</p>
+<p>3</p>
+<p><strong>once(event, listener)</strong></p>
+<p>Adds a one time listener to the event. This listener is invoked only the next time the event is fired, after which it is removed. Returns emitter, so calls can be chained.</p>
+<p>4</p>
+<p><strong>removeListener(event, listener)</strong></p>
+<p>Removes a listener from the listener array for the specified event. <strong>Caution −</strong> It changes the array indices in the listener array behind the listener. removeListener will remove, at most, one instance of a listener from the listener array. If any single listener has been added multiple times to the listener array for the specified event, then removeListener must be called multiple times to remove each instance. Returns emitter, so calls can be chained.</p>
+<p>5</p>
+<p><strong>removeAllListeners([event])</strong></p>
+<p>Removes all listeners, or those of the specified event. It’s not a good idea to remove listeners that were added elsewhere in the code, especially when it’s on an emitter that you didn’t create (e.g. sockets or file streams). Returns emitter, so calls can be chained.</p>
+<p>6</p>
+<p><strong>setMaxListeners(n)</strong></p>
+<p>By default, EventEmitters will print a warning if more than 10 listeners are added for a particular event. This is a useful default which helps finding memory leaks. Obviously not all Emitters should be limited to 10. This function allows that to be increased. Set to zero for unlimited.</p>
+<p>7</p>
+<p><strong>listeners(event)</strong></p>
+<p>Returns an array of listeners for the specified event.</p>
+<p>8</p>
+<p><strong>emit(event, [arg1], [arg2], […])</strong></p>
+<p>Execute each of the listeners in order with the supplied arguments. Returns true if the event had listeners, false otherwise.</p>
+<h2 id="class-methods">Class Methods</h2>
+<p>Sr.No.</p>
+<p>Method &amp; Description</p>
+<p>1</p>
+<p><strong>listenerCount(emitter, event)</strong></p>
+<p>Returns the number of listeners for a given event.</p>
+<h2 id="events">Events</h2>
+<p>Sr.No.</p>
+<p>Events &amp; Description</p>
+<p>1</p>
+<p><strong>newListener</strong></p>
+<ul>
+<li><strong>event</strong> − String: the event name</li>
+<li><strong>listener</strong> − Function: the event handler function</li>
+</ul>
+<p>This event is emitted any time a listener is added. When this event is triggered, the listener may not yet have been added to the array of listeners for the event.</p>
+<p>2</p>
+<p><strong>removeListener</strong></p>
+<ul>
+<li><strong>event</strong> − String The event name</li>
+<li><strong>listener</strong> − Function The event handler function</li>
+</ul>
+<p>This event is emitted any time someone removes a listener. When this event is triggered, the listener may not yet have been removed from the array of listeners for the event.</p>
+<h2 id="example-1">Example</h2>
+<p>Create a js file named main.js with the following Node.js code −</p>
+<p>var events = require(‘events’); var eventEmitter = new events.EventEmitter(); // listener #1 var listner1 = function listner1() { console.log(‘listner1 executed.’); } // listener #2 var listner2 = function listner2() { console.log(‘listner2 executed.’); } // Bind the connection event with the listner1 function eventEmitter.addListener(‘connection’, listner1); // Bind the connection event with the listner2 function eventEmitter.on(‘connection’, listner2); var eventListeners = require(‘events’).EventEmitter.listenerCount (eventEmitter,‘connection’); console.log(eventListeners + " Listner(s) listening to connection event“); // Fire the connection event eventEmitter.emit(‘connection’); // Remove the binding of listner1 function eventEmitter.removeListener(‘connection’, listner1); console.log(”Listner1 will not listen now.“); // Fire the connection event eventEmitter.emit(‘connection’); eventListeners = require(‘events’).EventEmitter.listenerCount(eventEmitter,‘connection’); console.log(eventListeners +” Listner(s) listening to connection event“); console.log(”Program Ended.");</p>
+<p>Now run the main.js to see the result −</p>
+<p>$ node main.js</p>
+<p>Verify the Output.</p>
+<p>2 Listner(s) listening to connection event listner1 executed. listner2 executed. Listner1 will not listen now. listner2 executed. 1 Listner(s) listening to connection event Program Ended.</p>
+<p>Pure JavaScript is Unicode friendly, but it is not so for binary data. While dealing with TCP streams or the file system, it’s necessary to handle octet streams. Node provides Buffer class which provides instances to store raw data similar to an array of integers but corresponds to a raw memory allocation outside the V8 heap.</p>
+<p>Buffer class is a global class that can be accessed in an application without importing the buffer module.</p>
+<h2 id="creating-buffers">Creating Buffers</h2>
+<p>Node Buffer can be constructed in a variety of ways.</p>
+<h3 id="method-1">Method 1</h3>
+<p>Following is the syntax to create an uninitiated Buffer of <strong>10</strong> octets −</p>
+<p>var buf = new Buffer(10);</p>
+<h3 id="method-2">Method 2</h3>
+<p>Following is the syntax to create a Buffer from a given array −</p>
+<p>var buf = new Buffer([10, 20, 30, 40, 50]);</p>
+<h3 id="method-3">Method 3</h3>
+<p>Following is the syntax to create a Buffer from a given string and optionally encoding type −</p>
+<p>var buf = new Buffer(“Simply Easy Learning”, “utf-8”);</p>
+<p>Though “utf8” is the default encoding, you can use any of the following encodings “ascii”, “utf8”, “utf16le”, “ucs2”, “base64” or “hex”.</p>
+<h2 id="writing-to-buffers">Writing to Buffers</h2>
+<h3 id="syntax">Syntax</h3>
+<p>Following is the syntax of the method to write into a Node Buffer −</p>
+<p>buf.write(string[, offset][, length][, encoding])</p>
+<h3 id="parameters">Parameters</h3>
+<p>Here is the description of the parameters used −</p>
+<ul>
+<li><strong>string</strong> − This is the string data to be written to buffer.</li>
+<li><strong>offset</strong> − This is the index of the buffer to start writing at. Default value is 0.</li>
+<li><strong>length</strong> − This is the number of bytes to write. Defaults to buffer.length.</li>
+<li><strong>encoding</strong> − Encoding to use. ‘utf8’ is the default encoding.</li>
+</ul>
+<h3 id="return-value">Return Value</h3>
+<p>This method returns the number of octets written. If there is not enough space in the buffer to fit the entire string, it will write a part of the string.</p>
+<h3 id="example-2">Example</h3>
+<p>buf = new Buffer(256); len = buf.write(“Simply Easy Learning”); console.log(“Octets written :”+ len);</p>
+<p>When the above program is executed, it produces the following result −</p>
+<p>Octets written : 20</p>
+<h2 id="reading-from-buffers">Reading from Buffers</h2>
+<h3 id="syntax-1">Syntax</h3>
+<p>Following is the syntax of the method to read data from a Node Buffer −</p>
+<p>buf.toString([encoding][, start][, end])</p>
+<h3 id="parameters-1">Parameters</h3>
+<p>Here is the description of the parameters used −</p>
+<ul>
+<li><strong>encoding</strong> − Encoding to use. ‘utf8’ is the default encoding.</li>
+<li><strong>start</strong> − Beginning index to start reading, defaults to 0.</li>
+<li><strong>end</strong> − End index to end reading, defaults is complete buffer.</li>
+</ul>
+<h3 id="return-value-1">Return Value</h3>
+<p>This method decodes and returns a string from buffer data encoded using the specified character set encoding.</p>
+<h3 id="example-3">Example</h3>
+<p>buf = new Buffer(26); for (var i = 0 ; i &lt; 26 ; i++) { buf[i] = i + 97; } console.log( buf.toString(‘ascii’)); // outputs: abcdefghijklmnopqrstuvwxyz console.log( buf.toString(‘ascii’,0,5)); // outputs: abcde console.log( buf.toString(‘utf8’,0,5)); // outputs: abcde console.log( buf.toString(undefined,0,5)); // encoding defaults to ‘utf8’, outputs abcde</p>
+<p>When the above program is executed, it produces the following result −</p>
+<p>abcdefghijklmnopqrstuvwxyz abcde abcde abcde</p>
+<h2 id="convert-buffer-to-json">Convert Buffer to JSON</h2>
+<h3 id="syntax-2">Syntax</h3>
+<p>Following is the syntax of the method to convert a Node Buffer into JSON object −</p>
+<p>buf.toJSON()</p>
+<h3 id="return-value-2">Return Value</h3>
+<p>This method returns a JSON-representation of the Buffer instance.</p>
+<h3 id="example-4">Example</h3>
+<p>var buf = new Buffer(‘Simply Easy Learning’); var json = buf.toJSON(buf); console.log(json);</p>
+<p>When the above program is executed, it produces the following result −</p>
+<p>{ type: ‘Buffer’, data: [ 83, 105, 109, 112, 108, 121, 32, 69, 97, 115, 121, 32, 76, 101, 97, 114, 110, 105, 110, 103 ] }</p>
+<h2 id="concatenate-buffers">Concatenate Buffers</h2>
+<h3 id="syntax-3">Syntax</h3>
+<p>Following is the syntax of the method to concatenate Node buffers to a single Node Buffer −</p>
+<p>Buffer.concat(list[, totalLength])</p>
+<h3 id="parameters-2">Parameters</h3>
+<p>Here is the description of the parameters used −</p>
+<ul>
+<li><strong>list</strong> − Array List of Buffer objects to be concatenated.</li>
+<li><strong>totalLength</strong> − This is the total length of the buffers when concatenated.</li>
+</ul>
+<h3 id="return-value-3">Return Value</h3>
+<p>This method returns a Buffer instance.</p>
+<h3 id="example-5">Example</h3>
+<p>var buffer1 = new Buffer(‘TutorialsPoint’); var buffer2 = new Buffer(‘Simply Easy Learning’); var buffer3 = Buffer.concat([buffer1,buffer2]); console.log(“buffer3 content:” + buffer3.toString());</p>
+<p>When the above program is executed, it produces the following result −</p>
+<p>buffer3 content: TutorialsPoint Simply Easy Learning</p>
+<h2 id="compare-buffers">Compare Buffers</h2>
+<h3 id="syntax-4">Syntax</h3>
+<p>Following is the syntax of the method to compare two Node buffers −</p>
+<p>buf.compare(otherBuffer);</p>
+<h3 id="parameters-3">Parameters</h3>
+<p>Here is the description of the parameters used −</p>
+<ul>
+<li><strong>otherBuffer</strong> − This is the other buffer which will be compared with <strong>buf</strong></li>
+</ul>
+<h3 id="return-value-4">Return Value</h3>
+<p>Returns a number indicating whether it comes before or after or is the same as the otherBuffer in sort order.</p>
+<h3 id="example-6">Example</h3>
+<p>var buffer1 = new Buffer(‘ABC’); var buffer2 = new Buffer(‘ABCD’); var result = buffer1.compare(buffer2); if(result &lt; 0) { console.log(buffer1 +" comes before " + buffer2); } else if(result === 0) { console.log(buffer1 +" is same as " + buffer2); } else { console.log(buffer1 +" comes after " + buffer2); }</p>
+<p>When the above program is executed, it produces the following result −</p>
+<p>ABC comes before ABCD</p>
+<h2 id="copy-buffer">Copy Buffer</h2>
+<h3 id="syntax-5">Syntax</h3>
+<p>Following is the syntax of the method to copy a node buffer −</p>
+<p>buf.copy(targetBuffer[, targetStart][, sourceStart][, sourceEnd])</p>
+<h3 id="parameters-4">Parameters</h3>
+<p>Here is the description of the parameters used −</p>
+<ul>
+<li><strong>targetBuffer</strong> − Buffer object where buffer will be copied.</li>
+<li><strong>targetStart</strong> − Number, Optional, Default: 0</li>
+<li><strong>sourceStart</strong> − Number, Optional, Default: 0</li>
+<li><strong>sourceEnd</strong> − Number, Optional, Default: buffer.length</li>
+</ul>
+<h3 id="return-value-5">Return Value</h3>
+<p>No return value. Copies data from a region of this buffer to a region in the target buffer even if the target memory region overlaps with the source. If undefined, the targetStart and sourceStart parameters default to 0, while sourceEnd defaults to buffer.length.</p>
+<h3 id="example-7">Example</h3>
+<p>var buffer1 = new Buffer(‘ABC’); //copy a buffer var buffer2 = new Buffer(3); buffer1.copy(buffer2); console.log(“buffer2 content:” + buffer2.toString());</p>
+<p>When the above program is executed, it produces the following result −</p>
+<p>buffer2 content: ABC</p>
+<h2 id="slice-buffer">Slice Buffer</h2>
+<h3 id="syntax-6">Syntax</h3>
+<p>Following is the syntax of the method to get a sub-buffer of a node buffer −</p>
+<p>buf.slice([start][, end])</p>
+<h3 id="parameters-5">Parameters</h3>
+<p>Here is the description of the parameters used −</p>
+<ul>
+<li><strong>start</strong> − Number, Optional, Default: 0</li>
+<li><strong>end</strong> − Number, Optional, Default: buffer.length</li>
+</ul>
+<h3 id="return-value-6">Return Value</h3>
+<p>Returns a new buffer which references the same memory as the old one, but offset and cropped by the start (defaults to 0) and end (defaults to buffer.length) indexes. Negative indexes start from the end of the buffer.</p>
+<h3 id="example-8">Example</h3>
+<p>var buffer1 = new Buffer(‘TutorialsPoint’); //slicing a buffer var buffer2 = buffer1.slice(0,9); console.log(“buffer2 content:” + buffer2.toString());</p>
+<p>When the above program is executed, it produces the following result −</p>
+<p>buffer2 content: Tutorials</p>
+<h2 id="buffer-length">Buffer Length</h2>
+<h3 id="syntax-7">Syntax</h3>
+<p>Following is the syntax of the method to get a size of a node buffer in bytes −</p>
+<p>buf.length;</p>
+<h3 id="return-value-7">Return Value</h3>
+<p>Returns the size of a buffer in bytes.</p>
+<h3 id="example-9">Example</h3>
+<p>var buffer = new Buffer(‘TutorialsPoint’); //length of the buffer console.log(“buffer length:” + buffer.length);</p>
+<p>When the above program is executed, it produces following result −</p>
+<p>buffer length: 14</p>
+<h2 id="methods-reference">Methods Reference</h2>
+<p>Following is a reference of Buffers module available in Node.js. For more detail, you can refer to the official documentation.</p>
+<h2 id="class-methods-1">Class Methods</h2>
+<p>Sr.No.</p>
+<p>Method &amp; Description</p>
+<p>1</p>
+<p><strong>Buffer.isEncoding(encoding)</strong></p>
+<p>Returns true if the encoding is a valid encoding argument, false otherwise.</p>
+<p>2</p>
+<p><strong>Buffer.isBuffer(obj)</strong></p>
+<p>Tests if obj is a Buffer.</p>
+<p>3</p>
+<p><strong>Buffer.byteLength(string[, encoding])</strong></p>
+<p>Gives the actual byte length of a string. encoding defaults to ‘utf8’. It is not the same as String.prototype.length, since String.prototype.length returns the number of characters in a string.</p>
+<p>4</p>
+<p><strong>Buffer.concat(list[, totalLength])</strong></p>
+<p>Returns a buffer which is the result of concatenating all the buffers in the list together.</p>
+<p>5</p>
+<p><strong>Buffer.compare(buf1, buf2)</strong></p>
+<p>The same as buf1.compare(buf2). Useful for sorting an array of buffers.</p>
+<h2 id="what-are-streams">What are Streams?</h2>
+<p>Streams are objects that let you read data from a source or write data to a destination in continuous fashion. In Node.js, there are four types of streams −</p>
+<ul>
+<li><strong>Readable</strong> − Stream which is used for read operation.</li>
+<li><strong>Writable</strong> − Stream which is used for write operation.</li>
+<li><strong>Duplex</strong> − Stream which can be used for both read and write operation.</li>
+<li><strong>Transform</strong> − A type of duplex stream where the output is computed based on input.</li>
+</ul>
+<p>Each type of Stream is an <strong>EventEmitter</strong> instance and throws several events at different instance of times. For example, some of the commonly used events are −</p>
+<ul>
+<li><strong>data</strong> − This event is fired when there is data is available to read.</li>
+<li><strong>end</strong> − This event is fired when there is no more data to read.</li>
+<li><strong>error</strong> − This event is fired when there is any error receiving or writing data.</li>
+<li><strong>finish</strong> − This event is fired when all the data has been flushed to underlying system.</li>
+</ul>
+<p>This tutorial provides a basic understanding of the commonly used operations on Streams.</p>
+<h2 id="reading-from-a-stream">Reading from a Stream</h2>
+<p>Create a text file named input.txt having the following content −</p>
+<p>Tutorials Point is giving self learning content to teach the world in simple and easy way!!!!!</p>
+<p>Create a js file named main.js with the following code −</p>
+<p>var fs = require(“fs”); var data = ’‘; // Create a readable stream var readerStream = fs.createReadStream(’input.txt’); // Set the encoding to be utf8. readerStream.setEncoding(‘UTF8’); // Handle stream events –&gt; data, end, and error readerStream.on(‘data’, function(chunk) { data += chunk; }); readerStream.on(‘end’,function() { console.log(data); }); readerStream.on(‘error’, function(err) { console.log(err.stack); }); console.log(“Program Ended”);</p>
+<p>Now run the main.js to see the result −</p>
+<p>$ node main.js</p>
+<p>Verify the Output.</p>
+<p>Program Ended Tutorials Point is giving self learning content to teach the world in simple and easy way!!!!!</p>
+<h2 id="writing-to-a-stream">Writing to a Stream</h2>
+<p>Create a js file named main.js with the following code −</p>
+<p>var fs = require(“fs”); var data = ‘Simply Easy Learning’; // Create a writable stream var writerStream = fs.createWriteStream(‘output.txt’); // Write the data to stream with encoding to be utf8 writerStream.write(data,‘UTF8’); // Mark the end of file writerStream.end(); // Handle stream events –&gt; finish, and error writerStream.on(‘finish’, function() { console.log(“Write completed.”); }); writerStream.on(‘error’, function(err) { console.log(err.stack); }); console.log(“Program Ended”);</p>
+<p>Now run the main.js to see the result −</p>
+<p>$ node main.js</p>
+<p>Verify the Output.</p>
+<p>Program Ended Write completed.</p>
+<p>Now open output.txt created in your current directory; it should contain the following −</p>
+<p>Simply Easy Learning</p>
+<h2 id="piping-the-streams">Piping the Streams</h2>
+<p>Piping is a mechanism where we provide the output of one stream as the input to another stream. It is normally used to get data from one stream and to pass the output of that stream to another stream. There is no limit on piping operations. Now we’ll show a piping example for reading from one file and writing it to another file.</p>
+<p>Create a js file named main.js with the following code −</p>
+<p>var fs = require(“fs”); // Create a readable stream var readerStream = fs.createReadStream(‘input.txt’); // Create a writable stream var writerStream = fs.createWriteStream(‘output.txt’); // Pipe the read and write operations // read input.txt and write data to output.txt readerStream.pipe(writerStream); console.log(“Program Ended”);</p>
+<p>Now run the main.js to see the result −</p>
+<p>$ node main.js</p>
+<p>Verify the Output.</p>
+<p>Program Ended</p>
+<p>Open output.txt created in your current directory; it should contain the following −</p>
+<p>Tutorials Point is giving self learning content to teach the world in simple and easy way!!!!!</p>
+<h2 id="chaining-the-streams">Chaining the Streams</h2>
+<p>Chaining is a mechanism to connect the output of one stream to another stream and create a chain of multiple stream operations. It is normally used with piping operations. Now we’ll use piping and chaining to first compress a file and then decompress the same.</p>
+<p>Create a js file named main.js with the following code −</p>
+<p>var fs = require(“fs”); var zlib = require(‘zlib’); // Compress the file input.txt to input.txt.gz fs.createReadStream(‘input.txt’) .pipe(zlib.createGzip()) .pipe(fs.createWriteStream(‘input.txt.gz’)); console.log(“File Compressed.”);</p>
+<p>Now run the main.js to see the result −</p>
+<p>$ node main.js</p>
+<p>Verify the Output.</p>
+<p>File Compressed.</p>
+<p>You will find that input.txt has been compressed and it created a file input.txt.gz in the current directory. Now let’s try to decompress the same file using the following code −</p>
+<p>var fs = require(“fs”); var zlib = require(‘zlib’); // Decompress the file input.txt.gz to input.txt fs.createReadStream(‘input.txt.gz’) .pipe(zlib.createGunzip()) .pipe(fs.createWriteStream(‘input.txt’)); console.log(“File Decompressed.”);</p>
+<p>Now run the main.js to see the result −</p>
+<p>$ node main.js</p>
+<p>Verify the Output.</p>
+<p>File Decompressed.</p>
+<p>Node implements File I/O using simple wrappers around standard POSIX functions. The Node File System (fs) module can be imported using the following syntax −</p>
+<p>var fs = require(“fs”)</p>
+<h2 id="synchronous-vs-asynchronous">Synchronous vs Asynchronous</h2>
+<p>Every method in the fs module has synchronous as well as asynchronous forms. Asynchronous methods take the last parameter as the completion function callback and the first parameter of the callback function as error. It is better to use an asynchronous method instead of a synchronous method, as the former never blocks a program during its execution, whereas the second one does.</p>
+<h3 id="example-10">Example</h3>
+<p>Create a text file named <strong>input.txt</strong> with the following content −</p>
+<p>Tutorials Point is giving self learning content to teach the world in simple and easy way!!!!!</p>
+<p>Let us create a js file named <strong>main.js</strong> with the following code −</p>
+<p>var fs = require(“fs”); // Asynchronous read fs.readFile(‘input.txt’, function (err, data) { if (err) { return console.error(err); } console.log(“Asynchronous read:” + data.toString()); }); // Synchronous read var data = fs.readFileSync(‘input.txt’); console.log(“Synchronous read:” + data.toString()); console.log(“Program Ended”);</p>
+<p>Now run the main.js to see the result −</p>
+<p>$ node main.js</p>
+<p>Verify the Output.</p>
+<p>Synchronous read: Tutorials Point is giving self learning content to teach the world in simple and easy way!!!!!</p>
+<p>Program Ended Asynchronous read: Tutorials Point is giving self learning content to teach the world in simple and easy way!!!!!</p>
+<p>The following sections in this chapter provide a set of good examples on major File I/O methods.</p>
+<h2 id="open-a-file">Open a File</h2>
+<h3 id="syntax-8">Syntax</h3>
+<p>Following is the syntax of the method to open a file in asynchronous mode −</p>
+<p>fs.open(path, flags[, mode], callback)</p>
+<h3 id="parameters-6">Parameters</h3>
+<p>Here is the description of the parameters used −</p>
+<ul>
+<li><strong>path</strong> − This is the string having file name including path.</li>
+<li><strong>flags</strong> − Flags indicate the behavior of the file to be opened. All possible values have been mentioned below.</li>
+<li><strong>mode</strong> − It sets the file mode (permission and sticky bits), but only if the file was created. It defaults to 0666, readable and writeable.</li>
+<li><strong>callback</strong> − This is the callback function which gets two arguments (err, fd).</li>
+</ul>
+<h2 id="flags">Flags</h2>
+<p>Flags for read/write operations are −</p>
+<p>Sr.No.</p>
+<p>Flag &amp; Description</p>
+<p>1</p>
+<p><strong>r</strong></p>
+<p>Open file for reading. An exception occurs if the file does not exist.</p>
+<p>2</p>
+<p><strong>r+</strong></p>
+<p>Open file for reading and writing. An exception occurs if the file does not exist.</p>
+<p>3</p>
+<p><strong>rs</strong></p>
+<p>Open file for reading in synchronous mode.</p>
+<p>4</p>
+<p><strong>rs+</strong></p>
+<p>Open file for reading and writing, asking the OS to open it synchronously. See notes for ‘rs’ about using this with caution.</p>
+<p>5</p>
+<p><strong>w</strong></p>
+<p>Open file for writing. The file is created (if it does not exist) or truncated (if it exists).</p>
+<p>6</p>
+<p><strong>wx</strong></p>
+<p>Like ‘w’ but fails if the path exists.</p>
+<p>7</p>
+<p><strong>w+</strong></p>
+<p>Open file for reading and writing. The file is created (if it does not exist) or truncated (if it exists).</p>
+<p>8</p>
+<p><strong>wx+</strong></p>
+<p>Like ‘w+’ but fails if path exists.</p>
+<p>9</p>
+<p><strong>a</strong></p>
+<p>Open file for appending. The file is created if it does not exist.</p>
+<p>10</p>
+<p><strong>ax</strong></p>
+<p>Like ‘a’ but fails if the path exists.</p>
+<p>11</p>
+<p><strong>a+</strong></p>
+<p>Open file for reading and appending. The file is created if it does not exist.</p>
+<p>12</p>
+<p><strong>ax+</strong></p>
+<p>Like ‘a+’ but fails if the the path exists.</p>
+<h3 id="example-11">Example</h3>
+<p>Let us create a js file named <strong>main.js</strong> having the following code to open a file input.txt for reading and writing.</p>
+<p>var fs = require(“fs”); // Asynchronous - Opening File console.log(“Going to open file!”); fs.open(‘input.txt’, ‘r+’, function(err, fd) { if (err) { return console.error(err); } console.log(“File opened successfully!”); });</p>
+<p>Now run the main.js to see the result −</p>
+<p>$ node main.js</p>
+<p>Verify the Output.</p>
+<p>Going to open file! File opened successfully!</p>
+<h2 id="get-file-information">Get File Information</h2>
+<h3 id="syntax-9">Syntax</h3>
+<p>Following is the syntax of the method to get the information about a file −</p>
+<p>fs.stat(path, callback)</p>
+<h3 id="parameters-7">Parameters</h3>
+<p>Here is the description of the parameters used −</p>
+<ul>
+<li><strong>path</strong> − This is the string having file name including path.</li>
+<li><strong>callback</strong> − This is the callback function which gets two arguments (err, stats) where <strong>stats</strong> is an object of fs.Stats type which is printed below in the example.</li>
+</ul>
+<p>Apart from the important attributes which are printed below in the example, there are several useful methods available in <strong>fs.Stats</strong> class which can be used to check file type. These methods are given in the following table.</p>
+<p>Sr.No.</p>
+<p>Method &amp; Description</p>
+<p>1</p>
+<p><strong>stats.isFile()</strong></p>
+<p>Returns true if file type of a simple file.</p>
+<p>2</p>
+<p><strong>stats.isDirectory()</strong></p>
+<p>Returns true if file type of a directory.</p>
+<p>3</p>
+<p><strong>stats.isBlockDevice()</strong></p>
+<p>Returns true if file type of a block device.</p>
+<p>4</p>
+<p><strong>stats.isCharacterDevice()</strong></p>
+<p>Returns true if file type of a character device.</p>
+<p>5</p>
+<p><strong>stats.isSymbolicLink()</strong></p>
+<p>Returns true if file type of a symbolic link.</p>
+<p>6</p>
+<p><strong>stats.isFIFO()</strong></p>
+<p>Returns true if file type of a FIFO.</p>
+<p>7</p>
+<p><strong>stats.isSocket()</strong></p>
+<p>Returns true if file type of asocket.</p>
+<h3 id="example-12">Example</h3>
+<p>Let us create a js file named <strong>main.js</strong> with the following code −</p>
+<p>var fs = require(“fs”); console.log(“Going to get file info!”); fs.stat(‘input.txt’, function (err, stats) { if (err) { return console.error(err); } console.log(stats); console.log(“Got file info successfully!”); // Check file type console.log(“isFile ?” + stats.isFile()); console.log(“isDirectory ?” + stats.isDirectory()); });</p>
+<p>Now run the main.js to see the result −</p>
+<p>$ node main.js</p>
+<p>Verify the Output.</p>
+<p>Going to get file info! { dev: 1792, mode: 33188, nlink: 1, uid: 48, gid: 48, rdev: 0, blksize: 4096, ino: 4318127, size: 97, blocks: 8, atime: Sun Mar 22 2015 13:40:00 GMT-0500 (CDT), mtime: Sun Mar 22 2015 13:40:57 GMT-0500 (CDT), ctime: Sun Mar 22 2015 13:40:57 GMT-0500 (CDT) } Got file info successfully! isFile ? true isDirectory ? false</p>
+<h2 id="writing-a-file">Writing a File</h2>
+<h3 id="syntax-10">Syntax</h3>
+<p>Following is the syntax of one of the methods to write into a file −</p>
+<p>fs.writeFile(filename, data[, options], callback)</p>
+<p>This method will over-write the file if the file already exists. If you want to write into an existing file then you should use another method available.</p>
+<h3 id="parameters-8">Parameters</h3>
+<p>Here is the description of the parameters used −</p>
+<ul>
+<li><strong>path</strong> − This is the string having the file name including path.</li>
+<li><strong>data</strong> − This is the String or Buffer to be written into the file.</li>
+<li><strong>options</strong> − The third parameter is an object which will hold {encoding, mode, flag}. By default. encoding is utf8, mode is octal value 0666. and flag is ‘w’</li>
+<li><strong>callback</strong> − This is the callback function which gets a single parameter err that returns an error in case of any writing error.</li>
+</ul>
+<h3 id="example-13">Example</h3>
+<p>Let us create a js file named <strong>main.js</strong> having the following code −</p>
+<p>var fs = require(“fs”); console.log(“Going to write into existing file”); fs.writeFile(‘input.txt’, ‘Simply Easy Learning!’, function(err) { if (err) { return console.error(err); } console.log(“Data written successfully!”); console.log(“Let’s read newly written data”); fs.readFile(‘input.txt’, function (err, data) { if (err) { return console.error(err); } console.log(“Asynchronous read:” + data.toString()); }); });</p>
+<p>Now run the main.js to see the result −</p>
+<p>$ node main.js</p>
+<p>Verify the Output.</p>
+<p>Going to write into existing file Data written successfully! Let’s read newly written data Asynchronous read: Simply Easy Learning!</p>
+<h2 id="reading-a-file">Reading a File</h2>
+<h3 id="syntax-11">Syntax</h3>
+<p>Following is the syntax of one of the methods to read from a file −</p>
+<p>fs.read(fd, buffer, offset, length, position, callback)</p>
+<p>This method will use file descriptor to read the file. If you want to read the file directly using the file name, then you should use another method available.</p>
+<h3 id="parameters-9">Parameters</h3>
+<p>Here is the description of the parameters used −</p>
+<ul>
+<li><strong>fd</strong> − This is the file descriptor returned by fs.open().</li>
+<li><strong>buffer</strong> − This is the buffer that the data will be written to.</li>
+<li><strong>offset</strong> − This is the offset in the buffer to start writing at.</li>
+<li><strong>length</strong> − This is an integer specifying the number of bytes to read.</li>
+<li><strong>position</strong> − This is an integer specifying where to begin reading from in the file. If position is null, data will be read from the current file position.</li>
+<li><strong>callback</strong> − This is the callback function which gets the three arguments, (err, bytesRead, buffer).</li>
+</ul>
+<h3 id="example-14">Example</h3>
+<p>Let us create a js file named <strong>main.js</strong> with the following code −</p>
+<p>var fs = require(“fs”); var buf = new Buffer(1024); console.log(“Going to open an existing file”); fs.open(‘input.txt’, ‘r+’, function(err, fd) { if (err) { return console.error(err); } console.log(“File opened successfully!”); console.log(“Going to read the file”); fs.read(fd, buf, 0, buf.length, 0, function(err, bytes){ if (err){ console.log(err); } console.log(bytes + " bytes read"); // Print only read bytes to avoid junk. if(bytes &gt; 0){ console.log(buf.slice(0, bytes).toString()); } }); });</p>
+<p>Now run the main.js to see the result −</p>
+<p>$ node main.js</p>
+<p>Verify the Output.</p>
+<p>Going to open an existing file File opened successfully! Going to read the file 97 bytes read Tutorials Point is giving self learning content to teach the world in simple and easy way!!!!!</p>
+<h2 id="closing-a-file">Closing a File</h2>
+<h3 id="syntax-12">Syntax</h3>
+<p>Following is the syntax to close an opened file −</p>
+<p>fs.close(fd, callback)</p>
+<h3 id="parameters-10">Parameters</h3>
+<p>Here is the description of the parameters used −</p>
+<ul>
+<li><strong>fd</strong> − This is the file descriptor returned by file fs.open() method.</li>
+<li><strong>callback</strong> − This is the callback function No arguments other than a possible exception are given to the completion callback.</li>
+</ul>
+<h3 id="example-15">Example</h3>
+<p>Let us create a js file named <strong>main.js</strong> having the following code −</p>
+<p>var fs = require(“fs”); var buf = new Buffer(1024); console.log(“Going to open an existing file”); fs.open(‘input.txt’, ‘r+’, function(err, fd) { if (err) { return console.error(err); } console.log(“File opened successfully!”); console.log(“Going to read the file”); fs.read(fd, buf, 0, buf.length, 0, function(err, bytes) { if (err) { console.log(err); } // Print only read bytes to avoid junk. if(bytes &gt; 0) { console.log(buf.slice(0, bytes).toString()); } // Close the opened file. fs.close(fd, function(err) { if (err) { console.log(err); } console.log(“File closed successfully.”); }); }); });</p>
+<p>Now run the main.js to see the result −</p>
+<p>$ node main.js</p>
+<p>Verify the Output.</p>
+<p>Going to open an existing file File opened successfully! Going to read the file Tutorials Point is giving self learning content to teach the world in simple and easy way!!!!!</p>
+<p>File closed successfully.</p>
+<h2 id="truncate-a-file">Truncate a File</h2>
+<h3 id="syntax-13">Syntax</h3>
+<p>Following is the syntax of the method to truncate an opened file −</p>
+<p>fs.ftruncate(fd, len, callback)</p>
+<h3 id="parameters-11">Parameters</h3>
+<p>Here is the description of the parameters used −</p>
+<ul>
+<li><strong>fd</strong> − This is the file descriptor returned by fs.open().</li>
+<li><strong>len</strong> − This is the length of the file after which the file will be truncated.</li>
+<li><strong>callback</strong> − This is the callback function No arguments other than a possible exception are given to the completion callback.</li>
+</ul>
+<h3 id="example-16">Example</h3>
+<p>Let us create a js file named <strong>main.js</strong> having the following code −</p>
+<p>var fs = require(“fs”); var buf = new Buffer(1024); console.log(“Going to open an existing file”); fs.open(‘input.txt’, ‘r+’, function(err, fd) { if (err) { return console.error(err); } console.log(“File opened successfully!”); console.log(“Going to truncate the file after 10 bytes”); // Truncate the opened file. fs.ftruncate(fd, 10, function(err) { if (err) { console.log(err); } console.log(“File truncated successfully.”); console.log(“Going to read the same file”); fs.read(fd, buf, 0, buf.length, 0, function(err, bytes){ if (err) { console.log(err); } // Print only read bytes to avoid junk. if(bytes &gt; 0) { console.log(buf.slice(0, bytes).toString()); } // Close the opened file. fs.close(fd, function(err) { if (err) { console.log(err); } console.log(“File closed successfully.”); }); }); }); });</p>
+<p>Now run the main.js to see the result −</p>
+<p>$ node main.js</p>
+<p>Verify the Output.</p>
+<p>Going to open an existing file File opened successfully! Going to truncate the file after 10 bytes File truncated successfully. Going to read the same file Tutorials File closed successfully.</p>
+<h2 id="delete-a-file">Delete a File</h2>
+<h3 id="syntax-14">Syntax</h3>
+<p>Following is the syntax of the method to delete a file −</p>
+<p>fs.unlink(path, callback)</p>
+<h3 id="parameters-12">Parameters</h3>
+<p>Here is the description of the parameters used −</p>
+<ul>
+<li><strong>path</strong> − This is the file name including path.</li>
+<li><strong>callback</strong> − This is the callback function No arguments other than a possible exception are given to the completion callback.</li>
+</ul>
+<h3 id="example-17">Example</h3>
+<p>Let us create a js file named <strong>main.js</strong> having the following code −</p>
+<p>var fs = require(“fs”); console.log(“Going to delete an existing file”); fs.unlink(‘input.txt’, function(err) { if (err) { return console.error(err); } console.log(“File deleted successfully!”); });</p>
+<p>Now run the main.js to see the result −</p>
+<p>$ node main.js</p>
+<p>Verify the Output.</p>
+<p>Going to delete an existing file File deleted successfully!</p>
+<h2 id="create-a-directory">Create a Directory</h2>
+<h3 id="syntax-15">Syntax</h3>
+<p>Following is the syntax of the method to create a directory −</p>
+<p>fs.mkdir(path[, mode], callback)</p>
+<h3 id="parameters-13">Parameters</h3>
+<p>Here is the description of the parameters used −</p>
+<ul>
+<li><strong>path</strong> − This is the directory name including path.</li>
+<li><strong>mode</strong> − This is the directory permission to be set. Defaults to 0777.</li>
+<li><strong>callback</strong> − This is the callback function No arguments other than a possible exception are given to the completion callback.</li>
+</ul>
+<h3 id="example-18">Example</h3>
+<p>Let us create a js file named <strong>main.js</strong> having the following code −</p>
+<p>var fs = require(“fs”); console.log(“Going to create directory /tmp/test”); fs.mkdir(‘/tmp/test’,function(err) { if (err) { return console.error(err); } console.log(“Directory created successfully!”); });</p>
+<p>Now run the main.js to see the result −</p>
+<p>$ node main.js</p>
+<p>Verify the Output.</p>
+<p>Going to create directory /tmp/test Directory created successfully!</p>
+<h2 id="read-a-directory">Read a Directory</h2>
+<h3 id="syntax-16">Syntax</h3>
+<p>Following is the syntax of the method to read a directory −</p>
+<p>fs.readdir(path, callback)</p>
+<h3 id="parameters-14">Parameters</h3>
+<p>Here is the description of the parameters used −</p>
+<ul>
+<li><strong>path</strong> − This is the directory name including path.</li>
+<li><strong>callback</strong> − This is the callback function which gets two arguments (err, files) where files is an array of the names of the files in the directory excluding ‘.’ and ‘..’.</li>
+</ul>
+<h3 id="example-19">Example</h3>
+<p>Let us create a js file named <strong>main.js</strong> having the following code −</p>
+<p>var fs = require(“fs”); console.log(“Going to read directory /tmp”); fs.readdir(“/tmp/”,function(err, files) { if (err) { return console.error(err); } files.forEach( function (file) { console.log( file ); }); });</p>
+<p>Now run the main.js to see the result −</p>
+<p>$ node main.js</p>
+<p>Verify the Output.</p>
+<p>Going to read directory /tmp ccmzx99o.out ccyCSbkF.out employee.ser hsperfdata_apache test test.txt</p>
+<h2 id="remove-a-directory">Remove a Directory</h2>
+<h3 id="syntax-17">Syntax</h3>
+<p>Following is the syntax of the method to remove a directory −</p>
+<p>fs.rmdir(path, callback)</p>
+<h3 id="parameters-15">Parameters</h3>
+<p>Here is the description of the parameters used −</p>
+<ul>
+<li><strong>path</strong> − This is the directory name including path.</li>
+<li><strong>callback</strong> − This is the callback function No arguments other than a possible exception are given to the completion callback.</li>
+</ul>
+<h3 id="example-20">Example</h3>
+<p>Let us create a js file named <strong>main.js</strong> having the following code −</p>
+<p>var fs = require(“fs”); console.log(“Going to delete directory /tmp/test”); fs.rmdir(“/tmp/test”,function(err) { if (err) { return console.error(err); } console.log(“Going to read directory /tmp”); fs.readdir(“/tmp/”,function(err, files) { if (err) { return console.error(err); } files.forEach( function (file) { console.log( file ); }); }); });</p>
+<p>Now run the main.js to see the result −</p>
+<p>$ node main.js</p>
+<p>Verify the Output.</p>
+<p>Going to read directory /tmp ccmzx99o.out ccyCSbkF.out employee.ser hsperfdata_apache test.txt</p>
+<h2 id="methods-reference-1">Methods Reference</h2>
+<p>Following is a reference of File System module available in Node.js. For more detail you can refer to the official documentation.</p>
+<p>Node.js global objects are global in nature and they are available in all modules. We do not need to include these objects in our application, rather we can use them directly. These objects are modules, functions, strings and object itself as explained below.</p>
+<h2 id="filename">__filename</h2>
+<p>The <strong>__filename</strong> represents the filename of the code being executed. This is the resolved absolute path of this code file. For a main program, this is not necessarily the same filename used in the command line. The value inside a module is the path to that module file.</p>
+<h3 id="example-21">Example</h3>
+<p>Create a js file named main.js with the following code −</p>
+<p>// Let’s try to print the value of __filename console.log( __filename );</p>
+<p>Now run the main.js to see the result −</p>
+<p>$ node main.js</p>
+<p>Based on the location of your program, it will print the main file name as follows −</p>
+<p>/web/com/1427091028_21099/main.js</p>
+<h2 id="dirname">__dirname</h2>
+<p>The <strong>__dirname</strong> represents the name of the directory that the currently executing script resides in.</p>
+<h3 id="example-22">Example</h3>
+<p>Create a js file named main.js with the following code −</p>
+<p>// Let’s try to print the value of __dirname console.log( __dirname );</p>
+<p>Now run the main.js to see the result −</p>
+<p>$ node main.js</p>
+<p>Based on the location of your program, it will print current directory name as follows −</p>
+<p>/web/com/1427091028_21099</p>
+<h2 id="settimeoutcb-ms">setTimeout(cb, ms)</h2>
+<p>The <strong>setTimeout(cb, ms)</strong> global function is used to run callback cb after at least ms milliseconds. The actual delay depends on external factors like OS timer granularity and system load. A timer cannot span more than 24.8 days.</p>
+<p>This function returns an opaque value that represents the timer which can be used to clear the timer.</p>
+<h3 id="example-23">Example</h3>
+<p>Create a js file named main.js with the following code −</p>
+<p>function printHello() { console.log( “Hello, World!”); } // Now call above function after 2 seconds setTimeout(printHello, 2000);</p>
+<p>Now run the main.js to see the result −</p>
+<p>$ node main.js</p>
+<p>Verify the output is printed after a little delay.</p>
+<p>Hello, World!</p>
+<h2 id="cleartimeoutt">clearTimeout(t)</h2>
+<p>The <strong>clearTimeout(t)</strong> global function is used to stop a timer that was previously created with setTimeout(). Here <strong>t</strong> is the timer returned by the setTimeout() function.</p>
+<h3 id="example-24">Example</h3>
+<p>Create a js file named main.js with the following code −</p>
+<p>function printHello() { console.log( “Hello, World!”); } // Now call above function after 2 seconds var t = setTimeout(printHello, 2000); // Now clear the timer clearTimeout(t);</p>
+<p>Now run the main.js to see the result −</p>
+<p>$ node main.js</p>
+<p>Verify the output where you will not find anything printed.</p>
+<h2 id="setintervalcb-ms">setInterval(cb, ms)</h2>
+<p>The <strong>setInterval(cb, ms)</strong> global function is used to run callback cb repeatedly after at least ms milliseconds. The actual delay depends on external factors like OS timer granularity and system load. A timer cannot span more than 24.8 days.</p>
+<p>This function returns an opaque value that represents the timer which can be used to clear the timer using the function <strong>clearInterval(t)</strong>.</p>
+<h3 id="example-25">Example</h3>
+<p>Create a js file named main.js with the following code −</p>
+<p>function printHello() { console.log( “Hello, World!”); } // Now call above function after 2 seconds setInterval(printHello, 2000);</p>
+<p>Now run the main.js to see the result −</p>
+<p>$ node main.js</p>
+<p>The above program will execute printHello() after every 2 second. Due to system limitation.</p>
+<h2 id="global-objects">Global Objects</h2>
+<p>The following table provides a list of other objects which we use frequently in our applications. For a more detail, you can refer to the official documentation.</p>
+<p>Sr.No.</p>
+<p>Module Name &amp; Description</p>
+<p>1</p>
+<p><a href="https://www.tutorialspoint.com/nodejs/nodejs_console.htm"><strong>Console</strong></a></p>
+<p>Used to print information on stdout and stderr.</p>
+<p>2</p>
+<p><a href="https://www.tutorialspoint.com/nodejs/nodejs_process.htm"><strong>Process</strong></a></p>
+<p>Used to get information on current process. Provides multiple events related to process activities.</p>
+<p>There are several utility modules available in Node.js module library. These modules are very common and are frequently used while developing any Node based application.</p>
+<p>Sr.No.</p>
+<p>Module Name &amp; Description</p>
+<p>1</p>
+<p><a href="https://www.tutorialspoint.com/nodejs/nodejs_os_module.htm">OS Module</a></p>
+<p>Provides basic operating-system related utility functions.</p>
+<p>2</p>
+<p><a href="https://www.tutorialspoint.com/nodejs/nodejs_path_module.htm">Path Module</a></p>
+<p>Provides utilities for handling and transforming file paths.</p>
+<p>3</p>
+<p><a href="https://www.tutorialspoint.com/nodejs/nodejs_net_module.htm">Net Module</a></p>
+<p>Provides both servers and clients as streams. Acts as a network wrapper.</p>
+<p>4</p>
+<p><a href="https://www.tutorialspoint.com/nodejs/nodejs_dns_module.htm">DNS Module</a></p>
+<p>Provides functions to do actual DNS lookup as well as to use underlying operating system name resolution functionalities.</p>
+<p>5</p>
+<p><a href="https://www.tutorialspoint.com/nodejs/nodejs_domain_module.htm">Domain Module</a></p>
+<p>Provides ways to handle multiple different I/O operations as a single group.</p>
+<h2 id="what-is-a-web-server">What is a Web Server?</h2>
+<p>A Web Server is a software application which handles HTTP requests sent by the HTTP client, like web browsers, and returns web pages in response to the clients. Web servers usually deliver html documents along with images, style sheets, and scripts.</p>
+<p>Most of the web servers support server-side scripts, using scripting languages or redirecting the task to an application server which retrieves data from a database and performs complex logic and then sends a result to the HTTP client through the Web server.</p>
+<p>Apache web server is one of the most commonly used web servers. It is an open source project.</p>
+<h2 id="web-application-architecture">Web Application Architecture</h2>
+<p>A Web application is usually divided into four layers −</p>
+<figure>
+<img src="https://www.tutorialspoint.com/nodejs/images/web_architecture.jpg" alt="Web Architecture" /><figcaption>Web Architecture</figcaption>
+</figure>
+<ul>
+<li><strong>Client</strong> − This layer consists of web browsers, mobile browsers or applications which can make HTTP requests to the web server.</li>
+<li><strong>Server</strong> − This layer has the Web server which can intercept the requests made by the clients and pass them the response.</li>
+<li><strong>Business</strong> − This layer contains the application server which is utilized by the web server to do the required processing. This layer interacts with the data layer via the database or some external programs.</li>
+<li><strong>Data</strong> − This layer contains the databases or any other source of data.</li>
+</ul>
+<h2 id="creating-a-web-server-using-node">Creating a Web Server using Node</h2>
+<p>Node.js provides an <strong>http</strong> module which can be used to create an HTTP client of a server. Following is the bare minimum structure of the HTTP server which listens at 8081 port.</p>
+<p>Create a js file named server.js −</p>
+<p><strong>File: server.js</strong></p>
+<p>var http = require(‘http’); var fs = require(‘fs’); var url = require(‘url’); // Create a server http.createServer( function (request, response) { // Parse the request containing file name var pathname = url.parse(request.url).pathname; // Print the name of the file for which request is made. console.log(“Request for” + pathname + " received."); // Read the requested file content from file system fs.readFile(pathname.substr(1), function (err, data) { if (err) { console.log(err); // HTTP Status: 404 : NOT FOUND // Content Type: text/plain response.writeHead(404, {‘Content-Type’: ‘text/html’}); } else { //Page found // HTTP Status: 200 : OK // Content Type: text/plain response.writeHead(200, {‘Content-Type’: ‘text/html’}); // Write the content of the file to response body response.write(data.toString()); } // Send the response body response.end(); }); }).listen(8081); // Console will print the message console.log(‘Server running at http://127.0.0.1:8081/’);</p>
+<p>Next let’s create the following html file named index.htm in the same directory where you created server.js.</p>
+<p><strong>File: index.htm</strong></p>
+<html>
+<head>
+<title>
+Sample Page
+</title>
+</head>
+<body>
+Hello World!
+</body>
+</html>
+<p>Now let us run the server.js to see the result −</p>
+<p>$ node server.js</p>
+<p>Verify the Output.</p>
+<p>Server running at http://127.0.0.1:8081/</p>
+<h2 id="make-a-request-to-node.js-server">Make a request to Node.js server</h2>
+<p>Open http://127.0.0.1:8081/index.htm in any browser to see the following result.</p>
+<figure>
+<img src="https://www.tutorialspoint.com/nodejs/images/nodejs_sample1.jpg" alt="First Server Application" /><figcaption>First Server Application</figcaption>
+</figure>
+<p>Verify the Output at server end.</p>
+<p>Server running at http://127.0.0.1:8081/ Request for /index.htm received.</p>
+<h2 id="creating-web-client-using-node">Creating Web client using Node</h2>
+<p>A web client can be created using <strong>http</strong> module. Let’s check the following example.</p>
+<p>Create a js file named client.js −</p>
+<p><strong>File: client.js</strong></p>
+<p>var http = require(‘http’); // Options to be used by request var options = { host: ‘localhost’, port: ‘8081’, path: ‘/index.htm’ }; // Callback function is used to deal with response var callback = function(response) { // Continuously update stream with data var body = ’‘; response.on(’data’, function(data) { body += data; }); response.on(‘end’, function() { // Data received completely. console.log(body); }); } // Make a request to the server var req = http.request(options, callback); req.end();</p>
+<p>Now run the client.js from a different command terminal other than server.js to see the result −</p>
+<p>$ node client.js</p>
+<p>Verify the Output.</p>
+<html>
+<head>
+<title>
+Sample Page
+</title>
+</head>
+<body>
+Hello World!
+</body>
+</html>
+<p>Verify the Output at server end.</p>
+<p>Server running at http://127.0.0.1:8081/ Request for /index.htm received.</p>
+<h2 id="express-overview">Express Overview</h2>
+<p>Express is a minimal and flexible Node.js web application framework that provides a robust set of features to develop web and mobile applications. It facilitates the rapid development of Node based Web applications. Following are some of the core features of Express framework −</p>
+<ul>
+<li>Allows to set up middlewares to respond to HTTP Requests.</li>
+<li>Defines a routing table which is used to perform different actions based on HTTP Method and URL.</li>
+<li>Allows to dynamically render HTML Pages based on passing arguments to templates.</li>
+</ul>
+<h2 id="installing-express">Installing Express</h2>
+<p>Firstly, install the Express framework globally using NPM so that it can be used to create a web application using node terminal.</p>
+<p>$ npm install express –save</p>
+<p>The above command saves the installation locally in the <strong>node_modules</strong> directory and creates a directory express inside node_modules. You should install the following important modules along with express −</p>
+<ul>
+<li><strong>body-parser</strong> − This is a node.js middleware for handling JSON, Raw, Text and URL encoded form data.</li>
+<li><strong>cookie-parser</strong> − Parse Cookie header and populate req.cookies with an object keyed by the cookie names.</li>
+<li><strong>multer</strong> − This is a node.js middleware for handling multipart/form-data.</li>
+</ul>
+<p>$ npm install body-parser –save $ npm install cookie-parser –save $ npm install multer –save</p>
+<h2 id="hello-world-example">Hello world Example</h2>
+<p>Following is a very basic Express app which starts a server and listens on port 8081 for connection. This app responds with <strong>Hello World!</strong> for requests to the homepage. For every other path, it will respond with a <strong>404 Not Found.</strong></p>
+<p>var express = require(‘express’); var app = express(); app.get(‘/’, function (req, res) { res.send(‘Hello World’); }) var server = app.listen(8081, function () { var host = server.address().address var port = server.address().port</p>
+<p>console.log(“Example app listening at http://%s:%s”, host, port) })</p>
+<p>Save the above code in a file named server.js and run it with the following command.</p>
+<p>$ node server.js</p>
+<p>You will see the following output −</p>
+<p>Example app listening at http://0.0.0.0:8081</p>
+<p>Open http://127.0.0.1:8081/ in any browser to see the following result.</p>
+<figure>
+<img src="https://www.tutorialspoint.com/nodejs/images/nodejs_sample.jpg" alt="First Application" /><figcaption>First Application</figcaption>
+</figure>
+<h2 id="request-response">Request &amp; Response</h2>
+<p>Express application uses a callback function whose parameters are <strong>request</strong> and <strong>response</strong> objects.</p>
+<p>app.get(‘/’, function (req, res) { // – })</p>
+<ul>
+<li><a href="https://www.tutorialspoint.com/nodejs/nodejs_request_object.htm">Request Object</a> − The request object represents the HTTP request and has properties for the request query string, parameters, body, HTTP headers, and so on.</li>
+<li><a href="https://www.tutorialspoint.com/nodejs/nodejs_response_object.htm">Response Object</a> − The response object represents the HTTP response that an Express app sends when it gets an HTTP request.</li>
+</ul>
+<p>You can print <strong>req</strong> and <strong>res</strong> objects which provide a lot of information related to HTTP request and response including cookies, sessions, URL, etc.</p>
+<h2 id="basic-routing">Basic Routing</h2>
+<p>We have seen a basic application which serves HTTP request for the homepage. Routing refers to determining how an application responds to a client request to a particular endpoint, which is a URI (or path) and a specific HTTP request method (GET, POST, and so on).</p>
+<p>We will extend our Hello World program to handle more types of HTTP requests.</p>
+<p>var express = require(‘express’); var app = express(); // This responds with “Hello World” on the homepage app.get(‘/’, function (req, res) { console.log(“Got a GET request for the homepage”); res.send(‘Hello GET’); }) // This responds a POST request for the homepage app.post(‘/’, function (req, res) { console.log(“Got a POST request for the homepage”); res.send(‘Hello POST’); }) // This responds a DELETE request for the /del_user page. app.delete(‘/del_user’, function (req, res) { console.log(“Got a DELETE request for /del_user”); res.send(‘Hello DELETE’); }) // This responds a GET request for the /list_user page. app.get(‘/list_user’, function (req, res) { console.log(“Got a GET request for /list_user”); res.send(‘Page Listing’); }) // This responds a GET request for abcd, abxcd, ab123cd, and so on app.get(‘/ab*cd’, function(req, res) { console.log(“Got a GET request for /ab*cd”); res.send(‘Page Pattern Match’); }) var server = app.listen(8081, function () { var host = server.address().address var port = server.address().port</p>
+<p>console.log(“Example app listening at http://%s:%s”, host, port) })</p>
+<p>Save the above code in a file named server.js and run it with the following command.</p>
+<p>$ node server.js</p>
+<p>You will see the following output −</p>
+<p>Example app listening at http://0.0.0.0:8081</p>
+<p>Now you can try different requests at http://127.0.0.1:8081 to see the output generated by server.js. Following are a few screens shots showing different responses for different URLs.</p>
+<p>Screen showing again http://127.0.0.1:8081/list_user</p>
+<figure>
+<img src="https://www.tutorialspoint.com/nodejs/images/nodejs_sample2.jpg" alt="Second Application" /><figcaption>Second Application</figcaption>
+</figure>
+<p>Screen showing again http://127.0.0.1:8081/abcd</p>
+<figure>
+<img src="https://www.tutorialspoint.com/nodejs/images/nodejs_sample3.jpg" alt="Third Application" /><figcaption>Third Application</figcaption>
+</figure>
+<p>Screen showing again http://127.0.0.1:8081/abcdefg</p>
+<figure>
+<img src="https://www.tutorialspoint.com/nodejs/images/nodejs_sample4.jpg" alt="Fourth Application" /><figcaption>Fourth Application</figcaption>
+</figure>
+<h2 id="serving-static-files">Serving Static Files</h2>
+<p>Express provides a built-in middleware <strong>express.static</strong> to serve static files, such as images, CSS, JavaScript, etc.</p>
+<p>You simply need to pass the name of the directory where you keep your static assets, to the <strong>express.static</strong> middleware to start serving the files directly. For example, if you keep your images, CSS, and JavaScript files in a directory named public, you can do this −</p>
+<p>app.use(express.static(‘public’));</p>
+<p>We will keep a few images in <strong>public/images</strong> sub-directory as follows −</p>
+<p>node_modules server.js public/ public/images public/images/logo.png</p>
+<p>Let’s modify “Hello Word” app to add the functionality to handle static files.</p>
+<p>var express = require(‘express’); var app = express(); app.use(express.static(‘public’)); app.get(‘/’, function (req, res) { res.send(‘Hello World’); }) var server = app.listen(8081, function () { var host = server.address().address var port = server.address().port</p>
+<p>console.log(“Example app listening at http://%s:%s”, host, port) })</p>
+<p>Save the above code in a file named server.js and run it with the following command.</p>
+<p>$ node server.js</p>
+<p>Now open http://127.0.0.1:8081/images/logo.png in any browser and see observe following result.</p>
+<figure>
+<img src="https://www.tutorialspoint.com/nodejs/images/nodejs_sample5.jpg" alt="Fifth Application" /><figcaption>Fifth Application</figcaption>
+</figure>
+<h2 id="get-method">GET Method</h2>
+<p>Here is a simple example which passes two values using HTML FORM GET method. We are going to use <strong>process_get</strong> router inside server.js to handle this input.</p>
+<html>
+<body>
+<form action \= "http://127.0.0.1:8081/process\_get" method \= "GET"\> First Name: <input type \= "text" name \= "first\_name"\> <br> Last Name: <input type \= "text" name \= "last\_name"\> <input type \= "submit" value \= "Submit"\> </form>
+</body>
+</html>
+<p>Let’s save above code in index.htm and modify server.js to handle home page requests as well as the input sent by the HTML form.</p>
+<p>var express = require(‘express’); var app = express(); app.use(express.static(‘public’)); app.get(‘/index.htm’, function (req, res) { res.sendFile( __dirname + “/” + “index.htm” ); }) app.get(‘/process_get’, function (req, res) { // Prepare output in JSON format response = { first_name:req.query.first_name, last_name:req.query.last_name }; console.log(response); res.end(JSON.stringify(response)); }) var server = app.listen(8081, function () { var host = server.address().address var port = server.address().port</p>
+<p>console.log(“Example app listening at http://%s:%s”, host, port) })</p>
+<p>Accessing the HTML document using <em>http://127.0.0.1:8081/index.htm</em> will generate the following form −</p>
+<p>Now you can enter the First and Last Name and then click submit button to see the result and it should return the following result −</p>
+<p>{“first_name”:“John”,“last_name”:“Paul”}</p>
+<h2 id="post-method">POST Method</h2>
+<p>Here is a simple example which passes two values using HTML FORM POST method. We are going to use <strong>process_get</strong> router inside server.js to handle this input.</p>
+<html>
+<body>
+<form action \= "http://127.0.0.1:8081/process\_post" method \= "POST"\> First Name: <input type \= "text" name \= "first\_name"\> <br> Last Name: <input type \= "text" name \= "last\_name"\> <input type \= "submit" value \= "Submit"\> </form>
+</body>
+</html>
+<p>Let’s save the above code in index.htm and modify server.js to handle home page requests as well as the input sent by the HTML form.</p>
+<p>var express = require(‘express’); var app = express(); var bodyParser = require(‘body-parser’); // Create application/x-www-form-urlencoded parser var urlencodedParser = bodyParser.urlencoded({ extended: false }) app.use(express.static(‘public’)); app.get(‘/index.htm’, function (req, res) { res.sendFile( __dirname + “/” + “index.htm” ); }) app.post(‘/process_post’, urlencodedParser, function (req, res) { // Prepare output in JSON format response = { first_name:req.body.first_name, last_name:req.body.last_name }; console.log(response); res.end(JSON.stringify(response)); }) var server = app.listen(8081, function () { var host = server.address().address var port = server.address().port</p>
+<p>console.log(“Example app listening at http://%s:%s”, host, port) })</p>
+<p>Accessing the HTML document using <em>http://127.0.0.1:8081/index.htm</em> will generate the following form −</p>
+<p>Now you can enter the First and Last Name and then click the submit button to see the following result −</p>
+<p>{“first_name”:“John”,“last_name”:“Paul”}</p>
+<h2 id="file-upload">File Upload</h2>
+<p>The following HTML code creates a file uploader form. This form has method attribute set to <strong>POST</strong> and enctype attribute is set to <strong>multipart/form-data</strong></p>
+<html>
+<head>
+<title>
+File Uploading Form
+</title>
+</head>
+<body>
+<h3>
+File Upload:
+</h3>
+Select a file to upload: <br /> &lt;form action = “http://127.0.0.1:8081/file_upload” method = “POST” enctype = “multipart/form-data”&gt; &lt;input type=“file” name=“file” size=“50” /&gt; <br /> &lt;input type = “submit” value = “Upload File” /&gt;
+</form>
+</body>
+</html>
+<p>Let’s save above code in index.htm and modify server.js to handle home page requests as well as file upload.</p>
+<p>var express = require(‘express’); var app = express(); var fs = require(“fs”); var bodyParser = require(‘body-parser’); var multer = require(‘multer’); app.use(express.static(‘public’)); app.use(bodyParser.urlencoded({ extended: false })); app.use(multer({ dest: ‘/tmp/’})); app.get(‘/index.htm’, function (req, res) { res.sendFile( __dirname + “/” + “index.htm” ); }) app.post(‘/file_upload’, function (req, res) { console.log(req.files.file.name); console.log(req.files.file.path); console.log(req.files.file.type); var file = __dirname + “/” + req.files.file.name; fs.readFile( req.files.file.path, function (err, data) { fs.writeFile(file, data, function (err) { if( err ) { console.log( err ); } else { response = { message:‘File uploaded successfully’, filename:req.files.file.name }; } console.log( response ); res.end( JSON.stringify( response ) ); }); }); }) var server = app.listen(8081, function () { var host = server.address().address var port = server.address().port</p>
+<p>console.log(“Example app listening at http://%s:%s”, host, port) })</p>
+<p>Accessing the HTML document using <em>http://127.0.0.1:8081/index.htm</em> will generate the following form −</p>
+<p><strong>File Upload:</strong> Select a file to upload:</p>
+<p>NOTE: This is just dummy form and would not work, but it must work at your server.</p>
+<h2 id="cookies-management">Cookies Management</h2>
+<p>You can send cookies to a Node.js server which can handle the same using the following middleware option. Following is a simple example to print all the cookies sent by the client.</p>
+<p>var express = require(‘express’) var cookieParser = require(‘cookie-parser’) var app = express() app.use(cookieParser()) app.get(‘/’, function(req, res) { console.log(“Cookies:”, req.cookies) }) app.listen(8081)</p>
+<h2 id="what-is-rest-architecture">What is REST architecture?</h2>
+<p>REST stands for REpresentational State Transfer. REST is web standards based architecture and uses HTTP Protocol. It revolves around resource where every component is a resource and a resource is accessed by a common interface using HTTP standard methods. REST was first introduced by Roy Fielding in 2000.</p>
+<p>A REST Server simply provides access to resources and REST client accesses and modifies the resources using HTTP protocol. Here each resource is identified by URIs/ global IDs. REST uses various representation to represent a resource like text, JSON, XML but JSON is the most popular one.</p>
+<h2 id="http-methods">HTTP methods</h2>
+<p>Following four HTTP methods are commonly used in REST based architecture.</p>
+<ul>
+<li><strong>GET</strong> − This is used to provide a read only access to a resource.</li>
+<li><strong>PUT</strong> − This is used to create a new resource.</li>
+<li><strong>DELETE</strong> − This is used to remove a resource.</li>
+<li><strong>POST</strong> − This is used to update a existing resource or create a new resource.</li>
+</ul>
+<h2 id="restful-web-services">RESTful Web Services</h2>
+<p>A web service is a collection of open protocols and standards used for exchanging data between applications or systems. Software applications written in various programming languages and running on various platforms can use web services to exchange data over computer networks like the Internet in a manner similar to inter-process communication on a single computer. This interoperability (e.g., communication between Java and Python, or Windows and Linux applications) is due to the use of open standards.</p>
+<p>Web services based on REST Architecture are known as RESTful web services. These webservices uses HTTP methods to implement the concept of REST architecture. A RESTful web service usually defines a URI, Uniform Resource Identifier a service, which provides resource representation such as JSON and set of HTTP Methods.</p>
+<h2 id="creating-restful-for-a-library">Creating RESTful for A Library</h2>
+<p>Consider we have a JSON based database of users having the following users in a file <strong>users.json</strong>:</p>
+<p>{ “user1” : { “name” : “mahesh”, “password” : “password1”, “profession” : “teacher”, “id”: 1 }, “user2” : { “name” : “suresh”, “password” : “password2”, “profession” : “librarian”, “id”: 2 }, “user3” : { “name” : “ramesh”, “password” : “password3”, “profession” : “clerk”, “id”: 3 } }</p>
+<p>Based on this information we are going to provide following RESTful APIs.</p>
+<p>Sr.No.</p>
+<p>URI</p>
+<p>HTTP Method</p>
+<p>POST body</p>
+<p>Result</p>
+<p>1</p>
+<p>listUsers</p>
+<p>GET</p>
+<p>empty</p>
+<p>Show list of all the users.</p>
+<p>2</p>
+<p>addUser</p>
+<p>POST</p>
+<p>JSON String</p>
+<p>Add details of new user.</p>
+<p>3</p>
+<p>deleteUser</p>
+<p>DELETE</p>
+<p>JSON String</p>
+<p>Delete an existing user.</p>
+<p>4</p>
+<p>:id</p>
+<p>GET</p>
+<p>empty</p>
+<p>Show details of a user.</p>
+<p>I’m keeping most of the part of all the examples in the form of hard coding assuming you already know how to pass values from front end using Ajax or simple form data and how to process them using express <strong>Request</strong> object.</p>
+<h2 id="list-users">List Users</h2>
+<p>Let’s implement our first RESTful API <strong>listUsers</strong> using the following code in a server.js file −</p>
+<p><em>server.js</em></p>
+<p>var express = require(‘express’); var app = express(); var fs = require(“fs”); app.get(‘/listUsers’, function (req, res) { fs.readFile( __dirname + “/” + “users.json”, ‘utf8’, function (err, data) { console.log( data ); res.end( data ); }); }) var server = app.listen(8081, function () { var host = server.address().address var port = server.address().port console.log(“Example app listening at http://%s:%s”, host, port) })</p>
+<p>Now try to access defined API using <em>URL: http://127.0.0.1:8081/listUsers</em> and <em>HTTP Method : GET</em> on local machine using any REST client. This should produce following result −</p>
+<p>You can change given IP address when you will put the solution in production environment.</p>
+<p>{ “user1” : { “name” : “mahesh”, “password” : “password1”, “profession” : “teacher”, “id”: 1 }, “user2” : { “name” : “suresh”, “password” : “password2”, “profession” : “librarian”, “id”: 2 }, “user3” : { “name” : “ramesh”, “password” : “password3”, “profession” : “clerk”, “id”: 3 } }</p>
+<h2 id="add-user">Add User</h2>
+<p>Following API will show you how to add new user in the list. Following is the detail of the new user −</p>
+<p>user = { “user4” : { “name” : “mohit”, “password” : “password4”, “profession” : “teacher”, “id”: 4 } }</p>
+<p>You can accept the same input in the form of JSON using Ajax call but for teaching point of view, we are making it hard coded here. Following is the <strong>addUser</strong> API to a new user in the database −</p>
+<p><em>server.js</em></p>
+<p>var express = require(‘express’); var app = express(); var fs = require(“fs”); var user = { “user4” : { “name” : “mohit”, “password” : “password4”, “profession” : “teacher”, “id”: 4 } } app.post(‘/addUser’, function (req, res) { // First read existing users. fs.readFile( __dirname + “/” + “users.json”, ‘utf8’, function (err, data) { data = JSON.parse( data ); data[“user4”] = user[“user4”]; console.log( data ); res.end( JSON.stringify(data)); }); }) var server = app.listen(8081, function () { var host = server.address().address var port = server.address().port console.log(“Example app listening at http://%s:%s”, host, port) })</p>
+<p>Now try to access defined API using <em>URL: http://127.0.0.1:8081/addUser</em> and <em>HTTP Method : POST</em> on local machine using any REST client. This should produce following result −</p>
+<p>{ “user1”:{“name”:“mahesh”,“password”:“password1”,“profession”:“teacher”,“id”:1}, “user2”:{“name”:“suresh”,“password”:“password2”,“profession”:“librarian”,“id”:2}, “user3”:{“name”:“ramesh”,“password”:“password3”,“profession”:“clerk”,“id”:3}, “user4”:{“name”:“mohit”,“password”:“password4”,“profession”:“teacher”,“id”:4} }</p>
+<h2 id="show-detail">Show Detail</h2>
+<p>Now we will implement an API which will be called using user ID and it will display the detail of the corresponding user.</p>
+<p><em>server.js</em></p>
+<p>var express = require(‘express’); var app = express(); var fs = require(“fs”); app.get(‘/:id’, function (req, res) { // First read existing users. fs.readFile( __dirname + “/” + “users.json”, ‘utf8’, function (err, data) { var users = JSON.parse( data ); var user = users[“user” + req.params.id] console.log( user ); res.end( JSON.stringify(user)); }); }) var server = app.listen(8081, function () { var host = server.address().address var port = server.address().port console.log(“Example app listening at http://%s:%s”, host, port) })</p>
+<p>Now try to access defined API using <em>URL: http://127.0.0.1:8081/2</em> and <em>HTTP Method : GET</em> on local machine using any REST client. This should produce following result −</p>
+<p>{“name”:“suresh”,“password”:“password2”,“profession”:“librarian”,“id”:2}</p>
+<h2 id="delete-user">Delete User</h2>
+<p>This API is very similar to addUser API where we receive input data through req.body and then based on user ID we delete that user from the database. To keep our program simple we assume we are going to delete user with ID 2.</p>
+<p><strong>server.js</strong></p>
+<p>var express = require(‘express’); var app = express(); var fs = require(“fs”); var id = 2; app.delete(‘/deleteUser’, function (req, res) { // First read existing users. fs.readFile( __dirname + “/” + “users.json”, ‘utf8’, function (err, data) { data = JSON.parse( data ); delete data[“user” + 2]; console.log( data ); res.end( JSON.stringify(data)); }); }) var server = app.listen(8081, function () { var host = server.address().address var port = server.address().port console.log(“Example app listening at http://%s:%s”, host, port) })</p>
+<p>Now try to access defined API using <em>URL: http://127.0.0.1:8081/deleteUser</em> and <em>HTTP Method : DELETE</em> on local machine using any REST client. This should produce following result −</p>
+<p>{“user1”:{“name”:“mahesh”,“password”:“password1”,“profession”:“teacher”,“id”:1}, “user3”:{“name”:“ramesh”,“password”:“password3”,“profession”:“clerk”,“id”:3}}</p>
+<p>Node.js runs in a single-thread mode, but it uses an event-driven paradigm to handle concurrency. It also facilitates creation of child processes to leverage parallel processing on multi-core CPU based systems.</p>
+<p>Child processes always have three streams <strong>child.stdin</strong>, <strong>child.stdout</strong>, and <strong>child.stderr</strong> which may be shared with the stdio streams of the parent process.</p>
+<p>Node provides <strong>child_process</strong> module which has the following three major ways to create a child process.</p>
+<ul>
+<li><strong>exec</strong> − child_process.exec method runs a command in a shell/console and buffers the output.</li>
+<li><strong>spawn</strong> − child_process.spawn launches a new process with a given command.</li>
+<li><strong>fork</strong> − The child_process.fork method is a special case of the spawn() to create child processes.</li>
+</ul>
+<h2 id="the-exec-method">The exec() method</h2>
+<p>child_process.exec method runs a command in a shell and buffers the output. It has the following signature −</p>
+<p>child_process.exec(command[, options], callback)</p>
+<h3 id="parameters-16">Parameters</h3>
+<p>Here is the description of the parameters used −</p>
+<ul>
+<li><strong>command</strong> (String) The command to run, with space-separated arguments</li>
+<li><p><strong>options</strong> (Object) may comprise one or more of the following options −</p>
+<ul>
+<li><strong>cwd</strong> (String) Current working directory of the child process</li>
+<li><strong>env</strong> (Object) Environment key-value pairs</li>
+<li><strong>encoding</strong> (String) (Default: ‘utf8’)</li>
+<li><strong>shell</strong> (String) Shell to execute the command with (Default: ‘/bin/sh’ on UNIX, ‘cmd.exe’ on Windows, The shell should understand the -c switch on UNIX or /s /c on Windows. On Windows, command line parsing should be compatible with cmd.exe.)</li>
+<li><strong>timeout</strong> (Number) (Default: 0)</li>
+<li><strong>maxBuffer</strong> (Number) (Default: 200*1024)</li>
+<li><strong>killSignal</strong> (String) (Default: ‘SIGTERM’)</li>
+<li><strong>uid</strong> (Number) Sets the user identity of the process.</li>
+<li><strong>gid</strong> (Number) Sets the group identity of the process.</li>
+</ul></li>
+<li><p><strong>callback</strong> The function gets three arguments <strong>error</strong>, <strong>stdout,</strong> and <strong>stderr</strong> which are called with the output when the process terminates.</p></li>
+</ul>
+<p>The exec() method returns a buffer with a max size and waits for the process to end and tries to return all the buffered data at once.</p>
+<h2 id="example-26">Example</h2>
+<p>Let us create two js files named support.js and master.js −</p>
+<p><strong>File: support.js</strong></p>
+<p>console.log(“Child Process” + process.argv[2] + " executed." );</p>
+<p><strong>File: master.js</strong></p>
+<p>const fs = require(‘fs’); const child_process = require(‘child_process’); for(var i=0; i&lt;3; i++) { var workerProcess = child_process.exec(‘node support.js’+i,function (error, stdout, stderr) { if (error) { console.log(error.stack); console.log(‘Error code:’+error.code); console.log(‘Signal received:’+error.signal); } console.log(‘stdout:’ + stdout); console.log(‘stderr:’ + stderr); }); workerProcess.on(‘exit’, function (code) { console.log(‘Child process exited with exit code’+code); }); }</p>
+<p>Now run the master.js to see the result −</p>
+<p>$ node master.js</p>
+<p>Verify the Output. Server has started.</p>
+<p>Child process exited with exit code 0 stdout: Child Process 1 executed.</p>
+<p>stderr: Child process exited with exit code 0 stdout: Child Process 0 executed.</p>
+<p>stderr: Child process exited with exit code 0 stdout: Child Process 2 executed.</p>
+<h2 id="the-spawn-method">The spawn() Method</h2>
+<p>child_process.spawn method launches a new process with a given command. It has the following signature −</p>
+<p>child_process.spawn(command[, args][, options])</p>
+<h3 id="parameters-17">Parameters</h3>
+<p>Here is the description of the parameters used −</p>
+<ul>
+<li><strong>command</strong> (String) The command to run</li>
+<li><strong>args</strong> (Array) List of string arguments</li>
+<li><p><strong>options</strong> (Object) may comprise one or more of the following options −</p>
+<ul>
+<li><strong>cwd</strong> (String) Current working directory of the child process.</li>
+<li><strong>env</strong> (Object) Environment key-value pairs.</li>
+<li><strong>stdio</strong> (Array) String Child’s stdio configuration.</li>
+<li><strong>customFds</strong> (Array) Deprecated File descriptors for the child to use for stdio.</li>
+<li><strong>detached</strong> (Boolean) The child will be a process group leader.</li>
+<li><strong>uid</strong> (Number) Sets the user identity of the process.</li>
+<li><strong>gid</strong> (Number) Sets the group identity of the process.</li>
+</ul></li>
+</ul>
+<p>The spawn() method returns streams (stdout &amp;stderr) and it should be used when the process returns a volume amount of data. spawn() starts receiving the response as soon as the process starts executing.</p>
+<h2 id="example-27">Example</h2>
+<p>Create two js files named support.js and master.js −</p>
+<p><strong>File: support.js</strong></p>
+<p>console.log(“Child Process” + process.argv[2] + " executed." );</p>
+<p><strong>File: master.js</strong></p>
+<p>const fs = require(‘fs’); const child_process = require(‘child_process’); for(var i = 0; i&lt;3; i++) { var workerProcess = child_process.spawn(‘node’, [‘support.js’, i]); workerProcess.stdout.on(‘data’, function (data) { console.log(‘stdout:’ + data); }); workerProcess.stderr.on(‘data’, function (data) { console.log(‘stderr:’ + data); }); workerProcess.on(‘close’, function (code) { console.log(‘child process exited with code’ + code); }); }</p>
+<p>Now run the master.js to see the result −</p>
+<p>$ node master.js</p>
+<p>Verify the Output. Server has started</p>
+<p>stdout: Child Process 0 executed.</p>
+<p>child process exited with code 0 stdout: Child Process 1 executed.</p>
+<p>stdout: Child Process 2 executed.</p>
+<p>child process exited with code 0 child process exited with code 0</p>
+<h2 id="the-fork-method">The fork() Method</h2>
+<p>child_process.fork method is a special case of spawn() to create Node processes. It has the following signature −</p>
+<p>child_process.fork(modulePath[, args][, options])</p>
+<h3 id="parameters-18">Parameters</h3>
+<p>Here is the description of the parameters used −</p>
+<ul>
+<li><strong>modulePath</strong> (String) The module to run in the child.</li>
+<li><strong>args</strong> (Array) List of string arguments</li>
+<li><p><strong>options</strong> (Object) may comprise one or more of the following options −</p>
+<ul>
+<li><strong>cwd</strong> (String) Current working directory of the child process.</li>
+<li><strong>env</strong> (Object) Environment key-value pairs.</li>
+<li><strong>execPath</strong> (String) Executable used to create the child process.</li>
+<li><strong>execArgv</strong> (Array) List of string arguments passed to the executable (Default: process.execArgv).</li>
+<li><strong>silent</strong> (Boolean) If true, stdin, stdout, and stderr of the child will be piped to the parent, otherwise they will be inherited from the parent, see the “pipe” and “inherit” options for spawn()’s stdio for more details (default is false).</li>
+<li><strong>uid</strong> (Number) Sets the user identity of the process.</li>
+<li><strong>gid</strong> (Number) Sets the group identity of the process.</li>
+</ul></li>
+</ul>
+<p>The fork method returns an object with a built-in communication channel in addition to having all the methods in a normal ChildProcess instance.</p>
+<h2 id="example-28">Example</h2>
+<p>Create two js files named support.js and master.js −</p>
+<p><strong>File: support.js</strong></p>
+<p>console.log(“Child Process” + process.argv[2] + " executed." );</p>
+<p><strong>File: master.js</strong></p>
+<p>const fs = require(‘fs’); const child_process = require(‘child_process’); for(var i=0; i&lt;3; i++) { var worker_process = child_process.fork(“support.js”, [i]); worker_process.on(‘close’, function (code) { console.log(‘child process exited with code’ + code); }); }</p>
+<p>Now run the master.js to see the result −</p>
+<p>$ node master.js</p>
+<p>Verify the Output. Server has started.</p>
+<p>Child Process 0 executed. Child Process 1 executed. Child Process 2 executed. child process exited with code 0 child process exited with code 0 child process exited with code 0</p>
+<p><strong>JXcore,</strong> which is an open source project, introduces a unique feature for packaging and encryption of source files and other assets into JX packages.</p>
+<p>Consider you have a large project consisting of many files. JXcore can pack them all into a single file to simplify the distribution. This chapter provides a quick overview of the whole process starting from installing JXcore.</p>
+<h2 id="jxcore-installation">JXcore Installation</h2>
+<p>Installing JXcore is quite simple. Here we have provided step-by-step instructions on how to install JXcore on your system. Follow the steps given below −</p>
+<h3 id="step-1">Step 1</h3>
+<p>Download the JXcore package from <a href="https://github.com/jxcore/jxcore">https://github.com/jxcore/jxcore</a>, as per your operating system and machine architecture. We downloaded a package for Cenots running on 64-bit machine.</p>
+<p>$ wget https://s3.amazonaws.com/nodejx/jx_rh64.zip</p>
+<h3 id="step-2">Step 2</h3>
+<p>Unpack the downloaded file <strong>jx_rh64.zip</strong>and copy the jx binary into /usr/bin or may be in any other directory based on your system setup.</p>
+<p>$ unzip jx_rh64.zip $ cp jx_rh64/jx /usr/bin</p>
+<h3 id="step-3">Step 3</h3>
+<p>Set your PATH variable appropriately to run jx from anywhere you like.</p>
+<p>$ export PATH=$PATH:/usr/bin</p>
+<h3 id="step-4">Step 4</h3>
+<p>You can verify your installation by issuing a simple command as shown below. You should find it working and printing its version number as follows −</p>
+<p>$ jx –version v0.10.32</p>
+<h2 id="packaging-the-code">Packaging the Code</h2>
+<p>Consider you have a project with the following directories where you kept all your files including Node.js, main file, index.js, and all the modules installed locally.</p>
+<p>drwxr-xr-x 2 root root 4096 Nov 13 12:42 images -rwxr-xr-x 1 root root 30457 Mar 6 12:19 index.htm -rwxr-xr-x 1 root root 30452 Mar 1 12:54 index.js drwxr-xr-x 23 root root 4096 Jan 15 03:48 node_modules drwxr-xr-x 2 root root 4096 Mar 21 06:10 scripts drwxr-xr-x 2 root root 4096 Feb 15 11:56 style</p>
+<p>To package the above project, you simply need to go inside this directory and issue the following jx command. Assuming index.js is the entry file for your Node.js project −</p>
+<p>$ jx package index.js index</p>
+<p>Here you could have used any other package name instead of <strong>index.</strong> We have used <strong>index</strong> because we wanted to keep our main file name as index.jx. However, the above command will pack everything and will create the following two files −</p>
+<ul>
+<li><strong>index.jxp</strong> This is an intermediate file which contains the complete project detail needed to compile the project.</li>
+<li><strong>index.jx</strong> This is the binary file having the complete package that is ready to be shipped to your client or to your production environment.</li>
+</ul>
+<h2 id="launching-jx-file">Launching JX File</h2>
+<p>Consider your original Node.js project was running as follows −</p>
+<p>$ node index.js command_line_arguments</p>
+<p>After compiling your package using JXcore, it can be started as follows −</p>
+<p>$ jx index.jx command_line_arguments</p>
+<p>To know more on JXcore, you can check its official website.</p>
+</body>
+</html>

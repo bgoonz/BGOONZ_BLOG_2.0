@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>jbang</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="create-a-new-command-line-application-using-picocli">Create a new command line application using Picocli</h1>
+<p>jbang init –template=cli CmdLineApp.java</p>
+<h1 id="edit-application-with-visual-studio-code">Edit application with Visual Studio Code</h1>
+<p>jbang edit –open=code CmdLineApp.java</p>
+<h1 id="edit-application-with-idea-and-have-the-project-regenerated-on-dependencies-changes">Edit application with IDEA and have the project regenerated on dependencies changes</h1>
+<p>jbang edit –live –open=idea CmdLineApp.java</p>
+<h1 id="rebuild-application-in-cache-without-starting-it">Rebuild application in cache without starting it</h1>
+<p>jbang build CmdLineApp.java</p>
+<h1 id="run-command-line-application-with-jbang">Run command line application with jbang</h1>
+<p>jbang CmdLineApp.java command arg1 arg2…</p>
+<h1 id="run-command-line-as-a-script">Run command line as a script</h1>
+<p>./CmdLineApp.java command arg1 arg2…</p>
+<h1 id="run-a-java-code-snippet-java-9-and-later">Run a Java code snippet (Java 9 and later)</h1>
+<p>echo ‘Files.list(Paths.get(“/etc”)).forEach(System.out::println);’ | jbang -</p>
+<h1 id="debug">Debug</h1>
+<p>jbang –debug CmdLineApp.java command arg1</p>
+<h1 id="then-start-debugger-in-idea-once-port-is-printed">Then start debugger in IDEA once port is printed</h1>
+<h1 id="run-a-script-from-the-network">Run a script from the network</h1>
+<p>jbang https://github.com/jbangdev/jbang-catalog/blob/master/hello.java</p>
+<h1 id="run-a-jbang-script-referenced-in-a-catalog">Run a jbang script referenced in a catalog</h1>
+<h1 id="where-hello.java-is-located-in-jbang-catalog-repository-of-github-jbangdev-user">Where hello.java is located in jbang-catalog repository of GitHub jbangdev user</h1>
+<p>jbang hello@jbangdev</p>
+<h1 id="run-a-jar-file-from-its-gav">Run a jar file from its GAV</h1>
+<p>jbang io.swagger:swagger-codegen-cli:RELEASE –help</p>
+<h1 id="install-jdk-14-to-be-used-with-jbang">Install JDK 14 to be used with jbang</h1>
+<p>jbang jdk install 14</p>
+<h1 id="force-usage-of-jdk-14-in-a-jbang-script">Force usage of JDK 14 in a jbang script</h1>
+<h2 id="add-java-14-to-the-first-lines-of-the-script">Add //JAVA 14 to the first lines of the script</h2>
+<h2 id="then-start-it-using-jbang">Then start it using jbang</h2>
+<h1 id="list-jbang-installed-jdk">List jbang installed JDK</h1>
+<p>jbang jdk list</p>
+<h1 id="clear-jbang-cache">Clear jbang cache</h1>
+<p>jbang cache clear</p>
+<h1 id="install-auto-completion-script-for-bash">Install auto-completion script for Bash</h1>
+<p>jbang completion | sudo tee /etc/bash_completion.d/jbang</p>
+</body>
+</html>

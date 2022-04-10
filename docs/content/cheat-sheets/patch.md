@@ -1,18 +1,24 @@
-# To patch one file:
+To patch one file:
+==================
 
-patch <file> < <patch-file>
+patch &lt;
 
-# To reverse a patch:
+To reverse a patch:
+===================
 
-patch -R <file> < <patch-file>
+patch -R &lt;
 
-# To patch all files in a directory, adding any missing new files:
+To patch all files in a directory, adding any missing new files:
+================================================================
 
-# -p strips leading slashes
+-p strips leading slashes
+=========================
 
-$ cd dir
-$ patch -p1 -i <dir> <patch-file>
+$ cd dir $ patch -p1 -i
 
-# To patch files in a directory, with one level (/) offset:
+To patch files in a directory, with one level (/) offset:
+=========================================================
 
-patch -p1 -r <dir> < <patch-file>
+patch -p1 -r
+
+&lt;

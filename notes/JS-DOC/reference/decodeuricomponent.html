@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>decodeuricomponent</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="decodeuricomponent">decodeURIComponent()</h1>
+<p>The <code>decodeURIComponent()</code> function decodes a Uniform Resource Identifier (URI) component previously created by <a href="encodeuricomponent"><code>encodeURIComponent</code></a> or by a similar routine.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>decodeURIComponent(encodedURI)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>encodedURI</code><br />
+An encoded component of a Uniform Resource Identifier.</p>
+<h3 id="return-value">Return value</h3>
+<p>A new string representing the decoded version of the given encoded Uniform Resource Identifier (URI) component.</p>
+<h3 id="exceptions">Exceptions</h3>
+<p>Throws an <a href="urierror"><code>URIError</code></a> (“malformed URI sequence”) exception when used wrongly.</p>
+<h2 id="description">Description</h2>
+<p>Replaces each escape sequence in the encoded URI component with the character that it represents.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="decoding-a-cyrillic-url-component">Decoding a Cyrillic URL component</h3>
+<pre><code>decodeURIComponent(&#39;JavaScript_%D1%88%D0%B5%D0%BB%D0%BB%D1%8B&#39;);
+// &quot;JavaScript_шеллы&quot;</code></pre>
+<h3 id="catching-errors">Catching errors</h3>
+<pre><code>try {
+  var a = decodeURIComponent(&#39;%E0%A4%A&#39;);
+} catch(e) {
+  console.error(e);
+}
+
+// URIError: malformed URI sequence</code></pre>
+<h3 id="decoding-query-parameters-from-a-url">Decoding query parameters from a URL</h3>
+<p>decodeURIComponent cannot be used directly to parse query parameters from a URL. It needs a bit of preparation.</p>
+<pre><code>function decodeQueryParam(p) {
+  return decodeURIComponent(p.replace(/\+/g, &#39; &#39;));
+}
+
+decodeQueryParam(&#39;search+query%20%28correct%29&#39;);
+// &#39;search query (correct)&#39;</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-decodeuricomponent-encodeduricomponent">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-decodeuricomponent-encodeduricomponent</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>decodeURIComponent</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>5.5</p>
+<p>7</p>
+<p>1.1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="decodeuri"><code>decodeURI</code></a></li>
+<li><a href="encodeuri"><code>encodeURI</code></a></li>
+<li><a href="encodeuricomponent"><code>encodeURIComponent</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent</a></p>
+</body>
+</html>

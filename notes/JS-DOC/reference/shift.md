@@ -1,8 +1,10 @@
-# Array.prototype.shift()
+Array.prototype.shift()
+=======================
 
 The `shift()` method removes the **first** element from an array and returns that removed element. This method changes the length of the array.
 
-## Syntax
+Syntax
+------
 
     shift()
 
@@ -10,7 +12,8 @@ The `shift()` method removes the **first** element from an array and returns tha
 
 The removed element from the array; [`undefined`](../undefined) if the array is empty.
 
-## Description
+Description
+-----------
 
 The `shift` method removes the element at the zeroeth index and shifts the values at consecutive indexes down, then returns the removed value. If the [`length`](length) property is 0, [`undefined`](../undefined) is returned.
 
@@ -18,7 +21,8 @@ The `shift` method removes the element at the zeroeth index and shifts the value
 
 [`Array.prototype.pop()`](pop) has similar behavior to `shift`, but applied to the last element in an array.
 
-## Examples
+Examples
+--------
 
 ### Removing an element from an array
 
@@ -48,14 +52,14 @@ The shift() method is often used in condition inside while loop. In the followin
     }
     // Andrew, Edward, Paul, Chris, John
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.shift">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-array.prototype.shift</span></td></tr></tbody></table>
 
-<span class="small">#sec-array.prototype.shift</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -111,7 +115,8 @@ Samsung Internet
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`Array.prototype.push()`](push)
 -   [`Array.prototype.pop()`](pop)

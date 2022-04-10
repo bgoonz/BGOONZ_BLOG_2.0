@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>deprecated_tolocaleformat</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="warning-date.prototype.tolocaleformat-is-deprecated">Warning: Date.prototype.toLocaleFormat is deprecated</h1>
+<p>The JavaScript warning “Date.prototype.toLocaleFormat is deprecated; consider using Intl.DateTimeFormat instead” occurs when the non-standard <span class="page-not-created"><code>Date.prototype.toLocaleFormat</code></span> method is used.</p>
+<h2 id="message">Message</h2>
+<pre><code>Warning: Date.prototype.toLocaleFormat is deprecated; consider using Intl.DateTimeFormat instead</code></pre>
+<h2 id="error-type">Error type</h2>
+<p>Warning. JavaScript execution won’t be halted.</p>
+<h2 id="what-went-wrong">What went wrong?</h2>
+<p>The non-standard <span class="page-not-created"><code>Date.prototype.toLocaleFormat</code></span> method is deprecated and shouldn’t be used anymore. It uses a format string in the same format expected by the <code>strftime()</code> function in C. <strong>The function is no longer available in Firefox 58+</strong>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="deprecated-syntax">Deprecated syntax</h3>
+<p>The <span class="page-not-created"><code>Date.prototype.toLocaleFormat</code></span> method is deprecated and will be removed (no cross-browser support, available in Firefox only).</p>
+<pre><code>var today = new Date();
+var date = today.toLocaleFormat(&#39;%A, %e. %B %Y&#39;);
+
+console.log(date);
+// In German locale
+// &quot;Freitag, 10. März 2017&quot;</code></pre>
+<h3 id="alternative-standard-syntax-using-the-ecmascript-intl-api">Alternative standard syntax using the ECMAScript Intl API</h3>
+<p>The ECMA-402 (ECMAScript Intl API) standard specifies standard objects and methods that enable language sensitive date and time formatting (available in Chrome 24+, Firefox 29+, IE11+, Safari10+).</p>
+<p>You can now either use the <a href="../global_objects/date/tolocaledatestring"><code>Date.prototype.toLocaleDateString</code></a> method if you just want to format one date.</p>
+<pre><code>var today = new Date();
+var options = { weekday: &#39;long&#39;, year: &#39;numeric&#39;,
+                month: &#39;long&#39;, day: &#39;numeric&#39; };
+var date = today.toLocaleDateString(&#39;de-DE&#39;, options);
+
+console.log(date);
+// &quot;Freitag, 10. März 2017&quot;</code></pre>
+<p>Or, you can make use of the <a href="../global_objects/intl/datetimeformat"><code>Intl.DateTimeFormat</code></a> object, which allows you to cache an object with most of the computations done so that formatting is fast. This is useful if you have a loop of dates to format.</p>
+<pre><code>var options = { weekday: &#39;long&#39;, year: &#39;numeric&#39;,
+                month: &#39;long&#39;, day: &#39;numeric&#39; };
+var dateFormatter = new Intl.DateTimeFormat(&#39;de-DE&#39;, options)
+
+var dates = [Date.UTC(2012, 11, 20, 3, 0, 0),
+             Date.UTC(2014, 04, 12, 8, 0, 0)];
+
+dates.forEach(date =&gt; console.log(dateFormatter.format(date)));
+
+// &quot;Donnerstag, 20. Dezember 2012&quot;
+// &quot;Montag, 12. Mai 2014&quot;</code></pre>
+<h3 id="alternative-standard-syntax-using-date-methods">Alternative standard syntax using Date methods</h3>
+<p>The <a href="../global_objects/date"><code>Date</code></a> object offers several methods to build a custom date string.</p>
+<pre><code>(new Date()).toLocaleFormat(&quot;%Y%m%d&quot;);
+// &quot;20170310&quot;</code></pre>
+<p>Can be converted to:</p>
+<pre><code>let now = new Date();
+let date = now.getFullYear() * 10000 +
+          (now.getMonth() + 1) * 100 + now.getDate();
+
+console.log(date);
+// &quot;20170310&quot;</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><span class="page-not-created"><code>Date.prototype.toLocaleFormat</code></span></li>
+<li><a href="../global_objects/date/tolocaledatestring"><code>Date.prototype.toLocaleDateString</code></a></li>
+<li><a href="../global_objects/intl/datetimeformat"><code>Intl.DateTimeFormat</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Deprecated_toLocaleFormat" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Deprecated_toLocaleFormat</a></p>
+</body>
+</html>

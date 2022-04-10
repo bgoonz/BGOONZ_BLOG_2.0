@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>github-cheat-sheet</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="github-cheat-sheet">Github Cheat Sheet</h1>
+<p>Git is a distributed version control and source code management system.</p>
+<p>It does this through a series of snapshots of your project, and it works with those snapshots to provide you with functionality to version and manage your source code.</p>
+<h3 id="versioning-concepts">Versioning Concepts</h3>
+<h4 id="what-is-version-control">What is version control?</h4>
+<p>Version control is a system that records changes to a file(s), over time.</p>
+<h4 id="centralized-versioning-vs.-distributed-versioning">Centralized Versioning vs. Distributed Versioning</h4>
+<ul>
+<li>Centralized version control focuses on synchronizing, tracking, and backing up files.</li>
+<li>Distributed version control focuses on sharing changes. Every change has a unique id.</li>
+<li>Distributed systems have no defined structure. You could easily have a SVN style, centralized system, with git.</li>
+</ul>
+<p><a href="http://git-scm.com/book/en/Getting-Started-About-Version-Control">Additional Information</a></p>
+<h4 id="why-use-git">Why Use Git?</h4>
+<ul>
+<li>Can work offline.</li>
+<li>Collaborating with others is easy!</li>
+<li>Branching is easy!</li>
+<li>Branching is fast!</li>
+<li>Merging is easy!</li>
+<li>Git is fast.</li>
+<li>Git is flexible.</li>
+</ul>
+<h3 id="git-architecture">Git Architecture</h3>
+<h4 id="repository">Repository</h4>
+<p>A set of files, directories, historical records, commits, and heads. Imagine it as a source code data structure, with the attribute that each source code “element” gives you access to its revision history, among other things.</p>
+<p>A git repository is comprised of the .git directory &amp; working tree.</p>
+<h4 id="git-directory-component-of-repository">.git Directory (component of repository)</h4>
+<p>The .git directory contains all the configurations, logs, branches, HEAD, and more. <a href="http://gitready.com/advanced/2009/03/23/whats-inside-your-git-directory.html">Detailed List.</a></p>
+<h4 id="working-tree-component-of-repository">Working Tree (component of repository)</h4>
+<p>This is basically the directories and files in your repository. It is often referred to as your working directory.</p>
+<h4 id="index-component-of-.git-dir">Index (component of .git dir)</h4>
+<p>The Index is the staging area in git. It’s basically a layer that separates your working tree from the Git repository. This gives developers more power over what gets sent to the Git repository.</p>
+<h4 id="commit">Commit</h4>
+<p>A git commit is a snapshot of a set of changes, or manipulations to your Working Tree. For example, if you added 5 files, and removed 2 others, these changes will be contained in a commit (or snapshot). This commit can then be pushed to other repositories, or not!</p>
+<h4 id="branch">Branch</h4>
+<p>A branch is essentially a pointer to the last commit you made. As you go on committing, this pointer will automatically update to point to the latest commit.</p>
+<h4 id="tag">Tag</h4>
+<p>A tag is a mark on specific point in history. Typically people use this functionality to mark release points (v1.0, and so on).</p>
+<h4 id="head-and-head-component-of-.git-dir">HEAD and head (component of .git dir)</h4>
+<p>HEAD is a pointer that points to the current branch. A repository only has 1 <em>active</em> HEAD. head is a pointer that points to any commit. A repository can have any number of heads.</p>
+<h4 id="stages-of-git">Stages of Git</h4>
+<ul>
+<li>Modified - Changes have been made to a file but file has not been committed to Git Database yet</li>
+<li>Staged - Marks a modified file to go into your next commit snapshot</li>
+<li>Committed - Files have been committed to the Git Database</li>
+</ul>
+<h4 id="conceptual-resources">Conceptual Resources</h4>
+<ul>
+<li><a href="http://eagain.net/articles/git-for-computer-scientists/">Git For Computer Scientists</a></li>
+<li><a href="http://hoth.entp.com/output/git_for_designers.html">Git For Designers</a></li>
+</ul>
+<h3 id="commands">Commands</h3>
+<h4 id="init">init</h4>
+<p>Create an empty Git repository. The Git repository’s settings, stored information, and more is stored in a directory (a folder) named “.git”.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb1-1" title="1">$ <span class="fu">git</span> init</a></code></pre></div>
+<h4 id="config">config</h4>
+<p>To configure settings. Whether it be for the repository, the system itself, or global configurations ( global config file is <code>~/.gitconfig</code> ).</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb2-1" title="1"><span class="co"># Print &amp; Set Some Basic Config Variables (Global)</span></a>
+<a class="sourceLine" id="cb2-2" title="2">$ <span class="fu">git</span> config --global user.email <span class="st">&quot;MyEmail@Zoho.com&quot;</span></a>
+<a class="sourceLine" id="cb2-3" title="3">$ <span class="fu">git</span> config --global user.name <span class="st">&quot;My Name&quot;</span></a></code></pre></div>
+<p><a href="http://git-scm.com/docs/git-config">Learn More About git config.</a></p>
+<h4 id="help">help</h4>
+<p>To give you quick access to an extremely detailed guide of each command. Or to just give you a quick reminder of some semantics.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb3-1" title="1"><span class="co"># Quickly check available commands</span></a>
+<a class="sourceLine" id="cb3-2" title="2">$ <span class="fu">git</span> help</a>
+<a class="sourceLine" id="cb3-3" title="3"></a>
+<a class="sourceLine" id="cb3-4" title="4"><span class="co"># Check all available commands</span></a>
+<a class="sourceLine" id="cb3-5" title="5">$ <span class="fu">git</span> help -a</a>
+<a class="sourceLine" id="cb3-6" title="6"></a>
+<a class="sourceLine" id="cb3-7" title="7"><span class="co"># Command specific help - user manual</span></a>
+<a class="sourceLine" id="cb3-8" title="8"><span class="co"># git help &lt;command_here&gt;</span></a>
+<a class="sourceLine" id="cb3-9" title="9">$ <span class="fu">git</span> help add</a>
+<a class="sourceLine" id="cb3-10" title="10">$ <span class="fu">git</span> help commit</a>
+<a class="sourceLine" id="cb3-11" title="11">$ <span class="fu">git</span> help init</a>
+<a class="sourceLine" id="cb3-12" title="12"><span class="co"># or git &lt;command_here&gt; --help</span></a>
+<a class="sourceLine" id="cb3-13" title="13">$ <span class="fu">git</span> add --help</a>
+<a class="sourceLine" id="cb3-14" title="14">$ <span class="fu">git</span> commit --help</a>
+<a class="sourceLine" id="cb3-15" title="15">$ <span class="fu">git</span> init --help</a></code></pre></div>
+<h4 id="ignore-files">ignore files</h4>
+<p>To intentionally untrack file(s) &amp; folder(s) from git. Typically meant for private &amp; temp files which would otherwise be shared in the repository.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb4-1" title="1">$ <span class="bu">echo</span> <span class="st">&quot;temp/&quot;</span> <span class="op">&gt;&gt;</span> .gitignore</a>
+<a class="sourceLine" id="cb4-2" title="2">$ <span class="bu">echo</span> <span class="st">&quot;private_key&quot;</span> <span class="op">&gt;&gt;</span> .gitignore</a></code></pre></div>
+<h4 id="status">status</h4>
+<p>To show differences between the index file (basically your working copy/repo) and the current HEAD commit.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb5-1" title="1"><span class="co"># Will display the branch, untracked files, changes and other differences</span></a>
+<a class="sourceLine" id="cb5-2" title="2">$ <span class="fu">git</span> status</a>
+<a class="sourceLine" id="cb5-3" title="3"></a>
+<a class="sourceLine" id="cb5-4" title="4"><span class="co"># To learn other &quot;tid bits&quot; about git status</span></a>
+<a class="sourceLine" id="cb5-5" title="5">$ <span class="fu">git</span> help status</a></code></pre></div>
+<h4 id="add">add</h4>
+<p>To add files to the staging area/index. If you do not <code>git add</code> new files to the staging area/index, they will not be included in commits!</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb6-1" title="1"><span class="co"># add a file in your current working directory</span></a>
+<a class="sourceLine" id="cb6-2" title="2">$ <span class="fu">git</span> add HelloWorld.java</a>
+<a class="sourceLine" id="cb6-3" title="3"></a>
+<a class="sourceLine" id="cb6-4" title="4"><span class="co"># add a file in a nested dir</span></a>
+<a class="sourceLine" id="cb6-5" title="5">$ <span class="fu">git</span> add /path/to/file/HelloWorld.c</a>
+<a class="sourceLine" id="cb6-6" title="6"></a>
+<a class="sourceLine" id="cb6-7" title="7"><span class="co"># Regular Expression support!</span></a>
+<a class="sourceLine" id="cb6-8" title="8">$ <span class="fu">git</span> add ./*.java</a>
+<a class="sourceLine" id="cb6-9" title="9"></a>
+<a class="sourceLine" id="cb6-10" title="10"><span class="co"># You can also add everything in your working directory to the staging area.</span></a>
+<a class="sourceLine" id="cb6-11" title="11">$ <span class="fu">git</span> add -A</a></code></pre></div>
+<p>This only adds a file to the staging area/index, it doesn’t commit it to the working directory/repo.</p>
+<h4 id="branch-1">branch</h4>
+<p>Manage your branches. You can view, edit, create, delete branches using this command.</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb7-1" title="1"><span class="co"># list existing branches &amp; remotes</span></a>
+<a class="sourceLine" id="cb7-2" title="2">$ <span class="fu">git</span> branch -a</a>
+<a class="sourceLine" id="cb7-3" title="3"></a>
+<a class="sourceLine" id="cb7-4" title="4"><span class="co"># create a new branch</span></a>
+<a class="sourceLine" id="cb7-5" title="5">$ <span class="fu">git</span> branch myNewBranch</a>
+<a class="sourceLine" id="cb7-6" title="6"></a>
+<a class="sourceLine" id="cb7-7" title="7"><span class="co"># delete a branch</span></a>
+<a class="sourceLine" id="cb7-8" title="8">$ <span class="fu">git</span> branch -d myBranch</a>
+<a class="sourceLine" id="cb7-9" title="9"></a>
+<a class="sourceLine" id="cb7-10" title="10"><span class="co"># rename a branch</span></a>
+<a class="sourceLine" id="cb7-11" title="11"><span class="co"># git branch -m &lt;oldname&gt; &lt;newname&gt;</span></a>
+<a class="sourceLine" id="cb7-12" title="12">$ <span class="fu">git</span> branch -m myBranchName myNewBranchName</a>
+<a class="sourceLine" id="cb7-13" title="13"></a>
+<a class="sourceLine" id="cb7-14" title="14"><span class="co"># edit a branch&#39;s description</span></a>
+<a class="sourceLine" id="cb7-15" title="15">$ <span class="fu">git</span> branch myBranchName --edit-description</a></code></pre></div>
+<h4 id="tag-1">tag</h4>
+<p>Manage your tags</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb8-1" title="1"><span class="co"># List tags</span></a>
+<a class="sourceLine" id="cb8-2" title="2">$ <span class="fu">git</span> tag</a>
+<a class="sourceLine" id="cb8-3" title="3"></a>
+<a class="sourceLine" id="cb8-4" title="4"><span class="co"># Create a annotated tag</span></a>
+<a class="sourceLine" id="cb8-5" title="5"><span class="co"># The -m specifies a tagging message, which is stored with the tag.</span></a>
+<a class="sourceLine" id="cb8-6" title="6"><span class="co"># If you don&#39;t specify a message for an annotated tag,</span></a>
+<a class="sourceLine" id="cb8-7" title="7"><span class="co"># Git launches your editor so you can type it in.</span></a>
+<a class="sourceLine" id="cb8-8" title="8">$ <span class="fu">git</span> tag -a v2.0 -m <span class="st">&#39;my version 2.0&#39;</span></a>
+<a class="sourceLine" id="cb8-9" title="9"></a>
+<a class="sourceLine" id="cb8-10" title="10"><span class="co"># Show info about tag</span></a>
+<a class="sourceLine" id="cb8-11" title="11"><span class="co"># That shows the tagger information, the date the commit was tagged,</span></a>
+<a class="sourceLine" id="cb8-12" title="12"><span class="co"># and the annotation message before showing the commit information.</span></a>
+<a class="sourceLine" id="cb8-13" title="13">$ <span class="fu">git</span> show v2.0</a>
+<a class="sourceLine" id="cb8-14" title="14"></a>
+<a class="sourceLine" id="cb8-15" title="15"><span class="co"># Push a single tag to remote</span></a>
+<a class="sourceLine" id="cb8-16" title="16">$ <span class="fu">git</span> push origin v2.0</a>
+<a class="sourceLine" id="cb8-17" title="17"></a>
+<a class="sourceLine" id="cb8-18" title="18"><span class="co"># Push a lot of tags to remote</span></a>
+<a class="sourceLine" id="cb8-19" title="19">$ <span class="fu">git</span> push origin --tags</a></code></pre></div>
+<h4 id="checkout">checkout</h4>
+<p>Updates all files in the working tree to match the version in the index, or specified tree.</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb9-1" title="1"><span class="co"># Checkout a repo - defaults to master branch</span></a>
+<a class="sourceLine" id="cb9-2" title="2">$ <span class="fu">git</span> checkout</a>
+<a class="sourceLine" id="cb9-3" title="3"></a>
+<a class="sourceLine" id="cb9-4" title="4"><span class="co"># Checkout a specified branch</span></a>
+<a class="sourceLine" id="cb9-5" title="5">$ <span class="fu">git</span> checkout branchName</a>
+<a class="sourceLine" id="cb9-6" title="6"></a>
+<a class="sourceLine" id="cb9-7" title="7"><span class="co"># Create a new branch &amp; switch to it</span></a>
+<a class="sourceLine" id="cb9-8" title="8"><span class="co"># equivalent to &quot;git branch &lt;name&gt;; git checkout &lt;name&gt;&quot;</span></a>
+<a class="sourceLine" id="cb9-9" title="9"></a>
+<a class="sourceLine" id="cb9-10" title="10">$ <span class="fu">git</span> checkout -b newBranch</a></code></pre></div>
+<h4 id="clone">clone</h4>
+<p>Clones, or copies, an existing repository into a new directory. It also adds remote-tracking branches for each branch in the cloned repo, which allows you to push to a remote branch.</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb10-1" title="1"><span class="co"># Clone learnxinyminutes-docs</span></a>
+<a class="sourceLine" id="cb10-2" title="2">$ <span class="fu">git</span> clone https://github.com/adambard/learnxinyminutes-docs.git</a>
+<a class="sourceLine" id="cb10-3" title="3"></a>
+<a class="sourceLine" id="cb10-4" title="4"><span class="co"># shallow clone - faster cloning that pulls only latest snapshot</span></a>
+<a class="sourceLine" id="cb10-5" title="5">$ <span class="fu">git</span> clone --depth 1 https://github.com/adambard/learnxinyminutes-docs.git</a>
+<a class="sourceLine" id="cb10-6" title="6"></a>
+<a class="sourceLine" id="cb10-7" title="7"><span class="co"># clone only a specific branch</span></a>
+<a class="sourceLine" id="cb10-8" title="8">$ <span class="fu">git</span> clone -b master-cn https://github.com/adambard/learnxinyminutes-docs.git --single-branch</a></code></pre></div>
+<h4 id="commit-1">commit</h4>
+<p>Stores the current contents of the index in a new “commit.” This commit contains the changes made and a message created by the user.</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb11-1" title="1"><span class="co"># commit with a message</span></a>
+<a class="sourceLine" id="cb11-2" title="2">$ <span class="fu">git</span> commit -m <span class="st">&quot;Added multiplyNumbers() function to HelloWorld.c&quot;</span></a>
+<a class="sourceLine" id="cb11-3" title="3"></a>
+<a class="sourceLine" id="cb11-4" title="4"><span class="co"># signed commit with a message (user.signingkey must have been set</span></a>
+<a class="sourceLine" id="cb11-5" title="5"><span class="co"># with your GPG key e.g. git config --global user.signingkey 5173AAD5)</span></a>
+<a class="sourceLine" id="cb11-6" title="6">$ <span class="fu">git</span> commit -S -m <span class="st">&quot;signed commit message&quot;</span></a>
+<a class="sourceLine" id="cb11-7" title="7"></a>
+<a class="sourceLine" id="cb11-8" title="8"><span class="co"># automatically stage modified or deleted files, except new files, and then commit</span></a>
+<a class="sourceLine" id="cb11-9" title="9">$ <span class="fu">git</span> commit -a -m <span class="st">&quot;Modified foo.php and removed bar.php&quot;</span></a>
+<a class="sourceLine" id="cb11-10" title="10"></a>
+<a class="sourceLine" id="cb11-11" title="11"><span class="co"># change last commit (this deletes previous commit with a fresh commit)</span></a>
+<a class="sourceLine" id="cb11-12" title="12">$ <span class="fu">git</span> commit --amend -m <span class="st">&quot;Correct message&quot;</span></a></code></pre></div>
+<h4 id="diff">diff</h4>
+<p>Shows differences between a file in the working directory, index and commits.</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb12-1" title="1"><span class="co"># Show difference between your working dir and the index</span></a>
+<a class="sourceLine" id="cb12-2" title="2">$ <span class="fu">git</span> diff</a>
+<a class="sourceLine" id="cb12-3" title="3"></a>
+<a class="sourceLine" id="cb12-4" title="4"><span class="co"># Show differences between the index and the most recent commit.</span></a>
+<a class="sourceLine" id="cb12-5" title="5">$ <span class="fu">git</span> diff --cached</a>
+<a class="sourceLine" id="cb12-6" title="6"></a>
+<a class="sourceLine" id="cb12-7" title="7"><span class="co"># Show differences between your working dir and the most recent commit</span></a>
+<a class="sourceLine" id="cb12-8" title="8">$ <span class="fu">git</span> diff HEAD</a></code></pre></div>
+<h4 id="grep">grep</h4>
+<p>Allows you to quickly search a repository.</p>
+<p>Optional Configurations:</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb13-1" title="1"><span class="co"># Thanks to Travis Jeffery for these</span></a>
+<a class="sourceLine" id="cb13-2" title="2"><span class="co"># Set line numbers to be shown in grep search results</span></a>
+<a class="sourceLine" id="cb13-3" title="3">$ <span class="fu">git</span> config --global grep.lineNumber true</a>
+<a class="sourceLine" id="cb13-4" title="4"></a>
+<a class="sourceLine" id="cb13-5" title="5"><span class="co"># Make search results more readable, including grouping</span></a>
+<a class="sourceLine" id="cb13-6" title="6">$ <span class="fu">git</span> config --global alias.g <span class="st">&quot;grep --break --heading --line-number&quot;</span></a></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb14-1" title="1"><span class="co"># Search for &quot;variableName&quot; in all java files</span></a>
+<a class="sourceLine" id="cb14-2" title="2">$ <span class="fu">git</span> grep <span class="st">&#39;variableName&#39;</span> -- <span class="st">&#39;*.java&#39;</span></a>
+<a class="sourceLine" id="cb14-3" title="3"></a>
+<a class="sourceLine" id="cb14-4" title="4"><span class="co"># Search for a line that contains &quot;arrayListName&quot; and, &quot;add&quot; or &quot;remove&quot;</span></a>
+<a class="sourceLine" id="cb14-5" title="5">$ <span class="fu">git</span> grep -e <span class="st">&#39;arrayListName&#39;</span> --and <span class="dt">\(</span> -e add -e remove <span class="dt">\)</span></a></code></pre></div>
+<p>Google is your friend; for more examples <a href="http://travisjeffery.com/b/2012/02/search-a-git-repo-like-a-ninja">Git Grep Ninja</a></p>
+<h4 id="log">log</h4>
+<p>Display commits to the repository.</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb15-1" title="1"><span class="co"># Show all commits</span></a>
+<a class="sourceLine" id="cb15-2" title="2">$ <span class="fu">git</span> log</a>
+<a class="sourceLine" id="cb15-3" title="3"></a>
+<a class="sourceLine" id="cb15-4" title="4"><span class="co"># Show only commit message &amp; ref</span></a>
+<a class="sourceLine" id="cb15-5" title="5">$ <span class="fu">git</span> log --oneline</a>
+<a class="sourceLine" id="cb15-6" title="6"></a>
+<a class="sourceLine" id="cb15-7" title="7"><span class="co"># Show merge commits only</span></a>
+<a class="sourceLine" id="cb15-8" title="8">$ <span class="fu">git</span> log --merges</a>
+<a class="sourceLine" id="cb15-9" title="9"></a>
+<a class="sourceLine" id="cb15-10" title="10"><span class="co"># Show all commits represented by an ASCII graph</span></a>
+<a class="sourceLine" id="cb15-11" title="11">$ <span class="fu">git</span> log --graph</a></code></pre></div>
+<h4 id="merge">merge</h4>
+<p>“Merge” in changes from external commits into the current branch.</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb16-1" title="1"><span class="co"># Merge the specified branch into the current.</span></a>
+<a class="sourceLine" id="cb16-2" title="2">$ <span class="fu">git</span> merge branchName</a>
+<a class="sourceLine" id="cb16-3" title="3"></a>
+<a class="sourceLine" id="cb16-4" title="4"><span class="co"># Always generate a merge commit when merging</span></a>
+<a class="sourceLine" id="cb16-5" title="5">$ <span class="fu">git</span> merge --no-ff branchName</a></code></pre></div>
+<h4 id="mv">mv</h4>
+<p>Rename or move a file</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb17-1" title="1"><span class="co"># Renaming a file</span></a>
+<a class="sourceLine" id="cb17-2" title="2">$ <span class="fu">git</span> mv HelloWorld.c HelloNewWorld.c</a>
+<a class="sourceLine" id="cb17-3" title="3"></a>
+<a class="sourceLine" id="cb17-4" title="4"><span class="co"># Moving a file</span></a>
+<a class="sourceLine" id="cb17-5" title="5">$ <span class="fu">git</span> mv HelloWorld.c ./new/path/HelloWorld.c</a>
+<a class="sourceLine" id="cb17-6" title="6"></a>
+<a class="sourceLine" id="cb17-7" title="7"><span class="co"># Force rename or move</span></a>
+<a class="sourceLine" id="cb17-8" title="8"><span class="co"># &quot;existingFile&quot; already exists in the directory, will be overwritten</span></a>
+<a class="sourceLine" id="cb17-9" title="9">$ <span class="fu">git</span> mv -f myFile existingFile</a></code></pre></div>
+<h4 id="pull">pull</h4>
+<p>Pulls from a repository and merges it with another branch.</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb18-1" title="1"><span class="co"># Update your local repo, by merging in new changes</span></a>
+<a class="sourceLine" id="cb18-2" title="2"><span class="co"># from the remote &quot;origin&quot; and &quot;master&quot; branch.</span></a>
+<a class="sourceLine" id="cb18-3" title="3"><span class="co"># git pull &lt;remote&gt; &lt;branch&gt;</span></a>
+<a class="sourceLine" id="cb18-4" title="4">$ <span class="fu">git</span> pull origin master</a>
+<a class="sourceLine" id="cb18-5" title="5"></a>
+<a class="sourceLine" id="cb18-6" title="6"><span class="co"># By default, git pull will update your current branch</span></a>
+<a class="sourceLine" id="cb18-7" title="7"><span class="co"># by merging in new changes from its remote-tracking branch</span></a>
+<a class="sourceLine" id="cb18-8" title="8">$ <span class="fu">git</span> pull</a>
+<a class="sourceLine" id="cb18-9" title="9"></a>
+<a class="sourceLine" id="cb18-10" title="10"><span class="co"># Merge in changes from remote branch and rebase</span></a>
+<a class="sourceLine" id="cb18-11" title="11"><span class="co"># branch commits onto your local repo, like: &quot;git fetch &lt;remote&gt; &lt;branch&gt;, git</span></a>
+<a class="sourceLine" id="cb18-12" title="12"><span class="co"># rebase &lt;remote&gt;/&lt;branch&gt;&quot;</span></a>
+<a class="sourceLine" id="cb18-13" title="13">$ <span class="fu">git</span> pull origin master --rebase</a></code></pre></div>
+<h4 id="push">push</h4>
+<p>Push and merge changes from a branch to a remote &amp; branch.</p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb19-1" title="1"><span class="co"># Push and merge changes from a local repo to a</span></a>
+<a class="sourceLine" id="cb19-2" title="2"><span class="co"># remote named &quot;origin&quot; and &quot;master&quot; branch.</span></a>
+<a class="sourceLine" id="cb19-3" title="3"><span class="co"># git push &lt;remote&gt; &lt;branch&gt;</span></a>
+<a class="sourceLine" id="cb19-4" title="4">$ <span class="fu">git</span> push origin master</a>
+<a class="sourceLine" id="cb19-5" title="5"></a>
+<a class="sourceLine" id="cb19-6" title="6"><span class="co"># By default, git push will push and merge changes from</span></a>
+<a class="sourceLine" id="cb19-7" title="7"><span class="co"># the current branch to its remote-tracking branch</span></a>
+<a class="sourceLine" id="cb19-8" title="8">$ <span class="fu">git</span> push</a>
+<a class="sourceLine" id="cb19-9" title="9"></a>
+<a class="sourceLine" id="cb19-10" title="10"><span class="co"># To link up current local branch with a remote branch, add -u flag:</span></a>
+<a class="sourceLine" id="cb19-11" title="11">$ <span class="fu">git</span> push -u origin master</a>
+<a class="sourceLine" id="cb19-12" title="12"><span class="co"># Now, anytime you want to push from that same local branch, use shortcut:</span></a>
+<a class="sourceLine" id="cb19-13" title="13">$ <span class="fu">git</span> push</a></code></pre></div>
+<h4 id="stash">stash</h4>
+<p>Stashing takes the dirty state of your working directory and saves it on a stack of unfinished changes that you can reapply at any time.</p>
+<p>Let’s say you’ve been doing some work in your git repo, but you want to pull from the remote. Since you have dirty (uncommitted) changes to some files, you are not able to run <code>git pull</code>. Instead, you can run <code>git stash</code> to save your changes onto a stack!</p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb20-1" title="1">$ <span class="fu">git</span> stash</a>
+<a class="sourceLine" id="cb20-2" title="2"><span class="ex">Saved</span> working directory and index state \</a>
+<a class="sourceLine" id="cb20-3" title="3">  <span class="st">&quot;WIP on master: 049d078 added the index file&quot;</span></a>
+<a class="sourceLine" id="cb20-4" title="4">  <span class="ex">HEAD</span> is now at 049d078 added the index file</a>
+<a class="sourceLine" id="cb20-5" title="5">  <span class="kw">(</span><span class="ex">To</span> restore them type <span class="st">&quot;git stash apply&quot;</span><span class="kw">)</span></a></code></pre></div>
+<p>Now you can pull!</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb21-1" title="1"><span class="fu">git</span> pull</a></code></pre></div>
+<p><code>...changes apply...</code></p>
+<p>Now check that everything is OK</p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb22-1" title="1">$ <span class="fu">git</span> status</a>
+<a class="sourceLine" id="cb22-2" title="2"><span class="co"># On branch master</span></a>
+<a class="sourceLine" id="cb22-3" title="3"><span class="ex">nothing</span> to commit, working directory clean</a></code></pre></div>
+<p>You can see what “hunks” you’ve stashed so far using <code>git stash list</code>. Since the “hunks” are stored in a Last-In-First-Out stack, our most recent change will be at top.</p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb23-1" title="1">$ <span class="fu">git</span> stash list</a>
+<a class="sourceLine" id="cb23-2" title="2"><span class="ex">stash@</span><span class="dt">{0}</span>: WIP on master: 049d078 added the index file</a>
+<a class="sourceLine" id="cb23-3" title="3"><span class="ex">stash@</span><span class="dt">{1}</span>: WIP on master: c264051 Revert <span class="st">&quot;added file_size&quot;</span></a>
+<a class="sourceLine" id="cb23-4" title="4"><span class="ex">stash@</span><span class="dt">{2}</span>: WIP on master: 21d80a5 added number to log</a></code></pre></div>
+<p>Now let’s apply our dirty changes back by popping them off the stack.</p>
+<div class="sourceCode" id="cb24"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb24-1" title="1">$ <span class="fu">git</span> stash pop</a>
+<a class="sourceLine" id="cb24-2" title="2"><span class="co"># On branch master</span></a>
+<a class="sourceLine" id="cb24-3" title="3"><span class="co"># Changes not staged for commit:</span></a>
+<a class="sourceLine" id="cb24-4" title="4"><span class="co">#   (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)</span></a>
+<a class="sourceLine" id="cb24-5" title="5"><span class="co">#</span></a>
+<a class="sourceLine" id="cb24-6" title="6"><span class="co">#      modified:   index.html</span></a>
+<a class="sourceLine" id="cb24-7" title="7"><span class="co">#      modified:   lib/simplegit.rb</span></a>
+<a class="sourceLine" id="cb24-8" title="8"><span class="co">#</span></a></code></pre></div>
+<p><code>git stash apply</code> does the same thing</p>
+<p>Now you’re ready to get back to work on your stuff!</p>
+<p><a href="http://git-scm.com/book/en/v1/Git-Tools-Stashing">Additional Reading.</a></p>
+<h4 id="rebase-caution">rebase (caution)</h4>
+<p>Take all changes that were committed on one branch, and replay them onto another branch. <em>Do not rebase commits that you have pushed to a public repo</em>.</p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb25-1" title="1"><span class="co"># Rebase experimentBranch onto master</span></a>
+<a class="sourceLine" id="cb25-2" title="2"><span class="co"># git rebase &lt;basebranch&gt; &lt;topicbranch&gt;</span></a>
+<a class="sourceLine" id="cb25-3" title="3">$ <span class="fu">git</span> rebase master experimentBranch</a></code></pre></div>
+<p><a href="http://git-scm.com/book/en/Git-Branching-Rebasing">Additional Reading.</a></p>
+<h4 id="reset-caution">reset (caution)</h4>
+<p>Reset the current HEAD to the specified state. This allows you to undo merges, pulls, commits, adds, and more. It’s a great command but also dangerous if you don’t know what you are doing.</p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb26-1" title="1"><span class="co"># Reset the staging area, to match the latest commit (leaves dir unchanged)</span></a>
+<a class="sourceLine" id="cb26-2" title="2">$ <span class="fu">git</span> reset</a>
+<a class="sourceLine" id="cb26-3" title="3"></a>
+<a class="sourceLine" id="cb26-4" title="4"><span class="co"># Reset the staging area, to match the latest commit, and overwrite working dir</span></a>
+<a class="sourceLine" id="cb26-5" title="5">$ <span class="fu">git</span> reset --hard</a>
+<a class="sourceLine" id="cb26-6" title="6"></a>
+<a class="sourceLine" id="cb26-7" title="7"><span class="co"># Moves the current branch tip to the specified commit (leaves dir unchanged)</span></a>
+<a class="sourceLine" id="cb26-8" title="8"><span class="co"># all changes still exist in the directory.</span></a>
+<a class="sourceLine" id="cb26-9" title="9">$ <span class="fu">git</span> reset 31f2bb1</a>
+<a class="sourceLine" id="cb26-10" title="10"></a>
+<a class="sourceLine" id="cb26-11" title="11"><span class="co"># Moves the current branch tip backward to the specified commit</span></a>
+<a class="sourceLine" id="cb26-12" title="12"><span class="co"># and makes the working dir match (deletes uncommitted changes and all commits</span></a>
+<a class="sourceLine" id="cb26-13" title="13"><span class="co"># after the specified commit).</span></a>
+<a class="sourceLine" id="cb26-14" title="14">$ <span class="fu">git</span> reset --hard 31f2bb1</a></code></pre></div>
+<h4 id="reflog-caution">reflog (caution)</h4>
+<p>Reflog will list most of the git commands you have done for a given time period, default 90 days.</p>
+<p>This give you the chance to reverse any git commands that have gone wrong (for instance, if a rebase has broken your application).</p>
+<p>You can do this:</p>
+<ol type="1">
+<li><code>git reflog</code> to list all of the git commands for the rebase</li>
+</ol>
+<pre><code>38b323f HEAD@{0}: rebase -i (finish): returning to refs/heads/feature/add_git_reflog
+38b323f HEAD@{1}: rebase -i (pick): Clarify inc/dec operators
+4fff859 HEAD@{2}: rebase -i (pick): Update java.html.markdown
+34ed963 HEAD@{3}: rebase -i (pick): [yaml/en] Add more resources (#1666)
+ed8ddf2 HEAD@{4}: rebase -i (pick): pythonstatcomp spanish translation (#1748)
+2e6c386 HEAD@{5}: rebase -i (start): checkout 02fb96d</code></pre>
+<ol type="1">
+<li>Select where to reset to, in our case its <code>2e6c386</code>, or <code>HEAD@{5}</code></li>
+<li>‘git reset –hard HEAD@{5}’ this will reset your repo to that head</li>
+<li>You can start the rebase again or leave it alone.</li>
+</ol>
+<p><a href="https://git-scm.com/docs/git-reflog">Additional Reading.</a></p>
+<h4 id="revert">revert</h4>
+<p>Revert can be used to undo a commit. It should not be confused with reset which restores the state of a project to a previous point. Revert will add a new commit which is the inverse of the specified commit, thus reverting it.</p>
+<div class="sourceCode" id="cb28"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb28-1" title="1"><span class="co"># Revert a specified commit</span></a>
+<a class="sourceLine" id="cb28-2" title="2">$ <span class="fu">git</span> revert <span class="op">&lt;</span>commit<span class="op">&gt;</span></a></code></pre></div>
+<h4 id="rm">rm</h4>
+<p>The opposite of git add, git rm removes files from the current working tree.</p>
+<div class="sourceCode" id="cb29"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb29-1" title="1"><span class="co"># remove HelloWorld.c</span></a>
+<a class="sourceLine" id="cb29-2" title="2">$ <span class="fu">git</span> rm HelloWorld.c</a>
+<a class="sourceLine" id="cb29-3" title="3"></a>
+<a class="sourceLine" id="cb29-4" title="4"><span class="co"># Remove a file from a nested dir</span></a>
+<a class="sourceLine" id="cb29-5" title="5">$ <span class="fu">git</span> rm /pather/to/the/file/HelloWorld.c</a></code></pre></div>
+<h3 id="further-information">Further Information</h3>
+<ul>
+<li><a href="http://try.github.io/levels/1/challenges/1">tryGit - A fun interactive way to learn Git.</a></li>
+<li><a href="http://learngitbranching.js.org">Learn Git Branching - the most visual and interactive way to learn Git on the web</a></li>
+<li><a href="https://blog.udemy.com/git-tutorial-a-comprehensive-guide/">Udemy Git Tutorial: A Comprehensive Guide</a></li>
+<li><a href="http://gitimmersion.com">Git Immersion - A Guided tour that walks through the fundamentals of git</a></li>
+<li><a href="http://git-scm.com/videos">git-scm - Video Tutorials</a></li>
+<li><a href="http://git-scm.com/docs">git-scm - Documentation</a></li>
+<li><a href="https://www.atlassian.com/git/">Atlassian Git - Tutorials &amp; Workflows</a></li>
+<li><a href="http://res.cloudinary.com/hy4kyit2a/image/upload/SF_git_cheatsheet.pdf">SalesForce Cheat Sheet</a></li>
+<li><a href="http://www.gitguys.com">GitGuys</a></li>
+<li><a href="http://rogerdudler.github.io/git-guide/index.html">Git - the simple guide</a></li>
+<li><a href="http://www.git-scm.com/book/en/v2">Pro Git</a></li>
+<li><a href="http://product.hubspot.com/blog/git-and-github-tutorial-for-beginners">An introduction to Git and GitHub for Beginners (Tutorial)</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL6gx4Cwl9DGAKWClAD_iKpNC0bGHxGhcx">The New Boston tutorial to Git covering basic commands and workflow</a></li>
+</ul>
+</body>
+</html>

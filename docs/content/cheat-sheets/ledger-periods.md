@@ -1,8 +1,3 @@
----
-title: Ledger periods
-category: Ledger
----
-
     [INTERVAL] [BEGIN] [END]
 
 Interval:
@@ -51,4 +46,4 @@ Examples:
 
     $ ledger r -p "since last month"
 
-See: http://ledger-cli.org/3.0/doc/ledger3.html#Period-Expressions
+See: http://ledger-cli.org/3.0/doc/ledger3.html\#Period-Expressions

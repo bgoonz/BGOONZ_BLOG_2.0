@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Introduction-to-React-for-Complete</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="introduction-to-react-for-complete-beginners">Introduction to React for Complete Beginners</h1>
+<p>All of the code examples below will be included a second time at the bottom of this article as an embedded gist.</p>
+<hr />
+<h3 id="introduction-to-react-for-complete-beginners-1">Introduction to React for Complete Beginners</h3>
+<p>All of the code examples below will be included a second time at the bottom of this article as an embedded gist, so that it is properly syntax highlighted.</p>
+<p>React uses a syntax extension of JavaScript called JSX that allows you to write HTML directly within JavaScript.</p>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/1200/0*Olfj44MF6WSzvlSM.png" class="graf-image" />
+</figure>
+<h3 id="react">React</h3>
+<blockquote>
+<p><em>React uses a syntax extension of JavaScript called JSX that allows you to write HTML directly within JavaScript</em></p>
+</blockquote>
+<blockquote>
+<p><em>because JSX is a syntactic extension of JavaScript, you can actually write JavaScript directly within JSX</em></p>
+</blockquote>
+<blockquote>
+<p><em>include the code you want to be treated as JavaScript within curly braces: { ‘this is treated as JavaScript code’ }</em></p>
+</blockquote>
+<blockquote>
+<p><em>JSX code must be compiled into JavaScript</em></p>
+</blockquote>
+<blockquote>
+<p><em>under the hood the challenges are calling ReactDOM.render (JSX, document.getElementById(‘root’))</em></p>
+</blockquote>
+<blockquote>
+<p><em>One important thing to know about nested JSX is that it must return a single element.</em></p>
+</blockquote>
+<blockquote>
+<p><em>For instance, several JSX elements written as siblings with no parent wrapper element will not transpile.</em></p>
+</blockquote>
+<hr />
+<h3 id="from-the-react-docs">From the React Docs:</h3>
+<h3 id="what-is-react">What is React?</h3>
+<p>React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components”.</p>
+<p>React has a few different kinds of components, but we’ll start with <code>React.Component</code> subclasses:</p>
+<pre><code>class ShoppingList extends React.Component {
+  render() {
+    return (
+      &lt;div className=&quot;shopping-list&quot;&gt;
+        &lt;h1&gt;Shopping List for {this.props.name}&lt;/h1&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Instagram&lt;/li&gt;
+          &lt;li&gt;WhatsApp&lt;/li&gt;
+          &lt;li&gt;Oculus&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    );
+  }
+}
+
+// Example usage: &lt;ShoppingList name=&quot;Mark&quot; /&gt;</code></pre>
+<p>We’ll get to the funny XML-like tags soon. We use components to tell React what we want to see on the screen. When our data changes, React will efficiently update and re-render our components.</p>
+<p>Here, ShoppingList is a <strong>React component class</strong>, or <strong>React component type</strong>. A component takes in parameters, called <code>props</code> (short for “properties”), and returns a hierarchy of views to display via the <code>render</code> method.</p>
+<p>The <code>render</code> method returns a <em>description</em> of what you want to see on the screen. React takes the description and displays the result. In particular, <code>render</code> returns a <strong>React element</strong>, which is a lightweight description of what to render. Most React developers use a special syntax called “JSX” which makes these structures easier to write. The <code>&lt;div /&gt;</code> syntax is transformed at build time to <code>React.createElement('div')</code>. The example above is equivalent to:</p>
+<pre><code>return React.createElement(&#39;div&#39;, {className: &#39;shopping-list&#39;},
+  React.createElement(&#39;h1&#39;, /* ... h1 children ... */),
+  React.createElement(&#39;ul&#39;, /* ... ul children ... */)
+);</code></pre>
+<pre><code>
+---
+
+### Valid JSX:
+
+    &lt;div&gt;
+      &lt;p&gt;Paragraph One&lt;/p&gt;
+      &lt;p&gt;Paragraph Two&lt;/p&gt;
+      &lt;p&gt;Paragraph Three&lt;/p&gt;
+    &lt;/div&gt;
+
+---
+
+### Invalid JSX:
+
+    &lt;p&gt;Paragraph One&lt;/p&gt;
+    &lt;p&gt;Paragraph Two&lt;/p&gt;
+    &lt;p&gt;Paragraph Three&lt;/p&gt;
+
+#### To put comments inside JSX, you use the syntax {/\* \*/} to wrap around the comment text.
+
+To put comments inside JSX, you use the syntax {/\* \*/} to wrap around the comment text.
+
+The code editor has a JSX element similar to what you created in the last challenge. Add a comment somewhere within the provided div element, without modifying the existing h1 or p elements.
+
+
+```js
+
+    const JSX = (
+      &lt;div&gt;
+      {/* This is a comment */}
+        &lt;h1&gt;This is a block of JSX&lt;/h1&gt;
+        &lt;p&gt;Here&#39;s a subtitle&lt;/p&gt;
+      &lt;/div&gt;
+    );
+</code></pre>
+<hr />
+<blockquote>
+<p><em>With React, we can render this JSX directly to the HTML DOM using React’s rendering API known as ReactDOM.</em></p>
+</blockquote>
+<blockquote>
+<p><em>ReactDOM offers a simple method to render React elements to the DOM which looks like this:</em></p>
+</blockquote>
+<p><code>ReactDOM.render(componentToRender, targetNode)</code></p>
+<ul>
+<li><span id="f724">the first argument is the React element or component that you want to render,</span></li>
+<li><span id="7093">and the second argument is the DOM node that you want to render the component to.</span></li>
+</ul>
+<blockquote>
+<p><em>ReactDOM.render() must be called after the JSX element declarations, just like how you must declare variables before using them.</em></p>
+</blockquote>
+<blockquote>
+<p><em>key difference in JSX is that you can no longer use the word class to define HTML classes.</em></p>
+</blockquote>
+<ul>
+<li><span id="aafc">— -&gt; This is because class is a reserved word in JavaScript. Instead, JSX uses className</span></li>
+</ul>
+<blockquote>
+<p><em>the naming convention for all HTML attributes and event references in JSX become camelCase</em></p>
+</blockquote>
+<blockquote>
+<p><em>a click event in JSX is onClick, instead of onclick. Likewise, onchange becomes onChange. While this is a subtle difference, it is an important one to keep in mind moving forward.</em></p>
+</blockquote>
+<h3 id="apply-a-class-of-mydiv-to-the-div-provided-in-the-jsx-code.">Apply a class of myDiv to the div provided in the JSX code.</h3>
+<ul>
+<li><span id="9500">The constant JSX should return a div element.</span></li>
+<li><span id="8d42">The div should have a class of myDiv.</span></li>
+</ul>
+<!-- -->
+<pre><code>const JSX = (
+  &lt;div&gt;
+    &lt;h1&gt;Add a class to this div&lt;/h1&gt;
+  &lt;/div&gt;
+);</code></pre>
+<h3 id="ans">Ans:</h3>
+<div class="sourceCode" id="cb5"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb5-1" title="1"></a>
+<a class="sourceLine" id="cb5-2" title="2"> <span class="kw">const</span> JSX <span class="op">=</span> (</a>
+<a class="sourceLine" id="cb5-3" title="3">      <span class="op">&lt;</span>div className<span class="op">=</span><span class="st">&quot;myDiv&quot;</span><span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb5-4" title="4">        <span class="op">&lt;</span>h1<span class="op">&gt;</span>Add a <span class="kw">class</span> to <span class="kw">this</span> div&lt;/h1<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb5-5" title="5">      &lt;/div<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb5-6" title="6">    )<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-7" title="7"></a>
+<a class="sourceLine" id="cb5-8" title="8">### React<span class="op">:</span> Learn About Self<span class="op">-</span>Closing JSX Tags</a>
+<a class="sourceLine" id="cb5-9" title="9"></a>
+<a class="sourceLine" id="cb5-10" title="10"><span class="op">-</span>Another important way <span class="kw">in</span> which JSX differs <span class="im">from</span> HTML is <span class="kw">in</span> the idea <span class="kw">of</span> the self<span class="op">-</span>closing <span class="va">tag</span>.</a>
+<a class="sourceLine" id="cb5-11" title="11"></a>
+<a class="sourceLine" id="cb5-12" title="12"><span class="op">&gt;</span> _In HTML<span class="op">,</span> almost all tags have both an opening and closing tag<span class="op">:</span>_ <span class="vs">`&lt;div&gt;&lt;/div&gt;;`</span> _the closing tag always has a forward slash before the tag name that you are <span class="va">closing</span>.<span class="at">_</span></a>
+<a class="sourceLine" id="cb5-13" title="13"></a>
+<a class="sourceLine" id="cb5-14" title="14"><span class="op">&gt;</span> _there are special instances <span class="kw">in</span> HTML called <span class="st">&quot;self-closing tags&quot;</span><span class="op">,</span> or tags that don<span class="st">&#39;t require both an opening and closing tag before another tag can start._</span></a>
+<a class="sourceLine" id="cb5-15" title="15"></a>
+<a class="sourceLine" id="cb5-16" title="16"><span class="op">&gt;</span> _For example the line<span class="op">-</span><span class="cf">break</span> tag can be written as_ <span class="vs">`&lt;br&gt;`</span> _or as_ <span class="vs">`</span></a>
+<a class="sourceLine" id="cb5-17" title="17"><span class="vs">&gt; &lt;br/&gt;</span></a>
+<a class="sourceLine" id="cb5-18" title="18"></a>
+<a class="sourceLine" id="cb5-19" title="19"><span class="vs">,`</span>_but should never be written as_<span class="vs">`&lt;br&gt;&lt;/br&gt;`</span>_<span class="op">,</span> since it doesn<span class="st">&#39;t contain any content._</span></a>
+<a class="sourceLine" id="cb5-20" title="20"></a>
+<a class="sourceLine" id="cb5-21" title="21"><span class="op">&gt;</span> _In JSX<span class="op">,</span> the rules are a little <span class="va">different</span>. <span class="at">Any</span> JSX element can be written <span class="cf">with</span> a self<span class="op">-</span>closing tag<span class="op">,</span> and every element must be <span class="va">closed</span>.</a>
+<a class="sourceLine" id="cb5-22" title="22"><span class="op">&gt;</span> The line<span class="op">-</span><span class="cf">break</span> tag<span class="op">,</span> <span class="cf">for</span> example<span class="op">,</span> must always be written as_ <span class="vs">`</span></a>
+<a class="sourceLine" id="cb5-23" title="23"><span class="vs">&gt; &lt;br/&gt;</span></a>
+<a class="sourceLine" id="cb5-24" title="24"></a>
+<a class="sourceLine" id="cb5-25" title="25"><span class="vs">`</span> \_in order to be valid JSX that can be <span class="va">transpiled</span>.</a>
+<a class="sourceLine" id="cb5-26" title="26"></a>
+<a class="sourceLine" id="cb5-27" title="27"><span class="op">&gt;</span> A<span class="op">*</span> <span class="vs">`&lt;div&gt;`</span><span class="op">*,</span> on the other hand<span class="op">,</span> can be written <span class="im">as</span><span class="op">*</span> <span class="vs">`&lt;div /&gt;`</span>\_or<span class="op">*</span><span class="vs">`&lt;div&gt;&lt;/div&gt;`</span><span class="va">_</span>.</a>
+<a class="sourceLine" id="cb5-28" title="28"><span class="op">&gt;</span> The difference is that <span class="kw">in</span> the first syntax version there is no way to include anything <span class="kw">in</span> the_ <span class="vs">`&lt;div /&gt;`</span><span class="va">_</span>.<span class="at">_</span></a>
+<a class="sourceLine" id="cb5-29" title="29"></a>
+<a class="sourceLine" id="cb5-30" title="30">### Fix the errors <span class="kw">in</span> the code editor so that it is valid JSX and successfully <span class="va">transpiles</span>. <span class="at">Make</span> sure you don<span class="st">&#39;t change any of the content — you only need to close tags where they are needed.</span></a>
+<a class="sourceLine" id="cb5-31" title="31"></a>
+<a class="sourceLine" id="cb5-32" title="32"></a>
+<a class="sourceLine" id="cb5-33" title="33"><span class="vs">```js</span></a>
+<a class="sourceLine" id="cb5-34" title="34"></a>
+<a class="sourceLine" id="cb5-35" title="35"><span class="vs">    const JSX = (</span></a>
+<a class="sourceLine" id="cb5-36" title="36"><span class="vs">      &lt;div&gt;</span></a>
+<a class="sourceLine" id="cb5-37" title="37"><span class="vs">        &lt;h2&gt;Welcome to React!&lt;/h2&gt; &lt;br &gt;</span></a>
+<a class="sourceLine" id="cb5-38" title="38"><span class="vs">        &lt;p&gt;Be sure to close all tags!&lt;/p&gt;</span></a>
+<a class="sourceLine" id="cb5-39" title="39"><span class="vs">        &lt;hr &gt;</span></a>
+<a class="sourceLine" id="cb5-40" title="40"><span class="vs">      &lt;/div&gt;</span></a>
+<a class="sourceLine" id="cb5-41" title="41"><span class="vs">    );</span></a>
+<a class="sourceLine" id="cb5-42" title="42"></a>
+<a class="sourceLine" id="cb5-43" title="43"><span class="vs">### Ans:</span></a>
+<a class="sourceLine" id="cb5-44" title="44"></a>
+<a class="sourceLine" id="cb5-45" title="45"><span class="vs">```</span>js</a>
+<a class="sourceLine" id="cb5-46" title="46"></a>
+<a class="sourceLine" id="cb5-47" title="47"> <span class="kw">const</span> JSX <span class="op">=</span> (</a>
+<a class="sourceLine" id="cb5-48" title="48">      <span class="op">&lt;</span>div<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb5-49" title="49">        <span class="op">&lt;</span>h2<span class="op">&gt;</span>Welcome to React<span class="op">!</span>&lt;/h2<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb5-50" title="50"></a>
+<a class="sourceLine" id="cb5-51" title="51"><span class="op">&lt;</span>br/<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb5-52" title="52"></a>
+<a class="sourceLine" id="cb5-53" title="53">        <span class="op">&lt;</span>p<span class="op">&gt;</span>Be sure to close all tags<span class="op">!</span>&lt;/p<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb5-54" title="54">        <span class="op">&lt;</span>hr /<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb5-55" title="55">      &lt;/div<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb5-56" title="56">    )<span class="op">;</span></a></code></pre></div>
+<hr />
+<h3 id="react-create-a-stateless-functional-component">React: Create a Stateless Functional Component</h3>
+<blockquote>
+<p><em>There are two ways to create a React component. The first way is to use a JavaScript function.</em></p>
+</blockquote>
+<blockquote>
+<p><em>Defining a component in this way creates a stateless functional component.</em></p>
+</blockquote>
+<blockquote>
+<p><em>think of a stateless component as one that can receive data and render it, but does not manage or track changes to that data.</em></p>
+</blockquote>
+<h4 id="to-create-a-component-with-a-function-you-simply-write-a-javascript-function-that-returns-either-jsx-or-null">To create a component with a function, you simply write a JavaScript function that returns either JSX or null</h4>
+<ul>
+<li><span id="b514">React requires your function name to begin with a capital letter.</span></li>
+</ul>
+<blockquote>
+<p><em>Here’s an example of a stateless functional component that assigns an HTML class in JSX:</em></p>
+</blockquote>
+<pre><code>// After being transpiled, the &lt;div&gt; will have a CSS class of &#39;customClass&#39;
+const DemoComponent = function() {
+  return (
+    &lt;div className=&#39;customClass&#39; /&gt;
+  );
+};</code></pre>
+<blockquote>
+<p><em>Because a JSX component represents HTML, you could put several components together to create a more complex HTML page.</em></p>
+</blockquote>
+<h3 id="the-code-editor-has-a-function-called-mycomponent.-complete-this-function-so-it-returns-a-single-div-element-which-contains-some-string-of-text.">The code editor has a function called MyComponent. Complete this function so it returns a single div element which contains some string of text.</h3>
+<p>Note: The text is considered a child of the div element, so you will not be able to use a self-closing tag.</p>
+<pre><code>const MyComponent = function() {
+  // Change code below this line
+
+  // Change code above this line
+}</code></pre>
+<h3 id="ans-1">ANS:</h3>
+<pre><code>const MyComponent = function() {
+  // Change code below this line
+
+return (
+   &lt;div&gt; Some Text &lt;/div &gt;
+  );
+
+  // Change code above this line
+};</code></pre>
+<hr />
+<h3 id="react-create-a-react-component">React: Create a React Component</h3>
+<blockquote>
+<p><em>The other way to define a React component is with the ES6 class syntax. In the following example, Kitten extends React.Component:</em></p>
+</blockquote>
+<pre><code>class Kitten extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+      &lt;h1&gt;Hi&lt;/h1&gt;
+    );
+  }
+}</code></pre>
+<blockquote>
+<p><em>This creates an ES6 class Kitten which extends the React.Component class.</em></p>
+</blockquote>
+<blockquote>
+<p><em>So the Kitten class now has access to many useful React features, such as local state and lifecycle hooks.</em></p>
+</blockquote>
+<blockquote>
+<p><em>Also notice the Kitten class has a constructor defined within it that calls super()</em></p>
+</blockquote>
+<blockquote>
+<p><em>It uses super() to call the constructor of the parent class, in this case React.Component</em></p>
+</blockquote>
+<blockquote>
+<p><em>The constructor is a special method used during the initialization of objects that are created with the class keyword. It is best practice to call a component’s constructor with super, and pass props to both.</em></p>
+</blockquote>
+<blockquote>
+<p><em>This makes sure the component is initialized properly. For now, know that it is standard for this code to be included.</em></p>
+</blockquote>
+<h3 id="mycomponent-is-defined-in-the-code-editor-using-class-syntax.-finish-writing-the-render-method-so-it-returns-a-div-element-that-contains-an-h1-with-the-text-hello-react.">MyComponent is defined in the code editor using class syntax. Finish writing the render method so it returns a div element that contains an h1 with the text Hello React!.</h3>
+<pre><code>class MyComponent extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    // Change code below this line
+
+    // Change code above this line
+  }
+};</code></pre>
+<h3 id="ans-2">ANS:</h3>
+<pre><code>class MyComponent extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    // Change code below this line
+ return (
+   &lt;div&gt;
+      &lt;h1&gt;Hello React!&lt;/h1&gt;
+      &lt;/div&gt;
+    );
+
+    // Change code above this line
+  }
+};</code></pre>
+<hr />
+<h3 id="react-create-a-component-with-composition">React: Create a Component with Composition</h3>
+<blockquote>
+<p><em>Imagine you are building an App and have created three components, a Navbar, Dashboard, and Footer.</em></p>
+</blockquote>
+<blockquote>
+<p><em>To compose these components together, you could create an App parent component which renders each of these three components as children. To render a component as a child in a React component, you include the component name written as a custom HTML tag in the JSX.</em></p>
+</blockquote>
+<ul>
+<li><span id="000b">For example, in the render method you could write:</span></li>
+</ul>
+<!-- -->
+<pre><code>return (
+ &lt;App&gt;
+  &lt;Navbar /&gt;
+  &lt;Dashboard /&gt;
+  &lt;Footer /&gt;
+ &lt;/App&gt;
+)</code></pre>
+<blockquote>
+<p><em>When React encounters a custom HTML tag that references another component (a component name wrapped in &lt; /&gt; like in this example), it renders the markup for that component in the location of the tag. This should illustrate the parent/child relationship between the App component and the Navbar, Dashboard, and Footer.</em></p>
+</blockquote>
+<h3 id="challenge">Challenge:</h3>
+<blockquote>
+<p><em>In the code editor, there is a simple functional component called ChildComponent and a class component called ParentComponent. Compose the two together by rendering the ChildComponent within the ParentComponent. Make sure to close the ChildComponent tag with a forward slash.</em></p>
+</blockquote>
+<ul>
+<li><span id="2ed5">Note:<strong>ChildComponent is defined with an ES6 arrow function because this is a very common practice when using React</strong>.</span></li>
+<li><span id="fddd">However, know that this is just a function.</span></li>
+</ul>
+<!-- -->
+<pre><code>const ChildComponent = () =&gt; {
+  return (
+    &lt;div&gt;
+      &lt;p&gt;I am the child&lt;/p&gt;
+    &lt;/div&gt;
+  );
+};
+
+class ParentComponent extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      &lt;div&gt;
+        &lt;h1&gt;I am the parent&lt;/h1&gt;
+        { /* Change code below this line */ }
+
+        { /* Change code above this line */ }
+      &lt;/div&gt;
+    );
+  }
+};</code></pre>
+<p>⌛The React component should return a single div element.<br />
+⌛The component should return two nested elements.<br />
+⌛The component should return the ChildComponent as its second child.</p>
+<h3 id="ans-3">Ans:</h3>
+<pre><code>const ChildComponent = () =&gt; {
+  return (
+    &lt;div&gt;
+      &lt;p&gt;I am the child&lt;/p&gt;
+    &lt;/div&gt;
+  );
+};
+
+class ParentComponent extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      &lt;div&gt;
+        &lt;h1&gt;I am the parent&lt;/h1&gt;
+        { /* Change code below this line */ }
+
+        { /* Change code above this line */ }
+      &lt;/div&gt;
+    );
+  }
+};</code></pre>
+<h3 id="more-examples">More Examples:</h3>
+<p><a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz - Overview</strong> <br/></p>
+<p><em>Web Developer, Electrical Engineer https://bryanguner.medium.com/ https://portfolio42.netlify.app/…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
+<p><em>More content at</em> <a href="http://plainenglish.io/" class="markup--anchor markup--p-anchor"><em>plainenglish.io</em></a></p>
+<p>By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on <a href="https://medium.com/p/8021738aa1ad">May 19, 2021</a>.</p>
+<p><a href="https://medium.com/@bryanguner/introduction-to-react-for-complete-beginners-8021738aa1ad" class="p-canonical">Canonical link</a></p>
+<p>August 6, 2021.</p>
+</body>
+</html>

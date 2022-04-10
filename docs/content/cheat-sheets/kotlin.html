@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Kotlin</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Kotlin</h1>
+</header>
+<h2 id="variables">Variables</h2>
+<h3 id="mutability">Mutability</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode kotlin"><code class="sourceCode kotlin"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">var</span> <span class="va">mutableString</span>: <span class="kw">String</span> = <span class="st">&quot;Adam&quot;</span></a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="kw">val</span> <span class="va">immutableString</span>: <span class="kw">String</span> = <span class="st">&quot;Adam&quot;</span></a>
+<a class="sourceLine" id="cb1-3" title="3"><span class="kw">val</span> <span class="va">inferredString</span> = <span class="st">&quot;Adam&quot;</span></a></code></pre></div>
+<h3 id="strings">Strings</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode kotlin"><code class="sourceCode kotlin"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">val</span> <span class="va">name</span> = <span class="st">&quot;Adam&quot;</span></a>
+<a class="sourceLine" id="cb2-2" title="2"><span class="kw">val</span> <span class="va">greeting</span> = <span class="st">&quot;Hello, &quot;</span> + name</a>
+<a class="sourceLine" id="cb2-3" title="3"><span class="kw">val</span> <span class="va">greetingTemplate</span> = <span class="st">&quot;Hello, $name&quot;</span></a>
+<a class="sourceLine" id="cb2-4" title="4"><span class="kw">val</span> <span class="va">interpolated</span> = <span class="st">&quot;Hello, ${name.toUpperCase()}&quot;</span></a></code></pre></div>
+<h3 id="numbers">Numbers</h3>
+<div class="sourceCode" id="cb3"><pre class="sourceCode kotlin"><code class="sourceCode kotlin"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">val</span> <span class="va">intNum</span> = <span class="dv">10</span></a>
+<a class="sourceLine" id="cb3-2" title="2"><span class="kw">val</span> <span class="va">doubleNum</span> = <span class="fl">10.0</span></a>
+<a class="sourceLine" id="cb3-3" title="3"><span class="kw">val</span> <span class="va">longNum</span> = 10L</a>
+<a class="sourceLine" id="cb3-4" title="4"><span class="kw">val</span> <span class="va">floatNum</span> = <span class="fl">10.0F</span></a></code></pre></div>
+<h3 id="booleans">Booleans</h3>
+<div class="sourceCode" id="cb4"><pre class="sourceCode kotlin"><code class="sourceCode kotlin"><a class="sourceLine" id="cb4-1" title="1"><span class="kw">val</span> <span class="va">trueBoolean</span> = <span class="kw">true</span></a>
+<a class="sourceLine" id="cb4-2" title="2"><span class="kw">val</span> <span class="va">falseBoolean</span> = <span class="kw">false</span></a>
+<a class="sourceLine" id="cb4-3" title="3"><span class="kw">val</span> <span class="va">andCondition</span> = trueBoolean &amp;&amp; falseBoolean</a>
+<a class="sourceLine" id="cb4-4" title="4"><span class="kw">val</span> <span class="va">orCondition</span> = trueBoolean || falseBoolean</a></code></pre></div>
+<h3 id="static-fields">Static Fields</h3>
+<div class="sourceCode" id="cb5"><pre class="sourceCode kotlin"><code class="sourceCode kotlin"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">class</span> Person {</a>
+<a class="sourceLine" id="cb5-2" title="2">    <span class="kw">companion</span> <span class="kw">object</span> {</a>
+<a class="sourceLine" id="cb5-3" title="3">        <span class="kw">val</span> <span class="va">NAME_KEY</span> = <span class="st">&quot;name_key&quot;</span></a>
+<a class="sourceLine" id="cb5-4" title="4">    }</a>
+<a class="sourceLine" id="cb5-5" title="5">}</a>
+<a class="sourceLine" id="cb5-6" title="6"></a>
+<a class="sourceLine" id="cb5-7" title="7"><span class="kw">val</span> <span class="va">key</span> = Person.NAME_KEY</a></code></pre></div>
+<h2 id="null-safety">Null Safety</h2>
+<p>{: .-two-column}</p>
+<h3 id="nullable-properties">Nullable properties</h3>
+<div class="sourceCode" id="cb6"><pre class="sourceCode kotlin"><code class="sourceCode kotlin"><a class="sourceLine" id="cb6-1" title="1"><span class="kw">val</span> <span class="va">cannotBeNull</span>: <span class="kw">String</span> = <span class="kw">null</span> <span class="co">// Invalid</span></a>
+<a class="sourceLine" id="cb6-2" title="2"><span class="kw">val</span> <span class="va">canBeNull</span>: <span class="kw">String</span>? = <span class="kw">null</span> <span class="co">// Valid</span></a>
+<a class="sourceLine" id="cb6-3" title="3"></a>
+<a class="sourceLine" id="cb6-4" title="4"><span class="kw">val</span> <span class="va">cannotBeNull</span>: <span class="kw">Int</span> = <span class="kw">null</span> <span class="co">// Invalid</span></a>
+<a class="sourceLine" id="cb6-5" title="5"><span class="kw">val</span> <span class="va">canBeNull</span>: <span class="kw">Int</span>? = <span class="kw">null</span> <span class="co">// Valid</span></a></code></pre></div>
+<h3 id="checking-for-null">Checking for null</h3>
+<div class="sourceCode" id="cb7"><pre class="sourceCode kotlin"><code class="sourceCode kotlin"><a class="sourceLine" id="cb7-1" title="1"><span class="kw">val</span> <span class="va">name</span>: <span class="kw">String</span>? = <span class="st">&quot;Adam&quot;</span></a>
+<a class="sourceLine" id="cb7-2" title="2"></a>
+<a class="sourceLine" id="cb7-3" title="3"><span class="cf">if</span> (name != <span class="kw">null</span> &amp;&amp; name.length &gt; <span class="dv">0</span>) {</a>
+<a class="sourceLine" id="cb7-4" title="4">    print(<span class="st">&quot;String length is ${name.length}&quot;</span>)</a>
+<a class="sourceLine" id="cb7-5" title="5">} <span class="cf">else</span> {</a>
+<a class="sourceLine" id="cb7-6" title="6">    print(<span class="st">&quot;String is empty.&quot;</span>)</a>
+<a class="sourceLine" id="cb7-7" title="7">}</a></code></pre></div>
+<h3 id="safe-operator">Safe Operator</h3>
+<div class="sourceCode" id="cb8"><pre class="sourceCode kotlin"><code class="sourceCode kotlin"><a class="sourceLine" id="cb8-1" title="1"><span class="kw">val</span> <span class="va">nullableStringLength</span>: <span class="kw">Int</span>? = nullableString?.length</a>
+<a class="sourceLine" id="cb8-2" title="2"><span class="kw">val</span> <span class="va">nullableDepartmentHead</span>: <span class="kw">String</span>? = person?.department?.head?.name</a></code></pre></div>
+<h3 id="elvis-operator">Elvis Operator</h3>
+<div class="sourceCode" id="cb9"><pre class="sourceCode kotlin"><code class="sourceCode kotlin"><a class="sourceLine" id="cb9-1" title="1"><span class="kw">val</span> <span class="va">nonNullStringLength</span>: <span class="kw">Int</span> = nullableString?.length ?: <span class="dv">0</span></a>
+<a class="sourceLine" id="cb9-2" title="2"><span class="kw">val</span> <span class="va">nonNullDepartmentHead</span>: <span class="kw">String</span> = person?.department?.head?.name ?: <span class="st">&quot;&quot;</span></a>
+<a class="sourceLine" id="cb9-3" title="3"><span class="kw">val</span> <span class="va">nonNullDepartmentHead</span>: <span class="kw">String</span> = person?.department?.head?.name.orEmpty()</a></code></pre></div>
+<h3 id="safe-casts">Safe Casts</h3>
+<div class="sourceCode" id="cb10"><pre class="sourceCode kotlin"><code class="sourceCode kotlin"><a class="sourceLine" id="cb10-1" title="1"><span class="co">// Will not throw ClassCastException</span></a>
+<a class="sourceLine" id="cb10-2" title="2"><span class="kw">val</span> <span class="va">nullableCar</span>: Car? = (input <span class="kw">as</span>? Car)</a></code></pre></div>
+<h2 id="collections">Collections</h2>
+<p>{: .-two-column}</p>
+<h3 id="creation">Creation</h3>
+<div class="sourceCode" id="cb11"><pre class="sourceCode kotlin"><code class="sourceCode kotlin"><a class="sourceLine" id="cb11-1" title="1"><span class="kw">val</span> <span class="va">numArray</span> = arrayOf(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>)</a>
+<a class="sourceLine" id="cb11-2" title="2"><span class="kw">val</span> <span class="va">numList</span> = listOf(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>)</a>
+<a class="sourceLine" id="cb11-3" title="3"><span class="kw">val</span> <span class="va">mutableNumList</span> = mutableListOf(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>)</a></code></pre></div>
+<h3 id="accessing">Accessing</h3>
+<div class="sourceCode" id="cb12"><pre class="sourceCode kotlin"><code class="sourceCode kotlin"><a class="sourceLine" id="cb12-1" title="1"><span class="kw">val</span> <span class="va">firstItem</span> = numList[<span class="dv">0</span>]</a>
+<a class="sourceLine" id="cb12-2" title="2"><span class="kw">val</span> <span class="va">firstItem</span> = numList.first()</a>
+<a class="sourceLine" id="cb12-3" title="3"><span class="kw">val</span> <span class="va">firstItem</span> = numList.firstOrNull()</a></code></pre></div>
+<h3 id="maps">Maps</h3>
+<div class="sourceCode" id="cb13"><pre class="sourceCode kotlin"><code class="sourceCode kotlin"><a class="sourceLine" id="cb13-1" title="1"><span class="kw">val</span> <span class="va">faceCards</span> = mutableMapOf(<span class="st">&quot;Jack&quot;</span> to <span class="dv">11</span>, <span class="st">&quot;Queen&quot;</span> to <span class="dv">12</span>, <span class="st">&quot;King&quot;</span> to <span class="dv">13</span>)</a>
+<a class="sourceLine" id="cb13-2" title="2"><span class="kw">val</span> <span class="va">jackValue</span> = faceCards[<span class="st">&quot;Jack&quot;</span>] <span class="co">// 11</span></a>
+<a class="sourceLine" id="cb13-3" title="3">faceCards[<span class="st">&quot;Ace&quot;</span>] = <span class="dv">1</span></a></code></pre></div>
+<h3 id="mutability-1">Mutability</h3>
+<div class="sourceCode" id="cb14"><pre class="sourceCode kotlin"><code class="sourceCode kotlin"><a class="sourceLine" id="cb14-1" title="1"><span class="kw">val</span> <span class="va">immutableList</span> = listOf(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>)</a>
+<a class="sourceLine" id="cb14-2" title="2"><span class="kw">val</span> <span class="va">mutableList</span> = immutableList.toMutableList()</a>
+<a class="sourceLine" id="cb14-3" title="3"></a>
+<a class="sourceLine" id="cb14-4" title="4"><span class="kw">val</span> <span class="va">immutableMap</span> = mapOf(<span class="st">&quot;Jack&quot;</span> to <span class="dv">11</span>, <span class="st">&quot;Queen&quot;</span> to <span class="dv">12</span>, <span class="st">&quot;King&quot;</span> to <span class="dv">13</span>)</a>
+<a class="sourceLine" id="cb14-5" title="5"><span class="kw">val</span> <span class="va">mutableMap</span> = immutableMap.toMutableMap()</a></code></pre></div>
+<h3 id="iterating">Iterating</h3>
+<div class="sourceCode" id="cb15"><pre class="sourceCode kotlin"><code class="sourceCode kotlin"><a class="sourceLine" id="cb15-1" title="1"><span class="cf">for</span> (item <span class="kw">in</span> myList) {</a>
+<a class="sourceLine" id="cb15-2" title="2">    print(item)</a>
+<a class="sourceLine" id="cb15-3" title="3">}</a>
+<a class="sourceLine" id="cb15-4" title="4"></a>
+<a class="sourceLine" id="cb15-5" title="5">myList.forEach {</a>
+<a class="sourceLine" id="cb15-6" title="6">    print(it)</a>
+<a class="sourceLine" id="cb15-7" title="7">}</a>
+<a class="sourceLine" id="cb15-8" title="8"></a>
+<a class="sourceLine" id="cb15-9" title="9">myList.forEachIndexed { index, item -&gt;</a>
+<a class="sourceLine" id="cb15-10" title="10">    print(<span class="st">&quot;Item at $index is: $item&quot;</span>)</a>
+<a class="sourceLine" id="cb15-11" title="11">}</a></code></pre></div>
+<h3 id="filtering-searching">Filtering &amp; Searching</h3>
+<div class="sourceCode" id="cb16"><pre class="sourceCode kotlin"><code class="sourceCode kotlin"><a class="sourceLine" id="cb16-1" title="1"><span class="kw">val</span> <span class="va">evenNumbers</span> = numList.filter { it % <span class="dv">2</span> == <span class="dv">0</span> }</a>
+<a class="sourceLine" id="cb16-2" title="2"><span class="kw">val</span> <span class="va">containsEven</span> = numList.any { it % <span class="dv">2</span> == <span class="dv">0</span> }</a>
+<a class="sourceLine" id="cb16-3" title="3"><span class="kw">val</span> <span class="va">containsNoEvens</span> = numList.none { it % <span class="dv">2</span> == <span class="dv">0</span> }</a>
+<a class="sourceLine" id="cb16-4" title="4"><span class="kw">val</span> <span class="va">containsNoEvens</span> = numList.all { it % <span class="dv">2</span> == <span class="dv">1</span> }</a>
+<a class="sourceLine" id="cb16-5" title="5"><span class="kw">val</span> <span class="va">firstEvenNumber</span>: <span class="kw">Int</span> = numList.first { it % <span class="dv">2</span> == <span class="dv">0</span> }</a>
+<a class="sourceLine" id="cb16-6" title="6"><span class="kw">val</span> <span class="va">firstEvenOrNull</span>: <span class="kw">Int</span>? = numList.firstOrNull { it % <span class="dv">2</span> == <span class="dv">0</span> }</a></code></pre></div>
+<p>Note: <code>it</code> is the <a href="https://kotlinlang.org/docs/reference/lambdas.html#it-implicit-name-of-a-single-parameter">implicit name for a single parameter</a>.</p>
+<h2 id="functions">Functions</h2>
+<p>{: .-two-column}</p>
+<h3 id="parameters-return-types">Parameters &amp; Return Types</h3>
+<div class="sourceCode" id="cb17"><pre class="sourceCode kotlin"><code class="sourceCode kotlin"><a class="sourceLine" id="cb17-1" title="1"><span class="kw">fun</span> <span class="fu">printName</span>() {</a>
+<a class="sourceLine" id="cb17-2" title="2">    print(<span class="st">&quot;Adam&quot;</span>)</a>
+<a class="sourceLine" id="cb17-3" title="3">}</a>
+<a class="sourceLine" id="cb17-4" title="4"></a>
+<a class="sourceLine" id="cb17-5" title="5"><span class="kw">fun</span> <span class="fu">printName</span>(<span class="va">person</span>: <span class="dt">Person</span>) {</a>
+<a class="sourceLine" id="cb17-6" title="6">    print(person.name)</a>
+<a class="sourceLine" id="cb17-7" title="7">}</a>
+<a class="sourceLine" id="cb17-8" title="8"></a>
+<a class="sourceLine" id="cb17-9" title="9"><span class="kw">fun</span> <span class="fu">getGreeting</span>(<span class="va">person</span>: <span class="dt">Person</span>): <span class="dt">String</span> {</a>
+<a class="sourceLine" id="cb17-10" title="10">    <span class="kw">return</span> <span class="st">&quot;Hello, ${person.name}&quot;</span></a>
+<a class="sourceLine" id="cb17-11" title="11">}</a>
+<a class="sourceLine" id="cb17-12" title="12"></a>
+<a class="sourceLine" id="cb17-13" title="13"><span class="kw">fun</span> <span class="fu">getGreeting</span>(<span class="va">person</span>: <span class="dt">Person</span>): <span class="dt">String</span> = <span class="st">&quot;Hello, ${person.name}&quot;</span></a>
+<a class="sourceLine" id="cb17-14" title="14"><span class="kw">fun</span> <span class="fu">getGreeting</span>(<span class="va">person</span>: <span class="dt">Person</span>) = <span class="st">&quot;Hello, ${person.name}&quot;</span></a></code></pre></div>
+<h3 id="higher-order-functions">Higher Order Functions</h3>
+<div class="sourceCode" id="cb18"><pre class="sourceCode kotlin"><code class="sourceCode kotlin"><a class="sourceLine" id="cb18-1" title="1"><span class="kw">fun</span> <span class="fu">callbackIfTrue</span>(<span class="va">condition</span>: <span class="dt">Boolean</span>, <span class="va">callback</span>: () -&gt; <span class="dt">Unit</span>) {</a>
+<a class="sourceLine" id="cb18-2" title="2">    <span class="cf">if</span> (condition) {</a>
+<a class="sourceLine" id="cb18-3" title="3">        callback()</a>
+<a class="sourceLine" id="cb18-4" title="4">    }</a>
+<a class="sourceLine" id="cb18-5" title="5">}</a>
+<a class="sourceLine" id="cb18-6" title="6"></a>
+<a class="sourceLine" id="cb18-7" title="7">callbackIfTrue(someBoolean) {</a>
+<a class="sourceLine" id="cb18-8" title="8">    print(<span class="st">&quot;Condition was true&quot;</span>)</a>
+<a class="sourceLine" id="cb18-9" title="9">}</a></code></pre></div>
+<h3 id="extension-functions">Extension Functions</h3>
+<div class="sourceCode" id="cb19"><pre class="sourceCode kotlin"><code class="sourceCode kotlin"><a class="sourceLine" id="cb19-1" title="1"><span class="kw">fun</span> <span class="fu">Int</span>.<span class="fu">timesTwo</span>(): <span class="dt">Int</span> {</a>
+<a class="sourceLine" id="cb19-2" title="2">    <span class="kw">return</span> <span class="kw">this</span> * <span class="dv">2</span></a>
+<a class="sourceLine" id="cb19-3" title="3">}</a>
+<a class="sourceLine" id="cb19-4" title="4"></a>
+<a class="sourceLine" id="cb19-5" title="5"><span class="kw">val</span> <span class="va">four</span> = <span class="fl">2.</span>timesTwo()</a></code></pre></div>
+<h3 id="default-parameters">Default Parameters</h3>
+<div class="sourceCode" id="cb20"><pre class="sourceCode kotlin"><code class="sourceCode kotlin"><a class="sourceLine" id="cb20-1" title="1"><span class="kw">fun</span> <span class="fu">getGreeting</span>(<span class="va">person</span>: <span class="dt">Person</span>, <span class="va">intro</span>: <span class="dt">String</span> = <span class="st">&quot;Hello,&quot;</span>) {</a>
+<a class="sourceLine" id="cb20-2" title="2">    <span class="kw">return</span> <span class="st">&quot;$intro ${person.name}&quot;</span></a>
+<a class="sourceLine" id="cb20-3" title="3">}</a>
+<a class="sourceLine" id="cb20-4" title="4"></a>
+<a class="sourceLine" id="cb20-5" title="5"><span class="co">// Returns &quot;Hello, Adam&quot;</span></a>
+<a class="sourceLine" id="cb20-6" title="6"><span class="kw">val</span> <span class="va">hello</span> = getGreeting(Person(<span class="st">&quot;Adam&quot;</span>))</a>
+<a class="sourceLine" id="cb20-7" title="7"></a>
+<a class="sourceLine" id="cb20-8" title="8"><span class="co">// Returns &quot;Welcome, Adam&quot;</span></a>
+<a class="sourceLine" id="cb20-9" title="9"><span class="kw">val</span> <span class="va">welcome</span> = getGreeting(Person(<span class="st">&quot;Adam&quot;</span>), <span class="st">&quot;Welcome,&quot;</span>)</a></code></pre></div>
+<h3 id="named-parameters">Named Parameters</h3>
+<div class="sourceCode" id="cb21"><pre class="sourceCode kotlin"><code class="sourceCode kotlin"><a class="sourceLine" id="cb21-1" title="1"><span class="kw">class</span> Person(<span class="kw">val</span> <span class="va">name</span>: <span class="dt">String</span> = <span class="st">&quot;&quot;</span>, <span class="va">age</span>: <span class="dt">Int</span> = 0)</a>
+<a class="sourceLine" id="cb21-2" title="2"></a>
+<a class="sourceLine" id="cb21-3" title="3">// All valid</a>
+<a class="sourceLine" id="cb21-4" title="4"><span class="kw">val</span> person = Person()</a>
+<a class="sourceLine" id="cb21-5" title="5"><span class="kw">val</span> person = Person(&quot;<span class="va">Adam</span>&quot;, <span class="va">100</span>)</a>
+<a class="sourceLine" id="cb21-6" title="6"><span class="kw">val</span> person = Person(<span class="va">name</span> = <span class="st">&quot;Adam&quot;</span>, <span class="va">age</span> = 100)</a>
+<a class="sourceLine" id="cb21-7" title="7"><span class="kw">val</span> person = Person(<span class="va">age</span> = 100)</a>
+<a class="sourceLine" id="cb21-8" title="8"><span class="kw">val</span> person = Person(<span class="va">age</span> = 100, <span class="va">name</span> = <span class="st">&quot;Adam&quot;</span>)</a></code></pre></div>
+<h3 id="static-functions">Static Functions</h3>
+<div class="sourceCode" id="cb22"><pre class="sourceCode kotlin"><code class="sourceCode kotlin"><a class="sourceLine" id="cb22-1" title="1"><span class="kw">class</span> Fragment(<span class="kw">val</span> <span class="va">args</span>: <span class="dt">Bundle</span>) {</a>
+<a class="sourceLine" id="cb22-2" title="2">    <span class="kw">companion</span> <span class="kw">object</span> {</a>
+<a class="sourceLine" id="cb22-3" title="3">        <span class="kw">fun</span> <span class="fu">newInstance</span>(<span class="va">args</span>: <span class="dt">Bundle</span>): <span class="dt">Fragment</span> {</a>
+<a class="sourceLine" id="cb22-4" title="4">            <span class="kw">return</span> Fragment(args)</a>
+<a class="sourceLine" id="cb22-5" title="5">        }</a>
+<a class="sourceLine" id="cb22-6" title="6">    }</a>
+<a class="sourceLine" id="cb22-7" title="7">}</a>
+<a class="sourceLine" id="cb22-8" title="8"></a>
+<a class="sourceLine" id="cb22-9" title="9"><span class="kw">val</span> <span class="va">fragment</span> = Fragment.newInstance(args)</a></code></pre></div>
+<ul>
+<li><a href="https://kotlinlang.org/docs/reference/object-declarations.html#companion-objects">Companion Objects</a></li>
+</ul>
+<h2 id="classes">Classes</h2>
+<p>{: .-two-column}</p>
+<h3 id="primary-constructor">Primary Constructor</h3>
+<div class="sourceCode" id="cb23"><pre class="sourceCode kotlin"><code class="sourceCode kotlin"><a class="sourceLine" id="cb23-1" title="1"><span class="kw">class</span> Person(<span class="kw">val</span> <span class="va">name</span>: <span class="dt">String</span>, <span class="kw">val</span> <span class="va">age</span>: <span class="dt">Int</span>)</a>
+<a class="sourceLine" id="cb23-2" title="2"><span class="kw">val</span> adam = Person(&quot;<span class="va">Adam</span>&quot;, <span class="va">100</span>)</a></code></pre></div>
+<h3 id="secondary-constructors">Secondary Constructors</h3>
+<div class="sourceCode" id="cb24"><pre class="sourceCode kotlin"><code class="sourceCode kotlin"><a class="sourceLine" id="cb24-1" title="1"><span class="kw">class</span> Person(<span class="kw">val</span> <span class="va">name</span>: <span class="dt">String</span>) {</a>
+<a class="sourceLine" id="cb24-2" title="2">    <span class="kw">private</span> <span class="kw">var</span> <span class="va">age</span>: <span class="kw">Int</span>? = <span class="kw">null</span></a>
+<a class="sourceLine" id="cb24-3" title="3"></a>
+<a class="sourceLine" id="cb24-4" title="4">    <span class="kw">constructor</span>(name: <span class="kw">String</span>, age: <span class="kw">Int</span>) : <span class="kw">this</span>(name) {</a>
+<a class="sourceLine" id="cb24-5" title="5">        <span class="kw">this</span>.age = age</a>
+<a class="sourceLine" id="cb24-6" title="6">    }</a>
+<a class="sourceLine" id="cb24-7" title="7">}</a>
+<a class="sourceLine" id="cb24-8" title="8"></a>
+<a class="sourceLine" id="cb24-9" title="9"><span class="co">// Above can be replaced with default params</span></a>
+<a class="sourceLine" id="cb24-10" title="10"><span class="kw">class</span> Person(<span class="kw">val</span> <span class="va">name</span>: <span class="dt">String</span>, <span class="kw">val</span> <span class="va">age</span>: <span class="dt">Int?</span> = null)</a></code></pre></div>
+<h3 id="inheritance-implementation">Inheritance &amp; Implementation</h3>
+<div class="sourceCode" id="cb25"><pre class="sourceCode kotlin"><code class="sourceCode kotlin"><a class="sourceLine" id="cb25-1" title="1"><span class="kw">open</span> <span class="kw">class</span> Vehicle</a>
+<a class="sourceLine" id="cb25-2" title="2"><span class="kw">class</span> Car : <span class="dt">Vehicle</span>()</a>
+<a class="sourceLine" id="cb25-3" title="3"></a>
+<a class="sourceLine" id="cb25-4" title="4"><span class="kw">interface</span> Runner {</a>
+<a class="sourceLine" id="cb25-5" title="5">    <span class="kw">fun</span> <span class="fu">run</span>()</a>
+<a class="sourceLine" id="cb25-6" title="6">}</a>
+<a class="sourceLine" id="cb25-7" title="7"></a>
+<a class="sourceLine" id="cb25-8" title="8"><span class="kw">class</span> <span class="fu">Machine</span> : <span class="dt">Runner</span> {</a>
+<a class="sourceLine" id="cb25-9" title="9">    <span class="kw">override</span> <span class="kw">fun</span> <span class="fu">run</span>() {</a>
+<a class="sourceLine" id="cb25-10" title="10">        <span class="co">// ...</span></a>
+<a class="sourceLine" id="cb25-11" title="11">    }</a>
+<a class="sourceLine" id="cb25-12" title="12">}</a></code></pre></div>
+<h2 id="control-flow">Control Flow</h2>
+<p>{: .-two-column}</p>
+<h3 id="if-statements">If Statements</h3>
+<div class="sourceCode" id="cb26"><pre class="sourceCode kotlin"><code class="sourceCode kotlin"><a class="sourceLine" id="cb26-1" title="1"><span class="cf">if</span> (someBoolean) {</a>
+<a class="sourceLine" id="cb26-2" title="2">    doThing()</a>
+<a class="sourceLine" id="cb26-3" title="3">} <span class="cf">else</span> {</a>
+<a class="sourceLine" id="cb26-4" title="4">    doOtherThing()</a>
+<a class="sourceLine" id="cb26-5" title="5">}</a></code></pre></div>
+<h3 id="for-loops">For Loops</h3>
+<div class="sourceCode" id="cb27"><pre class="sourceCode kotlin"><code class="sourceCode kotlin"><a class="sourceLine" id="cb27-1" title="1"><span class="cf">for</span> (i <span class="kw">in</span> <span class="dv">0</span>..<span class="dv">10</span>) { } <span class="co">// 1 - 10</span></a>
+<a class="sourceLine" id="cb27-2" title="2"><span class="cf">for</span> (i <span class="kw">in</span> <span class="dv">0</span> until <span class="dv">10</span>) <span class="co">// 1 - 9</span></a>
+<a class="sourceLine" id="cb27-3" title="3">(<span class="dv">0</span>..<span class="dv">10</span>).forEach { }</a>
+<a class="sourceLine" id="cb27-4" title="4"><span class="cf">for</span> (i <span class="kw">in</span> <span class="dv">0</span> until <span class="dv">10</span> step <span class="dv">2</span>) <span class="co">// 0, 2, 4, 6, 8</span></a></code></pre></div>
+<h3 id="when-statements">When Statements</h3>
+<div class="sourceCode" id="cb28"><pre class="sourceCode kotlin"><code class="sourceCode kotlin"><a class="sourceLine" id="cb28-1" title="1"><span class="cf">when</span> (direction) {</a>
+<a class="sourceLine" id="cb28-2" title="2">    NORTH -&gt; {</a>
+<a class="sourceLine" id="cb28-3" title="3">        print(<span class="st">&quot;North&quot;</span>)</a>
+<a class="sourceLine" id="cb28-4" title="4">    }</a>
+<a class="sourceLine" id="cb28-5" title="5">    SOUTH -&gt; print(<span class="st">&quot;South&quot;</span>)</a>
+<a class="sourceLine" id="cb28-6" title="6">    EAST, WEST -&gt; print(<span class="st">&quot;East or West&quot;</span>)</a>
+<a class="sourceLine" id="cb28-7" title="7">    <span class="st">&quot;N/A&quot;</span> -&gt; print(<span class="st">&quot;Unavailable&quot;</span>)</a>
+<a class="sourceLine" id="cb28-8" title="8">    <span class="cf">else</span> -&gt; print(<span class="st">&quot;Invalid Direction&quot;</span>)</a>
+<a class="sourceLine" id="cb28-9" title="9">}</a></code></pre></div>
+<h3 id="while-loops">While Loops</h3>
+<div class="sourceCode" id="cb29"><pre class="sourceCode kotlin"><code class="sourceCode kotlin"><a class="sourceLine" id="cb29-1" title="1"><span class="cf">while</span> (x &gt; <span class="dv">0</span>) {</a>
+<a class="sourceLine" id="cb29-2" title="2">    x--</a>
+<a class="sourceLine" id="cb29-3" title="3">}</a>
+<a class="sourceLine" id="cb29-4" title="4"></a>
+<a class="sourceLine" id="cb29-5" title="5"><span class="cf">do</span> {</a>
+<a class="sourceLine" id="cb29-6" title="6">    x--</a>
+<a class="sourceLine" id="cb29-7" title="7">} <span class="cf">while</span> (x &gt; <span class="dv">0</span>)</a></code></pre></div>
+<h2 id="destructuring-declarations">Destructuring Declarations</h2>
+<p>{: .-two-column}</p>
+<h3 id="objects-lists">Objects &amp; Lists</h3>
+<div class="sourceCode" id="cb30"><pre class="sourceCode kotlin"><code class="sourceCode kotlin"><a class="sourceLine" id="cb30-1" title="1"><span class="kw">val</span> <span class="va">person</span> = Person(<span class="st">&quot;Adam&quot;</span>, <span class="dv">100</span>)</a>
+<a class="sourceLine" id="cb30-2" title="2"><span class="kw">val</span> (<span class="va">name</span>, age) = person</a>
+<a class="sourceLine" id="cb30-3" title="3"></a>
+<a class="sourceLine" id="cb30-4" title="4"><span class="kw">val</span> <span class="va">pair</span> = Pair(<span class="dv">1</span>, <span class="dv">2</span>)</a>
+<a class="sourceLine" id="cb30-5" title="5"><span class="kw">val</span> (<span class="va">first</span>, second) = pair</a>
+<a class="sourceLine" id="cb30-6" title="6"></a>
+<a class="sourceLine" id="cb30-7" title="7"><span class="kw">val</span> <span class="va">coordinates</span> = arrayOf(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>)</a>
+<a class="sourceLine" id="cb30-8" title="8"><span class="kw">val</span> (<span class="va">x</span>, y, z) = coordinates</a></code></pre></div>
+<h3 id="componentn-functions">ComponentN Functions</h3>
+<div class="sourceCode" id="cb31"><pre class="sourceCode kotlin"><code class="sourceCode kotlin"><a class="sourceLine" id="cb31-1" title="1"><span class="kw">class</span> Person(<span class="kw">val</span> <span class="va">name</span>: <span class="dt">String</span>, <span class="kw">val</span> <span class="va">age</span>: <span class="dt">Int</span>) {</a>
+<a class="sourceLine" id="cb31-2" title="2">    <span class="kw">operator</span> <span class="kw">fun</span> <span class="fu">component1</span>(): <span class="dt">String</span> {</a>
+<a class="sourceLine" id="cb31-3" title="3">        <span class="kw">return</span> name</a>
+<a class="sourceLine" id="cb31-4" title="4">    }</a>
+<a class="sourceLine" id="cb31-5" title="5"></a>
+<a class="sourceLine" id="cb31-6" title="6">    <span class="kw">operator</span> <span class="kw">fun</span> <span class="fu">component2</span>(): <span class="dt">Int</span> {</a>
+<a class="sourceLine" id="cb31-7" title="7">        <span class="kw">return</span> age</a>
+<a class="sourceLine" id="cb31-8" title="8">    }</a>
+<a class="sourceLine" id="cb31-9" title="9">}</a></code></pre></div>
+<h2 id="references">References</h2>
+<p>{: .-one-column}</p>
+<ul>
+<li><a href="https://kotlinlang.org/docs/reference/basic-syntax.html#defining-variables">Defining Variables</a> <em>(kotlinlang.org)</em></li>
+<li><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">Strings Documentation</a> <em>(kotlinlang.org)</em></li>
+<li><a href="https://kotlinlang.org/docs/reference/basic-types.html#string-templates">String Templates</a> <em>(kotlinlang.org)</em></li>
+<li><a href="https://kotlinlang.org/docs/reference/basic-types.html">Basic Types</a> <em>(kotlinlang.org)</em></li>
+<li><a href="https://kotlinlang.org/docs/reference/object-declarations.html#companion-objects">Companion Objects</a> <em>(kotlinlang.org)</em></li>
+<li><a href="https://kotlinlang.org/docs/reference/null-safety.html">Null Safety</a> <em>(kotlinlang.org)</em></li>
+<li><a href="https://kotlinlang.org/docs/reference/collections.html">Collections Overview</a> <em>(kotlinlang.org)</em></li>
+<li><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/index.html">Collections Documentation</a> <em>(kotlinlang.org)</em></li>
+<li><a href="https://kotlinlang.org/docs/reference/functions.html">Functions Documentation</a> <em>(kotlinlang.org)</em></li>
+<li><a href="https://kotlinlang.org/docs/reference/classes.html">Classes Documentation</a> <em>(kotlinlang.org)</em></li>
+<li><a href="https://kotlinlang.org/docs/reference/multi-declarations.html">Destructuring Declarations</a> <em>(kotlinlang.org)</em></li>
+</ul>
+</body>
+</html>

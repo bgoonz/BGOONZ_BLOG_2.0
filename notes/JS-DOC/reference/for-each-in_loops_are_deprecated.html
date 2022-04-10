@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>for-each-in_loops_are_deprecated</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="warning-javascript-1.6s-for-each-in-loops-are-deprecated">Warning: JavaScript 1.6’s for-each-in loops are deprecated</h1>
+<p>The JavaScript warning “JavaScript 1.6’s for-each-in loops are deprecated; consider using ES6 for-of instead” occurs when a <span class="page-not-created"><code>for each (variable in obj)</code></span> statement is used.</p>
+<h2 id="message">Message</h2>
+<pre><code>Warning: JavaScript 1.6&#39;s for-each-in loops are deprecated; consider using ES6 for-of instead</code></pre>
+<h2 id="error-type">Error type</h2>
+<p>Warning</p>
+<h2 id="what-went-wrong">What went wrong?</h2>
+<p>JavaScript 1.6’s <span class="page-not-created"><code>for each (variable in obj)</code></span> statement is deprecated, and will be removed in the near future.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="object-iteration">Object iteration</h3>
+<p><span class="page-not-created"><code>for each...in</code></span> has been used to iterate over the specified object values.</p>
+<h4 id="deprecated-syntax">Deprecated syntax</h4>
+<pre><code>var object = { a: 10, b: 20 };
+
+for each (var x in object) {
+  console.log(x);        // 10
+                         // 20
+}</code></pre>
+<h4 id="alternative-standard-syntax">Alternative standard syntax</h4>
+<p>You can now use the standard <a href="../statements/for...in"><code>for...in</code></a> loop to iterate over specified object keys, and get each value inside the loop:</p>
+<pre><code>var object = { a: 10, b: 20 };
+
+for (var key in object) {
+  var x = object[key];
+  console.log(x);        // 10
+                         // 20
+}</code></pre>
+<p>Or, using <a href="../statements/for...of"><code>for...of</code></a> (ES2015) and <a href="../global_objects/object/values"><code>Object.values</code></a> (ES2017), you can get an array of the specified object values and iterate over the array like this:</p>
+<pre><code>var object = { a: 10, b: 20 };
+
+for (var x of Object.values(object)) {
+  console.log(x);        // 10
+                         // 20
+}</code></pre>
+<h3 id="array-iteration">Array iteration</h3>
+<p><span class="page-not-created"><code>for each...in</code></span> has been used to iterate over specified array elements.</p>
+<h4 id="deprecated-syntax-1">Deprecated syntax</h4>
+<pre><code>var array = [10, 20, 30];
+
+for each (var x in array) {
+  console.log(x);        // 10
+                         // 20
+                         // 30
+}</code></pre>
+<h4 id="alternative-standard-syntax-1">Alternative standard syntax</h4>
+<p>This is now possible with <a href="../statements/for...of"><code>for...of</code></a> (ES2015) loops as well.</p>
+<pre><code>var array = [10, 20, 30];
+
+for (var x of array) {
+  console.log(x);        // 10
+                         // 20
+                         // 30
+}</code></pre>
+<h3 id="iterating-over-a-null-able-array">Iterating over a null-able array</h3>
+<p><span class="page-not-created"><code>for each...in</code></span> does nothing if the specified value is <code>null</code> or <code>undefined</code>, but <a href="../statements/for...of"><code>for...of</code></a> will throw an exception in these cases.</p>
+<h4 id="deprecated-syntax-2">Deprecated syntax</h4>
+<pre><code>function func(array) {
+  for each (var x in array) {
+    console.log(x);
+  }
+}
+func([10, 20]);        // 10
+                       // 20
+func(null);            // prints nothing
+func(undefined);       // prints nothing</code></pre>
+<h4 id="alternative-standard-syntax-2">Alternative standard syntax</h4>
+<p>To rewrite <span class="page-not-created"><code>for each...in</code></span> statements so that values can be <code>null</code> or <code>undefined</code> with <a href="../statements/for...of"><code>for...of</code></a> as well, you need to guard around <a href="../statements/for...of"><code>for...of</code></a>.</p>
+<pre><code>function func(array) {
+  if (array) {
+    for (var x of array) {
+      console.log(x);
+    }
+  }
+}
+func([10, 20]);        // 10
+                       // 20
+func(null);            // prints nothing
+func(undefined);       // prints nothing</code></pre>
+<h3 id="iterating-over-an-objects-key-value-pair">Iterating over an object’s key-value pair</h3>
+<h4 id="deprecated-syntax-3">Deprecated syntax</h4>
+<p>There’s a deprecated idiom to iterate over the specified object’s key-value pairs using <span class="page-not-created"><code>for each...in</code></span> and the deprecated <span class="page-not-created"><code>Iterator</code></span> object.</p>
+<pre><code>var object = { a: 10, b: 20 };
+
+for each (var [key, value] in Iterator(object)) {
+  console.log(key, value);  // &quot;a&quot;, 10
+                            // &quot;b&quot;, 20
+}</code></pre>
+<h4 id="alternative-standard-syntax-3">Alternative standard syntax</h4>
+<p>You can now use the standard <a href="../statements/for...in"><code>for...in</code></a> loop to iterate over specified object keys, and get each value inside the loop:</p>
+<pre><code>var object = { a: 10, b: 20 };
+
+for (var key in object) {
+  var value = object[key];
+  console.log(key, value);  // &quot;a&quot;, 10
+                            // &quot;b&quot;, 20
+}</code></pre>
+<p>Or, using <a href="../statements/for...of"><code>for...of</code></a> (ES2015) and <a href="../global_objects/object/entries"><code>Object.entries</code></a> (ES2017), you can get an array of the specified object values and iterate over the array like this:</p>
+<pre><code>var object = { a: 10, b: 20 };
+
+for (var [key, value] of Object.entries(object)) {
+  console.log(key, value);  // &quot;a&quot;, 10
+                            // &quot;b&quot;, 20
+}</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../statements/for...of"><code>for...of</code></a></li>
+<li><a href="../global_objects/object/values"><code>Object.values</code></a></li>
+<li><a href="../global_objects/object/entries"><code>Object.entries</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/For-each-in_loops_are_deprecated" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/For-each-in_loops_are_deprecated</a></p>
+</body>
+</html>

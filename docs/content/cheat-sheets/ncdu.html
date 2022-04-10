@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>ncdu</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="to-save-results-to">To save results to <file>:</h1>
+<p>ncdu -o <file></p>
+<h1 id="to-read-from">To read from <file>:</h1>
+<p>ncdu -f <file></p>
+<h1 id="to-save-results-to-a-compressed-file">To save results to a compressed file:</h1>
+<p>ncdu -o- | gzip &gt; <file></p>
+<h1 id="to-read-from-a-compressed-file">To read from a compressed file:</h1>
+<p>zcat <file> | ncdu -f-</p>
+</body>
+</html>

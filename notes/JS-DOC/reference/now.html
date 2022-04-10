@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>now</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="date.now">Date.now()</h1>
+<p>The static <code>Date.now()</code> method returns the number of milliseconds elapsed since January 1, 1970 00:00:00 UTC.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>Date.now()</code></pre>
+<h3 id="return-value">Return value</h3>
+<p>A <a href="../number"><code>Number</code></a> representing the milliseconds elapsed since the UNIX epoch.</p>
+<h2 id="polyfill">Polyfill</h2>
+<p>This method was standardized in ECMA-262 5<sup>th</sup> edition. Engines which have not been updated to support this method can work around the absence of this method using the following shim:</p>
+<pre><code>if (!Date.now) {
+  Date.now = function now() {
+    return new Date().getTime();
+  };
+}</code></pre>
+<h2 id="examples">Examples</h2>
+<h3 id="reduced-time-precision">Reduced time precision</h3>
+<p>To offer protection against timing attacks and fingerprinting, the precision of <code>Date.now()</code> might get rounded depending on browser settings.<br />
+In Firefox, the <code>privacy.reduceTimerPrecision</code> preference is enabled by default and defaults to 20µs in Firefox 59; in 60 it will be 2ms.</p>
+<pre><code>// reduced time precision (2ms) in Firefox 60
+Date.now()
+// 1519211809934
+// 1519211810362
+// 1519211811670
+// ...
+
+// reduced time precision with `privacy.resistFingerprinting` enabled
+Date.now();
+// 1519129853500
+// 1519129858900
+// 1519129864400
+// ...</code></pre>
+<p>In Firefox, you can also enable <code>privacy.resistFingerprinting</code>, the precision will be 100ms or the value of <code>privacy.resistFingerprinting.reduceTimerPrecision.microseconds</code>, whichever is larger.</p>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-date.now">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-date.now</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>now</code></p>
+<p>5</p>
+<p>12</p>
+<p>3</p>
+<p>9</p>
+<p>10.5</p>
+<p>4</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>14</p>
+<p>4</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Performance/now"><code>Performance.now()</code></a> — provides timestamps with sub-millisecond resolution for use in measuring web page performance</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Console/time"><code>console.time()</code></a> / <a href="https://developer.mozilla.org/en-US/docs/Web/API/Console/timeEnd"><code>console.timeEnd()</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/now" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/now</a></p>
+</body>
+</html>

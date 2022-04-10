@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>touppercase</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="string.prototype.touppercase">String.prototype.toUpperCase()</h1>
+<p>The <code>toUpperCase()</code> method returns the calling string value converted to uppercase (the value will be converted to a string if it isn’t one).</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>toUpperCase()</code></pre>
+<h3 id="return-value">Return value</h3>
+<p>A new string representing the calling string converted to upper case.</p>
+<h3 id="exceptions">Exceptions</h3>
+<p><a href="../typeerror"><code>TypeError</code></a><br />
+When called on <a href="../null"><code>null</code></a> or <a href="../undefined"><code>undefined</code></a>, for example, <code>String.prototype.toUpperCase.call(undefined)</code>.</p>
+<h2 id="description">Description</h2>
+<p>The <code>toUpperCase()</code> method returns the value of the string converted to uppercase. This method does not affect the value of the string itself since JavaScript strings are immutable.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="basic-usage">Basic usage</h3>
+<pre><code>console.log(&#39;alphabet&#39;.toUpperCase()); // &#39;ALPHABET&#39;</code></pre>
+<h3 id="conversion-of-non-string-this-values-to-strings">Conversion of non-string <code>this</code> values to strings</h3>
+<p>This method will convert any non-string value to a string, when you set its <code>this</code> to a value that is not a string:</p>
+<pre><code>const a = String.prototype.toUpperCase.call({
+  toString: function toString() {
+    return &#39;abcdef&#39;;
+  }
+});
+
+const b = String.prototype.toUpperCase.call(true);
+
+// prints out &#39;ABCDEF TRUE&#39;.
+console.log(a, b);</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-string.prototype.touppercase">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-string.prototype.touppercase</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>toUpperCase</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="tolocalelowercase"><code>String.prototype.toLocaleLowerCase()</code></a></li>
+<li><a href="tolocaleuppercase"><code>String.prototype.toLocaleUpperCase()</code></a></li>
+<li><a href="tolowercase"><code>String.prototype.toLowerCase()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase</a></p>
+</body>
+</html>

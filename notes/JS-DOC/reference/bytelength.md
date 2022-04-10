@@ -1,24 +1,26 @@
-# SharedArrayBuffer.prototype.byteLength
+SharedArrayBuffer.prototype.byteLength
+======================================
 
 The `byteLength` accessor property represents the length of an [`SharedArrayBuffer`](../sharedarraybuffer) in bytes.
 
-## Description
+Description
+-----------
 
 The `byteLength` property is an accessor property whose set accessor function is `undefined`, meaning that you can only read this property. The value is established when the shared array is constructed and cannot be changed.
 
-## Examples
+Examples
+--------
 
 ### Using byteLength
 
     var sab = new SharedArrayBuffer(1024);
     sab.byteLength; // 1024
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-get-sharedarraybuffer.prototype.bytelength">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-get-sharedarraybuffer.prototype.bytelength</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-get-sharedarraybuffer.prototype.bytelength</span></td></tr></tbody></table>
 
 `byteLength`
 
@@ -56,7 +58,7 @@ Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy
 
 89
 
-`SharedArrayBuffer` is gated behind COOP/COEP. For more detail, read [Making your website "cross-origin isolated" using COOP and COEP](https://web.dev/coop-coep/).
+`SharedArrayBuffer` is gated behind COOP/COEP. For more detail, read [Making your website “cross-origin isolated” using COOP and COEP](https://web.dev/coop-coep/).
 
 60-63
 
@@ -80,10 +82,10 @@ No
 
 Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of [speculative side-channel attacks](https://www.chromium.org/Home/chromium-security/ssca). This is intended as a temporary measure until other mitigations are in place.
 
-## See also
+See also
+--------
 
 -   [`SharedArrayBuffer`](../sharedarraybuffer)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer/byteLength" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer/byteLength</a>

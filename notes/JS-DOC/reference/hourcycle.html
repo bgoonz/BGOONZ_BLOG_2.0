@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>hourcycle</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="intl.locale.prototype.hourcycle">Intl.Locale.prototype.hourCycle</h1>
+<p>The <code>Intl.Locale.prototype.hourCycle</code> property is an accessor property that returns the time keeping format convention used by the locale.</p>
+<h2 id="description">Description</h2>
+<p>There are 2 main types of time keeping conventions (clocks) used around the world: the 12 hour clock and the 24 hour clock. The <code>hourCycle</code> property makes it easier for JavaScript programmers to access the clock type used by a particular locale. Like other additional locale data, hour cycle type is an <a href="https://www.unicode.org/reports/tr35/#u_Extension">extension subtag</a>, which extends the data contained in a locale string. The hour cycle type can have several different values, which are listed in the table below.</p>
+<h3 id="valid-hour-cycle-types">Valid hour cycle types</h3>
+<table>
+<thead>
+<tr class="header">
+<th>
+Hour cycle type
+</th>
+<th>
+Description
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<code>h12</code>
+</td>
+<td>
+Hour system using 1-12; corresponds to ‘h’ in patterns. The 12 hour clock, with midnight starting at 12:00 am.
+</td>
+</tr>
+<tr class="even">
+<td>
+<code>h23</code>
+</td>
+<td>
+Hour system using 0-23; corresponds to ‘H’ in patterns. The 24 hour clock, with midnight starting at 0:00.
+</td>
+</tr>
+<tr class="odd">
+<td>
+<code>h11</code>
+</td>
+<td>
+Hour system using 0-11; corresponds to ‘K’ in patterns. The 12 hour clock, with midnight starting at 0:00 am.
+</td>
+</tr>
+<tr class="even">
+<td>
+<code>h24</code>
+</td>
+<td>
+Hour system using 1-24; corresponds to ‘k’ in pattern. The 24 hour clock, with midnight starting at 24:00.
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="examples">Examples</h2>
+<p>These examples will show you how to add hour cycle data to your <a href="../locale"><code>Locale</code></a> object.</p>
+<h3 id="adding-an-hour-cycle-via-the-locale-string">Adding an hour cycle via the locale string</h3>
+<p>In the <a href="https://www.unicode.org/reports/tr35/">Unicode locale string spec</a>, the hour cycle is a locale string “extension subtag”. These subtags add additional data about the locale, and are added to locale identifiers by using the <code>-u</code> extension key. Thus, the hour cycle type can be added to the initial locale identifier string that is passed into the <a href="locale"><code>Locale</code></a> constructor. To add the hour cycle type, first add the <code>-u</code> extension key to the string. Next, add the <code>-hc</code> extension key to indicate that you are adding an hour cycle. Finally, add the hour cycle type to the string.</p>
+<pre><code>let fr24hour = new Intl.Locale(&quot;fr-FR-u-hc-h23&quot;);
+console.log(fr24hour.hourCycle); // Prints &quot;h23&quot;</code></pre>
+<h3 id="adding-an-hour-cycle-via-the-configuration-object-argument">Adding an hour cycle via the configuration object argument</h3>
+<p>The <a href="locale"><code>Intl.Locale</code></a> constructor has an optional configuration object argument, which can contain any of several extension types, including hour cycle types. Set the <code>hourCycle</code> property of the configuration object to your desired hour cycle type, and then pass it into the constructor.</p>
+<pre><code>let us12hour = new Intl.Locale(&quot;en-US&quot;, {hourCycle: &quot;h12&quot;});
+console.log(us12hour.hourCycle); // Prints &quot;h12&quot;</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.hourCycle">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) <br/></p>
+<span class="small">#sec-Intl.Locale.prototype.hourCycle</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>hourCycle</code></p>
+<p>74</p>
+<p>79</p>
+<p>75</p>
+<p>No</p>
+<p>62</p>
+<p>14</p>
+<p>74</p>
+<p>74</p>
+<p>79</p>
+<p>53</p>
+<p>14</p>
+<p>11.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../locale"><code>Intl.Locale</code></a></li>
+<li><a href="https://www.unicode.org/reports/tr35/#UnicodeHourCycleIdentifier">Unicode Hour Cycle extension key spec</a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/hourCycle" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/hourCycle</a></p>
+</body>
+</html>

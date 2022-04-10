@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>invalid_for-of_initializer</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="syntaxerror-a-declaration-in-the-head-of-a-for-of-loop-cant-have-an-initializer">SyntaxError: a declaration in the head of a for-of loop can’t have an initializer</h1>
+<p>The JavaScript exception “a declaration in the head of a for-of loop can’t have an initializer” occurs when the head of a <a href="../statements/for...of">for…of</a> loop contains an initializer expression such as |<code>for (var i = 0 of iterable)</code>|. This is not allowed in for-of loops.</p>
+<h2 id="message">Message</h2>
+<pre><code>SyntaxError: for-of loop head declarations cannot have an initializer (Edge)
+SyntaxError: a declaration in the head of a for-of loop can&#39;t have an initializer (Firefox)
+SyntaxError: for-of loop variable declaration may not have an initializer. (Chrome)</code></pre>
+<h2 id="error-type">Error type</h2>
+<p><a href="../global_objects/syntaxerror"><code>SyntaxError</code></a></p>
+<h2 id="what-went-wrong">What went wrong?</h2>
+<p>The head of a <a href="../statements/for...of">for…of</a> loop contains an initializer expression. That is, a variable is declared and assigned a value |<code>for (var i = 0 of iterable)</code>|. This is not allowed in for-of loops. You might want a <code>for</code> loop that does allow an initializer.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="invalid-for-of-loop">Invalid <code>for-of</code> loop</h3>
+<pre><code>let iterable = [10, 20, 30];
+
+for (let value = 50 of iterable) {
+  console.log(value);
+}
+
+// SyntaxError: a declaration in the head of a for-of loop can&#39;t
+// have an initializer</code></pre>
+<h3 id="valid-for-of-loop">Valid <code>for-of</code> loop</h3>
+<p>You need to remove the initializer (<code>value = 50</code>) in the head of the <code>for-of</code> loop. Maybe you intended to make 50 an offset value, in that case you could add it to the loop body, for example.</p>
+<pre><code>let iterable = [10, 20, 30];
+
+for (let value of iterable) {
+  value += 50;
+  console.log(value);
+}
+// 60
+// 70
+// 80</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><code>for...of</code></li>
+<li><code>for...in</code> - disallows an initializer in strict mode as well (<a href="invalid_for-in_initializer">SyntaxError: for-in loop head declarations may not have initializers</a>)</li>
+<li><code>for</code> - allows to define an initializer when iterating.</li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Invalid_for-of_initializer" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Invalid_for-of_initializer</a></p>
+</body>
+</html>

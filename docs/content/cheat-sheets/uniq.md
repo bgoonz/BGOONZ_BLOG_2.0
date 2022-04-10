@@ -1,25 +1,32 @@
-# To show all lines without duplication:
+To show all lines without duplication:
+======================================
 
-# (`sort -u` and `uniq` have the same effect.)
+(`sort -u` and `uniq` have the same effect.)
+============================================
 
-sort <file> | uniq
+sort | uniq
 
-# To show not duplicated lines:
+To show not duplicated lines:
+=============================
 
-sort <file> | uniq -u
+sort | uniq -u
 
-# To show duplicated lines only:
+To show duplicated lines only:
+==============================
 
-sort <file> | uniq -d
+sort | uniq -d
 
-# To count all lines:
+To count all lines:
+===================
 
-sort <file> | uniq -c
+sort | uniq -c
 
-# To count not duplicated lines:
+To count not duplicated lines:
+==============================
 
-sort <file> | uniq -uc
+sort | uniq -uc
 
-# To count only duplicated lines:
+To count only duplicated lines:
+===============================
 
-sort <file> | uniq -dc
+sort | uniq -dc

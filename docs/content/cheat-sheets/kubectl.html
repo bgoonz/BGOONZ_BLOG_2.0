@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>kubectl</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="display-list-of-all-available-commands">Display list of all available commands</h1>
+<p>kubectl -h</p>
+<h1 id="display-an-explanation-of-a-specific-command">Display an explanation of a specific command</h1>
+<p>kubectl command_name -h</p>
+<h1 id="display-complete-list-of-supported-resources">Display complete list of supported resources</h1>
+<p>kubectl api-resources</p>
+<h1 id="display-an-explanation-of-a-specific-resource">Display an explanation of a specific resource</h1>
+<p>kubectl explain resource_name</p>
+<h1 id="display-an-explanation-of-a-specific-field-of-resource">Display an explanation of a specific field of resource</h1>
+<p>kubectl explain resource_name.field_name</p>
+<h1 id="display-list-of-global-command-line-options">Display list of global command-line options</h1>
+<p>kubectl options</p>
+<h1 id="setup-kubectl-autocomplete-in-bashto-use-press-tab">Setup Kubectl autocomplete in bash(to use press Tab)</h1>
+<p>source &lt;(kubectl completion bash)</p>
+<h1 id="display-all-resources-in-all-namespaces">Display all resources in all namespaces</h1>
+<p>kubectl get all -A</p>
+</body>
+</html>

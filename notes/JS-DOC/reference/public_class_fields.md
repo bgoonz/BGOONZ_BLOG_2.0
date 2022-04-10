@@ -1,4 +1,5 @@
-# Public class fields
+Public class fields
+===================
 
 **Note:** This page describes experimental features.
 
@@ -8,7 +9,8 @@ Support in browsers is limited, but the feature can be used through a build step
 
 Both static and instance public fields are writable, enumerable, and configurable properties. As such, unlike their private counterparts, they participate in prototype inheritance.
 
-## Syntax
+Syntax
+------
 
     class ClassWithInstanceField {
       instanceField = 'instance field'
@@ -24,11 +26,12 @@ Both static and instance public fields are writable, enumerable, and configurabl
       }
     }
 
-## Examples
+Examples
+--------
 
 ### Public static fields
 
-Public static fields are useful when you want a field to exist only once per class, not on every class instance you create. This is useful for caches, fixed-configuration, or any other data you don't need to be replicated across instances.
+Public static fields are useful when you want a field to exist only once per class, not on every class instance you create. This is useful for caches, fixed-configuration, or any other data you don’t need to be replicated across instances.
 
 Public static fields are declared using the `static` keyword. They are added to the class constructor at the time of class evaluation using [`Object.defineProperty()`](../global_objects/object/defineproperty). They are accessed again from the class constructor.
 
@@ -121,7 +124,7 @@ Like properties, field names may be computed.
     console.log(instance.prefixField)
     // expected output: "prefixed field"
 
-When initializing fields `this` refers to the class instance under construction. Just as in public instance methods, if you're in a subclass you can access the superclass prototype using `super`.
+When initializing fields `this` refers to the class instance under construction. Just as in public instance methods, if you’re in a subclass you can access the superclass prototype using `super`.
 
     class ClassWithInstanceField {
       baseInstanceField = 'base field'
@@ -146,7 +149,7 @@ When initializing fields `this` refers to the class instance under construction.
 
 #### Public static methods
 
-The `static` keyword defines a static method for a class. Static methods aren't called on instances of the class. Instead, they're called on the class itself. These are often utility functions, such as functions to create or clone objects.
+The `static` keyword defines a static method for a class. Static methods aren’t called on instances of the class. Instead, they’re called on the class itself. These are often utility functions, such as functions to create or clone objects.
 
     class ClassWithStaticMethod {
       static staticMethod() {
@@ -222,14 +225,14 @@ Getters and setters are special methods that bind to a class property and are ca
     console.log(instance.msg)
     // expected output: "hello cake"
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/proposal-class-fields/#prod-FieldDefinition">Public and private instance fields proposal (Public and private instance fields proposal) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>Public and private instance fields proposal (Public and private instance fields proposal)<br />
+</p><span class="small">#prod-FieldDefinition</span></td></tr></tbody></table>
 
-<span class="small">#prod-FieldDefinition</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -275,7 +278,7 @@ No
 
 14-14.1
 
-Doesn't support public static fields. See WebKit bug [194095](https://webkit.org/b/194095).
+Doesn’t support public static fields. See WebKit bug [194095](https://webkit.org/b/194095).
 
 72
 
@@ -289,11 +292,12 @@ Doesn't support public static fields. See WebKit bug [194095](https://webkit.org
 
 14-14.5
 
-Doesn't support public static fields. See WebKit bug [194095](https://webkit.org/b/194095).
+Doesn’t support public static fields. See WebKit bug [194095](https://webkit.org/b/194095).
 
 No
 
-## See also
+See also
+--------
 
 -   [Public and private class fields](https://v8.dev/features/class-fields) article at the v8.dev site.
 -   [Class field declarations for JavaScript](https://github.com/tc39/proposal-class-fields#class-field-declarations-for-javascript) explainer, by the [Public and private instance fields](https://github.com/tc39/proposal-class-fields) authors

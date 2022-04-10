@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="rain-terraces-trapping-rain-water-problem">Rain Terraces (Trapping Rain Water) Problem</h1>
+<p>Given an array of non-negative integers representing terraces in an elevation map where the width of each bar is <code>1</code>, compute how much water it is able to trap after raining.</p>
+<figure>
+<img src="https://www.geeksforgeeks.org/wp-content/uploads/watertrap.png" alt="Rain Terraces" /><figcaption>Rain Terraces</figcaption>
+</figure>
+<h2 id="examples">Examples</h2>
+<p><strong>Example #1</strong></p>
+<pre><code>Input: arr[] = [2, 0, 2]
+Output: 2
+Structure is like below:
+
+| |
+|_|
+
+We can trap 2 units of water in the middle gap.</code></pre>
+<p><strong>Example #2</strong></p>
+<pre><code>Input: arr[] = [3, 0, 0, 2, 0, 4]
+Output: 10
+Structure is like below:
+
+     |
+|    |
+|  | |
+|__|_|
+
+We can trap &quot;3*2 units&quot; of water between 3 an 2,
+&quot;1 unit&quot; on top of bar 2 and &quot;3 units&quot; between 2
+and 4. See below diagram also.</code></pre>
+<p><strong>Example #3</strong></p>
+<pre><code>Input: arr[] = [0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]
+Output: 6
+Structure is like below:
+
+       |
+   |   || |
+_|_||_||||||
+
+Trap &quot;1 unit&quot; between first 1 and 2, &quot;4 units&quot; between
+first 2 and 3 and &quot;1 unit&quot; between second last 1 and last 2.</code></pre>
+<h2 id="the-algorithm">The Algorithm</h2>
+<p>An element of array can store water if there are higher bars on left and right. We can find amount of water to be stored in every element by finding the heights of bars on left and right sides. The idea is to compute amount of water that can be stored in every element of array. For example, consider the array <code>[3, 0, 0, 2, 0, 4]</code>, We can trap “3*2 units” of water between 3 an 2, “1 unit” on top of bar 2 and “3 units” between 2 and 4. See below diagram also.</p>
+<h3 id="approach-1-brute-force">Approach 1: Brute force</h3>
+<p><strong>Intuition</strong></p>
+<p>For each element in the array, we find the maximum level of water it can trap after the rain, which is equal to the minimum of maximum height of bars on both the sides minus its own height.</p>
+<p><strong>Steps</strong></p>
+<ul>
+<li>Initialize <code>answer = 0</code></li>
+<li>Iterate the array from left to right:
+<ul>
+<li>Initialize <code>max_left = 0</code> and <code>max_right = 0</code></li>
+<li>Iterate from the current element to the beginning of array updating: <code>max_left = max(max_left, height[j])</code></li>
+<li>Iterate from the current element to the end of array updating: <code>max_right = max(max_right, height[j])</code></li>
+<li>Add <code>min(max_left, max_right) − height[i]</code> to <code>answer</code></li>
+</ul></li>
+</ul>
+<p><strong>Complexity Analysis</strong></p>
+<p>Time complexity: <code>O(n^2)</code>. For each element of array, we iterate the left and right parts.</p>
+<p>Auxiliary space complexity: <code>O(1)</code> extra space.</p>
+<h3 id="approach-2-dynamic-programming">Approach 2: Dynamic Programming</h3>
+<p><strong>Intuition</strong></p>
+<p>In brute force, we iterate over the left and right parts again and again just to find the highest bar size up to that index. But, this could be stored. Voila, dynamic programming.</p>
+<p>So we may pre-compute highest bar on left and right of every bar in <code>O(n)</code> time. Then use these pre-computed values to find the amount of water in every array element.</p>
+<p>The concept is illustrated as shown:</p>
+<figure>
+<img src="https://leetcode.com/problems/trapping-rain-water/Figures/42/trapping_rain_water.png" alt="DP Trapping Rain Water" /><figcaption>DP Trapping Rain Water</figcaption>
+</figure>
+<p><strong>Steps</strong></p>
+<ul>
+<li>Find maximum height of bar from the left end up to an index <code>i</code> in the array <code>left_max</code>.</li>
+<li>Find maximum height of bar from the right end up to an index <code>i</code> in the array <code>right_max</code>.</li>
+<li>Iterate over the <code>height</code> array and update <code>answer</code>:
+<ul>
+<li>Add <code>min(max_left[i], max_right[i]) − height[i]</code> to <code>answer</code>.</li>
+</ul></li>
+</ul>
+<p><strong>Complexity Analysis</strong></p>
+<p>Time complexity: <code>O(n)</code>. We store the maximum heights upto a point using 2 iterations of <code>O(n)</code> each. We finally update <code>answer</code> using the stored values in <code>O(n)</code>.</p>
+<p>Auxiliary space complexity: <code>O(n)</code> extra space. Additional space for <code>left_max</code> and <code>right_max</code> arrays than in Approach 1.</p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/trapping-rain-water/">GeeksForGeeks</a></li>
+<li><a href="https://leetcode.com/problems/trapping-rain-water/solution/">LeetCode</a></li>
+</ul>
+</body>
+</html>

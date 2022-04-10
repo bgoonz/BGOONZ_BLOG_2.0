@@ -1,8 +1,10 @@
-# Date.prototype.toLocaleDateString()
+Date.prototype.toLocaleDateString()
+===================================
 
 The `toLocaleDateString()` method returns a string with a language sensitive representation of the date portion of this date. The new `locales` and `options` arguments let applications specify the language whose formatting conventions should be used and allow to customize the behavior of the function. In older implementations, which ignore the `locales` and `options` arguments, the locale used and the form of the string returned are entirely implementation dependent.
 
-## Syntax
+Syntax
+------
 
     toLocaleDateString()
     toLocaleDateString(locales)
@@ -20,11 +22,13 @@ The default value for each date-time component property is [`undefined`](../unde
 
 A string representing the date portion of the given [`Date`](../date) instance according to language-specific conventions.
 
-## Performance
+Performance
+-----------
 
 When formatting large numbers of dates, it is better to create an [`Intl.DateTimeFormat`](../intl/datetimeformat) object and use the function provided by its [`format`](../intl/datetimeformat/format) property.
 
-## Examples
+Examples
+--------
 
 ### Using toLocaleDateString()
 
@@ -106,17 +110,15 @@ The results provided by `toLocaleDateString()` can be customized using the `opti
     console.log(date.toLocaleDateString('en-US', options));
     // → "Thursday, December 20, 2012, UTC"
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.tolocaledatestring">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-date.prototype.tolocaledatestring</span></td></tr><tr class="even"><td><p>ECMAScript Internationalization API Specification (ECMAScript Internationalization API)<br />
+</p><span class="small">#sup-date.prototype.tolocaledatestring</span></td></tr></tbody></table>
 
-<span class="small">#sec-date.prototype.tolocaledatestring</span></a></td></tr><tr class="even"><td><a href="https://tc39.es/ecma402/#sup-date.prototype.tolocaledatestring">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)
-<br/>
-
-<span class="small">#sup-date.prototype.tolocaledatestring</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -250,7 +252,8 @@ No
 
 1.5
 
-## See also
+See also
+--------
 
 -   [`Intl.DateTimeFormat`](../intl/datetimeformat)
 -   [`Date.prototype.toLocaleString()`](tolocalestring)

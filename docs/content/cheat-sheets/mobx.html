@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Mobx</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Mobx</h1>
+</header>
+<h3 id="properties">Properties</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="im">import</span> <span class="op">{</span> observable<span class="op">,</span> computed <span class="op">}</span> <span class="im">from</span> <span class="st">&#39;mobx&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb1-2" title="2"></a>
+<a class="sourceLine" id="cb1-3" title="3"><span class="kw">class</span> Page <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-4" title="4">    @observable title <span class="op">=</span> <span class="st">&#39;&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb1-5" title="5">    @observable published <span class="op">=</span> <span class="kw">false</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb1-6" title="6">    @observable author <span class="op">=</span> <span class="kw">null</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb1-7" title="7"></a>
+<a class="sourceLine" id="cb1-8" title="8">    @computed get <span class="at">authorName</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-9" title="9">        <span class="cf">return</span> <span class="kw">this</span>.<span class="at">author</span> <span class="op">||</span> <span class="st">&#39;Anonymous&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb1-10" title="10">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb1-11" title="11"><span class="op">}</span></a></code></pre></div>
+<h3 id="actions">Actions</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">class</span> Page <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-2" title="2">    @action <span class="at">publish</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-3" title="3">        <span class="kw">this</span>.<span class="at">published</span> <span class="op">=</span> <span class="kw">true</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-4" title="4">        <span class="co">// do ajax/async here if you like</span></a>
+<a class="sourceLine" id="cb2-5" title="5">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb2-6" title="6"><span class="op">}</span></a></code></pre></div>
+<h3 id="plain-objects">Plain objects</h3>
+<div class="sourceCode" id="cb3"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">const</span> person <span class="op">=</span> <span class="at">observable</span>(<span class="op">{</span></a>
+<a class="sourceLine" id="cb3-2" title="2">    <span class="dt">name</span><span class="op">:</span> <span class="st">&#39;Ella Fitzgerald&#39;</span></a>
+<a class="sourceLine" id="cb3-3" title="3"><span class="op">}</span>)<span class="op">;</span></a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb4-1" title="1"><span class="kw">const</span> temp <span class="op">=</span> <span class="at">observable</span>(<span class="dv">23</span>)</a>
+<a class="sourceLine" id="cb4-2" title="2"><span class="va">temp</span>.<span class="at">get</span>()</a>
+<a class="sourceLine" id="cb4-3" title="3"><span class="va">temp</span>.<span class="at">set</span>(<span class="dv">25</span>)</a>
+<a class="sourceLine" id="cb4-4" title="4"><span class="va">temp</span>.<span class="at">observe</span>(...)</a></code></pre></div>
+<h2 id="reactions">Reactions</h2>
+<h3 id="importing">Importing</h3>
+<div class="sourceCode" id="cb5"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb5-1" title="1"><span class="im">import</span> <span class="op">{</span> autorun<span class="op">,</span> autorunAsync<span class="op">,</span> when <span class="op">}</span> <span class="im">from</span> <span class="st">&#39;mobx&#39;</span><span class="op">;</span></a></code></pre></div>
+<h3 id="autorun">autorun()</h3>
+<div class="sourceCode" id="cb6"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb6-1" title="1"><span class="co">// Runs it, finds out what it accessed, then observe those</span></a>
+<a class="sourceLine" id="cb6-2" title="2"><span class="at">autorun</span>(() <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb6-3" title="3">    <span class="va">console</span>.<span class="at">log</span>(<span class="va">page</span>.<span class="at">title</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb6-4" title="4"><span class="op">}</span>)<span class="op">;</span></a></code></pre></div>
+<h3 id="when">when()</h3>
+<div class="sourceCode" id="cb7"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb7-1" title="1"><span class="kw">class</span> Foo <span class="op">{</span></a>
+<a class="sourceLine" id="cb7-2" title="2">    <span class="at">constructor</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb7-3" title="3">        <span class="at">when</span>(</a>
+<a class="sourceLine" id="cb7-4" title="4">            () <span class="kw">=&gt;</span> <span class="op">!</span><span class="kw">this</span>.<span class="at">isVisible</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb7-5" title="5">            () <span class="kw">=&gt;</span> <span class="kw">this</span>.<span class="at">doSomething</span>()</a>
+<a class="sourceLine" id="cb7-6" title="6">        )<span class="op">;</span></a>
+<a class="sourceLine" id="cb7-7" title="7">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb7-8" title="8"><span class="op">}</span></a></code></pre></div>
+<h3 id="expr">expr()</h3>
+<div class="sourceCode" id="cb8"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb8-1" title="1"><span class="co">// A temporary computed value. Its result is cached.</span></a>
+<a class="sourceLine" id="cb8-2" title="2"><span class="at">render</span> () <span class="op">{</span></a>
+<a class="sourceLine" id="cb8-3" title="3">  <span class="kw">const</span> isPublished <span class="op">=</span> <span class="at">expr</span>(() <span class="kw">=&gt;</span> <span class="va">page</span>.<span class="at">published</span> <span class="op">===</span> <span class="kw">true</span>)</a>
+<a class="sourceLine" id="cb8-4" title="4">  <span class="cf">if</span> (isPublished) <span class="op">{</span> ... <span class="op">}</span></a>
+<a class="sourceLine" id="cb8-5" title="5"><span class="op">}</span></a></code></pre></div>
+<h2 id="modifiers"><a href="http://mobxjs.github.io/mobx/refguide/modifiers.html">Modifiers</a></h2>
+<ul>
+<li><code>asMap(obj)</code> - JS map (dynamic keys)</li>
+<li><code>asReference(fn)</code> - don’t observe me</li>
+<li><code>asStructure(obj)</code> - JS object (observe as deepEqual)</li>
+<li><code>asFlat(array)</code> - JS array (observe its children)</li>
+</ul>
+<h2 id="react">React</h2>
+<h3 id="mobx-react">mobx-react</h3>
+<div class="sourceCode" id="cb9"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb9-1" title="1"><span class="im">import</span> <span class="op">{</span> observer <span class="op">}</span> <span class="im">from</span> <span class="st">&#39;mobx-react&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb9-2" title="2"></a>
+<a class="sourceLine" id="cb9-3" title="3">@observer</a>
+<a class="sourceLine" id="cb9-4" title="4"><span class="kw">class</span> PageView <span class="kw">extends</span> <span class="va">React</span>.<span class="at">Component</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb9-5" title="5">    <span class="at">render</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb9-6" title="6">        <span class="cf">return</span> <span class="op">&lt;</span>div<span class="op">&gt;{</span><span class="kw">this</span>.<span class="va">props</span>.<span class="va">page</span>.<span class="at">title</span><span class="op">}</span>&lt;/div<span class="op">&gt;;</span></a>
+<a class="sourceLine" id="cb9-7" title="7">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb9-8" title="8"><span class="op">}</span></a>
+<a class="sourceLine" id="cb9-9" title="9"></a>
+<a class="sourceLine" id="cb9-10" title="10"><span class="op">&lt;</span>PageView page<span class="op">={</span>page<span class="op">}</span> /&gt;<span class="op">;</span></a></code></pre></div>
+<h3 id="functional-components">Functional components</h3>
+<div class="sourceCode" id="cb10"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb10-1" title="1"><span class="im">import</span> <span class="op">{</span> observer <span class="op">}</span> <span class="im">from</span> <span class="st">&#39;mobx-react&#39;</span></a>
+<a class="sourceLine" id="cb10-2" title="2"></a>
+<a class="sourceLine" id="cb10-3" title="3"><span class="kw">const</span> PageView <span class="op">=</span> <span class="at">observer</span>((<span class="op">{</span>page<span class="op">}</span>) <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb10-4" title="4">  <span class="op">&lt;</span>div<span class="op">&gt;{</span><span class="va">page</span>.<span class="at">title</span><span class="op">}</span>&lt;/div<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb10-5" title="5"><span class="op">}</span>)</a>
+<a class="sourceLine" id="cb10-6" title="6"></a>
+<a class="sourceLine" id="cb10-7" title="7"><span class="op">&lt;</span>PageView page<span class="op">={</span>page<span class="op">}</span> /&gt;</a></code></pre></div>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://github.com/mobxjs/mobx" class="uri">https://github.com/mobxjs/mobx</a></li>
+</ul>
+</body>
+</html>

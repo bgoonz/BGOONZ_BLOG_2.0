@@ -1,8 +1,10 @@
-# Object.defineProperties()
+Object.defineProperties()
+=========================
 
 The `Object.defineProperties()` method defines new or modifies existing properties directly on an object, returning the object.
 
-## Syntax
+Syntax
+------
 
     Object.defineProperties(obj, props)
 
@@ -37,7 +39,7 @@ The value associated with the property. Can be any valid JavaScript value (numbe
 An accessor descriptor also has the following optional keys:
 
 `get`  
-A function which serves as a getter for the property, or [`undefined`](../undefined) if there is no getter. The function's return value will be used as the value of the property.  
+A function which serves as a getter for the property, or [`undefined`](../undefined) if there is no getter. The function’s return value will be used as the value of the property.  
 **Defaults to [`undefined`](../undefined).**
 
 `set`  
@@ -50,7 +52,8 @@ If a descriptor has neither of `value`, `writable`, `get` and `set` keys, it is 
 
 The object that was passed to the function.
 
-## Examples
+Examples
+--------
 
 ### Using Object.defineProperties
 
@@ -67,7 +70,8 @@ The object that was passed to the function.
       // etc. etc.
     });
 
-## Polyfill
+Polyfill
+--------
 
 Assuming a pristine execution environment with all names and properties referring to their initial values, `Object.defineProperties` is almost completely equivalent (note the comment in `isCallable`) to the following reimplementation in JavaScript:
 
@@ -132,12 +136,11 @@ Assuming a pristine execution environment with all names and properties referrin
       return obj;
     }
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.defineproperties">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-object.defineproperties</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-object.defineproperties</span></td></tr></tbody></table>
 
 `defineProperties`
 
@@ -165,12 +168,12 @@ Assuming a pristine execution environment with all names and properties referrin
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`Object.defineProperty()`](defineproperty)
 -   [`Object.keys()`](keys)
 -   [Enumerability and ownership of properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperties" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperties</a>

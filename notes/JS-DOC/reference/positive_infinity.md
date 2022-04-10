@@ -1,4 +1,5 @@
-# Number.POSITIVE_INFINITY
+Number.POSITIVE\_INFINITY
+=========================
 
 The `Number.POSITIVE_INFINITY` property represents the positive Infinity value.
 
@@ -16,9 +17,10 @@ Configurable
 
 no
 
-## Description
+Description
+-----------
 
-The value of `Number.POSITIVE_INFINITY` is the same as the value of the global object's [`Infinity`](../infinity) property.
+The value of `Number.POSITIVE_INFINITY` is the same as the value of the global object’s [`Infinity`](../infinity) property.
 
 This value behaves slightly differently than mathematical infinity:
 
@@ -36,9 +38,10 @@ You might use the `Number.POSITIVE_INFINITY` property to indicate an error condi
 
 Because `POSITIVE_INFINITY` is a static property of [`Number`](../number), you always use it as `Number.POSITIVE_INFINITY`, rather than as a property of a [`Number`](../number) object you created.
 
-## Examples
+Examples
+--------
 
-### Using POSITIVE_INFINITY
+### Using POSITIVE\_INFINITY
 
 In the following example, the variable `bigNumber` is assigned a value that is larger than the maximum value. When the [`if`](../../statements/if...else) statement executes, `bigNumber` has the value `Infinity`, so `bigNumber` is set to a more manageable value before continuing.
 
@@ -48,14 +51,14 @@ In the following example, the variable `bigNumber` is assigned a value that is l
       bigNumber = returnFinite();
     }
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.positive_infinity">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-number.positive_infinity</span></td></tr></tbody></table>
 
-<span class="small">#sec-number.positive_infinity</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -111,13 +114,13 @@ Samsung Internet
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`Number.NEGATIVE_INFINITY`](negative_infinity)
 -   [`Number.isFinite()`](isfinite)
 -   [`Infinity`](../infinity)
 -   [`isFinite()`](../isfinite)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/POSITIVE_INFINITY" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/POSITIVE_INFINITY</a>

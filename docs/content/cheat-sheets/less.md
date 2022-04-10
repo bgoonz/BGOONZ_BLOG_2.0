@@ -1,7 +1,3 @@
----
-title: Less.js
----
-
 ### Functions
 
     unit(30px / 5px)  #=> 6

@@ -1,13 +1,15 @@
-# WebAssembly.instantiate()
+WebAssembly.instantiate()
+=========================
 
 The `WebAssembly.instantiate()` function allows you to compile and instantiate WebAssembly code. This function has two overloads:
 
 -   The primary overload takes the WebAssembly binary code, in the form of a [typed array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays) or [`ArrayBuffer`](../arraybuffer), and performs both compilation and instantiation in one step. The returned `Promise` resolves to both a compiled [`WebAssembly.Module`](module) and its first [`WebAssembly.Instance`](instance).
 -   The secondary overload takes an already-compiled [`WebAssembly.Module`](module) and returns a `Promise` that resolves to an `Instance` of that `Module`. This overload is useful if the `Module` has already been compiled.
 
-**Warning:** This method is not the most efficient way of fetching and instantiating wasm modules. If at all possible, you should use the newer [`WebAssembly.instantiateStreaming()`](instantiatestreaming) method instead, which fetches, compiles, and instantiates a module all in one step, directly from the raw bytecode, so doesn't require conversion to an [`ArrayBuffer`](../arraybuffer).
+**Warning:** This method is not the most efficient way of fetching and instantiating wasm modules. If at all possible, you should use the newer [`WebAssembly.instantiateStreaming()`](instantiatestreaming) method instead, which fetches, compiles, and instantiates a module all in one step, directly from the raw bytecode, so doesn’t require conversion to an [`ArrayBuffer`](../arraybuffer).
 
-## Syntax
+Syntax
+------
 
 ### Primary overload — taking wasm binary code
 
@@ -15,10 +17,10 @@ The `WebAssembly.instantiate()` function allows you to compile and instantiate W
 
 #### Parameters
 
-_bufferSource_  
+*bufferSource*  
 A [typed array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays) or [`ArrayBuffer`](../arraybuffer) containing the binary code of the .wasm module you want to compile.
 
-_importObject_ <span class="badge inline optional">Optional</span>  
+*importObject* <span class="badge inline optional">Optional</span>  
 An object containing the values to be imported into the newly-created `Instance`, such as functions or [`WebAssembly.Memory`](memory) objects. There must be one matching property for each declared import of the compiled module or else a [`WebAssembly.LinkError`](linkerror) is thrown.
 
 #### Return value
@@ -39,10 +41,10 @@ A `Promise` that resolves to a `ResultObject` which contains two fields:
 
 #### Parameters
 
-_module_  
+*module*  
 The [`WebAssembly.Module`](module) object to be instantiated.
 
-_importObject_ <span class="badge inline optional">Optional</span>  
+*importObject* <span class="badge inline optional">Optional</span>  
 An object containing the values to be imported into the newly-created `Instance`, such as functions or [`WebAssembly.Memory`](memory) objects. There must be one matching property for each declared import of `module` or else a [`WebAssembly.LinkError`](linkerror) is thrown.
 
 #### Return value
@@ -54,9 +56,10 @@ A `Promise` that resolves to an [`WebAssembly.Instance`](instance) object.
 -   If either of the parameters are not of the correct type or structure, a [`TypeError`](../typeerror) is thrown.
 -   If the operation fails, the promise rejects with a [`WebAssembly.CompileError`](compileerror), [`WebAssembly.LinkError`](linkerror), or [`WebAssembly.RuntimeError`](runtimeerror), depending on the cause of the failure.
 
-## Examples
+Examples
+--------
 
-**Note**: You'll probably want to use [`WebAssembly.instantiateStreaming()`](instantiatestreaming) in most cases, as it is more efficient than `instantiate()`.
+**Note**: You’ll probably want to use [`WebAssembly.instantiateStreaming()`](instantiatestreaming) in most cases, as it is more efficient than `instantiate()`.
 
 ### First overload example
 
@@ -110,12 +113,11 @@ In the worker (see `wasm_worker.js`) we define an import object for the module t
       });
     };
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#dom-webassembly-instantiate">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
-<br/>
-
-<span class="small">#dom-webassembly-instantiate</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>WebAssembly JavaScript Interface (WebAssembly JavaScript Interface)<br />
+</p><span class="small">#dom-webassembly-instantiate</span></td></tr></tbody></table>
 
 `instantiate`
 
@@ -147,12 +149,12 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 
 7.0
 
-## See also
+See also
+--------
 
 -   [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
 -   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/instantiate" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/instantiate</a>

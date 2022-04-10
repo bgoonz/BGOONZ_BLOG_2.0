@@ -1,8 +1,10 @@
-# getter
+getter
+======
 
 The `get` syntax binds an object property to a function that will be called when that property is looked up.
 
-## Syntax
+Syntax
+------
 
     {get prop() { ... } }
     {get [expression]() { ... } }
@@ -15,11 +17,12 @@ The name of the property to bind to the given function.
 `expression`  
 Starting with ECMAScript 2015, you can also use expressions for a computed property name to bind to the given function.
 
-## Description
+Description
+-----------
 
-Sometimes it is desirable to allow access to a property that returns a dynamically computed value, or you may want to reflect the status of an internal variable without requiring the use of explicit method calls. In JavaScript, this can be accomplished with the use of a _getter_.
+Sometimes it is desirable to allow access to a property that returns a dynamically computed value, or you may want to reflect the status of an internal variable without requiring the use of explicit method calls. In JavaScript, this can be accomplished with the use of a *getter*.
 
-It is not possible to simultaneously have a getter bound to a property and have that property actually hold a value, although it _is_ possible to use a getter and a setter in conjunction to create a type of pseudo-property.
+It is not possible to simultaneously have a getter bound to a property and have that property actually hold a value, although it *is* possible to use a getter and a setter in conjunction to create a type of pseudo-property.
 
 Note the following when working with the `get` syntax:
 
@@ -27,7 +30,8 @@ Note the following when working with the `get` syntax:
 -   It must have exactly zero parameters (see [Incompatible ES5 change: literal getter and setter functions must now have exactly zero or one arguments](https://whereswalden.com/2010/08/22/incompatible-es5-change-literal-getter-and-setter-functions-must-now-have-exactly-zero-or-one-arguments/) for more information);
 -   It must not appear in an object literal with another `get` or with a data entry for the same property (`{ get x() { }, get x() { } }` and `{ x: ..., get x() { } }` are forbidden).
 
-## Examples
+Examples
+--------
 
 ### Defining a getter on new objects in object initializers
 
@@ -72,17 +76,17 @@ To append a getter to an existing object later at any time, use [`Object.defineP
 
 ### Smart / self-overwriting / lazy getters
 
-Getters give you a way to _define_ a property of an object, but they do not _calculate_ the property's value until it is accessed. A getter defers the cost of calculating the value until the value is needed. If it is never needed, you never pay the cost.
+Getters give you a way to *define* a property of an object, but they do not *calculate* the property’s value until it is accessed. A getter defers the cost of calculating the value until the value is needed. If it is never needed, you never pay the cost.
 
-An additional optimization technique to lazify or delay the calculation of a property value and cache it for later access are **smart (or "[memoized](https://en.wikipedia.org/wiki/Memoization)") getters**. The value is calculated the first time the getter is called, and is then cached so subsequent accesses return the cached value without recalculating it. This is useful in the following situations:
+An additional optimization technique to lazify or delay the calculation of a property value and cache it for later access are **smart (or “[memoized](https://en.wikipedia.org/wiki/Memoization)”) getters**. The value is calculated the first time the getter is called, and is then cached so subsequent accesses return the cached value without recalculating it. This is useful in the following situations:
 
 -   If the calculation of a property value is expensive (takes much RAM or CPU time, spawns worker threads, retrieves remote file, etc).
--   If the value isn't needed just now. It will be used later, or in some case it's not used at all.
--   If it's used, it will be accessed several times, and there is no need to re-calculate that value will never be changed or shouldn't be re-calculated.
+-   If the value isn’t needed just now. It will be used later, or in some case it’s not used at all.
+-   If it’s used, it will be accessed several times, and there is no need to re-calculate that value will never be changed or shouldn’t be re-calculated.
 
-**Note:** This means that you shouldn't write a lazy getter for a property whose value you expect to change, because if the getter is lazy then it will not recalculate the value.
+**Note:** This means that you shouldn’t write a lazy getter for a property whose value you expect to change, because if the getter is lazy then it will not recalculate the value.
 
-Note that getters are not "lazy" or "memoized" by nature; you must implement this technique if you desire this behavior.
+Note that getters are not “lazy” or “memoized” by nature; you must implement this technique if you desire this behavior.
 
 In the following example, the object has a getter as its own property. On getting the property, the property is removed from the object and re-added, but implicitly as a data property this time. Finally, the value gets returned.
 
@@ -93,11 +97,11 @@ In the following example, the object has a getter as its own property. On gettin
 
 For Firefox code, see also the `XPCOMUtils.jsm` code module, which defines the `defineLazyGetter()` function.
 
-### `get` vs. `defineProperty`
+### `get` vs. `defineProperty`
 
 While using the `get` keyword and [`Object.defineProperty()`](../global_objects/object/defineproperty) have similar results, there is a subtle difference between the two when used on [`classes`](../classes).
 
-When using `get` the property will be defined on the instance's prototype, while using [`Object.defineProperty()`](../global_objects/object/defineproperty) the property will be defined on the instance it is applied to.
+When using `get` the property will be defined on the instance’s prototype, while using [`Object.defineProperty()`](../global_objects/object/defineproperty) the property will be defined on the instance it is applied to.
 
     class Example {
       get hello() {
@@ -119,12 +123,11 @@ When using `get` the property will be defined on the instance's prototype, while
     );
     // { configurable: true, enumerable: false, get: function get hello() { return 'world'; }, set: undefined }
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-method-definitions">ECMAScript (ECMA-262) 
-<br/>
-
-<span class="small">The definition of 'Method definitions' in that specification.</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript (ECMA-262)<br />
+</p><span class="small">The definition of ‘Method definitions’ in that specification.</span></td></tr></tbody></table>
 
 `get`
 
@@ -178,7 +181,8 @@ No
 
 5.0
 
-## See also
+See also
+--------
 
 -   [setter](set)
 -   [`delete`](../operators/delete)

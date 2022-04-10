@@ -1,94 +1,50 @@
----
-title: Sketch
-category: Apps
----
-
-## Shortcuts
+Shortcuts
+---------
 
 ### Insert
 
-| Shortcut | Description |
-| -------- | ----------- |
-| `V`      | Vector      |
-| `P`      | Pencil      |
-| `T`      | Text        |
-| `L`      | Line        |
-| `R`      | Rectangle   |
-| `O`      | Oval        |
-| `U`      | Rounded     |
+<table><thead><tr class="header"><th>Shortcut</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>V</code></td><td>Vector</td></tr><tr class="even"><td><code>P</code></td><td>Pencil</td></tr><tr class="odd"><td><code>T</code></td><td>Text</td></tr><tr class="even"><td><code>L</code></td><td>Line</td></tr><tr class="odd"><td><code>R</code></td><td>Rectangle</td></tr><tr class="even"><td><code>O</code></td><td>Oval</td></tr><tr class="odd"><td><code>U</code></td><td>Rounded</td></tr></tbody></table>
 
 {: .-shortcuts}
 
 ### Show
 
-| Shortcut | Description            |
-| -------- | ---------------------- |
-| `^G`     | Show grid              |
-| `^L`     | Show layout            |
-| `^P`     | Show pixels            |
-| `^H`     | Show selection handles |
-| `^R`     | Show rulers            |
+<table><thead><tr class="header"><th>Shortcut</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>^G</code></td><td>Show grid</td></tr><tr class="even"><td><code>^L</code></td><td>Show layout</td></tr><tr class="odd"><td><code>^P</code></td><td>Show pixels</td></tr><tr class="even"><td><code>^H</code></td><td>Show selection handles</td></tr><tr class="odd"><td><code>^R</code></td><td>Show rulers</td></tr></tbody></table>
 
 {: .-shortcuts}
 
 ### Sidebars
 
-| Shortcut | Description              |
-| -------- | ------------------------ |
-| `⌘⌥1`    | Toggle left (layers)     |
-| `⌘⌥2`    | Toggle right (inspector) |
-| `⌘⌥3`    | Toggle both              |
-| `⌘.`     | Presentation mode        |
+<table><thead><tr class="header"><th>Shortcut</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>⌘⌥1</code></td><td>Toggle left (layers)</td></tr><tr class="even"><td><code>⌘⌥2</code></td><td>Toggle right (inspector)</td></tr><tr class="odd"><td><code>⌘⌥3</code></td><td>Toggle both</td></tr><tr class="even"><td><code>⌘.</code></td><td>Presentation mode</td></tr></tbody></table>
 
 {: .-shortcuts}
 
 ### Zoom
 
-| Shortcut | Description             |
-| -------- | ----------------------- |
-| `⌘0`     | 100%                    |
-| `⌘1`     | Fit to screen           |
-| `⌘2`     | Fit selection to screen |
-| `⌘3`     | Center selection        |
+<table><thead><tr class="header"><th>Shortcut</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>⌘0</code></td><td>100%</td></tr><tr class="even"><td><code>⌘1</code></td><td>Fit to screen</td></tr><tr class="odd"><td><code>⌘2</code></td><td>Fit selection to screen</td></tr><tr class="even"><td><code>⌘3</code></td><td>Center selection</td></tr></tbody></table>
 
 {: .-shortcuts}
 
 ### Arrange
 
-| Shortcut       | Description         |
-| -------------- | ------------------- |
-| `⌘⌥↑` _/_ `↓`  | Forward or backward |
-| `^⌘⌥↑` _/_ `↓` | Front or back       |
+<table><thead><tr class="header"><th>Shortcut</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>⌘⌥↑</code> <em>/</em> <code>↓</code></td><td>Forward or backward</td></tr><tr class="even"><td><code>^⌘⌥↑</code> <em>/</em> <code>↓</code></td><td>Front or back</td></tr></tbody></table>
 
 {: .-shortcuts}
 
 ### Distribute
 
-| Shortcut | Description |
-| -------- | ----------- |
-| `^⌘H`    | Horizontal  |
-| `^⌘V`    | Vertical    |
+<table><thead><tr class="header"><th>Shortcut</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>^⌘H</code></td><td>Horizontal</td></tr><tr class="even"><td><code>^⌘V</code></td><td>Vertical</td></tr></tbody></table>
 
 {: .-shortcuts}
 
 ### Layers
 
-| Shortcut | Description  |
-| -------- | ------------ |
-| `⌘R`     | Rename layer |
-| `⌘F`     | Find layer   |
-| `⌘G`     | Group        |
-| `⌘⇧G`    | Ungroup      |
+<table><thead><tr class="header"><th>Shortcut</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>⌘R</code></td><td>Rename layer</td></tr><tr class="even"><td><code>⌘F</code></td><td>Find layer</td></tr><tr class="odd"><td><code>⌘G</code></td><td>Group</td></tr><tr class="even"><td><code>⌘⇧G</code></td><td>Ungroup</td></tr></tbody></table>
 
 {: .-shortcuts}
 
 ### Font
 
-| Shortcut       | Description    |
-| -------------- | -------------- |
-| `⌘⌥ +` _/_ `-` | Bigger/smaller |
-| `⌘⇧[`          | Left align     |
-| `⌘⇧\`          | Center align   |
-| `⌘⇧]`          | Right align    |
+<table><thead><tr class="header"><th>Shortcut</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>⌘⌥ +</code> <em>/</em> <code>-</code></td><td>Bigger/smaller</td></tr><tr class="even"><td><code>⌘⇧[</code></td><td>Left align</td></tr><tr class="odd"><td><code>⌘⇧\</code></td><td>Center align</td></tr><tr class="even"><td><code>⌘⇧]</code></td><td>Right align</td></tr></tbody></table>
 
 {: .-shortcuts}

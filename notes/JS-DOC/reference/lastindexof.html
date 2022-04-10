@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>lastindexof</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="array.prototype.lastindexof">Array.prototype.lastIndexOf()</h1>
+<p>The <code>lastIndexOf()</code> method returns the last index at which a given element can be found in the array, or -1 if it is not present. The array is searched backwards, starting at <code>fromIndex</code>.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>lastIndexOf(searchElement)
+lastIndexOf(searchElement, fromIndex)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>searchElement</code><br />
+Element to locate in the array.</p>
+<p><code>fromIndex</code> <span class="badge inline optional">Optional</span><br />
+The index at which to start searching backwards. Defaults to the array’s length minus one (<code>arr.length - 1</code>), i.e. the whole array will be searched. If the index is greater than or equal to the length of the array, the whole array will be searched. If negative, it is taken as the offset from the end of the array. Note that even when the index is negative, the array is still searched from back to front. If the calculated index is less than 0, -1 is returned, i.e. the array will not be searched.</p>
+<h3 id="return-value">Return value</h3>
+<p>The last index of the element in the array; <strong>-1</strong> if not found.</p>
+<h2 id="description">Description</h2>
+<p><code>lastIndexOf</code> compares <code>searchElement</code> to elements of the Array using <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#using_the_equality_operators">strict equality</a> (the same method used by the ===, or triple-equals, operator).</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-lastindexof">Using <code>lastIndexOf</code></h3>
+<p>The following example uses <code>lastIndexOf</code> to locate values in an array.</p>
+<pre><code>var numbers = [2, 5, 9, 2];
+numbers.lastIndexOf(2);     // 3
+numbers.lastIndexOf(7);     // -1
+numbers.lastIndexOf(2, 3);  // 3
+numbers.lastIndexOf(2, 2);  // 0
+numbers.lastIndexOf(2, -2); // 0
+numbers.lastIndexOf(2, -1); // 3</code></pre>
+<h3 id="finding-all-the-occurrences-of-an-element">Finding all the occurrences of an element</h3>
+<p>The following example uses <code>lastIndexOf</code> to find all the indices of an element in a given array, using <a href="push"><code>push</code></a> to add them to another array as they are found.</p>
+<pre><code>var indices = [];
+var array = [&#39;a&#39;, &#39;b&#39;, &#39;a&#39;, &#39;c&#39;, &#39;a&#39;, &#39;d&#39;];
+var element = &#39;a&#39;;
+var idx = array.lastIndexOf(element);
+while (idx != -1) {
+  indices.push(idx);
+  idx = (idx &gt; 0 ? array.lastIndexOf(element, idx - 1) : -1);
+}
+
+console.log(indices);
+// [4, 2, 0]</code></pre>
+<p>Note that we have to handle the case <code>idx == 0</code> separately here because the element will always be found regardless of the <code>fromIndex</code> parameter if it is the first element of the array. This is different from the <a href="indexof"><code>indexOf</code></a> method.</p>
+<h2 id="polyfill">Polyfill</h2>
+<p><code>lastIndexOf</code> was added to the ECMA-262 standard in the 5th edition; as such it may not be present in other implementations of the standard. You can work around this by inserting the following code at the beginning of your scripts, allowing use of <code>lastIndexOf</code> in implementations which do not natively support it. This algorithm is exactly the one specified in ECMA-262, 5th edition, assuming <a href="../object"><code>Object</code></a>, <a href="../typeerror"><code>TypeError</code></a>, <a href="../number"><code>Number</code></a>, <a href="../math/floor"><code>Math.floor</code></a>, <a href="../math/abs"><code>Math.abs</code></a>, and <a href="../math/min"><code>Math.min</code></a> have their original values.</p>
+<pre><code>// Production steps of ECMA-262, Edition 5, 15.4.4.15
+// Reference: https://es5.github.io/#x15.4.4.15
+if (!Array.prototype.lastIndexOf) {
+  Array.prototype.lastIndexOf = function(searchElement /*, fromIndex*/) {
+    &#39;use strict&#39;;
+
+    if (this === void 0 || this === null) {
+      throw new TypeError();
+    }
+
+    var n, k,
+      t = Object(this),
+      len = t.length &gt;&gt;&gt; 0;
+    if (len === 0) {
+      return -1;
+    }
+
+    n = len - 1;
+    if (arguments.length &gt; 1) {
+      n = Number(arguments[1]);
+      if (n != n) {
+        n = 0;
+      }
+      else if (n != 0 &amp;&amp; n != (1 / 0) &amp;&amp; n != -(1 / 0)) {
+        n = (n &gt; 0 || -1) * Math.floor(Math.abs(n));
+      }
+    }
+
+    for (k = n &gt;= 0 ? Math.min(n, len - 1) : len - Math.abs(n); k &gt;= 0; k--) {
+      if (k in t &amp;&amp; t[k] === searchElement) {
+        return k;
+      }
+    }
+    return -1;
+  };
+}</code></pre>
+<p>Again, note that this implementation aims for absolute compatibility with <code>lastIndexOf</code> in Firefox and the SpiderMonkey JavaScript engine, including in several cases which are arguably edge cases. If you intend to use this in real-world applications, you may be able to calculate <code>from</code> with less complicated code if you ignore those cases.</p>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-array.prototype.lastindexof">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-array.prototype.lastindexof</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>lastIndexOf</code></p>
+<p>1</p>
+<p>12</p>
+<p>1.5</p>
+<p>9</p>
+<p>9.5</p>
+<p>3</p>
+<p>≤37</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="indexof"><code>Array.prototype.indexOf()</code></a></li>
+<li><a href="../typedarray/lastindexof"><code>TypedArray.prototype.lastIndexOf()</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/lastIndexOf" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/lastIndexOf</a></p>
+</body>
+</html>

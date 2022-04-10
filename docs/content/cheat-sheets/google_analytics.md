@@ -1,22 +1,11 @@
----
-title: title
-subtitle: subtitle
-date: '2022-01-03'
-thumb_img_alt: lorem-ipsum
-content_img_alt: lorem-ipsum
-excerpt: lorem-ipsum
-seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
-template: post
-thumb_img_path: images/css-72a655a7.jpg
----
+subtitle
 
----
+2022-01-03
 
-## title: Google Analytics
+------------------------------------------------------------------------
+
+title: Google Analytics
+-----------------------
 
 ### Pageview
 
@@ -43,5 +32,4 @@ thumb_img_path: images/css-72a655a7.jpg
 
     // Scope = 1 (visitor), 2 (session), 3 (page, default)
 
-https://developers.google.com/analytics/devguides/collection/gajs/gaTrackingCustomVariables
-https://developers.google.com/analytics/devguides/collection/gajs/eventTrackerGuide
+https://developers.google.com/analytics/devguides/collection/gajs/gaTrackingCustomVariables https://developers.google.com/analytics/devguides/collection/gajs/eventTrackerGuide

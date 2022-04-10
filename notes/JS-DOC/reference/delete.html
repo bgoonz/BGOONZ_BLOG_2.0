@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>delete</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="delete-operator">delete operator</h1>
+<p>The JavaScript <code>delete</code> removes a property from an object; if no more references to the same property are held, it is eventually released automatically.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>delete expression</code></pre>
+<p>Where <code>expression</code> should evaluate to a <a href="https://developer.mozilla.org/en-US/docs/Glossary/property/JavaScript">property</a> reference, e.g.:</p>
+<pre><code>delete object.property
+delete object[&#39;property&#39;]</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>object</code><br />
+The name of an object, or an expression evaluating to an object.</p>
+<p><code>property</code><br />
+The property to delete.</p>
+<h3 id="return-value">Return value</h3>
+<p><code>true</code> for all cases except when the property is an <a href="../global_objects/object/hasownproperty"><code>own</code></a> <a href="../errors/cant_delete"><code>non-configurable</code></a> property, in which case, <code>false</code> is returned in non-strict mode.</p>
+<h3 id="exceptions">Exceptions</h3>
+<p>Throws <a href="../global_objects/typeerror"><code>TypeError</code></a> in <a href="../strict_mode"><code>strict mode</code></a> if the property is an own non-configurable property.</p>
+<h2 id="description">Description</h2>
+<p>Unlike what common belief suggests (perhaps due to other programming languages like <a href="https://docs.microsoft.com/en-us/cpp/cpp/delete-operator-cpp?view=vs-2019">delete in C++</a>), the <code>delete</code> operator has <strong>nothing</strong> to do with directly freeing memory. Memory management is done indirectly via breaking references. See the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management">memory management</a> page for more details.</p>
+<p>The <code>delete</code> operator removes a given property from an object. On successful deletion, it will return <code>true</code>, else <code>false</code> will be returned.</p>
+<p>However, it is important to consider the following scenarios:</p>
+<ul>
+<li>If the property which you are trying to delete does not exist, <code>delete</code> will not have any effect and will return <code>true</code>.</li>
+<li>If a property with the same name exists on the object’s prototype chain, then, after deletion, the object will use the property from the prototype chain (in other words, <code>delete</code> only has an effect on own properties).</li>
+<li>Any property declared with <a href="../statements/var"><code>var</code></a> cannot be deleted from the global scope or from a function’s scope.
+<ul>
+<li>As such, <code>delete</code> cannot delete any functions in the global scope (whether this is part from a function definition or a function expression).</li>
+<li>Functions which are part of an object (apart from the global scope) can be deleted with <code>delete</code>.</li>
+</ul></li>
+<li>Any property declared with <a href="../statements/let"><code>let</code></a> or <a href="../statements/const"><code>const</code></a> cannot be deleted from the scope within which they were defined.</li>
+<li>Non-configurable properties cannot be removed. This includes properties of built-in objects like <a href="../global_objects/math"><code>Math</code></a>, <a href="../global_objects/array"><code>Array</code></a>, <a href="../global_objects/object"><code>Object</code></a> and properties that are created as non-configurable with methods like <a href="../global_objects/object/defineproperty"><code>Object.defineProperty()</code></a>.</li>
+</ul>
+<p>The following snippet gives a simple example:</p>
+<pre><code>var Employee = {
+  age: 28,
+  name: &#39;abc&#39;,
+  designation: &#39;developer&#39;
+}
+
+console.log(delete Employee.name);   // returns true
+console.log(delete Employee.age);    // returns true
+
+// When trying to delete a property that does
+// not exist, true is returned
+console.log(delete Employee.salary); // returns true</code></pre>
+<h3 id="non-configurable-properties">Non-configurable properties</h3>
+<p>When a property is marked as non-configurable, <code>delete</code> won’t have any effect, and will return <code>false</code>. In strict mode this will raise a <code>TypeError</code>.</p>
+<pre><code>var Employee = {};
+Object.defineProperty(Employee, &#39;name&#39;, {configurable: false});
+
+console.log(delete Employee.name);  // returns false</code></pre>
+<p><a href="../statements/var"><code>var</code></a>, <a href="../statements/let"><code>let</code></a>, and <a href="../statements/const"><code>const</code></a> create non-configurable properties that cannot be deleted with the <code>delete</code> operator:</p>
+<pre><code>var nameOther = &#39;XYZ&#39;;
+
+// We can access this global property using:
+Object.getOwnPropertyDescriptor(window, &#39;nameOther&#39;);
+
+// output: Object {value: &quot;XYZ&quot;,
+//                  writable: true,
+//                  enumerable: true,
+//                  configurable: false}
+
+// Since &quot;nameOther&quot; is added using with the
+// var keyword, it is marked as &quot;non-configurable&quot;
+
+delete nameOther;   // return false</code></pre>
+<p>In strict mode, this would have raised an exception.</p>
+<h3 id="strict-vs.-non-strict-mode">Strict vs. non-strict mode</h3>
+<p>When in strict mode, if <code>delete</code> is used on a direct reference to a variable, a function argument or a function name, it will throw a <a href="../global_objects/syntaxerror"><code>SyntaxError</code></a><strong>.</strong> Therefore, to avoid syntax errors in strict mode, you must use the <code>delete</code> operator in the form of <code>delete object.property</code> or <code>delete object['property']</code>.</p>
+<pre><code>Object.defineProperty(globalThis, &#39;variable1&#39;, { value: 10, configurable: true, });
+Object.defineProperty(globalThis, &#39;variable2&#39;, { value: 10, configurable: false, });
+
+// SyntaxError in strict mode.
+console.log(delete variable1); // true
+
+// SyntaxError in strict mode.
+console.log(delete variable2); // false
+
+function func(param) {
+  // SyntaxError in strict mode.
+  console.log(delete param); // false
+}
+
+// SyntaxError in strict mode.
+console.log(delete func); // false</code></pre>
+<h3 id="cross-browser-notes">Cross-browser notes</h3>
+<p>Although ECMAScript makes iteration order of objects implementation-dependent, it may appear that all major browsers support an iteration order based on the earliest added property coming first (at least for properties not on the prototype). However, in the case of Internet Explorer, when one uses <code>delete</code> on a property, some confusing behavior results, preventing other browsers from using simple objects like object literals as ordered associative arrays. In Explorer, while the property <em>value</em> is indeed set to <code>undefined</code>, if one later adds back a property with the same name, the property will be iterated in its <em>old</em> position–not at the end of the iteration sequence as one might expect after having deleted the property and then added it back.</p>
+<p>If you want to use an ordered associative array in a cross-browser environment, use a <a href="../global_objects/map"><code>Map</code></a> object if available, or simulate this structure with two separate arrays (one for the keys and the other for the values), or build an array of single-property objects, etc.</p>
+<h2 id="examples">Examples</h2>
+<pre><code>// Creates the property adminName on the global scope.
+adminName = &#39;xyz&#39;;
+
+// Creates the property empCount on the global scope.
+// Since we are using var, this is marked as non-configurable. The same is true of let and const.
+var empCount = 43;
+
+EmployeeDetails = {
+  name: &#39;xyz&#39;,
+  age: 5,
+  designation: &#39;Developer&#39;
+};
+
+// adminName is a property of the global scope.
+// It can be deleted since it is created without var,
+// and is therefore configurable.
+delete adminName;       // returns true
+
+// On the contrary, empCount is not configurable
+// since var was used.
+delete empCount;       // returns false
+
+// delete can be used to remove properties from objects.
+delete EmployeeDetails.name; // returns true
+
+// Even when the property does not exist, delete returns &quot;true&quot;.
+delete EmployeeDetails.salary; // returns true
+
+// delete does not affect built-in static properties.
+delete Math.PI; // returns false
+
+// EmployeeDetails is a property of the global scope.
+// Since it was defined without &quot;var&quot;, it is marked configurable.
+delete EmployeeDetails;   // returns true
+
+function f() {
+  var z = 44;
+
+  // delete doesn&#39;t affect local variable names
+  delete z;     // returns false
+}</code></pre>
+<h3 id="delete-and-the-prototype-chain"><code>delete</code> and the prototype chain</h3>
+<p>In the following example, we delete an own property of an object while a property with the same name is available on the prototype chain:</p>
+<pre><code>function Foo() {
+  this.bar = 10;
+}
+
+Foo.prototype.bar = 42;
+
+var foo = new Foo();
+
+// foo.bar is associated with the
+// own property.
+console.log(foo.bar); // 10
+
+// Delete the own property within the
+// foo object.
+delete foo.bar; // returns true
+
+// foo.bar is still available in the
+// prototype chain.
+console.log(foo.bar); // 42
+
+// Delete the property on the prototype.
+delete Foo.prototype.bar; // returns true
+
+// The &quot;bar&quot; property can no longer be
+// inherited from Foo since it has been
+// deleted.
+console.log(foo.bar); // undefined</code></pre>
+<h3 id="deleting-array-elements">Deleting array elements</h3>
+<p>When you delete an array element, the array <code>length</code> is not affected. This holds even if you delete the last element of the array.</p>
+<p>When the <code>delete</code> operator removes an array element, that element is no longer in the array. In the following example, <code>trees[3]</code> is removed with <code>delete</code>.</p>
+<pre><code>var trees = [&#39;redwood&#39;, &#39;bay&#39;, &#39;cedar&#39;, &#39;oak&#39;, &#39;maple&#39;];
+delete trees[3];
+if (3 in trees) {
+    // this is not executed
+}</code></pre>
+<p>If you want an array element to exist but have an undefined value, use the <code>undefined</code> value instead of the <code>delete</code> operator. In the following example, <code>trees[3]</code> is assigned the value <code>undefined</code>, but the array element still exists:</p>
+<pre><code>var trees = [&#39;redwood&#39;, &#39;bay&#39;, &#39;cedar&#39;, &#39;oak&#39;, &#39;maple&#39;];
+trees[3] = undefined;
+if (3 in trees) {
+    // this is executed
+}</code></pre>
+<p>If instead, you want to remove an array element by changing the contents of the array, use the <a href="../global_objects/array/splice"><code>splice()</code></a> method. In the following example, <code>trees[3]</code> is removed from the array completely using <a href="../global_objects/array/splice"><code>splice()</code></a>:</p>
+<pre><code>var trees = [&#39;redwood&#39;, &#39;bay&#39;, &#39;cedar&#39;, &#39;oak&#39;, &#39;maple&#39;];
+trees.splice(3,1);
+console.log(trees); // [&quot;redwood&quot;, &quot;bay&quot;, &quot;cedar&quot;, &quot;maple&quot;]</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-delete-operator">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-delete-operator</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>delete</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>4</p>
+<p>9</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="http://perfectionkills.com/understanding-delete/">In depth analysis on delete</a></li>
+<li><a href="../global_objects/reflect/deleteproperty"><code>Reflect.deleteProperty()</code></a></li>
+<li><a href="../global_objects/map/delete"><code>Map.prototype.delete()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete</a></p>
+</body>
+</html>

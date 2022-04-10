@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>getint8</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="dataview.prototype.getint8">DataView.prototype.getInt8()</h1>
+<p>The <code>getInt8()</code> method gets a signed 8-bit integer (byte) at the specified byte offset from the start of the <a href="../dataview"><code>DataView</code></a>.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>getInt8(byteOffset)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>byteOffset</code><br />
+The offset, in byte, from the start of the view where to read the data.</p>
+<h3 id="return-value">Return value</h3>
+<p>A signed 8-bit integer number.</p>
+<h3 id="errors-thrown">Errors thrown</h3>
+<p><a href="../rangeerror"><code>RangeError</code></a><br />
+Thrown if the <code>byteOffset</code> is set such as it would read beyond the end of the view.</p>
+<h2 id="description">Description</h2>
+<p>There is no alignment constraint; multi-byte values may be fetched from any offset.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-the-getint8-method">Using the getInt8 method</h3>
+<pre><code>var buffer = new ArrayBuffer(8);
+var dataview = new DataView(buffer);
+dataview.getInt8(1); // 0</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-dataview.prototype.getint8">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-dataview.prototype.getint8</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>getInt8</code></p>
+<p>9</p>
+<p>12</p>
+<p>15</p>
+<p>10</p>
+<p>12.1</p>
+<p>5.1</p>
+<p>4</p>
+<p>18</p>
+<p>15</p>
+<p>12.1</p>
+<p>4.2</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../dataview"><code>DataView</code></a></li>
+<li><a href="../arraybuffer"><code>ArrayBuffer</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/getInt8" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/getInt8</a></p>
+</body>
+</html>

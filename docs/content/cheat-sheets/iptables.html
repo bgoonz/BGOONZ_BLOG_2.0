@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>iptables</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="to-show-hit-for-rules-with-auto-refresh">To show hit for rules with auto refresh:</h1>
+<p>watch –interval 0 ‘iptables -nvL | grep -v “0 0”’</p>
+<h1 id="to-show-hit-for-rule-with-auto-refresh-and-highlight-any-changes-since-the-last-refresh">To show hit for rule with auto refresh and highlight any changes since the last refresh:</h1>
+<p>watch -d -n 2 iptables -nvL</p>
+<h1 id="to-block-port-902-and-hide-this-port-from-nmap">To block port 902 and hide this port from nmap:</h1>
+<p>iptables -A INPUT -i eth0 -p tcp –dport 902 -j REJECT –reject-with icmp-port-unreachable</p>
+<h1 id="note-reject-with-accept">Note, –reject-with accept:</h1>
+<h1 id="icmp-net-unreachable">icmp-net-unreachable</h1>
+<h1 id="icmp-host-unreachable">icmp-host-unreachable</h1>
+<h1 id="icmp-port-unreachable---hide-a-port-to-nmap">icmp-port-unreachable &lt;- Hide a port to nmap</h1>
+<h1 id="icmp-proto-unreachable">icmp-proto-unreachable</h1>
+<h1 id="icmp-net-prohibited">icmp-net-prohibited</h1>
+<h1 id="icmp-host-prohibited-or">icmp-host-prohibited or</h1>
+<h1 id="icmp-admin-prohibited">icmp-admin-prohibited</h1>
+<h1 id="tcp-reset">tcp-reset</h1>
+<h1 id="to-add-a-comment-to-a-rule">To add a comment to a rule:</h1>
+<p>iptables … -m comment –comment “This rule is here for this reason”</p>
+<h1 id="to-remove-or-insert-a-rule">To remove or insert a rule:</h1>
+<h1 id="show-all-rules">1) Show all rules</h1>
+<p>iptables -L INPUT –line-numbers</p>
+<h1 id="or-iptables--nl-line-numbers">OR iptables -nL –line-numbers</h1>
+<h1 id="chain-input-policy-accept">Chain INPUT (policy ACCEPT)</h1>
+<h1 id="num-target-prot-opt-source-destination">num target prot opt source destination</h1>
+<h1 id="accept-udp-anywhere-anywhere-udp-dptdomain">1 ACCEPT udp – anywhere anywhere udp dpt:domain</h1>
+<h1 id="accept-tcp-anywhere-anywhere-tcp-dptdomain">2 ACCEPT tcp – anywhere anywhere tcp dpt:domain</h1>
+<h1 id="accept-udp-anywhere-anywhere-udp-dptbootps">3 ACCEPT udp – anywhere anywhere udp dpt:bootps</h1>
+<h1 id="accept-tcp-anywhere-anywhere-tcp-dptbootps">4 ACCEPT tcp – anywhere anywhere tcp dpt:bootps</h1>
+<h1 id="a-remove--d-a-rule.-here-an-input-rule">2.a) REMOVE (-D) a rule. (here an INPUT rule)</h1>
+<p>iptables -D INPUT 2</p>
+<h1 id="b-or-insert-a-rule.">2.b) OR INSERT a rule.</h1>
+<p>iptables -I INPUT {LINE_NUMBER} -i eth1 -p tcp –dport 21 -s 123.123.123.123 -j ACCEPT -m comment –comment “This rule is here for this reason”</p>
+</body>
+</html>

@@ -1,25 +1,26 @@
-# PostgreSQL In 43 Commands Or Less
+PostgreSQL In 43 Commands Or Less
+=================================
 
 In database jargon, PostgreSQL uses a client/server model. A PostgreSQL session consists of the following cooperating processes (programs):
 
----
+------------------------------------------------------------------------
 
 ### PostgreSQL In 43 Commands Or Less
 
 #### In database jargon, PostgreSQL uses a client/server model. A PostgreSQL session consists of the following cooperating processes (programs):
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*zo9j6MVAbEaxG8Be.gif" class="graf-image" /></figure>-   <span id="d5d8">A server process, which manages the database files, accepts connections to the database from client applications, and performs database actions on behalf of the clients. The database server program is called `postgres`.</span>
--   <span id="91d1">The user's client (frontend) application that wants to perform database operations. Client applications can be very diverse in nature: a client could be a text-oriented tool, a graphical application, a web server that accesses the database to display web pages, or a specialized database maintenance tool. Some client applications are supplied with the PostgreSQL distribution; most are developed by users.</span>
+-   <span id="91d1">The user’s client (frontend) application that wants to perform database operations. Client applications can be very diverse in nature: a client could be a text-oriented tool, a graphical application, a web server that accesses the database to display web pages, or a specialized database maintenance tool. Some client applications are supplied with the PostgreSQL distribution; most are developed by users.</span>
 
 As is typical of client/server applications, the client and the server can be on different hosts. In that case they communicate over a TCP/IP network connection. You should keep this in mind, because the files that can be accessed on a client machine might not be accessible (or might only be accessible using a different file name) on the database server machine.
 
-The PostgreSQL server can handle multiple concurrent connections from clients. To achieve this it starts ("forks") a new process for each connection. From that point on, the client and the new server process communicate without intervention by the original `postgres` process. Thus, the master server process is always running, waiting for client connections, whereas client and associated server processes come and go. (All of this is of course invisible to the user. We only mention it here for completeness.)
+The PostgreSQL server can handle multiple concurrent connections from clients. To achieve this it starts (“forks”) a new process for each connection. From that point on, the client and the new server process communicate without intervention by the original `postgres` process. Thus, the master server process is always running, waiting for client connections, whereas client and associated server processes come and go. (All of this is of course invisible to the user. We only mention it here for completeness.)
 
----
+------------------------------------------------------------------------
 
-> MAIN PART OF ARTICLE IS BELOW DATABASE PRIMER SECTION… YOU CAN TELL YOU'VE GOTTEN TO THE MAIN CONTENT WHEN YOU SEE A NUMBERED LIST!
+> MAIN PART OF ARTICLE IS BELOW DATABASE PRIMER SECTION… YOU CAN TELL YOU’VE GOTTEN TO THE MAIN CONTENT WHEN YOU SEE A NUMBERED LIST!
 
-> IT'S ALMOST EXACTLY HALFWAY DOWN THIS PAGE
+> IT’S ALMOST EXACTLY HALFWAY DOWN THIS PAGE
 
 ### Database Primer:
 
@@ -53,7 +54,7 @@ Log into PSQL
     psql
 
 Create a Super User named Berber  
-create user berber with superuser password 'good-cat';
+create user berber with superuser password ‘good-cat’;
 
 Quit SQL
 
@@ -97,7 +98,7 @@ Create database for a normal user as your super user.
     create database berber_db with owner berber;.
 
 The normal user will have full control over this granted DB.  
-Can't create duplicate usernames.  
+Can’t create duplicate usernames.  
 Get rid of database
 
     drop database
@@ -131,7 +132,7 @@ Create Pet Table w/ references to people table
 -   <span id="01f7">Primary Key indicates the most significant way to identify each row of data.</span>
 -   <span id="b8e1">References keep our database clean, using foreign keys maintains our database integrity.</span>
 
----
+------------------------------------------------------------------------
 
 ### What is SQL?
 
@@ -144,17 +145,17 @@ SQL is a powerful language where we can perform a wide range of operations:
 -   <span id="5389">insert, update, and delete records in a database (DML operations)</span>
 -   <span id="f62e">create new objects in a database (DDL operations)</span>
 -   <span id="d790">set permissions on tables, procedures, functions, and views</span>
--   <span id="ebab">and much, much more...</span>
+-   <span id="ebab">and much, much more…</span>
 
 Data is absolutely everywhere. When you visited this web page, you generated data. When you took a note of your to-dos for the day in your reminders, you generated data.
 
-All of this data needs to go somewhere! That's where databases come in. Databases store information in a structured way so that it is accessible by <a href="https://computersciencehero.com/" class="markup--anchor markup--p-anchor">computer programs</a>. Programmers use a tool called Structured Query Language (SQL) to access and manipulate databases.
+All of this data needs to go somewhere! That’s where databases come in. Databases store information in a structured way so that it is accessible by <a href="https://computersciencehero.com/" class="markup--anchor markup--p-anchor">computer programs</a>. Programmers use a tool called Structured Query Language (SQL) to access and manipulate databases.
 
-In this guide, we're going to provide a brief overview of SQL to help you level up your skills! Without further ado, let's get started!
+In this guide, we’re going to provide a brief overview of SQL to help you level up your skills! Without further ado, let’s get started!
 
 ### More On SQL?
 
-SQL was invented in the early 1970s by the IBM researchers Donald Chamberlin and Raymond Boyce. The technology may be old but it's still a crucial part of interacting with databases.
+SQL was invented in the early 1970s by the IBM researchers Donald Chamberlin and Raymond Boyce. The technology may be old but it’s still a crucial part of interacting with databases.
 
 SQL is used to retrieve data from databases, insert records into a database, update a database, and to control the permissions in a database.
 
@@ -162,21 +163,19 @@ SQL is used with Relational Database Management Systems, or RDBMS. These are dat
 
 <a href="https://careerkarma.com/careers/data-science/" class="markup--anchor markup--p-anchor">Data scientists</a>, <a href="https://careerkarma.com/careers/database-administration/" class="markup--anchor markup--p-anchor">database administrators</a>, <a href="https://studydatascience.org/how-to-become-data-analyst/" class="markup--anchor markup--p-anchor">data analysts</a>, <a href="https://studydatascience.org/how-to-become-business-analyst/" class="markup--anchor markup--p-anchor">business analysts</a> and <a href="https://careerkarma.com/careers/web-development/" class="markup--anchor markup--p-anchor">back-end web developers</a> are several of the many types of technologists who use databases in their work.
 
-### Here's a guide on how to get setup with PSQL:
+### Here’s a guide on how to get setup with PSQL:
 
-<a href="https://bryanguner.medium.com/postgresql-setup-for-windows-wsl-ubuntu-801672ab7089" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/postgresql-setup-for-windows-wsl-ubuntu-801672ab7089"><strong>PostgreSQL Setup For Windows &amp; WSL/Ubuntu</strong>
-<br/>
+**PostgreSQL Setup For Windows & WSL/Ubuntu**  
 
-<em>If you follow this guide to a tee… you will install PostgreSQL itself on your Windows installation. Then, you will…</em><a href="https://bryanguner.medium.com/postgresql-setup-for-windows-wsl-ubuntu-801672ab7089" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*If you follow this guide to a tee… you will install PostgreSQL itself on your Windows installation. Then, you will…*<a href="https://bryanguner.medium.com/postgresql-setup-for-windows-wsl-ubuntu-801672ab7089" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-### Here's a Cheatsheet I made:
+### Here’s a Cheatsheet I made:
 
-<a href="https://medium.com/codex/postgresql-cheat-sheet-718b813d3e31" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/codex/postgresql-cheat-sheet-718b813d3e31"><strong>Postgresql Cheat Sheet</strong>
-<br/>
+**Postgresql Cheat Sheet**  
 
-<em>PostgreSQL commands</em>medium.com</a><a href="https://medium.com/codex/postgresql-cheat-sheet-718b813d3e31" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*PostgreSQL commands*medium.com<a href="https://medium.com/codex/postgresql-cheat-sheet-718b813d3e31" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
----
+------------------------------------------------------------------------
 
 ### Inserting Data into a Database
 
@@ -198,7 +197,7 @@ The <a href="https://careerkarma.com/blog/sql-select/" class="markup--anchor mar
 
 The <a href="https://careerkarma.com/blog/sql-where/" class="markup--anchor markup--p-anchor">WHERE</a> statement allows you to select a record based on a condition.
 
-For instance, you could select all of the names in an Employees table that start with the letter "B". You could select all the people in an Employees table who have worked for a business for at least four years.
+For instance, you could select all of the names in an Employees table that start with the letter “B”. You could select all the people in an Employees table who have worked for a business for at least four years.
 
 ### Ordering Data
 
@@ -226,7 +225,7 @@ The <a href="https://careerkarma.com/blog/sql-update/" class="markup--anchor mar
 
 The <a href="https://careerkarma.com/blog/sql-delete-row/" class="markup--anchor markup--p-anchor">DELETE</a> statement removes one or more rows from a table. By default, this command deletes all the records in a table. The DELETE statement is usually used with a WHERE statement so that only particular records are deleted.
 
-_The SQL ALTER TABLE statement adds, changes, or removes a column in a table. This statement lets you modify a table after it has been created, even if the table stores records._
+*The SQL ALTER TABLE statement adds, changes, or removes a column in a table. This statement lets you modify a table after it has been created, even if the table stores records.*
 
 You may decide that you need to make a change to an SQL table. For instance, you may want to rename a column or add a new column to the table. These changes are all possible with the SQL ALTER TABLE command.
 
@@ -240,13 +239,13 @@ The ALTER TABLE command allows you to change an existing table by:
 -   <span id="c667">Changing a data type.</span>
 -   <span id="64bf">Renaming a column.</span>
 
-_There is no SQL ADD COLUMN statement. To add a column to an SQL table, you must use the ALTER TABLE ADD syntax. ALTER TABLE lets you add, delete, or modify columns in a table._
+*There is no SQL ADD COLUMN statement. To add a column to an SQL table, you must use the ALTER TABLE ADD syntax. ALTER TABLE lets you add, delete, or modify columns in a table.*
 
-After you have created a table in _SQL_, you may realize that you forgot to add in a specific column that you need. For example, say you may have created a database to store a list of suppliers. Maybe you forgot to include a field to store the category of goods the supplier offers.
+After you have created a table in *SQL*, you may realize that you forgot to add in a specific column that you need. For example, say you may have created a database to store a list of suppliers. Maybe you forgot to include a field to store the category of goods the supplier offers.
 
-In these situations, you can use the _SQL ALTER TABLE_ statement to amend an existing table. This statement allows you to add a column, change a column, or delete a column.
+In these situations, you can use the *SQL ALTER TABLE* statement to amend an existing table. This statement allows you to add a column, change a column, or delete a column.
 
-Below is an _SQL_ command that will create an employee database that stores three columns. This database stores name of an employee, their title, and the branch for which they work.
+Below is an *SQL* command that will create an employee database that stores three columns. This database stores name of an employee, their title, and the branch for which they work.
 
     CREATE TABLE employees (
         name VARCHAR(50) NOT NULL,
@@ -254,7 +253,7 @@ Below is an _SQL_ command that will create an employee database that stores thre
        branch VARCHAR(25) NOT NULL
     );
 
-But what if we've forgotten to add a column? Say we need to add a column that states whether an employee is on probation. That's where the _ALTER TABLE_ statement comes in.
+But what if we’ve forgotten to add a column? Say we need to add a column that states whether an employee is on probation. That’s where the *ALTER TABLE* statement comes in.
 
 ### SQL Add Column
 
@@ -262,11 +261,11 @@ To perform an SQL add column operation, use the ALTER TABLE ADD command. This co
 
 ### SQL UNION:
 
-When you're querying a database, you may want to combine the result of two or more `SELECT` statements. For example, you may want to get a list of the cities in which your customers are based, and the cities in which your business has branches. You could run two queries to achieve this goal, but you may want to have a result in one query.
+When you’re querying a database, you may want to combine the result of two or more `SELECT` statements. For example, you may want to get a list of the cities in which your customers are based, and the cities in which your business has branches. You could run two queries to achieve this goal, but you may want to have a result in one query.
 
-That's where the `SQL UNION` operator comes in. The `UNION` clause can be used to combine the results of two or more `SELECT` queries into a single result set.
+That’s where the `SQL UNION` operator comes in. The `UNION` clause can be used to combine the results of two or more `SELECT` queries into a single result set.
 
-In this tutorial, we are going to break down the basics of the `SQL UNION` operator and discuss where you may want to use this command when you're working with a database.
+In this tutorial, we are going to break down the basics of the `SQL UNION` operator and discuss where you may want to use this command when you’re working with a database.
 
 ### Query Refresher
 
@@ -276,7 +275,7 @@ Here is the general syntax for an `SQL` query:
 
     SELECT column_name FROM table_name WHERE your_condititions_are_met;
 
-Here's an example of an `SQL` query that returns a list of all employee names:
+Here’s an example of an `SQL` query that returns a list of all employee names:
 
     SELECT name FROM employees;
 
@@ -302,12 +301,12 @@ The `SQL UNION` operator can be used to combine the results of two or more queri
 
 In order to use the `UNION` operator, two conditions must be met. Firstly, the data types of the new columns should be compatible—if a salary is an integer in one table and a float in the other, the union would not work. Secondly, the number and order of the columns must be the same in your queries.
 
-Here's the syntax for an `SQL UNION` query:
+Here’s the syntax for an `SQL UNION` query:
 
     SELECT column_name FROM table1_name
     UNION SELECT column_name FROM table2_name;
 
-Let's use an example to illustrate how the `SQL UNION` operator works. Let's say that we are a business that needs to send an announcement to all of our customers. We also want all employees to be sent this announcement so they are aware of what is going on.
+Let’s use an example to illustrate how the `SQL UNION` operator works. Let’s say that we are a business that needs to send an announcement to all of our customers. We also want all employees to be sent this announcement so they are aware of what is going on.
 
 ### SQL Aggregate Functions:
 
@@ -321,7 +320,7 @@ Here is a list of the aggregate functions in SQL you can use:
 -   <span id="e4fa">MIN</span>
 -   <span id="ffb1">MAX</span>
 
-Let's walk through each of these individually. We're going to be referring to a database of employees throughout this tutorial.
+Let’s walk through each of these individually. We’re going to be referring to a database of employees throughout this tutorial.
 
 Aggregate functions are used at the beginning of the <a href="https://careerkarma.com/blog/sql-select/" class="markup--anchor markup--p-anchor">SQL SELECT statement</a>.
 
@@ -329,21 +328,21 @@ If you query both a column and an aggregate function in the same SELECT statemen
 
 ### SQL Subquery
 
-_An SQL subquery is a query inside another query. It is used in the WHERE or HAVING clause of an SQL statement. Subqueries let you specify the results of one query as an argument in another query._
+*An SQL subquery is a query inside another query. It is used in the WHERE or HAVING clause of an SQL statement. Subqueries let you specify the results of one query as an argument in another query.*
 
-When you're writing an _SQL_ query, you may want to specify a parameter based on the result of another query. For example, say you have a list of customers. You may want to get a list of customers who have placed orders worth a value over a certain amount. Order and customer information is stored within a different table.
+When you’re writing an *SQL* query, you may want to specify a parameter based on the result of another query. For example, say you have a list of customers. You may want to get a list of customers who have placed orders worth a value over a certain amount. Order and customer information is stored within a different table.
 
-That's where the _SQL subquery_ operation comes in. _Subqueries_, also known as nested queries, are _SELECT_ queries within the _WHERE_ clause of another _SQL_ query. The main _SQL_ query then uses the result of the subquery.
+That’s where the *SQL subquery* operation comes in. *Subqueries*, also known as nested queries, are *SELECT* queries within the *WHERE* clause of another *SQL* query. The main *SQL* query then uses the result of the subquery.
 
----
+------------------------------------------------------------------------
 
 ### SQL query examples
 
-Now let's explore some examples of common and useful PostgreSQL queries that can be used in various situations.
+Now let’s explore some examples of common and useful PostgreSQL queries that can be used in various situations.
 
 From <a href="https://www.postgresql.org/docs/13/app-psql.html" class="markup--anchor markup--p-anchor">PSQL DOCS:</a>
 
----
+------------------------------------------------------------------------
 
 ### MAIN ARTICLE CONTENT:
 
@@ -382,7 +381,7 @@ The <a href="https://www.postgresql.org/docs/12/sql-select.html" class="markup--
 
 ### 4. UPDATE query in PostgreSQL
 
-<a href="https://www.postgresql.org/docs/12/sql-update.html" class="markup--anchor markup--p-anchor">UPDATE</a> is used to make updates to the data or row(s) of a database table. In the example below we use UPDATE to change the age of a person whose name is 'PQR':
+<a href="https://www.postgresql.org/docs/12/sql-update.html" class="markup--anchor markup--p-anchor">UPDATE</a> is used to make updates to the data or row(s) of a database table. In the example below we use UPDATE to change the age of a person whose name is ‘PQR’:
 
     postgres=# update dummy_table set age=50 where name='PQR';
             UPDATE 1
@@ -395,7 +394,7 @@ The <a href="https://www.postgresql.org/docs/12/sql-select.html" class="markup--
             PQR  | location-D |  50
             (4 rows)
 
-Next, we'll use the UPDATE command to change the name and age of a person whose address is 'location-D':
+Next, we’ll use the UPDATE command to change the name and age of a person whose address is ‘location-D’:
 
     postgres=# update dummy_table set name='GHI',age=54 where address='location-D';
     UPDATE 1
@@ -410,7 +409,7 @@ Next, we'll use the UPDATE command to change the name and age of a person whose 
 
     postgres=#
 
-If we want to modify all the values in the address and age columns in dummy_table, then we do not need to use the WHERE clause. The UPDATE query would look like this:
+If we want to modify all the values in the address and age columns in dummy\_table, then we do not need to use the WHERE clause. The UPDATE query would look like this:
 
     postgres=# update dummy_table set age=54,address='location-X';
     UPDATE 4
@@ -437,7 +436,7 @@ A RETURNING clause returns the updated rows. This is optional in UPDATE:
 
     UPDATE 1
 
-It is always recommended to perform such operations under transaction blocks (i.e., BEGIN...COMMIT/ROLLBACK;), so we have the option to roll back the operation.
+It is always recommended to perform such operations under transaction blocks (i.e., BEGIN…COMMIT/ROLLBACK;), so we have the option to roll back the operation.
 
 ### 5. DELETE query in PostgreSQL
 
@@ -554,7 +553,7 @@ Using the syntax in the example below, we can create a table using a SELECT stat
 
 ### 12. Query timeout in PostgreSQL
 
-We can command a query to timeout after a certain period with the help of <a href="https://www.enterprisedb.com/postgres-tutorials/how-tune-postgresql-guc-parameters" class="markup--anchor markup--p-anchor">GUC parameters</a> (short for grand unified configuration) like statement_timeout, which aborts any statement that takes more than the specified number of milliseconds:
+We can command a query to timeout after a certain period with the help of <a href="https://www.enterprisedb.com/postgres-tutorials/how-tune-postgresql-guc-parameters" class="markup--anchor markup--p-anchor">GUC parameters</a> (short for grand unified configuration) like statement\_timeout, which aborts any statement that takes more than the specified number of milliseconds:
 
     postgresql=# set statement_timeout=10;
     SET
@@ -563,7 +562,7 @@ We can command a query to timeout after a certain period with the help of <a hre
 
 ### 13. Using CREATE SEQUENCE with the INSERT query in PostgreSQL
 
-The <a href="https://www.postgresql.org/docs/12/sql-createsequence.html" class="markup--anchor markup--p-anchor">CREATE SEQUENCE</a> command is a sequential number generator. Once the sequence is created, we can use the sequence's nextval and currval functions to insert values into a table:
+The <a href="https://www.postgresql.org/docs/12/sql-createsequence.html" class="markup--anchor markup--p-anchor">CREATE SEQUENCE</a> command is a sequential number generator. Once the sequence is created, we can use the sequence’s nextval and currval functions to insert values into a table:
 
     postgres=# create sequence seq;
     CREATE SEQUENCE
@@ -585,9 +584,9 @@ The <a href="https://www.postgresql.org/docs/12/sql-createsequence.html" class="
 
 ### 14. Importing BLOB data types into PostgreSQL
 
-PostgreSQL doesn't directly support BLOBs (binary large objects), but we can work with them using the following methods:
+PostgreSQL doesn’t directly support BLOBs (binary large objects), but we can work with them using the following methods:
 
-Let's assume you have an image (in png format) downloaded in the /home/edb/ folder:
+Let’s assume you have an image (in png format) downloaded in the /home/edb/ folder:
 
     [edb@localhost]$ ls /home/edb/mypic.png
     /home/edb/mypic.png
@@ -601,7 +600,7 @@ Go to the bin folder of your PostgreSQL installation and connect to the psql ter
     postgres=# insert into testing values (1,lo_import('/home/edb/mypic.png'));
     INSERT 0 1
 
-The lo_import() function loads the named file into pg_largeobject and returns an OID (object identifier) value that will refer to the large object. Selecting the testing table will show just the OID and not the bits that have made up this photo.
+The lo\_import() function loads the named file into pg\_largeobject and returns an OID (object identifier) value that will refer to the large object. Selecting the testing table will show just the OID and not the bits that have made up this photo.
 
 ### 15. ILIKE query in PostgreSQL
 
@@ -638,7 +637,7 @@ The ILIKE operator is a <a href="https://www.postgresql.org/docs/12/functions-ma
       manager_no        int
     );
 
-Insert data into 'test_table':
+Insert data into ‘test\_table’:
 
     insert into test_table values(10,'A1','CEO',null);
     insert into test_table values(11, 'B1', 'VP', 10);
@@ -777,7 +776,7 @@ With the help of the <a href="https://www.postgresql.org/docs/12/sql-copy.html" 
 
 -   <span id="3505">`postgres=# CREATE EXTENSION tablefunc; CREATE EXTENSION postgres=#`</span>
 
-1.  <span id="b334">Then, use tablefunc's connectby function to display results hierarchically:</span>
+1.  <span id="b334">Then, use tablefunc’s connectby function to display results hierarchically:</span>
 
 <!-- -->
 
@@ -868,7 +867,7 @@ The <a href="https://www.postgresql.org/docs/12/queries-limit.html" class="marku
 
 ### 25. IF … ELSE expression in PostgreSQL
 
-We can use <a href="https://www.postgresql.org/docs/9.1/plpgsql-control-structures.html" class="markup--anchor markup--p-anchor">conditional statements</a> like IF ... ELSE in an anonymous block. The example below checks if the values of variables abc and xyz are matching and prints the result— i.e., 150:
+We can use <a href="https://www.postgresql.org/docs/9.1/plpgsql-control-structures.html" class="markup--anchor markup--p-anchor">conditional statements</a> like IF … ELSE in an anonymous block. The example below checks if the values of variables abc and xyz are matching and prints the result— i.e., 150:
 
     postgres=# Do
                  $$
@@ -960,9 +959,9 @@ The <a href="https://www.postgresql.org/docs/12/functions-conditional.html" clas
 ### 29. PostgreSQL recursive query
 
 Recursive queries are used to deal with hierarchical queries or tree-structured data. The structure of a WITH RECURSIVE query is always: a) Non-recursive term  
- b) UNION (or UNION ALL), then a recursive term
+b) UNION (or UNION ALL), then a recursive term
 
-where the recursive term includes a reference to the query's output.
+where the recursive term includes a reference to the query’s output.
 
     CREATE TABLE emp_test (
       id int,
@@ -1004,7 +1003,7 @@ The recursive query below will give all the reports in a certain order:
 
 ### 30. PostgreSQL log queries
 
-Using the <a href="https://www.postgresql.org/docs/12/pgstatstatements.html" class="markup--anchor markup--p-anchor">pg_stat_statements module</a>, we can track execution statistics for all SQL statements. To do this, we need to create an extension and add in shared_preload_libraries inside the postgresql.conf file:
+Using the <a href="https://www.postgresql.org/docs/12/pgstatstatements.html" class="markup--anchor markup--p-anchor">pg_stat_statements module</a>, we can track execution statistics for all SQL statements. To do this, we need to create an extension and add in shared\_preload\_libraries inside the postgresql.conf file:
 
     postgres=# create extension pg_stat_statements;
     CREATE EXTENSION
@@ -1357,7 +1356,7 @@ To Identify or select rows that have NULL values, the <a href="https://www.postg
      PQR  | location-D |
     (5 rows)
 
-Identifying null values in 'age' column:
+Identifying null values in ‘age’ column:
 
     postgres=# select name from dummy_table where age is null;
      name
@@ -1372,10 +1371,9 @@ Identifying null values in 'age' column:
 
 Learn More:
 
-<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong>
-<br/>
+**Web-Dev-Hub**  
 
-<em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…*bgoonz-blog.netlify.app<a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ### Further Examples / Readings:
 

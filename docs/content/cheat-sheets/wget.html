@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>wget</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="to-download">To download <url>:</h1>
+<p>wget <url></p>
+<h1 id="section"></h1>
+<h1 id="to-download-multiples-files-with-multiple-urls">To download multiples files with multiple URLs:</h1>
+<p>wget <url>…</p>
+<h1 id="to-download-and-change-its-name">To download <url> and change its name:</h1>
+<p>wget <url> -O <outfile></p>
+# To download <url> into
+<dir>
+<p>:</p>
+wget -P
+<dir>
+<p><url></p>
+<h1 id="to-continue-an-aborted-downloaded">To continue an aborted downloaded:</h1>
+<p>wget -c <url></p>
+<h1 id="to-parse-a-file-that-contains-a-list-of-urls-to-fetch-each-one">To parse a file that contains a list of URLs to fetch each one:</h1>
+<p>wget -i url_list.txt</p>
+<h1 id="to-mirror-a-whole-page-locally">To mirror a whole page locally:</h1>
+<p>wget -pk <url></p>
+<h1 id="to-mirror-a-whole-site-locally">To mirror a whole site locally:</h1>
+<p>wget -mk <url></p>
+<h1 id="to-download-files-according-to-a-pattern">To download files according to a pattern:</h1>
+<p>wget http://example.com/files-{1..15}.tar.bz2</p>
+<h1 id="to-download-all-the-files-in-a-directory-with-a-specific-extension-if-directory-indexing-is-enabled">To download all the files in a directory with a specific extension if directory indexing is enabled:</h1>
+<p>wget -r -l1 -A.extension http://example.com/directory</p>
+<h1 id="to-download-only-response-headers--s-spider-and-display-them-on-stdout--o--.">To download only response headers (-S –spider) and display them on stdout (-O -).:</h1>
+<p>wget -S –spider -O - <url></p>
+<h1 id="to-change-the-user-agent-to-user-agent-toto">To change the User-Agent to ‘User-Agent: toto’:</h1>
+<p>wget -U ‘toto’ <url></p>
+</body>
+</html>

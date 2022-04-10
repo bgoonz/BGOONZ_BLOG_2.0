@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>supportedlocalesof</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="intl.relativetimeformat.supportedlocalesof">Intl.RelativeTimeFormat.supportedLocalesOf()</h1>
+<p>The <code>Intl.RelativeTimeFormat.supportedLocalesOf()</code> method returns an array containing those of the provided locales that are supported in date and time formatting without having to fall back to the runtime’s default locale.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>Intl.RelativeTimeFormat.supportedLocalesOf(locales)
+Intl.RelativeTimeFormat.supportedLocalesOf(locales, options)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>locales</code><br />
+A string with a BCP 47 language tag, or an array of such strings. For the general form of the <code>locales</code> argument, see the <a href="../../intl#locale_identification_and_negotiation">Intl</a> page.</p>
+<p><code>options</code> <span class="badge inline optional">Optional</span><br />
+An object that may have the following property:</p>
+<p><code>localeMatcher</code><br />
+The locale matching algorithm to use. Possible values are “<code>lookup</code>” and “<code>best fit</code>”; the default is “<code>best fit</code>”. For information about this option, see the <a href="../../intl#locale_negotiation">Intl</a> page.</p>
+<h3 id="return-value">Return value</h3>
+<p>An array of strings representing a subset of the given locale tags that are supported in date and time formatting without having to fall back to the runtime’s default locale.</p>
+<h2 id="description">Description</h2>
+<p>Returns an array with a subset of the language tags provided in <code>locales</code>. The language tags returned are those for which the runtime supports a locale in date and time formatting that the locale matching algorithm used considers a match, so that it wouldn’t have to fall back to the default locale.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-supportedlocalesof">Using supportedLocalesOf()</h3>
+<p>Assuming a runtime that supports Indonesian and German but not Balinese in date and time formatting, <code>supportedLocalesOf</code> returns the Indonesian and German language tags unchanged, even though <code>pinyin</code> collation is neither relevant to date and time formatting nor used with Indonesian, and a specialized German for Indonesia is unlikely to be supported. Note the specification of the “<code>lookup</code>” algorithm here — a “<code>best fit</code>” matcher might decide that Indonesian is an adequate match for Balinese since most Balinese speakers also understand Indonesian, and therefore return the Balinese language tag as well.</p>
+<pre><code>const locales = [&#39;ban&#39;, &#39;id-u-co-pinyin&#39;, &#39;de-ID&#39;];
+const options = { localeMatcher: &#39;lookup&#39; };
+console.log(Intl.RelativeTimeFormat.supportedLocalesOf(locales, options).join(&#39;, &#39;));
+// → &quot;id-u-co-pinyin, de-ID&quot;</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma402/#sec-Intl.RelativeTimeFormat.supportedLocalesOf">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) <br/></p>
+<span class="small">#sec-Intl.RelativeTimeFormat.supportedLocalesOf</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>supportedLocalesOf</code></p>
+<p>71</p>
+<p>79</p>
+<p>65</p>
+<p>No</p>
+<p>58</p>
+<p>14</p>
+<p>71</p>
+<p>71</p>
+<p>65</p>
+<p>50</p>
+<p>14</p>
+<p>10.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../relativetimeformat"><code>Intl.RelativeTimeFormat</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/RelativeTimeFormat/supportedLocalesOf" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/RelativeTimeFormat/supportedLocalesOf</a></p>
+</body>
+</html>

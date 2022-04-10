@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Vim-Unite</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Vim-Unite</h1>
+</header>
+<h3 id="usage">Usage</h3>
+<pre class="vim"><code>:Unite file
+:Unite file_rec/async:!
+:Unite tag
+:Unite buffer</code></pre>
+<h3 id="sources">Sources</h3>
+<ul>
+<li><code>file/new</code></li>
+<li><code>file/async</code></li>
+<li><code>file_rec/async</code></li>
+<li><code>file_rec/git</code></li>
+<li><code>buffer</code></li>
+<li><code>buffer_tab</code> (current tab only)</li>
+<li><code>tab</code></li>
+<li><code>register</code></li>
+<li><code>bookmark</code></li>
+<li><code>source</code></li>
+</ul>
+<h3 id="options">Options</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>-start-insert</code></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>-no-quit</code></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>-winheight=10</code></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>-quick-match</code></td>
+<td>select by pressing asdf keys</td>
+</tr>
+<tr class="odd">
+<td><code>-winwidth=40</code></td>
+<td>use with vertical</td>
+</tr>
+<tr class="even">
+<td><code>-no-split</code></td>
+<td>open in current buffer</td>
+</tr>
+<tr class="odd">
+<td><code>-auto-preview</code></td>
+<td>great for outline</td>
+</tr>
+<tr class="even">
+<td><code>-vertical</code></td>
+<td>open as sidebar</td>
+</tr>
+<tr class="odd">
+<td><code>-buffer-name=xxx -resume</code></td>
+<td>resume the next time it’s called (faster)</td>
+</tr>
+<tr class="even">
+<td><code>-input=</code></td>
+<td>reset input (use with -resume)</td>
+</tr>
+<tr class="odd">
+<td><code>-unique</code></td>
+<td>remove duplicates (eg, if using <code>file_rec</code> with <code>file_mru</code>)</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

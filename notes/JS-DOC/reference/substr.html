@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>substr</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="string.prototype.substr">String.prototype.substr()</h1>
+<p>The <code>substr()</code> method returns a portion of the string, starting at the specified index and extending for a given number of characters afterwards.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>substr(start)
+substr(start, length)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>start</code><br />
+The index of the first character to include in the returned substring.</p>
+<p><code>length</code><br />
+Optional. The number of characters to extract.</p>
+<h3 id="return-value">Return value</h3>
+<p>A new string containing the specified part of the given string.</p>
+<h2 id="description">Description</h2>
+<p><code>substr()</code> extracts <code>length</code> characters from a <code>str</code>, counting from the <code>start</code> index.</p>
+<ul>
+<li>If <code>start</code> is a positive number, the index starts counting at the start of the string. Its value is capped at <code>str.length</code>.</li>
+<li>If <code>start</code> is a negative number, the index starts counting from the end of the string. Its value is capped at <code>-str.length</code>.</li>
+<li>Note: In Microsoft JScript, negative values of the <code>start</code> argument are not considered to refer to the end of the string.</li>
+<li>If <code>length</code> is omitted, <code>substr()</code> extracts characters to the end of the string.</li>
+<li>If <code>length</code> is <a href="../undefined"><code>undefined</code></a>, <code>substr()</code> extracts characters to the end of the string.</li>
+<li>If <code>length</code> is a negative number, it is treated as <code>0</code>.</li>
+<li>For both <code>start</code> and <code>length</code>, <a href="../nan"><code>NaN</code></a> is treated as <code>0</code>.</li>
+</ul>
+<h2 id="polyfill">Polyfill</h2>
+<p>Microsoft’s JScript does not support negative values for the start index. To use this feature in JScript, you can use the following code:</p>
+<pre><code>// only run when the substr() function is broken
+if (&#39;ab&#39;.substr(-1) != &#39;b&#39;) {
+  /**
+   *  Get the substring of a string
+   *  @param  {integer}  start   where to start the substring
+   *  @param  {integer}  length  how many characters to return
+   *  @return {string}
+   */
+  String.prototype.substr = function(substr) {
+    return function(start, length) {
+      // call the original method
+      return substr.call(this,
+        // did we get a negative start, calculate how much it is from the beginning of the string
+        // adjust the start parameter for negative value
+        start &lt; 0 ? this.length + start : start,
+        length)
+    }
+  }(String.prototype.substr);
+}</code></pre>
+<h2 id="examples">Examples</h2>
+<h3 id="using-substr">Using substr()</h3>
+<pre><code>var aString = &#39;Mozilla&#39;;
+
+console.log(aString.substr(0, 1));   // &#39;M&#39;
+console.log(aString.substr(1, 0));   // &#39;&#39;
+console.log(aString.substr(-1, 1));  // &#39;a&#39;
+console.log(aString.substr(1, -1));  // &#39;&#39;
+console.log(aString.substr(-3));     // &#39;lla&#39;
+console.log(aString.substr(1));      // &#39;ozilla&#39;
+console.log(aString.substr(-20, 2)); // &#39;Mo&#39;
+console.log(aString.substr(20, 2));  // &#39;&#39;</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-string.prototype.substr">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-string.prototype.substr</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>substr</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>4</p>
+<p>4</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="slice"><code>String.prototype.slice()</code></a></li>
+<li><a href="substring"><code>String.prototype.substring()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substr" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substr</a></p>
+</body>
+</html>

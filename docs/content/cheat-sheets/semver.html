@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Semver</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Semver</h1>
+</header>
+<h3 id="semver">Semver</h3>
+<p>Given a version number <code>MAJOR.MINOR.PATCH</code>: {: .-setup}</p>
+<div class="line-block"><code>MAJOR</code> | incompatible API changes |<br />
+<code>MINOR</code> | add functionality (backwards-compatible) |<br />
+<code>PATCH</code> | bug fixes (backwards-compatible) |</div>
+<h3 id="simple-ranges">Simple ranges</h3>
+<pre><code>  1.2.3
+ =1.2.3
+ &gt;1.2.3
+ &lt;1.2.3
+&gt;=1.2.3</code></pre>
+<p>Note that suffixed versions (<code>1.2.3-rc1</code>) are not matched.</p>
+<h3 id="ranges">Ranges</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Range</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>~1.2.3</code></td>
+<td>is <code>&gt;=1.2.3 &lt;1.3.0</code></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td><code>^1.2.3</code></td>
+<td>is <code>&gt;=1.2.3 &lt;2.0.0</code></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>^0.2.3</code></td>
+<td>is <code>&gt;=0.2.3 &lt;0.3.0</code></td>
+<td>(0.x.x is special)</td>
+</tr>
+<tr class="odd">
+<td><code>^0.0.1</code></td>
+<td>is <code>=0.0.1</code></td>
+<td>(0.0.x is special)</td>
+</tr>
+<tr class="even">
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td><code>^1.2</code></td>
+<td>is <code>&gt;=1.2.0 &lt;2.0.0</code></td>
+<td>(like ^1.2.0)</td>
+</tr>
+<tr class="even">
+<td><code>~1.2</code></td>
+<td>is <code>&gt;=1.2.0 &lt;1.3.0</code></td>
+<td>(like ~1.2.0)</td>
+</tr>
+<tr class="odd">
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td><code>^1</code></td>
+<td>is <code>&gt;=1.0.0 &lt;2.0.0</code></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>~1</code></td>
+<td>same</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>1.x</code></td>
+<td>same</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>1.*</code></td>
+<td>same</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>1</code></td>
+<td>same</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td><code>*</code></td>
+<td>any version</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>x</code></td>
+<td>same</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>{: .-shortcuts}</p>
+<h3 id="hyphenated-ranges">Hyphenated ranges</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Range</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>1.2.3 - 2.3.4</code></td>
+<td>is <code>&gt;=1.2.3 &lt;=2.3.4</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="partial-right">Partial right</h4>
+<table>
+<thead>
+<tr class="header">
+<th>Range</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>1.2.3 - 2.3</code></td>
+<td>is <code>&gt;=1.2.3 &lt;2.4.0</code></td>
+</tr>
+<tr class="even">
+<td><code>1.2.3 - 2</code></td>
+<td>is <code>&gt;=1.2.3 &lt;3.0.0</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="partial-left">Partial left</h4>
+<table>
+<thead>
+<tr class="header">
+<th>Range</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>1.2 - 2.3.0</code></td>
+<td>is <code>1.2.0 - 2.3.0</code></td>
+</tr>
+</tbody>
+</table>
+<p>When the right is partial (eg, <code>2.3</code>), missing pieces are assumed to be <code>x</code> (eg, <code>2.3.x</code>).</p>
+<p>When the left is partial (eg, <code>1.2</code>), missing pieces are assumed to be <code>0</code> (eg, <code>1.2.0</code>).</p>
+<h3 id="combining-ranges">Combining ranges</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Range</th>
+<th>Description</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>&gt;=0.14 &lt;16</code></td>
+<td>And (space-separated)</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>0.14.x      |                       | 15.x.x</code></td>
+<td>Or (pipe-separated)</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="pre-releases">Pre-releases</h3>
+<pre><code>1.2.3-prerelease+build</code></pre>
+<h3 id="explanation">Explanation</h3>
+<div class="line-block"><code>^</code> | means “compatible with” |<br />
+<code>~</code> | means “reasonably close to” |<br />
+<code>0.x.x</code> | is for “initial development” |<br />
+<code>1.x.x</code> | means public API is defined |</div>
+<p>{: .-shortcuts}</p>
+<h2 id="references">References</h2>
+<p>{: .-one-column}</p>
+<ul>
+<li><a href="http://semver.org/" class="uri">http://semver.org/</a></li>
+<li><a href="https://docs.npmjs.com/misc/semver" class="uri">https://docs.npmjs.com/misc/semver</a></li>
+</ul>
+</body>
+</html>

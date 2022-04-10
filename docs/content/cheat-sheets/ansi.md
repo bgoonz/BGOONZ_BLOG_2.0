@@ -1,96 +1,43 @@
----
-title: title
-subtitle: subtitle
-date: '2022-01-03'
-thumb_img_alt: lorem-ipsum
-content_img_alt: lorem-ipsum
-excerpt: lorem-ipsum
-seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
-template: post
-thumb_img_path: images/css-72a655a7.jpg
----
+subtitle
 
-# Reset
+2022-01-03
 
-Color_Off='\e[0m' # Text Reset
+Reset
+=====
 
-# Regular Colors
+Color\_Off=‘\[0m’ \# Text Reset
 
-Black='\e[0;30m' # Black
-Red='\e[0;31m' # Red
-Green='\e[0;32m' # Green
-Yellow='\e[0;33m' # Yellow
-Blue='\e[0;34m' # Blue
-Purple='\e[0;35m' # Purple
-Cyan='\e[0;36m' # Cyan
-White='\e[0;37m' # White
+Regular Colors
+==============
 
-# Bold
+Black=‘\[0;30m’ \# Black Red=‘\[0;31m’ \# Red Green=‘\[0;32m’ \# Green Yellow=‘\[0;33m’ \# Yellow Blue=‘\[0;34m’ \# Blue Purple=‘\[0;35m’ \# Purple Cyan=‘\[0;36m’ \# Cyan White=‘\[0;37m’ \# White
 
-BBlack='\e[1;30m' # Black
-BRed='\e[1;31m' # Red
-BGreen='\e[1;32m' # Green
-BYellow='\e[1;33m' # Yellow
-BBlue='\e[1;34m' # Blue
-BPurple='\e[1;35m' # Purple
-BCyan='\e[1;36m' # Cyan
-BWhite='\e[1;37m' # White
+Bold
+====
 
-# Underline
+BBlack=‘\[1;30m’ \# Black BRed=‘\[1;31m’ \# Red BGreen=‘\[1;32m’ \# Green BYellow=‘\[1;33m’ \# Yellow BBlue=‘\[1;34m’ \# Blue BPurple=‘\[1;35m’ \# Purple BCyan=‘\[1;36m’ \# Cyan BWhite=‘\[1;37m’ \# White
 
-UBlack='\e[4;30m' # Black
-URed='\e[4;31m' # Red
-UGreen='\e[4;32m' # Green
-UYellow='\e[4;33m' # Yellow
-UBlue='\e[4;34m' # Blue
-UPurple='\e[4;35m' # Purple
-UCyan='\e[4;36m' # Cyan
-UWhite='\e[4;37m' # White
+Underline
+=========
 
-# Background
+UBlack=‘\[4;30m’ \# Black URed=‘\[4;31m’ \# Red UGreen=‘\[4;32m’ \# Green UYellow=‘\[4;33m’ \# Yellow UBlue=‘\[4;34m’ \# Blue UPurple=‘\[4;35m’ \# Purple UCyan=‘\[4;36m’ \# Cyan UWhite=‘\[4;37m’ \# White
 
-On_Black='\e[40m' # Black
-On_Red='\e[41m' # Red
-On_Green='\e[42m' # Green
-On_Yellow='\e[43m' # Yellow
-On_Blue='\e[44m' # Blue
-On_Purple='\e[45m' # Purple
-On_Cyan='\e[46m' # Cyan
-On_White='\e[47m' # White
+Background
+==========
 
-# High Intensity
+On\_Black=‘\[40m’ \# Black On\_Red=‘\[41m’ \# Red On\_Green=‘\[42m’ \# Green On\_Yellow=‘\[43m’ \# Yellow On\_Blue=‘\[44m’ \# Blue On\_Purple=‘\[45m’ \# Purple On\_Cyan=‘\[46m’ \# Cyan On\_White=‘\[47m’ \# White
 
-IBlack='\e[0;90m' # Black
-IRed='\e[0;91m' # Red
-IGreen='\e[0;92m' # Green
-IYellow='\e[0;93m' # Yellow
-IBlue='\e[0;94m' # Blue
-IPurple='\e[0;95m' # Purple
-ICyan='\e[0;96m' # Cyan
-IWhite='\e[0;97m' # White
+High Intensity
+==============
 
-# Bold High Intensity
+IBlack=‘\[0;90m’ \# Black IRed=‘\[0;91m’ \# Red IGreen=‘\[0;92m’ \# Green IYellow=‘\[0;93m’ \# Yellow IBlue=‘\[0;94m’ \# Blue IPurple=‘\[0;95m’ \# Purple ICyan=‘\[0;96m’ \# Cyan IWhite=‘\[0;97m’ \# White
 
-BIBlack='\e[1;90m' # Black
-BIRed='\e[1;91m' # Red
-BIGreen='\e[1;92m' # Green
-BIYellow='\e[1;93m' # Yellow
-BIBlue='\e[1;94m' # Blue
-BIPurple='\e[1;95m' # Purple
-BICyan='\e[1;96m' # Cyan
-BIWhite='\e[1;97m' # White
+Bold High Intensity
+===================
 
-# High Intensity backgrounds
+BIBlack=‘\[1;90m’ \# Black BIRed=‘\[1;91m’ \# Red BIGreen=‘\[1;92m’ \# Green BIYellow=‘\[1;93m’ \# Yellow BIBlue=‘\[1;94m’ \# Blue BIPurple=‘\[1;95m’ \# Purple BICyan=‘\[1;96m’ \# Cyan BIWhite=‘\[1;97m’ \# White
 
-On_IBlack='\e[0;100m' # Black
-On_IRed='\e[0;101m' # Red
-On_IGreen='\e[0;102m' # Green
-On_IYellow='\e[0;103m' # Yellow
-On_IBlue='\e[0;104m' # Blue
-On_IPurple='\e[0;105m' # Purple
-On_ICyan='\e[0;106m' # Cyan
-On_IWhite='\e[0;107m' # White
+High Intensity backgrounds
+==========================
+
+On\_IBlack=‘\[0;100m’ \# Black On\_IRed=‘\[0;101m’ \# Red On\_IGreen=‘\[0;102m’ \# Green On\_IYellow=‘\[0;103m’ \# Yellow On\_IBlue=‘\[0;104m’ \# Blue On\_IPurple=‘\[0;105m’ \# Purple On\_ICyan=‘\[0;106m’ \# Cyan On\_IWhite=‘\[0;107m’ \# White

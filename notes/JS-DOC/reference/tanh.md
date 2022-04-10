@@ -1,10 +1,13 @@
-# Math.tanh()
+Math.tanh()
+===========
 
 The `Math.tanh()` function returns the hyperbolic tangent of a number, that is
 
-$$\\tanh x = \\frac{\\sinh x}{\\cosh x} = \\frac{e^{x} - e^{- x}}{e^{x} + e^{- x}} = \\frac{e^{2x} - 1}{e^{2x} + 1}$$
+  
+<span class="math display">$$\\\\tanh x = \\\\frac{\\\\sinh x}{\\\\cosh x} = \\\\frac{e^{x} - e^{- x}}{e^{x} + e^{- x}} = \\\\frac{e^{2x} - 1}{e^{2x} + 1}$$</span>  
 
-## Syntax
+Syntax
+------
 
     Math.tanh(x)
 
@@ -17,11 +20,13 @@ A number.
 
 The hyperbolic tangent of the given number.
 
-## Description
+Description
+-----------
 
 Because `tanh()` is a static method of `Math`, you always use it as `Math.tanh()`, rather than as a method of a `Math` object you created (`Math` is not a constructor).
 
-## Polyfill
+Polyfill
+--------
 
 This can be emulated with the help of the [`Math.exp()`](exp) function:
 
@@ -30,7 +35,8 @@ This can be emulated with the help of the [`Math.exp()`](exp) function:
         return a == Infinity ? 1 : b == Infinity ? -1 : (a - b) / (a + b);
     }
 
-## Examples
+Examples
+--------
 
 ### Using Math.tanh()
 
@@ -38,14 +44,14 @@ This can be emulated with the help of the [`Math.exp()`](exp) function:
     Math.tanh(Infinity); // 1
     Math.tanh(1);        // 0.7615941559557649
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.tanh">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-math.tanh</span></td></tr></tbody></table>
 
-<span class="small">#sec-math.tanh</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -101,7 +107,8 @@ No
 
 3.0
 
-## See also
+See also
+--------
 
 -   [`Math.acosh()`](acosh)
 -   [`Math.asinh()`](asinh)
@@ -109,6 +116,5 @@ No
 -   [`Math.cosh()`](cosh)
 -   [`Math.sinh()`](sinh)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/tanh" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/tanh</a>

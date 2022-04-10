@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>missing_colon_after_property_id</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="syntaxerror-missing-after-property-id">SyntaxError: missing : after property id</h1>
+<p>The JavaScript exception “missing : after property id” occurs when objects are created using the <a href="../operators/object_initializer">object initializer</a> syntax. A colon (<code>:</code>) separates keys and values for the object’s properties. Somehow, this colon is missing or misplaced.</p>
+<h2 id="message">Message</h2>
+<pre><code>SyntaxError: Expected &#39;:&#39; (Edge)
+SyntaxError: missing : after property id (Firefox)</code></pre>
+<h2 id="error-type">Error type</h2>
+<p><a href="../global_objects/syntaxerror"><code>SyntaxError</code></a></p>
+<h2 id="what-went-wrong">What went wrong?</h2>
+<p>When creating objects with the <a href="../operators/object_initializer">object initializer</a> syntax, a colon (<code>:</code>) separates keys and values for the object’s properties.</p>
+<pre><code>var obj = { propertyKey: &#39;value&#39; };</code></pre>
+<h2 id="examples">Examples</h2>
+<h3 id="colons-vs.-equal-signs">Colons vs. equal signs</h3>
+<p>This code fails, as the equal sign can’t be used this way in this object initializer syntax.</p>
+<pre><code>var obj = { propertyKey = &#39;value&#39; };
+// SyntaxError: missing : after property id</code></pre>
+<p>Correct would be to use a colon, or to use square brackets to assign a new property after the object has been created already.</p>
+<pre><code>var obj = { propertyKey: &#39;value&#39; };
+
+// or alternatively
+
+var obj = { };
+obj[&#39;propertyKey&#39;] = &#39;value&#39;;</code></pre>
+<h3 id="empty-properties">Empty properties</h3>
+<p>You can’t create empty properties like this:</p>
+<pre><code>var obj = { propertyKey; };
+// SyntaxError: missing : after property id</code></pre>
+<p>If you need to define a property without a value, you might use <a href="../global_objects/null"><code>null</code></a> as a value.</p>
+<pre><code>var obj = { propertyKey: null };</code></pre>
+<h3 id="computed-properties">Computed properties</h3>
+<p>If you create a property key from an expression, you need to use square brackets. Otherwise the property name can’t be computed:</p>
+<pre><code>var obj = { &#39;b&#39;+&#39;ar&#39;: &#39;foo&#39; };
+// SyntaxError: missing : after property id</code></pre>
+<p>Put the expression in brackets <code>[]</code>:</p>
+<pre><code>var obj = { [&#39;b&#39;+&#39;ar&#39;]: &#39;foo&#39; };</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../operators/object_initializer">Object initializer</a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Missing_colon_after_property_id" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Missing_colon_after_property_id</a></p>
+</body>
+</html>

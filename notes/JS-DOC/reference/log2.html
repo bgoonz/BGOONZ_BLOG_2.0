@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>log2</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="math.log2">Math.log2()</h1>
+<p>The <code>Math.log2()</code> function returns the base 2 logarithm of a number, that is</p>
+<p>∀<em>x</em> &gt; 0, <code>Math.log2</code> <code>(``x``)</code> = log<sub>2</sub>(<em>x</em>) = the unique <em>y</em> such that 2<sup><em>y</em></sup> = <em>x</em></p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>Math.log2(x)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>x</code><br />
+A number.</p>
+<h3 id="return-value">Return value</h3>
+<p>The base 2 logarithm of the given number. If the number is negative, <a href="../nan"><code>NaN</code></a> is returned.</p>
+<h2 id="description">Description</h2>
+<p>If the value of <code>x</code> is less than 0, the return value is always <a href="../nan"><code>NaN</code></a>.</p>
+<p>Because <code>log2()</code> is a static method of <code>Math</code>, you always use it as <code>Math.log2()</code>, rather than as a method of a <code>Math</code> object you created (<code>Math</code> is not a constructor).</p>
+<p>This function is the equivalent of Math.log(x) / Math.log(2). For log2(e) use the constant <a href="log2e"><code>Math.LOG2E</code></a> which is 1 / <a href="ln2"><code>Math.LN2</code></a>.</p>
+<h2 id="polyfill">Polyfill</h2>
+<p>This Polyfill emulates the <code>Math.log2</code> function. Note that it returns imprecise values on some inputs (like 1 &lt;&lt; 29), wrap into <a href="round"><code>Math.round()</code></a> if working with bit masks.</p>
+<pre><code>if (!Math.log2) Math.log2 = function(x) {
+  return Math.log(x) * Math.LOG2E;
+};</code></pre>
+<h2 id="examples">Examples</h2>
+<h3 id="using-math.log2">Using Math.log2()</h3>
+<pre><code>Math.log2(3);    // 1.584962500721156
+Math.log2(2);    // 1
+Math.log2(1);    // 0
+Math.log2(0);    // -Infinity
+Math.log2(-2);   // NaN
+Math.log2(1024); // 10</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-math.log2">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-math.log2</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>log2</code></p>
+<p>38</p>
+<p>12</p>
+<p>25</p>
+<p>No</p>
+<p>25</p>
+<p>8</p>
+<p>38</p>
+<p>38</p>
+<p>25</p>
+<p>25</p>
+<p>8</p>
+<p>3.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="exp"><code>Math.exp()</code></a></li>
+<li><a href="log"><code>Math.log()</code></a></li>
+<li><a href="log10"><code>Math.log10()</code></a></li>
+<li><a href="log1p"><code>Math.log1p()</code></a></li>
+<li><a href="pow"><code>Math.pow()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/log2" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/log2</a></p>
+</body>
+</html>

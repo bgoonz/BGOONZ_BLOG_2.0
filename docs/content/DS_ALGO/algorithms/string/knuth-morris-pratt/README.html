@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="knuth-morris-pratt-algorithm">Knuth-Morris-Pratt Algorithm</h1>
+<p>The Knuth-Morris-Pratt string searching algorithm (or KMP algorithm) searches for occurrences of a “word” <code>W</code> within a main “text string” <code>T</code> by employing the observation that when a mismatch occurs, the word itself embodies sufficient information to determine where the next match could begin, thus bypassing re-examination of previously matched characters.</p>
+<h2 id="complexity">Complexity</h2>
+<ul>
+<li><strong>Time:</strong> <code>O(|W| + |T|)</code> (much faster comparing to trivial <code>O(|W| * |T|)</code>)</li>
+<li><strong>Space:</strong> <code>O(|W|)</code></li>
+</ul>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm">Wikipedia</a></li>
+<li><a href="https://www.youtube.com/watch?v=GTJr8OvyEVQ&amp;list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8">YouTube</a></li>
+</ul>
+</body>
+</html>

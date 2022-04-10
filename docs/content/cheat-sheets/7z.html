@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2022-01-03" />
+  <title>title</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">title</h1>
+<p class="subtitle">subtitle</p>
+<p class="date">2022-01-03</p>
+</header>
+<hr />
+<h2 id="tags-compression">tags: [compression]</h2>
+<p>7z [Args] [archive.7z] [files / folders to archive] A file archiver with highest compression ratio</p>
+<p>Args: a add d delete e extract l list t test u update x extract with full paths</p>
+<pre><code>DO NOT USE the 7-zip format for backup purpose on Linux/Unix.
+7-zip does not store the owner/group of the file.
+
+On Linux/Unix, in order to backup directories you must use tar :
+  - to backup a directory  : tar cf - directory | 7z a -si directory.tar.7z
+  - to restore your backup : 7z x -so directory.tar.7z | tar xf -
+
+If  you  want  to send files and directories (not the owner of file) to others
+Unix/MacOS/Windows users, you can use the 7-zip format.</code></pre>
+<p>Example 1: Quick and Easy - Add all files in dir1 to archive.7z with Default Settings. 7z a archive.7z dir1</p>
+<p>Example 2: Add all files in dir1 to archive.7z with Max Compression 7z a -t7z -m0=lzma -mx=9 -mfb=64 -md=32m -ms=on archive.7z dir1</p>
+<pre><code>-t7z        7z archive
+-m0=lzma    lzma method
+-mx=9       level of compression = 9 (ultra)
+-mfb=64     number of fast bytes for lzma = 64
+-md=32m     dictionary size = 32 Mb
+-ms=on      solid archive = on</code></pre>
+<p>Example 3: Add (store) all files in dir1 to archive.7z with No Compression 7z a -m0=copy archive.7z dir1</p>
+<p>7z exit codes:</p>
+<pre><code>0       normal (no errors or warnings)
+1       warning (non-fatal errors)
+2       fatal error
+7       bad cli arguments
+8       not enough memory for operation
+255     process was interrupted</code></pre>
+</body>
+</html>

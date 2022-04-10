@@ -1,8 +1,10 @@
-# Array.prototype.slice()
+Array.prototype.slice()
+=======================
 
 The `slice()` method returns a shallow copy of a portion of an array into a new array object selected from `start` to `end` (`end` not included) where `start` and `end` represent the index of items in that array. The original array will not be modified.
 
-## Syntax
+Syntax
+------
 
     slice()
     slice(start)
@@ -20,7 +22,7 @@ If `start` is undefined, `slice` starts from the index `0`.
 If `start` is greater than the index range of the sequence, an empty array is returned.
 
 `end` <span class="badge inline optional">Optional</span>  
-Zero-based index _before_ which to end extraction. `slice` extracts up to but not including `end`. For example, `slice(1,4)` extracts the second element through the fourth element (elements indexed 1, 2, and 3).
+Zero-based index *before* which to end extraction. `slice` extracts up to but not including `end`. For example, `slice(1,4)` extracts the second element through the fourth element (elements indexed 1, 2, and 3).
 
 A negative index can be used, indicating an offset from the end of the sequence. `slice(2,-1)` extracts the third element through the second-to-last element in the sequence.
 
@@ -32,7 +34,8 @@ If `end` is greater than the length of the sequence, `slice` extracts through to
 
 A new array containing the extracted elements.
 
-## Description
+Description
+-----------
 
 `slice` does not alter the original array. It returns a shallow copy of elements from the original array. Elements of the original array are copied into the returned array as follows:
 
@@ -41,7 +44,8 @@ A new array containing the extracted elements.
 
 If a new element is added to either array, the other array is not affected.
 
-## Examples
+Examples
+--------
 
 ### Return a portion of an existing array
 
@@ -88,7 +92,7 @@ This script writes:
 
 ### Array-like objects
 
-`slice` method can also be called to convert Array-like objects/collections to a new Array. You just [`bind`](../function/bind) the method to the object. The [`arguments`](../../functions/arguments) inside a function is an example of an 'array-like object'.
+`slice` method can also be called to convert Array-like objects/collections to a new Array. You just [`bind`](../function/bind) the method to the object. The [`arguments`](../../functions/arguments) inside a function is an example of an ‘array-like object’.
 
     function list() {
       return Array.prototype.slice.call(arguments)
@@ -109,14 +113,14 @@ Anyway, it can be simplified using [`bind`](../function/bind).
 
     let list1 = list(1, 2, 3) // [1, 2, 3]
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.slice">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-array.prototype.slice</span></td></tr></tbody></table>
 
-<span class="small">#sec-array.prototype.slice</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -172,7 +176,8 @@ Samsung Internet
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`Array.prototype.splice()`](splice)
 -   [`Function.prototype.call()`](../function/call)

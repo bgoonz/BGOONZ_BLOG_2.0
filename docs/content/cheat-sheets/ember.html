@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2022-01-03" />
+  <title>title</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">title</h1>
+<p class="subtitle">subtitle</p>
+<p class="date">2022-01-03</p>
+</header>
+<hr />
+<p>title: Ember.js category: JavaScript libraries</p>
+<hr />
+<p>{% raw %}</p>
+<h3 id="routes">Routes</h3>
+<pre><code>App.Router.map(function() {
+  this.resource(&#39;trips&#39;, function() {
+      this.route(&#39;item&#39;, { path: &#39;/:trip_id&#39; });
+  });
+
+  this.route(&#39;upcoming&#39;);
+  this.route(&#39;about&#39;, { path: &#39;/about&#39; });
+  this.route(&#39;schedules&#39;);
+  this.route(&#39;history&#39;);
+  this.route(&#39;post&#39;);
+});</code></pre>
+<h3 id="a-route">A route</h3>
+<pre><code>App.IndexRoute = Ember.Route.extend({
+  setupController: function(controller) {
+    controller.set(&#39;title&#39;, &#39;my app&#39;);
+    // &lt;h1&gt;{{title}}&lt;/h1&gt;
+  },
+
+  setupController: function(controller, model) {
+    controller.set(&quot;model&quot;, model);
+    this.controllerFor(&#39;topPost&#39;).set(&#39;model&#39;, model);
+  },
+
+  model: function(params) {
+    return this.store.find(&#39;posts&#39;);
+    return this.store.find(&#39;post&#39;, params.post_id);
+  },
+
+  serialize: function(model) {
+    // this will make the URL `/posts/foo-post`
+    return { post_slug: model.get(&#39;slug&#39;) };
+  }
+});</code></pre>
+<h3 id="view">View</h3>
+<pre><code>App.InfoView = Ember.View.extend({
+  templateName: &#39;input&#39;,  /* optional */
+
+  fooName: &quot;Hello&quot;  /* {{ view.fooName }} */
+
+  click: function(e) {
+    &quot;I was clicked&quot;;
+  }
+
+});</code></pre>
+<h3 id="markup">markup</h3>
+<pre><code>&lt;img {{bindAttr src=&quot;avatarURL&quot;}}&gt;
+&lt;button {{action follow}}&gt;</code></pre>
+<p>Value binding:</p>
+<pre><code>{{view Ember.TextField class=&quot;input block&quot; valuebinding=&quot;emailAddresses&quot;}}</code></pre>
+<p>Actions:</p>
+<pre><code>&lt;button {{action invite emailAddresses}}&gt;Invite&gt;&lt;/button&gt;
+
+&lt;a href=&quot;#&quot; {{action set &quot;isEditingContacts&quot; true target=&quot;view&quot;}}</code></pre>
+<p>{% endraw %}</p>
+</body>
+</html>

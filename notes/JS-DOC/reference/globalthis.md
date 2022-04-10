@@ -1,4 +1,5 @@
-# globalThis
+globalThis
+==========
 
 The global `globalThis` property contains the global `this` value, which is akin to the [global object](https://developer.mozilla.org/en-US/docs/Glossary/Global_object).
 
@@ -16,22 +17,24 @@ Configurable
 
 yes
 
-## Description
+Description
+-----------
 
 Historically, accessing the global object has required different syntax in different JavaScript environments. On the web you can use [`window`](https://developer.mozilla.org/en-US/docs/Web/API/Window/window), [`self`](https://developer.mozilla.org/en-US/docs/Web/API/Window/self), or [`frames`](https://developer.mozilla.org/en-US/docs/Web/API/Window/frames) - but in [Web Workers](https://developer.mozilla.org/en-US/docs/Web/API/Worker) only `self` will work. In Node.js none of these work, and you must instead use `global`.  
 The `this` keyword could be used inside functions running in non-strict mode, but `this` will be `undefined` in Modules and inside functions running in strict mode. You can also use `Function('return this')()`, but environments that disable [`eval()`](eval), like [CSP](https://developer.mozilla.org/en-US/docs/Glossary/CSP) in browsers, prevent use of [`Function`](function) in this way.
 
-The `globalThis` property provides a standard way of accessing the global `this` value (and hence the global object itself) across environments. Unlike similar properties such as `window` and `self`, it's guaranteed to work in window and non-window contexts. In this way, you can access the global object in a consistent manner without having to know which environment the code is being run in. To help you remember the name, just remember that in global scope the `this` value is `globalThis`.
+The `globalThis` property provides a standard way of accessing the global `this` value (and hence the global object itself) across environments. Unlike similar properties such as `window` and `self`, it’s guaranteed to work in window and non-window contexts. In this way, you can access the global object in a consistent manner without having to know which environment the code is being run in. To help you remember the name, just remember that in global scope the `this` value is `globalThis`.
 
 ### HTML and the WindowProxy
 
-In many engines `globalThis` will be a reference to the actual global object, but in web browsers, due to iframe and cross-window security considerations, it references a [`Proxy`](proxy) around the actual global object (which you can't directly access). This distinction is rarely relevant in common usage, but important to be aware of.
+In many engines `globalThis` will be a reference to the actual global object, but in web browsers, due to iframe and cross-window security considerations, it references a [`Proxy`](proxy) around the actual global object (which you can’t directly access). This distinction is rarely relevant in common usage, but important to be aware of.
 
 ### Naming
 
-Several other popular name choices such as `self` and `global` were removed from consideration because of their potential to break compatibility with existing code. See the [language proposal's "naming" document](https://github.com/tc39/proposal-global/blob/master/NAMING.md) for more details.
+Several other popular name choices such as `self` and `global` were removed from consideration because of their potential to break compatibility with existing code. See the [language proposal’s “naming” document](https://github.com/tc39/proposal-global/blob/master/NAMING.md) for more details.
 
-## Examples
+Examples
+--------
 
 ### Search for the global across environments
 
@@ -56,12 +59,11 @@ With `globalThis` available, the additional search for the global across environ
       // no setTimeout in this environment!
     }
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-globalthis">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-globalthis</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-globalthis</span></td></tr></tbody></table>
 
 `globalThis`
 
@@ -89,7 +91,8 @@ No
 
 10.0
 
-## See also
+See also
+--------
 
 -   [`this`](../operators/this)
 

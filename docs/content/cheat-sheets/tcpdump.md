@@ -1,97 +1,130 @@
-# TCPDump is a packet analyzer. It allows the user to intercept and display TCP/IP
+TCPDump is a packet analyzer. It allows the user to intercept and display TCP/IP
+================================================================================
 
-# and other packets being transmitted or received over a network. (cf Wikipedia).
+and other packets being transmitted or received over a network. (cf Wikipedia).
+===============================================================================
 
-# Note: 173.194.40.120 => google.com
+Note: 173.194.40.120 =&gt; google.com
+=====================================
 
-# Intercepts all packets on eth0
+Intercepts all packets on eth0
+==============================
 
 tcpdump -i eth0
 
-# Intercepts all packets from/to 173.194.40.120
+Intercepts all packets from/to 173.194.40.120
+=============================================
 
 tcpdump host 173.194.40.120
 
-# Intercepts all packets on all interfaces from / to 173.194.40.120 port 80
+Intercepts all packets on all interfaces from / to 173.194.40.120 port 80
+=========================================================================
 
-# -nn => Disables name resolution for IP addresses and port numbers.
+-nn =&gt; Disables name resolution for IP addresses and port numbers.
+=====================================================================
 
 tcpdump -nn -i any host 173.194.40.120 and port 80
 
-# Make a grep on tcpdump (ASCII)
+Make a grep on tcpdump (ASCII)
+==============================
 
-# -A => Show only ASCII in packets.
+-A =&gt; Show only ASCII in packets.
+====================================
 
-# -s0 => By default, tcpdump only captures 68 bytes.
+-s0 =&gt; By default, tcpdump only captures 68 bytes.
+=====================================================
 
-tcpdump -i any -A host 173.194.40.120 and port 80 | grep 'User-Agent'
+tcpdump -i any -A host 173.194.40.120 and port 80 | grep ‘User-Agent’
 
-# With ngrep
+With ngrep
+==========
 
-# -d eth0 => To force eth0 (else ngrep work on all interfaces)
+-d eth0 =&gt; To force eth0 (else ngrep work on all interfaces)
+===============================================================
 
-# -s0 => force ngrep to look at the entire packet. (Default snaplen: 65536 bytes)
+-s0 =&gt; force ngrep to look at the entire packet. (Default snaplen: 65536 bytes)
+==================================================================================
 
-ngrep 'User-Agent' host 173.194.40.120 and port 80
+ngrep ‘User-Agent’ host 173.194.40.120 and port 80
 
-# Intercepts all packets on all interfaces from / to 8.8.8.8 or 173.194.40.127 on port 80
+Intercepts all packets on all interfaces from / to 8.8.8.8 or 173.194.40.127 on port 80
+=======================================================================================
 
-tcpdump 'host ( 8.8.8.8 or 173.194.40.127 ) and port 80' -i any
+tcpdump ‘host ( 8.8.8.8 or 173.194.40.127 ) and port 80’ -i any
 
-# Intercepts all packets SYN and FIN of each TCP session.
+Intercepts all packets SYN and FIN of each TCP session.
+=======================================================
 
-tcpdump 'tcp[tcpflags] & (tcp-syn|tcp-fin) != 0'
+tcpdump ‘tcp\[tcpflags\] & (tcp-syn|tcp-fin) != 0’
 
-# To display SYN and FIN packets of each TCP session to a host that is not on our network
+To display SYN and FIN packets of each TCP session to a host that is not on our network
+=======================================================================================
 
-tcpdump 'tcp[tcpflags] & (tcp-syn|tcp-fin) != 0 and not src and dst net local_addr'
+tcpdump ‘tcp\[tcpflags\] & (tcp-syn|tcp-fin) != 0 and not src and dst net local\_addr’
 
-# To display all IPv4 HTTP packets that come or arrive on port 80 and that contain only data (no SYN, FIN no, no packet containing an ACK)
+To display all IPv4 HTTP packets that come or arrive on port 80 and that contain only data (no SYN, FIN no, no packet containing an ACK)
+========================================================================================================================================
 
-tcpdump 'tcp port 80 and (((ip[2:2] - ((ip[0]&0xf)<<2)) - ((tcp[12]&0xf0)>>2)) != 0)'
+tcpdump ‘tcp port 80 and (((ip\[2:2\] - ((ip\[0\]&0xf)&lt;&lt;2)) - ((tcp\[12\]&0xf0)&gt;&gt;2)) != 0)’
 
-# Saving captured data
+Saving captured data
+====================
 
 tcpdump -w file.cap
 
-# Reading from capture file
+Reading from capture file
+=========================
 
 tcpdump -r file.cap
 
-# Show content in hexa
+Show content in hexa
+====================
 
-# Change -x to -xx => show extra header (ethernet).
+Change -x to -xx =&gt; show extra header (ethernet).
+====================================================
 
 tcpdump -x
 
-# Show content in hexa and ASCII
+Show content in hexa and ASCII
+==============================
 
-# Change -X to -XX => show extra header (ethernet).
+Change -X to -XX =&gt; show extra header (ethernet).
+====================================================
 
 tcpdump -X
 
-# Note on packet maching:
+Note on packet maching:
+=======================
 
-# Port matching:
+Port matching:
+==============
 
-# - portrange 22-23
+- portrange 22-23
+=================
 
-# - not port 22
+- not port 22
+=============
 
-# - port ssh
+- port ssh
+==========
 
-# - dst port 22
+- dst port 22
+=============
 
-# - src port 22
+- src port 22
+=============
 
-#
+Host matching:
+==============
 
-# Host matching:
+- dst host 8.8.8.8
+==================
 
-# - dst host 8.8.8.8
+- not dst host 8.8.8.8
+======================
 
-# - not dst host 8.8.8.8
+- src net 67.207.148.0 mask 255.255.255.0
+=========================================
 
-# - src net 67.207.148.0 mask 255.255.255.0
-
-# - src net 67.207.148.0/24
+- src net 67.207.148.0/24
+=========================

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>localecompare</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="string.prototype.localecompare">String.prototype.localeCompare()</h1>
+<p>The <code>localeCompare()</code> method returns a number indicating whether a reference string comes before, or after, or is the same as the given string in sort order.</p>
+<p>The new <code>locales</code> and <code>options</code> arguments let applications specify the language whose sort order should be used and customize the behavior of the function. In older implementations, which ignore the <code>locales</code> and <code>options</code> arguments, the locale and sort order used are entirely implementation-dependent.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>localeCompare(compareString)
+localeCompare(compareString, locales)
+localeCompare(compareString, locales, options)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>compareString</code><br />
+The string against which the <code>referenceStr</code> is compared.</p>
+<p><code>locales</code> and <code>options</code><br />
+These arguments customize the behavior of the function and let applications specify the language whose formatting conventions should be used. In implementations which ignore the <code>locales</code> and <code>options</code> arguments, the locale used and the form of the string returned are entirely implementation-dependent.</p>
+<p>See the <a href="../intl/collator/collator"><code>Intl.Collator()</code> constructor</a> for details on these parameters and how to use them.</p>
+<h3 id="return-value">Return value</h3>
+<p>A <strong>negative</strong> number if <code>referenceStr</code> occurs before <code>compareString</code>; <strong>positive</strong> if the <code>referenceStr</code> occurs after <code>compareString</code>; <code>0</code> if they are equivalent.</p>
+<h2 id="description">Description</h2>
+<p>Returns an integer indicating whether the <code>referenceStr</code> comes before, after or is equivalent to the <code>compareString</code>.</p>
+<ul>
+<li>Negative when the <code>referenceStr</code> occurs before <code>compareString</code></li>
+<li>Positive when the <code>referenceStr</code> occurs after <code>compareString</code></li>
+<li>Returns <code>0</code> if they are equivalent</li>
+</ul>
+<p><strong>Warning:</strong> Do not rely on exact return values of <code>-1</code> or <code>1</code>!</p>
+<p>Negative and positive integer results vary between browsers (as well as between browser versions) because the W3C specification only mandates negative and positive values. Some browsers may return <code>-2</code> or <code>2</code>, or even some other negative or positive value.</p>
+<h2 id="performance">Performance</h2>
+<p>When comparing large numbers of strings, such as in sorting large arrays, it is better to create an <a href="../intl/collator"><code>Intl.Collator</code></a> object and use the function provided by its <a href="../intl/collator/compare"><code>compare</code></a> property.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-localecompare">Using <code>localeCompare()</code></h3>
+<pre><code>// The letter &quot;a&quot; is before &quot;c&quot; yielding a negative value
+&#39;a&#39;.localeCompare(&#39;c&#39;); // -2 or -1 (or some other negative value)
+
+// Alphabetically the word &quot;check&quot; comes after &quot;against&quot; yielding a positive value
+&#39;check&#39;.localeCompare(&#39;against&#39;); // 2 or 1 (or some other positive value)
+
+// &quot;a&quot; and &quot;a&quot; are equivalent yielding a neutral value of zero
+&#39;a&#39;.localeCompare(&#39;a&#39;); // 0</code></pre>
+<h3 id="sort-an-array">Sort an array</h3>
+<p><code>localeCompare()</code> enables case-insensitive sorting for an array.</p>
+<pre><code>let items = [&#39;réservé&#39;, &#39;Premier&#39;, &#39;Cliché&#39;, &#39;communiqué&#39;, &#39;café&#39;, &#39;Adieu&#39;];
+items.sort( (a, b) =&gt; a.localeCompare(b, &#39;fr&#39;, {ignorePunctuation: true}));
+// [&#39;Adieu&#39;, &#39;café&#39;, &#39;Cliché&#39;, &#39;communiqué&#39;, &#39;Premier&#39;, &#39;réservé&#39;]</code></pre>
+<h3 id="check-browser-support-for-extended-arguments">Check browser support for extended arguments</h3>
+<p>The <code>locales</code> and <code>options</code> arguments are not supported in all browsers yet.</p>
+<p>To check whether an implementation supports them, use the <code>"i"</code> argument (a requirement that illegal language tags are rejected) and look for a <a href="../rangeerror"><code>RangeError</code></a> exception:</p>
+<pre><code>function localeCompareSupportsLocales() {
+  try {
+    &#39;foo&#39;.localeCompare(&#39;bar&#39;, &#39;i&#39;);
+  } catch (e) {
+    return e.name === &#39;RangeError&#39;;
+  }
+  return false;
+}</code></pre>
+<h3 id="using-locales">Using <code>locales</code></h3>
+<p>The results provided by <code>localeCompare()</code> vary between languages. In order to get the sort order of the language used in the user interface of your application, make sure to specify that language (and possibly some fallback languages) using the <code>locales</code> argument:</p>
+<pre><code>console.log(&#39;ä&#39;.localeCompare(&#39;z&#39;, &#39;de&#39;)); // a negative value: in German, ä sorts before z
+console.log(&#39;ä&#39;.localeCompare(&#39;z&#39;, &#39;sv&#39;)); // a positive value: in Swedish, ä sorts after z</code></pre>
+<h3 id="using-options">Using <code>options</code></h3>
+<p>The results provided by <code>localeCompare()</code> can be customized using the <code>options</code> argument:</p>
+<pre><code>// in German, ä has a as the base letter
+console.log(&#39;ä&#39;.localeCompare(&#39;a&#39;, &#39;de&#39;, { sensitivity: &#39;base&#39; })); // 0
+
+// in Swedish, ä and a are separate base letters
+console.log(&#39;ä&#39;.localeCompare(&#39;a&#39;, &#39;sv&#39;, { sensitivity: &#39;base&#39; })); // a positive value</code></pre>
+<h3 id="numeric-sorting">Numeric sorting</h3>
+<pre><code>// by default, &quot;2&quot; &gt; &quot;10&quot;
+console.log(&quot;2&quot;.localeCompare(&quot;10&quot;)); // 1
+
+// numeric using options:
+console.log(&quot;2&quot;.localeCompare(&quot;10&quot;, undefined, {numeric: true})); // -1
+
+// numeric using locales tag:
+console.log(&quot;2&quot;.localeCompare(&quot;10&quot;, &quot;en-u-kn-true&quot;)); // -1</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-string.prototype.localecompare">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-string.prototype.localecompare</span></a>
+</td>
+</tr>
+<tr class="even">
+<td>
+<p><a href="https://tc39.es/ecma402/#sup-String.prototype.localeCompare">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) <br/></p>
+<span class="small">#sup-String.prototype.localeCompare</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>localeCompare</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>5.5</p>
+<p>7</p>
+<p>3</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>locales</code></p>
+<p>24</p>
+<p>12</p>
+<p>29</p>
+<p>11</p>
+<p>15</p>
+<p>10</p>
+<p>No</p>
+<p>26</p>
+<p>56</p>
+<p>No</p>
+<p>10</p>
+<p>1.5</p>
+<p><code>options</code></p>
+<p>24</p>
+<p>12</p>
+<p>29</p>
+<p>11</p>
+<p>15</p>
+<p>10</p>
+<p>No</p>
+<p>26</p>
+<p>56</p>
+<p>No</p>
+<p>10</p>
+<p>1.5</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../intl/collator"><code>Intl.Collator</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare</a></p>
+</body>
+</html>

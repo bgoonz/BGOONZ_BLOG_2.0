@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>extends</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="extends">extends</h1>
+<p>The <code>extends</code> keyword is used in <a href="../statements/class">class declarations</a> or <a href="../operators/class">class expressions</a> to create a class that is a child of another class.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>class ChildClass extends ParentClass { ... }</code></pre>
+<h2 id="description">Description</h2>
+<p>The <code>extends</code> keyword can be used to subclass custom classes as well as built-in objects.</p>
+<p>The <code>.prototype</code> of the extension must be an <a href="../global_objects/object"><code>Object</code></a> or <a href="../global_objects/null"><code>null</code></a>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-extends">Using extends</h3>
+<p>The first example creates a class called <code>Square</code> from a class called <code>Polygon</code>. This example is extracted from this <a href="https://googlechrome.github.io/samples/classes-es6/index.html">live demo</a> <a href="https://github.com/GoogleChrome/samples/blob/gh-pages/classes-es6/index.html">(source)</a>.</p>
+<pre><code>class Square extends Polygon {
+  constructor(length) {
+    // Here, it calls the parent class&#39; constructor with lengths
+    // provided for the Polygon&#39;s width and height
+    super(length, length);
+    // Note: In derived classes, super() must be called before you
+    // can use &#39;this&#39;. Leaving this out will cause a reference error.
+    this.name = &#39;Square&#39;;
+  }
+
+  get area() {
+    return this.height * this.width;
+  }
+}</code></pre>
+<h3 id="using-extends-with-built-in-objects">Using extends with built-in objects</h3>
+<p>This example extends the built-in <a href="../global_objects/date"><code>Date</code></a> object. This example is extracted from this <a href="https://googlechrome.github.io/samples/classes-es6/index.html">live demo</a> <a href="https://github.com/GoogleChrome/samples/blob/gh-pages/classes-es6/index.html">(source)</a>.</p>
+<pre><code>class myDate extends Date {
+
+  getFormattedDate() {
+    var months = [&#39;Jan&#39;, &#39;Feb&#39;, &#39;Mar&#39;, &#39;Apr&#39;, &#39;May&#39;, &#39;Jun&#39;, &#39;Jul&#39;, &#39;Aug&#39;, &#39;Sep&#39;, &#39;Oct&#39;, &#39;Nov&#39;, &#39;Dec&#39;];
+    return this.getDate() + &#39;-&#39; + months[this.getMonth()] + &#39;-&#39; + this.getFullYear();
+  }
+}</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-class-definitions">ECMAScript (ECMA-262) <br/></p>
+<span class="small">The definition of ‘extends’ in that specification.</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>extends</code></p>
+<p>49</p>
+<p>42-49</p>
+<p>Strict mode is required.</p>
+<p>42-49</p>
+<p>13</p>
+<p>45</p>
+<p>No</p>
+<p>36</p>
+<p>29-36</p>
+<p>Strict mode is required.</p>
+<p>29-36</p>
+<p>9</p>
+<p>49</p>
+<p>42-49</p>
+<p>Strict mode is required.</p>
+<p>49</p>
+<p>42-49</p>
+<p>Strict mode is required.</p>
+<p>42-49</p>
+<p>45</p>
+<p>36</p>
+<p>29-36</p>
+<p>Strict mode is required.</p>
+<p>29-36</p>
+<p>9</p>
+<p>5.0</p>
+<p>4.0-5.0</p>
+<p>Strict mode is required.</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../classes">Classes</a></li>
+<li><a href="constructor">constructor</a></li>
+<li><a href="../operators/super">super</a></li>
+<li><a href="https://medium.com/beginners-guide-to-mobile-web-development/super-and-extends-in-javascript-es6-understanding-the-tough-parts-6120372d3420">Anurag Majumdar - Super &amp; Extends in JavaScript</a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/extends" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/extends</a></p>
+</body>
+</html>

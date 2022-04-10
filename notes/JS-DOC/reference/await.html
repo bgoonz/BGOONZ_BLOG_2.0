@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>await</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="await">await</h1>
+<p>The <code>await</code> operator is used to wait for a <a href="../global_objects/promise"><code>Promise</code></a>. It can only be used inside an <a href="../statements/async_function"><code>async function</code></a> within regular JavaScript code; however it can be used on its own with <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules">JavaScript modules.</a></p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>[rv] = await expression;</code></pre>
+<p><code>expression</code><br />
+A <a href="../global_objects/promise"><code>Promise</code></a> or any value to wait for.</p>
+<p><code>rv</code><br />
+Returns the fulfilled value of the promise, or the value itself if it’s not a <code>Promise</code>.</p>
+<h2 id="description">Description</h2>
+<p>The <code>await</code> expression causes <code>async</code> function execution to pause until a <code>Promise</code> is settled (that is, fulfilled or rejected), and to resume execution of the <code>async</code> function after fulfillment. When resumed, the value of the <code>await</code> expression is that of the fulfilled <code>Promise</code>.</p>
+<p>If the <code>Promise</code> is rejected, the <code>await</code> expression throws the rejected value.</p>
+<p>If the value of the <em>expression</em> following the <code>await</code> operator is not a <code>Promise</code>, it’s converted to a <a href="../global_objects/promise/resolve">resolved Promise</a>.</p>
+<p>An <code>await</code> splits execution flow, allowing the caller of the async function to resume execution. After the <code>await</code> defers the continuation of the async function, execution of subsequent statements ensues. If this <code>await</code> is the last expression executed by its function, execution continues by returning to the function’s caller a pending <code>Promise</code> for completion of the <code>await</code>’s function and resuming execution of that caller.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="awaiting-a-promise-to-be-fulfilled">Awaiting a promise to be fulfilled</h3>
+<p>If a <code>Promise</code> is passed to an <code>await</code> expression, it waits for the <code>Promise</code> to be fulfilled and returns the fulfilled value.</p>
+<pre><code>function resolveAfter2Seconds(x) {
+  return new Promise(resolve =&gt; {
+    setTimeout(() =&gt; {
+      resolve(x);
+    }, 2000);
+  });
+}
+
+async function f1() {
+  var x = await resolveAfter2Seconds(10);
+  console.log(x); // 10
+}
+
+f1();</code></pre>
+<h3 id="thenable-objects">Thenable objects</h3>
+<p><a href="../global_objects/promise/then"><code>Thenable objects</code></a> will be fulfilled just the same.</p>
+<pre><code>async function f2() {
+  const thenable = {
+    then: function(resolve, _reject) {
+      resolve(&#39;resolved!&#39;)
+    }
+  };
+  console.log(await thenable); // resolved!
+}
+
+f2();</code></pre>
+<h3 id="conversion-to-promise">Conversion to promise</h3>
+<p>If the value is not a <code>Promise</code>, it converts the value to a resolved <code>Promise</code>, and waits for it.</p>
+<pre><code>async function f3() {
+  var y = await 20;
+  console.log(y); // 20
+}
+
+f3();</code></pre>
+<h3 id="promise-rejection">Promise rejection</h3>
+<p>If the <code>Promise</code> is rejected, the rejected value is thrown.</p>
+<pre><code>async function f4() {
+  try {
+    var z = await Promise.reject(30);
+  } catch(e) {
+    console.error(e); // 30
+  }
+}
+
+f4();</code></pre>
+<h3 id="handling-rejected-promises">Handling rejected promises</h3>
+<p>Handle rejected <code>Promise</code> without try block.</p>
+<pre><code>var response = await promisedFunction().catch((err) =&gt; { console.error(err); });
+// response will be undefined if the promise is rejected</code></pre>
+<h3 id="top-level-await">Top level await</h3>
+<p>You can use the <code>await</code> keyword on its own (outside of an async function) within a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules">JavaScript module</a>. This means modules, with child modules that use <code>await</code>, wait for the child module to execute before they themselves run. All while not blocking other child modules from loading.</p>
+<p>Here is an example of a simple module using the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API">Fetch API</a> and specifying await within the <code>export statement</code>. Any modules that include this will wait for the fetch to resolve before running any code.</p>
+<pre><code>// fetch request
+const colors = fetch(&#39;../data/colors.json&#39;)
+  .then(response =&gt; response.json());
+
+export default await colors;</code></pre>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>npm-command-line-cheat-sheet</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="npm-command-line-cheat-sheet">NPM Command Line Cheat Sheet</h1>
+<pre><code># NPM CheatSheet.
+# Super easy intall: npm comes with node now.
+# To create your own npm package: https://www.npmjs.org/doc/misc/npm-developers.html
+# More: https://www.npmjs.org/doc/
+
+# 1. NPM Command Lines.
+# Local mode is the default.
+# Use --global or -g on any command to operate in global mode instead.
+
+# As of version 0.3, it is recommended to run npm as root.
+# This allows npm to change the user identifier to the `nobody` user
+# prior to running any package build or test commands.
+
+npm &lt;cmd&gt; -h                                            # quick help on &lt;cmd&gt;
+npm -l                                                  # display full usage info
+npm adduser                                             # add a registry user account
+npm bin                                                 # display npm bin folder
+npm bugs &lt;pkgname&gt;                                      # bugs for a package in a web browser maybe
+npm build &lt;package-folder&gt;                              # build a package (should not be called directly)
+npm cache [add|ls|clean] &lt;tarball|folder&gt;               # manipulates packages cache
+npm config [set|get|delete|list|edit] &lt;key&gt; &lt;value&gt;     # manage the npm configuration files
+npm dedupe [package names...]  --tag                    # reduce duplication
+npm decrecate &lt;name&gt;[@&lt;version&gt;] &lt;message&gt;              # deprecate a version of a package (must be the package owner)
+npm docs [&lt;pkg-name&gt; [&lt;pkg-name&gt; ...]]                  # docs for a package in a web browser maybe
+npm edit &lt;name&gt;[@&lt;version&gt;]                             # edit an installed package (default EDITOR set to &quot;vi&quot;)
+npm explore &lt;name&gt;[@&lt;version&gt;] [ -- &lt;cmd&gt;]              # browse an installed package
+npm faq                                                 # commonly asked questions
+npm help-search &lt;some search terms&gt;                     # search npm help documentation (rarely necessary to call directly)
+npm help &lt;topic&gt; &lt;some search terms&gt;                    # get help on npm
+npm init                                                # interactively create a package.json file
+npm install &lt;folder|name@&lt;tag|version&gt;|tarball&gt;         # install a package (optional flags: --save, --save-dev, --save-optional, --save-exact)
+npm link &lt;pkgname&gt;                                      # symlink a package folder
+npm ls &lt;pkg&gt;                                            # list installed packages (as well as their dependencies)
+npm outdated [&lt;name&gt; [&lt;name&gt; ...]]                      # check for outdated packages
+npm owner [ls|add|rm] &lt;pkg-name&gt; &lt;user&gt;                 # manage package owners
+npm pack [&lt;pkg&gt; [&lt;pkg&gt; ...]]                            # create a tarball from a package
+npm prefix                                              # display prefix
+npm prune [&lt;name&gt; [&lt;name ...]] --production             # remove extraneous packages
+npm publish &lt;tarball|folder&gt; [--tag &lt;tag&gt;]              # publish a package
+npm rebuild [&lt;name &gt; [&lt;name&gt; ...]]                      # rebuild a package
+npm repo &lt;pkgname&gt;                                      # open package repository in the browser
+npm restart &lt;name&gt;                                      # start a package
+npm rm &lt;name&gt;                                           # remove a package
+npm root                                                # display npm root
+npm run [&lt;pkg&gt;] [command]                               # run arbitrary package scripts
+npm search [search terms ...] [--long]                  # search for packages
+npm shrinkwrap                                          # lock down dependency versions
+npm star &lt;pkgname&gt; [&lt;pkg&gt;, ...]                         # mark your favorite packages
+npm stars [username]                                    # view packages marked as favorites
+npm start &lt;name&gt;                                        # start a package
+npm stop &lt;name&gt;                                         # stop a package
+npm submodule &lt;pkg&gt;                                     # add a package as a git submodule
+npm tag &lt;name&gt;@&lt;version&gt;                                # tag a published version
+npm test &lt;name&gt;                                         # test a package
+npm unpublish &lt;name&gt;[@&lt;version&gt;]                        # remove a package from the registry
+npm unstar &lt;pkgname&gt; [&lt;pkg&gt;, ...]                       # Unfavorite specified p
+npm update [-g] [&lt;name&gt; [&lt;name&gt; ...]]                   # update a package
+npm version [&lt;newversion&gt; | major | minor | patch]      # bump a package version
+npm view &lt;name&gt;[@&lt;version&gt;] [&lt;field&lt;[.&lt;subfield&gt;] ...]  # view registry info
+npm whoami                                              # display npm username</code></pre>
+</body>
+</html>

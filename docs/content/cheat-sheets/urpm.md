@@ -1,23 +1,24 @@
----
-tags: [packaging]
----
+To search (fuzzy) :
+===================
 
-# To search (fuzzy) <package>:
+urpmq -Y
 
-urpmq -Y <package>
+To check if is installed:
+=========================
 
-# To check if <package> is installed:
+rpm -q
 
-rpm -q <package>
+To install :
+============
 
-# To install <package>:
+urpmi
 
-urpmi <package>
+To download without installing it:
+==================================
 
-# To download <package> without installing it:
+urpmi –no-install
 
-urpmi --no-install <package>
+To uninstall :
+==============
 
-# To uninstall <package>:
-
-urpme <package>
+urpme

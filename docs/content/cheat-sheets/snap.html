@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>snap</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="to-find">To find <package>:</h1>
+<p>snap find <package></p>
+<h1 id="to-view-detailed-information-about">To view detailed information about <package>:</h1>
+<p>snap info <package></p>
+<h1 id="to-view-all-private-snaps-must-be-logged-in">To view all private snaps (must be logged in):</h1>
+<p>snap find –private</p>
+<h1 id="to-install-the">To install the <package>:</h1>
+<p>sudo snap install <package></p>
+<h1 id="to-install-the-from-the-beta-channel">To install the <package> from the “beta” channel:</h1>
+<p>sudo snap install <package> –channel=beta</p>
+<h1 id="to-view-installed-snaps">To view installed snaps:</h1>
+<p>snap list</p>
+<h1 id="to-list-all-revisions-of-installed-snaps">To list all revisions of installed snaps:</h1>
+<p>snap list –all</p>
+<h1 id="to-manually-update-all-snaps">To (manually) update all snaps:</h1>
+<p>sudo snap refresh</p>
+<h1 id="to-manually-update">To (manually) update <package>:</h1>
+<p>sudo snap refresh <package></p>
+<h1 id="to-update-to-the-beta-channel">To update <package> to the “beta” channel:</h1>
+<p>sudo snap refresh <package> –channel=beta</p>
+<h1 id="to-revert-to-a-prior-version">To revert <package> to a prior version:</h1>
+<p>sudo snap revert <package></p>
+<h1 id="to-revert-to-revision-5">To revert <package> to revision 5:</h1>
+<p>snap revert <package> –revision 5</p>
+<h1 id="to-remove">To remove <package>:</h1>
+<p>sudo snap remove <package></p>
+<h1 id="to-log-in-to-snap-must-first-create-account-online">To log in to snap (must first create account online):</h1>
+<p>sudo snap login</p>
+<h1 id="to-log-out-of-snap">To log out of snap:</h1>
+<p>snap logout</p>
+<h1 id="to-view-a-transaction-log-summary">To view a transaction log summary:</h1>
+<p>snap changes</p>
+<h1 id="to-view-details-of-item-123-in-the-transaction-log">To view details of item 123 in the transaction log:</h1>
+<p>snap change 123</p>
+<h1 id="to-watch-transaction-123">To watch transaction 123:</h1>
+<p>snap watch 123</p>
+<h1 id="to-abort-transaction-123">To abort transaction 123:</h1>
+<p>snap abort 123</p>
+<h1 id="to-download-and-its-assertions-without-installing-it">To download <package> (and its assertions) <em>without</em> installing it:</h1>
+<p>snap download <package></p>
+<h1 id="to-install-the-locally-downloaded-foo-snap-with-assertions">To install the locally-downloaded <code>foo</code> snap with assertions:</h1>
+<p>snap ack foo.assert snap install foo.snap</p>
+<h1 id="to-install-the-locally-downloaded-foo-snap-without-assertions">To install the locally-downloaded <code>foo</code> snap without assertions:</h1>
+<h1 id="nb-this-is-dangerous-because-the-integrity-of-the-snap-will-not-be">NB: this is dangerous, because the integrity of the snap will not be</h1>
+<h1 id="verified.-you-should-only-do-this-to-test-a-snap-that-you-are-currently">verified. You should only do this to test a snap that you are currently</h1>
+<h1 id="developing.">developing.</h1>
+<p>snap install –dangerous foo.snap</p>
+<h1 id="to-install-snap-foo-in-dev-mode">To install snap <code>foo</code> in “dev mode”:</h1>
+<h1 id="nb-this-is-dangerous-and-bypasses-the-snap-sandboxing-mechanisms">NB: this is dangerous, and bypasses the snap sandboxing mechanisms</h1>
+<p>snap install –devmode foo</p>
+<h1 id="to-install-snap-foo-in-classic-mode">To install snap <code>foo</code> in “classic mode”:</h1>
+<h1 id="nb-this-is-likewise-dangerous">NB: this is likewise dangerous</h1>
+<p>snap install –classic foo</p>
+<h1 id="to-view-available-snap-interfaces">To view available snap interfaces:</h1>
+<p>snap interfaces</p>
+<h1 id="to-connect-the-foocamera-plug-to-the-ubuntu-core-slot">To connect the <code>foo:camera</code> plug to the ubuntu core slot:</h1>
+<p>snap connect foo:camera :camera</p>
+<h1 id="to-disconnect-the-foocamera-plug-from-the-ubuntu-core-slot">To disconnect the <code>foo:camera</code> plug from the ubuntu core slot:</h1>
+<p>snap disconnect foo:camera</p>
+<h1 id="to-disable-the-foo-snap">To disable the <code>foo</code> snap</h1>
+<p>snap disable foo</p>
+<h1 id="to-enable-the-foo-snap">To enable the <code>foo</code> snap</h1>
+<p>snap enable foo</p>
+<h1 id="to-set-snap-foos-bar-property-to-10">To set snap <code>foo</code>’s <code>bar</code> property to 10:</h1>
+<p>snap set foo bar=10</p>
+<h1 id="to-read-snap-foos-current-bar-property">To read snap <code>foo</code>’s current <code>bar</code> property:</h1>
+<p>snap get foo bar</p>
+</body>
+</html>

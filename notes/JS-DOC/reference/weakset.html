@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>weakset</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="weakset">WeakSet</h1>
+<p>The <code>WeakSet</code> object lets you store weakly held <em>objects</em> in a collection.</p>
+<h2 id="description">Description</h2>
+<p><code>WeakSet</code> objects are collections of objects. Just as with <a href="set"><code>Set</code></a>s, each object in a <code>WeakSet</code> may occur only once; all objects in a <code>WeakSet</code>’s collection are unique.</p>
+<p>The main differences to the <a href="set"><code>Set</code></a> object are:</p>
+<ul>
+<li><code>WeakSet</code>s are collections of <strong>objects only</strong>. They cannot contain arbitrary values of any type, as <a href="set"><code>Set</code></a>s can.</li>
+<li>The <code>WeakSet</code> is <em>weak</em>, meaning references to objects in a <code>WeakSet</code> are held <em>weakly</em>. If no other references to an object stored in the <code>WeakSet</code> exist, those objects can be garbage collected. <strong>Note:</strong> This also means that there is no list of current objects stored in the collection. <code>WeakSets</code> are not enumerable.</li>
+</ul>
+<h3 id="use-case-detecting-circular-references">Use case: Detecting circular references</h3>
+<p>Functions that call themselves recursively need a way of guarding against circular data structures by tracking which objects have already been processed.</p>
+<p><code>WeakSet</code>s are ideal for this purpose:</p>
+<pre><code>// Execute a callback on everything stored inside an object
+function execRecursively(fn, subject, _refs = null){
+  if(!_refs)
+    _refs = new WeakSet();
+
+  // Avoid infinite recursion
+  if(_refs.has(subject))
+    return;
+
+  fn(subject);
+  if(&quot;object&quot; === typeof subject){
+    _refs.add(subject);
+    for(let key in subject)
+      execRecursively(fn, subject[key], _refs);
+  }
+}
+
+const foo = {
+  foo: &quot;Foo&quot;,
+  bar: {
+    bar: &quot;Bar&quot;
+  }
+};
+
+foo.bar.baz = foo; // Circular reference!
+execRecursively(obj =&gt; console.log(obj), foo);</code></pre>
+<p>Here, a <code>WeakSet</code> is created on the first run, and passed along with every subsequent function call (using the internal <code>_refs</code> parameter).</p>
+<p>The number of objects or their traversal order is immaterial, so a <code>WeakSet</code> is more suitable (and performant) than a <a href="set"><code>Set</code></a> for tracking object references, especially if a very large number of objects is involved.</p>
+<h2 id="constructor">Constructor</h2>
+<p><a href="weakset/weakset"><code>WeakSet()</code></a><br />
+Creates a new <code>WeakSet</code> object.</p>
+<h2 id="instance-methods">Instance methods</h2>
+<p><a href="weakset/add"><code>WeakSet.prototype.add(value)</code></a><br />
+Appends <code>value</code> to the <code>WeakSet</code> object.</p>
+<p><a href="weakset/delete"><code>WeakSet.prototype.delete(value)</code></a><br />
+Removes <code>value</code> from the <code>WeakSet</code>. <code>WeakSet.prototype.has(value)</code> will return <code>false</code> afterwards.</p>
+<p><a href="weakset/has"><code>WeakSet.prototype.has(value)</code></a><br />
+Returns a boolean asserting whether <code>value</code> is present in the <code>WeakSet</code> object or not.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-the-weakset-object">Using the WeakSet object</h3>
+<pre><code>const ws = new WeakSet();
+const foo = {};
+const bar = {};
+
+ws.add(foo);
+ws.add(bar);
+
+ws.has(foo);    // true
+ws.has(bar);    // true
+
+ws.delete(foo); // removes foo from the set
+ws.has(foo);    // false, foo has been removed
+ws.has(bar);    // true, bar is retained</code></pre>
+<p>Note that <code>foo !== bar</code>. While they are similar objects, *they are not <strong>the same object*</strong>. And so they are both added to the set.</p>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-weakset-objects">ECMAScript (ECMA-262) <br/></p>
+<span class="small">The definition of ‘WeakSet’ in that specification.</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>WeakSet</code></p>
+<p>36</p>
+<p>12</p>
+<p>34</p>
+<p>No</p>
+<p>23</p>
+<p>9</p>
+<p>37</p>
+<p>36</p>
+<p>34</p>
+<p>24</p>
+<p>9</p>
+<p>3.0</p>
+<p><code>WeakSet</code></p>
+<p>36</p>
+<p>12</p>
+<p>34</p>
+<p>No</p>
+<p>23</p>
+<p>9</p>
+<p>37</p>
+<p>36</p>
+<p>34</p>
+<p>24</p>
+<p>9</p>
+<p>3.0</p>
+<p><code>add</code></p>
+<p>36</p>
+<p>12</p>
+<p>34</p>
+<p>No</p>
+<p>23</p>
+<p>9</p>
+<p>37</p>
+<p>36</p>
+<p>34</p>
+<p>24</p>
+<p>9</p>
+<p>3.0</p>
+<p><code>clear</code></p>
+<p>36-41</p>
+<p>No</p>
+<p>34-46</p>
+<p>No</p>
+<p>23-28</p>
+<p>No</p>
+<p>37-41</p>
+<p>36-41</p>
+<p>34-46</p>
+<p>24-28</p>
+<p>No</p>
+<p>3.0-4.0</p>
+<p><code>delete</code></p>
+<p>36</p>
+<p>12</p>
+<p>34</p>
+<p>No</p>
+<p>23</p>
+<p>9</p>
+<p>37</p>
+<p>36</p>
+<p>34</p>
+<p>24</p>
+<p>9</p>
+<p>3.0</p>
+<p><code>has</code></p>
+<p>36</p>
+<p>12</p>
+<p>34</p>
+<p>No</p>
+<p>23</p>
+<p>9</p>
+<p>37</p>
+<p>36</p>
+<p>34</p>
+<p>24</p>
+<p>9</p>
+<p>3.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="map"><code>Map</code></a></li>
+<li><a href="set"><code>Set</code></a></li>
+<li><a href="weakmap"><code>WeakMap</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet</a></p>
+</body>
+</html>

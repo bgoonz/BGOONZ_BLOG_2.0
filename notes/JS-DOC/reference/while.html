@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>while</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="while">while</h1>
+<p>The <strong>while statement</strong> creates a loop that executes a specified statement as long as the test condition evaluates to true. The condition is evaluated before executing the statement.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>while (condition)
+  statement</code></pre>
+<p><code>condition</code><br />
+An expression evaluated before each pass through the loop. If this condition evaluates to true, <code>statement</code> is executed. When condition evaluates to false, execution continues with the statement after the <code>while</code> loop.</p>
+<p><code>statement</code><br />
+An optional statement that is executed as long as the condition evaluates to true. To execute multiple statements within the loop, use a <a href="block">block</a> statement (<code>{ ... }</code>) to group those statements.</p>
+<p>Note: Use the <code>break</code> statement to stop a loop before condition evaluates to true.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-while">Using while</h3>
+<p>The following <code>while</code> loop iterates as long as <code>n</code> is less than three.</p>
+<pre><code>var n = 0;
+var x = 0;
+
+while (n &lt; 3) {
+  n++;
+  x += n;
+}</code></pre>
+<p>Each iteration, the loop increments <code>n</code> and adds it to <code>x</code>. Therefore, <code>x</code> and <code>n</code> take on the following values:</p>
+<ul>
+<li>After the first pass: <code>n</code> = 1 and <code>x</code> = 1</li>
+<li>After the second pass: <code>n</code> = 2 and <code>x</code> = 3</li>
+<li>After the third pass: <code>n</code> = 3 and <code>x</code> = 6</li>
+</ul>
+<p>After completing the third pass, the condition <code>n</code> &lt; 3 is no longer true, so the loop terminates.</p>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-while-statement">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-while-statement</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>while</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="do...while"><code>do...while</code></a></li>
+<li><a href="for"><code>for</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while</a></p>
+</body>
+</html>

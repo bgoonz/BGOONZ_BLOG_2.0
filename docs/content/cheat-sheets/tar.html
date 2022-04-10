@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>tar</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="to-extract-an-uncompressed-archive">To extract an uncompressed archive:</h1>
+<p>tar -xvf /path/to/foo.tar</p>
+<h1 id="to-create-an-uncompressed-archive">To create an uncompressed archive:</h1>
+<p>tar -cvf /path/to/foo.tar /path/to/foo/</p>
+<h1 id="to-extract-a-.gz-archive">To extract a .gz archive:</h1>
+<p>tar -xzvf /path/to/foo.tgz</p>
+<h1 id="to-create-a-.gz-archive">To create a .gz archive:</h1>
+<p>tar -czvf /path/to/foo.tgz /path/to/foo/</p>
+<h1 id="to-list-the-content-of-an-.gz-archive">To list the content of an .gz archive:</h1>
+<p>tar -ztvf /path/to/foo.tgz</p>
+<h1 id="to-extract-a-.bz2-archive">To extract a .bz2 archive:</h1>
+<p>tar -xjvf /path/to/foo.tgz</p>
+<h1 id="to-create-a-.bz2-archive">To create a .bz2 archive:</h1>
+<p>tar -cjvf /path/to/foo.tgz /path/to/foo/</p>
+<h1 id="to-extract-a-.tar-in-specified-directory">To extract a .tar in specified Directory:</h1>
+<p>tar -xvf /path/to/foo.tar -C /path/to/destination/</p>
+<h1 id="to-list-the-content-of-an-.bz2-archive">To list the content of an .bz2 archive:</h1>
+<p>tar -jtvf /path/to/foo.tgz</p>
+<h1 id="to-create-a-.gz-archive-and-exclude-all-jpggif-from-the-tgz">To create a .gz archive and exclude all jpg,gif,… from the tgz</h1>
+<p>tar czvf /path/to/foo.tgz –exclude=*.{jpg,gif,png,wmv,flv,tar.gz,zip} /path/to/foo/</p>
+<h1 id="to-use-parallel-multi-threaded-implementation-of-compression-algorithms">To use parallel (multi-threaded) implementation of compression algorithms:</h1>
+<p>tar -z … -&gt; tar -Ipigz … tar -j … -&gt; tar -Ipbzip2 … tar -J … -&gt; tar -Ipixz …</p>
+</body>
+</html>

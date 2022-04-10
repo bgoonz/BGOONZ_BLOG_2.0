@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>github-search</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="search---github-docs">Search - GitHub Docs</h1>
+<blockquote>
+<p>The GitHub Search API lets you to search for the specific item efficiently.</p>
+</blockquote>
+<p>The GitHub Search API lets you to search for the specific item efficiently.</p>
+<p>The Search API helps you search for the specific item you want to find. For example, you can find a user or a specific file in a repository. Think of it the way you think of performing a search on Google. It’s designed to help you find the one result you’re looking for (or maybe the few results you’re looking for). Just like searching on Google, you sometimes want to see a few pages of search results so that you can find the item that best meets your needs. To satisfy that need, the GitHub Search API provides <strong>up to 1,000 results for each search</strong>.</p>
+<p>You can narrow your search using queries. To learn more about the search query syntax, see “<a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en/rest/reference/search#constructing-a-search-query">Constructing a search query</a>.”</p>
+<h3 id="ranking-search-results"><a href="#ranking-search-results">Ranking search results</a></h3>
+<p>Unless another sort option is provided as a query parameter, results are sorted by best match in descending order. Multiple factors are combined to boost the most relevant item to the top of the result list.</p>
+<h3 id="rate-limit"><a href="#rate-limit">Rate limit</a></h3>
+<p>The Search API has a custom rate limit. For requests using <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en/rest#authentication">Basic Authentication</a>, <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en/rest#authentication">OAuth</a>, or <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en/rest#increasing-the-unauthenticated-rate-limit-for-oauth-applications">client ID and secret</a>, you can make up to 30 requests per minute. For unauthenticated requests, the rate limit allows you to make up to 10 requests per minute.</p>
+<p>See the <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en/rest/reference/rate-limit">rate limit documentation</a> for details on determining your current rate limit status.</p>
+<h3 id="constructing-a-search-query"><a href="#constructing-a-search-query">Constructing a search query</a></h3>
+<p>Each endpoint in the Search API uses <a href="https://en.wikipedia.org/wiki/Query_string">query parameters</a> to perform searches on GitHub. See the individual endpoint in the Search API for an example that includes the endpoint and query parameters.</p>
+<p>A query can contain any combination of search qualifiers supported on GitHub. The format of the search query is:</p>
+<pre><code>SEARCH_KEYWORD_1 SEARCH_KEYWORD_N QUALIFIER_1 QUALIFIER_N</code></pre>
+<p>For example, if you wanted to search for all <em>repositories</em> owned by <code>defunkt</code> that contained the word <code>GitHub</code> and <code>Octocat</code> in the README file, you would use the following query with the <em>search repositories</em> endpoint:</p>
+<pre><code>GitHub Octocat in:readme user:defunkt</code></pre>
+<p><strong>Note:</strong> Be sure to use your language’s preferred HTML-encoder to construct your query strings. For example:</p>
+<pre><code>const queryString = &#39;q=&#39; + encodeURIComponent(&#39;GitHub Octocat in:readme user:defunkt&#39;);</code></pre>
+<p>See “<a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en/articles/searching-on-github">Searching on GitHub</a>” for a complete list of available qualifiers, their format, and an example of how to use them. For information about how to use operators to match specific quantities, dates, or to exclude results, see “<a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en/articles/understanding-the-search-syntax">Understanding the search syntax</a>.”</p>
+<h3 id="limitations-on-query-length"><a href="#limitations-on-query-length">Limitations on query length</a></h3>
+<p>The Search API does not support queries that:</p>
+<ul>
+<li>are longer than 256 characters (not including operators or qualifiers).</li>
+<li>have more than five <code>AND</code>, <code>OR</code>, or <code>NOT</code> operators.</li>
+</ul>
+<p>These search queries will return a “Validation failed” error message.</p>
+<h3 id="timeouts-and-incomplete-results"><a href="#timeouts-and-incomplete-results">Timeouts and incomplete results</a></h3>
+<p>To keep the Search API fast for everyone, we limit how long any individual query can run. For queries that <a href="https://developer.github.com/changes/2014-04-07-understanding-search-results-and-potential-timeouts/">exceed the time limit</a>, the API returns the matches that were already found prior to the timeout, and the response has the <code>incomplete_results</code> property set to <code>true</code>.</p>
+<p>Reaching a timeout does not necessarily mean that search results are incomplete. More results might have been found, but also might not.</p>
+<h3 id="access-errors-or-missing-search-results"><a href="#access-errors-or-missing-search-results">Access errors or missing search results</a></h3>
+<p>You need to successfully authenticate and have access to the repositories in your search queries, otherwise, you’ll see a <code>422 Unprocessible Entry</code> error with a “Validation Failed” message. For example, your search will fail if your query includes <code>repo:</code>, <code>user:</code>, or <code>org:</code> qualifiers that request resources that you don’t have access to when you sign in on GitHub.</p>
+<p>When your search query requests multiple resources, the response will only contain the resources that you have access to and will <strong>not</strong> provide an error message listing the resources that were not returned.</p>
+<p>For example, if your search query searches for the <code>octocat/test</code> and <code>codertocat/test</code> repositories, but you only have access to <code>octocat/test</code>, your response will show search results for <code>octocat/test</code> and nothing for <code>codertocat/test</code>. This behavior mimics how search works on GitHub.</p>
+<h3 id="search-code"><a href="#search-code">Search code</a></h3>
+<p>Searches for query terms inside of a file. This method returns up to 100 results <a href="https://docs.github.com/rest/overview/resources-in-the-rest-api#pagination">per page</a>.</p>
+<p>When searching for code, you can get text match metadata for the file <strong>content</strong> and file <strong>path</strong> fields when you pass the <code>text-match</code> media type. For more details about how to receive highlighted search results, see <a href="https://docs.github.com/rest/reference/search#text-match-metadata">Text match metadata</a>.</p>
+<p>For example, if you want to find the definition of the <code>addClass</code> function inside <a href="https://github.com/jquery/jquery">jQuery</a> repository, your query would look something like this:</p>
+<p><code>q=addClass+in:file+language:js+repo:jquery/jquery</code></p>
+<p>This query searches for the keyword <code>addClass</code> within a file’s contents. The query limits the search to files where the language is JavaScript in the <code>jquery/jquery</code> repository.</p>
+<h4 id="considerations-for-code-search"><a href="#considerations-for-code-search">Considerations for code search</a></h4>
+<p>Due to the complexity of searching code, there are a few restrictions on how searches are performed:</p>
+<ul>
+<li>Only the <em>default branch</em> is considered. In most cases, this will be the <code>master</code> branch.</li>
+<li>Only files smaller than 384 KB are searchable.</li>
+<li><p>You must always include at least one search term when searching source code. For example, searching for <a href="https://github.com/search?utf8=%E2%9C%93&amp;q=language%3Ago&amp;type=Code"><code>language:go</code></a> is not valid, while <a href="https://github.com/search?utf8=%E2%9C%93&amp;q=amazing+language%3Ago&amp;type=Code"><code>amazing language:go</code></a> is.</p>
+<p>get /search/code</p></li>
+</ul>
+<h4 id="parameters"><a href="#search-code--parameters">Parameters</a></h4>
+<table>
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>Type</th>
+<th>In</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>accept</code></td>
+<td>string</td>
+<td>header</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Setting to <code>application/vnd.github.v3+json</code> is recommended.</p>
+<div class="line-block"><br />
+<code>q</code> | string | query |</div>
+<p>The query contains one or more search keywords and qualifiers. Qualifiers allow you to limit your search to specific areas of GitHub. The REST API supports the same qualifiers as GitHub.com. To learn more about the format of the query, see <a href="https://docs.github.com/rest/reference/search#constructing-a-search-query">Constructing a search query</a>. See “<a href="https://help.github.com/articles/searching-code/">Searching code</a>” for a detailed list of qualifiers.</p>
+<div class="line-block"><br />
+<code>sort</code> | string | query |</div>
+<p>Sorts the results of your query. Can only be <code>indexed</code>, which indicates how recently a file has been indexed by the GitHub search infrastructure. Default: <a href="https://docs.github.com/rest/reference/search#ranking-search-results">best match</a></p>
+<div class="line-block"><br />
+<code>order</code> | string | query |</div>
+<p>Determines whether the first search result returned is the highest number of matches (<code>desc</code>) or lowest number of matches (<code>asc</code>). This parameter is ignored unless you provide <code>sort</code>.</p>
+<p>Default: <code>desc</code> | | <code>per_page</code> | integer | query |</p>
+<p>Results per page (max 100)</p>
+<p>Default: <code>30</code> | | <code>page</code> | integer | query |</p>
+<p>Page number of the results to fetch.</p>
+<p>Default: <code>1</code> |</p>
+<h4 id="code-samples"><a href="#search-code--code-samples">Code samples</a></h4>
+<h5 id="shell">Shell</h5>
+<pre><code>curl \
+  -H &quot;Accept: application/vnd.github.v3+json&quot; \
+  https://api.github.com/search/code</code></pre>
+<h5 id="javascript-octokitcore.jshttpsgithub.comoctokitcore.jsreadme">JavaScript (<span class="citation" data-cites="octokit/core.js">[@octokit/core.js]</span>(https://github.com/octokit/core.js#readme))</h5>
+<pre><code>await octokit.request(&#39;GET /search/code&#39;, {
+  q: &#39;q&#39;
+})</code></pre>
+<h4 id="response">Response</h4>
+<pre><code>Status: 200 OK
+
+{
+  &quot;total_count&quot;: 7,
+  &quot;incomplete_results&quot;: false,
+  &quot;items&quot;: [
+    {
+      &quot;name&quot;: &quot;classes.js&quot;,
+      &quot;path&quot;: &quot;src/attributes/classes.js&quot;,
+      &quot;sha&quot;: &quot;d7212f9dee2dcc18f084d7df8f417b80846ded5a&quot;,
+      &quot;url&quot;: &quot;https://api.github.com/repositories/167174/contents/src/attributes/classes.js?ref=825ac3773694e0cd23ee74895fd5aeb535b27da4&quot;,
+      &quot;git_url&quot;: &quot;https://api.github.com/repositories/167174/git/blobs/d7212f9dee2dcc18f084d7df8f417b80846ded5a&quot;,
+      &quot;html_url&quot;: &quot;https://github.com/jquery/jquery/blob/825ac3773694e0cd23ee74895fd5aeb535b27da4/src/attributes/classes.js&quot;,
+      &quot;repository&quot;: {
+        &quot;id&quot;: 167174,
+        &quot;node_id&quot;: &quot;MDEwOlJlcG9zaXRvcnkxNjcxNzQ=&quot;,
+        &quot;name&quot;: &quot;jquery&quot;,
+        &quot;full_name&quot;: &quot;jquery/jquery&quot;,
+        &quot;owner&quot;: {
+          &quot;login&quot;: &quot;jquery&quot;,
+          &quot;id&quot;: 70142,
+          &quot;node_id&quot;: &quot;MDQ6VXNlcjcwMTQy&quot;,
+          &quot;avatar_url&quot;: &quot;https://0.gravatar.com/avatar/6906f317a4733f4379b06c32229ef02f?d=https%3A%2F%2Fidenticons.github.com%2Ff426f04f2f9813718fb806b30e0093de.png&quot;,
+          &quot;gravatar_id&quot;: &quot;&quot;,
+          &quot;url&quot;: &quot;https://api.github.com/users/jquery&quot;,
+          &quot;html_url&quot;: &quot;https://github.com/jquery&quot;,
+          &quot;followers_url&quot;: &quot;https://api.github.com/users/jquery/followers&quot;,
+          &quot;following_url&quot;: &quot;https://api.github.com/users/jquery/following{/other_user}&quot;,
+          &quot;gists_url&quot;: &quot;https://api.github.com/users/jquery/gists{/gist_id}&quot;,
+          &quot;starred_url&quot;: &quot;https://api.github.com/users/jquery/starred{/owner}{/repo}&quot;,
+          &quot;subscriptions_url&quot;: &quot;https://api.github.com/users/jquery/subscriptions&quot;,
+          &quot;organizations_url&quot;: &quot;https://api.github.com/users/jquery/orgs&quot;,
+          &quot;repos_url&quot;: &quot;https://api.github.com/users/jquery/repos&quot;,
+          &quot;events_url&quot;: &quot;https://api.github.com/users/jquery/events{/privacy}&quot;,
+          &quot;received_events_url&quot;: &quot;https://api.github.com/users/jquery/received_events&quot;,
+          &quot;type&quot;: &quot;Organization&quot;,
+          &quot;site_admin&quot;: false
+        },
+        &quot;private&quot;: false,
+        &quot;html_url&quot;: &quot;https://github.com/jquery/jquery&quot;,
+        &quot;description&quot;: &quot;jQuery JavaScript Library&quot;,
+        &quot;fork&quot;: false,
+        &quot;url&quot;: &quot;https://api.github.com/repos/jquery/jquery&quot;,
+        &quot;forks_url&quot;: &quot;https://api.github.com/repos/jquery/jquery/forks&quot;,
+        &quot;keys_url&quot;: &quot;https://api.github.com/repos/jquery/jquery/keys{/key_id}&quot;,
+        &quot;collaborators_url&quot;: &quot;https://api.github.com/repos/jquery/jquery/collaborators{/collaborator}&quot;,
+        &quot;teams_url&quot;: &quot;https://api.github.com/repos/jquery/jquery/teams&quot;,
+        &quot;hooks_url&quot;: &quot;https://api.github.com/repos/jquery/jquery/hooks&quot;,
+        &quot;issue_events_url&quot;: &quot;https://api.github.com/repos/jquery/jquery/issues/events{/number}&quot;,
+        &quot;events_url&quot;: &quot;https://api.github.com/repos/jquery/jquery/events&quot;,
+        &quot;assignees_url&quot;: &quot;https://api.github.com/repos/jquery/jquery/assignees{/user}&quot;,
+        &quot;branches_url&quot;: &quot;https://api.github.com/repos/jquery/jquery/branches{/branch}&quot;,
+        &quot;tags_url&quot;: &quot;https://api.github.com/repos/jquery/jquery/tags&quot;,
+        &quot;blobs_url&quot;: &quot;https://api.github.com/repos/jquery/jquery/git/blobs{/sha}&quot;,
+        &quot;git_tags_url&quot;: &quot;https://api.github.com/repos/jquery/jquery/git/tags{/sha}&quot;,
+        &quot;git_refs_url&quot;: &quot;https://api.github.com/repos/jquery/jquery/git/refs{/sha}&quot;,
+        &quot;trees_url&quot;: &quot;https://api.github.com/repos/jquery/jquery/git/trees{/sha}&quot;,
+        &quot;statuses_url&quot;: &quot;https://api.github.com/repos/jquery/jquery/statuses/{sha}&quot;,
+        &quot;languages_url&quot;: &quot;https://api.github.com/repos/jquery/jquery/languages&quot;,
+        &quot;stargazers_url&quot;: &quot;https://api.github.com/repos/jquery/jquery/stargazers&quot;,
+        &quot;contributors_url&quot;: &quot;https://api.github.com/repos/jquery/jquery/contributors&quot;,
+        &quot;subscribers_url&quot;: &quot;https://api.github.com/repos/jquery/jquery/subscribers&quot;,
+        &quot;subscription_url&quot;: &quot;https://api.github.com/repos/jquery/jquery/subscription&quot;,
+        &quot;commits_url&quot;: &quot;https://api.github.com/repos/jquery/jquery/commits{/sha}&quot;,
+        &quot;git_commits_url&quot;: &quot;https://api.github.com/repos/jquery/jquery/git/commits{/sha}&quot;,
+        &quot;comments_url&quot;: &quot;https://api.github.com/repos/jquery/jquery/comments{/number}&quot;,
+        &quot;issue_comment_url&quot;: &quot;https://api.github.com/repos/jquery/jquery/issues/comments/{number}&quot;,
+        &quot;contents_url&quot;: &quot;https://api.github.com/repos/jquery/jquery/contents/{+path}&quot;,
+        &quot;compare_url&quot;: &quot;https://api.github.com/repos/jquery/jquery/compare/{base}...{head}&quot;,
+        &quot;merges_url&quot;: &quot;https://api.github.com/repos/jquery/jquery/merges&quot;,
+        &quot;archive_url&quot;: &quot;https://api.github.com/repos/jquery/jquery/{archive_format}{/ref}&quot;,
+        &quot;downloads_url&quot;: &quot;https://api.github.com/repos/jquery/jquery/downloads&quot;,
+        &quot;issues_url&quot;: &quot;https://api.github.com/repos/jquery/jquery/issues{/number}&quot;,
+        &quot;pulls_url&quot;: &quot;https://api.github.com/repos/jquery/jquery/pulls{/number}&quot;,
+        &quot;milestones_url&quot;: &quot;https://api.github.com/repos/jquery/jquery/milestones{/number}&quot;,
+        &quot;notifications_url&quot;: &quot;https://api.github.com/repos/jquery/jquery/notifications{?since,all,participating}&quot;,
+        &quot;labels_url&quot;: &quot;https://api.github.com/repos/jquery/jquery/labels{/name}&quot;,
+        &quot;deployments_url&quot;: &quot;http://api.github.com/repos/octocat/Hello-World/deployments&quot;,
+        &quot;releases_url&quot;: &quot;http://api.github.com/repos/octocat/Hello-World/releases{/id}&quot;
+      },
+      &quot;score&quot;: 1
+    }
+  ]
+}</code></pre>
+<h4 id="not-modified">Not modified</h4>
+<pre><code>Status: 304 Not Modified</code></pre>
+<h4 id="forbidden">Forbidden</h4>
+<pre><code>Status: 403 Forbidden</code></pre>
+<h4 id="validation-failed">Validation failed</h4>
+<pre><code>Status: 422 Unprocessable Entity</code></pre>
+<h4 id="service-unavailable">Service unavailable</h4>
+<pre><code>Status: 503 Service Unavailable</code></pre>
+<h4 id="notes">Notes</h4>
+<ul>
+<li><a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en/developers/apps">Works with GitHub Apps</a></li>
+</ul>
+<hr />
+<h3 id="search-commits"><a href="#search-commits">Search commits</a></h3>
+<p>Find commits via various criteria on the default branch (usually <code>master</code>). This method returns up to 100 results <a href="https://docs.github.com/rest/overview/resources-in-the-rest-api#pagination">per page</a>.</p>
+<p>When searching for commits, you can get text match metadata for the <strong>message</strong> field when you provide the <code>text-match</code> media type. For more details about how to receive highlighted search results, see <a href="https://docs.github.com/rest/reference/search#text-match-metadata">Text match metadata</a>.</p>
+<p>For example, if you want to find commits related to CSS in the <a href="https://github.com/octocat/Spoon-Knife">octocat/Spoon-Knife</a> repository. Your query would look something like this:</p>
+<p><code>q=repo:octocat/Spoon-Knife+css</code></p>
+<pre><code>get /search/commits</code></pre>
+<h4 id="parameters-1"><a href="#search-commits--parameters">Parameters</a></h4>
+<table>
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>Type</th>
+<th>In</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>accept</code></td>
+<td>string</td>
+<td>header</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>This API is under preview and subject to change.<a href="#search-commits-preview-notices">See preview notice</a></p>
+<div class="line-block"><br />
+<code>q</code> | string | query |</div>
+<p>The query contains one or more search keywords and qualifiers. Qualifiers allow you to limit your search to specific areas of GitHub. The REST API supports the same qualifiers as GitHub.com. To learn more about the format of the query, see <a href="https://docs.github.com/rest/reference/search#constructing-a-search-query">Constructing a search query</a>. See “<a href="https://help.github.com/articles/searching-commits/">Searching commits</a>” for a detailed list of qualifiers.</p>
+<div class="line-block"><br />
+<code>sort</code> | string | query |</div>
+<p>Sorts the results of your query by <code>author-date</code> or <code>committer-date</code>. Default: <a href="https://docs.github.com/rest/reference/search#ranking-search-results">best match</a></p>
+<div class="line-block"><br />
+<code>order</code> | string | query |</div>
+<p>Determines whether the first search result returned is the highest number of matches (<code>desc</code>) or lowest number of matches (<code>asc</code>). This parameter is ignored unless you provide <code>sort</code>.</p>
+<p>Default: <code>desc</code> | | <code>per_page</code> | integer | query |</p>
+<p>Results per page (max 100)</p>
+<p>Default: <code>30</code> | | <code>page</code> | integer | query |</p>
+<p>Page number of the results to fetch.</p>
+<p>Default: <code>1</code> |</p>
+<h4 id="code-samples-1"><a href="#search-commits--code-samples">Code samples</a></h4>
+<h5 id="shell-1">Shell</h5>
+<pre><code>curl \
+  -H &quot;Accept: application/vnd.github.cloak-preview+json&quot; \
+  https://api.github.com/search/commits</code></pre>
+<h5 id="javascript-octokitcore.jshttpsgithub.comoctokitcore.jsreadme-1">JavaScript (<span class="citation" data-cites="octokit/core.js">[@octokit/core.js]</span>(https://github.com/octokit/core.js#readme))</h5>
+<pre><code>await octokit.request(&#39;GET /search/commits&#39;, {
+  q: &#39;q&#39;,
+  mediaType: {
+    previews: [
+      &#39;cloak&#39;
+    ]
+  }
+})</code></pre>
+<h4 id="response-1">Response</h4>
+<pre><code>Status: 200 OK
+
+{
+  &quot;total_count&quot;: 1,
+  &quot;incomplete_results&quot;: false,
+  &quot;items&quot;: [
+    {
+      &quot;url&quot;: &quot;https://api.github.com/repos/octocat/Spoon-Knife/commits/bb4cc8d3b2e14b3af5df699876dd4ff3acd00b7f&quot;,
+      &quot;sha&quot;: &quot;bb4cc8d3b2e14b3af5df699876dd4ff3acd00b7f&quot;,
+      &quot;html_url&quot;: &quot;https://github.com/octocat/Spoon-Knife/commit/bb4cc8d3b2e14b3af5df699876dd4ff3acd00b7f&quot;,
+      &quot;comments_url&quot;: &quot;https://api.github.com/repos/octocat/Spoon-Knife/commits/bb4cc8d3b2e14b3af5df699876dd4ff3acd00b7f/comments&quot;,
+      &quot;commit&quot;: {
+        &quot;url&quot;: &quot;https://api.github.com/repos/octocat/Spoon-Knife/git/commits/bb4cc8d3b2e14b3af5df699876dd4ff3acd00b7f&quot;,
+        &quot;author&quot;: {
+          &quot;date&quot;: &quot;2014-02-04T14:38:36-08:00&quot;,
+          &quot;name&quot;: &quot;The Octocat&quot;,
+          &quot;email&quot;: &quot;octocat@nowhere.com&quot;
+        },
+        &quot;committer&quot;: {
+          &quot;date&quot;: &quot;2014-02-12T15:18:55-08:00&quot;,
+          &quot;name&quot;: &quot;The Octocat&quot;,
+          &quot;email&quot;: &quot;octocat@nowhere.com&quot;
+        },
+        &quot;message&quot;: &quot;Create styles.css and updated README&quot;,
+        &quot;tree&quot;: {
+          &quot;url&quot;: &quot;https://api.github.com/repos/octocat/Spoon-Knife/git/trees/a639e96f9038797fba6e0469f94a4b0cc459fa68&quot;,
+          &quot;sha&quot;: &quot;a639e96f9038797fba6e0469f94a4b0cc459fa68&quot;
+        },
+        &quot;comment_count&quot;: 8
+      },
+      &quot;author&quot;: {
+        &quot;login&quot;: &quot;octocat&quot;,
+        &quot;id&quot;: 583231,
+        &quot;node_id&quot;: &quot;MDQ6VXNlcjU4MzIzMQ==&quot;,
+        &quot;avatar_url&quot;: &quot;https://avatars.githubusercontent.com/u/583231?v=3&quot;,
+        &quot;gravatar_id&quot;: &quot;&quot;,
+        &quot;url&quot;: &quot;https://api.github.com/users/octocat&quot;,
+        &quot;html_url&quot;: &quot;https://github.com/octocat&quot;,
+        &quot;followers_url&quot;: &quot;https://api.github.com/users/octocat/followers&quot;,
+        &quot;following_url&quot;: &quot;https://api.github.com/users/octocat/following{/other_user}&quot;,
+        &quot;gists_url&quot;: &quot;https://api.github.com/users/octocat/gists{/gist_id}&quot;,
+        &quot;starred_url&quot;: &quot;https://api.github.com/users/octocat/starred{/owner}{/repo}&quot;,
+        &quot;subscriptions_url&quot;: &quot;https://api.github.com/users/octocat/subscriptions&quot;,
+        &quot;organizations_url&quot;: &quot;https://api.github.com/users/octocat/orgs&quot;,
+        &quot;repos_url&quot;: &quot;https://api.github.com/users/octocat/repos&quot;,
+        &quot;events_url&quot;: &quot;https://api.github.com/users/octocat/events{/privacy}&quot;,
+        &quot;received_events_url&quot;: &quot;https://api.github.com/users/octocat/received_events&quot;,
+        &quot;type&quot;: &quot;User&quot;,
+        &quot;site_admin&quot;: false
+      },
+      &quot;committer&quot;: {},
+      &quot;parents&quot;: [
+        {
+          &quot;url&quot;: &quot;https://api.github.com/repos/octocat/Spoon-Knife/commits/a30c19e3f13765a3b48829788bc1cb8b4e95cee4&quot;,
+          &quot;html_url&quot;: &quot;https://github.com/octocat/Spoon-Knife/commit/a30c19e3f13765a3b48829788bc1cb8b4e95cee4&quot;,
+          &quot;sha&quot;: &quot;a30c19e3f13765a3b48829788bc1cb8b4e95cee4&quot;
+        }
+      ],
+      &quot;repository&quot;: {
+        &quot;id&quot;: 1300192,
+        &quot;node_id&quot;: &quot;MDEwOlJlcG9zaXRvcnkxMzAwMTky&quot;,
+        &quot;name&quot;: &quot;Spoon-Knife&quot;,
+        &quot;full_name&quot;: &quot;octocat/Spoon-Knife&quot;,
+        &quot;owner&quot;: {
+          &quot;login&quot;: &quot;octocat&quot;,
+          &quot;id&quot;: 583231,
+          &quot;node_id&quot;: &quot;MDQ6VXNlcjU4MzIzMQ==&quot;,
+          &quot;avatar_url&quot;: &quot;https://avatars.githubusercontent.com/u/583231?v=3&quot;,
+          &quot;gravatar_id&quot;: &quot;&quot;,
+          &quot;url&quot;: &quot;https://api.github.com/users/octocat&quot;,
+          &quot;html_url&quot;: &quot;https://github.com/octocat&quot;,
+          &quot;followers_url&quot;: &quot;https://api.github.com/users/octocat/followers&quot;,
+          &quot;following_url&quot;: &quot;https://api.github.com/users/octocat/following{/other_user}&quot;,
+          &quot;gists_url&quot;: &quot;https://api.github.com/users/octocat/gists{/gist_id}&quot;,
+          &quot;starred_url&quot;: &quot;https://api.github.com/users/octocat/starred{/owner}{/repo}&quot;,
+          &quot;subscriptions_url&quot;: &quot;https://api.github.com/users/octocat/subscriptions&quot;,
+          &quot;organizations_url&quot;: &quot;https://api.github.com/users/octocat/orgs&quot;,
+          &quot;repos_url&quot;: &quot;https://api.github.com/users/octocat/repos&quot;,
+          &quot;events_url&quot;: &quot;https://api.github.com/users/octocat/events{/privacy}&quot;,
+          &quot;received_events_url&quot;: &quot;https://api.github.com/users/octocat/received_events&quot;,
+          &quot;type&quot;: &quot;User&quot;,
+          &quot;site_admin&quot;: false
+        },
+        &quot;private&quot;: false,
+        &quot;html_url&quot;: &quot;https://github.com/octocat/Spoon-Knife&quot;,
+        &quot;description&quot;: &quot;This repo is for demonstration purposes only.&quot;,
+        &quot;fork&quot;: false,
+        &quot;url&quot;: &quot;https://api.github.com/repos/octocat/Spoon-Knife&quot;,
+        &quot;forks_url&quot;: &quot;https://api.github.com/repos/octocat/Spoon-Knife/forks&quot;,
+        &quot;keys_url&quot;: &quot;https://api.github.com/repos/octocat/Spoon-Knife/keys{/key_id}&quot;,
+        &quot;collaborators_url&quot;: &quot;https://api.github.com/repos/octocat/Spoon-Knife/collaborators{/collaborator}&quot;,
+        &quot;teams_url&quot;: &quot;https://api.github.com/repos/octocat/Spoon-Knife/teams&quot;,
+        &quot;hooks_url&quot;: &quot;https://api.github.com/repos/octocat/Spoon-Knife/hooks&quot;,
+        &quot;issue_events_url&quot;: &quot;https://api.github.com/repos/octocat/Spoon-Knife/issues/events{/number}&quot;,
+        &quot;events_url&quot;: &quot;https://api.github.com/repos/octocat/Spoon-Knife/events&quot;,
+        &quot;assignees_url&quot;: &quot;https://api.github.com/repos/octocat/Spoon-Knife/assignees{/user}&quot;,
+        &quot;branches_url&quot;: &quot;https://api.github.com/repos/octocat/Spoon-Knife/branches{/branch}&quot;,
+        &quot;tags_url&quot;: &quot;https://api.github.com/repos/octocat/Spoon-Knife/tags&quot;,
+        &quot;blobs_url&quot;: &quot;https://api.github.com/repos/octocat/Spoon-Knife/git/blobs{/sha}&quot;,
+        &quot;git_tags_url&quot;: &quot;https://api.github.com/repos/octocat/Spoon-Knife/git/tags{/sha}&quot;,
+        &quot;git_refs_url&quot;: &quot;https://api.github.com/repos/octocat/Spoon-Knife/git/refs{/sha}&quot;,
+        &quot;trees_url&quot;: &quot;https://api.github.com/repos/octocat/Spoon-Knife/git/trees{/sha}&quot;,
+        &quot;statuses_url&quot;: &quot;https://api.github.com/repos/octocat/Spoon-Knife/statuses/{sha}&quot;,
+        &quot;languages_url&quot;: &quot;https://api.github.com/repos/octocat/Spoon-Knife/languages&quot;,
+        &quot;stargazers_url&quot;: &quot;https://api.github.com/repos/octocat/Spoon-Knife/stargazers&quot;,
+        &quot;contributors_url&quot;: &quot;https://api.github.com/repos/octocat/Spoon-Knife/contributors&quot;,
+        &quot;subscribers_url&quot;: &quot;https://api.github.com/repos/octocat/Spoon-Knife/subscribers&quot;,
+        &quot;subscription_url&quot;: &quot;https://api.github.com/repos/octocat/Spoon-Knife/subscription&quot;,
+        &quot;commits_url&quot;: &quot;https://api.github.com/repos/octocat/Spoon-Knife/commits{/sha}&quot;,
+        &quot;git_commits_url&quot;: &quot;https://api.github.com/repos/octocat/Spoon-Knife/git/commits{/sha}&quot;,
+        &quot;comments_url&quot;: &quot;https://api.github.com/repos/octocat/Spoon-Knife/comments{/number}&quot;,
+        &quot;issue_comment_url&quot;: &quot;https://api.github.com/repos/octocat/Spoon-Knife/issues/comments{/number}&quot;,
+        &quot;contents_url&quot;: &quot;https://api.github.com/repos/octocat/Spoon-Knife/contents/{+path}&quot;,
+        &quot;compare_url&quot;: &quot;https://api.github.com/repos/octocat/Spoon-Knife/compare/{base}...{head}&quot;,
+        &quot;merges_url&quot;: &quot;https://api.github.com/repos/octocat/Spoon-Knife/merges&quot;,
+        &quot;archive_url&quot;: &quot;https://api.github.com/repos/octocat/Spoon-Knife/{archive_format}{/ref}&quot;,
+        &quot;downloads_url&quot;: &quot;https://api.github.com/repos/octocat/Spoon-Knife/downloads&quot;,
+        &quot;issues_url&quot;: &quot;https://api.github.com/repos/octocat/Spoon-Knife/issues{/number}&quot;,
+        &quot;pulls_url&quot;: &quot;https://api.github.com/repos/octocat/Spoon-Knife/pulls{/number}&quot;,
+        &quot;milestones_url&quot;: &quot;https://api.github.com/repos/octocat/Spoon-Knife/milestones{/number}&quot;,
+        &quot;notifications_url&quot;: &quot;https://api.github.com/repos/octocat/Spoon-Knife/notifications{?since,all,participating}&quot;,
+        &quot;labels_url&quot;: &quot;https://api.github.com/repos/octocat/Spoon-Knife/labels{/name}&quot;,
+        &quot;releases_url&quot;: &quot;https://api.github.com/repos/octocat/Spoon-Knife/releases{/id}&quot;,
+        &quot;deployments_url&quot;: &quot;https://api.github.com/repos/octocat/Spoon-Knife/deployments&quot;
+      },
+      &quot;score&quot;: 1,
+      &quot;node_id&quot;: &quot;MDQ6VXNlcjU4MzIzMQ==&quot;
+    }
+  ]
+}</code></pre>
+<h4 id="not-modified-1">Not modified</h4>
+<pre><code>Status: 304 Not Modified</code></pre>
+<h4 id="preview-header-missing">Preview header missing</h4>
+<pre><code>Status: 415 Unsupported Media Type</code></pre>
+<h4 id="notes-1">Notes</h4>
+<ul>
+<li><a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en/developers/apps">Works with GitHub Apps</a></li>
+</ul>
+<h4 id="preview-notice">Preview notice</h4>
+<p>The Commit Search API is currently available for developers to preview. During the preview period, the APIs may change without advance notice. Please see the <a href="https://developer.github.com/changes/2017-01-05-commit-search-api/">blog post</a> for full details.</p>
+<p>To access the API you must provide a custom <a href="https://docs.github.com/rest/overview/media-types">media type</a> in the <code>Accept</code> header:</p>
+<pre><code>application/vnd.github.cloak-preview</code></pre>
+<p>☝️This header is <strong>required</strong>.</p>
+<hr />
+<h3 id="search-issues-and-pull-requests"><a href="#search-issues-and-pull-requests">Search issues and pull requests</a></h3>
+<p>Find issues by state and keyword. This method returns up to 100 results <a href="https://docs.github.com/rest/overview/resources-in-the-rest-api#pagination">per page</a>.</p>
+<p>When searching for issues, you can get text match metadata for the issue <strong>title</strong>, issue <strong>body</strong>, and issue <strong>comment body</strong> fields when you pass the <code>text-match</code> media type. For more details about how to receive highlighted search results, see <a href="https://docs.github.com/rest/reference/search#text-match-metadata">Text match metadata</a>.</p>
+<p>For example, if you want to find the oldest unresolved Python bugs on Windows. Your query might look something like this.</p>
+<p><code>q=windows+label:bug+language:python+state:open&amp;sort=created&amp;order=asc</code></p>
+<p>This query searches for the keyword <code>windows</code>, within any open issue that is labeled as <code>bug</code>. The search runs across repositories whose primary language is Python. The results are sorted by creation date in ascending order, which means the oldest issues appear first in the search results.</p>
+<p><strong>Note:</strong> For <a href="https://docs.github.com/developers/apps/identifying-and-authorizing-users-for-github-apps#user-to-server-requests">user-to-server</a> GitHub App requests, you can’t retrieve a combination of issues and pull requests in a single query. Requests that don’t include the <code>is:issue</code> or <code>is:pull-request</code> qualifier will receive an HTTP <code>422 Unprocessable Entity</code> response. To get results for both issues and pull requests, you must send separate queries for issues and pull requests. For more information about the <code>is</code> qualifier, see “<a href="https://docs.github.com/github/searching-for-information-on-github/searching-issues-and-pull-requests#search-only-issues-or-pull-requests">Searching only issues or pull requests</a>.”</p>
+<pre><code>get /search/issues</code></pre>
+<h4 id="parameters-2"><a href="#search-issues-and-pull-requests--parameters">Parameters</a></h4>
+<table>
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>Type</th>
+<th>In</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>accept</code></td>
+<td>string</td>
+<td>header</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Setting to <code>application/vnd.github.v3+json</code> is recommended.</p>
+<div class="line-block"><br />
+<code>q</code> | string | query |</div>
+<p>The query contains one or more search keywords and qualifiers. Qualifiers allow you to limit your search to specific areas of GitHub. The REST API supports the same qualifiers as GitHub.com. To learn more about the format of the query, see <a href="https://docs.github.com/rest/reference/search#constructing-a-search-query">Constructing a search query</a>. See “<a href="https://help.github.com/articles/searching-issues-and-pull-requests/">Searching issues and pull requests</a>” for a detailed list of qualifiers.</p>
+<div class="line-block"><br />
+<code>sort</code> | string | query |</div>
+<p>Sorts the results of your query by the number of <code>comments</code>, <code>reactions</code>, <code>reactions-+1</code>, <code>reactions--1</code>, <code>reactions-smile</code>, <code>reactions-thinking_face</code>, <code>reactions-heart</code>, <code>reactions-tada</code>, or <code>interactions</code>. You can also sort results by how recently the items were <code>created</code> or <code>updated</code>, Default: <a href="https://docs.github.com/rest/reference/search#ranking-search-results">best match</a></p>
+<div class="line-block"><br />
+<code>order</code> | string | query |</div>
+<p>Determines whether the first search result returned is the highest number of matches (<code>desc</code>) or lowest number of matches (<code>asc</code>). This parameter is ignored unless you provide <code>sort</code>.</p>
+<p>Default: <code>desc</code> | | <code>per_page</code> | integer | query |</p>
+<p>Results per page (max 100)</p>
+<p>Default: <code>30</code> | | <code>page</code> | integer | query |</p>
+<p>Page number of the results to fetch.</p>
+<p>Default: <code>1</code> |</p>
+<h4 id="code-samples-2"><a href="#search-issues-and-pull-requests--code-samples">Code samples</a></h4>
+<h5 id="shell-2">Shell</h5>
+<pre><code>curl \
+  -H &quot;Accept: application/vnd.github.v3+json&quot; \
+  https://api.github.com/search/issues</code></pre>
+<h5 id="javascript-octokitcore.jshttpsgithub.comoctokitcore.jsreadme-2">JavaScript (<span class="citation" data-cites="octokit/core.js">[@octokit/core.js]</span>(https://github.com/octokit/core.js#readme))</h5>
+<pre><code>await octokit.request(&#39;GET /search/issues&#39;, {
+  q: &#39;q&#39;
+})</code></pre>
+<h4 id="response-2">Response</h4>
+<pre><code>Status: 200 OK
+
+{
+  &quot;total_count&quot;: 280,
+  &quot;incomplete_results&quot;: false,
+  &quot;items&quot;: [
+    {
+      &quot;url&quot;: &quot;https://api.github.com/repos/batterseapower/pinyin-toolkit/issues/132&quot;,
+      &quot;repository_url&quot;: &quot;https://api.github.com/repos/batterseapower/pinyin-toolkit&quot;,
+      &quot;labels_url&quot;: &quot;https://api.github.com/repos/batterseapower/pinyin-toolkit/issues/132/labels{/name}&quot;,
+      &quot;comments_url&quot;: &quot;https://api.github.com/repos/batterseapower/pinyin-toolkit/issues/132/comments&quot;,
+      &quot;events_url&quot;: &quot;https://api.github.com/repos/batterseapower/pinyin-toolkit/issues/132/events&quot;,
+      &quot;html_url&quot;: &quot;https://github.com/batterseapower/pinyin-toolkit/issues/132&quot;,
+      &quot;id&quot;: 35802,
+      &quot;node_id&quot;: &quot;MDU6SXNzdWUzNTgwMg==&quot;,
+      &quot;number&quot;: 132,
+      &quot;title&quot;: &quot;Line Number Indexes Beyond 20 Not Displayed&quot;,
+      &quot;user&quot;: {
+        &quot;login&quot;: &quot;Nick3C&quot;,
+        &quot;id&quot;: 90254,
+        &quot;node_id&quot;: &quot;MDQ6VXNlcjkwMjU0&quot;,
+        &quot;avatar_url&quot;: &quot;https://secure.gravatar.com/avatar/934442aadfe3b2f4630510de416c5718?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png&quot;,
+        &quot;gravatar_id&quot;: &quot;&quot;,
+        &quot;url&quot;: &quot;https://api.github.com/users/Nick3C&quot;,
+        &quot;html_url&quot;: &quot;https://github.com/Nick3C&quot;,
+        &quot;followers_url&quot;: &quot;https://api.github.com/users/Nick3C/followers&quot;,
+        &quot;following_url&quot;: &quot;https://api.github.com/users/Nick3C/following{/other_user}&quot;,
+        &quot;gists_url&quot;: &quot;https://api.github.com/users/Nick3C/gists{/gist_id}&quot;,
+        &quot;starred_url&quot;: &quot;https://api.github.com/users/Nick3C/starred{/owner}{/repo}&quot;,
+        &quot;subscriptions_url&quot;: &quot;https://api.github.com/users/Nick3C/subscriptions&quot;,
+        &quot;organizations_url&quot;: &quot;https://api.github.com/users/Nick3C/orgs&quot;,
+        &quot;repos_url&quot;: &quot;https://api.github.com/users/Nick3C/repos&quot;,
+        &quot;events_url&quot;: &quot;https://api.github.com/users/Nick3C/events{/privacy}&quot;,
+        &quot;received_events_url&quot;: &quot;https://api.github.com/users/Nick3C/received_events&quot;,
+        &quot;type&quot;: &quot;User&quot;,
+        &quot;site_admin&quot;: true
+      },
+      &quot;labels&quot;: [
+        {
+          &quot;id&quot;: 4,
+          &quot;node_id&quot;: &quot;MDU6TGFiZWw0&quot;,
+          &quot;url&quot;: &quot;https://api.github.com/repos/batterseapower/pinyin-toolkit/labels/bug&quot;,
+          &quot;name&quot;: &quot;bug&quot;,
+          &quot;color&quot;: &quot;ff0000&quot;
+        }
+      ],
+      &quot;state&quot;: &quot;open&quot;,
+      &quot;assignee&quot;: null,
+      &quot;milestone&quot;: {
+        &quot;url&quot;: &quot;https://api.github.com/repos/octocat/Hello-World/milestones/1&quot;,
+        &quot;html_url&quot;: &quot;https://github.com/octocat/Hello-World/milestones/v1.0&quot;,
+        &quot;labels_url&quot;: &quot;https://api.github.com/repos/octocat/Hello-World/milestones/1/labels&quot;,
+        &quot;id&quot;: 1002604,
+        &quot;node_id&quot;: &quot;MDk6TWlsZXN0b25lMTAwMjYwNA==&quot;,
+        &quot;number&quot;: 1,
+        &quot;state&quot;: &quot;open&quot;,
+        &quot;title&quot;: &quot;v1.0&quot;,
+        &quot;description&quot;: &quot;Tracking milestone for version 1.0&quot;,
+        &quot;creator&quot;: {
+          &quot;login&quot;: &quot;octocat&quot;,
+          &quot;id&quot;: 1,
+          &quot;node_id&quot;: &quot;MDQ6VXNlcjE=&quot;,
+          &quot;avatar_url&quot;: &quot;https://github.com/images/error/octocat_happy.gif&quot;,
+          &quot;gravatar_id&quot;: &quot;&quot;,
+          &quot;url&quot;: &quot;https://api.github.com/users/octocat&quot;,
+          &quot;html_url&quot;: &quot;https://github.com/octocat&quot;,
+          &quot;followers_url&quot;: &quot;https://api.github.com/users/octocat/followers&quot;,
+          &quot;following_url&quot;: &quot;https://api.github.com/users/octocat/following{/other_user}&quot;,
+          &quot;gists_url&quot;: &quot;https://api.github.com/users/octocat/gists{/gist_id}&quot;,
+          &quot;starred_url&quot;: &quot;https://api.github.com/users/octocat/starred{/owner}{/repo}&quot;,
+          &quot;subscriptions_url&quot;: &quot;https://api.github.com/users/octocat/subscriptions&quot;,
+          &quot;organizations_url&quot;: &quot;https://api.github.com/users/octocat/orgs&quot;,
+          &quot;repos_url&quot;: &quot;https://api.github.com/users/octocat/repos&quot;,
+          &quot;events_url&quot;: &quot;https://api.github.com/users/octocat/events{/privacy}&quot;,
+          &quot;received_events_url&quot;: &quot;https://api.github.com/users/octocat/received_events&quot;,
+          &quot;type&quot;: &quot;User&quot;,
+          &quot;site_admin&quot;: false
+        },
+        &quot;open_issues&quot;: 4,
+        &quot;closed_issues&quot;: 8,
+        &quot;created_at&quot;: &quot;2011-04-10T20:09:31Z&quot;,
+        &quot;updated_at&quot;: &quot;2014-03-03T18:58:10Z&quot;,
+        &quot;closed_at&quot;: &quot;2013-02-12T13:22:01Z&quot;,
+        &quot;due_on&quot;: &quot;2012-10-09T23:39:01Z&quot;
+      },
+      &quot;comments&quot;: 15,
+      &quot;created_at&quot;: &quot;2009-07-12T20:10:41Z&quot;,
+      &quot;updated_at&quot;: &quot;2009-07-19T09:23:43Z&quot;,
+      &quot;closed_at&quot;: null,
+      &quot;pull_request&quot;: {
+        &quot;url&quot;: &quot;https://api/github.com/repos/octocat/Hello-World/pull/1347&quot;,
+        &quot;html_url&quot;: &quot;https://github.com/octocat/Hello-World/pull/1347&quot;,
+        &quot;diff_url&quot;: &quot;https://github.com/octocat/Hello-World/pull/1347.diff&quot;,
+        &quot;patch_url&quot;: &quot;https://api.github.com/repos/octocat/Hello-World/pulls/1347&quot;
+      },
+      &quot;body&quot;: &quot;...&quot;,
+      &quot;score&quot;: 1,
+      &quot;locked&quot;: true,
+      &quot;author_association&quot;: &quot;COLLABORATOR&quot;
+    }
+  ]
+}</code></pre>
+<h4 id="not-modified-2">Not modified</h4>
+<pre><code>Status: 304 Not Modified</code></pre>
+<h4 id="forbidden-1">Forbidden</h4>
+<pre><code>Status: 403 Forbidden</code></pre>
+<h4 id="validation-failed-1">Validation failed</h4>
+<pre><code>Status: 422 Unprocessable Entity</code></pre>
+<h4 id="service-unavailable-1">Service unavailable</h4>
+<pre><code>Status: 503 Service Unavailable</code></pre>
+<h4 id="notes-2">Notes</h4>
+<ul>
+<li><a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en/developers/apps">Works with GitHub Apps</a></li>
+</ul>
+<hr />
+<h3 id="search-labels"><a href="#search-labels">Search labels</a></h3>
+<p>Find labels in a repository with names or descriptions that match search keywords. Returns up to 100 results <a href="https://docs.github.com/rest/overview/resources-in-the-rest-api#pagination">per page</a>.</p>
+<p>When searching for labels, you can get text match metadata for the label <strong>name</strong> and <strong>description</strong> fields when you pass the <code>text-match</code> media type. For more details about how to receive highlighted search results, see <a href="https://docs.github.com/rest/reference/search#text-match-metadata">Text match metadata</a>.</p>
+<p>For example, if you want to find labels in the <code>linguist</code> repository that match <code>bug</code>, <code>defect</code>, or <code>enhancement</code>. Your query might look like this:</p>
+<p><code>q=bug+defect+enhancement&amp;repository_id=64778136</code></p>
+<p>The labels that best match the query appear first in the search results.</p>
+<pre><code>get /search/labels</code></pre>
+<h4 id="parameters-3"><a href="#search-labels--parameters">Parameters</a></h4>
+<table>
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>Type</th>
+<th>In</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>accept</code></td>
+<td>string</td>
+<td>header</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Setting to <code>application/vnd.github.v3+json</code> is recommended.</p>
+<div class="line-block"><br />
+<code>repository_id</code> | integer | query |</div>
+<p>The id of the repository.</p>
+<div class="line-block"><br />
+<code>q</code> | string | query |</div>
+<p>The search keywords. This endpoint does not accept qualifiers in the query. To learn more about the format of the query, see <a href="https://docs.github.com/rest/reference/search#constructing-a-search-query">Constructing a search query</a>.</p>
+<div class="line-block"><br />
+<code>sort</code> | string | query |</div>
+<p>Sorts the results of your query by when the label was <code>created</code> or <code>updated</code>. Default: <a href="https://docs.github.com/rest/reference/search#ranking-search-results">best match</a></p>
+<div class="line-block"><br />
+<code>order</code> | string | query |</div>
+<p>Determines whether the first search result returned is the highest number of matches (<code>desc</code>) or lowest number of matches (<code>asc</code>). This parameter is ignored unless you provide <code>sort</code>.</p>
+<p>Default: <code>desc</code> | | <code>per_page</code> | integer | query |</p>
+<p>Results per page (max 100)</p>
+<p>Default: <code>30</code> | | <code>page</code> | integer | query |</p>
+<p>Page number of the results to fetch.</p>
+<p>Default: <code>1</code> |</p>
+<h4 id="code-samples-3"><a href="#search-labels--code-samples">Code samples</a></h4>
+<h5 id="shell-3">Shell</h5>
+<pre><code>curl \
+  -H &quot;Accept: application/vnd.github.v3+json&quot; \
+  https://api.github.com/search/labels</code></pre>
+<h5 id="javascript-octokitcore.jshttpsgithub.comoctokitcore.jsreadme-3">JavaScript (<span class="citation" data-cites="octokit/core.js">[@octokit/core.js]</span>(https://github.com/octokit/core.js#readme))</h5>
+<pre><code>await octokit.request(&#39;GET /search/labels&#39;, {
+  repository_id: 42,
+  q: &#39;q&#39;
+})</code></pre>
+<h4 id="response-3">Response</h4>
+<pre><code>Status: 200 OK
+
+{
+  &quot;total_count&quot;: 2,
+  &quot;incomplete_results&quot;: false,
+  &quot;items&quot;: [
+    {
+      &quot;id&quot;: 418327088,
+      &quot;node_id&quot;: &quot;MDU6TGFiZWw0MTgzMjcwODg=&quot;,
+      &quot;url&quot;: &quot;https://api.github.com/repos/octocat/linguist/labels/enhancement&quot;,
+      &quot;name&quot;: &quot;enhancement&quot;,
+      &quot;color&quot;: &quot;84b6eb&quot;,
+      &quot;default&quot;: true,
+      &quot;description&quot;: &quot;New feature or request.&quot;,
+      &quot;score&quot;: 1
+    },
+    {
+      &quot;id&quot;: 418327086,
+      &quot;node_id&quot;: &quot;MDU6TGFiZWw0MTgzMjcwODY=&quot;,
+      &quot;url&quot;: &quot;https://api.github.com/repos/octocat/linguist/labels/bug&quot;,
+      &quot;name&quot;: &quot;bug&quot;,
+      &quot;color&quot;: &quot;ee0701&quot;,
+      &quot;default&quot;: true,
+      &quot;description&quot;: &quot;Something isn&#39;t working.&quot;,
+      &quot;score&quot;: 1
+    }
+  ]
+}</code></pre>
+<h4 id="not-modified-3">Not modified</h4>
+<pre><code>Status: 304 Not Modified</code></pre>
+<h4 id="forbidden-2">Forbidden</h4>
+<pre><code>Status: 403 Forbidden</code></pre>
+<h4 id="resource-not-found">Resource not found</h4>
+<pre><code>Status: 404 Not Found</code></pre>
+<h4 id="validation-failed-2">Validation failed</h4>
+<pre><code>Status: 422 Unprocessable Entity</code></pre>
+<h4 id="notes-3">Notes</h4>
+<ul>
+<li><a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en/developers/apps">Works with GitHub Apps</a></li>
+</ul>
+<hr />
+<h3 id="search-repositories"><a href="#search-repositories">Search repositories</a></h3>
+<p>Find repositories via various criteria. This method returns up to 100 results <a href="https://docs.github.com/rest/overview/resources-in-the-rest-api#pagination">per page</a>.</p>
+<p>When searching for repositories, you can get text match metadata for the <strong>name</strong> and <strong>description</strong> fields when you pass the <code>text-match</code> media type. For more details about how to receive highlighted search results, see <a href="https://docs.github.com/rest/reference/search#text-match-metadata">Text match metadata</a>.</p>
+<p>For example, if you want to search for popular Tetris repositories written in assembly code, your query might look like this:</p>
+<p><code>q=tetris+language:assembly&amp;sort=stars&amp;order=desc</code></p>
+<p>This query searches for repositories with the word <code>tetris</code> in the name, the description, or the README. The results are limited to repositories where the primary language is assembly. The results are sorted by stars in descending order, so that the most popular repositories appear first in the search results.</p>
+<p>When you include the <code>mercy</code> preview header, you can also search for multiple topics by adding more <code>topic:</code> instances. For example, your query might look like this:</p>
+<p><code>q=topic:ruby+topic:rails</code></p>
+<pre><code>get /search/repositories</code></pre>
+<h4 id="parameters-4"><a href="#search-repositories--parameters">Parameters</a></h4>
+<table>
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>Type</th>
+<th>In</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>accept</code></td>
+<td>string</td>
+<td>header</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Setting to <code>application/vnd.github.v3+json</code> is recommended.<a href="#search-repositories-preview-notices">See preview notice</a></p>
+<div class="line-block"><br />
+<code>q</code> | string | query |</div>
+<p>The query contains one or more search keywords and qualifiers. Qualifiers allow you to limit your search to specific areas of GitHub. The REST API supports the same qualifiers as GitHub.com. To learn more about the format of the query, see <a href="https://docs.github.com/rest/reference/search#constructing-a-search-query">Constructing a search query</a>. See “<a href="https://help.github.com/articles/searching-for-repositories/">Searching for repositories</a>” for a detailed list of qualifiers.</p>
+<div class="line-block"><br />
+<code>sort</code> | string | query |</div>
+<p>Sorts the results of your query by number of <code>stars</code>, <code>forks</code>, or <code>help-wanted-issues</code> or how recently the items were <code>updated</code>. Default: <a href="https://docs.github.com/rest/reference/search#ranking-search-results">best match</a></p>
+<div class="line-block"><br />
+<code>order</code> | string | query |</div>
+<p>Determines whether the first search result returned is the highest number of matches (<code>desc</code>) or lowest number of matches (<code>asc</code>). This parameter is ignored unless you provide <code>sort</code>.</p>
+<p>Default: <code>desc</code> | | <code>per_page</code> | integer | query |</p>
+<p>Results per page (max 100)</p>
+<p>Default: <code>30</code> | | <code>page</code> | integer | query |</p>
+<p>Page number of the results to fetch.</p>
+<p>Default: <code>1</code> |</p>
+<h4 id="code-samples-4"><a href="#search-repositories--code-samples">Code samples</a></h4>
+<h5 id="shell-4">Shell</h5>
+<pre><code>curl \
+  -H &quot;Accept: application/vnd.github.v3+json&quot; \
+  https://api.github.com/search/repositories</code></pre>
+<h5 id="javascript-octokitcore.jshttpsgithub.comoctokitcore.jsreadme-4">JavaScript (<span class="citation" data-cites="octokit/core.js">[@octokit/core.js]</span>(https://github.com/octokit/core.js#readme))</h5>
+<pre><code>await octokit.request(&#39;GET /search/repositories&#39;, {
+  q: &#39;q&#39;
+})</code></pre>
+<h4 id="response-4">Response</h4>
+<pre><code>Status: 200 OK
+
+{
+  &quot;total_count&quot;: 40,
+  &quot;incomplete_results&quot;: false,
+  &quot;items&quot;: [
+    {
+      &quot;id&quot;: 3081286,
+      &quot;node_id&quot;: &quot;MDEwOlJlcG9zaXRvcnkzMDgxMjg2&quot;,
+      &quot;name&quot;: &quot;Tetris&quot;,
+      &quot;full_name&quot;: &quot;dtrupenn/Tetris&quot;,
+      &quot;owner&quot;: {
+        &quot;login&quot;: &quot;dtrupenn&quot;,
+        &quot;id&quot;: 872147,
+        &quot;node_id&quot;: &quot;MDQ6VXNlcjg3MjE0Nw==&quot;,
+        &quot;avatar_url&quot;: &quot;https://secure.gravatar.com/avatar/e7956084e75f239de85d3a31bc172ace?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png&quot;,
+        &quot;gravatar_id&quot;: &quot;&quot;,
+        &quot;url&quot;: &quot;https://api.github.com/users/dtrupenn&quot;,
+        &quot;received_events_url&quot;: &quot;https://api.github.com/users/dtrupenn/received_events&quot;,
+        &quot;type&quot;: &quot;User&quot;,
+        &quot;html_url&quot;: &quot;https://github.com/octocat&quot;,
+        &quot;followers_url&quot;: &quot;https://api.github.com/users/octocat/followers&quot;,
+        &quot;following_url&quot;: &quot;https://api.github.com/users/octocat/following{/other_user}&quot;,
+        &quot;gists_url&quot;: &quot;https://api.github.com/users/octocat/gists{/gist_id}&quot;,
+        &quot;starred_url&quot;: &quot;https://api.github.com/users/octocat/starred{/owner}{/repo}&quot;,
+        &quot;subscriptions_url&quot;: &quot;https://api.github.com/users/octocat/subscriptions&quot;,
+        &quot;organizations_url&quot;: &quot;https://api.github.com/users/octocat/orgs&quot;,
+        &quot;repos_url&quot;: &quot;https://api.github.com/users/octocat/repos&quot;,
+        &quot;events_url&quot;: &quot;https://api.github.com/users/octocat/events{/privacy}&quot;,
+        &quot;site_admin&quot;: true
+      },
+      &quot;private&quot;: false,
+      &quot;html_url&quot;: &quot;https://github.com/dtrupenn/Tetris&quot;,
+      &quot;description&quot;: &quot;A C implementation of Tetris using Pennsim through LC4&quot;,
+      &quot;fork&quot;: false,
+      &quot;url&quot;: &quot;https://api.github.com/repos/dtrupenn/Tetris&quot;,
+      &quot;created_at&quot;: &quot;2012-01-01T00:31:50Z&quot;,
+      &quot;updated_at&quot;: &quot;2013-01-05T17:58:47Z&quot;,
+      &quot;pushed_at&quot;: &quot;2012-01-01T00:37:02Z&quot;,
+      &quot;homepage&quot;: &quot;https://github.com&quot;,
+      &quot;size&quot;: 524,
+      &quot;stargazers_count&quot;: 1,
+      &quot;watchers_count&quot;: 1,
+      &quot;language&quot;: &quot;Assembly&quot;,
+      &quot;forks_count&quot;: 0,
+      &quot;open_issues_count&quot;: 0,
+      &quot;master_branch&quot;: &quot;master&quot;,
+      &quot;default_branch&quot;: &quot;master&quot;,
+      &quot;score&quot;: 1,
+      &quot;archive_url&quot;: &quot;https://api.github.com/repos/dtrupenn/Tetris/{archive_format}{/ref}&quot;,
+      &quot;assignees_url&quot;: &quot;https://api.github.com/repos/dtrupenn/Tetris/assignees{/user}&quot;,
+      &quot;blobs_url&quot;: &quot;https://api.github.com/repos/dtrupenn/Tetris/git/blobs{/sha}&quot;,
+      &quot;branches_url&quot;: &quot;https://api.github.com/repos/dtrupenn/Tetris/branches{/branch}&quot;,
+      &quot;collaborators_url&quot;: &quot;https://api.github.com/repos/dtrupenn/Tetris/collaborators{/collaborator}&quot;,
+      &quot;comments_url&quot;: &quot;https://api.github.com/repos/dtrupenn/Tetris/comments{/number}&quot;,
+      &quot;commits_url&quot;: &quot;https://api.github.com/repos/dtrupenn/Tetris/commits{/sha}&quot;,
+      &quot;compare_url&quot;: &quot;https://api.github.com/repos/dtrupenn/Tetris/compare/{base}...{head}&quot;,
+      &quot;contents_url&quot;: &quot;https://api.github.com/repos/dtrupenn/Tetris/contents/{+path}&quot;,
+      &quot;contributors_url&quot;: &quot;https://api.github.com/repos/dtrupenn/Tetris/contributors&quot;,
+      &quot;deployments_url&quot;: &quot;https://api.github.com/repos/dtrupenn/Tetris/deployments&quot;,
+      &quot;downloads_url&quot;: &quot;https://api.github.com/repos/dtrupenn/Tetris/downloads&quot;,
+      &quot;events_url&quot;: &quot;https://api.github.com/repos/dtrupenn/Tetris/events&quot;,
+      &quot;forks_url&quot;: &quot;https://api.github.com/repos/dtrupenn/Tetris/forks&quot;,
+      &quot;git_commits_url&quot;: &quot;https://api.github.com/repos/dtrupenn/Tetris/git/commits{/sha}&quot;,
+      &quot;git_refs_url&quot;: &quot;https://api.github.com/repos/dtrupenn/Tetris/git/refs{/sha}&quot;,
+      &quot;git_tags_url&quot;: &quot;https://api.github.com/repos/dtrupenn/Tetris/git/tags{/sha}&quot;,
+      &quot;git_url&quot;: &quot;git:github.com/dtrupenn/Tetris.git&quot;,
+      &quot;issue_comment_url&quot;: &quot;https://api.github.com/repos/dtrupenn/Tetris/issues/comments{/number}&quot;,
+      &quot;issue_events_url&quot;: &quot;https://api.github.com/repos/dtrupenn/Tetris/issues/events{/number}&quot;,
+      &quot;issues_url&quot;: &quot;https://api.github.com/repos/dtrupenn/Tetris/issues{/number}&quot;,
+      &quot;keys_url&quot;: &quot;https://api.github.com/repos/dtrupenn/Tetris/keys{/key_id}&quot;,
+      &quot;labels_url&quot;: &quot;https://api.github.com/repos/dtrupenn/Tetris/labels{/name}&quot;,
+      &quot;languages_url&quot;: &quot;https://api.github.com/repos/dtrupenn/Tetris/languages&quot;,
+      &quot;merges_url&quot;: &quot;https://api.github.com/repos/dtrupenn/Tetris/merges&quot;,
+      &quot;milestones_url&quot;: &quot;https://api.github.com/repos/dtrupenn/Tetris/milestones{/number}&quot;,
+      &quot;notifications_url&quot;: &quot;https://api.github.com/repos/dtrupenn/Tetris/notifications{?since,all,participating}&quot;,
+      &quot;pulls_url&quot;: &quot;https://api.github.com/repos/dtrupenn/Tetris/pulls{/number}&quot;,
+      &quot;releases_url&quot;: &quot;https://api.github.com/repos/dtrupenn/Tetris/releases{/id}&quot;,
+      &quot;ssh_url&quot;: &quot;git@github.com:dtrupenn/Tetris.git&quot;,
+      &quot;stargazers_url&quot;: &quot;https://api.github.com/repos/dtrupenn/Tetris/stargazers&quot;,
+      &quot;statuses_url&quot;: &quot;https://api.github.com/repos/dtrupenn/Tetris/statuses/{sha}&quot;,
+      &quot;subscribers_url&quot;: &quot;https://api.github.com/repos/dtrupenn/Tetris/subscribers&quot;,
+      &quot;subscription_url&quot;: &quot;https://api.github.com/repos/dtrupenn/Tetris/subscription&quot;,
+      &quot;tags_url&quot;: &quot;https://api.github.com/repos/dtrupenn/Tetris/tags&quot;,
+      &quot;teams_url&quot;: &quot;https://api.github.com/repos/dtrupenn/Tetris/teams&quot;,
+      &quot;trees_url&quot;: &quot;https://api.github.com/repos/dtrupenn/Tetris/git/trees{/sha}&quot;,
+      &quot;clone_url&quot;: &quot;https://github.com/dtrupenn/Tetris.git&quot;,
+      &quot;mirror_url&quot;: &quot;git:git.example.com/dtrupenn/Tetris&quot;,
+      &quot;hooks_url&quot;: &quot;https://api.github.com/repos/dtrupenn/Tetris/hooks&quot;,
+      &quot;svn_url&quot;: &quot;https://svn.github.com/dtrupenn/Tetris&quot;,
+      &quot;forks&quot;: 1,
+      &quot;open_issues&quot;: 1,
+      &quot;watchers&quot;: 1,
+      &quot;has_issues&quot;: true,
+      &quot;has_projects&quot;: true,
+      &quot;has_pages&quot;: true,
+      &quot;has_wiki&quot;: true,
+      &quot;has_downloads&quot;: true,
+      &quot;archived&quot;: true,
+      &quot;disabled&quot;: true,
+      &quot;license&quot;: {
+        &quot;key&quot;: &quot;mit&quot;,
+        &quot;name&quot;: &quot;MIT License&quot;,
+        &quot;url&quot;: &quot;https://api.github.com/licenses/mit&quot;,
+        &quot;spdx_id&quot;: &quot;MIT&quot;,
+        &quot;node_id&quot;: &quot;MDc6TGljZW5zZW1pdA==&quot;,
+        &quot;html_url&quot;: &quot;https://api.github.com/licenses/mit&quot;
+      }
+    }
+  ]
+}</code></pre>
+<h4 id="not-modified-4">Not modified</h4>
+<pre><code>Status: 304 Not Modified</code></pre>
+<h4 id="validation-failed-3">Validation failed</h4>
+<pre><code>Status: 422 Unprocessable Entity</code></pre>
+<h4 id="service-unavailable-2">Service unavailable</h4>
+<pre><code>Status: 503 Service Unavailable</code></pre>
+<h4 id="notes-4">Notes</h4>
+<ul>
+<li><a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en/developers/apps">Works with GitHub Apps</a></li>
+</ul>
+<h4 id="preview-notice-1">Preview notice</h4>
+<p>The <code>topics</code> property for repositories on GitHub is currently available for developers to preview. To view the <code>topics</code> property in calls that return repository results, you must provide a custom <a href="https://docs.github.com/rest/overview/media-types">media type</a> in the <code>Accept</code> header:</p>
+<pre><code>application/vnd.github.mercy-preview+json</code></pre>
+<hr />
+<h3 id="search-topics"><a href="#search-topics">Search topics</a></h3>
+<p>Find topics via various criteria. Results are sorted by best match. This method returns up to 100 results <a href="https://docs.github.com/rest/overview/resources-in-the-rest-api#pagination">per page</a>. See “<a href="https://help.github.com/articles/searching-topics/">Searching topics</a>” for a detailed list of qualifiers.</p>
+<p>When searching for topics, you can get text match metadata for the topic’s <strong>short_description</strong>, <strong>description</strong>, <strong>name</strong>, or <strong>display_name</strong> field when you pass the <code>text-match</code> media type. For more details about how to receive highlighted search results, see <a href="https://docs.github.com/rest/reference/search#text-match-metadata">Text match metadata</a>.</p>
+<p>For example, if you want to search for topics related to Ruby that are featured on <a href="https://github.com/topics">https://github.com/topics</a>. Your query might look like this:</p>
+<p><code>q=ruby+is:featured</code></p>
+<p>This query searches for topics with the keyword <code>ruby</code> and limits the results to find only topics that are featured. The topics that are the best match for the query appear first in the search results.</p>
+<pre><code>get /search/topics</code></pre>
+<h4 id="parameters-5"><a href="#search-topics--parameters">Parameters</a></h4>
+<table>
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>Type</th>
+<th>In</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>accept</code></td>
+<td>string</td>
+<td>header</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>This API is under preview and subject to change.<a href="#search-topics-preview-notices">See preview notice</a></p>
+<div class="line-block"><br />
+<code>q</code> | string | query |</div>
+<p>The query contains one or more search keywords and qualifiers. Qualifiers allow you to limit your search to specific areas of GitHub. The REST API supports the same qualifiers as GitHub.com. To learn more about the format of the query, see <a href="https://docs.github.com/rest/reference/search#constructing-a-search-query">Constructing a search query</a>.</p>
+<div class="line-block"><br />
+<code>per_page</code> | integer | query |</div>
+<p>Results per page (max 100)</p>
+<p>Default: <code>30</code> | | <code>page</code> | integer | query |</p>
+<p>Page number of the results to fetch.</p>
+<p>Default: <code>1</code> |</p>
+<h4 id="code-samples-5"><a href="#search-topics--code-samples">Code samples</a></h4>
+<h5 id="shell-5">Shell</h5>
+<pre><code>curl \
+  -H &quot;Accept: application/vnd.github.mercy-preview+json&quot; \
+  https://api.github.com/search/topics</code></pre>
+<h5 id="javascript-octokitcore.jshttpsgithub.comoctokitcore.jsreadme-5">JavaScript (<span class="citation" data-cites="octokit/core.js">[@octokit/core.js]</span>(https://github.com/octokit/core.js#readme))</h5>
+<pre><code>await octokit.request(&#39;GET /search/topics&#39;, {
+  q: &#39;q&#39;,
+  mediaType: {
+    previews: [
+      &#39;mercy&#39;
+    ]
+  }
+})</code></pre>
+<h4 id="response-5">Response</h4>
+<pre><code>Status: 200 OK
+
+{
+  &quot;total_count&quot;: 6,
+  &quot;incomplete_results&quot;: false,
+  &quot;items&quot;: [
+    {
+      &quot;name&quot;: &quot;ruby&quot;,
+      &quot;display_name&quot;: &quot;Ruby&quot;,
+      &quot;short_description&quot;: &quot;Ruby is a scripting language designed for simplified object-oriented programming.&quot;,
+      &quot;description&quot;: &quot;Ruby was developed by Yukihiro \&quot;Matz\&quot; Matsumoto in 1995 with the intent of having an easily readable programming language. It is integrated with the Rails framework to create dynamic web-applications. Ruby&#39;s syntax is similar to that of Perl and Python.&quot;,
+      &quot;created_by&quot;: &quot;Yukihiro Matsumoto&quot;,
+      &quot;released&quot;: &quot;December 21, 1995&quot;,
+      &quot;created_at&quot;: &quot;2016-11-28T22:03:59Z&quot;,
+      &quot;updated_at&quot;: &quot;2017-10-30T18:16:32Z&quot;,
+      &quot;featured&quot;: true,
+      &quot;curated&quot;: true,
+      &quot;score&quot;: 1
+    },
+    {
+      &quot;name&quot;: &quot;rails&quot;,
+      &quot;display_name&quot;: &quot;Rails&quot;,
+      &quot;short_description&quot;: &quot;Ruby on Rails (Rails) is a web application framework written in Ruby.&quot;,
+      &quot;description&quot;: &quot;Ruby on Rails (Rails) is a web application framework written in Ruby. It is meant to help simplify the building of complex websites.&quot;,
+      &quot;created_by&quot;: &quot;David Heinemeier Hansson&quot;,
+      &quot;released&quot;: &quot;December 13 2005&quot;,
+      &quot;created_at&quot;: &quot;2016-12-09T17:03:50Z&quot;,
+      &quot;updated_at&quot;: &quot;2017-10-30T16:20:19Z&quot;,
+      &quot;featured&quot;: true,
+      &quot;curated&quot;: true,
+      &quot;score&quot;: 1
+    },
+    {
+      &quot;name&quot;: &quot;python&quot;,
+      &quot;display_name&quot;: &quot;Python&quot;,
+      &quot;short_description&quot;: &quot;Python is a dynamically typed programming language.&quot;,
+      &quot;description&quot;: &quot;Python is a dynamically typed programming language designed by Guido Van Rossum. Much like the programming language Ruby, Python was designed to be easily read by programmers. Because of its large following and many libraries, Python can be implemented and used to do anything from webpages to scientific research.&quot;,
+      &quot;created_by&quot;: &quot;Guido van Rossum&quot;,
+      &quot;released&quot;: &quot;February 20, 1991&quot;,
+      &quot;created_at&quot;: &quot;2016-12-07T00:07:02Z&quot;,
+      &quot;updated_at&quot;: &quot;2017-10-27T22:45:43Z&quot;,
+      &quot;featured&quot;: true,
+      &quot;curated&quot;: true,
+      &quot;score&quot;: 1
+    },
+    {
+      &quot;name&quot;: &quot;jekyll&quot;,
+      &quot;display_name&quot;: &quot;Jekyll&quot;,
+      &quot;short_description&quot;: &quot;Jekyll is a simple, blog-aware static site generator.&quot;,
+      &quot;description&quot;: &quot;Jekyll is a blog-aware, site generator written in Ruby. It takes raw text files, runs it through a renderer and produces a publishable static website.&quot;,
+      &quot;created_by&quot;: &quot;Tom Preston-Werner&quot;,
+      &quot;released&quot;: &quot;2008&quot;,
+      &quot;created_at&quot;: &quot;2016-12-16T21:53:08Z&quot;,
+      &quot;updated_at&quot;: &quot;2017-10-27T19:00:24Z&quot;,
+      &quot;featured&quot;: true,
+      &quot;curated&quot;: true,
+      &quot;score&quot;: 1
+    },
+    {
+      &quot;name&quot;: &quot;sass&quot;,
+      &quot;display_name&quot;: &quot;Sass&quot;,
+      &quot;short_description&quot;: &quot;Sass is a stable extension to classic CSS.&quot;,
+      &quot;description&quot;: &quot;Sass is a stylesheet language with a main implementation in Ruby. It is an extension of CSS that makes improvements to the old stylesheet format, such as being able to declare variables and using a cleaner nesting syntax.&quot;,
+      &quot;created_by&quot;: &quot;Hampton Catlin, Natalie Weizenbaum, Chris Eppstein&quot;,
+      &quot;released&quot;: &quot;November 28, 2006&quot;,
+      &quot;created_at&quot;: &quot;2016-12-16T21:53:45Z&quot;,
+      &quot;updated_at&quot;: &quot;2018-01-16T16:30:40Z&quot;,
+      &quot;featured&quot;: true,
+      &quot;curated&quot;: true,
+      &quot;score&quot;: 1
+    },
+    {
+      &quot;name&quot;: &quot;homebrew&quot;,
+      &quot;display_name&quot;: &quot;Homebrew&quot;,
+      &quot;short_description&quot;: &quot;Homebrew is a package manager for macOS.&quot;,
+      &quot;description&quot;: &quot;Homebrew is a package manager for Apple&#39;s macOS operating system. It simplifies the installation of software and is popular in the Ruby on Rails community.&quot;,
+      &quot;created_by&quot;: &quot;Max Howell&quot;,
+      &quot;released&quot;: &quot;2009&quot;,
+      &quot;created_at&quot;: &quot;2016-12-17T20:30:44Z&quot;,
+      &quot;updated_at&quot;: &quot;2018-02-06T16:14:56Z&quot;,
+      &quot;featured&quot;: true,
+      &quot;curated&quot;: true,
+      &quot;score&quot;: 1
+    }
+  ]
+}</code></pre>
+<h4 id="not-modified-5">Not modified</h4>
+<pre><code>Status: 304 Not Modified</code></pre>
+<h4 id="preview-header-missing-1">Preview header missing</h4>
+<pre><code>Status: 415 Unsupported Media Type</code></pre>
+<h4 id="notes-5">Notes</h4>
+<ul>
+<li><a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en/developers/apps">Works with GitHub Apps</a></li>
+</ul>
+<h4 id="preview-notice-2">Preview notice</h4>
+<p>The <code>topics</code> property for repositories on GitHub is currently available for developers to preview. To view the <code>topics</code> property in calls that return repository results, you must provide a custom <a href="https://docs.github.com/rest/overview/media-types">media type</a> in the <code>Accept</code> header:</p>
+<pre><code>application/vnd.github.mercy-preview+json</code></pre>
+<p>☝️This header is <strong>required</strong>.</p>
+<hr />
+<h3 id="search-users"><a href="#search-users">Search users</a></h3>
+<p>Find users via various criteria. This method returns up to 100 results <a href="https://docs.github.com/rest/overview/resources-in-the-rest-api#pagination">per page</a>.</p>
+<p>When searching for users, you can get text match metadata for the issue <strong>login</strong>, <strong>email</strong>, and <strong>name</strong> fields when you pass the <code>text-match</code> media type. For more details about highlighting search results, see <a href="https://docs.github.com/rest/reference/search#text-match-metadata">Text match metadata</a>. For more details about how to receive highlighted search results, see <a href="https://docs.github.com/rest/reference/search#text-match-metadata">Text match metadata</a>.</p>
+<p>For example, if you’re looking for a list of popular users, you might try this query:</p>
+<p><code>q=tom+repos:%3E42+followers:%3E1000</code></p>
+<p>This query searches for users with the name <code>tom</code>. The results are restricted to users with more than 42 repositories and over 1,000 followers.</p>
+<pre><code>get /search/users</code></pre>
+<h4 id="parameters-6"><a href="#search-users--parameters">Parameters</a></h4>
+<table>
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>Type</th>
+<th>In</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>accept</code></td>
+<td>string</td>
+<td>header</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Setting to <code>application/vnd.github.v3+json</code> is recommended.</p>
+<div class="line-block"><br />
+<code>q</code> | string | query |</div>
+<p>The query contains one or more search keywords and qualifiers. Qualifiers allow you to limit your search to specific areas of GitHub. The REST API supports the same qualifiers as GitHub.com. To learn more about the format of the query, see <a href="https://docs.github.com/rest/reference/search#constructing-a-search-query">Constructing a search query</a>. See “<a href="https://help.github.com/articles/searching-users/">Searching users</a>” for a detailed list of qualifiers.</p>
+<div class="line-block"><br />
+<code>sort</code> | string | query |</div>
+<p>Sorts the results of your query by number of <code>followers</code> or <code>repositories</code>, or when the person <code>joined</code> GitHub. Default: <a href="https://docs.github.com/rest/reference/search#ranking-search-results">best match</a></p>
+<div class="line-block"><br />
+<code>order</code> | string | query |</div>
+<p>Determines whether the first search result returned is the highest number of matches (<code>desc</code>) or lowest number of matches (<code>asc</code>). This parameter is ignored unless you provide <code>sort</code>.</p>
+<p>Default: <code>desc</code> | | <code>per_page</code> | integer | query |</p>
+<p>Results per page (max 100)</p>
+<p>Default: <code>30</code> | | <code>page</code> | integer | query |</p>
+<p>Page number of the results to fetch.</p>
+<p>Default: <code>1</code> |</p>
+<h4 id="code-samples-6"><a href="#search-users--code-samples">Code samples</a></h4>
+<h5 id="shell-6">Shell</h5>
+<pre><code>curl \
+  -H &quot;Accept: application/vnd.github.v3+json&quot; \
+  https://api.github.com/search/users</code></pre>
+<h5 id="javascript-octokitcore.jshttpsgithub.comoctokitcore.jsreadme-6">JavaScript (<span class="citation" data-cites="octokit/core.js">[@octokit/core.js]</span>(https://github.com/octokit/core.js#readme))</h5>
+<pre><code>await octokit.request(&#39;GET /search/users&#39;, {
+  q: &#39;q&#39;
+})</code></pre>
+<h4 id="response-6">Response</h4>
+<pre><code>Status: 200 OK
+
+{
+  &quot;total_count&quot;: 12,
+  &quot;incomplete_results&quot;: false,
+  &quot;items&quot;: [
+    {
+      &quot;login&quot;: &quot;mojombo&quot;,
+      &quot;id&quot;: 1,
+      &quot;node_id&quot;: &quot;MDQ6VXNlcjE=&quot;,
+      &quot;avatar_url&quot;: &quot;https://secure.gravatar.com/avatar/25c7c18223fb42a4c6ae1c8db6f50f9b?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png&quot;,
+      &quot;gravatar_id&quot;: &quot;&quot;,
+      &quot;url&quot;: &quot;https://api.github.com/users/mojombo&quot;,
+      &quot;html_url&quot;: &quot;https://github.com/mojombo&quot;,
+      &quot;followers_url&quot;: &quot;https://api.github.com/users/mojombo/followers&quot;,
+      &quot;subscriptions_url&quot;: &quot;https://api.github.com/users/mojombo/subscriptions&quot;,
+      &quot;organizations_url&quot;: &quot;https://api.github.com/users/mojombo/orgs&quot;,
+      &quot;repos_url&quot;: &quot;https://api.github.com/users/mojombo/repos&quot;,
+      &quot;received_events_url&quot;: &quot;https://api.github.com/users/mojombo/received_events&quot;,
+      &quot;type&quot;: &quot;User&quot;,
+      &quot;score&quot;: 1,
+      &quot;following_url&quot;: &quot;https://api.github.com/users/mojombo/following{/other_user}&quot;,
+      &quot;gists_url&quot;: &quot;https://api.github.com/users/mojombo/gists{/gist_id}&quot;,
+      &quot;starred_url&quot;: &quot;https://api.github.com/users/mojombo/starred{/owner}{/repo}&quot;,
+      &quot;events_url&quot;: &quot;https://api.github.com/users/mojombo/events{/privacy}&quot;,
+      &quot;site_admin&quot;: true
+    }
+  ]
+}</code></pre>
+<h4 id="not-modified-6">Not modified</h4>
+<pre><code>Status: 304 Not Modified</code></pre>
+<h4 id="validation-failed-4">Validation failed</h4>
+<pre><code>Status: 422 Unprocessable Entity</code></pre>
+<h4 id="service-unavailable-3">Service unavailable</h4>
+<pre><code>Status: 503 Service Unavailable</code></pre>
+<h4 id="notes-6">Notes</h4>
+<ul>
+<li><a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en/developers/apps">Works with GitHub Apps</a></li>
+</ul>
+<hr />
+<h3 id="text-match-metadata"><a href="#text-match-metadata">Text match metadata</a></h3>
+<p>On GitHub, you can use the context provided by code snippets and highlights in search results. The Search API offers additional metadata that allows you to highlight the matching search terms when displaying search results.</p>
+<figure>
+<img src="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/assets/images/text-match-search-api.png" alt="code-snippet-highlighting" /><figcaption>code-snippet-highlighting</figcaption>
+</figure>
+<p>Requests can opt to receive those text fragments in the response, and every fragment is accompanied by numeric offsets identifying the exact location of each matching search term.</p>
+<p>To get this metadata in your search results, specify the <code>text-match</code> media type in your <code>Accept</code> header.</p>
+<pre><code>application/vnd.github.v3.text-match+json</code></pre>
+<p>When you provide the <code>text-match</code> media type, you will receive an extra key in the JSON payload called <code>text_matches</code> that provides information about the position of your search terms within the text and the <code>property</code> that includes the search term. Inside the <code>text_matches</code> array, each object includes the following attributes:</p>
+<table>
+<colgroup>
+<col style="width: 4%" />
+<col style="width: 95%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>object_url</code></td>
+<td>The URL for the resource that contains a string property matching one of the search terms.</td>
+</tr>
+<tr class="even">
+<td><code>object_type</code></td>
+<td>The name for the type of resource that exists at the given <code>object_url</code>.</td>
+</tr>
+<tr class="odd">
+<td><code>property</code></td>
+<td>The name of a property of the resource that exists at <code>object_url</code>. That property is a string that matches one of the search terms. (In the JSON returned from <code>object_url</code>, the full content for the <code>fragment</code> will be found in the property with this name.)</td>
+</tr>
+<tr class="even">
+<td><code>fragment</code></td>
+<td>A subset of the value of <code>property</code>. This is the text fragment that matches one or more of the search terms.</td>
+</tr>
+<tr class="odd">
+<td><code>matches</code></td>
+<td>An array of one or more search terms that are present in <code>fragment</code>. The indices (i.e., “offsets”) are relative to the fragment. (They are not relative to the <em>full</em> content of <code>property</code>.)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="example"><a href="#example">Example</a></h4>
+<p>Using cURL, and the <a href="#search-issues-and-pull-requests">example issue search</a> above, our API request would look like this:</p>
+<pre><code>curl -H &#39;Accept: application/vnd.github.v3.text-match+json&#39; \
+&#39;https://api.github.com/search/issues?q=windows+label:bug+language:python+state:open&amp;sort=created&amp;order=asc&#39;</code></pre>
+<p>The response will include a <code>text_matches</code> array for each search result. In the JSON below, we have two objects in the <code>text_matches</code> array.</p>
+<p>The first text match occurred in the <code>body</code> property of the issue. We see a fragment of text from the issue body. The search term (<code>windows</code>) appears twice within that fragment, and we have the indices for each occurrence.</p>
+<p>The second text match occurred in the <code>body</code> property of one of the issue’s comments. We have the URL for the issue comment. And of course, we see a fragment of text from the comment body. The search term (<code>windows</code>) appears once within that fragment.</p>
+<pre><code>{
+  &quot;text_matches&quot;: [
+    {
+      &quot;object_url&quot;: &quot;https://api.github.com/repositories/215335/issues/132&quot;,
+      &quot;object_type&quot;: &quot;Issue&quot;,
+      &quot;property&quot;: &quot;body&quot;,
+      &quot;fragment&quot;: &quot;comprehensive windows font I know of).\n\nIf we can find a commonly distributed windows font that supports them then no problem (we can use html font tags) but otherwise the &#39;(21)&#39; style is probably better.\n&quot;,
+      &quot;matches&quot;: [
+        {
+          &quot;text&quot;: &quot;windows&quot;,
+          &quot;indices&quot;: [
+            14,
+            21
+          ]
+        },
+        {
+          &quot;text&quot;: &quot;windows&quot;,
+          &quot;indices&quot;: [
+            78,
+            85
+          ]
+        }
+      ]
+    },
+    {
+      &quot;object_url&quot;: &quot;https://api.github.com/repositories/215335/issues/comments/25688&quot;,
+      &quot;object_type&quot;: &quot;IssueComment&quot;,
+      &quot;property&quot;: &quot;body&quot;,
+      &quot;fragment&quot;: &quot; right after that are a bit broken IMHO :). I suppose we could have some hack that maxes out at whatever the font does...\n\nI&#39;ll check what the state of play is on Windows.\n&quot;,
+      &quot;matches&quot;: [
+        {
+          &quot;text&quot;: &quot;Windows&quot;,
+          &quot;indices&quot;: [
+            163,
+            170
+          ]
+        }
+      ]
+    }
+  ]
+}</code></pre>
+<p><a href="https://docs.github.com/en/rest/reference/search">Source</a></p>
+</body>
+</html>

@@ -1,9 +1,5 @@
----
-title: Node.js API
-category: Node.js
----
-
-## Globals
+Globals
+-------
 
     __filename
     __dirname
@@ -21,14 +17,16 @@ category: Node.js
         }
     });
 
-## Snippets
+Snippets
+--------
 
     info = require('../package.json')
     info.version
 
     process.stdout.write(util.inspect(objekt, false, Infinity, true) + '\n');
 
-## Spawn - passthru the in/out
+Spawn - passthru the in/out
+---------------------------
 
     var spawn = require('child_process').spawn;
     var proc = spawn(bin, argv, { stdio: 'inherit' });
@@ -45,5 +43,3 @@ category: Node.js
     });
     proc.stderr.on('data', function (data) {
     });
-
-[all]: http://nodejs.org/api/all.html

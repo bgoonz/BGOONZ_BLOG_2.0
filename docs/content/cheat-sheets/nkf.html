@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>nkf</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="to-check-the-files-charactor-code">To check the file’s charactor code:</h1>
+<p>nkf -g <file></p>
+<h1 id="to-convert-charactor-code-to-utf-8">To convert charactor code to UTF-8:</h1>
+<p>nkf -w –overwrite <file></p>
+<h1 id="to-convert-charactor-code-to-euc-jp">To convert charactor code to EUC-JP:</h1>
+<p>nkf -e –overwrite <file></p>
+<h1 id="to-convert-charactor-code-to-shift-jis">To convert charactor code to Shift-JIS:</h1>
+<p>nkf -s –overwrite <file></p>
+<h1 id="to-convert-charactor-code-to-iso-2022-jp">To convert charactor code to ISO-2022-JP:</h1>
+<p>nkf -j –overwrite <file></p>
+<h1 id="to-convert-newline-to-lf">To convert newline to LF:</h1>
+<p>nkf -Lu –overwrite <file></p>
+<h1 id="to-convert-newline-to-crlf">To convert newline to CRLF:</h1>
+<p>nkf -Lw –overwrite <file></p>
+<h1 id="to-convert-newline-to-cr">To convert newline to CR:</h1>
+<p>nkf -Lm –overwrite <file></p>
+<h1 id="to-mime-encode">To MIME encode:</h1>
+<p>echo テスト | nkf -WwMQ</p>
+<h1 id="to-mime-decode">To MIME decode:</h1>
+<p>echo “=E3=83=86=E3=82=B9=E3=83=88” | nkf -WwmQ</p>
+</body>
+</html>

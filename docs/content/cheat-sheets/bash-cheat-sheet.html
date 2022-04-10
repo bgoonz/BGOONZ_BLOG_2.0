@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>bash-cheat-sheet</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="bash-cheat-sheet">Bash Cheat Sheet</h1>
+<ul>
+<li>One Liners</li>
+<li><ul>
+<li>Block Bad IPs</li>
+</ul></li>
+<li>If Statements
+<ul>
+<li>Check if args are passed</li>
+<li>Check if required variables exist</li>
+<li>Check if environment variables exists</li>
+</ul></li>
+<li>While Loops</li>
+<li><ul>
+<li>Run for 5 Seconds</li>
+</ul></li>
+<li>Redirecting Outputs
+<ul>
+<li>Stdout, Stderr</li>
+</ul></li>
+</ul>
+<h3 id="commands">Commands</h3>
+<h4 id="tr-command">tr command</h4>
+<p>Remove whitespace:</p>
+<pre><code>$ echo &#39;foo - bar&#39; | tr -d &#39;[:space:]&#39;
+foo-bar</code></pre>
+<h3 id="one-liners">One Liners</h3>
+<h4 id="block-bad-ips">Block Bad IPs</h4>
+<p>Use iptables to block all bad ip addresses:</p>
+<pre><code>$ cat /var/log/maillog | grep &#39;lost connection after AUTH from unknown&#39; | tail -n 5
+May 10 11:19:49 srv4 postfix/smtpd[1486]: lost connection after AUTH from unknown[185.36.81.145]
+May 10 11:21:41 srv4 postfix/smtpd[1762]: lost connection after AUTH from unknown[185.36.81.164]
+May 10 11:21:56 srv4 postfix/smtpd[1762]: lost connection after AUTH from unknown[175.139.231.129]
+May 10 11:23:51 srv4 postfix/smtpd[1838]: lost connection after AUTH from unknown[185.211.245.170]
+May 10 11:24:02 srv4 postfix/smtpd[1838]: lost connection after AUTH from unknown[185.211.245.170]</code></pre>
+<p>Get the data to show only IPs:</p>
+<pre><code>cat /var/log/maillog | grep &#39;lost connection after AUTH from unknown&#39; | cut -d&#39;[&#39; -f3 | cut -d &#39;]&#39; -f1 | tail -n5
+185.36.81.164
+175.139.231.129
+185.211.245.170
+185.211.245.170
+185.36.81.173</code></pre>
+<p>Get the uniqe IP addresses:</p>
+<pre><code>$ cat /var/log/maillog | grep &#39;lost connection after AUTH from unknown&#39; | cut -d&#39;[&#39; -f3 | cut -d &#39;]&#39; -f1 | sort | uniq
+103.194.70.16
+112.196.77.202
+113.172.210.19
+113.173.182.119
+139.59.224.234</code></pre>
+<p>Redirect the output to iptables:</p>
+<pre><code>$ for ip in $(cat /var/log/maillog | grep &#39;lost connection after AUTH from unknown&#39; | cut -d&#39;[&#39; -f3 | cut -d &#39;]&#39; -f1 | sort | uniq); do iptables -I INPUT -s ${ip} -p tcp --dport 25 -j DROP; done</code></pre>
+<h3 id="if-statements">If Statements</h3>
+<h4 id="check-if-args-are-passed">Check if args are passed</h4>
+<pre><code>if [[ $# -eq 0 ]] ; then
+    echo &#39;need to pass args&#39;
+    exit 0
+fi</code></pre>
+<h3 id="check-if-required-variables-exist">Check if required variables exist</h3>
+<pre><code>if [ $1 == &quot;one&quot; ] || [ $1 == &quot;two&quot; ]
+then
+  echo &quot;argument 1 has the value one or two&quot;
+  exit 0
+else
+  echo &quot;I require argument 1 to be one or two&quot;
+  exit 1
+fi</code></pre>
+<h3 id="check-if-environment-variables-exists">Check if environment variables exists</h3>
+<pre><code>if [ -z ${OWNER} ] || [ -z ${NAME} ]
+then
+  echo &quot;does not meet requirements of both environment variables&quot;
+  exit 1
+else
+  echo &quot;required environment variables exists&quot;
+fi</code></pre>
+<h3 id="while-loops">While Loops</h3>
+<h4 id="run-process-for-5-seconds">Run process for 5 Seconds</h4>
+<pre><code>set -ex
+count=0
+echo &quot;boot&quot;
+ping localhost &amp;
+while [ $count -le 5 ]
+  do
+    sleep 1
+    count=$((count + 1))
+    echo $count
+  done
+ps aux | grep ping
+echo &quot;tear down&quot;
+kill $!
+sleep 2</code></pre>
+<h3 id="redirecting-outputs">Redirecting Outputs</h3>
+<h4 id="stdout-stderr">Stdout, Stderr</h4>
+<p>Redirect stderr to /dev/null:</p>
+<pre><code>grep -irl faker . 2&gt;/dev/null</code></pre>
+<p>Redirect stdout to one file and stderr to another file:</p>
+<pre><code>grep -irl faker . &gt; out 2&gt;error</code></pre>
+<p>Redirect stderr to stdout (&amp;1), and then redirect stdout to a file:</p>
+<pre><code>grep -irl faker . &gt;out 2&gt;&amp;1</code></pre>
+<p>Redirect both to a file:</p>
+<pre><code>grep -irl faker . &amp;&gt; file.log</code></pre>
+<div class="sourceCode" id="cb14"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb14-1" title="1">    <span class="bu">pushd</span></a>
+<a class="sourceLine" id="cb14-2" title="2">    <span class="co"># goes to a directory from directory</span></a>
+<a class="sourceLine" id="cb14-3" title="3">    <span class="bu">popd</span></a>
+<a class="sourceLine" id="cb14-4" title="4">    <span class="co"># returns to the original directory</span></a>
+<a class="sourceLine" id="cb14-5" title="5">    <span class="fu">file</span></a>
+<a class="sourceLine" id="cb14-6" title="6">    <span class="co"># gives info about the file</span></a>
+<a class="sourceLine" id="cb14-7" title="7">    <span class="fu">locate</span> <span class="op">&lt;</span>name<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb14-8" title="8">    <span class="co"># locates find</span></a>
+<a class="sourceLine" id="cb14-9" title="9">    <span class="fu">sudo</span> updatedb</a>
+<a class="sourceLine" id="cb14-10" title="10">    <span class="co"># updates database</span></a>
+<a class="sourceLine" id="cb14-11" title="11">    <span class="fu">which</span> <span class="op">&lt;</span>name<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb14-12" title="12">    <span class="co"># tells if install</span></a>
+<a class="sourceLine" id="cb14-13" title="13">    <span class="bu">history</span></a>
+<a class="sourceLine" id="cb14-14" title="14">    <span class="co"># shows command history</span></a>
+<a class="sourceLine" id="cb14-15" title="15">    <span class="fu">whatis</span></a>
+<a class="sourceLine" id="cb14-16" title="16">    <span class="co"># tells info about command</span></a>
+<a class="sourceLine" id="cb14-17" title="17">    <span class="fu">apropos</span> <span class="op">&lt;</span>search term<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb14-18" title="18">    <span class="co"># displays commands with that search term</span></a>
+<a class="sourceLine" id="cb14-19" title="19">    <span class="fu">man</span> <span class="op">&lt;</span>command<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb14-20" title="20">    <span class="co"># displays manual for that command</span></a>
+<a class="sourceLine" id="cb14-21" title="21">    <span class="ex">dig</span> <span class="op">&lt;</span>address<span class="op">&gt;</span> <span class="op">&lt;</span>+trace<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb14-22" title="22">    <span class="co"># DNS Lookup with trace</span></a>
+<a class="sourceLine" id="cb14-23" title="23">    <span class="co"># trace &gt;&gt; track in real-time the pathway taken by a packet on an IP network from source to destination, reporting the IP addresses of all the routers it pinged in between</span></a></code></pre></div>
+<h2 id="thing-that-are-basic-but-i-need-to-work-on">Thing that are basic but I need to work on</h2>
+<p>cat mv chmod</p>
+<p>-———– I Got to 41 minutes of the video ————————</p>
+</body>
+</html>

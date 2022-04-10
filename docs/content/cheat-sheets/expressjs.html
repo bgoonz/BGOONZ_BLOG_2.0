@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>expressjs</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h2 id="background">Background:</h2>
+<h1 id="express-glossary">Express glossary</h1>
+<blockquote>
+<p>In general, one or more programs that are designed to carry out operations for a specific purpose. In the context of Express, a program that uses the Express API running on the Node.js platform. Might also refer to an app object.</p>
+</blockquote>
+<hr />
+<h3 id="application">application</h3>
+<p>In general, one or more programs that are designed to carry out operations for a specific purpose. In the context of Express, a program that uses the Express API running on the Node.js platform. Might also refer to an <a href="https://expressjs.com/en/api.html#express">app object</a>.</p>
+<h3 id="api">API</h3>
+<p>Application programming interface. Spell out the abbreviation when it is first used.</p>
+<h3 id="express">Express</h3>
+<p>A fast, un-opinionated, minimalist web framework for Node.js applications. In general, “Express” is preferred to “Express.js,” though the latter is acceptable.</p>
+<h3 id="libuv">libuv</h3>
+<p>A multi-platform support library which focuses on asynchronous I/O, primarily developed for use by Node.js.</p>
+<h3 id="middleware">middleware</h3>
+<p>A function that is invoked by the Express routing layer before the final request handler, and thus sits in the middle between a raw request and the final intended route. A few fine points of terminology around middleware:</p>
+<ul>
+<li><code>var foo = require('middleware')</code> is called <em>requiring</em> or <em>using</em> a Node.js module. Then the statement <code>var mw = foo()</code> typically returns the middleware.</li>
+<li><code>app.use(mw)</code> is called <em>adding the middleware to the global processing stack</em>.</li>
+<li><code>app.get('/foo', mw, function (req, res) { ... })</code> is called <em>adding the middleware to the “GET /foo” processing stack</em>.</li>
+</ul>
+<h3 id="node.js">Node.js</h3>
+<p>A software platform that is used to build scalable network applications. Node.js uses JavaScript as its scripting language, and achieves high throughput via non-blocking I/O and a single-threaded event loop. See <a href="https://nodejs.org/en/">nodejs.org</a>. <strong>Usage note</strong>: Initially, “Node.js,” thereafter “Node”.</p>
+<h3 id="open-source-open-source">open-source, open source</h3>
+<p>When used as an adjective, hyphenate; for example: “This is open-source software.” See <a href="http://en.wikipedia.org/wiki/Open-source_software">Open-source software on Wikipedia</a>. Note: Although it is common not to hyphenate this term, we are using the standard English rules for hyphenating a compound adjective.</p>
+<h3 id="request">request</h3>
+<p>An HTTP request. A client submits an HTTP request message to a server, which returns a response. The request must use one of several <a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods">request methods</a> such as GET, POST, and so on.</p>
+<h3 id="response">response</h3>
+<p>An HTTP response. A server returns an HTTP response message to the client. The response contains completion status information about the request and might also contain requested content in its message body.</p>
+<h3 id="route">route</h3>
+<p>Part of a URL that identifies a resource. For example, in <code>http://foo.com/products/id</code>, “/products/id” is the route.</p>
+<h1 id="installing">Installing</h1>
+<p>Assuming you’ve already installed <a href="https://nodejs.org/">Node.js</a>, create a directory to hold your application, and make that your working directory.</p>
+<pre><code>$ mkdir myapp
+$ cd myapp
+</code></pre>
+<p>Use the <code>npm init</code> command to create a <code>package.json</code> file for your application. For more information on how <code>package.json</code> works, see <a href="https://docs.npmjs.com/files/package.json">Specifics of npm’s package.json handling</a>.</p>
+<pre><code>$ npm init
+</code></pre>
+<p>This command prompts you for a number of things, such as the name and version of your application. For now, you can simply hit RETURN to accept the defaults for most of them, with the following exception:</p>
+<pre><code>entry point: (index.js)
+</code></pre>
+<p>Enter <code>app.js</code>, or whatever you want the name of the main file to be. If you want it to be <code>index.js</code>, hit RETURN to accept the suggested default file name.</p>
+<p>Now install Express in the <code>myapp</code> directory and save it in the dependencies list. For example:</p>
+<pre><code>$ npm install express --save
+</code></pre>
+<p>To install Express temporarily and not add it to the dependencies list:</p>
+<pre><code>$ npm install express --no-save
+</code></pre>
+<p>By default with version npm 5.0+ npm install adds the module to the <code>dependencies</code> list in the <code>package.json</code> file; with earlier versions of npm, you must specify the <code>--save</code> option explicitly. Then, afterwards, running <code>npm install</code> in the app directory will automatically install modules in the dependencies list.</p>
+<h1 id="express-cheatsheet">Express Cheatsheet</h1>
+<ul>
+<li><a href="#express-glossary">Express glossary</a>
+<ul>
+<li><a href="#application">application</a></li>
+<li><a href="#api">API</a></li>
+<li><a href="#express">Express</a></li>
+<li><a href="#libuv">libuv</a></li>
+<li><a href="#middleware">middleware</a></li>
+<li><a href="#nodejs">Node.js</a></li>
+<li><a href="#open-source-open-source">open-source, open source</a></li>
+<li><a href="#request">request</a></li>
+<li><a href="#response">response</a></li>
+<li><a href="#route">route</a></li>
+</ul></li>
+<li><a href="#installing">Installing</a></li>
+<li><a href="#express-cheatsheet">Express Cheatsheet</a>
+<ul>
+<li><a href="#creating-an-app">Creating an App</a></li>
+<li><a href="#listening-on-a-port">Listening on a port</a>
+<ul>
+<li><a href="#using-a-separate-server-instance">Using a separate server instance</a></li>
+</ul></li>
+<li><a href="#middleware-1">Middleware</a>
+<ul>
+<li><a href="#standard-middleware-function-signature">Standard middleware function signature</a></li>
+<li><a href="#appuse"><code>app.use</code></a></li>
+<li><a href="#routes---appget-apppost-etc">Routes - <code>app.get</code>, <code>app.post</code>, etc</a></li>
+<li><a href="#router">Router</a>
+<ul>
+<li><a href="#making-a-new-router">Making a new router</a></li>
+<li><a href="#letting-app-know-about-the-router-and-its-prefix">Letting app know about the router and it’s prefix.</a></li>
+<li><a href="#defining-routes-on-the-router">Defining Routes on the Router</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#error-handling">Error handling</a></li>
+<li><a href="#common-pitfalls">Common Pitfalls</a>
+<ul>
+<li><a href="#not-sending-anything-back-from-a-route">Not sending anything back from a route</a></li>
+</ul></li>
+</ul></li>
+</ul>
+<h2 id="creating-an-app">Creating an App</h2>
+<div class="sourceCode" id="cb6"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb6-1" title="1"><span class="kw">const</span> express <span class="op">=</span> <span class="at">require</span>(<span class="st">&#39;express&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb6-2" title="2"><span class="kw">const</span> app <span class="op">=</span> <span class="at">express</span>()<span class="op">;</span></a></code></pre></div>
+<h2 id="listening-on-a-port">Listening on a port</h2>
+<div class="sourceCode" id="cb7"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb7-1" title="1"><span class="kw">const</span> PORT <span class="op">=</span> <span class="dv">4000</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb7-2" title="2"></a>
+<a class="sourceLine" id="cb7-3" title="3"><span class="va">app</span>.<span class="at">listen</span>(PORT<span class="op">,</span> () <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb7-4" title="4">    <span class="va">console</span>.<span class="at">log</span>(<span class="vs">`Listening on </span><span class="sc">${</span>PORT<span class="sc">}</span><span class="vs">`</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb7-5" title="5"><span class="op">}</span>)<span class="op">;</span></a></code></pre></div>
+<h3 id="using-a-separate-server-instance">Using a separate server instance</h3>
+<p>Sometimes you may want to separate the app from the server itself.</p>
+<p>This makes testing easier, and is a good separation of concerns.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb8-1" title="1"><span class="co">// In server.js</span></a>
+<a class="sourceLine" id="cb8-2" title="2"><span class="kw">const</span> http <span class="op">=</span> <span class="at">require</span>(<span class="st">&#39;http&#39;</span>)<span class="op">;</span> <span class="co">// This is node&#39;s built-in http module</span></a>
+<a class="sourceLine" id="cb8-3" title="3"><span class="kw">const</span> app <span class="op">=</span> <span class="at">require</span>(<span class="st">&#39;./app&#39;</span>)<span class="op">;</span> <span class="co">// Assuming we create our app in app.js</span></a>
+<a class="sourceLine" id="cb8-4" title="4"></a>
+<a class="sourceLine" id="cb8-5" title="5"><span class="kw">const</span> server <span class="op">=</span> <span class="va">http</span>.<span class="at">createServer</span>(app)<span class="op">;</span> <span class="co">// We can pass the app to createServer</span></a>
+<a class="sourceLine" id="cb8-6" title="6"></a>
+<a class="sourceLine" id="cb8-7" title="7"><span class="va">server</span>.<span class="at">listen</span>(PORT<span class="op">,</span> () <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb8-8" title="8">    <span class="va">console</span>.<span class="at">log</span>(<span class="vs">`Listening on </span><span class="sc">${</span>PORT<span class="vs">`}`</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb8-9" title="9"><span class="sc">}</span><span class="vs">);</span></a></code></pre></div>
+<h2 id="middleware-1">Middleware</h2>
+<p>Every callback we define in express is middleware.</p>
+<h3 id="standard-middleware-function-signature">Standard middleware function signature</h3>
+<div class="sourceCode" id="cb9"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb9-1" title="1">(req<span class="op">,</span> res<span class="op">,</span> next) <span class="kw">=&gt;</span> <span class="op">{};</span></a></code></pre></div>
+<ul>
+<li><code>req</code> - The Request object that represents the incoming Request to the server</li>
+<li><code>res</code> - The Response object that represents the outgoing response to the browser</li>
+<li><code>next</code> - A function that will move to the next middleware function in the chain</li>
+</ul>
+<h3 id="app.use"><code>app.use</code></h3>
+<p><code>app.use</code> is how you register a middleware function with express. Functions are added to the express app in the order the <code>app.use()</code> functions are invoked. The callback (middleware) functions aren’t called until a new request comes in to the server.</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb10-1" title="1"><span class="va">app</span>.<span class="at">use</span>((req<span class="op">,</span> res<span class="op">,</span> next) <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb10-2" title="2">    <span class="co">// this runs when a request comes in.</span></a>
+<a class="sourceLine" id="cb10-3" title="3"><span class="op">}</span>)<span class="op">;</span></a></code></pre></div>
+<p><code>app.use</code> can accept a list of middleware functions OR an array of them.</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb11-1" title="1"><span class="co">// Two arrow functions.</span></a>
+<a class="sourceLine" id="cb11-2" title="2"><span class="va">app</span>.<span class="at">use</span>(</a>
+<a class="sourceLine" id="cb11-3" title="3">    (req<span class="op">,</span> res<span class="op">,</span> next) <span class="kw">=&gt;</span> <span class="op">{},</span></a>
+<a class="sourceLine" id="cb11-4" title="4">    (req<span class="op">,</span> res<span class="op">,</span> next) <span class="kw">=&gt;</span> <span class="op">{}</span></a>
+<a class="sourceLine" id="cb11-5" title="5">)<span class="op">;</span></a>
+<a class="sourceLine" id="cb11-6" title="6"></a>
+<a class="sourceLine" id="cb11-7" title="7"><span class="co">// Two named functions.</span></a>
+<a class="sourceLine" id="cb11-8" title="8"><span class="va">app</span>.<span class="at">use</span>(middleware1<span class="op">,</span> middleware2)<span class="op">;</span></a>
+<a class="sourceLine" id="cb11-9" title="9"></a>
+<a class="sourceLine" id="cb11-10" title="10"><span class="co">// An array of middleware functions</span></a>
+<a class="sourceLine" id="cb11-11" title="11"><span class="va">app</span>.<span class="at">use</span>([middleware1<span class="op">,</span> middleware2])<span class="op">;</span></a>
+<a class="sourceLine" id="cb11-12" title="12"></a>
+<a class="sourceLine" id="cb11-13" title="13"><span class="co">// Or any combination. It&#39;s flexible!</span></a>
+<a class="sourceLine" id="cb11-14" title="14"><span class="va">app</span>.<span class="at">use</span>([middleware1<span class="op">,</span> middleware2]<span class="op">,</span> middleware3<span class="op">,</span> (req<span class="op">,</span> res<span class="op">,</span> next) <span class="kw">=&gt;</span> <span class="op">{}</span>)<span class="op">;</span></a></code></pre></div>
+<p>The important thing is, you are just giving express function <em>references</em>, the functions do not get called <em>until a request is made to the server</em>.</p>
+<h3 id="routes---app.get-app.post-etc">Routes - <code>app.get</code>, <code>app.post</code>, etc</h3>
+<p>Express routes are similar to app.use, but are <em>conditional</em> middleware.</p>
+<p>They depend on the HTTP Method and the Path matching in order to run.</p>
+<p>The first argument to these routes is the path to match.</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb12-1" title="1"><span class="va">app</span>.<span class="at">get</span>(<span class="st">&#39;/&#39;</span><span class="op">,</span> (req<span class="op">,</span> res<span class="op">,</span> next) <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb12-2" title="2">    <span class="co">// Runs only for a GET request to /</span></a>
+<a class="sourceLine" id="cb12-3" title="3"><span class="op">}</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb12-4" title="4"></a>
+<a class="sourceLine" id="cb12-5" title="5"><span class="va">app</span>.<span class="at">post</span>(<span class="st">&#39;/users&#39;</span><span class="op">,</span> (req<span class="op">,</span> res<span class="op">,</span> next) <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb12-6" title="6">    <span class="co">// Runs only for a POST request to /users</span></a>
+<a class="sourceLine" id="cb12-7" title="7"><span class="op">}</span>)<span class="op">;</span></a></code></pre></div>
+<h3 id="router">Router</h3>
+<p>As a way of organizing your router, express includes a router object.</p>
+<h4 id="making-a-new-router">Making a new router</h4>
+<pre class="jsx"><code>const express = require(&#39;express&#39;);
+const userRouter = express.Router();</code></pre>
+<h4 id="letting-app-know-about-the-router-and-its-prefix.">Letting app know about the router and it’s prefix.</h4>
+<p>We can use <code>app.use</code> to tell express about the router and what <em>prefix</em> all of it’s routes will be under.</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb14-1" title="1"><span class="kw">const</span> app <span class="op">=</span> <span class="at">express</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb14-2" title="2"><span class="kw">const</span> userRouter <span class="op">=</span> <span class="va">express</span>.<span class="at">Router</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb14-3" title="3"></a>
+<a class="sourceLine" id="cb14-4" title="4"><span class="co">// every route we create on userRouter will have the prefix `/users`</span></a>
+<a class="sourceLine" id="cb14-5" title="5"><span class="va">app</span>.<span class="at">use</span>(<span class="st">&#39;/users&#39;</span><span class="op">,</span> userRouter)<span class="op">;</span></a></code></pre></div>
+<h4 id="defining-routes-on-the-router">Defining Routes on the Router</h4>
+<p>Routers contain the same <code>.use()</code> <code>.get()</code> and <code>.post()</code> methods that <code>app</code> does. However, the path matching matches everything <em>after</em> the router’s prefix.</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb15-1" title="1"><span class="co">// Passing a middleware to the router</span></a>
+<a class="sourceLine" id="cb15-2" title="2"><span class="va">userRouter</span>.<span class="at">use</span>(middleware)<span class="op">;</span></a>
+<a class="sourceLine" id="cb15-3" title="3"></a>
+<a class="sourceLine" id="cb15-4" title="4"><span class="va">userRouter</span>.<span class="at">get</span>(<span class="st">&#39;/profile&#39;</span><span class="op">,</span> (req<span class="op">,</span> res<span class="op">,</span> next) <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb15-5" title="5">    <span class="co">// Runs when the router path matches /profile</span></a>
+<a class="sourceLine" id="cb15-6" title="6">    <span class="co">// excluding the prefix</span></a>
+<a class="sourceLine" id="cb15-7" title="7">    <span class="co">// Example: If the userRouter&#39;s prefix was /users</span></a>
+<a class="sourceLine" id="cb15-8" title="8">    <span class="co">// then the full path that matches is /users/profile</span></a>
+<a class="sourceLine" id="cb15-9" title="9"><span class="op">}</span>)<span class="op">;</span></a></code></pre></div>
+<h2 id="error-handling">Error handling</h2>
+<p>Error handling middleware is just like regular middleware but has <em>four</em> parameters to the callback function.</p>
+<p>Make sure you log your errors to the console, otherwise if you have a bug in your express app, it might be completely hidden from you.</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb16-1" title="1"><span class="va">app</span>.<span class="at">use</span>((err<span class="op">,</span> req<span class="op">,</span> res<span class="op">,</span> next) <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb16-2" title="2">    <span class="co">// The first argument will be an error.</span></a>
+<a class="sourceLine" id="cb16-3" title="3">    <span class="va">console</span>.<span class="at">error</span>(err)<span class="op">;</span> <span class="co">// This is a good idea</span></a>
+<a class="sourceLine" id="cb16-4" title="4"><span class="op">}</span>)<span class="op">;</span></a></code></pre></div>
+<h2 id="common-pitfalls">Common Pitfalls</h2>
+<h3 id="not-sending-anything-back-from-a-route">Not sending anything back from a route</h3>
+<p>This will cause express to hang forever. Your browser will never get a response.</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb17-1" title="1"><span class="va">app</span>.<span class="at">get</span>(<span class="st">&#39;/&#39;</span><span class="op">,</span> (req<span class="op">,</span> res<span class="op">,</span> next) <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb17-2" title="2">    <span class="co">// if I don&#39;t res.send or res.json</span></a>
+<a class="sourceLine" id="cb17-3" title="3">    <span class="co">// And I don&#39;t call next()</span></a>
+<a class="sourceLine" id="cb17-4" title="4">    <span class="co">// This will cause express to hang.</span></a>
+<a class="sourceLine" id="cb17-5" title="5"><span class="op">}</span>)<span class="op">;</span></a></code></pre></div>
+</body>
+</html>

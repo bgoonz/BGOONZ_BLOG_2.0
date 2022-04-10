@@ -1,18 +1,22 @@
-# Intl.DisplayNames
+Intl.DisplayNames
+=================
 
 The `Intl.DisplayNames` object enables the consistent translation of language, region and script display names.
 
-## Constructor
+Constructor
+-----------
 
 [`Intl.DisplayNames()`](displaynames/displaynames)  
 Creates a new `Intl.DisplayNames` object.
 
-## Static methods
+Static methods
+--------------
 
 [`Intl.DisplayNames.supportedLocalesOf()`](displaynames/supportedlocalesof)  
-Returns an array containing those of the provided locales that are supported without having to fall back to the runtime's default locale.
+Returns an array containing those of the provided locales that are supported without having to fall back to the runtime’s default locale.
 
-## Instance methods
+Instance methods
+----------------
 
 [`Intl.DisplayNames.prototype.of()`](displaynames/of)  
 This method receives a `code` and returns a string based on the locale and options provided when instantiating `Intl.DisplayNames`.
@@ -20,7 +24,8 @@ This method receives a `code` and returns a string based on the locale and optio
 [`Intl.DisplayNames.prototype.resolvedOptions()`](displaynames/resolvedoptions)  
 Returns a new object with properties reflecting the locale and formatting options computed during initialization of the object.
 
-## Examples
+Examples
+--------
 
 ### Region Code Display Names
 
@@ -97,12 +102,11 @@ To create an `Intl.DisplayNames` for a locale and get the display name for curre
     currencyNames.of('TWD'); // "新台幣"
     currencyNames.of('CNY'); // "人民幣"
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#intl-displaynames-objects">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
-<br/>
-
-<span class="small">#intl-displaynames-objects</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Internationalization API Specification (ECMAScript Internationalization API)<br />
+</p><span class="small">#intl-displaynames-objects</span></td></tr></tbody></table>
 
 `DisplayNames`
 
@@ -234,7 +238,8 @@ No
 
 No
 
-## See also
+See also
+--------
 
 -   [`Intl`](../intl)
 

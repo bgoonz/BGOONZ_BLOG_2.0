@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>ntp</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="to-verify-if-ntpd-is-running">To verify if ntpd is running:</h1>
+<p>service ntp status</p>
+<h1 id="to-start-ntpd-if-not-running">To start ntpd if not running:</h1>
+<p>service ntp start</p>
+<h1 id="to-display-current-hardware-clock-value">To display current hardware clock value:</h1>
+<p>sudo hwclock -r</p>
+<h1 id="to-apply-system-time-to-hardware-time">To apply system time to hardware time:</h1>
+<p>sudo hwclock –systohc</p>
+<h1 id="to-apply-hardware-time-to-system-time">To apply hardware time to system time:</h1>
+<p>sudo hwclock –hctosys</p>
+<h1 id="to-set-hwclock-to-local-time">To set hwclock to local time:</h1>
+<p>sudo hwclock –localtime</p>
+<h1 id="to-set-hwclock-to-utc">To set hwclock to UTC:</h1>
+<p>sudo hwclock –utc</p>
+<h1 id="to-set-hwclock-manually">To set hwclock manually:</h1>
+<p>sudo hwclock –set –date=“8/10/15 13:10:05”</p>
+<h1 id="to-query-surrounding-stratum-time-servers">To query surrounding stratum time servers</h1>
+<p>ntpq -pn</p>
+<h1 id="to-config-file">To config file:</h1>
+<p>/etc/ntp.conf</p>
+<h1 id="to-driftfile">To driftfile:</h1>
+<h1 id="location-of-drift-of-your-system-clock-compared-to-ntp-servers">location of “drift” of your system clock compared to ntp servers:</h1>
+<p>/var/lib/ntp/ntp.drift</p>
+</body>
+</html>

@@ -1,4 +1,5 @@
-# RegExp.prototype.flags
+RegExp.prototype.flags
+======================
 
 The `flags` property returns a string consisting of the [flags](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#advanced_searching_with_flags_2) of the current regular expression object.
 
@@ -16,18 +17,21 @@ Configurable
 
 yes
 
-## Description
+Description
+-----------
 
-Flags in the `flags` property are sorted alphabetically (from left to right, e.g. `"gimsuy"`).
+Flags in the `flags` property are sorted alphabetically (from left to right, e.g. `"gimsuy"`).
 
-## Examples
+Examples
+--------
 
 ### Using flags
 
     /foo/ig.flags;   // "gi"
     /bar/myu.flags;  // "muy"
 
-## Polyfill
+Polyfill
+--------
 
     if (RegExp.prototype.flags === undefined) {
       Object.defineProperty(RegExp.prototype, 'flags', {
@@ -38,12 +42,11 @@ Flags in the `flags` property are sorted alphabetically (from left to right, e.g
       });
     }
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-get-regexp.prototype.flags">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-get-regexp.prototype.flags</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-get-regexp.prototype.flags</span></td></tr></tbody></table>
 
 `flags`
 
@@ -71,10 +74,10 @@ No
 
 5.0
 
-## See also
+See also
+--------
 
 -   [`RegExp.prototype.source`](source)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/flags" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/flags</a>

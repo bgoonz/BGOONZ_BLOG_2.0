@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>asynchronous-javascript-cheat-sheet</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="asynchronous-javascript-cheat-sheet">Asynchronous JavaScript Cheat Sheet</h1>
+<h4 id="promise-basics">Promise basics</h4>
+<ul>
+<li><strong>Promises</strong> start in a <strong>pending state</strong>, neither fulfilled or rejected.</li>
+<li>When the operation is completed, a promise will become <strong>fulfilled with a value</strong>.</li>
+<li>If the operation fails, a promise will get <strong>rejected with an error</strong>.</li>
+</ul>
+<h4 id="creating-promises">Creating promises</h4>
+<ul>
+<li>The function passed to a <code>new Promise</code> will execute synchronously.</li>
+<li>Use <code>resolve()</code> or <code>reject()</code> to create promises from values.</li>
+<li><code>Promise.resolve(val)</code> will fulfill the promise with <code>val</code>.</li>
+<li><code>Promise.reject(err)</code> will reject the promise with <code>err</code>.</li>
+<li>If you put a fulfilled promise into a fulfilled promise, they will collapse into one.</li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="co">// Resolving with a value, rejecting with an error</span></a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="kw">new</span> <span class="at">Promise</span>((resolve<span class="op">,</span> reject) <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-3" title="3">    <span class="at">performOperation</span>((err<span class="op">,</span> val) <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-4" title="4">        <span class="cf">if</span> (err) <span class="at">reject</span>(err)<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-5" title="5">        <span class="cf">else</span> <span class="at">resolve</span>(val)<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-6" title="6">    <span class="op">}</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-7" title="7"><span class="op">}</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-8" title="8"></a>
+<a class="sourceLine" id="cb1-9" title="9"><span class="co">// Resolving without value, no need for reject</span></a>
+<a class="sourceLine" id="cb1-10" title="10"><span class="kw">const</span> delay <span class="op">=</span> (ms) <span class="kw">=&gt;</span> <span class="kw">new</span> <span class="at">Promise</span>((resolve) <span class="kw">=&gt;</span> <span class="at">setTimeout</span>(resolve<span class="op">,</span> ms))<span class="op">;</span></a></code></pre></div>
+<h4 id="handling-promises">Handling promises</h4>
+<ul>
+<li><code>Promise.prototype.then()</code> accepts two optional arguments (<code>onFulfilled</code>, <code>onRejected</code>).</li>
+<li><code>Promise.prototype.then()</code> will call <code>onFulfilled</code> once the promise is fulfilled.</li>
+<li><code>Promise.prototype.then()</code> will call <code>onRejected</code> if the promise is rejected.</li>
+<li><code>Promise.prototype.then()</code> passes errors through if <code>onRejected</code> in undefined.</li>
+<li><code>Promise.prototype.catch()</code> accepts one argument (<code>onRejected</code>).</li>
+<li><code>Promise.prototype.catch()</code> behaves like <code>Promise.prototype.then()</code> when <code>onFulfilled</code> is omitted.</li>
+<li><code>Promise.prototype.catch()</code> passes fulfilled values through.</li>
+<li><code>Promise.prototype.finally()</code> accepts one argument (<code>onFinally</code>).</li>
+<li><code>Promise.prototype.finally()</code> calls <code>onFinally</code> with no arguments once any outcome is available.</li>
+<li><code>Promise.prototype.finally()</code> passes through input promise.</li>
+</ul>
+<div class="sourceCode" id="cb2"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="at">promisedOperation</span>()</a>
+<a class="sourceLine" id="cb2-2" title="2">  .<span class="at">then</span>(</a>
+<a class="sourceLine" id="cb2-3" title="3">    val <span class="kw">=&gt;</span> value <span class="op">+</span> <span class="dv">1</span><span class="op">,</span>   <span class="co">// Called once the promise is fulfilled</span></a>
+<a class="sourceLine" id="cb2-4" title="4">    err <span class="kw">=&gt;</span> <span class="op">{</span>            <span class="co">// Called if the promise is rejected</span></a>
+<a class="sourceLine" id="cb2-5" title="5">      <span class="cf">if</span> (err <span class="op">===</span> someKnownErr) <span class="cf">return</span> defaultVal<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-6" title="6">      <span class="cf">else</span> <span class="cf">throw</span> err<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-7" title="7">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb2-8" title="8">  )</a>
+<a class="sourceLine" id="cb2-9" title="9">  .<span class="at">catch</span>(</a>
+<a class="sourceLine" id="cb2-10" title="10">    err <span class="kw">=&gt;</span> <span class="va">console</span>.<span class="at">log</span>(err)<span class="op">;</span> <span class="co">// Called if the promise is rejected</span></a>
+<a class="sourceLine" id="cb2-11" title="11">  )</a>
+<a class="sourceLine" id="cb2-12" title="12">  .<span class="at">finally</span>(</a>
+<a class="sourceLine" id="cb2-13" title="13">    () <span class="kw">=&gt;</span> <span class="va">console</span>.<span class="at">log</span>(<span class="st">&#39;Done&#39;</span>)<span class="op">;</span> <span class="co">// Called once any outcome is available</span></a>
+<a class="sourceLine" id="cb2-14" title="14">  )<span class="op">;</span></a></code></pre></div>
+<ul>
+<li>All three of the above methods will not be executed at least until the next tick, even for promises that already have an outcome.</li>
+</ul>
+<h4 id="combining-promises">Combining promises</h4>
+<ul>
+<li><code>Promise.all()</code> turns an array of promises into a promise of an array.</li>
+<li>If any promise is rejected, the error will pass through.</li>
+<li><code>Promise.race()</code> passes through the first settled promise.</li>
+</ul>
+<div class="sourceCode" id="cb3"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb3-1" title="1"><span class="va">Promise</span>.<span class="at">all</span>([p1<span class="op">,</span> p2<span class="op">,</span> p3]).<span class="at">then</span>(([v1<span class="op">,</span> v2<span class="op">,</span> v3]) <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb3-2" title="2">    <span class="co">// Values always correspond to the order of promises,</span></a>
+<a class="sourceLine" id="cb3-3" title="3">    <span class="co">// not the order they resolved in (i.e. v1 corresponds to p1)</span></a>
+<a class="sourceLine" id="cb3-4" title="4"><span class="op">}</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-5" title="5"></a>
+<a class="sourceLine" id="cb3-6" title="6"><span class="va">Promise</span>.<span class="at">race</span>([p1<span class="op">,</span> p2<span class="op">,</span> p3]).<span class="at">then</span>((val) <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb3-7" title="7">    <span class="co">// val will take the value of the first resolved promise</span></a>
+<a class="sourceLine" id="cb3-8" title="8"><span class="op">}</span>)<span class="op">;</span></a></code></pre></div>
+<h4 id="asyncawait">async/await</h4>
+<ul>
+<li>Calling an <code>async</code> function always results in a promise.</li>
+<li><code>(async () =&gt; value)()</code> will resolve to <code>value</code>.</li>
+<li><code>(async () =&gt; throw err)()</code> will reject with an error.</li>
+<li><code>await</code> waits for a promise to be fulfilled and returns its value.</li>
+<li><code>await</code> can only be used in <code>async</code> functions.</li>
+<li><code>await</code> also accepts non-promise values.</li>
+<li><code>await</code> always waits at least until the next tick before resolving, even when waiting already fulfilled promises or non-promise values.</li>
+</ul>
+<div class="sourceCode" id="cb4"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb4-1" title="1"><span class="kw">async</span> () <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb4-2" title="2">    <span class="cf">try</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb4-3" title="3">        <span class="kw">let</span> val <span class="op">=</span> <span class="cf">await</span> <span class="at">promisedValue</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-4" title="4">        <span class="co">// Do stuff here</span></a>
+<a class="sourceLine" id="cb4-5" title="5">    <span class="op">}</span> <span class="cf">catch</span> (err) <span class="op">{</span></a>
+<a class="sourceLine" id="cb4-6" title="6">        <span class="co">// Handle error</span></a>
+<a class="sourceLine" id="cb4-7" title="7">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb4-8" title="8"><span class="op">};</span></a></code></pre></div>
+<h4 id="promise-basics-1">Promise basics</h4>
+<ul>
+<li><strong>Promises</strong> start in a <strong>pending state</strong>, neither fulfilled or rejected.</li>
+<li>When the operation is completed, a promise will become <strong>fulfilled with a value</strong>.</li>
+<li>If the operation fails, a promise will get <strong>rejected with an error</strong>.</li>
+</ul>
+<h4 id="creating-promises-1">Creating promises</h4>
+<ul>
+<li>The function passed to a <code>new Promise</code> will execute synchronously.</li>
+<li>Use <code>resolve()</code> or <code>reject()</code> to create promises from values.</li>
+<li><code>Promise.resolve(val)</code> will fulfill the promise with <code>val</code>.</li>
+<li><code>Promise.reject(err)</code> will reject the promise with <code>err</code>.</li>
+<li>If you put a fulfilled promise into a fulfilled promise, they will collapse into one.</li>
+</ul>
+<p>// Resolving with a value, rejecting with an error new Promise((resolve, reject) =&gt; { performOperation((err, val) =&gt; { if (err) reject(err); else resolve(val); }); });</p>
+<p>// Resolving without value, no need for reject const delay = (ms) =&gt; new Promise(resolve =&gt; setTimeout(resolve, ms));</p>
+<h4 id="handling-promises-1">Handling promises</h4>
+<ul>
+<li><code>Promise.prototype.then()</code> accepts two optional arguments (<code>onFulfilled</code>, <code>onRejected</code>).</li>
+<li><code>Promise.prototype.then()</code> will call <code>onFulfilled</code> once the promise is fulfilled.</li>
+<li><code>Promise.prototype.then()</code> will call <code>onRejected</code> if the promise is rejected.</li>
+<li><code>Promise.prototype.then()</code> passes errors through if <code>onRejected</code> in undefined.</li>
+<li><code>Promise.prototype.catch()</code> accepts one argument (<code>onRejected</code>).</li>
+<li><code>Promise.prototype.catch()</code> behaves like <code>Promise.prototype.then()</code> when <code>onFulfilled</code> is omitted.</li>
+<li><code>Promise.prototype.catch()</code> passes fulfilled values through.</li>
+<li><code>Promise.prototype.finally()</code> accepts one argument (<code>onFinally</code>).</li>
+<li><code>Promise.prototype.finally()</code> calls <code>onFinally</code> with no arguments once any outcome is available.</li>
+<li><code>Promise.prototype.finally()</code> passes through input promise.</li>
+</ul>
+<p>promisedOperation() .then( val =&gt; value + 1, // Called once the promise is fulfilled err =&gt; { // Called if the promise is rejected if (err === someKnownErr) return defaultVal; else throw err; } ) .catch( err =&gt; console.log(err); // Called if the promise is rejected ) .finally( () =&gt; console.log(‘Done’); // Called once any outcome is available );</p>
+<ul>
+<li>All three of the above methods will not be executed at least until the next tick, even for promises that already have an outcome.</li>
+</ul>
+<h4 id="combining-promises-1">Combining promises</h4>
+<ul>
+<li><code>Promise.all()</code> turns an array of promises into a promise of an array.</li>
+<li>If any promise is rejected, the error will pass through.</li>
+<li><code>Promise.race()</code> passes through the first settled promise.</li>
+</ul>
+<p>Promise .all([ p1, p2, p3 ]) .then(([ v1, v2, v3 ]) =&gt; { // Values always correspond to the order of promises, // not the order they resolved in (i.e. v1 corresponds to p1) });</p>
+<p>Promise .race([ p1, p2, p3 ]) .then(val =&gt; { // val will take the value of the first resolved promise });</p>
+<h4 id="asyncawait-1">async/await</h4>
+<ul>
+<li>Calling an <code>async</code> function always results in a promise.</li>
+<li><code>(async () =&gt; value)()</code> will resolve to <code>value</code>.</li>
+<li><code>(async () =&gt; throw err)()</code> will reject with an error.</li>
+<li><code>await</code> waits for a promise to be fulfilled and returns its value.</li>
+<li><code>await</code> can only be used in <code>async</code> functions.</li>
+<li><code>await</code> also accepts non-promise values.</li>
+<li><code>await</code> always waits at least until the next tick before resolving, even when waiting already fulfilled promises or non-promise values.</li>
+</ul>
+<p>async () =&gt; { try { let val = await promisedValue(); // Do stuff here } catch (err) { // Handle error } }</p>
+</body>
+</html>

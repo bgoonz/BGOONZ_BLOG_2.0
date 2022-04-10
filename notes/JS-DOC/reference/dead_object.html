@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>dead_object</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="typeerror-cant-access-dead-object">TypeError: can’t access dead object</h1>
+<p>The JavaScript exception “can’t access dead object” occurs when Firefox disallows add-ons to keep strong references to DOM objects after their parent document has been destroyed to improve in memory usage and to prevent memory leaks.</p>
+<h2 id="message">Message</h2>
+<pre><code>TypeError: can&#39;t access dead object</code></pre>
+<h2 id="error-type">Error type</h2>
+<p><a href="../global_objects/typeerror"><code>TypeError</code></a></p>
+<h2 id="what-went-wrong">What went wrong?</h2>
+<p>To improve in memory usage and to prevent memory leaks, Firefox disallows add-ons to keep strong references to DOM objects after their parent document has been destroyed. A dead object, is holding a strong (keep alive) reference to a DOM element that persists even after it was destroyed in the DOM. To avoid these issues, references to DOM nodes in foreign document should instead be stored in an object which is specific to that document, and cleaned up when the document is unloaded, or stored as <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XPCOM/Language_Bindings/Components.utils.getWeakReference">weak references</a>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="checking-if-an-object-is-dead">Checking if an object is dead</h3>
+<p><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XPCOM/Language_Bindings/Components.utils">Components.utils</a> offers a <code>isDeadWrapper()</code> method, which privileged code might use.</p>
+<pre><code>if (Components.utils.isDeadWrapper(window)) {
+  // dead
+}</code></pre>
+<p>Unprivileged code has no access to Component.utils and might just be able catch the exception.</p>
+<pre><code>try {
+  String(window);
+}
+catch (e) {
+  console.log(&quot;window is likely dead&quot;);
+}</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="https://blog.mozilla.org/addons/2012/09/12/what-does-cant-access-dead-object-mean/">What does “can’t access dead object” mean?</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Extensions/Common_causes_of_memory_leaks_in_extensions">Common causes of memory leaks in extensions</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XPCOM/Language_Bindings/Components.utils">Components.utils</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Zombie_compartments">Zombie Compartments</a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Dead_object" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Dead_object</a></p>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Jekyll for GitHub pages</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Jekyll for GitHub pages</h1>
+</header>
+<p>{% raw %}</p>
+<h2 id="jekyll">Jekyll</h2>
+<p>{: .-one-column}</p>
+<ul>
+<li>jekyll-avatar</li>
+<li>jekyll-coffeescript</li>
+<li>jekyll-default-layout</li>
+<li>jekyll-feed</li>
+<li>jekyll-gist</li>
+<li>jekyll-github-metadata</li>
+<li>jekyll-mentions</li>
+<li>jekyll-optional-front-matter</li>
+<li>jekyll-paginate</li>
+<li>jekyll-readme-index</li>
+<li>jekyll-redirect-from</li>
+<li>jekyll-relative-links</li>
+<li>jekyll-sass-converter</li>
+<li>jekyll-seo-tag</li>
+<li>jekyll-sitemap {: .-four-column}</li>
+</ul>
+<p>As of github-pages v156. For an updated list, see: <a href="https://pages.github.com/versions/">Dependency versions</a> <em>(pages.github.com)</em></p>
+<h2 id="github-metadata">GitHub Metadata</h2>
+<h3 id="configuration">Configuration</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode yaml"><code class="sourceCode yaml"><a class="sourceLine" id="cb1-1" title="1"><span class="fu">plugins:</span></a>
+<a class="sourceLine" id="cb1-2" title="2">    <span class="kw">-</span> jekyll-github-metadata</a>
+<a class="sourceLine" id="cb1-3" title="3"></a>
+<a class="sourceLine" id="cb1-4" title="4"><span class="fu">repository:</span><span class="at"> username/project</span></a></code></pre></div>
+<p>Put this in your <code>_config.yml</code>. See: <a href="https://help.github.com/articles/repository-metadata-on-github-pages/">Repository metadata on GitHub pages</a></p>
+<h3 id="listing-repos">Listing repos</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb2-1" title="1">{% for repository in site.github.public_repositories %}</a>
+<a class="sourceLine" id="cb2-2" title="2"><span class="kw">&lt;a</span><span class="ot"> href=</span><span class="st">&quot;{{ repository.html_url }}&quot;</span><span class="kw">&gt;</span> {{ repository.name }} <span class="kw">&lt;/a&gt;</span></a>
+<a class="sourceLine" id="cb2-3" title="3">{% endfor %}</a></code></pre></div>
+<h3 id="link-to-repo">Link to repo</h3>
+<div class="sourceCode" id="cb3"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">&lt;a</span><span class="ot"> href=</span><span class="st">&quot;{{ site.github.repository_url }}&quot;</span><span class="kw">&gt;</span> {{ site.github.project_title }} <span class="kw">&lt;/a&gt;</span></a></code></pre></div>
+<h2 id="gists">Gists</h2>
+<h3 id="configuration-1">Configuration</h3>
+<div class="sourceCode" id="cb4"><pre class="sourceCode yaml"><code class="sourceCode yaml"><a class="sourceLine" id="cb4-1" title="1"><span class="fu">plugins:</span></a>
+<a class="sourceLine" id="cb4-2" title="2">    <span class="kw">-</span> jekyll-gist</a></code></pre></div>
+<p>See: <a href="https://github.com/jekyll/jekyll-gist">jekyll-gist</a></p>
+<h3 id="usage">Usage</h3>
+<div class="sourceCode" id="cb5"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb5-1" title="1"><span class="op">{%</span> gist parkr/c08ee0f2726fd0e3909d <span class="op">%}</span></a></code></pre></div>
+<p>This places a Gist in your page.</p>
+<h2 id="mentions">Mentions</h2>
+<h3 id="configuration-2">Configuration</h3>
+<div class="sourceCode" id="cb6"><pre class="sourceCode yaml"><code class="sourceCode yaml"><a class="sourceLine" id="cb6-1" title="1"><span class="fu">plugins:</span></a>
+<a class="sourceLine" id="cb6-2" title="2">    <span class="kw">-</span> jekyll-mentions</a></code></pre></div>
+<p>See: <a href="https://github.com/jekyll/jekyll-mentions">jekyll-mentions</a></p>
+<h3 id="usage-1">Usage</h3>
+<div class="sourceCode" id="cb7"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb7-1" title="1">Hey @rstacruz<span class="op">,</span> what <span class="cf">do</span> you think <span class="kw">of</span> <span class="kw">this</span><span class="op">?</span></a></code></pre></div>
+<p>Just mention anyone in any page. Their names will be turned into links.</p>
+<h2 id="redirects">Redirects</h2>
+<h3 id="configuration-3">Configuration</h3>
+<div class="sourceCode" id="cb8"><pre class="sourceCode yaml"><code class="sourceCode yaml"><a class="sourceLine" id="cb8-1" title="1"><span class="fu">plugins:</span></a>
+<a class="sourceLine" id="cb8-2" title="2">    <span class="kw">-</span> jekyll-redirect-from</a></code></pre></div>
+<p>See: <a href="https://rubygems.org/gems/jekyll-redirect-from">jekyll-redirect-from</a></p>
+<h3 id="usage-2">Usage</h3>
+<div class="sourceCode" id="cb9"><pre class="sourceCode yaml"><code class="sourceCode yaml"><a class="sourceLine" id="cb9-1" title="1"><span class="ot">---</span></a>
+<a class="sourceLine" id="cb9-2" title="2"><span class="fu">redirect_from:</span></a>
+<a class="sourceLine" id="cb9-3" title="3">    <span class="kw">-</span> /foo</a>
+<a class="sourceLine" id="cb9-4" title="4"><span class="ot">---</span></a></code></pre></div>
+<p>Place on any page.</p>
+<h3 id="redirecting">Redirecting</h3>
+<div class="sourceCode" id="cb10"><pre class="sourceCode yaml"><code class="sourceCode yaml"><a class="sourceLine" id="cb10-1" title="1"><span class="ot">---</span></a>
+<a class="sourceLine" id="cb10-2" title="2"><span class="fu">redirect_to:</span></a>
+<a class="sourceLine" id="cb10-3" title="3">    <span class="kw">-</span> /foo</a>
+<a class="sourceLine" id="cb10-4" title="4"><span class="ot">---</span></a></code></pre></div>
+<p>Place on any page. See: <a href="https://github.com/jekyll/jekyll-redirect-from#redirect-to">redirect to</a></p>
+<p>{% endraw %}</p>
+</body>
+</html>

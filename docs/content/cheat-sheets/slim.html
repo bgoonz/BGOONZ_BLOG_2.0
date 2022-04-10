@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Slim</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Slim</h1>
+</header>
+<h3 id="example">Example</h3>
+<pre class="jade"><code>doctype html
+html
+  head
+    title Slim Examples
+    meta[charset=&#39;utf-8&#39;]
+    meta(name=&quot;keywords&quot; content=&quot;template language&quot;)
+    meta name=&quot;author&quot; content=author
+    meta property=&#39;og:image&#39; content=asset_url(&#39;foo.png&#39;)
+    meta property=&#39;og:image&#39; content=(path_to_user user)
+    meta(
+      property=&#39;description&#39;
+      content=&#39;this is the song that never ends&#39;)</code></pre>
+<h3 id="attributes">Attributes</h3>
+<pre class="jade"><code>meta[charset=&#39;utf-8&#39;]
+meta(name=&quot;keywords&quot; content=&quot;template language&quot;)
+meta name=&quot;author&quot; content=author</code></pre>
+<p>You can use parentheses, brackets, or none at all.</p>
+<h3 id="ruby-attributes">Ruby attributes</h3>
+<pre class="jade"><code>a class=[:menu,:highlight]</code></pre>
+<p>You can use Ruby expressions in attributes.</p>
+<h3 id="hash-attributes">Hash attributes</h3>
+<pre class="jade"><code>.card *{&#39;data-url&#39; =&gt; place_path(place)}</code></pre>
+<p>You can destructure Ruby hashes as attributes.</p>
+<h3 id="inline-ruby">Inline Ruby</h3>
+<pre class="jade"><code>ruby:
+  def foobar
+    &quot;hello&quot;
+  end
+
+div= foobar</code></pre>
+<h3 id="inline-markdown">Inline Markdown</h3>
+<pre class="jade"><code>markdown:
+  ### On Markdown
+
+  I am *Markdown* _text_!
+  {: .classname}</code></pre>
+<p>Slim can handle your <a href="https://daringfireball.net/projects/markdown/syntax">Markdown</a> content for longer content blocks or <code>code</code>. Depending on your parser, like <a href="https://kramdown.gettalong.org/quickref.html">Kramdown</a>, other features might work, like assigning attributes or classes.</p>
+<h3 id="embedded-javascript">Embedded JavaScript</h3>
+<pre class="jade"><code>javascript:
+  alert(&#39;Slim supports embedded javascript!&#39;)</code></pre>
+<h3 id="comments">Comments</h3>
+<pre class="jade"><code>/ Comment
+/! HTML comment</code></pre>
+<h3 id="ruby">Ruby</h3>
+<pre class="jade"><code>== yield
+= t(&#39;.hello&#39;)
+- 3.times do |i|
+  div</code></pre>
+<h3 id="verbatim-text">Verbatim text</h3>
+<pre class="jade"><code>div
+  | This is text
+    it is nice</code></pre>
+<h3 id="advanced-whitespaces">Advanced whitespaces</h3>
+<pre class="jade"><code>div
+  &#39; This appends a whitespace
+div
+  |  This hackily prepends a whitespace
+div
+  =&gt; &#39;This appends a whitespace&#39;
+div
+  =&lt; &#39;This prepends a whitespace&#39;</code></pre>
+<h3 id="inline-html">Inline HTML</h3>
+<pre class="jade"><code>&lt;div class=&#39;foo&#39;&gt;
+  - if articles.empty?
+    | Nothing here
+&lt;/div&gt;</code></pre>
+<h3 id="inline-tags">Inline tags</h3>
+<pre class="jade"><code>ul
+  li: a(href=&#39;/&#39;) Home</code></pre>
+<h3 id="references">References</h3>
+<ul>
+<li><a href="http://slim-lang.com/" class="uri">http://slim-lang.com/</a></li>
+</ul>
+</body>
+</html>

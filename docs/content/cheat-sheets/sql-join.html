@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>SQL joins</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">SQL joins</h1>
+</header>
+<h3 id="example">Example</h3>
+<pre><code>SELECT * FROM order_items \
+  LEFT OUTER JOIN orders \
+  ON order_items.order_id = orders.id</code></pre>
+<p>{: .-wrap}</p>
+<p>Joins are typically added to <code>SELECT</code> statements to add more columns and records.</p>
+<h3 id="diagram">Diagram</h3>
+<pre><code>SELECT * FROM `A` INNER JOIN `B`</code></pre>
+<p>{: .-setup}</p>
+<pre><code>┌────────┐
+│ A  ┌───┼────┐
+│    │ ∩ │    │
+└────┼───┘  B │
+     └────────┘</code></pre>
+<p>{: .-box-chars.-setup}</p>
+<table>
+<thead>
+<tr class="header">
+<th>Join</th>
+<th>What</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Inner join</td>
+<td><code>∩</code></td>
+</tr>
+<tr class="even">
+<td>Left outer join</td>
+<td><code>A</code> + <code>∩</code></td>
+</tr>
+<tr class="odd">
+<td>Right outer join</td>
+<td><code>∩</code> + <code>B</code></td>
+</tr>
+<tr class="even">
+<td>Full outer join</td>
+<td><code>A</code> + <code>∩</code> + <code>B</code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

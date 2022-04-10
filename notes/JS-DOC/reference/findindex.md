@@ -1,10 +1,12 @@
-# TypedArray.prototype.findIndex()
+TypedArray.prototype.findIndex()
+================================
 
 The `findIndex()` method returns an **index** in the typed array, if an element in the typed array satisfies the provided testing function. Otherwise -1 is returned.
 
 See also the [`find()`](find) method, which returns the **value** of a found element in the typed array instead of its index.
 
-## Syntax
+Syntax
+------
 
     // Arrow function
     findIndex((element) => { ... } )
@@ -42,7 +44,8 @@ Object to use as `this` when executing `callbackFn`.
 
 An index in the array if an element passes the test; otherwise, `-1`.
 
-## Description
+Description
+-----------
 
 The `findIndex()` method executes the `callbackFn` function once for each element present in the typed array until it finds one where `callbackFn` returns a true value. If such an element is found, `findIndex()` immediately returns the index of that element. Otherwise, `findIndex()` returns -1. `callbackFn` is invoked only for indexes of the typed array which have assigned values; it is not invoked for indexes which have been deleted or which have never been assigned values.
 
@@ -52,9 +55,10 @@ If a `thisArg` parameter is provided to `findIndex()`, it will be used as the `t
 
 `findIndex()` does not mutate the typed array on which it is called.
 
-The range of elements processed by `findIndex()` is set before the first invocation of `callbackFn`. Elements that are appended to the typed array after the call to `findIndex()` begins will not be visited by `callbackFn`. If an existing, unvisited element of the typed array is changed by `callbackFn`, its value passed to the visiting `callbackFn` will be the value at the time that `findIndex()` visits that element's index; elements that are deleted are not visited.
+The range of elements processed by `findIndex()` is set before the first invocation of `callbackFn`. Elements that are appended to the typed array after the call to `findIndex()` begins will not be visited by `callbackFn`. If an existing, unvisited element of the typed array is changed by `callbackFn`, its value passed to the visiting `callbackFn` will be the value at the time that `findIndex()` visits that element’s index; elements that are deleted are not visited.
 
-## Examples
+Examples
+--------
 
 ### Find the index of a prime number in a typed array
 
@@ -76,7 +80,8 @@ The following example finds the index of an element in the typed array that is a
     console.log(uint8.findIndex(isPrime)); // -1, not found
     console.log(uint16.findIndex(isPrime)); // 2
 
-## Polyfill
+Polyfill
+--------
 
     TypedArray.prototype.findIndex = Array.prototype.findIndex = Array.prototype.findIndex || function(evaluator, thisArg) {
             'use strict';
@@ -112,12 +117,11 @@ The following example finds the index of an element in the typed array that is a
             return -1;
     };
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="#">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-%typedarray%.prototype.findindex</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-%typedarray%.prototype.findindex</span></td></tr></tbody></table>
 
 `findIndex`
 
@@ -145,11 +149,11 @@ No
 
 5.0
 
-## See also
+See also
+--------
 
 -   [`TypedArray.prototype.find()`](find)
 -   [`TypedArray.prototype.indexOf()`](indexof)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/findIndex" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/findIndex</a>

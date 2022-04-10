@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>marking</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="form-structure-marking-guide">Form structure marking guide</h1>
+<p>The aim of the tasks is to demonstrate an understanding of the features covered in the <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form">How to structure a web form</a> lesson in Learn Web Development on MDN.</p>
+<h2 id="task-1">Task 1</h2>
+<p>The only task in this test your skills assessment looks at your knowledge of simple form structure. You are asked to:</p>
+<ol type="1">
+<li>Separate out the first two and second two form fields into two distinct containers, each with a descriptive legend (use “Personal details” for the first two, and “Comment information” for the second two). This is what the <code>&lt;fieldset&gt;</code> and <code>&lt;legend&gt;</code> elements are made for.</li>
+<li>Mark up each text label with an appropriate element so that it is semantically associated with its respective form field. This needs the <code>&lt;label&gt;</code> element, and the <code>for</code> attribute if you are choosing not to wrap the <code>&lt;label&gt;</code> around the <code>&lt;input&gt;</code>.</li>
+<li>Add a suitable set of structural elements around the label/field pairs to separate them out. Ordered/unordered lists would be ideal, but something like <code>&lt;div&gt;</code>s would also be acceptable.</li>
+</ol>
+<p>The finished markup should look something like this:</p>
+<pre><code>&lt;form&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Personal details&lt;/legend&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;label for=&quot;name&quot;&gt;Name:&lt;/label&gt;
+        &lt;input type=&quot;text&quot; id=&quot;name&quot; name=&quot;name&quot;&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;label for=&quot;age&quot;&gt;Age:&lt;/label&gt;
+        &lt;input type=&quot;number&quot; id=&quot;age&quot; name=&quot;age&quot;&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/fieldset&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Comment information&lt;/legend&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;label for=&quot;comment&quot;&gt;Comment:&lt;/label&gt;
+        &lt;input type=&quot;text&quot; id=&quot;comment&quot; name=&quot;comment&quot;&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;label for=&quot;email&quot;&gt;Email (include if you want a reply):&lt;/label&gt;
+        &lt;input type=&quot;email&quot; id=&quot;email&quot; name=&quot;email&quot;&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;</code></pre>
+</body>
+</html>

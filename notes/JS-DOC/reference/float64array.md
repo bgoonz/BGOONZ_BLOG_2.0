@@ -1,21 +1,25 @@
-# Float64Array
+Float64Array
+============
 
-The `Float64Array` typed array represents an array of 64-bit floating point numbers (corresponding to the C `double` data type) in the platform byte order. If control over byte order is needed, use [`DataView`](dataview) instead. The contents are initialized to `0`. Once established, you can reference elements in the array using the object's methods, or using standard array index syntax (that is, using bracket notation).
+The `Float64Array` typed array represents an array of 64-bit floating point numbers (corresponding to the C `double` data type) in the platform byte order. If control over byte order is needed, use [`DataView`](dataview) instead. The contents are initialized to `0`. Once established, you can reference elements in the array using the object’s methods, or using standard array index syntax (that is, using bracket notation).
 
-## Constructor
+Constructor
+-----------
 
 [`Float64Array()`](float64array/float64array)  
 Creates a new `Float64Array` object.
 
-## Static properties
+Static properties
+-----------------
 
 [`Float64Array.BYTES_PER_ELEMENT`](typedarray/bytes_per_element)  
 Returns a number value of the element size. `8` in the case of an `Float64Array`.
 
 [`Float64Array.name`](typedarray/name)  
-Returns the string value of the constructor name. In the case of the `Float64Array` type: "Float64Array".
+Returns the string value of the constructor name. In the case of the `Float64Array` type: “Float64Array”.
 
-## Static methods
+Static methods
+--------------
 
 [`Float64Array.from()`](typedarray/from)  
 Creates a new `Float64Array` from an array-like or iterable object. See also [`Array.from()`](array/from).
@@ -23,7 +27,8 @@ Creates a new `Float64Array` from an array-like or iterable object. See also [`A
 [`Float64Array.of()`](typedarray/of)  
 Creates a new `Float64Array` with a variable number of arguments. See also [`Array.of()`](array/of).
 
-## Instance properties
+Instance properties
+-------------------
 
 [`Float64Array.prototype.buffer`](typedarray/buffer)  
 Returns the [`ArrayBuffer`](arraybuffer) referenced by the `Float64Array` Fixed at construction time and thus **read only**.
@@ -37,7 +42,8 @@ Returns the offset (in bytes) of the `Float64Array` from the start of its [`Arra
 [`Float64Array.prototype.length`](typedarray/length)  
 Returns the number of elements hold in the `Float64Array`. Fixed at construction time and thus **read only.**
 
-## Instance methods
+Instance methods
+----------------
 
 [`Float64Array.prototype.copyWithin()`](typedarray/copywithin)  
 Copies a sequence of array elements within the array. See also [`Array.prototype.copyWithin()`](array/copywithin).
@@ -117,7 +123,8 @@ Returns a string representing the array and its elements. See also [`Array.proto
 [`Float64Array.prototype[@@iterator]()`](typedarray/@@iterator)  
 Returns a new `Array Iterator` object that contains the values for each index in the array.
 
-## Examples
+Examples
+--------
 
 ### Different ways to create a `Float64Array`
 
@@ -146,38 +153,11 @@ Returns a new `Array Iterator` object that contains the values for each index in
     var float64 = new Float64Array(iterable);
     // Float64Array[1, 2, 3]
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#table-49">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#table-49</span></a></td></tr></tbody></table>
-
-`Float64Array`
-
-7
-
-12
-
-4
-
-10
-
-11.6
-
-5.1
-
-4
-
-18
-
-4
-
-12
-
-4.2
-
-1.0
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#table-49</span></td></tr></tbody></table>
 
 `Float64Array`
 
@@ -205,7 +185,34 @@ Returns a new `Array Iterator` object that contains the values for each index in
 
 1.0
 
-## See also
+`Float64Array`
+
+7
+
+12
+
+4
+
+10
+
+11.6
+
+5.1
+
+4
+
+18
+
+4
+
+12
+
+4.2
+
+1.0
+
+See also
+--------
 
 -   [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
 -   [`ArrayBuffer`](arraybuffer)

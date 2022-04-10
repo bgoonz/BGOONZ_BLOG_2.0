@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>setyear</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="date.prototype.setyear">Date.prototype.setYear()</h1>
+<p><strong>Deprecated</strong></p>
+<p>This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see the <a href="#browser_compatibility">compatibility table</a> at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time.</p>
+<p>The <code>setYear()</code> method sets the year for a specified date according to local time. Because <code>setYear()</code> does not set full years (“year 2000 problem”), it is no longer used and has been replaced by the <a href="setfullyear"><code>setFullYear()</code></a> method.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>setYear(yearValue)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>yearValue</code><br />
+An integer.</p>
+<h3 id="return-value">Return value</h3>
+<p>The number of milliseconds between 1 January 1970 00:00:00 UTC and the updated date.</p>
+<h2 id="description">Description</h2>
+<p>If <code>yearValue</code> is a number between 0 and 99 (inclusive), then the year for <code>dateObj</code> is set to <code>1900 + yearValue</code>. Otherwise, the year for <code>dateObj</code> is set to <code>yearValue</code>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-setyear">Using setYear()</h3>
+<p>The first two lines set the year to 1996. The third sets the year to 2000.</p>
+<pre><code>var theBigDay = new Date();
+
+theBigDay.setYear(96);
+theBigDay.setYear(1996);
+theBigDay.setYear(2000);</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-date.prototype.setyear">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-date.prototype.setyear</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>setYear</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="getfullyear"><code>Date.prototype.getFullYear()</code></a></li>
+<li><a href="getutcfullyear"><code>Date.prototype.getUTCFullYear()</code></a></li>
+<li><a href="setfullyear"><code>Date.prototype.setFullYear()</code></a></li>
+<li><a href="setutcfullyear"><code>Date.prototype.setUTCFullYear()</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setYear" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setYear</a></p>
+</body>
+</html>

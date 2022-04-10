@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Phoenix: Ecto models</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Phoenix: Ecto models</h1>
+</header>
+<p>This is for Phoenix 1.2 and below. <a href="phoenix-ecto@1.3.html">Phoenix 1.3 has a new API.</a>.</p>
+<h2 id="generating">Generating</h2>
+<pre><code>$ mix phoenix.gen.html Profile profiles email:string age:integer
+$ mix phoenix.gen.html User users email:string hashed_password:string</code></pre>
+<h2 id="schema">Schema</h2>
+<div class="sourceCode" id="cb2"><pre class="sourceCode elixir"><code class="sourceCode elixir"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">defmodule</span> <span class="cn">User</span> <span class="kw">do</span></a>
+<a class="sourceLine" id="cb2-2" title="2">  <span class="im">use</span> <span class="cn">Ecto</span><span class="op">.</span><span class="cn">Schema</span></a>
+<a class="sourceLine" id="cb2-3" title="3"></a>
+<a class="sourceLine" id="cb2-4" title="4">  schema <span class="st">&quot;users&quot;</span> <span class="kw">do</span></a>
+<a class="sourceLine" id="cb2-5" title="5">    field <span class="va">:name</span></a>
+<a class="sourceLine" id="cb2-6" title="6">    field <span class="va">:age</span>, <span class="va">:integer</span></a>
+<a class="sourceLine" id="cb2-7" title="7">    <span class="co"># :id :binary :integer :float :boolean :string :binary</span></a>
+<a class="sourceLine" id="cb2-8" title="8">    <span class="co"># {:array, inner_type} :decimal :map</span></a>
+<a class="sourceLine" id="cb2-9" title="9"></a>
+<a class="sourceLine" id="cb2-10" title="10">    field <span class="va">:password</span>, <span class="va">virtual:</span> <span class="cn">true</span></a>
+<a class="sourceLine" id="cb2-11" title="11">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb2-12" title="12"><span class="kw">end</span></a></code></pre></div>
+<h2 id="changesets">Changesets</h2>
+<div class="sourceCode" id="cb3"><pre class="sourceCode elixir"><code class="sourceCode elixir"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">def</span> changeset(user, params \\ <span class="va">:empty</span>) <span class="kw">do</span></a>
+<a class="sourceLine" id="cb3-2" title="2">  %<span class="cn">User</span>{}</a>
+<a class="sourceLine" id="cb3-3" title="3">  <span class="op">|&gt;</span> <span class="cn">Ecto</span><span class="op">.</span><span class="cn">Changeset</span><span class="op">.</span>change   <span class="co"># basic casting to changeset</span></a>
+<a class="sourceLine" id="cb3-4" title="4"></a>
+<a class="sourceLine" id="cb3-5" title="5">  user</a>
+<a class="sourceLine" id="cb3-6" title="6">  <span class="op">|&gt;</span> cast(params, <span class="op">~</span>w(name email), <span class="op">~</span>w(age)) <span class="co"># params to Changeset</span></a>
+<a class="sourceLine" id="cb3-7" title="7"></a>
+<a class="sourceLine" id="cb3-8" title="8">  <span class="op">|&gt;</span> validate_format(<span class="va">:email</span>, <span class="op">~</span>r<span class="op">/</span>@<span class="op">/</span>)</a>
+<a class="sourceLine" id="cb3-9" title="9"></a>
+<a class="sourceLine" id="cb3-10" title="10">  <span class="op">|&gt;</span> validate_inclusion(<span class="va">:age</span>, <span class="dv">18</span><span class="op">..</span><span class="dv">100</span>)</a>
+<a class="sourceLine" id="cb3-11" title="11">  <span class="op">|&gt;</span> validate_exclusion(<span class="va">:role</span>, <span class="op">~</span>w(admin superadmin))</a>
+<a class="sourceLine" id="cb3-12" title="12">  <span class="op">|&gt;</span> validate_subset(<span class="va">:pets</span>, <span class="op">~</span>w(cat dog parrot whale))</a>
+<a class="sourceLine" id="cb3-13" title="13"></a>
+<a class="sourceLine" id="cb3-14" title="14">  <span class="op">|&gt;</span> validate_length(<span class="va">:body</span>, <span class="va">min:</span> <span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb3-15" title="15">  <span class="op">|&gt;</span> validate_length(<span class="va">:body</span>, <span class="va">min:</span> <span class="dv">1</span>, <span class="va">max:</span> <span class="dv">160</span>)</a>
+<a class="sourceLine" id="cb3-16" title="16">  <span class="op">|&gt;</span> validate_length(<span class="va">:partners</span>, <span class="va">is:</span> <span class="dv">2</span>)</a>
+<a class="sourceLine" id="cb3-17" title="17"></a>
+<a class="sourceLine" id="cb3-18" title="18">  <span class="op">|&gt;</span> validate_number(<span class="va">:pi</span>, <span class="va">greater_than:</span> <span class="dv">3</span>)</a>
+<a class="sourceLine" id="cb3-19" title="19">  <span class="op">|&gt;</span> validate_number(<span class="va">:pi</span>, <span class="va">less_than:</span> <span class="dv">4</span>)</a>
+<a class="sourceLine" id="cb3-20" title="20">  <span class="op">|&gt;</span> validate_number(<span class="va">:pi</span>, <span class="va">equal_to:</span> <span class="dv">42</span>)</a>
+<a class="sourceLine" id="cb3-21" title="21"></a>
+<a class="sourceLine" id="cb3-22" title="22">  <span class="op">|&gt;</span> validate_change(<span class="va">:title</span>, <span class="kw">fn</span> _, _ <span class="op">-&gt;</span> [])</a>
+<a class="sourceLine" id="cb3-23" title="23">  <span class="op">|&gt;</span> validate_confirmation(<span class="va">:password</span>, <span class="va">message:</span> <span class="st">&quot;does not match&quot;</span>)</a>
+<a class="sourceLine" id="cb3-24" title="24"></a>
+<a class="sourceLine" id="cb3-25" title="25">  <span class="op">|&gt;</span> unique_constraint(<span class="va">:email</span>)</a>
+<a class="sourceLine" id="cb3-26" title="26">  <span class="op">|&gt;</span> foreign_key_constraint(<span class="va">:post_id</span>)</a>
+<a class="sourceLine" id="cb3-27" title="27">  <span class="op">|&gt;</span> assoc_constraint(<span class="va">:post</span>)      <span class="co"># ensure post_id exists</span></a>
+<a class="sourceLine" id="cb3-28" title="28">  <span class="op">|&gt;</span> no_assoc_constraint(<span class="va">:post</span>)   <span class="co"># negative (useful for deletions)</span></a>
+<a class="sourceLine" id="cb3-29" title="29"><span class="kw">end</span></a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode elixir"><code class="sourceCode elixir"><a class="sourceLine" id="cb4-1" title="1">changeset<span class="op">.</span>valid?</a>
+<a class="sourceLine" id="cb4-2" title="2">changeset<span class="op">.</span>errors     <span class="co">#=&gt; [title: &quot;empty&quot;]</span></a>
+<a class="sourceLine" id="cb4-3" title="3"></a>
+<a class="sourceLine" id="cb4-4" title="4">changeset<span class="op">.</span>changes    <span class="co">#=&gt; %{}</span></a>
+<a class="sourceLine" id="cb4-5" title="5">changeset<span class="op">.</span>params[<span class="va">:title</span>]</a>
+<a class="sourceLine" id="cb4-6" title="6"></a>
+<a class="sourceLine" id="cb4-7" title="7">changeset<span class="op">.</span>required   <span class="co">#=&gt; [:title]</span></a>
+<a class="sourceLine" id="cb4-8" title="8">changeset<span class="op">.</span>optional   <span class="co">#=&gt; [:body]</span></a></code></pre></div>
+<h3 id="updating">Updating</h3>
+<div class="sourceCode" id="cb5"><pre class="sourceCode elixir"><code class="sourceCode elixir"><a class="sourceLine" id="cb5-1" title="1">changeset <span class="co">#(or model)</span></a>
+<a class="sourceLine" id="cb5-2" title="2"><span class="op">|&gt;</span> change(<span class="va">title:</span> <span class="st">&quot;New title&quot;</span>)</a>
+<a class="sourceLine" id="cb5-3" title="3"><span class="op">|&gt;</span> change(%{ <span class="va">title:</span> <span class="st">&quot;New title&quot;</span> })</a>
+<a class="sourceLine" id="cb5-4" title="4"><span class="op">|&gt;</span> put_change(<span class="va">:title</span>, <span class="st">&quot;New title&quot;</span>)</a>
+<a class="sourceLine" id="cb5-5" title="5"><span class="op">|&gt;</span> force_change(<span class="va">:title</span>, <span class="st">&quot;New title&quot;</span>)</a>
+<a class="sourceLine" id="cb5-6" title="6"><span class="op">|&gt;</span> update_change(<span class="va">:title</span>, <span class="op">&amp;</span>(<span class="op">&amp;</span><span class="dv">1</span> <span class="op">&lt;&gt;</span> <span class="st">&quot;...&quot;</span>))</a>
+<a class="sourceLine" id="cb5-7" title="7"></a>
+<a class="sourceLine" id="cb5-8" title="8"><span class="op">|&gt;</span> delete_change(<span class="va">:title</span>)</a>
+<a class="sourceLine" id="cb5-9" title="9"><span class="op">|&gt;</span> merge(other_changeset)</a>
+<a class="sourceLine" id="cb5-10" title="10"></a>
+<a class="sourceLine" id="cb5-11" title="11"><span class="op">|&gt;</span> add_error(<span class="va">:title</span>, <span class="st">&quot;empty&quot;</span>)</a></code></pre></div>
+<h3 id="getting">Getting</h3>
+<div class="sourceCode" id="cb6"><pre class="sourceCode elixir"><code class="sourceCode elixir"><a class="sourceLine" id="cb6-1" title="1">get_change(changeset, <span class="va">:title</span>)    <span class="co">#=&gt; &quot;hi&quot; (if changed)</span></a>
+<a class="sourceLine" id="cb6-2" title="2">get_field(changeset, <span class="va">:title</span>)     <span class="co">#=&gt; &quot;hi&quot; (even if unchanged)</span></a>
+<a class="sourceLine" id="cb6-3" title="3"></a>
+<a class="sourceLine" id="cb6-4" title="4">fetch_change(changeset, <span class="va">:title</span>)  <span class="co">#=&gt; {:ok, &quot;hi&quot;} | :error</span></a>
+<a class="sourceLine" id="cb6-5" title="5">fetch_field(changeset, <span class="va">:title</span>)   <span class="co">#=&gt; {:changes | :model, &quot;value&quot;} | :error</span></a></code></pre></div>
+<h2 id="ecto">Ecto</h2>
+<h3 id="get-one">Get one</h3>
+<div class="sourceCode" id="cb7"><pre class="sourceCode elixir"><code class="sourceCode elixir"><a class="sourceLine" id="cb7-1" title="1"><span class="cn">Repo</span><span class="op">.</span>get(<span class="cn">User</span>, id)</a>
+<a class="sourceLine" id="cb7-2" title="2"><span class="cn">Repo</span><span class="op">.</span>get_by(<span class="cn">User</span>, <span class="va">email:</span> <span class="st">&quot;john@hello.com&quot;</span>)  <span class="co">#=&gt; %User{} | nil</span></a>
+<a class="sourceLine" id="cb7-3" title="3"></a>
+<a class="sourceLine" id="cb7-4" title="4"><span class="co"># also get! get_by!</span></a></code></pre></div>
+<h3 id="createupdate">Create/update</h3>
+<div class="sourceCode" id="cb8"><pre class="sourceCode elixir"><code class="sourceCode elixir"><a class="sourceLine" id="cb8-1" title="1">changeset <span class="op">|&gt;</span> <span class="cn">Repo</span><span class="op">.</span>update</a>
+<a class="sourceLine" id="cb8-2" title="2">changeset <span class="op">|&gt;</span> <span class="cn">Repo</span><span class="op">.</span>insert</a>
+<a class="sourceLine" id="cb8-3" title="3">changeset <span class="op">|&gt;</span> <span class="cn">Repo</span><span class="op">.</span>insert_or_update</a></code></pre></div>
+<pre><code>User
+|&gt; Ecto.Changeset.change(%{name: &quot;hi&quot;})
+|&gt; Repo.insert</code></pre>
+<h2 id="many">Many</h2>
+<h3 id="queries">Queries</h3>
+<div class="sourceCode" id="cb10"><pre class="sourceCode elixir"><code class="sourceCode elixir"><a class="sourceLine" id="cb10-1" title="1">from p <span class="kw">in</span> <span class="cn">Post</span>,</a>
+<a class="sourceLine" id="cb10-2" title="2">  <span class="va">where:</span> p<span class="op">.</span>title <span class="op">==</span> <span class="st">&quot;Hello&quot;</span>,</a>
+<a class="sourceLine" id="cb10-3" title="3">  <span class="va">where:</span> [<span class="va">state:</span> <span class="st">&quot;Sweden&quot;</span>],</a>
+<a class="sourceLine" id="cb10-4" title="4"></a>
+<a class="sourceLine" id="cb10-5" title="5">  <span class="va">limit:</span> <span class="dv">1</span>,</a>
+<a class="sourceLine" id="cb10-6" title="6">  <span class="va">offset:</span> <span class="dv">10</span>,</a>
+<a class="sourceLine" id="cb10-7" title="7"></a>
+<a class="sourceLine" id="cb10-8" title="8">  <span class="va">order_by:</span> c<span class="op">.</span>name,</a>
+<a class="sourceLine" id="cb10-9" title="9">  <span class="va">order_by:</span> [c<span class="op">.</span>name, c<span class="op">.</span>title],</a>
+<a class="sourceLine" id="cb10-10" title="10">  <span class="va">order_by:</span> [<span class="va">asc:</span> c<span class="op">.</span>name, <span class="va">desc:</span> c<span class="op">.</span>title],</a>
+<a class="sourceLine" id="cb10-11" title="11"></a>
+<a class="sourceLine" id="cb10-12" title="12">  <span class="va">preload:</span> [<span class="va">:comments</span>],</a>
+<a class="sourceLine" id="cb10-13" title="13">  <span class="va">preload:</span> [<span class="va">comments:</span> {c, <span class="va">likes:</span> l}],</a>
+<a class="sourceLine" id="cb10-14" title="14"></a>
+<a class="sourceLine" id="cb10-15" title="15">  <span class="va">join:</span> c <span class="kw">in</span> assoc(c, <span class="va">:comments</span>),</a>
+<a class="sourceLine" id="cb10-16" title="16">  <span class="va">join:</span> p <span class="kw">in</span> <span class="cn">Post</span>, <span class="va">on:</span> c<span class="op">.</span>post_id <span class="op">==</span> p<span class="op">.</span>id,</a>
+<a class="sourceLine" id="cb10-17" title="17">  <span class="va">group_by:</span> p,</a>
+<a class="sourceLine" id="cb10-18" title="18"></a>
+<a class="sourceLine" id="cb10-19" title="19">  <span class="va">select:</span> p,</a>
+<a class="sourceLine" id="cb10-20" title="20">  <span class="va">select:</span> {p<span class="op">.</span>title, p<span class="op">.</span>description},</a>
+<a class="sourceLine" id="cb10-21" title="21">  <span class="va">select:</span> [p<span class="op">.</span>title, p<span class="op">.</span>description],</a></code></pre></div>
+<h3 id="get-many">Get many</h3>
+<div class="sourceCode" id="cb11"><pre class="sourceCode elixir"><code class="sourceCode elixir"><a class="sourceLine" id="cb11-1" title="1"><span class="cn">Repo</span><span class="op">.</span>all(<span class="cn">User</span>)</a></code></pre></div>
+<h3 id="update-many">Update many</h3>
+<div class="sourceCode" id="cb12"><pre class="sourceCode elixir"><code class="sourceCode elixir"><a class="sourceLine" id="cb12-1" title="1"><span class="cn">Repo</span><span class="op">.</span>update_all(<span class="cn">Post</span>, <span class="va">set:</span> [<span class="va">title:</span> <span class="st">&quot;Title&quot;</span>])</a>
+<a class="sourceLine" id="cb12-2" title="2"><span class="cn">Repo</span><span class="op">.</span>update_all(<span class="cn">Post</span>, <span class="va">inc:</span> [<span class="va">views:</span> <span class="dv">1</span>])</a></code></pre></div>
+<h3 id="chaining-_all-with-queries">Chaining <code>_all</code> with queries</h3>
+<div class="sourceCode" id="cb13"><pre class="sourceCode elixir"><code class="sourceCode elixir"><a class="sourceLine" id="cb13-1" title="1">from(p <span class="kw">in</span> <span class="cn">Post</span>, <span class="va">where:</span> p<span class="op">.</span>id <span class="op">&lt;</span> <span class="dv">10</span>)</a>
+<a class="sourceLine" id="cb13-2" title="2"><span class="op">|&gt;</span> <span class="cn">Repo</span><span class="op">.</span>update_all(<span class="op">...</span>)</a>
+<a class="sourceLine" id="cb13-3" title="3"></a>
+<a class="sourceLine" id="cb13-4" title="4">from(p <span class="kw">in</span> <span class="cn">Post</span>, <span class="va">where:</span> p<span class="op">.</span>id <span class="op">&lt;</span> <span class="dv">10</span>)</a>
+<a class="sourceLine" id="cb13-5" title="5"><span class="op">|&gt;</span> <span class="cn">Repo</span><span class="op">.</span>all()</a></code></pre></div>
+</body>
+</html>

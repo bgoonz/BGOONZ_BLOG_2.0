@@ -1,14 +1,15 @@
-# Fundamental Javascript Concepts You Should Understand
+Fundamental Javascript Concepts You Should Understand
+=====================================================
 
 Plain Old JS Object Lesson Concepts
 
----
+------------------------------------------------------------------------
 
 ### Fundamental Javascript Concepts You Should Understand
 
 ### Plain Old JS Object Lesson Concepts
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*bEuahctJRS_qCQgV.jpg" class="graf-image" /></figure>-   <span id="d911">Label variables as either Primitive vs. Reference</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*bEuahctJRS_qCQgV.jpg" class="graf-image" /></figure>-   <span id="d911">Label variables as either Primitive vs. Reference</span>
 -   <span id="42a0">primitives: strings, booleans, numbers, null and undefined</span>
 -   <span id="4423">primitives are immutable</span>
 -   <span id="fd1a">refereces: objects (including arrays)</span>
@@ -133,7 +134,7 @@ Plain Old JS Object Lesson Concepts
 
 ### Callbacks Lesson Concepts
 
--   <span id="a16e">Given multiple plausible reasons, identify why functions are called "First Class Objects" in JavaScript.</span>
+-   <span id="a16e">Given multiple plausible reasons, identify why functions are called “First Class Objects” in JavaScript.</span>
 -   <span id="0d89">they can be stored in variables, passed as arguments to other functions, and serve as return value for a function</span>
 -   <span id="e458">supports same basic operations as other types (strings, bools, numbers)</span>
 -   <span id="6af2">higher-order functions take functions as arguments or return functions as values</span>
@@ -222,14 +223,14 @@ Plain Old JS Object Lesson Concepts
 -   <span id="670d">`var` - outdated, may or may not be reassigned, scoped to function. can be not just reassigned, but also redeclared!</span>
 -   <span id="b254">a variable will always evaluate to the value it contains regardless of how it was declared</span>
 -   <span id="aace">Explain the difference between `const`, `let`, and `var` declarations</span>
--   <span id="5d79">`var` is function scoped—so if you declare it anywhere in a function, the declaration (but not assignment) is "hoisted"</span>
--   <span id="a54b">so it will exist in memory as "undefined" which is bad and unpredictable</span>
--   <span id="2dc2">`var` will also allow you to redeclare a variable, while `let` or `const` will raise a syntax error. you shouldn't be able to do that!</span>
--   <span id="1f74">`const` won't let you reassign a variable, but if it points to a mutable object, you will still be able to change the value by mutating the object</span>
+-   <span id="5d79">`var` is function scoped—so if you declare it anywhere in a function, the declaration (but not assignment) is “hoisted”</span>
+-   <span id="a54b">so it will exist in memory as “undefined” which is bad and unpredictable</span>
+-   <span id="2dc2">`var` will also allow you to redeclare a variable, while `let` or `const` will raise a syntax error. you shouldn’t be able to do that!</span>
+-   <span id="1f74">`const` won’t let you reassign a variable, but if it points to a mutable object, you will still be able to change the value by mutating the object</span>
 -   <span id="2c20">block-scoped variables allow new variables with the same name in new scopes</span>
--   <span id="c3d4">block-scoped still performs hoisting of all variables within the block, but it doesn't initialize to the value of `undefined` like `var` does, so it throws a specific reference error if you try to access the value before it has been declared</span>
+-   <span id="c3d4">block-scoped still performs hoisting of all variables within the block, but it doesn’t initialize to the value of `undefined` like `var` does, so it throws a specific reference error if you try to access the value before it has been declared</span>
 -   <span id="f797">if you do not use `var` or `let` or `const` when initializing, it will be declared as global—THIS IS BAD</span>
--   <span id="2212">if you assign a value without a declaration, it exists in the global scope (so then it would be accessible by all outer scopes, so bad). however, there's no hoisting, so it doesn't exist in the scope until after the line is run</span>
+-   <span id="2212">if you assign a value without a declaration, it exists in the global scope (so then it would be accessible by all outer scopes, so bad). however, there’s no hoisting, so it doesn’t exist in the scope until after the line is run</span>
 -   <span id="86d1">Predict the evaluation of code that utilizes function scope, block scope, lexical scope, and scope chaining</span>
 -   <span id="25dc">scope of a program means the set of variables that are available for use within the program</span>
 -   <span id="bcaf">global scope is represented by the `window` object in the browser and the `global` object in Node.js</span>
@@ -264,7 +265,7 @@ Plain Old JS Object Lesson Concepts
 -   <span id="0ee6">arrow functions are automatically bound to the context they were declared in.</span>
 -   <span id="9fb2">unlike regular function which use the context they are invoked in (unless they have been bound using `Function#bind`).</span>
 -   <span id="683a">if you implement an arrow function as a method in an object the context it will be bound to is NOT the object itself, but the global context.</span>
--   <span id="e9e1">so you can't use an arrow function to define a method directly</span>
+-   <span id="e9e1">so you can’t use an arrow function to define a method directly</span>
 
 <!-- -->
 
@@ -400,7 +401,7 @@ Plain Old JS Object Lesson Concepts
 
 -   <span id="ae61">when we use `this` in a method it refers to the object that the method is invoked on</span>
 -   <span id="29a2">it will let you access other pieces of information from within that object, or even other methods</span>
--   <span id="c41d">method style invocation — `object.method(args)` (e.g. built in examples like `Array#push`, or `String#toUpperCase`)</span>
+-   <span id="c41d">method style invocation — `object.method(args)` (e.g. built in examples like `Array#push`, or `String#toUpperCase`)</span>
 -   <span id="c99d">context is set every time we invoke a function</span>
 -   <span id="fa43">function style invocation sets the context to the global object no matter what</span>
 -   <span id="8cc1">being inside an object does not make the context that object! you still have to use method-style invocation</span>
@@ -461,7 +462,7 @@ Plain Old JS Object Lesson Concepts
 
 ### CALLING SOMETHING IN THE WRONG CONTEXT CAN MESS YOU UP!
 
--   <span id="b960">could throw an error if it expects this to have some other method or whatever that doesn't exist</span>
+-   <span id="b960">could throw an error if it expects this to have some other method or whatever that doesn’t exist</span>
 -   <span id="1880">you could also overwrite values or assign values to exist in a space where they should not exist</span>
 -   <span id="c9f0">if you call a function as a callback, it will set `this` to be the outer function itself, even if the function you were calling is a method that was called on a particular object</span>
 
@@ -523,7 +524,7 @@ we can use strict mode with `"use strict";` this will prevent you from accessing
     console.log(this); // Object [global] {etc, etc, etc,  name: 'Layla'}
 
 -   <span id="48ab">CALLING SOMETHING IN THE WRONG CONTEXT CAN MESS YOU UP!</span>
--   <span id="857d">could throw an error if it expects this to have some other method or whatever that doesn't exist</span>
+-   <span id="857d">could throw an error if it expects this to have some other method or whatever that doesn’t exist</span>
 -   <span id="e09e">you could also overwrite values or assign values to exist in a space where they should not exist</span>
 -   <span id="b6e0">if you call a function as a callback, it will set `this` to be the outer function itself, even if the function you were calling is a method that was called on a particular object</span>
 
@@ -531,9 +532,9 @@ we can use strict mode with `"use strict";` this will prevent you from accessing
 
 ### POJOs
 
-#### 1. Label variables as either Primitive vs. Reference
+#### 1. Label variables as either Primitive vs. Reference
 
-Javascript considers most data types to be 'primitive', these data types are immutable, and are passed by value. The more complex data types: Array and Object are mutable, are considered 'reference' data types, and are passed by reference.
+Javascript considers most data types to be ‘primitive’, these data types are immutable, and are passed by value. The more complex data types: Array and Object are mutable, are considered ‘reference’ data types, and are passed by reference.
 
 -   <span id="6f83">Boolean — Primitive</span>
 -   <span id="6556">Null — Primitive</span>
@@ -753,7 +754,7 @@ Consider this `run` function, inside which `foo` and `bar` have `function scope`
 
     run();
 
-Notice that referencing `baz` from outside it's block results in JavaScript throwing a ReferenceError.
+Notice that referencing `baz` from outside it’s block results in JavaScript throwing a ReferenceError.
 
 Consider this `run` function, inside of which `foo` has `function scope` .
 
@@ -765,7 +766,7 @@ Consider this `run` function, inside of which `foo` has `function scope` .
 
     run();
 
-Consider this `func1` function and it's nested scopes.
+Consider this `func1` function and it’s nested scopes.
 
     // global scope
     function func1(arg1) {
@@ -818,7 +819,7 @@ Identically, we could write
 
     fDAdder([1, 2, 4, 6]);
 
-If we use a function declaration style function, the `this` variable is set to the `global` object (i.e. `Object [global]` in Node. JS and `Window` in your browser).
+If we use a function declaration style function, the `this` variable is set to the `global` object (i.e. `Object [global]` in Node. JS and `Window` in your browser).
 
     const adder = (arr) => {
         console.log(this);
@@ -878,10 +879,9 @@ In this example, we use a fat arrow style function. Note that when we declare a 
 
 ### Check Out My New Blog:
 
-<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Stackbit Web-Dev-HubTheme</strong>
-<br/>
+**Stackbit Web-Dev-HubTheme**  
 
-<em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…*bgoonz-blog.netlify.app<a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [May 27, 2021](https://medium.com/p/81c4d839b827).
 

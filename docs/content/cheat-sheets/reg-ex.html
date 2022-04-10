@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>reg-ex</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="regular-expressions">Regular Expressions</h1>
+<p>Reg Ex is a pattern-matching machine. It takes in a pattern and an input and sees if there is a match.</p>
+<h2 id="cheatsheet">Cheatsheet</h2>
+<p>Practice: https://regexr.com/</p>
+<h3 id="pattern-matching">Pattern Matching</h3>
+<p>For more explanations on all the rules, <a href="#regular-expression-operators">see below</a>:</p>
+<ul>
+<li><code>*</code> - zero or more</li>
+<li></li>
+<li><code>+</code> - one or more</li>
+<li></li>
+<li><code>?</code> - zero or one</li>
+<li></li>
+<li><code>^</code> - start of input</li>
+<li></li>
+<li><code>$</code> - end of input</li>
+<li></li>
+<li><code>[]</code> - any character</li>
+<li></li>
+<li><code>[a-z]</code> - range o</li>
+<li></li>
+<li><p><code>[^]</code> - not those characters</p></li>
+<li><p><code>\s</code> - whitespace</p></li>
+<li><p><code>\d</code> - digit</p></li>
+<li><p><code>\w</code> - a word character</p></li>
+<li><p><code>\S</code> - not whitespace</p></li>
+<li><p><code>\D</code> - not digit</p></li>
+<li><p><code>\W</code> - not a word character</p></li>
+</ul>
+<h3 id="javascript-regular-expressions">JavaScript Regular Expressions</h3>
+<p>For more detailed explanations, <a href="#regular-expressions-in-javascript">see below</a></p>
+<ul>
+<li><p>Creating a new regular expression in JavaScript</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">const</span> regex <span class="op">=</span> <span class="ss">/pattern/</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="co">// const regex = new RegExp(&#39;pattern&#39;); // can do this too</span></a></code></pre></div></li>
+<li><p><code>RegExp.prototype.test</code> - return true if pattern matches input string, false otherwise</p></li>
+<li><p><code>String.prototype.replace</code> - returns a new string with all matches of a pattern replaced by a replacement (only if pattern is a regular expression and has global search, <code>g</code>., if the pattern is a string, it will only replace the first match)</p></li>
+</ul>
+<h2 id="regular-expression-operators">Regular Expression Operators</h2>
+<h3 id="string-with-characters-only">String with Characters only</h3>
+<ul>
+<li>Matches the string exactly</li>
+<li></li>
+<li><p>ex: if pattern is <code>"pat"</code> it looks for exactly <code>"pat"</code> in the string</p>
+<table>
+<thead>
+<tr class="header">
+<th>Inputs</th>
+<th>Matched?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>"pat"</code></td>
+<td><code>true</code></td>
+</tr>
+<tr class="even">
+<td><code>"what is the pattern?"</code></td>
+<td><code>true</code></td>
+</tr>
+<tr class="odd">
+<td><code>"matter"</code></td>
+<td><code>false</code></td>
+</tr>
+<tr class="even">
+<td><code>"Pat"</code></td>
+<td><code>false</code></td>
+</tr>
+</tbody>
+</table></li>
+</ul>
+<h3 id="star-operator">Star Operator <code>*</code></h3>
+<ul>
+<li><strong>Zero or more</strong> of what’s right before it</li>
+<li></li>
+<li><p>ex: if the pattern is <code>"th*e"</code>, then it looks for a <code>"t"</code>, then zero or more <code>"h"</code>, then <code>"e"</code></p>
+<table>
+<thead>
+<tr class="header">
+<th>Inputs</th>
+<th>Matched?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>"the"</code></td>
+<td><code>true</code></td>
+</tr>
+<tr class="even">
+<td><code>"te"</code></td>
+<td><code>true</code></td>
+</tr>
+<tr class="odd">
+<td><code>"thhhhhhhhhhe"</code></td>
+<td><code>true</code></td>
+</tr>
+<tr class="even">
+<td><code>"tape"</code></td>
+<td><code>false</code></td>
+</tr>
+<tr class="odd">
+<td><code>"than"</code></td>
+<td><code>false</code></td>
+</tr>
+<tr class="even">
+<td><code>"other"</code></td>
+<td><code>true</code></td>
+</tr>
+</tbody>
+</table></li>
+</ul>
+<h3 id="optional-operator">Optional Operator <code>?</code></h3>
+<ul>
+<li><strong>Zero or one</strong> of what’s right before it</li>
+<li></li>
+<li><p>ex: if pattern is <code>"at?t"</code>, then it looks for an <code>"a"</code>, zero or one <code>"t"</code>, then a single <code>"t"</code> (an equivalent pattern to <code>"at?t"</code> would be <code>"att?"</code>)</p>
+<table>
+<thead>
+<tr class="header">
+<th>Inputs</th>
+<th>Matched?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>"at"</code></td>
+<td><code>true</code></td>
+</tr>
+<tr class="even">
+<td><code>"att"</code></td>
+<td><code>true</code></td>
+</tr>
+<tr class="odd">
+<td><code>"that"</code></td>
+<td><code>true</code></td>
+</tr>
+<tr class="even">
+<td><code>"pat"</code></td>
+<td><code>true</code></td>
+</tr>
+<tr class="odd">
+<td><code>"atttttt"</code></td>
+<td><code>false</code></td>
+</tr>
+<tr class="even">
+<td><code>"apart"</code></td>
+<td><code>false</code></td>
+</tr>
+</tbody>
+</table></li>
+</ul>
+<p><strong>NOTE:</strong> To use a question mark in your string, you need to escape it in a regex</p>
+<ul>
+<li>ex: pattern of <code>"at\?"</code> would return <code>true</code> for an input of <code>"where you at?"</code> but <code>false</code> for an input of <code>"patty"</code></li>
+</ul>
+<h3 id="plus-operator">Plus Operator <code>+</code></h3>
+<ul>
+<li><strong>One or more</strong> of what’s right before it</li>
+<li></li>
+<li><p>ex: if pattern is <code>"at+"</code>, then it looks for an <code>"a"</code>, then one or more <code>"t"</code> (an equivalent pattern to <code>"at+"</code> would be <code>"att*"</code>)</p>
+<table>
+<thead>
+<tr class="header">
+<th>Inputs</th>
+<th>Matched?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>"at"</code></td>
+<td><code>true</code></td>
+</tr>
+<tr class="even">
+<td><code>"att"</code></td>
+<td><code>true</code></td>
+</tr>
+<tr class="odd">
+<td><code>"that"</code></td>
+<td><code>true</code></td>
+</tr>
+<tr class="even">
+<td><code>"pat"</code></td>
+<td><code>true</code></td>
+</tr>
+<tr class="odd">
+<td><code>"atttttt"</code></td>
+<td><code>true</code></td>
+</tr>
+<tr class="even">
+<td><code>"apart"</code></td>
+<td><code>false</code></td>
+</tr>
+</tbody>
+</table></li>
+</ul>
+<h3 id="dot-operator-.">Dot Operator <code>.</code></h3>
+<ul>
+<li>Any one character</li>
+<li></li>
+<li><p>ex: if pattern is <code>"r.."</code>, then it looks for an <code>r</code>, then any one character after that, then any one character after that</p>
+<table>
+<thead>
+<tr class="header">
+<th>Inputs</th>
+<th>Matched?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>"r"</code></td>
+<td><code>false</code></td>
+</tr>
+<tr class="even">
+<td><code>"ra"</code></td>
+<td><code>false</code></td>
+</tr>
+<tr class="odd">
+<td><code>"rat"</code></td>
+<td><code>true</code></td>
+</tr>
+<tr class="even">
+<td><code>"rain"</code></td>
+<td><code>true</code></td>
+</tr>
+<tr class="odd">
+<td><code>"train"</code></td>
+<td><code>true</code></td>
+</tr>
+<tr class="even">
+<td><code>"forest"</code></td>
+<td><code>true</code></td>
+</tr>
+<tr class="odd">
+<td><code>"burn"</code></td>
+<td><code>false</code></td>
+</tr>
+</tbody>
+</table></li>
+</ul>
+<h3 id="hat-operator--">Hat Operator - <code>^</code></h3>
+<ul>
+<li>Start of input anchor</li>
+<li></li>
+<li><p>ex: if pattern is <code>"^is"</code>, then it looks for <code>"is"</code> at the very start of the string</p>
+<table>
+<thead>
+<tr class="header">
+<th>Inputs</th>
+<th>Matched?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>"i"</code></td>
+<td><code>false</code></td>
+</tr>
+<tr class="even">
+<td><code>"is"</code></td>
+<td><code>true</code></td>
+</tr>
+<tr class="odd">
+<td><code>"Isaac"</code></td>
+<td><code>false</code></td>
+</tr>
+<tr class="even">
+<td><code>"is your name Pat?"</code></td>
+<td><code>true</code></td>
+</tr>
+<tr class="odd">
+<td><code>"Pat, my name is"</code></td>
+<td><code>false</code></td>
+</tr>
+</tbody>
+</table></li>
+</ul>
+<h3 id="dollar-sign-operator--">Dollar Sign Operator - <code>$</code></h3>
+<ul>
+<li>End of input anchor</li>
+<li></li>
+<li><p>ex: if pattern is <code>"is$"</code>, then it looks for <code>"is"</code> at the very end of the string</p>
+<table>
+<thead>
+<tr class="header">
+<th>Inputs</th>
+<th>Matched?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>"i"</code></td>
+<td><code>false</code></td>
+</tr>
+<tr class="even">
+<td><code>"is"</code></td>
+<td><code>true</code></td>
+</tr>
+<tr class="odd">
+<td><code>"Isaac"</code></td>
+<td><code>false</code></td>
+</tr>
+<tr class="even">
+<td><code>"is your name Pat?"</code></td>
+<td><code>false</code></td>
+</tr>
+<tr class="odd">
+<td><code>"Pat, my name is"</code></td>
+<td><code>true</code></td>
+</tr>
+</tbody>
+</table></li>
+</ul>
+<h3 id="square-brackets">Square Brackets</h3>
+<ul>
+<li>Any character of your choice in the brackets</li>
+<li></li>
+<li><p>ex: if pattern is <code>"a[tm]e"</code>, then it looks for an <code>a</code>, then either <code>t</code> or <code>m</code>, then an <code>e</code></p>
+<table>
+<thead>
+<tr class="header">
+<th>Inputs</th>
+<th>Matched?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>"ae"</code></td>
+<td><code>false</code></td>
+</tr>
+<tr class="even">
+<td><code>"ate"</code></td>
+<td><code>true</code></td>
+</tr>
+<tr class="odd">
+<td><code>"ame"</code></td>
+<td><code>true</code></td>
+</tr>
+<tr class="even">
+<td><code>"atme"</code></td>
+<td><code>false</code></td>
+</tr>
+<tr class="odd">
+<td><code>"amte"</code></td>
+<td><code>false</code></td>
+</tr>
+<tr class="even">
+<td><code>"name"</code></td>
+<td><code>true</code></td>
+</tr>
+<tr class="odd">
+<td><code>"rate"</code></td>
+<td><code>true</code></td>
+</tr>
+</tbody>
+</table></li>
+<li><p>ex: if pattern is <code>"a[tm]+e"</code>, then it looks for an <code>a</code>, then one or more of either <code>t</code> or <code>m</code>, then an <code>e</code></p>
+<table>
+<thead>
+<tr class="header">
+<th>Inputs</th>
+<th>Matched?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>"ae"</code></td>
+<td><code>false</code></td>
+</tr>
+<tr class="even">
+<td><code>"ate"</code></td>
+<td><code>true</code></td>
+</tr>
+<tr class="odd">
+<td><code>"ame"</code></td>
+<td><code>true</code></td>
+</tr>
+<tr class="even">
+<td><code>"atme"</code></td>
+<td><code>true</code></td>
+</tr>
+<tr class="odd">
+<td><code>"amtmmmte"</code></td>
+<td><code>true</code></td>
+</tr>
+<tr class="even">
+<td><code>"attttte"</code></td>
+<td><code>true</code></td>
+</tr>
+<tr class="odd">
+<td><code>"name"</code></td>
+<td><code>true</code></td>
+</tr>
+<tr class="even">
+<td><code>"rate"</code></td>
+<td><code>true</code></td>
+</tr>
+<tr class="odd">
+<td><code>"rage"</code></td>
+<td><code>false</code></td>
+</tr>
+</tbody>
+</table></li>
+</ul>
+<h4 id="range-of-characters">Range of characters</h4>
+<ul>
+<li>You can indicate a range of characters in the square brackets.</li>
+<li></li>
+<li>ex: pattern of <code>[a-zA-Z]</code> means any lower/upper letter</li>
+<li></li>
+<li><p>ex: pattern of <code>[j-w]</code> means any lower letter from <code>j</code> to <code>w</code></p></li>
+<li><p>ex: pattern of <code>[0-9]</code> means any number from <code>0</code> to <code>9</code></p></li>
+</ul>
+<h4 id="hat-operator-inside-square-brackets">Hat Operator inside Square Brackets</h4>
+<ul>
+<li>Not any of those characters</li>
+<li></li>
+<li><p>ex: if pattern is <code>"[^aeiou]"</code>, then it looks for any non-vowel character</p>
+<table>
+<thead>
+<tr class="header">
+<th>Inputs</th>
+<th>Matched?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>"a"</code></td>
+<td><code>false</code></td>
+</tr>
+<tr class="even">
+<td><code>"u"</code></td>
+<td><code>false</code></td>
+</tr>
+<tr class="odd">
+<td><code>"why"</code></td>
+<td><code>true</code></td>
+</tr>
+<tr class="even">
+<td><code>"what"</code></td>
+<td><code>true</code></td>
+</tr>
+<tr class="odd">
+<td><code>"where"</code></td>
+<td><code>true</code></td>
+</tr>
+<tr class="even">
+<td><code>"iou"</code></td>
+<td><code>false</code></td>
+</tr>
+</tbody>
+</table></li>
+</ul>
+<h3 id="parentheses">Parentheses</h3>
+<ul>
+<li>Group of characters</li>
+<li></li>
+<li><p>Primarily used to capture groups of characters for replacements</p></li>
+<li><p>ex: if pattern is <code>"^(is)"</code>, then it looks for <code>"is"</code> at the very start of the string (an equivalent pattern is <code>"^is"</code>)</p>
+<table>
+<thead>
+<tr class="header">
+<th>Inputs</th>
+<th>Matched?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>"i"</code></td>
+<td><code>false</code></td>
+</tr>
+<tr class="even">
+<td><code>"is"</code></td>
+<td><code>true</code></td>
+</tr>
+<tr class="odd">
+<td><code>"Isaac"</code></td>
+<td><code>false</code></td>
+</tr>
+<tr class="even">
+<td><code>"is your name Pat?"</code></td>
+<td><code>true</code></td>
+</tr>
+<tr class="odd">
+<td><code>"Pat, my name is"</code></td>
+<td><code>false</code></td>
+</tr>
+</tbody>
+</table></li>
+<li><p>ex: if pattern is <code>"at( is)?"</code>, then it looks for <code>"at"</code>, then an optional <code>" is"</code></p>
+<table>
+<thead>
+<tr class="header">
+<th>Inputs</th>
+<th>Matched?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>"at"</code></td>
+<td><code>true</code></td>
+</tr>
+<tr class="even">
+<td><code>" is"</code></td>
+<td><code>false</code></td>
+</tr>
+<tr class="odd">
+<td><code>"at is"</code></td>
+<td><code>true</code></td>
+</tr>
+<tr class="even">
+<td><code>"that is"</code></td>
+<td><code>true</code></td>
+</tr>
+<tr class="odd">
+<td><code>"that is true"</code></td>
+<td><code>true</code></td>
+</tr>
+<tr class="even">
+<td><code>"hat"</code></td>
+<td><code>true</code></td>
+</tr>
+</tbody>
+</table></li>
+</ul>
+<h3 id="special-character-classes">Special Character Classes</h3>
+<ul>
+<li><p>Lowercase:</p>
+<ul>
+<li><code>\s</code> - whitespace (space, tab, newline)</li>
+<li><code>\d</code> - digit</li>
+<li><code>\w</code> - word character (letter, digit, _)</li>
+</ul></li>
+<li><p>Uppercase (not):</p>
+<ul>
+<li><code>\S</code> - not whitespace</li>
+<li><code>\D</code> - not a digit</li>
+<li><code>\W</code> - not a word character</li>
+</ul></li>
+</ul>
+<h2 id="regular-expressions-in-javascript">Regular Expressions in JavaScript</h2>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp">Docs for RegExp in JavaScript</a></p>
+<ul>
+<li><p>You can create a regular expression in JS with forward slashes, <code>/</code></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">const</span> regex <span class="op">=</span> <span class="ss">/pattern/</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-2" title="2"><span class="co">// const regex = new RegExp(&#39;pattern&#39;); // can do this too</span></a></code></pre></div></li>
+</ul>
+<h3 id="regexp.prototype.test"><code>RegExp.prototype.test</code></h3>
+<ul>
+<li><p>returns <code>true</code> if there is a match between the regex and a string parameter, otherwise <code>false</code></p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">const</span> regex <span class="op">=</span> <span class="ss">/banana/</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb3-2" title="2"><span class="va">console</span>.<span class="at">log</span>(<span class="va">regex</span>.<span class="at">test</span>(<span class="st">&#39;this banana is plain&#39;</span>))<span class="op">;</span> <span class="co">// true</span></a>
+<a class="sourceLine" id="cb3-3" title="3"><span class="va">console</span>.<span class="at">log</span>(<span class="va">regex</span>.<span class="at">test</span>(<span class="st">&#39;THIS BANANA IS mushy&#39;</span>))<span class="op">;</span> <span class="co">// false</span></a>
+<a class="sourceLine" id="cb3-4" title="4"><span class="va">console</span>.<span class="at">log</span>(<span class="va">regex</span>.<span class="at">test</span>(<span class="st">&#39;hello world&#39;</span>))<span class="op">;</span> <span class="co">// false</span></a></code></pre></div></li>
+<li><p>Ignore cases:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb4-1" title="1"><span class="kw">const</span> regex <span class="op">=</span> <span class="ss">/banana/i</span><span class="op">;</span> <span class="co">// &#39;i&#39; at the end of the pattern ignores cases</span></a>
+<a class="sourceLine" id="cb4-2" title="2"><span class="co">// const regex = new RegExp(&#39;banana&#39;, i);</span></a>
+<a class="sourceLine" id="cb4-3" title="3"><span class="va">console</span>.<span class="at">log</span>(<span class="va">regex</span>.<span class="at">test</span>(<span class="st">&#39;this banana is plain&#39;</span>))<span class="op">;</span> <span class="co">// true</span></a>
+<a class="sourceLine" id="cb4-4" title="4"><span class="va">console</span>.<span class="at">log</span>(<span class="va">regex</span>.<span class="at">test</span>(<span class="st">&#39;THIS BANANA IS mushy&#39;</span>))<span class="op">;</span> <span class="co">// true</span></a>
+<a class="sourceLine" id="cb4-5" title="5"><span class="va">console</span>.<span class="at">log</span>(<span class="va">regex</span>.<span class="at">test</span>(<span class="st">&#39;hello world&#39;</span>))<span class="op">;</span> <span class="co">// false</span></a></code></pre></div></li>
+</ul>
+<h3 id="string.prototype.replace"><code>String.prototype.replace</code></h3>
+<ul>
+<li><p>First argument is the pattern, second argument is the string to replace the pattern or a function that will run for every match and the return will be the replacement for that match.</p></li>
+<li><p>Returns a new string with all matches of a pattern replaced by a replacement only if pattern is a regular expression and has global search, <code>g</code>.</p></li>
+<li><p>If the pattern is a string, it will only replace the first match in the returned string.</p></li>
+<li><p>Regex that has a global search and ignores casing:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">const</span> str <span class="op">=</span> <span class="st">&#39;This banana is mushy. I do not like MUSHY bananas&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb5-2" title="2"><span class="kw">const</span> regex <span class="op">=</span> <span class="ss">/mushy/gi</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb5-3" title="3"><span class="va">console</span>.<span class="at">log</span>(<span class="va">str</span>.<span class="at">replace</span>(regex<span class="op">,</span> <span class="st">&#39;green&#39;</span>))<span class="op">;</span> <span class="co">// &#39;This banana is green. I do not like green bananas&#39;</span></a></code></pre></div></li>
+<li><p>Regex that has a global search and ignores casing with a function as second argument:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb6-1" title="1"><span class="kw">const</span> str <span class="op">=</span> <span class="st">&#39;This banana is mushy. I do not like MUSHY bananas&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb6-2" title="2"><span class="kw">const</span> regex <span class="op">=</span> <span class="ss">/mushy/gi</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb6-3" title="3"><span class="kw">let</span> count <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb6-4" title="4"><span class="va">console</span>.<span class="at">log</span>(</a>
+<a class="sourceLine" id="cb6-5" title="5">    <span class="va">str</span>.<span class="at">replace</span>(regex<span class="op">,</span> (match) <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb6-6" title="6">        <span class="cf">if</span> (count<span class="op">++</span> <span class="op">%</span> <span class="dv">2</span> <span class="op">===</span> <span class="dv">0</span>) <span class="cf">return</span> <span class="st">&#39;green&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb6-7" title="7">        <span class="cf">else</span> <span class="cf">return</span> match<span class="op">;</span></a>
+<a class="sourceLine" id="cb6-8" title="8">    <span class="op">}</span>)</a>
+<a class="sourceLine" id="cb6-9" title="9">)<span class="op">;</span> <span class="co">// &#39;This banana is green. I do not like MUSHY bananas&#39;</span></a></code></pre></div></li>
+<li><p>Regex that has no global search:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb7-1" title="1"><span class="kw">const</span> str <span class="op">=</span> <span class="st">&#39;This banana is mushy. I do not like mushy bananas&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb7-2" title="2"><span class="kw">const</span> regex <span class="op">=</span> <span class="ss">/mushy/</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb7-3" title="3"><span class="va">console</span>.<span class="at">log</span>(<span class="va">str</span>.<span class="at">replace</span>(regex<span class="op">,</span> <span class="st">&#39;green&#39;</span>))<span class="op">;</span> <span class="co">// &#39;This banana is green. I do not like green bananas&#39;</span></a></code></pre></div></li>
+<li><p>Pattern as a string:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb8-1" title="1"><span class="kw">const</span> str <span class="op">=</span> <span class="st">&#39;This banana is mushy. I do not like mushy bananas&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb8-2" title="2"><span class="kw">const</span> patternStr <span class="op">=</span> <span class="st">&#39;mushy&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb8-3" title="3"><span class="va">console</span>.<span class="at">log</span>(<span class="va">str</span>.<span class="at">replace</span>(patternStr<span class="op">,</span> <span class="st">&#39;green&#39;</span>))<span class="op">;</span> <span class="co">// &#39;This banana is green. I do not like mushy bananas&#39;</span></a></code></pre></div></li>
+<li><p>Cool pattern matching with regex:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb9-1" title="1"><span class="kw">const</span> data <span class="op">=</span> <span class="op">{</span> <span class="dt">name</span><span class="op">:</span> <span class="st">&#39;Fido&#39;</span><span class="op">,</span> <span class="dt">age</span><span class="op">:</span> <span class="dv">4</span><span class="op">,</span> <span class="dt">favToy</span><span class="op">:</span> <span class="st">&#39;bone&#39;</span> <span class="op">};</span></a>
+<a class="sourceLine" id="cb9-2" title="2"><span class="kw">const</span> regex <span class="op">=</span> <span class="ss">/%</span><span class="sc">\w+</span><span class="ss">%/g</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb9-3" title="3"><span class="kw">const</span> str <span class="op">=</span> <span class="st">&quot;My dog&#39;s name is %name%. He is %age% years old. His favorite toy is %favToy%.&quot;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb9-4" title="4"><span class="kw">const</span> replacedStr <span class="op">=</span> <span class="va">str</span>.<span class="at">replace</span>(regex<span class="op">,</span> (match) <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb9-5" title="5">    <span class="kw">const</span> key <span class="op">=</span> <span class="va">match</span>.<span class="at">replace</span>(<span class="ss">/%/g</span><span class="op">,</span> <span class="st">&#39;&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb9-6" title="6">    <span class="cf">return</span> data[key]<span class="op">;</span></a>
+<a class="sourceLine" id="cb9-7" title="7"><span class="op">}</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb9-8" title="8"><span class="va">console</span>.<span class="at">log</span>(replacedStr)<span class="op">;</span> <span class="co">//&quot;My dog&#39;s name is Fido. He is 4 years old. His favorite toy is bone.&quot;</span></a></code></pre></div></li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>getownpropertynames</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="object.getownpropertynames">Object.getOwnPropertyNames()</h1>
+<p>The <code>Object.getOwnPropertyNames()</code> method returns an array of all properties (including non-enumerable properties except for those which use Symbol) found directly in a given object.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>Object.getOwnPropertyNames(obj)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>obj</code><br />
+The object whose enumerable and non-enumerable properties are to be returned.</p>
+<h3 id="return-value">Return value</h3>
+<p>An array of strings that corresponds to the properties found directly in the given object.</p>
+<h2 id="description">Description</h2>
+<p><code>Object.getOwnPropertyNames()</code> returns an array whose elements are strings corresponding to the enumerable and non-enumerable properties found directly in a given object <code>obj</code>. The ordering of the enumerable properties in the array is consistent with the ordering exposed by a <a href="../../statements/for...in"><code>for...in</code></a> loop (or by <a href="keys"><code>Object.keys()</code></a>) over the properties of the object. According to ES6, the integer keys of the object (both enumerable and non-enumerable) are added in ascending order to the array first, followed by the string keys in the order of insertion.</p>
+<p>In ES5, if the argument to this method is not an object (a primitive), then it will cause a <a href="../typeerror"><code>TypeError</code></a>. In ES2015, a non-object argument will be coerced to an object.</p>
+<pre><code>Object.getOwnPropertyNames(&#39;foo&#39;);
+// TypeError: &quot;foo&quot; is not an object (ES5 code)
+
+Object.getOwnPropertyNames(&#39;foo&#39;);
+// [&quot;0&quot;, &quot;1&quot;, &quot;2&quot;, &quot;length&quot;]  (ES2015 code)</code></pre>
+<h2 id="examples">Examples</h2>
+<h3 id="using-object.getownpropertynames">Using Object.getOwnPropertyNames()</h3>
+<pre><code>var arr = [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;];
+console.log(Object.getOwnPropertyNames(arr).sort()); // .sort() is an array method.
+// logs [&quot;0&quot;, &quot;1&quot;, &quot;2&quot;, &quot;length&quot;]
+
+// Array-like object
+var obj = { 0: &#39;a&#39;, 1: &#39;b&#39;, 2: &#39;c&#39; };
+console.log(Object.getOwnPropertyNames(obj).sort()); // .sort() is an array method.
+// logs [&quot;0&quot;, &quot;1&quot;, &quot;2&quot;]
+
+// Logging property names and values using Array.forEach
+Object.getOwnPropertyNames(obj).forEach(
+  function (val, idx, array) {
+    console.log(val + &#39; -&gt; &#39; + obj[val]);
+  }
+);
+// logs
+// 0 -&gt; a
+// 1 -&gt; b
+// 2 -&gt; c
+
+// non-enumerable property
+var my_obj = Object.create({}, {
+  getFoo: {
+    value: function() { return this.foo; },
+    enumerable: false
+  }
+});
+my_obj.foo = 1;
+
+console.log(Object.getOwnPropertyNames(my_obj).sort());
+// logs [&quot;foo&quot;, &quot;getFoo&quot;]</code></pre>
+<p>If you want only the enumerable properties, see <a href="keys"><code>Object.keys()</code></a> or use a <a href="../../statements/for...in"><code>for...in</code></a> loop (note that this will also return enumerable properties found along the prototype chain for the object unless the latter is filtered with <a href="hasownproperty"><code>hasOwnProperty()</code></a>).</p>
+<p>Items on the prototype chain are not listed:</p>
+<pre><code>function ParentClass() {}
+ParentClass.prototype.inheritedMethod = function() {};
+
+function ChildClass() {
+  this.prop = 5;
+  this.method = function() {};
+}
+ChildClass.prototype = new ParentClass;
+ChildClass.prototype.prototypeMethod = function() {};
+
+console.log(
+  Object.getOwnPropertyNames(
+    new ChildClass() // [&quot;prop&quot;, &quot;method&quot;]
+  )
+);</code></pre>
+<h3 id="get-non-enumerable-properties-only">Get non-enumerable properties only</h3>
+<p>This uses the <a href="../array/filter"><code>Array.prototype.filter()</code></a> function to remove the enumerable keys (obtained with <a href="keys"><code>Object.keys()</code></a>) from a list of all keys (obtained with <code>Object.getOwnPropertyNames()</code>) thus giving only the non-enumerable keys as output.</p>
+<pre><code>var target = myObject;
+var enum_and_nonenum = Object.getOwnPropertyNames(target);
+var enum_only = Object.keys(target);
+var nonenum_only = enum_and_nonenum.filter(function(key) {
+  var indexInEnum = enum_only.indexOf(key);
+  if (indexInEnum == -1) {
+    // Not found in enum_only keys,
+    // meaning that the key is non-enumerable,
+    // so return true so we keep this in the filter
+    return true;
+  } else {
+    return false;
+  }
+});
+
+console.log(nonenum_only);</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-object.getownpropertynames">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-object.getownpropertynames</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>getOwnPropertyNames</code></p>
+<p>5</p>
+<p>12</p>
+<p>4</p>
+<p>9</p>
+<p>12</p>
+<p>5</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>12</p>
+<p>5</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties">Enumerability and ownership of properties</a></li>
+<li><a href="hasownproperty"><code>Object.prototype.hasOwnProperty()</code></a></li>
+<li><a href="propertyisenumerable"><code>Object.prototype.propertyIsEnumerable()</code></a></li>
+<li><a href="create"><code>Object.create()</code></a></li>
+<li><a href="keys"><code>Object.keys()</code></a></li>
+<li><a href="../array/foreach"><code>Array.forEach()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyNames" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyNames</a></p>
+</body>
+</html>

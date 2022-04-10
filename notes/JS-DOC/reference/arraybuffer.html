@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>arraybuffer</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="arraybuffer">ArrayBuffer</h1>
+<p>The <code>ArrayBuffer</code> object is used to represent a generic, fixed-length raw binary data buffer.</p>
+<p>It is an array of bytes, often referred to in other languages as a “byte array”.You cannot directly manipulate the contents of an <code>ArrayBuffer</code>; instead, you create one of the <a href="typedarray">typed array objects</a> or a <a href="dataview"><code>DataView</code></a> object which represents the buffer in a specific format, and use that to read and write the contents of the buffer.</p>
+<p>The <code>ArrayBuffer()</code> constructor creates a new <code>ArrayBuffer</code> of the given length in bytes. You can also get an array buffer from existing data, for example <a href="https://developer.mozilla.org/en-US/docs/Glossary/Base64#appendix_to_solution_1_decode_a_base64_string_to_uint8array_or_arraybuffer">from a Base64 string</a> or <a href="https://developer.mozilla.org/en-US/docs/Web/API/FileReader/readAsArrayBuffer">from a local file</a>.</p>
+<h2 id="constructor">Constructor</h2>
+<p><a href="arraybuffer/arraybuffer"><code>ArrayBuffer()</code></a><br />
+Creates a new <code>ArrayBuffer</code> object.</p>
+<h2 id="static-properties">Static properties</h2>
+<p><a href="arraybuffer/@@species"><code>get ArrayBuffer[@@species]</code></a><br />
+The constructor function that is used to create derived objects.</p>
+<h2 id="static-methods">Static methods</h2>
+<p><a href="arraybuffer/isview"><code>ArrayBuffer.isView(arg)</code></a><br />
+Returns <code>true</code> if <code>arg</code> is one of the ArrayBuffer views, such as <a href="typedarray">typed array objects</a> or a <a href="dataview"><code>DataView</code></a>. Returns <code>false</code> otherwise.</p>
+<h2 id="instance-properties">Instance properties</h2>
+<p><a href="arraybuffer/bytelength"><code>ArrayBuffer.prototype.byteLength</code></a><br />
+The read-only size, in bytes, of the <code>ArrayBuffer</code>. This is established when the array is constructed and cannot be changed.</p>
+<h2 id="instance-methods">Instance methods</h2>
+<p><a href="arraybuffer/slice"><code>ArrayBuffer.prototype.slice()</code></a><br />
+Returns a new <code>ArrayBuffer</code> whose contents are a copy of this <code>ArrayBuffer</code>’s bytes from <code>begin</code> (inclusive) up to <code>end</code> (exclusive). If either <code>begin</code> or <code>end</code> is negative, it refers to an index from the end of the array, as opposed to from the beginning.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="creating-an-arraybuffer">Creating an ArrayBuffer</h3>
+<p>In this example, we create a 8-byte buffer with a <a href="int32array"><code>Int32Array</code></a> view referring to the buffer:</p>
+<pre><code>const buffer = new ArrayBuffer(8);
+const view = new Int32Array(buffer);</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-arraybuffer-objects">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-arraybuffer-objects</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>ArrayBuffer</code></p>
+<p>7</p>
+<p>12</p>
+<p>4</p>
+<p>10</p>
+<p>11.6</p>
+<p>5.1</p>
+<p>4</p>
+<p>18</p>
+<p>4</p>
+<p>12</p>
+<p>4.2</p>
+<p>1.0</p>
+<p><code>ArrayBuffer</code></p>
+<p>7</p>
+<p>12</p>
+<p>4</p>
+<p>10</p>
+<p>11.6</p>
+<p>5.1</p>
+<p>4</p>
+<p>18</p>
+<p>4</p>
+<p>12</p>
+<p>4.2</p>
+<p>1.0</p>
+<p><code>byteLength</code></p>
+<p>7</p>
+<p>12</p>
+<p>4</p>
+<p>10</p>
+<p>11.6</p>
+<p>5.1</p>
+<p>4</p>
+<p>18</p>
+<p>4</p>
+<p>12</p>
+<p>4.2</p>
+<p>1.0</p>
+<p><code>isView</code></p>
+<p>32</p>
+<p>12</p>
+<p>29</p>
+<p>11</p>
+<p>19</p>
+<p>7</p>
+<p>≤37</p>
+<p>32</p>
+<p>29</p>
+<p>19</p>
+<p>7</p>
+<p>2.0</p>
+<p><code>slice</code></p>
+<p>17</p>
+<p>12</p>
+<p>12</p>
+<p>The non-standard <code>ArrayBuffer.slice()</code> method has been removed in Firefox 53 (but the standardized version <code>ArrayBuffer.prototype.slice()</code> is kept.</p>
+<p>11</p>
+<p>12.1</p>
+<p>6</p>
+<p>≤37</p>
+<p>18</p>
+<p>14</p>
+<p>The non-standard <code>ArrayBuffer.slice()</code> method has been removed in Firefox 53 (but the standardized version <code>ArrayBuffer.prototype.slice()</code> is kept.</p>
+<p>12.1</p>
+<p>6</p>
+<p>1.0</p>
+<p><code>@@species</code></p>
+<p>51</p>
+<p>13</p>
+<p>48</p>
+<p>No</p>
+<p>38</p>
+<p>10</p>
+<p>51</p>
+<p>51</p>
+<p>48</p>
+<p>41</p>
+<p>10</p>
+<p>5.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays">JavaScript typed arrays</a></li>
+<li><a href="sharedarraybuffer"><code>SharedArrayBuffer</code></a></li>
+<li><a href="../errors/invalid_array_length">RangeError: invalid array length</a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer</a></p>
+</body>
+</html>

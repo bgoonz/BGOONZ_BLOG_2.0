@@ -1,37 +1,44 @@
-# ArrayBuffer
+ArrayBuffer
+===========
 
 The `ArrayBuffer` object is used to represent a generic, fixed-length raw binary data buffer.
 
-It is an array of bytes, often referred to in other languages as a "byte array".You cannot directly manipulate the contents of an `ArrayBuffer`; instead, you create one of the [typed array objects](typedarray) or a [`DataView`](dataview) object which represents the buffer in a specific format, and use that to read and write the contents of the buffer.
+It is an array of bytes, often referred to in other languages as a “byte array”.You cannot directly manipulate the contents of an `ArrayBuffer`; instead, you create one of the [typed array objects](typedarray) or a [`DataView`](dataview) object which represents the buffer in a specific format, and use that to read and write the contents of the buffer.
 
 The `ArrayBuffer()` constructor creates a new `ArrayBuffer` of the given length in bytes. You can also get an array buffer from existing data, for example [from a Base64 string](https://developer.mozilla.org/en-US/docs/Glossary/Base64#appendix_to_solution_1_decode_a_base64_string_to_uint8array_or_arraybuffer) or [from a local file](https://developer.mozilla.org/en-US/docs/Web/API/FileReader/readAsArrayBuffer).
 
-## Constructor
+Constructor
+-----------
 
 [`ArrayBuffer()`](arraybuffer/arraybuffer)  
 Creates a new `ArrayBuffer` object.
 
-## Static properties
+Static properties
+-----------------
 
 [`get ArrayBuffer[@@species]`](arraybuffer/@@species)  
 The constructor function that is used to create derived objects.
 
-## Static methods
+Static methods
+--------------
 
 [`ArrayBuffer.isView(arg)`](arraybuffer/isview)  
 Returns `true` if `arg` is one of the ArrayBuffer views, such as [typed array objects](typedarray) or a [`DataView`](dataview). Returns `false` otherwise.
 
-## Instance properties
+Instance properties
+-------------------
 
 [`ArrayBuffer.prototype.byteLength`](arraybuffer/bytelength)  
 The read-only size, in bytes, of the `ArrayBuffer`. This is established when the array is constructed and cannot be changed.
 
-## Instance methods
+Instance methods
+----------------
 
 [`ArrayBuffer.prototype.slice()`](arraybuffer/slice)  
-Returns a new `ArrayBuffer` whose contents are a copy of this `ArrayBuffer`'s bytes from `begin` (inclusive) up to `end` (exclusive). If either `begin` or `end` is negative, it refers to an index from the end of the array, as opposed to from the beginning.
+Returns a new `ArrayBuffer` whose contents are a copy of this `ArrayBuffer`’s bytes from `begin` (inclusive) up to `end` (exclusive). If either `begin` or `end` is negative, it refers to an index from the end of the array, as opposed to from the beginning.
 
-## Examples
+Examples
+--------
 
 ### Creating an ArrayBuffer
 
@@ -40,12 +47,11 @@ In this example, we create a 8-byte buffer with a [`Int32Array`](int32array) vie
     const buffer = new ArrayBuffer(8);
     const view = new Int32Array(buffer);
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-arraybuffer-objects">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-arraybuffer-objects</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-arraybuffer-objects</span></td></tr></tbody></table>
 
 `ArrayBuffer`
 
@@ -207,10 +213,11 @@ No
 
 5.0
 
-## See also
+See also
+--------
 
-- [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
-- [`SharedArrayBuffer`](sharedarraybuffer)
-- [RangeError: invalid array length](../errors/invalid_array_length)
+-   [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
+-   [`SharedArrayBuffer`](sharedarraybuffer)
+-   [RangeError: invalid array length](../errors/invalid_array_length)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer</a>

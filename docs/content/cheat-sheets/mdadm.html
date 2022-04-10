@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>mdadm</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="for-the-sake-of-briefness-we-use-bash-group-compound-stanza">For the sake of briefness, we use Bash “group compound” stanza:</h1>
+<h1 id="devsdab1-devsda1-devsdb1">/dev/sd{a,b,…}1 =&gt; /dev/sda1 /dev/sdb1 …</h1>
+<h1 id="along-the-following-variables">Along the following variables:</h1>
+<h1 id="m-array-identifier-devmdm"><span class="math inline"><em>M</em><em>a</em><em>r</em><em>r</em><em>a</em><em>y</em><em>i</em><em>d</em><em>e</em><em>n</em><em>t</em><em>i</em><em>f</em><em>i</em><em>e</em><em>r</em>(/<em>d</em><em>e</em><em>v</em>/<em>m</em><em>d</em></span>{M})</h1>
+<h1 id="d-device-identifier-devsdd"><span class="math inline"><em>D</em><em>d</em><em>e</em><em>v</em><em>i</em><em>c</em><em>e</em><em>i</em><em>d</em><em>e</em><em>n</em><em>t</em><em>i</em><em>f</em><em>i</em><em>e</em><em>r</em>(/<em>d</em><em>e</em><em>v</em>/<em>s</em><em>d</em></span>{D})</h1>
+<h1 id="p-partition-identifier-devsddp"><span class="math inline"><em>P</em><em>p</em><em>a</em><em>r</em><em>t</em><em>i</em><em>t</em><em>i</em><em>o</em><em>n</em><em>i</em><em>d</em><em>e</em><em>n</em><em>t</em><em>i</em><em>f</em><em>i</em><em>e</em><em>r</em>(/<em>d</em><em>e</em><em>v</em>/<em>s</em><em>d</em></span>{D}${P})</h1>
+<h1 id="to-create-initialize-a-new-array">To create (initialize) a new array:</h1>
+<p>mdadm –create /dev/md<span class="math inline"><em>M</em> −  − <em>l</em><em>e</em><em>v</em><em>e</em><em>l</em> = <em>r</em><em>a</em><em>i</em><em>d</em>5 −  − <em>r</em><em>a</em><em>i</em><em>d</em> − <em>d</em><em>e</em><em>v</em><em>i</em><em>c</em><em>e</em><em>s</em> = 4/<em>d</em><em>e</em><em>v</em>/<em>s</em><em>d</em><em>a</em>, <em>b</em>, <em>c</em>, <em>d</em>, <em>e</em></span>{P} –spare-devices=/dev/sdf1</p>
+<h1 id="to-manually-assemble-activate-an-existing-array">To manually assemble (activate) an existing array:</h1>
+<p>mdadm –assemble /dev/md<span class="math inline"><em>M</em>/<em>d</em><em>e</em><em>v</em>/<em>s</em><em>d</em><em>a</em>, <em>b</em>, <em>c</em>, <em>d</em>, <em>e</em></span>{P}</p>
+<h1 id="to-automatically-assemble-activate-all-existing-arrays">To automatically assemble (activate) all existing arrays:</h1>
+<p>mdadm –assemble –scan</p>
+<h1 id="to-stop-an-assembled-active-array">To stop an assembled (active) array:</h1>
+<p>mdadm –stop /dev/md${M}</p>
+<h1 id="to-see-array-configuration">To see array configuration:</h1>
+<p>mdadm –query /dev/md${M}</p>
+<h1 id="to-see-array-component-configuration-dump-superblock-content">To see array component configuration (dump superblock content):</h1>
+<p>mdadm –query –examine /dev/sd<span class="math inline"><em>D</em></span>{P}</p>
+<h1 id="to-see-detailed-array-confirationstatus">To see detailed array confiration/status:</h1>
+<p>mdadm –detail /dev/md${M}</p>
+<h1 id="to-save-existing-arrays-configuration">To save existing arrays configuration:</h1>
+<h1 id="may-be-required-by-initrd-for-successfull-boot">(MAY be required by initrd for successfull boot)</h1>
+<p>mdadm –detail –scan &gt; /etc/mdadm/mdadm.conf</p>
+<h1 id="to-erase-array-component-superblock">To erase array component superblock:</h1>
+<h1 id="must-do-before-reusing-a-partition-for-other-purposes">(MUST do before reusing a partition for other purposes)</h1>
+<p>mdadm –zero-superblock /dev/sd<span class="math inline"><em>D</em></span>{P}</p>
+<h1 id="to-manually-mark-a-component-as-failed">To manually mark a component as failed:</h1>
+<h1 id="should-when-a-device-shows-wear-and-tear-signs-e.g.-through-smart">(SHOULD when a device shows wear-and-tear signs, e.g. through SMART)</h1>
+<p>mdadm –manage /dev/md<span class="math inline"><em>M</em> −  − <em>f</em><em>a</em><em>i</em><em>l</em>/<em>d</em><em>e</em><em>v</em>/<em>s</em><em>d</em></span>{D}${P}</p>
+<h1 id="to-remove-a-failed-component">To remove a failed component:</h1>
+<h1 id="should-before-preemptively-replacing-a-device-after-failing-it">(SHOULD before preemptively replacing a device, after failing it)</h1>
+<p>mdadm –manage /dev/md<span class="math inline"><em>M</em> −  − <em>r</em><em>e</em><em>m</em><em>o</em><em>v</em><em>e</em>/<em>d</em><em>e</em><em>v</em>/<em>s</em><em>d</em></span>{D}${P}</p>
+<h1 id="to-prepare-format-a-new-device-to-replace-a-failed-one">To prepare (format) a new device to replace a failed one:</h1>
+<p>sfdisk -d /dev/sd<span class="math inline"><em>D</em>, <em>s</em><em>a</em><em>n</em><em>e</em>|<em>s</em><em>f</em><em>d</em><em>i</em><em>s</em><em>k</em>/<em>d</em><em>e</em><em>v</em>/<em>s</em><em>d</em></span>{D,new}</p>
+<h1 id="to-add-new-component-to-an-existing-array">To add new component to an existing array:</h1>
+<h1 id="this-will-trigger-the-rebuild">(this will trigger the rebuild)</h1>
+<p>mdadm –manage /dev/md<span class="math inline"><em>M</em> −  − <em>a</em><em>d</em><em>d</em>/<em>d</em><em>e</em><em>v</em>/<em>s</em><em>d</em></span>{D,new}${P}</p>
+<h1 id="to-see-assembled-active-arrays-status">To see assembled (active) arrays status:</h1>
+<p>cat /proc/mdstat</p>
+<h1 id="to-rename-a-device">To rename a device:</h1>
+<h1 id="should-after-hostname-change-eg.-namehostname--s">(SHOULD after hostname change; eg. name=“$(hostname -s)”)</h1>
+<p>mdadm –assemble /dev/md<span class="math inline"><em>M</em>/<em>d</em><em>e</em><em>v</em>/<em>s</em><em>d</em><em>a</em>, <em>b</em>, <em>c</em>, <em>d</em>, <em>e</em></span>{P} –name=“<span class="math inline"><em>n</em><em>a</em><em>m</em><em>e</em>:</span>{M}” –update=name</p>
+</body>
+</html>

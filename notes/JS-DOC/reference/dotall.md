@@ -1,6 +1,7 @@
-# RegExp.prototype.dotAll
+RegExp.prototype.dotAll
+=======================
 
-The `dotAll` property indicates whether or not the "`s`" flag is used with the regular expression. `dotAll` is a read-only property of an individual regular expression instance.
+The `dotAll` property indicates whether or not the “`s`” flag is used with the regular expression. `dotAll` is a read-only property of an individual regular expression instance.
 
 Property attributes of `RegExp.prototype.dotAll`
 
@@ -16,20 +17,22 @@ Configurable
 
 yes
 
-## Description
+Description
+-----------
 
-The value of `dotAll` is a [`Boolean`](../boolean) and `true` if the "`s`" flag was used; otherwise, `false`. The "`s`" flag indicates that the dot special character ("`.`") should additionally match the following line terminator ("newline") characters in a string, which it would not match otherwise:
+The value of `dotAll` is a [`Boolean`](../boolean) and `true` if the “`s`” flag was used; otherwise, `false`. The “`s`” flag indicates that the dot special character (“`.`”) should additionally match the following line terminator (“newline”) characters in a string, which it would not match otherwise:
 
--   U+000A LINE FEED (LF) ("`\n`")
--   U+000D CARRIAGE RETURN (CR) ("`\r`")
+-   U+000A LINE FEED (LF) (“`\n`”)
+-   U+000D CARRIAGE RETURN (CR) (“`\r`”)
 -   U+2028 LINE SEPARATOR
 -   U+2029 PARAGRAPH SEPARATOR
 
-This effectively means the dot will match any character on the Unicode Basic Multilingual Plane (BMP). To allow it to match astral characters, the "`u`" (unicode) flag should be used. Using both flags in conjunction allows the dot to match any Unicode character, without exceptions.
+This effectively means the dot will match any character on the Unicode Basic Multilingual Plane (BMP). To allow it to match astral characters, the “`u`” (unicode) flag should be used. Using both flags in conjunction allows the dot to match any Unicode character, without exceptions.
 
 You cannot change this property directly.
 
-## Examples
+Examples
+--------
 
 ### Using `dotAll`
 
@@ -50,12 +53,11 @@ You cannot change this property directly.
     console.log(str2.replace(regex2,'')); // Output: bar
                                           //         example foo example
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-get-regexp.prototype.dotAll">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-get-regexp.prototype.dotAll</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-get-regexp.prototype.dotAll</span></td></tr></tbody></table>
 
 `dotAll`
 
@@ -83,7 +85,8 @@ No
 
 8.0
 
-## See also
+See also
+--------
 
 -   [`RegExp.lastIndex`](lastindex)
 -   [`RegExp.prototype.global`](global)
@@ -94,6 +97,5 @@ No
 -   [`RegExp.prototype.sticky`](sticky)
 -   [`RegExp.prototype.unicode`](unicode)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/dotAll" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/dotAll</a>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>lsof</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="to-list-all-ipv4-network-files">To list all IPv4 network files:</h1>
+<p>sudo lsof -i4</p>
+<h1 id="to-list-all-ipv6-network-files">To list all IPv6 network files:</h1>
+<p>sudo lsof -i6</p>
+<h1 id="to-list-all-open-sockets">To list all open sockets:</h1>
+<p>lsof -i</p>
+<h1 id="to-list-all-listening-ports">To list all listening ports:</h1>
+<p>lsof -Pnl +M -i4</p>
+<h1 id="to-find-which-program-is-using-the-port-80">To find which program is using the port 80:</h1>
+<p>lsof -i TCP:80</p>
+<h1 id="to-list-all-connections-to-a-specific-host">To list all connections to a specific host:</h1>
+<p>lsof -i@192.168.1.5</p>
+<h1 id="to-list-all-processes-accessing-a-particular-filedirectory">To list all processes accessing a particular file/directory:</h1>
+<p>lsof <path></p>
+<h1 id="to-list-all-files-open-for-a-particular-user">To list all files open for a particular user:</h1>
+<p>lsof -u <username></p>
+<h1 id="to-list-all-filesnetwork-connections-a-command-is-using">To list all files/network connections a command is using:</h1>
+<p>lsof -c <command></p>
+<h1 id="to-list-all-files-a-process-has-open">To list all files a process has open:</h1>
+<p>lsof -p <pid></p>
+<h1 id="to-list-all-files-open-mounted-at-mountpoint">To list all files open mounted at /mount/point:</h1>
+<h1 id="particularly-useful-for-finding-which-processes-are-using-a-mounted-usb-stick-or-cddvd.">(Particularly useful for finding which process(es) are using a mounted USB stick or CD/DVD.)</h1>
+<p>lsof +f – <mount-point></p>
+</body>
+</html>

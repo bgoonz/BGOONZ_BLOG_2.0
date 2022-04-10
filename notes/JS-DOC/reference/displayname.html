@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>displayname</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="function.displayname">Function.displayName</h1>
+<p><strong>Non-standard</strong></p>
+<p>This feature is non-standard and is not on a standards track. Do not use it on production sites facing the Web: it will not work for every user. There may also be large incompatibilities between implementations and the behavior may change in the future.</p>
+<p>The <code>function.displayName</code> property returns the display name of the function.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="setting-a-displayname">Setting a displayName</h3>
+<p>It is usually preferred by consoles and profilers over <a href="name"><code>func.name</code></a> to display the name of a function.</p>
+<p>By entering the following in a console, it should display as something like “<code>function My Function()</code>”:</p>
+<pre><code>var a = function() {};
+a.displayName = &#39;My Function&#39;;
+
+a; // &quot;function My Function()&quot;</code></pre>
+<p>When defined, the <code>displayName</code> property returns the display name of a function:</p>
+<pre><code>function doSomething() {}
+
+console.log(doSomething.displayName); // &quot;undefined&quot;
+
+var popup = function(content) { console.log(content); };
+
+popup.displayName = &#39;Show Popup&#39;;
+
+console.log(popup.displayName); // &quot;Show Popup&quot;</code></pre>
+<h3 id="defining-a-displayname-in-function-expressions">Defining a displayName in function expressions</h3>
+<p>You can define a function with a display name in a <a href="../../functions">function expression</a>:</p>
+<pre><code>var object = {
+  someMethod: function() {}
+};
+
+object.someMethod.displayName = &#39;someMethod&#39;;
+
+console.log(object.someMethod.displayName); // logs &quot;someMethod&quot;
+
+try { someMethod } catch(e) { console.log(e); }
+// ReferenceError: someMethod is not defined</code></pre>
+<h3 id="changing-displayname-dynamically">Changing displayName dynamically</h3>
+<p>You can dynamically change the <code>displayName</code> of a function:</p>
+<pre><code>var object = {
+  // anonymous
+  someMethod: function(value) {
+    arguments.callee.displayName = &#39;someMethod (&#39; + value + &#39;)&#39;;
+  }
+};
+
+console.log(object.someMethod.displayName); // &quot;undefined&quot;
+
+object.someMethod(&#39;123&#39;)
+console.log(object.someMethod.displayName); // &quot;someMethod (123)&quot;</code></pre>
+<h2 id="specifications">Specifications</h2>
+<p><span class="pl-s">Not part of any standard.</span></p>
+<p><code>displayName</code></p>
+<p>No</p>
+<p>No</p>
+<p>13</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>14</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="name"><code>Function.name</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/displayName" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/displayName</a></p>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2021-12-18" />
+  <title>Docker</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Docker</h1>
+<p class="subtitle">lorem-ipsum</p>
+<p class="date">2021-12-18</p>
+</header>
+<h1 id="docker-cheatsheet">Docker Cheatsheet</h1>
+<p>If you can’t find what you are looking for try my other sources:</p>
+<ul>
+<li><a href="https://wiki.ruanbekker.com/index.php/Category:Docker">wiki.ruanbekker.com:docker</a></li>
+<li><a href="https://blog.ruanbekker.com/blog/categories/docker/">blog.ruanbekker.com:docker</a></li>
+<li><a href="https://sysadmins.co.za/tag/docker/">sysadmins.co.za:docker</a></li>
+</ul>
+<h2 id="manipulating-output">Manipulating Output:</h2>
+<p>Filter and specify the name that you are interested in:</p>
+<pre><code>$ docker ps -f name=my-hostname-service
+CONTAINER ID        IMAGE                        COMMAND  CREATED              STATUS              PORTS                     NAMES
+edb30579c208        ruanbekker/hostname:latest   &quot;/app&quot;   About a minute ago   Up About a minute   0.0.0.0:42177-&gt;8080/tcp   my-hostname-service-1234</code></pre>
+<p>Only output the ID:</p>
+<pre><code>$ docker ps -f name=my-hostname-service --format &#39;{{.ID}}&#39;
+edb30579c208
+
+or:
+
+$ docker ps -f name=my-hostname-service -q
+edb30579c208</code></pre>
+<p>If you have more than one container with the same prefix, but you are only interested in the most recent one:</p>
+<pre><code>$ docker ps -f name=my-hostname-service -ql
+edb30579c208</code></pre>
+<p>ID, string characters and Name:</p>
+<pre><code>$ docker ps  -f name=my-hostname-service --format &#39;{{.ID}} -&gt; {{.Names}}&#39;
+edb30579c208 -&gt; my-hostname-service-1234</code></pre>
+<p>Chaining them to exec into the container:</p>
+<pre><code>$ docker exec -it $(docker ps -f name=my-hostname-service -ql) sh</code></pre>
+<p>More examples:</p>
+<ul>
+<li>https://docs.docker.com/engine/reference/commandline/ps/</li>
+</ul>
+<h2 id="permissions">Permissions</h2>
+<h3 id="copy-as-user">Copy as User</h3>
+<pre><code>FROM python:2.7
+RUN pip install Flask==0.11.1
+RUN useradd -ms /bin/bash admin
+COPY --chown=admin:admin app /app
+WORKDIR /app
+USER admin
+CMD [&quot;python&quot;, &quot;app.py&quot;]</code></pre>
+<h2 id="template-variables">Template Variables</h2>
+<p>For Docker:</p>
+<pre><code>$ docker run -it --log-driver json-file --log-opt tag=&quot;{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}|{{.ID}}&quot; alpine echo hi
+hi</code></pre>
+<p>Get the logfile:</p>
+<pre><code>$ docker inspect $(docker ps -l) | jq &#39;.[].LogPath&#39;
+/var/lib/docker/containers/b8e6523c8741d33f778a4f899dc04dab912472cedfba5ab71119a8c9ab1555a8/b8e6523c8741d33f778a4f899dc04dab912472cedfba5ab71119a8c9ab1555a8-json.log</code></pre>
+<p>View the content:</p>
+<pre><code>$ cat /var/lib/docker/containers/b8e6523c8741d33f778a4f899dc04dab912472cedfba5ab71119a8c9ab1555a8/b8e6523c8741d33f778a4f899dc04dab912472cedfba5ab71119a8c9ab1555a8-json.log
+{&quot;log&quot;:&quot;hi\r\n&quot;,&quot;stream&quot;:&quot;stdout&quot;,&quot;attrs&quot;:{&quot;tag&quot;:&quot;alpine|festive_bell|sha256:e7d92cdc71feacf90708cb59182d0df1b911f8ae022d29e8e95d75ca6a99776a|b8e6523c8741d33f778a4f899dc04dab912472cedfba5ab71119a8c9ab1555a8|b8e6523c8741&quot;},&quot;time&quot;:&quot;2020-07-07T12:35:12.3938298Z&quot;}</code></pre>
+<ul>
+<li>https://docs.docker.com/config/formatting/</li>
+</ul>
+<p>For Swarm:</p>
+<ul>
+<li>https://forums.docker.com/t/example-usage-of-docker-swarm-template-placeholders/73859</li>
+</ul>
+<p>Get a container to report the host’s hostname:</p>
+<pre><code>version: &#39;3.7&#39;
+services:
+  telegraf:
+    ..
+    hostname: &quot;{{.Node.Hostname}}&quot;</code></pre>
+<h2 id="update">Update</h2>
+<h3 id="service-update">Service Update</h3>
+<p>Add a constraint to move to a worker node:</p>
+<pre><code>$ docker service update --constraint-add &#39;node.role==worker&#39; my-service-name</code></pre>
+</body>
+</html>

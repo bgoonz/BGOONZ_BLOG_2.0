@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>super</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="super">super</h1>
+<p>The <strong>super</strong> keyword is used to access and call functions on an object’s parent.</p>
+<p>The <code>super.prop</code> and <code>super[expr]</code> expressions are valid in any <a href="../functions/method_definitions">method definition</a> in both <a href="../classes">classes</a> and <a href="object_initializer">object literals</a>.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>super([arguments]); // calls the parent constructor.
+super.functionOnParent([arguments]);</code></pre>
+<h2 id="description">Description</h2>
+<p>When used in a constructor, the <code>super</code> keyword appears alone and must be used before the <code>this</code> keyword is used. The <code>super</code> keyword can also be used to call functions on a parent object.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-super-in-classes">Using <code>super</code> in classes</h3>
+<p>This code snippet is taken from the <a href="https://github.com/GoogleChrome/samples/blob/gh-pages/classes-es6/index.html">classes sample</a> (<a href="https://googlechrome.github.io/samples/classes-es6/index.html">live demo</a>). Here <code>super()</code> is called to avoid duplicating the constructor parts’ that are common between <code>Rectangle</code> and <code>Square</code>.</p>
+<pre><code>class Rectangle {
+  constructor(height, width) {
+    this.name = &#39;Rectangle&#39;;
+    this.height = height;
+    this.width = width;
+  }
+  sayName() {
+    console.log(&#39;Hi, I am a &#39;, this.name + &#39;.&#39;);
+  }
+  get area() {
+    return this.height * this.width;
+  }
+  set area(value) {
+    this._area = value;
+  }
+}
+
+class Square extends Rectangle {
+  constructor(length) {
+    this.height; // ReferenceError, super needs to be called first!
+
+    // Here, it calls the parent class&#39;s constructor with lengths
+    // provided for the Rectangle&#39;s width and height
+    super(length, length);
+
+    // Note: In derived classes, super() must be called before you
+    // can use &#39;this&#39;. Leaving this out will cause a reference error.
+    this.name = &#39;Square&#39;;
+  }
+}</code></pre>
+<h3 id="super-calling-static-methods">Super-calling static methods</h3>
+<p>You are also able to call super on <a href="../classes/static">static</a> methods.</p>
+<pre><code>class Rectangle {
+  static logNbSides() {
+    return &#39;I have 4 sides&#39;;
+  }
+}
+
+class Square extends Rectangle {
+  static logDescription() {
+    return super.logNbSides() + &#39; which are all equal&#39;;
+  }
+}
+Square.logDescription(); // &#39;I have 4 sides which are all equal&#39;</code></pre>
+<h3 id="deleting-super-properties-will-throw-an-error">Deleting super properties will throw an error</h3>
+<p>You cannot use the <a href="delete">delete operator</a> and <code>super.prop</code> or <code>super[expr]</code> to delete a parent class’ property, it will throw a <a href="../global_objects/referenceerror"><code>ReferenceError</code></a>.</p>
+<pre><code>class Base {
+  foo() {}
+}
+class Derived extends Base {
+  delete() {
+    delete super.foo; // this is bad
+  }
+}
+
+new Derived().delete(); // ReferenceError: invalid delete involving &#39;super&#39;.</code></pre>
+<h3 id="super.prop-cannot-overwrite-non-writable-properties"><code>super.prop</code> cannot overwrite non-writable properties</h3>
+<p>When defining non-writable properties with e.g. <a href="../global_objects/object/defineproperty"><code>Object.defineProperty</code></a>, <code>super</code> cannot overwrite the value of the property.</p>
+<pre><code>class X {
+  constructor() {
+    Object.defineProperty(this, &#39;prop&#39;, {
+      configurable: true,
+      writable: false,
+      value: 1
+    });
+  }
+}
+
+class Y extends X {
+  constructor() {
+    super();
+  }
+  foo() {
+    super.prop = 2;   // Cannot overwrite the value.
+  }
+}
+
+var y = new Y();
+y.foo(); // TypeError: &quot;prop&quot; is read-only
+console.log(y.prop); // 1</code></pre>
+<h3 id="using-super.prop-in-object-literals">Using <code>super.prop</code> in object literals</h3>
+<p>Super can also be used in the <a href="object_initializer">object initializer / literal</a> notation. In this example, two objects define a method. In the second object, <code>super</code> calls the first object’s method. This works with the help of <a href="../global_objects/object/setprototypeof"><code>Object.setPrototypeOf()</code></a> with which we are able to set the prototype of <code>obj2</code> to <code>obj1</code>, so that <code>super</code> is able to find <code>method1</code> on <code>obj1</code>.</p>
+<pre><code>var obj1 = {
+  method1() {
+    console.log(&#39;method 1&#39;);
+  }
+}
+
+var obj2 = {
+  method2() {
+    super.method1();
+  }
+}
+
+Object.setPrototypeOf(obj2, obj1);
+obj2.method2(); // logs &quot;method 1&quot;</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-super-keyword">ECMAScript (ECMA-262) <br/></p>
+<span class="small">The definition of ‘super’ in that specification.</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>super</code></p>
+<p>42</p>
+<p>13</p>
+<p>45</p>
+<p>No</p>
+<p>29</p>
+<p>7</p>
+<p>42</p>
+<p>42</p>
+<p>45</p>
+<p>29</p>
+<p>7</p>
+<p>4.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../classes">Classes</a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super</a></p>
+</body>
+</html>

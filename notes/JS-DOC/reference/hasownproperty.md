@@ -1,8 +1,10 @@
-# Object.prototype.hasOwnProperty()
+Object.prototype.hasOwnProperty()
+=================================
 
 The `hasOwnProperty()` method returns a boolean indicating whether the object has the specified property as its own property (as opposed to inheriting it).
 
-## Syntax
+Syntax
+------
 
     hasOwnProperty(prop)
 
@@ -15,11 +17,13 @@ The [`String`](../string) name or [Symbol](https://developer.mozilla.org/en-US/d
 
 A [`Boolean`](../boolean) indicating whether or not the object has the specified property as own property.
 
-## Description
+Description
+-----------
 
-All descendants of [`Object`](../object) inherit the `hasOwnProperty` method. This method can be used to determine whether an object has the specified property as a direct property of that object; unlike the [`in`](../../operators/in) operator, this method does not check for a property in the object's prototype chain. If an [`Object`](../object) is an [`Array`](../array), `hasOwnProperty` method can check whether an index exists.
+All descendants of [`Object`](../object) inherit the `hasOwnProperty` method. This method can be used to determine whether an object has the specified property as a direct property of that object; unlike the [`in`](../../operators/in) operator, this method does not check for a property in the object’s prototype chain. If an [`Object`](../object) is an [`Array`](../array), `hasOwnProperty` method can check whether an index exists.
 
-## Note
+Note
+----
 
 `hasOwnProperty` returns true even if the value of the property is `null` or `undefined`.
 
@@ -29,9 +33,10 @@ All descendants of [`Object`](../object) inherit the `hasOwnProperty` method. Th
     o.propTwo = undefined;
     o.hasOwnProperty('propTwo');   // returns true
 
-## Examples
+Examples
+--------
 
-### Using hasOwnProperty to test for a property's existence
+### Using hasOwnProperty to test for a property’s existence
 
 The following example determines whether the `o` object contains a property named `prop`:
 
@@ -40,7 +45,7 @@ The following example determines whether the `o` object contains a property name
     o.prop = 'exists';
     o.hasOwnProperty('prop');   // returns true
 
-### Direct vs. inherited properties
+### Direct vs. inherited properties
 
 The following example differentiates between direct properties and properties inherited through the prototype chain:
 
@@ -70,7 +75,7 @@ The following example shows how to iterate over the properties of an object with
 
 ### Using hasOwnProperty as a property name
 
-JavaScript does not protect the property name `hasOwnProperty`; thus, if the possibility exists that an object might have a property with this name, it is necessary to use an _external_ `hasOwnProperty` to get correct results:
+JavaScript does not protect the property name `hasOwnProperty`; thus, if the possibility exists that an object might have a property with this name, it is necessary to use an *external* `hasOwnProperty` to get correct results:
 
     var foo = {
       hasOwnProperty: function() {
@@ -91,12 +96,11 @@ JavaScript does not protect the property name `hasOwnProperty`; thus, if the pos
 
 Note that in the last case there are no newly created objects.
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.prototype.hasownproperty">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-object.prototype.hasownproperty</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-object.prototype.hasownproperty</span></td></tr></tbody></table>
 
 `hasOwnProperty`
 
@@ -124,7 +128,8 @@ Note that in the last case there are no newly created objects.
 
 1.0
 
-## See also
+See also
+--------
 
 -   [Enumerability and ownership of properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
 -   [`Object.getOwnPropertyNames()`](getownpropertynames)
@@ -132,6 +137,5 @@ Note that in the last case there are no newly created objects.
 -   [`in`](../../operators/in)
 -   [JavaScript Guide: Inheritance revisited](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty</a>

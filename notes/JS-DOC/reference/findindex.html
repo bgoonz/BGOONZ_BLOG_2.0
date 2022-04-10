@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>findindex</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="typedarray.prototype.findindex">TypedArray.prototype.findIndex()</h1>
+<p>The <code>findIndex()</code> method returns an <strong>index</strong> in the typed array, if an element in the typed array satisfies the provided testing function. Otherwise -1 is returned.</p>
+<p>See also the <a href="find"><code>find()</code></a> method, which returns the <strong>value</strong> of a found element in the typed array instead of its index.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>// Arrow function
+findIndex((element) =&gt; { ... } )
+findIndex((element, index) =&gt; { ... } )
+findIndex((element, index, array) =&gt; { ... } )
+
+// Callback function
+findIndex(callbackFn)
+findIndex(callbackFn, thisArg)
+
+// Inline callback function
+findIndex(function callbackFn(element) { ... })
+findIndex(function callbackFn(element, index) { ... })
+findIndex(function callbackFn(element, index, array){ ... })
+findIndex(function callbackFn(element, index, array) { ... }, thisArg)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>callbackFn</code><br />
+Function to execute on each value in the typed array, taking three arguments:</p>
+<p><code>element</code><br />
+The current element being processed in the typed array.</p>
+<p><code>index</code><br />
+The index of the current element being processed in the typed array.</p>
+<p><code>array</code><br />
+The typed array <code>findIndex()</code> was called upon.</p>
+<p><code>thisArg</code> <span class="badge inline optional">Optional</span><br />
+Object to use as <code>this</code> when executing <code>callbackFn</code>.</p>
+<h3 id="return-value">Return value</h3>
+<p>An index in the array if an element passes the test; otherwise, <code>-1</code>.</p>
+<h2 id="description">Description</h2>
+<p>The <code>findIndex()</code> method executes the <code>callbackFn</code> function once for each element present in the typed array until it finds one where <code>callbackFn</code> returns a true value. If such an element is found, <code>findIndex()</code> immediately returns the index of that element. Otherwise, <code>findIndex()</code> returns -1. <code>callbackFn</code> is invoked only for indexes of the typed array which have assigned values; it is not invoked for indexes which have been deleted or which have never been assigned values.</p>
+<p><code>callbackFn</code> is invoked with three arguments: the value of the element, the index of the element, and the typed array object being traversed.</p>
+<p>If a <code>thisArg</code> parameter is provided to <code>findIndex()</code>, it will be used as the <code>this</code> for each invocation of the <code>callback</code>. If it is not provided, then <a href="../undefined"><code>undefined</code></a> is used.</p>
+<p><code>findIndex()</code> does not mutate the typed array on which it is called.</p>
+<p>The range of elements processed by <code>findIndex()</code> is set before the first invocation of <code>callbackFn</code>. Elements that are appended to the typed array after the call to <code>findIndex()</code> begins will not be visited by <code>callbackFn</code>. If an existing, unvisited element of the typed array is changed by <code>callbackFn</code>, its value passed to the visiting <code>callbackFn</code> will be the value at the time that <code>findIndex()</code> visits that element’s index; elements that are deleted are not visited.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="find-the-index-of-a-prime-number-in-a-typed-array">Find the index of a prime number in a typed array</h3>
+<p>The following example finds the index of an element in the typed array that is a prime number (or returns <code>-1</code> if there is no prime number).</p>
+<pre><code>function isPrime(element, index, array) {
+  var start = 2;
+  while (start &lt;= Math.sqrt(element)) {
+    if (element % start++ &lt; 1) {
+      return false;
+    }
+  }
+  return element &gt; 1;
+}
+
+var uint8 = new Uint8Array([4, 6, 8, 12]);
+var uint16 = new Uint16Array([4, 6, 7, 12]);
+
+console.log(uint8.findIndex(isPrime)); // -1, not found
+console.log(uint16.findIndex(isPrime)); // 2</code></pre>
+<h2 id="polyfill">Polyfill</h2>
+<pre><code>TypedArray.prototype.findIndex = Array.prototype.findIndex = Array.prototype.findIndex || function(evaluator, thisArg) {
+        &#39;use strict&#39;;
+        if (!this) {
+          throw new TypeError(&#39;Array.prototype.some called on null or undefined&#39;);
+        }
+
+        if (typeof(evaluator) !== &#39;function&#39;) {
+            if (typeof(evaluator) === &#39;string&#39;) {
+                // Attempt to convert it to a function
+                if ( ! (evaluator = eval(evaluator)) ){
+                    throw new TypeError();
+                }
+            } else {
+                throw new TypeError();
+            }
+        }
+
+        var i;
+        if (thisArg === undefined) {  // Optimize for thisArg
+            for (i in this) {
+                if (evaluator(this[i], i, this)) {
+                    return i;
+                }
+            }
+            return -1;
+        }
+        for (i in this) {
+            if (evaluator.call(thisArg, this[i], i, this)) {
+                return i;
+            }
+        }
+        return -1;
+};</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="#">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-%typedarray%.prototype.findindex</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>findIndex</code></p>
+<p>45</p>
+<p>14</p>
+<p>37</p>
+<p>No</p>
+<p>32</p>
+<p>9.1</p>
+<p>45</p>
+<p>45</p>
+<p>37</p>
+<p>32</p>
+<p>9.3</p>
+<p>5.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="find"><code>TypedArray.prototype.find()</code></a></li>
+<li><a href="indexof"><code>TypedArray.prototype.indexOf()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/findIndex" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/findIndex</a></p>
+</body>
+</html>

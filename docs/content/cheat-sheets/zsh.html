@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>zsh</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="a-plain-old-glob">A plain old glob</h1>
+<p>print -l <em>.txt print -l **/</em>.txt</p>
+<h1 id="show-text-files-that-end-in-a-number-from-1-to-10">Show text files that end in a number from 1 to 10</h1>
+<p>print -l *<em>/</em>&lt;1-10&gt;.txt</p>
+<h1 id="show-text-files-that-start-with-the-letter-a">Show text files that start with the letter a</h1>
+<p>print -l *<em>/[a]</em>.txt</p>
+<h1 id="show-text-files-that-start-with-either-ab-or-bc">Show text files that start with either ab or bc</h1>
+<p>print -l *<em>/(ab|bc)</em>.txt</p>
+<h1 id="show-text-files-that-dont-start-with-a-lower-or-uppercase-c">Show text files that don’t start with a lower or uppercase c</h1>
+<p>print -l *<em>/[^cc]</em>.txt</p>
+<h1 id="show-only-directories">Show only directories</h1>
+<p>print -l *<em>/</em>(/)</p>
+<h1 id="show-only-regular-files">Show only regular files</h1>
+<p>print -l *<em>/</em>(.)</p>
+<h1 id="show-empty-files">Show empty files</h1>
+<p>print -l *<em>/</em>(L0)</p>
+<h1 id="show-files-greater-than-3-kb">Show files greater than 3 KB</h1>
+<p>print -l *<em>/</em>(Lk+3)</p>
+<h1 id="show-files-modified-in-the-last-hour">Show files modified in the last hour</h1>
+<p>print -l *<em>/</em>(mh-1)</p>
+<h1 id="sort-files-from-most-to-least-recently-modified-and-show-the-last-3">Sort files from most to least recently modified and show the last 3</h1>
+<p>print -l *<em>/</em>(om[1,3])</p>
+<h1 id="show-files-lm-2-smaller-than-2mb-mh-1-modified-in-last-hour"><code>.</code> show files, <code>Lm-2</code> smaller than 2MB, <code>mh-1</code> modified in last hour,</h1>
+<h1 id="om-sort-by-modification-date-13-only-first-3-files"><code>om</code> sort by modification date, <code>[1,3]</code> only first 3 files</h1>
+<p>print -l *<em>/</em>(.Lm-2mh-1om[1,3])</p>
+<h1 id="show-every-directory-that-contain-directory-.git">Show every directory that contain directory <code>.git</code></h1>
+<p>print -l *<em>/</em>(e:‘[[-d $REPLY/.git]]’:)</p>
+<h1 id="return-the-file-name-t-stands-for-tail">Return the file name (t stands for tail)</h1>
+<p>print -l *.txt(:t)</p>
+<h1 id="return-the-file-name-without-the-extension-r-stands-for-remove_extension">Return the file name without the extension (r stands for remove_extension)</h1>
+<p>print -l *.txt(:t:r)</p>
+<h1 id="return-the-extension">Return the extension</h1>
+<p>print -l *.txt(:e)</p>
+<h1 id="return-the-parent-folder-of-the-file-h-stands-for-head">Return the parent folder of the file (h stands for head)</h1>
+<p>print -l *.txt(:h)</p>
+<h1 id="return-the-parent-folder-of-the-parent">Return the parent folder of the parent</h1>
+<p>print -l *.txt(:h:h)</p>
+<h1 id="return-the-parent-folder-of-the-first-file">Return the parent folder of the first file</h1>
+<p>print -l *.txt([1]:h)</p>
+<h1 id="parameter-expansion">Parameter expansion</h1>
+<p>files=(*.txt) # store a glob in a variable print -l $files print -l $files(:h) # this is the syntax we saw before print -l ${files:h} print -l ${files(:h)} # don’t mix the two, or you’ll get an error print -l ${files:u} # the :u modifier makes the text uppercase</p>
+<h1 id="s-modifier">:s modifier</h1>
+<p>variable=“path/aaabcd” echo ${variable:s/bc/BC/} # path/aaaBCd echo ${variable:s<em>bc_BC</em>} # path/aaaBCd echo ${variable:s///./} # path.aaabcd (escaping the slash /) echo ${variable:s<em>/</em>._} # path.aaabcd (slightly more readable) echo ${variable:s/a/A/} # pAth/aaabcd (only first A is replaced) echo ${variable:gs/a/A/} # pAth/AAAbcd (all A is replaced)</p>
+<h1 id="split-the-file-name-at-each-underscore">Split the file name at each underscore</h1>
+<p>echo ${(s._.)file}</p>
+<h1 id="join-expansion-flag-opposite-of-the-split-flag.">Join expansion flag, opposite of the split flag.</h1>
+<p>array=(a b c d) echo ${(j.-.)array} # a-b-c-d</p>
+<h1 id="short-if">Short if</h1>
+<p>if [[…]] command if [[…]] { command … }</p>
+<h1 id="short-for">Short for</h1>
+<p>for i ( word … ) command for i ( word … ) { command … } for i in word … ; command</p>
+<h1 id="short-whileuntil">Short while/until</h1>
+<p>while [[…]] { command … } until [[…]] { command … }</p>
+<h1 id="use-output-of-command-when-using-pipe-is-not-possible">Use output of command, when using pipe is not possible</h1>
+<p>&lt;( command )</p>
+<h1 id="similar-to-but-creates-temporary-file-instead-of-fd-or-fifo-when">Similar to &lt;( ), but creates temporary file (instead of FD or FIFO), when</h1>
+<h1 id="program-needs-to-seek-in-output.">program needs to seek in output.</h1>
+<p>=( command )</p>
+</body>
+</html>

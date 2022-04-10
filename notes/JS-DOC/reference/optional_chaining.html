@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>optional_chaining</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="optional-chaining-.">Optional chaining (?.)</h1>
+<p>The <strong>optional chaining</strong> operator (<code>?.</code>) enables you to read the value of a property located deep within a chain of connected objects without having to check that each reference in the chain is valid.</p>
+<p>The <code>?.</code> operator is like the <code>.</code> chaining operator, except that instead of causing an error if a reference is <a href="https://developer.mozilla.org/en-US/docs/Glossary/Nullish">nullish</a> (<a href="../global_objects/null"><code>null</code></a> or <a href="../global_objects/undefined"><code>undefined</code></a>), the expression short-circuits with a return value of <code>undefined</code>. When used with function calls, it returns <code>undefined</code> if the given function does not exist.</p>
+<p>This results in shorter and simpler expressions when accessing chained properties when the possibility exists that a reference may be missing. It can also be helpful while exploring the content of an object when there’s no known guarantee as to which properties are required.</p>
+<p>Optional chaining cannot be used on a non-declared root object, but can be used with an undefined root object.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>obj.val?.prop
+obj.val?.[expr]
+obj.arr?.[index]
+obj.func?.(args)</code></pre>
+<h2 id="description">Description</h2>
+<p>The optional chaining operator provides a way to simplify accessing values through connected objects when it’s possible that a reference or function may be <code>undefined</code> or <code>null</code>.</p>
+<p>For example, consider an object <code>obj</code> which has a nested structure. Without optional chaining, looking up a deeply-nested subproperty requires validating the references in between, such as:</p>
+<pre><code>let nestedProp = obj.first &amp;&amp; obj.first.second;</code></pre>
+<p>The value of <code>obj.first</code> is confirmed to be non-<code>null</code> (and non-<code>undefined</code>) before then accessing the value of <code>obj.first.second</code>. This prevents the error that would occur if you accessed <code>obj.first.second</code> directly without testing <code>obj.first</code>.</p>
+<p>With the optional chaining operator (<code>?.</code>), however, you don’t have to explicitly test and short-circuit based on the state of <code>obj.first</code> before trying to access <code>obj.first.second</code>:</p>
+<pre><code>let nestedProp = obj.first?.second;</code></pre>
+<p>By using the <code>?.</code> operator instead of just <code>.</code>, JavaScript knows to implicitly check to be sure <code>obj.first</code> is not <code>null</code> or <code>undefined</code> before attempting to access <code>obj.first.second</code>. If <code>obj.first</code> is <code>null</code> or <code>undefined</code>, the expression automatically short-circuits, returning <code>undefined</code>.</p>
+<p>This is equivalent to the following, except that the temporary variable is in fact not created:</p>
+<pre><code>let temp = obj.first;
+let nestedProp = ((temp === null || temp === undefined) ? undefined : temp.second);</code></pre>
+<h3 id="optional-chaining-with-function-calls">Optional chaining with function calls</h3>
+<p>You can use optional chaining when attempting to call a method which may not exist. This can be helpful, for example, when using an API in which a method might be unavailable, either due to the age of the implementation or because of a feature which isn’t available on the user’s device.</p>
+<p>Using optional chaining with function calls causes the expression to automatically return <code>undefined</code> instead of throwing an exception if the method isn’t found:</p>
+<pre><code>let result = someInterface.customMethod?.();</code></pre>
+<p><strong>Note:</strong> If there is a property with such a name and which is not a function, using <code>?.</code> will still raise a <a href="../global_objects/typeerror"><code>TypeError</code></a> exception (<code>someInterface.customMethod is not a function</code>).</p>
+<p><strong>Note:</strong> If <code>someInterface</code> itself is <code>null</code> or <code>undefined</code>, a <a href="../global_objects/typeerror"><code>TypeError</code></a> exception will still be raised (<code>someInterface is null</code>). If you expect that <code>someInterface</code> itself may be <code>null</code> or <code>undefined</code>, you have to use <code>?.</code> at this position as well: <code>someInterface?.customMethod?.()</code></p>
+<h4 id="dealing-with-optional-callbacks-or-event-handlers">Dealing with optional callbacks or event handlers</h4>
+<p>If you use callbacks or fetch methods from an object with <a href="destructuring_assignment#object_destructuring">a destructuring assignment</a>, you may have non-existent values that you cannot call as functions unless you have tested their existence. Using <code>?.</code>, you can avoid this extra test:</p>
+<pre><code>// Written as of ES2019
+function doSomething(onContent, onError) {
+  try {
+    // ... do something with the data
+  }
+  catch (err) {
+    if (onError) { // Testing if onError really exists
+      onError(err.message);
+    }
+  }
+}
+
+// Using optional chaining with function calls
+function doSomething(onContent, onError) {
+  try {
+   // ... do something with the data
+  }
+  catch (err) {
+    onError?.(err.message); // no exception if onError is undefined
+  }
+}</code></pre>
+<h3 id="optional-chaining-with-expressions">Optional chaining with expressions</h3>
+<p>You can also use the optional chaining operator when accessing properties with an expression using <a href="property_accessors#bracket_notation">the bracket notation of the property accessor</a>:</p>
+<pre><code>let nestedProp = obj?.[&#39;prop&#39; + &#39;Name&#39;];</code></pre>
+<h3 id="optional-chaining-not-valid-on-the-left-hand-side-of-an-assignment">Optional chaining not valid on the left-hand side of an assignment</h3>
+<pre><code>let object = {};
+object?.property = 1; // Uncaught SyntaxError: Invalid left-hand side in assignment</code></pre>
+<h3 id="array-item-access-with-optional-chaining">Array item access with optional chaining</h3>
+<pre><code>let arrayItem = arr?.[42];</code></pre>
+<h2 id="examples">Examples</h2>
+<h3 id="basic-example">Basic example</h3>
+<p>This example looks for the value of the <code>name</code> property for the member <code>bar</code> in a map when there is no such member. The result is therefore <code>undefined</code>.</p>
+<pre><code>let myMap = new Map();
+myMap.set(&quot;foo&quot;, {name: &quot;baz&quot;, desc: &quot;inga&quot;});
+
+let nameBar = myMap.get(&quot;bar&quot;)?.name;</code></pre>
+<h3 id="short-circuiting-evaluation">Short-circuiting evaluation</h3>
+<p>When using optional chaining with expressions, if the left operand is <code>null</code> or <code>undefined</code>, the expression will not be evaluated. For instance:</p>
+<pre><code>let potentiallyNullObj = null;
+let x = 0;
+let prop = potentiallyNullObj?.[x++];
+
+console.log(x); // 0 as x was not incremented</code></pre>
+<h3 id="stacking-the-optional-chaining-operator">Stacking the optional chaining operator</h3>
+<p>With nested structures, it is possible to use optional chaining multiple times:</p>
+<pre><code>let customer = {
+  name: &quot;Carl&quot;,
+  details: {
+    age: 82,
+    location: &quot;Paradise Falls&quot; // detailed address is unknown
+  }
+};
+let customerCity = customer.details?.address?.city;
+
+// … this also works with optional chaining function call
+let customerName = customer.name?.getName?.(); // method does not exist, customerName is undefined</code></pre>
+<h3 id="combining-with-the-nullish-coalescing-operator">Combining with the nullish coalescing operator</h3>
+<p>The <a href="nullish_coalescing_operator">nullish coalescing operator</a> may be used after optional chaining in order to build a default value when none was found:</p>
+<pre><code>let customer = {
+  name: &quot;Carl&quot;,
+  details: { age: 82 }
+};
+const customerCity = customer?.city ?? &quot;Unknown city&quot;;
+console.log(customerCity); // Unknown city</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#prod-OptionalExpression">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#prod-OptionalExpression</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>Optional_chaining</code></p>
+<p>80</p>
+<p>79</p>
+<p>80</p>
+<p>79</p>
+<p>74</p>
+<p>No</p>
+<p>67</p>
+<p>66</p>
+<p>13.1</p>
+<p>80</p>
+<p>80</p>
+<p>79</p>
+<p>79</p>
+<p>57</p>
+<p>13.4</p>
+<p>13.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li>The <a href="nullish_coalescing_operator">Nullish Coalescing Operator</a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining</a></p>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>missing_parenthesis_after_condition</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="syntaxerror-missing-after-condition">SyntaxError: missing ) after condition</h1>
+<p>The JavaScript exception “missing ) after condition” occurs when there is an error with how an <code>if</code> condition is written. It must appear in parenthesis after the <code>if</code> keyword.</p>
+<h2 id="message">Message</h2>
+<pre><code>SyntaxError: Expected &#39;)&#39; (Edge)
+SyntaxError: missing ) after condition (Firefox)</code></pre>
+<h2 id="error-type">Error type</h2>
+<p><a href="../global_objects/syntaxerror"><code>SyntaxError</code></a></p>
+<h2 id="what-went-wrong">What went wrong?</h2>
+<p>There is an error with how an <code>if</code> condition is written. In any programming language, code needs to make decisions and carry out actions accordingly depending on different inputs. The if statement executes a statement if a specified condition is truthy. In JavaScript, this condition must appear in parenthesis after the <code>if</code> keyword, like this:</p>
+<pre><code>if (condition) {
+  // do something if the condition is true
+}</code></pre>
+<h2 id="examples">Examples</h2>
+<h3 id="missing-parenthesis">Missing parenthesis</h3>
+<p>It might just be an oversight, carefully check all you parenthesis in your code.</p>
+<pre><code>if (3 &gt; Math.PI {
+  console.log(&quot;wait what?&quot;);
+}
+
+// SyntaxError: missing ) after condition</code></pre>
+<p>To fix this code, you would need to add a parenthesis that closes the condition.</p>
+<pre><code>if (3 &gt; Math.PI) {
+  console.log(&quot;wait what?&quot;);
+}</code></pre>
+<h3 id="misused-is-keyword">Misused <code>is</code> keyword</h3>
+<p>If you are coming from another programming language, it is also easy to add keywords that don’t mean the same or have no meaning at all in JavaScript.</p>
+<pre><code>if (done is true) {
+ console.log(&quot;we are done!&quot;);
+}
+
+// SyntaxError: missing ) after condition</code></pre>
+<p>Instead you need to use a correct <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators">comparison operator</a>. For example:</p>
+<pre><code>if (done === true) {
+ console.log(&quot;we are done!&quot;);
+}</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><code>if...else</code></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators">Comparison operators</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals">Making decisions in your code — conditionals</a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Missing_parenthesis_after_condition" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Missing_parenthesis_after_condition</a></p>
+</body>
+</html>

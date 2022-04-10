@@ -1,8 +1,10 @@
-# Array.prototype.pop()
+Array.prototype.pop()
+=====================
 
 The `pop()` method removes the **last** element from an array and returns that element. This method changes the length of the array.
 
-## Syntax
+Syntax
+------
 
     pop()
 
@@ -10,7 +12,8 @@ The `pop()` method removes the **last** element from an array and returns that e
 
 The removed element from the array; [`undefined`](../undefined) if the array is empty.
 
-## Description
+Description
+-----------
 
 The `pop` method removes the last element from an array and returns that value to the caller.
 
@@ -20,7 +23,8 @@ If you call `pop()` on an empty array, it returns [`undefined`](../undefined).
 
 [`Array.prototype.shift()`](shift) has similar behavior to `pop`, but applied to the first element in an array.
 
-## Examples
+Examples
+--------
 
 ### Removing the last element of an array
 
@@ -46,14 +50,14 @@ The following code creates the `myFish` array-like object containing four elemen
 
     console.log(popped); // 'sturgeon'
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.pop">ECMAScript (ECMA-262) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript (ECMA-262)<br />
+</p><span class="small">The definition of ‘Array.prototype.pop’ in that specification.</span></td></tr></tbody></table>
 
-<span class="small">The definition of 'Array.prototype.pop' in that specification.</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -109,7 +113,8 @@ Samsung Internet
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`Array.prototype.push()`](push)
 -   [`Array.prototype.shift()`](shift)

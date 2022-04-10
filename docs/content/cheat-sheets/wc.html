@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>wc</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="to-count-the-number-of-words-file-or-stdin">To count the number of words (file or STDIN):</h1>
+<p>wc -w <file> cat <file> | wc -w</p>
+<h1 id="to-count-the-number-of-lines-file-or-stdin">To count the number of lines (file or STDIN):</h1>
+<p>wc -l <file> cat <file> | wc -l</p>
+<h1 id="to-count-the-number-of-bytes-file-or-stdin">To count the number of bytes (file or STDIN):</h1>
+<p>wc -c <file> cat <file> | wc -c</p>
+<h1 id="to-count-files-and-directories-at-a-given-location">To count files and directories at a given location:</h1>
+<p>ls -l | wc -l</p>
+<h1 id="to-if-you-ever-use-wc-in-a-shell-script-and-need-to-compare-the-output-with-an-int-you-can">To if you ever use <code>wc</code> in a shell script and need to compare the output with an int you can</h1>
+<h1 id="clean-the-output-wc-returns-extra-characters-around-the-integer-by-using-xargs">clean the output (wc returns extra characters around the integer) by using xargs:</h1>
+<p>ls -l | wc -l | xargs</p>
+</body>
+</html>

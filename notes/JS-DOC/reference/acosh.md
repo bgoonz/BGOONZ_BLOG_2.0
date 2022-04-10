@@ -1,10 +1,12 @@
-# Math.acosh()
+Math.acosh()
+============
 
 The `Math.acosh()` function returns the hyperbolic arc-cosine of a number, that is
 
-∀*x* ≥ 1, `Math.acosh` ` (``x``) ` = arcosh (_x_) = the unique *y* ≥ 0 such that cosh (_y_) = *x*
+∀*x* ≥ 1, `Math.acosh` ``` (``x``) ``` = arcosh (*x*) = the unique *y* ≥ 0 such that cosh (*y*) = *x*
 
-## Syntax
+Syntax
+------
 
     Math.acosh(x)
 
@@ -17,11 +19,13 @@ A number.
 
 The hyperbolic arc-cosine of the given number. If the number is less than **1**, [`NaN`](../nan).
 
-## Description
+Description
+-----------
 
 Because `acosh()` is a static method of `Math`, you always use it as `Math.acosh()`, rather than as a method of a `Math` object you created (`Math` is no constructor).
 
-## Examples
+Examples
+--------
 
 ### Using Math.acosh()
 
@@ -33,20 +37,20 @@ Because `acosh()` is a static method of `Math`, you always use it as `Math.acosh
 
 For values less than 1 `Math.acosh()` returns [`NaN`](../nan).
 
-## Polyfill
+Polyfill
+--------
 
-For all *x* ≥ 1, we have $\\operatorname{arcosh}(x) = \\ln\\left( {x + \\sqrt{x^{2} - 1}} \\right)$ and so this can be emulated with the following function:
+For all *x* ≥ 1, we have <span class="math inline">$\\\\operatorname{arcosh}(x) = \\\\ln\\\\left( {x + \\\\sqrt{x^{2} - 1}} \\\\right)$</span> and so this can be emulated with the following function:
 
     Math.acosh = Math.acosh || function(x) {
       return Math.log(x + Math.sqrt(x * x - 1));
     };
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.acosh">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-math.acosh</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-math.acosh</span></td></tr></tbody></table>
 
 `acosh`
 
@@ -74,14 +78,14 @@ No
 
 3.0
 
-## See also
+See also
+--------
 
-- [`Math.asinh()`](asinh)
-- [`Math.atanh()`](atanh)
-- [`Math.cosh()`](cosh)
-- [`Math.sinh()`](sinh)
-- [`Math.tanh()`](tanh)
+-   [`Math.asinh()`](asinh)
+-   [`Math.atanh()`](atanh)
+-   [`Math.cosh()`](cosh)
+-   [`Math.sinh()`](sinh)
+-   [`Math.tanh()`](tanh)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/acosh" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/acosh</a>

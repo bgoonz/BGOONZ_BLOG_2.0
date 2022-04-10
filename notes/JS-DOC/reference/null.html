@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>null</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="null">null</h1>
+<p>The value <code>null</code> represents the intentional absence of any object value. It is one of JavaScript’s <a href="https://developer.mozilla.org/en-US/docs/Glossary/Primitive">primitive values</a> and is treated as <a href="https://developer.mozilla.org/en-US/docs/Glossary/Falsy">falsy</a> for boolean operations.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>null</code></pre>
+<h2 id="description">Description</h2>
+<p>The value <code>null</code> is written with a literal: <code>null</code>. <code>null</code> is not an identifier for a property of the global object, like <a href="undefined"><code>undefined</code></a> can be. Instead, <code>null</code> expresses a lack of identification, indicating that a variable points to no object. In APIs, <code>null</code> is often retrieved in a place where an object can be expected but no object is relevant.</p>
+<pre><code>// foo does not exist. It is not defined and has never been initialized:
+foo; //ReferenceError: foo is not defined
+
+// foo is known to exist now but it has no type or value:
+var foo = null;
+foo; //null</code></pre>
+<h2 id="examples">Examples</h2>
+<h3 id="difference-between-null-and-undefined">Difference between <code>null</code> and <code>undefined</code></h3>
+<p>When checking for <code>null</code> or <code>undefined</code>, beware of the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators">differences between equality (==) and identity (===) operators</a>, as the former performs type-conversion.</p>
+<pre><code>typeof null          // &quot;object&quot; (not &quot;null&quot; for legacy reasons)
+typeof undefined     // &quot;undefined&quot;
+null === undefined   // false
+null  == undefined   // true
+null === null        // true
+null == null         // true
+!null                // true
+isNaN(1 + null)      // false
+isNaN(1 + undefined) // true</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-null-value">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-null-value</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>null</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="undefined"><code>undefined</code></a></li>
+<li><a href="nan"><code>NaN</code></a></li>
+<li><a href="../operators/void"><code>void operator</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null</a></p>
+</body>
+</html>

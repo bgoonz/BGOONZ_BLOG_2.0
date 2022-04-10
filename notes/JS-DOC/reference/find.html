@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>find</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="array.prototype.find">Array.prototype.find()</h1>
+<p>The <code>find()</code> method returns the value of the first element in the provided array that satisfies the provided testing function. If no values satisfy the testing function, <a href="../undefined"><code>undefined</code></a> is returned.</p>
+<ul>
+<li>If you need the <strong>index</strong> of the found element in the array, use <a href="findindex"><code>findIndex()</code></a>.</li>
+<li>If you need to find the <strong>index of a value</strong>, use <a href="indexof"><code>Array.prototype.indexOf()</code></a>. (It’s similar to <a href="findindex"><code>findIndex()</code></a>, but checks each element for equality with the value instead of using a testing function.)</li>
+<li>If you need to find if a value <strong>exists</strong> in an array, use <a href="includes"><code>Array.prototype.includes()</code></a>. Again, it checks each element for equality with the value instead of using a testing function.</li>
+<li>If you need to find if any element satisfies the provided testing function, use <a href="some"><code>Array.prototype.some()</code></a>.</li>
+</ul>
+<h2 id="syntax">Syntax</h2>
+<pre><code>// Arrow function
+find((element) =&gt; { ... } )
+find((element, index) =&gt; { ... } )
+find((element, index, array) =&gt; { ... } )
+
+// Callback function
+find(callbackFn)
+find(callbackFn, thisArg)
+
+// Inline callback function
+find(function callbackFn(element) { ... })
+find(function callbackFn(element, index) { ... })
+find(function callbackFn(element, index, array){ ... })
+find(function callbackFn(element, index, array) { ... }, thisArg)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>callbackFn</code><br />
+Function to execute on each value in the array, taking 3 arguments:</p>
+<p><code>element</code><br />
+The current element in the array.</p>
+<p><code>index</code> <span class="badge inline optional">Optional</span><br />
+The index (position) of the current element in the array.</p>
+<p><code>array</code> <span class="badge inline optional">Optional</span><br />
+The array that <code>find</code> was called on.</p>
+<p><code>thisArg</code> <span class="badge inline optional">Optional</span><br />
+Object to use as <a href="../../operators/this"><code>this</code></a> inside <code>callbackFn</code>.</p>
+<h3 id="return-value">Return value</h3>
+<p>The <strong>value</strong> of the <strong>first element</strong> in the array that satisfies the provided testing function. Otherwise, <a href="../undefined"><code>undefined</code></a> is returned.</p>
+<h2 id="description">Description</h2>
+<p>The <code>find</code> method executes the <code>callbackFn</code> function once for each index of the array until the <code>callbackFn</code> returns a <a href="https://developer.mozilla.org/en-US/docs/Glossary/Truthy">truthy</a> value. If so, <code>find</code> immediately returns the value of that element. Otherwise, <code>find</code> returns <a href="../undefined"><code>undefined</code></a>.</p>
+<p><code>callbackFn</code> is invoked for <em>every</em> index of the array, not just those with assigned values. This means it may be less efficient for sparse arrays, compared to methods that only visit assigned values.</p>
+<p>If a <code>thisArg</code> parameter is provided to <code>find</code>, it will be used as the <code>this</code> value inside each invocation of the <code>callbackFn</code>. If it is not provided, then <a href="../undefined"><code>undefined</code></a> is used.</p>
+<p>The <code>find</code> method does not mutate the array on which it is called, but the function provided to <code>callbackFn</code> can. If so, the elements processed by <code>find</code> are set <em>before</em> the first invocation of <code>callbackFn</code>. Therefore:</p>
+<ul>
+<li><code>callbackFn</code> will not visit any elements added to the array after the call to <code>find</code> begins.</li>
+<li>If an existing, yet-unvisited element of the array is changed by <code>callbackFn</code>, its value passed to the <code>callbackFn</code> will be the value at the time <code>find</code> visits that element’s index.</li>
+<li>Elements that are <a href="../../operators/delete"><code>deleted</code></a> are still visited.</li>
+</ul>
+<h2 id="examples">Examples</h2>
+<h3 id="find-an-object-in-an-array-by-one-of-its-properties">Find an object in an array by one of its properties</h3>
+<pre><code>const inventory = [
+  {name: &#39;apples&#39;, quantity: 2},
+  {name: &#39;bananas&#39;, quantity: 0},
+  {name: &#39;cherries&#39;, quantity: 5}
+];
+
+function isCherries(fruit) {
+  return fruit.name === &#39;cherries&#39;;
+}
+
+console.log(inventory.find(isCherries));
+// { name: &#39;cherries&#39;, quantity: 5 }</code></pre>
+<h4 id="using-arrow-function-and-destructuring">Using arrow function and destructuring</h4>
+<pre><code>const inventory = [
+  {name: &#39;apples&#39;, quantity: 2},
+  {name: &#39;bananas&#39;, quantity: 0},
+  {name: &#39;cherries&#39;, quantity: 5}
+];
+
+const result = inventory.find( ({ name }) =&gt; name === &#39;cherries&#39; );
+
+console.log(result) // { name: &#39;cherries&#39;, quantity: 5 }</code></pre>
+<h3 id="find-a-prime-number-in-an-array">Find a prime number in an array</h3>
+<p>The following example finds an element in the array that is a prime number (or returns <a href="../undefined"><code>undefined</code></a> if there is no prime number):</p>
+<pre><code>function isPrime(element, index, array) {
+  let start = 2;
+  while (start &lt;= Math.sqrt(element)) {
+    if (element % start++ &lt; 1) {
+      return false;
+    }
+  }
+  return element &gt; 1;
+}
+
+console.log([4, 6, 8, 12].find(isPrime)); // undefined, not found
+console.log([4, 5, 8, 12].find(isPrime)); // 5</code></pre>
+<p>The following examples show that nonexistent and deleted elements <em>are</em> visited, and that the value passed to the callback is their value when visited:</p>
+<pre><code>// Declare array with no elements at indexes 2, 3, and 4
+const array = [0,1,,,,5,6];
+
+// Shows all indexes, not just those with assigned values
+array.find(function(value, index) {
+  console.log(&#39;Visited index &#39;, index, &#39; with value &#39;, value);
+});
+
+// Shows all indexes, including deleted
+array.find(function(value, index) {
+  // Delete element 5 on first iteration
+  if (index === 0) {
+    console.log(&#39;Deleting array[5] with value &#39;, array[5]);
+    delete array[5];
+  }
+  // Element 5 is still visited even though deleted
+  console.log(&#39;Visited index &#39;, index, &#39; with value &#39;, value);
+});
+// expected output:
+// Deleting array[5] with value 5
+// Visited index 0 with value 0
+// Visited index 1 with value 1
+// Visited index 2 with value undefined
+// Visited index 3 with value undefined
+// Visited index 4 with value undefined
+// Visited index 5 with value undefined
+// Visited index 6 with value 6</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-array.prototype.find">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-array.prototype.find</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>find</code></p>
+<p>45</p>
+<p>12</p>
+<p>25</p>
+<p>No</p>
+<p>32</p>
+<p>8</p>
+<p>45</p>
+<p>45</p>
+<p>4</p>
+<p>32</p>
+<p>8</p>
+<p>5.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="findindex"><code>Array.prototype.findIndex()</code></a> - find and return an index</li>
+<li><a href="includes"><code>Array.prototype.includes()</code></a> - test whether a value exists in the array</li>
+<li><a href="filter"><code>Array.prototype.filter()</code></a> - remove all non-matching elements</li>
+<li><a href="every"><code>Array.prototype.every()</code></a> - test all elements</li>
+<li><a href="some"><code>Array.prototype.some()</code></a> - test until one element matches</li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find</a></p>
+</body>
+</html>

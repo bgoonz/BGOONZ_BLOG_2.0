@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>React-State</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="react-state">React State</h1>
+<p>Demystified</p>
+<hr />
+<h3 id="react-state-1">React State</h3>
+<h4 id="demystified">Demystified</h4>
+<h3 id="heres-a-gist-containing-most-of-the-below-react-components">Here’s a gist containing most of the below react components:</h3>
+<p><a href="https://gist.github.com/bgoonz/216025f38eed1dd451df356e4085fa5a" class="markup--anchor markup--p-anchor">https://gist.github.com/bgoonz/216025f38eed1dd451df356e4085fa5a</a></p>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*IzkDVQXDDiVofRlH.gif" class="graf-image" />
+</figure>
+<h3 id="react-class-components">React Class Components</h3>
+<p><strong>Class Components</strong></p>
+<ul>
+<li><span id="3d48">You can write React components using ES2015 Classes:<br />
+<strong>Function Component</strong></span></li>
+</ul>
+<p><a href="https://gist.github.com/bgoonz/8223ee9f84bbc0fe7ad504efb3dc860d" class="markup--anchor markup--p-anchor">https://gist.github.com/bgoonz/8223ee9f84bbc0fe7ad504efb3dc860d</a></p>
+<p><strong>ES2015 Version</strong></p>
+<pre><code>// ./src/Message.js
+
+import React from &quot;react&quot;;
+
+class Message extends React.Component {
+  render() {
+    return &lt;div&gt;{this.props.text}&lt;/div&gt;;
+  }
+}
+
+export default Message;</code></pre>
+<ul>
+<li><span id="59c4">We can access props within a <code>class component</code> by using <code>this.props</code></span></li>
+<li><span id="5e06">Keep in mind Class Components are used just like function components.</span></li>
+</ul>
+<!-- -->
+<pre><code>// ./src/index.js
+
+import React from &quot;react&quot;;
+import ReactDOM from &quot;react-dom&quot;;
+import Message from &quot;./Message&quot;;
+
+ReactDOM.render(
+  &lt;React.StrictMode&gt;
+    &lt;Message text=&quot;Hello world!&quot; /&gt;
+  &lt;/React.StrictMode&gt;,
+  document.getElementById(&quot;root&quot;)
+);</code></pre>
+<p><strong>Setting and accessing props</strong></p>
+<pre><code>class Message extends React.Component {
+  constructor(props) {
+    super(props);
+
+    // TODO Initialize state, etc.
+  }
+
+  render() {
+    return &lt;div&gt;{this.props.text}&lt;/div&gt;;
+  }
+}</code></pre>
+<ul>
+<li><span id="7853">If we define a constructor method in our Class Component, we have to define the <code>super</code> method with <code>props</code> passed through it.</span></li>
+<li><span id="058c">Side Note: Before React used ES2015 Classes, it used <code>React.createclass</code> function, if you ever need to use this antiquated method make sure you install a module called <code>create-react-class</code></span></li>
+</ul>
+<p><strong>Stateful components</strong></p>
+<ul>
+<li><span id="1ecc">One of the major reasons why you would choose to use a <strong>Class Component</strong> over a Function Component is to add and manage local or internal state to your component.</span></li>
+<li><span id="c4cd">Second of the major reasons is to be able to use a Class Component’s lifecycle methods.</span></li>
+</ul>
+<p><strong>What is state?</strong></p>
+<ul>
+<li><span id="2b2a">Props are data that are provided by the consumer or caller of the component.</span></li>
+<li><span id="d150">Not meant to be changed by a component.</span></li>
+<li><span id="2316">State is data that is <code>internal</code> to the component.</span></li>
+<li><span id="cea0">Intended to be updated or mutated.</span></li>
+</ul>
+<p><strong>When to use state</strong></p>
+<ul>
+<li><span id="0936"><em>Only Use State when it is absolutely necessary</em></span></li>
+<li><span id="2052">If the data never changes, or if it’s needed through an entire application use props instead.</span></li>
+<li><span id="04ff">State is more often used when creating components that retrieve data from APIs or render forms.</span></li>
+<li><span id="5a9f"><strong>The general rule of thumb</strong>: If a component doesn’t need to use state or Lifecyle methods, it should be prioritized as a <code>function component</code>.</span></li>
+<li><span id="412f">Functional:Stateless || Class:Stateful</span></li>
+</ul>
+<p><strong>Initializing state</strong></p>
+<ul>
+<li><span id="5783">Use a class constructor method to initialize <code>this.state</code> object.</span></li>
+</ul>
+<h4 id="application-entry-point">Application Entry Point</h4>
+<pre><code>// ./src/index.js
+import React from &#39;react&#39;
+import ReactDOM from &#39;react-dom&#39;;
+import RandomQuote from &#39;./RandomQuote&#39;;
+
+ReactDOM.render(
+  &lt;React.StrictMode&gt;
+    &lt;RandomQuote /&gt;
+  &lt;/React.StrictMode&gt;
+  document.getElementById(&#39;root&#39;);
+)</code></pre>
+<h4 id="class-component-randomquote">Class Component: RandomQuote</h4>
+<pre><code>import React from &quot;react&quot;;
+
+class RandomQuote extends React.Component {
+  constructor() {
+    super();
+
+    const quotes = [
+      &quot;May the Force be with you.&quot;,
+      &quot;There&#39;s no place like home.&quot;,
+      &quot;I&#39;m the king of the world!&quot;,
+      &quot;My mama always said life was like a box of chocolates.&quot;,
+      &quot;I&#39;ll be back.&quot;,
+    ];
+
+    this.state = {
+      quotes,
+      currentQuoteIndex: this.getRandomInt(quotes.length);
+    }
+  }
+
+  getRandomInt(max) {
+    return Math.floor(Math.random() * Math.floor(max));
+  }
+
+  render() {
+    return (
+      &lt;div&gt;
+        &lt;h2&gt;Random Quote&lt;/h2&gt;
+        &lt;p&gt;{this.state.quotes[this.state.currentQuoteIndex]}&lt;/p&gt;
+      &lt;/div&gt;
+    )
+  }
+}
+
+export default RandomQuote;</code></pre>
+<p><strong>Updating State</strong></p>
+<ul>
+<li><span id="e560">Let’s say we want to update our state with a new quote.</span></li>
+<li><span id="ead5">We can set up event listeners in React similarly to how we did them before.</span></li>
+<li><span id="b7c7">&lt;button type=“button” onClick={this.changeQuote}&gt; Change Quote &lt;/button&gt;</span></li>
+<li><span id="270b"><code>onClick</code> is the event listener.</span></li>
+<li><span id="10c4"><code>{this.changeQuote}</code> is the event handler method.</span></li>
+<li><span id="99e8">Our Class Component File should now look like this with the new additions:</span></li>
+</ul>
+<!-- -->
+<pre><code>import React from &quot;react&quot;;
+
+class RandomQuote extends React.Component {
+  constructor() {
+    super();
+
+    const quotes = [
+      &quot;May the Force be with you.&quot;,
+      &quot;There&#39;s no place like home.&quot;,
+      &quot;I&#39;m the king of the world!&quot;,
+      &quot;My mama always said life was like a box of chocolates.&quot;,
+      &quot;I&#39;ll be back.&quot;,
+    ];
+
+    this.state = {
+      quotes,
+      currentQuoteIndex: this.getRandomInt(quotes.length);
+    }
+  }
+
+  changeQuote = () =&gt; {
+    const newIndex = this.getRandomInt(this.state.quotes.length);
+
+    // Setting the &#39;new state&#39; of currentQuoteIndex state property
+    // to newly generated random index #.
+    this.setState({
+      currentQuoteIndex: newIndex;
+    })
+  }
+
+  getRandomInt(max) {
+    return Math.floor(Math.random() * Math.floor(max));
+  }
+
+  render() {
+    return (
+      &lt;div&gt;
+        &lt;h2&gt;Random Quote&lt;/h2&gt;
+        &lt;p&gt;{this.state.quotes[this.state.currentQuoteIndex]}&lt;/p&gt;
+        &lt;button type=&quot;button&quot; onClick={this.changeQuote}&gt;
+          Change Quote
+        &lt;/button&gt;
+      &lt;/div&gt;
+    )
+  }
+}
+
+export default RandomQuote;</code></pre>
+<p><strong>Don’t modify state directly</strong></p>
+<ul>
+<li><span id="11e2">It is important to <code>never</code> modify your state directly!</span></li>
+<li><span id="d085">ALWAYS use <code>this.setState</code> method to update state.</span></li>
+<li><span id="38f9">This is because when you only use this.state to re-assign, no re-rendering will occur =&gt; leaving our component out of sync.</span></li>
+</ul>
+<p><strong>Properly updating state from the previous state</strong></p>
+<ul>
+<li><span id="839d">In our current example, the way we have <code>changeQuote</code> set up leaves us with occasionally producing the same index twice in a row.</span></li>
+<li><span id="6f45">One solution is to design a loop but keep in mind that state updates are handled asynchronously in React (your current value is not guaranteed to be the latest)</span></li>
+<li><span id="f71d">A safe method is to pass an anonymous method to <code>this.setState</code> (instead of an object literal)</span></li>
+</ul>
+<p><strong>Previous</strong></p>
+<pre><code>changeQuote = () =&gt; {
+    const newIndex = this.getRandomInt(this.state.quotes.length);
+
+    this.setState({
+      currentQuoteIndex: newIndex;
+    })
+  }</code></pre>
+<p><strong>Passing w/ Anon Method</strong></p>
+<pre><code>changeQuote = () =&gt; {
+  this.setState((state, props) =&gt; {
+    const { quotes, currentQuoteIndex } = state;
+
+    let newIndex = -1;
+
+    do {
+      newIndex = this.getRandomInt(quote.length);
+    } while (newIndex === currentQuoteIndex);
+
+    return {
+      currentQuoteIndex: newIndex,
+    };
+  });
+};</code></pre>
+<p><strong>Providing default values for props</strong></p>
+<ul>
+<li><span id="05dd">In our current example, we pass in a static array of predefined quotes in our constructor.</span></li>
+<li><span id="29a1">The way it is set up right now leaves our list of quotes unchanged after initialization.</span></li>
+<li><span id="733b">We can make quotes more dynamic by replacing our static array with a <code>props</code> argument passed into <code>super</code>.</span></li>
+<li><span id="8d26">constructor(props) { super(props); }</span></li>
+<li><span id="e22e">We can now move our quotes array to our application entry point and pass it in as a prop.</span></li>
+</ul>
+<h4 id="application-entry-point-1">Application Entry Point</h4>
+<pre><code>// ./src/index.js
+import React from &#39;react&#39;
+import ReactDOM from &#39;react-dom&#39;;
+import RandomQuote from &#39;./RandomQuote&#39;;
+
+// Re-assign our array here and pass it in as a prop in Render.
+const quotes = [
+      &quot;May the Force be with you.&quot;,
+      &quot;There&#39;s no place like home.&quot;,
+      &quot;I&#39;m the king of the world!&quot;,
+      &quot;My mama always said life was like a box of chocolates.&quot;,
+      &quot;I&#39;ll be back.&quot;,
+      &quot;This way I can define more quotes&quot;,
+    ];
+
+ReactDOM.render(
+  &lt;React.StrictMode&gt;
+    &lt;RandomQuote quotes={quotes}/&gt;
+  &lt;/React.StrictMode&gt;
+  document.getElementById(&#39;root&#39;);
+)</code></pre>
+<ul>
+<li><span id="c3f2">One thing to note about this workaround is that the caller of the component <em>must</em> set the quotes prop or the component will throw an error =&gt; so use <code>defaultProps</code>!</span></li>
+</ul>
+<!-- -->
+<pre><code>// At the bottom of RandomQuote.js...
+RandomQuote.defaultProps = {
+  quotes: [
+    &quot;May the Force be with you.&quot;,
+    &quot;There&#39;s no place like home.&quot;,
+    &quot;I&#39;m the king of the world!&quot;,
+    &quot;My mama always said life was like a box of chocolates.&quot;,
+    &quot;I&#39;ll be back.&quot;,
+    &quot;This way I can define more quotes&quot;,
+  ],
+};</code></pre>
+<ul>
+<li><span id="8909">A good safety net in case the consumer/caller doesn’t provide a value for the quotes array.</span></li>
+<li><span id="a254">We can even remove it from our index.js now and an error will not be thrown.</span></li>
+</ul>
+<h3 id="handling-events">Handling Events</h3>
+<ul>
+<li><span id="46a0">To add an event listener to an element, just define a method to handle the event and associate that method with the element event you are listening for.<br />
+<strong>Example</strong></span></li>
+</ul>
+<!-- -->
+<pre><code>import React from &quot;react&quot;;
+
+class AlertButton extends React.Component {
+  showAlert = () =&gt; {
+    window.alert(&quot;Button Clicked!&quot;);
+  };
+
+  render() {
+    return (
+      &lt;button type=&quot;button&quot; onClick={this.showAlert}&gt;
+        Submit
+      &lt;/button&gt;
+    );
+  }
+}</code></pre>
+<ul>
+<li><span id="c8ad">Note that when referring the handler method in onClick we’re not invoking showAlert simply just passing a reference.</span></li>
+</ul>
+<p><strong>Preventing default behavior</strong></p>
+<ul>
+<li><span id="0497">HTML Elements in the browser often have a lot of default behavior.</span></li>
+<li><span id="c546">I.E. Clicking on an <code>&lt;a&gt;</code> element navigates so a resource denoted by <code>&lt;href&gt;</code> property.</span></li>
+<li><span id="7f13">Here is an example of where using <code>e.preventDefault()</code> could come in handy.</span></li>
+</ul>
+<!-- -->
+<pre><code>import React from &quot;react&quot;;
+
+class NoDefaultSubmitForm extends React.Component {
+  submitForm = (e) =&gt; {
+    e.preventDefault();
+    window.alert(&quot;Handling form submission...&quot;);
+  };
+
+  render() {
+    return (
+    &lt;form onSubmit={this.submitForm}&gt;
+      &lt;button&gt;Submit&lt;/button&gt;
+    &lt;/form&gt;;
+    )}
+}</code></pre>
+<ul>
+<li><span id="6df2">The button contained within the form will end up refreshing the page before <code>this.submitForm</code> method can be completed.</span></li>
+<li><span id="e214">We can stick an <code>e.preventDefault()</code> into the actual method to get around this problem.</span></li>
+<li><span id="bafc"><code>e</code> : Parameter that references a <code>Synthetic Event</code> object type.</span></li>
+</ul>
+<p><strong>Using</strong> <code>this</code> <strong>in event handlers</strong></p>
+<pre><code>// ./src/AlertButton.js
+
+import React from &quot;react&quot;;
+
+class AlertButton extends React.Component {
+  showAlert = () =&gt; {
+    window.alert(&quot;Button clicked!&quot;);
+    console.log(this);
+  };
+
+  render() {
+    return (
+      &lt;button type=&quot;button&quot; onClick={this.showAlert}&gt;
+        Click Me
+      &lt;/button&gt;
+    );
+  }
+}
+
+export default AlertButton;</code></pre>
+<ul>
+<li><span id="159a">When we console log <code>this</code> we see the AlertButton object.</span></li>
+<li><span id="9158">If we were to write the showAlert method with a regular class method like:</span></li>
+</ul>
+<!-- -->
+<pre><code>showAlert() {
+  console.log(this);
+}</code></pre>
+<ul>
+<li><span id="13af">We would get <code>undefined</code> =&gt; remember that fat arrow binds to the current context!</span></li>
+</ul>
+<p><strong>Reviewing class methods and the</strong> <code>this</code> <strong>keyword</strong></p>
+<blockquote>
+<p>Binding:</p>
+</blockquote>
+<pre><code>class Girlfriend {
+  constructor() {
+    this.name = &quot;JavaScript&quot;;
+  }
+
+  displayName() {
+    console.log(this.name);
+  }
+}
+
+const Ming = new Girlfriend();
+Ming.displayName(); // =&gt; Javascript
+
+const displayAgain = Ming.displayName;
+displayAgain(); // =&gt; Result in a Type Error: Cannot read property &#39;name&#39; of undefined.</code></pre>
+<ul>
+<li><span id="f44c">The first time we use our <code>displayMethod</code> call, it is called directly on the instance of the boyfriend class, which is why <code>Javascript</code> was printed out.</span></li>
+<li><span id="5ab3">The second time it was called, the ref of the method is stored as a variable and method is called on that variable instead of the instance; resulting in a type error (it has lost it’s context)</span></li>
+<li><span id="f151">Remember we can use the <code>bind</code> method to rebind context!</span></li>
+<li><span id="a90b">We can refactor to get the second call working like this:</span></li>
+</ul>
+<!-- -->
+<pre><code>const displayAgain = Ming.displayName.bind(Ming); displayAgain(); =&gt; //Now Javascript will be printed out.</code></pre>
+<ul>
+<li><span id="9b5c">To continue using function declarations vs fat arrow we can assign context in a constructor within a class component.</span></li>
+</ul>
+<!-- -->
+<pre><code>import React from &quot;react&quot;;
+
+class AlertButton extends React.Component {
+  constructor() {
+    super();
+    this.showAlert = this.showAlert.bind(this); // binding context
+  }
+
+  showAlert() {
+    console.log(this);
+  }
+
+  render() {
+    return (
+      &lt;button type=&quot;button&quot; onClick={this.showAlert}&gt;
+        Submit
+      &lt;/button&gt;
+    );
+  }
+}
+
+export default AlertButton;</code></pre>
+<ul>
+<li><span id="e397"><code>Experimental Syntax</code> : Syntax that has been proposed to add to ECMAScript but hasn’t officially been added to the language specification yet.</span></li>
+<li><span id="eb35">It’s good to pick one approach and use it consistently, either:</span></li>
+</ul>
+<ol type="1">
+<li><span id="e7c9">Class Properties &amp; Arrow Functions</span></li>
+<li><span id="f447">Bind Method &amp; This Keyword</span></li>
+</ol>
+<p><strong>The</strong> <code>SyntheticEvent</code> <strong>object</strong></p>
+<ul>
+<li><span id="d26e"><strong>Synthetic Event Objects</strong>: Cross Browser wrappers around the browser’s native event.</span></li>
+<li><span id="7319">Includes the use of stopPropagation() and preventDefault();</span></li>
+<li><span id="1d15">Attributes of the Synthetic Event Object:</span></li>
+</ul>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*OVA083oP8HKuRPyA-Ebpig.png" alt="Attributesboolean bubblesboolean cancelableDOMEventTarget currentTargetboolean defaultPreventednumber eventPhaseboolean isTrustedDOMEvent nativeEventvoid preventDefault()boolean isDefaultPrevented()void stopPropagation()boolean isPropagationStopped()void persist()DOMEventTarget targetnumber timeStampstring type" class="graf-image" />
+<figcaption>
+Attributesboolean bubblesboolean cancelableDOMEventTarget currentTargetboolean defaultPreventednumber eventPhaseboolean isTrustedDOMEvent nativeEventvoid preventDefault()boolean isDefaultPrevented()void stopPropagation()boolean isPropagationStopped()void persist()DOMEventTarget targetnumber timeStampstring type
+</figcaption>
+</figure>
+<ul>
+<li><span id="42b5"><code>nativeEvent</code> : property defined in a synthetic event object that gives you access to the underlying native browser event (rarely used!)</span></li>
+</ul>
+<h3 id="forms-in-react">Forms in React</h3>
+<p><em>Exercise being done in a separate file</em></p>
+<p><strong>Random Notes</strong></p>
+<ul>
+<li><span id="f551"><code>onChange</code> : detects when a value of an input element changes.</span></li>
+<li><span id="a180">Assigning <code>onChange</code> to our input fields makes our component’s state update in real time during user input.</span></li>
+<li><span id="6814">Don’t forget to add <code>preventDefault</code> onto form submissions to deal with the default behavior of the browser refreshing the page!</span></li>
+<li><span id="830f"><code>submittedOn: new Date(),</code> Can be added to a form, most likely will persist into a DB.</span></li>
+</ul>
+<h4 id="controlled-components"><strong>Controlled Components</strong></h4>
+<ul>
+<li><span id="2228">We use the <code>onChange</code> event handlers on form fields to keep our component’s state as the <code>"one source of truth"</code></span></li>
+<li><span id="44e7">Adding an <code>onChange</code> event handler to every single input can massively bloat your code.</span></li>
+<li><span id="056c">Try assigning it to it’s own method to apply everywhere.</span></li>
+<li><span id="9137"><code>textarea</code> is handled differently in react: it takes in a value property to handle what the inner text will be.</span></li>
+</ul>
+<!-- -->
+<ul>
+<li><span id="39ee">We can use validation libraries like <code>validate</code> to make our validation functions more complex.</span></li>
+</ul>
+<!-- -->
+<pre><code>import isEmail from &quot;validator/es/lib/isEmail&quot;;
+
+  validate(name, email) {
+    const validationErrors = [];
+
+    if (!name) {
+      validationErrors.push(&quot;Please provide a Name&quot;);
+    }
+
+    if (!email) {
+      validationErrors.push(&quot;Please provide an Email&quot;);
+    } else if (!isEmail(email)) {
+      validationErrors.push(&quot;Please provide a valid Email&quot;);
+    }
+
+    return validationErrors;
+  }</code></pre>
+<p><strong>Note About Client-side vs server-side validation</strong></p>
+<ul>
+<li><span id="588f">Server-side validation is not optional.</span></li>
+<li><span id="e35c">Tech-savvy users can manipulate client-side validations.</span></li>
+<li><span id="03da">Sometimes the ‘best approach’ is to skip implementing validations on the client-side and rely completely on the server-side validation.</span></li>
+</ul>
+<h3 id="component-lifecycle">Component Lifecycle</h3>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*6kzLSSpEJ8ypPSCM.png" class="graf-image" />
+</figure>
+<ul>
+<li><span id="6e9c">Component Lifecycle is simply a way of describing the key moments in the lifetime of a component.</span></li>
+</ul>
+<ol type="1">
+<li><span id="5e9c">Loading (Mounting)</span></li>
+<li><span id="6930">Updating</span></li>
+<li><span id="1ec1">Unloading (Unmounting)</span></li>
+</ol>
+<p><strong>The lifecycle of a React component</strong></p>
+<ul>
+<li><span id="b8ed">Each <code>Class Component</code> has several <code>lifecycle methods</code> that you can add to run code at specific times.</span></li>
+<li><span id="f58a"><code>componentDidMount</code> : Method called after your component has been added to the component tree.</span></li>
+<li><span id="adb3"><code>componentDidUpdate</code> : Method called after your component has been updated.</span></li>
+<li><span id="d198"><code>componentWillUnmount</code> : Method called just before your component is removed from the component tree.</span></li>
+</ul>
+<h4 id="mounting"><code>Mounting</code></h4>
+<ol type="1">
+<li><span id="4ebf"><code>constructor</code> method is called</span></li>
+<li><span id="59d0"><code>render</code> method is called</span></li>
+<li><span id="7557">React updates the <code>DOM</code></span></li>
+<li><span id="6049"><code>componentDidMount</code> is called</span></li>
+</ol>
+<h4 id="updating"><code>Updating</code></h4>
+<ul>
+<li><span id="5493">When component receives new <code>props</code></span></li>
+</ul>
+<ol type="1">
+<li><span id="3eb5"><code>render</code> method is called</span></li>
+<li><span id="3c59">React updates the <code>DOM</code></span></li>
+<li><span id="e4de"><code>componentDidUpdate</code> is called</span></li>
+</ol>
+<p><span class="graf-dropCap">W</span>hen <code>setState</code> is called:</p>
+<ol type="1">
+<li><span id="6782"><code>render</code> method is called</span></li>
+<li><span id="7d8c">React updates the <code>DOM</code></span></li>
+<li><span id="74b7"><code>componentDidUpdate</code> is called</span></li>
+</ol>
+<h4 id="unmounting"><code>Unmounting</code></h4>
+<ul>
+<li><span id="3885">The moment before a class component is removed from the component tree:</span></li>
+<li><span id="b1e8"><code>componentDidMount</code> will be called.</span></li>
+</ul>
+<p><strong>Avoiding the legacy lifecycle methods</strong></p>
+<ul>
+<li><span id="732f">Occasionally you will encounter some deprecated lifecycle methods:</span></li>
+<li><span id="fb04">UNSAFE_componentWillMount</span></li>
+<li><span id="5f6e">UNSAFE_componentWillReceiveProps</span></li>
+<li><span id="b7aa">UNSAFE_componentWillUpdate</span></li>
+<li><span id="6277">Just know they will be removed soon from React’s API…☮️</span></li>
+</ul>
+<hr />
+<h3 id="react-docs">React Docs:</h3>
+<p><a href="https://gist.github.com/bgoonz/690d80b4f8ac5d359274d98cae87366a" class="markup--anchor markup--p-anchor">https://gist.github.com/bgoonz/216025f38eed1dd451df356e4085fa5a</a></p>
+<p>By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on <a href="https://medium.com/p/d8e0fc340714">August 22, 2021</a>.</p>
+<p><a href="https://medium.com/@bryanguner/react-state-d8e0fc340714" class="p-canonical">Canonical link</a></p>
+<p>August 31, 2021.</p>
+</body>
+</html>

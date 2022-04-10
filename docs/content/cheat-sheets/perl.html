@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>perl</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="to-view-the-perl-version">To view the perl version:</h1>
+<p>perl -v</p>
+<h1 id="replace-string-to-newline">Replace string “” to newline:</h1>
+<p>echo -e “foo” | perl -pe ‘s//\n/g;’</p>
+<h1 id="replace-newline-with-multiple-line-to-space">Replace newline with multiple line to space:</h1>
+<p>cat test.txt | perl -0pe “s/test12/test1 test2/m”</p>
+</body>
+</html>

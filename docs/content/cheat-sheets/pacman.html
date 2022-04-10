@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>pacman</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="to-search-for-a-package">To search for a package:</h1>
+<p>pacman -Ss <package>…</p>
+<h1 id="to-update-the-local-package-base-and-upgrade-all-out-of-date-packages">To update the local package base and upgrade all out-of-date packages:</h1>
+<p>pacman -Suy</p>
+<h1 id="to-install-a-package">To install a package:</h1>
+<p>pacman -S <package>…</p>
+<h1 id="to-uninstall-a-package">To uninstall a package:</h1>
+<p>pacman -R <package>…</p>
+<h1 id="to-uninstall-a-package-and-its-depedencies-removing-all-new-orphans">To uninstall a package and its depedencies, removing all new orphans:</h1>
+<p>pacman -Rcs <package>…</p>
+<h1 id="to-get-information-about-package">To get information about package:</h1>
+<p>pacman -Si <package>…</p>
+<h1 id="to-install-a-package-from-builded-package-file-.tar.xz">To install a package from builded package file (.tar.xz):</h1>
+<p>pacman -U <file></p>
+<h1 id="to-list-the-commands-provided-by-an-installed-package">To list the commands provided by an installed package:</h1>
+<p>pacman -Ql <package>… | sed -n -e ‘s/.*/bin///p’ | tail -n +2</p>
+<h1 id="to-list-explicitly-installed-packages">To list explicitly installed packages:</h1>
+<p>pacman -Qe</p>
+<h1 id="to-list-the-top-most-recent-explicitly-installed-packages-not-in-the-base-groups">To list the top-most recent explicitly installed packages (not in the base groups):</h1>
+<p>expac –timefmt=‘%Y-%m-%d %T’ ‘%l\t%n’ $(comm -23 &lt;(pacman -Qeq|sort) &lt;(pacman -Qqg base base-devel|sort)) | sort -r | head -20</p>
+<h1 id="to-list-orphan-packages-installed-as-dependencies-and-not-required-anymore">To list orphan packages (installed as dependencies and not required anymore):</h1>
+<p>pacman -Qdt</p>
+<h1 id="to-list-installed-packages-sorted-by-size">To list installed packages sorted by size</h1>
+<p>pacman -Qq | pacman -Qi - | egrep ‘(Size+:|Name+:[^s])’ | sed -E ‘s/ ([KM])iB/\1/’ | sed -z ‘s// /g’ | perl -pe ‘s/(Name|Size) *: //g’ | column -t | sort -hk2 -r | cat -n | tac</p>
+<h1 id="you-cant-directly-install-packages-from-the-arch-user-database-aur-with-pacman.">You can’t directly install packages from the Arch User Database (AUR) with pacman.</h1>
+<h1 id="you-need-yaourt-to-perform-that.-but-considering-yaourt-itself-is-in-the-aur-here-is-how-to-build-a-package-from-its-tarball.">You need yaourt to perform that. But considering yaourt itself is in the AUR, here is how to build a package from its tarball.</h1>
+<h1 id="installing-a-package-from-aur-is-a-relatively-simple-process">Installing a package from AUR is a relatively simple process:</h1>
+<h1 id="retrieve-the-archive-corresponding-to-your-package-from-aur-website">- Retrieve the archive corresponding to your package from AUR website</h1>
+<h1 id="extract-the-archive-preferably-in-a-folder-for-this-purpose">- Extract the archive (preferably in a folder for this purpose)</h1>
+<h1 id="run-makepkg-in-the-extracted-directory.-makepkg-s-allows-you-to-install-any-dependencies-automatically-from-deposits.">- Run makepkg in the extracted directory. (makepkg-s allows you to install any dependencies automatically from deposits.)</h1>
+<h1 id="install-the-package-created-using-pacman">- Install the package created using pacman</h1>
+<h1 id="assuming-pkgname-contains-the-package-name.">Assuming $pkgname contains the package name.</h1>
+<p>wget “https://aur.archlinux.org/packages/<span class="math inline"><em>p</em><em>k</em><em>g</em><em>n</em><em>a</em><em>m</em><em>e</em> :  : 2/</span>pkgname/<span class="math inline">$pkgname.tar.gz" tar zxvf "$</span>pkgname.tar.gz” cd “$pkgname”</p>
+<h1 id="build-the-package">Build the package</h1>
+<p>makepkg -s</p>
+<h1 id="install">Install</h1>
+<p>sudo pacman -U &lt;package file (.pkg.tar.xz)&gt;</p>
+</body>
+</html>

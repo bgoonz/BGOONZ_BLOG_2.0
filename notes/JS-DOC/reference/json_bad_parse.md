@@ -1,8 +1,10 @@
-# SyntaxError: JSON.parse: bad parsing
+SyntaxError: JSON.parse: bad parsing
+====================================
 
 The JavaScript exceptions thrown by [`JSON.parse()`](../global_objects/json/parse) occur when string failed to be parsed as JSON.
 
-## Message
+Message
+-------
 
     SyntaxError: JSON.parse: unterminated string literal
     SyntaxError: JSON.parse: bad control character in string literal
@@ -37,15 +39,18 @@ The JavaScript exceptions thrown by [`JSON.parse()`](../global_objects/json/pars
     SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data
     SyntaxError: JSON.parse Error: Invalid character at position {0} (Edge)
 
-## Error type
+Error type
+----------
 
 [`SyntaxError`](../global_objects/syntaxerror)
 
-## What went wrong?
+What went wrong?
+----------------
 
 [`JSON.parse()`](../global_objects/json/parse) parses a string as JSON. This string has to be valid JSON and will throw this error if incorrect syntax was encountered.
 
-## Examples
+Examples
+--------
 
 ### `JSON.parse()` does not allow trailing commas
 
@@ -63,13 +68,13 @@ Omit the trailing commas to parse the JSON correctly:
 
 ### Property names must be double-quoted strings
 
-You cannot use single-quotes around properties, like 'foo'.
+You cannot use single-quotes around properties, like ‘foo’.
 
     JSON.parse("{'foo': 1}");
     // SyntaxError: JSON.parse: expected property name or '}'
     // at line 1 column 2 of the JSON data
 
-Instead write "foo":
+Instead write “foo”:
 
     JSON.parse('{"foo": 1}');
 
@@ -90,7 +95,8 @@ Instead write just 1 without a zero and use at least one digit after a decimal p
     JSON.parse('{"foo": 1}');
     JSON.parse('{"foo": 1.0}');
 
-## See also
+See also
+--------
 
 -   [`JSON`](../global_objects/json)
 -   [`JSON.parse()`](../global_objects/json/parse)

@@ -1,57 +1,29 @@
----
-title: Vimdiff
-category: Vim
-
-weight: -10
-intro: |
-    [Vim](http://www.vim.org/) is a very efficient text editor. This reference was made for Vim 8.0.
----
-
-## Getting started
+Getting started
+---------------
 
 ### Navigating
 
-| Shortcut | Description         |
-| -------- | ------------------- |
-| `]c`     | Next difference     |
-| `[c`     | Previous difference |
+<table><thead><tr class="header"><th>Shortcut</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>]c</code></td><td>Next difference</td></tr><tr class="even"><td><code>[c</code></td><td>Previous difference</td></tr></tbody></table>
 
 {: .-shortcuts}
 
 ### Editing
 
-| Shortcut      | Description                                            |
-| ------------- | ------------------------------------------------------ |
-| `do`          | Diff Obtain! <br>Pull the changes to the current file. |
-| `dp`          | Diff Put! <br>Push the changes to the other file.      |
-| ---           | ---                                                    |
-| `:diffupdate` | Re-scan the files for differences.                     |
-| `ZQ`          | Quit without checking changes                          |
+<table><thead><tr class="header"><th>Shortcut</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>do</code></td><td>Diff Obtain!<br />
+Pull the changes to the current file.</td></tr><tr class="even"><td><code>dp</code></td><td>Diff Put!<br />
+Push the changes to the other file.</td></tr><tr class="odd"><td>—</td><td>—</td></tr><tr class="even"><td><code>:diffupdate</code></td><td>Re-scan the files for differences.</td></tr><tr class="odd"><td><code>ZQ</code></td><td>Quit without checking changes</td></tr></tbody></table>
 
 {: .-shortcuts}
 
 ### Folds
 
-| Shortcut      | Description                  |
-| ------------- | ---------------------------- |
-| `zo` _/_ `zO` | Open                         |
-| `zc` _/_ `zC` | Close                        |
-| `za` _/_ `zA` | Toggle                       |
-| ---           | ---                          |
-| `zv`          | Open folds for this line     |
-| ---           | ---                          |
-| `zM`          | Close all                    |
-| `zR`          | Open all                     |
-| ---           | ---                          |
-| `zm`          | Fold more _(foldlevel += 1)_ |
-| `zr`          | Fold less _(foldlevel -= 1)_ |
-| ---           | ---                          |
-| `zx`          | Update folds                 |
+<table><thead><tr class="header"><th>Shortcut</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>zo</code> <em>/</em> <code>zO</code></td><td>Open</td></tr><tr class="even"><td><code>zc</code> <em>/</em> <code>zC</code></td><td>Close</td></tr><tr class="odd"><td><code>za</code> <em>/</em> <code>zA</code></td><td>Toggle</td></tr><tr class="even"><td>—</td><td>—</td></tr><tr class="odd"><td><code>zv</code></td><td>Open folds for this line</td></tr><tr class="even"><td>—</td><td>—</td></tr><tr class="odd"><td><code>zM</code></td><td>Close all</td></tr><tr class="even"><td><code>zR</code></td><td>Open all</td></tr><tr class="odd"><td>—</td><td>—</td></tr><tr class="even"><td><code>zm</code></td><td>Fold more <em>(foldlevel += 1)</em></td></tr><tr class="odd"><td><code>zr</code></td><td>Fold less <em>(foldlevel -= 1)</em></td></tr><tr class="even"><td>—</td><td>—</td></tr><tr class="odd"><td><code>zx</code></td><td>Update folds</td></tr></tbody></table>
 
 {: .-shortcuts}
 
-## Also see
+Also see
+--------
 
--   [Vim cheatsheet](https://vim.rtorr.com/) _(vim.rotrr.com)_
--   [Vim documentation](http://vimdoc.sourceforge.net/htmldoc/) _(vimdoc.sourceforge.net)_
--   [Interactive Vim tutorial](http://openvim.com/) _(openvim.com)_
+-   [Vim cheatsheet](https://vim.rtorr.com/) *(vim.rotrr.com)*
+-   [Vim documentation](http://vimdoc.sourceforge.net/htmldoc/) *(vimdoc.sourceforge.net)*
+-   [Interactive Vim tutorial](http://openvim.com/) *(openvim.com)*

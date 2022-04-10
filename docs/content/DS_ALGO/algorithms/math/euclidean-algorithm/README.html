@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="euclidean-algorithm">Euclidean algorithm</h1>
+<p><a href="README.fr-FR.md">français</a>.</p>
+<p>In mathematics, the Euclidean algorithm, or Euclid’s algorithm, is an efficient method for computing the greatest common divisor (GCD) of two numbers, the largest number that divides both of them without leaving a remainder.</p>
+<p>The Euclidean algorithm is based on the principle that the greatest common divisor of two numbers does not change if the larger number is replaced by its difference with the smaller number. For example, <code>21</code> is the GCD of <code>252</code> and <code>105</code> (as <code>252 = 21 × 12</code> and <code>105 = 21 × 5</code>), and the same number <code>21</code> is also the GCD of <code>105</code> and <code>252 − 105 = 147</code>. Since this replacement reduces the larger of the two numbers, repeating this process gives successively smaller pairs of numbers until the two numbers become equal. When that occurs, they are the GCD of the original two numbers.</p>
+<p>By reversing the steps, the GCD can be expressed as a sum of the two original numbers each multiplied by a positive or negative integer, e.g., <code>21 = 5 × 105 + (−2) × 252</code>. The fact that the GCD can always be expressed in this way is known as Bézout’s identity.</p>
+<figure>
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Euclid%27s_algorithm_Book_VII_Proposition_2_3.png" alt="GCD" /><figcaption>GCD</figcaption>
+</figure>
+<p>Euclid’s method for finding the greatest common divisor (GCD) of two starting lengths <code>BA</code> and <code>DC</code>, both defined to be multiples of a common “unit” length. The length <code>DC</code> being shorter, it is used to “measure” <code>BA</code>, but only once because remainder <code>EA</code> is less than <code>DC</code>. EA now measures (twice) the shorter length <code>DC</code>, with remainder <code>FC</code> shorter than <code>EA</code>. Then <code>FC</code> measures (three times) length <code>EA</code>. Because there is no remainder, the process ends with <code>FC</code> being the <code>GCD</code>. On the right Nicomachus’ example with numbers <code>49</code> and <code>21</code> resulting in their GCD of <code>7</code> (derived from Heath 1908:300).</p>
+<figure>
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/74/24x60.svg" alt="GCD" /><figcaption>GCD</figcaption>
+</figure>
+<p>A <code>24-by-60</code> rectangle is covered with ten <code>12-by-12</code> square tiles, where <code>12</code> is the GCD of <code>24</code> and <code>60</code>. More generally, an <code>a-by-b</code> rectangle can be covered with square tiles of side-length <code>c</code> only if <code>c</code> is a common divisor of <code>a</code> and <code>b</code>.</p>
+<figure>
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Euclidean_algorithm_1071_462.gif" alt="GCD" /><figcaption>GCD</figcaption>
+</figure>
+<p>Subtraction-based animation of the Euclidean algorithm. The initial rectangle has dimensions <code>a = 1071</code> and <code>b = 462</code>. Squares of size <code>462×462</code> are placed within it leaving a <code>462×147</code> rectangle. This rectangle is tiled with <code>147×147</code> squares until a <code>21×147</code> rectangle is left, which in turn is tiled with <code>21×21</code> squares, leaving no uncovered area. The smallest square size, <code>21</code>, is the GCD of <code>1071</code> and <code>462</code>.</p>
+<h2 id="references">References</h2>
+<p><a href="https://en.wikipedia.org/wiki/Euclidean_algorithm">Wikipedia</a></p>
+</body>
+</html>

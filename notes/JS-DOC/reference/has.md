@@ -1,8 +1,10 @@
-# handler.has()
+handler.has()
+=============
 
 The `handler.has()` method is a trap for the [`in`](../../../operators/in) operator.
 
-## Syntax
+Syntax
+------
 
     const p = new Proxy(target, {
       has: function(target, prop) {
@@ -23,7 +25,8 @@ The name or [`Symbol`](../../symbol) of the property to check for existence.
 
 The `has()` method must return a boolean value.
 
-## Description
+Description
+-----------
 
 The `handler.has()` method is a trap for the [`in`](../../../operators/in) operator.
 
@@ -43,7 +46,8 @@ If the following invariants are violated, the proxy will throw a [`TypeError`](.
 -   A property cannot be reported as non-existent, if it exists as a non-configurable own property of the target object.
 -   A property cannot be reported as non-existent, if it exists as an own property of the target object and the target object is not extensible.
 
-## Examples
+Examples
+--------
 
 ### Trapping the in operator
 
@@ -72,12 +76,11 @@ The following code violates an invariant.
 
     'a' in p; // TypeError is thrown
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-proxy-object-internal-methods-and-internal-slots-hasproperty-p">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-proxy-object-internal-methods-and-internal-slots-hasproperty-p</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-proxy-object-internal-methods-and-internal-slots-hasproperty-p</span></td></tr></tbody></table>
 
 `has`
 
@@ -105,13 +108,13 @@ No
 
 5.0
 
-## See also
+See also
+--------
 
 -   [`Proxy`](../../proxy)
 -   [`handler`](../proxy)
 -   [`in`](../../../operators/in) operator
 -   [`Reflect.has()`](../../reflect/has)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/has" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/has</a>

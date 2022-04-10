@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>match</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="string.prototype.match">String.prototype.match()</h1>
+<p>The <code>match()</code> method retrieves the result of matching a <em>string</em> against a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions">regular expression</a>.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>match(regexp)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>regexp</code><br />
+A regular expression object.</p>
+<p>If <code>regexp</code> is a non-<code>RegExp</code> object, it is implicitly converted to a <a href="../regexp"><code>RegExp</code></a> by using <code>new RegExp(regexp)</code>.</p>
+<p>If you don’t give any parameter and use the <code>match()</code> method directly, you will get an <a href="../array"><code>Array</code></a> with an empty string: <code>[""]</code>.</p>
+<h3 id="return-value">Return value</h3>
+<p>An <a href="../array"><code>Array</code></a> whose contents depend on the presence or absence of the global (<code>g</code>) flag, or <a href="../null"><code>null</code></a> if no matches are found.</p>
+<ul>
+<li>If the <code>g</code> flag is used, all results matching the complete regular expression will be returned, but capturing groups will not.</li>
+<li>if the <code>g</code> flag is not used, only the first complete match and its related capturing groups are returned. In this case, the returned item will have additional properties as described below.</li>
+</ul>
+<h4 id="additional-properties">Additional properties</h4>
+<p>As explained above, some results contain additional properties as described below.</p>
+<p><code>groups</code><br />
+An object of named capturing groups whose keys are the names and values are the capturing groups or <a href="../undefined"><code>undefined</code></a> if no named capturing groups were defined. See <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Groups_and_Ranges">Groups and Ranges</a> for more information.</p>
+<p><code>index</code><br />
+The index of the search at which the result was found.</p>
+<p><code>input</code><br />
+A copy of the search string.</p>
+<h2 id="description">Description</h2>
+<p>If the regular expression does not include the <code>g</code> flag, <code>str.match()</code> will return the same result as <a href="../regexp/exec"><code>RegExp.exec()</code></a>.</p>
+<h3 id="other-methods">Other methods</h3>
+<ul>
+<li>If you need to know if a string matches a regular expression <a href="../regexp"><code>RegExp</code></a>, use <a href="../regexp/test"><code>RegExp.test()</code></a>.</li>
+<li>If you only want the first match found, you might want to use <a href="../regexp/exec"><code>RegExp.exec()</code></a> instead.</li>
+<li>If you want to obtain capture groups and the global flag is set, you need to use <a href="../regexp/exec"><code>RegExp.exec()</code></a> or <a href="matchall"><code>String.prototype.matchAll()</code></a> instead.</li>
+</ul>
+<h2 id="examples">Examples</h2>
+<h3 id="using-match">Using match()</h3>
+<p>In the following example, <code>match()</code> is used to find ‘<code>Chapter</code>’ followed by 1 or more numeric characters followed by a decimal point and numeric character 0 or more times.</p>
+<p>The regular expression includes the <code>i</code> flag so that upper/lower case differences will be ignored.</p>
+<pre><code>const str = &#39;For more information, see Chapter 3.4.5.1&#39;;
+const re = /see (chapter \d+(\.\d)*)/i;
+const found = str.match(re);
+
+console.log(found);
+
+// logs [ &#39;see Chapter 3.4.5.1&#39;,
+//        &#39;Chapter 3.4.5.1&#39;,
+//        &#39;.1&#39;,
+//        index: 22,
+//        input: &#39;For more information, see Chapter 3.4.5.1&#39; ]
+
+// &#39;see Chapter 3.4.5.1&#39; is the whole match.
+// &#39;Chapter 3.4.5.1&#39; was captured by &#39;(chapter \d+(\.\d)*)&#39;.
+// &#39;.1&#39; was the last value captured by &#39;(\.\d)&#39;.
+// The &#39;index&#39; property (22) is the zero-based index of the whole match.
+// The &#39;input&#39; property is the original string that was parsed.</code></pre>
+<h3 id="using-global-and-ignore-case-flags-with-match">Using global and ignore case flags with match()</h3>
+<p>The following example demonstrates the use of the global and ignore case flags with <code>match()</code>. All letters <code>A</code> through <code>E</code> and <code>a</code> through <code>e</code> are returned, each its own element in the array.</p>
+<pre><code>const str = &#39;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz&#39;;
+const regexp = /[A-E]/gi;
+const matches_array = str.match(regexp);
+
+console.log(matches_array);
+// [&#39;A&#39;, &#39;B&#39;, &#39;C&#39;, &#39;D&#39;, &#39;E&#39;, &#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;]</code></pre>
+<p><strong>Note:</strong> See also <a href="matchall"><code>String.prototype.matchAll()</code></a> and <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#advanced_searching_with_flags">Advanced searching with flags</a>.</p>
+<h3 id="using-named-capturing-groups">Using named capturing groups</h3>
+<p>In browsers which support named capturing groups, the following code captures “<code>fox</code>” or “<code>cat</code>” into a group named “<code>animal</code>”:</p>
+<pre><code>const paragraph = &#39;The quick brown fox jumps over the lazy dog. It barked.&#39;;
+
+const capturingRegex = /(?&lt;animal&gt;fox|cat) jumps over/;
+const found = paragraph.match(capturingRegex);
+console.log(found.groups); // {animal: &quot;fox&quot;}</code></pre>
+<h3 id="using-match-with-no-parameter">Using match() with no parameter</h3>
+<pre><code>const str = &quot;Nothing will come of nothing.&quot;;
+
+str.match();   // returns [&quot;&quot;]</code></pre>
+<h3 id="a-non-regexp-object-as-the-parameter">A non-RegExp object as the parameter</h3>
+<p>When the <code>regexp</code> parameter is a string or a number, it is implicitly converted to a <a href="../regexp"><code>RegExp</code></a> by using <code>new RegExp(regexp)</code>.</p>
+<p>If it is a positive number with a positive sign, <code>RegExp()</code> will ignore the positive sign.</p>
+<pre><code>const str1 = &quot;NaN means not a number. Infinity contains -Infinity and +Infinity in JavaScript.&quot;,
+    str2 = &quot;My grandfather is 65 years old and My grandmother is 63 years old.&quot;,
+    str3 = &quot;The contract was declared null and void.&quot;;
+str1.match(&quot;number&quot;);   // &quot;number&quot; is a string. returns [&quot;number&quot;]
+str1.match(NaN);        // the type of NaN is the number. returns [&quot;NaN&quot;]
+str1.match(Infinity);   // the type of Infinity is the number. returns [&quot;Infinity&quot;]
+str1.match(+Infinity);  // returns [&quot;Infinity&quot;]
+str1.match(-Infinity);  // returns [&quot;-Infinity&quot;]
+str2.match(65);         // returns [&quot;65&quot;]
+str2.match(+65);        // A number with a positive sign. returns [&quot;65&quot;]
+str3.match(null);       // returns [&quot;null&quot;]</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-string.prototype.match">ECMAScript (ECMA-262) <br/></p>
+<span class="small">The definition of ‘String.prototype.match’ in that specification.</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>match</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>4</p>
+<p>4</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="matchall"><code>String.prototype.matchAll()</code></a></li>
+<li><a href="../regexp"><code>RegExp</code></a></li>
+<li><a href="../regexp/exec"><code>RegExp.prototype.exec()</code></a></li>
+<li><a href="../regexp/test"><code>RegExp.prototype.test()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match</a></p>
+</body>
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>error</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="error">Error</h1>
+<p><code>Error</code> objects are thrown when runtime errors occur. The <code>Error</code> object can also be used as a base object for user-defined exceptions. See below for standard built-in error types.</p>
+<h2 id="description">Description</h2>
+<p>Runtime errors result in new <code>Error</code> objects being created and thrown.</p>
+<h3 id="error-types">Error types</h3>
+<p>Besides the generic <code>Error</code> constructor, there are other core error constructors in JavaScript. For client-side exceptions, see <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling#exception_handling_statements">Exception handling statements</a>.</p>
+<p><a href="evalerror"><code>EvalError</code></a><br />
+Creates an instance representing an error that occurs regarding the global function <a href="eval"><code>eval()</code></a>.</p>
+<p><a href="rangeerror"><code>RangeError</code></a><br />
+Creates an instance representing an error that occurs when a numeric variable or parameter is outside of its valid range.</p>
+<p><a href="referenceerror"><code>ReferenceError</code></a><br />
+Creates an instance representing an error that occurs when de-referencing an invalid reference.</p>
+<p><a href="syntaxerror"><code>SyntaxError</code></a><br />
+Creates an instance representing a syntax error.</p>
+<p><a href="typeerror"><code>TypeError</code></a><br />
+Creates an instance representing an error that occurs when a variable or parameter is not of a valid type.</p>
+<p><a href="urierror"><code>URIError</code></a><br />
+Creates an instance representing an error that occurs when <a href="encodeuri"><code>encodeURI()</code></a> or <a href="decodeuri"><code>decodeURI()</code></a> are passed invalid parameters.</p>
+<p><a href="aggregateerror"><code>AggregateError</code></a><br />
+Creates an instance representing several errors wrapped in a single error when multiple errors need to be reported by an operation, for example by <a href="promise/any"><code>Promise.any()</code></a>.</p>
+<p><a href="internalerror"><code>InternalError</code></a> <span class="icon non-standard" data-viewbox="0 0 100 100" data-xmlns="http://www.w3.org/2000/svg" data-role="img"> This API has not been standardized. </span><br />
+Creates an instance representing an error that occurs when an internal error in the JavaScript engine is thrown. E.g. “too much recursion”.</p>
+<h2 id="constructor">Constructor</h2>
+<p><a href="error/error"><code>Error()</code></a><br />
+Creates a new <code>Error</code> object.</p>
+<h2 id="static-methods">Static methods</h2>
+<p><span class="page-not-created"><code>Error.captureStackTrace()</code></span><br />
+A non-standard <strong>V8</strong> function that creates the <a href="error/stack"><code>stack</code></a> property on an Error instance.</p>
+<h2 id="instance-properties">Instance properties</h2>
+<p><a href="error/message"><code>Error.prototype.message</code></a><br />
+Error message.</p>
+<p><a href="error/name"><code>Error.prototype.name</code></a><br />
+Error name.</p>
+<p><span class="page-not-created"><code>Error.prototype.description</code></span><br />
+A non-standard Microsoft property for the error description. Similar to <a href="error/message"><code>message</code></a>.</p>
+<p><span class="page-not-created"><code>Error.prototype.number</code></span><br />
+A non-standard Microsoft property for an error number.</p>
+<p><a href="error/filename"><code>Error.prototype.fileName</code></a><br />
+A non-standard Mozilla property for the path to the file that raised this error.</p>
+<p><a href="error/linenumber"><code>Error.prototype.lineNumber</code></a><br />
+A non-standard Mozilla property for the line number in the file that raised this error.</p>
+<p><a href="error/columnnumber"><code>Error.prototype.columnNumber</code></a><br />
+A non-standard Mozilla property for the column number in the line that raised this error.</p>
+<p><a href="error/stack"><code>Error.prototype.stack</code></a><br />
+A non-standard Mozilla property for a stack trace.</p>
+<h2 id="instance-methods">Instance methods</h2>
+<p><a href="error/tostring"><code>Error.prototype.toString()</code></a><br />
+Returns a string representing the specified object. Overrides the <a href="object/tostring"><code>Object.prototype.toString()</code></a> method.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="throwing-a-generic-error">Throwing a generic error</h3>
+<p>Usually you create an <code>Error</code> object with the intention of raising it using the <a href="../statements/throw"><code>throw</code></a> keyword. You can handle the error using the <a href="../statements/try...catch"><code>try...catch</code></a> construct:</p>
+<pre><code>try {
+  throw new Error(&#39;Whoops!&#39;)
+} catch (e) {
+  console.error(e.name + &#39;: &#39; + e.message)
+}</code></pre>
+<h3 id="handling-a-specific-error">Handling a specific error</h3>
+<p>You can choose to handle only specific error types by testing the error type with the error’s <a href="object/constructor"><code>constructor</code></a> property or, if you’re writing for modern JavaScript engines, <a href="../operators/instanceof"><code>instanceof</code></a> keyword:</p>
+<pre><code>try {
+  foo.bar()
+} catch (e) {
+  if (e instanceof EvalError) {
+    console.error(e.name + &#39;: &#39; + e.message)
+  } else if (e instanceof RangeError) {
+    console.error(e.name + &#39;: &#39; + e.message)
+  }
+  // ... etc
+}</code></pre>
+<h3 id="custom-error-types">Custom Error Types</h3>
+<p>You might want to define your own error types deriving from <code>Error</code> to be able to <code>throw new MyError()</code> and use <code>instanceof MyError</code> to check the kind of error in the exception handler. This results in cleaner and more consistent error handling code.</p>
+<p>See <a href="https://stackoverflow.com/questions/1382107/whats-a-good-way-to-extend-error-in-javascript">“What’s a good way to extend Error in JavaScript?”</a> on StackOverflow for an in-depth discussion.</p>
+<h4 id="es6-custom-error-class">ES6 Custom Error Class</h4>
+<p><strong>Warning:</strong> Versions of Babel prior to 7 can handle <code>CustomError</code> class methods, but only when they are declared with <a href="object/defineproperty">Object.defineProperty()</a>. Otherwise, old versions of Babel and other transpilers will not correctly handle the following code without <a href="https://github.com/loganfsmyth/babel-plugin-transform-builtin-extend">additional configuration</a>.</p>
+<p><strong>Note:</strong> Some browsers include the <code>CustomError</code> constructor in the stack trace when using ES2015 classes.</p>
+<pre><code>class CustomError extends Error {
+  constructor(foo = &#39;bar&#39;, ...params) {
+    // Pass remaining arguments (including vendor specific ones) to parent constructor
+    super(...params)
+
+    // Maintains proper stack trace for where our error was thrown (only available on V8)
+    if (Error.captureStackTrace) {
+      Error.captureStackTrace(this, CustomError)
+    }
+
+    this.name = &#39;CustomError&#39;
+    // Custom debugging information
+    this.foo = foo
+    this.date = new Date()
+  }
+}
+
+try {
+  throw new CustomError(&#39;baz&#39;, &#39;bazMessage&#39;)
+} catch(e) {
+  console.error(e.name)    //CustomError
+  console.error(e.foo)     //baz
+  console.error(e.message) //bazMessage
+  console.error(e.stack)   //stacktrace
+}</code></pre>
+<h4 id="es5-custom-error-object">ES5 Custom Error Object</h4>
+<p><strong>Warning:</strong> All browsers include the <code>CustomError</code> constructor in the stack trace when using a prototypal declaration.</p>
+<pre><code>function CustomError(foo, message, fileName, lineNumber) {
+  var instance = new Error(message, fileName, lineNumber);
+  instance.name = &#39;CustomError&#39;;
+  instance.foo = foo;
+  Object.setPrototypeOf(instance, Object.getPrototypeOf(this));
+  if (Error.captureStackTrace) {
+    Error.captureStackTrace(instance, CustomError);
+  }
+  return instance;
+}
+
+CustomError.prototype = Object.create(Error.prototype, {
+  constructor: {
+    value: Error,
+    enumerable: false,
+    writable: true,
+    configurable: true
+  }
+});
+
+if (Object.setPrototypeOf){
+  Object.setPrototypeOf(CustomError, Error);
+} else {
+  CustomError.__proto__ = Error;
+}
+
+try {
+  throw new CustomError(&#39;baz&#39;, &#39;bazMessage&#39;);
+} catch(e){
+  console.error(e.name); //CustomError
+  console.error(e.foo); //baz
+  console.error(e.message); //bazMessage
+}</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-error-objects">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-error-objects</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>Error</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>6</p>
+<p>4</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>Error</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>6</p>
+<p>4</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>columnNumber</code></p>
+<p>No</p>
+<p>No</p>
+<p>1</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>4</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p><code>fileName</code></p>
+<p>No</p>
+<p>No</p>
+<p>1</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>4</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p><code>lineNumber</code></p>
+<p>No</p>
+<p>No</p>
+<p>1</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>4</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p><code>message</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>6</p>
+<p>5</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>name</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>6</p>
+<p>4</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>stack</code></p>
+<p>3</p>
+<p>12</p>
+<p>1</p>
+<p>10</p>
+<p>10.5</p>
+<p>6</p>
+<p>≤37</p>
+<p>18</p>
+<p>4</p>
+<p>11</p>
+<p>6</p>
+<p>1.0</p>
+<p><code>toSource</code></p>
+<p>No</p>
+<p>No</p>
+<p>1-74</p>
+<p>Starting in Firefox 74, <code>toSource()</code> is no longer available for use by web content. It is still allowed for internal and privileged code.</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>4</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p><code>toString</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>6</p>
+<p>4</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../statements/throw"><code>throw</code></a></li>
+<li><a href="../statements/try...catch"><code>try...catch</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error</a></p>
+</body>
+</html>

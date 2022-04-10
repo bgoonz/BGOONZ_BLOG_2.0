@@ -1,112 +1,59 @@
----
-title: Textile
-category: Markup
-
-weight: -1
----
-
-## Reference
+Reference
+---------
 
 ### Inlines
 
-| Code                      | Description |
-| ------------------------- | ----------- |
-| `_em_`                    |             |
-| `*strong*`                |             |
-| `__bold-italic__`         |             |
-| `@code@`                  |             |
-| `??citation??`            |             |
-| ---                       | ---         |
-| `-strikethrough-`         |             |
-| `+insertion+`             |             |
-| ---                       | ---         |
-| `%span%`                  | HTML tag    |
-| `%{color:red}formatting%` | CSS styles  |
-| ---                       | ---         |
+<table><thead><tr class="header"><th>Code</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>_em_</code></td><td></td></tr><tr class="even"><td><code>*strong*</code></td><td></td></tr><tr class="odd"><td><code>__bold-italic__</code></td><td></td></tr><tr class="even"><td><code>@code@</code></td><td></td></tr><tr class="odd"><td><code>??citation??</code></td><td></td></tr><tr class="even"><td>—</td><td>—</td></tr><tr class="odd"><td><code>-strikethrough-</code></td><td></td></tr><tr class="even"><td><code>+insertion+</code></td><td></td></tr><tr class="odd"><td>—</td><td>—</td></tr><tr class="even"><td><code>%span%</code></td><td>HTML tag</td></tr><tr class="odd"><td><code>%{color:red}formatting%</code></td><td>CSS styles</td></tr><tr class="even"><td>—</td><td>—</td></tr></tbody></table>
 
 ### Blocks
 
-```textile
-h1. Header 1
-```
+    h1. Header 1
 
-```textile
-h2. Header 2
-```
+    h2. Header 2
 
-```textile
-bq. Blockquote
-```
+    bq. Blockquote
 
-```textile
-p(classname). Class.
-```
+    p(classname). Class.
 
-```textile
-p(#id). ID.
-```
+    p(#id). ID.
 
 ### Lists
 
-```textile
-## ordered list
-```
+    ## ordered list
 
-```textile
-* unordered list
-```
+    * unordered list
 
 ### Links
 
-| Code                                            | Description        |
-| ----------------------------------------------- | ------------------ |
-| `"Hypertext":index.html`                        | Link               |
-| ---                                             | ---                |
-| `"Text link":link` <br> `[link]http://link.com` | Link via reference |
+<table><thead><tr class="header"><th>Code</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>"Hypertext":index.html</code></td><td>Link</td></tr><tr class="even"><td>—</td><td>—</td></tr><tr class="odd"><td><code>"Text link":link</code><br />
+<code>[link]http://link.com</code></td><td>Link via reference</td></tr></tbody></table>
 
 ### Images
 
-| Code                      | Description |
-| ------------------------- | ----------- |
-| `!image.jpg!`             | Image       |
-| `!image.jpg(title text)!` |             |
-| `!image.jpg!:link.html`   |             |
-| `!>right.jpg!`            |             |
+<table><thead><tr class="header"><th>Code</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>!image.jpg!</code></td><td>Image</td></tr><tr class="even"><td><code>!image.jpg(title text)!</code></td><td></td></tr><tr class="odd"><td><code>!image.jpg!:link.html</code></td><td></td></tr><tr class="even"><td><code>!&gt;right.jpg!</code></td><td></td></tr></tbody></table>
 
 ### Escaped HTML
 
-```html
-<pre>
-I am <b>very serious.</b> -- this
-will get escaped.
-</pre>
-```
+    <pre>
+    I am <b>very serious.</b> -- this
+    will get escaped.
+    </pre>
 
 ### Line breaks
 
-```textile
-Line breaks.
-Just break the lines.
-```
+    Line breaks.
+    Just break the lines.
 
 ### Entities
 
-```textile
-one(TM), two(R), three(C).
-```
+    one(TM), two(R), three(C).
 
 ### Horizontal line
 
-```textile
---
-```
+    --
 
 ### Footnotes
 
-```textile
-Footnotes[1].
-```
+    Footnotes[1].
 
-```textile
-fn1. Something.
-```
+    fn1. Something.

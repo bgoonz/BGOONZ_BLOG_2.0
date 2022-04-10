@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>systemctl</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="to-see-running-processes">To see running processes:</h1>
+<p>systemctl</p>
+<h1 id="to-check-the-status-of-a-service">To check the status of a service:</h1>
+<p>systemctl status foo.service</p>
+<h1 id="to-startrestartstop-a-service">To start/restart/stop a service:</h1>
+<p>systemctl start/restart/stop foo.service</p>
+<h1 id="to-reload-a-services-configuration">To reload a service’s configuration:</h1>
+<p>systemctl reload foo.service</p>
+<h1 id="to-edit-a-services-configuration">To edit a service’s configuration:</h1>
+<p>systemctl edit foo.service</p>
+<h1 id="to-reload-systemd-manager-configuration">To reload systemd manager configuration:</h1>
+<p>systemctl daemon-reload</p>
+<h1 id="to-enable-a-service-to-startup-on-boot">To enable a service to startup on boot:</h1>
+<p>systemctl enable foo.service</p>
+<h1 id="to-disable-a-service-to-startup-on-boot">To disable a service to startup on boot:</h1>
+<p>systemctl disable foo.service</p>
+<h1 id="to-startrestartstop-per-user-service">To start/restart/stop per-user service:</h1>
+<p>systemctl –user start/restart/stop emacs.service</p>
+<h1 id="to-see-all-active-units-add-all-for-everything">To see all active units, add –all for everything:</h1>
+<p>systemctl list-units</p>
+<h1 id="to-see-all-service-units">To see all service units:</h1>
+<p>systemctl list-units -at service</p>
+<h1 id="to-see-filtered-units-all-running-service">To see filtered units (all running service):</h1>
+<p>systemctl list-units -t service –state running</p>
+<h1 id="to-see-all-service-files-see-which-are-enabled-or-disabled">To see all service files, see which are enabled or disabled:</h1>
+<p>systemctl list-unit-files -at service</p>
+<h1 id="to-list-all-units-with-specific-status-inactive-active-enabled-running-exited">To list all units with specific status, inactive, active, enabled, running, exited:</h1>
+<p>systemctl list-units –all –state=inactive</p>
+<h1 id="to-use-systemctl-to-list-all-unit-files">To use systemctl to list all unit files:</h1>
+<p>systemctl list-unit-files</p>
+<h1 id="to-see-log-items-from-the-most-recent-boot">To see log items from the most recent boot:</h1>
+<p>journalctl -b</p>
+<h1 id="to-to-see-only-kernal-messages-add--b-for-at-the-most-recent-boot">To to see only kernal messages, add -b for at the most recent boot:</h1>
+<p>journalctl -k</p>
+<h1 id="to-get-the-log-entries-for-a-service-since-boot">To get the log entries for a service since boot:</h1>
+<p>journalctl -b -u foo.service</p>
+<h1 id="to-list-the-dependencies-of-a-service">To list the dependencies of a service:</h1>
+<h1 id="when-no-service-name-is-specified-lists-the-dependencies-of-default.target">when no service name is specified, lists the dependencies of default.target</h1>
+<h1 id="add--all-to-expand-dependencies-recursively">add -all to expand dependencies recursively</h1>
+<p>systemctl list-dependencies foo.service</p>
+<h1 id="to-see-low-level-details-of-a-service-settings-on-the-system">To see low level details of a service settings on the system:</h1>
+<p>systemctl show foo.service</p>
+<h1 id="to-list-currently-loaded-targets">To list currently loaded targets:</h1>
+<p>systemctl list-units –type=target</p>
+<h1 id="to-change-current-target">To change current target:</h1>
+<p>systemctl isolate foo.target</p>
+<h1 id="to-change-default-target">To change default target:</h1>
+<p>systemctl enable foo.target</p>
+</body>
+</html>

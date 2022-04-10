@@ -1,4 +1,5 @@
-# Error.prototype.lineNumber
+Error.prototype.lineNumber
+==========================
 
 **Non-standard**
 
@@ -6,7 +7,8 @@ This feature is non-standard and is not on a standards track. Do not use it on p
 
 The `lineNumber` property contains the line number in the file that raised this error.
 
-## Examples
+Examples
+--------
 
 ### Using lineNumber
 
@@ -24,7 +26,8 @@ The `lineNumber` property contains the line number in the file that raised this 
 
 This is not a standard feature and lacks widespread support. See the browser compatibility table below.
 
-## Specifications
+Specifications
+--------------
 
 Not part of any standard.
 
@@ -54,7 +57,8 @@ No
 
 No
 
-## See also
+See also
+--------
 
 -   [`Error.prototype.stack`](stack)
 -   [`Error.prototype.columnNumber`](columnnumber)

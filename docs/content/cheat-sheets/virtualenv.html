@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>virtualenv</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="to-create-a-new-environment">To create a new environment:</h1>
+<p>virtualenv /path/to/project/env_name</p>
+<h1 id="to-create-a-new-environment-and-inherit-already-installed-python-libraries">To create a new environment and inherit already installed Python libraries:</h1>
+<p>virtualenv –system-site-package /path/to/project/env_name</p>
+<h1 id="to-create-a-new-environment-with-a-given-python-interpreter">To create a new environment with a given Python interpreter:</h1>
+<p>virtualenv /path/to/project/env_name -p /usr/bin/python/3.4</p>
+<h1 id="to-activate-an-environnment">To activate an environnment:</h1>
+<p>source /path/to/project/env_name/bin/activate</p>
+<h1 id="to-quit-an-environment">To quit an environment:</h1>
+<p>deactivate</p>
+<h1 id="to-virtualenvwrapper-wrapper-for-virtualenv-installation">To Virtualenvwrapper (wrapper for virtualenv) installation:</h1>
+<p>pip install –user virtualenvwrapper</p>
+<h1 id="configuration">configuration</h1>
+<h1 id="add-in-.bashrc-or-similar">add in ~/.bashrc or similar</h1>
+<p>export WORKON_HOME=~/.virtualenvs mkdir -p $WORKON_HOME source ~/.local/bin/virtualenvwrapper.sh</p>
+<h1 id="to-create-a-new-environmment-with-virtualenvwrapper">To create a new environmment (with virtualenvwrapper)</h1>
+<p>mkvirtualenv env_name</p>
+<h1 id="new-environmment-is-stored-in-.virtualenvs">new environmment is stored in ~/.virtualenvs</h1>
+<h1 id="to-activate-environmment-with-virtualenvwrapper">To activate environmment (with virtualenvwrapper)</h1>
+<p>workon env_name</p>
+<h1 id="to-quit-environmment-with-virtualenvwrapper">To quit environmment (with virtualenvwrapper)</h1>
+<p>deactivate</p>
+<h1 id="to-delete-environmment-with-virtualenvwrapper">To delete environmment (with virtualenvwrapper)</h1>
+<p>rmvirtualenv env_name</p>
+</body>
+</html>

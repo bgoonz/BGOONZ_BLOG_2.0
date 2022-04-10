@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>anchor</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="string.prototype.anchor">String.prototype.anchor()</h1>
+<p><strong>Deprecated</strong></p>
+<p>This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see the <a href="#browser_compatibility">compatibility table</a> at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time.</p>
+<p>The <code>anchor()</code> method creates a string beginning with an <code>&lt;a name="..."&gt;</code> start tag, then some text, and then an <code>&lt;/a&gt;</code> end tag.</p>
+<p><strong>Warning:</strong> Don’t use this method. Use <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model">DOM APIs</a> instead. Also, the HTML specification no longer allows the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a"><code>&lt;a&gt;</code></a> element to have a <code>name</code> attribute, so this method doesn’t even create valid markup.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>anchor(name)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>name</code><br />
+A string representing a <code>name</code> value to put into the generated <code>&lt;a name="..."&gt;</code> start tag.</p>
+<h3 id="return-value">Return value</h3>
+<p>A string beginning with an <code>&lt;a name="name"&gt;</code> start tag, then the text str, and then an <code>&lt;/a&gt;</code> end tag.</p>
+<h2 id="description">Description</h2>
+<p>Don’t use this method. Use <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model">DOM APIs</a> instead. Also, the HTML specification no longer allows the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a"><code>&lt;a&gt;</code></a> element to have a <code>name</code> attribute, so this method doesn’t even create valid markup.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-anchor">Using anchor()</h3>
+<pre><code>var myString = &#39;Table of Contents&#39;;
+
+document.body.innerHTML = myString.anchor(&#39;contents_anchor&#39;);</code></pre>
+<p>will output the following HTML:</p>
+<pre><code>&lt;a name=&quot;contents_anchor&quot;&gt;Table of Contents&lt;/a&gt;</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-string.prototype.anchor">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-string.prototype.anchor</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>anchor</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>Starting with version 17, the quotation mark (") is replaced by its HTML reference character (<code>"</code>) in strings supplied for the <code>name</code> parameter.</p>
+<p>No</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="link"><code>String.prototype.link()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/anchor" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/anchor</a></p>
+</body>
+</html>

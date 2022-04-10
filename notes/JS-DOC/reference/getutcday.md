@@ -1,8 +1,10 @@
-# Date.prototype.getUTCDay()
+Date.prototype.getUTCDay()
+==========================
 
 The `getUTCDay()` method returns the day of the week in the specified date according to universal time, where 0 represents Sunday.
 
-## Syntax
+Syntax
+------
 
     getUTCDay()
 
@@ -10,7 +12,8 @@ The `getUTCDay()` method returns the day of the week in the specified date accor
 
 An integer number corresponding to the day of the week for the given date, according to universal time: 0 for Sunday, 1 for Monday, 2 for Tuesday, and so on.
 
-## Examples
+Examples
+--------
 
 ### Using getUTCDay()
 
@@ -19,12 +22,11 @@ The following example assigns the weekday portion of the current date to the var
     var today = new Date();
     var weekday = today.getUTCDay();
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getutcday">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-date.prototype.getutcday</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-date.prototype.getutcday</span></td></tr></tbody></table>
 
 `getUTCDay`
 
@@ -52,7 +54,8 @@ The following example assigns the weekday portion of the current date to the var
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`Date.prototype.getUTCDate()`](getutcdate)
 -   [`Date.prototype.getDay()`](getday)

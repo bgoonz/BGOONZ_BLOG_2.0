@@ -1,7 +1,9 @@
-# To redirect stderr to stdout:
+To redirect stderr to stdout:
+=============================
 
-some-command 2>&1
+some-command 2&gt;&1
 
-# To redirect stderr to <file>:
+To redirect stderr to :
+=======================
 
-some-command 2> <file>
+some-command 2&gt;

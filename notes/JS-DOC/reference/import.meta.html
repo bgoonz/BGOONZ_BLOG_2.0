@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>import.meta</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="import.meta">import.meta</h1>
+<p>The <code>import.meta</code> object exposes context-specific metadata to a JavaScript module. It contains information about the module, like the module’s URL.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>import.meta</code></pre>
+<h2 id="description">Description</h2>
+<p>The syntax consists of the keyword <a href="import"><code>import</code></a>, a dot, and the identifier <code>meta</code>. Normally the left-hand side of the dot is the object on which property access is performed, but here <code>import</code> is not really an object.</p>
+<p>The <code>import.meta</code> object is created by the ECMAScript implementation, with a <a href="../global_objects/null"><code>null</code></a> prototype. The object is extensible, and its properties are writable, configurable, and enumerable.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-import.meta">Using import.meta</h3>
+<p>Given a module <code>my-module.js</code></p>
+<pre><code>&lt;script type=&quot;module&quot; src=&quot;my-module.js&quot;&gt;&lt;/script&gt;</code></pre>
+<p>you can access meta information about the module using the <code>import.meta</code> object.</p>
+<pre><code>console.log(import.meta); // { url: &quot;file:///home/user/my-module.js&quot; }</code></pre>
+<p>It returns an object with a <code>url</code> property indicating the base URL of the module. This will either be the URL from which the script was obtained, for external scripts, or the document base URL of the containing document, for inline scripts.</p>
+<p>Note that this will include query parameters and/or hash (i.e., following the <code>?</code> or <code>#</code>).</p>
+<p>For example, with the following HTML:</p>
+<pre><code>&lt;script type=&quot;module&quot;&gt;
+import &#39;./index.mjs?someURLInfo=5&#39;;
+&lt;/script&gt;</code></pre>
+<p>..the following JavaScript file will log the `<code>someURLInfo</code> parameter:</p>
+<pre><code>// index.mjs
+new URL(import.meta.url).searchParams.get(&#39;someURLInfo&#39;); // 5</code></pre>
+<p>The same applies when a file imports another:</p>
+<pre><code>// index.mjs
+import &#39;./index2.mjs?someURLInfo=5&#39;;
+
+// index2.mjs
+new URL(import.meta.url).searchParams.get(&#39;someURLInfo&#39;); // 5</code></pre>
+<p>Note that while Node.js will pass on query parameters (or the hash) as in the latter example, as of Node 14.1.0, a URL with query parameters will err when loading in the form <code>node --experimental-modules index.mjs?someURLInfo=5</code> (it is treated as a file rather than a URL in this context).</p>
+<p>Such file-specific argument passing may be complementary to that used in the application-wide <code>location.href</code> (with query strings or hash added after the HTML file path) (or on Node.js, through <code>process.argv</code>).</p>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#prod-ImportMeta">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#prod-ImportMeta</span></a>
+</td>
+</tr>
+<tr class="even">
+<td>
+<p><a href="https://html.spec.whatwg.org/multipage/webappapis.html#hostgetimportmetaproperties">HTML Standard (HTML) <br/></p>
+<span class="small">#hostgetimportmetaproperties</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>import.meta</code></p>
+<p>64</p>
+<p>79</p>
+<p>62</p>
+<p>No</p>
+<p>51</p>
+<p>11.1</p>
+<p>64</p>
+<p>64</p>
+<p>62</p>
+<p>47</p>
+<p>12</p>
+<p>9.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="import"><code>import</code></a></li>
+<li><a href="export"><code>export</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import.meta" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import.meta</a></p>
+</body>
+</html>

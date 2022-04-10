@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Mutability-And-Reference-VS-Privative-Types-in-JavaScript</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="mutability-and-reference-vs-privative-types-in-javascript">Mutability And Reference VS Privative Types in JavaScript</h1>
+<p>Mutability &amp;&amp; Primitive &amp;&amp; Reference Examples</p>
+<hr />
+<h3 id="mutability-and-reference-vs-privative-types-in-javascript-1">Mutability And Reference VS Privative Types in JavaScript</h3>
+<h3 id="mutability-primitive-reference-examples">Mutability &amp;&amp; Primitive &amp;&amp; Reference Examples</h3>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*J3mKJ-lWgfS3qi5E.png" class="graf-image" />
+</figure>
+<p><a href="https://doesitmutate.xyz/" class="markup--anchor markup--p-anchor"><strong><em>Mutability</em></strong></a></p>
+<p>In JavaScript, <code>String</code> values are immutable, which means that they cannot be altered once created.</p>
+<p>For example, the following code:</p>
+<pre><code>var myStr = &quot;Bob&quot;;
+myStr[0] = &quot;J&quot;;</code></pre>
+<p>cannot change the value of <code>myStr</code> to <code>Job</code>, because the contents of <code>myStr</code> cannot be altered. Note that this does <em>not</em> mean that <code>myStr</code> cannot be changed, just that the individual characters of a string literal cannot be changed. The only way to change <code>myStr</code> would be to assign it with a new string, like this:</p>
+<pre><code>var myStr = &quot;Bob&quot;;
+myStr = &quot;Job&quot;;</code></pre>
+<h3 id="objects-are-passed-by-reference-are-mutable-and-can-be-modified-by-our-functions">Objects are passed by reference, are mutable, and can be modified by our functions:</h3>
+<pre><code>function rotateLeft(arr, num) {
+    for (let i = 0; i &lt; num; i++) {
+        let el = arr.pop();
+        arr.unshift(el);
+    }
+}
+let myArr = [1, 2, 3, 4, 5, ];
+rotateLeft(myArr, 2);
+console.log(myArr);</code></pre>
+<p>Strings are passed by value, are immutable, and a new array is constructed and returned, because it cannot be changed in place.</p>
+<pre><code>function rotateString(str, num) {
+    return str.slice(num) + str.slice(0, num);
+}
+
+let str = &quot;foobar&quot;;
+let ret = rotateString(str, 3);
+console.log(str);
+console.log(ret);</code></pre>
+<h3 id="dereferencing">Dereferencing</h3>
+<h4 id="arrays">Arrays</h4>
+<p>To dereference an array, use <code>let [var1, var2]</code> syntax.</p>
+<pre><code>let arr = [&#39;one&#39;, &#39;two&#39;, &#39;three&#39;];
+
+let [first] = arr;
+console.log(first);</code></pre>
+<h4 id="objects">Objects</h4>
+<p>To dereference attributes from an object, use <code>let {}</code> syntax.</p>
+<h3 id="primitive-data-types-in-depth">Primitive Data Types in Depth</h3>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/2560/1*mRr-4QeqbjcMUTtQQNOlEw.png" class="graf-image" />
+</figure>
+<h3 id="check-out-my-new-blog">Check Out My New Blog:</h3>
+<p><a href="https://best-celery-b2d7c.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://best-celery-b2d7c.netlify.app/"><strong>Web-Dev-Hub</strong> <br/></p>
+<p><em>Bryan</em> best-celery-b2d7c.netlify.app</a><a href="https://best-celery-b2d7c.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
+<p>By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on <a href="https://medium.com/p/5294422db4b0">May 27, 2021</a>.</p>
+<p><a href="https://medium.com/@bryanguner/mutability-and-reference-vs-privative-types-in-javascript-5294422db4b0" class="p-canonical">Canonical link</a></p>
+<p>August 31, 2021.</p>
+</body>
+</html>

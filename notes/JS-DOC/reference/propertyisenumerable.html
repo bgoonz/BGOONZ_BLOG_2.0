@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>propertyisenumerable</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="object.prototype.propertyisenumerable">Object.prototype.propertyIsEnumerable()</h1>
+<p>The <code>propertyIsEnumerable()</code> method returns a Boolean indicating whether the specified property is enumerable and is the object’s own property.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>propertyIsEnumerable(prop)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>prop</code><br />
+The name of the property to test.</p>
+<h3 id="return-value">Return value</h3>
+<p>A <a href="../boolean"><code>Boolean</code></a> indicating whether the specified property is enumerable and is the object’s own property.</p>
+<h2 id="description">Description</h2>
+<p>Every object has a <code>propertyIsEnumerable</code> method. This method can determine whether the specified property in an object can be enumerated by a <a href="../../statements/for...in"><code>for...in</code></a> loop, with the exception of properties inherited through the prototype chain. If the object does not have the specified property, this method returns <code>false</code>.</p>
+<p><strong>Note:</strong> Bear in mind that enumerable properties are looped over by <a href="../../statements/for...in"><code>for...in</code></a> loops, with the exception of <a href="../symbol"><code>Symbol</code></a>s.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="a-basic-use-of-propertyisenumerable">A basic use of <code>propertyIsEnumerable</code></h3>
+<p>The following example shows the use of <code>propertyIsEnumerable</code> on objects and arrays:</p>
+<pre><code>var o = {};
+var a = [];
+o.prop = &#39;is enumerable&#39;;
+a[0] = &#39;is enumerable&#39;;
+
+o.propertyIsEnumerable(&#39;prop&#39;);   // returns true
+a.propertyIsEnumerable(0);        // returns true</code></pre>
+<h3 id="user-defined-vs.-built-in-objects">User-defined vs. built-in objects</h3>
+<p>The following example demonstrates the enumerability of user-defined vs. built-in properties:</p>
+<pre><code>var a = [&#39;is enumerable&#39;];
+
+a.propertyIsEnumerable(0);          // returns true
+a.propertyIsEnumerable(&#39;length&#39;);   // returns false
+
+Math.propertyIsEnumerable(&#39;random&#39;);   // returns false
+this.propertyIsEnumerable(&#39;Math&#39;);     // returns false</code></pre>
+<h3 id="direct-vs.-inherited-properties">Direct vs. inherited properties</h3>
+<pre><code>var a = [];
+a.propertyIsEnumerable(&#39;constructor&#39;);         // returns false
+
+function firstConstructor() {
+  this.property = &#39;is not enumerable&#39;;
+}
+
+firstConstructor.prototype.firstMethod = function() {};
+
+function secondConstructor() {
+  this.method = function() { return &#39;is enumerable&#39;; };
+}
+
+secondConstructor.prototype = new firstConstructor;
+secondConstructor.prototype.constructor = secondConstructor;
+
+var o = new secondConstructor();
+o.arbitraryProperty = &#39;is enumerable&#39;;
+
+o.propertyIsEnumerable(&#39;arbitraryProperty&#39;);   // returns true
+o.propertyIsEnumerable(&#39;method&#39;);              // returns true
+o.propertyIsEnumerable(&#39;property&#39;);            // returns false
+
+o.property = &#39;is enumerable&#39;;
+
+o.propertyIsEnumerable(&#39;property&#39;);            // returns true
+
+// These return false as they are on the prototype which
+// propertyIsEnumerable does not consider (even though the last two
+// are iteratable with for-in)
+o.propertyIsEnumerable(&#39;prototype&#39;);   // returns false (as of JS 1.8.1/FF3.6)
+o.propertyIsEnumerable(&#39;constructor&#39;); // returns false
+o.propertyIsEnumerable(&#39;firstMethod&#39;); // returns false</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-object.prototype.propertyisenumerable">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-object.prototype.propertyisenumerable</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>propertyIsEnumerable</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>5.5</p>
+<p>4</p>
+<p>3</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties">Enumerability and ownership of properties</a></li>
+<li><a href="../../statements/for...in"><code>for...in</code></a></li>
+<li><a href="keys"><code>Object.keys()</code></a></li>
+<li><a href="defineproperty"><code>Object.defineProperty()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/propertyIsEnumerable" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/propertyIsEnumerable</a></p>
+</body>
+</html>

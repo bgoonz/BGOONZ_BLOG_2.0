@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>strict_non_simple_params</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="syntaxerror-use-strict-not-allowed-in-function-with-non-simple-parameters">SyntaxError: “use strict” not allowed in function with non-simple parameters</h1>
+<p>The JavaScript exception “<code>'use strict'</code> not allowed in function” occurs when a <code>"use strict"</code> directive is used at the top of a function with <a href="../functions/default_parameters">default parameters</a>, <a href="../functions/rest_parameters">rest parameters</a>, or <a href="../operators/destructuring_assignment">destructuring parameters</a>.</p>
+<h2 id="message">Message</h2>
+<pre><code>Edge:
+Cannot apply strict mode on functions with non-simple parameter list
+
+Firefox:
+SyntaxError: &quot;use strict&quot; not allowed in function with default parameter
+SyntaxError: &quot;use strict&quot; not allowed in function with rest parameter
+SyntaxError: &quot;use strict&quot; not allowed in function with destructuring parameter
+
+Chrome:
+SyntaxError: Illegal &#39;use strict&#39; directive in function with non-simple parameter list</code></pre>
+<h2 id="error-type">Error type</h2>
+<p><a href="../global_objects/syntaxerror"><code>SyntaxError</code></a>.</p>
+<h2 id="what-went-wrong">What went wrong?</h2>
+<p>A <code>"use strict"</code> directive is written at the top of a function that has one of the following parameters:</p>
+<ul>
+<li><a href="../functions/default_parameters">Default parameters</a></li>
+<li><a href="../functions/rest_parameters">Rest parameters</a></li>
+<li><a href="../operators/destructuring_assignment">Destructuring parameters</a></li>
+</ul>
+<p>A <code>"use strict"</code> directive is not allowed at the top of such functions per the ECMAScript specification.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="function-statement">Function statement</h3>
+<p>In this case, the function <code>sum</code> has default parameters <code>a=1</code> and <code>b=2</code>:</p>
+<pre><code>function sum(a = 1, b = 2) {
+  // SyntaxError: &quot;use strict&quot; not allowed in function with default parameter
+  &#39;use strict&#39;;
+  return a + b;
+}</code></pre>
+<p>If the function should be in <a href="../strict_mode">strict mode</a>, and the entire script or enclosing function is also okay to be in strict mode, you can move the <code>"use strict"</code> directive outside of the function:</p>
+<pre><code>&#39;use strict&#39;;
+function sum(a = 1, b = 2) {
+  return a + b;
+}</code></pre>
+<h3 id="function-expression">Function expression</h3>
+<p>A function expression can use yet another workaround:</p>
+<pre><code>var sum = function sum([a, b]) {
+  // SyntaxError: &quot;use strict&quot; not allowed in function with destructuring parameter
+  &#39;use strict&#39;;
+  return a + b;
+};</code></pre>
+<p>This can be converted to the following expression:</p>
+<pre><code>var sum = (function() {
+  &#39;use strict&#39;;
+  return function sum([a, b]) {
+    return a + b;
+  };
+})();</code></pre>
+<h3 id="arrow-function">Arrow function</h3>
+<p>If an arrow function needs to access the <code>this</code> variable, you can use the arrow function as the enclosing function:</p>
+<pre><code>var callback = (...args) =&gt; {
+  // SyntaxError: &quot;use strict&quot; not allowed in function with rest parameter
+  &#39;use strict&#39;;
+  return this.run(args);
+};</code></pre>
+<p>This can be converted to the following expression:</p>
+<pre><code>var callback = (() =&gt; {
+  &#39;use strict&#39;;
+  return (...args) =&gt; {
+    return this.run(args);
+  };
+})();</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../strict_mode">Strict mode</a></li>
+<li><a href="../statements/function">function statement</a></li>
+<li><a href="../operators/function">function expression</a></li>
+<li><a href="../functions/default_parameters">Default parameters</a></li>
+<li><a href="../functions/rest_parameters">Rest parameters</a></li>
+<li><a href="../operators/destructuring_assignment">Destructuring parameters</a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Strict_Non_Simple_Params" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Strict_Non_Simple_Params</a></p>
+</body>
+</html>

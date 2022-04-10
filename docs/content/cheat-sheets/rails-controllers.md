@@ -1,8 +1,3 @@
----
-title: Controllers
-category: Rails
----
-
 ### Common stuff
 
     redirect_to root_url
@@ -25,7 +20,7 @@ category: Rails
     path_parameters
     request_parameters
 
-### respond_to
+### respond\_to
 
     respond_to do |format|
       format.html
@@ -34,7 +29,7 @@ category: Rails
       format.js    # Will be executed by the browser
     end
 
-### default_url_options
+### default\_url\_options
 
     # The options parameter is the hash passed in to 'url_for'
     def default_url_options(options)

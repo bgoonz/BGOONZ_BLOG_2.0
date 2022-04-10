@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>reject</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="promise.reject">Promise.reject()</h1>
+<p>The <code>Promise.reject()</code> method returns a <code>Promise</code> object that is rejected with a given reason.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>Promise.reject(reason);</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>reason</code><br />
+Reason why this <code>Promise</code> rejected.</p>
+<h3 id="return-value">Return value</h3>
+<p>A <a href="../promise"><code>Promise</code></a> that is rejected with the given reason.</p>
+<h2 id="description">Description</h2>
+<p>The static <code>Promise.reject</code> function returns a <code>Promise</code> that is rejected. For debugging purposes and selective error catching, it is useful to make <code>reason</code> an <code>instanceof</code> <a href="../error"><code>Error</code></a>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-the-static-promise.reject-method">Using the static Promise.reject() method</h3>
+<pre><code>Promise.reject(new Error(&#39;fail&#39;)).then(function() {
+  // not called
+}, function(error) {
+  console.error(error); // Stacktrace
+});</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-promise.reject">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-promise.reject</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>reject</code></p>
+<p>32</p>
+<p>12</p>
+<p>29</p>
+<p>No</p>
+<p>19</p>
+<p>8</p>
+<p>4.4.3</p>
+<p>32</p>
+<p>29</p>
+<p>19</p>
+<p>8</p>
+<p>2.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../promise"><code>Promise</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/reject" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/reject</a></p>
+</body>
+</html>

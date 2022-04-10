@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Stylus</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Stylus</h1>
+</header>
+<h2 id="getting-started">Getting started</h2>
+<h3 id="css-syntax">CSS syntax</h3>
+<pre class="stylus"><code>.box {
+  color: blue;
+
+  .button {
+    color: red;
+  }
+}</code></pre>
+<p>Stylus is a CSS pre-processor.</p>
+<p>See: <a href="http://stylus-lang.com/">stylus-lang.com</a></p>
+<h3 id="indent-syntax">Indent syntax</h3>
+<pre class="stylus"><code>.box
+  color: blue
+
+  .button
+    color: red</code></pre>
+<p>Also works! The colon is optional, as well. This is typically the syntax used with Stylus documents.</p>
+<h3 id="mixins">Mixins</h3>
+<pre class="stylus"><code>caps-type()
+  text-transform: uppercase
+  letter-spacing: 0.05em</code></pre>
+<p>{: data-line=“1”}</p>
+<pre class="stylus"><code>h5
+  caps-type()</code></pre>
+<p>{: data-line=“2”}</p>
+<p>See <a href="#mixins-1">Mixins</a> below.</p>
+<h3 id="variables">Variables</h3>
+<pre class="stylus"><code>royal-blue = #36a</code></pre>
+<p>{: data-line=“1”}</p>
+<pre class="stylus"><code>div
+  color: royal-blue</code></pre>
+<h2 id="mixins-1">Mixins</h2>
+<h3 id="without-arguments">Without arguments</h3>
+<pre class="stylus"><code>red-border()
+  border: solid 2px red</code></pre>
+<p>{: data-line=“1”}</p>
+<pre class="stylus"><code>div
+  red-border()</code></pre>
+<p>{: data-line=“2”}</p>
+<p>See: <a href="http://stylus-lang.com/docs/mixins.html">Mixins</a></p>
+<h3 id="with-arguments">With arguments</h3>
+<pre class="stylus"><code>border-radius(n)
+  -webkit-border-radius: n
+  border-radius: n</code></pre>
+<p>{: data-line=“1”}</p>
+<pre class="stylus"><code>div
+  border-radius: 2px
+  border-radius(2px)</code></pre>
+<p>{: data-line=“2,3”}</p>
+<p>Mixins can be applied in two different ways.</p>
+<h3 id="argument-defaults">Argument defaults</h3>
+<pre class="stylus"><code>border-radius(n = 2px)
+  -webkit-border-radius: n</code></pre>
+<p>{: data-line=“1”}</p>
+<h3 id="block-mixins">Block mixins</h3>
+<pre class="stylus"><code>mobile()
+  @media (max-width: 480px)
+    {block}</code></pre>
+<pre class="stylus"><code>+mobile()
+  width: 10px</code></pre>
+<p>{: data-line=“1”}</p>
+<p>See: <a href="http://stylus-lang.com/docs/mixins.html#block-mixins">Block mixins</a></p>
+<h3 id="rest-params">Rest params</h3>
+<pre class="stylus"><code>shadow(offset-x, args...)
+  box-shadow: offset-x args
+  margin-top: offset-x</code></pre>
+<p>{: data-line=“1”}</p>
+<pre class="stylus"><code>#login
+  shadow: 1px 2px 5px #eee</code></pre>
+<p>See: <a href="http://stylus-lang.com/docs/vargs.html">Rest params</a></p>
+<h2 id="functions">Functions</h2>
+<h3 id="functions-1">Functions</h3>
+<pre class="stylus"><code>add(a, b)
+  a + b</code></pre>
+<p>{: data-line=“1”}</p>
+<pre class="stylus"><code>body
+  padding: add(10px, 5)</code></pre>
+<p>{: data-line=“2”}</p>
+<p>See: <a href="http://stylus-lang.com/docs/functions.html">Functions</a></p>
+<h3 id="argument-defaults-1">Argument defaults</h3>
+<pre class="stylus"><code>add(a, b = 2)
+  a + b</code></pre>
+<p>{: data-line=“1”}</p>
+<p>See: <a href="http://stylus-lang.com/docs/functions.html#argument-defaults">Argument defaults</a></p>
+<h3 id="named-parameters">Named parameters</h3>
+<pre class="stylus"><code>shadow(x, y)
+  x y (y * 1.5) #000</code></pre>
+<pre class="stylus"><code>.button
+  box-shadow: shadow(x: 2, y: 4)</code></pre>
+<p>{: data-line=“2”}</p>
+<p>See: <a href="http://stylus-lang.com/docs/functions.html#named-parameters">Named parameters</a></p>
+<h3 id="multiple-return-values">Multiple return values</h3>
+<pre class="stylus"><code>sizes()
+  8px 16px</code></pre>
+<p>{: data-line=“2”}</p>
+<pre class="stylus"><code>sizes()[0]  // → 8px
+sizes()[1]  // → 16px</code></pre>
+<p>See: <a href="http://stylus-lang.com/docs/functions.html#multiple-return-values">Multiple return values</a></p>
+<h2 id="values">Values</h2>
+<h3 id="conditional-assignment">Conditional assignment</h3>
+<pre class="stylus"><code>royal-blue = #36a
+royal-blue ?= #89f</code></pre>
+<p>{: data-line=“2”}</p>
+<pre class="stylus"><code>div
+  color: royal-blue  // #36a</code></pre>
+<p><code>?=</code> will only set a variable if it’s previously unset.</p>
+<p>See: <a href="https://stylus-lang.com/docs/operators.html#conditional-assignment--">Conditional assignment</a></p>
+<h3 id="property-lookup">Property lookup</h3>
+<pre class="stylus"><code>.logo
+  width: w = 150
+  margin-left: -(w / 2)
+  // or
+  height: 80px
+  margin-top: -(@height / 2)</code></pre>
+<p>{: data-line=“2,3”}</p>
+<p>See: <a href="https://stylus-lang.com/docs/variables.html#property-lookup">Property lookup</a></p>
+<h3 id="interpolation">Interpolation</h3>
+<pre class="stylus"><code>-{prefix}-border-radius: 2px</code></pre>
+<p>See: <a href="https://stylus-lang.com/docs/interpolation.html">Interpolation</a></p>
+<h3 id="color-operators">Color operators</h3>
+<pre class="stylus"><code>#888 + 50%    // → #c3c3c3 (lighten)
+#888 - 50%    // → #444 (darken)
+#f00 + 50deg  // → #ffd500 (hue)</code></pre>
+<h3 id="casting">Casting</h3>
+<pre class="stylus"><code>n = 5px</code></pre>
+<pre class="stylus"><code>foo: (n)em
+foo: (n * 5)%</code></pre>
+<p>{: data-line=“1,2”}</p>
+<h3 id="lookup">Lookup</h3>
+<pre class="stylus"><code>light-blue = #3bd
+name = &#39;blue&#39;
+lookup(&#39;light-&#39; + name)</code></pre>
+<p>See: <a href="https://stylus-lang.com/docs/bifs.html#lookupname">lookup</a></p>
+<h2 id="advanced-features">Advanced features</h2>
+<h3 id="conditional">Conditional</h3>
+<pre class="stylus"><code>if color == blue
+  display: block
+else if true and true
+  display: inline
+else if &#39;hey&#39; is not &#39;bye&#39;
+  display: flex
+else
+  display: none</code></pre>
+<p>Aliases:</p>
+<div class="line-block"><code>==</code> | <code>is</code> |<br />
+<code>!=</code> | <code>is not</code> |<br />
+<code>!=</code> | <code>isnt</code> |</div>
+<p>See: <a href="https://stylus-lang.com/docs/functions.html#conditionals">Conditionals</a></p>
+<h3 id="for-loops">For loops</h3>
+<pre class="stylus"><code>font-size-1 = 10px
+font-size-2 = 20px
+font-size-3 = 30px
+
+for i in 1..3
+  .text-{i}
+    font-size: lookup(&#39;font-size-&#39; + i)</code></pre>
+<p>{: data-line=“5”}</p>
+<h3 id="definition-check">Definition check</h3>
+<pre class="stylus"><code>if ohnoes is defined
+  color: blue</code></pre>
+<p>{: data-line=“1”}</p>
+<p>See: <a href="https://stylus-lang.com/docs/operators.html#variable-definition-is-defined">is defined</a></p>
+<h3 id="false-values">False values</h3>
+<pre class="stylus"><code>0
+null
+false
+&#39;&#39;</code></pre>
+<h3 id="type-check">Type check</h3>
+<pre class="stylus"><code>if val is a &#39;string&#39;
+if val is a &#39;ident&#39;
+if #fff is a &#39;rgba&#39;    // → true</code></pre>
+<p>See: <a href="https://stylus-lang.com/docs/operators.html#instance-check-is-a">Instance check</a></p>
+<h2 id="built-in-functions">Built-in functions</h2>
+<h3 id="color-functions">Color functions</h3>
+<pre class="stylus"><code>alpha(#fff)   //→ 1
+alpha(rgba(0, 0, 0, 0.2))   //→ 0.2</code></pre>
+<pre class="stylus"><code>dark(black)  //→ true
+light(black) //→ false</code></pre>
+<pre class="stylus"><code>hue(#0a0)         //→ 50deg
+saturation(#f00)  //→ 100%
+lightness(#f00)   //→ 50%
+luminosity(#f00)  //→ 0.2126</code></pre>
+<pre class="stylus"><code>hue(#0a0, 0deg)
+saturation(#f00, 50%)
+lightness(#f00)</code></pre>
+<pre class="stylus"><code>lighten(color, 10%)
+darken(color, 10%)
+saturate(color, 10%)
+desaturate(color, 10%)
+invert(color)</code></pre>
+<pre class="stylus"><code>tint(color, 50%)  // mix with white
+shade(color, 50%) // mix with black</code></pre>
+<pre class="stylus"><code>unquote(string)</code></pre>
+<p>See: <a href="http://stylus-lang.com/docs/bifs.html">Built-in functions</a></p>
+<h3 id="image-size">Image size</h3>
+<pre class="stylus"><code>width:  image-size(&#39;tux.png&#39;)[0]
+height: image-size(&#39;tux.png&#39;)[1]</code></pre>
+<p>Returns the width and height of a given image.</p>
+<p>See: <a href="http://stylus-lang.com/docs/bifs.html#image-sizepath">image-size</a></p>
+<h3 id="caching">Caching</h3>
+<pre class="stylus"><code>size($width)
+  +cache(&#39;w&#39; + $width)
+    width: $width
+.a { size: 10px }
+.b { size: 10px }</code></pre>
+<pre class="stylus"><code>// yields: .a, b { width: 10px }</code></pre>
+<p>Applies its contents to the given selector on the first call, but would <span class="citation" data-cites="extend">@extend</span> the first call’s selector at the second call with the same params.</p>
+<p>See: <a href="http://stylus-lang.com/docs/bifs.html#cachekeys">cache</a></p>
+<h3 id="add-property">Add Property</h3>
+<pre class="stylus"><code>gradient(color)
+  add-property(&#39;background-image&#39;, linear-gradient(top, color, darken(color, 20%)))
+  color</code></pre>
+<pre class="stylus"><code>body
+  background: gradient(red)</code></pre>
+<p>See: <a href="http://stylus-lang.com/docs/bifs.html#add-propertyname-expr">add-property</a></p>
+<h3 id="sprintf">sprintf</h3>
+<pre class="stylus"><code>&#39;-webkit-gradient(%s, %s, %s)&#39; % (linear (0 0) (0 100%))
+// → -webkit-gradient(linear, 0 0, 0 100%)</code></pre>
+<pre class="stylus"><code>s(&quot;rgba(0, 0, 0, %s)&quot;, 0.3)</code></pre>
+<p>See: <a href="http://stylus-lang.com/docs/bifs.html#sfmt-">s</a></p>
+<h3 id="embed-url">Embed URL</h3>
+<pre><code>background: embedurl(&#39;logo.png&#39;)
+// → background: url(&quot;data:image/png;base64,…&quot;)</code></pre>
+<p>See: <a href="http://stylus-lang.com/docs/bifs.html#embedurlpath-encoding">embedurl</a></p>
+</body>
+</html>

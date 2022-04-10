@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Life-Saving-Bash-Scripts-Part</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="life-saving-bash-scripts-part-2">Life Saving Bash Scripts Part 2</h1>
+<p>I am not saying they’re in any way special compared with other bash scripts… but when I consider that you can never recover time spent… the…</p>
+<hr />
+<h3 id="life-saving-bash-scripts-part-2-1">Life Saving Bash Scripts Part 2</h3>
+<h4 id="i-am-not-saying-theyre-in-any-way-special-compared-with-other-bash-scripts-but-when-i-consider-that-you-can-never-recover-time-spent-the-value-of-these-commands-in-my-life-quickly-becomes-incalculable">I am not saying they’re in any way special compared with other bash scripts… but when I consider that you can never recover time spent… the value of these commands in my life quickly becomes incalculable!</h4>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*aWKygEnTVdHuulB4.gif" class="graf-image" />
+</figure>
+<p>Below the following 20 commands I will include <a href="https://gist.github.com/bgoonz/2d2314216d337a69b31bcb5a8880ade7" class="markup--anchor markup--pullquote-anchor">the gist files</a> so you can download these commands all at once as well as see them syntax highlighted but I decided to include them as plain code blocks for the ease with which they can be copied and pasted as well as detected by the web crawlers of various search engines (it could be the case that it has no affect on seo… but that’s a chance I don’t have to take).</p>
+<hr />
+<h3 id="discover-more">Discover More:</h3>
+<p><a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong> <br/></p>
+<p><em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
+<hr />
+<h3 id="part-2-of-this-series-is-the-infinitely-more-comprehensive-part-1-of-the-series">Part 2 of this series is the infinitely more comprehensive part 1 of the series:</h3>
+<p><a href="https://medium.com/geekculture/bash-commands-that-save-time-920fb6ab9d0a" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/geekculture/bash-commands-that-save-time-920fb6ab9d0a"><strong>Bash Commands That Save Me Time and Frustration (Part 1)</strong> <br/></p>
+<p><em>Here’s a list of bash commands that stand between me and insanity.</em>medium.com</a><a href="https://medium.com/geekculture/bash-commands-that-save-time-920fb6ab9d0a" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
+<h3 id="update-more-practical-commands">Update (more practical commands):</h3>
+<p>Find files that have been modified on your system in the past 60 minutes</p>
+<pre><code>find / -mmin 60 -type f</code></pre>
+<p>Find all files larger than 20M</p>
+<pre><code>find / -type f -size +20M</code></pre>
+<p>Find duplicate files (based on MD5 hash)</p>
+<pre><code>find -type f -exec md5sum &#39;{}&#39; &#39;;&#39; | sort | uniq --all-repeated=separate -w 33</code></pre>
+<p>Change permission only for files</p>
+<pre><code>cd /var/www/site &amp;&amp; find . -type f -exec chmod 766 {} \;
+cd /var/www/site &amp;&amp; find . -type f -exec chmod 664 {} +</code></pre>
+<p>Change permission only for directories</p>
+<pre><code>cd /var/www/site &amp;&amp; find . -type d -exec chmod g+x {} \;
+cd /var/www/site &amp;&amp; find . -type d -exec chmod g+rwx {} +</code></pre>
+<p>Find files and directories for specific user/group</p>
+<pre><code># User:
+find . -user &lt;username&gt; -print
+find /etc -type f -user &lt;username&gt; -name &quot;*.conf&quot;
+
+# Group:
+find /opt -group &lt;group&gt;
+find /etc -type f -group &lt;group&gt; -iname &quot;*.conf&quot;</code></pre>
+<p>Find files and directories for all without specific user/group</p>
+<pre><code># User:
+find . \! -user &lt;username&gt; -print
+
+# Group:
+find . \! -group &lt;group&gt;</code></pre>
+<p>Looking for files/directories that only have certain permission</p>
+<pre><code># User
+find . -user &lt;username&gt; -perm -u+rw # -rw-r--r--
+find /home -user $(whoami) -perm 777 # -rwxrwxrwx
+
+# Group:
+find /home -type d -group &lt;group&gt; -perm 755 # -rwxr-xr-x</code></pre>
+<p>Delete older files than 60 days</p>
+<pre><code>find . -type f -mtime +60 -delete</code></pre>
+<p>Recursively remove all empty sub-directories from a directory</p>
+<pre><code>find . -depth  -type d  -empty -exec rmdir {} \;</code></pre>
+<p>How to find all hard links to a file</p>
+<pre><code>find &lt;/path/to/dir&gt; -xdev -samefile filename</code></pre>
+<p>Recursively find the latest modified files</p>
+<pre><code>find . -type f -exec stat --format &#39;%Y :%y %n&#39; &quot;{}&quot; \; | sort -nr | cut -d: -f2- | head</code></pre>
+<p>Recursively find/replace of a string with sed</p>
+<pre><code>find . -not -path &#39;*/\.git*&#39; -type f -print0 | xargs -0 sed -i &#39;s/foo/bar/g&#39;</code></pre>
+<p>Recursively find/replace of a string in directories and file names</p>
+<pre><code>find . -depth -name &#39;*test*&#39; -execdir bash -c &#39;mv -v &quot;$1&quot; &quot;${1//foo/bar}&quot;&#39; _ {} \;</code></pre>
+<p>Recursively find suid executables</p>
+<pre><code>find / \( -perm -4000 -o -perm -2000 \) -type f -exec ls -la {} \;</code></pre>
+<hr />
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" />
+</figure>
+<h3 id="sanitize-directory">1.) Sanitize Directory:</h3>
+<pre><code>sanitize() {
+  shopt -s extglob;
+
+filename=$(basename &quot;$1&quot;)
+  directory=$(dirname &quot;$1&quot;)
+
+filename_clean=$(echo &quot;$filename&quot; | sed -e &#39;s/[\\/:\*\?&quot;&lt;&gt;\|\x01-\x1F\x7F]//g&#39; -e &#39;s/^\(nul\|prn\|con\|lpt[0-9]\|com[0-9]\|aux\)\(\.\|$\)//i&#39; -e &#39;s/^\.*$//&#39; -e &#39;s/^$/NONAME/&#39;)
+
+if (test &quot;$filename&quot; != &quot;$filename_clean&quot;)
+  then
+    mv -v &quot;$1&quot; &quot;$directory/$filename_clean&quot;
+  fi
+}
+
+export -f sanitize
+
+sanitize_dir() {
+  find &quot;$1&quot; -depth -exec bash -c &#39;sanitize &quot;$0&quot;&#39; {} \;
+}
+
+sanitize_dir &#39;/path/to/somewhere&#39;</code></pre>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" />
+</figure>
+<h3 id="recursively-delete-node-modules">2.)Recursively Delete Node Modules:</h3>
+<pre><code>find . -name &#39;node_modules&#39; -type d -prune -exec rm -rf &#39;{}&#39; +</code></pre>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" />
+</figure>
+<h3 id="remove-trailing-whitespace-from-filenames">3.)Remove trailing whitespace from filenames:</h3>
+<pre><code>rename  &#39;s/ *$//&#39; *</code></pre>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" />
+</figure>
+<h3 id="remove-string-from-file-name">4.)Remove string from file name:</h3>
+<pre><code>for filename in *badString*; do mv &quot;$filename&quot; &quot;${filename//badstring/replaceString}&quot;; done</code></pre>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" />
+</figure>
+<h3 id="remove-whitespace-from-filenames">5.)Remove whitespace from filenames:</h3>
+<pre><code>for file in *; do mv &quot;$file&quot; `echo $file | tr &#39; &#39; &#39;_&#39;` ; done</code></pre>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" />
+</figure>
+<h3 id="remove-script-tags-from-html-and-the-content-in-between-them.">6.) Remove &lt;script&gt; tags from html and the content in-between them.</h3>
+<pre><code>sed -n -e &#39;/&lt;script&gt;/,/&lt;\/script&gt;/p&#39; example.html &gt;out.js</code></pre>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" />
+</figure>
+<h3 id="remove-invalid-characters-from-file">7.) Remove Invalid characters from file:</h3>
+<pre><code>for f in */; do nf=$(echo &quot;$f&quot; |sed -e &#39;s/[^A-Za-z0-9.]/./g&#39; -e &#39;s/\.\.\././g&#39; -e &#39;s/\.\././g&#39; -e &#39;s/\.*$//&#39;); test &quot;$f&quot; != &quot;$nf&quot; &amp;&amp; mv &quot;$f&quot; &quot;$nf&quot; &amp;&amp; echo &quot;$nf&quot;; done</code></pre>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" />
+</figure>
+<h3 id="remember-git-credentials-for-future-login">8.) Remember Git Credentials For Future Login:</h3>
+<pre><code>git config --global credential.helper store</code></pre>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" />
+</figure>
+<h3 id="recursive-npm-install">9.)Recursive npm install:</h3>
+<pre><code>npm i -g recursive-install
+
+npm-recursive-install</code></pre>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" />
+</figure>
+<h3 id="generate-numbered-folders">10.)Generate Numbered Folders:</h3>
+<pre><code>n=1;
+max=50;
+while [ &quot;$n&quot; -le &quot;$max&quot; ]; do
+  mkdir &quot;s$n&quot;
+  n=`expr &quot;$n&quot; + 1`;
+done</code></pre>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" />
+</figure>
+<h3 id="traverse-directories-recursivley-and-delete-files-whos-name-match-a-specified-string">11.) Traverse Directories recursivley and delete files who’s name match a specified string:</h3>
+<pre><code>find . -type f -exec sed -i &#39;/badFolder/d&#39; ./* {} \;</code></pre>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" />
+</figure>
+<h3 id="recursivley-remove-empty-files">12.) recursivley remove empty files:</h3>
+<pre><code>find . -empty -type f -print -delete</code></pre>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" />
+</figure>
+<h3 id="recursively-remove-empty-folders">13.)recursively remove empty folders</h3>
+<pre><code>find . -empty -type d -print -delete</code></pre>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" />
+</figure>
+<h3 id="remove-a-string-from-files-of-a-certain-extension-or-group-of-extensions">14.) Remove a string from files of a certain extension or group of extensions:</h3>
+<pre><code>find . -type f -a \( -name &quot;*.html&quot; -o -name &quot;*.js&quot; -o -name &quot;*.css&quot; -o -name &quot;*.md&quot; \) -a -exec sed -i  &#39;/BADSTRING/d&#39; &#39;{}&#39; +</code></pre>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" />
+</figure>
+<h3 id="recursively-remove-from-all-html-files-any-lines-containing-the-string-badtext">15.) Recursively remove from all html files any lines containing the string “badText”</h3>
+<pre><code>find . -type f -exec sed -i &#39;/badText/d&#39; ./*.html {} \;</code></pre>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" />
+</figure>
+<h3 id="list-the-path-of-all-html-files-in-directory-or-any-other-file-extension">16.) List the path of all html files in directory… (or any other file extension):</h3>
+<pre><code>find ./ | grep -i &quot;\.html*$&quot;
+ls -R &#39;./&#39; | awk &#39;
+/:$/&amp;&amp;f{s=$0;f=0}
+/:$/&amp;&amp;!f{sub(/:$/,&quot;&quot;);s=$0;f=1;next}
+NF&amp;&amp;f{ print s&quot;/&quot;$0 }&#39;&gt;listing.md</code></pre>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" />
+</figure>
+<h3 id="delete-files-over-75mb-to-avoid-tripping-github-lfs-rules.">17.) Delete files over 75MB (to avoid tripping github LFS rules).</h3>
+<pre><code>find . -size +75M -a -print -a -exec rm -f {} \;</code></pre>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" />
+</figure>
+<h3 id="populate-each-folder-with-a-dummy-deleteme.txt-file-recursively">18.) Populate each folder with a dummy deleteme.txt file recursively:</h3>
+<pre><code>for x in &quot;./&quot;/*/; do
+  (cd &quot;$x&quot;
+   files=(*)
+   printf &#39;%s\n&#39; &quot;${files[@]}&quot; &gt; deleteme.txt
+  )
+done</code></pre>
+<p><span class="graf-dropCap">P</span>ANDOC</p>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" />
+</figure>
+<h3 id="convert-from-markdown-html">19.) Convert from Markdown==⇒ HTML</h3>
+<pre><code>find ./ -iname &quot;*.md&quot; -type f -exec sh -c &#39;pandoc — standalone &quot;${0}&quot; -o &quot;${0%.md}.html&quot;&#39; {} \;</code></pre>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" />
+</figure>
+<h3 id="convert-from-html-markdown">20.) Convert from HTML ==⇒ Markdown</h3>
+<pre><code>find ./ -iname &quot;*.html&quot; -type f -exec sh -c &#39;pandoc — wrap=none — from html — to markdown_strict &quot;${0}&quot; -o &quot;${0%.html}.md&quot;&#39; {} \;</code></pre>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" />
+</figure>
+<h3 id="discover-more-1">Discover More:</h3>
+<p><span class="graf-dropCap">P</span>ersonal Blog:</p>
+<p><a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong> <br/></p>
+<p><em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" />
+</figure>
+<p>By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on <a href="https://medium.com/p/b40c8ee22682">July 6, 2021</a>.</p>
+<p><a href="https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682" class="p-canonical">Canonical link</a></p>
+<p>August 6, 2021.</p>
+</body>
+</html>

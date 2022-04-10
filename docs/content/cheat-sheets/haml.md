@@ -1,71 +1,48 @@
----
-title: title
-subtitle: subtitle
-date: '2022-01-03'
-thumb_img_alt: lorem-ipsum
-content_img_alt: lorem-ipsum
-excerpt: lorem-ipsum
-seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
-template: post
-thumb_img_path: images/css-72a655a7.jpg
----
+subtitle
 
----
+2022-01-03
 
-title: Haml
-category: Markup
+------------------------------------------------------------------------
 
-prism_languages: [haml]
+title: Haml category: Markup
 
----
+prism\_languages: \[haml\]
+
+------------------------------------------------------------------------
 
 ### Doctype
 
-```haml
-!!! 5
-```
+    !!! 5
 
 ### Tags
 
-```haml
-%html
-  %head
-    %title
-  %body
-    %h1 Hello World
-    %br/
-```
+    %html
+      %head
+        %title
+      %body
+        %h1 Hello World
+        %br/
 
-### Classes and ID's
+### Classes and ID’s
 
-```haml
-%p.class-example
-.no-tag-defaults-to-div
-%div#butItCanBeIncluded
-```
+    %p.class-example
+    .no-tag-defaults-to-div
+    %div#butItCanBeIncluded
 
 ### Inline Attributes
 
 Either hash syntax works
 
-```haml
-%meta{ name: "viewport", content: "width=device-width, initial-scale=1.0" }
-%input{ :type => "text", :required => true }
-```
+    %meta{ name: "viewport", content: "width=device-width, initial-scale=1.0" }
+    %input{ :type => "text", :required => true }
 
 ### Ruby
 
-```haml
--# This is a comment
--# Anything starting with a hyphen signals to Haml that Ruby is coming
-- @arr = [1, 2, 3]
-- @str = "test"
--# Equal signals output
-= render partial: "shared/header"
-= yield
-= link_to page_url
-```
+    -# This is a comment
+    -# Anything starting with a hyphen signals to Haml that Ruby is coming
+    - @arr = [1, 2, 3]
+    - @str = "test"
+    -# Equal signals output
+    = render partial: "shared/header"
+    = yield
+    = link_to page_url

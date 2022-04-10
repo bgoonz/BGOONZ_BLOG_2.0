@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="combination-sum-problem">Combination Sum Problem</h1>
+<p>Given a <strong>set</strong> of candidate numbers (<code>candidates</code>) <strong>(without duplicates)</strong> and a target number (<code>target</code>), find all unique combinations in <code>candidates</code> where the candidate numbers sums to <code>target</code>.</p>
+<p>The <strong>same</strong> repeated number may be chosen from <code>candidates</code> unlimited number of times.</p>
+<p><strong>Note:</strong></p>
+<ul>
+<li>All numbers (including <code>target</code>) will be positive integers.</li>
+<li>The solution set must not contain duplicate combinations.</li>
+</ul>
+<h2 id="examples">Examples</h2>
+<pre><code>Input: candidates = [2,3,6,7], target = 7,
+
+A solution set is:
+[
+  [7],
+  [2,2,3]
+]</code></pre>
+<pre><code>Input: candidates = [2,3,5], target = 8,
+
+A solution set is:
+[
+  [2,2,2,2],
+  [2,3,3],
+  [3,5]
+]</code></pre>
+<h2 id="explanations">Explanations</h2>
+<p>Since the problem is to get all the possible results, not the best or the number of result, thus we don’t need to consider DP (dynamic programming), backtracking approach using recursion is needed to handle it.</p>
+<p>Here is an example of decision tree for the situation when <code>candidates = [2, 3]</code> and <code>target = 6</code>:</p>
+<pre><code>                0
+              /   \
+           +2      +3
+          /   \      \
+       +2       +3    +3
+      /  \     /  \     \
+    +2    ✘   ✘   ✘     ✓
+   /  \
+  ✓    ✘</code></pre>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://leetcode.com/problems/combination-sum/description/">LeetCode</a></li>
+</ul>
+</body>
+</html>

@@ -1,51 +1,48 @@
----
-title: title
-subtitle: subtitle
-date: '2022-01-03'
-thumb_img_alt: lorem-ipsum
-content_img_alt: lorem-ipsum
-excerpt: lorem-ipsum
-seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
-template: post
-thumb_img_path: images/css-72a655a7.jpg
----
+subtitle
 
-# To view the differences between two files:
+2022-01-03
 
-diff -u <file-1> <file-2>
+To view the differences between two files:
+==========================================
 
-# To view the differences between two directories:
+diff -u
 
-diff -ur <dir-1> <dir-2>
+To view the differences between two directories:
+================================================
 
-# To ignore whitespace:
+diff -ur
 
-diff -ub <file-1> <file-2>
+To ignore whitespace:
+=====================
 
-# To ignore blank lines:
+diff -ub
 
-diff -uB <file-1> <file-2>
+To ignore blank lines:
+======================
 
-# To ignore the differences between uppercase and lowercase:
+diff -uB
 
-diff -ui <file-1> <file-2>
+To ignore the differences between uppercase and lowercase:
+==========================================================
 
-# To report whether the files differ:
+diff -ui
 
-diff -q <file-1> <file-2>
+To report whether the files differ:
+===================================
 
-# To report whether the files are identical:
+diff -q
 
-diff -s <file-1> <file-2>
+To report whether the files are identical:
+==========================================
 
-# To diff the output of two commands or scripts:
+diff -s
 
-diff <(command1) <(command2)
+To diff the output of two commands or scripts:
+==============================================
 
-# To generate a patch file from two files:
+diff &lt;(command1) &lt;(command2)
 
-diff -Naur <file-1> <file-2> > <patch-file>
+To generate a patch file from two files:
+========================================
+
+diff -Naur &gt;

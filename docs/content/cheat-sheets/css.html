@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2022-01-03" />
+  <title>title</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">title</h1>
+<p class="subtitle">subtitle</p>
+<p class="date">2022-01-03</p>
+</header>
+<hr />
+<p>title: CSS category: CSS</p>
+<p>weight: -1 keywords:</p>
+<ul>
+<li>“margin, padding, border”</li>
+<li>“div, .class, #id, [attr]”</li>
+<li>“font, background”</li>
+<li>“display: block, inline, flex”</li>
+<li>Selectors</li>
+<li>Properties</li>
+</ul>
+<hr />
+<h2 id="basics">Basics</h2>
+<h3 id="selectors">Selectors</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode css"><code class="sourceCode css"><a class="sourceLine" id="cb1-1" title="1"><span class="fu">.class</span> {</a>
+<a class="sourceLine" id="cb1-2" title="2">    <span class="kw">font-weight</span>: <span class="dv">bold</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb1-3" title="3">}</a></code></pre></div>
+<p>{: .-setup}</p>
+<table>
+<thead>
+<tr class="header">
+<th>Selector</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>*</code></td>
+<td>All elements</td>
+</tr>
+<tr class="even">
+<td><code>div</code></td>
+<td>Element</td>
+</tr>
+<tr class="odd">
+<td><code>.class</code></td>
+<td>Class</td>
+</tr>
+<tr class="even">
+<td><code>#id</code></td>
+<td>ID</td>
+</tr>
+<tr class="odd">
+<td><code>[disabled]</code></td>
+<td>Attribute</td>
+</tr>
+<tr class="even">
+<td><code>[role="dialog"]</code></td>
+<td>Attribute</td>
+</tr>
+</tbody>
+</table>
+<h3 id="combinators">Combinators</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Selector</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>.parent .child</code></td>
+<td>Descendant</td>
+</tr>
+<tr class="even">
+<td><code>.parent &gt; .child</code></td>
+<td>Direct descendant</td>
+</tr>
+<tr class="odd">
+<td><code>.child + .sibling</code></td>
+<td>Adjacent sibling</td>
+</tr>
+<tr class="even">
+<td><code>.child ~ .sibling</code></td>
+<td>Far sibling</td>
+</tr>
+<tr class="odd">
+<td><code>.class1.class2</code></td>
+<td>Have both classes</td>
+</tr>
+</tbody>
+</table>
+<h3 id="attribute-selectors">Attribute selectors</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Selector</th>
+<th>Description</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>[role="dialog"]</code></td>
+<td><code>=</code> Exact</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>[class~="box"]</code></td>
+<td><code>~=</code> Has word</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>[class            | ="box"]</code></td>
+<td><code>| =</code>Exact or prefix (eg,<code>value-</code>)</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>[href$=".doc"]</code></td>
+<td><code>$=</code> Ends in</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>[href^="/index"]</code></td>
+<td><code>^=</code> Begins with</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>[class*="-is-"]</code></td>
+<td><code>*=</code> Contains</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="pseudo-classes">Pseudo-classes</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Selector</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>:target</code></td>
+<td>eg, <code>h2#foo:target</code></td>
+</tr>
+<tr class="even">
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td><code>:disabled</code></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>:focus</code></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>:active</code></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td><code>:nth-child(3)</code></td>
+<td>3rd child</td>
+</tr>
+<tr class="even">
+<td><code>:nth-child(3n+2)</code></td>
+<td>2nd child in groups of 3</td>
+</tr>
+<tr class="odd">
+<td><code>:nth-child(-n+4)</code></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td><code>:nth-last-child(2)</code></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>:nth-of-type(2)</code></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td><code>:checked</code></td>
+<td>Checked inputs</td>
+</tr>
+<tr class="odd">
+<td><code>:disabled</code></td>
+<td>Disabled elements</td>
+</tr>
+<tr class="even">
+<td><code>:default</code></td>
+<td>Default element in a group</td>
+</tr>
+<tr class="odd">
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td><code>:empty</code></td>
+<td>Elements without children</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pseudo-class-variations">Pseudo-class variations</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Selector</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>:first-of-type</code></td>
+</tr>
+<tr class="even">
+<td><code>:last-of-type</code></td>
+</tr>
+<tr class="odd">
+<td><code>:nth-of-type(2)</code></td>
+</tr>
+<tr class="even">
+<td><code>:only-of-type</code></td>
+</tr>
+<tr class="odd">
+<td>—</td>
+</tr>
+<tr class="even">
+<td><code>:first-child</code></td>
+</tr>
+<tr class="odd">
+<td><code>:last-child</code></td>
+</tr>
+<tr class="even">
+<td><code>:nth-child(2)</code></td>
+</tr>
+<tr class="odd">
+<td><code>:only-child</code></td>
+</tr>
+</tbody>
+</table>
+<p>{: .-left-align}</p>
+<h2 id="fonts">Fonts</h2>
+<p>{: .-left-reference}</p>
+<h3 id="properties">Properties</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Property</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>font-family:</code></td>
+<td><code>&lt;font&gt;, &lt;fontN&gt;</code></td>
+</tr>
+<tr class="even">
+<td><code>font-size:</code></td>
+<td><code>&lt;size&gt;</code></td>
+</tr>
+<tr class="odd">
+<td><code>letter-spacing:</code></td>
+<td><code>&lt;size&gt;</code></td>
+</tr>
+<tr class="even">
+<td><code>line-height:</code></td>
+<td><code>&lt;number&gt;</code></td>
+</tr>
+<tr class="odd">
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td><code>font-weight:</code></td>
+<td><code>bold</code> <code>normal</code></td>
+</tr>
+<tr class="odd">
+<td><code>font-style:</code></td>
+<td><code>italic</code> <code>normal</code></td>
+</tr>
+<tr class="even">
+<td><code>text-decoration:</code></td>
+<td><code>underline</code> <code>none</code></td>
+</tr>
+<tr class="odd">
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td><code>text-align:</code></td>
+<td><code>left</code> <code>right</code> <code>center</code> <code>justify</code></td>
+</tr>
+<tr class="odd">
+<td><code>text-transform:</code></td>
+<td><code>capitalize</code> <code>uppercase</code> <code>lowercase</code></td>
+</tr>
+</tbody>
+</table>
+<p>{: .-key-values}</p>
+<h3 id="shorthand">Shorthand</h3>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th>style</th>
+<th>weight</th>
+<th>size (required)</th>
+<th></th>
+<th>line-height</th>
+<th>family</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>font:</code></td>
+<td><code>italic</code></td>
+<td><code>400</code></td>
+<td><code>14px</code></td>
+<td><code>/</code></td>
+<td><code>1.5</code></td>
+<td><code>sans-serif</code></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>style</td>
+<td>weight</td>
+<td>size (required)</td>
+<td></td>
+<td>line-height</td>
+<td>family (required)</td>
+</tr>
+</tbody>
+</table>
+<p>{: .-css-breakdown}</p>
+<h3 id="example">Example</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode css"><code class="sourceCode css"><a class="sourceLine" id="cb2-1" title="1">font-family<span class="in">: Arial</span>;</a>
+<a class="sourceLine" id="cb2-2" title="2">font-size<span class="in">: 12pt;</span></a>
+<a class="sourceLine" id="cb2-3" title="3">line-height<span class="in">: 1.5;</span></a>
+<a class="sourceLine" id="cb2-4" title="4">letter-spacing<span class="in">: 0.02em;</span></a>
+<a class="sourceLine" id="cb2-5" title="5">color<span class="in">: #aa3322</span>;</a></code></pre></div>
+<h3 id="case">Case</h3>
+<div class="sourceCode" id="cb3"><pre class="sourceCode css"><code class="sourceCode css"><a class="sourceLine" id="cb3-1" title="1">text-transform<span class="in">: capitalize</span>; <span class="co">/* Hello */</span></a>
+<a class="sourceLine" id="cb3-2" title="2">text-transform<span class="in">: uppercase</span>; <span class="co">/* HELLO */</span></a>
+<a class="sourceLine" id="cb3-3" title="3">text-transform<span class="in">: lowercase</span>; <span class="co">/* hello */</span></a></code></pre></div>
+<h2 id="background">Background</h2>
+<p>{: .-left-reference}</p>
+<h3 id="properties-1">Properties</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Property</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>background:</code></td>
+<td><em>(Shorthand)</em></td>
+</tr>
+<tr class="even">
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td><code>background-color:</code></td>
+<td><code>&lt;color&gt;</code></td>
+</tr>
+<tr class="even">
+<td><code>background-image:</code></td>
+<td><code>url(...)</code></td>
+</tr>
+<tr class="odd">
+<td><code>background-position:</code></td>
+<td><code>left/center/right</code> <code>top/center/bottom</code></td>
+</tr>
+<tr class="even">
+<td><code>background-size:</code></td>
+<td><code>cover</code> <code>X Y</code></td>
+</tr>
+<tr class="odd">
+<td><code>background-clip:</code></td>
+<td><code>border-box</code> <code>padding-box</code> <code>content-box</code></td>
+</tr>
+<tr class="even">
+<td><code>background-repeat:</code></td>
+<td><code>no-repeat</code> <code>repeat-x</code> <code>repeat-y</code></td>
+</tr>
+<tr class="odd">
+<td><code>background-attachment:</code></td>
+<td><code>scroll</code> <code>fixed</code> <code>local</code></td>
+</tr>
+</tbody>
+</table>
+<p>{: .-key-values}</p>
+<h3 id="shorthand-1">Shorthand</h3>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th>color</th>
+<th>image</th>
+<th>positionX</th>
+<th>positionY</th>
+<th></th>
+<th>size</th>
+<th>repeat</th>
+<th>attachment</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>background:</code></td>
+<td><code>#ff0</code></td>
+<td><code>url(bg.jpg)</code></td>
+<td><code>left</code></td>
+<td><code>top</code></td>
+<td><code>/</code></td>
+<td><code>100px</code> <code>auto</code></td>
+<td><code>no-repeat</code></td>
+<td><code>fixed;</code></td>
+</tr>
+<tr class="even">
+<td><code>background:</code></td>
+<td><code>#abc</code></td>
+<td><code>url(bg.png)</code></td>
+<td><code>center</code></td>
+<td><code>center</code></td>
+<td><code>/</code></td>
+<td><code>cover</code></td>
+<td><code>repeat-x</code></td>
+<td><code>local;</code></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>color</td>
+<td>image</td>
+<td>positionX</td>
+<td>positionY</td>
+<td></td>
+<td>size</td>
+<td>repeat</td>
+<td>attachment</td>
+</tr>
+</tbody>
+</table>
+<p>{: .-css-breakdown}</p>
+<h3 id="multiple-backgrounds">Multiple backgrounds</h3>
+<div class="sourceCode" id="cb4"><pre class="sourceCode css"><code class="sourceCode css"><a class="sourceLine" id="cb4-1" title="1">background<span class="in">: linear-gradient(to bottom, rgba(0, 0, 0, 0.5)</span><span class="op">,</span> rgba(0<span class="op">,</span> 0<span class="op">,</span> 0<span class="op">,</span> 0<span class="fu">.5</span>))<span class="op">,</span> url(&#39;background<span class="fu">.jpg</span>&#39;) center center / cover<span class="op">,</span> #333;</a></code></pre></div>
+<h2 id="animation">Animation</h2>
+<p>{: .-left-reference}</p>
+<h3 id="properties-2">Properties</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>animation:</code></td>
+<td><em>(shorthand)</em></td>
+</tr>
+<tr class="even">
+<td><code>animation-name:</code></td>
+<td><code>&lt;name&gt;</code></td>
+</tr>
+<tr class="odd">
+<td><code>animation-duration:</code></td>
+<td><code>&lt;time&gt;ms</code></td>
+</tr>
+<tr class="even">
+<td><code>animation-timing-function:</code></td>
+<td><code>ease</code> <code>linear</code> <code>ease-in</code> <code>ease-out</code> <code>ease-in-out</code></td>
+</tr>
+<tr class="odd">
+<td><code>animation-delay:</code></td>
+<td><code>&lt;time&gt;ms</code></td>
+</tr>
+<tr class="even">
+<td><code>animation-iteration-count:</code></td>
+<td><code>infinite</code> <code>&lt;number&gt;</code></td>
+</tr>
+<tr class="odd">
+<td><code>animation-direction:</code></td>
+<td><code>normal</code> <code>reverse</code> <code>alternate</code> <code>alternate-reverse</code></td>
+</tr>
+<tr class="even">
+<td><code>animation-fill-mode:</code></td>
+<td><code>none</code> <code>forwards</code> <code>backwards</code> <code>both</code> <code>initial</code> <code>inherit</code></td>
+</tr>
+<tr class="odd">
+<td><code>animation-play-state:</code></td>
+<td><code>normal</code> <code>reverse</code> <code>alternate</code> <code>alternate-reverse</code></td>
+</tr>
+</tbody>
+</table>
+<p>{: .-key-values}</p>
+<h3 id="shorthand-2">Shorthand</h3>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th>name</th>
+<th>duration</th>
+<th>timing-function</th>
+<th>delay</th>
+<th>count</th>
+<th>direction</th>
+<th>fill-mode</th>
+<th>play-state</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>animation:</code></td>
+<td><code>bounce</code></td>
+<td><code>300ms</code></td>
+<td><code>linear</code></td>
+<td><code>100ms</code></td>
+<td><code>infinite</code></td>
+<td><code>alternate-reverse</code></td>
+<td><code>both</code></td>
+<td><code>reverse</code></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>name</td>
+<td>duration</td>
+<td>timing-function</td>
+<td>delay</td>
+<td>count</td>
+<td>direction</td>
+<td>fill-mode</td>
+<td>play-state</td>
+</tr>
+</tbody>
+</table>
+<p>{: .-css-breakdown}</p>
+<h3 id="example-1">Example</h3>
+<div class="sourceCode" id="cb5"><pre class="sourceCode css"><code class="sourceCode css"><a class="sourceLine" id="cb5-1" title="1">animation<span class="in">: bounce</span> 300ms linear 0s infinite normal;</a>
+<a class="sourceLine" id="cb5-2" title="2">animation<span class="in">: bounce</span> 300ms linear infinite;</a>
+<a class="sourceLine" id="cb5-3" title="3">animation<span class="in">: bounce</span> 300ms linear infinite alternate-reverse;</a>
+<a class="sourceLine" id="cb5-4" title="4">animation<span class="in">: bounce</span> 300ms linear 2s infinite alternate-reverse forwards normal;</a></code></pre></div>
+<h3 id="event">Event</h3>
+<div class="sourceCode" id="cb6"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb6-1" title="1">.<span class="at">one</span>(<span class="st">&#39;webkitAnimationEnd oanimationend msAnimationEnd animationend&#39;</span>)</a></code></pre></div>
+</body>
+</html>

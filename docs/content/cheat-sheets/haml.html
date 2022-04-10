@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2022-01-03" />
+  <title>title</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">title</h1>
+<p class="subtitle">subtitle</p>
+<p class="date">2022-01-03</p>
+</header>
+<hr />
+<p>title: Haml category: Markup</p>
+<p>prism_languages: [haml]</p>
+<hr />
+<h3 id="doctype">Doctype</h3>
+<pre class="haml"><code>!!! 5</code></pre>
+<h3 id="tags">Tags</h3>
+<pre class="haml"><code>%html
+  %head
+    %title
+  %body
+    %h1 Hello World
+    %br/</code></pre>
+<h3 id="classes-and-ids">Classes and ID’s</h3>
+<pre class="haml"><code>%p.class-example
+.no-tag-defaults-to-div
+%div#butItCanBeIncluded</code></pre>
+<h3 id="inline-attributes">Inline Attributes</h3>
+<p>Either hash syntax works</p>
+<pre class="haml"><code>%meta{ name: &quot;viewport&quot;, content: &quot;width=device-width, initial-scale=1.0&quot; }
+%input{ :type =&gt; &quot;text&quot;, :required =&gt; true }</code></pre>
+<h3 id="ruby">Ruby</h3>
+<pre class="haml"><code>-# This is a comment
+-# Anything starting with a hyphen signals to Haml that Ruby is coming
+- @arr = [1, 2, 3]
+- @str = &quot;test&quot;
+-# Equal signals output
+= render partial: &quot;shared/header&quot;
+= yield
+= link_to page_url</code></pre>
+</body>
+</html>

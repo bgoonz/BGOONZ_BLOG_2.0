@@ -1,8 +1,3 @@
----
-title: Middleman 3
-category: JavaScript libraries
----
-
 **NB:** This is for Middleman 3, not Middleman 4+.
 
 ### Compass config
@@ -62,7 +57,8 @@ category: JavaScript libraries
     set :js_dir, "alternative_js_directory"
     set :images_dir, "alternative_image_directory"
 
-# Build-specific configuration
+Build-specific configuration
+============================
 
     configure :build do
       activate :minify_css

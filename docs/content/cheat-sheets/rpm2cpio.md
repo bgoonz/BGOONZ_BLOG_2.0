@@ -1,11 +1,9 @@
----
-tags: [packaging]
----
+To list contents of an RPM:
+===========================
 
-# To list contents of an RPM:
+rpm2cpio | cpio -vt
 
-rpm2cpio <rpm-file> | cpio -vt
+To extract contents of an RPM:
+==============================
 
-# To extract contents of an RPM:
-
-rpm2cpio <rpm-file> | cpio -vid
+rpm2cpio | cpio -vid

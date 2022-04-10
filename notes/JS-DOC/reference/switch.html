@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>switch</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="switch">switch</h1>
+<p>The <code>switch</code> statement evaluates an <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators">expression</a>, matching the expression’s value to a <code>case</code> clause, and executes <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements">statements</a> associated with that <code>case</code>, as well as statements in <code>case</code>s that follow the matching <code>case</code>.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>switch (expression) {
+  case value1:
+    //Statements executed when the
+    //result of expression matches value1
+    [break;]
+  case value2:
+    //Statements executed when the
+    //result of expression matches value2
+    [break;]
+  ...
+  case valueN:
+    //Statements executed when the
+    //result of expression matches valueN
+    [break;]
+  [default:
+    //Statements executed when none of
+    //the values match the value of the expression
+    [break;]]
+}</code></pre>
+<p><code>expression</code><br />
+An expression whose result is matched against each <code>case</code> clause.</p>
+<p><code>case valueN</code> <span class="badge inline optional">Optional</span><br />
+A <code>case</code> clause used to match against <code>expression</code>. If the <code>expression</code> matches the specified <code>valueN</code>, the statements inside the <code>case</code> clause are executed until either the end of the <code>switch</code> statement or a <code>break</code>.</p>
+<p><code>default</code> <span class="badge inline optional">Optional</span><br />
+A <code>default</code> clause; if provided, this clause is executed if the value of <code>expression</code> doesn’t match any of the <code>case</code> clauses.</p>
+<h2 id="description">Description</h2>
+<p>A <code>switch</code> statement first evaluates its expression. It then looks for the first <code>case</code> clause whose expression evaluates to the same value as the result of the input expression (using the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators">strict comparison</a>, <code>===</code>) and transfers control to that clause, executing the associated statements. (If multiple <code>case</code>s match the provided value, the first <code>case</code> that matches is selected, even if the <code>case</code>s are not equal to each other.)</p>
+<p>If no matching <code>case</code> clause is found, the program looks for the optional <code>default</code> clause, and if found, transfers control to that clause, executing the associated statements. If no <code>default</code> clause is found, the program continues execution at the statement following the end of <code>switch</code>. By convention, the <code>default</code> clause is the last clause, but it does not need to be so.</p>
+<p>The optional <code>break</code> statement associated with each <code>case</code> label ensures that the program breaks out of <code>switch</code> once the matched statement is executed and continues execution at the statement following <code>switch</code>. If <code>break</code> is omitted, the program continues execution at the next statement in the <code>switch</code> statement. The <code>break</code> statement is not required if a <code>return</code> statement precedes it.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-switch">Using <code>switch</code></h3>
+<p>In the following example, if <code>expr</code> evaluates to <code>Bananas</code>, the program matches the value with case <code>case 'Bananas'</code> and executes the associated statement. When <code>break</code> is encountered, the program breaks out of <code>switch</code> and executes the statement following <code>switch</code>. If <code>break</code> were omitted, the statement for the <code>case 'Cherries'</code> would also be executed.</p>
+<pre><code>switch (expr) {
+  case &#39;Oranges&#39;:
+    console.log(&#39;Oranges are $0.59 a pound.&#39;);
+    break;
+  case &#39;Apples&#39;:
+    console.log(&#39;Apples are $0.32 a pound.&#39;);
+    break;
+  case &#39;Bananas&#39;:
+    console.log(&#39;Bananas are $0.48 a pound.&#39;);
+    break;
+  case &#39;Cherries&#39;:
+    console.log(&#39;Cherries are $3.00 a pound.&#39;);
+    break;
+  case &#39;Mangoes&#39;:
+  case &#39;Papayas&#39;:
+    console.log(&#39;Mangoes and papayas are $2.79 a pound.&#39;);
+    break;
+  default:
+    console.log(&#39;Sorry, we are out of &#39; + expr + &#39;.&#39;);
+}
+
+console.log(&quot;Is there anything else you&#39;d like?&quot;);</code></pre>
+<h3 id="what-happens-if-i-forgot-a-break">What happens if I forgot a <code>break</code>?</h3>
+<p>If you forget a <code>break</code> then the script will run from the <code>case</code> where the criterion is met and will run the cases after that <strong>regardless if a criterion was met</strong>.</p>
+<p>See example here:</p>
+<pre><code>var foo = 0;
+switch (foo) {
+  case -1:
+    console.log(&#39;negative 1&#39;);
+    break;
+  case 0: // foo is 0 so criteria met here so this block will run
+    console.log(0);
+    // NOTE: the forgotten break would have been here
+  case 1: // no break statement in &#39;case 0:&#39; so this case will run as well
+    console.log(1);
+    break; // it encounters this break so will not continue into &#39;case 2:&#39;
+  case 2:
+    console.log(2);
+    break;
+  default:
+    console.log(&#39;default&#39;);
+}</code></pre>
+<h3 id="can-i-put-a-default-between-cases">Can I put a <code>default</code> between cases?</h3>
+<p>Yes, you can! JavaScript will drop you back to the <code>default</code> if it can’t find a match:</p>
+<pre><code>var foo = 5;
+switch (foo) {
+  case 2:
+    console.log(2);
+    break; // it encounters this break so will not continue into &#39;default:&#39;
+  default:
+    console.log(&#39;default&#39;)
+    // fall-through
+  case 1:
+    console.log(&#39;1&#39;);
+}</code></pre>
+<p>It also works when you put <code>default</code> before all other <code>case</code>s.</p>
+<h3 id="methods-for-multi-criteria-case">Methods for multi-criteria <code>case</code></h3>
+<p>This technique is also commonly called fall-through.</p>
+<h4 id="multi-case-single-operation">Multi-<code>case</code> : single operation</h4>
+<p>This method takes advantage of the fact that if there is no break below a <code>case</code> clause it will continue to execute the next <code>case</code> clause regardless if the <code>case</code> meets the criteria. (See the section <a href="#what_happens_if_i_forgot_a_break">What happens if I forgot a <code>break</code>?</a>)</p>
+<p>This is an example of a single operation sequential <code>case</code> statement, where four different values perform exactly the same.</p>
+<pre><code>var Animal = &#39;Giraffe&#39;;
+switch (Animal) {
+  case &#39;Cow&#39;:
+  case &#39;Giraffe&#39;:
+  case &#39;Dog&#39;:
+  case &#39;Pig&#39;:
+    console.log(&#39;This animal is not extinct.&#39;);
+    break;
+  case &#39;Dinosaur&#39;:
+  default:
+    console.log(&#39;This animal is extinct.&#39;);
+}</code></pre>
+<h4 id="multi-case-chained-operations">Multi-<code>case</code> : chained operations</h4>
+<p>This is an example of a multiple-operation sequential <code>case</code> clause, where, depending on the provided integer, you can receive different output. This shows you that it will traverse in the order that you put the <code>case</code> clauses, and it does not have to be numerically sequential. In JavaScript, you can even mix in definitions of strings into these <code>case</code> statements as well.</p>
+<pre><code>var foo = 1;
+var output = &#39;Output: &#39;;
+switch (foo) {
+  case 0:
+    output += &#39;So &#39;;
+  case 1:
+    output += &#39;What &#39;;
+    output += &#39;Is &#39;;
+  case 2:
+    output += &#39;Your &#39;;
+  case 3:
+    output += &#39;Name&#39;;
+  case 4:
+    output += &#39;?&#39;;
+    console.log(output);
+    break;
+  case 5:
+    output += &#39;!&#39;;
+    console.log(output);
+    break;
+  default:
+    console.log(&#39;Please pick a number from 0 to 5!&#39;);
+}</code></pre>
+<p>The output from this example:</p>
+<table>
+<thead>
+<tr class="header">
+<th>
+Value
+</th>
+<th>
+Log text
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<code>foo</code> is <code>NaN</code> or not <code>1</code>, <code>2</code>, <code>3</code>, <code>4</code>, <code>5</code>, or <code>0</code>
+</td>
+<td>
+Please pick a number from 0 to 5!
+</td>
+</tr>
+<tr class="even">
+<td>
+<code>0</code>
+</td>
+<td>
+Output: So What Is Your Name?
+</td>
+</tr>
+<tr class="odd">
+<td>
+<code>1</code>
+</td>
+<td>
+Output: What Is Your Name?
+</td>
+</tr>
+<tr class="even">
+<td>
+<code>2</code>
+</td>
+<td>
+Output: Your Name?
+</td>
+</tr>
+<tr class="odd">
+<td>
+<code>3</code>
+</td>
+<td>
+Output: Name?
+</td>
+</tr>
+<tr class="even">
+<td>
+<code>4</code>
+</td>
+<td>
+Output: ?
+</td>
+</tr>
+<tr class="odd">
+<td>
+<code>5</code>
+</td>
+<td>
+Output: !
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="block-scope-variables-within-switch-statements">Block-scope variables within <code>switch</code> statements</h3>
+<p>With ECMAScript 2015 (ES6) support made available in most modern browsers, there will be cases where you would want to use <a href="let"><code>let</code></a> and <a href="const"><code>const</code></a> statements to declare block-scoped variables.</p>
+<p>Take a look at this example:</p>
+<pre><code>const action = &#39;say_hello&#39;;
+switch (action) {
+  case &#39;say_hello&#39;:
+    let message = &#39;hello&#39;;
+    console.log(message);
+    break;
+  case &#39;say_hi&#39;:
+    let message = &#39;hi&#39;;
+    console.log(message);
+    break;
+  default:
+    console.log(&#39;Empty action received.&#39;);
+    break;
+}</code></pre>
+<p>This example will output the error <code>Uncaught SyntaxError: Identifier 'message' has already been declared</code> which you were not probably expecting.</p>
+<p>This is because the first <code>let message = 'hello';</code> conflicts with second let statement <code>let message = 'hi';</code> even they’re within their own separate case clauses <code>case 'say_hello':</code> and <code>case 'say_hi':</code>. Ultimately, this is due to both <code>let</code> statements being interpreted as duplicate declarations of the same variable name within the same block scope.</p>
+<p>We can easily fix this by wrapping our <code>case</code> clauses with brackets:</p>
+<pre><code>const action = &#39;say_hello&#39;;
+switch (action) {
+  case &#39;say_hello&#39;: { // added brackets
+    let message = &#39;hello&#39;;
+    console.log(message);
+    break;
+  } // added brackets
+  case &#39;say_hi&#39;: { // added brackets
+    let message = &#39;hi&#39;;
+    console.log(message);
+    break;
+  } // added brackets
+  default: { // added brackets
+    console.log(&#39;Empty action received.&#39;);
+    break;
+  } // added brackets
+}</code></pre>
+<p>This code will now output <code>hello</code> in the console as it should, without any errors at all.</p>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-switch-statement">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-switch-statement</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>switch</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>4</p>
+<p>4</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="if...else"><code>if...else</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch</a></p>
+</body>
+</html>

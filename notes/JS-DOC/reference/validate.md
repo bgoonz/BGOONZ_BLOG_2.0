@@ -1,8 +1,10 @@
-# WebAssembly.validate()
+WebAssembly.validate()
+======================
 
 The `WebAssembly.validate()` function validates a given [typed array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays) of WebAssembly binary code, returning whether the bytes form a valid wasm module (`true`) or not (`false`).
 
-## Syntax
+Syntax
+------
 
     WebAssembly.validate(bufferSource)
 
@@ -19,7 +21,8 @@ A boolean that specifies whether `bufferSource` is valid wasm code (`true`) or n
 
 If `bufferSource` is not a [typed array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays) or [ArrayBuffer](../arraybuffer), a [`TypeError`](../typeerror) is thrown.
 
-## Examples
+Examples
+--------
 
 ### Using validate
 
@@ -33,14 +36,14 @@ The following example (see the validate.html [source code](https://github.com/md
         + (valid ? "" : "not ") + "a valid wasm module");
     });
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#dom-webassembly-validate">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>WebAssembly JavaScript Interface (WebAssembly JavaScript Interface)<br />
+</p><span class="small">#dom-webassembly-validate</span></td></tr></tbody></table>
 
-<span class="small">#dom-webassembly-validate</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -100,12 +103,12 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 
 7.0
 
-## See also
+See also
+--------
 
 -   [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
 -   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/validate" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/validate</a>

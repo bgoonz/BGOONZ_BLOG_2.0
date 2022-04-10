@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>test</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="regexp.prototype.test">RegExp.prototype.test()</h1>
+<p>The <code>test()</code> method executes a search for a match between a regular expression and a specified string. Returns <code>true</code> or <code>false</code>.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>test(str)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>str</code><br />
+The string against which to match the regular expression.</p>
+<h3 id="returns">Returns</h3>
+<p><code>true</code> if there is a match between the regular expression and the string <code>str</code>. Otherwise, <code>false</code>.</p>
+<h2 id="description">Description</h2>
+<p>Use <code>test()</code> whenever you want to know whether a pattern is found in a string. <code>test()</code> returns a boolean, unlike the <a href="../string/search"><code>String.prototype.search()</code></a> method (which returns the index of a match, or <code>-1</code> if not found).</p>
+<p>To get more information (but with slower execution), use the <a href="exec"><code>exec()</code></a> method. (This is similar to the <a href="../string/match"><code>String.prototype.match()</code></a> method.)</p>
+<p>As with <code>exec()</code> (or in combination with it), <code>test()</code> called multiple times on the same global regular expression instance will advance past the previous match.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-test">Using test()</h3>
+<p>Simple example that tests if “<code>hello</code>” is contained at the very beginning of a string, returning a boolean result.</p>
+<pre><code>const str = &#39;hello world!&#39;;
+const result = /^hello/.test(str);
+
+console.log(result); // true</code></pre>
+<p>The following example logs a message which depends on the success of the test:</p>
+<pre><code>function testInput(re, str) {
+  let midstring;
+  if (re.test(str)) {
+    midstring = &#39;contains&#39;;
+  } else {
+    midstring = &#39;does not contain&#39;;
+  }
+  console.log(`${str}${midstring}${re.source}`);
+}</code></pre>
+<h3 id="using-test-on-a-regex-with-the-global-flag">Using test() on a regex with the “global” flag</h3>
+<p>When a regex has the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#advanced_searching_with_flags_2">global flag</a> set, <code>test()</code> will advance the <a href="lastindex"><code>lastIndex</code></a> of the regex. (<a href="exec"><code>RegExp.prototype.exec()</code></a> also advances the <code>lastIndex</code> property.)</p>
+<p>Further calls to <code>test(str)</code> will resume searching <code>str</code> starting from <code>lastIndex</code>. The <code>lastIndex</code> property will continue to increase each time <code>test()</code> returns <code>true</code>.</p>
+<p><strong>Note:</strong> As long as <code>test()</code> returns <code>true</code>, <code>lastIndex</code> will <em>not</em> reset—even when testing a different string!</p>
+<p>When <code>test()</code> returns <code>false</code>, the calling regex’s <code>lastIndex</code> property will reset to <code>0</code>.</p>
+<p>The following example demonstrates this behavior:</p>
+<pre><code>const regex = /foo/g; // the &quot;global&quot; flag is set
+
+// regex.lastIndex is at 0
+regex.test(&#39;foo&#39;)     // true
+
+// regex.lastIndex is now at 3
+regex.test(&#39;foo&#39;)     // false
+
+// regex.lastIndex is at 0
+regex.test(&#39;barfoo&#39;)  // true
+
+// regex.lastIndex is at 6
+regex.test(&#39;foobar&#39;)  //false
+
+// regex.lastIndex is at 0
+// (...and so on)</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-regexp.prototype.test">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-regexp.prototype.test</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>test</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>4</p>
+<p>5</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions">Regular Expressions</a> chapter in the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">JavaScript Guide</a></li>
+<li><a href="../regexp"><code>RegExp</code></a></li>
+<li><a href="../regexp"><code>RegExp.prototype</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test</a></p>
+</body>
+</html>

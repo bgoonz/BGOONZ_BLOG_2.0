@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="hamiltonian-path">Hamiltonian Path</h1>
+<p><strong>Hamiltonian path</strong> (or <strong>traceable path</strong>) is a path in an undirected or directed graph that visits each vertex exactly once. A <strong>Hamiltonian cycle</strong> (or <strong>Hamiltonian circuit</strong>) is a Hamiltonian path that is a cycle. Determining whether such paths and cycles exist in graphs is the <strong>Hamiltonian path problem</strong>.</p>
+<figure>
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Hamiltonian_path_3d.svg" alt="Hamiltonian cycle" /><figcaption>Hamiltonian cycle</figcaption>
+</figure>
+<p>One possible Hamiltonian cycle through every vertex of a dodecahedron is shown in red - like all platonic solids, the dodecahedron is Hamiltonian.</p>
+<h2 id="naive-algorithm">Naive Algorithm</h2>
+<p>Generate all possible configurations of vertices and print a configuration that satisfies the given constraints. There will be <code>n!</code> (n factorial) configurations.</p>
+<pre><code>while there are untried configurations
+{
+   generate the next configuration
+   if ( there are edges between two consecutive vertices of this
+      configuration and there is an edge from the last vertex to
+      the first ).
+   {
+      print this configuration;
+      break;
+   }
+}</code></pre>
+<h2 id="backtracking-algorithm">Backtracking Algorithm</h2>
+<p>Create an empty path array and add vertex <code>0</code> to it. Add other vertices, starting from the vertex <code>1</code>. Before adding a vertex, check for whether it is adjacent to the previously added vertex and not already added. If we find such a vertex, we add the vertex as part of the solution. If we do not find a vertex then we return false.</p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Hamiltonian_path">Hamiltonian path on Wikipedia</a></li>
+<li><a href="https://www.youtube.com/watch?v=dQr4wZCiJJ4&amp;list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8">Hamiltonian path on YouTube</a></li>
+<li><a href="https://www.geeksforgeeks.org/backtracking-set-7-hamiltonian-cycle/">Hamiltonian cycle on GeeksForGeeks</a></li>
+</ul>
+</body>
+</html>

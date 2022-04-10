@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Yarn</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Yarn</h1>
+</header>
+<h3 id="npm-equivalents">npm equivalents</h3>
+<table>
+<thead>
+<tr class="header">
+<th>npm</th>
+<th>yarn</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>npm init</code></td>
+<td><code>yarn init</code></td>
+</tr>
+<tr class="even">
+<td><code>npm install</code></td>
+<td><code>yarn</code></td>
+</tr>
+<tr class="odd">
+<td><code>npm install gulp --save</code></td>
+<td><code>yarn add gulp</code></td>
+</tr>
+<tr class="even">
+<td><code>npm install gulp --save-dev --save-exact</code></td>
+<td><code>yarn add gulp --dev --exact</code></td>
+</tr>
+<tr class="odd">
+<td><code>npm install -g gulp</code></td>
+<td><code>yarn global add gulp</code></td>
+</tr>
+<tr class="even">
+<td><code>npm update</code></td>
+<td><code>yarn upgrade</code></td>
+</tr>
+<tr class="odd">
+<td><code>./node_modules/.bin/gulp</code></td>
+<td><code>yarn run gulp</code></td>
+</tr>
+</tbody>
+</table>
+<p>{: .-left-align.-headers}</p>
+<h3 id="yarn-install">yarn install</h3>
+<pre><code>--no-lockfile
+--pure-lockfile
+--frozen-lockfile
+--silent
+--offline
+--update-checksums
+--check-files
+--flat
+--force
+--ignore-scripts
+--modules-folder &lt;path&gt;
+--production[=true|false]</code></pre>
+<p>These options are available for <code>yarn install</code>.</p>
+<h3 id="yarn-add">yarn add</h3>
+<pre><code>--dev
+--peer
+--optional
+--exact
+--tilde</code></pre>
+<p>These options are available for <code>yarn add</code>.</p>
+<h3 id="workspaces">Workspaces</h3>
+<p>In <code>package.json</code>: {: .-setup}</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode json"><code class="sourceCode json"><a class="sourceLine" id="cb3-1" title="1"><span class="er">&quot;workspaces&quot;:</span> <span class="ot">[</span></a>
+<a class="sourceLine" id="cb3-2" title="2">  <span class="st">&quot;packages/*&quot;</span></a>
+<a class="sourceLine" id="cb3-3" title="3"><span class="ot">]</span></a></code></pre></div>
+<pre><code>jest/
+├─ package.json
+└─ packages/
+   ├─ jest-matcher-utils/
+   │  └─ package.json
+   └─ jest-diff/
+      └─ package.json</code></pre>
+<p>{: .-box-chars}</p>
+<p>(New in 1.0) Allows monorepos to share packages with each other. See: <a href="https://yarnpkg.com/blog/2017/08/02/introducing-workspaces/">Introducing workspaces</a></p>
+<h3 id="selective-version-resolution">Selective version resolution</h3>
+<p>In <code>package.json</code>: {: .-setup}</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode json"><code class="sourceCode json"><a class="sourceLine" id="cb5-1" title="1"><span class="er">&quot;resolutions&quot;:</span> <span class="fu">{</span></a>
+<a class="sourceLine" id="cb5-2" title="2">  <span class="dt">&quot;**/sass-brunch/node-sass&quot;</span><span class="fu">:</span> <span class="st">&quot;4.5.2&quot;</span></a>
+<a class="sourceLine" id="cb5-3" title="3"><span class="fu">}</span></a></code></pre></div>
+<p>(New in 1.0) Allows you to specify versions for sub-dependencies. See: <a href="https://github.com/yarnpkg/yarn/pull/4105">Selective version resolutions</a></p>
+<h3 id="create">Create</h3>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb6-1" title="1"><span class="ex">yarn</span> create react-app hello</a></code></pre></div>
+<p>Install <code>create-react-app</code> and runs it. See: <a href="https://github.com/yarnpkg/rfcs/blob/master/implemented/0000-yarn-create.md">yarn create</a></p>
+</body>
+</html>

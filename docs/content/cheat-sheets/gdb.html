@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2022-01-03" />
+  <title>title</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">title</h1>
+<p class="subtitle">subtitle</p>
+<p class="date">2022-01-03</p>
+</header>
+<h1 id="to-start-the-debugger">To start the debugger:</h1>
+<p>gdb your-executable</p>
+<h1 id="to-set-a-breakpoint">To set a breakpoint:</h1>
+<p>b some-method, break some-method</p>
+<h1 id="to-delete-all-breakpoints">To delete all breakpoints</h1>
+<p>clear</p>
+<h1 id="to-run-the-program">To run the program:</h1>
+<p>r, run</p>
+<h1 id="to-run-the-current-line-stepping-over-any-invocations">To run the current line, stepping over any invocations:</h1>
+<p>n, next</p>
+<h1 id="to-run-the-current-line-stepping-into-any-invocations">To run the current line, stepping into any invocations:</h1>
+<p>s, step</p>
+<h1 id="to-continue-execution">To continue execution:</h1>
+<p>c, continue</p>
+<h1 id="to-exit-gdb-after-program-terminated">To exit gdb (after program terminated):</h1>
+<p>q, quit</p>
+<h1 id="to-print-a-stacktrace">To print a stacktrace:</h1>
+<p>bt, backtrace</p>
+<h1 id="to-print-a-stacktrace-with-local-variables">To print a stacktrace with local variables:</h1>
+<p>backtrace full</p>
+<h1 id="to-print-the-arguments-to-the-funtion-of-the-current-stack-frame">To print the arguments to the funtion of the current stack frame:</h1>
+<p>info args</p>
+<h1 id="to-print-the-local-variables-in-the-currently-selected-stack-frame">To print the local variables in the currently selected stack frame:</h1>
+<p>info locals</p>
+<h1 id="to-print-a-list-of-all-the-threads">To print a list of all the threads:</h1>
+<p>info threads</p>
+<h1 id="to-print-a-list-of-all-the-loaded-shared-libraries">To print a list of all the loaded shared libraries:</h1>
+<p>info sharedlibrary</p>
+<h1 id="to-evaluate-an-expression-and-print-the-result">To evaluate an expression and print the result:</h1>
+<p>p length=strlen(string)</p>
+<h1 id="to-list-surrounding-source-code">To list surrounding source code:</h1>
+<p>l, list</p>
+<h1 id="disassemble-the-current-function-or-given-location">Disassemble the current function or given location</h1>
+<p>disassemble disassemble {LOCATION}</p>
+<h1 id="examine-content-at-address-with-a-format-and-letter-size">Examine content at address with a format and letter size:</h1>
+<p>x/{COUNT}{FMT}{SIZE} {ADDRESS}</p>
+<h1 id="formats">Formats:</h1>
+<p>a # Address i # Instruction t # Binary o # Octal h # Hex z # Hex, zero padded d # Decimal u # Unsigned decimal f # Float c # Char s # String</p>
+<h1 id="sizes">Sizes:</h1>
+<p>b # 8bits - byte h # 16bits - halfword w # 32bits - word g # 64bits - giant</p>
+</body>
+</html>

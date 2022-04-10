@@ -1,20 +1,25 @@
-# SyntaxError: test for equality (==) mistyped as assignment (=)?
+SyntaxError: test for equality (==) mistyped as assignment (=)?
+===============================================================
 
-The JavaScript warning "test for equality (==) mistyped as assignment (=)?" occurs when there was an assignment (`=`) when you would normally expect a test for equality (`==`).
+The JavaScript warning “test for equality (==) mistyped as assignment (=)?” occurs when there was an assignment (`=`) when you would normally expect a test for equality (`==`).
 
-## Message
+Message
+-------
 
     Warning: SyntaxError: test for equality (==) mistyped as assignment (=)?
 
-## Error type
+Error type
+----------
 
 (Firefox only) [`SyntaxError`](../global_objects/syntaxerror) warning which is reported only if `javascript.options.strict` preference is set to `true`.
 
-## What went wrong?
+What went wrong?
+----------------
 
 There was an assignment (`=`) when you would normally expect a test for equality (`==`). To help debugging, JavaScript (with strict warnings enabled) warns about this pattern.
 
-## Examples
+Examples
+--------
 
 ### Assignment within conditional expressions
 
@@ -30,13 +35,14 @@ If you need to use an assignment in a conditional expression, a common practice 
       // do the right thing
     }
 
-Otherwise, you probably meant to use a comparison operator (e.g. `==` or `===`):
+Otherwise, you probably meant to use a comparison operator (e.g. `==` or `===`):
 
     if (x == y) {
       // do the right thing
     }
 
-## See also
+See also
+--------
 
 -   `if...else`
 -   [Comparison operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators)

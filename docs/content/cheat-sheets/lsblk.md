@@ -1,29 +1,35 @@
-# To show all available block devices along with their partitioning schemes:
+To show all available block devices along with their partitioning schemes:
+==========================================================================
 
 lsblk
 
-# To show SCSI devices:
+To show SCSI devices:
+=====================
 
-lsblk --scsi
+lsblk –scsi
 
-# To show a specific device:
+To show a specific device:
+==========================
 
 lsblk /dev/sda
 
-# To verify TRIM support:
+To verify TRIM support:
+=======================
 
-# Check the values of DISC-GRAN (discard granularity) and DISC-MAX (discard max bytes) columns.
+Check the values of DISC-GRAN (discard granularity) and DISC-MAX (discard max bytes) columns.
+=============================================================================================
 
-# Non-zero values indicate TRIM support
+Non-zero values indicate TRIM support
+=====================================
 
-lsblk --discard
+lsblk –discard
 
-# To fetch info about filesystems:
+To fetch info about filesystems:
+================================
 
-lsblk --fs
+lsblk –fs
 
-# For JSON, LIST or TREE output formats use the following flags:
+For JSON, LIST or TREE output formats use the following flags:
+==============================================================
 
-lsblk --json
-lsblk --list
-lsblk --tree # default view
+lsblk –json lsblk –list lsblk –tree \# default view

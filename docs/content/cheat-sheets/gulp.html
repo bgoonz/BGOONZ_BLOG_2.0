@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2022-01-03" />
+  <title>title</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">title</h1>
+<p class="subtitle">subtitle</p>
+<p class="date">2022-01-03</p>
+</header>
+<hr />
+<p>title: Gulp category: JavaScript libraries</p>
+<hr />
+<ul>
+<li>gulp-ruby-sass</li>
+<li>gulp-autoprefixer</li>
+<li>gulp-minify-css</li>
+<li>gulp-jshint</li>
+<li>gulp-concat</li>
+<li>gulp-uglify</li>
+<li>gulp-imagemin</li>
+<li>gulp-livereload (requires tiny-lr)</li>
+<li>gulp-clean</li>
+<li>gulp-cache</li>
+<li><p>gulp-notify</p></li>
+<li>gulp-header (headers in files)</li>
+<li>gulp-mocha</li>
+<li>gulp-stylus</li>
+<li>gulp-compass</li>
+<li>gulp-nodemon</li>
+<li><p>gulp-size (displays size)</p></li>
+</ul>
+<h3 id="example">Example</h3>
+<pre><code>// gulpfile.js
+// Load plugins
+var gulp = require(&#39;gulp&#39;),
+    sass = require(&#39;gulp-ruby-sass&#39;),
+    autoprefixer = require(&#39;gulp-autoprefixer&#39;),
+    minifycss = require(&#39;gulp-minify-css&#39;),
+    jshint = require(&#39;gulp-jshint&#39;),
+    uglify = require(&#39;gulp-uglify&#39;),
+    imagemin = require(&#39;gulp-imagemin&#39;),
+    rename = require(&#39;gulp-rename&#39;),
+    clean = require(&#39;gulp-clean&#39;),
+    concat = require(&#39;gulp-concat&#39;),
+    notify = require(&#39;gulp-notify&#39;),
+    cache = require(&#39;gulp-cache&#39;),
+    livereload = require(&#39;gulp-livereload&#39;),
+    lr = require(&#39;tiny-lr&#39;),
+    server = lr();
+
+// Styles
+gulp.task(&#39;styles&#39;, function() {
+  return gulp.src(&#39;src/styles/main.scss&#39;)
+    .pipe(sass({ style: &#39;expanded&#39;, }))
+    .pipe(autoprefixer(&#39;last 2 version&#39;, &#39;safari 5&#39;, &#39;ie 8&#39;, &#39;ie 9&#39;, &#39;opera 12.1&#39;, &#39;ios 6&#39;, &#39;android 4&#39;))
+    .pipe(gulp.dest(&#39;dist/styles&#39;))
+    .pipe(rename({ suffix: &#39;.min&#39; }))
+    .pipe(minifycss())
+    .pipe(livereload(server))
+    .pipe(gulp.dest(&#39;dist/styles&#39;))
+    .pipe(notify({ message: &#39;Styles task complete&#39; }));
+});
+
+// Scripts
+gulp.task(&#39;scripts&#39;, function() {
+  return gulp.src(&#39;src/scripts/**/*.js&#39;)
+    .pipe(jshint(&#39;.jshintrc&#39;))
+    .pipe(jshint.reporter(&#39;default&#39;))
+    .pipe(concat(&#39;main.js&#39;))
+    .pipe(gulp.dest(&#39;dist/scripts&#39;))
+    .pipe(rename({ suffix: &#39;.min&#39; }))
+    .pipe(uglify())
+    .pipe(livereload(server))
+    .pipe(gulp.dest(&#39;dist/scripts&#39;))
+    .pipe(notify({ message: &#39;Scripts task complete&#39; }));
+});
+
+// Images
+gulp.task(&#39;images&#39;, function() {
+  return gulp.src(&#39;src/images/**/*&#39;)
+    .pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
+    .pipe(livereload(server))
+    .pipe(gulp.dest(&#39;dist/images&#39;))
+    .pipe(notify({ message: &#39;Images task complete&#39; }));
+});
+
+// Clean
+gulp.task(&#39;clean&#39;, function() {
+  return gulp.src([&#39;dist/styles&#39;, &#39;dist/scripts&#39;, &#39;dist/images&#39;], {read: false})
+    .pipe(clean());
+});
+
+// Default task
+gulp.task(&#39;default&#39;, [&#39;clean&#39;], function() {
+    gulp.start(&#39;styles&#39;, &#39;scripts&#39;, &#39;images&#39;);
+});
+
+// Watch
+gulp.task(&#39;watch&#39;, function() {
+
+  // Listen on port 35729
+  server.listen(35729, function (err) {
+    if (err) {
+      return console.log(err)
+    };
+
+    // Watch .scss files
+    gulp.watch(&#39;src/styles/**/*.scss&#39;, [&#39;styles&#39;]);
+
+    // Watch .js files
+    gulp.watch(&#39;src/scripts/**/*.js&#39;, [&#39;scripts&#39;]);
+
+    // Watch image files
+    gulp.watch(&#39;src/images/**/*&#39;, [&#39;images&#39;]);
+
+  });
+
+});</code></pre>
+<h3 id="references">References</h3>
+<p>https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md#getting-started</p>
+<h3 id="livereload">Livereload</h3>
+<pre><code>var lr = require(&#39;tiny-lr&#39;)();
+
+function notify (lr, root) {
+  return function (event) {
+    var fname = require(&#39;path&#39;).relative(root, event.path);
+    lr.changed({ body: { files: [ fname ] }});
+  };
+}
+
+gulp.task(&#39;livereload&#39;, function () {
+  lr.listen(35729)
+  gulp.watch(&#39;public/**/*&#39;, notify(lr, __dirname+&#39;/public&#39;));
+});
+
+// Express
+app.use(require(&#39;connect-livereload&#39;)())
+&lt;!-- livereload --&gt;&lt;script&gt;document.write(&#39;&lt;script src=&quot;&#39;+(location.protocol||&#39;http:&#39;)+&#39;//&#39;+(location.hostname||&#39;localhost&#39;)+&#39;:35729/livereload.js?snipver=1&quot;&gt;&lt;\/scr&#39;+&#39;ipt&gt;&#39;)&lt;/script&gt;</code></pre>
+</body>
+</html>

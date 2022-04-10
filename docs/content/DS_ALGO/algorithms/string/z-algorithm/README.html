@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="z-algorithm">Z Algorithm</h1>
+<p>The Z-algorithm finds occurrences of a “word” <code>W</code> within a main “text string” <code>T</code> in linear time <code>O(|W| + |T|)</code>.</p>
+<p>Given a string <code>S</code> of length <code>n</code>, the algorithm produces an array, <code>Z</code> where <code>Z[i]</code> represents the longest substring starting from <code>S[i]</code> which is also a prefix of <code>S</code>. Finding <code>Z</code> for the string obtained by concatenating the word, <code>W</code> with a nonce character, say <code>$</code> followed by the text, <code>T</code>, helps with pattern matching, for if there is some index <code>i</code> such that <code>Z[i]</code> equals the pattern length, then the pattern must be present at that point.</p>
+<p>While the <code>Z</code> array can be computed with two nested loops in <code>O(|W| * |T|)</code> time, the following strategy shows how to obtain it in linear time, based on the idea that as we iterate over the letters in the string (index <code>i</code> from <code>1</code> to <code>n - 1</code>), we maintain an interval <code>[L, R]</code> which is the interval with maximum <code>R</code> such that <code>1 ≤ L ≤ i ≤ R</code> and <code>S[L...R]</code> is a prefix that is also a substring (if no such interval exists, just let <code>L = R = - 1</code>). For <code>i = 1</code>, we can simply compute <code>L</code> and <code>R</code> by comparing <code>S[0...]</code> to <code>S[1...]</code>.</p>
+<p><strong>Example of Z array</strong></p>
+<pre><code>Index            0   1   2   3   4   5   6   7   8   9  10  11
+Text             a   a   b   c   a   a   b   x   a   a   a   z
+Z values         X   1   0   0   3   1   0   0   2   2   1   0</code></pre>
+<p>Other examples</p>
+<pre><code>str =  a a a a a a
+Z[] =  x 5 4 3 2 1</code></pre>
+<pre><code>str =  a a b a a c d
+Z[] =  x 1 0 2 1 0 0</code></pre>
+<pre><code>str =  a b a b a b a b
+Z[] =  x 0 6 0 4 0 2 0</code></pre>
+<p><strong>Example of Z box</strong></p>
+<figure>
+<img src="https://ivanyu.me/wp-content/uploads/2014/09/zalg1.png" alt="z-box" /><figcaption>z-box</figcaption>
+</figure>
+<h2 id="complexity">Complexity</h2>
+<ul>
+<li><strong>Time:</strong> <code>O(|W| + |T|)</code></li>
+<li><strong>Space:</strong> <code>O(|W|)</code></li>
+</ul>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/z-algorithm-linear-time-pattern-searching-algorithm/">GeeksForGeeks</a></li>
+<li><a href="https://www.youtube.com/watch?v=CpZh4eF8QBw&amp;t=0s&amp;list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8&amp;index=70">YouTube</a></li>
+<li><a href="https://ivanyu.me/blog/2013/10/15/z-algorithm/">Z Algorithm by Ivan Yurchenko</a></li>
+</ul>
+</body>
+</html>

@@ -1,8 +1,10 @@
-# Operator precedence
+Operator precedence
+===================
 
 **Operator precedence** determines how operators are parsed concerning each other. Operators with higher precedence become the operands of operators with lower precedence.
 
-## Precedence And Associativity
+Precedence And Associativity
+----------------------------
 
 Consider an expression describable by the representation below. Note that both OP<sub>1</sub> and OP<sub>2</sub> are fill-in-the-blanks for OPerators.
 
@@ -38,7 +40,7 @@ console.log(echo(&quot;left&quot;, 2) ** echo(&quot;right&quot;, 3));</code></pr
 Evaluating the right side
 8</code></pre></td></tr></tbody></table>
 
-The difference in associativity comes into play when there are multiple operators of the same precedence. With only one operator or operators of different precedences, associativity doesn't affect the output, as seen in the example above. In the example below, observe how associativity affects the output when multiple of the same operator are used.
+The difference in associativity comes into play when there are multiple operators of the same precedence. With only one operator or operators of different precedences, associativity doesn’t affect the output, as seen in the example above. In the example below, observe how associativity affects the output when multiple of the same operator are used.
 
 <table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td>Code</td><td>Output</td></tr><tr class="even"><td><pre data-language="js"><code>function echo(name, num) {
     console.log(&quot;Evaluating the &quot; + name + &quot; side&quot;);
@@ -74,14 +76,15 @@ Remember that precedence comes before associativity. So, mixing division and exp
 
 In the table below, **Grouping** is listed as having the highest precedence. However, that does not always mean the expression within the grouping symbols `( … )` is evaluated first, especially when it comes to short-circuiting.
 
-Short-circuiting is jargon for conditional evaluation. For example, in the expression `a && (b + c)`, if `a` is [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy), then the sub-expression `(b + c)` will not even get evaluated, even if it is in parentheses. We could say that the logical disjunction operator ("OR") is "short-circuited". Along with logical disjunction, other short-circuited operators include logical conjunction ("AND"), nullish-coalescing, optional chaining, and the conditional operator. Some more examples follow.
+Short-circuiting is jargon for conditional evaluation. For example, in the expression `a && (b + c)`, if `a` is [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy), then the sub-expression `(b + c)` will not even get evaluated, even if it is in parentheses. We could say that the logical disjunction operator (“OR”) is “short-circuited”. Along with logical disjunction, other short-circuited operators include logical conjunction (“AND”), nullish-coalescing, optional chaining, and the conditional operator. Some more examples follow.
 
     a || (b * c);  // evaluate `a` first, then produce `a` if `a` is "truthy"
     a && (b < c);  // evaluate `a` first, then produce `a` if `a` is "falsy"
     a ?? (b || c); // evaluate `a` first, then produce `a` if `a` is not `null` and not `undefined`
     a?.b.c;        // evaluate `a` first, then produce `undefined` if `a` is `null` or `undefined`
 
-## Examples
+Examples
+--------
 
     3 > 2 && 2 > 1
     // returns true
@@ -91,11 +94,12 @@ Short-circuiting is jargon for conditional evaluation. For example, in the expre
     // in inequality operators, therefore true > 1 becomes 1 > 1, which
     //  is false. Adding parentheses makes things clear: (3 > 2) > 1.
 
-## Table
+Table
+-----
 
 The following table lists operators in order from highest precedence (21) to lowest precedence (1).
 
-Note that [spread syntax](spread_syntax) is intentionally not included in the table — because, to quote an [an answer at Stack Overflow](https://stackoverflow.com/a/48656377), "[Spread syntax is not an operator](https://stackoverflow.com/q/44934828/1048572) and therefore does not have a precedence. It is part of the array literal and function call (and object literal) syntax."
+Note that [spread syntax](spread_syntax) is intentionally not included in the table — because, to quote an [an answer at Stack Overflow](https://stackoverflow.com/a/48656377), “[Spread syntax is not an operator](https://stackoverflow.com/q/44934828/1048572) and therefore does not have a precedence. It is part of the array literal and function call (and object literal) syntax.”
 
 Precedence
 
@@ -423,6 +427,5 @@ left-to-right
 
 `… , …`
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence</a>

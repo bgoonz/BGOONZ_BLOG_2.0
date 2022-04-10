@@ -1,8 +1,10 @@
-# Math.trunc()
+Math.trunc()
+============
 
 The `Math.trunc()` function returns the integer part of a number by removing any fractional digits.
 
-## Syntax
+Syntax
+------
 
     Math.trunc(x)
 
@@ -15,15 +17,17 @@ A number.
 
 The integer part of the given number.
 
-## Description
+Description
+-----------
 
-Unlike the other three `Math` methods: [`Math.floor()`](floor), [`Math.ceil()`](ceil) and [`Math.round()`](round), the way `Math.trunc()` works is very simple. It _truncates_ (cuts off) the dot and the digits to the right of it, no matter whether the argument is a positive or negative number.
+Unlike the other three `Math` methods: [`Math.floor()`](floor), [`Math.ceil()`](ceil) and [`Math.round()`](round), the way `Math.trunc()` works is very simple. It *truncates* (cuts off) the dot and the digits to the right of it, no matter whether the argument is a positive or negative number.
 
 The argument passed to this method will be converted to number type implicitly.
 
 Because `trunc()` is a static method of `Math`, you always use it as `Math.trunc()`, rather than as a method of a `Math` object you created (`Math` is not a constructor).
 
-## Examples
+Examples
+--------
 
 ### Using Math.trunc()
 
@@ -36,14 +40,14 @@ Because `trunc()` is a static method of `Math`, you always use it as `Math.trunc
     Math.trunc('foo');    // NaN
     Math.trunc();         // NaN
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.trunc">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-math.trunc</span></td></tr></tbody></table>
 
-<span class="small">#sec-math.trunc</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -99,7 +103,8 @@ No
 
 3.0
 
-## See also
+See also
+--------
 
 -   [A polyfill](https://github.com/behnammodi/polyfill/blob/master/math.polyfill.js)
 -   [`Math.abs()`](abs)
@@ -108,6 +113,5 @@ No
 -   [`Math.round()`](round)
 -   [`Math.sign()`](sign)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/trunc" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/trunc</a>

@@ -1,26 +1,31 @@
-# TypeError: setting getter-only property "x"
+TypeError: setting getter-only property “x”
+===========================================
 
-The JavaScript [strict mode](../strict_mode)-only exception "setting getter-only property" occurs when there is an attempt to set a new value to a property for which only a [getter](../functions/get) is specified.
+The JavaScript [strict mode](../strict_mode)-only exception “setting getter-only property” occurs when there is an attempt to set a new value to a property for which only a [getter](../functions/get) is specified.
 
-## Message
+Message
+-------
 
     TypeError: Assignment to read-only properties is not allowed in strict mode (Edge)
     TypeError: setting getter-only property "x" (Firefox)
     TypeError: Cannot set property "prop" of #<Object> which has only a getter (Chrome)
 
-## Error type
+Error type
+----------
 
 [`TypeError`](../global_objects/typeerror) in [strict mode](../strict_mode) only.
 
-## What went wrong?
+What went wrong?
+----------------
 
 There is an attempt to set a new value to a property for which only a [getter](../functions/get) is specified. While this will be silently ignored in non-strict mode, it will throw a [`TypeError`](../global_objects/typeerror) in [strict mode](../strict_mode).
 
-## Examples
+Examples
+--------
 
 ### Property with no setter
 
-The example below shows how to set a getter for a property. It doesn't specify a [setter](../functions/set), so a `TypeError` will be thrown upon trying to set the `temperature` property to `30`. For more details see also the [`Object.defineProperty()`](../global_objects/object/defineproperty) page.
+The example below shows how to set a getter for a property. It doesn’t specify a [setter](../functions/set), so a `TypeError` will be thrown upon trying to set the `temperature` property to `30`. For more details see also the [`Object.defineProperty()`](../global_objects/object/defineproperty) page.
 
     "use strict";
 
@@ -68,7 +73,8 @@ To fix this error, you will either need to remove line 16, where there is an att
     arc.temperature = 13;
     arc.getArchive(); // [{ val: 11 }, { val: 13 }]
 
-## See also
+See also
+--------
 
 -   [`Object.defineProperty()`](../global_objects/object/defineproperty)
 -   [`Object.defineProperties()`](../global_objects/object/defineproperties)

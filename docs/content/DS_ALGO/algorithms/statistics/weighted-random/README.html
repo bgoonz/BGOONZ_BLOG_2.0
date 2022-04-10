@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="weighted-random">Weighted Random</h1>
+<figure>
+<img src="images/cover.png" alt="Weighted Random" /><figcaption>Weighted Random</figcaption>
+</figure>
+<h2 id="what-is-weighted-random">What is “Weighted Random”</h2>
+<p>Let’s say you have a list of <strong>items</strong>. Item could be anything. For example, we may have a list of fruits and vegetables that you like to eat: <code>[ '🍌', '🍎', '🥕' ]</code>.</p>
+<p>The list of <strong>weights</strong> represent the weight (or probability, or importance) of each item. Weights are numbers. For example, the weights like <code>[3, 7, 1]</code> would say that:</p>
+<ul>
+<li>you would like to eat <code>🍎 apples</code> more often (<code>7</code> out of <code>3 + 7 + 1 = 11</code> times),</li>
+<li>then you would like to eat <code>bananas 🍌</code> less often (only <code>3</code> out of <code>11</code> times),</li>
+<li>and the <code>carrots 🥕</code> you really don’t like (want to eat it only <code>1</code> out of <code>11</code> times).</li>
+</ul>
+<blockquote>
+<p>If we speak in terms of probabilities than the weights list might be an array of floats that sum up to <code>1</code> (i.e. <code>[0.1, 0.5, 0.2, 0.2]</code>).</p>
+</blockquote>
+<p>The <strong>Weighted Random</strong> in this case will be the function that will randomly return you the item from the list, and it will take each item’s weight into account, so that items with the higher weight will be picked more often.</p>
+<p>Example of the function interface:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">const</span> items <span class="op">=</span> [<span class="st">&#39;🍌&#39;</span><span class="op">,</span> <span class="st">&#39;🍎&#39;</span><span class="op">,</span> <span class="st">&#39;🥕&#39;</span>]<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="kw">const</span> weights <span class="op">=</span> [<span class="dv">3</span><span class="op">,</span> <span class="dv">7</span><span class="op">,</span> <span class="dv">1</span>]<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-3" title="3"></a>
+<a class="sourceLine" id="cb1-4" title="4"><span class="kw">function</span> <span class="at">weightedRandom</span>(items<span class="op">,</span> weights) <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-5" title="5">    <span class="co">// implementation goes here ...</span></a>
+<a class="sourceLine" id="cb1-6" title="6"><span class="op">}</span></a>
+<a class="sourceLine" id="cb1-7" title="7"></a>
+<a class="sourceLine" id="cb1-8" title="8"><span class="kw">const</span> nextSnackToEat <span class="op">=</span> <span class="at">weightedRandom</span>(items<span class="op">,</span> weights)<span class="op">;</span> <span class="co">// Could be &#39;🍎&#39;</span></a></code></pre></div>
+<h2 id="applications-of-weighted-random">Applications of Weighted Random</h2>
+<ul>
+<li>In <a href="https://en.wikipedia.org/wiki/Genetic_algorithm">Genetic Algorithm</a> the weighted random is used during the “Selection” phase, when we need to select the fittest/strongest individuums based on their fitness score for mating and for producing the next stronger generation. You may find an <strong>example</strong> in the <a href="https://trekhleb.dev/blog/2021/self-parking-car-evolution/">Self-Parking Car in 500 Lines of Code</a> article.</li>
+<li>In <a href="https://en.wikipedia.org/wiki/Recurrent_neural_network">Recurrent Neural Networks (RNN)</a> when trying to decide what letter to choose next (to form the sentence) based on the next letter probability. You may find an <strong>example</strong> in the <a href="https://nbviewer.org/github/trekhleb/machine-learning-experiments/blob/master/experiments/recipe_generation_rnn/recipe_generation_rnn.ipynb">Recipe Generation using Recurrent Neural Network (RNN)</a> Jupyter notebook.</li>
+<li>In <a href="https://docs.nginx.com/nginx/admin-guide/load-balancer/http-load-balancer/">Nginx Load Balancing</a> to send HTTP requests more often to the servers with the higher weights.</li>
+<li>And more…</li>
+</ul>
+<h2 id="the-algorithm">The Algorithm</h2>
+<p>The <strong>straightforward approach</strong> would be to:</p>
+<ol type="1">
+<li>Repeat each item in the list according to its weight.</li>
+<li>Pick the random item from the list.</li>
+</ol>
+<p>For example in our case with fruits and vegetables we could generate the following list of size <code>3 + 7 + 1 = 11</code>:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">const</span> items <span class="op">=</span> [<span class="st">&#39;🍌&#39;</span><span class="op">,</span> <span class="st">&#39;🍎&#39;</span><span class="op">,</span> <span class="st">&#39;🥕&#39;</span>]<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-2" title="2"><span class="kw">const</span> weights <span class="op">=</span> [<span class="dv">3</span><span class="op">,</span> <span class="dv">7</span><span class="op">,</span> <span class="dv">1</span>]<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-3" title="3"></a>
+<a class="sourceLine" id="cb2-4" title="4"><span class="co">// Repeating the items based on weights.</span></a>
+<a class="sourceLine" id="cb2-5" title="5"><span class="kw">const</span> weightedItems <span class="op">=</span> [<span class="st">&#39;🍌&#39;</span><span class="op">,</span> <span class="st">&#39;🍌&#39;</span><span class="op">,</span> <span class="st">&#39;🍌&#39;</span><span class="op">,</span> <span class="st">&#39;🍎&#39;</span><span class="op">,</span> <span class="st">&#39;🍎&#39;</span><span class="op">,</span> <span class="st">&#39;🍎&#39;</span><span class="op">,</span> <span class="st">&#39;🍎&#39;</span><span class="op">,</span> <span class="st">&#39;🍎&#39;</span><span class="op">,</span> <span class="st">&#39;🍎&#39;</span><span class="op">,</span> <span class="st">&#39;🍎&#39;</span><span class="op">,</span> <span class="st">&#39;🥕&#39;</span>]<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-6" title="6"></a>
+<a class="sourceLine" id="cb2-7" title="7"><span class="co">// And now just pick the random item from weightedItems array.</span></a></code></pre></div>
+<p>However, as you may see, this approach may require a lot of memory, in case if we have a lot of items to repeat in <code>weightedItems</code> list. Think of it as if you would need to repeat a string like <code>"some-random-string"</code> (<code>18</code> bytes) a ten million times. You will need to allocate around <code>180Mb</code> of additional memory space just for this array.</p>
+<p>The <strong>more efficient approach</strong> would be to:</p>
+<ol type="1">
+<li>Prepare the list of cumulative weights for each item (i.e. the <code>cumulativeWeights</code> list which will have the same number of elements as the original <code>weights</code> list). In our case it will look like this: <code>cumulativeWeights = [3, 3 + 7, 3 + 7 + 1] = [3, 10, 11]</code></li>
+<li>Generate the random number <code>randomNumber</code> from <code>0</code> to the highest cumulative weight value. In our case the random number will be in a range of <code>[0..11]</code>. Let’s say that we have <code>randomNumber = 8</code>.</li>
+<li>Go through the <code>cumulativeWeights</code> list from left to right and pick the first element which is higher or equal to the <code>randomNumber</code>. The index of such element we will use to pick the item from the <code>items</code> array.</li>
+</ol>
+<p>The idea behind this approach is that the higher weights will “occupy” more numeric space. Therefore, there is a higher chance that the random number will fall into the “higher weight numeric bucket”.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">const</span> weights <span class="op">=</span> [<span class="dv">3</span><span class="op">,</span> <span class="dv">7</span><span class="op">,</span> <span class="dv">1</span>]<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-2" title="2"><span class="kw">const</span> cumulativeWeights <span class="op">=</span> [<span class="dv">3</span><span class="op">,</span> <span class="dv">10</span><span class="op">,</span> <span class="dv">11</span>]<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-3" title="3"></a>
+<a class="sourceLine" id="cb3-4" title="4"><span class="co">// In a pseudo-representation we may think about the cumulativeWeights array like this.</span></a>
+<a class="sourceLine" id="cb3-5" title="5"><span class="kw">const</span> pseudoCumulativeWeights <span class="op">=</span> [</a>
+<a class="sourceLine" id="cb3-6" title="6">    <span class="dv">1</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb3-7" title="7">    <span class="dv">2</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb3-8" title="8">    <span class="dv">3</span><span class="op">,</span> <span class="co">// &lt;-- [3] numbers</span></a>
+<a class="sourceLine" id="cb3-9" title="9">    <span class="dv">4</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb3-10" title="10">    <span class="dv">5</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb3-11" title="11">    <span class="dv">6</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb3-12" title="12">    <span class="dv">7</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb3-13" title="13">    <span class="dv">8</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb3-14" title="14">    <span class="dv">9</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb3-15" title="15">    <span class="dv">10</span><span class="op">,</span> <span class="co">// &lt;-- [7] numbers</span></a>
+<a class="sourceLine" id="cb3-16" title="16">    <span class="dv">11</span> <span class="co">// &lt;-- [1] number</span></a>
+<a class="sourceLine" id="cb3-17" title="17">]<span class="op">;</span></a></code></pre></div>
+<p>Here is an example of how the <code>weightedRandom</code> function might be implemented:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb4-1" title="1"><span class="co">/**</span></a>
+<a class="sourceLine" id="cb4-2" title="2"><span class="co"> * Picks the random item based on its weight.</span></a>
+<a class="sourceLine" id="cb4-3" title="3"><span class="co"> * The items with higher weight will be picked more often (with a higher probability).</span></a>
+<a class="sourceLine" id="cb4-4" title="4"><span class="co"> *</span></a>
+<a class="sourceLine" id="cb4-5" title="5"><span class="co"> * For example:</span></a>
+<a class="sourceLine" id="cb4-6" title="6"><span class="co"> * - items = [&#39;banana&#39;, &#39;orange&#39;, &#39;apple&#39;]</span></a>
+<a class="sourceLine" id="cb4-7" title="7"><span class="co"> * - weights = [0, 0.2, 0.8]</span></a>
+<a class="sourceLine" id="cb4-8" title="8"><span class="co"> * - weightedRandom(items, weights) in 80% of cases will return &#39;apple&#39;, in 20% of cases will return</span></a>
+<a class="sourceLine" id="cb4-9" title="9"><span class="co"> * &#39;orange&#39; and it will never return &#39;banana&#39; (because probability of picking the banana is 0%)</span></a>
+<a class="sourceLine" id="cb4-10" title="10"><span class="co"> *</span></a>
+<a class="sourceLine" id="cb4-11" title="11"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{any</span><span class="co">[]} items</span></a>
+<a class="sourceLine" id="cb4-12" title="12"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{number</span><span class="co">[]} weights</span></a>
+<a class="sourceLine" id="cb4-13" title="13"><span class="co"> * </span><span class="an">@returns</span><span class="co"> {{item: any, index: number}}</span></a>
+<a class="sourceLine" id="cb4-14" title="14"><span class="co"> */</span></a>
+<a class="sourceLine" id="cb4-15" title="15"><span class="im">export</span> <span class="im">default</span> <span class="kw">function</span> <span class="at">weightedRandom</span>(items<span class="op">,</span> weights) <span class="op">{</span></a>
+<a class="sourceLine" id="cb4-16" title="16">    <span class="cf">if</span> (<span class="va">items</span>.<span class="at">length</span> <span class="op">!==</span> <span class="va">weights</span>.<span class="at">length</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb4-17" title="17">        <span class="cf">throw</span> <span class="kw">new</span> <span class="at">Error</span>(<span class="st">&#39;Items and weights must be of the same size&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-18" title="18">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb4-19" title="19"></a>
+<a class="sourceLine" id="cb4-20" title="20">    <span class="cf">if</span> (<span class="op">!</span><span class="va">items</span>.<span class="at">length</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb4-21" title="21">        <span class="cf">throw</span> <span class="kw">new</span> <span class="at">Error</span>(<span class="st">&#39;Items must not be empty&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-22" title="22">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb4-23" title="23"></a>
+<a class="sourceLine" id="cb4-24" title="24">    <span class="co">// Preparing the cumulative weights array.</span></a>
+<a class="sourceLine" id="cb4-25" title="25">    <span class="co">// For example:</span></a>
+<a class="sourceLine" id="cb4-26" title="26">    <span class="co">// - weights = [1, 4, 3]</span></a>
+<a class="sourceLine" id="cb4-27" title="27">    <span class="co">// - cumulativeWeights = [1, 5, 8]</span></a>
+<a class="sourceLine" id="cb4-28" title="28">    <span class="kw">const</span> cumulativeWeights <span class="op">=</span> []<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-29" title="29">    <span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> <span class="va">weights</span>.<span class="at">length</span><span class="op">;</span> i <span class="op">+=</span> <span class="dv">1</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb4-30" title="30">        cumulativeWeights[i] <span class="op">=</span> weights[i] <span class="op">+</span> (cumulativeWeights[i <span class="op">-</span> <span class="dv">1</span>] <span class="op">||</span> <span class="dv">0</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-31" title="31">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb4-32" title="32"></a>
+<a class="sourceLine" id="cb4-33" title="33">    <span class="co">// Getting the random number in a range of [0...sum(weights)]</span></a>
+<a class="sourceLine" id="cb4-34" title="34">    <span class="co">// For example:</span></a>
+<a class="sourceLine" id="cb4-35" title="35">    <span class="co">// - weights = [1, 4, 3]</span></a>
+<a class="sourceLine" id="cb4-36" title="36">    <span class="co">// - maxCumulativeWeight = 8</span></a>
+<a class="sourceLine" id="cb4-37" title="37">    <span class="co">// - range for the random number is [0...8]</span></a>
+<a class="sourceLine" id="cb4-38" title="38">    <span class="kw">const</span> maxCumulativeWeight <span class="op">=</span> cumulativeWeights[<span class="va">cumulativeWeights</span>.<span class="at">length</span> <span class="op">-</span> <span class="dv">1</span>]<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-39" title="39">    <span class="kw">const</span> randomNumber <span class="op">=</span> maxCumulativeWeight <span class="op">*</span> <span class="va">Math</span>.<span class="at">random</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-40" title="40"></a>
+<a class="sourceLine" id="cb4-41" title="41">    <span class="co">// Picking the random item based on its weight.</span></a>
+<a class="sourceLine" id="cb4-42" title="42">    <span class="co">// The items with higher weight will be picked more often.</span></a>
+<a class="sourceLine" id="cb4-43" title="43">    <span class="cf">for</span> (<span class="kw">let</span> itemIndex <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> itemIndex <span class="op">&lt;</span> <span class="va">items</span>.<span class="at">length</span><span class="op">;</span> itemIndex <span class="op">+=</span> <span class="dv">1</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb4-44" title="44">        <span class="cf">if</span> (cumulativeWeights[itemIndex] <span class="op">&gt;=</span> randomNumber) <span class="op">{</span></a>
+<a class="sourceLine" id="cb4-45" title="45">            <span class="cf">return</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb4-46" title="46">                <span class="dt">item</span><span class="op">:</span> items[itemIndex]<span class="op">,</span></a>
+<a class="sourceLine" id="cb4-47" title="47">                <span class="dt">index</span><span class="op">:</span> itemIndex</a>
+<a class="sourceLine" id="cb4-48" title="48">            <span class="op">};</span></a>
+<a class="sourceLine" id="cb4-49" title="49">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb4-50" title="50">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb4-51" title="51"><span class="op">}</span></a></code></pre></div>
+<h2 id="implementation">Implementation</h2>
+<ul>
+<li>Check the <a href="weightedRandom.js">weightedRandom.js</a> file for the implementation of the <code>weightedRandom()</code> function.</li>
+<li>Check the <a href="__test__/weightedRandom.test.js">weightedRandom.test.js</a> file for the tests-cases.</li>
+</ul>
+</body>
+</html>

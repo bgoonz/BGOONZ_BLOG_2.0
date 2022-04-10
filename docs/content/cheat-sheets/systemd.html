@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>systemd</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="to-display-process-startup-time">To display process startup time:</h1>
+<p>systemd-analyze</p>
+<h1 id="to-display-process-startup-time-at-service-level">To display process startup time at service level:</h1>
+<p>systemd-analyze blame</p>
+<h1 id="to-list-running-units">To list running units:</h1>
+<p>systemctl list-units</p>
+<h1 id="to-load-a-unit-at-startup">To load a unit at startup:</h1>
+<p>systemctl enable foo.service</p>
+<h1 id="to-start-or-stop-a-unit">To start or Stop a unit:</h1>
+<p>systemctl &lt;start | stop&gt; foo.service</p>
+<h1 id="to-unit-file-locations">To unit file locations:</h1>
+<p>/etc/systemd/system /usr/lib/systemd/system</p>
+</body>
+</html>

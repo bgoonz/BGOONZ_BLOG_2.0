@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2022-01-03" />
+  <title>title</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">title</h1>
+<p class="subtitle">subtitle</p>
+<p class="date">2022-01-03</p>
+</header>
+<hr />
+<p>title: Git revisions category: Git</p>
+<p>description: "" intro: | A list of revision specifications you can use with <code>git log</code> and many other Git commands. Summarized from <code>gitrevisions(7)</code> man page.</p>
+<hr />
+<h3 id="example-usages">Example usages</h3>
+<div class="line-block"><em><code>git log</code></em> <code>master...develop</code> | inspect differences in branches |<br />
+<em><code>git rebase -i</code></em> <code>HEAD~3</code> | rebase last 3 commits |<br />
+<em><code>git reset --hard</code></em> <code>HEAD@{2}</code> | undo last operation that changed HEAD |<br />
+<em><code>git checkout</code></em> <code>v2^{}</code> | checkout the <code>v2</code> tag (not <code>v2</code> branch) |</div>
+<p>{: .-mute-em}</p>
+<p>The 3rd argument in each of these commands is a <code>gitrevision</code>. These gitrevisions can be passed to many Git commands.</p>
+<h3 id="common-git-revisions">Common git revisions</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Reference</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><em><code>git show</code></em> <code>dae68e1</code></td>
+<td>sha1</td>
+</tr>
+<tr class="even">
+<td><em><code>git show</code></em> <code>HEAD</code></td>
+<td>reference</td>
+</tr>
+<tr class="odd">
+<td><em><code>git show</code></em> <code>v1.0.0</code></td>
+<td>tag</td>
+</tr>
+<tr class="even">
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td><em><code>git show</code></em> <code>master</code></td>
+<td>local branch</td>
+</tr>
+<tr class="even">
+<td><em><code>git show</code></em> <code>origin/master</code></td>
+<td>remote branch</td>
+</tr>
+<tr class="odd">
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td><em><code>git show</code></em> <code>master~2</code></td>
+<td>2 commits back from master</td>
+</tr>
+<tr class="odd">
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td><em><code>git show</code></em> <code>master..fix</code></td>
+<td>reachable from <em>fix</em> but not <em>master</em></td>
+</tr>
+<tr class="odd">
+<td><em><code>git show</code></em> <code>master...fix</code></td>
+<td>reachable from <em>fix</em> and <em>master</em>, but not both</td>
+</tr>
+</tbody>
+</table>
+<p>{: .-mute-em}</p>
+<p>These are just the common ones, there’s a lot more below! (These work in many other commands, not just <code>git show</code>.)</p>
+<h2 id="reference">Reference</h2>
+<h3 id="commits">Commits</h3>
+<div class="line-block"><em><code>git checkout</code></em> <code>dae68e1</code> | sha1 |</div>
+<p>{: .-mute-em}</p>
+<h3 id="references">References</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><em><code>git checkout</code></em> <code>HEAD</code></td>
+<td>reference</td>
+</tr>
+<tr class="even">
+<td><em><code>git checkout</code></em> <code>master</code></td>
+<td>branch</td>
+</tr>
+<tr class="odd">
+<td><em><code>git checkout</code></em> <code>v1.0.0</code></td>
+<td>tag</td>
+</tr>
+<tr class="even">
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td><em><code>git checkout</code></em> <code>origin/master</code></td>
+<td>aka, <em>refs/remotes/origin/master</em></td>
+</tr>
+<tr class="even">
+<td><em><code>git checkout</code></em> <code>heads/master</code></td>
+<td>aka, <em>refs/heads/master</em></td>
+</tr>
+</tbody>
+</table>
+<p>{: .-mute-em}</p>
+<h3 id="searching-back">Searching back</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><em><code>git checkout</code></em> <code>master@{yesterday}</code></td>
+<td>also <em>1 day ago</em>, etc</td>
+</tr>
+<tr class="even">
+<td><em><code>git checkout</code></em> <code>master@{2}</code></td>
+<td>2nd prior value</td>
+</tr>
+<tr class="odd">
+<td><em><code>git checkout</code></em> <code>master@{push}</code></td>
+<td>where <em>master</em> would push to</td>
+</tr>
+<tr class="even">
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td><em><code>git checkout</code></em> <code>master^</code></td>
+<td>parent commit</td>
+</tr>
+<tr class="even">
+<td><em><code>git checkout</code></em> <code>master^2</code></td>
+<td>2nd parent, eg, what it merged</td>
+</tr>
+<tr class="odd">
+<td><em><code>git checkout</code></em> <code>master~5</code></td>
+<td>5 parents back</td>
+</tr>
+<tr class="even">
+<td><em><code>git checkout</code></em> <code>master^0</code></td>
+<td>this commit; disambiguates from tags</td>
+</tr>
+<tr class="odd">
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td><em><code>git checkout</code></em> <code>v0.99.8^{tag}</code></td>
+<td>can be <em>commit</em>, <em>tag</em>, <em>tree</em>, <em>object</em></td>
+</tr>
+<tr class="odd">
+<td><em><code>git checkout</code></em> <code>v0.99.8^{}</code></td>
+<td>defaults to <em>{tag}</em></td>
+</tr>
+<tr class="even">
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td><em><code>git checkout</code></em> <code>":/fix bug"</code></td>
+<td>searches commit messages</td>
+</tr>
+</tbody>
+</table>
+<p>{: .-mute-em}</p>
+<h3 id="other">Other</h3>
+<div class="line-block"><code>HEAD:README</code> | … |<br />
+<code>0:README</code> | (0 to 3) … |</div>
+<h2 id="ranges">Ranges</h2>
+<h3 id="ranges-1">Ranges</h3>
+<div class="line-block"><em><code>git log</code></em> <code>master</code> | reachable parents from master |<br />
+<em><code>git log</code></em> <code>^master</code> | exclude reachable parents from master |<br />
+<em><code>git log</code></em> <code>master..fix</code> | reachable from <em>fix</em> but not <em>master</em> |<br />
+<em><code>git log</code></em> <code>master...fix</code> | reachable from <em>fix</em> and <em>master</em>, but not both |<br />
+<em><code>git log</code></em> <code>HEAD^@</code> | parents of <em>HEAD</em> |<br />
+<em><code>git log</code></em> <code>HEAD^!</code> | <em>HEAD</em>, then excluding parents’s ancestors |<br />
+<em><code>git log</code></em> <code>HEAD^{:/fix}</code> | search previous <em>HEAD</em>s matching criteria |</div>
+<p>{: .-mute-em}</p>
+<h3 id="ranges-illustration">Ranges illustration</h3>
+<pre class="nohighlight"><code>A ─┬─ E ── F ── G   master
+   │
+   └─ B ── C ── D   fix</code></pre>
+<p>{: .-box-chars.-setup}</p>
+<div class="line-block"><em><code>git log</code></em> <code>master..fix</code> | BCD |<br />
+<em><code>git log</code></em> <code>master...fix</code> | BCD and EFG |</div>
+<p>{: .-mute-em}</p>
+<h2 id="references-1">References</h2>
+<ul>
+<li><a href="https://www.kernel.org/pub/software/scm/git/docs/gitrevisions.html">Git Tools - Revision Selection</a> <em>(git-scm.com)</em></li>
+<li><a href="https://www.kernel.org/pub/software/scm/git/docs/gitrevisions.html">gitrevisions(7)</a> <em>(kernel.org)</em></li>
+</ul>
+</body>
+</html>

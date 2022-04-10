@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>malformed_uri</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="urierror-malformed-uri-sequence">URIError: malformed URI sequence</h1>
+<p>The JavaScript exception “malformed URI sequence” occurs when URI encoding or decoding wasn’t successful.</p>
+<h2 id="message">Message</h2>
+<pre><code>URIError: The URI to be encoded contains invalid character (Edge)
+URIError: malformed URI sequence (Firefox)
+URIError: URI malformed (Chrome)</code></pre>
+<h2 id="error-type">Error type</h2>
+<p><a href="../global_objects/urierror"><code>URIError</code></a></p>
+<h2 id="what-went-wrong">What went wrong?</h2>
+<p>URI encoding or decoding wasn’t successful. An argument given to either the <a href="../global_objects/decodeuri"><code>decodeURI</code></a>, <a href="../global_objects/encodeuri"><code>encodeURI</code></a>, <a href="../global_objects/encodeuricomponent"><code>encodeURIComponent</code></a>, or <a href="../global_objects/decodeuricomponent"><code>decodeURIComponent</code></a> function was not valid, so that the function was unable encode or decode properly.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="encoding">Encoding</h3>
+<p>Encoding replaces each instance of certain characters by one, two, three, or four escape sequences representing the UTF-8 encoding of the character. An <a href="../global_objects/urierror"><code>URIError</code></a> will be thrown if there is an attempt to encode a surrogate which is not part of a high-low pair, for example:</p>
+<pre><code>encodeURI(&#39;\uD800&#39;);
+// &quot;URIError: malformed URI sequence&quot;
+
+encodeURI(&#39;\uDFFF&#39;);
+// &quot;URIError: malformed URI sequence&quot;</code></pre>
+<p>A high-low pair is ok. For example:</p>
+<pre><code>encodeURI(&#39;\uD800\uDFFF&#39;);
+// &quot;%F0%90%8F%BF&quot;</code></pre>
+<h3 id="decoding">Decoding</h3>
+<p>Decoding replaces each escape sequence in the encoded URI component with the character that it represents. If there isn’t such a character, an error will be thrown:</p>
+<pre><code>decodeURIComponent(&#39;%E0%A4%A&#39;);
+// &quot;URIError: malformed URI sequence&quot;</code></pre>
+<p>With proper input, this should usually look like something like this:</p>
+<pre><code>decodeURIComponent(&#39;JavaScript_%D1%88%D0%B5%D0%BB%D0%BB%D1%8B&#39;);
+// &quot;JavaScript_шеллы&quot;</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../global_objects/urierror"><code>URIError</code></a></li>
+<li><a href="../global_objects/decodeuri"><code>decodeURI</code></a></li>
+<li><a href="../global_objects/encodeuri"><code>encodeURI</code></a></li>
+<li><a href="../global_objects/encodeuricomponent"><code>encodeURIComponent</code></a></li>
+<li><a href="../global_objects/decodeuricomponent"><code>decodeURIComponent</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Malformed_URI" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Malformed_URI</a></p>
+</body>
+</html>

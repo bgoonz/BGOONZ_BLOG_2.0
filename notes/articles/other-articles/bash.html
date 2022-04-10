@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>bash</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="tips---tuning-command-line-history-in-bash---shellhacks">7 Tips - Tuning Command Line History in Bash - ShellHacks</h1>
+<blockquote>
+<p>7 Tips that can help you to improve you Bash history file. You will learn how to add date and time to bash history file, increase history size, ignore specific commands and much more … Every command that you enter, is stored in the file ~/.bash_history. Run history to see your last commands. You can […]</p>
+</blockquote>
+<p>7 Tips that can help you to improve you Bash history file.</p>
+<p>You will learn how to add date and time to bash history file, increase history size, ignore specific commands and much more …</p>
+<p>Every command that you enter, is stored in the file <strong>~/.bash_history</strong>. Run <strong>history</strong> to see your last commands.</p>
+<p>You can improve your Bash history, appending different environment variables to your <code>~/.bashrc</code> file.</p>
+<p>After modifying <code>~/.bashrc</code> file, execute the following command to apply changes:</p>
+<p>source ~/.bashrc</p>
+<h2 id="add-date-and-time-to-bash-history">1. Add Date and Time to Bash History</h2>
+<p>Sometimes it would be very nice to know when some command got executed.</p>
+<p>Set <code>HISTTIMEFORMAT</code> to print the time stamps associated with each history entry.</p>
+<p>Append the following line to <code>~/.bashrc</code> file:</p>
+<p>export HISTTIMEFORMAT=“%h %d %H:%M:%S”</p>
+<p>Now, when you type <strong>history</strong>, it will show something like:</p>
+<p>113 Jun 08 16:31:06 sudo ifconfig 114 Jun 08 16:31:10 top 115 Jun 08 16:31:19 ping 8.8.8.8 116 Jun 08 16:31:22 history</p>
+<h2 id="increase-bash-history-size">2. Increase Bash History Size</h2>
+<p>Increase <code>HISTSIZE</code> - the number of commands to remember in the command history (the default value is 500).</p>
+<p>export HISTSIZE=10000</p>
+<p>Increase <code>HISTFILESIZE</code> - the maximum number of lines contained in the history file (the default value is 500).</p>
+<p>export HISTFILESIZE=10000</p>
+<h2 id="append-bash-commands-to-history-file">3. Append Bash Commands to History File</h2>
+<p>Bash overwrites <code>.bash_history</code> file?</p>
+<p>To append commands to the history file, rather than overwrite it, add the following line to <code>~/.bashrc</code>:</p>
+<p>shopt -s histappend</p>
+<h2 id="store-bash-history-immediately">4. Store Bash History Immediately</h2>
+<p>By default, Bash only records a session to the <code>.bash_history</code> file when the session terminates.</p>
+<p>This means that if you crash or your session terminates improperly, you lose the history up to that point.</p>
+<p>Use <code>$PROMPT_COMMAND</code> variable to save each command right after it has been executed.</p>
+<p>Append the following line to <code>~/.bashrc</code> file, if the variable <code>$PROMPT_COMMAND</code> hasn’t been set yet:</p>
+<p>PROMPT_COMMAND=‘history -a’</p>
+<p>Append the following line, if the variable <code>$PROMPT_COMMAND</code> has already been set:</p>
+<p>PROMPT_COMMAND=‘$PROMPT_COMMAND; history -a’</p>
+<h2 id="control-bash-history">5. Control Bash History</h2>
+<p><code>HISTCONTROL</code> is a colon-separated list of values controlling how commands are saved in the history file.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ignorespace</td>
+<td>don’t save lines which begin with a <space> character</td>
+</tr>
+<tr class="even">
+<td>ignoredups</td>
+<td>don’t save lines matching the previous history entry</td>
+</tr>
+<tr class="odd">
+<td>ignoreboth</td>
+<td>use both ‘ignorespace’ and ‘ignoredups’</td>
+</tr>
+<tr class="even">
+<td>erasedups</td>
+<td>eliminate duplicates across the whole history</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<p>export HISTCONTROL=ignorespace:erasedups</p>
+<h2 id="ignore-specific-commands">6. Ignore Specific Commands</h2>
+<p><code>HISTIGNORE</code> is a colon-separated list of patterns used to decide which command lines should be saved in the history file.</p>
+<p>Don’t save <code>ls</code>, <code>ps</code> and <code>history</code> commands:</p>
+<p>export HISTIGNORE=“ls:ps:history”</p>
+<p>Don’t save commands with <code>s</code> in the beginig:</p>
+<p>export HISTIGNORE=“s*”</p>
+<h2 id="use-one-command-per-line">7. Use one command per line</h2>
+<p>Store multi-line commands in one history entry:</p>
+<p>shopt -s cmdhist</p>
+<h2 id="change-the-history-file-name">Change the History File Name</h2>
+<p>Use <code>HISTFILE</code> to change the name of the file in which Bash history is saved. The default value is <code>~/.bash_history</code>.</p>
+<p>export HISTFILE=~/.custom_file</p>
+<p><a href="https://www.shellhacks.com/tune-command-line-history-bash/">Source</a></p>
+</body>
+</html>

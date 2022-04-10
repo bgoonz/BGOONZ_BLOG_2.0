@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>instantiatestreaming</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="webassembly.instantiatestreaming">WebAssembly.instantiateStreaming()</h1>
+<p>The <code>WebAssembly.instantiateStreaming()</code> function compiles and instantiates a WebAssembly module directly from a streamed underlying source. This is the most efficient, optimized way to load wasm code.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>WebAssembly.instantiateStreaming(source, importObject)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><em>source</em><br />
+A <a href="https://developer.mozilla.org/en-US/docs/Web/API/Response"><code>Response</code></a> object or a promise that will fulfill with one, representing the underlying source of a .wasm module you want to stream, compile, and instantiate.</p>
+<p><em>importObject</em> <span class="badge inline optional">Optional</span><br />
+An object containing the values to be imported into the newly-created <code>Instance</code>, such as functions or <a href="memory"><code>WebAssembly.Memory</code></a> objects. There must be one matching property for each declared import of the compiled module or else a <code>WebAssembly.LinkError</code> is thrown.</p>
+<h3 id="return-value">Return value</h3>
+<p>A <code>Promise</code> that resolves to a <code>ResultObject</code> which contains two fields:</p>
+<ul>
+<li><code>module</code>: A <a href="module"><code>WebAssembly.Module</code></a> object representing the compiled WebAssembly module. This <code>Module</code> can be instantiated again or shared via <a href="https://developer.mozilla.org/en-US/docs/Web/API/Worker/postMessage">postMessage()</a>.</li>
+<li><code>instance</code>: A <a href="instance"><code>WebAssembly.Instance</code></a> object that contains all the <a href="https://developer.mozilla.org/en-US/docs/WebAssembly/Exported_functions">Exported WebAssembly functions</a>.</li>
+</ul>
+<h3 id="exceptions">Exceptions</h3>
+<ul>
+<li>If either of the parameters are not of the correct type or structure, a <a href="../typeerror"><code>TypeError</code></a> is thrown.</li>
+<li>If the operation fails, the promise rejects with a <a href="compileerror"><code>WebAssembly.CompileError</code></a>, <a href="linkerror"><code>WebAssembly.LinkError</code></a>, or <a href="runtimeerror"><code>WebAssembly.RuntimeError</code></a>, depending on the cause of the failure.</li>
+</ul>
+<h2 id="examples">Examples</h2>
+<h3 id="instantiating-streaming">Instantiating streaming</h3>
+<p>The following example (see our <a href="https://github.com/mdn/webassembly-examples/blob/master/js-api-examples/instantiate-streaming.html">instantiate-streaming.html</a> demo on GitHub, and <a href="https://mdn.github.io/webassembly-examples/js-api-examples/instantiate-streaming.html">view it live</a> also) directly streams a .wasm module from an underlying source then compiles and instantiates it, the promise fulfilling with a <code>ResultObject</code>. Because the <code>instantiateStreaming()</code> function accepts a promise for a <a href="https://developer.mozilla.org/en-US/docs/Web/API/Response"><code>Response</code></a> object, you can directly pass it a <a href="https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch"><code>WindowOrWorkerGlobalScope.fetch()</code></a> call, and it will pass the response into the function when it fulfills.</p>
+<pre><code>var importObject = { imports: { imported_func: arg =&gt; console.log(arg) } };
+
+WebAssembly.instantiateStreaming(fetch(&#39;simple.wasm&#39;), importObject)
+.then(obj =&gt; obj.instance.exports.exported_func());</code></pre>
+<p>The <code>ResultObject</code>’s instance member is then accessed, and the contained exported function invoked.</p>
+<p><strong>Note:</strong> For this to work, <code>.wasm</code> files should be returned with an <code>application/wasm</code> MIME type by the server.</p>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://webassembly.github.io/spec/web-api/#dom-webassembly-instantiatestreaming">WebAssembly Web API (WebAssembly Web API) <br/></p>
+<span class="small">#dom-webassembly-instantiatestreaming</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>instantiateStreaming</code></p>
+<p>61</p>
+<p>16</p>
+<p>58</p>
+<p>No</p>
+<p>47</p>
+<p>No</p>
+<p>61</p>
+<p>61</p>
+<p>58</p>
+<p>45</p>
+<p>No</p>
+<p>8.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/WebAssembly">WebAssembly</a> overview page</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts">WebAssembly concepts</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API">Using the WebAssembly JavaScript API</a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/instantiateStreaming" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/instantiateStreaming</a></p>
+</body>
+</html>

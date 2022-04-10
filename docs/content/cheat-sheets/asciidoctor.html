@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2022-01-03" />
+  <title>title</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">title</h1>
+<p class="subtitle">subtitle</p>
+<p class="date">2022-01-03</p>
+</header>
+<h1 id="headers">headers</h1>
+<p>= h1 header == h2 header</p>
+<h1 id="blocks">blocks</h1>
+<p>[quote, Somebody, Who is somebody]</p>
+<hr />
+<p>Quote something</p>
+<hr />
+<p>// NOTE: Some note // [WARNING] ==== Some warning ====</p>
+<h1 id="lists">lists</h1>
+<p>.Un-ordered list with a title</p>
+<ul>
+<li><p>list item ** sub-list item</p></li>
+<li><p>hypen as sub-sub-list item</p></li>
+<li><p>that continues at the next line</p></li>
+<li><p>{blank}</p></li>
+<li><hr />
+<h2 id="complex-content-of-an-item">complex content of an item</h2></li>
+</ul>
+<p>[%reversed,start=4] .Ordered list; reversed, started at 4 . ordered list item .. ordered list sub-item . another list item</p>
+<h1 id="separating-adjacent-lists-surrounded-by-blank-lines">separating adjacent lists (surrounded by blank lines)</h1>
+<p>//-</p>
+<h1 id="checklist">checklist</h1>
+<ul>
+<li>[*] checked</li>
+<li>[x] also checked</li>
+<li>[ ] not checked</li>
+</ul>
+<p>Description list item:: definition [horizontal] Description list item #2:: definition</p>
+<h1 id="links">links</h1>
+<p>Automatic link http://example.com or http://example.com[link with title and attributes,role=external,window=_blank] link:../README.adoc[Relative link to open the README file]</p>
+<h1 id="cross-reference-links">cross reference links</h1>
+<p>[[an-anchor]]inline anchor, [#other-anchor]#applied to a phrase# Reference to &lt;<an-anchor>&gt; or to &lt;&lt;other-anchor,the other anchor&gt;&gt;</p>
+<h1 id="image">image</h1>
+<p>image:image.png[Alt text, title=“Inline image”]</p>
+<p>.Block image title [caption=“Figure 1:”,link=http://example.com/image.png] image::image.jpg[Alt text, 300, 200]</p>
+<h1 id="code">code</h1>
+<p>…. literal block ….</p>
+<p>:variable: 123 .Source code title [source,asciidoc,subs=“+quotes,attributes+”,options=“nowrap”]</p>
+<hr />
+<p>:toc: right # &lt;1&gt; // with var substitution (attributes+) :variable: definition, the value is {variable} // with the markup substitution (+quotes) // no wrapping long lines (nowrap)</p>
+<hr />
+<p>&lt;1&gt; Asciidoctor sytax for the table of content</p>
+<h1 id="include-source-code-stripping-indentation">include source code, stripping indentation</h1>
+<h2 id="sourceasciidocindent0">[source,asciidoc,indent=0]</h2>
+<h2 id="includedocdocument.adoclines5..10">include::doc/document.adoc[lines=5..10]</h2>
+<h1 id="formatting">formatting</h1>
+<p><em>bold</em>, <strong>un</strong>constrained <em>italic</em>, <strong>un</strong>constrained <code>monospace</code>, <code>un</code>constrained <code>[underline]#Underline text#</code> <code>[overline]#overline text#</code> <code>[line-through]#strikethrough#</code> <code>[blue line-through]*bold blue and line-through*.</code></p>
+<h1 id="comment">comment</h1>
+<p>// text in the comment</p>
+<h1 id="horizontal-rules-hr">horizontal rules (hr)</h1>
+<p>’’’</p>
+<p>Non-breaking space {nbsp} Break at the end of + line</p>
+<h1 id="tables">tables</h1>
+<p>.Table title [caption=“Table 2:”] |=== | Name | Description // | Asciidoctor | Awesome way to write documentation // 2+| This cell spans 2 columns // .2+| This cell spans 2 rows // | Line at the side of the spanned rows | Another line // |===</p>
+</body>
+</html>

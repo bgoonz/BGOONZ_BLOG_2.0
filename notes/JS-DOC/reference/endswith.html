@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>endswith</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="string.prototype.endswith">String.prototype.endsWith()</h1>
+<p>The <code>endsWith()</code> method determines whether a string ends with the characters of a specified string, returning <code>true</code> or <code>false</code> as appropriate.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>endsWith(searchString)
+endsWith(searchString, length)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>searchString</code><br />
+The characters to be searched for at the end of <code>str</code>.</p>
+<p><code>length</code> <span class="badge inline optional">Optional</span><br />
+If provided, it is used as the length of <code>str</code>. Defaults to <code>str.length</code>.</p>
+<h3 id="return-value">Return value</h3>
+<p><code>true</code> if the given characters are found at the end of the string; otherwise, <code>false</code>.</p>
+<h2 id="description">Description</h2>
+<p>This method lets you determine whether or not a string ends with another string. This method is case-sensitive.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-endswith">Using endsWith()</h3>
+<pre><code>let str = &#39;To be, or not to be, that is the question.&#39;
+
+console.log(str.endsWith(&#39;question.&#39;))  // true
+console.log(str.endsWith(&#39;to be&#39;))      // false
+console.log(str.endsWith(&#39;to be&#39;, 19))  // true</code></pre>
+<h2 id="polyfill">Polyfill</h2>
+<p>This method has been added to the ECMAScript 6 specification and may not be available in all JavaScript implementations yet. However, you can polyfill <code>String.prototype.endsWith()</code> with the following snippet:</p>
+<pre><code>if (!String.prototype.endsWith) {
+  String.prototype.endsWith = function(search, this_len) {
+    if (this_len === undefined || this_len &gt; this.length) {
+      this_len = this.length;
+    }
+    return this.substring(this_len - search.length, this_len) === search;
+  };
+}</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-string.prototype.endswith">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-string.prototype.endswith</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>endsWith</code></p>
+<p>41</p>
+<p>12</p>
+<p>17</p>
+<p>No</p>
+<p>28</p>
+<p>9</p>
+<p>≤37</p>
+<p>36</p>
+<p>17</p>
+<p>24</p>
+<p>9</p>
+<p>3.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="startswith"><code>String.prototype.startsWith()</code></a></li>
+<li><a href="includes"><code>String.prototype.includes()</code></a></li>
+<li><a href="indexof"><code>String.prototype.indexOf()</code></a></li>
+<li><a href="lastindexof"><code>String.prototype.lastIndexOf()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith</a></p>
+</body>
+</html>

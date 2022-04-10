@@ -1,6 +1,7 @@
-# RegExp.prototype.hasIndices
+RegExp.prototype.hasIndices
+===========================
 
-The `hasIndices` property indicates whether or not the "`d`" flag is used with the regular expression. `hasIndices` is a read-only property of an individual regular expression instance.
+The `hasIndices` property indicates whether or not the “`d`” flag is used with the regular expression. `hasIndices` is a read-only property of an individual regular expression instance.
 
 Property attributes of `RegExp.prototype.hasIndices`
 
@@ -16,13 +17,15 @@ Configurable
 
 yes
 
-## Description
+Description
+-----------
 
-The value of `hasIndices` is a [`Boolean`](../boolean) and `true` if the "`d`" flag was used; otherwise, `false`. The "`d`" flag indicates that the result of a regular expression match should contain the start and end indices of the substrings of each capture group.
+The value of `hasIndices` is a [`Boolean`](../boolean) and `true` if the “`d`” flag was used; otherwise, `false`. The “`d`” flag indicates that the result of a regular expression match should contain the start and end indices of the substrings of each capture group.
 
 You cannot change this property directly.
 
-## Examples
+Examples
+--------
 
 ### Using `hasIndices`
 
@@ -43,14 +46,14 @@ You cannot change this property directly.
 
     console.log(regex2.exec(str2).indices); // Output: undefined
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-get-regexp.prototype.hasIndices">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-get-regexp.prototype.hasIndices</span></td></tr></tbody></table>
 
-<span class="small">#sec-get-regexp.prototype.hasIndices</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -106,7 +109,8 @@ No
 
 No
 
-## See also
+See also
+--------
 
 -   [`RegExp.lastIndex`](lastindex)
 -   [`RegExp.prototype.exec()`](exec)
@@ -118,6 +122,5 @@ No
 -   [`RegExp.prototype.sticky`](sticky)
 -   [`RegExp.prototype.unicode`](unicode)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/hasIndices" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/hasIndices</a>

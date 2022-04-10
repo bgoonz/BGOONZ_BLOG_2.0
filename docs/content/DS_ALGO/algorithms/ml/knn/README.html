@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="k-nearest-neighbors-algorithm">k-Nearest Neighbors Algorithm</h1>
+<p>The <strong>k-nearest neighbors algorithm (k-NN)</strong> is a supervised Machine Learning algorithm. It’s a classification algorithm, determining the class of a sample vector using a sample data.</p>
+<p>In k-NN classification, the output is a class membership. An object is classified by a plurality vote of its neighbors, with the object being assigned to the class most common among its <code>k</code> nearest neighbors (<code>k</code> is a positive integer, typically small). If <code>k = 1</code>, then the object is simply assigned to the class of that single nearest neighbor.</p>
+<p>The idea is to calculate the similarity between two data points on the basis of a distance metric. <a href="https://en.wikipedia.org/wiki/Euclidean_distance">Euclidean distance</a> is used mostly for this task.</p>
+<figure>
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Euclidean_distance_2d.svg" alt="Euclidean distance between two points" /><figcaption>Euclidean distance between two points</figcaption>
+</figure>
+<p><em>Image source: <a href="https://en.wikipedia.org/wiki/Euclidean_distance">Wikipedia</a></em></p>
+<p>The algorithm is as follows:</p>
+<ol type="1">
+<li>Check for errors like invalid data/labels.</li>
+<li>Calculate the euclidean distance of all the data points in training data with the classification point</li>
+<li>Sort the distances of points along with their classes in ascending order</li>
+<li>Take the initial <code>K</code> classes and find the mode to get the most similar class</li>
+<li>Report the most similar class</li>
+</ol>
+<p>Here is a visualization of k-NN classification for better understanding:</p>
+<figure>
+<img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/KnnClassification.svg" alt="KNN Visualization 1" /><figcaption>KNN Visualization 1</figcaption>
+</figure>
+<p><em>Image source: <a href="https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm">Wikipedia</a></em></p>
+<p>The test sample (green dot) should be classified either to blue squares or to red triangles. If <code>k = 3</code> (solid line circle) it is assigned to the red triangles because there are <code>2</code> triangles and only <code>1</code> square inside the inner circle. If <code>k = 5</code> (dashed line circle) it is assigned to the blue squares (<code>3</code> squares vs. <code>2</code> triangles inside the outer circle).</p>
+<p>Another k-NN classification example:</p>
+<figure>
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/graph2-2.png" alt="KNN Visualization 2" /><figcaption>KNN Visualization 2</figcaption>
+</figure>
+<p><em>Image source: <a href="https://media.geeksforgeeks.org/wp-content/uploads/graph2-2.png">GeeksForGeeks</a></em></p>
+<p>Here, as we can see, the classification of unknown points will be judged by their proximity to other points.</p>
+<p>It is important to note that <code>K</code> is preferred to have odd values in order to break ties. Usually <code>K</code> is taken as <code>3</code> or <code>5</code>.</p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm">k-nearest neighbors algorithm on Wikipedia</a></li>
+</ul>
+</body>
+</html>

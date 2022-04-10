@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>filteringandsortingalistofstrings</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<p>title: Filtering and Sorting a List of Strings tip-number: 26 tip-username: davegomez tip-username-profile: https://github.com/davegomez tip-tldr: You may have a big list of names you need to filter in order to remove duplicates and sort them alphabetically.</p>
+<p>c</p>
+<ul>
+<li>/en/filtering-and-sorting-a-list-of-strings/</li>
+</ul>
+<p>You may have a big list of names you need to filter in order to remove duplicates and sort them alphabetically.</p>
+<p>In our example we are going to use the list of <strong>JavaScript reserved keywords</strong> we can find across the different versions of the language, but as you can notice, there is a lot of duplicated keywords and they are not alphabetically organized. So this is a perfect list (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>) of strings to test out this JavaScript tip.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">var</span> keywords <span class="op">=</span> [</a>
+<a class="sourceLine" id="cb1-2" title="2">    <span class="st">&#39;do&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-3" title="3">    <span class="st">&#39;if&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-4" title="4">    <span class="st">&#39;in&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-5" title="5">    <span class="st">&#39;for&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-6" title="6">    <span class="st">&#39;new&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-7" title="7">    <span class="st">&#39;try&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-8" title="8">    <span class="st">&#39;var&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-9" title="9">    <span class="st">&#39;case&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-10" title="10">    <span class="st">&#39;else&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-11" title="11">    <span class="st">&#39;enum&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-12" title="12">    <span class="st">&#39;null&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-13" title="13">    <span class="st">&#39;this&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-14" title="14">    <span class="st">&#39;true&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-15" title="15">    <span class="st">&#39;void&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-16" title="16">    <span class="st">&#39;with&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-17" title="17">    <span class="st">&#39;break&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-18" title="18">    <span class="st">&#39;catch&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-19" title="19">    <span class="st">&#39;class&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-20" title="20">    <span class="st">&#39;const&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-21" title="21">    <span class="st">&#39;false&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-22" title="22">    <span class="st">&#39;super&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-23" title="23">    <span class="st">&#39;throw&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-24" title="24">    <span class="st">&#39;while&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-25" title="25">    <span class="st">&#39;delete&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-26" title="26">    <span class="st">&#39;export&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-27" title="27">    <span class="st">&#39;import&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-28" title="28">    <span class="st">&#39;return&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-29" title="29">    <span class="st">&#39;switch&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-30" title="30">    <span class="st">&#39;typeof&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-31" title="31">    <span class="st">&#39;default&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-32" title="32">    <span class="st">&#39;extends&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-33" title="33">    <span class="st">&#39;finally&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-34" title="34">    <span class="st">&#39;continue&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-35" title="35">    <span class="st">&#39;debugger&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-36" title="36">    <span class="st">&#39;function&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-37" title="37">    <span class="st">&#39;do&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-38" title="38">    <span class="st">&#39;if&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-39" title="39">    <span class="st">&#39;in&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-40" title="40">    <span class="st">&#39;for&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-41" title="41">    <span class="st">&#39;int&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-42" title="42">    <span class="st">&#39;new&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-43" title="43">    <span class="st">&#39;try&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-44" title="44">    <span class="st">&#39;var&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-45" title="45">    <span class="st">&#39;byte&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-46" title="46">    <span class="st">&#39;case&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-47" title="47">    <span class="st">&#39;char&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-48" title="48">    <span class="st">&#39;else&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-49" title="49">    <span class="st">&#39;enum&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-50" title="50">    <span class="st">&#39;goto&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-51" title="51">    <span class="st">&#39;long&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-52" title="52">    <span class="st">&#39;null&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-53" title="53">    <span class="st">&#39;this&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-54" title="54">    <span class="st">&#39;true&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-55" title="55">    <span class="st">&#39;void&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-56" title="56">    <span class="st">&#39;with&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-57" title="57">    <span class="st">&#39;break&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-58" title="58">    <span class="st">&#39;catch&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-59" title="59">    <span class="st">&#39;class&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-60" title="60">    <span class="st">&#39;const&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-61" title="61">    <span class="st">&#39;false&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-62" title="62">    <span class="st">&#39;final&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-63" title="63">    <span class="st">&#39;float&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-64" title="64">    <span class="st">&#39;short&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-65" title="65">    <span class="st">&#39;super&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-66" title="66">    <span class="st">&#39;throw&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-67" title="67">    <span class="st">&#39;while&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-68" title="68">    <span class="st">&#39;delete&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-69" title="69">    <span class="st">&#39;double&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-70" title="70">    <span class="st">&#39;export&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-71" title="71">    <span class="st">&#39;import&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-72" title="72">    <span class="st">&#39;native&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-73" title="73">    <span class="st">&#39;public&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-74" title="74">    <span class="st">&#39;return&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-75" title="75">    <span class="st">&#39;static&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-76" title="76">    <span class="st">&#39;switch&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-77" title="77">    <span class="st">&#39;throws&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-78" title="78">    <span class="st">&#39;typeof&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-79" title="79">    <span class="st">&#39;boolean&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-80" title="80">    <span class="st">&#39;default&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-81" title="81">    <span class="st">&#39;extends&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-82" title="82">    <span class="st">&#39;finally&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-83" title="83">    <span class="st">&#39;package&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-84" title="84">    <span class="st">&#39;private&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-85" title="85">    <span class="st">&#39;abstract&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-86" title="86">    <span class="st">&#39;continue&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-87" title="87">    <span class="st">&#39;debugger&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-88" title="88">    <span class="st">&#39;function&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-89" title="89">    <span class="st">&#39;volatile&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-90" title="90">    <span class="st">&#39;interface&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-91" title="91">    <span class="st">&#39;protected&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-92" title="92">    <span class="st">&#39;transient&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-93" title="93">    <span class="st">&#39;implements&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-94" title="94">    <span class="st">&#39;instanceof&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-95" title="95">    <span class="st">&#39;synchronized&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-96" title="96">    <span class="st">&#39;do&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-97" title="97">    <span class="st">&#39;if&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-98" title="98">    <span class="st">&#39;in&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-99" title="99">    <span class="st">&#39;for&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-100" title="100">    <span class="st">&#39;let&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-101" title="101">    <span class="st">&#39;new&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-102" title="102">    <span class="st">&#39;try&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-103" title="103">    <span class="st">&#39;var&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-104" title="104">    <span class="st">&#39;case&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-105" title="105">    <span class="st">&#39;else&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-106" title="106">    <span class="st">&#39;enum&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-107" title="107">    <span class="st">&#39;eval&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-108" title="108">    <span class="st">&#39;null&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-109" title="109">    <span class="st">&#39;this&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-110" title="110">    <span class="st">&#39;true&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-111" title="111">    <span class="st">&#39;void&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-112" title="112">    <span class="st">&#39;with&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-113" title="113">    <span class="st">&#39;break&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-114" title="114">    <span class="st">&#39;catch&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-115" title="115">    <span class="st">&#39;class&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-116" title="116">    <span class="st">&#39;const&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-117" title="117">    <span class="st">&#39;false&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-118" title="118">    <span class="st">&#39;super&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-119" title="119">    <span class="st">&#39;throw&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-120" title="120">    <span class="st">&#39;while&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-121" title="121">    <span class="st">&#39;yield&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-122" title="122">    <span class="st">&#39;delete&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-123" title="123">    <span class="st">&#39;export&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-124" title="124">    <span class="st">&#39;import&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-125" title="125">    <span class="st">&#39;public&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-126" title="126">    <span class="st">&#39;return&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-127" title="127">    <span class="st">&#39;static&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-128" title="128">    <span class="st">&#39;switch&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-129" title="129">    <span class="st">&#39;typeof&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-130" title="130">    <span class="st">&#39;default&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-131" title="131">    <span class="st">&#39;extends&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-132" title="132">    <span class="st">&#39;finally&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-133" title="133">    <span class="st">&#39;package&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-134" title="134">    <span class="st">&#39;private&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-135" title="135">    <span class="st">&#39;continue&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-136" title="136">    <span class="st">&#39;debugger&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-137" title="137">    <span class="st">&#39;function&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-138" title="138">    <span class="st">&#39;arguments&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-139" title="139">    <span class="st">&#39;interface&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-140" title="140">    <span class="st">&#39;protected&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-141" title="141">    <span class="st">&#39;implements&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-142" title="142">    <span class="st">&#39;instanceof&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-143" title="143">    <span class="st">&#39;do&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-144" title="144">    <span class="st">&#39;if&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-145" title="145">    <span class="st">&#39;in&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-146" title="146">    <span class="st">&#39;for&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-147" title="147">    <span class="st">&#39;let&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-148" title="148">    <span class="st">&#39;new&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-149" title="149">    <span class="st">&#39;try&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-150" title="150">    <span class="st">&#39;var&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-151" title="151">    <span class="st">&#39;case&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-152" title="152">    <span class="st">&#39;else&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-153" title="153">    <span class="st">&#39;enum&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-154" title="154">    <span class="st">&#39;eval&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-155" title="155">    <span class="st">&#39;null&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-156" title="156">    <span class="st">&#39;this&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-157" title="157">    <span class="st">&#39;true&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-158" title="158">    <span class="st">&#39;void&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-159" title="159">    <span class="st">&#39;with&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-160" title="160">    <span class="st">&#39;await&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-161" title="161">    <span class="st">&#39;break&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-162" title="162">    <span class="st">&#39;catch&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-163" title="163">    <span class="st">&#39;class&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-164" title="164">    <span class="st">&#39;const&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-165" title="165">    <span class="st">&#39;false&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-166" title="166">    <span class="st">&#39;super&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-167" title="167">    <span class="st">&#39;throw&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-168" title="168">    <span class="st">&#39;while&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-169" title="169">    <span class="st">&#39;yield&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-170" title="170">    <span class="st">&#39;delete&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-171" title="171">    <span class="st">&#39;export&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-172" title="172">    <span class="st">&#39;import&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-173" title="173">    <span class="st">&#39;public&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-174" title="174">    <span class="st">&#39;return&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-175" title="175">    <span class="st">&#39;static&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-176" title="176">    <span class="st">&#39;switch&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-177" title="177">    <span class="st">&#39;typeof&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-178" title="178">    <span class="st">&#39;default&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-179" title="179">    <span class="st">&#39;extends&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-180" title="180">    <span class="st">&#39;finally&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-181" title="181">    <span class="st">&#39;package&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-182" title="182">    <span class="st">&#39;private&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-183" title="183">    <span class="st">&#39;continue&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-184" title="184">    <span class="st">&#39;debugger&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-185" title="185">    <span class="st">&#39;function&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-186" title="186">    <span class="st">&#39;arguments&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-187" title="187">    <span class="st">&#39;interface&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-188" title="188">    <span class="st">&#39;protected&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-189" title="189">    <span class="st">&#39;implements&#39;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-190" title="190">    <span class="st">&#39;instanceof&#39;</span></a>
+<a class="sourceLine" id="cb1-191" title="191">]<span class="op">;</span></a></code></pre></div>
+<p>Since we don’t want to change our original list, we are going to use a high order function named <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/filter"><code>filter</code></a>, which will return a new filter array based in a predicate (<em>function</em>) we pass to it. The predicate will compare the index of the current keyword in the original list with its <code>index</code> in the new list and will push it to the new array only if the indexes match.</p>
+<p>Finally we are going to sort the filtered list using the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort"><code>sort</code></a> function which takes a comparison function as the only argument, returning a alphabetically sorted list.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">var</span> filteredAndSortedKeywords <span class="op">=</span> keywords</a>
+<a class="sourceLine" id="cb2-2" title="2">    .<span class="at">filter</span>(<span class="kw">function</span> (keyword<span class="op">,</span> index) <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-3" title="3">        <span class="cf">return</span> <span class="va">keywords</span>.<span class="at">lastIndexOf</span>(keyword) <span class="op">===</span> index<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-4" title="4">    <span class="op">}</span>)</a>
+<a class="sourceLine" id="cb2-5" title="5">    .<span class="at">sort</span>(<span class="kw">function</span> (a<span class="op">,</span> b) <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-6" title="6">        <span class="cf">return</span> a <span class="op">&lt;</span> b <span class="op">?</span> <span class="dv">-1</span> : <span class="dv">1</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-7" title="7">    <span class="op">}</span>)<span class="op">;</span></a></code></pre></div>
+<p>The <strong>ES6</strong> (ECMAScript 2015) version using <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions">arrow functions</a> looks a little simpler:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">const</span> filteredAndSortedKeywords <span class="op">=</span> <span class="va">keywords</span>.<span class="at">filter</span>((keyword<span class="op">,</span> index) <span class="kw">=&gt;</span> <span class="va">keywords</span>.<span class="at">lastIndexOf</span>(keyword) <span class="op">===</span> index).<span class="at">sort</span>((a<span class="op">,</span> b) <span class="kw">=&gt;</span> (a <span class="op">&lt;</span> b <span class="op">?</span> <span class="dv">-1</span> : <span class="dv">1</span>))<span class="op">;</span></a></code></pre></div>
+<p>And this is the final filtered and sorted list of JavaScript reserved keywords:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb4-1" title="1"><span class="va">console</span>.<span class="at">log</span>(filteredAndSortedKeywords)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-2" title="2"></a>
+<a class="sourceLine" id="cb4-3" title="3"><span class="co">// [&#39;abstract&#39;, &#39;arguments&#39;, &#39;await&#39;, &#39;boolean&#39;, &#39;break&#39;, &#39;byte&#39;, &#39;case&#39;, &#39;catch&#39;, &#39;char&#39;, &#39;class&#39;, &#39;const&#39;, &#39;continue&#39;, &#39;debugger&#39;, &#39;default&#39;, &#39;delete&#39;, &#39;do&#39;, &#39;double&#39;, &#39;else&#39;, &#39;enum&#39;, &#39;eval&#39;, &#39;export&#39;, &#39;extends&#39;, &#39;false&#39;, &#39;final&#39;, &#39;finally&#39;, &#39;float&#39;, &#39;for&#39;, &#39;function&#39;, &#39;goto&#39;, &#39;if&#39;, &#39;implements&#39;, &#39;import&#39;, &#39;in&#39;, &#39;instanceof&#39;, &#39;int&#39;, &#39;interface&#39;, &#39;let&#39;, &#39;long&#39;, &#39;native&#39;, &#39;new&#39;, &#39;null&#39;, &#39;package&#39;, &#39;private&#39;, &#39;protected&#39;, &#39;public&#39;, &#39;return&#39;, &#39;short&#39;, &#39;static&#39;, &#39;super&#39;, &#39;switch&#39;, &#39;synchronized&#39;, &#39;this&#39;, &#39;throw&#39;, &#39;throws&#39;, &#39;transient&#39;, &#39;true&#39;, &#39;try&#39;, &#39;typeof&#39;, &#39;var&#39;, &#39;void&#39;, &#39;volatile&#39;, &#39;while&#39;, &#39;with&#39;, &#39;yield&#39;]</span></a></code></pre></div>
+<p><em>Thanks to <span class="citation" data-cites="nikshulipa">[@nikshulipa]</span>(https://github.com/nikshulipa), <span class="citation" data-cites="kirilloid">[@kirilloid]</span>(https://twitter.com/kirilloid), <span class="citation" data-cites="lesterzone">[@lesterzone]</span>(https://twitter.com/lesterzone), <span class="citation" data-cites="tracker1">[@tracker1]</span>(https://twitter.com/tracker1), <span class="citation" data-cites="manuel_del_pozo">[@manuel_del_pozo]</span>(https://twitter.com/manuel_del_pozo) for all the comments and suggestions!</em></p>
+</body>
+</html>

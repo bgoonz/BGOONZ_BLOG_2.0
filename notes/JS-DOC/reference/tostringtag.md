@@ -1,4 +1,5 @@
-# Symbol.toStringTag
+Symbol.toStringTag
+==================
 
 The `Symbol.toStringTag` well-known symbol is a string valued property that is used in the creation of the default string description of an object. It is accessed internally by the [`Object.prototype.toString()`](../object/tostring) method.
 
@@ -16,7 +17,8 @@ Configurable
 
 no
 
-## Examples
+Examples
+--------
 
 ### Default tags
 
@@ -37,7 +39,7 @@ no
 
 ### Custom classes default to object tag
 
-When creating your own class, JavaScript defaults to the "Object" tag:
+When creating your own class, JavaScript defaults to the “Object” tag:
 
     class ValidatorClass {}
 
@@ -63,14 +65,14 @@ Due to a [WebIDL spec change](https://github.com/heycam/webidl/pull/357) in mid-
     test.toString(); // Returns [object HTMLButtonElement]
     test[Symbol.toStringTag];  // Returns HTMLButtonElement
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-symbol.tostringtag">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-symbol.tostringtag</span></td></tr></tbody></table>
 
-<span class="small">#sec-symbol.tostringtag</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -152,10 +154,10 @@ No
 
 5.0
 
-## See also
+See also
+--------
 
 -   [`Object.prototype.toString()`](../object/tostring)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/toStringTag" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/toStringTag</a>

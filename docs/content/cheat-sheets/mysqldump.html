@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>mysqldump</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="to-dump-a-database-to-a-file-note-that-your-password-will-appear-in-your-command-history">To dump a database to a file (Note that your password will appear in your command history!):</h1>
+<p>mysqldump -u<username> -p<password> <database> &gt; db.sql</p>
+<h1 id="to-dump-a-database-to-a-file">To dump a database to a file:</h1>
+<p>mysqldump -u<username> -p <database> &gt; db.sql</p>
+<h1 id="to-dump-a-database-to-a-.tgz-file-note-that-your-password-will-appear-in-your-command-history">To dump a database to a .tgz file (Note that your password will appear in your command history!):</h1>
+<p>mysqldump -u<username> -p<password> <database> | gzip -9 &gt; db.sql</p>
+<h1 id="to-dump-a-database-to-a-.tgz-file">To dump a database to a .tgz file:</h1>
+<p>mysqldump -u<username> -p <database> | gzip -9 &gt; db.sql</p>
+<h1 id="to-dump-all-databases-to-a-file-note-that-your-password-will-appear-in-your-command-history">To dump all databases to a file (Note that your password will appear in your command history!):</h1>
+<p>mysqldump -u<username> -p<password> –all-databases &gt; all-databases.sql</p>
+<h1 id="to-dump-all-databases-to-a-file">To dump all databases to a file:</h1>
+<p>mysqldump -u<username> -p –all-databases &gt; all-databases.sql</p>
+<h1 id="to-export-the-database-structure-only">To export the database structure only:</h1>
+<p>mysqldump –no-data -u<username> -p <database> &gt; dump_file</p>
+<h1 id="to-export-the-database-data-only">To export the database data only:</h1>
+<p>mysqldump –no-create-info -u<username> -p <database> &gt; dump_file</p>
+</body>
+</html>

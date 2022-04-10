@@ -1,8 +1,10 @@
-# Date.prototype.getMinutes()
+Date.prototype.getMinutes()
+===========================
 
 The `getMinutes()` method returns the minutes in the specified date according to local time.
 
-## Syntax
+Syntax
+------
 
     getMinutes()
 
@@ -10,7 +12,8 @@ The `getMinutes()` method returns the minutes in the specified date according to
 
 An integer number, between 0 and 59, representing the minutes in the given date according to local time.
 
-## Examples
+Examples
+--------
 
 ### Using getMinutes()
 
@@ -21,12 +24,11 @@ The second statement below assigns the value 15 to the variable `minutes`, based
 
     console.log(minutes); // 15
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getminutes">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-date.prototype.getminutes</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-date.prototype.getminutes</span></td></tr></tbody></table>
 
 `getMinutes`
 
@@ -54,7 +56,8 @@ The second statement below assigns the value 15 to the variable `minutes`, based
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`Date.prototype.getUTCMinutes()`](getutcminutes)
 -   [`Date.prototype.setMinutes()`](setminutes)

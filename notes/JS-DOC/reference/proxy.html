@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>proxy</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="proxy">Proxy</h1>
+<p>The <code>Proxy</code> object enables you to create a proxy for another object, which can intercept and redefine fundamental operations for that object.</p>
+<h2 id="description">Description</h2>
+<p>A <code>Proxy</code> is created with two parameters:</p>
+<ul>
+<li><code>target</code>: the original object which you want to proxy</li>
+<li><code>handler</code>: an object that defines which operations will be intercepted and how to redefine intercepted operations.</li>
+</ul>
+<p>For example, this code defines a simple target with just two properties, and an even simpler handler with no properties:</p>
+<pre><code>const target = {
+  message1: &quot;hello&quot;,
+  message2: &quot;everyone&quot;
+};
+
+const handler1 = {};
+
+const proxy1 = new Proxy(target, handler1);</code></pre>
+<p>Because the handler is empty, this proxy behaves just like the original target:</p>
+<pre><code>console.log(proxy1.message1); // hello
+console.log(proxy1.message2); // everyone</code></pre>
+<p>To customise the proxy, we define functions on the handler object:</p>
+<pre><code>const target = {
+  message1: &quot;hello&quot;,
+  message2: &quot;everyone&quot;
+};
+
+const handler2 = {
+  get: function(target, prop, receiver) {
+    return &quot;world&quot;;
+  }
+};
+
+const proxy2 = new Proxy(target, handler2);</code></pre>
+<p>Here we’ve provided an implementation of the <a href="proxy/proxy/get"><code>get()</code></a> handler, which intercepts attempts to access properties in the target.</p>
+<p>Handler functions are sometimes called <em>traps</em>, presumably because they trap calls to the target object. The very simple trap in <code>handler2</code> above redefines all property accessors:</p>
+<pre><code>console.log(proxy2.message1); // world
+console.log(proxy2.message2); // world</code></pre>
+<p>With the help of the <a href="reflect"><code>Reflect</code></a> class we can give some accessors the original behavior and redefine others:</p>
+<pre><code>const target = {
+  message1: &quot;hello&quot;,
+  message2: &quot;everyone&quot;
+};
+
+const handler3 = {
+  get: function (target, prop, receiver) {
+    if (prop === &quot;message2&quot;) {
+      return &quot;world&quot;;
+    }
+    return Reflect.get(...arguments);
+  },
+};
+
+const proxy3 = new Proxy(target, handler3);
+
+console.log(proxy3.message1); // hello
+console.log(proxy3.message2); // world</code></pre>
+<h2 id="constructor">Constructor</h2>
+<p><a href="proxy/proxy"><code>Proxy()</code></a><br />
+Creates a new <code>Proxy</code> object.</p>
+<h2 id="static-methods">Static methods</h2>
+<p><a href="proxy/revocable"><code>Proxy.revocable()</code></a><br />
+Creates a revocable <code>Proxy</code> object.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="basic-example">Basic example</h3>
+<p>In this simple example, the number <code>37</code> gets returned as the default value when the property name is not in the object. It is using the <a href="proxy/proxy/get"><code>get()</code></a> handler.</p>
+<pre><code>const handler = {
+  get: function(obj, prop) {
+    return prop in obj ?
+      obj[prop] :
+      37;
+  }
+};
+
+const p = new Proxy({}, handler);
+p.a = 1;
+p.b = undefined;
+
+console.log(p.a, p.b);
+//  1, undefined
+
+console.log(&#39;c&#39; in p, p.c);
+//  false, 37</code></pre>
+<h3 id="no-op-forwarding-proxy">No-op forwarding proxy</h3>
+<p>In this example, we are using a native JavaScript object to which our proxy will forward all operations that are applied to it.</p>
+<pre><code>const target = {};
+const p = new Proxy(target, {});
+
+p.a = 37;
+//  operation forwarded to the target
+
+console.log(target.a);
+//  37
+//  (The operation has been properly forwarded!)</code></pre>
+<p>Note that while this “no-op” works for JavaScript objects, it does not work for native browser objects like DOM Elements.</p>
+<h3 id="validation">Validation</h3>
+<p>With a <code>Proxy</code>, you can easily validate the passed value for an object. This example uses the <a href="proxy/proxy/set"><code>set()</code></a> handler.</p>
+<pre><code>let validator = {
+  set: function(obj, prop, value) {
+    if (prop === &#39;age&#39;) {
+      if (!Number.isInteger(value)) {
+        throw new TypeError(&#39;The age is not an integer&#39;);
+      }
+      if (value &gt; 200) {
+        throw new RangeError(&#39;The age seems invalid&#39;);
+      }
+    }
+
+    // The default behavior to store the value
+    obj[prop] = value;
+
+    // Indicate success
+    return true;
+  }
+};
+
+const person = new Proxy({}, validator);
+
+person.age = 100;
+console.log(person.age); // 100
+person.age = &#39;young&#39;;    // Throws an exception
+person.age = 300;        // Throws an exception</code></pre>
+<h3 id="extending-constructor">Extending constructor</h3>
+<p>A function proxy could easily extend a constructor with a new constructor. This example uses the <a href="proxy/proxy/construct"><code>construct()</code></a> and <a href="proxy/proxy/apply"><code>apply()</code></a> handlers.</p>
+<pre><code>function extend(sup, base) {
+  var descriptor = Object.getOwnPropertyDescriptor(
+    base.prototype, &#39;constructor&#39;
+  );
+  base.prototype = Object.create(sup.prototype);
+  var handler = {
+    construct: function(target, args) {
+      var obj = Object.create(base.prototype);
+      this.apply(target, obj, args);
+      return obj;
+    },
+    apply: function(target, that, args) {
+      sup.apply(that, args);
+      base.apply(that, args);
+    }
+  };
+  var proxy = new Proxy(base, handler);
+  descriptor.value = proxy;
+  Object.defineProperty(base.prototype, &#39;constructor&#39;, descriptor);
+  return proxy;
+}
+
+var Person = function(name) {
+  this.name = name;
+};
+
+var Boy = extend(Person, function(name, age) {
+  this.age = age;
+});
+
+Boy.prototype.gender = &#39;M&#39;;
+
+var Peter = new Boy(&#39;Peter&#39;, 13);
+
+console.log(Peter.gender);  // &quot;M&quot;
+console.log(Peter.name);    // &quot;Peter&quot;
+console.log(Peter.age);     // 13</code></pre>
+<h3 id="manipulating-dom-nodes">Manipulating DOM nodes</h3>
+<p>Sometimes you want to toggle the attribute or class name of two different elements. Here’s how using the <a href="proxy/proxy/set"><code>set()</code></a> handler.</p>
+<pre><code>let view = new Proxy({
+  selected: null
+},
+{
+  set: function(obj, prop, newval) {
+    let oldval = obj[prop];
+
+    if (prop === &#39;selected&#39;) {
+      if (oldval) {
+        oldval.setAttribute(&#39;aria-selected&#39;, &#39;false&#39;);
+      }
+      if (newval) {
+        newval.setAttribute(&#39;aria-selected&#39;, &#39;true&#39;);
+      }
+    }
+
+    // The default behavior to store the value
+    obj[prop] = newval;
+
+    // Indicate success
+    return true;
+  }
+});
+
+let i1 = view.selected = document.getElementById(&#39;item-1&#39;);  //giving error here, i1 is null
+console.log(i1.getAttribute(&#39;aria-selected&#39;));
+//  &#39;true&#39;
+
+let i2 = view.selected = document.getElementById(&#39;item-2&#39;);
+console.log(i1.getAttribute(&#39;aria-selected&#39;));
+//  &#39;false&#39;
+
+console.log(i2.getAttribute(&#39;aria-selected&#39;));
+//  &#39;true&#39;
+Note: even if selected: !null, then giving oldval.setAttribute is not a function</code></pre>
+<h3 id="value-correction-and-an-extra-property">Value correction and an extra property</h3>
+<p>The <code>products</code> proxy object evaluates the passed value and converts it to an array if needed. The object also supports an extra property called <code>latestBrowser</code> both as a getter and a setter.</p>
+<pre><code>let products = new Proxy({
+  browsers: [&#39;Internet Explorer&#39;, &#39;Netscape&#39;]
+},
+{
+  get: function(obj, prop) {
+    // An extra property
+    if (prop === &#39;latestBrowser&#39;) {
+      return obj.browsers[obj.browsers.length - 1];
+    }
+
+    // The default behavior to return the value
+    return obj[prop];
+  },
+  set: function(obj, prop, value) {
+    // An extra property
+    if (prop === &#39;latestBrowser&#39;) {
+      obj.browsers.push(value);
+      return true;
+    }
+
+    // Convert the value if it is not an array
+    if (typeof value === &#39;string&#39;) {
+      value = [value];
+    }
+
+    // The default behavior to store the value
+    obj[prop] = value;
+
+    // Indicate success
+    return true;
+  }
+});
+
+console.log(products.browsers);
+//  [&#39;Internet Explorer&#39;, &#39;Netscape&#39;]
+
+products.browsers = &#39;Firefox&#39;;
+//  pass a string (by mistake)
+
+console.log(products.browsers);
+//  [&#39;Firefox&#39;] &lt;- no problem, the value is an array
+
+products.latestBrowser = &#39;Chrome&#39;;
+
+console.log(products.browsers);
+//  [&#39;Firefox&#39;, &#39;Chrome&#39;]
+
+console.log(products.latestBrowser);
+//  &#39;Chrome&#39;</code></pre>
+<h3 id="finding-an-array-item-object-by-its-property">Finding an array item object by its property</h3>
+<p>This proxy extends an array with some utility features. As you see, you can flexibly “define” properties without using <a href="object/defineproperties"><code>Object.defineProperties()</code></a>. This example can be adapted to find a table row by its cell. In that case, the target will be <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableElement/rows"><code>table.rows</code></a>.</p>
+<pre><code>let products = new Proxy([
+  { name: &#39;Firefox&#39;, type: &#39;browser&#39; },
+  { name: &#39;SeaMonkey&#39;, type: &#39;browser&#39; },
+  { name: &#39;Thunderbird&#39;, type: &#39;mailer&#39; }
+],
+{
+  get: function(obj, prop) {
+    // The default behavior to return the value; prop is usually an integer
+    if (prop in obj) {
+      return obj[prop];
+    }
+
+    // Get the number of products; an alias of products.length
+    if (prop === &#39;number&#39;) {
+      return obj.length;
+    }
+
+    let result, types = {};
+
+    for (let product of obj) {
+      if (product.name === prop) {
+        result = product;
+      }
+      if (types[product.type]) {
+        types[product.type].push(product);
+      } else {
+        types[product.type] = [product];
+      }
+    }
+
+    // Get a product by name
+    if (result) {
+      return result;
+    }
+
+    // Get products by type
+    if (prop in types) {
+      return types[prop];
+    }
+
+    // Get product types
+    if (prop === &#39;types&#39;) {
+      return Object.keys(types);
+    }
+
+    return undefined;
+  }
+});
+
+console.log(products[0]);          // { name: &#39;Firefox&#39;, type: &#39;browser&#39; }
+console.log(products[&#39;Firefox&#39;]);  // { name: &#39;Firefox&#39;, type: &#39;browser&#39; }
+console.log(products[&#39;Chrome&#39;]);   // undefined
+console.log(products.browser);     // [{ name: &#39;Firefox&#39;, type: &#39;browser&#39; }, { name: &#39;SeaMonkey&#39;, type: &#39;browser&#39; }]
+console.log(products.types);       // [&#39;browser&#39;, &#39;mailer&#39;]
+console.log(products.number);      // 3</code></pre>
+<h3 id="a-complete-traps-list-example">A complete <code>traps</code> list example</h3>
+<p>Now in order to create a complete sample <code>traps</code> list, for didactic purposes, we will try to proxify a <em>non-native</em> object that is particularly suited to this type of operation: the <code>docCookies</code> global object created by <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie/Simple_document.cookie_framework">the “little framework” published on the <code>document.cookie</code> page</a>.</p>
+<pre><code>/*
+  var docCookies = ... get the &quot;docCookies&quot; object here:
+  https://developer.mozilla.org/en-US/docs/DOM/document.cookie#A_little_framework.3A_a_complete_cookies_reader.2Fwriter_with_full_unicode_support
+*/
+
+var docCookies = new Proxy(docCookies, {
+  get: function (oTarget, sKey) {
+    return oTarget[sKey] || oTarget.getItem(sKey) || undefined;
+  },
+  set: function (oTarget, sKey, vValue) {
+    if (sKey in oTarget) { return false; }
+    return oTarget.setItem(sKey, vValue);
+  },
+  deleteProperty: function (oTarget, sKey) {
+    if (!sKey in oTarget) { return false; }
+    return oTarget.removeItem(sKey);
+  },
+  enumerate: function (oTarget, sKey) {
+    return oTarget.keys();
+  },
+  ownKeys: function (oTarget, sKey) {
+    return oTarget.keys();
+  },
+  has: function (oTarget, sKey) {
+    return sKey in oTarget || oTarget.hasItem(sKey);
+  },
+  defineProperty: function (oTarget, sKey, oDesc) {
+    if (oDesc &amp;&amp; &#39;value&#39; in oDesc) { oTarget.setItem(sKey, oDesc.value); }
+    return oTarget;
+  },
+  getOwnPropertyDescriptor: function (oTarget, sKey) {
+    var vValue = oTarget.getItem(sKey);
+    return vValue ? {
+      value: vValue,
+      writable: true,
+      enumerable: true,
+      configurable: false
+    } : undefined;
+  },
+});
+
+/* Cookies test */
+
+console.log(docCookies.my_cookie1 = &#39;First value&#39;);
+console.log(docCookies.getItem(&#39;my_cookie1&#39;));
+
+docCookies.setItem(&#39;my_cookie1&#39;, &#39;Changed value&#39;);
+console.log(docCookies.my_cookie1);</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-proxy-objects">ECMAScript (ECMA-262) <br/></p>
+<span class="small">The definition of ‘Proxy’ in that specification.</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>Proxy</code></p>
+<p>49</p>
+<p>12</p>
+<p>18</p>
+<p>No</p>
+<p>36</p>
+<p>10</p>
+<p>49</p>
+<p>49</p>
+<p>18</p>
+<p>36</p>
+<p>10</p>
+<p>5.0</p>
+<p><code>Proxy</code></p>
+<p>49</p>
+<p>12</p>
+<p>18</p>
+<p>No</p>
+<p>36</p>
+<p>10</p>
+<p>49</p>
+<p>49</p>
+<p>18</p>
+<p>36</p>
+<p>10</p>
+<p>5.0</p>
+<p><code>revocable</code></p>
+<p>63</p>
+<p>12</p>
+<p>34</p>
+<p>No</p>
+<p>50</p>
+<p>10</p>
+<p>63</p>
+<p>63</p>
+<p>34</p>
+<p>46</p>
+<p>10</p>
+<p>8.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=sClk6aB_CPk">“Proxies are awesome” Brendan Eich presentation at JSConf</a> (<a href="https://www.slideshare.net/BrendanEich/metaprog-5303821">slides</a>)</li>
+<li><a href="http://wiki.ecmascript.org/doku.php?id=harmony:proxies">ECMAScript Harmony Proxy proposal page</a> and <a href="http://wiki.ecmascript.org/doku.php?id=harmony:proxies_semantics">ECMAScript Harmony proxy semantics page</a></li>
+<li><a href="https://web.archive.org/web/20171007221059/http://soft.vub.ac.be/~tvcutsem/proxies/">Tutorial on proxies</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Old_Proxy_API">SpiderMonkey specific Old Proxy API</a></li>
+<li><span class="page-not-created"><code>Object.watch()</code></span> is a non-standard feature, but has been supported in Gecko for a long time.</li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy</a></p>
+</body>
+</html>

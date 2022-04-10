@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2022-01-03" />
+  <title>title</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">title</h1>
+<p class="subtitle">subtitle</p>
+<p class="date">2022-01-03</p>
+</header>
+<h1 id="to-sum-integers-from-a-file-or-stdin-one-integer-per-line">To sum integers from a file or stdin, one integer per line:</h1>
+<p>printf ‘123’ | awk ‘{ sum += $1} END {print sum}’</p>
+<h1 id="to-use-a-specific-character-as-separator-to-sum-integers-from-a-file-or-stdin">To use a specific character as separator to sum integers from a file or stdin:</h1>
+<p>printf ‘1:2:3’ | awk -F “:” ‘{print $1+$2+$3}’</p>
+<h1 id="to-print-a-multiplication-table">To print a multiplication table:</h1>
+<p>seq 9 | sed ‘H;g’ | awk -v RS=’’ ‘{for(i=1;i&lt;=NF;i++)printf(“%dx%d=%d%s”, i, NR, i*NR, i==NR?“”:")}’</p>
+<h1 id="to-specify-an-output-separator-character">To specify an output separator character:</h1>
+<p>printf ‘1 2 3’ | awk ‘BEGIN {OFS=“:”}; {print $1,$2,$3}’</p>
+</body>
+</html>

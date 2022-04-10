@@ -1,90 +1,52 @@
----
-title: title
-subtitle: subtitle
-date: '2022-01-03'
-thumb_img_alt: lorem-ipsum
-content_img_alt: lorem-ipsum
-excerpt: lorem-ipsum
-seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
-template: post
-thumb_img_path: images/css-72a655a7.jpg
----
+subtitle
 
----
+2022-01-03
 
-title: Cron
-category: CLI
+------------------------------------------------------------------------
+
+title: Cron category: CLI
 
 weight: -3
 
----
+------------------------------------------------------------------------
 
-## Format
+Format
+------
 
 {: .-two-column}
 
 ### Format
 
-```
-Min  Hour Day  Mon  Weekday
-```
+    Min  Hour Day  Mon  Weekday
 
 {: .-setup}
 
-```
-*    *    *    *    *  command to be executed
-```
+    *    *    *    *    *  command to be executed
 
-```
-┬    ┬    ┬    ┬    ┬
-│    │    │    │    └─  Weekday  (0=Sun .. 6=Sat)
-│    │    │    └──────  Month    (1..12)
-│    │    └───────────  Day      (1..31)
-│    └────────────────  Hour     (0..23)
-└─────────────────────  Minute   (0..59)
-```
+    ┬    ┬    ┬    ┬    ┬
+    │    │    │    │    └─  Weekday  (0=Sun .. 6=Sat)
+    │    │    │    └──────  Month    (1..12)
+    │    │    └───────────  Day      (1..31)
+    │    └────────────────  Hour     (0..23)
+    └─────────────────────  Minute   (0..59)
 
 {: .-setup.-box-chars}
 
 ### Operators
 
-| Operator | Description                |
-| -------- | -------------------------- |
-| `*`      | all values                 |
-| `,`      | separate individual values |
-| `-`      | a range of values          |
-| `/`      | divide a value into steps  |
+<table><thead><tr class="header"><th>Operator</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>*</code></td><td>all values</td></tr><tr class="even"><td><code>,</code></td><td>separate individual values</td></tr><tr class="odd"><td><code>-</code></td><td>a range of values</td></tr><tr class="even"><td><code>/</code></td><td>divide a value into steps</td></tr></tbody></table>
 
 ### Examples
 
-| Example        | Description                 |
-| -------------- | --------------------------- |
-| `0 * * * *`    | every hour                  |
-| `*/15 * * * *` | every 15 mins               |
-| `0 */2 * * *`  | every 2 hours               |
-| `0 18 * * 0-6` | every week Mon-Sat at 6pm   |
-| `10 2 * * 6,7` | every Sat and Thu on 2:10am |
-| `0 0 * * 0`    | every Sunday midnight       |
-| ---            | ---                         |
-| `@reboot`      | every reboot                |
+<table><thead><tr class="header"><th>Example</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>0 * * * *</code></td><td>every hour</td></tr><tr class="even"><td><code>*/15 * * * *</code></td><td>every 15 mins</td></tr><tr class="odd"><td><code>0 */2 * * *</code></td><td>every 2 hours</td></tr><tr class="even"><td><code>0 18 * * 0-6</code></td><td>every week Mon-Sat at 6pm</td></tr><tr class="odd"><td><code>10 2 * * 6,7</code></td><td>every Sat and Thu on 2:10am</td></tr><tr class="even"><td><code>0 0 * * 0</code></td><td>every Sunday midnight</td></tr><tr class="odd"><td>—</td><td>—</td></tr><tr class="even"><td><code>@reboot</code></td><td>every reboot</td></tr></tbody></table>
 
 ### Crontab
 
-```bash
-# Adding tasks easily
-echo "@reboot echo hi" | crontab
-```
+    # Adding tasks easily
+    echo "@reboot echo hi" | crontab
 
-```bash
-# Open in editor
-crontab -e
-```
+    # Open in editor
+    crontab -e
 
-```bash
-# List tasks
-crontab -l [-u user]
-```
+    # List tasks
+    crontab -l [-u user]

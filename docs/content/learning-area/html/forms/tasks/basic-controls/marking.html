@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>marking</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="basic-controls-marking-guide">Basic controls marking guide</h1>
+<p>The aim of the tasks is to demonstrate an understanding of the features covered in the <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Basic_native_form_controls">Basic native form controls</a> lesson in Learn Web Development on MDN.</p>
+<h2 id="task-1">Task 1</h2>
+<p>This task starts you off nice and gently by asking you to create two input elements, for a user’s ID and password, along with a submit button.</p>
+<ol type="1">
+<li>Create appropriate inputs for user ID and password — you need to use appropriate <code>&lt;input&gt;</code> elements, with <code>type</code>s of <code>text</code> and <code>password</code> respectively. They should also have <code>id</code>s and <code>name</code>s.</li>
+<li>You should also associate them with their text labels semantically — use <code>&lt;label&gt;</code> elements appropriately, with <code>for</code> attributes as required.</li>
+<li>Create a submit button inside the remaining list item, with button text of “Log in”. Either <button>Log in</button>, or <input type="submit" value="Log in"> will do.</li>
+<li>Try submitting your form to see if it submits successfully (there will be no redirect, but you should see the data attached to the page URL).</li>
+</ol>
+<p>The finished markup should look something like this:</p>
+<pre><code>&lt;form&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;label for=&quot;uid&quot;&gt;User ID&lt;/label&gt;
+      &lt;input type=&quot;text&quot; id=&quot;uid&quot; name=&quot;uid&quot;&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;label for=&quot;pwd&quot;&gt;Password&lt;/label&gt;
+      &lt;input type=&quot;password&quot; id=&quot;pwd&quot; name=&quot;pwd&quot;&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;button&gt;Log in&lt;/button&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/form&gt;</code></pre>
+<h2 id="task-2">Task 2</h2>
+<p>The next task requires you to create working sets of checkboxes and radio buttons, from the provided text labels.</p>
+<ol type="1">
+<li>Turn the first fieldset’s contents into a set of radio buttons — you should only be able to select one pony character at once. <code>&lt;input type="radio"&gt;</code> is the key here. You should use the same <code>name</code> attribute value for all the inputs, so that it associates the radio buttons into the same group.</li>
+<li>Make it so that the first radio button is selected upon page load. This is done by setting the <code>checked</code> attribute on the first input.</li>
+<li>Turn the second fieldset’s content into a set of checkboxes. <code>&lt;input type="checkbox"&gt;</code> is needed here. We’ve given each input the same <code>name</code> attribute value because the items are related.</li>
+<li>Add a couple more hotdog choices of your own.</li>
+</ol>
+<p>Note: It is usually better if you set <code>value</code> attributes explicitly on radio buttons and checkboxes, as well as the usually <code>type</code>, <code>id</code>, and <code>name</code>. If you don’t, their value defaults to <code>on</code> when submitted, which is often not what you want.</p>
+<p>The finished markup should look something like this:</p>
+<pre><code>&lt;form&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Who is your favorite pony?&lt;/legend&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;label for=&quot;pinkie&quot;&gt;Pinkie Pie&lt;/label&gt;
+        &lt;input type=&quot;radio&quot; id=&quot;pinkie&quot; name=&quot;pony&quot; value=&quot;pinkie&quot; checked&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;label for=&quot;rainbow&quot;&gt;Rainbow Dash&lt;/label&gt;
+        &lt;input type=&quot;radio&quot; id=&quot;rainbow&quot; name=&quot;pony&quot; value=&quot;rainbow&quot;&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;label for=&quot;twilight&quot;&gt;Twilight Sparkle&lt;/label&gt;
+        &lt;input type=&quot;radio&quot; id=&quot;twilight&quot; name=&quot;pony&quot; value=&quot;twilight&quot;&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/fieldset&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Hotdog preferences&lt;/legend&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;label for=&quot;vegan&quot;&gt;Vegan&lt;/label&gt;
+        &lt;input type=&quot;checkbox&quot; id=&quot;vegan&quot; name=&quot;hotdog&quot; value=&quot;vegan&quot;&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;label for=&quot;onions&quot;&gt;Onions&lt;/label&gt;
+        &lt;input type=&quot;checkbox&quot; id=&quot;onions&quot; name=&quot;hotdog&quot; value=&quot;onions&quot;&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;label for=&quot;mustard&quot;&gt;Mustard&lt;/label&gt;
+        &lt;input type=&quot;checkbox&quot; id=&quot;mustard&quot; name=&quot;hotdog&quot; value=&quot;mustard&quot;&gt;
+      &lt;li&gt;
+        &lt;label for=&quot;ketchup&quot;&gt;Ketchup&lt;/label&gt;
+        &lt;input type=&quot;checkbox&quot; id=&quot;ketchup&quot; name=&quot;hotdog&quot; value=&quot;ketchup&quot;&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/fieldset&gt;
+  &lt;button&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+<h2 id="task-3">Task 3</h2>
+<p>The final task in this set requires you to create a file picker.</p>
+<ol type="1">
+<li>Create a basic file picker. Use <code>&lt;input type="file"&gt;</code></li>
+<li>Allow the user to pick multiple files at once. Do this by including the <code>multiple</code> attribute.</li>
+<li>Allow the file picker to accept JPG and PNG images. To do this, you need to include the <code>accept</code> attribute, and give it a value of <code>image/png, image/jpeg</code>.</li>
+</ol>
+<p>The finished markup should look something like this:</p>
+<pre><code>&lt;form&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;label for=&quot;gallery-img&quot;&gt;Choose gallery images to upload&lt;/label&gt;
+        &lt;input type=&quot;file&quot; id=&quot;gallery-img&quot; name=&quot;gallery-img&quot;
+               multiple accept=&quot;image/png, image/jpeg&quot;&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;button&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+</body>
+</html>

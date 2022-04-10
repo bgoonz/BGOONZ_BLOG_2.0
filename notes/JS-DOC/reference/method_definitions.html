@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>method_definitions</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="method-definitions">Method definitions</h1>
+<p>Starting with ECMAScript 2015, a shorter syntax for method definitions on objects initializers is introduced. It is a shorthand for a function assigned to the method’s name.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>const obj = {
+  get property() {},
+  set property(value) {},
+  property( parameters… ) {},
+  *generator( parameters… ) {},
+  async property( parameters… ) {},
+  async* generator( parameters… ) {},
+
+  //  with computed keys
+  get [property]() {},
+  set [property](value) {},
+  [property]( parameters… ) {},
+  *[generator]( parameters… ) {},
+  async [property]( parameters… ) {},
+  async* [generator]( parameters… ) {},
+};</code></pre>
+<h2 id="description">Description</h2>
+<p>The shorthand syntax is similar to the <a href="get">getter</a> and <a href="set">setter</a> syntax introduced in ES5.</p>
+<p>Given the following code:</p>
+<pre><code>const obj = {
+  foo: function() {
+    // ...
+  },
+  bar: function() {
+    // ...
+  }
+}</code></pre>
+<p>You are now able to shorten this to:</p>
+<pre><code>const obj = {
+  foo() {
+    // ...
+  },
+  bar() {
+    // ...
+  }
+}</code></pre>
+<h3 id="generator-methods">Generator methods</h3>
+<p><a href="../statements/function*">Generator methods</a> can be defined using the shorthand syntax as well.</p>
+<p>When doing so:</p>
+<ul>
+<li>The asterisk (<code>*</code>) in the shorthand syntax must be <em>before</em> the generator property name. (That is, <code>* g(){}</code> will work, but <code>g *(){}</code> will not.)</li>
+<li>Non-generator method definitions cannot contain the <code>yield</code> keyword. This means that <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/Legacy_generator_function">legacy generator functions</a> won’t work either, and will throw a <a href="../global_objects/syntaxerror"><code>SyntaxError</code></a>. Always use <code>yield</code> in conjunction with the asterisk (<code>*</code>).</li>
+</ul>
+<!-- -->
+<pre><code>// Using a named property
+const obj2 = {
+  g: function* () {
+    let index = 0
+    while (true) {
+      yield index++
+    }
+  }
+};
+
+// The same object using shorthand syntax
+const obj2 = {
+  * g() {
+    let index = 0
+    while (true) {
+      yield index++
+    }
+  }
+};
+
+const it = obj2.g()
+console.log(it.next().value)  // 0
+console.log(it.next().value)  // 1</code></pre>
+<h3 id="async-methods">Async methods</h3>
+<p><a href="../statements/async_function">Async methods</a> can also be defined using the shorthand syntax.</p>
+<pre><code>// Using a named property
+const obj3 = {
+  f: async function () {
+    await some_promise
+  }
+}
+
+// The same object using shorthand syntax
+const obj3 = {
+  async f() {
+    await some_promise
+  }
+}</code></pre>
+<h3 id="async-generator-methods">Async generator methods</h3>
+<p><a href="../statements/function*">Generator methods</a> can also be <a href="../statements/async_function">async</a>.</p>
+<pre><code>const obj4 = {
+  f: async function* () {
+    yield 1
+    yield 2
+    yield 3
+  }
+};
+
+// The same object using shorthand syntax
+const obj4 = {
+  async* f() {
+   yield 1
+   yield 2
+   yield 3
+  }
+}</code></pre>
+<h3 id="method-definitions-are-not-constructable">Method definitions are not constructable</h3>
+<p>Methods cannot be constructors! They will throw a <a href="../global_objects/typeerror"><code>TypeError</code></a> if you try to instantiate them.</p>
+<pre><code>const objA = {
+  method() {}
+}
+new objA.method  // TypeError: obj.method is not a constructor
+
+const objB = {
+  * g() {}
+}
+new objB.g       // TypeError: obj.g is not a constructor (changed in ES2016)</code></pre>
+<h2 id="examples">Examples</h2>
+<h3 id="simple-test-case">Simple test case</h3>
+<pre><code>const obj = {
+  a: &#39;foo&#39;,
+  b() { return this.a }
+};
+console.log(obj.b())  // &quot;foo&quot;</code></pre>
+<h3 id="computed-property-names">Computed property names</h3>
+<p>The shorthand syntax also supports computed property names.</p>
+<pre><code>const bar = {
+  foo0: function() { return 0 },
+  foo1() { return 1 },
+  [&#39;foo&#39; + 2]() { return 2 }
+}
+
+console.log(bar.foo0())  // 0
+console.log(bar.foo1())  // 1
+console.log(bar.foo2())  // 2
+
+// A global function
+function foo() {
+  return 1
+}
+
+let name = &#39;foo&#39;
+console.log(window[name]())  // 1</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-method-definitions">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-method-definitions</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>Method_definitions</code></p>
+<p>39</p>
+<p>12</p>
+<p>34</p>
+<p>No</p>
+<p>26</p>
+<p>9</p>
+<p>39</p>
+<p>39</p>
+<p>34</p>
+<p>26</p>
+<p>9</p>
+<p>4.0</p>
+<p><code>async_generator_methods</code></p>
+<p>63</p>
+<p>79</p>
+<p>55</p>
+<p>No</p>
+<p>50</p>
+<p>12</p>
+<p>63</p>
+<p>63</p>
+<p>55</p>
+<p>46</p>
+<p>12</p>
+<p>8.0</p>
+<p><code>async_methods</code></p>
+<p>55</p>
+<p>15</p>
+<p>52</p>
+<p>No</p>
+<p>42</p>
+<p>10.1</p>
+<p>55</p>
+<p>55</p>
+<p>52</p>
+<p>42</p>
+<p>10.3</p>
+<p>6.0</p>
+<p><code>generator_methods_not_constructable</code></p>
+<p>42</p>
+<p>13</p>
+<p>43</p>
+<p>No</p>
+<p>29</p>
+<p>9.1</p>
+<p>42</p>
+<p>42</p>
+<p>43</p>
+<p>29</p>
+<p>9.3</p>
+<p>4.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><code>get</code></li>
+<li><code>set</code></li>
+<li><a href="../lexical_grammar">Lexical grammar</a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions</a></p>
+</body>
+</html>

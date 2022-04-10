@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>getter_only</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="typeerror-setting-getter-only-property-x">TypeError: setting getter-only property “x”</h1>
+<p>The JavaScript <a href="../strict_mode">strict mode</a>-only exception “setting getter-only property” occurs when there is an attempt to set a new value to a property for which only a <a href="../functions/get">getter</a> is specified.</p>
+<h2 id="message">Message</h2>
+<pre><code>TypeError: Assignment to read-only properties is not allowed in strict mode (Edge)
+TypeError: setting getter-only property &quot;x&quot; (Firefox)
+TypeError: Cannot set property &quot;prop&quot; of #&lt;Object&gt; which has only a getter (Chrome)</code></pre>
+<h2 id="error-type">Error type</h2>
+<p><a href="../global_objects/typeerror"><code>TypeError</code></a> in <a href="../strict_mode">strict mode</a> only.</p>
+<h2 id="what-went-wrong">What went wrong?</h2>
+<p>There is an attempt to set a new value to a property for which only a <a href="../functions/get">getter</a> is specified. While this will be silently ignored in non-strict mode, it will throw a <a href="../global_objects/typeerror"><code>TypeError</code></a> in <a href="../strict_mode">strict mode</a>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="property-with-no-setter">Property with no setter</h3>
+<p>The example below shows how to set a getter for a property. It doesn’t specify a <a href="../functions/set">setter</a>, so a <code>TypeError</code> will be thrown upon trying to set the <code>temperature</code> property to <code>30</code>. For more details see also the <a href="../global_objects/object/defineproperty"><code>Object.defineProperty()</code></a> page.</p>
+<pre><code>&quot;use strict&quot;;
+
+function Archiver() {
+  var temperature = null;
+  Object.defineProperty(this, &#39;temperature&#39;, {
+    get: function() {
+      console.log(&#39;get!&#39;);
+      return temperature;
+    }
+  });
+}
+
+var arc = new Archiver();
+arc.temperature; // &#39;get!&#39;
+
+arc.temperature = 30;
+// TypeError: setting getter-only property &quot;temperature&quot;</code></pre>
+<p>To fix this error, you will either need to remove line 16, where there is an attempt to set the temperature property, or you will need to implement a <a href="../functions/set">setter</a> for it, for example like this:</p>
+<pre><code>&quot;use strict&quot;;
+
+function Archiver() {
+  var temperature = null;
+  var archive = [];
+
+  Object.defineProperty(this, &#39;temperature&#39;, {
+    get: function() {
+      console.log(&#39;get!&#39;);
+      return temperature;
+    },
+    set: function(value) {
+      temperature = value;
+      archive.push({ val: temperature });
+    }
+  });
+
+  this.getArchive = function() { return archive; };
+}
+
+var arc = new Archiver();
+arc.temperature; // &#39;get!&#39;
+arc.temperature = 11;
+arc.temperature = 13;
+arc.getArchive(); // [{ val: 11 }, { val: 13 }]</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../global_objects/object/defineproperty"><code>Object.defineProperty()</code></a></li>
+<li><a href="../global_objects/object/defineproperties"><code>Object.defineProperties()</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Getter_only" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Getter_only</a></p>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>lsblk</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="to-show-all-available-block-devices-along-with-their-partitioning-schemes">To show all available block devices along with their partitioning schemes:</h1>
+<p>lsblk</p>
+<h1 id="to-show-scsi-devices">To show SCSI devices:</h1>
+<p>lsblk –scsi</p>
+<h1 id="to-show-a-specific-device">To show a specific device:</h1>
+<p>lsblk /dev/sda</p>
+<h1 id="to-verify-trim-support">To verify TRIM support:</h1>
+<h1 id="check-the-values-of-disc-gran-discard-granularity-and-disc-max-discard-max-bytes-columns.">Check the values of DISC-GRAN (discard granularity) and DISC-MAX (discard max bytes) columns.</h1>
+<h1 id="non-zero-values-indicate-trim-support">Non-zero values indicate TRIM support</h1>
+<p>lsblk –discard</p>
+<h1 id="to-fetch-info-about-filesystems">To fetch info about filesystems:</h1>
+<p>lsblk –fs</p>
+<h1 id="for-json-list-or-tree-output-formats-use-the-following-flags">For JSON, LIST or TREE output formats use the following flags:</h1>
+<p>lsblk –json lsblk –list lsblk –tree # default view</p>
+</body>
+</html>

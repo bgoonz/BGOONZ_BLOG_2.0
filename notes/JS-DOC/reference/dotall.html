@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>dotall</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="regexp.prototype.dotall">RegExp.prototype.dotAll</h1>
+<p>The <code>dotAll</code> property indicates whether or not the “<code>s</code>” flag is used with the regular expression. <code>dotAll</code> is a read-only property of an individual regular expression instance.</p>
+<p>Property attributes of <code>RegExp.prototype.dotAll</code></p>
+<p>Writable</p>
+<p>no</p>
+<p>Enumerable</p>
+<p>no</p>
+<p>Configurable</p>
+<p>yes</p>
+<h2 id="description">Description</h2>
+<p>The value of <code>dotAll</code> is a <a href="../boolean"><code>Boolean</code></a> and <code>true</code> if the “<code>s</code>” flag was used; otherwise, <code>false</code>. The “<code>s</code>” flag indicates that the dot special character (“<code>.</code>”) should additionally match the following line terminator (“newline”) characters in a string, which it would not match otherwise:</p>
+<ul>
+<li>U+000A LINE FEED (LF) (“<code>\n</code>”)</li>
+<li>U+000D CARRIAGE RETURN (CR) (“<code>\r</code>”)</li>
+<li>U+2028 LINE SEPARATOR</li>
+<li>U+2029 PARAGRAPH SEPARATOR</li>
+</ul>
+<p>This effectively means the dot will match any character on the Unicode Basic Multilingual Plane (BMP). To allow it to match astral characters, the “<code>u</code>” (unicode) flag should be used. Using both flags in conjunction allows the dot to match any Unicode character, without exceptions.</p>
+<p>You cannot change this property directly.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-dotall">Using <code>dotAll</code></h3>
+<pre><code>var str1 = &#39;bar\nexample foo example&#39;;
+
+var regex1 = new RegExp(&#39;bar.example&#39;,&#39;s&#39;);
+
+console.log(regex1.dotAll); // Output: true
+
+console.log(str1.replace(regex1,&#39;&#39;)); // Output: foo example
+
+var str2 = &#39;bar\nexample foo example&#39;;
+
+var regex2 = new RegExp(&#39;bar.example&#39;);
+
+console.log(regex2.dotAll); // Output: false
+
+console.log(str2.replace(regex2,&#39;&#39;)); // Output: bar
+                                      //         example foo example</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-get-regexp.prototype.dotAll">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-get-regexp.prototype.dotAll</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>dotAll</code></p>
+<p>62</p>
+<p>79</p>
+<p>78</p>
+<p>No</p>
+<p>49</p>
+<p>12</p>
+<p>62</p>
+<p>62</p>
+<p>79</p>
+<p>46</p>
+<p>12</p>
+<p>8.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="lastindex"><code>RegExp.lastIndex</code></a></li>
+<li><a href="global"><code>RegExp.prototype.global</code></a></li>
+<li><a href="hasindices"><code>RegExp.prototype.hasIndices</code></a></li>
+<li><a href="ignorecase"><code>RegExp.prototype.ignoreCase</code></a></li>
+<li><a href="multiline"><code>RegExp.prototype.multiline</code></a></li>
+<li><a href="source"><code>RegExp.prototype.source</code></a></li>
+<li><a href="sticky"><code>RegExp.prototype.sticky</code></a></li>
+<li><a href="unicode"><code>RegExp.prototype.unicode</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/dotAll" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/dotAll</a></p>
+</body>
+</html>

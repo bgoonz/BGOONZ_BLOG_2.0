@@ -1,18 +1,22 @@
-# WebAssembly.Instance
+WebAssembly.Instance
+====================
 
 A `WebAssembly.Instance` object is a stateful, executable instance of a [`WebAssembly.Module`](module). `Instance` objects contain all the [Exported WebAssembly functions](https://developer.mozilla.org/en-US/docs/WebAssembly/Exported_functions) that allow calling into WebAssembly code from JavaScript.
 
-## Constructor
+Constructor
+-----------
 
 [`WebAssembly.Instance()`](instance/instance)  
 Creates a new `Instance` object.
 
-## Instance properties
+Instance properties
+-------------------
 
 [`Instance.prototype.exports`](instance/exports)  
 Returns an object containing as its members all the functions exported from the WebAssembly module instance, to allow them to be accessed and used by JavaScript. Read-only.
 
-## Examples
+Examples
+--------
 
 ### Synchronously instantiating a WebAssembly module
 
@@ -49,12 +53,11 @@ The preferred way to get an `Instance` is asynchronously, for example using the 
 
 This also demonstrates how the `exports` property is used to access exported functions.
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#instances">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
-<br/>
-
-<span class="small">#instances</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>WebAssembly JavaScript Interface (WebAssembly JavaScript Interface)<br />
+</p><span class="small">#instances</span></td></tr></tbody></table>
 
 `Instance`
 
@@ -146,12 +149,12 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 
 7.0
 
-## See also
+See also
+--------
 
 -   [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
 -   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Instance" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Instance</a>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2022-01-03" />
+  <title>title</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">title</h1>
+<p class="subtitle">subtitle</p>
+<p class="date">2022-01-03</p>
+</header>
+<hr />
+<h2 id="tags-packaging">tags: [packaging]</h2>
+<h1 id="to-fetch-package-list">To fetch package list:</h1>
+<p>apt-get update</p>
+<h1 id="to-download-and-install-package-updates">To download and install package updates:</h1>
+<p>apt-get upgrade</p>
+<h1 id="to-download-and-install-the-updates-and-install-new-necessary-packages">To download and install the updates AND install new necessary packages:</h1>
+<p>apt-get dist-upgrade</p>
+<h1 id="full-command">Full command:</h1>
+<p>apt-get update &amp;&amp; apt-get dist-upgrade</p>
+<h1 id="to-install-a-new-packages">To install a new package(s):</h1>
+<p>apt-get install <package>…</p>
+<h1 id="to-download-a-package-without-installing-it.-the-package-will-be-downloaded-in-your-current-working-dir">To download a package without installing it. (The package will be downloaded in your current working dir)</h1>
+<p>apt-get download <package></p>
+<h1 id="to-change-cache-dir-and-archive-dir-where-.deb-are-stored">To change cache dir and archive dir (where .deb are stored):</h1>
+<p>apt-get -o Dir::Cache=“/path/to/destination/dir/” -o Dir::Cache::archives=“./” install …</p>
+<h1 id="to-show-apt-get-installed-packages">To show apt-get installed packages:</h1>
+<p>grep ‘install’ /var/log/dpkg.log</p>
+<h1 id="to-silently-keep-old-configuration-during-batch-updates">To silently keep old configuration during batch updates:</h1>
+<p>apt-get update -o DPkg::Options::=‘–force-confold’ …</p>
+</body>
+</html>

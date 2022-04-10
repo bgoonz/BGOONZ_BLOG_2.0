@@ -1,21 +1,25 @@
-# yield\*
+yield\*
+=======
 
 The `yield*` is used to delegate to another [`generator`](../statements/function*) or iterable object.
 
-## Syntax
+Syntax
+------
 
      yield* expression;
 
 `expression`  
 The expression which returns an iterable object.
 
-## Description
+Description
+-----------
 
 The `yield*` expression iterates over the operand and `yield`s each value returned by it.
 
-The value of `yield*` expression itself is the value returned by that iterator when it's closed (i.e., when `done` is `true`).
+The value of `yield*` expression itself is the value returned by that iterator when it’s closed (i.e., when `done` is `true`).
 
-## Examples
+Examples
+--------
 
 ### Delegating to another generator
 
@@ -84,14 +88,14 @@ Besides generator objects, `yield*` can also `yield` other kinds of iterables (e
     console.log(iterator.next()); // {value: 3, done: false} done is false because g5 generator isn't finished, only g4
     console.log(iterator.next()); // {value: 'foo', done: true}
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-generator-function-definitions-runtime-semantics-evaluation">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-generator-function-definitions-runtime-semantics-evaluation</span></td></tr></tbody></table>
 
-<span class="small">#sec-generator-function-definitions-runtime-semantics-evaluation</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -151,13 +155,13 @@ Starting with Firefox 33, the parsing of the `yield` expression has been updated
 
 4.0
 
-## See also
+See also
+--------
 
 -   [The Iterator protocol](../iteration_protocols)
 -   [`function*`](../statements/function*)
 -   [`function* expression`](function*)
 -   [`yield`](yield)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/yield*" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/yield\*</a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/yield*" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/yield*</a>

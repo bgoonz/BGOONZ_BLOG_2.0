@@ -1,4 +1,5 @@
-# GeneratorFunction
+GeneratorFunction
+=================
 
 The `GeneratorFunction` creates a new [generator function](../statements/function*) object. In JavaScript, every generator function is actually a `GeneratorFunction` object.
 
@@ -6,7 +7,8 @@ Note that `GeneratorFunction` is not a global object. It could be obtained by ev
 
     Object.getPrototypeOf(function*(){}).constructor
 
-## Syntax
+Syntax
+------
 
     new Function(arg1, functionBody)
     new Function(arg1, arg2, functionBody)
@@ -15,12 +17,13 @@ Note that `GeneratorFunction` is not a global object. It could be obtained by ev
 ### Parameters
 
 `arg1, arg2, ... argN`  
-Names to be used by the function as formal argument names. Each must be a string that corresponds to a valid JavaScript identifier or a list of such strings separated with a comma; for example "`x`", "`theValue`", or "`a,b`".
+Names to be used by the function as formal argument names. Each must be a string that corresponds to a valid JavaScript identifier or a list of such strings separated with a comma; for example “`x`”, “`theValue`”, or “`a,b`”.
 
 `functionBody`  
 A string containing the JavaScript statements comprising the function definition.
 
-## Description
+Description
+-----------
 
 [`generator function`](../statements/function*) objects created with the `GeneratorFunction` constructor are parsed when the function is created. This is less efficient than declaring a generator function with a [`function* expression`](../statements/function*) and calling it within your code, because such functions are parsed with the rest of the code.
 
@@ -34,7 +37,8 @@ This is different from using [`eval`](eval) with code for a generator function e
 
 Invoking the `GeneratorFunction` constructor as a function (without using the `new` operator) has the same effect as invoking it as a constructor.
 
-## Examples
+Examples
+--------
 
 ### Creating a generator function from a GeneratorFunction() constructor
 
@@ -43,12 +47,11 @@ Invoking the `GeneratorFunction` constructor as a function (without using the `n
     var iterator = g(10);
     console.log(iterator.next().value); // 20
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-generatorfunction-objects">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-generatorfunction-objects</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-generatorfunction-objects</span></td></tr></tbody></table>
 
 `GeneratorFunction`
 
@@ -76,7 +79,8 @@ No
 
 4.0
 
-## See also
+See also
+--------
 
 -   [function\* function](../statements/function*)
 -   [function\* expression](../operators/function*)

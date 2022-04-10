@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>cant_delete</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="typeerror-property-x-is-non-configurable-and-cant-be-deleted">TypeError: property “x” is non-configurable and can’t be deleted</h1>
+<p>The JavaScript exception “property is non-configurable and can’t be deleted” occurs when it was attempted to delete a property, but that property is <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#properties">non-configurable</a>.</p>
+<h2 id="message">Message</h2>
+<pre><code>TypeError: Calling delete on &#39;x&#39; is not allowed in strict mode (Edge)
+TypeError: property &quot;x&quot; is non-configurable and can&#39;t be deleted. (Firefox)
+TypeError: Cannot delete property &#39;x&#39; of #&lt;Object&gt; (Chrome)</code></pre>
+<h2 id="error-type">Error type</h2>
+<p><a href="../global_objects/typeerror"><code>TypeError</code></a> in strict mode only.</p>
+<h2 id="what-went-wrong">What went wrong?</h2>
+<p>It was attempted to delete a property, but that property is <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#properties">non-configurable</a>. The <code>configurable</code> attribute controls whether the property can be deleted from the object and whether its attributes (other than <code>writable</code>) can be changed.</p>
+<p>This error happens only in <a href="../strict_mode">strict mode code</a>. In non-strict code, the operation returns <code>false</code>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="attempting-to-delete-non-configurable-properties">Attempting to delete non-configurable properties</h3>
+<p>Non-configurable properties are not super common, but they can be created using <a href="../global_objects/object/defineproperty"><code>Object.defineProperty()</code></a> or <a href="../global_objects/object/freeze"><code>Object.freeze()</code></a>.</p>
+<pre><code>&#39;use strict&#39;;
+var obj = Object.freeze({name: &#39;Elsa&#39;, score: 157});
+delete obj.score;  // TypeError
+
+&#39;use strict&#39;;
+var obj = {};
+Object.defineProperty(obj, &#39;foo&#39;, {value: 2, configurable: false});
+delete obj.foo;  // TypeError
+
+&#39;use strict&#39;;
+var frozenArray = Object.freeze([0, 1, 2]);
+frozenArray.pop();  // TypeError</code></pre>
+<p>There are also a few non-configurable properties built into JavaScript. Maybe you tried to delete a mathematical constant.</p>
+<pre><code>&#39;use strict&#39;;
+delete Math.PI;  // TypeError</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../operators/delete">delete operator</a></li>
+<li><a href="../global_objects/object/defineproperty"><code>Object.defineProperty()</code></a></li>
+<li><a href="../global_objects/object/freeze"><code>Object.freeze()</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Cant_delete" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Cant_delete</a></p>
+</body>
+</html>

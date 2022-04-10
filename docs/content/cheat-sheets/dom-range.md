@@ -1,92 +1,66 @@
----
-title: title
-subtitle: subtitle
-date: '2022-01-03'
-thumb_img_alt: lorem-ipsum
-content_img_alt: lorem-ipsum
-excerpt: lorem-ipsum
-seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
-template: post
-thumb_img_path: images/css-72a655a7.jpg
----
+subtitle
 
----
+2022-01-03
 
-title: DOM Range
-category: JavaScript
+------------------------------------------------------------------------
 
-intro: |
-Quick reference to the HTML [DOM createRange API](https://devdocs.io/dom/range).
+title: DOM Range category: JavaScript
 
----
+intro: | Quick reference to the HTML [DOM createRange API](https://devdocs.io/dom/range).
 
-## Reference
+------------------------------------------------------------------------
+
+Reference
+---------
 
 {:.-three-column}
 
 ### Creating ranges
 
-```js
-var range = document.createRange();
-```
+    var range = document.createRange();
 
-See: <https://devdocs.io/dom/document/createrange>
+See: <a href="https://devdocs.io/dom/document/createrange" class="uri">https://devdocs.io/dom/document/createrange</a>
 
-## Methods
+Methods
+-------
 
-```js
-range
-    .setStart(startNode, startOffset)
-    .setEnd(endNode, endOffset)
+    range
+        .setStart(startNode, startOffset)
+        .setEnd(endNode, endOffset)
 
-    .setStartBefore(node)
-    .setStartAfter(node)
-    .setEndBefore(node)
-    .setEndAfter(node)
+        .setStartBefore(node)
+        .setStartAfter(node)
+        .setEndBefore(node)
+        .setEndAfter(node)
 
-    .selectNode(node)
-    .selectNodeContents(node);
-```
+        .selectNode(node)
+        .selectNodeContents(node);
 
-See: <https://devdocs.io/dom/range>
+See: <a href="https://devdocs.io/dom/range" class="uri">https://devdocs.io/dom/range</a>
 
 ### Collapsing
 
-```js
-range.collapse(); // to end (a single point)
-range.collapse(true); // to start (a single point)
-range.collapsed; // true | false
-```
+    range.collapse(); // to end (a single point)
+    range.collapse(true); // to start (a single point)
+    range.collapsed; // true | false
 
 ### Operations
 
-```js
-range.cloneContents(); // copy => DocumentFragment
-range.extractContents(); // cut  => DocumentFragment
-range.deleteContents(); // delete
-```
+    range.cloneContents(); // copy => DocumentFragment
+    range.extractContents(); // cut  => DocumentFragment
+    range.deleteContents(); // delete
 
-```js
-range.insertNode(node);
-```
+    range.insertNode(node);
 
 ### String
 
-```js
-range.toString();
-```
+    range.toString();
 
 ### Read-only attributes
 
-```js
-range.collapsed; //       => true/false
-range.startContainer; //  => Node
-range.startOffset;
-range.endContainer; //    => Node
-range.endOffset;
-range.commonAncestorContainer; // closest of start and end containers
-```
+    range.collapsed; //       => true/false
+    range.startContainer; //  => Node
+    range.startOffset;
+    range.endContainer; //    => Node
+    range.endOffset;
+    range.commonAncestorContainer; // closest of start and end containers

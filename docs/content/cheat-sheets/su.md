@@ -1,3 +1,4 @@
-# To switch to another user account:
+To switch to another user account:
+==================================
 
-su <user>
+su

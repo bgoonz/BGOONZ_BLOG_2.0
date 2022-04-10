@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>pop</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="array.prototype.pop">Array.prototype.pop()</h1>
+<p>The <code>pop()</code> method removes the <strong>last</strong> element from an array and returns that element. This method changes the length of the array.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>pop()</code></pre>
+<h3 id="return-value">Return value</h3>
+<p>The removed element from the array; <a href="../undefined"><code>undefined</code></a> if the array is empty.</p>
+<h2 id="description">Description</h2>
+<p>The <code>pop</code> method removes the last element from an array and returns that value to the caller.</p>
+<p><code>pop</code> is intentionally generic; this method can be <a href="../function/call">called</a> or <a href="../function/apply">applied</a> to objects resembling arrays. Objects which do not contain a <code>length</code> property reflecting the last in a series of consecutive, zero-based numerical properties may not behave in any meaningful manner.</p>
+<p>If you call <code>pop()</code> on an empty array, it returns <a href="../undefined"><code>undefined</code></a>.</p>
+<p><a href="shift"><code>Array.prototype.shift()</code></a> has similar behavior to <code>pop</code>, but applied to the first element in an array.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="removing-the-last-element-of-an-array">Removing the last element of an array</h3>
+<p>The following code creates the <code>myFish</code> array containing four elements, then removes its last element.</p>
+<pre><code>var myFish = [&#39;angel&#39;, &#39;clown&#39;, &#39;mandarin&#39;, &#39;sturgeon&#39;];
+
+var popped = myFish.pop();
+
+console.log(myFish); // [&#39;angel&#39;, &#39;clown&#39;, &#39;mandarin&#39; ]
+
+console.log(popped); // &#39;sturgeon&#39;</code></pre>
+<h3 id="using-apply-or-call-on-array-like-objects">Using apply( ) or call ( ) on array-like objects</h3>
+<p>The following code creates the <code>myFish</code> array-like object containing four elements and a length parameter, then removes its last element and decrements the length parameter.</p>
+<pre><code>var myFish = {0:&#39;angel&#39;, 1:&#39;clown&#39;, 2:&#39;mandarin&#39;, 3:&#39;sturgeon&#39;, length: 4};
+
+var popped = Array.prototype.pop.call(myFish); //same syntax for using apply( )
+
+console.log(myFish); // {0:&#39;angel&#39;, 1:&#39;clown&#39;, 2:&#39;mandarin&#39;, length: 3}
+
+console.log(popped); // &#39;sturgeon&#39;</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-array.prototype.pop">ECMAScript (ECMA-262) <br/></p>
+<span class="small">The definition of ‘Array.prototype.pop’ in that specification.</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>pop</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>5.5</p>
+<p>4</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="push"><code>Array.prototype.push()</code></a></li>
+<li><a href="shift"><code>Array.prototype.shift()</code></a></li>
+<li><a href="unshift"><code>Array.prototype.unshift()</code></a></li>
+<li><a href="concat"><code>Array.prototype.concat()</code></a></li>
+<li><a href="splice"><code>Array.prototype.splice()</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop</a></p>
+</body>
+</html>

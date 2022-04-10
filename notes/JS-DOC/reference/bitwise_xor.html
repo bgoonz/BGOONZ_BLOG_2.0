@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>bitwise_xor</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="bitwise-xor">Bitwise XOR (^)</h1>
+<p>The bitwise XOR operator (<code>^</code>) returns a <code>1</code> in each bit position for which the corresponding bits of either but not both operands are <code>1</code>s.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>a ^ b</code></pre>
+<h2 id="description">Description</h2>
+<p>The operands are converted to 32-bit integers and expressed by a series of bits (zeroes and ones). Numbers with more than 32 bits get their most significant bits discarded. For example, the following integer with more than 32 bits will be converted to a 32 bit integer:</p>
+<pre><code>Before: 11100110111110100000000000000110000000000001
+After:              10100000000000000110000000000001</code></pre>
+<p>Each bit in the first operand is paired with the corresponding bit in the second operand: <em>first bit</em> to <em>first bit</em>, <em>second bit</em> to <em>second bit</em>, and so on.</p>
+<p>The operator is applied to each pair of bits, and the result is constructed bitwise.</p>
+<p>The truth table for the XOR operation is:</p>
+<table>
+<thead>
+<tr class="header">
+<th>
+a
+</th>
+<th>
+b
+</th>
+<th>
+a XOR b
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+0
+</td>
+<td>
+0
+</td>
+<td>
+0
+</td>
+</tr>
+<tr class="even">
+<td>
+0
+</td>
+<td>
+1
+</td>
+<td>
+1
+</td>
+</tr>
+<tr class="odd">
+<td>
+1
+</td>
+<td>
+0
+</td>
+<td>
+1
+</td>
+</tr>
+<tr class="even">
+<td>
+1
+</td>
+<td>
+1
+</td>
+<td>
+0
+</td>
+</tr>
+</tbody>
+</table>
+<pre><code>.    9 (base 10) = 00000000000000000000000000001001 (base 2)
+    14 (base 10) = 00000000000000000000000000001110 (base 2)
+                   --------------------------------
+14 ^ 9 (base 10) = 00000000000000000000000000000111 (base 2) = 7 (base 10)</code></pre>
+<p>Bitwise XORing any number <code>x</code> with <code>0</code> yields <code>x</code>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-bitwise-xor">Using bitwise XOR</h3>
+<pre><code>// 9  (00000000000000000000000000001001)
+// 14 (00000000000000000000000000001110)
+
+14 ^ 9;
+// 7  (00000000000000000000000000000111)</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#prod-BitwiseXORExpression">ECMAScript (ECMA-262) <br/></p>
+<span class="small">The definition of ‘Bitwise XOR expression’ in that specification.</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>Bitwise_XOR</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#bitwise">Bitwise operators in the JS guide</a></li>
+<li><a href="bitwise_xor_assignment">Bitwise XOR assignment operator</a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_XOR" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_XOR</a></p>
+</body>
+</html>

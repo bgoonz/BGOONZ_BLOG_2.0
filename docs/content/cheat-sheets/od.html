@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>od</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="to-dump-a-file-in-octal-format">To dump a file in octal format:</h1>
+<p>od <binary-file> od -o <binary-file> od -t o2 <binary-file></p>
+<h1 id="to-dump-a-file-in-hexadecimal-format">To dump a file in hexadecimal format:</h1>
+<p>od -x <binary-file> od -t x2 <binary-file></p>
+<h1 id="to-dump-a-file-in-hexadecimal-format-with-hexadecimal-offsets-and-a-space-between-each-byte">To dump a file in hexadecimal format, with hexadecimal offsets and a space between each byte:</h1>
+<p>od -A x -t x1 <binary-file></p>
+</body>
+</html>

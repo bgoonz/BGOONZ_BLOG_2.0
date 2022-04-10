@@ -1,8 +1,10 @@
-# String.prototype.substr()
+String.prototype.substr()
+=========================
 
 The `substr()` method returns a portion of the string, starting at the specified index and extending for a given number of characters afterwards.
 
-## Syntax
+Syntax
+------
 
     substr(start)
     substr(start, length)
@@ -19,7 +21,8 @@ Optional. The number of characters to extract.
 
 A new string containing the specified part of the given string.
 
-## Description
+Description
+-----------
 
 `substr()` extracts `length` characters from a `str`, counting from the `start` index.
 
@@ -31,9 +34,10 @@ A new string containing the specified part of the given string.
 -   If `length` is a negative number, it is treated as `0`.
 -   For both `start` and `length`, [`NaN`](../nan) is treated as `0`.
 
-## Polyfill
+Polyfill
+--------
 
-Microsoft's JScript does not support negative values for the start index. To use this feature in JScript, you can use the following code:
+Microsoft’s JScript does not support negative values for the start index. To use this feature in JScript, you can use the following code:
 
     // only run when the substr() function is broken
     if ('ab'.substr(-1) != 'b') {
@@ -55,7 +59,8 @@ Microsoft's JScript does not support negative values for the start index. To use
       }(String.prototype.substr);
     }
 
-## Examples
+Examples
+--------
 
 ### Using substr()
 
@@ -70,14 +75,14 @@ Microsoft's JScript does not support negative values for the start index. To use
     console.log(aString.substr(-20, 2)); // 'Mo'
     console.log(aString.substr(20, 2));  // ''
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.substr">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-string.prototype.substr</span></td></tr></tbody></table>
 
-<span class="small">#sec-string.prototype.substr</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -133,11 +138,11 @@ Samsung Internet
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`String.prototype.slice()`](slice)
 -   [`String.prototype.substring()`](substring)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substr" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substr</a>

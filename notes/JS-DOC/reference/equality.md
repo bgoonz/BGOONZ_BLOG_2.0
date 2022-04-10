@@ -1,12 +1,15 @@
-# Equality (==)
+Equality (==)
+=============
 
 The equality operator (`==`) checks whether its two operands are equal, returning a Boolean result. Unlike the [strict equality](strict_equality) operator, it attempts to convert and compare operands that are of different types.
 
-## Syntax
+Syntax
+------
 
     x == y
 
-## Description
+Description
+-----------
 
 The equality operators (`==` and `!=`) use the [Abstract Equality Comparison Algorithm](https://www.ecma-international.org/ecma-262/5.1/#sec-11.9.3) to compare two operands. This can be roughly summarised as follows:
 
@@ -15,7 +18,7 @@ The equality operators (`==` and `!=`) use the [Abstract Equality Comparison Alg
 -   If the operands are of different types, try to convert them to the same type before comparing:
     -   When comparing a number to a string, try to convert the string to a numeric value.
     -   If one of the operands is `Boolean`, convert the Boolean operand to 1 if it is `true` and +0 if it is `false`.
-    -   If one of the operands is an object and the other is a number or a string, try to convert the object to a primitive using the object's `valueOf()` and `toString()` methods.
+    -   If one of the operands is an object and the other is a number or a string, try to convert the object to a primitive using the object’s `valueOf()` and `toString()` methods.
 -   If the operands have the same type, they are compared as follows:
     -   `String`: return `true` only if both operands have the same characters in the same order.
     -   `Number`: return `true` only if both operands have the same value. `+0` and `-0` are treated as the same value. If either operand is `NaN`, return `false`.
@@ -23,7 +26,8 @@ The equality operators (`==` and `!=`) use the [Abstract Equality Comparison Alg
 
 The most notable difference between this operator and the [strict equality](strict_equality) (`===`) operator is that the strict equality operator does not attempt type conversion. Instead, the strict equality operator always considers operands of different types to be different.
 
-## Examples
+Examples
+--------
 
 ### Comparison with no type conversion
 
@@ -75,12 +79,11 @@ Note that strings constructed using `new String()` are objects. If you compare o
     const s = d.toString(); // for example: "Sun Dec 17 1995 03:24:00 GMT-0800 (Pacific Standard Time)"
     console.log(d == s);    //true
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-equality-operators">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-equality-operators</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-equality-operators</span></td></tr></tbody></table>
 
 `Equality`
 
@@ -108,12 +111,12 @@ Note that strings constructed using `new String()` are objects. If you compare o
 
 1.0
 
-## See also
+See also
+--------
 
 -   [Inequality operator](inequality)
 -   [Strict equality operator](strict_equality)
 -   [Strict inequality operator](strict_inequality)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Equality" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Equality</a>

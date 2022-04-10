@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="fast-powering-algorithm">Fast Powering Algorithm</h1>
+<p><a href="README.fr-FR.md">français</a>.</p>
+<p><strong>The power of a number</strong> says how many times to use the number in a multiplication.</p>
+<p>It is written as a small number to the right and above the base number.</p>
+<figure>
+<img src="https://www.mathsisfun.com/algebra/images/exponent-8-2.svg" alt="Power" /><figcaption>Power</figcaption>
+</figure>
+<h2 id="naive-algorithm-complexity">Naive Algorithm Complexity</h2>
+<p>How to find <code>a</code> raised to the power <code>b</code>?</p>
+<p>We multiply <code>a</code> to itself, <code>b</code> times. That is, <code>a^b = a * a * a * ... * a</code> (<code>b</code> occurrences of <code>a</code>).</p>
+<p>This operation will take <code>O(n)</code> time since we need to do multiplication operation exactly <code>n</code> times.</p>
+<h2 id="fast-power-algorithm">Fast Power Algorithm</h2>
+<p>Can we do better than naive algorithm does? Yes we may solve the task of powering in <code>O(log(n))</code> time.</p>
+<p>The algorithm uses divide and conquer approach to compute power. Currently the algorithm work for two positive integers <code>X</code> and <code>Y</code>.</p>
+<p>The idea behind the algorithm is based on the fact that:</p>
+<p>For <strong>even</strong> <code>Y</code>:</p>
+<pre class="text"><code>X^Y = X^(Y/2) * X^(Y/2)</code></pre>
+<p>For <strong>odd</strong> <code>Y</code>:</p>
+<pre class="text"><code>X^Y = X^(Y//2) * X^(Y//2) * X
+where Y//2 is result of division of Y by 2 without reminder.</code></pre>
+<p><strong>For example</strong></p>
+<pre class="text"><code>2^4 = (2 * 2) * (2 * 2) = (2^2) * (2^2)</code></pre>
+<pre class="text"><code>2^5 = (2 * 2) * (2 * 2) * 2 = (2^2) * (2^2) * (2)</code></pre>
+<p>Now, since on each step we need to compute the same <code>X^(Y/2)</code> power twice we may optimise it by saving it to some intermediate variable to avoid its duplicate calculation.</p>
+<p><strong>Time Complexity</strong></p>
+<p>Since each iteration we split the power by half then we will call function recursively <code>log(n)</code> times. This the time complexity of the algorithm is reduced to:</p>
+<pre class="text"><code>O(log(n))</code></pre>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=LUWavfN9zEo&amp;index=80&amp;list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8&amp;t=0s">YouTube</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Exponentiation_by_squaring">Wikipedia</a></li>
+</ul>
+</body>
+</html>

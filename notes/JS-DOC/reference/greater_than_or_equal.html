@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>greater_than_or_equal</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="greater-than-or-equal">Greater than or equal (&gt;=)</h1>
+<p>The greater than or equal operator (<code>&gt;=</code>) returns <code>true</code> if the left operand is greater than or equal to the right operand, and <code>false</code> otherwise.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code> x &gt;= y</code></pre>
+<h2 id="description">Description</h2>
+<p>The operands are compared using the <a href="https://tc39.es/ecma262/#sec-abstract-relational-comparison">Abstract Relational Comparison</a> algorithm. See the documentation for the <a href="less_than">Less than</a> operator for a summary of this algorithm.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="string-to-string-comparison">String to string comparison</h3>
+<pre><code>console.log(&quot;a&quot; &gt;= &quot;b&quot;);     // false
+console.log(&quot;a&quot; &gt;= &quot;a&quot;);     // true
+console.log(&quot;a&quot; &gt;= &quot;3&quot;);     // true</code></pre>
+<h3 id="string-to-number-comparison">String to number comparison</h3>
+<pre><code>console.log(&quot;5&quot; &gt;= 3);       // true
+console.log(&quot;3&quot; &gt;= 3);       // true
+console.log(&quot;3&quot; &gt;= 5);       // false
+
+console.log(&quot;hello&quot; &gt;= 5);   // false
+console.log(5 &gt;= &quot;hello&quot;);   // false</code></pre>
+<h3 id="number-to-number-comparison">Number to Number comparison</h3>
+<pre><code>console.log(5 &gt;= 3);         // true
+console.log(3 &gt;= 3);         // true
+console.log(3 &gt;= 5);         // false</code></pre>
+<h3 id="number-to-bigint-comparison">Number to BigInt comparison</h3>
+<pre><code>console.log(5n &gt;= 3);        // true
+console.log(3 &gt;= 3n);        // true
+console.log(3 &gt;= 5n);        // false</code></pre>
+<h3 id="comparing-boolean-null-undefined-nan">Comparing Boolean, null, undefined, NaN</h3>
+<pre><code>console.log(true &gt;= false);  // true
+console.log(true &gt;= true);   // true
+console.log(false &gt;= true);  // false
+
+console.log(true &gt;= 0);      // true
+console.log(true &gt;= 1);      // true
+
+console.log(null &gt;= 0);      // true
+console.log(1 &gt;= null);      // true
+
+console.log(undefined &gt;= 3); // false
+console.log(3 &gt;= undefined); // false
+
+console.log(3 &gt;= NaN);       // false
+console.log(NaN &gt;= 3);       // false</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-relational-operators">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-relational-operators</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>Greater_than_or_equal</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="greater_than">Greater than operator</a></li>
+<li><a href="less_than">Less than operator</a></li>
+<li><a href="less_than_or_equal">Less than or equal operator</a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Greater_than_or_equal" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Greater_than_or_equal</a></p>
+</body>
+</html>

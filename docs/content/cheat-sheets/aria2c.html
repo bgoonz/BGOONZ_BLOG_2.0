@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2022-01-03" />
+  <title>title</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">title</h1>
+<p class="subtitle">subtitle</p>
+<p class="date">2022-01-03</p>
+</header>
+<h1 id="to-download-a-file">To download a file:</h1>
+<h1 id="the-url-can-be-a-https-ftp-.torrent-file-or-even-a-magnet-link">The url can be a http(s), ftp, .torrent file or even a magnet link</h1>
+<p>aria2c <url></p>
+<h1 id="to-prevent-downloading-the-.torrent-file">To prevent downloading the .torrent file:</h1>
+<p>aria2c –follow-torrent=mem <url></p>
+<h1 id="download-1-file-at-a-time--j">Download 1 file at a time (-j)</h1>
+<h1 id="continuing--c-any-partially-downloaded-ones">continuing (-c) any partially downloaded ones</h1>
+<h1 id="to-the-directory-specified--d">to the directory specified (-d)</h1>
+<h1 id="reading-urls-from-the-file--i">reading urls from the file (-i)</h1>
+<p>aria2c -j 1 -c -d ~/Downloads -i /path/to/file</p>
+</body>
+</html>

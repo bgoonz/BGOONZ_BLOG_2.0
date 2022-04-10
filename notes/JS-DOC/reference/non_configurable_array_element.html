@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>non_configurable_array_element</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="typeerror-cant-delete-non-configurable-array-element">TypeError: can’t delete non-configurable array element</h1>
+<p>The JavaScript exception “can’t delete non-configurable array element” occurs when it was attempted to <a href="../global_objects/array/length#shortening_an_array">shorten the length</a> of an array, but one of the array’s elements is <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#properties">non-configurable</a>.</p>
+<h2 id="message">Message</h2>
+<pre><code>TypeError: can&#39;t delete non-configurable array element (Firefox)
+TypeError: Cannot delete property &#39;2&#39; of [object Array] (Chrome)</code></pre>
+<h2 id="error-type">Error type</h2>
+<p><a href="../global_objects/typeerror"><code>TypeError</code></a></p>
+<h2 id="what-went-wrong">What went wrong?</h2>
+<p>It was attempted to <a href="../global_objects/array/length#shortening_an_array">shorten the length</a> of an array, but one of the array’s elements is <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#properties">non-configurable</a>. When shortening an array, the elements beyond the new array length will be deleted, which failed in this situation.</p>
+<p>The <code>configurable</code> attribute controls whether the property can be deleted from the object and whether its attributes (other than <code>writable</code>) can be changed.</p>
+<p>Usually, properties in an object created by an <a href="../global_objects/array#syntax">array initializer</a> are configurable. However, for example, when using <a href="../global_objects/object/defineproperty"><code>Object.defineProperty()</code></a>, the property isn’t configurable by default.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="non-configurable-properties-created-by-object.defineproperty">Non-configurable properties created by <code>Object.defineProperty</code></h3>
+<p>The <a href="../global_objects/object/defineproperty"><code>Object.defineProperty()</code></a> creates non-configurable properties by default if you haven’t specified them as configurable.</p>
+<pre><code>var arr = [];
+Object.defineProperty(arr, 0, {value: 0});
+Object.defineProperty(arr, 1, {value: &quot;1&quot;});
+
+arr.length = 1;
+// TypeError: can&#39;t delete non-configurable array element</code></pre>
+<p>You will need to set the elements as configurable, if you intend to shorten the array.</p>
+<pre><code>var arr = [];
+Object.defineProperty(arr, 0, {value: 0, configurable: true});
+Object.defineProperty(arr, 1, {value: &quot;1&quot;, configurable: true});
+
+arr.length = 1;</code></pre>
+<h3 id="seal-ed-arrays"><code>Seal</code>-ed Arrays</h3>
+<p>The <a href="../global_objects/object/seal"><code>Object.seal()</code></a> function marks all existing elements as non-configurable.</p>
+<pre><code>var arr = [1,2,3];
+Object.seal(arr);
+
+arr.length = 1;
+// TypeError: can&#39;t delete non-configurable array element</code></pre>
+<p>You either need to remove the <a href="../global_objects/object/seal"><code>Object.seal()</code></a> call, or make a copy of it. In case of a copy, shortening the copy of the array does not modify the original array length.</p>
+<pre><code>var arr = [1,2,3];
+Object.seal(arr);
+
+// Copy the initial array to shorten the copy
+var copy = Array.from(arr);
+copy.length = 1;
+// arr.length == 3</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#properties">[[Configurable]]</a></li>
+<li><a href="../global_objects/array/length"><code>Array.length</code></a></li>
+<li><a href="../global_objects/object/defineproperty"><code>Object.defineProperty()</code></a></li>
+<li><a href="../global_objects/object/seal"><code>Object.seal()</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Non_configurable_array_element" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Non_configurable_array_element</a></p>
+</body>
+</html>

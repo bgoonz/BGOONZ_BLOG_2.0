@@ -1,10 +1,11 @@
-# MDN Web Docs Glossary: Definitions of Web-related terms \\| MDN
+MDN Web Docs Glossary: Definitions of Web-related terms \\| MDN
+===============================================================
 
-::: {#react-container data-component-name="SPA"} ::: {.loading-bar} :::
+::: {\#react-container data-component-name=“SPA”} ::: {.loading-bar} :::
 
--   Skip to main content{#skip-main}
--   Select language{#skip-language}
--   Skip to search{#skip-search}
+-   Skip to main content{\#skip-main}
+-   Select language{\#skip-language}
+-   Skip to search{\#skip-search}
 -   Technologies
     -   Technologies Overview
     -   HTML
@@ -22,7 +23,7 @@
     -   Developer Guides
     -   Accessibility
     -   Game development
-    -   ...more docs
+    -   …more docs
 -   Feedback
     -   Send Feedback
     -   Get Firefox help 🌐
@@ -35,14 +36,14 @@
 
 Open search :::
 
-::: {role="main"} ::: {.titlebar-container} ::: {.titlebar} ::: :::
+::: {role=“main”} ::: {.titlebar-container} ::: {.titlebar} ::: :::
 
 ::: {.full-width-row-container} ::: {.max-content-width-container}
 
-1. \[See ]{.pre-text}\[MDN Web Docs Glossary: Definitions of Web-related terms]{property="name"}{.breadcrumb-previous}
-2. \[Algorithm]{property="name" aria-current="page"}{.crumb-current-page}
+1.  \[See \]{.pre-text}\[MDN Web Docs Glossary: Definitions of Web-related terms\]{property=“name”}{.breadcrumb-previous}
+2.  \[Algorithm\]{property=“name” aria-current=“page”}{.crumb-current-page}
 
-::: {.dropdown-container .language-menu} English\[▼]{.dropdown-arrow-down aria-hidden="true"}
+::: {.dropdown-container .language-menu} English\[▼\]{.dropdown-arrow-down aria-hidden=“true”}
 
 -   عربي
 -   Deutsch
@@ -58,7 +59,7 @@ Open search :::
 -   Tiếng Việt
 -   中文 (简体)
 -   正體中文 (繁體)
--   Add a translation{#translations-add} ::: ::: :::
+-   Add a translation{\#translations-add} ::: ::: :::
 
 ### ::: {.wiki-left-present .content-layout} ::: {.section .document-toc} On this Page
 
@@ -67,9 +68,9 @@ Jump to section
 -   Learn more
 -   Related topics :::
 
-::: {#content .article .text-content} An algorithm is a self-contained series of instructions to perform a function.
+::: {\#content .article .text-content} An algorithm is a self-contained series of instructions to perform a function.
 
-In other words, an algorithm is a means of describing a way to solve a problem so that it can be solved repeatedly, by humans or machines. Computer scientists compare the efficiency of algorithms through the concept of "Algorithmic Complexity" or "Big O" notation.
+In other words, an algorithm is a means of describing a way to solve a problem so that it can be solved repeatedly, by humans or machines. Computer scientists compare the efficiency of algorithms through the concept of “Algorithmic Complexity” or “Big O” notation.
 
 For example:
 
@@ -105,7 +106,7 @@ The newsletter is offered in English only at the moment. :::
 
 ::: {.form-group .newsletter-group-email} E-mail :::
 
-::: {#newsletter-privacy .form-group .form-group-agree .newsletter-group-privacy aria-hidden="false"} I'm okay with Mozilla handling my info as explained in this Privacy Policy. :::
+::: {\#newsletter-privacy .form-group .form-group-agree .newsletter-group-privacy aria-hidden=“false”} I’m okay with Mozilla handling my info as explained in this Privacy Policy. :::
 
 ::: {.newsletter-group-submit} Sign up now :::
 
@@ -122,21 +123,13 @@ Hide Newsletter Sign-up ::: :::
 -   Contact Us
 -   Firefox
 
-::: {.social .social-mdn}
-
 **MDN**
 
--   -
-
-:::
-
-::: {.social .social-moz}
+-   -   
 
 **Mozilla**
 
--   -
-
-:::
+-   -   
 
 © 2005-2020 Mozilla and individual contributors. Content is available under these licenses.
 
@@ -146,7 +139,7 @@ Hide Newsletter Sign-up ::: :::
 
 ### ::: <a href="#auth-modal-.modal-.hidden-.section-.auth-providers-tabindex-1-role-dialog-aria-modal-true-aria-label" id="auth-modal-.modal-.hidden-.section-.auth-providers-tabindex-1-role-dialog-aria-modal-true-aria-label"></a>
 
-Sign in to enjoy the benefits of an MDN account. If you haven't already created an account, you will be prompted to do so after signing in.
+Sign in to enjoy the benefits of an MDN account. If you haven’t already created an account, you will be prompted to do so after signing in.
 
 ::: {.auth-button-container} Sign in with Github{.github-auth} Sign in with Google{.google-auth} :::
 

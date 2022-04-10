@@ -1,9 +1,3 @@
----
-title: Ractive.js
-category: JavaScript libraries
-vim: ft=javascript
----
-
 {% raw %}
 
 ### [Initialization](http://docs.ractivejs.org/latest/options)
@@ -35,7 +29,8 @@ vim: ft=javascript
       sanitize: false
     })
 
-## Instance methods
+Instance methods
+----------------
 
 ### Updating values
 
@@ -79,17 +74,18 @@ vim: ft=javascript
     view.toHTML()  //=> String
     view.render()
 
-## Extend
+Extend
+------
 
     View = Ractive.extend({
       ...
     })
     new View()
 
-## [Components](https://github.com/RactiveJS/Ractive/wiki/Components)
+[Components](https://github.com/RactiveJS/Ractive/wiki/Components)
+------------------------------------------------------------------
 
-See: https://github.com/RactiveJS/Ractive/issues/74
-{:.center}
+See: https://github.com/RactiveJS/Ractive/issues/74 {:.center}
 
     Widget = Ractive.extend({ ... })
 
@@ -101,12 +97,14 @@ See: https://github.com/RactiveJS/Ractive/issues/74
       }
     });
 
-## Partials
+Partials
+--------
 
     // Global partials
     Ractive.partials.x = "<..>"
 
-## Events
+Events
+------
 
     view.on('teardown')
 
@@ -129,7 +127,8 @@ See: https://github.com/RactiveJS/Ractive/issues/74
        console.log("Changed name to", name);
      }, { init: false });
 
-## Markup
+Markup
+------
 
     Hello, {{name}}
     Body: {{{unescaped}}}
@@ -149,7 +148,8 @@ See: https://github.com/RactiveJS/Ractive/issues/74
 
     {{#statusDogs[selected]}}
 
-## Transformed attributes
+Transformed attributes
+----------------------
 
 This transforms the `list` attribute via a helper function called `sort()`.
 
@@ -161,7 +161,8 @@ This transforms the `list` attribute via a helper function called `sort()`.
       sort: function(array, column) { return array.whatever(); }
     }
 
-## Transitions
+Transitions
+-----------
 
     <div intro="fade">
     <div intro="bump">
@@ -182,7 +183,8 @@ This transforms the `list` attribute via a helper function called `sort()`.
       t.complete();
     };
 
-## [Decorators](http://docs.ractivejs.org/latest/decorators)
+[Decorators](http://docs.ractivejs.org/latest/decorators)
+---------------------------------------------------------
 
     <span decorator="tooltip:hello there">Hover me</span>
 
@@ -201,7 +203,8 @@ This transforms the `list` attribute via a helper function called `sort()`.
 
     tooltip: function (node, a, b, two, c) { ... }
 
-## [Adaptors](http://docs.ractivejs.org/latest/adaptors)
+[Adaptors](http://docs.ractivejs.org/latest/adaptors)
+-----------------------------------------------------
 
     myAdaptor = {
       filter: function (object, keypath, ractive) {
@@ -223,7 +226,8 @@ This transforms the `list` attribute via a helper function called `sort()`.
       }
     };
 
-## [Computed properties](http://docs.ractivejs.org/latest/computed-properties)
+[Computed properties](http://docs.ractivejs.org/latest/computed-properties)
+---------------------------------------------------------------------------
 
     new Ractive({
       template: '{{area}}',

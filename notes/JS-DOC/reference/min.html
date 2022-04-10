@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>min</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="math.min">Math.min()</h1>
+<p>The static function <code>Math.min()</code> returns the lowest-valued number passed into it, or <a href="../nan"><code>NaN</code></a> if any parameter isn’t a number and can’t be converted into one.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>Math.min()
+Math.min(value0)
+Math.min(value0, value1)
+Math.min(value0, value1, ... , valueN)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>value1, value2, ...</code><br />
+Zero or more numbers among which the lowest value will be selected and returned.</p>
+<h3 id="return-value">Return value</h3>
+<p>The smallest of the given numbers. If any one or more of the parameters cannot be converted into a number, <a href="../nan"><code>NaN</code></a> is returned. The result is <a href="../infinity"><code>Infinity</code></a> if no parameters are provided.</p>
+<h2 id="description">Description</h2>
+<p>Because <code>min()</code> is a static method of <code>Math</code>, you always use it as <code>Math.min()</code>, rather than as a method of a <code>Math</code> object you created (<code>Math</code> is not a constructor).</p>
+<p>If no arguments are given, the result is <a href="../infinity"><code>Infinity</code></a>.</p>
+<p>If at least one of arguments cannot be converted to a number, the result is <a href="../nan"><code>NaN</code></a>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-math.min">Using Math.min()</h3>
+<p>This finds the min of <code>x</code> and <code>y</code> and assigns it to <code>z</code>:</p>
+<pre><code>var x = 10, y = -20;
+var z = Math.min(x, y);</code></pre>
+<h3 id="clipping-a-value-with-math.min">Clipping a value with Math.min()</h3>
+<p><code>Math.min()</code> is often used to clip a value so that it is always less than or equal to a boundary. For instance, this</p>
+<pre><code>var x = f(foo);
+
+if (x &gt; boundary) {
+  x = boundary;
+}</code></pre>
+<p>may be written as this</p>
+<pre><code>var x = Math.min(f(foo), boundary);</code></pre>
+<p><a href="max"><code>Math.max()</code></a> can be used in a similar way to clip a value at the other end.</p>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-math.min">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-math.min</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>min</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="max"><code>Math.max()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min</a></p>
+</body>
+</html>

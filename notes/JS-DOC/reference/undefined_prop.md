@@ -1,20 +1,25 @@
-# ReferenceError: reference to undefined property "x"
+ReferenceError: reference to undefined property “x”
+===================================================
 
-The JavaScript warning "reference to undefined property" occurs when a script attempted to access an object property which doesn't exist.
+The JavaScript warning “reference to undefined property” occurs when a script attempted to access an object property which doesn’t exist.
 
-## Message
+Message
+-------
 
     ReferenceError: reference to undefined property "x" (Firefox)
 
-## Error type
+Error type
+----------
 
 (Firefox only) [`ReferenceError`](../global_objects/referenceerror) warning which is reported only if `javascript.options.strict` preference is set to `true`.
 
-## What went wrong?
+What went wrong?
+----------------
 
-The script attempted to access an object property which doesn't exist. There are two ways to access properties; see the [property accessors](../operators/property_accessors#0) reference page to learn more about them.
+The script attempted to access an object property which doesn’t exist. There are two ways to access properties; see the [property accessors](../operators/property_accessors#0) reference page to learn more about them.
 
-## Examples
+Examples
+--------
 
 ### Invalid cases
 
@@ -40,7 +45,8 @@ To avoid the error, you need to either add a definition for `bar` to the object 
       console.log(foo.bar);
     }
 
-## See also
+See also
+--------
 
 -   [property accessors](../operators/property_accessors#0)
 

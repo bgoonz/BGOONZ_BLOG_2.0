@@ -1,6 +1,7 @@
-# Symbol.hasInstance
+Symbol.hasInstance
+==================
 
-The `Symbol.hasInstance` well-known symbol is used to determine if a constructor object recognizes an object as its instance. The [`instanceof`](../../operators/instanceof) operator's behavior can be customized by this symbol.
+The `Symbol.hasInstance` well-known symbol is used to determine if a constructor object recognizes an object as its instance. The [`instanceof`](../../operators/instanceof) operator’s behavior can be customized by this symbol.
 
 Property attributes of `Symbol.hasInstance`
 
@@ -16,7 +17,8 @@ Configurable
 
 no
 
-## Examples
+Examples
+--------
 
 ### Custom instanceof behavior
 
@@ -47,12 +49,11 @@ Just in the same manner at which you can check if an object is an instance of a 
 
     console.log(Animal[Symbol.hasInstance](cat)); // true
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-symbol.hasinstance">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-symbol.hasinstance</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-symbol.hasinstance</span></td></tr></tbody></table>
 
 `hasInstance`
 
@@ -80,10 +81,10 @@ No
 
 5.0
 
-## See also
+See also
+--------
 
 -   [`instanceof`](../../operators/instanceof)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/hasInstance" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/hasInstance</a>

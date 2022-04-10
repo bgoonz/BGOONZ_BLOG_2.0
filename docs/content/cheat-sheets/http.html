@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>http</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="custom-http-method-http-headers-and-json-data">Custom HTTP method HTTP headers and JSON data:</h1>
+<p>http PUT example.org X-API-Token:123 name=John</p>
+<h1 id="submitting-forms">Submitting forms:</h1>
+<p>http -f POST example.org hello=World</p>
+<h1 id="see-the-request-that-is-being-sent-using-one-of-the-output-options">See the request that is being sent using one of the output options:</h1>
+<p>http -v example.org</p>
+<h1 id="use-github-api-to-post-a-comment-on-an-issue-with-authentication">Use Github API to post a comment on an issue with authentication:</h1>
+<p>http -a USERNAME POST <a href="https://api.github.com/repos/jkbrzt/httpie/issues/83/comments" class="uri">https://api.github.com/repos/jkbrzt/httpie/issues/83/comments</a> body=‘HTTPie is awesome!’</p>
+<h1 id="upload-a-file-using-redirected-input">Upload a file using redirected input:</h1>
+<p>http example.org &lt; file.json</p>
+<h1 id="download-a-file-and-save-it-via-redirected-output">Download a file and save it via redirected output:</h1>
+<p>http example.org/file &gt; file</p>
+<h1 id="download-a-file-wget-style">Download a file wget style:</h1>
+<p>http –download example.org/file</p>
+<h1 id="use-named-sessions_-to-make-certain-aspects-or-the-communication">Use named sessions_ to make certain aspects or the communication</h1>
+<h1 id="persistent-between-requests-to-the-same-host">persistent between requests to the same host:</h1>
+<h1 id="http-sessionlogged-in--a-usernamepassword-httpbin.orgget-api-key123">http –session=logged-in -a username:password httpbin.org/get API-Key:123</h1>
+<p>http –session=logged-in httpbin.org/headers</p>
+<h1 id="set-a-custom-host-header-to-work-around-missing-dns-records">Set a custom Host header to work around missing DNS records:</h1>
+<p>http localhost:8000 Host:example.com</p>
+<h1 id="simple-json-example">Simple JSON example:</h1>
+<p>http PUT example.org name=John email=john@example.org</p>
+<h1 id="non-string-fields-use-the-separator-which-allows-you-to-embed-raw">Non-string fields use the := separator, which allows you to embed raw</h1>
+<h1 id="json-into-the-resulting-object.-text-and-raw-json-files-can-also-be">JSON into the resulting object. Text and raw JSON files can also be</h1>
+<h1 id="embedded-into-fields-using-and">embedded into fields using =@ and :=@:</h1>
+<p>http PUT api.example.com/person/1 name=John age:=29 married:=false hobbies:=‘[“http”, “pies”]’ description=<span class="citation" data-cites="about-john.txt">@about-john.txt</span> bookmarks:=<span class="citation" data-cites="bookmarks.json">@bookmarks.json</span></p>
+<h1 id="send-json-data-stored-in-a-file">Send JSON data stored in a file:</h1>
+<p>http POST api.example.com/person/1 &lt; person.json</p>
+<h1 id="regular-forms">Regular Forms</h1>
+<p>http –form POST api.example.org/person/1 name=‘John Smith’ email=john@example.org cv=@~/Documents/cv.txt</p>
+<h1 id="file-upload-forms">File Upload Forms</h1>
+<h1 id="if-one-or-more-file-fields-is-present-the-serialization-and-content">If one or more file fields is present, the serialization and content</h1>
+<h1 id="type-is-multipartform-data">type is multipart/form-data:</h1>
+<p>http -f POST example.com/jobs name=‘John Smith’ cv@~/Documents/cv.pdf</p>
+<h1 id="to-set-custom-headers-you-can-use-the-headervalue-notation">To set custom headers you can use the Header:Value notation:</h1>
+<p>http example.org User-Agent:Bacon/1.0 ‘Cookie:valued-visitor=yes;foo=bar’ X-Foo:Bar Referer:<a href="http://httpie.org/" class="uri">http://httpie.org/</a></p>
+<h1 id="basic-auth">Basic auth:</h1>
+<p>http -a username:password example.org</p>
+<h1 id="digest-auth">Digest auth:</h1>
+<p>http –auth-type=digest -a username:password example.org</p>
+<h1 id="with-password-prompt">With password prompt:</h1>
+<p>http -a username example.org</p>
+<h1 id="authorization-information-from-your-.netrc-file-is-honored-as-well">Authorization information from your ~/.netrc file is honored as well:</h1>
+<p>cat ~/.netrc machine httpbin.org login httpie # password test http httpbin.org/basic-auth/httpie/test</p>
+<h1 id="you-can-specify-proxies-to-be-used-through-the-proxy-argument-for-each">You can specify proxies to be used through the –proxy argument for each</h1>
+<h1 id="protocol-which-is-included-in-the-value-in-case-of-redirects-across">protocol (which is included in the value in case of redirects across</h1>
+<h1 id="protocols">protocols):</h1>
+<p>http –proxy=http:<a href="http://10.10.1.10:3128" class="uri">http://10.10.1.10:3128</a> –proxy=https:<a href="https://10.10.1.10:1080" class="uri">https://10.10.1.10:1080</a> example.org</p>
+<h1 id="with-basic-authentication">With Basic authentication:</h1>
+<p>http –proxy=http:<a href="http://user:pass@10.10.1.10:3128" class="uri">http://user:pass@10.10.1.10:3128</a> example.org</p>
+<h1 id="to-skip-the-hosts-ssl-certificate-verification-you-can-pass">To skip the HOST’S SSL CERTIFICATE VERIFICATION, you can pass</h1>
+<h1 id="verifyno-default-is-yes">–verify=no (default is yes):</h1>
+<p>http –verify=no <a href="https://example.org" class="uri">https://example.org</a></p>
+<h1 id="you-can-also-use-verify-to-set-a-custom-ca-bundle-path">You can also use –verify=<CA_BUNDLE_PATH> to set a CUSTOM CA BUNDLE path:</h1>
+<p>http –verify=/ssl/custom_ca_bundle <a href="https://example.org" class="uri">https://example.org</a></p>
+<h1 id="to-use-a-client-side-certificate-for-the-ssl-communication-you-can-pass">To use a CLIENT SIDE CERTIFICATE for the SSL communication, you can pass</h1>
+<h1 id="the-path-of-the-cert-file-with-cert">the path of the cert file with –cert:</h1>
+<p>http –cert=client.pem <a href="https://example.org" class="uri">https://example.org</a></p>
+<h1 id="if-the-private-key-is-not-contained-in-the-cert-file-you-may-pass-the">If the PRIVATE KEY is not contained in the cert file you may pass the</h1>
+<h1 id="path-of-the-key-file-with-cert-key">path of the key file with –cert-key:</h1>
+<p>http –cert=client.crt –cert-key=client.key <a href="https://example.org" class="uri">https://example.org</a></p>
+<h1 id="you-can-control-what-should-be-printed-via-several-options">You can control what should be printed via several options:</h1>
+<h1 id="headers--h-only-the-response-headers-are-printed.">–headers, -h Only the response headers are printed.</h1>
+<h1 id="body--b-only-the-response-body-is-printed.">–body, -b Only the response body is printed.</h1>
+<h1 id="verbose--v-print-the-whole-http-exchange-request-and-response.">–verbose, -v Print the whole HTTP exchange (request and response).</h1>
+<h1 id="print--p-selects-parts-of-the-http-exchange.">–print, -p Selects parts of the HTTP exchange.</h1>
+<p>http –verbose PUT httpbin.org/put hello=world</p>
+<h1 id="print-request-and-response-headers">Print request and response headers:</h1>
+<h1 id="character-stands-for">Character Stands for</h1>
+<h1 id="section">———– ——————-</h1>
+<h1 id="h-request-headers.">H Request headers.</h1>
+<h1 id="b-request-body.">B Request body.</h1>
+<h1 id="h-response-headers.">h Response headers.</h1>
+<h1 id="b-response-body.">b Response body.</h1>
+<p>http –print=Hh PUT httpbin.org/put hello=world</p>
+<h1 id="lets-say-that-there-is-an-api-that-returns-the-whole-resource-when-it">Let’s say that there is an API that returns the whole resource when it</h1>
+<h1 id="is-updated-but-you-are-only-interested-in-the-response-headers-to-see">is updated, but you are only interested in the response headers to see</h1>
+<h1 id="the-status-code-after-an-update">the status code after an update:</h1>
+<p>http –headers PATCH example.org/Really-Huge-Resource name=‘New Name’</p>
+<h1 id="redirect-from-a-file">Redirect from a file:</h1>
+<p>http PUT example.com/person/1 X-API-Token:123 &lt; person.json</p>
+<h1 id="or-the-output-of-another-program">Or the output of another program:</h1>
+<p>grep ‘401 Unauthorized’ /var/log/httpd/error_log | http POST example.org/intruders</p>
+<h1 id="you-can-use-echo-for-simple-data">You can use echo for simple data:</h1>
+<p>echo ‘{“name”: “John”}’ | http PATCH example.com/person/1 X-API-Token:123</p>
+<h1 id="you-can-even-pipe-web-services-together-using-httpie">You can even pipe web services together using HTTPie:</h1>
+<p>http GET <a href="https://api.github.com/repos/jkbrzt/httpie" class="uri">https://api.github.com/repos/jkbrzt/httpie</a> | http POST httpbin.org/post</p>
+<h1 id="you-can-use-cat-to-enter-multiline-data-on-the-terminal">You can use cat to enter multiline data on the terminal:</h1>
+<p>cat | http POST example.com <paste> # ^D cat | http POST example.com/todos Content-Type:text/plain - buy milk - call parents ^D</p>
+<h1 id="on-os-x-you-can-send-the-contents-of-the-clipboard-with-pbpaste">On OS X, you can send the contents of the clipboard with pbpaste:</h1>
+<p>pbpaste | http PUT example.com</p>
+<h1 id="passing-data-through-stdin-cannot-be-combined-with-data-fields-specified">Passing data through stdin cannot be combined with data fields specified</h1>
+<h1 id="on-the-command-line">on the command line:</h1>
+<p>echo ‘data’ | http POST example.org more=data # This is invalid</p>
+<h1 id="an-alternative-to-redirected-stdin-is-specifying-a-filename-as">AN ALTERNATIVE TO REDIRECTED stdin is specifying a filename (as</h1>
+<h1 id="pathtofile-whose-content-is-used-as-if-it-came-from-stdin.">@/path/to/file) whose content is used as if it came from stdin.</h1>
+<h1 id="it-has-the-advantage-that-the-content-type-header-is-automatically-set">It has the advantage that THE Content-Type HEADER IS AUTOMATICALLY SET</h1>
+<h1 id="to-the-appropriate-value-based-on-the-filename-extension.-for-example">to the appropriate value based on the filename extension. For example,</h1>
+<h1 id="the-following-request-sends-the-verbatim-contents-of-that-xml-file-with">the following request sends the verbatim contents of that XML file with</h1>
+<h1 id="content-type-applicationxml">Content-Type: application/xml:</h1>
+<p>http PUT httpbin.org/put @/data/file.xml</p>
+<h1 id="download-a-file">Download a file:</h1>
+<p>http example.org/Movie.mov &gt; Movie.mov</p>
+<h1 id="download-an-image-of-octocat-resize-it-using-imagemagick-upload-it">Download an image of Octocat, resize it using ImageMagick, upload it</h1>
+<h1 id="elsewhere">elsewhere:</h1>
+<p>http octodex.github.com/images/original.jpg | convert - -resize 25% - | http example.org/Octocats</p>
+<h1 id="force-colorizing-and-formatting-and-show-both-the-request-and-the">Force colorizing and formatting, and show both the request and the</h1>
+<h1 id="response-in-less-pager">response in less pager:</h1>
+<p>http –pretty=all –verbose example.org | less -R</p>
+<h1 id="when-enabled-using-the-download--d-flag-response-headers-are-printed">When enabled using the –download, -d flag, response headers are printed</h1>
+<h1 id="to-the-terminal-stderr-and-a-progress-bar-is-shown-while-the-response">to the terminal (stderr), and a progress bar is shown while the response</h1>
+<h1 id="body-is-being-saved-to-a-file.">body is being saved to a file.</h1>
+<p>http –download <a href="https://github.com/jkbrzt/httpie/tarball/master" class="uri">https://github.com/jkbrzt/httpie/tarball/master</a></p>
+<h1 id="you-can-also-redirect-the-response-body-to-another-program-while-the">You can also redirect the response body to another program while the</h1>
+<h1 id="response-headers-and-progress-are-still-shown-in-the-terminal">response headers and progress are still shown in the terminal:</h1>
+<p>http -d <a href="https://github.com/jkbrzt/httpie/tarball/master" class="uri">https://github.com/jkbrzt/httpie/tarball/master</a> | tar zxf -</p>
+<h1 id="if-output--o-is-specified-you-can-resume-a-partial-download-using">If –output, -o is specified, you can resume a partial download using</h1>
+<h1 id="the-continue--c-option.-this-only-works-with-servers-that-support">the –continue, -c option. This only works with servers that support</h1>
+<h1 id="range-requests-and-206-partial-content-responses.-if-the-server-doesnt">Range requests and 206 Partial Content responses. If the server doesn’t</h1>
+<h1 id="support-that-the-whole-file-will-simply-be-downloaded">support that, the whole file will simply be downloaded:</h1>
+<p>http -dco file.zip example.org/file</p>
+<h1 id="prettified-streamed-response">Prettified streamed response:</h1>
+<p>http –stream -f -a YOUR-TWITTER-NAME <a href="https://stream.twitter.com/1/statuses/filter.json" class="uri">https://stream.twitter.com/1/statuses/filter.json</a> track=‘Justin Bieber’</p>
+<h1 id="send-each-new-tweet-json-object-mentioning-apple-to-another">Send each new tweet (JSON object) mentioning “Apple” to another</h1>
+<h1 id="server-as-soon-as-it-arrives-from-the-twitter-streaming-api">server as soon as it arrives from the Twitter streaming API:</h1>
+<p>http –stream -f -a YOUR-TWITTER-NAME <a href="https://stream.twitter.com/1/statuses/filter.json" class="uri">https://stream.twitter.com/1/statuses/filter.json</a> track=Apple | while read tweet; do echo “$tweet” | http POST example.org/tweets ; done</p>
+<h1 id="create-a-new-session-named-user1-for-example.org">Create a new session named user1 for example.org:</h1>
+<p>http –session=user1 -a user1:password example.org X-Foo:Bar</p>
+<h1 id="now-you-can-refer-to-the-session-by-its-name-and-the-previously-used">Now you can refer to the session by its name, and the previously used</h1>
+<h1 id="authorization-and-http-headers-will-automatically-be-set">authorization and HTTP headers will automatically be set:</h1>
+<p>http –session=user1 example.org</p>
+<h1 id="to-create-or-reuse-a-different-session-simple-specify-a-different-name">To create or reuse a different session, simple specify a different name:</h1>
+<p>http –session=user2 -a user2:password example.org X-Bar:Foo</p>
+<h1 id="instead-of-a-name-you-can-also-directly-specify-a-path-to-a-session">Instead of a name, you can also directly specify a path to a session</h1>
+<h1 id="file.-this-allows-for-sessions-to-be-re-used-across-multiple-hosts">file. This allows for sessions to be re-used across multiple hosts:</h1>
+<p>http –session=/tmp/session.json example.orghttp –session=/tmp/session.json admin.example.orghttp –session=~/.httpie/sessions/another.example.org/test.json example.orghttp –session-read-only=/tmp/session.json example.org</p>
+</body>
+</html>

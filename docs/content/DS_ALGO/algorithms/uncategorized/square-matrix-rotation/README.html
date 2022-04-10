@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="square-matrix-in-place-rotation">Square Matrix In-Place Rotation</h1>
+<h2 id="the-problem">The Problem</h2>
+<p>You are given an <code>n x n</code> 2D matrix (representing an image). Rotate the matrix by <code>90</code> degrees (clockwise).</p>
+<p><strong>Note</strong></p>
+<p>You have to rotate the image <strong>in-place</strong>, which means you have to modify the input 2D matrix directly. <strong>DO NOT</strong> allocate another 2D matrix and do the rotation.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example #1</strong></p>
+<p>Given input matrix:</p>
+<pre><code>[
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+]</code></pre>
+<p>Rotate the input matrix in-place such that it becomes:</p>
+<pre><code>[
+  [7, 4, 1],
+  [8, 5, 2],
+  [9, 6, 3],
+]</code></pre>
+<p><strong>Example #2</strong></p>
+<p>Given input matrix:</p>
+<pre><code>[
+  [5, 1, 9, 11],
+  [2, 4, 8, 10],
+  [13, 3, 6, 7],
+  [15, 14, 12, 16],
+]</code></pre>
+<p>Rotate the input matrix in-place such that it becomes:</p>
+<pre><code>[
+  [15, 13, 2, 5],
+  [14, 3, 4, 1],
+  [12, 6, 8, 9],
+  [16, 7, 10, 11],
+]</code></pre>
+<h2 id="algorithm">Algorithm</h2>
+<p>We would need to do two reflections of the matrix:</p>
+<ul>
+<li>reflect vertically</li>
+<li>reflect diagonally from bottom-left to top-right</li>
+</ul>
+<p>Or we also could Furthermore, you can reflect diagonally top-left/bottom-right and reflect horizontally.</p>
+<p>A common question is how do you even figure out what kind of reflections to do? Simply rip a square piece of paper, write a random word on it so you know its rotation. Then, flip the square piece of paper around until you figure out how to come to the solution.</p>
+<p>Here is an example of how first line may be rotated using diagonal top-right/bottom-left rotation along with horizontal rotation.</p>
+<pre><code>Let&#39;s say we have a string at the top of the matrix:
+
+A B C
+• • •
+• • •
+
+Let&#39;s do top-right/bottom-left diagonal reflection:
+
+A B C
+/ / •
+/ • •
+
+And now let&#39;s do horizontal reflection:
+
+A → →
+B → →
+C → →
+
+The string has been rotated to 90 degree:
+
+• • A
+• • B
+• • C</code></pre>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://leetcode.com/problems/rotate-image/description/">LeetCode</a></li>
+</ul>
+</body>
+</html>

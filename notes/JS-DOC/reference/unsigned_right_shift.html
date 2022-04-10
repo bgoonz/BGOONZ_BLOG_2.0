@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>unsigned_right_shift</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="unsigned-right-shift">Unsigned right shift (&gt;&gt;&gt;)</h1>
+<p>The <code>&gt;&gt;&gt;</code> (zero-fill right shift) shifts the first operand the specified number of bits to the right. Excess bits shifted off to the right are discarded. Zero bits are shifted in from the left. The sign bit becomes <code>0</code>, so the result is always non-negative. Unlike the other bitwise operators, zero-fill right shift returns an unsigned 32-bit integer.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>a &gt;&gt;&gt; b</code></pre>
+<h2 id="description">Description</h2>
+<p>This operator shifts the first operand the specified number of bits to the right. Excess bits shifted off to the right are discarded. Zero bits are shifted in from the left. The sign bit becomes <code>0</code>, so the result is always non-negative. Unlike the other bitwise operators, zero-fill right shift returns an unsigned 32-bit integer.</p>
+<p>For non-negative numbers, zero-fill right shift and sign-propagating right shift yield the same result. For example, <code>9 &gt;&gt;&gt; 2</code> yields 2, the same as <code>9 &gt;&gt; 2</code>:</p>
+<pre><code>.     9 (base 10): 00000000000000000000000000001001 (base 2)
+                   --------------------------------
+9 &gt;&gt;&gt; 2 (base 10): 00000000000000000000000000000010 (base 2) = 2 (base 10)</code></pre>
+<p>However, this is not the case for negative numbers. For example, <code>-9 &gt;&gt;&gt; 2</code> yields 1073741821, which is different than <code>-9 &gt;&gt; 2</code> (which yields <code>-3</code>):</p>
+<pre><code>.     -9 (base 10): 11111111111111111111111111110111 (base 2)
+                    --------------------------------
+-9 &gt;&gt;&gt; 2 (base 10): 00111111111111111111111111111101 (base 2) = 1073741821 (base 10)</code></pre>
+<h2 id="examples">Examples</h2>
+<h3 id="using-unsigned-right-shift">Using unsigned right shift</h3>
+<pre><code> 9 &gt;&gt;&gt; 2; // 2
+-9 &gt;&gt;&gt; 2; // 1073741821</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-unsigned-right-shift-operator">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-unsigned-right-shift-operator</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>Unsigned_right_shift</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#bitwise">Bitwise operators in the JS guide</a></li>
+<li><a href="unsigned_right_shift_assignment">Unsigned right shift assignment operator</a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Unsigned_right_shift" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Unsigned_right_shift</a></p>
+</body>
+</html>

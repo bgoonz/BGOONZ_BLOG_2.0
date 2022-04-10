@@ -1,10 +1,12 @@
-# Promise.prototype.then()
+Promise.prototype.then()
+========================
 
 The `then()` method returns a [`Promise`](../promise). It takes up to two arguments: callback functions for the success and failure cases of the `Promise`.
 
 **Note:** If one or both arguments are omitted or are provided non-functions, then `then` will be missing the handler(s), but will not generate any errors. If the `Promise` that `then` is called on adopts a state (`fulfillment` or `rejection`) for which `then` has no handler, the returned promise adopts the final state of the original `Promise` on which `then` was called.
 
-## Syntax
+Syntax
+------
 
     p.then(onFulfilled[, onRejected]);
 
@@ -17,20 +19,20 @@ The `then()` method returns a [`Promise`](../promise). It takes up to two argume
 ### Parameters
 
 `onFulfilled` <span class="badge inline optional">Optional</span>  
-A [`Function`](../function) called if the `Promise` is fulfilled. This function has one argument, the `fulfillment value`. If it is not a function, it is internally replaced with an "Identity" function (it returns the received argument).
+A [`Function`](../function) called if the `Promise` is fulfilled. This function has one argument, the `fulfillment value`. If it is not a function, it is internally replaced with an “Identity” function (it returns the received argument).
 
 `onRejected` <span class="badge inline optional">Optional</span>  
-A [`Function`](../function) called if the `Promise` is rejected. This function has one argument, the `rejection reason`. If it is not a function, it is internally replaced with a "Thrower" function (it throws an error it received as argument).
+A [`Function`](../function) called if the `Promise` is rejected. This function has one argument, the `rejection reason`. If it is not a function, it is internally replaced with a “Thrower” function (it throws an error it received as argument).
 
 ### Return value
 
 Once a [`Promise`](../promise) is fulfilled or rejected, the respective handler function (`onFulfilled` or `onRejected`) will be called **asynchronously** (scheduled in the current thread loop). The behavior of the handler function follows a specific set of rules. If a handler function:
 
 -   returns a value, the promise returned by `then` gets resolved with the returned value as its value.
--   doesn't return anything, the promise returned by `then` gets resolved with an `undefined` value.
+-   doesn’t return anything, the promise returned by `then` gets resolved with an `undefined` value.
 -   throws an error, the promise returned by `then` gets rejected with the thrown error as its value.
--   returns an already fulfilled promise, the promise returned by `then` gets fulfilled with that promise's value as its value.
--   returns an already rejected promise, the promise returned by `then` gets rejected with that promise's value as its value.
+-   returns an already fulfilled promise, the promise returned by `then` gets fulfilled with that promise’s value as its value.
+-   returns an already rejected promise, the promise returned by `then` gets rejected with that promise’s value as its value.
 -   returns another **pending** promise object, the resolution/rejection of the promise returned by `then` will be subsequent to the resolution/rejection of the promise returned by the handler. Also, the resolved value of the promise returned by `then` will be the same as the resolved value of the promise returned by the handler.
 
 Following, an example to demonstrate the asynchronicity of the `then` method.
@@ -56,11 +58,13 @@ Following, an example to demonstrate the asynchronicity of the `then` method.
     // "this gets called after the end of the main stack. the value received and returned is: 33"
     // Promise {[[PromiseStatus]]: "resolved", [[PromiseValue]]: 33}
 
-## Description
+Description
+-----------
 
-As the `then` and [`Promise.prototype.catch()`](catch) methods return promises, they [can be chained](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises#chaining) — an operation called _composition_.
+As the `then` and [`Promise.prototype.catch()`](catch) methods return promises, they [can be chained](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises#chaining) — an operation called *composition*.
 
-## Examples
+Examples
+--------
 
 ### Using the `then` method
 
@@ -156,7 +160,7 @@ In all other cases, a resolving Promise is returned. In the following example, t
       .then(() => 99, () => 42) // onRejected returns 42 which is wrapped in a resolving Promise
       .then(solution => console.log('Resolved with ' + solution)); // Resolved with 42
 
-In practice, it is often desirable to catch rejected promises rather than use `then`'s two case syntax, as demonstrated below.
+In practice, it is often desirable to catch rejected promises rather than use `then`’s two case syntax, as demonstrated below.
 
     Promise.resolve()
       .then(() => {
@@ -244,14 +248,14 @@ Using a [`Function.prototype.bind()`](../function/bind) `Reflect.apply` ([`Refle
       return nextTick;
     })();
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.prototype.then">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-promise.prototype.then</span></td></tr></tbody></table>
 
-<span class="small">#sec-promise.prototype.then</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -307,11 +311,11 @@ No
 
 2.0
 
-## See also
+See also
+--------
 
 -   [`Promise`](../promise)
 -   [`Promise.prototype.catch()`](catch)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then</a>

@@ -1,4 +1,5 @@
-# Date.prototype.toGMTString()
+Date.prototype.toGMTString()
+============================
 
 **Deprecated**
 
@@ -8,7 +9,8 @@ The `toGMTString()` method converts a date to a string, using Internet Greenwich
 
 **Note:** `toGMTString()` is deprecated and should no longer be used. It remains implemented only for backward compatibility; please use [`toUTCString()`](toutcstring) instead.
 
-## Syntax
+Syntax
+------
 
     toGMTString()
 
@@ -16,25 +18,26 @@ The `toGMTString()` method converts a date to a string, using Internet Greenwich
 
 A string representing the given date following the Internet Greenwich Mean Time (GMT) convention.
 
-## Examples
+Examples
+--------
 
 ### Simple example
 
-In this example, the `toGMTString()` method converts the date to GMT (UTC) using the operating system's time-zone offset and returns a string value that is similar to the following form. The exact format depends on the platform.
+In this example, the `toGMTString()` method converts the date to GMT (UTC) using the operating system’s time-zone offset and returns a string value that is similar to the following form. The exact format depends on the platform.
 
     var today = new Date();
     var str = today.toGMTString();  // deprecated! use toUTCString()
 
     console.log(str);               // Mon, 18 Dec 1995 17:28:35 GMT
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.togmtstring">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-date.prototype.togmtstring</span></td></tr></tbody></table>
 
-<span class="small">#sec-date.prototype.togmtstring</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -90,7 +93,8 @@ Samsung Internet
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`Date.prototype.toLocaleDateString()`](tolocaledatestring)
 -   [`Date.prototype.toTimeString()`](totimestring)

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>tolocaletimestring</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="date.prototype.tolocaletimestring">Date.prototype.toLocaleTimeString()</h1>
+<p>The <code>toLocaleTimeString()</code> method returns a string with a language sensitive representation of the time portion of this date. The new <code>locales</code> and <code>options</code> arguments let applications specify the language whose formatting conventions should be used and customize the behavior of the function. In older implementations, which ignore the <code>locales</code> and <code>options</code> arguments, the locale used and the form of the string returned are entirely implementation dependent.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>toLocaleTimeString()
+toLocaleTimeString(locales)
+toLocaleTimeString(locales, options)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p>The <code>locales</code> and <code>options</code> arguments customize the behavior of the function and let applications specify the language whose formatting conventions should be used. In implementations, which ignore the <code>locales</code> and <code>options</code> arguments, the locale used and the form of the string returned are entirely implementation dependent.</p>
+<p>See the <a href="../intl/datetimeformat/datetimeformat"><code>Intl.DateTimeFormat()</code></a> constructor for details on these parameters and how to use them.</p>
+<p>The default value for each date-time component property is <a href="../undefined"><code>undefined</code></a>, but if the <code>hour</code>, <code>minute</code>, <code>second</code> properties are all <a href="../undefined"><code>undefined</code></a>, then <code>hour</code>, <code>minute</code>, and <code>second</code> are assumed to be <code>"numeric"</code>.</p>
+<h3 id="return-value">Return value</h3>
+<p>A string representing the time portion of the given <a href="../date"><code>Date</code></a> instance according to language-specific conventions.</p>
+<h2 id="performance">Performance</h2>
+<p>When formatting large numbers of dates, it is better to create an <a href="../intl/datetimeformat"><code>Intl.DateTimeFormat</code></a> object and use the function provided by its <a href="../intl/datetimeformat/format"><code>format</code></a> property.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-tolocaletimestring">Using toLocaleTimeString()</h3>
+<p>In basic use without specifying a locale, a formatted string in the default locale and with default options is returned.</p>
+<pre><code>var date = new Date(Date.UTC(2012, 11, 12, 3, 0, 0));
+
+// toLocaleTimeString() without arguments depends on the implementation,
+// the default locale, and the default time zone
+console.log(date.toLocaleTimeString());
+// → &quot;7:00:00 PM&quot; if run in en-US locale with time zone America/Los_Angeles</code></pre>
+<h3 id="checking-for-support-for-locales-and-options-arguments">Checking for support for locales and options arguments</h3>
+<p>The <code>locales</code> and <code>options</code> arguments are not supported in all browsers yet. To check whether an implementation supports them already, you can use the requirement that illegal language tags are rejected with a <a href="../rangeerror"><code>RangeError</code></a> exception:</p>
+<pre><code>function toLocaleTimeStringSupportsLocales() {
+  try {
+    new Date().toLocaleTimeString(&#39;i&#39;);
+  } catch (e) {
+    return e.name === &#39;RangeError&#39;;
+  }
+  return false;
+}</code></pre>
+<h3 id="using-locales">Using locales</h3>
+<p>This example shows some of the variations in localized time formats. In order to get the format of the language used in the user interface of your application, make sure to specify that language (and possibly some fallback languages) using the <code>locales</code> argument:</p>
+<pre><code>var date = new Date(Date.UTC(2012, 11, 20, 3, 0, 0));
+
+// formats below assume the local time zone of the locale;
+// America/Los_Angeles for the US
+
+// US English uses 12-hour time with AM/PM
+console.log(date.toLocaleTimeString(&#39;en-US&#39;));
+// → &quot;7:00:00 PM&quot;
+
+// British English uses 24-hour time without AM/PM
+console.log(date.toLocaleTimeString(&#39;en-GB&#39;));
+// → &quot;03:00:00&quot;
+
+// Korean uses 12-hour time with AM/PM
+console.log(date.toLocaleTimeString(&#39;ko-KR&#39;));
+// → &quot;오후 12:00:00&quot;
+
+// Arabic in most Arabic speaking countries uses real Arabic digits
+console.log(date.toLocaleTimeString(&#39;ar-EG&#39;));
+// → &quot;٧:٠٠:٠٠ م&quot;
+
+// when requesting a language that may not be supported, such as
+// Balinese, include a fallback language, in this case Indonesian
+console.log(date.toLocaleTimeString([&#39;ban&#39;, &#39;id&#39;]));
+// → &quot;11.00.00&quot;</code></pre>
+<h3 id="using-options">Using options</h3>
+<p>The results provided by <code>toLocaleTimeString()</code> can be customized using the <code>options</code> argument:</p>
+<pre><code>var date = new Date(Date.UTC(2012, 11, 20, 3, 0, 0));
+
+// an application may want to use UTC and make that visible
+var options = { timeZone: &#39;UTC&#39;, timeZoneName: &#39;short&#39; };
+console.log(date.toLocaleTimeString(&#39;en-US&#39;, options));
+// → &quot;3:00:00 AM GMT&quot;
+
+// sometimes even the US needs 24-hour time
+console.log(date.toLocaleTimeString(&#39;en-US&#39;, { hour12: false }));
+// → &quot;19:00:00&quot;
+
+// show only hours and minutes, use options with the default locale - use an empty array
+console.log(date.toLocaleTimeString([], { hour: &#39;2-digit&#39;, minute: &#39;2-digit&#39; }));
+// → &quot;20:01&quot;</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-date.prototype.tolocaletimestring">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-date.prototype.tolocaletimestring</span></a>
+</td>
+</tr>
+<tr class="even">
+<td>
+<p><a href="https://tc39.es/ecma402/#sup-date.prototype.tolocaletimestring">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) <br/></p>
+<span class="small">#sup-date.prototype.tolocaletimestring</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>toLocaleTimeString</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>5.5</p>
+<p>5</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>iana_time_zone_names</code></p>
+<p>24</p>
+<p>14</p>
+<p>52</p>
+<p>No</p>
+<p>15</p>
+<p>6.1</p>
+<p>4.4</p>
+<p>25</p>
+<p>56</p>
+<p>14</p>
+<p>7</p>
+<p>1.5</p>
+<p><code>locales</code></p>
+<p>24</p>
+<p>12</p>
+<p>29</p>
+<p>11</p>
+<p>15</p>
+<p>10</p>
+<p>4.4</p>
+<p>25</p>
+<p>56</p>
+<p>14</p>
+<p>10</p>
+<p>1.5</p>
+<p><code>options</code></p>
+<p>24</p>
+<p>12</p>
+<p>29</p>
+<p>11</p>
+<p>15</p>
+<p>10</p>
+<p>4.4</p>
+<p>25</p>
+<p>56</p>
+<p>14</p>
+<p>10</p>
+<p>1.5</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../intl/datetimeformat"><code>Intl.DateTimeFormat</code></a></li>
+<li><a href="tolocaledatestring"><code>Date.prototype.toLocaleDateString()</code></a></li>
+<li><a href="tolocalestring"><code>Date.prototype.toLocaleString()</code></a></li>
+<li><a href="totimestring"><code>Date.prototype.toTimeString()</code></a></li>
+<li><a href="tostring"><code>Date.prototype.toString()</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleTimeString" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleTimeString</a></p>
+</body>
+</html>

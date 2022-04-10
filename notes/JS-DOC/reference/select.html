@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>select</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="intl.pluralrules.select">Intl.PluralRules.select()</h1>
+<p>The <code>Intl.PluralRules.prototype.select()</code> method returns a string indicating which plural rule to use for locale-aware formatting.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>select(number)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>number</code><br />
+The number to get a plural rule for.</p>
+<h3 id="return-value">Return value</h3>
+<p>A string representing the pluralization category of the <code>number</code>, can be one of <code>zero</code>, <code>one</code>, <code>two</code>, <code>few</code>, <code>many</code> or <code>other</code>.</p>
+<h2 id="description">Description</h2>
+<p>This function selects a pluralization category according to the locale and formatting options of a <a href="../pluralrules"><code>Intl/PluralRules</code></a> object.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-select">Using select()</h3>
+<pre><code> new Intl.PluralRules(&#39;ar-EG&#39;).select(0);
+// → &#39;zero&#39;
+
+new Intl.PluralRules(&#39;ar-EG&#39;).select(1);
+// → &#39;one&#39;
+
+new Intl.PluralRules(&#39;ar-EG&#39;).select(2);
+// → &#39;two&#39;
+
+new Intl.PluralRules(&#39;ar-EG&#39;).select(6);
+// → &#39;few&#39;
+
+new Intl.PluralRules(&#39;ar-EG&#39;).select(18);
+// → &#39;many&#39;</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma402/#sec-intl.pluralrules.prototype.select">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) <br/></p>
+<span class="small">#sec-intl.pluralrules.prototype.select</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>select</code></p>
+<p>63</p>
+<p>18</p>
+<p>58</p>
+<p>No</p>
+<p>50</p>
+<p>13</p>
+<p>63</p>
+<p>63</p>
+<p>58</p>
+<p>46</p>
+<p>13</p>
+<p>8.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../pluralrules"><code>Intl.PluralRules</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/PluralRules/select" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/PluralRules/select</a></p>
+</body>
+</html>

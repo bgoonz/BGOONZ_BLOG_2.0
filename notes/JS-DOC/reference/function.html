@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>function*</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="function">function*</h1>
+<p>The <code>function*</code> declaration (<code>function</code> keyword followed by an asterisk) defines a <em>generator function</em>, which returns a <a href="../global_objects/generator"><code>Generator</code></a> object.</p>
+<p>You can also define generator functions using the <a href="../global_objects/generatorfunction"><code>GeneratorFunction</code></a> constructor, or the function expression syntax.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>function* name([param[, param[, ... param]]]) {
+   statements
+}</code></pre>
+<p><code>name</code><br />
+The function name.</p>
+<p><code>param</code> <span class="badge inline optional">Optional</span><br />
+The name of a formal parameter for the function.</p>
+<p><code>statements</code><br />
+The statements comprising the body of the function.</p>
+<h2 id="description">Description</h2>
+<p>Generators are functions that can be exited and later re-entered. Their context (variable bindings) will be saved across re-entrances.</p>
+<p>Generators in JavaScript – especially when combined with Promises – are a very powerful tool for asynchronous programming as they mitigate – if not entirely eliminate – the problems with callbacks, such as <a href="http://callbackhell.com/">Callback Hell</a> and <a href="https://frontendmasters.com/courses/rethinking-async-js/callback-problems-inversion-of-control/">Inversion of Control</a>. However, an even simpler solution to these problems can be achieved with <a href="async_function">async functions</a>.</p>
+<p>Calling a generator function does not execute its body immediately; an <a href="../iteration_protocols#iterator">iterator</a> object for the function is returned instead. When the iterator’s <code>next()</code> method is called, the generator function’s body is executed until the first <a href="../operators/yield"><code>yield</code></a> expression, which specifies the value to be returned from the iterator or, with <a href="../operators/yield*"><code>yield*</code></a>, delegates to another generator function. The <code>next()</code> method returns an object with a <code>value</code> property containing the yielded value and a <code>done</code> property which indicates whether the generator has yielded its last value, as a boolean. Calling the <code>next()</code> method with an argument will resume the generator function execution, replacing the <code>yield</code> expression where an execution was paused with the argument from <code>next()</code>.</p>
+<p>A <code>return</code> statement in a generator, when executed, will make the generator finish (i.e. the <code>done</code> property of the object returned by it will be set to <code>true</code>). If a value is returned, it will be set as the <code>value</code> property of the object returned by the generator.<br />
+Much like a <code>return</code> statement, an error thrown inside the generator will make the generator finished – unless caught within the generator’s body.<br />
+When a generator is finished, subsequent <code>next()</code> calls will not execute any of that generator’s code, they will just return an object of this form: <code>{value: undefined, done: true}</code>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="simple-example">Simple example</h3>
+<pre><code>function* idMaker() {
+  var index = 0;
+  while (true)
+    yield index++;
+}
+
+var gen = idMaker();
+
+console.log(gen.next().value); // 0
+console.log(gen.next().value); // 1
+console.log(gen.next().value); // 2
+console.log(gen.next().value); // 3
+// ...</code></pre>
+<h3 id="example-with-yield">Example with yield*</h3>
+<pre><code>function* anotherGenerator(i) {
+  yield i + 1;
+  yield i + 2;
+  yield i + 3;
+}
+
+function* generator(i) {
+  yield i;
+  yield* anotherGenerator(i);
+  yield i + 10;
+}
+
+var gen = generator(10);
+
+console.log(gen.next().value); // 10
+console.log(gen.next().value); // 11
+console.log(gen.next().value); // 12
+console.log(gen.next().value); // 13
+console.log(gen.next().value); // 20</code></pre>
+<h3 id="passing-arguments-into-generators">Passing arguments into Generators</h3>
+<pre><code>function* logGenerator() {
+  console.log(0);
+  console.log(1, yield);
+  console.log(2, yield);
+  console.log(3, yield);
+}
+
+var gen = logGenerator();
+
+// the first call of next executes from the start of the function
+// until the first yield statement
+gen.next();             // 0
+gen.next(&#39;pretzel&#39;);    // 1 pretzel
+gen.next(&#39;california&#39;); // 2 california
+gen.next(&#39;mayonnaise&#39;); // 3 mayonnaise</code></pre>
+<h3 id="return-statement-in-a-generator">Return statement in a generator</h3>
+<pre><code>function* yieldAndReturn() {
+  yield &quot;Y&quot;;
+  return &quot;R&quot;;
+  yield &quot;unreachable&quot;;
+}
+
+var gen = yieldAndReturn()
+console.log(gen.next()); // { value: &quot;Y&quot;, done: false }
+console.log(gen.next()); // { value: &quot;R&quot;, done: true }
+console.log(gen.next()); // { value: undefined, done: true }</code></pre>
+<h3 id="generator-as-an-object-property">Generator as an object property</h3>
+<pre><code>const someObj = {
+  *generator () {
+    yield &#39;a&#39;;
+    yield &#39;b&#39;;
+  }
+}
+
+const gen = someObj.generator()
+
+console.log(gen.next()); // { value: &#39;a&#39;, done: false }
+console.log(gen.next()); // { value: &#39;b&#39;, done: false }
+console.log(gen.next()); // { value: undefined, done: true }</code></pre>
+<h3 id="generator-as-an-object-method">Generator as an object method</h3>
+<pre><code>class Foo {
+  *generator () {
+    yield 1;
+    yield 2;
+    yield 3;
+  }
+}
+
+const f = new Foo ();
+const gen = f.generator();
+
+console.log(gen.next()); // { value: 1, done: false }
+console.log(gen.next()); // { value: 2, done: false }
+console.log(gen.next()); // { value: 3, done: false }
+console.log(gen.next()); // { value: undefined, done: true }</code></pre>
+<h3 id="generator-as-a-computed-property">Generator as a computed property</h3>
+<pre><code>class Foo {
+  *[Symbol.iterator] () {
+    yield 1;
+    yield 2;
+  }
+}
+
+const SomeObj = {
+  *[Symbol.iterator] () {
+    yield &#39;a&#39;;
+    yield &#39;b&#39;;
+  }
+}
+
+console.log(Array.from(new Foo)); // [ 1, 2 ]
+console.log(Array.from(SomeObj)); // [ &#39;a&#39;, &#39;b&#39; ]</code></pre>
+<h3 id="generators-are-not-constructable">Generators are not constructable</h3>
+<pre><code>function* f() {}
+var obj = new f; // throws &quot;TypeError: f is not a constructor</code></pre>
+<h3 id="generator-defined-in-an-expression">Generator defined in an expression</h3>
+<pre><code>const foo = function* () {
+  yield 10;
+  yield 20;
+};
+
+const bar = foo();
+console.log(bar.next()); // {value: 10, done: false}</code></pre>
+<h3 id="generator-example">Generator example</h3>
+<pre><code>function* powers(n){
+     //endless loop to generate
+     for(let current =n;; current *= n){
+         yield current;
+     }
+}
+
+for(let power of powers(2)){
+     //controlling generator
+     if(power &gt; 32) break;
+     console.log(power)
+           //2
+          //4
+         //8
+        //16
+       //32
+}</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-generator-function-definitions">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-generator-function-definitions</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>function*</code></p>
+<p>39</p>
+<p>13</p>
+<p>26</p>
+<p>No</p>
+<p>26</p>
+<p>10</p>
+<p>39</p>
+<p>39</p>
+<p>26</p>
+<p>26</p>
+<p>10</p>
+<p>4.0</p>
+<p><code>IteratorResult_object</code></p>
+<p>49</p>
+<p>13</p>
+<p>29</p>
+<p>No</p>
+<p>36</p>
+<p>10</p>
+<p>49</p>
+<p>49</p>
+<p>29</p>
+<p>36</p>
+<p>10</p>
+<p>5.0</p>
+<p><code>not_constructable_with_new</code></p>
+<p>50</p>
+<p>13</p>
+<p>43</p>
+<p>No</p>
+<p>37</p>
+<p>10</p>
+<p>50</p>
+<p>50</p>
+<p>43</p>
+<p>37</p>
+<p>10</p>
+<p>5.0</p>
+<p><code>trailing_comma_in_parameters</code></p>
+<p>58</p>
+<p>14</p>
+<p>52</p>
+<p>No</p>
+<p>45</p>
+<p>10</p>
+<p>58</p>
+<p>58</p>
+<p>52</p>
+<p>43</p>
+<p>10</p>
+<p>7.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../operators/function*"><code>function*</code></a> expression</li>
+<li><a href="../global_objects/generatorfunction"><code>GeneratorFunction</code></a> object</li>
+<li><a href="../iteration_protocols">Iteration protocols</a></li>
+<li><a href="../operators/yield"><code>yield</code></a></li>
+<li><a href="../operators/yield*"><code>yield*</code></a></li>
+<li><a href="../global_objects/function"><code>Function</code></a> object</li>
+<li><a href="function"><code>function</code></a> declaration</li>
+<li><a href="../operators/function"><code>function</code></a> expression</li>
+<li><a href="../functions">Functions and function scope</a></li>
+<li>Other web resources:
+<ul>
+<li><a href="https://facebook.github.io/regenerator/">Regenerator</a> an ES2015 generator compiler to ES5</li>
+<li><a href="https://www.youtube.com/watch?v=qbKWsbJ76-s">Forbes Lindesay: Promises and Generators: control flow utopia – JSConf EU 2013</a></li>
+<li><a href="https://github.com/mozilla/task.js">Task.js</a></li>
+<li><a href="https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/async%20%26%20performance/ch4.md#iterating-generators-asynchronously">Iterating generators asynchronously</a></li>
+</ul></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*</a></p>
+</body>
+</html>

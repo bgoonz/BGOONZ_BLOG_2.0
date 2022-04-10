@@ -1,8 +1,10 @@
-# Symbol.iterator
+Symbol.iterator
+===============
 
 The well-known `Symbol.iterator` symbol specifies the default iterator for an object. Used by [`for...of`](../../statements/for...of).
 
-## Description
+Description
+-----------
 
 Whenever an object needs to be iterated (such as at the beginning of a `for..of` loop), its `@@iterator` method is called with no arguments, and the returned **iterator** is used to obtain the values to be iterated.
 
@@ -30,7 +32,8 @@ Configurable
 
 no
 
-## Examples
+Examples
+--------
 
 ### User-defined iterables
 
@@ -66,18 +69,17 @@ Or iterables can be defined directly inside a class or object using a [computed 
 
 ### Non-well-formed iterables
 
-If an iterable's `@@iterator` method does not return an iterator object, then it is a non-well-formed iterable. Using it as such is likely to result in runtime exceptions or buggy behavior:
+If an iterable’s `@@iterator` method does not return an iterator object, then it is a non-well-formed iterable. Using it as such is likely to result in runtime exceptions or buggy behavior:
 
     var nonWellFormedIterable = {}
     nonWellFormedIterable[Symbol.iterator] = () => 1
     [...nonWellFormedIterable] // TypeError: [] is not a function
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-symbol.iterator">ECMAScript (ECMA-262) 
-<br/>
-
-<span class="small">The definition of 'Symbol.iterator' in that specification.</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript (ECMA-262)<br />
+</p><span class="small">The definition of ‘Symbol.iterator’ in that specification.</span></td></tr></tbody></table>
 
 `iterator`
 
@@ -105,7 +107,8 @@ No
 
 4.0
 
-## See also
+See also
+--------
 
 -   [Iteration protocols](../../iteration_protocols)
 -   [`Array.prototype[@@iterator]()`](../array/@@iterator)
@@ -114,6 +117,5 @@ No
 -   [`Map.prototype[@@iterator]()`](../map/@@iterator)
 -   [`Set.prototype[@@iterator]()`](../set/@@iterator)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/iterator" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/iterator</a>

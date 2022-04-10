@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>abs</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="math.abs">Math.abs()</h1>
+<p>The <code>Math.abs()</code> function returns the absolute value of a number. That is, it returns <code>x</code> if <code>x</code> is positive or zero, and the negation of <code>x</code> if <code>x</code> is negative.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>Math.abs(x)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>x</code><br />
+A number.</p>
+<h3 id="return-value">Return value</h3>
+<p>The absolute value of the given number.</p>
+<h2 id="description">Description</h2>
+<p>Because <code>abs()</code> is a static method of <code>Math</code>, you always use it as <code>Math.abs()</code>, rather than as a method of a <code>Math</code> object you created (<code>Math</code> is not a constructor).</p>
+<h2 id="examples">Examples</h2>
+<h3 id="behavior-of-math.abs">Behavior of Math.abs()</h3>
+<p>Passing an empty object, an array with more than one member, a non-numeric string or <a href="../undefined"><code>undefined</code></a>/empty variable returns <a href="../nan"><code>NaN</code></a>. Passing <a href="../null"><code>null</code></a>, an empty string or an empty array returns 0.</p>
+<pre><code>Math.abs(&#39;-1&#39;);     // 1
+Math.abs(-2);       // 2
+Math.abs(null);     // 0
+Math.abs(&#39;&#39;);       // 0
+Math.abs([]);       // 0
+Math.abs([2]);      // 2
+Math.abs([1,2]);    // NaN
+Math.abs({});       // NaN
+Math.abs(&#39;string&#39;); // NaN
+Math.abs();         // NaN</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-math.abs">ECMAScript (ECMA-262) <br/></p>
+<span class="small">The definition of ‘Math.abs’ in that specification.</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>abs</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="ceil"><code>Math.ceil()</code></a></li>
+<li><a href="floor"><code>Math.floor()</code></a></li>
+<li><a href="round"><code>Math.round()</code></a></li>
+<li><a href="sign"><code>Math.sign()</code></a></li>
+<li><a href="trunc"><code>Math.trunc()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs</a></p>
+</body>
+</html>

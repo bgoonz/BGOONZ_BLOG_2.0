@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>precision_range</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="rangeerror-precision-is-out-of-range">RangeError: precision is out of range</h1>
+<p>The JavaScript exception “precision is out of range” occurs when a number that’s outside of the range of 0 and 20 (or 21) was passed into <code>toFixed</code> or <code>toPrecision</code>.</p>
+<h2 id="message">Message</h2>
+<pre><code>RangeError: The number of fractional digits is out of range (Edge)
+RangeError: The precision is out of range (Edge)
+RangeError: precision {0} out of range (Firefox)
+RangeError: toExponential() argument must be between 0 and 20 (Chrome)
+RangeError: toFixed() digits argument must be between 0 and 20 (Chrome)
+RangeError: toPrecision() argument must be between 1 and 21 (Chrome)</code></pre>
+<h2 id="error-type">Error type</h2>
+<p><a href="../global_objects/rangeerror"><code>RangeError</code></a></p>
+<h2 id="what-went-wrong">What went wrong?</h2>
+<p>There was an out of range precision argument in one of these methods:</p>
+<ul>
+<li><a href="../global_objects/number/toexponential"><code>Number.prototype.toExponential()</code></a></li>
+<li><a href="../global_objects/number/tofixed"><code>Number.prototype.toFixed()</code></a></li>
+<li><a href="../global_objects/number/toprecision"><code>Number.prototype.toPrecision()</code></a></li>
+</ul>
+<p>The allowed range for these methods is usually between 0 and 20 (or 21). However, the ECMAScript specification allows to extend this range.</p>
+<table>
+<thead>
+<tr class="header">
+<th>
+Method
+</th>
+<th>
+Firefox (SpiderMonkey)
+</th>
+<th>
+Chrome, Opera (V8)
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="../global_objects/number/toexponential"><code>Number.prototype.toExponential()</code></a>
+</td>
+<td>
+0 to 100
+</td>
+<td>
+0 to 20
+</td>
+</tr>
+<tr class="even">
+<td>
+<a href="../global_objects/number/tofixed"><code>Number.prototype.toFixed()</code></a>
+</td>
+<td>
+-20 to 100
+</td>
+<td>
+0 to 20
+</td>
+</tr>
+<tr class="odd">
+<td>
+<a href="../global_objects/number/toprecision"><code>Number.prototype.toPrecision()</code></a>
+</td>
+<td>
+1 to 100
+</td>
+<td>
+1 to 21
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="examples">Examples</h2>
+<h3 id="invalid-cases">Invalid cases</h3>
+<pre><code>77.1234.toExponential(-1);  // RangeError
+77.1234.toExponential(101); // RangeError
+
+2.34.toFixed(-100);         // RangeError
+2.34.toFixed(1001);         // RangeError
+
+1234.5.toPrecision(-1);     // RangeError
+1234.5.toPrecision(101);    // RangeError</code></pre>
+<h3 id="valid-cases">Valid cases</h3>
+<pre><code>77.1234.toExponential(4); // 7.7123e+1
+77.1234.toExponential(2); // 7.71e+1
+
+2.34.toFixed(1); // 2.3
+2.35.toFixed(1); // 2.4 (note that it rounds up in this case)
+
+5.123456.toPrecision(5); // 5.1235
+5.123456.toPrecision(2); // 5.1
+5.123456.toPrecision(1); // 5</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../global_objects/number/toexponential"><code>Number.prototype.toExponential()</code></a></li>
+<li><a href="../global_objects/number/tofixed"><code>Number.prototype.toFixed()</code></a></li>
+<li><a href="../global_objects/number/toprecision"><code>Number.prototype.toPrecision()</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Precision_range" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Precision_range</a></p>
+</body>
+</html>

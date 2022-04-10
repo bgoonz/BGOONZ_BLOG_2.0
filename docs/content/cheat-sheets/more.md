@@ -1,3 +1,4 @@
-# To show <file> beginning at line number 5:
+To show beginning at line number 5:
+===================================
 
-more +5 <file>
+more +5

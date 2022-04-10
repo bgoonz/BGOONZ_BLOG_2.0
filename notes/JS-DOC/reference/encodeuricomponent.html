@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>encodeuricomponent</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="encodeuricomponent">encodeURIComponent()</h1>
+<p>The <code>encodeURIComponent()</code> function encodes a <a href="https://developer.mozilla.org/en-US/docs/Glossary/URI">URI</a> by replacing each instance of certain characters by one, two, three, or four escape sequences representing the <a href="https://developer.mozilla.org/en-US/docs/Glossary/UTF-8">UTF-8</a> encoding of the character (will only be four escape sequences for characters composed of two “surrogate” characters).</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>encodeURIComponent(str);</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>str</code><br />
+String. A component of a URI.</p>
+<h3 id="return-value">Return value</h3>
+<p>A new string representing the provided string encoded as a URI component.</p>
+<h2 id="description">Description</h2>
+<p><code>encodeURIComponent()</code> escapes all characters <strong>except</strong>:</p>
+<pre><code>Not Escaped:
+
+    A-Z a-z 0-9 - _ . ! ~ * &#39; ( )</code></pre>
+<p><code>encodeURIComponent()</code> differs from <code>encodeURI</code> as follows:</p>
+<pre><code>var set1 = &quot;;,/?:@&amp;=+$&quot;;  // Reserved Characters
+var set2 = &quot;-_.!~*&#39;()&quot;;   // Unescaped Characters
+var set3 = &quot;#&quot;;           // Number Sign
+var set4 = &quot;ABC abc 123&quot;; // Alphanumeric Characters + Space
+
+console.log(encodeURI(set1)); // ;,/?:@&amp;=+$
+console.log(encodeURI(set2)); // -_.!~*&#39;()
+console.log(encodeURI(set3)); // #
+console.log(encodeURI(set4)); // ABC%20abc%20123 (the space gets encoded as %20)
+
+console.log(encodeURIComponent(set1)); // %3B%2C%2F%3F%3A%40%26%3D%2B%24
+console.log(encodeURIComponent(set2)); // -_.!~*&#39;()
+console.log(encodeURIComponent(set3)); // %23
+console.log(encodeURIComponent(set4)); // ABC%20abc%20123 (the space gets encoded as %20)</code></pre>
+<p>Note that a <a href="urierror"><code>URIError</code></a> will be thrown if one attempts to encode a surrogate which is not part of a high-low pair, e.g.,</p>
+<pre><code>// high-low pair ok
+console.log(encodeURIComponent(&#39;\uD800\uDFFF&#39;));
+
+// lone high surrogate throws &quot;URIError: malformed URI sequence&quot;
+console.log(encodeURIComponent(&#39;\uD800&#39;));
+
+// lone low surrogate throws &quot;URIError: malformed URI sequence&quot;
+console.log(encodeURIComponent(&#39;\uDFFF&#39;));</code></pre>
+<p>Use <code>encodeURIComponent()</code> on user-entered fields from forms <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST"><code>POST</code></a>’d to the server. This will encode <code>&amp;</code> symbols that may inadvertently be generated during data entry for special HTML entities or other characters that require encoding/decoding.</p>
+<p>For example, if a user writes <code>Jack &amp; Jill</code>, the text may get encoded as <code>Jack &amp;amp; Jill</code>. Without <code>encodeURIComponent()</code> the ampersand could be interpretted on the server as the start of a new field and jeopardize the integrity of the data.</p>
+<p>For <a href="https://www.whatwg.org/specs/web-apps/current-work/multipage/association-of-controls-and-forms.html#application/x-www-form-urlencoded-encoding-algorithm"><code>application/x-www-form-urlencoded</code></a>, spaces are to be replaced by <code>+</code>, so one may wish to follow a <code>encodeURIComponent()</code> replacement with an additional replacement of <code>%20</code> with <code>+</code>.</p>
+<p>To be more stringent in adhering to <a href="https://datatracker.ietf.org/doc/html/rfc3986">RFC 3986</a> (which reserves !, ’, (, ), and *), even though these characters have no formalized URI delimiting uses, the following can be safely used:</p>
+<pre><code>function fixedEncodeURIComponent(str) {
+  return encodeURIComponent(str).replace(/[!&#39;()*]/g, function(c) {
+    return &#39;%&#39; + c.charCodeAt(0).toString(16);
+  });
+}</code></pre>
+<h2 id="examples">Examples</h2>
+<h3 id="encoding-for-content-disposition-and-link-headers">Encoding for Content-Disposition and Link headers</h3>
+<p>The following example provides the special encoding required within UTF-8 <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition"><code>Content-Disposition</code></a> and <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Link"><code>Link</code></a> server response header parameters (e.g., UTF-8 filenames):</p>
+<pre><code>var fileName = &#39;my file(2).txt&#39;;
+var header = &quot;Content-Disposition: attachment; filename*=UTF-8&#39;&#39;&quot;
+             + encodeRFC5987ValueChars(fileName);
+
+console.log(header);
+// logs &quot;Content-Disposition: attachment; filename*=UTF-8&#39;&#39;my%20file%282%29.txt&quot;
+
+function encodeRFC5987ValueChars(str) {
+    return encodeURIComponent(str).
+        // Note that although RFC3986 reserves &quot;!&quot;, RFC5987 does not,
+        // so we do not need to escape it
+        replace(/[&#39;()]/g, escape). // i.e., %27 %28 %29
+        replace(/\*/g, &#39;%2A&#39;).
+            // The following are not required for percent-encoding per RFC5987,
+            // so we can allow for a little better readability over the wire: |`^
+            replace(/%(?:7C|60|5E)/g, unescape);
+}
+
+// here is an alternative to the above function
+function encodeRFC5987ValueChars2(str) {
+  return encodeURIComponent(str).
+    // Note that although RFC3986 reserves &quot;!&quot;, RFC5987 does not,
+    // so we do not need to escape it
+    replace(/[&#39;()*]/g, c =&gt; &quot;%&quot; + c.charCodeAt(0).toString(16)). // i.e., %27 %28 %29 %2a (Note that valid encoding of &quot;*&quot; is %2A
+                                                                 // which necessitates calling toUpperCase() to properly encode)
+    // The following are not required for percent-encoding per RFC5987,
+    // so we can allow for a little better readability over the wire: |`^
+    replace(/%(7C|60|5E)/g, (str, hex) =&gt; String.fromCharCode(parseInt(hex, 16)));
+}</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-encodeuricomponent-uricomponent">ECMAScript (ECMA-262) <br/></p>
+<span class="small">The definition of ‘encodeURIComponent’ in that specification.</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>encodeURIComponent</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>5.5</p>
+<p>7</p>
+<p>1.1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="decodeuri"><code>decodeURI</code></a></li>
+<li><a href="encodeuri"><code>encodeURI</code></a></li>
+<li><a href="decodeuricomponent"><code>decodeURIComponent</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent</a></p>
+</body>
+</html>

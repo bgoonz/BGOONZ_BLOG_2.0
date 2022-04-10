@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Pug</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Pug</h1>
+</header>
+<h2 id="pug">Pug</h2>
+<h3 id="basic-document">Basic document</h3>
+<pre class="jade"><code>doctype html
+html(lang=&#39;en&#39;)
+  h1.class#id(name=&#39;hi&#39;)
+    | This is some text, hello there,
+    = name
+
+  - javascript()</code></pre>
+<h3 id="elements">Elements</h3>
+<pre class="jade"><code>div
+  | Just a div</code></pre>
+<pre class="jade"><code>.search
+  | A div, with class &#39;search&#39;</code></pre>
+<pre class="jade"><code>h1 A heading with text</code></pre>
+<pre class="jade"><code>h1= page.title</code></pre>
+<pre class="jade"><code>div.class
+div.class1.class2
+h1.header</code></pre>
+<h3 id="attributes">Attributes</h3>
+<pre class="jade"><code>input(type=&#39;text&#39; name=&#39;q&#39; autofocus)</code></pre>
+<pre class="jade"><code>- var authenticated = true
+body(class=authenticated ? &#39;authed&#39; : &#39;anon&#39;)</code></pre>
+<p>See: <a href="https://pugjs.org/language/attributes.html">Attributes</a></p>
+<h3 id="comments">Comments</h3>
+<pre class="jade"><code>// This comment will appear in the HTML</code></pre>
+<pre class="jade"><code>//- This is a silent comment</code></pre>
+<pre class="jade"><code>//-
+  Nesting inside a comment creates
+  a comment block</code></pre>
+<p>See: <a href="https://pugjs.org/language/attributes.html">Comments</a></p>
+<h3 id="iteration">Iteration</h3>
+<pre class="jade"><code>ul
+  each user in users
+    li= user</code></pre>
+<h3 id="layouts">Layouts</h3>
+<pre class="jade"><code>//- page.pug
+extends layout.pug
+
+block title
+  | hello
+
+block content
+  | hello</code></pre>
+<pre class="jade"><code>//- layout.pug
+title
+  block title
+body
+  block content</code></pre>
+<h3 id="includes-partials">Includes (partials)</h3>
+<pre class="jade"><code>include ./includes/head.pug</code></pre>
+<pre class="jade"><code>include:markdown article.md</code></pre>
+<p>See: <a href="https://pugjs.org/language/includes.html">Includes</a></p>
+<h3 id="multiline-text">Multiline text</h3>
+<pre class="jade"><code>p.
+  This is text that doesn&#39;t need to
+  be prefixed by pipes.</code></pre>
+<p>{: data-line=“1”}</p>
+<pre class="jade"><code>script.
+  // It&#39;s great for raw
+  // JavaScript and stuff
+  alert(&#39;hello&#39;)</code></pre>
+<p>{: data-line=“1”}</p>
+<h3 id="conditionals">Conditionals</h3>
+<pre class="jade"><code>if authenticated
+  a(href=&#39;/logout&#39;) Sign out
+else
+  a(href=&#39;/login&#39;) Sign in</code></pre>
+<p>{: data-line=“1,3”}</p>
+<p>See: <a href="https://pugjs.org/language/conditionals.html">Conditionals</a></p>
+<h2 id="mixins">Mixins</h2>
+<h3 id="mixins-1">Mixins</h3>
+<pre class="jade"><code>mixin list
+  ul
+    ···</code></pre>
+<p>{: data-line=“1”}</p>
+<pre class="jade"><code>+list</code></pre>
+<p>Mixins allow you to create reusable code blocks. See: <a href="https://pugjs.org/language/mixins.html">Mixins</a></p>
+<h3 id="mixin-attributes">Mixin attributes</h3>
+<pre class="jade"><code>mixin pet(name)
+  span.pet= name</code></pre>
+<p>{: data-line=“1”}</p>
+<pre class="jade"><code>+pet(&#39;cat&#39;)</code></pre>
+<p>See: <a href="https://pugjs.org/language/mixins.html#mixin-attributes">Mixin attributes</a></p>
+<h3 id="mixin-blocks">Mixin blocks</h3>
+<pre class="jade"><code>mixin article(title)
+  article
+    h2.title= title
+    block</code></pre>
+<p>{: data-line=“1,4”}</p>
+<pre class="jade"><code>+article(&#39;hello there&#39;)
+  p Content goes here</code></pre>
+<p>See: <a href="https://pugjs.org/language/mixins.html#mixin-blocks">Mixin blocks</a></p>
+</body>
+</html>

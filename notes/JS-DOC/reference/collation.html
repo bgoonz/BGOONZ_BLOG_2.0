@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>collation</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="intl.locale.prototype.collation">Intl.Locale.prototype.collation</h1>
+<p>The <code>Intl.Locale.prototype.collation</code> property is an accessor property that returns the <a href="https://www.unicode.org/reports/tr35/tr35-collation.html#CLDR_Collation">collation type</a> for the <code>Locale</code>, which is used to order strings according to the locale’s rules.</p>
+<h2 id="description">Description</h2>
+<p>Collation is the process of ordering strings of characters. It is used whenever strings must be sorted and placed into a certain order, from search query results to ordering records in a database. While the idea of placing strings in order might seem trivial, the idea of order can vary from region to region and language to language. The <code>collation</code> property helps to make it easier for JavaScript programmers to access the collation type used by a particular locale.</p>
+<p>Below is a table with the available collation types, taken from the <a href="https://github.com/unicode-org/cldr/blob/2dd06669d833823e26872f249aa304bc9d9d2a90/common/bcp47/collation.xml">Unicode collation specification</a>.</p>
+<h3 id="valid-collation-types">Valid collation types</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>
+Collation Type
+</th>
+<th>
+Description
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+big5han
+</td>
+<td>
+Pinyin ordering for Latin, big5 charset ordering for CJK characters (used in Chinese)
+</td>
+</tr>
+<tr class="even">
+<td>
+compat
+</td>
+<td>
+A previous version of the ordering, for compatibility
+</td>
+</tr>
+<tr class="odd">
+<td>
+dict
+</td>
+<td>
+Dictionary style ordering (such as in Sinhala)
+</td>
+</tr>
+<tr class="even">
+<td>
+<div class="notecard warning">
+<p>
+<strong>Warning:</strong> The <code>direct</code> collation type has been deprected. Do not use.
+</p>
+</div>
+<p>
+direct
+</p>
+</td>
+<td>
+Binary code point order (used in Hindi)
+</td>
+</tr>
+<tr class="odd">
+<td>
+ducet
+</td>
+<td>
+The default Unicode collation element table order
+</td>
+</tr>
+<tr class="even">
+<td>
+emoji
+</td>
+<td>
+Recommended ordering for emoji characters
+</td>
+</tr>
+<tr class="odd">
+<td>
+eor
+</td>
+<td>
+European ordering rules
+</td>
+</tr>
+<tr class="even">
+<td>
+gb2312
+</td>
+<td>
+Pinyin ordering for Latin, gb2312han charset ordering for CJK characters (used in Chinese)
+</td>
+</tr>
+<tr class="odd">
+<td>
+phonebk
+</td>
+<td>
+Phonebook style ordering (such as in German)
+</td>
+</tr>
+<tr class="even">
+<td>
+phonetic
+</td>
+<td>
+Phonetic ordering (sorting based on pronunciation)
+</td>
+</tr>
+<tr class="odd">
+<td>
+pinyin
+</td>
+<td>
+Pinyin ordering for Latin and for CJK characters (used in Chinese)
+</td>
+</tr>
+<tr class="even">
+<td>
+reformed
+</td>
+<td>
+Reformed ordering (such as in Swedish)
+</td>
+</tr>
+<tr class="odd">
+<td>
+search
+</td>
+<td>
+Special collation type for string search
+</td>
+</tr>
+<tr class="even">
+<td>
+searchjl
+</td>
+<td>
+Special collation type for Korean initial consonant search
+</td>
+</tr>
+<tr class="odd">
+<td>
+standard
+</td>
+<td>
+Default ordering for each language
+</td>
+</tr>
+<tr class="even">
+<td>
+stroke
+</td>
+<td>
+Pinyin ordering for Latin, stroke order for CJK characters (used in Chinese)
+</td>
+</tr>
+<tr class="odd">
+<td>
+trad
+</td>
+<td>
+Traditional style ordering (such as in Spanish)
+</td>
+</tr>
+<tr class="even">
+<td>
+unihan
+</td>
+<td>
+Pinyin ordering for Latin, Unihan radical-stroke ordering for CJK characters (used in Chinese)
+</td>
+</tr>
+<tr class="odd">
+<td>
+zhuyin
+</td>
+<td>
+<p>
+Pinyin ordering for Latin, zhuyin order for Bopomofo and CJK characters (used in Chinese)
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="examples">Examples</h2>
+<p>Like other locale subtags, the collation type can be added to the <a href="../locale"><code>Intl.Locale</code></a> object via the locale string, or a configuration object argument to the constructor.</p>
+<h3 id="adding-a-collation-type-via-the-locale-string">Adding a collation type via the locale string</h3>
+<p>In the <a href="https://www.unicode.org/reports/tr35/">Unicode locale string spec</a>, collation types are locale key “extension subtags”. These subtags add additional data about the locale, and are added to locale identifiers by using the <code>-u</code> extension. Thus, the collation type can be added to the initial locale identifier string that is passed into the <a href="locale"><code>Locale</code></a> constructor. To add the collation type, first add the <code>-u</code> extension to the string. Next, add the <code>-co</code> extension to indicate that you are adding a collation type. Finally, add the collation to the string.</p>
+<pre><code>let stringColl = new Intl.Locale(&quot;en-Latn-US-u-co-emoji&quot;);
+console.log(stringColl.collation); // Prints &quot;emoji&quot;</code></pre>
+<h3 id="adding-a-collation-type-via-the-configuration-object-argument">Adding a collation type via the configuration object argument</h3>
+<p>The <a href="locale"><code>Intl.Locale</code></a> constructor has an optional configuration object argument, which can contain any of several extension types, including collation types. Set the <code>collation</code> property of the configuration object to your desired collation type, and then pass it into the constructor.</p>
+<pre><code>let configColl = new Intl.Locale(&quot;en-Latn-US&quot;, {collation: &quot;emoji&quot;});
+console.log(configColl.collation); // Prints &quot;emoji&quot;</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.collation">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) <br/></p>
+<span class="small">#sec-Intl.Locale.prototype.collation</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>collation</code></p>
+<p>74</p>
+<p>79</p>
+<p>75</p>
+<p>No</p>
+<p>62</p>
+<p>14</p>
+<p>74</p>
+<p>74</p>
+<p>79</p>
+<p>53</p>
+<p>14</p>
+<p>11.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../locale"><code>Intl.Locale</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/collation" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/collation</a></p>
+</body>
+</html>

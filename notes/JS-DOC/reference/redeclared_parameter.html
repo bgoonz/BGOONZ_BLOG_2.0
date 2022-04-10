@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>redeclared_parameter</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="syntaxerror-redeclaration-of-formal-parameter-x">SyntaxError: redeclaration of formal parameter “x”</h1>
+<p>The JavaScript exception “redeclaration of formal parameter” occurs when the same variable name occurs as a function parameter and is then redeclared using a <a href="../statements/let"><code>let</code></a> assignment in a function body again.</p>
+<h2 id="message">Message</h2>
+<pre><code>SyntaxError: Let/Const redeclaration (Edge)
+SyntaxError: redeclaration of formal parameter &quot;x&quot; (Firefox)
+SyntaxError: Identifier &quot;x&quot; has already been declared (Chrome)</code></pre>
+<h2 id="error-type">Error type</h2>
+<p><a href="../global_objects/syntaxerror"><code>SyntaxError</code></a></p>
+<h2 id="what-went-wrong">What went wrong?</h2>
+<p>The same variable name occurs as a function parameter and is then redeclared using a <a href="../statements/let"><code>let</code></a> assignment in a function body again. Redeclaring the same variable within the same function or block scope using <code>let</code> is not allowed in JavaScript.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="redeclared-argument">Redeclared argument</h3>
+<p>In this case, the variable “arg” redeclares the argument.</p>
+<pre><code>function f(arg) {
+  let arg = &#39;foo&#39;;
+}
+
+// SyntaxError: redeclaration of formal parameter &quot;arg&quot;</code></pre>
+<p>If you want to change the value of “arg” in the function body, you can do so, but you do not need to declare the same variable again. In other words: you can omit the <code>let</code> keyword. If you want to create a new variable, you need to rename it as conflicts with the function parameter already.</p>
+<pre><code>function f(arg) {
+  arg = &#39;foo&#39;;
+}
+
+function f(arg) {
+  let bar = &#39;foo&#39;;
+}</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../statements/let"><code>let</code></a></li>
+<li><a href="../statements/const"><code>const</code></a></li>
+<li><a href="../statements/var"><code>var</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#declarations">Declaring variables</a> in the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">JavaScript Guide</a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Redeclared_parameter" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Redeclared_parameter</a></p>
+</body>
+</html>

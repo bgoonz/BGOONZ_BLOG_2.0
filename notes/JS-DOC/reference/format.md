@@ -1,8 +1,10 @@
-# Intl.DateTimeFormat.prototype.format()
+Intl.DateTimeFormat.prototype.format()
+======================================
 
 The `Intl.DateTimeFormat.prototype.format()` method formats a date according to the locale and formatting options of this [`Intl.DateTimeFormat`](../datetimeformat) object.
 
-## Syntax
+Syntax
+------
 
     format(date)
 
@@ -11,11 +13,13 @@ The `Intl.DateTimeFormat.prototype.format()` method formats a date according to 
 `date`  
 The date to format.
 
-## Description
+Description
+-----------
 
 The `format` getter formats a date into a string according to the locale and formatting options of this [`Intl.DateTimeFormat`](../datetimeformat) object.
 
-## Examples
+Examples
+--------
 
 ### Using format
 
@@ -39,7 +43,7 @@ Use the `format` getter function for formatting all dates in an array. Note that
 
 ### Avoid comparing formatted date values to static values
 
-Most of the time, the formatting returned by `format()` is consistent. However, this might change in the future and isn't guaranteed for all the languages — output variations are by design and allowed by the specification. Most notably, the IE and Edge browsers insert bidirectional control characters around dates, so the output text will flow properly when concatenated with other text.
+Most of the time, the formatting returned by `format()` is consistent. However, this might change in the future and isn’t guaranteed for all the languages — output variations are by design and allowed by the specification. Most notably, the IE and Edge browsers insert bidirectional control characters around dates, so the output text will flow properly when concatenated with other text.
 
 For this reason you cannot expect to be able to compare the results of `format()` to a static value:
 
@@ -59,12 +63,11 @@ For this reason you cannot expect to be able to compare the results of `format()
 
 **Note:** See also this [StackOverflow thread](https://stackoverflow.com/questions/25574963/ies-tolocalestring-has-strange-characters-in-results) for more details and examples.
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-intl.datetimeformat.prototype.format">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
-<br/>
-
-<span class="small">#sec-intl.datetimeformat.prototype.format</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Internationalization API Specification (ECMAScript Internationalization API)<br />
+</p><span class="small">#sec-intl.datetimeformat.prototype.format</span></td></tr></tbody></table>
 
 `format`
 
@@ -92,7 +95,8 @@ For this reason you cannot expect to be able to compare the results of `format()
 
 1.5
 
-## See also
+See also
+--------
 
 -   [`Intl.DateTimeFormat`](../datetimeformat)
 -   [`Date.prototype.toLocaleString()`](../../date/tolocalestring)

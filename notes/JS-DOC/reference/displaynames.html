@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>displaynames</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="intl.displaynames">Intl.DisplayNames</h1>
+<p>The <code>Intl.DisplayNames</code> object enables the consistent translation of language, region and script display names.</p>
+<h2 id="constructor">Constructor</h2>
+<p><a href="displaynames/displaynames"><code>Intl.DisplayNames()</code></a><br />
+Creates a new <code>Intl.DisplayNames</code> object.</p>
+<h2 id="static-methods">Static methods</h2>
+<p><a href="displaynames/supportedlocalesof"><code>Intl.DisplayNames.supportedLocalesOf()</code></a><br />
+Returns an array containing those of the provided locales that are supported without having to fall back to the runtime’s default locale.</p>
+<h2 id="instance-methods">Instance methods</h2>
+<p><a href="displaynames/of"><code>Intl.DisplayNames.prototype.of()</code></a><br />
+This method receives a <code>code</code> and returns a string based on the locale and options provided when instantiating <code>Intl.DisplayNames</code>.</p>
+<p><a href="displaynames/resolvedoptions"><code>Intl.DisplayNames.prototype.resolvedOptions()</code></a><br />
+Returns a new object with properties reflecting the locale and formatting options computed during initialization of the object.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="region-code-display-names">Region Code Display Names</h3>
+<p>To create an <code>Intl.DisplayNames</code> for a locale and get the display name for a region code.</p>
+<pre><code>// Get display names of region in English
+let regionNames = new Intl.DisplayNames([&#39;en&#39;], {type: &#39;region&#39;});
+regionNames.of(&#39;419&#39;); // &quot;Latin America&quot;
+regionNames.of(&#39;BZ&#39;);  // &quot;Belize&quot;
+regionNames.of(&#39;US&#39;);  // &quot;United States&quot;
+regionNames.of(&#39;BA&#39;);  // &quot;Bosnia &amp; Herzegovina&quot;
+regionNames.of(&#39;MM&#39;);  // &quot;Myanmar (Burma)&quot;
+
+// Get display names of region in Traditional Chinese
+regionNames = new Intl.DisplayNames([&#39;zh-Hant&#39;], {type: &#39;region&#39;});
+regionNames.of(&#39;419&#39;; // &quot;拉丁美洲&quot;
+regionNames.of(&#39;BZ&#39;); // &quot;貝里斯&quot;
+regionNames.of(&#39;US&#39;); // &quot;美國&quot;
+regionNames.of(&#39;BA&#39;); // &quot;波士尼亞與赫塞哥維納&quot;
+regionNames.of(&#39;MM&#39;); // &quot;緬甸&quot;</code></pre>
+<h3 id="language-display-names">Language Display Names</h3>
+<p>To create an <code>Intl.DisplayNames</code> for a locale and get the display name for a language-script-region sequence.</p>
+<pre><code>// Get display names of language in English
+let languageNames = new Intl.DisplayNames([&#39;en&#39;], {type: &#39;language&#39;});
+languageNames.of(&#39;fr&#39;);      // &quot;French&quot;
+languageNames.of(&#39;de&#39;);      // &quot;German&quot;
+languageNames.of(&#39;fr-CA&#39;);   // &quot;Canadian French&quot;
+languageNames.of(&#39;zh-Hant&#39;); // &quot;Traditional Chinese&quot;
+languageNames.of(&#39;en-US&#39;);   // &quot;American English&quot;
+languageNames.of(&#39;zh-TW&#39;);   // &quot;Chinese (Taiwan)&quot;]
+
+// Get display names of language in Traditional Chinese
+languageNames = new Intl.DisplayNames([&#39;zh-Hant&#39;], {type: &#39;language&#39;});
+languageNames.of(&#39;fr&#39;); // &quot;法文&quot;
+languageNames.of(&#39;zh&#39;); // &quot;中文&quot;
+languageNames.of(&#39;de&#39;); // &quot;德文&quot;</code></pre>
+<h3 id="script-code-display-names">Script Code Display Names</h3>
+<p>To create an <code>Intl.DisplayNames</code> for a locale and get the display name for a script code.</p>
+<pre><code>// Get display names of script in English
+let scriptNames = new Intl.DisplayNames([&#39;en&#39;], {type: &#39;script&#39;});
+// Get script names
+scriptNames.of(&#39;Latn&#39;); // &quot;Latin&quot;
+scriptNames.of(&#39;Arab&#39;); // &quot;Arabic&quot;
+scriptNames.of(&#39;Kana&#39;); // &quot;Katakana&quot;
+
+// Get display names of script in Traditional Chinese
+scriptNames = new Intl.DisplayNames([&#39;zh-Hant&#39;], {type: &#39;script&#39;});
+scriptNames.of(&#39;Latn&#39;); // &quot;拉丁文&quot;
+scriptNames.of(&#39;Arab&#39;); // &quot;阿拉伯文&quot;
+scriptNames.of(&#39;Kana&#39;); // &quot;片假名&quot;</code></pre>
+<h3 id="currency-code-display-names">Currency Code Display Names</h3>
+<p>To create an <code>Intl.DisplayNames</code> for a locale and get the display name for currency code.</p>
+<pre><code>// Get display names of currency code in English
+let currencyNames = new Intl.DisplayNames([&#39;en&#39;], {type: &#39;currency&#39;});
+// Get currency names
+currencyNames.of(&#39;USD&#39;); // &quot;US Dollar&quot;
+currencyNames.of(&#39;EUR&#39;); // &quot;Euro&quot;
+currencyNames.of(&#39;TWD&#39;); // &quot;New Taiwan Dollar&quot;
+currencyNames.of(&#39;CNY&#39;); // &quot;Chinese Yuan&quot;
+
+// Get display names of currency code in Traditional Chinese
+currencyNames = new Intl.DisplayNames([&#39;zh-Hant&#39;], {type: &#39;currency&#39;});
+currencyNames.of(&#39;USD&#39;); // &quot;美元&quot;
+currencyNames.of(&#39;EUR&#39;); // &quot;歐元&quot;
+currencyNames.of(&#39;TWD&#39;); // &quot;新台幣&quot;
+currencyNames.of(&#39;CNY&#39;); // &quot;人民幣&quot;</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma402/#intl-displaynames-objects">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) <br/></p>
+<span class="small">#intl-displaynames-objects</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>DisplayNames</code></p>
+<p>81</p>
+<p>81</p>
+<p>86</p>
+<p>No</p>
+<p>68</p>
+<p>14.1</p>
+<p>81</p>
+<p>81</p>
+<p>86</p>
+<p>58</p>
+<p>14.5</p>
+<p>No</p>
+<p><code>DisplayNames</code></p>
+<p>81</p>
+<p>81</p>
+<p>86</p>
+<p>No</p>
+<p>68</p>
+<p>14.1</p>
+<p>81</p>
+<p>81</p>
+<p>86</p>
+<p>58</p>
+<p>14.5</p>
+<p>No</p>
+<p><code>of</code></p>
+<p>81</p>
+<p>81</p>
+<p>86</p>
+<p>No</p>
+<p>68</p>
+<p>14.1</p>
+<p>81</p>
+<p>81</p>
+<p>86</p>
+<p>58</p>
+<p>14.5</p>
+<p>No</p>
+<p><code>resolvedOptions</code></p>
+<p>81</p>
+<p>81</p>
+<p>86</p>
+<p>No</p>
+<p>68</p>
+<p>14.1</p>
+<p>81</p>
+<p>81</p>
+<p>86</p>
+<p>58</p>
+<p>14.5</p>
+<p>No</p>
+<p><code>supportedLocalesOf</code></p>
+<p>81</p>
+<p>81</p>
+<p>86</p>
+<p>No</p>
+<p>68</p>
+<p>14.1</p>
+<p>81</p>
+<p>81</p>
+<p>86</p>
+<p>58</p>
+<p>14.5</p>
+<p>No</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../intl"><code>Intl</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DisplayNames" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DisplayNames</a></p>
+</body>
+</html>

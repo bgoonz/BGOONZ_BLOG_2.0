@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>spread_syntax</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="spread-syntax">Spread syntax (…)</h1>
+<p><strong>Spread syntax</strong> (<code>...</code>) allows an iterable such as an array expression or string to be expanded in places where zero or more arguments (for function calls) or elements (for array literals) are expected, or an object expression to be expanded in places where zero or more key-value pairs (for object literals) are expected.</p>
+<h2 id="description">Description</h2>
+<p>Spread syntax can be used when all elements from an object or array need to be included in a list of some kind.</p>
+<p>In the above example, the defined function takes <code>x</code>, <code>y</code>, and <code>z</code> as arguments and returns the sum of these values. An array value is also defined.</p>
+<p>When we invoke the function, we pass it all the values in the array using the spread syntax and the array name — <code>...numbers</code>.</p>
+<p>If the array contained more than three numbers, e.g. <code>[1, 2, 3, 4]</code>, then it would still work fine, except that all four would be passed, but only the first three would be used unless you added more arguments to the function, e.g.:</p>
+<pre><code>function sum(x, y, z, n) {
+  return x + y + z + n;
+}</code></pre>
+<p>The above example is somewhat rigid; the real value in spread syntax is that it works with the same value, no matter how many elements are contained in the object, array, etc.</p>
+<p>It is commonly used when you want to add a new item to a local data store, or display all stored items plus a new addition. A very simple version of this kind of action could look like so:</p>
+<pre><code>let numberStore = [0, 1, 2];
+let newNumber = 12;
+numberStore = [...numberStore, newNumber];</code></pre>
+<p>In the above example you can rerun the last line as many times as you like, to keep adding an additional 12 to the end of the array.</p>
+<h2 id="syntax">Syntax</h2>
+<p>For function calls:</p>
+<pre><code>myFunction(...iterableObj); // pass all elements of iterableObj as arguments to function myFunction</code></pre>
+<p>For array literals or strings:</p>
+<pre><code>[...iterableObj, &#39;4&#39;, &#39;five&#39;, 6]; // combine two arrays by inserting all elements from iterableObj</code></pre>
+<p>For object literals (new in ECMAScript 2018):</p>
+<pre><code>let objClone = { ...obj }; // pass all key:value pairs from an object</code></pre>
+<h2 id="rest-syntax-parameters">Rest syntax (parameters)</h2>
+<p>Rest syntax looks exactly like spread syntax. In a way, rest syntax is the opposite of spread syntax. Spread syntax “expands” an array into its elements, while rest syntax collects multiple elements and “condenses” them into a single element. See <a href="../functions/rest_parameters">rest parameters</a>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="spread-in-function-calls">Spread in function calls</h3>
+<h4 id="replace-apply">Replace apply()</h4>
+<p>It is common to use <a href="../global_objects/function/apply"><code>Function.prototype.apply()</code></a> in cases where you want to use the elements of an array as arguments to a function.</p>
+<pre><code>function myFunction(x, y, z) { }
+let args = [0, 1, 2];
+myFunction.apply(null, args);</code></pre>
+<p>With spread syntax the above can be written as:</p>
+<pre><code>function myFunction(x, y, z) { }
+let args = [0, 1, 2];
+myFunction(...args);</code></pre>
+<p>Any argument in the argument list can use spread syntax, and the spread syntax can be used multiple times.</p>
+<pre><code>function myFunction(v, w, x, y, z) { }
+let args = [0, 1];
+myFunction(-1, ...args, 2, ...[3]);</code></pre>
+<h4 id="apply-for-new-operator">Apply for new operator</h4>
+<p>When calling a constructor with <a href="new"><code>new</code></a> it’s not possible to <strong>directly</strong> use an array and <code>apply()</code> (<code>apply()</code> does a <code>[[Call]]</code> and not a <code>[[Construct]]</code>). However, an array can be easily used with <code>new</code> thanks to spread syntax:</p>
+<pre><code>let dateFields = [1970, 0, 1];  // 1 Jan 1970
+let d = new Date(...dateFields);</code></pre>
+<p>To use <code>new</code> with an array of parameters without spread syntax, you would have to do it <strong>indirectly</strong> through partial application:</p>
+<pre><code>function applyAndNew(constructor, args) {
+   function partial () {
+      return constructor.apply(this, args);
+   };
+   if (typeof constructor.prototype === &quot;object&quot;) {
+      partial.prototype = Object.create(constructor.prototype);
+   }
+   return partial;
+}
+
+function myConstructor () {
+   console.log(&quot;arguments.length: &quot; + arguments.length);
+   console.log(arguments);
+   this.prop1=&quot;val1&quot;;
+   this.prop2=&quot;val2&quot;;
+};
+
+let myArguments = [&quot;hi&quot;, &quot;how&quot;, &quot;are&quot;, &quot;you&quot;, &quot;mr&quot;, null];
+let myConstructorWithArguments = applyAndNew(myConstructor, myArguments);
+
+console.log(new myConstructorWithArguments);
+//  (internal log of myConstructor):           arguments.length: 6
+//  (internal log of myConstructor):           [&quot;hi&quot;, &quot;how&quot;, &quot;are&quot;, &quot;you&quot;, &quot;mr&quot;, null]
+//  (log of &quot;new myConstructorWithArguments&quot;): {prop1: &quot;val1&quot;, prop2: &quot;val2&quot;}</code></pre>
+<h3 id="spread-in-array-literals">Spread in array literals</h3>
+<h4 id="a-more-powerful-array-literal">A more powerful array literal</h4>
+<p>Without spread syntax, to create a new array using an existing array as one part of it, the array literal syntax is no longer sufficient and imperative code must be used instead using a combination of <a href="../global_objects/array/push"><code>push()</code></a>, <a href="../global_objects/array/splice"><code>splice()</code></a>, <a href="../global_objects/array/concat"><code>concat()</code></a>, etc. With spread syntax this becomes much more succinct:</p>
+<pre><code>let parts = [&#39;shoulders&#39;, &#39;knees&#39;];
+let lyrics = [&#39;head&#39;, ...parts, &#39;and&#39;, &#39;toes&#39;];
+//  [&quot;head&quot;, &quot;shoulders&quot;, &quot;knees&quot;, &quot;and&quot;, &quot;toes&quot;]</code></pre>
+<p>Just like spread for argument lists, <code>...</code> can be used anywhere in the array literal, and may be used more than once.</p>
+<h4 id="copy-an-array">Copy an array</h4>
+<pre><code>let arr = [1, 2, 3];
+let arr2 = [...arr]; // like arr.slice()
+
+arr2.push(4);
+//  arr2 becomes [1, 2, 3, 4]
+//  arr remains unaffected</code></pre>
+<p><strong>Note:</strong> Spread syntax effectively goes one level deep while copying an array. Therefore, it may be unsuitable for copying multidimensional arrays, as the following example shows. (The same is true with <a href="../global_objects/object/assign"><code>Object.assign()</code></a> and spread syntax.)</p>
+<pre><code>let a = [[1], [2], [3]];
+let b = [...a];
+
+b.shift().shift();
+//  1
+
+//  Oh no!  Now array &#39;a&#39; is affected as well:
+a
+//  [[], [2], [3]]</code></pre>
+<h4 id="a-better-way-to-concatenate-arrays">A better way to concatenate arrays</h4>
+<p><a href="../global_objects/array/concat"><code>Array.prototype.concat()</code></a> is often used to concatenate an array to the end of an existing array. Without spread syntax, this is done as:</p>
+<pre><code>let arr1 = [0, 1, 2];
+let arr2 = [3, 4, 5];
+
+//  Append all items from arr2 onto arr1
+arr1 = arr1.concat(arr2);</code></pre>
+<p>With spread syntax this becomes:</p>
+<pre><code>let arr1 = [0, 1, 2];
+let arr2 = [3, 4, 5];
+
+arr1 = [...arr1, ...arr2];
+//  arr1 is now [0, 1, 2, 3, 4, 5]
+// Note: Not to use const otherwise, it will give TypeError (invalid assignment)</code></pre>
+<p><a href="../global_objects/array/unshift"><code>Array.prototype.unshift()</code></a> is often used to insert an array of values at the start of an existing array. Without spread syntax, this is done as:</p>
+<pre><code>let arr1 = [0, 1, 2];
+let arr2 = [3, 4, 5];
+
+//  Prepend all items from arr2 onto arr1
+Array.prototype.unshift.apply(arr1, arr2)
+
+//  arr1 is now [3, 4, 5, 0, 1, 2]</code></pre>
+<p>With spread syntax, this becomes:</p>
+<pre><code>let arr1 = [0, 1, 2];
+let arr2 = [3, 4, 5];
+
+arr1 = [...arr2, ...arr1];
+//  arr1 is now [3, 4, 5, 0, 1, 2]</code></pre>
+<p><strong>Note:</strong> Unlike <code>unshift()</code>, this creates a new <code>arr1</code>, and does not modify the original <code>arr1</code> array in-place.</p>
+<h3 id="spread-in-object-literals">Spread in object literals</h3>
+<p>The <a href="https://github.com/tc39/proposal-object-rest-spread">Rest/Spread Properties for ECMAScript</a> proposal (ES2018) added spread properties to <a href="object_initializer#1"><code>object literals</code></a>. It copies own enumerable properties from a provided object onto a new object.</p>
+<p>Shallow-cloning (excluding prototype) or merging of objects is now possible using a shorter syntax than <a href="../global_objects/object/assign"><code>Object.assign()</code></a>.</p>
+<pre><code>let obj1 = { foo: &#39;bar&#39;, x: 42 };
+let obj2 = { foo: &#39;baz&#39;, y: 13 };
+
+let clonedObj = { ...obj1 };
+// Object { foo: &quot;bar&quot;, x: 42 }
+
+let mergedObj = { ...obj1, ...obj2 };
+// Object { foo: &quot;baz&quot;, x: 42, y: 13 }</code></pre>
+<p>Note that <a href="../global_objects/object/assign"><code>Object.assign()</code></a> triggers <a href="../functions/set"><code>setters</code></a>, whereas spread syntax doesn’t.</p>
+<p>Note that you cannot replace or mimic the <a href="../global_objects/object/assign"><code>Object.assign()</code></a> function:</p>
+<pre><code>let obj1 = { foo: &#39;bar&#39;, x: 42 };
+let obj2 = { foo: &#39;baz&#39;, y: 13 };
+const merge = ( ...objects ) =&gt; ( { ...objects } );
+
+let mergedObj1 = merge (obj1, obj2);
+// Object { 0: { foo: &#39;bar&#39;, x: 42 }, 1: { foo: &#39;baz&#39;, y: 13 } }
+
+let mergedObj2 = merge ({}, obj1, obj2);
+// Object { 0: {}, 1: { foo: &#39;bar&#39;, x: 42 }, 2: { foo: &#39;baz&#39;, y: 13 } }</code></pre>
+<p>In the above example, the spread syntax does not work as one might expect: it spreads an <em>array</em> of arguments into the object literal, due to the rest parameter.</p>
+<h3 id="only-for-iterables">Only for iterables</h3>
+<p>Objects themselves are not iterable, but they become iterable when used in an Array, or with iterating functions such as <code>map()</code>, <code>reduce()</code>, and <code>assign()</code>. When merging 2 objects together with the spread operator, it is assumed another iterating function is used when the merging occurs.</p>
+<p>Spread syntax (other than in the case of spread properties) can be applied only to <a href="../global_objects/symbol/iterator">iterable</a> objects:</p>
+<pre><code>let obj = {&#39;key1&#39;: &#39;value1&#39;};
+let array = [...obj]; // TypeError: obj is not iterable</code></pre>
+<h3 id="spread-with-many-values">Spread with many values</h3>
+<p>When using spread syntax for function calls, be aware of the possibility of exceeding the JavaScript engine’s argument length limit. See <a href="../global_objects/function/apply"><code>apply()</code></a> for more details.</p>
+<h2 id="specifications">Specifications</h2>
+<p><strong>No specification found</strong></p>
+<p>No specification data found for <code>javascript.operators.spread</code>.<br />
+<a href="#on-github">Check for problems with this page</a> or contribute a missing <code>spec_url</code> to <a href="https://github.com/mdn/browser-compat-data">mdn/browser-compat-data</a>. Also make sure the specification is included in <a href="https://github.com/w3c/browser-specs">w3c/browser-specs</a>.</p>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>spread_in_arrays</code></p>
+<p>46</p>
+<p>12</p>
+<p>16</p>
+<p>No</p>
+<p>37</p>
+<p>8</p>
+<p>46</p>
+<p>46</p>
+<p>16</p>
+<p>37</p>
+<p>8</p>
+<p>5.0</p>
+<p><code>spread_in_function_calls</code></p>
+<p>46</p>
+<p>12</p>
+<p>27</p>
+<p>No</p>
+<p>37</p>
+<p>8</p>
+<p>46</p>
+<p>46</p>
+<p>27</p>
+<p>37</p>
+<p>8</p>
+<p>5.0</p>
+<p><code>spread_in_object_literals</code></p>
+<p>60</p>
+<p>79</p>
+<p>55</p>
+<p>No</p>
+<p>47</p>
+<p>11.1</p>
+<p>60</p>
+<p>60</p>
+<p>55</p>
+<p>44</p>
+<p>11.3</p>
+<p>8.2</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../functions/rest_parameters">Rest parameters</a> (also ‘<code>...</code>’)</li>
+<li><a href="../global_objects/function/apply"><code>Function.prototype.apply()</code></a> (also ‘<code>...</code>’)</li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax</a></p>
+</body>
+</html>

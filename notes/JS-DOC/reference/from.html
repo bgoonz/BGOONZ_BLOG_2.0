@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>from</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="array.from">Array.from()</h1>
+<p>The <code>Array.from()</code> static method creates a new, shallow-copied <code>Array</code> instance from an array-like or iterable object.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>// Arrow function
+Array.from(arrayLike, (currentValue) =&gt; { ... } )
+Array.from(arrayLike, (currentValue, index) =&gt; { ... } )
+Array.from(arrayLike, (currentValue, index, array) =&gt; { ... } )
+
+// Mapping function
+Array.from(arrayLike, mapFn)
+Array.from(arrayLike, mapFn, thisArg)
+
+// Inline mapping function
+Array.from(arrayLike, function mapFn(currentValue) { ... })
+Array.from(arrayLike, function mapFn(currentValue, index) { ... })
+Array.from(arrayLike, function mapFn(currentValue, index, array){ ... })
+Array.from(arrayLike, function mapFn(currentValue, index, array) { ... }, thisArg)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>arrayLike</code><br />
+An array-like or iterable object to convert to an array.</p>
+<p><code>mapFn</code> <span class="badge inline optional">Optional</span><br />
+Map function to call on every element of the array.</p>
+<p><code>thisArg</code> <span class="badge inline optional">Optional</span><br />
+Value to use as <code>this</code> when executing <code>mapFn</code>.</p>
+<h3 id="return-value">Return value</h3>
+<p>A new <a href="../array"><code>Array</code></a> instance.</p>
+<h2 id="description">Description</h2>
+<p><code>Array.from()</code> lets you create <code>Array</code>s from:</p>
+<ul>
+<li>array-like objects (objects with a <code>length</code> property and indexed elements); or</li>
+<li><a href="../../iteration_protocols">iterable objects</a> (objects such as <a href="../map"><code>Map</code></a> and <a href="../set"><code>Set</code></a>).</li>
+</ul>
+<p><code>Array.from()</code> has an optional parameter <code>mapFn</code>, which allows you to execute a <a href="map"><code>map()</code></a> function on each element of the array being created.</p>
+<p>More clearly, <code>Array.from(obj, mapFn, thisArg)</code><br />
+has the same result as <code>Array.from(obj).map(mapFn, thisArg)</code>,<br />
+except that it does not create an intermediate array.</p>
+<p><strong>Note:</strong> This is especially important for certain array subclasses, like <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays">typed arrays</a>, since the intermediate array would necessarily have values truncated to fit into the appropriate type.</p>
+<p>The <code>length</code> property of the <code>from()</code> method is <code>1</code>.</p>
+<p>In ES2015, the class syntax allows sub-classing of both built-in and user-defined classes. As a result, static methods such as <code>Array.from()</code> are “inherited” by subclasses of <code>Array</code>, and create new instances <em>of the subclass</em>, not <code>Array</code>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="array-from-a-string">Array from a <code>String</code></h3>
+<pre><code>Array.from(&#39;foo&#39;);
+// [ &quot;f&quot;, &quot;o&quot;, &quot;o&quot; ]</code></pre>
+<h3 id="array-from-a-set">Array from a <code>Set</code></h3>
+<pre><code>const set = new Set([&#39;foo&#39;, &#39;bar&#39;, &#39;baz&#39;, &#39;foo&#39;]);
+Array.from(set);
+// [ &quot;foo&quot;, &quot;bar&quot;, &quot;baz&quot; ]</code></pre>
+<h3 id="array-from-a-map">Array from a <code>Map</code></h3>
+<pre><code>const map = new Map([[1, 2], [2, 4], [4, 8]]);
+Array.from(map);
+// [[1, 2], [2, 4], [4, 8]]
+
+const mapper = new Map([[&#39;1&#39;, &#39;a&#39;], [&#39;2&#39;, &#39;b&#39;]]);
+Array.from(mapper.values());
+// [&#39;a&#39;, &#39;b&#39;];
+
+Array.from(mapper.keys());
+// [&#39;1&#39;, &#39;2&#39;];</code></pre>
+<h3 id="array-from-a-nodelist">Array from a <code>NodeList</code></h3>
+<pre><code>// Create an array based on a property of DOM Elements
+const images = document.getElementsByTagName(&#39;img&#39;);
+const sources = Array.from(images, image =&gt; image.src);
+const insecureSources = sources.filter(link =&gt; link.startsWith(&#39;http://&#39;));</code></pre>
+<h3 id="array-from-an-array-like-object-arguments">Array from an Array-like object (arguments)</h3>
+<pre><code>function f() {
+  return Array.from(arguments);
+}
+
+f(1, 2, 3);
+
+// [ 1, 2, 3 ]</code></pre>
+<h3 id="using-arrow-functions-and-array.from">Using arrow functions and <code>Array.from()</code></h3>
+<pre><code>// Using an arrow function as the map function to
+// manipulate the elements
+Array.from([1, 2, 3], x =&gt; x + x);
+// [2, 4, 6]
+
+// Generate a sequence of numbers
+// Since the array is initialized with `undefined` on each position,
+// the value of `v` below will be `undefined`
+Array.from({length: 5}, (v, i) =&gt; i);
+// [0, 1, 2, 3, 4]</code></pre>
+<h3 id="sequence-generator-range">Sequence generator (range)</h3>
+<pre><code>// Sequence generator function (commonly referred to as &quot;range&quot;, e.g. Clojure, PHP etc)
+const range = (start, stop, step) =&gt; Array.from({ length: (stop - start) / step + 1}, (_, i) =&gt; start + (i * step));
+
+// Generate numbers range 0..4
+range(0, 4, 1);
+// [0, 1, 2, 3, 4]
+
+// Generate numbers range 1..10 with step of 2
+range(1, 10, 2);
+// [1, 3, 5, 7, 9]
+
+// Generate the alphabet using Array.from making use of it being ordered as a sequence
+range(&#39;A&#39;.charCodeAt(0), &#39;Z&#39;.charCodeAt(0), 1).map(x =&gt; String.fromCharCode(x));
+// [&quot;A&quot;, &quot;B&quot;, &quot;C&quot;, &quot;D&quot;, &quot;E&quot;, &quot;F&quot;, &quot;G&quot;, &quot;H&quot;, &quot;I&quot;, &quot;J&quot;, &quot;K&quot;, &quot;L&quot;, &quot;M&quot;, &quot;N&quot;, &quot;O&quot;, &quot;P&quot;, &quot;Q&quot;, &quot;R&quot;, &quot;S&quot;, &quot;T&quot;, &quot;U&quot;, &quot;V&quot;, &quot;W&quot;, &quot;X&quot;, &quot;Y&quot;, &quot;Z&quot;]</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+<th>
+Initial publication
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-array.from">ECMAScript (ECMA-262) <br/></p>
+<span class="small">The definition of ‘Array.from’ in that specification.</span></a>
+</td>
+<td>
+ECMAScript 2015
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>from</code></p>
+<p>45</p>
+<p>12</p>
+<p>32</p>
+<p>No</p>
+<p>32</p>
+<p>9</p>
+<p>45</p>
+<p>45</p>
+<p>32</p>
+<p>32</p>
+<p>9</p>
+<p>5.0</p>
+<h2 id="polyfill">Polyfill</h2>
+<p><code>Array.from()</code> was added to the ECMA-262 standard in the 6<sup>th</sup> Edition (ES2015). As such, it may not be present in other implementations of the standard.</p>
+<p>You can work around this by inserting the following code at the beginning of your scripts, allowing use of <code>Array.from()</code> in implementations that don’t natively support it.</p>
+<p><strong>Note:</strong> This algorithm is exactly as specified in ECMA-262 6<sup>th</sup> Edition (assuming <code>Object</code> and <code>TypeError</code> have their original values and that <code>callback.call()</code> evaluates to the original value of <a href="../function/call"><code>Function.prototype.call()</code></a>).</p>
+<p>In addition, since true iterables cannot be polyfilled, this implementation does not support generic iterables as defined in the 6<sup>th</sup> Edition of ECMA-262.</p>
+<pre><code>// Production steps of ECMA-262, Edition 6, 22.1.2.1
+if (!Array.from) {
+    Array.from = (function () {
+        var symbolIterator;
+        try {
+            symbolIterator = Symbol.iterator
+                ? Symbol.iterator
+                : &#39;Symbol(Symbol.iterator)&#39;;
+        } catch (e) {
+            symbolIterator = &#39;Symbol(Symbol.iterator)&#39;;
+        }
+
+        var toStr = Object.prototype.toString;
+        var isCallable = function (fn) {
+            return (
+                typeof fn === &#39;function&#39; ||
+                toStr.call(fn) === &#39;[object Function]&#39;
+            );
+        };
+        var toInteger = function (value) {
+            var number = Number(value);
+            if (isNaN(number)) return 0;
+            if (number === 0 || !isFinite(number)) return number;
+            return (number &gt; 0 ? 1 : -1) * Math.floor(Math.abs(number));
+        };
+        var maxSafeInteger = Math.pow(2, 53) - 1;
+        var toLength = function (value) {
+            var len = toInteger(value);
+            return Math.min(Math.max(len, 0), maxSafeInteger);
+        };
+
+        var setGetItemHandler = function setGetItemHandler(isIterator, items) {
+            var iterator = isIterator &amp;&amp; items[symbolIterator]();
+            return function getItem(k) {
+                return isIterator ? iterator.next() : items[k];
+            };
+        };
+
+        var getArray = function getArray(
+            T,
+            A,
+            len,
+            getItem,
+            isIterator,
+            mapFn
+        ) {
+            // 16. Let k be 0.
+            var k = 0;
+
+            // 17. Repeat, while k &lt; len… or while iterator is done (also steps a - h)
+            while (k &lt; len || isIterator) {
+                var item = getItem(k);
+                var kValue = isIterator ? item.value : item;
+
+                if (isIterator &amp;&amp; item.done) {
+                    return A;
+                } else {
+                    if (mapFn) {
+                        A[k] =
+                            typeof T === &#39;undefined&#39;
+                                ? mapFn(kValue, k)
+                                : mapFn.call(T, kValue, k);
+                    } else {
+                        A[k] = kValue;
+                    }
+                }
+                k += 1;
+            }
+
+            if (isIterator) {
+                throw new TypeError(
+                    &#39;Array.from: provided arrayLike or iterator has length more then 2 ** 52 - 1&#39;
+                );
+            } else {
+                A.length = len;
+            }
+
+            return A;
+        };
+
+        // The length property of the from method is 1.
+        return function from(arrayLikeOrIterator /*, mapFn, thisArg */) {
+            // 1. Let C be the this value.
+            var C = this;
+
+            // 2. Let items be ToObject(arrayLikeOrIterator).
+            var items = Object(arrayLikeOrIterator);
+            var isIterator = isCallable(items[symbolIterator]);
+
+            // 3. ReturnIfAbrupt(items).
+            if (arrayLikeOrIterator == null &amp;&amp; !isIterator) {
+                throw new TypeError(
+                    &#39;Array.from requires an array-like object or iterator - not null or undefined&#39;
+                );
+            }
+
+            // 4. If mapfn is undefined, then let mapping be false.
+            var mapFn = arguments.length &gt; 1 ? arguments[1] : void undefined;
+            var T;
+            if (typeof mapFn !== &#39;undefined&#39;) {
+                // 5. else
+                // 5. a If IsCallable(mapfn) is false, throw a TypeError exception.
+                if (!isCallable(mapFn)) {
+                    throw new TypeError(
+                        &#39;Array.from: when provided, the second argument must be a function&#39;
+                    );
+                }
+
+                // 5. b. If thisArg was supplied, let T be thisArg; else let T be undefined.
+                if (arguments.length &gt; 2) {
+                    T = arguments[2];
+                }
+            }
+
+            // 10. Let lenValue be Get(items, &quot;length&quot;).
+            // 11. Let len be ToLength(lenValue).
+            var len = toLength(items.length);
+
+            // 13. If IsConstructor(C) is true, then
+            // 13. a. Let A be the result of calling the [[Construct]] internal method
+            // of C with an argument list containing the single item len.
+            // 14. a. Else, Let A be ArrayCreate(len).
+            var A = isCallable(C) ? Object(new C(len)) : new Array(len);
+
+            return getArray(
+                T,
+                A,
+                len,
+                setGetItemHandler(isIterator, items),
+                isIterator,
+                mapFn
+            );
+        };
+    })();
+}</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../array"><code>Array</code></a></li>
+<li><a href="map"><code>Array.prototype.map()</code></a></li>
+<li><a href="../typedarray/from"><code>TypedArray.from()</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from</a></p>
+</body>
+</html>

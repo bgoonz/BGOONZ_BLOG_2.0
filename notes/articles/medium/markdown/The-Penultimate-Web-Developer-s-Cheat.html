@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>The-Penultimate-Web-Developer-s-Cheat</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="the-penultimate-web-developers-cheat-sheet">The Penultimate Web Developer’s Cheat Sheet</h1>
+<p>I am literally just going to combine a fair number of my Cheat Sheets in no particular order.</p>
+<hr />
+<h3 id="the-penultimate-web-developers-cheat-sheet-1">The Penultimate Web Developer’s Cheat Sheet</h3>
+<p>I am literally just going to combine a fair number of my Cheat Sheets in no particular order.</p>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*Cfl2fI-p4Y1XGAkS.png" class="graf-image" />
+</figure>
+<h3 id="html">HTML:</h3>
+<pre><code>&lt;!-- Document Summary --&gt;
+
+&lt;!DOCTYPE html&gt;        &lt;!-- Tells the browser that HTML5 version of HTML to be recognized by the browser --&gt;
+
+&lt;html lang=&quot;en&quot;&gt;&lt;/html&gt;        &lt;!-- The HTML lang attribute is used to identify the language of text content on the web. This information helps search engines return language specific results, --&gt;
+
+&lt;head&gt;&lt;/head&gt;     &lt;!-- Contains Information specific to the page like title, styles and scripts --&gt;
+
+&lt;title&gt;&lt;/title&gt;        &lt;!-- Title for the page that shows up in the browser title bar --&gt;
+
+&lt;body&gt;&lt;/body&gt;     &lt;!-- Content that the user will see --&gt;
+
+&lt;!-- Document Information --&gt;
+
+&lt;base/&gt;        &lt;!-- Usefull for specifying relative links in a document --&gt;
+
+&lt;style&gt;&lt;/style&gt;        &lt;!-- Contains styles for the html document --&gt;
+
+&lt;meta/&gt;        &lt;!-- Contains additional information about the page, author, page description and other hidden page info --&gt;
+
+&lt;script&gt;&lt;/script&gt;         &lt;!-- Contains all scripts internal or external --&gt;
+
+&lt;link/&gt;        &lt;!-- Used to create relationships with external pages and stylesheets --&gt;
+
+&lt;!-- Document Structure --&gt;
+
+&lt;h1&gt;&lt;/h1&gt; ... &lt;h6&gt;&lt;/h6&gt;        &lt;!-- All six levels of heading with 1 being the most promiment and 6 being the least prominent --&gt;
+
+&lt;p&gt;&lt;/p&gt;        &lt;!-- Used to organize paragraph text --&gt;
+
+&lt;div&gt;&lt;/div&gt;       &lt;!-- A generic container used to denote a page section --&gt;
+
+&lt;span&gt;&lt;/span&gt;     &lt;!-- Inline section or block container used for creating inline style elements --&gt;
+
+&lt;br/&gt;          &lt;!-- Creates a line-break --&gt;
+
+&lt;hr&gt;           &lt;!-- Creates a sectional break into HTML --&gt;
+
+&lt;!-- Text Formatting --&gt;
+
+&lt;strong&gt;&lt;/strong&gt; and &lt;b&gt;&lt;/b&gt;     &lt;!-- Makes text contained in the tag as bold --&gt;
+
+&lt;em&gt;&lt;/em&gt; and &lt;i&gt;&lt;/i&gt;     &lt;!-- Alternative way to make the text contained in the tag as italic --&gt;
+
+&lt;strike&gt;&lt;/strike&gt;         &lt;!-- Creates a strike through the text element --&gt;
+
+&lt;pre&gt;&lt;/pre&gt;       &lt;!-- Preformatted monospace text block with some spacing intact --&gt;
+
+&lt;blockquote&gt;&lt;/blockquote&gt;      &lt;!-- Contains long paragraphs of quotations often cited --&gt;
+
+&lt;abbr&gt;&lt;/abbr&gt;     &lt;!-- Contains abbreviations while also making the full form avaialable --&gt;
+
+&lt;address&gt;&lt;/address&gt;       &lt;!-- Used to display contact information --&gt;
+
+&lt;code&gt;&lt;/code&gt;     &lt;!-- Used to display inline code snippets --&gt;
+
+&lt;q&gt;&lt;/q&gt;        &lt;!-- Defines a short inline quotation --&gt;
+
+&lt;sub&gt;&lt;/sub&gt;       &lt;!--  Defines subscripted text --&gt;
+
+&lt;sup&gt;&lt;/sup&gt;       &lt;!-- Defines superscripted text --&gt;
+
+&lt;kbd&gt;&lt;/kbd&gt;       &lt;!-- Specifies text as keyboard input --&gt;
+
+&lt;small&gt;&lt;/small&gt;        &lt;!-- Specifies small text --&gt;
+
+&lt;!-- Links Formatting --&gt;
+
+&lt;a href=&quot;url&quot;&gt;&lt;/a&gt;        &lt;!-- Used to link to external or internal pages of a wbesite --&gt;
+
+&lt;a href=&quot;mailto:email@example.com&quot;&gt;&lt;/a&gt;        &lt;!-- Used to link to an email address --&gt;
+
+&lt;a href=&quot;name&quot;&gt;&lt;/a&gt;       &lt;!-- Used to link to a document element --&gt;
+
+&lt;a href=&quot;#name&quot;&gt;&lt;/a&gt;      &lt;!-- Used to link to specific div element --&gt;
+
+&lt;a href=&quot;tel://####-####-##&quot;&gt;&lt;/a&gt;      &lt;!-- Used to display phone numbers and make them clickable --&gt;
+
+&lt;!-- Image Formatting --&gt;
+
+&lt;img src=&quot;url&quot; alt=&quot;text&quot;&gt;     &lt;!-- Used to display images in a webpage where src=&quot;url&quot; contains the link to the image source and alt=&quot;&quot; contains an alternative text to display when the image is not displayed --&gt;
+
+&lt;!-- List Formatting --&gt;
+
+&lt;ol&gt;&lt;/ol&gt;         &lt;!-- Used to create ordered lists with numbers in the items --&gt;
+
+&lt;ul&gt;&lt;/ul&gt;         &lt;!-- Used to display unordered lists with numbers in the items --&gt;
+
+&lt;li&gt;&lt;/li&gt;         &lt;!-- Contains list items inside ordered and unordered lists --&gt;
+
+&lt;dl&gt;&lt;/dl&gt;         &lt;!-- Contains list item definitions --&gt;
+
+&lt;dt&gt;&lt;/dt&gt;         &lt;!-- Definition of single term inline with body content --&gt;
+
+&lt;dd&gt;&lt;/dd&gt;         &lt;!-- The descrpition of the defined term --&gt;
+
+&lt;!-- Forms Formatting and Attributes --&gt;
+
+&lt;form action=&quot;url&quot;&gt;&lt;/form&gt;     &lt;!-- Form element creates a form and action=&quot;&quot; specifies where the data is to be sent to when the visitor submits the form --&gt;
+
+&lt;!-- Supported attributes --&gt;
+
+method=&quot;somefunction()&quot;        &lt;!-- Contains the type of request (GET, POST... etc) which dictates how to send the data of the form --&gt;
+
+enctype=&quot;&quot;        &lt;!-- Dictates how the data is to be encoded when the data is sent to the web server. --&gt;
+
+autocomplete=&quot;&quot;        &lt;!-- Specifies if the autocomplete functionality is enabled or not --&gt;
+
+novalidate        &lt;!-- Dictates if the form will be validated or not --&gt;
+
+accept-charset=&quot;&quot;         &lt;!-- Identifies the character encoding upon form submission --&gt;
+
+target=&quot;&quot;         &lt;!-- Tell where to display the information upon form submission. Possible values: &#39;_blank&#39;, &#39;_self&#39;, &#39;_parent&#39;, &#39;_top&#39; --&gt;
+
+&lt;fieldset disabled=&quot;disabled&quot;&gt;&lt;/fieldset&gt;      &lt;!-- Identifies the group of all fields in the form --&gt;
+
+&lt;label for=&quot;&quot;&gt;&lt;/label&gt;    &lt;!-- A simple field label telling the user what to type in the field --&gt;
+
+&lt;legend&gt;&lt;/legend&gt;         &lt;!-- The form legend acts as a caption for the fieldset element --&gt;
+
+&lt;input type=&quot;text/email/number/color/date&quot;&gt;    &lt;!-- Input is the input field where the user can input various types of data --&gt;
+
+&lt;!-- Supported attributes --&gt;
+
+name=&quot;&quot;        &lt;!-- Describes the name of the form --&gt;
+
+width=&quot;&quot;          &lt;!-- Specifies the width of an input field --&gt;
+
+value=&quot;&quot;          &lt;!-- Describes the value of the input information field --&gt;
+
+size=&quot;&quot;        &lt;!-- Specifies the input element width in characters --&gt;
+
+maxlength=&quot;&quot;      &lt;!-- Specifies the maximum input character numbers --&gt;
+
+required=&quot;&quot;       &lt;!-- Specifies if the input field is required to fill in before submitting the form --&gt;
+
+step=&quot;&quot;        &lt;!-- Identifies the legal number intervals of the input field --&gt;
+
+&lt;textarea name=&quot;&quot; id=&quot;&quot; cols=&quot;30&quot; rows=&quot;10&quot;&gt;      &lt;!-- Specifies a large input text field for longer messages --&gt;
+
+&lt;/textarea&gt;
+
+&lt;select name=&quot;&quot;&gt;&lt;/select&gt;      &lt;!-- Describes a dropdown box for users to select from variety of choices --&gt;
+
+&lt;!-- Supported attributes --&gt;
+
+name=&quot;&quot;        &lt;!-- The name for a dropdown combination box --&gt;
+
+size=&quot;&quot;        &lt;!-- Specifies the number of available options --&gt;
+
+multiple          &lt;!-- Allows for multiple option selections --&gt;
+
+required          &lt;!-- Requires that a value is selected before submitting the form --&gt;
+
+autofocus         &lt;!-- Specifies that the dropdown automatically comes to focus once the page loads --&gt;
+
+&lt;optgroup&gt;&lt;/optgroup&gt;     &lt;!-- Specifies the entire grouping of available options --&gt;
+
+&lt;option value=&quot;&quot;&gt;&lt;/option&gt;     &lt;!-- Defines one of the avaialble option from the dropdown list --&gt;
+
+&lt;button&gt;&lt;/button&gt;         &lt;!-- A clickable button to submit the form --&gt;
+
+&lt;!-- Tables Formatting --&gt;
+
+&lt;table&gt;&lt;/table&gt;        &lt;!-- Defines and contains all table related content --&gt;
+
+&lt;caption&gt;&lt;/caption&gt;       &lt;!-- A description of what table is and what it contains --&gt;
+
+&lt;thead&gt;&lt;/thead&gt;        &lt;!-- The table headers contain the type of information defined in each column underneath --&gt;
+
+&lt;tbody&gt;&lt;/tbody&gt;        &lt;!-- Contains the tables data or information --&gt;
+
+&lt;tfoot&gt;&lt;/tfoot&gt;        &lt;!-- Defines table footer --&gt;
+
+&lt;tr&gt;&lt;/tr&gt;         &lt;!-- Contains the information to be included in a table row --&gt;
+
+&lt;th&gt;&lt;/th&gt;         &lt;!-- Contains the information to be included in a single table header --&gt;
+
+&lt;td&gt;&lt;/td&gt;         &lt;!-- Contains actual information in a table cell --&gt;
+
+&lt;colgroup&gt;&lt;/colgroup&gt;     &lt;!-- Groups a single or multiple columns for formatting purposes --&gt;
+
+&lt;col&gt;          &lt;!-- Defines a single column of information inside a table --&gt;
+
+&lt;!-- Objects and iFrames --&gt;
+
+&lt;object data=&quot;&quot;&gt;&lt;/object&gt;      &lt;!-- Describes and embed file type including audio, video, PDF&#39;s, images --&gt;
+
+&lt;!-- Supported attributes --&gt;
+
+type=&quot;&quot;        &lt;!-- Describes the type of media embedded --&gt;
+
+height=&quot;&quot;         &lt;!-- Describes the height of the object in pixels --&gt;
+
+width=&quot;&quot;          &lt;!-- Describes the width of the object in pixels --&gt;
+
+usemap=&quot;&quot;         &lt;!-- This is the name of the client-side image map in the object --&gt;
+
+&lt;iframe src=&quot;&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;       &lt;!-- Contains an inline frame that allows to embed external information --&gt;
+
+&lt;embed src=&quot;&quot; type=&quot;&quot;&gt;    &lt;!-- Acts as a container for external application or plug-in --&gt;
+
+src=&quot;&quot;         &lt;!-- The source of the external file you&#39;re embedding --&gt;
+
+width=&quot;&quot;          &lt;!-- Describes the width of the iframe in pixels --&gt;
+
+&lt;!-- HTML5 New Tags --&gt;
+
+&lt;header&gt;&lt;/header&gt;         &lt;!-- Defines the header block for a document or a section --&gt;
+
+&lt;footer&gt;&lt;/footer&gt;         &lt;!-- Defines the footer block for a document or a section --&gt;
+
+&lt;main&gt;&lt;/main&gt;     &lt;!-- Describes the main content of a document --&gt;
+
+&lt;article&gt;&lt;/article&gt;       &lt;!-- Identifies an article inside a document --&gt;
+
+&lt;aside&gt;&lt;/aside&gt;        &lt;!-- Specifies content contained in a document sidebar --&gt;
+
+&lt;section&gt;&lt;/section&gt;       &lt;!-- Defines a section of a document --&gt;
+
+&lt;details&gt;&lt;/details&gt;       &lt;!-- Describes additonal information that user can view or hide --&gt;
+
+&lt;dialog&gt;&lt;/dialog&gt;         &lt;!-- A dialog box or a window --&gt;
+
+&lt;figure&gt;&lt;/figure&gt;         &lt;!-- An independent content block featuring images, diagrams or illustrations --&gt;
+
+&lt;figcaption&gt;&lt;/figcaption&gt;      &lt;!-- Caption that describe a figure --&gt;
+
+&lt;mark&gt;&lt;/mark&gt;     &lt;!-- Displays a portion of highlighted text with in a page content --&gt;
+
+&lt;nav&gt;&lt;/nav&gt;       &lt;!-- Navigation links for the user in a document --&gt;
+
+&lt;menuitem&gt;&lt;/menuitem&gt;     &lt;!-- The specific menu item that a user can raise from a pop up menu --&gt;
+
+&lt;meter&gt;&lt;/meter&gt;        &lt;!-- Describes the scalar measurement with in a known array --&gt;
+
+&lt;progress&gt;&lt;/progress&gt;     &lt;!-- Displays the progress of a task usually a progress bar --&gt;
+
+&lt;rp&gt;&lt;/rp&gt;         &lt;!-- Describes text within the browsers that do not support ruby notations --&gt;
+
+&lt;rt&gt;&lt;/rt&gt;         &lt;!-- Displays east asian typography character details --&gt;
+
+&lt;ruby&gt;&lt;/ruby&gt;     &lt;!-- Describes annotations for east asian typography --&gt;
+
+&lt;summary&gt;&lt;/summary&gt;       &lt;!-- Contains a visible heading for details element --&gt;
+
+&lt;bdi&gt;&lt;/bdi&gt;       &lt;!-- Helps you format parts of text in a different direction than other text --&gt;
+
+&lt;time&gt;&lt;/time&gt;     &lt;!-- Identifies the time and date --&gt;
+
+&lt;wbr&gt;          &lt;!-- A line break within the content --&gt;
+
+&lt;!-- Some other useful tags --&gt;
+
+&lt;canvas&gt;&lt;/canvas&gt;         &lt;!-- Allows to draw 2D shapes on the web page with the help of javascript --&gt;
+
+&lt;keygen&gt;          &lt;!-- Represents a control for generating a public-private key pair --&gt;
+
+&lt;map&gt;&lt;/map&gt;       &lt;!-- Specifies an image map --&gt;
+
+&lt;!-- Collective Character Obejcts --&gt;
+
+&amp;#34; &amp;quot; Quotation Marks - &quot;
+
+&amp;#38; &amp;amp; Ampersand - &amp;
+
+&amp;#60; &amp;lt; Less than sign - &lt;
+
+&amp;#62; &amp;gt; Greater than sign - &gt;
+
+&amp;#160; &amp;nbsp; Non-breaking space
+
+&amp;#169; &amp;copy; Copyright Symbol - ©
+
+&amp;#64; &amp;Uuml; @ symbol - @
+
+&amp;#149; &amp;ouml; Small bullet - .
+
+&amp;#153; &amp;ucirc; Trademark Symbol - ™</code></pre>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/600/1*jUFEdBQ552AU7eeQQ7EdPw.png" class="graf-image" />
+</figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/600/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" />
+</figure>
+<h3 id="git">GIT:</h3>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/1200/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" />
+</figure>
+<h3 id="css">CSS:</h3>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/600/1*jUFEdBQ552AU7eeQQ7EdPw.png" class="graf-image" />
+</figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/600/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" />
+</figure>
+<hr />
+<h3 id="bootstrap">Bootstrap:</h3>
+<hr />
+<figure>
+<img src="https://cdn-images-1.medium.com/max/1200/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" />
+</figure>
+<h3 id="bash">Bash:</h3>
+<blockquote>
+<p>Continued:</p>
+</blockquote>
+<hr />
+<figure>
+<img src="https://cdn-images-1.medium.com/max/600/1*jUFEdBQ552AU7eeQQ7EdPw.png" class="graf-image" />
+</figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/600/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" />
+</figure>
+<h3 id="python">Python:</h3>
+<ul>
+<li><span id="37d9">Python is an interpreted, high-level and general-purpose, dynamically typed programming language</span></li>
+<li><span id="bff6">It is also Object oriented, modular oriented and a scripting language.</span></li>
+<li><span id="7582">In Python, everything is considered as an Object.</span></li>
+<li><span id="c52a">A python file has an extension of .py</span></li>
+<li><span id="6d41">Python follows Indentation to separate code blocks instead of flower brackets({}).</span></li>
+<li><span id="bcb1">We can run a python file by the following command in cmd(Windows) or shell(mac/linux).</span></li>
+<li><span id="b333"><code>python &lt;filename.py&gt;</code></span></li>
+</ul>
+<h4 id="by-default-the-python-doesnt-require-any-imports-to-run-a-python-file.">By default, the python doesn’t require any imports to run a python file.</h4>
+<h3 id="create-and-execute-a-program">Create and execute a program</h3>
+<ol type="1">
+<li><span id="e0d4">Open up a terminal/cmd</span></li>
+<li><span id="07e7">Create the program: nano/cat &gt; <a href="http://nameprogram.py/" class="markup--anchor markup--li-anchor" title="http://nameProgram.py">nameProgram.py</a></span></li>
+<li><span id="85c1">Write the program and save it</span></li>
+<li><span id="b0b9">python <a href="http://nameprogram.py/" class="markup--anchor markup--li-anchor" title="http://nameProgram.py">nameProgram.py</a></span></li>
+</ol>
+<h3 id="basic-datatypes">Basic Datatypes</h3>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*g1SbmDwyQP_-e4jDRkhrpg.png" class="graf-image" />
+</figure>
+<h3 id="keywords">Keywords</h3>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*XDaTnxa69qOMTSZpdxE1pA.png" class="graf-image" />
+</figure>
+<h3 id="operators">Operators</h3>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*WhZHWsF544F3Jou4TOdlvQ.png" class="graf-image" />
+</figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*G4pUq67UDWJSZsULGe7j2g.png" class="graf-image" />
+</figure>
+<h3 id="basic-data-structures">Basic Data Structures</h3>
+<h3 id="list">List</h3>
+<ul>
+<li><span id="0a85">List is a collection which is ordered and changeable. Allows duplicate members.</span></li>
+<li><span id="7fb3">Lists are created using square brackets:</span></li>
+</ul>
+<!-- -->
+<pre><code>thislist = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]</code></pre>
+<ul>
+<li><span id="ad36">List items are ordered, changeable, and allow duplicate values.</span></li>
+<li><span id="b28c">List items are indexed, the first item has index <code>[0]</code>, the second item has index <code>[1]</code> etc.</span></li>
+<li><span id="1ef0">The list is changeable, meaning that we can change, add, and remove items in a list after it has been created.</span></li>
+<li><span id="18ce">To determine how many items a list has, use the <code>len()</code> function.</span></li>
+<li><span id="f077">A list can contain different data types:</span></li>
+</ul>
+<!-- -->
+<pre><code>list1 = [&quot;abc&quot;, 34, True, 40, &quot;male&quot;]</code></pre>
+<ul>
+<li><span id="a2ab">It is also possible to use the list() constructor when creating a new list</span></li>
+</ul>
+<!-- -->
+<pre><code>thislist = list((&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;))  # note the double round-brackets</code></pre>
+<h3 id="tuple">Tuple</h3>
+<ul>
+<li><span id="9f04">Tuple is a collection which is ordered and unchangeable. Allows duplicate members.</span></li>
+<li><span id="1462">A tuple is a collection which is ordered and unchangeable.</span></li>
+<li><span id="db02">Tuples are written with round brackets.</span></li>
+</ul>
+<!-- -->
+<pre><code>thistuple = (&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;)</code></pre>
+<ul>
+<li><span id="0249">Tuple items are ordered, unchangeable, and allow duplicate values.</span></li>
+<li><span id="63df">Tuple items are indexed, the first item has index <code>[0]</code>, the second item has index <code>[1]</code> etc.</span></li>
+<li><span id="49b8">When we say that tuples are ordered, it means that the items have a defined order, and that order will not change.</span></li>
+<li><span id="48f5">Tuples are unchangeable, meaning that we cannot change, add or remove items after the tuple has been created.</span></li>
+<li><span id="9c3c">Since tuple are indexed, tuples can have items with the same value:</span></li>
+<li><span id="2e5f">Tuples allow duplicate values:</span></li>
+</ul>
+<!-- -->
+<pre><code>thistuple = (&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;, &quot;apple&quot;, &quot;cherry&quot;)</code></pre>
+<ul>
+<li><span id="bb80">To determine how many items a tuple has, use the <code>len()</code>function:</span></li>
+</ul>
+<!-- -->
+<pre><code>thistuple = (&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;)
+print(len(thistuple))</code></pre>
+<ul>
+<li><span id="8326">To create a tuple with only one item, you have to add a comma after the item, otherwise Python will not recognize it as a tuple.</span></li>
+</ul>
+<!-- -->
+<pre><code>thistuple = (&quot;apple&quot;,)
+print(type(thistuple))
+
+#NOT a tuple
+thistuple = (&quot;apple&quot;)
+print(type(thistuple))</code></pre>
+<ul>
+<li><span id="6c4d">It is also possible to use the tuple() constructor to make a tuple.</span></li>
+</ul>
+<!-- -->
+<pre><code>thistuple = tuple((&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;)) # note the double round-brackets
+print(thistuple)</code></pre>
+<h3 id="set">Set</h3>
+<ul>
+<li><span id="1ac0">Set is a collection which is unordered and unindexed. No duplicate members.</span></li>
+<li><span id="99a8">A set is a collection which is both unordered and unindexed.</span></li>
+</ul>
+<!-- -->
+<pre><code>thisset = {&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;}</code></pre>
+<ul>
+<li><span id="636a">Set items are unordered, unchangeable, and do not allow duplicate values.</span></li>
+<li><span id="b19b">Unordered means that the items in a set do not have a defined order.</span></li>
+<li><span id="7cee">Set items can appear in a different order every time you use them, and cannot be referred to by index or key.</span></li>
+<li><span id="6b4a">Sets are unchangeable, meaning that we cannot change the items after the set has been created.</span></li>
+<li><span id="fdcb">Duplicate values will be ignored.</span></li>
+<li><span id="8583">To determine how many items a set has, use the <code>len()</code> method.</span></li>
+</ul>
+<!-- -->
+<pre><code>thisset = {&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;}
+
+print(len(thisset))</code></pre>
+<ul>
+<li><span id="f9cc">Set items can be of any data type:</span></li>
+</ul>
+<!-- -->
+<pre><code>set1 = {&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;}
+set2 = {1, 5, 7, 9, 3}
+set3 = {True, False, False}
+set4 = {&quot;abc&quot;, 34, True, 40, &quot;male&quot;}</code></pre>
+<ul>
+<li><span id="7aab">It is also possible to use the <code>set()</code> constructor to make a set.</span></li>
+</ul>
+<!-- -->
+<pre><code>thisset = set((&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;)) # note the double round-brackets</code></pre>
+<h3 id="dictionary">Dictionary</h3>
+<ul>
+<li><span id="8374">Dictionary is a collection which is unordered and changeable. No duplicate members.</span></li>
+<li><span id="3cd2">Dictionaries are used to store data values in key:value pairs.</span></li>
+<li><span id="4191">Dictionaries are written with curly brackets, and have keys and values:</span></li>
+</ul>
+<!-- -->
+<pre><code>thisdict = {
+  &quot;brand&quot;: &quot;Ford&quot;,
+  &quot;model&quot;: &quot;Mustang&quot;,
+  &quot;year&quot;: 1964
+}</code></pre>
+<ul>
+<li><span id="5cfc">Dictionary items are presented in key:value pairs, and can be referred to by using the key name.</span></li>
+</ul>
+<!-- -->
+<pre><code>thisdict = {
+  &quot;brand&quot;: &quot;Ford&quot;,
+  &quot;model&quot;: &quot;Mustang&quot;,
+  &quot;year&quot;: 1964
+}
+print(thisdict[&quot;brand&quot;])</code></pre>
+<ul>
+<li><span id="d4b0">Dictionaries are changeable, meaning that we can change, add or remove items after the dictionary has been created.</span></li>
+<li><span id="3c5c">Dictionaries cannot have two items with the same key.</span></li>
+<li><span id="cd45">Duplicate values will overwrite existing values.</span></li>
+<li><span id="0ee1">To determine how many items a dictionary has, use the <code>len()</code> function.</span></li>
+</ul>
+<!-- -->
+<pre><code>print(len(thisdict))</code></pre>
+<ul>
+<li><span id="b2fc">The values in dictionary items can be of any data type</span></li>
+</ul>
+<!-- -->
+<pre><code>thisdict = {
+  &quot;brand&quot;: &quot;Ford&quot;,
+  &quot;electric&quot;: False,
+  &quot;year&quot;: 1964,
+  &quot;colors&quot;: [&quot;red&quot;, &quot;white&quot;, &quot;blue&quot;]
+}</code></pre>
+<h3 id="conditional-branching">Conditional branching</h3>
+<pre><code>if condition:
+        pass
+    elif condition2:
+        pass
+    else:
+        pass</code></pre>
+<h3 id="loops">Loops</h3>
+<p>Python has two primitive loop commands:</p>
+<ol type="1">
+<li><span id="7947">while loops</span></li>
+<li><span id="672e">for loops</span></li>
+</ol>
+<h4 id="while-loop">While loop</h4>
+<ul>
+<li><span id="66af">With the <code>while</code> loop we can execute a set of statements as long as a condition is true.</span></li>
+<li><span id="7eb7">Example: Print i as long as i is less than 6</span></li>
+</ul>
+<!-- -->
+<pre><code>i = 1
+while i &lt; 6:
+  print(i)
+  i += 1</code></pre>
+<ul>
+<li><span id="e54c">The while loop requires relevant variables to be ready, in this example we need to define an indexing variable, i, which we set to 1.</span></li>
+<li><span id="b346">With the <code>break</code> statement we can stop the loop even if the while condition is true</span></li>
+<li><span id="798e">With the continue statement we can stop the current iteration, and continue with the next.</span></li>
+<li><span id="7718">With the else statement we can run a block of code once when the condition no longer is true.</span></li>
+</ul>
+<h4 id="for-loop">For loop</h4>
+<ul>
+<li><span id="917e">A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).</span></li>
+<li><span id="e381">This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.</span></li>
+<li><span id="3635">With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.</span></li>
+</ul>
+<!-- -->
+<pre><code>fruits = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]
+for x in fruits:
+  print(x)</code></pre>
+<ul>
+<li><span id="f8c0">The for loop does not require an indexing variable to set beforehand.</span></li>
+<li><span id="350f">To loop through a set of code a specified number of times, we can use the range() function.</span></li>
+<li><span id="3824">The range() function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and ends at a specified number.</span></li>
+<li><span id="2b5b">The range() function defaults to increment the sequence by 1, however it is possible to specify the increment value by adding a third parameter: range(2, 30, 3).</span></li>
+<li><span id="4fae">The else keyword in a for loop specifies a block of code to be executed when the loop is finished.<br />
+A nested loop is a loop inside a loop.</span></li>
+<li><span id="897a">The “inner loop” will be executed one time for each iteration of the “outer loop”:</span></li>
+</ul>
+<!-- -->
+<pre><code>adj = [&quot;red&quot;, &quot;big&quot;, &quot;tasty&quot;]
+fruits = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]
+
+for x in adj:
+  for y in fruits:
+    print(x, y)</code></pre>
+<ul>
+<li><span id="2c64">for loops cannot be empty, but if you for some reason have a for loop with no content, put in the pass statement to avoid getting an error.</span></li>
+</ul>
+<!-- -->
+<pre><code>for x in [0, 1, 2]:
+  pass</code></pre>
+<h3 id="function-definition">Function definition</h3>
+<pre><code>def function_name():
+    return</code></pre>
+<h3 id="function-call">Function call</h3>
+<pre><code>function_name()</code></pre>
+<ul>
+<li><span id="a1f2">We need not to specify the return type of the function.</span></li>
+<li><span id="4c78">Functions by default return <code>None</code></span></li>
+<li><span id="b047">We can return any datatype.</span></li>
+</ul>
+<hr />
+<figure>
+<img src="https://cdn-images-1.medium.com/max/1200/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" />
+</figure>
+<h3 id="javascript">JavaScript:</h3>
+<hr />
+<figure>
+<img src="https://cdn-images-1.medium.com/max/600/1*jUFEdBQ552AU7eeQQ7EdPw.png" class="graf-image" />
+</figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/600/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" />
+</figure>
+<h3 id="typescript">TypeScript:</h3>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/600/1*jUFEdBQ552AU7eeQQ7EdPw.png" class="graf-image" />
+</figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/600/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" />
+</figure>
+<h3 id="react">React:</h3>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/600/1*jUFEdBQ552AU7eeQQ7EdPw.png" class="graf-image" />
+</figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/600/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" />
+</figure>
+<h3 id="node">Node:</h3>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/1200/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" />
+</figure>
+<h3 id="jquery">JQuery:</h3>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/1200/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" />
+</figure>
+<h3 id="markdown">Markdown:</h3>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/1200/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" />
+</figure>
+<h3 id="json">JSON:</h3>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/1200/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" />
+</figure>
+<h3 id="discover-more">Discover More:</h3>
+<p><a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong> <br/></p>
+<p><em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/1200/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" />
+</figure>
+<p>By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on <a href="https://medium.com/p/a02a423139a4">June 29, 2021</a>.</p>
+<p><a href="https://medium.com/@bryanguner/the-penultimate-web-developers-cheat-sheet-a02a423139a4" class="p-canonical">Canonical link</a></p>
+<p>August 6, 2021.</p>
+</body>
+</html>

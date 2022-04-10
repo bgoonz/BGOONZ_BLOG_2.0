@@ -1,44 +1,39 @@
-# Getting Comfortable With Python:
+Getting Comfortable With Python:
+================================
 
 An introduction by example
 
----
+------------------------------------------------------------------------
 
 ### **Getting Comfortable With Python:**
 
 #### An introduction by example
 
-<figure><img src="https://cdn-images-1.medium.com/max/1200/1*QWb2YSJPCjrY2Ds6T-HL3A.png" class="graf-image" /></figure>
+<figure><img src="https://cdn-images-1.medium.com/max/1200/1*QWb2YSJPCjrY2Ds6T-HL3A.png" class="graf-image" /></figure>### My other Python articles:
 
-### My other Python articles:
+**Python Study Guide for a JavaScript Programmer**  
 
-<a href="https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb"><strong>Python Study Guide for a JavaScript Programmer</strong>
-<br/>
+*A guide to commands in Python from what you know in JavaScript*levelup.gitconnected.com<a href="https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<em>A guide to commands in Python from what you know in JavaScript</em>levelup.gitconnected.com</a><a href="https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+**Beginners Guide To Python**  
 
-<a href="https://medium.com/geekculture/beginners-guide-to-python-e5a59b5bb64d" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/geekculture/beginners-guide-to-python-e5a59b5bb64d"><strong>Beginners Guide To Python</strong>
-<br/>
+*My favorite language for maintainability is Python. It has simple, clean syntax, object encapsulation, good library…*medium.com<a href="https://medium.com/geekculture/beginners-guide-to-python-e5a59b5bb64d" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<em>My favorite language for maintainability is Python. It has simple, clean syntax, object encapsulation, good library…</em>medium.com</a><a href="https://medium.com/geekculture/beginners-guide-to-python-e5a59b5bb64d" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+**Python Problems & Solutions For Beginners**  
 
-<a href="https://levelup.gitconnected.com/beginner-python-problems-solutions-dd631e9c3a9f" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://levelup.gitconnected.com/beginner-python-problems-solutions-dd631e9c3a9f"><strong>Python Problems &amp; Solutions For Beginners</strong>
-<br/>
+*Introduction to python taught through example problems. Solutions are included in embedded repl.it at the bottom of…*levelup.gitconnected.com<a href="https://levelup.gitconnected.com/beginner-python-problems-solutions-dd631e9c3a9f" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<em>Introduction to python taught through example problems. Solutions are included in embedded repl.it at the bottom of…</em>levelup.gitconnected.com</a><a href="https://levelup.gitconnected.com/beginner-python-problems-solutions-dd631e9c3a9f" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+**Notes I Wish I Had When I Started Learning Python**  
 
-<a href="https://medium.com/webdevhub/notes-i-wish-i-had-when-i-started-learning-python-16ce4244be12" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/webdevhub/notes-i-wish-i-had-when-i-started-learning-python-16ce4244be12"><strong>Notes I Wish I Had When I Started Learning Python</strong>
-<br/>
+*Plus resources for learning data structures and algorithms in python at the bottom of this article!*medium.com<a href="https://medium.com/webdevhub/notes-i-wish-i-had-when-i-started-learning-python-16ce4244be12" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<em>Plus resources for learning data structures and algorithms in python at the bottom of this article!</em>medium.com</a><a href="https://medium.com/webdevhub/notes-i-wish-i-had-when-i-started-learning-python-16ce4244be12" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
-
----
+------------------------------------------------------------------------
 
 ### **Use a print statement**
 
 **Overview**
 
-Learning to use the print function in Python is the perfect way to start writing Python code. When learning to write in any new programming language, one of the first things you want to do is get some _output_ from your program. The print function is how you output the value of an object to the screen. You will learn how to use the print function in Python.
+Learning to use the print function in Python is the perfect way to start writing Python code. When learning to write in any new programming language, one of the first things you want to do is get some *output* from your program. The print function is how you output the value of an object to the screen. You will learn how to use the print function in Python.
 
 Using print with no arguments:
 
@@ -97,7 +92,7 @@ You can see how the print function is easy to use and how it can handle any obje
 
 **Passing multiple arguments into print**
 
-Now, let's look at how we can pass multiple arguments into the print function. Using print with multiple arguments gives you a flexible and easy way to output items to the screen.
+Now, let’s look at how we can pass multiple arguments into the print function. Using print with multiple arguments gives you a flexible and easy way to output items to the screen.
 
 We can pass multiple objects, all of the same or different types, into print.
 
@@ -161,11 +156,11 @@ Whitespace is any character represented by something that appears empty (usually
 
 Note: the characters are " " (space), \\\\t (tab), \\\\n (newline), \\\\r (return), \\\\x0b (unicode line tabulation), and \\\\x0c (unicode form feed).
 
-You've seen the different types of whitespace characters that can appear, but you mainly need to concern yourself with " ", \\\\t, and \\\\n.
+You’ve seen the different types of whitespace characters that can appear, but you mainly need to concern yourself with " ", \\\\t, and \\\\n.
 
 **Logical Lines of Code**
 
-Whitespace is used to denote the end of a logical line of code. In Python, a logical line of code's end (a statement or a definition) is marked by a \\\\n.
+Whitespace is used to denote the end of a logical line of code. In Python, a logical line of code’s end (a statement or a definition) is marked by a \\\\n.
 
     >>> first = "WebDevHub"
      >>> second = "School"
@@ -177,9 +172,9 @@ Whitespace is used to denote the end of a logical line of code. In Python, a log
      'WebDevHubSchool'
      >>>
 
-Note: how the REPL evaluates the expression first + second when I return on line 3. Below that, I can write one logical line of code over multiple lines by ending each line with a \\\\ character. That \\\\ character lets the Python interpreter that even though there is a newline, you don't want it to treat it as the end of a logical line.
+Note: how the REPL evaluates the expression first + second when I return on line 3. Below that, I can write one logical line of code over multiple lines by ending each line with a \\\\ character. That \\\\ character lets the Python interpreter that even though there is a newline, you don’t want it to treat it as the end of a logical line.
 
-It's important to understand that Python assumes meaning in newline characters when trying to interpret your code.
+It’s important to understand that Python assumes meaning in newline characters when trying to interpret your code.
 
 **Code Blocks**
 

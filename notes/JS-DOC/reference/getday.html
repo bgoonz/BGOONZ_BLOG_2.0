@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>getday</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="date.prototype.getday">Date.prototype.getDay()</h1>
+<p>The <code>getDay()</code> method returns the day of the week for the specified date according to local time, where 0 represents Sunday. For the day of the month, see <a href="getdate"><code>Date.prototype.getDate()</code></a>.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>getDay()</code></pre>
+<h3 id="return-value">Return value</h3>
+<p>An integer number, between 0 and 6, corresponding to the day of the week for the given date, according to local time: 0 for Sunday, 1 for Monday, 2 for Tuesday, and so on.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-getday">Using getDay()</h3>
+<p>The second statement below assigns the value 1 to <code>weekday</code>, based on the value of the <a href="../date"><code>Date</code></a> object <code>Xmas95</code>. December 25, 1995, is a Monday.</p>
+<pre><code>var Xmas95 = new Date(&#39;December 25, 1995 23:15:30&#39;);
+var weekday = Xmas95.getDay();
+
+console.log(weekday); // 1</code></pre>
+<p><strong>Note:</strong> If needed, the full name of a day (“<code>Monday</code>” for example) can be obtained by using <a href="../intl/datetimeformat"><code>Intl.DateTimeFormat</code></a> with an <code>options</code> parameter. Using this method, the internationalization is made easier:</p>
+<pre><code>var options = { weekday: &#39;long&#39;};
+console.log(new Intl.DateTimeFormat(&#39;en-US&#39;, options).format(Xmas95));
+// Monday
+console.log(new Intl.DateTimeFormat(&#39;de-DE&#39;, options).format(Xmas95));
+// Montag</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-date.prototype.getday">ECMAScript (ECMA-262) <br/></p>
+<span class="small">The definition of ‘Date.prototype.getDay’ in that specification.</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>getDay</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="getutcdate"><code>Date.prototype.getUTCDate()</code></a></li>
+<li><a href="getutcday"><code>Date.prototype.getUTCDay()</code></a></li>
+<li><a href="setdate"><code>Date.prototype.setDate()</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getDay" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getDay</a></p>
+</body>
+</html>

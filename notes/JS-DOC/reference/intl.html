@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>intl</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="intl">Intl</h1>
+<p>The <code>Intl</code> object is the namespace for the ECMAScript Internationalization API, which provides language sensitive string comparison, number formatting, and date and time formatting. The <code>Intl</code> object provides access to several constructors as well as functionality common to the internationalization constructors and other language sensitive functions.</p>
+<h2 id="constructor-properties">Constructor properties</h2>
+<p><a href="intl/collator/collator"><code>Intl.Collator()</code></a><br />
+Constructor for collators, which are objects that enable language-sensitive string comparison.</p>
+<p><a href="intl/datetimeformat/datetimeformat"><code>Intl.DateTimeFormat()</code></a><br />
+Constructor for objects that enable language-sensitive date and time formatting.</p>
+<p><a href="intl/displaynames/displaynames"><code>Intl.DisplayNames()</code></a><br />
+Constructor for objects that enable the consistent translation of language, region and script display names.</p>
+<p><a href="intl/listformat/listformat"><code>Intl.ListFormat()</code></a><br />
+Constructor for objects that enable language-sensitive list formatting.</p>
+<p><a href="intl/locale/locale"><code>Intl.Locale()</code></a><br />
+Constructor for objects that represents a Unicode locale identifier.</p>
+<p><a href="intl/numberformat/numberformat"><code>Intl.NumberFormat()</code></a><br />
+Constructor for objects that enable language-sensitive number formatting.</p>
+<p><a href="intl/pluralrules/pluralrules"><code>Intl.PluralRules()</code></a><br />
+Constructor for objects that enable plural-sensitive formatting and language-specific rules for plurals.</p>
+<p><a href="intl/relativetimeformat/relativetimeformat"><code>Intl.RelativeTimeFormat()</code></a><br />
+Constructor for objects that enable language-sensitive relative time formatting.</p>
+<h2 id="static-methods">Static methods</h2>
+<p><a href="intl/getcanonicallocales"><code>Intl.getCanonicalLocales()</code></a><br />
+Returns canonical locale names.</p>
+<h2 id="locale-identification-and-negotiation">Locale identification and negotiation</h2>
+<p>The internationalization constructors as well as several language sensitive methods of other constructors (listed under <a href="#see_also">See also</a>) use a common pattern for identifying locales and determining the one they will actually use: they all accept <code>locales</code> and <code>options</code> arguments, and negotiate the requested locale(s) against the locales they support using an algorithm specified in the <code>options.localeMatcher</code> property.</p>
+<h3 id="locales-argument">locales argument</h3>
+<p>The <code>locales</code> argument is used to determine the locale used in a given operation. The JavaScript implementation examines <code>locales</code>, and then computes a locale it understands that comes closest to satisfying the expressed preference. <code>locales</code> may be:</p>
+<ul>
+<li><code>undefined</code> (or omitted): The implementation’s default locale will be used.</li>
+<li>A locale: A locale identifier or an <code>Intl.Locale</code> object that wraps a locale identifier.</li>
+<li>A list of locales: Any other value, that will be converted into an object and then treated as an array of locales.</li>
+</ul>
+<p>In the latter two cases, the actual locale used is the best-supported locale determined by <a href="#locale_negotiation">locale negotiation</a>.</p>
+<p>A locale identifier is a string that consists of:</p>
+<ol type="1">
+<li>a language subtag,</li>
+<li>(optionally) a script subtag,</li>
+<li>(optionally) a region (or country) subtag,</li>
+<li>(optionally) one or more variant subtags (all of which must be unique),</li>
+<li>(optionally) one or more BCP 47 extension sequences, and</li>
+<li>(optionally) a private-use extension sequence</li>
+</ol>
+<p>…with all present subtags and sequences separated by hyphens. Locale identifiers are case-insensitive ASCII. However, it’s conventional to use title case (first letter capitalized, successive letters lower case) for script subtags, upper case for region subtags, and lower case for everything else. For example:</p>
+<ul>
+<li>“<code>hi</code>”: Hindi (language)</li>
+<li>“<code>de-AT</code>”: German (language) as used in Austria (region)</li>
+<li>“<code>zh-Hans-CN</code>”: Chinese (language) written in simplified characters (script) as used in China (region)</li>
+<li>“<code>en-emodeng</code>”: English (language) in the “Early modern English” dialect (variant)</li>
+</ul>
+<p>Subtags identifying languages, scripts, regions (including countries), and (rarely used) variants are registered in the <a href="https://www.iana.org/assignments/language-subtag-registry">IANA Language Subtag Registry</a>. This registry is periodically updated over time, and implementations may not always be up to date, so don’t rely too much on subtags being universally supported.</p>
+<p>BCP 47 extension sequences consist of a single digit or letter (other than <code>"x"</code>) and one or more two- to eight-letter or digit subtags separated by hyphens. Only one sequence is permitted for each digit or letter: “<code>de-a-foo-a-foo</code>” is invalid. BCP 47 extension subtags are defined in the <a href="https://github.com/unicode-org/cldr/tree/master/common/bcp47">Unicode CLDR Project</a>. Currently only two extensions have defined semantics:</p>
+<ul>
+<li>The <code>"u"</code> (Unicode) extension can be used to request additional customization of <a href="intl/collator"><code>Intl/Collator</code></a>, <a href="intl/numberformat"><code>Intl/NumberFormat</code></a>, or <a href="intl/datetimeformat"><code>Intl/DateTimeFormat</code></a> objects. Examples:
+<ul>
+<li>“<code>de-DE-u-co-phonebk</code>”: Use the phonebook variant of the German sort order, which interprets umlauted vowels as corresponding character pairs: ä → ae, ö → oe, ü → ue.</li>
+<li>“<code>th-TH-u-nu-thai</code>”: Use Thai digits (๐, ๑, ๒, ๓, ๔, ๕, ๖, ๗, ๘, ๙) in number formatting.</li>
+<li>“<code>ja-JP-u-ca-japanese</code>”: Use the Japanese calendar in date and time formatting, so that 2013 is expressed as the year 25 of the Heisei period, or 平成 25.</li>
+<li>“<code>en-GB-u-ca-islamic</code>”: use British English with the Islamic (Hijri) calendar, where the Gregorian date 14 October, 2017 is the Hijri date 24 Muharram, 1439.</li>
+</ul></li>
+<li>The <code>"t"</code> (transformed) extension indicates transformed content: for example, text that was translated from another locale. No <code>Intl</code> functionality currently considers the <code>"t"</code> extension. However, this extension sometimes contains a nested locale (with no extensions): for example, the transformed extension in “<code>de-t-en</code>” contains the locale identifier for English. If a nested locale is present, it must be a valid locale identifier. For example, because “<code>en-emodeng-emodeng</code>” is invalid (because it contains a duplicate <code>emodeng</code> variant subtag), “<code>de-t-en-emodeng-emodeng</code>” is also invalid.</li>
+</ul>
+<p>Finally, a private-use extension sequence using the letter <code>"x"</code> may appear, followed by one or more one- to eight-letter or digit subtags separated by hyphens. This allows applications to encode information for their own private use, that will be ignored by all <code>Intl</code> operations.</p>
+<h3 id="locale-negotiation">Locale negotiation</h3>
+<p>The list of locales specified by the <code>locales</code> argument, after Unicode extensions have been removed from them, is interpreted as a prioritized request from the application. The runtime compares it against the locales it has available and picks the best one available. Two matching algorithms exist: the “<code>lookup</code>” matcher follows the Lookup algorithm specified in <a href="https://datatracker.ietf.org/doc/html/rfc4647#section-3.4">BCP 47</a>; the “<code>best fit</code>” matcher lets the runtime provide a locale that’s at least, but possibly more, suited for the request than the result of the Lookup algorithm. If the application doesn’t provide a <code>locales</code> argument, or the runtime doesn’t have a locale that matches the request, then the runtime’s default locale is used. The matcher can be selected using a property of the <code>options</code> argument (see below).</p>
+<p>If the selected locale identifier had a Unicode extension sequence, that extension is now used to customize the constructed object or the behavior of the function. Each constructor or function supports only a subset of the keys defined for the Unicode extension, and the supported values often depend on the locale identifier. For example, the “<code>co</code>” key (collation) is only supported by <a href="intl/collator"><code>Intl/Collator</code></a>, and its “<code>phonebk</code>” value is only supported for German.</p>
+<h3 id="options-argument">options argument</h3>
+<p>The <code>options</code> argument must be an object with properties that vary between constructors and functions. If the <code>options</code> argument is not provided or is undefined, default values are used for all properties.</p>
+<p>One property is supported by all language sensitive constructors and functions: The <code>localeMatcher</code> property, whose value must be a string “<code>lookup</code>” or “<code>best fit</code>” and which selects one of the locale matching algorithms described above.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="formatting-dates-and-numbers">Formatting dates and numbers</h3>
+<p>You can use <code>Intl</code> to format dates and numbers in a form that’s conventional for a specific language and region:</p>
+<pre><code>const count = 26254.39;
+const date = new Date(&quot;2012-05-24&quot;);
+
+function log(locale) {
+  console.log(
+    `${new Intl.DateTimeFormat(locale).format(date)}${new Intl.NumberFormat(locale).format(count)}`
+  );
+}
+
+log(&quot;en-US&quot;);
+// expected output: 5/24/2012 26,254.39
+
+log(&quot;de-DE&quot;);
+// expected output: 24.5.2012 26.254,39</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma402/#intl-object">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) <br/></p>
+<span class="small">#intl-object</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>Collator</code></p>
+<p>24</p>
+<p>12</p>
+<p>29</p>
+<p>11</p>
+<p>15</p>
+<p>10</p>
+<p>4.4</p>
+<p>25</p>
+<p>56</p>
+<p>14</p>
+<p>10</p>
+<p>1.5</p>
+<p><code>DateTimeFormat</code></p>
+<p>24</p>
+<p>12</p>
+<p>29</p>
+<p>11</p>
+<p>15</p>
+<p>10</p>
+<p>4.4</p>
+<p>25</p>
+<p>56</p>
+<p>14</p>
+<p>10</p>
+<p>1.5</p>
+<p><code>DisplayNames</code></p>
+<p>81</p>
+<p>81</p>
+<p>86</p>
+<p>No</p>
+<p>68</p>
+<p>14.1</p>
+<p>81</p>
+<p>81</p>
+<p>86</p>
+<p>58</p>
+<p>14.5</p>
+<p>No</p>
+<p><code>Intl</code></p>
+<p>24</p>
+<p>12</p>
+<p>29</p>
+<p>11</p>
+<p>15</p>
+<p>10</p>
+<p>4.4</p>
+<p>25</p>
+<p>56</p>
+<p>14</p>
+<p>10</p>
+<p>1.5</p>
+<p><code>getCanonicalLocales</code></p>
+<p>54</p>
+<p>16</p>
+<p>48</p>
+<p>No</p>
+<p>No</p>
+<p>11</p>
+<p>No</p>
+<p>No</p>
+<p>56</p>
+<p>No</p>
+<p>11</p>
+<p>No</p>
+<p><code>@@toStringTag</code></p>
+<p>86</p>
+<p>86</p>
+<p>83</p>
+<p>No</p>
+<p>72</p>
+<p>14</p>
+<p>86</p>
+<p>86</p>
+<p>83</p>
+<p>No</p>
+<p>14</p>
+<p>No</p>
+<p><code>ListFormat</code></p>
+<p>72</p>
+<p>79</p>
+<p>78</p>
+<p>No</p>
+<p>60</p>
+<p>14.1</p>
+<p>72</p>
+<p>72</p>
+<p>79</p>
+<p>51</p>
+<p>14.5</p>
+<p>No</p>
+<p><code>Locale</code></p>
+<p>74</p>
+<p>79</p>
+<p>75</p>
+<p>No</p>
+<p>62</p>
+<p>14</p>
+<p>74</p>
+<p>74</p>
+<p>79</p>
+<p>53</p>
+<p>14</p>
+<p>11.0</p>
+<p><code>NumberFormat</code></p>
+<p>24</p>
+<p>12</p>
+<p>29</p>
+<p>11</p>
+<p>15</p>
+<p>10</p>
+<p>4.4</p>
+<p>25</p>
+<p>56</p>
+<p>14</p>
+<p>10</p>
+<p>1.5</p>
+<p><code>PluralRules</code></p>
+<p>63</p>
+<p>18</p>
+<p>58</p>
+<p>No</p>
+<p>50</p>
+<p>13</p>
+<p>63</p>
+<p>63</p>
+<p>58</p>
+<p>46</p>
+<p>13</p>
+<p>8.0</p>
+<p><code>RelativeTimeFormat</code></p>
+<p>71</p>
+<p>79</p>
+<p>65</p>
+<p>No</p>
+<p>58</p>
+<p>14</p>
+<p>71</p>
+<p>71</p>
+<p>65</p>
+<p>50</p>
+<p>14</p>
+<p>10.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li>Introduction: <a href="https://norbertlindenberg.com/2012/12/ecmascript-internationalization-api/index.html">The ECMAScript Internationalization API</a></li>
+<li>Constructors
+<ul>
+<li><a href="intl/collator"><code>Intl.Collator</code></a></li>
+<li><a href="intl/datetimeformat"><code>Intl.DateTimeFormat</code></a></li>
+<li><a href="intl/listformat"><code>Intl.ListFormat</code></a></li>
+<li><a href="intl/numberformat"><code>Intl.NumberFormat</code></a></li>
+<li><a href="intl/pluralrules"><code>Intl.PluralRules</code></a></li>
+<li><a href="intl/relativetimeformat"><code>Intl.RelativeTimeFormat</code></a></li>
+<li><a href="intl/locale"><code>Intl.Locale</code></a></li>
+</ul></li>
+<li>Methods
+<ul>
+<li><a href="string/localecompare"><code>String.prototype.localeCompare()</code></a></li>
+<li><a href="number/tolocalestring"><code>Number.prototype.toLocaleString()</code></a></li>
+<li><a href="date/tolocalestring"><code>Date.prototype.toLocaleString()</code></a></li>
+<li><a href="date/tolocaledatestring"><code>Date.prototype.toLocaleDateString()</code></a></li>
+<li><a href="date/tolocaletimestring"><code>Date.prototype.toLocaleTimeString()</code></a></li>
+</ul></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl</a></p>
+</body>
+</html>

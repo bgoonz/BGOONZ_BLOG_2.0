@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>isfinite</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="number.isfinite">Number.isFinite()</h1>
+<p>The <code>Number.isFinite()</code> method determines whether the passed value is a finite number — that is, it checks that the type of a given value is <a href="../number"><code>Number</code></a>, and the number is neither positive <a href="../infinity"><code>Infinity</code></a>, negative <code>Infinity</code>, nor <a href="../nan"><code>NaN</code></a>.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>Number.isFinite(value)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>value</code><br />
+The value to be tested for finiteness.</p>
+<h3 id="return-value">Return value</h3>
+<p>A <a href="../boolean"><code>Boolean</code></a> indicating whether or not the given value is a finite number.</p>
+<h2 id="description">Description</h2>
+<p>In comparison to the global <a href="../isfinite"><code>isFinite()</code></a> function, this method doesn’t first convert the parameter to a number. This means only values of the type number <em>and</em> are finite return <code>true</code>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-isfinite">Using isFinite</h3>
+<pre><code>Number.isFinite(Infinity);  // false
+Number.isFinite(NaN);       // false
+Number.isFinite(-Infinity); // false
+
+Number.isFinite(0);         // true
+Number.isFinite(2e64);      // true
+
+Number.isFinite(&#39;0&#39;);       // false, would&#39;ve been true with
+                            // global isFinite(&#39;0&#39;)
+Number.isFinite(null);      // false, would&#39;ve been true with
+                            // global isFinite(null)</code></pre>
+<h2 id="polyfill">Polyfill</h2>
+<pre><code>if (Number.isFinite === undefined) Number.isFinite = function(value) {
+    return typeof value === &#39;number&#39; &amp;&amp; isFinite(value);
+}</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-number.isfinite">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-number.isfinite</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>isFinite</code></p>
+<p>19</p>
+<p>12</p>
+<p>16</p>
+<p>No</p>
+<p>15</p>
+<p>9</p>
+<p>≤37</p>
+<p>25</p>
+<p>16</p>
+<p>14</p>
+<p>9</p>
+<p>1.5</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li>The <a href="../number"><code>Number</code></a> object it belongs to.</li>
+<li>The global function <a href="../isfinite"><code>isFinite</code></a>.</li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isFinite" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isFinite</a></p>
+</body>
+</html>

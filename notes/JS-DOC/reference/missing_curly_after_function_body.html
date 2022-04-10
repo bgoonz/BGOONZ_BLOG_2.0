@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>missing_curly_after_function_body</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="syntaxerror-missing-after-function-body">SyntaxError: missing } after function body</h1>
+<p>The JavaScript exception “missing } after function body” occurs when there is a syntax mistake when creating a function somewhere. Check if any closing curly brackets or parenthesis are in the correct order.</p>
+<h2 id="message">Message</h2>
+<pre><code>SyntaxError: Expected &#39;}&#39; (Edge)
+SyntaxError: missing } after function body (Firefox)</code></pre>
+<h2 id="error-type">Error type</h2>
+<p><a href="../global_objects/syntaxerror"><code>SyntaxError</code></a></p>
+<h2 id="what-went-wrong">What went wrong?</h2>
+<p>There is a syntax mistake when creating a function somewhere. Also check if any closing curly brackets or parenthesis are in the correct order. Indenting or formatting the code a bit nicer might also help you to see through the jungle.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="forgotten-closing-curly-bracket">Forgotten closing curly bracket</h3>
+<p>Oftentimes, there is a missing curly bracket in your function code:</p>
+<pre><code>var charge = function() {
+  if (sunny) {
+    useSolarCells();
+  } else {
+    promptBikeRide();
+};</code></pre>
+<p>Correct would be:</p>
+<pre><code>var charge = function() {
+  if (sunny) {
+    useSolarCells();
+  } else {
+    promptBikeRide();
+  }
+};</code></pre>
+<p>It can be more obscure when using <a href="https://developer.mozilla.org/en-US/docs/Glossary/IIFE">IIFE</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures">Closures</a>, or other constructs that use a lot of different parenthesis and curly brackets, for example.</p>
+<pre><code>(function() { if (true) { return false; } );</code></pre>
+<p>Oftentimes, indenting differently or double checking indentation helps to spot these errors.</p>
+<pre><code>(function() {
+  if (true) {
+    return false;
+  }
+});</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions">Functions</a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Missing_curly_after_function_body" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Missing_curly_after_function_body</a></p>
+</body>
+</html>

@@ -1,8 +1,10 @@
-# Function.prototype.call()
+Function.prototype.call()
+=========================
 
 The `call()` method calls a function with a given `this` value and arguments provided individually.
 
-## Syntax
+Syntax
+------
 
     call()
     call(thisArg)
@@ -26,7 +28,8 @@ Arguments for the function.
 
 The result of calling the function with the specified `this` value and arguments.
 
-## Description
+Description
+-----------
 
 The `call()` allows for a function/method belonging to one object to be assigned and called for a different object.
 
@@ -34,7 +37,8 @@ The `call()` allows for a function/method belonging to one object to be assigned
 
 **Note:** While the syntax of this function is almost identical to that of [`apply()`](apply), the fundamental difference is that `call()` accepts an **argument list**, while `apply()` accepts a **single array of arguments**.
 
-## Examples
+Examples
+--------
 
 ### Using `call` to chain constructors for an object
 
@@ -85,7 +89,7 @@ The main purpose of the anonymous function here is to add a `print` function to 
       }).call(animals[i], i);
     }
 
-### Using `call` to invoke a function and specifying the context for '`this`'
+### Using `call` to invoke a function and specifying the context for ‘`this`’
 
 In the example below, when we call `greet`, the value of `this` will be bound to object `obj`.
 
@@ -124,12 +128,11 @@ In the example below, we invoke the `display` function without passing the first
 
     display.call(); // Cannot read the property of 'sData' of undefined
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-function.prototype.call">ECMAScript (ECMA-262) 
-<br/>
-
-<span class="small">The definition of 'Function.prototype.call' in that specification.</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript (ECMA-262)<br />
+</p><span class="small">The definition of ‘Function.prototype.call’ in that specification.</span></td></tr></tbody></table>
 
 `call`
 
@@ -157,7 +160,8 @@ In the example below, we invoke the `display` function without passing the first
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`Function.prototype.bind()`](bind)
 -   [`Function.prototype.apply()`](apply)

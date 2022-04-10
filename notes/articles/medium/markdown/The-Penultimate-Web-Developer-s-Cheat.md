@@ -1,10 +1,11 @@
-# The Penultimate Web Developer's Cheat Sheet
+The Penultimate Web Developer’s Cheat Sheet
+===========================================
 
 I am literally just going to combine a fair number of my Cheat Sheets in no particular order.
 
----
+------------------------------------------------------------------------
 
-### The Penultimate Web Developer's Cheat Sheet
+### The Penultimate Web Developer’s Cheat Sheet
 
 I am literally just going to combine a fair number of my Cheat Sheets in no particular order.
 
@@ -290,33 +291,25 @@ I am literally just going to combine a fair number of my Cheat Sheets in no part
 
     &#153; &ucirc; Trademark Symbol - ™
 
-<figure><img src="https://cdn-images-1.medium.com/max/600/1*jUFEdBQ552AU7eeQQ7EdPw.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" /></figure>
+<figure><img src="https://cdn-images-1.medium.com/max/600/1*jUFEdBQ552AU7eeQQ7EdPw.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" /></figure>### GIT:
 
-### GIT:
-
-<figure><img src="https://cdn-images-1.medium.com/max/1200/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" /></figure>
-
-### CSS:
+<figure><img src="https://cdn-images-1.medium.com/max/1200/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" /></figure>### CSS:
 
 <figure><img src="https://cdn-images-1.medium.com/max/600/1*jUFEdBQ552AU7eeQQ7EdPw.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" /></figure>
 
----
+------------------------------------------------------------------------
 
 ### Bootstrap:
 
----
+------------------------------------------------------------------------
 
-<figure><img src="https://cdn-images-1.medium.com/max/1200/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" /></figure>
-
-### Bash:
+<figure><img src="https://cdn-images-1.medium.com/max/1200/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" /></figure>### Bash:
 
 > Continued:
 
----
+------------------------------------------------------------------------
 
-<figure><img src="https://cdn-images-1.medium.com/max/600/1*jUFEdBQ552AU7eeQQ7EdPw.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" /></figure>
-
-### Python:
+<figure><img src="https://cdn-images-1.medium.com/max/600/1*jUFEdBQ552AU7eeQQ7EdPw.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" /></figure>### Python:
 
 -   <span id="37d9">Python is an interpreted, high-level and general-purpose, dynamically typed programming language</span>
 -   <span id="bff6">It is also Object oriented, modular oriented and a scripting language.</span>
@@ -326,7 +319,7 @@ I am literally just going to combine a fair number of my Cheat Sheets in no part
 -   <span id="bcb1">We can run a python file by the following command in cmd(Windows) or shell(mac/linux).</span>
 -   <span id="b333">`python <filename.py>`</span>
 
-#### By default, the python doesn't require any imports to run a python file.
+#### By default, the python doesn’t require any imports to run a python file.
 
 ### Create and execute a program
 
@@ -547,7 +540,7 @@ Python has two primitive loop commands:
 -   <span id="2b5b">The range() function defaults to increment the sequence by 1, however it is possible to specify the increment value by adding a third parameter: range(2, 30, 3).</span>
 -   <span id="4fae">The else keyword in a for loop specifies a block of code to be executed when the loop is finished.  
     A nested loop is a loop inside a loop.</span>
--   <span id="897a">The "inner loop" will be executed one time for each iteration of the "outer loop":</span>
+-   <span id="897a">The “inner loop” will be executed one time for each iteration of the “outer loop”:</span>
 
 <!-- -->
 
@@ -578,50 +571,31 @@ Python has two primitive loop commands:
 -   <span id="4c78">Functions by default return `None`</span>
 -   <span id="b047">We can return any datatype.</span>
 
----
+------------------------------------------------------------------------
 
-<figure><img src="https://cdn-images-1.medium.com/max/1200/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" /></figure>
+<figure><img src="https://cdn-images-1.medium.com/max/1200/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" /></figure>### JavaScript:
 
-### JavaScript:
+------------------------------------------------------------------------
 
----
+<figure><img src="https://cdn-images-1.medium.com/max/600/1*jUFEdBQ552AU7eeQQ7EdPw.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" /></figure>### TypeScript:
 
-<figure><img src="https://cdn-images-1.medium.com/max/600/1*jUFEdBQ552AU7eeQQ7EdPw.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" /></figure>
+<figure><img src="https://cdn-images-1.medium.com/max/600/1*jUFEdBQ552AU7eeQQ7EdPw.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" /></figure>### React:
 
-### TypeScript:
+<figure><img src="https://cdn-images-1.medium.com/max/600/1*jUFEdBQ552AU7eeQQ7EdPw.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" /></figure>### Node:
 
-<figure><img src="https://cdn-images-1.medium.com/max/600/1*jUFEdBQ552AU7eeQQ7EdPw.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" /></figure>
+<figure><img src="https://cdn-images-1.medium.com/max/1200/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" /></figure>### JQuery:
 
-### React:
+<figure><img src="https://cdn-images-1.medium.com/max/1200/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" /></figure>### Markdown:
 
-<figure><img src="https://cdn-images-1.medium.com/max/600/1*jUFEdBQ552AU7eeQQ7EdPw.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" /></figure>
+<figure><img src="https://cdn-images-1.medium.com/max/1200/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" /></figure>### JSON:
 
-### Node:
+<figure><img src="https://cdn-images-1.medium.com/max/1200/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" /></figure>### Discover More:
 
-<figure><img src="https://cdn-images-1.medium.com/max/1200/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" /></figure>
+**Web-Dev-Hub**  
 
-### JQuery:
+*Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…*bgoonz-blog.netlify.app<a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<figure><img src="https://cdn-images-1.medium.com/max/1200/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" /></figure>
-
-### Markdown:
-
-<figure><img src="https://cdn-images-1.medium.com/max/1200/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" /></figure>
-
-### JSON:
-
-<figure><img src="https://cdn-images-1.medium.com/max/1200/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" /></figure>
-
-### Discover More:
-
-<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong>
-<br/>
-
-<em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
-
-<figure><img src="https://cdn-images-1.medium.com/max/1200/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" /></figure>
-
-By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [June 29, 2021](https://medium.com/p/a02a423139a4).
+<figure><img src="https://cdn-images-1.medium.com/max/1200/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" /></figure>By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [June 29, 2021](https://medium.com/p/a02a423139a4).
 
 <a href="https://medium.com/@bryanguner/the-penultimate-web-developers-cheat-sheet-a02a423139a4" class="p-canonical">Canonical link</a>
 

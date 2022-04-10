@@ -1,39 +1,16 @@
----
-title: Screen resolutions
-
-weight: -1
----
-
-## Resolutions
+Resolutions
+-----------
 
 {: .-one-column}
 
 ### Mobile
 
-| Resolution | DPPX | Actual resolution | DPPI    | Actual PPI | Size | Devices                  |
-| ---------- | ---- | ----------------- | ------- | ---------- | ---- | ------------------------ |
-| 320 x 480  | @1x  | 320 x 480         | 163 ppi | 163 ppi    | 3.5" | iPhone 2G/3G/3GS         |
-| 320 x 480  | @2x  | 640 x 960         | 163 ppi | 326 ppi    | 3.5" | iPhone 4/4S              |
-| 320 x 568  | @2x  | 640 x 1136        | 163 ppi | 326 ppi    | 4"   | iPhone 5/5C/5S           |
-| 320 x 568  | @2x  | 640 x 1136        | 163 ppi | 326 ppi    | 4"   | iPhone SE                |
-| 375 x 667  | @2x  | 750 x 1334        | 163 ppi | 326 ppi    | 4.7" | iPhone 6/6S/7/8/SE2      |
-| 414 x 736  | @3x  | 1242 x 2208       | 133 ppi | 401 ppi    | 5.5" | iPhone 6+/6S+/7+/8+      |
-| 414 x 896  | @2x  | 828 x 1792        | 162 ppi | 326 ppi    | 6.1" | iPhone Xr/11             |
-| 375 x 812  | @3x  | 1125 x 2436       | 152 ppi | 458 ppi    | 5.8" | iPhone X/Xs/11 Pro       |
-| 414 x 896  | @3x  | 1242 x 2688       | 162 ppi | 458 ppi    | 6.5" | iPhone Xs Max/11 Pro Max |
-| ---        | ---  | ---               | ----    | ---        | ---  | ---                      |
-| 360 x 640  | @2x  | 720 x 1280        | 153 ppi | 306 ppi    | 4.8" | Galaxy S3                |
-| 360 x 640  | @3x  | 1080 x 1920       | 147 ppi | 441 ppi    | 5"   | Galaxy S4                |
-| 360 x 640  | @3x  | 1080 x 1920       | 144 ppi | 432 ppi    | 5.1" | Galaxy S5                |
-| 360 x 640  | @4x  | 1440 x 2560       | 144 ppi | 577 ppi    | 5.1" | Galaxy S6/Edge           |
+<table><thead><tr class="header"><th>Resolution</th><th>DPPX</th><th>Actual resolution</th><th>DPPI</th><th>Actual PPI</th><th>Size</th><th>Devices</th></tr></thead><tbody><tr class="odd"><td>320 x 480</td><td><span class="citation" data-cites="1x">@1x</span></td><td>320 x 480</td><td>163 ppi</td><td>163 ppi</td><td>3.5"</td><td>iPhone 2G/3G/3GS</td></tr><tr class="even"><td>320 x 480</td><td><span class="citation" data-cites="2x">@2x</span></td><td>640 x 960</td><td>163 ppi</td><td>326 ppi</td><td>3.5"</td><td>iPhone 4/4S</td></tr><tr class="odd"><td>320 x 568</td><td><span class="citation" data-cites="2x">@2x</span></td><td>640 x 1136</td><td>163 ppi</td><td>326 ppi</td><td>4"</td><td>iPhone 5/5C/5S</td></tr><tr class="even"><td>320 x 568</td><td><span class="citation" data-cites="2x">@2x</span></td><td>640 x 1136</td><td>163 ppi</td><td>326 ppi</td><td>4"</td><td>iPhone SE</td></tr><tr class="odd"><td>375 x 667</td><td><span class="citation" data-cites="2x">@2x</span></td><td>750 x 1334</td><td>163 ppi</td><td>326 ppi</td><td>4.7"</td><td>iPhone 6/6S/7/8/SE2</td></tr><tr class="even"><td>414 x 736</td><td><span class="citation" data-cites="3x">@3x</span></td><td>1242 x 2208</td><td>133 ppi</td><td>401 ppi</td><td>5.5"</td><td>iPhone 6+/6S+/7+/8+</td></tr><tr class="odd"><td>414 x 896</td><td><span class="citation" data-cites="2x">@2x</span></td><td>828 x 1792</td><td>162 ppi</td><td>326 ppi</td><td>6.1"</td><td>iPhone Xr/11</td></tr><tr class="even"><td>375 x 812</td><td><span class="citation" data-cites="3x">@3x</span></td><td>1125 x 2436</td><td>152 ppi</td><td>458 ppi</td><td>5.8"</td><td>iPhone X/Xs/11 Pro</td></tr><tr class="odd"><td>414 x 896</td><td><span class="citation" data-cites="3x">@3x</span></td><td>1242 x 2688</td><td>162 ppi</td><td>458 ppi</td><td>6.5"</td><td>iPhone Xs Max/11 Pro Max</td></tr><tr class="even"><td>—</td><td>—</td><td>—</td><td>—-</td><td>—</td><td>—</td><td>—</td></tr><tr class="odd"><td>360 x 640</td><td><span class="citation" data-cites="2x">@2x</span></td><td>720 x 1280</td><td>153 ppi</td><td>306 ppi</td><td>4.8"</td><td>Galaxy S3</td></tr><tr class="even"><td>360 x 640</td><td><span class="citation" data-cites="3x">@3x</span></td><td>1080 x 1920</td><td>147 ppi</td><td>441 ppi</td><td>5"</td><td>Galaxy S4</td></tr><tr class="odd"><td>360 x 640</td><td><span class="citation" data-cites="3x">@3x</span></td><td>1080 x 1920</td><td>144 ppi</td><td>432 ppi</td><td>5.1"</td><td>Galaxy S5</td></tr><tr class="even"><td>360 x 640</td><td><span class="citation" data-cites="4x">@4x</span></td><td>1440 x 2560</td><td>144 ppi</td><td>577 ppi</td><td>5.1"</td><td>Galaxy S6/Edge</td></tr></tbody></table>
 
 {: .-headers}
 
 ### Tablet
 
-| Resolution | DPPX | Actual resolution | DPPI    | Actual PPI | Size | Devices          |
-| ---------- | ---- | ----------------- | ------- | ---------- | ---- | ---------------- |
-| 1024 x 768 | @2x  | 2048 x 1536       | 163 ppi | 326 ppi    | 7.9" | iPad Mini Retina |
-| 1024 x 768 | @2x  | 2048 x 1536       | 132 ppi | 264 ppi    | 9.7" | iPad Air         |
+<table><thead><tr class="header"><th>Resolution</th><th>DPPX</th><th>Actual resolution</th><th>DPPI</th><th>Actual PPI</th><th>Size</th><th>Devices</th></tr></thead><tbody><tr class="odd"><td>1024 x 768</td><td><span class="citation" data-cites="2x">@2x</span></td><td>2048 x 1536</td><td>163 ppi</td><td>326 ppi</td><td>7.9"</td><td>iPad Mini Retina</td></tr><tr class="even"><td>1024 x 768</td><td><span class="citation" data-cites="2x">@2x</span></td><td>2048 x 1536</td><td>132 ppi</td><td>264 ppi</td><td>9.7"</td><td>iPad Air</td></tr></tbody></table>
 
 {: .-headers}

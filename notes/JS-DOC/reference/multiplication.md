@@ -1,12 +1,15 @@
-# Multiplication (\*)
+Multiplication (\*)
+===================
 
 The multiplication operator (`*`) produces the product of the operands.
 
-## Syntax
+Syntax
+------
 
     Operator: x * y
 
-## Examples
+Examples
+--------
 
 ### Multiplication using numbers
 
@@ -22,12 +25,11 @@ The multiplication operator (`*`) produces the product of the operands.
 
     'foo' * 2 // NaN
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-multiplicative-operators">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-multiplicative-operators</span></a></td></tr></tbody></table>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-multiplicative-operators</span></td></tr></tbody></table>
 
 `Multiplication`
 
@@ -55,7 +57,8 @@ The multiplication operator (`*`) produces the product of the operands.
 
 1.0
 
-## See also
+See also
+--------
 
 -   [Addition operator](addition)
 -   [Subtraction operator](subtraction)
@@ -67,6 +70,5 @@ The multiplication operator (`*`) produces the product of the operands.
 -   [Unary negation operator](unary_negation)
 -   [Unary plus operator](unary_plus)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Multiplication" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Multiplication</a>

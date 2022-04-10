@@ -1,17 +1,21 @@
-# SyntaxError: missing ) after condition
+SyntaxError: missing ) after condition
+======================================
 
-The JavaScript exception "missing ) after condition" occurs when there is an error with how an `if` condition is written. It must appear in parenthesis after the `if` keyword.
+The JavaScript exception “missing ) after condition” occurs when there is an error with how an `if` condition is written. It must appear in parenthesis after the `if` keyword.
 
-## Message
+Message
+-------
 
     SyntaxError: Expected ')' (Edge)
     SyntaxError: missing ) after condition (Firefox)
 
-## Error type
+Error type
+----------
 
 [`SyntaxError`](../global_objects/syntaxerror)
 
-## What went wrong?
+What went wrong?
+----------------
 
 There is an error with how an `if` condition is written. In any programming language, code needs to make decisions and carry out actions accordingly depending on different inputs. The if statement executes a statement if a specified condition is truthy. In JavaScript, this condition must appear in parenthesis after the `if` keyword, like this:
 
@@ -19,7 +23,8 @@ There is an error with how an `if` condition is written. In any programming lang
       // do something if the condition is true
     }
 
-## Examples
+Examples
+--------
 
 ### Missing parenthesis
 
@@ -39,7 +44,7 @@ To fix this code, you would need to add a parenthesis that closes the condition.
 
 ### Misused `is` keyword
 
-If you are coming from another programming language, it is also easy to add keywords that don't mean the same or have no meaning at all in JavaScript.
+If you are coming from another programming language, it is also easy to add keywords that don’t mean the same or have no meaning at all in JavaScript.
 
     if (done is true) {
      console.log("we are done!");
@@ -53,7 +58,8 @@ Instead you need to use a correct [comparison operator](https://developer.mozill
      console.log("we are done!");
     }
 
-## See also
+See also
+--------
 
 -   `if...else`
 -   [Comparison operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators)

@@ -1,8 +1,3 @@
----
-title: Q.js
-category: JavaScript libraries
----
-
 ### Creating promises (Q.promise)
 
     Q.promise (ok, fail) =>
@@ -63,11 +58,9 @@ category: JavaScript libraries
 
 ### Try
 
-Q.try ->
-promise()
+Q.try -&gt; promise()
 
-.catch (e) ->
-console.error "Oh well", e
+.catch (e) -&gt; console.error “Oh well”, e
 
 ### Reference
 

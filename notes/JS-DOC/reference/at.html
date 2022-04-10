@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>at</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="array.prototype.at">Array.prototype.at()</h1>
+<p>The <code>at()</code> method takes an integer value and returns the item at that index, allowing for positive and negative integers. Negative integers count back from the last item in the array.</p>
+<p>This is not to suggest there is anything wrong with using the square bracket notation. For example <code>array[0]</code> would return the first item. However instead of using <a href="length"><code>array.length</code></a> for latter items; e.g. <code>array[array.length-1]</code> for the last item, you can call <code>array.at(-1)</code>. <a href="#examples">(See the examples below)</a></p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>at(index)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>index</code><br />
+The index (position) of the array element to be returned. Supports relative indexing from the end of the array when passed a negative index; i.e. if a negative number is used, the element returned will be found by counting back from the end of the array.</p>
+<h3 id="return-value">Return value</h3>
+<p>The element in the array matching the given index. Returns <a href="../undefined"><code>undefined</code></a> if the given index can not be found.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="return-the-last-value-of-an-array">Return the last value of an array</h3>
+<p>The following example provides a function which returns the last element found in a specified array.</p>
+<pre><code>// Our array with items
+const cart = [&#39;apple&#39;, &#39;banana&#39;, &#39;pear&#39;];
+
+// A function which returns the last item of a given array
+function returnLast(arr) {
+  return arr.at(-1);
+}
+
+// Get the last item of our array &#39;cart&#39;
+const item1 = returnLast(cart);
+console.log(item1); // Logs: &#39;pear&#39;
+
+// Add an item to our &#39;cart&#39; array
+cart.push(&#39;orange&#39;);
+const item2 = returnLast(cart);
+console.log(item2); // Logs: &#39;orange&#39;</code></pre>
+<h3 id="comparing-methods">Comparing methods</h3>
+<p>This example compares different ways to select the penultimate (last but one) item of an <a href="../array"><code>Array</code></a>. While all the methods shown below are valid, this example highlights the succinctness and readability of the <code>at()</code> method.</p>
+<pre><code>// Our array with items
+const colors = [&#39;red&#39;, &#39;green&#39;, &#39;blue&#39;];
+
+// Using length property
+const lengthWay = colors[colors.length-2];
+console.log(lengthWay); // Logs: &#39;green&#39;
+
+// Using slice() method. Note an array is returned
+const sliceWay = colors.slice(-2, -1);
+console.log(sliceWay[0]); // Logs: &#39;green&#39;
+
+// Using at() method
+const atWay = colors.at(-2);
+console.log(atWay); // Logs: &#39;green&#39;</code></pre>
+</body>
+</html>

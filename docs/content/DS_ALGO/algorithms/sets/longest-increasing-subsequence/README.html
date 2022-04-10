@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="longest-increasing-subsequence">Longest Increasing Subsequence</h1>
+<p>The longest increasing subsequence problem is to find a subsequence of a given sequence in which the subsequence’s elements are in sorted order, lowest to highest, and in which the subsequence is as long as possible. This subsequence is not necessarily contiguous, or unique.</p>
+<h2 id="complexity">Complexity</h2>
+<p>The longest increasing subsequence problem is solvable in time <code>O(n log n)</code>, where <code>n</code> denotes the length of the input sequence.</p>
+<p>Dynamic programming approach has complexity <code>O(n * n)</code>.</p>
+<h2 id="example">Example</h2>
+<p>In the first 16 terms of the binary Van der Corput sequence</p>
+<pre><code>0, 8, 4, 12, 2, 10, 6, 14, 1, 9, 5, 13, 3, 11, 7, 15</code></pre>
+<p>a longest increasing subsequence is</p>
+<pre><code>0, 2, 6, 9, 11, 15.</code></pre>
+<p>This subsequence has length six; the input sequence has no seven-member increasing subsequences. The longest increasing subsequence in this example is not unique: for instance,</p>
+<pre><code>0, 4, 6, 9, 11, 15 or
+0, 2, 6, 9, 13, 15 or
+0, 4, 6, 9, 13, 15</code></pre>
+<p>are other increasing subsequences of equal length in the same input sequence.</p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Longest_increasing_subsequence">Wikipedia</a></li>
+<li><a href="https://www.youtube.com/watch?v=CE2b_-XfVDk&amp;list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8">Dynamic Programming Approach on YouTube</a></li>
+</ul>
+</body>
+</html>

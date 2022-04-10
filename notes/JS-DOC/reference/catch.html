@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>catch</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="promise.prototype.catch">Promise.prototype.catch()</h1>
+<p>The <code>catch()</code> method returns a <a href="../promise"><code>Promise</code></a> and deals with rejected cases only. It behaves the same as calling <a href="then"><code>Promise.prototype.then(undefined, onRejected)</code></a> (in fact, calling <code>obj.catch(onRejected)</code> internally calls <code>obj.then(undefined, onRejected)</code>). This means that you have to provide an <code>onRejected</code> function even if you want to fall back to an <code>undefined</code> result value - for example <code>obj.catch(() =&gt; {})</code>.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>p.catch(onRejected);
+
+p.catch(function(reason) {
+   // rejection
+});</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>onRejected</code><br />
+A <a href="../function"><code>Function</code></a> called when the <code>Promise</code> is rejected. This function has one argument:</p>
+<p><code>reason</code><br />
+The rejection reason.</p>
+<p>The Promise returned by <code>catch()</code> is rejected if <code>onRejected</code> throws an error or returns a Promise which is itself rejected; otherwise, it is resolved.</p>
+<h3 id="return-value">Return value</h3>
+<p>Internally calls <code>Promise.prototype.then</code> on the object upon which it was called, passing the parameters <code>undefined</code> and the received <code>onRejected</code> handler. Returns the value of that call, which is a <a href="../promise"><code>Promise</code></a>.</p>
+<p><strong>Warning:</strong> The examples below are throwing instances of <a href="../error">Error</a>. This is considered good practice in contrast to throwing Strings; otherwise, the part doing the catching would have to perform checks to see if the argument was a string or an error, and you might lose valuable information like stack traces.</p>
+<p><strong>Demonstration of the internal call:</strong></p>
+<pre><code>// overriding original Promise.prototype.then/catch just to add some logs
+(function(Promise){
+    var originalThen = Promise.prototype.then;
+    var originalCatch = Promise.prototype.catch;
+
+    Promise.prototype.then = function(){
+        console.log(&#39;&gt; &gt; &gt; &gt; &gt; &gt; called .then on %o with arguments: %o&#39;, this, arguments);
+        return originalThen.apply(this, arguments);
+    };
+    Promise.prototype.catch = function(){
+        console.error(&#39;&gt; &gt; &gt; &gt; &gt; &gt; called .catch on %o with arguments: %o&#39;, this, arguments);
+        return originalCatch.apply(this, arguments);
+    };
+
+})(this.Promise);
+
+// calling catch on an already resolved promise
+Promise.resolve().catch(function XXX(){});
+
+// logs:
+// &gt; &gt; &gt; &gt; &gt; &gt; called .catch on Promise{} with arguments: Arguments{1} [0: function XXX()]
+// &gt; &gt; &gt; &gt; &gt; &gt; called .then on Promise{} with arguments: Arguments{2} [0: undefined, 1: function XXX()]</code></pre>
+<h2 id="description">Description</h2>
+<p>The <code>catch</code> method is used for error handling in promise composition. Since it returns a <a href="../promise"><code>Promise</code></a>, it <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises#chaining_after_a_catch">can be chained</a> in the same way as its sister method, <a href="then"><code>then()</code></a>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-and-chaining-the-catch-method">Using and chaining the catch method</h3>
+<pre><code>var p1 = new Promise(function(resolve, reject) {
+  resolve(&#39;Success&#39;);
+});
+
+p1.then(function(value) {
+  console.log(value); // &quot;Success!&quot;
+  throw new Error(&#39;oh, no!&#39;);
+}).catch(function(e) {
+  console.error(e.message); // &quot;oh, no!&quot;
+}).then(function(){
+  console.log(&#39;after a catch the chain is restored&#39;);
+}, function () {
+  console.log(&#39;Not fired due to the catch&#39;);
+});
+
+// The following behaves the same as above
+p1.then(function(value) {
+  console.log(value); // &quot;Success!&quot;
+  return Promise.reject(&#39;oh, no!&#39;);
+}).catch(function(e) {
+  console.error(e); // &quot;oh, no!&quot;
+}).then(function(){
+  console.log(&#39;after a catch the chain is restored&#39;);
+}, function () {
+  console.log(&#39;Not fired due to the catch&#39;);
+});</code></pre>
+<h3 id="gotchas-when-throwing-errors">Gotchas when throwing errors</h3>
+<pre><code>// Throwing an error will call the catch method most of the time
+var p1 = new Promise(function(resolve, reject) {
+  throw new Error(&#39;Uh-oh!&#39;);
+});
+
+p1.catch(function(e) {
+  console.error(e); // &quot;Uh-oh!&quot;
+});
+
+// Errors thrown inside asynchronous functions will act like uncaught errors
+var p2 = new Promise(function(resolve, reject) {
+  setTimeout(function() {
+    throw new Error(&#39;Uncaught Exception!&#39;);
+  }, 1000);
+});
+
+p2.catch(function(e) {
+  console.error(e); // This is never called
+});
+
+// Errors thrown after resolve is called will be silenced
+var p3 = new Promise(function(resolve, reject) {
+  resolve();
+  throw new Error(&#39;Silenced Exception!&#39;);
+});
+
+p3.catch(function(e) {
+   console.error(e); // This is never called
+});</code></pre>
+<h3 id="if-it-is-resolved">If it is resolved</h3>
+<pre><code>//Create a promise which would not call onReject
+var p1 = Promise.resolve(&quot;calling next&quot;);
+
+var p2 = p1.catch(function (reason) {
+    //This is never called
+    console.error(&quot;catch p1!&quot;);
+    console.error(reason);
+});
+
+p2.then(function (value) {
+    console.log(&quot;next promise&#39;s onFulfilled&quot;); /* next promise&#39;s onFulfilled */
+    console.log(value); /* calling next */
+}, function (reason) {
+    console.log(&quot;next promise&#39;s onRejected&quot;);
+    console.log(reason);
+});</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-promise.prototype.catch">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-promise.prototype.catch</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>catch</code></p>
+<p>32</p>
+<p>12</p>
+<p>29</p>
+<p>No</p>
+<p>19</p>
+<p>8</p>
+<p>4.4.3</p>
+<p>32</p>
+<p>29</p>
+<p>19</p>
+<p>8</p>
+<p>2.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../promise"><code>Promise</code></a></li>
+<li><a href="then"><code>Promise.prototype.then()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch</a></p>
+</body>
+</html>

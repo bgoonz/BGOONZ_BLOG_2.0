@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>sinh</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="math.sinh">Math.sinh()</h1>
+<p>The <code>Math.sinh()</code> function returns the hyperbolic sine of a number, that can be expressed using the <a href="e">constant e</a>:</p>
+<p><br /><span class="math display">$$\\mathtt{\\operatorname{Math.sinh(x)}} = \\frac{e^{x} - e^{- x}}{2}$$</span><br /></p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>Math.sinh(x)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>x</code><br />
+A number.</p>
+<h3 id="return-value">Return value</h3>
+<p>The hyperbolic sine of the given number.</p>
+<h2 id="description">Description</h2>
+<p>Because <code>sinh()</code> is a static method of <code>Math</code>, you always use it as <code>Math.sinh()</code>, rather than as a method of a <code>Math</code> object you created (<code>Math</code> is not a constructor).</p>
+<h2 id="polyfill">Polyfill</h2>
+<p>This can be emulated with the help of the <a href="exp"><code>Math.exp()</code></a> function:</p>
+<pre><code>Math.sinh = Math.sinh || function(x) {
+  return (Math.exp(x) - Math.exp(-x)) / 2;
+}</code></pre>
+<p>or using only one call to the <a href="exp"><code>Math.exp()</code></a> function:</p>
+<pre><code>Math.sinh = Math.sinh || function(x) {
+  var y = Math.exp(x);
+  return (y - 1 / y) / 2;
+}</code></pre>
+<h2 id="examples">Examples</h2>
+<h3 id="using-math.sinh">Using Math.sinh()</h3>
+<pre><code>Math.sinh(0); // 0
+Math.sinh(1); // 1.1752011936438014</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-math.sinh">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-math.sinh</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>sinh</code></p>
+<p>38</p>
+<p>12</p>
+<p>25</p>
+<p>No</p>
+<p>25</p>
+<p>8</p>
+<p>38</p>
+<p>38</p>
+<p>25</p>
+<p>25</p>
+<p>8</p>
+<p>3.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="acosh"><code>Math.acosh()</code></a></li>
+<li><a href="asinh"><code>Math.asinh()</code></a></li>
+<li><a href="atanh"><code>Math.atanh()</code></a></li>
+<li><a href="cosh"><code>Math.cosh()</code></a></li>
+<li><a href="tanh"><code>Math.tanh()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sinh" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sinh</a></p>
+</body>
+</html>

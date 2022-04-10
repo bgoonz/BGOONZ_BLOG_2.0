@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>php</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="to-view-the-php-version">To view the php version:</h1>
+<p>php -v</p>
+<h1 id="to-view-the-installed-php-modules">To view the installed php modules:</h1>
+<p>php -m</p>
+<h1 id="to-view-phpinfo-information">To view phpinfo() information:</h1>
+<p>php -i</p>
+<h1 id="to-lint-a-php-file">To lint a php file:</h1>
+<p>php -l file.php</p>
+<h1 id="to-lint-all-php-files-within-the-cwd">To lint all php files within the cwd:</h1>
+<p>find . -name “*.php” -print0 | xargs -0 -n1 -P8 php -l</p>
+<h1 id="to-enter-an-interactive-shell">To enter an interactive shell:</h1>
+<p>php -a</p>
+<h1 id="to-locate-the-systems-php.ini-files">To locate the system’s php.ini files:</h1>
+<p>php -i | grep “php.ini”</p>
+<h1 id="to-start-a-local-webserver-for-the-cwd-on-port-3000-requires-php-5.4">To start a local webserver for the cwd on port 3000 (requires php &gt;= 5.4):</h1>
+<p>php -S localhost:3000</p>
+</body>
+</html>

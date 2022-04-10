@@ -1,8 +1,10 @@
-# try...catch
+try…catch
+=========
 
 The `try...catch` statement marks a block of statements to try and specifies a response should an exception be thrown.
 
-## Syntax
+Syntax
+------
 
     try {
       try_statements
@@ -26,7 +28,8 @@ An optional identifier to hold an exception object for the associated `catch`-bl
 `finally_statements`  
 Statements that are executed after the `try` statement completes. These statements execute regardless of whether an exception was thrown or caught.
 
-## Description
+Description
+-----------
 
 The `try` statement consists of a `try`-block, which contains one or more statements. `{}` must always be used, even for single statements. At least one `catch`-block, or a `finally`-block, must be present. This gives us three forms for the `try` statement:
 
@@ -38,7 +41,7 @@ A `catch`-block contains statements that specify what to do if an exception is t
 
 The `finally`-block will always execute after the `try`-block and `catch`-block(s) have finished executing. It always executes, regardless of whether an exception was thrown or caught.
 
-You can nest one or more `try` statements. If an inner `try` statement does not have a `catch`-block, the enclosing `try` statement's `catch`-block is used instead.
+You can nest one or more `try` statements. If an inner `try` statement does not have a `catch`-block, the enclosing `try` statement’s `catch`-block is used instead.
 
 You can also use the `try` statement to handle JavaScript exceptions. See the [JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide) for more information on JavaScript exceptions.
 
@@ -57,7 +60,7 @@ The `catch`-block specifies an identifier (`e` in the example above) that holds 
 
 ### Conditional catch-blocks
 
-You can create "Conditional `catch`-blocks" by combining `try...catch` blocks with `if...else if...else` structures, like this:
+You can create “Conditional `catch`-blocks” by combining `try...catch` blocks with `if...else if...else` structures, like this:
 
     try {
       myroutine(); // may throw three types of exceptions
@@ -88,7 +91,7 @@ A common use case for this is to only catch (and silence) a small subset of expe
 
 ### The exception identifier
 
-When an exception is thrown in the `try`-block, _`exception_var`_ (i.e., the `e` in `catch (e)`) holds the exception value. You can use this identifier to get information about the exception that was thrown. This identifier is only available in the `catch`-block's [scope](https://developer.mozilla.org/en-US/docs/Glossary/Scope). If you don't need the exception value, it could be omitted.
+When an exception is thrown in the `try`-block, *`exception_var`* (i.e., the `e` in `catch (e)`) holds the exception value. You can use this identifier to get information about the exception that was thrown. This identifier is only available in the `catch`-block’s [scope](https://developer.mozilla.org/en-US/docs/Glossary/Scope). If you don’t need the exception value, it could be omitted.
 
     function isValidJSON(text) {
       try {
@@ -113,11 +116,12 @@ The following example shows one use case for the `finally`-block. The code opens
       closeMyFile(); // always close the resource
     }
 
-## Examples
+Examples
+--------
 
 ### Nested try-blocks
 
-First, let's see what happens with this:
+First, let’s see what happens with this:
 
     try {
       try {
@@ -151,7 +155,7 @@ Now, if we already caught the exception in the inner `try`-block by adding a `ca
     // "inner" "oops"
     // "finally"
 
-And now, let's rethrow the error.
+And now, let’s rethrow the error.
 
     try {
       try {
@@ -171,7 +175,7 @@ And now, let's rethrow the error.
     // "finally"
     // "outer" "oops"
 
-Any given exception will be caught only once by the nearest enclosing `catch`-block unless it is rethrown. Of course, any new exceptions raised in the "inner" block (because the code in `catch`-block may do something that throws), will be caught by the "outer" block.
+Any given exception will be caught only once by the nearest enclosing `catch`-block unless it is rethrown. Of course, any new exceptions raised in the “inner” block (because the code in `catch`-block may do something that throws), will be caught by the “outer” block.
 
 ### Returning from a finally-block
 
@@ -197,16 +201,16 @@ If the `finally`-block returns a value, this value becomes the return value of t
     // "inner" "oops"
     // "finally"
 
-The outer "oops" is not thrown because of the return in the `finally`-block. The same would apply to any value returned from the `catch`-block.
+The outer “oops” is not thrown because of the return in the `finally`-block. The same would apply to any value returned from the `catch`-block.
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-try-statement">ECMAScript (ECMA-262) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript (ECMA-262)<br />
+</p><span class="small">The definition of ‘try statement’ in that specification.</span></td></tr></tbody></table>
 
-<span class="small">The definition of 'try statement' in that specification.</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -288,11 +292,11 @@ No
 
 9.0
 
-## See also
+See also
+--------
 
 -   [`Error`](../global_objects/error)
 -   [`throw`](throw)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch</a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try…catch</a>

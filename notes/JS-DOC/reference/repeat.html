@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>repeat</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="string.prototype.repeat">String.prototype.repeat()</h1>
+<p>The <code>repeat()</code> method constructs and returns a new string which contains the specified number of copies of the string on which it was called, concatenated together.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>repeat(count)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>count</code><br />
+An integer between <code>0</code> and <a href="../number/positive_infinity"><code>+Infinity</code></a>, indicating the number of times to repeat the string.</p>
+<h3 id="return-value">Return value</h3>
+<p>A new string containing the specified number of copies of the given string.</p>
+<h3 id="exceptions">Exceptions</h3>
+<ul>
+<li><a href="../../errors/negative_repetition_count"><code>RangeError</code></a>: repeat count must be non-negative.</li>
+<li><a href="../../errors/resulting_string_too_large"><code>RangeError</code></a>: repeat count must be less than infinity and not overflow maximum string size.</li>
+</ul>
+<h2 id="examples">Examples</h2>
+<h3 id="using-repeat">Using repeat()</h3>
+<pre><code>&#39;abc&#39;.repeat(-1)    // RangeError
+&#39;abc&#39;.repeat(0)     // &#39;&#39;
+&#39;abc&#39;.repeat(1)     // &#39;abc&#39;
+&#39;abc&#39;.repeat(2)     // &#39;abcabc&#39;
+&#39;abc&#39;.repeat(3.5)   // &#39;abcabcabc&#39; (count will be converted to integer)
+&#39;abc&#39;.repeat(1/0)   // RangeError
+
+({ toString: () =&gt; &#39;abc&#39;, repeat: String.prototype.repeat }).repeat(2)
+// &#39;abcabc&#39; (repeat() is a generic method)</code></pre>
+<h2 id="polyfill">Polyfill</h2>
+<p>This method has been added to the ECMAScript 2015 specification and may not be available in all JavaScript implementations yet. However, you can polyfill <code>String.prototype.repeat()</code> with the following snippet:</p>
+<pre><code>if (!String.prototype.repeat) {
+  String.prototype.repeat = function(count) {
+    &#39;use strict&#39;;
+    if (this == null)
+      throw new TypeError(&#39;can\&#39;t convert &#39; + this + &#39; to object&#39;);
+
+    var str = &#39;&#39; + this;
+    // To convert string to integer.
+    count = +count;
+    // Check NaN
+    if (count != count)
+      count = 0;
+
+    if (count &lt; 0)
+      throw new RangeError(&#39;repeat count must be non-negative&#39;);
+
+    if (count == Infinity)
+      throw new RangeError(&#39;repeat count must be less than infinity&#39;);
+
+    count = Math.floor(count);
+    if (str.length == 0 || count == 0)
+      return &#39;&#39;;
+
+    // Ensuring count is a 31-bit integer allows us to heavily optimize the
+    // main part. But anyway, most current (August 2014) browsers can&#39;t handle
+    // strings 1 &lt;&lt; 28 chars or longer, so:
+    if (str.length * count &gt;= 1 &lt;&lt; 28)
+      throw new RangeError(&#39;repeat count must not overflow maximum string size&#39;);
+
+    var maxCount = str.length * count;
+    count = Math.floor(Math.log(count) / Math.log(2));
+    while (count) {
+       str += str;
+       count--;
+    }
+    str += str.substring(0, maxCount - str.length);
+    return str;
+  }
+}</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-string.prototype.repeat">ECMAScript (ECMA-262) <br/></p>
+<span class="small">The definition of ‘String.prototype.repeat’ in that specification.</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>repeat</code></p>
+<p>41</p>
+<p>12</p>
+<p>24</p>
+<p>No</p>
+<p>28</p>
+<p>9</p>
+<p>41</p>
+<p>36</p>
+<p>24</p>
+<p>28</p>
+<p>9</p>
+<p>3.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="concat"><code>String.prototype.concat()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat</a></p>
+</body>
+</html>

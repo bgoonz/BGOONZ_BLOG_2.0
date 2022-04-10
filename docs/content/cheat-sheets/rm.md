@@ -1,11 +1,15 @@
-# To remove all files and subdirs in <dir>:
+\# To remove all files and subdirs in
 
-rm -rf <dir>
+:
 
-# To ignore non-existent files:
+rm -rf
 
-rm -f <dir>
+To ignore non-existent files:
+=============================
 
-# To remove a file with this inode:
+rm -f
 
-find /tmp/ -inum 6666 -exec rm -i '{}' \;
+To remove a file with this inode:
+=================================
+
+find /tmp/ -inum 6666 -exec rm -i ‘{}’ ;

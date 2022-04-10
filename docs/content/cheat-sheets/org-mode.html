@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>org-mode</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<p>Begin org-mode ALT-x org-mode Save CTRL-x CTRL-s Export in other file formats (eg HTML,PDF) CTRL-c CTRL-e</p>
+<h1 id="outline">Outline</h1>
+<p>Section heading * New headline ALT-return Move headline up or down ALT-up_arrow/down_arrow Adjust indent depth of headline ALT-left_arrow/right_arrow Open/collapse section TAB Open/collapse All CTRL-TAB</p>
+<h1 id="to-do-lists">To-Do Lists</h1>
+<p>Mark list item as TODO ** TODO Cycle through workflow SHIFT-left_arrow/right_arrow Show only outstanding TODO items CTRL-c CTRL-v</p>
+<h1 id="tables">Tables</h1>
+<p>Table column separator Vertical/pipe character Reorganize table TAB Move column ALT-left_arrow/right_arrow Move row ALT-up_arrow/down_arrow</p>
+<h1 id="styles">Styles</h1>
+<p><em>bold</em> /italic/ <em>underlined</em> =code= <sub>verbatim</sub> +strike-through+</p>
+<h1 id="heading">Heading</h1>
+<p>Header -<em>- mode: org -</em>-</p>
+<h1 id="emacs">.emacs</h1>
+<p>To make org-mode automatically wrap lines:</p>
+<pre><code>(add-hook &#39;org-mode-hook
+          &#39;(lambda ()
+             (visual-line-mode 1)))</code></pre>
+</body>
+</html>

@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>lexical_grammar</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="lexical-grammar">Lexical grammar</h1>
+<p>This page describes JavaScript’s lexical grammar. The source text of ECMAScript scripts gets scanned from left to right and is converted into a sequence of input elements which are tokens, control characters, line terminators, comments or <a href="https://developer.mozilla.org/en-US/docs/Glossary/Whitespace">white space</a>. ECMAScript also defines certain keywords and literals and has rules for automatic insertion of semicolons to end statements.</p>
+<h2 id="control-characters">Control characters</h2>
+<p>Control characters have no visual representation but are used to control the interpretation of the text.</p>
+<table>
+<caption>
+Unicode format-control characters
+</caption>
+<thead>
+<tr class="header">
+<th>
+Code point
+</th>
+<th>
+Name
+</th>
+<th>
+Abbreviation
+</th>
+<th>
+Description
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<code>U+200C</code>
+</td>
+<td>
+Zero width non-joiner
+</td>
+<td>
+&lt;ZWNJ&gt;
+</td>
+<td>
+Placed between characters to prevent being connected into ligatures in certain languages (<a href="https://en.wikipedia.org/wiki/Zero-width_non-joiner">Wikipedia</a>).
+</td>
+</tr>
+<tr class="even">
+<td>
+<code>U+200D</code>
+</td>
+<td>
+Zero width joiner
+</td>
+<td>
+&lt;ZWJ&gt;
+</td>
+<td>
+Placed between characters that would not normally be connected in order to cause the characters to be rendered using their connected form in certain languages (<a href="https://en.wikipedia.org/wiki/Zero-width_joiner">Wikipedia</a>).
+</td>
+</tr>
+<tr class="odd">
+<td>
+<code>U+FEFF</code>
+</td>
+<td>
+Byte order mark
+</td>
+<td>
+&lt;BOM&gt;
+</td>
+<td>
+Used at the start of the script to mark it as Unicode and the text’s byte order (<a href="https://en.wikipedia.org/wiki/Byte_order_mark">Wikipedia</a>).
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="white-space">White space</h2>
+<p><a href="https://developer.mozilla.org/en-US/docs/Glossary/Whitespace">White space</a> characters improve the readability of source text and separate tokens from each other. These characters are usually unnecessary for the functionality of the code. <a href="https://en.wikipedia.org/wiki/Minification_%28programming%29">Minification tools</a> are often used to remove whitespace in order to reduce the amount of data that needs to be transferred.</p>
+<table>
+<caption>
+White space characters
+</caption>
+<thead>
+<tr class="header">
+<th>
+Code point
+</th>
+<th>
+Name
+</th>
+<th>
+Abbreviation
+</th>
+<th>
+Description
+</th>
+<th>
+Escape sequence
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+U+0009
+</td>
+<td>
+Character tabulation
+</td>
+<td>
+&lt;HT&gt;
+</td>
+<td>
+Horizontal tabulation
+</td>
+<td>
+/td&gt;
+</tr>
+<tr class="even">
+<td>
+U+000B
+</td>
+<td>
+Line tabulation
+</td>
+<td>
+&lt;VT&gt;
+</td>
+<td>
+Vertical tabulation
+</td>
+<td>
+/td&gt;
+</tr>
+<tr class="odd">
+<td>
+U+000C
+</td>
+<td>
+Form feed
+</td>
+<td>
+&lt;FF&gt;
+</td>
+<td>
+Page breaking control character (<a href="https://en.wikipedia.org/wiki/Page_break#Form_feed">Wikipedia</a>).
+</td>
+<td>
+/td&gt;
+</tr>
+<tr class="even">
+<td>
+U+0020
+</td>
+<td>
+Space
+</td>
+<td>
+&lt;SP&gt;
+</td>
+<td>
+Normal space
+</td>
+<td>
+</td>
+</tr>
+<tr class="odd">
+<td>
+U+00A0
+</td>
+<td>
+No-break space
+</td>
+<td>
+&lt;NBSP&gt;
+</td>
+<td>
+Normal space, but no point at which a line may break
+</td>
+<td>
+</td>
+</tr>
+<tr class="even">
+<td>
+Others
+</td>
+<td>
+Other Unicode space characters
+</td>
+<td>
+&lt;USP&gt;
+</td>
+<td>
+<a href="https://en.wikipedia.org/wiki/Space_%28punctuation%29#Spaces_in_Unicode">Spaces in Unicode on Wikipedia</a>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="line-terminators">Line terminators</h2>
+<p>In addition to <a href="https://developer.mozilla.org/en-US/docs/Glossary/Whitespace">white space</a> characters, line terminator characters are used to improve the readability of the source text. However, in some cases, line terminators can influence the execution of JavaScript code as there are a few places where they are forbidden. Line terminators also affect the process of <a href="#automatic_semicolon_insertion">automatic semicolon insertion</a>. Line terminators are matched by the <strong>\s</strong> class in <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions">regular expressions</a>.</p>
+<p>Only the following Unicode code points are treated as line terminators in ECMAScript, other line breaking characters are treated as white space (for example, Next Line, NEL, U+0085 is considered as white space).</p>
+<table>
+<caption>
+Line terminator characters
+</caption>
+<thead>
+<tr class="header">
+<th>
+Code point
+</th>
+<th>
+Name
+</th>
+<th>
+Abbreviation
+</th>
+<th>
+Description
+</th>
+<th>
+Escape sequence
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+U+000A
+</td>
+<td>
+Line Feed
+</td>
+<td>
+&lt;LF&gt;
+</td>
+<td>
+New line character in UNIX systems.
+</td>
+<td>
+
+</td>
+</tr>
+<tr class="even">
+<td>
+U+000D
+</td>
+<td>
+Carriage Return
+</td>
+<td>
+&lt;CR&gt;
+</td>
+<td>
+New line character in Commodore and early Mac systems.
+</td>
+<td>
+/td&gt;
+</tr>
+<tr class="odd">
+<td>
+U+2028
+</td>
+<td>
+Line Separator
+</td>
+<td>
+&lt;LS&gt;
+</td>
+<td>
+<a href="https://en.wikipedia.org/wiki/Newline">Wikipedia</a>
+</td>
+<td>
+</td>
+</tr>
+<tr class="even">
+<td>
+U+2029
+</td>
+<td>
+Paragraph Separator
+</td>
+<td>
+&lt;PS&gt;
+</td>
+<td>
+<a href="https://en.wikipedia.org/wiki/Newline">Wikipedia</a>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="comments">Comments</h2>
+<p>Comments are used to add hints, notes, suggestions, or warnings to JavaScript code. This can make it easier to read and understand. They can also be used to disable code to prevent it from being executed; this can be a valuable debugging tool.</p>
+<p>JavaScript has two long-standing ways to add comments to code.</p>
+<p>The first way is the <code>//</code> comment<strong>;</strong> this makes all text following it on the same line into a comment. For example:</p>
+<pre><code>function comment() {
+  // This is a one line JavaScript comment
+  console.log(&#39;Hello world!&#39;);
+}
+comment();</code></pre>
+<p>The second way is the <code>/* */</code> style, which is much more flexible.</p>
+<p>For example, you can use it on a single line:</p>
+<pre><code>function comment() {
+  /* This is a one line JavaScript comment */
+  console.log(&#39;Hello world!&#39;);
+}
+comment();</code></pre>
+<p>You can also make multiple-line comments, like this:</p>
+<pre><code>function comment() {
+  /* This comment spans multiple lines. Notice
+     that we don&#39;t need to end the comment until we&#39;re done. */
+  console.log(&#39;Hello world!&#39;);
+}
+comment();</code></pre>
+<p>You can also use it in the middle of a line, if you wish, although this can make your code harder to read so it should be used with caution:</p>
+<pre><code>function comment(x) {
+  console.log(&#39;Hello &#39; + x /* insert the value of x */ + &#39; !&#39;);
+}
+comment(&#39;world&#39;);</code></pre>
+<p>In addition, you can use it to disable code to prevent it from running, by wrapping code in a comment, like this:</p>
+<pre><code>function comment() {
+  /* console.log(&#39;Hello world!&#39;); */
+}
+comment();</code></pre>
+<p>In this case, the <code>console.log()</code> call is never issued, since it’s inside a comment. Any number of lines of code can be disabled this way.</p>
+<h2 id="hashbang-comments">Hashbang comments</h2>
+<p>A specialized third comment syntax, the <strong>hashbang comment</strong>, is in the process of being standardized in ECMAScript (see the <a href="https://github.com/tc39/proposal-hashbang">Hashbang Grammar proposal</a>).</p>
+<p>A hashbang comment behaves exactly like a single line-only (<code>//</code>) comment. Instead, it begins with <code>#!</code> and <strong>is only valid at the absolute start of a script or module</strong>. Note also that no whitespace of any kind is permitted before the <code>#!</code>. The comment consists of all the characters after <code>#!</code> up to the end of the first line; only one such comment is permitted.</p>
+<p>The hashbang comment specifies the path to a specific JavaScript interpreter that you want to use to execute the script. An example is as follows:</p>
+<pre><code>#!/usr/bin/env node
+
+console.log(&quot;Hello world&quot;);</code></pre>
+<p><strong>Note:</strong> Hashbang comments in JavaScript mimic <a href="https://en.wikipedia.org/wiki/Shebang_(Unix)">shebangs in Unix</a> used to run files with proper interpreter.</p>
+<p><strong>Warning:</strong> Although <a href="https://en.wikipedia.org/wiki/Byte_order_mark">BOM</a> before hashbang comment will work in a browser it is not advised to use BOM in a script with hasbang. BOM will not work when you try to run the script in Unix/Linux. So use UTF-8 without BOM if you want to run scripts directly from shell.</p>
+<p>You must only use the <code>#!</code> comment style to specify a JavaScript interpreter. In all other cases just use a <code>//</code> comment (or mulitiline comment).</p>
+<h2 id="keywords">Keywords</h2>
+<h3 id="reserved-keywords-as-of-ecmascript-2015">Reserved keywords as of ECMAScript 2015</h3>
+<ul>
+<li><a href="statements/break"><code>break</code></a></li>
+<li><a href="statements/switch"><code>case</code></a></li>
+<li><a href="statements/try...catch"><code>catch</code></a></li>
+<li><a href="statements/class"><code>class</code></a></li>
+<li><a href="statements/const"><code>const</code></a></li>
+<li><a href="statements/continue"><code>continue</code></a></li>
+<li><a href="statements/debugger"><code>debugger</code></a></li>
+<li><a href="statements/switch"><code>default</code></a></li>
+<li><a href="operators/delete"><code>delete</code></a></li>
+<li><a href="statements/do...while"><code>do</code></a></li>
+<li><a href="statements/if...else"><code>else</code></a></li>
+<li><a href="statements/export"><code>export</code></a></li>
+<li><a href="statements/class"><code>extends</code></a></li>
+<li><a href="statements/try...catch"><code>finally</code></a></li>
+<li><a href="statements/for"><code>for</code></a></li>
+<li><a href="statements/function"><code>function</code></a></li>
+<li><a href="statements/if...else"><code>if</code></a></li>
+<li><a href="statements/import"><code>import</code></a></li>
+<li><a href="operators/in"><code>in</code></a></li>
+<li><a href="operators/instanceof"><code>instanceof</code></a></li>
+<li><a href="operators/new"><code>new</code></a></li>
+<li><a href="statements/return"><code>return</code></a></li>
+<li><a href="operators/super"><code>super</code></a></li>
+<li><a href="statements/switch"><code>switch</code></a></li>
+<li><a href="operators/this"><code>this</code></a></li>
+<li><a href="statements/throw"><code>throw</code></a></li>
+<li><a href="statements/try...catch"><code>try</code></a></li>
+<li><a href="operators/typeof"><code>typeof</code></a></li>
+<li><a href="statements/var"><code>var</code></a></li>
+<li><a href="operators/void"><code>void</code></a></li>
+<li><a href="statements/while"><code>while</code></a></li>
+<li><a href="statements/with"><code>with</code></a></li>
+<li><a href="operators/yield"><code>yield</code></a></li>
+</ul>
+<h3 id="future-reserved-keywords">Future reserved keywords</h3>
+<p>The following are reserved as future keywords by the ECMAScript specification. They have no special functionality at present, but they might at some future time, so they cannot be used as identifiers.</p>
+<p>These are always reserved:</p>
+<ul>
+<li><code>enum</code></li>
+</ul>
+<p>The following are only reserved when they are found in strict mode code:</p>
+<ul>
+<li><code>implements</code></li>
+<li><code>interface</code></li>
+<li><a href="statements/let"><code>let</code></a></li>
+<li><code>package</code></li>
+<li><code>private</code></li>
+<li><code>protected</code></li>
+<li><code>public</code></li>
+<li><code>static</code></li>
+<li><a href="operators/yield"><code>yield</code></a></li>
+</ul>
+<p>The following are only reserved when they are found in module code:</p>
+<ul>
+<li><code>await</code></li>
+</ul>
+<h4 id="future-reserved-keywords-in-older-standards">Future reserved keywords in older standards</h4>
+<p>The following are reserved as future keywords by older ECMAScript specifications (ECMAScript 1 till 3).</p>
+<ul>
+<li><code>abstract</code></li>
+<li><code>boolean</code></li>
+<li><code>byte</code></li>
+<li><code>char</code></li>
+<li><code>double</code></li>
+<li><code>final</code></li>
+<li><code>float</code></li>
+<li><code>goto</code></li>
+<li><code>int</code></li>
+<li><code>long</code></li>
+<li><code>native</code></li>
+<li><code>short</code></li>
+<li><code>synchronized</code></li>
+<li><code>throws</code></li>
+<li><code>transient</code></li>
+<li><code>volatile</code></li>
+</ul>
+<p>Additionally, the literals <code>null</code>, <code>true</code>, and <code>false</code> cannot be used as identifiers in ECMAScript.</p>
+<h3 id="reserved-word-usage">Reserved word usage</h3>
+<p>Reserved words actually only apply to <em>Identifier</em>s (vs. <em>IdentifierName</em>s) . As described in <a href="https://es5.github.com/#A.1">es5.github.com/#A.1</a>, these are all <em>IdentifierName</em>s which do not exclude <em>ReservedWords</em>.</p>
+<pre><code>a.import
+a[&#39;import&#39;]
+a = { import: &#39;test&#39; }.</code></pre>
+<p>On the other hand the following is illegal because it’s an <em>Identifier</em>, which is an <em>IdentifierName</em> without the reserved words. Identifiers are used for <em>FunctionDeclaration</em>, <em>FunctionExpression</em>, <em>VariableDeclaration</em> and so on. <em>IdentifierNames</em> are used for <em>MemberExpression</em>, <em>CallExpression</em> and so on.</p>
+<pre><code>function import() {} // Illegal.</code></pre>
+<h3 id="identifiers-with-special-meanings">Identifiers with special meanings</h3>
+<p>A few identifiers have a special meaning in some contexts without being keywords of any kind. They include:</p>
+<ul>
+<li><a href="functions/arguments"><code>arguments</code></a></li>
+<li><a href="functions/get"><code>get</code></a></li>
+<li><a href="functions/set"><code>set</code></a></li>
+</ul>
+<h2 id="literals">Literals</h2>
+<h3 id="null-literal">Null literal</h3>
+<p>See also <a href="global_objects/null"><code>null</code></a> for more information.</p>
+<pre><code>null</code></pre>
+<h3 id="boolean-literal">Boolean literal</h3>
+<p>See also <a href="global_objects/boolean"><code>Boolean</code></a> for more information.</p>
+<pre><code>true
+false</code></pre>
+<h3 id="numeric-literals">Numeric literals</h3>
+<p>The <a href="global_objects/number"><code>Number</code></a> and <a href="global_objects/bigint"><code>BigInt</code></a> types use numeric literals.</p>
+<h4 id="decimal">Decimal</h4>
+<pre><code>1234567890
+42
+
+// Caution when using with a leading zero:
+0888 // 888 parsed as decimal
+0777 // parsed as octal, 511 in decimal</code></pre>
+<p>Note that decimal literals can start with a zero (<code>0</code>) followed by another decimal digit, but If all digits after the leading <code>0</code> are smaller than 8, the number is interpreted as an octal number. This won’t throw in JavaScript, see <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=957513">bug 957513</a>. See also the page about <a href="global_objects/parseint"><code>parseInt()</code></a></p>
+<h5 id="exponential">Exponential</h5>
+<p>The decimal exponential literal is specified by the following format: <code>beN</code>; where <code>b</code> is a base number (integer or floating), followed by <code>e</code> char (which serves as separator or <em>exponent indicator</em>) and <code>N</code>, which is <em>exponent</em> or <em>power</em> number - a signed integer (as per 2019 ECMA-262 specs):</p>
+<pre><code>0e-5   // =&gt; 0
+0e+5   // =&gt; 0
+5e1    // =&gt; 50
+175e-2 // =&gt; 1.75
+1e3    // =&gt; 1000
+1e-3   // =&gt; 0.001</code></pre>
+<h4 id="binary">Binary</h4>
+<p>Binary number syntax uses a leading zero followed by a lowercase or uppercase Latin letter “B” (<code>0b</code> or <code>0B</code>). Because this syntax is new in ECMAScript 2015, see the browser compatibility table, below. If the digits after the <code>0b</code> are not 0 or 1, the following <a href="global_objects/syntaxerror"><code>SyntaxError</code></a> is thrown: “Missing binary digits after 0b”.</p>
+<pre><code>var FLT_SIGNBIT  = 0b10000000000000000000000000000000; // 2147483648
+var FLT_EXPONENT = 0b01111111100000000000000000000000; // 2139095040
+var FLT_MANTISSA = 0B00000000011111111111111111111111; // 8388607</code></pre>
+<h4 id="octal">Octal</h4>
+<p>Octal number syntax uses a leading zero followed by a lowercase or uppercase Latin letter “O” (<code>0o</code> or <code>0O)</code>. Because this syntax is new in ECMAScript 2015, see the browser compatibility table, below. If the digits after the <code>0o</code> are outside the range (01234567), the following <a href="global_objects/syntaxerror"><code>SyntaxError</code></a> is thrown: “Missing octal digits after 0o”.</p>
+<pre><code>var n = 0O755; // 493
+var m = 0o644; // 420
+
+// Also possible with just a leading zero (see note about decimals above)
+0755
+0644</code></pre>
+<h4 id="hexadecimal">Hexadecimal</h4>
+<p>Hexadecimal number syntax uses a leading zero followed by a lowercase or uppercase Latin letter “X” (<code>0x</code> or <code>0X)</code>. If the digits after 0x are outside the range (0123456789ABCDEF), the following <a href="global_objects/syntaxerror"><code>SyntaxError</code></a> is thrown: “Identifier starts immediately after numeric literal”.</p>
+<pre><code>0xFFFFFFFFFFFFFFFFF // 295147905179352830000
+0x123456789ABCDEF   // 81985529216486900
+0XA                 // 10</code></pre>
+<h4 id="bigint-literal">BigInt literal</h4>
+<p>The <a href="global_objects/bigint"><code>BigInt</code></a> type is a numeric primitive in JavaScript that can represent integers with arbitrary precision. BigInt literals are created by appending <code>n</code> to the end of an integer.</p>
+<pre><code>123456789123456789n     // 123456789123456789
+0o777777777777n         // 68719476735
+0x123456789ABCDEFn      // 81985529216486895‬
+0b11101001010101010101n // 955733</code></pre>
+<p>Note that legacy octal numbers with just a leading zero won’t work for <code>BigInt</code>:</p>
+<pre><code>// 0755n
+// SyntaxError: invalid BigInt syntax</code></pre>
+<p>For octal <code>BigInt</code> numbers, always use zero followed by the letter “o” (uppercase or lowercase):</p>
+<pre><code>0o755n</code></pre>
+<p>For more information about <code>BigInt</code>, see also <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#bigint_type">JavaScript data structures</a>.</p>
+<h4 id="numeric-separators">Numeric separators</h4>
+<p>To improve readability for numeric literals, underscores (<code>_</code>, <code>U+005F</code>) can be used as separators:</p>
+<pre><code>// separators in decimal numbers
+1_000_000_000_000
+1_050.95
+
+// separators in binary numbers
+0b1010_0001_1000_0101
+
+// separators in octal numbers
+0o2_2_5_6
+
+// separators in hex numbers
+0xA0_B0_C0
+
+// separators in BigInts
+1_000_000_000_000_000_000_000n</code></pre>
+<p>Note these limitations:</p>
+<pre><code>// More than one underscore in a row is not allowed
+100__000; // SyntaxError
+
+// Not allowed at the end of numeric literals
+100_; // SyntaxError
+
+// Can not be used after leading 0
+0_1; // SyntaxError</code></pre>
+<h3 id="object-literals">Object literals</h3>
+<p>See also <a href="global_objects/object"><code>Object</code></a> and <a href="operators/object_initializer">Object initializer</a> for more information.</p>
+<pre><code>var o = { a: &#39;foo&#39;, b: &#39;bar&#39;, c: 42 };
+
+// shorthand notation. New in ES2015
+var a = &#39;foo&#39;, b = &#39;bar&#39;, c = 42;
+var o = {a, b, c};
+
+// instead of
+var o = { a: a, b: b, c: c };</code></pre>
+<h3 id="array-literals">Array literals</h3>
+<p>See also <a href="global_objects/array"><code>Array</code></a> for more information.</p>
+<pre><code>[1954, 1974, 1990, 2014]</code></pre>
+<h3 id="string-literals">String literals</h3>
+<p>A string literal is zero or more Unicode code points enclosed in single or double quotes. Unicode code points may also be represented by an escape sequence. All code points may appear literally in a string literal except for these closing quote code points:</p>
+<ul>
+<li>U+005C \ (backslash),</li>
+<li>U+000D &lt;CR&gt;,</li>
+<li>and U+000A &lt;LF&gt;.</li>
+</ul>
+<p>Prior to the <a href="https://github.com/tc39/proposal-json-superset">proposal to make all JSON text valid ECMA-262</a>, U+2028 &lt;LS&gt; and U+2029 &lt;PS&gt;, were also disallowed from appearing unescaped in string literals.</p>
+<p>Any code points may appear in the form of an escape sequence. String literals evaluate to ECMAScript String values. When generating these String values Unicode code points are UTF-16 encoded.</p>
+<pre><code>&#39;foo&#39;
+&quot;bar&quot;</code></pre>
+<h4 id="hexadecimal-escape-sequences">Hexadecimal escape sequences</h4>
+<p>Hexadecimal escape sequences consist of <code>\x</code> followed by exactly two hexadecimal digits representing a code unit or code point in the range 0x0000 to 0x00FF.</p>
+<pre><code>&#39;\xA9&#39; // &quot;©&quot;</code></pre>
+<h4 id="unicode-escape-sequences">Unicode escape sequences</h4>
+<p>A Unicode escape sequence consists of exactly four hexadecimal digits following <code>\u</code>. It represents a code unit in the UTF-16 encoding. For code points U+0000 to U+FFFF, the code unit is equal to the code point. Code points U+10000 to U+10FFFF require two escape sequences representing the two code units (a surrogate pair) used to encode the character; the surrogate pair is distinct from the code point.</p>
+<p>See also <a href="global_objects/string/fromcharcode"><code>String.fromCharCode()</code></a> and <a href="global_objects/string/charcodeat"><code>String.prototype.charCodeAt()</code></a>.</p>
+<pre><code>&#39;\u00A9&#39; // &quot;©&quot; (U+A9)</code></pre>
+<h4 id="unicode-code-point-escapes">Unicode code point escapes</h4>
+<p>A Unicode code point escape consists of <code>\u{</code>, followed by a code point in hexadecimal base, followed by <code>}</code>. The value of the hexadecimal digits must be in the range 0 and 0x10FFFF inclusive. Code points in the range U+10000 to U+10FFFF do not need to be represented as a surrogate pair. Code point escapes were added to JavaScript in ECMAScript 2015 (ES6).</p>
+<p>See also <a href="global_objects/string/fromcodepoint"><code>String.fromCodePoint()</code></a> and <a href="global_objects/string/codepointat"><code>String.prototype.codePointAt()</code></a>.</p>
+<pre><code>&#39;\u{2F804}&#39; // CJK COMPATIBILITY IDEOGRAPH-2F804 (U+2F804)
+
+// the same character represented as a surrogate pair
+&#39;\uD87E\uDC04&#39;</code></pre>
+<h3 id="regular-expression-literals">Regular expression literals</h3>
+<p>See also <a href="global_objects/regexp"><code>RegExp</code></a> for more information.</p>
+<pre><code>/ab+c/g
+
+// An &quot;empty&quot; regular expression literal
+// The empty non-capturing group is necessary
+// to avoid ambiguity with single-line comments.
+/(?:)/</code></pre>
+<h3 id="template-literals">Template literals</h3>
+<p>See also <a href="template_literals">template strings</a> for more information.</p>
+<pre><code>`string text`
+
+`string text line 1
+ string text line 2`
+
+`string text ${expression} string text`
+
+tag `string text ${expression} string text`</code></pre>
+<h2 id="automatic-semicolon-insertion">Automatic semicolon insertion</h2>
+<p>Some <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements">JavaScript statements</a> must be terminated with semicolons and are therefore affected by automatic semicolon insertion (ASI):</p>
+<ul>
+<li>Empty statement</li>
+<li><code>let</code>, <code>const</code>, variable statement</li>
+<li><code>import</code>, <code>export</code>, module declaration</li>
+<li>Expression statement</li>
+<li><code>debugger</code></li>
+<li><code>continue</code>, <code>break</code>, <code>throw</code></li>
+<li><code>return</code></li>
+</ul>
+<p>The ECMAScript specification mentions <a href="https://tc39.github.io/ecma262/#sec-rules-of-automatic-semicolon-insertion">three rules of semicolon insertion</a>.</p>
+<ol type="1">
+<li><p>A semicolon is inserted before, when a <a href="#line_terminators">Line terminator</a> or “}” is encountered that is not allowed by the grammar.</p>
+<p>{ 1 2 } 3</p>
+<p>// is transformed by ASI into:</p>
+<p>{ 1 ;2 ;} 3;</p></li>
+<li><p>A semicolon is inserted at the end, when the end of the input stream of tokens is detected and the parser is unable to parse the single input stream as a complete program.</p></li>
+</ol>
+<p>Here <code>++</code> is not treated as a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#increment">postfix operator</a> applying to variable <code>b</code>, because a line terminator occurs between <code>b</code> and <code>++</code>.</p>
+<pre><code>a = b
+++c
+
+// is transformend by ASI into
+
+a = b;
+++c;</code></pre>
+<ol start="3" type="1">
+<li>A semicolon is inserted at the end, when a statement with restricted productions in the grammar is followed by a line terminator. These statements with “no LineTerminator here” rules are:</li>
+</ol>
+<ul>
+<li>PostfixExpressions (<code>++</code> and <code>--</code>)</li>
+<li><code>continue</code></li>
+<li><code>break</code></li>
+<li><code>return</code></li>
+<li><code>yield</code>, <code>yield*</code></li>
+<li><code>module</code></li>
+</ul>
+<!-- -->
+<pre><code>return
+a + b
+
+// is transformed by ASI into
+
+return;
+a + b;</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-ecmascript-language-lexical-grammar">ECMAScript (ECMA-262) <br/></p>
+<span class="small">The definition of ‘Lexical Grammar’ in that specification.</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>array_literals</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>4</p>
+<p>4</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>binary_numeric_literals</code></p>
+<p>41</p>
+<p>12</p>
+<p>25</p>
+<p>No</p>
+<p>28</p>
+<p>9</p>
+<p>41</p>
+<p>41</p>
+<p>25</p>
+<p>28</p>
+<p>9</p>
+<p>4.0</p>
+<p><code>boolean_literals</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>decimal_numeric_literals</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>hashbang_comments</code></p>
+<p>74</p>
+<p>79</p>
+<p>67</p>
+<p>No</p>
+<p>62</p>
+<p>No</p>
+<p>74</p>
+<p>74</p>
+<p>67</p>
+<p>53</p>
+<p>No</p>
+<p>No</p>
+<p><code>hexadecimal_escape_sequences</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>4</p>
+<p>4</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>hexadecimal_numeric_literals</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>null_literal</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>numeric_separators</code></p>
+<p>75</p>
+<p>79</p>
+<p>70</p>
+<p>No</p>
+<p>62</p>
+<p>13</p>
+<p>75</p>
+<p>75</p>
+<p>79</p>
+<p>No</p>
+<p>13</p>
+<p>No</p>
+<p><code>octal_numeric_literals</code></p>
+<p>41</p>
+<p>12</p>
+<p>25</p>
+<p>No</p>
+<p>28</p>
+<p>9</p>
+<p>41</p>
+<p>41</p>
+<p>25</p>
+<p>28</p>
+<p>9</p>
+<p>4.0</p>
+<p><code>regular_expression_literals</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>4</p>
+<p>5</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>string_literals</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>unicode_escape_sequences</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>4</p>
+<p>4</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<p><code>unicode_point_escapes</code></p>
+<p>44</p>
+<p>12</p>
+<p>40</p>
+<p>No</p>
+<p>31</p>
+<p>9</p>
+<p>44</p>
+<p>44</p>
+<p>40</p>
+<p>32</p>
+<p>9</p>
+<p>4.0</p>
+<p><code>shorthand_object_literals</code></p>
+<p>43</p>
+<p>12</p>
+<p>33</p>
+<p>No</p>
+<p>30</p>
+<p>9</p>
+<p>43</p>
+<p>43</p>
+<p>33</p>
+<p>30</p>
+<p>9</p>
+<p>4.0</p>
+<p><code>template_literals</code></p>
+<p>41</p>
+<p>12</p>
+<p>34</p>
+<p>No</p>
+<p>28</p>
+<p>9</p>
+<p>41</p>
+<p>41</p>
+<p>34</p>
+<p>28</p>
+<p>9</p>
+<p>4.0</p>
+<p><code>trailing_commas</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>9</p>
+<p>9.5</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="https://whereswalden.com/2013/08/12/micro-feature-from-es6-now-in-firefox-aurora-and-nightly-binary-and-octal-numbers/">Jeff Walden: Binary and octal numbers</a></li>
+<li><a href="https://mathiasbynens.be/notes/javascript-escapes">Mathias Bynens: JavaScript character escape sequences</a></li>
+<li><a href="global_objects/boolean"><code>Boolean</code></a></li>
+<li><a href="global_objects/number"><code>Number</code></a></li>
+<li><a href="global_objects/regexp"><code>RegExp</code></a></li>
+<li><a href="global_objects/string"><code>String</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar</a></p>
+</body>
+</html>

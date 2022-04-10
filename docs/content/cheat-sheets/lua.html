@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Lua</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Lua</h1>
+</header>
+<h2 id="comments">Comments</h2>
+<pre><code>-- comment
+--[[ Multiline
+     comment ]]</code></pre>
+<h2 id="invoking-functions">Invoking functions</h2>
+<pre><code>print()
+print(&quot;Hi&quot;)
+
+-- You can omit parentheses if the argument is one string or table literal
+print &quot;Hello World&quot;     &lt;--&gt;     print(&quot;Hello World&quot;)
+dofile &#39;a.lua&#39;          &lt;--&gt;     dofile (&#39;a.lua&#39;)
+print [[a multi-line    &lt;--&gt;     print([[a multi-line
+ message]]                        message]])
+f{x=10, y=20}           &lt;--&gt;     f({x=10, y=20})
+type{}                  &lt;--&gt;     type({})</code></pre>
+<h2 id="tables-arrays">Tables / arrays</h2>
+<pre><code>t = {}
+t = { a = 1, b = 2 }
+t.a = function() ... end
+
+t = { [&quot;hello&quot;] = 200 }
+t.hello
+
+-- Remember, arrays are also tables
+array = { &quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot; }
+print(array[2])       -- &quot;b&quot; (one-indexed)
+print(#array)         -- 4 (length)</code></pre>
+<h2 id="loops">Loops</h2>
+<pre><code>while condition do
+end
+
+for i = 1,5 do
+end
+
+for i = start,finish,delta do
+end
+
+for k,v in pairs(tab) do
+end
+
+repeat
+until condition
+
+-- Breaking out:
+while x do
+  if condition then break end
+end</code></pre>
+<h2 id="conditionals">Conditionals</h2>
+<pre><code>if condition then
+  print(&quot;yes&quot;)
+elseif condition then
+  print(&quot;maybe&quot;)
+else
+  print(&quot;no&quot;)
+end</code></pre>
+<h2 id="variables">Variables</h2>
+<pre><code>local x = 2
+two, four = 2, 4</code></pre>
+<h2 id="functions">Functions</h2>
+<pre><code>function myFunction()
+  return 1
+end
+
+function myFunctionWithArgs(a, b)
+  -- ...
+end
+
+myFunction()
+
+anonymousFunctions(function()
+  -- ...
+end)
+
+-- Not exported in the module
+local function myPrivateFunction()
+end
+
+-- Splats
+function doAction(action, ...)
+  print(&quot;Doing &#39;&quot;..action..&quot;&#39; to&quot;, ...)
+  --&gt; print(&quot;Doing &#39;write&#39; to&quot;, &quot;Shirley&quot;, &quot;Abed&quot;)
+end
+
+doAction(&#39;write&#39;, &quot;Shirley&quot;, &quot;Abed&quot;)</code></pre>
+<h2 id="lookups">Lookups</h2>
+<pre><code>mytable = { x = 2, y = function() .. end }
+
+-- The same:
+mytable.x
+mytable[&#39;x&#39;]
+
+-- Syntactic sugar, these are equivalent:
+mytable.y(mytable)
+mytable:y()
+
+mytable.y(mytable, a, b)
+mytable:y(a, b)
+
+function X:y(z) .. end
+function X.y(self, z) .. end</code></pre>
+<h2 id="metatables">Metatables</h2>
+<pre><code>mt = {}
+
+-- A metatable is simply a table with functions in it.
+mt.__tostring = function() return &quot;lol&quot; end
+mt.__add      = function(b) ... end       -- a + b
+mt.__mul      = function(b) ... end       -- a * b
+mt.__index    = function(k) ... end       -- Lookups (a[k] or a.k)
+mt.__newindex = function(k, v) ... end    -- Setters (a[k] = v)
+
+-- Metatables allow you to override behavior of another table.
+mytable = {}
+setmetatable(mytable, mt)
+
+print(myobject)</code></pre>
+<h2 id="classes">Classes</h2>
+<pre><code>Account = {}
+
+function Account:new(balance)
+  local t = setmetatable({}, { __index = Account })
+
+  -- Your constructor stuff
+  t.balance = (balance or 0)
+  return t
+end
+
+function Account:withdraw(amount)
+  print(&quot;Withdrawing &quot;..amount..&quot;...&quot;)
+  self.balance = self.balance - amount
+  self:report()
+end
+
+function Account:report()
+  print(&quot;Your current balance is: &quot;..self.balance)
+end
+
+a = Account:new(9000)
+a:withdraw(200)    -- method call</code></pre>
+<h2 id="constants">Constants</h2>
+<pre><code>nil
+false
+true</code></pre>
+<h2 id="operators-and-their-metatable-names">Operators (and their metatable names)</h2>
+<pre><code>-- Relational (binary)
+-- __eq  __lt  __gt  __le  __ge
+   ==    &lt;     &gt;     &lt;=    &gt;=
+~=   -- Not equal, just like !=
+
+-- Arithmetic (binary)
+-- __add  __sub  __muv  __div  __mod  __pow
+   +      -      *      /      %      ^
+
+-- Arithmetic (unary)
+-- __unm (unary minus)
+   -
+
+-- Logic (and/or)
+nil and false  --&gt; nil
+false and nil  --&gt; false
+0 and 20       --&gt; 20
+10 and 20      --&gt; 20
+
+-- Length
+-- __len(array)
+#array
+
+-- Indexing
+-- __index(table, key)
+t[key]
+t.key
+
+-- __newindex(table, key, value)
+t[key]=value
+
+-- String concat
+-- __concat(left, right)
+&quot;hello, &quot;..name
+
+-- Call
+-- __call(func, ...)</code></pre>
+<h2 id="api-global-functions-ref">API: Global functions <a href="http://lua.gts-stolberg.de/en/Basis.php">(ref)</a></h2>
+<pre><code>dofile(&quot;hello.lua&quot;)
+loadfile(&quot;hello.lua&quot;)
+
+assert(x)    -- x or (raise an error)
+assert(x, &quot;failed&quot;)
+
+type(var)   -- &quot;nil&quot; | &quot;number&quot; | &quot;string&quot; | &quot;boolean&quot; | &quot;table&quot; | &quot;function&quot; | &quot;thread&quot; | &quot;userdata&quot;
+
+-- Does /not/ invoke meta methods (__index and __newindex)
+rawset(t, index, value)    -- Like t[index] = value
+rawget(t, index)           -- Like t[index]
+
+_G  -- Global context
+setfenv(1, {})  -- 1: current function, 2: caller, and so on -- {}: the new _G
+
+pairs(t)     -- iterable list of {key, value}
+ipairs(t)    -- iterable list of {index, value}
+
+tonumber(&quot;34&quot;)
+tonumber(&quot;8f&quot;, 16)</code></pre>
+<h2 id="api-strings">API: Strings</h2>
+<pre><code>&#39;string&#39;..&#39;concatenation&#39;
+
+s = &quot;Hello&quot;
+s:upper()
+s:lower()
+s:len()    -- Just like #s
+
+s:find()
+s:gfind()
+
+s:match()
+s:gmatch()
+
+s:sub()
+s:gsub()
+
+s:rep()
+s:char()
+s:dump()
+s:reverse()
+s:byte()
+s:format()</code></pre>
+<h2 id="api-tables">API: Tables</h2>
+<pre><code>table.foreach(t, function(row) ... end)
+table.setn
+table.insert(t, 21)          -- append (--&gt; t[#t+1] = 21)
+table.insert(t, 4, 99)
+table.getn
+table.concat
+table.sort
+table.remove(t, 4)</code></pre>
+<h2 id="api-math-ref">API: Math <a href="http://lua-users.org/wiki/MathLibraryTutorial">(ref)</a></h2>
+<pre><code>math.abs     math.acos    math.asin       math.atan    math.atan2
+math.ceil    math.cos     math.cosh       math.deg     math.exp
+math.floor   math.fmod    math.frexp      math.ldexp   math.log
+math.log10   math.max     math.min        math.modf    math.pow
+math.rad     math.random  math.randomseed math.sin     math.sinh
+math.sqrt    math.tan     math.tanh
+
+math.sqrt(144)
+math</code></pre>
+<h2 id="api-misc">API: Misc</h2>
+<pre><code>io.output(io.open(&quot;file.txt&quot;, &quot;w&quot;))
+io.write(x)
+io.close()
+
+for line in io.lines(&quot;file.txt&quot;)
+
+file = assert(io.open(&quot;file.txt&quot;, &quot;r&quot;))
+file:read()
+file:lines()
+file:close()</code></pre>
+<h2 id="reference">Reference</h2>
+<p>http://www.lua.org/pil/13.html http://lua-users.org/wiki/ObjectOrientedProgramming</p>
+</body>
+</html>

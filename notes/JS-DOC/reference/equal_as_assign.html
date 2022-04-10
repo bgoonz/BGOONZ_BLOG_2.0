@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>equal_as_assign</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="syntaxerror-test-for-equality-mistyped-as-assignment">SyntaxError: test for equality (==) mistyped as assignment (=)?</h1>
+<p>The JavaScript warning “test for equality (==) mistyped as assignment (=)?” occurs when there was an assignment (<code>=</code>) when you would normally expect a test for equality (<code>==</code>).</p>
+<h2 id="message">Message</h2>
+<pre><code>Warning: SyntaxError: test for equality (==) mistyped as assignment (=)?</code></pre>
+<h2 id="error-type">Error type</h2>
+<p>(Firefox only) <a href="../global_objects/syntaxerror"><code>SyntaxError</code></a> warning which is reported only if <code>javascript.options.strict</code> preference is set to <code>true</code>.</p>
+<h2 id="what-went-wrong">What went wrong?</h2>
+<p>There was an assignment (<code>=</code>) when you would normally expect a test for equality (<code>==</code>). To help debugging, JavaScript (with strict warnings enabled) warns about this pattern.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="assignment-within-conditional-expressions">Assignment within conditional expressions</h3>
+<p>It is advisable to not use simple assignments in a conditional expression (such as <code>if...else</code>), because the assignment can be confused with equality when glancing over the code. For example, do not use the following code:</p>
+<pre><code>if (x = y) {
+  // do the right thing
+}</code></pre>
+<p>If you need to use an assignment in a conditional expression, a common practice is to put additional parentheses around the assignment. For example:</p>
+<pre><code>if ((x = y)) {
+  // do the right thing
+}</code></pre>
+<p>Otherwise, you probably meant to use a comparison operator (e.g. <code>==</code> or <code>===</code>):</p>
+<pre><code>if (x == y) {
+  // do the right thing
+}</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><code>if...else</code></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators">Comparison operators</a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Equal_as_assign" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Equal_as_assign</a></p>
+</body>
+</html>

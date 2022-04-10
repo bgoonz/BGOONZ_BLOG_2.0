@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>no_properties</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="typeerror-x-has-no-properties">TypeError: “x” has no properties</h1>
+<p>The JavaScript exception “null (or undefined) has no properties” occurs when you attempt to access properties of <a href="../global_objects/null"><code>null</code></a> and <a href="../global_objects/undefined"><code>undefined</code></a>. They don’t have any.</p>
+<h2 id="message">Message</h2>
+<pre><code>TypeError: Unable to get property {x} of undefined or null reference (Edge)
+TypeError: null has no properties (Firefox)
+TypeError: undefined has no properties (Firefox)</code></pre>
+<h2 id="error-type">Error type</h2>
+<p><a href="../global_objects/typeerror"><code>TypeError</code></a>.</p>
+<h2 id="what-went-wrong">What went wrong?</h2>
+<p>Both, <a href="../global_objects/null"><code>null</code></a> and <a href="../global_objects/undefined"><code>undefined</code></a>, have no properties you could access.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="null-and-undefined-have-no-properties">null and undefined have no properties</h3>
+<pre><code>null.foo;
+// TypeError: null has no properties
+
+undefined.bar;
+// TypeError: undefined has no properties</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../global_objects/null"><code>null</code></a></li>
+<li><a href="../global_objects/undefined"><code>undefined</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/No_properties" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/No_properties</a></p>
+</body>
+</html>

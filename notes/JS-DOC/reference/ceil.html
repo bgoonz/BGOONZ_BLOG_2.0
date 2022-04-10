@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>ceil</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="math.ceil">Math.ceil()</h1>
+<p>The <code>Math.ceil()</code> function always rounds a number up to the next largest integer.</p>
+<p><strong>Note:</strong> <code>Math.ceil(null</code>) returns integer 0 and does not give a <a href="../nan"><code>NaN</code></a> error.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>Math.ceil(x)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>x</code><br />
+A number.</p>
+<h3 id="return-value">Return value</h3>
+<p>The smallest integer greater than or equal to the given number.</p>
+<h2 id="description">Description</h2>
+<p>Because <code>ceil()</code> is a static method of <code>Math</code>, you always use it as <code>Math.ceil()</code>, rather than as a method of a <code>Math</code> object you created (<code>Math</code> is not a constructor).</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-math.ceil">Using Math.ceil()</h3>
+<p>The following example shows example usage of <code>Math.ceil()</code>.</p>
+<pre><code>Math.ceil(.95);    // 1
+Math.ceil(4);      // 4
+Math.ceil(7.004);  // 8
+Math.ceil(-0.95);  // -0
+Math.ceil(-4);     // -4
+Math.ceil(-7.004); // -7</code></pre>
+<h3 id="decimal-adjustment">Decimal adjustment</h3>
+<pre><code>// Closure
+(function() {
+  /**
+   * Decimal adjustment of a number.
+   *
+   * @param {String}  type  The type of adjustment.
+   * @param {Number}  value The number.
+   * @param {Integer} exp   The exponent (the 10 logarithm of the adjustment base).
+   * @returns {Number} The adjusted value.
+   */
+  function decimalAdjust(type, value, exp) {
+    // If the exp is undefined or zero...
+    if (typeof exp === &#39;undefined&#39; || +exp === 0) {
+      return Math[type](value);
+    }
+    value = +value;
+    exp = +exp;
+    // If the value is not a number or the exp is not an integer...
+    if (isNaN(value) || !(typeof exp === &#39;number&#39; &amp;&amp; exp % 1 === 0)) {
+      return NaN;
+    }
+    // Shift
+    value = value.toString().split(&#39;e&#39;);
+    value = Math[type](+(value[0] + &#39;e&#39; + (value[1] ? (+value[1] - exp) : -exp)));
+    // Shift back
+    value = value.toString().split(&#39;e&#39;);
+    return +(value[0] + &#39;e&#39; + (value[1] ? (+value[1] + exp) : exp));
+  }
+
+  // Decimal round
+  if (!Math.round10) {
+    Math.round10 = function(value, exp) {
+      return decimalAdjust(&#39;round&#39;, value, exp);
+    };
+  }
+  // Decimal floor
+  if (!Math.floor10) {
+    Math.floor10 = function(value, exp) {
+      return decimalAdjust(&#39;floor&#39;, value, exp);
+    };
+  }
+  // Decimal ceil
+  if (!Math.ceil10) {
+    Math.ceil10 = function(value, exp) {
+      return decimalAdjust(&#39;ceil&#39;, value, exp);
+    };
+  }
+})();
+
+// Round
+Math.round10(55.55, -1);   // 55.6
+Math.round10(55.549, -1);  // 55.5
+Math.round10(55, 1);       // 60
+Math.round10(54.9, 1);     // 50
+Math.round10(-55.55, -1);  // -55.5
+Math.round10(-55.551, -1); // -55.6
+Math.round10(-55, 1);      // -50
+Math.round10(-55.1, 1);    // -60
+// Floor
+Math.floor10(55.59, -1);   // 55.5
+Math.floor10(59, 1);       // 50
+Math.floor10(-55.51, -1);  // -55.6
+Math.floor10(-51, 1);      // -60
+// Ceil
+Math.ceil10(55.51, -1);    // 55.6
+Math.ceil10(51, 1);        // 60
+Math.ceil10(-55.59, -1);   // -55.5
+Math.ceil10(-59, 1);       // -50</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-math.ceil">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-math.ceil</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>ceil</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="abs"><code>Math.abs()</code></a></li>
+<li><a href="floor"><code>Math.floor()</code></a></li>
+<li><a href="round"><code>Math.round()</code></a></li>
+<li><a href="sign"><code>Math.sign()</code></a></li>
+<li><a href="trunc"><code>Math.trunc()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/ceil" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/ceil</a></p>
+</body>
+</html>

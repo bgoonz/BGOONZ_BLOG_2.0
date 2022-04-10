@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2022-01-03" />
+  <title>title</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">title</h1>
+<p class="subtitle">subtitle</p>
+<p class="date">2022-01-03</p>
+</header>
+<h1 id="to-resize-an-image-to-a-fixed-width-and-proportional-height">To resize an image to a fixed width and proportional height:</h1>
+<p>convert original.jpg -resize 100x converted.jpg</p>
+<h1 id="to-resize-an-image-to-a-fixed-height-and-proportional-width">To resize an image to a fixed height and proportional width:</h1>
+<p>convert original.jpg -resize x100 converted.jpg</p>
+<h1 id="to-resize-an-image-to-a-fixed-width-and-height">To resize an image to a fixed width and height:</h1>
+<p>convert original.jpg -resize 100x100 converted.jpg</p>
+<h1 id="to-resize-an-image-and-simultaneously-change-its-file-type">To resize an image and simultaneously change its file type:</h1>
+<p>convert original.jpg -resize 100x converted.png</p>
+<h1 id="to-resize-all-of-the-images-within-a-directory">To resize all of the images within a directory:</h1>
+<h1 id="to-implement-a-for-loop">To implement a for loop:</h1>
+<p>for file in <code>ls original/image/path/</code>; do new_path=${file%.*}; new_file=<code>basename $new_path</code>; convert <span class="math inline"><em>f</em><em>i</em><em>l</em><em>e</em> − <em>r</em><em>e</em><em>s</em><em>i</em><em>z</em><em>e</em>150<em>c</em><em>o</em><em>n</em><em>v</em><em>e</em><em>r</em><em>t</em><em>e</em><em>d</em>/<em>i</em><em>m</em><em>a</em><em>g</em><em>e</em>/<em>p</em><em>a</em><em>t</em><em>h</em>/</span>new_file.png; done</p>
+</body>
+</html>

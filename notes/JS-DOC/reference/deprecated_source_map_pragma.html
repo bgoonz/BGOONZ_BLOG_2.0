@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>deprecated_source_map_pragma</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="syntaxerror-using-to-indicate-sourceurl-pragmas-is-deprecated.-use-instead">SyntaxError: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead</h1>
+<p>The JavaScript warning “Using <code>//@</code> to indicate sourceURL pragmas is deprecated. Use <code>//#</code> instead” occurs when there is a deprecated source map syntax in a JavaScript source.</p>
+<h2 id="message">Message</h2>
+<pre><code>Warning: SyntaxError: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+
+Warning: SyntaxError: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead</code></pre>
+<h2 id="error-type">Error type</h2>
+<p>A warning that a <a href="../global_objects/syntaxerror"><code>SyntaxError</code></a> occurred. JavaScript execution won’t be halted.</p>
+<h2 id="what-went-wrong">What went wrong?</h2>
+<p>There is a deprecated source map syntax in a JavaScript source.</p>
+<p>JavaScript sources are often combined and minified to make delivering them from the server more efficient. With <a href="https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/">source maps</a>, the debugger can map the code being executed to the original source files.</p>
+<p>The source map specification changed the syntax due to a conflict with IE whenever it was found in the page after <code>//@cc_on</code> was interpreted to turn on conditional compilation in the IE JScript engine. The <a href="https://msdn.microsoft.com/en-us/library/8ka90k2e%28v=vs.94%29.aspx">conditional compilation comment</a> in IE is a little known feature, but it broke source maps with <a href="https://bugs.jquery.com/ticket/13274">jQuery</a> and other libraries.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="deprecated-syntax">Deprecated syntax</h3>
+<p>Syntax with the “@” sign is deprecated.</p>
+<pre><code>//@ sourceMappingURL=http://example.com/path/to/your/sourcemap.map</code></pre>
+<h3 id="standard-syntax">Standard syntax</h3>
+<p>Use the “#” sign instead.</p>
+<pre><code>//# sourceMappingURL=http://example.com/path/to/your/sourcemap.map</code></pre>
+<p>Or, alternatively, you can set a <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/SourceMap"><code>SourceMap</code></a> header to your JavaScript file to avoid having a comment at all:</p>
+<pre><code>SourceMap: /path/to/file.js.map</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Tools/Debugger/How_to/Use_a_source_map">How to use a source map - Firefox Tools documentation</a></li>
+<li><a href="https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/">Introduction to source maps - HTML5 rocks</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/SourceMap"><code>SourceMap</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Deprecated_source_map_pragma" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Deprecated_source_map_pragma</a></p>
+</body>
+</html>

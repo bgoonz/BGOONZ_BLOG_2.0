@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>label</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="label">label</h1>
+<p>The <strong>labeled statement</strong> can be used with <a href="break"><code>break</code></a> or <a href="continue"><code>continue</code></a> statements. It is prefixing a statement with an identifier which you can refer to.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>label :
+  statement</code></pre>
+<p><code>label</code><br />
+Any JavaScript identifier that is not a reserved word.</p>
+<p><code>statement</code><br />
+A JavaScript statement. <code>break</code> can be used with any labeled statement, and <code>continue</code> can be used with looping labeled statements.</p>
+<h2 id="description">Description</h2>
+<p>You can use a label to identify a loop, and then use the <code>break</code> or <code>continue</code> statements to indicate whether a program should interrupt the loop or continue its execution.</p>
+<p>Note that JavaScript has <em>no</em> <code>goto</code> statement, you can only use labels with <code>break</code> or <code>continue</code>.</p>
+<p>In <a href="../strict_mode">strict mode</a> code, you can’t use “<code>let</code>” as a label name. It will throw a <a href="../global_objects/syntaxerror"><code>SyntaxError</code></a> (let is a reserved identifier).</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-a-labeled-continue-with-for-loops">Using a labeled continue with for loops</h3>
+<pre><code>var i, j;
+
+loop1:
+for (i = 0; i &lt; 3; i++) {      //The first for statement is labeled &quot;loop1&quot;
+   loop2:
+   for (j = 0; j &lt; 3; j++) {   //The second for statement is labeled &quot;loop2&quot;
+      if (i === 1 &amp;&amp; j === 1) {
+         continue loop1;
+      }
+      console.log(&#39;i = &#39; + i + &#39;, j = &#39; + j);
+   }
+}
+
+// Output is:
+//   &quot;i = 0, j = 0&quot;
+//   &quot;i = 0, j = 1&quot;
+//   &quot;i = 0, j = 2&quot;
+//   &quot;i = 1, j = 0&quot;
+//   &quot;i = 2, j = 0&quot;
+//   &quot;i = 2, j = 1&quot;
+//   &quot;i = 2, j = 2&quot;
+// Notice how it skips both &quot;i = 1, j = 1&quot; and &quot;i = 1, j = 2&quot;</code></pre>
+<h3 id="using-a-labeled-continue-statement">Using a labeled continue statement</h3>
+<p>Given an array of items and an array of tests, this example counts the number of items that passes all the tests.</p>
+<pre><code>var itemsPassed = 0;
+var i, j;
+
+top:
+for (i = 0; i &lt; items.length; i++) {
+  for (j = 0; j &lt; tests.length; j++) {
+    if (!tests[j].pass(items[i])) {
+      continue top;
+    }
+  }
+
+  itemsPassed++;
+}</code></pre>
+<h3 id="using-a-labeled-break-with-for-loops">Using a labeled break with for loops</h3>
+<pre><code>var i, j;
+
+loop1:
+for (i = 0; i &lt; 3; i++) {      //The first for statement is labeled &quot;loop1&quot;
+   loop2:
+   for (j = 0; j &lt; 3; j++) {   //The second for statement is labeled &quot;loop2&quot;
+      if (i === 1 &amp;&amp; j === 1) {
+         break loop1;
+      }
+      console.log(&#39;i = &#39; + i + &#39;, j = &#39; + j);
+   }
+}
+
+// Output is:
+//   &quot;i = 0, j = 0&quot;
+//   &quot;i = 0, j = 1&quot;
+//   &quot;i = 0, j = 2&quot;
+//   &quot;i = 1, j = 0&quot;
+// Notice the difference with the previous continue example</code></pre>
+<h3 id="using-a-labeled-break-statement">Using a labeled break statement</h3>
+<p>Given an array of items and an array of tests, this example determines whether all items pass all tests.</p>
+<pre><code>var allPass = true;
+var i, j;
+
+top:
+for (i = 0; i &lt; items.length; i++) {
+  for (j = 0; j &lt; tests.length; j++) {
+    if (!tests[j].pass(items[i])) {
+      allPass = false;
+      break top;
+    }
+  }
+}</code></pre>
+<h3 id="using-a-labeled-block-with-break">Using a labeled block with break</h3>
+<p>You can use labels within simple blocks, but only <code>break</code> statements can make use of non-loop labels.</p>
+<pre><code>foo: {
+  console.log(&#39;face&#39;);
+  break foo;
+  console.log(&#39;this will not be executed&#39;);
+}
+console.log(&#39;swap&#39;);
+
+// this will log:
+
+// &quot;face&quot;
+// &quot;swap&quot;</code></pre>
+<h3 id="labeled-function-declarations">Labeled function declarations</h3>
+<p>Starting with ECMAScript 2015, labeled function declarations are now standardized for non-strict code in the <a href="https://www.ecma-international.org/ecma-262/6.0/#sec-labelled-function-declarations">web compatibility annex of the specification</a>.</p>
+<pre><code>L: function F() {}</code></pre>
+<p>In <a href="../strict_mode">strict mode</a> code, however, this will throw a <a href="../global_objects/syntaxerror"><code>SyntaxError</code></a>:</p>
+<pre><code>&#39;use strict&#39;;
+L: function F() {}
+// SyntaxError: functions cannot be labelled</code></pre>
+<p><a href="function*">Generator functions</a> can neither be labeled in strict code, nor in non-strict code:</p>
+<pre><code>L: function* F() {}
+// SyntaxError: generator functions cannot be labelled</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-labelled-statements">ECMAScript (ECMA-262) <br/></p>
+<span class="small">The definition of ‘Labelled statement’ in that specification.</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>label</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>4</p>
+<p>4</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="break"><code>break</code></a></li>
+<li><a href="continue"><code>continue</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/label" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/label</a></p>
+</body>
+</html>

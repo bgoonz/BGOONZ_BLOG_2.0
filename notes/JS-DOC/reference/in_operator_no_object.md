@@ -1,26 +1,31 @@
-# TypeError: cannot use 'in' operator to search for 'x' in 'y'
+TypeError: cannot use ‘in’ operator to search for ‘x’ in ‘y’
+============================================================
 
-The JavaScript exception "right-hand side of 'in' should be an object" occurs when the [`in` operator](../operators/in) was used to search in strings, or in numbers, or other primitive types. It can only be used to check if a property is in an object.
+The JavaScript exception “right-hand side of ‘in’ should be an object” occurs when the [`in` operator](../operators/in) was used to search in strings, or in numbers, or other primitive types. It can only be used to check if a property is in an object.
 
-## Message
+Message
+-------
 
     TypeError: Invalid operand to 'in' (Edge)
     TypeError: right-hand side of 'in' should be an object, got 'x' (Firefox)
     TypeError: cannot use 'in' operator to search for 'x' in 'y' (Firefox, Chrome)
 
-## Error type
+Error type
+----------
 
 [`TypeError`](../global_objects/typeerror)
 
-## What went wrong?
+What went wrong?
+----------------
 
-The [`in` operator](../operators/in) can only be used to check if a property is in an object. You can't search in strings, or in numbers, or other primitive types.
+The [`in` operator](../operators/in) can only be used to check if a property is in an object. You can’t search in strings, or in numbers, or other primitive types.
 
-## Examples
+Examples
+--------
 
 ### Searching in strings
 
-Unlike in other programming languages (e.g. Python), you can't search in strings using the [`in` operator](../operators/in).
+Unlike in other programming languages (e.g. Python), you can’t search in strings using the [`in` operator](../operators/in).
 
     "Hello" in "Hello World";
     // TypeError: cannot use 'in' operator to search for 'Hello' in 'Hello World'
@@ -30,9 +35,9 @@ Instead you will need to use [`String.prototype.indexOf()`](../global_objects/st
     "Hello World".indexOf("Hello") !== -1;
     // true
 
-### The operand can't be null or undefined
+### The operand can’t be null or undefined
 
-Make sure the object you are inspecting isn't actually [`null`](../global_objects/null) or [`undefined`](../global_objects/undefined).
+Make sure the object you are inspecting isn’t actually [`null`](../global_objects/null) or [`undefined`](../global_objects/undefined).
 
     var foo = null;
     "bar" in foo;
@@ -55,7 +60,8 @@ Be careful when using the `in` operator to search in [`Array`](../global_objects
     3 in trees; // true
     "oak" in trees; // false
 
-## See also
+See also
+--------
 
 -   [`in` operator](../operators/in)
 

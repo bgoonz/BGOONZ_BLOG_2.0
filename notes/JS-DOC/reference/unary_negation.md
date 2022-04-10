@@ -1,12 +1,15 @@
-# Unary negation (-)
+Unary negation (-)
+==================
 
 The unary negation operator (`-`) precedes its operand and negates it.
 
-## Syntax
+Syntax
+------
 
     Operator: -x
 
-## Examples
+Examples
+--------
 
 ### Negating numbers
 
@@ -25,14 +28,14 @@ The unary negation operator can convert a non-number into a number.
 
     // y = -4
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-unary-minus-operator">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-unary-minus-operator</span></td></tr></tbody></table>
 
-<span class="small">#sec-unary-minus-operator</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -88,7 +91,8 @@ Samsung Internet
 
 1.0
 
-## See also
+See also
+--------
 
 -   [Addition operator](addition)
 -   [Subtraction operator](subtraction)
@@ -100,6 +104,5 @@ Samsung Internet
 -   [Decrement operator](decrement)
 -   [Unary plus operator](unary_plus)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Unary_negation" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Unary_negation</a>

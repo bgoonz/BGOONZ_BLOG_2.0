@@ -1,45 +1,40 @@
-Build config validation --- 1 info
+Build config validation — 1 info
 
-[ ](https://docs.travis-ci.com/user/build-config-validation/)
+[](https://docs.travis-ci.com/user/build-config-validation/)
 
-bgoonz/BGOONZ_BLOG_2.0:.travis.yml@0de6597
+bgoonz/BGOONZ\_BLOG\_2.0:.travis.yml@0de6597
 
-```
-language: node_js
+    language: node_js
 
-os:
-  - linux
-  - osx
+    os:
+      - linux
+      - osx
 
-node_js:
-  - "node"
-  - "lts/*"
-  - "7"
-  - "8"
+    node_js:
+      - "node"
+      - "lts/*"
+      - "7"
+      - "8"
 
-script:
-  - npm install
-
-```
+    script:
+      - npm install
 
 Build Config
 
-```
-{
-  "language": "node_js",
-  "os": [
-    "linux",
-    "osx"
-  ],
-  "dist": "xenial",
-  "node_js": [
-    "node",
-    "lts/*",
-    "7",
-    "8"
-  ],
-  "script": [
-    "npm install"
-  ]
-}
-```
+    {
+      "language": "node_js",
+      "os": [
+        "linux",
+        "osx"
+      ],
+      "dist": "xenial",
+      "node_js": [
+        "node",
+        "lts/*",
+        "7",
+        "8"
+      ],
+      "script": [
+        "npm install"
+      ]
+    }

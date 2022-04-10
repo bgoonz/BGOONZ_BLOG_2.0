@@ -1,8 +1,10 @@
-# Array.prototype.unshift()
+Array.prototype.unshift()
+=========================
 
 The `unshift()` method adds one or more elements to the beginning of an array and returns the new length of the array.
 
-## Syntax
+Syntax
+------
 
     unshift(element0)
     unshift(element0, element1)
@@ -17,13 +19,14 @@ The elements to add to the front of the `arr`.
 
 The new [`length`](length) property of the object upon which the method was called.
 
-## Description
+Description
+-----------
 
 The `unshift` method inserts the given values to the beginning of an array-like object.
 
 `unshift` is intentionally generic. This method can be [called](../function/call) or [applied](../function/apply) to objects resembling arrays. Objects which do not contain a `length` property—reflecting the last in a series of consecutive, zero-based numerical properties—may not behave in any meaningful manner.
 
-Please note that, if multiple elements are passed as parameters, they're inserted in chunk at the beginning of the object, in the exact same order they were passed as parameters. Hence, calling `unshift` with `n` arguments **once**, or calling it `n` times with **1** argument (with a loop, for example), don't yield the same results.
+Please note that, if multiple elements are passed as parameters, they’re inserted in chunk at the beginning of the object, in the exact same order they were passed as parameters. Hence, calling `unshift` with `n` arguments **once**, or calling it `n` times with **1** argument (with a loop, for example), don’t yield the same results.
 
 See example:
 
@@ -42,7 +45,8 @@ See example:
     console.log(arr)
     // [3, 2, 1, 4, 5, 6]
 
-## Examples
+Examples
+--------
 
 ### Using unshift
 
@@ -60,14 +64,14 @@ See example:
     arr.unshift([-7, -6], [-5])  // the new array length is 8
     // arr is [ [-7, -6], [-5], [-4, -3], -2, -1, 0, 1, 2 ]
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.unshift">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-array.prototype.unshift</span></td></tr></tbody></table>
 
-<span class="small">#sec-array.prototype.unshift</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -123,7 +127,8 @@ Samsung Internet
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`Array.prototype.push()`](push)
 -   [`Array.prototype.pop()`](pop)

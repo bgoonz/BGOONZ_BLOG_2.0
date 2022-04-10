@@ -1,38 +1,45 @@
----
-tags: [packaging]
----
+All pacman commands are working the same way with yaourt.
+=========================================================
 
-# All pacman commands are working the same way with yaourt.
+Just check the pacman cheatsheet.
+=================================
 
-# Just check the pacman cheatsheet.
+For instance, to install a package:
+===================================
 
-# For instance, to install a package:
+pacman -S yaourt -S
 
-pacman -S <package>
-yaourt -S <package>
+The difference is that yaourt will also query the Arch User Repository,
+=======================================================================
 
-# The difference is that yaourt will also query the Arch User Repository,
+and if appropriate, donwload the source and build the package requested.
+========================================================================
 
-# and if appropriate, donwload the source and build the package requested.
+Here are the commands yaourt provides while pacman doesn’t :
+============================================================
 
-# Here are the commands yaourt provides while pacman doesn't :
+To search for and install it:
+=============================
 
-# To search for <package> and install it:
+yaourt
 
-yaourt <package>
+To update the local package base and upgrade all out of date package,
+=====================================================================
 
-# To update the local package base and upgrade all out of date package,
+including the ones from AUR and the packages based on development repos (git,
+=============================================================================
 
-# including the ones from AUR and the packages based on development repos (git,
+svn, hg…)
+=========
 
-# svn, hg...)
+yaourt -Suya –devel
 
-yaourt -Suya --devel
+For all of the above commands, if you want yaourt to stop asking constantly for confirmations,
+==============================================================================================
 
-# For all of the above commands, if you want yaourt to stop asking constantly for confirmations,
+use the option –noconfirm
 
-use the option --noconfirm
+To build from source:
+=====================
 
-# To build <package> from source:
-
-yaourt -Sb <package>
+yaourt -Sb

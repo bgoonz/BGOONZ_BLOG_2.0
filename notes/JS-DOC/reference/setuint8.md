@@ -1,8 +1,10 @@
-# DataView.prototype.setUint8()
+DataView.prototype.setUint8()
+=============================
 
 The `setUint8()` method stores an unsigned 8-bit integer (byte) value at the specified byte offset from the start of the [`DataView`](../dataview).
 
-## Syntax
+Syntax
+------
 
     setUint8(byteOffset, value)
 
@@ -23,7 +25,8 @@ The value to set.
 [`RangeError`](../rangeerror)  
 Thrown if the `byteOffset` is set such as it would store beyond the end of the view.
 
-## Examples
+Examples
+--------
 
 ### Using the setUint8 method
 
@@ -32,14 +35,14 @@ Thrown if the `byteOffset` is set such as it would store beyond the end of the v
     dataview.setUint8(1, 3);
     dataview.getUint8(1); // 3
 
-## Specifications
+Specifications
+--------------
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.setuint8">ECMAScript Language Specification (ECMAScript) 
-<br/>
+<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><p>ECMAScript Language Specification (ECMAScript)<br />
+</p><span class="small">#sec-dataview.prototype.setuint8</span></td></tr></tbody></table>
 
-<span class="small">#sec-dataview.prototype.setuint8</span></a></td></tr></tbody></table>
-
-## Browser compatibility
+Browser compatibility
+---------------------
 
 Desktop
 
@@ -95,7 +98,8 @@ Samsung Internet
 
 1.0
 
-## See also
+See also
+--------
 
 -   [`DataView`](../dataview)
 -   [`ArrayBuffer`](../arraybuffer)

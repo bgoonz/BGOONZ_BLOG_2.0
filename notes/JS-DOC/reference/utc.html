@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>utc</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="date.utc">Date.UTC()</h1>
+<p>The <code>Date.UTC()</code> method accepts parameters similar to the <a href="../date"><code>Date</code></a> constructor, but treats them as UTC. It returns the number of milliseconds since January 1, 1970, 00:00:00 UTC.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>Date.UTC(year)
+Date.UTC(year, month)
+Date.UTC(year, month, day)
+Date.UTC(year, month, day, hour)
+Date.UTC(year, month, day, hour, minute)
+Date.UTC(year, month, day, hour, minute, second)
+Date.UTC(year, month, day, hour, minute, second, millisecond)</code></pre>
+<p><code>year</code><br />
+A full year.</p>
+<p><code>month</code> <span class="badge inline optional">Optional</span><br />
+An integer between <code>0</code> (January) and <code>11</code> (December) representing the month. Since ECMAScript 2017 it defaults to <code>0</code> if omitted. <em>(Up until ECMAScript 2016, <code>month</code> was a required parameter. As of ES2017, it no longer is.)</em></p>
+<p><code>day</code> <span class="badge inline optional">Optional</span><br />
+An integer between <code>1</code> and <code>31</code> representing the day of the month. If omitted, defaults to <code>1</code>.</p>
+<p><code>hour</code> <span class="badge inline optional">Optional</span><br />
+An integer between <code>0</code> and <code>23</code> representing the hours. If omitted, defaults to <code>0</code>.</p>
+<p><code>minute</code> <span class="badge inline optional">Optional</span><br />
+An integer between <code>0</code> and <code>59</code> representing the minutes. If omitted, defaults to <code>0</code>.</p>
+<p><code>second</code> <span class="badge inline optional">Optional</span><br />
+An integer between <code>0</code> and <code>59</code> representing the seconds. If omitted, defaults to <code>0</code>.</p>
+<p><code>millisecond</code> <span class="badge inline optional">Optional</span><br />
+An integer between <code>0</code> and <code>999</code> representing the milliseconds. If omitted, defaults to <code>0</code>.</p>
+<h3 id="return-value">Return value</h3>
+<p>A number representing the number of milliseconds for the given date since January 1, 1970, 00:00:00, UTC.</p>
+<h2 id="description">Description</h2>
+<p><code>UTC()</code> takes comma-delimited date and time parameters and returns the number of milliseconds between January 1, 1970, 00:00:00, universal time and the specified date and time.</p>
+<p>Years between <code>0</code> and <code>99</code> are converted to a year in the 20<sup>th</sup> century <code>(1900 + year)</code>. For example, <code>95</code> is converted to the year <code>1995</code>.</p>
+<p>The <code>UTC()</code> method differs from the <a href="../date"><code>Date</code></a> constructor in two ways:</p>
+<ol type="1">
+<li><code>Date.UTC()</code> uses universal time instead of the local time.</li>
+<li><code>Date.UTC()</code> returns a time value as a number instead of creating a <a href="../date"><code>Date</code></a> object.</li>
+</ol>
+<p>If a parameter is outside of the expected range, the <code>UTC()</code> method updates the other parameters to accommodate the value. For example, if <code>15</code> is used for <code>month</code>, the year will be incremented by 1 <code>(year + 1)</code> and <code>3</code> will be used for the month.</p>
+<p><code>UTC()</code> is a static method of <a href="../date"><code>Date</code></a>, so it’s called as <code>Date.UTC()</code> rather than as a method of a <a href="../date"><code>Date</code></a> instance.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-date.utc">Using Date.UTC()</h3>
+<p>The following statement creates a <a href="../date"><code>Date</code></a> object with the arguments treated as UTC instead of local:</p>
+<pre><code>let utcDate = new Date(Date.UTC(2018, 11, 1, 0, 0, 0));</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-date.utc">ECMAScript (ECMA-262) <br/></p>
+<span class="small">The definition of ‘Date.UTC’ in that specification.</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>UTC</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h3 id="compatibility-notes">Compatibility notes</h3>
+<h4 id="date.utc-with-fewer-than-two-arguments">Date.UTC() with fewer than two arguments</h4>
+<p>When providing less than two arguments to <code>Date.UTC()</code>, ECMAScript 2017 requires that <a href="../nan"><code>NaN</code></a> is returned. Engines that weren’t supporting this behavior have been updated (see <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1050755">bug 1050755</a>, <a href="https://github.com/tc39/ecma262/pull/642">ecma-262 #642</a>).</p>
+<pre><code>Date.UTC();
+Date.UTC(1);
+
+// Safari: NaN
+// Chrome/Opera/V8: NaN
+
+// Firefox &lt;54: non-NaN
+// Firefox 54+: NaN
+
+// IE: non-NaN
+// Edge: NaN</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="parse"><code>Date.parse()</code></a></li>
+<li><a href="../date"><code>Date</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/UTC" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/UTC</a></p>
+</body>
+</html>

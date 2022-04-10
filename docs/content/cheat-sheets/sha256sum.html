@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>sha256sum</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="to-compute-hash-checksum-of">To compute hash (checksum) of <file>:</h1>
+<p>sha256sum <file></p>
+<h1 id="to-compute-hash-checksum-from-input-text">To compute hash (checksum) from input text:</h1>
+<h1 id="enter-text-in-keyboard-and-finish-by-ctrl-d-at-beginning-of-line">Enter text in keyboard and finish by ctrl-D at beginning of line</h1>
+<p>sha256sum Some text ^D</p>
+<p>echo -n “Hello World” | sha256sum</p>
+<h1 id="to-verify-if-a-hash-checksum-is-correct-if-a-hash-file-is-provided">To verify if a hash (checksum) is correct if a hash-file is provided:</h1>
+<h1 id="sha256sum-will-go-thru-the-files-listed-in-.">sha256sum will go thru the files listed in <file-with-list-of-checksums>.</h1>
+<h1 id="for-each-file-it-will-look-if-it-exists.-if-not-it-will-print-an-error.">For each file it will look if it exists. If not, it will print an error.</h1>
+<h1 id="if-it-does-exist-it-will-compute-the-checksum-and-compare-it-with-the-hash">If it does exist it will compute the checksum and compare it with the hash</h1>
+<h1 id="provided-in-the-.-if-they-match-good-it">provided in the <file-with-list-of-checksums>. If they match (good!) it</h1>
+<h1 id="will-print-filename-ok.">will print “filename: OK”.</h1>
+<h1 id="if-they-dont-match-warning-you-might-have-been-hacked-it-will">If they don’t match (warning, you might have been hacked), it will</h1>
+<h1 id="print-filename-failed.">print “filename: FAILED”.</h1>
+<p>sha256sum –check <file-with-list-of-checksums></p>
+<h1 id="same-as-above-but-ignore-missing-files">Same as above (but ignore missing files):</h1>
+<h1 id="this-tells-you-if-your-file-is-an-exact-copy-ok-or-has-been">This tells you if your file is an exact copy (OK) or has been</h1>
+<h1 id="tampered-with-failed-without-bothering-you-with-warnings-about">tampered with (FAILED) without bothering you with warnings about</h1>
+<h1 id="missing-files">missing files</h1>
+<p>sha256sum –check –ignore-missing <file-with-list-of-checksums></p>
+</body>
+</html>

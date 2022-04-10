@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>isextensible</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="reflect.isextensible">Reflect.isExtensible()</h1>
+<p>The static <code>Reflect.isExtensible()</code> method determines if an object is extensible (whether it can have new properties added to it). It is similar to <a href="../object/isextensible"><code>Object.isExtensible()</code></a>, but with some <a href="#difference_to_object.isextensible">differences</a>.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>Reflect.isExtensible(target)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>target</code><br />
+The target object which to check if it is extensible.</p>
+<h3 id="return-value">Return value</h3>
+<p>A <a href="../boolean"><code>Boolean</code></a> indicating whether or not the target is extensible.</p>
+<h3 id="exceptions">Exceptions</h3>
+<p>A <a href="../typeerror"><code>TypeError</code></a>, if <code>target</code> is not an <a href="../object"><code>Object</code></a>.</p>
+<h2 id="description">Description</h2>
+<p>The <code>Reflect.isExtensible</code> method allows you determine if an object is extensible (whether it can have new properties added to it). It is the same method as <a href="../object/isextensible"><code>Object.isExtensible()</code></a>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="using-reflect.isextensible">Using Reflect.isExtensible()</h3>
+<p>See also <a href="../object/isextensible"><code>Object.isExtensible()</code></a>.</p>
+<pre><code>// New objects are extensible.
+let empty = {}
+Reflect.isExtensible(empty)  // === true
+
+// ...but that can be changed.
+Reflect.preventExtensions(empty)
+Reflect.isExtensible(empty)  // === false
+
+// Sealed objects are by definition non-extensible.
+let sealed = Object.seal({})
+Reflect.isExtensible(sealed)  // === false
+
+// Frozen objects are also by definition non-extensible.
+let frozen = Object.freeze({})
+Reflect.isExtensible(frozen)  // === false</code></pre>
+<h3 id="difference-to-object.isextensible">Difference to Object.isExtensible()</h3>
+<p>If the <code>target</code> argument to this method is not an object (a primitive), then it will cause a <a href="../typeerror"><code>TypeError</code></a>. With <a href="../object/isextensible"><code>Object.isExtensible()</code></a>, a non-object first argument will be coerced to an object at first.</p>
+<pre><code>Reflect.isExtensible(1)
+// TypeError: 1 is not an object
+
+Object.isExtensible(1)
+// false</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-reflect.isextensible">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-reflect.isextensible</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>isExtensible</code></p>
+<p>49</p>
+<p>12</p>
+<p>42</p>
+<p>No</p>
+<p>36</p>
+<p>10</p>
+<p>49</p>
+<p>49</p>
+<p>42</p>
+<p>36</p>
+<p>10</p>
+<p>5.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../reflect"><code>Reflect</code></a></li>
+<li><a href="../object/isextensible"><code>Object.isExtensible()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect/isExtensible" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect/isExtensible</a></p>
+</body>
+</html>

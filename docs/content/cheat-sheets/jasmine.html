@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Jasmine</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Jasmine</h1>
+</header>
+<h2 id="tests">Tests</h2>
+<h3 id="writing-tests">Writing tests</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="at">describe</span>(<span class="st">&#39;A suite&#39;</span><span class="op">,</span> () <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-2" title="2">    <span class="at">it</span>(<span class="st">&#39;works&#39;</span><span class="op">,</span> () <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-3" title="3">        <span class="at">expect</span>(<span class="kw">true</span>).<span class="at">toBe</span>(<span class="kw">true</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-4" title="4">    <span class="op">}</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-5" title="5"><span class="op">}</span>)<span class="op">;</span></a></code></pre></div>
+<p>Note: This cheatsheet may be a little outdated. Also see the <a href="./jest">Jest cheatsheet</a>. Jest uses Jasmine, and therefore has similar API.</p>
+<h3 id="expectations">Expectations</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="at">expect</span>(<span class="kw">true</span>).<span class="at">toBe</span>(<span class="kw">true</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-2" title="2"><span class="at">expect</span>(<span class="kw">true</span>).<span class="va">not</span>.<span class="at">toBe</span>(<span class="kw">true</span>)<span class="op">;</span></a></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb3-1" title="1"><span class="at">expect</span>(a).<span class="at">toEqual</span>(bar)<span class="op">;</span></a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb4-1" title="1"><span class="at">expect</span>(message).<span class="at">toMatch</span>(<span class="ss">/bar/</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-2" title="2"><span class="at">expect</span>(message).<span class="at">toMatch</span>(<span class="st">&#39;bar&#39;</span>)<span class="op">;</span></a></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb5-1" title="1"><span class="at">expect</span>(<span class="va">a</span>.<span class="at">foo</span>).<span class="at">toBeDefined</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-2" title="2"><span class="at">expect</span>(<span class="va">a</span>.<span class="at">foo</span>).<span class="at">toBeUndefined</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-3" title="3"><span class="at">expect</span>(<span class="va">a</span>.<span class="at">foo</span>).<span class="at">toBeNull</span>()<span class="op">;</span></a></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb6-1" title="1"><span class="at">expect</span>(<span class="va">a</span>.<span class="at">foo</span>).<span class="at">toBeTruthy</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb6-2" title="2"><span class="at">expect</span>(<span class="va">a</span>.<span class="at">foo</span>).<span class="at">toBeFalsy</span>()<span class="op">;</span></a></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb7-1" title="1"><span class="at">expect</span>(message).<span class="at">toContain</span>(<span class="st">&#39;hello&#39;</span>)<span class="op">;</span></a></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb8-1" title="1"><span class="at">expect</span>(pi).<span class="at">toBeGreaterThan</span>(<span class="dv">3</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb8-2" title="2"><span class="at">expect</span>(pi).<span class="at">toBeLessThan</span>(<span class="dv">4</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb8-3" title="3"><span class="at">expect</span>(pi).<span class="at">toBeCloseTo</span>(<span class="fl">3.1415</span><span class="op">,</span> <span class="fl">0.1</span>)<span class="op">;</span></a></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb9-1" title="1"><span class="at">expect</span>(func).<span class="at">toThrow</span>()<span class="op">;</span></a></code></pre></div>
+<h3 id="hooks">Hooks</h3>
+<div class="sourceCode" id="cb10"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb10-1" title="1"><span class="at">beforeEach</span>(() <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb10-2" title="2">  ···</a>
+<a class="sourceLine" id="cb10-3" title="3"><span class="op">}</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb11-1" title="1"><span class="at">afterEach</span>(() <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb11-2" title="2">  ···</a>
+<a class="sourceLine" id="cb11-3" title="3"><span class="op">}</span>)</a></code></pre></div>
+<h3 id="pending">Pending</h3>
+<div class="sourceCode" id="cb12"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb12-1" title="1"><span class="at">xit</span>(<span class="st">&#39;this is a pending test&#39;</span><span class="op">,</span> () <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb12-2" title="2">  ···</a>
+<a class="sourceLine" id="cb12-3" title="3"><span class="op">}</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb13-1" title="1"><span class="at">xdescribe</span>(<span class="st">&#39;this is a pending block&#39;</span><span class="op">,</span> () <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb13-2" title="2">  ···</a>
+<a class="sourceLine" id="cb13-3" title="3"><span class="op">}</span>)</a></code></pre></div>
+<h3 id="spies">Spies</h3>
+<div class="sourceCode" id="cb14"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb14-1" title="1"><span class="at">spyOn</span>(foo<span class="op">,</span> <span class="st">&#39;setBar&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb14-2" title="2"><span class="at">spyOn</span>(foo<span class="op">,</span> <span class="st">&#39;setBar&#39;</span>).<span class="at">andReturn</span>(<span class="dv">123</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb14-3" title="3"><span class="at">spyOn</span>(foo<span class="op">,</span> <span class="st">&#39;getBar&#39;</span>).<span class="at">andCallFake</span>(<span class="kw">function</span> () <span class="op">{</span></a>
+<a class="sourceLine" id="cb14-4" title="4">    <span class="cf">return</span> <span class="dv">1001</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb14-5" title="5"><span class="op">}</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb14-6" title="6"><span class="va">foo</span>.<span class="at">setBar</span>(<span class="dv">123</span>)<span class="op">;</span></a></code></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb15-1" title="1"><span class="at">expect</span>(<span class="va">foo</span>.<span class="at">setBar</span>).<span class="at">toHaveBeenCalled</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb15-2" title="2"><span class="at">expect</span>(<span class="va">foo</span>.<span class="at">setBar</span>).<span class="at">toHaveBeenCalledWith</span>(<span class="dv">123</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb15-3" title="3"><span class="at">expect</span>(<span class="va">foo</span>.<span class="va">setBar</span>.<span class="va">calls</span>.<span class="at">length</span>).<span class="at">toEqual</span>(<span class="dv">2</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb15-4" title="4"><span class="at">expect</span>(<span class="va">foo</span>.<span class="va">setBar</span>.<span class="at">calls</span>[<span class="dv">0</span>].<span class="at">args</span>[<span class="dv">0</span>]).<span class="at">toEqual</span>(<span class="dv">123</span>)<span class="op">;</span></a></code></pre></div>
+<h3 id="creating-spies">Creating spies</h3>
+<div class="sourceCode" id="cb16"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb16-1" title="1">stub <span class="op">=</span> <span class="va">jasmine</span>.<span class="at">createSpy</span>(<span class="st">&#39;stub&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb16-2" title="2"><span class="at">stub</span>(<span class="st">&#39;hello&#39;</span>)<span class="op">;</span></a></code></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb17-1" title="1"><span class="at">expect</span>(<span class="va">stub</span>.<span class="at">identity</span>).<span class="at">toEqual</span>(<span class="st">&#39;stub&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb17-2" title="2"><span class="at">expect</span>(stub).<span class="at">toHaveBeenCalled</span>()<span class="op">;</span></a></code></pre></div>
+<h3 id="async">Async</h3>
+<div class="sourceCode" id="cb18"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb18-1" title="1"><span class="at">test</span>(<span class="st">&#39;works with promises&#39;</span><span class="op">,</span> () <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb18-2" title="2">  <span class="cf">return</span> <span class="kw">new</span> <span class="at">Promise</span>((resolve<span class="op">,</span> reject) <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb18-3" title="3">    ···</a>
+<a class="sourceLine" id="cb18-4" title="4">  <span class="op">}</span>)</a>
+<a class="sourceLine" id="cb18-5" title="5"><span class="op">}</span>)</a></code></pre></div>
+<p>Make your test return a promise.</p>
+<h3 id="html-runner">HTML runner</h3>
+<div class="sourceCode" id="cb19"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb19-1" title="1"><span class="kw">var</span> jasmineEnv <span class="op">=</span> <span class="va">jasmine</span>.<span class="at">getEnv</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb19-2" title="2"><span class="va">jasmineEnv</span>.<span class="at">updateInterval</span> <span class="op">=</span> <span class="dv">250</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb19-3" title="3"></a>
+<a class="sourceLine" id="cb19-4" title="4"><span class="kw">var</span> htmlReporter <span class="op">=</span> <span class="kw">new</span> <span class="va">jasmine</span>.<span class="at">HtmlReporter</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb19-5" title="5"><span class="va">jasmineEnv</span>.<span class="at">addReporter</span>(htmlReporter)<span class="op">;</span></a>
+<a class="sourceLine" id="cb19-6" title="6"></a>
+<a class="sourceLine" id="cb19-7" title="7"><span class="at">$</span>(<span class="kw">function</span> () <span class="op">{</span></a>
+<a class="sourceLine" id="cb19-8" title="8">    <span class="va">jasmineEnv</span>.<span class="at">execute</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb19-9" title="9"><span class="op">}</span>)<span class="op">;</span></a></code></pre></div>
+<h2 id="jasmine-jquery">Jasmine jQuery</h2>
+<h3 id="expectations-1">Expectations</h3>
+<div class="sourceCode" id="cb20"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb20-1" title="1"><span class="at">expect</span>(<span class="at">$</span>(<span class="st">&#39;#id&#39;</span>)).<span class="at">toBe</span>(<span class="st">&#39;div&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb20-2" title="2"><span class="at">expect</span>(<span class="at">$</span>(<span class="st">&#39;input[type=checkbox]&#39;</span>)).<span class="at">toBeChecked</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb20-3" title="3"><span class="at">expect</span>(<span class="at">$</span>(<span class="st">&#39;input[type=checkbox]&#39;</span>)).<span class="at">toBeDisabled</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb20-4" title="4"><span class="at">expect</span>(<span class="at">$</span>(<span class="st">&#39;input[type=checkbox]&#39;</span>)).<span class="at">toBeFocused</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb20-5" title="5"><span class="at">expect</span>(<span class="at">$</span>(<span class="st">&#39;#menu ul&#39;</span>)).<span class="at">toBeEmpty</span>()<span class="op">;</span></a></code></pre></div>
+<div class="sourceCode" id="cb21"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb21-1" title="1"><span class="at">expect</span>(<span class="at">$</span>(<span class="st">&#39;#toolbar&#39;</span>)).<span class="at">toBeHidden</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb21-2" title="2"><span class="at">expect</span>(<span class="at">$</span>(<span class="st">&#39;#toolbar&#39;</span>)).<span class="at">toBeVisible</span>()<span class="op">;</span></a></code></pre></div>
+<div class="sourceCode" id="cb22"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb22-1" title="1"><span class="at">expect</span>(<span class="at">$</span>(<span class="st">&#39;#popup&#39;</span>)).<span class="at">toHaveCss</span>(<span class="op">{</span> <span class="dt">margin</span><span class="op">:</span> <span class="st">&#39;10px&#39;</span> <span class="op">}</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb22-2" title="2"><span class="at">expect</span>(<span class="at">$</span>(<span class="st">&#39;option&#39;</span>)).<span class="at">toBeSelected</span>()<span class="op">;</span></a></code></pre></div>
+<div class="sourceCode" id="cb23"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb23-1" title="1"><span class="at">expect</span>(<span class="at">$</span>(<span class="st">&#39;.foo&#39;</span>)).<span class="at">toExist</span>()<span class="op">;</span></a></code></pre></div>
+<div class="sourceCode" id="cb24"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb24-1" title="1"><span class="at">expect</span>(<span class="at">$</span>(<span class="st">&#39;a&#39;</span>)).<span class="at">toHaveAttr</span>(<span class="st">&#39;rel&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-2" title="2"><span class="at">expect</span>(<span class="at">$</span>(<span class="st">&#39;a&#39;</span>)).<span class="at">toHaveAttr</span>(<span class="st">&#39;rel&#39;</span><span class="op">,</span> <span class="st">&#39;nofollow&#39;</span>)<span class="op">;</span></a></code></pre></div>
+<div class="sourceCode" id="cb25"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb25-1" title="1"><span class="at">expect</span>(<span class="at">$</span>(<span class="st">&#39;a&#39;</span>)).<span class="at">toHaveClass</span>(<span class="st">&#39;rel&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb25-2" title="2"><span class="at">expect</span>(<span class="at">$</span>(<span class="st">&#39;a&#39;</span>)).<span class="at">toHaveId</span>(<span class="st">&#39;home&#39;</span>)<span class="op">;</span></a></code></pre></div>
+<div class="sourceCode" id="cb26"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb26-1" title="1"><span class="at">expect</span>(<span class="at">$</span>(<span class="st">&#39;a&#39;</span>)).<span class="at">toHaveHtml</span>(<span class="st">&#39;&lt;span&gt;&lt;/span&gt;&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb26-2" title="2"><span class="at">expect</span>(<span class="at">$</span>(<span class="st">&#39;a&#39;</span>)).<span class="at">toContainHtml</span>(<span class="st">&#39;&lt;span&gt;&lt;/span&gt;&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb26-3" title="3"><span class="at">expect</span>(<span class="at">$</span>(<span class="st">&#39;a&#39;</span>)).<span class="at">toHaveText</span>(<span class="st">&#39;hi&#39;</span>)<span class="op">;</span></a></code></pre></div>
+<div class="sourceCode" id="cb27"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb27-1" title="1"><span class="at">expect</span>($form).<span class="at">toHandle</span>(<span class="st">&#39;submit&#39;</span>)<span class="op">;</span> <span class="co">// event</span></a>
+<a class="sourceLine" id="cb27-2" title="2"><span class="at">expect</span>($form).<span class="at">toHandleWith</span>(<span class="st">&#39;submit&#39;</span><span class="op">,</span> onSumbit)<span class="op">;</span></a></code></pre></div>
+<p>See: <a href="https://github.com/velesin/jasmine-jquery">jasmine-jquery</a></p>
+<h3 id="event-spies">Event spies</h3>
+<div class="sourceCode" id="cb28"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb28-1" title="1"><span class="at">spyOnEvent</span>(<span class="at">$</span>(<span class="st">&#39;#some_element&#39;</span>)<span class="op">,</span> <span class="st">&#39;click&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb28-2" title="2"><span class="at">$</span>(<span class="st">&#39;#some_element&#39;</span>).<span class="at">click</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb28-3" title="3"><span class="at">expect</span>(<span class="st">&#39;click&#39;</span>).<span class="at">toHaveBeenPreventedOn</span>(<span class="at">$</span>(<span class="st">&#39;#some_element&#39;</span>))<span class="op">;</span></a>
+<a class="sourceLine" id="cb28-4" title="4"><span class="at">expect</span>(<span class="st">&#39;click&#39;</span>).<span class="at">toHaveBeenTriggeredOn</span>(<span class="at">$</span>(<span class="st">&#39;#some_element&#39;</span>))<span class="op">;</span></a></code></pre></div>
+<h2 id="references">References</h2>
+<p>{: .-one-column}</p>
+<ul>
+<li>Also see the <a href="./jest">Jest cheatsheet</a>. Jest uses Jasmine, and therefore has similar API.</li>
+<li><a href="https://jasmine.github.io" class="uri">https://jasmine.github.io</a></li>
+</ul>
+</body>
+</html>

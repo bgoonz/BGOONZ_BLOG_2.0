@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>invalid_date</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="rangeerror-invalid-date">RangeError: invalid date</h1>
+<p>The JavaScript exception “invalid date” occurs when a string leading to an invalid date has been provided to <a href="../global_objects/date"><code>Date</code></a> or <a href="../global_objects/date/parse"><code>Date.parse()</code></a>.</p>
+<h2 id="message">Message</h2>
+<pre><code>RangeError: invalid date (Edge)
+RangeError: invalid date (Firefox)
+RangeError: invalid time value (Chrome)
+RangeError: Provided date is not in valid range (Chrome)</code></pre>
+<h2 id="error-type">Error type</h2>
+<p><a href="../global_objects/rangeerror"><code>RangeError</code></a></p>
+<h2 id="what-went-wrong">What went wrong?</h2>
+<p>A string leading to an invalid date has been provided to <a href="../global_objects/date"><code>Date</code></a> or <a href="../global_objects/date/parse"><code>Date.parse()</code></a>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="invalid-cases">Invalid cases</h3>
+<p>Unrecognizable strings or dates containing illegal element values in ISO formatted strings usually return <a href="../global_objects/nan"><code>NaN</code></a>. However, depending on the implementation, non-conforming ISO format strings, may also throw <code>RangeError: invalid date</code>, like the following cases in Firefox:</p>
+<pre><code>new Date(&#39;foo-bar 2014&#39;);
+new Date(&#39;2014-25-23&#39;).toISOString();
+new Date(&#39;foo-bar 2014&#39;).toString();</code></pre>
+<p>This, however, returns <a href="../global_objects/nan"><code>NaN</code></a> in Firefox:</p>
+<pre><code>Date.parse(&#39;foo-bar 2014&#39;); // NaN</code></pre>
+<p>For more details, see the <a href="../global_objects/date/parse"><code>Date.parse()</code></a> documentation.</p>
+<h3 id="valid-cases">Valid cases</h3>
+<pre><code>new Date(&#39;05 October 2011 14:48 UTC&#39;);
+new Date(1317826080); // Unix Time Stamp for 05 October 2011 14:48:00 UTC</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="../global_objects/date"><code>Date</code></a></li>
+<li><a href="../global_objects/date/parse"><code>Date.prototype.parse()</code></a></li>
+<li><a href="../global_objects/date/toisostring"><code>Date.prototype.toISOString()</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Invalid_date" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Invalid_date</a></p>
+</body>
+</html>

@@ -1,16 +1,20 @@
-# Warning: unreachable code after return statement
+Warning: unreachable code after return statement
+================================================
 
-The JavaScript warning "unreachable code after return statement" occurs when using an expression after a [`return`](../statements/return) statement, or when using a semicolon-less return statement but including an expression directly after.
+The JavaScript warning “unreachable code after return statement” occurs when using an expression after a [`return`](../statements/return) statement, or when using a semicolon-less return statement but including an expression directly after.
 
-## Message
+Message
+-------
 
     Warning: unreachable code after return statement (Firefox)
 
-## Error type
+Error type
+----------
 
 Warning
 
-## What went wrong?
+What went wrong?
+----------------
 
 Unreachable code after a return statement might occur in these situations:
 
@@ -28,7 +32,8 @@ Warnings will not be shown for semicolon-less returns if these statements follow
 -   [`var`](../statements/var)
 -   [`function`](../statements/function)
 
-## Examples
+Examples
+--------
 
 ### Invalid cases
 
@@ -57,7 +62,8 @@ Warnings will not be shown for semicolon-less returns if these statements follow
       return 3 + 4  // OK: semicolon-less return with expression on the same line
     }
 
-## See also
+See also
+--------
 
 -   [Automatic Semicolon Insertion](../statements/return#automatic_semicolon_insertion)
 

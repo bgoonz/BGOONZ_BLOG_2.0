@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>marking</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="styling-basics-marking-guide">Styling basics marking guide</h1>
+<p>The aim of the tasks is to demonstrate an understanding of the features covered in the <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Styling_web_forms">Styling web forms</a> lesson in Learn Web Development on MDN.</p>
+<h2 id="task-1">Task 1</h2>
+<p>Our basic form styling assessment is fairly free-form, and you have a lot of flexibility over what you end up doing here. But your CSS should aim to fulfill the following requirements:</p>
+<ol type="1">
+<li>Add some kind of lightweight “reset” to make fonts, padding, margin, and sizing more consistent to begin with.</li>
+<li>On top of that, add in some nice, consistent styling for the inputs and button.</li>
+<li>Use some kind of layout technique to make the inputs and labels line up neatly. Flexbox or Grid would be ideal for this, or CSS tables if you prefer something a bit more compatible with old browsers.</li>
+</ol>
+<p>The finished CSS could look something like this:</p>
+<pre><code>* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+  font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+  padding: 1em;
+  margin: 0;
+  width: 400px;
+}
+
+button,
+input,
+select {
+  font-family: inherit;
+  font-size: 100%;
+  padding: 0; margin: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+li:last-of-type {
+  margin-top: 30px;
+}
+
+label {
+  flex: 0 40%;
+  text-align: right;
+  padding-right: 10px;
+}
+
+input, select {
+  flex: auto;
+  height: 2em;
+}
+
+input, select, button {
+  display: block;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+select {
+  padding: 5px;
+}
+
+button {
+  margin: 0 auto;
+  padding: 5px 20px;
+  line-height: 1.5;
+  background: #eee;
+}
+
+button:hover, button:focus {
+  background: #ddd;
+}</code></pre>
+</body>
+</html>

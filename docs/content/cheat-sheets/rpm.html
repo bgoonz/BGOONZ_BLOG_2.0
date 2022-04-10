@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>rpm</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="to-install-a-package">To install a package:</h1>
+<p>rpm -ivh <rpm></p>
+<h1 id="to-remove-a-package">To remove a package:</h1>
+<p>rpm -e <package></p>
+<h1 id="to-remove-a-package-but-not-its-dependencies">To remove a package, but not its dependencies</h1>
+<p>rpm -e –nodeps <package></p>
+<h1 id="to-find-what-package-installs-a-file">To find what package installs a file:</h1>
+<p>rpm -qf <file></p>
+<h1 id="to-find-what-files-are-installed-by-a-package">To find what files are installed by a package:</h1>
+<p>rpm -ql <package> rpm -qpl <rpm></p>
+<h1 id="to-find-what-packages-require-a-package-or-file">To find what packages require a package or file:</h1>
+<p>rpm -q –whatrequires <package> rpm -q –whatrequires <file></p>
+<h1 id="to-list-all-installed-packages">To list all installed packages:</h1>
+<p>rpm -qa</p>
+<h1 id="to-find-a-packagess-dependencies">To find a packages’s dependencies:</h1>
+<p>rpm -i –test <package></p>
+<h1 id="to-display-checksum-against-a-source">To display checksum against a source:</h1>
+<p>rpm -K <package></p>
+<h1 id="to-verify-a-package">To verify a package:</h1>
+<p>rpm -V <package></p>
+</body>
+</html>

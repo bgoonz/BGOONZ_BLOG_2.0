@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>getyear</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="date.prototype.getyear">Date.prototype.getYear()</h1>
+<p><strong>Deprecated</strong></p>
+<p>This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see the <a href="#browser_compatibility">compatibility table</a> at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time.</p>
+<p>The <code>getYear()</code> method returns the year in the specified date according to local time. Because <code>getYear()</code> does not return full years (“year 2000 problem”), it is no longer used and has been replaced by the <a href="getfullyear"><code>getFullYear()</code></a> method.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>getYear()</code></pre>
+<h3 id="return-value">Return value</h3>
+<p>A number representing the year of the given date, according to local time, minus 1900.</p>
+<h2 id="description">Description</h2>
+<ul>
+<li>For years greater than or equal to 2000, the value returned by <code>getYear()</code> is 100 or greater. For example, if the year is 2026, <code>getYear()</code> returns 126.</li>
+<li>For years between and including 1900 and 1999, the value returned by <code>getYear()</code> is between 0 and 99. For example, if the year is 1976, <code>getYear()</code> returns 76.</li>
+<li>For years less than 1900, the value returned by <code>getYear()</code> is less than 0. For example, if the year is 1800, <code>getYear()</code> returns -100.</li>
+</ul>
+<p>To take into account years before and after 2000, you should use <a href="getfullyear"><code>getFullYear()</code></a> instead of <code>getYear()</code> so that the year is specified in full.</p>
+<h2 id="backward-compatibility">Backward compatibility</h2>
+<h3 id="behavior-in-javascript-1.2-and-earlier">Behavior in JavaScript 1.2 and earlier</h3>
+<p>The <code>getYear()</code> method returns either a 2-digit or 4-digit year:</p>
+<ul>
+<li>For years between and including 1900 and 1999, the value returned by <code>getYear()</code> is the year minus 1900. For example, if the year is 1976, the value returned is 76.</li>
+<li>For years less than 1900 or greater than 1999, the value returned by <code>getYear()</code> is the four-digit year. For example, if the year is 1856, the value returned is 1856. If the year is 2026, the value returned is 2026.</li>
+</ul>
+<h2 id="examples">Examples</h2>
+<h3 id="years-between-1900-and-1999">Years between 1900 and 1999</h3>
+<p>The second statement assigns the value 95 to the variable <code>year</code>.</p>
+<pre><code>var Xmas = new Date(&#39;December 25, 1995 23:15:00&#39;);
+var year = Xmas.getYear(); // returns 95</code></pre>
+<h3 id="years-above-1999">Years above 1999</h3>
+<p>The second statement assigns the value 100 to the variable <code>year</code>.</p>
+<pre><code>var Xmas = new Date(&#39;December 25, 2000 23:15:00&#39;);
+var year = Xmas.getYear(); // returns 100</code></pre>
+<h3 id="years-below-1900">Years below 1900</h3>
+<p>The second statement assigns the value -100 to the variable <code>year</code>.</p>
+<pre><code>var Xmas = new Date(&#39;December 25, 1800 23:15:00&#39;);
+var year = Xmas.getYear(); // returns -100</code></pre>
+<h3 id="setting-and-getting-a-year-between-1900-and-1999">Setting and getting a year between 1900 and 1999</h3>
+<p>The third statement assigns the value 95 to the variable <code>year</code>, representing the year 1995.</p>
+<pre><code>var Xmas = new Date(&#39;December 25, 2015 23:15:00&#39;);
+Xmas.setYear(95);
+var year = Xmas.getYear(); // returns 95</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-date.prototype.getyear">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-date.prototype.getyear</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><code>getYear</code></p>
+<p>1</p>
+<p>12</p>
+<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+<p>1</p>
+<p>18</p>
+<p>4</p>
+<p>10.1</p>
+<p>1</p>
+<p>1.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="getfullyear"><code>Date.prototype.getFullYear()</code></a></li>
+<li><a href="getutcfullyear"><code>Date.prototype.getUTCFullYear()</code></a></li>
+<li><a href="setyear"><code>Date.prototype.setYear()</code></a></li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getYear" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getYear</a></p>
+</body>
+</html>

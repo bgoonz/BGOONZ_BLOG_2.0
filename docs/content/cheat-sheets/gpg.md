@@ -1,24 +1,14 @@
----
-title: title
-subtitle: subtitle
-date: '2022-01-03'
-thumb_img_alt: lorem-ipsum
-content_img_alt: lorem-ipsum
-excerpt: lorem-ipsum
-seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
-template: post
-thumb_img_path: images/css-72a655a7.jpg
----
+subtitle
 
-# Create a key
+2022-01-03
 
-gpg --gen-key
+Create a key
+============
 
-# Show keys
+gpg –gen-key
+
+Show keys
+=========
 
 To list a summary of all keys
 
@@ -32,31 +22,34 @@ To show the fingerprint for a key
 
     gpg --fingerprint KEY_ID
 
-# Search for keys
+Search for keys
+===============
 
-gpg --search-keys 'user@emailaddress.com'
+gpg –search-keys ‘user@emailaddress.com’
 
-# To Encrypt a File
+To Encrypt a File
+=================
 
-gpg --encrypt --recipient 'user@emailaddress.com' example.txt
+gpg –encrypt –recipient ‘user@emailaddress.com’ example.txt
 
-# To Decrypt a File
+To Decrypt a File
+=================
 
-gpg --output example.txt --decrypt example.txt.gpg
+gpg –output example.txt –decrypt example.txt.gpg
 
-# Export keys
+Export keys
+===========
 
-gpg --output ~/public_key.txt --armor --export KEY_ID
-gpg --output ~/private_key.txt --armor --export-secret-key KEY_ID
+gpg –output ~/public\_key.txt –armor –export KEY\_ID gpg –output ~/private\_key.txt –armor –export-secret-key KEY\_ID
 
-Where KEY_ID is the 8 character GPG key ID.
+Where KEY\_ID is the 8 character GPG key ID.
 
-Store these files to a safe location, such as a USB drive, then
-remove the private key file.
+Store these files to a safe location, such as a USB drive, then remove the private key file.
 
     shred -zu ~/private_key.txt
 
-# Import keys
+Import keys
+===========
 
 Retrieve the key files which you previously exported.
 
@@ -67,13 +60,14 @@ Then delete the private key file.
 
     shred -zu ~/private_key.txt
 
-# Revoke a key
+Revoke a key
+============
 
 Create a revocation certificate.
 
     gpg --output ~/revoke.asc --gen-revoke KEY_ID
 
-Where KEY_ID is the 8 character GPG key ID.
+Where KEY\_ID is the 8 character GPG key ID.
 
 After creating the certificate import it.
 
@@ -83,10 +77,10 @@ Then ensure that key servers know about the revokation.
 
     gpg --send-keys KEY_ID
 
-# Signing and Verifying files
+Signing and Verifying files
+===========================
 
-If you're uploading files to launchpad you may also want to include
-a GPG signature file.
+If you’re uploading files to launchpad you may also want to include a GPG signature file.
 
     gpg -ba filename
 
@@ -94,15 +88,14 @@ or if you need to specify a particular key:
 
     gpg --default-key <key ID> -ba filename
 
-This then produces a file with a .asc extension which can be uploaded.
-If you need to set the default key more permanently then edit the
-file ~/.gnupg/gpg.conf and set the default-key parameter.
+This then produces a file with a .asc extension which can be uploaded. If you need to set the default key more permanently then edit the file ~/.gnupg/gpg.conf and set the default-key parameter.
 
 To verify a downloaded file using its signature file.
 
-gpg --verify filename.asc
+gpg –verify filename.asc
 
-# Signing Public Keys
+Signing Public Keys
+===================
 
 Import the public key or retrieve it from a server.
 
@@ -120,10 +113,10 @@ Upload the signed key to a server.
 
     gpg --keyserver <keyserver> --send-key <Key_ID>
 
-# Change the email address associated with a GPG key
+Change the email address associated with a GPG key
+==================================================
 
-gpg --edit-key <key ID>
-adduid
+gpg –edit-key adduid
 
 Enter the new name and email address. You can then list the addresses with:
 
@@ -145,14 +138,10 @@ Publish the key to a server:
 
     gpg --send-keys <key ID>
 
-# Creating Subkeys
+Creating Subkeys
+================
 
-Subkeys can be useful if you don't wish to have your main GPG key
-installed on multiple machines. In this way you can keep your
-master key safe and have subkeys with expiry periods or which may be
-separately revoked installed on various machines. This avoids
-generating entirely separate keys and so breaking any web of trust
-which has been established.
+Subkeys can be useful if you don’t wish to have your main GPG key installed on multiple machines. In this way you can keep your master key safe and have subkeys with expiry periods or which may be separately revoked installed on various machines. This avoids generating entirely separate keys and so breaking any web of trust which has been established.
 
     gpg --edit-key <key ID>
 
@@ -160,15 +149,13 @@ At the prompt type:
 
     addkey
 
-Choose RSA (sign only), 4096 bits and select an expiry period.
-Entropy will be gathered.
+Choose RSA (sign only), 4096 bits and select an expiry period. Entropy will be gathered.
 
 At the prompt type:
 
     save
 
-You can also repeat the procedure, but selecting RSA (encrypt only).
-To remove the master key, leaving only the subkey/s in place:
+You can also repeat the procedure, but selecting RSA (encrypt only). To remove the master key, leaving only the subkey/s in place:
 
     gpg --export-secret-subkeys <subkey ID> > subkeys
     gpg --export <key ID> > pubkeys
@@ -182,32 +169,32 @@ Verify the import.
 
     gpg -K
 
-Should show sec# instead of just sec.
+Should show sec\# instead of just sec.
 
-# High-quality options for gpg for symmetric (secret key) encryption
+High-quality options for gpg for symmetric (secret key) encryption
+==================================================================
 
-This is what knowledgable people consider a good set of options for
-symmetric encryption with gpg to give you a high-quality result.
+This is what knowledgable people consider a good set of options for symmetric encryption with gpg to give you a high-quality result.
 
-gpg \
- --symmetric \
- --cipher-algo aes256 \
- --digest-algo sha512 \
- --cert-digest-algo sha512 \
- --compress-algo none -z 0 \
- --s2k-mode 3 \
- --s2k-digest-algo sha512 \
- --s2k-count 65011712 \
- --force-mdc \
- --pinentry-mode loopback \
- --armor \
- --no-symkey-cache \
- --output somefile.gpg \
- somefile # to encrypt
+gpg  
+–symmetric  
+–cipher-algo aes256  
+–digest-algo sha512  
+–cert-digest-algo sha512  
+–compress-algo none -z 0  
+–s2k-mode 3  
+–s2k-digest-algo sha512  
+–s2k-count 65011712  
+–force-mdc  
+–pinentry-mode loopback  
+–armor  
+–no-symkey-cache  
+–output somefile.gpg  
+somefile \# to encrypt
 
-gpg \
- --decrypt \
- --pinentry-mode loopback \
- --armor \
- --output somefile.gpg \
- somefile # to decrypt
+gpg  
+–decrypt  
+–pinentry-mode loopback  
+–armor  
+–output somefile.gpg  
+somefile \# to decrypt

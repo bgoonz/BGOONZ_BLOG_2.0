@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>recursioniterationandtailcallsinjs</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<p>title: Recursion, iteration and tail calls in JS tip-number: 67 tip-username: loverajoel tip-username-profile: https://twitter.com/loverajoel tip-tldr: If you’ve been on the business for some time, you have, most likely, come across the definition of recursion, for which the factorial of a given number <code>n! = n * n - 1 * ... * 1</code> is a standard example… tip-md-link: https://github.com/loverajoel/jstips/blob/master/_posts/en/javascript/2017-03-29-recursion-iteration-and-tail-calls-in-js.md</p>
+<p>categories: - en - javascript</p>
+<hr />
+<p>If you’ve been on the business for some time, you have, most likely, come across the definition of recursion, for which the factorial of a given number <code>n! = n * (n - 1) * ... * 1</code> is a standard example.</p>
+<hr />
+<div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">function</span> <span class="at">factorial</span>(n) <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-2" title="2">    <span class="cf">if</span> (n <span class="op">===</span> <span class="dv">0</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-3" title="3">        <span class="cf">return</span> <span class="dv">1</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb1-4" title="4">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb1-5" title="5">    <span class="cf">return</span> n <span class="op">*</span> <span class="at">factorial</span>(n <span class="op">-</span> <span class="dv">1</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-6" title="6"><span class="op">}</span></a></code></pre></div>
+<p>The example shown above is but the most naive implementation of the factorial function.</p>
+<p>For the sake of completeness, let’s look at how this executes for <code>n = 6</code>:</p>
+<ul>
+<li>factorial(6)
+<ul>
+<li>6 * factorial(5)
+<ul>
+<li>5 * factorial (4)
+<ul>
+<li>4 * factorial(3)
+<ul>
+<li>3 * factorial(2)
+<ul>
+<li>2 * factorial(1)
+<ul>
+<li>1 * factorial(0)
+<ul>
+<li>1</li>
+</ul></li>
+<li>(resuming previous execution) 1 * 1 = 1</li>
+</ul></li>
+<li>(resuming…) 2 * 1 = 2</li>
+</ul></li>
+<li>(…) 3 * 2 = 6</li>
+</ul></li>
+<li>… 4 * 6 = 24</li>
+</ul></li>
+<li>5 * 24 = 120</li>
+</ul></li>
+<li>6 * 120 = 720</li>
+</ul></li>
+<li>factorial(6) = 720</li>
+</ul>
+<p>Now, we must be very cautious as to what’s happening so we can understand what is to come next.</p>
+<p>When we invoke a function, several things happen at once. The location to which we must return to after calling the function is saved, along with the information of the current frame (i.e, the value of n). Then space is allocated for the new function and a new frame is born.</p>
+<p>This goes on and on, we keep stacking these frames and then we unwind that stack, replacing function calls with values returned by them.</p>
+<p>Another thing to notice is the shape of the process generated by our function. You might not be surprised if I call this shape <em>recursive</em>. We have, thus, a <em>recursive process</em>.</p>
+<p>Let’s take a look at a second implementation of this function.</p>
+<hr />
+<div class="sourceCode" id="cb2"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">function</span> <span class="at">factorial</span>(n<span class="op">,</span> res) <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-2" title="2">    <span class="cf">if</span> (n <span class="op">===</span> <span class="dv">0</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-3" title="3">        <span class="cf">return</span> res<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-4" title="4">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb2-5" title="5">    <span class="cf">return</span> <span class="at">factorial</span>(n <span class="op">-</span> <span class="dv">1</span><span class="op">,</span> res <span class="op">*</span> n)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-6" title="6"><span class="op">}</span></a></code></pre></div>
+<p>We can encapsulate functionality a bit further by defining an inner function.</p>
+<hr />
+<div class="sourceCode" id="cb3"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">function</span> <span class="at">factorial</span>(n) <span class="op">{</span></a>
+<a class="sourceLine" id="cb3-2" title="2">    <span class="kw">function</span> <span class="at">inner_factorial</span>(n<span class="op">,</span> res) <span class="op">{</span></a>
+<a class="sourceLine" id="cb3-3" title="3">        <span class="cf">if</span> (n <span class="op">===</span> <span class="dv">0</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb3-4" title="4">            <span class="cf">return</span> res<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-5" title="5">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb3-6" title="6">        <span class="cf">return</span> <span class="at">inner_factorial</span>(n <span class="op">-</span> <span class="dv">1</span><span class="op">,</span> res <span class="op">*</span> n)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-7" title="7">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb3-8" title="8">    <span class="cf">return</span> <span class="at">inner_factorial</span>(n<span class="op">,</span> <span class="dv">1</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-9" title="9"><span class="op">}</span></a></code></pre></div>
+<p>Let’s take a look at how this gets executed:</p>
+<ul>
+<li>factorial(6)
+<ul>
+<li>inner anonymous function (iaf) gets called with (n = 6, res = 1)
+<ul>
+<li>iaf(5, 1 * 6)
+<ul>
+<li>iaf(4, 6 * 5)
+<ul>
+<li>iaf(3, 30 * 4)
+<ul>
+<li>iaf(2, 120 * 3)
+<ul>
+<li>iaf(1, 360 * 2)
+<ul>
+<li>iaf(0, 720)
+<ul>
+<li>720</li>
+</ul></li>
+<li>720</li>
+</ul></li>
+<li>720</li>
+</ul></li>
+<li>720</li>
+</ul></li>
+<li>720</li>
+</ul></li>
+<li>720</li>
+</ul></li>
+<li>720</li>
+</ul></li>
+<li>iaf (6, 1) = 720</li>
+</ul></li>
+<li>factorial(6) = 720</li>
+</ul>
+<p>You might notice that we didn’t need to perform any calculation after unwinding the stack. We just returned a value. But, according to our rules, we had to save the state as a stack frame, even if it weren’t of any use later in the chain.</p>
+<p>Our rules, however, are not applied to every language out there. In fact, in Scheme it’s mandatory for such chains to be optimized with tail call optimization. This ensures that our stack is not filled with unnecessary frames. Our previous calculation would look, thus, this way:</p>
+<ul>
+<li>factorial(6)</li>
+<li>iaf(6, 1)</li>
+<li>iaf(5, 6)</li>
+<li>iaf(4, 30)</li>
+<li>iaf(3, 120)</li>
+<li>iaf(2, 360)</li>
+<li>iaf(1, 720)</li>
+<li>iaf(0, 720)</li>
+<li>720</li>
+</ul>
+<p>Which in turns, looks an awfully lot like</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb4-1" title="1">res <span class="op">=</span> <span class="dv">1</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb4-2" title="2">n <span class="op">=</span> <span class="dv">6</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb4-3" title="3"></a>
+<a class="sourceLine" id="cb4-4" title="4"><span class="cf">while</span> (n <span class="op">&gt;</span> <span class="dv">1</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb4-5" title="5">    res <span class="op">=</span> res <span class="op">*</span> n<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-6" title="6">    n<span class="op">--;</span></a>
+<a class="sourceLine" id="cb4-7" title="7"><span class="op">}</span></a></code></pre></div>
+<p>This means, we actually have an <em>iterative process</em>, even if we’re using recursion. How cool is that?</p>
+<p>The good news is, this is a feature in ES6. As long as your recursive call is in tail position and your function has strict mode, tail call optimization will kick in and save you from having a <code>maximum stack size exceeded</code> error.</p>
+<p>UPDATE Dec 1, 2017: The only major browser with tail call optimization is Safari.<sup id="a1">1</sup> V8 has an implentation<sup>2</sup> but has not shipped it yet<sup>3</sup> for the reasons listed.</p>
+<p>1: https://kangax.github.io/compat-table/es6/#test-proper_tail_calls_(tail_call_optimisation)</p>
+<p>2: https://bugs.chromium.org/p/v8/issues/detail?id=4698</p>
+<p>3: https://v8project.blogspot.com/2016/04/es6-es7-and-beyond.html</p>
+</body>
+</html>

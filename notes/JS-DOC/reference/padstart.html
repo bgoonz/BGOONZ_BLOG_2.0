@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>padstart</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="string.prototype.padstart">String.prototype.padStart()</h1>
+<p>The <code>padStart()</code> method pads the current string with another string (multiple times, if needed) until the resulting string reaches the given length. The padding is applied from the start of the current string.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>padStart(targetLength)
+padStart(targetLength, padString)</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p><code>targetLength</code><br />
+The length of the resulting string once the current <code>str</code> has been padded. If the value is less than <code>str.length</code>, then <code>str</code> is returned as-is.</p>
+<p><code>padString</code> <span class="badge inline optional">Optional</span><br />
+The string to pad the current <code>str</code> with. If <code>padString</code> is too long to stay within the <code>targetLength</code>, it will be truncated from the end. The default value is "" (<code>U+0020 'SPACE'</code>).</p>
+<h3 id="return-value">Return value</h3>
+<p>A <a href="../string"><code>String</code></a> of the specified <code>targetLength</code> with <code>padString</code> applied from the start.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="basic-examples">Basic examples</h3>
+<pre><code>&#39;abc&#39;.padStart(10);         // &quot;       abc&quot;
+&#39;abc&#39;.padStart(10, &quot;foo&quot;);  // &quot;foofoofabc&quot;
+&#39;abc&#39;.padStart(6,&quot;123465&quot;); // &quot;123abc&quot;
+&#39;abc&#39;.padStart(8, &quot;0&quot;);     // &quot;00000abc&quot;
+&#39;abc&#39;.padStart(1);          // &quot;abc&quot;</code></pre>
+<h3 id="fixed-width-string-number-conversion">Fixed width string number conversion</h3>
+<pre><code>// Javascript version of: (unsigned)
+//  printf &quot;%0*d&quot; width num
+function leftFillNum(num, targetLength) {
+    return num.toString().padStart(targetLength, 0);
+}
+
+const num = 123;
+console.log(leftFillNum(num, 5));
+// expected output: &quot;00123&quot;</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="https://tc39.es/ecma262/#sec-string.prototype.padstart">ECMAScript Language Specification (ECMAScript) <br/></p>
+<span class="small">#sec-string.prototype.padstart</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>padStart</code></p>
+<p>57</p>
+<p>15</p>
+<p>48</p>
+<p>No</p>
+<p>44</p>
+<p>10</p>
+<p>57</p>
+<p>57</p>
+<p>48</p>
+<p>43</p>
+<p>10</p>
+<p>7.0</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="padend"><code>String.prototype.padEnd()</code></a></li>
+<li><a href="https://github.com/behnammodi/polyfill/blob/master/string.polyfill.js">A polyfill</a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart</a></p>
+</body>
+</html>

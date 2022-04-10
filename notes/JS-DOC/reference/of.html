@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>of</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="typedarray.of">TypedArray.of()</h1>
+<p>The <code>TypedArray.of()</code> method creates a new <a href="../typedarray#typedarray_objects">typed array</a> from a variable number of arguments. This method is nearly the same as <a href="../array/of"><code>Array.of()</code></a>.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code>TypedArray.of(element0[, element1[, ...[, elementN]]])</code></pre>
+<p>Where <code>TypedArray</code> is one of:</p>
+<ul>
+<li><a href="../int8array"><code>Int8Array</code></a></li>
+<li><a href="../uint8array"><code>Uint8Array</code></a></li>
+<li><a href="../uint8clampedarray"><code>Uint8ClampedArray</code></a></li>
+<li><a href="../int16array"><code>Int16Array</code></a></li>
+<li><a href="../uint16array"><code>Uint16Array</code></a></li>
+<li><a href="../int32array"><code>Int32Array</code></a></li>
+<li><a href="../uint32array"><code>Uint32Array</code></a></li>
+<li><a href="../float32array"><code>Float32Array</code></a></li>
+<li><a href="../float64array"><code>Float64Array</code></a></li>
+<li><a href="../bigint64array"><code>BigInt64Array</code></a></li>
+<li><a href="../biguint64array"><code>BigUint64Array</code></a></li>
+</ul>
+<h3 id="parameters">Parameters</h3>
+<p><code>elementN</code><br />
+Elements of which to create the typed array.</p>
+<h3 id="return-value">Return value</h3>
+<p>A new <a href="../typedarray"><code>TypedArray</code></a> instance.</p>
+<h2 id="description">Description</h2>
+<p>Some subtle distinctions between <a href="../array/of"><code>Array.of()</code></a> and <code>TypedArray.of()</code>:</p>
+<ul>
+<li>If the <code>this</code> value passed to <code>TypedArray.of()</code> is not a constructor, <code>TypedArray.of()</code> will throw a <a href="../typeerror"><code>TypeError</code></a>, where <code>Array.of()</code> defaults to creating a new <a href="../array"><code>Array</code></a>.</li>
+<li><code>TypedArray.of()</code> uses <code>[[Put]]</code> where <code>Array.of()</code> uses <code>[[DefineProperty]]</code>. Hence, when working with <a href="../proxy"><code>Proxy</code></a> objects, it calls <a href="../proxy/proxy/set"><code>handler.set</code></a> to create new elements rather than <a href="../proxy/proxy/defineproperty"><code>handler.defineProperty()</code></a>.</li>
+</ul>
+<h2 id="examples">Examples</h2>
+<h3 id="using-of">Using of()</h3>
+<pre><code>Uint8Array.of(1);            // Uint8Array [ 1 ]
+Int8Array.of(&#39;1&#39;, &#39;2&#39;, &#39;3&#39;); // Int8Array [ 1, 2, 3 ]
+Float32Array.of(1, 2, 3);    // Float32Array [ 1, 2, 3 ]
+Int16Array.of(undefined);    // Int16Array [ 0 ]</code></pre>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>
+Specification
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p><a href="#">ECMAScript (ECMA-262) <br/></p>
+<span class="small">The definition of ‘%TypedArray%.of’ in that specification.</span></a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p>Desktop</p>
+<p>Mobile</p>
+<p>Chrome</p>
+<p>Edge</p>
+<p>Firefox</p>
+<p>Internet Explorer</p>
+<p>Opera</p>
+<p>Safari</p>
+<p>WebView Android</p>
+<p>Chrome Android</p>
+<p>Firefox for Android</p>
+<p>Opera Android</p>
+<p>Safari on IOS</p>
+<p>Samsung Internet</p>
+<p><code>of</code></p>
+<p>45</p>
+<p>14</p>
+<p>38</p>
+<p>No</p>
+<p>No</p>
+<p>9.1</p>
+<p>No</p>
+<p>No</p>
+<p>38</p>
+<p>No</p>
+<p>9.3</p>
+<p>No</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="from"><code>TypedArray.from()</code></a></li>
+<li><a href="../array/of"><code>Array.of()</code></a></li>
+</ul>
+<p>Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/of" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/of</a></p>
+</body>
+</html>

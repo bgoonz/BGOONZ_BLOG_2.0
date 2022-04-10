@@ -1,44 +1,49 @@
----
-tags: [networking]
----
+Connect mode (ncat is client) | default port is 31337
+=====================================================
 
-# Connect mode (ncat is client) | default port is 31337
+ncat \[\]
 
-ncat <host> [<port>]
+Listen mode (ncat is server) | default port is 31337
+====================================================
 
-# Listen mode (ncat is server) | default port is 31337
+ncat -l \[\] \[\]
 
-ncat -l [<host>] [<port>]
+Transfer file (closes after one transfer)
+=========================================
 
-# Transfer file (closes after one transfer)
+ncat -l \[\] \[\] &lt; file
 
-ncat -l [<host>] [<port>] < file
+Transfer file (stays open for multiple transfers)
+=================================================
 
-# Transfer file (stays open for multiple transfers)
+ncat -l –keep-open \[\] \[\] &lt; file
 
-ncat -l --keep-open [<host>] [<port>] < file
+Receive file
+============
 
-# Receive file
+ncat \[\] \[\] &gt; file
 
-ncat [<host>] [<port>] > file
+Brokering | allows for multiple clients to connect
+==================================================
 
-# Brokering | allows for multiple clients to connect
+ncat -l –broker \[\] \[\]
 
-ncat -l --broker [<host>] [<port>]
+Listen with SSL | many options, use ncat –help for full list
+============================================================
 
-# Listen with SSL | many options, use ncat --help for full list
+ncat -l –ssl \[\] \[\]
 
-ncat -l --ssl [<host>] [<port>]
+Access control
+==============
 
-# Access control
+ncat -l –allow ncat -l –deny
 
-ncat -l --allow <ip>
-ncat -l --deny <ip>
+Proxying
+========
 
-# Proxying
+ncat –proxy \[:\] –proxy-type {http | socks4} \[\]
 
-ncat --proxy <proxyhost>[:<proxyport>] --proxy-type {http | socks4} <host>[<port>]
+Chat server | can use brokering for multi-user chat
+===================================================
 
-# Chat server | can use brokering for multi-user chat
-
-ncat -l --chat [<host>] [<port>]
+ncat -l –chat \[\] \[\]

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>regex-in-python</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="regex-in-python">Regex In Python</h1>
+<h3 id="what-are-regular-expressions">What Are Regular Expressions?</h3>
+<p>Regular expressions are patterns that help a user match character combinations in text files and strings. You can use regular expressions to filter or find a specific pattern in the output of a command or a document.</p>
+<p>There are various use cases of regular expressions, the most renowned being <a href="https://www.makeuseof.com/grep-command-practical-examples/">the grep command in Linux</a>. Other applications include information filtering such as extracting email addresses and phone numbers from a data dump.</p>
+<p>The main reason why many developers stray away from regular expressions is the lack of awareness about the power of pattern matching. Some even find regular expressions confusing because of the hefty amount of characters and sequences used in the patterns.</p>
+<p>Whatever the reason may be, regular expressions are and will be one of the most important aspects of programming that everyone should know about.</p>
+<h3 id="regular-expressions-matching-characters-and-sequences">Regular Expressions: Matching Characters and Sequences</h3>
+<p>Regex is a whole new language in itself. A regex engine interprets patterns comprised of several characters equipped with specific meanings. Basic literals such as alphanumeric characters match themselves. But complex characters such as $, *, +, {, etc. aid in higher-order matching.</p>
+<ol type="1">
+<li><strong>Asterisk (*):</strong> Matches the preceding character zero or more times. The literal meaning of the character would be “Element multiplied n times”. For example, if the regular expression is <strong>abc*</strong>, the strings matched will be ab, abc, abcc, abccc, abcccc, etc. The expression <strong>[bc]*</strong> will match bc, bcbc, bcbc, etc.</li>
+<li><strong>Plus (+):</strong> Matches the preceding character one or more times. The working of the <strong>+</strong> character is similar to <strong>*</strong>, but the <strong>+</strong> character omits the pattern if the character doesn’t occur. For example, <strong>abc+</strong> will match abc, abcc, abccc, etc. but not ab.</li>
+<li><strong>Question Mark (?):</strong> Matches the preceding character zero or one time(s). For example, the pattern <strong>abc?</strong> will match ab and abc only.</li>
+<li><strong>Pipe (|):</strong> Used as a binary <strong>OR</strong> operator. Matches either of the characters preceding and succeeding the pipe. For example, <strong>a|b</strong> will match either a or b.</li>
+<li><strong>Dot (.):</strong> Matches a character whose identity is unknown. For example, <strong>a.c</strong> will match aac, abc, acc, a2c, and so on.</li>
+<li><strong>Carrot (^):</strong> Matches the first character in the pattern. For example, <strong>^Ra</strong> will match words starting with <strong>Ra</strong> such as Rabbit, Raccoon, and Random.</li>
+<li><strong>Dollar (<span class="math inline">) :  *  * <em>M</em><em>a</em><em>t</em><em>c</em><em>h</em><em>e</em><em>s</em><em>t</em><em>h</em><em>e</em><em>l</em><em>a</em><em>s</em><em>t</em><em>c</em><em>h</em><em>a</em><em>r</em><em>a</em><em>c</em><em>t</em><em>e</em><em>r</em><em>i</em><em>n</em><em>t</em><em>h</em><em>e</em><em>p</em><em>a</em><em>t</em><em>t</em><em>e</em><em>r</em><em>n</em>.<em>F</em><em>o</em><em>r</em><em>e</em><em>x</em><em>a</em><em>m</em><em>p</em><em>l</em><em>e</em>,  *  * <em>a</em><em>n</em></span></strong> will match words ending with <strong>an</strong> such as Van, Dan, and Plan.</li>
+<li><strong>Hyphen (-):</strong> Used to define a range of characters. For example, <strong>[0-9]</strong> will match all single-digit numeric characters.</li>
+</ol>
+<p>Special sequences used in regular expression patterns are:</p>
+<ol type="1">
+<li><strong>:</strong> Returns a match if the succeeding characters are present at the beginning of the string. For example, <strong>* will match words starting with the </strong>The** such as The, Them, They, etc.</li>
+<li><strong></strong> Returns a match if the character is found at either the beginning or at the end of a word. For example, <strong>* and </strong>mad will match words such as <strong>made</strong> and <strong>nomad</strong> respectively.</li>
+<li><strong>:</strong> Returns a match if the character is not found at the beginning or end of a word.</li>
+<li><strong></strong> Matches numerical characters present in the string. For example, <strong>/d*</strong> will match numbers such as 1, 12, 1232, etc.</li>
+<li><strong>:</strong> Matches non-numerical characters in the string. <strong>/D</strong> will match a, b, c, f, etc.</li>
+<li><strong>:</strong> Matches a whitespace character in the text.</li>
+<li><strong>:</strong> Matches a non-whitespace character in the text.</li>
+<li><strong>:</strong> Returns a match if the string contains alphanumeric characters including underscores. For example, *** will match a, b, c, d, 1, 2, 3, etc.</li>
+<li><strong>:</strong> Returns a match if the string doesn’t contain alphanumeric characters or underscores.</li>
+<li><strong>:</strong> Matches characters at the end of a string. For example, <strong>end* will match words ending with </strong>end** such as bend, mend, tend, etc.</li>
+</ol>
+<h3 id="python-methods-for-regular-expressions">Python Methods for Regular Expressions</h3>
+<p>In Python, the <strong>re</strong> library provides all the necessary functions and utilities required to implement regex in your programs. You don’t have to download the library using pip as it comes preinstalled with the Python interpreter.</p>
+<p>To import the <strong>re</strong> library in Python, add the following code to your script:</p>
+<pre><code>import re</code></pre>
+<p>Note that while passing regular expressions in Python, we use raw strings as they do not interpret special characters such as and differently.</p>
+<h4 id="match">Match()</h4>
+<p>The <strong>re.match()</strong> method in Python returns a regex object if the program finds a match at the beginning of the specified string. This function takes two basic arguments:</p>
+<pre><code>re.match(pattern, string)</code></pre>
+<p>…where <strong>pattern</strong> is the regular expression and <strong>string</strong> is the text that needs to be searched.</p>
+<p>Take a look at the code snippet below.</p>
+<pre><code>import rematch = re.match(r&#39;Word&#39;, &quot;This sentence contains a Word&quot;)print(match)</code></pre>
+<p>The <strong>r</strong> character before the string stands for raw string.</p>
+<p>Output:</p>
+<pre><code>None</code></pre>
+<p>The aforementioned code returns <strong>None</strong> because <strong>Word</strong> wasn’t present at the beginning of the string.</p>
+<p>If a match is found, you can print the match using the <strong>group()</strong> method that belongs to the regex object.</p>
+<pre><code>import rematch = re.match(r&#39;Word&#39;, &quot;Word is hard to read&quot;)print(match.group(0))</code></pre>
+<p>Output:</p>
+<pre><code>Word</code></pre>
+<h4 id="search">Search()</h4>
+<p>The <strong>re.search()</strong> method takes similar arguments as re.match(). While match() only returns matches present at the beginning of the string, <strong>search()</strong> will return matches found at any index in the string.</p>
+<pre><code>import rematch = re.search(r&#39;Word&#39;, &quot;This sentence contains a Word. Word is hard to read.&quot;)print(match.group(0))</code></pre>
+<p>Note that the <strong>match()</strong> and <strong>search()</strong> methods will only return one pattern match. In the above-mentioned code, <strong>Word</strong> appears twice. But the <strong>search()</strong> function will only match the first occurrence of the word.</p>
+<pre><code>Word</code></pre>
+<h4 id="findall">FindAll()</h4>
+<p>As you can already guess, the <strong>findall()</strong> method returns every possible match in the string.</p>
+<pre><code>import rematch = re.search(r&#39;Word&#39;, &quot;This sentence contains a Word. Word is hard to read.&quot;)for elem in match: print(elem)</code></pre>
+<p>Instead of returning a regex object, the findall() function returns a list of all the matches. You can iterate through the list using a <a href="https://www.makeuseof.com/learn-for-loops-in-python/">for loop in python</a>.</p>
+<h4 id="split">Split()</h4>
+<p>If you want to split a string into sub-strings using a pattern as a delimiter, then the <strong>split()</strong> function is the one you need.</p>
+<pre><code>import resplit = re.split(r&#39;and&#39;, &quot;This word and that and this are different.&quot;)print(split)</code></pre>
+<p>Output:</p>
+<pre><code>[&#39;This word&quot;, &quot;that&quot;, &quot;this are different.&quot;]</code></pre>
+<h4 id="sub">Sub()</h4>
+<p>The <strong>sub()</strong> method allows a user to substitute a specific word in the place of a pattern. It takes the following arguments.</p>
+<pre><code>re.sub(pattern, replacement, string)</code></pre>
+<p>Consider this code snippet:</p>
+<pre><code>import reresult = re.sub(r&#39;and&#39;, &#39;or&#39;, &quot;Dave and Harry must be punished.&quot;)print(result)</code></pre>
+<p>Output:</p>
+<pre><code>Dave or Harry must be punished.</code></pre>
+<h4 id="compile">Compile()</h4>
+<p>The <strong>re.compile()</strong> method in the <strong>re</strong> library allows a user to store a compiled version of the regular expression pattern in the memory. Then, using the compiled object, the user can quickly filter the specified text dump for matched patterns.</p>
+<pre><code>import repattern = re.compile(&#39;Python&#39;)match = pattern.findall(&quot;Python is a great language for writing scripts. Python is easy to learn.&quot;)print(match)</code></pre>
+<p>This function is primarily used for saving patterns that are resource-intensive and need a lot of time to run. Compiling and saving the pattern as an object beforehand solves this issue.</p>
+<h3 id="leverage-the-power-of-regex-with-python">Leverage the Power of Regex With Python</h3>
+<p>When you are working with text files and output, regex is a great tool to have at your disposal. You can quickly write some code to filter or substitute specific patterns in the document.</p>
+<p>Memorizing all the characters and matching sequences can be hard if you’re just starting out with regex. To get better at regular expressions, referring to a list of characters, methods, and sequences every now and then will definitely help you in the long run.</p>
+</body>
+</html>

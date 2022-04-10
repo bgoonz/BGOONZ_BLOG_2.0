@@ -1,31 +1,34 @@
----
-tags: [ssh]
----
+To add private key:
+===================
 
-# To add private key:
+ssh-add
 
-ssh-add <keyfile>
-
-# To load resident keys from FIDO2 authenticator:
+To load resident keys from FIDO2 authenticator:
+===============================================
 
 ssh-add -K
 
-# To store a GitHub SSH passphrase in your keychain:
+To store a GitHub SSH passphrase in your keychain:
+==================================================
 
-ssh-add -K ~/.ssh/github_rsa
+ssh-add -K ~/.ssh/github\_rsa
 
-# To list all public keys:
+To list all public keys:
+========================
 
 ssh-add -L
 
-# To list fingerprints of all keys:
+To list fingerprints of all keys:
+=================================
 
 ssh-add -l
 
-# To delete key:
+To delete key:
+==============
 
-ssh-add -d <keyfile>
+ssh-add -d
 
-# To delete all keys:
+To delete all keys:
+===================
 
 ssh-add -D
