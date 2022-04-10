@@ -11,7 +11,7 @@ seo:
 template: docs
 ---
 
-<iframe src="https://testing-playground.com/embed/27ea36b9aa7868d05a38787a6bd21518/99c765c3a2ac8895c8dd1b866b663186e1700093?panes=query,result" height="450" width="100%" scrolling="yes" frameBorder="0"  title="Testing Playground" style="display: block; width: 100%"></iframe>
+<iframe src="https://testing-playground.com/embed/27ea36b9aa7868d05a38787a6bd21518/99c765c3a2ac8895c8dd1b866b663186e1700093?panes=query,result" height="450" width="100%" scrolling="yes" frameBorder="0" allowTransparency="true" title="Testing Playground" style="display: block; width: 100%"></iframe>
 
 # 🧪 React Testing Library
 

@@ -55,8 +55,4 @@ function BellmanFord(graph, V, E, src, dest) {
     }
 }
 
-export {
-    BellmanFord
-};
-BellmanFord
-};
+export { BellmanFord };

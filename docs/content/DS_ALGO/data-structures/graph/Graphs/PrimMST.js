@@ -3,7 +3,6 @@ function getParentPosition(position) {
     // Get the parent node of the current node
     return Math.floor((position - 1) / 2);
 }
-
 function getChildrenPosition(position) {
     // Get the children nodes of the current node
     return [2 * position + 1, 2 * position + 2];
@@ -85,60 +84,61 @@ class PriorityQueue {
             currPriority = this._heap[currPos][1];
             try {
                 parentPriority = this._heap[parentPos][1];
-            } catch (error) {}
-            parentPriority = Infinity;
+            } catch (error) {
+                parentPriority = Infinity;
+            }
         }
-    }
-    this.keys[this._heap[currPos][0]] = currPos;
-}
-
-_shiftDown(position) {
-    // Helper function to shift down a node to proper position (equivalent to bubbleDown)
-    let currPos = position;
-    let [child1Pos, child2Pos] = getChildrenPosition(currPos);
-    let [child1Priority, child2Priority] = [Infinity, Infinity];
-    if (child1Pos < this._heap.length) {
-        child1Priority = this._heap[child1Pos][1];
-    }
-    if (child2Pos < this._heap.length) {
-        child2Priority = this._heap[child2Pos][1];
-    }
-    let currPriority;
-    try {
-        currPriority = this._heap[currPos][1];
-    } catch {
-        return;
+        this.keys[this._heap[currPos][0]] = currPos;
     }
 
-    while (child2Pos < this._heap.length && (child1Priority < currPriority || child2Priority < currPriority)) {
-        if (child1Priority < currPriority && child1Priority < child2Priority) {
-            this._swap(child1Pos, currPos);
-            currPos = child1Pos;
-        } else {
-            this._swap(child2Pos, currPos);
-            currPos = child2Pos;
+    _shiftDown(position) {
+        // Helper function to shift down a node to proper position (equivalent to bubbleDown)
+        let currPos = position;
+        let [child1Pos, child2Pos] = getChildrenPosition(currPos);
+        let [child1Priority, child2Priority] = [Infinity, Infinity];
+        if (child1Pos < this._heap.length) {
+            child1Priority = this._heap[child1Pos][1];
         }
-        [child1Pos, child2Pos] = getChildrenPosition(currPos);
+        if (child2Pos < this._heap.length) {
+            child2Priority = this._heap[child2Pos][1];
+        }
+        let currPriority;
         try {
-            [child1Priority, child2Priority] = [this._heap[child1Pos][1], this._heap[child2Pos][1]];
-        } catch (error) {} [child1Priority, child2Priority] = [Infinity, Infinity];
+            currPriority = this._heap[currPos][1];
+        } catch {
+            return;
+        }
+
+        while (child2Pos < this._heap.length && (child1Priority < currPriority || child2Priority < currPriority)) {
+            if (child1Priority < currPriority && child1Priority < child2Priority) {
+                this._swap(child1Pos, currPos);
+                currPos = child1Pos;
+            } else {
+                this._swap(child2Pos, currPos);
+                currPos = child2Pos;
+            }
+            [child1Pos, child2Pos] = getChildrenPosition(currPos);
+            try {
+                [child1Priority, child2Priority] = [this._heap[child1Pos][1], this._heap[child2Pos][1]];
+            } catch (error) {
+                [child1Priority, child2Priority] = [Infinity, Infinity];
+            }
+
+            currPriority = this._heap[currPos][1];
+        }
+        this.keys[this._heap[currPos][0]] = currPos;
+        if (child1Pos < this._heap.length && child1Priority < currPriority) {
+            this._swap(child1Pos, currPos);
+            this.keys[this._heap[child1Pos][0]] = child1Pos;
+        }
     }
 
-    currPriority = this._heap[currPos][1];
-}
-this.keys[this._heap[currPos][0]] = currPos;
-if (child1Pos < this._heap.length && child1Priority < currPriority) {
-    this._swap(child1Pos, currPos);
-    this.keys[this._heap[child1Pos][0]] = child1Pos;
-}
-}
-
-_swap(position1, position2) {
-    // Helper function to swap 2 nodes
-    [this._heap[position1], this._heap[position2]] = [this._heap[position2], this._heap[position1]];
-    this.keys[this._heap[position1][0]] = position1;
-    this.keys[this._heap[position2][0]] = position2;
-}
+    _swap(position1, position2) {
+        // Helper function to swap 2 nodes
+        [this._heap[position1], this._heap[position2]] = [this._heap[position2], this._heap[position1]];
+        this.keys[this._heap[position1][0]] = position1;
+        this.keys[this._heap[position2][0]] = position2;
+    }
 }
 
 class GraphWeightedUndirectedAdjacencyList {
@@ -199,17 +199,11 @@ class GraphWeightedUndirectedAdjacencyList {
     }
 }
 
-export {
-    GraphWeightedUndirectedAdjacencyList
-};
+export { GraphWeightedUndirectedAdjacencyList };
 
 // const graph = new GraphWeightedUndirectedAdjacencyList()
 // graph.addEdge(1, 2, 1)
 // graph.addEdge(2, 3, 2)
-// graph.addEdge(3, 4, 1)
-// graph.addEdge(3, 5, 100) // Removed in MST
-// graph.addEdge(4, 5, 5)
-// graph.PrimMST(1)
 // graph.addEdge(3, 4, 1)
 // graph.addEdge(3, 5, 100) // Removed in MST
 // graph.addEdge(4, 5, 5)

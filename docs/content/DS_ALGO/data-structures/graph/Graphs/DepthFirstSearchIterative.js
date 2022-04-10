@@ -44,9 +44,7 @@ class GraphUnweightedUndirected {
     }
 }
 
-export {
-    GraphUnweightedUndirected
-};
+export { GraphUnweightedUndirected };
 
 // Example
 
@@ -55,7 +53,5 @@ export {
 // graph.addEdge(2, 3)
 // graph.addEdge(2, 4)
 // graph.addEdge(3, 5)
-// graph.DFSIterative(5, 1)
-// graph.DFSIterative(5, 100)
 // graph.DFSIterative(5, 1)
 // graph.DFSIterative(5, 100)

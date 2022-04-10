@@ -44,9 +44,7 @@ function solve(graph, s) {
     return solutions;
 }
 
-export {
-    solve
-};
+export { solve };
 
 // // create graph
 // const graph = {}
@@ -112,7 +110,5 @@ export {
 //  -> 12: [7, 5, 11, 12]   (dist:4)
 //  -> 13: [7, 5, 4, 3, 13]   (dist:5)
 //  -> 14: [7, 5, 4, 3, 13, 14]   (dist:6)
-//  -> 15: [7, 5, 4, 3, 6, 15]   (dist:6)
-//  -> R: [7, 5, 4, 2, R]   (dist:5)
 //  -> 15: [7, 5, 4, 3, 6, 15]   (dist:6)
 //  -> R: [7, 5, 4, 2, R]   (dist:5)
