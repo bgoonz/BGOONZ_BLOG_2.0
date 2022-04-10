@@ -10,6 +10,7 @@ seo:
     type: stackbit_page_meta
 template: docs
 ---
+
 Like many C-like programming languages, most operators JavaScript are binary or
 unary, and written in infix notation, i.e. `a op b`.
 

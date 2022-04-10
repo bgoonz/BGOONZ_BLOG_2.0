@@ -11,6 +11,7 @@ seo:
 template: docs
 ---
 
+
 # import
 
 The static `import` statement is used to import read only live bindings which are [exported](export) by another module.

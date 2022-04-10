@@ -35,6 +35,7 @@ seo:
 template: docs
 ---
 
+
 Both the browser and Node.js use JavaScript as their programming language.
 
 - Building apps that run in the browser is a completely different thing than building a Node.js application.

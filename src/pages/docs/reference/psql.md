@@ -11,6 +11,7 @@ seo:
 template: docs
 ---
 
+
 # Postgresql Cheat Sheet
 
 PostgreSQL commands

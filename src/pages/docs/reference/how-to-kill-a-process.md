@@ -10,6 +10,7 @@ seo:
 template: docs
 ---
 
+
 # How to Kill a Process in Linux
 
 **_Learn how to kill errant processes in this tutorial._**

@@ -3,6 +3,7 @@ sections:
     - about
     - articles
     - audio
+    - archive
     - career
     - community
     - content
@@ -11,12 +12,14 @@ sections:
     - docs
     - faq
     - git
+    - glossary
     - interact
     - javascript
     - js-tips
     - interview
     - leetcode
     - overflow
+    - netlify-cms
     - projects
     - python
     - quick-ref

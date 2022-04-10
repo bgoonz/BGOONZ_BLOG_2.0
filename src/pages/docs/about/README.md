@@ -11,6 +11,7 @@ seo:
 template: docs
 ---
 
+
 <div align="center">
 
 # [⇨WEBSITE🗺️⇦](https://bgoonz-blog.netlify.app/)

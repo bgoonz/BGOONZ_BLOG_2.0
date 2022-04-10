@@ -11,6 +11,7 @@ seo:
 template: docs
 ---
 
+
 # Object
 
 The `Object` class represents one of [JavaScript's data types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures). It is used to store various keyed collections and more complex entities. Objects can be created using the [`Object()`](object/object) constructor or the [object initializer / literal syntax](../operators/object_initializer).

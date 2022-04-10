@@ -10,6 +10,7 @@ seo:
 template: docs
 ---
 
+
 # How do I completely uninstall Ubuntu?
 
 - Just boot into Windows and head to Control Panel > Programs and Features. Find Ubuntu in the list of installed programs, and then uninstall it like you would any other program. The uninstaller automatically removes the Ubuntu files and boot loader entry from your computer.

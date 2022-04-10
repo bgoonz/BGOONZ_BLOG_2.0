@@ -1,70 +1,72 @@
-
 .button {
-    -ms-flex-align: center;
-    align-items: center;
-    background: $color-primary;
-    border: 0;
-    border-radius: 1.95em;
-    box-shadow: none;
-    box-sizing: border-box;
-    color: #fff;
-    cursor: pointer;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    font-size: 1em;
-    font-weight: bold;
-    -ms-flex-pack: center;
-    justify-content: center;
-    letter-spacing: 0.035em;
-    line-height: 1.6;
-    opacity: 1;
-    padding: 1.2em 2.14285em;
-    text-decoration: none;
-    -webkit-transition: 0.3s ease;
-    transition: 0.3s ease;
-    vertical-align: middle;
-    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -ms-flex-align: center;
+  align-items: center;
+  background: $color-primary;
+  border: 0;
+  border-radius: 1.95em;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 1em;
+  font-weight: bold;
+  -ms-flex-pack: center;
+  justify-content: center;
+  letter-spacing: 0.035em;
+  line-height: 1.6;
+  opacity: 1;
+  padding: 1.2em 2.14285em;
+  text-decoration: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  vertical-align: middle;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+  0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+  0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+  0 0 40px rgba(0, 0, 0, 0.1) inset;
 
-    &:hover,
-    &:focus,
-    &:active {
-        color: #fff;
-        opacity: 0.8;
-        outline: 0;
-    }
+  &:hover,
+  &:focus,
+  &:active {
+    color: #fff;
+    opacity: 0.8;
+    outline: 0;
+  }
 }
 
 .button-secondary {
-    background: 0 !important;
-    box-shadow: inset 0 0 0 3px currentColor;
-    color: $color-primary;
+  background: 0 !important;
+  box-shadow: inset 0 0 0 3px currentColor;
+  color: $color-primary;
 
-    &:hover,
-    &:focus,
-    &:active {
-        box-shadow: inset 0 0 0 4px currentColor;
-        color: $color-primary;
-        opacity: 1;
-    }
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: inset 0 0 0 4px currentColor;
+    color: $color-primary;
+    opacity: 1;
+  }
 }
 
 .button-icon {
-    background: 0 !important;
-    border: 0;
-    color: black;
-    font-size: 1.2em;
-    font-weight: normal;
-    letter-spacing: normal;
-    padding: 0.25em;
+  background: 0 !important;
+  border: 0;
+  color: black;
+  font-size: 1.2em;
+  font-weight: normal;
+  letter-spacing: normal;
+  padding: 0.25em;
 
-    &:hover,
-    &:focus,
-    &:active {
-        color: $color-primary;
-        opacity: 1;
-    }
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color-primary;
+    opacity: 1;
+  }
 }
 
 #menu-open,
@@ -72,135 +74,22 @@
 .docs-nav .docs-nav-toggle,
 .docs-nav .docs-submenu-toggle,
 .submenu-toggle {
-    background: 0;
-    border: 0;
-    border-radius: 0;
-    box-shadow: none;
-    color: inherit;
-    cursor: pointer;
-    display: block;
-    font-size: inherit;
-    height: 30px;
-    padding: 0;
-    position: relative;
-    width: 30px;
-
-    &:hover,
-    &:focus,
-    &:active {
-        outline: 0;
-    }
-}
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:600&display=swap");
-@-webkit-keyframes active {
-  from {
-    box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 10px 0px rgba(0, 0, 250, 0.6);
-  }
-  to {
-    box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
-  }
-}
-@keyframes active {
-  from {
-    box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 10px 0px rgba(0, 0, 250, 0.6);
-  }
-  to {
-    box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
-  }
-}
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  padding: 30px;
-  background: #f8f8f8;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.grid {
-  max-width: 400px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 150px 150px 50px;
-  align-items: center;
-  justify-content: center;
-  grid-gap: 40px 25px;
-}
-
-button,
-[role=button] {
-  -webkit-appearance: none;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  outline: none;
-  cursor: pointer;
-  width: 150px;
-  height: 50px;
-  background-image: linear-gradient(to top, #D8D9DB 0%, #fff 80%, #FDFDFD 100%);
-  border-radius: 30px;
-  border: 1px solid #8F9092;
-  box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 0 #CECFD1;
-  transition: all 0.2s ease;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  color: #606060;
-  text-shadow: 0 1px #fff;
-}
-button::-moz-focus-inner,
-[role=button]::-moz-focus-inner {
+  background: 0;
   border: 0;
-}
-button > *,
-[role=button] > * {
-  transition: transform 0.2s ease;
-}
-button:hover:not([disabled]),
-[role=button]:hover:not([disabled]) {
-  box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
-}
-button:hover:not([disabled]) > *,
-[role=button]:hover:not([disabled]) > * {
-  transform: scale(0.975);
-}
-button:focus:not(:active),
-[role=button]:focus:not(:active) {
-  -webkit-animation: active 0.9s alternate infinite;
-          animation: active 0.9s alternate infinite;
-  outline: none;
-}
-button:active:not([disabled]),
-[role=button]:active:not([disabled]) {
-  box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
-}
-button:active:not([disabled]) > *,
-[role=button]:active:not([disabled]) > * {
-  transform: scale(0.95);
-}
-button:disabled,
-[role=button]:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-}
-button.icon,
-[role=button].icon {
-  width: 50px;
-}
-button.icon svg,
-[role=button].icon svg {
-  margin-top: 3px;
-  width: 30px;
+  border-radius: 0;
+  box-shadow: none;
+  color: inherit;
+  cursor: pointer;
+  display: block;
+  font-size: inherit;
   height: 30px;
+  padding: 0;
+  position: relative;
+  width: 30px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: 0;
+  }
 }
