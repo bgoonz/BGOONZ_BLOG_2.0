@@ -12,6 +12,7 @@ sections:
     - docs
     - faq
     - git
+    - glossary
     - interact
     - javascript
     - js-tips
