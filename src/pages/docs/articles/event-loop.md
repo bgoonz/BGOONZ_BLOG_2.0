@@ -1,5 +1,5 @@
 ---
-title: The Node.js Event Loop
+title: Event Loop
 sections: []
 seo:
     title: 'Event Loop'
