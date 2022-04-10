@@ -159,7 +159,7 @@ Search feature
 -   [https://vercel.com/bgoonz](https://vercel.com/bgoonz)
 -   [https://vimeo.com/user128661018](https://vimeo.com/user128661018)
 -   [https://wakatime.com/@bgoonz42](https://wakatime.com/@bgoonz42)
--   [https://web-dev-hub.com/](https://web-dev-hub.com/)
+-   [https://bgoonz-blog.netlify.app/](https://bgoonz-blog.netlify.app/)
 -   [https://web-dev-resource-hub.netlify.app/](https://web-dev-resource-hub.netlify.app/)
 -   [https://webcomponents.dev/user/bgoonz](https://webcomponents.dev/user/bgoonz)
 -   [https://webdevhub.ghost.io/ghost/#/tags/new](https://webdevhub.ghost.io/ghost/#/tags/new)

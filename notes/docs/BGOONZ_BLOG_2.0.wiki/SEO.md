@@ -282,7 +282,7 @@ NOOPENER : [Job Search Resources](https://determined-dijkstra-ee7390.netlify.app
 NOOPENER : [Ternary 2 If Else](https://ternary42.netlify.app/)\
 NOOPENER : [Text Tools](https://devtools42.netlify.app/)\
 NOOPENER : [Github HTML Previewer](https://githtmlpreview.netlify.app/)\
-NOOPENER : [Wordpress Blog](https://web-dev-hub.com/)\
+NOOPENER : [Wordpress Blog](https://bgoonz-blog.netlify.app/)\
 NOOPENER : [Blog Backup](https://bgoonz-blog-v3-0.netlify.app/)\
 NOOPENER : [Condensed -Portfolio](https://bg-portfolio.netlify.app/)\
 NOOPENER : [SearchAwesome](https://search-awesome.vercel.app/)\
@@ -557,7 +557,7 @@ Title: /\
 | [/blog/platform-docs/](https://bgoonz-blog.netlify.app/blog/platform-docs/)\
 Title: /\
  |
-| [/blogWcomments/](https://bgoonz-blog.netlify.app/blogWcomments/)\
+| [/blogWcomments/](https://blog-w-comments.vercel.app/)\
 Title: /\
  |
 | [/docs](https://bgoonz-blog.netlify.app/docs)\
@@ -738,7 +738,7 @@ Title: /\
 | <https://en.wikipedia.org/wiki/Sean_Avery>\
 Title: /\
  |
-| <https://friendly-panda-b61ab.netlify.app/>\
+| <https://bgoonz-blog-v3-0.netlify.app/embeds/>\
 Title: /\
  |
 | <https://githtmlpreview.netlify.app/>\
@@ -822,7 +822,7 @@ Title: /\
 | <https://twitter.com/bgooonz>\
 Title: /\
  |
-| <https://web-dev-hub.com/>\
+| <https://bgoonz-blog.netlify.app/>\
 Title: /\
  |
 | <https://web-dev-interview-prep-quiz-website.netlify.app/>\

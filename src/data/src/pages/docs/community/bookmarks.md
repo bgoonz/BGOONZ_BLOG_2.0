@@ -2634,7 +2634,7 @@ template: docs
 -   [✅] [_**Internet Archive: Digital Library of Free & Borrowable Books, Movies,Music & Wayback Machine**_](https://archive.org/)
 -   [✅] [_**Commits ·BrentOzarULTD/BrentOzar.com-Demos**_](https://github.com/BrentOzarULTD/BrentOzar.com-Demos/commits?author=BrentOzar)
 -   [✅] [_**SQL ConstantCare® - Brent OzarUnlimited®**_](https://www.brentozar.com/sql-constantcare/)
--   [✅] [_**Web Development ResourcesSite**_](https://web-dev-hub.com/2021/05/05/585/comment-page-1/?unapproved=1&moderation-hash=63c29acaf8530be4e2d08321f02915b9#comment-1)
+-   [✅] [_**Web Development ResourcesSite**_](https://bgoonz-blog.netlify.app/2021/05/05/585/comment-page-1/?unapproved=1&moderation-hash=63c29acaf8530be4e2d08321f02915b9#comment-1)
 -   [✅] [_**stack overflow postgres database - GoogleSearch**_](https://www.google.com/search?q=stack+overflow+postgres+database&oq=stack+overflow+postgres+database&aqs=chrome..69i57j69i64l2.6496j0j7&sourceid=chrome&ie=UTF-8)
 -   [✅] [_**stackoverflow-to-postgresql.pdf**_](https://www.bortzmeyer.org/stackoverflow-to-postgresql.pdf)
 -   [✅] [_**Improve database performance with connection pooling - Stack OverflowBlog**_](https://stackoverflow.blog/2020/10/14/improve-database-performance-with-connection-pooling/)
