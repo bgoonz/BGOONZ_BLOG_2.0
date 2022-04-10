@@ -1,6 +1,6 @@
 ---
 title: Argument
-sections: []
+
 seo:
     title: 'Argument'
     description: 'CodingScripting  Glossary  JavaScript'
@@ -10,7 +10,8 @@ seo:
 template: docs
 ---
 
-An **argument** is a value"(primitive"or object" ) passed as input to a function" .
+
+# An **argument** is a value"(primitive"or object" ) passed as input to a function"
 
 ## See also
 

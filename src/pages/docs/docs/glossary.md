@@ -153,7 +153,7 @@ While still in draft form within the Web Incubator Community Group, the **[Acces
 
 #### See also
 
-- [Glossary](/en-US/docs/Glossary)
+
 
     - _Glossary("Accessibility"_)
     - _Glossary("ARIA"_)
@@ -238,12 +238,6 @@ With interactive websites and modern web standards, Ajax is gradually being repl
 - _interwiki("wikipedia", "AJAX"_) on Wikipedia
 - [Ajax](/en-US/docs/Web/Guide/AJAX)
 - [Ajax - Getting started](/en-US/docs/Web/Guide/AJAX/Getting_Started)
-- [Glossary](/en-US/docs/Glossary):
-
-    - _Glossary("XHR_(XMLHttpRequest)","XMLHttpRequest"\_)
-
-- _DOMxRef("XMLHttpRequest"_)
-- _DOMxRef("Fetch API"_)
 - [Using Fetch API](/en-US/docs/Web/API/Fetch_API/Using_Fetch)
 - [Synchronous vs. Asynchronous Communications](https://peoplesofttutorial.com/difference-between-synchronous-and-asynchronous-messaging/)
 
@@ -1072,7 +1066,7 @@ There is a [W3C Draft Beacon Specification](https://w3c.github.io/beacon/) to st
 - Blink project [home page](https://www.chromium.org/blink)
 - [Blink](<https://en.wikipedia.org/wiki/Blink_(browser_engine)>) on Wikipedia
 - [FAQ](https://www.chromium.org/blink/developer-faq) on Blink
-- [Glossary](/en-US/docs/Glossary)
+
 
     - _glossary("Google Chrome"_)
     - _glossary("Gecko"_)
@@ -1499,7 +1493,7 @@ In summary, then, we start with an empty Call Stack. Whenever we invoke a functi
 #### See also
 
 - _Interwiki("wikipedia", "Call stack"_) on Wikipedia
-- [Glossary](/en-US/docs/Glossary)
+
 
     - _Glossary("Call stack"_)
     - _Glossary("Function"_)
@@ -1798,7 +1792,7 @@ If a character set is used incorrectly (For example, Unicode for an article enco
 
 - _Interwiki("wikipedia", "Character encoding"_) (Wikipedia)
 - _Interwiki("wikipedia", "Mojibake"_) (Wikipedia)
-- [Glossary](/en-US/docs/Glossary)
+
 
     - _Glossary("Character"_)
     - _Glossary("Unicode"_)
@@ -2420,7 +2414,7 @@ Access-Control-Expose-Headers: X-Custom-Header, Content-Encoding
 - [HTTP](/en-US/docs/Web/HTTP)
 - [HTTP headers](/en-US/docs/Web/HTTP/Headers)
 - _HTTPHeader("Access-Control-Expose-Headers"_)
-- [Glossary](/en-US/docs/Glossary)
+
 
     - _Glossary("CORS"_)
     - _Glossary("CORS-safelisted_request_header", "CORS-safelisted request header"_)
@@ -2580,7 +2574,7 @@ Alignment of items on the cross axis is achieved with the `align-items` property
 - CSS Flexbox Guide: _[Basic Concepts of Flexbox](/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)_
 - CSS Flexbox Guide: _[Aligning items in a flex container](/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container)_
 - CSS Flexbox Guide: _[Mastering wrapping of flex items](/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Mastering_Wrapping_of_Flex_Items)_
-- [Glossary](/en-US/docs/Glossary)
+
 
     - _Glossary("Flex"_)
     - _Glossary("Flex Container"_)
@@ -3255,7 +3249,7 @@ See [Document directives](/en-US/docs/Web/HTTP/Headers/Content-Security-Policy#d
 
 #### See also
 
-- [Glossary](/en-US/docs/Glossary)
+
 
     - _Glossary("CSP"_)
     - _Glossary("Reporting directive"_)
@@ -3397,7 +3391,7 @@ DOM was not originally specified—it came about when browsers began implementin
 - _interwiki("wikipedia", "Document_Object_Model", "The Document Object Model"_) on Wikipedia
 - [The DOM documentation on MDN](/en-US/docs/Web/API/Document_Object_Model)
 - [The DOM Standard](https://dom.spec.whatwg.org/)
-- [Glossary](/en-US/docs/Glossary)
+
 
     - _Glossary("API"_)
     - _Glossary("HTML"_)
@@ -3974,7 +3968,7 @@ See [Fetch directives](/en-US/docs/Web/HTTP/Headers/Content-Security-Policy#fetc
 
 #### See also
 
-- [Glossary](/en-US/docs/Glossary)
+
 
     - _Glossary("CSP"_)
     - _Glossary("Reporting directive"_)
@@ -4017,7 +4011,7 @@ The fetch metadata request headers are:
 - [Fetch Metadata Request Headers playground](https://secmetadata.appspot.com/) (secmetadata.appspot.com)
 - [List of all HTTP headers](/en-US/docs/Web/HTTP/Headers)
 - [List of all HTTP headers > Fetch metadata request headers](/en-US/docs/Web/HTTP/Headers#fetch_metadata_request_headers)
-- [Glossary](/en-US/docs/Glossary)
+
 
     - _Glossary("Representation header"_)
     - _Glossary("HTTP_header","HTTP header"_)
@@ -6152,7 +6146,7 @@ HTTP/2 does not modify the application semantics of HTTP in any way. All the cor
 
 - [HTTP on MDN](/en-US/docs/Web/HTTP)
 - _interwiki("wikipedia", "HTTP/2", "HTTP/2"_) on Wikipedia
-- [Glossary](/en-US/docs/Glossary)
+
 
     - _glossary("HTTP"_)
     - _glossary("Latency"_)
@@ -6175,7 +6169,7 @@ The major point of HTTP/3 is that it uses a new _glossary("UDP"_) protocol named
 
 - [HTTP on MDN](/en-US/docs/Web/HTTP)
 - _interwiki("wikipedia", "HTTP/3", "HTTP/3"_) on Wikipedia
-- [Glossary](/en-US/docs/Glossary)
+
 
     - _glossary("HTTP"_)
     - _glossary("HTTP 2"_)
@@ -6241,7 +6235,7 @@ X-Cache-Info: cached
 
 - [List of all HTTP headers](/en-US/docs/Web/HTTP/Headers)
 - Syntax of [headers](https://datatracker.ietf.org/doc/html/rfc7230#section-3.2) in the HTTP specification
-- [Glossary](/en-US/docs/Glossary)
+
 
     - _Glossary("HTTP header"_)
     - _Glossary("Request header"_)
@@ -6543,7 +6537,7 @@ An identifier differs from a string in that a _glossary("string"_) is data, whil
 #### See also
 
 - _interwiki("wikipedia", "Identifier#In_computer_science", "Identifier"_) on Wikipedia
-- [Glossary](/en-US/docs/Glossary)
+
 
     - _glossary("Identifier"_)
     - _glossary("Scope"_)
@@ -6740,7 +6734,7 @@ When clicked, these buttons alert 0 and 1.
 
 - [Quick example](/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript#Functions) (at the end of the "Functions" section, right before "Custom objects")
 - _interwiki("wikipedia", "Immediately-invoked function expression", "IIFE"_) (Wikipedia)
-- [Glossary](/en-US/docs/Glossary)
+
 
     - _Glossary("Function"_)
     - _Glossary("Self-Executing Anonymous Function"_)
@@ -6900,7 +6894,7 @@ As an app developer, you can choose which of the superclass's _glossary("attribu
 #### See also
 
 - _Interwiki("wikipedia", "Input method"_)
-- [Glossary](/en-US/docs/Glossary)
+
 
     - _Glossary("I18N"_)
 
@@ -7722,7 +7716,7 @@ _glossary("Lossy compression"_), on the other hand, uses inexact approximations 
 
 #### See also
 
-- [Glossary](/en-US/docs/Glossary)
+
 
     - _glossary("GZIP"_)
     - _glossary("Brotli"_)
@@ -7860,7 +7854,7 @@ Unless intentionally using a [web worker](/en-US/docs/Web/API/Web_Workers_API/Us
 - [Asynchronous JavaScript](/en-US/docs/Learn/JavaScript/Asynchronous)
 - [Web worker API](/en-US/docs/Web/API/Web_Workers_API)
 - [Service worker API](/en-US/docs/Web/API/Service_Worker_API)
-- [Glossary](/en-US/docs/Glossary)
+
 
     - _Glossary("Thread"_)
 
@@ -8426,9 +8420,8 @@ See [Navigation directives](/en-US/docs/Web/HTTP/Headers/Content-Security-Policy
 #### See also
 
 - <https://www.w3.org/TR/CSP/#directives-navigation>
-- Other kinds of directives:
-
-    - _Glossary("Fetch directive"_)
+- Other kinds of directives
+"Fetch directive"_)
     - _Glossary("Document directive"_)
     - _Glossary("Reporting directive"_)
     - [`block-all-mixed-content`](/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/block-all-mixed-content)
@@ -9492,9 +9485,8 @@ Clients usually retrieve all messages and then delete them from the server, but 
 - [RFC 1734](https://datatracker.ietf.org/doc/html/rfc1734) (Specification of POP3 authentication mechanism)
 - [RFC 1939](https://datatracker.ietf.org/doc/html/rfc1939) (Specification of POP3)
 - [RFC 2449](https://datatracker.ietf.org/doc/html/rfc2449) (Specification of POP3 extension mechanism)
-- [MDN Web Docs Glossary](/en-US/docs/Glossary):
-
-    - _Glossary("IMAP"_)
+- [MDN Web Docs Glossary](/en-US/docs/Glossary)
+"IMAP"_)
 
 ---
 
@@ -9698,7 +9690,7 @@ The wrapper's [`valueOf()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/
 
 - [JavaScript data types](/en-US/docs/Web/JavaScript/Data_structures)
 - _Interwiki("wikipedia", "Primitive data type"_) (Wikipedia)
-- [Glossary](/en-US/docs/Glossary)
+
 
     - _Glossary("JavaScript"_)
     - _Glossary("string"_)
@@ -9835,9 +9827,8 @@ When the called function finishes its work _Glossary("asynchronous", "asynchrono
 - _Interwiki("wikipedia", "Communications protocol"_) on Wikipedia
 - [RFC Official Internet Protocol Standards](https://www.rfc-editor.org/search/standards.php)
 - [HTTP overview](/en-US/docs/Web/HTTP/Overview)
-- Glossary:
-
-    - _glossary("TCP"_)
+- Glossary
+"TCP"_)
     - _glossary("Packet"_)
 
 ---
@@ -9999,7 +9990,7 @@ Python is developed under an OSI-approved open source license, making it freely 
 - [Tutorials Point Python tutorial](https://www.tutorialspoint.com/python/index.htm)
 - [AlphaCodingSkills Python Tutorial](https://www.alphacodingskills.com/python/python-tutorial.php)
 - [Django Web Framework (Python)](/en-US/docs/Learn/Server-side/Django) on MDN
-- [Glossary](/en-US/docs/Glossary)
+
 
     - _Glossary("Java"_)
     - _Glossary("JavaScript"_)
@@ -10360,7 +10351,7 @@ See [Reporting directives](/en-US/docs/Web/HTTP/Headers/Content-Security-Policy#
 
 #### See also
 
-- [Glossary](/en-US/docs/Glossary)
+
 
     - _Glossary("CSP"_)
     - _Glossary("Fetch directive"_)
@@ -10497,7 +10488,7 @@ x-frame-options: DENY
 #### See also
 
 - [List of all HTTP headers](/en-US/docs/Web/HTTP/Headers)
-- [Glossary](/en-US/docs/Glossary)
+
 
     - _Glossary("Representation header"_)
     - _Glossary("HTTP header"_)
@@ -10854,7 +10845,7 @@ RTP is rarely used alone; instead, it is used in conjunction with other protocol
 
 - _Interwiki("wikipedia", "Real_Time_Streaming_Protocol","RTSP"_) on Wikipedia
 - [RFC 7826](https://datatracker.ietf.org/doc/html/rfc7826) (one of the documents that specifies precisely how the protocol works)
-- [Glossary](/en-US/docs/Glossary)
+
 
     - _Glossary("RTSP"_)
 
@@ -10908,9 +10899,8 @@ It helps isolate potentially malicious documents, reducing possible attack vecto
 #### See also
 
 - [Same-origin policy](/en-US/docs/Web/Security/Same-origin_policy)
-- [MDN Web Docs Glossary](/en-US/docs/Glossary):
-
-    - _Glossary("CORS"_)
+- [MDN Web Docs Glossary](/en-US/docs/Glossary)
+"CORS"_)
     - _Glossary("origin"_)
 
 ---
@@ -11078,9 +11068,8 @@ The scroll container allows the user to scroll through parts of the overflow reg
 
 #### See also
 
-- [MDN Web Docs Glossary](/en-US/docs/Glossary):
-
-    - _glossary("Scroll container"_)
+- [MDN Web Docs Glossary](/en-US/docs/Glossary)
+"Scroll container"_)
     - _glossary("Scrollport"_)
 
 - Related CSS Properties:
@@ -11100,9 +11089,8 @@ The scroll container allows the user to scroll through parts of the overflow reg
 
 #### See also
 
-- [MDN Web Docs Glossary](/en-US/docs/Glossary):
-
-    - _glossary("Scroll container"_)
+- [MDN Web Docs Glossary](/en-US/docs/Glossary)
+"Scroll container"_)
     - _glossary("Scrollport"_)
 
 - Related CSS Properties:
@@ -11216,7 +11204,7 @@ As another example, in `developer.mozilla.org`, the `developer` subdomain is use
 #### See also
 
 - _Interwiki("wikipedia", "Second-level domain", "SLD"_) (Wikipedia)
-- [Glossary](/en-US/docs/Glossary)
+
 
     - _Glossary("DNS"_)
     - _Glossary("Domain"_)
@@ -11350,7 +11338,7 @@ These are _some_ of the roughly 100 semantic [elements](/en-US/docs/Web/HTML/Ele
 - [HTML element reference](/en-US/docs/Web/HTML/Element#inline_text_semantics) on MDN
 - [Using HTML sections and outlines](/en-US/docs/Web/HTML/Element/Heading_Elements#problems_solved_by_html5) on MDN
 - _interwiki("wikipedia", "Semantics#Computer_science", "The meaning of semantics in computer science"_) on Wikipedia
-- [Glossary](/en-US/docs/Glossary)
+
 
     - _Glossary("SEO"_)
 
@@ -11605,7 +11593,7 @@ See also _Glossary("SISD"_) for a sequential architecture with no parallelism in
 #### See also
 
 - _Interwiki("wikipedia", "SIMD"_) on Wikipedia
-- [Glossary](/en-US/docs/Glossary)
+
 
     - _Glossary("SIMD"_)
     - _Glossary("SISD"_)
@@ -11817,7 +11805,7 @@ The protocol is relatively straightforward. Primary complications include suppor
 #### See also
 
 - _Interwiki("wikipedia", "SMTP"_) (Wikipedia)
-- [Glossary](/en-US/docs/Glossary)
+
 
     - _glossary("NNTP"_)
     - _glossary("POP"_)
@@ -11873,7 +11861,7 @@ This therefore allows users to use websites without loading whole new pages from
 
 - _Interwiki("wikipedia", "Single-page application"_) (Wikipedia)
 - [Understanding client-side JavaScript frameworks](/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks)
-- [Glossary](/en-US/docs/Glossary)
+
 
     - _Glossary("API"_)
     - _Glossary("AJAX"_)
@@ -12076,7 +12064,7 @@ So due to (1) each single quote (') in the input string is replaced with double 
 
 - _Interwiki("wikipedia", "Transport Layer Security"_) (Wikipedia)
 - [Transport Layer Security (TLS) protocol](/en-US/docs/Web/Security/Transport_Layer_Security)
-- [Glossary](/en-US/docs/Glossary)
+
 
     - _Glossary("HTTPS"_)
     - _Glossary("TLS"_)
@@ -12241,7 +12229,7 @@ Strict mode for an entire script is invoked by including the statement `"use str
 
 - [Strict mode](/en-US/docs/Web/JavaScript/Reference/Strict_mode)
 - [Transitioning to strict mode](/en-US/docs/Web/JavaScript/Reference/Strict_mode/Transitioning_to_strict_mode)
-- [Glossary](/en-US/docs/Glossary)
+
 
     - _Glossary("Sloppy mode"_)
 
@@ -12736,7 +12724,7 @@ TCP's role is to ensure the packets are reliably delivered, error free. TCP has 
 - _Interwiki("wikipedia", "Transmission Control Protocol"_) (Wikipedia)
 - [HTTP Overview](/en-US/docs/Web/HTTP/Overview)
 - [How browsers work](/en-US/docs/Web/Performance/How_browsers_work)
-- [Glossary](/en-US/docs/Glossary)
+
 
     - _Glossary("IPv4"_)
     - _Glossary("IPv6"_)
@@ -12806,7 +12794,7 @@ Overall it can be observed these threads within our operating system are extreme
 - [Asynchronous JavaScript](/en-US/docs/Learn/JavaScript/Asynchronous)
 - [Web worker API](/en-US/docs/Web/API/Web_Workers_API)
 - [Service worker API](/en-US/docs/Web/API/Service_Worker_API)
-- [Glossary](/en-US/docs/Glossary)
+
 
     - _Glossary("Main thread"_)
 
@@ -12938,7 +12926,7 @@ All modern browsers support the TLS protocol, requiring the server to provide a 
 - [RFC 5246](https://datatracker.ietf.org/doc/html/rfc5246) (The Transport Layer Security Protocol, Version 1.2)
 - [Transport Layer Security](/en-US/docs/Web/Security/Transport_Layer_Security)
 - [OWASP: Transport Layer Protection Cheat Sheet](https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet)
-- [Glossary](/en-US/docs/Glossary)
+
 
     - _Glossary("HTTPS"_)
     - _Glossary("SSL"_)
@@ -13262,7 +13250,7 @@ sum = Number(value1) + value2;
 #### See also
 
 - _Interwiki("wikipedia", "Type conversion"_) (Wikipedia)
-- [Glossary](/en-US/docs/Glossary)
+
 
     - _Glossary("Type"_)
     - _Glossary("Type conversion"_)
@@ -13283,7 +13271,7 @@ sum = Number(value1) + value2;
 #### See also
 
 - _Interwiki("wikipedia", "Type conversion"_) (Wikipedia)
-- [Glossary](/en-US/docs/Glossary)
+
 
     - _Glossary("Type"_)
     - _Glossary("Type coercion"_)
@@ -13310,7 +13298,7 @@ If you are unsure of the type of a value, you can use the [`typeof`](/en-US/docs
 
 - _Interwiki("wikipedia", "Data type"_) on Wikipedia
 - [JavaScript data types](/en-US/docs/Web/JavaScript/Data_structures)
-- [Glossary](/en-US/docs/Glossary)
+
 
     - _Glossary("JavaScript"_)
     - _Glossary("string"_)
@@ -14207,7 +14195,7 @@ The [ECMAScript Language Specification](https://tc39.es/ecma262/#sec-white-space
     - [ASCII whitespace spec](https://infra.spec.whatwg.org/#ascii-whitespace)
     - [ECMAScript Language Specification](https://tc39.es/ecma262/#sec-white-space)
 
-- [Glossary](/en-US/docs/Glossary)
+
 
     1.  _Glossary("Character"_)
 

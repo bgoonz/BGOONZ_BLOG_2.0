@@ -1,6 +1,6 @@
 ---
 title: Apple Safari
-sections: []
+
 seo:
     title: 'Apple_Safari'
     description: 'Glossary  Navigation  WebMechanics'
@@ -10,7 +10,8 @@ seo:
 template: docs
 ---
 
-[Safari](https://www.apple.com/safari/) is a Browser","Web browser"developed by Apple and bundled with both macOS and iOS. It's based on the open source [WebKit](https://webkit.org/) engine.
+
+# **Safar** is a Browser","Web browser"developed by Apple and bundled with both macOS and iOS. It's based on the open source [WebKit](https://webkit.org/) engine
 
 ## See also
 

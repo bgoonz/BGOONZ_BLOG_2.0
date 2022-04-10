@@ -1,6 +1,5 @@
 ---
 title: ALPN
-sections: []
 weight: 0
 excerpt: seo:
     title: 'ALPN'
@@ -11,7 +10,8 @@ excerpt: seo:
 template: docs
 ---
 
-**Application-Layer Protocol"Negotiation** (**ALPN**) is a TLS"extension which indicates what application layer protocol is negotiating the encrypted connection without requiring additional round trips.
+
+# **Application-Layer Protocol"Negotiation** (**ALPN**) is a TLS"extension which indicates what application layer protocol is negotiating the encrypted connection without requiring additional round trips.
 
 | Protocol                                       | Identification sequence                                |
 | ---------------------------------------------- | ------------------------------------------------------ |
