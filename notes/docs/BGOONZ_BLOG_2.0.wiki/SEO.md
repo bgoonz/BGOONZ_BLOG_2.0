@@ -130,9 +130,9 @@ Lang attribut of HTML element is missing.
 ---
 
 ALL LINKS\
-APPLE-TOUCH-ICON : [logo-circle.png](https://bgoonz-blog.netlify.app/logo-circle.png 'apple-touch-icon')\
-APPLE-TOUCH-ICON : [logo-canvas.png](https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/favicon.png 'apple-touch-icon')\
-ICON : [webdevhublogo2.png](https://bgoonz-blog.netlify.app/images/webdevhublogo2.png 'icon')\
+APPLE-TOUCH-ICON : [logo-circle.png](https://bgoonz-blog.netlify.app/logo-circle.png "apple-touch-icon")\
+APPLE-TOUCH-ICON : [logo-canvas.png](https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/favicon.png "apple-touch-icon")\
+ICON : [webdevhublogo2.png](https://bgoonz-blog.netlify.app/images/webdevhublogo2.png "icon")\
 PRECONNECT : https://fonts.gstatic.com\
 PREFETCH : component---src-templates-advanced-js-c66268766ef5c957450f.js\
 PREFETCH : component---src-templates-blog-js-36eb4fae1add87ca6010.js\
@@ -164,7 +164,7 @@ PRELOAD : integrator.js\
 PRELOAD : page-data.json\
 PRELOAD : styles-7d4153d260c0197f0043.js\
 PRELOAD : webpack-runtime-7059fe0afa2407e27b1a.js\
-SHORTCUT ICON : [favicon.ico](https://bgoonz-blog.netlify.app/favicon.ico 'shortcut icon')\
+SHORTCUT ICON : [favicon.ico](https://bgoonz-blog.netlify.app/favicon.ico "shortcut icon")\
 STYLESHEET : [default.min.css](https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/styles/default.min.css)\
 STYLESHEET : [algoliasearchNetlify.css](https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css)\
 STYLESHEET : [bootstrap.min.css](https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css)\
@@ -202,9 +202,9 @@ HTTP-EQUIV (ORIGIN-TRIAL) : Azuce85ORtSnWe1MZDTv68qpaW3iHyfL9YbLRy0cwcCZwVnePnOm
 HTTP-EQUIV (ORIGIN-TRIAL) : Azuce85ORtSnWe1MZDTv68qpaW3iHyfL9YbLRy0cwcCZwVnePnOmkUJlG8HGikmOwhZU22dElCcfrfX2HhrBPAkAAAB7eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9\
 OG:DESCRIPTION : my resource sharing and blog site ... centered mostly on web development and just a bit of audio production / generally nerdy things I find interesting.\
 OG:DESCRIPTION : my resource sharing and blog site ... centered mostly on web development and just a bit of audio production / generally nerdy things I find interesting.\
-OG:IMAGE : [code.png](https://bgoonz-blog.netlify.app/images/code.png 'code.png')\
-OG:IMAGE : [code.png](https://bgoonz-blog.netlify.app/images/code.png 'code.png')\
-OG:IMAGE : [DROicc16](https://mugshotbot.com/m/DROicc16 'DROicc16')\
+OG:IMAGE : [code.png](https://bgoonz-blog.netlify.app/images/code.png "code.png")\
+OG:IMAGE : [code.png](https://bgoonz-blog.netlify.app/images/code.png "code.png")\
+OG:IMAGE : [DROicc16](https://mugshotbot.com/m/DROicc16 "DROicc16")\
 OG:TITLE : Web-Dev-Hub\
 OG:TITLE : Web-Dev-Hub\
 OG:TYPE : website\
@@ -219,9 +219,9 @@ TWITTER:DESCRIPTION : The new home of my blog resource sharing website.\
 TWITTER:DESCRIPTION : Web-Dev-Hub\
 TWITTER:DESCRIPTION : my resource sharing and blog site ... centered mostly on web development and just a bit of audio production / generally nerdy things I find interesting.\
 TWITTER:DOMAIN : bgoonz-blog.netlify.app\
-TWITTER:IMAGE : [4.jpg](https://bgoonz-blog.netlify.app/images/4.jpg '4.jpg')\
-TWITTER:IMAGE : [code.png](https://bgoonz-blog.netlify.app/images/code.png 'code.png')\
-TWITTER:IMAGE:SRC : [logo-circle.png](https://bgoonz-blog.netlify.app/logo-circle.png 'logo-circle.png')\
+TWITTER:IMAGE : [4.jpg](https://bgoonz-blog.netlify.app/images/4.jpg "4.jpg")\
+TWITTER:IMAGE : [code.png](https://bgoonz-blog.netlify.app/images/code.png "code.png")\
+TWITTER:IMAGE:SRC : [logo-circle.png](https://bgoonz-blog.netlify.app/logo-circle.png "logo-circle.png")\
 TWITTER:SITE : @bgoonz\
 TWITTER:TITLE : Web Development Resource Hub Bryan Guner\
 TWITTER:TITLE : Web-Dev-Hub\

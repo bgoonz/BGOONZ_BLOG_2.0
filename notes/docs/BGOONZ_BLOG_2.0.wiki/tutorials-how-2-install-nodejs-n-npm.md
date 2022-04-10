@@ -1,39 +1,40 @@
-
 # Installing Node.js via package manager | Node.js
 
 > ## Excerpt
+>
 > Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 
 ---
+
 _**Note:**_ The packages on this page are maintained and supported by their respective packagers, **not** the Node.js core team. Please report any issues you encounter to the package maintainer. If it turns out your issue is a bug in Node.js itself, the maintainer will report the issue upstream.
 
-___
+---
 
--   [Alpine Linux](https://nodejs.org/en/download/package-manager/#alpine-linux)
--   [Android](https://nodejs.org/en/download/package-manager/#android)
--   [Arch Linux](https://nodejs.org/en/download/package-manager/#arch-linux)
--   [CentOS, Fedora and Red Hat Enterprise Linux](https://nodejs.org/en/download/package-manager/#centos-fedora-and-red-hat-enterprise-linux)
--   [Debian and Ubuntu based Linux distributions](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions)
--   [fnm](https://nodejs.org/en/download/package-manager/#fnm)
--   [FreeBSD](https://nodejs.org/en/download/package-manager/#freebsd)
--   [Gentoo](https://nodejs.org/en/download/package-manager/#gentoo)
--   [IBM i](https://nodejs.org/en/download/package-manager/#ibm-i)
--   [macOS](https://nodejs.org/en/download/package-manager/#macos)
--   [n](https://nodejs.org/en/download/package-manager/#n)
--   [NetBSD](https://nodejs.org/en/download/package-manager/#netbsd)
--   [Nodenv](https://nodejs.org/en/download/package-manager/#nodenv)
--   [nvm](https://nodejs.org/en/download/package-manager/#nvm)
--   [nvs](https://nodejs.org/en/download/package-manager/#nvs)
--   [OpenBSD](https://nodejs.org/en/download/package-manager/#openbsd)
--   [openSUSE and SLE](https://nodejs.org/en/download/package-manager/#opensuse-and-sle)
--   [SmartOS and illumos](https://nodejs.org/en/download/package-manager/#smartos-and-illumos)
--   [Snap](https://nodejs.org/en/download/package-manager/#snap)
--   [Solus](https://nodejs.org/en/download/package-manager/#solus)
--   [Void Linux](https://nodejs.org/en/download/package-manager/#void-linux)
--   [Windows](https://nodejs.org/en/download/package-manager/#windows)
--   [z/OS](https://nodejs.org/en/download/package-manager/#zos)
+- [Alpine Linux](https://nodejs.org/en/download/package-manager/#alpine-linux)
+- [Android](https://nodejs.org/en/download/package-manager/#android)
+- [Arch Linux](https://nodejs.org/en/download/package-manager/#arch-linux)
+- [CentOS, Fedora and Red Hat Enterprise Linux](https://nodejs.org/en/download/package-manager/#centos-fedora-and-red-hat-enterprise-linux)
+- [Debian and Ubuntu based Linux distributions](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions)
+- [fnm](https://nodejs.org/en/download/package-manager/#fnm)
+- [FreeBSD](https://nodejs.org/en/download/package-manager/#freebsd)
+- [Gentoo](https://nodejs.org/en/download/package-manager/#gentoo)
+- [IBM i](https://nodejs.org/en/download/package-manager/#ibm-i)
+- [macOS](https://nodejs.org/en/download/package-manager/#macos)
+- [n](https://nodejs.org/en/download/package-manager/#n)
+- [NetBSD](https://nodejs.org/en/download/package-manager/#netbsd)
+- [Nodenv](https://nodejs.org/en/download/package-manager/#nodenv)
+- [nvm](https://nodejs.org/en/download/package-manager/#nvm)
+- [nvs](https://nodejs.org/en/download/package-manager/#nvs)
+- [OpenBSD](https://nodejs.org/en/download/package-manager/#openbsd)
+- [openSUSE and SLE](https://nodejs.org/en/download/package-manager/#opensuse-and-sle)
+- [SmartOS and illumos](https://nodejs.org/en/download/package-manager/#smartos-and-illumos)
+- [Snap](https://nodejs.org/en/download/package-manager/#snap)
+- [Solus](https://nodejs.org/en/download/package-manager/#solus)
+- [Void Linux](https://nodejs.org/en/download/package-manager/#void-linux)
+- [Windows](https://nodejs.org/en/download/package-manager/#windows)
+- [z/OS](https://nodejs.org/en/download/package-manager/#zos)
 
-___
+---
 
 Node.js LTS and npm packages are available in the Main Repository.
 
@@ -89,8 +90,8 @@ For CentOS/RHEL 7 Node.js is available via [Software Collections](https://www.so
 
 These resources provide packages compatible with CentOS, Fedora, and RHEL.
 
--   [Node.js snaps](https://nodejs.org/en/download/package-manager/#snap) maintained and supported at [https://github.com/nodejs/snap](https://github.com/nodejs/snap)
--   [Node.js binary distributions](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions) maintained and supported by [NodeSource](https://github.com/nodesource/distributions)
+- [Node.js snaps](https://nodejs.org/en/download/package-manager/#snap) maintained and supported at [https://github.com/nodejs/snap](https://github.com/nodejs/snap)
+- [Node.js binary distributions](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions) maintained and supported by [NodeSource](https://github.com/nodesource/distributions)
 
 ## Debian and Ubuntu based Linux distributions[](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions)
 
@@ -262,7 +263,7 @@ Node.js is available through the ports system.
 /usr/ports/lang/node
 ```
 
-Using [pkg\_add](https://man.openbsd.org/OpenBSD-current/man1/pkg_add.1) on OpenBSD:
+Using [pkg_add](https://man.openbsd.org/OpenBSD-current/man1/pkg_add.1) on OpenBSD:
 
 ```
 pkg_add node
@@ -272,10 +273,10 @@ pkg_add node
 
 Node.js is available in the main repositories under the following packages:
 
--   **openSUSE Leap 15.2**: `nodejs10`, `nodejs12`, `nodejs14`
--   **openSUSE Tumbleweed**: `nodejs16`
--   **SUSE Linux Enterprise Server (SLES) 12**: `nodejs10`, `nodejs12`, and `nodejs14` (The "Web and Scripting Module" must be [enabled](https://www.suse.com/releasenotes/x86_64/SUSE-SLES/12-SP5/#intro-modulesExtensionsRelated).)
--   **SUSE Linux Enterprise Server (SLES) 15 SP2**: `nodejs10`, `nodejs12`, and `nodejs14` (The "Web and Scripting Module" must be [enabled](https://www.suse.com/releasenotes/x86_64/SUSE-SLES/15/#Intro.Module).)
+- **openSUSE Leap 15.2**: `nodejs10`, `nodejs12`, `nodejs14`
+- **openSUSE Tumbleweed**: `nodejs16`
+- **SUSE Linux Enterprise Server (SLES) 12**: `nodejs10`, `nodejs12`, and `nodejs14` (The "Web and Scripting Module" must be [enabled](https://www.suse.com/releasenotes/x86_64/SUSE-SLES/12-SP5/#intro-modulesExtensionsRelated).)
+- **SUSE Linux Enterprise Server (SLES) 15 SP2**: `nodejs10`, `nodejs12`, and `nodejs14` (The "Web and Scripting Module" must be [enabled](https://www.suse.com/releasenotes/x86_64/SUSE-SLES/15/#Intro.Module).)
 
 For example, to install Node.js 14.x on openSUSE Leap 15.2, run the following as root:
 
@@ -341,5 +342,5 @@ scoop install nodejs
 
 IBM® SDK for Node.js - z/OS® is available in two installation formats, SMP/E and PAX. Select the installation format that applies to you:
 
--   [Installing and configuring SMP/E edition of Node.js on z/OS](https://www.ibm.com/support/knowledgecenter/SSTRRS_14.0.0/com.ibm.nodejs.zos.v14.doc/smpe.htm)
--   [Installing and configuring PAX edition of Node.js on z/OS](https://www.ibm.com/support/knowledgecenter/SSTRRS_14.0.0/com.ibm.nodejs.zos.v14.doc/paxz.htm)
+- [Installing and configuring SMP/E edition of Node.js on z/OS](https://www.ibm.com/support/knowledgecenter/SSTRRS_14.0.0/com.ibm.nodejs.zos.v14.doc/smpe.htm)
+- [Installing and configuring PAX edition of Node.js on z/OS](https://www.ibm.com/support/knowledgecenter/SSTRRS_14.0.0/com.ibm.nodejs.zos.v14.doc/paxz.htm)

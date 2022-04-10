@@ -291,12 +291,12 @@ Pasting is more complex because multiple `ClipboardItem` objects can be returned
 const clipboardItems = await navigator.clipboard.read();
 
 for (const clipboardItem of clipboardItems) {
-    for (const type of clipboardItem.types) {
-        if (type === 'image/png') {
-            // return PNG blob
-            return await clipboardItem.getType(type);
-        }
+  for (const type of clipboardItem.types) {
+    if (type === "image/png") {
+      // return PNG blob
+      return await clipboardItem.getType(type);
     }
+  }
 }
 ```
 
