@@ -29,7 +29,7 @@ description: "\r
 
   \r
 
-   Java API provides built-in support for common data structures, essential
+  Java API provides built-in support for common data structures, essential
   for writing programs like an array, linked list, map, set, stack, and queue.
   You don't need to implement these data structures by yourself, you can
   directly use them in your program, thanks to the rich and efficient
