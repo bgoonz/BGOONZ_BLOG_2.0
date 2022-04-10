@@ -24,17 +24,17 @@ Node.js = Runtime Environment + JavaScript Library
 
 Following are some of the important features that make Node.js the first choice of software architects.
 
--   **Asynchronous and Event Driven** − All APIs of Node.js library are asynchronous, that is, non-blocking. It essentially means a Node.js based server never waits for an API to return data. The server moves to the next API after calling it and a notification mechanism of Events of Node.js helps the server to get a response from the previous API call.
--   **Very Fast** − Being built on Google Chrome's V8 JavaScript Engine, Node.js library is very fast in code execution.
--   **Single Threaded but Highly Scalable** − Node.js uses a single threaded model with event looping. Event mechanism helps the server to respond in a non-blocking way and makes the server highly scalable as opposed to traditional servers which create limited threads to handle requests. Node.js uses a single threaded program and the same program can provide service to a much larger number of requests than traditional servers like Apache HTTP Server.
--   **No Buffering** − Node.js applications never buffer any data. These applications simply output the data in chunks.
--   **License** − Node.js is released under the [MIT license](https://raw.githubusercontent.com/joyent/node/v0.12.0/LICENSE).
+- **Asynchronous and Event Driven** − All APIs of Node.js library are asynchronous, that is, non-blocking. It essentially means a Node.js based server never waits for an API to return data. The server moves to the next API after calling it and a notification mechanism of Events of Node.js helps the server to get a response from the previous API call.
+- **Very Fast** − Being built on Google Chrome's V8 JavaScript Engine, Node.js library is very fast in code execution.
+- **Single Threaded but Highly Scalable** − Node.js uses a single threaded model with event looping. Event mechanism helps the server to respond in a non-blocking way and makes the server highly scalable as opposed to traditional servers which create limited threads to handle requests. Node.js uses a single threaded program and the same program can provide service to a much larger number of requests than traditional servers like Apache HTTP Server.
+- **No Buffering** − Node.js applications never buffer any data. These applications simply output the data in chunks.
+- **License** − Node.js is released under the [MIT license](https://raw.githubusercontent.com/joyent/node/v0.12.0/LICENSE).
 
 ## Who Uses Node.js?
 
 Following is the link on github wiki containing an exhaustive list of projects, application and companies which are using Node.js. This list includes eBay, General Electric, GoDaddy, Microsoft, PayPal, Uber, Wikipins, Yahoo!, and Yammer to name a few.
 
--   [Projects, Applications, and Companies Using Node](https://github.com/joyent/node/wiki/projects,-applications,-and-companies-using-node)
+- [Projects, Applications, and Companies Using Node](https://github.com/joyent/node/wiki/projects,-applications,-and-companies-using-node)
 
 ## Concepts
 
@@ -46,11 +46,11 @@ The following diagram depicts some important parts of Node.js which we will disc
 
 Following are the areas where Node.js is proving itself as a perfect technology partner.
 
--   I/O bound Applications
--   Data Streaming Applications
--   Data Intensive Real-time Applications (DIRT)
--   JSON APIs based Applications
--   Single Page Applications
+- I/O bound Applications
+- Data Streaming Applications
+- Data Intensive Real-time Applications (DIRT)
+- JSON APIs based Applications
+- Single Page Applications
 
 ## Where Not to Use Node.js?
 
@@ -160,9 +160,9 @@ Hello, World!
 
 Before creating an actual "Hello, World!" application using Node.js, let us see the components of a Node.js application. A Node.js application consists of the following three important components −
 
--   **Import required modules** − We use the **require** directive to load Node.js modules.
--   **Create server** − A server which will listen to client's requests similar to Apache HTTP Server.
--   **Read request and return response** − The server created in an earlier step will read the HTTP request made by the client which can be a browser or a console and return the response.
+- **Import required modules** − We use the **require** directive to load Node.js modules.
+- **Create server** − A server which will listen to client's requests similar to Apache HTTP Server.
+- **Read request and return response** − The server created in an earlier step will read the HTTP request made by the client which can be a browser or a console and return the response.
 
 ## Creating Node.js Application
 
@@ -204,16 +204,16 @@ Congratulations, you have your first HTTP server up and running which is respond
 
 REPL stands for Read Eval Print Loop and it represents a computer environment like a Windows console or Unix/Linux shell where a command is entered and the system responds with an output in an interactive mode. Node.js or **Node** comes bundled with a REPL environment. It performs the following tasks −
 
--   **Read** − Reads user's input, parses the input into JavaScript data-structure, and stores in memory.
--   **Eval** − Takes and evaluates the data structure.
--   **Print** − Prints the result.
--   **Loop** − Loops the above command until the user presses **ctrl-c** twice.
+- **Read** − Reads user's input, parses the input into JavaScript data-structure, and stores in memory.
+- **Eval** − Takes and evaluates the data structure.
+- **Print** − Prints the result.
+- **Loop** − Loops the above command until the user presses **ctrl-c** twice.
 
 The REPL feature of Node is very useful in experimenting with Node.js codes and to debug JavaScript codes.
 
 ## Online REPL Terminal
 
-To simplify your learning, we have set up an easy to use Node.js REPL environment online, where you can practice Node.js syntax − [Launch Node.js REPL Terminal](https://www.tutorialspoint.com/nodejs_terminal_online.php 'Node.js Terminal Online')
+To simplify your learning, we have set up an easy to use Node.js REPL environment online, where you can practice Node.js syntax − [Launch Node.js REPL Terminal](https://www.tutorialspoint.com/nodejs_terminal_online.php "Node.js Terminal Online")
 
 ### Starting REPL
 
@@ -296,16 +296,16 @@ $ node
 
 ## REPL Commands
 
--   **ctrl + c** − terminate the current command.
--   **ctrl + c twice** − terminate the Node REPL.
--   **ctrl + d** − terminate the Node REPL.
--   **Up/Down Keys** − see command history and modify previous commands.
--   **tab Keys** − list of current commands.
--   **.help** − list of all commands.
--   **.break** − exit from multiline expression.
--   **.clear** − exit from multiline expression.
--   **.save _filename_** − save the current Node REPL session to a file.
--   **.load _filename_** − load file content in current Node REPL session.
+- **ctrl + c** − terminate the current command.
+- **ctrl + c twice** − terminate the Node REPL.
+- **ctrl + d** − terminate the Node REPL.
+- **Up/Down Keys** − see command history and modify previous commands.
+- **tab Keys** − list of current commands.
+- **.help** − list of all commands.
+- **.break** − exit from multiline expression.
+- **.clear** − exit from multiline expression.
+- **.save _filename_** − save the current Node REPL session to a file.
+- **.load _filename_** − load file content in current Node REPL session.
 
 ## Stopping REPL
 
@@ -317,8 +317,8 @@ $ node
 
 Node Package Manager (NPM) provides two main functionalities −
 
--   Online repositories for node.js packages/modules which are searchable on [search.nodejs.org](https://search.nodejs.org/)
--   Command line utility to install Node.js packages, do version management and dependency management of Node.js packages.
+- Online repositories for node.js packages/modules which are searchable on [search.nodejs.org](https://search.nodejs.org/)
+- Command line utility to install Node.js packages, do version management and dependency management of Node.js packages.
 
 NPM comes bundled with Node.js installables after v0.6.3 version. To verify the same, open console and type the following command and see the result −
 
@@ -404,16 +404,16 @@ package.json is present in the root directory of any Node application/module and
 
 ## Attributes of Package.json
 
--   **name** − name of the package
--   **version** − version of the package
--   **description** − description of the package
--   **homepage** − homepage of the package
--   **author** − author of the package
--   **contributors** − name of the contributors to the package
--   **dependencies** − list of dependencies. NPM automatically installs all the dependencies mentioned here in the node_module folder of the package.
--   **repository** − repository type and URL of the package
--   **main** − entry point of the package
--   **keywords** − keywords
+- **name** − name of the package
+- **version** − version of the package
+- **description** − description of the package
+- **homepage** − homepage of the package
+- **author** − author of the package
+- **contributors** − name of the contributors to the package
+- **dependencies** − list of dependencies. NPM automatically installs all the dependencies mentioned here in the node_module folder of the package.
+- **repository** − repository type and URL of the package
+- **main** − entry point of the package
+- **keywords** − keywords
 
 ## Uninstalling a Module
 
@@ -517,8 +517,8 @@ to teach the world in simple and easy way!!!!!
 
 These two examples explain the concept of blocking and non-blocking calls.
 
--   The first example shows that the program blocks until it reads the file and then only it proceeds to end the program.
--   The second example shows that the program does not wait for file reading and proceeds to print "Program Ended" and at the same time, the program without blocking continues reading the file.
+- The first example shows that the program blocks until it reads the file and then only it proceeds to end the program.
+- The second example shows that the program does not wait for file reading and proceeds to print "Program Ended" and at the same time, the program without blocking continues reading the file.
 
 Thus, a blocking program executes very much in sequence. From the programming point of view, it is easier to implement the logic but non-blocking programs do not execute in sequence. In case a program needs to use any data to be processed, it should be kept within the same block to make it sequential execution.
 
@@ -677,8 +677,8 @@ Events & Description
 
 **newListener**
 
--   **event** − String: the event name
--   **listener** − Function: the event handler function
+- **event** − String: the event name
+- **listener** − Function: the event handler function
 
 This event is emitted any time a listener is added. When this event is triggered, the listener may not yet have been added to the array of listeners for the event.
 
@@ -686,8 +686,8 @@ This event is emitted any time a listener is added. When this event is triggered
 
 **removeListener**
 
--   **event** − String The event name
--   **listener** − Function The event handler function
+- **event** − String The event name
+- **listener** − Function The event handler function
 
 This event is emitted any time someone removes a listener. When this event is triggered, the listener may not yet have been removed from the array of listeners for the event.
 
@@ -753,10 +753,10 @@ buf.write(string\[, offset\]\[, length\]\[, encoding\])
 
 Here is the description of the parameters used −
 
--   **string** − This is the string data to be written to buffer.
--   **offset** − This is the index of the buffer to start writing at. Default value is 0.
--   **length** − This is the number of bytes to write. Defaults to buffer.length.
--   **encoding** − Encoding to use. 'utf8' is the default encoding.
+- **string** − This is the string data to be written to buffer.
+- **offset** − This is the index of the buffer to start writing at. Default value is 0.
+- **length** − This is the number of bytes to write. Defaults to buffer.length.
+- **encoding** − Encoding to use. 'utf8' is the default encoding.
 
 ### Return Value
 
@@ -782,9 +782,9 @@ buf.toString(\[encoding\]\[, start\]\[, end\])
 
 Here is the description of the parameters used −
 
--   **encoding** − Encoding to use. 'utf8' is the default encoding.
--   **start** − Beginning index to start reading, defaults to 0.
--   **end** − End index to end reading, defaults is complete buffer.
+- **encoding** − Encoding to use. 'utf8' is the default encoding.
+- **start** − Beginning index to start reading, defaults to 0.
+- **end** − End index to end reading, defaults is complete buffer.
 
 ### Return Value
 
@@ -857,8 +857,8 @@ Buffer.concat(list\[, totalLength\])
 
 Here is the description of the parameters used −
 
--   **list** − Array List of Buffer objects to be concatenated.
--   **totalLength** − This is the total length of the buffers when concatenated.
+- **list** − Array List of Buffer objects to be concatenated.
+- **totalLength** − This is the total length of the buffers when concatenated.
 
 ### Return Value
 
@@ -884,7 +884,7 @@ buf.compare(otherBuffer);
 
 Here is the description of the parameters used −
 
--   **otherBuffer** − This is the other buffer which will be compared with **buf**
+- **otherBuffer** − This is the other buffer which will be compared with **buf**
 
 ### Return Value
 
@@ -910,10 +910,10 @@ buf.copy(targetBuffer\[, targetStart\]\[, sourceStart\]\[, sourceEnd\])
 
 Here is the description of the parameters used −
 
--   **targetBuffer** − Buffer object where buffer will be copied.
--   **targetStart** − Number, Optional, Default: 0
--   **sourceStart** − Number, Optional, Default: 0
--   **sourceEnd** − Number, Optional, Default: buffer.length
+- **targetBuffer** − Buffer object where buffer will be copied.
+- **targetStart** − Number, Optional, Default: 0
+- **sourceStart** − Number, Optional, Default: 0
+- **sourceEnd** − Number, Optional, Default: buffer.length
 
 ### Return Value
 
@@ -939,8 +939,8 @@ buf.slice(\[start\]\[, end\])
 
 Here is the description of the parameters used −
 
--   **start** − Number, Optional, Default: 0
--   **end** − Number, Optional, Default: buffer.length
+- **start** − Number, Optional, Default: 0
+- **end** − Number, Optional, Default: buffer.length
 
 ### Return Value
 
@@ -1018,17 +1018,17 @@ The same as buf1.compare(buf2). Useful for sorting an array of buffers.
 
 Streams are objects that let you read data from a source or write data to a destination in continuous fashion. In Node.js, there are four types of streams −
 
--   **Readable** − Stream which is used for read operation.
--   **Writable** − Stream which is used for write operation.
--   **Duplex** − Stream which can be used for both read and write operation.
--   **Transform** − A type of duplex stream where the output is computed based on input.
+- **Readable** − Stream which is used for read operation.
+- **Writable** − Stream which is used for write operation.
+- **Duplex** − Stream which can be used for both read and write operation.
+- **Transform** − A type of duplex stream where the output is computed based on input.
 
 Each type of Stream is an **EventEmitter** instance and throws several events at different instance of times. For example, some of the commonly used events are −
 
--   **data** − This event is fired when there is data is available to read.
--   **end** − This event is fired when there is no more data to read.
--   **error** − This event is fired when there is any error receiving or writing data.
--   **finish** − This event is fired when all the data has been flushed to underlying system.
+- **data** − This event is fired when there is data is available to read.
+- **end** − This event is fired when there is no more data to read.
+- **error** − This event is fired when there is any error receiving or writing data.
+- **finish** − This event is fired when all the data has been flushed to underlying system.
 
 This tutorial provides a basic understanding of the commonly used operations on Streams.
 
@@ -1168,10 +1168,10 @@ fs.open(path, flags\[, mode\], callback)
 
 Here is the description of the parameters used −
 
--   **path** − This is the string having file name including path.
--   **flags** − Flags indicate the behavior of the file to be opened. All possible values have been mentioned below.
--   **mode** − It sets the file mode (permission and sticky bits), but only if the file was created. It defaults to 0666, readable and writeable.
--   **callback** − This is the callback function which gets two arguments (err, fd).
+- **path** − This is the string having file name including path.
+- **flags** − Flags indicate the behavior of the file to be opened. All possible values have been mentioned below.
+- **mode** − It sets the file mode (permission and sticky bits), but only if the file was created. It defaults to 0666, readable and writeable.
+- **callback** − This is the callback function which gets two arguments (err, fd).
 
 ## Flags
 
@@ -1280,8 +1280,8 @@ fs.stat(path, callback)
 
 Here is the description of the parameters used −
 
--   **path** − This is the string having file name including path.
--   **callback** − This is the callback function which gets two arguments (err, stats) where **stats** is an object of fs.Stats type which is printed below in the example.
+- **path** − This is the string having file name including path.
+- **callback** − This is the callback function which gets two arguments (err, stats) where **stats** is an object of fs.Stats type which is printed below in the example.
 
 Apart from the important attributes which are printed below in the example, there are several useful methods available in **fs.Stats** class which can be used to check file type. These methods are given in the following table.
 
@@ -1377,10 +1377,10 @@ This method will over-write the file if the file already exists. If you want to 
 
 Here is the description of the parameters used −
 
--   **path** − This is the string having the file name including path.
--   **data** − This is the String or Buffer to be written into the file.
--   **options** − The third parameter is an object which will hold {encoding, mode, flag}. By default. encoding is utf8, mode is octal value 0666. and flag is 'w'
--   **callback** − This is the callback function which gets a single parameter err that returns an error in case of any writing error.
+- **path** − This is the string having the file name including path.
+- **data** − This is the String or Buffer to be written into the file.
+- **options** − The third parameter is an object which will hold {encoding, mode, flag}. By default. encoding is utf8, mode is octal value 0666. and flag is 'w'
+- **callback** − This is the callback function which gets a single parameter err that returns an error in case of any writing error.
 
 ### Example
 
@@ -1413,12 +1413,12 @@ This method will use file descriptor to read the file. If you want to read the f
 
 Here is the description of the parameters used −
 
--   **fd** − This is the file descriptor returned by fs.open().
--   **buffer** − This is the buffer that the data will be written to.
--   **offset** − This is the offset in the buffer to start writing at.
--   **length** − This is an integer specifying the number of bytes to read.
--   **position** − This is an integer specifying where to begin reading from in the file. If position is null, data will be read from the current file position.
--   **callback** − This is the callback function which gets the three arguments, (err, bytesRead, buffer).
+- **fd** − This is the file descriptor returned by fs.open().
+- **buffer** − This is the buffer that the data will be written to.
+- **offset** − This is the offset in the buffer to start writing at.
+- **length** − This is an integer specifying the number of bytes to read.
+- **position** − This is an integer specifying where to begin reading from in the file. If position is null, data will be read from the current file position.
+- **callback** − This is the callback function which gets the three arguments, (err, bytesRead, buffer).
 
 ### Example
 
@@ -1451,8 +1451,8 @@ fs.close(fd, callback)
 
 Here is the description of the parameters used −
 
--   **fd** − This is the file descriptor returned by file fs.open() method.
--   **callback** − This is the callback function No arguments other than a possible exception are given to the completion callback.
+- **fd** − This is the file descriptor returned by file fs.open() method.
+- **callback** − This is the callback function No arguments other than a possible exception are given to the completion callback.
 
 ### Example
 
@@ -1486,9 +1486,9 @@ fs.ftruncate(fd, len, callback)
 
 Here is the description of the parameters used −
 
--   **fd** − This is the file descriptor returned by fs.open().
--   **len** − This is the length of the file after which the file will be truncated.
--   **callback** − This is the callback function No arguments other than a possible exception are given to the completion callback.
+- **fd** − This is the file descriptor returned by fs.open().
+- **len** − This is the length of the file after which the file will be truncated.
+- **callback** − This is the callback function No arguments other than a possible exception are given to the completion callback.
 
 ### Example
 
@@ -1522,8 +1522,8 @@ fs.unlink(path, callback)
 
 Here is the description of the parameters used −
 
--   **path** − This is the file name including path.
--   **callback** − This is the callback function No arguments other than a possible exception are given to the completion callback.
+- **path** − This is the file name including path.
+- **callback** − This is the callback function No arguments other than a possible exception are given to the completion callback.
 
 ### Example
 
@@ -1552,9 +1552,9 @@ fs.mkdir(path\[, mode\], callback)
 
 Here is the description of the parameters used −
 
--   **path** − This is the directory name including path.
--   **mode** − This is the directory permission to be set. Defaults to 0777.
--   **callback** − This is the callback function No arguments other than a possible exception are given to the completion callback.
+- **path** − This is the directory name including path.
+- **mode** − This is the directory permission to be set. Defaults to 0777.
+- **callback** − This is the callback function No arguments other than a possible exception are given to the completion callback.
 
 ### Example
 
@@ -1583,8 +1583,8 @@ fs.readdir(path, callback)
 
 Here is the description of the parameters used −
 
--   **path** − This is the directory name including path.
--   **callback** − This is the callback function which gets two arguments (err, files) where files is an array of the names of the files in the directory excluding '.' and '..'.
+- **path** − This is the directory name including path.
+- **callback** − This is the callback function which gets two arguments (err, files) where files is an array of the names of the files in the directory excluding '.' and '..'.
 
 ### Example
 
@@ -1618,8 +1618,8 @@ fs.rmdir(path, callback)
 
 Here is the description of the parameters used −
 
--   **path** − This is the directory name including path.
--   **callback** − This is the callback function No arguments other than a possible exception are given to the completion callback.
+- **path** − This is the directory name including path.
+- **callback** − This is the callback function No arguments other than a possible exception are given to the completion callback.
 
 ### Example
 
@@ -1806,10 +1806,10 @@ A Web application is usually divided into four layers −
 
 ![Web Architecture](https://www.tutorialspoint.com/nodejs/images/web_architecture.jpg)
 
--   **Client** − This layer consists of web browsers, mobile browsers or applications which can make HTTP requests to the web server.
--   **Server** − This layer has the Web server which can intercept the requests made by the clients and pass them the response.
--   **Business** − This layer contains the application server which is utilized by the web server to do the required processing. This layer interacts with the data layer via the database or some external programs.
--   **Data** − This layer contains the databases or any other source of data.
+- **Client** − This layer consists of web browsers, mobile browsers or applications which can make HTTP requests to the web server.
+- **Server** − This layer has the Web server which can intercept the requests made by the clients and pass them the response.
+- **Business** − This layer contains the application server which is utilized by the web server to do the required processing. This layer interacts with the data layer via the database or some external programs.
+- **Data** − This layer contains the databases or any other source of data.
 
 ## Creating a Web Server using Node
 
@@ -1882,9 +1882,9 @@ Request for /index.htm received.
 
 Express is a minimal and flexible Node.js web application framework that provides a robust set of features to develop web and mobile applications. It facilitates the rapid development of Node based Web applications. Following are some of the core features of Express framework −
 
--   Allows to set up middlewares to respond to HTTP Requests.
--   Defines a routing table which is used to perform different actions based on HTTP Method and URL.
--   Allows to dynamically render HTML Pages based on passing arguments to templates.
+- Allows to set up middlewares to respond to HTTP Requests.
+- Defines a routing table which is used to perform different actions based on HTTP Method and URL.
+- Allows to dynamically render HTML Pages based on passing arguments to templates.
 
 ## Installing Express
 
@@ -1894,9 +1894,9 @@ $ npm install express --save
 
 The above command saves the installation locally in the **node_modules** directory and creates a directory express inside node_modules. You should install the following important modules along with express −
 
--   **body-parser** − This is a node.js middleware for handling JSON, Raw, Text and URL encoded form data.
--   **cookie-parser** − Parse Cookie header and populate req.cookies with an object keyed by the cookie names.
--   **multer** − This is a node.js middleware for handling multipart/form-data.
+- **body-parser** − This is a node.js middleware for handling JSON, Raw, Text and URL encoded form data.
+- **cookie-parser** − Parse Cookie header and populate req.cookies with an object keyed by the cookie names.
+- **multer** − This is a node.js middleware for handling multipart/form-data.
 
 $ npm install body-parser --save
 $ npm install cookie-parser --save
@@ -1930,8 +1930,8 @@ app.get('/', function (req, res) {
 // --
 })
 
--   [Request Object](https://www.tutorialspoint.com/nodejs/nodejs_request_object.htm) − The request object represents the HTTP request and has properties for the request query string, parameters, body, HTTP headers, and so on.
--   [Response Object](https://www.tutorialspoint.com/nodejs/nodejs_response_object.htm) − The response object represents the HTTP response that an Express app sends when it gets an HTTP request.
+- [Request Object](https://www.tutorialspoint.com/nodejs/nodejs_request_object.htm) − The request object represents the HTTP request and has properties for the request query string, parameters, body, HTTP headers, and so on.
+- [Response Object](https://www.tutorialspoint.com/nodejs/nodejs_response_object.htm) − The response object represents the HTTP response that an Express app sends when it gets an HTTP request.
 
 You can print **req** and **res** objects which provide a lot of information related to HTTP request and response including cookies, sessions, URL, etc.
 
@@ -2068,10 +2068,10 @@ A REST Server simply provides access to resources and REST client accesses and m
 
 Following four HTTP methods are commonly used in REST based architecture.
 
--   **GET** − This is used to provide a read only access to a resource.
--   **PUT** − This is used to create a new resource.
--   **DELETE** − This is used to remove a resource.
--   **POST** − This is used to update a existing resource or create a new resource.
+- **GET** − This is used to provide a read only access to a resource.
+- **PUT** − This is used to create a new resource.
+- **DELETE** − This is used to remove a resource.
+- **POST** − This is used to update a existing resource or create a new resource.
 
 ## RESTful Web Services
 
@@ -2204,9 +2204,9 @@ Child processes always have three streams **child.stdin**, **child.stdout**, and
 
 Node provides **child_process** module which has the following three major ways to create a child process.
 
--   **exec** − child_process.exec method runs a command in a shell/console and buffers the output.
--   **spawn** − child_process.spawn launches a new process with a given command.
--   **fork** − The child_process.fork method is a special case of the spawn() to create child processes.
+- **exec** − child_process.exec method runs a command in a shell/console and buffers the output.
+- **spawn** − child_process.spawn launches a new process with a given command.
+- **fork** − The child_process.fork method is a special case of the spawn() to create child processes.
 
 ## The exec() method
 
@@ -2218,20 +2218,20 @@ child_process.exec(command\[, options\], callback)
 
 Here is the description of the parameters used −
 
--   **command** (String) The command to run, with space-separated arguments
--   **options** (Object) may comprise one or more of the following options −
+- **command** (String) The command to run, with space-separated arguments
+- **options** (Object) may comprise one or more of the following options −
 
-    -   **cwd** (String) Current working directory of the child process
-    -   **env** (Object) Environment key-value pairs
-    -   **encoding** (String) (Default: 'utf8')
-    -   **shell** (String) Shell to execute the command with (Default: '/bin/sh' on UNIX, 'cmd.exe' on Windows, The shell should understand the -c switch on UNIX or /s /c on Windows. On Windows, command line parsing should be compatible with cmd.exe.)
-    -   **timeout** (Number) (Default: 0)
-    -   **maxBuffer** (Number) (Default: 200\*1024)
-    -   **killSignal** (String) (Default: 'SIGTERM')
-    -   **uid** (Number) Sets the user identity of the process.
-    -   **gid** (Number) Sets the group identity of the process.
+  - **cwd** (String) Current working directory of the child process
+  - **env** (Object) Environment key-value pairs
+  - **encoding** (String) (Default: 'utf8')
+  - **shell** (String) Shell to execute the command with (Default: '/bin/sh' on UNIX, 'cmd.exe' on Windows, The shell should understand the -c switch on UNIX or /s /c on Windows. On Windows, command line parsing should be compatible with cmd.exe.)
+  - **timeout** (Number) (Default: 0)
+  - **maxBuffer** (Number) (Default: 200\*1024)
+  - **killSignal** (String) (Default: 'SIGTERM')
+  - **uid** (Number) Sets the user identity of the process.
+  - **gid** (Number) Sets the group identity of the process.
 
--   **callback** The function gets three arguments **error**, **stdout,** and **stderr** which are called with the output when the process terminates.
+- **callback** The function gets three arguments **error**, **stdout,** and **stderr** which are called with the output when the process terminates.
 
 The exec() method returns a buffer with a max size and waits for the process to end and tries to return all the buffered data at once.
 
@@ -2274,17 +2274,17 @@ child_process.spawn(command\[, args\]\[, options\])
 
 Here is the description of the parameters used −
 
--   **command** (String) The command to run
--   **args** (Array) List of string arguments
--   **options** (Object) may comprise one or more of the following options −
+- **command** (String) The command to run
+- **args** (Array) List of string arguments
+- **options** (Object) may comprise one or more of the following options −
 
-    -   **cwd** (String) Current working directory of the child process.
-    -   **env** (Object) Environment key-value pairs.
-    -   **stdio** (Array) String Child's stdio configuration.
-    -   **customFds** (Array) Deprecated File descriptors for the child to use for stdio.
-    -   **detached** (Boolean) The child will be a process group leader.
-    -   **uid** (Number) Sets the user identity of the process.
-    -   **gid** (Number) Sets the group identity of the process.
+  - **cwd** (String) Current working directory of the child process.
+  - **env** (Object) Environment key-value pairs.
+  - **stdio** (Array) String Child's stdio configuration.
+  - **customFds** (Array) Deprecated File descriptors for the child to use for stdio.
+  - **detached** (Boolean) The child will be a process group leader.
+  - **uid** (Number) Sets the user identity of the process.
+  - **gid** (Number) Sets the group identity of the process.
 
 The spawn() method returns streams (stdout &stderr) and it should be used when the process returns a volume amount of data. spawn() starts receiving the response as soon as the process starts executing.
 
@@ -2326,17 +2326,17 @@ child_process.fork(modulePath\[, args\]\[, options\])
 
 Here is the description of the parameters used −
 
--   **modulePath** (String) The module to run in the child.
--   **args** (Array) List of string arguments
--   **options** (Object) may comprise one or more of the following options −
+- **modulePath** (String) The module to run in the child.
+- **args** (Array) List of string arguments
+- **options** (Object) may comprise one or more of the following options −
 
-    -   **cwd** (String) Current working directory of the child process.
-    -   **env** (Object) Environment key-value pairs.
-    -   **execPath** (String) Executable used to create the child process.
-    -   **execArgv** (Array) List of string arguments passed to the executable (Default: process.execArgv).
-    -   **silent** (Boolean) If true, stdin, stdout, and stderr of the child will be piped to the parent, otherwise they will be inherited from the parent, see the "pipe" and "inherit" options for spawn()'s stdio for more details (default is false).
-    -   **uid** (Number) Sets the user identity of the process.
-    -   **gid** (Number) Sets the group identity of the process.
+  - **cwd** (String) Current working directory of the child process.
+  - **env** (Object) Environment key-value pairs.
+  - **execPath** (String) Executable used to create the child process.
+  - **execArgv** (Array) List of string arguments passed to the executable (Default: process.execArgv).
+  - **silent** (Boolean) If true, stdin, stdout, and stderr of the child will be piped to the parent, otherwise they will be inherited from the parent, see the "pipe" and "inherit" options for spawn()'s stdio for more details (default is false).
+  - **uid** (Number) Sets the user identity of the process.
+  - **gid** (Number) Sets the group identity of the process.
 
 The fork method returns an object with a built-in communication channel in addition to having all the methods in a normal ChildProcess instance.
 
@@ -2416,8 +2416,8 @@ $ jx package index.js index
 
 Here you could have used any other package name instead of **index.** We have used **index** because we wanted to keep our main file name as index.jx. However, the above command will pack everything and will create the following two files −
 
--   **index.jxp** This is an intermediate file which contains the complete project detail needed to compile the project.
--   **index.jx** This is the binary file having the complete package that is ready to be shipped to your client or to your production environment.
+- **index.jxp** This is an intermediate file which contains the complete project detail needed to compile the project.
+- **index.jx** This is the binary file having the complete package that is ready to be shipped to your client or to your production environment.
 
 ## Launching JX File
 

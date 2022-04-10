@@ -16,8 +16,8 @@ First things first, you'll need to set up your account on Algolia and set up a p
 
 Algolia provides two projects that we'll make use of:
 
--   [Gatsby Plugin Algolia](https://github.com/algolia/gatsby-plugin-algolia) will help us create our indices and make sure they are kept in sync with our content.
--   [React InstantSearch](https://github.com/algolia/react-instantsearch) provides a pre-built set of tools for interacting with Algolia's search API for a "search as you type" UI. This project also encompasses the `react-instantsearch-dom` UI tools we'll also use.
+- [Gatsby Plugin Algolia](https://github.com/algolia/gatsby-plugin-algolia) will help us create our indices and make sure they are kept in sync with our content.
+- [React InstantSearch](https://github.com/algolia/react-instantsearch) provides a pre-built set of tools for interacting with Algolia's search API for a "search as you type" UI. This project also encompasses the `react-instantsearch-dom` UI tools we'll also use.
 
 Let's start by installing these on our Gatsby project.
 

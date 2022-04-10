@@ -3,20 +3,22 @@
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 <!-- code_chunk_output -->
+
 ### Table Of Contents:
+
 - [Bookmarks](#bookmarks)
-    - [Table Of Contents:](#table-of-contents)
-    - [NORWEX](#norwex)
-    - [RESOURCES](#resources)
-    - [a/A](#aa)
-    - [netlify](#netlify)
-    - [PYTHON](#python)
-    - [React-Redux](#react-redux)
-    - [AMAZON](#amazon)
-    - [GITHUB](#github)
-    - [MISC](#misc)
-    - [AMAZINGGGG](#amazingggg)
-    - [free-stuff](#free-stuff)
+  - [Table Of Contents:](#table-of-contents)
+  - [NORWEX](#norwex)
+  - [RESOURCES](#resources)
+  - [a/A](#aa)
+  - [netlify](#netlify)
+  - [PYTHON](#python)
+  - [React-Redux](#react-redux)
+  - [AMAZON](#amazon)
+  - [GITHUB](#github)
+  - [MISC](#misc)
+  - [AMAZINGGGG](#amazingggg)
+  - [free-stuff](#free-stuff)
 
 <!-- /code_chunk_output -->
 
@@ -311,7 +313,7 @@
 - [✅] [_**Pdfcrowd API - Convert between images, HTML andPDF**_](https://pdfcrowd.com/doc/api/)
 - [✅] [_**Pdfcrowd APIPlayground**_](https://pdfcrowd.com/playground/html-to-pdf/215489555df04ee1a871/)
 - [✅] [_**Implementing OAuth 2.0 with Node.js🔐**_](https://www.sohamkamani.com/blog/javascript/2018-06-24-oauth-with-node-js/)
-      <br>
+  <br>
 
 ---
 
@@ -433,7 +435,7 @@
 - [✅] [_**CSS to JS Objects**_](https://transform.tools/css-to-js)
 - [✅] [_**Linux Command Line Adventure:new_script**_](http://linuxcommand.org/lc3_adv_new_script.php)
 - [✅] [_**Abu Sayed -- Best Web, Game, XR \| Developer \| Engineer \|BANGLADESH**_](https://sayed.cyou/#resume)
-      <br>
+  <br>
 
 ---
 
@@ -661,7 +663,7 @@
 - [✅] [_**Browser -- Cloud Storage -- My Project 78672 -- Google CloudPlatform**_](https://console.cloud.google.com/storage/browser?_ga=2.237457600.1998419613.1631330034-387416667.1631330034&pli=1&project=studious-pulsar-298821&prefix=)
 - [✅] [_**Error -- Dataflow -- My Project 78672 -- Google CloudPlatform**_](https://console.cloud.google.com/navigation-error;errorUrl=%2Fdataflow%2Fcreatejob%3Ftemplate%3DGCS_Text_to_Cloud_PubSub&jobName%3Dweb-serve&inputFilePattern%3Dgs:%252F%252Fweb-serve%252F*&confirmMsg%3Dtrue&project%3Dstudious-pulsar-298821?project=studious-pulsar-298821)
 - [✅] [_**gs://potluck - GoogleSearch**_](https://www.google.com/search?q=gs%3A%2F%2Fpotluck&oq=gs%3A%2F%2Fpotluck&aqs=chrome..69i57j69i58.604j0j7&sourceid=chrome&ie=UTF-8)
-      <br>
+  <br>
 
 ---
 
@@ -700,7 +702,7 @@
 - [✅] [_**September Online**_](https://app.sli.do/event/qiefmfrm/live/questions)
 - [✅] [_**DB Fiddle - SQL DatabasePlayground**_](https://www.db-fiddle.com/f/7fnLq7sZNknYPfm6U2xEAH/0)
 - [✅] [_**Week 10 Flashcards \|Quizlet**_](https://quizlet.com/537605563/week-10-flash-cards/?x=1qqt)
-      <br>
+  <br>
 
 ---
 
@@ -717,7 +719,7 @@
 - [✅] [_**Headless CMS - Top Content Management Systems \|Jamstack**_](https://jamstack.org/headless-cms/)
 - [✅] [_**Netlify Build \| Netlify**_](https://www.netlify.com/products/build/)
 - [✅] [_**Netlify Edge \| Netlify**_](https://www.netlify.com/products/edge/)
-      <br>
+  <br>
 
 ---
 
@@ -726,7 +728,7 @@
 ### PYTHON {#python add_date="1640716651" last_modified="0"}
 
 - [✅] [_**Time Complexity**_](https://www.figstack.com/app/complexity)
-      <br>
+  <br>
 
 ---
 
@@ -760,7 +762,7 @@
 - [✅] [_**Get Really Good at React \| Epic React by Kent C.Dodds**_](https://epicreact.dev/)
 - [✅] [_**ArchitectUI React Dashboard Free -DashboardPack**_](https://dashboardpack.com/theme-details/architectui-react-dashboard-free/?v=7516fd43adaa)
 - [✅] [_**jolly-pike-4q74z -CodeSandbox**_](https://codesandbox.io/s/jolly-pike-4q74z?from-embed=&file=/docs/doc1.md)
-      <br>
+  <br>
 
 ---
 
@@ -852,7 +854,7 @@
 - [✅] [_**Yourenvironments**_](https://console.aws.amazon.com/cloud9/home?region=us-east-1)
 - [✅] [_**Billing ManagementConsole**_](https://console.aws.amazon.com/billing/home?#/costexplorer)
 - [✅] [_**CostManagement**_](https://console.aws.amazon.com/cost-management/home?#/savings-plans/overview)
-      <br>
+  <br>
 
 ---
 
@@ -884,7 +886,7 @@
 - [✅] [_**Stackbit App**_](https://app.stackbit.com/studio/609b2d7c71a5dd0016f36326)
 - [✅] [_**Stackbit \| The editing experience for Jamstacksites**_](https://www.stackbit.com/)
 - [✅] [_**bgoonz (Bryan C Guner)**_](https://github.com/bgoonz)
-      <br>
+  <br>
 
 ---
 
@@ -1409,7 +1411,7 @@
 - [✅] [_**JavaScript Escape and JavaScript Unescape OnlineTool**_](https://codebeautify.org/javascript-escape-unescape)
 - [✅] [_**Merge MD files**_](https://products.aspose.app/words/merger/md)
 - [✅] [_**HTML Link Code**_](https://www.quackit.com/html/codes/html_link_code.cfm)
-      <br>
+  <br>
 
 ---
 
@@ -1472,7 +1474,7 @@
   - [✅] [_**Website Copier \| Download Sites \| Website Ripper - ToolsBug**_](https://www.toolsbug.com/website-copier-online.php)
   - [✅] [_**WixADI**_](https://www.wix.com/website/builder?categoryName=Tech%20Blogger&structureId=b0a520919b99728bae200018&industryId=0e72b2a150d4b1ffad033c6a&editorSessionId=8956de60-b872-4d50-89d6-b721e256e462&referral=split%20page&vertical=blog&storyId=c54057a8-2799-4ba3-9798-9691018d3089#!/builder/story/c54057a8-2799-4ba3-9798-9691018d3089:a8475309-8d08-4617-8fc2-c60a939f3e31/switch-preset/1.119)
   - [✅] [_**Excellent Collection Of Useful Web Design And Development Resources \|WebsiteUsability**_](https://www.webdesign.org/excellent-collection-of-useful-web-design-and-development-resources.22931.html)
-        <br>
+    <br>
 
 ---
 
