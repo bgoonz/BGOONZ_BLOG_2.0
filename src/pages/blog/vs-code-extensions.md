@@ -18,6 +18,7 @@ related_posts:
   - src/pages/blog/adding-css-to-your-html.md
 cmseditable: true
 ---
+
 Developers will most likely argue for the rest of eternity about the most productive code editor and the best extensions. Here are my personal extension preferences for VS Code as a JavaScript developer:
 
 1. ESLint [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) turns the popular JavaScript linter into an extension of VS Code. It automatically reads your linting configuration, identifies problems and even fixes them for you, if you want.
