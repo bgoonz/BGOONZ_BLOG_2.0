@@ -25,6 +25,9 @@ exports.onRenderBody = function ( {setHeadComponents,setPostBodyComponents} ) {
         < script src={ withPrefix( 'js/page-unload.js' ) } />
         < script src={ withPrefix( 'js/prism.js' ) } />
         < script src={ withPrefix( 'js/search-create.js' ) } />
+        <script src={ withPrefix( 'js/goog-search.js' ) }/>
+
+
     </React.Fragment>
     ] );
 };
