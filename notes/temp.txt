@@ -34,7 +34,7 @@ type: section_grid
             url: /showcase
             style: secondary
         image_alt: portfolio of websites
-        image: images/portfolio-91689538.jpg
+        image: images/portfolio.jpg
   - title: Blog-Archive-And-Mini-Projects
     section_id: Mini Projects
     image_alt: showcase

@@ -317,7 +317,7 @@ These dependencies are defined in **BGOONZ_BLOG_2.0**'s manifest files, such as 
 
 ## Blog
 
--   [introductory-react-part-2](https://bryanguner.medium.com/introductory-react-part-2-cda01615a186?source=your_stories_page-------------------------------------)
+-   [introductory-react-part-2](https://bgoonz-blog.netlify.app/docs/react/react2/?source=your_stories_page-------------------------------------)
 
 -   [a-very-quick-guide-to-calculating-big-o-computational-complexity](https://bryanguner.medium.com/a-very-quick-guide-to-calculating-big-o-computational-complexity-eb1557e85fa3?source=your_stories_page-------------------------------------)
 

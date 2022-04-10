@@ -51,7 +51,7 @@ sections:
         title: Guitar Effects Triggering w DTW
         title_url: 'https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering'
         image: images/dtw-algo.jpg
-      - title_url: 'https://bryanguner.medium.com/introductory-react-part-2-cda01615a186'
+      - title_url: 'https://bgoonz-blog.netlify.app/docs/react/react2/'
         image_alt: img of dtw
         content: |
           As I learn to build web applications in React I will blog about it in
@@ -77,7 +77,7 @@ sections:
         actions: []
         type: grid_item
         title: Web Audio Daw
-        image: images/7a8bc98e902a2f6dea90386cdfb154c2-2d55c637.png
+        image: images/dtw-slideshow.gif
   - title: Current Interests
     section_id: interests
     subtitle: From github repositories to existential questions.
@@ -92,7 +92,7 @@ sections:
           ## &#xA;
         actions: []
         type: grid_item
-        image: images/spectacular-turmeric.png
+        image: images/neural.png
       - title: Convolutional Neural Networks
         title_url: neural networks
         image_alt: neural networks

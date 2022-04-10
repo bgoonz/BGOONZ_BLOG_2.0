@@ -467,7 +467,7 @@ Title: /\
 ALT: Every idea needs a medium\
 Title: /\
  |
-| [spectacular-turmeric.png](https://d33wubrfki0l68.cloudfront.net/beba3d8052852cedc7fd41d9d05b4dffd4ea1136/d32f7/images/spectacular-turmeric.png)\
+| [neural.png](https://d33wubrfki0l68.cloudfront.net/beba3d8052852cedc7fd41d9d05b4dffd4ea1136/d32f7/images/neural.png)\
 ALT: angolia\
 Title: /\
  |
@@ -708,7 +708,7 @@ Title: /\
 | <https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b>\
 Title: /\
  |
-| <https://bryanguner.medium.com/introductory-react-part-2-cda01615a186>\
+| <https://bgoonz-blog.netlify.app/docs/react/react2/>\
 Title: /\
  |
 | <https://determined-dijkstra-ee7390.netlify.app/>\

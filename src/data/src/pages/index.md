@@ -5,7 +5,7 @@ sections:
     type: section_hero
     title: 'I am a musician, electrical engineer & web developer'
     image: images/dtw-slideshow.gif
-    content: "\n\n**Please note that this website is in development and is often broken!**\n\n[](https://www.vagrantup.com/)[![gmail](https://img.icons8.com/color/96/000000/gmail.png)](mailto:bryan.guner@gmail.com)[![linkedin](https://img.icons8.com/color/96/000000/linkedin.png)](https://www.linkedin.com/in/bryan-guner-046199128/)[![](https://img.icons8.com/color/96/000000/instagram-new.png)](https://www.instagram.com/bgoonz/?hl=en)[![](https://img.icons8.com/color/96/000000/pinterest--v1.png)](https://www.pinterest.com/bryanguner/\\_saved/)\n\n[](https://webpack.js.org/)[\_](https://www.adobe.com/products/xd.html)\n\n[![NetlifyStatus](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/bgoonz-blog/deploys)\n\n[![Bryansgithubactivitygraph](https://activity-graph.herokuapp.com/graph?username=bgoonz\\&custom_title=This%20is%20Bryans%20Activity\\&hide_border=true\\&theme=chartreuse-dark)](https://github.com/bgoonz/github-readme-activity-graph)\n\n![Jokes](https://readme-jokes.vercel.app/api)\n\n![Python](https://img.shields.io/badge/-Python-05122A?style=flat\\&logo=python)![HTML](https://img.shields.io/badge/-HTML-05122A?style=flat\\&logo=HTML5)![CSS](https://img.shields.io/badge/-CSS-05122A?style=flat\\&logo=CSS3\\&logoColor=1572B6)![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat\\&logo=javascript)![React](https://img.shields.io/badge/-React-05122A?style=flat\\&logo=react)![Node.js](https://img.shields.io/badge/-Node.js-05122A?style=flat\\&logo=node.js)\n\n![VisualStudioCode](https://img.shields.io/badge/-Visual%20Studio%20Code-05122A?style=flat\\&logo=visual-studio-code\\&logoColor=007ACC)![Docker](https://img.shields.io/badge/-Docker-05122A?style=flat\\&logo=Docker)![MongoDB](https://img.shields.io/badge/-MongoDB-05122A?style=flat\\&logo=mongodb)![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-05122A?style=flat\\&logo=postgresql)\n\n![Git](https://img.shields.io/badge/-Git-05122A?style=flat\\&logo=git)![GitHub](https://img.shields.io/badge/-GitHub-05122A?style=flat\\&logo=github)![GitLab](https://img.shields.io/badge/-GitLab-05122A?style=flat\\&logo=gitlab)\n\n![Markdown](https://img.shields.io/badge/-Markdown-05122A?style=flat\\&logo=markdown)"
+    content: "\n\n**Please note that this website is in development and is often broken!**\n\n[](https://www.vagrantup.com/)[![](https://img.icons8.com/color/96/000000/gmail.png)](mailto:bryan.guner@gmail.com)[![](https://img.icons8.com/color/96/000000/youtube.png)](https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA/videos)[![](https://img.icons8.com/color/96/000000/instagram-new.png)](https://www.instagram.com/bgoonz/?hl=en)[![](https://img.icons8.com/color/96/000000/pinterest--v1.png)](https://www.pinterest.com/bryanguner/\\_saved/)[![](https://img.icons8.com/color/96/000000/linkedin.png)](https://www.linkedin.com/in/bryan-guner-046199128/)\n\n[](https://webpack.js.org/)[\_](https://www.adobe.com/products/xd.html)\n\n[![NetlifyStatus](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/bgoonz-blog/deploys)\n\n[![Bryansgithubactivitygraph](https://activity-graph.herokuapp.com/graph?username=bgoonz\\&custom_title=This%20is%20Bryans%20Activity\\&hide_border=true\\&theme=chartreuse-dark)](https://github.com/bgoonz/github-readme-activity-graph)\n\n![Jokes](https://readme-jokes.vercel.app/api)\n\n![Python](https://img.shields.io/badge/-Python-05122A?style=flat\\&logo=python)![HTML](https://img.shields.io/badge/-HTML-05122A?style=flat\\&logo=HTML5)![CSS](https://img.shields.io/badge/-CSS-05122A?style=flat\\&logo=CSS3\\&logoColor=1572B6)![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat\\&logo=javascript)![React](https://img.shields.io/badge/-React-05122A?style=flat\\&logo=react)![Node.js](https://img.shields.io/badge/-Node.js-05122A?style=flat\\&logo=node.js)\n\n![VisualStudioCode](https://img.shields.io/badge/-Visual%20Studio%20Code-05122A?style=flat\\&logo=visual-studio-code\\&logoColor=007ACC)![Docker](https://img.shields.io/badge/-Docker-05122A?style=flat\\&logo=Docker)![MongoDB](https://img.shields.io/badge/-MongoDB-05122A?style=flat\\&logo=mongodb)![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-05122A?style=flat\\&logo=postgresql)\n\n![Git](https://img.shields.io/badge/-Git-05122A?style=flat\\&logo=git)![GitHub](https://img.shields.io/badge/-GitHub-05122A?style=flat\\&logo=github)![GitLab](https://img.shields.io/badge/-GitLab-05122A?style=flat\\&logo=gitlab)\n\n![Markdown](https://img.shields.io/badge/-Markdown-05122A?style=flat\\&logo=markdown)"
     actions:
       - label: Contact
         url: 'https://sidebar-blog.netlify.app/contact/'
@@ -42,16 +42,17 @@ sections:
         image_alt: python
         title: Python Guide
         title_url: 'https://bgoonz-blog.netlify.app/docs/python/python-ds'
-        image: images/python-language.jpg
+        image: images/python.png
       - content: |
+
         actions:
           - label: Learn More
             url: /docs/tools
             style: secondary
         title: Guitar Effects Triggering w DTW
         title_url: 'https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering'
-        image: images/dtw-algo.jpg
-      - title_url: 'https://bryanguner.medium.com/introductory-react-part-2-cda01615a186'
+        image: images/dtw.png
+      - title_url: 'https://bgoonz-blog.netlify.app/docs/react/react2/'
         image_alt: img of dtw
         content: |
           As I learn to build web applications in React I will blog about it in
@@ -61,7 +62,7 @@ sections:
         actions: []
         type: grid_item
         title: Beginner Guide React
-        image: images/successful-panda.gif
+        image: images/react.gif
       - title_url: 'https://dev.to/bgoonz/scope-and-context-in-javascript-5cma'
         image_alt: img of react
         content: "Scope & Context in JS\n\nThe\_**scope**\_of a program in JavaScript is the set of variables that are available for use within the program. \n"
@@ -77,7 +78,7 @@ sections:
         actions: []
         type: grid_item
         title: Web Audio Daw
-        image: images/7a8bc98e902a2f6dea90386cdfb154c2-2d55c637.png
+        image: images/dtw-slideshow.gif
   - title: Current Interests
     section_id: interests
     subtitle: From github repositories to existential questions.
@@ -92,17 +93,17 @@ sections:
           ## &#xA;
         actions: []
         type: grid_item
-        image: images/spectacular-turmeric.png
+        image: images/neural.png
       - title: Convolutional Neural Networks
         title_url: neural networks
         image_alt: neural networks
         content: >
           Artificial neural networks, usually simply called neural networks, are
           computing systems vaguely inspired by the biological [neural
-          networks](https://github.com/tensorflow/tensorflow)![](/\_static/app-assets/neural.PNG)
+          networks](https://github.com/tensorflow/tensorflow)![](/\_static/app-assets/neural.png)
         actions: []
         type: grid_item
-        image: images/neural.PNG
+        image: images/neural.png
       - title: Jamstack
         title_url: jamstack
         image_alt: jamstack
@@ -187,7 +188,7 @@ sections:
           https://github.com/bgoonz/resume-cv-portfolio-samples/raw/master/2021-resume/bryan-guner-resume-2021.pdf
       - title: Showcase
         content: |
-          ![My Projects](/\_static/app-assets/lambda-demo1.gif)My Projects!
+          ![](/\_static/app-assets/lambda-demo1.gif)My Projects!
         actions:
           - label: Learn More
             url: /showcase
@@ -199,7 +200,7 @@ sections:
     image_alt: showcase
     image_position: left
     content: >-
-      <iframe class="block-content" width="100%  width="1200px!important" height="1000px!important" src="https://rss.app/embed/v1/wall/WHCMA322pJEQ58et" frameborder="0"></iframe>
+      <iframe src="https://random-static-html-deploys.netlify.app/" width="1200px" height="1000px!important"></iframe>
     actions: []
     type: section_content
   - title: Latest & Greatest
@@ -207,31 +208,32 @@ sections:
     image_alt: animated gif
     image_position: right
     content: |
+      # ***What I've been working on lately:***
       ## Web Dev Utilitiy Tools
       <iframe class="block-content" width="100%  width="1200px!important"
       height="1000px!important"
         src="https://web-dev-utility-tools-bgoonz.netlify.app/"
-        clipboard-write;
-        encrypted-media; gyroscope; ></iframe>
-      <iframe src="https://random-static-html-deploys.netlify.app" class="block-content" width="100%  width="1200px!important" height="1000px!important"></iframe>
+       frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <iframe class="block-content" width="100%  width="1200px!important"
       height="1000px!important"
         src="https://cheatsheets-42.netlify.app/"
-        clipboard-write;
-        encrypted-media; gyroscope; ></iframe>
+       frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <iframe class="block-content" width="100%  width="1200px!important"
       height="1000px!important"
         src="https://bgoonz.github.io/fb-and-twitter-api-embeds/"
-        clipboard-write;
-        encrypted-media; gyroscope; ></iframe>
+       frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
     type: section_content
     image: images/cool annimation.gif
   - section_id: tools
-    image_alt: tools
+    image_alt: lorem-ipsum
     image_position: left
     content: |
-      ![Tool Showcase](images/static-server-5bf5ad2d.PNG)Tool Showcase
+      ![](images/static-server-5bf5ad2d.png)Tool Showcase
+
       https://bgoonz-blog.netlify.app/docs/tools/
     actions: []
     type: section_content
@@ -248,7 +250,7 @@ sections:
         no_follow: false
         type: action
     type: section_content
-    title: Web Audio DA
+    title: Web Audio DAW
     image: images/goals.jpg
   - title: Quick Links
     section_id: navigate from the home page
@@ -265,6 +267,18 @@ sections:
         new_window: false
         no_follow: false
         type: action
+      - label: email
+        url: 'mailto:bryan.guner@gmail.com'
+        style: primary
+        icon_class: dev
+        new_window: false
+        no_follow: false
+      - label: Subscribe (Youtube)
+        url: ' https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA?sub_confirmation=1'
+        style: primary
+        icon_class: dev
+        new_window: false
+        no_follow: false
     type: section_cta
     subtitle: get in touch! +1 (551) - 254 - 5505
 seo:
