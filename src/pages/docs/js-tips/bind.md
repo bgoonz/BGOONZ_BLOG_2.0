@@ -11,7 +11,6 @@ seo:
 template: docs
 ---
 
-
 # Function.prototype.bind()
 
 The `bind()` method creates a new function that, when called, has its `this` keyword set to the provided value, with a given sequence of arguments preceding any provided when the new function is called.
@@ -292,13 +291,12 @@ You can partially work around this by inserting the following code at the beginn
 
 Some of the many differences (there may well be others, as this list does not seriously attempt to be exhaustive) between this algorithm and the specified algorithm are:
 
-- The partial implementation relies on [`Array.prototype.slice()`](../array/slice), [`Array.prototype.concat()`](../array/concat), [`Function.prototype.call()`](call) and [`Function.prototype.apply()`](apply), built-in methods to have their original values.
-- The partial implementation creates functions that do not have immutable "poison pill" [`caller`](caller) and `arguments` properties that throw a [`TypeError`](../typeerror) upon get, set, or deletion. (This could be added if the implementation supports [`Object.defineProperty`](../object/defineproperty), or partially implemented \[without throw-on-delete behavior\] if the implementation supports the [`__defineGetter__`](../object/__definegetter__) and [`__defineSetter__`](../object/__definesetter__) extensions.)
-- The partial implementation creates functions that have a `prototype` property. (Proper bound functions have none.)
-- The partial implementation creates bound functions whose [`length`](length) property does not agree with that mandated by ECMA-262: it creates functions with `length` of `0`. A full implementation—depending on the length of the target function and the number of pre-specified arguments—may return a non-zero length.
-- The partial implementation creates bound functions whose [`name`](name) property is not derived from the original function name. According to ECMA-262, name of the returned bound function should be "bound " + name of target function (note the space character).
+-   The partial implementation relies on [`Array.prototype.slice()`](../array/slice), [`Array.prototype.concat()`](../array/concat), [`Function.prototype.call()`](call) and [`Function.prototype.apply()`](apply), built-in methods to have their original values.
+-   The partial implementation creates functions that do not have immutable "poison pill" [`caller`](caller) and `arguments` properties that throw a [`TypeError`](../typeerror) upon get, set, or deletion. (This could be added if the implementation supports [`Object.defineProperty`](../object/defineproperty), or partially implemented \[without throw-on-delete behavior\] if the implementation supports the [`__defineGetter__`](../object/__definegetter__) and [`__defineSetter__`](../object/__definesetter__) extensions.)
+-   The partial implementation creates functions that have a `prototype` property. (Proper bound functions have none.)
+-   The partial implementation creates bound functions whose [`length`](length) property does not agree with that mandated by ECMA-262: it creates functions with `length` of `0`. A full implementation—depending on the length of the target function and the number of pre-specified arguments—may return a non-zero length.
+-   The partial implementation creates bound functions whose [`name`](name) property is not derived from the original function name. According to ECMA-262, name of the returned bound function should be "bound " + name of target function (note the space character).
 
 If you choose to use this partial implementation, **you must not rely on those cases where behavior deviates from ECMA-262, 5<sup>th</sup> edition!** Thankfully, these deviations from the specification rarely (if ever) come up in most coding situations. If you do not understand any of the deviations from the specification above, then it is safe in this particular case to not worry about these noncompliant deviation details.
 
 **If it's absolutely necessary and performance is not a concern**, a far slower (but more specification-compliant solution) can be found at <https://github.com/Raynos/function-bind>.
-

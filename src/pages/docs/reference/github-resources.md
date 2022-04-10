@@ -10,82 +10,81 @@ seo:
 template: docs
 ---
 
-
 # Github Resources:
 
-- [Github Resources:](#github-resources)
-  - [GitHub](#github)
-    - [Ignore Whitespace](#ignore-whitespace)
-    - [Adjust Tab Space](#adjust-tab-space)
-    - [Commit History by Author](#commit-history-by-author)
-    - [Cloning a Repository](#cloning-a-repository)
-    - [Branch](#branch)
-      - [Compare all Branches to Another Branch](#compare-all-branches-to-another-branch)
-      - [Comparing Branches](#comparing-branches)
-      - [Compare Branches across Forked Repositories](#compare-branches-across-forked-repositories)
-    - [Gists](#gists)
-    - [Git.io](#gitio)
-    - [Keyboard Shortcuts](#keyboard-shortcuts)
-    - [Line Highlighting in Repositories](#line-highlighting-in-repositories)
-    - [Closing Issues via Commit Messages](#closing-issues-via-commit-messages)
-    - [Cross-Link Issues](#cross-link-issues)
-    - [Locking Conversations](#locking-conversations)
-    - [CI Status on Pull Requests](#ci-status-on-pull-requests)
-    - [Filters](#filters)
-    - [Syntax Highlighting in Markdown Files](#syntax-highlighting-in-markdown-files)
-    - [Emojis](#emojis)
-    - [Images/GIFs](#imagesgifs)
-      - [Embedding Images in GitHub Wiki](#embedding-images-in-github-wiki)
-    - [Quick Quoting](#quick-quoting)
-    - [Pasting Clipboard Image to Comments](#pasting-clipboard-image-to-comments)
-    - [Quick Licensing](#quick-licensing)
-    - [Task Lists](#task-lists)
-      - [Task Lists in Markdown Documents](#task-lists-in-markdown-documents)
-    - [Relative Links](#relative-links)
-    - [Metadata and Plugin Support for GitHub Pages](#metadata-and-plugin-support-for-github-pages)
-    - [Viewing YAML Metadata in your Documents](#viewing-yaml-metadata-in-your-documents)
-    - [Rendering Tabular Data](#rendering-tabular-data)
-    - [Rendering PDF](#rendering-pdf)
-    - [Revert a Pull Request](#revert-a-pull-request)
-    - [Diffs](#diffs)
-      - [Rendered Prose Diffs](#rendered-prose-diffs)
-      - [Diffable Maps](#diffable-maps)
-      - [Expanding Context in Diffs](#expanding-context-in-diffs)
-      - [Diff or Patch of Pull Request](#diff-or-patch-of-pull-request)
-      - [Rendering and diffing images](#rendering-and-diffing-images)
-    - [Hub](#hub)
-    - [Contribution Guidelines](#contribution-guidelines)
-      - [CONTRIBUTING File](#contributing-file)
-      - [ISSUE_TEMPLATE file](#issue_template-file)
-      - [PULL_REQUEST_TEMPLATE file](#pull_request_template-file)
-    - [Octicons](#octicons)
-    - [GitHub Student Developer Pack](#github-student-developer-pack)
-    - [GitHub Resources](#github-resources-1)
-      - [GitHub Talks](#github-talks)
-    - [SSH keys](#ssh-keys)
-    - [Profile Image](#profile-image)
-    - [Repository Templates](#repository-templates)
-  - [Git](#git)
-    - [Remove All Deleted Files from the Working Tree](#remove-all-deleted-files-from-the-working-tree)
-    - [Previous Branch](#previous-branch)
-    - [Stripspace](#stripspace)
-    - [Checking out Pull Requests](#checking-out-pull-requests)
-    - [Empty Commits](#empty-commits)
-    - [Styled Git Status](#styled-git-status)
-    - [Styled Git Log](#styled-git-log)
-    - [Git Query](#git-query)
-    - [Git Grep](#git-grep)
-    - [Merged Branches](#merged-branches)
-    - [Fixup and Autosquash](#fixup-and-autosquash)
-    - [Web Server for Browsing Local Repositories](#web-server-for-browsing-local-repositories)
-    - [Git Configurations](#git-configurations)
-      - [Aliases](#aliases)
-      - [Auto-Correct](#auto-correct)
-      - [Color](#color)
-    - [Git Resources](#git-resources)
-      - [Git Books](#git-books)
-      - [Git Videos](#git-videos)
-      - [Git Articles](#git-articles)
+-   [Github Resources:](#github-resources)
+    -   [GitHub](#github)
+        -   [Ignore Whitespace](#ignore-whitespace)
+        -   [Adjust Tab Space](#adjust-tab-space)
+        -   [Commit History by Author](#commit-history-by-author)
+        -   [Cloning a Repository](#cloning-a-repository)
+        -   [Branch](#branch)
+            -   [Compare all Branches to Another Branch](#compare-all-branches-to-another-branch)
+            -   [Comparing Branches](#comparing-branches)
+            -   [Compare Branches across Forked Repositories](#compare-branches-across-forked-repositories)
+        -   [Gists](#gists)
+        -   [Git.io](#gitio)
+        -   [Keyboard Shortcuts](#keyboard-shortcuts)
+        -   [Line Highlighting in Repositories](#line-highlighting-in-repositories)
+        -   [Closing Issues via Commit Messages](#closing-issues-via-commit-messages)
+        -   [Cross-Link Issues](#cross-link-issues)
+        -   [Locking Conversations](#locking-conversations)
+        -   [CI Status on Pull Requests](#ci-status-on-pull-requests)
+        -   [Filters](#filters)
+        -   [Syntax Highlighting in Markdown Files](#syntax-highlighting-in-markdown-files)
+        -   [Emojis](#emojis)
+        -   [Images/GIFs](#imagesgifs)
+            -   [Embedding Images in GitHub Wiki](#embedding-images-in-github-wiki)
+        -   [Quick Quoting](#quick-quoting)
+        -   [Pasting Clipboard Image to Comments](#pasting-clipboard-image-to-comments)
+        -   [Quick Licensing](#quick-licensing)
+        -   [Task Lists](#task-lists)
+            -   [Task Lists in Markdown Documents](#task-lists-in-markdown-documents)
+        -   [Relative Links](#relative-links)
+        -   [Metadata and Plugin Support for GitHub Pages](#metadata-and-plugin-support-for-github-pages)
+        -   [Viewing YAML Metadata in your Documents](#viewing-yaml-metadata-in-your-documents)
+        -   [Rendering Tabular Data](#rendering-tabular-data)
+        -   [Rendering PDF](#rendering-pdf)
+        -   [Revert a Pull Request](#revert-a-pull-request)
+        -   [Diffs](#diffs)
+            -   [Rendered Prose Diffs](#rendered-prose-diffs)
+            -   [Diffable Maps](#diffable-maps)
+            -   [Expanding Context in Diffs](#expanding-context-in-diffs)
+            -   [Diff or Patch of Pull Request](#diff-or-patch-of-pull-request)
+            -   [Rendering and diffing images](#rendering-and-diffing-images)
+        -   [Hub](#hub)
+        -   [Contribution Guidelines](#contribution-guidelines)
+            -   [CONTRIBUTING File](#contributing-file)
+            -   [ISSUE_TEMPLATE file](#issue_template-file)
+            -   [PULL_REQUEST_TEMPLATE file](#pull_request_template-file)
+        -   [Octicons](#octicons)
+        -   [GitHub Student Developer Pack](#github-student-developer-pack)
+        -   [GitHub Resources](#github-resources-1)
+            -   [GitHub Talks](#github-talks)
+        -   [SSH keys](#ssh-keys)
+        -   [Profile Image](#profile-image)
+        -   [Repository Templates](#repository-templates)
+    -   [Git](#git)
+        -   [Remove All Deleted Files from the Working Tree](#remove-all-deleted-files-from-the-working-tree)
+        -   [Previous Branch](#previous-branch)
+        -   [Stripspace](#stripspace)
+        -   [Checking out Pull Requests](#checking-out-pull-requests)
+        -   [Empty Commits](#empty-commits)
+        -   [Styled Git Status](#styled-git-status)
+        -   [Styled Git Log](#styled-git-log)
+        -   [Git Query](#git-query)
+        -   [Git Grep](#git-grep)
+        -   [Merged Branches](#merged-branches)
+        -   [Fixup and Autosquash](#fixup-and-autosquash)
+        -   [Web Server for Browsing Local Repositories](#web-server-for-browsing-local-repositories)
+        -   [Git Configurations](#git-configurations)
+            -   [Aliases](#aliases)
+            -   [Auto-Correct](#auto-correct)
+            -   [Color](#color)
+        -   [Git Resources](#git-resources)
+            -   [Git Books](#git-books)
+            -   [Git Videos](#git-videos)
+            -   [Git Articles](#git-articles)
 
 ## GitHub
 
@@ -253,11 +252,11 @@ Location: https://github.com/...
 
 When on a repository page, keyboard shortcuts allow you to navigate easily.
 
-- Pressing `t` will bring up a file explorer.
-- Pressing `w` will bring up the branch selector.
-- Pressing `s` will focus the search field for the current repository. Pressing ↓ to select the "All GitHub" option changes the field to search all of GitHub.
-- Pressing `l` will edit labels on existing Issues.
-- Pressing `y` **when looking at a file** (e.g., `https://github.com/tiimgreen/github-cheat-sheet/blob/master/README.md`) will change your URL to one which, in effect, freezes the page you are looking at. If this code changes, you will still be able to see what you saw at that current time.
+-   Pressing `t` will bring up a file explorer.
+-   Pressing `w` will bring up the branch selector.
+-   Pressing `s` will focus the search field for the current repository. Pressing ↓ to select the "All GitHub" option changes the field to search all of GitHub.
+-   Pressing `l` will edit labels on existing Issues.
+-   Pressing `y` **when looking at a file** (e.g., `https://github.com/tiimgreen/github-cheat-sheet/blob/master/README.md`) will change your URL to one which, in effect, freezes the page you are looking at. If this code changes, you will still be able to see what you saw at that current time.
 
 To see all of the shortcuts for the current page press `?`:
 
@@ -493,13 +492,13 @@ In full Markdown documents **read-only** checklists can now be added using the f
   - [ ] Phobos
 ```
 
-- [ ] Mercury
-- [x] Venus
-- [x] Earth
-- - [x] Moon
-- [x] Mars
-    - [ ] Deimos
-    - [ ] Phobos
+-   [ ] Mercury
+-   [x] Venus
+-   [x] Earth
+-   -   [x] Moon
+-   [x] Mars
+    -   [ ] Deimos
+    -   [ ] Phobos
 
 [_Read more about task lists in markdown documents._](https://github.com/blog/1825-task-lists-in-all-markdown-documents)
 
@@ -794,9 +793,9 @@ $ git checkout -
 
 Git Stripspace:
 
-- Strips trailing whitespace
-- Collapses newlines
-- Adds newline to end of file
+-   Strips trailing whitespace
+-   Collapses newlines
+-   Adds newline to end of file
 
 A file must be passed when calling the command, e.g.:
 
@@ -871,10 +870,10 @@ $ git commit -m "Big-ass commit" --allow-empty
 
 Some use-cases for this (that make sense), include:
 
-- Annotating the start of a new bulk of work or a new feature.
-- Documenting when you make changes to the project that aren't code related.
-- Communicating with people using your repository.
-- The first commit of a repository: `git commit -m "Initial commit" --allow-empty`.
+-   Annotating the start of a new bulk of work or a new feature.
+-   Documenting when you make changes to the project that aren't code related.
+-   Communicating with people using your repository.
+-   The first commit of a repository: `git commit -m "Initial commit" --allow-empty`.
 
 ### Styled Git Status
 
@@ -954,8 +953,8 @@ _Press `q` to quit._
 
 You can also use multiple flags for more advanced search. For example:
 
-- `-e` The next parameter is the pattern (e.g., regex)
-- `--and`, `--or` and `--not` Combine multiple patterns.
+-   `-e` The next parameter is the pattern (e.g., regex)
+-   `--and`, `--or` and `--not` Combine multiple patterns.
 
 Use it like this:
 

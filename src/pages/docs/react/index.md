@@ -25,7 +25,6 @@ seo:
 template: docs
 ---
 
-
 # React
 
 # Examples:
@@ -62,10 +61,7 @@ Here I will walk through a demo…. skip down below for more fundamental example
 
 ## ALL CODE:
 
-
 ```jsx
-
-
 
 ```
 

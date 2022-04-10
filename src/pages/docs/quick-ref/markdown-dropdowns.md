@@ -10,7 +10,6 @@ seo:
 template: docs
 ---
 
-
 # Markdown Dropdown:
 
 <details>

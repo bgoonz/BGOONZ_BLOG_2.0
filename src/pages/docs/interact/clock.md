@@ -11,7 +11,6 @@ seo:
 template: docs
 ---
 
-
 <center>
 <h2 style=" margin-bottom: 2em; align-self:center;">World Clock(Click To See Localized Time)</h2>
 </center>

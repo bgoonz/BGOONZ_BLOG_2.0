@@ -10,7 +10,6 @@ seo:
 template: docs
 ---
 
-
 # This module provides many functions that you can use to retrieve information from the underlying operating system and the computer the program runs on, and interact with it.
 
 ```js
@@ -150,12 +149,12 @@ Example:
 
 Return the platform that Node.js was compiled for:
 
-- `darwin`
-- `freebsd`
-- `linux`
-- `openbsd`
-- `win32`
-- ...more
+-   `darwin`
+-   `freebsd`
+-   `linux`
+-   `openbsd`
+-   `win32`
+-   ...more
 
 ## `os.release()`
 
@@ -173,9 +172,9 @@ Returns the number of bytes that represent the total memory available in the sys
 
 Identifies the operating system:
 
-- `Linux`
-- `Darwin` on macOS
-- `Windows_NT` on Windows
+-   `Linux`
+-   `Darwin` on macOS
+-   `Windows_NT` on Windows
 
 ## `os.uptime()`
 

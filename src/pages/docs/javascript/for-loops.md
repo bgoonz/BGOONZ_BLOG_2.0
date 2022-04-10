@@ -10,7 +10,6 @@ seo:
 template: docs
 ---
 
-
 # for
 
 The **for statement** creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement (usually a [block statement](block)) to be executed in the loop.
@@ -87,10 +86,7 @@ The following `for` cycle calculates the offset position of a node in the `final
 
 ---
 
-
 ```js
-
-
 function showOffsetPos(sId) {
     var nLeft = 0,
         nTop = 0;
@@ -329,10 +325,7 @@ getResponseSize('https://jsonplaceholder.typicode.com/photos');
 
 ---
 
-
 ```js
-
-
 function* generator() {
     yield 0;
     yield 1;
@@ -368,10 +361,7 @@ for (let numOrPromise of generator()) {
 
 ---
 
-
 ```js
-
-
 function* generatorWithRejectedPromises() {
     try {
         yield 0;

@@ -10,7 +10,6 @@ seo:
 template: docs
 ---
 
-
 # <a id="asymptotic-notation"></a>Asymptotic Notation
 
 ### <span style="color:red;"> Definition:
@@ -769,10 +768,7 @@ const permutations = (arr) => {
 
 ---
 
-
 ```js
-
-
 function example() {
     console.log(this);
 }
@@ -926,10 +922,7 @@ As an example, event listeners are asynchronous callbacks that are only executed
 
 ---
 
-
 ```js
-
-
 function onClick() {
     console.log('The user clicked on the page.');
 }
@@ -966,10 +959,7 @@ map([1, 2, 3, 4, 5], (n) => n * 2); // [2, 4, 6, 8, 10]
 
 ---
 
-
 ```js
-
-
 function GenericBox({ children }) {
     return <div className="container">{children}</div>;
 }
@@ -1091,10 +1081,7 @@ Note: this technique does not attempt to test equivalence of data structures oth
 
 ---
 
-
 ```js
-
-
 function isDeepEqual(obj1, obj2, testPrototypes = false) {
     if (obj1 === obj2) {
         return true;
@@ -1956,10 +1943,7 @@ In HTML, `false` can be returned to prevent default behavior, whereas in React `
 
 ---
 
-
 ```js
-
-
 function handleClick(e) {
     e.preventDefault();
     console.log('The link was clicked.');
@@ -2112,10 +2096,7 @@ For example, this won't work:
 
 ---
 
-
 ```js
-
-
 function App({ messages, isVisible }) {
     return (
         <div>
@@ -2130,10 +2111,7 @@ Logical AND `&&` and the ternary `? :` operator replace the `if`/`else` statemen
 
 ---
 
-
 ```js
-
-
 function App({ messages, isVisible }) {
     return (
         <div>
@@ -2538,10 +2516,7 @@ Often used when you need to create multiple instances of an object, each with th
 
 ---
 
-
 ```js
-
-
 function Person(name, age) {
     this.name = name;
     this.age = age;
@@ -2611,10 +2586,7 @@ Parameters are the variable names of the function definition, while arguments ar
 
 ---
 
-
 ```js
-
-
 function myFunction(parameter1, parameter2) {
     console.log(arguments[0]); // "argument1"
 }
@@ -2857,10 +2829,7 @@ const c = (arr) => arr.sort((a, b) => a - b);
 
 Comments must be wrapped inside curly braces `{}` and use the `/* */` syntax.
 
-
 ```jsx
-
-
 const tree = (
     <div>
         {/* Comment */}
@@ -3008,10 +2977,7 @@ Generally, this concept is used in web applications to manage state. With most a
 
 ---
 
-
 ```js
-
-
 function greet() {
     return;
     {

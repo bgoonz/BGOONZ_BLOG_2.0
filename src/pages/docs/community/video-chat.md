@@ -11,7 +11,6 @@ seo:
 template: docs
 ---
 
-
 # Zumzi Instant Messenger
 
 <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://zumzi-chat-messenger.vercel.app/web/login.html" width="1000px" height="800px" ></iframe>

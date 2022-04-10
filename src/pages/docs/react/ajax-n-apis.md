@@ -10,7 +10,6 @@ seo:
 template: docs
 ---
 
-
 # AJAX and APIs - React
 
 > ## Excerpt
@@ -98,10 +97,7 @@ Here is the equivalent with [Hooks](https://reactjs.org/docs/hooks-intro.html):
 
 ---
 
-
 ```js
-
-
 function MyComponent() {
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);

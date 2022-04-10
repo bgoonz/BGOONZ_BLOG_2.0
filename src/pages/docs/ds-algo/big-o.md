@@ -10,7 +10,6 @@ seo:
 template: docs
 ---
 
-
 # A Quick Guide to Big-O Notation, Memoization, Tabulation, and Sorting Algorithms by Example
 
 ![](https://cdn-images-1.medium.com/max/800/0*yjlSk3T9c2_14in1.png)
@@ -228,10 +227,7 @@ Our memo object is _mapping_ out our arguments of factorial to it's return value
 
 ---
 
-
 ```js
-
-
 function fastFib(n, memo = {}) {
     if (n in memo) return memo[n];
     if (n === 1 || n === 2) return 1;

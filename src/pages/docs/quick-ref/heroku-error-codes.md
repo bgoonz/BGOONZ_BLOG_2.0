@@ -11,7 +11,6 @@ seo:
 template: docs
 ---
 
-
 # Heroku Error Codes
 
 Last updated August 04, 2021

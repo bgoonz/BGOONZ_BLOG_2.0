@@ -1,34 +1,34 @@
 ---
 title: Archive
 excerpt: See some interesting Archive developed by the Web-Dev-Hubcommunity to
-  help automate parts of your workflow.
+    help automate parts of your workflow.
 seo:
-  title: Archive
-  description: paste to markdown, excel table to markdown, excel to html, cloud
-    storage, text manipulation, ternary converter, github html preview, form
-    builder, border
-  extra:
-    - name: og:type
-      value: website
-      keyName: property
-    - name: og:title
-      value: Archive
-      keyName: property
-    - name: og:description
-      value: paste to markdown, excel table to markdown, excel to html, cloud storage,
-        text manipulation, ternary converter, github html preview, form builder,
-        border
-      keyName: property
-    - name: twitter:card
-      value: summary
-    - name: twitter:title
-      value: Archive
-    - name: twitter:description
-      value: This is the Archive page
-    - name: og:image
-      value: images/tex.png
-      keyName: property
-      relativeUrl: true
+    title: Archive
+    description: paste to markdown, excel table to markdown, excel to html, cloud
+        storage, text manipulation, ternary converter, github html preview, form
+        builder, border
+    extra:
+        - name: og:type
+          value: website
+          keyName: property
+        - name: og:title
+          value: Archive
+          keyName: property
+        - name: og:description
+          value: paste to markdown, excel table to markdown, excel to html, cloud storage,
+              text manipulation, ternary converter, github html preview, form builder,
+              border
+          keyName: property
+        - name: twitter:card
+          value: summary
+        - name: twitter:title
+          value: Archive
+        - name: twitter:description
+          value: This is the Archive page
+        - name: og:image
+          value: images/tex.png
+          keyName: property
+          relativeUrl: true
 template: docs
 ---
 
@@ -36,12 +36,8 @@ template: docs
 <br>
 <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://random-static-html-deploys.netlify.app/" width="1200px" height="800px"  scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
 
-
 <br>
 <br>
-
-
-
 
 <br>
 <br>
@@ -81,12 +77,8 @@ template: docs
 <br>
 <br>
 
-
-
-
 <br>
 <br>
-
 
 <h1>     Resource Archive           </h1>
 <br>
@@ -95,10 +87,6 @@ template: docs
 
 <br>
 <br>
-
-
-
-
 
 <br>
 <br>
@@ -111,17 +99,11 @@ template: docs
 <br>
 <br>
 
-
-
-
 <br>
 <br>
 
-
-
 <br>
 <br>
-
 
 <br>
 <h1> Text Tools     </h1>
@@ -132,12 +114,8 @@ template: docs
 <br>
 <br>
 
-
-
-
 <br>
 <br>
-
 
 <h1> Ternary Converter   </h1>
 <br>
@@ -146,12 +124,8 @@ template: docs
 <br>
 <br>
 
-
-
-
 <br>
 <br>
-
 
 <h1>  Github HTML Render from link </h1>
 <br>
@@ -161,12 +135,8 @@ template: docs
 <br>
 <br>
 
-
-
-
 <br>
 <br>
-
 
 <h1> Data Structures</h1>
 <br>
@@ -176,13 +146,8 @@ template: docs
 <br>
 <br>
 
-
-
-
 <br>
 <br>
-
-
 
 <br>
 <br>
@@ -194,8 +159,6 @@ template: docs
 
 <br>
 
-
-
 <br>
 
 <h1> Border Builder </h1>
@@ -206,21 +169,15 @@ template: docs
 <br>
 <br>
 
-
-
-
 <br>
 <br>
 
-
 <br>
 <br>
-
 
 <h1>      Ds & Algos          </h1>
 <br>
 <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://ds-algo-official.netlify.app/" width="1200px" height="800px"  scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
-
 
 <br>
 <br>
@@ -233,9 +190,6 @@ template: docs
 
 <br>
 <br>
-
-
-
 
 <br>
 <br>
@@ -255,12 +209,7 @@ allowfullscreen="true"></iframe>
 <br>
 <br>
 
-
-
-
-
 <br>
-
 
 <h1>     Resource Archive           </h1>
 <br>
@@ -270,19 +219,7 @@ allowfullscreen="true"></iframe>
 <br>
 <br>
 
-
-
-
-
 <br>
-
-
-
-
-
-
-
-
 
 <br>
 <br>
@@ -310,7 +247,6 @@ width="1200px" height="800px"    style=" border:0; border-radius: 4px;  " title=
 <br>
 <br>
 
-
 <br>
 <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    loading="lazy" src="https://codesandbox.io/embed/bigo-3wqy4?fontsize=14&hidenavigation=1&theme=dark"
 width="1200px" height="800px"    style=" border:0; border-radius: 4px;  " title="hvbrd-sockets (forked)" >
@@ -319,13 +255,10 @@ width="1200px" height="800px"    style=" border:0; border-radius: 4px;  " title=
 <br>
 <br>
 
-
-
 <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    loading="lazy"
 src="https://codesandbox.io/embed/hvbrd-sockets-forked-vsi2o?fontsize=14&hidenavigation=1&theme=dark"
 width="1200px" height="800px"    style=" border:0; border-radius: 4px;  " title="hvbrd-sockets (forked)" >
 </iframe>
-
 
 <br>
 <br>
@@ -338,17 +271,14 @@ width="1200px" height="800px"    style=" border:0; border-radius: 4px;  " title=
 
 <br>
 
-
 <br> <br>
 <br>
+
 <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    loading="lazy"
 src="https://codesandbox.io/embed/sharp-feistel-x8bvv?fontsize=14&hidenavigation=1&theme=dark"
 width="1200px" height="800px"    style=" border:0; border-radius: 4px;  " title="sharp-feistel-x8bvv" >
 </iframe>
 <br>
-
-
-
 
 <center>
 
@@ -360,7 +290,6 @@ width="1200px" height="800px"    style=" border:0; border-radius: 4px;  " title=
 title="3D Cover Flow in React! | @keyframers 3.7"
 src="https://codepen.io/bgoonz/embed/ExZvGoZ?default-tab=html%2Cresult"   frameborder="yes" loading="lazy"
 allowfullscreen="true"></iframe>
-
 
 <br>
 <br>
@@ -380,16 +309,12 @@ loading="lazy"  allowfullscreen="true"></iframe>
 <br>
 <br>
 
-
-
 <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    loading="lazy" src="https://portfolio42.netlify.app/"
 width="1200px" height="800px"    style=" border:0; border-radius: 4px;  " title="hvbrd-sockets (forked)" >
 </iframe>
 
 <br>
 <br>
-
-
 
 <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    loading="lazy" width="1200px" height="800px"  scrolling="yes" title="Video Background 1"
 src="https://codesandbox.io/embed/bgoonzblog20-oo3x5?fontsize=14&hidenavigation=1&theme=dark"
@@ -398,7 +323,6 @@ width="1200px" height="800px"    style=" border:0; border-radius: 4px;  " title=
 <br>
 <br>
 
-
 <br>
 <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    loading="lazy" width="1200px" height="800px"  scrolling="yes" title="Video Background 1"
 src="https://codepen.io/bgoonz/embed/BaRLKBd?default-tab=html%2Cresult&theme-id=dark" frameborder="no"
@@ -406,7 +330,6 @@ loading="lazy"  allowfullscreen="true"></iframe>
 
 <br>
 <br>
-
 
 <br>
 <br>
@@ -418,7 +341,6 @@ frameborder="yes" loading="lazy"  allowfullscreen="true"></iframe>
 <br>
 <br>
 
-
 <br>
 <br>
 <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    loading="lazy" width="1200px" height="800px"  scrolling="yes" title="FullTextSearchjs"
@@ -427,7 +349,6 @@ allowfullscreen="true"></iframe>
 
 <br>
 <br>
-
 
 <br>
 <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    loading="lazy" width="1200px" height="800px"  scrolling="yes" title="CSS Grid: Info Card"
@@ -447,4 +368,3 @@ loading="lazy"  allowfullscreen="true"></iframe>
 
 <br>
 <br>
-

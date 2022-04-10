@@ -10,7 +10,6 @@ seo:
 template: docs
 ---
 
-
 # What are data structures
 
 Data structures, at a high level, are techniques for storing and organizing data that make it easier to modify, navigate, and access. Data structures determine how data is collected, the functions we can use to access it, and the relationships between data.
@@ -232,8 +231,6 @@ There are two ways you could solve this coding problem in an interview. Let's di
 ---
 
 ```js
-
-
 function removeEven(arr) {
     const odds = [];
     for (let number of arr) {
@@ -254,8 +251,6 @@ This approach starts with the first element of the array. If that current elemen
 ---
 
 ```js
-
-
 function removeEven(arr) {
     return arr.filter((v) => v % 2 != 0);
 }
@@ -610,8 +605,6 @@ To solve this problem, we must min heapify all parent nodes. Take a look.
 ---
 
 ```js
-
-
 function minHeapify(heap, index) {
     const left = index * 2;
     const right = index * 2 + 1;
@@ -635,8 +628,6 @@ function minHeapify(heap, index) {
 ---
 
 ```js
-
-
 function convertMax(maxHeap) {
     for (var i = Math.floor(maxHeap.length / 2); i > -1; i--) maxHeap = minHeapify(maxHeap, i);
 

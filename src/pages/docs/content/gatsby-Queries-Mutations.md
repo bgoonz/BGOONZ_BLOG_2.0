@@ -11,16 +11,15 @@ seo:
 template: docs
 ---
 
-
 # Querying Data in Components using StaticQuery
 
 ## TABLE OF CONTENTS
 
-- [How to use StaticQuery in components](https://www.gatsbyjs.com/docs/how-to/querying-data/static-query/#how-to-use-staticquery-in-components)
-    - [Basic example](https://www.gatsbyjs.com/docs/how-to/querying-data/static-query/#basic-example)
-    - [useStaticQuery](https://www.gatsbyjs.com/docs/how-to/querying-data/static-query/#usestaticquery)
-    - [Typechecking](https://www.gatsbyjs.com/docs/how-to/querying-data/static-query/#typechecking)
-- [How StaticQuery differs from page query](https://www.gatsbyjs.com/docs/how-to/querying-data/static-query/#how-staticquery-differs-from-page-query)
+-   [How to use StaticQuery in components](https://www.gatsbyjs.com/docs/how-to/querying-data/static-query/#how-to-use-staticquery-in-components)
+    -   [Basic example](https://www.gatsbyjs.com/docs/how-to/querying-data/static-query/#basic-example)
+    -   [useStaticQuery](https://www.gatsbyjs.com/docs/how-to/querying-data/static-query/#usestaticquery)
+    -   [Typechecking](https://www.gatsbyjs.com/docs/how-to/querying-data/static-query/#typechecking)
+-   [How StaticQuery differs from page query](https://www.gatsbyjs.com/docs/how-to/querying-data/static-query/#how-staticquery-differs-from-page-query)
 
 Gatsby v2 introduces `StaticQuery`, a new API that allows components to retrieve data via a GraphQL query.
 
@@ -170,9 +169,9 @@ title: PropTypes.string.isRequired,
 
 StaticQuery can do most of the things that page query can, including fragments. The main differences are:
 
-- page queries can accept variables (via `pageContext`) but can only be added to _page_ components
-- StaticQuery does not accept variables (hence the name "static"), but can be used in _any_ component, including pages
-- StaticQuery does not work with raw React.createElement calls; please use JSX, e.g. `<StaticQuery />`
+-   page queries can accept variables (via `pageContext`) but can only be added to _page_ components
+-   StaticQuery does not accept variables (hence the name "static"), but can be used in _any_ component, including pages
+-   StaticQuery does not work with raw React.createElement calls; please use JSX, e.g. `<StaticQuery />`
 
 # GraphQL
 
@@ -840,8 +839,8 @@ Try editing the variables above to instead pass `true` for `withFriends`, and se
 
 We needed to use a new feature in GraphQL called a _directive_. A directive can be attached to a field or fragment inclusion, and can affect execution of the query in any way the server desires. The core GraphQL specification includes exactly two directives, which must be supported by any spec-compliant GraphQL server implementation:
 
-- `@include(if: Boolean)` Only include this field in the result if the argument is `true`.
-- `@skip(if: Boolean)` Skip this field if the argument is `true`.
+-   `@include(if: Boolean)` Only include this field in the result if the argument is `true`.
+-   `@skip(if: Boolean)` Skip this field if the argument is `true`.
 
 Directives can be useful to get out of situations where you otherwise would need to do string manipulation to add and remove fields in your query. Server implementations may also add experimental features by defining completely new directives.
 

@@ -1,7 +1,7 @@
 ---
 title: Alpha (alpha channel)
 weight: 0
-excerpt: 
+excerpt:
 seo:
     title: 'Alpha'
     description: 'Alpha  Alpha Channel  Drawing  Glossary  Graphics  Translucency  Translucent  Transparency  Transparent  WebGL  WebXR  channel  color  pixel'
@@ -10,7 +10,6 @@ seo:
     type: stackbit_page_meta
 template: docs
 ---
-
 
 # Colors are represented in digital form as a collection of numbers, each representing the strength or intensity level of a given component of the color. Each of these components is called a **channel**. In a typical image file, the color channels describe how much red, green, and blue are used to make up the final color. To represent a color through which the background can be seen to some extent, a fourth channel is added to the color: the **alpha channel**. The alpha channel specifies how opaque the color is.
 
@@ -22,7 +21,7 @@ As you can see, the color without an alpha channel completely blocks the backgro
 
 ## See also
 
-- [interwiki("wikipedia", "Alpha compositing"on Wikipedia
-- [interwiki("wikipedia", "RGBA color model"on Wikipedia
-- [interwiki("wikipedia", "Channel (digital image)"on Wikipedia
-- [CSS color](/en-US/docs/Web/CSS/CSS_Color)
+-   [interwiki("wikipedia", "Alpha compositing"on Wikipedia
+-   [interwiki("wikipedia", "RGBA color model"on Wikipedia
+-   [interwiki("wikipedia", "Channel (digital image)"on Wikipedia
+-   [CSS color](/en-US/docs/Web/CSS/CSS_Color)

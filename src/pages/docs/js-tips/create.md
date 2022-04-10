@@ -11,7 +11,6 @@ seo:
 template: docs
 ---
 
-
 # Object.create()
 
 The `Object.create()` method creates a new object, using an existing object as the prototype of the newly created object.
@@ -37,8 +36,8 @@ A new object with the specified prototype object and properties.
 
 The `proto` parameter has to be either
 
-- [`null`](../null) or
-- an [`Object`](../object) excluding [primitive wrapper objects](https://developer.mozilla.org/en-US/docs/Glossary/Primitive#primitive_wrapper_objects_in_javascript).
+-   [`null`](../null) or
+-   an [`Object`](../object) excluding [primitive wrapper objects](https://developer.mozilla.org/en-US/docs/Glossary/Primitive#primitive_wrapper_objects_in_javascript).
 
 If `proto` is neither of these a [`TypeError`](../typeerror) is thrown.
 

@@ -10,7 +10,6 @@ seo:
 template: docs
 ---
 
-
 Add Firebase to your JavaScript project **Note:** Upgrading from the version 8 Firebase SDK? Check out our [upgrade guide](https://firebase.google.com/docs/web/modular-upgrade).[#### **Create a Firebase project** ]()**Note:** Using the v9 SDK is strongly recommended, especially for production apps. If you need support for other SDK management options, like **window.firebase**, see [Upgrade from version 8 to the modular Web SDK](https://firebase.google.com/docs/web/modular-upgrade#window-compat).**Note:** You can skip this step if you are using a JavaScript framework CLI tool like the [Angular CLI](https://angular.io/cli), [Next.js](https://nextjs.org/), [Vue CLI](https://cli.vuejs.org/), or [Create React App](https://reactjs.org/docs/create-a-new-react-app.html). Check out [our guide on module bundling](https://firebase.google.com/docs/web/module-bundling) for more information.
 
 Follow this guide to use the Firebase JavaScript SDK in your web app or as a client for end-user access, for example, in a Node.js desktop or IoT application.

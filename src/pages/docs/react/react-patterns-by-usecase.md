@@ -10,7 +10,6 @@ seo:
 template: docs
 ---
 
-
 ## Wrapping/Mirroring
 
 ### Wrapping/Mirroring a HTML Element
@@ -210,9 +209,9 @@ const PrivateRoute = ({ component: Component, ...rest }: PrivateRouteProps) => {
 
 For more info you can refer to these resources:
 
-- https://blog.andrewbran.ch/polymorphic-react-components/
-- https://github.com/kripod/react-polymorphic-box
-- https://stackoverflow.com/questions/58200824/generic-react-typescript-component-with-as-prop-able-to-render-any-valid-dom
+-   https://blog.andrewbran.ch/polymorphic-react-components/
+-   https://github.com/kripod/react-polymorphic-box
+-   https://stackoverflow.com/questions/58200824/generic-react-typescript-component-with-as-prop-able-to-render-any-valid-dom
 
 [Thanks @eps1lon](https://github.com/typescript-cheatsheets/react-typescript-cheatsheet/pull/69) and [@karol-majewski](https://github.com/typescript-cheatsheets/react/issues/151) for thoughts!
 

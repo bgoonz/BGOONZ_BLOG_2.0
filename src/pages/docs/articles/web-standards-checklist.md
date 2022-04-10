@@ -10,7 +10,6 @@ seo:
 template: docs
 ---
 
-
 ## Web Standards Checklist
 
 The term web standards can mean different things to different people. For some, it is '_table-free sites_', for others it is '_using valid code_'. However, web standards are much broader than that. A site built to web standards should _adhere to standards_ (HTML, XHTML, XML, CSS, XSLT, DOM, MathML, SVG etc) and _pursue best practices_ (valid code, accessible code, semantically correct code, user-friendly URLs etc).
@@ -21,9 +20,9 @@ In other words, a site built to web standards should ideally be _lean, clean, CS
 
 This is a guide that can be used:
 
-- to show the breadth of web standards
-- as a handy tool for developers during the production phase of websites
-- as an aid for developers who are interested in moving towards web standards
+-   to show the breadth of web standards
+-   as a handy tool for developers during the production phase of websites
+-   as an aid for developers who are interested in moving towards web standards
 
 ### The checklist
 
@@ -88,9 +87,9 @@ This is a guide that can be used:
 
 More:
 
-- <http://www.w3.org/QA/2002/04/valid-dtd-list.html>
-- <http://css.maxdesign.com.au/listamatic/about-boxmodel.htm>
-- <http://gutfeldt.ch/matthias/articles/doctypeswitch.html>
+-   <http://www.w3.org/QA/2002/04/valid-dtd-list.html>
+-   <http://css.maxdesign.com.au/listamatic/about-boxmodel.htm>
+-   <http://gutfeldt.ch/matthias/articles/doctypeswitch.html>
 
 #### 1.2 Does the site use a Character set?
 
@@ -100,7 +99,7 @@ More:
 
 More:
 
-- [Character encodings](http://www.w3.org/International/O-charset.html)
+-   [Character encodings](http://www.w3.org/International/O-charset.html)
 
 #### 1.3 Does the site use Valid (X)HTML?
 
@@ -108,7 +107,7 @@ More:
 
 More:
 
-- [W3C Markup Validation Service](http://validator.w3.org/)
+-   [W3C Markup Validation Service](http://validator.w3.org/)
 
 #### 1.4 Does the site use Valid CSS?
 
@@ -118,7 +117,7 @@ More:
 
 More:
 
-- [W3C CSS Validation Service](http://jigsaw.w3.org/css-validator/)
+-   [W3C CSS Validation Service](http://jigsaw.w3.org/css-validator/)
 
 #### 1.5 Does the site use any CSS hacks?
 
@@ -128,9 +127,9 @@ More:
 
 More:
 
-- [CSS Hacks](http://css-discuss.incutio.com/?page=CssHack)
-- [To hack or not to hack](http://css-discuss.incutio.com/?page=ToHackOrNotToHack)
-- [CSS filters](http://centricle.com/ref/css/filters/)
+-   [CSS Hacks](http://css-discuss.incutio.com/?page=CssHack)
+-   [To hack or not to hack](http://css-discuss.incutio.com/?page=ToHackOrNotToHack)
+-   [CSS filters](http://centricle.com/ref/css/filters/)
 
 #### 1.6 Does the site use unnecessary classes or ids?
 
@@ -144,7 +143,7 @@ More:
 
 More:
 
-- [Semantic data extractor](http://www.w3.org/2003/12/semantic-extractor.html)
+-   [Semantic data extractor](http://www.w3.org/2003/12/semantic-extractor.html)
 
 #### 1.8 Does the site have any broken links?
 
@@ -152,7 +151,7 @@ Broken links can frustrate users and potentially drive customers away. Broken li
 
 More:
 
-- [W3C Link checker](http://validator.w3.org/checklink)
+-   [W3C Link checker](http://validator.w3.org/checklink)
 
 #### 1.9 How does the site perform in terms of speed/page size?
 
@@ -192,8 +191,8 @@ Internet Explore for Windows allows you to turn on a debugger that will pop up a
 
 More:
 
-- [Web Content Accessibility Guidelines -- checkpoint 3.4](http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-relative-units)
-- [How to size text using ems](http://www.clagnut.com/blog/348/)
+-   [Web Content Accessibility Guidelines -- checkpoint 3.4](http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-relative-units)
+-   [How to size text using ems](http://www.clagnut.com/blog/348/)
 
 #### 3.3 Do any aspects of the layout break if font size is increased?
 
@@ -221,8 +220,8 @@ Try this simple test. Look at your website in a browser that supports easy incre
 
 More:
 
-- [Accessible html/xhtml forms](http://www.webstandards.org/learn/tutorials/accessible-forms/01-accessible-forms.html)
-- [Accessible form builder](http://www.accessify.com/tools-and-wizards/accessible-form-builder.asp)
+-   [Accessible html/xhtml forms](http://www.webstandards.org/learn/tutorials/accessible-forms/01-accessible-forms.html)
+-   [Accessible form builder](http://www.accessify.com/tools-and-wizards/accessible-form-builder.asp)
 
 #### 3.6 Does the site use accessible tables?
 
@@ -232,9 +231,9 @@ More:
 
 More:
 
-- [How to create accessible tables](http://bellevuecollege.edu/webpublishing/tips/accessibility/tables.asp)
-- [Accessible table builder](http://www.accessify.com/tools-and-wizards/accessibility-tools/table-builder/)
-- [Creating accessible tables](http://www.webaim.org/techniques/tables/)
+-   [How to create accessible tables](http://bellevuecollege.edu/webpublishing/tips/accessibility/tables.asp)
+-   [Accessible table builder](http://www.accessify.com/tools-and-wizards/accessibility-tools/table-builder/)
+-   [Creating accessible tables](http://www.webaim.org/techniques/tables/)
 
 #### 3.7 Is there sufficient colour brightness/contrasts?
 
@@ -244,7 +243,7 @@ More:
 
 More:
 
-- [Colour Contrast Analyser](http://www.juicystudio.com/services/colourcontrast.asp)
+-   [Colour Contrast Analyser](http://www.juicystudio.com/services/colourcontrast.asp)
 
 #### 3.8 Is colour alone used for critical information?
 
@@ -256,8 +255,8 @@ There are basically three types of colour deficiency; Deuteranope (a form of red
 
 More:
 
-- [Colourblind Webpage filter](http://colorfilter.wickline.org/)
-- [Vischeck](http://www.vischeck.com/vischeck/vischeckURL.php)
+-   [Colourblind Webpage filter](http://colorfilter.wickline.org/)
+-   [Vischeck](http://www.vischeck.com/vischeck/vischeckURL.php)
 
 #### 3.9 Is there delayed responsiveness for dropdown menus?
 
@@ -289,7 +288,7 @@ This is like a combination of images and CSS switched off. A text-based browser 
 
 More:
 
-- [Lynx Viewer](http://www.delorie.com/web/lynxview)
+-   [Lynx Viewer](http://www.delorie.com/web/lynxview)
 
 #### 4.5 Does the site work well when printed?
 
@@ -299,7 +298,7 @@ More:
 
 More:
 
-- [Web Design References -- Print](http://www.d.umn.edu/itss/support/Training/Online/webdesign/css.html#print)
+-   [Web Design References -- Print](http://www.d.umn.edu/itss/support/Training/Online/webdesign/css.html#print)
 
 #### 4.6 Does the site work well in Hand Held devices?
 
@@ -395,8 +394,8 @@ Some users like to go back to a site's home page after navigating to content wit
 
 More:
 
-- [Creating Search Engine Friendly URLs](http://www.websitegoodies.com/article/32)
-- [How to make URLs user-friendly](http://www.merges.net/theory/20010305.html)
+-   [Creating Search Engine Friendly URLs](http://www.websitegoodies.com/article/32)
+-   [How to make URLs user-friendly](http://www.merges.net/theory/20010305.html)
 
 #### 6.3 Does the site's URL work without "www"?
 

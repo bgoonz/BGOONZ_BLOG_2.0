@@ -10,7 +10,6 @@ seo:
 template: docs
 ---
 
-
 ## What is Jamstack
 
 ---
@@ -185,17 +184,17 @@ Simple and effective method of writing HTML, it's ideal for super simple pages.
 
 Most Jamstack sites are powered by a static site generator. There's no enforcement on which SSG you decide to use.
 
-- [Next.js](https://nextjs.org/ 'Next.js')
-- [Gatsby](https://www.gatsbyjs.com/ 'Gatsby')
-- [Hugo](https://gohugo.io/ 'Hugo')
+-   [Next.js](https://nextjs.org/ 'Next.js')
+-   [Gatsby](https://www.gatsbyjs.com/ 'Gatsby')
+-   [Hugo](https://gohugo.io/ 'Hugo')
 
 #### Site Builders
 
 Tools that bring Jamstack to less technical users, while enabling developers to customize sites through modern tooling.
 
-- [Stackbit](https://www.stackbit.com/ 'Stackbit')
-- [Builder.io](https://www.builder.io/ 'Builder.io')
-- [CloudCannon](https://cloudcannon.com/ 'CloudCannon')
+-   [Stackbit](https://www.stackbit.com/ 'Stackbit')
+-   [Builder.io](https://www.builder.io/ 'Builder.io')
+-   [CloudCannon](https://cloudcannon.com/ 'CloudCannon')
 
 ---
 

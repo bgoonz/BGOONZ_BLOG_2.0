@@ -10,7 +10,6 @@ seo:
 template: docs
 ---
 
-
 <script async src="//jsfiddle.net/bgoonz/tu3Lw57r/embed/result/dark/"></script>
 
 <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    height="800px" width="1000px" scrolling="yes" title="Linear vs Binary Search" src="https://codepen.io/bgoonz/embed/MWbZoOa?default-tab=result&editable=true&theme-id=light"   frameborder="yes" loading="lazy"  allowfullscreen="true">

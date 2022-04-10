@@ -10,7 +10,6 @@ seo:
 template: docs
 ---
 
-
 ### Overview
 
 `REST` is a generally agreed-upon set of principles and constraints. They are **recommendations**, not a standard.
@@ -70,13 +69,13 @@ We can use a `JOIN` to combine query data from multiple tables using a single `S
 
 There are different types of joins; some are listed below:
 
-- <span id="9c7e">inner joins.</span>
-- <span id="7cd3">outer joins.</span>
-- <span id="96e6">left joins.</span>
-- <span id="0e55">right joins.</span>
-- <span id="d582">cross joins.</span>
-- <span id="6716">non-equality joins.</span>
-- <span id="b7f0">self joins.</span>
+-   <span id="9c7e">inner joins.</span>
+-   <span id="7cd3">outer joins.</span>
+-   <span id="96e6">left joins.</span>
+-   <span id="0e55">right joins.</span>
+-   <span id="d582">cross joins.</span>
+-   <span id="6716">non-equality joins.</span>
+-   <span id="b7f0">self joins.</span>
 
 Using `joins` requires that the two tables of interest contain at least one field with shared information. For example, if a _departments_ table has an _id_ field, and an employee table has a _department_id_ field, and the values that exist in the _id_ column of the _departments_ table live in the _department_id_ field of the employee table, we can use those fields to join both tables like so:
 
@@ -111,9 +110,9 @@ A good explanation of how the different types of joins can be seen <a href="http
 
 Use <a href="https://www.w3schools.com/Sql/tryit.asp?filename=trysql_select_top" class="markup--anchor markup--p-anchor">this online tool (Links to an external site.)</a> to write the following queries:
 
-- <span id="9ccf">list the products, including their category name.</span>
-- <span id="b07f">list the products, including the supplier name.</span>
-- <span id="7b08">list the products, including both the category name and supplier name.</span>
+-   <span id="9ccf">list the products, including their category name.</span>
+-   <span id="b07f">list the products, including the supplier name.</span>
+-   <span id="7b08">list the products, including both the category name and supplier name.</span>
 
 ### What is SQL Joins?
 
@@ -127,10 +126,10 @@ JOIN keeps the base tables (structure and data) unchanged.
 
 ### Join vs. Subquery
 
-- <span id="eeea">JOINs are faster than a subquery and it is very rare that the opposite.</span>
-- <span id="3b2e">In JOINs the RDBMS calculates an execution plan, that can predict, what data should be loaded and how much it will take to processed and as a result this process save some times, unlike the subquery there is no pre-process calculation and run all the queries and load all their data to do the processing.</span>
-- <span id="84ce">A JOIN is checked conditions first and then put it into table and displays; where as a subquery take separate temp table internally and checking condition.</span>
-- <span id="3002">When joins are using, there should be connection between two or more than two tables and each table has a relation with other while subquery means query inside another query, has no need to relation, it works on columns and conditions.</span>
+-   <span id="eeea">JOINs are faster than a subquery and it is very rare that the opposite.</span>
+-   <span id="3b2e">In JOINs the RDBMS calculates an execution plan, that can predict, what data should be loaded and how much it will take to processed and as a result this process save some times, unlike the subquery there is no pre-process calculation and run all the queries and load all their data to do the processing.</span>
+-   <span id="84ce">A JOIN is checked conditions first and then put it into table and displays; where as a subquery take separate temp table internally and checking condition.</span>
+-   <span id="3002">When joins are using, there should be connection between two or more than two tables and each table has a relation with other while subquery means query inside another query, has no need to relation, it works on columns and conditions.</span>
 
 ### SQL JOINS: EQUI JOIN and NON EQUI JOIN
 
@@ -219,10 +218,10 @@ Output:
 
 **JOINS: Relational Databases**
 
-- <span id="74c4"><a href="https://www.w3resource.com/oracle/joins/index.php" class="markup--anchor markup--li-anchor"><strong>Oracle JOINS</strong></a></span>
-- <span id="f8da"><a href="https://www.w3resource.com/mysql/advance-query-in-mysql/mysql-joins.php" class="markup--anchor markup--li-anchor"><strong>MySQL JOINS</strong></a></span>
-- <span id="33a5"><a href="https://www.w3resource.com/PostgreSQL/postgresql-join.php" class="markup--anchor markup--li-anchor"><strong>PostgreSQL JOINS</strong></a></span>
-- <span id="b578"><a href="https://www.w3resource.com/sqlite/sqlite-inner-join.php" class="markup--anchor markup--li-anchor"><strong>SQLite JOINS</strong></a></span>
+-   <span id="74c4"><a href="https://www.w3resource.com/oracle/joins/index.php" class="markup--anchor markup--li-anchor"><strong>Oracle JOINS</strong></a></span>
+-   <span id="f8da"><a href="https://www.w3resource.com/mysql/advance-query-in-mysql/mysql-joins.php" class="markup--anchor markup--li-anchor"><strong>MySQL JOINS</strong></a></span>
+-   <span id="33a5"><a href="https://www.w3resource.com/PostgreSQL/postgresql-join.php" class="markup--anchor markup--li-anchor"><strong>PostgreSQL JOINS</strong></a></span>
+-   <span id="b578"><a href="https://www.w3resource.com/sqlite/sqlite-inner-join.php" class="markup--anchor markup--li-anchor"><strong>SQLite JOINS</strong></a></span>
 
 **Key points to remember:**
 
@@ -232,51 +231,51 @@ _Click on the following to get the slides presentation -_
 
 **Practice SQL Exercises**
 
-- <span id="0765"><a href="https://www.w3resource.com/sql-exercises/index.php" class="markup--anchor markup--li-anchor"><strong>SQL Exercises, Practice, Solution</strong></a></span>
-- <span id="4cd9"><a href="https://www.w3resource.com/sql-exercises/sql-retrieve-from-table.php" class="markup--anchor markup--li-anchor"><strong>SQL Retrieve data from tables [33 Exercises]</strong></a></span>
-- <span id="7204"><a href="https://www.w3resource.com/sql-exercises/sql-boolean-operators.php" class="markup--anchor markup--li-anchor"><strong>SQL Boolean and Relational operators [12 Exercises]</strong></a></span>
-- <span id="3d4e"><a href="https://www.w3resource.com/sql-exercises/sql-wildcard-special-operators.php" class="markup--anchor markup--li-anchor"><strong>SQL Wildcard and Special operators [22 Exercises]</strong></a></span>
-- <span id="7afb"><a href="https://www.w3resource.com/sql-exercises/sql-aggregate-functions.php" class="markup--anchor markup--li-anchor"><strong>SQL Aggregate Functions [25 Exercises]</strong></a></span>
-- <span id="cc71"><a href="https://www.w3resource.com/sql-exercises/sql-fromatting-output-exercises.php" class="markup--anchor markup--li-anchor"><strong>SQL Formatting query output [10 Exercises]</strong></a></span>
-- <span id="77bf"><a href="https://www.w3resource.com/sql/joins/s/sql-exercises/ql-exercises-quering-on-multiple-table.php" class="markup--anchor markup--li-anchor"><strong>SQL Quering on Multiple Tables [7 Exercises]</strong></a></span>
-- <span id="0bc2"><a href="https://www.w3resource.com/sql-exercises/sorting-and-filtering-hr/index.php" class="markup--anchor markup--li-anchor"><strong>FILTERING and SORTING on HR Database [38 Exercises]</strong></a></span>
-- <span id="e28a">SQL JOINS</span>
-- <span id="84a2"><a href="https://www.w3resource.com/sql-exercises/sql-joins-exercises.php" class="markup--anchor markup--li-anchor"><strong>SQL JOINS [29 Exercises]</strong></a></span>
-- <span id="f97b"><a href="https://www.w3resource.com/sql-exercises/joins-hr/index.php" class="markup--anchor markup--li-anchor"><strong>SQL JOINS on HR Database [27 Exercises]</strong></a></span>
-- <span id="b33e">  
-- </span>
-- <span id="0983">SQL SUBQUERIES</span>
-- <span id="423b"><a href="https://www.w3resource.com/sql-exercises/subqueries/index.php" class="markup--anchor markup--li-anchor"><strong>SQL SUBQUERIES [39 Exercises]</strong></a></span>
-- <span id="a4d7"><a href="https
-- <span id="b63d">  
-- </span>
-- <span id="2c29"><a href="https://www.w3resource.com/sql-exercises/union/sql-union.php" class="markup--anchor markup--li-anchor"><strong>SQL Union[9 Exercises]</strong></a></span>
-- <span id="92c5"><a href="https://www.
-- <span id="d3e5"><a href="https://www.w3resource.com/sql-exercises/sql-user-management.php" class="markup--anchor markup--li-anchor"><strong>SQL User Account Management [16 Exercise]</strong></a></span>
-- <span id="e280">Movie Database</span>
-- <span id="5198"><a href="https://www.w3resource.com/sql-exercises/movie-database-exercise/basic-exercises-on-movie-database.php" class="markup--anchor markup--li-anchor"><strong>BASIC queries on movie Database [10 Exercises]</strong></a
-- <span id="ddd5"><a href="https
-- <span id="5363"><a href="https://www.w
-- <span id="b248">  
-- </span>
-- <span id="d5ba">Soccer Database</span>
-- <span id="a586"><a href="https://www.w3resource.com/sql-exercises/soccer-database-exercise/index.php" class="markup--anchor markup--li-anchor"><strong>Introduction</strong></a></span>
-- <span id="d585"><a href="https
-- <span id="b626"><a href="https://www.w3r
-- <span id="95e1"><a href="https://www.w3resource.com/sql-exercises/soccer-database-exercise/joins-exercises-on-soccer-database.php" class="markup--anchor markup--li-anchor"><strong>JOINS
-- <span id="05ba">  
-- </span>
-- <span id="2b7b">Hospital Database</span>
-- <span id="788d"><a href="https://www.w3resource.com/sql-exercises/hospital-database-exercise/index.php" class="markup--anchor markup--li-anchor"><strong>Introduction</strong></a></span>
-- <span id="0c32"><a href="https://www.w3resource.com/sql-exercises/hospital-database-exercise/sql-exercise-on-hospital-database.php" class="markup--anchor markup--li-anchor"><strong>BASIC, SUBQUERIES, and JOINS [39 Exercises]</strong></a></span>
-- <span id="228b">  
-- </span>
-- <span id="54d4">Employee Database</span>
-- <span id="c6fb"><a href="https://www.w3resource.com/sql-exercises/employee-database-exercise/index.php" class="markup--anchor markup--li-anchor"><strong>BASIC queries on employee Database [115 Exercises]</strong></a></span>
-- <span id="0419"><a href="https://www.w3resource.com/sql-exercises/employee-database-exercise/subqueries-exercises-on-employee-database.php" class="markup--anchor markup--li-anchor"><strong>SUBQUERIES on employee Database [77 Exercises]</strong></a></span>
-- <span id="cb3e">  
-    </span>
-- <span id="b3da">More to come!</span>
+-   <span id="0765"><a href="https://www.w3resource.com/sql-exercises/index.php" class="markup--anchor markup--li-anchor"><strong>SQL Exercises, Practice, Solution</strong></a></span>
+-   <span id="4cd9"><a href="https://www.w3resource.com/sql-exercises/sql-retrieve-from-table.php" class="markup--anchor markup--li-anchor"><strong>SQL Retrieve data from tables [33 Exercises]</strong></a></span>
+-   <span id="7204"><a href="https://www.w3resource.com/sql-exercises/sql-boolean-operators.php" class="markup--anchor markup--li-anchor"><strong>SQL Boolean and Relational operators [12 Exercises]</strong></a></span>
+-   <span id="3d4e"><a href="https://www.w3resource.com/sql-exercises/sql-wildcard-special-operators.php" class="markup--anchor markup--li-anchor"><strong>SQL Wildcard and Special operators [22 Exercises]</strong></a></span>
+-   <span id="7afb"><a href="https://www.w3resource.com/sql-exercises/sql-aggregate-functions.php" class="markup--anchor markup--li-anchor"><strong>SQL Aggregate Functions [25 Exercises]</strong></a></span>
+-   <span id="cc71"><a href="https://www.w3resource.com/sql-exercises/sql-fromatting-output-exercises.php" class="markup--anchor markup--li-anchor"><strong>SQL Formatting query output [10 Exercises]</strong></a></span>
+-   <span id="77bf"><a href="https://www.w3resource.com/sql/joins/s/sql-exercises/ql-exercises-quering-on-multiple-table.php" class="markup--anchor markup--li-anchor"><strong>SQL Quering on Multiple Tables [7 Exercises]</strong></a></span>
+-   <span id="0bc2"><a href="https://www.w3resource.com/sql-exercises/sorting-and-filtering-hr/index.php" class="markup--anchor markup--li-anchor"><strong>FILTERING and SORTING on HR Database [38 Exercises]</strong></a></span>
+-   <span id="e28a">SQL JOINS</span>
+-   <span id="84a2"><a href="https://www.w3resource.com/sql-exercises/sql-joins-exercises.php" class="markup--anchor markup--li-anchor"><strong>SQL JOINS [29 Exercises]</strong></a></span>
+-   <span id="f97b"><a href="https://www.w3resource.com/sql-exercises/joins-hr/index.php" class="markup--anchor markup--li-anchor"><strong>SQL JOINS on HR Database [27 Exercises]</strong></a></span>
+-   <span id="b33e">
+-   </span>
+-   <span id="0983">SQL SUBQUERIES</span>
+-   <span id="423b"><a href="https://www.w3resource.com/sql-exercises/subqueries/index.php" class="markup--anchor markup--li-anchor"><strong>SQL SUBQUERIES [39 Exercises]</strong></a></span>
+-   <span id="a4d7"><a href="https
+-   <span id="b63d">
+-   </span>
+-   <span id="2c29"><a href="https://www.w3resource.com/sql-exercises/union/sql-union.php" class="markup--anchor markup--li-anchor"><strong>SQL Union[9 Exercises]</strong></a></span>
+-   <span id="92c5"><a href="https://www.
+-   <span id="d3e5"><a href="https://www.w3resource.com/sql-exercises/sql-user-management.php" class="markup--anchor markup--li-anchor"><strong>SQL User Account Management [16 Exercise]</strong></a></span>
+-   <span id="e280">Movie Database</span>
+-   <span id="5198"><a href="https://www.w3resource.com/sql-exercises/movie-database-exercise/basic-exercises-on-movie-database.php" class="markup--anchor markup--li-anchor"><strong>BASIC queries on movie Database [10 Exercises]</strong></a
+-   <span id="ddd5"><a href="https
+-   <span id="5363"><a href="https://www.w
+-   <span id="b248">
+-   </span>
+-   <span id="d5ba">Soccer Database</span>
+-   <span id="a586"><a href="https://www.w3resource.com/sql-exercises/soccer-database-exercise/index.php" class="markup--anchor markup--li-anchor"><strong>Introduction</strong></a></span>
+-   <span id="d585"><a href="https
+-   <span id="b626"><a href="https://www.w3r
+-   <span id="95e1"><a href="https://www.w3resource.com/sql-exercises/soccer-database-exercise/joins-exercises-on-soccer-database.php" class="markup--anchor markup--li-anchor"><strong>JOINS
+-   <span id="05ba">
+-   </span>
+-   <span id="2b7b">Hospital Database</span>
+-   <span id="788d"><a href="https://www.w3resource.com/sql-exercises/hospital-database-exercise/index.php" class="markup--anchor markup--li-anchor"><strong>Introduction</strong></a></span>
+-   <span id="0c32"><a href="https://www.w3resource.com/sql-exercises/hospital-database-exercise/sql-exercise-on-hospital-database.php" class="markup--anchor markup--li-anchor"><strong>BASIC, SUBQUERIES, and JOINS [39 Exercises]</strong></a></span>
+-   <span id="228b">
+-   </span>
+-   <span id="54d4">Employee Database</span>
+-   <span id="c6fb"><a href="https://www.w3resource.com/sql-exercises/employee-database-exercise/index.php" class="markup--anchor markup--li-anchor"><strong>BASIC queries on employee Database [115 Exercises]</strong></a></span>
+-   <span id="0419"><a href="https://www.w3resource.com/sql-exercises/employee-database-exercise/subqueries-exercises-on-employee-database.php" class="markup--anchor markup--li-anchor"><strong>SUBQUERIES on employee Database [77 Exercises]</strong></a></span>
+-   <span id="cb3e">  
+      </span>
+-   <span id="b3da">More to come!</span>
 
 ### Objective 3 — write database access methods
 
@@ -395,11 +394,11 @@ It is declarative and concise, which means there is a lot less to learn to use i
 
 When learning SQL, it is helpful to understand that each command is designed for a different purpose. If we classify the commands by purpose, we'll end up with the following sub-categories of SQL:
 
-- <span id="aba8">**Data Definition Language (DDL)**: used to modify database objects. Some examples are: `CREATE TABLE`, `ALTER TABLE`, and `DROP TABLE`.</span>
-- <span id="4f3f">**Data Manipulation Language (DML)**: used to manipulate the data stored in the database. Some examples are: `INSERT`, `UPDATE`, and `DELETE`.</span>
-- <span id="e1f2">**Data Query Language (DQL)**: used to ask questions about the data stored in the database. The most commonly used SQL command is `SELECT`, and it falls in this category.</span>
-- <span id="4474">**Data Control Language (DCL)**: used to manage database security and user's access to data. These commands fall into the realm of Database Administrators. Some examples are `GRANT` and `REVOKE`.</span>
-- <span id="921b">**Transaction Control Commands**: used for managing groups of statements that must execute as a unit or not execute at all. Examples are `COMMIT` and `ROLLBACK`.</span>
+-   <span id="aba8">**Data Definition Language (DDL)**: used to modify database objects. Some examples are: `CREATE TABLE`, `ALTER TABLE`, and `DROP TABLE`.</span>
+-   <span id="4f3f">**Data Manipulation Language (DML)**: used to manipulate the data stored in the database. Some examples are: `INSERT`, `UPDATE`, and `DELETE`.</span>
+-   <span id="e1f2">**Data Query Language (DQL)**: used to ask questions about the data stored in the database. The most commonly used SQL command is `SELECT`, and it falls in this category.</span>
+-   <span id="4474">**Data Control Language (DCL)**: used to manage database security and user's access to data. These commands fall into the realm of Database Administrators. Some examples are `GRANT` and `REVOKE`.</span>
+-   <span id="921b">**Transaction Control Commands**: used for managing groups of statements that must execute as a unit or not execute at all. Examples are `COMMIT` and `ROLLBACK`.</span>
 
 As a developer, you'll need to get familiar with DDL and become proficient using DML and DQL. This lesson will cover only DML and DQL commands.
 
@@ -734,9 +733,9 @@ Note that while schema design is usually left to Database Administrators (DBAs),
 
 When designing a single table, we need to ask three things:
 
-- <span id="2e1a">What fields (or columns) are present?</span>
-- <span id="52e7">What type of data do we expect for each field?</span>
-- <span id="8aff">Are there other restrictions needed for each column?</span>
+-   <span id="2e1a">What fields (or columns) are present?</span>
+-   <span id="52e7">What type of data do we expect for each field?</span>
+-   <span id="8aff">Are there other restrictions needed for each column?</span>
 
 Looking at the following schema diagram for an `accounts` table, we can the answer to each other those questions:
 
@@ -752,11 +751,11 @@ However, this is one requirement every table should satisfy: a **primary key**. 
 
 Each field must also have a specified datatype. The datatype available depends on our DBMS. Some supported datatype in SQLite include:
 
-- <span id="92fb">**Null:** Missing or unknown information.</span>
-- <span id="32ef">**Integer:** Whole numbers.</span>
-- <span id="181d">**Real:** Any number, including decimals.</span>
-- <span id="ebce">**Text:** Character data.</span>
-- <span id="c00e">**Blob:** a large binary object that can be used to store miscellaneous data.</span>
+-   <span id="92fb">**Null:** Missing or unknown information.</span>
+-   <span id="32ef">**Integer:** Whole numbers.</span>
+-   <span id="181d">**Real:** Any number, including decimals.</span>
+-   <span id="ebce">**Text:** Character data.</span>
+-   <span id="c00e">**Blob:** a large binary object that can be used to store miscellaneous data.</span>
 
 Any data inserted into the table must match the datatypes determined in schema design.
 
@@ -764,10 +763,10 @@ Any data inserted into the table must match the datatypes determined in schema d
 
 Beyond datatypes, we may add additional **constraints** on each field. Some examples include:
 
-- <span id="14ca">**Not Null:** The field cannot be left empty</span>
-- <span id="b533">**Unique:** No two records can have the same value in this field</span>
-- <span id="f0c4">**Primary key:** — Indicates this field is the primary key. Both the not null and unique constraints will be enforced.</span>
-- <span id="f116">**Default:** — Sets a default value if none is provided.</span>
+-   <span id="14ca">**Not Null:** The field cannot be left empty</span>
+-   <span id="b533">**Unique:** No two records can have the same value in this field</span>
+-   <span id="f0c4">**Primary key:** — Indicates this field is the primary key. Both the not null and unique constraints will be enforced.</span>
+-   <span id="f116">**Default:** — Sets a default value if none is provided.</span>
 
 As with data types, any data that does not satisfy the schema constraints will be rejected from the database.
 
@@ -1145,13 +1144,13 @@ We can use a `JOIN` to combine query data from multiple tables using a single `S
 
 There are different types of joins; some are listed below:
 
-- <span id="d886">inner joins.</span>
-- <span id="43f5">outer joins.</span>
-- <span id="882e">left joins.</span>
-- <span id="ad86">right joins.</span>
-- <span id="4d8b">cross joins.</span>
-- <span id="eb21">non-equality joins.</span>
-- <span id="fc6a">self joins.</span>
+-   <span id="d886">inner joins.</span>
+-   <span id="43f5">outer joins.</span>
+-   <span id="882e">left joins.</span>
+-   <span id="ad86">right joins.</span>
+-   <span id="4d8b">cross joins.</span>
+-   <span id="eb21">non-equality joins.</span>
+-   <span id="fc6a">self joins.</span>
 
 Using `joins` requires that the two tables of interest contain at least one field with shared information. For example, if a _departments_ table has an _id_ field, and an employee table has a _department_id_ field, and the values that exist in the _id_ column of the _departments_ table live in the _department_id_ field of the employee table, we can use those fields to join both tables like so:
 
@@ -1194,10 +1193,10 @@ JOIN keeps the base tables (structure and data) unchanged.
 
 ### Join vs. Subquery
 
-- <span id="6fdc">JOINs are faster than a subquery and it is very rare that the opposite.</span>
-- <span id="c648">In JOINs the RDBMS calculates an execution plan, that can predict, what data should be loaded and how much it will take to processed and as a result this process save some times, unlike the subquery there is no pre-process calculation and run all the queries and load all their data to do the processing.</span>
-- <span id="d59c">A JOIN is checked conditions first and then put it into table and displays; where as a subquery take separate temp table internally and checking condition.</span>
-- <span id="08ff">When joins are using, there should be connection between two or more than two tables and each table has a relation with other while subquery means query inside another query, has no need to relation, it works on columns and conditions.</span>
+-   <span id="6fdc">JOINs are faster than a subquery and it is very rare that the opposite.</span>
+-   <span id="c648">In JOINs the RDBMS calculates an execution plan, that can predict, what data should be loaded and how much it will take to processed and as a result this process save some times, unlike the subquery there is no pre-process calculation and run all the queries and load all their data to do the processing.</span>
+-   <span id="d59c">A JOIN is checked conditions first and then put it into table and displays; where as a subquery take separate temp table internally and checking condition.</span>
+-   <span id="08ff">When joins are using, there should be connection between two or more than two tables and each table has a relation with other while subquery means query inside another query, has no need to relation, it works on columns and conditions.</span>
 
 ### SQL JOINS: EQUI JOIN and NON EQUI JOIN
 
@@ -1443,9 +1442,9 @@ The `farm_id` is the foreign key that links `farms` and `projections` together.
 
 Notes about one-to-one relationships:
 
-- <span id="198d">The foreign key should always have a `unique` constraint to prevent duplicate entries. In the example above, we wouldn't want to allow multiple projections records for one farm.</span>
-- <span id="25c6">The foreign key can be in either table. For example, we may have had a `projection_id` in the `farms` table instead. A good rule of thumb is to put the foreign key in whichever table is more auxiliary to the other.</span>
-- <span id="960d">You can represent one-to-one data in a single table _without_ creating anomalies. However, it is sometimes prudent to use two tables as shown above to keep separate concerns in separate tables.</span>
+-   <span id="198d">The foreign key should always have a `unique` constraint to prevent duplicate entries. In the example above, we wouldn't want to allow multiple projections records for one farm.</span>
+-   <span id="25c6">The foreign key can be in either table. For example, we may have had a `projection_id` in the `farms` table instead. A good rule of thumb is to put the foreign key in whichever table is more auxiliary to the other.</span>
+-   <span id="960d">You can represent one-to-one data in a single table _without_ creating anomalies. However, it is sometimes prudent to use two tables as shown above to keep separate concerns in separate tables.</span>
 
 ### One to Many Relationships
 
@@ -1455,9 +1454,9 @@ This is called a **one-to-many** relationship.
 
 This is the most common type of relationship between entities. Some other examples:
 
-- <span id="5627">One `customer` can have many `orders`.</span>
-- <span id="cc42">One `user` can have many `posts`.</span>
-- <span id="dae3">One `post` can have many `comments`.</span>
+-   <span id="5627">One `customer` can have many `orders`.</span>
+-   <span id="cc42">One `user` can have many `posts`.</span>
+-   <span id="dae3">One `post` can have many `comments`.</span>
 
 Manage this type of relationship by adding a foreign key on the "many" table of the relationship that points to the primary key on the "one" table. Consider the `farms` and `ranchers` tables.
 
@@ -1473,8 +1472,8 @@ If we want to track animals on a farm as well, we must explore the **many-to-man
 
 Some other examples:
 
-- <span id="d757">an `order` can have many `products` and the same `product` will appear in many `orders`.</span>
-- <span id="0256">a `book` can have more than one `author`, and an `author` can write more than one `book`.</span>
+-   <span id="d757">an `order` can have many `products` and the same `product` will appear in many `orders`.</span>
+-   <span id="0256">a `book` can have more than one `author`, and an `author` can write more than one `book`.</span>
 
 To model this relationship, we need to introduce an **intermediary table** that holds foreign keys that reference the primary key on the related tables. We now have a `farms`, `animals`, and `farm_animals` table.
 

@@ -35,7 +35,6 @@ seo:
 template: docs
 ---
 
-
 # Fundamental Data Structures In JavaScript
 
 <br>
@@ -74,99 +73,99 @@ Here's the repo that the website is built on:
 
 ### Videos
 
-- [Abdul Bari: YouTubeChannel for Algorithms](https://www.youtube.com/watch?v=0IAPZzGSbME&list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O&index=2&t=0s)
+-   [Abdul Bari: YouTubeChannel for Algorithms](https://www.youtube.com/watch?v=0IAPZzGSbME&list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O&index=2&t=0s)
 
 <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    width="1000px" height="800px" src="https://www.youtube.com/embed/0IAPZzGSbME"   allowfullscreen></iframe>
 
-- [Data Structures and algorithms](https://www.youtube.com/watch?v=lxja8wBwN0k&list=PLKKfKV1b9e8ps6dD3QA5KFfHdiWj9cB1s)
+-   [Data Structures and algorithms](https://www.youtube.com/watch?v=lxja8wBwN0k&list=PLKKfKV1b9e8ps6dD3QA5KFfHdiWj9cB1s)
 
 <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    width="1000px" height="800px" src="https://www.youtube.com/embed/lxja8wBwN0k"   allowfullscreen></iframe>
 
-- [Data Structures and algorithms Course](https://www.youtube.com/playlist?list=PLmGElG-9wxc9Us6IK6Qy-KHlG_F3IS6Q9)
+-   [Data Structures and algorithms Course](https://www.youtube.com/playlist?list=PLmGElG-9wxc9Us6IK6Qy-KHlG_F3IS6Q9)
 
 <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    width="1000px" height="800px" src="https://www.youtube.com/embed/videoseries?list=PLmGElG-9wxc9Us6IK6Qy-KHlG_F3IS6Q9"   allowfullscreen></iframe>
 
-- [Khan Academy](https://www.khanacademy.org/computing/computer-science/algorithms)
+-   [Khan Academy](https://www.khanacademy.org/computing/computer-science/algorithms)
 
 <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    width="714" height="401" src="https://www.youtube.com/embed/CvSOaYi89B4"   allowfullscreen></iframe>
 
-- [Data structures by mycodeschool](https://www.youtube.com/playlist?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P)Pre-requisite for this lesson is good understanding of pointers in C.
+-   [Data structures by mycodeschool](https://www.youtube.com/playlist?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P)Pre-requisite for this lesson is good understanding of pointers in C.
 
 <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    width="1000px" height="800px" src="https://www.youtube.com/embed/videoseries?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P"   allowfullscreen></iframe>
 
-- [MIT 6.006: Intro to Algorithms(2011)](https://www.youtube.com/watch?v=HtSuA80QTyo&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
+-   [MIT 6.006: Intro to Algorithms(2011)](https://www.youtube.com/watch?v=HtSuA80QTyo&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
 
 <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    width="1000px" height="800px" src="https://www.youtube.com/embed/HtSuA80QTyo"   allowfullscreen></iframe>
 
-- [Data Structures and Algorithms by Codewithharry](https://www.youtube.com/watch?v=5_5oE5lgrhw&list=PLu0W_9lII9ahIappRPN0MCAgtOu3lQjQi)
+-   [Data Structures and Algorithms by Codewithharry](https://www.youtube.com/watch?v=5_5oE5lgrhw&list=PLu0W_9lII9ahIappRPN0MCAgtOu3lQjQi)
 
 <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    width="1000px" height="800px" src="https://www.youtube.com/embed/5_5oE5lgrhw"   allowfullscreen></iframe>
 
 ### Books
 
-- [Introduction to Algorithms](https://edutechlearners.com/download/Introduction_to_algorithms-3rd%20Edition.pdf) by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein
+-   [Introduction to Algorithms](https://edutechlearners.com/download/Introduction_to_algorithms-3rd%20Edition.pdf) by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein
 
-- [Competitive Programming 3](http://www.sso.sy/sites/default/files/competitive%20programming%203_1.pdf) by Steven Halim and Felix Halim
+-   [Competitive Programming 3](http://www.sso.sy/sites/default/files/competitive%20programming%203_1.pdf) by Steven Halim and Felix Halim
 
-- [Competitive Programmers Hand Book](https://cses.fi/book/book.pdf) Beginner friendly hand book for competitive programmers.
+-   [Competitive Programmers Hand Book](https://cses.fi/book/book.pdf) Beginner friendly hand book for competitive programmers.
 
-- [Data Structures and Algorithms Made Easy](https://github.com/Amchuz/My-Data-Structures-and-Algorithms-Resources/raw/master/Books/Data%20Structures%20and%20Algorithms%20-%20Narasimha%20Karumanchi.pdf) by Narasimha Karumanchi
+-   [Data Structures and Algorithms Made Easy](https://github.com/Amchuz/My-Data-Structures-and-Algorithms-Resources/raw/master/Books/Data%20Structures%20and%20Algorithms%20-%20Narasimha%20Karumanchi.pdf) by Narasimha Karumanchi
 
-- [Learning Algorithms Through Programming and Puzzle Solving](https://github.com/Amchuz/My-Data-Structures-and-Algorithms-Resources/raw/master/Books/Learning%20Algorithms%20Through%20Programming%20and%20Puzzle%20Solving.pdf) by Alexander Kulikov and Pavel Pevzner
+-   [Learning Algorithms Through Programming and Puzzle Solving](https://github.com/Amchuz/My-Data-Structures-and-Algorithms-Resources/raw/master/Books/Learning%20Algorithms%20Through%20Programming%20and%20Puzzle%20Solving.pdf) by Alexander Kulikov and Pavel Pevzner
 
 ### Coding practice
 
-- [LeetCode](https://leetcode.com/)
+-   [LeetCode](https://leetcode.com/)
 
-- [InterviewBit](https://www.interviewbit.com/)
+-   [InterviewBit](https://www.interviewbit.com/)
 
-- [Codility](https://codility.com/)
+-   [Codility](https://codility.com/)
 
-- [HackerRank](https://www.hackerrank.com/)
+-   [HackerRank](https://www.hackerrank.com/)
 
-- [Project Euler](https://projecteuler.net/)
+-   [Project Euler](https://projecteuler.net/)
 
-- [Spoj](https://spoj.com/)
+-   [Spoj](https://spoj.com/)
 
-- [Google Code Jam practice problems](https://code.google.com/codejam/contests.html)
+-   [Google Code Jam practice problems](https://code.google.com/codejam/contests.html)
 
-- [HackerEarth](https://www.hackerearth.com/)
+-   [HackerEarth](https://www.hackerearth.com/)
 
-- [Top Coder](https://www.topcoder.com/)
+-   [Top Coder](https://www.topcoder.com/)
 
-- [CodeChef](https://www.codechef.com/)
+-   [CodeChef](https://www.codechef.com/)
 
-- [Codewars](https://www.codewars.com/)
+-   [Codewars](https://www.codewars.com/)
 
-- [CodeSignal](https://codesignal.com/)
+-   [CodeSignal](https://codesignal.com/)
 
-- [CodeKata](http://codekata.com/)
+-   [CodeKata](http://codekata.com/)
 
-- [Firecode](https://www.firecode.io/)
+-   [Firecode](https://www.firecode.io/)
 
 ### Courses
 
-- [Master the Coding Interview: Big Tech (FAANG) Interviews](https://academy.zerotomastery.io/p/master-the-coding-interview-faang-interview-prep) Course by Andrei and his team.
+-   [Master the Coding Interview: Big Tech (FAANG) Interviews](https://academy.zerotomastery.io/p/master-the-coding-interview-faang-interview-prep) Course by Andrei and his team.
 
-- [Common Python Data Structures](https://realpython.com/python-data-structures) Data structures are the fundamental constructs around which you build your programs. Each data structure provides a particular way of organizing data so it can be accessed efficiently, depending on your use case. Python ships with an extensive set of data structures in its standard library.
+-   [Common Python Data Structures](https://realpython.com/python-data-structures) Data structures are the fundamental constructs around which you build your programs. Each data structure provides a particular way of organizing data so it can be accessed efficiently, depending on your use case. Python ships with an extensive set of data structures in its standard library.
 
-- [Fork CPP](https://www.geeksforgeeks.org/fork-cpp-course-structure) A good course for beginners.
+-   [Fork CPP](https://www.geeksforgeeks.org/fork-cpp-course-structure) A good course for beginners.
 
-- [EDU](https://codeforces.com/edu/course/2) Advanced course.
+-   [EDU](https://codeforces.com/edu/course/2) Advanced course.
 
-- [C++ For Programmers](https://www.udacity.com/course/c-for-programmers--ud210) Learn features and constructs for C++.
+-   [C++ For Programmers](https://www.udacity.com/course/c-for-programmers--ud210) Learn features and constructs for C++.
 
 ### Guides
 
-- [GeeksForGeeks — A CS portal for geeks](http://www.geeksforgeeks.org/)
+-   [GeeksForGeeks — A CS portal for geeks](http://www.geeksforgeeks.org/)
 
-- [Learneroo — Algorithms](https://www.learneroo.com/subjects/8)
+-   [Learneroo — Algorithms](https://www.learneroo.com/subjects/8)
 
-- [Top Coder tutorials](http://www.topcoder.com/tc?d1=tutorials&d2=alg_index&module=Static)
+-   [Top Coder tutorials](http://www.topcoder.com/tc?d1=tutorials&d2=alg_index&module=Static)
 
-- [Infoarena training path](http://www.infoarena.ro/training-path) (RO)
+-   [Infoarena training path](http://www.infoarena.ro/training-path) (RO)
 
-- Steven & Felix Halim — [Increasing the Lower Bound of Programming Contests](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=118) (UVA Online Judge)
+-   Steven & Felix Halim — [Increasing the Lower Bound of Programming Contests](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=118) (UVA Online Judge)
 
 ## **_space_**
 
@@ -184,11 +183,11 @@ Here's the repo that the website is built on:
 
 > _Something that data structure and algorithms have in common when talking about time complexity is that they are both dealing with data. When you deal with data you become dependent on them and as a result the time complexity is also dependent of the data that you received. To solve this problem we talk about 3 different time complexity._
 
-- **The best-case complexity: when the data looks the best**
-- 
-- **The worst-case complexity: when the data looks the worst**
+-   **The best-case complexity: when the data looks the best**
+-
+-   **The worst-case complexity: when the data looks the worst**
 
-- **The average-case complexity: when the data looks average**
+-   **The average-case complexity: when the data looks average**
 
 ## Big O notation
 
@@ -471,7 +470,7 @@ Complexity
 Average
 Access Search Insertion Deletion
 
-- O(1) O(1) O(1)
+-   O(1) O(1) O(1)
     > _The code_
 
 Note, here I am storing another object for every hash in my Hash Table.
@@ -643,15 +642,12 @@ Complexity
 Average
 Access Search Insertion Deletion
 
-- O(n) O(n) O(n)
+-   O(n) O(n) O(n)
     > _The code_
 
 ---
 
-
 ```js
-
-
 function Set() {
     this.values = [];
     this.numberOfValues = 0;
@@ -763,10 +759,7 @@ O(n) O(n) O(1) O(1)
 
 ---
 
-
 ```js
-
-
 function Node(data) {
     this.data = data;
     this.next = null;
@@ -1408,7 +1401,7 @@ Graph
 
     //below uses the adjacency list representation.
 
-```js
+````js
         function Graph() {
           this.vertices = [];
           this.edges = [];
@@ -1565,4 +1558,4 @@ Graph
         console.log('graph size (number of vertices):', graph.size()); // => 5
         console.log('graph relations (number of edges):', graph.relations()); // => 4
         console.log('path from 6 to 1:', graph.pathFromTo(6, 1)); // => 6-4-3-2-1
-```
+````

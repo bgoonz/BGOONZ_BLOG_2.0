@@ -10,7 +10,6 @@ seo:
 template: docs
 ---
 
-
 **If you're maintaining a dataset that frequently has to be updated in a predictable and consistent manner, automating that process has obvious benefits. It might cost some time to set up the code to automate the work, but you'll likely save time in the long run. And, if you're like me, writing the code will be less mind-numbing than repeatedly updating the same spreadsheet over and over again!**![](https://miro.medium.com/max/30/1*5RtrFThuAvHiqxxwPp5Ptg.png?q=20)
 
 ![](https://miro.medium.com/max/709/1*5RtrFThuAvHiqxxwPp5Ptg.png)

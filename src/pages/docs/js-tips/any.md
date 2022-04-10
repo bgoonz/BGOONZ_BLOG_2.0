@@ -11,7 +11,6 @@ seo:
 template: docs
 ---
 
-
 # Promise.any()
 
 `Promise.any()` takes an iterable of [`Promise`](../promise) objects and, as soon as one of the promises in the iterable fulfills, returns a single promise that resolves with the value from that promise. If no promises in the iterable fulfill (if all of the given promises are rejected), then the returned promise is rejected with an [`AggregateError`](../aggregateerror), a new subclass of [`Error`](../error) that groups together individual errors. Essentially, this method is the opposite of [`Promise.all()`](all).
@@ -27,9 +26,9 @@ An [iterable](../../iteration_protocols#the_iterable_protocol) object, such as a
 
 ### Return value
 
-- An **already rejected** [`Promise`](../promise) if the iterable passed is empty.
-- An **asynchronously resolved** [`Promise`](../promise) if the iterable passed contains no promises.
-- A **pending** [`Promise`](../promise) in all other cases. This returned promise is then resolved/rejected **asynchronously** (as soon as the stack is empty) when any of the promises in the given iterable resolve, or if all the promises have rejected.
+-   An **already rejected** [`Promise`](../promise) if the iterable passed is empty.
+-   An **asynchronously resolved** [`Promise`](../promise) if the iterable passed contains no promises.
+-   A **pending** [`Promise`](../promise) in all other cases. This returned promise is then resolved/rejected **asynchronously** (as soon as the stack is empty) when any of the promises in the given iterable resolve, or if all the promises have rejected.
 
 ## Description
 
@@ -41,13 +40,13 @@ Also, unlike [`Promise.race()`](race), which returns the first _settled_ value (
 
 The returned promise is fulfilled with **the first** resolved value (or non-promise value) in the iterable passed as the argument, whether or not the other promises have rejected.
 
-- If a nonempty _iterable_ is passed, and **any** of the promises fulfill, or are not promises, then the promise returned by this method is fulfilled asynchronously.
+-   If a nonempty _iterable_ is passed, and **any** of the promises fulfill, or are not promises, then the promise returned by this method is fulfilled asynchronously.
 
 ### Rejection
 
 If all of the passed-in promises reject, `Promise.any` asynchronously rejects with an [`AggregateError`](../aggregateerror) object, which extends [`Error`](../error), and contains an `errors` property with an array of rejection values.
 
-- If an empty iterable is passed, then the promise returned by this method is rejected synchronously. The rejected reason is an `AggregateError` object whose `errors` property is an empty array.
+-   If an empty iterable is passed, then the promise returned by this method is rejected synchronously. The rejected reason is an `AggregateError` object whose `errors` property is an empty array.
 
 ## Examples
 

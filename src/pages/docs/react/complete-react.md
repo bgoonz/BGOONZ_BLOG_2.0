@@ -17,8 +17,6 @@ template: docs
 [An introduction to React](https://www.freecodecamp.org/news/the-react-handbook-b71c27b0a795/#an-introduction-to-the-react-view-library)  
 [How to use create-react-app](https://www.freecodecamp.org/news/the-react-handbook-b71c27b0a795/#how-to-use-create-react-app)
 
-
-
 -   [Variables](https://www.freecodecamp.org/news/the-react-handbook-b71c27b0a795/#variables)
 -   [Arrow functions](https://www.freecodecamp.org/news/the-react-handbook-b71c27b0a795/#arrow-functions)
 -   [Rest and spread](https://www.freecodecamp.org/news/the-react-handbook-b71c27b0a795/#rest-and-spread)
@@ -30,7 +28,7 @@ template: docs
 -   [Async/Await](https://www.freecodecamp.org/news/the-react-handbook-b71c27b0a795/#async-await)
 -   [ES Modules](https://www.freecodecamp.org/news/the-react-handbook-b71c27b0a795/#es-modules)
 
-****SECTION 2****: REACT CONCEPTS
+\***\*SECTION 2\*\***: REACT CONCEPTS
 
 -   [Single Page Applications](https://www.freecodecamp.org/news/the-react-handbook-b71c27b0a795/#single-page-applications)
 -   [Declarative](https://www.freecodecamp.org/news/the-react-handbook-b71c27b0a795/#declarative)
@@ -40,7 +38,7 @@ template: docs
 -   [The Virtual DOM](https://www.freecodecamp.org/news/the-react-handbook-b71c27b0a795/#the-virtual-dom)
 -   [Unidirectional Data Flow](https://www.freecodecamp.org/news/the-react-handbook-b71c27b0a795/#unidirectional-data-flow)
 
-****SECTION 3****: IN-DEPTH REACT
+\***\*SECTION 3\*\***: IN-DEPTH REACT
 
 -   [JSX](https://www.freecodecamp.org/news/the-react-handbook-b71c27b0a795/#jsx)
 -   [Components](https://www.freecodecamp.org/news/the-react-handbook-b71c27b0a795/#components)
@@ -61,28 +59,28 @@ template: docs
 -   [Hooks](https://www.freecodecamp.org/news/the-react-handbook-b71c27b0a795/#hooks)
 -   [Code splitting](https://www.freecodecamp.org/news/the-react-handbook-b71c27b0a795/#code-splitting)
 
-****SECTION 4****: PRACTICAL EXAMPLES
+\***\*SECTION 4\*\***: PRACTICAL EXAMPLES
 
 -   [Build a simple counter](https://www.freecodecamp.org/news/the-react-handbook-b71c27b0a795/#build-a-simple-counter)
 -   [Fetch and display GitHub users information via API](https://www.freecodecamp.org/news/the-react-handbook-b71c27b0a795/#fetch-and-display-github-users-information-via-api)
 
-****SECTION 5****: STYLING
+\***\*SECTION 5\*\***: STYLING
 
 -   [CSS in React](https://www.freecodecamp.org/news/the-react-handbook-b71c27b0a795/#css-in-react)
 -   [SASS in React](https://www.freecodecamp.org/news/the-react-handbook-b71c27b0a795/#sass-in-react)
 -   [Styled Components](https://www.freecodecamp.org/news/the-react-handbook-b71c27b0a795/#styled-components)
 
-****SECTION 6****: TOOLING
+\***\*SECTION 6\*\***: TOOLING
 
 -   [Babel](https://www.freecodecamp.org/news/the-react-handbook-b71c27b0a795/#babel)
 -   [Webpack](https://www.freecodecamp.org/news/the-react-handbook-b71c27b0a795/#webpack)
 
-****SECTION 7****: TESTING
+\***\*SECTION 7\*\***: TESTING
 
 -   [Jest](https://www.freecodecamp.org/news/the-react-handbook-b71c27b0a795/#jest)
 -   [Testing React components](https://www.freecodecamp.org/news/the-react-handbook-b71c27b0a795/#testing-react-components)
 
-****SECTION 8****: THE REACT ECOSYSTEM
+\***\*SECTION 8\*\***: THE REACT ECOSYSTEM
 
 -   [React Router](https://www.freecodecamp.org/news/the-react-handbook-b71c27b0a795/#react-router)
 -   [Redux](https://www.freecodecamp.org/news/the-react-handbook-b71c27b0a795/#redux)
@@ -719,7 +717,7 @@ class Person {
   constructor(name) {
     this.name = name
   }
-  
+
   hello() {
     return 'Hello, I am ' + this.name + '.'
   }
@@ -791,11 +789,11 @@ class Person {
   constructor(name) {
     this.name = name
   }
-  
+
   set name(value) {
     this.name = value
   }
-  
+
   get name() {
     return this.name
   }
@@ -809,7 +807,7 @@ class Person {
   constructor(name) {
     this.name = name
   }
-  
+
   get name() {
     return this.name
   }
@@ -823,7 +821,7 @@ class Person {
   constructor(name) {
     this.name = name
   }
-  
+
   set name(value) {
     this.name = value
   }
@@ -919,7 +917,7 @@ fs.readFile('/file.json', (err, data) => {
     console.log(err)
     return
   }
-  
+
   //no errors, process data
   console.log(data)
 })
@@ -1652,7 +1650,7 @@ const Container = () => {
   const onClickHandler = () => {
     alert('clicked')
   }
-  
+
   return <LoginButton onClickHandler={onClickHandler} />
 }
 ```
@@ -2181,7 +2179,7 @@ React makes it very simple: everything is a component.
 
 Even plain HTML tags are component on their own, and they are added by default.
 
-The next 2 lines are equivalent, they do the same thing. One with ****JSX****, one without, by injecting `<h1>Hello World!</h1>` into an element with id `app`.
+The next 2 lines are equivalent, they do the same thing. One with \***\*JSX\*\***, one without, by injecting `<h1>Hello World!</h1>` into an element with id `app`.
 
 ```
 import React from 'react'
@@ -2270,7 +2268,7 @@ class BlogPostExcerpt extends Component {
     super(props)
     this.state = { clicked: false }
   }
-  
+
   render() {
     return (
       <div>
@@ -2292,7 +2290,7 @@ class BlogPostExcerpt extends Component {
     super(props)
     this.state = { clicked: false }
   }
-  
+
   render() {
     return (
       <div>
@@ -2347,7 +2345,7 @@ class Converter extends React.Component {
     super(props)
     this.state = { currency: '€' }
   }
-  
+
   render() {
     return (
       <div>
@@ -2367,11 +2365,11 @@ class Converter extends React.Component {
     super(props)
     this.state = { currency: '€' }
   }
-  
+
   handleChangeCurrency = event => {
     this.setState({ currency: this.state.currency === '€' ? '$' : '€' })
   }
-  
+
   render() {
     return (
       <div>
@@ -2518,13 +2516,13 @@ class UsersContainer extends React.Component {
       users: []
     }
   }
-  
+
   componentDidMount() {
     axios.get('/users').then(users =>
       this.setState({ users: users }))
     )
   }
-  
+
   render() {
     return <Users users={this.state.users} />
   }
@@ -3019,9 +3017,9 @@ class Form extends React.Component {
     super(props)
     this.state = { username: '' }
   }
-  
+
   handleChange(event) {}
-  
+
   render() {
     return (
       <form>
@@ -3046,11 +3044,11 @@ class Form extends React.Component {
     this.state = { username: '' }
     this.handleChange = this.handleChange.bind(this)
   }
-  
+
   handleChange(event) {
     this.setState({ value: event.target.value })
   }
-  
+
   render() {
     return (
       <form>
@@ -3075,16 +3073,16 @@ class Form extends React.Component {
     this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
   }
-  
+
   handleChange(event) {
     this.setState({ value: event.target.value })
   }
-  
+
   handleSubmit(event) {
     alert(this.state.username)
     event.preventDefault()
   }
-  
+
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
@@ -3130,12 +3128,12 @@ class FileInput extends React.Component {
     this.curriculum = React.createRef()
     this.handleSubmit = this.handleSubmit.bind(this)
   }
-  
+
   handleSubmit(event) {
     alert(this.curriculum.current.files[0].name)
     event.preventDefault()
   }
-  
+
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
@@ -3375,7 +3373,7 @@ class Container extends React.Component {
       something: 'hey'
     }
   }
-  
+
   render() {
     return (
       <Provider value={{ state: this.state }}>{this.props.children}</Provider>
@@ -3516,7 +3514,7 @@ class Parent extends React.Component {
       /*...*/
     }
   }
-  
+
   render() {
     return <div>{this.props.children}</div>
   }
@@ -3544,7 +3542,7 @@ class Parent extends React.Component {
     super(props)
     this.state = { name: 'Flavio' }
   }
-  
+
   render() {
     return <div>{this.props.children(this.state.name)}</div>
   }
@@ -3565,7 +3563,7 @@ class Parent extends React.Component {
     super(props)
     this.state = { name: 'Flavio', age: 35 }
   }
-  
+
   render() {
     return (
       <div>
@@ -3614,7 +3612,7 @@ import { useState } from 'react'
 
 const Counter = () => {
   const [count, setCount] = useState(0)
-  
+
   return (
     <div>
       <p>You clicked {count} times</p>
@@ -3648,11 +3646,11 @@ const { useEffect, useState } = React
 const CounterWithNameAndSideEffect = () => {
   const [count, setCount] = useState(0)
   const [name, setName] = useState('Flavio')
-  
+
   useEffect(() => {
     console.log(`Hi ${name} you clicked ${count} times`)
   })
-  
+
   return (
     <div>
       <p>
@@ -3887,7 +3885,7 @@ const Button = ({ increment }) => {
 
 const App = () => {
   let count = 0
-  
+
   return (
     <div>
       <Button increment={1} />
@@ -3914,11 +3912,11 @@ const Button = ({ increment, onClickFunction }) => {
 
 const App = () => {
   let count = 0
-  
+
   const incrementCount = increment => {
     //TODO
   }
-  
+
   return (
     <div>
       <Button increment={1} onClickFunction={incrementCount} />
@@ -3951,11 +3949,11 @@ const Button = ({ increment, onClickFunction }) => {
 
 const App = () => {
   const [count, setCount] = useState(0)
-  
+
   const incrementCount = increment => {
     setCount(count + increment)
   }
-  
+
   return (
     <div>
       <Button increment={1} onClickFunction={incrementCount} />
@@ -4023,7 +4021,7 @@ The parent component is App, which stores the `cards` array in its own state, ma
 ```
 const App = () => {
   const [cards, setCards] = useState([])
-  
+
   return (
     <div>
       <CardList cards={cards} />
@@ -4037,16 +4035,16 @@ Cool! We must have a way now to ask GitHub for the details of a single username.
 ```
 const Form = props => {
   const [username, setUsername] = useState('')
-  
+
   handleSubmit = event => {
     event.preventDefault()
-    
+
     axios.get(`https://api.github.com/users/${username}`).then(resp => {
       props.onSubmit(resp.data)
       setUsername('')
     })
   }
-  
+
   return (
     <form onSubmit={handleSubmit}>
       <input
@@ -4069,11 +4067,11 @@ We add it to `App`, passing a method to add a new card to the list of cards, `ad
 ```
 const App = () => {
   const [cards, setCards] = useState([])
-  
+
   addNewCard = cardInfo => {
     setCards(cards.concat(cardInfo))
   }
-  
+
   return (
     <div>
       <Form onSubmit={addNewCard} />
@@ -4110,10 +4108,10 @@ const CardList = props => <div>{props.cards.map(card => <Card {...card} />)}</di
 
 const Form = props => {
   const [username, setUsername] = useState('')
-  
+
   handleSubmit = event => {
     event.preventDefault()
-    
+
     axios
       .get(`https://api.github.com/users/${username}`)
       .then(resp => {
@@ -4121,7 +4119,7 @@ const Form = props => {
         setUsername('')
       })
   }
-  
+
   return (
     <form onSubmit={handleSubmit}>
       <input
@@ -4138,11 +4136,11 @@ const Form = props => {
 
 const App = () => {
   const [cards, setCards] = useState([])
-  
+
   addNewCard = cardInfo => {
     setCards(cards.concat(cardInfo))
   }
-  
+
   return (
     <div>
       <Form onSubmit={addNewCard} />
@@ -4511,7 +4509,7 @@ var bob = {
   _friends: ["Sally", "Tom"],
   printFriends() {
     var _this = this;
-    
+
     this._friends.forEach(function (f) {
       return console.log(_this._name + " knows " + f);
     });
@@ -5346,7 +5344,7 @@ describe('second set', () => {
   })
   test(/*...*/)
   test(/*...*/)
-}) 
+})
 ```
 
 #### Testing asynchronous code
@@ -5488,7 +5486,7 @@ const mathjs = require('mathjs')
 test(`The mathjs log function`, () => {
   const spy = jest.spyOn(mathjs, 'log')
   const result = mathjs.log(10000, 10)
-  
+
   expect(mathjs.log).toHaveBeenCalled()
   expect(mathjs.log).toHaveBeenCalledWith(10000, 10)
 })
@@ -5664,11 +5662,11 @@ import Button from './Button'
 
 const App = () => {
   const [count, setCount] = useState(0)
-  
+
   const incrementCount = increment => {
     setCount(count + increment)
   }
-  
+
   return (
     <div>
       <Button increment={1} onClickFunction={incrementCount} />
@@ -5769,12 +5767,12 @@ test('App works', () => {
   const { container } = render(<App />)
   console.log(container)
   const buttons = container.querySelectorAll('button')
-  
+
   expect(buttons[0].textContent).toBe('+1')
   expect(buttons[1].textContent).toBe('+10')
   expect(buttons[2].textContent).toBe('+100')
   expect(buttons[3].textContent).toBe('+1000')
-  
+
   const result = container.querySelector('span')
   expect(result.textContent).toBe('0')
   fireEvent.click(buttons[0])
@@ -5934,7 +5932,7 @@ ReactDOM.render(
         <Link to={`/`}>Dashboard</Link>
         <Link to={`/about`}>About</Link>
       </aside>
-      
+
       <main>
         <Route exact path="/" component={Dashboard} />
         <Route path="/about" component={About} />

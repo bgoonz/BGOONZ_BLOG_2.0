@@ -12,7 +12,6 @@ versions of the examples.'
 template: docs
 ---
 
-
 # Rules
 
 This document contains a description of all rules, what they are checking for,
@@ -1087,12 +1086,14 @@ improperly-indented code block (or similar) appears between two list items and
 
 <!-- markdownlint-disable code-fence-style -->
 
-```markdown
+````markdown
 1. First list
 
 ```text
 Code block
 ```
+````
+
 ```
 
 1. Second list
@@ -1102,7 +1103,7 @@ Code block
 The fix is to indent the code block so it becomes part of the preceding list
 item as intended:
 
-```markdown
+````markdown
 1. First list
 
     ```text
@@ -1110,7 +1111,7 @@ item as intended:
     ```
 
 2. Still first list
-```
+````
 
 <!-- markdownlint-restore -->
 
@@ -1585,23 +1586,26 @@ echo Hello world
 
 To fix this, add a language specifier to the code block:
 
-```markdown
+````markdown
 ```bash
 #!/bin/bash
 echo Hello world
 ```
-```
+````
 
 ```
 
 ```
+
+````
 
 To display a code block without syntax highlighting, use:
 
 ```markdown
 ```text
 Plain text in a code block
-```
+````
+
 ```
 
 ```
@@ -1900,10 +1904,12 @@ Parameters: style ("consistent", "tilde", "backtick"; default "consistent")
 This rule is triggered when the symbols used in the document for fenced code
 blocks do not match the configured code fence style:
 
-```markdown
+````markdown
 ```ruby
 # Fenced code
 ```
+````
+
 ```
 
 ```
@@ -1912,7 +1918,7 @@ blocks do not match the configured code fence style:
 # Fenced code
 ```
 
-```
+````
 
 To fix this issue, use the configured code fence style throughout the
 document:
@@ -1920,7 +1926,7 @@ document:
 ```markdown
 ```ruby
 # Fenced code
-```
+````
 
 ```ruby
 # Fenced code

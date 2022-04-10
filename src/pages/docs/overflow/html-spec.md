@@ -10,7 +10,6 @@ seo:
 template: docs
 ---
 
-
 ## HTML SPEC
 
 [File an issue about the selected text](https://github.com/whatwg/html/issues/new)

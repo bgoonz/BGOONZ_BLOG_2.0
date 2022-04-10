@@ -10,7 +10,6 @@ seo:
 template: docs
 ---
 
-
 Javascript has a native method **[sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)** that allows sorting arrays. Doing a simple `array.sort()` will treat each array entry as a string and sort it alphabetically. Also you can provide your [own custom sorting](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#Parameters) function.
 
 ```js
@@ -60,7 +59,7 @@ Fortunately, there are two ways to overcome this behavior [localeCompare](https:
 // ["Wann", "wäre", "Woche", "wöchentlich"]
 ```
 
-- For each method you can customize the location.
-- According to [Firefox](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare#Performance) Intl.Collator is faster when comparing large numbers of strings.
+-   For each method you can customize the location.
+-   According to [Firefox](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare#Performance) Intl.Collator is faster when comparing large numbers of strings.
 
 So when you are working with arrays of strings in a language other than English, remember to use this method to avoid unexpected sorting.

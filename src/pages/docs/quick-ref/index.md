@@ -25,7 +25,6 @@ seo:
 template: docs
 ---
 
-
 # Quick Reference
 
 <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://cheatsheets-42.netlify.app/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>

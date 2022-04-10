@@ -11,21 +11,20 @@ seo:
 template: docs
 ---
 
-
 # POJOs
 
 ## 1. Label variables as either Primitive vs. Reference
 
 Javascript considers most data types to be ‘primitive', these data types are immutable, and are passed by value. The more complex data types: Array and Object are mutable, are considered ‘reference' data types, and are passed by reference.
 
-- <span id="6f83">Boolean — Primitive</span>
-- <span id="6556">Null — Primitive</span>
-- <span id="0048">Undefined — Primitive</span>
-- <span id="8dec">Number — Primitive</span>
-- <span id="684c">String — Primitive</span>
-- <span id="41c1">Array — Reference</span>
-- <span id="9371">Object — Reference</span>
-- <span id="64c8">Function — Reference</span>
+-   <span id="6f83">Boolean — Primitive</span>
+-   <span id="6556">Null — Primitive</span>
+-   <span id="0048">Undefined — Primitive</span>
+-   <span id="8dec">Number — Primitive</span>
+-   <span id="684c">String — Primitive</span>
+-   <span id="41c1">Array — Reference</span>
+-   <span id="9371">Object — Reference</span>
+-   <span id="64c8">Function — Reference</span>
 
 #### 2. Identify when to use . vs \[\] when accessing values of an object
 
@@ -194,25 +193,25 @@ Javascript considers most data types to be ‘primitive', these data types are i
 
     var a = "a";
 
-- <span id="2dba">`var` is the historical keyword used for variable declaration.</span>
-- <span id="50d3">`var` declares variables in function scope, or global scope if not inside a function.</span>
-- <span id="4bc8">We consider `var` to be deprecated and it is never used in this course.</span>
+-   <span id="2dba">`var` is the historical keyword used for variable declaration.</span>
+-   <span id="50d3">`var` declares variables in function scope, or global scope if not inside a function.</span>
+-   <span id="4bc8">We consider `var` to be deprecated and it is never used in this course.</span>
 
 <!-- -->
 
     let b = "b";
 
-- <span id="8bab">`let` is the keyword we use most often for variable declaration.</span>
-- <span id="0642">`let` declares variables in block scope.</span>
-- <span id="bf7b">variables declared with `let` are re-assignable.</span>
+-   <span id="8bab">`let` is the keyword we use most often for variable declaration.</span>
+-   <span id="0642">`let` declares variables in block scope.</span>
+-   <span id="bf7b">variables declared with `let` are re-assignable.</span>
 
 <!-- -->
 
     const c = "c";
 
-- <span id="e199">`const` is a specialized form of `let` that can only be used to **initialize** a variable.</span>
-- <span id="4522">Except when it is declared, you cannot assign to a `const` variable.</span>
-- <span id="4e5a">`const` scopes variables the same way that `let` does.</span>
+-   <span id="e199">`const` is a specialized form of `let` that can only be used to **initialize** a variable.</span>
+-   <span id="4522">Except when it is declared, you cannot assign to a `const` variable.</span>
+-   <span id="4e5a">`const` scopes variables the same way that `let` does.</span>
 
 #### 3. Predict the evaluation of code that utilizes function scope, block scope, lexical scope, and scope chaining
 
@@ -6022,3 +6021,4 @@ We could now use`Promise.all()` to wait for all the Promises in the array to be 
     }
 
 both examples will only work if they are within functions declared async; a `for/await` loop is no different than a regular await expression in that way
+```

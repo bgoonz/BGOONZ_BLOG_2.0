@@ -10,7 +10,6 @@ seo:
 template: docs
 ---
 
-
 # What is THIS
 
 # What is `this`?
@@ -31,10 +30,7 @@ Given the following function:
 
 ---
 
-
 ```js
-
-
 function foo() {
     console.log(this);
 }
@@ -95,7 +91,7 @@ console.log(this === window); // trueCode language: JavaScript (javascript)
 If you assign a property to `this` object in the global context, JavaScript will add the property to the global object as shown in the following example:
 
 ```js
-this.color= 'Red';
+this.color = 'Red';
 console.log(window.color); // 'Red'Code language: JavaScript (javascript)
 ```
 
@@ -103,10 +99,10 @@ console.log(window.color); // 'Red'Code language: JavaScript (javascript)
 
 In JavaScript, you can call a [function](https://www.javascripttutorial.net/javascript-function/) in the following ways:
 
-- Function invocation
-- Method invocation
-- Constructor invocation
-- Indirect invocation
+-   Function invocation
+-   Method invocation
+-   Constructor invocation
+-   Indirect invocation
 
 Each function invocation defines its own context. Therefore, the `this` behaves differently.
 
@@ -115,7 +111,6 @@ Each function invocation defines its own context. Therefore, the `this` behaves 
 In the non-strict mode, the `this` references the global object when the function is called as follows:
 
 ---
-
 
 ```js
 
@@ -153,7 +148,6 @@ Note that the strict mode has been available since ECMAScript 5.1. The `strict` 
 
 ---
 
-
 ```js
 
 
@@ -189,7 +183,7 @@ let car = {
     getBrand: function () {
         return this.brand;
     }
-}
+};
 
 console.log(car.getBrand()); // HondaCode language: JavaScript (javascript)
 ```
@@ -252,7 +246,6 @@ The following example declares a `Car` function, then invokes it as a constructo
 
 ---
 
-
 ```js
 
 
@@ -286,7 +279,6 @@ To make sure that the `Car()` function is always invoked using constructor invoc
 
 ---
 
-
 ```js
 
 
@@ -303,7 +295,6 @@ ES6 introduced a meta-property named [`new.target`](https://www.javascripttutori
 You can modify the `Car()` function that uses the `new.target` metaproperty as follows:
 
 ---
-
 
 ```js
 
@@ -323,7 +314,6 @@ In JavaScript, [functions are first-class citizens](https://www.javascripttutori
 The `Function` type has two methods: `[call()](https://www.javascripttutorial.net/javascript-call/)` and `[apply()](https://www.javascripttutorial.net/javascript-apply-method/)` . These methods allow you to set the `this` value when calling a function. For example:
 
 ---
-
 
 ```js
 
@@ -350,7 +340,7 @@ It's a Honda
 It's an AudiCode language: PHP (php)
 ```
 
-In this example, we called the `getBrand()` function indirectly using the `call()` method of the `getBrand` function. We passed `honda` and  `audi` object as the first argument of the `call()` method, therefore, we got the corresponding brand in each call.
+In this example, we called the `getBrand()` function indirectly using the `call()` method of the `getBrand` function. We passed `honda` and `audi` object as the first argument of the `call()` method, therefore, we got the corresponding brand in each call.
 
 The `apply()` method is similar to the `call()` method except that its second argument is an array of arguments.
 
@@ -376,17 +366,14 @@ Since an arrow function does not create its own execution context, defining a me
 
 ---
 
-
 ```js
-
-
 function Car() {
     this.speed = 120;
 }
 
 Car.prototype.getSpeed = () => {
     return this.speed;
-}
+};
 
 var car = new Car();
 car.getSpeed(); // TypeErrorCode language: JavaScript (javascript)

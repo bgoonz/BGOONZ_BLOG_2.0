@@ -11,7 +11,6 @@ seo:
 template: docs
 ---
 
-
 # Regular Expressions
 
 description:
@@ -34,11 +33,11 @@ You construct a regular expression in one of two ways:
 
 `let re = /ab+c/;`
 
-- <span id="f4e2">Regular expression literals provide compilation of the regular expression when the script is loaded. If the regular expression remains constant, using this can improve performance.</span>
+-   <span id="f4e2">Regular expression literals provide compilation of the regular expression when the script is loaded. If the regular expression remains constant, using this can improve performance.</span>
 
 **2. Or calling the constructor function of the** `RegExp` **object, as follows:**
 
-- <span id="2016">`let re = new RegExp('ab+c');`</span>
+-   <span id="2016">`let re = new RegExp('ab+c');`</span>
 
 > _Using the constructor function provides runtime compilation of the regular expression_. Use the constructor function when you know the regular expression pattern will be changing, or you don't know the pattern and are getting it from another source, such as user input.
 
@@ -356,4 +355,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/regular-expressions-4d8fb3eb146b" class="p-canonical">Canonical link</a>
 
- August 17, 2021.
+August 17, 2021.

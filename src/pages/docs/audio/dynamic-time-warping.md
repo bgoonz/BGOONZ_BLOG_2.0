@@ -10,7 +10,6 @@ seo:
 template: docs
 ---
 
-
 # Dynamic Time Warping Triggered Guitar Effects Project:
 
 # DTW Algorithm:

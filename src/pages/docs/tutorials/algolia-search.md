@@ -11,7 +11,6 @@ seo:
 template: docs
 ---
 
-
 # Algolia Full Text Search
 
 ## Aside: Selecting A Searc Engine

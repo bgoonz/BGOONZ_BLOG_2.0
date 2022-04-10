@@ -10,7 +10,6 @@ seo:
 template: docs
 ---
 
-
 ## Android[](https://nodejs.org/en/download/package-manager/#android)
 
 Android support is still experimental in Node.js, so precompiled binaries are not yet provided by Node.js developers.

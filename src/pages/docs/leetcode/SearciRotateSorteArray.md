@@ -11,7 +11,6 @@ seo:
 template: docs
 ---
 
-
 ## [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/description/)
 
 ### Problem:
@@ -52,8 +51,8 @@ But take a closer look and we realize that only one of the two halves needs to b
 
 Whenever we choose a pivot, it must be in one of the two sorted parts of the rotated array.
 
-- If the pivot is in the left part. We know that the begin of the left part to the pivot are sorted.
-- Otherwise the pivot is in the right part. We know that the end of the right part to the pivot are sorted.
+-   If the pivot is in the left part. We know that the begin of the left part to the pivot are sorted.
+-   Otherwise the pivot is in the right part. We know that the end of the right part to the pivot are sorted.
 
 ```js
 /**

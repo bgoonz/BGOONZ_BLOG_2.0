@@ -11,7 +11,6 @@ seo:
 template: docs
 ---
 
-
 # import
 
 The static `import` statement is used to import read only live bindings which are [exported](export) by another module.
@@ -142,11 +141,11 @@ When importing a default export with [dynamic imports](#dynamic_imports), it wor
 
 The standard import syntax is static and will always result in all code in the imported module being evaluated at load time. In situations where you wish to load a module conditionally or on demand, you can use a dynamic import instead. The following are some reasons why you might need to use dynamic import:
 
-- When importing statically significantly slows the loading of your code and there is a low likelihood that you will need the code you are importing, or you will not need it until a later time.
-- When importing statically significantly increases your program's memory usage and there is a low likelihood that you will need the code you are importing.
-- When the module you are importing does not exist at load time
-- When the import specifier string needs to be constructed dynamically. (Static import only supports static specifiers.)
-- When the module being imported has side effects, and you do not want those side effects unless some condition is true. (It is recommended not to have any side effects in a module, but you sometimes cannot control this in your module dependencies.)
+-   When importing statically significantly slows the loading of your code and there is a low likelihood that you will need the code you are importing, or you will not need it until a later time.
+-   When importing statically significantly increases your program's memory usage and there is a low likelihood that you will need the code you are importing.
+-   When the module you are importing does not exist at load time
+-   When the import specifier string needs to be constructed dynamically. (Static import only supports static specifiers.)
+-   When the module being imported has side effects, and you do not want those side effects unless some condition is true. (It is recommended not to have any side effects in a module, but you sometimes cannot control this in your module dependencies.)
 
 Use dynamic import only when necessary. The static form is preferable for loading initial dependencies, and can benefit more readily from static analysis tools and [tree shaking](https://developer.mozilla.org/en-US/docs/Glossary/Tree_shaking).
 

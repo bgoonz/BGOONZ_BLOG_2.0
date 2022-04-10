@@ -10,7 +10,6 @@ seo:
 template: docs
 ---
 
-
 # Objects in JavaScript:
 
 ## Everything else besides primitive data type values is an _object_.
@@ -60,10 +59,10 @@ value will always be converted to a **string**.
 
 ES2015 adds two extensions to object values and object literals:
 
-- _Symbols_ are can be used as property names. They are not converted to
+-   _Symbols_ are can be used as property names. They are not converted to
     strings.
 
-- Object literals can contain _[computed property names][computed properties]_:
+-   Object literals can contain _[computed property names][computed properties]_:
     ```js
     var foo = 42;
     var obj = {

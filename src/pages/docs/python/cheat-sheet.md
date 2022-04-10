@@ -18,7 +18,6 @@ seo:
 template: docs
 ---
 
-
 ## Lorem ipsum
 
 # Python Cheat Sheet

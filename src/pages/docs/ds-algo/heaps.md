@@ -10,7 +10,6 @@ seo:
 template: docs
 ---
 
-
 # What is heap data structure
 
 Heap is one efficient implementation of an abstract data structure called a [priority queue](https://learnersbucket.com/tutorials/data-structures/priority-queue-implementation-in-javascript).
@@ -23,8 +22,7 @@ Heap is one efficient implementation of an abstract data structure called a [pri
 
 <summary> Click To Learn About Priority Queues </summary>
 
-What is priority queue?
------------------------
+## What is priority queue?
 
 As queues are widely used in computer programming and in real lives as well, there was a need for some different models of original [queue data structure](https://learnersbucket.com/tutorials/algorithms/queue-implementation-in-javascript) to process the data more efficiently.
 
@@ -38,8 +36,7 @@ In India elderly or women get priority over young and men at many places like in
 
 ![Priority queue in javascript](https://i0.wp.com/learnersbucket.com/wp-content/uploads/2019/09/ezgif.com-optimize-2.gif?resize=600%2C338&ssl=1)
 
-Why do we need priority queue?
-------------------------------
+## Why do we need priority queue?
 
 It is used when we have to choose between the same values who have different priorities or weight.
 
@@ -50,8 +47,7 @@ It is used when we have to choose between the same values who have different pri
 
 Now I am sure that you have a good idea about priority queue, so let us start implementing it in javascript.
 
-List of operations performed on priority queue
-----------------------------------------------
+## List of operations performed on priority queue
 
 -   enqueue(): Adds an item at the tail of the queue.
 -   dequeue(): Removes an item from the head of the queue.
@@ -67,12 +63,11 @@ There are two ways of implementing a priority queue.
 
 We will be using the first approach as we just have to place the elements at the appropriate place and then it can be dequeued normally.
 
-Implementing a priority queue in javascript
--------------------------------------------
+## Implementing a priority queue in javascript
 
 We will use an extra function (container) which will be storing the value and its priority.
 
-function  PriorityQueue(){  let items =  [];  //Container  function  QueueElement(element, priority){  this.element = element;  this.priority = priority;  }  //Other methods go here  }
+function PriorityQueue(){ let items = []; //Container function QueueElement(element, priority){ this.element = element; this.priority = priority; } //Other methods go here }
 
 ---
 
@@ -84,73 +79,70 @@ We will iterate each element that is already present in the queue and compare th
 
 To add elements at specific index we will need to shift the remaining elements back, But [javascript array] has an inbuilt method for this `splice(index, count, element)` which we will be using.
 
-//Add a new element in queue  this.enqueue =  function(element, priority){  let queueElement =  new  QueueElement(element, priority);  //To check if element is added  let added =  false;  for(let i =  0; i < items.length; i++){  //We are using giving priority to higher numbers  //If new element has more priority then add it at that place  if(queueElement.priority > items[i].priority){ items.splice(i,  0, queueElement);  //Mark the flag true added =  true;  break;  }  }  //If element is not added  //Then add it to the end of the queue  if(!added){ items.push(queueElement);  }  }
+//Add a new element in queue this.enqueue = function(element, priority){ let queueElement = new QueueElement(element, priority); //To check if element is added let added = false; for(let i = 0; i < items.length; i++){ //We are using giving priority to higher numbers //If new element has more priority then add it at that place if(queueElement.priority > items[i].priority){ items.splice(i, 0, queueElement); //Mark the flag true added = true; break; } } //If element is not added //Then add it to the end of the queue if(!added){ items.push(queueElement); } }
 
 ---
 
 ### Remove an item from the priority queue
 
-//Remove element from the queue  this.dequeue =  ()  =>  {  return items.shift();  }
+//Remove element from the queue this.dequeue = () => { return items.shift(); }
 
 ---
 
 ### Return the first element from the priority queue
 
-//Return the first element from the queue  this.front =  ()  =>  {  return items[0];  }
+//Return the first element from the queue this.front = () => { return items[0]; }
 
 ---
 
 ### Return the last element from the priority queue
 
-//Return the last element from the queue  this.rear =  ()  =>  {  return items[items.length -  1];  }
+//Return the last element from the queue this.rear = () => { return items[items.length - 1]; }
 
 ---
 
 ### Check if queue is empty
 
-//Check if queue is empty  this.isEmpty =  ()  =>  {  return items.length ==  0;  }
+//Check if queue is empty this.isEmpty = () => { return items.length == 0; }
 
 ---
 
 ### Return the size of the queue
 
-//Return the size of the queue  this.size =  ()  =>  {  return items.length;  }
+//Return the size of the queue this.size = () => { return items.length; }
 
 ---
 
 ### Print the queue
 
-//Print the queue  this.print  =  function(){  for(let i =  0; i < items.length; i++){ console.log(`${items[i].element} - ${items[i].priority}`);  }  }
+//Print the queue this.print = function(){ for(let i = 0; i < items.length; i++){ console.log(`${items[i].element} - ${items[i].priority}`); } }
 
 ---
 
-Complete code of the priority queue
-------------------------------------
+## Complete code of the priority queue
 
-function  PriorityQueue(){  let items =  [];  //Container  function  QueueElement(element, priority){  this.element = element;  this.priority = priority;  }  //Add a new element in queue  this.enqueue =  function(element, priority){  let queueElement =  new  QueueElement(element, priority);  //To check if element is added  let added =  false;  for(let i =  0; i < items.length; i++){  //We are using giving priority to higher numbers  //If new element has more priority then add it at that place  if(queueElement.priority > items[i].priority){ items.splice(i,  0, queueElement);  //Mark the flag true added =  true;  break;  }  }  //If element is not added  //Then add it to the end of the queue  if(!added){ items.push(queueElement);  }  }  //Remove element from the queue  this.dequeue =  ()  =>  {  return items.shift();  }  //Return the first element from the queue  this.front =  ()  =>  {  return items[0];  }  //Return the last element from the queue  this.rear =  ()  =>  {  return items[items.length -  1];  }  //Check if queue is empty  this.isEmpty =  ()  =>  {  return items.length ==  0;  }  //Return the size of the queue  this.size =  ()  =>  {  return items.length;  }  //Print the queue  this.print  =  function(){  for(let i =  0; i < items.length; i++){ console.log(`${items[i].element} - ${items[i].priority}`);  }  }  }
+function PriorityQueue(){ let items = []; //Container function QueueElement(element, priority){ this.element = element; this.priority = priority; } //Add a new element in queue this.enqueue = function(element, priority){ let queueElement = new QueueElement(element, priority); //To check if element is added let added = false; for(let i = 0; i < items.length; i++){ //We are using giving priority to higher numbers //If new element has more priority then add it at that place if(queueElement.priority > items[i].priority){ items.splice(i, 0, queueElement); //Mark the flag true added = true; break; } } //If element is not added //Then add it to the end of the queue if(!added){ items.push(queueElement); } } //Remove element from the queue this.dequeue = () => { return items.shift(); } //Return the first element from the queue this.front = () => { return items[0]; } //Return the last element from the queue this.rear = () => { return items[items.length - 1]; } //Check if queue is empty this.isEmpty = () => { return items.length == 0; } //Return the size of the queue this.size = () => { return items.length; } //Print the queue this.print = function(){ for(let i = 0; i < items.length; i++){ console.log(`${items[i].element} - ${items[i].priority}`); } } }
 
-Input:  let pQ =  new  PriorityQueue(); pQ.enqueue(1,  3); pQ.enqueue(5,  2); pQ.enqueue(6,  1); pQ.enqueue(11,  1); pQ.enqueue(13,  1); pQ.enqueue(10,  3); pQ.dequeue(); pQ.print();  Output:  "10 - 3"  "5 - 2"  "6 - 1"  "11 - 1"  "13 - 1"
-
----
-
-ES6 class based implementation of priority queue
--------------------------------------------------
-
-//Container  class  QueueElement{  constructor(element, priority){  this.element = element;  this.priority = priority;  }  }  //PriorityQueue  class  PriorityQueue{  constructor(){  this.items =  [];  }  //Add a new element in queue enqueue =  function(element, priority){  let queueElement =  new  QueueElement(element, priority);  //To check if element is added  let added =  false;  for(let i =  0; i <  this.items.length; i++){  //We are using giving priority to higher numbers  //If new element has more priority then add it at that place  if(queueElement.priority >  this.items[i].priority){  this.items.splice(i,  0, queueElement);  //Mark the flag true added =  true;  break;  }  }  //If element is not added  //Then add it to the end of the queue  if(!added){  this.items.push(queueElement);  }  }  //Remove element from the queue dequeue =  function(){  return  this.items.shift();  }  //Return the first element from the queue front =  function(){  return  this.items[0];  }  //Return the last element from the queue rear =  function(){  return  this.items[this.items.length -  1];  }  //Check if queue is empty isEmpty =  function(){  return  this.items.length ==  0;  }  //Return the size of the queue size =  function(){  return  this.items.length;  }  //Print the queue  print  =  function(){  for(let i =  0; i <  this.items.length; i++){ console.log(`${this.items[i].element} - ${this.items[i].priority}`);  }  }  }
-
-Input:  let pQ =  new  PriorityQueue(); pQ.enqueue(1,  3); pQ.enqueue(5,  2); pQ.enqueue(6,  1); pQ.enqueue(11,  1); pQ.enqueue(13,  1); pQ.enqueue(10,  3); pQ.dequeue(); pQ.print();  Output:  "10 - 3"  "5 - 2"  "6 - 1"  "11 - 1"  "13 - 1"
+Input: let pQ = new PriorityQueue(); pQ.enqueue(1, 3); pQ.enqueue(5, 2); pQ.enqueue(6, 1); pQ.enqueue(11, 1); pQ.enqueue(13, 1); pQ.enqueue(10, 3); pQ.dequeue(); pQ.print(); Output: "10 - 3" "5 - 2" "6 - 1" "11 - 1" "13 - 1"
 
 ---
 
-Making this class private with closure and IIFE
-------------------------------------------------
+## ES6 class based implementation of priority queue
 
-let  PriorityQueue  =  (function(){  //Container  class  QueueElement{  constructor(element, priority){  this.element = element;  this.priority = priority;  }  }  //PriorityQueue  return  class  PriorityQueue{  constructor(){  this.items =  [];  }  //Add a new element in queue enqueue =  function(element, priority){  let queueElement =  new  QueueElement(element, priority);  //To check if element is added  let added =  false;  for(let i =  0; i <  this.items.length; i++){  //We are using giving priority to higher numbers  //If new element has more priority then add it at that place  if(queueElement.priority >  this.items[i].priority){  this.items.splice(i,  0, queueElement);  //Mark the flag true added =  true;  break;  }  }  //If element is not added  //Then add it to the end of the queue  if(!added){  this.items.push(queueElement);  }  }  //Remove element from the queue dequeue =  function(){  return  this.items.shift();  }  //Return the first element from the queue front =  function(){  return  this.items[0];  }  //Return the last element from the queue rear =  function(){  return  this.items[this.items.length -  1];  }  //Check if queue is empty isEmpty =  function(){  return  this.items.length ==  0;  }  //Return the size of the queue size =  function(){  return  this.items.length;  }  //Print the queue  print  =  function(){  for(let i =  0; i <  this.items.length; i++){ console.log(`${this.items[i].element} - ${this.items[i].priority}`);  }  }  }  }());
+//Container class QueueElement{ constructor(element, priority){ this.element = element; this.priority = priority; } } //PriorityQueue class PriorityQueue{ constructor(){ this.items = []; } //Add a new element in queue enqueue = function(element, priority){ let queueElement = new QueueElement(element, priority); //To check if element is added let added = false; for(let i = 0; i < this.items.length; i++){ //We are using giving priority to higher numbers //If new element has more priority then add it at that place if(queueElement.priority > this.items[i].priority){ this.items.splice(i, 0, queueElement); //Mark the flag true added = true; break; } } //If element is not added //Then add it to the end of the queue if(!added){ this.items.push(queueElement); } } //Remove element from the queue dequeue = function(){ return this.items.shift(); } //Return the first element from the queue front = function(){ return this.items[0]; } //Return the last element from the queue rear = function(){ return this.items[this.items.length - 1]; } //Check if queue is empty isEmpty = function(){ return this.items.length == 0; } //Return the size of the queue size = function(){ return this.items.length; } //Print the queue print = function(){ for(let i = 0; i < this.items.length; i++){ console.log(`${this.items[i].element} - ${this.items[i].priority}`); } } }
+
+Input: let pQ = new PriorityQueue(); pQ.enqueue(1, 3); pQ.enqueue(5, 2); pQ.enqueue(6, 1); pQ.enqueue(11, 1); pQ.enqueue(13, 1); pQ.enqueue(10, 3); pQ.dequeue(); pQ.print(); Output: "10 - 3" "5 - 2" "6 - 1" "11 - 1" "13 - 1"
+
+---
+
+## Making this class private with closure and IIFE
+
+let PriorityQueue = (function(){ //Container class QueueElement{ constructor(element, priority){ this.element = element; this.priority = priority; } } //PriorityQueue return class PriorityQueue{ constructor(){ this.items = []; } //Add a new element in queue enqueue = function(element, priority){ let queueElement = new QueueElement(element, priority); //To check if element is added let added = false; for(let i = 0; i < this.items.length; i++){ //We are using giving priority to higher numbers //If new element has more priority then add it at that place if(queueElement.priority > this.items[i].priority){ this.items.splice(i, 0, queueElement); //Mark the flag true added = true; break; } } //If element is not added //Then add it to the end of the queue if(!added){ this.items.push(queueElement); } } //Remove element from the queue dequeue = function(){ return this.items.shift(); } //Return the first element from the queue front = function(){ return this.items[0]; } //Return the last element from the queue rear = function(){ return this.items[this.items.length - 1]; } //Check if queue is empty isEmpty = function(){ return this.items.length == 0; } //Return the size of the queue size = function(){ return this.items.length; } //Print the queue print = function(){ for(let i = 0; i < this.items.length; i++){ console.log(`${this.items[i].element} - ${this.items[i].priority}`); } } } }());
 
 #### Time Complexity
 
 | #       | Access | Search | Insert | Delete |
-|---------|--------|--------|--------|--------|
+| ------- | ------ | ------ | ------ | ------ |
 | Average | Θ(N)   | Θ(N)   | Θ(N)   | Θ(1)   |
 | Worst   | O(N)   | O(N)   | O(N)   | O(1)   |
 
@@ -159,12 +151,10 @@ let  PriorityQueue  =  (function(){  //Container  class  QueueElement{  construc
 #### Space Complexity
 
 | #     | space |
-|-------|-------|
+| ----- | ----- |
 | Worst | O(N)  |
 
 </details>
-
-
 
 In a heap, the highest (or lowest) priority element is always stored at the root, thus priority queue is often referred to as heaps irrespective of their implementation.
 
@@ -179,7 +169,7 @@ A binary heap is basically a binary tree with two additional properties.
 
 ![Max and Min heap](https://i0.wp.com/learnersbucket.com/wp-content/uploads/2020/10/max-and-min-heap-1.png?resize=768%2C500&ssl=1)
 
-___
+---
 
 ## List of operations performed on binary heap
 
@@ -193,7 +183,7 @@ ___
 -   **isEmpty**: Is heap empty or not?.
 -   **getList**: Get the heap as an array.
 
-___
+---
 
 ## Implementing binary heap data structure in Javascript
 
@@ -204,14 +194,14 @@ If the index of any element in the array is `i`, the element in the index `2i+1`
 Thus we can create the binary heap using an array rather than using a tree.
 
 ```js
-function BinaryHeap(){
-  let list = [];
-  
-  //other operations will go here.
+function BinaryHeap() {
+    let list = [];
+
+    //other operations will go here.
 }
 ```
 
-___
+---
 
 ### Heapify
 
@@ -232,27 +222,27 @@ In the case of a complete tree, the first index of a non-leaf node is given by `
 
     //If left child is smaller than root
      if (l < n && arr[l] > arr[largest]) {
-           largest = l; 
+           largest = l;
      }
 
-     // If right child is smaller than smallest so far 
+     // If right child is smaller than smallest so far
      if (r < n && arr[r] > arr[largest]) {
-          largest = r; 
+          largest = r;
      }
 
-     // If smallest is not root 
-     if (largest != i) { 
-          let temp = arr[i]; 
-          arr[i] = arr[largest]; 
-          arr[largest] = temp; 
+     // If smallest is not root
+     if (largest != i) {
+          let temp = arr[i];
+          arr[i] = arr[largest];
+          arr[largest] = temp;
 
-        // Recursively heapify the affected sub-tree 
-        this.maxHeapify(arr, n, largest); 
-      } 
+        // Recursively heapify the affected sub-tree
+        this.maxHeapify(arr, n, largest);
+      }
   }
 ```
 
-___
+---
 
 ### Inserting a new element in the heap
 
@@ -268,15 +258,15 @@ To add a new element, we first check if the list is empty or not. If it is empty
       list.push(num);
     }else{
       list.push(num);
-      
+
      for (let i = parseInt(list.length / 2 - 1); i >= 0; i--) {
-         this.maxHeapify(list, list.length, i); 
+         this.maxHeapify(list, list.length, i);
      }
     }
   }
 ```
 
-___
+---
 
 ### Removing an element from the heap
 
@@ -293,7 +283,7 @@ Removing a node is 4 step process.
 //Remove value
   this.delete = (num) => {
     const size = list.length;
-    
+
     //Get the index of the number to be removed
     let i;
     for(i = 0; i < size; i++){
@@ -301,21 +291,21 @@ Removing a node is 4 step process.
         break;
       }
     }
-    
+
     //Swap the number with last element
     [list[i], list[size - 1]] = [list[size - 1], list[i]];
-    
+
     //Remove the last element
     list.splice(size - 1);
-    
+
     //Heapify the list again
     for (let i = parseInt(list.length / 2 - 1); i >= 0; i--) {
-         this.maxHeapify(list, list.length, i); 
+         this.maxHeapify(list, list.length, i);
      }
   }
 ```
 
-___
+---
 
 ### Find max from the heap
 
@@ -326,7 +316,7 @@ As the list is already max heapified, we just need to return the root element be
   this.findMax = () => list[0];
 ```
 
-___
+---
 
 ### Delete max from the heap
 
@@ -339,7 +329,7 @@ Delete the root to remove the max. We can use the exisiting delete method for it
   }
 ```
 
-___
+---
 
 ### Extract max from the heap
 
@@ -354,7 +344,7 @@ Store the max value in a variable and then delete it from the heap, after that r
   }
 ```
 
-___
+---
 
 ### Size of the heap
 
@@ -363,7 +353,7 @@ ___
   this.size = () => list.length;
 ```
 
-___
+---
 
 ### IsEmpty check
 
@@ -372,7 +362,7 @@ ___
   this.isEmpty = () => list.length === 0;
 ```
 
-___
+---
 
 ### Get the heap
 
@@ -381,14 +371,14 @@ ___
   this.getList = () => list;
 ```
 
-___
+---
 
 ## Complete code of binary heap data structure implemented in Javascript
 
 ```
 function BinaryHeap(){
   let list = [];
-  
+
   //Heapify
   this.maxHeapify = (arr, n, i) => {
     let largest = i;
@@ -397,29 +387,29 @@ function BinaryHeap(){
 
     //If left child is smaller than root
      if (l < n && arr[l] > arr[largest]) {
-           largest = l; 
+           largest = l;
      }
 
-     // If right child is smaller than smallest so far 
+     // If right child is smaller than smallest so far
      if (r < n && arr[r] > arr[largest]) {
-          largest = r; 
+          largest = r;
      }
 
-     // If smallest is not root 
-     if (largest != i) { 
-          let temp = arr[i]; 
-          arr[i] = arr[largest]; 
-          arr[largest] = temp; 
+     // If smallest is not root
+     if (largest != i) {
+          let temp = arr[i];
+          arr[i] = arr[largest];
+          arr[largest] = temp;
 
-        // Recursively heapify the affected sub-tree 
-        this.maxHeapify(arr, n, largest); 
-      } 
+        // Recursively heapify the affected sub-tree
+        this.maxHeapify(arr, n, largest);
+      }
   }
-  
+
   //Insert Value
   this.insert = (num) => {
     const size = list.length;
-    
+
     if(size === 0){
       list.push(num);
     }else{
@@ -427,15 +417,15 @@ function BinaryHeap(){
 
       //Heapify
       for (let i = parseInt(list.length / 2 - 1); i >= 0; i--) {
-         this.maxHeapify(list, list.length, i); 
+         this.maxHeapify(list, list.length, i);
       }
     }
   }
-  
+
   //Remove value
   this.delete = (num) => {
     const size = list.length;
-    
+
     //Get the index of the number to be removed
     let i;
     for(i = 0; i < size; i++){
@@ -443,40 +433,40 @@ function BinaryHeap(){
         break;
       }
     }
-    
+
     //Swap the number with last element
     [list[i], list[size - 1]] = [list[size - 1], list[i]];
 
     //Remove the last element
     list.splice(size - 1);
-    
+
     //Heapify the list again
     for (let i = parseInt(list.length / 2 - 1); i >= 0; i--) {
-         this.maxHeapify(list, list.length, i); 
+         this.maxHeapify(list, list.length, i);
      }
   }
-  
+
   //Return max value
   this.findMax = () => list[0];
-  
+
   //Remove max val
   this.deleteMax = () => {
     this.delete(list[0]);
   }
-  
+
   //Remove and return max value
   this.extractMax = () => {
     const max = list[0];
     this.delete(max);
     return max;
   }
-  
+
   //Size
   this.size = () => list.length;
-  
+
   //IsEmpty
   this.isEmpty = () => list.length === 0;
-  
+
   //Return head
   this.getList = () => list;
 }
@@ -504,104 +494,104 @@ Output:
 [7, 5, 4, 2, 3]
 ```
 
-___
+---
 
 ## Binary heap with Min-Heap
 
 ```js
-function BinaryHeap(){
-  let list = [];
-  
-  //Heapify
-  this.minHeapify = (arr, n, i) => {
-    let smallest = i;
-    let l = 2 * i + 1; //left child index
-    let r = 2 * i + 2; //right child index
+function BinaryHeap() {
+    let list = [];
 
-    //If left child is smaller than root
-     if (l < n && arr[l] < arr[smallest]) {
-           smallest = l; 
-     }
+    //Heapify
+    this.minHeapify = (arr, n, i) => {
+        let smallest = i;
+        let l = 2 * i + 1; //left child index
+        let r = 2 * i + 2; //right child index
 
-     // If right child is smaller than smallest so far 
-     if (r < n && arr[r] < arr[smallest]) {
-          smallest = r; 
-     }
+        //If left child is smaller than root
+        if (l < n && arr[l] < arr[smallest]) {
+            smallest = l;
+        }
 
-     // If smallest is not root 
-     if (smallest != i) { 
-          let temp = arr[i]; 
-          arr[i] = arr[smallest]; 
-          arr[smallest] = temp; 
+        // If right child is smaller than smallest so far
+        if (r < n && arr[r] < arr[smallest]) {
+            smallest = r;
+        }
 
-        // Recursively heapify the affected sub-tree 
-        this.minHeapify(arr, n, smallest); 
-      } 
-  }
-  
-  //Insert Value
-  this.insert = (num) => {
-    const size = list.length;
-    
-    if(size === 0){
-      list.push(num);
-    }else{
-      list.push(num);
-      
-      //Heapify
-      for (let i = parseInt(list.length / 2 - 1); i >= 0; i--) {
-         this.minHeapify(list, list.length, i); 
-      }
-    }
-  }
-  
-  //Remove value
-  this.delete = (num) => {
-    const size = list.length;
-    
-    //Get the index of the number to be removed
-    let i;
-    for(i = 0; i < size; i++){
-      if(list[i] === num){
-        break;
-      }
-    }
-    
-    //Swap the number with last element
-    [list[i], list[size - 1]] = [list[size - 1], list[i]];
+        // If smallest is not root
+        if (smallest != i) {
+            let temp = arr[i];
+            arr[i] = arr[smallest];
+            arr[smallest] = temp;
 
-    //Remove the last element
-    list.splice(size - 1);
-    
-    //Heapify the list again
-    for (let i = parseInt(list.length / 2 - 1); i >= 0; i--) {
-         this.minHeapify(list, list.length, i); 
-     }
-  }
-  
-  //Return min value
-  this.findMin = () => list[0];
-  
-  //Remove min val
-  this.deleteMin = () => {
-    this.delete(list[0]);
-  }
-  
-  //Remove and return min value
-  this.extractMin = () => {
-    const min = list[0];
-    this.delete(min);
-    return min;
-  }
-  
-  //Size
-  this.size = () => list.length;
-  
-  //IsEmpty
-  this.isEmpty = () => list.length === 0;
-  
-  //Return head
-  this.getList = () => list;
+            // Recursively heapify the affected sub-tree
+            this.minHeapify(arr, n, smallest);
+        }
+    };
+
+    //Insert Value
+    this.insert = (num) => {
+        const size = list.length;
+
+        if (size === 0) {
+            list.push(num);
+        } else {
+            list.push(num);
+
+            //Heapify
+            for (let i = parseInt(list.length / 2 - 1); i >= 0; i--) {
+                this.minHeapify(list, list.length, i);
+            }
+        }
+    };
+
+    //Remove value
+    this.delete = (num) => {
+        const size = list.length;
+
+        //Get the index of the number to be removed
+        let i;
+        for (i = 0; i < size; i++) {
+            if (list[i] === num) {
+                break;
+            }
+        }
+
+        //Swap the number with last element
+        [list[i], list[size - 1]] = [list[size - 1], list[i]];
+
+        //Remove the last element
+        list.splice(size - 1);
+
+        //Heapify the list again
+        for (let i = parseInt(list.length / 2 - 1); i >= 0; i--) {
+            this.minHeapify(list, list.length, i);
+        }
+    };
+
+    //Return min value
+    this.findMin = () => list[0];
+
+    //Remove min val
+    this.deleteMin = () => {
+        this.delete(list[0]);
+    };
+
+    //Remove and return min value
+    this.extractMin = () => {
+        const min = list[0];
+        this.delete(min);
+        return min;
+    };
+
+    //Size
+    this.size = () => list.length;
+
+    //IsEmpty
+    this.isEmpty = () => list.length === 0;
+
+    //Return head
+    this.getList = () => list;
 }
 ```
 
@@ -628,118 +618,118 @@ Output:
 [2, 3, 4, 5, 7]
 ```
 
-___
+---
 
 ## Class based implementation of binary heap in javascript
 
 ```js
-class BinaryHeap{
-  constructor(){
-    this.list = [];
-  }
-  
-  //Heapify
-  maxHeapify = (arr, n, i) => {
-    let largest = i;
-    let l = 2 * i + 1; //left child index
-    let r = 2 * i + 2; //right child index
-
-    //If left child is smaller than root
-     if (l < n && arr[l] > arr[largest]) {
-           largest = l; 
-     }
-
-     // If right child is smaller than smallest so far 
-     if (r < n && arr[r] > arr[largest]) {
-          largest = r; 
-     }
-
-     // If smallest is not root 
-     if (largest != i) { 
-          let temp = arr[i]; 
-          arr[i] = arr[largest]; 
-          arr[largest] = temp; 
-
-        // Recursively heapify the affected sub-tree 
-        this.maxHeapify(arr, n, largest); 
-      } 
-  }
-  
-  //Insert Value
-  insert = (num) => {
-    const size = this.list.length;
-    if(size === 0){
-      this.list.push(num);
-    }else{
-      this.list.push(num);
-      
-      //Heapify
-      for (let i = parseInt(this.list.length / 2 - 1); i >= 0; i--) {
-         this.maxHeapify(this.list, this.list.length, i); 
-      }
+class BinaryHeap {
+    constructor() {
+        this.list = [];
     }
-  }
-  
-  //Remove value
-  delete = (num) => {
-    const size = this.list.length;
-    
-    //Get the index of the number to be removed
-    let i;
-    for(i = 0; i < size; i++){
-      if(num === this.list[i]){
-        break;
-      }
-    }
-    
-    //Swap the number with last element
-    [this.list[i], this.list[size - 1]] = [this.list[size - 1], this.list[i]];
-    
-    //Remove the last element
-    this.list.splice(size - 1);
-    
-    //Heapify the list again
-    for (let i = parseInt(this.list.length / 2 - 1); i >= 0; i--) {
-         this.maxHeapify(this.list, this.list.length, i); 
-     }
-  }
-  
-  //Return max value
-  findMax = () => this.list[0];
-  
-  //Remove max val
-  deleteMax = () => {
-    this.delete(this.list[0]);
-  }
-  
-  //Remove and return max value
-  extractMax = () => {
-    const max = this.list[0];
-    this.delete(max);
-    return max;
-  }
-  
-  //Size
-  size = () => this.list.length;
-  
-  //IsEmpty
-  isEmpty = () => this.list.length === 0;
-  
-  //Return head
-  getList = () => this.list;
+
+    //Heapify
+    maxHeapify = (arr, n, i) => {
+        let largest = i;
+        let l = 2 * i + 1; //left child index
+        let r = 2 * i + 2; //right child index
+
+        //If left child is smaller than root
+        if (l < n && arr[l] > arr[largest]) {
+            largest = l;
+        }
+
+        // If right child is smaller than smallest so far
+        if (r < n && arr[r] > arr[largest]) {
+            largest = r;
+        }
+
+        // If smallest is not root
+        if (largest != i) {
+            let temp = arr[i];
+            arr[i] = arr[largest];
+            arr[largest] = temp;
+
+            // Recursively heapify the affected sub-tree
+            this.maxHeapify(arr, n, largest);
+        }
+    };
+
+    //Insert Value
+    insert = (num) => {
+        const size = this.list.length;
+        if (size === 0) {
+            this.list.push(num);
+        } else {
+            this.list.push(num);
+
+            //Heapify
+            for (let i = parseInt(this.list.length / 2 - 1); i >= 0; i--) {
+                this.maxHeapify(this.list, this.list.length, i);
+            }
+        }
+    };
+
+    //Remove value
+    delete = (num) => {
+        const size = this.list.length;
+
+        //Get the index of the number to be removed
+        let i;
+        for (i = 0; i < size; i++) {
+            if (num === this.list[i]) {
+                break;
+            }
+        }
+
+        //Swap the number with last element
+        [this.list[i], this.list[size - 1]] = [this.list[size - 1], this.list[i]];
+
+        //Remove the last element
+        this.list.splice(size - 1);
+
+        //Heapify the list again
+        for (let i = parseInt(this.list.length / 2 - 1); i >= 0; i--) {
+            this.maxHeapify(this.list, this.list.length, i);
+        }
+    };
+
+    //Return max value
+    findMax = () => this.list[0];
+
+    //Remove max val
+    deleteMax = () => {
+        this.delete(this.list[0]);
+    };
+
+    //Remove and return max value
+    extractMax = () => {
+        const max = this.list[0];
+        this.delete(max);
+        return max;
+    };
+
+    //Size
+    size = () => this.list.length;
+
+    //IsEmpty
+    isEmpty = () => this.list.length === 0;
+
+    //Return head
+    getList = () => this.list;
 }
 ```
 
 ### Time complexity of heap data structure
 
 | #       | Access | Search | Insert  | Delete  | FindMax or (Min) | DeleteMax or (Min) |
-|---------|--------|--------|---------|---------|------------------|--------------------|
+| ------- | ------ | ------ | ------- | ------- | ---------------- | ------------------ |
 | Average | Θ(N)   | Θ(N)   | ΘLog(N) | ΘLog(N) | Θ(1)             | ΘLog(N)            |
 | Worst   | O(N)   | O(N)   | OLog(N) | OLog(N) | O(1)             | OLog(N)            |
 
 ### Space complexity
 
-___
+---
 
 ### Applications
 

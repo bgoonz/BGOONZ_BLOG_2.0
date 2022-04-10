@@ -10,7 +10,6 @@ seo:
 template: docs
 ---
 
-
 1.  What Are Web Development Tools?
 
 ##### **Client-side**Otherwise known as front-end web development, this refers to anything a user can see or engage with—an app or website are good examples. This is about providing a top-notch user experience and smooth interface (usually with a combination of HTML, CSS and various JavaScript libraries.**Server-side**Otherwise known as back-end web development, this refers to the stuff behind the scenes of apps and websites that users can't see. It's the frameworks, servers and databases that keep things running.Image Source: Paperform&#xA;&#xA;

@@ -10,7 +10,6 @@ seo:
 template: docs
 ---
 
-
 ## Insert Into Array
 
 We have some `in-built methods` to add at elements at the beginning and end of the array.
@@ -45,7 +44,7 @@ Now Let's call the function
 var num = [1,2,3,6,7,8];/\*\
  arguments\
 
-- 1. source array - num\
-- 2. index to insert - 3\
-- 3. remaining are elements to insert\
-       \*/insertAt(num, 3, 4, 5); // [1,2,3,4,5,6,7,8]******\*\*******\*\*******\*\*******\_\_\_\_******\*\*******\*\*******\*\*******// let's try changing the indexvar num = [1,2,3,6,7,8];insertAt(numbers, 2, 4,5); // [1,2,4,5,3,6,7,8]
+-   1. source array - num\
+-   2. index to insert - 3\
+-   3. remaining are elements to insert\
+        \*/insertAt(num, 3, 4, 5); // [1,2,3,4,5,6,7,8]**\*\***\*\***\*\***\*\***\*\***\*\***\*\***\_\_\_\_**\*\***\*\***\*\***\*\***\*\***\*\***\*\***// let's try changing the indexvar num = [1,2,3,6,7,8];insertAt(numbers, 2, 4,5); // [1,2,4,5,3,6,7,8]

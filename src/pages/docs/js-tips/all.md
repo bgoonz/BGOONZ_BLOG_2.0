@@ -11,7 +11,6 @@ seo:
 template: docs
 ---
 
-
 # Promise.all()
 
 The `Promise.all()` method takes an iterable of promises as an input, and returns a single [`Promise`](../promise) that resolves to an array of the results of the input promises. This returned promise will resolve when all of the input's promises have resolved, or if the input iterable contains no promises. It rejects immediately upon any of the input promises rejecting or non-promises throwing an error, and will reject with this first rejection message / error.
@@ -27,9 +26,9 @@ An [iterable](../../iteration_protocols#the_iterable_protocol) object such as an
 
 ### Return value
 
-- An **already resolved** [`Promise`](../promise) if the iterable passed is empty.
-- An **asynchronously resolved** [`Promise`](../promise) if the iterable passed contains no promises. Note, Google Chrome 58 returns an **already resolved** promise in this case.
-- A **pending** [`Promise`](../promise) in all other cases. This returned promise is then resolved/rejected **asynchronously** (as soon as the stack is empty) when all the promises in the given iterable have resolved, or if any of the promises reject. See the example about "Asynchronicity or synchronicity of Promise.all" below. Returned values will be in order of the Promises passed, regardless of completion order.
+-   An **already resolved** [`Promise`](../promise) if the iterable passed is empty.
+-   An **asynchronously resolved** [`Promise`](../promise) if the iterable passed contains no promises. Note, Google Chrome 58 returns an **already resolved** promise in this case.
+-   A **pending** [`Promise`](../promise) in all other cases. This returned promise is then resolved/rejected **asynchronously** (as soon as the stack is empty) when all the promises in the given iterable have resolved, or if any of the promises reject. See the example about "Asynchronicity or synchronicity of Promise.all" below. Returned values will be in order of the Promises passed, regardless of completion order.
 
 ## Description
 
@@ -41,8 +40,8 @@ This method can be useful for aggregating the results of multiple promises. It i
 
 The returned promise is fulfilled with an array containing **all** the resolved values (including non-promise values) in the iterable passed as the argument.
 
-- If an empty iterable is passed, then the promise returned by this method is fulfilled synchronously. The resolved value is an empty array.
-- If a nonempty _iterable_ is passed, and **all** of the promises fulfill, or are not promises, then the promise returned by this method is fulfilled asynchronously.
+-   If an empty iterable is passed, then the promise returned by this method is fulfilled synchronously. The resolved value is an empty array.
+-   If a nonempty _iterable_ is passed, and **all** of the promises fulfill, or are not promises, then the promise returned by this method is fulfilled asynchronously.
 
 ### Rejection
 

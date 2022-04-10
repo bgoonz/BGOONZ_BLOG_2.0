@@ -30,7 +30,6 @@ seo:
 template: docs
 ---
 
-
 # [**➡️🏠🏠HOME🏠🏠⬅️**](https://bgoonz-blog.netlify.app/)
 
 <center>

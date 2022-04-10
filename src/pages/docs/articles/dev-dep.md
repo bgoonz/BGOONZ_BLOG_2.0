@@ -42,7 +42,6 @@ seo:
 template: docs
 ---
 
-
 When you install an npm package using `npm install <package-name>`, you are installing it as a **dependency**.
 
 The package is automatically listed in the package.json file, under the `dependencies` list (as of npm 5: before you had to manually specify `--save`).

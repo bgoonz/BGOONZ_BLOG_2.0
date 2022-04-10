@@ -11,7 +11,6 @@ seo:
 template: docs
 ---
 
-
 # Array.prototype.forEach()
 
 The `forEach()` method executes a provided function once for each array element.
@@ -76,12 +75,12 @@ The range of elements processed by `forEach()` is set before the first invocatio
 
 Early termination may be accomplished with:
 
-- A simple [for](../../statements/for) loop
-- A [for...of](../../statements/for...of) / [for...in](../../statements/for...in) loops
-- [`Array.prototype.every()`](every)
-- [`Array.prototype.some()`](some)
-- [`Array.prototype.find()`](find)
-- [`Array.prototype.findIndex()`](findindex)
+-   A simple [for](../../statements/for) loop
+-   A [for...of](../../statements/for...of) / [for...in](../../statements/for...in) loops
+-   [`Array.prototype.every()`](every)
+-   [`Array.prototype.some()`](some)
+-   [`Array.prototype.find()`](find)
+-   [`Array.prototype.findIndex()`](findindex)
 
 Array methods: [`every()`](every), [`some()`](some), [`find()`](find), and [`findIndex()`](findindex) test the array elements with a predicate returning a truthy value to determine if further iteration is required.
 

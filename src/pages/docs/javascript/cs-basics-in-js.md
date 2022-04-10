@@ -10,7 +10,6 @@ seo:
 template: docs
 ---
 
-
 ### Anonymous Closures
 
 This is the fundamental construct that makes it all possible, and really is the single **best feature of JavaScript**. We'll simply create an anonymous function, and execute it immediately. All of the code that runs inside the function lives in a **closure**, which provides **privacy** and **state** throughout the lifetime of our application.
@@ -274,7 +273,7 @@ let MODULE = (function (my) {
 
 })(MODULE || {});
 
-```
+````
 
 ### Tight Augmentation
 
@@ -290,7 +289,7 @@ let MODULE = (function (my) {
 
     return my;
 })(MODULE);
-```
+````
 
 ### Cloning and Inheritance
 

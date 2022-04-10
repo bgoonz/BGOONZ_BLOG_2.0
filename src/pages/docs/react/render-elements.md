@@ -17,7 +17,6 @@ seo:
 template: docs
 ---
 
-
 # Rendering Elements&#xA;&#xA;
 
 Elements are the smallest building blocks of React apps.

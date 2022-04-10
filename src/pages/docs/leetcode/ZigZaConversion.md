@@ -11,7 +11,6 @@ seo:
 template: docs
 ---
 
-
 ## [6. ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/description/)
 
 ### Problem:

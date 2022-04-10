@@ -23,7 +23,6 @@ seo:
 template: docs
 ---
 
-
 ![](images/0001-76d89ef6.jpg)
 
 # Title

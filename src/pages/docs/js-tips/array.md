@@ -11,7 +11,6 @@ seo:
 template: docs
 ---
 
-
 # Array
 
 Arrays are everywhere in JavaScript and with the new [spread operators](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Spread_operator) introduced in ECMAScript 6, you can do awesome things with them. In this post I will show you 3 useful tricks you can use when programming.

@@ -10,7 +10,6 @@ seo:
 template: docs
 ---
 
-
 # clean-code-javascript
 
 ## Table of Contents
@@ -210,10 +209,7 @@ arguments. Other "falsy" values such as `''`, `""`, `false`, `null`, `0`, and
 
 ---
 
-
 ```js
-
-
 function createMicrobrewery(name) {
     const breweryName = name || 'Hipster Brew Co.';
     // ...
@@ -224,10 +220,7 @@ function createMicrobrewery(name) {
 
 ---
 
-
 ```js
-
-
 function createMicrobrewery(name = 'Hipster Brew Co.') {
     // ...
 }
@@ -269,10 +262,7 @@ destructuring syntax. This has a few advantages:
 
 ---
 
-
 ```js
-
-
 function createMenu(title, body, buttonText, cancellable) {
     // ...
 }
@@ -284,10 +274,7 @@ createMenu('Foo', 'Bar', 'Baz', true);
 
 ---
 
-
 ```js
-
-
 function createMenu({ title, body, buttonText, cancellable }) {
     // ...
 }
@@ -312,10 +299,7 @@ this guide other than this, you'll be ahead of many developers.
 
 ---
 
-
 ```js
-
-
 function emailClients(clients) {
     clients.forEach((client) => {
         const clientRecord = database.lookup(client);
@@ -330,10 +314,7 @@ function emailClients(clients) {
 
 ---
 
-
 ```js
-
-
 function emailActiveClients(clients) {
     clients.filter(isActiveClient).forEach(email);
 }
@@ -350,10 +331,7 @@ function isActiveClient(client) {
 
 ---
 
-
 ```js
-
-
 function addToDate(date, month) {
     // ...
 }
@@ -368,10 +346,7 @@ addToDate(date, 1);
 
 ---
 
-
 ```js
-
-
 function addMonthToDate(month, date) {
     // ...
 }
@@ -390,10 +365,7 @@ testing.
 
 ---
 
-
 ```js
-
-
 function parseBetterJSAlternative(code) {
     const REGEXES = [
         // ...
@@ -422,10 +394,7 @@ function parseBetterJSAlternative(code) {
 
 ---
 
-
 ```js
-
-
 function parseBetterJSAlternative(code) {
     const tokens = tokenize(code);
     const syntaxTree = parse(tokens);
@@ -487,10 +456,7 @@ updating multiple places anytime you want to change one thing.
 
 ---
 
-
 ```js
-
-
 function showDeveloperList(developers) {
     developers.forEach((developer) => {
         const expectedSalary = developer.calculateExpectedSalary();
@@ -526,10 +492,7 @@ function showManagerList(managers) {
 
 ---
 
-
 ```js
-
-
 function showEmployeeList(employees) {
     employees.forEach((employee) => {
         const expectedSalary = employee.calculateExpectedSalary();
@@ -612,10 +575,7 @@ Flags tell your user that this function does more than one thing. Functions shou
 
 ---
 
-
 ```js
-
-
 function createFile(name, temp) {
     if (temp) {
         fs.create(`./temp/${name}`);
@@ -629,10 +589,7 @@ function createFile(name, temp) {
 
 ---
 
-
 ```js
-
-
 function createFile(name) {
     fs.create(name);
 }
@@ -679,10 +636,7 @@ console.log(name); // ['Ryan', 'McDermott'];
 
 ---
 
-
 ```js
-
-
 function splitIntoFirstAndLastName(name) {
     return name.split(' ');
 }
@@ -854,10 +808,7 @@ if (fsm.state === 'fetching' && isEmpty(listNode)) {
 
 ---
 
-
 ```js
-
-
 function shouldShowSpinner(fsm, listNode) {
     return fsm.state === 'fetching' && isEmpty(listNode);
 }
@@ -873,10 +824,7 @@ if (shouldShowSpinner(fsmInstance, listNodeInstance)) {
 
 ---
 
-
 ```js
-
-
 function isDOMNodeNotPresent(node) {
     // ...
 }
@@ -890,10 +838,7 @@ if (!isDOMNodeNotPresent(node)) {
 
 ---
 
-
 ```js
-
-
 function isDOMNodePresent(node) {
     // ...
 }
@@ -972,10 +917,7 @@ The first thing to consider is consistent APIs.
 
 ---
 
-
 ```js
-
-
 function travelToTexas(vehicle) {
     if (vehicle instanceof Bicycle) {
         vehicle.pedal(this.currentLocation, new Location('texas'));
@@ -989,10 +931,7 @@ function travelToTexas(vehicle) {
 
 ---
 
-
 ```js
-
-
 function travelToTexas(vehicle) {
     vehicle.move(this.currentLocation, new Location('texas'));
 }
@@ -1014,10 +953,7 @@ TypeScript (which, like I said, is a great alternative!).
 
 ---
 
-
 ```js
-
-
 function combine(val1, val2) {
     if ((typeof val1 === 'number' && typeof val2 === 'number') || (typeof val1 === 'string' && typeof val2 === 'string')) {
         return val1 + val2;
@@ -1031,10 +967,7 @@ function combine(val1, val2) {
 
 ---
 
-
 ```js
-
-
 function combine(val1, val2) {
     return val1 + val2;
 }
@@ -1076,10 +1009,7 @@ in your version history if you still need it.
 
 ---
 
-
 ```js
-
-
 function oldRequestModule(url) {
     // ...
 }
@@ -1096,10 +1026,7 @@ inventoryTracker('apples', req, 'www.inventory-awesome.io');
 
 ---
 
-
 ```js
-
-
 function newRequestModule(url) {
     // ...
 }
@@ -1116,22 +1043,19 @@ Using getters and setters to access data on objects could be better than simply
 looking for a property on an object. "Why?" you might ask. Well, here's an
 unorganized list of reasons why:
 
-- When you want to do more beyond getting an object property, you don't have
-- to look up and change every accessor in your codeb
-- Makes adding validation simple when doing
-- Encapsulates the internal representation.
-- Easy to add logging and error handling when getting and setting.
-- You can lazy load your object's properties, let's say getting it from a
+-   When you want to do more beyond getting an object property, you don't have
+-   to look up and change every accessor in your codeb
+-   Makes adding validation simple when doing
+-   Encapsulates the internal representation.
+-   Easy to add logging and error handling when getting and setting.
+-   You can lazy load your object's properties, let's say getting it from a
     server.
 
 **Bad:**
 
 ---
 
-
 ```js
-
-
 function makeBankAccount() {
     // ...
 
@@ -1149,10 +1073,7 @@ account.balance = 100;
 
 ---
 
-
 ```js
-
-
 function makeBankAccount() {
     // this one is private
     let balance = 0;
@@ -1204,10 +1125,7 @@ console.log(`Employee name: ${employee.getName()}`); // Employee name: undefined
 
 ---
 
-
 ```js
-
-
 function makeEmployee(name) {
     return {
         getName() {
@@ -2275,10 +2193,7 @@ Comments are an apology, not a requirement. Good code _mostly_ documents itself.
 
 ---
 
-
 ```js
-
-
 function hashIt(data) {
     // The hash
     let hash = 0;
@@ -2302,10 +2217,7 @@ function hashIt(data) {
 
 ---
 
-
 ```js
-
-
 function hashIt(data) {
     let hash = 0;
     const length = data.length;
@@ -2362,10 +2274,7 @@ function combine(a, b) {
 
 ---
 
-
 ```js
-
-
 function combine(a, b) {
     return a + b;
 }
@@ -2412,26 +2321,26 @@ const actions = function () {
 
 This is also available in other languages:
 
-- ![am](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Armenia.png) **Armenian**: [hanumanum/clean-code-javascript/](https://github.com/hanumanum/clean-code-javascript)
-- ![bd](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Bangladesh.png) **Bangla(বাংলা)**: [InsomniacSabbir/clean-code-javascript/](https://github.com/InsomniacSabbir/clean-code-javascript/)
-- ![br](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Brazil.png) **Brazilian Portuguese**: [fesnt/clean-code-javascript](https://github.com/fesnt/clean-code-javascript)
-- ![cn](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/China.png) **Simplified Chinese**:
-    - [alivebao/clean-code-js](https://github.com/alivebao/clean-code-js)
-    - [beginor/clean-code-javascript](https://github.com/beginor/clean-code-javascript)
-- ![tw](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Taiwan.png) **Traditional Chinese**: [AllJointTW/clean-code-javascript](https://github.com/AllJointTW/clean-code-javascript)
-- ![fr](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/France.png) **French**: [GavBaros/clean-code-javascript-fr](https://github.com/GavBaros/clean-code-javascript-fr)
-- ![de](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Germany.png) **German**: [marcbruederlin/clean-code-javascript](https://github.com/marcbruederlin/clean-code-javascript)
-- ![id](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Indonesia.png) **Indonesia**: [andirkh/clean-code-javascript/](https://github.com/andirkh/clean-code-javascript/)
-- ![it](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Italy.png) **Italian**: [frappacchio/clean-code-javascript/](https://github.com/frappacchio/clean-code-javascript/)
-- ![ja](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Japan.png) **Japanese**: [mitsuruog/clean-code-javascript/](https://github.com/mitsuruog/clean-code-javascript/)
-- ![kr](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/South-Korea.png) **Korean**: [qkraudghgh/clean-code-javascript-ko](https://github.com/qkraudghgh/clean-code-javascript-ko)
-- ![pl](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Poland.png) **Polish**: [greg-dev/clean-code-javascript-pl](https://github.com/greg-dev/clean-code-javascript-pl)
-- ![ru](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Russia.png) **Russian**:
-    - [BoryaMogila/clean-code-javascript-ru/](https://github.com/BoryaMogila/clean-code-javascript-ru/)
-    - [maksugr/clean-code-javascript](https://github.com/maksugr/clean-code-javascript)
-- ![es](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Spain.png) **Spanish**: [tureey/clean-code-javascript](https://github.com/tureey/clean-code-javascript)
-- ![es](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Uruguay.png) **Spanish**: [andersontr15/clean-code-javascript](https://github.com/andersontr15/clean-code-javascript-es)
-- ![rs](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Serbia.png) **Serbian**: [doskovicmilos/clean-code-javascript/](https://github.com/doskovicmilos/clean-code-javascript)
-- ![tr](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Turkey.png) **Turkish**: [bsonmez/clean-code-javascript](https://github.com/bsonmez/clean-code-javascript/tree/turkish-translation)
-- ![ua](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Ukraine.png) **Ukrainian**: [mindfr1k/clean-code-javascript-ua](https://github.com/mindfr1k/clean-code-javascript-ua)
-- ![vi](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Vietnam.png) **Vietnamese**: [hienvd/clean-code-javascript/](https://github.com/hienvd/clean-code-javascript/)
+-   ![am](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Armenia.png) **Armenian**: [hanumanum/clean-code-javascript/](https://github.com/hanumanum/clean-code-javascript)
+-   ![bd](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Bangladesh.png) **Bangla(বাংলা)**: [InsomniacSabbir/clean-code-javascript/](https://github.com/InsomniacSabbir/clean-code-javascript/)
+-   ![br](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Brazil.png) **Brazilian Portuguese**: [fesnt/clean-code-javascript](https://github.com/fesnt/clean-code-javascript)
+-   ![cn](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/China.png) **Simplified Chinese**:
+    -   [alivebao/clean-code-js](https://github.com/alivebao/clean-code-js)
+    -   [beginor/clean-code-javascript](https://github.com/beginor/clean-code-javascript)
+-   ![tw](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Taiwan.png) **Traditional Chinese**: [AllJointTW/clean-code-javascript](https://github.com/AllJointTW/clean-code-javascript)
+-   ![fr](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/France.png) **French**: [GavBaros/clean-code-javascript-fr](https://github.com/GavBaros/clean-code-javascript-fr)
+-   ![de](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Germany.png) **German**: [marcbruederlin/clean-code-javascript](https://github.com/marcbruederlin/clean-code-javascript)
+-   ![id](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Indonesia.png) **Indonesia**: [andirkh/clean-code-javascript/](https://github.com/andirkh/clean-code-javascript/)
+-   ![it](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Italy.png) **Italian**: [frappacchio/clean-code-javascript/](https://github.com/frappacchio/clean-code-javascript/)
+-   ![ja](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Japan.png) **Japanese**: [mitsuruog/clean-code-javascript/](https://github.com/mitsuruog/clean-code-javascript/)
+-   ![kr](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/South-Korea.png) **Korean**: [qkraudghgh/clean-code-javascript-ko](https://github.com/qkraudghgh/clean-code-javascript-ko)
+-   ![pl](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Poland.png) **Polish**: [greg-dev/clean-code-javascript-pl](https://github.com/greg-dev/clean-code-javascript-pl)
+-   ![ru](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Russia.png) **Russian**:
+    -   [BoryaMogila/clean-code-javascript-ru/](https://github.com/BoryaMogila/clean-code-javascript-ru/)
+    -   [maksugr/clean-code-javascript](https://github.com/maksugr/clean-code-javascript)
+-   ![es](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Spain.png) **Spanish**: [tureey/clean-code-javascript](https://github.com/tureey/clean-code-javascript)
+-   ![es](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Uruguay.png) **Spanish**: [andersontr15/clean-code-javascript](https://github.com/andersontr15/clean-code-javascript-es)
+-   ![rs](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Serbia.png) **Serbian**: [doskovicmilos/clean-code-javascript/](https://github.com/doskovicmilos/clean-code-javascript)
+-   ![tr](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Turkey.png) **Turkish**: [bsonmez/clean-code-javascript](https://github.com/bsonmez/clean-code-javascript/tree/turkish-translation)
+-   ![ua](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Ukraine.png) **Ukrainian**: [mindfr1k/clean-code-javascript-ua](https://github.com/mindfr1k/clean-code-javascript-ua)
+-   ![vi](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Vietnam.png) **Vietnamese**: [hienvd/clean-code-javascript/](https://github.com/hienvd/clean-code-javascript/)

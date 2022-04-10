@@ -11,7 +11,6 @@ seo:
 template: docs
 ---
 
-
 # Array.prototype.sort()
 
 The `sort()` method sorts the elements of an array _[in place](https://en.wikipedia.org/wiki/In-place_algorithm)_ and returns the sorted array. The default sort order is ascending, built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values.
@@ -55,10 +54,10 @@ If `compareFunction` is not supplied, all non-`undefined` array elements are sor
 
 If `compareFunction` is supplied, all non-`undefined` array elements are sorted according to the return value of the compare function (all `undefined` elements are sorted to the end of the array, with no call to `compareFunction`). If `a` and `b` are two elements being compared, then:
 
-- If `compareFunction(a, b)` returns less than 0, leave `a` and `b` unchanged.
-- If `compareFunction(a, b)` returns 0, leave `a` and `b` unchanged with respect to each other, but sorted with respect to all different elements. Note: the ECMAScript standard only started guaranteeing this behavior [in 2019](https://www.ecma-international.org/ecma-262/10.0/index.html#sec-intro), thus, older browsers may not respect this.
-- If `compareFunction(a, b)` returns greater than 0, sort `b` before `a`.
-- `compareFunction(a, b)` must always return the same value when given a specific pair of elements `a` and `b` as its two arguments. If inconsistent results are returned, then the sort order is undefined.
+-   If `compareFunction(a, b)` returns less than 0, leave `a` and `b` unchanged.
+-   If `compareFunction(a, b)` returns 0, leave `a` and `b` unchanged with respect to each other, but sorted with respect to all different elements. Note: the ECMAScript standard only started guaranteeing this behavior [in 2019](https://www.ecma-international.org/ecma-262/10.0/index.html#sec-intro), thus, older browsers may not respect this.
+-   If `compareFunction(a, b)` returns greater than 0, sort `b` before `a`.
+-   `compareFunction(a, b)` must always return the same value when given a specific pair of elements `a` and `b` as its two arguments. If inconsistent results are returned, then the sort order is undefined.
 
 So, the compare function has the following form:
 

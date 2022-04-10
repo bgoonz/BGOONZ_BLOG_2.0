@@ -11,12 +11,6 @@ seo:
 template: docs
 ---
 
-
-
-
-
-
-
 # Using the Effect Hook
 
 _Hooks_ are a new addition in React 16.8. They let you use state and other React features without writing a class.
@@ -27,22 +21,20 @@ The _Effect Hook_ lets you perform side effects in function components:
 import React, { useState, useEffect } from 'react';
 
 function Example() {
-  const [count, setCount] = useState(0);
+    const [count, setCount] = useState(0);
 
-  // Similar to componentDidMount and componentDidUpdate:
-  useEffect(() => {
-    // Update the document title using the browser API
-    document.title = `You clicked ${count} times`;
-  });
+    // Similar to componentDidMount and componentDidUpdate:
+    useEffect(() => {
+        // Update the document title using the browser API
+        document.title = `You clicked ${count} times`;
+    });
 
-  return (
-    <div>
-      <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>
-        Click me
-      </button>
-    </div>
-  );
+    return (
+        <div>
+            <p>You clicked {count} times</p>
+            <button onClick={() => setCount(count + 1)}>Click me</button>
+        </div>
+    );
 }
 ```
 
@@ -110,20 +102,18 @@ We've already seen this example at the top of this page, but let's take a closer
 import React, { useState, useEffect } from 'react';
 
 function Example() {
-  const [count, setCount] = useState(0);
+    const [count, setCount] = useState(0);
 
-  useEffect(() => {
-    document.title = `You clicked ${count} times`;
-  });
+    useEffect(() => {
+        document.title = `You clicked ${count} times`;
+    });
 
-  return (
-    <div>
-      <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>
-        Click me
-      </button>
-    </div>
-  );
+    return (
+        <div>
+            <p>You clicked {count} times</p>
+            <button onClick={() => setCount(count + 1)}>Click me</button>
+        </div>
+    );
 }
 ```
 
@@ -139,11 +129,11 @@ Now that we know more about effects, these lines should make sense:
 
 ```js
 function Example() {
-  const [count, setCount] = useState(0);
+    const [count, setCount] = useState(0);
 
-  useEffect(() => {
-    document.title = `You clicked ${count} times`;
-  });
+    useEffect(() => {
+        document.title = `You clicked ${count} times`;
+    });
 }
 ```
 
@@ -165,38 +155,32 @@ In a React class, you would typically set up a subscription in `componentDidMoun
 
 ```jsx
 class FriendStatus extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { isOnline: null };
-    this.handleStatusChange = this.handleStatusChange.bind(this);
-  }
-
-  componentDidMount() {
-    ChatAPI.subscribeToFriendStatus(
-      this.props.friend.id,
-      this.handleStatusChange
-    );
-  }
-
-  componentWillUnmount() {
-    ChatAPI.unsubscribeFromFriendStatus(
-      this.props.friend.id,
-      this.handleStatusChange
-    );
-  }
-
-  handleStatusChange(status) {
-    this.setState({
-      isOnline: status.isOnline
-    });
-  }
-
-  render() {
-    if (this.state.isOnline === null) {
-      return 'Loading...';
+    constructor(props) {
+        super(props);
+        this.state = { isOnline: null };
+        this.handleStatusChange = this.handleStatusChange.bind(this);
     }
-    return this.state.isOnline ? 'Online' : 'Offline';
-  }
+
+    componentDidMount() {
+        ChatAPI.subscribeToFriendStatus(this.props.friend.id, this.handleStatusChange);
+    }
+
+    componentWillUnmount() {
+        ChatAPI.unsubscribeFromFriendStatus(this.props.friend.id, this.handleStatusChange);
+    }
+
+    handleStatusChange(status) {
+        this.setState({
+            isOnline: status.isOnline
+        });
+    }
+
+    render() {
+        if (this.state.isOnline === null) {
+            return 'Loading...';
+        }
+        return this.state.isOnline ? 'Online' : 'Offline';
+    }
 }
 ```
 
@@ -216,24 +200,24 @@ You might be thinking that we'd need a separate effect to perform the cleanup. B
 import React, { useState, useEffect } from 'react';
 
 function FriendStatus(props) {
-  const [isOnline, setIsOnline] = useState(null);
+    const [isOnline, setIsOnline] = useState(null);
 
-  useEffect(() => {
-    function handleStatusChange(status) {
-      setIsOnline(status.isOnline);
+    useEffect(() => {
+        function handleStatusChange(status) {
+            setIsOnline(status.isOnline);
+        }
+
+        ChatAPI.subscribeToFriendStatus(props.friend.id, handleStatusChange);
+        // Specify how to clean up after this effect:
+        return function cleanup() {
+            ChatAPI.unsubscribeFromFriendStatus(props.friend.id, handleStatusChange);
+        };
+    });
+
+    if (isOnline === null) {
+        return 'Loading...';
     }
-
-    ChatAPI.subscribeToFriendStatus(props.friend.id, handleStatusChange);
-    // Specify how to clean up after this effect:
-    return function cleanup() {
-      ChatAPI.unsubscribeFromFriendStatus(props.friend.id, handleStatusChange);
-    };
-  });
-
-  if (isOnline === null) {
-    return 'Loading...';
-  }
-  return isOnline ? 'Online' : 'Offline';
+    return isOnline ? 'Online' : 'Offline';
 }
 ```
 
@@ -250,33 +234,33 @@ function FriendStatus(props) {
 We've learned that `useEffect` lets us express different kinds of side effects after a component renders. Some effects might require cleanup so they return a function:
 
 ```js
-  useEffect(() => {
+useEffect(() => {
     function handleStatusChange(status) {
-      setIsOnline(status.isOnline);
+        setIsOnline(status.isOnline);
     }
 
     ChatAPI.subscribeToFriendStatus(props.friend.id, handleStatusChange);
     return () => {
-      ChatAPI.unsubscribeFromFriendStatus(props.friend.id, handleStatusChange);
+        ChatAPI.unsubscribeFromFriendStatus(props.friend.id, handleStatusChange);
     };
-  });
+});
 ```
 
 Other effects might not have a cleanup phase, and don't return anything.
 
 ```js
-  useEffect(() => {
+useEffect(() => {
     document.title = `You clicked ${count} times`;
-  });
+});
 ```
 
 The Effect Hook unifies both use cases with a single API.
 
-***
+---
 
 **If you feel like you have a decent grasp on how the Effect Hook works, or if you feel overwhelmed, you can jump to the next page about Rules of Hooks now.**
 
-***
+---
 
 ### Tips for Using Effects <a href="#tips-for-using-effects" id="tips-for-using-effects"></a>
 
@@ -426,15 +410,15 @@ There is no special code for handling updates because `useEffect` handles them _
 
 ```js
 // Mount with { friend: { id: 100 } } props
-ChatAPI.subscribeToFriendStatus(100, handleStatusChange);     // Run first effect
+ChatAPI.subscribeToFriendStatus(100, handleStatusChange); // Run first effect
 
 // Update with { friend: { id: 200 } } props
 ChatAPI.unsubscribeFromFriendStatus(100, handleStatusChange); // Clean up previous effect
-ChatAPI.subscribeToFriendStatus(200, handleStatusChange);     // Run next effect
+ChatAPI.subscribeToFriendStatus(200, handleStatusChange); // Run next effect
 
 // Update with { friend: { id: 300 } } props
 ChatAPI.unsubscribeFromFriendStatus(200, handleStatusChange); // Clean up previous effect
-ChatAPI.subscribeToFriendStatus(300, handleStatusChange);     // Run next effect
+ChatAPI.subscribeToFriendStatus(300, handleStatusChange); // Run next effect
 
 // Unmount
 ChatAPI.unsubscribeFromFriendStatus(300, handleStatusChange); // Clean up last effect

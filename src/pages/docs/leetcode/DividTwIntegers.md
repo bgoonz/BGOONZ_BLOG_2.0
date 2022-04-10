@@ -11,7 +11,6 @@ seo:
 template: docs
 ---
 
-
 ## [29. Divide Two Integers](https://leetcode.com/problems/divide-two-integers/description/)
 
 ### Problem:
@@ -38,9 +37,9 @@ Output: -2
 
 **Note:**
 
-- Both dividend and divisor will be 32-bit signed integers.
-- The divisor will never be 0.
-- Assume we are dealing with an environment which could only store integers within the 32-bit signed integer range: [−231, 231 − 1]. For the purpose of this problem, assume that your function returns 231 − 1 when the division result overflows.
+-   Both dividend and divisor will be 32-bit signed integers.
+-   The divisor will never be 0.
+-   Assume we are dealing with an environment which could only store integers within the 32-bit signed integer range: [−231, 231 − 1]. For the purpose of this problem, assume that your function returns 231 − 1 when the division result overflows.
 
 ### Solution:
 

@@ -11,7 +11,6 @@ seo:
 template: docs
 ---
 
-
 # RangeError: radix must be an integer
 
 The JavaScript exception "radix must be an integer at least 2 and no greater than 36" occurs when the optional `radix` parameter of the [`Number.prototype.toString()`](../global_objects/number/tostring) or the [`BigInt.prototype.toString()`](../global_objects/bigint/tostring) method was specified and is not between 2 and 36.
@@ -34,10 +33,10 @@ Why is this parameter's value limited to 36? A radix that is larger than 10 uses
 
 The most common radixes:
 
-- 2 for [binary numbers](https://en.wikipedia.org/wiki/Binary_number),
-- 8 for [octal numbers](https://en.wikipedia.org/wiki/Octal),
-- 10 for [decimal numbers](https://en.wikipedia.org/wiki/Decimal),
-- 16 for [hexadecimal numbers](https://en.wikipedia.org/wiki/Hexadecimal).
+-   2 for [binary numbers](https://en.wikipedia.org/wiki/Binary_number),
+-   8 for [octal numbers](https://en.wikipedia.org/wiki/Octal),
+-   10 for [decimal numbers](https://en.wikipedia.org/wiki/Decimal),
+-   16 for [hexadecimal numbers](https://en.wikipedia.org/wiki/Hexadecimal).
 
 ## Examples
 

@@ -13,7 +13,6 @@ seo:
 template: docs
 ---
 
-
 ## Modules: CommonJS modules[#](https://nodejs.org/api/modules.html#modules_modules_commonjs_modules)
 
 [Stability: 2](https://nodejs.org/api/documentation.html#documentation_stability_index) - Stable
@@ -88,10 +87,10 @@ Packages can depend on one another. In order to install package `foo`, it may be
 
 Because Node.js looks up the `realpath` of any modules it loads (that is, it resolves symlinks) and then [looks for their dependencies in `node_modules` folders](https://nodejs.org/api/modules.html#modules_loading_from_node_modules_folders), this situation can be resolved with the following architecture:
 
-- `/usr/lib/node/foo/1.2.3/`: Contents of the `foo` package, version 1.2.3.
-- `/usr/lib/node/bar/4.3.2/`: Contents of the `bar` package that `foo` depends on.
-- `/usr/lib/node/foo/1.2.3/node_modules/bar`: Symbolic link to `/usr/lib/node/bar/4.3.2/`.
-- `/usr/lib/node/bar/4.3.2/node_modules/*`: Symbolic links to the packages that `bar` depends on.
+-   `/usr/lib/node/foo/1.2.3/`: Contents of the `foo` package, version 1.2.3.
+-   `/usr/lib/node/bar/4.3.2/`: Contents of the `bar` package that `foo` depends on.
+-   `/usr/lib/node/foo/1.2.3/node_modules/bar`: Symbolic link to `/usr/lib/node/bar/4.3.2/`.
+-   `/usr/lib/node/bar/4.3.2/node_modules/*`: Symbolic links to the packages that `bar` depends on.
 
 Thus, even if a cycle is encountered, or if there are dependency conflicts, every module will be able to get a version of its dependency that it can use.
 
@@ -329,8 +328,8 @@ This is the extent of the awareness of `package.json` files within Node.js.
 
 If there is no [`package.json`](https://nodejs.org/api/packages.html#packages_node_js_package_json_field_definitions) file present in the directory, or if the [`"main"`](https://nodejs.org/api/packages.html#packages_main) entry is missing or cannot be resolved, then Node.js will attempt to load an `index.js` or `index.node` file out of that directory. For example, if there was no [`package.json`](https://nodejs.org/api/packages.html#packages_node_js_package_json_field_definitions) file in the previous example, then `require('./some-library')` would attempt to load:
 
-- `./some-library/index.js`
-- `./some-library/index.node`
+-   `./some-library/index.js`
+-   `./some-library/index.node`
 
 If these attempts fail, then Node.js will report the entire module as missing with the default error:
 
@@ -346,10 +345,10 @@ If it is not found there, then it moves to the parent directory, and so on, unti
 
 For example, if the file at `'/home/ry/projects/foo.js'` called `require('bar.js')`, then Node.js would look in the following locations, in this order:
 
-- `/home/ry/projects/node_modules/bar.js`
-- `/home/ry/node_modules/bar.js`
-- `/home/node_modules/bar.js`
-- `/node_modules/bar.js`
+-   `/home/ry/projects/node_modules/bar.js`
+-   `/home/ry/node_modules/bar.js`
+-   `/home/node_modules/bar.js`
+-   `/node_modules/bar.js`
 
 This allows programs to localize their dependencies, so that they do not clash.
 
@@ -367,9 +366,9 @@ On Windows, `NODE_PATH` is delimited by semicolons (`;`) instead of colons.
 
 Additionally, Node.js will search in the following list of GLOBAL_FOLDERS:
 
-- 1: `$HOME/.node_modules`
-- 2: `$HOME/.node_libraries`
-- 3: `$PREFIX/lib/node`
+-   1: `$HOME/.node_modules`
+-   2: `$HOME/.node_libraries`
+-   3: `$PREFIX/lib/node`
 
 Where `$HOME` is the user's home directory, and `$PREFIX` is the Node.js configured `node_prefix`.
 
@@ -389,10 +388,10 @@ Before a module's code is executed, Node.js will wrap it with a function wrapper
 
 By doing this, Node.js achieves a few things:
 
-- It keeps top-level variables (defined with `var`, `const` or `let`) scoped to the module rather than the global object.
-- It helps to provide some global-looking variables that are actually specific to the module, such as:
-    - The `module` and `exports` objects that the implementor can use to export values from the module.
-    - The convenience variables `__filename` and `__dirname`, containing the module's absolute filename and directory path.
+-   It keeps top-level variables (defined with `var`, `const` or `let`) scoped to the module rather than the global object.
+-   It helps to provide some global-looking variables that are actually specific to the module, such as:
+    -   The `module` and `exports` objects that the implementor can use to export values from the module.
+    -   The convenience variables `__filename` and `__dirname`, containing the module's absolute filename and directory path.
 
 ### The module scope[#](https://nodejs.org/api/modules.html#modules_the_module_scope)
 
@@ -400,7 +399,7 @@ By doing this, Node.js achieves a few things:
 
 Added in: v0.1.27
 
-- [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
+-   [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
 
 The directory name of the current module. This is the same as the [`path.dirname()`](https://nodejs.org/api/path.html#path_path_dirname_path) of the [`__filename`](https://nodejs.org/api/modules.html#modules_filename).
 
@@ -417,7 +416,7 @@ console.log(path.dirname(__filename));
 
 Added in: v0.0.1
 
-- [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
+-   [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
 
 The file name of the current module. This is the current module file's absolute path with symlinks resolved.
 
@@ -438,8 +437,8 @@ console.log(__dirname);
 
 Given two modules: `a` and `b`, where `b` is a dependency of `a` and there is a directory structure of:
 
-- `/Users/mjr/app/a.js`
-- `/Users/mjr/app/node_modules/b/b.js`
+-   `/Users/mjr/app/a.js`
+-   `/Users/mjr/app/node_modules/b/b.js`
 
 References to `__filename` within `b.js` will return `/Users/mjr/app/node_modules/b/b.js` while references to `__filename` within `a.js` will return `/Users/mjr/app/a.js`.
 
@@ -447,7 +446,7 @@ References to `__filename` within `b.js` will return `/Users/mjr/app/node_module
 
 Added in: v0.1.12
 
-- [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
+-   [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
 
 A reference to the `module.exports` that is shorter to type. See the section about the [exports shortcut](https://nodejs.org/api/modules.html#modules_exports_shortcut) for details on when to use `exports` and when to use `module.exports`.
 
@@ -455,7 +454,7 @@ A reference to the `module.exports` that is shorter to type. See the section abo
 
 Added in: v0.1.16
 
-- [<module>](https://nodejs.org/api/modules.html#modules_the_module_object)
+-   [<module>](https://nodejs.org/api/modules.html#modules_the_module_object)
 
 A reference to the current module, see the section about the [`module` object](https://nodejs.org/api/modules.html#modules_the_module_object). In particular, `module.exports` is used for defining what a module exports and makes available through `require()`.
 
@@ -463,8 +462,8 @@ A reference to the current module, see the section about the [`module` object](h
 
 Added in: v0.1.13
 
-- `id` [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) module name or path
-- Returns: [<any>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Data_types) exported module content
+-   `id` [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) module name or path
+-   Returns: [<any>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Data_types) exported module content
 
 Used to import modules, `JSON`, and local files. Modules can be imported from `node_modules`. Local modules and JSON files can be imported using a relative path (e.g. `./`, `./foo`, `./bar/baz`, `../foo`) that will be resolved against the directory named by [`__dirname`](https://nodejs.org/api/modules.html#modules_dirname) (if defined) or the current working directory. The relative paths of POSIX style are resolved in an OS independent fashion, meaning that the examples above will work on Windows in the same way they would on Unix systems.
 
@@ -484,7 +483,7 @@ const crypto = require('crypto');
 
 Added in: v0.3.0
 
-- [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
+-   [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
 
 Modules are cached in this object when they are required. By deleting a key value from this object, the next `require` will reload the module. This does not apply to [native addons](https://nodejs.org/api/addons.html), for which reloading will result in an error.
 
@@ -507,7 +506,7 @@ Added in: v0.3.0Deprecated since: v0.10.6
 
 [Stability: 0](https://nodejs.org/api/documentation.html#documentation_stability_index) - Deprecated
 
-- [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
+-   [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
 
 Instruct `require` on how to handle certain file extensions.
 
@@ -525,7 +524,7 @@ Avoid using `require.extensions`. Use could cause subtle bugs and resolving the 
 
 Added in: v0.1.17
 
-- [<module>](https://nodejs.org/api/modules.html#modules_the_module_object)
+-   [<module>](https://nodejs.org/api/modules.html#modules_the_module_object)
 
 The `Module` object representing the entry script loaded when the Node.js process launched. See ["Accessing the main module"](https://nodejs.org/api/modules.html#modules_accessing_the_main_module).
 
@@ -558,10 +557,10 @@ Module {
 
 History
 
-- `request` [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) The module path to resolve.
-- `options` [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
-- - `paths` [<string[]>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) Paths to resolve module location from. If present, these paths are used instead of the default resolution paths, with the exception of [GLOBAL_FOLDERS](https://nodejs.org/api/modules.html#modules_loading_from_the_global_folders) like `$HOME/.node_modules`, which are always included. Each of these paths is used as a starting point for the module resolution algorithm, meaning that the `node_modules` hierarchy is checked from this location.
-- Returns: [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
+-   `request` [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) The module path to resolve.
+-   `options` [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
+-   -   `paths` [<string[]>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) Paths to resolve module location from. If present, these paths are used instead of the default resolution paths, with the exception of [GLOBAL_FOLDERS](https://nodejs.org/api/modules.html#modules_loading_from_the_global_folders) like `$HOME/.node_modules`, which are always included. Each of these paths is used as a starting point for the module resolution algorithm, meaning that the `node_modules` hierarchy is checked from this location.
+-   Returns: [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
 
 Use the internal `require()` machinery to look up the location of a module, but rather than loading the module, just return the resolved filename.
 
@@ -571,8 +570,8 @@ If the module can not be found, a `MODULE_NOT_FOUND` error is thrown.
 
 Added in: v8.9.0
 
-- `request` [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) The module path whose lookup paths are being retrieved.
-- Returns: [<string[]>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) | [<null>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Null_type)
+-   `request` [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) The module path whose lookup paths are being retrieved.
+-   Returns: [<string[]>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) | [<null>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Null_type)
 
 Returns an array containing the paths searched during resolution of `request` or `null` if the `request` string references a core module, for example `http` or `fs`.
 
@@ -580,7 +579,7 @@ Returns an array containing the paths searched during resolution of `request` or
 
 Added in: v0.1.16
 
-- [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
+-   [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
 
 In each module, the `module` free variable is a reference to the object representing the current module. For convenience, `module.exports` is also accessible via the `exports` module-global. `module` is not actually a global but rather local to each module.
 
@@ -588,7 +587,7 @@ In each module, the `module` free variable is a reference to the object represen
 
 Added in: v0.1.16
 
-- [<module[]>](https://nodejs.org/api/modules.html#modules_the_module_object)
+-   [<module[]>](https://nodejs.org/api/modules.html#modules_the_module_object)
 
 The module objects required for the first time by this one.
 
@@ -596,7 +595,7 @@ The module objects required for the first time by this one.
 
 Added in: v0.1.16
 
-- [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
+-   [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
 
 The `module.exports` object is created by the `Module` system. Sometimes this is not acceptable; many want their module to be an instance of some class. To do this, assign the desired export object to `module.exports`. Assigning the desired object to `exports` will simply rebind the local `exports` variable, which is probably not what is desired.
 
@@ -684,7 +683,7 @@ function require(/* ... */) {
 
 Added in: v0.1.16
 
-- [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
+-   [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
 
 The fully resolved filename of the module.
 
@@ -692,7 +691,7 @@ The fully resolved filename of the module.
 
 Added in: v0.1.16
 
-- [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
+-   [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
 
 The identifier for the module. Typically this is the fully resolved filename.
 
@@ -700,13 +699,13 @@ The identifier for the module. Typically this is the fully resolved filename.
 
 Added in: v15.4.0
 
-- Type: [<boolean>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type) `true` if the module is running during the Node.js preload phase.
+-   Type: [<boolean>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type) `true` if the module is running during the Node.js preload phase.
 
 #### `module.loaded`[#](https://nodejs.org/api/modules.html#modules_module_loaded)
 
 Added in: v0.1.16
 
-- [<boolean>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type)
+-   [<boolean>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type)
 
 Whether or not the module is done loading, or is in the process of loading.
 
@@ -716,7 +715,7 @@ Added in: v0.1.16Deprecated since: v14.6.0, v12.19.0
 
 [Stability: 0](https://nodejs.org/api/documentation.html#documentation_stability_index) - Deprecated: Please use [`require.main`](https://nodejs.org/api/modules.html#modules_require_main) and [`module.children`](https://nodejs.org/api/modules.html#modules_module_children) instead.
 
-- [<module>](https://nodejs.org/api/modules.html#modules_the_module_object) | [<null>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Null_type) | [<undefined>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Undefined_type)
+-   [<module>](https://nodejs.org/api/modules.html#modules_the_module_object) | [<null>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Null_type) | [<undefined>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Undefined_type)
 
 The module that first required this one, or `null` if the current module is the entry point of the current process, or `undefined` if the module was loaded by something that is not a CommonJS module (E.G.: REPL or `import`).
 
@@ -724,7 +723,7 @@ The module that first required this one, or `null` if the current module is the 
 
 Added in: v11.14.0
 
-- [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
+-   [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
 
 The directory name of the module. This is usually the same as the [`path.dirname()`](https://nodejs.org/api/path.html#path_path_dirname_path) of the [`module.id`](https://nodejs.org/api/modules.html#modules_module_id).
 
@@ -732,7 +731,7 @@ The directory name of the module. This is usually the same as the [`path.dirname
 
 Added in: v0.4.0
 
-- [<string[]>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
+-   [<string[]>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
 
 The search paths for the module.
 
@@ -740,8 +739,8 @@ The search paths for the module.
 
 Added in: v0.5.1
 
-- `id` [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
-- Returns: [<any>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Data_types) exported module content
+-   `id` [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
+-   Returns: [<any>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Data_types) exported module content
 
 The `module.require()` method provides a way to load a module as if `require()` was called from the original module.
 
@@ -751,6 +750,6 @@ In order to do this, it is necessary to get a reference to the `module` object. 
 
 This section was moved to [Modules: `module` core module](https://nodejs.org/api/module.html#module_the_module_object).
 
-- [`module.builtinModules`](https://nodejs.org/api/module.html#module_module_builtinmodules)
-- [`module.createRequire(filename)`](https://nodejs.org/api/module.html#module_module_createrequire_filename)
-- [](https://nodejs.org/api/module.html#module_module_syncbuiltinesmexports)
+-   [`module.builtinModules`](https://nodejs.org/api/module.html#module_module_builtinmodules)
+-   [`module.createRequire(filename)`](https://nodejs.org/api/module.html#module_module_createrequire_filename)
+-   [](https://nodejs.org/api/module.html#module_module_syncbuiltinesmexports)

@@ -11,7 +11,6 @@ seo:
 template: docs
 ---
 
-
 # Math.acos()
 
 The `Math.acos()` function returns the arccosine (in radians) of a number, that is

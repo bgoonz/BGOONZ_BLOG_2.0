@@ -10,7 +10,6 @@ seo:
 template: docs
 ---
 
-
 # Dynamic Time Warping Algorithm Explained (Python)
 
 In this world which is getting dominated by Internet of Things (IoT), there is an increasing need to understand signals from devices installed in households, shopping malls, factories and offices. For example, any voice assistant detects, authenticates and interprets commands from humans even if it is slow or fast. Our voice tone tends to be different during different times of the day. In the early morning after we get up from bed, we interact with a slower, heavier and lazier tone compared to other times of the day. These devices treat the signals as time series and compare the peaks, troughs and slopes by taking into account the varying lags and phases in the signals to come up with a similarity score. One of the most common algorithms used to accomplish this is _Dynamic Time Warping (DTW)_. It is a very robust technique to compare two or more Time Series by ignoring any shifts and speed.
@@ -229,19 +228,19 @@ where 𝑑 is the Euclidean distance. Then, the overall path cost can be calcula
 
 The warping path is found using a dynamic programming approach to align two sequences. Going through all possible paths is "combinatorically explosive" [1]. Therefore, for efficiency purposes, it's important to limit the number of possible warping paths, and hence the following constraints are outlined:
 
-- Boundary Condition: This constraint ensures that the warping path begins with the start points of both signals and terminates with their endpoints.
+-   Boundary Condition: This constraint ensures that the warping path begins with the start points of both signals and terminates with their endpoints.
 
 ![](https://miro.medium.com/max/60/1*SHsmQu2TqpaDyIArn2snzg.png?q=20)
 
 ![](https://miro.medium.com/max/452/1*SHsmQu2TqpaDyIArn2snzg.png)
 
-- Monotonicity condition: This constraint preserves the time-order of points (not going back in time).
+-   Monotonicity condition: This constraint preserves the time-order of points (not going back in time).
 
 ![](https://miro.medium.com/max/60/1*RNg2VENGaWoyvGrvyeg61A.png?q=20)
 
 ![](https://miro.medium.com/max/311/1*RNg2VENGaWoyvGrvyeg61A.png)
 
-- Continuity (step size) condition: This constraint limits the path transitions to adjacent points in time (not jumping in time).
+-   Continuity (step size) condition: This constraint limits the path transitions to adjacent points in time (not jumping in time).
 
 ![](https://miro.medium.com/max/60/1*lU99pFyomdPeaHuR26bDyA.png?q=20)
 
@@ -249,19 +248,19 @@ The warping path is found using a dynamic programming approach to align two sequ
 
 In addition to the above three constraints, there are other less frequent conditions for an allowable warping path:
 
-- Warping window condition: Allowable points can be restricted to fall within a given warping window of width 𝜔 (a positive integer).
+-   Warping window condition: Allowable points can be restricted to fall within a given warping window of width 𝜔 (a positive integer).
 
 ![](https://miro.medium.com/max/60/1*9apgwkXeU3gOHLudFsIosA.png?q=20)
 
 ![](https://miro.medium.com/max/168/1*9apgwkXeU3gOHLudFsIosA.png)
 
-- Slope condition: The warping path can be constrained by restricting the slope, and consequently avoiding extreme movements in one direction.
+-   Slope condition: The warping path can be constrained by restricting the slope, and consequently avoiding extreme movements in one direction.
 
 An acceptable warping path has combinations of chess king moves that are:
 
-- Horizontal moves: (𝑖, 𝑗) → (𝑖, 𝑗+1)
-- Vertical moves: (𝑖, 𝑗) → (𝑖+1, 𝑗)
-- Diagonal moves: (𝑖, 𝑗) → (𝑖+1, 𝑗+1)
+-   Horizontal moves: (𝑖, 𝑗) → (𝑖, 𝑗+1)
+-   Vertical moves: (𝑖, 𝑗) → (𝑖+1, 𝑗)
+-   Diagonal moves: (𝑖, 𝑗) → (𝑖+1, 𝑗+1)
 
 # Implementation
 
@@ -444,10 +443,10 @@ DTW overcomes the issue by developing a one-to-many match so that the troughs an
 
 In general, DTW is a method that calculates an optimal match between two given sequences (e.g. time series) with certain restriction and rules(comes from wiki):
 
-- Every index from the first sequence must be matched with one or more indices from the other sequence and vice versa
-- The first index from the first sequence must be matched with the first index from the other sequence (but it does not have to be its only match)
-- The last index from the first sequence must be matched with the last index from the other sequence (but it does not have to be its only match)
-- The mapping of the indices from the first sequence to indices from the other sequence must be monotonically increasing, and vice versa, i.e. if `j > i` are indices from the first sequence, then there must not be two indices `l > k` in the other sequence, such that index `i` is matched with index `l` and index `j` is matched with index `k` , and vice versa
+-   Every index from the first sequence must be matched with one or more indices from the other sequence and vice versa
+-   The first index from the first sequence must be matched with the first index from the other sequence (but it does not have to be its only match)
+-   The last index from the first sequence must be matched with the last index from the other sequence (but it does not have to be its only match)
+-   The mapping of the indices from the first sequence to indices from the other sequence must be monotonically increasing, and vice versa, i.e. if `j > i` are indices from the first sequence, then there must not be two indices `l > k` in the other sequence, such that index `i` is matched with index `l` and index `j` is matched with index `k` , and vice versa
 
 The optimal match is denoted by the match that satisfies all the restrictions and the rules and that has the minimal cost, where the cost is computed as the sum of absolute differences, for each matched pair of indices, between their values.
 

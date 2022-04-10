@@ -11,7 +11,6 @@ seo:
 template: docs
 ---
 
-
 # RegExp
 
 The `RegExp` object is used for matching text with a pattern.
@@ -24,8 +23,8 @@ For an introduction to regular expressions, read the [Regular Expressions chapte
 
 There are two ways to create a `RegExp` object: a _literal notation_ and a _constructor_.
 
-- **The literal notation's** parameters are enclosed between slashes and do not use quotation marks.
-- **The constructor function's** parameters are not enclosed between slashes but do use quotation marks.
+-   **The literal notation's** parameters are enclosed between slashes and do not use quotation marks.
+-   **The constructor function's** parameters are not enclosed between slashes but do use quotation marks.
 
 The following three expressions create the same regular expression object:
 

@@ -10,13 +10,11 @@ seo:
 template: docs
 ---
 
-
 # How do I completely uninstall Ubuntu?
 
-- Just boot into Windows and head to Control Panel > Programs and Features. Find Ubuntu in the list of installed programs, and then uninstall it like you would any other program. The uninstaller automatically removes the Ubuntu files and boot loader entry from your computer.
+-   Just boot into Windows and head to Control Panel > Programs and Features. Find Ubuntu in the list of installed programs, and then uninstall it like you would any other program. The uninstaller automatically removes the Ubuntu files and boot loader entry from your computer.
 
 **Go to Start, right click Computer, then select Manage. Then select Disk Management from the sidebar. Right-click your Ubuntu partitions and select "Delete". Check before you delete!**.
-
 
 ### How do I remove Linux from my laptop?
 
@@ -28,8 +26,7 @@ template: docs
 
 ### Does dual boot slow down laptop?
 
-> **Essentially, dual booting will slow down your computer or laptop. While a Linux OS may use the hardware more efficiently overall, as the secondary OS it is at a disadvantage.
-
+> \*\*Essentially, dual booting will slow down your computer or laptop. While a Linux OS may use the hardware more efficiently overall, as the secondary OS it is at a disadvantage.
 
 ### How do I completely remove Ubuntu and install Windows 10?
 
@@ -43,11 +40,9 @@ template: docs
 
 > **Press the "D" key on your keyboard and then press the "L" key to confirm your decision to delete the operating system. Depending on the amount of data on the hard drive, the deletion process could take up to 30 minutes to complete.**
 
-
-
 #### How do I uninstall a package in Linux?
 
-> **Include the -e option on the rpm command to remove installed packages; the command syntax is: rpm -e package\_name \[package\_name…\] To instruct rpm to remove multiple packages, provide a list of packages you wish to remove when invoking the command.**
+> **Include the -e option on the rpm command to remove installed packages; the command syntax is: rpm -e package_name \[package_name…\] To instruct rpm to remove multiple packages, provide a list of packages you wish to remove when invoking the command.**
 
 #### What happens if I delete my operating system?
 
@@ -56,8 +51,6 @@ template: docs
 ### How do I uninstall Windows 11?
 
 > **How to Uninstall Windows 11 Navigate to Settings->System->Recovery. Click Go back next to Previous version of Windows. Check off one or more reasons for your uninstall when prompted. Click "No, thanks" when asked to check for updates instead of rolling back. Click Next.**
-
-
 
 #### How do I remove a Windows hard drive without formatting?
 
@@ -71,8 +64,6 @@ template: docs
 
 > **Boot with it. A window (Boot-Repair) will appear, close it. Then launch OS-Uninstaller from the bottom left menu. In the OS Uninstaller window, select the OS you want to remove and click the OK button, then click the Apply button in the confirmation window that opens up.**
 
-
-
 #### How do I remove the boot menu in Windows 10?
 
 > **Delete Windows 10 Boot Menu Entry with msconfig.exe Press Win + R on the keyboard and type msconfig into the Run box. In System Configuration, switch to the Boot tab. Select an entry you want to delete in the list. Click on the Delete button. Click Apply and OK. Now you can close the System Configuration app.**
@@ -83,8 +74,7 @@ template: docs
 
 ### Is dual booting a good idea?
 
-> **If your system does not quite have the resources to effectively run a virtual machine (which can be very taxing), and you have a need to work between the two systems, then dual booting is probably a good option for you. "The take-away from this however, and generally good advice for most things, would be to plan ahead.
-
+> \*\*If your system does not quite have the resources to effectively run a virtual machine (which can be very taxing), and you have a need to work between the two systems, then dual booting is probably a good option for you. "The take-away from this however, and generally good advice for most things, would be to plan ahead.
 
 ### Can I run two OS on my laptop?
 
@@ -96,4 +86,4 @@ template: docs
 
 ### How do I switch from Ubuntu to Windows without restarting?
 
-> **From a workspace: Press Super + Tab to bring up the window switcher. Release Super to select the next (highlighted) window in the switcher. Otherwise, still holding down the Super key, press Tab to cycle through the list of open windows, or Shift + Tab to cycle backwards.
+> \*\*From a workspace: Press Super + Tab to bring up the window switcher. Release Super to select the next (highlighted) window in the switcher. Otherwise, still holding down the Super key, press Tab to cycle through the list of open windows, or Shift + Tab to cycle backwards.

@@ -16,23 +16,23 @@ unary, and written in infix notation, i.e. `a op b`.
 
 Here is list of typical operations:
 
-- **[Assignment][]**: `a = b`, `a += b`, `a |= b`, and more
-- 
-- **[Arithmetic][]**: `a + b`, `a - b
-- 
-- **String concatenation:** `a + b`
-- 
-- **[Boolean][]:** `a && b`, `a || b`, `!a`
-- 
-- **[Bitwise][]:** `a & b`, `a | b`, `a ^ b`, `~a`, `a << b`, `a >> b`, `a >>> b`
+-   **[Assignment][]**: `a = b`, `a += b`, `a |= b`, and more
+-
+-   **[Arithmetic][]**: `a + b`, `a - b
+-
+-   **String concatenation:** `a + b`
+-
+-   **[Boolean][]:** `a && b`, `a || b`, `!a`
+-
+-   **[Bitwise][]:** `a & b`, `a | b`, `a ^ b`, `~a`, `a << b`, `a >> b`, `a >>> b`
 
-- **Function calls**: `foo()`, `foo(a, b, c)`
+-   **Function calls**: `foo()`, `foo(a, b, c)`
 
-- **Increment/Decrement**: `a++`, `++a`, `a--`, `--a`
+-   **Increment/Decrement**: `a++`, `++a`, `a--`, `--a`
 
-- **[Conditional][]**: `foo ? bar : baz`
+-   **[Conditional][]**: `foo ? bar : baz`
 
-- Others: [`in`][in], [`instanceof`][instanceof], [`typeof`][typeof],
+-   Others: [`in`][in], [`instanceof`][instanceof], [`typeof`][typeof],
     [`new`][new]
 
 JavaScript also has **comparison** operators and **property accessors**,

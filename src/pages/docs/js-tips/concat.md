@@ -10,7 +10,6 @@ seo:
 template: docs
 ---
 
-
 # Array.prototype.concat()
 
 The `concat()` method is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array.
@@ -37,8 +36,8 @@ The `concat` method creates a new array consisting of the elements in the object
 
 The `concat` method does not alter `this` or any of the arrays provided as arguments but instead returns a shallow copy that contains copies of the same elements combined from the original arrays. Elements of the original arrays are copied into the new array as follows:
 
-- Object references (and not the actual object): `concat` copies object references into the new array. Both the original and new array refer to the same object. That is, if a referenced object is modified, the changes are visible to both the new and original arrays. This includes elements of array arguments that are also arrays.
-- Data types such as strings, numbers and booleans (not [`String`](../string), [`Number`](../number), and [`Boolean`](../boolean) objects): `concat` copies the values of strings and numbers into the new array.
+-   Object references (and not the actual object): `concat` copies object references into the new array. Both the original and new array refer to the same object. That is, if a referenced object is modified, the changes are visible to both the new and original arrays. This includes elements of array arguments that are also arrays.
+-   Data types such as strings, numbers and booleans (not [`String`](../string), [`Number`](../number), and [`Boolean`](../boolean) objects): `concat` copies the values of strings and numbers into the new array.
 
 **Note:** Concatenating array(s)/value(s) will leave the originals untouched. Furthermore, any operation on the new array (except operations on elements which are object references) will have no effect on the original arrays, and vice versa.
 

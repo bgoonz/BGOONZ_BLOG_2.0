@@ -10,7 +10,6 @@ seo:
 template: docs
 ---
 
-
 # Bash Commands
 
 # Bash Commands That Save Me Time and Frustration
@@ -54,8 +53,8 @@ To see the list of files and directories in the current directory use `ls` comma
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*HHzVrK2CtTPwTdYT.gif" class="graf-image" /></figure>Shows all of my files and directories of my Desktop directory.
 
-- <span id="20cb">To show the contents of a directory pass the directory name to the `ls` command i.e. `ls directory_name`.</span>
-- <span id="5cd8">Some useful `ls` command options:-</span>
+-   <span id="20cb">To show the contents of a directory pass the directory name to the `ls` command i.e. `ls directory_name`.</span>
+-   <span id="5cd8">Some useful `ls` command options:-</span>
 
 OptionDescriptionls -alist all files including hidden file starting with '.'ls -llist with the long formatls -lalist long format including hidden files
 
@@ -121,11 +120,11 @@ You can rename a file by typing `mv old_file_name new_file_name` & also rename a
 
 To do this, we use the `cp` command.
 
-- <span id="62fa">You can copy a file by entering `cp file_to_copy new_file_name`.</span>
+-   <span id="62fa">You can copy a file by entering `cp file_to_copy new_file_name`.</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*kCLVtKN9oKPbHfRF.gif" class="graf-image" /></figure>Copied my hi.txt file content into hello.txt file. For confirmation open your hello.txt file in your text editor.
 
-- <span id="9bfc">You can also copy a directory by adding the `-r` option, like `cp -r directory_to_copy new_directory_name`.</span>
+-   <span id="9bfc">You can also copy a directory by adding the `-r` option, like `cp -r directory_to_copy new_directory_name`.</span>
 
 _The_ `-r` _option for "recursive" means that it will copy all of the files including the files inside of subfolders._
 
@@ -135,11 +134,11 @@ _The_ `-r` _option for "recursive" means that it will copy all of the files incl
 
 To do this, we use the `rm` command.
 
-- <span id="487a">To remove a file, you can use the command like `rm file_to_remove`.</span>
+-   <span id="487a">To remove a file, you can use the command like `rm file_to_remove`.</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*ohCmdthd92_HA6Ze.gif" class="graf-image" /></figure>Here I removed my hi.txt file.
 
-- <span id="0e9a">To remove a directory, use the command like `rm -r directory_to_remove`.</span>
+-   <span id="0e9a">To remove a directory, use the command like `rm -r directory_to_remove`.</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*voDbzwSpw24A2RjQ.gif" class="graf-image" /></figure>I removed my folder-copy directory from my cli-practice directory i.e. current working directory.
 
@@ -605,11 +604,11 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/bash-commands-that-save-time-920fb6ab9d0a" class="p-canonical">Canonical link</a>
 
- August 31, 2021.
+August 31, 2021.
 
 # Resources:
 
-- [holy grail](https://gist.github.com/bgoonz/df74dfa73bb5edd239ac738a14104eee)
+-   [holy grail](https://gist.github.com/bgoonz/df74dfa73bb5edd239ac738a14104eee)
 
 # 1. Remove spaces from file and folder names and then remove numbers from files and folder names....
 
@@ -624,7 +623,7 @@ find . -name "* *" -type d | rename 's/ /_/g'
 find . -name "* *" -type f | rename 's/ /_/g'
 ```
 
-```sh
+````sh
 
 ```sh
 find $dir -type f | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
@@ -652,7 +651,7 @@ fs.writeFile('output.md', cat, err => {
   if (err) throw err;
 });
 
-```
+````
 
 ---
 

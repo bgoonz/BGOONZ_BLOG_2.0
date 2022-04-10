@@ -35,8 +35,6 @@ seo:
 template: docs
 ---
 
-
-
 <h1>   Markdown tools  </h1>
 <hr>
 <br>
@@ -61,8 +59,6 @@ template: docs
 <br>
 <hr>
 <br>
-
-
 
 <hr>
 <br>

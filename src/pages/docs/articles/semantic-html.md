@@ -10,14 +10,13 @@ seo:
 template: docs
 ---
 
-
 Three different aspects of web site production:
 
-- Content -- the text, images, etc. What the user wants to read.
-- 
-- Style -- how the content is arranged on the page, fonts, colours, page style.
+-   Content -- the text, images, etc. What the user wants to read.
+-
+-   Style -- how the content is arranged on the page, fonts, colours, page style.
 
-- Behaviour -- how users interact with the site, data processing, dynamic page elements.
+-   Behaviour -- how users interact with the site, data processing, dynamic page elements.
 
 Since each requires different skills, a good (software) design would seperate them.
 
@@ -59,11 +58,11 @@ All of these additions to HTML and the mis-use of existing tags meant that a lan
 
 The current suite of web languages understood by your browser (HTML, CSS and Javascript) each serve different roles in the web development process:
 
-- HTML - Content
-- 
-- CSS - Style
+-   HTML - Content
+-
+-   CSS - Style
 
-- Javascript - Behaviour
+-   Javascript - Behaviour
 
 The third of these - Javascript and Behaviour - refer to the way that Javascript can be used to change the way that the user interacts with the page. This doesn't really have an analogue in the print document production world but it's an important aspect of modern web content production. It fits into this framework because the behavioural changes that Javascript can introduce should not be the concern of the content author or the visual designer (though both might have opinions on what they'd like to see).
 
@@ -73,7 +72,7 @@ It is useful to think of these three aspects of web design as independent things
 
 From a Computer Science/Software Engineering point of view there is a very important principle called the [Separation of Concerns](http://en.wikipedia.org/wiki/Separation_of_concerns) (SoC) that is illustrated perfectly by the way that the various web languages have evolved. The SoC principle is about partitioning the work that we do in software development into parts that can be considered separately. This is achieved by _modularisation_ within a software project and is helped by things like classes and interface descriptions between modules
 
-- in fact these things have been developed to support SoC.
+-   in fact these things have been developed to support SoC.
 
 The SoC principle allows us to develop large complex software by allowing us to concentrate on different aspects of the solution. It could be that we do that alone, spending time on one aspect and then another, or as a team with different people assigned to different aspects. Either way, being able to work on part of the problem makes it manageable and improves the overall quality of the solution.
 
@@ -111,11 +110,11 @@ Another motivation for using semantic markup is for users who cannot read via a 
 
 1.  Find an appropriate HTML tag to mark up the following items:
 
-    - the name of a book that you are citing in an essay
+    -   the name of a book that you are citing in an essay
 
-    - a fragment of computer code, eg. a bit of Python
+    -   a fragment of computer code, eg. a bit of Python
 
-    - an abbreviation or acronym and it's expansion (e.g. HTML - Hypertext Markup language)
+    -   an abbreviation or acronym and it's expansion (e.g. HTML - Hypertext Markup language)
 
 ## Extending the Semantics of HTML
 
@@ -141,9 +140,9 @@ Rather than being a chapter that will teach you the HTML language this will be a
 
 Most people will know some HTML by now (assuming you've been studying computing for a while or have a general interest in the web). My task here is not to teach you HTML or act as a reference for the language, there are plenty of resources around that will do this. Some examples are:
 
-- [w3schools HTML tutorial](http://www.w3schools.com/html/default.asp) w3schools is one of the most widely used tutorial and reference sites on the web for HTML and other web technologies.
-- 
-- [Learn HTML](https://developer.mozilla.org/en-US/learn/html) from the Mozilla Developer Network, the organisation that produces the Firefox browser. This page has pointers to a number of HTML tutorials and resources.
+-   [w3schools HTML tutorial](http://www.w3schools.com/html/default.asp) w3schools is one of the most widely used tutorial and reference sites on the web for HTML and other web technologies.
+-
+-   [Learn HTML](https://developer.mozilla.org/en-US/learn/html) from the Mozilla Developer Network, the organisation that produces the Firefox browser. This page has pointers to a number of HTML tutorials and resources.
 
 ## About HTML
 

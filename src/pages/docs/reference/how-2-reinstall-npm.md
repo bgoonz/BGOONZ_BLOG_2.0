@@ -10,7 +10,6 @@ seo:
 template: docs
 ---
 
-
 The Node Package Manager (usually shortened to npm) and Node.js are popular technologies among JavaScript developers. npm is the default package management utility that is installed automatically on your machine when you download and install Node.js.
 
 npm assists in building, consuming, managing, and sharing small pieces of code. On the other hand, Node.js provides a server-side environment for creating powerful applications.

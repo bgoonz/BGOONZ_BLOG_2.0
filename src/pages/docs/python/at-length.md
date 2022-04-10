@@ -10,7 +10,6 @@ seo:
 template: docs
 ---
 
-
 #### Understanding variables <a id="understanding-variables"></a>
 
 Variables are simply declarations that are used to store certain values. For instance, the variable `name` can hold the value of `John Smith.` Several rules need to be considered when declaring variable names. For starters, a variable name cannot begin with a number.
@@ -2123,9 +2122,9 @@ Methods and variables cannot be named using Python keywords.
 
 Now, what is a keyword? For example, when we talked about `for` loop, as in:
 
-```python
+````python
 ```for i in range(1, 11): print(i)```...
-```
+````
 
 -   **`for`** is a keyword
 -   **`in`** is a keyword
@@ -6766,9 +6765,9 @@ Methods and variables cannot be named using Python keywords.
 
 Now, what is a keyword? For example, when we talked about `for` loop, as in:
 
-```python
+````python
 ```for i in range(1, 11): print(i)```...
-```
+````
 
 -   **`for`** is a keyword
 -   **`in`** is a keyword

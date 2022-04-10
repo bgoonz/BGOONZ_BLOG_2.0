@@ -11,7 +11,6 @@ seo:
 template: docs
 ---
 
-
 # Map
 
 The `Map` object holds key-value pairs and remembers the original insertion order of the keys. Any value (both objects and [primitive values](https://developer.mozilla.org/en-US/docs/Glossary/Primitive)) may be used as either a key or a value.
@@ -22,9 +21,9 @@ A `Map` object iterates its elements in insertion order — a [`for...of`](../st
 
 ### Key equality
 
-- Key equality is based on the [`sameValueZero`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness#same-value-zero_equality) algorithm.
-- [`NaN`](nan) is considered the same as `NaN` (even though `NaN !== NaN`) and all other values are considered equal according to the semantics of the `===` operator.
-- In the current ECMAScript specification, `-0` and `+0` are considered equal, although this was not so in earlier drafts. See _"Value equality for -0 and 0"_ in the [Browser compatibility](#browser_compatibility) table for details.
+-   Key equality is based on the [`sameValueZero`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness#same-value-zero_equality) algorithm.
+-   [`NaN`](nan) is considered the same as `NaN` (even though `NaN !== NaN`) and all other values are considered equal according to the semantics of the `===` operator.
+-   In the current ECMAScript specification, `-0` and `+0` are considered equal, although this was not so in earlier drafts. See _"Value equality for -0 and 0"_ in the [Browser compatibility](#browser_compatibility) table for details.
 
 ### Objects vs. Maps
 

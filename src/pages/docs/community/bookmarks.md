@@ -11,25 +11,24 @@ seo:
 template: docs
 ---
 
-
 # Bookmarks
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 <!-- code_chunk_output -->
 
-- [Bookmarks](#bookmarks)
-    - [NORWEX](#norwex)
-    - [RESOURCES](#resources)
-    - [a/A](#aa)
-    - [netlify](#netlify)
-    - [PYTHON](#python)
-    - [React-Redux](#react-redux)
-    - [AMAZON](#amazon)
-    - [GITHUB](#github)
-    - [MISC](#misc)
-    - [AMAZINGGGG](#amazingggg)
-    - [free-stuff](#free-stuff)
+-   [Bookmarks](#bookmarks)
+    -   [NORWEX](#norwex)
+    -   [RESOURCES](#resources)
+    -   [a/A](#aa)
+    -   [netlify](#netlify)
+    -   [PYTHON](#python)
+    -   [React-Redux](#react-redux)
+    -   [AMAZON](#amazon)
+    -   [GITHUB](#github)
+    -   [MISC](#misc)
+    -   [AMAZINGGGG](#amazingggg)
+    -   [free-stuff](#free-stuff)
 
 <!-- /code_chunk_output -->
 

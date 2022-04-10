@@ -11,18 +11,17 @@ seo:
 template: docs
 ---
 
-
 # Arrow function expressions
 
 An **arrow function expression** is a compact alternative to a traditional [function expression](../operators/function), but is limited and can't be used in all situations.
 
 **Differences & Limitations:**
 
-- Does not have its own bindings to `this` or `super`, and should not be used as `methods`.
-- Does not have `arguments`, or `new.target` keywords.
-- Not suitable for `call`, `apply` and [`bind`](../global_objects/function/bind) methods, which generally rely on establishing a [scope](https://developer.mozilla.org/en-US/docs/Glossary/Scope).
-- Can not be used as [constructors](https://developer.mozilla.org/en-US/docs/Glossary/Constructor).
-- Can not use `yield`, within its body.
+-   Does not have its own bindings to `this` or `super`, and should not be used as `methods`.
+-   Does not have `arguments`, or `new.target` keywords.
+-   Not suitable for `call`, `apply` and [`bind`](../global_objects/function/bind) methods, which generally rely on establishing a [scope](https://developer.mozilla.org/en-US/docs/Glossary/Scope).
+-   Can not be used as [constructors](https://developer.mozilla.org/en-US/docs/Glossary/Constructor).
+-   Can not use `yield`, within its body.
 
 ### Comparing traditional functions to arrow functions
 
@@ -370,6 +369,7 @@ However, this can be amended by putting the line break after the arrow or using 
 ### Parsing order
 
 Although the arrow in an arrow function is not an operator, arrow functions have special parsing rules that interact differently with [operator precedence](../operators/operator_precedence) compared to regular functions.
+
 ```js
     let callback;
 
@@ -380,49 +380,53 @@ Although the arrow in an arrow function is not an operator, arrow functions have
 
     callback = callback || (() => {});    // ok
 ```
+
 ## Examples
 
 ### Basic usage
+
 ```js
-    // An empty arrow function returns undefined
-    let empty = () => {};
+// An empty arrow function returns undefined
+let empty = () => {};
 
-    (() => 'foobar')();
-    // Returns "foobar"
-    // (this is an Immediately Invoked Function Expression)
+(() => 'foobar')();
+// Returns "foobar"
+// (this is an Immediately Invoked Function Expression)
 
-    var simple = a => a > 15 ? 15 : a;
-    simple(16); // 15
-    simple(10); // 10
+var simple = (a) => (a > 15 ? 15 : a);
+simple(16); // 15
+simple(10); // 10
 
-    let max = (a, b) => a > b ? a : b;
+let max = (a, b) => (a > b ? a : b);
 
-    // Easy array filtering, mapping, ...
+// Easy array filtering, mapping, ...
 
-    var arr = [5, 6, 13, 0, 1, 18, 23];
+var arr = [5, 6, 13, 0, 1, 18, 23];
 
-    var sum = arr.reduce((a, b) => a + b);
-    // 66
+var sum = arr.reduce((a, b) => a + b);
+// 66
 
-    var even = arr.filter(v => v % 2 == 0);
-    // [6, 0, 18]
+var even = arr.filter((v) => v % 2 == 0);
+// [6, 0, 18]
 
-    var double = arr.map(v => v * 2);
-    // [10, 12, 26, 0, 2, 36, 46]
+var double = arr.map((v) => v * 2);
+// [10, 12, 26, 0, 2, 36, 46]
 
-    // More concise promise chains
-    promise.then(a => {
-      // ...
-    }).then(b => {
-      // ...
+// More concise promise chains
+promise
+    .then((a) => {
+        // ...
+    })
+    .then((b) => {
+        // ...
     });
 
-    // Parameterless arrow functions that are visually easier to parse
-    setTimeout( () => {
-      console.log('I happen sooner');
-      setTimeout( () => {
+// Parameterless arrow functions that are visually easier to parse
+setTimeout(() => {
+    console.log('I happen sooner');
+    setTimeout(() => {
         // deeper code
         console.log('I happen later');
-      }, 1);
     }, 1);
+}, 1);
 ```

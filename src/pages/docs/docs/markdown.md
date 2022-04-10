@@ -10,17 +10,16 @@ seo:
 template: docs
 ---
 
-
 ## Markdown:
 
 ## Why markdown?
 
 Markdown is a universal doc format that is easy to write and easy to add to a version control system.
 
-- **Open** - Anyone can submit content, fix typos & update anything via pull requests
-- **Version control** - Roll back & see the history of any given post
-- **No CMS lock in** - We can easily port to any static site generator
-- **It's just simple** - No user accounts to manage, no CMS software to upgrade, no plugins to install.
+-   **Open** - Anyone can submit content, fix typos & update anything via pull requests
+-   **Version control** - Roll back & see the history of any given post
+-   **No CMS lock in** - We can easily port to any static site generator
+-   **It's just simple** - No user accounts to manage, no CMS software to upgrade, no plugins to install.
 
 ---
 
@@ -165,9 +164,9 @@ Useful for rendering markdown in HTML/React
 
 3. [Markdown Magic](https://github.com/DavidWells/markdown-magic)
 
-- [Repo](https://github.com/DavidWells/markdown-magic)
-- [Plugins](https://github.com/DavidWells/markdown-magic#plugins)
-- Show automatic doc generation. [Example 1](https://github.com/DavidWells/markdown-magic/blob/master/examples/generate-readme.js#L15-L23) | [Example 2](https://github.com/serverless/examples/blob/master/generate-readme.js#L71-L87)
+-   [Repo](https://github.com/DavidWells/markdown-magic)
+-   [Plugins](https://github.com/DavidWells/markdown-magic#plugins)
+-   Show automatic doc generation. [Example 1](https://github.com/DavidWells/markdown-magic/blob/master/examples/generate-readme.js#L15-L23) | [Example 2](https://github.com/serverless/examples/blob/master/generate-readme.js#L71-L87)
 
 ---
 
@@ -197,9 +196,9 @@ Show DEMO
 
 Serverless.com is comprised of 3 separate repositories
 
-- https://github.com/serverless/blog
-- https://github.com/serverless/serverless | Shoutout to [Phenomic.io](https://phenomic.io/)
-- https://github.com/serverless/site
+-   https://github.com/serverless/blog
+-   https://github.com/serverless/serverless | Shoutout to [Phenomic.io](https://phenomic.io/)
+-   https://github.com/serverless/site
 
 **Why multiple repos?**
 
@@ -213,17 +212,17 @@ A single repo is easier to manage but harder for people to find/edit/PR content.
 
 ### DEMO
 
-- Site structure
-- Serverless build process
-- [Validation](https://github.com/serverless/blog/blob/master/.travis.yml#L10)
-- [Editing Flow](https://serverless.com/framework/docs/providers/aws/cli-reference/deploy/)
-- Github optimizations
-    - [Link from top of each doc to live link on site](https://github.com/serverless/serverless/blob/master/docs/providers/aws/events/schedule.md)
-    - use markdown magic =) to [auto generate tables](https://github.com/serverless/examples) etc
-    - [Hide yaml frontmatter from github folks](https://github.com/serverless/serverless/blame/master/docs/providers/aws/events/schedule.md#L1-L7)
-    - consider linking everything to site
+-   Site structure
+-   Serverless build process
+-   [Validation](https://github.com/serverless/blog/blob/master/.travis.yml#L10)
+-   [Editing Flow](https://serverless.com/framework/docs/providers/aws/cli-reference/deploy/)
+-   Github optimizations
+    -   [Link from top of each doc to live link on site](https://github.com/serverless/serverless/blob/master/docs/providers/aws/events/schedule.md)
+    -   use markdown magic =) to [auto generate tables](https://github.com/serverless/examples) etc
+    -   [Hide yaml frontmatter from github folks](https://github.com/serverless/serverless/blame/master/docs/providers/aws/events/schedule.md#L1-L7)
+    -   consider linking everything to site
 
 ## Other Markdown Resources
 
-- [Verb](https://www.npmjs.com/package/verb) - Documentation generator for GitHub projects
-- [ACSII docs](http://asciidoctor.org/) - Markdown alternative
+-   [Verb](https://www.npmjs.com/package/verb) - Documentation generator for GitHub projects
+-   [ACSII docs](http://asciidoctor.org/) - Markdown alternative

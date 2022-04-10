@@ -10,7 +10,6 @@ seo:
 template: docs
 ---
 
-
 **What we know:**
 
 A top-level `App` component returns `<Button />` from its `render()` method.
@@ -45,10 +44,7 @@ Let's recap.
 
 It doesn't. Ultimately it's always up to the component to decide what to do with its children. For example, the `Button` implementation could completely ignore them and render something else:
 
-
 ```jsx
-
-
 function Button(props) {
     return <h1>I render whatever I want</h1>;
 }
@@ -56,10 +52,7 @@ function Button(props) {
 
 Interestingly, it could also render `children` multiple times:
 
-
 ```jsx
-
-
 function Button(props) {
     return (
         <div>
@@ -218,10 +211,7 @@ console.log(animal);
 
 ---
 
-
 ```js
-
-
 function Dish() {
     return <h1>Mac and Cheese</h1>;
 }
@@ -249,10 +239,7 @@ React.createElement('h1', null, "What's happening?");
 
 ---
 
-
 ```js
-
-
 function MyComponent() {
     return (
         <Suspense>
@@ -311,10 +298,7 @@ B. <button onClick={event => this.handleClick(event)}>Click Me</button>
 
 ---
 
-
 ```js
-
-
 function Dish(props) {
     return (
         <h1>
@@ -524,10 +508,7 @@ class clock extends React.Component {
 
 ---
 
-
 ```js
-
-
 function MyComponent(props) {
     const [done, setDone] = useState(false);
 

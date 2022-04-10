@@ -15,7 +15,6 @@ seo:
 template: docs
 ---
 
-
 ## Introduction to npm
 
 `npm` is the standard package manager for Node.js.
@@ -52,8 +51,8 @@ npm install <package-name>
 
 Often you'll see more flags added to this command:
 
-- `--save` installs and adds the entry to the `package.json` file _dependencies_
-- `--save-dev` installs and adds the entry to the `package.json` file _devDependencies_
+-   `--save` installs and adds the entry to the `package.json` file _dependencies_
+-   `--save-dev` installs and adds the entry to the `package.json` file _devDependencies_
 
 The difference is mainly that devDependencies are usually development tools, like a testing library, while `dependencies` are bundled with the app in production.
 

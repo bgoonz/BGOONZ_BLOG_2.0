@@ -10,7 +10,6 @@ seo:
 template: docs
 ---
 
-
 ## Python Practice:
 
 # Python Problems & Solutions For Beginners
