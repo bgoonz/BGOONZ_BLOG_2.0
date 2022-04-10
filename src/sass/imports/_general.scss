@@ -82,7 +82,13 @@ a {
     text-underline-offset: 0.125em;
     -webkit-transition: color 0.3s ease;
     transition: color 0.3s ease;
-
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 0.9375em;
     &:hover {
         color: $gray-600;
     }
