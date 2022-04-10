@@ -1,0 +1,89 @@
+id: ds
+title: Data Structures & Algorithms
+description: >-
+  
+
+  In computer programming terms, an algorithm is a set of well-defined instructions to solve a particular problem. It takes a set of input and produces a desired output. For example,
+
+
+  An algorithm to add two numbers:
+
+
+  1. Take two number inputs
+
+  2. Add numbers using the + operator
+
+  3. Display the result
+
+
+  - - -
+
+
+  ## Qualities of Good Algorithms
+
+
+  * Input and output should be defined precisely.
+
+  * Each step in the algorithm should be clear and unambiguous.
+
+  * Algorithms should be most effective among many different ways to solve a problem.
+
+  * An algorithm shouldn't include computer code. Instead, the algorithm should be written in such a way that it can be used in different programming languages.
+
+
+
+
+  ## What are Data Structures?
+
+
+  Data structure is a storage that is used to store and organize data. It is a way of arranging data on a computer so that it can be accessed and updated efficiently.
+
+
+  Depending on your requirement and project, it is important to choose the right data structure for your project. For example, if you want to store data sequentially in the memory, then you can go for the Array data structure.
+
+
+  ![Storing data sequentially in the array data structure](https://cdn.programiz.com/cdn/farfuture/xl3N_KXHJEeqp83aLDgy9mO6yAKNM93I_rTfJXz8I0Q/mtime:1623152250/sites/tutorial2program/files/array_dsa.png "Memory Representation of Array Data Structure")
+
+
+  Array data Structure Representation
+
+
+  **Note**: Data structure and data types are slightly different. Data structure is the collection of data types arranged in a specific order.
+
+
+  - - -
+
+
+  ## Types of Data Structure
+
+
+  Basically, data structures are divided into two categories:
+
+
+  * Linear data structure
+
+  * Non-linear data structure
+
+
+  Let's learn about each type in detail.
+
+
+  - - -
+
+
+  ## Linear data structures
+
+
+  In linear data structures, the elements are arranged in sequence one after the other. Since elements are arranged in particular order, they are easy to implement.
+
+
+  However, when the complexity of the program increases, the linear data structures might not be the best choice because of operational complexities.
+
+
+  **Popular linear data structures are:**
+
+
+  ### 1. Array Data Structure
+
+
+  In an array, elements in memory are arranged in continuous memory. All the elements of an array are of the same type. And, the type of elements that can be stored in the form of arrays is determined by the programming language.
