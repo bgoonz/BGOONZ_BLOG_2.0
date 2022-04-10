@@ -113,10 +113,9 @@ Remember that electrons can flow only when they have the opportunity to move in 
 
 A thin, solid line (as shown above) is the conventional symbol for a continuous piece of wire. Since the wire is made of a conductive material, such as copper, its constituent atoms have many free electrons which can easily move through the wire. However, there will never be a continuous or uniform flow of electrons within this wire unless they have a place to come from and a place to go. Let's add a hypothetical electron "Source" and "Destination:"
 
-ectron](http://www.ibiblio.org/kuphaldt/electricCircuits/DC/00009.png)
+ectron](<http://www.ibiblio.org/kuphaldt/electricCircuits/DC/00009.png>)
 
  with the Electron Source pushing new electrons into the wire on the left-hand side, electron flow through the wire can occur (as indicated by the arrows pointing from left to right). However, the flow will be interrupted if the conductive path formed by the wire is broken:
-
 
 Sice air is an insulating material, and an air gap separates the two pieces of wire, the once-continuous path has now been broken, and electrons cannot flow from Source to Destination. This is like cutting a water pipe in two and capping off the broken ends of the pipe: water can't flow if there's no exit out of the pipe. In electrical terms, we had a condition of electrical continuity when the wire was in one piece, and now that continuity is broken with the wire cut and separated.
 
@@ -140,7 +139,7 @@ It is interesting to note that no "wear" occurs within wires due to this electri
 
 -   For electrons to flow continuously (indefinitely) through a conductor, there must be a complete, unbroken path for them to move both into and out of that conductor.
 
-##Electric circuits
+## Electric circuits
 
 You might have been wondering how electrons can continuously flow in a uniform direction through wires without the benefit of these hypothetical electron Sources and Destinations. In order for the Source-and-Destination scheme to work, both would have to have an infinite capacity for electrons in order to sustain a continuous flow! Using the marble-and-tube analogy, the marble source and marble destination buckets would have to be infinitely large to contain enough marble capacity for a "flow" of marbles to be sustained.
 
@@ -218,7 +217,7 @@ With the "+" and "-" ends of the battery not connected to anything, there will b
 same principle holds true for the water reservoir and pump analogy: without a return pipe back to the pond, stored energy in the reservoir cannot be released in the form of water flow. Once the reservoir is completely filled up, no flow can occur, no matter how much pressure the pump may generate. There needs to be a complete path (circuit) for water to flow from the pond, to the reservoir, and back to the pond in order for continuous flow to occur.
 an provide such a path for the battery by connecting a piece of wire from one end of the battery to the other. Forming a circuit with a loop of wire, we will initiate a continuous flow of electrons in a clockwise direction:
 
-![(http://www.ibiblio.org/kuphaldt/electricCircuits/DC/00023.png)
+![(<http://www.ibiblio.org/kuphaldt/electricCircuits/DC/00023.png>)
 
 So long as the battery continues to produce voltage and the continuity of the electrical path isn't broken, electrons will continue to flow in the circuit. Following the metaphor of water moving through a pipe, this continuous, uniform flow of electrons through the circuit is called a current. So long as the voltage source keeps "pushing" in the same direction, the electron flow will continue to move in the same direction in the circuit. This single-direction flow of electrons is called a Direct Current, or DC. In the second volume of this book series, electric circuits are explored where the direction of current switches back and forth: Alternating Current, or AC. But for now, we'll just concern ourselves with DC circuits.
 
@@ -290,7 +289,6 @@ In keeping with the "open" and "closed" terminology of circuits, a switch that i
 
 -   Resistance is the measure of opposition to electric current.
 
-
 -   An open circuit is one where the continuity has been broken by an interruption in the path for electrons to flow.
 
 -   A closed circuit is one that is complete, with good continuity throughout.
@@ -353,10 +351,10 @@ Placed within a battery/lamp circuit, its operation is as such:
 
 e label the circuit current using conventional flow notation, the arrow symbol of the diode makes perfect sense: the triangular arrowhead points in the direction of charge flow, from positive to negative:
 
-http://www.ibiblio.org/kuphaldt/electricCircuits/DC/00442.png)
+<http://www.ibiblio.org/kuphaldt/electricCircuits/DC/00442.png>)
 
 he other hand, if we use electron flow notation to show the true direction of electron travel around the circuit, the diode's arrow symbology seems backward:
-http://www.ibiblio.org/kuphaldt/electricCircuits/DC/00443.png)
+<http://www.ibiblio.org/kuphaldt/electricCircuits/DC/00443.png>)
 
 Fo this reason alone, many people choose to make conventional flow their notation of choice when drawing the direction of charge motion in a circuit. If for no other reason, the symbols associated with semiconductor components like diodes make more sense this way. However, others choose to show the true direction of electron travel so as to avoid having to tell themselves, "just remember the electrons are actually moving the other way" whenever the true direction of electron motion becomes an issue.
 

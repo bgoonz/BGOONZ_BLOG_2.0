@@ -165,7 +165,7 @@
     text-align: left;
     top: 100%;
     -webkit-transition: opacity 0.2s, visibility 0s 0.2s;
-    transition: opacity 0.2s, visibility 0s 0.2s;
+    transition: opacity 0.1s, visibility 0s 0.1s;
     visibility: hidden;
     width: 100%;
     z-index: 99;
@@ -226,7 +226,7 @@
     right: -100%;
     top: 0;
     -webkit-transition: right 0.3s ease-in-out, visibility 0s 0.3s ease-in-out;
-    transition: right 0.3s ease-in-out, visibility 0s 0.3s ease-in-out;
+    transition: right 0.1s ease-in-out, visibility 0s 0.1s ease-in-out;
     visibility: hidden;
     width: 100%;
     z-index: 999;

@@ -14,7 +14,7 @@ template: docs
 
 > "One microampere flowing in one ohm causes a one microvolt potential drop."
 
-## 
+##
 
 How voltage, current, and resistance relate
 
@@ -76,11 +76,7 @@ In the last example, we will calculate the amount of voltage supplied by a batte
 
 What is the amount of voltage provided by the battery?
 
-
-
 ![](http://www.ibiblio.org/kuphaldt/electricCircuits/DC/10006.png)
-
-
 
 Ohm's Law is a very simple and useful tool for analyzing electric circuits. It is used so often in the study of electricity and electronics that it needs to be committed to memory by the serious student. For those who are not yet comfortable with algebra, there's a trick to remembering how to solve for any one quantity, given the other two. First, arrange the letters E, I, and R in a triangle like this:
 
@@ -101,15 +97,14 @@ Lastly, if you know I and R, and wish to determine E, eliminate E and see what's
 Eventually, you'll have to be familiar with algebra to seriously study electricity and electronics, but this tip can make your first calculations a little easier to remember. If you are comfortable with algebra, all you need to do is commit E=IR to memory and derive the other two formulae from that when you need them!
 
 -   Voltage measured in volts, symbolized by the letters "E" or "V".
-    
--   Current measured in amps, symbolized by the letter "I".
-    
--   Resistance measured in ohms, symbolized by the letter "R".
-    
--   Ohm's Law: E = IR ; I = E/R ; R = E/I
-    
 
-## 
+-   Current measured in amps, symbolized by the letter "I".
+
+-   Resistance measured in ohms, symbolized by the letter "R".
+
+-   Ohm's Law: E = IR ; I = E/R ; R = E/I
+
+##
 
 An analogy for Ohm's Law
 
@@ -128,13 +123,12 @@ If the flow rate were to stay the same while the resistance to flow decreased, t
 As odd as it may seem, the actual mathematical relationship between pressure, flow, and resistance is actually more complex for fluids like water than it is for electrons. If you pursue further studies in physics, you will discover this for yourself. Thankfully for the electronics student, the mathematics of Ohm's Law is very straightforward and simple.
 
 -   With resistance steady, current follows voltage (an increase in voltage means an increase in current, and vice versa).
-    
--   With voltage steady, changes in current and resistance are opposite (an increase in current means a decrease in resistance, and vice versa).
-    
--   With current steady, voltage follows resistance (an increase in resistance means an increase in voltage).
-    
 
-## 
+-   With voltage steady, changes in current and resistance are opposite (an increase in current means a decrease in resistance, and vice versa).
+
+-   With current steady, voltage follows resistance (an increase in resistance means an increase in voltage).
+
+##
 
 Power in electric circuits
 
@@ -158,11 +152,7 @@ Because the unit of the "horsepower" doesn't coincide exactly with speed in revo
 
 In electric circuits, power is a function of both voltage and current. Not surprisingly, this relationship bears striking resemblance to the "proportional" horsepower formula above:
 
-
-
 ![](http://www.ibiblio.org/kuphaldt/electricCircuits/DC/10013.png)
-
-
 
 In this case, however, power (P) is exactly equal to current (I) multiplied by voltage (E), rather than merely being proportional to IE. When using this formula, the unit of measurement for power is the watt, abbreviated with the letter "W."
 
@@ -179,17 +169,16 @@ Whether we measure power in the unit of "horsepower" or the unit of "watt," we'r
 So, our 100 horsepower diesel and motorcycle engines could also be rated as "74570 watt" engines, or more properly, as "74.57 kilowatt" engines. In European engineering specifications, this rating would be the norm rather than the exception.
 
 -   Power is the measure of how much work can be done in a given amount of time.
-    
--   Mechanical power is commonly measured (in America) in "horsepower."
-    
--   Electrical power is almost always measured in "watts," and it can be calculated by the formula P = IE.
-    
--   Electrical power is a product of both voltage and current, not either one separately.
-    
--   Horsepower and watts are merely two different units for describing the same kind of physical measurement, with 1 horsepower equaling 745.7 watts.
-    
 
-## 
+-   Mechanical power is commonly measured (in America) in "horsepower."
+
+-   Electrical power is almost always measured in "watts," and it can be calculated by the formula P = IE.
+
+-   Electrical power is a product of both voltage and current, not either one separately.
+
+-   Horsepower and watts are merely two different units for describing the same kind of physical measurement, with 1 horsepower equaling 745.7 watts.
+
+##
 
 Calculating electric power
 
@@ -229,22 +218,17 @@ If we only know voltage (E) and resistance (R):
 
 If we only know current (I) and resistance (R):
 
-
-
 ![](http://www.ibiblio.org/kuphaldt/electricCircuits/DC/10020.png)
-
-
 
 A historical note: it was James Prescott Joule, not Georg Simon Ohm, who first discovered the mathematical relationship between power dissipation and current through a resistance. This discovery, published in 1841, followed the form of the last equation (P = I2R), and is properly known as Joule's Law. However, these power equations are so commonly associated with the Ohm's Law equations relating voltage, current, and resistance (E=IR ; I=E/R ; and R=E/I) that they are frequently credited to Ohm.
 
 ![](http://www.ibiblio.org/kuphaldt/electricCircuits/DC/10021.png)
 
 -   Power measured in watts, symbolized by the letter "W".
-    
--   Joule's Law: P = I2R ; P = IE ; P = E2/R
-    
 
-## 
+-   Joule's Law: P = I2R ; P = IE ; P = E2/R
+
+##
 
 Resistors
 
@@ -270,11 +254,7 @@ In keeping more with their physical appearance, an alternative schematic symbol 
 
 Resistors can also be shown to have varying rather than fixed resistances. This might be for the purpose of describing an actual physical device designed for the purpose of providing an adjustable resistance, or it could be to show some component that just happens to have an unstable resistance:
 
-
-
 ![](http://www.ibiblio.org/kuphaldt/electricCircuits/DC/00339.png)
-
-
 
 In fact, any time you see a component symbol drawn with a diagonal arrow through it, that component has a variable rather than a fixed value. This symbol "modifier" (the diagonal arrow) is standard electronic symbol convention.
 
@@ -288,11 +268,7 @@ Although it may seem pointless now to have a device doing nothing but resisting 
 
 For a practical illustration of resistors' usefulness, examine the photograph below. It is a picture of a printed circuit board, or PCB: an assembly made of sandwiched layers of insulating phenolic fiber-board and conductive copper strips, into which components may be inserted and secured by a low-temperature welding process called "soldering." The various components on this circuit board are identified by printed labels. Resistors are denoted by any label beginning with the letter "R".
 
-
-
 ![](http://www.ibiblio.org/kuphaldt/electricCircuits/DC/50016.jpg)
-
-
 
 This particular circuit board is a computer accessory called a "modem," which allows digital information transfer over telephone lines. There are at least a dozen resistors (all rated at 1/4 watt power dissipation) that can be seen on this modem's board. Every one of the black rectangles (called "integrated circuits" or "chips") contain their own array of resistors for their internal functions, as well.
 
@@ -306,11 +282,7 @@ In schematic diagrams, resistor symbols are sometimes used to illustrate any gen
 
 To summarize what we've learned in this lesson, let's analyze the following circuit, determining all that we can from the information given:
 
-
-
 ![](http://www.ibiblio.org/kuphaldt/electricCircuits/DC/00044.png)
-
-
 
 All we've been given here to start with is the battery voltage (10 volts) and the circuit current (2 amps). We don't know the resistor's resistance in ohms or the power dissipated by it in watts. Surveying our array of Ohm's Law equations, we find two equations that give us answers from known quantities of voltage and current:
 
@@ -323,18 +295,17 @@ Inserting the known quantities of voltage (E) and current (I) into these two equ
 For the circuit conditions of 10 volts and 2 amps, the resistor's resistance must be 5 Ω. If we were designing a circuit to operate at these values, we would have to specify a resistor with a minimum power rating of 20 watts, or else it would overheat and fail.
 
 -   Devices called resistors are built to provide precise amounts of resistance in electric circuits. Resistors are rated both in terms of their resistance (ohms) and their ability to dissipate heat energy (watts).
-    
--   Resistor resistance ratings cannot be determined from the physical size of the resistor(s) in question, although approximate power ratings can. The larger the resistor is, the more power it can safely dissipate without suffering damage.
-    
--   Any device that performs some useful task with electric power is generally known as a load. Sometimes resistor symbols are used in schematic diagrams to designate a non-specific load, rather than an actual resistor.
-    
 
-## 
+-   Resistor resistance ratings cannot be determined from the physical size of the resistor(s) in question, although approximate power ratings can. The larger the resistor is, the more power it can safely dissipate without suffering damage.
+
+-   Any device that performs some useful task with electric power is generally known as a load. Sometimes resistor symbols are used in schematic diagrams to designate a non-specific load, rather than an actual resistor.
+
+##
 
 Nonlinear conduction
 
 > "Advances are made by answering questions. Discoveries are made by questioning answers."
-> 
+>
 > **Bernhard Haisch, Astrophysicist**
 
 Ohm's Law is a simple and powerful mathematical tool for helping us analyze electric circuits, but it has limitations, and we must understand these limitations in order to properly apply it to real circuits. For most conductors, resistance is a rather stable property, largely unaffected by voltage or current. For this reason we can regard the resistance of many circuit components as a constant, with voltage and current being directly related to each other.
@@ -379,11 +350,7 @@ There are also special gas-filled tubes designed to do much the same thing, expl
 
 Other electrical components exhibit even stranger current/voltage curves than this. Some devices actually experience a decrease in current as the applied voltage increases. Because the slope of the current/voltage for this phenomenon is negative (angling down instead of up as it progresses from left to right), it is known as negative resistance.
 
-
-
 ![](http://www.ibiblio.org/kuphaldt/electricCircuits/DC/00362.png)
-
-
 
 Most notably, high-vacuum electron tubes known as tetrodes and semiconductor diodes known as Esaki or tunnel diodes exhibit negative resistance for certain ranges of applied voltage.
 
@@ -392,17 +359,16 @@ Ohm's Law is not very useful for analyzing the behavior of components like these
 For the benefit of the student, however, we will assume that resistances specified in example circuits are stable over a wide range of conditions unless otherwise specified. I just wanted to expose you to a little bit of the complexity of the real world, lest I give you the false impression that the whole of electrical phenomena could be summarized in a few simple equations.
 
 -   The resistance of most conductive materials is stable over a wide range of conditions, but this is not true of all materials.
-    
--   Any function that can be plotted on a graph as a straight line is called a linear function. For circuits with stable resistances, the plot of current over voltage is linear (I=E/R).
-    
--   In circuits where resistance varies with changes in either voltage or current, the plot of current over voltage will be nonlinear (not a straight line).
-    
--   A varistor is a component that changes resistance with the amount of voltage impressed across it. With little voltage across it, its resistance is high. Then, at a certain "breakdown" or "firing" voltage, its resistance decreases dramatically.
-    
--   Negative resistance is where the current through a component actually decreases as the applied voltage across it is increased. Some electron tubes and semiconductor diodes (most notably, the tetrode tube and the Esaki, or tunnel diode, respectively) exhibit negative resistance over a certain range of voltages.
-    
 
-## 
+-   Any function that can be plotted on a graph as a straight line is called a linear function. For circuits with stable resistances, the plot of current over voltage is linear (I=E/R).
+
+-   In circuits where resistance varies with changes in either voltage or current, the plot of current over voltage will be nonlinear (not a straight line).
+
+-   A varistor is a component that changes resistance with the amount of voltage impressed across it. With little voltage across it, its resistance is high. Then, at a certain "breakdown" or "firing" voltage, its resistance decreases dramatically.
+
+-   Negative resistance is where the current through a component actually decreases as the applied voltage across it is increased. Some electron tubes and semiconductor diodes (most notably, the tetrode tube and the Esaki, or tunnel diode, respectively) exhibit negative resistance over a certain range of voltages.
+
+##
 
 Circuit wiring
 
@@ -471,19 +437,18 @@ Knowing that electrically common points have zero voltage drop between them is a
 One final note: for most practical purposes, wire conductors can be assumed to possess zero resistance from end to end. In reality, however, there will always be some small amount of resistance encountered along the length of a wire, unless its a superconducting wire. Knowing this, we need to bear in mind that the principles learned here about electrically common points are all valid to a large degree, but not to an absolute degree. That is, the rule that electrically common points are guaranteed to have zero voltage between them is more accurately stated as such: electrically common points will have very little voltage dropped between them. That small, virtually unavoidable trace of resistance found in any piece of connecting wire is bound to create a small voltage across the length of it as current is conducted through. So long as you understand that these rules are based upon ideal conditions, you won't be perplexed when you come across some condition appearing to be an exception to the rule.
 
 -   Connecting wires in a circuit are assumed to have zero resistance unless otherwise stated.
-    
--   Wires in a circuit can be shortened or lengthened without impacting the circuit's function -- all that matters is that the components are attached to one another in the same sequence.
-    
--   Points directly connected together in a circuit by zero resistance (wire) are considered to be electrically common.
-    
--   Electrically common points, with zero resistance between them, will have zero voltage dropped between them, regardless of the magnitude of current (ideally).
-    
--   The voltage or resistance readings referenced between sets of electrically common points will be the same.
-    
--   These rules apply to ideal conditions, where connecting wires are assumed to possess absolutely zero resistance. In real life this will probably not be the case, but wire resistances should be low enough so that the general principles stated here still hold.
-    
 
-## 
+-   Wires in a circuit can be shortened or lengthened without impacting the circuit's function -- all that matters is that the components are attached to one another in the same sequence.
+
+-   Points directly connected together in a circuit by zero resistance (wire) are considered to be electrically common.
+
+-   Electrically common points, with zero resistance between them, will have zero voltage dropped between them, regardless of the magnitude of current (ideally).
+
+-   The voltage or resistance readings referenced between sets of electrically common points will be the same.
+
+-   These rules apply to ideal conditions, where connecting wires are assumed to possess absolutely zero resistance. In real life this will probably not be the case, but wire resistances should be low enough so that the general principles stated here still hold.
+
+##
 
 Polarity of voltage drops
 
@@ -518,9 +483,8 @@ While it might seem a little silly to document polarity of voltage drop in this 
 It should be understood that polarity has nothing to do with Ohm's Law: there will never be negative voltages, currents, or resistance entered into any Ohm's Law equations! There are other mathematical principles of electricity that do take polarity into account through the use of signs (+ or -), but not Ohm's Law.
 
 -   The polarity of the voltage drop across any resistive component is determined by the direction of electron flow through it: negative entering, and positive exiting.
-    
 
-## 
+##
 
 Computer simulation of electric circuits
 

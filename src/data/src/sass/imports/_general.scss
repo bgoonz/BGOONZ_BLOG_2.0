@@ -82,8 +82,17 @@ a {
     text-decoration-thickness: 1px;
     text-underline-offset: 0.125em;
     -webkit-transition: color 0.3s ease;
-    transition: color 0.3s ease;
-
+    transition: color 0.1s ;
+    border: 1px solid $gray-300;
+    border-radius: $border-radius-sm;
+    color: $gray-700;
+    display: block;
+    font-weight: bold;
+    padding: 0.9375em;
+    position: relative;
+    text-decoration: none;
+    -webkit-transition: border-color .3s ease, color .3s ease;
+    transition: border-color .3s ease, color .3s ease;
     &:hover {
         color: $gray-600;
     }
