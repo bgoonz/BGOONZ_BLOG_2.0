@@ -3,7 +3,7 @@ title: Argument
 sections: []
 seo:
     title: 'Argument'
-    description:  'CodingScripting  Glossary  JavaScript'
+    description: CodingScripting  Glossary  JavaScript
     robots: []
     extra: []
     type: stackbit_page_meta

@@ -4,7 +4,7 @@ weight: 0
 excerpt: 
 seo:
     title: '502'
-    description:  '502  Bad Gateway  Glossary  HTTP Errors  Infrastructure  Navigation'
+    description: 502  Bad Gateway  Glossary  HTTP Errors  Infrastructure  Navigation
     robots: []
     extra: []
     type: stackbit_page_meta

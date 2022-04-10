@@ -1,7 +1,7 @@
 ---
 title: Abstraction
 slug: Abstraction'
-    description:  'Abstraction  Coding  CodingScripting  Glossary  Programming Language'
+    description: Abstraction  Coding  CodingScripting  Glossary  Programming Language
     robots: []
     extra: []
     type: stackbit_page_meta

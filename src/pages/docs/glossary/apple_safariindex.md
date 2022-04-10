@@ -3,7 +3,7 @@ title: Apple Safari
 sections: []
 seo:
     title: 'Apple_Safari'
-    description:  'Glossary  Navigation  WebMechanics'
+    description: Glossary  Navigation  WebMechanics
     robots: []
     extra: []
     type: stackbit_page_meta

@@ -5,7 +5,7 @@ weight: 0
 excerpt: 
 seo:
     title: 'Accessibility'
-    description:  'Accessibility  Glossary'
+    description: Accessibility  Glossary
     robots: []
     extra: []
     type: stackbit_page_meta

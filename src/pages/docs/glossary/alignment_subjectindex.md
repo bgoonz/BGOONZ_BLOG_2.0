@@ -5,7 +5,7 @@ weight: 0
 excerpt: 
 seo:
     title: 'Alignment_Subject'
-    description:  'Alignment subject  CSS  Glossary  alignment'
+    description: Alignment subject  CSS  Glossary  alignment
     robots: []
     extra: []
     type: stackbit_page_meta

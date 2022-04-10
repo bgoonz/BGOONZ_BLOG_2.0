@@ -5,7 +5,7 @@ weight: 0
 excerpt: 
 seo:
     title: 'Algorithm'
-    description:  'CodingScripting  Glossary'
+    description: CodingScripting  Glossary
     robots: []
     extra: []
     type: stackbit_page_meta

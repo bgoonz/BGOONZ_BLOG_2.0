@@ -5,7 +5,7 @@ weight: 0
 excerpt: 
 seo:
     title: 'Accessibility_tree'
-    description:  'AOM  Accessibility  DOM  Glossary  Reference'
+    description: AOM  Accessibility  DOM  Glossary  Reference
     robots: []
     extra: []
     type: stackbit_page_meta

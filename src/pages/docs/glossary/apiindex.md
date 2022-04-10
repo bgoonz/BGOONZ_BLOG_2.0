@@ -5,7 +5,7 @@ weight: 0
 excerpt: 
 seo:
     title: 'API'
-    description:  'CodingScripting  Glossary  Infrastructure '
+    description: CodingScripting  Glossary  Infrastructure 
     robots: []
     extra: []
     type: stackbit_page_meta

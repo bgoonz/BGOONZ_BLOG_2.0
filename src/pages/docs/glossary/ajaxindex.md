@@ -5,7 +5,7 @@ weight: 0
 excerpt: 
 seo:
     title: 'AJAX'
-    description:  'AJAX  CodingScripting  Glossary  Infrastructure  l10n:priority'
+    description: AJAX  CodingScripting  Glossary  Infrastructure  l10n:priority
     robots: []
     extra: []
     type: stackbit_page_meta

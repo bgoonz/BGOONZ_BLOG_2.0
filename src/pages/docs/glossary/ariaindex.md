@@ -3,7 +3,7 @@ title: ARIA
 sections: []
 seo:
     title: 'ARIA'
-    description:  'Accessibility  Glossary'
+    description: Accessibility  Glossary
     robots: []
     extra: []
     type: stackbit_page_meta
