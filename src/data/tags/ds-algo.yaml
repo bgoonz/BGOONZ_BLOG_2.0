@@ -1,0 +1,458 @@
+id: ds-algo
+title: "Data Structures & Algorithms "
+description: "\r
+
+  # 6 Essential Data Structures Java Programmer should Learn in 2022 |
+  Java67\r
+
+  \r
+
+  > ## Excerpt\r
+
+  > Java Programming tutorials and Interview Questions, book and course
+  recommendations from Udemy, Pluralsight, Coursera, edX etc\r
+
+  \r
+
+  ---\r
+
+  Hello guys, Data Structure is a building block of programs. It's even said
+  that  **\"Data Structure + Algorithms= Program\"**. That's why a good
+  knowledge of data structure is very important for any programmers, including
+  Java developers. Data structure gives you the option to store your data so
+  that you can access it based on your requirement. For example, if you want a
+  fast search based upon the username then you can use
+  [HashMap](https://www.java67.com/2013/02/10-examples-of-hashmap-in-java-progr\
+  amming-tutorial.html), but that's only possible if you know data structure and
+  their implementations in the programming language you are using, and that's
+  what you will learn in this article. \r
+
+  \r
+
+   Java API provides built-in support for common data structures, essential
+  for writing programs like an array, linked list, map, set, stack, and queue.
+  You don't need to implement these data structures by yourself, you can
+  directly use them in your program, thanks to the rich and efficient
+  implementation provided by Java API. \r
+
+  \r
+
+  This is also one reason [why Java is the best programming
+  language](http://javarevisited.blogspot.sg/2013/04/10-reasons-to-learn-java-p\
+  rogramming.html). Since data structure is core to any program and the choice
+  of a particular data structure significantly affects both the functionality
+  and performance of Java applications, it's worth an effort to explore
+  different data structures available in Java.\r
+
+  \r
+
+  Many of these data structure is part of the hugely popular Java Collection
+  Framework, and almost all Java programs maybe, except [hello
+  world](http://java67.blogspot.sg/2013/03/helloworld-in-java-how-to-write-comp\
+  ile-example-tutorial.html) make use of Collection in one or another form. \r
+
+  \r
+
+  In this Java tutorial, we will take a look at a standard data structure.
+  Array, linked list, Stack, Queue, Map, Set, and How they are implemented in
+  Java, along with how to use them.\r
+
+  \r
+
+  Btw, if you are a complete beginner in the world of data structure and
+  algorithms, then I also suggest you first go through a comprehensive course
+  like [Data Structures and Algorithms: Deep Dive Using
+  Java](https://click.linksynergy.com/fs-bin/click?id=JVFxdTr9V80&subid=0&offer\
+  id=323058.1&type=10&tmpid=14538&RD_PARM1=https%3A%2F%2Fwww.udemy.com%2Fdata-s\
+  tructures-and-algorithms-deep-dive-using-java%2F) to learn the basics and
+  master it.\r
+
+  \r
+
+  Data Structure and Algorithms are vital for becoming a better developer, and
+  any investment you make in terms of your time, money, and learning effort will
+  pay you for a long time to come.\r
+
+  \r
+
+  ## 6 Essential Data Structures for Java Developers\r
+
+  \r
+
+  Here is my list of the fundamental data structure from standard Java API and
+  programming language itself, since an array is part of the programming
+  language itself while others are part of the popular Java Collection
+  framework.\r
+
+  \r
+
+  With Java 8 coming up with [Lambda
+  expression](http://www.java67.com/2017/06/10-points-about-lambda-expressions-\
+  in-java-8.html), [Functional
+  Interface](https://www.java67.com/2018/10/java-8-stream-and-functional-progra\
+  mming-interview-questions-answers.html), and
+  [Streams](https://www.java67.com/2014/04/java-8-stream-examples-and-tutorial.\
+  html), which is going to give a new life to Java Collection Framework,
+  especially in the context of leveraging multiple core architecture of modern
+  CPU.\r
+
+  \r
+
+  It’s high time that beginners make themselves aware of basic data structures
+  available in Java programming and make the best use of them.\r
+
+  \r
+
+  ### 1\\. Array\r
+
+  \r
+
+  Java programming language provides built-in support for the array in the
+  language itself. It has a special syntax to declare an array like int\\[\\],
+  which is an array of primitive int types. You can create an array of both
+  reference types and primitives. \r
+
+  \r
+
+  Also, unlike the C programming language, an array in Java is bounded, and
+  you will get ArrayIndexOutOfBoundException if you are working with an invalid
+  index. \r
+
+  \r
+
+  Array in Java are also homogeneous, you can not store multiple types of
+  objects in an array-like you can only store a String in a String\\[\\], if you
+  try to store Integer, you will get ArrayStoreException at runtime. \r
+
+  \r
+
+  You can check further check [**Data Structures and Algorithms: Deep Dive
+  Using
+  Java**](https://click.linksynergy.com/fs-bin/click?id=JVFxdTr9V80&subid=0&off\
+  erid=323058.1&type=10&tmpid=14538&RD_PARM1=https%3A%2F%2Fwww.udemy.com%2Fdata\
+  -structures-and-algorithms-deep-dive-using-java%2F) to learn more about array
+  and other essential data structures and algorithms, and more importantly how
+  to use them in Java Program.\r
+
+  \r
+
+  [![Essential data structure for Java
+  Programmers](https://1.bp.blogspot.com/-d5raKl4Ft04/X_PmheVHgtI/AAAAAAAAlgI/P\
+  fQINWkuVmMGtGoCXLif11r-VBaNL-L1gCLcBGAsYHQ/w400-h241/Essential%2BData%2Bstruc\
+  ture%2Bfor%2BJava%2Bdevelopers.png)](https://click.linksynergy.com/fs-bin/cli\
+  ck?id=JVFxdTr9V80&subid=0&offerid=323058.1&type=10&tmpid=14538&RD_PARM1=https\
+  %3A%2F%2Fwww.udemy.com%2Fdata-structures-and-algorithms-deep-dive-using-java%\
+  2F)\r
+
+  \r
+
+  \  \r
+
+  \r
+
+  \  \r
+
+  \  \r
+
+  \r
+
+  ### 2\\. Linked List\r
+
+  \r
+
+  Apart from the array, a linked list is another basic data structure in
+  programming. Java provides a doubly-linked list implementation as
+  java.util.LinkedList, this class can be used whenever a linked list data
+  structure is needed. \r
+
+  \r
+
+  Since LinkedList is part of the Collection framework, it implements
+  Collection and Iterable interface as well, which allows iterating over them.
+  You can check this article to learn more about [LinkedList in
+  Java](http://java67.blogspot.com/2012/12/difference-between-arraylist-vs-Link\
+  edList-java.html).\r
+
+  \r
+
+  And, if you are revising Data structure concepts for FAANG interviews then I
+  also suggest you join this amazing FAANG interview preparation course by
+  Andrei Negaoi on Udemy. It's called Master the **[Coding Interview: Big Tech
+  (FAANG)
+  Interviews](https://click.linksynergy.com/deeplink?id=JVFxdTr9V80&mid=39197&m\
+  url=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fmaster-the-coding-interview-big-te\
+  ch-faang-interviews%2F)** and it will help you prepare for Facebook, Apple,
+  Amazon, NetFlix, and Google interviews.\r
+
+  \r
+
+  [![linked list data structure in
+  Java](https://2.bp.blogspot.com/-FbEk20WwFvk/XH8pwoxASfI/AAAAAAAANYs/EO2z5vTj\
+  cSYs6q4AH_IBxjXuViwyZr1ngCLcBGAs/s400/linked%2Blist%2Bdata%2Bstructure.png)](\
+  https://click.linksynergy.com/deeplink?id=JVFxdTr9V80&mid=39197&murl=https%3A\
+  %2F%2Fwww.udemy.com%2Fcourse%2Fmaster-the-coding-interview-big-tech-faang-int\
+  erviews%2F)\r
+
+  \r
+
+  ### 3\\. Hash table\r
+
+  \r
+
+  The Hash table, map, or dictionary is one of the most versatile data
+  structures I have seen. I happen to use Map every now and then, and
+  fortunately, Java API provides several implementations of Map data structure
+  for different needs like HashMap, Hashtable, and ConcurrentHashMap.\r
+
+  \r
+
+  It's also known as map or dictionary data structure, you might have heard
+  about Dictionary in Python, which is the same as Map in Java. \r
+
+  \r
+
+  A map provides you with O(1) functionality for getting a value back if you
+  know the key, which is a very natural use case in most Java applications.\r
+
+  \r
+
+  You can further check the [**Algorithms and Data Structures - Part 1 and
+  2**](https://pluralsight.pxf.io/c/1193463/424552/7490?u=https%3A%2F%2Fwww.plu\
+  ralsight.com%2Fcourses%2Fads-part1) courses on Pluralsight to learn more about
+  the Hash table, map, or dictionary data structure in Java.\r
+
+  \r
+
+  [![hash table or dictionary data structure in
+  Java](https://1.bp.blogspot.com/-rqh9hl-0mgs/XH8p4E8xtwI/AAAAAAAANY0/jQy29EHU\
+  nVYRi588Vb7SeL2wlLYIp8EFQCLcBGAs/s320/data%2Bstructure%2Band%2Balgorithms%2Bi\
+  n%2BJava%2B-%2Bhash%2Btables.png)](https://pluralsight.pxf.io/c/1193463/42455\
+  2/7490?u=https%3A%2F%2Fwww.pluralsight.com%2Fcourses%2Fads-part1)\r
+
+  \r
+
+  ### 4\\. Stack\r
+
+  \r
+
+  Java API also provides a Stack data structure implemented as
+  java.util.Stack. This class extends the legacy Vector class for storing
+  elements. Since the stack is a LIFO (Last In, First Out) data structure, it
+  provides a push() method to insert objects and a pop() method to consume
+  elements from the top. \r
+
+  \r
+
+  The stack is quite popular in different programming tasks like evaluating
+  expressions. By the way, don’t confuse Stack data structure with [stack
+  memory](http://javarevisited.blogspot.com/2013/01/difference-between-stack-an\
+  d-heap-java.html), which is used to store local variable and method frames in
+  Java.\r
+
+  \r
+
+  Btw, if you are refreshing your data structure concepts for Interviews, I
+  also suggest you go through the [**Data Structures in Java: An Interview
+  Refresher**](https://www.educative.io/collection/5642554087309312/57248228436\
+  86912?affiliate_id=5073518643380224) course on Educative to prepare well for
+  your interview.\r
+
+  \r
+
+  [![stack data structure in
+  Java](https://3.bp.blogspot.com/-rR50qmyPHWw/XH8p9S0b1xI/AAAAAAAANY4/4MJDYNv1\
+  qfc0wM4pE4SO-xOp3rcVnTS5wCLcBGAs/s320/stack%2Bdata%2Bstrucutre.png)](https://\
+  www.educative.io/collection/5642554087309312/5724822843686912?affiliate_id=50\
+  73518643380224)\r
+
+  \r
+
+  ### 5\\. Queue\r
+
+  \r
+
+  The queue data structure is also available in the Java collection framework
+  as an interface and a few concrete implementations like
+  [ArrayBlockingQueue](https://javarevisited.blogspot.com/2012/12/blocking-queu\
+  e-in-java-example-ArrayBlockingQueue-LinkedBlockingQueue.html#axzz6iYmMFnsA),
+  [LinkedList](https://www.java67.com/2012/12/difference-between-arraylist-vs-L\
+  inkedList-java.html), and
+  [PriorityQueue](http://www.java67.com/2015/07/how-to-use-priorityqueue-in-jav\
+  a-example.html). \r
+
+  \r
+
+  Though you can also implement Queue by using LinkedList or array, it's much
+  better to use existing classes, which are tried and tested. \r
+
+  \r
+
+  This not only reduces development time but also the overall code quality and
+  performance of your application. BlockingQueue is a thread-safe extension of
+  the Queue interface and can be used to implement [producer-consumer patterns
+  in
+  Java](http://javarevisited.blogspot.co.uk/2012/02/producer-consumer-design-pa\
+  ttern-with.html).\r
+
+  \r
+
+  [![Queue data structure in
+  Java](https://1.bp.blogspot.com/-bYR756yBlQE/XH8qC-A4TkI/AAAAAAAANY8/kgvduIxX\
+  uoIdMfzrzyOhwovXUjjT7RlxACLcBGAs/s320/queue%2Bdata%2Bstructure%2B2.png)](http\
+  s://medium.freecodecamp.org/these-are-the-best-free-courses-to-learn-data-str\
+  uctures-and-algorithms-in-depth-4d52f0d6b35a?sk=15709c9f6c9b4bfc639b3b7a1f9b3\
+  ef5)\r
+
+  \r
+
+  ### 6\\. Set\r
+
+  \r
+
+  Set is a special data structure, which **doesn't allow duplicates**. It's a
+  good data structure to store unique elements like Ids, for example,
+  EmployeeId, OrderId, TradeId, etc. Whenever you are storing data that needs to
+  be unique then you can use Set data structure. If you try to insert duplicates
+  Set will not accept it and its method will return false to indicate that
+  insertion has failed.\r
+
+  \r
+
+  Java Collection API provides a couple of implementations of Sets
+  like [HashSet, TreeSet, and
+  LinkedHashSet](http://javarevisited.blogspot.com/2012/11/difference-between-t\
+  reeset-hashset-vs-linkedhashset-java.html), which is more than enough for most
+  situations. Those collections, apart from the beginning set, also provide
+  sorting and insertion order.\r
+
+  \r
+
+  If you want to learn more about advanced data structures in Java, I highly
+  recommend you to join **[Data Structures and Algorithms
+  Specializatio](https://coursera.pxf.io/c/3294490/1164545/14726?u=https%3A%2F%\
+  2Fwww.coursera.org%2Fspecializations%2Fdata-structures-algorithms)**n on
+  Coursera. This specialization is a collection of 6 amazing Data structure
+  courses to teach you graph, string, list, and many more essential and advanced
+  data structures. \r
+
+  \r
+
+  The best thing about this program is that you get access to 50 algorithmic
+  puzzles on your phone to brush up and level up your algorithmic skill as well
+  100+ coding problems which are often asked by big tech companies. More
+  importantly, you get instant feedback on whether your solution is correct or
+  not. \r
+
+  \r
+
+  [![Set data structure in
+  Java](https://1.bp.blogspot.com/-VoLgMT4A82Q/XH8qw6P5-BI/AAAAAAAANZM/1OQgJiX7\
+  VoQNfgD7tvv7yfKbOrtK4XO_ACLcBGAs/s320/HashSet%2Bdata%2Bstructure%2Bin%2BJava.\
+  png)](https://coursera.pxf.io/c/3294490/1164545/14726?u=https%3A%2F%2Fwww.cou\
+  rsera.org%2Fspecializations%2Fdata-structures-algorithms)\r
+
+  \r
+
+  That's all about some of the most **essential Data Structures for Java
+  developers**.  Apart from these basic data structures, there are a lot more in
+  the Java collection framework, including concurrent data structures like
+  BlockingQueue and ConcurrentHashMap. For a Java developer with any experience
+  level, it's good to explore new collection classes introduced in Java 5 and 6
+  for making better use of Java API.\r
+
+  \r
+
+  Other **Data Structure and Algorithms**  You may like\r
+
+  \r
+
+  -   50+ Data Structure and Algorithms Problems from Interviews
+  ([list](https://hackernoon.com/50-data-structure-and-algorithms-interview-que\
+  stions-for-programmers-b4b1ac61f5b0))\r
+
+  -   5 Books to Learn Data Structure and Algorithms in-depth
+  ([books](https://javarevisited.blogspot.com/2015/07/5-data-structure-and-algo\
+  rithm-books-best-must-read.html)) \r
+
+  -   How to reverse an array in Java?
+  ([solution](https://javarevisited.blogspot.com/2015/03/how-to-reverse-array-i\
+  n-place-in-java.html))\r
+
+  -   75+ Coding Interview Questions for Programmers
+  ([questions](http://www.java67.com/2018/06/data-structure-and-algorithm-inter\
+  view-questions-programmers.html))\r
+
+  -   How to remove duplicate elements from the array in Java?
+  ([solution](https://javarevisited.blogspot.com/2014/01/how-to-remove-duplicat\
+  es-from-array-java-without-collection-API.html))\r
+
+  -   7 Best Courses to learn Data Structure and Algorithms ([best
+  courses](https://medium.com/javarevisited/7-best-courses-to-learn-data-struct\
+  ure-and-algorithms-d5379ae2588))\r
+
+  -   How to implement a recursive preorder algorithm in Java?
+  ([solution](http://www.java67.com/2016/08/binary-tree-inorder-traversal-in-ja\
+  va.html))\r
+
+  -   10 Courses to learn Data Structure in Java
+  ([courses](https://medium.com/javarevisited/top-10-data-structure-and-algorit\
+  hms-courses-for-java-developers-25161ee2edc0))\r
+
+  -   How to implement a binary search tree in Java?
+  ([solution](https://javarevisited.blogspot.com/2015/10/how-to-implement-binar\
+  y-search-tree-in-java-example.html))\r
+
+  -   7 Free Books to learn Data Structure and Algorithms
+  ([books](https://medium.com/javarevisited/7-free-books-to-learn-data-structur\
+  e-and-algorithms-in-java-346b2d70db10))\r
+
+  -   Postorder binary tree traversal without recursion
+  ([solution](http://www.java67.com/2017/05/binary-tree-post-order-traversal-in\
+  -java-without-recursion.html))\r
+
+  -   10 Data Structure and Programming courses to crack interviews
+  ([courses](https://medium.com/hackernoon/10-data-structure-algorithms-and-pro\
+  gramming-courses-to-crack-any-coding-interview-e1c50b30b927))\r
+
+  -   How to print leaf nodes of a binary tree without recursion?
+  ([solution](http://www.java67.com/2016/10/how-to-print-leaf-nodes-of-binary-t\
+  ree-without-recursion-in-java.html))\r
+
+  -   Recursive Post Order traversal Algorithm
+  ([solution](http://www.java67.com/2016/10/binary-tree-post-order-traversal-in\
+  .html))\r
+
+  -   Iterative PreOrder traversal in a binary tree
+  ([solution](http://www.java67.com/2016/07/binary-tree-preorder-traversal-in-j\
+  ava-without-recursion.html))\r
+
+  -   How to count the number of leaf nodes in a given binary tree in Java?
+  ([solution](https://javarevisited.blogspot.com/2016/12/how-to-count-number-of\
+  -leaf-nodes-in-java-recursive-iterative-algorithm.html))\r
+
+  -   Recursive InOrder traversal Algorithm
+  ([solution](http://www.java67.com/2016/09/inorder-traversal-of-binary-tree-ja\
+  va-example.html))\r
+
+  -   10 Free Data Structure and Algorithm Courses for Programmers
+  ([courses](http://www.java67.com/2019/02/top-10-free-algorithms-and-data.html\
+  ))\r
+
+  -   100+ Data Structure Coding Problems from Interviews
+  ([questions](http://www.java67.com/2018/06/data-structure-and-algorithm-inter\
+  view-questions-programmers.html))\r
+
+  \r
+
+  Thanks for reading this article so far. If you like this best Java Data
+  Structure tutorial and article, then please share it with your friends and
+  colleagues. If you have any questions or feedback, then please drop a
+  comment.\r
+
+  \r
+
+  **P. S.** - If you are looking for some Free Algorithms courses to improve
+  your understanding of Data Structure and Algorithms, then you should also
+  check the **[Data Structures in Java for Beginners](http://bit.ly/2hhloDL)**
+  course on Udemy. It's free and you just need a udemy account to join this
+  course."
