@@ -168,7 +168,7 @@ sections:
           - label: View In One Drive
             url: 'https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A'
             style: secondary
-          - label: lorem-ipsum
+          - label: Web Version
             url: '#'
             style: link
             icon_class: dev
